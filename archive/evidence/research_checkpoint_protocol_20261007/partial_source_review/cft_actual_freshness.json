@@ -1,0 +1,58 @@
+{
+  "wrapper_sha256": "c77e2c24b01aff868e81e8aa89801df15c7301c9cd3647a74dfefb250ca126d4",
+  "cft_source_sha256": "affa038a78c65f4e1dd09011e5526df09c544cb932ab561eeac3cbdcae7f3578",
+  "expected_sha256": "f12d9a53b1bcbbff8e50d8c11edf76985a61daff768615b7735ab7793d218989",
+  "expected_original_unchanged": true,
+  "source_original_unchanged": true,
+  "rows": [
+    {
+      "mode": "normal",
+      "control": "actual",
+      "passed": true,
+      "error": null,
+      "seconds": 1.7739120409969473,
+      "generated_exists": true
+    },
+    {
+      "mode": "normal",
+      "control": "math_defect",
+      "passed": true,
+      "error": "actual_color_one failed: Traceback (most recent call last):\n  File \"<string>\", line 13, in <module>\n  File \"/workspace/shared/bgs_checkpoint_source_review/independent-cft-x1mfcy6z/evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/verify_independent.py\", line 57, in <module>\n    equal(G.dleft(1).dleft(0).dleft(3).dleft(2).coeff(0),0)\n  File \"/workspace/shared/bgs_checkpoint_source_review/independent-cft-x1mfcy6z/evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/verify_independent.py\", line 51, in equal\n    def equal(f,g):assert s.simplify(s.factor(s.together(f-g)))==0,(f,g)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (1, 0)\n",
+      "seconds": 0.25526771300064865,
+      "generated_exists": false
+    },
+    {
+      "mode": "normal",
+      "control": "no_op",
+      "passed": true,
+      "error": "missing generated packet result",
+      "seconds": 0.0260600340043311,
+      "generated_exists": false
+    },
+    {
+      "mode": "optimized",
+      "control": "actual",
+      "passed": true,
+      "error": null,
+      "seconds": 3.3927405049980734,
+      "generated_exists": true
+    },
+    {
+      "mode": "optimized",
+      "control": "math_defect",
+      "passed": true,
+      "error": "actual_color_one failed: Traceback (most recent call last):\n  File \"<string>\", line 13, in <module>\n  File \"/workspace/shared/bgs_checkpoint_source_review/independent-cft-x1mfcy6z/evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/verify_independent.py\", line 57, in <module>\n    equal(G.dleft(1).dleft(0).dleft(3).dleft(2).coeff(0),0)\n  File \"/workspace/shared/bgs_checkpoint_source_review/independent-cft-x1mfcy6z/evidence/research_checkpoint_20261007/raw/bgs_color_one_independent_review/verify_independent.py\", line 51, in equal\n    def equal(f,g):assert s.simplify(s.factor(s.together(f-g)))==0,(f,g)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (1, 0)\n",
+      "seconds": 1.4708142119998229,
+      "generated_exists": false
+    },
+    {
+      "mode": "optimized",
+      "control": "no_op",
+      "passed": true,
+      "error": "missing generated packet result",
+      "seconds": 0.09274994899897138,
+      "generated_exists": false
+    }
+  ],
+  "scope": "Exact algebra plus five 45-digit numeric diagnostics in the raw script; no universal analytic proof."
+}

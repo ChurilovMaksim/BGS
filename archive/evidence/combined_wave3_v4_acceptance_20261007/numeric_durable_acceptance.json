@@ -1,0 +1,130 @@
+{
+  "status": "passed",
+  "declared_numeric_diagnostics": 46,
+  "tasks": [
+    {
+      "route": "wave2_checked_replay",
+      "task": "echo",
+      "numeric_diagnostics": 0,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "1af1744e165e7f0a3b8fc066ab39581f6000c5883882db593d619dbcf1e201af",
+      "expected_raw_sha256": "f7ef02b66f20392430f03362590339f8d2797df5033c03500c87c46a8df79bd9",
+      "actual_raw_sha256": "f7ef02b66f20392430f03362590339f8d2797df5033c03500c87c46a8df79bd9",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave2_checked_replay",
+      "task": "centering",
+      "numeric_diagnostics": 0,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "ad5df54b29713bc076ebdc11e690398be23ba920e86222c9008f9b06863e2403",
+      "expected_raw_sha256": "b6f20ae45b8a62bb1df7c8a9134536e8ae23a221595f0426d619040b4bcd60f1",
+      "actual_raw_sha256": "76a9369bec0b42607c7e41ebe120b624a53062ddd91f50626c00eb76e383059f",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave2_checked_replay",
+      "task": "rounding",
+      "numeric_diagnostics": 25,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "785d6f72c01aa8218e66fafd9f08b0af7417283c48c884bee2c5c9f4c6c93a1a",
+      "expected_raw_sha256": "53c1e4df13309d046e211cee460bc73464d08f114ad2c06efd943a9a5e50cc63",
+      "actual_raw_sha256": "38d894c2c206f9d44e23518805b51ba8c5ac26581a9a2682a0e2c49d0633e008",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave2_checked_replay",
+      "task": "actual_one_pinch",
+      "numeric_diagnostics": 0,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "101a59e6ec4e3c946ccca89b523dcc1f2aaac0fc831b32cfc135dbf001ca7dac",
+      "expected_raw_sha256": "b8c0d149119923a3bb330d9194188a35c27bf805afbc15960cae9f7901f0341f",
+      "actual_raw_sha256": "91e4ea8aea7370121a3454c80f226093bc37513e4f5aa19960f6b209a2874788",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave2_checked_replay",
+      "task": "hook_bridge",
+      "numeric_diagnostics": 0,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "d4406db8b54f04ce2c4defff0ef6a7bb0ea993b5e5c5bbdef58201f38a371d23",
+      "expected_raw_sha256": "b0441b56e8414034cbdbb207f017f77767776fb24d76a67261ea44ea4bcbb2bb",
+      "actual_raw_sha256": "a4f0e3757f3d89d2c7309084af19fde6ced1f4eb1b5d8c2a0a3266a3327aef10",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave2_checked_replay",
+      "task": "hook_downstream",
+      "numeric_diagnostics": 0,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "3afd5337da2f765140f9aea800933c7eaaae9e9c864384abe37cf1152e294207",
+      "expected_raw_sha256": "10d96c5dff633d03a1f3984db9bd896ce0c62b3ef7e45b081971ecea7eb849e3",
+      "actual_raw_sha256": "62c30f9eba932c607602cd9e9db12ec2daa8865d44ff75ef56525490beee05aa",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave2_checked_replay",
+      "task": "ward_covariance",
+      "numeric_diagnostics": 20,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "26ba84a6c6f3716edd0fd385577dec335c498aa6890a1b2fcf4ed283e57ee064",
+      "expected_raw_sha256": "fe0565457e0f18173e9fa787070d532a44d3ebd1b149925a92c4b592f8b927f9",
+      "actual_raw_sha256": "fe0565457e0f18173e9fa787070d532a44d3ebd1b149925a92c4b592f8b927f9",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave2_checked_replay",
+      "task": "ward_permutations",
+      "numeric_diagnostics": 0,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "500e67be3a4c5ac65bb994e83222a5808224f603b8ed65cf6dca6b274e091193",
+      "expected_raw_sha256": "225c1d15889ea85576bc949dde241b0aabbdff017c03c9861b05663ebf327ff7",
+      "actual_raw_sha256": "225c1d15889ea85576bc949dde241b0aabbdff017c03c9861b05663ebf327ff7",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave3_checked_replay",
+      "task": "right_frame",
+      "numeric_diagnostics": 0,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "9f5a82ac8c34c74bd4211b33dc3293f58df0068b544aa5b278933e60b280c923",
+      "expected_raw_sha256": "72e86c793201c8b3d307442421f3d5a5f4140bd73138c6bafa910ce723b13a34",
+      "actual_raw_sha256": "ec22ddd2d3d8ee5d8dd750cdbfa9f332a574739a7021198837366fdd20012b79",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave3_checked_replay",
+      "task": "separated_S2",
+      "numeric_diagnostics": 0,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "13684c45f2b5b998240ba61a599064ff54dbdeb1f0930dee9e3b937c2dac513d",
+      "expected_raw_sha256": "1f6422b91f3532f084cab0567a1f4f2a752ecfe646244f6237078a8c156c39fd",
+      "actual_raw_sha256": "2789cd0157dfb1b3a44beb228315aaa0bab5af1c822dde82f6c39158d58855cb",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave3_checked_replay",
+      "task": "convex_exact",
+      "numeric_diagnostics": 0,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "cf0b8a1604fe876953a7a74ab87f63af0da3e424b4c9a531eae6263283e26e67",
+      "expected_raw_sha256": "13c635af35d07502abf4153ca59ef20ef8f5ea2dc659562906f99ef33becfafa",
+      "actual_raw_sha256": "13c635af35d07502abf4153ca59ef20ef8f5ea2dc659562906f99ef33becfafa",
+      "raw_numeric_values_and_original_bounds_retained": true
+    },
+    {
+      "route": "wave3_checked_replay",
+      "task": "convex_independent_float",
+      "numeric_diagnostics": 1,
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "normalized_scientific_sha256": "f66da3973f70cbd749dbf3c2c296184827bd1fb8e51953003095c3055f949f93",
+      "expected_raw_sha256": "3db91588656b681318d0b6f489a3c7d7efd8d27d68280a51b7829b6df2b84df4",
+      "actual_raw_sha256": "3db91588656b681318d0b6f489a3c7d7efd8d27d68280a51b7829b6df2b84df4",
+      "raw_numeric_values_and_original_bounds_retained": true
+    }
+  ],
+  "raw_bytes_checked": true,
+  "comparison_normalization_explicit": true,
+  "original_expected_checker_proof_bytes_unchanged_from_v3": true,
+  "scope": "Final run raw numerical values, original narrow declared bounds/relations, and explicitly comparison-normalized digest identities checked independently against frozen contracts. No new replay execution or source edits."
+}

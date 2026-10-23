@@ -1,0 +1,58 @@
+{
+  "status": "v1_unaffected_gates_passed_final_science_held",
+  "not_publication_ready": true,
+  "version": "v1",
+  "source_manifest_sha256": "e8ea31f470336525d74993e89fab7e806e80a4504d0984b8724d586f38742db6",
+  "source_files": 4211,
+  "source_bytes_and_modes_unchanged": true,
+  "static_gate_acceptance": "passed",
+  "fresh_cpp_builds": 22,
+  "maintenance": {
+    "312_normal": {
+      "tests": 200,
+      "seconds": 162.489,
+      "log_sha256": "e19438119f8307295b06afd1230c924a9c159b21be9e034f60ba3f31b83de14e"
+    },
+    "312_optimized": {
+      "tests": 200,
+      "seconds": 177.177,
+      "log_sha256": "a09cd3479bf1dfc2af463b8730e37832e8b43cfca0746aaf1186959ab6850ebd"
+    },
+    "313_normal": {
+      "tests": 200,
+      "seconds": 176.544,
+      "log_sha256": "b272b5f48a9dc35764dc966536bf8ae56cf216784e42ff8fdeca6426c1e1b59a"
+    },
+    "313_optimized": {
+      "tests": 200,
+      "seconds": 193.617,
+      "log_sha256": "d604d78ed769d2f4ad39de4dc38e3a0511937ba8663feff1fa666d12a4c36172"
+    }
+  },
+  "fixed_map_replays": 28,
+  "fresh_lean_active_modules": 19,
+  "fresh_lake_jobs": 22,
+  "manuscript_passes": 3,
+  "manuscript_pages": 277,
+  "manuscript_pdf_sha256": "58c8658b0167a52698533c40b6b214aef0c0ba28c8dfcac710ecd7e97d7416eb",
+  "visual_pages": [
+    265,
+    266,
+    267,
+    268,
+    269
+  ],
+  "full_science": "NOT_RUN_HELD_FOR_V2",
+  "review_hold": "v1_review_hold.json",
+  "computational_budget": {
+    "command_elapsed_seconds_sum": 947.6233055530465,
+    "user_cpu_seconds_sum": 1508.928262,
+    "system_cpu_seconds_sum": 130.246299,
+    "largest_top_level_max_rss_kib": 1023804,
+    "max_concurrent_heavy_python_jobs": 2,
+    "scope": "Actual wait4 accounting for this version; elapsed sum includes concurrent commands and is not end-to-end wall time. No pricing/Pro/quota claim. Raw execution started_utc fields are completion timestamps due external recorder naming; elapsed and resource counts remain valid."
+  },
+  "no_source_edits": true,
+  "no_git_stage_commit_push_or_publication": true,
+  "scope": "Fresh version-bound unaffected executions only. Independent integration review identified two provenance validation gaps; final combined acceptance requires separately frozen v2 and one fresh complete science run."
+}

@@ -1,0 +1,1002 @@
+{
+  "schema": "bgs-wave2-durable-replay-v1",
+  "status": "passed",
+  "tasks": [
+    {
+      "name": "echo",
+      "domain": "echo",
+      "status": "passed",
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-c",
+        "authenticated declared AST adapter",
+        "{\"source\": \"/tmp/bgs-wave2-echo-wg4w6exm/check_exact_controls.py\", \"snapshot_root\": \"/tmp/bgs-wave2-echo-wg4w6exm/snapshot\", \"snapshot_adapter\": true, \"historical_manifest_digest\": \"d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba\", \"scoped_manifest_digest\": \"7b5509cbfdc3a53d95ce18883fb54c1022809895efa52ccc3a2d95298dc07988\", \"shared_modules\": [], \"adapter_receipt\": \"/tmp/bgs-wave2-echo-wg4w6exm/adapter_receipt.json\"}"
+      ],
+      "exit_status": 0,
+      "seconds": 7.401835108001251,
+      "source_sha256": "b7377f0c368c7d9fea7c41eeea78b5815fd2e1fe2b2a5e0f6d4597d1b460a4fd",
+      "expected_raw_sha256": "f7ef02b66f20392430f03362590339f8d2797df5033c03500c87c46a8df79bd9",
+      "actual_raw_sha256": "f7ef02b66f20392430f03362590339f8d2797df5033c03500c87c46a8df79bd9",
+      "expected_provenance": {
+        "source_snapshot_manifest": "d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba",
+        "source_pins": {
+          "record/checked_research_checkpoint_20261007.md": "9e486b215d1a2bd0818f0871f0dca23c3ecefbc532b25b393d2ee0bbaa527850",
+          "mathematics/phase_trace_checkpoint.md": "f52a4c7beb9042d403dd125f9425d4a29f6d1cd43a624b91a3b4b89f9abe9208",
+          "mathematics/actual_charge_radial_shell.md": "eccca8f36860e537f736828c435fce94f10006fbbaa48722fbd9481671ed4c0b",
+          "mathematics/uniform_phase_pair_abel_bound.md": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/NEXT_LITERAL_SOURCE.md": "26649c8a4bf22b21564e1d79b64282fad75e38fd0f10a729cf9ebbae693d1cea",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/08_fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/09_frozen_operator_transfer_coercivity.md": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/ward_identity_review.md": "4cddbeb00477a472cf81c012627de139f70242c905453a9ec72648de1432a8be",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/bilinear_carry_counterexample_v2.md": "88408d0241a9346fd16b33117ff3779b8abccb740a3992aa29a631c59f8c49ab"
+        }
+      },
+      "observed_provenance": {
+        "source_snapshot_manifest": "d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba",
+        "source_pins": {
+          "record/checked_research_checkpoint_20261007.md": "9e486b215d1a2bd0818f0871f0dca23c3ecefbc532b25b393d2ee0bbaa527850",
+          "mathematics/phase_trace_checkpoint.md": "f52a4c7beb9042d403dd125f9425d4a29f6d1cd43a624b91a3b4b89f9abe9208",
+          "mathematics/actual_charge_radial_shell.md": "eccca8f36860e537f736828c435fce94f10006fbbaa48722fbd9481671ed4c0b",
+          "mathematics/uniform_phase_pair_abel_bound.md": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/NEXT_LITERAL_SOURCE.md": "26649c8a4bf22b21564e1d79b64282fad75e38fd0f10a729cf9ebbae693d1cea",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/08_fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/09_frozen_operator_transfer_coercivity.md": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/ward_identity_review.md": "4cddbeb00477a472cf81c012627de139f70242c905453a9ec72648de1432a8be",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/bilinear_carry_counterexample_v2.md": "88408d0241a9346fd16b33117ff3779b8abccb740a3992aa29a631c59f8c49ab"
+        }
+      },
+      "numeric_diagnostics": {},
+      "numeric_relations": [],
+      "scientific_comparison_mode": "strict_typed_exact",
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "scientific_sha256_normalized_numeric_paths": [],
+      "scientific_sha256": "1af1744e165e7f0a3b8fc066ab39581f6000c5883882db593d619dbcf1e201af"
+    },
+    {
+      "name": "centering",
+      "domain": "centering",
+      "status": "passed",
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-c",
+        "authenticated declared AST adapter",
+        "{\"source\": \"/tmp/bgs-wave2-centering-3sz8p8_7/checks/verify_centering.py\", \"snapshot_root\": \"/tmp/bgs-wave2-centering-3sz8p8_7/snapshot\", \"snapshot_adapter\": false, \"historical_manifest_digest\": \"d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba\", \"scoped_manifest_digest\": \"7b5509cbfdc3a53d95ce18883fb54c1022809895efa52ccc3a2d95298dc07988\", \"shared_modules\": [], \"adapter_receipt\": \"/tmp/bgs-wave2-centering-3sz8p8_7/adapter_receipt.json\"}"
+      ],
+      "exit_status": 0,
+      "seconds": 3.6697917679994134,
+      "source_sha256": "44b0afc0181d2090dda2cc6b9b007b0bcb16b869948ebe47b32979057a7c8f1d",
+      "expected_raw_sha256": "b6f20ae45b8a62bb1df7c8a9134536e8ae23a221595f0426d619040b4bcd60f1",
+      "actual_raw_sha256": "76a9369bec0b42607c7e41ebe120b624a53062ddd91f50626c00eb76e383059f",
+      "expected_provenance": {
+        "python": "3.12.14",
+        "sympy": "1.14.0"
+      },
+      "observed_provenance": {
+        "python": "3.13.5",
+        "sympy": "1.14.0"
+      },
+      "numeric_diagnostics": {},
+      "numeric_relations": [],
+      "scientific_comparison_mode": "strict_typed_exact",
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "scientific_sha256_normalized_numeric_paths": [],
+      "scientific_sha256": "ad5df54b29713bc076ebdc11e690398be23ba920e86222c9008f9b06863e2403"
+    },
+    {
+      "name": "rounding",
+      "domain": "rounding",
+      "status": "passed",
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-c",
+        "authenticated declared AST adapter",
+        "{\"source\": \"/tmp/bgs-wave2-rounding-26cy5_yy/check_companions.py\", \"snapshot_root\": \"/tmp/bgs-wave2-rounding-26cy5_yy/snapshot\", \"snapshot_adapter\": true, \"historical_manifest_digest\": \"d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba\", \"scoped_manifest_digest\": \"7b5509cbfdc3a53d95ce18883fb54c1022809895efa52ccc3a2d95298dc07988\", \"shared_modules\": [], \"adapter_receipt\": \"/tmp/bgs-wave2-rounding-26cy5_yy/adapter_receipt.json\"}"
+      ],
+      "exit_status": 0,
+      "seconds": 0.3668103109957883,
+      "source_sha256": "61e0cded2dd304dd876b4c72033db0c922e344e145ce45b2ec311dfbde86f6c5",
+      "expected_raw_sha256": "53c1e4df13309d046e211cee460bc73464d08f114ad2c06efd943a9a5e50cc63",
+      "actual_raw_sha256": "38d894c2c206f9d44e23518805b51ba8c5ac26581a9a2682a0e2c49d0633e008",
+      "expected_provenance": {
+        "source_manifest_sha256": "d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba",
+        "source_pins": {
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/rounding_offcharge_upgrade.md": "d4bae7595a4a0787105c429384d82af70ef7f7968e4cda2f0c9e78635d637a92",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/simple_spectrum_companion.md": "6f163c8e3c9acf0a01818443763986cc85aea2ababd44fbe701b646d7a28ce58",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/growing_period_counterexample.md": "c5e2f39ba99145072a51bc10429978367a694294e666bcdda70125592990edf5",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/18_uniform_abel_bound.md": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/review.md": "fd9118f5f7bb97b0daa1383448275c3f36f6031a68b22dc54b189563698d4979",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/seal.json": "20e899a18455033537964c0c425041ec1851618a00cc831ad7f7eedaca603807",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/imported_abel_review.md": "fd2f0d76ff4326fb4a80e6c84bff69b264ee7b0665448105c59c8cd2128d27b1",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/seal_manifest.json": "9aed22fcf246e66a6f6480bb7201304351dce54e888d1e4add02743438110912",
+          "mathematics/microscopic_rounding_control.md": "68a0b67c6aaba5e5d1c6cb21cc4874a2a11e6e497b481e2212c821bde34c6889",
+          "mathematics/fractional_hamming_cancellation.md": "10fd5b3e5d14d54c7d2b3ad2ace7b9d474a47f142b5a87e35fcf73b894ecaeb5",
+          "mathematics/global_switch_transfer.md": "09662a4e6f81688a38c36be8429069f2e697377939f730a6dbf44e9b7b469f90",
+          "mathematics/onestep_charge_gap.md": "15d713759394c52cf16665719e970189ef6dab9044e08e5b54bbb29243cfa747",
+          "mathematics/actual_charge_radial_shell.md": "eccca8f36860e537f736828c435fce94f10006fbbaa48722fbd9481671ed4c0b",
+          "mathematics/actual_charge_radial_resolvent.md": "d76af5e9ad8cff4df4b015698c77d3d1ecebffe1103e5e09966d670f9aaedfd6",
+          "mathematics/literal_fixed_word_freeness.md": "931b62e8869349f8950c8f65dc2cfea92b12d42a6fdbaa69649399c937c610a0",
+          "mathematics/literal_growing_word_window.md": "4c497a406e51dd75cc0ca0b3b85100c3713c2013ae2d53b3d15e7ecceaf7222a",
+          "mathematics/fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+          "mathematics/four_branch_parametrix.md": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+          "mathematics/position_chain_mixing.md": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+          "mathematics/reversed_path_decay.md": "c8fea232fdc36fed8d0c8ce9975025050179fca1f3d67e6ddf4d5fb4515ded47",
+          "mathematics/phase_trace_checkpoint.md": "f52a4c7beb9042d403dd125f9425d4a29f6d1cd43a624b91a3b4b89f9abe9208",
+          "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/independent_extension_audit.md": "0ec05e56f56403f0665c68d75a76145da0c8b7dfb0f9e3d4d85621b09eddc683",
+          "record/claim_ledger.md": "6e282d41a3e059c93c92b57dfa6107df420a5f651f24df681cf9dcc3463d0f7b",
+          "record/claims.json": "8cf4ba7581487310f3417f46f44c5ba4c29fb34331f45e7d749b126b361178c8"
+        },
+        "software": {
+          "python": "3.12.14",
+          "numpy": "2.3.5"
+        }
+      },
+      "observed_provenance": {
+        "source_manifest_sha256": "7b5509cbfdc3a53d95ce18883fb54c1022809895efa52ccc3a2d95298dc07988",
+        "source_pins": {
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/rounding_offcharge_upgrade.md": "d4bae7595a4a0787105c429384d82af70ef7f7968e4cda2f0c9e78635d637a92",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/simple_spectrum_companion.md": "6f163c8e3c9acf0a01818443763986cc85aea2ababd44fbe701b646d7a28ce58",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/growing_period_counterexample.md": "c5e2f39ba99145072a51bc10429978367a694294e666bcdda70125592990edf5",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/18_uniform_abel_bound.md": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/review.md": "fd9118f5f7bb97b0daa1383448275c3f36f6031a68b22dc54b189563698d4979",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/seal.json": "20e899a18455033537964c0c425041ec1851618a00cc831ad7f7eedaca603807",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/imported_abel_review.md": "fd2f0d76ff4326fb4a80e6c84bff69b264ee7b0665448105c59c8cd2128d27b1",
+          "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/seal_manifest.json": "9aed22fcf246e66a6f6480bb7201304351dce54e888d1e4add02743438110912",
+          "mathematics/microscopic_rounding_control.md": "68a0b67c6aaba5e5d1c6cb21cc4874a2a11e6e497b481e2212c821bde34c6889",
+          "mathematics/fractional_hamming_cancellation.md": "10fd5b3e5d14d54c7d2b3ad2ace7b9d474a47f142b5a87e35fcf73b894ecaeb5",
+          "mathematics/global_switch_transfer.md": "09662a4e6f81688a38c36be8429069f2e697377939f730a6dbf44e9b7b469f90",
+          "mathematics/onestep_charge_gap.md": "15d713759394c52cf16665719e970189ef6dab9044e08e5b54bbb29243cfa747",
+          "mathematics/actual_charge_radial_shell.md": "eccca8f36860e537f736828c435fce94f10006fbbaa48722fbd9481671ed4c0b",
+          "mathematics/actual_charge_radial_resolvent.md": "d76af5e9ad8cff4df4b015698c77d3d1ecebffe1103e5e09966d670f9aaedfd6",
+          "mathematics/literal_fixed_word_freeness.md": "931b62e8869349f8950c8f65dc2cfea92b12d42a6fdbaa69649399c937c610a0",
+          "mathematics/literal_growing_word_window.md": "4c497a406e51dd75cc0ca0b3b85100c3713c2013ae2d53b3d15e7ecceaf7222a",
+          "mathematics/fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+          "mathematics/four_branch_parametrix.md": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+          "mathematics/position_chain_mixing.md": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+          "mathematics/reversed_path_decay.md": "c8fea232fdc36fed8d0c8ce9975025050179fca1f3d67e6ddf4d5fb4515ded47",
+          "mathematics/phase_trace_checkpoint.md": "f52a4c7beb9042d403dd125f9425d4a29f6d1cd43a624b91a3b4b89f9abe9208",
+          "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/independent_extension_audit.md": "0ec05e56f56403f0665c68d75a76145da0c8b7dfb0f9e3d4d85621b09eddc683",
+          "record/claim_ledger.md": "6e282d41a3e059c93c92b57dfa6107df420a5f651f24df681cf9dcc3463d0f7b",
+          "record/claims.json": "8cf4ba7581487310f3417f46f44c5ba4c29fb34331f45e7d749b126b361178c8"
+        },
+        "software": {
+          "python": "3.13.5",
+          "numpy": "2.3.5"
+        }
+      },
+      "numeric_diagnostics": {
+        "/floating_norm_controls/0/epsilon": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 1.2247656322514509,
+          "observed": 1.2247656322514509
+        },
+        "/floating_norm_controls/0/reverse_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 1.0826598540534746,
+          "observed": 1.0826598540534746
+        },
+        "/floating_norm_controls/0/max_charge_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 1.0346290405659424,
+          "observed": 1.0346290405659424
+        },
+        "/floating_norm_controls/0/max_word_error_over_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.35196660048762146,
+          "observed": 0.35196660048762146
+        },
+        "/floating_norm_controls/1/epsilon": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 1.1832207107316448,
+          "observed": 1.1832207107316448
+        },
+        "/floating_norm_controls/1/reverse_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.5961923099003289,
+          "observed": 0.5961923099003289
+        },
+        "/floating_norm_controls/1/max_charge_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.9688758172550085,
+          "observed": 0.9688758172550085
+        },
+        "/floating_norm_controls/1/max_word_error_over_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.11341148239144946,
+          "observed": 0.11341148239144946
+        },
+        "/floating_norm_controls/2/epsilon": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.6655058276724318,
+          "observed": 0.6655058276724318
+        },
+        "/floating_norm_controls/2/reverse_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.3213892511831239,
+          "observed": 0.3213892511831239
+        },
+        "/floating_norm_controls/2/max_charge_difference": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.39558372698789057,
+          "observed": 0.39558372698789057
+        },
+        "/floating_norm_controls/2/max_word_error_over_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.04896475774379528,
+          "observed": 0.04896475774379528
+        },
+        "/floating_split_controls/0/epsilon": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 6.399999998905426e-05,
+          "observed": 6.399999998905426e-05
+        },
+        "/floating_split_controls/0/reverse_norm": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.20000350969570688,
+          "observed": 0.20000350969570688
+        },
+        "/floating_split_controls/0/P_centered_norm": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 5.4207299075996966e-06,
+          "observed": 5.4207299075996966e-06
+        },
+        "/floating_split_controls/0/root_reconstruction_error": {
+          "comparison": "finite_nonnegative_exclusive_upper_bound",
+          "exclusive_upper_bound": 2e-12,
+          "expected": 3.9397476345666635e-15,
+          "observed": 3.9397476345666635e-15
+        },
+        "/floating_split_controls/1/epsilon": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 5.644739300925439e-07,
+          "observed": 5.644739300925439e-07
+        },
+        "/floating_split_controls/1/reverse_norm": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.09090911517643449,
+          "observed": 0.09090911517643449
+        },
+        "/floating_split_controls/1/P_centered_norm": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 2.785837122020884e-08,
+          "observed": 2.785837122020884e-08
+        },
+        "/floating_split_controls/1/root_reconstruction_error": {
+          "comparison": "finite_nonnegative_exclusive_upper_bound",
+          "exclusive_upper_bound": 2e-12,
+          "expected": 1.155942120110544e-14,
+          "observed": 1.155942120110544e-14
+        },
+        "/smooth_band_control/C_w": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 36.39876668876282,
+          "observed": 36.39876668876282
+        },
+        "/smooth_band_control/sum_w_r_over_L": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 98.25721958293359,
+          "observed": 98.25721958293359
+        },
+        "/smooth_band_control/finite_return_sums/0/return_lower_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 98.35317389893254,
+          "observed": 98.35317389893254
+        },
+        "/smooth_band_control/finite_return_sums/1/return_lower_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 98.28120816193332,
+          "observed": 98.28120816193332
+        },
+        "/smooth_band_control/finite_return_sums/2/return_lower_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 98.26321672768351,
+          "observed": 98.26321672768351
+        }
+      },
+      "numeric_relations": [
+        "epsilon<=pi/K+1e-12",
+        "reverse_difference<=2epsilon+1e-12",
+        "max_charge_difference<=2epsilon+1e-12",
+        "max_word_error_over_bound<=1+1e-12/epsilon (original per-ell checks unchanged)",
+        "split epsilon<=bound+2e-12",
+        "split P_centered_norm<=2bound+4e-12",
+        "root_reconstruction_error<2e-12",
+        "sum_w_r_over_L>C_w+1"
+      ],
+      "scientific_comparison_mode": "strict_typed_exact_with_declared_numeric_diagnostics",
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "scientific_sha256_normalized_numeric_paths": [
+        "/floating_norm_controls/0/epsilon",
+        "/floating_norm_controls/0/max_charge_difference",
+        "/floating_norm_controls/0/max_word_error_over_bound",
+        "/floating_norm_controls/0/reverse_difference",
+        "/floating_norm_controls/1/epsilon",
+        "/floating_norm_controls/1/max_charge_difference",
+        "/floating_norm_controls/1/max_word_error_over_bound",
+        "/floating_norm_controls/1/reverse_difference",
+        "/floating_norm_controls/2/epsilon",
+        "/floating_norm_controls/2/max_charge_difference",
+        "/floating_norm_controls/2/max_word_error_over_bound",
+        "/floating_norm_controls/2/reverse_difference",
+        "/floating_split_controls/0/P_centered_norm",
+        "/floating_split_controls/0/epsilon",
+        "/floating_split_controls/0/reverse_norm",
+        "/floating_split_controls/0/root_reconstruction_error",
+        "/floating_split_controls/1/P_centered_norm",
+        "/floating_split_controls/1/epsilon",
+        "/floating_split_controls/1/reverse_norm",
+        "/floating_split_controls/1/root_reconstruction_error",
+        "/smooth_band_control/C_w",
+        "/smooth_band_control/finite_return_sums/0/return_lower_bound",
+        "/smooth_band_control/finite_return_sums/1/return_lower_bound",
+        "/smooth_band_control/finite_return_sums/2/return_lower_bound",
+        "/smooth_band_control/sum_w_r_over_L"
+      ],
+      "scientific_sha256": "785d6f72c01aa8218e66fafd9f08b0af7417283c48c884bee2c5c9f4c6c93a1a"
+    },
+    {
+      "name": "actual_one_pinch",
+      "domain": "actual_one_pinch",
+      "status": "passed",
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-c",
+        "authenticated declared AST adapter",
+        "{\"source\": \"/tmp/bgs-wave2-actual_one_pinch-gdniqhpn/check_overlap.py\", \"snapshot_root\": \"/tmp/bgs-wave2-actual_one_pinch-gdniqhpn/snapshot\", \"snapshot_adapter\": false, \"historical_manifest_digest\": \"d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba\", \"scoped_manifest_digest\": \"7b5509cbfdc3a53d95ce18883fb54c1022809895efa52ccc3a2d95298dc07988\", \"shared_modules\": [], \"adapter_receipt\": \"/tmp/bgs-wave2-actual_one_pinch-gdniqhpn/adapter_receipt.json\"}"
+      ],
+      "exit_status": 0,
+      "seconds": 1.5772575009905268,
+      "source_sha256": "da8cc8f11f955e26c7c7996e7dca34bf5d5c7ed148866e81b315a3d48e5c313c",
+      "expected_raw_sha256": "b8c0d149119923a3bb330d9194188a35c27bf805afbc15960cae9f7901f0341f",
+      "actual_raw_sha256": "91e4ea8aea7370121a3454c80f226093bc37513e4f5aa19960f6b209a2874788",
+      "expected_provenance": {
+        "elapsed_seconds": 1.4752132829999027,
+        "python_optimization": 0,
+        "script_sha256": "da8cc8f11f955e26c7c7996e7dca34bf5d5c7ed148866e81b315a3d48e5c313c"
+      },
+      "observed_provenance": {
+        "elapsed_seconds": 1.2801250010088552,
+        "python_optimization": 0,
+        "script_sha256": "da8cc8f11f955e26c7c7996e7dca34bf5d5c7ed148866e81b315a3d48e5c313c"
+      },
+      "numeric_diagnostics": {},
+      "numeric_relations": [],
+      "scientific_comparison_mode": "strict_typed_exact",
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "scientific_sha256_normalized_numeric_paths": [],
+      "scientific_sha256": "101a59e6ec4e3c946ccca89b523dcc1f2aaac0fc831b32cfc135dbf001ca7dac"
+    },
+    {
+      "name": "hook_bridge",
+      "domain": "hook_v2",
+      "status": "passed",
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-c",
+        "authenticated declared AST adapter",
+        "{\"source\": \"/tmp/bgs-wave2-hook_bridge-pezvtbkm/check_zero_extension_bridge.py\", \"snapshot_root\": \"/tmp/bgs-wave2-hook_bridge-pezvtbkm/snapshot\", \"snapshot_adapter\": false, \"historical_manifest_digest\": \"d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba\", \"scoped_manifest_digest\": \"7b5509cbfdc3a53d95ce18883fb54c1022809895efa52ccc3a2d95298dc07988\", \"shared_modules\": [\"/tmp/bgs-wave2-hook_bridge-pezvtbkm/check_grouping_review_copy.py\"], \"adapter_receipt\": \"/tmp/bgs-wave2-hook_bridge-pezvtbkm/adapter_receipt.json\"}"
+      ],
+      "exit_status": 0,
+      "seconds": 0.3571412059973227,
+      "source_sha256": "77d07faa6de52a0ea8539f32d7951d9d23c3256b095f132bafbc0c9da74e7863",
+      "expected_raw_sha256": "b0441b56e8414034cbdbb207f017f77767776fb24d76a67261ea44ea4bcbb2bb",
+      "actual_raw_sha256": "a4f0e3757f3d89d2c7309084af19fde6ced1f4eb1b5d8c2a0a3266a3327aef10",
+      "expected_provenance": {
+        "elapsed_seconds": 0.35315651899873046,
+        "script_sha256": "77d07faa6de52a0ea8539f32d7951d9d23c3256b095f132bafbc0c9da74e7863",
+        "shared_checker_sha256": "e3232fd9b6f006892e6254bfb1d0c74291e4ea5166c12cc7e3e8525c85910dfb",
+        "corrected_proof_sha256": "1e1650468a3f4ec9ad3bfc1274cd0c79b54b22c5742a94708aedce2d6d098b59"
+      },
+      "observed_provenance": {
+        "elapsed_seconds": 0.2999904280004557,
+        "script_sha256": "77d07faa6de52a0ea8539f32d7951d9d23c3256b095f132bafbc0c9da74e7863",
+        "shared_checker_sha256": "e3232fd9b6f006892e6254bfb1d0c74291e4ea5166c12cc7e3e8525c85910dfb",
+        "corrected_proof_sha256": "1e1650468a3f4ec9ad3bfc1274cd0c79b54b22c5742a94708aedce2d6d098b59"
+      },
+      "numeric_diagnostics": {},
+      "numeric_relations": [],
+      "scientific_comparison_mode": "strict_typed_exact",
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "scientific_sha256_normalized_numeric_paths": [],
+      "scientific_sha256": "d4406db8b54f04ce2c4defff0ef6a7bb0ea993b5e5c5bbdef58201f38a371d23"
+    },
+    {
+      "name": "hook_downstream",
+      "domain": "hook_v2",
+      "status": "passed",
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-c",
+        "authenticated declared AST adapter",
+        "{\"source\": \"/tmp/bgs-wave2-hook_downstream-_nqslh7g/check_grouping_review_copy.py\", \"snapshot_root\": \"/tmp/bgs-wave2-hook_downstream-_nqslh7g/snapshot\", \"snapshot_adapter\": false, \"historical_manifest_digest\": \"d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba\", \"scoped_manifest_digest\": \"7b5509cbfdc3a53d95ce18883fb54c1022809895efa52ccc3a2d95298dc07988\", \"shared_modules\": [], \"adapter_receipt\": \"/tmp/bgs-wave2-hook_downstream-_nqslh7g/adapter_receipt.json\"}"
+      ],
+      "exit_status": 0,
+      "seconds": 1.8939891600020928,
+      "source_sha256": "e3232fd9b6f006892e6254bfb1d0c74291e4ea5166c12cc7e3e8525c85910dfb",
+      "expected_raw_sha256": "10d96c5dff633d03a1f3984db9bd896ce0c62b3ef7e45b081971ecea7eb849e3",
+      "actual_raw_sha256": "62c30f9eba932c607602cd9e9db12ec2daa8865d44ff75ef56525490beee05aa",
+      "expected_provenance": {
+        "elapsed_seconds": 1.9910046910008532,
+        "python": "3.12.14",
+        "script_sha256": "e3232fd9b6f006892e6254bfb1d0c74291e4ea5166c12cc7e3e8525c85910dfb",
+        "source_manifest_sha256": "d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba"
+      },
+      "observed_provenance": {
+        "elapsed_seconds": 1.8394633429998066,
+        "python": "3.13.5",
+        "script_sha256": "e3232fd9b6f006892e6254bfb1d0c74291e4ea5166c12cc7e3e8525c85910dfb",
+        "source_manifest_sha256": "d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba"
+      },
+      "numeric_diagnostics": {},
+      "numeric_relations": [],
+      "scientific_comparison_mode": "strict_typed_exact",
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "scientific_sha256_normalized_numeric_paths": [],
+      "scientific_sha256": "3afd5337da2f765140f9aea800933c7eaaae9e9c864384abe37cf1152e294207"
+    },
+    {
+      "name": "ward_covariance",
+      "domain": "ward_covariance",
+      "status": "passed",
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-c",
+        "authenticated declared AST adapter",
+        "{\"source\": \"/tmp/bgs-wave2-ward_covariance-q2fpvzls/independent_covariance_check.py\", \"snapshot_root\": \"/tmp/bgs-wave2-ward_covariance-q2fpvzls/snapshot\", \"snapshot_adapter\": false, \"historical_manifest_digest\": \"d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba\", \"scoped_manifest_digest\": \"7b5509cbfdc3a53d95ce18883fb54c1022809895efa52ccc3a2d95298dc07988\", \"shared_modules\": [], \"adapter_receipt\": \"/tmp/bgs-wave2-ward_covariance-q2fpvzls/adapter_receipt.json\"}"
+      ],
+      "exit_status": 0,
+      "seconds": 0.2925266090023797,
+      "source_sha256": "e490069bab34844eac812d00ee43f3fc51ce17fc311d182cb5556302816d397c",
+      "expected_raw_sha256": "fe0565457e0f18173e9fa787070d532a44d3ebd1b149925a92c4b592f8b927f9",
+      "actual_raw_sha256": "fe0565457e0f18173e9fa787070d532a44d3ebd1b149925a92c4b592f8b927f9",
+      "expected_provenance": {},
+      "observed_provenance": {},
+      "numeric_diagnostics": {
+        "/checks/1/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.31640625,
+          "observed": 0.31640625
+        },
+        "/checks/1/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12,
+          "expected": 3.800711768802619,
+          "observed": 3.800711768802619
+        },
+        "/checks/2/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.31904819615923924,
+          "observed": 0.31904819615923924
+        },
+        "/checks/2/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12,
+          "expected": 38.957128699514726,
+          "observed": 38.957128699514726
+        },
+        "/checks/3/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.47459735935479713,
+          "observed": 0.47459735935479713
+        },
+        "/checks/3/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12,
+          "expected": 489.9323714963605,
+          "observed": 489.9323714963605
+        },
+        "/checks/4/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.6883157681967654,
+          "observed": 0.6883157681967654
+        },
+        "/checks/4/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12,
+          "expected": 7065.039810903379,
+          "observed": 7065.039810903379
+        },
+        "/checks/5/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 1.0139330032934513,
+          "observed": 1.0139330032934513
+        },
+        "/checks/5/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12,
+          "expected": 114243.12670567085,
+          "observed": 114243.12670567085
+        },
+        "/checks/7/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.5126221070690802,
+          "observed": 0.5126221070690802
+        },
+        "/checks/7/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12,
+          "expected": 4.694093344070586,
+          "observed": 4.694093344070586
+        },
+        "/checks/8/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.713021319632496,
+          "observed": 0.713021319632496
+        },
+        "/checks/8/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12,
+          "expected": 75.56474515565046,
+          "observed": 75.56474515565046
+        },
+        "/checks/9/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.738462948056406,
+          "observed": 0.738462948056406
+        },
+        "/checks/9/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12,
+          "expected": 1471.0895066755736,
+          "observed": 1471.0895066755736
+        },
+        "/checks/10/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.7048995272107823,
+          "observed": 0.7048995272107823
+        },
+        "/checks/10/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12,
+          "expected": 32624.951388101123,
+          "observed": 32624.951388101123
+        },
+        "/checks/11/norm_error": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 0.0,
+          "expected": 0.7047409950035816,
+          "observed": 0.7047409950035816
+        },
+        "/checks/11/theorem_bound": {
+          "comparison": "finite_nonnegative_reference_difference",
+          "absolute_tolerance": 1e-12,
+          "relative_tolerance": 1e-12,
+          "expected": 808901.6207472732,
+          "observed": 808901.6207472732
+        }
+      },
+      "numeric_relations": [
+        "norm_error<=theorem_bound+1e-12 for m>=2; exact m=1 zeros unchanged"
+      ],
+      "scientific_comparison_mode": "strict_typed_exact_with_declared_numeric_diagnostics",
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "scientific_sha256_normalized_numeric_paths": [
+        "/checks/1/norm_error",
+        "/checks/1/theorem_bound",
+        "/checks/10/norm_error",
+        "/checks/10/theorem_bound",
+        "/checks/11/norm_error",
+        "/checks/11/theorem_bound",
+        "/checks/2/norm_error",
+        "/checks/2/theorem_bound",
+        "/checks/3/norm_error",
+        "/checks/3/theorem_bound",
+        "/checks/4/norm_error",
+        "/checks/4/theorem_bound",
+        "/checks/5/norm_error",
+        "/checks/5/theorem_bound",
+        "/checks/7/norm_error",
+        "/checks/7/theorem_bound",
+        "/checks/8/norm_error",
+        "/checks/8/theorem_bound",
+        "/checks/9/norm_error",
+        "/checks/9/theorem_bound"
+      ],
+      "scientific_sha256": "26ba84a6c6f3716edd0fd385577dec335c498aa6890a1b2fcf4ed283e57ee064"
+    },
+    {
+      "name": "ward_permutations",
+      "domain": "ward_covariance",
+      "status": "passed",
+      "command": [
+        "/workspace/shared/bgs_hamming_ci_repair_validation/venv/bin/python",
+        "-c",
+        "authenticated declared AST adapter",
+        "{\"source\": \"/tmp/bgs-wave2-ward_permutations-0w9ffr5o/independent_permutation_check.py\", \"snapshot_root\": \"/tmp/bgs-wave2-ward_permutations-0w9ffr5o/snapshot\", \"snapshot_adapter\": false, \"historical_manifest_digest\": \"d6d5ade7444d9a2de43be89fd9636554404a275aa6703fa93910e55c1a1826ba\", \"scoped_manifest_digest\": \"7b5509cbfdc3a53d95ce18883fb54c1022809895efa52ccc3a2d95298dc07988\", \"shared_modules\": [], \"adapter_receipt\": \"/tmp/bgs-wave2-ward_permutations-0w9ffr5o/adapter_receipt.json\"}"
+      ],
+      "exit_status": 0,
+      "seconds": 0.3495568810030818,
+      "source_sha256": "8fffdf145579f6f7edb3998403ee0d6a0b7616f1cbc49bed2a46de6413234a95",
+      "expected_raw_sha256": "225c1d15889ea85576bc949dde241b0aabbdff017c03c9861b05663ebf327ff7",
+      "actual_raw_sha256": "225c1d15889ea85576bc949dde241b0aabbdff017c03c9861b05663ebf327ff7",
+      "expected_provenance": {},
+      "observed_provenance": {},
+      "numeric_diagnostics": {},
+      "numeric_relations": [],
+      "scientific_comparison_mode": "strict_typed_exact",
+      "scientific_sha256_mode": "comparison_normalized_projection",
+      "scientific_sha256_normalized_numeric_paths": [],
+      "scientific_sha256": "500e67be3a4c5ac65bb994e83222a5808224f603b8ed65cf6dca6b274e091193"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "replay_contract.original.json",
+      "bytes": 16686,
+      "sha256": "429f939c7b7336fd184fc81d883bad47c5849d143ecb1e9e39a23d082ee8aa73"
+    },
+    {
+      "path": "source_bindings.original.json",
+      "bytes": 10482,
+      "sha256": "78436b05df152c1e62c98b16b381e09915018b1ad46078530ac35eae0ec28a6c"
+    },
+    {
+      "path": "scoped_input_bindings.original.json",
+      "bytes": 18009,
+      "sha256": "a76cec5e74703f260d4529b7eb46c071efc993fcec3fe6ce633b1bb4499bbfde"
+    },
+    {
+      "path": "runtime_scoped_snapshot_manifest.json",
+      "bytes": 7018,
+      "sha256": "7b5509cbfdc3a53d95ce18883fb54c1022809895efa52ccc3a2d95298dc07988"
+    },
+    {
+      "path": "echo.expected.raw",
+      "bytes": 7591,
+      "sha256": "f7ef02b66f20392430f03362590339f8d2797df5033c03500c87c46a8df79bd9"
+    },
+    {
+      "path": "echo.stdout",
+      "bytes": 216,
+      "sha256": "ce0796f050d98e135999e1894d8907105535bb827566c44038b7792b26ad9043"
+    },
+    {
+      "path": "echo.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "echo.adapter.json",
+      "bytes": 386,
+      "sha256": "c3959cfb9d17231e33801ccade24cccd55aea254f5a6782ae608f5ced9841c54"
+    },
+    {
+      "path": "echo.actual.raw",
+      "bytes": 7591,
+      "sha256": "f7ef02b66f20392430f03362590339f8d2797df5033c03500c87c46a8df79bd9"
+    },
+    {
+      "path": "centering.expected.raw",
+      "bytes": 4451,
+      "sha256": "b6f20ae45b8a62bb1df7c8a9134536e8ae23a221595f0426d619040b4bcd60f1"
+    },
+    {
+      "path": "centering.stdout",
+      "bytes": 4450,
+      "sha256": "76a9369bec0b42607c7e41ebe120b624a53062ddd91f50626c00eb76e383059f"
+    },
+    {
+      "path": "centering.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "centering.adapter.json",
+      "bytes": 383,
+      "sha256": "857ce5f824f2c16d771cb781e14e9f248c7a482c912fca8451c02b28aaa0d8ee"
+    },
+    {
+      "path": "centering.actual.raw",
+      "bytes": 4450,
+      "sha256": "76a9369bec0b42607c7e41ebe120b624a53062ddd91f50626c00eb76e383059f"
+    },
+    {
+      "path": "rounding.expected.raw",
+      "bytes": 6930,
+      "sha256": "53c1e4df13309d046e211cee460bc73464d08f114ad2c06efd943a9a5e50cc63"
+    },
+    {
+      "path": "rounding.stdout",
+      "bytes": 263,
+      "sha256": "07f720095ed57976d1f5e9e82375760fcabd69d1f1d49d8aeb7180f0670534dd"
+    },
+    {
+      "path": "rounding.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rounding.adapter.json",
+      "bytes": 383,
+      "sha256": "38848255aa0c29428e2d714f8e1f2343adf0f0a88d9ae7dbf1a620f86f094337"
+    },
+    {
+      "path": "rounding.actual.raw",
+      "bytes": 6929,
+      "sha256": "38d894c2c206f9d44e23518805b51ba8c5ac26581a9a2682a0e2c49d0633e008"
+    },
+    {
+      "path": "actual_one_pinch.expected.raw",
+      "bytes": 5905,
+      "sha256": "b8c0d149119923a3bb330d9194188a35c27bf805afbc15960cae9f7901f0341f"
+    },
+    {
+      "path": "actual_one_pinch.stdout",
+      "bytes": 326,
+      "sha256": "e2ea08a38642c957320fbdbbedbee68416640b4c5c749816a6d979eae2110f20"
+    },
+    {
+      "path": "actual_one_pinch.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "actual_one_pinch.adapter.json",
+      "bytes": 379,
+      "sha256": "bfee6352f83d68c061e6f282237270d857a0db53e0e4ca4ea7dc6c0d736959bf"
+    },
+    {
+      "path": "actual_one_pinch.actual.raw",
+      "bytes": 5905,
+      "sha256": "91e4ea8aea7370121a3454c80f226093bc37513e4f5aa19960f6b209a2874788"
+    },
+    {
+      "path": "hook_bridge.expected.raw",
+      "bytes": 4688,
+      "sha256": "b0441b56e8414034cbdbb207f017f77767776fb24d76a67261ea44ea4bcbb2bb"
+    },
+    {
+      "path": "hook_bridge.stdout",
+      "bytes": 4687,
+      "sha256": "a4f0e3757f3d89d2c7309084af19fde6ced1f4eb1b5d8c2a0a3266a3327aef10"
+    },
+    {
+      "path": "hook_bridge.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "hook_bridge.adapter.json",
+      "bytes": 735,
+      "sha256": "d9052ffdd807a0a092dc81b3c2ad2ccfa8803f7c86337d3313c301f0e65ce858"
+    },
+    {
+      "path": "hook_bridge.actual.raw",
+      "bytes": 4687,
+      "sha256": "a4f0e3757f3d89d2c7309084af19fde6ced1f4eb1b5d8c2a0a3266a3327aef10"
+    },
+    {
+      "path": "hook_downstream.expected.raw",
+      "bytes": 13982,
+      "sha256": "10d96c5dff633d03a1f3984db9bd896ce0c62b3ef7e45b081971ecea7eb849e3"
+    },
+    {
+      "path": "hook_downstream.stdout",
+      "bytes": 10028,
+      "sha256": "d022bca6423b0d92666bc8dc2be0c45c89eabd6672caed4c600c98d5bd80100d"
+    },
+    {
+      "path": "hook_downstream.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "hook_downstream.adapter.json",
+      "bytes": 392,
+      "sha256": "f182a6e96e4c1223b16f34743d612255ffd33bdf07e3add8505cb09f0bc2ad75"
+    },
+    {
+      "path": "hook_downstream.actual.raw",
+      "bytes": 13981,
+      "sha256": "62c30f9eba932c607602cd9e9db12ec2daa8865d44ff75ef56525490beee05aa"
+    },
+    {
+      "path": "ward_covariance.expected.raw",
+      "bytes": 2577,
+      "sha256": "fe0565457e0f18173e9fa787070d532a44d3ebd1b149925a92c4b592f8b927f9"
+    },
+    {
+      "path": "ward_covariance.stdout",
+      "bytes": 2577,
+      "sha256": "fe0565457e0f18173e9fa787070d532a44d3ebd1b149925a92c4b592f8b927f9"
+    },
+    {
+      "path": "ward_covariance.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ward_covariance.adapter.json",
+      "bytes": 395,
+      "sha256": "f6336126941e1cd18f27d14bb5d92247e85328985f75f2bf9dc4e3278296d05a"
+    },
+    {
+      "path": "ward_covariance.actual.raw",
+      "bytes": 2577,
+      "sha256": "fe0565457e0f18173e9fa787070d532a44d3ebd1b149925a92c4b592f8b927f9"
+    },
+    {
+      "path": "ward_permutations.expected.raw",
+      "bytes": 1078,
+      "sha256": "225c1d15889ea85576bc949dde241b0aabbdff017c03c9861b05663ebf327ff7"
+    },
+    {
+      "path": "ward_permutations.stdout",
+      "bytes": 1078,
+      "sha256": "225c1d15889ea85576bc949dde241b0aabbdff017c03c9861b05663ebf327ff7"
+    },
+    {
+      "path": "ward_permutations.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ward_permutations.adapter.json",
+      "bytes": 395,
+      "sha256": "064c77a397478458f24e368c6e33e5de684e0b04cd9179650d6104764dabd460"
+    },
+    {
+      "path": "ward_permutations.actual.raw",
+      "bytes": 1078,
+      "sha256": "225c1d15889ea85576bc949dde241b0aabbdff017c03c9861b05663ebf327ff7"
+    }
+  ],
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "optimization": 0,
+  "whole_suite_run": false,
+  "formal_compile_run": false,
+  "manuscript_build_run": false,
+  "scope": "Six bounded domains; no asymptotic or unavailable-archive execution certification.",
+  "source_hashes": {
+    "AGENTS.md": "17b10ee329a8785ba52778b00aee31b64a5ab8ecf7053fa73b5359a20b94418a",
+    "SOURCE_OF_TRUTH.md": "63a6cd2263c8790a431981f7bdaa8cb46eb5188aad33e65f6a387b58fbbbcaaa",
+    "computations/verification/wave2_checked_replay.py": "56b689227d4cae02769cbdd83d4768fb3e9c0bd174704b7246a8836a7b62708e",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier/centering_candidate.md": "c19ecf74f9bff041524758ebe124c3fdffd42be8f5ec6ed627fe8056091b13d2",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/frontier/exact_identification_target.md": "79e41bd931e8a96d988b44b3b7a9143fc74628b75ce64ad452d727c8ce45d380",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/proofs/uniform_abel_bound.md": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/review_first_pair.md": "fd2f0d76ff4326fb4a80e6c84bff69b264ee7b0665448105c59c8cd2128d27b1",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/NEXT_LITERAL_SOURCE.md": "26649c8a4bf22b21564e1d79b64282fad75e38fd0f10a729cf9ebbae693d1cea",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/bilinear_carry_counterexample_v2.md": "88408d0241a9346fd16b33117ff3779b8abccb740a3992aa29a631c59f8c49ab",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/imported_abel_review.md": "fd2f0d76ff4326fb4a80e6c84bff69b264ee7b0665448105c59c8cd2128d27b1",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/review.md": "fd9118f5f7bb97b0daa1383448275c3f36f6031a68b22dc54b189563698d4979",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/growing_review/seal.json": "20e899a18455033537964c0c425041ec1851618a00cc831ad7f7eedaca603807",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/carry_review/review_v2.md": "5d0cbaf1b444073c8b19f24e3024a9cc4670d450eb995e45e6f304f084b39c4a",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/growing_period_counterexample.md": "c5e2f39ba99145072a51bc10429978367a694294e666bcdda70125592990edf5",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/08_fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/09_frozen_operator_transfer_coercivity.md": "45741a330cf5b154fde99fb93ab444380bab1e8183d6320bf613b6dbe306fe26",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/inputs/18_uniform_abel_bound.md": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/seal_manifest.json": "9aed22fcf246e66a6f6480bb7201304351dce54e888d1e4add02743438110912",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/rounding_offcharge_upgrade.md": "d4bae7595a4a0787105c429384d82af70ef7f7968e4cda2f0c9e78635d637a92",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/simple_spectrum_companion.md": "6f163c8e3c9acf0a01818443763986cc85aea2ababd44fbe701b646d7a28ce58",
+    "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/ward_review/ward_identity_review.md": "4cddbeb00477a472cf81c012627de139f70242c905453a9ec72648de1432a8be",
+    "evidence/research_checkpoint_20261007/raw/bgs_literal_extension_review/independent_extension_audit.md": "0ec05e56f56403f0665c68d75a76145da0c8b7dfb0f9e3d4d85621b09eddc683",
+    "evidence/research_checkpoint_20261007/raw/bgs_phase_integral_boundary_audit/reviewer/one_site_boundary_audit.md": "1b2ad619caf4146881ff10a65efebf9342c340188cf9e789380327a066a47fed",
+    "evidence/wave2_checked_20261007/raw/actual_one_pinch/packet/check_overlap.py": "da8cc8f11f955e26c7c7996e7dca34bf5d5c7ed148866e81b315a3d48e5c313c",
+    "evidence/wave2_checked_20261007/raw/actual_one_pinch/packet/checks.json": "b8c0d149119923a3bb330d9194188a35c27bf805afbc15960cae9f7901f0341f",
+    "evidence/wave2_checked_20261007/raw/centering/checks/results.json": "b6f20ae45b8a62bb1df7c8a9134536e8ae23a221595f0426d619040b4bcd60f1",
+    "evidence/wave2_checked_20261007/raw/centering/checks/verify_centering.py": "44b0afc0181d2090dda2cc6b9b007b0bcb16b869948ebe47b32979057a7c8f1d",
+    "evidence/wave2_checked_20261007/raw/echo_generator/check_exact_controls.py": "b7377f0c368c7d9fea7c41eeea78b5815fd2e1fe2b2a5e0f6d4597d1b460a4fd",
+    "evidence/wave2_checked_20261007/raw/echo_generator/exact_results.json": "f7ef02b66f20392430f03362590339f8d2797df5033c03500c87c46a8df79bd9",
+    "evidence/wave2_checked_20261007/raw/hook_review/check_grouping_review_copy.py": "e3232fd9b6f006892e6254bfb1d0c74291e4ea5166c12cc7e3e8525c85910dfb",
+    "evidence/wave2_checked_20261007/raw/hook_review/check_zero_extension_bridge.py": "77d07faa6de52a0ea8539f32d7951d9d23c3256b095f132bafbc0c9da74e7863",
+    "evidence/wave2_checked_20261007/raw/hook_review/hook_tree_current_identity_v2.md": "1e1650468a3f4ec9ad3bfc1274cd0c79b54b22c5742a94708aedce2d6d098b59",
+    "evidence/wave2_checked_20261007/raw/hook_review/v2_downstream_normal.json": "10d96c5dff633d03a1f3984db9bd896ce0c62b3ef7e45b081971ecea7eb849e3",
+    "evidence/wave2_checked_20261007/raw/hook_review/zero_extension_bridge_results.json": "b0441b56e8414034cbdbb207f017f77767776fb24d76a67261ea44ea4bcbb2bb",
+    "evidence/wave2_checked_20261007/raw/provenance/base_navigation/RESEARCH.md": "4e3301d0b6c15e9374936e5f0f35a3f776c55383bac2acd677d4ec2fc95f76ac",
+    "evidence/wave2_checked_20261007/raw/provenance/base_navigation/mathematics/open_questions.md": "0d9ba25b4001cb1467767da8f0d525181497d98dcb17ca814f58c2d0c13a3d7b",
+    "evidence/wave2_checked_20261007/raw/provenance/base_navigation/mathematics/phase_trace_checkpoint.md": "f52a4c7beb9042d403dd125f9425d4a29f6d1cd43a624b91a3b4b89f9abe9208",
+    "evidence/wave2_checked_20261007/raw/provenance/base_navigation/mathematics/results.md": "8fb89078ced82c0953f162967d7d275c445682c56263964b9b091505c764b163",
+    "evidence/wave2_checked_20261007/raw/provenance/base_navigation/record/claim_ledger.md": "6e282d41a3e059c93c92b57dfa6107df420a5f651f24df681cf9dcc3463d0f7b",
+    "evidence/wave2_checked_20261007/raw/provenance/base_navigation/record/claims.json": "8cf4ba7581487310f3417f46f44c5ba4c29fb34331f45e7d749b126b361178c8",
+    "evidence/wave2_checked_20261007/raw/provenance/checked_research_checkpoint_reviewed.md": "9e486b215d1a2bd0818f0871f0dca23c3ecefbc532b25b393d2ee0bbaa527850",
+    "evidence/wave2_checked_20261007/raw/rounding_review/check_companions.py": "61e0cded2dd304dd876b4c72033db0c922e344e145ce45b2ec311dfbde86f6c5",
+    "evidence/wave2_checked_20261007/raw/rounding_review/controls.json": "53c1e4df13309d046e211cee460bc73464d08f114ad2c06efd943a9a5e50cc63",
+    "evidence/wave2_checked_20261007/raw/ward_covariance/checks/independent_covariance_check.py": "e490069bab34844eac812d00ee43f3fc51ce17fc311d182cb5556302816d397c",
+    "evidence/wave2_checked_20261007/raw/ward_covariance/checks/independent_permutation_check.py": "8fffdf145579f6f7edb3998403ee0d6a0b7616f1cbc49bed2a46de6413234a95",
+    "evidence/wave2_checked_20261007/raw/ward_covariance/checks/independent_results.json": "fe0565457e0f18173e9fa787070d532a44d3ebd1b149925a92c4b592f8b927f9",
+    "evidence/wave2_checked_20261007/raw/ward_covariance/checks/permutation_results.json": "225c1d15889ea85576bc949dde241b0aabbdff017c03c9861b05663ebf327ff7",
+    "mathematics/actual_charge_radial_resolvent.md": "d76af5e9ad8cff4df4b015698c77d3d1ecebffe1103e5e09966d670f9aaedfd6",
+    "mathematics/actual_charge_radial_shell.md": "eccca8f36860e537f736828c435fce94f10006fbbaa48722fbd9481671ed4c0b",
+    "mathematics/balanced_pair_schur_reduction.md": "a36503dfd8a578a006fa9a5f59ca7d7b0bd47c46d682997592d95dbd67b43752",
+    "mathematics/bosonic_body_radial_translation.md": "9a061d64c39cc947e0060d20c96864a301b2fb88b53360cf1e5a44c9434bdcfb",
+    "mathematics/compact_phase_pair_identity.md": "4b821bd3c4d67e0f07b32982be8ec06a5e7592d8574aa34c99f67b382b2060f3",
+    "mathematics/complex_microscopic_phase_source_bounds.md": "9fcf9168a6ff39c8df8e4c1f106e969ce3e1cb3cfac963b7d81d2e9990b52b76",
+    "mathematics/fixed_map_path_model.md": "d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08",
+    "mathematics/four_branch_parametrix.md": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7",
+    "mathematics/fractional_hamming_cancellation.md": "10fd5b3e5d14d54c7d2b3ad2ace7b9d474a47f142b5a87e35fcf73b894ecaeb5",
+    "mathematics/global_bosonic_body_coercivity.md": "b6cf72d2d724e9b39b5726254a542dc417641ab96dd2f539f41b7fc5bbdb0b2e",
+    "mathematics/global_switch_transfer.md": "09662a4e6f81688a38c36be8429069f2e697377939f730a6dbf44e9b7b469f90",
+    "mathematics/literal_fixed_word_freeness.md": "931b62e8869349f8950c8f65dc2cfea92b12d42a6fdbaa69649399c937c610a0",
+    "mathematics/literal_growing_word_window.md": "4c497a406e51dd75cc0ca0b3b85100c3713c2013ae2d53b3d15e7ecceaf7222a",
+    "mathematics/microscopic_rounding_control.md": "68a0b67c6aaba5e5d1c6cb21cc4874a2a11e6e497b481e2212c821bde34c6889",
+    "mathematics/onestep_charge_gap.md": "15d713759394c52cf16665719e970189ef6dab9044e08e5b54bbb29243cfa747",
+    "mathematics/position_chain_mixing.md": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09",
+    "mathematics/real_absorption_body_coercivity.md": "267761a7e1e1f0ba649c976987a2166bf898f72515d000cdc8f1e27a37a2fd4e",
+    "mathematics/reversed_path_decay.md": "c8fea232fdc36fed8d0c8ce9975025050179fca1f3d67e6ddf4d5fb4515ded47",
+    "mathematics/uniform_phase_pair_abel_bound.md": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f",
+    "record/repository_conventions.md": "561513dd48843a6480750323375dee347a14e5e581bbca66a1ce2aa4d0b27ce6",
+    "record/wave2_replay_contract.json": "429f939c7b7336fd184fc81d883bad47c5849d143ecb1e9e39a23d082ee8aa73",
+    "record/wave2_scoped_input_bindings.json": "a76cec5e74703f260d4529b7eb46c071efc993fcec3fe6ce633b1bb4499bbfde",
+    "supplement/fixed_map/weighted-secular/determinant_boundary.md": "14c1eeedf76c5362566525cf2b10e84ce422a0e5914881193bf79d80d205a06c"
+  },
+  "adapter_bootstrap_sha256": "089503707e4362d03bfcde5001af638ae29669b50ca7e5a60489bc7bbd9c5ffc",
+  "original_sources_unchanged": true,
+  "copied_inputs_authenticated": true,
+  "expected_bytes_cached_before_execution": true,
+  "scientific_equality": true,
+  "scientific_comparison_mode": "strict_typed_exact_with_contract_declared_numeric_diagnostics",
+  "provenance_excluded_from_scientific_comparison": true
+}

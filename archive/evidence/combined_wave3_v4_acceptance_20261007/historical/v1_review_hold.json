@@ -1,0 +1,18 @@
+{
+  "status": "v1_full_science_held_for_new_final_freeze",
+  "not_publication_ready": true,
+  "source_manifest_sha256": "e8ea31f470336525d74993e89fab7e806e80a4504d0984b8724d586f38742db6",
+  "gaps": [
+    "Declared source_pins provenance maps permit omissions",
+    "Named hook extra-source digest roles permit swapping"
+  ],
+  "independent_review_artifacts": {
+    "/workspace/shared/bgs_combined_math_integration_review/REVIEW.md": "ce9e8ad6ec2c2b95c21522c9e6436e78dcd6e6eada387bc24d5cc0b797d81e6f",
+    "/workspace/shared/bgs_combined_math_integration_review/provenance_probe.json": "2d0aa8bedb4fbd9a066032d4c6885f327cb7cb955c863918fd6befa266790df4",
+    "/workspace/shared/bgs_combined_math_integration_review/independent_negatives_normal.json": "f516efa136ecb727807a591869ebae7547aafc2970fc964ef290806bda1a0f85",
+    "/workspace/shared/bgs_combined_math_integration_review/independent_negatives_optimized.json": "e0f1a08c8d0fa2b14d0cc40bee2dd79b539c046ba553f6436d4ee1f5603b0539",
+    "/workspace/shared/bgs_combined_math_integration_review/proposed_provenance_fix/patch_manifest.json": "4fd98aea8a3a03bd0fb1bbee748f7bc8db41591f4c92062968a8287792f36fb8",
+    "/workspace/shared/bgs_combined_math_integration_review/proposed_provenance_fix/minimal_provenance_fix.patch": "5041a74e40ef17a0e3362407bbc402ed3138d10d4c676780b7369014dfbf4bcb"
+  },
+  "scope": "Parent explicitly held unstarted aggregate science. V1 unaffected execution evidence remains version-bound. No candidate edits or publication."
+}
