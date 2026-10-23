@@ -1,0 +1,106 @@
+{
+  "schema": "bgs-toolchain-followup-v1",
+  "recorded_at_utc": "2026-10-20T11:54:42.871482+00:00",
+  "source_commit": "cfe74abafb61b590a2c3aff4642525a94d9f639e",
+  "source_scope": "69 authenticated unchanged files; partial build snapshot, not full checkout",
+  "lean": {
+    "version": "4.33.1",
+    "active_modules": 24,
+    "lake_jobs": 27,
+    "result": "success recorded in fresh build log",
+    "adapter": "computations/maintenance/lean_proc_self_compat.c",
+    "coherence_budget_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "excluded": [
+      "JackArithmeticCore Mathlib draft",
+      "analytic BGS formalization"
+    ]
+  },
+  "cpp": {
+    "compiler": "GNU 13.3.0",
+    "cmake": "3.29.6",
+    "boost": "1.92.0",
+    "targets_built": 26,
+    "build_exit_code": 0,
+    "runtime_replays": "not performed in this follow-up"
+  },
+  "failed_attempts": [
+    "native Lean application-path detection",
+    "Boost b2 install / CMake 4.4.4 package discovery"
+  ],
+  "ci": "Existing cfe workflow failures had no runner steps; job logs unavailable; cause unknown; no green CI claim",
+  "artifacts": {
+    "boost_bootstrap.log": {
+      "bytes": 1823,
+      "sha256": "c4627348347dba12cfbfc0f7ae5e7da4422f5624ca182d022e7e662d291c0bbd"
+    },
+    "cmake329_configure.log": {
+      "bytes": 1116,
+      "sha256": "d1b4a90552ce3b51f71f6b4ef8719d521c37ddb09623f6f20222f43f25d42024"
+    },
+    "cmake_configure.log": {
+      "bytes": 935,
+      "sha256": "173d0a635761d93ede5d94884444d18880a01ae53b90f13af09490fb2df67eec"
+    },
+    "cpp_build.log": {
+      "bytes": 5746,
+      "sha256": "438625d52ee77c019fd7fadc714d98bfd14158ab3aa8965607833450217d2a02"
+    },
+    "lean_build.log": {
+      "bytes": 14811,
+      "sha256": "d03b50ffdaf2fbdaa043edc366d1f76a7b0032c9e9416a2521a314ec52f93070"
+    },
+    "lean_build_stdout.log": {
+      "bytes": 14873,
+      "sha256": "78857959f28cdb58d1390cee8b37cc992aab350a663c8ced2ec290717c244e10"
+    },
+    "lean_native.log": {
+      "bytes": 67,
+      "sha256": "dfce1e7d6849bcb01696e698fae3345a66f15495d7e36f99ac1293476a5bd045"
+    },
+    "verified_sources.json": {
+      "bytes": 14573,
+      "sha256": "1a18740b1ed9ee31d2a5d2bf553de15b2ef6dacb3c38c8640f903bd9935ec674"
+    },
+    "boost_install_excerpt.log": {
+      "bytes": 10056,
+      "sha256": "5fb3d1ceed58db2854bbe7da93f5ebe0560ac9454849d90ded5e081a3999b833"
+    }
+  },
+  "toolchain_archives": {
+    "lean.tar.zst": "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235",
+    "boost.tar.gz": "e2a814b3a158ab482c7a3d330f8bf5a7a8423d258a4e2fb396996e00fcee2111"
+  },
+  "olean_outputs": {
+    "ActiveRankDefect.olean": "2321612c7edea49a870a0e6a24eec12359e909433a71d13b6a9d438a55c6364a",
+    "AnalyticOrbitKernels.olean": "79a9f77ff2a59ed0a95cba6596c59fa4ad437a7792c74685a03deeab9aacb539",
+    "CayleyCurveEnergy.olean": "beaa88a1407b921daad7e8d0d19498536531cd830ff6f3fcb278f2c2c9a17f5c",
+    "CayleyEnergy.olean": "fb1c15bc388a3c9ff5d7beac63847e672655d6cf8ab923407d917dfc5c51132e",
+    "CoherenceBudget.olean": "e893d6659ade4b17e9687c6ed688a697fcd5051b19c7e18692897c0d0722973c",
+    "CueLoopKernels.olean": "d4b1650eef36714c15eb1cb75a37a5b554d3c94a105476a767786d7dd27d66ed",
+    "FibonacciRatioSmall.olean": "d1d210f2cc707fbd737d6ded31328172cf6e5cb7570b2fcee82a3ae0eacfd8e0",
+    "FourCutKernel.olean": "9a9bd9a0d967704cf38759d5d06a017776fb3c5d7076784e5be8dc2115603b5a",
+    "GeneralHyperbolicParity.olean": "d351e20b9b7a175360636d9b60391f36ddc250f0d6c5921855df520a19700171",
+    "HistoricalMobiusDegenerateFiber.olean": "bc662bc2eb8b6f32667f17edc6534749c3bf132e91bd0f607355e4c0cf2e08fc",
+    "LocalityKernels.olean": "c119a8ff46b7e865d3abe4775377bdd830d72d6299612b138a704e04af65e081",
+    "MagneticTraceSmall.olean": "4004d55b1b7739a10aa4f52096631b3e245da9415d1e53b1bece7e24637b1843",
+    "PairKeyFourthMoment.olean": "e2e87fa7ac30165d4e9c558282f4fa3764ebf6b8fb3a9438a3cf4cb57dfd5226",
+    "PairKeySecondMoment.olean": "e25d4829e6c2b86f1d849cffa1856e62e767d8666eed00278e05752e2da8cdcf",
+    "PellCoboundary.olean": "fa9d60146b6f8340e37f454b31556704cdaba1b113620ceddb1b7423d750da42",
+    "PellCohomology.olean": "649f0bd2c3ec190b8da85ebd5986bfabdb3d0159e2ef636fde621f3e63f81361",
+    "PellEchoWeights.olean": "09412980bf2281047cf392bc6cc7e27a238f5db4e01c2bffcbe5881cae54b4ed",
+    "PellFourierKernel.olean": "f3e9148744c0579001883a1e45548ece47f6df64a202a0f267cd9d3fcaf8267e",
+    "PhaseChannelJetKernels.olean": "81fd5ebbe0ce3f10fe4ce2e78418edf84217ce5830f7c8d605210f309e3e6303",
+    "PhaseFrameWitness.olean": "b328383de779505f521ccf618190b55b1569c3c000e4714c06e96d0e9f68a116",
+    "SevenPrimary.olean": "2b54a91f25458c273f7bad15767e6d29637d0bd09c15e188a6627ce0e89e4a3e",
+    "TorusDimensionBound.olean": "1e9672638b12a9a72f60b3757bf122c731863adf3c709b17fdcb23e71f81d50c",
+    "TorusLevelSets.olean": "22b16e5bff68fe37748f2b2c487694a215afc09ff9b2efbbbc5ec3fe4360a03c",
+    "TorusScaleLaw.olean": "46f34e8889e6f9890326f5e63e03ecb8e5ce9fb7a88cca6c47238916d476e226"
+  },
+  "unpublished_full_boost_install_log": {
+    "bytes": 2284835,
+    "sha256": "99148ff380fcc122c619b60bcb389b039372895adbbacbd3fdcee9ad2054dc0b"
+  }
+}
