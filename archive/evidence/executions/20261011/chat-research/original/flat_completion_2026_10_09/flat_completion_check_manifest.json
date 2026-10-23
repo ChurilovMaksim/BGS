@@ -1,0 +1,14 @@
+{
+  "command": "OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 python flat_completion_check.py",
+  "input": {
+    "path": "/workspace/scratch/06745ba532e4/research_session/flat_completion_2026_10_09/flat_completion_check.py",
+    "sha256": "0f96e0d0ac15cb3ee7bfee0f51fd3763342837eff1d562ec9c55a372d7aedfb5"
+  },
+  "output": {
+    "path": "/workspace/scratch/06745ba532e4/research_session/flat_completion_2026_10_09/flat_completion_check_results.json",
+    "sha256": "d01201417eaf925c4d071a3f57d52b1be60b8feec07daad0e905e7cabd0e3cbb"
+  },
+  "seed": 86742091,
+  "exit_expectation": 0,
+  "verification_type": "floating controls, not formal certification"
+}

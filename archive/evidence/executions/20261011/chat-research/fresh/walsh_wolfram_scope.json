@@ -1,0 +1,16 @@
+{
+  "scope": "Wolfram exact Boolean controls at N=2,4,8,16,32,64,128 and one exact rational window identity; not an asymptotic theorem.",
+  "source": "computations/wolfram/walsh_clock_20261011.wl",
+  "source_sha256": "4faf82ed7597e8b942d3a5f98f68618d4bed877736433451345c4ef9105932c1",
+  "response": "walsh_wolfram_response.json",
+  "response_sha256": "4a3a51718f753dc0c6d25dcc102521234344c7dc0769777d01910be199ea2fb4",
+  "software": "Wolfram 15.0.1 for Linux x86 (64-bit), July 2, 2026",
+  "checks": {
+    "zero_trace": 7,
+    "cleared_orthogonality": 7,
+    "entry_squares": 7,
+    "window_identity": 1
+  },
+  "all_reported_checks_true": true,
+  "review": "Exact integer orthogonality and rational expressions were also replayed by the active Python control."
+}

@@ -1,0 +1,245 @@
+{
+  "schema_version": 2,
+  "claim_id": "BGS-TRACE-067-070-071-bounded-controls-20261011",
+  "repository": {
+    "commit": "9e3c90fb18fbdca8b0fd7d192aab0b76dd2d757d",
+    "dirty": true
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "computations/verification/chat_research_20261011.py",
+    "--output",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "C++",
+        "version": "g++ 13.3.0"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Bounded exact Jack, circular variance, Pfaffian density, CSE cumulant, alternating-clock and Walsh-clock identities.",
+    "coefficient_domain": "Arbitrary Python integers and rational Fractions; independent C++ integer SSYT.",
+    "conventions": "N distinct CSE pairs, half trace; phase-compatible circular ensembles; changed-clock diagnostic separate from literal map.",
+    "inputs": [
+      "computations/verification/chat_research_20261011.py",
+      "computations/cpp/circular_phase_ssyt_verifier.cpp",
+      "computations/verification/chat_20261011/scripts/cumulant_formula_controls.py",
+      "computations/verification/chat_20261011/scripts/exact_checks.py",
+      "computations/verification/chat_20261011/scripts/pfaffian_controls.py",
+      "computations/verification/chat_20261011/scripts/run_controls.py",
+      "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+      "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+      "computations/verification/chat_20261011/integration_contract.json"
+    ],
+    "bounds": {
+      "Jack_N": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "CSE_N": "2..32 for exact cumulants; sparse shift cases through 128",
+      "balanced_orders": "r<=3 in direct finite controls",
+      "alternating_clock_N": "even 2..40",
+      "Walsh_clock_N": "2^d, d=1..7 (N=2..128)"
+    },
+    "non_claims": [
+      "Finite controls do not certify analytic proofs or unbounded asymptotic claims.",
+      "No deterministic BGS limit is inferred.",
+      "Lean and Wolfram are separate executions."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "exhaustive exact finite enumeration",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-11T11:01:34.262017+00:00",
+    "runtime_seconds": 8.739315,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "computations/verification/chat_research_20261011.py",
+    "computations/cpp/circular_phase_ssyt_verifier.cpp",
+    "computations/verification/chat_20261011/scripts/cumulant_formula_controls.py",
+    "computations/verification/chat_20261011/scripts/exact_checks.py",
+    "computations/verification/chat_20261011/scripts/pfaffian_controls.py",
+    "computations/verification/chat_20261011/scripts/run_controls.py",
+    "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+    "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+    "computations/verification/chat_20261011/integration_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "computations/verification/chat_research_20261011.py",
+      "sha256": "4c0af7d970c4041343e8ea39f0de04ae3e32a097c7ff9423fdc3fe489a19fb1a",
+      "sha256_after": "4c0af7d970c4041343e8ea39f0de04ae3e32a097c7ff9423fdc3fe489a19fb1a"
+    },
+    {
+      "path": "computations/cpp/circular_phase_ssyt_verifier.cpp",
+      "sha256": "ecf8ed9b4d65fab4332792074a85c33757b18a3ff108d7eea544b648c20efd16",
+      "sha256_after": "ecf8ed9b4d65fab4332792074a85c33757b18a3ff108d7eea544b648c20efd16"
+    },
+    {
+      "path": "computations/verification/chat_20261011/scripts/cumulant_formula_controls.py",
+      "sha256": "a163ec21464d253104619ebe70d81958402c4d26871b9342348a15a7a48e6049",
+      "sha256_after": "a163ec21464d253104619ebe70d81958402c4d26871b9342348a15a7a48e6049"
+    },
+    {
+      "path": "computations/verification/chat_20261011/scripts/exact_checks.py",
+      "sha256": "264cdbaec0e853b85f877409b36891a746c385e46f2149a082777f033e41c8ac",
+      "sha256_after": "264cdbaec0e853b85f877409b36891a746c385e46f2149a082777f033e41c8ac"
+    },
+    {
+      "path": "computations/verification/chat_20261011/scripts/pfaffian_controls.py",
+      "sha256": "637d4d52145fd42670f0f416267e7f09708cf3cd068c0c40581fe9a1321cf17f",
+      "sha256_after": "637d4d52145fd42670f0f416267e7f09708cf3cd068c0c40581fe9a1321cf17f"
+    },
+    {
+      "path": "computations/verification/chat_20261011/scripts/run_controls.py",
+      "sha256": "e306fde176aeb6f70ed13c0af4e9938e34d9becf2d1822c56d8ef87c9f249a84",
+      "sha256_after": "e306fde176aeb6f70ed13c0af4e9938e34d9becf2d1822c56d8ef87c9f249a84"
+    },
+    {
+      "path": "computations/verification/chat_20261011/audit_tools/run_experiment.py",
+      "sha256": "13cd8da1be7da1f0742810e55c57a1f89bbee4c2a0342fc881892a124a04ee7d",
+      "sha256_after": "13cd8da1be7da1f0742810e55c57a1f89bbee4c2a0342fc881892a124a04ee7d"
+    },
+    {
+      "path": "computations/verification/chat_20261011/audit_tools/validate_manifest.py",
+      "sha256": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16",
+      "sha256_after": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16"
+    },
+    {
+      "path": "computations/verification/chat_20261011/integration_contract.json",
+      "sha256": "16ace122d92c4ee69192812715a48b2e0b4c9614451d5dbf7d2b799d70d9bc95",
+      "sha256_after": "16ace122d92c4ee69192812715a48b2e0b4c9614451d5dbf7d2b799d70d9bc95"
+    }
+  ],
+  "output_directory": "evidence/executions/20261011/chat-research/fresh/circular-controls",
+  "declared_results": [
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/summary.json",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/cpp_results.json",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/jack_results.json",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/pfaffian_results.json",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/cumulant_results.json",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/interval_results.json",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/compile.log",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/cpp.log",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/jack.log",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/pfaffian.log",
+    "evidence/executions/20261011/chat-research/fresh/circular-controls/cumulant.log"
+  ],
+  "outputs": [
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/stdout.txt",
+      "sha256": "3824d6a93c6027a361703f6fec1960e6f9a70419f85e8507a5b593f1de588f93",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/summary.json",
+      "sha256": "5b636e10e61b36f58eeb0aad13ee20a771dd9618186fcb27e7f7b9c0424921af",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/cpp_results.json",
+      "sha256": "ea305ef06c7d2c8d2167ed7c689c91b537990317dcaf315887dfd1d5b794e16c",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/jack_results.json",
+      "sha256": "23e18b6ec7fb1fc11179bf57c2cf223b27b1db1e05a894f05f557cb8244648de",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/pfaffian_results.json",
+      "sha256": "7f394d49c8e254536d49ce8c380962382f164c057b419005b88af27d55c99c8d",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/cumulant_results.json",
+      "sha256": "67583ce86f0c3b1ede2b1d4398e543229bad90a5a1424664c89e35cfd6d1806c",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/interval_results.json",
+      "sha256": "4971acd8b44aaadf509d51dd4a4fca2d54eb49990fa029c780b0f858c797b85c",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/cpp.log",
+      "sha256": "c29314e5764d8a346b67a609c27eb3000e369cf6d29fa663f43b0a3c4e1822de",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/jack.log",
+      "sha256": "60d7eaa8322ee0b45b0d55d0b71c8aafb3cc89811fbee2f485a7822cf54d585c",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/pfaffian.log",
+      "sha256": "6074f9107fb6d060b35d8939650ce99e5b2830efe31a77fabb46db54f545d3d7",
+      "kind": "result"
+    },
+    {
+      "path": "evidence/executions/20261011/chat-research/fresh/circular-controls/cumulant.log",
+      "sha256": "e8403b209cc629813763535f9c95d28f34b664de11d1b1fd1f8b06d3ce7e6fc1",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

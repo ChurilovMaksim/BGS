@@ -1,0 +1,92 @@
+{
+  "seed": 640139,
+  "finite_controls": 72,
+  "minimum_gap_slack": -7.105427357601002e-15,
+  "minimum_regulator_slack": -1.4210854715202004e-14,
+  "maximum_mobius_error": 1.0058442967419978e-09,
+  "maximum_source_bound_ratio": 0.4033778996134969,
+  "sharp_constant_ratios": [
+    1.0058935659692587,
+    1.0000584634108374,
+    1.000000584617149
+  ],
+  "matrix_source_controls": [
+    {
+      "N": 4,
+      "q": 2,
+      "fermionic_body": false,
+      "left_source_norm": 0.5960996546867451,
+      "right_source_norm": 0.5960613432496146,
+      "body_modulus": 4.994605741297527e-07,
+      "field_operator_norm": 0.9800000000000003
+    },
+    {
+      "N": 4,
+      "q": 2,
+      "fermionic_body": true,
+      "left_source_norm": 0.5960996546867451,
+      "right_source_norm": 0.5960613432496146,
+      "body_modulus": 2.390196360529409e-06,
+      "field_operator_norm": 5.0
+    },
+    {
+      "N": 4,
+      "q": 3,
+      "fermionic_body": false,
+      "left_source_norm": 0.8347664608607579,
+      "right_source_norm": 0.7430525440917973,
+      "body_modulus": 1.2002995984885171e-06,
+      "field_operator_norm": 0.9800000000000001
+    },
+    {
+      "N": 4,
+      "q": 3,
+      "fermionic_body": true,
+      "left_source_norm": 0.8347664608607579,
+      "right_source_norm": 0.7430525440917973,
+      "body_modulus": 8.381255969120179e-06,
+      "field_operator_norm": 5.000000000000001
+    },
+    {
+      "N": 8,
+      "q": 2,
+      "fermionic_body": false,
+      "left_source_norm": 0.8608388650208779,
+      "right_source_norm": 0.9119762920852197,
+      "body_modulus": 2.051192774301249e-12,
+      "field_operator_norm": 0.9800000000000003
+    },
+    {
+      "N": 8,
+      "q": 2,
+      "fermionic_body": true,
+      "left_source_norm": 0.8608388650208779,
+      "right_source_norm": 0.9119762920852197,
+      "body_modulus": 1.1873271943763704e-09,
+      "field_operator_norm": 5.000000000000001
+    },
+    {
+      "N": 8,
+      "q": 3,
+      "fermionic_body": false,
+      "left_source_norm": 0.9098440088517871,
+      "right_source_norm": 0.9066714729880888,
+      "body_modulus": 1.4301441145283205e-12,
+      "field_operator_norm": 0.9800000000000006
+    },
+    {
+      "N": 8,
+      "q": 3,
+      "fermionic_body": true,
+      "left_source_norm": 0.9098440088517871,
+      "right_source_norm": 0.9066714729880888,
+      "body_modulus": 1.087696772365839e-08,
+      "field_operator_norm": 5.000000000000003
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "scope": "Complex128 finite controls of written proofs; no integration claim or BGS conclusion."
+}

@@ -1,0 +1,190 @@
+{
+  "schema_version": 2,
+  "claim_id": "balanced-laurent-jack-sharp-contraction-controls-2026-10-11",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "scripts/run_controls.py",
+    "runs/exact001"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "g++",
+        "version": "13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04)"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact balanced Laurent Jack coefficients, cleared differential identities, energy bounds, sharpness; independent SSYT and Weyl controls at alpha=1; spherical sharp-mode dimensions and N=2 moment controls.",
+    "coefficient_domain": "Exact Python fractions and C++ int64 integers in a bounded small-range SSYT enumeration; no floating-point tolerance.",
+    "conventions": "D_alpha has interaction coefficient 1/alpha. Symmetric monomials are sums over distinct permutations. c_k is an individual root monomial coefficient. CSE counts N pairs and half trace.",
+    "inputs": [
+      "scripts/run_controls.py",
+      "scripts/exact_checks.py",
+      "scripts/schur_ssyt_control.cpp"
+    ],
+    "bounds": {
+      "jack_N": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "signature_range_N_2_to_4": [
+        -3,
+        3
+      ],
+      "signature_range_N_5": [
+        -2,
+        2
+      ],
+      "alphas": [
+        "1/2",
+        "1",
+        "2",
+        "3",
+        "7/3"
+      ],
+      "SSYT_N": [
+        2,
+        3,
+        4
+      ],
+      "SSYT_signature_range": [
+        -2,
+        2
+      ],
+      "dimension_N": [
+        2,
+        30
+      ],
+      "beta": [
+        1,
+        2,
+        4
+      ]
+    },
+    "non_claims": [
+      "Finite checks do not prove general signatures or N.",
+      "No deterministic chaotic quantum propagator is tested.",
+      "Lean/Mathlib unavailable; no formal certificate."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none: exhaustive exact enumeration",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-11T05:57:58.636137+00:00",
+    "runtime_seconds": 1.074129,
+    "exit_status": 1,
+    "status": "failed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 50,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [
+      "runs/exact001/results.json",
+      "runs/exact001/subcommands.json"
+    ],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scripts/run_controls.py",
+    "scripts/exact_checks.py",
+    "scripts/schur_ssyt_control.cpp",
+    "audit_tools/run_experiment.py",
+    "audit_tools/validate_manifest.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/run_controls.py",
+      "sha256": "072ae4fd4997f253f712d23007db1dc62582b5531ab4c7a2a820d50fb0c967a5",
+      "sha256_after": "072ae4fd4997f253f712d23007db1dc62582b5531ab4c7a2a820d50fb0c967a5"
+    },
+    {
+      "path": "scripts/exact_checks.py",
+      "sha256": "bd183fcfc3e702219f632c5ab51a2d042f6477a312ae2598fc48305fc5cc9df5",
+      "sha256_after": "bd183fcfc3e702219f632c5ab51a2d042f6477a312ae2598fc48305fc5cc9df5"
+    },
+    {
+      "path": "scripts/schur_ssyt_control.cpp",
+      "sha256": "ecf8ed9b4d65fab4332792074a85c33757b18a3ff108d7eea544b648c20efd16",
+      "sha256_after": "ecf8ed9b4d65fab4332792074a85c33757b18a3ff108d7eea544b648c20efd16"
+    },
+    {
+      "path": "audit_tools/run_experiment.py",
+      "sha256": "13cd8da1be7da1f0742810e55c57a1f89bbee4c2a0342fc881892a124a04ee7d",
+      "sha256_after": "13cd8da1be7da1f0742810e55c57a1f89bbee4c2a0342fc881892a124a04ee7d"
+    },
+    {
+      "path": "audit_tools/validate_manifest.py",
+      "sha256": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16",
+      "sha256_after": "4f94cc4dea9689b0547ff7efa608d52cfd951e2db76c5d9227f4706fa2205c16"
+    }
+  ],
+  "output_directory": "runs/exact001",
+  "declared_results": [
+    "runs/exact001/results.json",
+    "runs/exact001/cpp_results.json",
+    "runs/exact001/subcommands.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/exact001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/exact001/stderr.txt",
+      "sha256": "ce31ac94046c0c61626870dea069c5f7be6d9613c7462c439ef77ab46fe2acb8",
+      "kind": "log"
+    },
+    {
+      "path": "runs/exact001/cpp_results.json",
+      "sha256": "ea305ef06c7d2c8d2167ed7c689c91b537990317dcaf315887dfd1d5b794e16c",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": false
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": false
+    }
+  ],
+  "result": "Run failed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget.",
+    "Declared results were not produced: runs/exact001/results.json, runs/exact001/subcommands.json",
+    "A nonzero exit under an address-space cap does not by itself show whether the cap was reached."
+  ]
+}

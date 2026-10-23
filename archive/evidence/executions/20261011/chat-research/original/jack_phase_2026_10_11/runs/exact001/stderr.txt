@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/scripts/run_controls.py", line 21, in <module>
+    execute([sys.executable,str(ROOT/"scripts/exact_checks.py"),
+  File "/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/scripts/run_controls.py", line 12, in execute
+    proc=subprocess.run(argv,cwd=ROOT,capture_output=True,text=True,check=True,timeout=45)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3', '/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/scripts/exact_checks.py', '/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/runs/exact001/cpp_results.json', '/workspace/scratch/06745ba532e4/research_session/jack_phase_2026_10_11/runs/exact001/results.json']' returned non-zero exit status 1.

@@ -1,0 +1,1023 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.5)  6 SEP 2026 00:00
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**BGS_unified.tex
+(./BGS_unified.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count195
+\Gm@cntv=\count196
+\c@Gm@tempcnt=\count197
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+)
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen149
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen150
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count198
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count199
+\leftroot@=\count266
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count267
+\DOTSCASE@=\count268
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen151
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count269
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count270
+\dotsspace@=\muskip16
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
+\tag@help=\toks22
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
+\andhelp@=\toks23
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
+\@envbody=\toks24
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count276
+\calc@Bcount=\count277
+\calc@Adimen=\dimen158
+\calc@Bdimen=\dimen159
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count278
+\calc@Cskip=\skip58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count279
+\l_MT_multwidth_dim=\dimen160
+\origjot=\skip59
+\l_MT_shortvdotswithinadjustabove_dim=\dimen161
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen162
+\l_MT_above_intertext_sep=\dimen163
+\l_MT_below_intertext_sep=\dimen164
+\l_MT_above_shortintertext_sep=\dimen165
+\l_MT_below_shortintertext_sep=\dimen166
+\xmathstrut@box=\box53
+\xmathstrut@dim=\dimen167
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count280
+)
+\MT@toks=\toks32
+\MT@tempbox=\box54
+\MT@count=\count281
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks33
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen168
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count282
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip60
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen169
+\Gin@req@width=\dimen170
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen171
+\lightrulewidth=\dimen172
+\cmidrulewidth=\dimen173
+\belowrulesep=\dimen174
+\belowbottomsep=\dimen175
+\aboverulesep=\dimen176
+\abovetopsep=\dimen177
+\cmidrulesep=\dimen178
+\cmidrulekern=\dimen179
+\defaultaddspace=\dimen180
+\@cmidla=\count283
+\@cmidlb=\count284
+\@aboverulesep=\dimen181
+\@belowrulesep=\dimen182
+\@thisruleclass=\count285
+\@lastruleclass=\count286
+\@thisrulewidth=\dimen183
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip61
+\LTright=\skip62
+\LTpre=\skip63
+\LTpost=\skip64
+\LTchunksize=\count287
+\LTcapwidth=\dimen184
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@gbox=\box59
+\LT@cols=\count288
+\LT@rows=\count289
+\c@LT@tables=\count290
+\c@LT@chunks=\count291
+\LT@p@ftn=\toks34
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen185
+\ar@mcellbox=\box60
+\extrarowheight=\dimen186
+\NC@list=\toks35
+\extratabsurround=\skip65
+\backup@length=\skip66
+\ar@cellbox=\box61
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip67
+\multirow@cntb=\count292
+\multirow@dima=\skip68
+\bigstrutjot=\dimen187
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip69
+\enit@outerparindent=\dimen188
+\enit@toks=\toks36
+\enit@inbox=\box62
+\enit@count@id=\count293
+\enitdp@description=\count294
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2023/11/28 v1.6.1 fvextra - extensions and patches for fancyvr
+b
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count295
+\FV@InFile=\read2
+\FV@TabBox=\box63
+\c@FancyVerbLine=\count296
+\FV@StepNumber=\count297
+\FV@OutFile=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+\linenopenalty=\count298
+\output=\toks37
+\linenoprevgraf=\count299
+\linenumbersep=\dimen189
+\linenumberwidth=\dimen190
+\c@linenumber=\count300
+\c@pagewiselinenumber=\count301
+\c@LN@truepage=\count302
+\c@internallinenumber=\count303
+\c@internallinenumbers=\count304
+\quotelinenumbersep=\dimen191
+\bframerule=\dimen192
+\bframesep=\dimen193
+\bframebox=\box64
+\linenoamsmath@ams@eqpen=\count305
+LaTeX Info: Redefining \\ on input line 3180.
+)
+\c@FancyVerbWriteLine=\count306
+\c@FancyVerbBufferIndex=\count307
+\c@FancyVerbBufferLength=\count308
+\c@FancyVerbBufferLine=\count309
+\c@FV@oldbufferlength=\count310
+\c@FV@TrueTabGroupLevel=\count311
+\c@FV@TrueTabCounter=\count312
+\FV@TabBox@Group=\box65
+\FV@TmpLength=\skip70
+\c@FV@HighlightLinesStart=\count313
+\c@FV@HighlightLinesStop=\count314
+\FV@LoopCount=\count315
+\FV@NCharsBox=\box66
+\FV@BreakIndent=\dimen194
+\FV@BreakIndentNChars=\count316
+\FV@BreakSymbolSepLeft=\dimen195
+\FV@BreakSymbolSepLeftNChars=\count317
+\FV@BreakSymbolSepRight=\dimen196
+\FV@BreakSymbolSepRightNChars=\count318
+\FV@BreakSymbolIndentLeft=\dimen197
+\FV@BreakSymbolIndentLeftNChars=\count319
+\FV@BreakSymbolIndentRight=\dimen198
+\FV@BreakSymbolIndentRightNChars=\count320
+\c@FancyVerbLineBreakLast=\count321
+\FV@LineBox=\box67
+\FV@LineIndentBox=\box68
+\c@FV@BreakBufferDepth=\count322
+\FV@LineWidth=\dimen199
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count323
+)
+\@linkdim=\dimen256
+\Hy@linkcounter=\count324
+\Hy@pagecounter=\count325
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count326
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count327
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen257
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count328
+\Field@Width=\dimen258
+\Fld@charsize=\dimen259
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count329
+\c@Item=\count330
+\c@Hfootnote=\count331
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count332
+\c@bookmark@seq@number=\count333
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip71
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip72
+\f@nch@O@elh=\skip73
+\f@nch@O@erh=\skip74
+\f@nch@O@olh=\skip75
+\f@nch@O@orh=\skip76
+\f@nch@O@elf=\skip77
+\f@nch@O@erf=\skip78
+\f@nch@O@olf=\skip79
+\f@nch@O@orf=\skip80
+)
+\c@theorem=\count334
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 25
+.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count335
+\l__pdf_internal_box=\box69
+)
+(/workspace/scratch/06745ba532e4/BGS/build/20261011-manuscript-final/BGS_unifie
+d.aux)
+\openout1 = `BGS_unified.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-41.1381pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 25.
+Package microtype Info: Applying patch `item' on input line 25.
+Package microtype Info: Applying patch `toc' on input line 25.
+Package microtype Info: Applying patch `eqnum' on input line 25.
+Package microtype Info: Applying patch `footnote' on input line 25.
+Package microtype Info: Applying patch `verbatim' on input line 25.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 25.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count336
+\scratchdimen=\dimen260
+\scratchbox=\box70
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen261
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks39
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring OFF on input line 25.
+
+(/workspace/scratch/06745ba532e4/BGS/build/20261011-manuscript-final/BGS_unifie
+d.out)
+(/workspace/scratch/06745ba532e4/BGS/build/20261011-manuscript-final/BGS_unifie
+d.out)
+\@outlinefile=\write4
+\openout4 = `BGS_unified.out'.
+
+ (./front_matter.tex
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+2.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+2.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 7.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 7.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 37.
+
+(/workspace/scratch/06745ba532e4/BGS/build/20261011-manuscript-final/BGS_unifie
+d.toc [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/t
+exmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
+athsy.enc}] [2])
+\tf@toc=\write5
+\openout5 = `BGS_unified.toc'.
+
+ [3] [4
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+134.
+ (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [5]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+17.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+(./unified_sections/arithmetic_core_part1.tex [6{/usr/share/texmf/fonts/enc/dvi
+ps/lm/lm-ts1.enc}] [7] [8]) (./unified_sections/arithmetic_core_part2.tex
+LaTeX Font Info:    Trying to load font information for U+euf on input line 64.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-euf.cfg
+File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
+
+) [9] [10])
+(./unified_sections/arithmetic_core_part3.tex [11] [12])
+(./unified_sections/arithmetic_core_part4.tex [13] [14])
+(./unified_sections/arithmetic_core_part5.tex [15] [16])
+(./unified_sections/cayley_trace_gaussian.tex [17] [18] [19]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+09.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [20])
+(./unified_sections/row_frontier.tex [21] [22] [23])
+(./unified_sections/cayley_scaling.tex [24]
+(./unified_sections/cayley_curve_uniform.tex [25] [26]) [27])
+(./unified_sections/magnetic.tex [28] [29] [30] [31] [32])
+(./general_spectra.tex [33] [34]) (./unified_sections/pell_blocks.tex [35]
+[36] [37] [38] [39] [40]) (./unified_sections/pell_harmonic_transition.tex
+[41] [42] [43] [44] [45] [46]) (./unified_sections/pell_harmonic_returns.tex
+[47] [48] [49] [50]) (./unified_sections/return_gas.tex [51] [52] [53] [54]
+[55] [56] [57]) (./unified_sections/return_position.tex [58] [59] [60] [61]
+[62] [63] [64] [65] [66]) (./unified_sections/return_periodic.tex [67] [68]
+[69] [70] [71] [72] [73] [74] [75]
+Underfull \hbox (badness 1189) in paragraph at lines 690--699
+[]\T1/lmr/m/n/10.95 (+20) Choose real eigen-coordinates $\OML/lmm/m/it/10.95 ^^
+X; ^^P$ \T1/lmr/m/n/10.95 (+20) with $\OML/lmm/m/it/10.95 A \OT1/lmr/m/n/10.95 
+(+20) : (\OML/lmm/m/it/10.95 ^^X; ^^P\OT1/lmr/m/n/10.95 (+20) ) \OMS/lmsy/m/n/1
+0.95 7! \OT1/lmr/m/n/10.95 (+20) (\OML/lmm/m/it/10.95 ^^U^^X; ^^U[]^^P\OT1/lmr/
+m/n/10.95 (+20) )$ \T1/lmr/m/n/10.95 (+20) and let $\OMS/lmsy/m/n/10.95 j\OML/l
+mm/m/it/10.95 v\OMS/lmsy/m/n/10.95 j[] \OT1/lmr/m/n/10.95 (+20) =
+ []
+
+[76] [77] [78]) (./unified_sections/return_phase.tex
+Underfull \hbox (badness 1038) in paragraph at lines 904--5
+[]\T1/lmr/m/n/10.95 (+20) The in-de-pen-dent in-ter-nal re-view checked the 32-
+class and balanced-sign ar-gu-ment,
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 904--5
+\T1/lmr/m/n/10.95 (+20) smooth trans-fer and second-order signs. The ini-tial P
+4--P5 snap-shot had SHA-256
+ []
+
+[79] [80] [81] [82] [83] [84] [85] [86] [87])
+(./unified_sections/return_general.tex [88] [89] [90] [91] [92] [93] [94]
+[95]) (./unified_sections/return_obstruction.tex [96] [97] [98] [99] [100]
+[101] [102] [103]) (./unified_sections/floquet_part1.tex [104] [105])
+(./unified_sections/floquet_part2.tex [106] [107] [108])
+(./unified_sections/floquet_part3.tex [109] [110])
+(./unified_sections/floquet_part4.tex [111]) (./weighted_and_edgeworth.tex
+[112] [113] [114]) (./unified_sections/coboundary_part1.tex [115] [116])
+(./unified_sections/coboundary_part2.tex [117] [118] [119])
+(./unified_sections/coboundary_part3.tex [120])
+(./unified_sections/cobfourth.tex [121] [122])
+(./unified_sections/finite_fourier.tex [123] [124])
+(./unified_sections/smooth.tex [125] [126] [127])
+(./unified_sections/smooth_residual.tex [128]
+Underfull \hbox (badness 1112) in paragraph at lines 54--54
+[]\T1/lmr/m/n/10.95 (+20) Split (SC.R2) into $\OML/lmm/m/it/10.95 e[]e[]U[]$ \T
+1/lmr/m/n/10.95 (+20) by the two-factor bound. Its cost is at most
+ []
+
+[129] [130]) (./unified_sections/mixed.tex [131] [132])
+(./compensated_times.tex [133]) (./unified_sections/locality_part1.tex [134])
+(./unified_sections/locality_part2.tex [135])
+(./unified_sections/locality_part3.tex [136])
+(./unified_sections/locality_part4.tex [137])
+(./unified_sections/locality_part5.tex [138])
+(./unified_sections/locality_part6.tex [139])
+(./unified_sections/locality_part7.tex) (./unified_sections/robustness.tex
+[140] [141]) (./unified_sections/analytic.tex [142] [143])
+(./unified_sections/sharp.tex [144] [145] [146])
+(./unified_sections/four_mode.tex [147] [148]) (./transversality.tex [149]
+[150]) (./unified_sections/nondegeneracy_part1.tex [151])
+(./unified_sections/nondegeneracy_part2.tex [152])
+(./unified_sections/nondegeneracy_part3.tex [153])
+(./unified_sections/nondegeneracy_part4.tex [154])
+(./unified_sections/nondegeneracy_part5.tex [155])
+(./unified_sections/nondegeneracy_part6.tex [156])
+(./unified_sections/nondegeneracy_part7.tex [157])
+(./unified_sections/nondegeneracy_part8.tex [158])
+(./unified_sections/temporal_resonance.tex [159] [160] [161] [162] [163]
+[164]) (./unified_sections/finite_orbit_resonance.tex [165] [166] [167]
+[168] [169]) (./unified_sections/spectral_modules.tex [170] [171] [172]
+[173] [174] [175] [176]) (./unified_sections/return_words.tex [177] [178]
+[179] [180]) (./audit_and_frontier.tex [181] [182] [183])
+(./final_delivery_note.tex (./unified_sections/wiener_riesz.tex [184] [185])
+(./unified_sections/phase_crossover.tex [186])
+(./unified_sections/polynomial_multisphere.tex [187] [188])
+(./unified_sections/balanced_control.tex [189] [190])
+(./unified_sections/entire_gauge.tex [191] [192])
+(./unified_sections/wiener_resonance_stability.tex [193])
+(./unified_sections/generic_wiener_resonance.tex [194])
+(./unified_sections/analytic_resonance_rigidity.tex [195] [196] [197]) [198])
+(./unified_sections/holomorphic_shell_rigidity.tex [199] [200] [201])
+(./unified_sections/shell_stability_obstruction.tex [202] [203])
+(./unified_sections/husimi_shell_tomography.tex [204] [205] [206])
+(./unified_sections/coherent_aperture_minimax.tex [207] [208] [209] [210]
+[211]) (./unified_sections/heterodyne_aperture_minimax.tex [212] [213])
+[214] [215] [216] [217] [218] [219] [220] [221] [222] [223] [224]
+(./unified_sections/spectral_resolution.tex [225])
+(./unified_sections/fixed_map_frontier.tex [226]
+Underfull \hbox (badness 6641) in paragraph at lines 8--9
+\T1/lmtt/m/n/10.95 BGS-FM-011\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10.95 BGS-F
+M-012\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10.95 BGS-RES-005\T1/lmr/m/n/10.95 
+(+20) , \T1/lmtt/m/n/10.95 BGS-RES-006\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10
+.95 BGS-RES-007\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10.95 BGS-LOOP-001\T1/lmr
+/m/n/10.95 (+20) ,
+ []
+
+
+Underfull \hbox (badness 6641) in paragraph at lines 8--9
+\T1/lmtt/m/n/10.95 BGS-FLOW-021\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10.95 BGS
+-FM-018\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10.95 BGS-FM-017\T1/lmr/m/n/10.95
+ (+20) , \T1/lmtt/m/n/10.95 BGS-FM-013\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10
+.95 BGS-FM-016\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10.95 BGS-TRACE-013\T1/lmr
+/m/n/10.95 (+20) ,
+ []
+
+[227] [228] [229] [230] [231] [232]
+Underfull \hbox (badness 1082) in paragraph at lines 488--494
+[]\T1/lmr/m/n/10.95 (+20) Binary relative-entropy con-trac-tion shows that $\OM
+L/lmm/m/it/10.95 d[] \OMS/lmsy/m/n/10.95 ! \OT1/lmr/m/n/10.95 (+20) 0$ \T1/lmr/
+m/n/10.95 (+20) in $\OML/lmm/m/it/10.95 P[]$ \T1/lmr/m/n/10.95 (+20) prob-a-bil
+-ity forces
+ []
+
+[233] [234] [235] [236] [237] [238] [239] [240] [241] [242] [243] [244]
+[245] [246] [247] [248] [249] [250] [251] [252])
+(./unified_sections/research_20260921.tex [253] [254])
+(./unified_sections/actual_path_theorems.tex [255] [256])
+(./unified_sections/three_block_unmarking.tex)
+(./unified_sections/four_cut_rank_two_kernel.tex [257])
+(./unified_sections/four_block_unmarking.tex [258])
+(./unified_sections/heisenberg_wkb_reductions.tex [259]
+Underfull \hbox (badness 2042) in paragraph at lines 42--49
+ []\T1/lmr/bx/n/10.95 (+20) Sources and ver-i-fi-ca-tion bound-ary.[] \T1/lmr/m
+/n/10.95 (+20) The main-tained proofs are \T1/lmtt/m/n/10.95 factorial_wkb_
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--49
+\T1/lmtt/m/n/10.95 reduction.md\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10.95 exa
+ct_gaussian_reciprocity.md\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10.95 uniform_
+cluster_lemma.md\T1/lmr/m/n/10.95 (+20) , and
+ []
+
+) (./unified_sections/global_rotated_box_trace.tex [260])
+(./unified_sections/paired_phase_reductions.tex
+Underfull \hbox (badness 1297) in paragraph at lines 95--1
+ []\T1/lmr/bx/n/10.95 (+20) Scope and ver-i-fi-ca-tion.[] \T1/lmr/m/n/10.95 (+2
+0) The canon-i-cal proof is \T1/lmtt/m/n/10.95 mathematics/global_rotated_box_
+ []
+
+[261]) (./unified_sections/exact_homoclinic_potential.tex [262])
+(./unified_sections/selected_weighted_coefficient.tex)
+(./unified_sections/collective_occupation_hierarchy.tex [263])
+(./unified_sections/ordered_diagonal_companion.tex)
+(./unified_sections/factorial_ordered_diagonal.tex)
+(./unified_sections/hamming_low_switch_residual.tex [264] [265])
+(./unified_sections/checked_phase_trace_checkpoint.tex [266] [267])
+(./unified_sections/checked_unmasked_pinch_checkpoint.tex
+Underfull \hbox (badness 1867) in paragraph at lines 4--10
+\T1/lmr/m/n/10.95 (+20) and re-viewed scope are \T1/lmtt/m/n/10.95 mathematics/
+right_frame_unmasked_pinch_hierarchy.md \T1/lmr/m/n/10.95 (+20) and
+ []
+
+[268]) (./unified_sections/arithmetic_translation_exclusion.tex [269] [270])
+(./unified_sections/actual_seven_primary_commutant.tex [271])
+(./unified_sections/ramified_higher_extension.tex)
+(./unified_sections/spectral_extensions.tex [272])
+(./unified_sections/literal_time_multiplicity_bounds.tex
+(./unified_sections/intermediate_old_layers.tex [273]))
+(./unified_sections/isospectral_clock_control.tex [274])
+(./unified_sections/phase_channel_jet_20261008.tex [275] [276] [277])
+(./unified_sections/chat_research_20261011.tex [278] [279])
+(./unified_bibliography.tex [280]
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
+[]\T1/lmr/m/n/10.95 (+20) E. Bombieri, \T1/lmr/m/it/10.95 (+20) On the large si
+eve\T1/lmr/m/n/10.95 (+20) , Math-e-matika \T1/lmr/bx/n/10.95 (+20) 12 \T1/lmr/
+m/n/10.95 (+20) (1965), 201--225,
+ []
+
+[281]
+Underfull \hbox (badness 3460) in paragraph at lines 161--165
+[]\T1/lmr/m/n/10.95 (+20) C. H. Bald-win, I. H. Deutsch and A. Kalev, \T1/lmr/m
+/it/10.95 (+20) Strictly-complete mea-sure-ments
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 161--165
+\T1/lmr/m/it/10.95 (+20) for bounded-rank quantum-state to-mog-ra-phy\T1/lmr/m/
+n/10.95 (+20) , Phys. Rev. A \T1/lmr/bx/n/10.95 (+20) 93 \T1/lmr/m/n/10.95 (+20
+) (2016), 052105,
+ []
+
+[282] [283]) [284]
+(/workspace/scratch/06745ba532e4/BGS/build/20261011-manuscript-final/BGS_unifie
+d.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+Package rerunfilecheck Info: File `BGS_unified.out' has not changed.
+(rerunfilecheck)             Checksum: 0252A7972A65C8E5D1F9B865AAD3BD62;28716.
+ ) 
+Here is how much of TeX's memory you used:
+ 19097 strings out of 476182
+ 323660 string characters out of 5795595
+ 1948975 words of memory out of 5000000
+ 38327 multiletter control sequences out of 15000+600000
+ 697459 words of font info for 375 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 71i,20n,79p,1127b,719s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lms
+s10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on /workspace/scratch/06745ba532e4/BGS/build/20261011-manuscript
+-final/BGS_unified.pdf (284 pages, 2089694 bytes).
+PDF statistics:
+ 3826 PDF objects out of 4296 (max. 8388607)
+ 3440 compressed objects within 35 object streams
+ 1673 named destinations out of 1728 (max. 500000)
+ 71865 words of extra memory for PDF output out of 74296 (max. 10000000)
+

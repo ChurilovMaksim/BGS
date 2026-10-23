@@ -1,0 +1,19 @@
+{
+  "scope": "Visual inspection of new chapter pages 278, 279 and 280, not all 283 pages. Three-pass build checks all reachable TeX inputs, references and horizontal overflow.",
+  "page_count": 283,
+  "pdf_sha256": "b60018c39b67856812f306d60c6d62cc07e64c14a05a3b95ce2bd079ff1926a2",
+  "pdf_bytes": 2088743,
+  "complete_pdf_eof": true,
+  "pages_inspected": [
+    278,
+    279,
+    280
+  ],
+  "image_sha256": {
+    "review-278.png": "27ec828aee612938862a14947c8dcfd17b7886a8e7ba7b3a2796a7658d236ccf",
+    "review-279.png": "a469b6ae28f6f9c568dc0a0ef80bcfed8f09e5c715bf65d2820988a4e2ea48fa",
+    "review-280.png": "9d13b36eeb63760e1ffc9760b242dae18202e675d7fb19c291619a08eb084463"
+  },
+  "visual_findings": "Inspected chapter title, statements, equations and new references; no clipping, overlap or unreadable formula on those three pages.",
+  "binary_retention": "Generated PDF and page images remain build products; exact sources and build logs are committed. Rebuild from manuscript/BGS_unified.tex."
+}

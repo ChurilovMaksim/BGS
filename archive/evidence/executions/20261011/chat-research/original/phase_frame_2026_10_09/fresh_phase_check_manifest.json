@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "claim_id": "fresh_phase_check_finite_control",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "fresh_phase_check.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.0"
+      }
+    ],
+    "hardware": "x86_64 x86_64",
+    "thread_caps": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1
+    },
+    "wall_timeout_seconds": 120
+  },
+  "mathematics": {
+    "assertion_tested": "One-fresh-phase averages of the deleted projector, inverse clock, and removed output leverage, including isolated-channel controls.",
+    "coefficient_domain": "complex128",
+    "conventions": "Right logarithmic generators; retained directions use rows of S; real Hermitian coordinates.",
+    "inputs": [
+      {
+        "path": "fresh_phase_check.py",
+        "sha256": "0d564d9b5a9447c8a0b2c7c6e32819483797f62c18cf2347fcd703a70c6f8d36"
+      }
+    ],
+    "bounds": {
+      "m": [
+        2,
+        3,
+        5,
+        8
+      ],
+      "samples": 64,
+      "phase_grid_size": 4096,
+      "absolute_residual_threshold": 2e-09
+    },
+    "non_claims": [
+      "Only first conditional averages, not nonlinear energy drift.",
+      "Finite floating phase quadrature is not formal certification.",
+      "No BGS proof."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy PCG64",
+    "seed": 202610094
+  },
+  "run": {
+    "started_at": "2026-10-09T09:00:13.573553+00:00",
+    "runtime_seconds": 0.3501792460001525,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "fresh_phase_check_results.json",
+      "sha256": "8a0278e7d328c65660dbe26887486dc74cba64aa931510f716187e42c41ca5f7"
+    },
+    {
+      "path": "fresh_phase_check_execution.log",
+      "sha256": "2fee827ea74f82c528a59d8c4c9c639c9979c3d0035b807f7d14efd935e1509e"
+    }
+  ],
+  "checks": [
+    "zero exit status",
+    "input hashes unchanged",
+    "scientific assertions inside executed program"
+  ],
+  "result": "Finite assertions passed in the stated range.",
+  "residual_risks": [
+    "Version 1 record; standalone files are not Git versioned; hashes identify inputs.",
+    "Floating tolerance and finite random sampling."
+  ]
+}

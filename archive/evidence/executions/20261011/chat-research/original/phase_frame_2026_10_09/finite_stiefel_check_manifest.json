@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "claim_id": "finite_stiefel_check_finite_control",
+  "repository": {
+    "commit": null,
+    "dirty": true
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "finite_stiefel_check.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.0"
+      }
+    ],
+    "hardware": "x86_64 x86_64",
+    "thread_caps": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1
+    },
+    "wall_timeout_seconds": 120
+  },
+  "mathematics": {
+    "assertion_tested": "Exact rational beta-moment identities and positive-series expectation intervals; floating controls of the row-frame differential and its HS bound.",
+    "coefficient_domain": "fractions.Fraction / complex128",
+    "conventions": "Right logarithmic generators; retained directions use rows of S; real Hermitian coordinates.",
+    "inputs": [
+      {
+        "path": "finite_stiefel_check.py",
+        "sha256": "cad1b4151e1ddd0300cb44df3ad1781efcd75a539a79fbb7418f4b299b1cc414"
+      }
+    ],
+    "bounds": {
+      "m": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        16,
+        31
+      ],
+      "N": "m, m+1, 2m, 4m, m\u00b2, or max(m,128)",
+      "series_terms": 64,
+      "differential_samples": 128,
+      "relative_finite_difference_threshold": 2e-08
+    },
+    "non_claims": [
+      "Finite exact rational controls are not the full universal proof.",
+      "Floating differential controls are not formal verification.",
+      "No transfer to phase cavities.",
+      "No BGS proof."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy PCG64",
+    "seed": 202610093
+  },
+  "run": {
+    "started_at": "2026-10-09T09:02:48.103539+00:00",
+    "runtime_seconds": 0.2393900280003436,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "finite_stiefel_check_results.json",
+      "sha256": "71f8b370decbf5c8257ae6da7f90a4e88b623b5ccdfb6f301ef840ec65be4cd9"
+    },
+    {
+      "path": "finite_stiefel_check_execution.log",
+      "sha256": "481c75aeb8d20d7ec5f9bd18216b89f5467f804e820b3d988514f479917d198c"
+    }
+  ],
+  "checks": [
+    "zero exit status",
+    "input hashes unchanged",
+    "scientific assertions inside executed program"
+  ],
+  "result": "Finite assertions passed in the stated range.",
+  "residual_risks": [
+    "Version 1 record; standalone files are not Git versioned; hashes identify inputs.",
+    "Floating tolerance and finite random sampling."
+  ]
+}
