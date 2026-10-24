@@ -458,7 +458,7 @@ the quantum trace by $e^{-i\mu t\sqrt K}$.
 ## 8. Pair multiplicity and a finite-dimensional unitary normal form
 
 The next step adapts the averaging mechanism of
-[the earlier odd-prime-period note](../pell_smooth_resonance.md), Section 4,
+[the earlier odd-prime-period note](../pell/pell_smooth_resonance.md), Section 4,
 to the present even arithmetic periods. The 32-class lattice makes it
 possible to prove the required pair bound directly, without assuming
 that different Fourier modes occupy different classical orbits.
@@ -668,7 +668,7 @@ classical system.
 $\sigma_A^2(f)=0$ if and only if $f=g-g\circ T$ for a real smooth $g$.
 If $f$ is even, $g$ can be chosen even.
 This is a smooth Fourier-coboundary criterion, a classical mechanism
-already used in [the earlier smooth note](../pell_smooth_resonance.md).
+already used in [the earlier smooth note](../pell/pell_smooth_resonance.md).
 Here is the regularity argument for the current covector matrix $A$.
 
 Choose real eigen-coordinates $\xi,\zeta$ with

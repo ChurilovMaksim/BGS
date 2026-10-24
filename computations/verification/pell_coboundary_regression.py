@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Second-order coboundary kicks: exact arithmetic and matrix falsifiers.
 
-The universal proof is in mathematics/pell_coboundary_resonance.md. Exact
+The universal proof is in mathematics/pell/pell_coboundary_resonance.md. Exact
 pair-key enumeration and floating-point operator checks have separate scope.
 Default checks use NumPy and mpmath. --extended also requires SciPy.
 """

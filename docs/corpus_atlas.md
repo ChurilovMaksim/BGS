@@ -391,23 +391,23 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
-| [Abstract and scope](../mathematics/pell_all_orders_conjugacy.md) | Consult proof and full ledger |
-| [Status and distinction from BGS](../mathematics/pell_cat_map_gaussian_blocks.md) | Consult proof and full ledger |
-| [Status, precedent, and statement](../mathematics/pell_coboundary_resonance.md) | `BGS-FLOW-023` (proved); `BGS-FLOW-024` (proved) |
-| [What is proved on this branch](../mathematics/pell_fixed_strength_review.md) | Consult proof and full ledger |
-| [Status and main result](../mathematics/pell_floquet_normal_form.md) | `BGS-FLOW-022` (proved); `BGS-FLOW-025` (proved) |
-| [A multiorbit result](../mathematics/pell_four_mode_coercivity.md) | Consult proof and full ledger |
-| [Harmonic-scale return laws for the kicked Pell cat map](../mathematics/pell_harmonic_returns.md) | `BGS-RET-001` (proved) |
-| [A harmonic-scale transition in the Pell cat map](../mathematics/pell_harmonic_transition.md) | `BGS-RET-002` (proved) |
-| [Status and scope](../mathematics/pell_microscopic_clustering.md) | Consult proof and full ledger |
-| [Summable Pell phases and a quantitative Gaussian limit](../mathematics/pell_phase_rate.md) | Consult proof and full ledger |
-| [Minimal Pell relations and the first polynomial Gaussian correction](../mathematics/pell_polynomial_edgeworth.md) | Consult proof and full ledger |
-| [Status](../mathematics/pell_resonance_comb.md) | Consult proof and full ledger |
-| [The complete Pell resonance lattice and growing return times](../mathematics/pell_resonance_lattice.md) | Consult proof and full ledger |
-| [Scope and notation](../mathematics/pell_sharp_orbit_coercivity.md) | `BGS-RES-008` (proved) |
-| [Sharp finite-span coercivity for a single Fourier orbit](../mathematics/pell_single_orbit_sharp_constant.md) | Consult proof and full ledger |
-| [Status and main statements](../mathematics/pell_smooth_resonance.md) | Consult proof and full ledger |
-| [Status](../mathematics/pell_weighted_gaussian_echo.md) | Consult proof and full ledger |
+| [Abstract and scope](../mathematics/pell/pell_all_orders_conjugacy.md) | Consult proof and full ledger |
+| [Status and distinction from BGS](../mathematics/pell/pell_cat_map_gaussian_blocks.md) | Consult proof and full ledger |
+| [Status, precedent, and statement](../mathematics/pell/pell_coboundary_resonance.md) | `BGS-FLOW-023` (proved); `BGS-FLOW-024` (proved) |
+| [What is proved on this branch](../mathematics/pell/pell_fixed_strength_review.md) | Consult proof and full ledger |
+| [Status and main result](../mathematics/pell/pell_floquet_normal_form.md) | `BGS-FLOW-022` (proved); `BGS-FLOW-025` (proved) |
+| [A multiorbit result](../mathematics/pell/pell_four_mode_coercivity.md) | Consult proof and full ledger |
+| [Harmonic-scale return laws for the kicked Pell cat map](../mathematics/pell/pell_harmonic_returns.md) | `BGS-RET-001` (proved) |
+| [A harmonic-scale transition in the Pell cat map](../mathematics/pell/pell_harmonic_transition.md) | `BGS-RET-002` (proved) |
+| [Status and scope](../mathematics/pell/pell_microscopic_clustering.md) | Consult proof and full ledger |
+| [Summable Pell phases and a quantitative Gaussian limit](../mathematics/pell/pell_phase_rate.md) | Consult proof and full ledger |
+| [Minimal Pell relations and the first polynomial Gaussian correction](../mathematics/pell/pell_polynomial_edgeworth.md) | Consult proof and full ledger |
+| [Status](../mathematics/pell/pell_resonance_comb.md) | Consult proof and full ledger |
+| [The complete Pell resonance lattice and growing return times](../mathematics/pell/pell_resonance_lattice.md) | Consult proof and full ledger |
+| [Scope and notation](../mathematics/pell/pell_sharp_orbit_coercivity.md) | `BGS-RES-008` (proved) |
+| [Sharp finite-span coercivity for a single Fourier orbit](../mathematics/pell/pell_single_orbit_sharp_constant.md) | Consult proof and full ledger |
+| [Status and main statements](../mathematics/pell/pell_smooth_resonance.md) | Consult proof and full ledger |
+| [Status](../mathematics/pell/pell_weighted_gaussian_echo.md) | Consult proof and full ledger |
 
 ### Resonance, cohomology and regularity
 

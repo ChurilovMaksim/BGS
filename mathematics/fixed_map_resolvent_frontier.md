@@ -513,7 +513,7 @@ calculation (BGS-FLOW-002) shows that Gaussian
 coboundary kicks produce a sine drift and no radial
 Dyson diffusion. The second-order three-exponential
 normal form itself was previously proved in
-[the Pell coboundary note](pell_coboundary_resonance.md).
+[the Pell coboundary note](pell/pell_coboundary_resonance.md).
 These observations leave the mixed Heisenberg-time
 trace obligation unchanged.
 

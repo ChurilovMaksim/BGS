@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Pell Floquet normal form: exact arithmetic and independent matrix/FFT tests.
 
-The proof is mathematics/pell_floquet_normal_form.md. Dense floating-point
+The proof is mathematics/pell/pell_floquet_normal_form.md. Dense floating-point
 checks and seeded trace estimates are diagnostics, not a proof of the limit.
 No SciPy dependency is needed: Hermitian exponentials use numpy.linalg.eigh.
 """

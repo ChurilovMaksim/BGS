@@ -98,7 +98,7 @@ def sample_laws() -> dict:
                            "commutator": 2*(1-rho*rho)},
             })
     paths = [Path(__file__), ROOT/"computations/verification/pell_harmonic_transition.py",
-             ROOT/"mathematics/pell_harmonic_transition.md"]
+             ROOT/"mathematics/pell/pell_harmonic_transition.md"]
     return {
         "status": "NUMERICAL",
         "scope": "Monte Carlo harmonic averages; error bars are sampling standard errors, not rigorous analytic or floating-point enclosures",

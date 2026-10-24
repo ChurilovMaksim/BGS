@@ -138,7 +138,7 @@ that is a different measure, involving the inverse fibre homeomorphisms.
 
 The orbit-sum coboundary criterion and the constant-Fourier-tail L² obstruction
 are PRIOR project methods: see periodic_point_trace_comparison.md Section10,
-pell_smooth_resonance.md, and resonance-cohomology/extremal_resonance_nondegeneracy.md Corollary2.
+pell/pell_smooth_resonance.md, and resonance-cohomology/extremal_resonance_nondegeneracy.md Corollary2.
 The present object is different: it is the actual nonlinear stationary
 potential H1 and its homoclinic translation cocycle, with a literal-tau
 remainder certificate. No novelty claim is made for the general methods.

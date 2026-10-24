@@ -48,10 +48,10 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-FLOW-019](../mathematics/fixed_degree_heat_projection.md) | proved | `BGS-FLOW-015`, `BGS-FLOW-017`, `BGS-FM-013` | `EXT-DE-2001` | 1 |
 | [BGS-FLOW-020](../mathematics/growing_degree_trace_projection.md) | proved | `BGS-FLOW-015`, `BGS-FLOW-019`, `BGS-FM-007`, `BGS-FM-013` | `EXT-DE-2001`, `EXT-GHANMI-2017` | 1 |
 | [BGS-FLOW-021](../mathematics/heisenberg_pair_heat_formula.md) | proved | `BGS-FLOW-020` | `EXT-DE-2001` | 0 |
-| [BGS-FLOW-022](../mathematics/pell_floquet_normal_form.md) | proved | None registered | None registered | 0 |
-| [BGS-FLOW-023](../mathematics/pell_coboundary_resonance.md) | proved | None registered | None registered | 0 |
-| [BGS-FLOW-024](../mathematics/pell_coboundary_resonance.md) | proved | None registered | None registered | 0 |
-| [BGS-FLOW-025](../mathematics/pell_floquet_normal_form.md) | proved | None registered | None registered | 0 |
+| [BGS-FLOW-022](../mathematics/pell/pell_floquet_normal_form.md) | proved | None registered | None registered | 0 |
+| [BGS-FLOW-023](../mathematics/pell/pell_coboundary_resonance.md) | proved | None registered | None registered | 0 |
+| [BGS-FLOW-024](../mathematics/pell/pell_coboundary_resonance.md) | proved | None registered | None registered | 0 |
+| [BGS-FLOW-025](../mathematics/pell/pell_floquet_normal_form.md) | proved | None registered | None registered | 0 |
 | [BGS-FM-001](../mathematics/fixed_model_symmetry_theorem.md) | proved | None registered | None registered | 24 |
 | [BGS-FM-002](../mathematics/fixed_model_pell_crossover.md) | proved | None registered | None registered | 1 |
 | [BGS-FM-003](../mathematics/fixed_map_moment_control_and_transfer.md) | proved | None registered | None registered | 2 |
@@ -101,7 +101,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-RES-005](../mathematics/resonance-cohomology/frozen_full_lag_resonance.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-006](../mathematics/fixed_map_resolvent_frontier.md) | proved | None registered | None registered | 1 |
 | [BGS-RES-007](../mathematics/fixed_map_resolvent_frontier.md) | proved | `BGS-FM-007`, `BGS-RES-006` | None registered | 0 |
-| [BGS-RES-008](../mathematics/pell_sharp_orbit_coercivity.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-008](../mathematics/pell/pell_sharp_orbit_coercivity.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-009](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
 | [BGS-RES-010](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
 | [BGS-RES-011](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
@@ -117,8 +117,8 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-RES-021](../manuscript/unified_sections/analytic_resonance_rigidity.tex) | proved | None registered | None registered | 0 |
 | [BGS-RES-022](../mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md) | verification-pending | None registered | None registered | 1 |
 | [BGS-RES-023](../mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md) | proved | `BGS-RES-022` | None registered | 0 |
-| [BGS-RET-001](../mathematics/pell_harmonic_returns.md) | proved | `BGS-RET-002` | `EXT-DEMNI-2016` | 0 |
-| [BGS-RET-002](../mathematics/pell_harmonic_transition.md) | proved | None registered | None registered | 1 |
+| [BGS-RET-001](../mathematics/pell/pell_harmonic_returns.md) | proved | `BGS-RET-002` | `EXT-DEMNI-2016` | 0 |
+| [BGS-RET-002](../mathematics/pell/pell_harmonic_transition.md) | proved | None registered | None registered | 1 |
 | [BGS-RET-003](../mathematics/returns/noncommuting_return_words.md) | conditional | None registered | None registered | 0 |
 | [BGS-RET-004](../mathematics/returns/noncommuting_return_words.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-001](../mathematics/trace_to_local_statistics_bridge.md) | proved | None registered | None registered | 11 |

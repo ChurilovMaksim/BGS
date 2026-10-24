@@ -7,7 +7,7 @@ unitary matrices; the hypotheses needed for the prescribed frozen
 family are **not** established. It is not a microscopic BGS theorem.
 
 The normal-form operator calculation below is closely related to the
-**earlier** Lemma 3 in [pell_coboundary_resonance.md](pell_coboundary_resonance.md).
+**earlier** Lemma 3 in [pell_coboundary_resonance.md](pell/pell_coboundary_resonance.md).
 The previous lemma already proves a second-order commutator estimate
 for the same three exponential factors. The contribution here is the
 explicit finite spectral-flow/Birkhoff estimate and its sharpness

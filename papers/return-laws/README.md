@@ -4,9 +4,9 @@
 
 This potential paper concerns global laws for explicitly defined arithmetic
 return subsequences and their quantum/observable counterparts. The manifest
-currently includes [BGS-RET-001](../../mathematics/pell_harmonic_returns.md)
+currently includes [BGS-RET-001](../../mathematics/pell/pell_harmonic_returns.md)
 (the actual kicked Pell-propagator harmonic return law) and
-[BGS-RET-002](../../mathematics/pell_harmonic_transition.md)
+[BGS-RET-002](../../mathematics/pell/pell_harmonic_transition.md)
 (the harmonic-scale transition). Related authoritative reading includes the
 [general hyperbolic return laws](../../mathematics/returns/general_cat_return_laws.md)
 and the [short-return spectral obstruction](../../mathematics/returns/return_trace_obstruction.md).

@@ -396,28 +396,28 @@
     {
       "id": "BGS-FLOW-022",
       "state": "proved",
-      "source": "mathematics/pell_floquet_normal_form.md",
+      "source": "mathematics/pell/pell_floquet_normal_form.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. K through odd primes; epsilon=tau/sqrt(2K) with fixed real tau; odd subspace, normalized trace Tr_-/d_N. The principal finite estimate (FN.D) is a normalized Hilbert-Schmidt bound: it does not control an individual level or an operator-norm spectral gap. No Heisenberg-scale joint traces, microscopic local statistics, or fixed nonzero classical-kick universality.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
     {
       "id": "BGS-FLOW-023",
       "state": "proved",
-      "source": "mathematics/pell_coboundary_resonance.md",
+      "source": "mathematics/pell/pell_coboundary_resonance.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Coboundary propagator V of (CB.1), with the T-covariant U_0 of the finite Floquet construction; in coboundary_part1.tex this U_0 is the operator called U_N=VU_0V^* in the Floquet parts (notation collision flagged by group 4). t_K=2 eps_K^2 sin(4pi/N) sqrt(K) -> t in [0,infty); fixed integer m. No statement that the old clusters remain separate or keep identifiable ranks in the subcritical folded-phase law.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
     {
       "id": "BGS-FLOW-024",
       "state": "proved",
-      "source": "mathematics/pell_coboundary_resonance.md",
+      "source": "mathematics/pell/pell_coboundary_resonance.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Whole odd space and global mean-spacing normalization only. Condition (CB.4) is necessary only; no positive universality theorem beyond it is proved. No density-adapted unfolding or further-sector result.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
     {
       "id": "BGS-FLOW-025",
       "state": "proved",
-      "source": "mathematics/pell_floquet_normal_form.md",
+      "source": "mathematics/pell/pell_floquet_normal_form.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Kicked Pell family of Theorem A only; global mean-density unfolding of the complete odd space, compact tests. Necessary condition |eps_K| sqrt(K) -> infty only, not a sufficient universality criterion. Does not settle nearest-neighbour distributions individually, density-adapted re-unfolding, a further desymmetrized block, or fixed nonzero classical kicks; not a refutation of a correctly qualified generic BGS conjecture.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
@@ -445,7 +445,7 @@
     {
       "id": "BGS-RES-008",
       "state": "proved",
-      "source": "mathematics/pell_sharp_orbit_coercivity.md",
+      "source": "mathematics/pell/pell_sharp_orbit_coercivity.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Every hyperbolic A in SL(2,Z) (tr A>2 after replacing A by -A); finite single-orbit trigonometric polynomials of diameter at most L. The infimum (SH.S3) is over all finite support lengths; no finite sequence attains it and no infinite-frequency minimizer is asserted. The spectral-factorization step is the classical Fejer-Riesz theorem; priority and external referee acceptance are not claimed.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
@@ -763,10 +763,11 @@
         "external_dependencies": [
           "EXT-DEMNI-2016"
         ],
-        "boundary": "Fixed multiplicity m and logarithmic return times mK at the vanishing kick epsilon=tau/sqrt(2K); harmonics are sampled; not Heisenberg-scale microscopic BGS. The free unitary Brownian endpoint identification uses Demni (EXT-DEMNI-2016). Computational controls: exact diagram/lattice checks plus complex128 matrix controls at K=3, 5 with the single value epsilon=0.23 only."
+        "boundary": "Fixed multiplicity m and logarithmic return times mK at the vanishing kick epsilon=tau/sqrt(2K); harmonics are sampled; not Heisenberg-scale microscopic BGS. The free unitary Brownian endpoint identification uses Demni (EXT-DEMNI-2016). Computational controls: exact diagram/lattice checks plus complex128 matrix controls at K=3, 5 with the single value epsilon=0.23 only.",
+        "source": "mathematics/pell/pell_harmonic_returns.md"
       },
-      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
-      "review": "record/errata.json"
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 5): source mathematics/pell_harmonic_returns.md to mathematics/pell/pell_harmonic_returns.md (archive/MANIFEST-P2MATH5.md); no status, content, or other contract-field change.",
+      "review": "archive/MANIFEST-P2MATH5.md"
     },
     {
       "id": "BGS-TRACE-008",
@@ -1646,6 +1647,15 @@
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of `source` to mathematics/cayley-arithmetic/cayley_curve_uniform.md (P2-MATH wave 6, cayley-arithmetic); no status, title, boundary or content change.",
       "review": "archive/MANIFEST-P2MATH6.md"
+    },
+    {
+      "id": "BGS-RET-002",
+      "historical_row_sha256": "881476b450767aeb07e3eb3bb739c7b2df5677a2f3a63c0eec6d1c73211540d1",
+      "fields": {
+        "source": "mathematics/pell/pell_harmonic_transition.md"
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of the source from mathematics/pell_harmonic_transition.md to mathematics/pell/pell_harmonic_transition.md (P2-MATH wave 5); no status, content, or other contract-field change.",
+      "review": "archive/MANIFEST-P2MATH5.md"
     }
   ]
 }

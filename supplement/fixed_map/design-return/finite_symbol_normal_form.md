@@ -1,7 +1,7 @@
 # A finite-symbol coherent normal form on prime Pell periods
 
 Self-contained project proof, 2026-09-17; no priority claim. This extends
-the mechanism of `mathematics/pell_floquet_normal_form.md` from its single
+the mechanism of `mathematics/pell/pell_floquet_normal_form.md` from its single
 harmonic to arbitrary fixed finite Fourier support, in full Hilbert–Schmidt
 norm. It does not solve the fixed-coupling BGS limit.
 

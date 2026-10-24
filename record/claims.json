@@ -621,7 +621,7 @@
       "title": "Harmonic return law for the actual kicked Pell propagator",
       "state": "proved",
       "ledger_status": "EXACT + EXTERNAL-THEOREM",
-      "source": "mathematics/pell_harmonic_returns.md",
+      "source": "mathematics/pell/pell_harmonic_returns.md",
       "dependencies": [
         "BGS-RET-002"
       ],
@@ -646,7 +646,7 @@
       "title": "Harmonic-scale global transition in the fixed Pell cat map",
       "state": "proved",
       "ledger_status": "EXACT",
-      "source": "mathematics/pell_harmonic_transition.md",
+      "source": "mathematics/pell/pell_harmonic_transition.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4307,7 +4307,7 @@
       "title": "Critical resonance law for the kicked Pell propagator",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW + FINITE CONTROLS",
-      "source": "mathematics/pell_floquet_normal_form.md",
+      "source": "mathematics/pell/pell_floquet_normal_form.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4329,7 +4329,7 @@
       "title": "Second-order critical law for coboundary kicks of a fixed cat map",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW + FINITE CONTROLS",
-      "source": "mathematics/pell_coboundary_resonance.md",
+      "source": "mathematics/pell/pell_coboundary_resonance.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4353,7 +4353,7 @@
       "title": "Negative microscopic consequences at the second-order coboundary scale",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW + FINITE CONTROLS",
-      "source": "mathematics/pell_coboundary_resonance.md",
+      "source": "mathematics/pell/pell_coboundary_resonance.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4377,7 +4377,7 @@
       "title": "Obstruction and necessary kick scale for the kicked Pell family",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW + FINITE CONTROLS",
-      "source": "mathematics/pell_floquet_normal_form.md",
+      "source": "mathematics/pell/pell_floquet_normal_form.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4480,7 +4480,7 @@
       "title": "Sharp resonance minimum on a hyperbolic Fourier orbit",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS",
-      "source": "mathematics/pell_sharp_orbit_coercivity.md",
+      "source": "mathematics/pell/pell_sharp_orbit_coercivity.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -4495,7 +4495,7 @@
       ],
       "boundary": "Every hyperbolic A in SL(2,Z) (tr A>2 after replacing A by -A); finite single-orbit trigonometric polynomials of diameter at most L. The infimum (SH.S3) is over all finite support lengths; no finite sequence attains it and no infinite-frequency minimizer is asserted. The spectral-factorization step is the classical Fejer-Riesz theorem; priority and external referee acceptance are not claimed.",
       "proof_dependencies": [
-        "mathematics/pell_single_orbit_sharp_constant.md"
+        "mathematics/pell/pell_single_orbit_sharp_constant.md"
       ]
     },
     {

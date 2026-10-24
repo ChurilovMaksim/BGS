@@ -267,7 +267,7 @@ def main() -> None:
         "matrix": matrix_checks(),
         "quadratic_sum": quadratic_sum_checks(),
     }
-    paths = [Path(__file__), ROOT/"mathematics/pell_harmonic_transition.md"]
+    paths = [Path(__file__), ROOT/"mathematics/pell/pell_harmonic_transition.md"]
     output["source_sha256"] = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
                                for p in paths}
     output["runtime_seconds"] = time.monotonic()-start

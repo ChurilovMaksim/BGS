@@ -381,7 +381,7 @@ For zero $\sigma_A^2(f)$ and $\epsilon_K\to0$, the existing operator-norm
 return estimate gives the same point-mass return and empty local limit.
 
 In the sampled-harmonic family of
-[pell_harmonic_returns.md](../pell_harmonic_returns.md), the $L^2$ limit
+[pell_harmonic_returns.md](../pell/pell_harmonic_returns.md), the $L^2$ limit
 $t_D(K)\to e^{-\tau^2/2}$ holds for every $\beta\in[0,1/2]$ and fixed $\tau$.
 The harmonic-averaged local process therefore has no ergodic intensity-one
 limit. Averaged Poisson and sine-kernel pair limits are excluded; a fixed

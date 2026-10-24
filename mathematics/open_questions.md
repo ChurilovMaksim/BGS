@@ -551,7 +551,7 @@ identification alone cannot close this conditional-law obligation.
 
 
 The September 10 harmonic return theorem now does concern powers of the
-actual kicked propagator: `pell_harmonic_returns.md` proves its global
+actual kicked propagator: `pell/pell_harmonic_returns.md` proves its global
 return law, including a free unitary Brownian endpoint. Its multiplicity
 $m$ is fixed and its times $mK$ are logarithmic in dimension.
 Extending the diagram phase estimates and summability uniformly to

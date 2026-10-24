@@ -1,7 +1,7 @@
 # Exact fourth moment of the generated two-species observable
 
 This is an analytic verification addendum to
-[pell_coboundary_resonance.md](../pell_coboundary_resonance.md). It uses that
+[pell_coboundary_resonance.md](../pell/pell_coboundary_resonance.md). It uses that
 note's proved four-atom classification, not a new universality assumption.
 Let $K\geq11$ be an odd prime, with its Pell modulus N, and put
 $$
