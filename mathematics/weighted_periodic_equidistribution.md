@@ -278,7 +278,7 @@ For the ordinary stability-weighted periodic-pair measure on the product map, th
  \le 2Ce^{-cn}\|A\|_{C^\alpha}. \tag{8.1}
 \]
 
-Indeed, apply the one-variable estimate first to each section \(x\mapsto A(x,y)\), then to \(y\mapsto\int A(x,y)\,dx\); both relevant norms are bounded by a fixed multiple of the joint norm. This establishes the (EQ) required by `shadow_tube_history_bridge.md`, Section 3, **provided its periodic-pair measure is the stated full product measure**.
+Indeed, apply the one-variable estimate first to each section \(x\mapsto A(x,y)\), then to \(y\mapsto\int A(x,y)\,dx\); both relevant norms are bounded by a fixed multiple of the joint norm. This establishes the (EQ) required by `information-theory/shadow_tube_history_bridge.md`, Section 3, **provided its periodic-pair measure is the stated full product measure**.
 
 If only coincident points are excluded, the conclusion is unchanged: the diagonal mass is exponentially small, since \(\max_x W_n(\{x\})\le Ce^{-\chi n}\) and \(W_n(1)=O(1)\). More elaborate exclusions or additional nonproduct orbit weights must be checked against their exact definition; they are not implicitly covered.
 

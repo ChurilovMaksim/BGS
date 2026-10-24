@@ -283,7 +283,7 @@ CUE characteristic-polynomial covariance and nevertheless regular spacings;
 covariance alone therefore does not determine pair statistics.
 
 Full statements, assumptions and proofs are in the topic-indexed supplement.
-The [shadow-tube analysis](shadow_tube_history_bridge.md), recovered from the
+The [shadow-tube analysis](information-theory/shadow_tube_history_bridge.md), recovered from the
 remote branch, likewise keeps its geometric equidistribution assumption
 separate from its proved symbolic filling bound. Both local and remote
 research lines are retained.

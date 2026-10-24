@@ -1,4 +1,4 @@
-(* Exact controls for mathematics/shadow_tube_history_bridge.md.
+(* Exact controls for mathematics/information-theory/shadow_tube_history_bridge.md.
    Executed in the connected Wolfram kernel on 2026-09-16.
    Finite computations do not prove BGS or geometric periodic equidistribution. *)
 ClearAll["Global`*"];

@@ -109,7 +109,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-RES-013](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
 | [BGS-RES-014](../mathematics/resonance_riesz_regularization.md) | conditional | None registered | None registered | 1 |
 | [BGS-RES-015](../mathematics/two_window_resonance_crossover.md) | proved | `BGS-RES-014` | None registered | 0 |
-| [BGS-RES-016](../mathematics/multiradius_polynomial_rigidity.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-016](../mathematics/information-theory/multiradius_polynomial_rigidity.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-017](../mathematics/balanced_phase_controllability.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-018](../mathematics/entire_temporal_gauge.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-019](../mathematics/resonance_wiener_stability.md) | proved | None registered | None registered | 0 |

@@ -470,16 +470,16 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
-| [Bosonic information proof summary — 2026-09-07](../mathematics/bosonic_information_limits_20260907.md) | Consult proof and full ledger |
-| [Moment-constrained tomography with an observation aperture](../mathematics/coherent_aperture_minimax.md) | Consult proof and full ledger |
-| [Holomorphic shell identifiability and spectral resolution](../mathematics/holomorphic_shell_identifiability.md) | Consult proof and full ledger |
-| [Sharp multiradius rigidity for vector polynomials](../mathematics/multiradius_polynomial_rigidity.md) | `BGS-RES-016` (proved) |
-| [Rank-controlled rigidity on concentric complex spheres](../mathematics/multisphere_polynomial_rigidity.md) | Consult proof and full ledger |
-| [Degree-independent identification from concentric intensity shells](../mathematics/polynomial_shell_identifiability.md) | Consult proof and full ledger |
-| [Uniform two-state discrimination through pure loss](../mathematics/pure_loss_discrimination.md) | Consult proof and full ledger |
-| [Exact limits of quadratic-response data](../mathematics/quadratic_response_limits.md) | Consult proof and full ledger |
-| [Rare shadowing failures and coherent history selection](../mathematics/shadow_tube_history_bridge.md) | Consult proof and full ledger |
-| [Two-radius rigidity and exact quadrature orthogonality](../mathematics/two_radius_quadrature_rigidity.md) | Consult proof and full ledger |
+| [Bosonic information proof summary — 2026-09-07](../mathematics/information-theory/bosonic_information_limits.md) | Consult proof and full ledger |
+| [Moment-constrained tomography with an observation aperture](../mathematics/information-theory/coherent_aperture_minimax.md) | Consult proof and full ledger |
+| [Holomorphic shell identifiability and spectral resolution](../mathematics/information-theory/holomorphic_shell_identifiability.md) | Consult proof and full ledger |
+| [Sharp multiradius rigidity for vector polynomials](../mathematics/information-theory/multiradius_polynomial_rigidity.md) | `BGS-RES-016` (proved) |
+| [Rank-controlled rigidity on concentric complex spheres](../mathematics/information-theory/multisphere_polynomial_rigidity.md) | Consult proof and full ledger |
+| [Degree-independent identification from concentric intensity shells](../mathematics/information-theory/polynomial_shell_identifiability.md) | Consult proof and full ledger |
+| [Uniform two-state discrimination through pure loss](../mathematics/information-theory/pure_loss_discrimination.md) | Consult proof and full ledger |
+| [Exact limits of quadratic-response data](../mathematics/information-theory/quadratic_response_limits.md) | Consult proof and full ledger |
+| [Rare shadowing failures and coherent history selection](../mathematics/information-theory/shadow_tube_history_bridge.md) | Consult proof and full ledger |
+| [Two-radius rigidity and exact quadrature orthogonality](../mathematics/information-theory/two_radius_quadrature_rigidity.md) | Consult proof and full ledger |
 
 ### Foundations and conventions
 

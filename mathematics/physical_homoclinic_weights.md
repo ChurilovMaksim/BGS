@@ -182,7 +182,7 @@ To pass W9 to W12 one needs the NORM-UNIFORM weighted periodic estimate
  sum_(Fix F^m) a(x)/|det(I-DF^m(x))| = integral a dx
                                      +O(e^-cm ||a||_(C^sigma)).      (EQ)
 
-The earlier shadow_tube_history_bridge.md explicitly leaves the geometric
+The earlier information-theory/shadow_tube_history_bridge.md explicitly leaves the geometric
 version of this input conditional. It cannot be imported here as established.
 A separate primary-source check is examining the exact transfer-operator
 statement, coding-boundary multiplicities and test-norm dependence. If EQ

@@ -4661,7 +4661,7 @@
       "title": "Sharp multiradius and concentric-sphere polynomial rigidity",
       "state": "proved",
       "ledger_status": "PROJECT PROOF (SELF-CONTAINED) + FINITE-REGRESSION",
-      "source": "mathematics/multiradius_polynomial_rigidity.md",
+      "source": "mathematics/information-theory/multiradius_polynomial_rigidity.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4676,10 +4676,10 @@
       "manuscript": [
         "manuscript/unified_sections/polynomial_multisphere.tex"
       ],
-      "boundary": "Self-contained algebraic statements, independent of the BGS conjecture; priority relative to polynomial sphere-map and filter-bank literature is not asserted. The flat-tail classification subsection of the manuscript section is covered via mathematics/two_radius_quadrature_rigidity.md (see fixlog).",
+      "boundary": "Self-contained algebraic statements, independent of the BGS conjecture; priority relative to polynomial sphere-map and filter-bank literature is not asserted. The flat-tail classification subsection of the manuscript section is covered via mathematics/information-theory/two_radius_quadrature_rigidity.md (see fixlog).",
       "proof_dependencies": [
-        "mathematics/multisphere_polynomial_rigidity.md",
-        "mathematics/two_radius_quadrature_rigidity.md"
+        "mathematics/information-theory/multisphere_polynomial_rigidity.md",
+        "mathematics/information-theory/two_radius_quadrature_rigidity.md"
       ]
     },
     {

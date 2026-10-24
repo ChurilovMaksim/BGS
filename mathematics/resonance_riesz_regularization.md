@@ -174,4 +174,4 @@ of one of the two curves. The area of a delta-neighborhood of a rectifiable curv
 
 In particular all negative moments of c_infinity of order p<1/4 are finite under this density bound, with constants explicit in (8). No optimality of the exponent for a fixed background is asserted.
 
-This is a quantitative gap for a complete classical observable lattice. It does not supply joint traces or local resolvents of a perturbed quantum propagator at Heisenberg time. Exact finite quantum returns can obstruct transporting this classical bound unchanged; see quadratic_response_limits.md.
+This is a quantitative gap for a complete classical observable lattice. It does not supply joint traces or local resolvents of a perturbed quantum propagator at Heisenberg time. Exact finite quantum returns can obstruct transporting this classical bound unchanged; see information-theory/quadratic_response_limits.md.
