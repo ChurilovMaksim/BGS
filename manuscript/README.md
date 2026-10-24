@@ -36,7 +36,7 @@ mathematical sources under [mathematics/](../mathematics/README.md).
 [phase-cluster section](unified_sections/phase_cluster_continuation_20261019.tex)
 records fixed-trace laws, the full four-port cancellation and second-defect sum,
 the joint quartic family for tau<1/9, and the exact positive Cauchy-source boundary.
-[Maintained mathematical sources](../mathematics/phase_ensemble_continuation_20261019.md)
+[Maintained mathematical sources](../mathematics/trace-bridge/phase_ensemble_continuation.md)
 control its scope. The feedback and fixed-channel implications retain their
 explicit conditional inputs. The frozen-model signed hierarchy and BGS remain open.
 

@@ -41,7 +41,7 @@ individual defects one or two are controlled for tau<1/9. The missing connected
 (3,3,3) source is known only through size nine; no full value is assigned.
 The next saturated type is (4,3,5). A general graph Ward cancellation, a uniform
 sum of all remaining types, all mixed Heisenberg traces and frozen-model transfer
-are still required. [Exact current account](phase_ensemble_continuation_20261019.md).
+are still required. [Exact current account](trace-bridge/phase_ensemble_continuation.md).
 Positive Cauchy projections do not determine the needed joint matrix law.
 The fixed-channel route retains its separate G/TC/R hypotheses.
 
@@ -97,7 +97,7 @@ on u>=ceil(log(2N)^(4+kappa)). It also closes the corresponding fixed-order
 clock and weak-law applications; the extra reversal corollary retains its
 separate initial condition. Named eventual FM-021/FM-022 inputs place the
 maintained odd-N fixed-coupling family in this auxiliary trajectory regime.
-[TRACE-079](two_step_stopped_concentration_20261013.md) supplies the complete
+[TRACE-079](trace-bridge/two_step_stopped_concentration.md) supplies the complete
 stopped two-step concentration, including the diagonal. Earlier frontier
 sentences below concern those older theorems alone and are superseded for
 this explicit startup/cutoff class.
@@ -125,13 +125,13 @@ growing-order and edge laws remain unproved. A bounded-entropy gap example rules
 prescribed-origin microscopic implication from these clock laws alone.
 [Exact new boundaries](../archive/record/haar_feedback_continuation_20261012.md).
 
-The [unitary two-step obstruction](unitary_two_step_obstruction_20261012.md)
+The [unitary two-step obstruction](trace-bridge/unitary_two_step_obstruction.md)
 rules out deriving the required two-step kernel from unitarity, logarithmic
 entry flatness and a vanishing intensity singular norm alone. Three-step
 mixing can coexist with a logarithmic two-step peak. A dynamic estimate
 of the row--column correlation or its accumulated effect is still needed.
 
-The [exact two-step drift](two_step_restoring_drift_20261012.md) now provides
+The [exact two-step drift](trace-bridge/two_step_restoring_drift.md) now provides
 a restoring conditional mean bounded by the three-step kernel. It does
 not provide the higher moments or stopped concentration needed for all
 entries and times. The additional term
@@ -142,10 +142,10 @@ gap. That stopped theorem alone leaves early entry survival and accumulated
 concentration open; TRACE-079/080 supply separate proofs on their
 explicit startup/cutoff class. The reached range may be empty;
 this stopped theorem does not prove all-time flatness.
-[Exact boundary](green_compression_gap_20261013.md).
+[Exact boundary](trace-bridge/green_compression_gap.md).
 
 
-[TRACE-078](two_step_increment_variance_20261013.md) now supplies the raw
+[TRACE-078](trace-bridge/two_step_increment_variance.md) now supplies the raw
 one-step fluctuation estimate `2600 delta²[(P²)ij+(P³)ij]/u` under the
 uniform-port frozen-endpoint convention. Earlier descriptions of the
 one-step second moment as entirely missing are superseded at this scope.

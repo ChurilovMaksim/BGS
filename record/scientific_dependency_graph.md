@@ -150,33 +150,33 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-027](../mathematics/weighted_phase_coherence_covariance.md) | proved | `BGS-FM-021`, `BGS-FM-022` | None registered | 0 |
 | [BGS-TRACE-028](../mathematics/right_frame_unmasked_pinch_hierarchy.md) | proved | `BGS-FM-021`, `BGS-FM-028`, `BGS-TRACE-023`, `BGS-TRACE-024` | None registered | 1 |
 | [BGS-TRACE-029](../mathematics/convex_pinch_weak_noise_and_deconvolution.md) | proved | `BGS-FM-021`, `BGS-FM-027`, `BGS-FM-028`, `BGS-TRACE-023`, `BGS-TRACE-028` | None registered | 0 |
-| [BGS-TRACE-053](../mathematics/max_entry_phase_channel.md) | proved | None registered | None registered | 4 |
-| [BGS-TRACE-054](../mathematics/sharp_inner_jet.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-053](../mathematics/trace-bridge/max_entry_phase_channel.md) | proved | None registered | None registered | 4 |
+| [BGS-TRACE-054](../mathematics/trace-bridge/sharp_inner_jet.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-055](../archive/record/research_checkpoint_20261008.md) | verification-pending | `BGS-TRACE-053` | None registered | 0 |
-| [BGS-TRACE-056](../mathematics/phase_channel_real_flow.md) | proved | `BGS-TRACE-053` | None registered | 2 |
-| [BGS-TRACE-057](../mathematics/source_covariance_20261011.md) | proved | None registered | None registered | 1 |
-| [BGS-TRACE-058](../mathematics/integrable_phase_absorption_20261011.md) | proved | None registered | None registered | 1 |
-| [BGS-TRACE-059](../mathematics/physical_source_transport_20261011.md) | proved | `BGS-TRACE-053`, `BGS-TRACE-056`, `BGS-TRACE-057` | None registered | 0 |
+| [BGS-TRACE-056](../mathematics/trace-bridge/phase_channel_real_flow.md) | proved | `BGS-TRACE-053` | None registered | 2 |
+| [BGS-TRACE-057](../mathematics/trace-bridge/source_covariance.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-058](../mathematics/trace-bridge/integrable_phase_absorption.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-059](../mathematics/trace-bridge/physical_source_transport.md) | proved | `BGS-TRACE-053`, `BGS-TRACE-056`, `BGS-TRACE-057` | None registered | 0 |
 | [BGS-TRACE-060](../mathematics/trace-bridge/delay_bootstrap.md) | conditional | None registered | `EXT-TROPP-2011` | 2 |
 | [BGS-TRACE-061](../mathematics/trace-bridge/fresh_phase_average.md) | proved | None registered | None registered | 1 |
 | [BGS-TRACE-062](../mathematics/trace-bridge/flat_completion.md) | proved | `BGS-TRACE-061` | None registered | 0 |
-| [BGS-TRACE-063](../mathematics/nonlinear_coercivity_20261011.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-063](../mathematics/trace-bridge/nonlinear_coercivity.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-064](../mathematics/trace-bridge/torus_contraction.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-065](../mathematics/trace-bridge/coherence_form_factor.md) | proved | None registered | None registered | 1 |
-| [BGS-TRACE-066](../mathematics/previous_rank_results_20261011.md) | proved | `BGS-TRACE-065` | `EXT-AGG-1989` | 0 |
-| [BGS-TRACE-067](../mathematics/jack_coefficient_theorem_20261011.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-066](../mathematics/trace-bridge/previous_rank_results.md) | proved | `BGS-TRACE-065` | `EXT-AGG-1989` | 0 |
+| [BGS-TRACE-067](../mathematics/trace-bridge/jack_coefficient_theorem.md) | proved | None registered | None registered | 1 |
 | [BGS-TRACE-068](../mathematics/trace-bridge/phase_contraction.md) | proved | `BGS-TRACE-067` | `EXT-JM-2015`, `EXT-MATSUMOTO-2007`, `EXT-OO-1997`, `EXT-VV-2017` | 2 |
 | [BGS-TRACE-069](../mathematics/trace-bridge/exact_cumulants.md) | proved | `BGS-TRACE-068` | `EXT-MATSUMOTO-2007` | 1 |
 | [BGS-TRACE-070](../mathematics/trace-bridge/form_factor_curve.md) | proved | `BGS-TRACE-068`, `BGS-TRACE-069` | `EXT-HSW-1999` | 0 |
-| [BGS-TRACE-071](../mathematics/laplace_path_transport_20261011.md) | proved | `BGS-TRACE-053`, `BGS-TRACE-056`, `BGS-TRACE-058` | None registered | 1 |
-| [BGS-TRACE-072](../mathematics/deterministic_path_transport_20261011.md) | proved | `BGS-FM-018`, `BGS-TRACE-071` | None registered | 0 |
+| [BGS-TRACE-071](../mathematics/trace-bridge/laplace_path_transport.md) | proved | `BGS-TRACE-053`, `BGS-TRACE-056`, `BGS-TRACE-058` | None registered | 1 |
+| [BGS-TRACE-072](../mathematics/trace-bridge/deterministic_path_transport.md) | proved | `BGS-FM-018`, `BGS-TRACE-071` | None registered | 0 |
 | [BGS-TRACE-073](../mathematics/trace-bridge/schur_censoring_gap.md) | conditional | `BGS-FM-021`, `BGS-FM-022` | None registered | 3 |
-| [BGS-TRACE-074](../mathematics/unitary_two_step_obstruction_20261012.md) | proved | None registered | None registered | 2 |
-| [BGS-TRACE-075](../mathematics/two_step_restoring_drift_20261012.md) | proved | `BGS-TRACE-074` | None registered | 1 |
+| [BGS-TRACE-074](../mathematics/trace-bridge/unitary_two_step_obstruction.md) | proved | None registered | None registered | 2 |
+| [BGS-TRACE-075](../mathematics/trace-bridge/two_step_restoring_drift.md) | proved | `BGS-TRACE-074` | None registered | 1 |
 | [BGS-TRACE-076](../mathematics/trace-bridge/haar_feedback_clock_law.md) | proved | `BGS-TRACE-060` | None registered | 0 |
-| [BGS-TRACE-077](../mathematics/green_compression_gap_20261013.md) | proved | `BGS-FM-021`, `BGS-TRACE-073`, `BGS-TRACE-074` | None registered | 3 |
-| [BGS-TRACE-078](../mathematics/two_step_increment_variance_20261013.md) | proved | None registered | None registered | 1 |
-| [BGS-TRACE-079](../mathematics/two_step_stopped_concentration_20261013.md) | proved | `BGS-FM-021`, `BGS-TRACE-075`, `BGS-TRACE-077`, `BGS-TRACE-078` | None registered | 1 |
+| [BGS-TRACE-077](../mathematics/trace-bridge/green_compression_gap.md) | proved | `BGS-FM-021`, `BGS-TRACE-073`, `BGS-TRACE-074` | None registered | 3 |
+| [BGS-TRACE-078](../mathematics/trace-bridge/two_step_increment_variance.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-079](../mathematics/trace-bridge/two_step_stopped_concentration.md) | proved | `BGS-FM-021`, `BGS-TRACE-075`, `BGS-TRACE-077`, `BGS-TRACE-078` | None registered | 1 |
 | [BGS-TRACE-080](../mathematics/trace-bridge/unconditional_feedback_flatness.md) | proved | `BGS-FM-021`, `BGS-FM-022`, `BGS-TRACE-060`, `BGS-TRACE-073`, `BGS-TRACE-077`, `BGS-TRACE-079` | None registered | 1 |
 | [BGS-TRACE-081](../mathematics/flat_spectrum_obstruction_20261014.md) | proved | None registered | None registered | 2 |
 | [BGS-TRACE-082](../mathematics/coherence_memory_plateau_20261014.md) | proved | `BGS-TRACE-081` | None registered | 1 |
@@ -192,17 +192,17 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-092](../mathematics/trace-bridge/abel_clock_rigidity.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-093](../mathematics/trace-bridge/gaussian_equal_edge.md) | proved | None registered | `EXT-BF-2023`, `EXT-KPSS-2002` | 1 |
 | [BGS-TRACE-094](../mathematics/trace-bridge/wick_collision_poisson.md) | proved | `BGS-TRACE-093` | `EXT-CS-2006` | 0 |
-| [BGS-TRACE-095](../mathematics/phase_ensemble_continuation_20261019.md) | conditional | `BGS-TRACE-073`, `BGS-TRACE-077`, `BGS-TRACE-080` | None registered | 0 |
-| [BGS-TRACE-096](../mathematics/phase_ensemble_continuation_20261019.md) | verification-pending | None registered | None registered | 0 |
-| [BGS-TRACE-097](../mathematics/phase_ensemble_continuation_20261019.md) | conditional | None registered | None registered | 0 |
-| [BGS-TRACE-098](../mathematics/phase_ensemble_continuation_20261019.md) | verification-pending | None registered | None registered | 1 |
-| [BGS-TRACE-099](../mathematics/phase_ensemble_continuation_20261019.md) | verification-pending | `BGS-TRACE-098` | None registered | 0 |
-| [BGS-TRACE-100](../mathematics/phase_ensemble_continuation_20261019.md) | verification-pending | None registered | None registered | 1 |
-| [BGS-TRACE-101](../mathematics/phase_neutral_primitives_20261019.md) | verification-pending | `BGS-TRACE-100` | None registered | 2 |
-| [BGS-TRACE-102](../mathematics/phase_second_defect_20261019.md) | verification-pending | `BGS-TRACE-101` | None registered | 1 |
-| [BGS-TRACE-103](../mathematics/phase_quartic_cluster_sum_20261019.md) | verification-pending | `BGS-TRACE-101`, `BGS-TRACE-102` | `EXT-STANLEY-1981` | 0 |
-| [BGS-TRACE-104](../mathematics/phase_cayley_cauchy_transfer_20261019.md) | verification-pending | None registered | None registered | 0 |
-| [BGS-TRACE-105](../mathematics/cauchy_positive_source_boundary_20261019.md) | verification-pending | None registered | None registered | 0 |
+| [BGS-TRACE-095](../mathematics/trace-bridge/phase_ensemble_continuation.md) | conditional | `BGS-TRACE-073`, `BGS-TRACE-077`, `BGS-TRACE-080` | None registered | 0 |
+| [BGS-TRACE-096](../mathematics/trace-bridge/phase_ensemble_continuation.md) | verification-pending | None registered | None registered | 0 |
+| [BGS-TRACE-097](../mathematics/trace-bridge/phase_ensemble_continuation.md) | conditional | None registered | None registered | 0 |
+| [BGS-TRACE-098](../mathematics/trace-bridge/phase_ensemble_continuation.md) | verification-pending | None registered | None registered | 1 |
+| [BGS-TRACE-099](../mathematics/trace-bridge/phase_ensemble_continuation.md) | verification-pending | `BGS-TRACE-098` | None registered | 0 |
+| [BGS-TRACE-100](../mathematics/trace-bridge/phase_ensemble_continuation.md) | verification-pending | None registered | None registered | 1 |
+| [BGS-TRACE-101](../mathematics/trace-bridge/phase_neutral_primitives.md) | verification-pending | `BGS-TRACE-100` | None registered | 2 |
+| [BGS-TRACE-102](../mathematics/trace-bridge/phase_second_defect.md) | verification-pending | `BGS-TRACE-101` | None registered | 1 |
+| [BGS-TRACE-103](../mathematics/trace-bridge/phase_quartic_cluster_sum.md) | verification-pending | `BGS-TRACE-101`, `BGS-TRACE-102` | `EXT-STANLEY-1981` | 0 |
+| [BGS-TRACE-104](../mathematics/trace-bridge/phase_cayley_cauchy_transfer.md) | verification-pending | None registered | None registered | 0 |
+| [BGS-TRACE-105](../mathematics/trace-bridge/cauchy_positive_source_boundary.md) | verification-pending | None registered | None registered | 0 |
 | [BGS-TRACE-106](../mathematics/physical_kick_trace_decay.md) | proved | None registered | None registered | 1 |
 | [BGS-TRACE-107](../mathematics/physical_trace_polynomial_approximation.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-108](../mathematics/coordinate_return_quartic_20261021.md) | proved | None registered | None registered | 0 |

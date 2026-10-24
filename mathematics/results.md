@@ -41,7 +41,7 @@ controlled by [claims.json](../record/claims.json).
 
 ## Integrated continuation, 19 October 2026
 
-[TRACE-095 through TRACE-105](phase_ensemble_continuation_20261019.md)
+[TRACE-095 through TRACE-105](trace-bridge/phase_ensemble_continuation.md)
 cover the checked auxiliary phase research. The full four-port zero and total
 defect-two sum are complete at the stated scope. The joint local-defect-at-most-two
 sum has a quartic limit for tau<1/9 and uniform finite-size control; it retains
@@ -123,17 +123,17 @@ initial-channel assumption. The actual odd-N fixed-coupling family has
 these named eventual startup inputs. The deterministic microscopic law
 and BGS remain open.
 
-[TRACE-079](two_step_stopped_concentration_20261013.md) supplies
+[TRACE-079](trace-bridge/two_step_stopped_concentration.md) supplies
 the all-pair stopped concentration input, including the diagonal and full
 first crossings. [Exact outcome](../archive/record/feedback_flatness_continuation_20261013.md).
 
-[TRACE-078](two_step_increment_variance_20261013.md) adds
+[TRACE-078](trace-bridge/two_step_increment_variance.md) adds
 an exact raw second-moment bound for the complete two-step feedback
 increment: `2600 delta²[(P²)ij+(P³)ij]/u` for a uniform port and any
 phases, with frozen endpoints. Its one-step conclusion is complemented
 by the separate TRACE-079/080 concentration and trajectory proofs.
 
-[TRACE-077](green_compression_gap_20261013.md) linearizes
+[TRACE-077](trace-bridge/green_compression_gap.md) linearizes
 classical elimination in centered Green coordinates. Its decaying initial
 compression and adapted martingale give a shrinking intensity singular
 norm on the entry-stopped prefix, with quantitative failure probability.
@@ -153,14 +153,14 @@ fixed-origin Sine₂ implication. The deterministic microscopic law and BGS rema
 TRACE-080 theorem now supplies the feedback probability and cutoff-matched
 unconditional clocks for its explicit deterministic startup class.
 
-The [12 October unistochastic obstruction](unitary_two_step_obstruction_20261012.md)
+The [12 October unistochastic obstruction](trace-bridge/unitary_two_step_obstruction.md)
 (TRACE-074) constructs genuine unitary intensities with logarithmic
 two-step peaks despite logarithmic flatness and a vanishing centered
 singular norm. Its correct higher-step estimate explains why three-step
 mixing does not supply the entry bracket's two-step kernel.
 No maintained trajectory or BGS counterexample is asserted.
 
-[TRACE-075](two_step_restoring_drift_20261012.md) supplies a positive
+[TRACE-075](trace-bridge/two_step_restoring_drift.md) supplies a positive
 companion: the exact one-step phase average has a restoring drift
 controlled by a complete three-step path-swap bound. At the constructed
 peaks, its mean decrement is asymptotic to \(K_{ij}/u\). Concentration and joint persistence are supplied separately by TRACE-079/080
@@ -179,9 +179,9 @@ applications at log^(4+kappa). The scalar microscopic law remains open.
 
 ## Maximal paths and source continuation, 11 October 2026
 
-[TRACE-071](laplace_path_transport_20261011.md) transports the entire centered
+[TRACE-071](trace-bridge/laplace_path_transport.md) transports the entire centered
 phase-ensemble local point-process path and every fixed normal-source product.
-[TRACE-072](deterministic_path_transport_20261011.md) gives the deterministic
+[TRACE-072](trace-bridge/deterministic_path_transport.md) gives the deterministic
 maximal time-average bound and the actual-map growing interval. The initial
 local law remains unidentified. [The complete disposition](../archive/record/chat_integration_20261011.md)
 also indexes reconstructed physical-source covariance, conditional joint delays,

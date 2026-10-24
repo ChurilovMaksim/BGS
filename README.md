@@ -105,8 +105,8 @@ $t=m/N$ is separate from the fixed kick strength in the deterministic model.
 
 | Theorem family | Established scope | Remaining implication |
 |---|---|---|
-| [Signed phase cluster sums](mathematics/phase_ensemble_continuation_20261019.md) | Author proofs, registered verification pending: total-defect-two sum for $0<t<1$; arbitrary counts of clusters of individual defects at most two for $0<t<1/9$, with uniform $O(N^{-1})$ error | Higher connected types and frozen-model transfer |
-| [Positive Cauchy projections](mathematics/cauchy_positive_source_boundary_20261019.md) | Author proofs, registered verification pending: exact scalar laws and explicit separation of full matrix laws | Positive projections alone do not identify the spectral law |
+| [Signed phase cluster sums](mathematics/trace-bridge/phase_ensemble_continuation.md) | Author proofs, registered verification pending: total-defect-two sum for $0<t<1$; arbitrary counts of clusters of individual defects at most two for $0<t<1/9$, with uniform $O(N^{-1})$ error | Higher connected types and frozen-model transfer |
+| [Positive Cauchy projections](mathematics/trace-bridge/cauchy_positive_source_boundary.md) | Author proofs, registered verification pending: exact scalar laws and explicit separation of full matrix laws | Positive projections alone do not identify the spectral law |
 | [Abel clock rigidity](mathematics/trace-bridge/abel_clock_rigidity.md), [flat collision law](mathematics/trace-bridge/wick_collision_poisson.md) | Sharp square-root stability and auxiliary Wick ratio $B/G\to e^{-\alpha^2}$ | Physical non-flat signed comparison |
 | [All-order process implication](mathematics/trace-bridge/all_order_process_closure.md) | Complete signed hierarchy implies local Sine2 and local moment control | The physical hierarchy remains open |
 | [Full-depth feedback](mathematics/trace-bridge/unconditional_feedback_flatness.md) | Entry/intensity bounds and fixed-order clocks under named startup inputs and cutoff | Initial microscopic law and signed transfer |
@@ -120,7 +120,7 @@ The Gaussian benchmark is classical; external priority is not established.
 
 ## Three reconstructed analytic results
 
-**Phase memory with reused coordinate phases — [BGS-TRACE-053](mathematics/max_entry_phase_channel.md).**
+**Phase memory with reused coordinate phases — [BGS-TRACE-053](mathematics/trace-bridge/max_entry_phase_channel.md).**
 For $S\in U(m)$, set $P_{ij}=|S_{ij}|^2$, $\delta=\max P_{ij}$,
 $A=\Pi\mathrm{Ad}(S)$, and
 $T_n=\mathbb E_D\mathrm{Ad}((DS)^n)$. Here $\Pi$ is diagonal pinching
@@ -136,7 +136,7 @@ If $\|P-J_m\|\le\rho<1$, averaged eigenspace pinching on traceless matrices
 has norm $O_\rho(\log\log(1/\delta)/\log(1/\delta))$ as $\delta\to0$.
 This operator-norm conclusion does not evaluate a microscopic spectral trace.
 
-**Optimal matrix inner-function jets — [BGS-TRACE-054](mathematics/sharp_inner_jet.md).**
+**Optimal matrix inner-function jets — [BGS-TRACE-054](mathematics/trace-bridge/sharp_inner_jet.md).**
 Let $F=zG$ be a square finite rational inner matrix function and set
 $T=F^*zF'\ge I$ on the circle, with $d\mu=d\theta/(2\pi)$. Without a
 commutativity assumption, with $\dot T=dT/d\theta$,
@@ -153,7 +153,7 @@ The leading coefficient $4/3$ is optimal in every matrix dimension; the
 submission had $13/3$. Smooth localization has an explicit derivative penalty.
 The proof does not supply a random-cavity cubic-delay moment.
 
-**Normally absorbed scalar transport — [BGS-TRACE-056](mathematics/phase_channel_real_flow.md).**
+**Normally absorbed scalar transport — [BGS-TRACE-056](mathematics/trace-bridge/phase_channel_real_flow.md).**
 For deterministic unitary matrices $S_m$ with
 $\delta_m=\max_{ij}|(S_m)_{ij}|^2\to0$ and
 $\||S_m|^2-J_m\|\le\rho<1$, and a deterministic Hermitian $H_m$

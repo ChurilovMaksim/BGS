@@ -2,13 +2,13 @@
 
 ## Circular-phase continuation, 19 October
 
-[Adopted trace/feedback account](../../phase_ensemble_continuation_20261019.md),
-[neutral schemes](../../phase_neutral_primitives_20261019.md),
-[saturated support classification](../../phase_extremal_graphs_20261019.md),
-[complete second defect](../../phase_second_defect_20261019.md),
-[joint quartic sum](../../phase_quartic_cluster_sum_20261019.md),
-[Cayley correspondence](../../phase_cayley_cauchy_transfer_20261019.md) and
-[positive Cauchy-source boundary](../../cauchy_positive_source_boundary_20261019.md).
+[Adopted trace/feedback account](../../trace-bridge/phase_ensemble_continuation.md),
+[neutral schemes](../../trace-bridge/phase_neutral_primitives.md),
+[saturated support classification](../../trace-bridge/phase_extremal_graphs.md),
+[complete second defect](../../trace-bridge/phase_second_defect.md),
+[joint quartic sum](../../trace-bridge/phase_quartic_cluster_sum.md),
+[Cayley correspondence](../../trace-bridge/phase_cayley_cauchy_transfer.md) and
+[positive Cauchy-source boundary](../../trace-bridge/cauchy_positive_source_boundary.md).
 All retain their auxiliary scope; fixed-model BGS remains open.
 
 - [Complete Heisenberg Wick collision law, exact flat ratio and geometric visits](../../trace-bridge/wick_collision_poisson.md).
@@ -35,16 +35,16 @@ Exact factorial partition identities connect local correlations to complete sign
 - **[Exact coherence memory](../../coherence_memory_plateau_20261014.md)** — Universal norm plateau through time N-1; observed signed cancellation remains separate.
 
 - **[Unconditional deterministic-start feedback](../../trace-bridge/unconditional_feedback_flatness.md)** — Joint all-depth flatness and cutoff-matched clocks; deterministic microscopic universality remains open.
-- **[All-pair stopped concentration](../../two_step_stopped_concentration_20261013.md)** — Diagonal pairs, endpoint deactivation and full first crossings.
+- **[All-pair stopped concentration](../../trace-bridge/two_step_stopped_concentration.md)** — Diagonal pairs, endpoint deactivation and full first crossings.
 
-- **[Complete two-step second moment](../../two_step_increment_variance_20261013.md)** — Uniform-port raw fluctuation bound for arbitrary phases, with frozen endpoints; no concentration claim.
+- **[Complete two-step second moment](../../trace-bridge/two_step_increment_variance.md)** — Uniform-port raw fluctuation bound for arbitrary phases, with frozen endpoints; no concentration claim.
 
-- **[Green compression and shrinking stopped gaps](../../green_compression_gap_20261013.md)** — Quantitative adapted-prefix theorem with a depth-decaying initial term; its broader startup-class survival is not supplied by that stopped theorem.
+- **[Green compression and shrinking stopped gaps](../../trace-bridge/green_compression_gap.md)** — Quantitative adapted-prefix theorem with a depth-decaying initial term; its broader startup-class survival is not supplied by that stopped theorem.
 
 - **[Exact Haar feedback and entropy-stable clocks](../../trace-bridge/haar_feedback_clock_law.md)** — Exact scattering/delay joint law, inverse-Jacobi spectrum and unconditional full-depth clocks for independent initial laws with relative entropy O(log N); explicit fixed-origin microscopic limitation.
 
-- **[Two-step restoring drift](../../two_step_restoring_drift_20261012.md)** — Exact fresh-phase average and a complete three-step path-swap bound; one-step mean restoration of the constructed peaks, without a trajectory probability theorem.
-- **[Unitary two-step obstruction](../../unitary_two_step_obstruction_20261012.md)** — Genuine unitary intensities with a logarithmic two-step peak despite flatness and a vanishing singular norm; precise higher-step and one-step variance companions.
+- **[Two-step restoring drift](../../trace-bridge/two_step_restoring_drift.md)** — Exact fresh-phase average and a complete three-step path-swap bound; one-step mean restoration of the constructed peaks, without a trajectory probability theorem.
+- **[Unitary two-step obstruction](../../trace-bridge/unitary_two_step_obstruction.md)** — Genuine unitary intensities with a logarithmic two-step peak despite flatness and a vanishing singular norm; precise higher-step and one-step variance companions.
 
 - **[Signed target](../../trace-bridge/trace_to_local_statistics_bridge.md)** — Every fixed order and every smooth compact Fourier support must be covered; a modulus is outside the complete signed sum.
 - **[Absolute obstruction](../../trace-bridge/signed_heisenberg_comparison.md)** — The all-order unaveraged deterministic absolute CUE comparison is excluded by the project obstruction.
@@ -66,8 +66,8 @@ See [the ongoing corpus revision](../../../archive/record/corpus_revision_202610
 
 ## Complete source membership
 
-- [two_step_restoring_drift_20261012](../../two_step_restoring_drift_20261012.md) — Exact nonzero-diagonal phase formula, frozen-label average, coherent swap bound and restoring mean drift.
-- [unitary_two_step_obstruction_20261012](../../unitary_two_step_obstruction_20261012.md) — Rank-two unitary construction, exact Haar moment, two-step failure and correct higher-step factor.
+- [two_step_restoring_drift_20261012](../../trace-bridge/two_step_restoring_drift.md) — Exact nonzero-diagonal phase formula, frozen-label average, coherent swap bound and restoring mean drift.
+- [unitary_two_step_obstruction_20261012](../../trace-bridge/unitary_two_step_obstruction.md) — Rank-two unitary construction, exact Haar moment, two-step failure and correct higher-step factor.
 
 - [heisenberg_pair_heat_formula](../../heisenberg_pair_heat_formula.md) — Exact pair modes, Haar heat profile and matching short-trace families with different signed defects.
 - [clock_structure_and_noise_scale](../../clock_structure_and_noise_scale.md) — Exact clock covariance, signed pair compensation, sharp rate and critical law.
@@ -77,8 +77,8 @@ See [the ongoing corpus revision](../../../archive/record/corpus_revision_202610
 - [coboundary_all_order_limit](../../coboundary_all_order_limit.md) — Complete signed Fourier/CUE comparison for the original noisy chain, and exact remaining deterministic defect criterion.
 - [bandlimited_correlation_extension](../../trace-bridge/bandlimited_correlation_extension.md)
 - [clustered_abel_window_boundary](../../trace-bridge/clustered_abel_window_boundary.md) — exact cluster-to-Abel bound and abstract time-window falsifier.
-- [compensated_heisenberg_trace_control](../../compensated_heisenberg_trace_control.md)
-- [heisenberg_time_insertion](../../heisenberg_time_insertion.md)
+- [compensated_heisenberg_trace_control](../../trace-bridge/compensated_heisenberg_trace_control.md)
+- [heisenberg_time_insertion](../../trace-bridge/heisenberg_time_insertion.md)
 - [trace_to_local_statistics_bridge](../../trace-bridge/trace_to_local_statistics_bridge.md)
 - [signed_heisenberg_comparison](../../trace-bridge/signed_heisenberg_comparison.md) — Universal all-order absolute-norm obstruction, exact signed CUE variance and formal phase controls.
 - [two_clock_gram_falsifier](../../trace-bridge/two_clock_gram_falsifier.md) — simple odd spectra matching the necessary Gram limit but violating the pair CUE law.
@@ -132,30 +132,30 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 
 ## 8 October: phase memory and rational-inner analysis
 
-- [Max-entry phase channel](../../max_entry_phase_channel.md) (TRACE-053): unrestricted complex marks, both collision corrections and an explicit averaged-pinching rate.
-- [Sharp matrix inner jet](../../sharp_inner_jet.md) (TRACE-054): optimal universal 4/3 and exact smooth-localization correction.
-- [Direct real-flow scalar transport](../../phase_channel_real_flow.md) (TRACE-056): normal scalar absorption and L1 comparison, including each fixed derivative.
+- [Max-entry phase channel](../../trace-bridge/max_entry_phase_channel.md) (TRACE-053): unrestricted complex marks, both collision corrections and an explicit averaged-pinching rate.
+- [Sharp matrix inner jet](../../trace-bridge/sharp_inner_jet.md) (TRACE-054): optimal universal 4/3 and exact smooth-localization correction.
+- [Direct real-flow scalar transport](../../trace-bridge/phase_channel_real_flow.md) (TRACE-056): normal scalar absorption and L1 comparison, including each fixed derivative.
 
 [The submitted deep-source hierarchy disposition](../../../archive/record/research_checkpoint_20261008.md) leaves TRACE-055 verification-pending. Channel operator norm does not identify the scalar cavity law or TRACE-005.
 
 ## Checked 11 October continuations
 
-- [Arbitrary-source phase covariance](../../source_covariance_20261011.md) (BGS-TRACE-057).
-- [Integrable all-order phase absorption](../../integrable_phase_absorption_20261011.md) (BGS-TRACE-058).
-- [Anisotropic physical-source transport](../../physical_source_transport_20261011.md) (BGS-TRACE-059).
+- [Arbitrary-source phase covariance](../../trace-bridge/source_covariance.md) (BGS-TRACE-057).
+- [Integrable all-order phase absorption](../../trace-bridge/integrable_phase_absorption.md) (BGS-TRACE-058).
+- [Anisotropic physical-source transport](../../trace-bridge/physical_source_transport.md) (BGS-TRACE-059).
 - [Joint incoming and outgoing delay bootstrap](../../trace-bridge/delay_bootstrap.md) (BGS-TRACE-060).
 - [Finite frame identities, Stiefel threshold and clock-basis obstruction](../../trace-bridge/fresh_phase_average.md) (BGS-TRACE-061).
 - [Flat completion with arbitrary clock law](../../trace-bridge/flat_completion.md) (BGS-TRACE-062).
-- [Global noncommuting ordinary-body coercivity](../../nonlinear_coercivity_20261011.md) (BGS-TRACE-063).
+- [Global noncommuting ordinary-body coercivity](../../trace-bridge/nonlinear_coercivity.md) (BGS-TRACE-063).
 - [Sharp maximal-torus contraction for compact simple groups](../../trace-bridge/torus_contraction.md) (BGS-TRACE-064).
 - [Signed finite-field cycle and collision calculus](../../trace-bridge/coherence_form_factor.md) (BGS-TRACE-065).
-- [Birthday rank law and thinned collision limit](../../previous_rank_results_20261011.md) (BGS-TRACE-066).
-- [Sharp balanced Laurent Jack coefficient bound](../../jack_coefficient_theorem_20261011.md) (BGS-TRACE-067).
+- [Birthday rank law and thinned collision limit](../../trace-bridge/previous_rank_results.md) (BGS-TRACE-066).
+- [Sharp balanced Laurent Jack coefficient bound](../../trace-bridge/jack_coefficient_theorem.md) (BGS-TRACE-067).
 - [Frozen circular phase laws in the three symmetry classes](../../trace-bridge/phase_contraction.md) (BGS-TRACE-068).
 - [All-order critical CSE trace limit](../../trace-bridge/exact_cumulants.md) (BGS-TRACE-069).
 - [Complete CUE and CSE form-factor curves](../../trace-bridge/form_factor_curve.md) (BGS-TRACE-070).
-- [Maximal phase point-process paths and all fixed normal-source products](../../laplace_path_transport_20261011.md) (BGS-TRACE-071).
-- [Deterministic maximal microscopic observable flow](../../deterministic_path_transport_20261011.md) (BGS-TRACE-072).
+- [Maximal phase point-process paths and all fixed normal-source products](../../trace-bridge/laplace_path_transport.md) (BGS-TRACE-071).
+- [Deterministic maximal microscopic observable flow](../../trace-bridge/deterministic_path_transport.md) (BGS-TRACE-072).
 
 ## Independently reviewed Schur continuation
 

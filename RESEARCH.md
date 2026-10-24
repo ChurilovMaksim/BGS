@@ -33,7 +33,7 @@ remains open. [Review scope](record/spectral_research/spectral_master_audit.md).
 
 ## Integrated continuation, 19 October 2026
 
-[TRACE-095 through TRACE-105](mathematics/phase_ensemble_continuation_20261019.md)
+[TRACE-095 through TRACE-105](mathematics/trace-bridge/phase_ensemble_continuation.md)
 cover the checked auxiliary phase research. The full four-port zero and total
 defect-two sum are complete at the stated scope. The joint local-defect-at-most-two
 sum has a quartic limit for tau<1/9 and uniform finite-size control; it retains
@@ -126,17 +126,17 @@ initial-channel assumption. The actual odd-N fixed-coupling family has
 these named eventual startup inputs. The deterministic microscopic law
 and BGS remain open.
 
-[TRACE-079](mathematics/two_step_stopped_concentration_20261013.md) supplies
+[TRACE-079](mathematics/trace-bridge/two_step_stopped_concentration.md) supplies
 the all-pair stopped concentration input, including the diagonal and full
 first crossings. [Exact outcome](archive/record/feedback_flatness_continuation_20261013.md).
 
-[TRACE-078](mathematics/two_step_increment_variance_20261013.md) adds
+[TRACE-078](mathematics/trace-bridge/two_step_increment_variance.md) adds
 an exact raw second-moment bound for the complete two-step feedback
 increment: `2600 delta²[(P²)ij+(P³)ij]/u` for a uniform port and any
 phases, with frozen endpoints. Its one-step bound alone does not give concentration. TRACE-079 and
 TRACE-080 supply the separate stopped and global dynamic proofs.
 
-[TRACE-077](mathematics/green_compression_gap_20261013.md) linearizes
+[TRACE-077](mathematics/trace-bridge/green_compression_gap.md) linearizes
 classical elimination in centered Green coordinates. Its decaying initial
 compression and adapted martingale give a shrinking intensity singular
 norm on the entry-stopped prefix, with quantitative failure probability.
@@ -155,21 +155,21 @@ with relative entropy O(log N) relative to Haar. The
 this extension from the unresolved deterministic initial family and from
 prescribed-origin microscopic universality.
 
-[TRACE-074](mathematics/unitary_two_step_obstruction_20261012.md) closes the
+[TRACE-074](mathematics/trace-bridge/unitary_two_step_obstruction.md) closes the
 static unitary shortcut: flat entries and vanishing intensity singular
 norm do not bound the two-step kernel by O(1/n). Its three-step positive
 bound does not replace the exact entry bracket.
 [The outcome](archive/record/unitary_two_step_continuation_20261012.md) separates
 this obstruction from the dynamic question subsequently treated by TRACE-080 under its stated startup hypotheses.
-[TRACE-075](mathematics/two_step_restoring_drift_20261012.md) controls the
+[TRACE-075](mathematics/trace-bridge/two_step_restoring_drift.md) controls the
 complete coherent term by a three-step path-swap pairing and proves a
 restoring one-step mean for the constructed peaks. TRACE-078/079/080 now
 supply its fluctuation, stopped concentration and global trajectory companions.
 
 
-[TRACE-071](mathematics/laplace_path_transport_20261011.md) transports the entire centered
+[TRACE-071](mathematics/trace-bridge/laplace_path_transport.md) transports the entire centered
 phase-ensemble local point-process path and every fixed normal-source product.
-[TRACE-072](mathematics/deterministic_path_transport_20261011.md) gives the deterministic
+[TRACE-072](mathematics/trace-bridge/deterministic_path_transport.md) gives the deterministic
 maximal time-average bound and the actual-map growing interval. The initial
 local law remains unidentified. [The complete disposition](archive/record/chat_integration_20261011.md)
 also indexes reconstructed physical-source covariance, conditional joint delays,
@@ -207,9 +207,9 @@ particular frozen propagator must itself be proved.
 | Source and insertion calculus | [TRACE-027](mathematics/weighted_phase_coherence_covariance.md); [TRACE-028](mathematics/right_frame_unmasked_pinch_hierarchy.md); [TRACE-029](mathematics/convex_pinch_weak_noise_and_deconvolution.md) | Qualified growing-window Ward control; complete unmasked separated/convex hierarchy; bounded-parameter signed stability and an actual unsigned logarithmic obstruction |
 | Original common-noise rate | [FM-020](mathematics/original_channel_gap.md) | Two-copy singular gap dominates $N^{-1}$ at $u=N^{-\alpha}$, $0<\alpha<1$. This closes the original-rate question left by FM-018/019, but not nonlinear quenched control, higher-copy rates or deterministic transfer |
 | Noisy local statistics | [FLOW-014](mathematics/circular_dyson_actual_start.md); [FLOW-017](mathematics/coboundary_all_order_limit.md) | Actual-start weak local law on a polynomial schedule; all fixed factorial orders and one-chain origin averages on a different superpolynomial schedule |
-| Reused phase channel | [TRACE-053](mathematics/max_entry_phase_channel.md) | Full complex endpoint marks, both collision corrections, exact second-degree norm and an explicit max-entry averaged-pinching rate |
-| Rational matrix inner functions | [TRACE-054](mathematics/sharp_inner_jet.md) | Self-contained noncommuting right-weighted second-jet inequality with optimal leading coefficient $4/3$ and the exact smooth-localization penalty |
-| Real unitary source flow | [TRACE-056](mathematics/phase_channel_real_flow.md) | Normally absorbed unweighted scalar $L^1$ source transport, including fixed derivatives and repeated eigenvalues; anisotropic sources and mixed products are outside the conclusion |
+| Reused phase channel | [TRACE-053](mathematics/trace-bridge/max_entry_phase_channel.md) | Full complex endpoint marks, both collision corrections, exact second-degree norm and an explicit max-entry averaged-pinching rate |
+| Rational matrix inner functions | [TRACE-054](mathematics/trace-bridge/sharp_inner_jet.md) | Self-contained noncommuting right-weighted second-jet inequality with optimal leading coefficient $4/3$ and the exact smooth-localization penalty |
+| Real unitary source flow | [TRACE-056](mathematics/trace-bridge/phase_channel_real_flow.md) | Normally absorbed unweighted scalar $L^1$ source transport, including fixed derivatives and repeated eigenvalues; anisotropic sources and mixed products are outside the conclusion |
 
 Other maintained arithmetic, Pell/Floquet, return-law, resonance, locality and
 information-theory results are indexed by [topic](mathematics/topics/README.md).

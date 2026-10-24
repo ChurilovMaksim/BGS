@@ -20,7 +20,7 @@ dated 28 August 2002.
 
 ## What the maintained proof supplies
 
-[TRACE-074](../mathematics/unitary_two_step_obstruction_20261012.md)
+[TRACE-074](../mathematics/trace-bridge/unitary_two_step_obstruction.md)
 derives its exact centered fourth moment from Dirichlet row moments and
 the conditional complex-sphere second moment. Its residual completion law
 is proved by compact-group invariance. Its existence bound then uses only

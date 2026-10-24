@@ -7,7 +7,7 @@ counterexample, independently reconstructed at the level of the formulas below;
 external priority has not been established. This note concerns abstract unitary
 spectra. Its only application to a quantized map uses the *different, explicitly
 compensated* family in
-[compensated_heisenberg_trace_control.md](../compensated_heisenberg_trace_control.md).
+[compensated_heisenberg_trace_control.md](compensated_heisenberg_trace_control.md).
 No mixed-resolvent estimate for the prescribed frozen map is proved here.
 
 ## Poisson-kernel lower bound

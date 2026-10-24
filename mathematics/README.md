@@ -30,10 +30,10 @@ remains open. [Review scope](../record/spectral_research/spectral_master_audit.m
 
 ## Circular-phase research, 19 October
 
-[Current theorem account](phase_ensemble_continuation_20261019.md) adopts the
+[Current theorem account](trace-bridge/phase_ensemble_continuation.md) adopts the
 feedback, trace, neutral-scheme and Cauchy proofs with exact scope.
-[Full second defect](phase_second_defect_20261019.md) and
-[joint quartic sum](phase_quartic_cluster_sum_20261019.md) have different time
+[Full second defect](trace-bridge/phase_second_defect.md) and
+[joint quartic sum](trace-bridge/phase_quartic_cluster_sum.md) have different time
 ranges. [The complete imported-source inventory](../archive/record/chat_integration_20261019_inventory.json)
 preserves earlier derivations and unsuccessful runs. BGS remains open.
 
@@ -53,7 +53,7 @@ The canonical theorem sources live at stable paths in this directory.
 | Where is the signed trace residual? | [WKB reduction](factorial_wkb_reduction.md), [ordered diagonal](factorial_ordered_diagonal.md), [low-switch removal](hamming_low_switch_residual.md), [switch transfer](global_switch_transfer.md) | Specified removed sectors and damped interior; signed high-switch/undamped endpoint remains |
 | What is the balanced microscopic bottleneck? | [Phase Ward identity](phase_ward_identity.md), [Schur-energy reduction](balanced_pair_schur_reduction.md) | Exact absorbed pair reductions; their actual overlap/radial-energy limits are not evaluated |
 | What survives noise or insertion averaging? | [Unmasked hierarchy](right_frame_unmasked_pinch_hierarchy.md), [signed stability](convex_pinch_weak_noise_and_deconvolution.md), [noise removal](microscopic_noise_removal.md) | Masks, source extraction and deterministic transfer retain explicit obligations |
-| What are the reconstructed analytic inequalities? | [Max-entry phase channel](max_entry_phase_channel.md), [sharp inner jets](sharp_inner_jet.md), [real-flow transport](phase_channel_real_flow.md) | TRACE-053/054/056; full proofs with internal reconstruction, no external-priority verdict |
+| What are the reconstructed analytic inequalities? | [Max-entry phase channel](trace-bridge/max_entry_phase_channel.md), [sharp inner jets](trace-bridge/sharp_inner_jet.md), [real-flow transport](trace-bridge/phase_channel_real_flow.md) | TRACE-053/054/056; full proofs with internal reconstruction, no external-priority verdict |
 | Which full-depth clock conclusions are unconditional? | [Exact Haar feedback and entropy-stable clocks](trace-bridge/haar_feedback_clock_law.md) | Independent initial laws with relative entropy O(log N) relative to Haar; deterministic and microscopic-law boundaries explicit |
 | Which feedback flatness is unconditional? | [Max-entry feedback flatness](trace-bridge/unconditional_feedback_flatness.md) | TRACE-080 under its named phase-channel and matrix-concentration inputs; deterministic local spectral universality remains open |
 | What is proved in the other regimes? | [Arithmetic/return/resonance topics](topics/README.md) | Each family retains its own hypotheses and scales |

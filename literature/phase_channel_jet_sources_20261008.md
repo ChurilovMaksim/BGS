@@ -82,10 +82,10 @@ assertion from the adjoining sections.
 
 | Submitted statement | Maintained disposition | Mathematical change |
 |---|---|---|
-| Section 89.1, max-entry phase channel | [TRACE-053](../mathematics/max_entry_phase_channel.md), project proof | Full unrestricted-mark argument, both occupation-collision corrections, exact degree-two norm, explicit delta-only pinching rate |
-| Section 89.2, integrated second jet with 13/3 | [TRACE-054](../mathematics/sharp_inner_jet.md), strengthened project proof | Optimal universal 4/3 for all square finite rational inner matrices F=zG, lower-order corrections, smooth localization with its derivative penalty |
+| Section 89.1, max-entry phase channel | [TRACE-053](../mathematics/trace-bridge/max_entry_phase_channel.md), project proof | Full unrestricted-mark argument, both occupation-collision corrections, exact degree-two norm, explicit delta-only pinching rate |
+| Section 89.2, integrated second jet with 13/3 | [TRACE-054](../mathematics/trace-bridge/sharp_inner_jet.md), strengthened project proof | Optimal universal 4/3 for all square finite rational inner matrices F=zG, lower-order corrections, smooth localization with its derivative penalty |
 | Section 89.3, actual polylogarithmic deep-source hierarchy | TRACE-055, verification-pending | The summary asserts quantitative joint barriers and covariance/continuation inputs whose raw proofs have not been reconstructed; no unconditional promotion |
-| Real-flow normally absorbed scalar consequence | [TRACE-056](../mathematics/phase_channel_real_flow.md), direct project proof | Independent eigenphase transport and common-phase L1 smoothing; no dependence on the submitted physical-cavity assertions |
+| Real-flow normally absorbed scalar consequence | [TRACE-056](../mathematics/trace-bridge/phase_channel_real_flow.md), direct project proof | Independent eigenphase transport and common-phase L1 smoothing; no dependence on the submitted physical-cavity assertions |
 
 The phase occupation expansion, Fejer positivity, Poisson kernel identities,
 finite inner factorization, matrix weighted Cauchy and common-phase smoothing
