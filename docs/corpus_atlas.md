@@ -443,9 +443,9 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
-| [Status and result](../mathematics/fixed_strength_locality.md) | `BGS-FM-034` (proved); `BGS-FM-035` (proved); `BGS-FM-036` (proved) |
-| [Fourier-tail coercivity estimate](../mathematics/fourier_tail_locality.md) | Consult proof and full ledger |
-| [Status and scope](../mathematics/locality_robustness.md) | Consult proof and full ledger |
+| [Status and result](../mathematics/locality/fixed_strength_locality.md) | `BGS-FM-034` (proved); `BGS-FM-035` (proved); `BGS-FM-036` (proved) |
+| [Fourier-tail coercivity estimate](../mathematics/locality/fourier_tail_locality.md) | Consult proof and full ledger |
+| [Status and scope](../mathematics/locality/locality_robustness.md) | Consult proof and full ledger |
 
 ### Spectral obstruction tests
 

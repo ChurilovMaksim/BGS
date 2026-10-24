@@ -587,7 +587,7 @@ This family still carries inherited arithmetic structure through its smooth
 conjugacy to R. It is outside the project's stronger nonaffine-conjugacy
 exclusion. That distinction is essential.
 
-The earlier project theorem mathematics/fixed_strength_locality.md already
+The earlier project theorem mathematics/locality/fixed_strength_locality.md already
 constructs fixed nonlinear smooth conjugates with arithmetic clustering.
 This section carries the simultaneous expansion/memory theorem into a
 nonlinear family; it does not claim priority for nonlinear counterexamples.
@@ -608,6 +608,6 @@ The shrinking factorial perturbation is never rounded to the identity in
 an eigenvalue experiment; its simplicity/nonvanishing proof is transcendental,
 and its persistence proof uses norm inequalities. Fixed nonlinear smooth
 arithmetic conjugates were already constructed in
-[fixed_strength_locality.md](fixed_strength_locality.md). The simultaneous
+[fixed_strength_locality.md](locality/fixed_strength_locality.md). The simultaneous
 channel/memory construction is an additional obstruction to proposed
 criteria; it cannot replace TRACE-005 for the different frozen family.

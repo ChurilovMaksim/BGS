@@ -85,9 +85,9 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-FM-031](../mathematics/ordinary_compact_stratum_centering.md) | proved | `BGS-TRACE-023` | `EXT-ZIRN-2021` | 0 |
 | [BGS-FM-032](../mathematics/quantum_cyclic_cohomology_20261015.md) | proved | `BGS-FM-001`, `BGS-TRACE-009` | None registered | 0 |
 | [BGS-FM-033](../mathematics/scaled_weyl_overlap_20261015.md) | conditional | `BGS-FM-014`, `BGS-FM-023` | None registered | 0 |
-| [BGS-FM-034](../mathematics/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
-| [BGS-FM-035](../mathematics/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
-| [BGS-FM-036](../mathematics/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
+| [BGS-FM-034](../mathematics/locality/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
+| [BGS-FM-035](../mathematics/locality/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
+| [BGS-FM-036](../mathematics/locality/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
 | [BGS-FORMAL-001](../formalization/README.md) | proved | None registered | None registered | 0 |
 | [BGS-FORMAL-002](../mathematics/four_cut_rank_two_classification.md) | proved | None registered | None registered | 1 |
 | [BGS-FORMAL-003](../formalization/seven_primary_certificate.md) | proved | None registered | None registered | 0 |

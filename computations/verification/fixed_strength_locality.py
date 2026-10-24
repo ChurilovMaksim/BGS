@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fixed-strength, disjoint-symbol coboundary: reproducible finite checks.
 
-The analytic theorem is in mathematics/fixed_strength_locality.md. Exact
+The analytic theorem is in mathematics/locality/fixed_strength_locality.md. Exact
 integer/rational checks, Fourier discretization controls, and finite numerical
 operator tests are separate. No experiment is a proof of an asymptotic claim.
 """

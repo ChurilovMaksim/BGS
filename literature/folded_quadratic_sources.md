@@ -14,7 +14,7 @@ directly; no external theorem is substituted for an actual-map estimate.
 - [Earlier folded control](../supplement/fixed_map/report-audit/folded_spectrum_control.md):
   local regularity/short traces do not force resonant pair decay; it is
   not a bound for the projected squared density.
-- [Fixed-strength locality](../mathematics/fixed_strength_locality.md)
+- [Fixed-strength locality](../mathematics/locality/fixed_strength_locality.md)
   and [sparse orbit control](../supplement/fixed_map/design-return/sparse_orbit_theorem.md):
   previous clustering and finite coherence, credited without claiming a
   new BGS obstruction at p=239.

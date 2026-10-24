@@ -4,13 +4,13 @@ Locality estimates specify the symbol class, approximation budget, coupling and 
 
 ## Current theorem capsules
 
-- **[Fixed-strength locality](../../fixed_strength_locality.md)** — Read the exact support and parameter restrictions before using the conclusion.
-- **[Fourier-tail control](../../fourier_tail_locality.md)** — Truncation error and the permitted growth budget are part of the theorem.
-- **[Robustness](../../locality_robustness.md)** — Perturbative robustness applies only in its stated norms and windows.
+- **[Fixed-strength locality](../../locality/fixed_strength_locality.md)** — Read the exact support and parameter restrictions before using the conclusion.
+- **[Fourier-tail control](../../locality/fourier_tail_locality.md)** — Truncation error and the permitted growth budget are part of the theorem.
+- **[Robustness](../../locality/locality_robustness.md)** — Perturbative robustness applies only in its stated norms and windows.
 
 ## Suggested reading sequence
 
-[1. fixed strength locality](../../fixed_strength_locality.md) → [2. fourier tail locality](../../fourier_tail_locality.md) → [3. locality robustness](../../locality_robustness.md)
+[1. fixed strength locality](../../locality/fixed_strength_locality.md) → [2. fourier tail locality](../../locality/fourier_tail_locality.md) → [3. locality robustness](../../locality/locality_robustness.md)
 
 This is a reading sequence, not a replacement for the exact dependency graph.
 
@@ -24,6 +24,6 @@ See [the ongoing corpus revision](../../../archive/record/corpus_revision_202610
 
 ## Complete source membership
 
-- [fixed_strength_locality](../../fixed_strength_locality.md)
-- [fourier_tail_locality](../../fourier_tail_locality.md)
-- [locality_robustness](../../locality_robustness.md)
+- [fixed_strength_locality](../../locality/fixed_strength_locality.md)
+- [fourier_tail_locality](../../locality/fourier_tail_locality.md)
+- [locality_robustness](../../locality/locality_robustness.md)

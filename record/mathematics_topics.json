@@ -1,6 +1,6 @@
 {
   "schema": "bgs-mathematics-topics-v1",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "policy": "Canonical paths of the proof notes are recorded here. Phase 2 moves each note into exactly one topical home directory under mathematics/ (wave by wave; the wave manifests record every old-to-new path map); membership lists are navigational, may cite one note under several topics, and always at its single canonical path. The mathematics/topics/ directories are reading views, not duplicate proof sources.",
   "topics": {
     "fixed-map": [
@@ -372,9 +372,9 @@
       "mathematics/weighted_wiener_resonance.md"
     ],
     "locality": [
-      "mathematics/fixed_strength_locality.md",
-      "mathematics/fourier_tail_locality.md",
-      "mathematics/locality_robustness.md"
+      "mathematics/locality/fixed_strength_locality.md",
+      "mathematics/locality/fourier_tail_locality.md",
+      "mathematics/locality/locality_robustness.md"
     ],
     "spectral-obstructions": [
       "mathematics/arithmetic_translation_exclusion.md",

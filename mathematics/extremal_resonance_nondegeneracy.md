@@ -240,7 +240,7 @@ for every `v in V`, with `alpha>0`. Since the nonzero determinant is an integer,
                \Gamma_A(g)/\|g\|_2^4>0.                  \tag{13}
 \]
 
-This follows from continuity on the compact unit sphere. Together with the Fourier-tail construction in `fourier_tail_locality.md`, for every fixed `s>1` one has constants `C_s,c_s>0` such that
+This follows from continuity on the compact unit sphere. Together with the Fourier-tail construction in `locality/fourier_tail_locality.md`, for every fixed `s>1` one has constants `C_s,c_s>0` such that
 
 \[
  0<c_R(A)\le C_s\exp(-c_sR^{1/s}).                        \tag{14}
