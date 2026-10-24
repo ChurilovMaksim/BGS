@@ -415,27 +415,27 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
-| [Analytic regularity of the hyperbolic orbit-sum coboundary](../mathematics/analytic_coboundary_regularization.md) | Consult proof and full ledger |
-| [Statement and status](../mathematics/analytic_poisson_flatness_rigidity.md) | Consult proof and full ledger |
-| [Analytic rigidity of consecutive Poisson-commuting torus observables](../mathematics/analytic_poisson_rigidity.md) | Consult proof and full ledger |
-| [Entire temporal gauges and a regularity obstruction](../mathematics/entire_temporal_gauge.md) | `BGS-RES-018` (proved) |
-| [Two return transitions for an even-period kicked cat map](../mathematics/even_period_spin_resonance.md) | Consult proof and full ledger |
-| [An isolated extremal Fourier mode forces positive resonance](../mathematics/extremal_resonance_nondegeneracy.md) | Consult proof and full ledger |
-| [Smooth resonance rigidity on finitely many hyperbolic Fourier orbits](../mathematics/finite_orbit_resonance_rigidity.md) | `BGS-RES-004` (proved) |
-| [Sharp coercivity for the resonance functional on a Fourier line](../mathematics/fourier_line_resonance_coercivity.md) | `BGS-RES-001` (proved) |
-| [Full-lag uniform classical resonance gap for the frozen physical symbol](../mathematics/frozen_full_lag_resonance.md) | `BGS-RES-005` (proved) |
-| [Generic infinite-support resonance nondegeneracy in weighted Wiener and Sobolev spaces](../mathematics/generic_wiener_resonance.md) | `BGS-RES-020` (proved) |
-| [Resonance independence on one infinite hyperbolic orbit](../mathematics/infinite_orbit_resonance.md) | Consult proof and full ledger |
-| [Local jet obstruction to a purely fixed-point proof of resonance nondegeneracy](../mathematics/local_jet_resonance_obstruction.md) | `BGS-RES-002` (proved) |
-| [An exact tail symbol and phase regularization of smooth resonances](../mathematics/phase_regularized_resonance.md) | Consult proof and full ledger |
-| [Quantitative one-mode transversality for the second resonance](../mathematics/quantitative_resonance_transversality.md) | Consult proof and full ledger |
-| [Short recurrence traces force a microscopic second-correlation obstruction](../mathematics/resonance_microscopic_obstruction.md) | Consult proof and full ledger |
-| [Abstract and status](../mathematics/resonance_nondegeneracy_and_hessian.md) | `BGS-RES-022` (verification-pending); `BGS-RES-023` (proved) |
-| [One-mode regularization of the full hyperbolic resonance lattice](../mathematics/resonance_riesz_regularization.md) | `BGS-RES-014` (conditional) |
-| [Weighted-Wiener stability of finite-Fourier resonance nondegeneracy](../mathematics/resonance_wiener_stability.md) | `BGS-RES-019` (proved) |
-| [Temporal resonance hierarchy and spectral modules](../mathematics/temporal_resonance_hierarchy.md) | Consult proof and full ledger |
-| [Two-window resonance crossover](../mathematics/two_window_resonance_crossover.md) | `BGS-RES-015` (proved) |
-| [Uniform resonance synthesis and one-harmonic regularization](../mathematics/weighted_wiener_resonance.md) | Consult proof and full ledger |
+| [Analytic regularity of the hyperbolic orbit-sum coboundary](../mathematics/resonance-cohomology/analytic_coboundary_regularization.md) | Consult proof and full ledger |
+| [Statement and status](../mathematics/resonance-cohomology/analytic_poisson_flatness_rigidity.md) | Consult proof and full ledger |
+| [Analytic rigidity of consecutive Poisson-commuting torus observables](../mathematics/resonance-cohomology/analytic_poisson_rigidity.md) | Consult proof and full ledger |
+| [Entire temporal gauges and a regularity obstruction](../mathematics/resonance-cohomology/entire_temporal_gauge.md) | `BGS-RES-018` (proved) |
+| [Two return transitions for an even-period kicked cat map](../mathematics/resonance-cohomology/even_period_spin_resonance.md) | Consult proof and full ledger |
+| [An isolated extremal Fourier mode forces positive resonance](../mathematics/resonance-cohomology/extremal_resonance_nondegeneracy.md) | Consult proof and full ledger |
+| [Smooth resonance rigidity on finitely many hyperbolic Fourier orbits](../mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md) | `BGS-RES-004` (proved) |
+| [Sharp coercivity for the resonance functional on a Fourier line](../mathematics/resonance-cohomology/fourier_line_resonance_coercivity.md) | `BGS-RES-001` (proved) |
+| [Full-lag uniform classical resonance gap for the frozen physical symbol](../mathematics/resonance-cohomology/frozen_full_lag_resonance.md) | `BGS-RES-005` (proved) |
+| [Generic infinite-support resonance nondegeneracy in weighted Wiener and Sobolev spaces](../mathematics/resonance-cohomology/generic_wiener_resonance.md) | `BGS-RES-020` (proved) |
+| [Resonance independence on one infinite hyperbolic orbit](../mathematics/resonance-cohomology/infinite_orbit_resonance.md) | Consult proof and full ledger |
+| [Local jet obstruction to a purely fixed-point proof of resonance nondegeneracy](../mathematics/resonance-cohomology/local_jet_resonance_obstruction.md) | `BGS-RES-002` (proved) |
+| [An exact tail symbol and phase regularization of smooth resonances](../mathematics/resonance-cohomology/phase_regularized_resonance.md) | Consult proof and full ledger |
+| [Quantitative one-mode transversality for the second resonance](../mathematics/resonance-cohomology/quantitative_resonance_transversality.md) | Consult proof and full ledger |
+| [Short recurrence traces force a microscopic second-correlation obstruction](../mathematics/resonance-cohomology/resonance_microscopic_obstruction.md) | Consult proof and full ledger |
+| [Abstract and status](../mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md) | `BGS-RES-022` (verification-pending); `BGS-RES-023` (proved) |
+| [One-mode regularization of the full hyperbolic resonance lattice](../mathematics/resonance-cohomology/resonance_riesz_regularization.md) | `BGS-RES-014` (conditional) |
+| [Weighted-Wiener stability of finite-Fourier resonance nondegeneracy](../mathematics/resonance-cohomology/resonance_wiener_stability.md) | `BGS-RES-019` (proved) |
+| [Temporal resonance hierarchy and spectral modules](../mathematics/resonance-cohomology/temporal_resonance_hierarchy.md) | Consult proof and full ledger |
+| [Two-window resonance crossover](../mathematics/resonance-cohomology/two_window_resonance_crossover.md) | `BGS-RES-015` (proved) |
+| [Uniform resonance synthesis and one-harmonic regularization](../mathematics/resonance-cohomology/weighted_wiener_resonance.md) | Consult proof and full ledger |
 
 ### Locality and Fourier tails
 

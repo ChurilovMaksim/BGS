@@ -6,15 +6,15 @@ The base is `39d4e01ae6a6b3eb472ab30266b708ca71a70a16` in
 `ChurilovMaksim/BGS`. The following are existing project results, not
 contributions of this pass:
 
-- `mathematics/extremal_resonance_nondegeneracy.md`: all real nonconstant
+- `mathematics/resonance-cohomology/extremal_resonance_nondegeneracy.md`: all real nonconstant
   finite Fourier polynomials have positive second-resonance variance.
 - `manuscript/unified_sections/temporal_resonance.tex`: all finite-lag
   classes are independent for each real nonconstant Fourier polynomial.
-- `mathematics/infinite_orbit_resonance.md`: all-member independence on
+- `mathematics/resonance-cohomology/infinite_orbit_resonance.md`: all-member independence on
   one infinite signed orbit under the weighted Fourier M1 assumption.
-- `mathematics/entire_temporal_gauge.md`: common real entire all-pass
+- `mathematics/resonance-cohomology/entire_temporal_gauge.md`: common real entire all-pass
   invariance and a one-harmonic finite-Gevrey obstruction.
-- `mathematics/phase_regularized_resonance.md`, Section 2: a large-gap
+- `mathematics/resonance-cohomology/phase_regularized_resonance.md`, Section 2: a large-gap
   separation mechanism; the new proof gives an alternative qualitative route.
 
 The new theorem combines pair-channel separation with a common-factor

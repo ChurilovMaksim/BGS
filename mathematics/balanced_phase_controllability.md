@@ -89,7 +89,7 @@ Let A now be hyperbolic and g any real inversion-even observable with M1(g)<infi
 
     b=(1+i)e_v+(1-i)e_(-v), g_epsilon=g+epsilon b.
 
-The real-even part is g+epsilon(e_v+e_(-v)), and the remaining quadrature is epsilon i(e_v-e_(-v)). The exact phase identities in resonance_riesz_regularization.md give
+The real-even part is g+epsilon(e_v+e_(-v)), and the remaining quadrature is epsilon i(e_v-e_(-v)). The exact phase identities in resonance-cohomology/resonance_riesz_regularization.md give
 
     c_infinity(g_epsilon)
       >=4 pi^2 epsilon^4 D^2/(tr(A)^2-4)>0, epsilon!=0.      (3)

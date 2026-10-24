@@ -232,7 +232,7 @@ Hermite--Lindemann input, it implies
 $\operatorname{rank}(U_N-zM_N)\ge N-\gcd(N,7)$ for every complex $z$ and
 every nonzero algebraic coupling. Its approximate-rank bound applies only
 before eigenphase wrapping, $|\tau N|(79/50)\le\pi$; it supplies no fixed-strength
-asymptotic control. Separately, the [full-lag classical gap](frozen_full_lag_resonance.md)
+asymptotic control. Separately, the [full-lag classical gap](resonance-cohomology/frozen_full_lag_resonance.md)
 proves a uniform translated Riesz bound for the exact physical symbol under
 the *linear* cat map, including small weighted-Fourier perturbations. It
 does not treat transport by the nonlinear kicked map. The

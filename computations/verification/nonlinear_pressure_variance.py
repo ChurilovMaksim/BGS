@@ -3,7 +3,7 @@
 
 All coefficients lie in Q(i). The script constructs the ordinary-midpoint
 symbol directly from its trigonometric formula, independently of the
-coefficient table in mathematics/frozen_full_lag_resonance.md.
+coefficient table in mathematics/resonance-cohomology/frozen_full_lag_resonance.md.
 """
 
 from __future__ import annotations

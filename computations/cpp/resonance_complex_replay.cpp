@@ -1,6 +1,6 @@
 // Independent C++ reconstruction and replay for the resonance
 // nondegeneracy certificate (BGS-RES-022), written from the specification in
-// mathematics/resonance_nondegeneracy_and_hessian.md, Sections 2.1--2.3.
+// mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md, Sections 2.1--2.3.
 //
 // Construction mode:
 //   resonance_complex_replay <radius>

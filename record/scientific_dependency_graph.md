@@ -94,11 +94,11 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-FUP-001](../mathematics/offdiagonal_digit_fup.md) | proved | None registered | `EXT-COHEN-2025` | 0 |
 | [BGS-INFO-001](../mathematics/open_questions.md) | open | None registered | None registered | 0 |
 | [BGS-LOOP-001](../mathematics/fixed_map_resolvent_frontier.md) | conditional | `BGS-FM-007`, `BGS-TRACE-002` | `EXT-BH-2026` | 1 |
-| [BGS-RES-001](../mathematics/fourier_line_resonance_coercivity.md) | proved | None registered | None registered | 1 |
-| [BGS-RES-002](../mathematics/local_jet_resonance_obstruction.md) | proved | None registered | None registered | 1 |
+| [BGS-RES-001](../mathematics/resonance-cohomology/fourier_line_resonance_coercivity.md) | proved | None registered | None registered | 1 |
+| [BGS-RES-002](../mathematics/resonance-cohomology/local_jet_resonance_obstruction.md) | proved | None registered | None registered | 1 |
 | [BGS-RES-003](../mathematics/open_questions.md) | open | `BGS-RES-001`, `BGS-RES-002` | None registered | 0 |
-| [BGS-RES-004](../mathematics/finite_orbit_resonance_rigidity.md) | proved | None registered | None registered | 0 |
-| [BGS-RES-005](../mathematics/frozen_full_lag_resonance.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-004](../mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-005](../mathematics/resonance-cohomology/frozen_full_lag_resonance.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-006](../mathematics/fixed_map_resolvent_frontier.md) | proved | None registered | None registered | 1 |
 | [BGS-RES-007](../mathematics/fixed_map_resolvent_frontier.md) | proved | `BGS-FM-007`, `BGS-RES-006` | None registered | 0 |
 | [BGS-RES-008](../mathematics/pell_sharp_orbit_coercivity.md) | proved | None registered | None registered | 0 |
@@ -107,16 +107,16 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-RES-011](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
 | [BGS-RES-012](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
 | [BGS-RES-013](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
-| [BGS-RES-014](../mathematics/resonance_riesz_regularization.md) | conditional | None registered | None registered | 1 |
-| [BGS-RES-015](../mathematics/two_window_resonance_crossover.md) | proved | `BGS-RES-014` | None registered | 0 |
+| [BGS-RES-014](../mathematics/resonance-cohomology/resonance_riesz_regularization.md) | conditional | None registered | None registered | 1 |
+| [BGS-RES-015](../mathematics/resonance-cohomology/two_window_resonance_crossover.md) | proved | `BGS-RES-014` | None registered | 0 |
 | [BGS-RES-016](../mathematics/information-theory/multiradius_polynomial_rigidity.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-017](../mathematics/balanced_phase_controllability.md) | proved | None registered | None registered | 0 |
-| [BGS-RES-018](../mathematics/entire_temporal_gauge.md) | proved | None registered | None registered | 0 |
-| [BGS-RES-019](../mathematics/resonance_wiener_stability.md) | proved | None registered | None registered | 0 |
-| [BGS-RES-020](../mathematics/generic_wiener_resonance.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-018](../mathematics/resonance-cohomology/entire_temporal_gauge.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-019](../mathematics/resonance-cohomology/resonance_wiener_stability.md) | proved | None registered | None registered | 0 |
+| [BGS-RES-020](../mathematics/resonance-cohomology/generic_wiener_resonance.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-021](../manuscript/unified_sections/analytic_resonance_rigidity.tex) | proved | None registered | None registered | 0 |
-| [BGS-RES-022](../mathematics/resonance_nondegeneracy_and_hessian.md) | verification-pending | None registered | None registered | 1 |
-| [BGS-RES-023](../mathematics/resonance_nondegeneracy_and_hessian.md) | proved | `BGS-RES-022` | None registered | 0 |
+| [BGS-RES-022](../mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md) | verification-pending | None registered | None registered | 1 |
+| [BGS-RES-023](../mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md) | proved | `BGS-RES-022` | None registered | 0 |
 | [BGS-RET-001](../mathematics/pell_harmonic_returns.md) | proved | `BGS-RET-002` | `EXT-DEMNI-2016` | 0 |
 | [BGS-RET-002](../mathematics/pell_harmonic_transition.md) | proved | None registered | None registered | 1 |
 | [BGS-RET-003](../mathematics/noncommuting_return_words.md) | conditional | None registered | None registered | 0 |

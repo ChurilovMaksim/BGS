@@ -423,7 +423,7 @@ its negative are counted separately. Absolute convergence follows because
 for each pair of nonzero integer frequencies at most one integer iterate
 identifies them; the total absolute correlation sum is at most $F_0^2$.
 This is the existing classical orbit-variance formula, not a new claim
-of priority; see [the earlier derivation](weighted_wiener_resonance.md).
+of priority; see [the earlier derivation](resonance-cohomology/weighted_wiener_resonance.md).
 
 **Theorem 4 (general one-return law).** For every fixed real mean-zero
 $f$ with $F_4<\infty$, in particular every smooth $f$,

@@ -638,7 +638,7 @@ The project contains several strong negative and structural lessons:
 
 ## E. All-members analytic resonance nondegeneracy
 
-The generic infinite-support part is now closed substantially beyond analytic strips. `resonance_wiener_stability.md` gives an explicit weighted-Wiener stability ball around every nonconstant real trigonometric polynomial. `generic_wiener_resonance.md` proves that `{Gamma_A>0}` is open and dense in the natural weighted-Wiener Banach space, every fixed analytic Wiener strip, every `H^s(T^2)` with `s>2`, and `C^infinity(T^2)` with its Frechet topology. Exact zero-variance cancellations are therefore closed and nowhere dense in all of those spaces.
+The generic infinite-support part is now closed substantially beyond analytic strips. `resonance-cohomology/resonance_wiener_stability.md` gives an explicit weighted-Wiener stability ball around every nonconstant real trigonometric polynomial. `resonance-cohomology/generic_wiener_resonance.md` proves that `{Gamma_A>0}` is open and dense in the natural weighted-Wiener Banach space, every fixed analytic Wiener strip, every `H^s(T^2)` with `s>2`, and `C^infinity(T^2)` with its Frechet topology. Exact zero-variance cancellations are therefore closed and nowhere dense in all of those spaces.
 
 Two further analytic mechanisms are also closed:
 
@@ -650,7 +650,7 @@ Two further analytic mechanisms are also closed:
 
 So the separated-support pointwise-zero mechanism cannot occur for a nonconstant analytic observable.
 
-2. `analytic_coboundary_regularization.md` proves that an analytic zero-orbit-sum observable has an analytic cohomological transfer, with no loss of the exponent in its adapted frequency norm (and a positive strip width in ordinary coordinates). Hence any hypothetical nonconstant analytic `g` with `Gamma_A(g)=0` must satisfy
+2. `resonance-cohomology/analytic_coboundary_regularization.md` proves that an analytic zero-orbit-sum observable has an analytic cohomological transfer, with no loss of the exponent in its adapted frequency norm (and a positive strip width in ordinary coordinates). Hence any hypothetical nonconstant analytic `g` with `Gamma_A(g)=0` must satisfy
 
 ```text
 {g,C_A g}/(4*pi)=u-C_A u,
@@ -671,7 +671,7 @@ The remaining question is therefore sharply reduced:
 **Open question:** can the nonlinear analytic cohomological equation (*) have a nonconstant real-analytic solution `g`, or can one prove it impossible? Equivalently, is `Gamma_A(g)>0` for every nonconstant real-analytic observable?
 
 **22 September partial closure.** The project proof in
-`finite_orbit_resonance_rigidity.md` excludes zero variance, and proves all
+`resonance-cohomology/finite_orbit_resonance_rigidity.md` excludes zero variance, and proves all
 finite-lag independence, for every nonconstant real smooth observable whose
 support is contained in finitely many signed A-orbits. Equivalently, it
 covers support with bounded `abs(det(k,Ak))`. Any remaining analytic

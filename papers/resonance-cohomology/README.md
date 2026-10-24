@@ -3,13 +3,13 @@
 **Status: publication candidate scope — not submitted, accepted, or externally refereed.**
 
 This paper scope collects four distinct project theorems:
-[BGS-RES-001](../../mathematics/fourier_line_resonance_coercivity.md)
+[BGS-RES-001](../../mathematics/resonance-cohomology/fourier_line_resonance_coercivity.md)
 (sharp Fourier-line coercivity),
-[BGS-RES-002](../../mathematics/local_jet_resonance_obstruction.md)
+[BGS-RES-002](../../mathematics/resonance-cohomology/local_jet_resonance_obstruction.md)
 (the local-jet obstruction),
-[BGS-RES-004](../../mathematics/finite_orbit_resonance_rigidity.md)
+[BGS-RES-004](../../mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md)
 (smooth finite-orbit lag rigidity), and
-[BGS-RES-005](../../mathematics/frozen_full_lag_resonance.md)
+[BGS-RES-005](../../mathematics/resonance-cohomology/frozen_full_lag_resonance.md)
 (the all-lag classical Riesz gap for the **specific physical observable
 under linear cat-map transport**). Their exact assumptions are different;
 none should be worded as a free upgrade to nonlinear transport.

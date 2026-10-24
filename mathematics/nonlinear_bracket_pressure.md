@@ -61,7 +61,7 @@ $$
 $$
 
 In particular the *upper* Bessel/Riesz bound with the linear factor
-$\lambda^{-r}$ from [`frozen_full_lag_resonance.md`](frozen_full_lag_resonance.md)
+$\lambda^{-r}$ from [`frozen_full_lag_resonance.md`](resonance-cohomology/frozen_full_lag_resonance.md)
 fails for this nonlinear map: select a single lag $r$ in any purported
 uniform upper estimate. This says nothing by itself about a different
 pressure-adapted normalization or about quantum traces.

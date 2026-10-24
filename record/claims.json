@@ -488,7 +488,7 @@
       "title": "Sharp Fourier-line resonance coercivity",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + FRESH EXACT REGRESSION",
-      "source": "mathematics/fourier_line_resonance_coercivity.md",
+      "source": "mathematics/resonance-cohomology/fourier_line_resonance_coercivity.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -506,7 +506,7 @@
       "title": "Local-jet resonance obstruction",
       "state": "proved",
       "ledger_status": "EXACT LOCAL CONSTRUCTION + FRESH SYMBOLIC REGRESSION",
-      "source": "mathematics/local_jet_resonance_obstruction.md",
+      "source": "mathematics/resonance-cohomology/local_jet_resonance_obstruction.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -542,7 +542,7 @@
       "title": "Smooth finite-orbit Poisson-bracket lag independence",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INTERNAL AUDIT + EXACT FINITE REGRESSION",
-      "source": "mathematics/finite_orbit_resonance_rigidity.md",
+      "source": "mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -564,7 +564,7 @@
       "title": "Full-lag uniform classical Riesz gap for the frozen physical symbol under linear transport",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + SEPARATE INTERNAL REVIEW + EXACT SYMBOL CERTIFICATE",
-      "source": "mathematics/frozen_full_lag_resonance.md",
+      "source": "mathematics/resonance-cohomology/frozen_full_lag_resonance.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4618,7 +4618,7 @@
       "title": "Full Riesz criterion for the two-variable resonance lattice",
       "state": "conditional",
       "ledger_status": "PROJECT PROOF; CONDITIONAL ON THE FOUR-ATOM GAP SEPARATION LEMMA",
-      "source": "mathematics/resonance_riesz_regularization.md",
+      "source": "mathematics/resonance-cohomology/resonance_riesz_regularization.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4631,10 +4631,10 @@
       "manuscript": [
         "manuscript/unified_sections/wiener_riesz.tex"
       ],
-      "boundary": "Conditional on the four-atom gap separation lemma used by thm:two-variable-tail: the manuscript proof sketches it, and the fuller algebraic argument is recorded in mathematics/phase_regularized_resonance.md as a project proof; the 2026-10-20 review did not accept the manuscript sketch as a complete proof and did not recalculate the lemma in full. M_1(g)<infty; Riesz bounds are eventual (lags r>R), with limiting lower tail edge c_infty(g)=pi^2 min X_g min Y_g.",
+      "boundary": "Conditional on the four-atom gap separation lemma used by thm:two-variable-tail: the manuscript proof sketches it, and the fuller algebraic argument is recorded in mathematics/resonance-cohomology/phase_regularized_resonance.md as a project proof; the 2026-10-20 review did not accept the manuscript sketch as a complete proof and did not recalculate the lemma in full. M_1(g)<infty; Riesz bounds are eventual (lags r>R), with limiting lower tail edge c_infty(g)=pi^2 min X_g min Y_g.",
       "proof_dependencies": [
-        "mathematics/phase_regularized_resonance.md",
-        "mathematics/weighted_wiener_resonance.md"
+        "mathematics/resonance-cohomology/phase_regularized_resonance.md",
+        "mathematics/resonance-cohomology/weighted_wiener_resonance.md"
       ]
     },
     {
@@ -4642,7 +4642,7 @@
       "title": "Two-window phase crossover: rectangular Gram lower edge",
       "state": "proved",
       "ledger_status": "PROJECT PROOF (COMPLETE FINITE-DIFFERENCE PROOF) + INDEPENDENT INTERNAL REVIEW",
-      "source": "mathematics/two_window_resonance_crossover.md",
+      "source": "mathematics/resonance-cohomology/two_window_resonance_crossover.md",
       "dependencies": [
         "BGS-RES-014"
       ],
@@ -4654,7 +4654,7 @@
         "manuscript/unified_sections/phase_crossover.tex"
       ],
       "boundary": "Fixed q>=1, R>=2q and fixed nonzero v; constants depend only on A, v, q, R. Two-sided order estimate, not a claimed exact leading constant. Smallest eigenvalue of a classical observable Gram matrix, not the spectral edge of a quantum Hamiltonian or a BGS eigenphase statistic.",
-      "dependency_scope": "BGS-RES-014 is cited for the general two-variable tail symbol only; for this fixed-support family the symbol is computed directly in the section and in mathematics/two_window_resonance_crossover.md (complete finite-difference proof), so the conditional four-atom gap lemma of the general case is not used."
+      "dependency_scope": "BGS-RES-014 is cited for the general two-variable tail symbol only; for this fixed-support family the symbol is computed directly in the section and in mathematics/resonance-cohomology/two_window_resonance_crossover.md (complete finite-difference proof), so the conditional four-atom gap lemma of the general case is not used."
     },
     {
       "id": "BGS-RES-016",
@@ -4705,7 +4705,7 @@
       "title": "Infinite-orbit independence and entire temporal all-pass gauges",
       "state": "proved",
       "ledger_status": "PROJECT PROOF (SELF-CONTAINED)",
-      "source": "mathematics/entire_temporal_gauge.md",
+      "source": "mathematics/resonance-cohomology/entire_temporal_gauge.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -4716,7 +4716,7 @@
       ],
       "boundary": "thm:infinite-orbit: nonzero observables with M_1(g)<infty supported on one signed orbit. All-pass classification: filters holomorphic on the punctured plane with real Laurent coefficients summable with every exponential weight. Preserved data are the complete zero-frequency hierarchy J(h_r) modulo actual smooth coboundaries, not all dynamical-frequency cross spectra; cubic moments can change.",
       "proof_dependencies": [
-        "mathematics/infinite_orbit_resonance.md"
+        "mathematics/resonance-cohomology/infinite_orbit_resonance.md"
       ]
     },
     {
@@ -4724,7 +4724,7 @@
       "title": "Explicit weighted-Wiener stability of the isolated resonance mode",
       "state": "proved",
       "ledger_status": "EXACT + FINITE-REGRESSION",
-      "source": "mathematics/resonance_wiener_stability.md",
+      "source": "mathematics/resonance-cohomology/resonance_wiener_stability.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4744,7 +4744,7 @@
       "title": "Generic weighted-Wiener nondegeneracy",
       "state": "proved",
       "ledger_status": "EXACT",
-      "source": "mathematics/generic_wiener_resonance.md",
+      "source": "mathematics/resonance-cohomology/generic_wiener_resonance.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -4778,7 +4778,7 @@
       "title": "Radius-eight resonance nondegeneracy (ND.3)",
       "state": "verification-pending",
       "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF; INDEPENDENT PYTHON AND C++ REPLAYS DEPOSITED 2026-10-23; STATUS REVIEW PENDING",
-      "source": "mathematics/resonance_nondegeneracy_and_hessian.md",
+      "source": "mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4846,7 +4846,7 @@
       "title": "Constructive margin for the radius-eight certificate (ND.10): explicit constant pi^2/41472 * 2^(-2^715)",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + DEPOSITED CERTIFICATE + RECONSTRUCTED MARGIN COMPUTATION (TWO INDEPENDENT IMPLEMENTATIONS AGREE)",
-      "source": "mathematics/resonance_nondegeneracy_and_hessian.md",
+      "source": "mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md",
       "dependencies": [
         "BGS-RES-022"
       ],

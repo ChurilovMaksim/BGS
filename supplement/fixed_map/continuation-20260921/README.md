@@ -8,8 +8,8 @@ Promoted sources:
 - [three-orientation barrier](../../../mathematics/three_orientation_resolvent_barrier.md)
 - [actual frozen-model symmetry theorem](../../../mathematics/fixed_model_symmetry_theorem.md)
 - [full-symbol odd-Pell crossover](../../../mathematics/fixed_model_pell_crossover.md)
-- [Fourier-line resonance coercivity](../../../mathematics/fourier_line_resonance_coercivity.md)
-- [local jet obstruction](../../../mathematics/local_jet_resonance_obstruction.md)
+- [Fourier-line resonance coercivity](../../../mathematics/resonance-cohomology/fourier_line_resonance_coercivity.md)
+- [local jet obstruction](../../../mathematics/resonance-cohomology/local_jet_resonance_obstruction.md)
 
 The exact recovery/integration disposition is recorded in
 [the final handoff audit](../../../record/final_research_handoff_20260921.md), and the fresh replay summary is

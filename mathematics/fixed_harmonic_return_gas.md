@@ -4,7 +4,7 @@
 checks and floating matrix experiments. Independent review and priority
 verification are outstanding. The starting repository revision is
 9ed93cd1bc5e3362c1dbf520f0f391478dfb6969; this note also uses the uncommitted
-32-class lattice proof in [the even-period note](even_period_spin_resonance.md).
+32-class lattice proof in [the even-period note](resonance-cohomology/even_period_spin_resonance.md).
 The target remains microscopic BGS for fixed smooth chaotic systems.
 The results below concern arithmetic return times and do not achieve that target.
 

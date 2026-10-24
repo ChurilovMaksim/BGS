@@ -12,7 +12,7 @@ import subprocess
 import sys
 
 ROOT=Path(__file__).resolve().parents[2]
-SOURCE=ROOT/'mathematics/finite_orbit_resonance_rigidity.md'
+SOURCE=ROOT/'mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md'
 TARGET=ROOT/'manuscript/unified_sections/finite_orbit_resonance.tex'
 
 def render() -> str:

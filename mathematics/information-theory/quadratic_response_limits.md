@@ -16,7 +16,7 @@ The identity P(Z)P(Z^(-1))=Q(Z)Q(Z^(-1)) gives equality of all ordinary two-poin
 
 where J is the vector of oriented Fourier-orbit sums. Therefore their entire bounded normalized resonance synthesis operators, and not just finitely many covariance matrices, agree.
 
-Their high-lag Gram tails are coercive. The seed a has a constant orbit filter on the orbit of z, which is different from the orbit of v because det(z,Az)=5 and det(v,Av)=1. The exact tail symbol from phase_regularized_resonance.md gives
+Their high-lag Gram tails are coercive. The seed a has a constant orbit filter on the orbit of z, which is different from the orbit of v because det(z,Az)=5 and det(v,Av)=1. The exact tail symbol from resonance-cohomology/phase_regularized_resonance.md gives
 
     F_a(theta)>=4 pi^2*25/(3^2-4)=20 pi^2.
 

@@ -2,7 +2,7 @@
 """Quantitative margin compiler for the radius-eight certificate (ND.10).
 
 Reconstructs the margin report for the constructive bound (ND.10) of
-mathematics/resonance_nondegeneracy_and_hessian.md section 3, whose original
+mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md section 3, whose original
 was not deposited. The compiler replays the deposited pruned proof stream
 (resonance_nondegeneracy_radius8.json) over the independently reconstructed
 coefficient system, mirroring the exact replay semantics of

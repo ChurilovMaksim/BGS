@@ -487,14 +487,14 @@
     {
       "id": "BGS-RES-014",
       "state": "conditional",
-      "source": "mathematics/resonance_riesz_regularization.md",
-      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Conditional on the four-atom gap separation lemma used by thm:two-variable-tail: the manuscript proof sketches it, and the fuller algebraic argument is recorded in mathematics/phase_regularized_resonance.md as a project proof; the 2026-10-20 review did not accept the manuscript sketch as a complete proof and did not recalculate the lemma in full. M_1(g)<infty; Riesz bounds are eventual (lags r>R), with limiting lower tail edge c_infty(g)=pi^2 min X_g min Y_g.",
+      "source": "mathematics/resonance-cohomology/resonance_riesz_regularization.md",
+      "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Conditional on the four-atom gap separation lemma used by thm:two-variable-tail: the manuscript proof sketches it, and the fuller algebraic argument is recorded in mathematics/resonance-cohomology/phase_regularized_resonance.md as a project proof; the 2026-10-20 review did not accept the manuscript sketch as a complete proof and did not recalculate the lemma in full. M_1(g)<infty; Riesz bounds are eventual (lags r>R), with limiting lower tail edge c_infty(g)=pi^2 min X_g min Y_g.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
     {
       "id": "BGS-RES-015",
       "state": "proved",
-      "source": "mathematics/two_window_resonance_crossover.md",
+      "source": "mathematics/resonance-cohomology/two_window_resonance_crossover.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Fixed q>=1, R>=2q and fixed nonzero v; constants depend only on A, v, q, R. Two-sided order estimate, not a claimed exact leading constant. Smallest eigenvalue of a classical observable Gram matrix, not the spectral edge of a quantum Hamiltonian or a BGS eigenphase statistic.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
@@ -515,21 +515,21 @@
     {
       "id": "BGS-RES-018",
       "state": "proved",
-      "source": "mathematics/entire_temporal_gauge.md",
+      "source": "mathematics/resonance-cohomology/entire_temporal_gauge.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. thm:infinite-orbit: nonzero observables with M_1(g)<infty supported on one signed orbit. All-pass classification: filters holomorphic on the punctured plane with real Laurent coefficients summable with every exponential weight. Preserved data are the complete zero-frequency hierarchy J(h_r) modulo actual smooth coboundaries, not all dynamical-frequency cross spectra; cubic moments can change.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
     {
       "id": "BGS-RES-019",
       "state": "proved",
-      "source": "mathematics/resonance_wiener_stability.md",
+      "source": "mathematics/resonance-cohomology/resonance_wiener_stability.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Explicit neighbourhood E<D of a nonconstant real trigonometric polynomial p, in the section's weighted-Wiener seminorms M_0, M_A (a first-moment topology, stronger than the l1 Wiener algebra; the index 0 refers to A^0). Uses the isolated finite-support witness u,v of lem:temporal-support from the temporal section. Does not prove positivity for every analytic or smooth observable.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
     {
       "id": "BGS-RES-020",
       "state": "proved",
-      "source": "mathematics/generic_wiener_resonance.md",
+      "source": "mathematics/resonance-cohomology/generic_wiener_resonance.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Weighted-Wiener Banach space X_A, every fixed analytic Wiener strip, every H^s(T^2) with s>2, and C^infty(T^2) with its Frechet topology, modulo constants. Does not prove that every nonconstant analytic observable is nondegenerate; that all-members question is BGS-RES-003 and remains open.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
@@ -543,7 +543,7 @@
     {
       "id": "BGS-RES-022",
       "state": "verification-pending",
-      "source": "mathematics/resonance_nondegeneracy_and_hessian.md",
+      "source": "mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Fixed Pell matrix and integer radius at most 8 only: the 288-real-dimensional space P_8, arbitrary signs and phases of Fourier coefficients; not extrapolated to all radii. Closure condition: an independent replay of the radius-eight certificate by the maintained validators, recorded as evidence, confirming all 5,704 deductions eliminate all 144 complex variables.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
@@ -564,7 +564,7 @@
     {
       "id": "BGS-RES-023",
       "state": "proved",
-      "source": "mathematics/resonance_nondegeneracy_and_hessian.md",
+      "source": "mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Fixed Pell matrix T and P_8 only. The explicit constant rests on the deposited radius-eight certificate (5,704 deductions; replay PASS) compiled by the quantitative rule printed in the section: the reconstructed integer B has 712 binary digits (215 decimal digits), hence B <= 2^714 and Gamma_T(g) >= (pi^2/41472) * 2^(-2B) * ||g||_2^4 implies the printed (ND.10). The author's original margin report remains undeposited and their generated integer (stated: 714 binary digits) is not reproduced; the deposited reconstruction is an independent exact-arithmetic implementation of the same printed rule whose smaller valid integer confirms the printed bound a fortiori. The constant is deliberately very poor and is not a crossover estimate; the qualitative compactness bound c_8 > 0 does not depend on it.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
@@ -1480,10 +1480,11 @@
         "evidence": [
           "archive/evidence/20260922/finite_orbit_exact.json",
           "archive/evidence/20260922/finite_orbit_cpp.json"
-        ]
+        ],
+        "source": "mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md"
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-Aplain.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 7): source mathematics/finite_orbit_resonance_rigidity.md to mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md (archive/MANIFEST-P2MATH7.md); no status, content, or other contract-field change.",
+      "review": "archive/MANIFEST-P2MATH7.md"
     },
     {
       "id": "BGS-RES-005",
@@ -1491,10 +1492,11 @@
       "fields": {
         "evidence": [
           "archive/evidence/20260923/frozen_full_lag_gap.json"
-        ]
+        ],
+        "source": "mathematics/resonance-cohomology/frozen_full_lag_resonance.md"
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-Aplain.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 7): source mathematics/frozen_full_lag_resonance.md to mathematics/resonance-cohomology/frozen_full_lag_resonance.md (archive/MANIFEST-P2MATH7.md); no status, content, or other contract-field change.",
+      "review": "archive/MANIFEST-P2MATH7.md"
     },
     {
       "id": "BGS-TRACE-009",
@@ -1593,6 +1595,24 @@
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
       "review": "archive/MANIFEST-Brest.md"
+    },
+    {
+      "id": "BGS-RES-001",
+      "historical_row_sha256": "cfb98698942a7fb3e60d595778c646d292fde6a35de2427c32eb56b0009c8ac8",
+      "fields": {
+        "source": "mathematics/resonance-cohomology/fourier_line_resonance_coercivity.md"
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of this claim's source from mathematics/fourier_line_resonance_coercivity.md to mathematics/resonance-cohomology/fourier_line_resonance_coercivity.md (P2-MATH wave 7); no status, content, or other contract-field change.",
+      "review": "archive/MANIFEST-P2MATH7.md"
+    },
+    {
+      "id": "BGS-RES-002",
+      "historical_row_sha256": "61fa140d852598eec623d75010c7539ef3feb611d607a82d930a64aa3408ea7d",
+      "fields": {
+        "source": "mathematics/resonance-cohomology/local_jet_resonance_obstruction.md"
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of this claim's source from mathematics/local_jet_resonance_obstruction.md to mathematics/resonance-cohomology/local_jet_resonance_obstruction.md (P2-MATH wave 7); no status, content, or other contract-field change.",
+      "review": "archive/MANIFEST-P2MATH7.md"
     }
   ]
 }
