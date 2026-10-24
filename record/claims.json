@@ -2971,16 +2971,16 @@
       "title": "All fixed conditional clock powers, full-depth measure and exact rank atom",
       "state": "conditional",
       "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; CONDITIONAL ON ALL-TIME FLATNESS; FINITE CONTROLS SEPARATE; SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED FROM VERIFIERS (CONTAINS NONE OF THIS CLAIM'S OBJECTS); CLAIM-SPECIFIC VERIFIERS RETAINED",
-      "source": "mathematics/delay_bootstrap_20261011.md",
+      "source": "mathematics/trace-bridge/delay_bootstrap.md",
       "dependencies": [],
       "external_dependencies": [
         "EXT-TROPP-2011"
       ],
       "proof_dependencies": [
-        "mathematics/all_moment_delay_bootstrap_20261011.md",
-        "mathematics/fourth_delay_law_20261011.md",
-        "mathematics/conditional_clock_universality_20261011.md",
-        "mathematics/full_depth_clock_measure_20261011.md"
+        "mathematics/trace-bridge/all_moment_delay_bootstrap.md",
+        "mathematics/trace-bridge/fourth_delay_law.md",
+        "mathematics/trace-bridge/conditional_clock_universality.md",
+        "mathematics/trace-bridge/full_depth_clock_measure.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261011/chat-research/README.md",
@@ -3100,17 +3100,17 @@
       "title": "Signed finite-field cycle and collision calculus",
       "state": "proved",
       "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
-      "source": "mathematics/coherence_form_factor_20261011.md",
+      "source": "mathematics/trace-bridge/coherence_form_factor.md",
       "dependencies": [],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/deterministic_ramp_20261011.md",
-        "mathematics/collision_resummation_20261011.md",
-        "mathematics/rank_defect_theorem_20261011.md",
-        "mathematics/active_intervals_20261011.md",
-        "mathematics/inactive_resummation_20261011.md",
-        "mathematics/orbit_reorganization_20261011.md",
-        "mathematics/occupation_rank_law_20261011.md"
+        "mathematics/trace-bridge/deterministic_ramp.md",
+        "mathematics/trace-bridge/collision_resummation.md",
+        "mathematics/trace-bridge/rank_defect_theorem.md",
+        "mathematics/trace-bridge/active_intervals.md",
+        "mathematics/trace-bridge/inactive_resummation.md",
+        "mathematics/trace-bridge/orbit_reorganization.md",
+        "mathematics/trace-bridge/occupation_rank_law.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261011/chat-research/README.md"
@@ -3315,7 +3315,7 @@
       "title": "Singular-spectrum censoring and stopped intensity/reversal gap propagation",
       "state": "conditional",
       "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; CONDITIONAL STOCHASTIC CONCLUSION; FINITE CONTROLS SEPARATE",
-      "source": "mathematics/schur_censoring_gap_20261011.md",
+      "source": "mathematics/trace-bridge/schur_censoring_gap.md",
       "dependencies": [
         "BGS-FM-021",
         "BGS-FM-022"
@@ -3323,7 +3323,7 @@
       "dependency_scope": "FM-021 and FM-022 supply only the actual-map initial intensity and reversal gaps. The universal censoring, coherent-noise and stopped Schatten-p gap theorems are self-contained.",
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/delay_bootstrap_20261011.md"
+        "mathematics/trace-bridge/delay_bootstrap.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261011/cavity-continuation/README.md",
@@ -3392,15 +3392,15 @@
       "title": "Exact Haar feedback delay law and unconditional entropy-stable full-depth clocks",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; CONDITIONAL CLOCK INPUT EXPLICIT; FINITE CONTROLS SEPARATE",
-      "source": "mathematics/haar_feedback_clock_law_20261012.md",
+      "source": "mathematics/trace-bridge/haar_feedback_clock_law.md",
       "dependencies": [
         "BGS-TRACE-060"
       ],
       "dependency_scope": "The finite Haar feedback/Cauchy/matrix-beta factorization, inverse-Jacobi eigenvalue law, finite-moment threshold, exact first moment and Haar flatness probability are self-contained. TRACE-060 with its full-depth reference measure is used only for the unconditional clock conclusions and entropy-stable extension.",
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/conditional_clock_universality_20261011.md",
-        "mathematics/full_depth_clock_measure_20261011.md"
+        "mathematics/trace-bridge/conditional_clock_universality.md",
+        "mathematics/trace-bridge/full_depth_clock_measure.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261012/haar-feedback/README.md"
@@ -3414,7 +3414,7 @@
       ],
       "boundary": "Independent Haar initial unitary, fresh independent feedback phases and uniform independent coordinate order, F_N(z)=zU_N and T_N=I. Exact S/T independence, matrix-beta graph law, inverse-Jacobi spectrum with the rectangular atom, and trace-moment threshold k<u+1 when q>0. Unconditional every-fixed-order full-depth clock conclusions extend to independent initial laws with relative entropy O(log N); o(log N) gives high-probability flatness for each fixed K>3, whereas O(log N) uses K after limsup and gives no such flatness conclusion for one prescribed finite K. A bounded-entropy prescribed-gap ensemble rules out the corresponding fixed-origin Sine2 implication. No deterministic-map transfer, origin-averaged counterexample, BGS, priority or analytic Lean claim.",
       "priority_status": "not-established",
-      "premise_discharge": "Premise discharge (recorded 2026-10-20): the all-time flatness premise A_m of BGS-TRACE-060 is discharged for the Haar initial class in mathematics/haar_feedback_clock_law_20261012.md, Section 4 ('All-time Haar flatness discharges the clock premise'): P(A_m(K)^c) <= N^3 (2N)^(-K(1-1/m)) -> 0 for fixed K>3 (eq. 14), and the conditional clock estimate is integrated over the Haar initial law (eq. 15). Section 5 extends the clock conclusions to relative-entropy classes D_N=O(log N) via eqs. (16)-(17); high-probability flatness holds for D_N=o(log N). Sections 1-3 of the source require no flatness premise."
+      "premise_discharge": "Premise discharge (recorded 2026-10-20): the all-time flatness premise A_m of BGS-TRACE-060 is discharged for the Haar initial class in mathematics/trace-bridge/haar_feedback_clock_law.md, Section 4 ('All-time Haar flatness discharges the clock premise'): P(A_m(K)^c) <= N^3 (2N)^(-K(1-1/m)) -> 0 for fixed K>3 (eq. 14), and the conditional clock estimate is integrated over the Haar initial law (eq. 15). Section 5 extends the clock conclusions to relative-entropy classes D_N=O(log N) via eqs. (16)-(17); high-probability flatness holds for D_N=o(log N). Sections 1-3 of the source require no flatness premise."
     },
     {
       "id": "BGS-TRACE-077",
@@ -3442,7 +3442,7 @@
       ],
       "boundary": "Fresh independent uniform feedback phases; port chosen before its phase using the past. Deterministic unitary initial conditions max P<=C0/N and ||P-J||<=1/5. Unconditional high-probability shrinking Green/singular norm only on the entry-stopped prefix, including its full first crossing. Third-step forcing bound only before that crossing. Does not estimate early entry survival, sustained two-step concentration, deterministic microscopic universality, TRACE-005 or BGS. Actual-map application uses eventual odd-N fixed-coupling FM-021; no effective startup or priority claim.",
       "priority_status": "not-established",
-      "premise_discharge": "Premise discharge (recorded 2026-10-20): no conditional conclusion of BGS-TRACE-073 is used. mathematics/green_compression_gap_20261013.md states: 'Dependencies: TRACE-073 C3--C6 only (fresh-phase noise and Schatten smoothness); ... No reversal conclusion from TRACE-073 is inherited.' (C3)-(C6) in mathematics/schur_censoring_gap_20261011.md are proved fresh-phase mean/fluctuation identities and a Schatten-smoothness bound; TRACE-073's CONDITIONAL state covers only its stopped-gap conclusion, and its deterministic singular-value contraction is stated unconditional under its displayed invertibility hypothesis."
+      "premise_discharge": "Premise discharge (recorded 2026-10-20): no conditional conclusion of BGS-TRACE-073 is used. mathematics/green_compression_gap_20261013.md states: 'Dependencies: TRACE-073 C3--C6 only (fresh-phase noise and Schatten smoothness); ... No reversal conclusion from TRACE-073 is inherited.' (C3)-(C6) in mathematics/trace-bridge/schur_censoring_gap.md are proved fresh-phase mean/fluctuation identities and a Schatten-smoothness bound; TRACE-073's CONDITIONAL state covers only its stopped-gap conclusion, and its deterministic singular-value contraction is stated unconditional under its displayed invertibility hypothesis."
     },
     {
       "id": "BGS-TRACE-078",
@@ -3498,7 +3498,7 @@
     {
       "id": "BGS-TRACE-080",
       "title": "Unconditional deterministic-start feedback flatness and fixed-order clock laws",
-      "source": "mathematics/unconditional_feedback_flatness_20261013.md",
+      "source": "mathematics/trace-bridge/unconditional_feedback_flatness.md",
       "dependencies": [
         "BGS-TRACE-077",
         "BGS-TRACE-079",
@@ -3509,8 +3509,8 @@
       ],
       "dependency_scope": "The abstract flatness proof uses TRACE-077 Green identities/smoothness and TRACE-079 diagonal one-step/scalar concentration inputs, rederiving row/column energy estimates. TRACE-060 and its reference measure are used only for cutoff-matched unconditional clock corollaries. TRACE-073 C9 and FM-022 are used only for the extra initial-reversal-norm corollary; FM-021 only for eventual actual-map startup. No reversal hypothesis is added to the abstract theorem or clocks.",
       "proof_dependencies": [
-        "mathematics/conditional_clock_universality_20261011.md",
-        "mathematics/full_depth_clock_measure_20261011.md"
+        "mathematics/trace-bridge/conditional_clock_universality.md",
+        "mathematics/trace-bridge/full_depth_clock_measure.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261013/global-feedback-flatness/README.md"
@@ -3527,7 +3527,7 @@
         "manuscript/unified_sections/chat_research_20261011.tex"
       ],
       "priority_status": "not-established",
-      "premise_discharge": "Premise discharge (recorded 2026-10-20): the main flatness theorem (F1) of mathematics/unconditional_feedback_flatness_20261013.md is unconditional under its explicit initial hypotheses and supplies the flatness event itself. Its Section 10 discharges BGS-TRACE-060's premise for the clock corollaries by P(clock error > eps_N) <= P(A_m^c) + P(A_m and {clock error > eps_N}) -> 0, using F1 with matched cutoff (kappa_clock=3+kappa, K=K0). Its Section 11 applies BGS-TRACE-073 (C9) only to the reversal corollary, whose extra hypothesis ||B_N||_op -> 0 is stated explicitly there and is supplied for the actual odd-N fixed-coupling family by BGS-FM-022; the text of (C9) in mathematics/schur_censoring_gap_20261011.md records the same FM-022 discharge."
+      "premise_discharge": "Premise discharge (recorded 2026-10-20): the main flatness theorem (F1) of mathematics/trace-bridge/unconditional_feedback_flatness.md is unconditional under its explicit initial hypotheses and supplies the flatness event itself. Its Section 10 discharges BGS-TRACE-060's premise for the clock corollaries by P(clock error > eps_N) <= P(A_m^c) + P(A_m and {clock error > eps_N}) -> 0, using F1 with matched cutoff (kappa_clock=3+kappa, K=K0). Its Section 11 applies BGS-TRACE-073 (C9) only to the reversal corollary, whose extra hypothesis ||B_N||_op -> 0 is stated explicitly there and is supplied for the actual odd-N fixed-coupling family by BGS-FM-022; the text of (C9) in mathematics/trace-bridge/schur_censoring_gap.md records the same FM-022 discharge."
     },
     {
       "id": "BGS-TRACE-081",
@@ -3633,7 +3633,7 @@
       "title": "Mesoscopic block number-variance criterion and collective trace-energy boundary",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
-      "source": "mathematics/resonant_mesoscopic_criterion_20261015.md",
+      "source": "mathematics/trace-bridge/resonant_mesoscopic_criterion.md",
       "dependencies": [
         "BGS-TRACE-009"
       ],
@@ -3655,7 +3655,7 @@
       "title": "Exact root lifting and failure of necessity for resonance-sector deletion",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
-      "source": "mathematics/root_lifting_sector_boundary_20261015.md",
+      "source": "mathematics/trace-bridge/root_lifting_sector_boundary.md",
       "dependencies": [
         "BGS-TRACE-001",
         "BGS-TRACE-002"
@@ -3680,7 +3680,7 @@
       "title": "All-order signed diagonal hierarchy implies local Sine2 and local moment UI",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
-      "source": "mathematics/all_order_process_closure_20261015.md",
+      "source": "mathematics/trace-bridge/all_order_process_closure.md",
       "dependencies": [
         "BGS-TRACE-001",
         "BGS-TRACE-002",
@@ -3727,7 +3727,7 @@
       "title": "All-positive-frequency CUE trace-square covariance and exact coupling derivative",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
-      "source": "mathematics/full_pair_cue_covariance_20261015.md",
+      "source": "mathematics/trace-bridge/full_pair_cue_covariance.md",
       "dependencies": [
         "BGS-TRACE-002"
       ],
@@ -3749,7 +3749,7 @@
       "title": "Exact parameter bandwidth and quantitative de-averaging to a fixed coupling",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
-      "source": "mathematics/parameter_deaveraging_20261015.md",
+      "source": "mathematics/trace-bridge/parameter_deaveraging.md",
       "dependencies": [
         "BGS-TRACE-086"
       ],
@@ -3773,7 +3773,7 @@
       "title": "Rooted BEST count, extensive equal-edge mass and unitary compensation",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
-      "source": "mathematics/equal_edge_occupation_20261015.md",
+      "source": "mathematics/trace-bridge/equal_edge_occupation.md",
       "dependencies": [
         "BGS-FM-021"
       ],
@@ -3795,7 +3795,7 @@
       "title": "Factorially weighted square-root-time equal-edge collision crossover",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
-      "source": "mathematics/collision_crossover_20261015.md",
+      "source": "mathematics/trace-bridge/collision_crossover.md",
       "dependencies": [
         "BGS-TRACE-088"
       ],
@@ -3819,7 +3819,7 @@
       "title": "Contractive full-spectrum radial ratios and mixed-moment weak-process criterion",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
-      "source": "mathematics/bounded_radial_ratios_20261015.md",
+      "source": "mathematics/trace-bridge/bounded_radial_ratios.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -3839,7 +3839,7 @@
       "title": "Sharp clock minimum and exact radial and Abel Hardy remainders",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
-      "source": "mathematics/hardy_spectral_remainder_20261015.md",
+      "source": "mathematics/trace-bridge/hardy_spectral_remainder.md",
       "dependencies": [
         "BGS-TRACE-007",
         "BGS-TRACE-090"
@@ -3862,7 +3862,7 @@
       "title": "Exact positive Abel decomposition and optimal square-root clock rigidity",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + COORDINATOR RECONSTRUCTION + INDEPENDENT INTERNAL REVIEW",
-      "source": "mathematics/abel_clock_rigidity_20261016.md",
+      "source": "mathematics/trace-bridge/abel_clock_rigidity.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -3886,7 +3886,7 @@
       "title": "Flat equal-edge Gaussian comparison, exact Heisenberg exponential rate and Wick collision mean",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + COORDINATOR RECONSTRUCTION + INDEPENDENT FINITE-TENSOR AUDIT",
-      "source": "mathematics/gaussian_equal_edge_20261016.md",
+      "source": "mathematics/trace-bridge/gaussian_equal_edge.md",
       "dependencies": [],
       "external_dependencies": [
         "EXT-KPSS-2002",
@@ -3914,7 +3914,7 @@
       "title": "Heisenberg Wick collision Poisson law, exact flat ratio and geometric vertex occupations",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION OF CORE; AUTHOR-REVIEWED COROLLARIES",
-      "source": "mathematics/wick_collision_poisson_20261016.md",
+      "source": "mathematics/trace-bridge/wick_collision_poisson.md",
       "dependencies": [
         "BGS-TRACE-093"
       ],

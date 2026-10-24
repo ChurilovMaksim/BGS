@@ -889,9 +889,9 @@
       "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
       "mapping": "Scalar maximal Freedman, Theorem 1.1, applied to both signs of each stopped diagonal martingale; predictable variation and bounded increments are verified before each crossing. No matrix Freedman or all-time flatness probability is used.",
       "project_sources": [
-        "mathematics/delay_bootstrap_20261011.md",
+        "mathematics/trace-bridge/delay_bootstrap.md",
         "literature/circular_phase_sources_20261011.md",
-        "mathematics/all_moment_delay_bootstrap_20261011.md"
+        "mathematics/trace-bridge/all_moment_delay_bootstrap.md"
       ],
       "source_url": "https://tropp.caltech.edu/papers/Tro11-Freedmans-Inequality.pdf"
     },
@@ -927,7 +927,7 @@
       "checked_on": "2026-10-16",
       "mapping": "The number of cycles of a fixed long cycle times a uniform perfect matching has the stated Harer-Zagier generating function. Extracting the coefficient of y gives one-cycle probability 1/(j+1) for even j, zero for odd j. The m=0 case is treated separately. This is a combinatorial input, not BGS.",
       "project_sources": [
-        "mathematics/collision_crossover_20261015.md",
+        "mathematics/trace-bridge/collision_crossover.md",
         "archive/literature/chat_integration_sources_20261016.md"
       ]
     },
@@ -946,7 +946,7 @@
       "checked_on": "2026-10-16",
       "mapping": "Classical unscaled complex-Gaussian trace second moment with factor 1/(m+1), stated there for N>m, and the known sinh BMN crossover. Project independently specializes the exact Ginibre kernel and extends its finite formula to m>=N; no claimed priority for the Gaussian crossover or any deterministic spectral theorem.",
       "project_sources": [
-        "mathematics/gaussian_equal_edge_20261016.md",
+        "mathematics/trace-bridge/gaussian_equal_edge.md",
         "literature/abel_gaussian_sources_20261016.md"
       ]
     },
@@ -963,7 +963,7 @@
       "checked_on": "2026-10-16",
       "mapping": "Standard complex Ginibre eigenvalue PDF normalization and determinantal kernel. Project supplies the monomial integration, Schur norm specialization, finite trace benchmark and subsequent Fock/Haar bounds; this external source does not establish the flat-sector comparison or physical BGS.",
       "project_sources": [
-        "mathematics/gaussian_equal_edge_20261016.md",
+        "mathematics/trace-bridge/gaussian_equal_edge.md",
         "literature/abel_gaussian_sources_20261016.md"
       ]
     },
@@ -980,7 +980,7 @@
       "checked_on": "2026-10-16",
       "mapping": "Exact balanced probability-Haar unitary integration. Source degree n=2k for fixed project derivative order k, source dimension d=N>=2k. Project derives the elementary fixed-degree Gram inverse remainder and separately bounds all contracted Gaussian tensors; no physical BGS or growing-order input.",
       "project_sources": [
-        "mathematics/wick_collision_poisson_20261016.md",
+        "mathematics/trace-bridge/wick_collision_poisson.md",
         "literature/wick_poisson_sources_20261016.md"
       ],
       "source_url": "https://arxiv.org/html/math-ph/0402073v1"

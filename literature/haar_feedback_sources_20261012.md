@@ -2,7 +2,7 @@
 
 Checked 12 October 2026 against the primary sources below. This note
 distinguishes prior mathematical objects from the self-contained proof of
-[TRACE-076](../mathematics/haar_feedback_clock_law_20261012.md).
+[TRACE-076](../mathematics/trace-bridge/haar_feedback_clock_law.md).
 No world-priority claim is established.
 
 | Primary source | Exact locator read | Relation to this result |

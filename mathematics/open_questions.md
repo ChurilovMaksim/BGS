@@ -47,13 +47,13 @@ The fixed-channel route retains its separate G/TC/R hypotheses.
 
 ## After the 16 October Abel/Gaussian continuation
 
-The [Abel theorem](abel_clock_rigidity_20261016.md) closes quantitative stability
+The [Abel theorem](trace-bridge/abel_clock_rigidity.md) closes quantitative stability
 of the clock floor, with optimal exponent 1/2; it does not estimate the physical
-excess. The [flat equal-edge theorem](gaussian_equal_edge_20261016.md) closes
+excess. The [flat equal-edge theorem](trace-bridge/gaussian_equal_edge.md) closes
 Gaussian relative comparison for every m=o(N), exact exponential growth at
 m/N->alpha, the first collision moment and negligible triples.
 
-The subsequent [TRACE-094 theorem](wick_collision_poisson_20261016.md) proves the
+The subsequent [TRACE-094 theorem](trace-bridge/wick_collision_poisson.md) proves the
 full flat Wick collision law Poisson(2alpha^2), the exact ratio exp(-alpha^2),
 and the formerly missing all-fixed-order derivative bound. These are analytic
 conclusions beyond the earlier first moment and C++ samples. Still open are
@@ -91,7 +91,7 @@ These obstructions change neither the TRACE-005 target nor the BGS status.
 
 ## Frontier after unconditional feedback control, 13 October 2026
 
-[TRACE-080](unconditional_feedback_flatness_20261013.md) closes the
+[TRACE-080](trace-bridge/unconditional_feedback_flatness.md) closes the
 entry-flatness probability for deterministic entry-flat, small-gap starts
 on u>=ceil(log(2N)^(4+kappa)). It also closes the corresponding fixed-order
 clock and weak-law applications; the extra reversal corollary retains its
@@ -116,7 +116,7 @@ the deterministic problem still needs complete signed TRACE-005 comparison
 and noise removal at the local-relaxation scale. The scalar cavity law is not
 supplied by the covariance, clock moment or source-continuation theorems.
 The repaired induction now proves every fixed clock order conditional on
-all-time entry flatness. [TRACE-076](haar_feedback_clock_law_20261012.md)
+all-time entry flatness. [TRACE-076](trace-bridge/haar_feedback_clock_law.md)
 now closes that probability premise for a Haar start and gives
 unconditional clock laws for independent initial distributions with
 relative entropy O(log N) relative to Haar. TRACE-080 now supplies the probability and fixed-order applications for
@@ -190,7 +190,7 @@ The submitted TRACE-055 m=ceil(log(2N)^20) physical hierarchy remains
 verification-pending. The 11 October results reconstruct source covariance,
 physical-source L2 continuation. The [cavity continuation](../archive/record/cavity_continuation_20261011.md)
 adds conditional all-fixed killed upper bounds and gap propagation. The
-[repaired fixed-order induction](conditional_clock_universality_20261011.md)
+[repaired fixed-order induction](trace-bridge/conditional_clock_universality.md)
 identifies every fixed clock power and its full-depth measure. TRACE-080
 now supplies the probability on its matching larger cutoff. Establish
 the remaining physical cavity hypotheses, identify the retained scalar

@@ -11,12 +11,12 @@
 [positive Cauchy-source boundary](../../cauchy_positive_source_boundary_20261019.md).
 All retain their auxiliary scope; fixed-model BGS remains open.
 
-- [Complete Heisenberg Wick collision law, exact flat ratio and geometric visits](../../wick_collision_poisson_20261016.md).
+- [Complete Heisenberg Wick collision law, exact flat ratio and geometric visits](../../trace-bridge/wick_collision_poisson.md).
 
 ## Checked Abel/Gaussian continuation, 16 October
 
-- [Exact Abel decomposition and optimal square-root clock rigidity](../../abel_clock_rigidity_20261016.md).
-- [All sublinear-time flat Gaussian comparison, Heisenberg rate and collision mean](../../gaussian_equal_edge_20261016.md).
+- [Exact Abel decomposition and optimal square-root clock rigidity](../../trace-bridge/abel_clock_rigidity.md).
+- [All sublinear-time flat Gaussian comparison, Heisenberg rate and collision mean](../../trace-bridge/gaussian_equal_edge.md).
 
 
 ## Reviewed 7 October phase checkpoint
@@ -34,14 +34,14 @@ Exact factorial partition identities connect local correlations to complete sign
 - **[Perfect-mixing spectral obstruction](../../flat_spectrum_obstruction_20261014.md)** — Simple spectrum and macroscopic uniformity do not identify the origin-averaged microscopic law.
 - **[Exact coherence memory](../../coherence_memory_plateau_20261014.md)** — Universal norm plateau through time N-1; observed signed cancellation remains separate.
 
-- **[Unconditional deterministic-start feedback](../../unconditional_feedback_flatness_20261013.md)** — Joint all-depth flatness and cutoff-matched clocks; deterministic microscopic universality remains open.
+- **[Unconditional deterministic-start feedback](../../trace-bridge/unconditional_feedback_flatness.md)** — Joint all-depth flatness and cutoff-matched clocks; deterministic microscopic universality remains open.
 - **[All-pair stopped concentration](../../two_step_stopped_concentration_20261013.md)** — Diagonal pairs, endpoint deactivation and full first crossings.
 
 - **[Complete two-step second moment](../../two_step_increment_variance_20261013.md)** — Uniform-port raw fluctuation bound for arbitrary phases, with frozen endpoints; no concentration claim.
 
 - **[Green compression and shrinking stopped gaps](../../green_compression_gap_20261013.md)** — Quantitative adapted-prefix theorem with a depth-decaying initial term; its broader startup-class survival is not supplied by that stopped theorem.
 
-- **[Exact Haar feedback and entropy-stable clocks](../../haar_feedback_clock_law_20261012.md)** — Exact scattering/delay joint law, inverse-Jacobi spectrum and unconditional full-depth clocks for independent initial laws with relative entropy O(log N); explicit fixed-origin microscopic limitation.
+- **[Exact Haar feedback and entropy-stable clocks](../../trace-bridge/haar_feedback_clock_law.md)** — Exact scattering/delay joint law, inverse-Jacobi spectrum and unconditional full-depth clocks for independent initial laws with relative entropy O(log N); explicit fixed-origin microscopic limitation.
 
 - **[Two-step restoring drift](../../two_step_restoring_drift_20261012.md)** — Exact fresh-phase average and a complete three-step path-swap bound; one-step mean restoration of the constructed peaks, without a trajectory probability theorem.
 - **[Unitary two-step obstruction](../../unitary_two_step_obstruction_20261012.md)** — Genuine unitary intensities with a logarithmic two-step peak despite flatness and a vanishing singular norm; precise higher-step and one-step variance companions.
@@ -143,12 +143,12 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 - [Arbitrary-source phase covariance](../../source_covariance_20261011.md) (BGS-TRACE-057).
 - [Integrable all-order phase absorption](../../integrable_phase_absorption_20261011.md) (BGS-TRACE-058).
 - [Anisotropic physical-source transport](../../physical_source_transport_20261011.md) (BGS-TRACE-059).
-- [Joint incoming and outgoing delay bootstrap](../../delay_bootstrap_20261011.md) (BGS-TRACE-060).
+- [Joint incoming and outgoing delay bootstrap](../../trace-bridge/delay_bootstrap.md) (BGS-TRACE-060).
 - [Finite frame identities, Stiefel threshold and clock-basis obstruction](../../trace-bridge/fresh_phase_average.md) (BGS-TRACE-061).
 - [Flat completion with arbitrary clock law](../../trace-bridge/flat_completion.md) (BGS-TRACE-062).
 - [Global noncommuting ordinary-body coercivity](../../nonlinear_coercivity_20261011.md) (BGS-TRACE-063).
 - [Sharp maximal-torus contraction for compact simple groups](../../trace-bridge/torus_contraction.md) (BGS-TRACE-064).
-- [Signed finite-field cycle and collision calculus](../../coherence_form_factor_20261011.md) (BGS-TRACE-065).
+- [Signed finite-field cycle and collision calculus](../../trace-bridge/coherence_form_factor.md) (BGS-TRACE-065).
 - [Birthday rank law and thinned collision limit](../../previous_rank_results_20261011.md) (BGS-TRACE-066).
 - [Sharp balanced Laurent Jack coefficient bound](../../jack_coefficient_theorem_20261011.md) (BGS-TRACE-067).
 - [Frozen circular phase laws in the three symmetry classes](../../trace-bridge/phase_contraction.md) (BGS-TRACE-068).
@@ -159,8 +159,8 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 
 ## Independently reviewed Schur continuation
 
-- [All fixed killed clock moments and uniform second/third equality laws](../../all_moment_delay_bootstrap_20261011.md) — Conditional all-time-flatness theorem at log^(1+kappa).
-- [Stochastic-complement singular spectrum and quantum gap](../../schur_censoring_gap_20261011.md) — Classical and arbitrary-complex-contraction singular bounds; conditional intensity/reversal gap propagation at log^(3+kappa).
+- [All fixed killed clock moments and uniform second/third equality laws](../../trace-bridge/all_moment_delay_bootstrap.md) — Conditional all-time-flatness theorem at log^(1+kappa).
+- [Stochastic-complement singular spectrum and quantum gap](../../trace-bridge/schur_censoring_gap.md) — Classical and arbitrary-complex-contraction singular bounds; conditional intensity/reversal gap propagation at log^(3+kappa).
 
 The [review record](../../../archive/record/cavity_continuation_20261011.md) preserves
 exact input lineage. Equality laws at every fixed order are accepted
@@ -170,24 +170,24 @@ The maintained deterministic startup's probability and cutoff-matched clock
 law are separately supplied by TRACE-080 at log^(4+kappa), under its stronger
 startup assumptions. Physical microscopic cavity identification remains open.
 
-- [Fourth delay law and diagonal-square concentration](../../fourth_delay_law_20261011.md) — Independently reconstructed conditional TRACE-060 extension.
+- [Fourth delay law and diagonal-square concentration](../../trace-bridge/fourth_delay_law.md) — Independently reconstructed conditional TRACE-060 extension.
 
-- [Every fixed clock power under entry flatness](../../conditional_clock_universality_20261011.md)
-- [Full-depth clock measure and exact rank atom](../../full_depth_clock_measure_20261011.md)
+- [Every fixed clock power under entry flatness](../../trace-bridge/conditional_clock_universality.md)
+- [Full-depth clock measure and exact rank atom](../../trace-bridge/full_depth_clock_measure.md)
 
 - [Observed first-return pulses and cyclic memory](../../coherent_first_return_pulse_20261014.md) — TRACE-083; individual coefficient and all-source energy-tail theorem for the abstract family.
 
 
 ## Checked 15 October research-record imports
 
-- [BGS-TRACE-084: resonant_mesoscopic_criterion_20261015](../../resonant_mesoscopic_criterion_20261015.md) — proved within the source boundary.
-- [BGS-TRACE-085: root_lifting_sector_boundary_20261015](../../root_lifting_sector_boundary_20261015.md) — proved within the source boundary.
-- [BGS-TRACE-086: all_order_process_closure_20261015](../../all_order_process_closure_20261015.md) — proved within the source boundary.
-- [BGS-CUE-002: full_pair_cue_covariance_20261015](../../full_pair_cue_covariance_20261015.md) — proved within the source boundary.
-- [BGS-TRACE-087: parameter_deaveraging_20261015](../../parameter_deaveraging_20261015.md) — proved within the source boundary.
-- [BGS-TRACE-088: equal_edge_occupation_20261015](../../equal_edge_occupation_20261015.md) — proved within the source boundary.
-- [BGS-TRACE-089: collision_crossover_20261015](../../collision_crossover_20261015.md) — proved within the source boundary.
-- [BGS-TRACE-090: bounded_radial_ratios_20261015](../../bounded_radial_ratios_20261015.md) — proved within the source boundary.
-- [BGS-TRACE-091: hardy_spectral_remainder_20261015](../../hardy_spectral_remainder_20261015.md) — proved within the source boundary.
+- [BGS-TRACE-084: resonant_mesoscopic_criterion_20261015](../../trace-bridge/resonant_mesoscopic_criterion.md) — proved within the source boundary.
+- [BGS-TRACE-085: root_lifting_sector_boundary_20261015](../../trace-bridge/root_lifting_sector_boundary.md) — proved within the source boundary.
+- [BGS-TRACE-086: all_order_process_closure_20261015](../../trace-bridge/all_order_process_closure.md) — proved within the source boundary.
+- [BGS-CUE-002: full_pair_cue_covariance_20261015](../../trace-bridge/full_pair_cue_covariance.md) — proved within the source boundary.
+- [BGS-TRACE-087: parameter_deaveraging_20261015](../../trace-bridge/parameter_deaveraging.md) — proved within the source boundary.
+- [BGS-TRACE-088: equal_edge_occupation_20261015](../../trace-bridge/equal_edge_occupation.md) — proved within the source boundary.
+- [BGS-TRACE-089: collision_crossover_20261015](../../trace-bridge/collision_crossover.md) — proved within the source boundary.
+- [BGS-TRACE-090: bounded_radial_ratios_20261015](../../trace-bridge/bounded_radial_ratios.md) — proved within the source boundary.
+- [BGS-TRACE-091: hardy_spectral_remainder_20261015](../../trace-bridge/hardy_spectral_remainder.md) — proved within the source boundary.
 
-- [Deleted-clock Hardy boundary](../../deleted_clock_hardy_boundary_20261015.md) — Strict finite excess can vanish at order 1/N.
+- [Deleted-clock Hardy boundary](../../trace-bridge/deleted_clock_hardy_boundary.md) — Strict finite excess can vanish at order 1/N.

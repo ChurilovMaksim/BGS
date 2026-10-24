@@ -327,7 +327,7 @@ mixing hypotheses, not the correctly delimited BGS conjecture.
 
 It meets the numerical startup assumptions \(C_0=1\) and
 \(\|P-J\|=0\) for the [maintained all-time fresh-phase
-feedback theorem](unconditional_feedback_flatness_20261013.md). Thus proving its random-feedback flatness
+feedback theorem](trace-bridge/unconditional_feedback_flatness.md). Thus proving its random-feedback flatness
 cannot by itself rule out the clustered initial microscopic law.
 Applying any downstream clock theorem also requires that theorem's
 precise process, clock, cutoff and independence assumptions.

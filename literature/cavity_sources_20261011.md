@@ -64,7 +64,7 @@ function including the zeroth moment. Table I, printed p. 21, includes
 Those formulas concern the ideal-coupling inverse-Wishart/Laguerre model,
 whose ensemble hypothesis is stated before (2). The number 22 and the
 candidate Schröder endpoint law are therefore prior reference objects.
-The [conditional fourth-delay theorem](../mathematics/fourth_delay_law_20261011.md)
+The [conditional fourth-delay theorem](../mathematics/trace-bridge/fourth_delay_law.md)
 does not import that ensemble hypothesis as a proved property of the
 deterministic starting unitary. Its random-Schur conclusion has its own
 proof. The source is credited for comparison, not registered as a new

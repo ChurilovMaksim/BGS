@@ -157,7 +157,7 @@ Neither result proves deterministic noise removal or BGS.
 1. Calling resonance-sector deletion (R) necessary for BGS is withdrawn.
    Root lifting preserves the complete origin-averaged local process while
    its positive collective trace energy can be concentrated on sparse times.
-   See `mathematics/root_lifting_sector_boundary_20261015.md`.
+   See `mathematics/trace-bridge/root_lifting_sector_boundary.md`.
 2. The Hardy identity requires the characteristic polynomial of a unitary,
    not just a self-inversive polynomial. The latter can have off-circle roots.
 3. A sampled Toeplitz matrix is a positive contraction by the discrete Fourier

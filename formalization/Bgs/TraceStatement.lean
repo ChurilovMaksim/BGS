@@ -37,7 +37,7 @@ is outside the complete sum; no absolute values are taken inside) and
 `e_k(T_{N,b})` is the exact finite-dimensional Haar `U(N)` (CUE) reference:
 the `k`-th elementary symmetric function of the eigenvalues of the Toeplitz
 matrix `T_{N,b}`.  By the repo's proved implication `BGS-TRACE-086`
-(`mathematics/all_order_process_closure_20261015.md`), this criterion implies
+(`mathematics/trace-bridge/all_order_process_closure.md`), this criterion implies
 the required local law `Ξ_{N,α} ⇒ Sine₂` of
 `record/remaining_breakthrough_task_20261021.md` §2; the Sine₂ convergence
 itself is not re-stated here (Mathlib has no determinantal point-process
@@ -64,7 +64,7 @@ API — see the design report).
   polynomial, `e_k(λ) = (-1)^k [X^{N-k}] χ_T(X)`, which for the Hermitian
   positive-semidefinite `T_{N,b}` is the elementary symmetric function of
   its eigenvalues with multiplicity — the repo's own finite CUE reference
-  (determinant identity (3) of `all_order_process_closure_20261015.md`).
+  (determinant identity (3) of `all_order_process_closure.md`).
 
 Sources for every object are tabulated in
 `phase6_trace_statement_design.md` (executor's report, outside the repo).
@@ -245,7 +245,7 @@ def trace005_statement : Prop :=
 /-! ## The first open test: `k = 2` with the specific test function `b_*`
 
 Canonical task text §5, and formula (9) of
-`mathematics/all_order_process_closure_20261015.md`. -/
+`mathematics/trace-bridge/all_order_process_closure.md`. -/
 
 /-- The bump `φ(ξ) = e^{-1/(1-ξ²)}` for `|ξ| < 1`, `0` otherwise. -/
 noncomputable def phiFun (ξ : ℝ) : ℝ :=

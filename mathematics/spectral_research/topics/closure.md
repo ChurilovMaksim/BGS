@@ -1,6 +1,6 @@
 # Criteria, stability and countermodels
 
-The all-order criterion and its process implication are different tasks. The existing [TRACE-086 proof](../../all_order_process_closure_20261015.md) closes the implication to Sine2 using finite inclusion–exclusion, the positive CUE determinant and Fourier smoothing. No independent local UI assumption is needed under every fixed order and every fixed bandwidth. The physical hierarchy itself remains open.
+The all-order criterion and its process implication are different tasks. The existing [TRACE-086 proof](../../trace-bridge/all_order_process_closure.md) closes the implication to Sine2 using finite inclusion–exclusion, the positive CUE determinant and Fourier smoothing. No independent local UI assumption is needed under every fixed order and every fixed bandwidth. The physical hierarchy itself remains open.
 
 The Round 13 countertest $K=M^*$ has maximally spread Weyl coefficients, exact twisted-convolution unitarity and globally uniform single-kick spectrum, yet $KM=I$. It refutes a norm/flatness-only inference for auxiliary kicks, not the prescribed physical family. Determinant countermodels, perturbation thresholds and exact signed identities below retain the same distinction. The [standalone task](../../../record/remaining_breakthrough_task_20261021.md) states the complete remaining estimate and the required negative plateau residual.
 

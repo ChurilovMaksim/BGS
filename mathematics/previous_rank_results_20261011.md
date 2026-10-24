@@ -249,7 +249,7 @@ The earlier word-symmetry count proves
 \le(2n-1)N^{1-n/2}=:\varepsilon_{n,N}.
 \]
 
-Its proof is in the preserved orbit_reorganization_20261011.md.
+Its proof is in the preserved orbit_reorganization.md.
 Since \(0\le|\mathcal D_nx|/(2n)\le1\), the supremum over sets of the
 difference between this weighted measure and the unweighted law is at
 most \(\varepsilon_{n,N}\). Hence the birthday rank law transfers to

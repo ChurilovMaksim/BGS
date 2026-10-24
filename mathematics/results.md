@@ -52,11 +52,11 @@ BGS-TRACE-005 and BGS-BGS-001 remain OPEN. Conditional G/TC/R premises remain ex
 
 ## Checked continuation, 16 October 2026
 
-- **BGS-TRACE-092:** [Positive Abel decomposition and optimal square-root clock rigidity](../mathematics/abel_clock_rigidity_20261016.md), including stationary processes and multiple eigenvalues.
-- **BGS-TRACE-093:** [Flat-sector Gaussian comparison for every m=o(N), exact Heisenberg exponential rate and collision mean](../mathematics/gaussian_equal_edge_20261016.md).
+- **BGS-TRACE-092:** [Positive Abel decomposition and optimal square-root clock rigidity](trace-bridge/abel_clock_rigidity.md), including stationary processes and multiple eigenvalues.
+- **BGS-TRACE-093:** [Flat-sector Gaussian comparison for every m=o(N), exact Heisenberg exponential rate and collision mean](trace-bridge/gaussian_equal_edge.md).
 
 The Gaussian benchmark and its sinh crossover are prior results. The subsequent
-[TRACE-094 proof](../mathematics/wick_collision_poisson_20261016.md) closes the flat
+[TRACE-094 proof](trace-bridge/wick_collision_poisson.md) closes the flat
 Heisenberg collision law and exact ratio B/G->exp(-alpha^2). It also gives
 geometric vertex occupations and a bounded radial-entry comparison. The
 physical non-flat extension and original signed BGS hierarchy remain open.
@@ -71,16 +71,16 @@ The actual signed hierarchy, physical parameter moment and positive Hardy
 excess limits remain unproved. Resonance deletion is sufficient only.
 
 - **BGS-FM-032** — [Prime cyclic cohomology and parity-resolved susceptibility](../mathematics/quantum_cyclic_cohomology_20261015.md); proved within its stated scope.
-- **BGS-TRACE-084** — [Mesoscopic block number-variance criterion and collective trace-energy boundary](../mathematics/resonant_mesoscopic_criterion_20261015.md); proved within its stated scope.
-- **BGS-TRACE-085** — [Exact root lifting and failure of necessity for resonance-sector deletion](../mathematics/root_lifting_sector_boundary_20261015.md); proved within its stated scope.
-- **BGS-TRACE-086** — [All-order signed diagonal hierarchy implies local Sine2 and local moment UI](../mathematics/all_order_process_closure_20261015.md); proved within its stated scope.
+- **BGS-TRACE-084** — [Mesoscopic block number-variance criterion and collective trace-energy boundary](trace-bridge/resonant_mesoscopic_criterion.md); proved within its stated scope.
+- **BGS-TRACE-085** — [Exact root lifting and failure of necessity for resonance-sector deletion](trace-bridge/root_lifting_sector_boundary.md); proved within its stated scope.
+- **BGS-TRACE-086** — [All-order signed diagonal hierarchy implies local Sine2 and local moment UI](trace-bridge/all_order_process_closure.md); proved within its stated scope.
 - **BGS-FM-033** — [All-label-scale one-step Weyl overlap and prime-orbit corollaries](../mathematics/scaled_weyl_overlap_20261015.md); conditional within its stated scope.
-- **BGS-CUE-002** — [All-positive-frequency CUE trace-square covariance and exact coupling derivative](../mathematics/full_pair_cue_covariance_20261015.md); proved within its stated scope.
-- **BGS-TRACE-087** — [Exact parameter bandwidth and quantitative de-averaging to a fixed coupling](../mathematics/parameter_deaveraging_20261015.md); proved within its stated scope.
-- **BGS-TRACE-088** — [Rooted BEST count, extensive equal-edge mass and unitary compensation](../mathematics/equal_edge_occupation_20261015.md); proved within its stated scope.
-- **BGS-TRACE-089** — [Factorially weighted square-root-time equal-edge collision crossover](../mathematics/collision_crossover_20261015.md); proved within its stated scope.
-- **BGS-TRACE-090** — [Contractive full-spectrum radial ratios and mixed-moment weak-process criterion](../mathematics/bounded_radial_ratios_20261015.md); proved within its stated scope.
-- **BGS-TRACE-091** — [Sharp clock minimum and exact radial and Abel Hardy remainders](../mathematics/hardy_spectral_remainder_20261015.md); proved within its stated scope.
+- **BGS-CUE-002** — [All-positive-frequency CUE trace-square covariance and exact coupling derivative](trace-bridge/full_pair_cue_covariance.md); proved within its stated scope.
+- **BGS-TRACE-087** — [Exact parameter bandwidth and quantitative de-averaging to a fixed coupling](trace-bridge/parameter_deaveraging.md); proved within its stated scope.
+- **BGS-TRACE-088** — [Rooted BEST count, extensive equal-edge mass and unitary compensation](trace-bridge/equal_edge_occupation.md); proved within its stated scope.
+- **BGS-TRACE-089** — [Factorially weighted square-root-time equal-edge collision crossover](trace-bridge/collision_crossover.md); proved within its stated scope.
+- **BGS-TRACE-090** — [Contractive full-spectrum radial ratios and mixed-moment weak-process criterion](trace-bridge/bounded_radial_ratios.md); proved within its stated scope.
+- **BGS-TRACE-091** — [Sharp clock minimum and exact radial and Abel Hardy remainders](trace-bridge/hardy_spectral_remainder.md); proved within its stated scope.
 
 
 [TRACE-083](coherent_first_return_pulse_20261014.md) evaluates
@@ -111,7 +111,7 @@ Here Q removes the diagonal part and the norm acts on Hilbert--Schmidt
 matrix space. A general early norm contraction cannot replace the missing
 source-specific signed cancellation. [Exact outcome](../archive/record/spectral_coherence_continuation_20261014.md).
 
-[TRACE-080](unconditional_feedback_flatness_20261013.md) now
+[TRACE-080](trace-bridge/unconditional_feedback_flatness.md) now
 proves unconditional entry flatness from any deterministic unitary startup
 with intensity bound C0/N and centered singular norm at most 1/100.
 Uniform ports and fresh uniform phases preserve flatness, a small intensity
@@ -142,7 +142,7 @@ The stopped theorem alone supplies no entry-survival probability;
 TRACE-080 closes it under its smaller startup-gap hypothesis.
 [Exact outcome](../archive/record/green_compression_continuation_20261013.md).
 
-[TRACE-076](haar_feedback_clock_law_20261012.md) supplies the exact Haar
+[TRACE-076](trace-bridge/haar_feedback_clock_law.md) supplies the exact Haar
 feedback scattering/delay joint law, inverse-Jacobi spectrum, finite
 moment threshold and exact first moment. Haar all-time flatness closes
 the conditional clock premise in that ensemble. The full-depth laws at
@@ -168,10 +168,10 @@ on their explicit startup/cutoff regime; a deterministic microscopic
 identification is still not obtained.
 
 The [reviewed Schur continuation](../archive/record/cavity_continuation_20261011.md)
-strengthens [TRACE-060](all_moment_delay_bootstrap_20261011.md) to all fixed
-killed clock upper bounds and [uniform equality laws at every fixed order](conditional_clock_universality_20261011.md)
-at the log^(1+kappa) cutoff. The [full-depth clock measure](full_depth_clock_measure_20261011.md)
-includes its exact reference atom, matched by a pathwise finite-rank lower bound. [TRACE-073](schur_censoring_gap_20261011.md) proves
+strengthens [TRACE-060](trace-bridge/all_moment_delay_bootstrap.md) to all fixed
+killed clock upper bounds and [uniform equality laws at every fixed order](trace-bridge/conditional_clock_universality.md)
+at the log^(1+kappa) cutoff. The [full-depth clock measure](trace-bridge/full_depth_clock_measure.md)
+includes its exact reference atom, matched by a pathwise finite-rank lower bound. [TRACE-073](trace-bridge/schur_censoring_gap.md) proves
 ordered classical/general-contraction singular-value bounds and conditional
 intensity/reversal gap propagation at log^(3+kappa). The maintained deterministic
 startup now receives the TRACE-080 probability and cutoff-matched
@@ -408,7 +408,7 @@ retain component provenance; current statements are the linked theorem owners.
 [TRACE-028](right_frame_unmasked_pinch_hierarchy.md) closes actual/annealed complete separated averages and the all-z unmasked convex hierarchy through a new centered S3 tail. [TRACE-029](convex_pinch_weak_noise_and_deconvolution.md) gives exact finite-N resummation bounds, bounded-u signed weak-noise stability and the sharp actual unsigned large-log deconvolution obstruction. Identity cancellation and all mask/extraction/zero-insertion limits remain explicit.
 
 
-[Deleted-clock Hardy boundary](deleted_clock_hardy_boundary_20261015.md): an exact positive excess of order 1/N can vanish despite bounded fixed traces.
+[Deleted-clock Hardy boundary](trace-bridge/deleted_clock_hardy_boundary.md): an exact positive excess of order 1/N can vanish despite bounded fixed traces.
 
 <!-- BEGIN GENERATED: registered family tables (render_status.py). Do not edit this section by hand. -->
 

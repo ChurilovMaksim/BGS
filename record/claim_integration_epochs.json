@@ -49,7 +49,7 @@
     {
       "id": "BGS-TRACE-060",
       "state": "conditional",
-      "source": "mathematics/delay_bootstrap_20261011.md",
+      "source": "mathematics/trace-bridge/delay_bootstrap.md",
       "disposition": "Independently reconstructed conditional all-fixed killed-moment bootstrap at log^(1+kappa) cutoff and separately reviewed uniform second/third equality extension; see record/cavity_continuation_20261011.md."
     },
     {
@@ -79,7 +79,7 @@
     {
       "id": "BGS-TRACE-065",
       "state": "proved",
-      "source": "mathematics/coherence_form_factor_20261011.md",
+      "source": "mathematics/trace-bridge/coherence_form_factor.md",
       "disposition": "11 October scoped integration; exact hypotheses and exclusions in record/chat_integration_20261011.md and the authoritative proof."
     },
     {
@@ -127,7 +127,7 @@
     {
       "id": "BGS-TRACE-073",
       "state": "conditional",
-      "source": "mathematics/schur_censoring_gap_20261011.md",
+      "source": "mathematics/trace-bridge/schur_censoring_gap.md",
       "disposition": "Independent reconstructions of centered stochastic and arbitrary complex-contraction singular-spectrum censoring, plus stopped intensity/reversal gap propagation. FM-021/022 provide initial actual-map leaves only; see both 11 October continuation records. Flatness probability remains open."
     },
     {
@@ -145,7 +145,7 @@
     {
       "id": "BGS-TRACE-076",
       "state": "proved",
-      "source": "mathematics/haar_feedback_clock_law_20261012.md",
+      "source": "mathematics/trace-bridge/haar_feedback_clock_law.md",
       "disposition": "Independent reconstruction and maintained-transfer audit of exact Haar feedback and entropy-stable clocks; deterministic flatness and BGS remain open."
     },
     {
@@ -169,7 +169,7 @@
     {
       "id": "BGS-TRACE-080",
       "state": "proved",
-      "source": "mathematics/unconditional_feedback_flatness_20261013.md",
+      "source": "mathematics/trace-bridge/unconditional_feedback_flatness.md",
       "disposition": "Any deterministic unitary initial family with max intensity<=C0/N and centered singular norm<=1/100, uniform retained ports and fresh independent uniform phases. Unconditional all-depth flatness, intensity gap, row/column fourth-power energies and two-step bound down to ceil(log(2N)^(4+kappa)); failure O(log(2N)^(-1-kappa)). Every fixed-order clock and uniform empirical weak law on that same cutoff are named-input consequences. Reversal convergence additionally assumes initial channel norm->0. Actual odd-N fixed-coupling inputs are eventual and have no effective startup. No smaller cutoff, growing orders, edge law, initial deterministic microscopic law, signed TRACE-005 or BGS conclusion."
     },
     {
@@ -193,7 +193,7 @@
     {
       "id": "BGS-CUE-002",
       "state": "proved",
-      "source": "mathematics/full_pair_cue_covariance_20261015.md",
+      "source": "mathematics/trace-bridge/full_pair_cue_covariance.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Exact deterministic derivative and CUE reference covariance. Proxy computations are diagnostics, not a physical limit or a p-value."
     },
     {
@@ -211,67 +211,67 @@
     {
       "id": "BGS-TRACE-084",
       "state": "proved",
-      "source": "mathematics/resonant_mesoscopic_criterion_20261015.md",
+      "source": "mathematics/trace-bridge/resonant_mesoscopic_criterion.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Sufficient selected-sector deletion criterion only; the sector need not vanish for a valid full signed local law."
     },
     {
       "id": "BGS-TRACE-085",
       "state": "proved",
-      "source": "mathematics/root_lifting_sector_boundary_20261015.md",
+      "source": "mathematics/trace-bridge/root_lifting_sector_boundary.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Abstract spectra, including deterministic existence via CUE local-average variance. Does not identify root labels or traces of the maintained propagator."
     },
     {
       "id": "BGS-TRACE-086",
       "state": "proved",
-      "source": "mathematics/all_order_process_closure_20261015.md",
+      "source": "mathematics/trace-bridge/all_order_process_closure.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. The implication is proved; H_diag and TRACE-005 for the frozen matrix remain open. Every fixed order and every compact bandwidth are required."
     },
     {
       "id": "BGS-TRACE-087",
       "state": "proved",
-      "source": "mathematics/parameter_deaveraging_20261015.md",
+      "source": "mathematics/trace-bridge/parameter_deaveraging.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Only the reduction is proved. The required physical parameter q-moment o(N^-2), or sixth moment O(N^-3), is unproved; Haar sixth moments cannot supply it."
     },
     {
       "id": "BGS-TRACE-088",
       "state": "proved",
-      "source": "mathematics/equal_edge_occupation_20261015.md",
+      "source": "mathematics/trace-bridge/equal_edge_occupation.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector."
     },
     {
       "id": "BGS-TRACE-089",
       "state": "proved",
-      "source": "mathematics/collision_crossover_20261015.md",
+      "source": "mathematics/trace-bridge/collision_crossover.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. m tends to infinity with m/sqrt(N) tending to a fixed finite c; not m of order N. Harer-Zagier is a classical external input."
     },
     {
       "id": "BGS-TRACE-090",
       "state": "proved",
-      "source": "mathematics/bounded_radial_ratios_20261015.md",
+      "source": "mathematics/trace-bridge/bounded_radial_ratios.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Any unitary spectrum. The mixed-moment convergence premise for the frozen model is open; weak convergence alone supplies no unbounded count UI. Discrete Toeplitz contraction requires grid M>=N."
     },
     {
       "id": "BGS-TRACE-091",
       "state": "proved",
-      "source": "mathematics/hardy_spectral_remainder_20261015.md",
+      "source": "mathematics/trace-bridge/hardy_spectral_remainder.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family."
     },
     {
       "id": "BGS-TRACE-092",
       "state": "proved",
-      "source": "mathematics/abel_clock_rigidity_20261016.md",
+      "source": "mathematics/trace-bridge/abel_clock_rigidity.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Every unitary spectrum, N>=1 including multiplicities; stationary intensity-one processes with finite displayed q-energy. Local bounded-Lipschitz Wasserstein bound C sqrt(Abel excess), with exponent optimal. No estimate of physical Abel excess, CUE convergence or all-order signed hierarchy."
     },
     {
       "id": "BGS-TRACE-093",
       "state": "proved",
-      "source": "mathematics/gaussian_equal_edge_20261016.md",
+      "source": "mathematics/trace-bridge/gaussian_equal_edge.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Exactly flat intensities only. B/G->1 for every m=o(N); for m/N->alpha>0 the log(B)/N rate equals (1+alpha)log(1+alpha)-alpha, E_W C_edge->2alpha^2 and triple edges vanish. The later BGS-TRACE-094 closes the exact flat limiting B/G and collision distribution; no non-flat physical or signed BGS extension. Classical Gaussian formula and sinh crossover credited to 2002 work."
     },
     {
       "id": "BGS-TRACE-094",
       "state": "proved",
-      "source": "mathematics/wick_collision_poisson_20261016.md",
+      "source": "mathematics/trace-bridge/wick_collision_poisson.md",
       "disposition": "Administrative reconciliation of already integrated 16/19 October research; no new proof certification. Exact positive flat Wick measure, each fixed order and m/N in a positive compact range. C_edge converges to Poisson(2alpha^2), B/G to exp(-alpha^2), collision locations to uniform Poisson measure; fixed distinct vertex occupations converge to independent geometric mean-alpha variables. Radial iid high-power trace corollary requires every even radial moment <=j!. No non-flat transfer, signed physical cancellation, BGS, growing-order or priority claim."
     },
     {

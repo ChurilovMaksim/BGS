@@ -107,9 +107,9 @@ $t=m/N$ is separate from the fixed kick strength in the deterministic model.
 |---|---|---|
 | [Signed phase cluster sums](mathematics/phase_ensemble_continuation_20261019.md) | Author proofs, registered verification pending: total-defect-two sum for $0<t<1$; arbitrary counts of clusters of individual defects at most two for $0<t<1/9$, with uniform $O(N^{-1})$ error | Higher connected types and frozen-model transfer |
 | [Positive Cauchy projections](mathematics/cauchy_positive_source_boundary_20261019.md) | Author proofs, registered verification pending: exact scalar laws and explicit separation of full matrix laws | Positive projections alone do not identify the spectral law |
-| [Abel clock rigidity](mathematics/abel_clock_rigidity_20261016.md), [flat collision law](mathematics/wick_collision_poisson_20261016.md) | Sharp square-root stability and auxiliary Wick ratio $B/G\to e^{-\alpha^2}$ | Physical non-flat signed comparison |
-| [All-order process implication](mathematics/all_order_process_closure_20261015.md) | Complete signed hierarchy implies local Sine2 and local moment control | The physical hierarchy remains open |
-| [Full-depth feedback](mathematics/unconditional_feedback_flatness_20261013.md) | Entry/intensity bounds and fixed-order clocks under named startup inputs and cutoff | Initial microscopic law and signed transfer |
+| [Abel clock rigidity](mathematics/trace-bridge/abel_clock_rigidity.md), [flat collision law](mathematics/trace-bridge/wick_collision_poisson.md) | Sharp square-root stability and auxiliary Wick ratio $B/G\to e^{-\alpha^2}$ | Physical non-flat signed comparison |
+| [All-order process implication](mathematics/trace-bridge/all_order_process_closure.md) | Complete signed hierarchy implies local Sine2 and local moment control | The physical hierarchy remains open |
+| [Full-depth feedback](mathematics/trace-bridge/unconditional_feedback_flatness.md) | Entry/intensity bounds and fixed-order clocks under named startup inputs and cutoff | Initial microscopic law and signed transfer |
 
 The rows distinguish proved project results from deposited author proofs whose
 registered verification is pending. Consult the [complete registry](record/claim_registry.md)

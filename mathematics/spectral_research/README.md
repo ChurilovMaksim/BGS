@@ -18,7 +18,7 @@ contains every definition needed without access to other files.
 | Weighted gradient and curvature | [TRACE-111](../pell_weighted_curvature_20261021.md) | Full Heisenberg-band sum at $t=0$, forced early inflection; value at fixed $\tau$ unknown |
 | Classical displacement and quantum window | [TRACE-112](../displacement_density_trace_bound_20261021.md) | Uniform all-iterate displacement density; short logarithmic-time normalized trace saving; independent global upper comparison |
 | Uniform power traces | [TRACE-113](../fixed_kick_uniform_trace_bound_20261021.md) | $|\operatorname{Tr}U_N^m|\le Ca^m$, one odd-$N$ threshold for all $m$, $1<a<\sqrt\lambda$; uninformative at Heisenberg times |
-| Hierarchy-to-process closure | [TRACE-086](../all_order_process_closure_20261015.md) | All-order $H_{\rm diag}$ implies local Sine2, without separate UI; physical hypothesis open |
+| Hierarchy-to-process closure | [TRACE-086](../trace-bridge/all_order_process_closure.md) | All-order $H_{\rm diag}$ implies local Sine2, without separate UI; physical hypothesis open |
 
 The central missing pair estimate is the full weighted trace comparison,
 including its plateau correction. After removing the rotational class of

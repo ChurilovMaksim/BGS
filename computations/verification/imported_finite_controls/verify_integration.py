@@ -75,7 +75,7 @@ def main():
     need(claims['BGS-BGS-001']['state']=='open' and claims['BGS-TRACE-005']['state']=='open',
          'Physical BGS target changed unexpectedly')
     added=[r['canonical_path'] for r in manifest['imported_sources']]
-    added+=['mathematics/deleted_clock_hardy_boundary_20261015.md',
+    added+=['mathematics/trace-bridge/deleted_clock_hardy_boundary.md',
             'archive/record/chat_integration_20261016.md','archive/literature/chat_integration_sources_20261016.md']
     badlinks=[]
     for rel in added:
