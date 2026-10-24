@@ -11,8 +11,70 @@ ROOT=Path(__file__).resolve().parents[2]
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
+def external_amendments(root):
+    """Load the reviewed external-epoch amendment store, or [] when absent.
+
+    The store is record/external_epoch_amendments.json, schema
+    bgs-external-epoch-amendment-v1, a JSON object with exactly the keys
+    'schema' and 'amendments' (a list of rows). Absence means the empty set:
+    that is fail-closed, not a bypass — a missing store can never admit a
+    change, it can only make an amended contract fail, because an amended
+    contract differs from its sealed row with no recorded amendment. A
+    present-but-malformed store fails loudly via strict_json/require below.
+    The committed live tree always carries the file (empty at landing).
+    """
+    path=root/'record/external_epoch_amendments.json'
+    if not path.is_file():
+        return []
+    try:
+        store=strict_json(path.read_bytes())
+    except Exception:
+        raise RuntimeError('malformed external epoch amendment store')
+    require(isinstance(store,dict) and set(store)=={'schema','amendments'} and
+            store['schema']=='bgs-external-epoch-amendment-v1' and
+            isinstance(store['amendments'],list),
+            'malformed external epoch amendment store')
+    return store['amendments']
+
 def check_external_epoch(root, epoch):
-    """Preserve the sealed 39-row leaf while admitting explicitly reviewed later sources."""
+    """Preserve the sealed 39-row leaf while admitting explicitly reviewed later sources.
+
+    Seal doctrine (governance extension of the claims channel): the seal
+    detects unrecorded change, it does not forbid legitimate succession.
+    A sealed contract passes iff it is byte-identical to the sealed record
+    (apart from the provenance-only metadata_audit pointer, checked
+    separately by bibliographic_metadata_audit.py) OR it differs only in
+    fields recorded in record/external_epoch_amendments.json, at exactly
+    the recorded values. Any other difference fails.
+
+    Amendment rows (one row per amended field; a contract with two amended
+    fields carries two rows) carry: id, field, old_value, new_value,
+    historical_contract_sha256 (canonical JSON of the sealed row, same
+    serializer as check_prior_claims), wave, disposition, review (a
+    manifest/review pointer, as in the claims channel). The checker is
+    fail-closed: a row for an unknown id (including any of the 18
+    admitted-later ids, which are not byte-sealed and need no channel),
+    a mismatched old value or contract hash, a vacuous amendment, a
+    duplicate (id, field) pair, an attempt to amend 'id' or
+    'metadata_audit', or any malformed row fails loudly, never silently.
+
+    The 18 admitted-later ids are NOT byte-compared here, by design of the
+    pre-existing seal: only their declared set is checked (declared ==
+    allowed, total id set == sealed + allowed). Their field values are
+    covered instead by scientific_registry_audit.py (require_path on every
+    project_sources entry) and by bibliographic_metadata_audit.py, which
+    compares title/authors/identifier/pinned_version/locator/mapping/
+    project_sources/additional_uses of every registry row against the
+    reviewed metadata cache (succession there follows the dated-snapshot
+    doctrine, e.g. the Pittel refresh). A wave that moves an admitted-later
+    row's project_sources therefore still needs the cache-refresh recipe;
+    it needs no row in this store. No hardcoded approved-id set is kept
+    for this channel (unlike the claims channel): the binding guarantees
+    the set provided there — sealed-leaf SHA pin, per-row contract SHA,
+    and old-value equality — are all present here, and keeping the code
+    free of a per-wave literal keeps the channel testable in scratch
+    roots without editing the checker itself.
+    """
     extension=epoch.get('external_dependency_extension',{})
     snapshot=safe_path(root,extension.get('historical_registry',''))
     require(snapshot.is_file() and
@@ -32,12 +94,44 @@ def check_external_epoch(root, epoch):
             'external extension requires explicit epoch review')
     require(len(active)==len(rows) and set(active)==set(old)|allowed,
             'duplicate or undeclared external dependency')
+    amended={}
+    for row in external_amendments(root):
+        require(isinstance(row,dict) and
+                set(row)=={'id','field','old_value','new_value',
+                          'historical_contract_sha256','wave','disposition','review'},
+                'malformed external epoch amendment')
+        identifier=row['id']
+        require(identifier in old,'unknown external amendment id: '+str(identifier))
+        sealed=old[identifier]
+        digest=hashlib.sha256(json.dumps(sealed,sort_keys=True,separators=(',',':'),
+                                         ensure_ascii=False).encode()).hexdigest()
+        require(row['historical_contract_sha256']==digest,
+                'external amendment provenance differs: '+identifier)
+        field=row['field']
+        require(isinstance(field,str) and field in sealed and
+                field not in ('id','metadata_audit'),
+                'invalid external amendment field: '+identifier)
+        require(sealed[field]==row['old_value'],
+                'external amendment old value differs: '+identifier)
+        require(row['new_value']!=row['old_value'],
+                'vacuous external amendment: '+identifier)
+        require(isinstance(row['wave'],str) and row['wave'] and
+                isinstance(row['disposition'],str) and row['disposition'] and
+                isinstance(row['review'],str) and row['review'],
+                'external amendment provenance differs: '+identifier)
+        require((identifier,field) not in amended,
+                'duplicate external amendment: '+identifier)
+        amended[(identifier,field)]=row['new_value']
     for identifier,row in old.items():
         # A later cache pointer is provenance, not a theorem-contract change.
         # bibliographic_metadata_audit.py independently checks the selected
         # cache and all load-bearing identity/mapping fields.
         contract=lambda entry:{k:v for k,v in entry.items() if k!='metadata_audit'}
-        require(contract(active[identifier])==contract(row),
+        expected=contract(row)
+        for (amended_id,field),new_value in amended.items():
+            if amended_id==identifier:
+                expected[field]=new_value
+        require(contract(active[identifier])==expected,
                 'historical external contract changed: '+identifier)
     return len(old),len(allowed)
 

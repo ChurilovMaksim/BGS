@@ -1,5 +1,14 @@
-"""Negative controls for historical external-leaf preservation."""
+"""Negative controls for historical external-leaf preservation.
+
+The sealed 39-row leaf admits reviewed succession only through
+record/external_epoch_amendments.json: a sealed contract passes iff it is
+byte-identical to the sealed record (apart from the provenance-only
+metadata_audit pointer) or differs only in recorded fields at exactly the
+recorded values. Scratch amendments below live only in temporary roots;
+the committed store stays empty until a wave lands its own rows.
+"""
 import copy
+import hashlib
 import json
 from pathlib import Path
 import sys
@@ -21,10 +30,39 @@ class ExternalEpochPreservation(unittest.TestCase):
         (root/'literature').mkdir()
         registry=json.loads((ROOT/'literature/external_dependencies.json').read_text())
         self.save(root,registry)
+        (root/'record').mkdir(exist_ok=True)
+        store=ROOT/'record/external_epoch_amendments.json'
+        if store.is_file():
+            (root/'record/external_epoch_amendments.json').write_bytes(store.read_bytes())
         return epoch,registry,destination
 
     def save(self,root,registry):
         (root/'literature/external_dependencies.json').write_text(json.dumps(registry))
+
+    def save_store(self,root,rows):
+        (root/'record/external_epoch_amendments.json').write_text(json.dumps(
+            {'schema':'bgs-external-epoch-amendment-v1','amendments':rows}))
+
+    def sealed_row(self,root):
+        snapshot=json.loads((root/'archive/evidence/executions/20261011/chat-research/baselines/external_dependencies_20261007.json').read_text())
+        return next(row for row in snapshot['dependencies'] if row['id']=='EXT-SOSH-2000')
+
+    def amendment(self,sealed,field,new_value,**overrides):
+        row={'id':'EXT-SOSH-2000','field':field,'old_value':sealed[field],
+             'new_value':new_value,
+             'historical_contract_sha256':hashlib.sha256(json.dumps(
+                 sealed,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest(),
+             'wave':'scratch control (never committed)',
+             'disposition':'Temporary control row only.',
+             'review':'scratch'}
+        row.update(overrides)
+        return row
+
+    def relocated_registry(self,registry,field,new_value):
+        for row in registry['dependencies']:
+            if row['id']=='EXT-SOSH-2000':
+                row[field]=new_value
+        return registry
 
     def test_current_epoch_preserves_39_contracts(self):
         epoch=json.loads((ROOT/'record/claim_integration_epochs.json').read_text())
@@ -73,6 +111,94 @@ class ExternalEpochPreservation(unittest.TestCase):
             root=Path(temporary);epoch,_,_=self.fixture(root)
             epoch['external_dependency_extension']['added_ids'].append('EXT-UNREVIEWED')
             with self.assertRaisesRegex(RuntimeError,'explicit epoch review'):
+                check_external_epoch(root,epoch)
+
+    def test_reviewed_amendment_admitted_at_exact_value(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root=Path(temporary);epoch,registry,_=self.fixture(root)
+            sealed=self.sealed_row(root)
+            new=[path.replace('mathematics/return_trace_obstruction.md',
+                              'mathematics/returns/return_trace_obstruction.md')
+                 for path in sealed['project_sources']]
+            self.save_store(root,[self.amendment(sealed,'project_sources',new)])
+            self.save(root,self.relocated_registry(registry,'project_sources',new))
+            self.assertEqual(check_external_epoch(root,epoch),(39,18))
+
+    def test_tampered_amended_value_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root=Path(temporary);epoch,registry,_=self.fixture(root)
+            sealed=self.sealed_row(root)
+            new=[path.replace('mathematics/return_trace_obstruction.md',
+                              'mathematics/returns/return_trace_obstruction.md')
+                 for path in sealed['project_sources']]
+            self.save_store(root,[self.amendment(sealed,'project_sources',new)])
+            tampered=list(new);tampered[-1]='mathematics/returns/elsewhere.md'
+            self.save(root,self.relocated_registry(registry,'project_sources',tampered))
+            with self.assertRaisesRegex(RuntimeError,'historical external contract changed'):
+                check_external_epoch(root,epoch)
+
+    def test_tamper_outside_amended_field_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root=Path(temporary);epoch,registry,_=self.fixture(root)
+            sealed=self.sealed_row(root)
+            new=[path.replace('mathematics/return_trace_obstruction.md',
+                              'mathematics/returns/return_trace_obstruction.md')
+                 for path in sealed['project_sources']]
+            self.save_store(root,[self.amendment(sealed,'project_sources',new)])
+            registry=self.relocated_registry(registry,'project_sources',new)
+            for row in registry['dependencies']:
+                if row['id']=='EXT-SOSH-2000':
+                    row['locator']='tampered locator'
+            self.save(root,registry)
+            with self.assertRaisesRegex(RuntimeError,'historical external contract changed'):
+                check_external_epoch(root,epoch)
+
+    def test_unknown_and_admitted_later_amendment_ids_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root=Path(temporary);epoch,_,_=self.fixture(root)
+            sealed=self.sealed_row(root)
+            for identifier in ('EXT-UNREVIEWED','EXT-BR-1975'):
+                row=self.amendment(sealed,'project_sources',sealed['project_sources'])
+                row['id']=identifier
+                self.save_store(root,[row])
+                with self.assertRaisesRegex(RuntimeError,'unknown external amendment id'):
+                    check_external_epoch(root,epoch)
+
+    def test_amendment_old_value_and_provenance_mismatch_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root=Path(temporary);epoch,_,_=self.fixture(root)
+            sealed=self.sealed_row(root)
+            new=list(sealed['project_sources'])
+            self.save_store(root,[self.amendment(sealed,'project_sources',new,
+                                                 old_value=['wrong old value'])])
+            with self.assertRaisesRegex(RuntimeError,'old value differs'):
+                check_external_epoch(root,epoch)
+            self.save_store(root,[self.amendment(sealed,'project_sources',new,
+                                                 historical_contract_sha256='0'*64)])
+            with self.assertRaisesRegex(RuntimeError,'provenance differs'):
+                check_external_epoch(root,epoch)
+
+    def test_malformed_amendments_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root=Path(temporary);epoch,_,_=self.fixture(root)
+            sealed=self.sealed_row(root)
+            new=[path.replace('mathematics/return_trace_obstruction.md',
+                              'mathematics/returns/return_trace_obstruction.md')
+                 for path in sealed['project_sources']]
+            good=self.amendment(sealed,'project_sources',new)
+            malformed=[{key:value for key,value in good.items() if key!='review'},
+                       self.amendment(sealed,'metadata_audit','pointer'),
+                       self.amendment(sealed,'id','EXT-OTHER'),
+                       self.amendment(sealed,'project_sources',sealed['project_sources'])]
+            for row in malformed:
+                self.save_store(root,[row])
+                with self.assertRaisesRegex(RuntimeError,'malformed|invalid|vacuous'):
+                    check_external_epoch(root,epoch)
+            self.save_store(root,[good,good])
+            with self.assertRaisesRegex(RuntimeError,'duplicate external amendment'):
+                check_external_epoch(root,epoch)
+            (root/'record/external_epoch_amendments.json').write_text('{not json')
+            with self.assertRaisesRegex(RuntimeError,'.'):
                 check_external_epoch(root,epoch)
 
 
