@@ -17,8 +17,8 @@ TRACE-113. Analytic project proofs close the earlier TRACE-109/110 input
 qualifications; TRACE-112 supplies an independent displacement-density route,
 and TRACE-113 supplies the uniform power-trace input. Global matching has
 order $1/\log N$, including a Pell lower order. Microscopic BGS remains open.
-[Trace closure review](record/trace_closure_20261022.md) and
-[source integration](record/spectral_final_integration_20261021.md).
+[Trace closure review](record/spectral_research/trace_closure.md) and
+[source integration](record/spectral_research/spectral_final_integration.md).
 
 ## 2026-10-20 — repository reconciliation
 

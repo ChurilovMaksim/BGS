@@ -209,5 +209,5 @@ are not asserted orthogonal, and no operator-norm lower bound is inferred.
 The Taylor/Bessel estimates, pair error and CRT threshold were derived
 in the imported Round 12 notes and checked directly here. The extension
 (5) is an additional argument from this review. The source history and
-actual finite execution scope are in the [audit](../record/spectral_master_audit_20261021.md).
+actual finite execution scope are in the [audit](../record/spectral_research/spectral_master_audit.md).
 The BGS and signed Heisenberg-scale claims remain open.

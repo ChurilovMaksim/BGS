@@ -6,6 +6,9 @@ authenticated Git tree (list of path/type/sha records) for a partial overlay;
 this checks target existence against that tree, not unavailable file contents.
 Math semantics, external URLs and arbitrary historical heading anchors are
 outside this check. Source/math/build review coverage is recorded separately.
+Registered succession: a markdown link whose target no longer exists still
+passes iff archive/MANIFEST-P2SPECTRAL.md records it as succeeded by an
+existing path; anything else fails exactly as before.
 """
 import argparse
 import ast
@@ -34,6 +37,61 @@ def plain_markdown(s):
     return re.sub(r'`+[^`\n]*`+|\$\$[\s\S]*?\$\$|(?<!\\)\$(?!\$)[\s\S]*?(?<!\\)\$',
                   lambda m:'\n'*m[0].count('\n'),s)
 
+
+def load_succession(path):
+    """Read the succession table from a package manifest.
+
+    Only the section headed '## Succession table' is read, and only its
+    table rows. Returns (mapping, errors); any malformed row voids the
+    whole mapping (fail-closed) and is reported as an error. A missing
+    manifest yields an empty mapping with no error, so trees predating
+    the manifest behave exactly as before.
+    """
+    if not path.exists():
+        return {}, []
+    lines = path.read_text().splitlines()
+    in_section = False
+    table = {}
+    errors = []
+    for line in lines:
+        if line.startswith('#'):
+            if in_section:
+                break
+            if line.startswith('## ') and 'Succession table' in line:
+                in_section = True
+            continue
+        if not in_section:
+            continue
+        s = line.strip()
+        if not s:
+            continue
+        if not s.startswith('|'):
+            errors.append('non-table line in succession section: ' + s[:80])
+            continue
+        cells = [c.strip() for c in s.strip('|').split('|')]
+        if cells and cells[0] == 'Old path':
+            continue
+        if cells and all(set(c) <= set('-: ') for c in cells):
+            continue
+        if len(cells) != 2 or not cells[0] or not cells[1]:
+            errors.append('malformed succession row: ' + s[:80])
+            continue
+        old, new = cells
+        bad = (old == new or old.startswith('/') or new.startswith('/')
+               or '..' in old.split('/') or '..' in new.split('/')
+               or ' ' in old or ' ' in new
+               or re.match(r'^[A-Za-z]+:', old) or re.match(r'^[A-Za-z]+:', new))
+        if bad:
+            errors.append('invalid succession row: ' + s[:80])
+            continue
+        if old in table and table[old] != new:
+            errors.append('conflicting succession rows for: ' + old)
+            continue
+        table[old] = new
+    if errors:
+        return {}, errors
+    return table, []
+
 def main():
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--known-tree',type=Path)
     args=ap.parse_args();known=set()
@@ -43,6 +101,8 @@ def main():
     known|={p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file()}
     c=json.loads((ROOT/'record/spectral_research/catalog.json').read_text());raw=reconstruct(c)
     failures=[];files=[];py=0;js=0;links=0
+    succession, succession_errors = load_succession(ROOT/'archive/MANIFEST-P2SPECTRAL.md')
+    failures += [['succession manifest malformed', e] for e in succession_errors]
     for e in c['entries']:
         p=ROOT/e['target'];expected=projection(e,raw,c['entries'])
         if not p.exists() or p.read_bytes()!=expected:failures.append(['source projection',e['target']])
@@ -55,7 +115,7 @@ def main():
     markdown+=list((ROOT/'mathematics/spectral_research/topics').glob('*.md'))
     markdown+=[ROOT/'mathematics/spectral_research/README.md',ROOT/'record/spectral_research/review_matrix.md']
     markdown += [ROOT/'mathematics'/s for s in maintained]
-    markdown += [ROOT/'record'/s for s in ['spectral_final_integration_20261021.md','remaining_breakthrough_task_20261021.md','trace_closure_20261022.md']]
+    markdown += [ROOT/'record/spectral_research/spectral_final_integration.md', ROOT/'record/remaining_breakthrough_task_20261021.md', ROOT/'record/spectral_research/trace_closure.md']
     markdown += [ROOT/'evidence/executions/20261021/spectral-final/README.md',
                  ROOT/'computations/reference/spectral_research/README.md']
     markdown += [ROOT/'literature/bowen_ruelle_trace_closure_20261021.md',
@@ -66,7 +126,10 @@ def main():
             t=m[1]
             if re.match(r'^[A-Za-z]+:',t) or t.startswith('#'):continue
             target=posixpath.normpath(posixpath.join(posixpath.dirname(rel),t.split('#')[0]));links+=1
-            if target not in known and not any(x.startswith(target.rstrip('/')+'/') for x in known):
+            successor = succession.get(target)
+            link_ok = (target in known or any(x.startswith(target.rstrip('/')+'/') for x in known)
+                       or (successor is not None and (successor in known or any(x.startswith(successor.rstrip('/')+'/') for x in known))))
+            if not link_ok:
                 failures.append(['link target',rel,t])
     for p in list((ROOT/'computations/reference/spectral_research').rglob('*.py'))+[
         ROOT/'computations/maintenance'/s for s in ['rebuild_spectral_corpus.py','render_spectral_research.py']]+[

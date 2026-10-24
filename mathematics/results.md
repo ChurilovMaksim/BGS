@@ -2,7 +2,7 @@
 
 ## Trace results and dependency closure, 22 October 2026
 
-The [review](../record/trace_closure_20261022.md) closes the inserted-trace input in TRACE-109 by a
+The [review](../record/spectral_research/trace_closure.md) closes the inserted-trace input in TRACE-109 by a
 finite-grid corrected-amplitude proof. TRACE-110 now has proved global
 $O(1/\log N)$ spectral matching and a matching Pell lower order.
 [TRACE-112](displacement_density_trace_bound_20261021.md) supplies an
@@ -21,7 +21,7 @@ sums the initial gradient/Hessian and proves an early inflection.
 [TRACE-109](inserted_trace_coboundary_20261021.md) and
 [TRACE-110](spectral_orbit_distance_20261021.md) now include proved global asymptotic applications; their
 21 October input qualifications were closed on 22 October. The fixed-coupling signed
-Heisenberg hierarchy remains open. [Review](../record/spectral_final_integration_20261021.md).
+Heisenberg hierarchy remains open. [Review](../record/spectral_research/spectral_final_integration.md).
 
 ## Physical-kick bounds, 21 October 2026
 
@@ -29,7 +29,7 @@ Heisenberg hierarchy remains open. [Review](../record/spectral_final_integration
 (TRACE-106) and [all-order polynomial approximation with Pell alias limits](physical_trace_polynomial_approximation.md)
 (TRACE-107) are now recorded with full proofs. The imported exponent 1/25 is
 strengthened to 1/9 for the single kick. The original microscopic trace hierarchy
-remains open. [Review scope](../record/spectral_master_audit_20261021.md).
+remains open. [Review scope](../record/spectral_research/spectral_master_audit.md).
 
 
 This file is a narrative index of theorem families and their limits,

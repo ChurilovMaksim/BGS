@@ -6,7 +6,7 @@ dependency checks and explicit execution limits.
 
 ## Trace results and dependency closure, 22 October 2026
 
-The [review](trace_closure_20261022.md) closes the inserted-trace input in TRACE-109 by a
+The [review](spectral_research/trace_closure.md) closes the inserted-trace input in TRACE-109 by a
 finite-grid corrected-amplitude proof. TRACE-110 now has proved global
 $O(1/\log N)$ spectral matching and a matching Pell lower order.
 [TRACE-112](../mathematics/displacement_density_trace_bound_20261021.md) supplies an
@@ -18,7 +18,7 @@ refereeing. Microscopic signed cancellation and BGS remain open.
 
 ## Final spectral source edition
 
-[Integration, mathematical review and corrections](spectral_final_integration_20261021.md),
+[Integration, mathematical review and corrections](spectral_research/spectral_final_integration.md),
 [complete catalog](spectral_research/catalog.json),
 [per-proof review matrix](spectral_research/review_matrix.md),
 [section-level inventories](spectral_research/sections/README.md), and
@@ -28,7 +28,7 @@ is organized by topic; the original source archive is a provenance backup.
 
 ## External spectral snapshot, 21 October 2026
 
-[Bounded proof audit, strengthened results and remaining review queue](spectral_master_audit_20261021.md).
+[Bounded proof audit, strengthened results and remaining review queue](spectral_research/spectral_master_audit.md).
 
 This directory records theorem status, dependency structure, corrections and
 actual review coverage. It is the provenance layer of the scientific corpus;

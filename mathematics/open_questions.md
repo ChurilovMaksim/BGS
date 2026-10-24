@@ -9,7 +9,7 @@ After rotational-path removal the signed remainder must produce a nonzero
 negative plateau correction. TRACE-108's one-step quartic term and TRACE-111's
 initial curvature/early inflection do not evaluate that remainder.
 The TRACE-109/110 input qualifications are closed by the
-[22 October review](../record/trace_closure_20261022.md). TRACE-112/113 control
+[22 October review](../record/spectral_research/trace_closure.md). TRACE-112/113 control
 short logarithmic windows or global spectral distance, not this signed
 Heisenberg-scale remainder.
 

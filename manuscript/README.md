@@ -8,7 +8,7 @@ build has **324 pages**, no unresolved references or citations, and no
 horizontal overflow. The new section's three pages were visually inspected;
 two inherited long-path overflows were corrected by typesetting alone.
 [Build receipt](../evidence/executions/20261022/trace-closure/manuscript_build.json)
-and [scientific review](../record/trace_closure_20261022.md).
+and [scientific review](../record/spectral_research/trace_closure.md).
 Earlier build counts and warnings below refer to their dated revisions.
 The microscopic signed hierarchy and BGS remain open.
 
@@ -22,7 +22,7 @@ and no overflow in the new section. Three new-section pages were inspected.
 Two inherited long-path overflows remain in older sections and are recorded
 in the [build receipt](../evidence/executions/20261021/spectral-final/manuscript_build.json).
 The [thematic proof edition](../mathematics/spectral_research/README.md)
-and [integration review](../record/spectral_final_integration_20261021.md)
+and [integration review](../record/spectral_research/spectral_final_integration.md)
 control mathematical status. Earlier dated build claims below refer to their
 original source revisions.
 

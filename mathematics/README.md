@@ -2,7 +2,7 @@
 
 ## Trace results and dependency closure, 22 October 2026
 
-The [review](../record/trace_closure_20261022.md) closes the inserted-trace input in TRACE-109 by a
+The [review](../record/spectral_research/trace_closure.md) closes the inserted-trace input in TRACE-109 by a
 finite-grid corrected-amplitude proof. TRACE-110 now has proved global
 $O(1/\log N)$ spectral matching and a matching Pell lower order.
 [TRACE-112](displacement_density_trace_bound_20261021.md) supplies an
@@ -17,7 +17,7 @@ refereeing. Microscopic signed cancellation and BGS remain open.
 [Fourteen-round thematic edition](spectral_research/README.md): individual
 proofs, countertests, failed routes, reference code and exact source catalog.
 The first maintained statements were TRACE-108--111. The 22 October
-continuation closes the TRACE-109/110 inputs and adds TRACE-112/113. [Actual review scope](../record/spectral_final_integration_20261021.md).
+continuation closes the TRACE-109/110 inputs and adds TRACE-112/113. [Actual review scope](../record/spectral_research/spectral_final_integration.md).
 
 ## Physical-kick bounds, 21 October 2026
 
@@ -25,7 +25,7 @@ continuation closes the TRACE-109/110 inputs and adds TRACE-112/113. [Actual rev
 (TRACE-106) and [all-order polynomial approximation with Pell alias limits](physical_trace_polynomial_approximation.md)
 (TRACE-107) are now recorded with full proofs. The imported exponent 1/25 is
 strengthened to 1/9 for the single kick. The original microscopic trace hierarchy
-remains open. [Review scope](../record/spectral_master_audit_20261021.md).
+remains open. [Review scope](../record/spectral_research/spectral_master_audit.md).
 
 
 ## Circular-phase research, 19 October

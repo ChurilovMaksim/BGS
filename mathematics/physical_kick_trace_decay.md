@@ -375,7 +375,7 @@ superseded here only quantitatively. Equations (7)--(9) and the use of a
 positive square in (16) are the strengthening reconstructed in this review.
 All estimates are derived here, with no new external theorem dependency.
 
-[Review and source hashes](../record/spectral_master_audit_20261021.md) record
+[Review and source hashes](../record/spectral_research/spectral_master_audit.md) record
 the exact imported version, finite checks and the unreviewed historical scope.
 The [finite verifier](../computations/verification/physical_kick_trace_checks.py)
 checks coefficients, alias-sensitive Weyl identities and exponent arithmetic;

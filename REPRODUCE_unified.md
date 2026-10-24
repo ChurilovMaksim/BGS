@@ -20,7 +20,7 @@ Reproduce the bounded historical checks with
 (numpy and mpmath required). The independent finite Hessian comparison is
 `python3 -O computations/verification/weighted_trace_hessian_checks.py`.
 [Exact contexts, exclusions and original/fresh receipts](evidence/executions/20261021/spectral-final/README.md)
-and [scientific review](record/spectral_final_integration_20261021.md).
+and [scientific review](record/spectral_research/spectral_final_integration.md).
 
 ## Current consistency checks
 

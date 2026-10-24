@@ -29,7 +29,7 @@ def projections():
     s=('# Imported proof and attempt review matrix\n\n'
        'Generated from [catalog.json](catalog.json). All source units are preserved, but preservation, '
        'an author audit and a finite PASS are different from an independently closed proof. '
-       'The [current integration review](../spectral_final_integration_20261021.md) controls adoption. '
+       'The [current integration review](spectral_final_integration.md) controls adoption. '
        'The historical six declared-hash differences are version qualifications, not a proof verdict.\n\n'
        '| Proof / attempt | Topic | Review scope | Historical declared hash |\n|---|---|---|---|\n')
     for e in c['entries']:

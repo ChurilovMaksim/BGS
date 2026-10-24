@@ -9,7 +9,7 @@
 | BGS-TRACE-112 | ANALYTIC PROOF + SELF-REVIEW | [Displacement density and short logarithmic trace window](../mathematics/displacement_density_trace_bound_20261021.md); independent pressure-free upper spectral comparison |
 | BGS-TRACE-113 | ANALYTIC PROOF + SELF-REVIEW | [Uniform power-trace bound](../mathematics/fixed_kick_uniform_trace_bound_20261021.md); one $N_0$ for all $m\ge1$, $|\operatorname{Tr}U_N^m|\le Ca^m$, $1<a<\sqrt{3+2\sqrt2}$; published pressure input separately checked |
 
-[Proof/dependency review](trace_closure_20261022.md) and
+[Proof/dependency review](spectral_research/trace_closure.md) and
 [bounded execution evidence](../evidence/executions/20261022/trace-closure/README.md).
 These results close the two qualifications recorded below on 21 October.
 No external refereeing or formal proof is asserted. The bound $Ca^m$ becomes
@@ -25,7 +25,7 @@ all higher factorial tests remain open. **BGS-TRACE-005 and BGS-BGS-001: OPEN.**
 | BGS-TRACE-110 | EXACT LEMMAS + CONDITIONAL ASYMPTOTIC APPLICATION | [Spectral orbit distance](../mathematics/spectral_orbit_distance_20261021.md); uniform original-family trace input (T) not fully independently closed here |
 | BGS-TRACE-111 | ANALYTIC AUTHOR PROOF + SELF-REVIEW | [Full weighted Pell gradient/Hessian and forced inflection](../mathematics/pell_weighted_curvature_20261021.md); initial point and shrinking times, not the fixed positive parameter |
 
-[Complete integration and review](spectral_final_integration_20261021.md)
+[Complete integration and review](spectral_research/spectral_final_integration.md)
 accounts for all 535 source units, six historical version qualifications,
 56 bounded research checks and distinct original/fresh evidence. Source
 preservation and internal author audits are not blanket mathematical
@@ -42,7 +42,7 @@ extends the pair replacement bound to every fixed factorial order and records
 the exact Pell two-copy alias threshold. Both are analytic author proofs with
 self-review; finite checks certify only their stated finite inputs.
 
-[Exact source review and coverage](spectral_master_audit_20261021.md) explicitly
+[Exact source review and coverage](spectral_research/spectral_master_audit.md) explicitly
 leave most historical blocks unreviewed. BGS-TRACE-005 and BGS-BGS-001 remain
 OPEN; no original signed Heisenberg sum has been evaluated by these results.
 
