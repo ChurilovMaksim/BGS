@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact finite checks for BGS-FM-007, adapted from the supplied PDF verify_v7.py.
 No floating-point eigenvalues, parameter averaging or asymptotic inference.
-The unrestricted-N proofs are in mathematics/frozen_seven_cut_reduction.md.
+The unrestricted-N proofs are in mathematics/fixed-map/frozen_seven_cut_reduction.md.
 """
 
 # Fail before imports or output when Python removes verification assertions.
@@ -121,7 +121,7 @@ def main():
     output={"status":"all exact new-reduction checks passed",
             "arithmetic":"integer and Fraction only",
             "counts":counts,"rounding_residue_errors":residues,
-            "scope":"Finite identities only; general proofs in mathematics/frozen_seven_cut_reduction.md; no spectral simulation."}
+            "scope":"Finite identities only; general proofs in mathematics/fixed-map/frozen_seven_cut_reduction.md; no spectral simulation."}
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n")
     print(json.dumps(output,ensure_ascii=False,indent=2))

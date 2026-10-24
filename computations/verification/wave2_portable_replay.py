@@ -43,6 +43,11 @@ def sealed_source_bytes(root=historical.ROOT):
     expected['mathematics/fixed_map_path_model.md']='mathematics/fixed-map/fixed_map_path_model.md'
     expected['mathematics/four_branch_parametrix.md']='mathematics/fixed-map/four_branch_parametrix.md'
     expected['mathematics/fractional_hamming_cancellation.md']='mathematics/fixed-map/fractional_hamming_cancellation.md'
+    expected['mathematics/literal_fixed_word_freeness.md']='mathematics/fixed-map/literal_fixed_word_freeness.md'
+    expected['mathematics/literal_growing_word_window.md']='mathematics/fixed-map/literal_growing_word_window.md'
+    expected['mathematics/position_chain_mixing.md']='mathematics/fixed-map/position_chain_mixing.md'
+    expected['mathematics/reversed_path_decay.md']='mathematics/fixed-map/reversed_path_decay.md'
+    expected['mathematics/onestep_charge_gap.md']='mathematics/fixed-map/onestep_charge_gap.md'
     historical.require(resolutions==expected,'unreviewed historical input resolution')
     cached={}
     for rel,digest in bindings['files'].items():

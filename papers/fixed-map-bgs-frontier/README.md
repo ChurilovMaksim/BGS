@@ -7,7 +7,7 @@ results catalogue. The [living manuscript](../../manuscript/README.md) and
 The candidate manifest includes FM-018 and FM-019, their stated growing-band
 coercivity, regularized/shared-noise two-copy conclusions and exact finite
 invariant classification. The subsequent
-[FM-020 theorem](../../mathematics/original_channel_gap.md) closes the
+[FM-020 theorem](../../mathematics/fixed-map/original_channel_gap.md) closes the
 **original common-noise two-copy microscopic-rate question** that was open
 in an earlier FM-018 draft. This README records that chronological
 supersession; FM-020 is **not included in the present paper.json candidate

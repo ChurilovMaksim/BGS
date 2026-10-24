@@ -24,8 +24,8 @@ BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
 
 ## Physical-kick bounds, 21 October 2026
 
-[Uniform trace decay and scalar-distance limits](mathematics/physical_kick_trace_decay.md)
-(TRACE-106) and [all-order polynomial approximation with Pell alias limits](mathematics/physical_trace_polynomial_approximation.md)
+[Uniform trace decay and scalar-distance limits](mathematics/fixed-map/physical_kick_trace_decay.md)
+(TRACE-106) and [all-order polynomial approximation with Pell alias limits](mathematics/fixed-map/physical_trace_polynomial_approximation.md)
 (TRACE-107) are now recorded with full proofs. The imported exponent 1/25 is
 strengthened to 1/9 for the single kick. The original microscopic trace hierarchy
 remains open. [Review scope](record/spectral_research/spectral_master_audit.md).
@@ -62,11 +62,11 @@ The all-order process implication no longer requires an independent UI premise.
 The actual signed hierarchy, physical parameter moment and positive Hardy
 excess limits remain unproved. Resonance deletion is sufficient only.
 
-- **BGS-FM-032** — [Prime cyclic cohomology and parity-resolved susceptibility](mathematics/quantum_cyclic_cohomology_20261015.md); proved within its stated scope.
+- **BGS-FM-032** — [Prime cyclic cohomology and parity-resolved susceptibility](mathematics/fixed-map/quantum_cyclic_cohomology.md); proved within its stated scope.
 - **BGS-TRACE-084** — [Mesoscopic block number-variance criterion and collective trace-energy boundary](mathematics/trace-bridge/resonant_mesoscopic_criterion.md); proved within its stated scope.
 - **BGS-TRACE-085** — [Exact root lifting and failure of necessity for resonance-sector deletion](mathematics/trace-bridge/root_lifting_sector_boundary.md); proved within its stated scope.
 - **BGS-TRACE-086** — [All-order signed diagonal hierarchy implies local Sine2 and local moment UI](mathematics/trace-bridge/all_order_process_closure.md); proved within its stated scope.
-- **BGS-FM-033** — [All-label-scale one-step Weyl overlap and prime-orbit corollaries](mathematics/scaled_weyl_overlap_20261015.md); conditional within its stated scope.
+- **BGS-FM-033** — [All-label-scale one-step Weyl overlap and prime-orbit corollaries](mathematics/fixed-map/scaled_weyl_overlap.md); conditional within its stated scope.
 - **BGS-CUE-002** — [All-positive-frequency CUE trace-square covariance and exact coupling derivative](mathematics/trace-bridge/full_pair_cue_covariance.md); proved within its stated scope.
 - **BGS-TRACE-087** — [Exact parameter bandwidth and quantitative de-averaging to a fixed coupling](mathematics/trace-bridge/parameter_deaveraging.md); proved within its stated scope.
 - **BGS-TRACE-088** — [Rooted BEST count, extensive equal-edge mass and unitary compensation](mathematics/trace-bridge/equal_edge_occupation.md); proved within its stated scope.
@@ -201,11 +201,11 @@ particular frozen propagator must itself be proved.
 
 | Role | Maintained theorem sources | Exact scope |
 |---|---|---|
-| Actual quantum structure | [FM-024 common commutant](mathematics/fixed-map/actual_seven_primary_commutant.md); [FM-025 pure-five family](mathematics/uniform_five_cluster_simplicity.md); [FM-026 multiplicities](mathematics/literal_time_multiplicity_bounds.md) | Pair commutant classified for every odd $N\ge3$ except $N=7$; separate kick-simplicity and literal-time multiplicity bounds. Full $U_N$ simplicity is not inferred from pair irreducibility |
-| Intensity and paths | [FM-021](mathematics/position_chain_mixing.md); [FM-022](mathematics/reversed_path_decay.md); [three-block](mathematics/three_block_unmarking.md) and [four-block](mathematics/fixed-map/four_block_unmarking.md) controls | Eventual constant intensity singular gap, cyclic ramp, reverse-cycle suppression and specified distinct-port reconnections; not all noncyclic interference |
-| Fixed-order Fourier sectors | [TRACE-017 WKB reduction](mathematics/fixed-map/factorial_wkb_reduction.md); [TRACE-019](mathematics/selected_weighted_coefficient.md); [TRACE-020](mathematics/fixed-map/factorial_ordered_diagonal.md); [TRACE-021](mathematics/hamming_low_switch_residual.md) | Complete reduction to named finite-order tables, selected full-weight WKB and ordered-diagonal removal, checksum-free specified low-switch removal; the signed complementary sectors remain |
-| Source and insertion calculus | [TRACE-027](mathematics/weighted_phase_coherence_covariance.md); [TRACE-028](mathematics/right_frame_unmasked_pinch_hierarchy.md); [TRACE-029](mathematics/fixed-map/convex_pinch_weak_noise_and_deconvolution.md) | Qualified growing-window Ward control; complete unmasked separated/convex hierarchy; bounded-parameter signed stability and an actual unsigned logarithmic obstruction |
-| Original common-noise rate | [FM-020](mathematics/original_channel_gap.md) | Two-copy singular gap dominates $N^{-1}$ at $u=N^{-\alpha}$, $0<\alpha<1$. This closes the original-rate question left by FM-018/019, but not nonlinear quenched control, higher-copy rates or deterministic transfer |
+| Actual quantum structure | [FM-024 common commutant](mathematics/fixed-map/actual_seven_primary_commutant.md); [FM-025 pure-five family](mathematics/fixed-map/uniform_five_cluster_simplicity.md); [FM-026 multiplicities](mathematics/fixed-map/literal_time_multiplicity_bounds.md) | Pair commutant classified for every odd $N\ge3$ except $N=7$; separate kick-simplicity and literal-time multiplicity bounds. Full $U_N$ simplicity is not inferred from pair irreducibility |
+| Intensity and paths | [FM-021](mathematics/fixed-map/position_chain_mixing.md); [FM-022](mathematics/fixed-map/reversed_path_decay.md); [three-block](mathematics/fixed-map/three_block_unmarking.md) and [four-block](mathematics/fixed-map/four_block_unmarking.md) controls | Eventual constant intensity singular gap, cyclic ramp, reverse-cycle suppression and specified distinct-port reconnections; not all noncyclic interference |
+| Fixed-order Fourier sectors | [TRACE-017 WKB reduction](mathematics/fixed-map/factorial_wkb_reduction.md); [TRACE-019](mathematics/fixed-map/selected_weighted_coefficient.md); [TRACE-020](mathematics/fixed-map/factorial_ordered_diagonal.md); [TRACE-021](mathematics/fixed-map/hamming_low_switch_residual.md) | Complete reduction to named finite-order tables, selected full-weight WKB and ordered-diagonal removal, checksum-free specified low-switch removal; the signed complementary sectors remain |
+| Source and insertion calculus | [TRACE-027](mathematics/fixed-map/weighted_phase_coherence_covariance.md); [TRACE-028](mathematics/fixed-map/right_frame_unmasked_pinch_hierarchy.md); [TRACE-029](mathematics/fixed-map/convex_pinch_weak_noise_and_deconvolution.md) | Qualified growing-window Ward control; complete unmasked separated/convex hierarchy; bounded-parameter signed stability and an actual unsigned logarithmic obstruction |
+| Original common-noise rate | [FM-020](mathematics/fixed-map/original_channel_gap.md) | Two-copy singular gap dominates $N^{-1}$ at $u=N^{-\alpha}$, $0<\alpha<1$. This closes the original-rate question left by FM-018/019, but not nonlinear quenched control, higher-copy rates or deterministic transfer |
 | Noisy local statistics | [FLOW-014](mathematics/fixed-map/circular_dyson_actual_start.md); [FLOW-017](mathematics/fixed-map/coboundary_all_order_limit.md) | Actual-start weak local law on a polynomial schedule; all fixed factorial orders and one-chain origin averages on a different superpolynomial schedule |
 | Reused phase channel | [TRACE-053](mathematics/trace-bridge/max_entry_phase_channel.md) | Full complex endpoint marks, both collision corrections, exact second-degree norm and an explicit max-entry averaged-pinching rate |
 | Rational matrix inner functions | [TRACE-054](mathematics/trace-bridge/sharp_inner_jet.md) | Self-contained noncommuting right-weighted second-jet inequality with optimal leading coefficient $4/3$ and the exact smooth-localization penalty |
@@ -251,7 +251,7 @@ ordinary intensity mixing nor averaged eigenbasis pinching evaluates it.
 its stated damped interior. The signed marked/high-switch and undamped
 endpoint, including the plateau contribution, remain unproved. Masks/source
 extraction are not consequences of the unmasked insertion theorem.
-[FLOW-015](mathematics/microscopic_noise_removal.md) records the deterministic
+[FLOW-015](mathematics/fixed-map/microscopic_noise_removal.md) records the deterministic
 noise-removal defect without proving its vanishing. Higher factorial orders
 remain part of the full target.
 

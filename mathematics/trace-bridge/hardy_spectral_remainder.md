@@ -280,7 +280,7 @@ Sources read:
 - Supplied bgs_bounded_secular_2026-10-15/THEOREM.md, especially its bounded ratio, CUE calibration, and unchanged physical target.
 - ChurilovMaksim/BGS, mathematics/fixed-map/fixed_map_resolvent_frontier.md, its already proved TRACE-007 Abel floor and Cohn-Kumar proof.
 - ChurilovMaksim/BGS, mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md, the precise fixed-j scope of FM-013.
-- ChurilovMaksim/BGS, mathematics/polar_wkb_quantization_stability.md, for the boundary of prior spectral-transfer methods (no WKB endpoint limit is imported).
+- ChurilovMaksim/BGS, mathematics/fixed-map/polar_wkb_quantization_stability.md, for the boundary of prior spectral-transfer methods (no WKB endpoint limit is imported).
 - Conrey, Farmer, Zirnbauer, arXiv:math-ph/0511024, for established Haar ratio identities.
 
 The literature search and repository search did not certify priority for (5)-(7). The proof is stated on its own merit, not as a Fields-level result or a claim that classical Hardy-space tools are new.

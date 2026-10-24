@@ -170,7 +170,7 @@ control sequence, not the prescribed fixed BGS model.
 For a simple spectrum of $U$, put $A_G=G-UGU^*$
 and write $G_{jk}$ in the eigenbasis of $U$. The
 general eigenphase derivative formulas already in
-[frozen_spectral_flow_controls.md](../frozen_spectral_flow_controls.md)
+[frozen_spectral_flow_controls.md](frozen_spectral_flow_controls.md)
 give
 
 $$

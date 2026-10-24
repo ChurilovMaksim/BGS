@@ -7,7 +7,7 @@ formal verification or priority claim. This is a one-step intensity theorem.
 ## Model and conclusion
 
 Use exactly the odd-modulus matrices, modular inverse conventions and fixed
-$\tau=10^{-80}$ of [TRACE-106](../physical_kick_trace_decay.md), §1.
+$\tau=10^{-80}$ of [TRACE-106](physical_kick_trace_decay.md), §1.
 The ordinary-half symbol is its equation (5), including the translation
 $r(q+1/2)$ in the momentum-dependent coefficient. For $U_N=e^{i\tau NA_N}M_N$,
 

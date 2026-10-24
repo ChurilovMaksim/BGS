@@ -1,8 +1,8 @@
 # Physical kicks, bandwidth and approximation
 
-The physical kick requires degree proportional to $N$ at fixed nonzero coupling, together with all modular aliases. Sublinear-degree and fixed-word approximations have explicit boundaries. The maintained [TRACE-107 proof](../../physical_trace_polynomial_approximation.md) gives $O(N^k\varepsilon)$ aggregate error at every fixed factorial order from one sufficiently accurate approximation sequence; adjoint powers, not inverse powers, define negative indices for a nonunitary approximant.
+The physical kick requires degree proportional to $N$ at fixed nonzero coupling, together with all modular aliases. Sublinear-degree and fixed-word approximations have explicit boundaries. The maintained [TRACE-107 proof](../../fixed-map/physical_trace_polynomial_approximation.md) gives $O(N^k\varepsilon)$ aggregate error at every fixed factorial order from one sufficiently accurate approximation sequence; adjoint powers, not inverse powers, define negative indices for a nonunitary approximant.
 
-The [single-kick theorem](../../physical_kick_trace_decay.md) strengthens the source exponent $1/25$ to $1/9$. Arbitrarily accurate one-step replacement can remove the technical matrix approximation error; it leaves the full coherent history sum to be estimated.
+The [single-kick theorem](../../fixed-map/physical_kick_trace_decay.md) strengthens the source exponent $1/25$ to $1/9$. Arbitrarily accurate one-step replacement can remove the technical matrix approximation error; it leaves the full coherent history sum to be estimated.
 
 [Research hub](../README.md) · [Review matrix](../../../record/spectral_research/review_matrix.md)
 

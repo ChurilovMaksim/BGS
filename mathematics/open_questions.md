@@ -13,8 +13,8 @@ The TRACE-109/110 input qualifications are closed by the
 short logarithmic windows or global spectral distance, not this signed
 Heisenberg-scale remainder.
 
-The [21 October physical-kick results](physical_kick_trace_decay.md) do not close
-the original signed Heisenberg hierarchy. [All-order polynomial replacement](physical_trace_polynomial_approximation.md) controls its approximation error,
+The [21 October physical-kick results](fixed-map/physical_kick_trace_decay.md) do not close
+the original signed Heisenberg hierarchy. [All-order polynomial replacement](fixed-map/physical_trace_polynomial_approximation.md) controls its approximation error,
 while the complete remaining signed polynomial sum is still unestimated.
 
 ## Current open obligations (20 October 2026)
@@ -166,7 +166,7 @@ qualifications follow below.
 |---|---|---|
 | **Main mathematical target** | [BGS-TRACE-005](#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates): signed, desymmetrized all-fixed-order Heisenberg joint traces at every compact Fourier bandwidth | **Open** for the unchanged frozen propagator; [BGS-BGS-001](#d-positive-microscopic-bgs-universality-for-a-natural-fixed-map) is the terminal local-law claim |
 | Balanced pair frontier | Evaluate the actual absorbed [phase Ward overlap](phase_ward_identity.md) or the corresponding microscopic [Schur-energy radial limit](balanced_pair_schur_reduction.md) | Exact identities and reductions are available; the necessary limits are **unproved** |
-| Signed paths and removal of auxiliary noise | Close the [high-switch/masked residual](global_switch_transfer.md) and the [deterministic noise-removal defect](microscopic_noise_removal.md) | Partial sector bounds and noisy laws are proved in their regimes; neither gives deterministic all-order universality |
+| Signed paths and removal of auxiliary noise | Close the [high-switch/masked residual](global_switch_transfer.md) and the [deterministic noise-removal defect](fixed-map/microscopic_noise_removal.md) | Partial sector bounds and noisy laws are proved in their regimes; neither gives deterministic all-order universality |
 | Pending physical source hierarchy | Complete the submitted [BGS-TRACE-055](../archive/record/research_checkpoint_20261008.md) hierarchy after the [11 October reconstruction](../archive/record/chat_integration_20261011.md) | Covariance and physical L2 transport are proved. Conditional clock and gap theorems require all-time flatness. TRACE-076 gives unconditional clocks for Haar and the entropy class; TRACE-080 closes the maintained startup's probability and corresponding clocks at log^(4+kappa); physical microscopic cavity identification remains open |
 | Independent theorem frontiers | Centered [Cayley energy](#a-improve-pointwise-cayley-energy-to-the-centered-quadratic-scale), all-analytic [resonance](#e-all-members-analytic-resonance-nondegeneracy) and [information limits](#f-full-vanishing-noise-tomography-transition) | Their status and hypotheses are independent of the fixed-map BGS conclusion |
 
@@ -212,7 +212,7 @@ theta=0 radial theorem has no occupation-uniform or trace conclusion; body
 coercivity and complex source bounds do not identify a limit. The original
 BGS-TRACE-005 complete signed comparison remains OPEN.
 
-[FM-021](position_chain_mixing.md) supplies the actual cyclic-path ramp and specified marked three-link cancellation, while [FM-022](reversed_path_decay.md) suppresses reverse-cyclic pairs. The remaining once-counted signed OTHER-path contribution must supply the full target, including the negative plateau correction above m/N=1. The once-counted distinct-port three-block and reduced four-block families are now controlled by [TRACE-015](three_block_unmarking.md) and [TRACE-016](fixed-map/four_block_unmarking.md). Variable representations and endpoint-dependent masks still prevent unrestricted automatic unmarking; repeated ports, inter-family overlaps and growing reconnection complexity remain open. Higher factorial orders remain open.
+[FM-021](fixed-map/position_chain_mixing.md) supplies the actual cyclic-path ramp and specified marked three-link cancellation, while [FM-022](fixed-map/reversed_path_decay.md) suppresses reverse-cyclic pairs. The remaining once-counted signed OTHER-path contribution must supply the full target, including the negative plateau correction above m/N=1. The once-counted distinct-port three-block and reduced four-block families are now controlled by [TRACE-015](fixed-map/three_block_unmarking.md) and [TRACE-016](fixed-map/four_block_unmarking.md). Variable representations and endpoint-dependent masks still prevent unrestricted automatic unmarking; repeated ports, inter-family overlaps and growing reconnection complexity remain open. Higher factorial orders remain open.
 
 
 [FM-019](fixed-map/collective_diffusion_gap.md) closes a universal two-copy
@@ -221,7 +221,7 @@ N>=3. Its refined shared-noise law at m=N^3, u=N^-alpha, 0<alpha<1 has
 singular mass at least c_0u/4, dominating N^-1. Its one-copy channel is
 exactly that of FM-018; its higher-copy law is explicitly changed.
 
-[FM-020](original_channel_gap.md) now closes the original m=1 microscopic-rate obligation: its explicit lower bound is asymptotic to u/[25*1024^2*(1+log N)^2] when u=N^-alpha, 0<alpha<1, and dominates N^-1. The noise law is unchanged. This follows from a uniform low-eigenvalue count and a low-spectral projection angle, not from identifying the ordered product with the summed exponential.
+[FM-020](fixed-map/original_channel_gap.md) now closes the original m=1 microscopic-rate obligation: its explicit lower bound is asymptotic to u/[25*1024^2*(1+log N)^2] when u=N^-alpha, 0<alpha<1, and dominates N^-1. The noise law is unchanged. This follows from a uniform low-eigenvalue count and a low-spectral projection angle, not from identifying the ordered product with the summed exponential.
 
 For the refined law, the next obligation is the full nonlinear quenched
 determinant functional at a microscopic source, retaining permutation
@@ -230,7 +230,7 @@ HS mean-square classical limit supplies no microscopic spectral comparison.
 The original signed noise defect and J_(N,w)(U_N) are still unestimated.
 All deterministic bands/orders and full BGS remain unchanged and OPEN.
 
-The [exact pair heat formula](heisenberg_pair_heat_formula.md) now gives
+The [exact pair heat formula](fixed-map/heisenberg_pair_heat_formula.md) now gives
 every signed contraction and a superpolynomial **smoothed** stable-band
 form factor for the actual map at a vanishing logarithmic time.
 For $J_{N,w}=N^{-2}\sum_mw(m/N)(|p_m|^2-m)$, its actual heat defect is
@@ -241,7 +241,7 @@ sublinear short traces alone. A model-specific signed determinant or
 propagator estimate is still needed; this one fixed band is necessary
 but does not cover the full signed factorial hierarchy.
 
-The [growing-degree proof](growing_degree_trace_projection.md) now controls
+The [growing-degree proof](fixed-map/growing_degree_trace_projection.md) now controls
 actual compact local projections through $Q=\gamma\log N$ at rate
 $N^{-1/4}$. Every $Q_N=o(N)$ still misses the fixed pair vector
 $J_{N,w}(U_N)=N^{-2}\sum_mw(m/N)(|p_m(U_N)|^2-m)$, with
@@ -270,7 +270,7 @@ A single polynomial schedule for all orders, growing-order bounds, an
 effective startup threshold and almost-sure full-sequence convergence
 also remain open.
 
-[FLOW-015](microscopic_noise_removal.md) states the next weak local
+[FLOW-015](fixed-map/microscopic_noise_removal.md) states the next weak local
 obligation exactly: prove $\int_0^{t_N}P_sG_N\Phi_{N,f}(U_N)ds\to0$
 for every positive compact smooth test at the proved logarithmic time.
 The modulus must remain outside the entire signed integral. Initial heat
@@ -331,7 +331,7 @@ factorial cubic, splitting all three resonant strips and retaining the
 exact finite CUE counterterms. The reference variance and formal phase
 control in that note are not actual-map estimates.
 
-The [prime-resonant audit](prime_resonant_sector.md) identifies the exact
+The [prime-resonant audit](fixed-map/prime_resonant_sector.md) identifies the exact
 remaining sector input: for every compact positive Heisenberg window,
 prove $p^{-2}\sum_{rd_p/p\in K}|\operatorname{Tr}C_{p,d_p}^r|^2=o(1)$.
 An equivalent absolute sector comparison has only an $O_K(1/d_p+1/p)$
@@ -349,13 +349,13 @@ scalar finite-type estimate nor an ideal Fourier FUP derives the CUE
 plateau or BGS-TRACE-005. A natural-quantization route additionally needs
 one common all-order identification with controlled norms/holonomy.
 
-The [quadratic-noise continuation](quadratic_noise_coupling.md)
+The [quadratic-noise continuation](fixed-map/quadratic_noise_coupling.md)
 removes microscopic occupancy from comparison of the two evolved noisy
 laws. It does not close BGS-TRACE-005. FLOW-014 supplies actual-start
 Dyson relaxation at a logarithmic time. FLOW-016--017 now supply all-order
 uniform integrability and limits for the original noisy chain at a different
 superpolynomial step schedule; deterministic noise removal remains open. The
-[clock theorem](quadratic_noise_clock_limit.md) proves that low traces
+[clock theorem](fixed-map/quadratic_noise_clock_limit.md) proves that low traces
 and bounded occupancy alone cannot remove the noise. The [direct fixed-time packet proof](fixed-map/fixed_time_wavepacket_trace_bound.md)
 now closes bounded starting traces; its constants are not uniform at
 Heisenberg times. The historical Faure action-phase application remains
@@ -423,7 +423,7 @@ the actual frozen model.
 The 23 September exact kick-rank result `BGS-FM-005` does not estimate joint
 traces at Heisenberg times. The all-lag classical gap `BGS-RES-005` uses
 linear transport of one physical symbol. The subsequent
-[`BGS-FM-006`](nonlinear_bracket_pressure.md) proves that **the same**
+[`BGS-FM-006`](fixed-map/nonlinear_bracket_pressure.md) proves that **the same**
 linear normalization has no uniform nonlinear full-lag upper bound for the
 actual kicked map. This classical pressure obstruction does not supply the
 `BGS-TRACE-005` quantum joint-trace estimate. The separate arbitrary-analytic
@@ -702,16 +702,16 @@ formalized mathematics. Full analytic formalization remains open.
 
 ### Equivalent WKB target
 
-[TRACE-017](fixed-map/factorial_wkb_reduction.md) permits replacing the actual complete fixed-order partition transform with either named fixed-J WKB table, J>=k. The full signed WKB comparison is an equivalent remaining target, not a weaker or solved condition. The separate [global rotated-box theorem](global_rotated_box_trace.md) closes the saturated-contour and summed-tail step in its explicit finite band, conservatively m<=2N. Signed evaluation of exact box sums, entropy-compatible local remainders, unrestricted bands and TRACE-005 remain open.
+[TRACE-017](fixed-map/factorial_wkb_reduction.md) permits replacing the actual complete fixed-order partition transform with either named fixed-J WKB table, J>=k. The full signed WKB comparison is an equivalent remaining target, not a weaker or solved condition. The separate [global rotated-box theorem](fixed-map/global_rotated_box_trace.md) closes the saturated-contour and summed-tail step in its explicit finite band, conservatively m<=2N. Signed evaluation of exact box sums, entropy-compatible local remainders, unrestricted bands and TRACE-005 remain open.
 
 ### Closed actual pair-commutant classification
 
-[FM-024](fixed-map/actual_seven_primary_commutant.md), including the corrected [higher-ramified proof](ramified_higher_seven_commutant.md), now covers every odd N>=3 except the genuine N=7 exception by explicit combination with prior FM-008. No unknown odd-dimensional pair-commutant family remains. General seven-divisible U simplicity beyond the four certified cases, quantitative gaps, the complete literal-U complex commutant and deterministic BGS are separate questions; scalarity is asserted for the pair and only algebraic-entry commuters of literal U.
+[FM-024](fixed-map/actual_seven_primary_commutant.md), including the corrected [higher-ramified proof](fixed-map/ramified_higher_seven_commutant.md), now covers every odd N>=3 except the genuine N=7 exception by explicit combination with prior FM-008. No unknown odd-dimensional pair-commutant family remains. General seven-divisible U simplicity beyond the four certified cases, quantitative gaps, the complete literal-U complex commutant and deterministic BGS are separate questions; scalarity is asserted for the pair and only algebraic-entry commuters of literal U.
 
 ### Remaining signed complement
 
-[TRACE-019](selected_weighted_coefficient.md) now controls the selected full-weight
-fixed-J family. Its [exact stationary residual](stationary_cyclic_residual.md)
+[TRACE-019](fixed-map/selected_weighted_coefficient.md) now controls the selected full-weight
+fixed-J family. Its [exact stationary residual](fixed-map/stationary_cyclic_residual.md)
 removes disjoint cyclic and homoclinic ordered pairs once; only unremoved
 torsion portions remain. The complete signed residual and plateau correction,
 other displacements and higher factorial orders are open. The phase-only
@@ -722,7 +722,7 @@ TRACE-018 averaged Fourier-square bound is not fixed-N time averaging.
 [TRACE-020](fixed-map/collective_projector_residual.md) leaves
 Q=(Pi-P_H-P_coll)+(I-Pi), including some cycle-fixed vectors. Its complete
 signed cyclic trace is unestimated. This is distinct from the stationary-label
-WKB residual. [FM-026](literal_time_multiplicity_bounds.md) leaves intermediate
+WKB residual. [FM-026](fixed-map/literal_time_multiplicity_bounds.md) leaves intermediate
 old-layer U simplicity and quantitative gaps open.
 
 ### Remaining fixed-order mixed projector trace
@@ -735,18 +735,18 @@ with the projector; no conclusion for the full balanced sector or BGS follows.
 
 ### Intermediate arithmetic layers after residual 25
 
-[FM-026](literal_time_multiplicity_bounds.md) now includes the exact
+[FM-026](fixed-map/literal_time_multiplicity_bounds.md) now includes the exact
 [first-old classifier](fixed-map/first_old_layer_classification.md) and uniform
-[residual-25 splitting](residual25_affine_dictionary.md). Larger even residuals
+[residual-25 splitting](fixed-map/residual25_affine_dictionary.md). Larger even residuals
 (at least 625) and odd intermediate residuals beyond 125 still require compatible bases
 and their actual wild-character affine sums. The
-[return obstruction](intermediate_return_operator.md) defeats one scalar
+[return obstruction](fixed-map/intermediate_return_operator.md) defeats one scalar
 normalization, not every possible lattice or later cancellation. Full U
 simplicity, quantitative gaps and BGS remain open.
 
 ### The current single pair residual
 
-[TRACE-021](hamming_low_switch_residual.md) supplies one exact orthogonal Q
+[TRACE-021](fixed-map/hamming_low_switch_residual.md) supplies one exact orthogonal Q
 after disjoint Hamming and low-switch removal, with exponentially small pair-band
 error. The task is to estimate its complete signed trace; no bound is known here.
 Its centered balanced part is not a path mask, and safe translations cannot be
@@ -757,15 +757,15 @@ the first-old odd follow-on, full simplicity and quantitative gaps remain open.
 
 ## Wave2: exact remaining signed targets
 
-The actual unmasked q=1 one-pinch aggregate is closed at [TRACE-024](fixed-map/actual_one_pinch_disappearance.md). Complete unmasked separated and growing convex insertions are now closed at TRACE-028's exact normalizations. Masked/source-weighted insertions, occupation/Hamming/high-switch extraction and signed boundary deconvolution remain unestimated. The annealed consecutive-block leaf does not close the positive block hierarchy. [Fixed-N centering](ordinary_compact_stratum_centering.md) leaves N-uniform source-differentiated signed cancellation, including circle-boundary strata at ab=exp(-2s/N), open. [The corrected hook/current reduction](hook_tree_phase_current_reduction.md) requires N^-2 sum_m exp(-2sm/N) H_m(U_N) -> -exp(-2s)/(4s^2) for each s>0, including Heisenberg degrees, repeated occupations and the Abel tail. The required negative plateau correction is not a small-error target. Literal signed marked T16, completed-source growing-degree covariance, actual Ward overlap (13), full balanced microscopic law, higher factorial comparison, TRACE-005 and BGS remain OPEN.
+The actual unmasked q=1 one-pinch aggregate is closed at [TRACE-024](fixed-map/actual_one_pinch_disappearance.md). Complete unmasked separated and growing convex insertions are now closed at TRACE-028's exact normalizations. Masked/source-weighted insertions, occupation/Hamming/high-switch extraction and signed boundary deconvolution remain unestimated. The annealed consecutive-block leaf does not close the positive block hierarchy. [Fixed-N centering](fixed-map/ordinary_compact_stratum_centering.md) leaves N-uniform source-differentiated signed cancellation, including circle-boundary strata at ab=exp(-2s/N), open. [The corrected hook/current reduction](fixed-map/hook_tree_phase_current_reduction.md) requires N^-2 sum_m exp(-2sm/N) H_m(U_N) -> -exp(-2s)/(4s^2) for each s>0, including Heisenberg degrees, repeated occupations and the Abel tail. The required negative plateau correction is not a small-error target. Literal signed marked T16, completed-source growing-degree covariance, actual Ward overlap (13), full balanced microscopic law, higher factorial comparison, TRACE-005 and BGS remain OPEN.
 
 
 ## Weighted coherence boundary
 
-[TRACE-027](weighted_phase_coherence_covariance.md) leaves the absorbed infinite Poisson contractions at degrees Theta(N) and above, including all mixed terms, unestimated. Its factorial bound cannot be summed termwise over that solution. Upper-half slow-window Ward convergence is not convergence at every fixed m or on the full prefix. The precise degree-two mixed-moment exception is removed for the actual operator; all fixed-degree CUE moment identification remains open.
+[TRACE-027](fixed-map/weighted_phase_coherence_covariance.md) leaves the absorbed infinite Poisson contractions at degrees Theta(N) and above, including all mixed terms, unestimated. Its factorial bound cannot be summed termwise over that solution. Upper-half slow-window Ward convergence is not convergence at every fixed m or on the full prefix. The precise degree-two mixed-moment exception is removed for the actual operator; all fixed-degree CUE moment identification remains open.
 
 
 ## Wave3 current insertion frontier
 
-The complete UNMASKED separated and convex insertion hierarchy is now closed by [TRACE-028](right_frame_unmasked_pinch_hierarchy.md), superseding older open wording for that complete normalized sum. Every z_N in [0,1] is included; j>=3 centered words have a uniform o(N) bound. Still open: Hamming/high-switch coefficient extraction, source weights/derivatives/rates, masked sums and marked-switch T16, signed centered deconvolution and the undamped zero-insertion spectral difference. [TRACE-029](fixed-map/convex_pinch_weak_noise_and_deconvolution.md) proves complete signed bounded-u stability only. Its actual unsigned large-log divergence comes from the retained identity contribution and does not refute T16; cancellation must be maintained before absolute estimates. Balanced law, Ward(13), TRACE005, higher factorial comparison and BGS remain OPEN.
+The complete UNMASKED separated and convex insertion hierarchy is now closed by [TRACE-028](fixed-map/right_frame_unmasked_pinch_hierarchy.md), superseding older open wording for that complete normalized sum. Every z_N in [0,1] is included; j>=3 centered words have a uniform o(N) bound. Still open: Hamming/high-switch coefficient extraction, source weights/derivatives/rates, masked sums and marked-switch T16, signed centered deconvolution and the undamped zero-insertion spectral difference. [TRACE-029](fixed-map/convex_pinch_weak_noise_and_deconvolution.md) proves complete signed bounded-u stability only. Its actual unsigned large-log divergence comes from the retained identity contribution and does not refute T16; cancellation must be maintained before absolute estimates. Balanced law, Ward(13), TRACE005, higher factorial comparison and BGS remain OPEN.
 

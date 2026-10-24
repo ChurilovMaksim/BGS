@@ -90,7 +90,7 @@ ACTIVE_MARKDOWN = [
     ROOT / "mathematics" / "fixed-map" / "fixed_model_symmetry_theorem.md",
     ROOT / "mathematics" / "fixed-map" / "fixed_model_pell_crossover.md",
     ROOT / "mathematics" / "fixed-map" / "fixed_map_moment_control_and_transfer.md",
-    ROOT / "mathematics" / "three_orientation_resolvent_barrier.md",
+    ROOT / "mathematics" / "fixed-map" / "three_orientation_resolvent_barrier.md",
     ROOT / "mathematics" / "resonance-cohomology" / "fourier_line_resonance_coercivity.md",
     ROOT / "mathematics" / "resonance-cohomology" / "local_jet_resonance_obstruction.md",
     ROOT / "README.md",

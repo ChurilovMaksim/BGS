@@ -14,7 +14,7 @@ Its spectrum equals that of $W_\varepsilon U$, where
 $W_\varepsilon=e^{-i\varepsilon G}e^{i\varepsilon(G-B)}e^{i\varepsilon B}$.
 Write $m_j=N^{-1}\operatorname{Tr}U^j$, and put
 $H=i[G,B]/\sqrt2$, $X=H-\mathbb EH$, as in
-[FLOW-003](../quadratic_coboundary_noise.md).
+[FLOW-003](quadratic_coboundary_noise.md).
 
 ## 1. Exact fourth-degree logarithm
 

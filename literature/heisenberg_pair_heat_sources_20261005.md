@@ -1,7 +1,7 @@
 # Exact pair heat formula: source and transfer boundary
 
 5 October 2026. The mathematical derivation is in
-[FLOW-021](../mathematics/heisenberg_pair_heat_formula.md).
+[FLOW-021](../mathematics/fixed-map/heisenberg_pair_heat_formula.md).
 No world-priority or exhaustive literature-search claim is made.
 
 ## Load-bearing inputs

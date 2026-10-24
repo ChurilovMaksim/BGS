@@ -322,6 +322,6 @@ The portable exact rational controls are `computations/verification/heisenberg_w
 and `check_raw_gauss.py`; the execution receipt records their bounded cases.
 They do not prove analytic limits. [Exact reciprocity](exact_gaussian_reciprocity.md)
 represents finite positive powers, with negative adjoint traces obtained by conjugation.
-The [formal cluster lemma](../uniform_cluster_lemma.md) and
-[rotated-box theorem](../rotated_local_first_loop.md) are local analytic dependencies,
+The [formal cluster lemma](uniform_cluster_lemma.md) and
+[rotated-box theorem](rotated_local_first_loop.md) are local analytic dependencies,
 not a global saddle decomposition or signed cancellation theorem.

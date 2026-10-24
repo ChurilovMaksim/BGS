@@ -136,7 +136,7 @@ class ExecutionTests(unittest.TestCase):
                 target.write_bytes((ROOT / path).read_bytes())
             for relative in ['computations/verification/charge_strengthening/author_checks.py',
                              'archive/evidence/charge_strengthening_20261007/raw/author/exact_results.json',
-                             'mathematics/onestep_charge_gap.md']:
+                             'mathematics/fixed-map/onestep_charge_gap.md']:
                 target = copied / relative
                 original = target.read_bytes()
                 target.write_bytes(original + b'\n# deliberate corruption\n')

@@ -2,7 +2,7 @@
 
 **Claim ID: BGS-FM-013. Status: PROJECT PROOF + AUTHOR SELF-REVIEW.**
 4 October 2026. This closes the bounded-trace input previously recorded
-conditionally in [the source adaptation](../quadratic_noise_fixed_time_input.md).
+conditionally in [the source adaptation](quadratic_noise_fixed_time_input.md).
 The method is standard fixed-time semiclassical wave-packet propagation;
 no priority for that method, full trace expansion, external referee approval,
 or Heisenberg-time estimate is asserted.
@@ -33,7 +33,7 @@ The thresholds are not effective here and the estimates are not uniform
 in $j$. Section 5 gives explicit conservative asymptotic bounds at
 $j=1,2$, sufficient for the numerical starting bound $K=20$.
 No estimate is supplied for $j\asymp N$.
-The earlier [FM-007 proof](../frozen_seven_cut_reduction.md), (9)--(12),
+The earlier [FM-007 proof](frozen_seven_cut_reduction.md), (9)--(12),
 already gives $O(N^{39/40})$ through a sufficiently short logarithmic
 time window. Thus qualitative normalized fixed-time trace vanishing,
 macroscopic phase equidistribution, and starting-noise ellipticity were

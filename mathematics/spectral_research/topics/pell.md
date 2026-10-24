@@ -2,7 +2,7 @@
 
 Pell dimensions supply exact unperturbed returns with period $d=O(\log N)$ and finite Weyl-orbit formulas for variational generators. First-order Magnus data cannot truncate the physical noncommuting product when $N\tau\to\infty$.
 
-The maintained [full weighted-curvature theorem](../../pell_weighted_curvature_20261021.md) sums every time and every Hessian cross term at the initial parameter. It proves a superpolynomially small gradient, negative curvature of order $N^5/d^2$, and forced positive curvature by time $O(d^3/N^2)$. Its entire extension uses inverse powers at complex parameters. Neither analyticity nor that early inflection evaluates the original fixed positive coupling.
+The maintained [full weighted-curvature theorem](../../fixed-map/pell_weighted_curvature.md) sums every time and every Hessian cross term at the initial parameter. It proves a superpolynomially small gradient, negative curvature of order $N^5/d^2$, and forced positive curvature by time $O(d^3/N^2)$. Its entire extension uses inverse powers at complex parameters. Neither analyticity nor that early inflection evaluates the original fixed positive coupling.
 
 [Research hub](../README.md) · [Review matrix](../../../record/spectral_research/review_matrix.md)
 

@@ -10,7 +10,7 @@ transport boundaries. No priority or deterministic BGS theorem is asserted.
 
 Let $N=2M+1\ge3$, $C_N=\operatorname{diag}(e^{2\pi i j/N})$, and let
 $V_t=B_tC_N$ for full normalized unitary Brownian motion, with the angle
-generator D2 of [FLOW-015](../microscopic_noise_removal.md). Set $\tau=Nt$,
+generator D2 of [FLOW-015](microscopic_noise_removal.md). Set $\tau=Nt$,
 $p_m=\operatorname{Tr}V_t^m$, and $L_N=\{-M,\ldots,M\}$.
 Use Fourier convention $\widehat g(\xi)=\int g(x)e^{-2\pi i x\xi}dx$.
 Unfold the eigenangles with period $N$ and use an independent uniform

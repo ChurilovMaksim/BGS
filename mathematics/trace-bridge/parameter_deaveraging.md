@@ -388,7 +388,7 @@ Primary/background sources checked:
 1. Diaconis--Evans, *Linear Functionals of Eigenvalues of Random Matrices*, Theorem 2.1, https://statistics.berkeley.edu/sites/default/files/tech-reports/577.pdf . Printed pages 3-4 were visually inspected. The theorem's weighted-degree condition is retained.
 2. Soshnikov, *Determinantal random point fields*, https://arxiv.org/abs/math/0002099 . Determinantal and convergence background, not a theorem about the actual U_N.
 3. Conrey--Farmer--Zirnbauer, *Howe pairs, supersymmetry, and ratios of random characteristic polynomials*, https://arxiv.org/abs/math-ph/0511024 . The result concerns Haar averages; none are imposed on the deterministic operator.
-4. ChurilovMaksim/BGS, `supplement/fixed_map/weighted-secular/determinant_boundary.md` and `mathematics/heisenberg_pair_heat_formula.md`. These identify exact determinant reductions and explicitly unestimated physical terms.
+4. ChurilovMaksim/BGS, `supplement/fixed_map/weighted-secular/determinant_boundary.md` and `mathematics/fixed-map/heisenberg_pair_heat_formula.md`. These identify exact determinant reductions and explicitly unestimated physical terms.
 5. Prior supplied `RESEARCH_STATUS.md` and `bgs_no_extra_ui_2026-10-15/THEOREM.md`. Their physical gap is retained; the latter supplies the already stated all-order Laplace closure.
 
 **Final boundary:** equations (11), (13), and the corresponding o(N^-2) physical moment bounds remain unproved. The original all-odd-dimension Sine2 problem and general BGS are not closed by this packet.

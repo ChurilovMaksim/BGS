@@ -178,9 +178,9 @@ comparison corrected in this maintained exposition is the frozen candidate's
 weaker phrase "o(N/log N)"; the frozen bytes are not edited.
 
 Actual singular contraction and its 10^-64 limsup come from FM-021,
-[position_chain_mixing.md](../position_chain_mixing.md), Sections 1-2. The Haar
+[position_chain_mixing.md](position_chain_mixing.md), Sections 1-2. The Haar
 moment estimate is inherited from O5 of
-[ordered_diagonal_cyclic_trace.md](../ordered_diagonal_cyclic_trace.md), with the
+[ordered_diagonal_cyclic_trace.md](ordered_diagonal_cyclic_trace.md), with the
 explicit tail in C9, Section 4 of
 [collective_occupation_hierarchy.md](collective_occupation_hierarchy.md).
 The FM-021 parametrix/TT* and Haar-source review boundaries are unchanged.
@@ -190,7 +190,7 @@ The new algebra here consists of orthogonal position blocks, exact normalized
 torus integration, the shifted cyclic seam, the true range-projector Gram
 series, entropy-radius implication, and exact orthogonal off-charge split.
 The separate low-switch synthesis, with its additional dependencies, is in
-[hamming_low_switch_residual.md](../hamming_low_switch_residual.md).
+[hamming_low_switch_residual.md](hamming_low_switch_residual.md).
 
 [Curated review](../../record/fractional_hamming_review.md) records the exact
 acceptance and scope. The original candidate has SHA-256

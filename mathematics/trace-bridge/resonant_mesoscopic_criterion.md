@@ -160,4 +160,4 @@ The calculations use the exact finite clock cancellation and explicit sums for t
 
 No estimate `V_{C_{p,d}}(d/(4Bp))=o(d^2)` has been obtained for the actual fixed-coupling propagator. Since the arc criterion is a rational **comb of microscopic windows**, it still demands coherent dynamical control at Heisenberg times. Existing Weyl delocalization, spectral simplicity, one-step Egorov, and the checked selected-family WKB bounds do not imply this criterion. Moreover, controlling only the prime-resonant sector would not prove the all-order signed trace hierarchy or full BGS universality.
 
-Existing BGS source: `mathematics/prime_resonant_sector.md` (Fejer-energy reduction and open sector theorem); `mathematics/open_questions.md` (TRACE-005). This note gives an alternate variance criterion and explicit abstract inverse obstruction, without claiming external priority.
+Existing BGS source: `mathematics/fixed-map/prime_resonant_sector.md` (Fejer-energy reduction and open sector theorem); `mathematics/open_questions.md` (TRACE-005). This note gives an alternate variance criterion and explicit abstract inverse obstruction, without claiming external priority.

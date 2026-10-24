@@ -161,5 +161,5 @@ Source context, not a completed-proof claim:
 
 - P. Diaconis and S. N. Evans, Linear Functionals of Eigenvalues of Random Matrices, Theorem 2.1, Berkeley report 577: https://statistics.berkeley.edu/sites/default/files/tech-reports/577.pdf . The stable moment theorem is used only within its stated range; the all-frequency covariance above is derived explicitly.
 - Z. Pluhar and H. A. Weidenmuller, Quantum Graphs and Random-Matrix Theory, arXiv:1407.1148. Wave-number and bond-phase averaging are not identified with a single global origin average here.
-- ChurilovMaksim/BGS, mathematics/heisenberg_pair_heat_formula.md, main e20825f15b62c403ddb52ef345aa48e339eda21d. Its exact smoothed formula does not estimate the unsmoothed statistic at the fixed initial matrix.
+- ChurilovMaksim/BGS, mathematics/fixed-map/heisenberg_pair_heat_formula.md, main e20825f15b62c403ddb52ef345aa48e339eda21d. Its exact smoothed formula does not estimate the unsmoothed statistic at the fixed initial matrix.
 - Prior supplied scale-normalized-overlap THEOREM.md, 15 October 2026, explicitly distinguishes one-step Weyl dispersion from the open trace of powers.

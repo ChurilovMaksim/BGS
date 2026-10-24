@@ -1,6 +1,6 @@
 # Global switch transfer and exact undamped boundary obligation
 
-Maintained companion prepared 7 October 2026. Independent internal review: proved as written, using the independently accepted one-step gap in [onestep_charge_gap.md](onestep_charge_gap.md). The literal actual-parametrix dependencies remain unchanged. The global switch-damped theorem and checksum-free undamped low-switch theorem have separate scopes; the undamped marked-switch boundary is OPEN.
+Maintained companion prepared 7 October 2026. Independent internal review: proved as written, using the independently accepted one-step gap in [onestep_charge_gap.md](fixed-map/onestep_charge_gap.md). The literal actual-parametrix dependencies remain unchanged. The global switch-damped theorem and checksum-free undamped low-switch theorem have separate scopes; the undamped marked-switch boundary is OPEN.
 
 ## T1. Target and decisive new mechanism
 

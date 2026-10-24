@@ -10,12 +10,12 @@ contains every definition needed without access to other files.
 
 | Result | Maintained account | Exact scope |
 |---|---|---|
-| Physical kick trace decay | [TRACE-106](../physical_kick_trace_decay.md) | Imported exponent $1/25$, strengthened internally to $1/9$; single kick |
-| Polynomial replacement | [TRACE-107](../physical_trace_polynomial_approximation.md) | Every fixed factorial order, one approximation sequence; signed sum still unknown |
+| Physical kick trace decay | [TRACE-106](../fixed-map/physical_kick_trace_decay.md) | Imported exponent $1/25$, strengthened internally to $1/9$; single kick |
+| Polynomial replacement | [TRACE-107](../fixed-map/physical_trace_polynomial_approximation.md) | Every fixed factorial order, one approximation sequence; signed sum still unknown |
 | Quartic coordinate return | [TRACE-108](../fixed-map/coordinate_return_quartic.md) | Original one-step intensity, explicit negative quartic term and fixed-$\tau$ remainder |
-| Inserted trace and coboundary | [TRACE-109](../inserted_trace_coboundary_20261021.md) | Proved inserted asymptotic by the corrected finite-grid amplitude; arbitrary multiplicities |
-| Spectral orbit distance | [TRACE-110](../spectral_orbit_distance_20261021.md) | Proved global $O(1/\log N)$ upper bound and matching Pell lower order; input (T) closed by TRACE-113 |
-| Weighted gradient and curvature | [TRACE-111](../pell_weighted_curvature_20261021.md) | Full Heisenberg-band sum at $t=0$, forced early inflection; value at fixed $\tau$ unknown |
+| Inserted trace and coboundary | [TRACE-109](../fixed-map/inserted_trace_coboundary.md) | Proved inserted asymptotic by the corrected finite-grid amplitude; arbitrary multiplicities |
+| Spectral orbit distance | [TRACE-110](../fixed-map/spectral_orbit_distance.md) | Proved global $O(1/\log N)$ upper bound and matching Pell lower order; input (T) closed by TRACE-113 |
+| Weighted gradient and curvature | [TRACE-111](../fixed-map/pell_weighted_curvature.md) | Full Heisenberg-band sum at $t=0$, forced early inflection; value at fixed $\tau$ unknown |
 | Classical displacement and quantum window | [TRACE-112](../fixed-map/displacement_density_trace_bound.md) | Uniform all-iterate displacement density; short logarithmic-time normalized trace saving; independent global upper comparison |
 | Uniform power traces | [TRACE-113](../fixed-map/fixed_kick_uniform_trace_bound.md) | $|\operatorname{Tr}U_N^m|\le Ca^m$, one odd-$N$ threshold for all $m$, $1<a<\sqrt\lambda$; uninformative at Heisenberg times |
 | Hierarchy-to-process closure | [TRACE-086](../trace-bridge/all_order_process_closure.md) | All-order $H_{\rm diag}$ implies local Sine2, without separate UI; physical hypothesis open |

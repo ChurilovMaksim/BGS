@@ -4,7 +4,7 @@
 Deterministic complex128 full Hermitian-basis contractions, N<=7; radial
 generator checks, N<=65; exact Fraction Laurent integration for Haar U(4).
 No Monte Carlo, eigengap cutoff, actual frozen coupling, or Lean certificate.
-The analytic theorem is in mathematics/quadratic_coboundary_noise.md.
+The analytic theorem is in mathematics/fixed-map/quadratic_coboundary_noise.md.
 """
 from __future__ import annotations
 

@@ -85,7 +85,7 @@ and priority limitation are in
 ## Thermodynamic formalism for the nonlinear frozen map
 
 The classical bracket-pressure application in
-[`BGS-FM-006`](../mathematics/nonlinear_bracket_pressure.md) uses Pesin's
+[`BGS-FM-006`](../mathematics/fixed-map/nonlinear_bracket_pressure.md) uses Pesin's
 entropy formula (1977, Theorem 5.1), Ruelle's entropy inequality (1978,
 Theorem 2), and the Gibbs, pressure-analyticity, variance and convexity
 results in Parry--Pollicott (1990, Appendix III, Chapters 2--4).

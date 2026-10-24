@@ -61,9 +61,9 @@ L_N(s)=\frac{1}{N^2}\sum_{m\ge1}e^{-2sm/N}
 | Математический слой | Установлено в указанной области | Пока не установлено |
 |---|---|---|
 | Переход от спектра к следам | Точная конечномерная комбинаторика и условные критерии корреляций | Знаковые совместные оценки для исходной модели |
-| Основная модель: интенсивности и пути | [FM-021](mathematics/position_chain_mixing.md) — смешивание и циклический рост; [FM-022](mathematics/reversed_path_decay.md) — подавление обратных путей | Вся оставшаяся когерентная интерференция, включая отрицательную поправку плато |
+| Основная модель: интенсивности и пути | [FM-021](mathematics/fixed-map/position_chain_mixing.md) — смешивание и циклический рост; [FM-022](mathematics/fixed-map/reversed_path_decay.md) — подавление обратных путей | Вся оставшаяся когерентная интерференция, включая отрицательную поправку плато |
 | Сбалансированная микроскопика | Точные тождества [Уорда](mathematics/phase_ward_identity.md) и [энергии Шура](mathematics/balanced_pair_schur_reduction.md) | Нужные предельные оценки перекрытий и радиальной энергии |
-| Следы и вставки | Отдельные [WKB](mathematics/fixed-map/factorial_wkb_reduction.md)-секторы, [упорядоченные диагонали](mathematics/fixed-map/factorial_ordered_diagonal.md) и [иерархия без масок](mathematics/right_frame_unmasked_pinch_hierarchy.md) | Полный знаковый остаток, маски и недемпфированные границы |
+| Следы и вставки | Отдельные [WKB](mathematics/fixed-map/factorial_wkb_reduction.md)-секторы, [упорядоченные диагонали](mathematics/fixed-map/factorial_ordered_diagonal.md) и [иерархия без масок](mathematics/fixed-map/right_frame_unmasked_pinch_hierarchy.md) | Полный знаковый остаток, маски и недемпфированные границы |
 | Стохастическое сравнение | Шумовые локальные законы [FLOW-014](mathematics/fixed-map/circular_dyson_actual_start.md) и [FLOW-017](mathematics/fixed-map/coboundary_all_order_limit.md) при разных явно указанных режимах | Снятие шума для исходного детерминированного семейства |
 | Другие математические результаты | [Кэли](mathematics/topics/cayley-arithmetic/README.md), [Пелль](mathematics/topics/pell/README.md), [возвраты](mathematics/topics/returns/README.md), резонансы, локальность и информация | Строгая импликация из отдельных режимов к детерминированной BGS |
 
@@ -91,7 +91,7 @@ L_N(s)=\frac{1}{N^2}\sum_{m\ge1}e^{-2sm/N}
 | Результат | Установленная область | Граница |
 |---|---|---|
 | [Вставленный след, TRACE-109](mathematics/fixed-map/finite_grid_one_step_trace.md) | Исправленная амплитуда на конечной сетке; ошибка вставленного следа $O(N^{-1})$ | Отдельная вставка, а не полная знаковая иерархия |
-| [Спектральное расстояние, TRACE-110](mathematics/spectral_orbit_distance_20261021.md) | Глобальное сопоставление $O(1/\log N)$ и совпадающий нижний порядок на размерах Пелля | Макроскопическое сопоставление не даёт микроскопической статистики |
+| [Спектральное расстояние, TRACE-110](mathematics/fixed-map/spectral_orbit_distance.md) | Глобальное сопоставление $O(1/\log N)$ и совпадающий нижний порядок на размерах Пелля | Макроскопическое сопоставление не даёт микроскопической статистики |
 | [Плотность смещения, TRACE-112](mathematics/fixed-map/displacement_density_trace_bound.md) | Равномерный классический контроль и независимый путь к следам на логарифмическом времени | Нет сокращений на времени Гейзенберга |
 | [Следы всех степеней, TRACE-113](mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) | $|\mathrm{Tr}\,U_N^m|\le Ca^m$, $1<a<\sqrt{3+2\sqrt2}$, с одним порогом размерности для всех $m$ | При $m\asymp N$ оценка неинформативна |
 

@@ -52,7 +52,7 @@
       "Parry–Pollicott or other unused mixing source",
       "Any full Ad(U) contraction"
     ],
-    "proof": "mathematics/onestep_charge_gap.md"
+    "proof": "mathematics/fixed-map/onestep_charge_gap.md"
   },
   "external_sources": "No new specialized external theorem is used. Inherited parametrix/phase review boundaries remain unchanged; unused classical mixing is not imported.",
   "formalization": "No analytic Lean or other proof-assistant certificate is added.",
@@ -73,7 +73,7 @@
       }
     ],
     "new_step": "Uniform charge compression Lipschitz bound <=2||W_N-U_N||, preserving the one-step and damped gap controls.",
-    "proof": "mathematics/rounding_gap_obstruction.md",
+    "proof": "mathematics/fixed-map/rounding_gap_obstruction.md",
     "scope": "Abstract full-pair closure obstruction for an altered operator; no offcharge-only counterexample and no counterexample to literal U_N/BGS."
   },
   "schema": "bgs-charge-dependency-contract-v1",

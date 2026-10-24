@@ -451,7 +451,7 @@ finite-CUE counterterms must still be treated.
 
 For the maintained prime family, substitute the correctly oriented
 block $U_p^{d_p}=\zeta_p C_{p,d_p}$ from
-[TRACE-009](../prime_resonant_sector.md). Its mass in (2) is exactly
+[TRACE-009](../fixed-map/prime_resonant_sector.md). Its mass in (2) is exactly
 $p^{-2}\sum_{rd_p\in J_p}|\operatorname{Tr}C_{p,d_p}^r|^2$.
 The elementary lower bound on d_p implies $d_p\to\infty$. Therefore
 two explicit estimates, $E_p\to0$ and bounded $M_s(p)$ for some s>3

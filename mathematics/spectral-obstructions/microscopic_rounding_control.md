@@ -213,11 +213,11 @@ claim is made.
 - Prior rounding owner: `manuscript/unified_sections/spectral_resolution.tex`,
   proposition “First-order Egorov alone cannot force local repulsion,” and
   `record/claim_ledger.md`, “Holomorphic shell rigidity and spectral resolution.”
-- Inherited FM-007: `mathematics/frozen_seven_cut_reduction.md`, equation (9).
+- Inherited FM-007: `mathematics/fixed-map/frozen_seven_cut_reduction.md`, equation (9).
 - Inherited FM-013: `mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md`, theorem (1).
-- Inherited FM-021: `mathematics/position_chain_mixing.md`, sections 1–4.
-- Inherited FM-022: `mathematics/reversed_path_decay.md`, sections 1 and 4.
-- Stable-band normalization: `mathematics/heisenberg_pair_heat_formula.md`, section 5.
+- Inherited FM-021: `mathematics/fixed-map/position_chain_mixing.md`, sections 1–4.
+- Inherited FM-022: `mathematics/fixed-map/reversed_path_decay.md`, sections 1 and 4.
+- Stable-band normalization: `mathematics/fixed-map/heisenberg_pair_heat_formula.md`, section 5.
 
 Sections 1–5 are elementary project proof, not a numerical claim. The
 inherited analytic FM theorems are inputs; this extension does not reprove

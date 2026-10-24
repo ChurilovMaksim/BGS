@@ -181,7 +181,7 @@ or a speculative saddle approximation. It uses the actual four-branch
 sampling identities and finite Gaussian reciprocity only.
 
 A uniformly controlled saturated-contour deformation and summed tail are
-now proved in [the global rotated-box theorem](../global_rotated_box_trace.md),
+now proved in [the global rotated-box theorem](global_rotated_box_trace.md),
 conservatively for m<=2N, with additional strictly bounded bandwidths
 stated there. The periodic nonlinear factor is not rotated along an
 unbounded imaginary ray. This is a separate theorem; (G7) alone does

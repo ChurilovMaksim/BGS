@@ -297,7 +297,7 @@ Keep
     U_N=exp(i*10^-80*N*A_N) M_N
 
 with the maintained full physical symbol, midpoint/raw dictionary, and all odd
-dimensions. FM-021 in mathematics/position_chain_mixing.md gives the eventual
+dimensions. FM-021 in mathematics/fixed-map/position_chain_mixing.md gives the eventual
 constant singular gap ||P_N-J_N||<=1/2, and the four-branch parametrix supplies
 max|U_xy|^2<=C/N at the same fixed coupling. With these stated project inputs,
 (14)-(17) apply to the actual family at every sequence m_N/N->alpha>0, including
@@ -372,7 +372,7 @@ External primary sources consulted:
 
 Project inputs read:
 
-* ChurilovMaksim/BGS, mathematics/position_chain_mixing.md, blob
+* ChurilovMaksim/BGS, mathematics/fixed-map/position_chain_mixing.md, blob
   362ecbfe57040a99fb160bf757bc74259658dc63.
 * ChurilovMaksim/BGS, mathematics/fixed-map/four_branch_parametrix.md, blob
   587cb2741921571bd327f93a443e3b2d2e92a690.

@@ -26,7 +26,7 @@ The exact output assertions cover:
 
 Arithmetic is exact over Q(zeta_5), modular integers and F5[z]/Phi_7. The
 finite matrices use a division-free permutation-subset determinant. The
-all-depth implication is in mathematics/odd_newest_sector_first_jet.md and
+all-depth implication is in mathematics/fixed-map/odd_newest_sector_first_jet.md and
 its independent review, not in the finite bounds above.
 
 Each subprocess is limited to 180 wall seconds, 180 CPU seconds, 2 GiB address

@@ -3,7 +3,7 @@
 **Claim ID: BGS-FM-016. Status: PROJECT PROOF + AUTHOR SELF-REVIEW.**
 4 October 2026. Fixed-time normalized trace vanishing and starting-noise
 ellipticity below are independent weaker derivations of consequences already
-available from [FM-007](../frozen_seven_cut_reduction.md), not new cancellation.
+available from [FM-007](frozen_seven_cut_reduction.md), not new cancellation.
 The additional scope is overlap rigidity between different quantized maps
 and separation from affine quantizers after fixed classical conjugacy.
 The [packet proof](fixed_time_wavepacket_trace_bound.md) now improves the

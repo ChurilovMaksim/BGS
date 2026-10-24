@@ -70,7 +70,7 @@ an independent elementary dependency closure.
 
 The imported trace proof uses Hilbert–Schmidt Cauchy–Schwarz on a cutoff,
 which replaces a sublevel volume by its square root. The new
-[complete proof](../../mathematics/physical_kick_trace_decay.md) uses a real
+[complete proof](../../mathematics/fixed-map/physical_kick_trace_decay.md) uses a real
 cutoff eta and the positive matrix Q_N(eta)^2. Symmetrizing the Weyl product
 cancels its first-order term; aliases cost O(N^(-2)|eta|_2^2).
 Fourier Cauchy–Schwarz improves the required derivative budgets to C^3 and C^4.
@@ -88,7 +88,7 @@ This is a new argument in this review, self-reviewed separately from the
 verdict on the imported 1/25 proof. It does not improve the unresolved
 Heisenberg-time trace estimate for the full map.
 
-The [second complete note](../../mathematics/physical_trace_polynomial_approximation.md)
+The [second complete note](../../mathematics/fixed-map/physical_trace_polynomial_approximation.md)
 extends the imported pair approximation error to every fixed factorial order:
 O(N^k epsilon) for a norm error epsilon. A degree
 2(59/50)tau N+O((log N)^2) therefore gives a single polynomial sequence with

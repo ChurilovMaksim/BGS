@@ -10,7 +10,7 @@ Final dependency and cross-surface self-review: 22 October 2026.
 ## 1. Exact conventions and the needed error scale
 
 Use the original matrices and the ordinary-half symbol $a$ in
-[TRACE-106](../physical_kick_trace_decay.md), §§1--2. Put $h=(2\pi N)^{-1}$,
+[TRACE-106](physical_kick_trace_decay.md), §§1--2. Put $h=(2\pi N)^{-1}$,
 $t_*=\tau/(2\pi)$ and $C_N=e^{3\pi iN/4}$.
 The four initial phases obey the exact Gauss identity
 
@@ -190,7 +190,7 @@ D\Psi=\begin{pmatrix}1&0\\t_*a_{qq}&1\end{pmatrix}L.
 $$
 
 This gives exactly the four $T_{ij}$ and constants $\mathsf A,\mathsf B$
-defined in [TRACE-109](../inserted_trace_coboundary_20261021.md), and proves
+defined in [TRACE-109](inserted_trace_coboundary.md), and proves
 its one-step trace formula (1).
 
 ## 5. Insertion and consequences

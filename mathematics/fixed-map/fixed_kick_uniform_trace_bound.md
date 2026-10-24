@@ -9,7 +9,7 @@ Final dependency and cross-surface self-review: 22 October 2026.
 ## 1. The exact quantifiers
 
 For the original odd-modulus family of
-[TRACE-106](../physical_kick_trace_decay.md), with unchanged $\tau=10^{-80}$,
+[TRACE-106](physical_kick_trace_decay.md), with unchanged $\tau=10^{-80}$,
 there are $C<\infty$, $N_0<\infty$ and
 
 $$

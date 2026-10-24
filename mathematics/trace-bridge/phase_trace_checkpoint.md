@@ -15,7 +15,7 @@ For the unchanged odd-dimensional actual operator at fixed tau=10^-80,
 there exist map-dependent rho<1 and N0 such that every nonzero ordinary
 cyclic charge block has norm at most rho for odd N>=N0. The charge-pinched
 adjoint has the corresponding ordinary-HS traceless gap. The exact statement
-and proof are [onestep_charge_gap.md](../onestep_charge_gap.md).
+and proof are [onestep_charge_gap.md](../fixed-map/onestep_charge_gap.md).
 
 Only the actual parametrix/nonlinear phase, A2--A5 norm-limit and growing-charge
 arguments, and the scoped FM-021 amplitude/zero-charge estimates are used.
@@ -40,7 +40,7 @@ kappa a N(1-z_N)-2 log N tends to positive infinity, including
 z_N=1-A log N/N for sufficiently large fixed A. The undamped endpoint is
 not proved: the signed marked-switch integral T16 on
 [1-A log N/N,1], with the same occupation/Hamming/high-switch masks, remains
-open. The older [checksum-restricted synthesis](../hamming_low_switch_residual.md)
+open. The older [checksum-restricted synthesis](../fixed-map/hamming_low_switch_residual.md)
 is retained as a valid historical generation. Its extra Egorov/mixing inputs
 are not automatically inherited by the new section-scoped core.
 
@@ -105,8 +105,8 @@ Unlike FM-027, this theorem actually uses Egorov/classical mixing.
 
 ## BGS-FM-029: literal kick/cat fixed-word laws
 
-[literal_kick_phase_law.md](../literal_kick_phase_law.md) and
-[literal_fixed_word_freeness.md](../literal_fixed_word_freeness.md) prove that
+[literal_kick_phase_law.md](../fixed-map/literal_kick_phase_law.md) and
+[literal_fixed_word_freeness.md](../fixed-map/literal_fixed_word_freeness.md) prove that
 for every fixed free-group word w, normalized tr_N w(Q_N,M_N) tends to 1
 for the identity word and 0 otherwise, through all odd N at the literal tau.
 The kick/cat pair has the two-free-Haar normalized *-moment limit. The stated
@@ -115,12 +115,12 @@ residuals follow for distinct fixed words. This is fixed-word moment
 freeness, not strong/operator-norm freeness or a Heisenberg-growing-word law.
 The full operator remains unchanged. Seven-divisible subsequences are retained.
 
-The separately sealed [growing-word extension](../literal_growing_word_window.md)
+The separately sealed [growing-word extension](../fixed-map/literal_growing_word_window.md)
 now proves uniform nonidentity normalized-trace decay through the precise
 window floor(log log log N/(4 log 8)). Its exact Roy effective
 Lindemann--Weierstrass application is independently checked. This window is
 triple-logarithmic, not Heisenberg scale. The separately reviewed
-[strong-freeness obstruction](../literal_strong_freeness_obstruction.md) proves
+[strong-freeness obstruction](../fixed-map/literal_strong_freeness_obstruction.md) proves
 that the fixed commutator polynomial H_N has
 liminf lambda_max(H_N)>=1-10^-148, whereas its free moment law has spectral
 radius sqrt(3)/2. Thus the pair is not strongly asymptotically free; the
@@ -197,18 +197,18 @@ limit. The sealed independent review and 79 exact controls are preserved in
 
 [BGS-TRACE-024](../fixed-map/actual_one_pinch_disappearance.md) closes the actual unmasked q=1 smooth signed occupation-subtracted one-pinch aggregate, combining actual fixed-lag displacement overlap and annealed deletion. Bounded weights apply only to the positive aggregate; the annealed consecutive-block extension does not assert positive block-hierarchy closure. FM-028 C4 and TRACE-023 Abel (A) enter only the annealed leaf. There is no aggregate rate, growing-lag estimate or arbitrary masked/separated-insertion extension.
 
-[BGS-FM-031](../ordinary_compact_stratum_centering.md) gives ordinary stable-stratum centering and complete signed-source cutoff/derivative bounds at fixed odd N>=3, a.e., with original normalized measures. [BGS-TRACE-025](../rounding_simple_spectrum_endpoint_barriers.md) supplies qualified changed-family rounding/splitting barriers, requiring a separating property or estimate rather than a prescribed proof method.
+[BGS-FM-031](../fixed-map/ordinary_compact_stratum_centering.md) gives ordinary stable-stratum centering and complete signed-source cutoff/derivative bounds at fixed odd N>=3, a.e., with original normalized measures. [BGS-TRACE-025](../fixed-map/rounding_simple_spectrum_endpoint_barriers.md) supplies qualified changed-family rounding/splitting barriers, requiring a separating property or estimate rather than a prescribed proof method.
 
-[BGS-TRACE-026](../hook_tree_phase_current_reduction.md) gives corrected exact finite hook/tree/current identities and a conditional controlled-sector Abel reduction. The negative plateau-current limit remains unproved. [The bounded phase-source audit](../../literature/wave2_phase_orbit_source_qualification_20261007.md) adds no graph universality leaf or priority claim.
+[BGS-TRACE-026](../fixed-map/hook_tree_phase_current_reduction.md) gives corrected exact finite hook/tree/current identities and a conditional controlled-sector Abel reduction. The negative plateau-current limit remains unproved. [The bounded phase-source audit](../../literature/wave2_phase_orbit_source_qualification_20261007.md) adds no graph universality leaf or priority claim.
 
 Literal masked T16, the masked insertion/source-extraction/deconvolution hierarchy, actual phase-Ward overlap (13), balanced microscopic identification, higher factorial TRACE-005 and deterministic BGS remain OPEN. The separately sealed bounded Ward covariance continuation is recorded below.
 
 
 ## Reviewed weighted coherence continuation
 
-[BGS-TRACE-027](../weighted_phase_coherence_covariance.md) gives finite weighted covariance and classical Green–Kubo structure, complete signed Ward action on the upper half of a slow growing window, plus the actual unconjugated transpose-product/degree-two corollary. Original ZIP receipts and checker remain unavailable; newly generated independent exact controls and exact proof export are sealed. Actual absorbed Ward (13), balanced microscopic law, signed masked T16, TRACE-005 and BGS remain OPEN.
+[BGS-TRACE-027](../fixed-map/weighted_phase_coherence_covariance.md) gives finite weighted covariance and classical Green–Kubo structure, complete signed Ward action on the upper half of a slow growing window, plus the actual unconjugated transpose-product/degree-two corollary. Original ZIP receipts and checker remain unavailable; newly generated independent exact controls and exact proof export are sealed. Actual absorbed Ward (13), balanced microscopic law, signed masked T16, TRACE-005 and BGS remain OPEN.
 
 
 ## Reviewed Wave3 unmasked closure
 
-[TRACE-028](../right_frame_unmasked_pinch_hierarchy.md) closes the complete unmasked separated/convex hierarchy via actual RIGHT-frame control and a new centered three-pinch Schatten tail. [TRACE-029](../fixed-map/convex_pinch_weak_noise_and_deconvolution.md) gives complete signed bounded-u stability and exact deconvolution bounds, while the actual full unsigned deconvolved correction diverges in the required large-log window. The identity cancels in signed occupation subtraction; masks/extraction, signed boundary deconvolution, undamped zero insertion, T16, balanced identification, Ward(13), TRACE005 and BGS remain OPEN.
+[TRACE-028](../fixed-map/right_frame_unmasked_pinch_hierarchy.md) closes the complete unmasked separated/convex hierarchy via actual RIGHT-frame control and a new centered three-pinch Schatten tail. [TRACE-029](../fixed-map/convex_pinch_weak_noise_and_deconvolution.md) gives complete signed bounded-u stability and exact deconvolution bounds, while the actual full unsigned deconvolved correction diverges in the required large-log window. The identity cancels in signed occupation subtraction; masks/extraction, signed boundary deconvolution, undamped zero insertion, T16, balanced identification, Ward(13), TRACE005 and BGS remain OPEN.

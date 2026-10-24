@@ -170,7 +170,7 @@ microscopic CUE law.
 
 ## Separately reviewed one-step companion
 
-[Uniform squared-trace transcendence](../uniform_trace_square_transcendence.md)
+[Uniform squared-trace transcendence](uniform_trace_square_transcendence.md)
 now covers every odd N>=3 except7 for one-step U(t) at nonzero real algebraic
 t. This companion leaves the all-power theorem above and its review boundary
 unchanged; no higher-power seven-divisible transcendence is inferred.

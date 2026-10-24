@@ -41,7 +41,7 @@ copies; they are not proof certificates.
 
 ## Dictionary to the maintained argument
 
-In [FM-006](../mathematics/nonlinear_bracket_pressure.md), take
+In [FM-006](../mathematics/fixed-map/nonlinear_bracket_pressure.md), take
 $M=\mathbb T^2$, $f=G_\kappa=S\circ\Phi_g^\kappa$ and $\mu=m$,
 normalized smooth area. The analytic area-preserving Anosov properties are
 the named [FM-001](../mathematics/fixed-map/fixed_model_symmetry_theorem.md) inputs.

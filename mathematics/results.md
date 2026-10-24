@@ -16,17 +16,17 @@ refereeing. Microscopic signed cancellation and BGS remain open.
 
 [Thematic results and individual proofs](spectral_research/README.md) integrate
 all fourteen rounds. [TRACE-108](fixed-map/coordinate_return_quartic.md) is the
-quartic one-step intensity theorem; [TRACE-111](pell_weighted_curvature_20261021.md)
+quartic one-step intensity theorem; [TRACE-111](fixed-map/pell_weighted_curvature.md)
 sums the initial gradient/Hessian and proves an early inflection.
-[TRACE-109](inserted_trace_coboundary_20261021.md) and
-[TRACE-110](spectral_orbit_distance_20261021.md) now include proved global asymptotic applications; their
+[TRACE-109](fixed-map/inserted_trace_coboundary.md) and
+[TRACE-110](fixed-map/spectral_orbit_distance.md) now include proved global asymptotic applications; their
 21 October input qualifications were closed on 22 October. The fixed-coupling signed
 Heisenberg hierarchy remains open. [Review](../record/spectral_research/spectral_final_integration.md).
 
 ## Physical-kick bounds, 21 October 2026
 
-[Uniform trace decay and scalar-distance limits](physical_kick_trace_decay.md)
-(TRACE-106) and [all-order polynomial approximation with Pell alias limits](physical_trace_polynomial_approximation.md)
+[Uniform trace decay and scalar-distance limits](fixed-map/physical_kick_trace_decay.md)
+(TRACE-106) and [all-order polynomial approximation with Pell alias limits](fixed-map/physical_trace_polynomial_approximation.md)
 (TRACE-107) are now recorded with full proofs. The imported exponent 1/25 is
 strengthened to 1/9 for the single kick. The original microscopic trace hierarchy
 remains open. [Review scope](../record/spectral_research/spectral_master_audit.md).
@@ -70,11 +70,11 @@ The all-order process implication no longer requires an independent UI premise.
 The actual signed hierarchy, physical parameter moment and positive Hardy
 excess limits remain unproved. Resonance deletion is sufficient only.
 
-- **BGS-FM-032** — [Prime cyclic cohomology and parity-resolved susceptibility](../mathematics/quantum_cyclic_cohomology_20261015.md); proved within its stated scope.
+- **BGS-FM-032** — [Prime cyclic cohomology and parity-resolved susceptibility](fixed-map/quantum_cyclic_cohomology.md); proved within its stated scope.
 - **BGS-TRACE-084** — [Mesoscopic block number-variance criterion and collective trace-energy boundary](trace-bridge/resonant_mesoscopic_criterion.md); proved within its stated scope.
 - **BGS-TRACE-085** — [Exact root lifting and failure of necessity for resonance-sector deletion](trace-bridge/root_lifting_sector_boundary.md); proved within its stated scope.
 - **BGS-TRACE-086** — [All-order signed diagonal hierarchy implies local Sine2 and local moment UI](trace-bridge/all_order_process_closure.md); proved within its stated scope.
-- **BGS-FM-033** — [All-label-scale one-step Weyl overlap and prime-orbit corollaries](../mathematics/scaled_weyl_overlap_20261015.md); conditional within its stated scope.
+- **BGS-FM-033** — [All-label-scale one-step Weyl overlap and prime-orbit corollaries](fixed-map/scaled_weyl_overlap.md); conditional within its stated scope.
 - **BGS-CUE-002** — [All-positive-frequency CUE trace-square covariance and exact coupling derivative](trace-bridge/full_pair_cue_covariance.md); proved within its stated scope.
 - **BGS-TRACE-087** — [Exact parameter bandwidth and quantitative de-averaging to a fixed coupling](trace-bridge/parameter_deaveraging.md); proved within its stated scope.
 - **BGS-TRACE-088** — [Rooted BEST count, extensive equal-edge mass and unitary compensation](trace-bridge/equal_edge_occupation.md); proved within its stated scope.
@@ -217,7 +217,7 @@ This is the current reading index, not a second status authority. [The claim led
 
 ## Fixed deterministic map
 
-The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the corrected ordinary Weyl symbol, and explicit exceptional dimensions. Structural and algebraic results do not themselves control Heisenberg traces. [Position mixing](position_chain_mixing.md) now controls the cyclic path contribution and a specified marked three-link contraction; [reversal decay](reversed_path_decay.md) controls the reverse-cyclic family. These do not bound the complete signed noncyclic remainder.
+The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the corrected ordinary Weyl symbol, and explicit exceptional dimensions. Structural and algebraic results do not themselves control Heisenberg traces. [Position mixing](fixed-map/position_chain_mixing.md) now controls the cyclic path contribution and a specified marked three-link contraction; [reversal decay](fixed-map/reversed_path_decay.md) controls the reverse-cyclic family. These do not bound the complete signed noncyclic remainder.
 
 [Theorems, reading path and complete sources](topics/fixed-map/README.md).
 
@@ -369,20 +369,20 @@ The previous catalogue is retained byte-for-byte in [the dated snapshot](../arch
 
 The actual pair commutant is classified for odd N>=3 with the exact N=7
 exception ([FM-024](fixed-map/actual_seven_primary_commutant.md)); its 7∤N leaf
-now has fresh independent review. [FM-025](uniform_five_cluster_simplicity.md)
-gives the pure-five kick family, while [FM-026](literal_time_multiplicity_bounds.md)
+now has fresh independent review. [FM-025](fixed-map/uniform_five_cluster_simplicity.md)
+gives the pure-five kick family, while [FM-026](fixed-map/literal_time_multiplicity_bounds.md)
 gives literal-time multiplicity<=7 and precise simple-eigenvalue counts on
 N=7*5^e. Finite U-simplicity cases remain explicitly bounded. The
-[FM-010 companion](uniform_trace_square_transcendence.md) concerns
+[FM-010 companion](fixed-map/uniform_trace_square_transcendence.md) concerns
 one-step squared traces for odd N>=3,N!=7.
 
-[TRACE-019](selected_weighted_coefficient.md) controls a selected
+[TRACE-019](fixed-map/selected_weighted_coefficient.md) controls a selected
 full-weight WKB family. Separately, [TRACE-020](fixed-map/factorial_ordered_diagonal.md)
 removes the specified ordered-diagonal sector from every fixed-order factorial
 Fourier expression at O_k(log^(2k)N/N), using actual entrywise flatness alone.
 Its collective and exponential long-cycle companions have distinct bounds;
 none is identified with WKB path masks.
-[TRACE-021](hamming_low_switch_residual.md) removes disjoint balanced
+[TRACE-021](fixed-map/hamming_low_switch_residual.md) removes disjoint balanced
 and off-charge Hamming sectors plus a high-Hamming low-switch family from the
 actual pair trace, with exponentially small error. One explicit signed
 residual projector remains unestimated; this does not settle higher orders.
@@ -395,17 +395,17 @@ retain component provenance; current statements are the linked theorem owners.
 
 ## Reviewed Wave2 bounded theorem family
 
-[TRACE-024](fixed-map/actual_one_pinch_disappearance.md): actual unmasked one-pinch disappearance (bounded positive/smooth signed weights, no rate). [FM-031](ordinary_compact_stratum_centering.md): a.e. ordinary centering and fixed-N complete signed-source cutoff. [TRACE-025](rounding_simple_spectrum_endpoint_barriers.md): changed-family endpoint barriers with a separating-estimate restriction. [TRACE-026](hook_tree_phase_current_reduction.md): corrected exact finite hook/tree/current identities and conditional Abel reduction. [Phase source audit](../literature/wave2_phase_orbit_source_qualification_20261007.md) adds no universality/priority theorem. Masked T16, balanced law, TRACE-005 and BGS remain OPEN.
+[TRACE-024](fixed-map/actual_one_pinch_disappearance.md): actual unmasked one-pinch disappearance (bounded positive/smooth signed weights, no rate). [FM-031](fixed-map/ordinary_compact_stratum_centering.md): a.e. ordinary centering and fixed-N complete signed-source cutoff. [TRACE-025](fixed-map/rounding_simple_spectrum_endpoint_barriers.md): changed-family endpoint barriers with a separating-estimate restriction. [TRACE-026](fixed-map/hook_tree_phase_current_reduction.md): corrected exact finite hook/tree/current identities and conditional Abel reduction. [Phase source audit](../literature/wave2_phase_orbit_source_qualification_20261007.md) adds no universality/priority theorem. Masked T16, balanced law, TRACE-005 and BGS remain OPEN.
 
 
 ## Reviewed weighted coherence covariance
 
-[TRACE-027](weighted_phase_coherence_covariance.md): exact finite covariance, nontrivial Green–Kubo term, complete signed Ward upper-half slow-window law, and actual degree-two mixed-moment exception removal. No microscopic Ward (13) or all-fixed-degree CUE identification.
+[TRACE-027](fixed-map/weighted_phase_coherence_covariance.md): exact finite covariance, nontrivial Green–Kubo term, complete signed Ward upper-half slow-window law, and actual degree-two mixed-moment exception removal. No microscopic Ward (13) or all-fixed-degree CUE identification.
 
 
 ## Reviewed complete unmasked pinch continuation
 
-[TRACE-028](right_frame_unmasked_pinch_hierarchy.md) closes actual/annealed complete separated averages and the all-z unmasked convex hierarchy through a new centered S3 tail. [TRACE-029](fixed-map/convex_pinch_weak_noise_and_deconvolution.md) gives exact finite-N resummation bounds, bounded-u signed weak-noise stability and the sharp actual unsigned large-log deconvolution obstruction. Identity cancellation and all mask/extraction/zero-insertion limits remain explicit.
+[TRACE-028](fixed-map/right_frame_unmasked_pinch_hierarchy.md) closes actual/annealed complete separated averages and the all-z unmasked convex hierarchy through a new centered S3 tail. [TRACE-029](fixed-map/convex_pinch_weak_noise_and_deconvolution.md) gives exact finite-N resummation bounds, bounded-u signed weak-noise stability and the sharp actual unsigned large-log deconvolution obstruction. Identity cancellation and all mask/extraction/zero-insertion limits remain explicit.
 
 
 [Deleted-clock Hardy boundary](trace-bridge/deleted_clock_hardy_boundary.md): an exact positive excess of order 1/N can vanish despite bounded fixed traces.

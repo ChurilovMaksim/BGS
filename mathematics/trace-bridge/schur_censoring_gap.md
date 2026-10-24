@@ -237,7 +237,7 @@ Coordinate selection may be adapted to the past; no phase-conditioned future
 event is inserted into the martingale argument.
 
 For the maintained fixed-coupling odd-dimensional map,
-[FM-022](../reversed_path_decay.md) has precisely this R_N and proves
+[FM-022](../fixed-map/reversed_path_decay.md) has precisely this R_N and proves
 ||R_N||op->0, without an effective startup. Thus p=2ceil(ell),
 m=ceil(ell^(3+kappa)) and any fixed g in (0,1), with a fixed sufficiently
 small rho_R, give O(ell^(-kappa)) intersection failure. A finite union bound

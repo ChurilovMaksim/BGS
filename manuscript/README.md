@@ -71,7 +71,7 @@ remain unpromoted. The consolidated build is not a blanket acceptance of
 the submitted 293-page article.
 
 The fixed-map chapter includes FM-018/019's auxiliary gap results. FM-020's
-[original-channel theorem](../mathematics/original_channel_gap.md) closes the
+[original-channel theorem](../mathematics/fixed-map/original_channel_gap.md) closes the
 original two-copy microscopic-rate question. Nonlinear quenched control,
 higher-copy estimates, signed noise removal and deterministic BGS retain
 separate open boundaries. Earlier wording about the original rate is
@@ -158,7 +158,7 @@ remains useful, but later sections must be read subject to the current
 For readers interested in the original central question, use this route:
 [exact model and fixed-map frontier](../mathematics/fixed-map/fixed_map_resolvent_frontier.md)
 → [joint-trace bridge](../mathematics/trace-bridge/trace_to_local_statistics_bridge.md)
-→ [actual-map intensity/path theorems](../mathematics/position_chain_mixing.md)
+→ [actual-map intensity/path theorems](../mathematics/fixed-map/position_chain_mixing.md)
 → [balanced pair frontiers](../mathematics/phase_ward_identity.md)
 → [still-open obligations](../mathematics/open_questions.md).
 For the broader mathematical programme, follow the

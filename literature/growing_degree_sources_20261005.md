@@ -41,7 +41,7 @@ degree outside that stable range.
 The odd-N frame and packet construction are the maintained
 [FM-013 proof](../mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md).
 The degree/Jacobian return-volume bound is
-[FM-007](../mathematics/frozen_seven_cut_reduction.md), (11), and retains
+[FM-007](../mathematics/fixed-map/frozen_seven_cut_reduction.md), (11), and retains
 the same forward conjugation map $G$ and inverse packet-center map $F$.
 The new exponential seminorm uniformity is an internal proof obligation;
 neither a fixed-time source statement nor a finite numerical replay

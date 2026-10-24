@@ -2,7 +2,7 @@
 
 This is a corollary of the global scalar theorem plus the already maintained FM-021 proof, not a new quantum-map estimate. The threshold remains noneffective.
 
-In `/workspace/shared/BGS/mathematics/position_chain_mixing.md`, Section 2, the maintained actual kernel is
+In `/workspace/shared/BGS/mathematics/fixed-map/position_chain_mixing.md`, Section 2, the maintained actual kernel is
 
 U_jk=e(3N/8) N^(-1/2)/2 sum_(r=0)^3 exp(2pi i N S_r) a_r + O(N^(-3/2)),
 

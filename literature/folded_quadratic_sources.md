@@ -9,7 +9,7 @@ directly; no external theorem is substituted for an actual-map estimate.
 
 - [TRACE-011](../mathematics/trace-bridge/resonant_cubic_density_control.md): positive
   smoothing, multiplier kernels, exact factorial budget, critical clusters.
-- [TRACE-009](../mathematics/prime_resonant_sector.md): ordered block,
+- [TRACE-009](../mathematics/fixed-map/prime_resonant_sector.md): ordered block,
   prime orders, resonant pair mass and Rains reference law.
 - [Earlier folded control](../supplement/fixed_map/report-audit/folded_spectrum_control.md):
   local regularity/short traces do not force resonant pair decay; it is
@@ -18,7 +18,7 @@ directly; no external theorem is substituted for an actual-map estimate.
   and [sparse orbit control](../supplement/fixed_map/design-return/sparse_orbit_theorem.md):
   previous clustering and finite coherence, credited without claiming a
   new BGS obstruction at p=239.
-- [FM-007](../mathematics/frozen_seven_cut_reduction.md): factorial
+- [FM-007](../mathematics/fixed-map/frozen_seven_cut_reduction.md): factorial
   normalization; cutting the generator retains M_N.
 
 ## Primary literature and limited search

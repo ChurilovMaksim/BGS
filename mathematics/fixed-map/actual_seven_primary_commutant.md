@@ -14,9 +14,9 @@ N>=3 except N=7. This is an explicit combination of separately scoped proofs:
   and uses no Lindemann–Weierstrass input. The separate literal-U
   algebraic-entry corollary below still requires that external theorem.
 - For 49|N,5∤N, the higher-seven proof below applies.
-- For 7|N,49∤N,N>7, the [chain-trace proof](../ramified_first_seven_commutant.md)
+- For 7|N,49∤N,N>7, the [chain-trace proof](ramified_first_seven_commutant.md)
   includes arbitrary five-adic ramification.
-- For 245|N, the [corrected v2 normalized-lattice proof](../ramified_higher_seven_commutant.md)
+- For 245|N, the [corrected v2 normalized-lattice proof](ramified_higher_seven_commutant.md)
   closes the last family. Its finite-base gauge correction and independent
   effective/unit-upper witnesses are preserved explicitly.
 

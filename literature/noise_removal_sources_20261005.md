@@ -2,7 +2,7 @@
 
 Checked 5 October 2026. This is an exact implication/source audit, not a
 priority or exhaustive literature review. The new proof is
-[microscopic_noise_removal.md](../mathematics/microscopic_noise_removal.md).
+[microscopic_noise_removal.md](../mathematics/fixed-map/microscopic_noise_removal.md).
 
 | Primary source actually read | Exact locator | Translation and permitted use | Unsupported inference |
 |---|---|---|---|

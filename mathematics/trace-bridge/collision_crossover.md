@@ -456,7 +456,7 @@ Primary sources and explicit credit:
    and compensating unitarity correlations are not claimed as discoveries here.
 3. The prior attached edge-occupation THEOREM.md, 15 October 2026, for the rooted
    BEST counting setup; all needed formulas are restated and checked above.
-4. ChurilovMaksim/BGS, mathematics/position_chain_mixing.md,
+4. ChurilovMaksim/BGS, mathematics/fixed-map/position_chain_mixing.md,
    blob 362ecbfe57040a99fb160bf757bc74259658dc63, and its stated
    mathematics/fixed-map/four_branch_parametrix.md dependency.
 

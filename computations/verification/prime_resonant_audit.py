@@ -219,7 +219,7 @@ def main():
             'spectral_controls': spectral_checks(),
             'non_claims': ['frozen-coupling asymptotics', 'sector cancellation for the actual map',
                            'BGS solution', 'priority', 'external independent referee', 'Lean compilation']}
-    sources = ['mathematics/prime_resonant_sector.md',
+    sources = ['mathematics/fixed-map/prime_resonant_sector.md',
                'computations/verification/prime_resonant_audit.py',
                'computations/verification/heisenberg_note_audit.py']
     data['source_sha256'] = {s: hashlib.sha256((ROOT/s).read_bytes()).hexdigest() for s in sources}

@@ -131,7 +131,7 @@ Thus the same holds for every fixed derivative of $d_{j,m}$ and $v_m$.
 Use the exact integer-label quantization
 $Q_N(c)=\sum\widehat c(k,l)(-1)^{kl}T_N(l,k)$.
 The single-kick Egorov proof and Weyl estimates in
-[TRACE-106](../physical_kick_trace_decay.md), §§2--3, give
+[TRACE-106](physical_kick_trace_decay.md), §§2--3, give
 
 $$
 \|U_N^mQ_N(b_j)U_N^{-m}-Q_N(b_j\circ F^m)\|

@@ -107,80 +107,80 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Weyl-frequency coercivity and a regularized transfer gap for the actual map](../mathematics/fixed-map/frozen_operator_transfer_coercivity.md) | `BGS-FM-018` (proved) |
 | [Exact periodic-point grids and Fourier annihilators for the fixed cat](../mathematics/fixed-map/frozen_periodic_point_annihilator.md) | `BGS-FM-012` (proved) |
 | [Uniform finite type of translated physical-symbol differences](../mathematics/fixed-map/frozen_phase_finite_type.md) | `BGS-FM-014` (proved) |
-| [Seven-cut reduction at the exact frozen coupling](../mathematics/frozen_seven_cut_reduction.md) | `BGS-FM-007` (proved) |
-| [Spectral flow and exact controls for fixed-map shortcuts](../mathematics/frozen_spectral_flow_controls.md) | Consult proof and full ledger |
-| [Global rotated-box trace representation and conditional contour tails](../mathematics/global_rotated_box_trace.md) | Consult proof and full ledger |
-| [Growing neutral degree: exact evaluation cost and the actual logarithmic window](../mathematics/growing_degree_trace_projection.md) | `BGS-FLOW-020` (proved) |
-| [A genuine residual after disjoint Hamming and low-switch removal](../mathematics/hamming_low_switch_residual.md) | Consult proof and full ledger |
-| [Exact heat compensation of a Heisenberg pair test](../mathematics/heisenberg_pair_heat_formula.md) | `BGS-FLOW-021` (proved) |
-| [Corrected hook-cycle, tree and phase-current reduction](../mathematics/hook_tree_phase_current_reduction.md) | `BGS-TRACE-026` (proved) |
-| [Inserted trace and the exact obstruction to a quantum coboundary](../mathematics/inserted_trace_coboundary_20261021.md) | `BGS-TRACE-109` (proved) |
-| [Intermediate-old-layer rotated returns: exact operator and obstruction](../mathematics/intermediate_return_operator.md) | Consult proof and full ledger |
-| [Fixed-word freeness of the literal kick and cat factors](../mathematics/literal_fixed_word_freeness.md) | Consult proof and full ledger |
-| [An explicit triple-logarithmic window for the literal mixed-word traces](../mathematics/literal_growing_word_window.md) | Consult proof and full ledger |
-| [Literal kick-phase law and post-wrapping cat-comparison obstruction](../mathematics/literal_kick_phase_law.md) | Consult proof and full ledger |
-| [An actual common-fixed-point outlier rules out strong freeness](../mathematics/literal_strong_freeness_obstruction.md) | Consult proof and full ledger |
-| [Literal-time multiplicity bounds for N=7*5^e](../mathematics/literal_time_multiplicity_bounds.md) | `BGS-FM-026` (proved) |
-| [Transport of local moments without a maximum-displacement estimate](../mathematics/local_moment_transport.md) | `BGS-FLOW-016` (proved) |
-| [A growing low-switch family inside the actual deterministic off-charge defect](../mathematics/low_switch_offcharge_family.md) | Consult proof and full ledger |
-| [Uniform cancellation of macroscopic coordinate-translation path pairs](../mathematics/macroscopic_coordinate_translation.md) | Consult proof and full ledger |
-| [Exact microscopic noise defect and barriers to deterministic transfer](../mathematics/microscopic_noise_removal.md) | `BGS-FLOW-015` (proved) |
-| [Ordered-diagonal interfaces for several and mismatched cycles](../mathematics/mixed_ordered_diagonal.md) | Consult proof and full ledger |
-| [Pressure growth of nonlinear brackets in the fixed frozen model](../mathematics/nonlinear_bracket_pressure.md) | `BGS-FM-006` (proved) |
-| [Odd-depth newest-sector first-order splitting](../mathematics/odd_newest_sector_first_jet.md) | Consult proof and full ledger |
-| [Second-order splitting of the deepest odd-depth core](../mathematics/odd_oldform_second_jet.md) | Consult proof and full ledger |
-| [Combining the odd newest sector and residual-125 core](../mathematics/odd_sector_count_combination.md) | Consult proof and full ledger |
-| [Off-diagonal digit alphabets: an exact parity classification](../mathematics/offdiagonal_digit_fup.md) | `BGS-FUP-001` (proved) |
-| [The complete oldform tower and its zero first-order blocks](../mathematics/oldform_tower_compression.md) | Consult proof and full ledger |
-| [Strict one-step contraction of every nonzero actual charge block](../mathematics/onestep_charge_gap.md) | Consult proof and full ledger |
-| [Centered ordered-diagonal cyclic trace](../mathematics/ordered_diagonal_cyclic_trace.md) | Consult proof and full ledger |
-| [Ordinary compact-stratum centering and fixed-N cutoff](../mathematics/ordinary_compact_stratum_centering.md) | `BGS-FM-031` (proved) |
-| [Original ordered two-pair channel: logarithmic-loss gap](../mathematics/original_channel_gap.md) | `BGS-FM-020` (proved) |
-| [Actual paired-box coordinates and the exact autocorrelation character](../mathematics/paired_character_identity.md) | Consult proof and full ledger |
-| [Full weighted gradient, Pell curvature and the forced early inflection](../mathematics/pell_weighted_curvature_20261021.md) | `BGS-TRACE-111` (proved) |
-| [Actual phase-map monotonicity, Frostman bound and averaged Fourier squares](../mathematics/phase_map_frostman.md) | Consult proof and full ledger |
-| [Physical homoclinic phase and the actual leading-weight dictionary](../mathematics/physical_homoclinic_weights.md) | Consult proof and full ledger |
-| [Uniform trace decay of the physical kick](../mathematics/physical_kick_trace_decay.md) | `BGS-TRACE-106` (proved) |
-| [Physical polynomial approximation and its all-order trace error](../mathematics/physical_trace_polynomial_approximation.md) | `BGS-TRACE-107` (proved) |
-| [Principal WKB polar quantization and smooth spectral transport](../mathematics/polar_wkb_quantization_stability.md) | Consult proof and full ledger |
-| [Position-chain mixing, cyclic ramp and a marked three-link estimate](../mathematics/position_chain_mixing.md) | `BGS-FM-021` (proved) |
-| [Prime resonant blocks: exact sector criterion and spectral comb](../mathematics/prime_resonant_sector.md) | `BGS-TRACE-009` (proved) |
-| [Quadratic coboundary noise: covariance, ellipticity, and its transfer boundary](../mathematics/quadratic_coboundary_noise.md) | `BGS-FLOW-003` (proved) |
-| [Explicit ambient-space and cycle interface](../mathematics/quadratic_cycle_interface.md) | Consult proof and full ledger |
-| [Clock relaxation under quadratic noise and the noise-removal boundary](../mathematics/quadratic_noise_clock_limit.md) | `BGS-FLOW-007` (proved) |
-| [Quantitative coupling of quadratic noise and unitary Brownian motion](../mathematics/quadratic_noise_coupling.md) | `BGS-FLOW-004` (proved) |
-| [Historical Faure trace adaptation and the now-proved bounded input](../mathematics/quadratic_noise_fixed_time_input.md) | Consult proof and full ledger |
-| [Reversible correction and short-time path comparison](../mathematics/quadratic_noise_reversibility.md) | `BGS-FLOW-005` (proved) |
-| [Fixed-trace limits and a fixed-time coupling obstruction](../mathematics/quadratic_noise_trace_fluctuations.md) | `BGS-FLOW-006` (proved) |
-| [Whole quadratic occupation sector: true projection and signed trace](../mathematics/quadratic_occupation_sector.md) | Consult proof and full ledger |
-| [First nonlinear slow mode: actual source and two compressed frames](../mathematics/quadratic_slow_source.md) | Consult proof and full ledger |
-| [Signed cyclic coefficient of the first nonlinear slow mode](../mathematics/quadratic_slow_source_signed.md) | Consult proof and full ledger |
-| [Quantum cyclic cohomology and a parity-resolved spectral susceptibility for the frozen BGS kick](../mathematics/quantum_cyclic_cohomology_20261015.md) | `BGS-FM-032` (proved) |
-| [The exact box factor under one homoclinic insertion](../mathematics/quantum_homoclinic_first_loop.md) | Consult proof and full ledger |
-| [Chain-trace closure at the first seven-primary level, including ramification at 5](../mathematics/ramified_first_seven_commutant.md) | Consult proof and full ledger |
-| [A q-divided-power lattice reduction for the remaining ramified higher-seven family](../mathematics/ramified_higher_seven_commutant.md) | Consult proof and full ledger |
-| [Residual-125 packets and uniform second-order splitting](../mathematics/residual125_uniform_splitting.md) | Consult proof and full ledger |
-| [Residual-25 affine-return discriminator](../mathematics/residual25_affine_dictionary.md) | Consult proof and full ledger |
-| [Reversed-coordinate-path decay at the fixed physical coupling](../mathematics/reversed_path_decay.md) | `BGS-FM-022` (proved) |
-| [BGS-TRACE-028: actual right frame and complete unmasked pinch hierarchy](../mathematics/right_frame_unmasked_pinch_hierarchy.md) | `BGS-TRACE-028` (proved) |
-| [An actual high-dimensional LOCAL first-loop resummation](../mathematics/rotated_local_first_loop.md) | Consult proof and full ledger |
-| [The new charge gap survives microscopic spectral rounding](../mathematics/rounding_gap_obstruction.md) | Consult proof and full ledger |
-| [Rounded and simple-spectrum endpoint barriers](../mathematics/rounding_simple_spectrum_endpoint_barriers.md) | `BGS-TRACE-025` (proved) |
-| [Scale-normalized positive-quantization bound for the unchanged BGS kick](../mathematics/scaled_weyl_overlap_20261015.md) | `BGS-FM-033` (conditional) |
-| [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
+| [Seven-cut reduction at the exact frozen coupling](../mathematics/fixed-map/frozen_seven_cut_reduction.md) | `BGS-FM-007` (proved) |
+| [Spectral flow and exact controls for fixed-map shortcuts](../mathematics/fixed-map/frozen_spectral_flow_controls.md) | Consult proof and full ledger |
+| [Global rotated-box trace representation and conditional contour tails](../mathematics/fixed-map/global_rotated_box_trace.md) | Consult proof and full ledger |
+| [Growing neutral degree: exact evaluation cost and the actual logarithmic window](../mathematics/fixed-map/growing_degree_trace_projection.md) | `BGS-FLOW-020` (proved) |
+| [A genuine residual after disjoint Hamming and low-switch removal](../mathematics/fixed-map/hamming_low_switch_residual.md) | Consult proof and full ledger |
+| [Exact heat compensation of a Heisenberg pair test](../mathematics/fixed-map/heisenberg_pair_heat_formula.md) | `BGS-FLOW-021` (proved) |
+| [Corrected hook-cycle, tree and phase-current reduction](../mathematics/fixed-map/hook_tree_phase_current_reduction.md) | `BGS-TRACE-026` (proved) |
+| [Inserted trace and the exact obstruction to a quantum coboundary](../mathematics/fixed-map/inserted_trace_coboundary.md) | `BGS-TRACE-109` (proved) |
+| [Intermediate-old-layer rotated returns: exact operator and obstruction](../mathematics/fixed-map/intermediate_return_operator.md) | Consult proof and full ledger |
+| [Fixed-word freeness of the literal kick and cat factors](../mathematics/fixed-map/literal_fixed_word_freeness.md) | Consult proof and full ledger |
+| [An explicit triple-logarithmic window for the literal mixed-word traces](../mathematics/fixed-map/literal_growing_word_window.md) | Consult proof and full ledger |
+| [Literal kick-phase law and post-wrapping cat-comparison obstruction](../mathematics/fixed-map/literal_kick_phase_law.md) | Consult proof and full ledger |
+| [An actual common-fixed-point outlier rules out strong freeness](../mathematics/fixed-map/literal_strong_freeness_obstruction.md) | Consult proof and full ledger |
+| [Literal-time multiplicity bounds for N=7*5^e](../mathematics/fixed-map/literal_time_multiplicity_bounds.md) | `BGS-FM-026` (proved) |
+| [Transport of local moments without a maximum-displacement estimate](../mathematics/fixed-map/local_moment_transport.md) | `BGS-FLOW-016` (proved) |
+| [A growing low-switch family inside the actual deterministic off-charge defect](../mathematics/fixed-map/low_switch_offcharge_family.md) | Consult proof and full ledger |
+| [Uniform cancellation of macroscopic coordinate-translation path pairs](../mathematics/fixed-map/macroscopic_coordinate_translation.md) | Consult proof and full ledger |
+| [Exact microscopic noise defect and barriers to deterministic transfer](../mathematics/fixed-map/microscopic_noise_removal.md) | `BGS-FLOW-015` (proved) |
+| [Ordered-diagonal interfaces for several and mismatched cycles](../mathematics/fixed-map/mixed_ordered_diagonal.md) | Consult proof and full ledger |
+| [Pressure growth of nonlinear brackets in the fixed frozen model](../mathematics/fixed-map/nonlinear_bracket_pressure.md) | `BGS-FM-006` (proved) |
+| [Odd-depth newest-sector first-order splitting](../mathematics/fixed-map/odd_newest_sector_first_jet.md) | Consult proof and full ledger |
+| [Second-order splitting of the deepest odd-depth core](../mathematics/fixed-map/odd_oldform_second_jet.md) | Consult proof and full ledger |
+| [Combining the odd newest sector and residual-125 core](../mathematics/fixed-map/odd_sector_count_combination.md) | Consult proof and full ledger |
+| [Off-diagonal digit alphabets: an exact parity classification](../mathematics/fixed-map/offdiagonal_digit_fup.md) | `BGS-FUP-001` (proved) |
+| [The complete oldform tower and its zero first-order blocks](../mathematics/fixed-map/oldform_tower_compression.md) | Consult proof and full ledger |
+| [Strict one-step contraction of every nonzero actual charge block](../mathematics/fixed-map/onestep_charge_gap.md) | Consult proof and full ledger |
+| [Centered ordered-diagonal cyclic trace](../mathematics/fixed-map/ordered_diagonal_cyclic_trace.md) | Consult proof and full ledger |
+| [Ordinary compact-stratum centering and fixed-N cutoff](../mathematics/fixed-map/ordinary_compact_stratum_centering.md) | `BGS-FM-031` (proved) |
+| [Original ordered two-pair channel: logarithmic-loss gap](../mathematics/fixed-map/original_channel_gap.md) | `BGS-FM-020` (proved) |
+| [Actual paired-box coordinates and the exact autocorrelation character](../mathematics/fixed-map/paired_character_identity.md) | Consult proof and full ledger |
+| [Full weighted gradient, Pell curvature and the forced early inflection](../mathematics/fixed-map/pell_weighted_curvature.md) | `BGS-TRACE-111` (proved) |
+| [Actual phase-map monotonicity, Frostman bound and averaged Fourier squares](../mathematics/fixed-map/phase_map_frostman.md) | Consult proof and full ledger |
+| [Physical homoclinic phase and the actual leading-weight dictionary](../mathematics/fixed-map/physical_homoclinic_weights.md) | Consult proof and full ledger |
+| [Uniform trace decay of the physical kick](../mathematics/fixed-map/physical_kick_trace_decay.md) | `BGS-TRACE-106` (proved) |
+| [Physical polynomial approximation and its all-order trace error](../mathematics/fixed-map/physical_trace_polynomial_approximation.md) | `BGS-TRACE-107` (proved) |
+| [Principal WKB polar quantization and smooth spectral transport](../mathematics/fixed-map/polar_wkb_quantization_stability.md) | Consult proof and full ledger |
+| [Position-chain mixing, cyclic ramp and a marked three-link estimate](../mathematics/fixed-map/position_chain_mixing.md) | `BGS-FM-021` (proved) |
+| [Prime resonant blocks: exact sector criterion and spectral comb](../mathematics/fixed-map/prime_resonant_sector.md) | `BGS-TRACE-009` (proved) |
+| [Quadratic coboundary noise: covariance, ellipticity, and its transfer boundary](../mathematics/fixed-map/quadratic_coboundary_noise.md) | `BGS-FLOW-003` (proved) |
+| [Explicit ambient-space and cycle interface](../mathematics/fixed-map/quadratic_cycle_interface.md) | Consult proof and full ledger |
+| [Clock relaxation under quadratic noise and the noise-removal boundary](../mathematics/fixed-map/quadratic_noise_clock_limit.md) | `BGS-FLOW-007` (proved) |
+| [Quantitative coupling of quadratic noise and unitary Brownian motion](../mathematics/fixed-map/quadratic_noise_coupling.md) | `BGS-FLOW-004` (proved) |
+| [Historical Faure trace adaptation and the now-proved bounded input](../mathematics/fixed-map/quadratic_noise_fixed_time_input.md) | Consult proof and full ledger |
+| [Reversible correction and short-time path comparison](../mathematics/fixed-map/quadratic_noise_reversibility.md) | `BGS-FLOW-005` (proved) |
+| [Fixed-trace limits and a fixed-time coupling obstruction](../mathematics/fixed-map/quadratic_noise_trace_fluctuations.md) | `BGS-FLOW-006` (proved) |
+| [Whole quadratic occupation sector: true projection and signed trace](../mathematics/fixed-map/quadratic_occupation_sector.md) | Consult proof and full ledger |
+| [First nonlinear slow mode: actual source and two compressed frames](../mathematics/fixed-map/quadratic_slow_source.md) | Consult proof and full ledger |
+| [Signed cyclic coefficient of the first nonlinear slow mode](../mathematics/fixed-map/quadratic_slow_source_signed.md) | Consult proof and full ledger |
+| [Quantum cyclic cohomology and a parity-resolved spectral susceptibility for the frozen BGS kick](../mathematics/fixed-map/quantum_cyclic_cohomology.md) | `BGS-FM-032` (proved) |
+| [The exact box factor under one homoclinic insertion](../mathematics/fixed-map/quantum_homoclinic_first_loop.md) | Consult proof and full ledger |
+| [Chain-trace closure at the first seven-primary level, including ramification at 5](../mathematics/fixed-map/ramified_first_seven_commutant.md) | Consult proof and full ledger |
+| [A q-divided-power lattice reduction for the remaining ramified higher-seven family](../mathematics/fixed-map/ramified_higher_seven_commutant.md) | Consult proof and full ledger |
+| [Residual-125 packets and uniform second-order splitting](../mathematics/fixed-map/residual125_uniform_splitting.md) | Consult proof and full ledger |
+| [Residual-25 affine-return discriminator](../mathematics/fixed-map/residual25_affine_dictionary.md) | Consult proof and full ledger |
+| [Reversed-coordinate-path decay at the fixed physical coupling](../mathematics/fixed-map/reversed_path_decay.md) | `BGS-FM-022` (proved) |
+| [BGS-TRACE-028: actual right frame and complete unmasked pinch hierarchy](../mathematics/fixed-map/right_frame_unmasked_pinch_hierarchy.md) | `BGS-TRACE-028` (proved) |
+| [An actual high-dimensional LOCAL first-loop resummation](../mathematics/fixed-map/rotated_local_first_loop.md) | Consult proof and full ledger |
+| [The new charge gap survives microscopic spectral rounding](../mathematics/fixed-map/rounding_gap_obstruction.md) | Consult proof and full ledger |
+| [Rounded and simple-spectrum endpoint barriers](../mathematics/fixed-map/rounding_simple_spectrum_endpoint_barriers.md) | `BGS-TRACE-025` (proved) |
+| [Scale-normalized positive-quantization bound for the unchanged BGS kick](../mathematics/fixed-map/scaled_weyl_overlap.md) | `BGS-FM-033` (conditional) |
+| [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/fixed-map/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
+| [Distance to the unperturbed spectral orbit: proved global bounds](../mathematics/fixed-map/spectral_orbit_distance.md) | `BGS-TRACE-110` (proved) |
+| [A once-counted stationary-label residual on the pair normalization](../mathematics/fixed-map/stationary_cyclic_residual.md) | Consult proof and full ledger |
+| [Half-radius obstruction even with reverse-kernel decay](../mathematics/fixed-map/symplectic_half_radius_obstruction.md) | Consult proof and full ledger |
+| [Once-counted distinct-port three-block cancellation](../mathematics/fixed-map/three_block_unmarking.md) | `BGS-TRACE-015` (proved) |
+| [Three-orientation mixed-loop barrier for the pair transform](../mathematics/fixed-map/three_orientation_resolvent_barrier.md) | `BGS-FM-004` (conditional) |
+| [Uniform bounded cat eigenspaces on N=7*5^e](../mathematics/fixed-map/uniform_cat_multiplicity.md) | Consult proof and full ledger |
+| [Uniform massive covariance and formal connected coefficients](../mathematics/fixed-map/uniform_cluster_lemma.md) | Consult proof and full ledger |
+| [Actual kick simplicity for N=7*5^e](../mathematics/fixed-map/uniform_five_cluster_simplicity.md) | `BGS-FM-025` (proved) |
+| [One-step squared-trace transcendence in every odd dimension except seven](../mathematics/fixed-map/uniform_trace_square_transcendence.md) | Consult proof and full ledger |
+| [Stability-weighted periodic equidistribution for the actual frozen map](../mathematics/fixed-map/weighted_periodic_equidistribution.md) | Consult proof and full ledger |
+| [BGS-TRACE-027: weighted phase coherence and slow-window Ward covariance](../mathematics/fixed-map/weighted_phase_coherence_covariance.md) | `BGS-TRACE-027` (proved) |
+| [Exact nonlinear winding-defect locality and a finite-group Fourier reduction](../mathematics/fixed-map/winding_defect_locality.md) | `BGS-TRACE-018` (proved) |
 | [Quantitative exclusion of arithmetic translation algebras](../mathematics/spectral-obstructions/arithmetic_translation_exclusion.md) | `BGS-FM-023` (proved) |
-| [Distance to the unperturbed spectral orbit: proved global bounds](../mathematics/spectral_orbit_distance_20261021.md) | `BGS-TRACE-110` (proved) |
-| [A once-counted stationary-label residual on the pair normalization](../mathematics/stationary_cyclic_residual.md) | Consult proof and full ledger |
-| [Half-radius obstruction even with reverse-kernel decay](../mathematics/symplectic_half_radius_obstruction.md) | Consult proof and full ledger |
-| [Once-counted distinct-port three-block cancellation](../mathematics/three_block_unmarking.md) | `BGS-TRACE-015` (proved) |
-| [Three-orientation mixed-loop barrier for the pair transform](../mathematics/three_orientation_resolvent_barrier.md) | `BGS-FM-004` (conditional) |
-| [Uniform bounded cat eigenspaces on N=7*5^e](../mathematics/uniform_cat_multiplicity.md) | Consult proof and full ledger |
-| [Uniform massive covariance and formal connected coefficients](../mathematics/uniform_cluster_lemma.md) | Consult proof and full ledger |
-| [Actual kick simplicity for N=7*5^e](../mathematics/uniform_five_cluster_simplicity.md) | `BGS-FM-025` (proved) |
-| [One-step squared-trace transcendence in every odd dimension except seven](../mathematics/uniform_trace_square_transcendence.md) | Consult proof and full ledger |
-| [Stability-weighted periodic equidistribution for the actual frozen map](../mathematics/weighted_periodic_equidistribution.md) | Consult proof and full ledger |
-| [BGS-TRACE-027: weighted phase coherence and slow-window Ward covariance](../mathematics/weighted_phase_coherence_covariance.md) | `BGS-TRACE-027` (proved) |
-| [Exact nonlinear winding-defect locality and a finite-group Fourier reduction](../mathematics/winding_defect_locality.md) | `BGS-TRACE-018` (proved) |
 
 ### Trace identities and microscopic limits
 
@@ -212,39 +212,42 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Rank-two four-cut classification](../mathematics/fixed-map/four_cut_rank_two_classification.md) | `BGS-FORMAL-002` (proved) |
 | [Exact half-radius obstruction under a one-step singular gap](../mathematics/fixed-map/fourier_half_radius_obstruction.md) | Consult proof and full ledger |
 | [Fixed-fraction balanced Hamming control by exact torus compression](../mathematics/fixed-map/fractional_hamming_cancellation.md) | Consult proof and full ledger |
+| [Global rotated-box trace representation and conditional contour tails](../mathematics/fixed-map/global_rotated_box_trace.md) | Consult proof and full ledger |
+| [Growing neutral degree: exact evaluation cost and the actual logarithmic window](../mathematics/fixed-map/growing_degree_trace_projection.md) | `BGS-FLOW-020` (proved) |
+| [A genuine residual after disjoint Hamming and low-switch removal](../mathematics/fixed-map/hamming_low_switch_residual.md) | Consult proof and full ledger |
+| [Exact heat compensation of a Heisenberg pair test](../mathematics/fixed-map/heisenberg_pair_heat_formula.md) | `BGS-FLOW-021` (proved) |
+| [Transport of local moments without a maximum-displacement estimate](../mathematics/fixed-map/local_moment_transport.md) | `BGS-FLOW-016` (proved) |
+| [A growing low-switch family inside the actual deterministic off-charge defect](../mathematics/fixed-map/low_switch_offcharge_family.md) | Consult proof and full ledger |
+| [Uniform cancellation of macroscopic coordinate-translation path pairs](../mathematics/fixed-map/macroscopic_coordinate_translation.md) | Consult proof and full ledger |
+| [Ordered-diagonal interfaces for several and mismatched cycles](../mathematics/fixed-map/mixed_ordered_diagonal.md) | Consult proof and full ledger |
+| [Centered ordered-diagonal cyclic trace](../mathematics/fixed-map/ordered_diagonal_cyclic_trace.md) | Consult proof and full ledger |
+| [Actual paired-box coordinates and the exact autocorrelation character](../mathematics/fixed-map/paired_character_identity.md) | Consult proof and full ledger |
+| [Actual phase-map monotonicity, Frostman bound and averaged Fourier squares](../mathematics/fixed-map/phase_map_frostman.md) | Consult proof and full ledger |
+| [Physical homoclinic phase and the actual leading-weight dictionary](../mathematics/fixed-map/physical_homoclinic_weights.md) | Consult proof and full ledger |
+| [Principal WKB polar quantization and smooth spectral transport](../mathematics/fixed-map/polar_wkb_quantization_stability.md) | Consult proof and full ledger |
+| [Prime resonant blocks: exact sector criterion and spectral comb](../mathematics/fixed-map/prime_resonant_sector.md) | `BGS-TRACE-009` (proved) |
+| [Whole quadratic occupation sector: true projection and signed trace](../mathematics/fixed-map/quadratic_occupation_sector.md) | Consult proof and full ledger |
+| [First nonlinear slow mode: actual source and two compressed frames](../mathematics/fixed-map/quadratic_slow_source.md) | Consult proof and full ledger |
+| [Signed cyclic coefficient of the first nonlinear slow mode](../mathematics/fixed-map/quadratic_slow_source_signed.md) | Consult proof and full ledger |
+| [The exact box factor under one homoclinic insertion](../mathematics/fixed-map/quantum_homoclinic_first_loop.md) | Consult proof and full ledger |
+| [An actual high-dimensional LOCAL first-loop resummation](../mathematics/fixed-map/rotated_local_first_loop.md) | Consult proof and full ledger |
+| [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/fixed-map/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
+| [A once-counted stationary-label residual on the pair normalization](../mathematics/fixed-map/stationary_cyclic_residual.md) | Consult proof and full ledger |
+| [Half-radius obstruction even with reverse-kernel decay](../mathematics/fixed-map/symplectic_half_radius_obstruction.md) | Consult proof and full ledger |
+| [Once-counted distinct-port three-block cancellation](../mathematics/fixed-map/three_block_unmarking.md) | `BGS-TRACE-015` (proved) |
+| [Uniform massive covariance and formal connected coefficients](../mathematics/fixed-map/uniform_cluster_lemma.md) | Consult proof and full ledger |
+| [Stability-weighted periodic equidistribution for the actual frozen map](../mathematics/fixed-map/weighted_periodic_equidistribution.md) | Consult proof and full ledger |
+| [Exact nonlinear winding-defect locality and a finite-group Fourier reduction](../mathematics/fixed-map/winding_defect_locality.md) | `BGS-TRACE-018` (proved) |
 | [Global coercivity of the bare bosonic phase action](../mathematics/global_bosonic_body_coercivity.md) | Consult proof and full ledger |
-| [Global rotated-box trace representation and conditional contour tails](../mathematics/global_rotated_box_trace.md) | Consult proof and full ledger |
 | [Global switch transfer and exact undamped boundary obligation](../mathematics/global_switch_transfer.md) | Consult proof and full ledger |
-| [Growing neutral degree: exact evaluation cost and the actual logarithmic window](../mathematics/growing_degree_trace_projection.md) | `BGS-FLOW-020` (proved) |
 | [Growing-period residual obstruction with all three coarse gaps](../mathematics/growing_period_switch_boundary_obstruction.md) | Consult proof and full ledger |
-| [A genuine residual after disjoint Hamming and low-switch removal](../mathematics/hamming_low_switch_residual.md) | Consult proof and full ledger |
-| [Exact heat compensation of a Heisenberg pair test](../mathematics/heisenberg_pair_heat_formula.md) | `BGS-FLOW-021` (proved) |
-| [Transport of local moments without a maximum-displacement estimate](../mathematics/local_moment_transport.md) | `BGS-FLOW-016` (proved) |
-| [A growing low-switch family inside the actual deterministic off-charge defect](../mathematics/low_switch_offcharge_family.md) | Consult proof and full ledger |
-| [Uniform cancellation of macroscopic coordinate-translation path pairs](../mathematics/macroscopic_coordinate_translation.md) | Consult proof and full ledger |
 | [Separate extension: ordinary matrix-valued bosonic blocks](../mathematics/matrix_block_body_coercivity.md) | Consult proof and full ledger |
-| [Ordered-diagonal interfaces for several and mismatched cycles](../mathematics/mixed_ordered_diagonal.md) | Consult proof and full ledger |
-| [Centered ordered-diagonal cyclic trace](../mathematics/ordered_diagonal_cyclic_trace.md) | Consult proof and full ledger |
-| [Actual paired-box coordinates and the exact autocorrelation character](../mathematics/paired_character_identity.md) | Consult proof and full ledger |
-| [Actual phase-map monotonicity, Frostman bound and averaged Fourier squares](../mathematics/phase_map_frostman.md) | Consult proof and full ledger |
 | [Stationary phase diffusion and the exact absorbed overlap defect](../mathematics/phase_ward_identity.md) | Consult proof and full ledger |
-| [Physical homoclinic phase and the actual leading-weight dictionary](../mathematics/physical_homoclinic_weights.md) | Consult proof and full ledger |
-| [Principal WKB polar quantization and smooth spectral transport](../mathematics/polar_wkb_quantization_stability.md) | Consult proof and full ledger |
-| [Prime resonant blocks: exact sector criterion and spectral comb](../mathematics/prime_resonant_sector.md) | `BGS-TRACE-009` (proved) |
-| [Whole quadratic occupation sector: true projection and signed trace](../mathematics/quadratic_occupation_sector.md) | Consult proof and full ledger |
-| [First nonlinear slow mode: actual source and two compressed frames](../mathematics/quadratic_slow_source.md) | Consult proof and full ledger |
-| [Signed cyclic coefficient of the first nonlinear slow mode](../mathematics/quadratic_slow_source_signed.md) | Consult proof and full ledger |
-| [The exact box factor under one homoclinic insertion](../mathematics/quantum_homoclinic_first_loop.md) | Consult proof and full ledger |
 | [Exact real scalar absorption bound](../mathematics/real_absorption_body_coercivity.md) | Consult proof and full ledger |
-| [An actual high-dimensional LOCAL first-loop resummation](../mathematics/rotated_local_first_loop.md) | Consult proof and full ledger |
-| [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
 | [Arithmetic word coherence despite uniform auxiliary quantum expansion](../mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md) | `BGS-TRACE-013` (proved) |
 | [Exact coherence memory and its singular-norm plateau](../mathematics/spectral-obstructions/coherence_memory_plateau.md) | `BGS-TRACE-082` (proved) |
 | [An observed first-return pulse despite perfect intensity mixing](../mathematics/spectral-obstructions/coherent_first_return_pulse.md) | `BGS-TRACE-083` (proved) |
 | [Perfect intensity mixing does not determine the microscopic spectrum](../mathematics/spectral-obstructions/flat_spectrum_obstruction.md) | `BGS-TRACE-081` (proved) |
-| [A once-counted stationary-label residual on the pair normalization](../mathematics/stationary_cyclic_residual.md) | Consult proof and full ledger |
-| [Half-radius obstruction even with reverse-kernel decay](../mathematics/symplectic_half_radius_obstruction.md) | Consult proof and full ledger |
-| [Once-counted distinct-port three-block cancellation](../mathematics/three_block_unmarking.md) | `BGS-TRACE-015` (proved) |
 | [Positive Abel decomposition and quantitative clock rigidity](../mathematics/trace-bridge/abel_clock_rigidity.md) | `BGS-TRACE-092` (proved) |
 | [Активные интервалы и расширенное окно второй поправки](../mathematics/trace-bridge/active_intervals.md) | Consult proof and full ledger |
 | [All fixed clock moments and near-flatness-scale joint delay barriers](../mathematics/trace-bridge/all_moment_delay_bootstrap.md) | Consult proof and full ledger |
@@ -321,10 +324,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Unconditional feedback flatness and fixed-order clocks](../mathematics/trace-bridge/unconditional_feedback_flatness.md) | `BGS-TRACE-080` (proved) |
 | [A two-step obstruction inside the unistochastic class](../mathematics/trace-bridge/unitary_two_step_obstruction.md) | `BGS-TRACE-074` (proved) |
 | [Heisenberg-scale Wick collisions and the flat equal-edge ratio](../mathematics/trace-bridge/wick_collision_poisson.md) | `BGS-TRACE-094` (proved) |
-| [Uniform massive covariance and formal connected coefficients](../mathematics/uniform_cluster_lemma.md) | Consult proof and full ledger |
 | [A dimension-uniform Abel bound from phase spectral averaging](../mathematics/uniform_phase_pair_abel_bound.md) | Consult proof and full ledger |
-| [Stability-weighted periodic equidistribution for the actual frozen map](../mathematics/weighted_periodic_equidistribution.md) | Consult proof and full ledger |
-| [Exact nonlinear winding-defect locality and a finite-group Fourier reduction](../mathematics/winding_defect_locality.md) | `BGS-TRACE-018` (proved) |
 
 ### Cayley arithmetic and finite-field geometry
 

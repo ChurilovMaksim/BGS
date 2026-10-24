@@ -106,7 +106,7 @@ For9j<h, an unrotated word in j actual Fourier modes has |a|<=j and |b|<=9j. A s
 
 This exact source has its separately pinned independent review in the
 cat/jet promotion map. The final accepted combined FM-026 statement is in
-[the theorem owner](../literal_time_multiplicity_bounds.md). Conditional sector
+[the theorem owner](literal_time_multiplicity_bounds.md). Conditional sector
 premises retain their historical proof structure and are used only where
 the separately accepted premise is explicitly bound. No unpublished CRT or
 first-old-layer diagnostic is a new theorem input or extra U dimension.

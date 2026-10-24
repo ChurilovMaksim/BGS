@@ -2,7 +2,7 @@
 
 Author derivation, 7 October 2026. Read-only BGS base d37c92e563d10d25bb1d6ab85bedffc1f160f773. This is a full balanced-pair reduction through eigenvector overlaps, not a proof that the overlap defect vanishes. It keeps absorption strictly positive and does not invoke boundary-delay second moments.
 
-Prior search: canonical mathematics, supplements and record searched for phase Brownian motion, phase Ward identities, eigenphase diffusion and overlap kernels. The nearest maintained facts are the normalized unitary heat generator and pair heat formula in mathematics/heisenberg_pair_heat_formula.md and circular_dyson_actual_start.md. Those concern full unitary Brownian motion and do not assert stationarity of the coordinate-phase ensemble under it.
+Prior search: canonical mathematics, supplements and record searched for phase Brownian motion, phase Ward identities, eigenphase diffusion and overlap kernels. The nearest maintained facts are the normalized unitary heat generator and pair heat formula in mathematics/fixed-map/heisenberg_pair_heat_formula.md and circular_dyson_actual_start.md. Those concern full unitary Brownian motion and do not assert stationarity of the coordinate-phase ensemble under it.
 
 ## 1. Exact stationary process
 

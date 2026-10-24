@@ -107,7 +107,7 @@ $$
 This is a reformulation of the same open pair limit. It gives no estimate
 for $T_N(s)$ for the prescribed $U_N$ and no higher-order joint-trace
 comparison. The detailed audit and the companion exact
-[spectral-flow and control identities](../frozen_spectral_flow_controls.md)
+[spectral-flow and control identities](frozen_spectral_flow_controls.md)
 also rule out collapsing the actual iterated kicks into an unordered single
 exponential; they do not estimate the ordered product at $m\asymp N$.
 
@@ -159,7 +159,7 @@ model's limit or give a uniform excess over the clock value.
 ## Smooth resolvent transfer for the seven-cut *full* propagator
 
 **Claim ID:** `BGS-RES-007`. Let $U_N$ and $V_N$ be the original and
-seven-cut **full** propagators of [`BGS-FM-007`](../frozen_seven_cut_reduction.md).
+seven-cut **full** propagators of [`BGS-FM-007`](frozen_seven_cut_reduction.md).
 For an arbitrary unitary $W$ write $L_{W,N}$ and $T_{W,N}$ for the pair
 Abel and adjoint-resolvent functions above. For every compact
 $K\subset(0,\infty)$ and every integer $r\ge0$, there are constants
@@ -236,14 +236,14 @@ asymptotic control. Separately, the [full-lag classical gap](../resonance-cohomo
 proves a uniform translated Riesz bound for the exact physical symbol under
 the *linear* cat map, including small weighted-Fourier perturbations. It
 does not treat transport by the nonlinear kicked map. The
-[nonlinear bracket pressure theorem](../nonlinear_bracket_pressure.md) shows
+[nonlinear bracket pressure theorem](nonlinear_bracket_pressure.md) shows
 that this same $\lambda^{-r}$ normalization cannot have a uniform upper
 bound for the **actual** nonlinear map: its individual bracket norms grow
 at a strictly larger exponential rate. This result is classical and uses
 thermodynamic-formalism inputs; none of these results bounds the
 Heisenberg-scale joint traces needed for `BGS-TRACE-005`.
 
-An [exact seven-cut reduction](../frozen_seven_cut_reduction.md) now gives
+An [exact seven-cut reduction](frozen_seven_cut_reduction.md) now gives
 $\|U_N-e^{i\tau N A_N^{\rm cut}}M_N\|_1\le28\pi^2\tau/(25N)$
 for the same fixed coupling. The two **full** propagators have equivalent
 fixed-order sine-kernel targets. Their pair and full Abel statistics differ
@@ -543,7 +543,7 @@ These controls do not change the Heisenberg-scale joint-trace obligation.
 
 ## Quadratic noise and its deterministic-transfer boundary
 
-The [quadratic-noise theorem](../quadratic_coboundary_noise.md)
+The [quadratic-noise theorem](quadratic_coboundary_noise.md)
 (`BGS-FLOW-003`) goes beyond the second-order radial obstruction. For
 normalized GUE $G$, put $X=i[G,UGU^*]/\sqrt2-\mathbb E(i[G,UGU^*]/\sqrt2)$
 and $m_2=\operatorname{Tr}U^2/N$. Its exact covariance obeys
@@ -573,7 +573,7 @@ all-order Heisenberg trace comparison.
 
 ## Quantitative quadratic-noise dynamics: a scoped continuation
 
-The [coupling theorem](../quadratic_noise_coupling.md) (`BGS-FLOW-004`)
+The [coupling theorem](quadratic_noise_coupling.md) (`BGS-FLOW-004`)
 compares the raw diffusion $U_t$ with traceless unitary Brownian motion
 $V_t$ from the same matrix. For $0\le t\le1$,
 
@@ -591,7 +591,7 @@ comparison for every $t_N\to0$ with bounded initial low traces, without
 an occupancy assumption. Those earlier weak-law estimates alone do not give
 unbounded moments; FLOW-016 supplies a separate high-moment transport below.
 
-The [reversible correction](../quadratic_noise_reversibility.md)
+The [reversible correction](quadratic_noise_reversibility.md)
 (`BGS-FLOW-005`) is the commuting traceless Hermitian drift
 
 $$
@@ -613,7 +613,7 @@ This compares full path laws with the same covariance, not path laws
 with Dyson covariance. Haar reversibility does not imply ergodicity;
 scalar matrices are absorbing.
 
-The [fixed-trace theorem](../quadratic_noise_trace_fluctuations.md)
+The [fixed-trace theorem](quadratic_noise_trace_fluctuations.md)
 (`BGS-FLOW-006`) assumes every fixed initial trace is uniformly bounded
 and the selected initial traces converge. For fixed $K,T$, it proves
 joint path convergence to independent circular complex OU processes
@@ -631,7 +631,7 @@ coupling at fixed positive time. The reversible limit has variance
 $2(1-e^{-3t})$, with Haar-compatible stationary value two; no finite-$N$
 stationary convergence or growing-order theorem is implied.
 
-For the odd clock start, the [local-limit theorem](../quadratic_noise_clock_limit.md)
+For the odd clock start, the [local-limit theorem](quadratic_noise_clock_limit.md)
 (`BGS-FLOW-007`) uses the established circular Dyson clock kernel of
 Forrester, with a rederived odd-$N$ normalization and explicit alias
 bound. Both quadratic diffusions converge after phase averaging to
@@ -644,7 +644,7 @@ The [direct fixed-time model input](fixed_time_wavepacket_trace_bound.md)
 (`BGS-FM-013`) is now **proved at project/author-review level**: every fixed
 nonzero power trace is O_j(1), along all sufficiently large odd N.
 Its exact Gaussian frame and sampled packet residual are separate from
-Faure's even-dimensional torus formula. The [historical source route](../quadratic_noise_fixed_time_input.md),
+Faure's even-dimensional torus formula. The [historical source route](quadratic_noise_fixed_time_input.md),
 and its sharper action-phase amplitudes remain conditional. The direct
 Gaussian overlap bound now gives limsup values below 4 and 9 for the first
 two traces, closing K=20 for sufficiently large odd N.
@@ -965,7 +965,7 @@ No external referee report, priority or prize-level significance is asserted.
 ## All local moments and the original-chain signed criterion
 
 **Claim IDs:** `BGS-FLOW-016`, `BGS-FLOW-017`. The
-[transport proof](../local_moment_transport.md) matches two period-N fields
+[transport proof](local_moment_transport.md) matches two period-N fields
 with averaged unfolded displacement cost
 $c_{p,N}=N^{-1}\sum_j|d_j|^p$. Let
 $M(u)=\sup_{r\ge1}B_N([u-r,u+r])/(2r)$ be the reference maximal density.
@@ -1172,7 +1172,7 @@ are credited; world priority is unverified.
 ## Growing neutral degree and the particular missed local test
 
 **Claim ID:** `BGS-FLOW-020`. The
-[full proof](../growing_degree_trace_projection.md) replaces the fixed-degree
+[full proof](growing_degree_trace_projection.md) replaces the fixed-degree
 Gram bound by its exact reproducing kernel. For $2Q\le N$, normalized
 complex Wick polynomials give an orthonormal basis $E_{\boldsymbol a,\boldsymbol b}$
 of the neutral span. With
@@ -1256,7 +1256,7 @@ The complete deterministic target remains OPEN.
 ## Exact Heisenberg pair heat compensation and the actual smoothed band
 
 **Claim ID:** `BGS-FLOW-021`. The
-[full proof](../heisenberg_pair_heat_formula.md) diagonalizes the particular
+[full proof](heisenberg_pair_heat_formula.md) diagonalizes the particular
 stable pair vector $Q_m=|p_m|^2-m$, $2m\le N$, directly from
 determinant-ratio hook modes. Define
 
@@ -1522,7 +1522,7 @@ $J_{N,w}(U_N)$; TRACE-005 and BGS-BGS-001 retain their OPEN status.
 
 ## Original ordered two-pair microscopic mass
 
-**Claim:** `BGS-FM-020`. The [canonical proof](../original_channel_gap.md) keeps the original ordered common-noise law with m=1. Put
+**Claim:** `BGS-FM-020`. The [canonical proof](original_channel_gap.md) keeps the original ordered common-noise law with m=1. Put
 $$
 \ell_N=1+\log N,\qquad \lambda_N=(1024\ell_N)^{-2}.
 $$
@@ -1540,7 +1540,7 @@ The [independent internal review](../../archive/record/original_channel_gap_revi
 ## The exact deterministic noise-removal obligation
 
 **Claim ID:** `BGS-FLOW-015`. The
-[full proof](../microscopic_noise_removal.md) retains the unchanged $U_N$
+[full proof](microscopic_noise_removal.md) retains the unchanged $U_N$
 and the positive uniform-origin local Laplace test $\Phi_{N,f}$.
 For normalized unitary Brownian motion, let
 $P_tF(A)=\mathbb E F(B_tA)$ and
@@ -1671,7 +1671,7 @@ $t=\tau/(2\pi)$. This is a classical chart statement. A uniform quantum
 torus FIO with controlled amplitudes and an operator norm gap is still
 missing. Different strip labels do not imply the separation hypothesis.
 
-The [ideal-alphabet theorem](../offdiagonal_digit_fup.md) (`BGS-FUP-001`)
+The [ideal-alphabet theorem](offdiagonal_digit_fup.md) (`BGS-FUP-001`)
 uses Cohen's pinned prior Fourier criterion and a corrected limiting-set
 geometry proof. For $\mathcal A_M=\{(r,s):r\ne s\}$ and $N=M^k$:
 
@@ -1698,7 +1698,7 @@ joint traces at every order. BGS-TRACE-005 and BGS-BGS-001 remain open.
 
 ## Prime-resonant blocks and the actual sector obligation
 
-The [prime-resonant audit](../prime_resonant_sector.md) (`BGS-TRACE-009`)
+The [prime-resonant audit](prime_resonant_sector.md) (`BGS-TRACE-009`)
 retains the exact left-to-right block
 $$
 C_{p,d_p}=\prod_{j=0}^{d_p-1}e^{i\tau p M_p^jA_pM_p^{-j}},\qquad

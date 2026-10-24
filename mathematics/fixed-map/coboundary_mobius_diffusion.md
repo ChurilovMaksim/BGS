@@ -24,7 +24,7 @@ No centering term or covariance whitening is inserted in (1).
 For odd $N\ge3$ start at the clock
 $U_0^{\varepsilon}=C_N=\operatorname{diag}(e^{2\pi ij/N})_{j=0}^{N-1}$.
 Let $\Phi_{N,f}$ be the uniform-origin unfolded Laplace functional of
-[FLOW-004](../quadratic_noise_coupling.md), for $0\le f\in C_c^1(\mathbb R)$.
+[FLOW-004](quadratic_noise_coupling.md), for $0\le f\in C_c^1(\mathbb R)$.
 If $t_N\to0$ and $Nt_N\to\infty$, then
 
 $$
@@ -307,7 +307,7 @@ $$
 Thus for the clock start, the averaged Laplace discrepancy is
 $O_f(\sqrt t)$, with the exit probability adding $O(t/N^2)$.
 The odd-clock Dyson kernel estimate in
-[FLOW-007](../quadratic_noise_clock_limit.md) gives
+[FLOW-007](quadratic_noise_clock_limit.md) gives
 
 $$
 \left|\mathbb E\Phi_{N,f}(Y_t)-\Phi_{\rm Sine}(f)\right|
