@@ -4,7 +4,7 @@ Separate author addendum, 7 October 2026. No canonical edit and no actual-map co
 
 ## Prior scope and exact new distinction
 
-The project already proves that coordinate flatness, the FM021-type position gap and FM022-type reverse-kernel decay are insufficient as abstract universality criteria: `BGS/mathematics/microscopic_rounding_control.md`, Sections1,5–6, preserves those properties while violating a fixed pair target. `isospectral_clock_moment_control.md` provides a different all-copy channel obstruction. Those results are credited; no new general insufficiency or priority claim is made.
+The project already proves that coordinate flatness, the FM021-type position gap and FM022-type reverse-kernel decay are insufficient as abstract universality criteria: `BGS/mathematics/spectral-obstructions/microscopic_rounding_control.md`, Sections1,5–6, preserves those properties while violating a fixed pair target. `isospectral_clock_moment_control.md` provides a different all-copy channel obstruction. Those results are credited; no new general insufficiency or priority claim is made.
 
 A targeted search of current mathematics and historical records for symplectic Fourier, flat/Hermitian involution and reversed-kernel variants found no occurrence of this exact construction. The specific additional statement here is an explicit flat Hermitian involution whose literal offcharge Hamming trace at radius m/2 is order N, despite reverse-kernel norm N^(-1/2).
 

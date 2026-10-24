@@ -149,7 +149,7 @@ accuracy, cannot by themselves determine microscopic spectral statistics.
 ## The maximal estimate also survives the prior spectral rounding
 
 This connects the new estimate with the prior
-[microscopic rounding construction](../microscopic_rounding_control.md), without
+[microscopic rounding construction](../spectral-obstructions/microscopic_rounding_control.md), without
 claiming that construction as new. For any unitaries U,V and the same
 Hermitian B with ||B||op<=C, put epsilon=||V-U||op. Telescoping powers gives
 

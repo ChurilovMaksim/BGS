@@ -11,7 +11,7 @@ amplitude operators. The renewal equations on printed page 6 give both
 ordered coefficient sums despite noncommutation of the individual
 coefficients. Under the dictionary H=M_N(C), unitary step Ad_U and
 absorbing subspace the diagonal matrices, these are the mechanisms
-used in [TRACE-083](../mathematics/coherent_first_return_pulse_20261014.md).
+used in [TRACE-083](../mathematics/spectral-obstructions/coherent_first_return_pulse.md).
 
 The mechanism is prior mathematics. The project explicitly proves its
 own recurrence and uses its own tensor/chirp example; no external

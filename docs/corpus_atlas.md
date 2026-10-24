@@ -52,7 +52,6 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Actual scalar joint commutant in every odd dimension except seven](../mathematics/actual_seven_primary_commutant.md) | `BGS-FM-024` (proved) |
 | [Algebraic-time transfer of simple-eigenvalue counts](../mathematics/algebraic_time_rank_transfer.md) | Consult proof and full ledger |
 | [Uniform finite-power contraction for every nonzero coordinate translation](../mathematics/all_coordinate_translation.md) | Consult proof and full ledger |
-| [Quantitative exclusion of arithmetic translation algebras](../mathematics/arithmetic_translation_exclusion.md) | `BGS-FM-023` (proved) |
 | [Charge-balance counting refinement and exact new-sector size](../mathematics/balanced_hamming_growth.md) | Consult proof and full ledger |
 | [Exponentially negligible balanced coordinate-Hamming hierarchy](../mathematics/balanced_hamming_hierarchy.md) | Consult proof and full ledger |
 | [Balanced-phase regularization: a classical and quantum theorem](../mathematics/balanced_phase_controllability.md) | `BGS-RES-017` (proved) |
@@ -169,6 +168,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Rounded and simple-spectrum endpoint barriers](../mathematics/rounding_simple_spectrum_endpoint_barriers.md) | `BGS-TRACE-025` (proved) |
 | [Scale-normalized positive-quantization bound for the unchanged BGS kick](../mathematics/scaled_weyl_overlap_20261015.md) | `BGS-FM-033` (conditional) |
 | [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
+| [Quantitative exclusion of arithmetic translation algebras](../mathematics/spectral-obstructions/arithmetic_translation_exclusion.md) | `BGS-FM-023` (proved) |
 | [Distance to the unperturbed spectral orbit: proved global bounds](../mathematics/spectral_orbit_distance_20261021.md) | `BGS-TRACE-110` (proved) |
 | [A once-counted stationary-label residual on the pair normalization](../mathematics/stationary_cyclic_residual.md) | Consult proof and full ledger |
 | [Half-radius obstruction even with reverse-kernel decay](../mathematics/symplectic_half_radius_obstruction.md) | Consult proof and full ledger |
@@ -190,7 +190,6 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 |---|---|
 | [One explicit eventual constant for the unchanged actual family](../mathematics/actual_body_coercivity_constants.md) | Consult proof and full ledger |
 | [Uniform finite-power contraction for every nonzero coordinate translation](../mathematics/all_coordinate_translation.md) | Consult proof and full ledger |
-| [Arithmetic word coherence despite uniform auxiliary quantum expansion](../mathematics/arithmetic_word_expansion_obstruction.md) | `BGS-TRACE-013` (proved) |
 | [Infinite boundary-delay variance despite flatness, perfect mixing and reverse decay](../mathematics/balanced_boundary_delay_obstruction.md) | Consult proof and full ledger |
 | [Charge-balance counting refinement and exact new-sector size](../mathematics/balanced_hamming_growth.md) | Consult proof and full ledger |
 | [Exponentially negligible balanced coordinate-Hamming hierarchy](../mathematics/balanced_hamming_hierarchy.md) | Consult proof and full ledger |
@@ -199,8 +198,6 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Conditional disjoint synthesis with all low-switch off-charge fibers removed](../mathematics/checksum_free_residual.md) | Consult proof and full ledger |
 | [Exact clock structure factor and the scale of spectral noise removal](../mathematics/clock_structure_and_noise_scale.md) | `BGS-FLOW-018` (proved) |
 | [All fixed correlation orders for the original coboundary chain](../mathematics/coboundary_all_order_limit.md) | `BGS-FLOW-017` (proved) |
-| [Exact coherence memory and its singular-norm plateau](../mathematics/coherence_memory_plateau_20261014.md) | `BGS-TRACE-082` (proved) |
-| [An observed first-return pulse despite perfect intensity mixing](../mathematics/coherent_first_return_pulse_20261014.md) | `BGS-TRACE-083` (proved) |
 | [Exact collective occupation hierarchy through Heisenberg degree](../mathematics/collective_occupation_hierarchy.md) | Consult proof and full ledger |
 | [Exact projector residual after the collective hierarchy](../mathematics/collective_projector_residual.md) | Consult proof and full ledger |
 | [A compact color-one pair projector and finite-size source identity](../mathematics/compact_phase_pair_identity.md) | Consult proof and full ledger |
@@ -210,7 +207,6 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Fixed-order factorial removal of the ordered-diagonal sector](../mathematics/factorial_ordered_diagonal.md) | `BGS-TRACE-020` (proved) |
 | [Fixed-factorial-order reduction to a high-order one-step WKB kernel](../mathematics/factorial_wkb_reduction.md) | `BGS-TRACE-017` (proved) |
 | [Every fixed neutral trace degree contributes a vanishing heat defect](../mathematics/fixed_degree_heat_projection.md) | `BGS-FLOW-019` (proved) |
-| [Perfect intensity mixing does not determine the microscopic spectrum](../mathematics/flat_spectrum_obstruction_20261014.md) | `BGS-TRACE-081` (proved) |
 | [Resonant cubic control by the folded square of the density](../mathematics/folded_quadratic_resonance_control.md) | `BGS-TRACE-012` (proved) |
 | [Once-counted reduced distinct-port four-block cancellation](../mathematics/four_block_unmarking.md) | `BGS-TRACE-016` (proved) |
 | [Rank-two four-cut classification](../mathematics/four_cut_rank_two_classification.md) | `BGS-FORMAL-002` (proved) |
@@ -242,6 +238,10 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Exact real scalar absorption bound](../mathematics/real_absorption_body_coercivity.md) | Consult proof and full ledger |
 | [An actual high-dimensional LOCAL first-loop resummation](../mathematics/rotated_local_first_loop.md) | Consult proof and full ledger |
 | [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
+| [Arithmetic word coherence despite uniform auxiliary quantum expansion](../mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md) | `BGS-TRACE-013` (proved) |
+| [Exact coherence memory and its singular-norm plateau](../mathematics/spectral-obstructions/coherence_memory_plateau.md) | `BGS-TRACE-082` (proved) |
+| [An observed first-return pulse despite perfect intensity mixing](../mathematics/spectral-obstructions/coherent_first_return_pulse.md) | `BGS-TRACE-083` (proved) |
+| [Perfect intensity mixing does not determine the microscopic spectrum](../mathematics/spectral-obstructions/flat_spectrum_obstruction.md) | `BGS-TRACE-081` (proved) |
 | [A once-counted stationary-label residual on the pair normalization](../mathematics/stationary_cyclic_residual.md) | Consult proof and full ledger |
 | [Half-radius obstruction even with reverse-kernel decay](../mathematics/symplectic_half_radius_obstruction.md) | Consult proof and full ledger |
 | [Once-counted distinct-port three-block cancellation](../mathematics/three_block_unmarking.md) | `BGS-TRACE-015` (proved) |
@@ -453,16 +453,16 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
-| [Quantitative exclusion of arithmetic translation algebras](../mathematics/arithmetic_translation_exclusion.md) | `BGS-FM-023` (proved) |
-| [Arithmetic word coherence despite uniform auxiliary quantum expansion](../mathematics/arithmetic_word_expansion_obstruction.md) | `BGS-TRACE-013` (proved) |
-| [Exact coherence memory and its singular-norm plateau](../mathematics/coherence_memory_plateau_20261014.md) | `BGS-TRACE-082` (proved) |
-| [An observed first-return pulse despite perfect intensity mixing](../mathematics/coherent_first_return_pulse_20261014.md) | `BGS-TRACE-083` (proved) |
-| [Singular CUE pair energy and the unregularized adjoint boundary](../mathematics/cue_singular_energy.md) | `BGS-CUE-001` (proved) |
-| [Perfect intensity mixing does not determine the microscopic spectrum](../mathematics/flat_spectrum_obstruction_20261014.md) | `BGS-TRACE-081` (proved) |
-| [Status and relationship to the preceding work](../mathematics/general_hyperbolic_prime_spectra.md) | Consult proof and full ledger |
-| [All-order moment-channel control with a rigid clock spectrum](../mathematics/isospectral_clock_moment_control.md) | `BGS-TRACE-014` (proved) |
-| [Status and scope](../mathematics/magnetic_quotient_semicircle.md) | `BGS-CAYLEY-009` (proved) |
-| [Microscopic rounding with simultaneous low-trace preservation](../mathematics/microscopic_rounding_control.md) | Consult proof and full ledger |
+| [Quantitative exclusion of arithmetic translation algebras](../mathematics/spectral-obstructions/arithmetic_translation_exclusion.md) | `BGS-FM-023` (proved) |
+| [Arithmetic word coherence despite uniform auxiliary quantum expansion](../mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md) | `BGS-TRACE-013` (proved) |
+| [Exact coherence memory and its singular-norm plateau](../mathematics/spectral-obstructions/coherence_memory_plateau.md) | `BGS-TRACE-082` (proved) |
+| [An observed first-return pulse despite perfect intensity mixing](../mathematics/spectral-obstructions/coherent_first_return_pulse.md) | `BGS-TRACE-083` (proved) |
+| [Singular CUE pair energy and the unregularized adjoint boundary](../mathematics/spectral-obstructions/cue_singular_energy.md) | `BGS-CUE-001` (proved) |
+| [Perfect intensity mixing does not determine the microscopic spectrum](../mathematics/spectral-obstructions/flat_spectrum_obstruction.md) | `BGS-TRACE-081` (proved) |
+| [Status and relationship to the preceding work](../mathematics/spectral-obstructions/general_hyperbolic_prime_spectra.md) | Consult proof and full ledger |
+| [All-order moment-channel control with a rigid clock spectrum](../mathematics/spectral-obstructions/isospectral_clock_moment_control.md) | `BGS-TRACE-014` (proved) |
+| [Status and scope](../mathematics/spectral-obstructions/magnetic_quotient_semicircle.md) | `BGS-CAYLEY-009` (proved) |
+| [Microscopic rounding with simultaneous low-trace preservation](../mathematics/spectral-obstructions/microscopic_rounding_control.md) | Consult proof and full ledger |
 
 ### Identifiability and information theory
 

@@ -23,9 +23,9 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-CAYLEY-006](../mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md) | proved | None registered | `EXT-BORDA-2020`, `EXT-FI-1980`, `EXT-WANG-1982`, `EXT-ZAGIER-1997` | 0 |
 | [BGS-CAYLEY-007](../mathematics/cayley-arithmetic/cayley_product_row_real_trace_ideal.md) | proved | None registered | `EXT-BT-1971` | 0 |
 | [BGS-CAYLEY-008](../mathematics/cayley-arithmetic/cayley_scaling_rigidity.md) | proved | None registered | None registered | 0 |
-| [BGS-CAYLEY-009](../mathematics/magnetic_quotient_semicircle.md) | proved | None registered | None registered | 0 |
+| [BGS-CAYLEY-009](../mathematics/spectral-obstructions/magnetic_quotient_semicircle.md) | proved | None registered | None registered | 0 |
 | [BGS-CAYLEY-010](../manuscript/general_spectra.tex) | proved | None registered | None registered | 0 |
-| [BGS-CUE-001](../mathematics/cue_singular_energy.md) | proved | None registered | `EXT-BAB-2013` | 0 |
+| [BGS-CUE-001](../mathematics/spectral-obstructions/cue_singular_energy.md) | proved | None registered | `EXT-BAB-2013` | 0 |
 | [BGS-CUE-002](../mathematics/trace-bridge/full_pair_cue_covariance.md) | proved | `BGS-TRACE-002` | None registered | 0 |
 | [BGS-FLOW-001](../mathematics/coboundary_spectral_flow_bound.md) | proved | None registered | None registered | 0 |
 | [BGS-FLOW-002](../mathematics/coboundary_spectral_flow_bound.md) | proved | None registered | None registered | 0 |
@@ -74,7 +74,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-FM-020](../mathematics/original_channel_gap.md) | proved | `BGS-FM-019` | None registered | 0 |
 | [BGS-FM-021](../mathematics/position_chain_mixing.md) | proved | `BGS-FM-001` | None registered | 17 |
 | [BGS-FM-022](../mathematics/reversed_path_decay.md) | proved | `BGS-FM-001` | None registered | 4 |
-| [BGS-FM-023](../mathematics/arithmetic_translation_exclusion.md) | proved | `BGS-FM-001`, `BGS-FM-016`, `BGS-FM-018` | None registered | 1 |
+| [BGS-FM-023](../mathematics/spectral-obstructions/arithmetic_translation_exclusion.md) | proved | `BGS-FM-001`, `BGS-FM-016`, `BGS-FM-018` | None registered | 1 |
 | [BGS-FM-024](../mathematics/actual_seven_primary_commutant.md) | proved | `BGS-FM-001`, `BGS-FM-008` | `EXT-POPESCU-2023` | 0 |
 | [BGS-FM-025](../mathematics/uniform_five_cluster_simplicity.md) | proved | `BGS-FM-001`, `BGS-FM-008` | `EXT-POPESCU-2023` | 0 |
 | [BGS-FM-026](../mathematics/literal_time_multiplicity_bounds.md) | proved | `BGS-FM-001` | `EXT-POPESCU-2023` | 0 |
@@ -133,8 +133,8 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-010](../mathematics/trace-bridge/signed_heisenberg_comparison.md) | proved | `BGS-TRACE-001`, `BGS-TRACE-002`, `BGS-TRACE-003` | `EXT-DE-2001` | 1 |
 | [BGS-TRACE-011](../mathematics/trace-bridge/resonant_cubic_density_control.md) | proved | `BGS-TRACE-001`, `BGS-TRACE-009`, `BGS-TRACE-010` | `EXT-DE-2001` | 1 |
 | [BGS-TRACE-012](../mathematics/folded_quadratic_resonance_control.md) | proved | `BGS-FM-001`, `BGS-TRACE-001`, `BGS-TRACE-009`, `BGS-TRACE-011` | None registered | 0 |
-| [BGS-TRACE-013](../mathematics/arithmetic_word_expansion_obstruction.md) | proved | None registered | `EXT-BG-2008`, `EXT-DIRICHLET-1837`, `EXT-GAE-2007`, `EXT-POPESCU-2023` | 0 |
-| [BGS-TRACE-014](../mathematics/isospectral_clock_moment_control.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-013](../mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md) | proved | None registered | `EXT-BG-2008`, `EXT-DIRICHLET-1837`, `EXT-GAE-2007`, `EXT-POPESCU-2023` | 0 |
+| [BGS-TRACE-014](../mathematics/spectral-obstructions/isospectral_clock_moment_control.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-015](../mathematics/three_block_unmarking.md) | proved | `BGS-FM-021` | None registered | 0 |
 | [BGS-TRACE-016](../mathematics/four_block_unmarking.md) | proved | `BGS-FM-021`, `BGS-FORMAL-002` | None registered | 0 |
 | [BGS-TRACE-017](../mathematics/factorial_wkb_reduction.md) | proved | `BGS-FM-001`, `BGS-TRACE-001`, `BGS-TRACE-002` | None registered | 1 |
@@ -178,9 +178,9 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-078](../mathematics/trace-bridge/two_step_increment_variance.md) | proved | None registered | None registered | 1 |
 | [BGS-TRACE-079](../mathematics/trace-bridge/two_step_stopped_concentration.md) | proved | `BGS-FM-021`, `BGS-TRACE-075`, `BGS-TRACE-077`, `BGS-TRACE-078` | None registered | 1 |
 | [BGS-TRACE-080](../mathematics/trace-bridge/unconditional_feedback_flatness.md) | proved | `BGS-FM-021`, `BGS-FM-022`, `BGS-TRACE-060`, `BGS-TRACE-073`, `BGS-TRACE-077`, `BGS-TRACE-079` | None registered | 1 |
-| [BGS-TRACE-081](../mathematics/flat_spectrum_obstruction_20261014.md) | proved | None registered | None registered | 2 |
-| [BGS-TRACE-082](../mathematics/coherence_memory_plateau_20261014.md) | proved | `BGS-TRACE-081` | None registered | 1 |
-| [BGS-TRACE-083](../mathematics/coherent_first_return_pulse_20261014.md) | proved | `BGS-TRACE-081`, `BGS-TRACE-082` | None registered | 0 |
+| [BGS-TRACE-081](../mathematics/spectral-obstructions/flat_spectrum_obstruction.md) | proved | None registered | None registered | 2 |
+| [BGS-TRACE-082](../mathematics/spectral-obstructions/coherence_memory_plateau.md) | proved | `BGS-TRACE-081` | None registered | 1 |
+| [BGS-TRACE-083](../mathematics/spectral-obstructions/coherent_first_return_pulse.md) | proved | `BGS-TRACE-081`, `BGS-TRACE-082` | None registered | 0 |
 | [BGS-TRACE-084](../mathematics/trace-bridge/resonant_mesoscopic_criterion.md) | proved | `BGS-TRACE-009` | None registered | 0 |
 | [BGS-TRACE-085](../mathematics/trace-bridge/root_lifting_sector_boundary.md) | proved | `BGS-TRACE-001`, `BGS-TRACE-002` | `EXT-DE-2001` | 0 |
 | [BGS-TRACE-086](../mathematics/trace-bridge/all_order_process_closure.md) | proved | `BGS-TRACE-001`, `BGS-TRACE-002`, `BGS-TRACE-004` | None registered | 1 |

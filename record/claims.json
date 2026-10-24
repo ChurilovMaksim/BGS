@@ -807,7 +807,7 @@
       "title": "Stable singular pair energy in Haar CUE and weak-local obstruction",
       "state": "proved",
       "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR SELF-REVIEW",
-      "source": "mathematics/cue_singular_energy.md",
+      "source": "mathematics/spectral-obstructions/cue_singular_energy.md",
       "dependencies": [],
       "external_dependencies": [
         "EXT-BAB-2013"
@@ -1355,7 +1355,7 @@
         "EXT-POPESCU-2023",
         "EXT-DIRICHLET-1837"
       ],
-      "source": "mathematics/arithmetic_word_expansion_obstruction.md",
+      "source": "mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md",
       "boundary": "A different fixed primitive irreversible arithmetic map; odd parity sectors have uniform one-copy gap and exact extensive tensor memory, and an enlarged full-space channel has a uniform two-copy gap. Flat perturbations retain bounded fixed traces and coherent Heisenberg returns while removing exact spectral markers. Full-space channel mixes parity, and no translation enters the selected word. Not the frozen map, sector-preserving two-copy falsifier, BGS solution or priority claim.",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR SELF-REVIEW + FINITE CONTROLS",
@@ -1770,7 +1770,7 @@
       "title": "All-order Haar moment-channel proximity with a rigid isospectral clock spectrum",
       "dependencies": [],
       "external_dependencies": [],
-      "source": "mathematics/isospectral_clock_moment_control.md",
+      "source": "mathematics/spectral-obstructions/isospectral_clock_moment_control.md",
       "boundary": "Same-ensemble all-k induced Hilbert–Schmidt channel error at most 1/N and exact two-copy error 1/(N²−1), despite deterministic clock spacings. No diamond-norm approximation, frozen-map Egorov property, deterministic BGS result, global priority or formal certification.",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INTERNAL INDEPENDENT AUDIT + EXACT FINITE CONTROLS",
@@ -1874,7 +1874,7 @@
       "title": "Quantitative exclusion of bounded-power arithmetic translation algebras",
       "state": "proved",
       "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + PORTABLE EXACT FINITE CONTROLS; NO ANALYTIC FORMALIZATION",
-      "source": "mathematics/arithmetic_translation_exclusion.md",
+      "source": "mathematics/spectral-obstructions/arithmetic_translation_exclusion.md",
       "dependencies": [
         "BGS-FM-001",
         "BGS-FM-016",
@@ -3295,7 +3295,7 @@
       "proof_dependencies": [
         "mathematics/polar_wkb_quantization_stability.md",
         "supplement/fixed_map/ergodic-transfer/ergodic_spectral_transfer.md",
-        "mathematics/microscopic_rounding_control.md"
+        "mathematics/spectral-obstructions/microscopic_rounding_control.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261011/chat-research/README.md"
@@ -3534,7 +3534,7 @@
       "title": "Perfect intensity mixing, small reversal and simple spectrum do not identify microscopic statistics",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; FINITE CONTROLS SEPARATE",
-      "source": "mathematics/flat_spectrum_obstruction_20261014.md",
+      "source": "mathematics/spectral-obstructions/flat_spectrum_obstruction.md",
       "dependencies": [],
       "dependency_scope": "Self-contained exact unitary tensor/chirp construction, all-invertible generic-column phase lemma and elementary perturbation/cluster bounds. TRACE-080 and graph phase-ensemble results provide context only, not proof inputs.",
       "external_dependencies": [],
@@ -3558,7 +3558,7 @@
       "title": "Exact coherence return memory and universal singular-norm plateau before dimension time",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; OBSERVED-RETURN INPUT EXPLICIT; FINITE ARITHMETIC FORMAL SCOPE SEPARATE",
-      "source": "mathematics/coherence_memory_plateau_20261014.md",
+      "source": "mathematics/spectral-obstructions/coherence_memory_plateau.md",
       "dependencies": [
         "BGS-TRACE-081"
       ],
@@ -3586,7 +3586,7 @@
       "title": "Observed first-return pulses and cyclic coherence survive perfect intensity mixing",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; ALL-SOURCE TAIL AND UNCONJUGATED TRACE SCOPES EXPLICIT",
-      "source": "mathematics/coherent_first_return_pulse_20261014.md",
+      "source": "mathematics/spectral-obstructions/coherent_first_return_pulse.md",
       "dependencies": [
         "BGS-TRACE-081",
         "BGS-TRACE-082"
@@ -4269,7 +4269,7 @@
       "title": "Quantitative magnetic-quotient moment bound and global semicircle law",
       "state": "proved",
       "ledger_status": "COMPLETE PROJECT DERIVATION + FINITE CHECKS; NOT EXTERNALLY REFEREED",
-      "source": "mathematics/magnetic_quotient_semicircle.md",
+      "source": "mathematics/spectral-obstructions/magnetic_quotient_semicircle.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [

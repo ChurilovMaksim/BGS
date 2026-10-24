@@ -483,7 +483,7 @@ includes the torus-volume and labeling factors.
 
 ## The singular reference boundary and a coboundary control
 
-The [Haar-CUE reference proof](cue_singular_energy.md) (BGS-CUE-001)
+The [Haar-CUE reference proof](spectral-obstructions/cue_singular_energy.md) (BGS-CUE-001)
 evaluates an unregularized object beyond the fixed-positive-$s$
 pair Abel statistic: if $F_{N,2}=\sum_{j\ne k}
 |e^{i\theta_j}-e^{i\theta_k}|^{-2}$, then
@@ -1980,7 +1980,7 @@ basis changes are outside these assertions.
 
 ## Coherent words despite auxiliary expansion
 
-**Claim ID:** `BGS-TRACE-013`. The [complete counterexample](arithmetic_word_expansion_obstruction.md)
+**Claim ID:** `BGS-TRACE-013`. The [complete counterexample](spectral-obstructions/arithmetic_word_expansion_obstruction.md)
 uses three fixed integral hyperbolic matrices
 $$
 R=\begin{pmatrix}4&9\\19&43\end{pmatrix},\quad

@@ -1,7 +1,7 @@
 # Signed-trace extension: every hyperbolic integer toral automorphism
 
 This addendum completes the trace range in
-[the covariance-based spectral theorem](../general_hyperbolic_prime_spectra.md).
+[the covariance-based spectral theorem](../spectral-obstructions/general_hyperbolic_prime_spectra.md).
 It is a project proof, with no assertion of external priority or completed
 computer verification. In particular, trace less than -2 is covered without
 replacing the classical map by an iterate or by its negative.

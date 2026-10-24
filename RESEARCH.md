@@ -84,7 +84,7 @@ manuscript cannot strengthen the registered claim.
 
 ## Spectral information beyond intensity mixing
 
-[TRACE-083](mathematics/coherent_first_return_pulse_20261014.md) evaluates
+[TRACE-083](mathematics/spectral-obstructions/coherent_first_return_pulse.md) evaluates
 a single observed memory coefficient for the TRACE-081 family.
 At time 2p it is almost an isometry on nearly all centered diagonal
 directions, although its remaining monitored energy tail is at most
@@ -94,12 +94,12 @@ later first-return coefficient are different operators. These are
 abstract-family conclusions; the original physical signed source
 and the BGS limit remain open.
 
-[TRACE-081](mathematics/flat_spectrum_obstruction_20261014.md) proves that
+[TRACE-081](mathematics/spectral-obstructions/flat_spectrum_obstruction.md) proves that
 perfect intensity mixing, a vanishing coordinate reversal norm, simple
 spectrum and a uniform macroscopic phase law can coexist with an empty
 origin-averaged microscopic limit and clustered spacings. The construction
 is an abstract unitary family; it is not the fixed smooth chaotic model.
-[TRACE-082](mathematics/coherence_memory_plateau_20261014.md) identifies
+[TRACE-082](mathematics/spectral-obstructions/coherence_memory_plateau.md) identifies
 exact coherent return memory and proves a universal obstruction:
 
 $$
@@ -257,8 +257,8 @@ remain part of the full target.
 
 Known controls explain why weaker criteria do not close the problem:
 [absolute all-order comparison](mathematics/trace-bridge/signed_heisenberg_comparison.md),
-[same-ensemble clock norms](mathematics/isospectral_clock_moment_control.md),
-and [microscopic rounding](mathematics/microscopic_rounding_control.md).
+[same-ensemble clock norms](mathematics/spectral-obstructions/isospectral_clock_moment_control.md),
+and [microscopic rounding](mathematics/spectral-obstructions/microscopic_rounding_control.md).
 The rounding example changes the operator and does not preserve exact
 quantization; it is not a counterexample to the maintained literal family.
 Exact open statements are in [open_questions.md](mathematics/open_questions.md).

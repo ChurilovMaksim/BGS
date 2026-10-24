@@ -2,7 +2,7 @@
 
 Date: 2026-09-05. Scope: primary-source metadata and abstracts, not a complete
 priority review. No external result below is silently used as a theorem in
-`mathematics/magnetic_quotient_semicircle.md`; its stated proof is self-contained.
+`mathematics/spectral-obstructions/magnetic_quotient_semicircle.md`; its stated proof is self-contained.
 
 ## Relevant comparison objects
 

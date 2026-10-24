@@ -78,12 +78,12 @@ directions, even with a negligible monitored energy tail.
 The exact cubic-composition resonance prevents replacing the
 full signed hierarchy by low unconjugated trace cancellations.
 It does not supply an estimate for the actual fixed-map source.
-[Exact scope](coherent_first_return_pulse_20261014.md).
+[Exact scope](spectral-obstructions/coherent_first_return_pulse.md).
 
-[TRACE-081](flat_spectrum_obstruction_20261014.md) rules out inferring an
+[TRACE-081](spectral-obstructions/flat_spectrum_obstruction.md) rules out inferring an
 initial microscopic law from flat intensities, small reversal norm, simple
 spectrum and a uniform macroscopic measure alone. Its origin average can
-still converge to the empty process. [TRACE-082](coherence_memory_plateau_20261014.md)
+still converge to the empty process. [TRACE-082](spectral-obstructions/coherence_memory_plateau.md)
 rules out a general singular-norm decay for the full unaveraged coherence
 block before time N. Cancellation of specified observed/signed returns is
 a different obligation and remains open for the unchanged fixed map.
@@ -359,7 +359,7 @@ superpolynomial step schedule; deterministic noise removal remains open. The
 and bounded occupancy alone cannot remove the noise. The [direct fixed-time packet proof](fixed_time_wavepacket_trace_bound.md)
 now closes bounded starting traces; its constants are not uniform at
 Heisenberg times. The historical Faure action-phase application remains
-conditional on regularized trace matching. [TRACE-013](arithmetic_word_expansion_obstruction.md)
+conditional on regularized trace matching. [TRACE-013](spectral-obstructions/arithmetic_word_expansion_obstruction.md)
 shows that even bounded fixed traces and a full-space auxiliary two-copy
 channel gap cannot replace coherent-word estimates.
 The [Möbius reduction](coboundary_mobius_diffusion.md) now proves a
@@ -452,7 +452,7 @@ sum. The [effective gap floor](frozen_effective_gap_floor.md)
 it gives no local occupation control. Neither result changes the
 closure condition of `BGS-TRACE-005`.
 
-The [singular Haar-CUE benchmark](cue_singular_energy.md)
+The [singular Haar-CUE benchmark](spectral-obstructions/cue_singular_energy.md)
 (BGS-CUE-001) identifies the reference law when the
 adjoint inverse-gap regularization is removed, but
 weak local process limits alone do not control this

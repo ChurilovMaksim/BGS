@@ -37,6 +37,7 @@ def sealed_source_bytes(root=historical.ROOT):
     resolutions=bindings.get('historical_resolutions',{})
     expected={rel:'archive/evidence/schur_reduction_20261007/raw/review/pinned/BGS/'+rel
               for rel in ('AGENTS.md','SOURCE_OF_TRUTH.md','record/repository_conventions.md')}
+    expected['mathematics/microscopic_rounding_control.md']='mathematics/spectral-obstructions/microscopic_rounding_control.md'
     historical.require(resolutions==expected,'unreviewed historical input resolution')
     cached={}
     for rel,digest in bindings['files'].items():

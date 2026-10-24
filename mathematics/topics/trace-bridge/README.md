@@ -31,8 +31,8 @@ Exact factorial partition identities connect local correlations to complete sign
 
 ## Current theorem capsules
 
-- **[Perfect-mixing spectral obstruction](../../flat_spectrum_obstruction_20261014.md)** — Simple spectrum and macroscopic uniformity do not identify the origin-averaged microscopic law.
-- **[Exact coherence memory](../../coherence_memory_plateau_20261014.md)** — Universal norm plateau through time N-1; observed signed cancellation remains separate.
+- **[Perfect-mixing spectral obstruction](../../spectral-obstructions/flat_spectrum_obstruction.md)** — Simple spectrum and macroscopic uniformity do not identify the origin-averaged microscopic law.
+- **[Exact coherence memory](../../spectral-obstructions/coherence_memory_plateau.md)** — Universal norm plateau through time N-1; observed signed cancellation remains separate.
 
 - **[Unconditional deterministic-start feedback](../../trace-bridge/unconditional_feedback_flatness.md)** — Joint all-depth flatness and cutoff-matched clocks; deterministic microscopic universality remains open.
 - **[All-pair stopped concentration](../../trace-bridge/two_step_stopped_concentration.md)** — Diagonal pairs, endpoint deactivation and full first crossings.
@@ -85,7 +85,7 @@ See [the ongoing corpus revision](../../../archive/record/corpus_revision_202610
 - [heisenberg_trace_support](../../trace-bridge/heisenberg_trace_support.md)
 - [prime_resonant_sector](../../prime_resonant_sector.md) — Exact block orientation, sector mass criterion, spectral comb and conditional coherent-mode obstruction.
 - [resonant_cubic_density_control](../../trace-bridge/resonant_cubic_density_control.md) — Density-conditioned signed deletion and sharp critical clusters compatible with CUE pairs.
-- [arithmetic_word_expansion_obstruction](../../arithmetic_word_expansion_obstruction.md) — 4 October proof and exact scope.
+- [arithmetic_word_expansion_obstruction](../../spectral-obstructions/arithmetic_word_expansion_obstruction.md) — 4 October proof and exact scope.
 
 - [three_block_unmarking](../../three_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
 
@@ -175,7 +175,7 @@ startup assumptions. Physical microscopic cavity identification remains open.
 - [Every fixed clock power under entry flatness](../../trace-bridge/conditional_clock_universality.md)
 - [Full-depth clock measure and exact rank atom](../../trace-bridge/full_depth_clock_measure.md)
 
-- [Observed first-return pulses and cyclic memory](../../coherent_first_return_pulse_20261014.md) — TRACE-083; individual coefficient and all-source energy-tail theorem for the abstract family.
+- [Observed first-return pulses and cyclic memory](../../spectral-obstructions/coherent_first_return_pulse.md) — TRACE-083; individual coefficient and all-source energy-tail theorem for the abstract family.
 
 
 ## Checked 15 October research-record imports

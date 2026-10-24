@@ -83,7 +83,7 @@ excess limits remain unproved. Resonance deletion is sufficient only.
 - **BGS-TRACE-091** — [Sharp clock minimum and exact radial and Abel Hardy remainders](trace-bridge/hardy_spectral_remainder.md); proved within its stated scope.
 
 
-[TRACE-083](coherent_first_return_pulse_20261014.md) evaluates
+[TRACE-083](spectral-obstructions/coherent_first_return_pulse.md) evaluates
 a single observed memory coefficient for the TRACE-081 family.
 At time 2p it is almost an isometry on nearly all centered diagonal
 directions, although its remaining monitored energy tail is at most
@@ -93,12 +93,12 @@ later first-return coefficient are different operators. These are
 abstract-family conclusions; the original physical signed source
 and the BGS limit remain open.
 
-[TRACE-081](flat_spectrum_obstruction_20261014.md) proves that
+[TRACE-081](spectral-obstructions/flat_spectrum_obstruction.md) proves that
 perfect intensity mixing, a vanishing coordinate reversal norm, simple
 spectrum and a uniform macroscopic phase law can coexist with an empty
 origin-averaged microscopic limit and clustered spacings. The construction
 is an abstract unitary family; it is not the fixed smooth chaotic model.
-[TRACE-082](coherence_memory_plateau_20261014.md) identifies
+[TRACE-082](spectral-obstructions/coherence_memory_plateau.md) identifies
 exact coherent return memory and proves a universal obstruction:
 
 $$
@@ -275,9 +275,9 @@ Locality estimates specify the symbol class, approximation budget, coupling and 
 
 ## Spectral obstruction tests
 
-[Microscopic rounding](microscopic_rounding_control.md) preserves the whole unnormalized trace vector through each specified K_N=o(N^(1/3)) and coarse position/reversal/Egorov controls, yet violates a fixed stable-band pair target. It refines prior project rounding by changing the operator; exact quantization and subprincipal data are outside its scope.
+[Microscopic rounding](spectral-obstructions/microscopic_rounding_control.md) preserves the whole unnormalized trace vector through each specified K_N=o(N^(1/3)) and coarse position/reversal/Egorov controls, yet violates a fixed stable-band pair target. It refines prior project rounding by changing the operator; exact quantization and subprincipal data are outside its scope.
 
-Negative controls reject specific invalid implications. [TRACE-014](isospectral_clock_moment_control.md) gives a same-ensemble clock spectrum whose induced-HS moment channels approach Haar uniformly in all orders. An abstract spectrum is not automatically a quantization of the actual chaotic map.
+Negative controls reject specific invalid implications. [TRACE-014](spectral-obstructions/isospectral_clock_moment_control.md) gives a same-ensemble clock spectrum whose induced-HS moment channels approach Haar uniformly in all orders. An abstract spectrum is not automatically a quantization of the actual chaotic map.
 
 [Theorems, reading path and complete sources](topics/spectral-obstructions/README.md).
 

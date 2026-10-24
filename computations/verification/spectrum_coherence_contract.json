@@ -13,8 +13,8 @@
   ],
   "execution_artifacts": [
     "computations/verification/spectrum_coherence_controls.py",
-    "mathematics/flat_spectrum_obstruction_20261014.md",
-    "mathematics/coherence_memory_plateau_20261014.md",
+    "mathematics/spectral-obstructions/flat_spectrum_obstruction.md",
+    "mathematics/spectral-obstructions/coherence_memory_plateau.md",
     "computations/verification/circular_phase_controls/audit_tools/run_experiment.py",
     "computations/verification/circular_phase_controls/audit_tools/validate_manifest.py",
     "computations/verification/spectrum_coherence_contract.json"
@@ -25,8 +25,8 @@
     "conventions": "Row-major vectorization of Ad_U; diagonal projection separates P(U^t) from P(U)^t.",
     "inputs": [
       "computations/verification/spectrum_coherence_controls.py",
-      "mathematics/flat_spectrum_obstruction_20261014.md",
-      "mathematics/coherence_memory_plateau_20261014.md"
+      "mathematics/spectral-obstructions/flat_spectrum_obstruction.md",
+      "mathematics/spectral-obstructions/coherence_memory_plateau.md"
     ],
     "bounds": {
       "core_dimension": 4,

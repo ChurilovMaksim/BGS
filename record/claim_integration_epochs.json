@@ -175,19 +175,19 @@
     {
       "id": "BGS-TRACE-081",
       "state": "proved",
-      "source": "mathematics/flat_spectrum_obstruction_20261014.md",
+      "source": "mathematics/spectral-obstructions/flat_spectrum_obstruction.md",
       "disposition": "Abstract deterministic family on N_k=4^k p_k with odd primes p_k->infinity. Exact P=J, reversal norm2^-k, simple spectrum and macroscopic uniform phase law coexist with origin-averaged empty microscopic point process, weak spacing delta0, non-UI counts and Heisenberg form-factor resonances. Generic phase lemma applies to every invertible complex matrix. Not the unchanged odd-N fixed-map propagator, a fixed smooth chaotic quantization, a contradiction to a full phase-averaged ensemble, BGS, priority or analytic formal certification."
     },
     {
       "id": "BGS-TRACE-082",
       "state": "proved",
-      "source": "mathematics/coherence_memory_plateau_20261014.md",
+      "source": "mathematics/spectral-obstructions/coherence_memory_plateau.md",
       "disposition": "Every unitary U of dimension N>=2, Hilbert--Schmidt off-diagonal compression E=Q Ad_U Q: ||E^r||=1 for integers0<=r<N. Exact compressed resolvent for |z|<1 and coherent-return recurrence. This is a singular-norm obstruction, not a spectral-radius assertion or nondecay for every source. TRACE-081 separately gives order-one observed returns near N. Lean kernel proves only positivity of the numerical product (N-1)(N-r); compilation scope is recorded separately. No actual fixed-map signed-source estimate, microscopic universality, BGS or priority claim."
     },
     {
       "id": "BGS-TRACE-083",
       "state": "proved",
-      "source": "mathematics/coherent_first_return_pulse_20261014.md",
+      "source": "mathematics/spectral-obstructions/coherent_first_return_pulse.md",
       "disposition": "Abstract N=4^k p family, k>=2 and odd prime p. Exact first-return amplitudes have support at 1,2,p,2p before column-phase perturbation. At t=2p the perturbed memory coefficient is almost an isometry on (4^k-1)(p-1) centered diagonal directions; normalized HS energy tends to one as k,p tend to infinity. Its all-source monitored energy tail beyond 2p is at most 16 N^-6. Choosing p_k>=4^(k^2) makes 2p exceed every fixed N^alpha, 0<alpha<1, while remaining o(N). For p!=3, normalized unconjugated q-th pulse traces approach 1_{3 divides q}, with explicit q*4p*N^-4 error; this is not a conjugated covariance or an assertion about F_{2pq}. No actual fixed-map signed source, BGS, full formal certification or priority conclusion."
     },
     {
@@ -382,7 +382,7 @@
     {
       "id": "BGS-CAYLEY-009",
       "state": "proved",
-      "source": "mathematics/magnetic_quotient_semicircle.md",
+      "source": "mathematics/spectral-obstructions/magnetic_quotient_semicircle.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Global empirical spectral measure of a compressed observable only; not microscopic BGS statistics of a quantum propagator. Prime subgroup orders K=o(log p); the source's Section 9 proves this regime is incompatible with the orders of any one fixed hyperbolic integral cat map. Priority not established.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
@@ -875,10 +875,11 @@
         "evidence": [
           "archive/evidence/20261004/expansion_wavepacket_checks.json",
           "archive/evidence/executions/20261004-expansion-wavepacket.json"
-        ]
+        ],
+        "source": "mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md"
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-2 topical relocation of this claim's source note from mathematics/arithmetic_word_expansion_obstruction.md to mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md (package P2-MATH wave 8, 24 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md; archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH8.md"
     },
     {
       "id": "BGS-FLOW-021",
@@ -1030,10 +1031,11 @@
           "evidence/executions/20261006/clock-control/exact_checks_optimized.json",
           "evidence/executions/20261006/clock-control/mutation_checks.json",
           "archive/record/clock_control_review_20261006.md"
-        ]
+        ],
+        "source": "mathematics/spectral-obstructions/isospectral_clock_moment_control.md"
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-2 topical relocation of this claim's source note from mathematics/isospectral_clock_moment_control.md to mathematics/spectral-obstructions/isospectral_clock_moment_control.md (package P2-MATH wave 8, 24 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-F2.md; archive/MANIFEST-P2MATH8.md"
     },
     {
       "id": "BGS-FM-021",
@@ -1084,10 +1086,11 @@
           "evidence/executions/20261006/divisor-exclusion/receipt.json",
           "archive/record/next_proofs_consolidation_review_20261006.md",
           "evidence/executions/20261006/next-proof-integration/receipt.json"
-        ]
+        ],
+        "source": "mathematics/spectral-obstructions/arithmetic_translation_exclusion.md"
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-2 topical relocation of this claim's source note from mathematics/arithmetic_translation_exclusion.md to mathematics/spectral-obstructions/arithmetic_translation_exclusion.md (package P2-MATH wave 8, 24 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-F2.md; archive/MANIFEST-P2MATH8.md"
     },
     {
       "id": "BGS-TRACE-016",
@@ -1748,6 +1751,15 @@
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-TRACE-023 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change.",
       "review": "archive/MANIFEST-P2MATH10a.md"
+    },
+    {
+      "id": "BGS-CUE-001",
+      "historical_row_sha256": "31d0cda413e2f46cceedee78ed1ff4ab44cbe2b2a1e329dd6a93864783ac9a2f",
+      "fields": {
+        "source": "mathematics/spectral-obstructions/cue_singular_energy.md"
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of this claim's source note from mathematics/cue_singular_energy.md to mathematics/spectral-obstructions/cue_singular_energy.md (package P2-MATH wave 8, 24 October 2026). Paths only: state and every other contract field are unchanged. This relocation adds no theorem promotion.",
+      "review": "archive/MANIFEST-P2MATH8.md"
     }
   ]
 }

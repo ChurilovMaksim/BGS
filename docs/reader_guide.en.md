@@ -277,7 +277,7 @@ The deterministic spectral reduction is one of the most mature layers of the pro
 | **BGS-RES-006** | **proved** | exact adjoint-resolvent representation of the pair target |
 | **BGS-RES-007** | **proved in stated scope** | compact positive-$s$ smooth scalar-resolvent transfer between the original and seven-cut full propagators |
 
-The newer [Haar-CUE singular-energy benchmark](../mathematics/cue_singular_energy.md)
+The newer [Haar-CUE singular-energy benchmark](../mathematics/spectral-obstructions/cue_singular_energy.md)
 (BGS-CUE-001) derives a stable inverse-gap energy law from the published
 small-gap Poisson theorem and an explicit tail bound. The
 [coboundary spectral-flow note](../mathematics/coboundary_spectral_flow_bound.md)

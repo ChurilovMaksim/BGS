@@ -1,7 +1,7 @@
 """Odd twisted-Jacobi blocks: orbit matrices and exact all-order Weyl traces.
 
 The global-law proof and its strong arithmetic restrictions are recorded in
-mathematics/magnetic_quotient_semicircle.md. No microscopic law is assumed.
+mathematics/spectral-obstructions/magnetic_quotient_semicircle.md. No microscopic law is assumed.
 """
 from __future__ import annotations
 from collections import Counter

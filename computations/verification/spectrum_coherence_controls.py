@@ -133,8 +133,8 @@ def run():
     assert zero(ell*c) and ell*e*c == s.eye(2)-s.ones(2)/2
     assert ret[3] == s.eye(2)
     hashes = {}
-    for name in ('flat_spectrum_obstruction_20261014.md', 'coherence_memory_plateau_20261014.md'):
-        path = ROOT/'mathematics'/name
+    for name in ('flat_spectrum_obstruction.md', 'coherence_memory_plateau.md'):
+        path = ROOT/'mathematics/spectral-obstructions'/name
         hashes[str(path.relative_to(ROOT))] = hashlib.sha256(path.read_bytes()).hexdigest()
     return {'status': 'pass', 'python': platform.python_version(), 'sympy': s.__version__,
             'arithmetic': 'integers, rational and Gaussian-rational exact algebra',

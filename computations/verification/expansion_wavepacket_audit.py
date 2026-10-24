@@ -311,7 +311,7 @@ def main():
             'non_claims': ['asymptotic proof certification', 'actual flat-kick numerical spectra',
                           'Heisenberg trace cancellation', 'BGS', 'priority',
                           'independent referee', 'Lean compilation']}
-    sources = ['mathematics/arithmetic_word_expansion_obstruction.md',
+    sources = ['mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md',
                'mathematics/egorov_overlap_rigidity.md',
                'mathematics/fixed_time_wavepacket_trace_bound.md',
                'computations/verification/expansion_wavepacket_audit.py']

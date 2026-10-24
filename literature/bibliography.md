@@ -70,7 +70,7 @@ map. The primary arXiv version and Theorem 1.2 were checked on 25 September
 ## Small CUE gaps and singular reference statistics
 
 The singular reference energy studied in
-[BGS-CUE-001](../mathematics/cue_singular_energy.md)
+[BGS-CUE-001](../mathematics/spectral-obstructions/cue_singular_energy.md)
 uses G. Ben Arous and P. Bourgade,
 [*Extreme gaps between eigenvalues of random matrices*,
 Theorem 1.1](https://math.nyu.edu/~bourgade/papers/ExtremeGaps.pdf),

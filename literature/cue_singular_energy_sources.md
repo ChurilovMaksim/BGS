@@ -24,7 +24,7 @@ the seam and controlling it by rotation invariance and the
 project's explicit two-point bound. The theorem itself does
 not assert convergence of inverse powers of gaps or removal of
 a singular cutoff: these are separate project steps in
-[the maintained proof](../mathematics/cue_singular_energy.md).
+[the maintained proof](../mathematics/spectral-obstructions/cue_singular_energy.md).
 
 Comparison checked against A. Aguirre, A. Soshnikov and J. Sumpter,
 [*Pair Dependent Linear Statistics for CβE*,

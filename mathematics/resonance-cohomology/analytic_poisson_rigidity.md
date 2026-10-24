@@ -62,7 +62,7 @@ contained in the zero set of that derivative. End of proof.
 ## A normalized quantum consequence
 
 For the explicitly invariant quantization in
-[the general spectral note](../general_hyperbolic_prime_spectra.md), let
+[the general spectral note](../spectral-obstructions/general_hyperbolic_prime_spectra.md), let
 
     A=S^T,
     Q_N^*(a,b)=(-1)^(ab+a+b) W_N(a,b),

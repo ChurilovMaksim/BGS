@@ -104,7 +104,7 @@ See [the ongoing corpus revision](../../../archive/record/corpus_revision_202610
 
 - [three_block_unmarking](../../three_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
 
-- [arithmetic_translation_exclusion](../../arithmetic_translation_exclusion.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
+- [arithmetic_translation_exclusion](../../spectral-obstructions/arithmetic_translation_exclusion.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
 
 - [four_block_unmarking](../../four_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
 
