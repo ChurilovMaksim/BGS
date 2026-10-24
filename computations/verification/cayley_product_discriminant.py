@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Exact finite regression for Cayley multiplicative rigidity/discriminant.
 
-The universal proofs are in mathematics/cayley_multiplicative_rigidity.md and
-mathematics/cayley_product_discriminant.md.  This producer checks finite
+The universal proofs are in mathematics/cayley-arithmetic/cayley_multiplicative_rigidity.md and
+mathematics/cayley-arithmetic/cayley_product_discriminant.md.  This producer checks finite
 consequences only.
 """
 from __future__ import annotations

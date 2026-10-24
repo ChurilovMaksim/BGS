@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact regression for the Cayley difference-discriminant theorem.
 
-The proof lives in mathematics/cayley_difference_discriminant.md.  This script
+The proof lives in mathematics/cayley-arithmetic/cayley_difference_discriminant.md.  This script
 checks finite symbolic consequences only; it is not a substitute for the proof.
 
 Default promoted cases K=11,13 are fast.  Use --extended for K=5,7,11,13,17,19.

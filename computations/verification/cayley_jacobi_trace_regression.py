@@ -2,7 +2,7 @@
 """Finite numerical regression for the exact Cayley--Jacobi trace identity.
 
 Mathematical theorem (proved separately in
-mathematics/cayley_jacobi_trace_average.md):
+mathematics/cayley-arithmetic/cayley_jacobi_trace_average.md):
 
     hat(1_A)(r) = K * Tr M_S(2r),
 

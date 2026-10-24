@@ -2,7 +2,7 @@
 """Exact regression for the polynomial-scale Cayley energy route.
 
 This script checks the algebraic surrogate used in
-``mathematics/cayley_energy_curve_bound.md`` and several finite designs.  It
+``mathematics/cayley-arithmetic/cayley_energy_curve_bound.md`` and several finite designs.  It
 is deliberately not a proof of the Makarychev--Vyugin point bound.
 """
 

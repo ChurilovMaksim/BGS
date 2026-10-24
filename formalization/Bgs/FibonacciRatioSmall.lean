@@ -1,6 +1,6 @@
 /-
   Kernel-checked finite residue for the Fibonacci/Lucas ratio almost-Sidon
-  theorem in mathematics/cayley_resultant_structure.md.
+  theorem in mathematics/cayley-arithmetic/cayley_resultant_structure.md.
 
   The general theorem uses Carmichael's primitive-divisor theorem to reduce
   any non-forced collision to a bounded index range.  This module checks that

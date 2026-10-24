@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact regression for the global Corvaja--Zannier Cayley curve bound.
 
-The continuum theorem is proved in mathematics/cayley_curve_uniform.md.
+The continuum theorem is proved in mathematics/cayley-arithmetic/cayley_curve_uniform.md.
 This script checks the algebraic geometry identities symbolically and exact
 finite-field bookkeeping on many odd/even subgroup designs. Enumeration is
 finite evidence, not the proof of the theorem.

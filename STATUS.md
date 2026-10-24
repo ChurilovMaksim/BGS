@@ -73,7 +73,7 @@ is [`ERRATA.md`](ERRATA.md).
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-23**.
 It records 94 follow-on claims adopted after
-wave 3 and 70 historical claim
+wave 3 and 72 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 18 external IDs.
 

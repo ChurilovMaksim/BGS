@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Closed fourth moment, independently checked against Weyl convolution.
 
-Exact formula and counting proof: mathematics/pell_coboundary_fourth_moment.md.
+Exact formula and counting proof: mathematics/cayley-arithmetic/pell_coboundary_fourth_moment.md.
 Real trigonometric expressions are evaluated at high precision, not with
 interval-certified rounding. The limiting-series tail is bounded separately.
 """

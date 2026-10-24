@@ -4,13 +4,13 @@
 
 This proposed article isolates the finite-field arithmetic chain from the
 larger BGS programme. Its currently included claims are
-[BGS-CAYLEY-001](../../mathematics/fourth_moment_reduction.md)
+[BGS-CAYLEY-001](../../mathematics/cayley-arithmetic/fourth_moment_reduction.md)
 (pair-key and fourth-moment reduction),
-[BGS-CAYLEY-002](../../mathematics/cayley_additive_energy.md)
+[BGS-CAYLEY-002](../../mathematics/cayley-arithmetic/cayley_additive_energy.md)
 (Cayley-energy identity),
-[BGS-CAYLEY-003](../../mathematics/cayley_direct_energy.md)
+[BGS-CAYLEY-003](../../mathematics/cayley-arithmetic/cayley_direct_energy.md)
 (the explicit subgroup-size-range estimate), and
-[BGS-CAYLEY-004](../../mathematics/cayley_curve_uniform.md)
+[BGS-CAYLEY-004](../../mathematics/cayley-arithmetic/cayley_curve_uniform.md)
 (the uniform subgroup-curve bound).
 
 The dependence on the Vyugin–Makarychev and Corvaja–Zannier statements must

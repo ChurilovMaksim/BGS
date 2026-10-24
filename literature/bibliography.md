@@ -140,14 +140,14 @@ cot(pi*a/K), 1 <= a <= (K-1)/2,
 ```
 
 are linearly independent over `Q`. This is the exact external input used in
-`mathematics/cayley_additive_energy.md`; Wang also extends the statement to
+`mathematics/cayley-arithmetic/cayley_additive_energy.md`; Wang also extends the statement to
 more general moduli and derivatives of cotangent. The DOI/title metadata for
 both papers was independently resolved during the 2026-09-04 audit.
 
 On September 9, Wang's Theorem A was checked directly in the
 [author-posted article](https://www.researchgate.net/profile/Kai-Wang-227/publication/256257948_On_a_theorem_of_S_Chowla/links/5c423968a6fdccd6b5b7dd15/On-a-theorem-of-S-Chowla.pdf).
 The same independence input classifies weighted Cayley relations of every
-fixed length in `mathematics/cayley_trace_gaussian_limit.md`. That note proves
+fixed length in `mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md`. That note proves
 a full-trace Gaussian limit in its stated sparse regimes; no priority claim
 is based on this source check.
 
@@ -160,7 +160,7 @@ is based on this source check.
 18. M. Baker, **Reciprocity via Reciprocants**, *The American Mathematical Monthly* **132** (2025), 303--315, DOI `10.1080/00029890.2024.2439819` (arXiv:2309.02512).
 
 The load-bearing primitive-divisor input in
-`mathematics/fibonacci_ratio_energy_proof.md` is Yabuta's Theorem 3: the
+`mathematics/cayley-arithmetic/fibonacci_ratio_energy_proof.md` is Yabuta's Theorem 3: the
 `n`-th Fibonacci term has a primitive divisor for
 `n notin {1,2,6,12}`. In particular every `F_n` with `n>12` has a prime divisor
 that divides no earlier positive Fibonacci number. This exact formulation was
@@ -192,8 +192,8 @@ source is not proof that an identity has never appeared elsewhere.
 
 ## Direct Cayley energy and finite-field incidence bounds
 
-19. S. Makarychev and I. Vyugin, **Solutions of Polynomial Equations in Subgroups of $\mathbb F_p^*$**, *Arnold Mathematical Journal* **5** (2019), 105--121, DOI `10.1007/s40598-019-00112-z`. The load-bearing pointwise subgroup-curve estimate used in `mathematics/cayley_direct_energy.md` is the predecessor Theorem 2 in I. Vyugin and S. Makarychev, arXiv:1504.01354v2 (24 Sep 2015): for an absolutely irreducible bivariate polynomial of bidegree `(m,n)` with `P(0,0)!=0` and `deg P(x,0)>=1`, and `100(mn)^(3/2)<|G|<p^(3/4)/3`, a single product-coset fiber contains at most `16 m n^2(m+n)|G|^(2/3)` points. The inequality `deg P(x,0)>=1` was checked visually in the source PDF because text extraction can lose the equality bar. The 2019 journal paper is the later publication and separately verified bibliographically; theorem numbering is not assumed to be unchanged.
-20. S. Macourt, I. D. Shkredov and I. E. Shparlinski, **Multiplicative Energy of Shifted Subgroups and Bounds On Exponential Sums with Trinomials in Finite Fields**, *Canadian Journal of Mathematics* **70** (2018), 1319--1338, DOI `10.4153/CJM-2017-044-2`. Corollary 4.1 gives a near-quadratic bound `E_x(G+lambda)-|G|^4/p << |G|^2 log|G|` in the small-subgroup range; this is relevant to the exact shifted-product reformulation in `mathematics/cayley_centered_energy.md` but does not by itself bound the moving distinguished product classes needed for Cayley additive energy.
+19. S. Makarychev and I. Vyugin, **Solutions of Polynomial Equations in Subgroups of $\mathbb F_p^*$**, *Arnold Mathematical Journal* **5** (2019), 105--121, DOI `10.1007/s40598-019-00112-z`. The load-bearing pointwise subgroup-curve estimate used in `mathematics/cayley-arithmetic/cayley_direct_energy.md` is the predecessor Theorem 2 in I. Vyugin and S. Makarychev, arXiv:1504.01354v2 (24 Sep 2015): for an absolutely irreducible bivariate polynomial of bidegree `(m,n)` with `P(0,0)!=0` and `deg P(x,0)>=1`, and `100(mn)^(3/2)<|G|<p^(3/4)/3`, a single product-coset fiber contains at most `16 m n^2(m+n)|G|^(2/3)` points. The inequality `deg P(x,0)>=1` was checked visually in the source PDF because text extraction can lose the equality bar. The 2019 journal paper is the later publication and separately verified bibliographically; theorem numbering is not assumed to be unchanged.
+20. S. Macourt, I. D. Shkredov and I. E. Shparlinski, **Multiplicative Energy of Shifted Subgroups and Bounds On Exponential Sums with Trinomials in Finite Fields**, *Canadian Journal of Mathematics* **70** (2018), 1319--1338, DOI `10.4153/CJM-2017-044-2`. Corollary 4.1 gives a near-quadratic bound `E_x(G+lambda)-|G|^4/p << |G|^2 log|G|` in the small-subgroup range; this is relevant to the exact shifted-product reformulation in `mathematics/cayley-arithmetic/cayley_centered_energy.md` but does not by itself bound the moving distinguished product classes needed for Cayley additive energy.
 21. M. Rudnev and J. Wheeler, **On incidence bounds with Möbius hyperbolae in positive characteristic**, *Finite Fields and Their Applications* **78** (2022), 101978, DOI `10.1016/j.ffa.2021.101978` (arXiv:2104.10534). Provides quantitative incidence and rich-Möbius-hyperbola technology. The current audit did not find a lossless specialization yielding the desired near-quadratic centered Cayley energy; generic use remains weaker than the active target.
 
 All three DOI/title records above were independently resolved on 2026-09-04 and no retraction was reported. For item 19, the exact load-bearing hypothesis was additionally checked in the primary PDF rather than inferred from metadata or a search snippet.
@@ -202,7 +202,7 @@ All three DOI/title records above were independently resolved on 2026-09-04 and 
 
 22. S. Jabuka, S. Robins and X. Wang, **When are two Dedekind sums equal?**, *International Journal of Number Theory* **7** (2011), 2197--2202, DOI `10.1142/S1793042111005088` (arXiv:1103.0370).
 
-The ratio-orbit theorem in `mathematics/cayley_ratio_orbit_factorization.md`
+The ratio-orbit theorem in `mathematics/cayley-arithmetic/cayley_ratio_orbit_factorization.md`
 uses the prime-modulus consequence of the necessary equality criterion proved
 in this paper: if `K` is prime and `s(r,K)=s(s,K)`, then
 
@@ -223,7 +223,7 @@ that `deg(P_s-P_r)=m-1` for distinct classes.
 26. W. Sawin, A. Forey, J. Fresán and E. Kowalski, **Quantitative sheaf theory**, *Journal of the American Mathematical Society* **36** (2023), 653--726, DOI `10.1090/jams/1008`.
 
 Item 23 is now the primary theorem locator for the pairwise trace correlation in
-`mathematics/offoff_elliptic_spike_theorem.md`.  The printed lemma is stated for
+`mathematics/cayley-arithmetic/offoff_elliptic_spike_theorem.md`.  The printed lemma is stated for
 sheaves primitive on a common open set.  Our parameter classes have moving bad
 points, so the project uses the lemma's proof on the intersection of their good
 opens: Schur removes `H_c^2` for non-isomorphic geometric representations,
@@ -260,7 +260,7 @@ but are not invoked as black-box replacements for those checks.
 
 The only load-bearing use of these sources in the current project is the
 classical Bombieri--Vinogradov theorem for primes in arithmetic progressions,
-used in `mathematics/cayley_jacobi_trace_average.md` to count the two-parameter
+used in `mathematics/cayley-arithmetic/cayley_jacobi_trace_average.md` to count the two-parameter
 dyadic family of split designs after averaging over the prime modulus `K`.
 The exact form used is Iwaniec--Kowalski, Theorem 17.1: for every fixed error
 power, the sum over moduli up to `x^(1/2)` with a sufficient logarithmic saving

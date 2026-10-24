@@ -15,14 +15,14 @@ abstract-family obstructions retain their original models and proof boundaries.
 | Claim and source | State | Direct registered prerequisites | Registered external inputs | Direct consumers |
 |---|---|---|---|---:|
 | [BGS-BGS-001](../mathematics/fixed_map_resolvent_frontier.md) | open | `BGS-FM-001`, `BGS-FM-002`, `BGS-FM-003`, `BGS-FM-004`, `BGS-LOOP-001`, `BGS-TRACE-004`, `BGS-TRACE-005` | `EXT-BH-2026` | 0 |
-| [BGS-CAYLEY-001](../mathematics/fourth_moment_reduction.md) | proved | None registered | None registered | 1 |
-| [BGS-CAYLEY-002](../mathematics/cayley_additive_energy.md) | proved | `BGS-CAYLEY-001` | None registered | 3 |
-| [BGS-CAYLEY-003](../mathematics/cayley_direct_energy.md) | verification-pending | `BGS-CAYLEY-002` | `EXT-VM-2015` | 1 |
-| [BGS-CAYLEY-004](../mathematics/cayley_curve_uniform.md) | proved | `BGS-CAYLEY-002` | `EXT-CZ-2013` | 1 |
+| [BGS-CAYLEY-001](../mathematics/cayley-arithmetic/fourth_moment_reduction.md) | proved | None registered | None registered | 1 |
+| [BGS-CAYLEY-002](../mathematics/cayley-arithmetic/cayley_additive_energy.md) | proved | `BGS-CAYLEY-001` | None registered | 3 |
+| [BGS-CAYLEY-003](../mathematics/cayley-arithmetic/cayley_direct_energy.md) | verification-pending | `BGS-CAYLEY-002` | `EXT-VM-2015` | 1 |
+| [BGS-CAYLEY-004](../mathematics/cayley-arithmetic/cayley_curve_uniform.md) | proved | `BGS-CAYLEY-002` | `EXT-CZ-2013` | 1 |
 | [BGS-CAYLEY-005](../mathematics/open_questions.md) | open | `BGS-CAYLEY-002`, `BGS-CAYLEY-003`, `BGS-CAYLEY-004` | None registered | 0 |
-| [BGS-CAYLEY-006](../mathematics/cayley_trace_gaussian_limit.md) | proved | None registered | `EXT-BORDA-2020`, `EXT-FI-1980`, `EXT-WANG-1982`, `EXT-ZAGIER-1997` | 0 |
-| [BGS-CAYLEY-007](../mathematics/cayley_product_row_real_trace_ideal.md) | proved | None registered | `EXT-BT-1971` | 0 |
-| [BGS-CAYLEY-008](../mathematics/cayley_scaling_rigidity.md) | proved | None registered | None registered | 0 |
+| [BGS-CAYLEY-006](../mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md) | proved | None registered | `EXT-BORDA-2020`, `EXT-FI-1980`, `EXT-WANG-1982`, `EXT-ZAGIER-1997` | 0 |
+| [BGS-CAYLEY-007](../mathematics/cayley-arithmetic/cayley_product_row_real_trace_ideal.md) | proved | None registered | `EXT-BT-1971` | 0 |
+| [BGS-CAYLEY-008](../mathematics/cayley-arithmetic/cayley_scaling_rigidity.md) | proved | None registered | None registered | 0 |
 | [BGS-CAYLEY-009](../mathematics/magnetic_quotient_semicircle.md) | proved | None registered | None registered | 0 |
 | [BGS-CAYLEY-010](../manuscript/general_spectra.tex) | proved | None registered | None registered | 0 |
 | [BGS-CUE-001](../mathematics/cue_singular_energy.md) | proved | None registered | `EXT-BAB-2013` | 0 |

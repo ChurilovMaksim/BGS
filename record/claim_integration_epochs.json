@@ -361,21 +361,21 @@
     {
       "id": "BGS-CAYLEY-006",
       "state": "proved",
-      "source": "mathematics/cayley_trace_gaussian_limit.md",
+      "source": "mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Pointwise regime: K through odd primes with K=o(log p), split designs p=1 (mod K). Density regime: Q->infinity and log Q=o(log X), convergence in probability over dyadic split designs, not every design. Scalar quantitative refinements use classical real-line smoothing. External inputs and exact locators are registered separately. Trace parameters are not powers of one matrix; no microscopic BGS theorem or priority verdict.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
     {
       "id": "BGS-CAYLEY-007",
       "state": "proved",
-      "source": "mathematics/cayley_product_row_real_trace_ideal.md",
+      "source": "mathematics/cayley-arithmetic/cayley_product_row_real_trace_ideal.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Equality of split rational-prime support only, not of integral valuations. Covers the fixed-degree product-row cofactors P_{K,r}, Q_{K,r} at split primes p=1 (mod K). Polynomial control of the largest supported split prime remains open. The shift-resultant transversality theorems of the same manuscript section are separate results, backed by mathematics/cayley_inverse_resultant_transversality.md and mathematics/cayley_product_row_subresultants.md.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
     {
       "id": "BGS-CAYLEY-008",
       "state": "proved",
-      "source": "mathematics/cayley_scaling_rigidity.md",
+      "source": "mathematics/cayley-arithmetic/cayley_scaling_rigidity.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Characteristic different from two; rho, sigma outside {0,1,-1} and rho != sigma. Classification of scaling classes only; the pointwise additive-energy exponent remains 8/3 and no BGS conclusion follows.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
@@ -669,9 +669,10 @@
       "historical_row_sha256": "04dff239fcba6148a7334ec5010980dd053ca1e392e3effd0c68021efdd257ae",
       "fields": {
         "ledger_status": "EXACT + FINITE-CERTIFICATE (PARTIAL AT LARGEST DESIGNS)",
-        "boundary": "Finite-field reduction; not a microscopic spectral theorem. Finite-certificate coverage: the receipt verdict PASS is corpus-level; at (461,23) original_pair_vs_explicit_key, direct_vs_fast_distribution and twist_collapse are NOT_RUN_AT_THIS_SIZE (q_values_checked [1] only), and at (199,11) the first two are likewise NOT_RUN_AT_THIS_SIZE; the Python regression anchors only (23,11) and (53,13) and its corpus check verifies file presence and JSON parsing only."
+        "boundary": "Finite-field reduction; not a microscopic spectral theorem. Finite-certificate coverage: the receipt verdict PASS is corpus-level; at (461,23) original_pair_vs_explicit_key, direct_vs_fast_distribution and twist_collapse are NOT_RUN_AT_THIS_SIZE (q_values_checked [1] only), and at (199,11) the first two are likewise NOT_RUN_AT_THIS_SIZE; the Python regression anchors only (23,11) and (53,13) and its corpus check verifies file presence and JSON parsing only.",
+        "source": "mathematics/cayley-arithmetic/fourth_moment_reduction.md"
       },
-      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. P2-MATH wave 6 (cayley-arithmetic) additionally admits only the topical relocation of `source` to mathematics/cayley-arithmetic/fourth_moment_reduction.md; no status, title, boundary or content change.",
       "review": "record/errata.json"
     },
     {
@@ -679,9 +680,10 @@
       "historical_row_sha256": "be91ec6c297192b1657db6605457ef6dd96b498a254bd93f0f7eda8e87fd3349",
       "fields": {
         "state": "verification-pending",
-        "ledger_status": "EXTERNAL-THEOREM + AUTHOR PROOF; VERIFICATION-PENDING: NO EVIDENCE RECEIPT (evidence: []); LISTED VERIFIER CHECKS FIVE HARD-CODED DESIGNS AGAINST AN ALGEBRAIC SURROGATE FOR A NEIGHBOURING NOTE AND DISCLAIMS THE K^(8/3) BOUND"
+        "ledger_status": "EXTERNAL-THEOREM + AUTHOR PROOF; VERIFICATION-PENDING: NO EVIDENCE RECEIPT (evidence: []); LISTED VERIFIER CHECKS FIVE HARD-CODED DESIGNS AGAINST AN ALGEBRAIC SURROGATE FOR A NEIGHBOURING NOTE AND DISCLAIMS THE K^(8/3) BOUND",
+        "source": "mathematics/cayley-arithmetic/cayley_direct_energy.md"
       },
-      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion.",
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. P2-MATH wave 6 (cayley-arithmetic) additionally admits only the topical relocation of `source` to mathematics/cayley-arithmetic/cayley_direct_energy.md; no status, title, boundary or content change.",
       "review": "record/errata.json"
     },
     {
@@ -1626,6 +1628,24 @@
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of the first proof_dependencies leaf from mathematics/smooth_recurrence_and_compensation.md to mathematics/returns/smooth_recurrence_and_compensation.md (P2-MATH wave 4); no status, source, or content change.",
       "review": "archive/MANIFEST-P2MATH4.md"
+    },
+    {
+      "id": "BGS-CAYLEY-002",
+      "historical_row_sha256": "0382809cd2bfa421e253af29a82c582571ee1454f77e4f1fca4d1512fdb05703",
+      "fields": {
+        "source": "mathematics/cayley-arithmetic/cayley_additive_energy.md"
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of `source` to mathematics/cayley-arithmetic/cayley_additive_energy.md (P2-MATH wave 6, cayley-arithmetic); no status, title, boundary or content change.",
+      "review": "archive/MANIFEST-P2MATH6.md"
+    },
+    {
+      "id": "BGS-CAYLEY-004",
+      "historical_row_sha256": "bfad12bd6cbc245a0cafa2b3503833a0c27f1104a19a87b2f61046c37f75c48d",
+      "fields": {
+        "source": "mathematics/cayley-arithmetic/cayley_curve_uniform.md"
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of `source` to mathematics/cayley-arithmetic/cayley_curve_uniform.md (P2-MATH wave 6, cayley-arithmetic); no status, title, boundary or content change.",
+      "review": "archive/MANIFEST-P2MATH6.md"
     }
   ]
 }

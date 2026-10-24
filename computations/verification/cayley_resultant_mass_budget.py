@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact finite regression for the normalized resultant collision-mass budget.
 
-The universal theorem is proved in mathematics/cayley_resultant_mass_budget.md.
+The universal theorem is proved in mathematics/cayley-arithmetic/cayley_resultant_mass_budget.md.
 This script checks only the complete promoted finite exceptional sets K=11,13:
 
 * normalized orbit count;
@@ -222,7 +222,7 @@ def main() -> None:
             "Exact finite regression of the Galois-orbit/common-root/resultant-valuation "
             "mechanism and sharpened K^3-square prime budget on the complete promoted "
             "K=11,13 exceptional sets. The universal weighted-prime theorem is proved "
-            "separately in mathematics/cayley_resultant_mass_budget.md."
+            "separately in mathematics/cayley-arithmetic/cayley_resultant_mass_budget.md."
         ),
         "audits": [
             audit(11, (23, 67, 89)),

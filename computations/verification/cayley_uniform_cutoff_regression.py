@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Independent exact regression for the prime-order Cayley cutoff theorem.
 
-Mathematical theorem (proved in mathematics/cayley_additive_energy.md):
+Mathematical theorem (proved in mathematics/cayley-arithmetic/cayley_additive_energy.md):
 for odd prime K and p == 1 (mod K), p > 12^(K-1), every Cayley-difference
 collision is forced by identity or central inversion, so the mixed collision
 energy is (K-1)(2K-5).

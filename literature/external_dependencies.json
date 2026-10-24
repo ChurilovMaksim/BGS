@@ -71,7 +71,7 @@
       "checked_on": "2026-09-04",
       "mapping": "Applied to the displayed absolutely irreducible subgroup curve after the project's degree and size-range checks.",
       "project_sources": [
-        "mathematics/cayley_direct_energy.md",
+        "mathematics/cayley-arithmetic/cayley_direct_energy.md",
         "literature/bibliography.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-VM-2015"
@@ -89,7 +89,7 @@
       "checked_on": "2026-09-08",
       "mapping": "Applied to the smooth Cayley curve after explicit degree, boundary, separability, and translated-subtorus checks.",
       "project_sources": [
-        "mathematics/cayley_curve_uniform.md",
+        "mathematics/cayley-arithmetic/cayley_curve_uniform.md",
         "literature/bibliography.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-CZ-2013"
@@ -108,7 +108,7 @@
       "checked_on": "2026-09-20",
       "mapping": "The project reproduces the proof on the common good open to handle moving bad points; no stronger black-box statement is assumed.",
       "project_sources": [
-        "mathematics/offoff_elliptic_spike_theorem.md",
+        "mathematics/cayley-arithmetic/offoff_elliptic_spike_theorem.md",
         "literature/bibliography.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-FKM-2014"
@@ -127,7 +127,7 @@
       "checked_on": "2026-09-20",
       "mapping": "Supplies arithmetic openness/irreducibility input in the corrected elliptic off/off route after project-specific non-isotriviality and singular-support checks.",
       "project_sources": [
-        "mathematics/offoff_elliptic_spike_theorem.md",
+        "mathematics/cayley-arithmetic/offoff_elliptic_spike_theorem.md",
         "literature/bibliography.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-BLV-2009"
@@ -145,7 +145,7 @@
       "checked_on": "2026-09-04",
       "mapping": "Used only for the stated dyadic averaged split-design prime-counting arguments; no pointwise PNT for a varying modulus is assumed.",
       "project_sources": [
-        "mathematics/cayley_jacobi_trace_average.md",
+        "mathematics/cayley-arithmetic/cayley_jacobi_trace_average.md",
         "literature/bibliography.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-IK-2004"
@@ -1033,7 +1033,7 @@
       "checked_on": "2026-10-22",
       "mapping": "Prime-order rational independence of cot(pi*a/K), 1<=a<=(K-1)/2; identifies exactly the balanced characteristic-zero Cayley relations.",
       "project_sources": [
-        "mathematics/cayley_trace_gaussian_limit.md",
+        "mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md",
         "literature/arithmetic_dependency_closure_20261022.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-WANG-1982"
@@ -1051,7 +1051,7 @@
       "checked_on": "2026-10-22",
       "mapping": "Only the classical Bombieri-Vinogradov restatement is used: fix epsilon=1/4 and restrict its average over moduli to the subpolynomial prime K range. Main term uses pi(x), not Li(x).",
       "project_sources": [
-        "mathematics/cayley_trace_gaussian_limit.md",
+        "mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md",
         "literature/arithmetic_dependency_closure_20261022.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-FI-1980"
@@ -1068,7 +1068,7 @@
       "checked_on": "2026-10-22",
       "mapping": "Qualitative pi(x)~x/log(x), used only for dyadic prime counts and partial summation; no logarithmic-power remainder is imported.",
       "project_sources": [
-        "mathematics/cayley_trace_gaussian_limit.md",
+        "mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md",
         "literature/arithmetic_dependency_closure_20261022.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-ZAGIER-1997"
@@ -1085,7 +1085,7 @@
       "checked_on": "2026-10-22",
       "mapping": "Only the restated real-line Kolmogorov smoothing inequality; the target Gaussian CDF is Lipschitz. No compact-group theorem is applied.",
       "project_sources": [
-        "mathematics/cayley_trace_gaussian_limit.md",
+        "mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md",
         "literature/arithmetic_dependency_closure_20261022.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-BORDA-2020"
@@ -1103,7 +1103,7 @@
       "checked_on": "2026-10-22",
       "mapping": "Over the residue field, the first nonzero polynomial subresultant has degree equal to the gcd degree. Unit leading coefficients prevent degree drop; the first three vanish exactly when gcd degree is at least three.",
       "project_sources": [
-        "mathematics/cayley_product_row_real_trace_ideal.md",
+        "mathematics/cayley-arithmetic/cayley_product_row_real_trace_ideal.md",
         "literature/arithmetic_dependency_closure_20261022.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-BT-1971"

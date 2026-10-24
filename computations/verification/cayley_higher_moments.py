@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact finite checks of weighted Cayley moment and norm identities.
 
-The asymptotic theorems are proved in mathematics/cayley_trace_gaussian_limit.md.
+The asymptotic theorems are proved in mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md.
 This checks stated finite tuple domains, not the infinite Chowla/BV inputs.
 Run from any directory; --output writes a reproducible JSON certificate.
 """
@@ -224,7 +224,7 @@ def main():
               'associated_proof_sha256': {
                   name: hashlib.sha256((Path(__file__).resolve().parents[2]/name)
                                        .read_bytes()).hexdigest()
-                  for name in ['mathematics/cayley_trace_gaussian_limit.md',
+                  for name in ['mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md',
                                'manuscript/unified_sections/cayley_trace_gaussian.tex']},
               'scope': 'All ordered tuples represented by every normalized scaling orbit '
                        'in each listed (K,word); all split primes up to 257 for valuation tests. '

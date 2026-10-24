@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact regression for mathematics/offoff_elliptic_spike_theorem.md.
+"""Exact regression for mathematics/cayley-arithmetic/offoff_elliptic_spike_theorem.md.
 
 The general proof uses elliptic monodromy and trace-sheaf quasi-orthogonality;
 this script checks only the algebraic identities and finite point-count anchors.

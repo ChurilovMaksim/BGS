@@ -2,7 +2,7 @@ import Bgs.CayleyEnergy
 
 /-
   Finite kernel-checked certificate for the ratio-curve decomposition used in
-  mathematics/cayley_energy_curve_bound.md.
+  mathematics/cayley-arithmetic/cayley_energy_curve_bound.md.
 
   Scope: the explicit exceptional design (p,K,a)=(53,13,10).  The general
   K^(8/3) theorem still depends on the external Makarychev--Vyugin subgroup-

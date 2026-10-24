@@ -2,7 +2,7 @@
 """Exact regression for the square-resultant and Fibonacci Cayley slice.
 
 This producer checks finite consequences of the proofs in
-mathematics/cayley_resultant_structure.md.  It does NOT replace the general
+mathematics/cayley-arithmetic/cayley_resultant_structure.md.  It does NOT replace the general
 proofs: bounded resultant checks and the K=131 computation are finite exact
 certificates only.
 """
@@ -289,7 +289,7 @@ def main() -> None:
             "Finite exact regressions for the general K^3-square theorem, "
             "Fibonacci resultant identity, rational almost-Sidon energy, and "
             "the explicit K=131 exceptional-prime witness. General proofs live "
-            "in mathematics/cayley_resultant_structure.md."
+            "in mathematics/cayley-arithmetic/cayley_resultant_structure.md."
         ),
         "square_resultant_finite_audits": square_rows,
         "fibonacci_resultant_audits": fibonacci_resultant_audit(),

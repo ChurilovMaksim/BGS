@@ -332,42 +332,42 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
-| [Mixed pair-key term as Cayley additive energy](../mathematics/cayley_additive_energy.md) | `BGS-CAYLEY-002` (proved) |
-| [Centered additive energy of the Cayley image](../mathematics/cayley_centered_energy.md) | Consult proof and full ledger |
-| [Global Cayley energy from the Corvaja--Zannier curve bound](../mathematics/cayley_curve_uniform.md) | `BGS-CAYLEY-004` (proved) |
-| [The Cayley difference discriminant: one canonical obstruction for all split-prime collisions](../mathematics/cayley_difference_discriminant.md) | Consult proof and full ledger |
-| [Direct additive-energy bound for the Cayley image of a subgroup](../mathematics/cayley_direct_energy.md) | `BGS-CAYLEY-003` (verification-pending) |
-| [Polynomial-scale Cayley energy via subgroup curves](../mathematics/cayley_energy_curve_bound.md) | Consult proof and full ledger |
-| [Almost-all exact Cayley baseline below the `theta=1/5` density threshold](../mathematics/cayley_exact_baseline_density.md) | Consult proof and full ledger |
-| [Dense-regime Cayley centered energy from mixed Weil cancellation](../mathematics/cayley_fourier_hybrid.md) | Consult proof and full ledger |
-| [Frobenius amplification for Cayley collisions over minimal finite extensions](../mathematics/cayley_frobenius_amplification.md) | Consult proof and full ledger |
-| [Inverse-row pair-sum factorization and two-scalar support](../mathematics/cayley_inverse_pair_sum_factorization.md) | Consult proof and full ledger |
-| [Transversality of the inverse translated resultant](../mathematics/cayley_inverse_resultant_transversality.md) | Consult proof and full ledger |
-| [Cayley energy as a twisted-Jacobi trace and a double-averaged quadratic theorem](../mathematics/cayley_jacobi_trace_average.md) | Consult proof and full ledger |
-| [Multiplicative rigidity of the prime-order Cayley set](../mathematics/cayley_multiplicative_rigidity.md) | Consult proof and full ledger |
-| [Principal-subresultant scalar support for product-row intersections](../mathematics/cayley_principal_subresultant_support.md) | Consult proof and full ledger |
-| [The Cayley product discriminant](../mathematics/cayley_product_discriminant.md) | Consult proof and full ledger |
-| [Full-cyclotomic coefficient ideal for higher product-row intersections](../mathematics/cayley_product_row_coefficient_ideal.md) | Consult proof and full ledger |
-| [Product-row decomposition and elliptic cross-row geometry for Cayley energy](../mathematics/cayley_product_row_elliptic.md) | Consult proof and full ledger |
-| [Cayley excess as intersections of fixed-product rows](../mathematics/cayley_product_row_intersections.md) | Consult proof and full ledger |
-| [Projective Bezout support and a universal polynomial for Cayley product rows](../mathematics/cayley_product_row_projective_bezout.md) | Consult proof and full ledger |
-| [Exact real-trace ideal for three product-row intersections](../mathematics/cayley_product_row_real_trace_ideal.md) | `BGS-CAYLEY-007` (proved) |
-| [Reflection reduction for the inverse product-row class](../mathematics/cayley_product_row_reflection.md) | Consult proof and full ledger |
-| [Higher product-row intersections and cyclotomic subresultants](../mathematics/cayley_product_row_subresultants.md) | Consult proof and full ledger |
-| [Ratio-orbit factorization and fourth-power structure of the Cayley difference discriminant](../mathematics/cayley_ratio_orbit_factorization.md) | Consult proof and full ledger |
-| [Global resultant budget for non-forced Cayley collision mass](../mathematics/cayley_resultant_mass_budget.md) | Consult proof and full ledger |
-| [Cayley collision resultants: square structure and the Fibonacci slice](../mathematics/cayley_resultant_structure.md) | Consult proof and full ledger |
-| [Cayley collision-curve equivalence](../mathematics/cayley_scaling_rigidity.md) | `BGS-CAYLEY-008` (proved) |
-| [Shift-resultant / principal-subresultant transversality](../mathematics/cayley_shift_psc_transversality.md) | Consult proof and full ledger |
-| [Cayley fibers as diagonal product bins of shifted subgroups](../mathematics/cayley_shifted_energy_orbits.md) | Consult proof and full ledger |
-| [Sylvester/Fitting formulation of exact product-row support](../mathematics/cayley_sylvester_fitting_support.md) | Consult proof and full ledger |
-| [Gaussian limits for Cayley sums and the full twisted-Jacobi trace](../mathematics/cayley_trace_gaussian_limit.md) | `BGS-CAYLEY-006` (proved) |
-| [Cyclotomic trace-intercept rigidity and scalar shift-resultant support](../mathematics/cayley_trace_intercept_rigidity.md) | Consult proof and full ledger |
-| [Off/off elliptic pencil: superseded route and current theorem](../mathematics/elliptic_pencil.md) | Consult proof and full ledger |
-| [Full proof of the Fibonacci/Lucas ratio energy theorem](../mathematics/fibonacci_ratio_energy_proof.md) | Consult proof and full ledger |
-| [Exact fourth-moment pair-key reduction](../mathematics/fourth_moment_reduction.md) | `BGS-CAYLEY-001` (proved) |
-| [Off/off elliptic correlation after the reducible-fiber spike](../mathematics/offoff_elliptic_spike_theorem.md) | Consult proof and full ledger |
-| [Exact fourth moment of the generated two-species observable](../mathematics/pell_coboundary_fourth_moment.md) | Consult proof and full ledger |
+| [Mixed pair-key term as Cayley additive energy](../mathematics/cayley-arithmetic/cayley_additive_energy.md) | `BGS-CAYLEY-002` (proved) |
+| [Centered additive energy of the Cayley image](../mathematics/cayley-arithmetic/cayley_centered_energy.md) | Consult proof and full ledger |
+| [Global Cayley energy from the Corvaja--Zannier curve bound](../mathematics/cayley-arithmetic/cayley_curve_uniform.md) | `BGS-CAYLEY-004` (proved) |
+| [The Cayley difference discriminant: one canonical obstruction for all split-prime collisions](../mathematics/cayley-arithmetic/cayley_difference_discriminant.md) | Consult proof and full ledger |
+| [Direct additive-energy bound for the Cayley image of a subgroup](../mathematics/cayley-arithmetic/cayley_direct_energy.md) | `BGS-CAYLEY-003` (verification-pending) |
+| [Polynomial-scale Cayley energy via subgroup curves](../mathematics/cayley-arithmetic/cayley_energy_curve_bound.md) | Consult proof and full ledger |
+| [Almost-all exact Cayley baseline below the `theta=1/5` density threshold](../mathematics/cayley-arithmetic/cayley_exact_baseline_density.md) | Consult proof and full ledger |
+| [Dense-regime Cayley centered energy from mixed Weil cancellation](../mathematics/cayley-arithmetic/cayley_fourier_hybrid.md) | Consult proof and full ledger |
+| [Frobenius amplification for Cayley collisions over minimal finite extensions](../mathematics/cayley-arithmetic/cayley_frobenius_amplification.md) | Consult proof and full ledger |
+| [Inverse-row pair-sum factorization and two-scalar support](../mathematics/cayley-arithmetic/cayley_inverse_pair_sum_factorization.md) | Consult proof and full ledger |
+| [Transversality of the inverse translated resultant](../mathematics/cayley-arithmetic/cayley_inverse_resultant_transversality.md) | Consult proof and full ledger |
+| [Cayley energy as a twisted-Jacobi trace and a double-averaged quadratic theorem](../mathematics/cayley-arithmetic/cayley_jacobi_trace_average.md) | Consult proof and full ledger |
+| [Multiplicative rigidity of the prime-order Cayley set](../mathematics/cayley-arithmetic/cayley_multiplicative_rigidity.md) | Consult proof and full ledger |
+| [Principal-subresultant scalar support for product-row intersections](../mathematics/cayley-arithmetic/cayley_principal_subresultant_support.md) | Consult proof and full ledger |
+| [The Cayley product discriminant](../mathematics/cayley-arithmetic/cayley_product_discriminant.md) | Consult proof and full ledger |
+| [Full-cyclotomic coefficient ideal for higher product-row intersections](../mathematics/cayley-arithmetic/cayley_product_row_coefficient_ideal.md) | Consult proof and full ledger |
+| [Product-row decomposition and elliptic cross-row geometry for Cayley energy](../mathematics/cayley-arithmetic/cayley_product_row_elliptic.md) | Consult proof and full ledger |
+| [Cayley excess as intersections of fixed-product rows](../mathematics/cayley-arithmetic/cayley_product_row_intersections.md) | Consult proof and full ledger |
+| [Projective Bezout support and a universal polynomial for Cayley product rows](../mathematics/cayley-arithmetic/cayley_product_row_projective_bezout.md) | Consult proof and full ledger |
+| [Exact real-trace ideal for three product-row intersections](../mathematics/cayley-arithmetic/cayley_product_row_real_trace_ideal.md) | `BGS-CAYLEY-007` (proved) |
+| [Reflection reduction for the inverse product-row class](../mathematics/cayley-arithmetic/cayley_product_row_reflection.md) | Consult proof and full ledger |
+| [Higher product-row intersections and cyclotomic subresultants](../mathematics/cayley-arithmetic/cayley_product_row_subresultants.md) | Consult proof and full ledger |
+| [Ratio-orbit factorization and fourth-power structure of the Cayley difference discriminant](../mathematics/cayley-arithmetic/cayley_ratio_orbit_factorization.md) | Consult proof and full ledger |
+| [Global resultant budget for non-forced Cayley collision mass](../mathematics/cayley-arithmetic/cayley_resultant_mass_budget.md) | Consult proof and full ledger |
+| [Cayley collision resultants: square structure and the Fibonacci slice](../mathematics/cayley-arithmetic/cayley_resultant_structure.md) | Consult proof and full ledger |
+| [Cayley collision-curve equivalence](../mathematics/cayley-arithmetic/cayley_scaling_rigidity.md) | `BGS-CAYLEY-008` (proved) |
+| [Shift-resultant / principal-subresultant transversality](../mathematics/cayley-arithmetic/cayley_shift_psc_transversality.md) | Consult proof and full ledger |
+| [Cayley fibers as diagonal product bins of shifted subgroups](../mathematics/cayley-arithmetic/cayley_shifted_energy_orbits.md) | Consult proof and full ledger |
+| [Sylvester/Fitting formulation of exact product-row support](../mathematics/cayley-arithmetic/cayley_sylvester_fitting_support.md) | Consult proof and full ledger |
+| [Gaussian limits for Cayley sums and the full twisted-Jacobi trace](../mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md) | `BGS-CAYLEY-006` (proved) |
+| [Cyclotomic trace-intercept rigidity and scalar shift-resultant support](../mathematics/cayley-arithmetic/cayley_trace_intercept_rigidity.md) | Consult proof and full ledger |
+| [Off/off elliptic pencil: superseded route and current theorem](../mathematics/cayley-arithmetic/elliptic_pencil.md) | Consult proof and full ledger |
+| [Full proof of the Fibonacci/Lucas ratio energy theorem](../mathematics/cayley-arithmetic/fibonacci_ratio_energy_proof.md) | Consult proof and full ledger |
+| [Exact fourth-moment pair-key reduction](../mathematics/cayley-arithmetic/fourth_moment_reduction.md) | `BGS-CAYLEY-001` (proved) |
+| [Off/off elliptic correlation after the reducible-fiber spike](../mathematics/cayley-arithmetic/offoff_elliptic_spike_theorem.md) | Consult proof and full ledger |
+| [Exact fourth moment of the generated two-species observable](../mathematics/cayley-arithmetic/pell_coboundary_fourth_moment.md) | Consult proof and full ledger |
 
 ### Arithmetic return laws
 

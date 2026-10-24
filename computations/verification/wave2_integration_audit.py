@@ -139,7 +139,7 @@ def check_prior_claims(previous, current, epoch):
     """Apply only explicitly documented amendments to immutable old rows."""
     rows=epoch.get('historical_claim_amendments',[])
     amendments={row['id']:row for row in rows}
-    approved={'BGS-CAYLEY-001','BGS-CAYLEY-003','BGS-FM-005','BGS-FM-008',
+    approved={'BGS-CAYLEY-001','BGS-CAYLEY-002','BGS-CAYLEY-003','BGS-CAYLEY-004','BGS-FM-005','BGS-FM-008',
               'BGS-FM-010','BGS-FORMAL-001','BGS-FORMAL-003','BGS-RES-006',
               'BGS-RET-001','BGS-TRACE-008','BGS-FLOW-011','BGS-FLOW-021',
               'BGS-FM-013','BGS-FM-016','BGS-FM-019','BGS-TRACE-011',

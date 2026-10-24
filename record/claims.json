@@ -52,7 +52,7 @@
       "title": "Pair-key and fourth-moment reduction",
       "state": "proved",
       "ledger_status": "EXACT + FINITE-CERTIFICATE (PARTIAL AT LARGEST DESIGNS)",
-      "source": "mathematics/fourth_moment_reduction.md",
+      "source": "mathematics/cayley-arithmetic/fourth_moment_reduction.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -75,7 +75,7 @@
       "title": "Cayley additive-energy reduction",
       "state": "proved",
       "ledger_status": "EXACT",
-      "source": "mathematics/cayley_additive_energy.md",
+      "source": "mathematics/cayley-arithmetic/cayley_additive_energy.md",
       "dependencies": [
         "BGS-CAYLEY-001"
       ],
@@ -95,7 +95,7 @@
       "title": "Direct K^(8/3) Cayley energy bound in the explicit subgroup-size range",
       "state": "verification-pending",
       "ledger_status": "EXTERNAL-THEOREM + AUTHOR PROOF; VERIFICATION-PENDING: NO EVIDENCE RECEIPT (evidence: []); LISTED VERIFIER CHECKS FIVE HARD-CODED DESIGNS AGAINST AN ALGEBRAIC SURROGATE FOR A NEIGHBOURING NOTE AND DISCLAIMS THE K^(8/3) BOUND",
-      "source": "mathematics/cayley_direct_energy.md",
+      "source": "mathematics/cayley-arithmetic/cayley_direct_energy.md",
       "dependencies": [
         "BGS-CAYLEY-002"
       ],
@@ -117,7 +117,7 @@
       "title": "Uniform subgroup-curve Cayley energy bound",
       "state": "proved",
       "ledger_status": "EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION",
-      "source": "mathematics/cayley_curve_uniform.md",
+      "source": "mathematics/cayley-arithmetic/cayley_curve_uniform.md",
       "dependencies": [
         "BGS-CAYLEY-002"
       ],
@@ -4204,7 +4204,7 @@
       "title": "Pointwise sparse and density Gaussian limits of the full Cayley-Jacobi trace",
       "state": "proved",
       "ledger_status": "EXACT + EXTERNAL-THEOREM",
-      "source": "mathematics/cayley_trace_gaussian_limit.md",
+      "source": "mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md",
       "dependencies": [],
       "external_dependencies": [
         "EXT-WANG-1982",
@@ -4229,7 +4229,7 @@
       "title": "Three-scalar exact split support for fixed-degree Cayley row intersections",
       "state": "proved",
       "ledger_status": "EXACT + EXTERNAL-THEOREM + FINITE-REGRESSION",
-      "source": "mathematics/cayley_product_row_real_trace_ideal.md",
+      "source": "mathematics/cayley-arithmetic/cayley_product_row_real_trace_ideal.md",
       "dependencies": [],
       "external_dependencies": [
         "EXT-BT-1971"
@@ -4249,7 +4249,7 @@
       "title": "Scaling rigidity of the Cayley collision family",
       "state": "proved",
       "ledger_status": "EXACT + FINITE-REGRESSION",
-      "source": "mathematics/cayley_scaling_rigidity.md",
+      "source": "mathematics/cayley-arithmetic/cayley_scaling_rigidity.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [

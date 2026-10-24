@@ -7,7 +7,7 @@ Two independent exact implementations are compared:
   2. collision-polynomial divisibility by one irreducible factor of Phi_K mod p.
 
 This is a finite regression only. The growing-parameter theorem is proved in
-mathematics/cayley_frobenius_amplification.md.
+mathematics/cayley-arithmetic/cayley_frobenius_amplification.md.
 """
 from __future__ import annotations
 
