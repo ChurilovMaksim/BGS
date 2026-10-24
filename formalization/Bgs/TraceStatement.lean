@@ -46,7 +46,7 @@ API — see the design report).
 ## Definitional choices (all repo-sanctioned)
 
 * `D_U` is defined through traces by the exact partition/Möbius identity —
-  Theorem 1 (formulas (5), (7)) of `mathematics/trace_to_local_statistics_bridge.md`
+  Theorem 1 (formulas (5), (7)) of `mathematics/trace-bridge/trace_to_local_statistics_bridge.md`
   (status EXACT there) and §3 of the canonical task text ("without
   diagonalization, `D_U` is computed from `p_n = Tr U_N^n`").  The primary
   eigenphase definition (4) of the bridge is thereby avoided; no content is

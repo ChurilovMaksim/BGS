@@ -13,7 +13,7 @@ explicit estimates reconstructed by the independent review. Exact source
 hash mappings, editorial changes and execution scope are in
 [the review record](../archive/record/global_rotated_box_review_scope.md).
 Generic norm-to-factorial trace telescoping is prior project work in
-[Heisenberg trace support](heisenberg_trace_support.md), section 3; the
+[Heisenberg trace support](trace-bridge/heisenberg_trace_support.md), section 3; the
 specific WKB instantiation is in [the factorial reduction](factorial_wkb_reduction.md).
 
 ## Part I. Global representation and conservative summed tail

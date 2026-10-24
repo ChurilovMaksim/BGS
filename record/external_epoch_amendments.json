@@ -214,6 +214,74 @@
       "wave": "P2-MATH wave 5",
       "disposition": "Preserve the sealed contract; admit only the phase-2 topical relocation of the pell note path(s) in this field to mathematics/pell/ (P2-MATH wave 5); no other field, status, or content change.",
       "review": "archive/MANIFEST-P2MATH5.md"
+    },
+    {
+      "id": "EXT-DE-2001",
+      "field": "project_sources",
+      "old_value": [
+        "mathematics/signed_heisenberg_comparison.md",
+        "literature/signed_heisenberg_sources.md",
+        "record/claim_ledger.md",
+        "mathematics/resonant_cubic_density_control.md",
+        "literature/resonant_density_sources.md",
+        "mathematics/fixed_degree_heat_projection.md",
+        "literature/critical_noise_sources_20261005.md",
+        "mathematics/growing_degree_trace_projection.md",
+        "literature/growing_degree_sources_20261005.md"
+      ],
+      "new_value": [
+        "mathematics/trace-bridge/signed_heisenberg_comparison.md",
+        "literature/signed_heisenberg_sources.md",
+        "record/claim_ledger.md",
+        "mathematics/trace-bridge/resonant_cubic_density_control.md",
+        "literature/resonant_density_sources.md",
+        "mathematics/fixed_degree_heat_projection.md",
+        "literature/critical_noise_sources_20261005.md",
+        "mathematics/growing_degree_trace_projection.md",
+        "literature/growing_degree_sources_20261005.md"
+      ],
+      "historical_contract_sha256": "88e67093c062ab875a9625f910d88f6870750a734c7afe9003082921bc58da1e",
+      "wave": "P2-MATH wave 10a",
+      "disposition": "Preserve the sealed contract; admit only the phase-2 topical relocation of the trace-bridge note path(s) in this field to mathematics/trace-bridge/ (P2-MATH wave 10a); no other field, status, or content change.",
+      "review": "archive/MANIFEST-P2MATH10a.md"
+    },
+    {
+      "id": "EXT-ZIRN-2021",
+      "field": "project_sources",
+      "old_value": [
+        "mathematics/phase_trace_checkpoint.md",
+        "mathematics/compact_phase_pair_identity.md",
+        "literature/color_one_boundary_qualification_20261007.md"
+      ],
+      "new_value": [
+        "mathematics/trace-bridge/phase_trace_checkpoint.md",
+        "mathematics/compact_phase_pair_identity.md",
+        "literature/color_one_boundary_qualification_20261007.md"
+      ],
+      "historical_contract_sha256": "01e08250fa032653096ac96eb333913c123ec85afb1230862bc6bd3d1351c701",
+      "wave": "P2-MATH wave 10a",
+      "disposition": "Preserve the sealed contract; admit only the phase-2 topical relocation of the trace-bridge note path(s) in this field to mathematics/trace-bridge/ (P2-MATH wave 10a); no other field, status, or content change.",
+      "review": "archive/MANIFEST-P2MATH10a.md"
+    },
+    {
+      "id": "EXT-BHATIA-2002",
+      "field": "project_sources",
+      "old_value": [
+        "mathematics/phase_trace_checkpoint.md",
+        "mathematics/global_bosonic_body_coercivity.md",
+        "mathematics/matrix_block_body_coercivity.md",
+        "literature/color_one_boundary_qualification_20261007.md"
+      ],
+      "new_value": [
+        "mathematics/trace-bridge/phase_trace_checkpoint.md",
+        "mathematics/global_bosonic_body_coercivity.md",
+        "mathematics/matrix_block_body_coercivity.md",
+        "literature/color_one_boundary_qualification_20261007.md"
+      ],
+      "historical_contract_sha256": "b06392e1a0021d21fd0e1b5e828d978e430b2d841007f6f4b5bfd54c3a0aecc4",
+      "wave": "P2-MATH wave 10a",
+      "disposition": "Preserve the sealed contract; admit only the phase-2 topical relocation of the trace-bridge note path(s) in this field to mathematics/trace-bridge/ (P2-MATH wave 10a); no other field, status, or content change.",
+      "review": "archive/MANIFEST-P2MATH10a.md"
     }
   ]
 }

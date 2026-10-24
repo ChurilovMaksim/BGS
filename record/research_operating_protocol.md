@@ -148,7 +148,7 @@ As of 5 September 2026:
 - exploit residue-degree/Frobenius amplification outside the split slice;
 - close pointwise centered Cayley energy on all intended split designs;
 - prove Heisenberg-scale joint trace comparison sufficient for microscopic
-  local statistics (`mathematics/trace_to_local_statistics_bridge.md`);
+  local statistics (`mathematics/trace-bridge/trace_to_local_statistics_bridge.md`);
 - connect finite-field arithmetic to the required desymmetrized spectral traces
   in a natural quantum-map model.
 

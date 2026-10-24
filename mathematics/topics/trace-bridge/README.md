@@ -21,7 +21,7 @@ All retain their auxiliary scope; fixed-model BGS remains open.
 
 ## Reviewed 7 October phase checkpoint
 
-[Current claim card](../../phase_trace_checkpoint.md) and
+[Current claim card](../../trace-bridge/phase_trace_checkpoint.md) and
 [accepted results / next estimates](../../../record/checked_research_checkpoint_20261007.md)
 separate uniform charge gap, fixed-word laws, source/Schur reductions,
 ordinary-body bounds and actual q=1,theta=0 radial control from the still-open
@@ -46,13 +46,13 @@ Exact factorial partition identities connect local correlations to complete sign
 - **[Two-step restoring drift](../../two_step_restoring_drift_20261012.md)** — Exact fresh-phase average and a complete three-step path-swap bound; one-step mean restoration of the constructed peaks, without a trajectory probability theorem.
 - **[Unitary two-step obstruction](../../unitary_two_step_obstruction_20261012.md)** — Genuine unitary intensities with a logarithmic two-step peak despite flatness and a vanishing singular norm; precise higher-step and one-step variance companions.
 
-- **[Signed target](../../trace_to_local_statistics_bridge.md)** — Every fixed order and every smooth compact Fourier support must be covered; a modulus is outside the complete signed sum.
-- **[Absolute obstruction](../../signed_heisenberg_comparison.md)** — The all-order unaveraged deterministic absolute CUE comparison is excluded by the project obstruction.
+- **[Signed target](../../trace-bridge/trace_to_local_statistics_bridge.md)** — Every fixed order and every smooth compact Fourier support must be covered; a modulus is outside the complete signed sum.
+- **[Absolute obstruction](../../trace-bridge/signed_heisenberg_comparison.md)** — The all-order unaveraged deterministic absolute CUE comparison is excluded by the project obstruction.
 - **[Smoothing boundary](../../heisenberg_pair_heat_formula.md)** — Pointwise heat algebra, stable Haar norms and actual unsmoothed values have separate ranges and evidence.
 
 ## Suggested reading sequence
 
-[1. trace to local statistics bridge](../../trace_to_local_statistics_bridge.md) → [2. bandlimited correlation extension](../../bandlimited_correlation_extension.md) → [3. signed heisenberg comparison](../../signed_heisenberg_comparison.md) → [4. fixed degree heat projection](../../fixed_degree_heat_projection.md) → [5. growing degree trace projection](../../growing_degree_trace_projection.md) → [6. heisenberg pair heat formula](../../heisenberg_pair_heat_formula.md)
+[1. trace to local statistics bridge](../../trace-bridge/trace_to_local_statistics_bridge.md) → [2. bandlimited correlation extension](../../trace-bridge/bandlimited_correlation_extension.md) → [3. signed heisenberg comparison](../../trace-bridge/signed_heisenberg_comparison.md) → [4. fixed degree heat projection](../../fixed_degree_heat_projection.md) → [5. growing degree trace projection](../../growing_degree_trace_projection.md) → [6. heisenberg pair heat formula](../../heisenberg_pair_heat_formula.md)
 
 This is a reading sequence, not a replacement for the exact dependency graph.
 
@@ -75,16 +75,16 @@ See [the ongoing corpus revision](../../../archive/record/corpus_revision_202610
 - [fixed_degree_heat_projection](../../fixed_degree_heat_projection.md) — Actual fixed-degree projected CUE estimates and the open complementary evaluation.
 - [local_moment_transport](../../local_moment_transport.md) — Local uniform integrability from displacement moments and reference density.
 - [coboundary_all_order_limit](../../coboundary_all_order_limit.md) — Complete signed Fourier/CUE comparison for the original noisy chain, and exact remaining deterministic defect criterion.
-- [bandlimited_correlation_extension](../../bandlimited_correlation_extension.md)
-- [clustered_abel_window_boundary](../../clustered_abel_window_boundary.md) — exact cluster-to-Abel bound and abstract time-window falsifier.
+- [bandlimited_correlation_extension](../../trace-bridge/bandlimited_correlation_extension.md)
+- [clustered_abel_window_boundary](../../trace-bridge/clustered_abel_window_boundary.md) — exact cluster-to-Abel bound and abstract time-window falsifier.
 - [compensated_heisenberg_trace_control](../../compensated_heisenberg_trace_control.md)
 - [heisenberg_time_insertion](../../heisenberg_time_insertion.md)
-- [trace_to_local_statistics_bridge](../../trace_to_local_statistics_bridge.md)
-- [signed_heisenberg_comparison](../../signed_heisenberg_comparison.md) — Universal all-order absolute-norm obstruction, exact signed CUE variance and formal phase controls.
-- [two_clock_gram_falsifier](../../two_clock_gram_falsifier.md) — simple odd spectra matching the necessary Gram limit but violating the pair CUE law.
-- [heisenberg_trace_support](../../heisenberg_trace_support.md)
+- [trace_to_local_statistics_bridge](../../trace-bridge/trace_to_local_statistics_bridge.md)
+- [signed_heisenberg_comparison](../../trace-bridge/signed_heisenberg_comparison.md) — Universal all-order absolute-norm obstruction, exact signed CUE variance and formal phase controls.
+- [two_clock_gram_falsifier](../../trace-bridge/two_clock_gram_falsifier.md) — simple odd spectra matching the necessary Gram limit but violating the pair CUE law.
+- [heisenberg_trace_support](../../trace-bridge/heisenberg_trace_support.md)
 - [prime_resonant_sector](../../prime_resonant_sector.md) — Exact block orientation, sector mass criterion, spectral comb and conditional coherent-mode obstruction.
-- [resonant_cubic_density_control](../../resonant_cubic_density_control.md) — Density-conditioned signed deletion and sharp critical clusters compatible with CUE pairs.
+- [resonant_cubic_density_control](../../trace-bridge/resonant_cubic_density_control.md) — Density-conditioned signed deletion and sharp critical clusters compatible with CUE pairs.
 - [arithmetic_word_expansion_obstruction](../../arithmetic_word_expansion_obstruction.md) — 4 October proof and exact scope.
 
 - [three_block_unmarking](../../three_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
@@ -144,16 +144,16 @@ It leaves one unestimated signed Q trace and preserves the fixed-order boundary.
 - [Integrable all-order phase absorption](../../integrable_phase_absorption_20261011.md) (BGS-TRACE-058).
 - [Anisotropic physical-source transport](../../physical_source_transport_20261011.md) (BGS-TRACE-059).
 - [Joint incoming and outgoing delay bootstrap](../../delay_bootstrap_20261011.md) (BGS-TRACE-060).
-- [Finite frame identities, Stiefel threshold and clock-basis obstruction](../../fresh_phase_average_20261011.md) (BGS-TRACE-061).
-- [Flat completion with arbitrary clock law](../../flat_completion_20261011.md) (BGS-TRACE-062).
+- [Finite frame identities, Stiefel threshold and clock-basis obstruction](../../trace-bridge/fresh_phase_average.md) (BGS-TRACE-061).
+- [Flat completion with arbitrary clock law](../../trace-bridge/flat_completion.md) (BGS-TRACE-062).
 - [Global noncommuting ordinary-body coercivity](../../nonlinear_coercivity_20261011.md) (BGS-TRACE-063).
-- [Sharp maximal-torus contraction for compact simple groups](../../torus_contraction_20261011.md) (BGS-TRACE-064).
+- [Sharp maximal-torus contraction for compact simple groups](../../trace-bridge/torus_contraction.md) (BGS-TRACE-064).
 - [Signed finite-field cycle and collision calculus](../../coherence_form_factor_20261011.md) (BGS-TRACE-065).
 - [Birthday rank law and thinned collision limit](../../previous_rank_results_20261011.md) (BGS-TRACE-066).
 - [Sharp balanced Laurent Jack coefficient bound](../../jack_coefficient_theorem_20261011.md) (BGS-TRACE-067).
-- [Frozen circular phase laws in the three symmetry classes](../../phase_contraction_20261011.md) (BGS-TRACE-068).
-- [All-order critical CSE trace limit](../../exact_cumulants_20261011.md) (BGS-TRACE-069).
-- [Complete CUE and CSE form-factor curves](../../form_factor_curve_20261011.md) (BGS-TRACE-070).
+- [Frozen circular phase laws in the three symmetry classes](../../trace-bridge/phase_contraction.md) (BGS-TRACE-068).
+- [All-order critical CSE trace limit](../../trace-bridge/exact_cumulants.md) (BGS-TRACE-069).
+- [Complete CUE and CSE form-factor curves](../../trace-bridge/form_factor_curve.md) (BGS-TRACE-070).
 - [Maximal phase point-process paths and all fixed normal-source products](../../laplace_path_transport_20261011.md) (BGS-TRACE-071).
 - [Deterministic maximal microscopic observable flow](../../deterministic_path_transport_20261011.md) (BGS-TRACE-072).
 

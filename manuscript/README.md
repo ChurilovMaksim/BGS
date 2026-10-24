@@ -157,7 +157,7 @@ remains useful, but later sections must be read subject to the current
 
 For readers interested in the original central question, use this route:
 [exact model and fixed-map frontier](../mathematics/fixed_map_resolvent_frontier.md)
-→ [joint-trace bridge](../mathematics/trace_to_local_statistics_bridge.md)
+→ [joint-trace bridge](../mathematics/trace-bridge/trace_to_local_statistics_bridge.md)
 → [actual-map intensity/path theorems](../mathematics/position_chain_mixing.md)
 → [balanced pair frontiers](../mathematics/phase_ward_identity.md)
 → [still-open obligations](../mathematics/open_questions.md).

@@ -310,7 +310,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
     args = parser.parse_args()
-    sources = ['mathematics/resonant_cubic_density_control.md',
+    sources = ['mathematics/trace-bridge/resonant_cubic_density_control.md',
                'computations/verification/resonant_density_audit.py',
                'supplement/fixed_map/report-audit/verify.py']
     data = {'schema':'bgs-resonant-density-audit-v1','status':'PASS',

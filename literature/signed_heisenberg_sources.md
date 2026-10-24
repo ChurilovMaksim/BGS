@@ -15,7 +15,7 @@ Locator: Theorem 2.1(a), printed p. 3; its proof concludes on p. 4.
 
 The theorem matches joint trace moments with independent complex Gaussians
 only when both weighted degrees are at most the matrix dimension. The
-calculation in [TRACE-010](../mathematics/signed_heisenberg_comparison.md)
+calculation in [TRACE-010](../mathematics/trace-bridge/signed_heisenberg_comparison.md)
 has maximum degree $4\max I\le N$, including the cubic/pair cross terms.
 No distributional independence at arbitrary Heisenberg powers is inferred.
 The source explicitly corrects the earlier Diaconis--Shahshahani range.
@@ -35,7 +35,7 @@ in TRACE-010. No novelty inference follows from the limited search.
 ## Prior project calibration
 
 The exact finite CUE factorial cycle formula is maintained in
-[heisenberg_trace_support.md](../mathematics/heisenberg_trace_support.md).
+[heisenberg_trace_support.md](../mathematics/trace-bridge/heisenberg_trace_support.md).
 The 19 September [CUE counterterm](../supplement/fixed_map/report-audit/cue_reference.md)
 and [high-band cubic variance](../supplement/fixed_map/report-audit/cubic_variance.md)
 already establish nonzero raw cubic targets above the CUE ramp and an

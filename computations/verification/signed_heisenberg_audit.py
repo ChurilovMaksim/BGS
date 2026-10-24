@@ -264,7 +264,7 @@ def main():
     args = parser.parse_args()
     old = module('supplement/fixed_map/report-audit/verify.py', 'bgs_cue_reference')
     support = module('computations/verification/heisenberg_note_audit.py', 'bgs_cycle_reference')
-    sources = ['mathematics/signed_heisenberg_comparison.md',
+    sources = ['mathematics/trace-bridge/signed_heisenberg_comparison.md',
                'computations/verification/signed_heisenberg_audit.py',
                'supplement/fixed_map/report-audit/verify.py',
                'computations/verification/heisenberg_note_audit.py']

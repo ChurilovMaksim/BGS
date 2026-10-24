@@ -128,7 +128,7 @@ These outside claims were never accepted repository theorems.
 TRACE-003's triangle-inequality comparison is correct, including averages
 taken before the modulus. It must not be interpreted as a feasible
 simultaneous all-order absolute goal for one deterministic spectrum:
-[TRACE-010](../mathematics/signed_heisenberg_comparison.md) proves that
+[TRACE-010](../mathematics/trace-bridge/signed_heisenberg_comparison.md) proves that
 its absolute pair CUE premise forces absolute cubic discrepancy to diverge
 at least as sqrt(N) on a fixed positive box. The viable TRACE-005 target
 is the signed weighted sum. This is a correction of the proposed norm's

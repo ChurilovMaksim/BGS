@@ -38,7 +38,7 @@ The corrected maintained sources supersede it wherever they disagree.
   exact compression norm 1 at every scale, proved by a discrete supported
   unit vector. The binary norm is exactly $\sqrt{2/N}$.
   This concerns the ideal digit model alone.
-- [Supporting lemmas](../mathematics/heisenberg_trace_support.md): a
+- [Supporting lemmas](../mathematics/trace-bridge/heisenberg_trace_support.md): a
   complete finite factorial CUE cycle formula; determinant and tensor
   representations; a quantitative conditional Fejér estimate; and
   near-unitary transfer at positive and negative Heisenberg times.

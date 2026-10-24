@@ -32,7 +32,7 @@ The original 1998 chaotic-map source retains unspecified global-anomaly
 terms and does not justify dropping them.
 
 The compact finite-pair prescription in
-[TRACE-023](../mathematics/phase_trace_checkpoint.md#bgs-trace-023-corrected-pair-source-and-uniform-source-bounds)
+[TRACE-023](../mathematics/trace-bridge/phase_trace_checkpoint.md#bgs-trace-023-corrected-pair-source-and-uniform-source-bounds)
 reorganizes the complete projector into four bounded-domain coefficient
 functionals. It avoids separately divergent summands and is independently
 reviewed on its stated coherent-section domain.

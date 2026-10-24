@@ -12,12 +12,12 @@ Negative controls reject specific invalid implications. An abstract spectrum is 
 
 - **[All-copy channel control with a clock spectrum](../../isospectral_clock_moment_control.md)** — Induced-HS moment-channel proximity in every order does not alone imply microscopic universality.
 
-- **[Read the witness assumptions](../../two_clock_gram_falsifier.md)** — Simple spectra and a Gram milestone do not force CUE pairs.
-- **[Window and tail restrictions](../../clustered_abel_window_boundary.md)** — Cluster containment and a positive-time Heisenberg estimate are different claims.
+- **[Read the witness assumptions](../../trace-bridge/two_clock_gram_falsifier.md)** — Simple spectra and a Gram milestone do not force CUE pairs.
+- **[Window and tail restrictions](../../trace-bridge/clustered_abel_window_boundary.md)** — Cluster containment and a positive-time Heisenberg estimate are different claims.
 
 ## Suggested reading sequence
 
-[1. two clock gram falsifier](../../two_clock_gram_falsifier.md) → [2. clustered abel window boundary](../../clustered_abel_window_boundary.md)
+[1. two clock gram falsifier](../../trace-bridge/two_clock_gram_falsifier.md) → [2. clustered abel window boundary](../../trace-bridge/clustered_abel_window_boundary.md)
 
 This is a reading sequence, not a replacement for the exact dependency graph.
 

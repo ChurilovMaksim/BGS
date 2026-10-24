@@ -371,7 +371,7 @@ $$
 
 The Fourier weight defines a Schwartz local pair comparison in the
 repository's unfolding; the sum is finite. More explicitly, in the
-[pair bridge](trace_to_local_statistics_bridge.md), (13), use the real even
+[pair bridge](trace-bridge/trace_to_local_statistics_bridge.md), (13), use the real even
 test $\widehat\varphi(\xi)=w(|\xi|)/2$. Its exact difference from finite
 CUE is $J_{N,w}$; the factor one half prevents double counting the two
 frequency signs. If $Q<aN$, then

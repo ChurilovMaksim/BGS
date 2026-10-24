@@ -21,7 +21,7 @@ No auxiliary operator, damped endpoint or fixed-word limit replaces those tasks.
 
 ## Accepted results and what changed
 
-The [maintained claim card](../mathematics/phase_trace_checkpoint.md) gives exact
+The [maintained claim card](../mathematics/trace-bridge/phase_trace_checkpoint.md) gives exact
 hypotheses and original reviewed proof locators. Accepted frozen proof bytes
 are preserved, including historical preparation headings. The
 [proof copy map](research_checkpoint_proof_mapping.json) and

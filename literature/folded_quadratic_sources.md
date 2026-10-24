@@ -7,7 +7,7 @@ directly; no external theorem is substituted for an actual-map estimate.
 
 ## Prior project results checked
 
-- [TRACE-011](../mathematics/resonant_cubic_density_control.md): positive
+- [TRACE-011](../mathematics/trace-bridge/resonant_cubic_density_control.md): positive
   smoothing, multiplier kernels, exact factorial budget, critical clusters.
 - [TRACE-009](../mathematics/prime_resonant_sector.md): ordered block,
   prime orders, resonant pair mass and Rains reference law.
@@ -38,7 +38,7 @@ projected-square criterion; absence of a hit is not evidence of novelty.
 General spectral-chaos discussions are not fixed-map proofs.
 
 The Sine and finite CUE targets are already defined in the maintained
-[trace bridge](../mathematics/trace_to_local_statistics_bridge.md).
+[trace bridge](../mathematics/trace-bridge/trace_to_local_statistics_bridge.md).
 Their uniform cubic mass bound is proved from probability-frequency
 Gram representations, with a nonoptimal constant. SymPy/Wolfram check
 series and finite algebra, not the analytic proof.

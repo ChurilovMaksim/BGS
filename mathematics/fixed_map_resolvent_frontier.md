@@ -219,7 +219,7 @@ The proof exploits the already established full-propagator phase coupling;
 it neither decomposes $V_N$ into independent spectra nor evaluates
 its scalar resolvent at Heisenberg times. The all-order mixed-resolvent
 obligation `BGS-TRACE-005` therefore remains open. The separate
-[`BGS-TRACE-008` two-clock example](two_clock_gram_falsifier.md)
+[`BGS-TRACE-008` two-clock example](trace-bridge/two_clock_gram_falsifier.md)
 also proves that the necessary Gram moment $4/3$, simple phases,
 macroscopic Haar convergence, uniformly bounded unfolded unit occupancy
 and nonvanishing traces cannot replace that obligation.
@@ -1689,7 +1689,7 @@ bases and cannot be specialized directly to this equal-base alphabet.
 The [source audit](../literature/heisenberg_note_sources.md) pins the exact
 theorems and limits their source-to-model use.
 
-The [supporting lemmas](heisenberg_trace_support.md) give the complete
+The [supporting lemmas](trace-bridge/heisenberg_trace_support.md) give the complete
 finite factorial CUE cycle benchmark, corrected raw/ordinary Weyl
 dictionary, an explicit conditional Fejer error budget, and near-unitary
 transfer for positive and negative times. None supplies the remaining
@@ -1736,7 +1736,7 @@ remain outside this reduction. TRACE-005 and BGS-BGS-001 remain open.
 
 ## A universal boundary on the norm used for the deterministic target
 
-[TRACE-010](signed_heisenberg_comparison.md) proves that the unaveraged
+[TRACE-010](trace-bridge/signed_heisenberg_comparison.md) proves that the unaveraged
 all-order absolute CUE trace criterion is impossible. If
 $N^{-2}\sum_{j\in[N/8,N/2]}||p_j|^2-j|\to0$, then
 $$
@@ -1767,7 +1767,7 @@ bound is proved. TRACE-005 and BGS-BGS-001 remain open.
 
 ## Resonant cubic deletion from local spectral density
 
-**Claim ID:** `BGS-TRACE-011`. The [full proof](resonant_cubic_density_control.md)
+**Claim ID:** `BGS-TRACE-011`. The [full proof](trace-bridge/resonant_cubic_density_control.md)
 closes a conditional sector question and identifies a sharp tail obstruction.
 It gives no unconditional Heisenberg estimate for the frozen map.
 

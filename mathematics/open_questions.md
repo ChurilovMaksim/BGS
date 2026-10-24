@@ -315,7 +315,7 @@ this sufficient condition. A crowding obstruction needs an infinite
 prime subsequence; finite small-tau*p^2 coherence is not one. Actual
 asymptotic inputs and nonresonant signed cancellation remain open.
 
-[TRACE-011](resonant_cubic_density_control.md) supplies a conditional
+[TRACE-011](trace-bridge/resonant_cubic_density_control.md) supplies a conditional
 resonant cubic deletion: prove the actual block mass $E_p\to0$ and a
 bounded averaged local occupancy moment of any order s>3, or critical
 cubic density uniform integrability. A quantitative alternative is
@@ -323,7 +323,7 @@ $E_p=O(1/d_p)$ and $M_4(p)=o(d_p)$. These inputs remain open. The new
 pair-compatible rare-cluster counterexample rules out deriving the needed
 cubic tails from pair tests and spectral positivity alone.
 
-The [absolute-norm obstruction](signed_heisenberg_comparison.md)
+The [absolute-norm obstruction](trace-bridge/signed_heisenberg_comparison.md)
 (`BGS-TRACE-010`) excludes simultaneous unaveraged absolute pair and
 all-order comparison. TRACE-005 means the **signed** weighted discrepancy,
 with a modulus outside the entire sum. The first mixed attack is the
@@ -414,7 +414,7 @@ The [smooth seven-cut transfer](fixed_map_resolvent_frontier.md)
 (`BGS-RES-007`) identifies all compact positive-$s$ scalar-resolvent
 limits and their derivatives between the original and cut **full**
 propagators, without supplying a value for either. The
-[`BGS-TRACE-008` two-clock example](two_clock_gram_falsifier.md)
+[`BGS-TRACE-008` two-clock example](trace-bridge/two_clock_gram_falsifier.md)
 shows that the $4/3$ Gram milestone, even alongside simple phases and
 nonzero traces of every positive power, is insufficient as a universal
 criterion for CUE pairs. The milestone is still necessary and open for
@@ -514,7 +514,7 @@ The remaining material intermediate target is now specifically the sparse/interm
 
 ## B. Prove Heisenberg-scale desymmetrized joint-trace estimates
 
-The [clustered Abel calculation](clustered_abel_window_boundary.md) gives a
+The [clustered Abel calculation](trace-bridge/clustered_abel_window_boundary.md) gives a
 quantitative corollary in the existing compensated pinning range, and a
 simple-spectrum counterexample to inferring a positive-time Heisenberg-window
 form-factor bound from cluster containment, spacing collapse, or Abel

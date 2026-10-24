@@ -26,7 +26,7 @@ algebraic interpretation.
 ## 1. Exact target and prior scope
 
 The normalization is exactly that of
-`mathematics/trace_to_local_statistics_bridge.md`, equations (5), (7), (9),
+`mathematics/trace-bridge/trace_to_local_statistics_bridge.md`, equations (5), (7), (9),
 (10) and (15S). Fix `k`, put `d=k-1`, and for `m in Z^d` append
 
     m_k = -sum_(a<k) m_a.
@@ -50,7 +50,7 @@ new symmetry class or averaging procedure. `N` is the actual matrix dimension
 of the spectral block being compared. For the maintained full frozen family,
 retain odd `N` and the literal fixed coupling.
 
-The prior canonical [Heisenberg trace-support theorem](heisenberg_trace_support.md),
+The prior canonical [Heisenberg trace-support theorem](trace-bridge/heisenberg_trace_support.md),
 Section 3, already proves the general near-unitary integer-power bound and the
 complete partition–Möbius error O(N^k epsilon), without any microscopic
 correlation hypothesis and without assuming the approximant is unitary.
@@ -309,9 +309,9 @@ or analytic formalization certificate is asserted.
 
 Pinned source SHA-256 values:
 
-- `mathematics/trace_to_local_statistics_bridge.md`:
+- `mathematics/trace-bridge/trace_to_local_statistics_bridge.md`:
   `8de10ab48a068363110753165a09a7a569111a04d743e575eed9f669bc8a64fd`
-- `mathematics/signed_heisenberg_comparison.md`:
+- `mathematics/trace-bridge/signed_heisenberg_comparison.md`:
   `450e9c98720f4a6793b361611f2dee9d34531442efc521dacdcd902e1cc14313`
 - `mathematics/four_branch_parametrix.md`:
   `c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7`

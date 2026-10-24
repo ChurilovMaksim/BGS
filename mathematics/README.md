@@ -47,7 +47,7 @@ The canonical theorem sources live at stable paths in this directory.
 
 | Question | Start here | Scope |
 |---|---|---|
-| What is the exact BGS target? | [Frozen model](fixed_map_resolvent_frontier.md), [trace bridge](trace_to_local_statistics_bridge.md) | Unchanged fixed coupling, correct symmetries/unfolding, every fixed factorial order |
+| What is the exact BGS target? | [Frozen model](fixed_map_resolvent_frontier.md), [trace bridge](trace-bridge/trace_to_local_statistics_bridge.md) | Unchanged fixed coupling, correct symmetries/unfolding, every fixed factorial order |
 | What does actual classical/intensity mixing establish? | [Position-chain mixing](position_chain_mixing.md), [reverse paths](reversed_path_decay.md) | Intensity singular gap and specified path families, not full quantum interference |
 | Which arithmetic symmetry questions are closed? | [Combined pair commutant](actual_seven_primary_commutant.md), [literal multiplicities](literal_time_multiplicity_bounds.md) | Current combined classification includes every odd $N\ne7$; full propagator simplicity has a separate boundary |
 | Where is the signed trace residual? | [WKB reduction](factorial_wkb_reduction.md), [ordered diagonal](factorial_ordered_diagonal.md), [low-switch removal](hamming_low_switch_residual.md), [switch transfer](global_switch_transfer.md) | Specified removed sectors and damped interior; signed high-switch/undamped endpoint remains |

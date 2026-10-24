@@ -38,7 +38,7 @@ study further, not proof authority for TRACE-011.
 ## Earlier project results
 
 [TRACE-009](../mathematics/prime_resonant_sector.md) supplies the actual
-oriented block and pair mass criterion. [TRACE-010](../mathematics/signed_heisenberg_comparison.md)
+oriented block and pair mass criterion. [TRACE-010](../mathematics/trace-bridge/signed_heisenberg_comparison.md)
 supplies the exact signed cubic target, reference variance and older
 cardinality-dependent budget. The finite homometric example in
 [the CUE upload review](../archive/record/cue_upload_review_20260927.md) already

@@ -79,7 +79,7 @@ $$
 D_{U_p}(m,-m)=|\operatorname{Tr}U_p^m|^2-p,\qquad
 \mathbb E_{\rm CUE}D_V(m,-m)=\min(|m|,p)-p.                  \tag{5}
 $$
-The [trace bridge](trace_to_local_statistics_bridge.md) uses a weighted
+The [trace bridge](trace-bridge/trace_to_local_statistics_bridge.md) uses a weighted
 sum of these differences. An ensemble expectation is not a required
 pointwise value for one deterministic trace. Its weighted absolute
 comparison is a sufficient criterion, not a necessity theorem for BGS.

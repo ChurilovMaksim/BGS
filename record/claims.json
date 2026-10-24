@@ -667,7 +667,7 @@
       "title": "Partition-Mobius formula for distinct-index spectral sums",
       "state": "proved",
       "ledger_status": "EXACT",
-      "source": "mathematics/trace_to_local_statistics_bridge.md",
+      "source": "mathematics/trace-bridge/trace_to_local_statistics_bridge.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -683,7 +683,7 @@
       "title": "Exact Fourier trace representation of microscopic factorial statistics",
       "state": "proved",
       "ledger_status": "EXACT",
-      "source": "mathematics/trace_to_local_statistics_bridge.md",
+      "source": "mathematics/trace-bridge/trace_to_local_statistics_bridge.md",
       "dependencies": [
         "BGS-TRACE-001"
       ],
@@ -701,7 +701,7 @@
       "title": "Weighted Heisenberg-scale joint-trace comparison is sufficient for band-limited microscopic RMT correlations",
       "state": "proved",
       "ledger_status": "EXACT",
-      "source": "mathematics/trace_to_local_statistics_bridge.md",
+      "source": "mathematics/trace-bridge/trace_to_local_statistics_bridge.md",
       "dependencies": [
         "BGS-TRACE-002"
       ],
@@ -719,7 +719,7 @@
       "title": "Every-compact-bandwidth comparison extends to Schwartz correlation tests",
       "state": "proved",
       "ledger_status": "EXACT",
-      "source": "mathematics/bandlimited_correlation_extension.md",
+      "source": "mathematics/trace-bridge/bandlimited_correlation_extension.md",
       "dependencies": [
         "BGS-TRACE-003"
       ],
@@ -757,7 +757,7 @@
       "title": "Clustered Abel lower bound and simple-spectrum Heisenberg-window falsifier",
       "state": "proved",
       "ledger_status": "EXACT ELEMENTARY PROOF + INTERNAL SELF-REVIEW",
-      "source": "mathematics/clustered_abel_window_boundary.md",
+      "source": "mathematics/trace-bridge/clustered_abel_window_boundary.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -789,7 +789,7 @@
       "title": "Two-clock falsifier for sufficiency of the CUE Gram second moment",
       "state": "proved",
       "ledger_status": "ELEMENTARY CONSTRUCTION + AUTHOR SELF-REVIEW; SHARED COMPUTATIONAL CONTROL IS FLOAT64 DIAGONAL-ONLY (SEE BGS-RES-006)",
-      "source": "mathematics/two_clock_gram_falsifier.md",
+      "source": "mathematics/trace-bridge/two_clock_gram_falsifier.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -1237,7 +1237,7 @@
       "title": "Universal deterministic absolute-norm obstruction against CUE and signed cancellation controls",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + FINITE CONTROLS",
-      "source": "mathematics/signed_heisenberg_comparison.md",
+      "source": "mathematics/trace-bridge/signed_heisenberg_comparison.md",
       "dependencies": [
         "BGS-TRACE-001",
         "BGS-TRACE-002",
@@ -1265,7 +1265,7 @@
       "title": "Resonant cubic deletion by local density and a pair-compatible critical cluster obstruction",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + FINITE CONTROLS",
-      "source": "mathematics/resonant_cubic_density_control.md",
+      "source": "mathematics/trace-bridge/resonant_cubic_density_control.md",
       "dependencies": [
         "BGS-TRACE-001",
         "BGS-TRACE-009",
@@ -1969,8 +1969,8 @@
       "external_dependencies": [],
       "proof_dependencies": [
         "mathematics/four_branch_parametrix.md",
-        "mathematics/trace_to_local_statistics_bridge.md",
-        "mathematics/heisenberg_trace_support.md"
+        "mathematics/trace-bridge/trace_to_local_statistics_bridge.md",
+        "mathematics/trace-bridge/heisenberg_trace_support.md"
       ],
       "evidence": [
         "archive/record/heisenberg_wkb_review_scope.md",
@@ -2309,7 +2309,7 @@
       "title": "Disjoint Hamming and low-switch pair residual reduction",
       "state": "proved",
       "ledger_status": "EXACT PROJECT PROOFS + SEPARATE INDEPENDENT HAMMING/TRANSLATION/RUN/SYNTHESIS AUDITS + BOUNDED EXACT CONTROLS; INHERITED ACTUAL ANALYTIC INPUTS",
-      "source": "mathematics/phase_trace_checkpoint.md",
+      "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
       "dependencies": [
         "BGS-TRACE-020",
         "BGS-FM-021",
@@ -2372,7 +2372,7 @@
       "title": "Uniform actual one-step cyclic-charge gap",
       "state": "proved",
       "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
-      "source": "mathematics/phase_trace_checkpoint.md",
+      "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
       "dependencies": [
         "BGS-FM-021"
       ],
@@ -2402,7 +2402,7 @@
       "title": "Exact full balanced-pair Schur energy and three-radius equivalence",
       "state": "proved",
       "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
-      "source": "mathematics/phase_trace_checkpoint.md",
+      "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
       "dependencies": [
         "BGS-FM-021"
       ],
@@ -2429,7 +2429,7 @@
       "title": "Completed compact pair source and uniform complex microscopic source bounds",
       "state": "proved",
       "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
-      "source": "mathematics/phase_trace_checkpoint.md",
+      "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
       "dependencies": [],
       "external_dependencies": [
         "EXT-ZIRN-2021"
@@ -2459,7 +2459,7 @@
       "title": "Actual q1 theta0 charge-pinching radial shell and resolvent",
       "state": "proved",
       "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
-      "source": "mathematics/phase_trace_checkpoint.md",
+      "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
       "dependencies": [
         "BGS-FM-018"
       ],
@@ -2488,7 +2488,7 @@
       "title": "Literal kick/cat moment laws, triple-log word window and strong-freeness obstruction",
       "state": "proved",
       "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
-      "source": "mathematics/phase_trace_checkpoint.md",
+      "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
       "dependencies": [
         "BGS-FM-018"
       ],
@@ -2522,7 +2522,7 @@
       "title": "Global scalar and block body coercivity with real absorption",
       "state": "proved",
       "ledger_status": "PROJECT PROOF/REDUCTION + SEPARATE INDEPENDENT INTERNAL REVIEW + SCOPED FINITE CONTROLS; INHERITED ANALYTIC BOUNDARIES",
-      "source": "mathematics/phase_trace_checkpoint.md",
+      "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
       "dependencies": [
         "BGS-FM-021"
       ],
@@ -3004,13 +3004,13 @@
       "title": "Finite frame identities, Stiefel threshold and clock-basis obstruction",
       "state": "proved",
       "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
-      "source": "mathematics/fresh_phase_average_20261011.md",
+      "source": "mathematics/trace-bridge/fresh_phase_average.md",
       "dependencies": [],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/finite_stiefel_bounds_20261011.md",
-        "mathematics/stiefel_fluctuation_20261011.md",
-        "mathematics/clock_basis_obstruction_20261011.md"
+        "mathematics/trace-bridge/finite_stiefel_bounds.md",
+        "mathematics/trace-bridge/stiefel_fluctuation.md",
+        "mathematics/trace-bridge/clock_basis_obstruction.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261011/chat-research/README.md"
@@ -3031,13 +3031,13 @@
       "title": "Flat completion with arbitrary clock law",
       "state": "proved",
       "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
-      "source": "mathematics/flat_completion_20261011.md",
+      "source": "mathematics/trace-bridge/flat_completion.md",
       "dependencies": [
         "BGS-TRACE-061"
       ],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/arbitrary_clock_law_20261011.md"
+        "mathematics/trace-bridge/arbitrary_clock_law.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261011/chat-research/README.md"
@@ -3075,11 +3075,11 @@
       "title": "Sharp maximal-torus contraction for compact simple groups",
       "state": "proved",
       "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
-      "source": "mathematics/torus_contraction_20261011.md",
+      "source": "mathematics/trace-bridge/torus_contraction.md",
       "dependencies": [],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/compact_groups_20261011.md"
+        "mathematics/trace-bridge/compact_groups.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261011/chat-research/README.md"
@@ -3175,7 +3175,7 @@
       "title": "Frozen circular phase laws in the three symmetry classes",
       "state": "proved",
       "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
-      "source": "mathematics/phase_contraction_20261011.md",
+      "source": "mathematics/trace-bridge/phase_contraction.md",
       "dependencies": [
         "BGS-TRACE-067"
       ],
@@ -3186,8 +3186,8 @@
         "EXT-JM-2015"
       ],
       "proof_dependencies": [
-        "mathematics/quenched_local_law_20261011.md",
-        "mathematics/heisenberg_form_factor_20261011.md"
+        "mathematics/trace-bridge/quenched_local_law.md",
+        "mathematics/trace-bridge/heisenberg_form_factor.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261011/chat-research/README.md"
@@ -3205,7 +3205,7 @@
       "title": "All-order critical CSE trace limit",
       "state": "proved",
       "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
-      "source": "mathematics/exact_cumulants_20261011.md",
+      "source": "mathematics/trace-bridge/exact_cumulants.md",
       "dependencies": [
         "BGS-TRACE-068"
       ],
@@ -3213,7 +3213,7 @@
         "EXT-MATSUMOTO-2007"
       ],
       "proof_dependencies": [
-        "mathematics/critical_cse_gaussian_20261011.md"
+        "mathematics/trace-bridge/critical_cse_gaussian.md"
       ],
       "evidence": [
         "archive/evidence/executions/20261011/chat-research/README.md"
@@ -3233,7 +3233,7 @@
       "title": "Complete CUE and CSE form-factor curves",
       "state": "proved",
       "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
-      "source": "mathematics/form_factor_curve_20261011.md",
+      "source": "mathematics/trace-bridge/form_factor_curve.md",
       "dependencies": [
         "BGS-TRACE-068",
         "BGS-TRACE-069"

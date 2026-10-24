@@ -207,7 +207,7 @@ adds independently reviewed Schur/source reductions, literal fixed-word laws,
 actual radial/resolvent control and ordinary-body coercivity. The exact
 remaining pair tasks are the complete balanced microscopic law and signed
 undamped high-switch offcharge endpoint; higher factorial TRACE-005 and BGS
-remain open. [Exact scopes](phase_trace_checkpoint.md) distinguish
+remain open. [Exact scopes](trace-bridge/phase_trace_checkpoint.md) distinguish
 accepted proofs, source corrections, changed-family obstructions and deferred
 candidates. Main publication follows aggregate checks and fresh review.
 

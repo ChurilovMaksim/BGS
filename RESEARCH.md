@@ -186,7 +186,7 @@ normalizations, symmetry qualifications and exceptional dimensions.
 TRACE-005 asks for signed weighted factorial joint-trace comparison at
 Heisenberg powers, for every fixed order and every smooth compact Fourier
 weight. The modulus is taken outside the complete normalized sum. The
-[exact bridge](mathematics/trace_to_local_statistics_bridge.md) states the
+[exact bridge](mathematics/trace-bridge/trace_to_local_statistics_bridge.md) states the
 additional positivity and extension hypotheses needed for local correlations.
 The necessary pair reference is
 
@@ -256,7 +256,7 @@ noise-removal defect without proving its vanishing. Higher factorial orders
 remain part of the full target.
 
 Known controls explain why weaker criteria do not close the problem:
-[absolute all-order comparison](mathematics/signed_heisenberg_comparison.md),
+[absolute all-order comparison](mathematics/trace-bridge/signed_heisenberg_comparison.md),
 [same-ensemble clock norms](mathematics/isospectral_clock_moment_control.md),
 and [microscopic rounding](mathematics/microscopic_rounding_control.md).
 The rounding example changes the operator and does not preserve exact

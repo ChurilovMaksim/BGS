@@ -382,10 +382,10 @@
       "checked_on": "2026-10-01",
       "mapping": "Exact Haar-CUE joint trace moments equal Gaussian moments when both weighted degrees are <=N. All sixth, cubic/pair cross and pair/pair moments in the low-band arbitrary-weight variance have degree <=4 max I<=N. No arbitrary-Heisenberg Gaussian independence or deterministic-map theorem follows. TRACE-011 uses background dimension H=N-K and verifies 4bN<=H for the mixed-cluster second/fourth/sixth moments. Its all-band pair covariance and occupancy controls are separately derived by finite determinants, without Gaussian matching beyond the stable range.",
       "project_sources": [
-        "mathematics/signed_heisenberg_comparison.md",
+        "mathematics/trace-bridge/signed_heisenberg_comparison.md",
         "literature/signed_heisenberg_sources.md",
         "record/claim_ledger.md",
-        "mathematics/resonant_cubic_density_control.md",
+        "mathematics/trace-bridge/resonant_cubic_density_control.md",
         "literature/resonant_density_sources.md",
         "mathematics/fixed_degree_heat_projection.md",
         "literature/critical_noise_sources_20261005.md",
@@ -755,7 +755,7 @@
       "checked_on": "2026-10-07",
       "mapping": "Imported independent exact-source reviews reconstruct the color-one coherent projector and boundary completion; actual dual pairing avoids the source index typo. Used only for completed finite-pair compact identity on its stated coherent-section domain, not positive supermeasure or universality. Full PDF remains external without established redistribution license.",
       "project_sources": [
-        "mathematics/phase_trace_checkpoint.md",
+        "mathematics/trace-bridge/phase_trace_checkpoint.md",
         "mathematics/compact_phase_pair_identity.md",
         "literature/color_one_boundary_qualification_20261007.md"
       ]
@@ -772,7 +772,7 @@
       "checked_on": "2026-10-07",
       "mapping": "Imported separately accepted scalar/block audits check generalized EMI for complex Hermitian A,B and every unitarily invariant norm. Gives all-Ky-Fan displacement majorization in ordinary-body coercivity; no supersymmetric positivity or BGS consequence. Cache omitted without redistribution license.",
       "project_sources": [
-        "mathematics/phase_trace_checkpoint.md",
+        "mathematics/trace-bridge/phase_trace_checkpoint.md",
         "mathematics/global_bosonic_body_coercivity.md",
         "mathematics/matrix_block_body_coercivity.md",
         "literature/color_one_boundary_qualification_20261007.md"
@@ -792,7 +792,7 @@
       "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
       "mapping": "Spherical-function identification and parameter theta=1/alpha; COE doubled and CSE duplicated weights. The sharp coefficient bound is proved internally.",
       "project_sources": [
-        "mathematics/phase_contraction_20261011.md",
+        "mathematics/trace-bridge/phase_contraction.md",
         "literature/circular_phase_sources_20261011.md"
       ],
       "source_url": "https://arxiv.org/pdf/q-alg/9709011v1"
@@ -810,8 +810,8 @@
       "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
       "mapping": "Circular orthogonal and symplectic densities, with N distinct CSE pairs and beta=4. No phase-randomization or deterministic-background theorem is imported.",
       "project_sources": [
-        "mathematics/exact_cumulants_20261011.md",
-        "mathematics/phase_contraction_20261011.md",
+        "mathematics/trace-bridge/exact_cumulants.md",
+        "mathematics/trace-bridge/phase_contraction.md",
         "literature/circular_phase_sources_20261011.md"
       ],
       "source_url": "https://arxiv.org/pdf/math/0608751v3"
@@ -830,7 +830,7 @@
       "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
       "mapping": "Annealed circular-beta process converges to Sine-beta; periodization and additional 1/(2*pi) scaling give intensity one. Conditional frozen-phase transfer is proved internally; no quantitative Sine metric rate is imported.",
       "project_sources": [
-        "mathematics/phase_contraction_20261011.md",
+        "mathematics/trace-bridge/phase_contraction.md",
         "literature/circular_phase_sources_20261011.md"
       ],
       "source_url": "https://arxiv.org/pdf/1710.06988v1"
@@ -849,7 +849,7 @@
       "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
       "mapping": "Finite circular Jack norm product; the one-sided alpha>=1 estimate is valid in every degree. Fixed-degree limiting trace results are not used for growing Heisenberg powers.",
       "project_sources": [
-        "mathematics/phase_contraction_20261011.md",
+        "mathematics/trace-bridge/phase_contraction.md",
         "literature/circular_phase_sources_20261011.md"
       ],
       "source_url": "https://arxiv.org/pdf/1102.4123v2"
@@ -869,9 +869,9 @@
       "dependency_role": "scoped external input or explicitly credited prior formula; see mapping",
       "mapping": "Prior exact CUE variance, CSE second/fourth cumulants and limiting curves. These formulas are rederived internally. Time-averaged ergodicity in this source is distinct from averaging compatible coordinate phases of a frozen background.",
       "project_sources": [
-        "mathematics/form_factor_curve_20261011.md",
-        "mathematics/exact_cumulants_20261011.md",
-        "mathematics/critical_cse_gaussian_20261011.md",
+        "mathematics/trace-bridge/form_factor_curve.md",
+        "mathematics/trace-bridge/exact_cumulants.md",
+        "mathematics/trace-bridge/critical_cse_gaussian.md",
         "literature/circular_phase_sources_20261011.md"
       ],
       "source_url": "https://arxiv.org/pdf/chao-dyn/9906024v1"

@@ -7,7 +7,7 @@ priority claim or solution of BGS. The actual frozen-map asymptotic
 inputs identified in Section 7 remain open. Final author audit:
 4 October 2026; the common scalar phase convention is explicit below.
 
-This refines [TRACE-011](resonant_cubic_density_control.md), rather than
+This refines [TRACE-011](trace-bridge/resonant_cubic_density_control.md), rather than
 replacing its critical-tail counterexample. The prior
 [folded-spectrum control](../supplement/fixed_map/report-audit/folded_spectrum_control.md)
 already shows that bounded local counts and short traces do not imply

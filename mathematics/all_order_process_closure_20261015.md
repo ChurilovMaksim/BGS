@@ -178,7 +178,7 @@ The earlier condition E_p(K)->0 for a separately selected resonance lattice is m
 
 ## 8. Sources, verification, and scope
 
-Read project sources: mathematics/trace_to_local_statistics_bridge.md (exact Fourier/Mobius identity); mathematics/bandlimited_correlation_extension.md (occupation and Schwartz extension); record/claim_registry.md (separate conditional scopes); the supplied AUDIT_RU.md and CLAIM_LEDGER_RU.md (15 October 2026).
+Read project sources: mathematics/trace-bridge/trace_to_local_statistics_bridge.md (exact Fourier/Mobius identity); mathematics/trace-bridge/bandlimited_correlation_extension.md (occupation and Schwartz extension); record/claim_registry.md (separate conditional scopes); the supplied AUDIT_RU.md and CLAIM_LEDGER_RU.md (15 October 2026).
 
 Primary background: A. Soshnikov, Determinantal random point fields, arXiv:math/0002099 (determinantal processes and convergence). The proof above spells out the finite CUE determinant and truncation operations needed here. Standard results are not attributed to this research as discoveries.
 

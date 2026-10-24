@@ -61,7 +61,7 @@ In particular $|\operatorname{Tr}U_N^m-\operatorname{Tr}V_N^m|
 absolute trace **differences**, not an estimate of either trace.
 
 Let $C_{k,N}^W(H)$ be the translation-invariant factorial local statistic
-of [`trace_to_local_statistics_bridge.md`](trace_to_local_statistics_bridge.md),
+of [`trace_to_local_statistics_bridge.md`](trace-bridge/trace_to_local_statistics_bridge.md),
 with phases $\theta_j\in\mathbb R/\mathbb Z$ and unfolded spacing $1$:
 
 $$

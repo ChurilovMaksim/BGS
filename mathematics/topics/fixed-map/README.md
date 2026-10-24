@@ -15,7 +15,7 @@ microscopic signed plateau and higher factorial defects open.
 
 ## Reviewed 7 October phase checkpoint
 
-[Current claim card](../../phase_trace_checkpoint.md) and
+[Current claim card](../../trace-bridge/phase_trace_checkpoint.md) and
 [accepted results / next estimates](../../../record/checked_research_checkpoint_20261007.md)
 separate uniform charge gap, fixed-word laws, source/Schur reductions,
 ordinary-body bounds and actual q=1,theta=0 radial control from the still-open
