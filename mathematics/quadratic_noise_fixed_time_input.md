@@ -1,7 +1,7 @@
 # Historical Faure trace adaptation and the now-proved bounded input
 
 **Claim ID: BGS-FM-013. Current bounded-input status: PROJECT PROOF.**
-4 October 2026: the [direct odd-N packet/frame proof](fixed_time_wavepacket_trace_bound.md)
+4 October 2026: the [direct odd-N packet/frame proof](fixed-map/fixed_time_wavepacket_trace_bound.md)
 now gives $|p_j(U_N)|=O_j(1)$ for every fixed nonzero integer j.
 Its completion additionally proves eventual $|p_1|<4$, $|p_2|<9$, so
 the numerical starting choice $K=20$ is available without this source route.
@@ -72,7 +72,7 @@ There are $|\det(L-I)|$ terms at fixed $j$; signs have unit modulus.
 The plane fixed-point estimate would give a bounded leading amplitude
 and a vanishing remainder for each term, hence $|p_j|=O_j(1)$.
 The proposed parameter map is $H_1=-\tau g/(2\pi)$, with $g$ the
-physical ordinary Weyl symbol of [FM-001](fixed_model_symmetry_theorem.md),
+physical ordinary Weyl symbol of [FM-001](fixed-map/fixed_model_symmetry_theorem.md),
 including its momentum half-shift. The classical map is
 $\Phi_g^{-\tau/(2\pi)}S^{-1}$.
 

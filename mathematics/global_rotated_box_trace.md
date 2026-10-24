@@ -14,7 +14,7 @@ hash mappings, editorial changes and execution scope are in
 [the review record](../archive/record/global_rotated_box_review_scope.md).
 Generic norm-to-factorial trace telescoping is prior project work in
 [Heisenberg trace support](trace-bridge/heisenberg_trace_support.md), section 3; the
-specific WKB instantiation is in [the factorial reduction](factorial_wkb_reduction.md).
+specific WKB instantiation is in [the factorial reduction](fixed-map/factorial_wkb_reduction.md).
 
 ## Part I. Global representation and conservative summed tail
 
@@ -27,7 +27,7 @@ Let B_m=6I-P_m-P_m^T with the cyclic shift P_m, D_m=det B_m,
 Phi_r=sum_j S_(r_j)(tau,x_j,x_(j+1)), and
 A_r=product_j a_(r_j,J)(h,x_j,x_(j+1)). Winding indices range over
 Z^m/B_m Z^m. At m=1, B_1=4; at m=2 its off-diagonal entries are -2. In each global Fresnel integral of
-[exact Gaussian reciprocity](exact_gaussian_reciprocity.md), (G6-G7), use its UNIQUE actual real stationary
+[exact Gaussian reciprocity](fixed-map/exact_gaussian_reciprocity.md), (G6-G7), use its UNIQUE actual real stationary
 point x*_(r,nu). Define the compact contour box
 
 C_(r,nu)={x*_(r,nu)+(1-i)u : u in [-1,1]^m},

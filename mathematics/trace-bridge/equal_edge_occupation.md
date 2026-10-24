@@ -374,7 +374,7 @@ Project inputs read:
 
 * ChurilovMaksim/BGS, mathematics/position_chain_mixing.md, blob
   362ecbfe57040a99fb160bf757bc74259658dc63.
-* ChurilovMaksim/BGS, mathematics/four_branch_parametrix.md, blob
+* ChurilovMaksim/BGS, mathematics/fixed-map/four_branch_parametrix.md, blob
   587cb2741921571bd327f93a443e3b2d2e92a690.
 
 No whole-literature novelty audit or independent external referee acceptance

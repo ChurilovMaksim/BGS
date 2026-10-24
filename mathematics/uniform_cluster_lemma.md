@@ -3,7 +3,7 @@
 Project proof; Sections 3–5 of the source were independently internally
 reviewed as formal/local dependencies. No convergence of the formal series
 is asserted. The separate finite-order trace-table theorem is
-[factorial WKB reduction](factorial_wkb_reduction.md).
+[factorial WKB reduction](fixed-map/factorial_wkb_reduction.md).
 
 ## 3. Actual Hessians: uniform mass and inverse decay
 

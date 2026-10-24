@@ -9,9 +9,9 @@ dependency checks and explicit execution limits.
 The [review](spectral_research/trace_closure.md) closes the inserted-trace input in TRACE-109 by a
 finite-grid corrected-amplitude proof. TRACE-110 now has proved global
 $O(1/\log N)$ spectral matching and a matching Pell lower order.
-[TRACE-112](../mathematics/displacement_density_trace_bound_20261021.md) supplies an
+[TRACE-112](../mathematics/fixed-map/displacement_density_trace_bound.md) supplies an
 independent logarithmic-time upper-bound route;
-[TRACE-113](../mathematics/fixed_kick_uniform_trace_bound_20261021.md) proves the
+[TRACE-113](../mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) proves the
 uniform power-trace input with one threshold for all iterates.
 All statements have analytic project proofs with self-review, not external
 refereeing. Microscopic signed cancellation and BGS remain open.

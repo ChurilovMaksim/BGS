@@ -61,7 +61,7 @@ Thus the exact first-order discriminant problem reduces to a family of matrices 
 
 ## Source boundary
 
-The trace fixed-point identity is the existing raw-Weyl theorem in mathematics/frozen_arithmetic_trace_rigidity.md. The N7 multiplicities use the separately reviewed characteristic-zero raw-kernel certificate. The CRT factorization is direct substitution in the unchanged quadratic kernel. No external torus/Weil multiplicity theorem is invoked, and none is needed for this bound.
+The trace fixed-point identity is the existing raw-Weyl theorem in mathematics/fixed-map/frozen_arithmetic_trace_rigidity.md. The N7 multiplicities use the separately reviewed characteristic-zero raw-kernel certificate. The CRT factorization is direct substitution in the unchanged quadratic kernel. No external torus/Weil multiplicity theorem is invoked, and none is needed for this bound.
 
 ## Publication and dependency scope
 

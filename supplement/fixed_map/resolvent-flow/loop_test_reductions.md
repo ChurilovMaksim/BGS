@@ -1,6 +1,6 @@
 # Single-anchor loop tests and logarithmic short-leg deletion
 
-**Existing owner:** BGS-LOOP-001, extending the conditional mixed-hierarchy reduction in [loop_bridge.md](loop_bridge.md) and the maintained [frontier](../../../mathematics/fixed_map_resolvent_frontier.md). The existing registry ID is retained.
+**Existing owner:** BGS-LOOP-001, extending the conditional mixed-hierarchy reduction in [loop_bridge.md](loop_bridge.md) and the maintained [frontier](../../../mathematics/fixed-map/fixed_map_resolvent_frontier.md). The existing registry ID is retained.
 
 **Status:** exact project reductions, with independent internal proof review. The application of the characterization theorem remains conditional. Neither the actual long-long mixed residual nor the all-order hierarchy is proved. No external priority or full-source-proof audit is claimed.
 

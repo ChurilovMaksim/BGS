@@ -2,7 +2,7 @@
 
 Base: `89645900bdbaace5d4956f306f6dccc464163e35`.
 Target source:
-[`frozen_operator_transfer_coercivity.md`](../mathematics/frozen_operator_transfer_coercivity.md),
+[`frozen_operator_transfer_coercivity.md`](../mathematics/fixed-map/frozen_operator_transfer_coercivity.md),
 FM-018. Existing local proofs, claim registry and external-dependency table
 were searched before primary retrieval. No maintained result already asserts
 its growing-band twisted average or all-noise singular bound. This does not

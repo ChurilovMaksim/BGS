@@ -44,7 +44,7 @@ copies; they are not proof certificates.
 In [FM-006](../mathematics/nonlinear_bracket_pressure.md), take
 $M=\mathbb T^2$, $f=G_\kappa=S\circ\Phi_g^\kappa$ and $\mu=m$,
 normalized smooth area. The analytic area-preserving Anosov properties are
-the named [FM-001](../mathematics/fixed_model_symmetry_theorem.md) inputs.
+the named [FM-001](../mathematics/fixed-map/fixed_model_symmetry_theorem.md) inputs.
 Analyticity on the compact torus supplies Hölder derivative; area
 preservation supplies invariance and absolute continuity.
 
@@ -59,7 +59,7 @@ The cited formula yields precisely $h_m(f)=\int\phi\,dm$.
 Together with the already named Ruelle inequality and variational
 principle, this yields $P(-\phi)=0$ and makes $m$ an equilibrium state.
 The existing Hölder equilibrium-uniqueness input identifies the Gibbs state
-used by [FM-018 O11](../mathematics/frozen_operator_transfer_coercivity.md).
+used by [FM-018 O11](../mathematics/fixed-map/frozen_operator_transfer_coercivity.md).
 This supplement does not independently re-audit those other inputs or
 assume a smooth structural conjugacy.
 

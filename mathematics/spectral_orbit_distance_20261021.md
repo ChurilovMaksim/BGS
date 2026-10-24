@@ -1,8 +1,8 @@
 # Distance to the unperturbed spectral orbit: proved global bounds
 
 **Claim:** BGS-TRACE-110. **Status:** analytic proof with self-review.
-The continuation, self-reviewed on 22 October, closes input (T) in [TRACE-113](fixed_kick_uniform_trace_bound_20261021.md).
-An independent [TRACE-112 proof](displacement_density_trace_bound_20261021.md)
+The continuation, self-reviewed on 22 October, closes input (T) in [TRACE-113](fixed-map/fixed_kick_uniform_trace_bound.md).
+An independent [TRACE-112 proof](fixed-map/displacement_density_trace_bound.md)
 also gives the upper bound without pressure or the all-time quantum formula.
 
 ## Distances and the required trace input

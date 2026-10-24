@@ -115,7 +115,7 @@ This theorem does **not** imply the missing E_p(K)->0 for the resonant trace sec
 
 ## Context
 
-BGS original model and arithmetic return inputs: `mathematics/frozen_arithmetic_trace_rigidity.md`, `mathematics/prime_resonant_sector.md`, `mathematics/fixed_model_symmetry_theorem.md` in the user's BGS repository. Analogues of matrix-valued Livsic theory exist for Holder cocycles over hyperbolic dynamics (e.g., Kalinin, *Livsic theorem for matrix cocycles*, arXiv:0808.0350), but they do not provide the uniform-in-dimension quantum trace estimates required here.
+BGS original model and arithmetic return inputs: `mathematics/fixed-map/frozen_arithmetic_trace_rigidity.md`, `mathematics/prime_resonant_sector.md`, `mathematics/fixed-map/fixed_model_symmetry_theorem.md` in the user's BGS repository. Analogues of matrix-valued Livsic theory exist for Holder cocycles over hyperbolic dynamics (e.g., Kalinin, *Livsic theorem for matrix cocycles*, arXiv:0808.0350), but they do not provide the uniform-in-dimension quantum trace estimates required here.
 
 ## Exact Haar-conjugation benchmark and a parity-doubling phenomenon
 

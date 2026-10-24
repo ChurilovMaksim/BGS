@@ -38,6 +38,11 @@ def sealed_source_bytes(root=historical.ROOT):
     expected={rel:'archive/evidence/schur_reduction_20261007/raw/review/pinned/BGS/'+rel
               for rel in ('AGENTS.md','SOURCE_OF_TRUTH.md','record/repository_conventions.md')}
     expected['mathematics/microscopic_rounding_control.md']='mathematics/spectral-obstructions/microscopic_rounding_control.md'
+    expected['mathematics/actual_charge_radial_resolvent.md']='mathematics/fixed-map/actual_charge_radial_resolvent.md'
+    expected['mathematics/actual_charge_radial_shell.md']='mathematics/fixed-map/actual_charge_radial_shell.md'
+    expected['mathematics/fixed_map_path_model.md']='mathematics/fixed-map/fixed_map_path_model.md'
+    expected['mathematics/four_branch_parametrix.md']='mathematics/fixed-map/four_branch_parametrix.md'
+    expected['mathematics/fractional_hamming_cancellation.md']='mathematics/fixed-map/fractional_hamming_cancellation.md'
     historical.require(resolutions==expected,'unreviewed historical input resolution')
     cached={}
     for rel,digest in bindings['files'].items():

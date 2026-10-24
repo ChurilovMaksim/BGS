@@ -34,7 +34,7 @@
       "checked_on": "2026-09-22",
       "mapping": "Used only for the loop-hierarchy characterization/convergence implication. The approximate mixed loop equations for the maintained deterministic model remain a project hypothesis.",
       "project_sources": [
-        "mathematics/fixed_map_resolvent_frontier.md",
+        "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
         "record/claim_ledger.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-BH-2026"
@@ -52,7 +52,7 @@
       "checked_on": "2026-09-25",
       "mapping": "For N>=2 the regular N-gon on S^1 is a sharp configuration (N=1 is immediate). Theorem 1.2 minimizes pair energy for completely monotone functions of squared chord distance; the project potential f_q(r)=(1-q^2)/((1-q)^2+qr) meets this hypothesis. Continuity extends the inequality to spectral multisets with repeated phases.",
       "project_sources": [
-        "mathematics/fixed_map_resolvent_frontier.md",
+        "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
         "record/claim_ledger.md",
         "literature/bibliography.md"
       ],
@@ -162,7 +162,7 @@
       "checked_on": "2026-09-23",
       "mapping": "For two distinct algebraic exponents 0 and i tau N(lambda-mu), coefficients -1 and 1, exponentials cannot coincide. This gives qualitative injectivity only, no spectral gap. The underlying single-chain representation was already recorded in supplement/fixed_map/weighted-secular/attempt.md.",
       "project_sources": [
-        "mathematics/frozen_kick_rank_boundary.md",
+        "mathematics/fixed-map/frozen_kick_rank_boundary.md",
         "record/frozen_rank_review_20260923.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-EV-2015"
@@ -218,13 +218,13 @@
       "project_sources": [
         "mathematics/nonlinear_bracket_pressure.md",
         "record/nonlinear_pressure_review_20260923.md",
-        "mathematics/frozen_operator_transfer_coercivity.md",
+        "mathematics/fixed-map/frozen_operator_transfer_coercivity.md",
         "literature/frozen_operator_transfer_sources_20261006.md",
         "mathematics/polar_wkb_quantization_stability.md",
         "mathematics/weighted_periodic_equidistribution.md",
         "mathematics/selected_weighted_coefficient.md",
         "record/weighted_periodic_review.md",
-        "mathematics/all_coordinate_translation.md",
+        "mathematics/fixed-map/all_coordinate_translation.md",
         "mathematics/hamming_low_switch_residual.md"
       ],
       "additional_checks": [
@@ -249,20 +249,20 @@
       "checked_on": "2026-10-04",
       "mapping": "For nonzero real algebraic time t, collected finite exponential polynomials with real algebraic frequencies vanish at t exactly when identically zero; used with a separate imaginary-time nonvanishing witness for discriminants, resultants and fixed-model traces. The theorem gives no quantitative lower bound. The algebraic-entry antiunitary corollary uses the same input. TRACE-013 uses only Corollary 3.2 and nonzero algebraic-coefficient polynomials at one transcendental exponential for its factorial flat perturbation. FLOW-013 uses Corollary 3.2 for one eigenvalue rotation, ensuring all positive power traces of its abstract clustered starting family are nonzero without quantitative cancellation. FM-024 uses Theorem 3.2 only for its algebraic-entry literal-propagator corollary: spectral projectors of the Hermitian algebraic generator have algebraic entries even with repeated eigenvalues; entrywise separation of the distinct algebraic exponents forces commutation with both A and M. The common-commutant theorem itself is independent of this external input. Additional scoped use: four finite N=21,35,49,63 U-simplicity cases via prior imaginary-time leading-minor discriminant; one-step squared-trace transcendence for all odd N except7 by collected algebraic difference frequencies and unique extreme coefficient, including repeated eigenvalues. No higher-power seven-divisible conclusion. New rank-transfer use: algebraic matrix-polynomial minors of U(t) are collected exponential polynomials; nonzero real algebraic t realizes maximal rank. Derivative-stack ranks give multiplicity-bounded eigenspace dimensions. Separate fresh FM-008 primary-source/application review verifies its existing spectral uses; its r1 pair-commutant leaf does not require LW. Reviewed intermediate-layer application: add simple local branch counts over disjoint complete newest/first-old/residual25 cat eigenspaces, then apply the existing exponential-rank transfer to give 612N/625+7(even e>=4), 612N/625+175(even e>=6), 4333 at N=4375 and 107443 at N=109375. No fixed-time oldform invariant-subspace or full-simplicity conclusion. Odd newest/residual125 application: disjoint complete cat groups give 24N/25, +35, and +875 total at odd depths e>=3,5,7 respectively; the existing exponential-rank theorem transfers these local branch counts to nonzero real algebraic time. No full simplicity or invariant target-time oldform space.",
       "project_sources": [
-        "mathematics/frozen_algebraic_spectral_simplicity.md",
-        "mathematics/frozen_common_antireversor_certificate.md",
+        "mathematics/fixed-map/frozen_algebraic_spectral_simplicity.md",
+        "mathematics/fixed-map/frozen_common_antireversor_certificate.md",
         "record/frozen_algebraic_review_20260924.md",
         "mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md",
         "literature/expansion_wavepacket_sources_20261004.md",
-        "mathematics/dyson_relaxation_obstruction.md",
-        "mathematics/actual_seven_primary_commutant.md",
-        "mathematics/finite_seven_spectral_pivots.md",
+        "mathematics/fixed-map/dyson_relaxation_obstruction.md",
+        "mathematics/fixed-map/actual_seven_primary_commutant.md",
+        "mathematics/fixed-map/finite_seven_spectral_pivots.md",
         "mathematics/uniform_trace_square_transcendence.md",
         "record/finite_seven_pivots_review.md",
         "record/trace_variance_review.md",
-        "mathematics/algebraic_time_rank_transfer.md",
+        "mathematics/fixed-map/algebraic_time_rank_transfer.md",
         "mathematics/literal_time_multiplicity_bounds.md",
-        "mathematics/finite_cat_first_jet.md",
+        "mathematics/fixed-map/finite_cat_first_jet.md",
         "record/cat_jet_rank_review.md",
         "record/fm008_fresh_independent_review.md",
         "record/intermediate_old_layers_promotion.md",
@@ -282,7 +282,7 @@
       "checked_on": "2026-09-24",
       "mapping": "Applied to a Q-independent integral-trace basis of exponent frequencies and the explicit integer norm of a frozen spectral discriminant. It gives an astronomically small gap bound only at odd 7-not-dividing-N and no trace cancellation.",
       "project_sources": [
-        "mathematics/frozen_effective_gap_floor.md",
+        "mathematics/fixed-map/frozen_effective_gap_floor.md",
         "record/two_continuations_review_20260924.md",
         "literature/bibliography.md",
         "mathematics/literal_growing_word_window.md",
@@ -311,7 +311,7 @@
       "project_sources": [
         "mathematics/quadratic_noise_clock_limit.md",
         "literature/quadratic_noise_sources_20260929.md",
-        "mathematics/clock_structure_and_noise_scale.md",
+        "mathematics/fixed-map/clock_structure_and_noise_scale.md",
         "literature/critical_noise_sources_20261005.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-FORRESTER-1996"
@@ -387,7 +387,7 @@
         "record/claim_ledger.md",
         "mathematics/trace-bridge/resonant_cubic_density_control.md",
         "literature/resonant_density_sources.md",
-        "mathematics/fixed_degree_heat_projection.md",
+        "mathematics/fixed-map/fixed_degree_heat_projection.md",
         "literature/critical_noise_sources_20261005.md",
         "mathematics/growing_degree_trace_projection.md",
         "literature/growing_degree_sources_20261005.md"
@@ -466,10 +466,10 @@
         "literature/actual_start_dyson_sources_20261004.md",
         "record/circular_kernel_route_20261004.md",
         "computations/verification/coboundary_general_start.py",
-        "mathematics/circular_dyson_actual_start.md",
+        "mathematics/fixed-map/circular_dyson_actual_start.md",
         "computations/verification/circular_dyson_relaxation.py",
         "mathematics/local_moment_transport.md",
-        "mathematics/coboundary_all_order_limit.md"
+        "mathematics/fixed-map/coboundary_all_order_limit.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-KLZF-2022"
     },
@@ -523,7 +523,7 @@
       "checked_on": "2026-10-05",
       "mapping": "The intensity-one sine Fourier projection on [-1/2,1/2] is Hermitian, a positive contraction and locally trace class. Theorem 7 supplies spatial translation ergodicity of its determinantal probability law. Mean ergodic averaging for L2 local factorial observables is used after the internally proved chain moments. The periodic conditional-law Jensen step and order of limits are project proofs; no temporal Dyson ergodicity or deterministic BGS identification is imported.",
       "project_sources": [
-        "mathematics/coboundary_all_order_limit.md",
+        "mathematics/fixed-map/coboundary_all_order_limit.md",
         "literature/all_order_sources_20261005.md",
         "literature/return_local_limits_sources.md",
         "record/claim_ledger.md",
@@ -554,7 +554,7 @@
       "checked_on": "2026-10-05",
       "mapping": "Prior integer-lattice Dyson relaxation kernel and sine attraction, credited as known. Source Brownian spatial time is project Nt/(4 pi^2); transpose the equal-time kernel and shift the uniform lattice phase. FLOW-018 independently derives the finite circular limit, without importing line truncation topology or a new infinite SDE construction.",
       "project_sources": [
-        "mathematics/clock_structure_and_noise_scale.md",
+        "mathematics/fixed-map/clock_structure_and_noise_scale.md",
         "literature/critical_noise_sources_20261005.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-KT-2009"
@@ -738,7 +738,7 @@
       "project_sources": [
         "literature/cat_multiplicity_prior_source.md",
         "mathematics/uniform_cat_multiplicity.md",
-        "mathematics/even_new_sector_first_jet.md"
+        "mathematics/fixed-map/even_new_sector_first_jet.md"
       ],
       "checked_on": "2026-10-06",
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261020.json#EXT-KELMER-2008"
@@ -1015,7 +1015,7 @@
       "checked_on": "2026-10-21",
       "mapping": "Apply through the actual smooth constant-roof suspension: basic hyperbolic attractor with nonvanishing flow, transitive and dense periodic orbits. Equilibrium/Gibbs and geometric-volume facts imply the project strict pressure gap using the explicit fixed multiplier; no mixing-flow assumption. Quantum trace construction remains a separately proved project input.",
       "project_sources": [
-        "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+        "mathematics/fixed-map/fixed_kick_uniform_trace_bound.md",
         "literature/bowen_ruelle_trace_closure_20261021.md",
         "record/spectral_research/trace_closure.md"
       ],

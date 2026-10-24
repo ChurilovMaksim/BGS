@@ -24,7 +24,7 @@ import time
 
 ROOT = Path(__file__).resolve().parents[3]
 BINDING_PATH = 'record/schur_reduction_source_bindings.json'
-BINDING_SHA256 = '553d1427d6eb2bbd41ef81136d476f69182caa7d4791185ec2f65c114fb903d7'
+BINDING_SHA256 = '06ac14e972645d81851959614f30f568f0de36230a69b07439be1129b5450279'
 FAMILIES = {
     'author': {'script': 'computations/verification/schur/author_checks.py',
                'expected': 'archive/evidence/schur_reduction_20261007/raw/author/verified_checks.json',

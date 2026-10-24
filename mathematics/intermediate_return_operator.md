@@ -5,8 +5,8 @@ The frozen original SHA256 is `3f42c4f41f448c221e4dc92495a11caa3b2cd661168f8cd88
 its exact bytes, original status and execution records remain in the
 [provenance map](../archive/evidence/intermediate_old_layers_20261007/input_map.json).
 Inherited [oldform](oldform_tower_compression.md),
-[newest-sector](even_new_sector_first_jet.md), and
-[rank-transfer](algebraic_time_rank_transfer.md) proofs retain their own scopes.
+[newest-sector](fixed-map/even_new_sector_first_jet.md), and
+[rank-transfer](fixed-map/algebraic_time_rank_transfer.md) proofs retain their own scopes.
 The [literal-time theorem owner](literal_time_multiplicity_bounds.md) is the
 only maintained owner of the resulting fixed-time simple-eigenvalue counts.
 

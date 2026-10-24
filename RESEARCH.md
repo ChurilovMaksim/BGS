@@ -5,9 +5,9 @@
 The [review](record/spectral_research/trace_closure.md) closes the inserted-trace input in TRACE-109 by a
 finite-grid corrected-amplitude proof. TRACE-110 now has proved global
 $O(1/\log N)$ spectral matching and a matching Pell lower order.
-[TRACE-112](mathematics/displacement_density_trace_bound_20261021.md) supplies an
+[TRACE-112](mathematics/fixed-map/displacement_density_trace_bound.md) supplies an
 independent logarithmic-time upper-bound route;
-[TRACE-113](mathematics/fixed_kick_uniform_trace_bound_20261021.md) proves the
+[TRACE-113](mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) proves the
 uniform power-trace input with one threshold for all iterates.
 All statements have analytic project proofs with self-review, not external
 refereeing. Microscopic signed cancellation and BGS remain open.
@@ -180,7 +180,7 @@ clock obstructions, signed finite-field collisions and frozen circular laws.
 The maintained odd-dimensional family is
 $U_N=e^{i\tau N A_N}M_N$, $\tau=10^{-80}$, with ordinary Weyl convention and
 cat matrix $\bigl(\begin{smallmatrix}3&4\\2&3\end{smallmatrix}\bigr)$.
-[The model proof](mathematics/fixed_map_resolvent_frontier.md) fixes the symbol,
+[The model proof](mathematics/fixed-map/fixed_map_resolvent_frontier.md) fixes the symbol,
 normalizations, symmetry qualifications and exceptional dimensions.
 
 TRACE-005 asks for signed weighted factorial joint-trace comparison at
@@ -201,12 +201,12 @@ particular frozen propagator must itself be proved.
 
 | Role | Maintained theorem sources | Exact scope |
 |---|---|---|
-| Actual quantum structure | [FM-024 common commutant](mathematics/actual_seven_primary_commutant.md); [FM-025 pure-five family](mathematics/uniform_five_cluster_simplicity.md); [FM-026 multiplicities](mathematics/literal_time_multiplicity_bounds.md) | Pair commutant classified for every odd $N\ge3$ except $N=7$; separate kick-simplicity and literal-time multiplicity bounds. Full $U_N$ simplicity is not inferred from pair irreducibility |
-| Intensity and paths | [FM-021](mathematics/position_chain_mixing.md); [FM-022](mathematics/reversed_path_decay.md); [three-block](mathematics/three_block_unmarking.md) and [four-block](mathematics/four_block_unmarking.md) controls | Eventual constant intensity singular gap, cyclic ramp, reverse-cycle suppression and specified distinct-port reconnections; not all noncyclic interference |
-| Fixed-order Fourier sectors | [TRACE-017 WKB reduction](mathematics/factorial_wkb_reduction.md); [TRACE-019](mathematics/selected_weighted_coefficient.md); [TRACE-020](mathematics/factorial_ordered_diagonal.md); [TRACE-021](mathematics/hamming_low_switch_residual.md) | Complete reduction to named finite-order tables, selected full-weight WKB and ordered-diagonal removal, checksum-free specified low-switch removal; the signed complementary sectors remain |
-| Source and insertion calculus | [TRACE-027](mathematics/weighted_phase_coherence_covariance.md); [TRACE-028](mathematics/right_frame_unmasked_pinch_hierarchy.md); [TRACE-029](mathematics/convex_pinch_weak_noise_and_deconvolution.md) | Qualified growing-window Ward control; complete unmasked separated/convex hierarchy; bounded-parameter signed stability and an actual unsigned logarithmic obstruction |
+| Actual quantum structure | [FM-024 common commutant](mathematics/fixed-map/actual_seven_primary_commutant.md); [FM-025 pure-five family](mathematics/uniform_five_cluster_simplicity.md); [FM-026 multiplicities](mathematics/literal_time_multiplicity_bounds.md) | Pair commutant classified for every odd $N\ge3$ except $N=7$; separate kick-simplicity and literal-time multiplicity bounds. Full $U_N$ simplicity is not inferred from pair irreducibility |
+| Intensity and paths | [FM-021](mathematics/position_chain_mixing.md); [FM-022](mathematics/reversed_path_decay.md); [three-block](mathematics/three_block_unmarking.md) and [four-block](mathematics/fixed-map/four_block_unmarking.md) controls | Eventual constant intensity singular gap, cyclic ramp, reverse-cycle suppression and specified distinct-port reconnections; not all noncyclic interference |
+| Fixed-order Fourier sectors | [TRACE-017 WKB reduction](mathematics/fixed-map/factorial_wkb_reduction.md); [TRACE-019](mathematics/selected_weighted_coefficient.md); [TRACE-020](mathematics/fixed-map/factorial_ordered_diagonal.md); [TRACE-021](mathematics/hamming_low_switch_residual.md) | Complete reduction to named finite-order tables, selected full-weight WKB and ordered-diagonal removal, checksum-free specified low-switch removal; the signed complementary sectors remain |
+| Source and insertion calculus | [TRACE-027](mathematics/weighted_phase_coherence_covariance.md); [TRACE-028](mathematics/right_frame_unmasked_pinch_hierarchy.md); [TRACE-029](mathematics/fixed-map/convex_pinch_weak_noise_and_deconvolution.md) | Qualified growing-window Ward control; complete unmasked separated/convex hierarchy; bounded-parameter signed stability and an actual unsigned logarithmic obstruction |
 | Original common-noise rate | [FM-020](mathematics/original_channel_gap.md) | Two-copy singular gap dominates $N^{-1}$ at $u=N^{-\alpha}$, $0<\alpha<1$. This closes the original-rate question left by FM-018/019, but not nonlinear quenched control, higher-copy rates or deterministic transfer |
-| Noisy local statistics | [FLOW-014](mathematics/circular_dyson_actual_start.md); [FLOW-017](mathematics/coboundary_all_order_limit.md) | Actual-start weak local law on a polynomial schedule; all fixed factorial orders and one-chain origin averages on a different superpolynomial schedule |
+| Noisy local statistics | [FLOW-014](mathematics/fixed-map/circular_dyson_actual_start.md); [FLOW-017](mathematics/fixed-map/coboundary_all_order_limit.md) | Actual-start weak local law on a polynomial schedule; all fixed factorial orders and one-chain origin averages on a different superpolynomial schedule |
 | Reused phase channel | [TRACE-053](mathematics/trace-bridge/max_entry_phase_channel.md) | Full complex endpoint marks, both collision corrections, exact second-degree norm and an explicit max-entry averaged-pinching rate |
 | Rational matrix inner functions | [TRACE-054](mathematics/trace-bridge/sharp_inner_jet.md) | Self-contained noncommuting right-weighted second-jet inequality with optimal leading coefficient $4/3$ and the exact smooth-localization penalty |
 | Real unitary source flow | [TRACE-056](mathematics/trace-bridge/phase_channel_real_flow.md) | Normally absorbed unweighted scalar $L^1$ source transport, including fixed derivatives and repeated eigenvalues; anisotropic sources and mixed products are outside the conclusion |

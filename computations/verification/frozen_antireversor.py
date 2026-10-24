@@ -5,7 +5,7 @@ Only integer/rational arithmetic is used. No eigenvalues, floating-point
 approximations, parameter averages, or statistical simulations occur.
 This is a source-level transcription of the uploaded 24 September 2026
 verify_certificate.py. Its exhaustive cyclotomic screen depends on the
-all-order algebraic reduction in mathematics/frozen_common_antireversor_certificate.md.
+all-order algebraic reduction in mathematics/fixed-map/frozen_common_antireversor_certificate.md.
 
 Run with Python 3.10 or later:
     python -S computations/verification/frozen_antireversor.py \

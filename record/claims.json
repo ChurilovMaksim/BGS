@@ -25,7 +25,7 @@
       "title": "Fixed-strength microscopic BGS universality for the maintained frozen map",
       "state": "open",
       "ledger_status": "OPEN",
-      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "source": "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
       "dependencies": [
         "BGS-FM-001",
         "BGS-FM-002",
@@ -162,7 +162,7 @@
       "title": "Frozen-model classical symmetry theorem",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + FRESH FINITE-REGRESSION",
-      "source": "mathematics/fixed_model_symmetry_theorem.md",
+      "source": "mathematics/fixed-map/fixed_model_symmetry_theorem.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -180,7 +180,7 @@
       "title": "Odd-Pell full-symbol Gaussian crossover",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + FRESH FINITE-REGRESSION",
-      "source": "mathematics/fixed_model_pell_crossover.md",
+      "source": "mathematics/fixed-map/fixed_model_pell_crossover.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -203,7 +203,7 @@
       "title": "Fixed-map moment controls, falsifier, and perturbation transfer",
       "state": "proved",
       "ledger_status": "EXACT IDENTITIES / PROJECT ASYMPTOTIC CONSEQUENCES + FRESH REGRESSION",
-      "source": "mathematics/fixed_map_moment_control_and_transfer.md",
+      "source": "mathematics/fixed-map/fixed_map_moment_control_and_transfer.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -241,7 +241,7 @@
       "title": "Actual frozen-kick Jacobi decomposition and exact low-rank obstruction",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + SELF-REVIEW + FINITE FLOAT DIAGNOSTICS (SVD AT t=0.4; NOT FROZEN-TAU NUMERICS)",
-      "source": "mathematics/frozen_kick_rank_boundary.md",
+      "source": "mathematics/fixed-map/frozen_kick_rank_boundary.md",
       "dependencies": [],
       "external_dependencies": [
         "EXT-EV-2015"
@@ -313,7 +313,7 @@
       "title": "Total nonvanishing of frozen metaplectic minors and qualitative fixed-time spectral simplicity",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + FRESH INDEPENDENT INTERNAL AUDIT + PRIMARY LW STATEMENT/APPLICATION CHECK + EXACT INDEPENDENT FINITE CONTROLS (FINITE RANGES ONLY; 7|N MODEL BRANCH NOT EXERCISED)",
-      "source": "mathematics/frozen_algebraic_spectral_simplicity.md",
+      "source": "mathematics/fixed-map/frozen_algebraic_spectral_simplicity.md",
       "dependencies": [
         "BGS-FM-005"
       ],
@@ -342,7 +342,7 @@
       "title": "Exact commutator-cube obstruction to common antiunitary reversal",
       "state": "proved",
       "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF + EXACT INTEGER REPLAY + AUTHOR SELF-REVIEW",
-      "source": "mathematics/frozen_common_antireversor_certificate.md",
+      "source": "mathematics/fixed-map/frozen_common_antireversor_certificate.md",
       "dependencies": [
         "BGS-FM-001"
       ],
@@ -368,7 +368,7 @@
       "title": "Nonvanishing of every fixed-model power trace and classification of scalar returns",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + CLASSICAL FIXED-POINT INTEGER REGRESSION (Tr(U_N^m) NOT EVALUATED) + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR SELF-REVIEW",
-      "source": "mathematics/frozen_arithmetic_trace_rigidity.md",
+      "source": "mathematics/fixed-map/frozen_arithmetic_trace_rigidity.md",
       "dependencies": [
         "BGS-FM-001",
         "BGS-FM-008"
@@ -402,7 +402,7 @@
       "title": "Effective but submicroscopic eigenphase gap floor at the frozen algebraic coupling",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + CHECKED PRIMARY ROY THEOREM + AUTHOR SELF-REVIEW",
-      "source": "mathematics/frozen_effective_gap_floor.md",
+      "source": "mathematics/fixed-map/frozen_effective_gap_floor.md",
       "dependencies": [
         "BGS-FM-008"
       ],
@@ -457,7 +457,7 @@
       "title": "Full mixed loop hierarchy implies target compact anchored correlations",
       "state": "conditional",
       "ledger_status": "EXACT + EXTERNAL-THEOREM",
-      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "source": "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
       "dependencies": [
         "BGS-TRACE-002",
         "BGS-FM-007"
@@ -584,7 +584,7 @@
       "title": "Exact adjoint-resolvent representation and pair-Abel equivalence",
       "state": "proved",
       "ledger_status": "FINITE-N IDENTITY + PROJECT DERIVATION; COMPUTATIONAL CONTROL IS FLOAT64 FINITE-N REGRESSION, NOT EXACT",
-      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "source": "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -602,7 +602,7 @@
       "title": "Smooth scalar-resolvent transfer between the original and seven-cut full propagators",
       "state": "proved",
       "ledger_status": "PROJECT DERIVATION FROM FM-007 AND RES-006 + AUTHOR SELF-REVIEW",
-      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "source": "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
       "dependencies": [
         "BGS-FM-007",
         "BGS-RES-006"
@@ -771,7 +771,7 @@
       "title": "Universal sharp Abel lower bound attained by the clock spectrum",
       "state": "proved",
       "ledger_status": "EXACT + CHECKED COHN–KUMAR THEOREM 1.2",
-      "source": "mathematics/fixed_map_resolvent_frontier.md",
+      "source": "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
       "dependencies": [],
       "external_dependencies": [
         "EXT-CK-2006"
@@ -827,7 +827,7 @@
       "title": "Uniform finite coboundary eigenphase-flow bound and sharpness sequence",
       "state": "proved",
       "ledger_status": "EXACT FINITE-N PROJECT PROOF + FINITE CONTROLS + AUTHOR SELF-REVIEW",
-      "source": "mathematics/coboundary_spectral_flow_bound.md",
+      "source": "mathematics/fixed-map/coboundary_spectral_flow_bound.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -845,7 +845,7 @@
       "title": "Coboundary kicks have sine curvature but no infinitesimal Dyson diffusion",
       "state": "proved",
       "ledger_status": "EXACT FINITE-N PROJECT CALCULATION + FINITE GUE-BASIS CHECK + AUTHOR SELF-REVIEW",
-      "source": "mathematics/coboundary_spectral_flow_bound.md",
+      "source": "mathematics/fixed-map/coboundary_spectral_flow_bound.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -863,7 +863,7 @@
       "title": "Exact all-time periodic-point grids and physical-symbol averages for the fixed linear cat",
       "state": "proved",
       "ledger_status": "ELEMENTARY PROJECT PROOF + EXACT FINITE REGRESSION + AUTHOR-LEVEL AUDIT",
-      "source": "mathematics/frozen_periodic_point_annihilator.md",
+      "source": "mathematics/fixed-map/frozen_periodic_point_annihilator.md",
       "dependencies": [
         "BGS-FM-001"
       ],
@@ -1006,7 +1006,7 @@
       "title": "Bounded fixed-time traces for the unchanged odd-dimensional frozen map",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT FRAME AND FINITE CONVENTION CONTROLS",
-      "source": "mathematics/fixed_time_wavepacket_trace_bound.md",
+      "source": "mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md",
       "dependencies": [
         "BGS-FM-001"
       ],
@@ -1033,7 +1033,7 @@
     {
       "id": "BGS-FLOW-008",
       "title": "Exact fourth-order drift of Gaussian coboundary steps",
-      "source": "mathematics/coboundary_fourth_order_drift.md",
+      "source": "mathematics/fixed-map/coboundary_fourth_order_drift.md",
       "dependencies": [
         "BGS-FLOW-003"
       ],
@@ -1056,7 +1056,7 @@
     {
       "id": "BGS-FLOW-009",
       "title": "Mobius spectral reduction and iterated clock-to-Sine limit for uncentered coboundary kicks",
-      "source": "mathematics/coboundary_mobius_diffusion.md",
+      "source": "mathematics/fixed-map/coboundary_mobius_diffusion.md",
       "dependencies": [
         "BGS-FLOW-003",
         "BGS-FLOW-004",
@@ -1082,7 +1082,7 @@
     {
       "id": "BGS-FLOW-010",
       "title": "Dimension-quantitative simultaneous clock-to-Sine limit for uncentered Gaussian coboundary kicks",
-      "source": "mathematics/coboundary_joint_limit.md",
+      "source": "mathematics/fixed-map/coboundary_joint_limit.md",
       "dependencies": [
         "BGS-FLOW-003",
         "BGS-FLOW-004",
@@ -1111,7 +1111,7 @@
       "title": "Polynomial-step original Gaussian coboundary joint limit with dimension-uniform derivatives",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL CHECK OF NEW ESTIMATES + EXACT ALGEBRA AND FINITE CONTROLS",
-      "source": "mathematics/coboundary_polynomial_limit.md",
+      "source": "mathematics/fixed-map/coboundary_polynomial_limit.md",
       "dependencies": [
         "BGS-FLOW-003",
         "BGS-FLOW-007",
@@ -1140,7 +1140,7 @@
       "title": "Uniform finite type and scalar cancellation for translated physical-symbol differences",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
-      "source": "mathematics/frozen_phase_finite_type.md",
+      "source": "mathematics/fixed-map/frozen_phase_finite_type.md",
       "dependencies": [
         "BGS-FM-001"
       ],
@@ -1163,7 +1163,7 @@
       "title": "Explicit classical commutator generating action at the maintained fixed coupling",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
-      "source": "mathematics/frozen_commutator_action.md",
+      "source": "mathematics/fixed-map/frozen_commutator_action.md",
       "dependencies": [
         "BGS-FM-001",
         "BGS-FM-014"
@@ -1294,7 +1294,7 @@
       "title": "Folded-square signed resonant cubic control, explicit root allocation and factorial block-crowding obstruction",
       "state": "proved",
       "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
-      "source": "mathematics/folded_quadratic_resonance_control.md",
+      "source": "mathematics/fixed-map/folded_quadratic_resonance_control.md",
       "dependencies": [
         "BGS-FM-001",
         "BGS-TRACE-001",
@@ -1329,7 +1329,7 @@
         "BGS-FLOW-003"
       ],
       "external_dependencies": [],
-      "source": "mathematics/egorov_overlap_rigidity.md",
+      "source": "mathematics/fixed-map/egorov_overlap_rigidity.md",
       "boundary": "Normalized overlap vanishes when fixed Egorov maps coincide on area zero; operator separation >=sqrt(2) if maps differ at one point. Fixed actual powers exclude affine conjugacy, giving separation after fixed smooth/analytic classical conjugators. Fixed-time trace vanishing and initial noise ellipticity already followed from FM-007; no arbitrary N-dependent basis change or Heisenberg cancellation.",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
@@ -1376,7 +1376,7 @@
       "title": "Polynomial original-coboundary comparison preserving bounded-trace initial data",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + EXACT ALGEBRA AND FINITE CONTROLS",
-      "source": "mathematics/coboundary_general_start.md",
+      "source": "mathematics/fixed-map/coboundary_general_start.md",
       "dependencies": [
         "BGS-FLOW-009",
         "BGS-FLOW-010",
@@ -1402,7 +1402,7 @@
       "title": "Prescribed-time empty Dyson limits from globally uniform bounded-trace simple spectra",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
-      "source": "mathematics/dyson_relaxation_obstruction.md",
+      "source": "mathematics/fixed-map/dyson_relaxation_obstruction.md",
       "dependencies": [
         "BGS-FLOW-012"
       ],
@@ -1427,7 +1427,7 @@
       "title": "Logarithmic initial Poisson regularity, local heat-phase saddles and unweighted vertical tails",
       "state": "proved",
       "ledger_status": "PROJECT COROLLARY OF FM-007 + INDEPENDENT INTERNAL CHECK OF NEW ESTIMATES + FINITE CONTROLS",
-      "source": "mathematics/frozen_mesoscopic_regularity.md",
+      "source": "mathematics/fixed-map/frozen_mesoscopic_regularity.md",
       "dependencies": [
         "BGS-FM-007",
         "BGS-FM-013",
@@ -1454,7 +1454,7 @@
       "title": "Gap-independent circular Dyson relaxation and original-chain Sine_2 from the actual frozen start",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + EXTERNAL FINITE-KERNEL INPUT + INDEPENDENT INTERNAL CHECK OF NEW ANALYTIC IMPLICATIONS + FINITE IDENTITY CONTROLS",
-      "source": "mathematics/circular_dyson_actual_start.md",
+      "source": "mathematics/fixed-map/circular_dyson_actual_start.md",
       "dependencies": [
         "BGS-FM-017",
         "BGS-FLOW-012"
@@ -1537,7 +1537,7 @@
       "title": "All fixed factorial orders and one-chain L2 signed CUE comparison for the actual-start original coboundary chain",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + EXTERNAL SPATIAL ERGODICITY + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
-      "source": "mathematics/coboundary_all_order_limit.md",
+      "source": "mathematics/fixed-map/coboundary_all_order_limit.md",
       "dependencies": [
         "BGS-FLOW-016",
         "BGS-FLOW-010",
@@ -1569,7 +1569,7 @@
       "title": "Exact clock covariance, sharp signed pair relaxation and all-order critical noise law",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + PRIOR CLOCK KERNEL + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
-      "source": "mathematics/clock_structure_and_noise_scale.md",
+      "source": "mathematics/fixed-map/clock_structure_and_noise_scale.md",
       "dependencies": [
         "BGS-FLOW-007",
         "BGS-FLOW-015",
@@ -1600,7 +1600,7 @@
       "title": "Actual fixed-degree neutral projections: vanishing heat defects and projected compact CUE rate",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + PRIOR STABLE HAAR TRACE MOMENTS + INDEPENDENT INTERNAL CHECK OF NEW IMPLICATIONS + FINITE CONTROLS",
-      "source": "mathematics/fixed_degree_heat_projection.md",
+      "source": "mathematics/fixed-map/fixed_degree_heat_projection.md",
       "dependencies": [
         "BGS-FLOW-015",
         "BGS-FM-013",
@@ -1686,7 +1686,7 @@
       "title": "Actual Weyl-frequency coercivity, regularized singular gap and exact common-noise two-copy invariant space",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + CHECKED EXTERNAL CLASSICAL MIXING + INHERITED FM-001/FM-006 + INDEPENDENT INTERNAL REVIEW + EXACT FINITE AND WOLFRAM CONTROLS",
-      "source": "mathematics/frozen_operator_transfer_coercivity.md",
+      "source": "mathematics/fixed-map/frozen_operator_transfer_coercivity.md",
       "dependencies": [
         "BGS-FM-001",
         "BGS-FM-006"
@@ -1716,7 +1716,7 @@
       "title": "Uniform two-copy collective diffusion gap and refined common-noise Heisenberg mass",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INHERITED WEYL/GAUSSIAN AND ONE-STEP EGOROV INPUT + INDEPENDENT INTERNAL REVIEW + EXACT FINITE CONTROLS; FLOATING DIAGNOSTICS SEPARATE",
-      "source": "mathematics/collective_diffusion_gap.md",
+      "source": "mathematics/fixed-map/collective_diffusion_gap.md",
       "dependencies": [
         "BGS-FM-018"
       ],
@@ -1812,8 +1812,8 @@
       "source": "mathematics/position_chain_mixing.md",
       "boundary": "Unchanged fixed tau=10^-80, all sufficiently large odd N: limsup ||P-J||<=10^-64 and ||P^L-J||<=2^-L simultaneously for every integer L>=0. Cyclic-identical path contribution D_m/m tends to one uniformly on positive compact Heisenberg bands. The explicitly defined distinct-port marked three-link expression is exponentially suppressed including zero link lengths. This is not a once-counted unmarked trace-pair theorem: representation multiplicities vary and canonical masks can destroy free-endpoint cancellation. Startup not effective; general signed noncyclic remainder, all higher factorial orders, TRACE-005 and BGS remain open. No world priority or external referee certificate.",
       "proof_dependencies": [
-        "mathematics/fixed_map_path_model.md",
-        "mathematics/four_branch_parametrix.md"
+        "mathematics/fixed-map/fixed_map_path_model.md",
+        "mathematics/fixed-map/four_branch_parametrix.md"
       ]
     },
     {
@@ -1840,8 +1840,8 @@
       "source": "mathematics/reversed_path_decay.md",
       "boundary": "Unchanged fixed tau=10^-80 through odd N: Q_xy=U_xy conjugate(U_yx) has operator norm tending to zero. The exact ordered reverse-cyclic family, excluding cyclic pairs, is negligible after division by m uniformly on every fixed positive Heisenberg band. Direct four-branch finite-difference parametrix and alias-safe discrete TT* are essential; no rate or effective startup is supplied. Other noncyclic pairs and higher factorial comparison remain open. No deterministic BGS, world priority, external referee or analytic formalization claim.",
       "proof_dependencies": [
-        "mathematics/fixed_map_path_model.md",
-        "mathematics/four_branch_parametrix.md"
+        "mathematics/fixed-map/fixed_map_path_model.md",
+        "mathematics/fixed-map/four_branch_parametrix.md"
       ]
     },
     {
@@ -1901,7 +1901,7 @@
       "title": "Once-counted reduced distinct-port four-block signed cancellation",
       "state": "proved",
       "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW + COMPUTER-ASSISTED CLASSIFICATION INPUT; ANALYTIC CHAIN UNFORMALIZED",
-      "source": "mathematics/four_block_unmarking.md",
+      "source": "mathematics/fixed-map/four_block_unmarking.md",
       "dependencies": [
         "BGS-FM-021",
         "BGS-FORMAL-002"
@@ -1925,7 +1925,7 @@
       ],
       "boundary": "Unitary family with q<=C/N and eventual all-length ||P^L-J||<=2^-L; actual fixed tau=10^-80 through FM-021. Once-counted ordered pairs admitting nonempty reduced four-block reversal with pairwise distinct initial values, all link lengths, smooth compact positive Heisenberg bands. Error O_w((log N)^10/N) plus superpolynomial/exponential terms. Universal rank-two classification uses an audited mathematical reduction and a bounded kernel; FORMAL-002 certifies only that kernel, not compression or this analytic theorem. Repeated ports, general or growing reconnections, overlaps between families and full signed statistics remain open. Coarse hypotheses are not a universality criterion by the rounding obstruction. No effective startup, world priority or external referee claim.",
       "proof_dependencies": [
-        "mathematics/four_cut_rank_two_classification.md"
+        "mathematics/fixed-map/four_cut_rank_two_classification.md"
       ]
     },
     {
@@ -1933,7 +1933,7 @@
       "title": "Bounded rank-two four-cut executable certificate",
       "state": "proved",
       "ledger_status": "FINITE-CERTIFICATE",
-      "source": "mathematics/four_cut_rank_two_classification.md",
+      "source": "mathematics/fixed-map/four_cut_rank_two_classification.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -1960,7 +1960,7 @@
       "title": "Actual fixed-order WKB instantiation of the complete factorial trace reduction",
       "state": "proved",
       "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW; ANALYTIC CHAIN UNFORMALIZED",
-      "source": "mathematics/factorial_wkb_reduction.md",
+      "source": "mathematics/fixed-map/factorial_wkb_reduction.md",
       "dependencies": [
         "BGS-FM-001",
         "BGS-TRACE-001",
@@ -1968,7 +1968,7 @@
       ],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/four_branch_parametrix.md",
+        "mathematics/fixed-map/four_branch_parametrix.md",
         "mathematics/trace-bridge/trace_to_local_statistics_bridge.md",
         "mathematics/trace-bridge/heisenberg_trace_support.md"
       ],
@@ -1995,7 +1995,7 @@
       ],
       "boundary": "For each fixed k>=2 and compact smooth Fourier weight choose fixed J>=k; full partition transform changes by O(N^(k-J-1/2)). Laurent and adjoint signed tables are distinct. No positive spectral process for nonunitary V; no growing k,J,bandwidth or effective startup. Ensemble comparison is equivalent but remains open. Exact reciprocity and local resummation are separate supporting results. The separately reviewed global rotated-box theorem controls a finite-band contour representation and summed tail, conservatively m<=2N; signed box evaluation, entropy-compatible local remainders and unrestricted bands remain open. TRACE-005 and BGS-BGS-001 remain OPEN.",
       "supporting_results": [
-        "mathematics/exact_gaussian_reciprocity.md",
+        "mathematics/fixed-map/exact_gaussian_reciprocity.md",
         "mathematics/uniform_cluster_lemma.md",
         "mathematics/rotated_local_first_loop.md",
         "mathematics/polar_wkb_quantization_stability.md",
@@ -2008,7 +2008,7 @@
       "title": "Actual scalar joint commutant in every odd dimension except seven",
       "state": "proved",
       "ledger_status": "EXACT COMBINED PROJECT PROOF + INDEPENDENT INTERNAL COMPONENT REVIEWS; FRESH FM-008 r1 LEAF AUDIT; LITERAL-U COROLLARY RETAINS LW",
-      "source": "mathematics/actual_seven_primary_commutant.md",
+      "source": "mathematics/fixed-map/actual_seven_primary_commutant.md",
       "dependencies": [
         "BGS-FM-001",
         "BGS-FM-008"
@@ -2052,7 +2052,7 @@
       ],
       "boundary": "Actual scalar complex joint commutant of (A_N,M_N) for every odd N>=3 except genuine N=7. Explicit combination of the separately reviewed seven-primary families with prior FM-008, whose r1 pair-commutant leaf now has fresh independent internal review and uses no LW. At N=7, A7=(9/10)I and the separately reviewed characteristic-zero raw identities give multiplicities (3,2,2) and complex commutant dimension 17; no residue lifting. Literal-U corollary remains algebraic-entry-only via existing LW input. No full complex scalar U commutant, seven-divisible spectral simplicity, quantitative gap, BGS or new formalization.",
       "proof_dependencies": [
-        "mathematics/actual_first_seven_commutant.md",
+        "mathematics/fixed-map/actual_first_seven_commutant.md",
         "mathematics/ramified_first_seven_commutant.md",
         "mathematics/ramified_higher_seven_commutant.md"
       ],
@@ -2095,7 +2095,7 @@
       ],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/four_branch_parametrix.md",
+        "mathematics/fixed-map/four_branch_parametrix.md",
         "mathematics/paired_character_identity.md",
         "mathematics/phase_map_frostman.md"
       ],
@@ -2128,7 +2128,7 @@
         "EXT-POPESCU-2023"
       ],
       "proof_dependencies": [
-        "mathematics/finite_seven_spectral_pivots.md"
+        "mathematics/fixed-map/finite_seven_spectral_pivots.md"
       ],
       "evidence": [
         "archive/record/uniform_five_cluster_review.md",
@@ -2167,7 +2167,7 @@
         "mathematics/physical_homoclinic_weights.md",
         "mathematics/quantum_homoclinic_first_loop.md",
         "mathematics/weighted_periodic_equidistribution.md",
-        "mathematics/exact_homoclinic_potential.md",
+        "mathematics/fixed-map/exact_homoclinic_potential.md",
         "mathematics/stationary_cyclic_residual.md"
       ],
       "evidence": [
@@ -2196,16 +2196,16 @@
       "title": "Ordered-diagonal factorial sector and scoped collective trace reductions",
       "state": "proved",
       "ledger_status": "EXACT PROJECT PROOFS + INDEPENDENT GENERAL/MIXED/ORDERED/COLLECTIVE REVIEWS + EXACT FINITE CONTROLS; NAMED ACTUAL FM-021 INPUTS INHERITED",
-      "source": "mathematics/factorial_ordered_diagonal.md",
+      "source": "mathematics/fixed-map/factorial_ordered_diagonal.md",
       "dependencies": [
         "BGS-FM-021",
         "BGS-TRACE-002"
       ],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/collective_occupation_hierarchy.md",
+        "mathematics/fixed-map/collective_occupation_hierarchy.md",
         "mathematics/mixed_ordered_diagonal.md",
-        "mathematics/collective_projector_residual.md",
+        "mathematics/fixed-map/collective_projector_residual.md",
         "mathematics/quadratic_occupation_sector.md",
         "mathematics/quadratic_cycle_interface.md",
         "mathematics/quadratic_slow_source.md",
@@ -2253,15 +2253,15 @@
         "EXT-POPESCU-2023"
       ],
       "proof_dependencies": [
-        "mathematics/algebraic_time_rank_transfer.md",
+        "mathematics/fixed-map/algebraic_time_rank_transfer.md",
         "mathematics/uniform_cat_multiplicity.md",
         "mathematics/oldform_tower_compression.md",
-        "mathematics/even_oldform_second_jet.md",
+        "mathematics/fixed-map/even_oldform_second_jet.md",
         "mathematics/odd_oldform_second_jet.md",
-        "mathematics/even_new_sector_first_jet.md",
-        "mathematics/finite_cat_first_jet.md",
-        "mathematics/even_oldform_first_order_obstruction.md",
-        "mathematics/first_old_layer_classification.md",
+        "mathematics/fixed-map/even_new_sector_first_jet.md",
+        "mathematics/fixed-map/finite_cat_first_jet.md",
+        "mathematics/fixed-map/even_oldform_first_order_obstruction.md",
+        "mathematics/fixed-map/first_old_layer_classification.md",
         "mathematics/intermediate_return_operator.md",
         "mathematics/residual25_affine_dictionary.md",
         "mathematics/odd_newest_sector_first_jet.md",
@@ -2318,13 +2318,13 @@
       ],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/balanced_hamming_hierarchy.md",
-        "mathematics/balanced_hamming_growth.md",
-        "mathematics/fractional_hamming_cancellation.md",
+        "mathematics/fixed-map/balanced_hamming_hierarchy.md",
+        "mathematics/fixed-map/balanced_hamming_growth.md",
+        "mathematics/fixed-map/fractional_hamming_cancellation.md",
         "mathematics/macroscopic_coordinate_translation.md",
-        "mathematics/all_coordinate_translation.md",
+        "mathematics/fixed-map/all_coordinate_translation.md",
         "mathematics/low_switch_offcharge_family.md",
-        "mathematics/fourier_half_radius_obstruction.md",
+        "mathematics/fixed-map/fourier_half_radius_obstruction.md",
         "mathematics/symplectic_half_radius_obstruction.md",
         "mathematics/checksum_free_residual.md",
         "mathematics/global_switch_transfer.md",
@@ -2380,7 +2380,7 @@
       "proof_dependencies": [
         "mathematics/onestep_charge_gap.md",
         "mathematics/global_switch_transfer.md",
-        "mathematics/four_branch_parametrix.md"
+        "mathematics/fixed-map/four_branch_parametrix.md"
       ],
       "evidence": [
         "record/charge_strengthening_dependency_contract.json",
@@ -2465,8 +2465,8 @@
       ],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/actual_charge_radial_shell.md",
-        "mathematics/actual_charge_radial_resolvent.md"
+        "mathematics/fixed-map/actual_charge_radial_shell.md",
+        "mathematics/fixed-map/actual_charge_radial_resolvent.md"
       ],
       "evidence": [
         "evidence/research_checkpoint_20261007/raw/bgs_astra_signed_boundary/radial_review/review.md",
@@ -2556,7 +2556,7 @@
       "title": "Actual unmasked occupation-subtracted q1 one-pinch disappearance",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL MATHEMATICAL REVIEW",
-      "source": "mathematics/actual_one_pinch_disappearance.md",
+      "source": "mathematics/fixed-map/actual_one_pinch_disappearance.md",
       "dependencies": [
         "BGS-FM-027",
         "BGS-FM-021",
@@ -2717,7 +2717,7 @@
       "proof_dependencies": [
         "mathematics/phase_ward_identity.md",
         "mathematics/actual_body_coercivity_constants.md",
-        "mathematics/four_branch_parametrix.md",
+        "mathematics/fixed-map/four_branch_parametrix.md",
         "evidence/wave2_checked_20261007/raw/ward_covariance/input/weighted_coherence.md"
       ],
       "evidence": [
@@ -2749,8 +2749,8 @@
       "proof_dependencies": [
         "archive/evidence/wave3_checked_20261007/raw/right_overlap/authorized_exports/right_overlap_and_unmasked_insertions.md",
         "archive/evidence/wave3_checked_20261007/raw/right_overlap/authorized_exports/transpose_reduction.md",
-        "mathematics/four_branch_parametrix.md",
-        "mathematics/actual_charge_radial_shell.md"
+        "mathematics/fixed-map/four_branch_parametrix.md",
+        "mathematics/fixed-map/actual_charge_radial_shell.md"
       ],
       "evidence": [
         "archive/evidence/wave3_checked_20261007/raw/right_overlap/independent_review.md",
@@ -2773,7 +2773,7 @@
     {
       "id": "BGS-TRACE-029",
       "title": "Complete convex weak-noise stability and actual unsigned logarithmic deconvolution obstruction",
-      "source": "mathematics/convex_pinch_weak_noise_and_deconvolution.md",
+      "source": "mathematics/fixed-map/convex_pinch_weak_noise_and_deconvolution.md",
       "dependencies": [
         "BGS-TRACE-028",
         "BGS-FM-021",
@@ -4687,7 +4687,7 @@
       "title": "Balanced phase and quantum controllability for odd N",
       "state": "proved",
       "ledger_status": "PROJECT PROOF (SELF-CONTAINED) + FINITE-REGRESSION",
-      "source": "mathematics/balanced_phase_controllability.md",
+      "source": "mathematics/fixed-map/balanced_phase_controllability.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -4912,7 +4912,7 @@
       "title": "Quartic diagonal coordinate return with explicit fixed-coupling remainder",
       "state": "proved",
       "ledger_status": "ANALYTIC AUTHOR PROOF + SELF-REVIEW",
-      "source": "mathematics/coordinate_return_quartic_20261021.md",
+      "source": "mathematics/fixed-map/coordinate_return_quartic.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
@@ -4993,7 +4993,7 @@
       "title": "Uniform classical displacement density and independent logarithmic global spectral comparison",
       "state": "proved",
       "ledger_status": "ANALYTIC PROOF + ADVERSARIAL SELF-REVIEW",
-      "source": "mathematics/displacement_density_trace_bound_20261021.md",
+      "source": "mathematics/fixed-map/displacement_density_trace_bound.md",
       "dependencies": [
         "BGS-TRACE-106"
       ],
@@ -5015,7 +5015,7 @@
       "title": "Uniform original-family power-trace bound from continuous Gaussian scalar and strict pressure gap",
       "state": "proved",
       "ledger_status": "ANALYTIC PROOF + ADVERSARIAL SELF-REVIEW",
-      "source": "mathematics/fixed_kick_uniform_trace_bound_20261021.md",
+      "source": "mathematics/fixed-map/fixed_kick_uniform_trace_bound.md",
       "dependencies": [],
       "external_dependencies": [
         "EXT-BR-1975"

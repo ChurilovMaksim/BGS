@@ -6,7 +6,7 @@ is complete; see record/coordinate_translation_review.md. The full off-charge de
 
 ## 1. Exact selected family and theorem
 
-Use the unchanged matrices of `mathematics/fixed_map_path_model.md` in the
+Use the unchanged matrices of `mathematics/fixed-map/fixed_map_path_model.md` in the
 canonical BGS repository. All matrix norms in this note are ordinary induced
 l2 norms. Indices in U_N are modulo N. For c in Z/N define
 

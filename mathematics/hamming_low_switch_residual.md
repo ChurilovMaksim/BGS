@@ -11,7 +11,7 @@ as TRACE-021; the fixed-k factorial statement TRACE-020 is unchanged.
 
 Use the unnormalized Hilbert-Schmidt conventions and genuine centered
 balanced projector P_r of
-[fractional_hamming_cancellation.md](fractional_hamming_cancellation.md).
+[fractional_hamming_cancellation.md](fixed-map/fractional_hamming_cancellation.md).
 For rooted cyclic coordinate words x,y in (Z/N)^m, define
 
     c_j = y_j-x_j mod N,
@@ -117,7 +117,7 @@ to O_low; the balanced radius still needs both inequalities (S3).
 
 The synthesis inherits the fractional-Hamming analytic inputs FM-021 and
 Haar tail O5/C9, and additionally the accepted all-translation power theorem
-[all_coordinate_translation.md](all_coordinate_translation.md) through
+[all_coordinate_translation.md](fixed-map/all_coordinate_translation.md) through
 [low_switch_offcharge_family.md](low_switch_offcharge_family.md), L8-L9.
 Low-switch diagonal-run decay explicitly requires BOTH uniform nonzero-charge
 all-translation powers and FM-021 for zero-charge runs. The inherited

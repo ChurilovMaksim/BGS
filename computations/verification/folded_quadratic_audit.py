@@ -396,7 +396,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
     args = parser.parse_args()
-    paths = ['mathematics/folded_quadratic_resonance_control.md',
+    paths = ['mathematics/fixed-map/folded_quadratic_resonance_control.md',
              'computations/verification/folded_quadratic_audit.py']
     data = {'schema':'bgs-folded-quadratic-audit-v1','status':'PASS',
             'arithmetic':['integer/Fraction','SymPy exact algebra','complex128 FFT and Gaussian sums'],

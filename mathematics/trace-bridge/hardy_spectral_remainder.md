@@ -278,8 +278,8 @@ The checker uses this bound and corresponding explicit bounds for the rational t
 Sources read:
 
 - Supplied bgs_bounded_secular_2026-10-15/THEOREM.md, especially its bounded ratio, CUE calibration, and unchanged physical target.
-- ChurilovMaksim/BGS, mathematics/fixed_map_resolvent_frontier.md, its already proved TRACE-007 Abel floor and Cohn-Kumar proof.
-- ChurilovMaksim/BGS, mathematics/fixed_time_wavepacket_trace_bound.md, the precise fixed-j scope of FM-013.
+- ChurilovMaksim/BGS, mathematics/fixed-map/fixed_map_resolvent_frontier.md, its already proved TRACE-007 Abel floor and Cohn-Kumar proof.
+- ChurilovMaksim/BGS, mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md, the precise fixed-j scope of FM-013.
 - ChurilovMaksim/BGS, mathematics/polar_wkb_quantization_stability.md, for the boundary of prior spectral-transfer methods (no WKB endpoint limit is imported).
 - Conrey, Farmer, Zirnbauer, arXiv:math-ph/0511024, for established Haar ratio identities.
 

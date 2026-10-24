@@ -54,7 +54,7 @@ rendered in full in the [claim registry](record/claim_registry.md).
 
 | Claim | Title | Authoritative source |
 |---|---|---|
-| `BGS-BGS-001` | Fixed-strength microscopic BGS universality for the maintained frozen map | [mathematics/fixed_map_resolvent_frontier.md](mathematics/fixed_map_resolvent_frontier.md) |
+| `BGS-BGS-001` | Fixed-strength microscopic BGS universality for the maintained frozen map | [mathematics/fixed-map/fixed_map_resolvent_frontier.md](mathematics/fixed-map/fixed_map_resolvent_frontier.md) |
 | `BGS-CAYLEY-005` | Sharp centered pointwise Cayley energy target | [mathematics/open_questions.md](mathematics/open_questions.md) |
 | `BGS-INFO-001` | Full vanishing-noise tomography transition | [mathematics/open_questions.md](mathematics/open_questions.md) |
 | `BGS-RES-003` | All-members analytic resonance nondegeneracy | [mathematics/open_questions.md](mathematics/open_questions.md) |
@@ -73,7 +73,7 @@ is [`ERRATA.md`](ERRATA.md).
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-23**.
 It records 94 follow-on claims adopted after
-wave 3 and 83 historical claim
+wave 3 and 91 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 18 external IDs.
 

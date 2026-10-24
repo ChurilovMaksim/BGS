@@ -288,9 +288,9 @@ def main():
           'matrix':matrix_checks(coefficients),'cue':cue_checks(),
           'digits':digit_checks(),'fejer':fejer_checks(),
           'non_claims':['asymptotic finite-type proof','Cohen FUP theorem','quantum FIO identification','deterministic CUE','priority or independent refereeing']}
-    sources=['computations/verification/heisenberg_note_audit.py','mathematics/frozen_phase_finite_type.md',
+    sources=['computations/verification/heisenberg_note_audit.py','mathematics/fixed-map/frozen_phase_finite_type.md',
              'mathematics/offdiagonal_digit_fup.md','mathematics/trace-bridge/heisenberg_trace_support.md',
-             'mathematics/frozen_commutator_action.md',
+             'mathematics/fixed-map/frozen_commutator_action.md',
              'supplement/fixed_map/report-audit/verify.py']
     data['source_sha256']={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in sources}
     if args.output:

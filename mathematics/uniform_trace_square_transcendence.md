@@ -5,7 +5,7 @@ Date: 6 October 2026. Status: **exact computer-assisted project proof with indep
 ## Claim, dependencies, and prior ownership
 
 Keep the actual raw modular quantization in
-`mathematics/fixed_model_symmetry_theorem.md`, without changing its symbol,
+`mathematics/fixed-map/fixed_model_symmetry_theorem.md`, without changing its symbol,
 midpoint convention, coupling, dimension sequence, or normalization. For
 every odd integer N≥3, let
 

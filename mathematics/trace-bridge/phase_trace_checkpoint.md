@@ -88,8 +88,8 @@ asymptotic statements. The subsequently reviewed ordinary stratum centering is l
 
 ## BGS-FM-028: actual q=1, theta=0 radial boundary theorem
 
-The reviewed [radial shell](../actual_charge_radial_shell.md) and
-[resolvent addendum](../actual_charge_radial_resolvent.md) prove collective
+The reviewed [radial shell](../fixed-map/actual_charge_radial_shell.md) and
+[resolvent addendum](../fixed-map/actual_charge_radial_resolvent.md) prove collective
 compactness of the entire charge pinching in the ordinary-Weyl embedding.
 Actual classical mixing and one-step Egorov imply that the pinching and its
 adjoint annihilate every centered Ad(U_N) quasimode whose residual tends to
@@ -195,7 +195,7 @@ limit. The sealed independent review and 79 exact controls are preserved in
 
 ## Reviewed Wave2 continuation
 
-[BGS-TRACE-024](../actual_one_pinch_disappearance.md) closes the actual unmasked q=1 smooth signed occupation-subtracted one-pinch aggregate, combining actual fixed-lag displacement overlap and annealed deletion. Bounded weights apply only to the positive aggregate; the annealed consecutive-block extension does not assert positive block-hierarchy closure. FM-028 C4 and TRACE-023 Abel (A) enter only the annealed leaf. There is no aggregate rate, growing-lag estimate or arbitrary masked/separated-insertion extension.
+[BGS-TRACE-024](../fixed-map/actual_one_pinch_disappearance.md) closes the actual unmasked q=1 smooth signed occupation-subtracted one-pinch aggregate, combining actual fixed-lag displacement overlap and annealed deletion. Bounded weights apply only to the positive aggregate; the annealed consecutive-block extension does not assert positive block-hierarchy closure. FM-028 C4 and TRACE-023 Abel (A) enter only the annealed leaf. There is no aggregate rate, growing-lag estimate or arbitrary masked/separated-insertion extension.
 
 [BGS-FM-031](../ordinary_compact_stratum_centering.md) gives ordinary stable-stratum centering and complete signed-source cutoff/derivative bounds at fixed odd N>=3, a.e., with original normalized measures. [BGS-TRACE-025](../rounding_simple_spectrum_endpoint_barriers.md) supplies qualified changed-family rounding/splitting barriers, requiring a separating property or estimate rather than a prescribed proof method.
 
@@ -211,4 +211,4 @@ Literal masked T16, the masked insertion/source-extraction/deconvolution hierarc
 
 ## Reviewed Wave3 unmasked closure
 
-[TRACE-028](../right_frame_unmasked_pinch_hierarchy.md) closes the complete unmasked separated/convex hierarchy via actual RIGHT-frame control and a new centered three-pinch Schatten tail. [TRACE-029](../convex_pinch_weak_noise_and_deconvolution.md) gives complete signed bounded-u stability and exact deconvolution bounds, while the actual full unsigned deconvolved correction diverges in the required large-log window. The identity cancels in signed occupation subtraction; masks/extraction, signed boundary deconvolution, undamped zero insertion, T16, balanced identification, Ward(13), TRACE005 and BGS remain OPEN.
+[TRACE-028](../right_frame_unmasked_pinch_hierarchy.md) closes the complete unmasked separated/convex hierarchy via actual RIGHT-frame control and a new centered three-pinch Schatten tail. [TRACE-029](../fixed-map/convex_pinch_weak_noise_and_deconvolution.md) gives complete signed bounded-u stability and exact deconvolution bounds, while the actual full unsigned deconvolved correction diverges in the required large-log window. The identity cancels in signed occupation subtraction; masks/extraction, signed boundary deconvolution, undamped zero insertion, T16, balanced identification, Ward(13), TRACE005 and BGS remain OPEN.

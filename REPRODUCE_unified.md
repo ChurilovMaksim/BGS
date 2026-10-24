@@ -102,7 +102,7 @@ python -S computations/verification/gram_resolvent_normalization.py
 The eight deterministic finite cases do not establish the asymptotic
 counterexample or the fixed-map CUE limit; their proofs and boundaries
 are in `mathematics/trace-bridge/two_clock_gram_falsifier.md` and
-`mathematics/fixed_map_resolvent_frontier.md`.
+`mathematics/fixed-map/fixed_map_resolvent_frontier.md`.
 
 Byte-level delivery provenance is recorded in `archive/delivery-20260906/README.md`. Historical divergent branch heads/tree SHAs are recorded in `archive/branch-snapshots/README.md`; their source trees are deliberately not vendored into `main`.
 

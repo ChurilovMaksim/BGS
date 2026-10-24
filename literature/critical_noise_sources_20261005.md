@@ -2,8 +2,8 @@
 
 Checked 5 October 2026. This is a bounded source/application check, not a
 world-priority survey. The maintained claims are
-[FLOW-018](../mathematics/clock_structure_and_noise_scale.md) and
-[FLOW-019](../mathematics/fixed_degree_heat_projection.md).
+[FLOW-018](../mathematics/fixed-map/clock_structure_and_noise_scale.md) and
+[FLOW-019](../mathematics/fixed-map/fixed_degree_heat_projection.md).
 
 ## Prior kernels, with exact versions
 

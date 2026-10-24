@@ -24,9 +24,9 @@ Theorem 3.2](https://arxiv.org/pdf/2306.14352). For **distinct algebraic**
 numbers $\alpha_j$, the exponentials $e^{\alpha_j}$ are linearly
 independent over the field of algebraic numbers. The precise theorem was
 checked in its primary text on 24 September 2026. In
-[`BGS-FM-008`](../mathematics/frozen_algebraic_spectral_simplicity.md)
+[`BGS-FM-008`](../mathematics/fixed-map/frozen_algebraic_spectral_simplicity.md)
 and the algebraic-entry corollary of
-[`BGS-FM-009`](../mathematics/frozen_common_antireversor_certificate.md),
+[`BGS-FM-009`](../mathematics/fixed-map/frozen_common_antireversor_certificate.md),
 this transfers a finite exponential-polynomial **identity** at nonzero
 algebraic time into a global analytic identity. It gives no effective
 lower bound, eigenvalue gap, or local spectral statistic. The dependency
@@ -34,7 +34,7 @@ and its exact scope are pinned in
 [`external_dependencies.json`](external_dependencies.json).
 
 For the **effective**, model-specific but submicroscopic
-[`BGS-FM-011`](../mathematics/frozen_effective_gap_floor.md), see D. Roy,
+[`BGS-FM-011`](../mathematics/fixed-map/frozen_effective_gap_floor.md), see D. Roy,
 [*Une version effective du théorème de Lindemann–Weierstrass par des
 méthodes d'indépendance algébrique*, arXiv:1607.00579v1,
 Theorem 1.1](https://arxiv.org/pdf/1607.00579v1.pdf). The algebraic
@@ -60,7 +60,7 @@ Theorem 1.2](https://arxiv.org/abs/math/0607446v2), *Journal of the American
 Mathematical Society* 20 (2007), 99--148. The theorem says sharp spherical
 configurations minimize energy for completely monotone functions of squared
 chord distance; on $S^1$ this includes every regular $N$-gon. The application
-in [`BGS-TRACE-007`](../mathematics/fixed_map_resolvent_frontier.md) uses
+in [`BGS-TRACE-007`](../mathematics/fixed-map/fixed_map_resolvent_frontier.md) uses
 $f_q(r)=(1-q^2)/((1-q)^2+qr)$ and the Poisson expansion. It proves a sharp
 universal lower floor for the pair Abel sum, not the CUE limit for the frozen
 map. The primary arXiv version and Theorem 1.2 were checked on 25 September

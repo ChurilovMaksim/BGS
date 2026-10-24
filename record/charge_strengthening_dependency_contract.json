@@ -11,7 +11,7 @@
     "results": [
       "Checksum-free actual partial offcharge fibers with arbitrary occupation twists and arbitrary modulus-one-or-less difference-word weights, low-switch cap floor(gamma a N/(8 log N))",
       "Full all-switch high-Hamming damped bound O(N^2 exp(-kappa a N(1-z))) for normalized positive compact Heisenberg bands",
-      "Exact marked-switch boundary equivalence T15\u2013T17 with known negligible damped endpoint"
+      "Exact marked-switch boundary equivalence T15–T17 with known negligible damped endpoint"
     ]
   },
   "core": {
@@ -22,34 +22,34 @@
       {
         "path": "evidence/charge_strengthening_20261007/raw/author/inputs/09_four_branch_parametrix.md",
         "role": "analytic input",
-        "scope": "Sections 1\u20132 actual raw branch identity, HJ/transport, gluing and fixed-time remainder; Sections 4\u20136 literal two-mode certificate, derivative bounds and alias-safe discrete TT*. No classical mixing input.",
+        "scope": "Sections 1–2 actual raw branch identity, HJ/transport, gluing and fixed-time remainder; Sections 4–6 literal two-mode certificate, derivative bounds and alias-safe discrete TT*. No classical mixing input.",
         "sha256": "c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7"
       },
       {
         "path": "evidence/charge_strengthening_20261007/raw/author/inputs/10_translation_family_proof.md",
         "role": "analytic input",
-        "scope": "Sections 3\u20135 actual translated phases, literal two-mode Fourier certificate and uniform translated TT* only; provenance for A2\u2013A5, not a blanket use of its family theorem.",
+        "scope": "Sections 3–5 actual translated phases, literal two-mode Fourier certificate and uniform translated TT* only; provenance for A2–A5, not a blanket use of its family theorem.",
         "sha256": "49a24af2ca9e9628681ce08fcd023528f9b3bc5fbc578c7ec8cdfa11918b4f23"
       },
       {
         "path": "evidence/charge_strengthening_20261007/raw/author/inputs/11_all_translation_proof.md",
         "role": "analytic input",
-        "scope": "A2\u2013A5 only: exact actual phases, scaled alias-safe TT*, growing-charge smallness (equation A11), fixed-c operator-norm convergence with both cutoffs. A6\u2013A8 and conclusions requiring Egorov/mixing are excluded.",
+        "scope": "A2–A5 only: exact actual phases, scaled alias-safe TT*, growing-charge smallness (equation A11), fixed-c operator-norm convergence with both cutoffs. A6–A8 and conclusions requiring Egorov/mixing are excluded.",
         "sha256": "c0059f000b4642de174097b3e971d22ba0eac09cdff684289f72ae11db00a7c7"
       },
       {
         "path": "evidence/charge_strengthening_20261007/raw/author/inputs/08_position_chain_mixing.md",
         "role": "analytic input",
-        "scope": "Sections 1\u20132 only: explicit leading-amplitude positivity estimate, zero-charge norm decomposition and eventual ||P-J||<=1/2. No marked/cyclic theorem is required.",
+        "scope": "Sections 1–2 only: explicit leading-amplitude positivity estimate, zero-charge norm decomposition and eventual ||P-J||<=1/2. No marked/cyclic theorem is required.",
         "sha256": "3a589f988defb569d12f075add16dda669c9409dabd4a81f59c4d0b5d5e44b09"
       }
     ],
     "explicitly_excluded": [
       "FM-018",
-      "A6\u2013A7 Koopman identification and classical mixing",
+      "A6–A7 Koopman identification and classical mixing",
       "A8 finite-power theorem as a load-bearing input",
       "Egorov",
-      "Parry\u2013Pollicott or other unused mixing source",
+      "Parry–Pollicott or other unused mixing source",
       "Any full Ad(U) contraction"
     ],
     "proof": "mathematics/onestep_charge_gap.md"

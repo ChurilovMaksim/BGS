@@ -5,9 +5,9 @@
 The [review](../record/spectral_research/trace_closure.md) closes the inserted-trace input in TRACE-109 by a
 finite-grid corrected-amplitude proof. TRACE-110 now has proved global
 $O(1/\log N)$ spectral matching and a matching Pell lower order.
-[TRACE-112](displacement_density_trace_bound_20261021.md) supplies an
+[TRACE-112](fixed-map/displacement_density_trace_bound.md) supplies an
 independent logarithmic-time upper-bound route;
-[TRACE-113](fixed_kick_uniform_trace_bound_20261021.md) proves the
+[TRACE-113](fixed-map/fixed_kick_uniform_trace_bound.md) proves the
 uniform power-trace input with one threshold for all iterates.
 All statements have analytic project proofs with self-review, not external
 refereeing. Microscopic signed cancellation and BGS remain open.
@@ -15,7 +15,7 @@ refereeing. Microscopic signed cancellation and BGS remain open.
 ## Final spectral research edition, 21 October 2026
 
 [Thematic results and individual proofs](spectral_research/README.md) integrate
-all fourteen rounds. [TRACE-108](coordinate_return_quartic_20261021.md) is the
+all fourteen rounds. [TRACE-108](fixed-map/coordinate_return_quartic.md) is the
 quartic one-step intensity theorem; [TRACE-111](pell_weighted_curvature_20261021.md)
 sums the initial gradient/Hessian and proves an early inflection.
 [TRACE-109](inserted_trace_coboundary_20261021.md) and
@@ -368,7 +368,7 @@ The previous catalogue is retained byte-for-byte in [the dated snapshot](../arch
 ## Current algebraic and selected-family frontier
 
 The actual pair commutant is classified for odd N>=3 with the exact N=7
-exception ([FM-024](actual_seven_primary_commutant.md)); its 7∤N leaf
+exception ([FM-024](fixed-map/actual_seven_primary_commutant.md)); its 7∤N leaf
 now has fresh independent review. [FM-025](uniform_five_cluster_simplicity.md)
 gives the pure-five kick family, while [FM-026](literal_time_multiplicity_bounds.md)
 gives literal-time multiplicity<=7 and precise simple-eigenvalue counts on
@@ -377,7 +377,7 @@ N=7*5^e. Finite U-simplicity cases remain explicitly bounded. The
 one-step squared traces for odd N>=3,N!=7.
 
 [TRACE-019](selected_weighted_coefficient.md) controls a selected
-full-weight WKB family. Separately, [TRACE-020](factorial_ordered_diagonal.md)
+full-weight WKB family. Separately, [TRACE-020](fixed-map/factorial_ordered_diagonal.md)
 removes the specified ordered-diagonal sector from every fixed-order factorial
 Fourier expression at O_k(log^(2k)N/N), using actual entrywise flatness alone.
 Its collective and exponential long-cycle companions have distinct bounds;
@@ -395,7 +395,7 @@ retain component provenance; current statements are the linked theorem owners.
 
 ## Reviewed Wave2 bounded theorem family
 
-[TRACE-024](actual_one_pinch_disappearance.md): actual unmasked one-pinch disappearance (bounded positive/smooth signed weights, no rate). [FM-031](ordinary_compact_stratum_centering.md): a.e. ordinary centering and fixed-N complete signed-source cutoff. [TRACE-025](rounding_simple_spectrum_endpoint_barriers.md): changed-family endpoint barriers with a separating-estimate restriction. [TRACE-026](hook_tree_phase_current_reduction.md): corrected exact finite hook/tree/current identities and conditional Abel reduction. [Phase source audit](../literature/wave2_phase_orbit_source_qualification_20261007.md) adds no universality/priority theorem. Masked T16, balanced law, TRACE-005 and BGS remain OPEN.
+[TRACE-024](fixed-map/actual_one_pinch_disappearance.md): actual unmasked one-pinch disappearance (bounded positive/smooth signed weights, no rate). [FM-031](ordinary_compact_stratum_centering.md): a.e. ordinary centering and fixed-N complete signed-source cutoff. [TRACE-025](rounding_simple_spectrum_endpoint_barriers.md): changed-family endpoint barriers with a separating-estimate restriction. [TRACE-026](hook_tree_phase_current_reduction.md): corrected exact finite hook/tree/current identities and conditional Abel reduction. [Phase source audit](../literature/wave2_phase_orbit_source_qualification_20261007.md) adds no universality/priority theorem. Masked T16, balanced law, TRACE-005 and BGS remain OPEN.
 
 
 ## Reviewed weighted coherence covariance
@@ -405,7 +405,7 @@ retain component provenance; current statements are the linked theorem owners.
 
 ## Reviewed complete unmasked pinch continuation
 
-[TRACE-028](right_frame_unmasked_pinch_hierarchy.md) closes actual/annealed complete separated averages and the all-z unmasked convex hierarchy through a new centered S3 tail. [TRACE-029](convex_pinch_weak_noise_and_deconvolution.md) gives exact finite-N resummation bounds, bounded-u signed weak-noise stability and the sharp actual unsigned large-log deconvolution obstruction. Identity cancellation and all mask/extraction/zero-insertion limits remain explicit.
+[TRACE-028](right_frame_unmasked_pinch_hierarchy.md) closes actual/annealed complete separated averages and the all-z unmasked convex hierarchy through a new centered S3 tail. [TRACE-029](fixed-map/convex_pinch_weak_noise_and_deconvolution.md) gives exact finite-N resummation bounds, bounded-u signed weak-noise stability and the sharp actual unsigned large-log deconvolution obstruction. Identity cancellation and all mask/extraction/zero-insertion limits remain explicit.
 
 
 [Deleted-clock Hardy boundary](trace-bridge/deleted_clock_hardy_boundary.md): an exact positive excess of order 1/N can vanish despite bounded fixed traces.

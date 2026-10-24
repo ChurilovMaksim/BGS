@@ -25,13 +25,13 @@ g(q,p)=cos(14πq)+r(q)/10+r(q)sin(2πq)/100−1/10
        +r(q+1/2)cos(2πp−α)/100,
 cos α=−3/5,   sin α=4/5.
 
-The shift r(q+1/2) is essential. This exact dictionary and its finite Fourier coefficients belong to [FM-001](../fixed_model_symmetry_theorem.md). The classical kick map in the Q_N*Op(a)Q_N convention is Ψ=Φ_g^(−κ), κ=τ/(2π), with X_g=(g_p,−g_q).
+The shift r(q+1/2) is essential. This exact dictionary and its finite Fourier coefficients belong to [FM-001](../fixed-map/fixed_model_symmetry_theorem.md). The classical kick map in the Q_N*Op(a)Q_N convention is Ψ=Φ_g^(−κ), κ=τ/(2π), with X_g=(g_p,−g_q).
 
 All matrix norms on operators below use the Hilbert space with inner product ⟨X,Y⟩_N=N^(−1)Tr(X*Y), unless explicitly labeled as ordinary operator norms. Raw Weyl modes with distinct residues are exactly orthonormal. Direct substitution in the quadratic kernel gives
 
 M_N T_N(v) M_N*=T_N(Sv),   S=[[3,4],[2,3]].
 
-The proof reuses the quantitative kick Egorov mechanism of [FM-018](../frozen_operator_transfer_coercivity.md) and the overlap architecture of [FM-016](../egorov_overlap_rigidity.md); their needed estimates are derived in Section 5 below. Their mixing, channel-gap and classical centralizer theorems are not required. No auxiliary ensemble is substituted for U_N.
+The proof reuses the quantitative kick Egorov mechanism of [FM-018](../fixed-map/frozen_operator_transfer_coercivity.md) and the overlap architecture of [FM-016](../fixed-map/egorov_overlap_rigidity.md); their needed estimates are derived in Section 5 below. Their mixing, channel-gap and classical centralizer theorems are not required. No auxiliary ensemble is substituted for U_N.
 
 ## 1. Theorem and exact range
 

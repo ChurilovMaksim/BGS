@@ -14,7 +14,7 @@ and `BGS-FM-005` respectively.
 
 Let $N\ge3$ be odd, $h=2^{-1}\pmod N$, $\tau=10^{-80}$ and
 $U_N=e^{i\tau N A_N}M_N$ with the raw modular Weyl symbol of
-[`fixed_model_symmetry_theorem.md`](fixed_model_symmetry_theorem.md). In the
+[`fixed_model_symmetry_theorem.md`](fixed-map/fixed_model_symmetry_theorem.md). In the
 standard coordinate basis the *unmodified* Hermitian generator has the exact
 cyclic Jacobi form
 

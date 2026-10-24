@@ -52,7 +52,7 @@ Exact factorial partition identities connect local correlations to complete sign
 
 ## Suggested reading sequence
 
-[1. trace to local statistics bridge](../../trace-bridge/trace_to_local_statistics_bridge.md) → [2. bandlimited correlation extension](../../trace-bridge/bandlimited_correlation_extension.md) → [3. signed heisenberg comparison](../../trace-bridge/signed_heisenberg_comparison.md) → [4. fixed degree heat projection](../../fixed_degree_heat_projection.md) → [5. growing degree trace projection](../../growing_degree_trace_projection.md) → [6. heisenberg pair heat formula](../../heisenberg_pair_heat_formula.md)
+[1. trace to local statistics bridge](../../trace-bridge/trace_to_local_statistics_bridge.md) → [2. bandlimited correlation extension](../../trace-bridge/bandlimited_correlation_extension.md) → [3. signed heisenberg comparison](../../trace-bridge/signed_heisenberg_comparison.md) → [4. fixed degree heat projection](../../fixed-map/fixed_degree_heat_projection.md) → [5. growing degree trace projection](../../growing_degree_trace_projection.md) → [6. heisenberg pair heat formula](../../heisenberg_pair_heat_formula.md)
 
 This is a reading sequence, not a replacement for the exact dependency graph.
 
@@ -70,11 +70,11 @@ See [the ongoing corpus revision](../../../archive/record/corpus_revision_202610
 - [unitary_two_step_obstruction_20261012](../../trace-bridge/unitary_two_step_obstruction.md) — Rank-two unitary construction, exact Haar moment, two-step failure and correct higher-step factor.
 
 - [heisenberg_pair_heat_formula](../../heisenberg_pair_heat_formula.md) — Exact pair modes, Haar heat profile and matching short-trace families with different signed defects.
-- [clock_structure_and_noise_scale](../../clock_structure_and_noise_scale.md) — Exact clock covariance, signed pair compensation, sharp rate and critical law.
+- [clock_structure_and_noise_scale](../../fixed-map/clock_structure_and_noise_scale.md) — Exact clock covariance, signed pair compensation, sharp rate and critical law.
 - [growing_degree_trace_projection](../../growing_degree_trace_projection.md) — Actual logarithmic projection rate, exact sublinear missed pair test and particular heat-inverse obstruction.
-- [fixed_degree_heat_projection](../../fixed_degree_heat_projection.md) — Actual fixed-degree projected CUE estimates and the open complementary evaluation.
+- [fixed_degree_heat_projection](../../fixed-map/fixed_degree_heat_projection.md) — Actual fixed-degree projected CUE estimates and the open complementary evaluation.
 - [local_moment_transport](../../local_moment_transport.md) — Local uniform integrability from displacement moments and reference density.
-- [coboundary_all_order_limit](../../coboundary_all_order_limit.md) — Complete signed Fourier/CUE comparison for the original noisy chain, and exact remaining deterministic defect criterion.
+- [coboundary_all_order_limit](../../fixed-map/coboundary_all_order_limit.md) — Complete signed Fourier/CUE comparison for the original noisy chain, and exact remaining deterministic defect criterion.
 - [bandlimited_correlation_extension](../../trace-bridge/bandlimited_correlation_extension.md)
 - [clustered_abel_window_boundary](../../trace-bridge/clustered_abel_window_boundary.md) — exact cluster-to-Abel bound and abstract time-window falsifier.
 - [compensated_heisenberg_trace_control](../../trace-bridge/compensated_heisenberg_trace_control.md)
@@ -89,13 +89,13 @@ See [the ongoing corpus revision](../../../archive/record/corpus_revision_202610
 
 - [three_block_unmarking](../../three_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
 
-- [four_block_unmarking](../../four_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
+- [four_block_unmarking](../../fixed-map/four_block_unmarking.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
 
-- [four_cut_rank_two_classification](../../four_cut_rank_two_classification.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
+- [four_cut_rank_two_classification](../../fixed-map/four_cut_rank_two_classification.md) — Reviewed bounded subsidiary result; see its exact scope and remaining boundary.
 
 ## Fixed-order WKB and local saddle route
 
-Read [factorial wkb reduction](../../factorial_wkb_reduction.md) → [exact gaussian reciprocity](../../exact_gaussian_reciprocity.md) → [uniform cluster lemma](../../uniform_cluster_lemma.md) → [rotated local first loop](../../rotated_local_first_loop.md). The global rotated-box theorem controls the contour/tail step in its stated finite band. Complete signed comparison and unrestricted bands remain open; local/formal results do not establish BGS.
+Read [factorial wkb reduction](../../fixed-map/factorial_wkb_reduction.md) → [exact gaussian reciprocity](../../fixed-map/exact_gaussian_reciprocity.md) → [uniform cluster lemma](../../uniform_cluster_lemma.md) → [rotated local first loop](../../rotated_local_first_loop.md). The global rotated-box theorem controls the contour/tail step in its stated finite band. Complete signed comparison and unrestricted bands remain open; local/formal results do not establish BGS.
 
 - [Principal WKB polar comparison](../../polar_wkb_quantization_stability.md): fixed smooth order-1/N correction and O(N^-2) polar defect; inherited ergodic RMS transport transfers an assumed all-order compact law between unitary endpoints. No nonnormal principal-matrix eigenvalue matching is claimed.
 
@@ -115,12 +115,12 @@ links are in the theorem; full signed BGS remains open.
 
 ## Collective operator sector
 
-[TRACE-020](../../collective_occupation_hierarchy.md) and its
-[exact Q residual](../../collective_projector_residual.md) use actual-U
+[TRACE-020](../../fixed-map/collective_occupation_hierarchy.md) and its
+[exact Q residual](../../fixed-map/collective_projector_residual.md) use actual-U
 ordered operator projectors, distinct from WKB path masks. Full balanced
 and off-charge complements remain open.
 
-[General factorial ordered-sector removal](../../factorial_ordered_diagonal.md)
+[General factorial ordered-sector removal](../../fixed-map/factorial_ordered_diagonal.md)
 extends TRACE-020 under entrywise flatness alone. The
 [mixed long-cycle companion](../../mixed_ordered_diagonal.md) retains separate
 singular-gap assumptions and stronger band estimates. The signed complement

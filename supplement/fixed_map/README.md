@@ -3,7 +3,7 @@
 This supplement preserves the mathematical proofs, computational sources and
 finite evidence recovered from the previously unpublished research of
 13--20 September 2026. The current scientific entry point is
-[the fixed-map frontier](../../mathematics/fixed_map_resolvent_frontier.md).
+[the fixed-map frontier](../../mathematics/fixed-map/fixed_map_resolvent_frontier.md).
 **Microscopic BGS universality for the prescribed fixed map remains open.**
 
 ## Reading order and evidence boundary

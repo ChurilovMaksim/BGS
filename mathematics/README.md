@@ -5,9 +5,9 @@
 The [review](../record/spectral_research/trace_closure.md) closes the inserted-trace input in TRACE-109 by a
 finite-grid corrected-amplitude proof. TRACE-110 now has proved global
 $O(1/\log N)$ spectral matching and a matching Pell lower order.
-[TRACE-112](displacement_density_trace_bound_20261021.md) supplies an
+[TRACE-112](fixed-map/displacement_density_trace_bound.md) supplies an
 independent logarithmic-time upper-bound route;
-[TRACE-113](fixed_kick_uniform_trace_bound_20261021.md) proves the
+[TRACE-113](fixed-map/fixed_kick_uniform_trace_bound.md) proves the
 uniform power-trace input with one threshold for all iterates.
 All statements have analytic project proofs with self-review, not external
 refereeing. Microscopic signed cancellation and BGS remain open.
@@ -47,12 +47,12 @@ The canonical theorem sources live at stable paths in this directory.
 
 | Question | Start here | Scope |
 |---|---|---|
-| What is the exact BGS target? | [Frozen model](fixed_map_resolvent_frontier.md), [trace bridge](trace-bridge/trace_to_local_statistics_bridge.md) | Unchanged fixed coupling, correct symmetries/unfolding, every fixed factorial order |
+| What is the exact BGS target? | [Frozen model](fixed-map/fixed_map_resolvent_frontier.md), [trace bridge](trace-bridge/trace_to_local_statistics_bridge.md) | Unchanged fixed coupling, correct symmetries/unfolding, every fixed factorial order |
 | What does actual classical/intensity mixing establish? | [Position-chain mixing](position_chain_mixing.md), [reverse paths](reversed_path_decay.md) | Intensity singular gap and specified path families, not full quantum interference |
-| Which arithmetic symmetry questions are closed? | [Combined pair commutant](actual_seven_primary_commutant.md), [literal multiplicities](literal_time_multiplicity_bounds.md) | Current combined classification includes every odd $N\ne7$; full propagator simplicity has a separate boundary |
-| Where is the signed trace residual? | [WKB reduction](factorial_wkb_reduction.md), [ordered diagonal](factorial_ordered_diagonal.md), [low-switch removal](hamming_low_switch_residual.md), [switch transfer](global_switch_transfer.md) | Specified removed sectors and damped interior; signed high-switch/undamped endpoint remains |
+| Which arithmetic symmetry questions are closed? | [Combined pair commutant](fixed-map/actual_seven_primary_commutant.md), [literal multiplicities](literal_time_multiplicity_bounds.md) | Current combined classification includes every odd $N\ne7$; full propagator simplicity has a separate boundary |
+| Where is the signed trace residual? | [WKB reduction](fixed-map/factorial_wkb_reduction.md), [ordered diagonal](fixed-map/factorial_ordered_diagonal.md), [low-switch removal](hamming_low_switch_residual.md), [switch transfer](global_switch_transfer.md) | Specified removed sectors and damped interior; signed high-switch/undamped endpoint remains |
 | What is the balanced microscopic bottleneck? | [Phase Ward identity](phase_ward_identity.md), [Schur-energy reduction](balanced_pair_schur_reduction.md) | Exact absorbed pair reductions; their actual overlap/radial-energy limits are not evaluated |
-| What survives noise or insertion averaging? | [Unmasked hierarchy](right_frame_unmasked_pinch_hierarchy.md), [signed stability](convex_pinch_weak_noise_and_deconvolution.md), [noise removal](microscopic_noise_removal.md) | Masks, source extraction and deterministic transfer retain explicit obligations |
+| What survives noise or insertion averaging? | [Unmasked hierarchy](right_frame_unmasked_pinch_hierarchy.md), [signed stability](fixed-map/convex_pinch_weak_noise_and_deconvolution.md), [noise removal](microscopic_noise_removal.md) | Masks, source extraction and deterministic transfer retain explicit obligations |
 | What are the reconstructed analytic inequalities? | [Max-entry phase channel](trace-bridge/max_entry_phase_channel.md), [sharp inner jets](trace-bridge/sharp_inner_jet.md), [real-flow transport](trace-bridge/phase_channel_real_flow.md) | TRACE-053/054/056; full proofs with internal reconstruction, no external-priority verdict |
 | Which full-depth clock conclusions are unconditional? | [Exact Haar feedback and entropy-stable clocks](trace-bridge/haar_feedback_clock_law.md) | Independent initial laws with relative entropy O(log N) relative to Haar; deterministic and microscopic-law boundaries explicit |
 | Which feedback flatness is unconditional? | [Max-entry feedback flatness](trace-bridge/unconditional_feedback_flatness.md) | TRACE-080 under its named phase-channel and matrix-concentration inputs; deterministic local spectral universality remains open |

@@ -39,7 +39,7 @@ $2Q\le N$. It does not use asymptotic Gaussian independence at growing
 degree outside that stable range.
 
 The odd-N frame and packet construction are the maintained
-[FM-013 proof](../mathematics/fixed_time_wavepacket_trace_bound.md).
+[FM-013 proof](../mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md).
 The degree/Jacobian return-volume bound is
 [FM-007](../mathematics/frozen_seven_cut_reduction.md), (11), and retains
 the same forward conjugation map $G$ and inverse packet-center map $F$.

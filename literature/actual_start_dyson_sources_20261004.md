@@ -63,13 +63,13 @@ and microscopic Fredholm asymptotics are not imported.
 
 ## Project consequence and search coverage
 
-[FLOW-012](../mathematics/coboundary_general_start.md) proves comparison
-to the specified initial Dyson law. [FLOW-013](../mathematics/dyson_relaxation_obstruction.md)
+[FLOW-012](../mathematics/fixed-map/coboundary_general_start.md) proves comparison
+to the specified initial Dyson law. [FLOW-013](../mathematics/fixed-map/dyson_relaxation_obstruction.md)
 refutes a prescribed relaxation time inferred only from the listed
-abstract low-trace hypotheses. [FM-017](../mathematics/frozen_mesoscopic_regularity.md)
+abstract low-trace hypotheses. [FM-017](../mathematics/fixed-map/frozen_mesoscopic_regularity.md)
 derives logarithmic-scale Poisson regularity, local stationary points
 and unweighted vertical phase-tail bounds
-from FM-007. The separate [FLOW-014 project proof](../mathematics/circular_dyson_actual_start.md)
+from FM-007. The separate [FLOW-014 project proof](../mathematics/fixed-map/circular_dyson_actual_start.md)
 now derives the gap-independent global contour and full Fredholm argument
 at $t_N=8g_N$ from the prior finite kernel. This asymptotic proof is not
 imported from any of the sources checked above; priority is unestablished.

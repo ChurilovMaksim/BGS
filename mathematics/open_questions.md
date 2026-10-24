@@ -212,10 +212,10 @@ theta=0 radial theorem has no occupation-uniform or trace conclusion; body
 coercivity and complex source bounds do not identify a limit. The original
 BGS-TRACE-005 complete signed comparison remains OPEN.
 
-[FM-021](position_chain_mixing.md) supplies the actual cyclic-path ramp and specified marked three-link cancellation, while [FM-022](reversed_path_decay.md) suppresses reverse-cyclic pairs. The remaining once-counted signed OTHER-path contribution must supply the full target, including the negative plateau correction above m/N=1. The once-counted distinct-port three-block and reduced four-block families are now controlled by [TRACE-015](three_block_unmarking.md) and [TRACE-016](four_block_unmarking.md). Variable representations and endpoint-dependent masks still prevent unrestricted automatic unmarking; repeated ports, inter-family overlaps and growing reconnection complexity remain open. Higher factorial orders remain open.
+[FM-021](position_chain_mixing.md) supplies the actual cyclic-path ramp and specified marked three-link cancellation, while [FM-022](reversed_path_decay.md) suppresses reverse-cyclic pairs. The remaining once-counted signed OTHER-path contribution must supply the full target, including the negative plateau correction above m/N=1. The once-counted distinct-port three-block and reduced four-block families are now controlled by [TRACE-015](three_block_unmarking.md) and [TRACE-016](fixed-map/four_block_unmarking.md). Variable representations and endpoint-dependent masks still prevent unrestricted automatic unmarking; repeated ports, inter-family overlaps and growing reconnection complexity remain open. Higher factorial orders remain open.
 
 
-[FM-019](collective_diffusion_gap.md) closes a universal two-copy
+[FM-019](fixed-map/collective_diffusion_gap.md) closes a universal two-copy
 summed-generator gap on the full identity/swap complement for every odd
 N>=3. Its refined shared-noise law at m=N^3, u=N^-alpha, 0<alpha<1 has
 singular mass at least c_0u/4, dominating N^-1. Its one-copy channel is
@@ -252,14 +252,14 @@ particular fixed local test. Neither excludes a model-specific signed
 comparison. The stronger logarithm-squared projection range requires
 a uniform growing-index trace bound not proved for the actual operator.
 
-The [fixed-degree projection](fixed_degree_heat_projection.md) now
+The [fixed-degree projection](fixed-map/fixed_degree_heat_projection.md) now
 estimates every fixed neutral projected local test on the actual map.
 The exact remaining unperturbed term is $(I-\mathsf P_{Q,N})F_N(U_N)$
 for each fixed Q; P7 does not bound it. Small Haar norm is insufficient.
-The [clock compensation](clock_structure_and_noise_scale.md) is an exact
+The [clock compensation](fixed-map/clock_structure_and_noise_scale.md) is an exact
 control mechanism, not an identity for the actual initial spectrum.
 
-[FLOW-017](coboundary_all_order_limit.md) closes all fixed unbounded
+[FLOW-017](fixed-map/coboundary_all_order_limit.md) closes all fixed unbounded
 factorial orders and the complete signed Fourier target for the original
 **noisy** chain at one superpolynomial step schedule, including one-chain
 origin averages in $L^2$. C16--C17 reduce the deterministic signed target
@@ -283,12 +283,12 @@ The [six-route review](../record/noise_removal_program_20261005.md)
 records the exact alternatives and boundaries. Neither the actual
 defect nor the stronger signed factorial hierarchy is estimated yet.
 
-The [general-start comparison](coboundary_general_start.md) now retains
+The [general-start comparison](fixed-map/coboundary_general_start.md) now retains
 the actual frozen initial matrix and compares its original random chain
-to the exact centered-start Dyson law. [FM-017](frozen_mesoscopic_regularity.md) supplies initial Poisson
+to the exact centered-start Dyson law. [FM-017](fixed-map/frozen_mesoscopic_regularity.md) supplies initial Poisson
 regularity at $g_N\asymp\log\log N/\log N$ and controlled local stationary
 points and unweighted vertical phase-tail suppression at $t_N=\sqrt{g_N}$.
-[FLOW-014](circular_dyson_actual_start.md) closes the gap-independent
+[FLOW-014](fixed-map/circular_dyson_actual_start.md) closes the gap-independent
 global contour estimate, crossing residues, all windings, confluence and
 Fredholm convergence. At $t_N=8g_N$, the original chain from the actual
 map has the Sine$_2$ weak local limit. The next deterministic obligation
@@ -296,7 +296,7 @@ is to compare this noisy law with the initial spectrum using actual-map
 information; it does not follow by continuity on the microscopic scale.
 The [kernel route](../record/circular_kernel_route_20261004.md)
 pins the prior finite formula and actual normalization. The
-[prescribed-time falsifier](dyson_relaxation_obstruction.md) excludes
+[prescribed-time falsifier](fixed-map/dyson_relaxation_obstruction.md) excludes
 choosing $N^{-2/3}$ using only the listed trace inputs, even the whole
 logarithmic window. Deterministic noise removal remains a separate task.
 
@@ -306,7 +306,7 @@ dimension threshold, the sharper historical action-phase formula,
 all-N initial-trace convergence and Heisenberg-time cancellation remain
 open; they are different obligations from fixed-time boundedness.
 
-[TRACE-012](folded_quadratic_resonance_control.md) refines the actual-map
+[TRACE-012](fixed-map/folded_quadratic_resonance_control.md) refines the actual-map
 input to $E_pG_{d_p,p}=o(1)$ with factorial counterterm control, where
 $G_{d,p}=\|P_d(\rho_p^2)\|_2^2$. For prime orders, $G_{d_p,p}=o(d_p^2)$
 is sufficient for the latter. Estimate the positive shifted four-point
@@ -356,18 +356,18 @@ Dyson relaxation at a logarithmic time. FLOW-016--017 now supply all-order
 uniform integrability and limits for the original noisy chain at a different
 superpolynomial step schedule; deterministic noise removal remains open. The
 [clock theorem](quadratic_noise_clock_limit.md) proves that low traces
-and bounded occupancy alone cannot remove the noise. The [direct fixed-time packet proof](fixed_time_wavepacket_trace_bound.md)
+and bounded occupancy alone cannot remove the noise. The [direct fixed-time packet proof](fixed-map/fixed_time_wavepacket_trace_bound.md)
 now closes bounded starting traces; its constants are not uniform at
 Heisenberg times. The historical Faure action-phase application remains
 conditional on regularized trace matching. [TRACE-013](spectral-obstructions/arithmetic_word_expansion_obstruction.md)
 shows that even bounded fixed traces and a full-space auxiliary two-copy
 channel gap cannot replace coherent-word estimates.
-The [Möbius reduction](coboundary_mobius_diffusion.md) now proves a
+The [Möbius reduction](fixed-map/coboundary_mobius_diffusion.md) now proves a
 fixed-dimension stopped spectral quotient limit for repeated Gaussian
 coboundary steps and an iterated clock-to-Sine theorem. An explicit
 simultaneous regime is now established by
-[FLOW-010](coboundary_joint_limit.md) at epsilon_N=exp(-N), and the
-[polynomial continuation](coboundary_polynomial_limit.md) closes that
+[FLOW-010](fixed-map/coboundary_joint_limit.md) at epsilon_N=exp(-N), and the
+[polynomial continuation](fixed-map/coboundary_polynomial_limit.md) closes that
 clock regime with epsilon_N=N^(-26/3) and exactly 2N^34 steps.
 Optimizing the step exponent, actual-start relaxation at faster than the
 proved logarithmic time, and deterministic noise removal remain open. No convergence
@@ -410,7 +410,7 @@ The pair part of this frontier now has an exact adjoint-resolvent form
 not estimate the model's resolvent or its Heisenberg-scale joint traces. The
 closure condition of `BGS-TRACE-005` is unchanged.
 
-The [smooth seven-cut transfer](fixed_map_resolvent_frontier.md)
+The [smooth seven-cut transfer](fixed-map/fixed_map_resolvent_frontier.md)
 (`BGS-RES-007`) identifies all compact positive-$s$ scalar-resolvent
 limits and their derivatives between the original and cut **full**
 propagators, without supplying a value for either. The
@@ -444,10 +444,10 @@ $N^{-1}\operatorname{Tr}\Gamma_{N,N}^2\to4/3$, where
 $\Gamma_{N,N}=[N^{-1}\operatorname{Tr}U_N^{b-a}]_{0\le a,b<N}$;
 this has not been proved for the model.
 
-The later exact [arithmetic trace theorem](frozen_arithmetic_trace_rigidity.md)
+The later exact [arithmetic trace theorem](fixed-map/frozen_arithmetic_trace_rigidity.md)
 (`BGS-FM-010`) proves *nonvanishing* of every positive-power trace,
 including at \(7\mid N\), but gives no **upper** estimate in the Abel
-sum. The [effective gap floor](frozen_effective_gap_floor.md)
+sum. The [effective gap floor](fixed-map/frozen_effective_gap_floor.md)
 (`BGS-FM-011`) for \(7\nmid N\) is vastly smaller than the mean gap;
 it gives no local occupation control. Neither result changes the
 closure condition of `BGS-TRACE-005`.
@@ -456,7 +456,7 @@ The [singular Haar-CUE benchmark](spectral-obstructions/cue_singular_energy.md)
 (BGS-CUE-001) identifies the reference law when the
 adjoint inverse-gap regularization is removed, but
 weak local process limits alone do not control this
-singular boundary. The [coboundary spectral-flow bound](coboundary_spectral_flow_bound.md)
+singular boundary. The [coboundary spectral-flow bound](fixed-map/coboundary_spectral_flow_bound.md)
 (BGS-FLOW-001) would transfer weak local limits under
 specified Birkhoff and commutator estimates, neither
 of which is available for the maintained fixed family.
@@ -702,11 +702,11 @@ formalized mathematics. Full analytic formalization remains open.
 
 ### Equivalent WKB target
 
-[TRACE-017](factorial_wkb_reduction.md) permits replacing the actual complete fixed-order partition transform with either named fixed-J WKB table, J>=k. The full signed WKB comparison is an equivalent remaining target, not a weaker or solved condition. The separate [global rotated-box theorem](global_rotated_box_trace.md) closes the saturated-contour and summed-tail step in its explicit finite band, conservatively m<=2N. Signed evaluation of exact box sums, entropy-compatible local remainders, unrestricted bands and TRACE-005 remain open.
+[TRACE-017](fixed-map/factorial_wkb_reduction.md) permits replacing the actual complete fixed-order partition transform with either named fixed-J WKB table, J>=k. The full signed WKB comparison is an equivalent remaining target, not a weaker or solved condition. The separate [global rotated-box theorem](global_rotated_box_trace.md) closes the saturated-contour and summed-tail step in its explicit finite band, conservatively m<=2N. Signed evaluation of exact box sums, entropy-compatible local remainders, unrestricted bands and TRACE-005 remain open.
 
 ### Closed actual pair-commutant classification
 
-[FM-024](actual_seven_primary_commutant.md), including the corrected [higher-ramified proof](ramified_higher_seven_commutant.md), now covers every odd N>=3 except the genuine N=7 exception by explicit combination with prior FM-008. No unknown odd-dimensional pair-commutant family remains. General seven-divisible U simplicity beyond the four certified cases, quantitative gaps, the complete literal-U complex commutant and deterministic BGS are separate questions; scalarity is asserted for the pair and only algebraic-entry commuters of literal U.
+[FM-024](fixed-map/actual_seven_primary_commutant.md), including the corrected [higher-ramified proof](ramified_higher_seven_commutant.md), now covers every odd N>=3 except the genuine N=7 exception by explicit combination with prior FM-008. No unknown odd-dimensional pair-commutant family remains. General seven-divisible U simplicity beyond the four certified cases, quantitative gaps, the complete literal-U complex commutant and deterministic BGS are separate questions; scalarity is asserted for the pair and only algebraic-entry commuters of literal U.
 
 ### Remaining signed complement
 
@@ -719,7 +719,7 @@ TRACE-018 averaged Fourier-square bound is not fixed-N time averaging.
 
 ### Exact operator residual after collective removal
 
-[TRACE-020](collective_projector_residual.md) leaves
+[TRACE-020](fixed-map/collective_projector_residual.md) leaves
 Q=(Pi-P_H-P_coll)+(I-Pi), including some cycle-fixed vectors. Its complete
 signed cyclic trace is unestimated. This is distinct from the stationary-label
 WKB residual. [FM-026](literal_time_multiplicity_bounds.md) leaves intermediate
@@ -727,7 +727,7 @@ old-layer U simplicity and quantitative gaps open.
 
 ### Remaining fixed-order mixed projector trace
 
-The [general TRACE-020 theorem](factorial_ordered_diagonal.md) handles the
+The [general TRACE-020 theorem](fixed-map/factorial_ordered_diagonal.md) handles the
 ordered sector for all canonical cycle lengths, zero powers and compact
 fixed-order Fourier weights under flatness alone. The complete signed
 Tr[R(I-P_H-P_ord)C_U] aggregation remains open. Mixed R need not commute
@@ -736,7 +736,7 @@ with the projector; no conclusion for the full balanced sector or BGS follows.
 ### Intermediate arithmetic layers after residual 25
 
 [FM-026](literal_time_multiplicity_bounds.md) now includes the exact
-[first-old classifier](first_old_layer_classification.md) and uniform
+[first-old classifier](fixed-map/first_old_layer_classification.md) and uniform
 [residual-25 splitting](residual25_affine_dictionary.md). Larger even residuals
 (at least 625) and odd intermediate residuals beyond 125 still require compatible bases
 and their actual wild-character affine sums. The
@@ -757,7 +757,7 @@ the first-old odd follow-on, full simplicity and quantitative gaps remain open.
 
 ## Wave2: exact remaining signed targets
 
-The actual unmasked q=1 one-pinch aggregate is closed at [TRACE-024](actual_one_pinch_disappearance.md). Complete unmasked separated and growing convex insertions are now closed at TRACE-028's exact normalizations. Masked/source-weighted insertions, occupation/Hamming/high-switch extraction and signed boundary deconvolution remain unestimated. The annealed consecutive-block leaf does not close the positive block hierarchy. [Fixed-N centering](ordinary_compact_stratum_centering.md) leaves N-uniform source-differentiated signed cancellation, including circle-boundary strata at ab=exp(-2s/N), open. [The corrected hook/current reduction](hook_tree_phase_current_reduction.md) requires N^-2 sum_m exp(-2sm/N) H_m(U_N) -> -exp(-2s)/(4s^2) for each s>0, including Heisenberg degrees, repeated occupations and the Abel tail. The required negative plateau correction is not a small-error target. Literal signed marked T16, completed-source growing-degree covariance, actual Ward overlap (13), full balanced microscopic law, higher factorial comparison, TRACE-005 and BGS remain OPEN.
+The actual unmasked q=1 one-pinch aggregate is closed at [TRACE-024](fixed-map/actual_one_pinch_disappearance.md). Complete unmasked separated and growing convex insertions are now closed at TRACE-028's exact normalizations. Masked/source-weighted insertions, occupation/Hamming/high-switch extraction and signed boundary deconvolution remain unestimated. The annealed consecutive-block leaf does not close the positive block hierarchy. [Fixed-N centering](ordinary_compact_stratum_centering.md) leaves N-uniform source-differentiated signed cancellation, including circle-boundary strata at ab=exp(-2s/N), open. [The corrected hook/current reduction](hook_tree_phase_current_reduction.md) requires N^-2 sum_m exp(-2sm/N) H_m(U_N) -> -exp(-2s)/(4s^2) for each s>0, including Heisenberg degrees, repeated occupations and the Abel tail. The required negative plateau correction is not a small-error target. Literal signed marked T16, completed-source growing-degree covariance, actual Ward overlap (13), full balanced microscopic law, higher factorial comparison, TRACE-005 and BGS remain OPEN.
 
 
 ## Weighted coherence boundary
@@ -767,5 +767,5 @@ The actual unmasked q=1 one-pinch aggregate is closed at [TRACE-024](actual_one_
 
 ## Wave3 current insertion frontier
 
-The complete UNMASKED separated and convex insertion hierarchy is now closed by [TRACE-028](right_frame_unmasked_pinch_hierarchy.md), superseding older open wording for that complete normalized sum. Every z_N in [0,1] is included; j>=3 centered words have a uniform o(N) bound. Still open: Hamming/high-switch coefficient extraction, source weights/derivatives/rates, masked sums and marked-switch T16, signed centered deconvolution and the undamped zero-insertion spectral difference. [TRACE-029](convex_pinch_weak_noise_and_deconvolution.md) proves complete signed bounded-u stability only. Its actual unsigned large-log divergence comes from the retained identity contribution and does not refute T16; cancellation must be maintained before absolute estimates. Balanced law, Ward(13), TRACE005, higher factorial comparison and BGS remain OPEN.
+The complete UNMASKED separated and convex insertion hierarchy is now closed by [TRACE-028](right_frame_unmasked_pinch_hierarchy.md), superseding older open wording for that complete normalized sum. Every z_N in [0,1] is included; j>=3 centered words have a uniform o(N) bound. Still open: Hamming/high-switch coefficient extraction, source weights/derivatives/rates, masked sums and marked-switch T16, signed centered deconvolution and the undamped zero-insertion spectral difference. [TRACE-029](fixed-map/convex_pinch_weak_noise_and_deconvolution.md) proves complete signed bounded-u stability only. Its actual unsigned large-log divergence comes from the retained identity contribution and does not refute T16; cancellation must be maintained before absolute estimates. Balanced law, Ward(13), TRACE005, higher factorial comparison and BGS remain OPEN.
 

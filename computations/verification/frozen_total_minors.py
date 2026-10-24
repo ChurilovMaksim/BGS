@@ -218,7 +218,7 @@ def main() -> None:
     args = parser.parse_args()
     result = {
         "status": "all exact regression checks passed",
-        "scope": "Finite exact regressions; the all-N total-minor and algebraic-time proof is in mathematics/frozen_algebraic_spectral_simplicity.md; no CUE conclusion",
+        "scope": "Finite exact regressions; the all-N total-minor and algebraic-time proof is in mathematics/fixed-map/frozen_algebraic_spectral_simplicity.md; no CUE conclusion",
         "positive_decomposition": check_positive_decomposition(),
         "fourier_minor_valuations": check_fourier_valuations(),
         "joint_trace_leading_term": check_joint_leading_term(),

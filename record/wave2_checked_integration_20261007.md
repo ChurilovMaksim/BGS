@@ -2,7 +2,7 @@
 
 Prepared against clean canonical BGS commit 129c676b8e6457e7e5f1bd6f786b3939cbd84653; the five scoped cards have been integrated only into a separate candidate checkout, without Git staging, commits or publication. Canonical is untouched. Source proofs, reviewer reports and original receipts are byte-exact. Maintained wrappers state their current accepted scopes.
 
-- [Actual signed one-pinch disappearance](../mathematics/actual_one_pinch_disappearance.md): one combined unmasked q1 claim from accepted actual fixed-lag overlap and annealed deletion. Bounded weights for the positive consequence; smooth weights for signed subtraction. No aggregate rate/startup.
+- [Actual signed one-pinch disappearance](../mathematics/fixed-map/actual_one_pinch_disappearance.md): one combined unmasked q1 claim from accepted actual fixed-lag overlap and annealed deletion. Bounded weights for the positive consequence; smooth weights for signed subtraction. No aggregate rate/startup.
 - [Ordinary centering](../mathematics/ordinary_compact_stratum_centering.md): odd N>=3, a.e. stable strata, complete signed source, fixed-N cutoff and fixed derivatives. No uniform microscopic tail.
 - [Rounded/split barriers](../mathematics/rounding_simple_spectrum_endpoint_barriers.md): changed-family constructions; mandatory weakening of original rounding line 34 to a separating property or estimate.
 - [Phase literature qualification](../literature/wave2_phase_orbit_source_qualification_20261007.md): bounded applicability/attribution audit. No new load-bearing graph universality leaf.

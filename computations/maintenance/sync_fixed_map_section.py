@@ -8,7 +8,7 @@ from pathlib import Path
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE = ROOT/'mathematics/fixed_map_resolvent_frontier.md'
+SOURCE = ROOT/'mathematics/fixed-map/fixed_map_resolvent_frontier.md'
 TARGET = ROOT/'manuscript/unified_sections/fixed_map_frontier.tex'
 
 

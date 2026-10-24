@@ -458,7 +458,7 @@ Primary sources and explicit credit:
    BEST counting setup; all needed formulas are restated and checked above.
 4. ChurilovMaksim/BGS, mathematics/position_chain_mixing.md,
    blob 362ecbfe57040a99fb160bf757bc74259658dc63, and its stated
-   mathematics/four_branch_parametrix.md dependency.
+   mathematics/fixed-map/four_branch_parametrix.md dependency.
 
 The quantitative combination in this note has not received an external referee
 review or a complete literature-priority investigation. The Harer-Zagier

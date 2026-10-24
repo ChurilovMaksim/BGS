@@ -23,18 +23,18 @@ U eigenvectors with oldform subspaces.
 
 ## Inherited theorem inputs
 
-[Rank transfer](algebraic_time_rank_transfer.md),
+[Rank transfer](fixed-map/algebraic_time_rank_transfer.md),
 [cat multiplicity](uniform_cat_multiplicity.md), the complete
 [oldform tower](oldform_tower_compression.md), independently accepted
-[even](even_oldform_second_jet.md) and [odd](odd_oldform_second_jet.md)
-deepest-core splitting, and [newest-even-sector splitting](even_new_sector_first_jet.md)
+[even](fixed-map/even_oldform_second_jet.md) and [odd](odd_oldform_second_jet.md)
+deepest-core splitting, and [newest-even-sector splitting](fixed-map/even_new_sector_first_jet.md)
 retain their accepted scopes and source-bound reviews. The newest-sector
 premise, conditional in the original rank-transfer source, was separately
 accepted in the preceding packet. No cat-packet theorem is duplicated here.
 
 ## First-old quotient and the uniform count
 
-The [first-old classifier](first_old_layer_classification.md) applies to
+The [first-old classifier](fixed-map/first_old_layer_classification.md) applies to
 N=7*5^(2l+2), l>=1. Its quotient W1 orthogonal to W2 has dimension
 24N/625 and consists of complete size-seven cat eigenspaces. The norm classes
 c=2,4 modulo 5 account for exactly half of that quotient and give simple
@@ -99,7 +99,7 @@ Within a complete cat block, distinct first nonconstant phase coefficients
 give locally distinct branches. Different complete cat eigenvalues remain
 separated near t=0. The disjoint groups above therefore witness the stated
 rank lower bound for chi'_U(t)(U(t)) at sufficiently small nonzero real t.
-The [existing algebraic-time rank theorem](algebraic_time_rank_transfer.md)
+The [existing algebraic-time rank theorem](fixed-map/algebraic_time_rank_transfer.md)
 transfers that lower bound to every nonzero real algebraic t. Its sole
 external coefficient-separation input remains the registered
 Lindemann–Weierstrass dependency; no new external theorem is introduced.
@@ -110,7 +110,7 @@ N minus a gcd degree. Only full-column-rank iff gcd 1 is used. The
 [rank-transfer audit](../record/cat_jet_rank_review.md) retains these distinctions
 and the exact external coefficient-separation mapping.
 
-The [finite first-order companion](finite_cat_first_jet.md) proves simple U
+The [finite first-order companion](fixed-map/finite_cat_first_jet.md) proves simple U
 at N=35,175. N=35 remains an independent mechanism for the previously certified
 FM-008 case; no duplicate claim is created. N=175 remains bounded. The two
 finite general-return controls are not promoted into additional full-U cases.

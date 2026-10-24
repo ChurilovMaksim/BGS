@@ -260,7 +260,7 @@ The order certificate can be reproduced by repeated squaring:
 $31^{48}=1$, $31^{24}=-1$, and $31^{16}\ne1$ modulo 97.
 Thus neither 29 nor 97 needs exclusion for this scalar test.
 
-In fact the earlier [FM-010 proof](frozen_arithmetic_trace_rigidity.md)
+In fact the earlier [FM-010 proof](fixed-map/frozen_arithmetic_trace_rigidity.md)
 already proves a stronger all-odd-dimensional statement. For every
 $p\ge19$, the negative real-coefficient mass of the full raw symbol is
 $14/125$, so the $v_0$-orbit sum has real part at least

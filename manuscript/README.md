@@ -82,7 +82,7 @@ superseded at precisely this scope.
 | Source | Editing rule |
 |---|---|
 | Six `unified_sections/return_*.tex` chapters | Edit the maintained Markdown proofs; regenerate with `computations/maintenance/sync_return_sections.py` |
-| Fixed-map frontier | Edit `mathematics/fixed_map_resolvent_frontier.md`; use `computations/maintenance/sync_fixed_map_section.py` |
+| Fixed-map frontier | Edit `mathematics/fixed-map/fixed_map_resolvent_frontier.md`; use `computations/maintenance/sync_fixed_map_section.py` |
 | Finite-orbit resonance chapter | Edit its registered Markdown authority; use `computations/maintenance/sync_finite_orbit_section.py` |
 | Other included TeX sections | Maintain directly, respecting their registered mathematical sources and status |
 
@@ -156,7 +156,7 @@ remains useful, but later sections must be read subject to the current
 [claim ledger](../record/claim_ledger.md) and explicit corrections.
 
 For readers interested in the original central question, use this route:
-[exact model and fixed-map frontier](../mathematics/fixed_map_resolvent_frontier.md)
+[exact model and fixed-map frontier](../mathematics/fixed-map/fixed_map_resolvent_frontier.md)
 → [joint-trace bridge](../mathematics/trace-bridge/trace_to_local_statistics_bridge.md)
 → [actual-map intensity/path theorems](../mathematics/position_chain_mixing.md)
 → [balanced pair frontiers](../mathematics/phase_ward_identity.md)

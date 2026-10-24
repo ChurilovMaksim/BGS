@@ -20,8 +20,8 @@ four-branch WKB matrix using its explicit finite-shift construction.
 
 Let h=1/N, N odd, and retain exactly U_N=exp(i tau N A_N) M_N,
 tau=10^-80, ordinary symbol g and W_N(l,k)=(-1)^(kl)T_N(l,k) from
-`mathematics/fixed_map_path_model.md`. Let W0_N be the matrix obtained from
-`mathematics/four_branch_parametrix.md`, section 2, retaining just a_{r,0}:
+`mathematics/fixed-map/fixed_map_path_model.md`. Let W0_N be the matrix obtained from
+`mathematics/fixed-map/four_branch_parametrix.md`, section 2, retaining just a_{r,0}:
 
     (W0_N)_{jk}=e(3N/8) sqrt(h)/2
                     sum_{r=0}^3 e(S_r(tau,jh,kh)/h) a_{r,0}(tau,jh,kh).

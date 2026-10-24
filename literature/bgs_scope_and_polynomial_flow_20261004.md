@@ -18,7 +18,7 @@ polynomial joint scaling did not establish priority. Missing search hits
 are not evidence of originality.
 
 New load-bearing estimates are derived in
-[FLOW-011](../mathematics/coboundary_polynomial_limit.md).
+[FLOW-011](../mathematics/fixed-map/coboundary_polynomial_limit.md).
 The external Dyson kernel stays on the existing FLOW-007 dependency
 path, documented in
 [the 29 September source review](quadratic_noise_sources_20260929.md).

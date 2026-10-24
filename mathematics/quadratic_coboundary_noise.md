@@ -11,7 +11,7 @@ local limit. These do not complete deterministic noise removal.
 **Claim ID:** BGS-FLOW-003. **Status:** exact finite-dimensional project
 derivation with deterministic finite checks and author self-review.
 No priority claim; no fixed-map universality theorem. This note resolves a
-fourth-order question left open by [BGS-FLOW-002](coboundary_spectral_flow_bound.md).
+fourth-order question left open by [BGS-FLOW-002](fixed-map/coboundary_spectral_flow_bound.md).
 The noise constructed here is external and generally changes local statistics.
 
 ## 1. Exact covariance and its complete degeneracy criterion
@@ -437,7 +437,7 @@ $|\operatorname{Tr}U_N^2|\le C N^{39/40}$ would give
 $|m_2|=O(N^{-1/40})$ in (3) for the actual frozen family. This is an
 application of that earlier project bound, not a new audit of its proof.
 The covariance theorem itself needs no dynamical assumption.
-The [4 October direct packet proof](fixed_time_wavepacket_trace_bound.md)
+The [4 October direct packet proof](fixed-map/fixed_time_wavepacket_trace_bound.md)
 now gives $|\operatorname{Tr}U_N^2|=O(1)$, strengthening that application
 to $|m_2|=O(N^{-1})$. This improves the covariance rate, not the already
 available ellipticity or deterministic noise removal.

@@ -31,7 +31,7 @@ Poisson summation includes every discrete alias; deck permutations handle
 wrapped grid shifts and overlapping coordinate cutoffs. The four exact
 stationary classes give the unchanged protected monodromy constants.
 
-[Complete finite-grid proof](../../mathematics/finite_grid_one_step_trace_20261021.md).
+[Complete finite-grid proof](../../mathematics/fixed-map/finite_grid_one_step_trace.md).
 The quantum commutant and two-copy consequences in TRACE-109 therefore
 retain their numerical constants unconditionally.
 
@@ -41,7 +41,7 @@ The earlier all-time argument was read at its exact comb normalization,
 translation-uniform Gaussian summability, Abel composition, saturated contour,
 trace-class convergence, past/future graph splitting and zero-order Gaussian
 period normalization steps. A complete audit map is in
-[TRACE-113](../../mathematics/fixed_kick_uniform_trace_bound_20261021.md).
+[TRACE-113](../../mathematics/fixed-map/fixed_kick_uniform_trace_bound.md).
 
 The simplification is to use only $\gamma_h\to\gamma_0$ uniformly.
 It gives per-edge log-modulus error $\epsilon(h)\to0$. Since the actual
@@ -78,7 +78,7 @@ $|\operatorname{tr}_N U_N^m|\le Ce^{Km}N^{-1/5}$, and hence a uniform
 power saving on a sufficiently short logarithmic window. Squared Fejér
 kernels yield global discrepancy and sorted spectral matching of order
 $1/\log N$, without the all-time quantum/pressure route.
-[Full proof](../../mathematics/displacement_density_trace_bound_20261021.md).
+[Full proof](../../mathematics/fixed-map/displacement_density_trace_bound.md).
 
 The four stationary aliases, their exact action residues, actual Fourier
 Hessians and Jacobian normalization were recomputed as discriminating tests.

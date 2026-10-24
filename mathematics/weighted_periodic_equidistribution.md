@@ -12,7 +12,7 @@ G=S\circ\Phi_g^{\kappa},\qquad S=\begin{pmatrix}3&4\\2&3\end{pmatrix},
 \quad \kappa=10^{-80}/(2\pi),
 \]
 
-where `mathematics/fixed_model_symmetry_theorem.md` supplies the actual ordinary-midpoint symbol. For every fixed \(0<\alpha\le1\), there are constants \(C_\alpha,c_\alpha>0\), depending on the fixed map and exponent but not on \(n\) or the observable, such that
+where `mathematics/fixed-map/fixed_model_symmetry_theorem.md` supplies the actual ordinary-midpoint symbol. For every fixed \(0<\alpha\le1\), there are constants \(C_\alpha,c_\alpha>0\), depending on the fixed map and exponent but not on \(n\) or the observable, such that
 
 \[
 \left|\sum_{G^nx=x}\frac{a(x)}{|\det(I-DG^n(x))|}

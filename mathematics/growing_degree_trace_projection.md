@@ -12,7 +12,7 @@ or standard mechanisms, not world-priority claims.
 
 Use the full normalized unitary heat semigroup of FLOW-015 and the
 neutral span $\mathcal H_{Q,N}$ and Haar projection $\mathsf P_{Q,N}$ of
-[FLOW-019](fixed_degree_heat_projection.md). Let $Q\ge0$ and $N\ge\max(3,2Q)$.
+[FLOW-019](fixed-map/fixed_degree_heat_projection.md). Let $Q\ge0$ and $N\ge\max(3,2Q)$.
 For variance $v>0$ define the complex Wick polynomial
 
 $$
@@ -182,7 +182,7 @@ a Heisenberg trace cancellation estimate. The new uniformity is proved
 below, rather than inferred from the fixed-$j$ thresholds of FM-013.
 
 Use the exact coherent frame, sampling intertwining and odd-N metaplectic
-descent of [FM-013](fixed_time_wavepacket_trace_bound.md), (2)--(6).
+descent of [FM-013](fixed-map/fixed_time_wavepacket_trace_bound.md), (2)--(6).
 Its symbol is a fixed finite Fourier polynomial; the kick time remains
 $\kappa=10^{-80}/(2\pi)$. Along the piecewise classical path through $j$
 kicks and $j$ linear cat steps, the variational matrix $J(s)$ and its

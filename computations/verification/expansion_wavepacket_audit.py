@@ -312,8 +312,8 @@ def main():
                           'Heisenberg trace cancellation', 'BGS', 'priority',
                           'independent referee', 'Lean compilation']}
     sources = ['mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md',
-               'mathematics/egorov_overlap_rigidity.md',
-               'mathematics/fixed_time_wavepacket_trace_bound.md',
+               'mathematics/fixed-map/egorov_overlap_rigidity.md',
+               'mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md',
                'computations/verification/expansion_wavepacket_audit.py']
     data['source_sha256'] = {name: hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
                              for name in sources}

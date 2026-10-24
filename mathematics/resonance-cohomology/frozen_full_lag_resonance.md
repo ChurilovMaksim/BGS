@@ -4,7 +4,7 @@ Stable claim ID: `BGS-RES-005`. Date: 23 September 2026.
 
 Status: project proof with separate internal derivation audit; no external referee or priority claim. This concerns brackets transported by the *linear* map S, not the nonlinear kicked classical map and not quantum joint traces or BGS.
 
-Let S=[[3,4],[2,3]], A=S^T, lambda=3+2 sqrt(2), C f=f composed with S, and let g be precisely the ordinary-Weyl physical symbol (1) of `mathematics/fixed_model_symmetry_theorem.md`. Put h_r={g,C^r g}/(4 pi), r>=1. The bracket convention is {f,k}=f_q k_p-f_p k_q, so its Fourier pair coefficient is -pi det(u,A^r v). With normalized torus measure, every finite complex array a_(r,l), r>=1, l in Z, satisfies
+Let S=[[3,4],[2,3]], A=S^T, lambda=3+2 sqrt(2), C f=f composed with S, and let g be precisely the ordinary-Weyl physical symbol (1) of `mathematics/fixed-map/fixed_model_symmetry_theorem.md`. Put h_r={g,C^r g}/(4 pi), r>=1. The bracket convention is {f,k}=f_q k_p-f_p k_q, so its Fourier pair coefficient is -pi det(u,A^r v). With normalized torus measure, every finite complex array a_(r,l), r>=1, l in Z, satisfies
 
     (7 pi/2)^2 sum |a_(r,l)|^2
       <= ||sum a_(r,l) lambda^(-r) C^l h_r||_2^2

@@ -194,7 +194,7 @@ actual-symbol first-response checks show why that stronger step is unsafe.
 ## 6. Exact finite-group grid and the Fourier quadrature bound
 
 The periodic-grid/annihilator identities are prior project work in
-mathematics/frozen_periodic_point_annihilator.md; they are reproduced here
+mathematics/fixed-map/frozen_periodic_point_annihilator.md; they are reproduced here
 only to check the normalization needed by the new Holder quadrature step.
 
 Write S^m=[[a_m,2b_m],[b_m,a_m]], a_m²-2b_m²=1, and

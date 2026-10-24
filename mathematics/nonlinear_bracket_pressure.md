@@ -9,7 +9,7 @@ result, not a Heisenberg-time trace estimate, a priority claim, or BGS.
 ## 1. The statement
 
 Fix the exact ordinary-midpoint symbol $g$ in
-[`fixed_model_symmetry_theorem.md`](fixed_model_symmetry_theorem.md), its
+[`fixed_model_symmetry_theorem.md`](fixed-map/fixed_model_symmetry_theorem.md), its
 Hamiltonian vector field $X_g=(g_p,-g_q)$, and
 
 $$
