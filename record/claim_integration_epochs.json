@@ -550,14 +550,14 @@
     {
       "id": "BGS-RET-003",
       "state": "conditional",
-      "source": "mathematics/noncommuting_return_words.md",
+      "source": "mathematics/returns/noncommuting_return_words.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Conditional on the exact return identity (RW.1) and on the pairwise disjoint tower E_j=S^{-j}E, 0<=j<L, for the chosen symbols; anti-palindromic lists h_{L-1-j}=-h_j satisfy (RW.1) automatically for every e and N. Uniform for |kappa|<=B, each fixed B. The explicit four-site example of the section is registered separately as BGS-RET-004: its tower disjointness rests on the exact integer certificate named in the section (computations/cpp/return_word_certificate.cpp, with its deposited PASS log) and on the independent Python verifier computations/verification/noncommuting_tower.py.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
     {
       "id": "BGS-RET-004",
       "state": "proved",
-      "source": "mathematics/noncommuting_return_words.md",
+      "source": "mathematics/returns/noncommuting_return_words.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. The explicit example only: S=[[3,4],[2,3]], r=1/96, z=(5/11,0), symbols a,b as in (RW.15). Pairwise disjointness of E, S^{-1}E, S^{-2}E, S^{-3}E is a finite exact-rational assertion (30 separation obligations, base-lobe margin 37/528), certified by the C++ integer verifier named in the section with its deposited PASS log and independently by the Python verifier; the Python exact-geometry check was replayed on the current revision on 2026-10-20 and reproduced 37/528, 30 separations and the 1/288 area bound. Nonvanishing of {g,Cg} is the point evaluation (RW.9) in the source; Gamma_T(g)=0 is (RW.10). The floating-point unitary and ODE parts of the Python verifier are falsifiers, not proof inputs. No hypothesis of BGS-RET-003 is discharged for any other data.",
       "review": "record/audits/repository_recheck_20261022/report.md"
     },
@@ -1613,6 +1613,19 @@
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of this claim's source from mathematics/local_jet_resonance_obstruction.md to mathematics/resonance-cohomology/local_jet_resonance_obstruction.md (P2-MATH wave 7); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-P2MATH7.md"
+    },
+    {
+      "id": "BGS-FM-002",
+      "historical_row_sha256": "77c66814b3f714c21a6eaef51e2b87302b89a1c18db101da5f763204e4f98d78",
+      "fields": {
+        "proof_dependencies": [
+          "mathematics/returns/smooth_recurrence_and_compensation.md",
+          "supplement/fixed_map/design-return/finite_symbol_normal_form.md",
+          "supplement/fixed_map/design-return/sparse_orbit_theorem.md"
+        ]
+      },
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of the first proof_dependencies leaf from mathematics/smooth_recurrence_and_compensation.md to mathematics/returns/smooth_recurrence_and_compensation.md (P2-MATH wave 4); no status, source, or content change.",
+      "review": "archive/MANIFEST-P2MATH4.md"
     }
   ]
 }

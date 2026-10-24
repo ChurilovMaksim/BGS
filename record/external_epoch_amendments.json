@@ -1,4 +1,97 @@
 {
   "schema": "bgs-external-epoch-amendment-v1",
-  "amendments": []
+  "amendments": [
+    {
+      "id": "EXT-SOSH-2000",
+      "field": "project_sources",
+      "old_value": [
+        "mathematics/coboundary_all_order_limit.md",
+        "literature/all_order_sources_20261005.md",
+        "literature/return_local_limits_sources.md",
+        "record/claim_ledger.md",
+        "mathematics/return_trace_obstruction.md"
+      ],
+      "new_value": [
+        "mathematics/coboundary_all_order_limit.md",
+        "literature/all_order_sources_20261005.md",
+        "literature/return_local_limits_sources.md",
+        "record/claim_ledger.md",
+        "mathematics/returns/return_trace_obstruction.md"
+      ],
+      "historical_contract_sha256": "b64623c64b7731feda6aed90041a57c07e1d0e2f7bc17e16e9e8a420ae3f2f44",
+      "wave": "P2-MATH wave 4",
+      "disposition": "Preserve the sealed contract; admit only the phase-2 topical relocation of the returns note path(s) in this field to mathematics/returns/ (P2-MATH wave 4); no other field, status, or content change.",
+      "review": "archive/MANIFEST-P2MATH4.md"
+    },
+    {
+      "id": "EXT-SOSH-2000",
+      "field": "additional_uses",
+      "old_value": [
+        {
+          "role": "proof_input_for_sine_ergodicity_example",
+          "project_sources": [
+            "mathematics/return_trace_obstruction.md"
+          ],
+          "mapping": "Sine projection kernel is translation invariant and a locally trace-class Hermitian positive contraction. Theorem 7 supplies ergodicity/mixing, not convergence for the deterministic map.",
+          "checked_on": "2026-10-06"
+        }
+      ],
+      "new_value": [
+        {
+          "role": "proof_input_for_sine_ergodicity_example",
+          "project_sources": [
+            "mathematics/returns/return_trace_obstruction.md"
+          ],
+          "mapping": "Sine projection kernel is translation invariant and a locally trace-class Hermitian positive contraction. Theorem 7 supplies ergodicity/mixing, not convergence for the deterministic map.",
+          "checked_on": "2026-10-06"
+        }
+      ],
+      "historical_contract_sha256": "b64623c64b7731feda6aed90041a57c07e1d0e2f7bc17e16e9e8a420ae3f2f44",
+      "wave": "P2-MATH wave 4",
+      "disposition": "Preserve the sealed contract; admit only the phase-2 topical relocation of the returns note path(s) in this field to mathematics/returns/ (P2-MATH wave 4); no other field, status, or content change.",
+      "review": "archive/MANIFEST-P2MATH4.md"
+    },
+    {
+      "id": "EXT-CC-2013",
+      "field": "project_sources",
+      "old_value": [
+        "mathematics/periodic_point_trace_comparison.md"
+      ],
+      "new_value": [
+        "mathematics/returns/periodic_point_trace_comparison.md"
+      ],
+      "historical_contract_sha256": "2bccdbd9a14080051525eb78ac200801ddf29fe4624051503434131f960030fc",
+      "wave": "P2-MATH wave 4",
+      "disposition": "Preserve the sealed contract; admit only the phase-2 topical relocation of the returns note path(s) in this field to mathematics/returns/ (P2-MATH wave 4); no other field, status, or content change.",
+      "review": "archive/MANIFEST-P2MATH4.md"
+    },
+    {
+      "id": "EXT-PY-2015",
+      "field": "project_sources",
+      "old_value": [
+        "mathematics/fixed_harmonic_return_gas.md"
+      ],
+      "new_value": [
+        "mathematics/returns/fixed_harmonic_return_gas.md"
+      ],
+      "historical_contract_sha256": "992da7bd6b3c04079516c4fef81020d9d382e7a280c44e7eea58eda82bae881b",
+      "wave": "P2-MATH wave 4",
+      "disposition": "Preserve the sealed contract; admit only the phase-2 topical relocation of the returns note path(s) in this field to mathematics/returns/ (P2-MATH wave 4); no other field, status, or content change.",
+      "review": "archive/MANIFEST-P2MATH4.md"
+    },
+    {
+      "id": "EXT-DH-2011",
+      "field": "project_sources",
+      "old_value": [
+        "mathematics/return_trace_obstruction.md"
+      ],
+      "new_value": [
+        "mathematics/returns/return_trace_obstruction.md"
+      ],
+      "historical_contract_sha256": "3b71070ce48c7d8c61da5aa4aff328330e6e3b65689aaf473c407776545183f5",
+      "wave": "P2-MATH wave 4",
+      "disposition": "Preserve the sealed contract; admit only the phase-2 topical relocation of the returns note path(s) in this field to mathematics/returns/ (P2-MATH wave 4); no other field, status, or content change.",
+      "review": "archive/MANIFEST-P2MATH4.md"
+    }
+  ]
 }

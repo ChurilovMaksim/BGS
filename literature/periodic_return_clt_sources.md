@@ -22,7 +22,7 @@ e78124655b7ecf9f5e7cbc691ed2f8505d2fac5272bbbb72040f88926996ae9d.
 The public source is retained in the ignored literature cache.
 
 The centered-cell coupling and the even-period quantum comparison are
-derived in [the working note](../mathematics/periodic_point_trace_comparison.md).
+derived in [the working note](../mathematics/returns/periodic_point_trace_comparison.md).
 The replica argument adapts the project's earlier finite unitary
 normal form; it is not a newly claimed general averaging principle.
 External priority and microscopic BGS universality remain unestablished.
@@ -37,7 +37,7 @@ That theorem concerns smooth-observable expectations in a specified
 short-period eigenfunction family, with an error of order $1/\log N$.
 Its map assumptions include $\gcd(b,c)=1$.
 
-The claims in [the general cat-map note](../mathematics/general_cat_return_laws.md)
+The claims in [the general cat-map note](../mathematics/returns/general_cat_return_laws.md)
 instead concern full normalized return traces and the empirical spectrum
 of period-averaged observables. The eigenfunction theorem is neither
 a proof input nor an equivalent statement of these claims.

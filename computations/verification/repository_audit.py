@@ -82,7 +82,7 @@ REQUIRED = [
 ACTIVE_MARKDOWN = [
     ROOT / "record" / "return_local_limits_review_20260913.md",
     ROOT / "literature" / "return_local_limits_sources.md",
-    ROOT / "mathematics" / "return_trace_obstruction.md",
+    ROOT / "mathematics" / "returns" / "return_trace_obstruction.md",
     ROOT / "record" / "return_obstruction_review_20260912.md",
     ROOT / "RESEARCH.md",
     ROOT / "record" / "publication_review_20260912.md",

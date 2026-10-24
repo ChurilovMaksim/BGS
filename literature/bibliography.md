@@ -434,7 +434,7 @@ black-box proof dependency.
 - Guillaume Cébron, Patrick Oliveira Santos, Pierre Youssef, *Graphon-Theoretic Approach to Central Limit Theorems for epsilon-Independence*, [arXiv:2411.13062v2](https://arxiv.org/abs/2411.13062v2). arXiv:2411.13062v2 (2024-11-29). Theorem 1.1, Section 2; Proposition 2.6; Sections 4–5. Role: `attribution_not_arithmetic_proof_input`. Graphon crossing-pair moments are prior. No finite epsilon-independence hypothesis is claimed for Weyl arrays. Proposition 2.6 requires sup|w|<1 and does not establish a density for indicator w_beta at beta<1/2.
 
 Soshnikov's existing `EXT-SOSH-2000` entry now also records the sine-process
-ergodicity use in `return_trace_obstruction.md`; no duplicate source ID was
+ergodicity use in `returns/return_trace_obstruction.md`; no duplicate source ID was
 created. The documented internal prerequisite of RET-001 is RET-002.
 
 Independent corpus reviews expand four application checks in the cached

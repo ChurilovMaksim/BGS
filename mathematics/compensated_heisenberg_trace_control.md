@@ -1,7 +1,7 @@
 # Heisenberg-window control for the explicitly compensated family
 
 This is a direct quantitative corollary of Theorem 3 in
-[smooth_recurrence_and_compensation.md](smooth_recurrence_and_compensation.md),
+[smooth_recurrence_and_compensation.md](returns/smooth_recurrence_and_compensation.md),
 not a positive BGS theorem or a newly claimed general perturbation method.
 The family, its vanishing classical strength and its norms are essential.
 The finite verifier checks normalization and the cluster estimate; it does not

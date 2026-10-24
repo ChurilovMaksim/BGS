@@ -1,7 +1,7 @@
 # Return obstruction: scoped research review, 12 September 2026
 
 Base checkpoint: `96b0abd6386704b7fdf4be57a2d7a5223f8161af`.
-Proof: [return_trace_obstruction.md](../mathematics/return_trace_obstruction.md).
+Proof: [return_trace_obstruction.md](../mathematics/returns/return_trace_obstruction.md).
 
 ## Verdict and dependencies
 

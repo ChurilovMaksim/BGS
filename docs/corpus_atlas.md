@@ -375,15 +375,15 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
-| [Analytic and smooth position kicks: resonances and return asymptotics](../mathematics/analytic_kick_return_gas.md) | Consult proof and full ledger |
-| [Fixed-harmonic returns from a convergent complex gas](../mathematics/fixed_harmonic_return_gas.md) | Consult proof and full ledger |
-| [Return laws and a sharp regularity boundary for every hyperbolic toral automorphism](../mathematics/general_cat_return_laws.md) | Consult proof and full ledger |
-| [A convergent pressure formula for arithmetic quantum returns](../mathematics/hyperbolic_return_pressure.md) | Consult proof and full ledger |
-| [Scope and the new distinction](../mathematics/noncommuting_return_words.md) | `BGS-RET-003` (conditional); `BGS-RET-004` (proved) |
-| [A return-trace comparison for general smooth phase-space symbols](../mathematics/periodic_point_trace_comparison.md) | Consult proof and full ledger |
-| [General analytic phase-space kicks and the regularity of return averages](../mathematics/phase_space_return_gas.md) | Consult proof and full ledger |
-| [Short quantum returns, intensity loss, and local spectral limits](../mathematics/return_trace_obstruction.md) | Consult proof and full ledger |
-| [Status and conventions](../mathematics/smooth_recurrence_and_compensation.md) | Consult proof and full ledger |
+| [Analytic and smooth position kicks: resonances and return asymptotics](../mathematics/returns/analytic_kick_return_gas.md) | Consult proof and full ledger |
+| [Fixed-harmonic returns from a convergent complex gas](../mathematics/returns/fixed_harmonic_return_gas.md) | Consult proof and full ledger |
+| [Return laws and a sharp regularity boundary for every hyperbolic toral automorphism](../mathematics/returns/general_cat_return_laws.md) | Consult proof and full ledger |
+| [A convergent pressure formula for arithmetic quantum returns](../mathematics/returns/hyperbolic_return_pressure.md) | Consult proof and full ledger |
+| [Scope and the new distinction](../mathematics/returns/noncommuting_return_words.md) | `BGS-RET-003` (conditional); `BGS-RET-004` (proved) |
+| [A return-trace comparison for general smooth phase-space symbols](../mathematics/returns/periodic_point_trace_comparison.md) | Consult proof and full ledger |
+| [General analytic phase-space kicks and the regularity of return averages](../mathematics/returns/phase_space_return_gas.md) | Consult proof and full ledger |
+| [Short quantum returns, intensity loss, and local spectral limits](../mathematics/returns/return_trace_obstruction.md) | Consult proof and full ledger |
+| [Status and conventions](../mathematics/returns/smooth_recurrence_and_compensation.md) | Consult proof and full ledger |
 
 ### Pell, echoes and harmonic transitions
 

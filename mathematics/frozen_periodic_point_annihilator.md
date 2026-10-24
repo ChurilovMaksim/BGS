@@ -8,7 +8,7 @@ averaging statement but supported its threshold with a floating eigenvector
 search. Here an exact Pell factorization supplies the missing uniform
 argument. Related arithmetic and a special even-time grid already occur in
 [the arithmetic trace note](frozen_arithmetic_trace_rigidity.md) and
-[the periodic-point trace comparison](periodic_point_trace_comparison.md),
+[the periodic-point trace comparison](returns/periodic_point_trace_comparison.md),
 Section 2. This is an explicit all-time specialization of that arithmetic,
 not a new universality mechanism.
 

@@ -181,4 +181,4 @@ adds all fixed factorial orders and one-chain $L^2$ origin averages on a
 superpolynomial schedule at the same time. Faster actual-start relaxation
 at $N^{-2/3}$ and deterministic noise removal remain open, as do
 BGS-TRACE-005 and BGS-BGS-001. Prior intensity-loss obstructions are
-recorded in [the return note](return_trace_obstruction.md).
+recorded in [the return note](returns/return_trace_obstruction.md).

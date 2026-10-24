@@ -8,8 +8,8 @@ currently includes [BGS-RET-001](../../mathematics/pell_harmonic_returns.md)
 (the actual kicked Pell-propagator harmonic return law) and
 [BGS-RET-002](../../mathematics/pell_harmonic_transition.md)
 (the harmonic-scale transition). Related authoritative reading includes the
-[general hyperbolic return laws](../../mathematics/general_cat_return_laws.md)
-and the [short-return spectral obstruction](../../mathematics/return_trace_obstruction.md).
+[general hyperbolic return laws](../../mathematics/returns/general_cat_return_laws.md)
+and the [short-return spectral obstruction](../../mathematics/returns/return_trace_obstruction.md).
 
 These are not the same statement as a microscopic eigenphase point-process
 limit: a law on return subsequences or at logarithmic/arithmetic scales

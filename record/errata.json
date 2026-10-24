@@ -368,7 +368,7 @@
       "title": "Explicit return-word example registered as BGS-RET-004; BGS-RET-003 boundary note corrected",
       "disposition": "example claim registered as proved on the named exact finite certificate; stale 'unnamed certificate' wording removed from BGS-RET-003",
       "downstream": "record/claims.json and record/claim_registry.md gain BGS-RET-004 (PROVED) for the explicit example of manuscript/unified_sections/return_words.tex: tower disjointness rests on computations/cpp/return_word_certificate.cpp (named in the section, git blob ad80a3832555fac3a0afea2013a60a3de6522113; deposited PASS log) and on computations/verification/noncommuting_tower.py, whose exact-geometry check was replayed on the current revision on 2026-10-20 and reproduced margin 37/528, 30 separations and the 1/288 area bound. BGS-RET-003 keeps its CONDITIONAL state; only its boundary tail is corrected, because the section does name the certificate.",
-      "authority": "mathematics/noncommuting_return_words.md",
+      "authority": "mathematics/returns/noncommuting_return_words.md",
       "authority_note": "record/errata.json (scientific repair follow-up, 2026-10-20)"
     },
     {

@@ -25,7 +25,7 @@ $$
 Thus $K=6,10,14,\ldots$ and $N=35,1189,40391,\ldots$.
 Both $N$ and $a$ are units relative to $2$ and $N$, respectively.
 Let $U_0W(w)U_0^{-1}=W(Aw)$, with the centered convention of
-[the pressure note](../hyperbolic_return_pressure.md), and choose its scalar
+[the pressure note](../returns/hyperbolic_return_pressure.md), and choose its scalar
 phase so that $U_0^K=I$. Define
 $$
  U_{\epsilon}=e^{2i\epsilon\cos(2\pi ax/N)}U_0.                \tag{S2}

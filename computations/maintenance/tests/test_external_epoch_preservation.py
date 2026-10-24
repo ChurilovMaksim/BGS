@@ -4,8 +4,10 @@ The sealed 39-row leaf admits reviewed succession only through
 record/external_epoch_amendments.json: a sealed contract passes iff it is
 byte-identical to the sealed record (apart from the provenance-only
 metadata_audit pointer) or differs only in recorded fields at exactly the
-recorded values. Scratch amendments below live only in temporary roots;
-the committed store stays empty until a wave lands its own rows.
+recorded values. Scratch amendments below live only in temporary roots. The scratch
+registry is built from the sealed baseline (see fixture), so the
+controls stay valid after waves land their own reviewed rows in
+the committed store (first: P2-MATH wave 4, five rows).
 """
 import copy
 import hashlib
@@ -28,7 +30,19 @@ class ExternalEpochPreservation(unittest.TestCase):
         destination.parent.mkdir(parents=True)
         destination.write_bytes((ROOT/relative).read_bytes())
         (root/'literature').mkdir()
-        registry=json.loads((ROOT/'literature/external_dependencies.json').read_text())
+        # Sealed baseline, not the live registry: once a wave lands reviewed
+        # amendment rows, the live registry already differs from the sealed
+        # rows, and scratch stores (save_store replaces the committed store)
+        # would leave those landed differences unrecorded. Building the
+        # scratch registry from the sealed snapshot plus the live
+        # admitted-later rows keeps every scratch control independent of
+        # which waves have landed; admitted rows are not byte-compared.
+        sealed=json.loads(destination.read_text())['dependencies']
+        sealed_ids={row['id'] for row in sealed}
+        live=json.loads((ROOT/'literature/external_dependencies.json').read_text())
+        registry={'schema':live['schema'],'updated':live.get('updated'),
+                  'dependencies':sealed+[row for row in live['dependencies']
+                                         if row['id'] not in sealed_ids]}
         self.save(root,registry)
         (root/'record').mkdir(exist_ok=True)
         store=ROOT/'record/external_epoch_amendments.json'

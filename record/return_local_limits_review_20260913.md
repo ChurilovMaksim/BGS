@@ -2,7 +2,7 @@
 
 Checkpoint: return-local-limits, 13 September 2026.
 Base: 26fa76b8eeb6d1259381474372b40e161383f219.
-Authoritative proof: [return_trace_obstruction.md](../mathematics/return_trace_obstruction.md),
+Authoritative proof: [return_trace_obstruction.md](../mathematics/returns/return_trace_obstruction.md),
 Theorem 3, its sharpness construction, (S22), (S24), and (S25)--(S26).
 
 ## Verdict

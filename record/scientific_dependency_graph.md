@@ -119,8 +119,8 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-RES-023](../mathematics/resonance-cohomology/resonance_nondegeneracy_and_hessian.md) | proved | `BGS-RES-022` | None registered | 0 |
 | [BGS-RET-001](../mathematics/pell_harmonic_returns.md) | proved | `BGS-RET-002` | `EXT-DEMNI-2016` | 0 |
 | [BGS-RET-002](../mathematics/pell_harmonic_transition.md) | proved | None registered | None registered | 1 |
-| [BGS-RET-003](../mathematics/noncommuting_return_words.md) | conditional | None registered | None registered | 0 |
-| [BGS-RET-004](../mathematics/noncommuting_return_words.md) | proved | None registered | None registered | 0 |
+| [BGS-RET-003](../mathematics/returns/noncommuting_return_words.md) | conditional | None registered | None registered | 0 |
+| [BGS-RET-004](../mathematics/returns/noncommuting_return_words.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-001](../mathematics/trace_to_local_statistics_bridge.md) | proved | None registered | None registered | 11 |
 | [BGS-TRACE-002](../mathematics/trace_to_local_statistics_bridge.md) | proved | `BGS-TRACE-001` | None registered | 8 |
 | [BGS-TRACE-003](../mathematics/trace_to_local_statistics_bridge.md) | proved | `BGS-TRACE-002` | None registered | 4 |

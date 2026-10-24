@@ -532,7 +532,7 @@ not merely one residual row.
 
 
 The short-return necessary condition is now explicit in
-`return_trace_obstruction.md`: an ergodic intensity-one local limit requires
+`returns/return_trace_obstruction.md`: an ergodic intensity-one local limit requires
 all normalized sublinear-time traces to vanish, and mesoscopic empirical
 densities to become uniform in spatial L1. For the current positive-variance
 Gevrey return regime this requires $K\epsilon_K^2\to\infty$.

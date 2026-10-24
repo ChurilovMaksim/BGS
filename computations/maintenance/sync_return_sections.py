@@ -14,12 +14,12 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCES = (
-    ('fixed_harmonic_return_gas', 'gas'),
-    ('analytic_kick_return_gas', 'position'),
-    ('periodic_point_trace_comparison', 'periodic'),
-    ('phase_space_return_gas', 'phase'),
-    ('general_cat_return_laws', 'general'),
-    ('return_trace_obstruction', 'obstruction'),
+    ('returns/fixed_harmonic_return_gas', 'gas'),
+    ('returns/analytic_kick_return_gas', 'position'),
+    ('returns/periodic_point_trace_comparison', 'periodic'),
+    ('returns/phase_space_return_gas', 'phase'),
+    ('returns/general_cat_return_laws', 'general'),
+    ('returns/return_trace_obstruction', 'obstruction'),
 )
 
 

@@ -2,7 +2,7 @@
 """Exact vector-phase/gap controls; a separate finite matrix diagnostic.
 
 Finite checks support, but do not replace, the growing-parameter proofs
-in mathematics/phase_space_return_gas.md. No dense matrix is built at the
+in mathematics/returns/phase_space_return_gas.md. No dense matrix is built at the
 large moduli used for the regularity counterexample.
 """
 from __future__ import annotations

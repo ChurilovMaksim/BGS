@@ -193,7 +193,7 @@
       ],
       "boundary": "Frozen epsilon_K=tau N_K lies outside the proved bounded crossover window. The general finite-symbol extension assumes mean zero; otherwise the scalar phase must be split off. The centered-model theorem and its range are unchanged.",
       "proof_dependencies": [
-        "mathematics/smooth_recurrence_and_compensation.md",
+        "mathematics/returns/smooth_recurrence_and_compensation.md",
         "supplement/fixed_map/design-return/finite_symbol_normal_form.md",
         "supplement/fixed_map/design-return/sparse_orbit_theorem.md"
       ]
@@ -4805,7 +4805,7 @@
       "title": "Noncommuting return words: all-orders quantum conjugacy under the exact return identity",
       "state": "conditional",
       "ledger_status": "CONDITIONAL PROJECT PROOF + INDEPENDENT INTERNAL REVIEW",
-      "source": "mathematics/noncommuting_return_words.md",
+      "source": "mathematics/returns/noncommuting_return_words.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [],
@@ -4824,7 +4824,7 @@
       "title": "Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0",
       "state": "proved",
       "ledger_status": "PROJECT PROOF + EXACT FINITE CERTIFICATE + INDEPENDENT INTERNAL REVIEW",
-      "source": "mathematics/noncommuting_return_words.md",
+      "source": "mathematics/returns/noncommuting_return_words.md",
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
