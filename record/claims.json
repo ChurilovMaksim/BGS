@@ -487,7 +487,7 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Single-anchor/all-order and countably dense mixed tests suffice for the whole-space compact-uniform hypothesis. FM-007 is used only for actual logarithmic short-leg deletion, O(N^(-1/40) log N) with the original denominator, not for external characterization. Actual anchors, long-long signed residual and full hierarchy remain open."
+      "boundary": "Single-anchor/all-order and countably dense mixed tests suffice for the whole-space compact-uniform hypothesis. FM-007 is used only for actual logarithmic short-leg deletion, O(N^(-1/40) log N) with the original denominator, not for external characterization. Actual anchors, long-long signed residual and full hierarchy remain open. Formalization coverage is integer kernels only: formalization/Bgs/CueLoopKernels.lean proves cleared-denominator cubic identities (cubic_below_dimension, cubic_positive_part, eliminate_cubic); it does not formalize trace expectations, real/complex analysis, or BGS."
     },
     {
       "id": "BGS-RES-001",
