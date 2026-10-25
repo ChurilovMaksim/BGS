@@ -680,7 +680,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/audit_and_frontier.tex"
+        "manuscript/unified_sections/appendix_b_provenance_and_verification.tex"
       ],
       "boundary": "Deterministic finite-N identity."
     },
@@ -698,7 +698,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/audit_and_frontier.tex"
+        "manuscript/unified_sections/appendix_b_provenance_and_verification.tex"
       ],
       "boundary": "Compact Fourier support probes trace powers of order N."
     },
@@ -716,7 +716,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/audit_and_frontier.tex"
+        "manuscript/unified_sections/appendix_b_provenance_and_verification.tex"
       ],
       "boundary": "Triangle-inequality sufficiency only; averaging is before modulus. TRACE-010 excludes simultaneous unaveraged all-order absolute CUE premises under pair absolute comparison. The exact signed bridge is viable but its actual-map estimate is open."
     },
@@ -734,7 +734,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/audit_and_frontier.tex"
+        "manuscript/unified_sections/appendix_b_provenance_and_verification.tex"
       ],
       "boundary": "Requires positive normalized spectral averages and a reference Schwartz limit; a single fixed bandwidth is insufficient."
     },
@@ -4334,7 +4334,7 @@
         "formalization/Bgs/PellFourierKernel.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/ch07_floquet_resonance.tex"
+        "manuscript/unified_sections/ch07_floquet_coboundary_resonance.tex"
       ],
       "boundary": "K through odd primes; epsilon=tau/sqrt(2K) with fixed real tau; odd subspace, normalized trace Tr_-/d_N. The principal finite estimate (FN.D) is a normalized Hilbert-Schmidt bound: it does not control an individual level or an operator-norm spectral gap. No Heisenberg-scale joint traces, microscopic local statistics, or fixed nonzero classical-kick universality. Formalization coverage is finite certificates only: the three listed modules prove cleared-denominator weight/echo identities and the finite K=11 pair-key certificates (220 keys, unique, nonzero); they prove no analytic limit or microscopic law."
     },
@@ -4358,7 +4358,7 @@
         "formalization/Bgs/PellCoboundary.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/ch07_coboundary_resonance.tex"
+        "manuscript/unified_sections/ch07_floquet_coboundary_resonance.tex"
       ],
       "boundary": "Coboundary propagator V of (CB.1), with the T-covariant U_0 of the finite Floquet construction; in coboundary_part1.tex this U_0 is the operator called U_N=VU_0V^* in the Floquet parts (notation collision flagged by group 4). t_K=2 eps_K^2 sin(4pi/N) sqrt(K) -> t in [0,infty); fixed integer m. No statement that the old clusters remain separate or keep identifiable ranks in the subcritical folded-phase law. Formalization coverage is finite certificates only: formalization/Bgs/PellCoboundary.lean proves the universal integer structural identity and the finite K=11 pair-key certificates (880 keys, 836 distinct, multiplicity at most 2); it is not a formalization of the general coboundary law."
     },
@@ -4382,7 +4382,7 @@
         "formalization/Bgs/PellCoboundary.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/ch07_coboundary_resonance.tex"
+        "manuscript/unified_sections/ch07_floquet_coboundary_resonance.tex"
       ],
       "boundary": "Whole odd space and global mean-spacing normalization only. Condition (CB.4) is necessary only; no positive universality theorem beyond it is proved. No density-adapted unfolding or further-sector result. Formalization coverage is finite certificates only: formalization/Bgs/PellCoboundary.lean proves the universal integer structural identity and the finite K=11 pair-key certificates (880 keys, 836 distinct, multiplicity at most 2); it is not a formalization of the general coboundary law."
     },
@@ -4407,7 +4407,7 @@
         "formalization/Bgs/PellFourierKernel.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/ch07_floquet_resonance.tex"
+        "manuscript/unified_sections/ch07_floquet_coboundary_resonance.tex"
       ],
       "boundary": "Kicked Pell family of Theorem A only; global mean-density unfolding of the complete odd space, compact tests. Necessary condition |eps_K| sqrt(K) -> infty only, not a sufficient universality criterion. Does not settle nearest-neighbour distributions individually, density-adapted re-unfolding, a further desymmetrized block, or fixed nonzero classical kicks; not a refutation of a correctly qualified generic BGS conjecture. Formalization coverage is finite certificates only: the three listed modules prove cleared-denominator weight/echo identities and the finite K=11 pair-key certificates (220 keys, unique, nonzero); they prove no analytic limit or microscopic law."
     },
