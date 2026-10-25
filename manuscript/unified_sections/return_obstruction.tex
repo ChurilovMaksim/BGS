@@ -26,7 +26,7 @@ finite dimension. Local-process convergence means convergence in law in the
 vague topology, allowing multiplicities. Ergodicity means that every event
 invariant under all real translations has probability zero or one.
 
-\textbf{Theorem 1.} If \(\Xi_D\) converges to a stationary ergodic process \(\Xi\) of
+\begin{theorem}\label{pass1:return_obstruction-1} If \(\Xi_D\) converges to a stationary ergodic process \(\Xi\) of
 intensity one, then for every integer \(M_D\ge1\) with \(M_D=o(D)\),
 \[
              \mathbb E\max_{1\le m\le M_D}|t_D(m)|\longrightarrow0. \tag{Ret.S2}
@@ -35,6 +35,7 @@ Consequently, for any \(1\le K_D=o(D)\) the empirical eigenvalue law of
 \(U_D^{K_D}\) tends to Haar measure in probability. For deterministic spectra
 this is ordinary weak convergence. No second-moment or pair-correlation
 convergence hypothesis is imposed.
+\end{theorem}
 
 \textbf{Proof.} Choose a measurable maximizing integer \(q_D\in[1,M_D]\), breaking
 ties by the smallest index. It may depend on the spectrum. Put
@@ -79,7 +80,7 @@ Apply (Ret.S2) to each fixed multiple of \(K_D\) and approximate continuous circ
 functions by trigonometric polynomials to obtain the Haar conclusion.
 
 \textbf{Strengthening (all slowly varying tests).} Under the hypotheses of
-Theorem 1, let
+Theorem~\ref{pass1:return_obstruction-1}, let
 \[
  \mathfrak d_M(\nu,dx)=
  \sup_{\substack{f:\mathbb R/\mathbb Z\to\mathbb R\\
@@ -145,7 +146,7 @@ intensity-preserving limit. No conditional spacing law is identified by (Ret.S5)
 \hypertarget{intensity-loss-a-sharp-compatibility-theorem}{%
 \subsubsection{Intensity loss: a sharp compatibility theorem}\label{intensity-loss-a-sharp-compatibility-theorem}}
 
-\textbf{Theorem 3.} Let \(1\le K_D=o(D)\) be integers, and suppose that the empirical
+\begin{theorem}\label{pass1:return_obstruction-2} Let \(1\le K_D=o(D)\) be integers, and suppose that the empirical
 law of \(U_D^{K_D}\) converges weakly in probability to a deterministic
 probability measure \(\mu\) on the circle. Write its Lebesgue decomposition as
 \(\mu=\rho(y)\,dy+\mu_{\rm s}\). Let \(\Xi\) be any subsequential local-process
@@ -168,6 +169,7 @@ If \(\Xi\) is ergodic, the stronger bound is
 \]
 Thus a purely singular return law forces convergence of the entire local
 process sequence to the empty process, not just failure of intensity one.
+\end{theorem}
 
 \textbf{Proof.} Finite processes have uniformly bounded expected mass on every
 compact set, so their laws are tight in the vague topology of locally finite
@@ -218,7 +220,7 @@ The remaining modulus is at most
 \(\mathbb E(N_D-R)_+=I-\mathbb E\min(N_D,R)\).
 First take the upper limit in \(D\), then \(R\to\infty\); the bound is
 \((1-\alpha)I\). Equation (Ret.S4) proves (Ret.S22). This explicitly quantifies the
-first-moment loss that Theorem 1 excludes.
+first-moment loss that Theorem~\ref{pass1:return_obstruction-1} excludes.
 
 \textbf{Sharpness among abstract spectra.} For every probability measure \(\mu\),
 every \(1\le K_D=o(D)\), and every \(0\le\alpha\le\operatorname*{ess\,inf}\rho\),
@@ -302,14 +304,15 @@ density \(\rho\), the parenthesis is \(\int\rho^2\) by Parseval.
 For random spectra, \(L^2\) trace convergence implies the averaged version;
 convergence in probability implies each finite-\(R\) lower bound in probability.
 
-\textbf{Corollary 2.} If \(C_D(U;\phi)\to\int\phi\rho_2\) for all Schwartz tests,
+\begin{corollary}\label{pass1:return_obstruction-3} If \(C_D(U;\phi)\to\int\phi\rho_2\) for all Schwartz tests,
 where \(\rho_2\) is bounded and \(\rho_2(x)\to1\) at infinity, then every
 sublinear-frequency maximum in (Ret.S2) tends to zero for deterministic spectra.
 Indeed, a retained modulus \(a>0\) would imply
 \(\int\phi_L\rho_2\ge L(1+2a^2)-1\) for every fixed \(L\). But dominated
 convergence after \(x=Ly\) gives \(L^{-1}\int\phi_L\rho_2\to1\) as \(L\to\infty\).
-This is a separate argument from Theorem 1; weak process convergence was not
+This is a separate argument from Theorem~\ref{pass1:return_obstruction-1}; weak process convergence was not
 silently promoted to convergence of pair moments.
+\end{corollary}
 
 For the Poisson target \(C_{\rm P}(\phi_L)=L\). For the sine-kernel target
 \(\rho_{2,\rm sine}(x)=1-(\sin(\pi x)/(\pi x))^2\),
@@ -354,7 +357,7 @@ For \(\epsilon_K\to0\), positive \(\sigma_A^2(f)\), and
                           \quad(r\text{ fixed}).                 \tag{Ret.S12}
 \]
 Its small-amplitude condition holds eventually for each fixed \(r\).
-Thus Theorem 1 excludes any ergodic stationary intensity-one local limit.
+Thus Theorem~\ref{pass1:return_obstruction-1} excludes any ergodic stationary intensity-one local limit.
 For \(v>0\), (Ret.S9) gives the explicit pair obstruction
 \[
  \liminf C_D(U_{\epsilon_K,f};\phi_L)
@@ -364,7 +367,7 @@ For \(v>0\), (Ret.S9) gives the explicit pair obstruction
 Already \(L>e^{v\sigma_A^2(f)}/2\) separates the bound using only \(r=1\)
 from both Poisson and sine-kernel pair targets.
 A necessary condition for either an ergodic intensity-one local limit or the
-decorrelating pair limits in Corollary 2 is therefore
+decorrelating pair limits in Corollary~\ref{pass1:return_obstruction-3} is therefore
 \[
                           K\epsilon_K^2\longrightarrow\infty.   \tag{Ret.S14}
 \]
@@ -424,7 +427,7 @@ where
 The support statement and moment normalization are verified in Demni--Hmidi,
 Sections 1, 4 and 5, as recorded in
 \href{https://github.com/ChurilovMaksim/BGS/blob/main/literature/return_local_limits_sources.md}{the source comparison}.
-Theorem 3 therefore implies, for every harmonic-averaged subsequential
+Theorem~\ref{pass1:return_obstruction-2} therefore implies, for every harmonic-averaged subsequential
 local limit,
 \[
  \mathbb P\{\Xi=0\}\ge
@@ -448,7 +451,7 @@ The strict support-gap argument makes no claim at \(t=4\).
 
 A \(D\)-point clock has \(t_D(D)=1\), while its local process is the uniformly
 shifted integer lattice: stationary, ergodic under real translations, and
-intensity one. Thus \(o(D)\) cannot be replaced by \(O(D)\) in Theorem 1.
+intensity one. Thus \(o(D)\) cannot be replaced by \(O(D)\) in Theorem~\ref{pass1:return_obstruction-1}.
 The clock also has \(t_D(m)=0\) for \(1\le m<D\), and its coprime powers permute
 the spectrum. Necessary short-return conditions are therefore not sufficient
 for Poisson or sine-kernel statistics.
@@ -514,7 +517,7 @@ law \(\rho(y)dy\), while their local process law tends to
 \[
                    \int_0^1(S_{1/\rho(y)})_*P\,dy.              \tag{Ret.S26}
 \]
-Indeed Theorem 1 makes the original folded laws Haar, and the inverse CDF
+Indeed Theorem~\ref{pass1:return_obstruction-1} makes the original folded laws Haar, and the inverse CDF
 sends Haar to \(\rho\,dy\). The old local process and its slow uniform mark
 become independent by ergodicity. Apply the preceding change-of-origin
 argument with inverse derivative \(1/\rho(F^{-1}(v))\); the substitution
@@ -551,7 +554,7 @@ Theorem 7. Its kernel is the Fourier projection onto \([-1/2,1/2]\), a
 translation-invariant, locally trace-class positive contraction in the stated
 Hermitian setting. The Poisson process is mixing by independence on disjoint
 bounded sets. Other ensemble targets require their own ergodicity input for
-Theorem 1, or the explicit pair-density hypotheses of Corollary 2.
+Theorem~\ref{pass1:return_obstruction-1}, or the explicit pair-density hypotheses of Corollary~\ref{pass1:return_obstruction-3}.
 
 The companion Python verifier checks exact quarter-circle Fourier and marked
 convolution identities, then independently compares floating Gaussian pair

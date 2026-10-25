@@ -29,12 +29,14 @@ For each odd multiplicative character \(\chi\) trivial on \(H\), extend \(f_\chi
 Define \[
  (F_qf)(x)=p^{-1/2}\sum_y e_p(qxy)f(y),\qquad
  (Cf)(x)=\overline{f(x)},\qquad \Theta_q=F_qC.
-\] \textbf{Proposition 1.} The map \(\Theta_q\) is an antiunitary involution preserving \(\mathcal E\) and commuting with \(A_q\). For a nontrivial character, \[
+\]
+\begin{proposition}\label{pass1:magnetic-1} The map \(\Theta_q\) is an antiunitary involution preserving \(\mathcal E\) and commuting with \(A_q\). For a nontrivial character, \[
  \Theta_q f_\chi=a_\chi(q)f_\chi,\qquad
  a_\chi(q)=\frac{\chi(q)\tau(\overline\chi)}{\sqrt p},\qquad
  \tau(\overline\chi)=\sum_{y\ne0}\overline{\chi(y)}e_p(y),
  \quad |a_\chi(q)|=1. \tag{MQ.3}
 \] Choose any square roots \(d_\chi^2=a_\chi(q)\) and put \(D=\operatorname{diag}(d_\chi)\). Then \(D^*[A_q]D\) is real symmetric and has exactly the spectrum of \(A_q\).
+\end{proposition}
 
 \textbf{Proof.} Fourier orthogonality gives \(F_q\overline{F_q}=I\). Substitution \(y=z+1\) in \(\Theta_qW_q\) gives \[
  e_p(qxy-q(y-1/2))=e_p(q(x-1/2))e_p(q(x-1)z),
@@ -65,11 +67,13 @@ The Weyl and dilation rules are \[
  p\,\mathbf1_{a=b=0},&g=1,\\
  e_p\!\left(\dfrac{qab(1+g)}{2(1-g)}\right),&g\ne1.
  \end{cases} \tag{MQ.7}
-\] \textbf{Proposition 2.} For every integer \(m\geq1\), \[
+\]
+\begin{proposition}\label{pass1:magnetic-2} For every integer \(m\geq1\), \[
  \operatorname{Tr}_{\mathcal E}A_q^m
  =\frac1{2K^m}\sum_{\epsilon_1,\ldots,\epsilon_m;\ h_1,\ldots,h_m}
    e_p(qc)\bigl(T_g(a,b)-T_{-g}(a,b)\bigr). \tag{MQ.8}
 \] \textbf{Proof.} A diagonal entry of \(W(qa,b)S_g\) requires \(x=g^{-1}(x-b)\). For \(g\ne1\), its unique solution is \(x=b/(1-g)\), giving (MQ.7). For \(g=1\), one needs \(b=0\); orthogonality of the remaining additive character gives the first line, since \(q\ne0\). Inserting \(R\) changes \(g\) to \(-g\) and \(a,b\) to their negatives, preserving \(ab\). The trace of the compressed power equals \(\operatorname{Tr}(P_-(B_qQ)^m)\) by cyclicity and idempotence of \(Q\). Expansion proves (MQ.8). Since \(H\) has odd order, \(-g\) is never 1. No other cases are omitted. \(\square\)
+\end{proposition}
 
 In particular there is an integer, possibly signed, histogram \(C_m(t)\) such that \[
  \operatorname{Tr} A_q^m=\frac1{2K^m}\sum_tC_m(t)e_p(qt),\qquad
@@ -79,12 +83,13 @@ In particular there is an integer, possibly signed, histogram \(C_m(t)\) such th
 
 \subsection{Reciprocal short-relation rigidity}\label{magnetic:reciprocal-short-relation-rigidity}
 
-\textbf{Lemma 3.} Suppose \(K\) is prime, \(1\leq m<K\), and \[
+\begin{lemma}\label{pass1:magnetic-3} Suppose \(K\) is prime, \(1\leq m<K\), and \[
  p^2>m^{K-1}. \tag{MQ.10}
 \] If \(t_j\in H\) and \(\epsilon_j\in\{-1,1\}\) satisfy \[
  \sum_j\epsilon_jt_j=\sum_j\epsilon_j/t_j=0\quad\text{in }\mathbb F_p,
  \tag{MQ.11}
 \] each label \(t\) occurs equally often with positive and negative sign. In particular \(m\) is even.
+\end{lemma}
 
 \textbf{Proof.} Write \(t_j=h^{e_j}\), \(0\leq e_j<K\), and collect coefficients in \(P(Z)=\sum_j\epsilon_jZ^{e_j}\). Its coefficient \(\ell^1\) norm is at most \(m\). If \(P(\zeta_K)\ne0\), its norm \(N\) is a nonzero integer with \[
  |N|=\prod_{a=1}^{K-1}|P(\zeta_K^a)|\leq m^{K-1}. \tag{MQ.12}
@@ -103,11 +108,11 @@ For words ending with \(g=1\), put \(t_1=1\) and \(t_j=h_1\cdots h_{j-1}\) for \
  e_p(qc)+\mathcal R_m(q), \tag{MQ.13}
 \] \[
  |\mathcal R_m(q)|\leq\frac{2^{m/2+1}K^{m/2+1}}{p-1}. \tag{MQ.14}
-\] Indeed every trace outside the \(g=1,a=b=0\) contribution has modulus at most one; bounding the two traces of each of \((2K)^m\) words by two gives (MQ.14). Under Lemma 3 odd moments have no main term.
+\] Indeed every trace outside the \(g=1,a=b=0\) contribution has modulus at most one; bounding the two traces of each of \((2K)^m\) words by two gives (MQ.14). Under Lemma~\ref{pass1:magnetic-3} odd moments have no main term.
 
 \subsection{Pairings, overcounting, and crossing cancellation}\label{magnetic:pairings-overcounting-and-crossing-cancellation}
 
-Let \(m=2r\) and assume \(2r<K\) throughout this subsection; this is the hypothesis under which the grid zero bound at (MQ.17) is applied, and it is also the hypothesis of Theorem 4. Every balanced tuple admits a matching of the \(2r\) positions, with equal labels and opposite signs on matched positions. Write \[
+Let \(m=2r\) and assume \(2r<K\) throughout this subsection; this is the hypothesis under which the grid zero bound at (MQ.17) is applied, and it is also the hypothesis of Theorem~\ref{pass1:magnetic-4}. Every balanced tuple admits a matching of the \(2r\) positions, with equal labels and opposite signs on matched positions. Write \[
  P_r=(2r-1)!!,\qquad C_r=\frac1{r+1}\binom{2r}{r}.
 \] These are the numbers of all and of noncrossing matchings. Order pairs by their first endpoints, so pair 1 contains position 1. Assign labels \(x_1=1,x_2,\ldots,x_r\in H\) and orientations \(\sigma_i\in\{-1,1\}\). With distinct labels the matching is unique. Overcounting is possible only when two labels coincide. A union bound bounds the number of bad matching assignments by \[
  P_r2^r\binom r2 K^{r-2}, \tag{MQ.15}
@@ -128,7 +133,7 @@ For a crossing let \(d=r-1\) and \[
 
 \subsection{Quantitative theorem and limiting law}\label{magnetic:quantitative-theorem-and-limiting-law}
 
-\textbf{Theorem 4.} Let \(K\) be an odd prime and let \(p\) be prime with \(K\mid p-1\). For \(2r<K\) and \(p^2>(2r)^{K-1}\), uniform nonzero \(q\) satisfies \[
+\begin{theorem}\label{pass1:magnetic-4} Let \(K\) be an odd prime and let \(p\) be prime with \(K\mid p-1\). For \(2r<K\) and \(p^2>(2r)^{K-1}\), uniform nonzero \(q\) satisfies \[
 \begin{aligned}
  \|\mu_{2r}-C_r\|_{L^2(q\ne0)}\leq{}&\frac{C_r}{p-1}\\
  &+\frac p{p-1}(P_r-C_r)\sqrt{\frac{p(2r-1)}{(p-1)K}}\\
@@ -137,11 +142,13 @@ For a crossing let \(d=r-1\) and \[
 \end{aligned} \tag{MQ.18}
 \] For odd \(m<K\) under \(p^2>m^{K-1}\), \[
  \sup_{q\ne0}|\mu_m(q)|\leq\frac{2^{m/2+1}K^{m/2+1}}{p-1}. \tag{MQ.19}
-\] \textbf{Proof.} Replace the balanced tuples of (MQ.13) by matching assignments. After division by \(2^rK^{r-1}\), (MQ.15) gives the third term of (MQ.18). Each noncrossing matching contributes exactly one; together they give \(pC_r/(p-1)\), whose difference from \(C_r\) is the first term. For each crossing average over its \(2^r\) orientations, apply (MQ.17), and apply the \(L^2\) triangle inequality over the \(P_r-C_r\) matchings. This is the second term. The last term is (MQ.14). Lemma 3 and (MQ.14) give (MQ.19). \(\square\)
+\] \textbf{Proof.} Replace the balanced tuples of (MQ.13) by matching assignments. After division by \(2^rK^{r-1}\), (MQ.15) gives the third term of (MQ.18). Each noncrossing matching contributes exactly one; together they give \(pC_r/(p-1)\), whose difference from \(C_r\) is the first term. For each crossing average over its \(2^r\) orientations, apply (MQ.17), and apply the \(L^2\) triangle inequality over the \(P_r-C_r\) matchings. This is the second term. The last term is (MQ.14). Lemma~\ref{pass1:magnetic-3} and (MQ.14) give (MQ.19). \(\square\)
+\end{theorem}
 
-\textbf{Corollary 5 (global law only).} Suppose \(K\to\infty\) through odd primes, \(p\equiv1\pmod K\) is prime, and \(K=o(\log p)\). Every fixed moment of the empirical spectral measure of \(X_q\) converges in \(L^2\) over nonzero \(q\) to the standard semicircle moment. The empirical measures converge weakly in probability to \[
+\begin{corollary}[global law only]\label{pass1:magnetic-5} Suppose \(K\to\infty\) through odd primes, \(p\equiv1\pmod K\) is prime, and \(K=o(\log p)\). Every fixed moment of the empirical spectral measure of \(X_q\) converges in \(L^2\) over nonzero \(q\) to the standard semicircle moment. The empirical measures converge weakly in probability to \[
  \rho_{\rm sc}(x)\,dx=\frac{\sqrt{4-x^2}}{2\pi}\mathbf1_{[-2,2]}(x)\,dx. \tag{MQ.20}
 \] The averaged empirical measures converge weakly as well.
+\end{corollary}
 
 \textbf{Proof.} For every fixed \(m\), eventually \(m<K\) and (MQ.10) holds, while every fixed power of \(K\) divided by \(p\) tends to zero. Equations (MQ.18)--(MQ.19) give the moment limits. From any subsequence, select a further subsequence on which all integer moments converge almost surely, by diagonal extraction. Bounded second moments give tightness; bounded higher even moments give uniform integrability for each lower moment. Every weak subsequential limit therefore has the semicircle moments. Since \(C_r\leq4^r\), any measure with these moments is supported on \([-2,2]\); polynomial approximation on that compact interval proves uniqueness. The subsequence criterion gives weak convergence in probability. Bounded continuous tests then also converge in expectation, proving the averaged assertion. \(\square\)
 

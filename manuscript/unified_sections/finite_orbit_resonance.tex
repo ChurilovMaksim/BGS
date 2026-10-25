@@ -30,7 +30,8 @@ Oriented orbits are \(A^{\mathbb Z}k\); signed orbits also identify \(k\) and \(
 \]
 
 \Needspace{12\baselineskip}
-\textbf{Theorem 1.} Let \(g\) be a nonconstant real \(C^\infty\) function whose nonzero Fourier support is contained in finitely many signed \(A\)-orbits. Then, for every \(R\ge1\) and every nonzero real vector \((a_1,\ldots,a_R)\),
+\begin{theorem}\label{pass1:finite_orbit_resonance-1} Let \(g\) be a nonconstant real \(C^\infty\) function whose nonzero Fourier support is contained in finitely many signed \(A\)-orbits. Then, for every \(R\ge1\) and every nonzero real vector \((a_1,\ldots,a_R)\),
+\end{theorem}
 
 \[
  \boxed{\mathcal V_A\!\left(\sum_{r=1}^R a_rh_r(g)\right)>0.}
@@ -71,7 +72,8 @@ Choose \(v_1,\ldots,v_d\in\mathbb Z^2\setminus\{0\}\), distinct modulo signed \(
  \mathcal S=\bigcup_{i=1}^d\{\pm A^jv_i:j\in\mathbb Z\}.
 \]
 
-\textbf{Lemma 2 (large-gap separation).} There exists \(n_0\), depending on \(A\) and this finite list, such that the following holds. If \(n>n_0\), \(i,j\) are any indices, \(\epsilon\in\{+1,-1\}\), and
+\begin{lemma}[large-gap separation]\label{pass1:finite_orbit_resonance-2} There exists \(n_0\), depending on \(A\) and this finite list, such that the following holds. If \(n>n_0\), \(i,j\) are any indices, \(\epsilon\in\{+1,-1\}\), and
+\end{lemma}
 
 \[
  v_i+\epsilon A^n v_j
@@ -143,7 +145,7 @@ Introduce the two different correlations
 \tag{FO.9}
 \]
 
-For \(n>n_0\), Lemma 2 and direct Fourier differentiation give
+For \(n>n_0\), Lemma~\ref{pass1:finite_orbit_resonance-2} and direct Fourier differentiation give
 
 \[
  \begin{split}
@@ -158,7 +160,7 @@ For \(n>n_0\), Lemma 2 and direct Fourier differentiation give
 For the second row, the two ordered input pairs contribute \[
  +\pi D_{ij}(n)c_{i,t}\overline{c_{j,t+n-r}},\qquad
  -\pi D_{ij}(n)\overline{c_{j,t+n}}c_{i,t-r}.
-\] Summing over \(t\) proves the formula. The first row is the same computation without conjugation and with the opposite sign. Lemma 2 excludes any additional input families or gap values. All rearrangements are justified by smooth weighted Fourier summability.
+\] Summing over \(t\) proves the formula. The first row is the same computation without conjugation and with the opposite sign. Lemma~\ref{pass1:finite_orbit_resonance-2} excludes any additional input families or gap values. All rearrangements are justified by smooth weighted Fourier summability.
 
 Assume, for contradiction, that the variance in (FO.2) is zero for a nonzero real vector \(a\). Every orbit sum of the combination is zero. For \(X=S\) and \(X=K\), and every \(i,j\), (FO.10) implies
 
@@ -185,7 +187,8 @@ Multiplication by \(L_a\) produces the finite Laurent series \(B\) in (FO.11). T
 \hypertarget{a-common-real-all-pass-factor}{%
 \subsection{A common real all-pass factor}\label{a-common-real-all-pass-factor}}
 
-\textbf{Lemma 3 (pair-product factorization).} Suppose nonzero functions \(P_1,\ldots,P_d\) are holomorphic on \(\mathbb C^*\), and all \(P_i(z)P_j(1/z)\) and \(P_iP_j^*\) are Laurent polynomials. Then
+\begin{lemma}[pair-product factorization]\label{pass1:finite_orbit_resonance-3} Suppose nonzero functions \(P_1,\ldots,P_d\) are holomorphic on \(\mathbb C^*\), and all \(P_i(z)P_j(1/z)\) and \(P_iP_j^*\) are Laurent polynomials. Then
+\end{lemma}
 
 \[
  P_i(z)=R(z)Q_i(z),
@@ -210,7 +213,7 @@ Normalize \(R=F_0/F_0(1)\), absorbing \(F_0(1)\) into the polynomial factors. Th
 \hypertarget{reduce-to-the-existing-finite-fourier-theorem}{%
 \subsection{Reduce to the existing finite-Fourier theorem}\label{reduce-to-the-existing-finite-fourier-theorem}}
 
-Apply Lemma 3 to (FO.12). Expand \(R(z)=\sum_j p_jz^j\). Its real Laurent coefficients have every exponential moment, by Cauchy estimates on arbitrarily large and small circles. Define the real trigonometric polynomial \(q\) by placing the coefficients of \(Q_i\) along \(A^{\mathbb Z}v_i\) and their complex conjugates along the distinct negative orbits. Then
+Apply Lemma~\ref{pass1:finite_orbit_resonance-3} to (FO.12). Expand \(R(z)=\sum_j p_jz^j\). Its real Laurent coefficients have every exponential moment, by Cauchy estimates on arbitrarily large and small circles. Define the real trigonometric polynomial \(q\) by placing the coefficients of \(Q_i\) along \(A^{\mathbb Z}v_i\) and their complex conjugates along the distinct negative orbits. Then
 
 \[
  g=T_Rq:=\sum_{j\in\mathbb Z}p_j C^j q.
@@ -232,9 +235,9 @@ The Fourier \(\ell^1\) norm of \(h_s(q)\) grows at most exponentially in \(|s|\)
 \tag{FO.16}
 \]
 
-This is the existing common real entire-all-pass invariance mechanism. The existing finite-Fourier all-lag theorem, applied to the nonconstant real polynomial \(q\), now contradicts the assumed zero variance of the nonzero combination in (FO.2). This proves Theorem 1.
+This is the existing common real entire-all-pass invariance mechanism. The existing finite-Fourier all-lag theorem, applied to the nonconstant real polynomial \(q\), now contradicts the assumed zero variance of the nonzero combination in (FO.2). This proves Theorem~\ref{pass1:finite_orbit_resonance-1}.
 
-The internal finite-Fourier input is pinned at the base revision: \path{manuscript/unified_sections/temporal_resonance.tex}, isolated highest-lag frequency lemma and independence theorem. Its \(r=1\) version is also in \path{mathematics/extremal_resonance_nondegeneracy.md}. The earlier all-pass invariance theorem is in \path{mathematics/entire_temporal_gauge.md}. The large-gap separation mechanism is also already used in \path{mathematics/phase_regularized_resonance.md}, Section 2. Lemma 2 gives an alternative qualitative proof; it is not a priority claim for this mechanism. The contribution here is the smooth finite-orbit extension and the common factor normal form, relative to these inspected inputs.
+The internal finite-Fourier input is pinned at the base revision: \path{manuscript/unified_sections/temporal_resonance.tex}, isolated highest-lag frequency lemma and independence theorem. Its \(r=1\) version is also in \path{mathematics/extremal_resonance_nondegeneracy.md}. The earlier all-pass invariance theorem is in \path{mathematics/entire_temporal_gauge.md}. The large-gap separation mechanism is also already used in \path{mathematics/phase_regularized_resonance.md}, Section 2. Lemma~\ref{pass1:finite_orbit_resonance-2} gives an alternative qualitative proof; it is not a priority claim for this mechanism. The contribution here is the smooth finite-orbit extension and the common factor normal form, relative to these inspected inputs.
 
 \hypertarget{two-additional-consequences-and-a-sharp-boundary-of-this-route}{%
 \subsection{Two additional consequences and a sharp boundary of this route}\label{two-additional-consequences-and-a-sharp-boundary-of-this-route}}
@@ -259,4 +262,4 @@ With positive trace and \(n\) growing, the added vectors \(-v-A^nv\) have distin
 
 The theorem does not treat arbitrary analytic observables with infinitely many signed Fourier orbits. No limiting passage through orbit truncations is provided: positivity without a uniform quantitative lower bound is insufficient. The finite-tail characterization does not assert that general smooth \(g\) has finite tails; that was a consequence of a hypothetical zero combination.
 
-This result is classical cohomological nondegeneracy. It proves no Heisenberg-time joint-trace or mixed-resolvent cancellation for the frozen quantum map. It does not imply GOE, GUE, COE, CUE, or microscopic BGS. External priority is unestablished. Independent review should focus on Lemma 2, both channel identities in (FO.10), and the reality step in Lemma 3.
+This result is classical cohomological nondegeneracy. It proves no Heisenberg-time joint-trace or mixed-resolvent cancellation for the frozen quantum map. It does not imply GOE, GUE, COE, CUE, or microscopic BGS. External priority is unestablished. Independent review should focus on Lemma~\ref{pass1:finite_orbit_resonance-2}, both channel identities in (FO.10), and the reality step in Lemma~\ref{pass1:finite_orbit_resonance-3}.

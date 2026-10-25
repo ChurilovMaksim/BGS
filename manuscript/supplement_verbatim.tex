@@ -1,0 +1,32 @@
+\section*{Supplement: verbatim listings}
+The five verbatim blocks below are the verifier invocations that stood in the return chapters. They are reproduced here verbatim (content preserved, not cut); each original location now carries a pointer sentence to its listing.
+\subsection*{Listing S1: \texttt{fixed\_harmonic\_return\_gas.py}}
+From the return-gas chapter (fourth-coefficient verification discussion) (source file \path{unified_sections/return_gas.tex}).
+\begin{verbatim}
+OPENBLAS_NUM_THREADS=1 python computations/verification/fixed_harmonic_return_gas.py \
+  --output build/fixed-harmonic-return-gas-precheck.json
+\end{verbatim}
+\subsection*{Listing S2: \texttt{general\_cat\_return\_laws.py}}
+From the return-general chapter, ``Verification and the remaining boundary'' (source file \path{unified_sections/return_general.tex}).
+\begin{verbatim}
+OPENBLAS_NUM_THREADS=1 python computations/verification/general_cat_return_laws.py \
+  --output build/general-cat-return-laws-precheck.json
+\end{verbatim}
+\subsection*{Listing S3: \texttt{periodic\_point\_trace\_comparison.py}}
+From the return-periodic chapter (periodic-point comparison diagnostics) (source file \path{unified_sections/return_periodic.tex}).
+\begin{verbatim}
+OPENBLAS_NUM_THREADS=1 python computations/verification/periodic_point_trace_comparison.py \
+  --output build/periodic-point-trace-comparison-precheck.json
+\end{verbatim}
+\subsection*{Listing S4: \texttt{phase\_space\_return\_gas.py}}
+From the return-phase chapter, ``Verification and scope'' (source file \path{unified_sections/return_phase.tex}).
+\begin{verbatim}
+OPENBLAS_NUM_THREADS=1 python computations/verification/phase_space_return_gas.py \
+  --output build/phase-space-return-gas-precheck.json
+\end{verbatim}
+\subsection*{Listing S5: \texttt{analytic\_kick\_return\_gas.py}}
+From the return-position chapter (winding-term verification discussion) (source file \path{unified_sections/return_position.tex}).
+\begin{verbatim}
+OPENBLAS_NUM_THREADS=1 python computations/verification/analytic_kick_return_gas.py \
+  --output build/analytic-kick-return-gas-precheck.json
+\end{verbatim}

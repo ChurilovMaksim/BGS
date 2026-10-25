@@ -5,25 +5,28 @@ Let \[
 \] On the two-torus choose a real even smooth function \(g\) with \[
  \operatorname{supp}g\cap\operatorname{supp}(\mathcal Cg)=\varnothing,
  \qquad f=g-\mathcal Cg.                                      \tag{LC.1}
-\] There is an infinite-dimensional real vector space of such generators, constructed in Subsection~\ref{sec:locality}.2, containing nonzero functions. Let \(N\) be odd, let \(U_N\) be the cat quantization with the exact covariance below, and write \[
+\] There is an infinite-dimensional real vector space of such generators, constructed in Subsection~\ref{sec:locality}.2, containing nonzero functions. Let \(N\) be odd, let \(U_{N,\mathrm{loc}}\) be the cat quantization with the exact covariance below, and write \[
  G_N=\operatorname{Op}_N(g),\quad D_N=\operatorname{Op}_N(\mathcal Cg),
  \quad A_{{\kappa_0},N}=e^{i{\kappa_0} NG_N},\quad
- V_{{\kappa_0},N}=e^{i{\kappa_0} N(G_N-D_N)}U_N.                       \tag{LC.2}
+ V_{{\kappa_0},N}=e^{i{\kappa_0} N(G_N-D_N)}U_{N,\mathrm{loc}}.                       \tag{LC.2}
 \] The real parameter \({\kappa_0}\) is fixed as \(N\to\infty\). With the conventions below it represents a classical Hamiltonian time \({\kappa_0}/(2\pi)\), not a classical perturbation that shrinks with \(N\).
 
-\textbf{Theorem A (all-orders comparison).} For each fixed bounded set of \({\kappa_0}\) values and each \(R>0\), \[
- \delta_N:=\|V_{{\kappa_0},N}-A_{{\kappa_0},N}U_NA_{{\kappa_0},N}^*\|_{\rm op}
+\begin{theorem}[all-orders comparison]\label{pass1:ch09_locality_fixed_strength-1} For each fixed bounded set of \({\kappa_0}\) values and each \(R>0\), \[
+ \delta_N:=\|V_{{\kappa_0},N}-A_{{\kappa_0},N}U_{N,\mathrm{loc}}A_{{\kappa_0},N}^*\|_{\rm op}
        =O_{g,{\kappa_0},R}(N^{-R}).                              \tag{LC.3}
 \] For every fixed \(p>0\) the same all-orders estimate holds uniformly after raising both unitaries to any integer power \(|t|\leq N^p\). For the explicit Gevrey-2 bump in Subsection~\ref{sec:locality}.2, constants \(c,C>0\) also give \[
  \delta_N\leq C{\kappa_0}^2N^2e^{-cN^{1/3}}                      \tag{LC.4}
 \] for sufficiently large \(N\). This conservative exponent is not claimed optimal. It gives vanishing error even for \(|t|\leq e^{cN^{1/3}/2}\).
+\end{theorem}
 
-\textbf{Theorem B (classical interpretation).} Let \(\Phi_g^t\) be the Hamiltonian flow specified by \(\frac{d}{dt}(a\circ\Phi_g^t)=\{g,a\}\circ\Phi_g^t\), with \(\{g,a\}=g_q a_p-g_p a_q\). The map quantized by (LC.2) is \[
+\begin{theorem}[classical interpretation]\label{pass1:ch09_locality_fixed_strength-2} Let \(\Phi_g^t\) be the Hamiltonian flow specified by \(\frac{d}{dt}(a\circ\Phi_g^t)=\{g,a\}\circ\Phi_g^t\), with \(\{g,a\}=g_q a_p-g_p a_q\). The map quantized by (LC.2) is \[
  M_{\kappa_0}=M\circ\Phi_f^{{\kappa_0}/(2\pi)}
  =\Phi_g^{-{\kappa_0}/(2\pi)}\circ M\circ\Phi_g^{{\kappa_0}/(2\pi)}. \tag{LC.5}
 \] It is Anosov and mixing for area measure. For any nonzero example \(g\) and all sufficiently small fixed \({\kappa_0}\ne0\), it is nonlinear and differs from \(M\). Its conjugacy to \(M\) is essential, not a symmetry that may be omitted when interpreting its spectral statistics.
+\end{theorem}
 
-\textbf{Theorem C (microscopic stability along Pell moduli).} Let \(K\) tend to infinity through odd primes, put \(N+F\sqrt2=(1+\sqrt2)^K\), and restrict to the odd parity space of dimension \(D=(N-1)/2=Kn\). For fixed \({\kappa_0}\) and sufficiently large \(N\), the spectrum consists of \(K\) clusters, each containing exactly \(n\) eigenvalues, whose angular halfwidth \(a_N\) is \(O(N^{-R})\) for every \(R\). After a common rotation their centres are the \(K\)th roots of unity.
+\begin{theorem}[microscopic stability along Pell moduli]\label{pass1:ch09_locality_fixed_strength-3} Let \(K\) tend to infinity through odd primes, put \(N+F\sqrt2=(1+\sqrt2)^K\), and restrict to the odd parity space of dimension \(D=(N-1)/2=Kn\). For fixed \({\kappa_0}\) and sufficiently large \(N\), the spectrum consists of \(K\) clusters, each containing exactly \(n\) eigenvalues, whose angular halfwidth \(a_N\) is \(O(N^{-R})\) for every \(R\). After a common rotation their centres are the \(K\)th roots of unity.
+\end{theorem}
 
 Under unfolding by the mean density \(D\), the spacing measure tends weakly to \(\delta_0\). More quantitatively, for every fixed finite \(p\geq1\), \[
  W_p\left(\mu_{\rm gaps},(1-1/n)\delta_0+(1/n)\delta_n\right)
@@ -45,17 +48,18 @@ For an integer frequency \(v=(a,b)\) use the \textbf{physical integer Fourier li
 \] The series converges absolutely in operator norm for smooth \(a\); \(\|\operatorname{Op}_N(a)\|\leq\mathcal M_0(a)\), and real symbols give Hermitian matrices. Frequency aliases cause no problem in this definition.
 
 Since \(T\) is the identity modulo two, its finite Weyl implementer also has exact physical covariance \[
- U_NQ_N(v)U_N^*=Q_N(Tv),\qquad
- U_N\operatorname{Op}_N(a)U_N^*=\operatorname{Op}_N(a\circ M). \tag{LC.8}
+ U_{N,\mathrm{loc}}Q_N(v)U_{N,\mathrm{loc}}^*=Q_N(Tv),\qquad
+ U_{N,\mathrm{loc}}\operatorname{Op}_N(a)U_{N,\mathrm{loc}}^*=\operatorname{Op}_N(a\circ M). \tag{LC.8}
 \] One such implementer has the kernel \[
- U_N(x,y)=\frac{c_N}{\sqrt N}
+ U_{N,\mathrm{loc}}(x,y)=\frac{c_N}{\sqrt N}
  e_N\!\left((3x^2-2xy+3y^2)/8\right),\quad |c_N|=1,         \tag{LC.9}
 \] where division by eight is modular. Orthogonality of additive characters proves unitarity; direct substitution on the two Weyl generators proves (LC.8). The kernel is parity-preserving. Its global phase can be fixed later.
 
-\textbf{Lemma 1 (disjoint-symbol product).} If \(a,b\in C^\infty(\mathbb T^2)\) have disjoint closed supports, then for every integer \(r\geq1\), \[
+\begin{lemma}[disjoint-symbol product]\label{pass1:ch09_locality_fixed_strength-4} If \(a,b\in C^\infty(\mathbb T^2)\) have disjoint closed supports, then for every integer \(r\geq1\), \[
  \|\operatorname{Op}_N(a)\operatorname{Op}_N(b)\|_{\rm op}
  \leq\frac{\pi^r}{r!N^r}\mathcal M_r(a)\mathcal M_r(b).       \tag{LC.10}
 \]
+\end{lemma}
 
 \textbf{Proof.} Expand (LC.7) and Taylor-expand \(e^{i\pi\omega/N}\) through degree \(r-1\). For real \(z\) the integral Taylor remainder satisfies \(|e^{iz}-\sum_{j<r}(iz)^j/j!|\leq|z|^r/r!\), with no restriction on \(z\). For each \(j<r\) the coefficient sum \[
  \sum_{v,w}\widehat a(v)\widehat b(w)\omega(v,w)^j Q_N(v+w)
@@ -120,16 +124,16 @@ For Hermitian \(H,J\) and real \(t\), the two-factor Duhamel inequality gives \[
 \] One proof differentiates \(e^{i(t-u)(H+J)}e^{iuH}e^{iuJ}\) and integrates the conjugation difference of \(J\) twice. Unitary invariance of the norm leaves a triangular integration domain of area \(t^2/2\). In particular, \(|t|\|H\|\) need not be small.
 
 By (LC.8), \[
- A_{{\kappa_0},N}U_NA_{{\kappa_0},N}^*
-       =e^{i{\kappa_0} NG_N}e^{-i{\kappa_0} ND_N}U_N.
+ A_{{\kappa_0},N}U_{N,\mathrm{loc}}A_{{\kappa_0},N}^*
+       =e^{i{\kappa_0} NG_N}e^{-i{\kappa_0} ND_N}U_{N,\mathrm{loc}}.
 \] Apply (LC.19) with \(t={\kappa_0} N\), \(H=G_N\), \(J=-D_N\), and then (LC.12). For every integer \(r\geq1\), \[
  \boxed{\displaystyle
  \delta_N\leq\frac{{\kappa_0}^2\pi^r}{r!}N^{2-r}
                    \mathcal M_r(g)\mathcal M_r(\mathcal Cg).} \tag{LC.20}
-\] This proves Theorem A and (LC.18). Notice that we have not set the finite commutator to zero, nor silently replaced the one-exponential kick by a product of two kicks.
+\] This proves Theorem~\ref{pass1:ch09_locality_fixed_strength-1} and (LC.18). Notice that we have not set the finite commutator to zero, nor silently replaced the one-exponential kick by a product of two kicks.
 
 For integer \(t\), telescoping products of unitaries, or their adjoints when \(t<0\), yields \[
- \|V_{{\kappa_0},N}^t-A_{{\kappa_0},N}U_N^tA_{{\kappa_0},N}^*\|
+ \|V_{{\kappa_0},N}^t-A_{{\kappa_0},N}U_{N,\mathrm{loc}}^tA_{{\kappa_0},N}^*\|
        \leq |t|\delta_N.                                   \tag{LC.21}
 \] Choosing \(r\) larger than any fixed polynomial time exponent proves the all-polynomial-time assertion. The same estimate proves the stretched exponential-time assertion from (LC.4). Normalized traces differ by at most \(|t|\delta_N\); their absolute squares differ by at most \(2|t|\delta_N\). These statements control Heisenberg times \(t\asymp D\), not just \(O(\log N)\).
 
@@ -153,9 +157,9 @@ The following finite arithmetic facts can be established without primality of \(
 
 The symplectic matrix \[
  P=\begin{pmatrix}1&-1/(2s)\\s&1/2\end{pmatrix}
-\] satisfies \(T=P\operatorname{diag}(h,h^{-1})P^{-1}\). Its lower-left entry is a unit, so its finite modular Weyl implementer has the same type of quadratic kernel as (LC.9) and preserves parity. Conjugating \(S_h^{-1}\) by this implementer constructs a phase-normalized \(U_N\) with \(U_N^K=I\). Here \(S_hu(x)=u(h^{-1}x)\). The unit conditions above show that every nonzero residue has an orbit of length \(K\), and that an orbit and its negative are distinct. On the odd space, there are \(n=(N-1)/(2K)\) cyclic orbits, each contributing every \(K\)th root once. Hence the multiplicity is exactly \(n\) for each root. A different global phase merely rotates all centres and changes none of the spacing conclusions.
+\] satisfies \(T=P\operatorname{diag}(h,h^{-1})P^{-1}\). Its lower-left entry is a unit, so its finite modular Weyl implementer has the same type of quadratic kernel as (LC.9) and preserves parity. Conjugating \(S_h^{-1}\) by this implementer constructs a phase-normalized \(U_{N,\mathrm{loc}}\) with \(U_{N,\mathrm{loc}}^K=I\). Here \(S_hu(x)=u(h^{-1}x)\). The unit conditions above show that every nonzero residue has an orbit of length \(K\), and that an orbit and its negative are distinct. On the odd space, there are \(n=(N-1)/(2K)\) cyclic orbits, each contributing every \(K\)th root once. Hence the multiplicity is exactly \(n\) for each root. A different global phase merely rotates all centres and changes none of the spacing conclusions.
 
-Let \(W=A_{{\kappa_0},N}U_NA_{{\kappa_0},N}^*\) on the odd space. Restriction cannot increase (LC.20). For large \(N\) take \(\delta_N<\sin(\pi/K)\). Spectral stability for a normal matrix places each eigenvalue of \(V\) within \(\delta_N\) of a \(K\)th root. To verify multiplicities, let \(E=VW^*\) and use its principal Hermitian logarithm, \(E=e^{iH}\). Then \(\|H\|\leq2\arcsin(\delta_N/2)\), and the path \(e^{iuH}W\), \(0\leq u\leq1\), stays within \(\delta_N\) of \(W\). The disjoint slightly enlarged root disks have constant Riesz ranks along this path. Thus every disk contains exactly \(n\) eigenvalues. Their circle-coordinate halfwidth is bounded by \[
+Let \(W=A_{{\kappa_0},N}U_{N,\mathrm{loc}}A_{{\kappa_0},N}^*\) on the odd space. Restriction cannot increase (LC.20). For large \(N\) take \(\delta_N<\sin(\pi/K)\). Spectral stability for a normal matrix places each eigenvalue of \(V\) within \(\delta_N\) of a \(K\)th root. To verify multiplicities, let \(E=VW^*\) and use its principal Hermitian logarithm, \(E=e^{iH}\). Then \(\|H\|\leq2\arcsin(\delta_N/2)\), and the path \(e^{iuH}W\), \(0\leq u\leq1\), stays within \(\delta_N\) of \(W\). The disjoint slightly enlarged root disks have constant Riesz ranks along this path. Thus every disk contains exactly \(n\) eigenvalues. Their circle-coordinate halfwidth is bounded by \[
  a_N=\pi^{-1}\arcsin(\delta_N/2)=O(N^{-\infty}).              \tag{LC.22}
 \] This is an operator-norm, individual-cluster statement, unlike the earlier normalized Hilbert--Schmidt comparison. It still makes no claim about individual eigenvectors inside a nearly degenerate cluster.
 
@@ -191,7 +195,7 @@ Poisson commutation \textbf{alone} is insufficient for (LC.3). For a negative co
  \sum_{v+w=k}\widehat a(v)\widehat b(w)\omega(v,w)^3
 \] is nonzero: at frequencies \((-2,-1),(-2,1),(-1,-2),(-1,2)\) its values are \(-6,6,6,-6\), respectively, and the four opposite frequencies give the same values. The commutator therefore has a nonzero term of order \(N^{-3}\). For a sufficiently large odd \(N\) these finite frequencies are distinct modulo \(N\), so this is not a formal nonzero coefficient that disappears under quantization. Both implementations retain this negative control. The all-orders cancellation in (LC.11), not just its first term, is essential.
 
-Finally, if \(J_N\) commutes with \(U_N\) and \(\|J_N\|\leq1\), then \[
+Finally, if \(J_N\) commutes with \(U_{N,\mathrm{loc}}\) and \(\|J_N\|\leq1\), then \[
  \|[V_{{\kappa_0},N},A_{{\kappa_0},N}J_NA_{{\kappa_0},N}^*]\|
         \leq2\delta_N.                                    \tag{LC.27}
 \] The arithmetic commutant is therefore transported to an all-orders approximate commutant. These systems do not evade arithmetic structure by being nonlinear. We do not claim their complete symmetry reduction, simple spectrum, or generic random-matrix behaviour. Obtaining corresponding positive universality for fixed maps not conjugate to arithmetic models is not accomplished by this construction.

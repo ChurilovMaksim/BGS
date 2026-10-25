@@ -8,15 +8,16 @@ Use the physical Weyl convention, fixed index action T, Pell moduli and normaliz
        =e^{i[\varepsilon(A-D)+\eta F]}U_0.                    \tag{SC.R2}
 \] Set \(a_K=\sqrt K\eta_K\) and \(t_K=\sqrt K\varepsilon_K^2/N\).
 
-\textbf{Theorem A (smooth joint crossover).} If \(a_K\to a\in\mathbb R\) and \(t_K\to t\geq0\), then for every fixed integer m, \[
+\begin{theorem}[smooth joint crossover]\label{pass1:smooth_residual-1} If \(a_K\to a\in\mathbb R\) and \(t_K\to t\geq0\), then for every fixed integer m, \[
  \boxed{\tau_N(\mathcal V_{\varepsilon_K,\eta_K}^{mK})
       \longrightarrow\exp[-m^2\sigma_{af+tr_g}^2/2].}         \tag{SC.R3}
 \] For inversion-even f and g the same holds on the odd sector. The variance is \[
  \sigma_{af+tr_g}^2=a^2\sigma_f^2+2at\,\Gamma(f,r_g)
                          +t^2\sigma_{r_g}^2,                 \tag{SC.R4}
 \] where Gamma is the polarized Green--Kubo form. Its cross term need not vanish. Thus the sum of two variances from the special three-orbit example is not a universal rule. The resulting Kth-power law is wrapped normal, including its degenerate zero-variance case. No independence of finite spectra is assumed.
+\end{theorem}
 
-\textbf{Theorem B (compensated pinning).} Define the distinct, engineered family \[
+\begin{theorem}[compensated pinning]\label{pass1:smooth_residual-2} Define the distinct, engineered family \[
  \mathcal V^{\rm comp}_\varepsilon
    =\exp\{i[\varepsilon(A-D)-\varepsilon^2 R/N]\}U_0.          \tag{SC.R5}
 \] There are explicit finite constants \(C_g,D_g\), independent of N,K, such that for every real \(\varepsilon\) \[
@@ -24,6 +25,7 @@ Use the physical Weyl convention, fixed index action T, Pell moduli and normaliz
              e^{i\varepsilon A}-U_0\|_{\rm op}
         \leq C_g|\varepsilon|^3/N^2+D_g\varepsilon^2/N^3.}     \tag{SC.R6}
 \] Consequently, if \(|\varepsilon_K|=o(N^{2/3}K^{-1/3})\), all fixed recurrence traces tend to one. The globally unfolded neighbouring spacings tend weakly to \(\delta_{0}\) and normalized close-pair counts diverge at every fixed positive microscopic distance, on full space or either applicable parity sector. This statement preserves multiplicities and uses global mean spacing. It is not a universality claim after clusterwise unfolding.
+\end{theorem}
 
 \subsection{Exact commutator estimates from Fourier moments}\label{smooth_residual:exact-commutator-estimates-from-fourier-moments}
 
@@ -69,7 +71,7 @@ For (SC.R5) take \(f=r_g\) and \(\eta=-\varepsilon^2/N\) in the preceding factor
  C_g=C_3+\pi M_1(r_g)(3M_1(g)+M_1(d)),\qquad D_g=C_2.
 \] If \(\varepsilon=o(N^{2/3}K^{-1/3})\), K times the bound tends to zero. For the second term this also follows directly from \(K\varepsilon^2/N^3=o(K^{1/3}/N^{5/3})\); the zero or very small \(\varepsilon\) case needs no division by \(\varepsilon\).
 
-Normal-matrix spectral inclusion puts every eigenvalue of the gauged propagator within this operator-norm error of a Kth root of unity. Circle distance in R/Z is at most one quarter of chord distance. Hence its RMS lattice distance q obeys Kq tending to zero; K/d also tends to zero on each specified spectral space. The lattice concentration lemma (source file: \path{pell_microscopic_clustering.md}), whose proof is purely geometric, gives the spacing and pair-count conclusions in Theorem B. Alternatively unitary telescoping immediately proves the recurrence-trace statement.
+Normal-matrix spectral inclusion puts every eigenvalue of the gauged propagator within this operator-norm error of a Kth root of unity. Circle distance in R/Z is at most one quarter of chord distance. Hence its RMS lattice distance q obeys Kq tending to zero; K/d also tends to zero on each specified spectral space. The lattice concentration lemma (source file: \path{pell_microscopic_clustering.md}), whose proof is purely geometric, gives the spacing and pair-count conclusions in Theorem~\ref{pass1:smooth_residual-2}. Alternatively unitary telescoping immediately proves the recurrence-trace statement.
 
 This is a larger quantum-exponent range than \(\sqrt N K^{-1/4}\), but only for the explicitly compensated family, not the original unchanged perturbation. With \(\kappa=\varepsilon/N\), its exponent is \(N[\kappa(g-\mathcal Cg)-\kappa^2r_g]\). Thus the extra term is a specified second-order classical correction. The classical strength still tends to zero, of order \(o(N^{-1/3}K^{-1/3})\), and is not a fixed perturbation.
 

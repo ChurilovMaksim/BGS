@@ -61,7 +61,7 @@ where \(\mathcal O\) ranges over oriented nonzero \(A\)-orbits.
 The variance equals the absolutely convergent Green--Kubo sum for
 real \(f\).
 
-\textbf{Theorem 1 (Gevrey return law).} Suppose \(f\) is fixed, real, mean zero,
+\begin{theorem}[Gevrey return law]\label{pass1:return_general-1} Suppose \(f\) is fixed, real, mean zero,
 and for some \(\rho>0\) and \(0<\alpha\le1\) satisfies
 \[
              F_{\rho,\alpha}(f)=\sum_v|\widehat f_v|
@@ -87,6 +87,7 @@ If \(\sigma_A^2(f)=0\), instead
 \]
 For even \(f\), (Ret.U3)--(Ret.U5) also hold on the odd block with its own
 normalized trace. Constants are not uniform as \(A\) or \(f\) varies.
+\end{theorem}
 
 Consequently, for \(\epsilon_K\to0\) and positive variance the global
 return eigenphase law is Haar exactly when \(K\epsilon_K^2\to\infty\);
@@ -94,7 +95,7 @@ when \(K\epsilon_K^2\to v<\infty\) it is wrapped Gaussian with variance
 \(v\sigma_A^2(f)\). With \(\hbar_N=(2\pi N)^{-1}\), the classical action
 parameter is \(\kappa=\hbar_N\epsilon=\epsilon/(2\pi N)\).
 
-\textbf{Theorem 2 (averaged-observable CLT).} For fixed real mean-zero
+\begin{theorem}[averaged-observable CLT]\label{pass1:return_general-2} For fixed real mean-zero
 \(f_1,\ldots,f_J\) with \(\mathcal L_{1/2}(f_j)<\infty\) and fixed
 \(u_1,\ldots,u_J\in\mathbb R\),
 \[
@@ -105,8 +106,9 @@ parameter is \(\kappa=\hbar_N\epsilon=\epsilon/(2\pi N)\).
 In particular the empirical spectral law of \(X_K(f)\) tends weakly
 to \(N(0,\sigma_A^2(f))\). The same statements hold on the odd block
 when all symbols are even.
+\end{theorem}
 
-\textbf{Theorem 3 (sharpness, including quantum centering).} For every
+\begin{theorem}[sharpness, including quantum centering]\label{pass1:return_general-3} For every
 such \(A\) there is one fixed real even continuous mean-zero \(f\) with
 \(\mathcal L_\beta(f)<\infty\) for every \(\beta<1/2\), such that the
 empirical spectral laws of
@@ -118,6 +120,7 @@ to the odd block and subtraction of its own quantum mean.
 The exponent \(1/2\) is therefore sharp as a sufficient guarantee
 for these weighted Fourier classes. It is not asserted to be a
 necessary condition for each individual observable.
+\end{theorem}
 
 \hypertarget{arithmetic-and-quantization-for-general-a}{%
 \subsection{Arithmetic and quantization for general A}\label{arithmetic-and-quantization-for-general-a}}
@@ -288,7 +291,7 @@ Choose \(s_0\) small enough that \(s_0F_0(b)<\frac14\log\lambda\).
 This error, the conjugacy error, and the odd-trace correction
 are exponentially small in \(K\). Equations (Ret.U3)--(Ret.U4) follow.
 This proof uses no unproved classical CLT.
-It proves the analytic case \(\alpha=1\) of Theorem 1.
+It proves the analytic case \(\alpha=1\) of Theorem~\ref{pass1:return_general-1}.
 Section 6 supplies the changes for every \(0<\alpha<1\).
 
 \hypertarget{the-weighted-normal-form-and-low-regularity-limit}{%
@@ -352,7 +355,7 @@ traces uniformly in \(K\). First taking \(K\to\infty\) at fixed cutoffs,
 then removing the cutoffs, proves (Ret.U6). The orbit variance is
 continuous in the absolute Fourier norm. On the odd block the
 normalized Hilbert--Schmidt norm costs only the bounded factor
-\(\sqrt{2N/(N-1)}\). This proves Theorem 2.
+\(\sqrt{2N/(N-1)}\). This proves Theorem~\ref{pass1:return_general-2}.
 
 \hypertarget{a-centered-counterexample-for-every-a}{%
 \subsection{A centered counterexample for every A}\label{a-centered-counterexample-for-every-a}}
@@ -451,7 +454,7 @@ dimension \(1/p^2\). The odd trace of \(H_j\) is \(O(M_j^{-1})\).
 Subtracting this mean costs \(O(j/M_j)=o(1)\); the remaining
 centered perturbation still has bounded odd Hilbert--Schmidt norm.
 The same min-max argument, with threshold \(-j/2\), proves the
-odd version. This completes Theorem 3.
+odd version. This completes Theorem~\ref{pass1:return_general-3}.
 
 \hypertarget{removing-spatial-analyticity-every-finite-gevrey-order}{%
 \subsection{Removing spatial analyticity: every finite Gevrey order}\label{removing-spatial-analyticity-every-finite-gevrey-order}}
@@ -615,10 +618,7 @@ belong to different \(A\)-orbits, which gives the displayed variance.
 
 Run the companion verifier from the repository root with NumPy available:
 
-\begin{verbatim}
-OPENBLAS_NUM_THREADS=1 python computations/verification/general_cat_return_laws.py \
-  --output build/general-cat-return-laws-precheck.json
-\end{verbatim}
+The exact verifier invocation is reproduced as listing S2 in the Supplement.
 
 The \href{https://github.com/ChurilovMaksim/BGS/blob/main/computations/verification/general_cat_return_laws.py}{verification program}
 passed on 2026-09-12. It enumerates 72 hyperbolic unimodular matrices
@@ -660,7 +660,7 @@ all dimensions or all nonlinear chaotic systems.
 Generality over Gevrey order means every fixed \(0<\alpha\le1\),
 with constants that may deteriorate as \(\alpha\) tends to zero.
 The proof does not extend by taking that endpoint.
-Theorem 2 has a lower regularity requirement because it concerns
+Theorem~\ref{pass1:return_general-2} has a lower regularity requirement because it concerns
 averaged observables rather than the actual kicked propagator.
 
 For the BGS programme the remaining target is still local,

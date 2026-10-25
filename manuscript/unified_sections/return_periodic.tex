@@ -68,7 +68,7 @@ with equal weight. This finite group is explicitly
                          |\mathcal P_K|=32N^2.             \tag{Ret.P3}
 \]
 
-\textbf{Theorem 1 (finite Fourier support).}
+\begin{theorem}[finite Fourier support]\label{pass1:return_periodic-1}
 Suppose \(\widehat f_v=0\) for \(\|v\|_1>M\), \(M\ge1\).
 Put \(\delta=|\epsilon|\), \(u=K\delta F_0\),
 \(L=\lceil K/(64M)\rceil\), and
@@ -83,8 +83,9 @@ For every real \(\epsilon\),
 \]
 For an even symbol the normalized odd trace satisfies the same bound
 with the additional term \(e^u/(N-1)\).
+\end{theorem}
 
-\textbf{Theorem 2 (arbitrary fixed smooth symbol).}
+\begin{theorem}[arbitrary fixed smooth symbol]\label{pass1:return_periodic-2}
 For every real \(f\in C^\infty(\mathbb T^2)\), every \(T<\infty\), and \(q>0\),
 \[
  \sup_{|t|\le T}
@@ -99,6 +100,7 @@ the error is \(N^{-1+o(1)}\).
 It also gives an exponentially small error in \(K\) for a sufficiently
 small fixed \(\delta>0\), depending on \(M,F_0\).
 These statements concern one arithmetic period \(K\).
+\end{theorem}
 
 \hypertarget{the-first-order-lattice-and-its-32-classes}{%
 \subsection{The first-order lattice and its 32 classes}\label{the-first-order-lattice-and-its-32-classes}}
@@ -243,7 +245,7 @@ All classes and Taylor degrees have been included.
 For the odd correction, a noncentral Weyl word contributes at most
 \(1/(N-1)\) to the difference of normalized traces, and a central word
 has zero correction. The atom sum for the actual physical kick is \(e^u\).
-This proves Theorem 1.
+This proves Theorem~\ref{pass1:return_periodic-1}.
 
 \hypertarget{smooth-truncation-and-the-time-range}{%
 \subsection{Smooth truncation and the time range}\label{smooth-truncation-and-the-time-range}}
@@ -283,7 +285,7 @@ This proves the fixed-small-kick assertion.
 
 For a classical coboundary \(f=g-g\circ A^{\mathsf T}\), (Ret.P2)
 telescopes at every periodic point: \(Z_{K,f}=1\).
-Theorem 2 correctly retains a coherent first return for these symbols.
+Theorem~\ref{pass1:return_periodic-2} correctly retains a coherent first return for these symbols.
 No positive-variance claim is made for arbitrary phase-space symbols.
 
 A classical limit theorem is a separate input to one-return asymptotics;
@@ -318,10 +320,7 @@ Differences at \(\epsilon=.08,.04,.02,.01\) are approximately
 These are finite diagnostics, not interval bounds or replacements
 for the analytic proof.
 
-\begin{verbatim}
-OPENBLAS_NUM_THREADS=1 python computations/verification/periodic_point_trace_comparison.py \
-  --output build/periodic-point-trace-comparison-precheck.json
-\end{verbatim}
+The exact verifier invocation is reproduced as listing S3 in the Supplement.
 
 The cancellation in (Ret.P10) uses one complete arithmetic period.
 Repeating the word introduces interactions between replica assignments.
@@ -387,7 +386,7 @@ Write \(T=A^{\mathsf T}\) and use the torus distance induced by the maximum
 norm. For a Lipschitz real function let \(\operatorname{Lip}(f)\) refer to
 this distance. Haar measure is normalized to mass one.
 
-\textbf{Lemma 3 (coupling).} There is a coupling of a uniform \(q\in\mathcal P_K\)
+\begin{lemma}[coupling]\label{pass1:return_periodic-3} There is a coupling of a uniform \(q\in\mathcal P_K\)
 and a Haar point \(z\in\mathbb T^2\) for which
 \[
  \left|\sum_{j=-m}^{m-1} f(T^jz)-\sum_{j=-m}^{m-1}f(T^jq)\right|
@@ -401,6 +400,7 @@ Birkhoff sums for these two measures is at most
    \int_{\mathbb T^2}e^{it\sum_{j=0}^{K-1}f(T^jz)/\sqrt K}\,dz\right|
        \le \frac{3|t|\operatorname{Lip}(f)}{\sqrt K}.
 \]
+\end{lemma}
 
 Partition the torus into centered rectangular cells of side lengths
 \(1/(8N)\) and \(1/(4N)\). Couple each point to its cell center. The cells
@@ -438,7 +438,7 @@ identifies them; the total absolute correlation sum is at most \(F_0^2\).
 This is the existing classical orbit-variance formula, not a new claim
 of priority; see \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/resonance-cohomology/weighted_wiener_resonance.md}{the earlier derivation}.
 
-\textbf{Theorem 4 (general one-return law).} For every fixed real mean-zero
+\begin{theorem}[general one-return law]\label{pass1:return_periodic-4} For every fixed real mean-zero
 \(f\) with \(F_4<\infty\), in particular every smooth \(f\),
 \[
  \frac{\operatorname{Tr}U_{t/\sqrt K,f}^{K}}N
@@ -446,6 +446,7 @@ of priority; see \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathemati
 \]
 uniformly on compact real \(t\)-intervals. The odd trace obeys the same law
 when \(f\) is even, and \(\sigma_A^2(f)=0\) is allowed.
+\end{theorem}
 
 The external input is Cohen--Conze, arXiv:1304.4556v2, Theorem 2.18:
 the Haar CLT for a totally ergodic toral action and a real mean-zero
@@ -583,7 +584,7 @@ Constants in \(f\) can be removed exactly; they do not affect commutators.
 \hypertarget{every-replica-at-the-critical-scale}{%
 \subsection{Every replica at the critical scale}\label{every-replica-at-the-critical-scale}}
 
-\textbf{Theorem 5 (uniform replica comparison).} For every fixed real symbol
+\begin{theorem}[uniform replica comparison]\label{pass1:return_periodic-5} For every fixed real symbol
 \(f\) with \(F_4<\infty\) and every \(T<\infty\),
 \[
  \sup_{\substack{r\ge1\\|t|\le T}}
@@ -593,6 +594,7 @@ Constants in \(f\) can be removed exactly; they do not affect commutators.
 \]
 The result also holds for the normalized odd traces of even symbols.
 It concerns integer \(r\), including \(r\) depending on \(K\).
+\end{theorem}
 
 We first remove the bandwidth loss in (Ret.P23). Subtract the mean throughout
 this argument; restoring it multiplies both traces by the same phase.
@@ -650,7 +652,7 @@ For even symbols all gauges preserve parity; the restriction of a
 normalized full Hilbert--Schmidt bound to the odd space costs at most
 \(\sqrt{2N/(N-1)}\).
 
-Combining Theorems 4 and 5 gives, for every fixed real mean-zero \(f\)
+Combining Theorems~\ref{pass1:return_periodic-4} and~\ref{pass1:return_periodic-5} gives, for every fixed real mean-zero \(f\)
 with \(F_4<\infty\),
 \[
  \sup_{\substack{r\ge1\\|t|\le T}}
@@ -679,12 +681,13 @@ classical system.
 \hypertarget{the-zero-variance-case-and-its-next-scale}{%
 \subsection{The zero-variance case and its next scale}\label{the-zero-variance-case-and-its-next-scale}}
 
-\textbf{Theorem 6 (smooth degeneracy).} For real mean-zero smooth \(f\),
+\begin{theorem}[smooth degeneracy]\label{pass1:return_periodic-6} For real mean-zero smooth \(f\),
 \(\sigma_A^2(f)=0\) if and only if \(f=g-g\circ T\) for a real smooth \(g\).
 If \(f\) is even, \(g\) can be chosen even.
 This is a smooth Fourier-coboundary criterion, a classical mechanism
 already used in \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/pell/pell_smooth_resonance.md}{the earlier smooth note}.
 Here is the regularity argument for the current covector matrix \(A\).
+\end{theorem}
 
 Choose real eigen-coordinates \(\xi,\zeta\) with
 \(A:(\xi,\zeta)\mapsto(\lambda\xi,\lambda^{-1}\zeta)\) and let
@@ -764,7 +767,7 @@ Thus
 This is the same local loop mechanism established in the earlier note;
 the present consequence concerns the even-period sequence and all replicas.
 
-\textbf{Theorem 7 (uniform second-order return law).} For every fixed real
+\begin{theorem}[uniform second-order return law]\label{pass1:return_periodic-7} For every fixed real
 smooth \(g\) and every finite \(T_0\),
 \[
  \sup_{\substack{r\ge1,\ 0\le t\le T_0\\
@@ -782,6 +785,7 @@ After \(rK\) steps the error in (Ret.P28) is at most
 The effective kick is exactly \(t/(r\sqrt K)\), so (Ret.P25) applies to
 the fixed symbol \(h_g\), uniformly in \(r\). This proves (Ret.P29).
 No positivity of \(\Gamma_A(g)\) for every nonconstant \(g\) is asserted.
+\end{theorem}
 
 For example, take \(g=2\cos(2\pi z_1)\) and \(v=(1,0)\). Then
 \[
@@ -834,7 +838,7 @@ by \(K\) is \(O(F_0F_{\rm tail})\), hence \(O(K^{-4})\) with the
 corresponding weighted norms. Constants can again be adjusted for
 bounded \(K\). This proves (Ret.P32), including constants after their removal.
 
-\textbf{Theorem 8 (joint critical return law).} Fix real mean-zero
+\begin{theorem}[joint critical return law]\label{pass1:return_periodic-8} Fix real mean-zero
 \(f_1,\ldots,f_J\) with finite fourth Fourier moments and real
 \(t_1,\ldots,t_J\). Write
 \[
@@ -854,6 +858,7 @@ Then, uniformly over positive integers \(r_1,\ldots,r_J\),
 \]
 The product has the displayed order; every fixed order has the same limit.
 For the odd-block statement every \(f_j\) must be even.
+\end{theorem}
 
 Equation (Ret.P31) replaces the physical factors by \(e^{it_jX_K(f_j)}\)
 with a total normalized Hilbert--Schmidt error \(O(K^{-1/2})\).
@@ -865,7 +870,7 @@ Two-factor Duhamel, iterated over this fixed number of factors, gives
                        \|[X_K(f_a),X_K(f_b)]\|_{2,N}.
 \]
 Apply (Ret.P32), then (Ret.P31) with \(r=1,t=1\) to the fixed symbol
-\(\sum_jt_jf_j\), and finally Theorem 4. Its variance is the quadratic
+\(\sum_jt_jf_j\), and finally Theorem~\ref{pass1:return_periodic-4}. Its variance is the quadratic
 form in (Ret.P33). This proves the joint law without asserting convergence
 of unbounded moments from characteristic functions alone.
 

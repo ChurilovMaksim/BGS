@@ -57,13 +57,14 @@ Take the fixed observable \[
 
 \subsection{Main theorem}\label{pell_blocks:main-theorem}
 
-\textbf{Theorem 1 (deterministic global Gaussian blocks).} Let K run through odd primes, with N,\(Q_{K}\),F,h,\(q_{0}\) as above. For every fixed integer \(m\geq1\), \[
+\begin{theorem}[deterministic global Gaussian blocks]\label{pass1:pell_blocks-1} Let K run through odd primes, with N,\(Q_{K}\),F,h,\(q_{0}\) as above. For every fixed integer \(m\geq1\), \[
  \sup_\eta\left|
  \frac1n\operatorname{Tr}X_{q_0,\eta}^{m}-\gamma_m
  \right|\longrightarrow0,
  \qquad
  \gamma_{2r}=(2r-1)!!,\quad\gamma_{2r+1}=0. \tag{PB.6}
 \] Consequently the empirical spectral measures converge weakly to the standard normal distribution, uniformly over all K odd-sector cat eigenspaces. There is no random q in this theorem. For fixed even m the proof gives an \(O_{m}(\log K/K)\) error, apart from an exponentially small polynomial-in-K term. For fixed odd m the main word contribution is eventually absent.
+\end{theorem}
 
 The name Gaussian here describes the limiting \textbf{eigenvalue density}. It does not assert that the matrices form a Gaussian orthogonal ensemble.
 
@@ -127,7 +128,8 @@ Crucially, (PB.12) does \textbf{not} imply coefficientwise balance. The structur
 
 \subsection{A bounded-cluster lemma and counting, instead of exclusion}\label{pell_blocks:a-bounded-cluster-lemma-and-counting-instead-of-exclusion}
 
-\textbf{Lemma 2.} Let \(P\) be an integer polynomial of coefficient \(\ell^1\)-norm at most \(m\), with \(P(\lambda)=0\). Split its support at a gap \(d>2\log_\lambda m\). Then both pieces vanish separately at \(\lambda\).
+\begin{lemma}\label{pass1:pell_blocks-2} Let \(P\) be an integer polynomial of coefficient \(\ell^1\)-norm at most \(m\), with \(P(\lambda)=0\). Split its support at a gap \(d>2\log_\lambda m\). Then both pieces vanish separately at \(\lambda\).
+\end{lemma}
 
 \textbf{Proof.} Write \(P=P_{\rm low}+Z^{a+d}P_{\rm high}\), with \(\deg P_{\rm low}\leq a\). If \(P_{\rm high}(\lambda)\ne0\), its algebraic-integer norm is a nonzero integer. Since \(|P_{\rm high}(\lambda^{-1})|\leq m\), we obtain \(|P_{\rm high}(\lambda)|\geq1/m\). Cancellation with the low part would imply \(\lambda^{a+d}/m\leq m\lambda^a\), a contradiction to the gap assumption. Hence \(P_{\rm high}(\lambda)=0\), and then \(P_{\rm low}(\lambda)=0\). An empty low part is included. \(\square\)
 
@@ -180,11 +182,12 @@ There is also a nontrivial explicit asymptotic correction: \[
 
 The following elementary comparison explains precisely how far the global observable theorem transfers to a propagator.
 
-\textbf{Lemma 3.} Let \(U_0\) be unitary, let \(P\) be its spectral projection at \(1\), and let \(\delta>0\) be the distance from \(1\) to the other eigenvalues. Let \(B=B^*\), \(\|B\|\leq b\), and \(U_e=e^{ieB}U_0\). If \(0<b|e|\leq\delta/16\), the cluster near \(1\) has rank \(\operatorname{rank}P\). Write its principal eigenphases as \(\theta_j\), and the eigenvalues of \(A=PBP\) on \(\operatorname{ran}P\) as \(a_j\). Their empirical measures satisfy \[
+\begin{lemma}\label{pass1:pell_blocks-3} Let \(U_0\) be unitary, let \(P\) be its spectral projection at \(1\), and let \(\delta>0\) be the distance from \(1\) to the other eigenvalues. Let \(B=B^*\), \(\|B\|\leq b\), and \(U_e=e^{ieB}U_0\). If \(0<b|e|\leq\delta/16\), the cluster near \(1\) has rank \(\operatorname{rank}P\). Write its principal eigenphases as \(\theta_j\), and the eigenvalues of \(A=PBP\) on \(\operatorname{ran}P\) as \(a_j\). Their empirical measures satisfy \[
  W_2\left(\frac1n\sum_j\delta_{\theta_j/e},
           \frac1n\sum_j\delta_{a_j}\right)
  \leq\frac{13\pi b^2|e|}{\delta}. \tag{PB.22}
 \] Here \(W_2\) is quadratic Wasserstein distance between equal-weight real spectra.
+\end{lemma}
 
 \textbf{Proof.} Put \(\Delta=U_e-U_0\) and \(d=\|\Delta\|\leq b|e|\). Resolvent integration on \(|z-1|=\delta/2\) gives \(\|P_e-P\|=\eta\leq4d/\delta\leq1/4\). The new projection is orthogonal. Set \(H=(PP_eP)^{1/2}\) on \(\operatorname{ran}P\) and \(J=P_ePH^{-1}\). Then \(J\) is an isometry onto the perturbed cluster, \(PJ=H\), \(\|(I-P)J\|\leq\eta\), and \(\|J-P\|\leq2\eta\). Let \(V=J^*U_eJ\). Spectral inclusion for the normal matrix \(U_0\) gives \(\|V-I\|\leq d\): every cluster eigenvalue is within \(d\) of \(1\), since all other old eigenvalues are farther than \(\delta/2\).
 
@@ -196,6 +199,8 @@ For the cat propagator, rotate any of its K clusters to 1. Its gap is \[
  \delta_K=2\sin(\pi/K)\geq4/K,\qquad b=2.
 \] Thus the empirical law of the rescaled relative eigenphases \(\sqrt{K/2}\,\theta_j/e\) differs in \(W_2\) from the corresponding observable block by at most \[
  \frac{13\pi}{\sqrt2}|e|K^{3/2}. \tag{PB.24}
-\] \textbf{Corollary 4.} For any nonzero perturbation sequence \(e=e_K\) satisfying \(|e_K|K^{3/2}\to0\), every odd-sector eigenphase cluster of \(e^{ie_KB}U_N(T)\), rescaled as above, converges globally to the standard normal distribution, uniformly over the K clusters. The symmetrically kicked propagator \(e^{ie_KB/2}U_N(T)e^{ie_KB/2}\) is isospectral and has the same conclusion.
+\]
+\begin{corollary}\label{pass1:pell_blocks-4} For any nonzero perturbation sequence \(e=e_K\) satisfying \(|e_K|K^{3/2}\to0\), every odd-sector eigenphase cluster of \(e^{ie_KB}U_N(T)\), rescaled as above, converges globally to the standard normal distribution, uniformly over the K clusters. The symmetrically kicked propagator \(e^{ie_KB/2}U_N(T)e^{ie_KB/2}\) is isospectral and has the same conclusion.
+\end{corollary}
 
 This does not exchange the small-perturbation and semiclassical limits without control: (PB.24) is the control, and its hypothesis is part of the claim. Fixed nonzero perturbations, microscopic within-cluster correlations, and full BGS universality are not established.

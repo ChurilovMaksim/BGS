@@ -33,7 +33,7 @@ For a nonzero integer \(a\) with \(\gcd(a,N)=1\), define
 Here \(\operatorname{tr}_-\) denotes the normalized odd trace.
 In particular \(a=1\) is admissible for every \(K\).
 
-\textbf{Theorem 1 (uniform return bound).} For every positive integer \(r\)
+\begin{theorem}[uniform return bound]\label{pass1:return_gas-1} For every positive integer \(r\)
 and real \(\epsilon\) with \(s=r|\epsilon|\le s_a\),
 \[
  |\operatorname{tr}_-U_{\epsilon,a}^{rK}|
@@ -41,8 +41,9 @@ and real \(\epsilon\) with \(s=r|\epsilon|\le s_a\),
 \]
 The number of replicas \(r\) is not held fixed in this finite inequality.
 Every central aggregate and every Bessel charge is included.
+\end{theorem}
 
-\textbf{Corollary 1 (all fixed returns and the global return law).}
+\begin{corollary}[all fixed returns and the global return law]\label{pass1:return_gas-2}
 Fix \(a\ne0\), restricting to the indicated unit subsequence if necessary.
 For every real sequence \(\epsilon_K\to0\) and every fixed integer \(r\ge1\),
 \[
@@ -54,6 +55,7 @@ If \(K\epsilon_K^2\to\infty\), the empirical eigenphase measure of
 If \(K\epsilon_K^2\to t<\infty\), its Fourier moments are \(e^{-r^2t}\),
 the wrapped centered Gaussian with variance \(2t\).
 These are global laws for the return operator.
+\end{corollary}
 
 There is also a relative correction, not just decay to zero.
 Put
@@ -66,7 +68,7 @@ Put
 For example \(S_1=1.6221274986792295244903668068\ldots\).
 Both series and their comparison will be bounded below.
 
-\textbf{Theorem 2 (relative fourth-order transition).}
+\begin{theorem}[relative fourth-order transition]\label{pass1:return_gas-3}
 Fix \(a\ne0\). Let \(r_K\ge1\) be any sequence of positive integers,
 let \(\epsilon_K\) be real,
 \(x_K=r_K\epsilon_K\), and suppose \(Kx_K^4\to u<\infty\).
@@ -82,6 +84,7 @@ The denominator is positive eventually. Formula (Ret.G5) is uniform in the
 replica count; it does not require \(r_K\) to converge.
 If \(r\) is fixed and \(K\epsilon_K^4\to v<\infty\), its correction is
 \(\exp[-r^2(r^2-1)S_av/3]\).
+\end{theorem}
 
 The symbol \(2\cos(2\pi aq)\) is fixed and smooth when \(a\) is fixed.
 Nevertheless the associated classical kick strength is proportional to
@@ -463,13 +466,13 @@ The first error is bounded by a constant times \(G_K(2|x_K|)\),
 which tends to zero since \(K|x_K|^8\to0\).
 The odd error tends to zero because its logarithm is
 \(-\tfrac12K\log\lambda+2K|x_K|+O(Kx_K^2)+O(1)\).
-This completes Theorem 2 without a fixed-\(r\) assumption.
+This completes Theorem~\ref{pass1:return_gas-3} without a fixed-\(r\) assumption.
 
 For bounded \(K\epsilon_K^2\) and fixed \(r\), (Ret.G18)--(Ret.G19) give (Ret.G3).
 For \(K\epsilon_K^2\to\infty\), use (Ret.G2).
 A subsequence argument covers arbitrary sequences.
 Fourier approximation by trigonometric polynomials then proves
-Corollary 1, including the uniform circle limit.
+Corollary~\ref{pass1:return_gas-2}, including the uniform circle limit.
 
 \hypertarget{independent-checks-and-a-failed-test-that-was-corrected}{%
 \subsection{Independent checks and a failed test that was corrected}\label{independent-checks-and-a-failed-test-that-was-corrected}}
@@ -512,10 +515,7 @@ or an independent proof of the uniform remainder.
 The test of the full-space coefficient does not erase the odd-projection
 term from (Ret.G2), (Ret.G5), or (Ret.G18).
 
-\begin{verbatim}
-OPENBLAS_NUM_THREADS=1 python computations/verification/fixed_harmonic_return_gas.py \
-  --output build/fixed-harmonic-return-gas-precheck.json
-\end{verbatim}
+The exact verifier invocation is reproduced as listing S1 in the Supplement.
 
 \hypertarget{why-this-still-does-not-reach-microscopic-bgs}{%
 \subsection{Why this still does not reach microscopic BGS}\label{why-this-still-does-not-reach-microscopic-bgs}}

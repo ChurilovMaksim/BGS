@@ -5,21 +5,21 @@ uniform microscopic resolution. This section returns to propagator spectra.
 It gives necessary safeguards for a universality proof, not a proof of BGS.
 
 \begin{proposition}[Simple spectra invisible to a long initial trace window]
-For $N=2M$, let $U_N$ have the $N$th roots of unity as eigenvalues and let $V_N$
+For $N=2M$, let $U_{N,\mathrm{test}}$ have the $N$th roots of unity as eigenvalues and let $V_N$
 have the $2M$ distinct eigenvalues
 \[
  e^{2\pi i j/M+i\pi/(3M)},\quad e^{2\pi i j/M-i\pi/(3M)},
  \qquad 0\le j<M.
 \]
-Then $\operatorname{Tr}U_N^k=\operatorname{Tr}V_N^k=0$ for every
+Then $\operatorname{Tr}U_{N,\mathrm{test}}^k=\operatorname{Tr}V_N^k=0$ for every
 $1\le k<M$. Nevertheless, with global mean-spacing unfolding, their cyclic
 nearest-neighbour spacing measures are exactly
 \[
- \mu_{U_N}=\delta_1,\qquad
+ \mu_{U_{N,\mathrm{test}}}=\delta_1,\qquad
  \mu_{V_N}=\tfrac12\delta_{2/3}+\tfrac12\delta_{4/3}.
 \]
 Their Wasserstein distance of order one is $1/3$, independently of $N$.
-For their spectral determinants $D_U(z)=\det(I-zU_N)$ and $D_V(z)=\det(I-zV_N)$,
+For their spectral determinants $D_U(z)=\det(I-zU_{N,\mathrm{test}})$ and $D_V(z)=\det(I-zV_N)$,
 \[
  D_U(z)=1-z^{2M},\qquad D_V(z)=1-z^M+z^{2M}.
 \]
@@ -42,7 +42,7 @@ For the normalized Carath\'eodory transform
 \]
 the same trace formula gives
 \[
- \sup_{|z|=r}|G_{U_N}(z)-G_{V_N}(z)|
+ \sup_{|z|=r}|G_{U_{N,\mathrm{test}}}(z)-G_{V_N}(z)|
        \le\frac{4r^M}{1-r^M}.
 \]
 Consequently the determinants approach each other and these transforms both
@@ -56,14 +56,14 @@ At $r_N=\exp(-s/N)$ with fixed $s$, the quantity $r_N^M=e^{-s/2}$ no longer
 vanishes; the missing boundary-layer scale is precisely of order $1/N$.
 
 \begin{proposition}[First-order Egorov alone cannot force local repulsion]
-Suppose $U_N$ is any unitary quantization satisfying, for fixed observables $a$,
+Suppose $U_{N,\mathrm{test}}$ is any unitary quantization satisfying, for fixed observables $a$,
 \[
- \|U_N^*\operatorname{Op}_N(a)U_N-\operatorname{Op}_N(a\circ T)\|
+ \|U_{N,\mathrm{test}}^*\operatorname{Op}_N(a)U_{N,\mathrm{test}}-\operatorname{Op}_N(a\circ T)\|
        =O_a(N^{-1}),\qquad \sup_N\|\operatorname{Op}_N(a)\|<\infty.
 \]
 Fix an integer $L\ge2$ and take $M_N=\lfloor N/L\rfloor$, for $N\ge L$.
-There are unitaries $\widetilde U_N$ with
-$\|\widetilde U_N-U_N\|=O_L(N^{-1})$, the same displayed Egorov estimate,
+There are unitaries $\widetilde{U_{N,\mathrm{test}}}$ with
+$\|\widetilde{U_{N,\mathrm{test}}}-U_{N,\mathrm{test}}\|=O_L(N^{-1})$, the same displayed Egorov estimate,
 and at least $N-M_N$ zero cyclic spacings. There is also a simple-spectrum
 version whose limiting spacing measures still have an atom of mass at least
 $1-1/L$ at zero, whenever a weak limit is taken.
@@ -74,7 +74,7 @@ root of unity. The change in operator norm is at most
 $2\sin(\pi/(2M_N))\le\pi/M_N=O_L(N^{-1})$.
 There are at most $M_N$ occupied roots, hence at least $N-M_N$ zero spacings.
 For any bounded operator $B$ the conjugation difference is at most
-$2\|B\|\|\widetilde U_N-U_N\|$, which preserves the assumed Egorov bound.
+$2\|B\|\|\widetilde{U_{N,\mathrm{test}}}-U_{N,\mathrm{test}}\|$, which preserves the assumed Egorov bound.
 
 For the simple-spectrum version, split each occupied root into distinct
 angles in an arc of half-width $\varepsilon_N/N$, where

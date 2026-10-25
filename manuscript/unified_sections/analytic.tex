@@ -1,9 +1,10 @@
 \section{Poisson rigidity and a quantitative quantum lower bound}\label{sec:analytic}
 Let \(S\in\mathrm{SL}(2,\mathbb Z)\) satisfy \(|\operatorname{tr}S|>2\) and act on \(\mathbb T^2\) with normalized Haar measure. For real \(C^1\) functions put \(\{f,h\}=f_qh_p-f_ph_q\).
 
-\textbf{Theorem 1 (regular-gradient rigidity).} If \(g\in C^1(\mathbb T^2)\) is nonconstant and its critical set \(\{dg=0\}\) has measure zero, then \[
+\begin{theorem}[regular-gradient rigidity]\label{pass1:analytic-1} If \(g\in C^1(\mathbb T^2)\) is nonconstant and its critical set \(\{dg=0\}\) has measure zero, then \[
                   \{g,g\circ S\}\not\equiv0.                 \tag{AR.R1}
 \] Consequently every real analytic \(g\) satisfying \(\{g,g\circ S\}=0\) is constant. No parity assumption is needed. Equivalently a nonconstant \(C^1\) observable commuting with its next iterate must have a positive-measure critical set.
+\end{theorem}
 
 The analytic conclusion uses the standard measure-zero theorem for zeros of a nontrivial real analytic function, not a new unique-continuation theorem. A short primary reference is Boris Mityagin, \emph{The Zero Set of a Real Analytic Function}, \href{https://arxiv.org/abs/1512.07276}{arXiv:1512.07276}, Proposition 0.
 
@@ -47,7 +48,7 @@ The normalized Hilbert--Schmidt norm obeys, for every fixed smooth h, \[
  \lim_{N\to\infty}\hbar_N^{-1}
  \|[\operatorname{Op}_N(g),\operatorname{Op}_N(g\circ S)]\|_{2,N}
                          =\|\{g,g\circ S\}\|_{L^2}.}        \tag{AR.R4}
-\] For nonconstant analytic g the right side is strictly positive by Theorem 1. In particular this pair of quantized observables cannot commute to every inverse power of N. Since \(\|B\|_{\mathrm{op}}\geq\|B\|_{2,N}\), it also has an operator-norm lower bound \(c_g/N\) for all sufficiently large N.
+\] For nonconstant analytic g the right side is strictly positive by Theorem~\ref{pass1:analytic-1}. In particular this pair of quantized observables cannot commute to every inverse power of N. Since \(\|B\|_{\mathrm{op}}\geq\|B\|_{2,N}\), it also has an operator-norm lower bound \(c_g/N\) for all sufficiently large N.
 
 For \(g=b_{(1,0)}=2\cos(2\pi q)\), direct algebra gives \[
  \|\{g,g\circ S\}\|_2=32\pi^2,

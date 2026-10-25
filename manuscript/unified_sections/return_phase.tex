@@ -35,7 +35,7 @@ Equivalently for our purposes, assume
 \]
 Let \(\sigma^2=\sigma_A^2(f)\) be the full orbit variance (Ret.P18).
 
-\textbf{Theorem 1.} If \(\sigma^2>0\), there are \(s_0,C,c>0\), depending on
+\begin{theorem}\label{pass1:return_phase-1} If \(\sigma^2>0\), there are \(s_0,C,c>0\), depending on
 \(f\), such that for every admissible \(K\), every positive integer \(r\),
 and every real \(\epsilon\) with \(s=r|\epsilon|\le s_0\),
 \[
@@ -54,6 +54,7 @@ If \(\sigma^2=0\), the stronger coherent estimate is
  \left|\frac1N\operatorname{Tr}U_{\epsilon,f}^{rK}-1\right|
                          \le \frac{C_fKs^2}{rN}.            \tag{Ret.R3}
 \]
+\end{theorem}
 
 Thus for every \(\epsilon_K\to0\) and fixed positive integer \(r\),
 the trace differs from \(e^{-\sigma^2r^2K\epsilon_K^2/2}\) by \(o(1)\).
@@ -471,7 +472,7 @@ By the triangle inequality,
        \sum_{v\ne0}|\widehat f_v|[\log(2+\|v\|_1)]^\beta.  \tag{Ret.R22}
 \]
 
-\textbf{Theorem 2 (low-regularity averaged quantum CLT).} If \(f\) is real,
+\begin{theorem}[low-regularity averaged quantum CLT]\label{pass1:return_phase-2} If \(f\) is real,
 mean zero and \(\mathcal L_{1/2}(f)<\infty\), the empirical spectral law
 of \(X_K(f)\) converges weakly to \(N(0,\sigma_A^2(f))\).
 More generally, for every fixed finite family in this class and fixed
@@ -484,6 +485,7 @@ real \(t_1,\ldots,t_J\),
 \]
 For even symbols the statement holds on the odd block as well.
 No convergence of arbitrary unbounded moments is asserted.
+\end{theorem}
 
 For a fixed Fourier polynomial, (Ret.R2), or (Ret.R3) when its variance vanishes,
 and the gauge-free estimate (Ret.P31) give the scalar statement.
@@ -509,12 +511,13 @@ the bounded norm factor \(\sqrt{2N/(N-1)}\).
 \hypertarget{the-exponent-one-half-is-sharp-within-these-weighted-fourier-classes}{%
 \subsection{The exponent one half is sharp within these weighted Fourier classes}\label{the-exponent-one-half-is-sharp-within-these-weighted-fourier-classes}}
 
-\textbf{Theorem 3.} There is a single fixed real even continuous mean-zero
+\begin{theorem}\label{pass1:return_phase-3} There is a single fixed real even continuous mean-zero
 function \(f\) for which \(\mathcal L_\beta(f)<\infty\) for every
 \(\beta<1/2\), but the empirical laws of \(X_K(f)\) are not tight.
-In particular replacing \(1/2\) by any smaller exponent in Theorem 2
+In particular replacing \(1/2\) by any smaller exponent in Theorem~\ref{pass1:return_phase-2}
 would be false. This is sharpness of a uniform class guarantee, not
 a necessary condition for every individual observable.
+\end{theorem}
 
 For \(j\ge1\) put
 \[
@@ -670,10 +673,7 @@ The companion verifier is
 \href{https://github.com/ChurilovMaksim/BGS/blob/main/computations/verification/phase_space_return_gas.py}{phase\_space\_return\_gas.py}.
 Run from the repository root with NumPy available:
 
-\begin{verbatim}
-OPENBLAS_NUM_THREADS=1 python computations/verification/phase_space_return_gas.py \
-  --output build/phase-space-return-gas-precheck.json
-\end{verbatim}
+The exact verifier invocation is reproduced as listing S4 in the Supplement.
 
 The recorded run passes the following controls:
 
@@ -708,11 +708,11 @@ The analytic lattice, conditional gas, cubic-degree mechanism, and both
 regularity counterexamples received limited independent internal review.
 That review led to two clarifications: the forcing support is
 contained in a run and its preceding site, and the zero-variance
-case of Theorem 2 uses (Ret.R3). This is not external referee acceptance
+case of Theorem~\ref{pass1:return_phase-2} uses (Ret.R3). This is not external referee acceptance
 or formal verification.
 
 The actual-kick theorem requires analytic \(f\), while the low-regularity
-theorem concerns \(X_K(f)\). Uniformity in \(r\) in Theorem 1 requires
+theorem concerns \(X_K(f)\). Uniformity in \(r\) in Theorem~\ref{pass1:return_phase-1} requires
 \(r|\epsilon|\le s_0\): it does not permit arbitrary time growth at
 a fixed kick. Neither global Gaussian return laws nor a regularity
 counterexample supply local spectral correlations for a fixed

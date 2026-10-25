@@ -31,9 +31,10 @@ For Sections 2--3 fix \[
 
 \subsection{An exact finite theorem for arbitrary Fourier phases}\label{nondegeneracy:an-exact-finite-theorem-for-arbitrary-fourier-phases}
 
-\textbf{Theorem 1 (the full radius-eight box).} For every nonzero \(g\in\mathcal P_8\), \[
+\begin{theorem}[the full radius-eight box]\label{pass1:ch10_resonance_rigidity-1} For every nonzero \(g\in\mathcal P_8\), \[
                          \boxed{\Gamma_T(g)>0.}             \tag{ND.3}
 \] In particular (ND.3) holds at every smaller integer radius. There is no restriction on the signs or phases of the Fourier coefficients. This proves that the second-order bracket is not a finite Fourier coboundary throughout this 288-dimensional real space. The assertion is not extrapolated to all radii.
+\end{theorem}
 
 \subsubsection{2.1 Exact polynomial equations}\label{nondegeneracy:exact-polynomial-equations}
 
@@ -152,10 +153,11 @@ The finite certificate settles a large but fixed frequency box. A separate analy
                                   -b\partial_{x_2}^2.       \tag{ND.11}
 \]
 
-\textbf{Theorem 2 (fixed critical-point obstruction).} Let \(g\) be real smooth. If \(x_0\) is a fixed point of \(S=A^{\mathsf T}\) and \(dg(x_0)=0\), then \[
+\begin{theorem}[fixed critical-point obstruction]\label{pass1:ch10_resonance_rigidity-2} Let \(g\) be real smooth. If \(x_0\) is a fixed point of \(S=A^{\mathsf T}\) and \(dg(x_0)=0\), then \[
  \boxed{\Gamma_A(g)=0\quad\Longrightarrow\quad
                    \mathcal E_A(\operatorname{Hess}g(x_0))=0.} \tag{ND.12}
-\] In particular, if the two pure second derivatives in the stable and unstable coordinate directions are both nonzero at that point, \(\Gamma_A(g)>0\). Every even \(g\) is critical at the fixed point zero, but evenness is not a hypothesis of Theorem 2. A nondegenerate extremum at a fixed point is a sufficient condition, not a necessary one.
+\] In particular, if the two pure second derivatives in the stable and unstable coordinate directions are both nonzero at that point, \(\Gamma_A(g)>0\). Every even \(g\) is critical at the fixed point zero, but evenness is not a hypothesis of Theorem~\ref{pass1:ch10_resonance_rigidity-2}. A nondegenerate extremum at a fixed point is a sufficient condition, not a necessary one.
+\end{theorem}
 
 \textbf{Proof.} Put \(h=\{g,\mathcal C_Ag\}/(4\pi)\). At a fixed point, \(e_{Av}(x_0)=e_v(x_0)\), and \(q_A(Av)=q_A(v)\). Grouping the absolutely convergent twice-differentiated Fourier series by oriented orbits gives \[
  \mathcal L_Ah(x_0)
@@ -194,9 +196,10 @@ The same obstruction has an explicit lower bound when one controls a weighted Fo
 
 \subsection{A one-sign Fourier theorem without a bandwidth restriction}\label{nondegeneracy:a-one-sign-fourier-theorem-without-a-bandwidth-restriction}
 
-\textbf{Theorem 3.} Let \(A\in\mathrm{SL}(2,\mathbb Z)\) be hyperbolic. If the nonconstant coefficients of a real even smooth mean-zero function \(g=\sum_v c_vb_v\) all have the same sign and at least one is nonzero, then \[
+\begin{theorem}\label{pass1:ch10_resonance_rigidity-3} Let \(A\in\mathrm{SL}(2,\mathbb Z)\) be hyperbolic. If the nonconstant coefficients of a real even smooth mean-zero function \(g=\sum_v c_vb_v\) all have the same sign and at least one is nonzero, then \[
                              \Gamma_A(g)>0.                 \tag{ND.18}
 \] This is a statement about cosine coefficients, not pointwise nonnegativity of a mean-zero function. There is no restriction on the number of signed orbits.
+\end{theorem}
 
 \textbf{Proof.} Change the overall sign if necessary, so \(c_v\geq0\), and put \[
  M=\sum_v c_vvv^{\mathsf T}=-\operatorname{Hess}g(0)/(8\pi^2).
@@ -226,19 +229,19 @@ A coarse finite-bandwidth constant is explicit. Define \[
 
 \subsection{An exact finite quantum variance consequence}\label{nondegeneracy:an-exact-finite-quantum-variance-consequence}
 
-The elementary second-moment bridge already occurs in earlier project notes. We reprove it here with an explicit integer sufficient bound so its application to Theorem 1 is auditable without a Gaussian-limit theorem. Let K be any odd positive integer greater than one, write \[
+The elementary second-moment bridge already occurs in earlier project notes. We reprove it here with an explicit integer sufficient bound so its application to Theorem~\ref{pass1:ch10_resonance_rigidity-1} is auditable without a Gaussian-limit theorem. Let K be any odd positive integer greater than one, write \[
  N+F\sqrt2=(1+\sqrt2)^K,
  \qquad T=\begin{pmatrix}3&2\\4&3\end{pmatrix},
 \] and use the physical Weyl operators \[
  Q_N(a,b)=(-1)^{ab}W_N(a,b),\qquad
  Q_N(v)Q_N(w)=e^{\pi i\det(v,w)/N}Q_N(v+w).
-\] Here \(W_N\) uses modular division by two and is an orthonormal operator basis in normalized full-space Hilbert--Schmidt norm. Take \(U_N\) with the exact covariance \(U_NQ_N(v)U_N^*=Q_N(Tv)\). Such a unitary is explicitly furnished by the cat kernel in the earlier project; its phase is immaterial here. Primality of K is not needed in this section.
+\] Here \(W_N\) uses modular division by two and is an orthonormal operator basis in normalized full-space Hilbert--Schmidt norm. Take \(U_{N,\mathrm{rig}}\) with the exact covariance \(U_{N,\mathrm{rig}}Q_N(v)U_{N,\mathrm{rig}}^*=Q_N(Tv)\). Such a unitary is explicitly furnished by the cat kernel in the earlier project; its phase is immaterial here. Primality of K is not needed in this section.
 
 Put \(H=(K-1)/2\) and let \(r_1,r_2\) be the absolute row sums of \(T^H\). For a real mean-zero polynomial h supported in \(\|v\|_\infty\leq M\), assume \[
                     N^2>M^2(4+4r_1+2r_2).                  \tag{ND.24}
 \] Define \[
  X_{K,N}(h)=\frac1{\sqrt K}\sum_{j=0}^{K-1}
-                    U_N^j\operatorname{Op}_N(h)U_N^{-j}.
+                    U_{N,\mathrm{rig}}^j\operatorname{Op}_N(h)U_{N,\mathrm{rig}}^{-j}.
 \] Then the following equality is \textbf{exact at finite N} on the full space: \[
              \boxed{\frac1N\operatorname{Tr}X_{K,N}(h)^2
                                   =\sigma_T^2(h).}          \tag{ND.25}
@@ -262,16 +265,16 @@ Expand the square in (ND.25). Cyclicity of trace and covariance reduce its norma
 
 For \(g\in\mathcal P_8\), its symbol \(h_g=\{g,\mathcal C_Tg\}/(4\pi)\) is supported in the radius-64 box. At \(K=13\), \(N=47321\), the two sides of the sufficient inequality (ND.24) are the exact integers \[
  N^2=2239277041>935895040=64^2(4+4r_1+2r_2).
-\] Therefore (ND.25) and Theorem 1 give a strictly positive quantum averaged-symbol variance for \textbf{every nonzero} such \(g\) at that module, not just the sampled coefficients. The same conclusion holds at every odd K satisfying (ND.24); for each fixed M the condition holds eventually because its right side grows like \(\lambda^{K/2}\) and \(N^2\) grows like \(\lambda^K\).
+\] Therefore (ND.25) and Theorem~\ref{pass1:ch10_resonance_rigidity-1} give a strictly positive quantum averaged-symbol variance for \textbf{every nonzero} such \(g\) at that module, not just the sampled coefficients. The same conclusion holds at every odd K satisfying (ND.24); for each fixed M the condition holds eventually because its right side grows like \(\lambda^{K/2}\) and \(N^2\) grows like \(\lambda^K\).
 
-The actual finite quantum commutator differs from that symbol by a controlled remainder. Put \(G_N=\operatorname{Op}_N(g)\), \(D_N=U_NG_NU_N^*\) and \(R_N=(iN/2)[G_N,D_N]\). The sine remainder gives \[
+The actual finite quantum commutator differs from that symbol by a controlled remainder. Put \(G_N=\operatorname{Op}_N(g)\), \(D_N=U_{N,\mathrm{rig}}G_NU_{N,\mathrm{rig}}^*\) and \(R_N=(iN/2)[G_N,D_N]\). The sine remainder gives \[
  \|R_N-\operatorname{Op}_N(h_g)\|_{\rm op}
      \leq\frac{\pi^3}{6N^2}M_3(g)M_3(\mathcal C_Tg),
  \qquad M_3(a)=\sum_v|\widehat a(v)|\,|v|_2^3.
 \]
 Here \(M_3\) is local to this section (Euclidean frequency weight); it is
 not the \(\mathcal M_r\) of the locality section. Consequently, with normalized Hilbert--Schmidt norm, \[
- \left|\left\|\frac1{\sqrt K}\sum_{j=0}^{K-1}U_N^jR_NU_N^{-j}\right\|_{2,N}
+ \left|\left\|\frac1{\sqrt K}\sum_{j=0}^{K-1}U_{N,\mathrm{rig}}^jR_NU_{N,\mathrm{rig}}^{-j}\right\|_{2,N}
                       -\sqrt{\Gamma_T(g)}\right|
  \leq\frac{\pi^3\sqrt K}{6N^2}M_3(g)M_3(\mathcal C_Tg).      \tag{ND.27}
 \] This proves nonvanishing of the averaged commutator for each fixed nonzero radius-eight symbol for all sufficiently large admissible N. It does not assert exact equality between the commutator variance and the classical variance at finite N.

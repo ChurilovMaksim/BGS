@@ -1,0 +1,88 @@
+\section*{Notation}\label{sec:notation}
+This registry records the symbols whose meaning is not uniform across
+the compendium. A symbol listed here with a section scope is local to
+that section; the canonical (unqualified) form is the fixed-map
+propagator defined in the front matter. Renames applied in Pass 1 are
+mechanical token replacements, listed at the end of this registry; no
+statement was reworded by a rename. Symbols not listed here are used
+with their standard meaning or are defined where they first appear.
+
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.46\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}}
+Symbol & Meaning & Scope / location \\
+\hline
+\(U_N\) & Fixed kicked propagator \(U_N=\exp(i\tau N A_N)M_N\),
+  \(\tau=10^{-80}\) fixed & Canonical; front matter, fixed-map sections \\
+\(U_{N,\mathrm{loc}}\) & A cat quantization with the exact covariance
+  \(UQ_N(v)U^*=Q_N(Tv)\) & Locality section (Ch.~9), renamed in Pass 1 \\
+\(U_{N,\mathrm{rig}}\) & A cat quantization taken with the exact
+  covariance, phase immaterial & Resonance-rigidity section (Ch.~10),
+  renamed in Pass 1 \\
+\(U_{N,\mathrm{Fl}}\) & The Floquet operator \(U_N=VU_0V^*\) of the
+  finite Floquet construction & Floquet section (Ch.~7), renamed in Pass 1 \\
+\(U_{N,\mathrm{test}}\) & A generic test unitary (any unitary
+  quantization satisfying the stated Egorov estimate) &
+  Spectral-resolution section (Ch.~11), renamed in Pass 1 \\
+\(U_N(T)\) & The \(T\)-parametrized family \(U_N(T)=VS_h^{-1}V^*\) &
+  Pell-blocks section; the argument distinguishes it from \(U_N\) \\
+\(\mathcal{M}_r\) & \(\sum_v|\widehat a(v)|(1+|v|_1)^r\) &
+  Locality section \\
+\(M_r\) & \(\sum_v|\widehat a(v)||v|_2^r\) (Euclidean frequency weight) &
+  Return-words section \\
+\(M_j\) & The same object as \(M_r\), with index letter \(j\) &
+  Analytic section (regular-gradient rigidity) \\
+\(M_r^{\mathrm{mom}}\), \(M_2^{\mathrm{mom}}\), \(M_4^{\mathrm{mom}}\) &
+  Moments \(\mathbb{E}|Z|^r\) of \(Z=s_N(w)\) & Fixed-map frontier,
+  early moment block, renamed in Pass 1 \\
+\(M_s\) & Occupancy moments \(N^{-1}\sum_h n_h^s\) &
+  Fixed-map frontier, resonant-cubic section (defined in place) \\
+\(\Phi^t\) & Flow of \(X_g\) (locality convention) &
+  Locality section \\
+\(\Phi_g^t\) & Flow of \(X_g\) (same convention, explicit generator) &
+  Locality section \\
+\(\Psi_h^t\) & Flow of \(X_h=(h_p,-h_q)\); inverse of the locality flow &
+  Return-words section, renamed from \(\Phi_h^t\) in Pass 1 \\
+\(\kappa_0\) & Rescaled time; locality writes
+  \(e^{i\kappa_0N\operatorname{Op}_N(f)}\), return words write
+  \(\kappa=\kappa_0/(2\pi)\) & Locality section \\
+\(\kappa\) & Classical time itself, through \(e=\kappa/\hbar_N\) &
+  Return-words section \\
+\(\kappa_0^{\mathrm{thr}}\) & The threshold constant
+  \(\frac43(\sqrt{101}\sin(\pi/7)-1)/100\) & Fixed-map frontier,
+  renamed in Pass 1 \\
+\(\kappa\) & A local exponent or contraction parameter (e.g.\
+  \(m=\lceil\ell^{1+\kappa}\rceil\); \(\kappa=1-\rho\)) &
+  Section-local; defined where used \\
+\(\kappa_4\) & Fourth cumulant & Standard notation, wherever used \\
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Pass 1 renames (mechanical, token-for-token).}
+Fixed-map frontier, moment block (lines 378--414 only):
+\(M_r, M_2, M_4 \to M_r^{\mathrm{mom}}, M_2^{\mathrm{mom}},
+M_4^{\mathrm{mom}}\) (11 replacements).
+Fixed-map frontier, threshold block (lines 1679--1681):
+\(\kappa_0 \to \kappa_0^{\mathrm{thr}}\) (3 replacements).
+Return words: \(\Phi_h^t \to \Psi_h^t\) (5 replacements).
+Locality: \(U_N \to U_{N,\mathrm{loc}}\) (15 replacements).
+Resonance rigidity: \(U_N \to U_{N,\mathrm{rig}}\) (9 replacements).
+Floquet: \(U_N \to U_{N,\mathrm{Fl}}\) (3 replacements), plus the
+coboundary cross-reference to the Floquet operator (1 replacement).
+Spectral resolution: \(U_N \to U_{N,\mathrm{test}}\) (10 replacements)
+and \(\widetilde U_N \to \widetilde{U_{N,\mathrm{test}}}\) (3 replacements).
+The tags were placed in the subscript (\(U_{N,\mathrm{loc}}\) etc.) so
+that existing superscripts (\(U_N^*, U_N^j, U_N^{-j}, U_N^K\)) keep
+working; a superscript tag was tried first and broke the build with
+double superscripts.
+
+\noindent\textbf{Open (not resolved mechanically, needs Pass 2 reading).}
+(1) Fixed-map frontier, late sections: \(M_3, M_4\) after the
+resonant-cubic section (e.g.\ lines 1855, 1875, 1910) are not verified
+to be the occupancy moments \(M_s\) defined at line 1821; they were
+left untouched. (2) \(\kappa\) as a section-local parameter is
+documented above but not unified; unification would require
+per-section renaming with proof reading, which is Pass 2 work.
+(3) The analytic \(M_j\) and return-words \(M_r\) are the same object
+under different index letters; no rename was applied, since the
+registry entry already disambiguates them.
