@@ -4286,11 +4286,13 @@
         "computations/verification/magnetic_scalar_certificate.py",
         "computations/cpp/magnetic_word_verifier.cpp"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/MagneticTraceSmall.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/magnetic.tex"
       ],
-      "boundary": "Global empirical spectral measure of a compressed observable only; not microscopic BGS statistics of a quantum propagator. Prime subgroup orders K=o(log p); the source's Section 9 proves this regime is incompatible with the orders of any one fixed hyperbolic integral cat map. Priority not established."
+      "boundary": "Global empirical spectral measure of a compressed observable only; not microscopic BGS statistics of a quantum propagator. Prime subgroup orders K=o(log p); the source's Section 9 proves this regime is incompatible with the orders of any one fixed hyperbolic integral cat map. Priority not established. Formalization coverage is finite certificates only: formalization/Bgs/MagneticTraceSmall.lean proves the exact affine-word trace histograms at p=7, K=3 through fourth order; it is not a formalization of the global semicircle theorem."
     },
     {
       "id": "BGS-CAYLEY-010",
@@ -4302,11 +4304,13 @@
       "external_dependencies": [],
       "evidence": [],
       "verifiers": [],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/GeneralHyperbolicParity.lean"
+      ],
       "manuscript": [
         "manuscript/general_spectra.tex"
       ],
-      "boundary": "Finite exact spectra under the fixed-point-free hypothesis (eq:general-free) only. The section's final sentence asserting that the locality and return-word arguments later in the paper 'work verbatim' with the characteristic Q_N^* and any such A is NOT part of this claim: that transfer is asserted without proof in the section and was not found proved in the sources searched (mathematics/, record/, supplement/, papers/)."
+      "boundary": "Finite exact spectra under the fixed-point-free hypothesis (eq:general-free) only. The section's final sentence asserting that the locality and return-word arguments later in the paper 'work verbatim' with the characteristic Q_N^* and any such A is NOT part of this claim: that transfer is asserted without proof in the section and was not found proved in the sources searched (mathematics/, record/, supplement/, papers/). Formalization coverage is finite kernels only: formalization/Bgs/GeneralHyperbolicParity.lean proves Boolean refinement/parity kernels and the hyperbolic periods at moduli 169 and 989; it does not formalize the uniform theorem for arbitrary hyperbolic matrices."
     },
     {
       "id": "BGS-FLOW-022",
@@ -4323,12 +4327,16 @@
         "computations/verification/pell_floquet_regression.py",
         "computations/cpp/pell_floquet_pair_verifier.cpp"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/PellCohomology.lean",
+        "formalization/Bgs/PellEchoWeights.lean",
+        "formalization/Bgs/PellFourierKernel.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/floquet_part1.tex",
         "manuscript/unified_sections/floquet_part2.tex"
       ],
-      "boundary": "K through odd primes; epsilon=tau/sqrt(2K) with fixed real tau; odd subspace, normalized trace Tr_-/d_N. The principal finite estimate (FN.D) is a normalized Hilbert-Schmidt bound: it does not control an individual level or an operator-norm spectral gap. No Heisenberg-scale joint traces, microscopic local statistics, or fixed nonzero classical-kick universality."
+      "boundary": "K through odd primes; epsilon=tau/sqrt(2K) with fixed real tau; odd subspace, normalized trace Tr_-/d_N. The principal finite estimate (FN.D) is a normalized Hilbert-Schmidt bound: it does not control an individual level or an operator-norm spectral gap. No Heisenberg-scale joint traces, microscopic local statistics, or fixed nonzero classical-kick universality. Formalization coverage is finite certificates only: the three listed modules prove cleared-denominator weight/echo identities and the finite K=11 pair-key certificates (220 keys, unique, nonzero); they prove no analytic limit or microscopic law."
     },
     {
       "id": "BGS-FLOW-023",
@@ -4346,13 +4354,15 @@
         "computations/verification/pell_coboundary_regression.py",
         "computations/cpp/pell_coboundary_pairs.cpp"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/PellCoboundary.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/coboundary_part1.tex",
         "manuscript/unified_sections/coboundary_part2.tex",
         "manuscript/unified_sections/coboundary_part3.tex"
       ],
-      "boundary": "Coboundary propagator V of (CB.1), with the T-covariant U_0 of the finite Floquet construction; in coboundary_part1.tex this U_0 is the operator called U_N=VU_0V^* in the Floquet parts (notation collision flagged by group 4). t_K=2 eps_K^2 sin(4pi/N) sqrt(K) -> t in [0,infty); fixed integer m. No statement that the old clusters remain separate or keep identifiable ranks in the subcritical folded-phase law."
+      "boundary": "Coboundary propagator V of (CB.1), with the T-covariant U_0 of the finite Floquet construction; in coboundary_part1.tex this U_0 is the operator called U_N=VU_0V^* in the Floquet parts (notation collision flagged by group 4). t_K=2 eps_K^2 sin(4pi/N) sqrt(K) -> t in [0,infty); fixed integer m. No statement that the old clusters remain separate or keep identifiable ranks in the subcritical folded-phase law. Formalization coverage is finite certificates only: formalization/Bgs/PellCoboundary.lean proves the universal integer structural identity and the finite K=11 pair-key certificates (880 keys, 836 distinct, multiplicity at most 2); it is not a formalization of the general coboundary law."
     },
     {
       "id": "BGS-FLOW-024",
@@ -4370,13 +4380,15 @@
         "computations/verification/pell_coboundary_regression.py",
         "computations/cpp/pell_coboundary_pairs.cpp"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/PellCoboundary.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/coboundary_part1.tex",
         "manuscript/unified_sections/coboundary_part2.tex",
         "manuscript/unified_sections/coboundary_part3.tex"
       ],
-      "boundary": "Whole odd space and global mean-spacing normalization only. Condition (CB.4) is necessary only; no positive universality theorem beyond it is proved. No density-adapted unfolding or further-sector result."
+      "boundary": "Whole odd space and global mean-spacing normalization only. Condition (CB.4) is necessary only; no positive universality theorem beyond it is proved. No density-adapted unfolding or further-sector result. Formalization coverage is finite certificates only: formalization/Bgs/PellCoboundary.lean proves the universal integer structural identity and the finite K=11 pair-key certificates (880 keys, 836 distinct, multiplicity at most 2); it is not a formalization of the general coboundary law."
     },
     {
       "id": "BGS-FLOW-025",
@@ -4393,12 +4405,16 @@
         "computations/verification/pell_floquet_regression.py",
         "computations/cpp/pell_floquet_pair_verifier.cpp"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/PellCohomology.lean",
+        "formalization/Bgs/PellEchoWeights.lean",
+        "formalization/Bgs/PellFourierKernel.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/floquet_part3.tex",
         "manuscript/unified_sections/floquet_part4.tex"
       ],
-      "boundary": "Kicked Pell family of Theorem A only; global mean-density unfolding of the complete odd space, compact tests. Necessary condition |eps_K| sqrt(K) -> infty only, not a sufficient universality criterion. Does not settle nearest-neighbour distributions individually, density-adapted re-unfolding, a further desymmetrized block, or fixed nonzero classical kicks; not a refutation of a correctly qualified generic BGS conjecture."
+      "boundary": "Kicked Pell family of Theorem A only; global mean-density unfolding of the complete odd space, compact tests. Necessary condition |eps_K| sqrt(K) -> infty only, not a sufficient universality criterion. Does not settle nearest-neighbour distributions individually, density-adapted re-unfolding, a further desymmetrized block, or fixed nonzero classical kicks; not a refutation of a correctly qualified generic BGS conjecture. Formalization coverage is finite certificates only: the three listed modules prove cleared-denominator weight/echo identities and the finite K=11 pair-key certificates (220 keys, unique, nonzero); they prove no analytic limit or microscopic law."
     },
     {
       "id": "BGS-FM-034",
@@ -4415,7 +4431,9 @@
         "computations/verification/fixed_strength_locality.py",
         "computations/cpp/fixed_strength_locality_exact.cpp"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/LocalityKernels.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/locality_part1.tex",
         "manuscript/unified_sections/locality_part2.tex",
@@ -4425,7 +4443,7 @@
         "manuscript/unified_sections/locality_part6.tex",
         "manuscript/unified_sections/locality_part7.tex"
       ],
-      "boundary": "Fixed classical strength kappa_0 (classical Hamiltonian time kappa_0/(2pi)); generators g with supp g disjoint from supp Cg, including the explicit Gevrey-2 bump for the quantitative bound (LC.4), whose exponent is not claimed optimal. Deliberately nongeneric family smoothly conjugate to an arithmetic cat map; not positive BGS universality."
+      "boundary": "Fixed classical strength kappa_0 (classical Hamiltonian time kappa_0/(2pi)); generators g with supp g disjoint from supp Cg, including the explicit Gevrey-2 bump for the quantitative bound (LC.4), whose exponent is not claimed optimal. Deliberately nongeneric family smoothly conjugate to an arithmetic cat map; not positive BGS universality. Formalization coverage is fragment kernels only: formalization/Bgs/LocalityKernels.lean proves the cleared-denominator support-strip band, the Cauchy-disk constant, the exponent budget, and the gap partition; it is not a formalization of the all-orders comparison or any semiclassical limit."
     },
     {
       "id": "BGS-FM-035",
