@@ -1,7 +1,7 @@
 {
   "files": {
     "computations/maintenance/tests/test_research_checkpoint_portability.py": "87001621ef911448a446170ea6377cad1ee555b19d70e765de7f613620eaa4eb",
-    "computations/verification/research_checkpoint_replay.py": "4c0148cc8f2d1ec10800fe975179e4d54d110ce244fd0a1855545a90b199af95",
+    "computations/verification/research_checkpoint_replay.py": "52985729be3192826195ebef421aa5f2e956f388ea5c3917595c844015a20d00",
     "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/README.md": "9ed7fb3dd8d4bf95ae8470ce34a3c3270e20e053fe9b77077fd5a72f10e854f3",
     "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2.py": "8972fe7d88dc3c730ffcd9e341c4a982460a29701c4ea43ef8cc9a064d998a60",
     "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2_order6.log": "f62ae7cd1482cc62769dac830748eb402855041b6720d43d0287bc99b5089e48",
@@ -349,6 +349,51 @@
       "reason": "Exact old reviewed wrapper bytes retained after qualified Wave2 navigation addition; no mathematical pin refresh.",
       "sha256": "f52a4c7beb9042d403dd125f9425d4a29f6d1cd43a624b91a3b4b89f9abe9208",
       "source": "evidence/wave2_checked_20261007/raw/provenance/base_navigation/mathematics/phase_trace_checkpoint.md"
+    },
+    "literature/color_one_boundary_qualification_20261007.md": {
+      "reason": "Wave 2 RC-1: post-seal content drift; pinned bytes recovered from a local pre-drift workbench tree (hash-verified e0538a, five identical copies) and preserved as an archive pinned copy; override points at the archive copy, never at drifted live bytes f600b2. Git-history recovery (base d37c92e) remains the provenance-clean confirmation for the parent.",
+      "sha256": "e0538a3445d5a4aa8a7bcd6c213d8ec9c57cbf56e6b6123f740d06d7be746c47",
+      "source": "archive/evidence/research_checkpoint_20261007/pinned/literature_color_one_boundary_qualification_20261007.md"
+    },
+    "mathematics/phase_ward_identity.md": {
+      "reason": "Wave 2 RC-2: post-seal content drift; pinned bytes survive inside the sealed tree as phase_ward_identity_v2.md (hash-identical); override preserves the seal, no re-pin to drifted bytes.",
+      "sha256": "1fccba816add7065c611edf21164bbef36fa4bad9edf6e30bb39ff9b8d737479",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/phase_ward_identity_v2.md"
+    },
+    "mathematics/actual_body_coercivity_constants.md": {
+      "reason": "Wave 2 RC-3: post-seal content drift; pinned bytes survive inside the sealed tree as actual_constants_addendum.md (hash-identical; a second identical copy in bgs_coercivity_addenda_review/inputs/author/ corroborates); override preserves the seal.",
+      "sha256": "23566b86660c089b6005f0165d4a4dee2d0528e7c7e99ee34a831ff475182ae8",
+      "source": "evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/actual_constants_addendum.md"
+    },
+    "mathematics/actual_charge_radial_resolvent.md": {
+      "reason": "Wave 2 RC-4: phase-2 pure move to mathematics/fixed-map/ (hash-identical, zero byte change).",
+      "sha256": "d76af5e9ad8cff4df4b015698c77d3d1ecebffe1103e5e09966d670f9aaedfd6",
+      "source": "mathematics/fixed-map/actual_charge_radial_resolvent.md"
+    },
+    "mathematics/actual_charge_radial_shell.md": {
+      "reason": "Wave 2 RC-5: phase-2 pure move plus phase-3 neutral rephrasing at the live path ('Self-review only' -> 'Author check only', 8005fe70); pinned pre-rephrasing bytes preserved as an archive pinned copy (hash-identical); override points at the archive copy, never at drifted bytes.",
+      "sha256": "eccca8f36860e537f736828c435fce94f10006fbbaa48722fbd9481671ed4c0b",
+      "source": "archive/evidence/research_checkpoint_20261007/pinned/mathematics_actual_charge_radial_shell.md"
+    },
+    "mathematics/literal_fixed_word_freeness.md": {
+      "reason": "Wave 2 RC-6: phase-2 pure move to mathematics/fixed-map/ (hash-identical, zero byte change).",
+      "sha256": "931b62e8869349f8950c8f65dc2cfea92b12d42a6fdbaa69649399c937c610a0",
+      "source": "mathematics/fixed-map/literal_fixed_word_freeness.md"
+    },
+    "mathematics/literal_growing_word_window.md": {
+      "reason": "Wave 2 RC-7: phase-2 pure move to mathematics/fixed-map/ (hash-identical, zero byte change).",
+      "sha256": "4c497a406e51dd75cc0ca0b3b85100c3713c2013ae2d53b3d15e7ecceaf7222a",
+      "source": "mathematics/fixed-map/literal_growing_word_window.md"
+    },
+    "mathematics/literal_kick_phase_law.md": {
+      "reason": "Wave 2 RC-8: phase-2 pure move to mathematics/fixed-map/ (hash-identical, zero byte change).",
+      "sha256": "64dddeceeaee9c8ef639f0d143572e50ed430596d73b9b4a5c311951a7c73230",
+      "source": "mathematics/fixed-map/literal_kick_phase_law.md"
+    },
+    "mathematics/literal_strong_freeness_obstruction.md": {
+      "reason": "Wave 2 RC-9: phase-2 pure move to mathematics/fixed-map/ (hash-identical, zero byte change).",
+      "sha256": "8eab771234f702cdf840497e49d7bf43c9fc1ab673818a75f31661bc99273729",
+      "source": "mathematics/fixed-map/literal_strong_freeness_obstruction.md"
     }
   },
   "schema": "bgs-checkpoint-source-bindings-v1",

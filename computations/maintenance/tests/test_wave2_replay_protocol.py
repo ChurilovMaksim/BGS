@@ -159,9 +159,22 @@ class HistoricalAliasProtocol(unittest.TestCase):
             root=Path(tmp);m,logical,archived,d,b=self.fixture(root);d['historical_inputs'][logical]['source']='mathematics/other.md';b.write_text(json.dumps(d))
             with self.assertRaisesRegex(RuntimeError,'unexpected historical target'):m.source_bytes(root)
     def test_other_proofs_cannot_be_overridden(self):
+        # Wave 2: radial_shell is now a DECLARED override (see HISTORICAL_TARGETS
+        # in research_checkpoint_replay.py), so the guard is asserted on a key
+        # that remains undeclared. The guard itself is unchanged: any key
+        # outside the hardcoded allowlist still fails closed.
         with tempfile.TemporaryDirectory() as tmp:
-            root=Path(tmp);m,logical,archived,d,b=self.fixture(root);d['historical_inputs']['mathematics/actual_charge_radial_shell.md']={'source':archived,'sha256':d['files'][logical]};b.write_text(json.dumps(d))
+            root=Path(tmp);m,logical,archived,d,b=self.fixture(root);d['historical_inputs']['mathematics/unrelated_proof.md']={'source':archived,'sha256':d['files'][logical]};b.write_text(json.dumps(d))
             with self.assertRaisesRegex(RuntimeError,'undeclared historical override'):m.source_bytes(root)
+    def test_declared_override_resolves(self):
+        # Wave 2: a declared override resolves to its allowlisted target bytes.
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);m,logical,archived,d,b=self.fixture(root)
+            target='mathematics/actual_charge_radial_shell.md';arch2='archive/evidence/research_checkpoint_20261007/pinned/mathematics_actual_charge_radial_shell.md'
+            old=root/arch2;old.parent.mkdir(parents=True,exist_ok=True);old.write_bytes(b'pinned shell bytes\n');digest=w.digest(old.read_bytes())
+            d2={'schema':'bgs-checkpoint-source-bindings-v1','files':{target:digest},'historical_inputs':{target:{'source':arch2,'sha256':digest}}}
+            b.write_text(json.dumps(d2))
+            self.assertEqual(m.source_bytes(root)[target],b'pinned shell bytes\n')
     def test_changed_archive_fails(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);m,logical,archived,d,b=self.fixture(root);(root/archived).write_bytes(b'mutated\n')

@@ -22,6 +22,23 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[2]
 CONTRACT = 'record/research_checkpoint_replay_contract.json'
 BINDINGS = 'record/research_checkpoint_source_bindings.json'
+# Fail-closed historical-target allowlist (Wave 2 proposal, parent review
+# required before landing). Each declared override maps a logical pin to
+# exactly one audited target path whose bytes are hash-identical to the
+# pin. Any key or target outside this map still fails closed below; the
+# bindings entry for an override must additionally carry sha256 == pin.
+HISTORICAL_TARGETS = {
+    'mathematics/phase_trace_checkpoint.md': 'evidence/wave2_checked_20261007/raw/provenance/base_navigation/mathematics/phase_trace_checkpoint.md',
+    'mathematics/phase_ward_identity.md': 'evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/phase_ward_identity_v2.md',
+    'mathematics/actual_body_coercivity_constants.md': 'evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/actual_constants_addendum.md',
+    'mathematics/actual_charge_radial_resolvent.md': 'mathematics/fixed-map/actual_charge_radial_resolvent.md',
+    'mathematics/actual_charge_radial_shell.md': 'archive/evidence/research_checkpoint_20261007/pinned/mathematics_actual_charge_radial_shell.md',
+    'mathematics/literal_fixed_word_freeness.md': 'mathematics/fixed-map/literal_fixed_word_freeness.md',
+    'mathematics/literal_growing_word_window.md': 'mathematics/fixed-map/literal_growing_word_window.md',
+    'mathematics/literal_kick_phase_law.md': 'mathematics/fixed-map/literal_kick_phase_law.md',
+    'mathematics/literal_strong_freeness_obstruction.md': 'mathematics/fixed-map/literal_strong_freeness_obstruction.md',
+    'literature/color_one_boundary_qualification_20261007.md': 'archive/evidence/research_checkpoint_20261007/pinned/literature_color_one_boundary_qualification_20261007.md',
+}
 
 
 def require(ok, message):
@@ -69,11 +86,11 @@ def source_bytes(root):
         # The original reviewed checkpoint is retained for this historical replay;
         # current navigation additions do not silently refresh a scientific pin.
         historical = manifest.get('historical_inputs', {})
-        require(set(historical).issubset({'mathematics/phase_trace_checkpoint.md'}), 'undeclared historical override')
+        require(set(historical).issubset(set(HISTORICAL_TARGETS)), 'undeclared historical override')
         source_rel = historical.get(rel, {}).get('source', rel)
         if rel in historical:
             require(historical[rel]['sha256'] == digest, 'historical pin was refreshed')
-            require(source_rel == 'evidence/wave2_checked_20261007/raw/provenance/base_navigation/mathematics/phase_trace_checkpoint.md', 'unexpected historical target')
+            require(source_rel == HISTORICAL_TARGETS[rel], 'unexpected historical target')
         source_path = PurePosixPath(source_rel)
         require(not source_path.is_absolute() and '..' not in source_path.parts and str(source_path) == source_rel and '\\' not in source_rel, 'unsafe historical source path')
         f = root / source_rel
