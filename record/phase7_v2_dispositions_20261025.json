@@ -1,0 +1,1041 @@
+{
+ "schema": "bgs-phase7-v2-dispositions-v1",
+ "base_commit": "5f234063aa8d4967c823c557ba1afcadfe229242",
+ "generated": "2026-10-25",
+ "scope": "Phase-7 B.5 disposition closure (staging only). One entry per dispositioned item; exactly one disposition category per item. Facets noted in an entry are NOT second dispositions. Disposition closure is NOT remediation closure: GOVERNED-FIX-QUEUED and ENVIRONMENT-BLOCKED items remain live on main until their specified fix / re-run lands. No claim state, source, id or title is changed by this record; no downgrade is proposed or executed here; the approved literal (93) is untouched.",
+ "counts": {
+  "total_items": 126,
+  "by_category": {
+   "STRENGTHENED": 8,
+   "GOVERNED-FIX-QUEUED": 67,
+   "ENVIRONMENT-BLOCKED": 37,
+   "ACCEPTED-LIMITATION": 14,
+   "DOWNGRADE-PROPOSED": 0
+  },
+  "by_stream": {
+   "B.1": 41,
+   "B.3": 15,
+   "B.4": 68,
+   "B.5-carried": 2
+  }
+ },
+ "downgrade_proposals": [],
+ "downgrade_contingency": "If the receipt-recovery pass (B.1, 11 proved-unevidenced rows) returns empty for a row (its source note does not contain the claimed proof), that row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision at that time. No downgrade is proposed today.",
+ "zero_failure_records": [
+  {
+   "stream": "B.2",
+   "verdict": "ZERO FAILURES",
+   "evidence": "V2 waves 1A-6 + L6 landed (206cb235, 7a67e4a6, 4b306b80, 03cfcaa5, 7e40b60b, 3b0cb93, 5f23406; CI pandoc pin f8832ec/68dd75e). V4 §11 re-validation on the staged overlay: wave2 + wave3 integration audits pass, wave2/wave3 --check-sources pass, closure 70/70, scoped 50/50, registry audit 199 claims (173/12/9/5), approved literal 93. Recorded explicitly, not by omission; no disposition category applies because there is nothing to fix."
+  }
+ ],
+ "items": [
+  {
+   "id": "BGS-FM-011",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: mathematics/fixed-map/frozen_effective_gap_floor.md. Row manuscript: manuscript/unified_sections/fixed_map_frontier.tex.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-RES-007",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: mathematics/fixed-map/fixed_map_resolvent_frontier.md. Row manuscript: manuscript/unified_sections/fixed_map_frontier.tex.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-001",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: mathematics/trace-bridge/trace_to_local_statistics_bridge.md. Row manuscript: manuscript/unified_sections/appendix_b_provenance_and_verification.tex.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-002",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: mathematics/trace-bridge/trace_to_local_statistics_bridge.md. Row manuscript: manuscript/unified_sections/appendix_b_provenance_and_verification.tex.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-003",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: mathematics/trace-bridge/trace_to_local_statistics_bridge.md. Row manuscript: manuscript/unified_sections/appendix_b_provenance_and_verification.tex.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-004",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: mathematics/trace-bridge/bandlimited_correlation_extension.md. Row manuscript: manuscript/unified_sections/appendix_b_provenance_and_verification.tex.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-006",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: mathematics/trace-bridge/clustered_abel_window_boundary.md. Row manuscript: (none listed).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-007",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: mathematics/fixed-map/fixed_map_resolvent_frontier.md. Row manuscript: manuscript/unified_sections/fixed_map_frontier.tex.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-RES-015",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: mathematics/resonance-cohomology/two_window_resonance_crossover.md. Row manuscript: manuscript/unified_sections/phase_crossover.tex.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-RES-018",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: mathematics/resonance-cohomology/entire_temporal_gauge.md. Row manuscript: manuscript/unified_sections/entire_gauge.tex.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-RES-021",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved in registry, no evidence/verifier/formalization path (V1 UNEVIDENCED). Ledger claims a proof; the tree supplies only prose.",
+   "spec": "Receipt-recovery pass (new work, not done in V5): (1) read the row's source note and confirm it contains the proof the ledger claims (exact identity / analytic proof); (2) if confirmed, register the source note (and the manuscript tex file where listed) as evidence paths via the claims amendment channel (epochs entry, P1 pattern per the HEAD 03cfcaa5 claims package; approved literal 93 unchanged unless a state change is separately approved); (3) if the source note does NOT contain the proof, the row converts to DOWNGRADE-PROPOSED (proved -> verification-pending) for the parent's decision. No downgrade is proposed today. Until the pass lands, the row stays proved-without-receipt on main. Row source note: manuscript/unified_sections/analytic_resonance_rigidity.tex (source note IS this tex section). Row manuscript: manuscript/unified_sections/analytic_resonance_rigidity.tex.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-095",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: conditional (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-096",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: verification-pending (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-097",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: conditional (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-098",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: verification-pending (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-099",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: verification-pending (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-100",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: verification-pending (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-101",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: verification-pending (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-102",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: verification-pending (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-103",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: verification-pending (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-104",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: verification-pending (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-105",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Sole receipt is the failed all_packet_audit.json (all_valid:false; 58 COMPLETED / 5 FAILED / 1 TIMEOUT); sole listed verifier removed. Registry state: verification-pending (does not overclaim).",
+   "spec": "Packet-repair pass through the 20261019 packet's own channel: re-execute or repair the 5 FAILED + 1 TIMEOUT items recorded in archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/all_packet_audit.json (58 COMPLETED stand), then replace the sole receipt with a passing audit (all_valid:true) via the claims amendment channel; alternatively register a new passing receipt and retire the failed audit as superseded. Fail-closed: never edit the historical audit bytes. States stay conditional / verification-pending throughout; no downgrade proposed (states do not overclaim).",
+   "facets": "conditional_on_unproved_input also holds for TRACE-095/097 (V1 other_weaknesses); state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-057",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-058",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-059",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-061",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-062",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-063",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-064",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-065",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-066",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-067",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-068",
+   "stream": "B.1",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Proved; evidence is the narrative 20261011 chat-research README only; sole listed verifier removed; ledger states no claim-specific finite control for most of these rows.",
+   "spec": "Claim-specific finite-control pass: for each row, either restore a runnable verifier from the 20261011 checkpoint material or author a narrow finite control matching the row's boundary, and register it as a verifier path via the claims amendment channel. The removed item was a shared checkpoint script (an integrity/scope check, not a proof checker), so the pass adds a genuine control layer rather than restoring a label. Analytic proof + narrative README evidence remain; no downgrade proposed (the proof layer is analytic prose, not the removed verifier).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-BGS-001",
+   "stream": "B.1",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Open; terminal target, blocked on TRACE-005. No receipt overclaim.",
+   "spec": "Recorded honestly as a limitation. No fix queued, no status change proposed; a second receipt layer may be registered later if one is authored (amendment channel).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-CAYLEY-005",
+   "stream": "B.1",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Open; no receipt overclaim.",
+   "spec": "Recorded honestly as a limitation. No fix queued, no status change proposed; a second receipt layer may be registered later if one is authored (amendment channel).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-INFO-001",
+   "stream": "B.1",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Open; no receipt overclaim.",
+   "spec": "Recorded honestly as a limitation. No fix queued, no status change proposed; a second receipt layer may be registered later if one is authored (amendment channel).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-RES-003",
+   "stream": "B.1",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Open; no receipt overclaim.",
+   "spec": "Recorded honestly as a limitation. No fix queued, no status change proposed; a second receipt layer may be registered later if one is authored (amendment channel).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-005",
+   "stream": "B.1",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Open; statement module formalization/Bgs/TraceStatement.lean is a statement, not a proof receipt (V1). Science continues in background (GPT-6 parallel track; grouped program).",
+   "spec": "Recorded honestly as a limitation. No fix queued, no status change proposed; a second receipt layer may be registered later if one is authored (amendment channel).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-055",
+   "stream": "B.1",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Verification-pending; ledger names a pending hierarchy with sub-inputs tracked separately; no proof keyword, no receipt path yet. Completion is the hierarchy verification itself, not a V5 fix.",
+   "spec": "Recorded honestly as a limitation. No fix queued, no status change proposed; a second receipt layer may be registered later if one is authored (amendment channel).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-CAYLEY-010",
+   "stream": "B.1",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Proved; Lean formalization receipt exists (formalization/Bgs/GeneralHyperbolicParity.lean). Limitation is single-layer thinness (no separate evidence/verifier path), not absence of receipt.",
+   "spec": "Recorded honestly as a limitation. No fix queued, no status change proposed; a second receipt layer may be registered later if one is authored (amendment channel).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-FM-037",
+   "stream": "B.1",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Proved; Lean formalization receipts exist (TorusLevelSets, TorusScaleLaw). Limitation is single-layer thinness (no separate evidence/verifier path), not absence of receipt.",
+   "spec": "Recorded honestly as a limitation. No fix queued, no status change proposed; a second receipt layer may be registered later if one is authored (amendment channel).",
+   "facets": ""
+  },
+  {
+   "id": "BGS-FM-005",
+   "stream": "B.3",
+   "category": "STRENGTHENED",
+   "subject": "Numerical check strengthened by interval/high-precision (or exact) re-run in V3; no strengthened bound contradicts any claimed bound.",
+   "spec": "F-1 frozen-kick: Arb prec 128, exact rational coefficients, exp+eig enclosures, N in {19,21,23,27,35,49,63,77}; residual intervals above lower bounds, min margin 0.092. Evidence: V3 interval_results.json.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-RES-006",
+   "stream": "B.3",
+   "category": "STRENGTHENED",
+   "subject": "Numerical check strengthened by interval/high-precision (or exact) re-run in V3; no strengthened bound contradicts any claimed bound.",
+   "spec": "G-1 Gram/Abel: Arb prec 128, 28 cases (N in {10,11,12,20,21,30,31}, s in {0.7,1.3,2.5,4.0}); Gram-lag <= 2.4e-34. Evidence: V3 interval_results.json.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-008",
+   "stream": "B.3",
+   "category": "STRENGTHENED",
+   "subject": "Numerical check strengthened by interval/high-precision (or exact) re-run in V3; no strengthened bound contradicts any claimed bound.",
+   "spec": "G-1 Gram/Abel (shared script with RES-006): Arb prec 128, same 28 cases; CUE + two-clock identities inside tail interval. Evidence: V3 interval_results.json.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-053",
+   "stream": "B.3",
+   "category": "STRENGTHENED",
+   "subject": "Numerical check strengthened by interval/high-precision (or exact) re-run in V3; no strengthened bound contradicts any claimed bound.",
+   "spec": "P-1 phase-channel: Arb prec 128, deterministic unitaries (DFT, eye, shift x DFT), m in {3,4}; deg-1/deg-2 entrywise <= 5.4e-37. Evidence: V3 interval_results.json.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-054",
+   "stream": "B.3",
+   "category": "STRENGTHENED",
+   "subject": "Numerical check strengthened by interval/high-precision (or exact) re-run in V3; no strengthened bound contradicts any claimed bound.",
+   "spec": "P-1 phase-channel (shared identities): Arb prec 128, same deterministic-unitary re-run. Evidence: V3 interval_results.json.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-056",
+   "stream": "B.3",
+   "category": "STRENGTHENED",
+   "subject": "Numerical check strengthened by interval/high-precision (or exact) re-run in V3; no strengthened bound contradicts any claimed bound.",
+   "spec": "P-1 phase-channel (shared channel identities only, per V3): Arb prec 128 re-run. Evidence: V3 interval_results.json.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-RET-001",
+   "stream": "B.3",
+   "category": "STRENGTHENED",
+   "subject": "Numerical check strengthened by interval/high-precision (or exact) re-run in V3; no strengthened bound contradicts any claimed bound.",
+   "spec": "R-1 Pell returns: mpmath 50 digits, slack 1e-40, 12 cases (incl. (5,2,5), eps in {0.11,0.31}); worst error/bound ratio 0.113. NOT an interval enclosure (V3 states this explicitly). Evidence: V3 interval_results.json.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-RES-016",
+   "stream": "B.3",
+   "category": "STRENGTHENED",
+   "subject": "Numerical check strengthened by interval/high-precision (or exact) re-run in V3; no strengthened bound contradicts any claimed bound.",
+   "spec": "Exact re-run in V3: both scripts exit 0 (Fraction exact arithmetic, exact Euclidean-norm orbit descent, no iteration cutoff). No float strengthening needed.",
+   "facets": ""
+  },
+  {
+   "id": "BGS-TRACE-060",
+   "stream": "B.3",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Level-A claim dispositioned by V3 without an interval/high-precision re-run of its numeric part.",
+   "spec": "Conditional. Verifier mixes exact energy/clock-word controls with floating feedback checks (seed 20261011, deterministic fixtures); the float feedback part was not interval re-run (Schur replay cost, basis-dependent splits). Float-only; limitation stands. Recorded honestly as a limitation, never as verified beyond what V3 did.",
+   "facets": "TRACE-060 is also registry-conditional; that state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-TRACE-080",
+   "stream": "B.3",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Level-A claim dispositioned by V3 without an interval/high-precision re-run of its numeric part.",
+   "spec": "Proved. Verifier: size-16 exact, size-64 complex128, 90 s wall; the size-64 part was not interval re-run. Float-only for the size-64 part; limitation stands. Recorded honestly as a limitation, never as verified beyond what V3 did.",
+   "facets": "TRACE-060 is also registry-conditional; that state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-CAYLEY-009",
+   "stream": "B.3",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Level-A claim dispositioned by V3 without an interval/high-precision re-run of its numeric part.",
+   "spec": "Proved. Verifier mixes exact integer histograms/pairing polynomials with floating matrix checks (tolerances 1e-10, 1e-8, 1e-9); the float matrix part was not interval re-run. The general theorem is analytic; neither check type replaces it (script docstring). Recorded honestly as a limitation, never as verified beyond what V3 did.",
+   "facets": "TRACE-060 is also registry-conditional; that state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-RET-004",
+   "stream": "B.3",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Level-A claim dispositioned by V3 without an interval/high-precision re-run of its numeric part.",
+   "spec": "Proved. Load-bearing certificate is the exact-rational disjointness check (30 separation obligations, base-lobe margin 37/528) and stands; the same script's floating unitary/ODE falsifiers (solve_ivp rtol 2e-11, atol 2e-13) are auxiliary and were not interval re-run. Float falsifiers remain float-only. Recorded honestly as a limitation, never as verified beyond what V3 did.",
+   "facets": "TRACE-060 is also registry-conditional; that state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-CUE-002",
+   "stream": "B.3",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Level-A claim dispositioned by V3 without an interval/high-precision re-run of its numeric part.",
+   "spec": "Proved. Verifier is exact (Fraction reference-cumulant checks) by V3 inspection; re-run was NOT performed in V3. The limitation is the missing re-execution, not the numerics; re-run inside the later V3 pass. Recorded honestly as a limitation, never as verified beyond what V3 did.",
+   "facets": "TRACE-060 is also registry-conditional; that state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "BGS-CAYLEY-011",
+   "stream": "B.3",
+   "category": "ACCEPTED-LIMITATION",
+   "subject": "Level-A claim dispositioned by V3 without an interval/high-precision re-run of its numeric part.",
+   "spec": "Proved. Verifier header states bounded resultant checks and the K=131 computation are finite exact, by V3 inspection; re-run was NOT performed in V3. The limitation is the missing re-execution (and: the Lean module certifies only the bounded 1..12 residue; the general case is conditional on the cited classical theorem, per the boundary). Recorded honestly as a limitation, never as verified beyond what V3 did.",
+   "facets": "TRACE-060 is also registry-conditional; that state is the honest facet, not a second disposition."
+  },
+  {
+   "id": "COVERAGE:LEVEL-B-185",
+   "stream": "B.3",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Coverage gap, not a failure: 185 of 199 claims (199 - 14 Level-A) have no V3 disposition. Level-B audit classified 165 named verifiers (53 float-involving: 50 mixed, 3 float-based; 92 exact/symbolic) and audited seeds/tolerances, but interval/high-precision coverage of Level B as a whole is NOT claimed.",
+   "spec": "Later V3 pass, scoped to Level-B interval/high-precision coverage of the 53 float-involving verifiers (plan first: per-verifier interval feasibility + cost; then re-runs staged as a new supplement + interval_results extension, never folded into claims.json outside the amendment channel). Until that pass lands, no Level-B interval claim may be cited.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:fixed_map_supplement_audit",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Gate red on live main: verify_fixed_map_supplement.py --audit-only inventory hash mismatch (2 files).",
+   "spec": "Regenerate the supplement inventory through its own channel (never hand-edit inventory hashes). Files: design-return/finite_symbol_normal_form.md (+5 bytes vs inventory), resolvent-flow/loop_test_reductions.md (+20 bytes). Inventory blob and both source blobs match live 5f23406 (V4).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:spectral_corpus_check",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Gate red on live main: rebuild_spectral_corpus.py --check, 3 projection mismatches.",
+   "spec": "Regenerate corpus projections with --write through review. Mismatches: round13 exact_protected_sector_removal.md, round3 subprincipal_stability_theorem.md, continuation odd_trace_and_algebraic_rigidity.md. Catalog blob matches live 5f23406 (V4).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:spectral_corpus_replay",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Tier-A bare run exit 2 (runner-mapping arg gap) AND gate true run 55/56 (corpus staleness). One unit: the corpus family.",
+   "spec": "Two-part fix: (1) regenerate corpus projections/views (see spectral_corpus_check) to close the 55/56 gap; (2) fix the runner mapping for replay_spectral_corpus.py to pass --output-dir (its required argument). True command is the gate command (V4 §5).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:render_spectral_research_check",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Gate red on live main: render_spectral_research.py --check, 4 stale topic views (tamper adds a 5th).",
+   "spec": "Regenerate the 4 stale topic views through review. Topic-file and review-matrix blobs match live 5f23406 (V4).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:check_spectral_edition",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Tier-A fail 1 + gate bare red: hardcodes mathematics/coordinate_return_quartic_20261021.md, absent on live main.",
+   "spec": "Wave-6-style path refresh to the byte-identical relocated file mathematics/fixed-map/coordinate_return_quartic.md (Phase-2 move, dated suffix dropped). Verify the hash before refresh, as Wave 6 did.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:exact_homoclinic",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Tier-A fail 1 (stale path): binding public_path mathematics/four_branch_parametrix.md vs relocated byte-identical file.",
+   "spec": "Wave-6-style path refresh to mathematics/fixed-map/four_branch_parametrix.md (SHA c696ebd... matches the relocated bytes; V4).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:verify_integration",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Gate red on live main: imported_finite_controls/verify_integration.py exits 1 (FileNotFoundError), 11 stale manifest canonical_paths.",
+   "spec": "Wave-6-style path refresh of the 11 manifest canonical_paths of the form mathematics/*_20261015.md to their mathematics/fixed-map/*.md relocated counterparts, hash-verified one by one. This also unblocks the imported-controls receipt evidence (see TASK rows).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:half_radius_obstructions",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Tier-A fail 1 (stale pin): promotion-map SHA for mathematics/fixed-map/symplectic_half_radius_obstruction.md, pinned c32217ae... vs current a149c25f.... Stage 2 (exact output agreement with run_final/results.json) never runs.",
+   "spec": "Re-pin through the promotion channel AFTER reviewing what changed in the source (promotion map blob ab78e17b... and source blob ac820830... match live 5f23406; V4). Never silently update the pin.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:verify_wick_integration",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Tier-B standalone red on live main: 'Source changed after pinning: README.md' (20261016 packet pins README.md 73e8800f...; current README git blob 1448008d... matches live 5f23406 exactly).",
+   "spec": "Re-pin the wick-poisson packet through review, OR scope its manifest to files the packet owns. Sibling verify_wick_poisson passes bare and is unaffected.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:resonance_nondegeneracy_margin",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Tier-A bare run exit 2 (arg gap); true run PASSES 1.1 s against a copy of the baseline producer certificate.",
+   "spec": "Fix the runner mapping to pass the certificate positional + --output. Then add a mutation/broken-input NC for the true command in the pinned-environment re-sweep (currently UNCOVERED: pass is not NC coverage).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:cpp_resonance_complex_replay",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Tier-A bare run exit 2 (arg gap); true run `8` PASSES 0.3 s.",
+   "spec": "Fix the runner mapping to pass the radius argument (usage: <radius> [--proof <file>]). Then add an NC for the true command in the pinned-environment re-sweep (currently UNCOVERED).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:fixed_harmonic_return_gas",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Passes at the 360 s runner budget (solo re-run) but has NO mutation NC: at sweep time it was a 240 s timeout, so no mutation was attempted. Pass is not NC coverage.",
+   "spec": "Mutation NC in the pinned-environment re-sweep (V4 §13.3, same re-sweep as the env-blocked items).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:fractional_hamming_full_end_2_3",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Passes at the 360 s runner budget (solo re-run) but has NO mutation NC: at sweep time it was a 240 s timeout, so no mutation was attempted. Pass is not NC coverage.",
+   "spec": "Mutation NC in the pinned-environment re-sweep (V4 §13.3, same re-sweep as the env-blocked items).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:fractional_hamming_full_end_3_2",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Passes at the 360 s runner budget (solo re-run) but has NO mutation NC: at sweep time it was a 240 s timeout, so no mutation was attempted. Pass is not NC coverage.",
+   "spec": "Mutation NC in the pinned-environment re-sweep (V4 §13.3, same re-sweep as the env-blocked items).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:intermediate_old_layers_certificates",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Passes at the 360 s runner budget (solo re-run) but has NO mutation NC: at sweep time it was a 240 s timeout, so no mutation was attempted. Pass is not NC coverage.",
+   "spec": "Mutation NC in the pinned-environment re-sweep (V4 §13.3, same re-sweep as the env-blocked items).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:verify_wick_poisson",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Bare pass; NC uncovered.",
+   "spec": "Add an individual NC (broken-input run) in the pinned-environment re-sweep; until then the pass is recorded without NC coverage, never as NC-covered.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:synthesis_checks",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Bare pass (fractional_hamming/synthesis_checks.py); NC uncovered.",
+   "spec": "Add an individual NC (broken-input run) in the pinned-environment re-sweep; until then the pass is recorded without NC coverage, never as NC-covered.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:pair_probe",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Pass 137.2 s with --output OUTSIDE the tree; NC uncovered. WARNING (V4 §7): its default --output writes pair_probe_extended.json NEXT TO ITSELF, i.e. into the tree, so a bare run must never be used on a live tree.",
+   "spec": "Add an individual NC (broken-input run) in the pinned-environment re-sweep; until then the pass is recorded without NC coverage, never as NC-covered.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:audit",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/audit/independent_audit.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:filters",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/audit/filter_checks.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:coboundary",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/algebra/BGS_quantum_coboundary_verify.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:agent_audit",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/algebra/verify_bgs_agent_20261014.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:root_lift",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/algebra/verify_root_lift.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:closure",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/closure/verify_closure.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:scaled_overlap",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/scaled_overlap/verify_scaled_overlap.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:cue_covariance",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/cue_covariance/cue_covariance_check.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:deaveraging",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/deaveraging/verify_deaveraging.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:edge_occupation",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/edge_occupation/verify_edge_occupation.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:collision",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/collision/verify_collision_crossover.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:bounded_secular",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/bounded_secular/verify_bounded_secular.py (--sizes 19,31)). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:deleted_clock",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Imported-controls task, baseline pass in V4 (tasks.json command; script computations/verification/imported_finite_controls/verify_final_attempt.py). No individual NC.",
+   "spec": "Add an individual NC per task in the pinned-environment re-sweep. Current evidence is the 20261016 receipt + the verify_integration pin check, which is itself red (see CHECK:verify_integration); the receipt evidence becomes sound only when that refresh lands.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:mesoscopic_vacuous",
+   "stream": "B.4",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "VACUOUS-STANDALONE (V4 §7): algebra/BGS_resonant_mesoscopic_verify.py defines only helper functions (no __main__, no test entry); standalone execution exits 0 in 0.1 s having run zero checks, and the historical 20261016 receipt itself records returncode 0 with EMPTY outputs_sha256. The historical PASS was equally vacuous. Its only evidence is the receipt + the verify_integration pin check, itself red.",
+   "spec": "Governed fix (code does NOT exist yet — the work item and channel are specified, so this is queued, not closed as fixed): author a genuine mesoscopic check with a real receipt, OR strike the vacuous receipt from the evidence chain via the claims amendment channel. Until either lands, this file must never be cited as a passing check. Correction to the V4 sweep tally: the '14 pass' count for the imported-15 sweep includes this vacuous exit 0; genuine passes are 13.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:actual_algebra_check",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Tier-A fail 1: DomainMatrix has no inv_den under local sympy 1.12 (API added later).",
+   "spec": "Re-run condition: pinned sympy 1.14.0 environment (November CI catchup or pinned VM). Pins must not be loosened in requirements.txt to make this VM pass. Then mutation NC (baseline was red, so none attempted).",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:collective_hierarchy",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Tier-A fail 1: Matrix.inv(method='DM') unrecognized under local sympy 1.12.",
+   "spec": "Re-run condition: pinned sympy 1.14.0 environment (November CI catchup or pinned VM). Pins must not be loosened. Then mutation NC.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:resonant_density_audit",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Tier-A fail 1: np.trapezoid (line 149) does not exist in numpy 1.26 (added in numpy 2.0; trapz is the old name). The file's only numpy-2-only call found by grep.",
+   "spec": "Re-run condition: pinned numpy 2.3.5 environment. Its receipt must name the observed numpy version. Then mutation NC.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:verify_workspace_full_run",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Full runner UNAVAILABLE on this VM (preflight exit 2): numpy expected 2.3.5 observed 1.26.4; sympy 1.14.0 vs 1.12; mpmath 1.3.0 vs 1.2.1 (module); matplotlib 3.10.8 vs 3.6.3; scipy 1.17.0 vs 1.11.4. No check runs at all under the runner here.",
+   "spec": "Re-run condition: install the pinned stack (or run on a machine that has it) — a user environment decision (V4 §9.1). The V4 Tier-A runner-equivalent commands are NOT a substitute full-run pass and must not be cited as one.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/reference/spectral_research/research_round11_2026_10_21/r11_coherent_parametric_wolfram.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/reference/spectral_research/research_round11_2026_10_21/r11_resolvent_exact_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/reference/spectral_research/research_round11_2026_10_21/root_parametric_wolfram.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/reference/spectral_research/research_round12_2026_10_21/root_critical_circle_wolfram.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/reference/spectral_research/research_round5_2026_10_21/root_reconnection_permutation_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/reference/spectral_research/research_round6_2026_10_21/r6_occupation_twostep_gauss_check.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/reference/spectral_research/research_round7_2026_10_21/root_unipotent_symbolic_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/reference/spectral_research/research_round8_2026_10_21/root_affine_reversal_coefficients_check.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/reference/spectral_research/research_round8_2026_10_21/root_exact_coefficients_check.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/verification/abel_gaussian_wick/abel_identity.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/verification/expansion_wavepacket_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/verification/folded_quadratic_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/verification/frozen_operator_transfer_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/verification/heisenberg_pair_heat_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/verification/history_localization.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/verification/resonant_density_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/verification/return_gap.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/verification/signed_heisenberg_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/wolfram/circular_phase_20261011.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/wolfram/clustered_abel_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/wolfram/finite_orbit_checks.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/wolfram/fourth_delay_20261011.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/wolfram/haar_feedback_law.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/wolfram/phase_channel_jet.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/wolfram/polynomial_coboundary_controls.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/wolfram/reversal_censoring_20261011.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/wolfram/schur_censoring_20261011.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "WL:computations/wolfram/walsh_clock_20261011.wl",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Wolfram .wl file (Tier D): UNAVAILABLE on this VM — no Wolfram Engine (blocked pending the user's Wolfram ID). Not passed, not failed.",
+   "spec": "Re-run condition: Wolfram Engine available. Receipts must say wolfram_engine: unavailable. Claim impact: none sole-dependent — the two V1 wolfram_control rows (BGS-FLOW-021, BGS-FM-018) also carry Python verifiers/evidence, so no claim currently rests solely on a .wl file.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:spectral_smoothing_sensitivity",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "TIMEOUT-AT-BUDGET: timeout at 240 s (sweep) and at 360 s (clean solo rerun, 360.1 s).",
+   "spec": "Re-run condition: bigger/faster machine, or a governed budget change (never a weakening of the check itself). Then mutation NC.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:spectral_diagnostics_verify",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "TIMEOUT-AT-BUDGET: timeout at 240 s, at the locality packet's 180 s budget, and at 360 s (clean solo rerun, 360.0 s).",
+   "spec": "Re-run condition: bigger/faster machine, or a governed budget change (never a weakening). Then mutation NC.",
+   "facets": ""
+  },
+  {
+   "id": "CHECK:factorial_diagonal_extension",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "SELF-LIMIT-KILL (distinct from timeout): the script sets RLIMIT_CPU (280, 280) (line 43); the kernel SIGKILLs it at its own cap (solo re-run: -9 at 284.8 s). The 360 s runner budget never comes into play.",
+   "spec": "Re-run condition: a faster machine (same CPU-seconds budget; the work is largely single-threaded, so likely not sufficient) OR a governed change to the self-limit. The limit is part of the check's resource contract, so changing it needs governance, not a quiet edit. Then mutation NC.",
+   "facets": ""
+  },
+  {
+   "id": "TASK:imported:hardy",
+   "stream": "B.4",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "Imported-controls standalone task TIMEOUT-AT-BUDGET: timeout at 180 s (tasks.json budget) and at 360 s (runner budget, gate rerun, exit 124). Source SHA 26cea639... MATCHES the 20261016 receipt source, so the workload is unchanged; the historical receipt records PASS in 9.7375 s. The file contains ZERO assert statements (only explicit require()), so -O vs PYTHONOPTIMIZE=0 cannot explain 9.7 s -> >360 s: the slowdown is environment/machine (sympy version, CPU), not a checker regression.",
+   "spec": "Re-run condition: governed budget decision (raise the suite budget vs accept the task as timeout-on-this-VM; do not shrink the check) + faster/pinned machine. Note: collective_diffusion_gap.py, which contains its own hardy_checks block, passed inside its Tier-A runner item in 23.0 s — the timeout risk is the standalone imported-controls task only.",
+   "facets": ""
+  },
+  {
+   "id": "CARRIED:AGENTS-MD-CONFLICT",
+   "stream": "B.5-carried",
+   "category": "GOVERNED-FIX-QUEUED",
+   "subject": "Wave 4(c) conflict carried: repo AGENTS.md September rule names .md canonical for finite-orbit, but the user-approved Pass-1 edition supersedes it for that file (reverting would shift global theorem numbering).",
+   "spec": "Fix at the phase-7 seal gate: re-baseline the AGENTS.md text to record the Pass-1 supersession. Until then AGENTS.md stays seal-pinned and is NOT edited (Wave 4(c) decision).",
+   "facets": ""
+  },
+  {
+   "id": "CARRIED:CI-BILLING-BLOCK",
+   "stream": "B.5-carried",
+   "category": "ENVIRONMENT-BLOCKED",
+   "subject": "CI on BGS main: runs never started — GitHub account BILLING block (account payments failed / spending limit; Actions minutes exhausted). The @v7 pin defect underneath was already fixed (81f181b); the CI pandoc pin landed separately (f8832ec, 68dd75e).",
+   "spec": "Re-run condition: November 2026, when minutes reset; catchup per ~/workspace/bgs_rework_exec/CI_DEBT.md (cron exists per standing record). CI itself is the user's action (billing/top-up); nothing in V5 depends on it.",
+   "facets": ""
+  }
+ ]
+}
