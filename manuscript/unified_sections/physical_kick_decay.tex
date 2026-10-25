@@ -1,0 +1,97 @@
+\section{Uniform physical-kick decay and controlled polynomial replacement}
+\label{sec:physical-kick-20261021}
+
+This section records BGS-TRACE-106 and BGS-TRACE-107, with analytic author
+proofs and an internal check by the author on 21 October 2026. The complete maintained
+proofs are \path{mathematics/physical_kick_trace_decay.md} and
+\path{mathematics/physical_trace_polynomial_approximation.md}.
+The imported research snapshot and the limited review coverage are identified
+in \path{record/spectral_research/spectral_master_audit.md}.
+
+For the unchanged modular Weyl quantization $A_N$ and odd $N$, put
+$E_N(t)=\exp(itNA_N)$ and $\operatorname{tr}_N=N^{-1}\operatorname{Tr}$.
+There is a finite constant $C$, independent of $N,t$, such that
+\[
+ |\operatorname{tr}_N E_N(t)|\le C(N|t|)^{-1/9},\qquad
+ 0<|t|\le10^{-20},\quad N|t|\ge1.
+\]
+The prefactor has not been evaluated numerically. The original
+$t=10^{-80}$ is included. This strengthens the imported exponent $1/25$.
+For every bounded interval $|t|\le T$ there is also a positive exponent
+$c_T$ and a finite prefactor $C_T$.
+
+The ordinary-half Weyl convention is
+$\mathsf W_N(k,l)=(-1)^{kl}T_N(l,k)$.
+The exact symbol in this convention is
+\[
+ a(q,p)=\cos14\pi q+\frac{r(q)}{10}
+ +\frac{r(q)\sin2\pi q}{100}-\frac1{10}
+ +\frac{r(q+1/2)\cos(2\pi p-\alpha_0)}{100}.
+\]
+In particular, replacing the last coefficient by $r(q)$ would change
+the classical symbol and invalidate this proof for the original matrices.
+
+Here is the quantitative localization mechanism. For the flow $\kappa_t$
+of $(a_p,-a_q)/(2\pi)$, set $b_1=e^{2\pi iq}$, $b_2=e^{2\pi ip}$,
+$d_j=(b_j-b_j\circ\kappa_t)/t$ and $v_t=\sum_j|d_j|^2$, extended
+smoothly at zero. Direct derivative estimates give, uniformly on the
+displayed small-time interval,
+\[
+ \operatorname{vol}\{v_t\le\delta\}\le\frac7{34\pi}\sqrt\delta.
+\]
+Egorov for the two fixed characters has error $O_T(|t|N^{-2})$.
+Cyclicity then gives
+\[
+ |\operatorname{tr}_N(Q_N(ud_j)E_N(t))|
+ \le C_T(N|t|)^{-1}|u|_1.
+\]
+Choose a real smooth cutoff $\eta=\rho(v_t/\delta)$ and use its square.
+The symmetric Weyl product cancels its first-order term exactly:
+\[
+ \|Q_N(\eta)^2-Q_N(\eta^2)\|
+ \le C N^{-2}|\eta|_2^2,
+ \qquad
+ \operatorname{tr}_N Q_N(\eta)^2
+ \le\|\eta\|_{L^2}^2+C N^{-2}|\eta|_2^2.
+\]
+Since $Q_N(\eta)^2$ is positive, its pairing with a unitary is bounded
+by its trace. Fourier Cauchy--Schwarz in dimension two requires only
+$C^3$ for $|u|_1$ and $C^4$ for $|\eta|_2$.
+Writing $R=N|t|$, the resulting estimate is
+\[
+ |\operatorname{tr}_N E_N(t)|
+ \le C_T\bigl(\delta^{1/2}+R^{-1}\delta^{-4}
+                         +R^{-2}\delta^{-8}\bigr).
+\]
+The choice $\delta=R^{-2/9}$ proves the exponent $1/9$.
+For arbitrary finite $T$, the stationary circle $q=0$ has nonzero
+nilpotent flow linearization. Thus no nonzero time has identity flow;
+analytic finite type on the compact time interval supplies a positive
+sublevel exponent and the stated bounded-time result.
+
+Consequently, if $0<|t_N|\le T$ and $N|t_N|\to\infty$, the empirical
+eigenvalue measure of $E_N(t_N)$ converges to circle Haar measure, and
+\[
+ \inf_{|z|=1}N^{-1/2}\|E_N(t_N)-zI\|_{\mathrm{HS}}\to\sqrt2,
+ \qquad\inf_{|z|=1}\|E_N(t_N)-zI\|_{\mathrm{op}}\to2.
+\]
+In particular $\inf_{|z|=1}\|U_N-zM_N\|_{\mathrm{op}}\to2$.
+This is a matrix comparison, not a comparison of unordered spectra
+after arbitrary conjugation.
+
+There is also a controlled polynomial replacement at the actual argument
+$N\tau$. Since $\|A_N\|\le a_*=59/50$, a Chebyshev--Bessel polynomial
+of degree $2a_*\tau N+O_K(\log N)$ approximates $E_N(\tau)$ with norm
+error $N^{-K}$. Telescoping trace products and the partition--M\"obius
+formula give an error $O_{k,b}(N^{k-K})$ for each fixed factorial order
+$k$ and fixed compact Fourier bandwidth. Negative trace indices of the
+nonunitary approximant are defined by adjoint powers. A single degree
+$2a_*\tau N+O((\log N)^2)$ works for all fixed orders by choosing
+$K=\log N$. No positivity or point-process interpretation of the
+approximating trace polynomial is asserted.
+
+On the Pell dimensions $N=xy$, $(1+\sqrt2)^r=x+y\sqrt2$ with odd $r$,
+the first nonzero scalar two-copy alias has length exactly $x\asymp\sqrt N$.
+Hence the fixed-word two-copy approximation does not extend uniformly
+to the degrees needed by the physical exponential. The complete remaining
+signed trace sum is not evaluated. BGS-TRACE-005 and BGS-BGS-001 remain open.

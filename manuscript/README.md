@@ -98,24 +98,25 @@ uniqueness before both CI manuscript builds. It reports unresolved or
 duplicate cross-reference labels separately, without pretending that a
 well-formed reference establishes mathematical validity.
 
-## Sections retained outside the consolidated build
+## Sections compiled through nested inputs (corrected in Pass 0)
 
-Two files in `unified_sections/` are **not** part of the build rooted at
-[BGS_unified.tex](BGS_unified.tex):
+Two files in `unified_sections/` do **not** appear as direct `\input` lines of
+[BGS_unified.tex](BGS_unified.tex), but both **are** part of the build rooted at
+that file (verified against the transitive `\input` closure in Pass 0; the
+earlier "excluded from the build" labels were stale and are corrected here):
 
 | File | Status |
 |---|---|
-| `unified_sections/cayley_curve_uniform.tex` | Excluded from the build; retained as historical material |
-| `unified_sections/intermediate_old_layers.tex` | Excluded from the build; retained as historical material |
+| `unified_sections/cayley_curve_uniform.tex` | Compiled through the nested `\input` at `unified_sections/cayley_scaling.tex:60` |
+| `unified_sections/intermediate_old_layers.tex` | Merged into `unified_sections/literal_time_multiplicity_bounds.tex` in Pass 0 (previously a nested `\input` at line 42); its content remains in the build |
 
-This exclusion is a recorded editorial fact; it is not a claim that their
-contents are superseded or lost. A decision on their final disposition
-(reactivation, archival or removal) is the author's.
+No content was dropped in this correction.
 
-Eight further sections that do not appear as direct `\input` lines of
-`BGS_unified.tex` are included indirectly, through
-[final_delivery_note.tex](final_delivery_note.tex), which the root file
-inputs; they are part of the build.
+Eight further sections (the Wiener block) appear as direct `\input` lines of
+[BGS_unified.tex](BGS_unified.tex) since Pass 0; they were previously reached
+through [consolidation_addendum.tex](consolidation_addendum.tex) (formerly
+`final_delivery_note.tex`), which now holds only the consolidation addendum
+record; they are part of the build.
 
 ## Build
 

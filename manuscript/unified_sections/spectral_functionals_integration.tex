@@ -1,0 +1,163 @@
+\section{Full spectral functionals and the 15 October research record}
+\label{sec:chat-integration-20261016}
+
+\paragraph{Status and provenance.}
+This section summarizes the canonical proofs integrated on 16 October 2026.
+The preserved record contains 103 numbered sections, 16 original notes and
+90 historical claim entries. That inventory is not a new certification of
+90 theorems. The integration consists of the author's own check and fresh finite
+checks, without an external referee or a new analytic Lean certificate.
+The unchanged model is $U_N=\exp(i10^{-80}NA_N)M_N$, for odd $N$.
+The model-specific signed hierarchy TRACE-005 and microscopic BGS remain open.
+
+\subsection{From the complete signed hierarchy to a local process}
+For a nonnegative band-limited Schwartz function $b$ with $\sup b<1$, let
+$M_{k,N}(b)$ be the origin-averaged elementary factorial coefficient of
+$b_N(t)=\sum_{\ell\in\mathbb Z}b(N(t+\ell))$, and put
+$\Delta_{k,N}=M_{k,N}^U-M_{k,N}^{\rm CUE}$.
+TRACE-086 proves the implication
+\[
+ \Delta_{k,N}(b)\longrightarrow0\quad
+ \hbox{for every fixed $k$ and every such $b$}
+ \quad\Longrightarrow\quad \Xi_N\Rightarrow\mathrm{Sine}_2.
+\]
+It also supplies uniform integrability and convergence of every fixed local
+count moment. No separate UI premise is needed under this complete
+all-order hypothesis. For $h=1-e^{-f}$, $f\ge0$ smooth and compactly supported,
+positive band-limited approximants $b$ give the finite certificate
+\[
+ |L_N^U(f)-L_N^{\rm CUE}(f)|
+ \le 2\|h-b\|_1+\sum_{k=2}^{J}|\Delta_{k,N}(b)|
+       +\frac{(\int b)^J}{J!},\qquad J\text{ odd}.
+\]
+First choose the approximation and finite $J$, then take $N$ to infinity.
+The actual signed coefficients are not estimated by this implication.
+
+\subsection{Parameter bandwidth and the missing averaged input}
+For $U_N(t)=e^{itNA_N}M_N$, $\|A_N\|\le C$, and a fixed real
+$w\in C_c^\infty((0,B))$, define
+\[
+ J_{N,w}(t)=\frac1{N^2}\sum_{m\ge1}w(m/N)
+       \bigl(|\operatorname{Tr}U_N(t)^m|^2-\min(m,N)\bigr).
+\]
+TRACE-087 gives exact angular parameter bandwidth at most $2CBN^2$ and
+global bound $O_w(N)$. A reproducing-kernel argument yields, for
+$K\Subset I$, $q>1$ and every fixed $A>0$,
+\[
+ \sup_K|J_{N,w}|
+ \le C_{I,K,w,q}N^{2/q}\|J_{N,w}\|_{L^q(I)}
+       +O_{I,K,w,A}(N^{1-2A}).
+\]
+Thus a physical sixth moment $\int_I|J_{N,w}|^6=O(N^{-3})$ would imply
+$O(N^{-1/6})$ fixed-coupling decay. It is unproved. The corresponding
+Haar-CUE moment is only a reference statement. The exact CUE covariance
+(CUE-002), valid for all positive $m,n$, is
+\[
+ \operatorname{Cov}(|p_m|^2,|p_n|^2)
+ =\delta_{mn}\min(m,N)^2+2(N-\max(m,n))_+
+ -(N-m-n)_+-(N-|m-n|)_+.
+\]
+Gaussian trace moment identities are used only in their weighted-degree
+stable range.
+
+\subsection{Equal-edge multiplicities and their limited cancellation}
+For a rooted closed word let $\nu_{ab}$ be its directed edge counts,
+$r_a=\sum_b\nu_{ab}$, and $t(\nu)$ the directed tree cofactor on the
+active support. TRACE-088 proves the rooted multiplicity
+\[
+ c(\nu)=\frac{m\,t(\nu)\prod_{a:r_a>0}(r_a-1)!}
+                   {\prod_{a,b}\nu_{ab}!}.
+\]
+For $P_{ab}=|U_{ab}|^2$, set
+$\mathcal B_{N,m}=\sum_\nu c(\nu)^2\prod_{a,b}P_{ab}^{\nu_{ab}}$.
+Assume $P_{ab}\le C/N$ and $\|P-\mathbf J\|_{2\to2}\le\rho<1$,
+with fixed $C,\rho$ and $\mathbf J_{ab}=1/N$. At $m/N\to\xi>0$,
+\[
+ \liminf\frac1N\log\mathcal B_{N,m}
+ \ge \log2\,[\xi-2+(\xi+2)e^{-\xi}]>0.
+\]
+Unitarity forces the complementary contribution to equal
+$-\mathcal B_{N,m}+O(N^2)$, which does not identify a CUE limit.
+At the different scale $m\to\infty$, $m/\sqrt N\to c<\infty$,
+TRACE-089 gives
+\[
+ \frac{\mathcal B_{N,m}}m\longrightarrow
+ \frac{\sinh(c^2/2)}{c^2/2},
+\]
+with value one at $c=0$. Its proof requires factorially weighted control
+of triple visits and the classical Harer--Zagier chord identity. Substituting
+$c=\sqrt N$ is outside the theorem. The later reported Gaussian comparison
+at $m=o(N^{3/4})$ lacks an available source proof and is not promoted here.
+
+\subsection{Contractive ratios and exact positive Hardy remainders}
+Let $U$ be unitary of size $N$, $p(z)=\det(I-zU)$, $0<s<t$,
+$a=e^{-s/N}$, $b=e^{-t/N}$, $x=e^{-s}$, $y=e^{-t}$.
+TRACE-090 uses the full bounded observable
+\[
+ \mathcal F_{N;s,t}(\alpha)=e^{-(t-s)}
+ \frac{|p(ae^{-2\pi i\alpha})|^2}{|p(be^{-2\pi i\alpha})|^2}
+ \in(0,1].
+\]
+All mixed shifted moments characterize the weak local process, but do not
+alone supply its unbounded correlation moments. The CUE mean is exactly
+\[
+ e^{-(t-s)}\left[1+\frac{(a-b)^2}{1-b^2}
+                         \frac{1-a^{2N}}{1-a^2}\right].
+\]
+The sampled Toeplitz contraction argument requires an angular grid of
+at least $N$ points; it is not valid under arbitrary undersampling.
+
+Write $p(z)=\sum c_kz^k$, $q(z)=p(bz)$,
+$\mathscr B(z)=z^N\overline{q(1/\bar z)}/q(z)$, and
+\[
+ u=\frac{1-xy}{1-y^2},\qquad v=\frac{x-y}{1-y^2},\qquad
+ E(z)=\frac{p(az)}{p(bz)}-u-c_Nv\mathscr B(z).
+\]
+TRACE-091 proves the exact orthogonal decomposition
+\[
+ Z_U(s,t)=e^{-(t-s)}\left[1+\frac{(x-y)^2}{1-y^2}
+                                      +\|E\|_{H^2}^2\right].
+\]
+The minimum is attained exactly by a rotated regular $N$-clock. All roots
+of $p$ are required to lie on the unit circle; self-inversiveness alone
+does not suffice. For $r=e^{-s/N}$, $q_r=p(rz)$ and
+$\mathscr B_r=q_r^*/q_r$, put
+\[
+ Y(z)=\frac zN\frac{q_r'(z)}{q_r(z)}
+       +\frac{e^{-2s}}{1-e^{-2s}}
+       -\frac{c_Ne^{-s}}{1-e^{-2s}}\mathscr B_r(z).
+\]
+Then the complete Abel energy satisfies
+\[
+ L_N(s)=\frac1{N^2}\sum_{m\ge1}e^{-2sm/N}
+                  |\operatorname{Tr}U^m|^2
+       =\frac1{e^{2s}-1}+\|Y\|_{H^2}^2.
+\]
+The required CUE excess is positive:
+\[
+ \|Y\|_{H^2}^2\ \longrightarrow\
+ \frac{1-e^{-2s}}{4s^2}-\frac1{e^{2s}-1}.
+\]
+This limit is unproved for the frozen family. Deleted-clock spectra have
+strictly positive finite excess of order $N^{-1}$ and bounded fixed traces,
+so neither observation determines the desired full Hardy norm.
+
+\subsection{Cyclic cohomology, root labels, and the unchanged gap}
+FM-032 evaluates the additive defect for primes $p>99$:
+$\inf_{B=B^*}\|A_p-(B-M_pBM_p^{-1})\|_p=\|P A_p\|_p$,
+where $P=d^{-1}\sum_{j=0}^{d-1}\operatorname{Ad}(M_p)^j$.
+For $\Sigma_p=d\|PA_p\|_p^2$, the principal harmonic contributes
+$81/200$ at odd $d$ and $81/100$ at even $d$, with an explicit bounded
+nonnegative remainder. This is initial spectral response, not a
+nonperturbative physical trace estimate. FM-033's stronger all-label Weyl
+overlap is separately conditional on its named quantitative analytic inputs.
+
+TRACE-084 is a sufficient mesoscopic number-variance route for deleting a
+chosen resonant sector. TRACE-085 proves it is not necessary: the root lift
+with phases $(a+\varphi_j)/d$, $0\le a<d$, has exactly the same uniformly
+centered unfolded process as its base spectrum. Its full positive trace
+energy can lie at times divisible by $d$. Full signed discrepancies can
+therefore cancel between sectors. A powered block loses root labels;
+$U=ZR_d(U^d)$ requires $Z^d=I$ and $[Z,U^d]=0$ as joint data.
+No new estimate of those physical data, the signed Heisenberg hierarchy,
+or a microscopic BGS law is asserted.

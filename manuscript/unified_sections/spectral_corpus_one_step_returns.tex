@@ -1,0 +1,100 @@
+\section{The final spectral research corpus: one-step returns and weighted Pell curvature}
+\label{sec:spectral-final-20261021}
+
+This section records the final fourteen-round source edition integrated on
+21 October 2026. Canonical proofs are the four maintained Markdown notes
+for TRACE-108--111; the complete individual author sources, internal reviews,
+reference programs and execution receipts are organized by mathematical topic
+under \path{mathematics/spectral_research/}. Source preservation is complete
+for the supplied master; mathematical adoption has the bounded scope below.
+No statement here proves the original microscopic hierarchy or BGS.
+
+\subsection{Original one-step coordinate return}
+Retain exactly the modular Weyl family and fixed $\tau=10^{-80}$ of the
+preceding section. The ordinary-half symbol has the translated coefficient
+$r(q+1/2)$ in its momentum-dependent term. Four lifted Gauss sheets and
+their transported amplitudes give
+\[
+\lim_{N\to\infty,\ N\text{ odd}}\sum_x|U_N(x,x)|^2
+=1-\frac{25823\pi^4}{4800000000000}\tau^4+E,
+\qquad |E|\le10^{56}\tau^5.
+\]
+This is TRACE-108, an analytic author proof, checked by the author. The first three
+Taylor coefficients vanish under the four-sheet filter. The fourth follows
+from an exact Fourier convolution; Cauchy bounds on the holomorphic
+Hamilton--Jacobi phase control the remainder at fixed coupling. Cross-sheet
+discrete aliases are included. This one-step result does not evaluate the
+Heisenberg-scale sum; its individual contribution there is divided by $N^2$.
+
+\subsection{Exact projections and subsequent trace closure}
+For any unitary $U$ and Hermitian $A$, put
+$Q=\sum_\lambda P_\lambda AP_\lambda$, with full spectral projectors.
+Orthogonal projection on matrix Hilbert space gives
+\[
+\inf_B\|A-(B-UBU^*)\|_{\mathrm{HS}}=\|Q\|_{\mathrm{HS}},\qquad
+\|Q\|_{\mathrm{HS}}\ge |\operatorname{Tr}(AU)|/\sqrt N.
+\]
+On two copies the projected generator is $\operatorname{ad}_Q$ and
+\[
+\|\operatorname{ad}_Q\|_{\mathrm{HS}}^2
+=2N\|Q\|_{\mathrm{HS}}^2-2(\operatorname{Tr}Q)^2.
+\]
+The 21 October integration retained two analytic input qualifications:
+the original inserted-trace asymptotic for TRACE-109 and the uniform
+power-trace bound for TRACE-110. Both are closed in
+Section~\ref{sec:trace-closure-20261022}. The first now has a finite-grid
+proof with $O(N^{-1})$ error; no uncontrolled remainder is differentiated.
+The second has one dimension threshold for all positive iterates.
+Consequently the global spectral distance allowing arbitrary conjugation
+is $O(1/\log N)$, with matching lower order on Pell dimensions.
+This does not determine microscopic spacings.
+
+\subsection{The full weighted sum at the initial parameter}
+Let $\phi(\xi)=e^{-1/(1-\xi^2)}\mathbf1_{|\xi|<1}$,
+$I=\int\phi$, and $w=(\phi*\phi)^2/(4I^4)$. Define
+\[
+S_N(t)=N^{-2}\sum_{1\le m<2N}w(m/N)
+|\operatorname{Tr}(e^{itNA_N}M_N)^m|^2.
+\]
+On odd Pell dimensions $N=(\lambda^r-\lambda^{-r})/(4\sqrt2)$,
+$\lambda=3+2\sqrt2$, $d=2r$, TRACE-111 proves
+\[
+S_N(0)=\frac Nd I_w+O(1),\qquad S_N'(0)=O_L(N^{-L}),\qquad
+S_N''(0)\le-\frac{289J_2}{80000}\frac{N^5}{d^2},
+\]
+where $I_w=\int_0^2w$ and $J_2=\int_0^2x^2w(x)\,dx$.
+The proof sums all weighted times and every off-clock Hessian term in a
+fixed eigenblock basis, without differentiating eigenvalue branches.
+Positivity and a uniform third-derivative bound then force positive
+curvature at some $t_N=O(d^3/N^2)$. Thus initial concavity cannot persist
+to a fixed positive parameter for all sufficiently large Pell dimensions.
+This does not place a positive first derivative before that parameter.
+
+The continuation
+\[
+\mathcal S_N(z)=N^{-2}\sum_mw(m/N)
+\operatorname{Tr}U_N(z)^m\operatorname{Tr}U_N(z)^{-m}
+\]
+is entire. The inverse power, rather than an adjoint at complex $z$, is
+essential. If $(d/N)\mathcal S_N$ is bounded by a fixed $M_0$ on a disk
+of radius $R_N$, Cauchy's inequality forces
+$R_N\le\sqrt{2M_0/c}\sqrt d/N^2$, where $c=289J_2/80000$.
+This bounds a uniformly controlled window, not the radius of convergence.
+
+\subsection{The still missing plateau correction}
+The exact rotational class of cyclic histories supplies the linear ramp,
+under the stated intensity flatness and singular-gap inputs. Hence its
+complement must contribute
+\[
+-\delta_*,\qquad \delta_*=\int_1^2(t-1)w(t)\,dt>0,
+\]
+to the normalized weighted pair sum. An estimate making that entire
+complement vanish would miss the plateau. Arbitrarily accurate one-step
+replacement does not evaluate this coherent remainder. Neither the original
+pair limit at $t=\tau$ nor its higher factorial analogues is proved here.
+
+The edition preserves 535 source units and exact reconstruction of the
+uploaded bytes. Fresh execution covers 56 bounded research checks and an
+additional independent finite Hessian comparison. These computations,
+formula parsing and the manuscript build have separate evidence scopes;
+none is a formal or external referee certification of the asymptotic claims.

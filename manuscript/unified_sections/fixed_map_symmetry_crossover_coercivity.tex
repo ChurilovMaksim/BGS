@@ -1,0 +1,127 @@
+% Maintained summary of the 20--21 September 2026 fixed-map continuation.
+\section{Fixed-map continuation: symmetry, crossover, and resonance coercivity}
+\label{sec:fixed-map-20260921}
+
+This section records the final continuation after the recovered fixed-map
+frontier.  The detailed proofs and status boundaries are maintained in the
+corresponding Markdown notes; none of the results below proves the
+fixed-\(\tau\) BGS conjecture.
+
+\subsection{The physical Weyl symbol and classical symmetry exclusion}
+
+For the raw modular convention of the frozen operator, the ordinary midpoint
+Weyl matrices satisfy \(W_N(a,b)=(-1)^{ab}T_N(a,b)\).  Consequently the same
+matrix \(A_N\) is the ordinary Weyl quantization of
+\[
+ g(q,p)=\cos14\pi q+\frac{r(q)}{10}
+ +\frac{r(q)\sin2\pi q}{100}
+ +\frac{r(q+\frac12)\cos(2\pi p-\alpha)}{100}-\frac1{10},
+\]
+where \(r(q)=(1-\cos14\pi q)(1+\cos2\pi q)\),
+\(\cos\alpha=-3/5\), and \(\sin\alpha=4/5\).
+For \(G_\kappa=S\circ\Phi_g^\kappa\) and
+\(0<|\kappa|\le10^{-12}\), the project proof shows that \(G_\kappa\) is
+analytic Anosov, its complete \(C^1\) centralizer is
+\(\{G_\kappa^j:j\in\mathbb Z\}\), it has no \(C^1\) reversor, and it is not
+\(C^1\)-conjugate to an affine toral map with the required homological
+linear part.  The actual classical map is
+\[
+ F_\tau=\Phi_g^{-\tau/(2\pi)}\circ S^{-1}
+       =G_{\tau/(2\pi)}^{-1}.
+\]
+Thus inherited smooth classical symmetries are excluded for the frozen model,
+but \(N\)-dependent quantum commutants and Heisenberg-time cancellation are
+not.
+
+\subsection{Odd-Pell full-symbol crossover}
+
+For odd \(K\), let
+\(N_K+F_K\sqrt2=(1+\sqrt2)^K\) and
+\(\overline A_K=K^{-1}\sum_{j=0}^{K-1}M_N^jA_NM_N^{-j}\).
+The empirical spectral measure of \(\sqrt K\,\overline A_K\) has the Gaussian
+limit with exact variance
+\[
+ \sigma^2=\frac{1650797}{4000000}.
+\]
+Here \(\eta_K\) is the scalar defined by \(M_{N_K}^K=\eta_KI\) on the
+Pell sequence, so \(|\eta_K|=1\) (canonical source:
+\texttt{mathematics/fixed\_model\_pell\_crossover.md}).
+If \(\epsilon_K\sqrt K\to t\) for
+\(U_{\epsilon,N}=\exp(i\epsilon A_N)M_N\), then, for each fixed \(m\),
+\[
+ \eta_K^{-m}N_K^{-1}\operatorname{Tr}U_{\epsilon_K,N_K}^{mK}
+ \longrightarrow e^{-m^2t^2\sigma^2/2}.
+\]
+Since \(|\eta_K^{-m}|=1\), the squared moduli satisfy
+\(N_K^{-2}|\operatorname{Tr}U_{\epsilon_K,N_K}^{mK}|^2
+\to e^{-m^2t^2\sigma^2}\); with \(K/N_K\to0\) the Abel factors
+\(e^{-2smK/N_K}\) in \(L_{N_K}(s)\) tend to \(1\) at each fixed \(m\).
+Consequently
+\[
+ \liminf L_{N_K}(s)\ge\sum_{m\ge1}e^{-m^2t^2\sigma^2},
+\]
+so CUE pair behaviour along these Pell dimensions requires
+\(|\epsilon_K|\sqrt K\to\infty\).  The frozen choice
+\(\epsilon_K=\tau N_K\) eventually satisfies this necessary condition and is
+therefore outside the proved crossover obstruction.
+
+\subsection{A stronger conditional mixed-loop barrier}
+
+Let \(w=is/2\), \(v=-is/2\), and impose normalized vanishing of the three
+mixed residuals
+\(\mathcal E_{2,N}(w,v)\),
+\(\mathcal E_{3,N}(w,v,v)\), and
+\(\mathcal E_{3,N}(w,w,v)\) at every fixed \(s>0\).
+The additional orientation gives a derivative identity for
+\(R=E(P^3\bar P)\).  Passing positivity of the limiting real moment matrix
+and using a scalar differential barrier yields
+\[
+ \liminf_{N\to\infty}L_N(s)\ge
+ \frac{\sqrt{1+s^{-2}}-1}{2}
+ +\frac{s^3}{64(1+s^2)^{7/2}}.
+\]
+At \(s=1\) this raises the earlier lower bound from
+\(0.2071067812\ldots\) to \(0.2084878491\ldots\), still below the CUE value
+\(0.2161661792\ldots\).  Repeated-clock spectra show that arbitrarily many
+one-upper residual tests at one selected height do not suffice.
+
+\subsection{Sharp Fourier-line resonance coercivity}
+
+Let \(A\in SL(2,\mathbb Z)\), \(|\operatorname{tr}A|>2\), and
+\(g(x)=G(v\cdot x)\) with real nonconstant
+\(G\in H^{1+\beta}(\mathbb T)\).  For
+\(h=\{g,C_Ag\}/(4\pi)\), the selected orbit sums \(J_m\) satisfy
+\[
+ \pi|D|\kappa_\beta E_\beta
+ \le \sum_{m\ge1}m^{2\beta}|J_m|
+ \le \pi|D|(1+\rho_\beta)E_\beta,
+\]
+provided
+\[
+ \rho_\beta=2\sum_{j\ge0}(a_ja_{j+1})^{-\beta}<1,
+ \qquad \kappa_\beta=1-\rho_\beta.
+\]
+The lower constant is sharp over real trigonometric polynomials.  In
+particular
+\[
+ \kappa_1=\sqrt{\frac{T-2}{T+2}},
+\]
+and for the project matrix
+\(\left(\begin{smallmatrix}3&2\\4&3\end{smallmatrix}\right)\), \(v=(1,0)\),
+one has \(D=4\) and \(\kappa_1=1/\sqrt2\).  If
+\(|\operatorname{tr}A|\ge6\), every nonconstant Fourier-line
+\(H^{3/2}\) observable already has positive dynamical variance.
+
+This solves the all-members resonance question on a complete
+infinite-dimensional Fourier-line class, not for arbitrary analytic
+two-dimensional symbols.  An explicit local polynomial coboundary shows
+that fixed-point Taylor jets alone cannot close that remaining global
+cohomological problem.
+
+\subsection{Remaining obligation}
+
+The fixed-model pair target and all-order microscopic BGS statistics still
+require a model-specific Heisenberg-scale cancellation estimate for the
+actual frozen propagator.  Classical symmetry exclusion, positive
+Fourier-line dynamical variance, weak-kick crossover obstructions, and
+finite exact regressions are logically separate from that quantum estimate.

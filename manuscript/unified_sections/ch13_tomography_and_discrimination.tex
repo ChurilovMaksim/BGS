@@ -1,0 +1,826 @@
+\section{Rare-phase discrimination: a sharp exponent and radial transition}
+\label{sec:rare-phase}
+We refine the pure-state lower-bound family from the preceding minimax
+sections. The results give its exact exponential distinguishability scale,
+a universal radial profile, optimal fixed-test Chernoff constants, and a
+finite copy-complexity separation. Restricted-measurement data hiding itself
+is prior work \cite{Lami2021,SW2021}. Here the states are nonorthogonal and
+approach the vacuum while one photon moment stays fixed. No result about
+all Gaussian measurements or microscopic BGS statistics is asserted.
+
+\subsection{Balance radius and angular overlap}
+Fix $\beta,E>0$, let $u=E/n^\beta<1/2$, and put
+\[
+ |\psi_n^\pm\rangle=\sqrt{1-u}|0\rangle\pm\sqrt u|n\rangle,
+ \quad x_n=\left(\frac{n!(1-u)}u\right)^{1/n},
+ \quad b_n=(1-u)e^{-x_n}.
+ \tag{C.1}\label{eq:rare-balance}
+\]
+The states have moment $E$ and trace distance $2\sqrt{u(1-u)}$.
+The squared radius $x_n$ is where their vacuum and number-state coherent
+amplitudes have equal modulus. Stirling's formula gives
+\[
+ x_n=\frac ne+
+ \frac{(\beta+\tfrac12)\log n-\log E+\tfrac12\log(2\pi)}e+o(1).
+ \tag{C.2}\label{eq:rare-radius}
+\]
+Indeed the logarithm of the expression inside the $n$th root is
+$n\log n-n+(\beta+\tfrac12)\log n-\log E+
+\tfrac12\log(2\pi)+\log(1-u)+O(1/n)$. Expanding the exponential proves
+the displayed formula; the contribution of $\log(1-u)$ is $o(1)$.
+
+Define
+\[
+ F(t)=\frac1{2\pi}\int_0^{2\pi}
+ \left(\left|1+\sqrt t e^{i\varphi}\right|
+           -\left|1-\sqrt t e^{i\varphi}\right|\right)^2d\varphi.
+ \tag{C.3}\label{eq:rare-F}
+\]
+Then $F(t)=tF(t^{-1})$ for $t>0$, and
+\[
+ \min(1,t)\le F(t)\le4\min(1,t).
+ \tag{C.4}\label{eq:rare-F-bounds}
+\]
+For the lower bound rationalize the difference of square roots: its squared
+denominator is at most $4(1+t)$, so the integrand is at least
+$4t\cos^2\varphi/(1+t)$. Its average is $2t/(1+t)\ge\min(1,t)$.
+The upper bound follows from the reverse triangle inequality in both orders.
+
+Let $\mathsf E(m)=\int_0^{\pi/2}\sqrt{1-m\sin^2\theta}\,d\theta$
+be the complete elliptic integral with parameter $m$. Multiplying the two
+moduli and changing angular variables yields
+\[
+ F(t)=2(1+t)\left[1-\frac2\pi\mathsf E\!\left(
+                      \frac{4t}{(1+t)^2}\right)\right].
+ \tag{C.5}\label{eq:rare-elliptic}
+\]
+An exact series, useful to avoid numerical cancellation at small $t$, is
+\[
+ F(t)=2t-2\sum_{k\ge1}c_kt^{2k},\qquad
+ c_k=\binom{1/2}{k}^{\!2}
+ =\frac{\binom{2k}{k}^2}{16^k(2k-1)^2},\quad 0\le t\le1.
+ \tag{C.6}\label{eq:rare-series}
+\]
+To prove it for $t<1$, multiply the absolutely convergent binomial series for
+$(1-te^{i\varphi})^{1/2}$ and its conjugate and average. Only equal indices
+remain. Continuity and monotone convergence of the nonnegative series prove
+the endpoint. In particular $F(1)=4-8/\pi$.
+
+\subsection{Exact radial formula and a universal boundary profile}
+Use unnormalized squared Hellinger distance
+$h^2(P,Q)=\int(\sqrt p-\sqrt q)^2$, including atoms.
+Let $h_{n,R}^2$ refer to the radius-$R$ censored heterodyne laws, with the
+outside flag retained. Their outside probabilities agree by angular
+integration. Polar coordinates therefore give the exact identity
+\[
+ \boxed{h_{n,R}^2=(1-u)\int_0^{R^2}e^{-x}
+                           F\bigl((x/x_n)^n\bigr)\,dx.}
+ \tag{C.7}\label{eq:rare-radial}
+\]
+The angular frequency $n\arg z$ disappears upon averaging since $n$ is an
+integer. The formula includes ordinary heterodyne at $R=\infty$.
+
+\begin{theorem}[Radial transition profile]\label{thm:rare-profile}
+If $R_n^2-x_n\to\ell\in\mathbb R\cup\{-\infty,+\infty\}$, then
+\[
+ \frac{h_{n,R_n}^2}{b_n}\longrightarrow
+ \mathcal C(\ell):=\int_{-\infty}^{\ell}e^{-y}F(e^{ey})\,dy.
+ \tag{C.8}\label{eq:rare-profile}
+\]
+Here $\mathcal C(-\infty)=0$ and $0<\mathcal C_*:=\mathcal C(+\infty)<\infty$.
+For ordinary heterodyne,
+\[
+ h_{n,\infty}^2\sim\mathcal C_* E^{1/e}(2\pi)^{-1/(2e)}
+ n^{-(\beta+1/2)/e}e^{-n/e}.
+ \tag{C.9}\label{eq:rare-sharp}
+\]
+\end{theorem}
+\begin{proof}
+Put $x=x_n+y$ in \eqref{eq:rare-radial}. The normalized integrand is
+$e^{-y}F((1+y/x_n)^n)$ for $y\ge-x_n$ and zero otherwise.
+For fixed $y$ it converges to $e^{-y}F(e^{ey})$.
+For $y\ge0$ it is bounded by $4e^{-y}$.
+Choose $1<\kappa<e$. For large $n$, $n/x_n\ge\kappa$; for $y<0$,
+$(1+y/x_n)^n\le e^{\kappa y}$, so the integrand is bounded by
+$4e^{(\kappa-1)y}$. These bounds are integrable on the two half-lines.
+Dominated convergence, also with the moving upper indicator, proves
+\eqref{eq:rare-profile}. Positivity follows from \eqref{eq:rare-F-bounds}.
+Finally substitute \eqref{eq:rare-radius} into $b_n$.
+\end{proof}
+
+Writing $a=1/e$, the constant has the exact scalar representation
+\[
+ \mathcal C_*=2a\left\{\frac1{1-a}+\frac1a-
+ \sum_{k\ge1}c_k\left(\frac1{2k-a}+\frac1{2k+a-1}\right)\right\}.
+ \tag{C.10}\label{eq:rare-constant}
+\]
+This follows by substituting $t=e^{ey}$, splitting the Mellin integral at
+one, and using the symmetry and series for $F$.
+Truncation after $M$ terms is an upper estimate with error at most
+$a/(3M^3)$. Indeed, induction using the central-binomial recurrence gives
+$\binom{2k}{k}^2(3k+1)\le16^k$, and
+$(3k+1)(2k-1)^2\ge4k^3$. Thus $c_k\le1/(4k^3)$.
+The sum of the two reciprocal denominators is at most $2/k$, and summing
+$k^{-4}$ by an integral proves the claimed tail bound.
+Outward-rounded integer arithmetic at $M=8192$, independently reproduced
+in Python and C++, encloses the constant as
+\[
+ 2.9086102383180<\mathcal C_*<2.9086102383183.
+ \tag{C.11}\label{eq:rare-constant-enclosure}
+\]
+The interval certificate uses a rational enclosure of $e$ from its factorial
+series, not floating-point values of the elliptic integral.
+
+\subsection{Optimal coherent tests and the aperture exponent}
+Let $H_{n,R}^{\rm bin}$ be the supremum of squared Hellinger distances over
+binary coherent-projector tests with $|z|\le R$.
+For $x=|z|^2$ set
+\[
+ A(x)=(1-u)e^{-x},\quad B(x)=ue^{-x}x^n/n!,\quad
+ m_{n,R}=\max_{0\le x\le R^2}\min(A(x),B(x)).
+\]
+For large $n$ one has $x_n<n$. The minimum is $B(x)$ below $x_n$ and
+$A(x)$ above $x_n$, so its maximum is attained at $\min(R^2,x_n)$.
+An aligned phase, $\cos(n\arg z)=1$, gives a click contribution exactly
+$4\min(A(x),B(x))$. For the complement, the estimate in
+\eqref{eq:aperture-hellinger} gives at most $64A(x)B(x)/u$.
+Consequently
+\[
+ 4m_{n,R}\le H_{n,R}^{\rm bin}\le(4+64/u)m_{n,R},
+ \qquad
+ 0\le H_{n,R}^{\rm bin}-4m_{n,R}\le64\,2^{-n}.
+ \tag{C.12}\label{eq:rare-binary-sandwich}
+\]
+For the second inequality maximize $e^{-2x}x^n/n!$ at $x=n/2$ and use
+$n!\ge(n/e)^n$. Thus $H_{n,\infty}^{\rm bin}\sim4b_n$.
+If $R_n^2-x_n\to\ell\in\mathbb R$, then
+\[
+ \frac{H_{n,R_n}^{\rm bin}}{b_n}\longrightarrow
+ \begin{cases}4e^{(e-1)\ell},&\ell\le0,\\4,&\ell\ge0.\end{cases}
+ \tag{C.13}\label{eq:rare-binary-profile}
+\]
+The additive error is exponentially smaller than $b_n$. For $\ell<0$,
+$B(x_n+\ell)/b_n=e^{-\ell}(1+\ell/x_n)^n$ proves the formula.
+
+\begin{theorem}[Exact exponential discrimination threshold]
+\label{thm:rare-exponent}
+If $R_n^2/n\to\alpha\in(0,\infty]$, each of $h_{n,R_n}^2$ and
+$H_{n,R_n}^{\rm bin}$ satisfies
+\[
+ -\frac1n\log H_n\longrightarrow I(\alpha),\qquad
+ I(\alpha)=\begin{cases}
+ \alpha-1-\log\alpha,&0<\alpha\le e^{-1},\\
+ e^{-1},&\alpha\ge e^{-1}.
+ \end{cases}
+ \tag{C.14}\label{eq:rare-exponent}
+\]
+If $\log B_n/n\to b<I(\alpha)$, no processing of the heterodyne outcomes
+or adaptive sequence of the allowed binary tests has equal-prior success
+bounded above $1/2$ in the limit. If $b>I(\alpha)$, likelihood testing of
+heterodyne data, or repetitions of one suitable coherent test, succeeds
+with probability tending to one. No conclusion at equality is asserted by
+this exponent statement alone.
+\end{theorem}
+\begin{proof}
+At $x=\alpha n<x_n$, Stirling gives
+$n^{-1}\log B(x)\to-\alpha+1+\log\alpha$, whereas
+$n^{-1}\log A(x_n)\to-1/e$. These statements extend to sequences of radii,
+including equality at $1/e$. The polynomial factors in
+\eqref{eq:rare-binary-sandwich} do not change the logarithmic limit.
+By \eqref{eq:rare-F-bounds}, the heterodyne integral is between one and four
+times the integral of $\min(A,B)$. Its integral is at most
+$(x_n+1)m_{n,R}$, or $R^2m_{n,R}$ if $R^2<x_n$.
+A fixed-width interval immediately below the maximizing point gives a
+lower estimate within a fixed factor when $R^2/n\to\alpha>0$; the
+logarithmic derivatives are bounded there. This proves its exponential limit.
+
+If $b<I(\alpha)$, the transcript Hellinger bound $B_nH_n$ tends to zero,
+also for adaptive binary choices by conditional affinity. Hence total
+variation tends to zero. If $b>I(\alpha)$, repeat a test with distance at
+least half the supremum. Its product affinity is at most
+$\exp(-B_nH_n/4)\to0$. The equal-prior likelihood error is at most half
+the affinity, since $\min(p,q)\le\sqrt{pq}$. The same proof applies to the
+fixed heterodyne experiment.
+\end{proof}
+
+The informative annulus is at squared radius $n/e$, not at the number-state
+density peak $n$. At full aperture the exact exponent $1/e$ improves the
+convenient lower-bound exponent $(\log2)/2$ without changing the previously
+proved minimax order.
+At the balancing point with aligned phase, $p_-=0$ and $p_+=4b_n$.
+The rule that reports plus on any click and minus otherwise has success
+\[
+ 1-\tfrac12(1-4b_n)^B\ \longrightarrow\ 1-\tfrac12e^{-4c}
+ \quad\hbox{if }Bb_n\to c.
+ \tag{C.15}\label{eq:rare-poisson}
+\]
+This is a specified protocol, not an assertion of adaptive optimality at
+the critical constant scale.
+
+\subsection{Sharp Chernoff information for fixed coherent tests}
+For classical distributions define
+$\xi(P,Q)=-\log\inf_{0<s<1}\int p^s q^{1-s}$ and
+$\mathcal A=\int\sqrt{pq}=1-h^2/2$.
+Cauchy--Schwarz and Holder's inequality give
+$\mathcal A^2\le\int p^s q^{1-s}\le1$ for all $s$.
+If the two laws are interchanged by an involution preserving their dominating
+measure, log-convexity and symmetry in $s$ imply
+$\xi=-\log\mathcal A$.
+The heterodyne pair has this symmetry under $z\mapsto e^{i\pi/n}\overline z$.
+Therefore at full aperture
+\[
+ \xi_{n}^{\rm het}\sim\tfrac12\mathcal C_*b_n,
+ \qquad
+ \sup_z\xi(P_{n,z}^+,P_{n,z}^-)\sim4b_n.
+ \tag{C.16}\label{eq:rare-chernoff}
+\]
+For the second statement the universal bound is
+$\xi\le-2\log(1-h^2/2)$ and
+\eqref{eq:rare-binary-sandwich} supplies the uniform upper equivalent.
+The aligned balancing test gives exactly $-\log(1-4b_n)$, proving the
+matching lower equivalent. Thus the ratio of the optimal fixed binary-test
+information to ordinary heterodyne information tends to $8/\mathcal C_*$.
+This comparison concerns one fixed test optimized for a known pair; it is
+not a minimax tomography constant or an adaptive Chernoff theorem.
+
+\subsection{The full critical heterodyne likelihood experiment}
+The Hellinger constant also arises from an entire limiting likelihood law,
+not just from a single overlap integral. Define, for $y\in\mathbb R$ and
+$\varphi\in[0,2\pi)$,
+\[
+ \lambda_\pm=1+e^{ey}\pm2e^{ey/2}\cos\varphi,
+ \qquad L=\log(\lambda_+/\lambda_-).
+\]
+Values on the isolated zero sets do not affect the integrals. For real $v$ put
+\[
+ \Psi(v)=\int_{\mathbb R}\int_0^{2\pi}e^{-y}
+ \{\lambda_-(e^{ivL}-1)-iv(\lambda_+-\lambda_-)\}
+                    \frac{d\varphi}{2\pi}\,dy.
+ \tag{C.17}\label{eq:rare-likelihood-exponent}
+\]
+This is an absolutely convergent compensated integral. Indeed for $r>0$,
+\[
+ |r^{iv}-1-iv(r-1)|\le C_v(\sqrt r-1)^2.
+\]
+The quotient is bounded near $r=1$ by Taylor expansion, near zero by a
+constant, and near infinity by its leading linear terms. Multiplying by
+$\lambda_-$ and using the angular overlap bounds gives an integrable
+majorant from the proof of the radial-profile theorem.
+
+Let $Z_n$ be the log likelihood ratio of all $B_n$ independent heterodyne
+outcomes under the minus hypothesis, and suppose $B_nb_n\to c\ge0$.
+Then
+\[
+ Z_n\ \Longrightarrow\ Z_c,\qquad
+ \mathbb E e^{ivZ_c}=e^{c\Psi(v)},\qquad
+ P_{\rm succ}^{\rm het}\longrightarrow
+     1-\tfrac12\mathbb E\min(1,e^{Z_c}).
+ \tag{C.18}\label{eq:rare-critical-experiment}
+\]
+To prove this, write the one-copy characteristic function minus one as
+$\int q_-[(q_+/q_-)^{iv}-1]$. Subtract
+$iv\int(q_+-q_-)=0$, then rescale $x=x_n+y$ exactly as in the radial
+calculation. Dominated convergence gives $b_n\Psi(v)+o(b_n)$. Taking the
+$B_n$th power proves characteristic-function convergence. Continuity at
+$v=0$ follows from the same bound with $C_v$ locally bounded, so the limit
+is a probability law. Its dependence on every $c\ge0$ makes the resulting
+convolution semigroup infinitely divisible. Finally, the equal-prior Bayes
+error is exactly $\tfrac12\mathbb E_-\min(1,e^{Z_n})$; this test function is
+bounded and continuous, which justifies the last limit without assuming
+uniform integrability of an unbounded likelihood ratio.
+
+For $R_n^2-x_n\to\ell$ the same formulas hold with the $y$ integral cut off
+at $\ell$. The outside flag has likelihood ratio one, and its probabilities
+are equal. The identity $\Psi(-i/2)=-\mathcal C_*/2$ follows directly from
+the convergent integral; it is not inferred by an unjustified complex
+extension of weak convergence. This statement closes the known-pair critical
+heterodyne experiment, not global tomography or the critical optimum of
+adaptive binary coherent protocols. The Poisson limit of the explicitly
+chosen binary protocol in \eqref{eq:rare-poisson} remains a separate result.
+
+\subsection{A finite separation at mean photon number one}
+Take $n=128$ and $E=\beta=1$:
+\[
+ |\psi^\pm\rangle=\sqrt{127/128}|0\rangle
+                \pm\frac1{\sqrt{128}}|128\rangle,
+ \quad D(\rho^+,\rho^-)=\frac{\sqrt{127}}{64}.
+ \tag{C.19}\label{eq:rare-128}
+\]
+The task is binary discrimination of two known hypotheses with equal prior,
+not full tomography. Their $B$-copy overlap is $(63/64)^B$.
+Diagonalizing the two-dimensional span of these pure vectors gives
+unrestricted optimal success
+\[
+ P_{\rm opt}(B)=\tfrac12\left(1+\sqrt{1-(63/64)^{2B}}\right).
+ \tag{C.20}\label{eq:rare-helstrom}
+\]
+The rational inequalities $(63/64)^{18}>3/4$ and
+$(63/64)^{20}<3/4$ show that precisely ten copies first suffice for success
+at least $3/4$. This does not assume an efficient implementation of the
+optimal joint measurement.
+
+For ordinary heterodyne, \eqref{eq:heterodyne-overlap} gives
+$h^2\le\sqrt{127}/(32\sqrt{\binom{128}{64}})$.
+Success at least $3/4$ requires total variation at least $1/2$, while
+product Hellinger gives $\mathrm{TV}\le\sqrt{Bh^2}$. Consequently
+\[
+ \boxed{ B\ge\frac{8\sqrt{\binom{128}{64}}}{\sqrt{127}}
+                         >3\cdot10^{18}. }
+ \tag{C.21}\label{eq:rare-heterodyne-copies}
+\]
+If only $|z|\le1$ and the outside flag are recorded, the necessary bound is
+\[
+ \boxed{ B\ge8\,129!>3\cdot10^{218}. }
+ \tag{C.22}\label{eq:rare-unit-copies}
+\]
+Both comparisons are verified with integers. All copies, including outside
+flags, are counted. They are necessary finite-copy bounds, not exact finite
+heterodyne optima. State-preparation cost is not included. No such lower
+bound is asserted for homodyne or general Gaussian processing.
+
+\subsection{Verification and scope}
+Integer interval arithmetic encloses \eqref{eq:rare-constant}; independent
+C++ arithmetic reproduces a contained interval using direct central-binomial
+coefficients instead of the Python recurrence. Elliptic and radial
+quadrature are separate high-precision diagnostics. Exact integer tests
+also check the finite-copy bounds and the nine-versus-ten-copy threshold.
+They do not replace the dominated-convergence or testing proofs.
+
+The single-mode even/odd thermal-state hiding construction of Lami concerns
+orthogonal mixed states and a stronger class of Gaussian operations
+\cite{Lami2021}. The family and limiting regime here differ. Proposed
+contributions are the fixed-moment rare-phase profile, exact aperture
+exponent, sharp fixed-test information comparison and explicit finite
+separation. External priority and independent referee acceptance remain
+unestablished.
+
+\section{Input tomography after Gaussian noise: limits of collective measurements}
+\label{sec:gaussian-inverse}
+We now remove the restriction on the output measurements and instead fix a
+known noisy quantum channel. The task is reconstruction of its \emph{input}
+state from $B$ independently prepared copies of its output. Arbitrary joint
+POVMs on those outputs are allowed. The environment is inaccessible and no
+encoding or error-correcting intervention before the channel is included.
+Tomography of the output itself is a different problem.
+
+Let $\mathcal S_{s,\beta,E}$ be the moment class of
+Section~\ref{sec:coherent-aperture}. A fixed product of phase-insensitive
+Gaussian channels is specified, in the Weyl convention
+$D(z)=\exp(za^*-\overline z a)$ and
+$\chi_\rho(z)=\operatorname{Tr}(\rho D(z))$, by
+\[
+ \chi_{\Phi(\rho)}(z)
+ =\chi_\rho(\sqrt{\boldsymbol\kappa}\,z)
+             \exp\!\left(-\tfrac12\sum_{j=1}^s\nu_j|z_j|^2\right),
+ \quad \kappa_j>0,\quad \nu_j\ge|1-\kappa_j|.
+ \tag{D.1}\label{eq:gaussian-channel}
+\]
+The inequalities are the physical complete-positivity constraints in this
+normalization. Pure loss has $(\kappa,\nu)=(\eta,1-\eta)$, the quantum-limited
+amplifier has $(g,g-1)$, and additive noise has $(1,\nu)$.
+The Weyl/Kraus representations used below are standard and are given, for
+example, by Ivan, Sabapathy and Simon \cite{ISS2011}; they are not novelty
+claims of this project. Assume at least one $\nu_j>0$.
+
+\begin{theorem}[Sharp Gaussian-input minimax rate]\label{thm:gaussian-inverse}
+For fixed $s,\beta,E$ and a fixed channel \eqref{eq:gaussian-channel} with at
+least one noisy mode, the minimax expected input trace-distance risk over
+all collective output measurements satisfies
+\[
+ \boxed{c(\log B)^{-\beta/2}\le
+       \inf_{\text{output POVM},\widehat\rho}
+          \sup_{\rho\in\mathcal S_{s,\beta,E}}
+                   \mathbb E D(\widehat\rho,\rho)
+             \le C(\log B)^{-\beta/2}.}
+ \tag{D.2}\label{eq:gaussian-rate}
+\]
+The upper bound is attained by nonadaptive randomized product homodyne
+measurements and an explicit finite-matrix estimator. The lower bound
+already holds on pure inputs. For the deterministic inverse modulus one has
+\[
+ \sup_{\substack{\rho,\sigma\in\mathcal S_{s,\beta,E}\\
+                    D(\Phi\rho,\Phi\sigma)\le\delta}}
+                 D(\rho,\sigma)
+       \asymp (\log(1/\delta))^{-\beta/2}.
+ \tag{D.3}\label{eq:gaussian-modulus}
+\]
+Constants depend on the fixed channel and moment parameters; in particular
+no uniform claim as the noise tends to zero is made. Complete erasure of a
+mode, $\kappa_j=0$, is excluded and would prevent consistency for arbitrary
+inputs.
+\end{theorem}
+
+\subsection{Uniform decay of low Fock-block Weyl kernels}
+Let $P_K$ project onto total occupation at most $K\ge1$ and
+$d_K=\binom{K+s}{s}$. For a single mode, normal ordering gives the polynomial
+representation of $\langle j|D(z)|k\rangle$. Its absolute value is at most
+\[
+ e^{-x/2}\frac{x^{(j+k)/2}}{\sqrt{j!k!}}
+       \sum_{\ell\ge0}\frac{(jk/x)^\ell}{\ell!}
+ \le e^{-x/2+K^2/x}\frac{x^K}{K!},\qquad
+ x=|z|^2\ge K,\quad j,k\le K.
+ \tag{D.4}\label{eq:weyl-low-kernel}
+\]
+Indeed the polynomial coefficient relative to its leading term is
+$(j)_\ell(k)_\ell/\ell!\le(jk)^\ell/\ell!$. Also $x^m/m!$ is increasing
+for $m\le K\le x$, which proves the second bound.
+For $x\ge16K$, the last expression is at most $e^{-x/4}$.
+To verify this, use $K!\ge(K/e)^K$ and set $y=x/K\ge16$; the needed
+inequality is $1/y+1+\log y\le y/4$. Its difference is increasing on this
+range and positive at $16$.
+
+In $s$ modes, at least one component has $|z_j|^2\ge\|z\|^2/s$; all other
+displacement matrix elements have modulus at most one. Consequently, for
+$|\mu|,|\nu|\le K$ and $\|z\|^2\ge16sK$,
+\[
+ |\langle\mu|D(-z)|\nu\rangle|\le e^{-\|z\|^2/(4s)}.
+ \tag{D.5}\label{eq:weyl-tail}
+\]
+With $L=32sK$, the corresponding tail integral is bounded by
+\[
+ \tau_{s,K}=\pi^{-s}\int_{\|z\|^2>L}e^{-\|z\|^2/(4s)}\,d^{2s}z
+ =(4s)^s e^{-8K}\sum_{j=0}^{s-1}\frac{(8K)^j}{j!}.
+ \tag{D.6}\label{eq:weyl-tail-integral}
+\]
+This bound is independent of the unknown state and controls the inversion
+kernel, not a falsely assumed cutoff of the input characteristic function.
+
+\subsection{A constructive noisy-input inverse}
+Weyl inversion gives, for every trace-class state,
+\[
+ \rho_{\mu\nu}=\pi^{-s}\int_{\mathbb C^s}
+       \chi_\rho(z)\langle\mu|D(-z)|\nu\rangle\,d^{2s}z.
+ \tag{D.7}\label{eq:weyl-inverse}
+\]
+One may verify the formula first on matrix units by Gaussian monomial
+integration, using normal ordering, and then pass to trace-class states:
+finite-rank approximants converge uniformly in characteristic functions
+since $|\operatorname{Tr}((\rho-\rho_m)D(z))|\le\|\rho-\rho_m\|_1$,
+and the fixed low kernel is absolutely integrable. Thus the use of
+\eqref{eq:weyl-inverse} requires no hidden regularity of the state.
+
+Set
+\[
+ a=\max_j\frac{\nu_j}{2\kappa_j},\qquad V=L^s/s!,\qquad A_K=Ve^{aL}.
+\]
+On the ball $\|z\|^2\le L$, recover
+$\chi_\rho(z)=\exp(\sum_j\nu_j|z_j|^2/(2\kappa_j))
+\chi_{\Phi\rho}(z/\sqrt{\boldsymbol\kappa})$.
+If $D(\Phi\rho,\Phi\sigma)\le\delta$, their input low-block entries differ
+by at most $2\delta A_K+2\tau_{s,K}$. The projection bias and trace-norm
+block estimate from Lemma~\ref{lem:aperture-state} therefore give
+\[
+ D(\rho,\sigma)\le2\sqrt{E/(K+1)^\beta}
+           +d_K^{3/2}(\delta A_K+\tau_{s,K}).
+ \tag{D.8}\label{eq:gaussian-stability-upper}
+\]
+Choosing $K=\lfloor c\log(1/\delta)\rfloor$ with $c>0$ small enough
+proves the upper half of \eqref{eq:gaussian-modulus}.
+
+For statistical reconstruction draw each $z$ uniformly in that ball and put
+$w_j=z_j/\sqrt{\kappa_j}$. Measure on the $j$th output mode the quadrature
+$X_{\theta_j}=q_j\cos\theta_j+p_j\sin\theta_j$ with
+$\theta_j=\arg w_j-\pi/2$. If its outcome is $x_j$, then
+\[
+ Y=\exp\!\left(i\sqrt2\sum_j|w_j|x_j\right),
+ \quad |Y|=1,\quad \mathbb E(Y\mid z)=\chi_{\Phi\rho}(w).
+\]
+At $w_j=0$ the angle can be chosen arbitrarily. Use the estimator
+\[
+ M_{\mu\nu}=\frac V B\sum_{b=1}^B
+ e^{\sum_j\nu_j|z_{b,j}|^2/(2\kappa_j)}Y_b
+                   \langle\mu|D(-z_b)|\nu\rangle.
+ \tag{D.9}\label{eq:gaussian-homodyne-estimator}
+\]
+Its expectation is the truncated integral, and each summand has modulus at
+most $A_K$. Hoeffding bounds for the real and imaginary parts and a union
+bound over $d_K^2$ entries imply, with probability at least $1-B^{-2}$,
+\[
+ \max_{\mu,\nu}|M_{\mu\nu}-\rho_{\mu\nu}|
+ \le4A_K\sqrt{\frac{\log(4d_K^2B^2)}B}+\tau_{s,K}.
+ \tag{D.10}\label{eq:gaussian-statistical-error}
+\]
+Symmetrize, take the positive part, and normalize as in
+Lemma~\ref{lem:aperture-state}. The resulting state has trace-distance
+error bounded by the cutoff bias plus $2d_K^{3/2}$ times the entrywise
+error. Choose $K=\lfloor c\log B\rfloor$ with $32sac<1/4$.
+The stochastic and tail terms then decay faster than $K^{-\beta/2}$.
+On the complement of the concentration event the loss is at most one.
+This proves the expected upper bound in \eqref{eq:gaussian-rate}.
+
+If all noises vanish, physicality forces $\kappa_j=1$. The same construction
+with $a=0$ and $K=O(\varepsilon^{-2/\beta})$ has polynomial copy cost,
+for example $O(K^{5s}\varepsilon^{-2}\log K)$ at fixed success probability.
+We do not claim that this noiseless upper bound is optimal.
+
+\subsection{A lower bound against every collective output measurement}
+First consider pure loss with $0<\eta<1$. Use the input pair of
+\eqref{eq:rare-balance}, in one mode, with $u=E/n^\beta$.
+The output is a common diagonal binomial mixture plus opposite coherences
+between levels $0$ and $n$. On their active two-dimensional subspace write
+\[
+ a_0=1-u+u(1-\eta)^n,\quad b_0=u\eta^n,\quad
+ c_0=\sqrt{u(1-u)}\eta^{n/2},\quad s_0=a_0+b_0.
+\]
+The blocks are $\left(\begin{smallmatrix}a_0&\pm c_0\\\pm c_0&b_0\end{smallmatrix}\right)$,
+with identical orthogonal remainder. Their root fidelity is exactly
+\[
+ F=1-s_0+\sqrt{s_0^2-4c_0^2},\qquad
+ 1-F\le4u\eta^n,
+ \quad D(\Phi\rho_+,\Phi\rho_-)=2\sqrt{u(1-u)}\eta^{n/2}.
+ \tag{D.11}\label{eq:loss-fidelity}
+\]
+For the fidelity formula, use
+$F(X,Y)^2=\operatorname{Tr}(XY)+2\sqrt{\det X\det Y}$ for positive
+$2$-by-$2$ blocks. Rationalizing the square root and using $s_0\ge1-u$
+gives the displayed inequality.
+Fidelity is multiplicative on tensor products and
+$D\le\sqrt{1-F^2}$; these facts also follow by purifying the states and
+using the pure-state trace-distance formula. Hence for $B$ copies,
+\[
+ D((\Phi\rho_+)^{\otimes B},(\Phi\rho_-)^{\otimes B})
+                   \le\sqrt{8Bu\eta^n}.
+ \tag{D.12}\label{eq:loss-collective}
+\]
+Choosing $n=\lceil C\log B\rceil$ with $C$ large makes this at most $1/2$.
+The two-point testing argument gives expected input loss at least
+$\tfrac18D(\rho_+,\rho_-)\ge c(\log B)^{-\beta/2}$ for every joint POVM.
+Choosing $n=O(\log(1/\delta))$ in the one-copy trace-distance formula proves
+the lower deterministic modulus.
+
+For a quantum-limited amplifier of gain $g>1$, put $q=1-1/g$.
+Its isometry is
+\[
+ |n\rangle\mapsto\sum_{\ell\ge0}
+   g^{-(n+1)/2}q^{\ell/2}\sqrt{\binom{n+\ell}{\ell}}
+                    |n+\ell\rangle|\ell\rangle.
+\]
+Thus the image $T_n$ of $|0\rangle\langle n|$ has trace norm
+\[
+ \|T_n\|_1=g^{-n/2-1}\sum_{\ell\ge0}q^\ell
+                               \sqrt{\binom{n+\ell}{\ell}}.
+\]
+Choose $v=q(1+q)/2$, so $q^2<v<q$. Cauchy--Schwarz and
+$\sum_\ell\binom{n+\ell}{\ell}v^\ell=(1-v)^{-n-1}$ give
+\[
+ \|T_n\|_1\le C_g\theta_g^n,\qquad
+ \theta_g=[g(1-v)]^{-1/2}<1,
+ \quad C_g=g^{-1}(1-v)^{-1/2}(1-q^2/v)^{-1/2}.
+ \tag{D.13}\label{eq:amplifier-cross}
+\]
+The input pair therefore has output trace distance at most
+$2\sqrt{u(1-u)}C_g\theta_g^n$. Tensor telescoping bounds the $B$-copy
+distance by $B$ times this quantity. Taking $n=O(\log B)$ proves the same
+collective lower rate. The one-copy bound proves its deterministic analogue.
+
+A channel with $\kappa<1$ is pure loss followed by additive Gaussian noise;
+with $\kappa>1$ it is a quantum-limited amplifier followed by additive noise.
+The extra noise has parameter $\nu-|1-\kappa|\ge0$.
+For $\kappa=1,\nu>0$, put $g=1+\nu/2$: loss of transmissivity $1/g$
+followed by gain $g$ has the required characteristic function.
+Thus every noisy mode factors through one of the hard channels above, and
+contractivity preserves the lower bounds. Place the pair in that mode and
+vacuum in the others; tensoring common outputs changes neither trace
+distance nor fidelity. This completes Theorem~\ref{thm:gaussian-inverse}.
+
+\subsection{Exact critical law for collective discrimination after loss}
+The pure-loss bound can be sharpened to the limiting optimal testing curve.
+Let $u=E/n^\beta$, fix $0<\eta<1$, and keep $a_0,b_0,c_0,s_0$ as above.
+Set
+\[
+ d_0=a_0b_0-c_0^2=u^2[\eta(1-\eta)]^n,\quad
+ r_0=\sqrt{(a_0-b_0)^2+4c_0^2},\quad
+ \ell_0=(s_0-r_0)/2\le2d_0/s_0.
+\]
+Replace each active block by $s_0|\phi_\pm\rangle\langle\phi_\pm|$, where
+$\phi_\pm$ is its dominant eigenvector, and leave the common orthogonal
+remainder unchanged. Call the resulting states $\tau_\pm$ and the true
+outputs $\sigma_\pm$. Then $D(\sigma_\pm,\tau_\pm)=\ell_0$ and
+\[
+ \gamma:=|\langle\phi_+|\phi_-\rangle|^2
+                  =\frac{(a_0-b_0)^2}{r_0^2}.
+\]
+The block labels in $B$ copies are orthogonal and have the same law under
+both hypotheses. Conditional on $M\sim\operatorname{Bin}(B,s_0)$ active
+copies, the pure-state trace distance is $\sqrt{1-\gamma^M}$. Therefore
+\[
+ \left|D(\sigma_+^{\otimes B},\sigma_-^{\otimes B})
+       -\mathbb E\sqrt{1-\gamma^M}\right|
+                  \le2B\ell_0\le4Bd_0/s_0.
+ \tag{D.14}\label{eq:loss-finite-reduction}
+\]
+This is an explicit finite bound, not an asymptotic substitution.
+
+If $Bu\eta^n\to c\in(0,\infty)$, its remainder tends to zero,
+$-Bs_0\log\gamma\to4c$, and
+$\operatorname{Var}(M\log\gamma)\to0$.
+Indeed $1-\gamma=4c_0^2/r_0^2\sim4u\eta^n$ and $s_0\to1$;
+the variance is at most $B(1-s_0)(\log\gamma)^2=o(1)$.
+Bounded convergence in probability in \eqref{eq:loss-finite-reduction} yields
+\[
+ \boxed{P_{\rm succ}^{\rm collective}\longrightarrow
+                   \frac{1+\sqrt{1-e^{-4c}}}{2}.}
+ \tag{D.15}\label{eq:loss-critical-law}
+\]
+The same limit at $c=0$ follows from \eqref{eq:loss-collective}; for diverging
+$c$, the exact formula also gives $1-F\ge2c_0^2/s_0$, so product fidelity tends to zero
+and success tends to one by $D\ge1-F$.
+In particular, for fixed $p\in(1/2,1)$ the optimal known-pair copy threshold
+has the sharp equivalent
+\[
+ B_p\sim\frac{-\log(4p(1-p))}{4u\eta^n}.
+ \tag{D.16}\label{eq:loss-threshold}
+\]
+Monotonicity in $B$ and the strictly increasing continuous limiting curve
+justify the inversion. This is not a sharp leading constant for global
+minimax tomography over all states.
+
+\subsection{A finite half-loss separation with certified upper and lower bounds}
+For \eqref{eq:rare-128}, before noise precisely ten copies attain optimal
+success $3/4$. After $\eta=1/2$, write $h=2^{-128}$ and
+\[
+ u=1/128,\quad a_0=1-u+uh,\quad b_0=uh,\quad c_0^2=u(1-u)h.
+\]
+All quantities needed for the following certificate are rational.
+The optimal output copy threshold obeys
+\[
+ \boxed{3\cdot10^{39}<B_{3/4}\le4\cdot10^{39}.}
+ \tag{D.17}\label{eq:loss-128-finite}
+\]
+Here $B_{3/4}$ permits arbitrary joint POVMs on the outputs.
+
+For the lower bound let $B_-=3\cdot10^{39}$ and
+\[
+ g_*:=\frac{4c_0^2}{2s_0-4c_0^2/s_0}.
+\]
+The inequality $\sqrt{1-x}\ge1-x$ implies $1-F\le g_*$.
+The exact rational check
+$2B_-g_* /(1-g_*)<5/18<\log(4/3)$, where the second inequality follows by
+integrating or truncating the alternating logarithm series, gives
+$F^{2B_-}>3/4$. Thus output trace distance is less than $1/2$ and success is
+less than $3/4$.
+
+For the upper bound let $B_+=4\cdot10^{39}$,
+$m_0=\lfloor9B_+s_0/10\rfloor$ and $v_0=4c_0^2/r_0^2=1-\gamma$.
+The following are exact rational inequalities:
+\[
+ m_0v_0>8/25,\qquad
+ \frac{B_+s_0(1-s_0)}{(B_+s_0-m_0)^2}<10^{-3},\qquad
+ \frac{4B_+d_0}{s_0}<10^{-3}.
+\]
+Chebyshev's inequality makes $M\ge m_0$ have probability at least $0.999$.
+Also $\gamma^{m_0}\le e^{-m_0v_0}<e^{-8/25}<7399/10000$; the last bound
+follows from
+$1+(8/25)+(8/25)^2/2+(8/25)^3/6>10000/7399$.
+Hence $\sqrt{1-\gamma^{m_0}}>0.51$. Equation~\eqref{eq:loss-finite-reduction}
+gives distance greater than $0.999\cdot0.51-0.001>1/2$, proving the upper
+copy threshold. Python rational arithmetic and independent C++ rational
+arithmetic verify all six certificate inequalities. This includes neither
+state-preparation cost nor an efficient implementation of the optimal POVM.
+
+\subsection{What has and has not been established}
+At fixed nonzero Gaussian noise, \eqref{eq:gaussian-rate} is equivalent to
+copy cost $\exp(\Theta(\varepsilon^{-2/\beta}))$ at fixed mode and moment
+parameters. The lower bound now concerns quantum information lost to an
+inaccessible environment, not merely a restriction to heterodyne detection.
+Randomized homodyne achieves the upper order; collective measurements cannot
+improve it. The sharp full-minimax transition as noise vanishes, efficient implementation
+constants, and joint large-mode asymptotics are not proved.
+
+Noisy homodyne deconvolution and minimax Wigner-function estimation are
+established subjects \cite{BGA2007,LMP2015}. Their analytic/Sobolev classes
+and Wigner-function losses must not be identified with the sole photon-moment
+constraint and input trace distance here. General continuous-variable
+state-learning under moment conditions is also prior work \cite{Mele2025}.
+The proposed claim is the matching collective-output inverse rate on the
+stated class, with the explicit pure-loss critical law and finite certificate.
+External priority and independent referee acceptance remain unestablished.
+
+\section{Uniform two-state discrimination through pure loss}
+\label{sec:pure-loss-discrimination}
+The aperture and heterodyne minimax theorems above concern measurement
+restrictions. A separate question is how a known bosonic loss channel changes
+the intrinsic distinguishability of the hard two-level pair used in those
+lower bounds. The following result gives a joint small-signal/loss limit in
+which the transmissivity may vary with the photon number and copy budget.
+It is a binary discrimination theorem, not a full-tomography minimax theorem.
+
+Let
+\[
+ |\psi_n^\pm\rangle=\sqrt{1-u}|0\rangle\pm\sqrt u|n\rangle,
+ \qquad n\ge1,\quad 0<u\le\frac1{16},
+\]
+and let the one-mode pure-loss channel of transmissivity
+$0<\eta\le1$ produce states $\sigma_\pm$. For $B\ge1$ copies put
+$t=Bu\eta^n$.
+
+\begin{theorem}[Uniform pure-loss discrimination law]
+\label{thm:pure-loss-uniform}
+For every admissible $u,\eta,n,B$,
+\[
+\boxed{\left|
+D(\sigma_+^{\otimes B},\sigma_-^{\otimes B})-
+\sqrt{1-e^{-4t}}\right|
+\le 5ut+\sqrt{u(43t+8\sqrt t)}.}
+\tag{PL.1}\label{eq:pure-loss-bound}
+\]
+Here $D(\rho,\tau)=\tfrac12\|\rho-\tau\|_1$.
+\end{theorem}
+
+\begin{proof}
+All loss events except the zero- and $n$-photon components are diagonal and
+identical under the two hypotheses. On
+$\operatorname{span}\{|0\rangle,|n\rangle\}$ the subnormalized blocks are
+\[
+ M_\pm=\begin{pmatrix}a&\pm c\\ \pm c&b\end{pmatrix},
+ \quad a=1-u+u(1-\eta)^n,\quad b=u\eta^n,
+ \quad c^2=u(1-u)\eta^n.
+\]
+Put $q=u\eta^n$, $s=a+b$,
+\[
+ r=\sqrt{(a-b)^2+4c^2},\qquad d=ab-c^2.
+\]
+Direct algebra gives
+\[
+ d=u^2[\eta(1-\eta)]^n,\qquad 1-u\le s\le1,
+ \qquad r^2\ge(1-2u)^2.
+\]
+Let $\ell=(s-r)/2$ be the smaller block eigenvalue. Replace each block by
+$s$ times its top normalized eigenvector, leaving the common orthogonal
+remainder unchanged. The trace distance from one original state to its
+replacement is exactly $\ell$. Tensor-product telescoping and the triangle
+inequality therefore change the binary $B$-copy trace distance by at most
+$2B\ell$. Since
+\[
+ \ell=\frac{2d}{s+r}\le\frac{2d}{s},
+\]
+we obtain
+\[
+ 2B\ell\le\frac{4Bu^2\eta^n}{1-u}<5ut. \tag{PL.2}
+\]
+
+The squared overlap of the two top eigenvectors is
+\[
+ \gamma=\frac{(a-b)^2}{r^2}.
+\]
+In the replacement model the number $M$ of tensor factors in the
+non-common block has law $\operatorname{Bin}(B,s)$. Orthogonality of the
+block labels gives exactly
+\[
+ D_{\rm repl}=\mathbb E\sqrt{1-\gamma^M}. \tag{PL.3}
+\]
+Set $\delta=1-\gamma$ and $L=-\log\gamma$. With
+$z=(1-\eta)^n$, $e=\eta^n$ and $h=1-z-e\in[0,1]$,
+\[
+ r^2=1-2uh+u^2(1-z+e)^2.
+\]
+Using $u\le1/16$ gives
+\[
+ \delta=\frac{4q(1-u)}{r^2},\qquad
+ \delta\le5q,\qquad |\delta-4q|\le16uq. \tag{PL.4}
+\]
+Because $\delta\le5/16$ and
+$0\le-\log(1-\delta)-\delta\le\delta^2/[2(1-\delta)]$,
+\[
+ |L-4q|\le35uq,\qquad L\le8q. \tag{PL.5}
+\]
+Moreover $1-s=uh\le u$, hence
+\[
+ |BsL-4t|\le39ut\le43ut. \tag{PL.6}
+\]
+The binomial fluctuation satisfies
+\[
+ \mathbb E|ML-BsL|\le L\sqrt{Bs(1-s)}\le8u\sqrt t. \tag{PL.7}
+\]
+Finally, for $x,y\ge0$,
+$|\sqrt{1-e^{-x}}-\sqrt{1-e^{-y}}|\le\sqrt{|x-y|}$.
+Apply this to $x=ML$, $y=4t$, use Jensen's inequality, and combine the
+resulting bound with (PL.2)--(PL.7). This proves \eqref{eq:pure-loss-bound}.
+\end{proof}
+
+\begin{corollary}[Joint weak-loss/small-signal transition]
+\label{cor:pure-loss-transition}
+If $u_j\to0$ and $B_ju_j\eta_j^{n_j}\to c\in[0,\infty)$, then
+\[
+ P_{\rm succ}^{\rm opt}\longrightarrow
+ \frac{1+\sqrt{1-e^{-4c}}}{2}.
+\]
+For any fixed $p\in(1/2,1)$, the least copy budget attaining asymptotic
+success $p$ satisfies
+\[
+ B_p\sim\frac{-\log(4p(1-p))}{4u\eta^n},
+ \qquad \frac{B_p(\eta)}{B_p(1)}\sim\eta^{-n}. \tag{PL.8}
+\]
+If $\eta_n\to1$, the loss penalty tends respectively to $1$, $e^\gamma$,
+or infinity when $n(1-\eta_n)$ tends to $0$, to
+$\gamma\in(0,\infty)$, or to infinity.
+\end{corollary}
+
+For the moment-constrained pair $u=E/n^\beta$ this becomes
+\[
+ B_p\sim\frac{-\log(4p(1-p))}{4E}\,n^\beta\eta_n^{-n}. \tag{PL.9}
+\]
+The theorem resolves the joint loss limit for this explicit hard pair. It
+does not identify the minimax law of unrestricted state tomography under a
+loss channel, and it has no implication for microscopic BGS/GOE/COE spectral
+statistics.

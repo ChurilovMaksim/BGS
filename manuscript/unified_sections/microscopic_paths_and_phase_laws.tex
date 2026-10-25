@@ -1,0 +1,1607 @@
+\section{Maximal microscopic paths and compatible circular phase laws}
+\label{sec:chat-research-20261011}
+This checkpoint records the checked 8--11 October continuation. Complete
+proofs and exact boundaries are in the mathematical corpus and the
+11 October integration record. Internal review and finite
+controls do not establish external priority or deterministic BGS universality.
+
+\subsection{A deterministic maximal path bound (TRACE-072)}
+Let $U_N$ be unitary, $B_N=B_N^*$, $\operatorname{Tr}B_N=0$ and
+$\|B_N\|_{\rm op}\le C$. Put $U_N(x)=U_Ne^{ixB_N/N}$ and
+\[
+ A_{N,T}=T^{-1}\sum_{k=0}^{T-1}U_N^{-k}B_NU_N^k,
+ \qquad v_{N,T}=\|A_{N,T}\|_F/\sqrt N.
+\]
+For the periodically unfolded point process with one shared uniform circle
+origin, use the bounded vague-topology Laplace metric $d_L$ specified in
+\texttt{deterministic\_path\_transport\_20261011.md}. Then
+\[
+ \mathbb E_\phi\sup_{|x|\le R}
+ d_L(\Xi_N(x;\phi),\Xi_N(0;\phi))
+ \le \frac{R v_{N,T}}\pi+
+ \frac{C^2R^2(T-1)}{2\pi N}.
+\]
+At multiplicities, the eigenangle velocities are the eigenvalues of the
+compression of $B_N/N$. Full eigenspace pinching fixes the time average;
+unitary-power telescoping gives
+\[
+ \sum_j|\theta_j'(x)|\le v_{N,T}+C^2|x|(T-1)/N.
+\]
+Common-origin averaging of a periodized test derivative contributes
+$\|f'\|_1/(2\pi)$; integrating on $[-R,R]$ proves the bound. No level-spacing
+denominator or simple-spectrum assumption occurs.
+
+For a fixed smooth exactly centered observable of the maintained map,
+FM-018 and the polar-WKB trace pairing give
+$v_{N,T}=O((\log N)^{-1/2})$ for sufficiently small $T=c\log N$.
+Thus every $R_N=o(\sqrt{\log N})$ is permitted. The time-average endpoint
+transfer is already in the maintained ergodic-transfer supplement. The added
+conclusion is the maximal path and growing interval, not identification of
+the initial local spectral law.
+
+The estimate also survives the prior microscopic rounding construction.
+For the same observable and $\epsilon=\|V_N-U_N\|_{\rm op}$,
+power telescoping gives
+\[
+ |v_{N,T}(V_N,B_N)-v_{N,T}(U_N,B_N)|\le C(T-1)\epsilon.
+\]
+Thus $O(N^{-1})$ rounding preserves the logarithmic maximal-path conclusions
+for every fixed smooth observable. The prior construction can preserve its
+coarse controls and prescribed low-trace window while violating a fixed
+signed CUE pair target. These combined abstract controls still leave that
+target undetermined; the rounded operator changes the exact quantization.
+
+\subsection{Phase paths and physical sources (TRACE-057--060,071)}
+For $W_x=DS_me^{ixH_m/m}$, $\operatorname{Tr}H_m=m$ and
+$\operatorname{Tr}H_m^2\le C_Hm$, the averaged full pinching norm
+$\beta_{m,R}$ on traceless matrices gives the centered bound
+\[
+ \mathbb E_D\sup_{|x|\le R}d_L(\Xi_m(x),\Xi_m(0))
+ \le (R/\pi)\sqrt{(C_H-1)\beta_{m,R}}.
+\]
+Endpoint flatness $\delta_m\to0$ and a fixed intensity singular gap imply
+vanishing on intervals with
+$R_m^2\log\log(1/\delta_m)/\log(1/\delta_m)\to0$.
+Every fixed normally absorbed source product and derivative transfers by
+the all-order source bounds and interpolation. The physical anisotropic
+source theorem is only asserted in $L^2$.
+
+For a strict contraction $F$, $K=(D^*-F)^{-1}$ and arbitrary complex $B$,
+the exact covariance satisfies
+\[
+ \mathbb E|\operatorname{Tr}BK|^2
+ \le\min\{\operatorname{Tr}[B(I-F^*F)^{-1}B^*],
+          \operatorname{Tr}[B^*(I-FF^*)^{-1}B]\}.
+\]
+The preceding joint Schur delay barrier uses stopped scalar Freedman
+\cite{Tropp2011Chat} conditional on all-time entry flatness. Its killed
+second and third moments are upper bounds. The later equality-law extensions
+are stated separately below; their all-time flatness premise remains unproved.
+
+\subsection{Frozen circular backgrounds (TRACE-064,067--070)}
+For a nonzero balanced Laurent Jack signature, $\alpha>0$ and
+$K=\min(\lambda_1,-\lambda_N)\ge1$, the constant-coefficient ratio obeys
+\[
+ \frac{c_0}{P_\lambda(1^N)}\le
+ \left(1+\frac{\alpha E_\lambda}{2K}\right)^{-1}
+ \le\frac1{N+\alpha K}\le\frac1{N+\alpha}.
+\]
+The highest-root signature is the unique final equality mode. Spherical
+identification \cite{OO1997Chat,Matsumoto2007Chat} gives, for spectral
+$f\in L^2$ and $\beta=1,2,4$, $\alpha=2/\beta$,
+\[
+ \operatorname{Var}_Q\mathbb E_D f(DQ)
+ \le \operatorname{Var}_{\mathrm{circ},\beta}(f)/(N+\alpha).
+\]
+CSE uses $N$ paired phases and half traces. Circular local convergence
+\cite{VV2017Chat} then yields the full conditional weak Sine-$\beta$ law
+in probability over the once-sampled background $Q$. This is not a theorem
+for a prescribed deterministic scattering matrix. The all-degree one-sided
+Jack norm bound uses \cite{JM2015Chat} at its stated scope.
+
+The exact CUE variance, CSE second/fourth cumulants and limiting curves
+are prior formulas of \cite{HSW1999Chat}. The written all-order critical
+calculation proves $p_n/\sqrt{\mathbb E|p_n|^2}$ converges to a standard
+complex Gaussian whenever $n/N\to1$, $d=|n-N|=o(N)$ and
+$\log[N/(d+1)]\to\infty$, with compatible frozen-phase convergence.
+The complete CUE/CSE form-factor curves converge in mean $L^2(0,T)$ using
+$n=\lceil N\tau\rceil$. This does not assert a temporal supremum estimate;
+the logarithmic CSE critical peak is integrable in $L^2$.
+
+\subsection{Finite-field coherence and exact boundaries (TRACE-061--066)}
+The signed finite-field Fourier calculus gives a leading growing ramp for
+$n=o(N^{1/8})$ and the symmetric first correction on $n=o(N^{1/9})$.
+A proposed $N^{1/7}$ window is unconfirmed. Birthday-rank Poisson control
+uses \cite{AGG1989Chat} with its TV convention converted explicitly.
+Flat clock completions can preserve intensity mixing and exact frame designs
+while changing clock--eigenbasis coupling. These are qualified obstructions
+in other constructed families, not counterexamples to the literal map.
+
+The complete balanced phase law, the scalar cavity microscopic law, signed
+Heisenberg TRACE-005 and deterministic BGS remain open. None of the preceding
+path comparisons evaluates the initial microscopic process.
+
+\subsection{All fixed killed clock moments and equality laws (TRACE-060)}
+Consider the fresh-phase Schur process with uniformly selected remaining
+coordinate, $T_N=Q_N=I$, and $\ell=\log(2N)$. Fix $K,\kappa>0$ and set
+$m=\lceil\ell^{1+\kappa}\rceil<N$. Write
+\[
+ \mathcal A_m=\{\max_{ij}|(S_u)_{ij}|^2\le K\ell/u
+                      \text{ for every }N\ge u\ge m\}.
+\]
+The independently reconstructed extension of TRACE-060 supplies joint
+incoming/outgoing first-delay concentration, with error
+$\epsilon=\ell^{-\kappa/16}$, in intersection probability at most
+$C_{K,\kappa}\ell^{-\kappa/16}$. Every fixed killed normalized moment
+\[
+ M_k(u)=\mathbf1_{\{\text{alive at }u\}}
+                 \frac{u^{k-1}\operatorname{Tr}T_u^k}{N^k}
+\]
+has a dimension-independent expected upper bound. Order $k$ is fixed;
+no growing-order bound or unrestricted exceptional-event moment estimate
+is claimed.
+
+The rank-two trace expansion and positive spectral-moment interpolation
+close the killed upper recurrence. Convex raw trace powers give a frozen
+submartingale, including the complete crossing state. The near-flatness
+cutoff follows from its scale-dependent cap and a dyadic scalar maximal
+Freedman argument. All-time flatness probability is a separate obligation.
+
+For the original un-killed $Y_k(u)=u^{k-1}\operatorname{Tr}T_u^k/N^k$,
+a separately reconstructed extension proves
+\[
+ \Pr\!\left(\mathcal A_m\cap
+ \left\{\max_{N\ge u\ge m,\ k=2,3}|Y_k(u)-f_k(u/N)|
+                    >C_{K,\kappa}\ell^{-\kappa/32}\right\}\right)
+ \le C_{K,\kappa}\ell^{-\kappa/16},
+\]
+where $f_2(x)=2-x$ and $f_3(x)=6-6x+x^2$. Squared cyclic words give
+\[
+ \mathbb E[(\Delta Y_k)^2\mid\mathcal F_u]
+           \le C_k(1+Y_{2k-1}(u))/u^2.
+\]
+The already bounded killed moments therefore control the expected stopped
+bracket by $C_k/m$. Scalar Doob concentration and the exact contractive
+second/third drifts yield the uniform comparison. The normalized crossing
+value is frozen without subsequent renormalization. If
+$\Pr(\mathcal A_m^c)\to0$ is separately proved, this also gives convergence
+in probability and convergence of \emph{killed} second/third expectations.
+The subsequent fourth-order and repaired all-fixed-order extensions below
+are independently reconstructed under the same flatness premise.
+
+\subsection{Diagonal squares and the fourth delay law (TRACE-060)}
+Under the same $\mathcal A_m$ premise, a separate reconstruction proves
+uniform incoming/outgoing diagonal-square concentration about $f_2(u/N)$
+and the fourth normalized trace law
+\[
+ Y_4(u)=f_4(u/N)+o(1),\qquad
+ f_4(x)=22-32x+12x^2-x^3,
+\]
+where the probability of a uniform failure, intersected with $\mathcal A_m$,
+tends to zero. The proof neither bounds $\Pr(\mathcal A_m^c)$ nor controls
+unrestricted moments on its complement.
+
+The exact mixed clock $\Gamma=ST$ satisfies, on surviving labels,
+\[
+ \Gamma'_{jk}=\Gamma_{jk}
+ +q(S_{je}\Gamma_{ek}+S_{ek}\Gamma_{je})
+ +q^2 S_{je}S_{ek}\Gamma_{ee}.
+\]
+Both phase monomials have zero mean, including at nonzero $a=S_{ee}$.
+A live-pair scalar martingale estimate controls the coherent term in the
+diagonal-square variance. Its deterministic envelope violation is explicitly
+included in the joint stop; no future good event is used for conditioning.
+For a retained $j$, write $d=1-|a|^2$, $t=T_{ee}$, $\gamma=\Gamma_{ee}$.
+The exact phase average is
+\[
+ \mathbb E_w(T'^2)_{jj}=(T^2)_{jj}
+ +\frac{|S_{ej}|^2(T^2)_{ee}
+         +2t\Re(\overline{S_{ej}}\Gamma_{ej})}{d}
+ +\frac{2|S_{ej}|^2t\Re(\bar a\gamma)}{d^2}.
+\]
+The reference value freezes when its label is removed. Its conditional
+increment is $(u-1)/(uN)$; the ideal residual is $-2/u^2+2/u^3$.
+
+For $t_r=(T^r)_{ee}$, $s_r=(Q^r)_{ee}$, $s=s_1$ and
+$\beta=(ST^2)_{ee}$, the full nonzero-$a$ fourth identity is
+\begin{align*}
+ \mathbb E_w\operatorname{Tr}T'^4={}&\operatorname{Tr}T^4
+ +\frac4d(ts_3+t_2s_2+st_3)\\
+ &+\frac8{d^2}\Re\!\left[\bar a\{
+       \gamma(st_2+ts_2)+ts\beta\}\right]\\
+ &+\frac{1+|a|^2}{d^3}(2t^2s^2+4ts|\gamma|^2)
+ +\frac{8ts}{d^3}\Re(\bar a^2\gamma^2).
+\end{align*}
+The diagonal-square laws and vanishing mixed clock identify its normalized
+forcing as $8f_3+4f_2^2+2$. This gives
+$-xf_4'=-3f_4+8f_3+4f_2^2+2$, with $f_4(1)=1$.
+The expected stopped trace bracket is bounded using the killed seventh
+moment, and complete crossing values are retained. If separately
+$\Pr(\mathcal A_m^c)\to0$, actual probability convergence and convergence
+of killed fourth expectations follow. The known proper-delay value 22 is
+credited to Cunden, Mezzadri, Simm and Vivo \cite{CMSV2016Clock}; finite rational and
+Wolfram executions do not certify the asymptotic theorem. The proof source
+is \texttt{mathematics/fourth\_delay\_law\_20261011.md}.
+
+\subsection{Repaired all-fixed-order clock law and the rank atom (TRACE-060)}
+Put $H_u=uT_u/N$, $V_u=uQ_u/N$ and $\Gamma_{r,u}=S_uH_u^r$.
+For every fixed $L$, the probability, intersected with $\mathcal A_m$, of
+any uniform failure of the following entry limits tends to zero:
+\begin{gather*}
+ (H_u^r)_{jj},(V_u^r)_{jj}=f_r(u/N)+o(1),\\
+ (H_u^r)_{jk},(V_u^r)_{jk}=o(1)\quad(j\ne k),\\
+ (\Gamma_{r,u})_{jk}=o(1),\quad r\le L,\ u\ge m.
+\end{gather*}
+The references solve the triangular equation, with $\tau=-\log x$,
+\[
+ \partial_\tau f_k=-(k-1)f_k+\mathcal P_k,
+ \quad \mathcal P_k=k[z^k]\{-\log(1-M^2)\},\quad
+ M=\sum_{r\ge1}f_rz^r,\quad f_k(1)=1.
+\]
+This is a fixed-order conditional theorem, with no probability bound for
+$\mathcal A_m^c$. The original general-word proof required two substantive
+repairs before this promotion.
+
+With $v=S^*e$ and $\alpha_k=(1-1/u)^k$, exact open words come from
+\[
+ H'^k=\alpha_kK^*H(R_wH)^{k-1}K,\qquad
+ \Gamma'_k=\alpha_kJ^*SH(R_wH)^{k-1}K,\qquad
+ R_w=I+qev^*+\bar qve^*.
+\]
+Their interior gaps are positive integers summing to $k$. Alternating
+orientations supply diagonal clock factors; identical adjacent orientations
+supply a lower mixed factor. For the sum of both orientations of an even alternating word with $2q$
+interior insertions and no boundary insertion, excluding a retained endpoint
+has a leading diagonal contribution. After replacement of lower moments,
+the drift coefficient, with the common factor $\alpha_k/u$ outside, is
+\[
+ \left(\prod_{i=1}^{2q-1}f_{n_i}\right)
+ \left(2f_{n_0+n_{2q}}-f_{n_0}f_{n_{2q}}\right).
+\]
+The alternating two-boundary term compensates the negative product.
+This is compensation in the ideal drift polynomial, not a pathwise word
+identity. If $C_{2q}(k)$ denotes the positive $2q$-gap product sum,
+merged endpoint gaps contribute $2(k-2q)C_{2q}(k)/(2q)$ and the two
+one-boundary orientations contribute $2C_{2q}(k)$. Their total is
+$(k/q)C_{2q}(k)$, including the empty merged sum at $k=2q$.
+The surviving lower-matrix polynomial uses only powers at most $k-1$.
+The sole unknown top diagonal has coefficient
+$\alpha_k\overline{S_{ei}}S_{ej}/[u(1-|S_{ee}|^2)]$;
+its absolute transport row sum is at most $(1+O(\delta_u))/u$.
+The prospective mixed top transport has phase $q^2$ and exact zero mean.
+The own scaling thus gives absolute live-row contraction at least
+$(k-1)/(2u)$ for the input/output errors. Complex transport is controlled
+by absolute sums, without a positivity assumption.
+
+The second repair separates interior words with both boundary insertions.
+They need not contain a small lower clock endpoint. Their scattering
+endpoint products instead satisfy, for example,
+\[
+ \frac1u\sum_e|S_{ei}S_{ej}|^2\le\frac{\delta_u}{u},\qquad
+ \frac1u\sum_e|S_{ie}S_{ej}|^2\le\frac{\delta_u}{u}.
+\]
+Stopped top diagonals bound their internal scalar factors. The zero-interior
+two-boundary top term and its outgoing/mixed analogues obey the same raw
+second-moment estimate by the top-diagonal cap and $|q|\le2$. Other interior
+words use a lower-entry envelope. With $R_p=1+(uB_u)^{1/p}$, the resulting
+predictable bounds for each real component are
+\begin{align*}
+ \operatorname{Var}(\Delta)&\le C_{k,p}
+ \left[\frac{\ell R_p^{2k}}{u^2}
+       +\frac{E_{k-1}^2R_p^{2k}}u+\frac1{u^2}\right],\\
+ |\Delta|&\le C_{k,p}(\sqrt{\delta_u}+E_{k-1})R_p^k+C_{k,p}/u.
+\end{align*}
+The lower drift error is at most
+$C_k(E_{k-1}+\sqrt{\delta_u})R_p^{2k}/u+C_k/u^2$.
+Nonzero-$a$ phase remainders are included; pure phase powers average to
+zero exactly. Reference freezing contributes
+$(1-1/u)[f_k((u-1)/N)-f_k(u/N)]=-xf'_k(x)/u+O(u^{-2})$.
+
+Take $D_k=2k(k+3)$, $\zeta=1/4$, $B=\ell^b$ and fixed $p$ sufficiently
+large that $D_L(1+\zeta)/p<1/8$ and
+$2D_L(1+\kappa+b)/p<\kappa/4$. A closing local envelope is
+\[
+ E_k(u)=C_{k,p}R_p^{D_k}
+       \left[\sqrt{\ell/u}\log(2u)^{k+3}+\ell/u\right].
+\]
+Dyadic scalar Freedman controls only the pairs alive at the block start.
+Pathwise absolute-row stability propagates their raw noise without
+future-dependent martingale transforms. Spare powers
+$R_p^{-2k-4}$ in the drift and $R_p^{-3k-4}$ in the lower noise close
+the induction. Joint first-exit stops retain complete crossing states and
+all current envelopes. Deleted labels keep their previous-size reference;
+surviving labels receive the new-size reference before the complete value
+and reference are frozen at a global exit.
+The killed $p$-cap costs $O(C_p\ell^{-b})$;
+$E_L(m)\to0$. The maintained proof is
+\texttt{mathematics/conditional\_clock\_universality\_20261011.md}.
+
+The formal characteristics give
+\[
+ z=\frac{M(1-M)}{(1+M)(1-xM)},\qquad
+ (1-xz)M^2-[1-(1-x)z]M+z=0.
+\]
+Put $a_x=3-x-2\sqrt{2(1-x)}$ and
+$b_x=3-x+2\sqrt{2(1-x)}$. Cauchy inversion gives, for $0\le x<1$,
+\[
+ \mu_x=\omega_x\delta_x+
+ \frac{\sqrt{(b_x-h)(h-a_x)}}{2\pi h(h-x)}
+       \mathbf1_{[a_x,b_x]}(h)\,dh,\qquad
+ \omega_x=\begin{cases}0&x\le1/2,\\2-1/x&x>1/2.\end{cases}
+\]
+At $x=1$ set $\mu_1=\delta_1$. Its Cauchy transform is
+\[
+ G_x(w)=\frac{3w-1-x-\sqrt{w^2-(6-2x)w+(1+x)^2}}{2w(w-x)},
+ \qquad G_x(w)\sim w^{-1}.
+\]
+The square root is asymptotic to $w$ and negative below $a_x$.
+The apparent pole at zero is removable; $G_x(0)=-2/(1+x)$.
+At $x=1/2$ the lower branch endpoint gives an integrable inverse
+square-root density and no atom. The atom test, rather than an ordinary
+residue at that endpoint, handles the merging singularity.
+All fixed moments and compact moment determinacy identify this weak clock
+law on the same intersection with $\mathcal A_m$. Its endpoint moments
+are the prior Schr\"oder sequence \cite{CMSV2016Clock}.
+
+An independent pathwise observation explains the atom. The product of
+feedback embeddings has unchanged surviving-coordinate rows, hence
+$T_u=L_u^*L_u=I+X_u^*X_u$ with $X_u$ having $N-u$ rows. Thus
+\[
+ \operatorname{rank}(T_u-I)\le N-u,
+ \qquad \dim\ker(T_u-I)\ge(2u-N)_+.
+\]
+The empirical $uT_u/N$ measure has at least $(2-1/x)_+$ mass at $x$;
+finite-rank equality for arbitrary trajectories is not asserted.
+For comparison with the prior free-Jacobi family \cite{Hamdi2017Clock},
+set $p=x/(1+x)$, $q=2x/(1+x)$ and view $Y=PQP$ in the normalized
+$P$ corner for free reference projections of traces $p,q$.
+Subtract $(1-p)\delta_0$ from the full-trace law and divide by $p$.
+Then $x/Y$ has precisely $\mu_x$; this dictionary makes no claim of
+freeness of the actual matrices. Its $x=0$ limit is established directly
+by the Cauchy formula, since the corner with $p=0$ is undefined.
+The separate proposition is
+\texttt{mathematics/full\_depth\_clock\_measure\_20261011.md}.
+All-time flatness probability, growing-order/edge laws, the physical
+microscopic cavity law, signed TRACE-005 and global BGS remain open.
+
+\subsection{Classical singular-spectrum censoring and a quantum gap (TRACE-073)}
+Let $P$ be doubly stochastic, $A$ a retained set of size $a$, and $D$ its
+complement. Suppose $I-P_{DD}$ is invertible. Its stochastic complement is
+\[
+ P^c=P_{AA}+P_{AD}(I-P_{DD})^{-1}P_{DA}.
+\]
+Every ordered centered singular value contracts:
+\[
+ \sigma_j(P^c-J_a)\le\sigma_j(P-J_N),\qquad 1\le j<a.
+\]
+This requires no reversibility. For $x\perp\mathbf1_A$ put
+$t=(I-P_{DD})^{-1}P_{DA}x$, $z=(x,t)$ and
+$z_0=z-N^{-1}(\mathbf1^*z)\mathbf1$. The exact lift identity is
+\[
+ \|(P-J_N)z_0\|^2-s^2\|z_0\|^2
+ =\|(P^c-J_a)x\|^2-s^2\|x\|^2
+ +(1-s^2)\bigl(\|t\|^2-|\mathbf1^*t|^2/N\bigr).
+\]
+For $0\le s\le1$, its last term is nonnegative. The lift is injective,
+and positive inertia proves the entire ordered singular-value inequality.
+
+In a quantum fresh-phase elimination, the classical complement is the
+conditional mean of the new intensity matrix, rather than a realization
+bound. The centered coherent increment has operator norm at most
+$8\delta_u$ when $\delta_u=\max_{ij}|(S_u)_{ij}|^2\le1/4$.
+For even $p\ge2$, the self-contained Schatten potential
+$F_r(X)=(\|X\|_p-r)_+^2$ satisfies
+\[
+ F_r(X+H)\le F_r(X)+DF_r(X)[H]+(p-1)\|H\|_p^2.
+\]
+Pad the \emph{centered} matrices with zeros to the original dimension.
+If $\|P_N-J_N\|_{\rm op}\le\rho_0$, $m\ge4K\ell$, and
+$g>N^{1/p}\rho_0$, the stopped convex potential yields
+\[
+ \Pr\!\left(\mathcal A_m\cap
+       \left\{\max_{N\ge u\ge m}\|P_u-J_u\|_{\rm op}\ge g\right\}\right)
+ \le\frac{64N^{2/p}(p-1)K^2\ell^2}
+               {m(g-N^{1/p}\rho_0)^2}.
+\]
+With $p=2\lceil\ell\rceil$, $m=\lceil\ell^{3+\kappa}\rceil$ and a fixed
+$g>\sqrt e\,\rho_0$, the bound is $O_{K,\kappa,g,\rho_0}(\ell^{-\kappa})$.
+FM-021 supplies a sufficiently small initial gap for the maintained map;
+it does not supply $\Pr(\mathcal A_m^c)\to0$.
+
+The exact Walsh four-port example has $P=J_4$ but one feedback realization
+is a permutation on three ports, with centered gap one. It separates
+conditional-mean contraction from sample contraction, without constituting
+an asymptotic counterexample to the maintained map. Complete proofs and
+review inputs are in the dated Schur continuation. Finite Python, C++ and
+Wolfram controls check algebra only. These results leave the scalar cavity
+law, signed TRACE-005 and deterministic BGS open.
+
+\subsection{General contractions and a reversal gap (TRACE-073)}
+A separate independent reconstruction extends the harmonic lift to every
+complex contraction $C$, with no positivity, normality or Perron mode.
+If $I-C_{DD}$ is invertible, its algebraic Schur complement obeys
+$\sigma_j(C^c)\le\sigma_j(C)$ for $1\le j\le|A|$. For arbitrary $x$, set
+$t=(I-C_{DD})^{-1}C_{DA}x$, $z=(x,t)$. The exact identity
+\[
+ \|Cz\|^2-s^2\|z\|^2
+ =\|C^cx\|^2-s^2\|x\|^2+(1-s^2)\|t\|^2
+\]
+first proves contraction of $C^c$ at $s=1$, then proves the entire ordered
+singular-value bound by positive inertia and the injective lift.
+
+For unitary $S$, the Hermitian reversal matrix
+$R(S)_{ij}=S_{ij}\overline{S_{ji}}$ is a contraction by Cauchy--Schwarz
+on absolute row and column sums. Write $S=\left[\begin{smallmatrix}A&c\\b&a\end{smallmatrix}\right]$,
+$q=w/(1-aw)$, $d=1-|a|^2$, $C_0=\operatorname{diag}(c)A^*\operatorname{diag}(b)$
+and $v_i=c_i\overline{b_i}$. Exact fresh-phase expansion gives
+\[
+ R(S')=R_{AA}+qC_0+\bar qC_0^*+|q|^2vv^*,
+ \qquad \mathbb E_wR(S')=R_{AA}+vv^*/d=R^c.
+\]
+The centered noise has norm at most $8\delta_u$. Applying the same stopped
+Schatten potential directly to $R_u$, with zero padding and \emph{no}
+$J$ subtraction, gives
+\[
+ \Pr\!\left(\mathcal A_m\cap
+        \left\{\max_{N\ge u\ge m}\|R_u\|_{\rm op}\ge g\right\}\right)
+ \le\frac{64N^{2/p}(p-1)K^2\ell^2}
+              {m(g-N^{1/p}\rho_R)^2},
+ \qquad g>N^{1/p}\rho_R,
+\]
+when $\|R_N\|_{\rm op}\le\rho_R$. FM-022 proves precisely this initial
+matrix norm tends to zero for the maintained odd-dimensional family.
+Thus both intensity and reversal gaps are controlled, in intersection
+probability, down to $\lceil\ell^{3+\kappa}\rceil$. This is neither a
+complete symmetry classification nor a microscopic local-law theorem;
+all-time flatness probability and deterministic BGS remain open.
+
+\subsection{A two-step obstruction inside unitary intensities (TRACE-074)}
+For every sufficiently large $n$ there is $S_n\in U(n)$, with
+$P_{ij}=|(S_n)_{ij}|^2$ and $J_{ij}=1/n$, such that
+\[
+ \delta_n:=\max P_{ij}\le\frac{8\log(2n)}n,\qquad
+ \rho_n:=\|P-J\|_{\rm op}\le n^{-1/8}
+             +16\sqrt{\frac{\log(2n)}n}\longrightarrow0,
+\]
+but, for two fixed distinct labels $i,j$,
+\[
+ (P^2)_{ij}=\frac1{b_n},\qquad
+ b_n=\left\lfloor\frac n{\log(2n)}\right\rfloor,\qquad
+ n(P^2)_{ij}\sim\log(2n).
+\]
+The norm is a singular operator norm. The construction is genuinely
+unistochastic and refutes a universal estimate
+$|((P-J)^2)_{ij}|\le C\rho_n\delta_n$.
+
+For unit vectors $c,d$ use the rank-one unitary correction
+\[
+ H(c,d)=I-\frac{(c-d)(c-d)^*}{1-d^*c}\quad(c\ne d),\qquad H(c,c)=I.
+\]
+Indeed $v=c-d$ satisfies $v^*c=1-d^*c$ and
+$\|v\|^2=(1-d^*c)+(1-c^*d)$, proving $Hc=d$ and $H^*H=I$.
+Choose $a=\beta=b_n^{-1/2}\mathbf1_B$, with $B$ disjoint from $i,j$,
+and a Haar unitary $Z$. Put
+\[
+ L=H(Ze_j,\beta),\quad W=LZ,\quad r=W^*e_i,\quad
+ R=H(a,r),\quad S=WR.
+\]
+Then $r\perp e_j$, $Re_j=e_j$, $Se_j=\beta$ and $e_i^*S=a^*$.
+Thus $(P^2)_{ij}=1/b_n$ exactly, while
+$\operatorname{rank}(S-Z)\le2$ and $\|S-Z\|_{\rm HS}\le2\sqrt2$.
+
+The remaining completion is Haar from $\{e_j,a\}^\perp$ to
+$\{\beta,e_i\}^\perp$. To justify this dependent construction, let
+$\mathcal G$ fix both $\beta,e_i$. Under $Z\mapsto GZ$,
+$L\mapsto GLG^*$, $W\mapsto GW$, $r,R$ stay fixed, and $S\mapsto GS$.
+The joint law of $(r,S)$ is invariant. The group acts freely and
+transitively on the completions, so the conditional completion law is
+the unique Haar law. The residual dimension is $n-2$; each bulk entry
+is a Haar entry multiplied by projection norms at most one. Consequently,
+with $t_n=8\log(2n)/n$,
+\[
+ \Pr(\max|S_{kl}|^2>t_n)\le n^2e^{-(n-3)t_n},\qquad
+ \Pr(\max|Z_{kl}|^2>t_n)\le n^2e^{-(n-1)t_n}.
+\]
+
+The necessary Haar singular bound is derived internally. For
+$p_l=|Z_{1l}|^2$ and $s_q=\sum_l p_l^q$, Dirichlet moments give
+\[
+ \mathbb Es_2=\frac2{n+1},\quad
+ \mathbb Es_3=\frac6{(n+1)(n+2)},\quad
+ \mathbb Es_2^2=\frac{4(n+5)}{(n+1)(n+2)(n+3)}.
+\]
+Conditional on the first row vector $\alpha=Z^*e_1$, the second is uniform
+on the complex sphere with projector $\Pi=I-\alpha\alpha^*$.
+For $D=\operatorname{diag}(p)$, its quadratic-form second moment is
+$[(\operatorname{Tr}D\Pi)^2+\operatorname{Tr}(D\Pi D\Pi)]/[n(n-1)]$,
+namely $(1-s_2-2s_3+2s_2^2)/[n(n-1)]$.
+Summing equal and distinct rows and removing the Perron mode gives
+\[
+ \mathbb E\bigl\||Z|^2-J\bigr\|_{S_4}^4
+ =\frac{2(n-1)(n+4)}{(n+1)(n+2)(n+3)}\le2/n.
+\]
+Markov gives $\Pr(\||Z|^2-J\|_{\rm op}>n^{-1/8})\le2n^{-1/2}$.
+On the two flatness events,
+$\|P-|Z|^2\|_{\rm op}\le2\sqrt{t_n}\|S-Z\|_{\rm HS}\le4\sqrt{2t_n}$.
+A union bound, without independence assumptions, proves simultaneous
+witnesses for every sufficiently large $n$.
+
+The positive higher-step statement, valid for every doubly stochastic $P$, is
+\[
+ |(P^h)_{ij}-1/n|
+ \le\rho^{h-2}
+ \sqrt{\left(\sum_kP_{ik}^2-\frac1n\right)
+       \left(\sum_kP_{kj}^2-\frac1n\right)}
+ \le\rho^{h-2}(\delta-1/n),\qquad h\ge2.
+\]
+It follows from $E^h=P^h-J$ and
+$(E^h)_{ij}=(e_i^*E)E^{h-2}(Ee_j)$. At $h=2$, the factor is one,
+including $\rho=0$; the prescribed row and column attain the first bound
+exactly. Our witnesses satisfy $\max_{ij}n|(P^3)_{ij}-1/n|\to0$.
+Nevertheless their frozen-entry one-step Schur bracket is
+\[
+ \mathbb E|\Delta S_{ij}|^2
+ =\frac1n\sum_{e\notin\{i,j\}}\frac{P_{ie}P_{ej}}{1-P_{ee}}
+ \sim\frac{\log(2n)}{n^2}.
+\]
+Here $\Delta S_{ij}=0$ if an endpoint is chosen. Thus three-step mixing
+does not replace the two-step kernel in the exact bracket.
+
+The Haar unistochastic ensemble is prior work~\cite{ZKSS2003Unitary}.
+Its numerical singular statistics are not imported as a theorem.
+The canonical proof is
+\path{mathematics/unitary_two_step_obstruction_20261012.md}.
+No maintained trajectory, chaotic quantizer, BGS counterexample,
+analytic Lean or world-priority claim is supplied.
+
+\subsection{Fresh-phase restoring drift of a two-step peak (TRACE-075)}
+Let $S\in U(u)$, $P=|S|^2$, $K=P^2$, $\delta=\max P<1$, and $i\ne j$.
+Pick $e$ uniformly among all $u$ labels, independently of a fresh uniform
+phase $w$. Freeze $K_{ij}$ if $e=i$ or $j$; otherwise use
+$S'_{kl}=S_{kl}+qS_{ke}S_{el}$, $q=w/(1-S_{ee}w)$, on survivors.
+With $a=S_{ee}$, $\eta_e=1-|a|^2$, define
+\[
+ A=S_{ie}S_{ek}\overline{S_{ik}},\quad B=P_{ie}P_{ek},\qquad
+ C=S_{ke}S_{ej}\overline{S_{kj}},\quad D=P_{ke}P_{ej}.
+\]
+The circle moments are
+$\mathbb Eq=\mathbb Eq^2=0$,
+$\mathbb E|q|^2=1/\eta_e$,
+$\mathbb E(q|q|^2)=\bar a/\eta_e^2$ and
+$\mathbb E|q|^4=(1+|a|^2)/\eta_e^3$. Hence
+\[
+ \begin{split}
+ F_{e,k}:=\mathbb E_w(P'_{ik}P'_{kj})
+ ={}&P_{ik}P_{kj}
+ +\frac{P_{ik}D+P_{kj}B+2\operatorname{Re}(A\bar C)}{\eta_e}\\
+ &+\frac{2\operatorname{Re}\{\bar a(AD+CB)\}}{\eta_e^2}
+ +\frac{(1+|a|^2)BD}{\eta_e^3}.
+ \end{split}
+\]
+The frozen-label average is exactly
+\[
+ u\,\mathbb E(\Delta K_{ij}\mid S)
+ =\sum_{e\notin\{i,j\}}\left[\sum_{k\ne e}F_{e,k}-K_{ij}\right].
+\]
+The subtraction lies inside the sum; survival conditioning would instead
+have denominator $u-2$.
+
+The coherent term is a swap pairing of three-step path amplitudes:
+\[
+ T_{e,k}=S_{ie}S_{ek}S_{kj},\qquad A\bar C=T_{e,k}\overline{T_{k,e}}.
+\]
+On $\mathcal D=\{(e,k):e\notin\{i,j\},\,k\ne e\}$, both square sums
+are bounded by $(P^3)_{ij}$, even though $\mathcal D$ is not swap invariant.
+Weighted Cauchy--Schwarz therefore gives
+\[
+ \left|\sum_{\mathcal D}\frac{A\bar C}{\eta_e}\right|
+ \le\frac{(P^3)_{ij}}{1-\delta}.
+\]
+The base loss is $-K_{ij}+P_{ij}(P_{ii}+P_{jj})$; the two positive
+quadratic terms total at most $2(P^3)_{ij}/(1-\delta)$.
+For the nonzero-diagonal cubic terms, AM--GM yields
+\[
+ |aAD|\le\frac\delta2 P_{ej}(P_{ie}P_{ek}+P_{ik}P_{ke}),\qquad
+ |aCB|\le\frac\delta2 P_{ie}(P_{ke}P_{ej}+P_{kj}P_{ek}).
+\]
+Each sum is at most $\delta[K_{ij}+(P^3)_{ij}]/2$.
+The quartic term totals at most
+$\delta(1+\delta)K_{ij}/(1-\delta)^3$ since $(P^2)_{ee}\le\delta$.
+Thus
+\[
+ u\,\mathbb E(\Delta K_{ij}\mid S)
+ \le-(1-c(\delta))K_{ij}+2\delta P_{ij}+d(\delta)(P^3)_{ij},
+\]
+where
+\[
+ c(\delta)=\frac{2\delta}{(1-\delta)^2}
+             +\frac{\delta(1+\delta)}{(1-\delta)^3},\qquad
+ d(\delta)=\frac4{1-\delta}+\frac{2\delta}{(1-\delta)^2}.
+\]
+The increasing functions satisfy
+$c(1/16)=752/3375<1/2$, $d(1/16)=992/225<5$. Therefore
+\[
+ \mathbb E(\Delta K_{ij}\mid S)
+ \le\frac{-K_{ij}/2+5(P^3)_{ij}+2\delta P_{ij}}u
+ \qquad(\delta\le1/16).
+\]
+The preceding higher-step theorem gives
+$(P^3)_{ij}\le1/u+\rho(\delta-1/u)$.
+At the TRACE-074 witnesses, $P_{ij}=0$, $K_{ij}\sim\log(2u)/u$ and
+$(P^3)_{ij}=(1+o(1))/u$. All nonbase terms have absolute sum
+$o(K_{ij})$, and hence
+\[
+ \mathbb E(\Delta K_{ij}\mid S)=-(1+o(1))K_{ij}/u.
+\]
+This proves a restoring mean mechanism for each constructed input.
+It does not establish high-probability or sustained decay, preservation
+of its hypotheses, higher moments, or control of other peaks.
+The canonical proof is
+\path{mathematics/two_step_restoring_drift_20261012.md}.
+Independent exact residue and 64-dimensional unitary controls are finite
+checks. All-time flatness probability, scalar microscopic identification,
+full TRACE-055, signed TRACE-005 and deterministic BGS remain open.
+
+\subsection{Exact Haar feedback and entropy-stable clocks (TRACE-076)}
+\label{sec:haar-feedback-20261012}
+Take an initial Haar unitary $U_N$ independent of the fresh feedback
+phases and uniform coordinate order, with $F_N(z)=zU_N$ and initial
+incoming and outgoing delays equal to the identity. Retain a
+predetermined set of $u$ coordinates and put $q=N-u$. Absorb any fixed
+feedback phases in the eliminated rows:
+$\widehat U=\operatorname{diag}(I_u,W_E)U_N$. Conditional on the independent
+phases and order, this matrix is still Haar. Define
+\[
+ X(z)=(I_q-z\widehat U_{EE})^{-1}z\widehat U_{ER},\qquad
+ F_u(z)=z\widehat U_{RR}+z\widehat U_{RE}X(z).
+\]
+Sequential and block feedback solve the same linear system in the
+unit disk and agree at regular boundary points. All required inverses
+exist almost surely at $z=1$: a fixed vector of the eliminated principal
+block would, by unitarity and the norm identity, extend to a fixed
+vector of $\widehat U$, an event of Haar measure zero.
+
+Set $S=F_u(1)$, $T=S^*F_u'(1)$ and $Q=STS^*$.
+The exact joint law is
+\[
+ \begin{aligned}
+ S&\sim\mathsf H_u,\qquad S\ \hbox{independent of }T,\qquad
+ T=I_u+X^*X,\\
+ d\mathbb P(X)&\propto\det(I_u+X^*X)^{-(N+u)}\,dX,\qquad
+ X\in\mathbb C^{q\times u}.
+ \end{aligned}                                           \tag{HF.1}
+\]
+The $X$ law is invariant under right unitaries, so $Q$ has the same law
+as $T$ and is separately independent of $S$. The pair $(T,Q)$ need not
+be independent of $S$, and no independence across sizes is asserted.
+At $q=0$, $T=Q=I_u$.
+
+\paragraph{Derivative and complete block factorization.}
+On $z=e^{i\theta}$, the unitary colligation identity is
+\[
+ z\widehat U\begin{pmatrix}I_u\\X(z)\end{pmatrix}
+       =\begin{pmatrix}F_u(z)\\X(z)\end{pmatrix}.
+\]
+Differentiate in $\theta$ and left multiply by $(F_u(z)^*,X(z)^*)$.
+The terms $X(z)^*\dot X(z)$ cancel, giving
+$-iF_u(z)^*\dot F_u(z)=I_u+X(z)^*X(z)$. At $\theta=0$ this is the
+delay identity in (HF.1).
+
+For the distribution, use the Hermitian Cayley variable
+\[
+ C=i(I+\widehat U)(I-\widehat U)^{-1}
+      =\begin{pmatrix}A&B^*\\B&D\end{pmatrix},\qquad
+ \widehat U=(C-iI)(C+iI)^{-1}.
+\]
+The differential
+$-i\widehat U^*d\widehat U=2(C-iI)^{-1}dC(C+iI)^{-1}$ gives Haar
+density proportional to $\det(I+C^2)^{-N}dC$. Here Hermitian
+congruence in dimension $n$ by $L$ has real Jacobian
+$|\det L|^{2n}$: singular values $s_j$ scale the real diagonal
+coordinates by $s_j^2$ and each complex off-diagonal coordinate by
+$s_js_k$, whose real two-dimensional contribution is $s_j^2s_k^2$.
+
+The block colligation gives $S=(A-iI)(A+iI)^{-1}$ and
+$X=B(A+iI)^{-1}$. With $G=I_q+XX^*$ make the change
+\[
+ B=X(A+iI),\qquad D=XAX^*+G^{1/2}YG^{1/2},\qquad Y=Y^* .
+\]
+Its real Jacobian is $\det(I_u+A^2)^q\det(G)^q$.
+The full derivative is block triangular in the order $(A,X,Y)$;
+the derivatives of the square root contribute no extra factor.
+Since
+$B(I+iA)^{-1}B^*=X(I-iA)X^*$, the Schur determinant gives
+\[
+ \det(I+iC)=\det(I+iA)\det G\det(I+iY).
+\]
+Consequently the transformed density is proportional to
+\[
+ \det(I_u+A^2)^{-u}\,
+ \det(G)^{-(N+u)}\,
+ \det(I_q+Y^2)^{-N}\,dA\,dX\,dY.                     \tag{HF.2}
+\]
+The original mass is finite and positive; Tonelli therefore makes
+each independent factor finite and positive. The $A$ factor is the
+Cayley image of Haar in dimension $u$, proving (HF.1).
+Haar-compatible Schur projections and Cauchy ensembles are prior
+objects; see \cite{BNN2011Haar}. Rectangular matrix-beta integrals and
+their singular-value reductions are prior as well
+\cite{Neretin2015Beta}. The displayed factorization and its delay
+coupling are derived here; no world-priority claim is made.
+
+\paragraph{Inverse-Jacobi spectrum, atom and moments.}
+Let $G_0$ and $Y_0$ be independent standard complex Gaussian matrices
+of sizes $q\times u$ and $2u\times u$, respectively. Put $W=Y_0^*Y_0$.
+Then
+\[
+ X\stackrel{d}{=}G_0W^{-1/2}.
+\]
+Indeed, the Wishart density of $W$ is proportional to
+$e^{-\operatorname{Tr}W}\det(W)^u$, and $G_0=XW^{1/2}$ has real
+Jacobian $\det(W)^q$. Integrating $W$ gives exponent $-(N+u)$.
+For $B_0=G_0^*G_0$, the eigenvalues of $T^{-1}$ are those of
+\[
+ J=(W+B_0)^{-1/2}W(W+B_0)^{-1/2}.                    \tag{HF.3}
+\]
+This is a spectral identity, not an equality of differently ordered
+noncommuting matrices.
+
+Writing $r=\min(q,u)$, the squared-singular-value volume of a complex
+$q\times u$ matrix is
+$\prod_{\ell=1}^r t_\ell^{|q-u|}
+ \prod_{\ell<j}(t_\ell-t_j)^2\,dt$ up to angular volume.
+The angular tangent between each two singular directions contributes
+$(\sigma_\ell^2-\sigma_j^2)^2$; the unmatched directions contribute
+$\sigma_\ell^{2|q-u|}$, and the diagonal polar coordinate contributes
+$\sigma_\ell\,d\sigma_\ell$.
+The substitution $y_\ell=(1+t_\ell)^{-1}$ in (HF.1) gives
+\[
+ d\mathbb P(y)\propto
+ \prod_{\ell=1}^r y_\ell^u(1-y_\ell)^{|q-u|}
+ \prod_{\ell<j}(y_\ell-y_j)^2\,dy,\quad 0<y_\ell<1.    \tag{HF.4}
+\]
+The power of $y_\ell$ is $N+u-|q-u|-2r=u$.
+If $q<u$, the remaining $u-q$ eigenvalues of $T^{-1}$ equal one.
+Thus $H=uT/N$ has exactly the atom $\max(0,2-N/u)$ at $u/N$.
+For $q>0$ and $k>0$,
+\[
+ \mathbb E\operatorname{Tr}T^k<\infty
+       \quad\Longleftrightarrow\quad k<u+1 .
+\]
+The necessity and sufficiency follow from the density near $y=0$;
+restricting the other eigenvalues to separated interior intervals
+establishes necessity. Finite-size spectra remain unbounded.
+
+Projecting one Gaussian column of $Y_0$ orthogonally to the other
+$u-1$ columns leaves $u+1$ complex Gaussian directions. The Schur
+complement is gamma of shape $u+1$, with inverse mean $1/u$.
+Unitary invariance gives $\mathbb EW^{-1}=I_u/u$; independence and
+$\mathbb EG_0^*G_0=qI_u$ then yield the exact normalization
+\[
+ \mathbb ET=(N/u)I_u,\qquad \mathbb EH=I_u.            \tag{HF.5}
+\]
+
+\paragraph{Whole-trajectory Haar probability and unconditional clocks.}
+Let $\ell=\log(2N)$, $m=\lceil\ell^{1+\kappa}\rceil$, $\kappa>0$,
+and let $A_m(K)$ require max entry intensity at most $K\ell/u$
+simultaneously for every size $u\ge m$.
+Every scattering marginal is Haar. The Haar entry tail
+$(1-t)^{u-1}$ follows from a normalized complex Gaussian column,
+and a union bound gives
+\[
+ \mathbb P_{\mathsf H_N}(A_m(K)^c)
+ \le\sum_{u=m}^N u^2e^{-K\ell(u-1)/u}
+ \le N^3(2N)^{-K(1-1/m)}=:b_N(K).                    \tag{HF.6}
+\]
+The entry failure probability is zero if the threshold is at least one.
+For each fixed $K>3$,
+$b_N(K)=2^{-K}N^{3-K}(1+o(1))$, because $\ell/m\to0$.
+Independent depths were not used.
+
+Write $\mathcal E_{L,N}$ for the maximum error in all conditional
+TRACE-060 clock conclusions through a fixed power $L$, at all $u\ge m$.
+The theorem for every deterministic initial sequence supplies a common
+$\varepsilon_N(L,K,\kappa)\to0$ with
+\[
+ \sup_{U\in U(N)}
+ \mathbb P_U\bigl(A_m(K)\cap
+       \{\mathcal E_{L,N}>\varepsilon_N\}\bigr)\longrightarrow0.  \tag{HF.7}
+\]
+If uniformity failed, a violating initial matrix could be chosen at
+infinitely many dimensions, contradicting that deterministic-sequence
+quantifier. Integrate (HF.7) over the initial Haar law and add (HF.6).
+Incoming/outgoing diagonal power laws, off-diagonal decay, mixed-entry
+decay and all fixed empirical moments are now unconditional in
+probability, uniformly over the full retained depth.
+
+The empirical probability measure of $H$ converges uniformly to the
+maintained family $\mu_{u/N}$ in the bounded-Lipschitz metric.
+For clarity, the finite-moment criterion is uniform over $x\in[0,1]$
+and probability measures on $[0,\infty)$. If no finite number of
+moments forced a given positive weak-metric tolerance, choose
+counterexamples with the number of controlled moments tending to infinity
+and tolerances to zero. Pass to $x\to x_0$. First moments give
+tightness; each next higher fixed moment gives uniform integrability.
+Every weak limit has all moments of $\mu_{x_0}$. Common compact
+reference support and moment determinacy identify that limit,
+contradicting the chosen tolerance. This applies a finite fixed $L$
+to (HF.7), rather than inserting a growing order into TRACE-060.
+
+\paragraph{Relative entropy and its microscopic limitation.}
+Let an independent initial law $\nu_N$ have finite
+$D_N=D(\nu_N\Vert\mathsf H_N)$. The joint entropy including fresh
+phase/order randomness is still $D_N$. If $p_N$ and $q_N$ are the
+respective failure probabilities of $A_m(K)$, binary Jensen gives
+\[
+ D_N\ge p_N\log(p_N/q_N)
+       +(1-p_N)\log((1-p_N)/(1-q_N))
+       \ge p_N\log(1/q_N)-\log2.
+\]
+For $q_N=0$, absolute continuity gives $p_N=0$.
+Otherwise (HF.6) yields, for all large $N$,
+\[
+ p_N\le\frac{D_N+\log2}{\log(1/b_N(K))}.               \tag{HF.8}
+\]
+Hence $D_N=o(\log N)$ proves high-probability flatness for each
+fixed $K>3$. More generally, if
+$C=\limsup_N D_N/\log N<\infty$, integrating (HF.7) gives
+for every fixed error tolerance $\eta>0$
+\[
+ \limsup_N\mathbb P_{\nu_N}(\mathcal E_{L,N}>\eta)
+       \le C/(K-3).
+\]
+Let $K$ tend to infinity \emph{after} this limsup. Every fixed clock
+conclusion and the full-depth empirical weak law therefore hold
+unconditionally when $D_N=O(\log N)$. This argument gives no
+high-probability flatness statement for one prescribed finite $K$
+throughout that larger entropy class.
+
+The entropy condition alone cannot identify a prescribed-origin
+microscopic spectral law. For $0<c<1$, a fixed arc of angular length
+$2\pi c/N$ has Haar expected count $c$, so its void event $E_N$ has
+probability at least $1-c$. Conditioning Haar on $E_N$ costs
+$-\log\mathbb P(E_N)\le-\log(1-c)$ entropy and preserves the clock
+conclusions above. Its initial rescaled point process has a forbidden
+interval of length $c$. A nonzero nonnegative continuous test function
+compactly supported inside that interval integrates to zero for every $N$.
+The intensity-one Sine$_2$ process gives a positive expected integral
+and hence a positive probability of a nonzero integral. Local
+point-process convergence to Sine$_2$ at that origin is impossible.
+This is not an origin-averaged counterexample. A deterministic initial
+matrix has infinite relative entropy to Haar. Classical dynamical
+entropy is a different quantity. The maintained deterministic
+trajectory probability, full physical TRACE-055, signed TRACE-005 and
+global BGS remain open.
+
+The canonical source is
+\path{mathematics/haar_feedback_clock_law_20261012.md}.
+Independent reconstruction and maintained-transfer review are separate
+from five exact colligation controls, symbolic Jacobians, twelve
+one-port moment integrals and two actually executed Wolfram identities.
+None of those finite controls proves the probability limits,
+entropy transfer, mathematical priority or deterministic BGS.
+
+\section{Green compression and shrinking stopped intensity gaps}
+\label{sec:green-compression-20261013}
+
+The project proof BGS-TRACE-077 concerns an unconditional stopped prefix,
+not the probability of surviving to that prefix. Write
+$J_n=\mathbf1\mathbf1^*/n$, $Q_n=I-J_n$ and
+\[
+ G(P)=(I-P+J_n)^{-1}-J_n,\qquad M(P)=G(P)-Q_n.
+\]
+Here $P$ is nonnegative doubly stochastic and $I-P$ is invertible on
+$\mathbf1^\perp$; normality is not required. For a retained set $A$ and
+deleted set $D$, assume $I-P_{DD}$ is invertible and form the stochastic
+complement $P^c=P_{AA}+P_{AD}(I-P_{DD})^{-1}P_{DA}$. Then
+\[
+ G(P^c)=Q_uG(P)_{AA}Q_u,\qquad
+ M(P^c)=Q_uM(P)_{AA}Q_u.                         \tag{GC.1}
+\]
+Indeed, solve $(I-P)x=(b,0)$ with $\sum b=0$, eliminate $x_D$,
+and center $x_A$. A kernel vector of $I-P^c$ lifts to a kernel vector
+of $I-P$, hence is constant; the reduced centered inverse therefore
+exists. Block stochastic sums and the nonnegative geometric inverse of
+$I-P_{DD}$ give double stochasticity of $P^c$.
+On the original coordinate space the projections $Q_A$ onto supported
+zero-sum vectors are nested: $Q_AQ_B=Q_A$ when $A\subset B$.
+
+Let $S_N$ be deterministic unitary, $P_N=|S_N|^2$,
+$\max P_N\le C_0/N$, $C_0\ge1$, and
+$\rho_N=\|P_N-J_N\|_{\rm op}\le1/5$. Geometric expansion and the
+correct higher-step row--column estimate give
+\[
+ \|M_N\|\le1/4,\quad \max|(M_N)_{ij}|\le B/N,
+ \quad B=C_0+\frac{C_0-1}{1-\rho_N},\quad
+ \|Q_AM_NQ_A\|\le\min(1/4,Bu/N).                 \tag{GC.2}
+\]
+In particular the original contribution decays with retained depth.
+
+At each step choose the port using the past, then generate a fresh
+independent uniform circle phase. The exact one-step intensity is
+$P'=P^c+\Xi$, with conditional mean zero,
+$\Xi\mathbf1=\mathbf1^*\Xi=0$ and $\|\Xi\|\le8\delta_v$ when
+$\delta_v=\max P_v\le1/4$. Put $\ell=\log(2N)$, choose
+$m<N$ with $m\ge32K\ell$ and $C_0\le K\ell$, and stop at the first
+$\delta_u>K\ell/u$ or $\|M_u\|>1/2$, retaining the full crossing state.
+The old admissible state gives $\|G^c\|\le3/2$ and
+$\|G^c\Xi\|\le3/8$. Thus the new inverse exists even at the first
+crossing, with $\|G'\|\le3$, and the ordered resolvent expansion is
+\[
+ G'=G^c+L_v+D_v,\quad L_v=G^c\Xi G^c,\quad
+ D_v=G^c\Xi G^c\Xi G',\quad
+ \|L_v\|\le18\delta_v,\quad \|D_v\|\le432\delta_v^2.       \tag{GC.3}
+\]
+The $L_v$ are adapted martingale differences with predictable
+coefficients and stop mask. The $D_v$ are bounded adapted remainders,
+with no centering assumption. Embed both in the original $N$ coordinates,
+set them to zero after stopping, and put $Z_u=\sum_{v>u}L_v$,
+$E_u=\sum_{v>u}D_v$. Nested compression gives, pathwise,
+\[
+ M_u=Q_uM_NQ_u+Q_uZ_uQ_u+Q_uE_uQ_u.              \tag{GC.4}
+\]
+Future projections occur only outside the martingale sum. This is why
+adaptive port choices preserve centering without conditioning on future
+flatness.
+
+For even $p\ge2$, the internally reconstructed Schatten smoothness bound
+of TRACE-073 gives
+$\mathbb E\|Z_m\|_p^2\le324N^{2/p}(p-1)K^2\ell^2/m$.
+Conditional Jensen and scalar Doob $L^2$ then give
+\[
+ \mathbb P\{\max_u\|Z_u\|>\eta\}
+ \le\frac{1296N^{2/p}(p-1)K^2\ell^2}{m\eta^2},\qquad
+ \|E_u\|\le\beta:=432K^2\ell^2/m.               \tag{GC.5}
+\]
+If $\eta+\beta<1/4$, (GC.4) excludes a first Green exit before or
+simultaneously with the entry exit. Consequently, outside (GC.5),
+every state through the first entry exit satisfies
+$\|M_u\|\le\min(1/4,Bu/N)+\eta+\beta$.
+For $h_u=Bu/N+\eta+\beta<1$, the centered identity
+$P_u-J_u=M_u(I+M_u)^{-1}$ yields
+$\rho_u\le h_u/(1-h_u)$.
+
+Choose $p=2\lceil\ell\rceil$, $m=\lceil\ell^{7+\kappa}\rceil$,
+$\eta=\ell^{-2}$, $\kappa>0$. On all reached entry-admissible states
+$m\le u\le\lfloor N/\ell^2\rfloor$ simultaneously,
+\[
+ \rho_u=O_{C_0,K}(\ell^{-2}),\qquad
+ (P_u^3)_{ij}\le1/u+\rho_u(\delta_u-1/u)
+                \le[1+O_{C_0,K}(\ell^{-1})]/u,              \tag{GC.6}
+\]
+except with probability $O_K(\ell^{-\kappa})$. The second inequality
+is not asserted at an entry-crossing state whose entry bound fails.
+The interval can be empty because of early entry exit. Its survival
+probability and sustained two-step concentration remain open.
+FM-021 supplies only the named eventual initial inputs for the actual
+odd-$N$ fixed-coupling family; no effective startup is obtained.
+TRACE-005, physical microscopic identification and global BGS remain open.
+
+The canonical source is
+\path{mathematics/green_compression_gap_20261013.md}.
+Group inverses and stochastic complementation are prior structures;
+no world-priority claim is made. Independent reconstruction and its
+maintained-source transfer check are distinct from four exact rational
+nonnormal compression controls, two rejected algebraic mutations and
+four complex-double adaptive feedback steps. No new Lean certificate
+or C++ verification of the analytic theorem is asserted.
+
+\section{Second moment of the complete two-step feedback increment}
+\label{sec:two-step-variance-20261013}
+
+BGS-TRACE-078 complements the one-step drift with a fluctuation bound.
+For any unitary $S$ of size $u\ge3$, put $P=|S|^2$, $K=P^2$ and
+$\delta=\max P\le1/4$. Fix distinct labels $i,j$. Choose a port uniformly
+among all $u$ labels, freeze $K'_{ij}=K_{ij}$ if either endpoint is
+chosen, and otherwise apply exact Schur feedback. For arbitrary circle
+phases, even depending on the selected port,
+\[
+ \mathbb E[(K'_{ij}-K_{ij})^2\mid S]
+       \le\frac{2600\delta^2}{u}\{K_{ij}+(P^3)_{ij}\}.       \tag{SV.1}
+\]
+No phase independence is needed for this raw second moment. Uniform port
+selection is needed for its factor $1/u$.
+
+For $e\notin\{i,j\}$ and $k\ne e$, write $x=P_{ik}$, $y=P_{kj}$,
+$\alpha=S_{ie}S_{ek}\overline{S_{ik}}$,
+$\gamma=S_{ke}S_{ej}\overline{S_{kj}}$,
+$b=P_{ie}P_{ek}$, $d=P_{ke}P_{ej}$ and $r_e=P_{ie}P_{ej}$.
+With all following sums over $k\ne e$, define
+\[
+ \begin{aligned}
+ A_e&=\sum(y\alpha+x\gamma),&
+ B_e&=\sum(xd+yb+2\operatorname{Re}(\alpha\bar\gamma)),\\
+ C_e&=\sum\alpha\gamma,&
+ D_e&=\sum(\alpha d+\gamma b),\qquad F_e=\sum bd.
+ \end{aligned}
+\]
+The exact real increment, $q_e=w_e/(1-S_{ee}w_e)$, is
+\[
+ \Delta_e=-r_e+2\operatorname{Re}(q_eA_e)+|q_e|^2B_e
+ +2\operatorname{Re}(q_e^2C_e)
+ +2\operatorname{Re}(q_e|q_e|^2D_e)+|q_e|^4F_e.            \tag{SV.2}
+\]
+The subtraction $-r_e$ is the removed old $k=e$ term. Since $|q_e|\le2$,
+six-group Cauchy bounds its square. The key complete-coordinate bounds are
+\[
+ \begin{aligned}
+ \sum r_e^2&\le\delta^2K_{ij},&
+ \sum|A_e|^2&\le10\delta^2K_{ij},\\
+ \sum B_e^2&\le6\delta^2(P^3)_{ij}+12\delta^2K_{ij},&
+ \sum|C_e|^2&\le\delta^2K_{ij},\\
+ \sum|D_e|^2&\le4\delta^3(P^3)_{ij},&
+ \sum F_e^2&\le\delta^4K_{ij}.
+ \end{aligned}                                                   \tag{SV.3}
+\]
+For $A_e$, apply Parseval to the full unitary row and column sums first;
+each component's squared sum is at most $\delta^2K_{ij}$. The omitted
+term is $2S_{ee}r_e$, separately bounded by $4\delta^3K_{ij}$.
+For the coherent parts of $B_e,C_e$, Cauchy gives
+$r_e\delta K_{ij}$ per port. For $D_e$, weighted Cauchy gives
+$\delta P_{ie}P_{ej}^2K_{ie}$ and
+$\delta P_{ej}P_{ie}^2K_{ej}$ for the two components; coordinate sums
+are bounded using $P^3$. These yield (SV.3) without decorrelation.
+Consequently, for any simultaneous choice of phases,
+\[
+ \sum_{e\notin\{i,j\}}\Delta_e^2
+    \le\delta^2\{2598K_{ij}+2112(P^3)_{ij}\}.              \tag{SV.4}
+\]
+Uniform coordinate averaging proves (SV.1). This also bounds conditional
+variance, but does not prove its accumulated concentration. Combining it
+with the restoring mean and stopped three-step forcing requires a separate
+dynamic argument respecting endpoint deletion and full first exits.
+Early entry survival, deterministic microscopic identification and BGS
+remain open. The canonical proof is
+\path{mathematics/two_step_increment_variance_20261013.md}.
+Independent reconstruction is separate from exact Walsh expansion checks
+and finite complex-double port-sum diagnostics. No priority or new formal
+certificate is asserted.
+
+\section{Simultaneous stopped two-step concentration}
+\label{sec:stopped-two-step-20261013}
+
+BGS-TRACE-079 upgrades the restoring mean and raw second moment to a
+simultaneous stopped estimate. Start with any deterministic $S_b\in U(b)$,
+put $P=|S|^2$, and assume $\max P_b\le D/b$, $\max P_b^3\le C/b$.
+Choose uniform retained ports and fresh independent uniform phases.
+For integers $b>m\ge3$, $m\ge16D$, stop after the full first new state
+violating either bound $\max P_u\le D/u$, $\max P_u^3\le C/u$.
+For every ordered pair, including $i=j$, freeze the old unscaled
+$K_{ij}=(P^2)_{ij}$ on its endpoint-removing transition, then deactivate
+that scalar pair. This is a scalar convention, never an entry of an
+absent later matrix.
+
+The distinct-label one-step bounds extend to the diagonal: the mean base
+loss is $-K_{ii}+P_{ii}^2$, with the same positive majorants, and the
+omitted linear coefficient remains $2S_{ee}P_{ie}P_{ei}$. Thus
+\[
+ \mathbb E\Delta K_{ij}\le
+ \frac{-K_{ij}/2+5(P^3)_{ij}+2\delta P_{ij}}v,
+ \qquad
+ \mathbb E(\Delta K_{ij})^2\le
+ \frac{2600\delta^2\{K_{ij}+(P^3)_{ij}\}}v.       \tag{SF.1}
+\]
+The complete six-group expansion also gives
+$|\Delta K_{ij}|\le32\delta^{3/2}$. These averages divide by all $v$
+ports, including the zero frozen increments.
+
+Put $a=4/3$, $F=5C+2D^2/m$, $\beta=F/a$,
+$V=2600D^2(D+C)$ and $R=64D^{3/2}$. For $Y_v=vK_{ij}$,
+\[
+ \mathbb E\Delta Y\le-aY_v/v+F/v,\quad
+ \operatorname{Var}(\Delta Y\mid\mathrm{past})\le V/v^2,
+ \quad |\Delta Y-\mathbb E\Delta Y|\le R/\sqrt v.       \tag{SF.2}
+\]
+After either scalar deactivation or the global stop continue only the
+bookkeeping recurrence $Y_{v-1}=(1-a/v)Y_v+F/v$. Its centered noise is
+zero. For each fixed final depth the positive deterministic integrating
+factors telescope with a nonnegative drift slack:
+\[
+ Y_u\le\beta+r_{b,u}(Y_b-\beta)+\sum_{v=u+1}^b w_{v,u}\xi_v,
+ \quad r_{b,u}=\prod_{v=u+1}^b(1-a/v),\quad 0<w_{v,u}\le1.       \tag{SF.3}
+\]
+The weights depend only on sizes. Endpoint survival is not conditioned
+upon, and the entire first crossing is retained.
+
+The conditional Taylor series for a centered $|X|\le c$ yields
+$\mathbb E(e^{\lambda X}\mid\mathcal F)
+\le\exp\{\lambda^2\mathbb E(X^2\mid\mathcal F)/[2(1-\lambda c/3)]\}$.
+A variance-compensated supermartingale and Markov give the usual scalar
+Bernstein tail. Here the fixed-depth variance is at most $V/u$ and the
+range at most $R/\sqrt u$. Union over all original ordered pairs and
+all depths proves
+\[
+ \mathbb P\{\exists u,i,j\text{ retained}:\ uK_{ij}>
+                       \beta+Dr_{b,u}+\eta\}
+ \le b^3\exp\!\left[-\frac{\eta^2}
+                  {2\{V/m+R\eta/(3\sqrt m)\}}\right].        \tag{SF.4}
+\]
+The event is restricted to the stopped prefix, through its full crossing.
+Also $r_{b,u}\le[(u+1)/(b+1)]^{4/3}$.
+
+Combined with TRACE-077, take $\ell=\log(2N)$,
+$m=\lceil\ell^{7+\kappa}\rceil$, $b=\lfloor N/\ell^2\rfloor$,
+$D=K_0\ell$, $C=2$ and $\eta=1$. At a revealed startup satisfying
+both barriers, the estimate is uniform in that starting matrix.
+The scalar martingale is proved before unioning its failure with the
+future Green failure; it is not conditioned on that future good event.
+On every reached depth $m\le u\le\lfloor b/\ell\rfloor$ through the
+entry crossing, simultaneously for all retained pairs,
+$(P_u^2)_{ij}\le9/u$ except with probability $O(\ell^{-\kappa})$.
+This corollary alone does not estimate early entry survival. Its canonical
+source is \path{mathematics/two_step_stopped_concentration_20261013.md}.
+
+\section{Unconditional feedback flatness from deterministic starts}
+\label{sec:unconditional-flatness-20261013}
+
+BGS-TRACE-080 closes the trajectory probability for a specified deterministic
+startup class. Fix $C_0\ge1$, $\kappa>0$ and any deterministic $S_N\in U(N)$
+with $\max|S_{N,ij}|^2\le C_0/N$ and
+$\|P_N-J_N\|\le1/100$. Ports are uniform and phases fresh independent
+uniform. Put
+\[
+ \begin{aligned}
+ \ell&=\log(2N),& L&=C_0+7,& g&=1/10,\\
+ C&=1+g(L-1),& T&=C_0+4C+3,& K_0&=32T,\\
+ D&=K_0\ell,& m&=\lceil\ell^{4+\kappa}\rceil,&
+ p&=2\lceil\ell\rceil.
+ \end{aligned}                                                   \tag{UF.1}
+\]
+For sufficiently large $N$, simultaneously at every $N\ge u\ge m$,
+\[
+ \begin{gathered}
+ \max P_u\le D/u,\qquad \|P_u-J_u\|\le g,\qquad
+ \max(P_u^2)_{ij}\le T/u,\\
+ \max_i\sum_jP_{u,ij}^2\le L/u,\qquad
+ \max_j\sum_iP_{u,ij}^2\le L/u,
+ \end{gathered}                                                   \tag{UF.2}
+\]
+with failure $O_{C_0,\kappa}(\ell^{-1-\kappa})$. All ordered pairs include
+the diagonal. No random initial ensemble or deterministic microscopic
+reference law is assumed.
+
+The additional mechanism controls fourth-power energies of entire rows
+and columns before estimating individual entries. Write
+$E_i=\sum_jP_{ij}^2$ and $A_i=\sum_jP_{ij}(P^2)_{ij}$. For a possibly
+nonnormal intensity matrix,
+\[
+ A_i\le1/v+\rho(E_i-1/v),\qquad \rho=\|P-J_v\|.           \tag{UF.3}
+\]
+This is the centered row inner product against its image under $P-J_v$.
+Exact feedback, with the removing row frozen, gives
+\[
+ v\mathbb E\Delta E_i\le-(1-c(\delta))E_i+d(\delta)A_i+P_{ii}^2.
+                                                                  \tag{UF.4}
+\]
+The functions $c,d$ are those of the exact two-step drift. At
+$\delta\le1/16$, $c+d/10\le448/675<2/3$. Hence when $\rho\le g$,
+$\mathbb E\Delta E_i\le-E_i/(3v)+5/v^2+\delta^2/v$.
+Unitary row Parseval before truncation, weighted Cauchy and the complete
+feedback expansion give
+\[
+ \mathbb E(\Delta E_i)^2\le3500\delta^2(E_i+A_i)/v,
+ \qquad |\Delta E_i|\le8\delta\sqrt{E_i}+34\delta^2.        \tag{UF.5}
+\]
+Transpose gives the same column estimates. The positive forcing in
+(UF.3) depends on row energy rather than the logarithmic entry maximum.
+
+Use one joint first-exit rule for the entry cap, the Green cap
+$\|M_u\|\le1/11$, the two energy caps, and the two-step cap.
+All estimates use the old admissible state and keep the complete new
+crossing, including simultaneous crossings. On the zero-sum space,
+$\|G^c\|\le12/11$, $\|\Xi\|\le1/2$, so
+$\|G^c\Xi\|\le6/11$ and $\|G'\|\le12/5<3$ even at a crossing.
+The same Green martingale constants $18,432$ remain valid. The initial
+$\|M_N\|\le1/99$ and $\eta_G=1/40$ provide a fixed positive margin.
+
+For the scaled row energy $Y_v=vE_i$ the drift may be weakened to
+$-Y_v/v+(5+D^2/m)/v$. Its initial value is at most $C_0$, and its old
+value is at most $L$ under the joint stop. Define
+\[
+ \begin{aligned}
+ V_E&=3500D^2[(1+g)L+1],&
+ c_E(u)&=16D\sqrt L/\sqrt u+68D^2/u,\\
+ V_K&=2600D^2(T+C),&
+ c_K(u)&=24D\sqrt T/\sqrt u+36D^2/u.
+ \end{aligned}                                                   \tag{UF.6}
+\]
+The variance per active row step is at most $V_E/v^2$ and the centered
+range at most $c_E(v)$. The scalar integrating factors give a row bound
+$uE_i\le\max(C_0,5+D^2/m)+1<L$ outside its exception.
+The old energy and Green caps imply
+$(P^3)_{ij}\le[1+g(L-1)]/v=C/v$. For the all-pair two-step scalar,
+(SF.1)--(SF.3) and the sharper range
+$|\Delta K_{ij}|\le12\delta\sqrt{K_{ij}}+18\delta^2$
+give $uK_{ij}\le\max(C_0,3(5C+2D^2/m)/4)+1<T$ outside its exception.
+There is no burn-in, since the initial scaled energies and two-step
+entries are already bounded by $C_0$.
+
+For each original amplitude, freeze on endpoint removal and continue only
+$W_{v-1}=\sqrt{(v-1)/v}\,W_v$ after deactivation, where
+$W_v=\sqrt v\,S_{ij}$. For fixed target $u$, its centered martingale
+increments are $\sqrt u\,q S_{ie}S_{ej}$ with the predictable old stop mask.
+Uniform coordinate choice and the two-step cap give total real/imaginary
+variation at most $\sigma^2=16T/15$ and range at most
+$c_A(u)=2D/\sqrt u$. The initial term has modulus at most $\sqrt{C_0}$.
+Put $t=\sqrt D-\sqrt{C_0}$. The four signed real/imaginary tails, plus
+ordered pairs and depths, exclude the entry crossing.
+
+The explicit exceptional probabilities are
+\[
+ \begin{aligned}
+ q_G&=\frac{1296N^{2/p}(p-1)D^2}{m\eta_G^2},\\
+ q_E&=2N^2\exp[-1/(2\{V_E/m+c_E(m)/3\})],\\
+ q_K&=N^3\exp[-1/(2\{V_K/m+c_K(m)/3\})],\\
+ q_A&=4N^3\exp[-t^2/(4\{\sigma^2+c_A(m)t/(3\sqrt2)\})].
+ \end{aligned}                                                   \tag{UF.7}
+\]
+Their ordinary union excludes every possible first joint exit. No proof
+is conditioned on any future good event. Here $q_G=O(\ell^{-1-\kappa})$,
+$q_E,q_K$ are superpolynomially small in $N$, and
+$q_A=N^{-9/2+o(1)}$. This proves (UF.2). The row/column energy mechanism
+removes the previous early-entry-survival premise for this cutoff and
+startup class.
+
+For $F_N(z)=zS_N$ and $T_N=I$, revealing an original unused independent
+phase at each uniformly selected port is the same process. TRACE-060 with
+$K=K_0$, $\kappa_{\rm clock}=3+\kappa$ has precisely this cutoff $m$.
+Its intersection estimate plus the flatness probability gives unconditional
+convergence in probability for every fixed clock order and the empirical
+weak law with reference $\mu_{u/N}$, uniformly for $u\ge m$.
+The reference atom and pathwise rank lower bound retain their source scope;
+no equality of actual finite-$N$ atom weight is asserted. The entire upstream
+clock induction is a named internal input, not newly certified here.
+
+Separately, if the initial Hermitian reversal channel
+$B_{N,ij}=S_{N,ij}\overline{S_{N,ji}}$ has $\|B_N\|\to0$,
+TRACE-073 (C9) and the same flatness probability imply
+$\max_{u\ge m}\|B_u\|\to0$ in probability. This extra assumption is confined
+to the reversal corollary. FM-021 and FM-022 supply only the named eventual
+initial hypotheses for the actual odd-$N$ fixed-coupling family, without
+an effective startup. Smaller logarithmic cutoffs, growing orders, edge
+laws, physical microscopic identification, signed TRACE-005 and BGS
+remain open. The canonical source is
+\path{mathematics/unconditional_feedback_flatness_20261013.md}.
+Independent reconstruction and exact/floating finite controls have distinct
+roles; scalar Bernstein/Freedman is prior, and no new formal certificate
+or world-priority claim is made.
+\section{Perfect intensity mixing need not determine a microscopic law}
+\label{sec:flat-spectral-obstruction-20261014}
+
+The abstract result BGS-TRACE-081 distinguishes intensity mixing from
+the coherent information in an initial spectrum.  It does not concern
+the unchanged odd-dimensional smooth quantizer.  Let \(p_k\) be any
+sequence of odd primes tending to infinity, \(k\ge2\), and put
+\[
+n_k=4^k,\qquad N_k=n_kp_k,\qquad \epsilon_k=N_k^{-4}.
+\]
+There are deterministic \(U_k\in U(N_k)\) with simple spectrum such that
+\[
+P(U_k)=J_{N_k},\qquad
+\|P(U_k)-J_{N_k}\|=0,\qquad
+\|B(U_k)\|=2^{-k},\quad B(U)_{ij}=U_{ij}\overline{U_{ji}}.
+\]
+Their macroscopic eigenphase measure converges to uniform circle measure.
+However, the empirical unfolded spacing measure converges weakly to
+\(\delta_0\), and their microscopic point process about a uniform random
+origin converges vaguely in probability to the empty measure.  For times
+\[
+t_k=6p_k\lfloor 4^k/6\rfloor=N_k-4p_k,\qquad t_k/N_k\longrightarrow1,
+\]
+the normalized form factor satisfies
+\[
+N_k^{-1}|\operatorname{Tr}U_k^{t_k}|^2
+       \ge N_k(1-t_k\epsilon_k)^2\longrightarrow\infty.
+\]
+The vanishing reversal norm is a coordinate statement, not a full
+antiunitary symmetry classification.
+
+\paragraph{Exact construction.}
+Set
+\[
+H=\frac12\begin{pmatrix}
+1&1&1&1\\1&-1&-1&1\\1&1&-1&-1\\1&-1&1&-1
+\end{pmatrix}.
+\]
+Row orthogonality gives \(H^*H=I\); \(H^2\) permutes the last three
+coordinates cyclically, so \(H^6=I\).  The sign matrix \(4B(H)\) has
+Gram matrix \(4I\), whence \(\|B(H)\|=1/2\).
+For \(\omega=e^{2\pi i/p}\), define
+\[
+(F_p)_{ab}=p^{-1/2}\omega^{ab},\qquad
+D_p=\operatorname{diag}(\omega^{b^2}),\qquad V_p=F_p^*D_pF_p .
+\]
+Then \(V_p^p=I\), and
+\[
+(V_p)_{ij}=p^{-1}\sum_b\omega^{b^2+(j-i)b}.
+\]
+For each \(d\in\mathbb F_p\), the bijection
+\((b,c)\mapsto (b-c,b+c+d)\) proves
+\[
+\left|\sum_b\omega^{b^2+db}\right|^2
+   =\sum_{a,h}\omega^{ah}=p.
+\]
+Thus every entry of \(V_p\) has squared modulus \(1/p\).
+Replacing \(b\) by \(-b\) proves \(V_p^T=V_p\), so \(B(V_p)=J_p\).
+The matrix \(A_k=H^{\otimes k}\otimes V_{p_k}\) consequently has
+exactly flat intensities, reversal norm \(2^{-k}\), and
+\(A_k^{6p_k}=I\).  Its phases lie in at most \(6p_k\) root-of-unity
+centers.  For fixed \(q>0\), eventually \(p_k\nmid q\), and the same
+Gauss argument gives
+\[
+\frac{|\operatorname{Tr}A_k^q|}{N_k}
+ \le \frac{|\operatorname{Tr}V_{p_k}^q|}{p_k}=p_k^{-1/2}.
+\]
+
+\paragraph{Removing every exact degeneracy.}
+For every invertible complex matrix \(A\), the polynomial
+\(f(\lambda,z)=\det(\lambda I-A\operatorname{diag}z)\) is monic in
+\(\lambda\) and multi-affine in \(z\).  If an irreducible factor repeated,
+its degree in every \(z_j\) would be zero.  It would then divide
+\(f(\lambda,0)=\lambda^N\), but \(\lambda\) cannot divide \(f\) since
+its constant coefficient is
+\((-1)^N\det A\prod_jz_j\ne0\).
+Monicity and factorization over the fraction field show that the
+discriminant in \(\lambda\) is a nonzero polynomial.  Its zero set
+has measure zero on every product of circle arcs, by the univariate
+identity principle and Fubini.  Thus arbitrarily small generic column
+phases split the spectrum of every invertible \(A\).
+
+Choose \(E_k=\operatorname{diag}(e^{i\alpha_j})\), with
+\(|\alpha_j|<\epsilon_k\), giving simple spectrum, and put \(U_k=A_kE_k\).
+This choice can be deterministic.  Then
+\[
+\|U_k-A_k\|\le\epsilon_k,\quad P(U_k)=P(A_k),\quad
+B(U_k)=E_k^*B(A_k)E_k,\quad
+\|U_k^q-A_k^q\|\le q\epsilon_k .
+\]
+For every fixed positive \(q\),
+\(|\operatorname{Tr}U_k^q|/N_k\le p_k^{-1/2}+q\epsilon_k\).
+Conjugation gives the negative Fourier coefficients, and trigonometric
+approximation proves the uniform macroscopic limit.
+
+\paragraph{Local limits and rare counts.}
+Normality of \(A_k\) implies that each eigenvalue of \(U_k\) lies within
+chord distance \(\epsilon_k\) of an old center: apply
+\((\lambda I-A_k)x=(U_k-A_k)x\) to a unit eigenvector.
+All eigenphases therefore lie in at most \(6p_k\) disjoint arcs of
+radius \(2\epsilon_k\), for large \(k\).  At least \(N_k-6p_k\)
+cyclic consecutive gaps are internal to these arcs and at most
+\(4\epsilon_k\).  Their unfolded values are at most
+\(2N_k\epsilon_k/\pi\to0\), and the exceptional fraction is at most
+\(6/4^k\), proving the weak spacing limit.
+
+For an independent uniform origin \(\Theta\), let
+\[
+\Xi_k=\sum_j\delta_{\,N_k\operatorname{Arg}
+             (e^{i(\theta_j-\Theta)})/(2\pi)} .
+\]
+For each fixed \(R>0\), a union over old centers gives
+\[
+\mathbb P\{\Xi_k([-R,R])>0\}
+ \le \frac{12p_k\epsilon_k}{\pi}+\frac{12R}{4^k}\longrightarrow0 .
+\]
+Every compactly supported continuous test is consequently zero with
+probability tending to one.  This is vague convergence in probability
+to the empty measure.  Nonetheless the exact origin average is
+\(\mathbb E\Xi_k([-R,R])=2R\) for \(N_k>2R\);
+uniform integrability fails.  At \(t_k\), the norm bound and
+\(A_k^{t_k}=I\) give
+\(|\operatorname{Tr}U_k^{t_k}-N_k|\le N_kt_k\epsilon_k\),
+which proves the announced form-factor lower bound.
+
+The construction uses classical Fourier, tensor and discriminant
+mechanisms; no priority is claimed.  Full phase-averaged formulations
+\cite{Tanner2001USE,GnutzmannAltland2004Graphs} are different objects.
+The example meets the algebraic startup bounds of TRACE-080, so its
+random-feedback conclusions cannot alone identify this initial local
+law.  No fixed smooth chaotic quantization or BGS counterexample is
+asserted.
+
+\section{Exact coherence memory and the dimension-time norm barrier}
+\label{sec:coherence-memory-20261014}
+
+BGS-TRACE-082 concerns every unitary \(U\) of dimension \(N\ge2\).
+On Hilbert--Schmidt matrix space let
+\(\mathcal T(X)=UXU^*\), let \(\mathcal D\) be the orthogonal
+diagonal projection, and let \(\mathcal Q=I-\mathcal D\).  With
+diagonal/off-diagonal domains, write
+\[
+P=\mathcal D\mathcal T\mathcal D,\quad
+\mathcal L=\mathcal D\mathcal T\mathcal Q,\quad
+\mathcal C=\mathcal Q\mathcal T\mathcal D,\quad
+\mathcal E=\mathcal Q\mathcal T\mathcal Q .
+\]
+Here \(P_{ij}=|U_{ij}|^2\).  Block elimination, valid for \(|z|<1\),
+gives the exact identity on the diagonal space
+\[
+\mathcal D(I-z\mathcal T)^{-1}\mathcal D
+ =\bigl[I-zP-z^2\mathcal L
+      (I-z\mathcal E)^{-1}\mathcal C\bigr]^{-1}.
+\]
+For diagonal \(X_0\), putting \(a_n=\mathcal D\mathcal T^nX_0\)
+and \(c_n=\mathcal Q\mathcal T^nX_0\), one has \(c_0=0\) and
+\[
+a_{n+1}=Pa_n+
+ \sum_{s=0}^{n-1}\mathcal L\mathcal E^{n-1-s}\mathcal C a_s .
+\]
+The terms retain coherent return memory.  Repeated dephasing gives
+\(P^n\); unmeasured evolution gives
+\(\mathcal D\mathcal T^n\mathcal D\).  They need not agree, but do
+agree for special matrices, including diagonal and monomial unitaries.
+
+\paragraph{Universal norm plateau.}
+For every integer \(0\le r<N\),
+\[
+\|\mathcal E^r\|_{\mathrm{HS}\to\mathrm{HS}}=1 .
+\]
+Indeed work in the complex trace-zero space of dimension \(N^2-1\).
+Each constraint \(\mathcal D\mathcal T^jX=0\) has codimension at most
+\(N-1\), since trace is preserved.  The constraints for
+\(j=0,\ldots,r\) leave dimension at least
+\[
+N^2-1-(r+1)(N-1)=(N-1)(N-r)>0 .
+\]
+A nonzero witness stays off diagonal at all these times, so induction
+gives \(\mathcal E^jX=\mathcal T^jX\) for \(j\le r\).
+Hilbert--Schmidt unitarity yields norm preservation; contractivity
+gives the opposite bound.  The witness may depend on \(U\) and \(r\).
+This is a singular-norm statement, not a spectral-radius or
+every-source nondecay statement.  Exact finite controls include an
+\(N=2\) compression with norm one but square zero.
+
+\paragraph{An observed Heisenberg return.}
+For the family in the preceding section,
+\(\|U_k^{t_k}-I\|\le t_k\epsilon_k\) implies
+\(\|\mathcal T^{t_k}-I\|_{\mathrm{HS}\to\mathrm{HS}}
+ \le2t_k\epsilon_k\).
+Diagonal compression and \(\|I-J\|=1\) therefore give
+\[
+\bigl\||U_k^{t_k}|^{\circ2}-I\bigr\|\le2t_k\epsilon_k,\qquad
+\bigl\||U_k^{t_k}|^{\circ2}-P(U_k)^{t_k}\bigr\|
+       \ge1-2t_k\epsilon_k .
+\]
+This proves order-one complete observed return deviation.  It is not
+a lower bound for one individually selected
+\(\mathcal L\mathcal E^r\mathcal C\) kernel.  Neither the universal
+plateau nor this abstract example estimates the actual fixed-map
+signed source.
+
+The independent mathematical audits are distinct from exact finite
+Python/C++ controls and from the active Lean arithmetic kernel.
+That kernel proves only positivity of \((N-1)(N-r)\) for natural
+\(N\ge2,r<N\); it does not formalize codimension, the operator theorem,
+the generic discriminant lemma or a limiting point process.
+
+\section{Observed first-return pulses and cyclic coherence}
+\label{sec:observed-first-return-20261014}
+
+This section records BGS-TRACE-083. Its authoritative proof is
+\path{mathematics/coherent_first_return_pulse_20261014.md}.
+It uses the abstract family of TRACE-081 and the exact block recurrence
+of TRACE-082. The unchanged fixed-map TRACE-005 and BGS limit remain open.
+The first-return mechanism itself is prior mathematics:
+Bourgain, Gr\"unbaum, Vel\'azquez and Wilkening
+\cite{BourgainGrunbaumVelazquezWilkening2013Returns}, equation (1) on
+printed page~4 and the renewal equations on printed page~6.
+Here the Hilbert space is a matrix Hilbert--Schmidt space; amplitude
+energies are not identified with literal measurements of density matrices.
+
+Let \(n=4^k\), \(N=np\), \(k\ge2\), \(p\) an odd prime,
+\(\epsilon=N^{-4}\), and use TRACE-081's
+\(A=H^{\otimes k}\otimes V_p\) and simple-spectrum \(U=AE\),
+with \(\|U-A\|\le\epsilon\).
+Put \(S=(H^2)^{\otimes k}\), so \(S^3=I\), and
+\(\Pi_n=I-J_n\), \(\Pi_p=I-J_p\).
+For diagonal projection \(\mathcal D\), \(\mathcal Q=I-\mathcal D\)
+and \(\mathcal T_U(X)=UXU^*\), define
+\[
+ F_t(U)=\mathcal D\mathcal T_U
+           (\mathcal Q\mathcal T_U)^{t-1}\mathcal D,\qquad t\ge1.
+\]
+For \(t\ge2\), this is the individual memory coefficient
+\(\mathcal L_U\mathcal E_U^{t-2}\mathcal C_U\), not the full
+unmeasured return \(\mathcal D\mathcal T_U^t\mathcal D\).
+
+\paragraph{Exact finite support.}
+The complete first-return amplitudes for \(A\) are
+\[
+\begin{aligned}
+ F_1(A)&=J_n\otimes J_p,&
+ F_2(A)&=(S-J_n)\otimes J_p,\\
+ F_p(A)&=J_n\otimes\Pi_p,&
+ F_{2p}(A)&=(S^p-J_n)\otimes\Pi_p,
+\end{aligned}
+\]
+with every other positive-time coefficient zero.
+Indeed \(R_m=\mathcal D\mathcal T_A^m\mathcal D\) equals
+\(S^{m/2}\) in the first factor for even \(m\), and \(J_n\) for
+odd \(m\); the second factor is \(I_p\) if \(p\mid m\), and \(J_p\)
+otherwise. This follows from the core periodicity and the same
+nonzero-coefficient Gauss identity as TRACE-081.
+The exact recurrence
+\[
+ R_m=\sum_{t=1}^m F_t R_{m-t},\qquad R_0=I,
+\]
+uniquely determines \(F_t\). In the four orthogonal diagonal sectors
+given by constants or their complements in each tensor factor,
+the first nonzero return times are respectively \(1,2,p,2p\).
+Later returns are powers of the respective isometry. Substitution
+proves both the four displayed coefficients and all the zero ones,
+including times beyond a period.
+
+\paragraph{Large observed pulse and small tail.}
+Let \(D_0\) be centered diagonal space, of dimension \(N-1\), and
+\(W=\operatorname{Ran}(\Pi_n\otimes\Pi_p)\), of dimension
+\(d_W=(n-1)(p-1)\). Write \(\delta=4p\epsilon\).
+The estimate
+\(\|\mathcal T_U-\mathcal T_A\|_{\mathrm{HS}\to\mathrm{HS}}
+\le2\epsilon\) and contraction telescoping give
+\[
+ \|F_t(U)-F_t(A)\|_{2\to2}\le2t\epsilon.
+\]
+Since \(F_{2p}(A)|_W=S^p\otimes I\) is an isometry,
+\[
+ \|F_{2p}(U)x\|_2\ge(1-\delta)\|x\|_2\quad(x\in W),
+ \qquad
+ 1\ge\frac{\|F_{2p}(U)|_{D_0}\|_{\mathrm{HS}}^2}{N-1}
+ \ge\frac{d_W}{N-1}(1-\delta)^2\longrightarrow1.
+\]
+The finite-dimensional min-max principle also gives at least \(d_W\)
+singular values at least \(1-\delta\).
+
+This large pulse coexists with the all-source bound
+\[
+ \sum_{t>2p}\|F_t(U)x\|_2^2\le\delta^2\|x\|_2^2,\qquad
+ \frac1{N-1}\sum_{t>2p}\|F_t(U)|_{D_0}\|_{\mathrm{HS}}^2
+       \le\delta^2\le16N^{-6}.
+\]
+For completeness set \(Y_s(U)=(\mathcal Q\mathcal T_U)^s\mathcal D\).
+Unitarity and orthogonal projection give
+\[
+ \|Y_{t-1}(U)x\|_{\mathrm{HS}}^2-\|Y_t(U)x\|_{\mathrm{HS}}^2
+       =\|F_t(U)x\|_2^2.
+\]
+The four \(F_t(A)^*F_t(A)\) are the four sector projections summing
+to \(I\), so \(Y_{2p}(A)=0\). Telescoping yields
+\(\|Y_{2p}(U)\|\le\delta\). Finite tail sums are bounded by that
+survival energy, and the increasing limit proves the infinite bound.
+No weighted-time bound or completeness theorem is imported.
+
+\paragraph{Cyclic compositions and the time scale.}
+For \(p\ne3\), let \(M_A=F_{2p}(A)|_{D_0}\) and
+\(M_U=F_{2p}(U)|_{D_0}\).
+The three-cycle permutation \(H^2\) and its square each fix precisely
+one coordinate, giving \(\operatorname{Tr}S=\operatorname{Tr}S^2=1\).
+Thus for every positive integer \(q\),
+\[
+ M_A^q=(S^{pq}-J_n)\otimes\Pi_p,\qquad
+ \left|\frac{\operatorname{Tr}_{D_0}M_U^q}{N-1}
+ -\frac{d_W}{N-1}\mathbf{1}_{3\mid q}\right|\le q\delta.
+\]
+For fixed \(q\), normalized traces converge to
+\(\mathbf{1}_{3\mid q}\): the first two vanish while the cubic one
+tends to one. These are unconjugated powers;
+\(\operatorname{Tr}(M_UM_U^*)/(N-1)\to1\), rather than zero.
+Nor is \(M_U^q\) a later first-return coefficient:
+\(F_{6p}(A)=0\), while \(R_{6p}(A)|_W=M_A^3|_W=I_W\).
+Completed short excursions can therefore recycle coherence despite
+a negligible monitored tail.
+
+Taking any odd primes \(p_k\ge4^{k^2}\), with \(t_k=2p_k\), gives
+\[
+ \frac{t_k}{N_k}=\frac2{4^k}=2\|B(U_k)\|^2\longrightarrow0,
+ \qquad
+ \frac{t_k}{N_k^\alpha}
+    =\frac{2p_k^{1-\alpha}}{4^{\alpha k}}\longrightarrow\infty
+       \quad(0<\alpha<1\text{ fixed}).
+\]
+Unboundedness of primes suffices. Exact flat intensities, vanishing
+coordinate reversal, simple spectrum and macroscopic uniformity
+cannot therefore supply a uniform norm-decay shortcut for these
+observed coefficients. The result concerns the abstract family,
+not the fixed smooth chaotic map, its specific physical cavity
+source, a conjugated covariance theorem, a phase-averaged ensemble
+or BGS universality. The proof has independent internal reconstruction;
+finite exact replays and unconfirmed compiler/build executions have
+separate scope.

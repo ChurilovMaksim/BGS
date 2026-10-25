@@ -1,0 +1,158 @@
+\section{Circular-phase trace schemes and the remaining signed boundary}
+\label{sec:phase-clusters-20261019}
+
+The 16--19 October continuation concerns auxiliary phase ensembles, not
+the fixed-coupling BGS conclusion.  The maintained sources and exact proof
+revisions are indexed in
+\path{mathematics/phase_ensemble_continuation_20261019.md} and
+\path{archive/record/chat_integration_20261019.md}.  The new statements have author
+proofs, checked by the author, with exact finite computations where specified;
+independent review and priority are not established.
+
+For an odd prime $p$, a nondegenerate alternating form $\Omega$ and
+$N=p^{2d}$, put
+\[
+ S_{xy}=N^{-1/2}\exp(2\pi i\Omega(x,y)/p),\qquad U=DS,
+ \qquad V_m=\mathbb E|\operatorname{Tr}U^m|^2,
+\]
+where $D$ has independent uniform phases.  Then $S=S^*$ and $S^2=I$.
+For every fixed number of trace powers the joint law is
+\[
+ (\operatorname{Tr}U,\operatorname{Tr}U^2,\ldots,
+       \operatorname{Tr}U^M)
+ \ \Longrightarrow\ (Z,Z^2,\sqrt3Z_3,\ldots,\sqrt M Z_M).
+\]
+The Gaussian variables displayed separately are independent.  The exact
+identity $\operatorname{Tr}U^2=(\operatorname{Tr}U)^2$ prevents identifying
+the first two global traces with independent CUE traces.  This does not
+by itself decide the local microscopic law.  The polynomial trace-window
+results likewise do not reach microscopic absorption.
+
+\subsection{Statements of TRACE-095--097 and TRACE-099}
+
+The following statements (canonical source:
+\path{mathematics/phase_ensemble_continuation_20261019.md}) are recorded
+here because this section is their registered manuscript source.
+
+TRACE-095 (conditional). Under the pinned feedback trajectory, covariance
+and moment inputs and the reversal hypothesis of the source, the Gaussian
+limit of every fixed selected block extends to all $u_N\to\infty$ with
+$u_N/N\to0$, with error $O((u_N/N)^{1/4}+u_N^{-1/8})$ for the stated
+smooth bounded tests of disjoint entries. The substitution $u=2$ is not
+permitted.
+
+TRACE-096. For a deterministic unitary $S$ with independent row phases,
+spectral averaging identifies the law of the open-port vector $X_i$ with
+the eigenvector-ratio law weighted by $|\psi_l(i)|^2$. Closing one port
+of a two-port cavity with transmission $T$ by a fresh uniform phase gives
+$J=T/|1-\sqrt{1-T}\,e^{i\phi}|^2$ and $Y=J/(1+J)$; the resulting
+probability kernel is weakly continuous and injective, so the transmission
+laws converge to $\mathrm{Uniform}[0,1]$ if and only if the corresponding
+$Y$ laws converge to $\mathrm{Beta}(1,2)$. This is an equivalence
+criterion; it does not prove either convergence.
+
+TRACE-097 (conditional). Conditional on the fixed-level TV compactness
+input TC of the source (the full $G$ or rank condition $R$ stated there),
+the complete normalized positive path-clock current is controlled at
+arbitrary cutoffs $K_N\to\infty$. The statement evaluates neither the
+finite-channel transmission law nor the complete signed trace sum, and
+TC is not discharged in this section.
+
+TRACE-099. For the symplectic seeds the signed mixed-moment comparison
+reaches trace powers $o(N^{1/5})$; for generic fixed bilinear seeds of
+dimension $b$ it reaches $o(N^{1/(6b)})$, with the actual Gauss phases
+retained. The associated disk laws concern fixed compact subsets of
+$|z|<1$; they do not reach $z=e^{-s/N}$ or microscopic absorption.
+
+\subsection{Exact schemes and a joint quartic limit}
+
+The signed phase expansion assigns order
+$j=c+\tfrac12\operatorname{rank}(H_\Pi^{\mathsf T}KH_\Pi)$ and defect
+$\delta=2j-e$ to an open connected cluster with $e$ common-edge ports.
+Connected clusters satisfy $j\le\delta+1$.  Exact neutral peeling leaves
+primitive order at most $2\delta$ and size at most $16\delta$.  This
+controls each fixed defect without summing all connected types.
+
+The saturated-support classification through rank six bounds the connected
+four-port core by size sixteen.  Exact enumeration gives a factor $1-z$
+in each of its twenty-four open channels.  The physical quotient at
+$z=1$ is $-191/12$.  Together with the earlier primitives this completes
+the total-defect-two sector for $0<\tau<1$, where $m/N\to\tau$.
+For fixed $h\ge3$, the stable coefficient has degree at most $2h-3$
+when $m>8h$; its vanishing is not asserted.
+
+There is also a different joint family: all neutral additions and arbitrary
+numbers of connected clusters of individual defects one or two.  Its
+correction $\mathcal R_{\le2}$ is normalized to $V_m/m$. The gluing uses
+Stanley~\cite{Stanley1981Cycles}, Lemmas~2.1--2.2 and Theorem~3.1;
+the project supplies the port weights, cumulants and uniform majorant. Define
+\[
+ v(x)=\frac7{12}+\frac53x,\quad
+ q_3(x)=2+\frac32x+\frac12x^2,\quad
+ q_4(x)=6+\frac{25}2x+\frac{19}2x^2+2x^3.
+\]
+For each $x\in[0,1]$, let $w_x$ be the unique positive solution of
+\[
+ \tau=w_x+w_x^2+\frac{q_3(x)}2w_x^3+\frac{q_4(x)}6w_x^4,
+ \qquad D_x=1+2w_x+\frac32q_3(x)w_x^2+\frac23q_4(x)w_x^3.
+\]
+For $0<\tau<1/9$ the exact five-index sum has limit
+\[
+ L_{\le2}(\tau)=\int_0^1
+ \left[\exp\{w_x+v(x)w_x^2\}\frac{\tau}{w_xD_x}-1\right]dx.
+\]
+One positive majorant controls all five indices, with tail
+$11(9\tau_0)^{H+1}$ on $m/N\le\tau_0<1/9$ and a uniform
+$O_{\tau_0}(N^{-1})$ finite-size error for $9\le m\le\tau_0N$.
+The result includes the earlier overlapping cluster families and must not
+be added to them again.  Its expansion begins
+\[
+ L_{\le2}(\tau)=-3\tau^3+\frac{20893}{864}\tau^4+O(\tau^5).
+\]
+The omitted individual defects remain essential.  The connected
+$(j,\delta,e)=(3,3,3)$ source is known only through a finite size-nine
+prefix in the latest check.  Its full value is not assigned by fitting
+the desired CUE answer.
+
+\subsection{What exact Cauchy averaging does not identify}
+
+For any Hermitian involution the local iid-phase problem admits the
+quantitative Cayley comparison with $S-\operatorname{diag}(\mathrm{Cauchy})$
+stated in the maintained source.  Universality of this particular dense
+deterministic hopping model is still required.
+
+An exact finite-dimensional consequence of bounded holomorphic averaging
+is useful for separating that requirement.  If $B=B^*$, $E$ is real,
+$T$ is iid standard Cauchy diagonal and $A\ge0$ is nonzero, then
+\[
+ Q_A=\operatorname{Tr}\bigl(A(B-T-EI)^{-1}\bigr)
+\]
+is Cauchy with complex parameter
+$\operatorname{Tr}(A(B-EI+iI)^{-1})$ in the lower half-plane.
+For $B=S=S^{-1}$ and $E=0$, its centre and scale are
+$\operatorname{Tr}(AS)/2$ and $\operatorname{Tr}(A)/2$.
+The contour is applied to a bounded transform of $Q_A$, not to its
+undefined first moment.  The general Cauchy/Herglotz principle is
+classical; see Aizenman--Warzel,
+\href{https://arxiv.org/abs/1312.7769}{arXiv:1312.7769v2}.
+
+Even all these positive projections do not determine a matrix law.  For
+the two-dimensional exchange involution, compare
+\[
+ X=(S-\operatorname{diag}(t_1,t_2))^{-1},\qquad
+ Y=S/2+\operatorname{diag}(c_1,c_2)/2,
+\]
+with independent standard Cauchy variables.  Every positive projection
+$\operatorname{Tr}(AX)$ and $\operatorname{Tr}(AY)$ agrees in law.
+For $A=\operatorname{diag}(1,-1)$ the signed tail constants are instead
+$4/\pi^2$ and $2/\pi$.  More generally, for every non-diagonal Hermitian involution, including
+the exact Fourier seed, $H^{-1}$ and $H/2$ have identical positive scalar
+projections but matrix laws at total variation distance one. A rank-two
+signed source separates a deterministic value from a probability-zero
+polynomial level set. This obstructs the proposed positive-source closure,
+not BGS. Finite-dimensional total-variation separation does not exclude
+coincident limits for particular spectral observables.
+
+All higher connected types, the complete signed mixed hierarchy and the
+comparison with the unchanged frozen propagator remain open.  The
+conditional feedback and TV-compactness routes retain their named inputs.
