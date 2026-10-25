@@ -1,6 +1,6 @@
 # Lean 4 formalization
 
-There are 25 active source modules. All 24 compiled with Lean 4.33.1 on 20 October (27 Lake jobs), including CoherenceBudget. See the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) for source hashes, logs, adapter and exact scope. The older receipts below retain their historical scope.
+There are 25 active source modules. All 25 compiled with Lean 4.33.1 on 25 October (3071 Lake jobs, no warnings or errors), including CoherenceBudget and TraceStatement. See the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) for the previous receipt's source hashes, logs, adapter and exact scope. The older receipts below retain their historical scope.
 
 **Claim ID:** BGS-FORMAL-001. This is the finite-certificate, algebraic-kernel
 and falsifier layer. A Lean theorem certifies the proposition in its source;
@@ -28,8 +28,7 @@ formal progress.
 The standalone `FiniteOrbitAlgebra20260922.lean` (22 September 2026) is
 retained as a draft at `drafts/FiniteOrbitAlgebra20260922.lean`, outside
 the active graph. It is source only and has not been typechecked; it
-imports Mathlib, which this project does not vendor (`lake-manifest.json`
-records no packages).
+imports Mathlib, which this project does not vendor as in-repo sources (`lake-manifest.json` declares Mathlib v4.33.1 as a Lake dependency).
 
 ## Active modules
 
