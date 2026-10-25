@@ -74,21 +74,27 @@
       "id": "BGS-CAYLEY-002",
       "title": "Cayley additive-energy reduction",
       "state": "proved",
-      "ledger_status": "EXACT",
+      "ledger_status": "EXACT + FINITE-DESIGN-INSTANCES",
       "source": "mathematics/cayley-arithmetic/cayley_additive_energy.md",
       "dependencies": [
         "BGS-CAYLEY-001"
       ],
       "external_dependencies": [],
-      "evidence": [],
-      "verifiers": [],
+      "evidence": [
+        "evidence/certificates/cayley_fixed_k_audit.json",
+        "evidence/certificates/cayley_exception_k23.json"
+      ],
+      "verifiers": [
+        "computations/verification/mixed_cayley_energy.py",
+        "computations/cpp/cayley_energy_verifier.cpp"
+      ],
       "formalization": [
         "formalization/Bgs/CayleyEnergy.lean"
       ],
       "manuscript": [
         "manuscript/unified_sections/arithmetic_core_part1.tex"
       ],
-      "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target."
+      "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target. Formalization coverage is finite design instances only: formalization/Bgs/CayleyEnergy.lean proves the collision energies at the five explicit designs (199,11,139), (67,11,64), (521,13,101), (53,13,10) and (461,23,23) by native_decide; it states no general (for all K) reduction of the mixed layer to additive energy and no uniform cutoff theorem in K."
     },
     {
       "id": "BGS-CAYLEY-003",

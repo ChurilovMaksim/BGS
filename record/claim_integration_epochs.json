@@ -1786,10 +1786,20 @@
       "id": "BGS-CAYLEY-002",
       "historical_row_sha256": "0382809cd2bfa421e253af29a82c582571ee1454f77e4f1fca4d1512fdb05703",
       "fields": {
-        "source": "mathematics/cayley-arithmetic/cayley_additive_energy.md"
+        "source": "mathematics/cayley-arithmetic/cayley_additive_energy.md",
+        "ledger_status": "EXACT + FINITE-DESIGN-INSTANCES",
+        "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target. Formalization coverage is finite design instances only: formalization/Bgs/CayleyEnergy.lean proves the collision energies at the five explicit designs (199,11,139), (67,11,64), (521,13,101), (53,13,10) and (461,23,23) by native_decide; it states no general (for all K) reduction of the mixed layer to additive energy and no uniform cutoff theorem in K.",
+        "evidence": [
+          "evidence/certificates/cayley_fixed_k_audit.json",
+          "evidence/certificates/cayley_exception_k23.json"
+        ],
+        "verifiers": [
+          "computations/verification/mixed_cayley_energy.py",
+          "computations/cpp/cayley_energy_verifier.cpp"
+        ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of `source` to mathematics/cayley-arithmetic/cayley_additive_energy.md (P2-MATH wave 6, cayley-arithmetic); no status, title, boundary or content change.",
-      "review": "archive/MANIFEST-P2MATH6.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of `source` to mathematics/cayley-arithmetic/cayley_additive_energy.md (P2-MATH wave 6, cayley-arithmetic); no status, title, boundary or content change. Ф.4 (2026-10-25): re-scope admitted — ledger_status, boundary, evidence and verifiers updated to finite design instances only; no state, title, source or dependency change.",
+      "review": "archive/MANIFEST-P2MATH6.md; Ф.4 P1 re-scope (formalization/Bgs/CayleyEnergy.lean header)"
     },
     {
       "id": "BGS-CAYLEY-004",
