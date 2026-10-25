@@ -682,7 +682,10 @@
       "fields": {
         "ledger_status": "EXACT + FINITE-CERTIFICATE (PARTIAL AT LARGEST DESIGNS)",
         "boundary": "Finite-field reduction; not a microscopic spectral theorem. Finite-certificate coverage: the receipt verdict PASS is corpus-level; at (461,23) original_pair_vs_explicit_key, direct_vs_fast_distribution and twist_collapse are NOT_RUN_AT_THIS_SIZE (q_values_checked [1] only), and at (199,11) the first two are likewise NOT_RUN_AT_THIS_SIZE; the Python regression anchors only (23,11) and (53,13) and its corpus check verifies file presence and JSON parsing only.",
-        "source": "mathematics/cayley-arithmetic/fourth_moment_reduction.md"
+        "source": "mathematics/cayley-arithmetic/fourth_moment_reduction.md",
+        "manuscript": [
+          "manuscript/unified_sections/ch02_arithmetic_core.tex"
+        ]
       },
       "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. P2-MATH wave 6 (cayley-arithmetic) additionally admits only the topical relocation of `source` to mathematics/cayley-arithmetic/fourth_moment_reduction.md; no status, title, boundary or content change.",
       "review": "record/errata.json"
@@ -693,7 +696,10 @@
       "fields": {
         "state": "verification-pending",
         "ledger_status": "EXTERNAL-THEOREM + AUTHOR PROOF; VERIFICATION-PENDING: NO EVIDENCE RECEIPT (evidence: []); LISTED VERIFIER CHECKS FIVE HARD-CODED DESIGNS AGAINST AN ALGEBRAIC SURROGATE FOR A NEIGHBOURING NOTE AND DISCLAIMS THE K^(8/3) BOUND",
-        "source": "mathematics/cayley-arithmetic/cayley_direct_energy.md"
+        "source": "mathematics/cayley-arithmetic/cayley_direct_energy.md",
+        "manuscript": [
+          "manuscript/unified_sections/ch02_arithmetic_core.tex"
+        ]
       },
       "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. P2-MATH wave 6 (cayley-arithmetic) additionally admits only the topical relocation of `source` to mathematics/cayley-arithmetic/cayley_direct_energy.md; no status, title, boundary or content change.",
       "review": "record/errata.json"
@@ -1377,7 +1383,10 @@
           "mathematics/fixed-map/residual125_uniform_splitting.md",
           "mathematics/fixed-map/odd_sector_count_combination.md"
         ],
-        "source": "mathematics/fixed-map/literal_time_multiplicity_bounds.md"
+        "source": "mathematics/fixed-map/literal_time_multiplicity_bounds.md",
+        "manuscript": [
+          "manuscript/unified_sections/literal_time_multiplicity_bounds.tex"
+        ]
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package Map, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): proof_dependencies mathematics/algebraic_time_rank_transfer.md to mathematics/fixed-map/algebraic_time_rank_transfer.md, mathematics/even_oldform_second_jet.md to mathematics/fixed-map/even_oldform_second_jet.md, mathematics/even_new_sector_first_jet.md to mathematics/fixed-map/even_new_sector_first_jet.md, mathematics/finite_cat_first_jet.md to mathematics/fixed-map/finite_cat_first_jet.md, mathematics/even_oldform_first_order_obstruction.md to mathematics/fixed-map/even_oldform_first_order_obstruction.md, mathematics/first_old_layer_classification.md to mathematics/fixed-map/first_old_layer_classification.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/literal_time_multiplicity_bounds.md to mathematics/fixed-map/literal_time_multiplicity_bounds.md; proof_dependencies mathematics/algebraic_time_rank_transfer.md to mathematics/fixed-map/algebraic_time_rank_transfer.md, mathematics/uniform_cat_multiplicity.md to mathematics/fixed-map/uniform_cat_multiplicity.md, mathematics/oldform_tower_compression.md to mathematics/fixed-map/oldform_tower_compression.md, mathematics/even_oldform_second_jet.md to mathematics/fixed-map/even_oldform_second_jet.md, mathematics/odd_oldform_second_jet.md to mathematics/fixed-map/odd_oldform_second_jet.md, mathematics/even_new_sector_first_jet.md to mathematics/fixed-map/even_new_sector_first_jet.md, mathematics/finite_cat_first_jet.md to mathematics/fixed-map/finite_cat_first_jet.md, mathematics/even_oldform_first_order_obstruction.md to mathematics/fixed-map/even_oldform_first_order_obstruction.md, mathematics/first_old_layer_classification.md to mathematics/fixed-map/first_old_layer_classification.md, mathematics/intermediate_return_operator.md to mathematics/fixed-map/intermediate_return_operator.md, mathematics/residual25_affine_dictionary.md to mathematics/fixed-map/residual25_affine_dictionary.md, mathematics/odd_newest_sector_first_jet.md to mathematics/fixed-map/odd_newest_sector_first_jet.md, mathematics/residual125_uniform_splitting.md to mathematics/fixed-map/residual125_uniform_splitting.md, mathematics/odd_sector_count_combination.md to mathematics/fixed-map/odd_sector_count_combination.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Adata.md; archive/MANIFEST-Map.md; archive/MANIFEST-P2MATH9A.md; archive/MANIFEST-P2MATH9B.md"
@@ -1414,6 +1423,10 @@
           "mathematics/checksum_free_residual.md",
           "mathematics/global_switch_transfer.md",
           "mathematics/fixed-map/rounding_gap_obstruction.md"
+        ],
+        "manuscript": [
+          "manuscript/unified_sections/hamming_low_switch_residual.tex",
+          "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
         ]
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package Map, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-021 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change. Phase-2 topical relocation (P2-MATH wave 9A): proof_dependencies mathematics/balanced_hamming_hierarchy.md to mathematics/fixed-map/balanced_hamming_hierarchy.md, mathematics/balanced_hamming_growth.md to mathematics/fixed-map/balanced_hamming_growth.md, mathematics/fractional_hamming_cancellation.md to mathematics/fixed-map/fractional_hamming_cancellation.md, mathematics/all_coordinate_translation.md to mathematics/fixed-map/all_coordinate_translation.md, mathematics/fourier_half_radius_obstruction.md to mathematics/fixed-map/fourier_half_radius_obstruction.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Phase-2 topical relocation (P2-MATH wave 9B): proof_dependencies mathematics/balanced_hamming_hierarchy.md to mathematics/fixed-map/balanced_hamming_hierarchy.md, mathematics/balanced_hamming_growth.md to mathematics/fixed-map/balanced_hamming_growth.md, mathematics/fractional_hamming_cancellation.md to mathematics/fixed-map/fractional_hamming_cancellation.md, mathematics/macroscopic_coordinate_translation.md to mathematics/fixed-map/macroscopic_coordinate_translation.md, mathematics/all_coordinate_translation.md to mathematics/fixed-map/all_coordinate_translation.md, mathematics/low_switch_offcharge_family.md to mathematics/fixed-map/low_switch_offcharge_family.md, mathematics/fourier_half_radius_obstruction.md to mathematics/fixed-map/fourier_half_radius_obstruction.md, mathematics/symplectic_half_radius_obstruction.md to mathematics/fixed-map/symplectic_half_radius_obstruction.md, mathematics/rounding_gap_obstruction.md to mathematics/fixed-map/rounding_gap_obstruction.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
@@ -1427,7 +1440,10 @@
           "archive/record/schur_reduction_integration_proposal.json",
           "archive/evidence/schur_reduction_20261007/raw/review/review.md"
         ],
-        "source": "mathematics/trace-bridge/phase_trace_checkpoint.md"
+        "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
+        "manuscript": [
+          "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
+        ]
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence from evidence/ to archive/evidence/ (package Schur, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-022 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change.",
       "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Acomplex-schur.md"
@@ -1693,6 +1709,9 @@
           "mathematics/fixed-map/onestep_charge_gap.md",
           "mathematics/global_switch_transfer.md",
           "mathematics/fixed-map/four_branch_parametrix.md"
+        ],
+        "manuscript": [
+          "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
         ]
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-FM-027 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change. Phase-2 topical relocation (P2-MATH wave 9A): proof_dependencies mathematics/four_branch_parametrix.md to mathematics/fixed-map/four_branch_parametrix.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Phase-2 topical relocation (P2-MATH wave 9B): proof_dependencies mathematics/onestep_charge_gap.md to mathematics/fixed-map/onestep_charge_gap.md, mathematics/four_branch_parametrix.md to mathematics/fixed-map/four_branch_parametrix.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
@@ -1809,6 +1828,9 @@
         "verifiers": [
           "computations/verification/mixed_cayley_energy.py",
           "computations/cpp/cayley_energy_verifier.cpp"
+        ],
+        "manuscript": [
+          "manuscript/unified_sections/ch02_arithmetic_core.tex"
         ]
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of `source` to mathematics/cayley-arithmetic/cayley_additive_energy.md (P2-MATH wave 6, cayley-arithmetic); no status, title, boundary or content change. Ф.4 (2026-10-25): re-scope admitted — ledger_status, boundary, evidence and verifiers updated to finite design instances only; no state, title, source or dependency change.",
@@ -1818,7 +1840,10 @@
       "id": "BGS-CAYLEY-004",
       "historical_row_sha256": "bfad12bd6cbc245a0cafa2b3503833a0c27f1104a19a87b2f61046c37f75c48d",
       "fields": {
-        "source": "mathematics/cayley-arithmetic/cayley_curve_uniform.md"
+        "source": "mathematics/cayley-arithmetic/cayley_curve_uniform.md",
+        "manuscript": [
+          "manuscript/unified_sections/ch02_arithmetic_core.tex"
+        ]
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of `source` to mathematics/cayley-arithmetic/cayley_curve_uniform.md (P2-MATH wave 6, cayley-arithmetic); no status, title, boundary or content change.",
       "review": "archive/MANIFEST-P2MATH6.md"
@@ -1840,6 +1865,9 @@
         "proof_dependencies": [
           "mathematics/fixed-map/actual_charge_radial_shell.md",
           "mathematics/fixed-map/actual_charge_radial_resolvent.md"
+        ],
+        "manuscript": [
+          "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
         ]
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-FM-028 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change. Phase-2 P2-MATH wave 9A additionally admits only the topical relocation of BGS-FM-028 field(s) ['proof_dependencies'] to mathematics/fixed-map/ (see archive/MANIFEST-P2MATH9A.md); no status or content change.",
@@ -1855,6 +1883,9 @@
           "mathematics/fixed-map/literal_fixed_word_freeness.md",
           "mathematics/fixed-map/literal_growing_word_window.md",
           "mathematics/fixed-map/literal_strong_freeness_obstruction.md"
+        ],
+        "manuscript": [
+          "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
         ]
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-FM-029 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change. Phase-2 P2-MATH wave 9B additionally admits only the topical relocation of BGS-FM-029 field(s) ['proof_dependencies'] to mathematics/fixed-map/ (see archive/MANIFEST-P2MATH9B.md); no status or content change.",
@@ -1864,7 +1895,10 @@
       "id": "BGS-FM-030",
       "historical_row_sha256": "0b3b43549fb5e1382320e6878418b33aaa97ec8f890d15b9a4d76589606e39b6",
       "fields": {
-        "source": "mathematics/trace-bridge/phase_trace_checkpoint.md"
+        "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
+        "manuscript": [
+          "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
+        ]
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-FM-030 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change.",
       "review": "archive/MANIFEST-P2MATH10a.md"
@@ -1918,7 +1952,10 @@
       "id": "BGS-TRACE-023",
       "historical_row_sha256": "d45380ae19b31e794c4a80062c16eb627e57038f4991f809f41a8db1fcbe6bc1",
       "fields": {
-        "source": "mathematics/trace-bridge/phase_trace_checkpoint.md"
+        "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
+        "manuscript": [
+          "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
+        ]
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-TRACE-023 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change.",
       "review": "archive/MANIFEST-P2MATH10a.md"

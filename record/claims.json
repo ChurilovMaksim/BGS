@@ -66,7 +66,7 @@
         "formalization/Bgs/PairKeySecondMoment.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/arithmetic_core_part1.tex"
+        "manuscript/unified_sections/ch02_arithmetic_core.tex"
       ],
       "boundary": "Finite-field reduction; not a microscopic spectral theorem. Finite-certificate coverage: the receipt verdict PASS is corpus-level; at (461,23) original_pair_vs_explicit_key, direct_vs_fast_distribution and twist_collapse are NOT_RUN_AT_THIS_SIZE (q_values_checked [1] only), and at (199,11) the first two are likewise NOT_RUN_AT_THIS_SIZE; the Python regression anchors only (23,11) and (53,13) and its corpus check verifies file presence and JSON parsing only."
     },
@@ -92,7 +92,7 @@
         "formalization/Bgs/CayleyEnergy.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/arithmetic_core_part1.tex"
+        "manuscript/unified_sections/ch02_arithmetic_core.tex"
       ],
       "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target. Formalization coverage is finite design instances only: formalization/Bgs/CayleyEnergy.lean proves the collision energies at the five explicit designs (199,11,139), (67,11,64), (521,13,101), (53,13,10) and (461,23,23) by native_decide; it states no general (for all K) reduction of the mixed layer to additive energy and no uniform cutoff theorem in K."
     },
@@ -114,7 +114,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/arithmetic_core_part1.tex"
+        "manuscript/unified_sections/ch02_arithmetic_core.tex"
       ],
       "boundary": "Applies in the stated range; it does not reach the centered K^(2+o(1)) target."
     },
@@ -140,7 +140,7 @@
         "formalization/Bgs/CayleyCurveEnergy.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/arithmetic_core_part1.tex"
+        "manuscript/unified_sections/ch02_arithmetic_core.tex"
       ],
       "boundary": "Uniform K^(8/3)+K^4/p scale; does not prove centered quadratic pointwise energy."
     },
@@ -2306,8 +2306,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/literal_time_multiplicity_bounds.tex",
-        "manuscript/unified_sections/intermediate_old_layers.tex"
+        "manuscript/unified_sections/literal_time_multiplicity_bounds.tex"
       ],
       "boundary": "N=7*5^e,e>=1; every nonzero real algebraic t, including 10^-80N: multiplicity<=7. At least 612N/625+7 simple eigenvalues for even e>=4 and 612N/625+175 for even e>=6. Exact special lower bounds 4333 at N=4375 and 107443 at N=109375. Odd e>=3 gives at least 24N/25 simple eigenvalues; odd e>=5 gives 24N/25+35; odd e>=7 gives 24N/25+875 (875=840+35, counted once) and bounded simple U at 35,175. No full uniform U simplicity, gap, invariant oldform U subspace, complex scalar commutant, trace-statistical or BGS conclusion.",
       "dependency_scope": "Rank transfer uses algebraic exponential-polynomial minors and registered LW. Cat/tower/core/newest-sector premises separately reviewed; no simple-A or pair-commutant inference. Kelmer inert multiplicity mechanism cited only for prior attribution. First-old classification, exact matrix-return/lattice obstruction, and residual25 bridge independently accepted; local branch counts add over disjoint complete cat eigenspaces and inherit the existing exponential-rank transfer. Residual25 uses circlewise unit denominator6; nonprimitive j2 term retains residual cat and valuation>=49/25. No new external input. Odd newest first-order and residual125 second-order bridges are separately independently accepted; the 875-dimensional W_j is contained in W1 and disjoint from the newest complete cat groups. Existing rank transfer and registered LW give literal-time counts. The odd first-old follow-on is excluded."
@@ -2370,7 +2369,7 @@
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/hamming_low_switch_residual.tex",
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Actual odd N fixed literal tau and each fixed positive compact pair band. Current Q_new=I-P_H-P_bal-O_low-L_all removes all occupation-mismatched high-Hamming low-switch masks, including checksum zero, with cap floor(gamma a N/(8log N)); balanced part remains Pi-P_H-P_bal. Full high-switch damped control requires kappa a N(1-z_N)-2log N->+infinity. Signed undamped T16, full Q_new trace, balanced identification, plateau, higher factorial law and BGS remain OPEN. Existing entropy/radius hypotheses and no raw balanced-mask identification are unchanged.",
       "dependency_scope": "Current checksum-free core uses FM027 actual phase/parametrix A2--A5 and scoped FM021; old all-translation Egorov/mixing proof survives independently, not as an unnecessary prerequisite of the strengthened synthesis. Existing Hamming/Haar and separate altered-operator rounding bounds retain their own inputs."
@@ -2400,7 +2399,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Actual odd-N fixed tau=10^-80, existential rho<1 and N0 for all nonzero cyclic charge blocks; centered charge-pinched ordinary-HS gap. Occupation twists and damped switch controls retain exact masks. No effective startup, full adjoint contraction, z=1 boundary comparison or BGS conclusion.",
       "dependency_scope": "Actual parametrix/nonlinear phase A2--A5 and scoped FM-021 amplitude/zero-charge inputs only. FM-018, Egorov, A6--A7 and classical mixing are excluded as core prerequisites."
@@ -2427,7 +2426,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Arbitrary finite unitary: exact Schur-energy identity and expected three-radius criterion. Positivity after phase expectation; reverse compact-to-Abel needs near-zero majorant/Fejer tail. Actual microscopic radial limit, deterministic offcharge and higher factorial identification stay OPEN.",
       "dependency_scope": "Core is elementary finite-N algebra/phase integration. FM-021 only supports actual boundary-density flatness. No eliminated-minor propagation or FM-022 prerequisite."
@@ -2457,7 +2456,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Arbitrary finite unitary, |a|,|b|<1 and complex numerator sources: complete compact color-one pair projector identity. Universal F_N(s)<=coth(s/N)/(2N). Fixed-flavor complex source regularity and full-product uniform integrability concern original phase ensemble, not a higher-flavor CFT. Complete signed hook-covariance limit and balanced identification remain OPEN.",
       "dependency_scope": "Zirnbauer exact coherent sections/projector domain is mapped; generalized Minami resampling is credited but the unitary source-bound adaptation is proved directly. No actual P/Q-gap input identifies the limit."
@@ -2486,7 +2485,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Unchanged odd-N fixed tau, q=1 theta=0 only. Whole charge pinching is collectively compact and annihilates centered near-unitary quasimodes. Every delta_N->0 has radius 1-delta_N+o(delta_N); exterior relative resolvent comparison and worst unit-circle singular-resolvent scale delta_N^-1(1+o(1)). No occupation-uniform extension, power/Schatten estimate or signed T16 conclusion.",
       "dependency_scope": "Unlike FM027, uses inherited ordinary-Weyl embedding, one-step Egorov and actual classical mixing. Frozen author citation is resolved by exact-diff acceptance seal. Replay checks packet preservation, not this analytic theorem."
@@ -2520,7 +2519,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Literal odd-N fixed tau: fixed free-group normalized *-moments are two free Haar unitaries, with relative-word chord/rank laws. Separately reviewed uniform nonidentity trace decay holds only through floor(log log log N/(4log8)). A fixed commutator polynomial has liminf lambda_max>=1-10^-148 versus free radius sqrt(3)/2, refuting strong freeness. Neither triple-log windows nor the derived-polynomial outlier identifies U_N microscopic statistics or Heisenberg words.",
       "dependency_scope": "Exact actual midpoint symbol and faithful equilibrium derivative representation; inherited one-step Egorov/fixed canonical-transformation trace input retains its stated review boundary. Seven-divisible subsequences included. Growing quantitative separation uses separately checked EXT-ROY-2016. Strong obstruction uses exact raw Gaussian/Weyl conventions and fixed-symbol coherent-state bounds, not a growing-symbol theorem."
@@ -2554,7 +2553,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "All positive N,k, max P<=C/N, singular ||P-J||<=rho<1 and centered strict possibly nonnormal blocks: S>=H/(2K^2), K=1+sqrt(C-1)/(1-rho). Actual eventual c=1/50. Sharp real-alpha absorption gives S_alpha>=cH-ks/2. Scalar ordinary gauge/radial slice does not give block/super gauge. No full superintegral positivity, normalized large-N tail, complex-alpha substitution or BGS identification.",
       "dependency_scope": "Bhatia generalized EMI exact primary leaf; ordinary finite matrix proof and centered block extension separately reviewed. FM021 only supports eventual actual C/rho constants. Bare-body source interpretation is separately qualified, not a full CFT prerequisite."
@@ -2589,7 +2588,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Full signed masked T16 remains OPEN; BGS-TRACE-005 remains OPEN; Balanced microscopic law remains OPEN; Higher factorial comparison and deterministic BGS remain OPEN; No external referee or formal proof-assistant certificate; Unmasked q=1 one-pinch only; the annealed leaf separately extends to one consecutive block; No claim that actual positive closure extends to the whole consecutive-block hierarchy; No Hamming/switch mask conclusion; No arbitrary inserted-B corollary; No aggregate rate or practical startup; No growing-r uniformity; No finite-N positivity of the signed subtraction; Generic period-six witness is a changed family, not an actual-model counterexample",
       "statement": "For the unchanged literal odd-N family, every complex smooth w supported in a fixed positive Heisenberg band obeys N^-2 sum_m w(m/N)[E_N,m(0)-integral E_N,m(theta)dtheta] -> 0. The actual untwisted positive aggregate N^-2 sum_m |w(m/N)| E_N,m(0) -> 0 also holds for bounded compact-band weights. The new actual fixed-lag displacement overlap estimate and the accepted annealed deletion are the two independently reviewed leaves of this ONE scoped claim.",
@@ -2629,7 +2628,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Full signed masked T16 remains OPEN; BGS-TRACE-005 remains OPEN; Balanced microscopic law remains OPEN; Higher factorial comparison and deterministic BGS remain OPEN; No external referee or formal proof-assistant certificate; N1/N2 non-centerable sectors remain in original compact form; No positive full signed-source measure; No super-Berezinian; No dimension-uniform normalized microscopic tail; No body-only substitute for the full signed source",
       "statement": "For every odd N>=3, labelled stable mixed circle/open-disk strata obey the exact ordinary centering formula (9)-(10), with gauge determinant Delta>=2N-1 and the distinct coarea Jacobian (5). The completed signed source and fixed holomorphic source derivatives obey the fixed-N cutoff bounds (13),(17) for 0<epsilon<=1/(N+3).",
@@ -2667,7 +2666,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Full signed masked T16 remains OPEN; BGS-TRACE-005 remains OPEN; Balanced microscopic law remains OPEN; Higher factorial comparison and deterministic BGS remain OPEN; No external referee or formal proof-assistant certificate; Changed quantizer only; no actual-model counterexample; Schatten preservation is conditional on a separately supplied fixed p>2 bound; no actual Schatten theorem; No arbitrary occupation-twist compactness; No divergence for the fixed-L rounded family; No unnormalized o(1) low-trace preservation from nearest rounding; No exact kick/subprincipal/all-order smooth-symbol preservation",
       "statement": "For each fixed nonzero nonnegative smooth positive-band weight, microscopic spectral rounding gives a changed family at O_w(N^-1) norm distance preserving the specified coarse data but with positive signed high-Hamming/high-switch offcharge liminf and negligible damped endpoint. The separate growing-period N=p^2 witness has an O(N^-3) split with simple spectrum, no root-of-unity eigenvalue ratios or positive scalar power, and residual growth at least (sqrt(N)/2) integral w-O_w(1). A combined rounded-and-split variant preserves the positive rounding lower bound without exact recurrence.",
@@ -2701,7 +2700,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Full signed masked T16 remains OPEN; BGS-TRACE-005 remains OPEN; Balanced microscopic law remains OPEN; Higher factorial comparison and deterministic BGS remain OPEN; No external referee or formal proof-assistant certificate; No absolute current-weight bound from theta(E)<=support size; No claim that residual is small; its required limit is negative; No new phase-current asymptotic estimate; Finite equal-P/Q Hadamard discriminator has ||Q||=1 and is not an asymptotic actual-gap counterexample; Classical Koszul/BEST/Markov enumeration credited; no priority claim",
       "statement": "For every finite N,m, zero-extension by e_j(A)=0 for j>N precedes full marked cycle selection; disconnected slot-cycle configurations cancel before absolute values or phase expectation. Eulerian edge occupations give exact directed-tree counts with repeated coordinates/edges/periodic words. Once-counted cyclic/reverse/overlap subtraction yields the exact signed residual current expression. Under eventual eta_N<=C/N, ||P_N-J_N||<=gamma<1 and ||Q_N||<=rho<1, the removed Abel contribution tends to 1/(4s^2), and balanced identification is equivalent to residual limit -exp(-2s)/(4s^2) for every s>0.",
@@ -2739,7 +2738,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_phase_trace_checkpoint.tex"
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
       ],
       "boundary": "Finite-unitary covariance retains complete occupation sums and nontrivial Green–Kubo H. Actual convergence only on ceil(T_N/2)<=m<=T_N, no all-fixed-m or full-prefix Ward convergence, no effective startup or microscopic window. Unconjugated B-kernel bound removes only the degree-two exception for the stated mixed-moment family. Absorbed Ward (13), balanced law, literal signed masked T16, TRACE-005, higher factorial identification and BGS remain OPEN. No formal certificate or external referee audit. Original ZIP 403; archived checker/receipts/source-pins unavailable and unreplayed.",
       "dependency_scope": "Finite covariance/permutation/centering/signed Ward algebra freshly audited. FM-021 flatness/P mixing and FM-022 reverse decay yield the upper-half slow growing window. Actual transpose-product uses raw four-branch parametrix Sections1,2,4-6 with literal-time curvature and sampling aliases, not coarse gaps alone. Accepted phase Ward v2 normalization is inherited; Ward(13) is not an input or conclusion."
@@ -2775,7 +2774,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_unmasked_pinch_checkpoint.tex"
+        "manuscript/unified_sections/unmasked_insertion_closure.tex"
       ]
     },
     {
@@ -2809,7 +2808,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/checked_unmasked_pinch_checkpoint.tex"
+        "manuscript/unified_sections/unmasked_insertion_closure.tex"
       ]
     },
     {
@@ -2832,7 +2831,7 @@
         "formalization/Bgs/PhaseChannelJetKernels.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/phase_channel_jet_20261008.tex"
+        "manuscript/unified_sections/phase_channel_jets.tex"
       ],
       "boundary": "Uniform coordinate phases reused at every return; Frobenius channel norm and norm of averaged full eigenspace pinching. No microscopic form factor, mixed-source law, deterministic phase limit or BGS. Computational controls are finite float64/complex128 quadrature and random samples (channels m in (3, 4); cascade samples at m<=6; jets at m<=3); per the verifier's own scope they do not certify the general analytic theorems.",
       "priority_status": "not-established",
@@ -2859,7 +2858,7 @@
         "formalization/Bgs/PhaseChannelJetKernels.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/phase_channel_jet_20261008.tex"
+        "manuscript/unified_sections/phase_channel_jets.tex"
       ],
       "boundary": "Square finite rational inner F=zG, boundary right weight T^-1/2. Optimal leading 4/3 with lower-order terms; smooth nonnegative C2 localization retains omega-second-derivative penalty. No actual cubic-delay moment, arbitrary event localization or microscopic cavity law. Optimality of the leading coefficient 4/3 rests on the analytic proof only; the computational controls are finite float64 quadrature and random samples and, per the verifier's own scope ('no theorem or optimality certificate'), do not certify optimality.",
       "priority_status": "not-established",
@@ -2905,7 +2904,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_channel_jet_20261008.tex"
+        "manuscript/unified_sections/phase_channel_jets.tex"
       ],
       "boundary": "Deterministic phase-independent Hermitian H with Tr H=m and Tr H^2<=C_H m; bounded real flow and normal scalar absorption. L1 unweighted scalar source and each fixed derivative only; no anisotropic physical absorption, mixed products, scalar endpoint identification or deterministic phase removal. Computational controls are the finite float64 scalar_flow_controls of the shared phase_channel_jet.py run; per that script's own scope they do not certify the general analytic theorem.",
       "priority_status": "not-established"
@@ -2925,7 +2924,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "The arbitrary complex source bound is an exact contraction theorem; it does not identify a microscopic reference law.",
       "priority_status": "not-established"
@@ -2945,7 +2944,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Every fixed Lp absorption bound and Abel continuity; no uniformity as p grows and no local-law identification.",
       "priority_status": "not-established"
@@ -2969,7 +2968,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Phase-independent positive clock, trace m, bounded normalized second moment, endpoint flatness and gap. L2 scalar comparison and fixed derivatives only; no higher physical-source mixed moments or actual-cavity hypotheses.",
       "priority_status": "not-established"
@@ -3002,7 +3001,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "For every fixed L, K,kappa>0 and m=ceil(log(2N)^(1+kappa)), intersection-probability uniform equality of all incoming/outgoing diagonal powers through L, vanishing off-diagonal powers and mixed entries S(uT/N)^r, and all fixed empirical clock moments. The explicit full-depth reference measure follows conditionally; its rank lower bound is exact pathwise. Additional flatness probability tending to one yields actual weak probability convergence and killed-expectation convergence only. Flatness probability, growing-order and edge bounds, unrestricted exceptional-event moments, actual freeness, scalar microscopic eigenphase identification and BGS remain open. Two false original finite-word assertions were repaired before promotion; finite controls and internal review are not formal or external certification.",
       "priority_status": "not-established"
@@ -3028,7 +3027,7 @@
         "formalization/Bgs/PhaseFrameWitness.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample.",
       "priority_status": "not-established",
@@ -3053,7 +3052,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Constructed flat unitary completions and a prescribed mean-one clock law; no independently sampled phase-ensemble violation and no change-free counterexample to the maintained quantization.",
       "priority_status": "not-established"
@@ -3073,7 +3072,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Strict matrix balls, intensity singular gap, exact determinant defect and source derivatives. Ordinary-body coercivity alone does not control the entire graded integral.",
       "priority_status": "not-established"
@@ -3097,7 +3096,7 @@
         "formalization/Bgs/TorusDimensionBound.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Central L2 functions under Haar sampling, sharp 1/(h+1) variance factor. A chosen deterministic scattering matrix and circular symmetric spaces require separate statements.",
       "priority_status": "not-established",
@@ -3128,7 +3127,7 @@
         "formalization/Bgs/ActiveRankDefect.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Explicit finite-field Fourier scattering with reused independent phases. Leading ramp n=o(N^(1/8)); symmetric first correction n=o(N^(1/9)), not N^(1/7), not Heisenberg times. Dihedral occupation sector alone does not provide the plateau.",
       "priority_status": "not-established",
@@ -3153,7 +3152,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Recovered proof of the rank/collision coupling, specified Poisson TV bound and stated CLT window. An unsaved proposed N^(1/7) correction is explicitly unconfirmed; no variance asymptotic inferred from L1 coupling.",
       "priority_status": "not-established"
@@ -3173,7 +3172,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "All alpha>0, nonzero balanced signatures and K>=1: ratio at most 1/(N+alpha K); unique sharp highest-root mode. External priority is not established.",
       "priority_status": "not-established"
@@ -3203,7 +3202,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Haar circular background frozen once, randomness then only in compatible phases; spectral L2 functions, paired CSE phases and half trace. Full conditional weak Sine-beta limit in probability over the background. No prescribed deterministic-background theorem or Sine-limit rate.",
       "priority_status": "not-established"
@@ -3231,7 +3230,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Growing n/N->1, d=o(N), logarithmic critical variance, every fixed cumulant and mixed moment, conditional Gaussian law. Second/fourth cumulants are prior HSW formulas; no independent-block interpretation or external novelty certificate.",
       "priority_status": "not-established"
@@ -3258,7 +3257,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Mean L2(0,T) convergence of the ceil(N*tau) interpolation and all-time individual CSE MSE control. No expected temporal supremum; floor interpolation with n=0 is excluded. The limiting curves are prior work.",
       "priority_status": "not-established"
@@ -3284,7 +3283,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Full centered point-process path comparison on R^2 loglog(1/delta)/log(1/delta)->0; all fixed normal-source Lp products and derivatives. Random clock is conditioned on the phase-independent past. No initial law, no Lp norm of a continuous supremum, no higher physical-source product assertion.",
       "priority_status": "not-established"
@@ -3313,7 +3312,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Finite-N maximal path bound under one common observation origin. Actual-map growing interval o(sqrt(log N)) uses FM-018 mixing/Egorov and a fixed smooth exactly centered symbol. The time-average endpoint mechanism is prior corpus work; the initial law and BGS remain open.",
       "priority_status": "not-established"
@@ -3343,7 +3342,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Every ordered centered singular value contracts under classical stochastic complementation; independently, every ordered singular value contracts under algebraic Schur complementation of an arbitrary complex contraction with invertible deleted-block resolvent. Quantum intensity and reversal matrices have these complements as conditional means only. Under all-time flatness, explicit stopped-potential bounds propagate small initial intensity and reversal gaps to ceil(log(2N)^(3+kappa)) with intersection failure O(log(2N)^(-kappa)). FM-021/022 supply the respective actual-map initial gaps. Flatness probability, complete symmetry classification, scalar microscopic law and BGS remain open.",
       "priority_status": "not-established"
@@ -3365,7 +3364,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "For each sufficiently large n, genuine unitary intensities have logarithmic flatness, vanishing centered singular norm and an exact logarithmic two-step peak. Correct rho^(h-2) bound, uniform three-step mixing and one-step frozen-entry Schur variance consequence. No maintained trajectory, all-time flatness probability, chaotic quantizer, BGS counterexample or world-priority claim.",
       "priority_status": "not-established"
@@ -3390,7 +3389,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "One-step frozen-label Schur feedback with a fresh uniform phase. General nonzero deleted diagonal, exact complete coherence estimate by P^3, and delta<=1/16 drift bound. At TRACE-074 witnesses E Delta K=-(1+o(1))K/u. No higher moments, high-probability or sustained decay, all-time flatness, physical microscopic identification, BGS or priority claim.",
       "priority_status": "not-established"
@@ -3418,7 +3417,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Independent Haar initial unitary, fresh independent feedback phases and uniform independent coordinate order, F_N(z)=zU_N and T_N=I. Exact S/T independence, matrix-beta graph law, inverse-Jacobi spectrum with the rectangular atom, and trace-moment threshold k<u+1 when q>0. Unconditional every-fixed-order full-depth clock conclusions extend to independent initial laws with relative entropy O(log N); o(log N) gives high-probability flatness for each fixed K>3, whereas O(log N) uses K after limsup and gives no such flatness conclusion for one prescribed finite K. A bounded-entropy prescribed-gap ensemble rules out the corresponding fixed-origin Sine2 implication. No deterministic-map transfer, origin-averaged counterexample, BGS, priority or analytic Lean claim.",
       "priority_status": "not-established",
@@ -3446,7 +3445,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Fresh independent uniform feedback phases; port chosen before its phase using the past. Deterministic unitary initial conditions max P<=C0/N and ||P-J||<=1/5. Unconditional high-probability shrinking Green/singular norm only on the entry-stopped prefix, including its full first crossing. Third-step forcing bound only before that crossing. Does not estimate early entry survival, sustained two-step concentration, deterministic microscopic universality, TRACE-005 or BGS. Actual-map application uses eventual odd-N fixed-coupling FM-021; no effective startup or priority claim.",
       "priority_status": "not-established",
@@ -3470,7 +3469,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Any unitary S with max |Sij|²<=1/4; distinct frozen endpoint labels. Strong deterministic sum over surviving ports for arbitrary circle phases implies raw conditional second moment <=2600 delta²[(P²)ij+(P³)ij]/u under conditionally uniform selection among all u ports, with endpoint increments zero. No sustained concentration, early entry survival, deterministic microscopic law, BGS or priority claim.",
       "priority_status": "not-established"
@@ -3498,7 +3497,7 @@
       "external_dependencies": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "priority_status": "not-established",
       "premise_discharge": "Premise discharge (recorded 2026-10-20): this claim has no direct dependency on BGS-TRACE-060 or BGS-TRACE-073 (dependencies: BGS-TRACE-075, BGS-TRACE-077, BGS-TRACE-078, BGS-FM-021). Its only route to TRACE-073 is through BGS-TRACE-077, whose use of TRACE-073 is restricted to the unconditional (C3)-(C6) lemmas (see the premise_discharge of BGS-TRACE-077)."
@@ -3532,7 +3531,7 @@
       "external_dependencies": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "priority_status": "not-established",
       "premise_discharge": "Premise discharge (recorded 2026-10-20): the main flatness theorem (F1) of mathematics/trace-bridge/unconditional_feedback_flatness.md is unconditional under its explicit initial hypotheses and supplies the flatness event itself. Its Section 10 discharges BGS-TRACE-060's premise for the clock corollaries by P(clock error > eps_N) <= P(A_m^c) + P(A_m and {clock error > eps_N}) -> 0, using F1 with matched cutoff (kappa_clock=3+kappa, K=K0). Its Section 11 applies BGS-TRACE-073 (C9) only to the reversal corollary, whose extra hypothesis ||B_N||_op -> 0 is stated explicitly there and is supplied for the actual odd-N fixed-coupling family by BGS-FM-022; the text of (C9) in mathematics/trace-bridge/schur_censoring_gap.md records the same FM-022 discharge."
@@ -3556,7 +3555,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Abstract deterministic family on N_k=4^k p_k with odd primes p_k->infinity. Exact P=J, reversal norm2^-k, simple spectrum and macroscopic uniform phase law coexist with origin-averaged empty microscopic point process, weak spacing delta0, non-UI counts and Heisenberg form-factor resonances. Generic phase lemma applies to every invertible complex matrix. Not the unchanged odd-N fixed-map propagator, a fixed smooth chaotic quantization, a contradiction to a full phase-averaged ensemble, BGS, priority or analytic formal certification.",
       "priority_status": "not-established"
@@ -3584,7 +3583,7 @@
         "formalization/Bgs/CoherenceBudget.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Every unitary U of dimension N>=2, Hilbert--Schmidt off-diagonal compression E=Q Ad_U Q: ||E^r||=1 for integers0<=r<N. Exact compressed resolvent for |z|<1 and coherent-return recurrence. This is a singular-norm obstruction, not a spectral-radius assertion or nondecay for every source. TRACE-081 separately gives order-one observed returns near N. Lean kernel proves only positivity of the numerical product (N-1)(N-r); compilation scope is recorded separately. No actual fixed-map signed-source estimate, microscopic universality, BGS or priority claim. Computational controls cover only the N=4 Hadamard core and the N=2 rational-rotation endpoint witness at z=1/5 (returns j<9); per the control script's own scope this is a finite core, not generic or asymptotic coverage.",
       "priority_status": "not-established"
@@ -3608,7 +3607,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_research_20261011.tex"
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Abstract N=4^k p family, k>=2 and odd prime p. Exact first-return amplitudes have support at 1,2,p,2p before column-phase perturbation. At t=2p the perturbed memory coefficient is almost an isometry on (4^k-1)(p-1) centered diagonal directions; normalized HS energy tends to one as k,p tend to infinity. Its all-source monitored energy tail beyond 2p is at most 16 N^-6. Choosing p_k>=4^(k^2) makes 2p exceed every fixed N^alpha, 0<alpha<1, while remaining o(N). For p!=3, normalized unconjugated q-th pulse traces approach 1_{3 divides q}, with explicit q*4p*N^-4 error; this is not a conjugated covariance or an assertion about F_{2pq}. No actual fixed-map signed source, BGS, full formal certification or priority conclusion.",
       "priority_status": "not-established"
@@ -3632,7 +3631,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "Additive normalized-HS cohomology and initial eigenphase response only; fixed physical strength grows as tau*p. No multiplicative holonomy or microscopic limit."
     },
@@ -3654,7 +3653,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "Sufficient selected-sector deletion criterion only; the sector need not vanish for a valid full signed local law."
     },
@@ -3679,7 +3678,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "Abstract spectra, including deterministic existence via CUE local-average variance. Does not identify root labels or traces of the maintained propagator."
     },
@@ -3703,7 +3702,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "The implication is proved; H_diag and TRACE-005 for the frozen matrix remain open. Every fixed order and every compact bandwidth are required."
     },
@@ -3726,7 +3725,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "Conditional on the exact quantitative G1-G3 analytic inputs pinned in the source. Finite algebra checks do not recertify those analytic inputs. No cyclic Heisenberg trace bound."
     },
@@ -3748,7 +3747,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "Exact deterministic derivative and CUE reference covariance. Proxy computations are diagnostics, not a physical limit or a p-value."
     },
@@ -3772,7 +3771,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "Only the reduction is proved. The required physical parameter q-moment o(N^-2), or sixth moment O(N^-3), is unproved; Haar sixth moments cannot supply it."
     },
@@ -3794,7 +3793,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector."
     },
@@ -3818,7 +3817,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "m tends to infinity with m/sqrt(N) tending to a fixed finite c; not m of order N. Harer-Zagier is a classical external input."
     },
@@ -3838,7 +3837,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "Any unitary spectrum. The mixed-moment convergence premise for the frozen model is open; weak convergence alone supplies no unbounded count UI. Discrete Toeplitz contraction requires grid M>=N."
     },
@@ -3861,7 +3860,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/chat_integration_20261016.tex"
+        "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
       "boundary": "p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family."
     },
@@ -3882,7 +3881,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/abel_gaussian_20261016.tex"
+        "manuscript/unified_sections/abel_gaussian_rigidity.tex"
       ],
       "proof_dependencies": [
         "archive/record/reviews/abel_rigidity_20261016.md"
@@ -3910,7 +3909,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/abel_gaussian_20261016.tex"
+        "manuscript/unified_sections/abel_gaussian_rigidity.tex"
       ],
       "proof_dependencies": [
         "archive/record/reviews/gaussian_hessian_20261016.md"
@@ -3937,7 +3936,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/abel_gaussian_20261016.tex"
+        "manuscript/unified_sections/abel_gaussian_rigidity.tex"
       ],
       "proof_dependencies": [
         "archive/record/reviews/wick_poisson_20261016.md"
@@ -3962,7 +3961,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Under the pinned feedback trajectory/moment inputs and reversal hypothesis, u tends to infinity with u/N tending to zero; no substitution u=2 and no fixed frozen spectrum law.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -3985,7 +3984,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Finite phase-ensemble identities and Uniform[0,1] versus Beta(1,2) equivalence; the required eigenvector or transmission limit is not proved.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -4007,7 +4006,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Conditional on the stated fixed-level TV compactness TC; evaluates the specified normalized positive current, not Haar identification or all signed traces.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -4030,7 +4029,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "All odd p and N=p^(2d); first two traces converge to Z and Z squared, other fixed traces are independent Gaussian. Growing Heisenberg powers and frozen transfer are excluded.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -4054,7 +4053,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Symplectic powers o(N^(1/5)); generic fixed bilinear seed powers o(N^(1/(6b))) with actual Gauss phases. Whole disk means fixed compact subsets, not microscopic absorption.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -4077,7 +4076,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Computer-assisted fixed-power result V_m=m+O_m(N^-3) for m>=17, all odd primes; no Heisenberg-scale conclusion from the factorial remainder.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -4102,7 +4101,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Connected order j<=delta+1; primitive order<=2delta and size<=16delta; exact fixed-defect reconstruction. No summation over all individual defects.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -4126,7 +4125,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "All 24 open connected (3,2,4) kernels, every odd prime; full total defect two limit for 0<tau<1 and stable degree<=2h-3. Not b_h=0 or full BGS.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -4154,7 +4153,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "All counts and neutral additions, individual defects <=2, V_m/m normalization, 0<tau<1/9, uniform O(N^-1); omitted connected defects >=3 remain essential.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -4176,7 +4175,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Any Hermitian involution with iid circular phases; local correlation test comparison O(N^-1). Universality of S-diag(Cauchy), and frozen transfer, are not supplied.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -4198,7 +4197,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/phase_cluster_continuation_20261019.tex"
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "For any finite Hermitian involution S, H^-1 and H/2 have identical all PSD scalar projections, while their matrix laws have TV distance one for every non-diagonal S, including the symplectic Fourier model. Classical harmonic mechanism; no BGS counterexample or novelty claim.",
       "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
@@ -4335,8 +4334,7 @@
         "formalization/Bgs/PellFourierKernel.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/floquet_part1.tex",
-        "manuscript/unified_sections/floquet_part2.tex"
+        "manuscript/unified_sections/ch07_floquet_resonance.tex"
       ],
       "boundary": "K through odd primes; epsilon=tau/sqrt(2K) with fixed real tau; odd subspace, normalized trace Tr_-/d_N. The principal finite estimate (FN.D) is a normalized Hilbert-Schmidt bound: it does not control an individual level or an operator-norm spectral gap. No Heisenberg-scale joint traces, microscopic local statistics, or fixed nonzero classical-kick universality. Formalization coverage is finite certificates only: the three listed modules prove cleared-denominator weight/echo identities and the finite K=11 pair-key certificates (220 keys, unique, nonzero); they prove no analytic limit or microscopic law."
     },
@@ -4360,9 +4358,7 @@
         "formalization/Bgs/PellCoboundary.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/coboundary_part1.tex",
-        "manuscript/unified_sections/coboundary_part2.tex",
-        "manuscript/unified_sections/coboundary_part3.tex"
+        "manuscript/unified_sections/ch07_coboundary_resonance.tex"
       ],
       "boundary": "Coboundary propagator V of (CB.1), with the T-covariant U_0 of the finite Floquet construction; in coboundary_part1.tex this U_0 is the operator called U_N=VU_0V^* in the Floquet parts (notation collision flagged by group 4). t_K=2 eps_K^2 sin(4pi/N) sqrt(K) -> t in [0,infty); fixed integer m. No statement that the old clusters remain separate or keep identifiable ranks in the subcritical folded-phase law. Formalization coverage is finite certificates only: formalization/Bgs/PellCoboundary.lean proves the universal integer structural identity and the finite K=11 pair-key certificates (880 keys, 836 distinct, multiplicity at most 2); it is not a formalization of the general coboundary law."
     },
@@ -4386,9 +4382,7 @@
         "formalization/Bgs/PellCoboundary.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/coboundary_part1.tex",
-        "manuscript/unified_sections/coboundary_part2.tex",
-        "manuscript/unified_sections/coboundary_part3.tex"
+        "manuscript/unified_sections/ch07_coboundary_resonance.tex"
       ],
       "boundary": "Whole odd space and global mean-spacing normalization only. Condition (CB.4) is necessary only; no positive universality theorem beyond it is proved. No density-adapted unfolding or further-sector result. Formalization coverage is finite certificates only: formalization/Bgs/PellCoboundary.lean proves the universal integer structural identity and the finite K=11 pair-key certificates (880 keys, 836 distinct, multiplicity at most 2); it is not a formalization of the general coboundary law."
     },
@@ -4413,8 +4407,7 @@
         "formalization/Bgs/PellFourierKernel.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/floquet_part3.tex",
-        "manuscript/unified_sections/floquet_part4.tex"
+        "manuscript/unified_sections/ch07_floquet_resonance.tex"
       ],
       "boundary": "Kicked Pell family of Theorem A only; global mean-density unfolding of the complete odd space, compact tests. Necessary condition |eps_K| sqrt(K) -> infty only, not a sufficient universality criterion. Does not settle nearest-neighbour distributions individually, density-adapted re-unfolding, a further desymmetrized block, or fixed nonzero classical kicks; not a refutation of a correctly qualified generic BGS conjecture. Formalization coverage is finite certificates only: the three listed modules prove cleared-denominator weight/echo identities and the finite K=11 pair-key certificates (220 keys, unique, nonzero); they prove no analytic limit or microscopic law."
     },
@@ -4437,13 +4430,7 @@
         "formalization/Bgs/LocalityKernels.lean"
       ],
       "manuscript": [
-        "manuscript/unified_sections/locality_part1.tex",
-        "manuscript/unified_sections/locality_part2.tex",
-        "manuscript/unified_sections/locality_part3.tex",
-        "manuscript/unified_sections/locality_part4.tex",
-        "manuscript/unified_sections/locality_part5.tex",
-        "manuscript/unified_sections/locality_part6.tex",
-        "manuscript/unified_sections/locality_part7.tex"
+        "manuscript/unified_sections/ch09_locality_fixed_strength.tex"
       ],
       "boundary": "Fixed classical strength kappa_0 (classical Hamiltonian time kappa_0/(2pi)); generators g with supp g disjoint from supp Cg, including the explicit Gevrey-2 bump for the quantitative bound (LC.4), whose exponent is not claimed optimal. Deliberately nongeneric family smoothly conjugate to an arithmetic cat map; not positive BGS universality. Formalization coverage is fragment kernels only: formalization/Bgs/LocalityKernels.lean proves the cleared-denominator support-strip band, the Cauchy-disk constant, the exponent budget, and the gap partition; it is not a formalization of the all-orders comparison or any semiclassical limit."
     },
@@ -4464,13 +4451,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/locality_part1.tex",
-        "manuscript/unified_sections/locality_part2.tex",
-        "manuscript/unified_sections/locality_part3.tex",
-        "manuscript/unified_sections/locality_part4.tex",
-        "manuscript/unified_sections/locality_part5.tex",
-        "manuscript/unified_sections/locality_part6.tex",
-        "manuscript/unified_sections/locality_part7.tex"
+        "manuscript/unified_sections/ch09_locality_fixed_strength.tex"
       ],
       "boundary": "Same generator class and conventions as Theorem A of the locality section. The conjugacy to M is essential, not a symmetry that may be omitted when interpreting spectral statistics. Sign convention for the Hamiltonian flow Phi_g^t is the one stated in the theorem; return_words.tex uses the opposite flow convention under the same symbol (review finding, group 5)."
     },
@@ -4491,13 +4472,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/locality_part1.tex",
-        "manuscript/unified_sections/locality_part2.tex",
-        "manuscript/unified_sections/locality_part3.tex",
-        "manuscript/unified_sections/locality_part4.tex",
-        "manuscript/unified_sections/locality_part5.tex",
-        "manuscript/unified_sections/locality_part6.tex",
-        "manuscript/unified_sections/locality_part7.tex"
+        "manuscript/unified_sections/ch09_locality_fixed_strength.tex"
       ],
       "boundary": "Pell moduli only: K through odd primes, N+F sqrt(2)=(1+sqrt(2))^K, odd parity space of dimension D=(N-1)/2=Kn. Global unfolding by the mean density D; no density-adapted unfolding, further desymmetrized sector, or local universality conclusion."
     },
@@ -4820,8 +4795,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/nondegeneracy_part2.tex",
-        "manuscript/unified_sections/nondegeneracy_part3.tex"
+        "manuscript/unified_sections/ch10_resonance_rigidity.tex"
       ],
       "boundary": "Fixed Pell matrix and integer radius at most 8 only: the 288-real-dimensional space P_8, arbitrary signs and phases of Fourier coefficients; not extrapolated to all radii. Closure condition: an independent replay of the radius-eight certificate by the maintained validators, recorded as evidence, confirming all 5,704 deductions eliminate all 144 complex variables.",
       "residual": "Residual closure (recorded 2026-10-23): the independent C++ reconstruction and proof replay named in the closure condition and in §2.2–§2.3 of the source text had never been deposited or run in any earlier record (the 2026-10-06 receipt records independent_cpp_coefficients NOT_RUN and independent_cpp_proof_replay null, with 4 of the 6 required negative controls exercised). On 2026-10-23 an independent C++ implementation was deposited (computations/cpp/resonance_complex_replay.cpp; Q(√2) eigenbasis window canonicalization per §2.2 in place of the Python descent, exact cpp_int arithmetic) and run through the maintained checker: independent_cpp_coefficients PASS (all 1,475 equations agree exactly), independent_cpp_proof_replay PASS with identical rule counters (P 3293, S 1077, D 1229, F 105; all 144 complex variables eliminated), and all 6 negative controls rejected (receipt: evidence/executions/20261023/resonance-cpp-replay/resonance_certificate_replay_cpp.json). The closure condition is thereby met as a description of the deposited record; the claim remains verification-pending, promotion being a separate status decision."
@@ -4888,7 +4862,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/nondegeneracy_part4.tex"
+        "manuscript/unified_sections/ch10_resonance_rigidity.tex"
       ],
       "boundary": "Fixed Pell matrix T and P_8 only. The explicit constant rests on the deposited radius-eight certificate (5,704 deductions; replay PASS) compiled by the quantitative rule printed in the section: the reconstructed integer B has 712 binary digits (215 decimal digits), hence B <= 2^714 and Gamma_T(g) >= (pi^2/41472) * 2^(-2B) * ||g||_2^4 implies the printed (ND.10). The author's original margin report remains undeposited and their generated integer (stated: 714 binary digits) is not reproduced; the deposited reconstruction is an independent exact-arithmetic implementation of the same printed rule whose smaller valid integer confirms the printed bound a fortiori. The constant is deliberately very poor and is not a crossover estimate; the qualitative compactness bound c_8 > 0 does not depend on it.",
       "premise_discharge": "Premise discharge (recorded 2026-10-23): statement (C) was re-verified end-to-end on 2026-10-23. The maintained Boolean replay (computations/verification/check_resonance_certificate.py, byte-identical to the validated pin e75801af6acaf360b5c26b3f7f73b2f8a5a8ac2b34b8da8c86429dcfdd742fb5) was re-run and passes; its output equals the deposited resonance_certificate_replay.json in every field (5,704 deductions; all 144 complex variables eliminated; 4 negative controls rejected). The margin compiler was re-run and reproduces the deposited resonance_nondegeneracy_margin.json in every field (B = 712 bits; all 105 refutation children; all 144 final variable bounds) except the compiler's own source hash; that single drift is a 3-line __debug__ assert-guard added after the 2026-10-21 deposit, verified by full diff. The remainder of BGS-RES-022 (its C++ leg, never run in any deposited record; the C++ source is not deposited) lies outside this dependency's scope and remains BGS-RES-022's own open residual."
@@ -4909,7 +4883,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/physical_kick_20261021.tex"
+        "manuscript/unified_sections/physical_kick_decay.tex"
       ],
       "boundary": "All odd N, 0<|t|<=10^-20, N|t|>=1; finite unspecified prefactor. Bounded physical-time intervals have some positive exponent. Single kick only: no full U_N Heisenberg trace or local spectral law. Author proof and self-review, not external refereeing or Lean."
     },
@@ -4929,7 +4903,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/physical_kick_20261021.tex"
+        "manuscript/unified_sections/physical_kick_decay.tex"
       ],
       "boundary": "Norm error epsilon gives O(N^k epsilon) trace-polynomial error at each fixed order and bandwidth. Negative indices use adjoint powers of the nonunitary approximant. Full signed sum remains unestimated. Shortest scalar two-copy Pell alias has length x; no spectral counterexample or priority claim."
     },
@@ -4947,7 +4921,7 @@
       "verifiers": [],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/spectral_final_20261021.tex"
+        "manuscript/unified_sections/spectral_corpus_one_step_returns.tex"
       ],
       "boundary": "One step only; analytic author proof and self-review, with exact quartic/Gauss finite checks. No microscopic trace sum or external refereeing."
     },
@@ -4967,7 +4941,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/spectral_trace_closure_20261022.tex"
+        "manuscript/unified_sections/inserted_trace_closure.tex"
       ],
       "boundary": "Original one-step inserted trace with O(N^-1) remainder now proved by a finite-grid corrected-amplitude parametrix; projection and two-copy constants follow for arbitrary multiplicities. No microscopic pair limit, external refereeing or formalization."
     },
@@ -4990,7 +4964,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/spectral_trace_closure_20261022.tex"
+        "manuscript/unified_sections/inserted_trace_closure.tex"
       ],
       "boundary": "All-odd-N O(1/log N) upper global spectral distance and matching Pell lower constant pi log(lambda)/4. Input (T) is now proved by TRACE-113; an independent pressure-free upper proof is TRACE-112. No microscopic spacing law."
     },
@@ -5010,7 +4984,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/spectral_final_20261021.tex"
+        "manuscript/unified_sections/spectral_corpus_one_step_returns.tex"
       ],
       "boundary": "Original parameter curve at t=0 and shrinking times on odd Pell dimensions; all weighted times and cross terms included. S_N(tau), H_diag and BGS remain open."
     },
@@ -5032,7 +5006,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/spectral_trace_closure_20261022.tex"
+        "manuscript/unified_sections/inserted_trace_closure.tex"
       ],
       "boundary": "Density discrepancy <= epsilon_R m theta^(m-1) <= 8e-53 for every positive classical iterate of the actual fixed map. Quantum normalized trace <= C exp(Km) N^(-1/5), useful on a short logarithmic window; global spectral matching O(1/log N), not a microscopic law."
     },
@@ -5054,7 +5028,7 @@
       ],
       "formalization": [],
       "manuscript": [
-        "manuscript/unified_sections/spectral_trace_closure_20261022.tex"
+        "manuscript/unified_sections/inserted_trace_closure.tex"
       ],
       "boundary": "Fixed tau=10^-80, one N0 for every m>=1 and every sufficiently large odd N: |Tr U_N^m|<=C a^m with 1<a<sqrt(lambda). Constants/pressure gap not numerically evaluated; bound is uninformative at m proportional to N; no signed hierarchy or BGS conclusion."
     },
