@@ -243,7 +243,7 @@ def run(root=ROOT):
         for link in re.findall(r'\]\(([^)]+)\)',p.read_text()):
             if '://' not in link:
                 require((p.parent/link.split('#')[0]).resolve().is_file(),'broken wrapper/integration link: '+rel+' -> '+link);links+=1
-    manuscript=root/'manuscript/unified_sections/checked_phase_trace_checkpoint.tex';text=manuscript.read_text()
+    manuscript=root/'manuscript/unified_sections/reviewed_phase_signed_trace.tex';text=manuscript.read_text()
     mm=strict_json((root/'record/wave2_manuscript_mapping.json').read_bytes())
     require(sha(root/mm['section'])==mm['section_sha256'],'manuscript mapping changed')
     require(set(mm['authoritative_wrappers'])=={c['source'] for c in mapping['cards']},'manuscript source closure differs')
