@@ -28,16 +28,25 @@ BINDINGS = 'record/research_checkpoint_source_bindings.json'
 # pin. Any key or target outside this map still fails closed below; the
 # bindings entry for an override must additionally carry sha256 == pin.
 HISTORICAL_TARGETS = {
-    'mathematics/phase_trace_checkpoint.md': 'evidence/wave2_checked_20261007/raw/provenance/base_navigation/mathematics/phase_trace_checkpoint.md',
-    'mathematics/phase_ward_identity.md': 'evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/phase_ward_identity_v2.md',
+    'literature/color_one_boundary_qualification_20261007.md': 'archive/evidence/research_checkpoint_20261007/pinned/literature_color_one_boundary_qualification_20261007.md',
     'mathematics/actual_body_coercivity_constants.md': 'evidence/research_checkpoint_20261007/raw/bgs_global_phase_coercivity/actual_constants_addendum.md',
     'mathematics/actual_charge_radial_resolvent.md': 'mathematics/fixed-map/actual_charge_radial_resolvent.md',
     'mathematics/actual_charge_radial_shell.md': 'archive/evidence/research_checkpoint_20261007/pinned/mathematics_actual_charge_radial_shell.md',
+    'mathematics/balanced_boundary_delay_obstruction.md': 'mathematics/trace-bridge/balanced_boundary_delay_obstruction.md',
+    'mathematics/bosonic_body_radial_translation.md': 'mathematics/trace-bridge/bosonic_body_radial_translation.md',
+    'mathematics/compact_phase_pair_identity.md': 'mathematics/trace-bridge/compact_phase_pair_identity.md',
+    'mathematics/complex_microscopic_phase_source_bounds.md': 'mathematics/trace-bridge/complex_microscopic_phase_source_bounds.md',
+    'mathematics/global_bosonic_body_coercivity.md': 'mathematics/trace-bridge/global_bosonic_body_coercivity.md',
+    'mathematics/growing_period_switch_boundary_obstruction.md': 'mathematics/trace-bridge/growing_period_switch_boundary_obstruction.md',
     'mathematics/literal_fixed_word_freeness.md': 'mathematics/fixed-map/literal_fixed_word_freeness.md',
     'mathematics/literal_growing_word_window.md': 'mathematics/fixed-map/literal_growing_word_window.md',
     'mathematics/literal_kick_phase_law.md': 'mathematics/fixed-map/literal_kick_phase_law.md',
     'mathematics/literal_strong_freeness_obstruction.md': 'mathematics/fixed-map/literal_strong_freeness_obstruction.md',
-    'literature/color_one_boundary_qualification_20261007.md': 'archive/evidence/research_checkpoint_20261007/pinned/literature_color_one_boundary_qualification_20261007.md',
+    'mathematics/matrix_block_body_coercivity.md': 'mathematics/trace-bridge/matrix_block_body_coercivity.md',
+    'mathematics/phase_trace_checkpoint.md': 'evidence/wave2_checked_20261007/raw/provenance/base_navigation/mathematics/phase_trace_checkpoint.md',
+    'mathematics/phase_ward_identity.md': 'evidence/research_checkpoint_20261007/raw/bgs_balanced_delay_ward_review/phase_ward_identity_v2.md',
+    'mathematics/real_absorption_body_coercivity.md': 'mathematics/trace-bridge/real_absorption_body_coercivity.md',
+    'mathematics/uniform_phase_pair_abel_bound.md': 'mathematics/trace-bridge/uniform_phase_pair_abel_bound.md',
 }
 
 

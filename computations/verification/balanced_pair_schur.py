@@ -6,7 +6,7 @@ import importlib.util
 import os
 import stat
 
-REPLAY_SHA256 = '2b1caae8592f66620f9bef72726339ffaf99f559e79939b9065334bda9ed626a'
+REPLAY_SHA256 = '8bcb593d296b8de0e0257d34588577acf1ec255ed9fac9a83742d1d54239d621'
 
 
 def main(argv=None):

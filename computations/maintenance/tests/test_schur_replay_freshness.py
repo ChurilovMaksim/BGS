@@ -247,7 +247,7 @@ class SchurReplayFreshness(unittest.TestCase):
                    'computations/verification/schur/author_checks.py',
                    'computations/verification/schur/independent_checks.py',
                    R.FAMILIES['author']['expected'], R.FAMILIES['independent']['expected'],
-                   'mathematics/balanced_pair_schur_reduction.md']
+                   'mathematics/trace-bridge/balanced_pair_schur_reduction.md']
         for mode in ('normal', 'optimized'):
             for controls in (False, True):
                 for target in targets:

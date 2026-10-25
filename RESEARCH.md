@@ -242,12 +242,12 @@ microscopic cavity reference and signed spectral comparison remain missing.
 ## Exact unresolved spectral estimates
 
 The complete balanced coordinate-phase microscopic law remains open.
-[The phase Ward identity](mathematics/phase_ward_identity.md) isolates a signed
-absorbed overlap defect; [the Schur-energy reduction](mathematics/balanced_pair_schur_reduction.md)
+[The phase Ward identity](mathematics/trace-bridge/phase_ward_identity.md) isolates a signed
+absorbed overlap defect; [the Schur-energy reduction](mathematics/trace-bridge/balanced_pair_schur_reduction.md)
 is an independent exact description of the same pair frontier. Neither
 ordinary intensity mixing nor averaged eigenbasis pinching evaluates it.
 
-[The global switch transfer](mathematics/global_switch_transfer.md) controls
+[The global switch transfer](mathematics/trace-bridge/global_switch_transfer.md) controls
 its stated damped interior. The signed marked/high-switch and undamped
 endpoint, including the plateau contribution, remain unproved. Masks/source
 extraction are not consequences of the unmasked insertion theorem.

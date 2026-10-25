@@ -1425,8 +1425,8 @@
           "mathematics/fixed-map/low_switch_offcharge_family.md",
           "mathematics/fixed-map/fourier_half_radius_obstruction.md",
           "mathematics/fixed-map/symplectic_half_radius_obstruction.md",
-          "mathematics/checksum_free_residual.md",
-          "mathematics/global_switch_transfer.md",
+          "mathematics/trace-bridge/checksum_free_residual.md",
+          "mathematics/trace-bridge/global_switch_transfer.md",
           "mathematics/fixed-map/rounding_gap_obstruction.md"
         ],
         "manuscript": [
@@ -1434,7 +1434,7 @@
           "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package Map, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-021 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change. Phase-2 topical relocation (P2-MATH wave 9A): proof_dependencies mathematics/balanced_hamming_hierarchy.md to mathematics/fixed-map/balanced_hamming_hierarchy.md, mathematics/balanced_hamming_growth.md to mathematics/fixed-map/balanced_hamming_growth.md, mathematics/fractional_hamming_cancellation.md to mathematics/fixed-map/fractional_hamming_cancellation.md, mathematics/all_coordinate_translation.md to mathematics/fixed-map/all_coordinate_translation.md, mathematics/fourier_half_radius_obstruction.md to mathematics/fixed-map/fourier_half_radius_obstruction.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Phase-2 topical relocation (P2-MATH wave 9B): proof_dependencies mathematics/balanced_hamming_hierarchy.md to mathematics/fixed-map/balanced_hamming_hierarchy.md, mathematics/balanced_hamming_growth.md to mathematics/fixed-map/balanced_hamming_growth.md, mathematics/fractional_hamming_cancellation.md to mathematics/fixed-map/fractional_hamming_cancellation.md, mathematics/macroscopic_coordinate_translation.md to mathematics/fixed-map/macroscopic_coordinate_translation.md, mathematics/all_coordinate_translation.md to mathematics/fixed-map/all_coordinate_translation.md, mathematics/low_switch_offcharge_family.md to mathematics/fixed-map/low_switch_offcharge_family.md, mathematics/fourier_half_radius_obstruction.md to mathematics/fixed-map/fourier_half_radius_obstruction.md, mathematics/symplectic_half_radius_obstruction.md to mathematics/fixed-map/symplectic_half_radius_obstruction.md, mathematics/rounding_gap_obstruction.md to mathematics/fixed-map/rounding_gap_obstruction.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package Map, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-021 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change. Phase-2 topical relocation (P2-MATH wave 9A): proof_dependencies mathematics/balanced_hamming_hierarchy.md to mathematics/fixed-map/balanced_hamming_hierarchy.md, mathematics/balanced_hamming_growth.md to mathematics/fixed-map/balanced_hamming_growth.md, mathematics/fractional_hamming_cancellation.md to mathematics/fixed-map/fractional_hamming_cancellation.md, mathematics/all_coordinate_translation.md to mathematics/fixed-map/all_coordinate_translation.md, mathematics/fourier_half_radius_obstruction.md to mathematics/fixed-map/fourier_half_radius_obstruction.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Phase-2 topical relocation (P2-MATH wave 9B): proof_dependencies mathematics/balanced_hamming_hierarchy.md to mathematics/fixed-map/balanced_hamming_hierarchy.md, mathematics/balanced_hamming_growth.md to mathematics/fixed-map/balanced_hamming_growth.md, mathematics/fractional_hamming_cancellation.md to mathematics/fixed-map/fractional_hamming_cancellation.md, mathematics/macroscopic_coordinate_translation.md to mathematics/fixed-map/macroscopic_coordinate_translation.md, mathematics/all_coordinate_translation.md to mathematics/fixed-map/all_coordinate_translation.md, mathematics/low_switch_offcharge_family.md to mathematics/fixed-map/low_switch_offcharge_family.md, mathematics/fourier_half_radius_obstruction.md to mathematics/fixed-map/fourier_half_radius_obstruction.md, mathematics/symplectic_half_radius_obstruction.md to mathematics/fixed-map/symplectic_half_radius_obstruction.md, mathematics/rounding_gap_obstruction.md to mathematics/fixed-map/rounding_gap_obstruction.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.; Wave 5 (2026-10-25): proof_dependencies paths updated mathematics/ -> mathematics/trace-bridge/ for the trace-bridge relocation; paths only, no state/source/title change.",
       "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Adata.md; archive/MANIFEST-Map.md; archive/MANIFEST-P2MATH9A.md; archive/MANIFEST-P2MATH9B.md"
     },
     {
@@ -1448,9 +1448,12 @@
         "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
         "manuscript": [
           "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
+        ],
+        "proof_dependencies": [
+          "mathematics/trace-bridge/balanced_pair_schur_reduction.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence from evidence/ to archive/evidence/ (package Schur, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-022 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change.",
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence from evidence/ to archive/evidence/ (package Schur, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-022 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change.; Wave 5 (2026-10-25): proof_dependencies paths updated mathematics/ -> mathematics/trace-bridge/ for the trace-bridge relocation; paths only, no state/source/title change.",
       "review": "archive/MANIFEST-F2.md; archive/MANIFEST-Acomplex-schur.md"
     },
     {
@@ -1728,14 +1731,14 @@
         "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
         "proof_dependencies": [
           "mathematics/fixed-map/onestep_charge_gap.md",
-          "mathematics/global_switch_transfer.md",
+          "mathematics/trace-bridge/global_switch_transfer.md",
           "mathematics/fixed-map/four_branch_parametrix.md"
         ],
         "manuscript": [
           "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-FM-027 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change. Phase-2 topical relocation (P2-MATH wave 9A): proof_dependencies mathematics/four_branch_parametrix.md to mathematics/fixed-map/four_branch_parametrix.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Phase-2 topical relocation (P2-MATH wave 9B): proof_dependencies mathematics/onestep_charge_gap.md to mathematics/fixed-map/onestep_charge_gap.md, mathematics/four_branch_parametrix.md to mathematics/fixed-map/four_branch_parametrix.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-data, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-FM-027 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change. Phase-2 topical relocation (P2-MATH wave 9A): proof_dependencies mathematics/four_branch_parametrix.md to mathematics/fixed-map/four_branch_parametrix.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Phase-2 topical relocation (P2-MATH wave 9B): proof_dependencies mathematics/onestep_charge_gap.md to mathematics/fixed-map/onestep_charge_gap.md, mathematics/four_branch_parametrix.md to mathematics/fixed-map/four_branch_parametrix.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.; Wave 5 (2026-10-25): proof_dependencies paths updated mathematics/ -> mathematics/trace-bridge/ for the trace-bridge relocation; paths only, no state/source/title change.",
       "review": "archive/MANIFEST-Adata.md; archive/MANIFEST-P2MATH9A.md; archive/MANIFEST-P2MATH9B.md"
     },
     {
@@ -1919,9 +1922,16 @@
         "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
         "manuscript": [
           "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
+        ],
+        "proof_dependencies": [
+          "mathematics/trace-bridge/global_bosonic_body_coercivity.md",
+          "mathematics/trace-bridge/matrix_block_body_coercivity.md",
+          "mathematics/trace-bridge/actual_body_coercivity_constants.md",
+          "mathematics/trace-bridge/bosonic_body_radial_translation.md",
+          "mathematics/trace-bridge/real_absorption_body_coercivity.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-FM-030 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change.",
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-FM-030 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change.; Wave 5 (2026-10-25): proof_dependencies paths updated mathematics/ -> mathematics/trace-bridge/ for the trace-bridge relocation; paths only, no state/source/title change.",
       "review": "archive/MANIFEST-P2MATH10a.md"
     },
     {
@@ -1977,9 +1987,14 @@
         "source": "mathematics/trace-bridge/phase_trace_checkpoint.md",
         "manuscript": [
           "manuscript/unified_sections/reviewed_phase_signed_trace.tex"
+        ],
+        "proof_dependencies": [
+          "mathematics/trace-bridge/compact_phase_pair_identity.md",
+          "mathematics/trace-bridge/uniform_phase_pair_abel_bound.md",
+          "mathematics/trace-bridge/complex_microscopic_phase_source_bounds.md"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-TRACE-023 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change.",
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-TRACE-023 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change.; Wave 5 (2026-10-25): proof_dependencies paths updated mathematics/ -> mathematics/trace-bridge/ for the trace-bridge relocation; paths only, no state/source/title change.",
       "review": "archive/MANIFEST-P2MATH10a.md"
     },
     {

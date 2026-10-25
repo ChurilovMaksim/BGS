@@ -26,8 +26,8 @@ effective; there is no full adjoint contraction.
 
 ## BGS-TRACE-021: checksum-free current pair residual
 
-The current exact residual owner is [checksum_free_residual.md](../checksum_free_residual.md),
-with [occupation-twisted switch transfer](../global_switch_transfer.md). On each
+The current exact residual owner is [checksum_free_residual.md](checksum_free_residual.md),
+with [occupation-twisted switch transfer](global_switch_transfer.md). On each
 fixed positive compact Heisenberg band, all low-switch offcharge partial fibers
 are removable, including checksum zero. The orthogonal residual is
 Q_new=I-P_H-P_bal-O_low-L_all; its balanced part is Pi-P_H-P_bal, and its
@@ -46,7 +46,7 @@ are not automatically inherited by the new section-scoped core.
 
 ## BGS-TRACE-022: full balanced-pair Schur reduction
 
-[balanced_pair_schur_reduction.md](../balanced_pair_schur_reduction.md) proves the
+[balanced_pair_schur_reduction.md](balanced_pair_schur_reduction.md) proves the
 finite-N positive Schur-energy identity for every unitary and its equivalence
 to the expected three-radius criterion for the actual radial Abel limit.
 Three-radius coordinate positivity is after phase expectation. Reverse
@@ -140,7 +140,7 @@ K=1+sqrt(C-1)/(1-rho), with the exact determinant action and height in
 nonnormal blocks and is dimension-uniform in k. The generalized exponential
 metric increase theorem of Bhatia is the checked external leaf.
 
-[Actual constants](../actual_body_coercivity_constants.md) give eventual odd-N
+[Actual constants](actual_body_coercivity_constants.md) give eventual odd-N
 C=5,rho=1/2,c=1/50 at fixed tau. [Radial translation](../bosonic_body_radial_translation.md)
 retains the nonlinear centered slice and only the specified auxiliary
 coordinate-Lebesgue tail. [Real absorption](../real_absorption_body_coercivity.md)
@@ -184,7 +184,7 @@ and decaying reverse norm, but an infinite second moment of its unregularized
 one-channel boundary angular delay for every tensor dimension. It excludes
 a finite-L2 boundary-delay premise; it does not refute the balanced CUE limit
 or contradict the complete-pair universal Abel bound, and it is not the actual
-map. [The exact finite-N phase Ward reduction](../phase_ward_identity.md) is the
+map. [The exact finite-N phase Ward reduction](phase_ward_identity.md) is the
 accepted v2, with a separately mapped two-sentence prose correction. The
 phase-stationary input is not obtained from Haar eigenvectors alone. Its
 actual signed overlap estimate (13) remains open. Neither obstruction,

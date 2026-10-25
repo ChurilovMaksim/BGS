@@ -194,7 +194,7 @@ For readers interested in the original central question, use this route:
 [exact model and fixed-map frontier](../mathematics/fixed-map/fixed_map_resolvent_frontier.md)
 → [joint-trace bridge](../mathematics/trace-bridge/trace_to_local_statistics_bridge.md)
 → [actual-map intensity/path theorems](../mathematics/fixed-map/position_chain_mixing.md)
-→ [balanced pair frontiers](../mathematics/phase_ward_identity.md)
+→ [balanced pair frontiers](../mathematics/trace-bridge/phase_ward_identity.md)
 → [still-open obligations](../mathematics/open_questions.md).
 For the broader mathematical programme, follow the
 [topic navigator](../mathematics/topics/README.md) and the manuscript

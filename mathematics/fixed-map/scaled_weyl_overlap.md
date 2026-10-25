@@ -331,7 +331,7 @@ nor tests of the literal asymptotic limit. No fitted decay exponent is used.
 Read sources:
 - ChurilovMaksim/BGS, mathematics/spectral-obstructions/arithmetic_translation_exclusion.md,
   Sections 2--6; fetched source blob be8f73cc57b78088cd6e4c3f6162addaa75aedde.
-- mathematics/phase_ward_identity.md (the different open spectral-overlap
+- mathematics/trace-bridge/phase_ward_identity.md (the different open spectral-overlap
   obligation; not supplied by the present Weyl-entry theorem).
 - The supplied no-extra-UI THEOREM.md (the precise outstanding pair source).
 

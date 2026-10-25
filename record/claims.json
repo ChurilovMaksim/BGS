@@ -2333,8 +2333,8 @@
         "mathematics/fixed-map/low_switch_offcharge_family.md",
         "mathematics/fixed-map/fourier_half_radius_obstruction.md",
         "mathematics/fixed-map/symplectic_half_radius_obstruction.md",
-        "mathematics/checksum_free_residual.md",
-        "mathematics/global_switch_transfer.md",
+        "mathematics/trace-bridge/checksum_free_residual.md",
+        "mathematics/trace-bridge/global_switch_transfer.md",
         "mathematics/fixed-map/rounding_gap_obstruction.md"
       ],
       "evidence": [
@@ -2386,7 +2386,7 @@
       "external_dependencies": [],
       "proof_dependencies": [
         "mathematics/fixed-map/onestep_charge_gap.md",
-        "mathematics/global_switch_transfer.md",
+        "mathematics/trace-bridge/global_switch_transfer.md",
         "mathematics/fixed-map/four_branch_parametrix.md"
       ],
       "evidence": [
@@ -2415,7 +2415,7 @@
       ],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/balanced_pair_schur_reduction.md"
+        "mathematics/trace-bridge/balanced_pair_schur_reduction.md"
       ],
       "evidence": [
         "archive/record/schur_reduction_integration_proposal.json",
@@ -2442,9 +2442,9 @@
         "EXT-ZIRN-2021"
       ],
       "proof_dependencies": [
-        "mathematics/compact_phase_pair_identity.md",
-        "mathematics/uniform_phase_pair_abel_bound.md",
-        "mathematics/complex_microscopic_phase_source_bounds.md"
+        "mathematics/trace-bridge/compact_phase_pair_identity.md",
+        "mathematics/trace-bridge/uniform_phase_pair_abel_bound.md",
+        "mathematics/trace-bridge/complex_microscopic_phase_source_bounds.md"
       ],
       "evidence": [
         "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/reviews/review_first_pair.md",
@@ -2537,11 +2537,11 @@
         "EXT-BHATIA-2002"
       ],
       "proof_dependencies": [
-        "mathematics/global_bosonic_body_coercivity.md",
-        "mathematics/matrix_block_body_coercivity.md",
-        "mathematics/actual_body_coercivity_constants.md",
-        "mathematics/bosonic_body_radial_translation.md",
-        "mathematics/real_absorption_body_coercivity.md"
+        "mathematics/trace-bridge/global_bosonic_body_coercivity.md",
+        "mathematics/trace-bridge/matrix_block_body_coercivity.md",
+        "mathematics/trace-bridge/actual_body_coercivity_constants.md",
+        "mathematics/trace-bridge/bosonic_body_radial_translation.md",
+        "mathematics/trace-bridge/real_absorption_body_coercivity.md"
       ],
       "evidence": [
         "evidence/research_checkpoint_20261007/raw/bgs_global_coercivity_review/audit.md",
@@ -2722,8 +2722,8 @@
       ],
       "external_dependencies": [],
       "proof_dependencies": [
-        "mathematics/phase_ward_identity.md",
-        "mathematics/actual_body_coercivity_constants.md",
+        "mathematics/trace-bridge/phase_ward_identity.md",
+        "mathematics/trace-bridge/actual_body_coercivity_constants.md",
         "mathematics/fixed-map/four_branch_parametrix.md",
         "evidence/wave2_checked_20261007/raw/ward_covariance/input/weighted_coherence.md"
       ],
@@ -2791,7 +2791,7 @@
       "proof_dependencies": [
         "archive/evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/conditional_convex_pinch_resummation.md",
         "archive/evidence/wave3_checked_20261007/raw/convex_review/author_snapshot/annealed_compact_pinch_stability.md",
-        "mathematics/global_switch_transfer.md"
+        "mathematics/trace-bridge/global_switch_transfer.md"
       ],
       "evidence": [
         "archive/evidence/wave3_checked_20261007/raw/convex_review/audit.md",

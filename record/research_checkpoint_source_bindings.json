@@ -1,7 +1,7 @@
 {
   "files": {
     "computations/maintenance/tests/test_research_checkpoint_portability.py": "87001621ef911448a446170ea6377cad1ee555b19d70e765de7f613620eaa4eb",
-    "computations/verification/research_checkpoint_replay.py": "52985729be3192826195ebef421aa5f2e956f388ea5c3917595c844015a20d00",
+    "computations/verification/research_checkpoint_replay.py": "7f6e3460e1994b33b1be9d4cf97d50ad1c034f76ce7acae586931c9aa4c76756",
     "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/README.md": "9ed7fb3dd8d4bf95ae8470ce34a3c3270e20e053fe9b77077fd5a72f10e854f3",
     "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2.py": "8972fe7d88dc3c730ffcd9e341c4a982460a29701c4ea43ef8cc9a064d998a60",
     "evidence/research_checkpoint_20261007/raw/bgs_astra_corrected_integral/checks/check_compact_n2_order6.log": "f62ae7cd1482cc62769dac830748eb402855041b6720d43d0287bc99b5089e48",
@@ -394,6 +394,51 @@
       "reason": "Wave 2 RC-9: phase-2 pure move to mathematics/fixed-map/ (hash-identical, zero byte change).",
       "sha256": "8eab771234f702cdf840497e49d7bf43c9fc1ab673818a75f31661bc99273729",
       "source": "mathematics/fixed-map/literal_strong_freeness_obstruction.md"
+    },
+    "mathematics/balanced_boundary_delay_obstruction.md": {
+      "reason": "Phase 7 V2 Wave 5 (2026-10-25): live note relocated mathematics/ -> mathematics/trace-bridge/ byte-identically; pin unchanged; override points at the new live path.",
+      "sha256": "ce752ed7f8ed8780bf32c449a040b0776b0ec755d4c9d9ed8c42cd2871e91232",
+      "source": "mathematics/trace-bridge/balanced_boundary_delay_obstruction.md"
+    },
+    "mathematics/bosonic_body_radial_translation.md": {
+      "reason": "Phase 7 V2 Wave 5 (2026-10-25): live note relocated mathematics/ -> mathematics/trace-bridge/ byte-identically; pin unchanged; override points at the new live path.",
+      "sha256": "9a061d64c39cc947e0060d20c96864a301b2fb88b53360cf1e5a44c9434bdcfb",
+      "source": "mathematics/trace-bridge/bosonic_body_radial_translation.md"
+    },
+    "mathematics/compact_phase_pair_identity.md": {
+      "reason": "Phase 7 V2 Wave 5 (2026-10-25): live note relocated mathematics/ -> mathematics/trace-bridge/ byte-identically; pin unchanged; override points at the new live path.",
+      "sha256": "4b821bd3c4d67e0f07b32982be8ec06a5e7592d8574aa34c99f67b382b2060f3",
+      "source": "mathematics/trace-bridge/compact_phase_pair_identity.md"
+    },
+    "mathematics/complex_microscopic_phase_source_bounds.md": {
+      "reason": "Phase 7 V2 Wave 5 (2026-10-25): live note relocated mathematics/ -> mathematics/trace-bridge/ byte-identically; pin unchanged; override points at the new live path.",
+      "sha256": "9fcf9168a6ff39c8df8e4c1f106e969ce3e1cb3cfac963b7d81d2e9990b52b76",
+      "source": "mathematics/trace-bridge/complex_microscopic_phase_source_bounds.md"
+    },
+    "mathematics/global_bosonic_body_coercivity.md": {
+      "reason": "Phase 7 V2 Wave 5 (2026-10-25): live note relocated mathematics/ -> mathematics/trace-bridge/ byte-identically; pin unchanged; override points at the new live path.",
+      "sha256": "b6cf72d2d724e9b39b5726254a542dc417641ab96dd2f539f41b7fc5bbdb0b2e",
+      "source": "mathematics/trace-bridge/global_bosonic_body_coercivity.md"
+    },
+    "mathematics/growing_period_switch_boundary_obstruction.md": {
+      "reason": "Phase 7 V2 Wave 5 (2026-10-25): live note relocated mathematics/ -> mathematics/trace-bridge/ byte-identically; pin unchanged; override points at the new live path.",
+      "sha256": "c5e2f39ba99145072a51bc10429978367a694294e666bcdda70125592990edf5",
+      "source": "mathematics/trace-bridge/growing_period_switch_boundary_obstruction.md"
+    },
+    "mathematics/matrix_block_body_coercivity.md": {
+      "reason": "Phase 7 V2 Wave 5 (2026-10-25): live note relocated mathematics/ -> mathematics/trace-bridge/ byte-identically; pin unchanged; override points at the new live path.",
+      "sha256": "8ff788d6194598606f1c88debe84fffc1571f6de1dfe090b1a7d95170b85eded",
+      "source": "mathematics/trace-bridge/matrix_block_body_coercivity.md"
+    },
+    "mathematics/real_absorption_body_coercivity.md": {
+      "reason": "Phase 7 V2 Wave 5 (2026-10-25): live note relocated mathematics/ -> mathematics/trace-bridge/ byte-identically; pin unchanged; override points at the new live path.",
+      "sha256": "267761a7e1e1f0ba649c976987a2166bf898f72515d000cdc8f1e27a37a2fd4e",
+      "source": "mathematics/trace-bridge/real_absorption_body_coercivity.md"
+    },
+    "mathematics/uniform_phase_pair_abel_bound.md": {
+      "reason": "Phase 7 V2 Wave 5 (2026-10-25): live note relocated mathematics/ -> mathematics/trace-bridge/ byte-identically; pin unchanged; override points at the new live path.",
+      "sha256": "ecd82a74edfabb89f6cbf46054d76c52dd41e5eb2d5a9790771b16a7c033da3f",
+      "source": "mathematics/trace-bridge/uniform_phase_pair_abel_bound.md"
     }
   },
   "schema": "bgs-checkpoint-source-bindings-v1",

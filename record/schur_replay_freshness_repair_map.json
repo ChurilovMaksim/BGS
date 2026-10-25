@@ -12,23 +12,23 @@
       "maintained_path": "computations/verification/schur/full_replay.py",
       "historical_copy": "archive/record/schur_replay_freshness_originals/full_replay.py",
       "historical_sha256": "d59bede7888fc5da5d123ea628ccf7e3faa3245fe8aba154e1454434a93f12ee",
-      "maintained_sha256": "2b1caae8592f66620f9bef72726339ffaf99f559e79939b9065334bda9ed626a"
+      "maintained_sha256": "8bcb593d296b8de0e0257d34588577acf1ec255ed9fac9a83742d1d54239d621"
     },
     {
       "maintained_path": "computations/verification/balanced_pair_schur.py",
       "historical_copy": "archive/record/schur_replay_freshness_originals/balanced_pair_schur.py",
       "historical_sha256": "424208c53f70e8ff52e6ffdc197d6e1eec73eff1ccc638d8d6134a4ae1ba505e",
-      "maintained_sha256": "8767bca6e5dadaea9d5eb698a75f381a6e78f0c6d042fa873cc7ec881ce40c4b"
+      "maintained_sha256": "c226f604435c874a826e03812aa34195f04fc1d6a3252ad047cf230e522bba87"
     }
   ],
   "scientific_inputs_unchanged": true,
   "unchanged_scientific_bindings": {
     "archive/evidence/schur_reduction_20261007/raw/author/verified_checks.json": "bf1dfedbb456b54cd08350be959ab4a253d316e477d97808663b1c13f72bc4c6",
     "archive/evidence/schur_reduction_20261007/raw/review/checks.json": "3f5b69aca775b3e747eb21ef1e371b48a0330163b6e64f229e65d96a5a47af29",
-    "mathematics/balanced_pair_schur_reduction.md": "be61cebf111ae7cb723c7d7f52587eea0a625980534f7ea73a202279b0635c99",
     "computations/verification/schur/author_checks.py": "aeb0da58d8b89180939efa82b9cd184b42368c79fbb7344627a203b5fcfc2980",
     "computations/verification/schur/independent_checks.py": "30e57d5c01ce8ef0031bb36436a650a28ee9ad2c0f4546ca89df72e397b5c3ff",
-    "computations/verification/schur/comparison.py": "4a2e33734a1db941a6ec01c5fb302d1a629d22f88bdc177045d58fa83f79cc95"
+    "computations/verification/schur/comparison.py": "4a2e33734a1db941a6ec01c5fb302d1a629d22f88bdc177045d58fa83f79cc95",
+    "mathematics/trace-bridge/balanced_pair_schur_reduction.md": "6eed83183d9d7b920d3b2c815ca308d6dd7ab8d5827f3ae67b8b431906ef1fd6"
   },
   "repair_contract": [
     "Each control and mathematical producer uses a newly created private child workspace; historical expected output is never staged there.",
@@ -57,6 +57,22 @@
       "computations/verification/balanced_pair_schur.py": {
         "old_digest": "1c772fedd06d10b23516be97434e63f04ed7742373da6b2250faff048668538d",
         "new_digest": "8767bca6e5dadaea9d5eb698a75f381a6e78f0c6d042fa873cc7ec881ce40c4b"
+      }
+    }
+  },
+  "trace_bridge_move_amendment": {
+    "file": "mathematics/trace-bridge/balanced_pair_schur_reduction.md",
+    "old_digest": "be61cebf111ae7cb723c7d7f52587eea0a625980534f7ea73a202279b0635c99",
+    "new_digest": "6eed83183d9d7b920d3b2c815ca308d6dd7ab8d5827f3ae67b8b431906ef1fd6",
+    "reason": "Phase 7 V2 Wave 5 (2026-10-25): live note relocated mathematics/ -> mathematics/trace-bridge/ with reviewed 5-link re-translation (link-only; scientific inputs unchanged). The repair premise — no scientific-input change by the repair worker — is unchanged; this amendment records a later reviewed wave change, and the current bindings track the reviewed new bytes.",
+    "wrapper_files": {
+      "computations/verification/schur/full_replay.py": {
+        "old_digest": "2b1caae8592f66620f9bef72726339ffaf99f559e79939b9065334bda9ed626a",
+        "new_digest": "8bcb593d296b8de0e0257d34588577acf1ec255ed9fac9a83742d1d54239d621"
+      },
+      "computations/verification/balanced_pair_schur.py": {
+        "old_digest": "8767bca6e5dadaea9d5eb698a75f381a6e78f0c6d042fa873cc7ec881ce40c4b",
+        "new_digest": "c226f604435c874a826e03812aa34195f04fc1d6a3252ad047cf230e522bba87"
       }
     }
   }

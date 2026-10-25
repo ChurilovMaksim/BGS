@@ -190,13 +190,6 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
-| [One explicit eventual constant for the unchanged actual family](../mathematics/actual_body_coercivity_constants.md) | Consult proof and full ledger |
-| [Infinite boundary-delay variance despite flatness, perfect mixing and reverse decay](../mathematics/balanced_boundary_delay_obstruction.md) | Consult proof and full ledger |
-| [Exact scalar Schur-energy reduction of the full balanced pair target](../mathematics/balanced_pair_schur_reduction.md) | Consult proof and full ledger |
-| [Exact radial translation and a deliberately limited tail consequence](../mathematics/bosonic_body_radial_translation.md) | Consult proof and full ledger |
-| [Conditional disjoint synthesis with all low-switch off-charge fibers removed](../mathematics/checksum_free_residual.md) | Consult proof and full ledger |
-| [A compact color-one pair projector and finite-size source identity](../mathematics/compact_phase_pair_identity.md) | Consult proof and full ledger |
-| [Uniform microscopic source bounds from rank-one resampling](../mathematics/complex_microscopic_phase_source_bounds.md) | Consult proof and full ledger |
 | [Uniform finite-power contraction for every nonzero coordinate translation](../mathematics/fixed-map/all_coordinate_translation.md) | Consult proof and full ledger |
 | [Charge-balance counting refinement and exact new-sector size](../mathematics/fixed-map/balanced_hamming_growth.md) | Consult proof and full ledger |
 | [Exponentially negligible balanced coordinate-Hamming hierarchy](../mathematics/fixed-map/balanced_hamming_hierarchy.md) | Consult proof and full ledger |
@@ -240,31 +233,32 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Uniform massive covariance and formal connected coefficients](../mathematics/fixed-map/uniform_cluster_lemma.md) | Consult proof and full ledger |
 | [Stability-weighted periodic equidistribution for the actual frozen map](../mathematics/fixed-map/weighted_periodic_equidistribution.md) | Consult proof and full ledger |
 | [Exact nonlinear winding-defect locality and a finite-group Fourier reduction](../mathematics/fixed-map/winding_defect_locality.md) | `BGS-TRACE-018` (proved) |
-| [Global coercivity of the bare bosonic phase action](../mathematics/global_bosonic_body_coercivity.md) | Consult proof and full ledger |
-| [Global switch transfer and exact undamped boundary obligation](../mathematics/global_switch_transfer.md) | Consult proof and full ledger |
-| [Growing-period residual obstruction with all three coarse gaps](../mathematics/growing_period_switch_boundary_obstruction.md) | Consult proof and full ledger |
-| [Separate extension: ordinary matrix-valued bosonic blocks](../mathematics/matrix_block_body_coercivity.md) | Consult proof and full ledger |
-| [Stationary phase diffusion and the exact absorbed overlap defect](../mathematics/phase_ward_identity.md) | Consult proof and full ledger |
-| [Exact real scalar absorption bound](../mathematics/real_absorption_body_coercivity.md) | Consult proof and full ledger |
 | [Arithmetic word coherence despite uniform auxiliary quantum expansion](../mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md) | `BGS-TRACE-013` (proved) |
 | [Exact coherence memory and its singular-norm plateau](../mathematics/spectral-obstructions/coherence_memory_plateau.md) | `BGS-TRACE-082` (proved) |
 | [An observed first-return pulse despite perfect intensity mixing](../mathematics/spectral-obstructions/coherent_first_return_pulse.md) | `BGS-TRACE-083` (proved) |
 | [Perfect intensity mixing does not determine the microscopic spectrum](../mathematics/spectral-obstructions/flat_spectrum_obstruction.md) | `BGS-TRACE-081` (proved) |
 | [Positive Abel decomposition and quantitative clock rigidity](../mathematics/trace-bridge/abel_clock_rigidity.md) | `BGS-TRACE-092` (proved) |
 | [Активные интервалы и расширенное окно второй поправки](../mathematics/trace-bridge/active_intervals.md) | Consult proof and full ledger |
+| [One explicit eventual constant for the unchanged actual family](../mathematics/trace-bridge/actual_body_coercivity_constants.md) | Consult proof and full ledger |
 | [All fixed clock moments and near-flatness-scale joint delay barriers](../mathematics/trace-bridge/all_moment_delay_bootstrap.md) | Consult proof and full ledger |
 | [Closing the hierarchy-to-process step without an independent UI assumption](../mathematics/trace-bridge/all_order_process_closure.md) | `BGS-TRACE-086` (proved) |
 | [Произвольный закон часов, включая нулевую границу и неограниченные хвосты](../mathematics/trace-bridge/arbitrary_clock_law.md) | Consult proof and full ledger |
+| [Infinite boundary-delay variance despite flatness, perfect mixing and reverse decay](../mathematics/trace-bridge/balanced_boundary_delay_obstruction.md) | Consult proof and full ledger |
+| [Exact scalar Schur-energy reduction of the full balanced pair target](../mathematics/trace-bridge/balanced_pair_schur_reduction.md) | Consult proof and full ledger |
 | [From band-limited to Schwartz factorial correlations](../mathematics/trace-bridge/bandlimited_correlation_extension.md) | `BGS-TRACE-004` (proved) |
+| [Exact radial translation and a deliberately limited tail consequence](../mathematics/trace-bridge/bosonic_body_radial_translation.md) | Consult proof and full ledger |
 | [Contractive radial secular ratios and the full microscopic process](../mathematics/trace-bridge/bounded_radial_ratios.md) | `BGS-TRACE-090` (proved) |
 | [Точный закон всех положительных резольвентных источников и предел такого усреднения](../mathematics/trace-bridge/cauchy_positive_source_boundary.md) | `BGS-TRACE-105` (verification-pending) |
+| [Conditional disjoint synthesis with all low-switch off-charge fibers removed](../mathematics/trace-bridge/checksum_free_residual.md) | Consult proof and full ledger |
 | [Точная нормированная изотропия не закрывает связь часов с собственным базисом](../mathematics/trace-bridge/clock_basis_obstruction.md) | Consult proof and full ledger |
 | [Abel concentration and a Heisenberg-window boundary for clustered spectra](../mathematics/trace-bridge/clustered_abel_window_boundary.md) | `BGS-TRACE-006` (proved) |
 | [Фазовые корреляции при точно равномерных классических переходах](../mathematics/trace-bridge/coherence_form_factor.md) | `BGS-TRACE-065` (proved) |
 | [A square-root-time crossover for the complete equal-directed-edge sector](../mathematics/trace-bridge/collision_crossover.md) | `BGS-TRACE-089` (proved) |
 | [Точное суммирование повторных посещений и первая нелинейная поправка](../mathematics/trace-bridge/collision_resummation.md) | Consult proof and full ledger |
 | [Точная константа через число Коксетера](../mathematics/trace-bridge/compact_groups.md) | Consult proof and full ledger |
+| [A compact color-one pair projector and finite-size source identity](../mathematics/trace-bridge/compact_phase_pair_identity.md) | Consult proof and full ledger |
 | [Heisenberg-window control for the explicitly compensated family](../mathematics/trace-bridge/compensated_heisenberg_trace_control.md) | Consult proof and full ledger |
+| [Uniform microscopic source bounds from rank-one resampling](../mathematics/trace-bridge/complex_microscopic_phase_source_bounds.md) | Consult proof and full ledger |
 | [All fixed clock powers under an explicit entry-flatness premise](../mathematics/trace-bridge/conditional_clock_universality.md) | Consult proof and full ledger |
 | [CSE critical trace: all cumulants, a Gaussian boundary layer and phase transfer](../mathematics/trace-bridge/critical_cse_gaussian.md) | Consult proof and full ledger |
 | [Random Schur elimination: a joint-delay bootstrap from entry flatness](../mathematics/trace-bridge/delay_bootstrap.md) | `BGS-TRACE-060` (conditional) |
@@ -281,7 +275,10 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Full-depth clock measure, exact rank atom and inverse-Jacobi comparison](../mathematics/trace-bridge/full_depth_clock_measure.md) | Consult proof and full ledger |
 | [Direct attack on the signed Heisenberg statistic](../mathematics/trace-bridge/full_pair_cue_covariance.md) | `BGS-CUE-002` (proved) |
 | [Flat equal-edge sector: Gaussian comparison through all sublinear times](../mathematics/trace-bridge/gaussian_equal_edge.md) | `BGS-TRACE-093` (proved) |
+| [Global coercivity of the bare bosonic phase action](../mathematics/trace-bridge/global_bosonic_body_coercivity.md) | Consult proof and full ledger |
+| [Global switch transfer and exact undamped boundary obligation](../mathematics/trace-bridge/global_switch_transfer.md) | Consult proof and full ledger |
 | [Green compression and shrinking stopped intensity gaps](../mathematics/trace-bridge/green_compression_gap.md) | `BGS-TRACE-077` (proved) |
+| [Growing-period residual obstruction with all three coarse gaps](../mathematics/trace-bridge/growing_period_switch_boundary_obstruction.md) | Consult proof and full ledger |
 | [Exact Haar feedback law and an entropy-stable clock class](../mathematics/trace-bridge/haar_feedback_clock_law.md) | `BGS-TRACE-076` (proved) |
 | [Sharp clock extremum and an exact positive remainder for radial secular statistics](../mathematics/trace-bridge/hardy_spectral_remainder.md) | `BGS-TRACE-091` (proved) |
 | [Form factors on the Heisenberg scale for frozen circular backgrounds](../mathematics/trace-bridge/heisenberg_form_factor.md) | Consult proof and full ledger |
@@ -291,6 +288,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Optimal integrable absorption bounds in every fixed L^p](../mathematics/trace-bridge/integrable_phase_absorption.md) | `BGS-TRACE-058` (proved) |
 | [A sharp coefficient bound for balanced Laurent Jack polynomials](../mathematics/trace-bridge/jack_coefficient_theorem.md) | `BGS-TRACE-067` (proved) |
 | [Microscopic point-process transport from eigenspace pinching](../mathematics/trace-bridge/laplace_path_transport.md) | `BGS-TRACE-071` (proved) |
+| [Separate extension: ordinary matrix-valued bosonic blocks](../mathematics/trace-bridge/matrix_block_body_coercivity.md) | Consult proof and full ledger |
 | [Max-entry phase memory and averaged eigenbasis pinching](../mathematics/trace-bridge/max_entry_phase_channel.md) | `BGS-TRACE-053` (proved) |
 | [Глобальная оценка неоднородных полей через классическое перемешивание](../mathematics/trace-bridge/nonlinear_coercivity.md) | `BGS-TRACE-063` (proved) |
 | [Как occupation-стабилизатор переносит диагональ в линейные ранги](../mathematics/trace-bridge/occupation_rank_law.md) | Consult proof and full ledger |
@@ -305,10 +303,12 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Совместная сумма всех кластеров дефекта не выше двух](../mathematics/trace-bridge/phase_quartic_cluster_sum.md) | `BGS-TRACE-103` (verification-pending) |
 | [Полный второй дефект и открытое четырёхпортовое ядро](../mathematics/trace-bridge/phase_second_defect.md) | `BGS-TRACE-102` (verification-pending) |
 | [Reviewed phase and signed-trace checkpoint](../mathematics/trace-bridge/phase_trace_checkpoint.md) | `BGS-FM-027` (proved); `BGS-FM-028` (proved); `BGS-FM-029` (proved); `BGS-FM-030` (proved); `BGS-TRACE-021` (proved); `BGS-TRACE-022` (proved); `BGS-TRACE-023` (proved) |
+| [Stationary phase diffusion and the exact absorbed overlap defect](../mathematics/trace-bridge/phase_ward_identity.md) | Consult proof and full ledger |
 | [From real spectral transport to the physical absorbed source](../mathematics/trace-bridge/physical_source_transport.md) | `BGS-TRACE-059` (proved) |
 | [Recovery of the preceding occupation/rank work](../mathematics/trace-bridge/previous_rank_results.md) | `BGS-TRACE-066` (proved) |
 | [The full conditional local point-process law](../mathematics/trace-bridge/quenched_local_law.md) | Consult proof and full ledger |
 | [Ранг три и отдельный учёт активных отождествлений](../mathematics/trace-bridge/rank_defect_theorem.md) | Consult proof and full ledger |
+| [Exact real scalar absorption bound](../mathematics/trace-bridge/real_absorption_body_coercivity.md) | Consult proof and full ledger |
 | [Resonant cubic deletion from local spectral density](../mathematics/trace-bridge/resonant_cubic_density_control.md) | `BGS-TRACE-011` (proved) |
 | [Resonant BGS sector: quantitative stability, arc-count criterion, and a sharp abstract obstruction](../mathematics/trace-bridge/resonant_mesoscopic_criterion.md) | `BGS-TRACE-084` (proved) |
 | [Root lifting, local Sine2 statistics, and a sufficient-only resonance target](../mathematics/trace-bridge/root_lifting_sector_boundary.md) | `BGS-TRACE-085` (proved) |
@@ -324,9 +324,9 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Exact fresh-phase drift of the two-step intensity kernel](../mathematics/trace-bridge/two_step_restoring_drift.md) | `BGS-TRACE-075` (proved) |
 | [Simultaneous stopped two-step concentration](../mathematics/trace-bridge/two_step_stopped_concentration.md) | `BGS-TRACE-079` (proved) |
 | [Unconditional feedback flatness and fixed-order clocks](../mathematics/trace-bridge/unconditional_feedback_flatness.md) | `BGS-TRACE-080` (proved) |
+| [A dimension-uniform Abel bound from phase spectral averaging](../mathematics/trace-bridge/uniform_phase_pair_abel_bound.md) | Consult proof and full ledger |
 | [A two-step obstruction inside the unistochastic class](../mathematics/trace-bridge/unitary_two_step_obstruction.md) | `BGS-TRACE-074` (proved) |
 | [Heisenberg-scale Wick collisions and the flat equal-edge ratio](../mathematics/trace-bridge/wick_collision_poisson.md) | `BGS-TRACE-094` (proved) |
-| [A dimension-uniform Abel bound from phase spectral averaging](../mathematics/uniform_phase_pair_abel_bound.md) | Consult proof and full ledger |
 
 ### Cayley arithmetic and finite-field geometry
 

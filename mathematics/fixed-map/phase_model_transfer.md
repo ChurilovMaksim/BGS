@@ -69,7 +69,7 @@ power-telescoping check of §16.4.
   document's literal model.
 - No §9 intensity bound is used: the input consumed is the parametrix chain
   (FM-021's dependencies), not BGS-FM-021's intensity conclusions (‖P−J‖, C = 5,
-  ρ = 1/2; `mathematics/actual_body_coercivity_constants.md`). §9's gaps U11 (Abel step) and U12 (10⁶⁰ bound) are bypassed, not
+  ρ = 1/2; `mathematics/trace-bridge/actual_body_coercivity_constants.md`). §9's gaps U11 (Abel step) and U12 (10⁶⁰ bound) are bypassed, not
   closed, by this route.
 
 ## Numerical sanity (not part of the proof)

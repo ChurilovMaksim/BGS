@@ -55,6 +55,21 @@ def sealed_source_bytes(root=historical.ROOT):
     expected['mathematics/position_chain_mixing.md']='mathematics/fixed-map/position_chain_mixing.md'
     expected['mathematics/reversed_path_decay.md']='mathematics/fixed-map/reversed_path_decay.md'
     expected['mathematics/onestep_charge_gap.md']='mathematics/fixed-map/onestep_charge_gap.md'
+    # Wave 5 (2026-10-25): the fourteen-note trace-bridge move. Six
+    # wave2-pinned notes relocated byte-identically to mathematics/
+    # trace-bridge/ (pins unchanged); the two link-blocked notes
+    # (balanced_pair, global_switch) resolve to their pre-move pinned
+    # bytes, exactly as radial_shell does above. The wave2 scoped
+    # bindings are deliberately NOT rewritten: their source fields are
+    # logical keys into the sealed inputs dict, resolved here.
+    expected['mathematics/bosonic_body_radial_translation.md']='mathematics/trace-bridge/bosonic_body_radial_translation.md'
+    expected['mathematics/compact_phase_pair_identity.md']='mathematics/trace-bridge/compact_phase_pair_identity.md'
+    expected['mathematics/complex_microscopic_phase_source_bounds.md']='mathematics/trace-bridge/complex_microscopic_phase_source_bounds.md'
+    expected['mathematics/global_bosonic_body_coercivity.md']='mathematics/trace-bridge/global_bosonic_body_coercivity.md'
+    expected['mathematics/real_absorption_body_coercivity.md']='mathematics/trace-bridge/real_absorption_body_coercivity.md'
+    expected['mathematics/uniform_phase_pair_abel_bound.md']='mathematics/trace-bridge/uniform_phase_pair_abel_bound.md'
+    expected['mathematics/balanced_pair_schur_reduction.md']='archive/evidence/research_checkpoint_20261007/pinned/mathematics_balanced_pair_schur_reduction.md'
+    expected['mathematics/global_switch_transfer.md']='archive/evidence/research_checkpoint_20261007/pinned/mathematics_global_switch_transfer.md'
     historical.require(resolutions==expected,'unreviewed historical input resolution')
     cached={}
     for rel,digest in bindings['files'].items():

@@ -7,7 +7,7 @@
       "Exact finite-dimensional unitarity, charge decomposition, occupation-torus identity, Hamming coefficient extraction and trace cyclicity"
     ],
     "open": "Signed undamped boundary integral T16 remains OPEN.",
-    "proof": "mathematics/global_switch_transfer.md",
+    "proof": "mathematics/trace-bridge/global_switch_transfer.md",
     "results": [
       "Checksum-free actual partial offcharge fibers with arbitrary occupation twists and arbitrary modulus-one-or-less difference-word weights, low-switch cap floor(gamma a N/(8 log N))",
       "Full all-switch high-Hamming damped bound O(N^2 exp(-kappa a N(1-z))) for normalized positive compact Heisenberg bands",
@@ -101,7 +101,7 @@
       }
     ],
     "exact_projector": "Q_new=I-P_H-P_bal-O_low-L_all",
-    "proof": "mathematics/checksum_free_residual.md",
+    "proof": "mathematics/trace-bridge/checksum_free_residual.md",
     "unchanged_open": [
       "Balanced complement Pi-P_H-P_bal",
       "Complete Q_new signed trace",

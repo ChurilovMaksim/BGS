@@ -93,7 +93,7 @@ class SchurPortability(unittest.TestCase):
             'computations/verification/schur/author_checks.py',
             'computations/verification/schur/independent_checks.py',
             'computations/verification/schur/comparison.py',
-            'mathematics/balanced_pair_schur_reduction.md',
+            'mathematics/trace-bridge/balanced_pair_schur_reduction.md',
             R.FAMILIES['author']['expected'], R.FAMILIES['independent']['expected'],
             'archive/evidence/schur_reduction_20261007/raw/review/review.md']
         with tempfile.TemporaryDirectory(prefix='bgs-schur-corruption-') as directory:
