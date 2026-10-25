@@ -1,6 +1,6 @@
 # Lean 4 formalization
 
-There are 24 active source modules. All 24 compiled with Lean 4.33.1 on 20 October (27 Lake jobs), including CoherenceBudget. See the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) for source hashes, logs, adapter and exact scope. The older receipts below retain their historical scope.
+There are 25 active source modules. All 24 compiled with Lean 4.33.1 on 20 October (27 Lake jobs), including CoherenceBudget. See the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) for source hashes, logs, adapter and exact scope. The older receipts below retain their historical scope.
 
 **Claim ID:** BGS-FORMAL-001. This is the finite-certificate, algebraic-kernel
 and falsifier layer. A Lean theorem certifies the proposition in its source;
