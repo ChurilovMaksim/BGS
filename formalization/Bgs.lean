@@ -29,3 +29,6 @@ import Bgs.ActiveRankDefect
 import Bgs.CoherenceBudget
 
 import Bgs.TraceStatement
+
+import Bgs.RetTowerGeometry
+import Bgs.Fm009TraceObstruction
