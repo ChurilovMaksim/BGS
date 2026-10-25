@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "5f234063aa8d4967c823c557ba1afcadfe229242",
  "source": "record/claims.json",
- "source_blob_sha": "b30c38839d000ab2da73abeb95778011b206eac9",
+ "source_blob_sha": "068826c8732ed692ddc00b58d8a1b2c43c7c8373",
  "generated": "2026-10-25",
  "method_enumeration": [
   "analytic_proof",
@@ -592,27 +592,33 @@
    "title": "Effective but submicroscopic eigenphase gap floor at the frozen algebraic coupling",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "analytic_proof",
+    "author_check"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
     "author_check"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 1,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "mathematics/fixed-map/frozen_effective_gap_floor.md"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "PROJECT PROOF + CHECKED PRIMARY ROY THEOREM + AUTHOR CHECK",
    "boundary": "Odd 7-not-dividing-N only. Explicit enormous N-dependent lower gap from Roy Theorem 1.1 and discriminant height; vastly below 1/N, giving no local occupation, Abel, or CUE estimate.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
-   "other_weaknesses": []
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
+   "other_weaknesses": [
+    "no_finite_or_exact_control_layer",
+    "single_reviewer_author_check_only"
+   ]
   },
   {
    "id": "BGS-FORMAL-001",
@@ -911,27 +917,34 @@
    "title": "Smooth scalar-resolvent transfer between the original and seven-cut full propagators",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "analytic_proof",
+    "author_check"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
     "author_check"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 2,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
+    "mathematics/fixed-map/frozen_seven_cut_reduction.md"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "PROJECT DERIVATION FROM FM-007 AND RES-006 + AUTHOR CHECK",
    "boundary": "C-infinity local equivalence of scalar resolvents for the two full propagators; does not establish the value or existence of either limit, or a mixed hierarchy.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
-   "other_weaknesses": []
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
+   "other_weaknesses": [
+    "no_finite_or_exact_control_layer",
+    "single_reviewer_author_check_only"
+   ]
   },
   {
    "id": "BGS-RET-001",
@@ -1004,25 +1017,27 @@
    "title": "Partition-Mobius formula for distinct-index spectral sums",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "exact_identity"
    ],
    "ledger_claimed_methods": [
     "exact_identity"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 1,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "mathematics/trace-bridge/trace_to_local_statistics_bridge.md"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "EXACT",
    "boundary": "Deterministic finite-N identity.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
    "other_weaknesses": []
   },
   {
@@ -1030,25 +1045,27 @@
    "title": "Exact Fourier trace representation of microscopic factorial statistics",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "exact_identity"
    ],
    "ledger_claimed_methods": [
     "exact_identity"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 1,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "mathematics/trace-bridge/trace_to_local_statistics_bridge.md"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "EXACT",
    "boundary": "Compact Fourier support probes trace powers of order N.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
    "other_weaknesses": []
   },
   {
@@ -1056,25 +1073,27 @@
    "title": "Weighted Heisenberg-scale joint-trace comparison is sufficient for band-limited microscopic RMT correlations",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "exact_identity"
    ],
    "ledger_claimed_methods": [
     "exact_identity"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 1,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "mathematics/trace-bridge/trace_to_local_statistics_bridge.md"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "EXACT",
    "boundary": "Triangle-inequality sufficiency only; averaging is before modulus. TRACE-010 excludes simultaneous unaveraged all-order absolute CUE premises under pair absolute comparison. The exact signed bridge is viable but its actual-map estimate is open.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
    "other_weaknesses": []
   },
   {
@@ -1082,25 +1101,27 @@
    "title": "Every-compact-bandwidth comparison extends to Schwartz correlation tests",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "exact_identity"
    ],
    "ledger_claimed_methods": [
     "exact_identity"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 1,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "mathematics/trace-bridge/bandlimited_correlation_extension.md"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "EXACT",
    "boundary": "Requires positive normalized spectral averages and a reference Schwartz limit; a single fixed bandwidth is insufficient.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
    "other_weaknesses": []
   },
   {
@@ -1134,53 +1155,61 @@
    "title": "Clustered Abel lower bound and simple-spectrum Heisenberg-window falsifier",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "analytic_proof",
+    "exact_identity",
+    "author_check"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
     "exact_identity",
     "author_check"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 1,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "mathematics/trace-bridge/clustered_abel_window_boundary.md"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "EXACT ELEMENTARY PROOF + INTERNAL AUTHOR CHECK",
    "boundary": "Abstract unitary spectra. The Abel consequence for the compensated Pell family depends on its separate project pinning theorem; no frozen-map mixed cancellation is asserted.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
-   "other_weaknesses": []
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ]
   },
   {
    "id": "BGS-TRACE-007",
    "title": "Universal sharp Abel lower bound attained by the clock spectrum",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "exact_identity"
    ],
    "ledger_claimed_methods": [
     "exact_identity"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 1,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "mathematics/fixed-map/fixed_map_resolvent_frontier.md"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "EXACT + CHECKED COHN–KUMAR THEOREM 1.2",
    "boundary": "Every finite unitary spectrum and s>0. The bound is attained by the regular N-gon and the CUE benchmark is strictly larger; no uniform excess over the clock floor or frozen-model limit is proved.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
    "other_weaknesses": []
   },
   {
@@ -6504,27 +6533,31 @@
    "title": "Two-window phase crossover: rectangular Gram lower edge",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "analytic_proof",
+    "finite_control",
+    "independent_review"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
     "finite_control",
     "independent_review"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 1,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "mathematics/resonance-cohomology/two_window_resonance_crossover.md"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "PROJECT PROOF (COMPLETE FINITE-DIFFERENCE PROOF) + INDEPENDENT INTERNAL REVIEW",
    "boundary": "Fixed q>=1, R>=2q and fixed nonzero v; constants depend only on A, v, q, R. Two-sided order estimate, not a claimed exact leading constant. Smallest eigenvalue of a classical observable Gram matrix, not the spectral edge of a quantum Hamiltonian or a BGS eigenphase statistic.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
    "other_weaknesses": []
   },
   {
@@ -6596,26 +6629,31 @@
    "title": "Infinite-orbit independence and entire temporal all-pass gauges",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "analytic_proof"
    ],
    "ledger_claimed_methods": [
     "analytic_proof"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 2,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "mathematics/resonance-cohomology/infinite_orbit_resonance.md",
+    "mathematics/resonance-cohomology/entire_temporal_gauge.md"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "PROJECT PROOF (SELF-CONTAINED)",
    "boundary": "thm:infinite-orbit: nonzero observables with M_1(g)<infty supported on one signed orbit. All-pass classification: filters holomorphic on the punctured plane with real Laurent coefficients summable with every exponential weight. Preserved data are the complete zero-frequency hierarchy J(h_r) modulo actual smooth coboundaries, not all dynamical-frequency cross spectra; cubic moments can change.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
-   "other_weaknesses": []
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
+   "other_weaknesses": [
+    "no_finite_or_exact_control_layer"
+   ]
   },
   {
    "id": "BGS-RES-019",
@@ -6682,27 +6720,32 @@
    "title": "Analytic rigidity of zero resonance mechanisms",
    "state": "proved",
    "methods": [
-    "unevidenced"
+    "analytic_proof",
+    "independent_review"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
     "independent_review"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 0,
+    "evidence": 1,
     "verifiers": 0,
     "formalization": 0
    },
-   "evidence": [],
+   "evidence": [
+    "manuscript/unified_sections/analytic_resonance_rigidity.tex"
+   ],
    "verifiers": [],
    "formalization": [],
    "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW (RIGIDITY CORE)",
    "boundary": "Analytic category only. A zero-variance analytic counterexample is not excluded: by Corollary cor:analytic-resonance-frontier it would have to solve the nontrivial analytic nonlinear cohomological equation (eq:analytic-nonlinear-cohomology), with {g,Cg} not identically zero. The all-members analytic nondegeneracy question remains open (BGS-RES-003).",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "evidence, verifiers and formalization lists are all empty; only registry prose and the source note exist",
-   "other_weaknesses": []
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "evidence path(s) exist but no verifier script path is listed",
+   "other_weaknesses": [
+    "no_finite_or_exact_control_layer"
+   ]
   },
   {
    "id": "BGS-RES-022",
@@ -7209,5 +7252,316 @@
    "spof_detail": "Lean formalization path(s) only; no evidence or verifier path in the tree",
    "other_weaknesses": []
   }
- ]
+ ],
+ "recovery_upgrade": {
+  "v1_note": "In the v1 inventory (2026-10-25, base_commit 5f234063aa8d4967c823c557ba1afcadfe229242) these 11 rows carried methods=['unevidenced'] and unevidenced=true because their claims.json evidence/verifiers/formalization lists were all empty. The v1 verdict recorded missing machine-readable receipt linkage, not absent proofs.",
+  "upgraded": "2026-10-25",
+  "basis": "Receipt-recovery pass (base main HEAD 3125add): each named source file was read and found to contain an actual argument establishing the titled statement within its stated boundary. Parent spot-checked 4/11 citations (BGS-TRACE-001, BGS-TRACE-004, BGS-FM-011, BGS-RES-021) and confirmed them. No claim was re-proved by the pass; no status changed (all 11 rows stay proved).",
+  "findings_reference": "phase7_v2/recovery/RECOVERY_REPORT.md and phase7_v2/recovery/recovery_findings.json (workbench staging for the governed amendment; base main HEAD 3125add).",
+  "method_basis": "methods are each row's v1 ledger_claimed_methods, now receipt-linked; no new method tag was inferred beyond the ledger claim. author_check / independent_review tags are ledger claims carried over, not newly verified by the recovery pass (the pass verified the proofs exist in the named sources).",
+  "evidence_convention": "Row evidence lists contain plain repo paths (the artifact's convention, require_path-checkable). Line-level citations are recorded per row below and in the upgrade report; they are not embedded in evidence strings, so no path check can break on them.",
+  "checker_divergence": "CLOSED by the receipt-linkage package (2026-10-25, same landing as this inventory version): the same evidence paths were linked in record/claims.json for the 11 rows (evidence-field only, no state change), with P1 epoch extensions for the 8 sealed rows. The v1 mechanical checker therefore recomputes this inventory exactly from the post-linkage claims.json and passes unmodified (rows=199, unevidenced=6). Historical note: before that linkage, the checker reported exactly these 11 rows as divergent, because claims.json evidence lists were empty; that divergence was the governed amendment itself, not an error in it.",
+  "rows": [
+   {
+    "id": "BGS-FM-011",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "analytic_proof",
+     "author_check"
+    ],
+    "evidence": [
+     "mathematics/fixed-map/frozen_effective_gap_floor.md"
+    ],
+    "citations": [
+     {
+      "file": "mathematics/fixed-map/frozen_effective_gap_floor.md",
+      "lines": "13-41",
+      "what": "Statement, bound (2) + disclaimer"
+     },
+     {
+      "file": "mathematics/fixed-map/frozen_effective_gap_floor.md",
+      "lines": "42-60",
+      "what": "Roy Theorem 1.1 quoted as (3)"
+     },
+     {
+      "file": "mathematics/fixed-map/frozen_effective_gap_floor.md",
+      "lines": "62-163",
+      "what": "Integral basis, height controls"
+     },
+     {
+      "file": "mathematics/fixed-map/frozen_effective_gap_floor.md",
+      "lines": "164-208",
+      "what": "Discriminant conversion to (2)"
+     }
+    ]
+   },
+   {
+    "id": "BGS-RES-007",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "analytic_proof",
+     "author_check"
+    ],
+    "evidence": [
+     "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
+     "mathematics/fixed-map/frozen_seven_cut_reduction.md"
+    ],
+    "citations": [
+     {
+      "file": "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
+      "lines": "161-225",
+      "what": "(R3)-(R4) + proof via FM-007 (13), (7), (R5)"
+     },
+     {
+      "file": "mathematics/fixed-map/frozen_seven_cut_reduction.md",
+      "lines": "164,281,290,293",
+      "what": "FM-007 estimate (7) and identity (13) present"
+     }
+    ]
+   },
+   {
+    "id": "BGS-TRACE-001",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "exact_identity"
+    ],
+    "evidence": [
+     "mathematics/trace-bridge/trace_to_local_statistics_bridge.md"
+    ],
+    "citations": [
+     {
+      "file": "mathematics/trace-bridge/trace_to_local_statistics_bridge.md",
+      "lines": "93",
+      "what": "Theorem 1, eq. (7), partition-Mobius formula + proof"
+     }
+    ]
+   },
+   {
+    "id": "BGS-TRACE-002",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "exact_identity"
+    ],
+    "evidence": [
+     "mathematics/trace-bridge/trace_to_local_statistics_bridge.md"
+    ],
+    "citations": [
+     {
+      "file": "mathematics/trace-bridge/trace_to_local_statistics_bridge.md",
+      "lines": "137",
+      "what": "Theorem 2, eq. (10) + proof"
+     },
+     {
+      "file": "mathematics/trace-bridge/trace_to_local_statistics_bridge.md",
+      "lines": "162-176",
+      "what": "Heisenberg-scale consequence, trace powers O(N)"
+     }
+    ]
+   },
+   {
+    "id": "BGS-TRACE-003",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "exact_identity"
+    ],
+    "evidence": [
+     "mathematics/trace-bridge/trace_to_local_statistics_bridge.md"
+    ],
+    "citations": [
+     {
+      "file": "mathematics/trace-bridge/trace_to_local_statistics_bridge.md",
+      "lines": "228",
+      "what": "Corollary 3, (15)=>(16) by triangle inequality; (17) sufficient only"
+     },
+     {
+      "file": "mathematics/trace-bridge/trace_to_local_statistics_bridge.md",
+      "lines": "253-261",
+      "what": "Boundary: TRACE-010 obstruction, averaging before modulus, actual-map estimate open"
+     }
+    ],
+    "scope_note": "Sufficiency statement only, as bounded (Corollary 3 (15)=>(16); actual-map signed estimate remains open; see row boundary)."
+   },
+   {
+    "id": "BGS-TRACE-004",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "exact_identity"
+    ],
+    "evidence": [
+     "mathematics/trace-bridge/bandlimited_correlation_extension.md"
+    ],
+    "citations": [
+     {
+      "file": "mathematics/trace-bridge/bandlimited_correlation_extension.md",
+      "lines": "67,97,104-120",
+      "what": "Occupation bound (3), extension Theorem + proof, f_R approximants"
+     },
+     {
+      "file": "mathematics/trace-bridge/bandlimited_correlation_extension.md",
+      "lines": "130,146",
+      "what": "Fixed-cap insufficiency, signed-average failure"
+     }
+    ]
+   },
+   {
+    "id": "BGS-TRACE-006",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "analytic_proof",
+     "exact_identity",
+     "author_check"
+    ],
+    "evidence": [
+     "mathematics/trace-bridge/clustered_abel_window_boundary.md"
+    ],
+    "citations": [
+     {
+      "file": "mathematics/trace-bridge/clustered_abel_window_boundary.md",
+      "lines": "25-49",
+      "what": "Proposition 1, exact Abel bound (A1) + proof"
+     },
+     {
+      "file": "mathematics/trace-bridge/clustered_abel_window_boundary.md",
+      "lines": "80-125",
+      "what": "Proposition 2, falsifier, explicit sequence n=K^5, eta=K^-2"
+     },
+     {
+      "file": "mathematics/trace-bridge/clustered_abel_window_boundary.md",
+      "lines": "8-11,60-67",
+      "what": "Boundary: no frozen-map mixed cancellation; Pell application deferred"
+     }
+    ]
+   },
+   {
+    "id": "BGS-TRACE-007",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "exact_identity"
+    ],
+    "evidence": [
+     "mathematics/fixed-map/fixed_map_resolvent_frontier.md"
+    ],
+    "citations": [
+     {
+      "file": "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
+      "lines": "116-159",
+      "what": "(R2) universal Abel floor + proof via Cohn-Kumar 1.2; CUE excess explicit"
+     }
+    ]
+   },
+   {
+    "id": "BGS-RES-015",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "analytic_proof",
+     "finite_control",
+     "independent_review"
+    ],
+    "evidence": [
+     "mathematics/resonance-cohomology/two_window_resonance_crossover.md"
+    ],
+    "citations": [
+     {
+      "file": "mathematics/resonance-cohomology/two_window_resonance_crossover.md",
+      "lines": "22-26",
+      "what": "Theorem, two-sided estimate (1), constants only on A,v,q,R"
+     },
+     {
+      "file": "mathematics/resonance-cohomology/two_window_resonance_crossover.md",
+      "lines": "74-108",
+      "what": "Finite-difference identity (4) + Dirichlet chains, lower half"
+     },
+     {
+      "file": "mathematics/resonance-cohomology/two_window_resonance_crossover.md",
+      "lines": "110-134",
+      "what": "Product trial vector, upper half"
+     }
+    ]
+   },
+   {
+    "id": "BGS-RES-018",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "analytic_proof"
+    ],
+    "evidence": [
+     "mathematics/resonance-cohomology/infinite_orbit_resonance.md",
+     "mathematics/resonance-cohomology/entire_temporal_gauge.md"
+    ],
+    "citations": [
+     {
+      "file": "mathematics/resonance-cohomology/infinite_orbit_resonance.md",
+      "lines": "44-56",
+      "what": "Strict independence Theorem + proof"
+     },
+     {
+      "file": "mathematics/resonance-cohomology/entire_temporal_gauge.md",
+      "lines": "19-51",
+      "what": "Theorem 1 classification + hierarchy preservation (2), transfer (3)"
+     },
+     {
+      "file": "mathematics/resonance-cohomology/entire_temporal_gauge.md",
+      "lines": "94-99",
+      "what": "Changing cubic moment 24-36a+O(a^2)"
+     }
+    ],
+    "scope_note": "Source + named dependency jointly (infinite_orbit_resonance.md Theorem + entire_temporal_gauge.md Theorems 1-2)."
+   },
+   {
+    "id": "BGS-RES-021",
+    "previous_methods": [
+     "unevidenced"
+    ],
+    "methods": [
+     "analytic_proof",
+     "independent_review"
+    ],
+    "evidence": [
+     "manuscript/unified_sections/analytic_resonance_rigidity.tex"
+    ],
+    "citations": [
+     {
+      "file": "manuscript/unified_sections/analytic_resonance_rigidity.tex",
+      "lines": "11-70",
+      "what": "Theorem 1 pointwise-bracket rigidity + proof"
+     },
+     {
+      "file": "manuscript/unified_sections/analytic_resonance_rigidity.tex",
+      "lines": "76-140",
+      "what": "Theorem 2 analytic coboundary regularity + proof"
+     },
+     {
+      "file": "manuscript/unified_sections/analytic_resonance_rigidity.tex",
+      "lines": "155-167",
+      "what": "Corollary, nonlinear cohomological equation, {g,Cg}!=0"
+     },
+     {
+      "file": "manuscript/unified_sections/analytic_resonance_rigidity.tex",
+      "lines": "175-177",
+      "what": "Stops short of all-members theorem; RES-003 open"
+     }
+    ]
+   }
+  ]
+ }
 }
