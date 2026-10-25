@@ -1,6 +1,6 @@
 # Точный закон всех положительных резольвентных источников и предел такого усреднения
 
-**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-105**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_positive_source_boundary_ru.md), SHA-256 `0b34f167c45622541909995338b61326ab675c343133d2b8255a89ac691fdb1f`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-105**. Author proof and author check; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_positive_source_boundary_ru.md), SHA-256 `0b34f167c45622541909995338b61326ab675c343133d2b8255a89ac691fdb1f`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
 19 октября 2026. Авторское доказательство и отдельная самопроверка. Механизм — классическое гармоническое усреднение Коши; мировая новизна не утверждается. Полная BGS и смешанные микроскопические корреляции не доказаны.

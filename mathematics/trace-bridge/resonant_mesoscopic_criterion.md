@@ -1,6 +1,6 @@
 # Resonant BGS sector: quantitative stability, arc-count criterion, and a sharp abstract obstruction
 
-**Stable claim:** `BGS-TRACE-084`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-TRACE-084`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** Sufficient selected-sector deletion criterion only; the sector need not vanish for a valid full signed local law.
 

@@ -1,6 +1,6 @@
 # Clock relaxation under quadratic noise and the noise-removal boundary
 
-**Claim ID: BGS-FLOW-007.** Project derivation and author self-review,
+**Claim ID: BGS-FLOW-007.** Project derivation and author check,
 29 September 2026. The circular Dyson clock kernel is prior work of
 Forrester; see [the exact-source review](../../literature/quadratic_noise_sources_20260929.md).
 No priority or deterministic BGS claim is made.

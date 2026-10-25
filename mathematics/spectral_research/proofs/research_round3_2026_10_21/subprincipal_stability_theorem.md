@@ -479,7 +479,7 @@ All literature lookups used primary papers or author institutional versions. Ret
 
 ## 10. Exact project provenance
 
-This is a new structural theorem separate from the completed trace-foundation audit. No historical file was changed, and no further subagent was spawned.
+This is a new structural theorem separate from the completed trace-foundation audit. No historical file was changed.
 
 | Source | SHA-256 |
 |---|---|

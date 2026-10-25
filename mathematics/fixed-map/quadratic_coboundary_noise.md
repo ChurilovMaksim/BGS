@@ -9,7 +9,7 @@ local limit. These do not complete deterministic noise removal.
 
 
 **Claim ID:** BGS-FLOW-003. **Status:** exact finite-dimensional project
-derivation with deterministic finite checks and author self-review.
+derivation with deterministic finite checks and author check.
 No priority claim; no fixed-map universality theorem. This note resolves a
 fourth-order question left open by [BGS-FLOW-002](coboundary_spectral_flow_bound.md).
 The noise constructed here is external and generally changes local statistics.

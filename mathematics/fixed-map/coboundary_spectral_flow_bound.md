@@ -1,7 +1,7 @@
 # Finite coboundary spectral flow: an exact bound and its limitations
 
 **Claim IDs:** BGS-FLOW-001, BGS-FLOW-002. **Status:** finite-dimensional
-project proofs, author self-review. All Hilbert--Schmidt norms below
+project proofs, author check. All Hilbert--Schmidt norms below
 are normalized by the matrix dimension. This note applies to arbitrary
 unitary matrices; the hypotheses needed for the prescribed frozen
 family are **not** established. It is not a microscopic BGS theorem.

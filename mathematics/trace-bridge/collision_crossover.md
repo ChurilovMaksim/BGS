@@ -7,7 +7,7 @@ hypotheses retain their original scope. The classical Gaussian crossover is
 credited to Kristjansen--Plefka--Semenoff--Staudacher (2002).
 
 
-**Stable claim:** `BGS-TRACE-089`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-TRACE-089`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** m tends to infinity with m/sqrt(N) tending to a fixed finite c; not m of order N. Harer-Zagier is a classical external input.
 

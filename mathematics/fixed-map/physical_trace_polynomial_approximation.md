@@ -1,6 +1,6 @@
 # Physical polynomial approximation and its all-order trace error
 
-**Claim:** BGS-TRACE-107. **Status:** analytic author proof with self-review,
+**Claim:** BGS-TRACE-107. **Status:** analytic author proof with author check,
 21 October 2026. Standard approximation and finite algebra; no priority claim.
 The fixed model is defined in [physical kick trace decay](physical_kick_trace_decay.md).
 This note controls approximation errors and arithmetic aliases. The remaining

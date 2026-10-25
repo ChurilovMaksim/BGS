@@ -1,7 +1,7 @@
 # Inserted trace and the exact obstruction to a quantum coboundary
 
-**Claim:** BGS-TRACE-109. **Status:** analytic proof with self-review.
-The continuation, self-reviewed on 22 October, closes the previously conditional one-step input
+**Claim:** BGS-TRACE-109. **Status:** analytic proof with author check.
+The continuation, author-checked on 22 October, closes the previously conditional one-step input
 by an independent [finite-grid proof](finite_grid_one_step_trace.md).
 It retains one transport correction and controls the complete trace error by
 $O(N^{-1})$, without the all-time sector or pressure construction.

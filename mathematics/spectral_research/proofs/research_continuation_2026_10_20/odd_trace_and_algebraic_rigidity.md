@@ -794,4 +794,4 @@ No generic-simplicity assertion is being substituted for the missing family-spec
 | Uniform resummed error $2(0.421)^m$ | Exact analytic amplitude; contour and trace-norm bounds | Outside this packet; not certified here |
 | Deterministic CUE/Hdiag target | Long-time cancellation/statistical control | Unresolved |
 
-Review provenance: fresh adversarial subagent; independent reconstruction from exact formulas supplied during the continuation. No numerical sample is used to establish a universal assertion. The external Lindemann–Weierstrass theorem was checked against the exact source listed in Section 11. The disappeared earlier files, their audit labels, and agreements by other agents are not proofs used in this document.
+Review provenance: fresh adversarial internal review; independent reconstruction from exact formulas supplied during the continuation. No numerical sample is used to establish a universal assertion. The external Lindemann–Weierstrass theorem was checked against the exact source listed in Section 11. The disappeared earlier files, their audit labels, and agreements by other reviewers are not proofs used in this document.

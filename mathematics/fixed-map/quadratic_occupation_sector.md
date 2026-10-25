@@ -2,7 +2,7 @@
 
 6 October 2026. Separate continuation. Every earlier scalar/source/resolvent
 report and manifest remains frozen. The result below is an exact sector
-identity plus an actual-symbol aggregate estimate, with self-review and
+identity plus an actual-symbol aggregate estimate, with author check and
 finite tensor checks. It has a separate independent proof review, with inherited actual-model inputs explicit.
 
 ## Result

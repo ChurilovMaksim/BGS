@@ -1,6 +1,6 @@
 # A simultaneous limit for uncentered Gaussian coboundary kicks
 
-**Claim ID: BGS-FLOW-010.** Project proof and author self-review,
+**Claim ID: BGS-FLOW-010.** Project proof and author check,
 30 September 2026. No independent review, formal certificate, practical
 simulation claim or priority determination.
 

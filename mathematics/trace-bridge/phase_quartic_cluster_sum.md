@@ -1,6 +1,6 @@
 # Совместная сумма всех кластеров дефекта не выше двух
 
-**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-103**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/defect_two_cluster_gas_ru.md), SHA-256 `c4613080d55008343004dd9e2f3872a1e24dca0bbea0b4230f40ff96db6587ac`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-103**. Author proof and author check; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/defect_two_cluster_gas_ru.md), SHA-256 `c4613080d55008343004dd9e2f3872a1e24dca0bbea0b4230f40ff96db6587ac`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
 19 октября 2026. Авторское компьютерно поддержанное доказательство и самопроверка; независимой рецензии и установленного приоритета нет. Полная BGS и перенос к замороженному пропагатору не утверждаются.

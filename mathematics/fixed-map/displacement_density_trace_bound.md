@@ -1,12 +1,12 @@
 # Uniform classical displacement density and a logarithmic spectral comparison
 
-**Claim:** BGS-TRACE-112. **Status:** analytic proof with self-review,
+**Claim:** BGS-TRACE-112. **Status:** analytic proof with author check,
 21 October 2026. This supplies an independent proof of the upper spectral
 distance bound in TRACE-110, without its all-time quantum trace/pressure input.
 It does not estimate microscopic spacings. The anisotropic Fourier method
 is standard; no literature-priority claim is made.
 
-Final dependency and cross-surface self-review: 22 October 2026.
+Final dependency and cross-surface author check: 22 October 2026.
 
 ## 1. A uniform density for the actual classical displacement
 

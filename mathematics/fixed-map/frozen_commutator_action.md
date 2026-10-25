@@ -2,7 +2,7 @@
 
 **Claim ID:** `BGS-FM-015`
 
-Date: 30 September 2026. Status: project proof and author self-review.
+Date: 30 September 2026. Status: project proof and author check.
 This closes the classical generating-function obligation in Section 39 of
 the submitted note, in a specified mixed-coordinate chart. It does not
 construct its quantum FIO kernel or prove an operator norm estimate.

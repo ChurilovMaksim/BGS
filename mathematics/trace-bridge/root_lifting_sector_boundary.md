@@ -1,6 +1,6 @@
 # Root lifting, local Sine2 statistics, and a sufficient-only resonance target
 
-**Stable claim:** `BGS-TRACE-085`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-TRACE-085`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** Abstract spectra, including deterministic existence via CUE local-average variance. Does not identify root labels or traces of the maintained propagator.
 

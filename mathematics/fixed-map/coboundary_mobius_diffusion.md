@@ -1,6 +1,6 @@
 # Möbius reduction of repeated Gaussian coboundary steps
 
-**Claim ID: BGS-FLOW-009.** Project proof and author self-review,
+**Claim ID: BGS-FLOW-009.** Project proof and author check,
 29 September 2026. No independent review, formal certificate or priority
 claim. The Möbius geometry of first-harmonic mean-field motion is
 established prior work; the local facts needed here are proved below.

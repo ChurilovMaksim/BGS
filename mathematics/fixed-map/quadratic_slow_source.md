@@ -1,7 +1,7 @@
 # First nonlinear slow mode: actual source and two compressed frames
 
 6 October 2026. Separate continuation; the parent directory's report and
-manifest remain byte-for-byte unchanged. Self-reviewed proof with independent
+manifest remain byte-for-byte unchanged. Author-checked proof with independent
 tensor/combinatorial implementations, awaiting a fresh proof review.
 
 ## Results

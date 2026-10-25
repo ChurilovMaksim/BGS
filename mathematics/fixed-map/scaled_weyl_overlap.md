@@ -1,6 +1,6 @@
 # Scale-normalized positive-quantization bound for the unchanged BGS kick
 
-**Stable claim:** `BGS-FM-033`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-FM-033`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** Conditional on the exact quantitative G1-G3 analytic inputs pinned in the source. Finite algebra checks do not recertify those analytic inputs. No cyclic Heisenberg trace bound.
 

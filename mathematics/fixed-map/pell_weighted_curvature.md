@@ -1,7 +1,7 @@
 # Full weighted gradient, Pell curvature and the forced early inflection
 
 **Claim:** BGS-TRACE-111. **Status:** analytic author proof, reconstructed
-and self-reviewed on 21 October 2026. All time sums below include the full
+and author-checked on 21 October 2026. All time sums below include the full
 support of the fixed test. This is a theorem at the initial parameter
 $t=0$ and on a shrinking interval; it does not evaluate the fixed positive
 parameter $\tau=10^{-80}$.

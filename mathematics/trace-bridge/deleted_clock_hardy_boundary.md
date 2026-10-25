@@ -1,6 +1,6 @@
 # Strict Hardy positivity does not identify a limiting excess
 
-**Status:** exact abstract spectral control, author self-review. This is an
+**Status:** exact abstract spectral control, author check. This is an
 addition to the argument in [TRACE-091](hardy_spectral_remainder.md),
 not a counterexample to the prescribed frozen map.
 

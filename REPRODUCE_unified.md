@@ -8,7 +8,7 @@ new exact rational and exponent checks. Then run the three renderers in
 `sync_finite_orbit_section.py --check`, and
 `check_spectral_edition.py` in `computations/verification/`.
 The [new receipt](evidence/executions/20261022/trace-closure/README.md)
-distinguishes finite checks, analytic self-review, primary-source inspection
+distinguishes finite checks, analytic author check, primary-source inspection
 and the new manuscript build. No old evidence is replaced.
 
 ## Final spectral source edition, 21 October 2026

@@ -1,6 +1,6 @@
 # Sharp clock extremum and an exact positive remainder for radial secular statistics
 
-**Stable claim:** `BGS-TRACE-091`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-TRACE-091`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family.
 

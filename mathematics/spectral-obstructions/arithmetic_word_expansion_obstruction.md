@@ -1,6 +1,6 @@
 # Arithmetic word coherence despite uniform auxiliary quantum expansion
 
-**Claim ID: BGS-TRACE-013. Status: PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR SELF-REVIEW.**
+**Claim ID: BGS-TRACE-013. Status: PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR CHECK.**
 4 October 2026. The fixed map and its odd parity sectors below are counterexamples
  to auxiliary mixing criteria, not the prescribed frozen map. The uniform gap
 uses Bourgain--Gamburd; frame potentials and Clifford designs are prior mathematics.

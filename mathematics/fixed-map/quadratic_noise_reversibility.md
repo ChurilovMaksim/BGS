@@ -1,6 +1,6 @@
 # Reversible correction and short-time path comparison
 
-**Claim ID: BGS-FLOW-005.** Project proof, author self-review, 29 September
+**Claim ID: BGS-FLOW-005.** Project proof, author check, 29 September
 2026. No independent review, formal certificate, or priority claim.
 Definitions of $L_X$, $p_j$, $m_j$, and the Hilbert--Schmidt covariance
 $\mathcal C_U$ are those of [FLOW-003](quadratic_coboundary_noise.md).

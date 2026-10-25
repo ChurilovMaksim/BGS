@@ -1,6 +1,6 @@
 # Contractive radial secular ratios and the full microscopic process
 
-**Stable claim:** `BGS-TRACE-090`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-TRACE-090`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** Any unitary spectrum. The mixed-moment convergence premise for the frozen model is open; weak convergence alone supplies no unbounded count UI. Discrete Toeplitz contraction requires grid M>=N.
 

@@ -1,6 +1,6 @@
 # Actual charge compactness and the radial switch boundary
 
-Candidate theorem, 7 October 2026. The literal odd-dimensional operator U_N=exp(i 10^-80 N A_N)M_N is unchanged. This note does not prove the signed boundary integral. It determines what the switch regularization can and cannot do to its spectrum. Self-review only until a separate review is supplied.
+Candidate theorem, 7 October 2026. The literal odd-dimensional operator U_N=exp(i 10^-80 N A_N)M_N is unchanged. This note does not prove the signed boundary integral. It determines what the switch regularization can and cannot do to its spectrum. Author check only until a separate review is supplied.
 
 ## C1. Exact hypotheses and result
 

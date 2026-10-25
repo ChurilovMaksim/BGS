@@ -43,7 +43,7 @@ $$
 
 Thus even moment convergence and a deterministic vanishing coupling
 error do not supply characteristic-function control at the growing
-frequency. This elementary rounding example is author self-review,
+frequency. This elementary rounding example is author-checked,
 not a periodic-orbit realization, a counterexample to the source's
 additional hypotheses, or a world-priority claim. No finite experiment
 is needed to decide its exact integer-phase identity.

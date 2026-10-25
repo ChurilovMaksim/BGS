@@ -1,6 +1,6 @@
 # Конечное множество примитивов при любом фиксированном дефекте
 
-**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-101**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/neutral_peeling_ru.md), SHA-256 `9d4dcee716eeed38dcc3f4f2d5924915e7e9a88aeb7d74ac91b233ab85036b12`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-101**. Author proof and author check; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/neutral_peeling_ru.md), SHA-256 `9d4dcee716eeed38dcc3f4f2d5924915e7e9a88aeb7d74ac91b233ab85036b12`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
 19 октября 2026. Авторское доказательство, самопроверка; независимой рецензии и установленного приоритета нет. Обозначения точного фазового разложения — в [incidence_resummation_ru.md](../../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/incidence_resummation_ru.md) и `dependencies/signed_trace_formula_ru.md`.

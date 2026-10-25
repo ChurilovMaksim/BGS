@@ -4,7 +4,7 @@
 
 Date: 21 September 2026.
 
-Status: conditional theorem for arbitrary unitary spectra. Its residual hypotheses are not proved for the frozen BGS map. The proof is self-reviewed with exact symbolic and finite numerical checks; there is no Lean certificate or independent referee report.
+Status: conditional theorem for arbitrary unitary spectra. Its residual hypotheses are not proved for the frozen BGS map. The proof is author-checked with exact symbolic and finite numerical checks; there is no Lean certificate or independent referee report.
 
 ## 1. Hypotheses and conclusion
 

@@ -2,7 +2,7 @@
 
 **Claim ID:** `BGS-FM-006`. **Status:** project proof, checked against the
 primary thermodynamic-formalism sources and independently reassembled exact
-Fourier arithmetic; author-level self-review only. The underlying quantitative
+Fourier arithmetic; author-level checking only. The underlying quantitative
 Anosov and fixed-point inputs are `BGS-FM-001`. This is a classical dynamical
 result, not a Heisenberg-time trace estimate, a priority claim, or BGS.
 

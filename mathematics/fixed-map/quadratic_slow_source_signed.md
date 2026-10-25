@@ -90,7 +90,7 @@ is the all-time proof (S3), not numerical resolution of 10^-80.
     OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python check_signed.py > signed_checks.json
 
 No canonical or previously frozen file was edited. The signed result is
-self-reviewed and requires a fresh independent proof review before promotion.
+author-checked and requires a fresh independent proof review before promotion.
 
 ## Supporting scope
 

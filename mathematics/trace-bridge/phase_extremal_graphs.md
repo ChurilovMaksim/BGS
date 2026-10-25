@@ -1,6 +1,6 @@
 # Полная классификация графов четырёхпортового связного кластера
 
-**Maintained scope, 19 October 2026.** Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/extremal_graphs_ru.md), SHA-256 `cabebc0016b6e635f45145f0d499e67110631087809f513caaab759397470f08`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Author proof and author check; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/extremal_graphs_ru.md), SHA-256 `cabebc0016b6e635f45145f0d499e67110631087809f513caaab759397470f08`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
 19 октября 2026. Авторское доказательство и вычислительная самопроверка. Независимой рецензии и установленного приоритета нет. Объект — точное фазовое семейство $U=DS$, $S_{xy}=N^{-1/2}e^{2\pi i\Omega(x,y)/p}$, $N=p^{2d}$, с независимыми круговыми фазами, а не исходный замороженный пропагатор.

@@ -2,7 +2,7 @@
 
 **Claim:** BGS-CUE-001. **Scope:** Haar CUE, not the prescribed fixed
 quantum map. **Status:** project deduction from a checked published
-small-gap theorem plus the determinantal argument below; author self-review,
+small-gap theorem plus the determinantal argument below; author check,
 no claim of priority or external refereeing. No statement here proves the
 fixed-coupling BGS conjecture.
 

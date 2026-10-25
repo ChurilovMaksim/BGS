@@ -4,7 +4,7 @@
 
 Date: 30 September 2026.
 
-Status: project proof and author self-review; exact algebra and finite controls.
+Status: project proof and author check; exact algebra and finite controls.
 This completes and strengthens Section 14 of the submitted Heisenberg note.
 No priority or quantum FUP claim is made.
 

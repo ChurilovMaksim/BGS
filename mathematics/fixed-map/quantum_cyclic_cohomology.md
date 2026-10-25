@@ -1,6 +1,6 @@
 # Quantum cyclic cohomology and a parity-resolved spectral susceptibility for the frozen BGS kick
 
-**Stable claim:** `BGS-FM-032`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-FM-032`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** Additive normalized-HS cohomology and initial eigenphase response only; fixed physical strength grows as tau*p. No multiplicative holonomy or microscopic limit.
 

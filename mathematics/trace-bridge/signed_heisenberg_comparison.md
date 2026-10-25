@@ -1,7 +1,7 @@
 # Why deterministic Heisenberg comparison must retain cancellation
 
 **Claim ID:** `BGS-TRACE-010`. Date: 30 September 2026.
-**Status:** project proof and author self-review; exact CUE calibration uses
+**Status:** project proof and author check; exact CUE calibration uses
 the prior Diaconis--Evans moment theorem. Finite checks support the algebra.
 The frozen-map BGS target is open. No external validation or priority is claimed.
 The obstruction compares deterministic unitary spectra with the finite CUE

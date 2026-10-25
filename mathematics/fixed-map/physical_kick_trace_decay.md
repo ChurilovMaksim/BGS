@@ -1,7 +1,7 @@
 # Uniform trace decay of the physical kick
 
 **Claim:** BGS-TRACE-106. **Status:** analytic author proof, reconstructed and
-self-reviewed on 21 October 2026; not externally refereed or Lean-formalized.
+author-checked on 21 October 2026; not externally refereed or Lean-formalized.
 The imported manuscript proves the exponent $1/25$. The positive-square
 localization below strengthens it to $1/9$. No priority claim is made.
 

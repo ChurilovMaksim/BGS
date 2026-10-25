@@ -1,7 +1,7 @@
 # The fourth-order drift of a Gaussian coboundary step
 
 **Claim ID: BGS-FLOW-008.** Project derivation, 29 September 2026;
-author self-review, not an independent or formal certificate.
+author check, not an independent or formal certificate.
 All limits in the one-step expansion first fix the matrix dimension.
 
 Use normalized GUE $G$, $B=UGU^*$, and the actual coboundary step

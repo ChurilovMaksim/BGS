@@ -1,6 +1,6 @@
 # Closing the hierarchy-to-process step without an independent UI assumption
 
-**Stable claim:** `BGS-TRACE-086`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-TRACE-086`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** The implication is proved; H_diag and TRACE-005 for the frozen matrix remain open. Every fixed order and every compact bandwidth are required.
 

@@ -1,6 +1,6 @@
 # Полный второй дефект и открытое четырёхпортовое ядро
 
-**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-102**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/second_defect_complete_ru.md), SHA-256 `6f7c1f634eea94f57b2a8ace3022a154af797d2921b64b640eb58d6f2841da24`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-102**. Author proof and author check; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/second_defect_complete_ru.md), SHA-256 `6f7c1f634eea94f57b2a8ace3022a154af797d2921b64b640eb58d6f2841da24`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
 19 октября 2026. Авторское компьютерно поддержанное доказательство, самопроверка; независимой рецензии нет. Применяется к специальной симплектической Фурье-карте с независимыми круговыми фазами. Все $p$ нечётные простые, $N=p^{2d}$.

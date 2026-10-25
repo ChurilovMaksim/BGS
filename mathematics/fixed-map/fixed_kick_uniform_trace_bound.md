@@ -1,10 +1,10 @@
 # Uniform original-family traces from continuity of the Gaussian scalar
 
 **Claim:** BGS-TRACE-113. **Status:** analytic proof reconstructed and
-self-reviewed on 21 October 2026; external classical input checked in its
+author-checked on 21 October 2026; external classical input checked in its
 published primary source. No external referee or formal verification.
 
-Final dependency and cross-surface self-review: 22 October 2026.
+Final dependency and cross-surface author check: 22 October 2026.
 
 ## 1. The exact quantifiers
 

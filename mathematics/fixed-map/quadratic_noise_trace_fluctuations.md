@@ -1,6 +1,6 @@
 # Fixed-trace limits and a fixed-time coupling obstruction
 
-**Claim ID: BGS-FLOW-006.** Project proof and author self-review,
+**Claim ID: BGS-FLOW-006.** Project proof and author check,
 29 September 2026. No independent review, formal certificate, or priority
 claim. Only the auxiliary diffusions of
 [FLOW-003](quadratic_coboundary_noise.md) and

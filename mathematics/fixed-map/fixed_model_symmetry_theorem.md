@@ -4,7 +4,7 @@
 
 Date: 21 September 2026.
 
-Status: project theorem with author-level self-review, exact rational/symbolic checks, and an independent Wolfram recomputation in the recovered handoff. It is not an independent referee report, a Lean proof, a priority claim, or a proof of BGS.
+Status: project theorem with author-level author check, exact rational/symbolic checks, and an independent Wolfram recomputation in the recovered handoff. It is not an independent referee report, a Lean proof, a priority claim, or a proof of BGS.
 
 ## 1. The unchanged quantum operator and the physical symbol
 

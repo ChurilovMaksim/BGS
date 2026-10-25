@@ -1,8 +1,8 @@
 # Resonant cubic control by the folded square of the density
 
 **Claim ID:** `BGS-TRACE-012`. **Status:** elementary project proof,
-author self-review and finite controls. Work dated 1 October 2026,
-without subagents; no external referee, formal analytic certificate,
+author check and finite controls. Work dated 1 October 2026,
+no external referee, formal analytic certificate,
 priority claim or solution of BGS. The actual frozen-map asymptotic
 inputs identified in Section 7 remain open. Final author audit:
 4 October 2026; the common scalar phase convention is explicit below.

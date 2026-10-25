@@ -1,6 +1,6 @@
 # A quantitative route from parameter averages to the fixed-coupling BGS problem
 
-**Stable claim:** `BGS-TRACE-087`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-TRACE-087`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** Only the reduction is proved. The required physical parameter q-moment o(N^-2), or sixth moment O(N^-3), is unproved; Haar sixth moments cannot supply it.
 

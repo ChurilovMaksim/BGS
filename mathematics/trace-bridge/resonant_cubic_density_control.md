@@ -1,10 +1,10 @@
 # Resonant cubic deletion from local spectral density
 
 **Claim ID:** `BGS-TRACE-011`. **Status:** project proof,
-author self-review, credited external CUE moment formula and finite controls;
+author check, credited external CUE moment formula and finite controls;
 no external validation or priority
 claim. The deterministic frozen-map application is conditional on estimates
-explicitly left open below. Work dated 1 October 2026, without subagents.
+explicitly left open below. Work dated 1 October 2026.
 
 This closes a subsidiary question left by
 [TRACE-010](signed_heisenberg_comparison.md): its cardinality loss is

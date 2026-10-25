@@ -1,6 +1,6 @@
 # Точное соответствие с диагональным беспорядком Коши при S²=I
 
-**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-104**. Author proof and self-review; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/cayley_cauchy_transfer_ru.md), SHA-256 `9a3469937b3502f5b1bd41cd4e18098455442fc1d13827942758b7106b2dfcd2`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
+**Maintained scope, 19 October 2026.** Stable claim: **BGS-TRACE-104**. Author proof and author check; independent review and priority are not established. [Original proof and its execution-era statements](../../archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/cayley_cauchy_transfer_ru.md), SHA-256 `9a3469937b3502f5b1bd41cd4e18098455442fc1d13827942758b7106b2dfcd2`. Historical statements that BGS was unchanged refer to the original research run; this maintained version is now integrated. The frozen-model BGS goal remains open.
 
 
 19 октября 2026. Авторское доказательство и самопроверка. Преобразование Кэли и модель Ллойда — известные методы; приоритет конкретной количественной формулировки не установлен. Доказательство универсальности диагонально возмущённой модели ниже **не предполагается и не утверждается**.

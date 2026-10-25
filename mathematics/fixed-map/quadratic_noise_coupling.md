@@ -1,6 +1,6 @@
 # Quantitative coupling of quadratic noise and unitary Brownian motion
 
-**Claim ID: BGS-FLOW-004.** Project proof and author self-review, 29 September
+**Claim ID: BGS-FLOW-004.** Project proof and author check, 29 September
 2026. No independent review, formal certificate, or priority claim. This
 compares two added stochastic processes, not either process with its
 deterministic initial spectrum.

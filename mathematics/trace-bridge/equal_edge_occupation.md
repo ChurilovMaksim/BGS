@@ -7,7 +7,7 @@ hypotheses retain their original scope. The classical Gaussian crossover is
 credited to Kristjansen--Plefka--Semenoff--Staudacher (2002).
 
 
-**Stable claim:** `BGS-TRACE-088`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-TRACE-088`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector.
 

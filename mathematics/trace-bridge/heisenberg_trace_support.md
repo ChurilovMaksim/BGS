@@ -1,7 +1,7 @@
 # Corrected supporting identities for the submitted Heisenberg route
 
 Date: 30 September 2026. Status: exact identities and conditional estimates,
-with author self-review. These complete useful supporting arguments from
+with author check. These complete useful supporting arguments from
 the uploaded note; they do not establish its model-specific CUE input.
 The [audit](../../record/heisenberg_note_review_20260930.md) distinguishes
 prior repository results from these expository completions.

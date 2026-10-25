@@ -1,7 +1,7 @@
 # Quartic coordinate return for the original fixed kick
 
 **Claim:** BGS-TRACE-108. **Status:** analytic author proof with internal
-reconstruction and self-review, 21 October 2026. No external refereeing,
+reconstruction and author check, 21 October 2026. No external refereeing,
 formal verification or priority claim. This is a one-step intensity theorem.
 
 ## Model and conclusion

@@ -4,7 +4,7 @@
 
 Date: 21 September 2026.
 
-Status: project theorem with self-review and exact/finite checks. It is an incremental fixed-symbol extension of earlier return-law mechanisms, not a fixed-\(\tau\) BGS theorem, independent referee acceptance, or a priority claim.
+Status: project theorem with author check and exact/finite checks. It is an incremental fixed-symbol extension of earlier return-law mechanisms, not a fixed-\(\tau\) BGS theorem, independent referee acceptance, or a priority claim.
 
 ## 1. Model
 

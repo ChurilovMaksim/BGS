@@ -1,7 +1,7 @@
 # Prime resonant blocks: exact sector criterion and spectral comb
 
 **Claim ID:** `BGS-TRACE-009`. **Status:** elementary project proof,
-author self-review and separately labelled finite regression. The actual
+author check and separately labelled finite regression. The actual
 frozen-map cancellation hypothesis in Section 3 remains **OPEN**.
 The order-divisibility input, ordered iteration and scalar-return exclusion
 are prior corpus results; their reconstruction here is not a priority claim.

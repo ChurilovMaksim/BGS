@@ -1,6 +1,6 @@
 # Egorov overlap rigidity and separation from affine quantizations
 
-**Claim ID: BGS-FM-016. Status: PROJECT PROOF + AUTHOR SELF-REVIEW.**
+**Claim ID: BGS-FM-016. Status: PROJECT PROOF + AUTHOR CHECK.**
 4 October 2026. Fixed-time normalized trace vanishing and starting-noise
 ellipticity below are independent weaker derivations of consequences already
 available from [FM-007](frozen_seven_cut_reduction.md), not new cancellation.

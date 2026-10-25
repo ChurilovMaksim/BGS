@@ -9,7 +9,7 @@ $O(1/\log N)$ spectral matching and a matching Pell lower order.
 independent logarithmic-time upper-bound route;
 [TRACE-113](fixed-map/fixed_kick_uniform_trace_bound.md) proves the
 uniform power-trace input with one threshold for all iterates.
-All statements have analytic project proofs with self-review, not external
+All statements have analytic project proofs with author check, not external
 refereeing. Microscopic signed cancellation and BGS remain open.
 
 ## Complete spectral research edition

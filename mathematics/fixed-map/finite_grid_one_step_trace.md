@@ -1,11 +1,11 @@
 # A finite-grid proof of the original one-step and inserted traces
 
-**Supports BGS-TRACE-109.** Analytic proof and adversarial self-review,
+**Supports BGS-TRACE-109.** Analytic proof and adversarial author check,
 21 October 2026, starting from main `2271f00`. No all-time sector formula,
 pressure estimate, external referee or formal verification is used here.
 All limits keep $\tau=10^{-80}$ fixed and run through all odd dimensions.
 
-Final dependency and cross-surface self-review: 22 October 2026.
+Final dependency and cross-surface author check: 22 October 2026.
 
 ## 1. Exact conventions and the needed error scale
 

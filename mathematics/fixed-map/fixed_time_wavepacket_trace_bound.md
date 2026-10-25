@@ -1,6 +1,6 @@
 # Fixed-time bounded traces for the unchanged odd-dimensional map
 
-**Claim ID: BGS-FM-013. Status: PROJECT PROOF + AUTHOR SELF-REVIEW.**
+**Claim ID: BGS-FM-013. Status: PROJECT PROOF + AUTHOR CHECK.**
 4 October 2026. This closes the bounded-trace input previously recorded
 conditionally in [the source adaptation](quadratic_noise_fixed_time_input.md).
 The method is standard fixed-time semiclassical wave-packet propagation;

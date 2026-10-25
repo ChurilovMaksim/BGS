@@ -4,7 +4,7 @@
 
 # Exact removal of the whole protected trace terms
 
-Round 13, 21 October 2026. Root derivation and self-review.
+Round 13, 21 October 2026. Root derivation and author check.
 
 ## 0. Claim and scope
 

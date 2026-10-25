@@ -1,6 +1,6 @@
 # Direct attack on the signed Heisenberg statistic
 
-**Stable claim:** `BGS-CUE-002`. **Integration review:** 16 October 2026, author self-review.
+**Stable claim:** `BGS-CUE-002`. **Integration review:** 16 October 2026, author check.
 
 **Exact scope:** Exact deterministic derivative and CUE reference covariance. Proxy computations are diagnostics, not a physical limit or a p-value.
 

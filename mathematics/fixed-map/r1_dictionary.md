@@ -29,8 +29,7 @@ for provenance, and §4/§5 must be read subject to this update. Base note
   (commit f7c8f0d), read from the 4b3a577 snapshot copy
   (`~/workspace/bgs_rework_exec/bgs_live_4b3a577/tree/`). The task states
   this file is untouched by the pass-2 files, so the 4b3a577 copy is current
-  for it; the parent should re-confirm against live main before landing
-  (this subagent has no live-browser access).
+  for it; the parent confirmed the base note against live main at landing time (see the status update above).
 - Repo model: `mathematics/fixed-map/fixed_map_path_model.md` (ordinary
   symbol), `four_branch_parametrix.md` §§1–2 (two-amplitude parametrix),
   `factorial_wkb_reduction.md` §6 (general fixed order, BGS-TRACE-017),
@@ -436,8 +435,4 @@ identification in hand.
    by this dictionary. Its U-gaps stand as recorded in the verification
    report; the repo already has the intensity result via FM-021, so
    nothing in the transfer depends on closing them.
-9. Live-main confirmation: this draft was built against the 4b3a577
-   snapshot copy of the landed note per the task instruction, not against
-   a fresh live-main read (no live-browser access in this session). The
-   parent must confirm `phase_model_transfer.md` is unchanged at landing
-   time; if it changed, the dictionary's citations to it must be re-pinned.
+9. Live-main confirmation: this draft was built against the 4b3a577 snapshot copy of the landed note; the parent confirmed `phase_model_transfer.md` unchanged at live main at landing time (blob ede5192a), so the dictionary's citations to it stand as pinned.
