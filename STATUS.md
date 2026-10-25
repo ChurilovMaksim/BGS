@@ -14,15 +14,15 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-22**. **197 registered claims.**
+**2026-10-22**. **199 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 171 |
+| proved | 173 |
 | verification-pending | 12 |
 | conditional | 9 |
 | open | 5 |
-| **Total** | **197** |
+| **Total** | **199** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -33,10 +33,10 @@ external refereeing. The complete per-claim surface is the generated
 | Family | proved | verification-pending | conditional | open | Total |
 |---|---:|---:|---:|---:|---:|
 | BGS | 0 | 0 | 0 | 1 | 1 |
-| CAYLEY | 8 | 1 | 0 | 1 | 10 |
+| CAYLEY | 9 | 1 | 0 | 1 | 11 |
 | CUE | 2 | 0 | 0 | 0 | 2 |
 | FLOW | 25 | 0 | 0 | 0 | 25 |
-| FM | 34 | 0 | 2 | 0 | 36 |
+| FM | 35 | 0 | 2 | 0 | 37 |
 | FORMAL | 3 | 0 | 0 | 0 | 3 |
 | FUP | 1 | 0 | 0 | 0 | 1 |
 | INFO | 0 | 0 | 0 | 1 | 1 |
@@ -44,7 +44,7 @@ external refereeing. The complete per-claim surface is the generated
 | RES | 20 | 1 | 1 | 1 | 23 |
 | RET | 3 | 0 | 1 | 0 | 4 |
 | TRACE | 75 | 10 | 4 | 1 | 90 |
-| **Total** | 171 | 12 | 9 | 5 | **197** |
+| **Total** | 173 | 12 | 9 | 5 | **199** |
 
 ## Open programme obligations
 
@@ -72,8 +72,8 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-23**.
-It records 94 follow-on claims adopted after
-wave 3 and 92 historical claim
+It records 96 follow-on claims adopted after
+wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 18 external IDs.
 

@@ -27,7 +27,7 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**335 maintained proof notes; 10 topic views; 199 core claim IDs.**
+**336 maintained proof notes; 10 topic views; 199 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 137 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 138 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -158,6 +158,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Signed cyclic coefficient of the first nonlinear slow mode](../mathematics/fixed-map/quadratic_slow_source_signed.md) | Consult proof and full ledger |
 | [Quantum cyclic cohomology and a parity-resolved spectral susceptibility for the frozen BGS kick](../mathematics/fixed-map/quantum_cyclic_cohomology.md) | `BGS-FM-032` (proved) |
 | [The exact box factor under one homoclinic insertion](../mathematics/fixed-map/quantum_homoclinic_first_loop.md) | Consult proof and full ledger |
+| [R1 dictionary: external §16 phase model ↔ repo fixed-map model](../mathematics/fixed-map/r1_dictionary.md) | Consult proof and full ledger |
 | [Chain-trace closure at the first seven-primary level, including ramification at 5](../mathematics/fixed-map/ramified_first_seven_commutant.md) | Consult proof and full ledger |
 | [A q-divided-power lattice reduction for the remaining ramified higher-seven family](../mathematics/fixed-map/ramified_higher_seven_commutant.md) | Consult proof and full ledger |
 | [Residual-125 packets and uniform second-order splitting](../mathematics/fixed-map/residual125_uniform_splitting.md) | Consult proof and full ledger |

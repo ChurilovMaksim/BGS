@@ -421,7 +421,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**197 registered claims: 171 proved, 12 verification-pending, 9 conditional, 5 open.**
+**199 registered claims: 173 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -429,7 +429,7 @@ boundaries and closure conditions, is the generated
 |---|---|---|
 | `BGS-BGS-001` | **OPEN** | Fixed-strength microscopic BGS universality for the maintained frozen map |
 
-### CAYLEY family (10 claims)
+### CAYLEY family (11 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -443,6 +443,7 @@ boundaries and closure conditions, is the generated
 | `BGS-CAYLEY-008` | **PROVED** | Scaling rigidity of the Cayley collision family |
 | `BGS-CAYLEY-009` | **PROVED** | Quantitative magnetic-quotient moment bound and global semicircle law |
 | `BGS-CAYLEY-010` | **PROVED** | Uniform parity sector for exact finite spectra of arbitrary hyperbolic matrices |
+| `BGS-CAYLEY-011` | **PROVED** | Exact difference energy of Fibonacci/Lucas ratios (finite residue certified; general case conditional on Carmichael's primitive-divisor theorem) |
 
 ### CUE family (2 claims)
 
@@ -481,7 +482,7 @@ boundaries and closure conditions, is the generated
 | `BGS-FLOW-024` | **PROVED** | Negative microscopic consequences at the second-order coboundary scale |
 | `BGS-FLOW-025` | **PROVED** | Obstruction and necessary kick scale for the kicked Pell family |
 
-### FM family (36 claims)
+### FM family (37 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -521,6 +522,7 @@ boundaries and closure conditions, is the generated
 | `BGS-FM-034` | **PROVED** | Fixed-strength all-orders comparison for the single-exponential coboundary kick |
 | `BGS-FM-035` | **PROVED** | Classical interpretation of the fixed-strength quantized map |
 | `BGS-FM-036` | **PROVED** | Microscopic stability along Pell moduli: K clusters and spacing collapse |
+| `BGS-FM-037` | **PROVED** | Finite torus level sets and branch scales at p=199 (Q = a²-ab-b², cyclic action of order 11) |
 
 ### FORMAL family (3 claims)
 
