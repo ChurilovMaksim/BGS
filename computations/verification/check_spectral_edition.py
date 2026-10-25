@@ -107,10 +107,13 @@ def main():
         p=ROOT/e['target'];expected=projection(e,raw,c['entries'])
         if not p.exists() or p.read_bytes()!=expected:failures.append(['source projection',e['target']])
         files.append(p)
-    maintained=['coordinate_return_quartic_20261021.md','inserted_trace_coboundary_20261021.md',
-                'spectral_orbit_distance_20261021.md','pell_weighted_curvature_20261021.md',
-                'finite_grid_one_step_trace_20261021.md','displacement_density_trace_bound_20261021.md',
-                'fixed_kick_uniform_trace_bound_20261021.md']
+    # Redfix 2026-10-25 (Wave-6-style path refresh): the seven maintained
+    # notes were relocated in phase 2 to mathematics/fixed-map/ with the
+    # dated suffix dropped; the checker hardcodes the pre-move paths.
+    maintained=['fixed-map/coordinate_return_quartic.md','fixed-map/inserted_trace_coboundary.md',
+                'fixed-map/spectral_orbit_distance.md','fixed-map/pell_weighted_curvature.md',
+                'fixed-map/finite_grid_one_step_trace.md','fixed-map/displacement_density_trace_bound.md',
+                'fixed-map/fixed_kick_uniform_trace_bound.md']
     markdown=[p for p in files if p.suffix=='.md']
     markdown+=list((ROOT/'mathematics/spectral_research/topics').glob('*.md'))
     markdown+=[ROOT/'mathematics/spectral_research/README.md',ROOT/'record/spectral_research/review_matrix.md']

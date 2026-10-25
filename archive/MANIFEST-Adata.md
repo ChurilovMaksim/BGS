@@ -85,6 +85,26 @@ scientific input to unreviewed current bytes. It is a phase-7 disposition
 item; the A-data migration for this consumer (the binding-path constant in
 `exact_homoclinic.py` and the six path values above) is complete.
 
+### Rider addendum (2026-10-25 redfix, phase-7 red-checker package)
+
+The phase-7 disposition item recorded above is now closed. The binding's
+five `mathematics/` `public_path` values were stale after the phase-2
+relocations (the verifier died with `FileNotFoundError` on the first of
+them); they are refreshed to the relocated files, and the two drifted
+pins are rotated to reviewed current bytes. The six `archive/history/`
+entries are untouched, as are all other hashes.
+
+| `public_path` before | `public_path` now | `sha256` before → now |
+|---|---|---|
+| `mathematics/four_branch_parametrix.md` | `mathematics/fixed-map/four_branch_parametrix.md` | `c696ebd…` unchanged (byte-identical relocation) |
+| `mathematics/fixed_map_path_model.md` | `mathematics/fixed-map/fixed_map_path_model.md` | `d5365063…` unchanged (byte-identical relocation) |
+| `mathematics/pell_smooth_resonance.md` | `mathematics/pell/pell_smooth_resonance.md` | `1e560706…` unchanged (byte-identical relocation) |
+| `mathematics/periodic_point_trace_comparison.md` | `mathematics/returns/periodic_point_trace_comparison.md` | `8d42ade3…` → `b465af1e…` (rotated: phase-2 link-translated move per `MANIFEST-P2MATH4.md`, then stable since the phase-2 close in every snapshot; current note reviewed coherent, Theorems 1/2/4/5) |
+| `mathematics/extremal_resonance_nondegeneracy.md` | `mathematics/resonance-cohomology/extremal_resonance_nondegeneracy.md` | `76b66aeb…` → `fd65a519…` (rotated: move-documented change per `MANIFEST-P2MATH2.md` code-span update and `MANIFEST-P2MATH7.md` post-move hash, which equals the current bytes) |
+
+The check keeps its full strength: every binding hash must still match
+exactly, and any future change to any bound file fails it again.
+
 ## Same-commit migrations
 
 - Consumer path constants: `charge_strengthening_replay.py` (RAW tree),

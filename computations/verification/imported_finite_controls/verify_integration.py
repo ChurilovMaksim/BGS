@@ -20,11 +20,52 @@ ROOT = Path(__file__).resolve().parents[3]
 # material (package C) and is not edited; its receipt link target moved to
 # the archive in package B-chat (see archive/MANIFEST-Bchat.md). Any other
 # missing target, and a missing recorded target, remains a hard failure.
+# Redfix 2026-10-25: the 20261016 manifest below is a historical record
+# (MANIFEST-C frozen-record rule: frozen records are not edited), so the
+# phase-2 relocations of its 11 imported sources live here, following the
+# existing RELOCATED_SOURCE_LINKS precedent. Same link checks, same live
+# pin computation, new locations only.
+CANONICAL_RELOCATION = {
+    'mathematics/quantum_cyclic_cohomology_20261015.md': 'mathematics/fixed-map/quantum_cyclic_cohomology.md',
+    'mathematics/resonant_mesoscopic_criterion_20261015.md': 'mathematics/trace-bridge/resonant_mesoscopic_criterion.md',
+    'mathematics/root_lifting_sector_boundary_20261015.md': 'mathematics/trace-bridge/root_lifting_sector_boundary.md',
+    'mathematics/all_order_process_closure_20261015.md': 'mathematics/trace-bridge/all_order_process_closure.md',
+    'mathematics/scaled_weyl_overlap_20261015.md': 'mathematics/fixed-map/scaled_weyl_overlap.md',
+    'mathematics/full_pair_cue_covariance_20261015.md': 'mathematics/trace-bridge/full_pair_cue_covariance.md',
+    'mathematics/parameter_deaveraging_20261015.md': 'mathematics/trace-bridge/parameter_deaveraging.md',
+    'mathematics/equal_edge_occupation_20261015.md': 'mathematics/trace-bridge/equal_edge_occupation.md',
+    'mathematics/collision_crossover_20261015.md': 'mathematics/trace-bridge/collision_crossover.md',
+    'mathematics/bounded_radial_ratios_20261015.md': 'mathematics/trace-bridge/bounded_radial_ratios.md',
+    'mathematics/hardy_spectral_remainder_20261015.md': 'mathematics/trace-bridge/hardy_spectral_remainder.md',
+}
 RELOCATED_SOURCE_LINKS = {
     ('archive/record/chat_integration_20261016.md',
      '../../evidence/executions/20261016/chat-integration/receipt.json'):
         'archive/evidence/executions/20261016/chat-integration/receipt.json',
 }
+# Redfix 2026-10-25 (U7, second leg): the frozen note
+# archive/record/chat_integration_20261016.md itself links to the 11
+# imported sources and to deleted_clock at their pre-phase-2 paths.
+# Frozen records are not edited, so those link targets resolve through
+# this map, exactly like the receipt link above. Any other missing
+# target, and a missing recorded target, remains a hard failure.
+for _old, _new in {
+    'deleted_clock_hardy_boundary_20261015.md': 'mathematics/trace-bridge/deleted_clock_hardy_boundary.md',
+    'quantum_cyclic_cohomology_20261015.md': 'mathematics/fixed-map/quantum_cyclic_cohomology.md',
+    'resonant_mesoscopic_criterion_20261015.md': 'mathematics/trace-bridge/resonant_mesoscopic_criterion.md',
+    'root_lifting_sector_boundary_20261015.md': 'mathematics/trace-bridge/root_lifting_sector_boundary.md',
+    'all_order_process_closure_20261015.md': 'mathematics/trace-bridge/all_order_process_closure.md',
+    'scaled_weyl_overlap_20261015.md': 'mathematics/fixed-map/scaled_weyl_overlap.md',
+    'full_pair_cue_covariance_20261015.md': 'mathematics/trace-bridge/full_pair_cue_covariance.md',
+    'parameter_deaveraging_20261015.md': 'mathematics/trace-bridge/parameter_deaveraging.md',
+    'equal_edge_occupation_20261015.md': 'mathematics/trace-bridge/equal_edge_occupation.md',
+    'collision_crossover_20261015.md': 'mathematics/trace-bridge/collision_crossover.md',
+    'bounded_radial_ratios_20261015.md': 'mathematics/trace-bridge/bounded_radial_ratios.md',
+    'hardy_spectral_remainder_20261015.md': 'mathematics/trace-bridge/hardy_spectral_remainder.md',
+}.items():
+    RELOCATED_SOURCE_LINKS[('archive/record/chat_integration_20261016.md',
+                             '../../mathematics/' + _old)] = _new
+del _old, _new
 
 def need(ok, message):
     if not ok:
@@ -74,7 +115,7 @@ def main():
             need(hashlib.sha256(out.read_bytes()).hexdigest()==digest,'Changed replay output: '+name)
     need(claims['BGS-BGS-001']['state']=='open' and claims['BGS-TRACE-005']['state']=='open',
          'Physical BGS target changed unexpectedly')
-    added=[r['canonical_path'] for r in manifest['imported_sources']]
+    added=[CANONICAL_RELOCATION.get(r['canonical_path'], r['canonical_path']) for r in manifest['imported_sources']]
     added+=['mathematics/trace-bridge/deleted_clock_hardy_boundary.md',
             'archive/record/chat_integration_20261016.md','archive/literature/chat_integration_sources_20261016.md']
     badlinks=[]

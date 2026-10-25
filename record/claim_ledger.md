@@ -4,10 +4,10 @@
 
 | Claim | Current status | Exact scope |
 |---|---|---|
-| BGS-TRACE-109 | ANALYTIC PROOF + SELF-REVIEW | [Inserted trace](../mathematics/inserted_trace_coboundary_20261021.md); the new [finite-grid proof](../mathematics/finite_grid_one_step_trace_20261021.md) supplies the $O(N^{-1})$ remainder without an all-time sector input |
-| BGS-TRACE-110 | ANALYTIC PROOF + SELF-REVIEW | [Global spectral distance](../mathematics/spectral_orbit_distance_20261021.md); all-odd-$N$ upper bound $O(1/\log N)$ and matching Pell lower order, using TRACE-112/113 |
-| BGS-TRACE-112 | ANALYTIC PROOF + SELF-REVIEW | [Displacement density and short logarithmic trace window](../mathematics/displacement_density_trace_bound_20261021.md); independent pressure-free upper spectral comparison |
-| BGS-TRACE-113 | ANALYTIC PROOF + SELF-REVIEW | [Uniform power-trace bound](../mathematics/fixed_kick_uniform_trace_bound_20261021.md); one $N_0$ for all $m\ge1$, $|\operatorname{Tr}U_N^m|\le Ca^m$, $1<a<\sqrt{3+2\sqrt2}$; published pressure input separately checked |
+| BGS-TRACE-109 | ANALYTIC PROOF + SELF-REVIEW | [Inserted trace](../mathematics/fixed-map/inserted_trace_coboundary.md); the new [finite-grid proof](../mathematics/fixed-map/finite_grid_one_step_trace.md) supplies the $O(N^{-1})$ remainder without an all-time sector input |
+| BGS-TRACE-110 | ANALYTIC PROOF + SELF-REVIEW | [Global spectral distance](../mathematics/fixed-map/spectral_orbit_distance.md); all-odd-$N$ upper bound $O(1/\log N)$ and matching Pell lower order, using TRACE-112/113 |
+| BGS-TRACE-112 | ANALYTIC PROOF + SELF-REVIEW | [Displacement density and short logarithmic trace window](../mathematics/fixed-map/displacement_density_trace_bound.md); independent pressure-free upper spectral comparison |
+| BGS-TRACE-113 | ANALYTIC PROOF + SELF-REVIEW | [Uniform power-trace bound](../mathematics/fixed-map/fixed_kick_uniform_trace_bound.md); one $N_0$ for all $m\ge1$, $|\operatorname{Tr}U_N^m|\le Ca^m$, $1<a<\sqrt{3+2\sqrt2}$; published pressure input separately checked |
 
 [Proof/dependency review](spectral_research/trace_closure.md) and
 [bounded execution evidence](../evidence/executions/20261022/trace-closure/README.md).
@@ -20,10 +20,10 @@ all higher factorial tests remain open. **BGS-TRACE-005 and BGS-BGS-001: OPEN.**
 
 | Claim | Status at that checkpoint | Scope |
 |---|---|---|
-| BGS-TRACE-108 | ANALYTIC AUTHOR PROOF + SELF-REVIEW | [Quartic coordinate return](../mathematics/coordinate_return_quartic_20261021.md), one step at fixed coupling with explicit remainder; no microscopic pair limit |
-| BGS-TRACE-109 | EXACT LEMMAS + CONDITIONAL ASYMPTOTIC APPLICATION | [Inserted trace and coboundary projection](../mathematics/inserted_trace_coboundary_20261021.md); arbitrary multiplicities handled, numerical asymptotic bound retains the older amplitude/sector construction |
-| BGS-TRACE-110 | EXACT LEMMAS + CONDITIONAL ASYMPTOTIC APPLICATION | [Spectral orbit distance](../mathematics/spectral_orbit_distance_20261021.md); uniform original-family trace input (T) not fully independently closed here |
-| BGS-TRACE-111 | ANALYTIC AUTHOR PROOF + SELF-REVIEW | [Full weighted Pell gradient/Hessian and forced inflection](../mathematics/pell_weighted_curvature_20261021.md); initial point and shrinking times, not the fixed positive parameter |
+| BGS-TRACE-108 | ANALYTIC AUTHOR PROOF + SELF-REVIEW | [Quartic coordinate return](../mathematics/fixed-map/coordinate_return_quartic.md), one step at fixed coupling with explicit remainder; no microscopic pair limit |
+| BGS-TRACE-109 | EXACT LEMMAS + CONDITIONAL ASYMPTOTIC APPLICATION | [Inserted trace and coboundary projection](../mathematics/fixed-map/inserted_trace_coboundary.md); arbitrary multiplicities handled, numerical asymptotic bound retains the older amplitude/sector construction |
+| BGS-TRACE-110 | EXACT LEMMAS + CONDITIONAL ASYMPTOTIC APPLICATION | [Spectral orbit distance](../mathematics/fixed-map/spectral_orbit_distance.md); uniform original-family trace input (T) not fully independently closed here |
+| BGS-TRACE-111 | ANALYTIC AUTHOR PROOF + SELF-REVIEW | [Full weighted Pell gradient/Hessian and forced inflection](../mathematics/fixed-map/pell_weighted_curvature.md); initial point and shrinking times, not the fixed positive parameter |
 
 [Complete integration and review](spectral_research/spectral_final_integration.md)
 accounts for all 535 source units, six historical version qualifications,
@@ -34,10 +34,10 @@ their stated scopes. **BGS-TRACE-005 and BGS-BGS-001 remain OPEN.**
 
 ## Physical-kick review, 21 October 2026
 
-**BGS-TRACE-106:** [Uniform physical-kick decay](../mathematics/physical_kick_trace_decay.md)
+**BGS-TRACE-106:** [Uniform physical-kick decay](../mathematics/fixed-map/physical_kick_trace_decay.md)
 strengthens the imported exponent 1/25 to 1/9 on the same explicit small-time
 interval; bounded-time decay and maximal scalar-distance limits concern the
-single kick. **BGS-TRACE-107:** [All-order polynomial error control](../mathematics/physical_trace_polynomial_approximation.md)
+single kick. **BGS-TRACE-107:** [All-order polynomial error control](../mathematics/fixed-map/physical_trace_polynomial_approximation.md)
 extends the pair replacement bound to every fixed factorial order and records
 the exact Pell two-copy alias threshold. Both are analytic author proofs with
 self-review; finite checks certify only their stated finite inputs.
@@ -51,7 +51,7 @@ OPEN; no original signed Heisenberg sum has been evaluated by these results.
 **BGS-TRACE-005 and BGS-BGS-001 remain OPEN.** All following proofs are author
 proofs with self-review; exact finite computations are used only at their stated
 scope. No independent review, compiled Lean certificate or priority is asserted.
-[Full adopted statements and proof revisions](../mathematics/phase_ensemble_continuation_20261019.md).
+[Full adopted statements and proof revisions](../mathematics/trace-bridge/phase_ensemble_continuation.md).
 
 | Stable ID | Disposition | Exact boundary |
 |---|---|---|
@@ -77,7 +77,7 @@ status. Historical unknown-four-port sentences are superseded only by TRACE-102.
 ## Complete flat collision law, 16 October 2026
 
 **BGS-TRACE-094 — PROJECT PROOF + INDEPENDENT INTERNAL CORE RECONSTRUCTION.**
-[The full high-derivative proof](../mathematics/wick_collision_poisson_20261016.md)
+[The full high-derivative proof](../mathematics/trace-bridge/wick_collision_poisson.md)
 proves C_edge => Poisson(2alpha^2) and B/G -> exp(-alpha^2) at m/N->alpha>0
 under the exact flat positive Wick measure. The previously missing bound for
 every fixed coordinate derivative and all partial contractions is proved.
@@ -94,14 +94,14 @@ full signed cancellation, TRACE-005 and BGS-BGS-001 remain OPEN.
 ## Abel rigidity and flat equal-edge continuation, 16 October 2026
 
 **BGS-TRACE-092 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[Exact decomposition and optimal rigidity](../mathematics/abel_clock_rigidity_20261016.md)
+[Exact decomposition and optimal rigidity](../mathematics/trace-bridge/abel_clock_rigidity.md)
 split the Abel excess into a nonnegative low-mode term and a geometric pair
 energy. Stationary intensity-one processes obey a square-root local transport
 bound to the uniform clock; alternating gap spectra prove the exponent optimal.
 The fixed physical Abel excess remains unestimated.
 
 **BGS-TRACE-093 — PROJECT PROOF + CHECKED CLASSICAL INPUT + INTERNAL REVIEW.**
-[Gaussian comparison](../mathematics/gaussian_equal_edge_20261016.md) proves
+[Gaussian comparison](../mathematics/trace-bridge/gaussian_equal_edge.md) proves
 B/G->1 for every m=o(N) in the exactly flat equal-edge sector. At m/N->alpha>0,
 log(B)/N tends to (1+alpha)log(1+alpha)-alpha and its Wick collision mean tends
 to 2alpha^2, with triple edges negligible. The limiting collision law and
@@ -123,17 +123,17 @@ The untouched historical text cannot override the dispositions below.
 
 | Stable ID | Status | Canonical source | Exact boundary |
 |---|---|---|---|
-| BGS-FM-032 | PROVED as scoped | [proof](../mathematics/quantum_cyclic_cohomology_20261015.md) | Additive normalized-HS cohomology and initial eigenphase response only; fixed physical strength grows as tau*p. No multiplicative holonomy or microscopic limit. |
-| BGS-TRACE-084 | PROVED as scoped | [proof](../mathematics/resonant_mesoscopic_criterion_20261015.md) | Sufficient selected-sector deletion criterion only; the sector need not vanish for a valid full signed local law. |
-| BGS-TRACE-085 | PROVED as scoped | [proof](../mathematics/root_lifting_sector_boundary_20261015.md) | Abstract spectra, including deterministic existence via CUE local-average variance. Does not identify root labels or traces of the maintained propagator. |
-| BGS-TRACE-086 | PROVED as scoped | [proof](../mathematics/all_order_process_closure_20261015.md) | The implication is proved; H_diag and TRACE-005 for the frozen matrix remain open. Every fixed order and every compact bandwidth are required. |
-| BGS-FM-033 | CONDITIONAL as scoped | [proof](../mathematics/scaled_weyl_overlap_20261015.md) | Conditional on the exact quantitative G1-G3 analytic inputs pinned in the source. Finite algebra checks do not recertify those analytic inputs. No cyclic Heisenberg trace bound. |
-| BGS-CUE-002 | PROVED as scoped | [proof](../mathematics/full_pair_cue_covariance_20261015.md) | Exact deterministic derivative and CUE reference covariance. Proxy computations are diagnostics, not a physical limit or a p-value. |
-| BGS-TRACE-087 | PROVED as scoped | [proof](../mathematics/parameter_deaveraging_20261015.md) | Only the reduction is proved. The required physical parameter q-moment o(N^-2), or sixth moment O(N^-3), is unproved; Haar sixth moments cannot supply it. |
-| BGS-TRACE-088 | PROVED as scoped | [proof](../mathematics/equal_edge_occupation_20261015.md) | Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector. |
-| BGS-TRACE-089 | PROVED as scoped | [proof](../mathematics/collision_crossover_20261015.md) | m tends to infinity with m/sqrt(N) tending to a fixed finite c; not m of order N. Harer-Zagier is a classical external input. |
-| BGS-TRACE-090 | PROVED as scoped | [proof](../mathematics/bounded_radial_ratios_20261015.md) | Any unitary spectrum. The mixed-moment convergence premise for the frozen model is open; weak convergence alone supplies no unbounded count UI. Discrete Toeplitz contraction requires grid M>=N. |
-| BGS-TRACE-091 | PROVED as scoped | [proof](../mathematics/hardy_spectral_remainder_20261015.md) | p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family. |
+| BGS-FM-032 | PROVED as scoped | [proof](../mathematics/fixed-map/quantum_cyclic_cohomology.md) | Additive normalized-HS cohomology and initial eigenphase response only; fixed physical strength grows as tau*p. No multiplicative holonomy or microscopic limit. |
+| BGS-TRACE-084 | PROVED as scoped | [proof](../mathematics/trace-bridge/resonant_mesoscopic_criterion.md) | Sufficient selected-sector deletion criterion only; the sector need not vanish for a valid full signed local law. |
+| BGS-TRACE-085 | PROVED as scoped | [proof](../mathematics/trace-bridge/root_lifting_sector_boundary.md) | Abstract spectra, including deterministic existence via CUE local-average variance. Does not identify root labels or traces of the maintained propagator. |
+| BGS-TRACE-086 | PROVED as scoped | [proof](../mathematics/trace-bridge/all_order_process_closure.md) | The implication is proved; H_diag and TRACE-005 for the frozen matrix remain open. Every fixed order and every compact bandwidth are required. |
+| BGS-FM-033 | CONDITIONAL as scoped | [proof](../mathematics/fixed-map/scaled_weyl_overlap.md) | Conditional on the exact quantitative G1-G3 analytic inputs pinned in the source. Finite algebra checks do not recertify those analytic inputs. No cyclic Heisenberg trace bound. |
+| BGS-CUE-002 | PROVED as scoped | [proof](../mathematics/trace-bridge/full_pair_cue_covariance.md) | Exact deterministic derivative and CUE reference covariance. Proxy computations are diagnostics, not a physical limit or a p-value. |
+| BGS-TRACE-087 | PROVED as scoped | [proof](../mathematics/trace-bridge/parameter_deaveraging.md) | Only the reduction is proved. The required physical parameter q-moment o(N^-2), or sixth moment O(N^-3), is unproved; Haar sixth moments cannot supply it. |
+| BGS-TRACE-088 | PROVED as scoped | [proof](../mathematics/trace-bridge/equal_edge_occupation.md) | Dense-mixing intensities with a fixed C and rho<1; cancellation is established only to an O(N^2) remainder. Equal-edge is smaller than the vertex-balanced sector. |
+| BGS-TRACE-089 | PROVED as scoped | [proof](../mathematics/trace-bridge/collision_crossover.md) | m tends to infinity with m/sqrt(N) tending to a fixed finite c; not m of order N. Harer-Zagier is a classical external input. |
+| BGS-TRACE-090 | PROVED as scoped | [proof](../mathematics/trace-bridge/bounded_radial_ratios.md) | Any unitary spectrum. The mixed-moment convergence premise for the frozen model is open; weak convergence alone supplies no unbounded count UI. Discrete Toeplitz contraction requires grid M>=N. |
+| BGS-TRACE-091 | PROVED as scoped | [proof](../mathematics/trace-bridge/hardy_spectral_remainder.md) | p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family. |
 
 **BGS-TRACE-005 and BGS-BGS-001 remain OPEN.** The conditional implication
 H_diag => Sine2 supplies local UI at every fixed moment order. Pair-only or
@@ -145,7 +145,7 @@ m=o(N); it does not certify the unavailable original derivation.
 ## Observed pulse and cyclic memory, 14 October 2026
 
 **BGS-TRACE-083 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[The first-return theorem](../mathematics/coherent_first_return_pulse_20261014.md)
+[The first-return theorem](../mathematics/spectral-obstructions/coherent_first_return_pulse.md)
 strengthens TRACE-082's full-return example to a specified individual
 coefficient L E^(2p-2) C. For the TRACE-081 abstract family this map is
 almost an isometry on (4^k-1)(p-1) centered diagonal directions.
@@ -167,7 +167,7 @@ they are not a certificate of this later source revision.
 ## Spectral and coherence obstructions, 14 October 2026
 
 **BGS-TRACE-081 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[Perfect intensity mixing does not identify microscopic statistics](../mathematics/flat_spectrum_obstruction_20261014.md).
+[Perfect intensity mixing does not identify microscopic statistics](../mathematics/spectral-obstructions/flat_spectrum_obstruction.md).
 For any odd-prime sequence p_k->infinity, the abstract dimensions N_k=4^k p_k
 support deterministic simple-spectrum unitaries with P=J, reversal norm2^-k
 and a uniform macroscopic eigenphase measure. Origin-averaged microscopic
@@ -179,7 +179,7 @@ complex matrix. No unchanged fixed-map, smooth chaotic quantization,
 full phase-ensemble contradiction, BGS, priority or analytic formal claim.
 
 **BGS-TRACE-082 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[Exact return memory and singular-norm plateau](../mathematics/coherence_memory_plateau_20261014.md).
+[Exact return memory and singular-norm plateau](../mathematics/spectral-obstructions/coherence_memory_plateau.md).
 Every unitary in dimension N>=2 has ||(Q Ad_U Q)^r||=1 in Hilbert--Schmidt
 operator norm for integers0<=r<N. Exact resolvent/return recurrence is
 self-contained; TRACE-081 separately gives order-one observed return
@@ -196,7 +196,7 @@ This is the current scientific-status authority. A project proof is not an exter
 ## Unconditional feedback trajectory, 13 October 2026
 
 **BGS-TRACE-080 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[The global feedback theorem](../mathematics/unconditional_feedback_flatness_20261013.md)
+[The global feedback theorem](../mathematics/trace-bridge/unconditional_feedback_flatness.md)
 starts from any deterministic unitary family with intensity bound C0/N and
 centered singular norm at most 1/100. Fresh independent uniform phases and
 uniform ports give simultaneous entry flatness, intensity gap, row/column
@@ -215,7 +215,7 @@ physical microscopic reference, TRACE-005 or BGS is proved.
 [Review and actual finite scope](../archive/evidence/executions/20261013/global-feedback-flatness/README.md).
 
 **BGS-TRACE-079 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[All-pair stopped concentration](../mathematics/two_step_stopped_concentration_20261013.md)
+[All-pair stopped concentration](../mathematics/trace-bridge/two_step_stopped_concentration.md)
 includes diagonal pairs, endpoint freezing, deterministic scalar continuation,
 and the full first entry/three-step crossing. Its quantitative scalar tail
 and shrinking-Green corollary give 9/u on reached deep-range states. That
@@ -227,7 +227,7 @@ under stronger startup hypotheses.
 ## Two-step fluctuation control, 13 October 2026
 
 **BGS-TRACE-078 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[The complete second moment](../mathematics/two_step_increment_variance_20261013.md)
+[The complete second moment](../mathematics/trace-bridge/two_step_increment_variance.md)
 is at most `2600 delta²[(P²)ij+(P³)ij]/u` for a conditionally uniform
 port among all labels, with frozen endpoint increments zero and
 `delta<=1/4`. The stronger deterministic sum over ports holds for any
@@ -244,7 +244,7 @@ and BGS remain open.
 ## Shrinking stopped gaps, 13 October 2026
 
 **BGS-TRACE-077 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[Green-coordinate compression](../mathematics/green_compression_gap_20261013.md)
+[Green-coordinate compression](../mathematics/trace-bridge/green_compression_gap.md)
 turns classical stochastic complementation into orthogonal compression of
 `M=(I-P+J)^(-1)-I`. With deterministic unitary initial flatness `C0/N`
 and singular norm at most `1/5`, fresh independent feedback phases and
@@ -264,7 +264,7 @@ initial inputs. No new formal certificate or priority claim is asserted.
 ## An unconditional clock class, 12 October 2026
 
 **BGS-TRACE-076 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[The exact Haar feedback law](../mathematics/haar_feedback_clock_law_20261012.md)
+[The exact Haar feedback law](../mathematics/trace-bridge/haar_feedback_clock_law.md)
 couples a Haar effective scattering matrix, independent of its incoming
 delay, to \(T=I+X^*X\) with density
 \(\det(I+X^*X)^{-(N+u)}\). It gives the inverse-Jacobi spectrum,
@@ -287,7 +287,7 @@ cutoff. Physical microscopic TRACE-055, signed TRACE-005 and BGS remain open. Pr
 ## Unitary two-step obstruction, 12 October 2026
 
 **BGS-TRACE-075 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[The exact fresh-phase drift](../mathematics/two_step_restoring_drift_20261012.md)
+[The exact fresh-phase drift](../mathematics/trace-bridge/two_step_restoring_drift.md)
 bounds the complete two-step coherence by a three-step path-swap pairing.
 For max intensity \(\delta\le1/16\), it gives
 \(\mathbb E\Delta K_{ij}\le[-K_{ij}/2+5(P^3)_{ij}+2\delta P_{ij}]/u\),
@@ -302,7 +302,7 @@ The original averaging sentence was corrected before promotion.
 [Review and exact finite scope](../archive/evidence/executions/20261012/two-step-drift/README.md).
 
 **BGS-TRACE-074 — PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION.**
-[Two rank-one unitary corrections](../mathematics/unitary_two_step_obstruction_20261012.md)
+[Two rank-one unitary corrections](../mathematics/trace-bridge/unitary_two_step_obstruction.md)
 give genuine unistochastic matrices with max-entry bound
 \(8\log(2n)/n\), vanishing centered intensity singular norm and an exact
 two-step peak \(1/\lfloor n/\log(2n)\rfloor\). A universal extra
@@ -324,22 +324,22 @@ Priority and a solution of global BGS are not claimed.
 
 | Claim | State | Canonical source | Exact boundary |
 |---|---|---|---|
-| BGS-TRACE-057 | PROVED | [Arbitrary-source phase covariance](../mathematics/source_covariance_20261011.md) | The arbitrary complex source bound is an exact contraction theorem; it does not identify a microscopic reference law. |
-| BGS-TRACE-058 | PROVED | [Integrable all-order phase absorption](../mathematics/integrable_phase_absorption_20261011.md) | Every fixed Lp absorption bound and Abel continuity; no uniformity as p grows and no local-law identification. |
-| BGS-TRACE-059 | PROVED | [Anisotropic physical-source transport](../mathematics/physical_source_transport_20261011.md) | Phase-independent positive clock, trace m, bounded normalized second moment, endpoint flatness and gap. L2 scalar comparison and fixed derivatives only; no higher physical-source mixed moments or actual-cavity hypotheses. |
-| BGS-TRACE-060 | CONDITIONAL | [Joint incoming and outgoing delay bootstrap](../mathematics/delay_bootstrap_20261011.md) | Strengthened [conditional proof](../mathematics/all_moment_delay_bootstrap_20261011.md): joint first-delay concentration, all fixed killed upper moments and [uniform equality laws at every fixed order](../mathematics/conditional_clock_universality_20261011.md), with the [full-depth measure and exact rank atom](../mathematics/full_depth_clock_measure_20261011.md) down to ceil(log(2N)^(1+kappa)). For arbitrary startups the premise remains conditional; TRACE-080 closes it for the explicit entry-flat small-gap class at log^(4+kappa). Smaller cutoffs, growing-order/edge bounds, physical microscopic identification and unrestricted exceptional-event moments remain open. |
-| BGS-TRACE-061 | PROVED | [Finite frame identities, Stiefel threshold and clock-basis obstruction](../mathematics/fresh_phase_average_20261011.md) | Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample. |
-| BGS-TRACE-062 | PROVED | [Flat completion with arbitrary clock law](../mathematics/flat_completion_20261011.md) | Constructed flat unitary completions and a prescribed mean-one clock law; no independently sampled phase-ensemble violation and no change-free counterexample to the maintained quantization. |
-| BGS-TRACE-063 | PROVED | [Global noncommuting ordinary-body coercivity](../mathematics/nonlinear_coercivity_20261011.md) | Strict matrix balls, intensity singular gap, exact determinant defect and source derivatives. Ordinary-body coercivity alone does not control the entire graded integral. |
-| BGS-TRACE-064 | PROVED | [Sharp maximal-torus contraction for compact simple groups](../mathematics/torus_contraction_20261011.md) | Central L2 functions under Haar sampling, sharp 1/(h+1) variance factor. A chosen deterministic scattering matrix and circular symmetric spaces require separate statements. |
-| BGS-TRACE-065 | PROVED | [Signed finite-field cycle and collision calculus](../mathematics/coherence_form_factor_20261011.md) | Explicit finite-field Fourier scattering with reused independent phases. Leading ramp n=o(N^(1/8)); symmetric first correction n=o(N^(1/9)), not N^(1/7), not Heisenberg times. Dihedral occupation sector alone does not provide the plateau. |
-| BGS-TRACE-066 | PROVED | [Birthday rank law and thinned collision limit](../mathematics/previous_rank_results_20261011.md) | Recovered proof of the rank/collision coupling, specified Poisson TV bound and stated CLT window. An unsaved proposed N^(1/7) correction is explicitly unconfirmed; no variance asymptotic inferred from L1 coupling. |
-| BGS-TRACE-067 | PROVED | [Sharp balanced Laurent Jack coefficient bound](../mathematics/jack_coefficient_theorem_20261011.md) | All alpha>0, nonzero balanced signatures and K>=1: ratio at most 1/(N+alpha K); unique sharp highest-root mode. External priority is not established. |
-| BGS-TRACE-068 | PROVED | [Frozen circular phase laws in the three symmetry classes](../mathematics/phase_contraction_20261011.md) | Haar circular background frozen once, randomness then only in compatible phases; spectral L2 functions, paired CSE phases and half trace. Full conditional weak Sine-beta limit in probability over the background. No prescribed deterministic-background theorem or Sine-limit rate. |
-| BGS-TRACE-069 | PROVED | [All-order critical CSE trace limit](../mathematics/exact_cumulants_20261011.md) | Growing n/N->1, d=o(N), logarithmic critical variance, every fixed cumulant and mixed moment, conditional Gaussian law. Second/fourth cumulants are prior HSW formulas; no independent-block interpretation or external novelty certificate. |
-| BGS-TRACE-070 | PROVED | [Complete CUE and CSE form-factor curves](../mathematics/form_factor_curve_20261011.md) | Mean L2(0,T) convergence of the ceil(N*tau) interpolation and all-time individual CSE MSE control. No expected temporal supremum; floor interpolation with n=0 is excluded. The limiting curves are prior work. |
-| BGS-TRACE-071 | PROVED | [Maximal phase point-process paths and all fixed normal-source products](../mathematics/laplace_path_transport_20261011.md) | Full centered point-process path comparison on R^2 loglog(1/delta)/log(1/delta)->0; all fixed normal-source Lp products and derivatives. Random clock is conditioned on the phase-independent past. No initial law, no Lp norm of a continuous supremum, no higher physical-source product assertion. |
-| BGS-TRACE-072 | PROVED | [Deterministic maximal microscopic observable flow](../mathematics/deterministic_path_transport_20261011.md) | Finite-N maximal path bound under one common observation origin. Actual-map growing interval o(sqrt(log N)) uses FM-018 mixing/Egorov and a fixed smooth exactly centered symbol. The time-average endpoint mechanism is prior corpus work; the initial law and BGS remain open. |
+| BGS-TRACE-057 | PROVED | [Arbitrary-source phase covariance](../mathematics/trace-bridge/source_covariance.md) | The arbitrary complex source bound is an exact contraction theorem; it does not identify a microscopic reference law. |
+| BGS-TRACE-058 | PROVED | [Integrable all-order phase absorption](../mathematics/trace-bridge/integrable_phase_absorption.md) | Every fixed Lp absorption bound and Abel continuity; no uniformity as p grows and no local-law identification. |
+| BGS-TRACE-059 | PROVED | [Anisotropic physical-source transport](../mathematics/trace-bridge/physical_source_transport.md) | Phase-independent positive clock, trace m, bounded normalized second moment, endpoint flatness and gap. L2 scalar comparison and fixed derivatives only; no higher physical-source mixed moments or actual-cavity hypotheses. |
+| BGS-TRACE-060 | CONDITIONAL | [Joint incoming and outgoing delay bootstrap](../mathematics/trace-bridge/delay_bootstrap.md) | Strengthened [conditional proof](../mathematics/trace-bridge/all_moment_delay_bootstrap.md): joint first-delay concentration, all fixed killed upper moments and [uniform equality laws at every fixed order](../mathematics/trace-bridge/conditional_clock_universality.md), with the [full-depth measure and exact rank atom](../mathematics/trace-bridge/full_depth_clock_measure.md) down to ceil(log(2N)^(1+kappa)). For arbitrary startups the premise remains conditional; TRACE-080 closes it for the explicit entry-flat small-gap class at log^(4+kappa). Smaller cutoffs, growing-order/edge bounds, physical microscopic identification and unrestricted exceptional-event moments remain open. |
+| BGS-TRACE-061 | PROVED | [Finite frame identities, Stiefel threshold and clock-basis obstruction](../mathematics/trace-bridge/fresh_phase_average.md) | Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample. |
+| BGS-TRACE-062 | PROVED | [Flat completion with arbitrary clock law](../mathematics/trace-bridge/flat_completion.md) | Constructed flat unitary completions and a prescribed mean-one clock law; no independently sampled phase-ensemble violation and no change-free counterexample to the maintained quantization. |
+| BGS-TRACE-063 | PROVED | [Global noncommuting ordinary-body coercivity](../mathematics/trace-bridge/nonlinear_coercivity.md) | Strict matrix balls, intensity singular gap, exact determinant defect and source derivatives. Ordinary-body coercivity alone does not control the entire graded integral. |
+| BGS-TRACE-064 | PROVED | [Sharp maximal-torus contraction for compact simple groups](../mathematics/trace-bridge/torus_contraction.md) | Central L2 functions under Haar sampling, sharp 1/(h+1) variance factor. A chosen deterministic scattering matrix and circular symmetric spaces require separate statements. |
+| BGS-TRACE-065 | PROVED | [Signed finite-field cycle and collision calculus](../mathematics/trace-bridge/coherence_form_factor.md) | Explicit finite-field Fourier scattering with reused independent phases. Leading ramp n=o(N^(1/8)); symmetric first correction n=o(N^(1/9)), not N^(1/7), not Heisenberg times. Dihedral occupation sector alone does not provide the plateau. |
+| BGS-TRACE-066 | PROVED | [Birthday rank law and thinned collision limit](../mathematics/trace-bridge/previous_rank_results.md) | Recovered proof of the rank/collision coupling, specified Poisson TV bound and stated CLT window. An unsaved proposed N^(1/7) correction is explicitly unconfirmed; no variance asymptotic inferred from L1 coupling. |
+| BGS-TRACE-067 | PROVED | [Sharp balanced Laurent Jack coefficient bound](../mathematics/trace-bridge/jack_coefficient_theorem.md) | All alpha>0, nonzero balanced signatures and K>=1: ratio at most 1/(N+alpha K); unique sharp highest-root mode. External priority is not established. |
+| BGS-TRACE-068 | PROVED | [Frozen circular phase laws in the three symmetry classes](../mathematics/trace-bridge/phase_contraction.md) | Haar circular background frozen once, randomness then only in compatible phases; spectral L2 functions, paired CSE phases and half trace. Full conditional weak Sine-beta limit in probability over the background. No prescribed deterministic-background theorem or Sine-limit rate. |
+| BGS-TRACE-069 | PROVED | [All-order critical CSE trace limit](../mathematics/trace-bridge/exact_cumulants.md) | Growing n/N->1, d=o(N), logarithmic critical variance, every fixed cumulant and mixed moment, conditional Gaussian law. Second/fourth cumulants are prior HSW formulas; no independent-block interpretation or external novelty certificate. |
+| BGS-TRACE-070 | PROVED | [Complete CUE and CSE form-factor curves](../mathematics/trace-bridge/form_factor_curve.md) | Mean L2(0,T) convergence of the ceil(N*tau) interpolation and all-time individual CSE MSE control. No expected temporal supremum; floor interpolation with n=0 is excluded. The limiting curves are prior work. |
+| BGS-TRACE-071 | PROVED | [Maximal phase point-process paths and all fixed normal-source products](../mathematics/trace-bridge/laplace_path_transport.md) | Full centered point-process path comparison on R^2 loglog(1/delta)/log(1/delta)->0; all fixed normal-source Lp products and derivatives. Random clock is conditioned on the phase-independent past. No initial law, no Lp norm of a continuous supremum, no higher physical-source product assertion. |
+| BGS-TRACE-072 | PROVED | [Deterministic maximal microscopic observable flow](../mathematics/trace-bridge/deterministic_path_transport.md) | Finite-N maximal path bound under one common observation origin. Actual-map growing interval o(sqrt(log N)) uses FM-018 mixing/Egorov and a fixed smooth exactly centered symbol. The time-average endpoint mechanism is prior corpus work; the initial law and BGS remain open. |
 
 The [integration disposition](../archive/record/chat_integration_20261011.md) records every
 research branch, prior overlap, corrected guesses and unclosed candidates.
@@ -353,10 +353,10 @@ at log^(4+kappa). The scalar microscopic law remains unresolved.
 
 | Claim | Current status | Exact authority |
 |---|---|---|
-| BGS-TRACE-053 | PROJECT PROOF + independent internal reconstruction | [Max-entry phase memory](../mathematics/max_entry_phase_channel.md): complete collision corrections, degree-two norm, explicit averaged-pinching rate; no microscopic spectral law |
-| BGS-TRACE-054 | STRENGTHENED PROJECT PROOF + independent internal reconstruction | [Sharp matrix inner jets](../mathematics/sharp_inner_jet.md): optimal leading 4/3 for general noncommuting rational inner F=zG; localization penalty retained |
+| BGS-TRACE-053 | PROJECT PROOF + independent internal reconstruction | [Max-entry phase memory](../mathematics/trace-bridge/max_entry_phase_channel.md): complete collision corrections, degree-two norm, explicit averaged-pinching rate; no microscopic spectral law |
+| BGS-TRACE-054 | STRENGTHENED PROJECT PROOF + independent internal reconstruction | [Sharp matrix inner jets](../mathematics/trace-bridge/sharp_inner_jet.md): optimal leading 4/3 for general noncommuting rational inner F=zG; localization penalty retained |
 | BGS-TRACE-055 | VERIFICATION-PENDING SUBMISSION | [Audit disposition](../archive/record/research_checkpoint_20261008.md): the complete submitted hierarchy remains pending; covariance and physical L2 transport are reconstructed, while delay and gap results retain all-time-flatness hypotheses |
-| BGS-TRACE-056 | PROJECT PROOF + independent internal reconstruction | [Direct real-flow scalar transport](../mathematics/phase_channel_real_flow.md): normally absorbed unweighted scalar L1 source comparison and fixed derivatives; no mixed products or anisotropic source |
+| BGS-TRACE-056 | PROJECT PROOF + independent internal reconstruction | [Direct real-flow scalar transport](../mathematics/trace-bridge/phase_channel_real_flow.md): normally absorbed unweighted scalar L1 source comparison and fixed derivatives; no mixed products or anisotropic source |
 
 [Proof review and bounded executions](../archive/evidence/executions/20261008/phase-channel-jet/README.md)
 are separate evidence tiers. The 4/3 matrix theorem improves the submitted
@@ -376,15 +376,15 @@ remain OPEN.** Earlier dated checkpoints retain their historical scope.
 - The scoped corpus revision and its known standalone-verifier repair passed remote acceptance at `0ffb20cc152d0ddd2620887e46d21d1120b95fd8`. Research has resumed; [review coverage](../archive/record/corpus_revision_20261006.md) records its limits.
 - **TRACE-014:** all-copy induced-HS channel proximity can coexist with an exact clock spectrum in the same ensemble. This is a negative control on unqualified universality criteria, not a counterexample to the frozen map.
 
-Exact statements: [FLOW-014](../mathematics/circular_dyson_actual_start.md), [FLOW-017](../mathematics/coboundary_all_order_limit.md), [FM-020](../mathematics/original_channel_gap.md), and [the obligation board](../mathematics/open_questions.md). The [registered dependency view](claim_registry.md) does not replace canonical proofs.
+Exact statements: [FLOW-014](../mathematics/fixed-map/circular_dyson_actual_start.md), [FLOW-017](../mathematics/fixed-map/coboundary_all_order_limit.md), [FM-020](../mathematics/fixed-map/original_channel_gap.md), and [the obligation board](../mathematics/open_questions.md). The [registered dependency view](claim_registry.md) does not replace canonical proofs.
 
 - **FM-021/FM-022:** actual position-chain mixing, the cyclic ramp, a specified marked three-link estimate, and reverse-cyclic suppression are established in their project proofs. General once-counted noncyclic sums and the spectral plateau correction remain open.
 
 ## Reviewed bounded proof batch, 6 October 2026
 
-- **BGS-TRACE-015 — project analytic proof, independent internal review, exact finite controls.** [Once-counted three-block cancellation](../mathematics/three_block_unmarking.md), with distinct ports and all nonempty link lengths, has signed compact positive Heisenberg-band ambiguity error O_w((log N)^5/N), plus superpolynomial and exponential terms. FM-021 supplies actual fixed-coupling inputs. Repeated ports, general reconnections and the full signed remainder remain open.
-- **BGS-FM-023 — project analytic proof, independent internal review, portable exact finite controls.** [Arithmetic translation exclusion](../mathematics/arithmetic_translation_exclusion.md): for odd d>=3 dividing N, compression is at most min(1,C_tau(d^262/N)^(1/129)). C_tau is independent of N,d and labels; every fixed delta<1/262 gives uniform residual sqrt(2)+o(1) for d<=N^delta. All fixed d follow. The projector corollary requires a nonzero centered part in this algebra. No arbitrary-projector exclusion, endpoint decay or optimality claim.
-- **BGS-TRACE-016 — project analytic proof, independent internal review, computer-assisted classification input.** [Once-counted reduced four-block cancellation](../mathematics/four_block_unmarking.md), with distinct ports and all nonempty link lengths, has signed compact positive Heisenberg-band error O_w((log N)^10/N), plus superpolynomial and exponential terms. The [universal rank-two classification](../mathematics/four_cut_rank_two_classification.md) has a separately reviewed mathematical compression/lifting proof and bounded kernel. Repeated ports, growing/general reconnections, inter-family overlaps and full signed statistics remain open.
+- **BGS-TRACE-015 — project analytic proof, independent internal review, exact finite controls.** [Once-counted three-block cancellation](../mathematics/fixed-map/three_block_unmarking.md), with distinct ports and all nonempty link lengths, has signed compact positive Heisenberg-band ambiguity error O_w((log N)^5/N), plus superpolynomial and exponential terms. FM-021 supplies actual fixed-coupling inputs. Repeated ports, general reconnections and the full signed remainder remain open.
+- **BGS-FM-023 — project analytic proof, independent internal review, portable exact finite controls.** [Arithmetic translation exclusion](../mathematics/spectral-obstructions/arithmetic_translation_exclusion.md): for odd d>=3 dividing N, compression is at most min(1,C_tau(d^262/N)^(1/129)). C_tau is independent of N,d and labels; every fixed delta<1/262 gives uniform residual sqrt(2)+o(1) for d<=N^delta. All fixed d follow. The projector corollary requires a nonzero centered part in this algebra. No arbitrary-projector exclusion, endpoint decay or optimality claim.
+- **BGS-TRACE-016 — project analytic proof, independent internal review, computer-assisted classification input.** [Once-counted reduced four-block cancellation](../mathematics/fixed-map/four_block_unmarking.md), with distinct ports and all nonempty link lengths, has signed compact positive Heisenberg-band error O_w((log N)^10/N), plus superpolynomial and exponential terms. The [universal rank-two classification](../mathematics/fixed-map/four_cut_rank_two_classification.md) has a separately reviewed mathematical compression/lifting proof and bounded kernel. Repeated ports, growing/general reconnections, inter-family overlaps and full signed statistics remain open.
 - **BGS-FORMAL-002 — FINITE-CERTIFICATE.** The bounded executable predicate checks pairs 5..12 (3858 configurations, 560 directed local matches) and oriented triples 5..10 (650 configurations, zero matches) with native-evaluation trust; m=4 exclusions use ordinary decide. Compilation is separate from mathematical compression/lifting, abstract-word correspondence, and the analytic TRACE-016 chain: those are not formalized.
 
 All analytic claims retain odd N and literal fixed tau=10^-80 where applied to the actual model. No practical startup, external-referee acceptance or global-priority claim is made. **TRACE-005 and BGS-BGS-001 remain OPEN.** Original preparation receipts and accepted-source provenance retain their execution identities; destination checks are recorded separately.
@@ -443,7 +443,7 @@ full integers or valuations is not silently assumed.
 
 | Claim | Status | Current support |
 |---|---|---|
-| all-order moment-channel proximity with a rigid clock spectrum (TRACE-014) | **EXACT + EXACT FINITE CONTROLS** | [Canonical proof](../mathematics/isospectral_clock_moment_control.md); every N>=3 and k>=1, error≤1/N, exact two-copy error1/(N²−1); no frozen-map or diamond-norm claim |
+| all-order moment-channel proximity with a rigid clock spectrum (TRACE-014) | **EXACT + EXACT FINITE CONTROLS** | [Canonical proof](../mathematics/spectral-obstructions/isospectral_clock_moment_control.md); every N>=3 and k>=1, error≤1/N, exact two-copy error1/(N²−1); no frozen-map or diamond-norm claim |
 | actual kicked Pell propagator at $\epsilon=\tau/\sqrt{2K}$: all fixed return traces converge in $L^2$ over harmonic windows to the cycle-pair diagram series | **EXACT** | `mathematics/pell_harmonic_returns.md`, Theorem 1; fixed $m,\tau$, full odd space, global law |
 | return-law endpoints are wrapped normal and free unitary Brownian; second-return closed formula for $\beta\ge1/6$ | **EXACT + EXTERNAL-THEOREM** | same note (R4)--(R5); moments derived internally, conventional free Brownian identification uses Demni (1) |
 | full nonzero lifted-aggregate Bessel weight is $O_{m,\tau}(K^{-1})$ | **EXACT** | same note Lemma 2, cyclic integer image and $\ell^1$ dominance; no growing-$m$ phase theorem |
@@ -757,7 +757,7 @@ Proofs are included in the single canonical manuscript.
 | Any uniform modulus is at least c exp(-C sqrt(log(1/delta))) | EXACT | Lower bound only; a matching upper rate is OPEN |
 | Simple clock spectra agree on all traces below N/2 but have different microscopic spacing laws | EXACT + FINITE-REGRESSION | Abstract unitary negative control, not chaotic dynamics |
 | Spectral rounding preserves O(1/N) Egorov while producing collapsed spacings, including a simple-spectrum variant | EXACT | Weak quantization axioms only; no fixed microlocal symbol-class assertion |
-| Unbiased rounding preserves simultaneous unnormalized low traces for each specified K_N=o(N^(1/3)), simple spectrum, O(N^-1) norm distance and coarse P/Q/Egorov control, while a fixed stable-band pair test has liminf>1/2 | EXACT; independently internally reviewed | [Canonical refinement](../mathematics/microscopic_rounding_control.md); extends prior project spectral rounding. Changed operator; no exact-quantization, subprincipal-data or all-order microlocal preservation, and no counterexample to actual BGS |
+| Unbiased rounding preserves simultaneous unnormalized low traces for each specified K_N=o(N^(1/3)), simple spectrum, O(N^-1) norm distance and coarse P/Q/Egorov control, while a fixed stable-band pair test has liminf>1/2 | EXACT; independently internally reviewed | [Canonical refinement](../mathematics/spectral-obstructions/microscopic_rounding_control.md); extends prior project spectral rounding. Changed operator; no exact-quantization, subprincipal-data or all-order microlocal preservation, and no counterexample to actual BGS |
 
 Fresh execution coverage, exact source hashes, literature attribution and the
 limited PDF build scope are in `holomorphic_shell_review.md` and
@@ -1094,11 +1094,11 @@ Earlier acceptance narratives are preserved with their original scientific scope
 
 ## Fixed-order complete WKB reduction (6 October 2026)
 
-**BGS-TRACE-017: PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW; analytic chain unformalized.** For each fixed k and compact smooth Fourier weight, choose fixed J>=k. The complete partition transform of either named WKB trace table differs from the actual unitary transform by O(N^(k-J-1/2)). [The proof](../mathematics/factorial_wkb_reduction.md) distinguishes Laurent and adjoint tables. Exact finite-power reciprocity, formal connected coefficients and the actual conditioned rotated-box first-loop theorem are supporting, separately scoped results. No growing-order claim is made. The separate [global rotated-box theorem](../mathematics/global_rotated_box_trace.md) now supplies a finite-band contour representation and summed tail, conservatively through m<=2N; signed box evaluation and unrestricted bands remain open. The full signed comparison is equivalent and remains OPEN, as do TRACE-005 and BGS-BGS-001. See [review scope](../archive/record/heisenberg_wkb_review_scope.md).
+**BGS-TRACE-017: PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEW; analytic chain unformalized.** For each fixed k and compact smooth Fourier weight, choose fixed J>=k. The complete partition transform of either named WKB trace table differs from the actual unitary transform by O(N^(k-J-1/2)). [The proof](../mathematics/fixed-map/factorial_wkb_reduction.md) distinguishes Laurent and adjoint tables. Exact finite-power reciprocity, formal connected coefficients and the actual conditioned rotated-box first-loop theorem are supporting, separately scoped results. No growing-order claim is made. The separate [global rotated-box theorem](../mathematics/fixed-map/global_rotated_box_trace.md) now supplies a finite-band contour representation and summed tail, conservatively through m<=2N; signed box evaluation and unrestricted bands remain open. The full signed comparison is equivalent and remains OPEN, as do TRACE-005 and BGS-BGS-001. See [review scope](../archive/record/heisenberg_wkb_review_scope.md).
 
 ## Actual higher-seven-primary common commutant (6 October 2026)
 
-**BGS-FM-024: EXACT + FINITE-CERTIFICATE; independent internal review of the original theorem.** For every odd N with 49|N and 5∤N, the actual pair (A_N,M_N) has scalar complex common commutant. [The maintained proof](../mathematics/actual_seven_primary_commutant.md) gives exact reduction, two-row equations, full finite-polynomial certificates and rank lifting. With the checked Lindemann–Weierstrass input, the literal U_N has only scalar algebraic-entry commuters; the added coefficient-separation argument has a scoped internal check, distinct from independent review of the entire expanded exposition. The cases 5|N with 49|N and 7∥N remain outside this theorem; N=7 remains exceptional. Neither spectral simplicity nor BGS/TRACE-005 follows. The analytic/algebraic proof is not fully formalized.
+**BGS-FM-024: EXACT + FINITE-CERTIFICATE; independent internal review of the original theorem.** For every odd N with 49|N and 5∤N, the actual pair (A_N,M_N) has scalar complex common commutant. [The maintained proof](../mathematics/fixed-map/actual_seven_primary_commutant.md) gives exact reduction, two-row equations, full finite-polynomial certificates and rank lifting. With the checked Lindemann–Weierstrass input, the literal U_N has only scalar algebraic-entry commuters; the added coefficient-separation argument has a scoped internal check, distinct from independent review of the entire expanded exposition. The cases 5|N with 49|N and 7∥N remain outside this theorem; N=7 remains exceptional. Neither spectral simplicity nor BGS/TRACE-005 follows. The analytic/algebraic proof is not fully formalized.
 
 ## Seven-primary finite formal certificate (6 October 2026)
 
@@ -1108,29 +1108,29 @@ The independent FM-024 consolidation audit accepted the expanded proof and the a
 
 Prior ownership clarification for TRACE-017: heisenberg_trace_support.md Section 3 already proves the general nonunitary integer-power and full partition perturbation estimate without a microscopic correlation assumption. TRACE-017 supplies the actual arbitrary-fixed-order WKB construction/instantiation and explicit adjoint-table convention, rather than inventing that perturbation lemma. See record/heisenberg_wkb_prior_attribution.json for source-bound hashes.
 
-Supporting quantization equivalence: [principal WKB polar comparison](../mathematics/polar_wkb_quantization_stability.md) gives a fixed smooth order-1/N unitary correction from the actual operator and an O(N^-2) polar defect. The smooth-symbol/polar bridge has independent internal review; the RMS transfer theorem and its inherited external mixing leaf are credited, not newly independently audited. An assumed all-order compact law transfers between the two unitary endpoints. No such law is evaluated; no nonnormal W0 eigenvalue matching or J=0 replacement of TRACE-017 follows.
+Supporting quantization equivalence: [principal WKB polar comparison](../mathematics/fixed-map/polar_wkb_quantization_stability.md) gives a fixed smooth order-1/N unitary correction from the actual operator and an O(N^-2) polar defect. The smooth-symbol/polar bridge has independent internal review; the RMS transfer theorem and its inherited external mixing leaf are credited, not newly independently audited. An assumed all-order compact law transfers between the two unitary endpoints. No such law is evaluated; no nonnormal W0 eigenvalue matching or J=0 replacement of TRACE-017 follows.
 
 Aggregate Lean update: all 19 active modules passed in 22 Lake jobs; SevenPrimary was freshly compiled and Bgs rebuilt. The previously separate aggregate-build gate is closed by evidence/formalization/seven_primary_20261006/aggregate-build.json. This does not extend FORMAL-003 beyond its executable-array predicates.
 
 ## Finite-band global rotated-box trace representation (6 October 2026)
 
-**Supporting project analytic theorem, fresh independent internal review; TRACE-017 core unchanged.** For the actual fixed-coupling odd-dimensional operator and every fixed finite J>=1, uniformly through 1<=m<=2N, the actual trace equals the exact rotated-box sum with error O_J(N^(3/2-J))+O_J(sqrt(N) exp(-4N/5)). [The global contour proof](../mathematics/global_rotated_box_trace.md) establishes a saturated-contour deformation and sums its tails; additional strictly bounded bandwidth ranges are stated there. It does not evaluate the exact box sum, make first-loop algebraic errors absolutely summable, cover unrestricted bands, or prove CUE/BGS/TRACE-005. This separately accepted result supersedes earlier contour-pending descriptions only within its stated finite band.
+**Supporting project analytic theorem, fresh independent internal review; TRACE-017 core unchanged.** For the actual fixed-coupling odd-dimensional operator and every fixed finite J>=1, uniformly through 1<=m<=2N, the actual trace equals the exact rotated-box sum with error O_J(N^(3/2-J))+O_J(sqrt(N) exp(-4N/5)). [The global contour proof](../mathematics/fixed-map/global_rotated_box_trace.md) establishes a saturated-contour deformation and sums its tails; additional strictly bounded bandwidth ranges are stated there. It does not evaluate the exact box sum, make first-loop algebraic errors absolutely summable, cover unrestricted bands, or prove CUE/BGS/TRACE-005. This separately accepted result supersedes earlier contour-pending descriptions only within its stated finite band.
 
 ## Current actual pair commutant and scoped spectral extensions
 
-**FM-024:** [actual pair commutant](../mathematics/actual_seven_primary_commutant.md)
+**FM-024:** [actual pair commutant](../mathematics/fixed-map/actual_seven_primary_commutant.md)
 is scalar for every odd N>=3 except7 by explicit combination of reviewed
 families and prior FM-008. At7 its characteristic-zero dimension is17 with
 multiplicities(3,2,2). The literal-U corollary is algebraic-entry-only.
 Component proofs, finite certificates and prior review boundaries are retained.
 
-**FM-025:** [uniform pure-five kick simplicity](../mathematics/uniform_five_cluster_simplicity.md)
+**FM-025:** [uniform pure-five kick simplicity](../mathematics/fixed-map/uniform_five_cluster_simplicity.md)
 holds for A_(7*5^e), e>=1, by reviewed v2 analytic induction and separately
-reviewed finite inputs. V1 remains incomplete. The [finite companion](../mathematics/finite_seven_spectral_pivots.md)
+reviewed finite inputs. V1 remains incomplete. The [finite companion](../mathematics/fixed-map/finite_seven_spectral_pivots.md)
 gives simple literal U only at N=21,35,49,63, using prior FM-008 Section4 and
 registered LW. FM-008's universal7∤N statement is unchanged.
 
-**FM-010 companion:** [one-step squared-trace transcendence](../mathematics/uniform_trace_square_transcendence.md)
+**FM-010 companion:** [one-step squared-trace transcendence](../mathematics/fixed-map/uniform_trace_square_transcendence.md)
 holds for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1.
 Repeated eigenvalues are allowed. Original all-power nonvanishing and its
 inherited review status remain unchanged; higher-power squared-trace
@@ -1138,19 +1138,19 @@ transcendence at7|N is not claimed.
 
 ## Current paired-phase and selected full-weight frontier
 
-**TRACE-018:** [actual phase locality](../mathematics/winding_defect_locality.md)
-and [Frostman averages](../mathematics/phase_map_frostman.md) remain phase-only,
-with the exact [paired quotient](../mathematics/paired_character_identity.md)
+**TRACE-018:** [actual phase locality](../mathematics/fixed-map/winding_defect_locality.md)
+and [Frostman averages](../mathematics/fixed-map/phase_map_frostman.md) remain phase-only,
+with the exact [paired quotient](../mathematics/fixed-map/paired_character_identity.md)
 as support. Averaging dimension does not replace fixed-N time averaging.
 
-**TRACE-019:** [selected full-weight coefficient](../mathematics/selected_weighted_coefficient.md)
+**TRACE-019:** [selected full-weight coefficient](../mathematics/fixed-map/selected_weighted_coefficient.md)
 and its once-counted cyclic/negative family are O(N^-1/2) in every fixed
 positive global band m/N<=2, for fixed finite J>=0 in the V representation.
 Aggregate U pair transfer requires fixed J>=2. Separate W/Q/EQ and interface
 reviews retain exact probabilities, half-density, norm-uniform tests and
-source hypotheses. The [stationary residual](../mathematics/stationary_cyclic_residual.md)
+source hypotheses. The [stationary residual](../mathematics/fixed-map/stationary_cyclic_residual.md)
 credits FM-021 and removes two disjoint pair families once, retaining only
-unremoved torsion portions. The [exact homoclinic structure](../mathematics/exact_homoclinic_potential.md)
+unremoved torsion portions. The [exact homoclinic structure](../mathematics/fixed-map/exact_homoclinic_potential.md)
 uses inherited Fourier methods; its additive/distributional obstruction gives
 no multiplicative-gauge conclusion. Mane1981 with mandatory1983errata supplies
 the verified entropy formula; the original Pesin locator remains unverified.
@@ -1162,21 +1162,21 @@ preserves the superseded arithmetic checkpoints and their references.
 
 ## Current collective hierarchy and literal-time spectral bounds
 
-**TRACE-020:** [general factorial ordered-sector removal](../mathematics/factorial_ordered_diagonal.md)
+**TRACE-020:** [general factorial ordered-sector removal](../mathematics/fixed-map/factorial_ordered_diagonal.md)
 gives O_k(log^(2k)N/N) for every fixed k>=2 and compact Fourier weight under
 entrywise flatness alone, including zero-power strata and exact constant
 terms. Mixed permutations need not preserve the ordered range. Its
-[mixed/matched long-cycle companion](../mathematics/mixed_ordered_diagonal.md)
+[mixed/matched long-cycle companion](../mathematics/fixed-map/mixed_ordered_diagonal.md)
 uses separate singular mixing and shared Haar draws; neither bounds the
 complete signed complement. The separately retained
-[centered collective hierarchy](../mathematics/collective_occupation_hierarchy.md)
+[centered collective hierarchy](../mathematics/fixed-map/collective_occupation_hierarchy.md)
 has O(1) actual-U cyclic trace through fixed m<=bN bands and O_w(N^-1) pair
 aggregate, with true Gram inverse and inherited FM-021 analytic inputs.
-The [exact Q residual](../mathematics/collective_projector_residual.md) includes
+The [exact Q residual](../mathematics/fixed-map/collective_projector_residual.md) includes
 remaining balanced, off-charge and cycle-fixed vectors. Supporting quadratic
 and slow-source obstructions retain sector/vector scope and diagnostic limits.
 
-**FM-026:** [literal-time bounds](../mathematics/literal_time_multiplicity_bounds.md)
+**FM-026:** [literal-time bounds](../mathematics/fixed-map/literal_time_multiplicity_bounds.md)
 for N=7*5^e,e>=1 give multiplicity<=7 at nonzero real algebraic time. At least
 612N/625+7 eigenvalues are simple for even e>=4, and at least 612N/625+175
 for even e>=6; exact special lower bounds are 4333 at N=4375 and 107443 at
@@ -1191,7 +1191,7 @@ a fresh primary LW statement/application check. Historical author review is
 retained. Its r1 pair-commutant leaf used by FM-024 is independently reviewed
 and LW-free; the literal-U algebraic-entry corollary still uses LW.
 
-TRACE-020's independently reviewed [ordered-diagonal companion](../mathematics/ordered_diagonal_cyclic_trace.md)
+TRACE-020's independently reviewed [ordered-diagonal companion](../mathematics/fixed-map/ordered_diagonal_cyclic_trace.md)
 uses a distinct projector of rank N^m-1. For each fixed a>0 its cyclic trace
 is bounded by12N³exp(-c_aN), uniformly for every m>=aN and sufficiently large
 odd N. It uses only inherited FM-021 singular mixing. This is exponential
@@ -1200,8 +1200,8 @@ cycle cancellations differ. The complete Q_ord residual remains unestimated.
 
 ## Current checksum-free pair residual and reviewed phase checkpoint
 
-**TRACE-021:** [the current claim card](../mathematics/phase_trace_checkpoint.md)
-and [exact checksum-free synthesis](../mathematics/checksum_free_residual.md)
+**TRACE-021:** [the current claim card](../mathematics/trace-bridge/phase_trace_checkpoint.md)
+and [exact checksum-free synthesis](../mathematics/trace-bridge/checksum_free_residual.md)
 remove all low-switch occupation-mismatched partial fibers, including checksum
 zero. The orthogonal Q_new=I-P_H-P_bal-O_low-L_all has balanced complement
 Pi-P_H-P_bal and the literal high-Hamming/high-switch offcharge mask. Full
@@ -1220,7 +1220,7 @@ universal Abel bound and full complex source regularity/uniform integrability;
 moment laws with the separately reviewed triple-log window and fixed-polynomial
 strong-freeness obstruction; and **FM-030** scalar/block ordinary-body coercivity and real
 absorption. Exact restrictions and independent source/review pins are in
-[the maintained claim card](../mathematics/phase_trace_checkpoint.md) and
+[the maintained claim card](../mathematics/trace-bridge/phase_trace_checkpoint.md) and
 [checkpoint record](checked_research_checkpoint_20261007.md).
 
 Separately reviewed changed-family growing-period offcharge failure and
@@ -1234,10 +1234,10 @@ universality are not declared false. All BGS/CUE identification remains OPEN.
 
 ## Reviewed Wave2 subsidiary results, 7 October 2026
 
-- **BGS-TRACE-024:** [actual unmasked q=1 one-pinch disappearance](../mathematics/actual_one_pinch_disappearance.md) combines the independently accepted actual fixed-lag displacement-frame estimate with annealed deletion in ONE theorem. The positive aggregate holds for bounded compact-band weights; signed occupation-subtracted disappearance retains smooth weights. Constants are fixed-lag; there is no aggregate rate or practical startup. The annealed leaf separately extends to one consecutive block, without an actual positive block-hierarchy claim.
-- **BGS-FM-031:** [ordinary centering](../mathematics/ordinary_compact_stratum_centering.md) is a.e. on labelled stable strata for odd N>=3, preserving the original measures, gauge determinant and distinct coarea factor. Completed signed-source and fixed-derivative cutoff bounds are fixed-N only. No positive signed-source measure, super-Berezinian or normalized dimension-uniform microscopic tail.
-- **BGS-TRACE-025:** [rounded/split endpoint barriers](../mathematics/rounding_simple_spectrum_endpoint_barriers.md) are changed-quantizer constructions. A successful endpoint proof needs a property or estimate excluding these witnesses and an identified use of it. The stronger strategy sentence in raw rounding line 34 is superseded by this restriction; no particular raw-Weyl/all-order proof method is required. Actual Schatten preservation is not proved.
-- **BGS-TRACE-026:** [corrected hook/tree/current reduction](../mathematics/hook_tree_phase_current_reduction.md) gives exact all-N,m identities only after exterior-character zero extension before marked-cycle selection. Its controlled-sector Abel theorem is conditional on the stated eventual flatness/P/reverse constants. Balanced identification requires the residual limit -exp(-2s)/(4s^2), not a small residual. Original v1/audit and corrected v2 acceptance remain separately traceable.
+- **BGS-TRACE-024:** [actual unmasked q=1 one-pinch disappearance](../mathematics/fixed-map/actual_one_pinch_disappearance.md) combines the independently accepted actual fixed-lag displacement-frame estimate with annealed deletion in ONE theorem. The positive aggregate holds for bounded compact-band weights; signed occupation-subtracted disappearance retains smooth weights. Constants are fixed-lag; there is no aggregate rate or practical startup. The annealed leaf separately extends to one consecutive block, without an actual positive block-hierarchy claim.
+- **BGS-FM-031:** [ordinary centering](../mathematics/fixed-map/ordinary_compact_stratum_centering.md) is a.e. on labelled stable strata for odd N>=3, preserving the original measures, gauge determinant and distinct coarea factor. Completed signed-source and fixed-derivative cutoff bounds are fixed-N only. No positive signed-source measure, super-Berezinian or normalized dimension-uniform microscopic tail.
+- **BGS-TRACE-025:** [rounded/split endpoint barriers](../mathematics/fixed-map/rounding_simple_spectrum_endpoint_barriers.md) are changed-quantizer constructions. A successful endpoint proof needs a property or estimate excluding these witnesses and an identified use of it. The stronger strategy sentence in raw rounding line 34 is superseded by this restriction; no particular raw-Weyl/all-order proof method is required. Actual Schatten preservation is not proved.
+- **BGS-TRACE-026:** [corrected hook/tree/current reduction](../mathematics/fixed-map/hook_tree_phase_current_reduction.md) gives exact all-N,m identities only after exterior-character zero extension before marked-cycle selection. Its controlled-sector Abel theorem is conditional on the stated eventual flatness/P/reverse constants. Balanced identification requires the residual limit -exp(-2s)/(4s^2), not a small residual. Original v1/audit and corrected v2 acceptance remain separately traceable.
 - [Phase-orbit literature qualification](../literature/wave2_phase_orbit_source_qualification_20261007.md) records exact bounded applicability/priority limits. No new graph universality or external load-bearing leaf is added; author P1-P3 inferences are not promoted to independently reviewed asymptotic claims.
 
 The [integration mapping](wave2_promotion_mapping.json) and [review record](wave2_checked_integration_20261007.md) retain byte-exact source/review evidence. **Literal signed masked T16, masked insertion/source-extraction/deconvolution hierarchy, actual signed Ward overlap (13), complete balanced microscopic law, TRACE-005, higher factorial comparison and deterministic BGS remain OPEN.** No formalization or external referee certification is asserted.
@@ -1245,14 +1245,14 @@ The [integration mapping](wave2_promotion_mapping.json) and [review record](wave
 
 ## BGS-TRACE-027: separately reviewed coherence covariance
 
-[Weighted coherence](../mathematics/weighted_phase_coherence_covariance.md) proves exact finite covariance/error bounds and the nontrivial classical Green–Kubo leading term. Complete signed Ward convergence is only on the upper half ceil(T_N/2)<=m<=T_N of the specified slowly growing window, without all-fixed-m/full-prefix convergence. The actual unconjugated transpose-product bound removes the stated degree-two mixed-moment exception only. Original ZIP controls were inaccessible/unreplayed; exact exported proof and NEW independent controls are sealed. Absorbed Ward (13), microscopic balanced law, literal masked T16, TRACE-005 and BGS remain OPEN.
+[Weighted coherence](../mathematics/fixed-map/weighted_phase_coherence_covariance.md) proves exact finite covariance/error bounds and the nontrivial classical Green–Kubo leading term. Complete signed Ward convergence is only on the upper half ceil(T_N/2)<=m<=T_N of the specified slowly growing window, without all-fixed-m/full-prefix convergence. The actual unconjugated transpose-product bound removes the stated degree-two mixed-moment exception only. Original ZIP controls were inaccessible/unreplayed; exact exported proof and NEW independent controls are sealed. Absorbed Ward (13), microscopic balanced law, literal masked T16, TRACE-005 and BGS remain OPEN.
 
 
 ## Reviewed Wave3 complete unmasked hierarchy
 
-**TRACE-028:** [right-frame and complete insertion theorem](../mathematics/right_frame_unmasked_pinch_hierarchy.md) closes complete unmasked fixed-j separated sums (actual and annealed) and every complete convex insertion mixture, uniformly z_N in [0,1]. The NEW centered S3 tail ||D0||S3³=o(N) controls every j>=3 word uniformly in theta/gaps/j. Arbitrary fixed-B averaging keeps B fixed during coherent time summation. Older statements that the complete unmasked separated hierarchy was unestimated are superseded at precisely these normalizations.
+**TRACE-028:** [right-frame and complete insertion theorem](../mathematics/fixed-map/right_frame_unmasked_pinch_hierarchy.md) closes complete unmasked fixed-j separated sums (actual and annealed) and every complete convex insertion mixture, uniformly z_N in [0,1]. The NEW centered S3 tail ||D0||S3³=o(N) controls every j>=3 word uniformly in theta/gaps/j. Arbitrary fixed-B averaging keeps B fixed during coherent time summation. Older statements that the complete unmasked separated hierarchy was unestimated are superseded at precisely these normalizations.
 
-**TRACE-029:** [convex weak-noise/deconvolution theorem](../mathematics/convex_pinch_weak_noise_and_deconvolution.md) adds exact finite-N bounds, complete signed bounded-u stability and an actual UNSIGNED large-log obstruction: F_m=1+o(1) and normalized unweighted deconvolved interval sum ~N^(bA0-1)/(A0 log N). The common identity contribution cancels only after signed occupation subtraction (or relevant projection); this does not refute T16.
+**TRACE-029:** [convex weak-noise/deconvolution theorem](../mathematics/fixed-map/convex_pinch_weak_noise_and_deconvolution.md) adds exact finite-N bounds, complete signed bounded-u stability and an actual UNSIGNED large-log obstruction: F_m=1+o(1) and normalized unweighted deconvolved interval sum ~N^(bA0-1)/(A0 log N). The common identity contribution cancels only after signed occupation subtraction (or relevant projection); this does not refute T16.
 
 **Current OPEN frontier:** masked/source-weighted separated sums, Hamming/high-switch extraction, source derivatives and quantitative rates, signed centered boundary deconvolution and undamped zero-insertion comparison, actual absorbed Ward (13), complete balanced microscopic law, TRACE-005, higher factorial comparison and deterministic BGS. No formalization or unavailable author222-suite certification.
 
@@ -1260,8 +1260,8 @@ The [integration mapping](wave2_promotion_mapping.json) and [review record](wave
 
 | Claim | Status | Scope and unresolved boundary |
 |---|---|---|
-| BGS-TRACE-060, strengthened | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [All fixed killed upper moments and joint first-delay concentration](../mathematics/all_moment_delay_bootstrap_20261011.md) at ceil(log(2N)^(1+kappa)); uniform equality laws at every fixed order and the full-depth reference measure after two substantive word repairs. Probability of all-time flatness, growing-order/edge laws, the physical microscopic reference and unrestricted exceptional-event moments remain open. |
-| BGS-TRACE-073 | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [Every ordered classical centered singular value contracts](../mathematics/schur_censoring_gap_20261011.md); stopped fresh-phase quantum gap propagation at ceil(log(2N)^(3+kappa)). FM-021/022 supply only the actual-map initial intensity/reversal gaps. The [separate reversal reconstruction](../archive/record/reversal_channel_continuation_20261011.md) also proves singular-spectrum contraction for arbitrary complex contractions. Quantum realization contraction and flatness probability are not inferred from the mean. |
+| BGS-TRACE-060, strengthened | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [All fixed killed upper moments and joint first-delay concentration](../mathematics/trace-bridge/all_moment_delay_bootstrap.md) at ceil(log(2N)^(1+kappa)); uniform equality laws at every fixed order and the full-depth reference measure after two substantive word repairs. Probability of all-time flatness, growing-order/edge laws, the physical microscopic reference and unrestricted exceptional-event moments remain open. |
+| BGS-TRACE-073 | CONDITIONAL + INDEPENDENT INTERNAL RECONSTRUCTION | [Every ordered classical centered singular value contracts](../mathematics/trace-bridge/schur_censoring_gap.md); stopped fresh-phase quantum gap propagation at ceil(log(2N)^(3+kappa)). FM-021/022 supply only the actual-map initial intensity/reversal gaps. The [separate reversal reconstruction](../archive/record/reversal_channel_continuation_20261011.md) also proves singular-spectrum contraction for arbitrary complex contractions. Quantum realization contraction and flatness probability are not inferred from the mean. |
 
 [The review and exact input lineage](../archive/record/cavity_continuation_20261011.md) separate
 analytic arguments from finite Python/C++/Wolfram controls. No new analytic

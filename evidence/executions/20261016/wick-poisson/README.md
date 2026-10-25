@@ -5,8 +5,8 @@ Local workspace: partial pinned source snapshot, without a Git checkout.
 The runner correctly records local Git revision as unavailable; the pinned
 remote base and current source hashes are recorded separately.
 
-The analytic authority is [TRACE-094](../../../../mathematics/wick_collision_poisson_20261016.md).
-[Internal review](../../../../record/reviews/wick_poisson_20261016.md) distinguishes
+The analytic authority is [TRACE-094](../../../../mathematics/trace-bridge/wick_collision_poisson.md).
+[Internal review](../../../../archive/record/reviews/wick_poisson_20261016.md) distinguishes
 the independent core reconstruction from author-derived corollaries.
 
 ## Executed exact audit

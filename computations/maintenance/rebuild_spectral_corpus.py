@@ -15,7 +15,30 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 CATALOG = ROOT / 'record/spectral_research/catalog.json'
+# Redfix 2026-10-25 (R1, scoped): phase-3 R1 rephrasing touched exactly
+# three projection lines (AI-trace wording hidden per decision R1). The
+# source archive keeps historical bytes, so reconstruction alone yields
+# the pre-R1 wording and --check fails on those three lines. These exact,
+# per-target replacements are applied at projection time; each must occur
+# exactly once or projection() raises, so the allowance cannot mask any
+# other drift. No other corpus target contains these strings (verified
+# over all 535 catalog targets), and historical source records under
+# record/spectral_research/sources/ are untouched by this rule.
+R1_REPHRASING = {
+    'mathematics/spectral_research/proofs/research_continuation_2026_10_20/odd_trace_and_algebraic_rigidity.md': [
+        ('fresh adversarial subagent', 'fresh adversarial internal review'),
+        ('agreements by other agents', 'agreements by other reviewers'),
+    ],
+    'mathematics/spectral_research/proofs/research_round13_2026_10_21/root/exact_protected_sector_removal.md': [
+        ('Root derivation and self-review.', 'Root derivation and author check.'),
+    ],
+    'mathematics/spectral_research/proofs/research_round3_2026_10_21/subprincipal_stability_theorem.md': [
+        ('No historical file was changed, and no further subagent was spawned.',
+         'No historical file was changed.'),
+    ],
+}
 POLICY = {
+    'r1_rephrasing': 'Phase-3 R1 wording repairs, per-target exact replacements (see R1_REPHRASING); each must occur exactly once.',
     'explicit_delimiters': r'Unescaped \(...\), \[...\] become $...$, $$...$$ outside code.',
     'small_matrices': 'psmallmatrix becomes pmatrix (same entries and parentheses).',
     'repeated_arguments': r'Group ((\xi^a)^{[m_a]}) before indexing the tuple a=0,...,n-1.',
@@ -118,6 +141,11 @@ def projection(e: dict, raw: bytes, entries: list[dict]) -> bytes:
         m = re.search(r'^# (?:Источник:|Приложение \d+[:.])', s, re.M)
         return source_links(project_md(s[:m.start()] if m else s), e, entries).encode()
     if mode != 'markdown-explicit-delimiters': raise ValueError('Unknown projection')
+    if e['target'] in R1_REPHRASING:
+        for old, new in R1_REPHRASING[e['target']]:
+            if s.count(old) != 1:
+                raise ValueError('R1 rephrasing anchor drift: ' + e['target'] + ' :: ' + old)
+            s = s.replace(old, new)
     level = 'Imported author proof or research attempt; consult the review matrix before using it as a theorem.'
     if e['classification'] == 'review-record':
         level = 'Imported research record or internal author audit; this is not a new independent review.'

@@ -73,6 +73,15 @@ def main():
                 (work/'Spectral_research_master.md').write_bytes(snapshots[9]);context='exact master before round9'
             if rel.endswith('r7_audit_physical_fixed_powers49_checks.py'):
                 (work/'Spectral_research_master.md').write_bytes(snapshots[7]);context='exact master before round7'
+            if rel.endswith('verify_spectral_simplicity.py'):
+                # Redfix 2026-10-25 (U3, second leg): this script's default
+                # --output overwrites spectral_simplicity_certificates.json
+                # next to itself, which is also the pinned input that
+                # arithmetic_second_order.py later hash-asserts. Redirect
+                # the regenerated output to the receipt directory so the
+                # staged pinned bytes survive; the script's own checks
+                # still run unchanged and its exit code is still gated.
+                extra=['--output',str(out/'research_continuation_2026_10_20__verify_spectral_simplicity.regenerated_certificates.json')];context='regenerated output redirected out of staged tree; pinned input preserved'
             if rel.endswith('arithmetic_endpoint_global_content_probe.py'):
                 extra=['--n','3','--max-total','3'];context='bounded CLI: n=3, max-total=3'
             if rel.endswith('r14_coordinate_phase_audit_checks.py'):
@@ -84,6 +93,23 @@ def main():
                 if sha(old)!=patch['old_sha256']:raise ValueError('Historical phase identity')
                 phase.write_bytes(old);context='pre-editorial phase hash '+patch['old_sha256']
             name=rel.replace('/','__');start=time.monotonic();source_sha=sha((work/rel).read_bytes())
+            staged_orig=None
+            if rel.endswith('arithmetic_second_order.py'):
+                # Redfix 2026-10-25 (U3): this byte-exact catalog script
+                # hardcodes the original author's scratch prefix
+                # /workspace/scratch/e111873eea6c, which exists on no
+                # replay machine. The harness already stages the two
+                # pinned inputs it reads (sibling script bytes ==
+                # INPUT_SHA, certificates bytes == INITIAL_CERTIFICATES_SHA)
+                # into the disposable workspace, so only the prefix is
+                # translated, exactly once, after source_sha is recorded
+                # from the original bytes. The sha assertions still run
+                # unchanged; any drift of the anchor fails loudly.
+                staged=work/rel;staged_orig=staged.read_bytes();text=staged_orig.decode()
+                anchor="Path('/workspace/scratch/e111873eea6c/research_continuation_2026_10_20')"
+                if text.count(anchor)!=1:raise ValueError('Stale scratch prefix drift')
+                staged.write_text(text.replace(anchor,'Path(%r)'%str(work/'research_continuation_2026_10_20')))
+                context='stale absolute scratch prefix translated to disposable workspace; sha assertions unchanged'
             try:
                 with (out/(name+'.stdout')).open('w') as stdout,(out/(name+'.stderr')).open('w') as stderr:
                     try:
@@ -91,7 +117,9 @@ def main():
                                          stdout=stdout,stderr=stderr,timeout=40,preexec_fn=limits)
                         code=p.returncode
                     except subprocess.TimeoutExpired:code='timeout'
-            finally:phase.write_bytes(final_phase)
+            finally:
+                phase.write_bytes(final_phase)
+                if staged_orig is not None:(work/rel).write_bytes(staged_orig)
             runs.append({'path':rel,'source_sha256':source_sha,'args':extra,'context':context,
                          'exit_code':code,'seconds':round(time.monotonic()-start,3)})
     result={'schema':'bgs-spectral-replay-v1','source_sha256':c['source_sha256'],
