@@ -36,7 +36,7 @@ the disclosure footnote in the root file is unchanged.
 
 ## Trace closure edition, 22 October 2026
 
-The [new section](unified_sections/spectral_trace_closure_20261022.tex)
+The [new section](unified_sections/inserted_trace_closure.tex)
 closes TRACE-109/110 and presents TRACE-112/113. The current three-pass
 build has **324 pages**, no unresolved references or citations, and no
 horizontal overflow. The new section's three pages were visually inspected;
@@ -49,7 +49,7 @@ The microscopic signed hierarchy and BGS remain open.
 
 ## Final spectral edition, 21 October 2026
 
-The new [spectral section](unified_sections/spectral_final_20261021.tex)
+The new [spectral section](unified_sections/spectral_corpus_one_step_returns.tex)
 summarizes TRACE-108--111 with exact proved/conditional boundaries.
 The current three-pass build has **322 pages**, no unresolved references,
 and no overflow in the new section. Three new-section pages were inspected.
@@ -67,7 +67,7 @@ in [claims.json](../record/claims.json), with the dated narrative in
 mathematical sources under [mathematics/](../mathematics/README.md).
 
 **Current continuation, 19 October 2026:** the new
-[phase-cluster section](unified_sections/phase_cluster_continuation_20261019.tex)
+[phase-cluster section](unified_sections/circular_phase_trace_schemes.tex)
 records fixed-trace laws, the full four-port cancellation and second-defect sum,
 the joint quartic family for tau<1/9, and the exact positive Cauchy-source boundary.
 [Maintained mathematical sources](../mathematics/trace-bridge/phase_ensemble_continuation.md)
@@ -92,7 +92,7 @@ and records why retained historical copies must not be deleted in bulk.
 
 ## Mathematical content and submission coverage
 
-The [phase-channel/jet section](unified_sections/phase_channel_jet_20261008.tex)
+The [phase-channel/jet section](unified_sections/phase_channel_jets.tex)
 presents TRACE-053/054/056, including the optimal matrix coefficient $4/3$,
 and explicitly retains TRACE-055 as verification-pending. TRACE-055 is
 therefore not in the same status class as TRACE-053/054/056: it has no

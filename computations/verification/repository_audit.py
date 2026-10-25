@@ -203,12 +203,48 @@ def check_manuscript_surface() -> None:
             visit(dep)
     visit(master)
     orphaned = {p for p in MANUSCRIPT.rglob("*.tex") if p not in reachable}
-    historical = {MANUSCRIPT / "finite_orbit_note.tex"}
+    # Wave 4(b) scope decision (parent-recorded): the 5 phase-4-superseded
+    # sources below are retained unwired by explicit earlier decisions, not
+    # deleted. The equality check stays fail-closed: any NEW orphan, or any
+    # listed file becoming wired, still fails via the symmetric difference.
+    # Per-file justification (all verified on the current tree):
+    # - manuscript/audit_and_frontier.tex: Pass-2 audit chapter, superseded
+    #   by wired Appendix B (appendix_b_provenance_and_verification.tex),
+    #   whose header states the full audit text is "retained unwired" here.
+    # - manuscript/unified_sections/ch07_coboundary_resonance.tex: content
+    #   merged into wired unified Ch7; all 12 of its labels are present
+    #   in ch07_floquet_coboundary_resonance.tex.
+    # - manuscript/unified_sections/ch07_floquet_resonance.tex: same, all
+    #   13 labels present in unified Ch7.
+    # - manuscript/unified_sections/ch15_conclusion_seed.tex: Pass-0 seed
+    #   (audit lines 141-160), superseded by wired Ch15 proper and by
+    #   Appendix B's final subsection, which reproduces it verbatim.
+    # - manuscript/weighted_and_edgeworth.tex: merged into wired unified
+    #   Ch7 (weighted section); all 5 of its labels are present there.
+    # NOTE (not changed here): 8 claims rows still name superseded files
+    # in their manuscript fields (TRACE-001..004 -> audit_and_frontier;
+    # FLOW-022/025 -> ch07_floquet_resonance; FLOW-023/024 ->
+    # ch07_coboundary_resonance). Those pointers are a Wave-6 registry
+    # refresh item, not an audit exception: the audit governs compilation
+    # reachability, and the files exist.
+    historical = {
+        MANUSCRIPT / "finite_orbit_note.tex",
+        MANUSCRIPT / "audit_and_frontier.tex",
+        MANUSCRIPT / "unified_sections/ch07_coboundary_resonance.tex",
+        MANUSCRIPT / "unified_sections/ch07_floquet_resonance.tex",
+        MANUSCRIPT / "unified_sections/ch15_conclusion_seed.tex",
+        MANUSCRIPT / "weighted_and_edgeworth.tex",
+    }
     if orphaned != historical:
         fail("unexpected unused manuscript TeX sources: " +
              ", ".join(str(p.relative_to(ROOT)) for p in sorted(orphaned ^ historical)))
 
-    pdfs = sorted(p.name for p in MANUSCRIPT.glob("*.pdf"))
+    # Wave 4(b), same scope decision: manuscript/BGS_unified.pdf is the
+    # deliberately TRACKED built compendium PDF (refreshed via the
+    # owner browser session after every manuscript pass, with blob
+    # verification against the local build), not an accidental build
+    # artifact. Any OTHER committed manuscript-root PDF still fails.
+    pdfs = sorted(p.name for p in MANUSCRIPT.glob("*.pdf") if p.name != "BGS_unified.pdf")
     if pdfs:
         fail("generated manuscript PDFs must not be committed: " + ", ".join(pdfs))
 

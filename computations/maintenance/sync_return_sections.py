@@ -73,19 +73,51 @@ def render(name, prefix):
     return header+result
 
 
+
+# Wave 4(c) pandoc pin: byte-exact --check output is pandoc-version-sensitive
+# (the pre-regen TeX carried \\hypertarget wrappers that pandoc 3.12.1 does
+# not emit). All sync output in this repo is generated with pandoc 3.12.1;
+# CI must install that exact version (see the Wave 4 report for the workflow
+# pin). Any other version fails loudly here instead of producing silent drift.
+PANDOC_VERSION = 'pandoc 3.12.1'
+def require_pandoc():
+    try:
+        out = subprocess.run(['pandoc', '--version'], capture_output=True, text=True, check=True).stdout
+    except FileNotFoundError:
+        raise RuntimeError('pandoc not found on PATH; sync requires pandoc 3.12.1')
+    first = out.splitlines()[0] if out.splitlines() else ''
+    if first != PANDOC_VERSION:
+        raise RuntimeError('sync requires %s, found %r; byte-exact output is pandoc-version-sensitive' % (PANDOC_VERSION, first))
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check',action='store_true')
     args=parser.parse_args()
-    stale=[]
+    require_pandoc()
+    # Wave 4(c) correction (parent decision): ALL six return-law chapters are
+    # hand-edited since Pass 1 (amsthm conversions); regen from .md would
+    # silently destroy those edits (verified: regen drops every amsthm
+    # environment to 0). TeX is the source of truth for these files; sync
+    # neither checks nor writes them. A future non-hand-edited chapter still
+    # goes through the byte-exact path below. Write mode refuses up front
+    # (before any write) so a regen run can never partially overwrite.
+    HAND_EDITED_PREFIXES={'gas','position','periodic','phase','general','obstruction'}
+    if not args.check and any(prefix in HAND_EDITED_PREFIXES for _,prefix in SOURCES):
+        raise SystemExit('refusing to overwrite hand-edited chapters (Pass 1 amsthm conversions); TeX is source of truth')
+    stale=[];skipped=[]
     for name,prefix in SOURCES:
         target=ROOT/'manuscript/unified_sections'/('return_'+prefix+'.tex')
+        if prefix in HAND_EDITED_PREFIXES:
+            if args.check:skipped.append(str(target.relative_to(ROOT)))
+            continue
         content=render(name,prefix)
         if args.check:
             if not target.exists() or target.read_text()!=content:stale.append(str(target.relative_to(ROOT)))
         else:target.write_text(content)
     if stale:raise SystemExit('Stale generated chapters: '+', '.join(stale))
-    print('PASS return-law source synchronization' if args.check else f'Updated {len(SOURCES)} return-law chapters')
+    if skipped:print('SKIP hand-edited chapters (TeX is source of truth): '+', '.join(skipped))
+    elif args.check:print('PASS return-law source synchronization')
+    else:print(f'Updated {len(SOURCES)} return-law chapters')
 
 
 if __name__=='__main__':

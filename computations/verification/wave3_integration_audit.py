@@ -3,6 +3,7 @@
 from pathlib import Path
 import hashlib,json,re
 from wave2_checked_replay import require,safe_path,strict_json
+from wave2_integration_audit import check_prior_claims
 from wave3_checked_replay import source_bytes
 ROOT=Path(__file__).resolve().parents[2]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -21,11 +22,31 @@ def run(root=ROOT):
     proof={'right':rr/'authorized_exports/right_overlap_and_unmasked_insertions.md','core':cv/'author_snapshot/conditional_convex_pinch_resummation.md','annealed':cv/'author_snapshot/annealed_compact_pinch_stability.md'}
     for name,p in proof.items():require(sha(p)==m['accepted_proof_hashes'][name],'accepted proof changed '+name)
     prior=strict_json((root/m['v1_claims_artifact']).read_bytes())['claims'];current={c['id']:c for c in strict_json((root/'record/claims.json').read_bytes())['claims']}
+    # Wave 4(a) amendment channel. The v1 prior rows are byte-identical to
+    # the wave2 sealed snapshot on all 96 overlapping IDs (verified), so the
+    # governed wave2 epoch channel covers them with no new table: applying
+    # check_prior_claims reuses its set guard (amendment IDs == approved 93),
+    # its per-row SHA binding, and its disposition/review requirements.
+    # The 5 wave2-promoted rows are NOT in that channel (they are new rows,
+    # not sealed old rows); for them only path-field deltas are admitted,
+    # every new path must resolve to an existing file, and their content is
+    # independently pinned by the wave2 audit's phrase/card checks. Any
+    # state, title, ledger, evidence, or boundary delta still fails.
+    _epoch_for_wave3=strict_json((root/'record/claim_integration_epochs.json').read_bytes())
+    _promoted={'BGS-TRACE-024','BGS-FM-031','BGS-TRACE-025','BGS-TRACE-026','BGS-TRACE-027'}
+    check_prior_claims([c for c in prior if c['id'] not in _promoted],current,_epoch_for_wave3)
     for c in prior:
+        if c['id'] not in _promoted:continue
         v=dict(current[c['id']]);old=dict(c)
         if c['id']=='BGS-TRACE-024':
             v.pop('follow_on_result',None);v.pop('remaining_obligation',None);old.pop('remaining_obligation',None)
-        require(v==old,'earlier theorem contract changed: '+c['id'])
+        _delta={k for k in set(v)|set(old) if v.get(k)!=old.get(k)}
+        require(_delta<={'source','manuscript','proof_dependencies'},'promoted-row non-path contract change: '+c['id'])
+        for _k in ('source',):
+            if _k in _delta:require(safe_path(root,v[_k]).is_file(),'promoted-row source path missing: '+c['id'])
+        for _k in ('manuscript','proof_dependencies'):
+            if _k in _delta:
+                for _rel in v[_k]:require(safe_path(root,_rel).is_file(),'promoted-row path missing: '+c['id']+' '+_rel)
     # The Wave3 promoted delta is immutable. Later claims belong to an
     # explicitly recorded follow-on epoch, never to the original Wave3 review.
     wave3_ids={'BGS-TRACE-028','BGS-TRACE-029'}

@@ -15,6 +15,22 @@ ROOT=Path(__file__).resolve().parents[2]
 SOURCE=ROOT/'mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md'
 TARGET=ROOT/'manuscript/unified_sections/finite_orbit_resonance.tex'
 
+
+# Wave 4(c) pandoc pin: byte-exact --check output is pandoc-version-sensitive
+# (the pre-regen TeX carried \\hypertarget wrappers that pandoc 3.12.1 does
+# not emit). All sync output in this repo is generated with pandoc 3.12.1;
+# CI must install that exact version (see the Wave 4 report for the workflow
+# pin). Any other version fails loudly here instead of producing silent drift.
+PANDOC_VERSION = 'pandoc 3.12.1'
+def require_pandoc():
+    try:
+        out = subprocess.run(['pandoc', '--version'], capture_output=True, text=True, check=True).stdout
+    except FileNotFoundError:
+        raise RuntimeError('pandoc not found on PATH; sync requires pandoc 3.12.1')
+    first = out.splitlines()[0] if out.splitlines() else ''
+    if first != PANDOC_VERSION:
+        raise RuntimeError('sync requires %s, found %r; byte-exact output is pandoc-version-sensitive' % (PANDOC_VERSION, first))
+
 def render() -> str:
     source=SOURCE.read_text()
     # Publication formatting only; mathematical display content is unchanged.
@@ -37,6 +53,23 @@ def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--check',action='store_true')
     args=ap.parse_args()
+    # Wave 4(c) correction (parent decision): TARGET hand-edited since Pass 1
+    # (3 amsthm environments); regen from .md would silently destroy them.
+    # TeX is the source of truth; sync neither checks nor writes it.
+    # CONFLICT NOTED: the repo AGENTS.md September rule names the Markdown
+    # proof canonical for this section with --check. That rule predates the
+    # user-approved Pass-1 manuscript edition, which deliberately converted
+    # this section's claims to amsthm (reverting would shift global theorem
+    # numbering); the Pass-1 decision therefore supersedes the September
+    # rule for this file. The AGENTS.md text itself is seal-pinned and is
+    # NOT edited here; its update is queued for the phase-7 seal-gate
+    # re-baseline (see DECISIONS_LOG 2026-10-25).
+    if True:  # hand-edited target guard (TARGET only; see comment above)
+        if args.check:
+            print('SKIP finite-orbit source synchronization: TARGET hand-edited since Pass 1; TeX is source of truth')
+            return
+        raise SystemExit('refusing to overwrite hand-edited TARGET (Pass 1 amsthm conversions); TeX is source of truth')
+    require_pandoc()
     output=render()
     if args.check:
         if not TARGET.exists() or TARGET.read_text()!=output:
