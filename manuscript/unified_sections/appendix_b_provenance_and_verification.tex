@@ -1,10 +1,166 @@
-% Appendix B draft (Pass 0 skeleton; compressed summary is Pass 2/3 work).
-% Full audit text is preserved in the record-side staging note (see EXEC_REPORT).
+% Appendix B (Pass 2): compressed summary of audit_and_frontier.tex lines 8--140.
+% Compression rule: connective prose condensed; every number, named fact, and
+% qualification below is taken verbatim in substance from the audit chapter.
+% Full audit text is preserved in record/audit_and_frontier_full_text.md and
+% retained unwired in manuscript/audit_and_frontier.tex. The final subsection
+% reproduces audit lines 141--160 verbatim (see ch15_conclusion_seed.tex).
 \section{Verification, provenance, and the remaining positive problem}
+\label{sec:verification}
+The mathematical manuscript, its exact certificates, finite matrix checks,
+software integration and external literature support are distinct layers.
+Agreement of two programs checks implementations of a finite assertion; it
+does not prove an asymptotic statement outside its certified range.
+
 \subsection{Repeated checks in this consolidation}
+The nondegeneracy package was reconstructed from the delivered archive and
+its complete 14-command verification rerun. It rebuilt the C++ interpreter,
+regenerated the radius-one, radius-three and radius-eight orbit equations,
+replayed the proofs independently, and recomputed the quantitative margins,
+Hessian identities and finite quantum variance controls. The radius-eight
+proof contains 5704 steps for 1475 orbit equations in 144 complex coefficients,
+i.e.\ 288 real Fourier parameters. Source fingerprints were checked across
+the run. The small proof language remains an ordinary exact executable
+certificate, not a Lean kernel proof.
+
+A further 36-command historical component run completed with zero failures:
+eight C++ compilations and their independent executables, finite-field
+subresultant and reflection checks, Frobenius amplification, elliptic
+spike controls, the exact interval computation of the fourth-moment constant,
+Pell Gaussian/Floquet/weighted-echo tests, robust covering inequalities,
+sharp-orbit and four-mode checks, and smooth/mixed-kick regressions.
+This is a named component suite, not an assertion that every historical
+script, every branch and every external theorem has been reverified.
+The original sources were not edited to obtain successful outputs. The same
+36 commands were then replayed from a hash-indexed frozen input archive in
+a new isolated directory. All 36 passed again, with 362 scientific input
+files unchanged. This second execution checks portability and reproducibility;
+it does not count as 36 new mathematical assertions.
+
+The exact interval computation reconfirms
+\[
+ \begin{aligned}
+ \gamma&\geq5.614220692151198071627965241017794630770616850083857347518380,\\
+ \gamma&\leq5.614220692151198071627965241017794630770616850083857347522849.
+ \end{aligned}
+\]
+The earlier decimal beginning $5.612$ is not the value of the stated series.
+That old transcription error had already been recognized; the present run
+independently confirms the correction, rather than counting its discovery
+again. The two-species constant in the coboundary fourth moment is a different
+number and is not substituted for this one.
+
+The new return-word tests have three independent components. Exact integer
+C++ code checks the free-word cancellation on eleven anti-palindromic words
+and all thirty rational support-separation obligations. A four-site block
+model with noncommuting two-by-two matrices verifies the product gauge and
+rejects the linear-exponential substitute. Finally physical torus Weyl
+matrices constructed by the exact two-grid nodal identity test the actual
+single exponential. The latter matrices use floating-point arithmetic.
+Their large finite errors at stronger kicks are retained; no decay exponent
+is fitted or inferred from them. Classical trajectory comparisons test the
+composition order and sign, but do not replace the exact support/flow proof.
+
+The signed-trace arithmetic was separately checked for a family of positive
+and negative integer traces and prime periods, together with direct small
+matrix spectra on both uniform parity sectors. A deliberately excluded
+ramified period is retained as a negative control: $t=-3,K=5$ gives $N=5$
+and $\gcd(N,|t|+2)=5$, violating invertibility of $A-I$. An early test
+fixture incorrectly included this case among admissible spectra; the
+hypothesis check now rejects it. The theorem was not weakened to make the
+fixture pass.
+
 \subsection{Proof-review findings and conservative corrections}
+Several apparent advances in the historical messages were duplicate versions
+of already present lemmas. In particular the regular-gradient analytic
+rigidity argument and the Pell-only sharp finite-span extremum are credited
+to their first preserved project statements. Their generalizations and new
+consequences are separately identified. Competing normalizations of the
+classical kick differ by $2\pi$; this manuscript records the conversion
+rather than using the same parameter symbol with incompatible meanings.
+
+The new noncommuting construction does not invalidate the proved
+nondegeneracy theorems. Its generators have infinite Fourier support,
+mixed Fourier signs and open critical sets. It lies outside the radius-eight
+certificate, the one-sign criterion, the regular-gradient analytic class,
+and the nonzero-Hessian sufficient condition. It does settle a stronger
+exceptional mechanism: $\{g,\mathcal Cg\}\ne0$ can coexist with
+$\Gamma(g)=0$ and a nonlinear all-orders product gauge. The invalid
+implication from a nonzero bracket to a positive orbit variance is never
+used in the consolidated theorem chain.
+
+Our proof review included domains, parity restrictions, Weyl sign lifts,
+normalizations of the trace and form factor, finite-to-infinite limits,
+exact versus approximate conjugacy, and finite-certificate soundness.
+External-source-dependent arithmetic statements remain marked by their
+named inputs. This is not a claim of complete independent referee acceptance
+of every proof in the historical corpus. The accompanying audit records
+precisely which statements were rederived, which were checked by finite
+regression, and which rely on preserved external inputs.
+
 \subsection{Literature boundary}
+Cohen--Conze's classical cohomological variance statements require their
+regularity and action hypotheses; their classical CLT is not used in place
+of a quantum proof. Fejer--Riesz supplies a spectral factor only after
+positivity has been established. Prosen--Znidaric's residual/fidelity
+mechanism is a direct precedent, not a theorem about the particular
+fixed-strength eigenphase clusters constructed here. Keating--Mezzadri's
+nonlinear arithmetic pseudo-symmetries prevent equating mere nonlinearity
+with removal of arithmetic structure. General matrix-cocycle Livsic theory
+is background; the return-word factorization in this paper is proved
+explicitly and does not import a Livsic theorem with unchecked hypotheses.
+
+The current source pass read the scalar factorization statement and its
+root-pair proof, the residual commutator formulas, and the classical
+orbit/coboundary criterion in the primary texts. The bidegree-$(1,1)$ subgroup-curve input was checked directly against
+Vyugin--Makarychev, Theorem~2, including the condition $\deg P(x,0)\geq1$
+and the subgroup-size range. Some other older finite-field
+sources could not be reacquired in full; their previously recorded input
+statements and conditional deductions are preserved, not newly certified.
+A title-only retrieval in the old record returned an unrelated paper and
+has been excluded. Targeted searches failing to find our exact construction
+do not establish its originality. No priority conclusion rests on a missing
+search result.
+
 \subsection{Consolidation and reproducibility contract}
+The source map records the archive and SHA-256 of every selected input.
+The older main arithmetic article, the distinct row-support refinements,
+the compressed-observable branch, Pell recurrence and smooth extensions,
+locality/robustness, sharpness/rigidity, and the full nondegeneracy package
+are represented in one document. Repeated abstracts, duplicated conclusions
+and obsolete numerical assertions are not repeated as independent results.
+The selected proof sources are preserved alongside the typeset sections;
+local equation tags are prefixed by their source unit to avoid duplicate
+cross-references. Machine-readable records contain commands, return codes,
+source and log hashes, timeouts and negative controls.
+
+The PDF was built from the delivered TeX sources; syntax and cross-reference
+validation and page-image review are separate from mathematical correctness.
+The September 8 revision successfully compiled all 16 active Lean modules
+with Lean 4.33.1. Native finite certificates retain their native-evaluation
+trust boundary; the new signed-orbit kernels use ordinary proofs. No claim of a
+remote merge, successful GitHub Actions run or binary upload follows from
+a local Git commit. The delivery manifest identifies the last read remote
+base and the safe integration patch. Concurrent repository work must be
+preserved; force-updating the main branch is neither required nor authorized
+by the publication procedure.
+
 \subsection{The remaining mathematical target}
-% [Pass 2/3: compressed summary of audit_and_frontier.tex lines 8-140 goes here.]
-% [Pass 2/3: lines 141-160 (remaining mathematical target) route to Chapter 15 / Chapter 12 closing.]
+The finite-field energy/support reductions and the positive spectral
+universality problem are separate. For the latter, one needs a fixed
+nonarithmetic quantum family, a precise symmetry resolution and unfolding,
+and joint trace or equivalent local-resolvent control at the Heisenberg scale.
+A global Gaussian observable law, a finite polynomial correction, an
+open-dense nondegeneracy statement, and an exceptional all-orders conjugacy
+do not supply that result. The noncommuting return-word theorem makes this
+separation sharper: even a nonzero principal commutator can conceal an exact
+cohomological cancellation and a product gauge. The positive BGS conclusion
+is not proved in this manuscript.
+
+For the fixed deterministic family the comparison is a signed weighted
+sum. The TRACE-010 continuation excludes its simultaneous unaveraged
+all-order absolute CUE strengthening: absolute pair agreement would force
+the normalized absolute cubic discrepancy to grow at least as
+$\sqrt N/1024$ on a fixed positive Fourier box. The absolute sufficient
+implication remains correct, including averages taken before the modulus.
+The fixed-map chapter records the viable signed target and the limits
+of its reference variance and formal phase controls.

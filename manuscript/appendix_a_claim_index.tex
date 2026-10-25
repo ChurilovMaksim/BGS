@@ -1,5 +1,5 @@
 \section*{Appendix A: Claim index}
-This index is generated from \path{record/claims.json} at HEAD 0ed548d (199 claims: 173 proved, 12 verification-pending, 9 conditional, 5 open). It maps each registry claim ID to its mentions in the manuscript body, with file, line, and chapter from the Pass 0 chapter map. A claim with no manuscript mention is registry-only: its statement and evidence live in the registry and its source files, not in this compendium's body text. Claim IDs and repository paths remain in the body text in Pass 1; moving them into this index (the chapter-definition-of-done item) is Pass 2 chapter work, not done here.
+This index is generated from \path{record/claims.json} at HEAD 0ed548d (199 claims: 173 proved, 12 verification-pending, 9 conditional, 5 open). It maps each registry claim ID to its mentions in the manuscript body, with file, line, and chapter from the Pass 0 chapter map. Mentions were rescanned after the Pass-2 chapter assembly and claim conversions (base HEAD 4b3a577); body mentions remain 122 hits / 68 distinct IDs, only fixed-map-frontier line numbers moved. A claim with no manuscript mention is registry-only: its statement and evidence live in the registry and its source files, not in this compendium's body text. Claim IDs remain in the body text in Pass 2 by decision: the 13 converted fixed-map-frontier paragraphs carry pointer sentences to this index, and 3 paragraphs stay as prose (chapter index list, FLOW-020 uncertain scope, TRACE-011 diffuse assertions); moving IDs fully into this index remains an open chapter-definition-of-done decision. Repository paths likewise remain in the body text.
 Repository paths in the body text, by pattern (Pass 0 definitions, re-verified in Pass 1): \path{.../...} commands: 41; \texttt{.../...} commands: 24; bare repo-rooted paths (\path{mathematics/}, \path{computations/}, \path{record/}, \path{literature/}, \path{formalization/}, \path{evidence/} outside \path{}/\texttt{} spans): 103; total pattern hits 168. Family codes (\texttt{(XX.N)} pattern, broad definition): 240 hits across families ND, RW, CB, FN, LC, PL, FA, FO, MQ, HF, GC, SV, UF, SF, PB, TW.
 \begin{center}
 \small
@@ -10,7 +10,7 @@ Claim ID & State & Manuscript mentions (file:line, chapter) \\
 Claim ID & State & Manuscript mentions (file:line, chapter) \\
 \hline
 \endhead
-\texttt{BGS-BGS-001} & open & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:666 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:805 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1544 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1740 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1779 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1811 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1882 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1967 (Ch.~12); \path{unified_sections/physical_kick_decay.tex}:97 (Ch.~?) \\
+\texttt{BGS-BGS-001} & open & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:689 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:828 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1616 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1829 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1868 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1900 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1971 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:2064 (Ch.~12); \path{unified_sections/physical_kick_decay.tex}:97 (Ch.~?) \\
 \texttt{BGS-CAYLEY-001} & proved & --- (registry only) \\
 \texttt{BGS-CAYLEY-002} & proved & --- (registry only) \\
 \texttt{BGS-CAYLEY-003} & verification-pending & --- (registry only) \\
@@ -22,7 +22,7 @@ Claim ID & State & Manuscript mentions (file:line, chapter) \\
 \texttt{BGS-FM-004} & conditional & --- (registry only) \\
 \texttt{BGS-FM-005} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12) \\
 \texttt{BGS-FM-006} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12) \\
-\texttt{BGS-FM-007} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:169 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:189 (Ch.~12) \\
+\texttt{BGS-FM-007} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:189 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:212 (Ch.~12) \\
 \texttt{BGS-FM-008} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12) \\
 \texttt{BGS-FM-009} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12) \\
 \texttt{BGS-FM-010} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12) \\
@@ -36,54 +36,54 @@ Claim ID & State & Manuscript mentions (file:line, chapter) \\
 \texttt{BGS-RES-004} & proved & \path{unified_sections/finite_orbit_resonance.tex}:5 (Ch.~10) \\
 \texttt{BGS-RES-005} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12) \\
 \texttt{BGS-RES-006} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:66 (Ch.~12) \\
-\texttt{BGS-RES-007} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:168 (Ch.~12) \\
+\texttt{BGS-RES-007} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:184 (Ch.~12) \\
 \texttt{BGS-RET-001} & proved & --- (registry only) \\
 \texttt{BGS-RET-002} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-001} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-002} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-003} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-004} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-005} & open & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:228 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:252 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:261 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:666 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:805 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1740 (Ch.~12); \path{unified_sections/physical_kick_decay.tex}:97 (Ch.~?) \\
+\texttt{BGS-TRACE-005} & open & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:251 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:275 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:284 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:689 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:828 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1829 (Ch.~12); \path{unified_sections/physical_kick_decay.tex}:97 (Ch.~?) \\
 \texttt{BGS-TRACE-006} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-007} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:122 (Ch.~12) \\
-\texttt{BGS-TRACE-008} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:229 (Ch.~12) \\
-\texttt{BGS-CUE-001} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:498 (Ch.~12) \\
-\texttt{BGS-FLOW-001} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:517 (Ch.~12) \\
-\texttt{BGS-FLOW-002} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:523 (Ch.~12) \\
-\texttt{BGS-FM-012} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:535 (Ch.~12) \\
-\texttt{BGS-FLOW-003} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:560 (Ch.~12) \\
-\texttt{BGS-FLOW-004} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:590 (Ch.~12) \\
-\texttt{BGS-FLOW-005} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:609 (Ch.~12) \\
-\texttt{BGS-FLOW-006} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:631 (Ch.~12) \\
-\texttt{BGS-FLOW-007} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:649 (Ch.~12) \\
-\texttt{BGS-FM-013} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:658 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1974 (Ch.~12) \\
-\texttt{BGS-FLOW-008} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:674 (Ch.~12) \\
-\texttt{BGS-FLOW-009} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:682 (Ch.~12) \\
-\texttt{BGS-FLOW-010} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:715 (Ch.~12) \\
-\texttt{BGS-FLOW-011} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:746 (Ch.~12) \\
-\texttt{BGS-FM-014} & proved & \path{unified_sections/fixed_map_frontier.tex}:1685 (Ch.~12) \\
-\texttt{BGS-FM-015} & proved & \path{unified_sections/fixed_map_frontier.tex}:1690 (Ch.~12) \\
-\texttt{BGS-FUP-001} & proved & \path{unified_sections/fixed_map_frontier.tex}:1706 (Ch.~12) \\
-\texttt{BGS-TRACE-009} & proved & \path{unified_sections/fixed_map_frontier.tex}:1745 (Ch.~12) \\
+\texttt{BGS-TRACE-007} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:130 (Ch.~12) \\
+\texttt{BGS-TRACE-008} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:252 (Ch.~12) \\
+\texttt{BGS-CUE-001} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:521 (Ch.~12) \\
+\texttt{BGS-FLOW-001} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:540 (Ch.~12) \\
+\texttt{BGS-FLOW-002} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:546 (Ch.~12) \\
+\texttt{BGS-FM-012} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:558 (Ch.~12) \\
+\texttt{BGS-FLOW-003} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:583 (Ch.~12) \\
+\texttt{BGS-FLOW-004} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:613 (Ch.~12) \\
+\texttt{BGS-FLOW-005} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:632 (Ch.~12) \\
+\texttt{BGS-FLOW-006} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:654 (Ch.~12) \\
+\texttt{BGS-FLOW-007} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:672 (Ch.~12) \\
+\texttt{BGS-FM-013} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:681 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:2071 (Ch.~12) \\
+\texttt{BGS-FLOW-008} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:697 (Ch.~12) \\
+\texttt{BGS-FLOW-009} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:705 (Ch.~12) \\
+\texttt{BGS-FLOW-010} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:738 (Ch.~12) \\
+\texttt{BGS-FLOW-011} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:769 (Ch.~12) \\
+\texttt{BGS-FM-014} & proved & \path{unified_sections/fixed_map_frontier.tex}:1774 (Ch.~12) \\
+\texttt{BGS-FM-015} & proved & \path{unified_sections/fixed_map_frontier.tex}:1779 (Ch.~12) \\
+\texttt{BGS-FUP-001} & proved & \path{unified_sections/fixed_map_frontier.tex}:1795 (Ch.~12) \\
+\texttt{BGS-TRACE-009} & proved & \path{unified_sections/fixed_map_frontier.tex}:1834 (Ch.~12) \\
 \texttt{BGS-TRACE-010} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12) \\
-\texttt{BGS-TRACE-011} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1816 (Ch.~12) \\
-\texttt{BGS-TRACE-012} & proved & \path{unified_sections/fixed_map_frontier.tex}:1888 (Ch.~12) \\
-\texttt{BGS-FM-016} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1974 (Ch.~12) \\
-\texttt{BGS-TRACE-013} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:2032 (Ch.~12) \\
-\texttt{BGS-FLOW-012} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:810 (Ch.~12) \\
-\texttt{BGS-FLOW-013} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:836 (Ch.~12) \\
-\texttt{BGS-FM-017} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:860 (Ch.~12) \\
-\texttt{BGS-FLOW-014} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:909 (Ch.~12) \\
-\texttt{BGS-FLOW-015} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1567 (Ch.~12) \\
-\texttt{BGS-FLOW-016} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:986 (Ch.~12) \\
-\texttt{BGS-FLOW-017} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:986 (Ch.~12) \\
-\texttt{BGS-FLOW-018} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1104 (Ch.~12) \\
-\texttt{BGS-FLOW-019} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1104 (Ch.~12) \\
-\texttt{BGS-FLOW-020} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1194 (Ch.~12) \\
-\texttt{BGS-FLOW-021} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1279 (Ch.~12) \\
-\texttt{BGS-FM-018} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1358 (Ch.~12) \\
-\texttt{BGS-FM-019} & proved & \path{unified_sections/fixed_map_frontier.tex}:6 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1450 (Ch.~12) \\
-\texttt{BGS-FM-020} & proved & \path{unified_sections/fixed_map_frontier.tex}:1549 (Ch.~12) \\
+\texttt{BGS-TRACE-011} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1905 (Ch.~12) \\
+\texttt{BGS-TRACE-012} & proved & \path{unified_sections/fixed_map_frontier.tex}:1977 (Ch.~12) \\
+\texttt{BGS-FM-016} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:2071 (Ch.~12) \\
+\texttt{BGS-TRACE-013} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:2144 (Ch.~12) \\
+\texttt{BGS-FLOW-012} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:833 (Ch.~12) \\
+\texttt{BGS-FLOW-013} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:859 (Ch.~12) \\
+\texttt{BGS-FM-017} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:883 (Ch.~12) \\
+\texttt{BGS-FLOW-014} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:932 (Ch.~12) \\
+\texttt{BGS-FLOW-015} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1649 (Ch.~12) \\
+\texttt{BGS-FLOW-016} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1009 (Ch.~12) \\
+\texttt{BGS-FLOW-017} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1009 (Ch.~12) \\
+\texttt{BGS-FLOW-018} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1143 (Ch.~12) \\
+\texttt{BGS-FLOW-019} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1143 (Ch.~12) \\
+\texttt{BGS-FLOW-020} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1247 (Ch.~12) \\
+\texttt{BGS-FLOW-021} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1332 (Ch.~12) \\
+\texttt{BGS-FM-018} & proved & \path{unified_sections/fixed_map_frontier.tex}:8 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1418 (Ch.~12) \\
+\texttt{BGS-FM-019} & proved & \path{unified_sections/fixed_map_frontier.tex}:6 (Ch.~12); \path{unified_sections/fixed_map_frontier.tex}:1516 (Ch.~12) \\
+\texttt{BGS-FM-020} & proved & \path{unified_sections/fixed_map_frontier.tex}:1621 (Ch.~12) \\
 \texttt{BGS-TRACE-014} & proved & --- (registry only) \\
 \texttt{BGS-FM-021} & proved & \path{unified_sections/four_block_unmarking.tex}:6 (Ch.~12); \path{unified_sections/three_block_unmarking.tex}:54 (Ch.~12) \\
 \texttt{BGS-FM-022} & proved & --- (registry only) \\

@@ -1,5 +1,39 @@
 # BGS consolidated research manuscript
 
+## Phase-4 Pass 2: chapter assembly, 25 October 2026
+
+The manuscript now reads as chapters. Part dividers mark chapter
+boundaries in reading order (31 dividers; 14 with table-of-contents
+entries). Input order is unchanged, so the table of contents follows
+reading order even where it interleaves chapters: Chapter 13 (shells,
+tomography) precedes Chapter 12 (fixed-map frontier) in the contents
+because the shell files precede the fixed-map files in the input
+sequence. The current build has **339 pages**, 0 errors, 0 undefined
+references or citations, 0 overfull boxes, and 13 underfull boxes
+(the same underfull count as the Pass-1 baseline).
+
+Reading order: front matter (title, notation — the notation section
+now has a table-of-contents entry), Chapters 2–14, Appendix A (claim
+index, mentions rescanned after this pass: 122 hits / 68 distinct IDs),
+Appendix B (provenance and verification), the supplement, and the
+references. Chapter 7 (Floquet, coboundary and smooth resonance fields)
+is now a single file,
+`unified_sections/ch07_floquet_coboundary_resonance.tex`, holding the
+Floquet, weighted-echoes, and coboundary material in the original input
+order; the three previous files are retained in the tree but no longer
+wired into the build. Appendix B now carries the provenance and
+verification record in place of the compiled audit chapter:
+`audit_and_frontier.tex` and the Chapter 15 conclusion seed
+(`unified_sections/ch15_conclusion_seed.tex`) are retained in the tree
+unwired, and `consolidation_addendum.tex` stays compiled, since its
+record exists nowhere else. The 16 registry-labelled claim paragraphs
+of the fixed-map frontier deferred in Pass 1 are resolved: 13 became
+16 numbered theorems (70.1–70.16) with pointer sentences to Appendix A,
+and 3 stay as prose — the chapter index list, BGS-FLOW-020 (scope
+genuinely uncertain), and BGS-TRACE-011 (assertions diffuse across its
+subsection with proof prose interleaved). No content was cut anywhere;
+the disclosure footnote in the root file is unchanged.
+
 ## Trace closure edition, 22 October 2026
 
 The [new section](unified_sections/spectral_trace_closure_20261022.tex)

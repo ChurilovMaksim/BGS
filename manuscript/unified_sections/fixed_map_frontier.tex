@@ -63,7 +63,11 @@ this pair target.
 \hypertarget{an-exact-adjoint-resolvent-form-of-the-pair-target}{%
 \subsection{An exact adjoint-resolvent form of the pair target}\label{an-exact-adjoint-resolvent-form-of-the-pair-target}}
 
-\textbf{Claim ID:} \texttt{BGS-RES-006}. This identity is finite-dimensional and holds
+\textbf{Claim ID:} \texttt{BGS-RES-006}. See Appendix~A.
+
+\begin{theorem}[Exact adjoint-resolvent form of the pair target]\label{pass2:frontier-res-006}
+
+This identity is finite-dimensional and holds
 for every unitary \(N\times N\) matrix, not just the frozen family. On the
 Hilbert--Schmidt space \(M_N(\mathbb C)\) define
 
@@ -73,10 +77,7 @@ Hilbert--Schmidt space \(M_N(\mathbb C)\) define
 T_N(s)=\frac1N\operatorname{Tr}_{HS}(\mathcal D_N+s^2I)^{-1}.
 \]
 
-The map \(\mathcal U_N\) is unitary on Hilbert--Schmidt space, so
-\(\mathcal D_N\ge0\). If \(e^{i\theta_j}\) are the eigenvalues of \(U_N\), the
-matrix units in its eigenbasis diagonalize \(\mathcal D_N\), with eigenvalues
-\(N^2\sin^2((\theta_j-\theta_k)/2)\). Summing the Poisson series with
+Summing the Poisson series with
 \(q=e^{-2s/N}\) gives the exact identity
 
 \[
@@ -89,6 +90,13 @@ For every unitary spectrum and every \(s>0\) one also has the uniform comparison
 0\le \frac{1+2L_N(s)}{s}-T_N(s)
 \le \frac{2}{3N}\cosh(2s/N).                         \tag{R1}
 \]
+
+\end{theorem}
+
+The map \(\mathcal U_N\) is unitary on Hilbert--Schmidt space, so
+\(\mathcal D_N\ge0\). If \(e^{i\theta_j}\) are the eigenvalues of \(U_N\), the
+matrix units in its eigenbasis diagonalize \(\mathcal D_N\), with eigenvalues
+\(N^2\sin^2((\theta_j-\theta_k)/2)\).
 
 To see the sign and the error, set \(a=s/N\) and
 \(y_{jk}=N^2\sin^2((\theta_j-\theta_k)/2)\). The ratio of the \((j,k)\) summand
@@ -119,13 +127,21 @@ exponential; they do not estimate the ordered product at \(m\asymp N\).
 \hypertarget{a-universal-finite-dimensional-abel-floor}{%
 \subsection{A universal finite-dimensional Abel floor}\label{a-universal-finite-dimensional-abel-floor}}
 
-\textbf{Claim ID:} \texttt{BGS-TRACE-007}. Every \(N\)-point unitary spectrum satisfies
+\textbf{Claim ID:} \texttt{BGS-TRACE-007}. See Appendix~A.
+
+\begin{theorem}[Universal finite-dimensional Abel floor]\label{pass2:frontier-trace-007}
+
+Every \(N\)-point unitary spectrum satisfies
 
 \[
 L_N(s)\ge \frac1{e^{2s}-1},\qquad s>0,                 \tag{R2}
 \]
 
-and the bound is attained by a rotated regular \(N\)-gon. Here is the precise
+and the bound is attained by a rotated regular \(N\)-gon.
+
+\end{theorem}
+
+Here is the precise
 energy reduction. For \(N=1\) the bound is equality directly. For \(N\ge2\), put
 \(z_j=e^{i\theta_j}\) and
 
@@ -165,7 +181,11 @@ model's limit or give a uniform excess over the clock value.
 \hypertarget{smooth-resolvent-transfer-for-the-seven-cut-full-propagator}{%
 \subsection{\texorpdfstring{Smooth resolvent transfer for the seven-cut \emph{full} propagator}{Smooth resolvent transfer for the seven-cut full propagator}}\label{smooth-resolvent-transfer-for-the-seven-cut-full-propagator}}
 
-\textbf{Claim ID:} \texttt{BGS-RES-007}. Let \(U_N\) and \(V_N\) be the original and
+\textbf{Claim ID:} \texttt{BGS-RES-007}. See Appendix~A.
+
+\begin{theorem}[Smooth resolvent transfer for the seven-cut full propagator]\label{pass2:frontier-res-007}
+
+Let \(U_N\) and \(V_N\) be the original and
 seven-cut \textbf{full} propagators of \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/frozen_seven_cut_reduction.md}{\texttt{BGS-FM-007}}.
 For an arbitrary unitary \(W\) write \(L_{W,N}\) and \(T_{W,N}\) for the pair
 Abel and adjoint-resolvent functions above. For every compact
@@ -183,6 +203,9 @@ Abel and adjoint-resolvent functions above. For every compact
 \]
 
 Thus \(T_{U,N}-T_{V,N}\to0\) in \(C^\infty_{\rm loc}(0,\infty)\).
+
+\end{theorem}
+
 This is equivalence of any possible scalar-resolvent limits, not
 convergence of either resolvent to the CUE value.
 
@@ -983,7 +1006,11 @@ No external referee report, priority or prize-level significance is asserted.
 \hypertarget{all-local-moments-and-the-original-chain-signed-criterion}{%
 \subsection{All local moments and the original-chain signed criterion}\label{all-local-moments-and-the-original-chain-signed-criterion}}
 
-\textbf{Claim IDs:} \texttt{BGS-FLOW-016}, \texttt{BGS-FLOW-017}. The
+\textbf{Claim IDs:} \texttt{BGS-FLOW-016}, \texttt{BGS-FLOW-017}. See Appendix~A.
+
+\begin{theorem}[Local moment transport and projected diffusion comparison]\label{pass2:frontier-flow-016}
+
+The
 \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/local_moment_transport.md}{transport proof} matches two period-N fields
 with averaged unfolded displacement cost
 \(c_{p,N}=N^{-1}\sum_j|d_j|^p\). Let
@@ -1001,10 +1028,7 @@ Hölder and origin integration bound all target count moments \(1<s<p+1\).
 If \(\mathbb Ec_{p,N}\to0\), positive Laplace tests transfer the weak law;
 the moment bound supplies uniform integrability for every factorial order
 \(k<p+1\). All fixed vanishing transport moments therefore transfer every
-fixed factorial order. Collapsing K clock points at one location has cost
-\(N^{-1}\sum_{j<K}j^p\) and kth factorial mean \((K)_k/N\). At \(N\sim K^k\)
-this refutes extending a single pth cost to \(k>p+1\). No critical-endpoint
-or growing-order theorem is asserted.
+fixed factorial order.
 
 Along a unitary logarithm path, Jensen for eigenangle speeds and
 Schatten triangle give the matching inequality
@@ -1027,10 +1051,21 @@ and the exponential trace exit tail yield
 
 This holds when \(t\to0\), \(t^2\log N\to0\), including the actual
 \(t=8g\) with \(g=4\log J/J\), \(J=\lfloor c\log N\rfloor\).
+
+Thus the projected diffusion has all fixed local factorial limits.
+
+\end{theorem}
+
+Collapsing K clock points at one location has cost
+\(N^{-1}\sum_{j<K}j^p\) and kth factorial mean \((K)_k/N\). At \(N\sim K^k\)
+this refutes extending a single pth cost to \(k>p+1\). No critical-endpoint
+or growing-order theorem is asserted.
+
 It proves no largest-displacement estimate at this time. FLOW-014's
 gap-independent kernel bounds supply reference count moments, including
 repeated starts by fixed-N continuity of bounded smooth factorial majorants.
-Thus the projected diffusion has all fixed local factorial limits.
+
+\begin{theorem}[All fixed factorial orders and one-chain signed CUE comparison]\label{pass2:frontier-flow-017}
 
 The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/coboundary_all_order_limit.md}{original-chain proof} strengthens
 localization to \(\mathbb P(\sigma\le n)\le C_{L,K}(N^{-L}+N^4\varepsilon)\)
@@ -1050,8 +1085,6 @@ U_{j+1}=\exp[i\varepsilon_N(G_j-U_jG_jU_j^*)]U_j,
 with fresh normalized GUE. At the actual logarithmic time one may take
 \(\varepsilon_N=N^{-\log\log N}\) and
 \(n_N=\lfloor2t_NN^{4\log\log N}\rfloor\).
-This schedule is superpolynomial; the earlier polynomial bounded-Laplace
-result remains valid with its original scope.
 
 Spatial ergodicity of Sine\(_2\), from Soshnikov's prior Theorem 7, turns
 the barycenter limit and moment bounds into one-chain origin-average
@@ -1091,6 +1124,12 @@ discrete defect is
 The deterministic complete signed CUE target for each fixed test is now
 equivalent to \(\mathfrak D^{\rm chain}_{N,\psi}\to0\), or to
 \(\mathbb E|F_{N,\psi}(U_{n_N})-F_{N,\psi}(U_N)|^2\to0\).
+
+\end{theorem}
+
+This schedule is superpolynomial; the earlier polynomial bounded-Laplace
+result remains valid with its original scope.
+
 Its actual vanishing remains open. Independent internal review checked the
 new implications; inherited inputs keep their stated evidence levels.
 The \href{https://github.com/ChurilovMaksim/BGS/blob/main/archive/evidence/executions/20261005/all-order/manifest.json}{finite packet}
@@ -1101,12 +1140,16 @@ an all-order polynomial schedule, or full BGS.
 \hypertarget{critical-noise-compensation-and-the-entire-fixed-degree-projection}{%
 \subsection{Critical-noise compensation and the entire fixed-degree projection}\label{critical-noise-compensation-and-the-entire-fixed-degree-projection}}
 
-\textbf{Claim IDs:} \texttt{BGS-FLOW-018}, \texttt{BGS-FLOW-019}. These results sharpen the
+\textbf{Claim IDs:} \texttt{BGS-FLOW-018}, \texttt{BGS-FLOW-019}. See Appendix~A.
+
+These results sharpen the
 transfer route and retain its open deterministic complement. The
 \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/clock_structure_and_noise_scale.md}{clock proof} begins with the prior
 odd-dimensional Dyson kernel, and the
 \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/fixed_degree_heat_projection.md}{projection proof} uses stable Haar trace
 moments in exactly the range \(2Q\le N\).
+
+\begin{theorem}[Exact clock covariance and critical noise law]\label{pass2:frontier-flow-018}
 
 For the clock start and \(\tau=Nt\), the exact covariance spectral measure is
 
@@ -1139,8 +1182,7 @@ sharp: if \(\tau\to\infty\) and \(t\to0\), the rescaled difference converges
 against compact weights to \(\delta_1+\delta_{-1}-2\delta_0\).
 The positive-frequency Abel difference is strictly negative for every
 finite positive time and has leading coefficient \(e^{-2s}-1\) in this
-joint regime. Its lower floor remains TRACE-007; no monotonicity in time
-is asserted.
+joint regime.
 
 At \(Nt\to\tau\in(0,\infty)\) the critical local law is the known
 lattice-relaxation phase mixture, with all fixed factorial moments.
@@ -1157,8 +1199,17 @@ and synchronous particle-noise contractivity transfer this trichotomy to
 starts with vanishing unfolded matching moments of every fixed order.
 Clock preservation requires \(Nt\to0\), while its Sine relaxation requires
 \(Nt\to\infty\). The original uncentered chain has the critical all-order
-corollary in the stated \(t\ge1/N\) superpolynomial step regime. No such
+corollary in the stated \(t\ge1/N\) superpolynomial step regime.
+
+\end{theorem}
+
+Its lower floor remains TRACE-007; no monotonicity in time
+is asserted.
+
+No such
 clock matching is established for the actual \(U_N\).
+
+\begin{theorem}[Fixed-degree neutral projections and projected CUE rate]\label{pass2:frontier-flow-019}
 
 The actual-map estimate uses the neutral trace span \(\mathcal H_{Q,N}\)
 of positive and negative weighted degree at most a fixed \(Q\). Its Haar
@@ -1178,6 +1229,8 @@ Laplace tests. Thus, uniformly at every heat time \(t\ge0\),
 \[
 |P_t\mathsf P_{Q,N}F_N(U_N)-\mathbb E_{\rm CUE}F_N|\le C_{Q,F}N^{-1/2}.
 \]
+
+\end{theorem}
 
 Schwartz factorial tests have qualitative \(o(1)\) only. These statements
 concern the projected observable, not the full local statistic.
@@ -1276,7 +1329,11 @@ The complete deterministic target remains OPEN.
 \hypertarget{exact-heisenberg-pair-heat-compensation-and-the-actual-smoothed-band}{%
 \subsection{Exact Heisenberg pair heat compensation and the actual smoothed band}\label{exact-heisenberg-pair-heat-compensation-and-the-actual-smoothed-band}}
 
-\textbf{Claim ID:} \texttt{BGS-FLOW-021}. The
+\textbf{Claim ID:} \texttt{BGS-FLOW-021}. See Appendix~A.
+
+\begin{theorem}[Exact Heisenberg pair heat compensation]\label{pass2:frontier-flow-021}
+
+The
 \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/heisenberg_pair_heat_formula.md}{full proof} diagonalizes the particular
 stable pair vector \(Q_m=|p_m|^2-m\), \(2m\le N\), directly from
 determinant-ratio hook modes. Define
@@ -1307,9 +1364,12 @@ multiplicities retained. In particular
  \left[\frac{\sinh(m^2t/N)}{\sinh(mt/N)}\right]^2.
 \]
 
+The clock value is separately \(P_tQ_m(C_N)=-me^{-mt}\).
+
+\end{theorem}
+
 This is a Haar-\(L^2\) identity, not point evaluation. The local band
 has an exact triangular limiting heat spectral measure at time \(s/N\).
-The clock value is separately \(P_tQ_m(C_N)=-me^{-mt}\).
 
 The same determinant formula also gives a quantitative actual-start
 estimate. Suppose \(|p_j(A)|\le Nd\) through \(j\le J\) and put
@@ -1355,7 +1415,11 @@ The complete deterministic BGS target remains OPEN.
 \hypertarget{actual-weyl-coercivity-regularized-transfer-and-common-noise-invariants}{%
 \subsection{Actual Weyl coercivity, regularized transfer and common-noise invariants}\label{actual-weyl-coercivity-regularized-transfer-and-common-noise-invariants}}
 
-\textbf{Claim ID:} \texttt{BGS-FM-018}. The
+\textbf{Claim ID:} \texttt{BGS-FM-018}. See Appendix~A.
+
+\begin{theorem}[Actual Weyl coercivity]\label{pass2:frontier-fm-018}
+
+The
 \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/frozen_operator_transfer_coercivity.md}{full proof} keeps the actual
 \(U_N=e^{i\tau NA_N}M_N\), \(\tau=10^{-80}\), and its ordinary Weyl dictionary.
 Use normalized Hilbert--Schmidt norm on the traceless space,
@@ -1377,6 +1441,8 @@ such that, at \(T_N=\lfloor c\log N\rfloor\),
  \left\|\frac1{T_N}\sum_{j=0}^{T_N-1}
         \zeta^{-j}\mathcal P_N^j\Pi_{R_N}^0\right\|^2\le\frac1{16}.
 \]
+
+\end{theorem}
 
 The proof controls every linear combination in the growing band,
 using the exact sin commutator, uniform Egorov and product-Sobolev-norm
@@ -1447,7 +1513,11 @@ BGS conclusion follows from the regularized gap or finite uniqueness.
 \hypertarget{uniform-collective-diffusion-and-a-refined-common-noise-microscopic-mass}{%
 \subsection{Uniform collective diffusion and a refined common-noise microscopic mass}\label{uniform-collective-diffusion-and-a-refined-common-noise-microscopic-mass}}
 
-\textbf{Claim ID:} \texttt{BGS-FM-019}. The
+\textbf{Claim ID:} \texttt{BGS-FM-019}. See Appendix~A.
+
+\begin{theorem}[Uniform collective diffusion gap]\label{pass2:frontier-fm-019}
+
+The
 \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/collective_diffusion_gap.md}{full proof} keeps both physical copies under
 the same noise. For the collective sums of the real/imaginary parts
 of \(Z=T_N(0,1)\) and \(X=T_N(1,0)\), put
@@ -1469,6 +1539,8 @@ universal \(c_0>0\) such that, for every odd \(N\ge3\),
 \ker L_N=\operatorname{span}\{I,\mathsf S_N\},\qquad
 L_N\ge c_0Q_N.
 \]
+
+\end{theorem}
 
 This follows analytically from \(N^2\) exact total-Weyl blocks of dimension
 \(N^2\), including composite N. Translation and a sign gauge give weighted
@@ -1546,7 +1618,13 @@ remain open. The universal regulator gap does not estimate the original
 \hypertarget{original-ordered-two-pair-microscopic-mass}{%
 \subsection{Original ordered two-pair microscopic mass}\label{original-ordered-two-pair-microscopic-mass}}
 
-\textbf{Claim:} \texttt{BGS-FM-020}. The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/original_channel_gap.md}{canonical proof} keeps the original ordered common-noise law with m=1. Put
+\textbf{Claim:} \texttt{BGS-FM-020}. See Appendix~A.
+
+The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/original_channel_gap.md}{canonical proof} keeps the original ordered common-noise law with m=1.
+
+\begin{theorem}[Original ordered two-pair microscopic mass]\label{pass2:frontier-fm-020}
+
+Put
 \[
 \ell_N=1+\log N,\qquad \lambda_N=(1024\ell_N)^{-2}.
 \]
@@ -1555,7 +1633,11 @@ For every odd \(N\ge3\), \(u\ge0\) and unitary U,
 \|e^{-uA_N^{\mathrm{diff}}}e^{-uB_N^{\mathrm{diff}}}Q_N\|
 \le 1-\frac{1-e^{-2u\lambda_N}}{50}.
 \]
-The quantity \((1-e^{-2u\lambda_N})/50\) is a lower bound for the unit-circle singular gap after right multiplication by \(\operatorname{Ad}(U^{\otimes2})\), and for \(I-zC_{N,u,1}\) when \(|z|\le1\). At \(u=N^{-\alpha}\), \(0<\alpha<1\), this displayed lower bound is asymptotic to \(u/(25\cdot1024^2\ell_N^2)\) and dominates \(N^{-1}\). This is not an asymptotic formula for the actual gap.
+The quantity \((1-e^{-2u\lambda_N})/50\) is a lower bound for the unit-circle singular gap after right multiplication by \(\operatorname{Ad}(U^{\otimes2})\), and for \(I-zC_{N,u,1}\) when \(|z|\le1\).
+
+\end{theorem}
+
+At \(u=N^{-\alpha}\), \(0<\alpha<1\), this displayed lower bound is asymptotic to \(u/(25\cdot1024^2\ell_N^2)\) and dominates \(N^{-1}\). This is not an asymptotic formula for the actual gap.
 
 In every total-label block, the number of positive eigenvalues of either pair generator below \(\lambda\) is at most \(4N\sqrt\lambda(1+\log N)\). The shifted integral/half-integral lattice count treats nonzero axes separately. The explicit eigenbases \(\delta_a\otimes\mathrm{Fourier}_j\) and \(\mathrm{Fourier}_i\otimes\delta_b\) have every overlap of modulus \(1/N\). Their low-positive ranks and the existing exact kernel angle therefore give a low-spectral projection angle below \(4/5\) on Q. The two-contraction loss estimate yields the stated ordered-product bound without a Trotter approximation.
 
@@ -1564,7 +1646,11 @@ The \href{https://github.com/ChurilovMaksim/BGS/blob/main/archive/record/origina
 \hypertarget{the-exact-deterministic-noise-removal-obligation}{%
 \subsection{The exact deterministic noise-removal obligation}\label{the-exact-deterministic-noise-removal-obligation}}
 
-\textbf{Claim ID:} \texttt{BGS-FLOW-015}. The
+\textbf{Claim ID:} \texttt{BGS-FLOW-015}. See Appendix~A.
+
+\begin{theorem}[Exact deterministic noise-removal obligation]\label{pass2:frontier-flow-015}
+
+The
 \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/microscopic_noise_removal.md}{full proof} retains the unchanged \(U_N\)
 and the positive uniform-origin local Laplace test \(\Phi_{N,f}\).
 For normalized unitary Brownian motion, let
@@ -1590,6 +1676,9 @@ logarithmic trace estimate. Consequently its deterministic weak local
 Sine\(_2\) law is equivalent to \(\mathfrak D_{N,f}(U_N,t_N)\to0\)
 for every nonnegative \(f\in C_c^\infty\), at the proved logarithmic time
 \(t_N=8g_N\). The modulus stays outside the full signed integral.
+
+\end{theorem}
+
 This equivalence does not establish its vanishing or the stronger
 unbounded factorial-moment target TRACE-005.
 
@@ -1885,7 +1974,11 @@ remain open; no change to the coupling, unfolding or symmetry class is made.
 \hypertarget{folded-square-refinement-and-block-crowding}{%
 \subsection{Folded-square refinement and block crowding}\label{folded-square-refinement-and-block-crowding}}
 
-\textbf{Claim ID:} \texttt{BGS-TRACE-012}. The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/folded_quadratic_resonance_control.md}{proof}
+\textbf{Claim ID:} \texttt{BGS-TRACE-012}. See Appendix~A.
+
+\begin{theorem}[Folded-square cubic control]\label{pass2:frontier-trace-012}
+
+The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/folded_quadratic_resonance_control.md}{proof}
 sharpens the preceding sufficient density input. With the same positive
 Gaussian density and arithmetic projection, put
 \(G_d=\|P_d(\rho_N^2)\|_2^2\). For every smooth compact complex weight,
@@ -1898,7 +1991,11 @@ The modulus stays outside the full sum. The factorial counterterm budget
 from TRACE-011 is unchanged. Since \(Q_N\le e^{8b^2}\sqrt{G_d}\),
 \(E_NG_d\to0\) and \((1/d+1/N)\sqrt{G_d}\to0\) suffice for deletion.
 For actual prime orders \(d\le N+1\), \(G_d=o(d^2)\) suffices for the
-second condition. These actual-map estimates are not proved.
+second condition.
+
+\end{theorem}
+
+These actual-map estimates are not proved.
 
 The improvement comes from moving the self-adjoint projection onto
 the product of the other two filtered factors. Positivity of the
@@ -1971,9 +2068,16 @@ separates proof, finite controls and prior work.
 \hypertarget{fixed-time-bounded-traces-and-quantizer-overlap}{%
 \subsection{Fixed-time bounded traces and quantizer overlap}\label{fixed-time-bounded-traces-and-quantizer-overlap}}
 
-\textbf{Claim IDs:} \texttt{BGS-FM-013}, \texttt{BGS-FM-016}. The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/fixed_time_wavepacket_trace_bound.md}{packet proof}
+\textbf{Claim IDs:} \texttt{BGS-FM-013}, \texttt{BGS-FM-016}. See Appendix~A.
+
+\begin{theorem}[Bounded fixed-time traces]\label{pass2:frontier-fm-013}
+
+The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/fixed_time_wavepacket_trace_bound.md}{packet proof}
 retains the exact frozen odd-N family and establishes
 \(|\operatorname{Tr}U_N^j|=O_j(1)\) for every fixed nonzero integer j.
+
+\end{theorem}
+
 The method is standard finite-time coherent propagation, reconstructed
 with the exact ordinary Weyl symbol and boundary character.
 
@@ -2013,7 +2117,11 @@ improves the starting FLOW-003 covariance rate to \textbar m2\textbar=O(1/N), an
 the fixed-trace boundedness assumptions, with subsequences for convergence
 of the initial traces. It does not remove the external noise.
 
-The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/egorov_overlap_rigidity.md}{Egorov overlap lemma} states that if two
+The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/egorov_overlap_rigidity.md}{Egorov overlap lemma} states that
+
+\begin{theorem}[Egorov overlap rigidity]\label{pass2:frontier-fm-016}
+
+if two
 fixed quantized classical maps F,G coincide on area zero, then
 \[
 N^{-1}\operatorname{Tr}(K_N^*L_N)\to0,\qquad
@@ -2023,25 +2131,39 @@ If the maps differ at one point, the operator-norm liminf is at least
 sqrt(2), by localized coherent states. The four actual fixed-point
 Hessians show every fixed nonzero power remains non-affine under C1
 conjugacy. Fixed smooth conjugators therefore give the operator separation;
-fixed analytic ones also give the HS separation. N-dependent spectral
+fixed analytic ones also give the HS separation.
+
+\end{theorem}
+
+N-dependent spectral
 basis changes are outside these assertions.
 
 \hypertarget{coherent-words-despite-auxiliary-expansion}{%
 \subsection{Coherent words despite auxiliary expansion}\label{coherent-words-despite-auxiliary-expansion}}
 
-\textbf{Claim ID:} \texttt{BGS-TRACE-013}. The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/arithmetic_word_expansion_obstruction.md}{complete counterexample}
+\textbf{Claim ID:} \texttt{BGS-TRACE-013}. See Appendix~A.
+
+\begin{theorem}[Arithmetic coherent-words counterexample]\label{pass2:frontier-trace-013}
+
+The \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/arithmetic_word_expansion_obstruction.md}{complete counterexample}
 uses three fixed integral hyperbolic matrices
 \[
 R=\begin{pmatrix}4&9\\19&43\end{pmatrix},\quad
 S=\begin{pmatrix}3&2\\1&1\end{pmatrix},\quad
 V=\begin{pmatrix}-5&19\\-24&91\end{pmatrix},\quad VS=R.
 \]
-R has no integer/topological root and no topological reversor. The proofs
-exhaust determinant signs and use incompatible modulo-three/seven Lucas
-periods, respectively. The rational fourth root (R+8I)/21 gives
+R has no integer/topological root and no topological reversor.
+
+The rational fourth root (R+8I)/21 gives
 \(d_p=\operatorname{ord}_pR\mid(p-1)/4\) for all primes p=1 mod20.
 Thus the even Weil sector of odd dimension N=(p+1)/2 has a clock of
 unfolded pitch N/d\textgreater2, failing Sine2 and its weak local law.
+
+\end{theorem}
+
+The proofs
+exhaust determinant signs and use incompatible modulo-three/seven Lucas
+periods, respectively.
 
 The non-elementary fixed generators S,V have a uniform Cayley gap by
 Bourgain--Gamburd. Representation transfer and even-sector irreducibility

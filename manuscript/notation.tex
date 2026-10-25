@@ -1,4 +1,5 @@
 \section*{Notation}\label{sec:notation}
+\phantomsection\addcontentsline{toc}{section}{Notation}
 This registry records the symbols whose meaning is not uniform across
 the compendium. A symbol listed here with a section scope is local to
 that section; the canonical (unqualified) form is the fixed-map
@@ -37,6 +38,10 @@ Symbol & Meaning & Scope / location \\
   early moment block, renamed in Pass 1 \\
 \(M_s\) & Occupancy moments \(N^{-1}\sum_h n_h^s\) &
   Fixed-map frontier, resonant-cubic section (defined in place) \\
+\(M_3, M_4\) & Occupancy moments \(M_s\) at \(s=3,4\) &
+  Fixed-map frontier, resonant-cubic and folded-square sections
+  (verified Pass 2: same \(n_h\) occupancies and \(E_N\) as the
+  \(M_s\) definition) \\
 \(\Phi^t\) & Flow of \(X_g\) (locality convention) &
   Locality section \\
 \(\Phi_g^t\) & Flow of \(X_g\) (same convention, explicit generator) &
@@ -76,13 +81,22 @@ that existing superscripts (\(U_N^*, U_N^j, U_N^{-j}, U_N^K\)) keep
 working; a superscript tag was tried first and broke the build with
 double superscripts.
 
-\noindent\textbf{Open (not resolved mechanically, needs Pass 2 reading).}
-(1) Fixed-map frontier, late sections: \(M_3, M_4\) after the
-resonant-cubic section (e.g.\ lines 1855, 1875, 1910) are not verified
-to be the occupancy moments \(M_s\) defined at line 1821; they were
-left untouched. (2) \(\kappa\) as a section-local parameter is
+\noindent\textbf{Open items and Pass 2 resolutions.}
+(1) RESOLVED in Pass 2: Fixed-map frontier, late \(M_3, M_4\)
+(lines 1917, 1944, 1964 in the resonant-cubic section itself, and
+line 2007 in the folded-square section, which reuses TRACE-011's
+\(E_N\) and counterterm budget and contrasts the \(M_4\) bound with
+the new \(G_d\) bound) are the occupancy moments \(M_s\) defined at
+line 1910; see the \(M_3, M_4\) row above. No token rename was
+applied. (2) \(\kappa\) as a section-local parameter is
 documented above but not unified; unification would require
 per-section renaming with proof reading, which is Pass 2 work.
+(2) DECIDED in Pass 2 (no rename): the microscopic-paths \(\kappa>0\)
+(free exponent parameter, e.g.\ \(m=\lceil\ell^{1+\kappa}\rceil\)) and
+the unmasked \(\kappa=1-\rho>0\) are section-local parameters with
+distinct definitions; renaming either would churn many formulas for no
+mathematical benefit, and the registry entries above already
+disambiguate them. Both stay as written.
 (3) The analytic \(M_j\) and return-words \(M_r\) are the same object
 under different index letters; no rename was applied, since the
 registry entry already disambiguates them.
