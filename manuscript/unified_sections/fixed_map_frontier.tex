@@ -1244,7 +1244,11 @@ are credited; world priority is unverified.
 \hypertarget{growing-neutral-degree-and-the-particular-missed-local-test}{%
 \subsection{Growing neutral degree and the particular missed local test}\label{growing-neutral-degree-and-the-particular-missed-local-test}}
 
-\textbf{Claim ID:} \texttt{BGS-FLOW-020}. The
+\textbf{Claim ID:} \texttt{BGS-FLOW-020}. See Appendix~A.
+
+\begin{theorem}[Exact reproducing-kernel bound]\label{pass2:frontier-flow020}
+
+The
 \href{https://github.com/ChurilovMaksim/BGS/blob/main/mathematics/growing_degree_trace_projection.md}{full proof} replaces the fixed-degree
 Gram bound by its exact reproducing kernel. For \(2Q\le N\), normalized
 complex Wick polynomials give an orthonormal basis \(E_{\boldsymbol a,\boldsymbol b}\)
@@ -1257,6 +1261,17 @@ The prior complex Mehler identity gives, for every \(s>0\),
 \log\mathcal K_Q(A)\le2sQ+\frac{\pi^2}{12s}
 +2\sum_{m\le Q}\frac{e^{-sm}}{1+e^{-sm}}\frac{|p_m(A)|^2}{m}.
 \]
+
+\end{theorem}
+
+This environment is part (1) of the BGS-FLOW-020 claim, whose full
+subsection arc has three parts: (1) the kernel bound above (this
+environment); (2) the logarithmic projection rate \(N^{-1/4}\) (the prose
+block following, beginning ``For the unchanged actual odd-N
+operator''); (3) the missed-test obstruction \(J_{N,w}\) (the prose
+block following that, beginning ``The universal cost obeys''). Parts
+(2) and (3) stay as prose and are not separate environments; nothing
+in the arc is dropped or reordered.
 
 For the unchanged actual odd-N operator, a fixed-order interaction
 packet expansion proves \(|p_j(U_N)|\le C_0e^{\alpha|j|}\) uniformly

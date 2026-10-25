@@ -1,0 +1,27 @@
+% Figure (SCHEMATIC with registry statuses): flagship dependency chain.
+% Statuses at wiring time (live main HEAD d9a729a; follow-up staging):
+% FM-021 proved; the section-16 transfer is proved in the repo-model
+% reading and conditional in the literal external-text reading (re-base
+% note); R1 dictionary LANDED (90c3b18) — updated from the draft's
+% "outlook" box, see FOLLOWUP_REPORT deviation D-FIG1; TRACE-005 open;
+% BGS-001 open. The V_N^(2) box is outlook, not a result.
+\begin{tikzpicture}[node distance=1.1cm, auto,
+  box/.style={draw, rounded corners=2pt, align=center, font=\small,
+    minimum width=3.1cm, minimum height=1.0cm},
+  proved/.style={box, fill=green!10},
+  cond/.style={box, fill=blue!10},
+  open/.style={box, fill=red!10},
+  outlook/.style={box, dashed, fill=gray!5},
+  arr/.style={->, >=Stealth, thick}]
+  \node[proved] (fm) {FM-021\\{\footnotesize proved}};
+  \node[cond, right=of fm] (tr) {\S16 transfer\\{\footnotesize repo-model: proved}\\{\footnotesize literal: conditional}};
+  \node[open, right=of tr] (t5) {TRACE-005\\{\footnotesize OPEN}};
+  \node[open, right=of t5] (b1) {BGS-001\\{\footnotesize OPEN}};
+  \draw[arr] (fm) -- (tr);
+  \draw[arr] (tr) -- (t5);
+  \draw[arr] (t5) -- (b1);
+  \node[cond, below=of tr] (r1) {R1 dictionary\\{\footnotesize landed (90c3b18)}};
+  \node[outlook, below=of t5] (v2) {$V_N^{(2)}$ asymptotic\\{\footnotesize outlook}};
+  \draw[arr] (r1) -- (tr);
+  \draw[arr, dashed] (v2) -- (t5);
+\end{tikzpicture}

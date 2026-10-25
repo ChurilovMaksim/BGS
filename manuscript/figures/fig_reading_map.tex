@@ -1,0 +1,25 @@
+% Figure 3 (SCHEMATIC, structural): part-divider reading order of the
+% manuscript, derived from the root file's \input order (pass-2 tree).
+% No data is plotted. The Ch13-before-Ch12 quirk is structural: the shell
+% files precede the fixed-map files in input order, and the no-reorder
+% rule keeps it. Ch15 and the front-matter drafts are pass-3 additions.
+\begin{tikzpicture}[node distance=0.55cm, auto,
+  ch/.style={draw, rounded corners=2pt, align=center, font=\footnotesize,
+    minimum width=4.6cm, minimum height=0.62cm},
+  new/.style={ch, dashed, fill=yellow!10}]
+  \node[ch] (a) {Front matter: Preface* + Introduction*};
+  \node[ch, below=of a] (b) {Ch 2 Arithmetic core};
+  \node[ch, below=of b] (c) {Ch 3 Cayley maps and magnetic quotients};
+  \node[ch, below=of c] (d) {Ch 4 Pell cat map};
+  \node[ch, below=of d] (e) {Ch 5--6 Return laws I--II};
+  \node[ch, below=of e] (f) {Ch 7 Floquet / coboundary (Ch 8 embedded)};
+  \node[ch, below=of f] (g) {Ch 9 Locality \quad Ch 10 Resonance rigidity};
+  \node[ch, below=of g] (h) {Ch 11 Temporal resonance \quad Appendix B \quad Addendum};
+  \node[ch, below=of h] (i) {Ch 13 Shells / tomography \textbf{before} Ch 12 in the TOC};
+  \node[ch, below=of i] (j) {Ch 12 Fixed-map frontier};
+  \node[ch, below=of j] (k) {Ch 14 Late trace results};
+  \node[new, below=of k] (l) {Ch 15 Conclusion and outlook (DRAFT)};
+  \node[ch, below=of l] (m) {Appendix A Claim index \quad Supplement \quad References};
+  \draw[->, >=Stealth, thick] (a) -- (b) -- (c) -- (d) -- (e) -- (f)
+    -- (g) -- (h) -- (i) -- (j) -- (k) -- (l) -- (m);
+\end{tikzpicture}

@@ -5,6 +5,8 @@
 \usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype}
 \usepackage{mathrsfs}
 \usepackage{graphicx,booktabs,longtable,array,calc,multirow}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta}
 \usepackage{enumitem,fvextra,xurl}
 \usepackage{needspace}
 \usepackage[hidelinks]{hyperref}
@@ -25,8 +27,6 @@
 \begin{document}
 \input{front_matter.tex}
 \input{notation.tex}
-% Pass 3 (DRAFT TEMPLATE wiring): acknowledgements at the end of front matter.
-\input{acknowledgements.tex}
 \part*{Chapter 2 --- Arithmetic core}
 \addcontentsline{toc}{part}{Chapter 2 --- Arithmetic core}
 \input{unified_sections/ch02_arithmetic_core.tex}
