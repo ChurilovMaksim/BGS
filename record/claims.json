@@ -246,7 +246,7 @@
       "id": "BGS-FM-005",
       "title": "Actual frozen-kick Jacobi decomposition and exact low-rank obstruction",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + SELF-REVIEW + FINITE FLOAT DIAGNOSTICS (SVD AT t=0.4; NOT FROZEN-TAU NUMERICS)",
+      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR CHECK + FINITE FLOAT DIAGNOSTICS (SVD AT t=0.4; NOT FROZEN-TAU NUMERICS)",
       "source": "mathematics/fixed-map/frozen_kick_rank_boundary.md",
       "dependencies": [],
       "external_dependencies": [
@@ -268,7 +268,7 @@
       "id": "BGS-FM-006",
       "title": "Nonlinear bracket pressure growth and frozen-map linear-normalization boundary",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + CHECKED PRIMARY EXTERNAL INPUTS + EXACT RATIONAL REGRESSION + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + CHECKED PRIMARY EXTERNAL INPUTS + EXACT RATIONAL REGRESSION + AUTHOR CHECK",
       "source": "mathematics/fixed-map/nonlinear_bracket_pressure.md",
       "dependencies": [
         "BGS-FM-001"
@@ -294,7 +294,7 @@
       "id": "BGS-FM-007",
       "title": "Exact seven-cut frozen-generator reduction and microscopic trace-norm stability",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + RAW-WEYL INDEPENDENT MATRIX CHECK + EXACT FINITE REGRESSION + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + RAW-WEYL INDEPENDENT MATRIX CHECK + EXACT FINITE REGRESSION + AUTHOR CHECK",
       "source": "mathematics/fixed-map/frozen_seven_cut_reduction.md",
       "dependencies": [
         "BGS-FM-001",
@@ -347,7 +347,7 @@
       "id": "BGS-FM-009",
       "title": "Exact commutator-cube obstruction to common antiunitary reversal",
       "state": "proved",
-      "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF + EXACT INTEGER REPLAY + AUTHOR SELF-REVIEW",
+      "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF + EXACT INTEGER REPLAY + AUTHOR CHECK",
       "source": "mathematics/fixed-map/frozen_common_antireversor_certificate.md",
       "dependencies": [
         "BGS-FM-001"
@@ -373,7 +373,7 @@
       "id": "BGS-FM-010",
       "title": "Nonvanishing of every fixed-model power trace and classification of scalar returns",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + CLASSICAL FIXED-POINT INTEGER REGRESSION (Tr(U_N^m) NOT EVALUATED) + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + CLASSICAL FIXED-POINT INTEGER REGRESSION (Tr(U_N^m) NOT EVALUATED) + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR CHECK",
       "source": "mathematics/fixed-map/frozen_arithmetic_trace_rigidity.md",
       "dependencies": [
         "BGS-FM-001",
@@ -407,7 +407,7 @@
       "id": "BGS-FM-011",
       "title": "Effective but submicroscopic eigenphase gap floor at the frozen algebraic coupling",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + CHECKED PRIMARY ROY THEOREM + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + CHECKED PRIMARY ROY THEOREM + AUTHOR CHECK",
       "source": "mathematics/fixed-map/frozen_effective_gap_floor.md",
       "dependencies": [
         "BGS-FM-008"
@@ -607,7 +607,7 @@
       "id": "BGS-RES-007",
       "title": "Smooth scalar-resolvent transfer between the original and seven-cut full propagators",
       "state": "proved",
-      "ledger_status": "PROJECT DERIVATION FROM FM-007 AND RES-006 + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT DERIVATION FROM FM-007 AND RES-006 + AUTHOR CHECK",
       "source": "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
       "dependencies": [
         "BGS-FM-007",
@@ -764,7 +764,7 @@
       "id": "BGS-TRACE-006",
       "title": "Clustered Abel lower bound and simple-spectrum Heisenberg-window falsifier",
       "state": "proved",
-      "ledger_status": "EXACT ELEMENTARY PROOF + INTERNAL SELF-REVIEW",
+      "ledger_status": "EXACT ELEMENTARY PROOF + INTERNAL AUTHOR CHECK",
       "source": "mathematics/trace-bridge/clustered_abel_window_boundary.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -796,7 +796,7 @@
       "id": "BGS-TRACE-008",
       "title": "Two-clock falsifier for sufficiency of the CUE Gram second moment",
       "state": "proved",
-      "ledger_status": "ELEMENTARY CONSTRUCTION + AUTHOR SELF-REVIEW; SHARED COMPUTATIONAL CONTROL IS FLOAT64 DIAGONAL-ONLY (SEE BGS-RES-006)",
+      "ledger_status": "ELEMENTARY CONSTRUCTION + AUTHOR CHECK; SHARED COMPUTATIONAL CONTROL IS FLOAT64 DIAGONAL-ONLY (SEE BGS-RES-006)",
       "source": "mathematics/trace-bridge/two_clock_gram_falsifier.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -814,7 +814,7 @@
       "id": "BGS-CUE-001",
       "title": "Stable singular pair energy in Haar CUE and weak-local obstruction",
       "state": "proved",
-      "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR CHECK",
       "source": "mathematics/spectral-obstructions/cue_singular_energy.md",
       "dependencies": [],
       "external_dependencies": [
@@ -834,7 +834,7 @@
       "id": "BGS-FLOW-001",
       "title": "Uniform finite coboundary eigenphase-flow bound and sharpness sequence",
       "state": "proved",
-      "ledger_status": "EXACT FINITE-N PROJECT PROOF + FINITE CONTROLS + AUTHOR SELF-REVIEW",
+      "ledger_status": "EXACT FINITE-N PROJECT PROOF + FINITE CONTROLS + AUTHOR CHECK",
       "source": "mathematics/fixed-map/coboundary_spectral_flow_bound.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -852,7 +852,7 @@
       "id": "BGS-FLOW-002",
       "title": "Coboundary kicks have sine curvature but no infinitesimal Dyson diffusion",
       "state": "proved",
-      "ledger_status": "EXACT FINITE-N PROJECT CALCULATION + FINITE GUE-BASIS CHECK + AUTHOR SELF-REVIEW",
+      "ledger_status": "EXACT FINITE-N PROJECT CALCULATION + FINITE GUE-BASIS CHECK + AUTHOR CHECK",
       "source": "mathematics/fixed-map/coboundary_spectral_flow_bound.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -893,7 +893,7 @@
       "id": "BGS-FLOW-003",
       "title": "Quadratic coboundary covariance, ellipticity, corrected Dyson generator and transfer boundaries",
       "state": "proved",
-      "ledger_status": "EXACT FINITE-N PROJECT DERIVATION + BASIS CHECKS + EXACT HAAR U(4) INTEGRAL + AUTHOR SELF-REVIEW",
+      "ledger_status": "EXACT FINITE-N PROJECT DERIVATION + BASIS CHECKS + EXACT HAAR U(4) INTEGRAL + AUTHOR CHECK",
       "source": "mathematics/fixed-map/quadratic_coboundary_noise.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -914,7 +914,7 @@
       "id": "BGS-FLOW-004",
       "title": "Quantitative raw-noise/Dyson coupling and phase-averaged local transfer",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS",
       "source": "mathematics/fixed-map/quadratic_noise_coupling.md",
       "dependencies": [
         "BGS-FLOW-003"
@@ -937,7 +937,7 @@
       "id": "BGS-FLOW-005",
       "title": "Haar-reversible drift, gradient identity and short-time path total variation",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS",
       "source": "mathematics/fixed-map/quadratic_noise_reversibility.md",
       "dependencies": [
         "BGS-FLOW-003",
@@ -961,7 +961,7 @@
       "id": "BGS-FLOW-006",
       "title": "Raw and reversible fixed-trace OU limits and fixed-time coupling obstruction",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS",
       "source": "mathematics/fixed-map/quadratic_noise_trace_fluctuations.md",
       "dependencies": [
         "BGS-FLOW-003",
@@ -985,7 +985,7 @@
       "id": "BGS-FLOW-007",
       "title": "Clock-to-Sine local limit for quadratic noise and obstruction to generic noise removal",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS",
       "source": "mathematics/fixed-map/quadratic_noise_clock_limit.md",
       "dependencies": [
         "BGS-FLOW-004",
@@ -1013,7 +1013,7 @@
       "id": "BGS-FM-013",
       "title": "Bounded fixed-time traces for the unchanged odd-dimensional frozen map",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT FRAME AND FINITE CONVENTION CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT FRAME AND FINITE CONVENTION CONTROLS",
       "source": "mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md",
       "dependencies": [
         "BGS-FM-001"
@@ -1047,7 +1047,7 @@
       ],
       "boundary": "Fixed dimension first. Distinguishes the original step, frozen mean compensation and raw quadratic diffusion; no uniform joint epsilon/N limit or deterministic noise removal.",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT ALGEBRA AND FINITE CONTROLS",
       "external_dependencies": [],
       "evidence": [
         "archive/evidence/20260929/coboundary_mobius_diffusion.json",
@@ -1073,7 +1073,7 @@
       ],
       "boundary": "Independent normalized GUE steps, odd clock start; epsilon -> 0 at fixed N precedes N -> infinity, t_N -> 0, N t_N -> infinity. Local stopped spectral quotient diffusion only; no original matrix-path convergence, explicit simultaneous epsilon_N rate, actual-map relaxation or deterministic BGS.",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT ALGEBRA AND FINITE CONTROLS",
       "external_dependencies": [],
       "evidence": [
         "archive/evidence/20260929/coboundary_mobius_diffusion.json",
@@ -1100,7 +1100,7 @@
       ],
       "boundary": "Independent normalized GUE kicks, odd clock start. Previous exponential example has smooth-test rate O_f(N^(-1/3)); the same bound also implies polynomial epsilon=N^(-a), a>20, at t=L_N/N with L_N->infinity and L_N=o(log N). Stronger polynomial rate in FLOW-011. No actual-map relaxation, original matrix-path convergence or deterministic noise removal.",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT ALGEBRA AND FINITE CONTROLS",
       "external_dependencies": [],
       "evidence": [
         "archive/evidence/20260930/coboundary_joint_limit.json",
@@ -1147,7 +1147,7 @@
       "id": "BGS-FM-014",
       "title": "Uniform finite type and scalar cancellation for translated physical-symbol differences",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT ALGEBRA AND FINITE CONTROLS",
       "source": "mathematics/fixed-map/frozen_phase_finite_type.md",
       "dependencies": [
         "BGS-FM-001"
@@ -1170,7 +1170,7 @@
       "id": "BGS-FM-015",
       "title": "Explicit classical commutator generating action at the maintained fixed coupling",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXACT ALGEBRA AND FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT ALGEBRA AND FINITE CONTROLS",
       "source": "mathematics/fixed-map/frozen_commutator_action.md",
       "dependencies": [
         "BGS-FM-001",
@@ -1194,7 +1194,7 @@
       "id": "BGS-FUP-001",
       "title": "Parity classification of Fourier FUP for ideal off-diagonal digit alphabets",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + EXACT ALGEBRA AND FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXTERNAL-THEOREM + EXACT ALGEBRA AND FINITE CONTROLS",
       "source": "mathematics/fixed-map/offdiagonal_digit_fup.md",
       "dependencies": [],
       "external_dependencies": [
@@ -1217,7 +1217,7 @@
       "id": "BGS-TRACE-009",
       "title": "Prime-resonant sector mass criterion, exact spectral comb and coherent-mode obstruction",
       "state": "proved",
-      "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL REFERENCE LAW + FINITE CONTROLS",
+      "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR CHECK + EXTERNAL REFERENCE LAW + FINITE CONTROLS",
       "source": "mathematics/fixed-map/prime_resonant_sector.md",
       "dependencies": [
         "BGS-FM-001",
@@ -1244,7 +1244,7 @@
       "id": "BGS-TRACE-010",
       "title": "Universal deterministic absolute-norm obstruction against CUE and signed cancellation controls",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXTERNAL-THEOREM + FINITE CONTROLS",
       "source": "mathematics/trace-bridge/signed_heisenberg_comparison.md",
       "dependencies": [
         "BGS-TRACE-001",
@@ -1272,7 +1272,7 @@
       "id": "BGS-TRACE-011",
       "title": "Resonant cubic deletion by local density and a pair-compatible critical cluster obstruction",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + EXTERNAL-THEOREM + FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXTERNAL-THEOREM + FINITE CONTROLS",
       "source": "mathematics/trace-bridge/resonant_cubic_density_control.md",
       "dependencies": [
         "BGS-TRACE-001",
@@ -1301,7 +1301,7 @@
       "id": "BGS-TRACE-012",
       "title": "Folded-square signed resonant cubic control, explicit root allocation and factorial block-crowding obstruction",
       "state": "proved",
-      "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS",
       "source": "mathematics/fixed-map/folded_quadratic_resonance_control.md",
       "dependencies": [
         "BGS-FM-001",
@@ -1340,7 +1340,7 @@
       "source": "mathematics/fixed-map/egorov_overlap_rigidity.md",
       "boundary": "Normalized overlap vanishes when fixed Egorov maps coincide on area zero; operator separation >=sqrt(2) if maps differ at one point. Fixed actual powers exclude affine conjugacy, giving separation after fixed smooth/analytic classical conjugators. Fixed-time trace vanishing and initial noise ellipticity already followed from FM-007; no arbitrary N-dependent basis change or Heisenberg cancellation.",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS",
       "evidence": [
         "archive/evidence/20261004/expansion_wavepacket_checks.json",
         "archive/evidence/executions/20261004-expansion-wavepacket.json"
@@ -1366,7 +1366,7 @@
       "source": "mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md",
       "boundary": "A different fixed primitive irreversible arithmetic map; odd parity sectors have uniform one-copy gap and exact extensive tensor memory, and an enlarged full-space channel has a uniform two-copy gap. Flat perturbations retain bounded fixed traces and coherent Heisenberg returns while removing exact spectral markers. Full-space channel mixes parity, and no translation enters the selected word. Not the frozen map, sector-preserving two-copy falsifier, BGS solution or priority claim.",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR SELF-REVIEW + FINITE CONTROLS",
+      "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR CHECK + FINITE CONTROLS",
       "evidence": [
         "archive/evidence/20261004/expansion_wavepacket_checks.json",
         "archive/evidence/executions/20261004-expansion-wavepacket.json"
@@ -3616,7 +3616,7 @@
       "id": "BGS-FM-032",
       "title": "Prime cyclic cohomology and parity-resolved susceptibility",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
       "source": "mathematics/fixed-map/quantum_cyclic_cohomology.md",
       "dependencies": [
         "BGS-FM-001",
@@ -3639,7 +3639,7 @@
       "id": "BGS-TRACE-084",
       "title": "Mesoscopic block number-variance criterion and collective trace-energy boundary",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
       "source": "mathematics/trace-bridge/resonant_mesoscopic_criterion.md",
       "dependencies": [
         "BGS-TRACE-009"
@@ -3661,7 +3661,7 @@
       "id": "BGS-TRACE-085",
       "title": "Exact root lifting and failure of necessity for resonance-sector deletion",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
       "source": "mathematics/trace-bridge/root_lifting_sector_boundary.md",
       "dependencies": [
         "BGS-TRACE-001",
@@ -3686,7 +3686,7 @@
       "id": "BGS-TRACE-086",
       "title": "All-order signed diagonal hierarchy implies local Sine2 and local moment UI",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
       "source": "mathematics/trace-bridge/all_order_process_closure.md",
       "dependencies": [
         "BGS-TRACE-001",
@@ -3733,7 +3733,7 @@
       "id": "BGS-CUE-002",
       "title": "All-positive-frequency CUE trace-square covariance and exact coupling derivative",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
       "source": "mathematics/trace-bridge/full_pair_cue_covariance.md",
       "dependencies": [
         "BGS-TRACE-002"
@@ -3755,7 +3755,7 @@
       "id": "BGS-TRACE-087",
       "title": "Exact parameter bandwidth and quantitative de-averaging to a fixed coupling",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
       "source": "mathematics/trace-bridge/parameter_deaveraging.md",
       "dependencies": [
         "BGS-TRACE-086"
@@ -3779,7 +3779,7 @@
       "id": "BGS-TRACE-088",
       "title": "Rooted BEST count, extensive equal-edge mass and unitary compensation",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
       "source": "mathematics/trace-bridge/equal_edge_occupation.md",
       "dependencies": [
         "BGS-FM-021"
@@ -3801,7 +3801,7 @@
       "id": "BGS-TRACE-089",
       "title": "Factorially weighted square-root-time equal-edge collision crossover",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
       "source": "mathematics/trace-bridge/collision_crossover.md",
       "dependencies": [
         "BGS-TRACE-088"
@@ -3825,7 +3825,7 @@
       "id": "BGS-TRACE-090",
       "title": "Contractive full-spectrum radial ratios and mixed-moment weak-process criterion",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
       "source": "mathematics/trace-bridge/bounded_radial_ratios.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -3845,7 +3845,7 @@
       "id": "BGS-TRACE-091",
       "title": "Sharp clock minimum and exact radial and Abel Hardy remainders",
       "state": "proved",
-      "ledger_status": "PROJECT PROOF + AUTHOR SELF-REVIEW",
+      "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
       "source": "mathematics/trace-bridge/hardy_spectral_remainder.md",
       "dependencies": [
         "BGS-TRACE-007",
@@ -3947,7 +3947,7 @@
       "id": "BGS-TRACE-095",
       "title": "Dimension-uniform deep feedback Gaussian limit",
       "state": "conditional",
-      "ledger_status": "CONDITIONAL AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "CONDITIONAL AUTHOR PROOF + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/phase_ensemble_continuation.md",
       "dependencies": [
         "BGS-TRACE-073",
@@ -3964,7 +3964,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Under the pinned feedback trajectory/moment inputs and reversal hypothesis, u tends to infinity with u/N tending to zero; no substitution u=2 and no fixed frozen spectrum law.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_focus_20261017/dimension_uniform_feedback.md",
         "archive/evidence/executions/20261019/chat-research/bgs_focus_20261016/deep_feedback_gaussian.md"
@@ -3974,7 +3974,7 @@
       "id": "BGS-TRACE-096",
       "title": "Exact transmission spectral averaging and bounded eigenvector ratio criterion",
       "state": "verification-pending",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "AUTHOR PROOF + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/phase_ensemble_continuation.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -3987,7 +3987,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Finite phase-ensemble identities and Uniform[0,1] versus Beta(1,2) equivalence; the required eigenvector or transmission limit is not proved.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_focus_20261017/transmission_spectral_averaging.md"
       ]
@@ -3996,7 +3996,7 @@
       "id": "BGS-TRACE-097",
       "title": "Conditional full positive Heisenberg path-current limit",
       "state": "conditional",
-      "ledger_status": "CONDITIONAL AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "CONDITIONAL AUTHOR PROOF + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/phase_ensemble_continuation.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -4009,7 +4009,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Conditional on the stated fixed-level TV compactness TC; evaluates the specified normalized positive current, not Haar identification or all signed traces.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_continue_20261017/uniform_heisenberg_path_current.md",
         "archive/evidence/executions/20261019/chat-research/bgs_continue_20261017/tensor_path_current_limit.md"
@@ -4019,7 +4019,7 @@
       "id": "BGS-TRACE-098",
       "title": "Complete fixed-trace law and secular hierarchy for the symplectic phase ensemble",
       "state": "verification-pending",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "AUTHOR PROOF + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/phase_ensemble_continuation.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -4032,7 +4032,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "All odd p and N=p^(2d); first two traces converge to Z and Z squared, other fixed traces are independent Gaussian. Growing Heisenberg powers and frozen transfer are excluded.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_attempt_20261018/secular_hierarchy_ru.md"
       ]
@@ -4041,7 +4041,7 @@
       "id": "BGS-TRACE-099",
       "title": "Polynomial trace windows in the auxiliary bilinear phase ensembles",
       "state": "verification-pending",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "AUTHOR PROOF + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/phase_ensemble_continuation.md",
       "dependencies": [
         "BGS-TRACE-098"
@@ -4056,7 +4056,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Symplectic powers o(N^(1/5)); generic fixed bilinear seed powers o(N^(1/(6b))) with actual Gauss phases. Whole disk means fixed compact subsets, not microscopic absorption.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_boundary_20261018/polynomial_trace_window_ru.md",
         "archive/evidence/executions/20261019/chat-research/bgs_boundary_20261018/generic_bilinear_window_ru.md"
@@ -4066,7 +4066,7 @@
       "id": "BGS-TRACE-100",
       "title": "Exact signed phase expansion and first two stable coefficient cancellations",
       "state": "verification-pending",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "AUTHOR PROOF + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/phase_ensemble_continuation.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -4079,7 +4079,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Computer-assisted fixed-power result V_m=m+O_m(N^-3) for m>=17, all odd primes; no Heisenberg-scale conclusion from the factorial remainder.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_cancellation_20261018/signed_trace_formula_ru.md",
         "archive/evidence/executions/20261019/chat-research/bgs_cancellation_20261018/second_order_cancellation_ru.md"
@@ -4089,7 +4089,7 @@
       "id": "BGS-TRACE-101",
       "title": "Neutral peeling and finite primitive schemes at every fixed defect",
       "state": "verification-pending",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "AUTHOR PROOF + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/phase_neutral_primitives.md",
       "dependencies": [
         "BGS-TRACE-100"
@@ -4104,7 +4104,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Connected order j<=delta+1; primitive order<=2delta and size<=16delta; exact fixed-defect reconstruction. No summation over all individual defects.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/dependencies/neutral_peeling_ru.md"
       ]
@@ -4113,7 +4113,7 @@
       "id": "BGS-TRACE-102",
       "title": "Complete second-defect sector and full four-port open zero",
       "state": "verification-pending",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "AUTHOR PROOF + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/phase_second_defect.md",
       "dependencies": [
         "BGS-TRACE-101"
@@ -4128,7 +4128,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "All 24 open connected (3,2,4) kernels, every odd prime; full total defect two limit for 0<tau<1 and stable degree<=2h-3. Not b_h=0 or full BGS.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/extremal_graphs_ru.md",
         "archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/second_defect_complete_ru.md"
@@ -4138,7 +4138,7 @@
       "id": "BGS-TRACE-103",
       "title": "All local-defect-one-or-two clusters: quartic exponential resummation",
       "state": "verification-pending",
-      "ledger_status": "AUTHOR PROOF + CHECKED CLASSICAL INPUT + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "AUTHOR PROOF + CHECKED CLASSICAL INPUT + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/phase_quartic_cluster_sum.md",
       "dependencies": [
         "BGS-TRACE-101",
@@ -4156,7 +4156,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "All counts and neutral additions, individual defects <=2, V_m/m normalization, 0<tau<1/9, uniform O(N^-1); omitted connected defects >=3 remain essential.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_frontier_20261019/defect_two_cluster_gas_ru.md"
       ]
@@ -4165,7 +4165,7 @@
       "id": "BGS-TRACE-104",
       "title": "Local Cayley comparison with diagonal Cauchy disorder for an involution",
       "state": "verification-pending",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "AUTHOR PROOF + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/phase_cayley_cauchy_transfer.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -4178,7 +4178,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "Any Hermitian involution with iid circular phases; local correlation test comparison O(N^-1). Universality of S-diag(Cauchy), and frozen transfer, are not supplied.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_ward_20261019/cayley_cauchy_transfer_ru.md"
       ]
@@ -4187,7 +4187,7 @@
       "id": "BGS-TRACE-105",
       "title": "Positive Cauchy projection self-duality with maximal matrix-law separation",
       "state": "verification-pending",
-      "ledger_status": "AUTHOR PROOF + SELF-REVIEW; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
+      "ledger_status": "AUTHOR PROOF + AUTHOR CHECK; SOLE LISTED VERIFIER REMOVED: verify_integration.py IS AN INTEGRITY/SCOPE CHECK, NOT A PROOF CHECKER; ITS EVIDENCE all_packet_audit.json RECORDS all_valid: false (58 COMPLETED / 5 FAILED / 1 TIMEOUT)",
       "source": "mathematics/trace-bridge/cauchy_positive_source_boundary.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -4200,7 +4200,7 @@
         "manuscript/unified_sections/circular_phase_trace_schemes.tex"
       ],
       "boundary": "For any finite Hermitian involution S, H^-1 and H/2 have identical all PSD scalar projections, while their matrix laws have TV distance one for every non-diagonal S, including the symplectic Fourier model. Classical harmonic mechanism; no BGS counterexample or novelty claim.",
-      "review_provenance": "Author self-review; preserved earlier controls, no independent certification",
+      "review_provenance": "Author check; preserved earlier controls, no independent certification",
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_positive_source_boundary_ru.md",
         "archive/evidence/executions/20261019/chat-research/bgs_integration_20261019/cauchy_projection_self_duality_ru.md"
@@ -4871,7 +4871,7 @@
       "id": "BGS-TRACE-106",
       "title": "Uniform physical-kick trace decay, positive-square exponent 1/9 and scalar-distance limit",
       "state": "proved",
-      "ledger_status": "ANALYTIC AUTHOR PROOF + SELF-REVIEW + FINITE CHECKS AT STATED SCOPE",
+      "ledger_status": "ANALYTIC AUTHOR PROOF + AUTHOR CHECK + FINITE CHECKS AT STATED SCOPE",
       "source": "mathematics/fixed-map/physical_kick_trace_decay.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -4885,13 +4885,13 @@
       "manuscript": [
         "manuscript/unified_sections/physical_kick_decay.tex"
       ],
-      "boundary": "All odd N, 0<|t|<=10^-20, N|t|>=1; finite unspecified prefactor. Bounded physical-time intervals have some positive exponent. Single kick only: no full U_N Heisenberg trace or local spectral law. Author proof and self-review, not external refereeing or Lean."
+      "boundary": "All odd N, 0<|t|<=10^-20, N|t|>=1; finite unspecified prefactor. Bounded physical-time intervals have some positive exponent. Single kick only: no full U_N Heisenberg trace or local spectral law. Author proof and author check, not external refereeing or Lean."
     },
     {
       "id": "BGS-TRACE-107",
       "title": "Physical polynomial approximation at every fixed factorial order and exact Pell alias threshold",
       "state": "proved",
-      "ledger_status": "ANALYTIC AUTHOR PROOF + SELF-REVIEW + FINITE CHECKS AT STATED SCOPE",
+      "ledger_status": "ANALYTIC AUTHOR PROOF + AUTHOR CHECK + FINITE CHECKS AT STATED SCOPE",
       "source": "mathematics/fixed-map/physical_trace_polynomial_approximation.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -4911,7 +4911,7 @@
       "id": "BGS-TRACE-108",
       "title": "Quartic diagonal coordinate return with explicit fixed-coupling remainder",
       "state": "proved",
-      "ledger_status": "ANALYTIC AUTHOR PROOF + SELF-REVIEW",
+      "ledger_status": "ANALYTIC AUTHOR PROOF + AUTHOR CHECK",
       "source": "mathematics/fixed-map/coordinate_return_quartic.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -4923,13 +4923,13 @@
       "manuscript": [
         "manuscript/unified_sections/spectral_corpus_one_step_returns.tex"
       ],
-      "boundary": "One step only; analytic author proof and self-review, with exact quartic/Gauss finite checks. No microscopic trace sum or external refereeing."
+      "boundary": "One step only; analytic author proof and author check, with exact quartic/Gauss finite checks. No microscopic trace sum or external refereeing."
     },
     {
       "id": "BGS-TRACE-109",
       "title": "Inserted trace, quantum commutant projection and two-copy coboundary obstruction",
       "state": "proved",
-      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL SELF-REVIEW; DEPENDENCY CLOSURE CHECKED 2026-10-22",
+      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL AUTHOR CHECK; DEPENDENCY CLOSURE CHECKED 2026-10-22",
       "source": "mathematics/fixed-map/inserted_trace_coboundary.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -4949,7 +4949,7 @@
       "id": "BGS-TRACE-110",
       "title": "Spectral orbit distance and exact scalar-root comparison lemmas",
       "state": "proved",
-      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL SELF-REVIEW; DEPENDENCY CLOSURE CHECKED 2026-10-22",
+      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL AUTHOR CHECK; DEPENDENCY CLOSURE CHECKED 2026-10-22",
       "source": "mathematics/fixed-map/spectral_orbit_distance.md",
       "dependencies": [
         "BGS-TRACE-112",
@@ -4972,7 +4972,7 @@
       "id": "BGS-TRACE-111",
       "title": "Full weighted Pell gradient, negative initial Hessian and forced early inflection",
       "state": "proved",
-      "ledger_status": "ANALYTIC AUTHOR PROOF + SELF-REVIEW",
+      "ledger_status": "ANALYTIC AUTHOR PROOF + AUTHOR CHECK",
       "source": "mathematics/fixed-map/pell_weighted_curvature.md",
       "dependencies": [],
       "external_dependencies": [],
@@ -4992,7 +4992,7 @@
       "id": "BGS-TRACE-112",
       "title": "Uniform classical displacement density and independent logarithmic global spectral comparison",
       "state": "proved",
-      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL SELF-REVIEW",
+      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL AUTHOR CHECK",
       "source": "mathematics/fixed-map/displacement_density_trace_bound.md",
       "dependencies": [
         "BGS-TRACE-106"
@@ -5014,7 +5014,7 @@
       "id": "BGS-TRACE-113",
       "title": "Uniform original-family power-trace bound from continuous Gaussian scalar and strict pressure gap",
       "state": "proved",
-      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL SELF-REVIEW",
+      "ledger_status": "ANALYTIC PROOF + ADVERSARIAL AUTHOR CHECK",
       "source": "mathematics/fixed-map/fixed_kick_uniform_trace_bound.md",
       "dependencies": [],
       "external_dependencies": [

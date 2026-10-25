@@ -708,7 +708,7 @@
       "id": "BGS-FM-005",
       "historical_row_sha256": "8cc200752e05d2c2433021724f3e97f21f3b84bbbe35eb0f7f6803366d3b9174",
       "fields": {
-        "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + SELF-REVIEW + FINITE FLOAT DIAGNOSTICS (SVD AT t=0.4; NOT FROZEN-TAU NUMERICS)",
+        "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR CHECK + FINITE FLOAT DIAGNOSTICS (SVD AT t=0.4; NOT FROZEN-TAU NUMERICS)",
         "boundary": "Exact rank bound for every odd N and algebraic nonzero kick; approximate rank bound only before eigenphase wrapping. Does not imply mixed traces or local RMT. Finite diagnostics are floating-point SVD at kick parameter t=0.4 on dimensions [3, 5, 7, 9, 15, 19, 21, 23, 35, 49, 63, 77]; they are not numerics at the frozen model value tau=10^-80 and do not by themselves establish exact rank.",
         "evidence": [
           "archive/evidence/20260923/frozen_kick_rank.json"
@@ -739,7 +739,7 @@
       "id": "BGS-FM-010",
       "historical_row_sha256": "70cc5a35c136330ed7df0886326a94c50cf2df556cba93f56bc27301beabe03b",
       "fields": {
-        "ledger_status": "PROJECT PROOF + CLASSICAL FIXED-POINT INTEGER REGRESSION (Tr(U_N^m) NOT EVALUATED) + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR SELF-REVIEW",
+        "ledger_status": "PROJECT PROOF + CLASSICAL FIXED-POINT INTEGER REGRESSION (Tr(U_N^m) NOT EVALUATED) + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR CHECK",
         "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality. Separate independently reviewed one-step companion: |Tr U_N(t)|² is transcendental for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1. This does not extend squared-trace transcendence to higher powers on7|N or establish spectral simplicity. Prior all-power nonvanishing theorem and inherited source/review status remain intact. Finite regression scope: classical Weyl fixed points and one rational orbit margin for odd N<106 and m<25 only; the regression does not evaluate Tr(U_N^m). The second verifier spectral_extensions.py replays only finite cluster/pivot cases and the one-step trace-square companion.",
         "evidence": [
           "archive/evidence/20260924/frozen_arithmetic_traces.json",
@@ -798,7 +798,7 @@
       "id": "BGS-TRACE-008",
       "historical_row_sha256": "3ee17ef04b6e57243e285839fc4f97074b2b45210f19f466cd3368c31bb0dd2e",
       "fields": {
-        "ledger_status": "ELEMENTARY CONSTRUCTION + AUTHOR SELF-REVIEW; SHARED COMPUTATIONAL CONTROL IS FLOAT64 DIAGONAL-ONLY (SEE BGS-RES-006)",
+        "ledger_status": "ELEMENTARY CONSTRUCTION + AUTHOR CHECK; SHARED COMPUTATIONAL CONTROL IS FLOAT64 DIAGONAL-ONLY (SEE BGS-RES-006)",
         "source": "mathematics/trace-bridge/two_clock_gram_falsifier.md"
       },
       "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-008 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change.",
@@ -832,7 +832,8 @@
           "archive/evidence/20261004/expansion_wavepacket_wolfram_completion.json",
           "archive/evidence/executions/20261004-completion.json"
         ],
-        "source": "mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md"
+        "source": "mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT FRAME AND FINITE CONVENTION CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/fixed_time_wavepacket_trace_bound.md to mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
@@ -861,7 +862,8 @@
           "archive/evidence/20261001/resonant_density_wolfram.json",
           "archive/evidence/executions/20261001-resonant-density.json"
         ],
-        "source": "mathematics/trace-bridge/resonant_cubic_density_control.md"
+        "source": "mathematics/trace-bridge/resonant_cubic_density_control.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXTERNAL-THEOREM + FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-011 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change.",
       "review": "archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md"
@@ -879,7 +881,8 @@
           "archive/evidence/20261004/folded_quadratic_manifest_corrected.json",
           "archive/evidence/executions/20261004-folded-quadratic-format-correction.json"
         ],
-        "source": "mathematics/fixed-map/folded_quadratic_resonance_control.md"
+        "source": "mathematics/fixed-map/folded_quadratic_resonance_control.md",
+        "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/folded_quadratic_resonance_control.md to mathematics/fixed-map/folded_quadratic_resonance_control.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
@@ -892,7 +895,8 @@
           "archive/evidence/20261004/expansion_wavepacket_checks.json",
           "archive/evidence/executions/20261004-expansion-wavepacket.json"
         ],
-        "source": "mathematics/fixed-map/egorov_overlap_rigidity.md"
+        "source": "mathematics/fixed-map/egorov_overlap_rigidity.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/egorov_overlap_rigidity.md to mathematics/fixed-map/egorov_overlap_rigidity.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
@@ -905,7 +909,8 @@
           "archive/evidence/20261004/expansion_wavepacket_checks.json",
           "archive/evidence/executions/20261004-expansion-wavepacket.json"
         ],
-        "source": "mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md"
+        "source": "mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md",
+        "ledger_status": "PROJECT PROOF + EXTERNAL-THEOREM + AUTHOR CHECK + FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B2, main 25153e4, 22 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the phase-2 topical relocation of this claim's source note from mathematics/arithmetic_word_expansion_obstruction.md to mathematics/spectral-obstructions/arithmetic_word_expansion_obstruction.md (package P2-MATH wave 8, 24 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
       "review": "archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md; archive/MANIFEST-B2.md; archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH8.md"
@@ -1456,7 +1461,8 @@
           "archive/evidence/20260928/quadratic_coboundary_noise.json",
           "archive/evidence/20260928/quadratic_noise_manifest.json"
         ],
-        "source": "mathematics/fixed-map/quadratic_coboundary_noise.md"
+        "source": "mathematics/fixed-map/quadratic_coboundary_noise.md",
+        "ledger_status": "EXACT FINITE-N PROJECT DERIVATION + BASIS CHECKS + EXACT HAAR U(4) INTEGRAL + AUTHOR CHECK"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/quadratic_coboundary_noise.md to mathematics/fixed-map/quadratic_coboundary_noise.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md"
@@ -1469,7 +1475,8 @@
           "archive/evidence/20260929/quadratic_noise_dynamics.json",
           "archive/evidence/20260929/quadratic_noise_manifest.json"
         ],
-        "source": "mathematics/fixed-map/quadratic_noise_coupling.md"
+        "source": "mathematics/fixed-map/quadratic_noise_coupling.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/quadratic_noise_coupling.md to mathematics/fixed-map/quadratic_noise_coupling.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md"
@@ -1482,7 +1489,8 @@
           "archive/evidence/20260929/quadratic_noise_dynamics.json",
           "archive/evidence/20260929/quadratic_noise_manifest.json"
         ],
-        "source": "mathematics/fixed-map/quadratic_noise_reversibility.md"
+        "source": "mathematics/fixed-map/quadratic_noise_reversibility.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/quadratic_noise_reversibility.md to mathematics/fixed-map/quadratic_noise_reversibility.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md"
@@ -1495,7 +1503,8 @@
           "archive/evidence/20260929/quadratic_noise_dynamics.json",
           "archive/evidence/20260929/quadratic_noise_manifest.json"
         ],
-        "source": "mathematics/fixed-map/quadratic_noise_trace_fluctuations.md"
+        "source": "mathematics/fixed-map/quadratic_noise_trace_fluctuations.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/quadratic_noise_trace_fluctuations.md to mathematics/fixed-map/quadratic_noise_trace_fluctuations.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md"
@@ -1509,7 +1518,8 @@
           "archive/evidence/20260929/quadratic_noise_manifest.json",
           "archive/evidence/20260929/quadratic_noise_clock.json"
         ],
-        "source": "mathematics/fixed-map/quadratic_noise_clock_limit.md"
+        "source": "mathematics/fixed-map/quadratic_noise_clock_limit.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/quadratic_noise_clock_limit.md to mathematics/fixed-map/quadratic_noise_clock_limit.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md"
@@ -1522,7 +1532,8 @@
           "archive/evidence/20260929/coboundary_mobius_diffusion.json",
           "archive/evidence/20260929/coboundary_mobius_manifest.json"
         ],
-        "source": "mathematics/fixed-map/coboundary_fourth_order_drift.md"
+        "source": "mathematics/fixed-map/coboundary_fourth_order_drift.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT ALGEBRA AND FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/coboundary_fourth_order_drift.md to mathematics/fixed-map/coboundary_fourth_order_drift.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
@@ -1535,7 +1546,8 @@
           "archive/evidence/20260929/coboundary_mobius_diffusion.json",
           "archive/evidence/20260929/coboundary_mobius_manifest.json"
         ],
-        "source": "mathematics/fixed-map/coboundary_mobius_diffusion.md"
+        "source": "mathematics/fixed-map/coboundary_mobius_diffusion.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT ALGEBRA AND FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/coboundary_mobius_diffusion.md to mathematics/fixed-map/coboundary_mobius_diffusion.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
@@ -1548,7 +1560,8 @@
           "archive/evidence/20260930/coboundary_joint_limit.json",
           "archive/evidence/20260930/coboundary_joint_manifest.json"
         ],
-        "source": "mathematics/fixed-map/coboundary_joint_limit.md"
+        "source": "mathematics/fixed-map/coboundary_joint_limit.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT ALGEBRA AND FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/coboundary_joint_limit.md to mathematics/fixed-map/coboundary_joint_limit.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
@@ -1560,7 +1573,8 @@
         "evidence": [
           "archive/evidence/20260923/nonlinear_pressure_variance.json"
         ],
-        "source": "mathematics/fixed-map/nonlinear_bracket_pressure.md"
+        "source": "mathematics/fixed-map/nonlinear_bracket_pressure.md",
+        "ledger_status": "PROJECT PROOF + CHECKED PRIMARY EXTERNAL INPUTS + EXACT RATIONAL REGRESSION + AUTHOR CHECK"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/nonlinear_bracket_pressure.md to mathematics/fixed-map/nonlinear_bracket_pressure.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md"
@@ -1572,7 +1586,8 @@
         "evidence": [
           "archive/evidence/20260924/frozen_seven_cut.json"
         ],
-        "source": "mathematics/fixed-map/frozen_seven_cut_reduction.md"
+        "source": "mathematics/fixed-map/frozen_seven_cut_reduction.md",
+        "ledger_status": "PROJECT PROOF + RAW-WEYL INDEPENDENT MATRIX CHECK + EXACT FINITE REGRESSION + AUTHOR CHECK"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/frozen_seven_cut_reduction.md to mathematics/fixed-map/frozen_seven_cut_reduction.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md"
@@ -1586,7 +1601,8 @@
           "archive/evidence/20260924/antireversor/certificate_polynomial.csv",
           "archive/evidence/20260924/antireversor/certificate_polynomial_7.csv"
         ],
-        "source": "mathematics/fixed-map/frozen_common_antireversor_certificate.md"
+        "source": "mathematics/fixed-map/frozen_common_antireversor_certificate.md",
+        "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF + EXACT INTEGER REPLAY + AUTHOR CHECK"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/frozen_common_antireversor_certificate.md to mathematics/fixed-map/frozen_common_antireversor_certificate.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
@@ -1612,7 +1628,8 @@
           "archive/evidence/20260930/heisenberg_note_checks.json",
           "archive/evidence/20260930/heisenberg_note_manifest.json"
         ],
-        "source": "mathematics/fixed-map/frozen_phase_finite_type.md"
+        "source": "mathematics/fixed-map/frozen_phase_finite_type.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT ALGEBRA AND FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/frozen_phase_finite_type.md to mathematics/fixed-map/frozen_phase_finite_type.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
@@ -1625,7 +1642,8 @@
           "archive/evidence/20260930/heisenberg_note_checks.json",
           "archive/evidence/20260930/heisenberg_note_manifest.json"
         ],
-        "source": "mathematics/fixed-map/frozen_commutator_action.md"
+        "source": "mathematics/fixed-map/frozen_commutator_action.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXACT ALGEBRA AND FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/frozen_commutator_action.md to mathematics/fixed-map/frozen_commutator_action.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
@@ -1638,7 +1656,8 @@
           "archive/evidence/20260930/heisenberg_note_checks.json",
           "archive/evidence/20260930/heisenberg_note_manifest.json"
         ],
-        "source": "mathematics/fixed-map/offdiagonal_digit_fup.md"
+        "source": "mathematics/fixed-map/offdiagonal_digit_fup.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXTERNAL-THEOREM + EXACT ALGEBRA AND FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/offdiagonal_digit_fup.md to mathematics/fixed-map/offdiagonal_digit_fup.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md"
@@ -1676,7 +1695,8 @@
           "archive/evidence/20260930/prime_resonant_checks.json",
           "archive/evidence/20260930/prime_resonant_manifest.json"
         ],
-        "source": "mathematics/fixed-map/prime_resonant_sector.md"
+        "source": "mathematics/fixed-map/prime_resonant_sector.md",
+        "ledger_status": "ELEMENTARY PROJECT PROOF + AUTHOR CHECK + EXTERNAL REFERENCE LAW + FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/prime_resonant_sector.md to mathematics/fixed-map/prime_resonant_sector.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md"
@@ -1690,7 +1710,8 @@
           "archive/evidence/20260930/signed_heisenberg_manifest.json",
           "archive/evidence/20260930/signed_heisenberg_wolfram.json"
         ],
-        "source": "mathematics/trace-bridge/signed_heisenberg_comparison.md"
+        "source": "mathematics/trace-bridge/signed_heisenberg_comparison.md",
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXTERNAL-THEOREM + FINITE CONTROLS"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-010 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change.",
       "review": "archive/MANIFEST-Aplain.md"
@@ -1943,7 +1964,8 @@
       "id": "BGS-TRACE-006",
       "historical_row_sha256": "f5a1fd1084987d7322d93c1f4cb0fa7c2d18bc5cdbde5ba99b4e7d4dc915be0d",
       "fields": {
-        "source": "mathematics/trace-bridge/clustered_abel_window_boundary.md"
+        "source": "mathematics/trace-bridge/clustered_abel_window_boundary.md",
+        "ledger_status": "EXACT ELEMENTARY PROOF + INTERNAL AUTHOR CHECK"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-TRACE-006 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change.",
       "review": "archive/MANIFEST-P2MATH10a.md"
@@ -1964,7 +1986,8 @@
       "id": "BGS-CUE-001",
       "historical_row_sha256": "31d0cda413e2f46cceedee78ed1ff4ab44cbe2b2a1e329dd6a93864783ac9a2f",
       "fields": {
-        "source": "mathematics/spectral-obstructions/cue_singular_energy.md"
+        "source": "mathematics/spectral-obstructions/cue_singular_energy.md",
+        "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR CHECK"
       },
       "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of this claim's source note from mathematics/cue_singular_energy.md to mathematics/spectral-obstructions/cue_singular_energy.md (package P2-MATH wave 8, 24 October 2026). Paths only: state and every other contract field are unchanged. This relocation adds no theorem promotion.",
       "review": "archive/MANIFEST-P2MATH8.md"
@@ -2000,7 +2023,8 @@
       "id": "BGS-FM-011",
       "historical_row_sha256": "6ce005cacb21542ff637ea4749893ad8ea1a76c5c84c3abde31a2704cad8735f",
       "fields": {
-        "source": "mathematics/fixed-map/frozen_effective_gap_floor.md"
+        "source": "mathematics/fixed-map/frozen_effective_gap_floor.md",
+        "ledger_status": "PROJECT PROOF + CHECKED PRIMARY ROY THEOREM + AUTHOR CHECK"
       },
       "disposition": "Preserve the original sealed input row; admit only the Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/frozen_effective_gap_floor.md to mathematics/fixed-map/frozen_effective_gap_floor.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-P2MATH9A.md"
@@ -2009,7 +2033,8 @@
       "id": "BGS-RES-007",
       "historical_row_sha256": "bd3f7269d5cf2ece5252a28c1b367600fe0c9e7e186c06a4369933185ee01ab9",
       "fields": {
-        "source": "mathematics/fixed-map/fixed_map_resolvent_frontier.md"
+        "source": "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
+        "ledger_status": "PROJECT DERIVATION FROM FM-007 AND RES-006 + AUTHOR CHECK"
       },
       "disposition": "Preserve the original sealed input row; admit only the Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/fixed_map_resolvent_frontier.md to mathematics/fixed-map/fixed_map_resolvent_frontier.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-P2MATH9A.md"
@@ -2027,7 +2052,8 @@
       "id": "BGS-FLOW-001",
       "historical_row_sha256": "86c154420b8f20c0b8894625b4f05d4d63dd5c3ba71109cbcee9d0ef7d9c1836",
       "fields": {
-        "source": "mathematics/fixed-map/coboundary_spectral_flow_bound.md"
+        "source": "mathematics/fixed-map/coboundary_spectral_flow_bound.md",
+        "ledger_status": "EXACT FINITE-N PROJECT PROOF + FINITE CONTROLS + AUTHOR CHECK"
       },
       "disposition": "Preserve the original sealed input row; admit only the Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/coboundary_spectral_flow_bound.md to mathematics/fixed-map/coboundary_spectral_flow_bound.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-P2MATH9A.md"
@@ -2036,7 +2062,8 @@
       "id": "BGS-FLOW-002",
       "historical_row_sha256": "75d1e8adc7700ffa66d15fdd6371c1635dc96ce548140da38d9b084530ab51c4",
       "fields": {
-        "source": "mathematics/fixed-map/coboundary_spectral_flow_bound.md"
+        "source": "mathematics/fixed-map/coboundary_spectral_flow_bound.md",
+        "ledger_status": "EXACT FINITE-N PROJECT CALCULATION + FINITE GUE-BASIS CHECK + AUTHOR CHECK"
       },
       "disposition": "Preserve the original sealed input row; admit only the Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/coboundary_spectral_flow_bound.md to mathematics/fixed-map/coboundary_spectral_flow_bound.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-P2MATH9A.md"
