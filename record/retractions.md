@@ -9,7 +9,7 @@ archive snapshot.
 
 1. **Historical Möbius-fiber / M4D proof of M1.** Unsaturated elimination inserted a phantom `(1,1)` key and mishandled the multiplicity-`p-2` diagonal.
 2. **Run 93.2 one-sided mixed count.** It included diagonal→off but omitted the distinct ordered off→diagonal class.
-3. **Historical uniform Möbius-fiber square-root bound.** The `d=0` fiber is degenerate/constant; Lean keeps a finite regression guard.
+3. **Historical uniform Möbius-fiber square-root bound.** The `d=0` fiber is degenerate/constant; Lean keeps a finite regression guard. Guard: `formalization/Bgs/HistoricalMobiusDegenerateFiber.lean`.
 4. **“Moment/Catalan data + an ESY citation implies BGS.”** False for this structured deterministic family.
 5. **R86/R87 noncommutative trace shortcut.** Invalid as stated.
 6. **Historical `N=95419` spacing verdict.** It compared different statistics.
