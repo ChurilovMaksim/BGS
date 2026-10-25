@@ -72,3 +72,7 @@ cases, but the associated higher-rank model and global theorem statements were
 not re-certified during the present reconstruction. They therefore remain in
 Git history as research leads, not as current mathematical results. In
 particular, no `Sp(2g)` theorem is inferred from finite diagonal/coset flatness.
+
+## Registry anchor
+
+This note is the authoritative source of BGS-FM-037 (finite torus level sets and branch scales at p=199, Q = a²-ab-b², cyclic action of order 11), covering the two FINITE-CERTIFICATE sections above.

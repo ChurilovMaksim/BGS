@@ -623,6 +623,18 @@
       "source": "mathematics/fixed-map/fixed_kick_uniform_trace_bound.md",
       "disposition": "Explicit metadata reconciliation of the already registered result at main 7fb99b4, not a new proof certification. Fixed tau=10^-80, one N0 for every m>=1 and every sufficiently large odd N: |Tr U_N^m|<=C a^m with 1<a<sqrt(lambda). Constants/pressure gap not numerically evaluated; bound is uninformative at m proportional to N; no signed hierarchy or BGS conclusion.",
       "review": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "BGS-CAYLEY-011",
+      "state": "proved",
+      "source": "mathematics/cayley-arithmetic/fibonacci_ratio_energy_proof.md",
+      "disposition": "New follow-on registration 2026-10-25: exact difference energy of Fibonacci/Lucas ratios; general case conditional on the Carmichael/Yabuta primitive-divisor theorem, bounded 1..12 residue certified (energy 1112); formalization formalization/Bgs/FibonacciRatioSmall.lean."
+    },
+    {
+      "id": "BGS-FM-037",
+      "state": "proved",
+      "source": "mathematics/foundations/earlier_foundations.md",
+      "disposition": "New follow-on registration 2026-10-25: finite torus level sets and branch scales at p=199 (Q = a²-ab-b², cyclic action of order 11); formalization formalization/Bgs/TorusLevelSets.lean and formalization/Bgs/TorusScaleLaw.lean."
     }
   ],
   "invariants": [

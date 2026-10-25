@@ -282,3 +282,7 @@ The unbounded argument depends on the exact primitive-divisor theorem quoted
 above.  The Lean module formalizes only the finite residue and does not
 formalize Yabuta/Carmichael.  No finite computation is being used as evidence
 for the universal quantifier outside that explicitly bounded residue.
+
+## Registry anchor
+
+This note is the authoritative source of BGS-CAYLEY-011 (exact difference energy of Fibonacci/Lucas ratios, finite residue certified; general case conditional on Carmichael's primitive-divisor theorem).

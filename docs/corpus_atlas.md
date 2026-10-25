@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**334 maintained proof notes; 10 topic views; 197 core claim IDs.**
+**335 maintained proof notes; 10 topic views; 199 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
 | open | 5 |
-| proved | 171 |
+| proved | 173 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 136 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 137 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -139,6 +139,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Actual paired-box coordinates and the exact autocorrelation character](../mathematics/fixed-map/paired_character_identity.md) | Consult proof and full ledger |
 | [Full weighted gradient, Pell curvature and the forced early inflection](../mathematics/fixed-map/pell_weighted_curvature.md) | `BGS-TRACE-111` (proved) |
 | [Actual phase-map monotonicity, Frostman bound and averaged Fourier squares](../mathematics/fixed-map/phase_map_frostman.md) | Consult proof and full ledger |
+| [Transfer of the Laplace functional and fixed Δ_k to the phase model](../mathematics/fixed-map/phase_model_transfer.md) | Consult proof and full ledger |
 | [Physical homoclinic phase and the actual leading-weight dictionary](../mathematics/fixed-map/physical_homoclinic_weights.md) | Consult proof and full ledger |
 | [Uniform trace decay of the physical kick](../mathematics/fixed-map/physical_kick_trace_decay.md) | `BGS-TRACE-106` (proved) |
 | [Physical polynomial approximation and its all-order trace error](../mathematics/fixed-map/physical_trace_polynomial_approximation.md) | `BGS-TRACE-107` (proved) |
@@ -364,7 +365,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Gaussian limits for Cayley sums and the full twisted-Jacobi trace](../mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md) | `BGS-CAYLEY-006` (proved) |
 | [Cyclotomic trace-intercept rigidity and scalar shift-resultant support](../mathematics/cayley-arithmetic/cayley_trace_intercept_rigidity.md) | Consult proof and full ledger |
 | [Off/off elliptic pencil: superseded route and current theorem](../mathematics/cayley-arithmetic/elliptic_pencil.md) | Consult proof and full ledger |
-| [Full proof of the Fibonacci/Lucas ratio energy theorem](../mathematics/cayley-arithmetic/fibonacci_ratio_energy_proof.md) | Consult proof and full ledger |
+| [Full proof of the Fibonacci/Lucas ratio energy theorem](../mathematics/cayley-arithmetic/fibonacci_ratio_energy_proof.md) | `BGS-CAYLEY-011` (proved) |
 | [Exact fourth-moment pair-key reduction](../mathematics/cayley-arithmetic/fourth_moment_reduction.md) | `BGS-CAYLEY-001` (proved) |
 | [Off/off elliptic correlation after the reducible-fiber spike](../mathematics/cayley-arithmetic/offoff_elliptic_spike_theorem.md) | Consult proof and full ledger |
 | [Exact fourth moment of the generated two-species observable](../mathematics/cayley-arithmetic/pell_coboundary_fourth_moment.md) | Consult proof and full ledger |
@@ -488,5 +489,5 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | Canonical proof source | Core IDs and registered states |
 |---|---|
 | [Analytic rigidity of pointwise Poisson-bracket cancellation](../mathematics/foundations/analytic_bracket_rigidity.md) | Consult proof and full ledger |
-| [Earlier foundations retained after the reconstruction audit](../mathematics/foundations/earlier_foundations.md) | Consult proof and full ledger |
+| [Earlier foundations retained after the reconstruction audit](../mathematics/foundations/earlier_foundations.md) | `BGS-FM-037` (proved) |
 | [Signed-trace extension: every hyperbolic integer toral automorphism](../mathematics/foundations/hyperbolic_signed_trace_extension.md) | Consult proof and full ledger |

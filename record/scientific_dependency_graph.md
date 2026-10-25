@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**197 registered nodes; 241 direct prerequisite edges.**
+**199 registered nodes; 241 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -25,6 +25,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-CAYLEY-008](../mathematics/cayley-arithmetic/cayley_scaling_rigidity.md) | proved | None registered | None registered | 0 |
 | [BGS-CAYLEY-009](../mathematics/spectral-obstructions/magnetic_quotient_semicircle.md) | proved | None registered | None registered | 0 |
 | [BGS-CAYLEY-010](../manuscript/general_spectra.tex) | proved | None registered | None registered | 0 |
+| [BGS-CAYLEY-011](../mathematics/cayley-arithmetic/fibonacci_ratio_energy_proof.md) | proved | None registered | None registered | 0 |
 | [BGS-CUE-001](../mathematics/spectral-obstructions/cue_singular_energy.md) | proved | None registered | `EXT-BAB-2013` | 0 |
 | [BGS-CUE-002](../mathematics/trace-bridge/full_pair_cue_covariance.md) | proved | `BGS-TRACE-002` | None registered | 0 |
 | [BGS-FLOW-001](../mathematics/fixed-map/coboundary_spectral_flow_bound.md) | proved | None registered | None registered | 0 |
@@ -88,6 +89,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-FM-034](../mathematics/locality/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
 | [BGS-FM-035](../mathematics/locality/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
 | [BGS-FM-036](../mathematics/locality/fixed_strength_locality.md) | proved | None registered | None registered | 0 |
+| [BGS-FM-037](../mathematics/foundations/earlier_foundations.md) | proved | None registered | None registered | 0 |
 | [BGS-FORMAL-001](../formalization/README.md) | proved | None registered | None registered | 0 |
 | [BGS-FORMAL-002](../mathematics/fixed-map/four_cut_rank_two_classification.md) | proved | None registered | None registered | 1 |
 | [BGS-FORMAL-003](../formalization/seven_primary_certificate.md) | proved | None registered | None registered | 0 |
