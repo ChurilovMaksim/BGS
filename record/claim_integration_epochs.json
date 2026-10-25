@@ -2000,6 +2000,18 @@
       },
       "disposition": "Preserve the original sealed input row; admit only the Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/three_orientation_resolvent_barrier.md to mathematics/fixed-map/three_orientation_resolvent_barrier.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
       "review": "archive/MANIFEST-P2MATH9B.md"
+    },
+    {
+      "id": "BGS-TRACE-005",
+      "historical_row_sha256": "6df621aeef91c97151855ca57bc7b583d6382dcc7635b44e2f05a99ae699b554",
+      "fields": {
+        "formalization": [
+          "formalization/Bgs/TraceStatement.lean"
+        ],
+        "boundary": "No current theorem proves the signed weighted joint-trace or equivalent mixed-resolvent cancellation for the frozen propagator at powers of order N. The modulus is outside the complete sum; the simultaneous unaveraged all-order absolute strengthening is excluded by TRACE-010. Statement formalized in formalization/Bgs/TraceStatement.lean as definitions and Props only (statement-formalized, proof open): the module states the criterion trace005_statement and its k = 2 test, proves no theorem about the family, and the claim remains open."
+      },
+      "disposition": "Ф.4 staging stream B: statement-only pointer; no status, title, source, closure-condition or dependency change; claim stays OPEN.",
+      "review": "record/claim_integration_epochs.json (this row) + formalization/Bgs/TraceStatement.lean header + formalization/README.md scope line"
     }
   ]
 }

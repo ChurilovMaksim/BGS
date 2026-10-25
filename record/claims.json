@@ -751,11 +751,13 @@
       "external_dependencies": [],
       "evidence": [],
       "verifiers": [],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/TraceStatement.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "No current theorem proves the signed weighted joint-trace or equivalent mixed-resolvent cancellation for the frozen propagator at powers of order N. The modulus is outside the complete sum; the simultaneous unaveraged all-order absolute strengthening is excluded by TRACE-010.",
+      "boundary": "No current theorem proves the signed weighted joint-trace or equivalent mixed-resolvent cancellation for the frozen propagator at powers of order N. The modulus is outside the complete sum; the simultaneous unaveraged all-order absolute strengthening is excluded by TRACE-010. Statement formalized in formalization/Bgs/TraceStatement.lean as definitions and Props only (statement-formalized, proof open): the module states the criterion trace005_statement and its k = 2 test, proves no theorem about the family, and the claim remains open.",
       "closure_condition": "For every fixed k and every compact smooth Fourier weight, prove the CUE/RMT-subtracted factorial joint-trace sum tends to zero, with the modulus outside the complete sum, after correct symmetry reduction and unfolding; or establish an equivalent mixed-resolvent hierarchy."
     },
     {
