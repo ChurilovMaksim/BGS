@@ -79,7 +79,14 @@ def run(root=ROOT):
     require(not list((root/'archive/evidence/wave3_checked_20261007').rglob('*.xml')),'primary extracts copied')
     mm=strict_json((root/'record/wave3_manuscript_mapping.json').read_bytes());require(sha(root/mm['section'])==mm['section_sha256'],'Wave3 section mapping changed')
     for rel,digest in mm['wrappers'].items():require(sha(root/rel)==digest,'Wave3 wrapper mapping changed')
-    require('\\input{unified_sections/checked_unmasked_pinch_checkpoint.tex}' in (root/mm['entrypoint']).read_text(),'manuscript continuation unlinked')
+    # L6 governed re-pin (2026-10-25): the checked section file
+    # checked_unmasked_pinch_checkpoint.tex was unified away in phase 4;
+    # its content survives as unmasked_insertion_closure.tex, carrying the
+    # same label sec:checked-unmasked-pinch-checkpoint and wired at
+    # BGS_unified.tex:137. The entrypoint expectation is therefore the
+    # successor \input line, and ONLY that line: any other entrypoint
+    # string still fails this check, as does any other section SHA.
+    require('\\input{unified_sections/unmasked_insertion_closure.tex}' in (root/mm['entrypoint']).read_text(),'manuscript continuation unlinked')
     oldmm=strict_json((root/'record/wave2_manuscript_mapping.json').read_bytes());require(sha(root/oldmm['section'])==oldmm['section_sha256'],'Wave2 section bytes changed')
     inputs=source_bytes(root);contract=strict_json(inputs['record/wave3_replay_contract.json']);require([t['declared_check_count'] for t in contract['tasks']]==[72,227,1486,8708],'bounded controls differ')
     return {'status':'passed','new_theorem_ids':2,'immutable_Wave3_rows':len(m['immutable_copies']),'right_receipt_files':len(receipt['files']),'convex_receipt_files':len(cm['files']),'earlier_claims_preserved':101,'wrapper_links':links,'right_frame_controls':72,'separated_controls':227,'exact_convex_controls':1486,'independent_floating_controls':8708,'Wave2_section_unchanged':True,'unavailable_author222_replayed':False,'scope':'Byte/lineage/scope/link checks; no additional proof audit or aggregate build.'}

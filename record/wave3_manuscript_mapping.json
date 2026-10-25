@@ -1,11 +1,11 @@
 {
   "schema": "bgs-wave3-manuscript-mapping-v1",
-  "section": "manuscript/unified_sections/checked_unmasked_pinch_checkpoint.tex",
-  "section_sha256": "4f2c34753f6fdabd7d10d1c4aa6034004c6cd005c9768372f6d5e042272863ff",
+  "section": "manuscript/unified_sections/unmasked_insertion_closure.tex",
+  "section_sha256": "ec865211c799464e60b817f18552395c973bb86fe700247f152cef60156a6f32",
   "wrappers": {
-    "mathematics/fixed-map/convex_pinch_weak_noise_and_deconvolution.md": "cb6a3b2424cfd6d79eeacfff63ff7fa15dc988f159c99055792597bad615979d",
-    "mathematics/fixed-map/right_frame_unmasked_pinch_hierarchy.md": "e78208c2f4b25d629d5d870b1ba4ba053165097e135889c98cef7f82a723d326"
+    "mathematics/fixed-map/convex_pinch_weak_noise_and_deconvolution.md": "85eb682407f0eaea26712ceada4cbd7efd6a6dedeee28bedcf606b63bf7ef8e9",
+    "mathematics/fixed-map/right_frame_unmasked_pinch_hierarchy.md": "a2e561bc09573166c6ef31bb341106d40188f0c033102f48b3cb648ff3a8c904"
   },
   "entrypoint": "manuscript/BGS_unified.tex",
-  "scope": "Qualified maintained exposition; Wave2 section bytes and binding remain unchanged. Full manuscript compilation deferred to combined snapshot."
+  "scope": "Qualified maintained exposition; Wave2 section bytes and binding remain unchanged. Full manuscript compilation deferred to combined snapshot. 2026-10-25 L6 governed re-pin: section re-pointed to the phase-4 successor unmasked_insertion_closure.tex (same label sec:checked-unmasked-pinch-checkpoint, wired at BGS_unified.tex:137); wrapper digests refreshed to audited live bytes."
 }
