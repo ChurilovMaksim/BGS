@@ -40,9 +40,24 @@ establishes an asymptotic theorem by itself.
   proposition, rather than an entire unformalized argument, was certified.
 - `manuscript/`: publication view synchronized with its stated source.
 
-For the 22 September finite-orbit section, the Markdown proof is canonical;
-run `python3 computations/maintenance/sync_finite_orbit_section.py --check`.
-See `record/research_pass_20260922.md` for its reproduction commands. Other
+For the 22 September finite-orbit section, the September rule naming the
+Markdown proof canonical is SUPERSEDED by the user-approved Pass-1 edition:
+the TeX file (`manuscript/unified_sections/finite_orbit_resonance.tex`) is
+the source of truth -- its hand edits carry the theorem environments and
+global numbering, and regenerating it from Markdown would destroy them. The
+Markdown note
+(`mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md`)
+remains a maintained proof, but it no longer governs the TeX section; the
+sync script intentionally reports SKIP for this target. The same
+TeX-canonical status holds for the other seven Pass-1/2 hand-edited
+sections (`fixed_map_frontier`, `return_gas`, `return_position`,
+`return_periodic`, `return_phase`, `return_general`, `return_obstruction`):
+never regenerate these eight TeX files from Markdown, in either check or
+write mode. The September reproduction record
+(`record/research_pass_20260922.md`) remains historical. This paragraph is
+the phase-7 seal-gate re-baseline (2026-10-26): it records the governed
+Pass-1 supersession, while the v1 checked-replay seal still pins the
+pre-edit AGENTS.md bytes and the portable replay is the live gate. Other
 subsystems retain their existing documented build and validation procedures.
 
 Do not delete unrelated or unread material to make a workspace look clean.
