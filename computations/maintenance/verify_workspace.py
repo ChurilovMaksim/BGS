@@ -312,6 +312,20 @@ def main() -> None:
             cmd+=['--output',str(args.logs/'pell_pair_obstruction.json')]
         elif p.stem=='resonance_nondegeneracy_certificate':
             cmd+=['--radius','8','--output',str(resonance_certificate)]
+        elif p.stem=='resonance_nondegeneracy_margin':
+            # Declared args (phase-5 G8 fix): the margin compiler requires a
+            # certificate positional and --output. It replays the DEPOSITED
+            # radius-eight certificate (ND.10 closure); its own asserts pin
+            # the content (status CERTIFICATE, remaining [], equation SHA).
+            # Missing certificate fails loudly here, never silently skips.
+            margin_certificate=ROOT/'evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.json'
+            if not margin_certificate.is_file():
+                parser.error('Missing deposited radius-eight certificate for resonance_nondegeneracy_margin: '+str(margin_certificate))
+            cmd+=[str(margin_certificate),'--output',str(args.logs/'resonance_nondegeneracy_margin.json')]
+        elif p.stem=='replay_spectral_corpus':
+            # Declared args (phase-5 G8 fix): --output-dir is required; the
+            # script creates the directory. Output stays under --logs.
+            cmd+=['--output-dir',str(args.logs/'replay_spectral_corpus')]
         elif p.stem=='resonance_hessian_obstruction':
             cmd+=['--output',str(args.logs/'resonance_hessian_obstruction.json')]
         elif p.stem=='resonance_quantum_variance':
@@ -354,6 +368,9 @@ def main() -> None:
     for p in sorted((ROOT/'computations/cpp').glob('*.cpp')):
         cmd=[str(args.build/p.stem)]
         if p.stem=='cat_map_order':cmd+=['verify']
+        # Declared args (phase-5 G8 fix): the replay requires a radius;
+        # 8 is the ND.10 radius-eight certificate radius.
+        if p.stem=='resonance_complex_replay':cmd+=['8']
         items.append(('cpp_'+p.stem,cmd,p))
     if args.only:
         missing=set(args.only)-{item[0] for item in items}
