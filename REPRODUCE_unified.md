@@ -130,6 +130,11 @@ python computations/maintenance/verify_workspace.py \
   --output build/workspace-verification.json
 ```
 
+Note: `--logs` must point outside the repository (CI uses
+`$RUNNER_TEMP/checks`). An in-tree `--logs` directory breaks checks that
+require external output directories (e.g. `charge_strengthening_replay`,
+which refuses in-repo output).
+
 The manifest schema is `bgs-archive-source-manifest-v1`, with an explicit
 `files` map from relative POSIX paths to SHA-256 and `upstream_commit: null`.
 A recipient-created manifest only establishes a baseline for those local
