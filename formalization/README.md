@@ -1,6 +1,6 @@
 # Lean 4 formalization
 
-There are 27 active source modules. All 27 compiled with Lean 4.33.1 on 25 October (3073 Lake jobs, no warnings or errors), including CoherenceBudget, TraceStatement, RetTowerGeometry and Fm009TraceObstruction. See the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) for the previous receipt's source hashes, logs, adapter and exact scope. The older receipts below retain their historical scope.
+There are 29 active source modules. All 29 compiled with Lean 4.33.1 on 26 October (3075 Lake jobs, no warnings or errors), including CoherenceBudget, TraceStatement, RetTowerGeometry, Fm009TraceObstruction, Fm001Statement and Fm021Statement. See the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) for the previous receipt's source hashes, logs, adapter and exact scope. The older receipts below retain their historical scope.
 
 **Claim ID:** BGS-FORMAL-001. This is the finite-certificate, algebraic-kernel
 and falsifier layer. A Lean theorem certifies the proposition in its source;
@@ -61,6 +61,8 @@ imports Mathlib, which this project does not vendor as in-repo sources (`lake-ma
 | `CoherenceBudget.lean` | natural-number budget positivity only; compiled 20 October 2026; axioms [propext, Quot.sound]; no matrix/codimension or BGS formalization |
 | `RetTowerGeometry.lean` | RET-004 §3 finite certificate only: S³, 30 (RW14) separations, candidate completeness, j=1,2 emptiness, gap 37/528, area 1/288; axioms [propext, Classical.choice, Quot.sound]; no analytic RW3/RW7 or bracket formalization |
 | `Fm009TraceObstruction.lean` | FM-009 implication kernel only: common reversor ⇒ trace([A,M]³) = 0; axioms [propext, Classical.choice, Quot.sound]; the nonzero computation (1) remains project proof |
+| `Fm001Statement.lean` | FM-001: statement formalization only — exact Weyl dictionary (§1), Fourier weight 51451/1000 and 32-mode count (§3) as `Prop`s; no theorems and no proofs; the §2 classical conclusions (Anosov, trivial C¹ centralizer, no C¹ reversor, no affine conjugacy) are NOT stated — no C¹-diffeomorphism/Anosov API in Mathlib 4.33.1; statement definitions depend on axioms [propext, Classical.choice, Quot.sound] |
+| `Fm021Statement.lean` | FM-021: statement formalization only — mixing, powers, trace/cyclic ramps and marked three-link bounds as `Prop`s, plus the §4 pair CUE target stated as open; no theorems and no proofs; statement definitions depend on axioms [propext, Classical.choice, Quot.sound] |
 
 The former isolated `CayleyExceptionalK23.lean` was folded into
 `CayleyEnergy.lean`; generic and exceptional controls share one implementation.
