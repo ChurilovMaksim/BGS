@@ -1,5 +1,20 @@
 # Scientific changelog
 
+## research-2026.10.1 — phase-5 release preparation
+
+Layered licensing applied (decision R3): source code under MIT
+(`LICENSE`), scholarly texts and data under CC BY 4.0
+(`LICENSE-CC-BY-4.0.txt`); per-path map in `LICENSE_POLICY.md`.
+License sections added to `README.md` / `README.ru.md`;
+`CITATION.cff` and `.zenodo.json` license fields set (single-license
+fields, D4 confirmed). No registry state, claim
+status, or manuscript content changed by this package. Release tag research-2026.10.1; registry at freeze: 199 claims =
+173 proved / 12 verification-pending / 9 conditional / 5 open
+(BGS-BGS-001, BGS-CAYLEY-005, BGS-INFO-001, BGS-RES-003,
+BGS-TRACE-005). The freeze receipt
+(record/audits/freeze_receipt_research-2026.10.1.md) carries the
+release commit.
+
 ## 2026-10-22 — full repository recheck
 
 Restored and authenticated all 6,563 files of main at 7fb99b4 before editing.

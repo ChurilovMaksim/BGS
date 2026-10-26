@@ -189,3 +189,12 @@ The [consolidated research manuscript](manuscript/README.md) is a **living, full
 
 The [11 October 2026 execution packet](archive/evidence/executions/20261011/chat-research/fresh/README.md) records exact Python/C++ controls, 23 active Lean modules and the manuscript build for that revision. **Lean verifies selected finite/algebraic kernels, not the complete analytic corpus or BGS.** Project proof status does not imply independent external refereeing or an established novelty/priority claim.
 
+
+## License
+
+Source code (`computations/`, `formalization/`) is released under the
+MIT License — see `LICENSE`. Scholarly texts, the manuscript,
+mathematical exposition, registries and research data are released
+under CC BY 4.0 — see `LICENSE-CC-BY-4.0.txt`. The per-path map is in
+`LICENSE_POLICY.md`. Until this release, no open license was granted;
+see `LICENSE_POLICY.md` for the history of that decision.

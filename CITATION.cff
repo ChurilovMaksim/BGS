@@ -1,4 +1,5 @@
 cff-version: 1.2.0
+version: research-2026.10.1
 message: "If you use results, software, or data from this research repository, cite the specific paper/result where available and cite this repository for the research corpus and verification infrastructure."
 title: "BGS: arithmetic quantum chaos and spectral universality"
 type: software
@@ -21,3 +22,8 @@ keywords:
   - spectral statistics
   - Weyl quantization
   - arithmetic dynamics
+license: MIT
+# Texts and data are released under CC BY 4.0; see LICENSE_POLICY.md
+# for the layered scheme. (License-field proposal D4, pending
+# confirmation. The release version field is set at freeze, once the
+# tag decision D2 is taken; no version is claimed here.)
