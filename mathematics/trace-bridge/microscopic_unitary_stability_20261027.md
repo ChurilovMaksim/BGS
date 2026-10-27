@@ -23,3 +23,25 @@ $$\int_0^1\operatorname{Tr}|F_N'(e^{-2\pi i\alpha}U_t)|d\alpha
 Because $F_N\ge0$, the derivative of $e^{-\operatorname{Tr}F_N}$ is bounded by that of the exponent. Integrating in $t$ proves the claim. It follows that $\|V_N-U_N\|=o(N^{-1})$ makes all such bounded Laplace functionals asymptotically identical. This extends to weak point-process laws by the standard uniqueness of Laplace functionals and local first-moment tightness; the uniform shift makes the expected count in a bounded interval equal to its length. No uniform-integrability statement for pair observables follows. Multiplication by a common unit scalar can be optimized away because it only translates the uniform shift.
 
 The related positive adjoint-resolvent representation is already [RES-006](../fixed-map/fixed_map_resolvent_frontier.md); clock minima and positive decompositions are treated in [TRACE-092](abel_clock_rigidity.md). The stronger pair-transfer inequalities in the archival source require their own detailed audit before registration. Neither this note nor the auxiliary [balanced-rounding barrier](../fixed-map/balanced_rounding_research_20261027.md) proves TRACE-005.
+
+## Positive Poisson pair energy
+
+For $s>0$ and a unitary $U$, put $r=e^{-s/N}$ and
+
+$$R_U(s)=N^{-2}\sum_{j,k=1}^N\frac{1-r^2}{1-2r\cos(\theta_j-\theta_k)+r^2}.$$
+
+For the same $U,V,\eta$ as above, the following author-checked inequality is proposed:
+
+$$e^{-2\eta/\sinh(s/N)}\le\frac{R_V(s)}{R_U(s)}\le e^{2\eta/\sinh(s/N)}.$$
+
+To check it, on Hilbert–Schmidt matrices set $Q_t(X)=U_t XU_t^*$ and $G(X)=HX-XH$. Then $Q_t'=iGQ_t$, $G$ is self-adjoint and $\|G\|\le2\eta$. The eigenvalues of $Q_t$ are the $e^{i(\theta_j-\theta_k)}$, with multiplicities, so $R_{U_t}=N^{-2}\operatorname{Tr}_{HS}P_r(Q_t)$. The same trace differentiation as above yields
+
+$$|R_{U_t}'|\le2\eta N^{-2}\operatorname{Tr}_{HS}|P_r'(Q_t)|.$$
+
+Writing $c=\cos\omega$, the identity
+
+$$ (1+r^2-2rc)^2-(1-r^2)^2(1-c^2)=[2r-(1+r^2)c]^2 $$
+
+gives $|P_r'(\omega)|\le P_r(\omega)/\sinh(s/N)$. Integrating the logarithmic derivative proves the inequality, including repeated eigenvalues. An independent Wolfram Language expansion returned zero for the difference between the two sides of the displayed polynomial identity; this checks that identity only, not the analytic argument.
+
+This comparison is relative and does not itself bound $R_U$ or prove convergence to the CUE value. Its exact adjoint representation is already present as RES-006; the perturbation bound is recorded as a separately scoped continuation and remains verification pending.
