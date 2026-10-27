@@ -320,3 +320,5 @@ those executions from later source changes and external journal refereeing.
 [Balanced rounding research note](mathematics/fixed-map/balanced_rounding_research_20261027.md): a general auxiliary construction preserves $o(1)$ absolute errors for polynomially many short traces while giving an empty microscopic limit. Author argument, verification pending; the construction is not the fixed kicked family and does not settle TRACE-005. The conditional connection to TRACE-113 is stated separately.
 
 The [complete historical chat master](record/chat_trace005_20261027/README.md) is retained byte-for-byte in reconstructible parts. Its historical research notes are not automatically promoted to proved claims.
+
+The [bounded Laplace-functional stability note](mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) isolates a separate $o(N^{-1})$ unitary perturbation criterion. It is author-checked, verification pending and does not transfer unbounded pair moments.
