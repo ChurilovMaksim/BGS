@@ -2056,3 +2056,7 @@ The remaining task is a model-specific Heisenberg-scale cancellation
 estimate for the actual mixed resolvent products, or an equally strong
 direct trace comparison. No noise approximation, source theorem or finite
 computation in this chapter supplies that missing estimate.
+
+## Operator-resolution continuation
+
+[TRACE-115/116](../trace-bridge/microscopic_unitary_stability_20261027.md) provide direct norm/positive-energy comparison and an original-family compact pair-test transfer through O(N^-2) matrix approximants, using the registered TRACE-113. The [balanced-rounding barrier](balanced_rounding_research_20261027.md) preserves polynomially many short traces at a coarser operator scale while changing the quantizer. Neither result computes the original signed Heisenberg limit.

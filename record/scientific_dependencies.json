@@ -1,6 +1,6 @@
 {
   "schema": "bgs-scientific-dependencies-v1",
-  "updated": "2026-10-22",
+  "updated": "2026-10-27",
   "nodes": [
     "BGS-BGS-001",
     "BGS-CAYLEY-001",
@@ -200,7 +200,10 @@
     "BGS-TRACE-110",
     "BGS-TRACE-111",
     "BGS-TRACE-112",
-    "BGS-TRACE-113"
+    "BGS-TRACE-113",
+    "BGS-TRACE-114",
+    "BGS-TRACE-115",
+    "BGS-TRACE-116"
   ],
   "edges": [
     {
@@ -944,6 +947,11 @@
       "type": "scientific-prerequisite"
     },
     {
+      "from": "BGS-RES-006",
+      "to": "BGS-TRACE-115",
+      "type": "scientific-prerequisite"
+    },
+    {
       "from": "BGS-RES-014",
       "to": "BGS-RES-015",
       "type": "scientific-prerequisite"
@@ -1406,6 +1414,16 @@
     {
       "from": "BGS-TRACE-113",
       "to": "BGS-TRACE-110",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-113",
+      "to": "BGS-TRACE-116",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-115",
+      "to": "BGS-TRACE-116",
       "type": "scientific-prerequisite"
     }
   ],

@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**199 registered nodes; 241 direct prerequisite edges.**
+**202 registered nodes; 244 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -101,7 +101,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-RES-003](../mathematics/open_questions.md) | open | `BGS-RES-001`, `BGS-RES-002` | None registered | 0 |
 | [BGS-RES-004](../mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-005](../mathematics/resonance-cohomology/frozen_full_lag_resonance.md) | proved | None registered | None registered | 0 |
-| [BGS-RES-006](../mathematics/fixed-map/fixed_map_resolvent_frontier.md) | proved | None registered | None registered | 1 |
+| [BGS-RES-006](../mathematics/fixed-map/fixed_map_resolvent_frontier.md) | proved | None registered | None registered | 2 |
 | [BGS-RES-007](../mathematics/fixed-map/fixed_map_resolvent_frontier.md) | proved | `BGS-FM-007`, `BGS-RES-006` | None registered | 0 |
 | [BGS-RES-008](../mathematics/pell/pell_sharp_orbit_coercivity.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-009](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
@@ -212,4 +212,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-110](../mathematics/fixed-map/spectral_orbit_distance.md) | proved | `BGS-TRACE-112`, `BGS-TRACE-113` | None registered | 0 |
 | [BGS-TRACE-111](../mathematics/fixed-map/pell_weighted_curvature.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-112](../mathematics/fixed-map/displacement_density_trace_bound.md) | proved | `BGS-TRACE-106` | None registered | 1 |
-| [BGS-TRACE-113](../mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) | proved | None registered | `EXT-BR-1975` | 1 |
+| [BGS-TRACE-113](../mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) | proved | None registered | `EXT-BR-1975` | 2 |
+| [BGS-TRACE-114](../mathematics/fixed-map/balanced_rounding_research_20261027.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-115](../mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) | proved | `BGS-RES-006` | None registered | 1 |
+| [BGS-TRACE-116](../mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) | proved | `BGS-TRACE-113`, `BGS-TRACE-115` | None registered | 0 |

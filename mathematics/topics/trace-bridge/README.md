@@ -1,5 +1,9 @@
 # Trace identities and microscopic limits
 
+## Operator resolution and short traces
+
+[TRACE-114 short-trace barrier](../../fixed-map/balanced_rounding_research_20261027.md) and [TRACE-115/116 operator stability and pair transfer](../../trace-bridge/microscopic_unitary_stability_20261027.md) continue the uniform-trace theorem. Exact matrix approximations and general changed-quantizer examples have different scopes; the original pair law remains open.
+
 ## Circular-phase continuation, 19 October
 
 [Adopted trace/feedback account](../../trace-bridge/phase_ensemble_continuation.md),

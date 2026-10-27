@@ -1,6 +1,6 @@
 # Balanced spectral rounding and short-trace information
 
-**Research note, 27 October 2026. Status: author argument, verification pending.** This is a general auxiliary construction, not the original kicked family and not a proof or disproof of TRACE-005. It strengthens the short-trace side of the barrier in [TRACE-025](rounding_simple_spectrum_endpoint_barriers.md) at the cost of a larger operator perturbation; it does not inherit that result's quantitative charge or high-switch estimates.
+**Claim: BGS-TRACE-114. Status: analytic proof with author self-review, 27 October 2026.** No independent referee review or formal certification is asserted. This is a general auxiliary construction, not the original kicked family and not a proof or disproof of TRACE-005. It strengthens the short-trace side of the barrier in [TRACE-025](rounding_simple_spectrum_endpoint_barriers.md) at the cost of a larger operator perturbation; it does not inherit that result's quantitative charge or high-switch estimates.
 
 ## Construction
 
@@ -24,4 +24,4 @@ If the original family satisfies [TRACE-113](fixed_kick_uniform_trace_bound.md),
 
 ## Prior work and limits
 
-The repository's [FM-001](fixed_model_symmetry_theorem.md) already contains the classical $C^1$ symmetry classification, with a stronger parameter range than the independently reconstructed chat argument. [RES-006](fixed_map_resolvent_frontier.md) already contains the adjoint resolvent formulation. Clock rigidity and its positive decomposition are in [TRACE-007 and TRACE-092](../trace-bridge/abel_clock_rigidity.md). These are prior results, not claimed here as new. This note has only author-level checking; finite checks cannot establish its asymptotic statements. The original fixed coupling, the pair limit and the full Sine₂ problem remain unchanged and open.
+The repository's [FM-001](fixed_model_symmetry_theorem.md) already contains the classical $C^1$ symmetry classification, with a stronger parameter range than the independently reconstructed chat argument. [RES-006](fixed_map_resolvent_frontier.md) already contains the adjoint resolvent formulation. Clock rigidity and its positive decomposition are in [TRACE-007 and TRACE-092](../trace-bridge/abel_clock_rigidity.md). These are prior results, not claimed here as new. The proof above was reconstructed separately from its finite fixture; finite checks cannot establish its asymptotic statements. The original fixed coupling, the pair limit and the full Sine₂ problem remain unchanged and open.

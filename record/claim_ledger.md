@@ -1,6 +1,10 @@
 # Claim ledger
 
-## Research continuation, 27 October 2026
+## Adopted operator continuation, 27 October 2026
+
+TRACE-114, TRACE-115 and TRACE-116: analytic proofs reconstructed with author self-review; [full disposition and dependencies](trace005_continuation_review.md). They cover balanced short-trace rounding, bounded microscopic/positive pair stability and original-family pair transfer through O(N^-2) approximants. No CUE limit is supplied; BGS-TRACE-005 and BGS-BGS-001 remain OPEN. Earlier provisional nonregistration statements below are superseded for these three precise claims only.
+
+## Provisional research checkpoint, 27 October 2026 (superseded above)
 
 [Bounded microscopic test stability](../mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) is an author argument pending verification; the stronger pair-transfer claims in the archive have not been registered.
 
