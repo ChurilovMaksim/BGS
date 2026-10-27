@@ -1,0 +1,106 @@
+\section{Operator resolution and the short-trace information barrier}
+\label{sec:microscopic-operator-stability}
+The global trace estimate of TRACE-113 has a useful microscopic consequence:
+a sufficiently accurate matrix approximation preserves the prescribed pair
+trace test. This is a transfer theorem, not a determination of the test's limit.
+The complementary construction below shows why much coarser quantum information
+and polynomially many short traces cannot determine a local law.
+The proofs have author self-review; no external refereeing or formal certification
+is asserted. Canonical proofs are in
+\path{mathematics/trace-bridge/microscopic_unitary_stability_20261027.md}
+and \path{mathematics/fixed-map/balanced_rounding_research_20261027.md}.
+
+For unitary $U$ of dimension $N$, define
+\[
+ R_U(s)=1+\frac{2}{N^2}\sum_{m\ge1}e^{-sm/N}|\operatorname{Tr}U^m|^2,
+ \qquad T_U(w)=\frac1{N^2}\sum_{m\ge1}w(m/N)|\operatorname{Tr}U^m|^2.
+\]
+The circle point process is unfolded by $N$ and rooted with one uniform common
+shift. Its Laplace functional is denoted $\mathscr L_U(f)$.
+
+\begin{theorem}[Microscopic unitary stability, BGS-TRACE-115]
+\label{thm:microscopic-unitary-stability}
+If $U,V$ are unitary, $\epsilon=\|V-U\|<2$, and
+$\eta=2\arcsin(\epsilon/2)$, then for nonnegative $f\in C_c^\infty(\mathbb R)$,
+\[
+ |\mathscr L_V(f)-\mathscr L_U(f)|\le\frac{N\eta}{2\pi}\|f'\|_1,
+ \qquad e^{-2\eta/\sinh(s/N)}\le\frac{R_V(s)}{R_U(s)}
+ \le e^{2\eta/\sinh(s/N)}.
+\]
+For real even $w\in C_c^2(\mathbb R)$, set
+$C_w=4\pi\|tw\|_1+\pi^{-1}\|(tw)''\|_1$. Then
+\[
+ |T_V(w)-T_U(w)|\le\frac{C_wN\eta}{2}
+ e^{2\eta/\sinh(2\pi/N)}R_U(2\pi).
+\]
+\end{theorem}
+\begin{proof}
+Write $V=e^{iH}U$, $\|H\|\le\eta$. Differentiating along $e^{itH}U$
+and averaging the periodized $f$ over the common shift proves the first bound.
+On Hilbert--Schmidt matrices the generator is $\operatorname{ad}_H$, of norm
+at most $2\eta$. For the Poisson kernel $P_r$,
+$|P_r'|\le P_r/\sinh(s/N)$ when $r=e^{-s/N}$; its square certificate is
+\[
+ (1+r^2-2rc)^2-(1-r^2)^2(1-c^2)=[2r-(1+r^2)c]^2.
+\]
+Trace differentiation gives the relative bound. The inverse Fourier transform
+$\phi$ of $w$ obeys $|\phi'(x)|\le C_w/(1+x^2)$. Periodizing it gives a
+Poisson majorant for the differentiated trace weight, hence the final bound.
+All arguments allow repeated eigenvalues.
+\end{proof}
+
+\begin{theorem}[Original-family pair transfer, BGS-TRACE-116]
+\label{thm:original-pair-transfer}
+For the unchanged fixed-$\tau$ family along all sufficiently large odd $N$,
+if $V_N$ is unitary and $\|V_N-U_N\|\le K/N^2$ with fixed $K$, then
+$|T_{V_N}(w)-T_{U_N}(w)|=O_{w,K}(1/\log N)$.
+For arbitrary matrices $B_N$ with that norm error, the finite trace polynomials
+instead differ by $O_{w,K}(1/\sqrt{\log N}+1/N)$.
+No phase point process is assigned to a nonunitary $B_N$.
+\end{theorem}
+\begin{proof}
+TRACE-113 supplies $|\operatorname{Tr}U_N^m|\le Ca^m$ with one threshold
+for all $m$. If $|\operatorname{Tr}U^m|^2/N^2\le\delta$ for $1\le m<L$,
+expanding a geometric block in the Poisson kernel gives
+\[
+ R_U(s)\le(1-\delta)\coth\frac{sL}{2N}+\delta\coth\frac{s}{2N}.
+\]
+Take $L=\lfloor\log N/(2\log a)\rfloor$ and $\delta=C^2/N$ eventually.
+Thus $R_{U_N}(s)=O_s(N/\log N)$, and the preceding theorem proves the
+unitary assertion. For $B_N$, telescoping powers gives
+$|\operatorname{Tr}(B_N^m-U_N^m)|\le Nm\epsilon_N e^{RN\epsilon_N}$
+on the support of $w(m/N)$. Its weighted square sum is
+$O_w(\epsilon_N^2N^3e^{2RN\epsilon_N})$.
+Cauchy--Schwarz with $T_{U_N}(|w|)=O_w(N/\log N)$ proves the second bound.
+The inherited TRACE-113 constants remain noneffective.
+\end{proof}
+
+\begin{theorem}[Short-trace barrier, BGS-TRACE-114]
+\label{thm:balanced-spectral-rounding}
+Let $U_N$ be any unitaries and $0<\gamma<1/2$, $\gamma+1/2<\alpha<1$.
+There are unitaries $V_N$ sharing their eigenbasis, with
+$\|V_N-U_N\|=O(N^{-\alpha})$ and
+\[
+ \max_{1\le m\le\lfloor N^\gamma\rfloor}
+ |\operatorname{Tr}V_N^m-\operatorname{Tr}U_N^m|=o(1),
+\]
+whose uniformly rooted microscopic processes converge to the empty process.
+\end{theorem}
+\begin{proof}
+Round each eigenphase between its two neighboring points of a grid of size
+$K=\lceil N^\alpha\rceil$, spacing $h=2\pi/K$.
+Linear interpolation has moment error at most $Nm^2h^2/2$.
+A real kernel direction in the $2M$ moment constraints, $M=\lfloor N^\gamma\rfloor$,
+moves all but at most $2M$ interpolation weights to endpoints without changing
+the interpolated moments. Rounding the remainder adds at most $Mmh$.
+The uniform bound is $NM^2h^2/2+M^2h=o(1)$.
+An optional phase split of total size $N^{-4}$ adds at most $MN^{-4}$.
+All eigenphases lie in $K$ intervals of that width; a fixed unfolded window
+meets them with probability $O(K/N+KN^{-4})=o(1)$.
+\end{proof}
+This auxiliary family changes the exact quantum kick. Compared with TRACE-025
+it preserves stronger absolute short-trace data at a coarser operator scale;
+it does not preserve all of that theorem's charge estimates.
+The original signed Heisenberg pair limit and higher factorial hierarchy remain
+open. Weak process convergence alone does not imply convergence of unbounded
+pair moments.

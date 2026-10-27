@@ -145,3 +145,7 @@ For the actual frozen kick, \(a=\tau N^2\) in this normalization, far outside (8
 ## 4. Research consequence
 
 Any loop-equation route must control varying off-real arguments and multiple distinguished orientations, including \((w,w,v)\); arbitrarily many successful \((w,v,\ldots,v)\) tests at one selected height are insufficient. Any perturbative transfer route must separately justify the model-specific time-average or normal-form estimates at the actual fixed strength.
+
+## Operator-resolution continuation
+
+[TRACE-115/116](../trace-bridge/microscopic_unitary_stability_20261027.md) provide direct norm/positive-energy comparison and an original-family compact pair-test transfer through O(N^-2) matrix approximants, using the registered TRACE-113. The [balanced-rounding barrier](balanced_rounding_research_20261027.md) preserves polynomially many short traces at a coarser operator scale while changing the quantizer. Neither result computes the original signed Heisenberg limit.

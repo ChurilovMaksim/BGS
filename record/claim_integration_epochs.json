@@ -1,7 +1,7 @@
 {
   "schema": "bgs-follow-on-claim-epoch-v1",
   "base_epoch": "2026-10-07-wave3",
-  "reviewed_on": "2026-10-23",
+  "reviewed_on": "2026-10-27",
   "purpose": "Explicit state/source lineage through the already adopted 19 October research; earlier reviews do not certify later claims.",
   "after_wave3": [
     {
@@ -635,6 +635,24 @@
       "state": "proved",
       "source": "mathematics/foundations/earlier_foundations.md",
       "disposition": "New follow-on registration 2026-10-25: finite torus level sets and branch scales at p=199 (Q = a²-ab-b², cyclic action of order 11); formalization formalization/Bgs/TorusLevelSets.lean and formalization/Bgs/TorusScaleLaw.lean."
+    },
+    {
+      "id": "BGS-TRACE-114",
+      "state": "proved",
+      "source": "mathematics/fixed-map/balanced_rounding_research_20261027.md",
+      "disposition": "27 October continuation: reconstructed analytic author proof; exact boundary in registry and record/trace005_continuation_review.md. No independent referee or formal certification."
+    },
+    {
+      "id": "BGS-TRACE-115",
+      "state": "proved",
+      "source": "mathematics/trace-bridge/microscopic_unitary_stability_20261027.md",
+      "disposition": "27 October continuation: reconstructed analytic author proof; exact boundary in registry and record/trace005_continuation_review.md. No independent referee or formal certification."
+    },
+    {
+      "id": "BGS-TRACE-116",
+      "state": "proved",
+      "source": "mathematics/trace-bridge/microscopic_unitary_stability_20261027.md",
+      "disposition": "27 October continuation: reconstructed analytic author proof; exact boundary in registry and record/trace005_continuation_review.md. No independent referee or formal certification."
     }
   ],
   "invariants": [

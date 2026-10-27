@@ -315,10 +315,8 @@ those executions from later source changes and external journal refereeing.
 <a id="review-package"></a>
 
 
-## Short-trace information barrier, 27 October 2026
+## Operator resolution and short-trace information
 
-[Balanced rounding research note](mathematics/fixed-map/balanced_rounding_research_20261027.md): a general auxiliary construction preserves $o(1)$ absolute errors for polynomially many short traces while giving an empty microscopic limit. Author argument, verification pending; the construction is not the fixed kicked family and does not settle TRACE-005. The conditional connection to TRACE-113 is stated separately.
+The [unitary stability and original-family pair-transfer theorem](mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) gives a concrete continuation of TRACE-113: an $O(N^{-2})$ matrix approximant has the same compact pair trace test, with vanishing error. For weak point-process limits, $o(N^{-1})$ unitary error suffices; the stronger pair statement uses positive energy rather than an implicit uniform-integrability assumption. No suitable approximant with a proved CUE law is currently known.
 
-The [complete historical chat master](record/chat_trace005_20261027/README.md) is retained byte-for-byte in reconstructible parts. Its historical research notes are not automatically promoted to proved claims.
-
-The [bounded Laplace-functional stability note](mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) isolates a separate $o(N^{-1})$ unitary perturbation criterion. It is author-checked, verification pending and does not transfer unbounded pair moments.
+The complementary [balanced-rounding theorem](mathematics/fixed-map/balanced_rounding_research_20261027.md) shows that polynomial short-trace data and coarser operator/eigenvector control do not determine a local law for a general quantizer. It changes the exact kicked matrices. [The disposition review](record/trace005_continuation_review.md) connects the complete prior continuation to current sources and unresolved proof obligations; its historical source is kept once in the archive.

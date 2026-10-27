@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Operator resolution and the short-trace barrier, 27 October 2026
+
+[TRACE-114](fixed-map/balanced_rounding_research_20261027.md) shows that even absolute $o(1)$ preservation of polynomially many short traces and eigenvectors does not determine a microscopic law for a general quantizer. [TRACE-115/116](trace-bridge/microscopic_unitary_stability_20261027.md) prove bounded-test and positive-energy stability, then transfer the original-family pair test through $O(N^{-2})$ matrix errors using TRACE-113. The unitary error is $O(1/\log N)$; the nonunitary finite-trace error is $O(1/\sqrt{\log N}+1/N)$. These are analytic author proofs, not external refereeing. The [disposition review](../record/trace005_continuation_review.md) credits existing results and tracks the unadopted candidate estimates. The original pair limit and all-order hierarchy remain open.
+
 ## Trace results and dependency closure, 22 October 2026
 
 The [review](../record/spectral_research/trace_closure.md) closes the inserted-trace input in TRACE-109 by a
@@ -421,7 +425,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**199 registered claims: 173 proved, 12 verification-pending, 9 conditional, 5 open.**
+**202 registered claims: 176 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -587,7 +591,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (90 claims)
+### TRACE family (93 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -681,5 +685,8 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-111` | **PROVED** | Full weighted Pell gradient, negative initial Hessian and forced early inflection |
 | `BGS-TRACE-112` | **PROVED** | Uniform classical displacement density and independent logarithmic global spectral comparison |
 | `BGS-TRACE-113` | **PROVED** | Uniform original-family power-trace bound from continuous Gaussian scalar and strict pressure gap |
+| `BGS-TRACE-114` | **PROVED** | Balanced spectral rounding preserves polynomial short traces without a local law |
+| `BGS-TRACE-115` | **PROVED** | Bounded microscopic stability and positive pair-energy comparison for unitary perturbations |
+| `BGS-TRACE-116` | **PROVED** | Original-family compact pair test transfers through O(N^-2) matrix error |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

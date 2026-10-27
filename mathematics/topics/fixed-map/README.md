@@ -1,5 +1,9 @@
 # Fixed deterministic map
 
+## Operator resolution and short traces
+
+[TRACE-114 short-trace barrier](../../fixed-map/balanced_rounding_research_20261027.md) and [TRACE-115/116 operator stability and pair transfer](../../trace-bridge/microscopic_unitary_stability_20261027.md) continue the uniform-trace theorem. Exact matrix approximations and general changed-quantizer examples have different scopes; the original pair law remains open.
+
 The [final spectral edition](../../spectral_research/README.md) provides the
 complete thematic source corpus. New maintained notes: [coordinate return](../../fixed-map/coordinate_return_quartic.md),
 [inserted trace](../../fixed-map/inserted_trace_coboundary.md), [spectral distance](../../fixed-map/spectral_orbit_distance.md),

@@ -1,0 +1,58 @@
+# TRACE-005 continuation: disposition and dependency review
+
+Reviewed from main `8a6aa7bd2c9628e7a12c532ca76d08f9399622c5`, 27 October 2026. This is author self-review, without subagents or external refereeing. The target remains the unchanged fixed-$\tau$ family over all odd dimensions. This review supersedes the provisional status prose of the preceding archive-only integration; it does not rewrite historical evidence.
+
+## Adopted additions
+
+| Claim | Mathematical content | Dependency boundary |
+|---|---|---|
+| BGS-TRACE-114 | [Balanced spectral rounding](../mathematics/fixed-map/balanced_rounding_research_20261027.md): absolute $o(1)$ error in every trace through $N^\gamma$, $\gamma<1/2$, can coexist with an empty local limit | General auxiliary family; no exact-kick identity, subprincipal Egorov estimate or actual-model counterexample |
+| BGS-TRACE-115 | [Microscopic stability](../mathematics/trace-bridge/microscopic_unitary_stability_20261027.md), sections 1–3: bounded Laplace stability, relative positive pair energy, and compact pair-moment comparison | Finite-dimensional unitary calculus; unbounded moments are transferred only with the displayed energy control |
+| BGS-TRACE-116 | Same source, sections 4–5: original-family pair test transfers through $O(N^{-2})$ matrix error, including nonunitary approximants | Uses existing TRACE-113 with its inherited proof and external input; original pair limit is still unknown |
+
+These proofs were reconstructed from their definitions, including the $N$, $2\pi$, normalized Hilbert–Schmidt and common-shift factors. The block estimate in section 4 was rederived from a finite geometric series; no unproved short-trace bound from the chat is needed for TRACE-116. The general comparison and the original-family application are registered separately.
+
+For TRACE-114 the real-linear box argument preserves every interpolated complex moment, leaves at most $2M$ fractional coordinates and bounds the final rounding by $Mmh$. The two exponents are negative precisely under $\gamma+1/2<\alpha<1$. The empty-process conclusion follows directly from the total width of the grid neighborhoods, not from divergence of an unbounded moment.
+
+For TRACE-115 the positive kernel derivative inequality is certified by an explicit square. Differentiation is inside a finite-dimensional trace with an absolutely convergent Fourier series; no eigenvalue branch regularity or simple spectrum is assumed. TRACE-116 separately uses Cauchy–Schwarz on finite trace sequences for nonunitary matrices, and makes no point-process assertion about them.
+
+## Complete disposition of the previous research blocks
+
+The [historical master](../archive/record/trace005_research_20261027.md) preserves every submitted proof, computation, failed route and original qualification. The section references below cover its full mathematical continuation; sections IX–XII contain the open-goal list, certificates, programs and provenance. “Related” means related scope, not an identity of theorems. Technical subclaims left unreviewed are retained as such rather than silently promoted.
+
+| Master section | Current disposition and continuation |
+|---|---|
+| I: target | Unchanged TRACE-005; fixed $\tau=10^{-80}$, all odd $N$, one common shift, signed all-order hierarchy. No replacement by prime sizes or auxiliary noise. |
+| II: L1–L7, zero-kick grouped sums | Exact weighted/unweighted grouped objects are distinguished from the original signed pair statistic. Finite Gauss and rank-count checks reran successfully. The all-$m$ rank count and growing-window proof have not been fully re-audited; retain as a scoped candidate, not an adopted microscopic theorem. Related finite-field cycle work: TRACE-065/088. |
+| III: T1–T3, reflected words | The reflected-word suppression conclusion is already covered by the stronger maintained [FM-022](../mathematics/fixed-map/reversed_path_decay.md). The particular fourth-order intensity-asymmetry coefficient was recomputed exactly; this does not independently certify its uniform analytic remainder. No duplicate reflection theorem is registered. |
+| IV: G1–G2, positive grouping | The positive occupation grouping is not identified with the original signed defect. Its universal lower-bound argument is preserved as a candidate obstruction; it must not be substituted for TRACE-005. The existing signed-versus-absolute obstruction is [TRACE-010](../mathematics/trace-bridge/signed_heisenberg_comparison.md), with a different statement. |
+| V: R1–R4, arithmetic resonance and split examples | Related exact cohomology: [FM-032](../mathematics/fixed-map/quantum_cyclic_cohomology.md); related changed-family examples: TRACE-006/025. Nonperiodic auxiliary spectra do not settle the original fixed-family law. No duplicate simplicity theorem. |
+| VI: H1–H4, Weyl twirling | The original-family global/logarithmic conclusion is already covered by TRACE-106/112/113. The proposed explicit constants uniform down to zero coupling are stronger in a different direction and have not been fully re-audited. TRACE-116 uses the existing TRACE-113 instead. |
+| VII: Z1–Z5, weak laws and generator blocks | Weak convergence does not automatically give unbounded pair-moment convergence. The rare-level coupling estimate has a direct union-bound proof; generator-chain structure already belongs to FM-005. Existing all-orders sufficiency, TRACE-086, is unchanged; no UI hypothesis is added to it. |
+| VIII: I1–I7, one-step intensity limit | Exact fourth-order coefficient checks passed. The proposed complete WKB/alias remainder and resulting nonzero limit are not certified by those checks. Existing one-step theory is FM-021/TRACE-108; preserve the stronger candidate with that boundary. |
+| VIIIa: O1–O4, intensity operator | Finite Fourier and trace fixtures passed. The operator-limit proof remains a candidate requiring full uniform remainder review. Existing mixing FM-021 does not imply this exact proposed limit. |
+| VIIIb: E1–E5, algebraic parameter | Existing FM-010 already proves all power traces nonzero and classifies scalar returns, including the exceptional $N=7$. FM-008 supplies the stronger spectral statements only when $7\nmid N$. Those qualifications govern; no new all-odd simplicity claim is adopted. |
+| VIIIc: central mechanism | The failure of norm decay for unobserved coherence is already made precise by TRACE-082/083. It does not refute observed signed cancellation. No duplicate memory theorem. |
+| VIIId: SP1–SP4, soft modes | Finite Hessian and profile fixtures passed. The path construction does not evaluate the total signed Heisenberg aggregate. The proposed large-dimensional bounds remain scoped candidates, with no stationary-phase closure inferred. |
+| VIIIe: CG1–CG3, Gaussian weighting | Finite frame, normal-form and changed-weight fixtures passed. The original weight is not recovered. Related existing Gaussian comparisons: TRACE-093/094; their model and normalization must not be conflated. |
+| VIIIf: weight reconstruction | Reconstruction returns a unitary-channel problem and does not control the needed signed sum. Retain as a failed route, not a theorem proving the target. |
+| VIIIg: OF1–OF4, temporal intensities and secular coefficients | The projector-frame dimension argument is a separate general bound, consistent with TRACE-082/083; the stronger actual-family comparisons and secular falsifier require separate review. One-step mixing is not equality of time-$m$ intensities with $P^m$. |
+| VIIIh: AP1–AP6, local arithmetic | FM-005 and FM-008 already contain the Jacobi degeneration and total nonvanishing of minors, with $7\nmid N$ for the latter. No duplicate theorem or extension through $7\mid N$ is adopted. |
+| VIIIi: AQ1–AQ5, quantitative arithmetic | Related existing FM-011 already gives an effective but submicroscopic gap floor. The candidate elementary height/complex-witness bounds do not supply a microscopic real-time estimate and have not been fully compared term by term. |
+| VIIIj: LD1–LD6, dispersion and Ward identities | Candidate uniform entry bounds and each-eigenvector delocalization require the full claimed Egorov/localization chain, not just a few matrices. Determinant memory is related to TRACE-082 and inserted observables to TRACE-109. The stronger quantitative constants remain unadopted. |
+| VIIIk: CW1–CW4, weighted phase differences | The unaveraged mass $66033/160000$ already appears in FM-005/032. It differs deliberately from the orbit-averaged Pell variance $1650797/4000000$ in FM-002. The weighted correlation is not the unweighted pair law; its proposed profile remains a candidate. |
+| VIIIl: PW1–PW5, spectral whitening | Related weighted-Fourier displacement theory: TRACE-112. The exact proposed Wiener profile and quantum filtered-observable estimate need their own full audit; classical summability does not determine quantum $1/N$ terms. |
+| VIIIm: SG1–SG7, isospectral gauge | Exact conjugation does not alter the spectrum. The proposed uniform regularity and acceleration bounds depend on PW and are retained as unadopted candidates. Gauge normalization alone does not evaluate microscopic couplings. |
+| VIIIn: PR1–PR6, positive pair operator | RES-006 already supplies the representation; TRACE-007/091/092 supply minima and positive remainders. The finite-block upper bound was reconstructed and adopted in TRACE-116, section 4. The proposed one-sided weak-law bound is retained with its truncation/integrability obligation; it is not silently made an equivalence. |
+| VIIIo: RV1–RV6, classical symmetries | FM-001 already proves the full classical centralizer and absence of reversers with a stronger parameter range. Parameter scalings and map orientation must be retained. The quantum positive-energy comparison is covered by TRACE-115; no duplicate classical theorem. |
+| VIIIp: QS1–QS6, quantum precision | QS1–QS3 are reconstructed as TRACE-115/116. The auxiliary rounding mechanism is strengthened by TRACE-114. The proposed extra preserved charge, sharp subprincipal and acceleration properties are not inferred from operator closeness. Generic examples are not original-family counterexamples. |
+
+## Verification and provenance
+
+All ten embedded verification programs were rerun from the preserved source files, with outputs outside the active source tree. Each exited zero. The consolidated receipt records source and output hashes and exact ranges. These are finite checks only. The prior maintenance-suite run with missing SymPy remains a failed/incomplete run, not superseded by these different tests. The package installation attempt timed out; a full dependency-complete regression has not been completed.
+
+The historical master SHA-256 is `b10f749d127443d8664aebb882676a2100f78243d063c385f5f05b0db381cfd2`. The archive was consolidated without altering its bytes; it is not an active proof source. No copy of its duplicate proofs or ten embedded programs was added to the active mathematical or computational corpus. The current work uses existing authoritative theorem files, two maintained supplementary proofs and one manuscript continuation.
+
+## Remaining mathematical work
+
+The target is still to show the original signed pair defect tends to zero and to control every fixed higher factorial order. TRACE-116 gives a precise transfer criterion if a tractable approximant with a proved pair law can be supplied. TRACE-114 rules out deriving such a law solely from the recorded polynomial short-trace data and coarse operator/eigenvector information. The unadopted stronger intensity, dispersion, arithmetic and gauge estimates listed above remain individually reviewable routes, not established inputs to the current claim DAG.

@@ -1,5 +1,9 @@
 # Scientific changelog
 
+## 2026-10-27 — operator-resolution continuation
+
+Adopt TRACE-114/115/116 at their exact author-reviewed scopes; connect the uniform trace bound to compact pair-test transfer, and distinguish the short-trace barrier from the exact kicked family. Synchronize the registry, theorem index, dependency graph, topic views, bilingual introductions and unified manuscript. Consolidate the historical chat source into one immutable archived Markdown; avoid duplicate proofs and programs. Unreviewed candidate estimates remain explicitly unadopted.
+
 ## research-2026.10.1 — phase-5 release preparation
 
 Layered licensing applied (decision R3): source code under MIT
