@@ -188,7 +188,7 @@ Heisenberg powers, for every fixed order and every smooth compact Fourier
 weight. The modulus is taken outside the complete normalized sum. The
 [exact bridge](mathematics/trace-bridge/trace_to_local_statistics_bridge.md) states the
 additional positivity and extension hypotheses needed for local correlations.
-The necessary pair reference is
+The pair-moment reference in the prescribed hierarchy is
 
 $$\frac1{N^2}\sum_{n\ge1}e^{-2sn/N}|\operatorname{Tr}U_N^n|^2
 \longrightarrow\frac{1-e^{-2s}}{4s^2},\qquad s>0.$$
@@ -314,3 +314,11 @@ those executions from later source changes and external journal refereeing.
 <a id="next-decisive-research-tasks"></a>
 <a id="review-package"></a>
 
+
+## Short-trace information barrier, 27 October 2026
+
+[Balanced rounding research note](mathematics/fixed-map/balanced_rounding_research_20261027.md): a general auxiliary construction preserves $o(1)$ absolute errors for polynomially many short traces while giving an empty microscopic limit. Author argument, verification pending; the construction is not the fixed kicked family and does not settle TRACE-005. The conditional connection to TRACE-113 is stated separately.
+
+The [complete historical chat master](record/chat_trace005_20261027/README.md) is retained byte-for-byte in reconstructible parts. Its historical research notes are not automatically promoted to proved claims.
+
+The [bounded Laplace-functional stability note](mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) isolates a separate $o(N^{-1})$ unitary perturbation criterion. It is author-checked, verification pending and does not transfer unbounded pair moments.

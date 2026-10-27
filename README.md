@@ -42,7 +42,7 @@ U_N=\exp(i\tau N A_N)M_N,
 
 Here $M_N$ is the specified quantization of the hyperbolic cat map, and $A_N$ the specified Weyl-quantized nonlinear kick. [The canonical model source](mathematics/fixed-map/fixed_map_resolvent_frontier.md) fixes conventions, exceptional dimensions, and symmetry questions. **The coupling remains fixed as $N\to\infty$**; replacing it with vanishing coupling, independent random phases, or noise changes the problem.
 
-Even a necessary two-point reference remains unproved for this family:
+The following pair-moment reference in the prescribed trace hierarchy remains unproved for this family. Weak convergence to Sine₂ alone does not imply convergence of these unbounded pair moments without additional uniform-integrability control:
 
 ```math
 L_N(s)=\frac{1}{N^2}\sum_{m\ge1}e^{-2sm/N}

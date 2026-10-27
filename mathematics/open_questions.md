@@ -439,7 +439,7 @@ commute with $V_N$; assume no independent spectra. Algebraic
 simple-spectrum (`BGS-FM-008`, only $7\nmid N$) and common antiunitary
 obstruction (`BGS-FM-009`, except $N=7$) exclude exact degeneracy
 mechanisms within their scopes but give no quantitative mixed-trace
-cancellation. A concrete necessary pair milestone is
+cancellation. A concrete pair-moment milestone in the prescribed hierarchy is
 $N^{-1}\operatorname{Tr}\Gamma_{N,N}^2\to4/3$, where
 $\Gamma_{N,N}=[N^{-1}\operatorname{Tr}U_N^{b-a}]_{0\le a,b<N}$;
 this has not been proved for the model.
@@ -769,3 +769,7 @@ The actual unmasked q=1 one-pinch aggregate is closed at [TRACE-024](fixed-map/a
 
 The complete UNMASKED separated and convex insertion hierarchy is now closed by [TRACE-028](fixed-map/right_frame_unmasked_pinch_hierarchy.md), superseding older open wording for that complete normalized sum. Every z_N in [0,1] is included; j>=3 centered words have a uniform o(N) bound. Still open: Hamming/high-switch coefficient extraction, source weights/derivatives/rates, masked sums and marked-switch T16, signed centered deconvolution and the undamped zero-insertion spectral difference. [TRACE-029](fixed-map/convex_pinch_weak_noise_and_deconvolution.md) proves complete signed bounded-u stability only. Its actual unsigned large-log divergence comes from the retained identity contribution and does not refute T16; cancellation must be maintained before absolute estimates. Balanced law, Ward(13), TRACE005, higher factorial comparison and BGS remain OPEN.
 
+
+### Short-trace barrier (27 October 2026)
+
+The [balanced rounding note](fixed-map/balanced_rounding_research_20261027.md) gives an author-checked, verification-pending auxiliary construction. It preserves absolute $o(1)$ trace errors through $N^\gamma$, $\gamma<1/2$, but has empty microscopic limit. Identifying and using a property of the exact kicked family that rules out such constructions remains necessary for any route relying on those inputs. Weak process convergence alone does not imply convergence of unbounded pair moments without further integrability.

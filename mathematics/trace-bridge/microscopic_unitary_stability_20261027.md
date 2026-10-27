@@ -1,0 +1,25 @@
+# Unitary perturbations and bounded microscopic tests
+
+**Status: author argument; verification pending.** This note records the QS1 argument from the [chat archive](../../record/chat_trace005_20261027/README.md), with the phase and common-shift conventions explicit. It concerns bounded Laplace functionals; it does not assert convergence of unbounded pair moments.
+
+Let $U,V$ be $N\times N$ unitary matrices, $\epsilon=\|V-U\|<2$, and $\eta=2\arcsin(\epsilon/2)$. For eigenphases $\theta_j$ in radians, define the unfolded point measure with one common uniform shift $\alpha\in[0,1)$ by
+
+$$\Xi_{U,\alpha}=\sum_{j=1}^N\sum_{\ell\in\mathbb Z}\delta_{N(\theta_j/(2\pi)-\alpha+\ell)}.$$
+
+For nonnegative $f\in C_c^\infty(\mathbb R)$ set $\mathscr L_U(f)=\mathbb E_\alpha e^{-\langle f,\Xi_{U,\alpha}\rangle}$. Then
+
+$$|\mathscr L_V(f)-\mathscr L_U(f)|\le \frac{N\eta}{2\pi}\|f'\|_{L^1}.$$
+
+Indeed write $VU^*=e^{iH}$ with $H$ Hermitian and $\|H\|\le\eta$. Along $U_t=e^{itH}U$, the smooth periodization $F_N(\omega)=\sum_{\ell}f(N(\omega/(2\pi)+\ell))$ satisfies
+
+$$\frac d{dt}\operatorname{Tr}F_N(e^{-2\pi i\alpha}U_t)=\operatorname{Tr}(H F_N'(e^{-2\pi i\alpha}U_t)).$$
+
+This follows termwise from its absolutely convergent differentiated Fourier series. For Hermitian $B$, $|\operatorname{Tr}(HB)|\le\|H\|\operatorname{Tr}|B|$. Integrating over the common shift gives
+
+$$\int_0^1\operatorname{Tr}|F_N'(e^{-2\pi i\alpha}U_t)|d\alpha
+=\frac N{2\pi}\int_0^{2\pi}|F_N'(\omega)|d\omega
+\le\frac N{2\pi}\|f'\|_1.$$
+
+Because $F_N\ge0$, the derivative of $e^{-\operatorname{Tr}F_N}$ is bounded by that of the exponent. Integrating in $t$ proves the claim. It follows that $\|V_N-U_N\|=o(N^{-1})$ makes all such bounded Laplace functionals asymptotically identical. This extends to weak point-process laws by the standard uniqueness of Laplace functionals and local first-moment tightness; the uniform shift makes the expected count in a bounded interval equal to its length. No uniform-integrability statement for pair observables follows. Multiplication by a common unit scalar can be optimized away because it only translates the uniform shift.
+
+The related positive adjoint-resolvent representation is already [RES-006](../fixed-map/fixed_map_resolvent_frontier.md); clock minima and positive decompositions are treated in [TRACE-092](abel_clock_rigidity.md). The stronger pair-transfer inequalities in the archival source require their own detailed audit before registration. Neither this note nor the auxiliary [balanced-rounding barrier](../fixed-map/balanced_rounding_research_20261027.md) proves TRACE-005.

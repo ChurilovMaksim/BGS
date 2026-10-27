@@ -1,5 +1,11 @@
 # Claim ledger
 
+## Research continuation, 27 October 2026
+
+[Bounded microscopic test stability](../mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) is an author argument pending verification; the stronger pair-transfer claims in the archive have not been registered.
+
+[Balanced spectral rounding](../mathematics/fixed-map/balanced_rounding_research_20261027.md) is an author argument pending verification; no new proved registry claim is asserted. It builds on the barrier context of TRACE-025 and conditionally applies TRACE-113. TRACE-005 and BGS-BGS-001 remain open. The earlier chat reconstructions of FM-001, RES-006, TRACE-007 and TRACE-092 are credited to the existing repository results.
+
 ## Trace dependency closure, 22 October 2026
 
 | Claim | Current status | Exact scope |
