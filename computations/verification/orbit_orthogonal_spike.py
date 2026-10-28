@@ -2,10 +2,13 @@
 """Exact integer certificate for BGS-TRACE-118.
 
 Recomputes the 32-mode Hilbert--Schmidt mass, the rational majorant of
-||A_N||, the Pell numbers through n=205, the support resonances of C^r
-modulo u_203, and the cleared Abel comparison at N=u_203.  The same
-third-order majorant is required to be at least 1 at n=205.  No floating
-comparison is used.  A pass does not prove BGS-TRACE-005.
+||A_N||, the Pell numbers through n=418, the support resonances of C^r
+modulo u_203, u_205 and u_207, and the cleared Abel comparison at N=u_203.
+The third-order majorant is required to be at least 1 at n=205.  The
+Hilbert--Schmidt triangle deficit is required to exceed 1 at n=205.  The
+pure second-order center is required to clear 3/4 at n=205 and to lie
+strictly below 3/4 at n=207.  No floating comparison is used.  A pass
+does not prove BGS-TRACE-005.
 """
 from __future__ import annotations
 
@@ -170,8 +173,7 @@ def gamma_by_hand() -> Fraction:
     return total[0]
 
 
-def resonances(rows: list[tuple[int, int]]) -> dict:
-    n = 203
+def resonances(rows: list[tuple[int, int]], n: int = 203) -> dict:
     capital = rows[n][0]
     modes = support_modes()
     coeff = {(k, ell): (re, im) for k, ell, re, im in modes}
@@ -185,7 +187,7 @@ def resonances(rows: list[tuple[int, int]]) -> dict:
     # C^n = I mod N.
     u2n, v2n = rows[2 * n]
     if (u2n - 1) % capital or v2n % capital:
-        raise RuntimeError("C^n is not I mod u_n")
+        raise RuntimeError(f"C^{n} is not I mod u_{n}")
     found = []
     for r in range(1, n):
         uu, vv = umod[2 * r], vmod[2 * r]
@@ -202,20 +204,20 @@ def resonances(rows: list[tuple[int, int]]) -> dict:
                     found.append((r, (k, ell), (k2, ell2)))
         if r not in (1, n - 1):
             if gre != 0 or gim != 0:
-                raise RuntimeError(f"unexpected correlation at r={r}")
+                raise RuntimeError(f"unexpected correlation at n={n}, r={r}")
         else:
             if gre != GAMMA or gim != 0:
-                raise RuntimeError(f"gamma({r}) changed: {gre}+{gim}i")
+                raise RuntimeError(f"gamma_{n}({r}) changed: {gre}+{gim}i")
+    got = {(r, w, v) for r, w, v in found}
     expected = {
         (1, (-1, 1), (1, 1)),
         (1, (1, -1), (-1, -1)),
-        (202, (1, 1), (-1, 1)),
-        (202, (-1, -1), (1, -1)),
+        (n - 1, (1, 1), (-1, 1)),
+        (n - 1, (-1, -1), (1, -1)),
     }
-    got = {(r, w, v) for r, w, v in found}
     if got != expected:
-        raise RuntimeError(f"resonance list changed: {sorted(got)}")
-    return {"hit_count": len(found), "lags": [1, n - 1]}
+        raise RuntimeError(f"resonance list changed at n={n}: {sorted(got)}")
+    return {"n": n, "hit_count": len(found), "lags": [1, n - 1]}
 
 
 def size_bounds(rows: list[tuple[int, int]]) -> None:
@@ -235,6 +237,31 @@ def size_bounds(rows: list[tuple[int, int]]) -> None:
     # |a|<=4 and |b|<=5, so |2(2 a k' - b ell')| <= 2(18*4+5) = 154.
     if not (u203 > 154):
         raise RuntimeError("u_203 does not dominate the linear form")
+    u204, v204 = rows[204]
+    u205 = rows[205][0]
+    u206, v206 = rows[206]
+    u207 = rows[207][0]
+    if not (u205 > u203 and u207 > u205 and rows[209][0] > u207):
+        raise RuntimeError("Pell dimensions are not increasing at 203..209")
+    # Half-period windows at n=205 and n=207.  A quotient below 1 forces
+    # the congruence to be an equality; a quotient below 5 or 6 leaves
+    # |a|<=4 and |b|<=5.
+    checks = (
+        (9 * u202 + v202 + 9 < u205, "205 t=101 X"),
+        (u202 + 18 * v202 + 1 < u205, "205 t=101 Y"),
+        (9 * u204 + v204 + 9 < 5 * u205, "205 t=102 X"),
+        (u204 + 18 * v204 + 1 < 6 * u205, "205 t=102 Y"),
+        (9 * u202 + v202 + 9 < u207, "207 t=101 X"),
+        (u202 + 18 * v202 + 1 < u207, "207 t=101 Y"),
+        (9 * u204 + v204 + 9 < u207, "207 t=102 X"),
+        (u204 + 18 * v204 + 1 < u207, "207 t=102 Y"),
+        (9 * u206 + v206 + 9 < 5 * u207, "207 t=103 X"),
+        (u206 + 18 * v206 + 1 < 6 * u207, "207 t=103 Y"),
+        (u205 > 154 and u207 > 154, "linear form"),
+    )
+    for ok, label in checks:
+        if not ok:
+            raise RuntimeError(f"size bound failed: {label}")
 
 
 def cleared_parts(n: int, capital: int, sigma_eff: Fraction) -> tuple[int, int, int]:
@@ -289,6 +316,35 @@ def sentinel_vacuous(n: int, capital: int) -> bool:
     return left >= right
 
 
+def hs_triangle_exceeds_one(n: int, capital: int) -> bool:
+    """n^2 θ^2 σ / 2 > 1, with σ = 66033/160000 and θ = capital/10^80."""
+    return n * n * 66033 * capital * capital > 2 * (10 ** 160) * 160000
+
+
+def disk_parts(n: int, capital: int) -> tuple[int, int]:
+    den = 2 * (10 ** 160) * 4000000
+    num = n * 1650797 * capital * capital
+    return num, den
+
+
+def disk_room(n: int, capital: int) -> bool:
+    """(1-2n/N)(1-ε_2)^2 > 3/4 for the pure second-order center."""
+    num, den = disk_parts(n, capital)
+    if num >= den:
+        return False
+    left = 4 * (capital - 2 * n) * (den - num) ** 2
+    right = 3 * capital * den * den
+    return left > right
+
+
+def disk_ceiling(n: int, capital: int) -> bool:
+    """0 < ε_2 < 1 and 4(1-ε_2)^2 < 3."""
+    num, den = disk_parts(n, capital)
+    if not (0 < num < den):
+        return False
+    return 4 * (den - num) ** 2 < 3 * den * den
+
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -301,11 +357,13 @@ def main() -> None:
     exact_lag_one()
     gamma_by_hand()
     _, count, sigma = majorant()
-    rows = pell_through(410)
+    rows = pell_through(418)
     if rows[5][0] != 41 or rows[7][0] != 239 or rows[9][0] != 1393:
         raise RuntimeError("Pell bases changed")
     size_bounds(rows)
-    scan = resonances(rows)
+    scan = resonances(rows, 203)
+    scan_205 = resonances(rows, 205)
+    scan_207 = resonances(rows, 207)
     capital = rows[203][0]
     if not quadrature_gap(203, capital, SIGMA_EFF):
         raise RuntimeError("quadrature gap failed at n=203")
@@ -315,6 +373,12 @@ def main() -> None:
         raise RuntimeError("one-term bound unexpectedly still beats 3/4")
     if not sentinel_vacuous(205, rows[205][0]):
         raise RuntimeError("n=205 remainder is still below 1")
+    if not hs_triangle_exceeds_one(205, rows[205][0]):
+        raise RuntimeError("HS triangle is not yet vacuous at n=205")
+    if not disk_room(205, rows[205][0]):
+        raise RuntimeError("pure second-order center misses 3/4 at n=205")
+    if not disk_ceiling(207, rows[207][0]):
+        raise RuntimeError("pure second-order center is not below 3/4 at n=207")
     # The coarser Lean majorants must also clear 3/4.
     theta = Fraction(capital, 10 ** 80)
     eps2 = 203 * SIGMA_EFF * theta * theta / 2
@@ -348,16 +412,22 @@ def main() -> None:
         "sigma_eff": "1650797/4000000",
         "majorant": "184981/160000",
         "resonances": scan,
+        "resonances_205": scan_205,
+        "resonances_207": scan_207,
         "quadrature_beats_three_quarters": True,
         "one_term_beats_three_quarters": False,
         "sentinel_205_remainder_at_least_one": True,
+        "hs_triangle_205_exceeds_one": True,
+        "disk_room_205": True,
+        "disk_ceiling_207": True,
         "margin_digits": len(str(margin)),
         "coarse_eps2_below": "1/1000",
         "coarse_eps3_below": "1/25",
         "sources_sha256": {name: sha256(ROOT / rel) for name, rel in sources.items()},
         "nonclaim": (
             "Does not prove BGS-TRACE-005, BGS-BGS-001, the limit, "
-            "a gap at a generic odd dimension, or a positive lower bound at n=205."
+            "a gap at a generic odd dimension, a positive lower bound at n=205, "
+            "or a negative theorem that L itself drops at n=207."
         ),
     }
     text = json.dumps(payload, indent=2) + "\n"

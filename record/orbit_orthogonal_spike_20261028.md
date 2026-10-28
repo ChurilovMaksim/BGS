@@ -14,6 +14,6 @@ which contributes \(\gamma(1)=\gamma(202)=-7/2000000\). With that exact second m
 L_{u_{203}}(U;1)>\frac34.
 \]
 
-The integer \(u_{203}\) has 78 decimal digits. At \(n=205\) the same remainder majorant is at least \(1\), so the estimate stops. The obstruction to the next odd index is that operator-norm count, not the Hilbert--Schmidt main term.
+The integer \(u_{203}\) has 78 decimal digits. At \(n=205\) the third-order remainder is at least \(1\) and the Hilbert--Schmidt triangle deficit exceeds \(1\). The pure second-order center still clears \(3/4\) at that index. At \(n=207\) the same center satisfies \((1-\varepsilon_2)^2<3/4\), after the overlap classification is repeated there. This is a failure of the disk, not a drop of \(L_N\).
 
 Python, C++ and `formalization/Bgs/OrbitOrthogonalRational.lean` certify the integers. The analytic comparison was checked by the author. There is no independent referee. `BGS-BGS-001` remains open.

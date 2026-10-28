@@ -11,23 +11,43 @@
   "sigma_eff": "1650797/4000000",
   "majorant": "184981/160000",
   "resonances": {
+    "n": 203,
     "hit_count": 4,
     "lags": [
       1,
       202
     ]
   },
+  "resonances_205": {
+    "n": 205,
+    "hit_count": 4,
+    "lags": [
+      1,
+      204
+    ]
+  },
+  "resonances_207": {
+    "n": 207,
+    "hit_count": 4,
+    "lags": [
+      1,
+      206
+    ]
+  },
   "quadrature_beats_three_quarters": true,
   "one_term_beats_three_quarters": false,
   "sentinel_205_remainder_at_least_one": true,
+  "hs_triangle_205_exceeds_one": true,
+  "disk_room_205": true,
+  "disk_ceiling_207": true,
   "margin_digits": 591,
   "coarse_eps2_below": "1/1000",
   "coarse_eps3_below": "1/25",
   "sources_sha256": {
-    "python": "903398507dc2518e3114a9782b05a6c90203415b24b03cd7178ceed739cb8fc1",
-    "cpp": "cb96c1f706a6639b0f7669b04f873cba11dcb0527070490eabcec552bb2ec367",
-    "lean": "b37b4607d06f75ef6d83f576aac30edd816ad85befbd6feceaf1322b58054963",
-    "proof": "c0e1f457aa40dd9774d16dab313071b9a1a30d8e1ee0297556cb8c095e25ff53"
+    "python": "d3cce87ff26bc6855ff4f553b9c71812f746436b96c9e60c0302eca453d51128",
+    "cpp": "42bd4440c5af77b5e5b351d1387eb15d408c1907f40cf2d7323b4502c522f786",
+    "lean": "65602db8a43a2e3dc64f1faea3a0f40bd7c47eabca405bb1e6419fdec9f63e09",
+    "proof": "068d0200431b2e343cdd86c28cf9718427cbbcd789d5e7daea1df01f04add787"
   },
-  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, the limit, a gap at a generic odd dimension, or a positive lower bound at n=205."
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, the limit, a gap at a generic odd dimension, a positive lower bound at n=205, or a negative theorem that L itself drops at n=207."
 }

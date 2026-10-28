@@ -9,7 +9,8 @@
 - The archimedean square \(104^2\cdot2>128^2\) and the box classification of \(C\) at lag \(1\).
 - Pell recurrence through \(m=410\), including the norm, oddness, and the bases \(u_5=41\), \(u_7=239\), \(u_9=1393\).
 - Size inequalities that force every congruence with \(t\le100\), and the middle lag \(t=101\), to be an exact vector equality.
-- The cleared Abel comparison at \(n=203\), failure of the one-term comparison at the same index, and the vacuous third-order majorant at \(n=205\).
+- The cleared Abel comparison at \(n=203\), failure of the one-term comparison at the same index, the vacuous third-order majorant and the vacuous Hilbert--Schmidt triangle at \(n=205\), the pure second-order room at \(n=205\), and the pure second-order ceiling at \(n=207\).
+- The same four-hit overlap scan at \(n=205\) and \(n=207\).
 
 `receipt.json` is the Python run. It records \(u_{203}\) (78 decimal digits) and SHA-256 hashes of the certificate sources.
 
@@ -26,4 +27,4 @@ The C++ binary printed `orbit_orthogonal_spike passed u_203_digits=78 hits=4 gam
 
 ## Non-claims
 
-A pass does not prove BGS-TRACE-005 or BGS-BGS-001, the limit \(N\to\infty\), a gap at a generic odd dimension, or a positive lower bound at \(n=205\). The silence at \(n=205\) is a failure of this remainder, not a proved drop of \(L_N\).
+A pass does not prove BGS-TRACE-005 or BGS-BGS-001, the limit \(N\to\infty\), a gap at a generic odd dimension, or a positive lower bound at \(n=205\). The silence at \(n=205\) is a failure of these remainders. The ceiling at \(n=207\) is a failure of the second-order disk, not a proved drop of \(L_N\).

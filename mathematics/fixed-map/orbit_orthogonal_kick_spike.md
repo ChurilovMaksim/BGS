@@ -25,7 +25,7 @@ L_N(U_N;1)>\frac34.
 
 The distance from \(L_N(U_N;1)\) to \((1-e^{-2})/4\) is therefore greater than \(1/2\). The integer \(u_{203}\) has \(78\) decimal digits. Any statement that this distance is less than \(1/2\) for every odd \(N\ge N_0\) requires \(N_0>u_{203}\).
 
-**Boundary.** The kicked conclusion is the single dimension \(N=u_{203}\). The third-order remainder used below is already at least \(1\) at the next odd index \(n=205\), so the same lower bound is silent there. The estimate does not decide \(\lim_{N\to\infty}\), a generic odd dimension, the off-diagonal sum, or any \(k>2\).
+**Boundary.** The kicked conclusion is the single dimension \(N=u_{203}\). At \(n=205\) the third-order remainder and the Hilbert--Schmidt triangle are both silent, although the pure second-order center still lies above \(3/4\). At \(n=207\) that center itself lies strictly below \(3/4\). The estimate does not decide \(\lim_{N\to\infty}\), a generic odd dimension, the off-diagonal sum, or any \(k>2\).
 
 ## 2. Transported product
 
@@ -234,16 +234,71 @@ The same witness also records the coarser bounds \(\varepsilon_2<1/1000\), \(\va
 
 Either form gives the theorem. Since \((1-e^{-2})/4<1/4\), the distance to the CUE value is greater than \(1/2\).
 
-## 7. The next index
+## 7. Where the second-order disk stops
 
-At \(n=205\) the same third-order majorant satisfies \((n\theta B)^3/6\ge1\). The Lean theorem `orbit_sentinel` is this comparison. The resulting lower bound on \(\lvert\operatorname{Tr}U_N^n\rvert\) is vacuous. The Hilbert--Schmidt main term \(\varepsilon_2\) is still small at \(n=203\); the obstruction to continuing the estimate is the operator-norm count \((n\theta B)^3\), which treats the \(n\) insertions as aligned. A remainder that keeps the trace orthogonality of Section 5 at positive \(t\) is a different argument.
+At \(n=205\) the same third-order majorant satisfies \((n\theta B)^3/6\ge1\). The Lean theorem `orbit_sentinel` is this comparison. The resulting lower bound on \(\lvert\operatorname{Tr}U_N^n\rvert\) is vacuous.
+
+The Hilbert--Schmidt triangle is silent at the same index, for a different reason. Each factor \(\exp(i\theta A_j)\) is unitary. For a real angle \(\varphi\), \(\lvert e^{i\varphi}-1\rvert^2=2-2\cos\varphi\). The inequality \(\lvert\sin u\rvert\le\lvert u\rvert\) for real \(u\) follows by writing \(\sin u=\int_0^u\cos\) and using \(\lvert\cos\rvert\le1\), and then
+\[
+1-\cos\varphi=2\sin^2(\varphi/2)\le\varphi^2/2.
+\]
+Hence \(\lvert e^{i\theta\lambda}-1\rvert^2\le\theta^2\lambda^2\). Summing the eigenvalues of \(A_j\) gives
+\[
+\lVert\exp(i\theta A_j)-I\rVert_{\mathrm{HS}}\le\theta\sqrt{N\sigma},
+\]
+with the same \(\sigma\) as in Section 3, because conjugation preserves the trace of the square. Left multiplication by a unitary preserves the Hilbert--Schmidt norm, so the telescoping product satisfies
+\[
+\lVert P(1)-I\rVert_{\mathrm{HS}}\le n\theta\sqrt{N\sigma}.
+\]
+Therefore
+\[
+\operatorname{Re}\operatorname{Tr}P(1)\ge N\Bigl(1-\frac{n^2\theta^2\sigma}2\Bigr)
+\]
+whenever the subtracted term is at most \(1\). At \(n=205\) and \(\theta=u_{205}/10^{80}\) the rational comparison
+\[
+205^2\cdot66033\cdot u_{205}^2>2\cdot10^{160}\cdot160000
+\]
+says that the subtracted term is already greater than \(1\). Lean's `orbit_hs_triangle` is this comparison. The triangle gives no positive lower bound.
+
+The pure second-order center is a different quantity. It uses \(\operatorname{Tr}(S^2)\), not the triangle. The overlap computation of Section 5 extends to the next two odd indices.
+
+**Proposition.** For \(n\in\{205,207\}\) and \(N=u_n\), one has \(\gamma(r)=0\) for \(1\le r\le n-1\) except at \(r=1\) and \(r=n-1\), where \(\gamma(r)=-7/2000000\). Consequently
+\[
+\frac{\operatorname{Tr}(S^2)}{N}=n\sigma_\star,\qquad\sigma_\star=\frac{1650797}{4000000}.
+\]
+
+The identity \(C^n\equiv I\pmod{u_n}\) is the same odd-return fact from `BGS-TRACE-117` used in Section 2. Both verifiers recheck it at these two indices. Let \(t=\min(r,n-r)\), so \(t\le102\) when \(n=205\) and \(t\le103\) when \(n=207\). For \(t\le100\) the components of \(C^{\pm t}z\) are at most \(10u_{200}\) and \(u_{200}+18v_{200}\). Those bounds are strictly smaller than \(u_{203}\), and \(u_{203}<u_{205}<u_{207}\), so a congruence modulo \(u_n\) is an integer equality. The archimedean obstruction of Section 5 then excludes every \(t\ge2\), and the lag-\(t=1\) box is unchanged.
+
+For \(101\le t\le(n-1)/2\) the same reduction produces a forward congruence. The norm identity gives \(2X^2-Y^2=2k^2-\ell^2\), so \(u_n\) divides a quadratic difference of absolute value at most \(324\). Since \(u_n>u_{203}>326\), the quadratic values agree and
+\[
+u_n(2a^2-b^2)=2(2ak'-b\ell').
+\]
+The Lean theorem `orbit_size_next`, recomputed by both integer programs, gives the following bounds. At \(n=205\) and \(t=101\), both components force \(a=b=0\). At \(n=205\) and \(t=102\), and at \(n=207\) and \(t=103\), one has \(\lvert a\rvert\le4\) and \(\lvert b\rvert\le5\). At \(n=207\) and \(t\in\{101,102\}\) one again has \(a=b=0\). Whenever \(\lvert a\rvert\le4\) and \(\lvert b\rvert\le5\), the right-hand side is at most \(154\), while \(u_n>154\), so \(2a^2=b^2\). The \(2\)-adic valuation forces \(a=b=0\). The resulting exact equality is impossible for \(t\ge2\) by the archimedean bound already proved. Both verifiers also scan every lag at these two dimensions and record exactly the same four ordered pairs as in Section 5.
+
+Thus, at either dimension,
+\[
+\varepsilon_2=\frac{n\sigma_\star\theta^2}2,\qquad\theta=\frac{u_n}{10^{80}}.
+\]
+Clearing the denominator \(2\cdot10^{160}\cdot4000000\), Lean's `orbit_disk_room` is the comparison
+\[
+\Bigl(1-\frac{410}{u_{205}}\Bigr)(1-\varepsilon_2)^2>\frac34
+\]
+at \(n=205\). The center of the disk still has room above \(3/4\). The proved remainders do not: the third-order count and the Hilbert--Schmidt triangle are both larger than the gap between that center and \(\sqrt{3/4}\).
+
+At \(n=207\) the same clearing gives \(0<\varepsilon_2<1\) and \(4(1-\varepsilon_2)^2<3\). Lean's `orbit_disk_ceiling` is this pair of comparisons. Because \(1-\varepsilon_2>0\), it is exactly \((1-\varepsilon_2)^2<3/4\). Any lower bound of the form
+\[
+\lvert\operatorname{Tr}U_N^n\rvert\ge N(1-\varepsilon_2-\varepsilon_{\mathrm{rem}})
+\]
+with \(\varepsilon_{\mathrm{rem}}\ge0\) is then strictly smaller than \(N\sqrt{3/4}\). The Abel comparison built from it, including the positive factor \(1-2n/N\), stays strictly below \(3/4\). This is a failure of the disk, not a proof that \(L_N(U_N;1)\) itself drops below \(3/4\).
+
+The classification above is stated only at \(n=205\) and \(n=207\). A new overlap at a larger odd index could decrease \(\operatorname{Tr}(S^2)\) and move the center. No such index is decided here.
 
 ## 8. Certificates
 
 | Check | What it certifies |
 |---|---|
-| `computations/verification/orbit_orthogonal_spike.py` | Hermitian symmetry and the value of \(\sigma\); the majorant \(B\); the hand value of \(\gamma(1)\); the archimedean square; the box classification at lag \(1\); the Pell norm through \(m=410\); the size inequalities; a direct scan of all \(202\) lags; the cleared gap at \(n=203\); failure of the one-term gap at \(n=203\); the vacuous remainder at \(n=205\) |
-| `computations/cpp/orbit_orthogonal_spike.cpp` | The mass, majorant, value of \(\gamma\), archimedean square, lag-one box count, Pell norm, size inequalities, four-hit scan, cleared gap, one-term failure and \(n=205\) sentinel, in an independent base-\(10^9\) type |
-| `formalization/Bgs/OrbitOrthogonalRational.lean` | `decide` proofs of the norm at \(n=203\), the size inequalities, the denominator identity, the cleared gap, the coarse majorants, and the \(n=205\) sentinel. It does not formalize Sections 2--6 |
+| `computations/verification/orbit_orthogonal_spike.py` | Hermitian symmetry and the value of \(\sigma\); the majorant \(B\); the hand value of \(\gamma(1)\); the archimedean square; the box classification at lag \(1\); the Pell norm through \(m=418\); the size inequalities, including the half-period windows at \(n=205\) and \(n=207\); a direct scan of every lag at \(n=203,205,207\); the cleared gap at \(n=203\); failure of the one-term gap at \(n=203\); the vacuous third-order remainder and the vacuous Hilbert--Schmidt triangle at \(n=205\); the pure second-order room at \(n=205\) and the pure second-order ceiling at \(n=207\) |
+| `computations/cpp/orbit_orthogonal_spike.cpp` | The same integers, three four-hit scans, and the same rational comparisons, in an independent base-\(10^9\) type |
+| `formalization/Bgs/OrbitOrthogonalRational.lean` | `decide` proofs of the norm at \(n=203\), the size inequalities, the denominator identity, the cleared gap, the coarse majorants, the \(n=205\) sentinel, the half-period sizes, the Hilbert--Schmidt triangle, the \(n=205\) disk room, and the \(n=207\) disk ceiling. It does not formalize Sections 2--6 |
 
 The aggregate `lake build` was not rerun: the Mathlib cache was not present. The new module imports only the Lean prelude.

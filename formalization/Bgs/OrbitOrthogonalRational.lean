@@ -23,7 +23,13 @@ def u202 : Int := (iter 202).1
 def v202 : Int := (iter 202).2
 def u203 : Int := (iter 203).1
 def v203 : Int := (iter 203).2
+def u204 : Int := (iter 204).1
+def v204 : Int := (iter 204).2
 def u205 : Int := (iter 205).1
+def u206 : Int := (iter 206).1
+def v206 : Int := (iter 206).2
+def u207 : Int := (iter 207).1
+def u209 : Int := (iter 209).1
 
 theorem orbit_norm : u203 * u203 - 2 * v203 * v203 = -1 := by
   decide
@@ -80,4 +86,41 @@ theorem orbit_coarse :
 /-- At `n = 205` the third-order remainder majorant is already at least 1. -/
 theorem orbit_sentinel :
     205 ^ 3 * u205 ^ 3 * bNum ^ 3 ≥ 6 * ten ^ 240 * bDen ^ 3 := by
+  decide
+
+/-- Half-period size bounds used to classify overlaps at `n = 205` and `n = 207`. -/
+theorem orbit_size_next :
+    u205 > u203 ∧ u207 > u205 ∧ u209 > u207 ∧
+    9 * u202 + v202 + 9 < u205 ∧
+    u202 + 18 * v202 + 1 < u205 ∧
+    9 * u204 + v204 + 9 < 5 * u205 ∧
+    u204 + 18 * v204 + 1 < 6 * u205 ∧
+    9 * u202 + v202 + 9 < u207 ∧
+    u202 + 18 * v202 + 1 < u207 ∧
+    9 * u204 + v204 + 9 < u207 ∧
+    u204 + 18 * v204 + 1 < u207 ∧
+    9 * u206 + v206 + 9 < 5 * u207 ∧
+    u206 + 18 * v206 + 1 < 6 * u207 ∧
+    u205 > 154 ∧ u207 > 154 := by
+  decide
+
+/-- The Hilbert--Schmidt triangle deficit exceeds 1 at `n = 205`. -/
+theorem orbit_hs_triangle :
+    205 * 205 * 66033 * u205 * u205 > 2 * ten ^ 160 * 160000 := by
+  decide
+
+def diskDen : Int := 2 * ten ^ 160 * 4000000
+def num205 : Int := 205 * 1650797 * u205 * u205
+def num207 : Int := 207 * 1650797 * u207 * u207
+
+/-- At `n = 205` the pure second-order center still clears `3/4`. -/
+theorem orbit_disk_room :
+    num205 < diskDen ∧
+    4 * (u205 - 410) * (diskDen - num205) ^ 2 > 3 * u205 * diskDen ^ 2 := by
+  decide
+
+/-- At `n = 207` the pure second-order center lies strictly below `3/4`. -/
+theorem orbit_disk_ceiling :
+    num207 < diskDen ∧
+    4 * (diskDen - num207) ^ 2 < 3 * diskDen ^ 2 := by
   decide

@@ -29,7 +29,7 @@ The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the correct
 
 ## Current theorem capsules
 
-- **[Orbit-orthogonal kick at \(u_{203}\)](../../fixed-map/orbit_orthogonal_kick_spike.md)** — TRACE-118: the second-order trace expansion clears \(L_N(U_N;1)>3/4\) at the single dimension \(N=u_{203}\). The third-order majorant is silent at \(n=205\).
+- **[Orbit-orthogonal kick at \(u_{203}\)](../../fixed-map/orbit_orthogonal_kick_spike.md)** — TRACE-118: the second-order trace expansion clears \(L_N(U_N;1)>3/4\) at the single dimension \(N=u_{203}\). The third-order majorant and the Hilbert--Schmidt triangle are silent at \(n=205\). At \(n=207\) the pure second-order center lies below \(3/4\).
 - **[Kick-blind arithmetic spikes](../../fixed-map/kick_blind_arithmetic_spike.md)** — TRACE-117: the pure cat map stays above the CUE Abel value at every \(N=u_n\) for odd \(n\ge5\), and the fixed kick preserves that gap for odd \(n\) from 5 through 201. The limit remains open.
 - **[Position mixing and cyclic ramp](../../fixed-map/position_chain_mixing.md)** — Actual fixed-coupling position chain has an eventual constant singular gap; cyclic contributions and a specified marked three-link contraction are controlled.
 - **[Reverse-cyclic suppression](../../fixed-map/reversed_path_decay.md)** — The actual reversed-entry kernel has vanishing operator norm; general signed noncyclic pairs remain open.

@@ -4,7 +4,7 @@
 
 [TRACE-117](fixed-map/kick_blind_arithmetic_spike.md) keeps the pure cat-map Abel statistic a distance greater than \(1/2\) from the CUE value at every \(N=u_n\) with \(n\) odd and at least \(5\). The same gap survives the fixed kick on the 99 odd indices from \(5\) through \(201\), including the 77-digit dimension \(u_{201}\). The rational comparisons are a Lean `decide` witness plus independent Python and C++ integer checks. The one-term estimate is inconclusive at \(n=203\).
 
-[TRACE-118](fixed-map/orbit_orthogonal_kick_spike.md) clears that index. At \(N=u_{203}\) a second-order expansion, using trace orthogonality of the symbol orbit up to one explicit overlap, gives \(L_N(U_N;1)>3/4\). The same third-order majorant is silent at \(n=205\). Signed cancellation for the remaining dimensions, and BGS-TRACE-005, remain open.
+[TRACE-118](fixed-map/orbit_orthogonal_kick_spike.md) clears that index. At \(N=u_{203}\) a second-order expansion, using trace orthogonality of the symbol orbit up to one explicit overlap, gives \(L_N(U_N;1)>3/4\). The same third-order majorant, and the Hilbert--Schmidt triangle, are silent at \(n=205\). At \(n=207\) the pure second-order center itself satisfies \((1-\varepsilon_2)^2<3/4\). Signed cancellation for the remaining dimensions, and BGS-TRACE-005, remain open.
 
 ## Aristotle formalization integration, 28 October 2026
 

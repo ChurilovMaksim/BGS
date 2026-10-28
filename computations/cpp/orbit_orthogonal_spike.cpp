@@ -1,6 +1,8 @@
 // Independent integer certificate for BGS-TRACE-118.
 // Recomputes the Fourier mass, the support resonances modulo u_203,
-// the cleared quadrature gap, and the vacuous remainder at n=205.
+// the cleared quadrature gap, the vacuous remainder at n=205, the same
+// overlap scan at n=205 and n=207, the Hilbert--Schmidt triangle deficit,
+// and the pure second-order ceiling at n=207.
 // A pass does not prove BGS-TRACE-005.
 
 #include <cstdint>
@@ -291,6 +293,37 @@ Big pow_small(std::uint64_t base, int e) {
     return r;
 }
 
+void scan_overlaps(const std::vector<Big>& us, const std::vector<Big>& vs,
+                   const std::vector<std::pair<int, int>>& modes, int n) {
+    const Big& N = us[n];
+    if (!us[2 * n].sub(Big::from_u64(1)).mod(N).is_zero() || !vs[2 * n].mod(N).is_zero())
+        throw std::runtime_error("C^n not I");
+    int hits = 0;
+    for (int r = 1; r < n; ++r) {
+        Frac gr = Frac::make(0, 1), gi = Frac::make(0, 1);
+        Big uu = us[2 * r].mod(N);
+        Big vv = vs[2 * r].mod(N);
+        for (auto [k, ell] : modes) {
+            Big x = add_mod(mul_int_mod(uu, k, N), mul_int_mod(vv, ell, N), N);
+            Big y = add_mod(mul_int_mod(uu, ell, N), mul_int_mod(vv, 2 * k, N), N);
+            for (auto [k2, ell2] : modes) {
+                if (!is_neg(x, k2, N) || !is_neg(y, ell2, N)) continue;
+                ++hits;
+                auto [rw, iw] = f_coeff(k, ell);
+                auto [rv, iv] = f_coeff(k2, ell2);
+                gr = gr + (rv * rw - iv * iw);
+                gi = gi + (rv * iw + iv * rw);
+            }
+        }
+        if (r != 1 && r != n - 1) {
+            if (gr.n != 0 || gi.n != 0) throw std::runtime_error("unexpected gamma");
+        } else if (gi.n != 0 || gr.n != -7 || gr.d != 2000000) {
+            throw std::runtime_error("endpoint gamma");
+        }
+    }
+    if (hits != 4) throw std::runtime_error("hit count");
+}
+
 }  // namespace
 
 int main() {
@@ -362,7 +395,7 @@ int main() {
         us.push_back(Big::from_u64(1));
         vs.push_back(Big::from_u64(0));
         Big u = Big::from_u64(1), v = Big::from_u64(0);
-        for (int m = 1; m <= 410; ++m) {
+        for (int m = 1; m <= 418; ++m) {
             Big nu = u.add(v.mul_small(2));
             Big nv = u.add(v);
             u = std::move(nu);
@@ -460,6 +493,54 @@ int main() {
                          .mul_small(184981).mul_small(184981).mul_small(184981);
         Big sent_r = pow10(240).mul_small(6).mul(Big::from_u64(160000).mul(Big::from_u64(160000)).mul(Big::from_u64(160000)));
         if (sent_l.cmp(sent_r) < 0) throw std::runtime_error("sentinel not vacuous");
+
+        auto require_lt = [](const Big& a, const Big& b, const char* what) {
+            if (a.cmp(b) >= 0) throw std::runtime_error(what);
+        };
+        const Big& u204 = us[204];
+        const Big& v204 = vs[204];
+        const Big& u206 = us[206];
+        const Big& v206 = vs[206];
+        const Big& u207 = us[207];
+        if (us[205].cmp(N) <= 0 || us[207].cmp(us[205]) <= 0 || us[209].cmp(us[207]) <= 0)
+            throw std::runtime_error("Pell growth");
+        require_lt(us[202].mul_small(9).add(vs[202]).add(Big::from_u64(9)), us[205], "205 t101 X");
+        require_lt(us[202].add(vs[202].mul_small(18)).add(Big::from_u64(1)), us[205], "205 t101 Y");
+        require_lt(u204.mul_small(9).add(v204).add(Big::from_u64(9)), us[205].mul_small(5), "205 t102 X");
+        require_lt(u204.add(v204.mul_small(18)).add(Big::from_u64(1)), us[205].mul_small(6), "205 t102 Y");
+        require_lt(us[202].mul_small(9).add(vs[202]).add(Big::from_u64(9)), u207, "207 t101 X");
+        require_lt(us[202].add(vs[202].mul_small(18)).add(Big::from_u64(1)), u207, "207 t101 Y");
+        require_lt(u204.mul_small(9).add(v204).add(Big::from_u64(9)), u207, "207 t102 X");
+        require_lt(u204.add(v204.mul_small(18)).add(Big::from_u64(1)), u207, "207 t102 Y");
+        require_lt(u206.mul_small(9).add(v206).add(Big::from_u64(9)), u207.mul_small(5), "207 t103 X");
+        require_lt(u206.add(v206.mul_small(18)).add(Big::from_u64(1)), u207.mul_small(6), "207 t103 Y");
+        if (us[205].cmp(Big::from_u64(154)) <= 0 || u207.cmp(Big::from_u64(154)) <= 0)
+            throw std::runtime_error("linear form");
+
+        scan_overlaps(us, vs, modes, 205);
+        scan_overlaps(us, vs, modes, 207);
+
+        Big hs_l = us[205].mul(us[205]).mul_small(205).mul_small(205).mul_small(66033);
+        Big hs_r = pow10(160).mul_small(320000);
+        if (hs_l.cmp(hs_r) <= 0) throw std::runtime_error("HS triangle");
+
+        auto disk = [](const Big& capital, int index, bool ceiling) {
+            Big den = pow10(160).mul_small(8000000);
+            Big num = capital.mul(capital).mul_small(1650797).mul_small(static_cast<std::uint64_t>(index));
+            if (num.cmp(den) >= 0) throw std::runtime_error("eps2 >= 1");
+            Big gap = den.sub(num);
+            Big left = gap.mul(gap).mul_small(4);
+            Big right = den.mul(den).mul_small(3);
+            if (ceiling) {
+                if (left.cmp(right) >= 0) throw std::runtime_error("disk ceiling");
+            } else {
+                left = left.mul(capital.sub(Big::from_u64(static_cast<std::uint64_t>(2 * index))));
+                right = right.mul(capital);
+                if (left.cmp(right) <= 0) throw std::runtime_error("disk room");
+            }
+        };
+        disk(us[205], 205, false);
+        disk(us[207], 207, true);
 
         if (!(N.mul(N).mul_small(1650797).mul_small(203).mul_small(1000).cmp(pow10(166).mul_small(8)) < 0))
             throw std::runtime_error("coarse eps2");
