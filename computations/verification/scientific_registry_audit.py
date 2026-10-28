@@ -6,6 +6,7 @@ prove mathematical claims and must never be reported as such.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -225,6 +226,46 @@ def audit_python_pins() -> None:
     if python_version != str(env["python"]["ci"]):
         fail(".python-version and runtime-manifest Python version disagree")
 
+def audit_claim_inventory() -> None:
+    """Check current metadata only; never treat evidence or Lean links as proofs."""
+    registry = load(CLAIMS)
+    inventory = load(ROOT / "record" / "claim_verification_inventory.json")
+    rows = registry["claims"]
+    recorded = inventory.get("claims", [])
+    current = {row["id"]: row for row in rows}
+    if len(recorded) != len(rows) or {x.get("id") for x in recorded} != set(current):
+        fail("claim verification inventory ID set does not match claims.json")
+    raw = CLAIMS.read_bytes()
+    # Git records a blob as SHA1("blob <size>\\0" || payload); this is not
+    # the ordinary SHA1 of the JSON bytes.
+    blob_sha = hashlib.sha1(
+        b"blob " + str(len(raw)).encode("ascii") + bytes([0]) + raw
+    ).hexdigest()
+    if inventory.get("source_blob_sha") != blob_sha:
+        fail("claim verification inventory source blob is stale")
+    for item in recorded:
+        claim = current[item["id"]]
+        for key in ("title", "state", "ledger_status", "boundary",
+                    "evidence", "verifiers", "formalization"):
+            if item.get(key) != claim.get(key):
+                fail("claim verification inventory metadata drift: " + item["id"] + "." + key)
+        for key in ("evidence", "verifiers", "formalization"):
+            if item.get("receipt_counts", {}).get(key) != len(claim[key]):
+                fail("claim verification inventory link count drift: " + item["id"] + "." + key)
+        has_links = any(claim[k] for k in ("evidence", "verifiers", "formalization"))
+        if item.get("unevidenced") != (claim["state"] == "open" or not has_links):
+            fail("claim verification inventory unevidenced flag drift: " + item["id"])
+        methods = item.get("methods", [])
+        if not isinstance(methods, list):
+            fail("claim verification inventory methods invalid: " + item["id"])
+        if claim["state"] == "open":
+            # TRACE-005 has a Lean *statement* with no proof. Do not
+            # misclassify a proposition declaration as a proved method.
+            if methods != ["unevidenced"]:
+                fail("open claim must remain unevidenced: " + item["id"])
+        elif bool(claim["formalization"]) != ("lean_formalization" in methods):
+            fail("claim verification inventory Lean tag drift: " + item["id"])
+
 def audit_generated_and_environment() -> None:
     pointer=load(ROOT / "literature" / "metadata_audit.json")
     for key in ("cache","digest","review"):
@@ -330,6 +371,7 @@ def main() -> int:
     audit_papers(claims, claim_ids, external_ids)
     audit_python_pins()
     audit_generated_and_environment()
+    audit_claim_inventory()
     audit_errata()
     audit_topics()
     audit_governance_surface()
