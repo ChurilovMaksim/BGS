@@ -57,6 +57,36 @@ class RegistryNodesTests(unittest.TestCase):
                     with self.assertRaisesRegex(SystemExit, 'nodes do not match'):
                         MODULE.audit_graph(claims)
 
+    def test_inventory_snapshot_and_statement_only_open_claim(self):
+        inventory_path = MODULE.ROOT / 'record/claim_verification_inventory.json'
+        inventory = json.loads(inventory_path.read_text())
+        claim_005 = next(x for x in inventory['claims'] if x['id'] == 'BGS-TRACE-005')
+        self.assertEqual(claim_005['state'], 'open')
+        self.assertEqual(claim_005['methods'], ['unevidenced'])
+        self.assertEqual(claim_005['formalization'],
+                         ['formalization/Bgs/TraceStatement.lean'])
+        MODULE.audit_claim_inventory()
+
+    def test_inventory_metadata_drift_rejected(self):
+        inventory = json.loads((MODULE.ROOT / 'record/claim_verification_inventory.json').read_text())
+        registry = json.loads(MODULE.CLAIMS.read_text())
+        mutated = copy.deepcopy(inventory)
+        mutated['claims'][-1]['boundary'] = 'hypothesis silently changed'
+        with patch.object(MODULE, 'load', side_effect=lambda path: mutated if
+                          path.name == 'claim_verification_inventory.json' else registry):
+            with self.assertRaisesRegex(SystemExit, 'metadata drift'):
+                MODULE.audit_claim_inventory()
+
+    def test_inventory_stale_source_sha_rejected(self):
+        inventory = json.loads((MODULE.ROOT / 'record/claim_verification_inventory.json').read_text())
+        registry = json.loads(MODULE.CLAIMS.read_text())
+        mutated = copy.deepcopy(inventory)
+        mutated['source_blob_sha'] = '0' * 40
+        with patch.object(MODULE, 'load', side_effect=lambda path: mutated if
+                          path.name == 'claim_verification_inventory.json' else registry):
+            with self.assertRaisesRegex(SystemExit, 'source blob is stale'):
+                MODULE.audit_claim_inventory()
+
     def test_nested_lean_import_closure(self):
         import tempfile
         audit_source = SOURCE.with_name('repository_audit.py')
