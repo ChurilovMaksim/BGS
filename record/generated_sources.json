@@ -1,6 +1,6 @@
 {
   "schema": "bgs-generated-sources-v1",
-  "updated": "2026-10-20",
+  "updated": "2026-10-28",
   "rules": [
     {
       "generated": [
@@ -33,32 +33,41 @@
         "manuscript/unified_sections/return_obstruction.tex"
       ],
       "producer": "computations/maintenance/sync_return_sections.py",
-      "mode": "fail-closed check available",
+      "mode": "TeX-canonical after reviewed Pass-1/2 editorial conversion; legacy sync --check emits SKIP, never validates MD/TeX equivalence; manual theorem/hypothesis comparison required",
       "authoritative_sources": [
         "mathematics/"
-      ]
+      ],
+      "hand_edited_tex_canonical": true,
+      "canonical_source": "TeX",
+      "source_relationship": "Related Markdown proof sources are maintained independently; no automated equivalence claim"
     },
     {
       "generated": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
       "producer": "computations/maintenance/sync_fixed_map_section.py",
-      "mode": "fail-closed check available",
+      "mode": "TeX-canonical after reviewed Pass-1/2 editorial conversion; legacy sync --check emits SKIP, never validates MD/TeX equivalence; manual theorem/hypothesis comparison required",
       "authoritative_sources": [
         "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
         "supplement/fixed_map/",
         "supplement/fixed_map/resolvent-flow/loop_test_reductions.md"
-      ]
+      ],
+      "hand_edited_tex_canonical": true,
+      "canonical_source": "TeX",
+      "source_relationship": "Related Markdown proof sources are maintained independently; no automated equivalence claim"
     },
     {
       "generated": [
         "manuscript/unified_sections/finite_orbit_resonance.tex"
       ],
       "producer": "computations/maintenance/sync_finite_orbit_section.py",
-      "mode": "fail-closed byte-level source hash and rendering check",
+      "mode": "TeX-canonical after reviewed Pass-1/2 editorial conversion; legacy sync --check emits SKIP, never validates MD/TeX equivalence; manual theorem/hypothesis comparison required",
       "authoritative_sources": [
         "mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md"
-      ]
+      ],
+      "hand_edited_tex_canonical": true,
+      "canonical_source": "TeX",
+      "source_relationship": "Related Markdown proof sources are maintained independently; no automated equivalence claim"
     },
     {
       "generated": [
@@ -82,6 +91,16 @@
         "record/claims.json",
         "record/mathematics_topics.json",
         "mathematics/"
+      ]
+    },
+    {
+      "generated": [
+        "record/claim_verification_inventory.json"
+      ],
+      "producer": "computations/verification/scientific_registry_audit.py",
+      "mode": "Fail-closed ID, metadata and evidence-link concordance with record/claims.json; historical risk classes remain subject to reviewer reassessment",
+      "authoritative_sources": [
+        "record/claims.json"
       ]
     }
   ],
