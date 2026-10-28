@@ -1,5 +1,9 @@
 # BGS research brief
 
+## Aristotle formalization integration, 28 October 2026
+
+Adapted all 39 substantive modules from the older Aristotle snapshot into the existing Lean 4.33.1 graph. The [coverage map](formalization/MATHLIB_LAYER_RU.md) and [receipt](evidence/formalization/aristotle_20261027/receipt.json) record exact theorem scope, 589 axiom-audited declarations and the successful aggregate build. ERR-060 corrects the pure-loss scalar identity in the proof and manuscript. Current claim states, TRACE-114–116 and pinned dependencies are retained; no BGS closure is asserted.
+
 ## Trace results and dependency closure, 22 October 2026
 
 The [review](record/spectral_research/trace_closure.md) closes the inserted-trace input in TRACE-109 by a

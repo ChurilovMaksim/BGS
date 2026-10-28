@@ -4,6 +4,9 @@
 K=4, M=2, N=11. Diagnostic only: not original matrices, no asymptotic proof.
 No third-party dependencies.
 """
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 from fractions import Fraction as F
 import cmath
 import math

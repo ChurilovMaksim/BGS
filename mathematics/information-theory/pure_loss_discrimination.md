@@ -64,7 +64,7 @@ Set \(\delta=1-\gamma\) and \(L=-\log\gamma\). Write
 \]
 Then
 \[
- r^2=1-2uh+u^2(1-z+e)^2.
+ r^2=1-2uh+u^2(1-z+e)^2-4u^2e.
 \]
 Using \(u\le1/16\), \(0\le h\le1\), and \(0\le1-z+e\le2\), one obtains
 \[

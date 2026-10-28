@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "status_authority": "record/claims.json",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -427,7 +427,7 @@
     },
     {
       "id": "BGS-FORMAL-001",
-      "title": "Active Lean algebraic/finite kernel graph",
+      "title": "Active Lean graph: finite kernels and scoped Mathlib theorems",
       "state": "proved",
       "ledger_status": "CURRENT PINNED BUILD VERIFIED; FINITE/ALGEBRAIC SCOPE",
       "source": "formalization/README.md",
@@ -436,14 +436,15 @@
       "evidence": [
         "archive/evidence/executions/20261020/toolchain-followup/receipt.json",
         "evidence/executions/20261006/original-channel-gap/lean.log",
-        "evidence/executions/20261006/original-channel-gap/integration.json"
+        "evidence/executions/20261006/original-channel-gap/integration.json",
+        "evidence/formalization/aristotle_20261027/receipt.json"
       ],
       "verifiers": [],
       "formalization": [
         "formalization/Bgs.lean"
       ],
       "manuscript": [],
-      "boundary": "Pinned Lean 4.33.1 build of all 25 active modules completed successfully (3071 Lake jobs, no warnings or errors), including CoherenceBudget and TraceStatement, per the fresh full build of 25 October 2026 on the formalization sources at live main HEAD 0ed548d (byte-identical to the build scratch copy; Mathlib v4.33.1). native_decide retains its declared native-evaluation trust boundary. This establishes the current finite/algebraic source graph was compiled, not analytic BGS formalization."
+      "boundary": "Lean 4.33.1 and the pinned Mathlib build the 29 existing and 39 added leaf modules (8776 Lake jobs, zero errors/warnings). All 589 public theorem/lemma declarations in the new Mathlib layer have only standard axioms propext, Classical.choice and Quot.sound, or none. Exact scopes are in formalization/MATHLIB_LAYER_RU.md; CUE is defined, not derived from Haar measure, and pure-loss coverage is scalar only. Legacy native_decide retains native-evaluation trust. BGS and the original signed Heisenberg hierarchy remain open."
     },
     {
       "id": "BGS-INFO-001",
@@ -521,7 +522,9 @@
         "supplement/fixed_map/README.md"
       ],
       "verifiers": [],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/LocalJetObstruction.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
@@ -685,7 +688,11 @@
         "mathematics/trace-bridge/trace_to_local_statistics_bridge.md"
       ],
       "verifiers": [],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/TraceMobius.lean",
+        "formalization/Bgs/Mathlib/TraceMobiusGeneral.lean",
+        "formalization/Bgs/Mathlib/TraceReconstruction.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/appendix_b_provenance_and_verification.tex"
       ],
@@ -785,7 +792,9 @@
         "mathematics/trace-bridge/clustered_abel_window_boundary.md"
       ],
       "verifiers": [],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/AbelPoisson.lean"
+      ],
       "manuscript": [],
       "boundary": "Abstract unitary spectra. The Abel consequence for the compensated Pell family depends on its separate project pinning theorem; no frozen-map mixed cancellation is asserted."
     },
@@ -803,7 +812,9 @@
         "mathematics/fixed-map/fixed_map_resolvent_frontier.md"
       ],
       "verifiers": [],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/ClockFloor.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
@@ -821,7 +832,9 @@
       "verifiers": [
         "computations/verification/gram_resolvent_normalization.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/TwoClock.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
@@ -900,7 +913,9 @@
       "verifiers": [
         "computations/verification/cue_upload_audit.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/PeriodicPoints.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
@@ -1224,7 +1239,10 @@
       "verifiers": [
         "computations/verification/heisenberg_note_audit.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/DigitFUP.lean",
+        "formalization/Bgs/Mathlib/DigitFUPBinary.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
@@ -1808,7 +1826,9 @@
       "verifiers": [
         "computations/verification/isospectral_clock_control.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/ClockCharacter.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/isospectral_clock_control.tex"
       ]
@@ -2845,7 +2865,8 @@
         "computations/cpp/phase_occupation_jet_verifier.cpp"
       ],
       "formalization": [
-        "formalization/Bgs/PhaseChannelJetKernels.lean"
+        "formalization/Bgs/PhaseChannelJetKernels.lean",
+        "formalization/Bgs/Mathlib/PhaseChannel.lean"
       ],
       "manuscript": [
         "manuscript/unified_sections/phase_channel_jets.tex"
@@ -3041,7 +3062,8 @@
       ],
       "verifiers": [],
       "formalization": [
-        "formalization/Bgs/PhaseFrameWitness.lean"
+        "formalization/Bgs/PhaseFrameWitness.lean",
+        "formalization/Bgs/Mathlib/FreshPhaseAverage.lean"
       ],
       "manuscript": [
         "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
@@ -3245,7 +3267,9 @@
       "verifiers": [
         "computations/verification/circular_phase_controls.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/ExactCumulants.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
@@ -3272,7 +3296,9 @@
       "verifiers": [
         "computations/verification/circular_phase_controls.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/FormFactorCurve.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
@@ -3379,7 +3405,9 @@
       "verifiers": [
         "computations/verification/unitary_two_step_obstruction.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/TwoStepObstruction.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
@@ -3484,7 +3512,9 @@
       "verifiers": [
         "computations/verification/two_step_increment_variance.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/TwoStepVariance.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
@@ -3570,7 +3600,11 @@
         "computations/verification/spectrum_coherence_controls.py",
         "computations/cpp/coherence_memory_verifier.cpp"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/FlatChirp.lean",
+        "formalization/Bgs/Mathlib/FlatTensor.lean",
+        "formalization/Bgs/Mathlib/FlatPerturb.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
@@ -3597,7 +3631,8 @@
         "computations/cpp/coherence_memory_verifier.cpp"
       ],
       "formalization": [
-        "formalization/Bgs/CoherenceBudget.lean"
+        "formalization/Bgs/CoherenceBudget.lean",
+        "formalization/Bgs/Mathlib/CoherenceMemory.lean"
       ],
       "manuscript": [
         "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
@@ -3622,7 +3657,9 @@
         "archive/evidence/executions/20261014/first-return/README.md"
       ],
       "verifiers": [],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/FirstReturnPulse.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
@@ -3875,7 +3912,12 @@
       "verifiers": [
         "computations/verification/imported_finite_controls/hardy/verify_hardy.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/HardyClock.lean",
+        "formalization/Bgs/Mathlib/HardyIdentity.lean",
+        "formalization/Bgs/Mathlib/HardyRigidity.lean",
+        "formalization/Bgs/Mathlib/DeletedClock.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
@@ -3896,7 +3938,9 @@
         "computations/verification/abel_gaussian_wick/verify_abel.py",
         "computations/verification/abel_gaussian_wick/verify_rigidity.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/ClockRigidity.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/abel_gaussian_rigidity.tex"
       ],
@@ -4692,7 +4736,9 @@
         "computations/verification/multiradius_rigidity.py",
         "computations/verification/two_radius_rigidity.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Mathlib/MultiradiusRigidity.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/polynomial_multisphere.tex"
       ],

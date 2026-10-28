@@ -1,5 +1,9 @@
 # Claim ledger
 
+## Aristotle formalization integration, 28 October 2026
+
+Adapted all 39 substantive modules from the older Aristotle snapshot into the existing Lean 4.33.1 graph. The [coverage map](../formalization/MATHLIB_LAYER_RU.md) and [receipt](../evidence/formalization/aristotle_20261027/receipt.json) record exact theorem scope, 589 axiom-audited declarations and the successful aggregate build. ERR-060 corrects the pure-loss scalar identity in the proof and manuscript. Current claim states, TRACE-114–116 and pinned dependencies are retained; no BGS closure is asserted.
+
 ## Adopted operator continuation, 27 October 2026
 
 TRACE-114, TRACE-115 and TRACE-116: analytic proofs reconstructed with author self-review; [full disposition and dependencies](trace005_continuation_review.md). They cover balanced short-trace rounding, bounded microscopic/positive pair stability and original-family pair transfer through O(N^-2) approximants. No CUE limit is supplied; BGS-TRACE-005 and BGS-BGS-001 remain OPEN. Earlier provisional nonregistration statements below are superseded for these three precise claims only.

@@ -164,3 +164,17 @@ $\sqrt N/1024$ on a fixed positive Fourier box. The absolute sufficient
 implication remains correct, including averages taken before the modulus.
 The fixed-map chapter records the viable signed target and the limits
 of its reference variance and formal phase controls.
+
+\subsection{Integrated Mathlib layer, 28 October 2026}
+The existing Lean 4.33.1 project now includes 39 adapted Aristotle modules
+alongside its 29 earlier source modules. The aggregate build completed
+8776 Lake jobs without errors or warnings. All 589 public theorem and lemma
+declarations in the added layer were audited for axioms: only
+\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}, or none.
+The precise coverage is recorded in \path{formalization/MATHLIB_LAYER_RU.md}
+and the dated integration receipt. These certify the displayed propositions,
+including selected scalar limits, rather than the whole analytic corpus.
+The CUE form factor is defined, not derived from Haar measure; pure-loss
+coverage is scalar, and legacy native certificates retain their trust boundary.
+ERR-060 restores the missing term $-4u^2e$ in the pure-loss identity for $r^2$.
+No scientific claim state or open BGS obligation is promoted by this integration.

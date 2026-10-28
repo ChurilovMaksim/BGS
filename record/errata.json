@@ -1,6 +1,6 @@
 {
   "schema": "bgs-errata-v1",
-  "updated": "2026-10-22",
+  "updated": "2026-10-28",
   "status_authority": "record/retractions.md",
   "entries": [
     {
@@ -434,6 +434,13 @@
       "disposition": "Closed the visible brace in Möbius equation (8); separated pair-heat equations (H22)/(H23) into two displays so each has one tag.",
       "downstream": "Mathematical expressions and equation numbers retained. Local rendering checked; no claim of authenticated GitHub-page rendering. Manuscript summaries do not reproduce these defective source blocks.",
       "authority": "record/audits/repository_recheck_20261022/report.md"
+    },
+    {
+      "id": "ERR-060",
+      "title": "Pure-loss discrimination note: displayed identity for r^2 omitted the term -4u^2 e",
+      "disposition": "corrected: r^2=1-2uh+u^2(1-z+e)^2-4u^2 e (machine-checked in the Mathlib layer, module PureLoss, theorems pl_r2_eq and pl_r2_source_formula_false; counterexample u=1/16, eta=1/2, n=1 gives 1020/1024, not 1028/1024)",
+      "downstream": "Theorem and all displayed bounds unchanged; they follow from the corrected identity (pl_r2_near, pl_delta_bounds, pl_L_bounds). Python/C++ verifiers compute r^2 directly and were unaffected. No claim state changed.",
+      "authority": "record/retractions.md"
     }
   ]
 }

@@ -14,7 +14,7 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-27**. **202 registered claims.**
+**2026-10-28**. **202 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
@@ -63,7 +63,7 @@ rendered in full in the [claim registry](record/claim_registry.md).
 ## Corrections
 
 Errata registry schema `bgs-errata-v1`; updated
-**2026-10-22**; **59 registered entries**.
+**2026-10-28**; **60 registered entries**.
 The status authority for corrections is
 `record/retractions.md`; the generated reader-facing index
 is [`ERRATA.md`](ERRATA.md).
@@ -71,7 +71,7 @@ is [`ERRATA.md`](ERRATA.md).
 ## Registry integration record
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
-`2026-10-07-wave3`, reviewed **2026-10-27**.
+`2026-10-07-wave3`, reviewed **2026-10-28**.
 It records 99 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an

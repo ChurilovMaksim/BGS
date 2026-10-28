@@ -1,0 +1,5706 @@
+{
+  "schema": "bgs-aristotle-integration-v2",
+  "status": "RECOVERY_IN_PROGRESS",
+  "base_commit": "d403a59359a7fbdd5b95654bea954d6abddb6be3",
+  "previous_execution_blob": "636956d1239bd9a303760171f3e08920fec252f9",
+  "previous_execution": {
+    "schema": "bgs-aristotle-integration-v1",
+    "status": "PASS",
+    "date": "2026-10-27",
+    "base_commit": "d403a59359a7fbdd5b95654bea954d6abddb6be3",
+    "input_archive_sha256": "335f7bfc47eaf492b169978c0d81ae49cfa8297633f8f7050fa6e3a3473dd08a",
+    "input_base_commit": "77e7e75275ceea12de51f10bcb7b91622d40401b",
+    "changed_input_files": [
+      {
+        "path": "CHANGELOG.md",
+        "status": "modified",
+        "bytes": 15139,
+        "sha": "8ab75787a28b272bf73b7666566f28581f808c8c",
+        "sha256": "39db946d791b864c2b5749da59bf73d58e0fc82984a6d6e4bb4d2ade7dc53f54",
+        "disposition": "merge-scoped-entry"
+      },
+      {
+        "path": "ERRATA.md",
+        "status": "modified",
+        "bytes": 17000,
+        "sha": "1d25ec4eb1c0292d0702b0e9d43e58ad884dca4e",
+        "sha256": "cf937aacd44a22c748b233f7bfba7c125d67db11a6598980ff444c73a5413f5f",
+        "disposition": "regenerated-from-merged-errata"
+      },
+      {
+        "path": "STATUS.md",
+        "status": "modified",
+        "bytes": 3872,
+        "sha": "2dca8fb93b729c63cc6f7248623401e65642f5f3",
+        "sha256": "a44667ddff0f112c0b93f698983955f531ee7d16ed2d8da848e0e69f669a38d7",
+        "disposition": "regenerated-preserving-current-202-claims"
+      },
+      {
+        "path": "record/errata.json",
+        "status": "modified",
+        "bytes": 26025,
+        "sha": "51ed8a7713cc4bda3a53a6d07e4e23c271c242f6",
+        "sha256": "4803b0fb34dc3f507a6c122630e3c42ff03ea6b606a84a5191a1307e81ec0a3f",
+        "disposition": "merge-ERR-060"
+      },
+      {
+        "path": "record/retractions.md",
+        "status": "modified",
+        "bytes": 14247,
+        "sha": "c01273ab5a292ccfc24da53eb64de1b9f0476907",
+        "sha256": "a964f18b0869b84d4ffa093c19bc8cae3d98f53c3b6b1d1cf84d94a2d152dcd7",
+        "disposition": "append-ERR-060"
+      },
+      {
+        "path": "mathematics/information-theory/pure_loss_discrimination.md",
+        "status": "modified",
+        "bytes": 4229,
+        "sha": "4dd4f67e17ca91b193a504beface71f958008632",
+        "sha256": "ce3ce88473b49ec1d75f72153236bc29b10636f0a5e1baf0e570355fe3a8cbb7",
+        "disposition": "merge-corrected-identity"
+      },
+      {
+        "path": "formalization/README.md",
+        "status": "modified",
+        "bytes": 10026,
+        "sha": "aa6f623c0f662c6843d0ade1c3408b38eef8ea5b",
+        "sha256": "8ea8af797a7b40ee8971fb84905380e8815d2260a189a4939cd478f25de27a3f",
+        "disposition": "update-current-coverage"
+      },
+      {
+        "path": "RequestProject/CatMap.lean",
+        "status": "added",
+        "bytes": 5963,
+        "sha": "3449135ac71d4e7499ed74a35cacd706ff05cba2",
+        "sha256": "87eeabbd824253b634221b18ab8ad978fc11ce36220d312cf78ed44ff5b11ad8",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/PeriodicPoints.lean",
+        "status": "added",
+        "bytes": 6893,
+        "sha": "98c524a809a89a041a88016494a81d5714d91f44",
+        "sha256": "adfb17b88b14264c8d39a8d1497b8b14969e87820d389509787c643b12ddb93f",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/AbelPoisson.lean",
+        "status": "added",
+        "bytes": 16948,
+        "sha": "59386aa8be748c048b095aa32c3ffa031b53078b",
+        "sha256": "5292e4a7c6fcc57b86de41127d88551d0cb0d0e29f5359e472810b81ceea5576",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/ClockFloor.lean",
+        "status": "added",
+        "bytes": 29760,
+        "sha": "811c8d23df499c46c621f968699fb45ff886dadc",
+        "sha256": "ee61c3efb2d7557f38bff2b698b03ddc95e8b8a416bd8e1280e686ef05a64f2a",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/CueReference.lean",
+        "status": "added",
+        "bytes": 9510,
+        "sha": "0c68f628b50190c24547662d11eb6fc69ce9a924",
+        "sha256": "766dd5001ae4cc2d9d77cc0efdb419032646969547134843715320ef804dd92d",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/SineKernel.lean",
+        "status": "added",
+        "bytes": 6331,
+        "sha": "92330e0b999ec3e31c0dc8a691cbbf64ddcd3ad5",
+        "sha256": "fae528abb4eb9f092df4a043b45b18f5d004e24b49065fc804beb56c8c568e25",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/CoherenceMemory.lean",
+        "status": "added",
+        "bytes": 17630,
+        "sha": "223a2e28438f13c82daae66b9c10d2aecbbfb21b",
+        "sha256": "e432ea106930fdba13a222bf218a8d3ca2aebcccddf1d840b887b24df9a04e71",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/PhaseChannel.lean",
+        "status": "added",
+        "bytes": 2633,
+        "sha": "c7713c12a8865f550b654c7e6f0450e7fdf5ec87",
+        "sha256": "91dd53b9fcb56a09f4d1a4de2213f0fa4b82ab778ad3c4c280348be37512f801",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "lakefile.toml",
+        "status": "added",
+        "bytes": 234,
+        "sha": "9ab0e5a3d7c5fabd7bf1d5a0011703dc2c3c9c6a",
+        "sha256": "c22168e9782fb3443391bba7f6d01af1aeeba56df90d97cb9867479f28f415ad",
+        "disposition": "omit-second-root-project"
+      },
+      {
+        "path": "lean-toolchain",
+        "status": "added",
+        "bytes": 25,
+        "sha": "12359f928f18e4a89ebd1444a0310b025931b17d",
+        "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+        "disposition": "retain-existing-pinned-toolchain"
+      },
+      {
+        "path": "lake-manifest.json",
+        "status": "added",
+        "bytes": 3106,
+        "sha": "59119348c1333e0912f3ed4893414941cf608f1a",
+        "sha256": "22d8422ed00f3914555365bc520b7bc73a3cfe20bdf1af599d440408dab90dea",
+        "disposition": "retain-existing-pinned-manifest"
+      },
+      {
+        "path": "formalization/MATHLIB_LAYER_RU.md",
+        "status": "added",
+        "bytes": 36553,
+        "sha": "0848cc892f100a26a72a6580190bc139d4af675a",
+        "sha256": "803fd99014b922e1f2f3ddb34bf1d184470eec8d8e622cc2de3b89811a5a3f27",
+        "disposition": "adapt-version-paths-and-scope"
+      },
+      {
+        "path": "ARISTOTLE_SUMMARY.md",
+        "status": "added",
+        "bytes": 173,
+        "sha": "8fd28ea211760be17b6360f6a7f78a9ba178e9ea",
+        "sha256": "1607f538327fd688cb9eedc172539d6e14d8a2752e573e369fdc9ba948b21c0b",
+        "disposition": "omit-time-limit-message"
+      },
+      {
+        "path": "RequestProject/HardyClock.lean",
+        "status": "added",
+        "bytes": 11625,
+        "sha": "403dbe16db1ffec298d141f0f5fbb845396fdb99",
+        "sha256": "3800aadffb1bc46d3f1f6f195937acc717cbda2f3be1b8de527d898134ec201b",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/TwoClock.lean",
+        "status": "added",
+        "bytes": 18607,
+        "sha": "8129d38e8917a30ed80c4ab3bbbf22706df99cb8",
+        "sha256": "31f7e40bc9d5ae69531ec884e5b71a9cf3ddacee68f372af5d38652a8c1405dd",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/DigitFUP.lean",
+        "status": "added",
+        "bytes": 14511,
+        "sha": "5a6122b00b6f68590172a9e8ae448ad44ac267df",
+        "sha256": "0b7ed37de4bb9ae58458cbaa60c2a9053dad9f17270891dcc775d7a852411ef6",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/MultiradiusRigidity.lean",
+        "status": "added",
+        "bytes": 30002,
+        "sha": "2969c8a0b5a92666d21df057b05d8021e8f118d1",
+        "sha256": "9e395a00eeaeff33c0f77f2b6533424f5816f45c1521068da5106fe3b2de0af0",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/TraceMobius.lean",
+        "status": "added",
+        "bytes": 9700,
+        "sha": "74d6500cd432eb9766143c388455f885a8ce3e5d",
+        "sha256": "0a3316adbc7bccb6a6b3219879221678d706d5a8f12d8da6a3ce0cc22e82f208",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/ClockRigidity.lean",
+        "status": "added",
+        "bytes": 16997,
+        "sha": "2e962a8cea5a2149a39e0535779a4d8f71a762cf",
+        "sha256": "fbb5ad2a839a1debb1fad2d995fa4abd695eeae203d0968b857412a674fe1b94",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/DigitFUPBinary.lean",
+        "status": "added",
+        "bytes": 16896,
+        "sha": "a5293cb56ddc440863daaa975e2349a8927389ac",
+        "sha256": "ac5f71213897dc0196f3da04b95e4cccba2d551289592e7d6bcf678a041358a6",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/HardyIdentity.lean",
+        "status": "added",
+        "bytes": 21528,
+        "sha": "eda57b002b395c399692584c1da8be753482969d",
+        "sha256": "867961db9146902091de0fd075243ed5cba82f2f5f1714d8eda2b0fbc281f269",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/HardyRigidity.lean",
+        "status": "added",
+        "bytes": 9364,
+        "sha": "a84646a7a39a424cfe9d89e525348b8589af2b59",
+        "sha256": "cdd27e5c8278eaa54834ab043a495e4f8c3b28bca6ce802432c525c7a3ed87ad",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/Main.lean",
+        "status": "added",
+        "bytes": 563,
+        "sha": "308f9cfb58cc562160bcd62ba1e20174f161311d",
+        "sha256": "929b0bddef0b781f3fb42c7a99f252dc0bda7331f698104f7075e12ff637c52d",
+        "disposition": "omit-setup-only-module"
+      },
+      {
+        "path": "RequestProject/TraceMobiusGeneral.lean",
+        "status": "added",
+        "bytes": 7264,
+        "sha": "4dde24c3e061d8e053bf757d0e970f6d47d096f8",
+        "sha256": "dc764ce8b8354876bb27cab0b1fef4a3ab0d0ac3f7c7fcbed0922460aa07edf9",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/TraceReconstruction.lean",
+        "status": "added",
+        "bytes": 9613,
+        "sha": "4e78778f47e5538774bc6d1892c7033557f1f6fc",
+        "sha256": "5152b6c95c0193890cb1ce99f51e2b650a15af240963b4a5674802d6122c23c2",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/FreshPhaseAverage.lean",
+        "status": "added",
+        "bytes": 14441,
+        "sha": "caaea7056b8b8cdc3722fd6fd60c764e9646d39b",
+        "sha256": "55bfe33452d4a5fb932e9230b91dfa79f102ea97a3415d0c4a09f4ea0bff5d0d",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/ClockCharacter.lean",
+        "status": "added",
+        "bytes": 11759,
+        "sha": "14f89012628cbc16cf354965b1726558774e1680",
+        "sha256": "c281c0a90716913f84902a6da73f40c2210b966607bcf9ca4052d0692f8bd6db",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/ExactCumulants.lean",
+        "status": "added",
+        "bytes": 23721,
+        "sha": "9ff5c337d563b209c912b93957d06d0867ea5fda",
+        "sha256": "2b20caf62b9dcf236504b42437268b85f9e12cfa34cdf448747aa2511cb2de57",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/FirstReturnPulse.lean",
+        "status": "added",
+        "bytes": 5847,
+        "sha": "6667296fe5b13e5bcc82b7376edc6fe107d94770",
+        "sha256": "ec962d7a85f41e24f0052d7ef12992b93528c03a815f17619990e99d5f031b0b",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/FlatChirp.lean",
+        "status": "added",
+        "bytes": 12435,
+        "sha": "b9b8ab508284b6d90c5ed80b17d7b846b6bae519",
+        "sha256": "f0396bf462e063a4c9033b8aa48be9766f7ce375e5dee411d1968d9d40017f04",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/FlatPerturb.lean",
+        "status": "added",
+        "bytes": 14425,
+        "sha": "1900148fa878aa298879ca66c5b375c58bc75c19",
+        "sha256": "8a3e62a1e40764e892470f351d2950e1d8d4bc8df2e4cb2440d9cf52a6abaefd",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/FlatTensor.lean",
+        "status": "added",
+        "bytes": 12728,
+        "sha": "86e3912a7ae3bc92bb5544e113ba2b8492eaefb1",
+        "sha256": "665765ed2538b896c3dea3122e2475fc8ac5ab9d53aae730a187581d8c685071",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/FormFactorCurve.lean",
+        "status": "added",
+        "bytes": 5095,
+        "sha": "692c59a5b9b48b24e733d0b55d70f6d0bea4becf",
+        "sha256": "d702901ec0489fab7f380b8228c115440a1fa41c2a3078b6096063bd97e9b539",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/PairSumFactorization.lean",
+        "status": "added",
+        "bytes": 13084,
+        "sha": "735864c82c85c162dc1515e21e85a2314eda93e4",
+        "sha256": "1f42cd0cea1fe20a1ac9d7657b44e06e819c3040f0e0667fb98bbf44167946fa",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/PureLoss.lean",
+        "status": "added",
+        "bytes": 14575,
+        "sha": "bf222367a9d46a1020b8b5eea7d2942f03085e7d",
+        "sha256": "56975f124f363b0d4b6a9108c197e70291b11fd169ebcbfe402f627768444385",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/QuadraticResponse.lean",
+        "status": "added",
+        "bytes": 7227,
+        "sha": "8591584f937d0816ecf6e8f17df2d4e44c430780",
+        "sha256": "a204c6cf09aa0296c14f5ae2857438b33f30c082754677149e97befe66e65a8d",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/TwoStepObstruction.lean",
+        "status": "added",
+        "bytes": 16960,
+        "sha": "f31b15b92036a66d19e832a64d1022749bfbc7d4",
+        "sha256": "3279138eaf7eedb2f28d1ace8e15509fe03dff58c67cb4118367ee79a7c16087",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/TwoStepVariance.lean",
+        "status": "added",
+        "bytes": 19384,
+        "sha": "1015075aaafece5830746135947c7658d9b55310",
+        "sha256": "b53d4cf392b3422f5ce325586d075b5762e1182e1bd86c06885b462d0bb47682",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/UniformCluster.lean",
+        "status": "added",
+        "bytes": 10495,
+        "sha": "e0619727fa5ed5c84bcf6ccaa89c05eddad1f35f",
+        "sha256": "3ade0dc5bea2bae438efe77c01ea008ed5fb152d273e31031d66e2789096b27d",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/DeletedClock.lean",
+        "status": "added",
+        "bytes": 14699,
+        "sha": "9c600f6275fde0f4f62792aaa0bb55476044ac33",
+        "sha256": "169c2854ab066ce90cf9eace729603e40c52d085c1fa99f9a8f3558c0b773ce7",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/LocalJetObstruction.lean",
+        "status": "added",
+        "bytes": 9554,
+        "sha": "2ad2b2546c1a16ee743b4cb34ed5667bb6631ddd",
+        "sha256": "ed4838a12422e0cb493c51dd7c464ed86da31390c2167cee9cf12fd53532e2c8",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/RadialTail.lean",
+        "status": "added",
+        "bytes": 12218,
+        "sha": "102984f588c852c06385cd99bac406f5f3da94a9",
+        "sha256": "ec9ab14c04b2cd04d8da8fe5c8d6d7ec30b3196aa2a6a0e8352a0a8f339396d2",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/AbsorptionBound.lean",
+        "status": "added",
+        "bytes": 16796,
+        "sha": "c7a42a5fd2195343a96664fc98005f1b60678a27",
+        "sha256": "ea8d59b151ccc50a90072286a8bc038882c7f2d286003a597731b84118c953a7",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/HyperbolicEigenline.lean",
+        "status": "added",
+        "bytes": 4497,
+        "sha": "0637aa496cd8e9b862c9feee2ef33e790045ada4",
+        "sha256": "2de4784bc9534ec8988b6d88ec54dc1ca7bd9a72ebb2ec342b47346ad37bf8c6",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      },
+      {
+        "path": "RequestProject/ResonanceComb.lean",
+        "status": "added",
+        "bytes": 6291,
+        "sha": "34b630656180d7d102b956884e8782dc7dbd6d39",
+        "sha256": "cf97ca49172f790c10ae83dc717604b0cab337f0b01db8b7da7396296c52d2ea",
+        "disposition": "adapt-into-formalization/Bgs/Mathlib"
+      }
+    ],
+    "modules": [
+      {
+        "original": "RequestProject/AbelPoisson.lean",
+        "source_sha256": "5292e4a7c6fcc57b86de41127d88551d0cb0d0e29f5359e472810b81ceea5576",
+        "adapted_path": "formalization/Bgs/Mathlib/AbelPoisson.lean",
+        "adapted_sha256": "4a16c873bd147b838e2d261b1e9686684bd1852df40cbe55b68b8cdd57452caf",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.exp_lt_one_of_neg'",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.poisson_denom_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.poisson_hasSum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.poissonKernel_exp",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_traceT_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_poisson_identity",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.traceT_clock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_clock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pair_count_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_cluster_lower_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cluster_trace_factorization",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cluster_trace_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/AbsorptionBound.lean",
+        "source_sha256": "ea8d59b151ccc50a90072286a8bc038882c7f2d286003a597731b84118c953a7",
+        "adapted_path": "formalization/Bgs/Mathlib/AbsorptionBound.lean",
+        "adapted_sha256": "5d981ef0e5b8eb2a511a6b636e4d97a87a00c6368eac79bfe0fe1addd43dd2d6",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.Absorption.absorption_scalar_identity",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.absorption_scalar_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.norm_multiset_prod_map",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.det_one_sub_smul_eq_prod",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.absorption_det_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.eigenvalue_norm_le_of_contraction",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.absorption_det_bound_of_contraction",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.absorption_det_sharp",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.half_one_add_exp_neg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.log_half_one_add_exp_neg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.absorption_log_term_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.absorption_complex_counterexample",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.mul_tanh_le_two_logcosh",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.tanh_div_antitone",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.logcosh_div_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.neg_log_one_sub_tanh_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Absorption.actual_constants",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/CatMap.lean",
+        "source_sha256": "87eeabbd824253b634221b18ab8ad978fc11ce36220d312cf78ed44ff5b11ad8",
+        "adapted_path": "formalization/Bgs/Mathlib/CatMap.lean",
+        "adapted_sha256": "841245a7b0e5ebddb16684223b042c4c6e66197fd7c3ed4c97b61aed6c4a4f67",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.catS_det",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_trace",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_preserves_pell",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_mulVec",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_trace_pow_rec",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catLambda_eq_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catLambda_mul_inv",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.one_lt_catLambda",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_trace_pow_real",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_trace_pow_gt_two",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.det_sub_one_of_det_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_det_pow_sub_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_abs_det_pow_sub_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.trace113_window",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/ClockCharacter.lean",
+        "source_sha256": "c281c0a90716913f84902a6da73f40c2210b966607bcf9ca4052d0692f8bd6db",
+        "adapted_path": "formalization/Bgs/Mathlib/ClockCharacter.lean",
+        "adapted_sha256": "2ccb0cf3bd508a67283758d95248f7bd7b8546b15413c66b58a372692eabe471",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.zpow_eq_of_intCast_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.clock_entry_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.den_residue_injective",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.clock_den_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.clock_alternant_ratio",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.clock_trace_pow_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.clock_low_characters",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.two_copy_dimensions",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.clock_two_copy_max",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.dim_ge_of_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.clock_trace_pow_N",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.lattice_count",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.lattice_points_in_window",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/ClockFloor.lean",
+        "source_sha256": "ee61c3efb2d7557f38bff2b698b03ddc95e8b8a416bd8e1280e686ef05a64f2a",
+        "adapted_path": "formalization/Bgs/Mathlib/ClockFloor.lean",
+        "adapted_sha256": "d75816cb9929f9778dfa3d875adb38094bb50e22a5abd3d8820a24ddc0c16c6d",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.qN_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.qN_lt_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.qN_pow_N",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sinh_sq_mul_exp",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.gc_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.qN_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.four_sinh_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.gc_eq_of_lt",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.gc_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.gc_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pc_hasSum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pc_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pc_summable",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sc_hasSum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fejc_hasSum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hc_hasSum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.gc_hasSum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.dirichlet_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fej_aux",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fejSum_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_range_sub",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fejSum_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Hfun_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sinh_le_mul_cosh",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.two_sinh_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Hfun_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pair_cos_sum_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.poisson_energy_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_ge_clock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/ClockRigidity.lean",
+        "source_sha256": "fbb5ad2a839a1debb1fad2d995fa4abd695eeae203d0968b857412a674fe1b94",
+        "adapted_path": "formalization/Bgs/Mathlib/ClockRigidity.lean",
+        "adapted_sha256": "a92a1bdacc92552fd109707fea2776490cadf3d347a202b26e26a02a926c7f06",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.sinh_lt_mul_cosh",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.two_sinh_lt",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.key_strict",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.Hfun_eq_zero_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.clock_floor_eq_coth",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pair_cos_sum_eq_norm",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_excess_decomposition",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.isRotatedClock_of_pairs",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_of_isRotatedClock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_eq_clock_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_gt_clock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/CoherenceMemory.lean",
+        "source_sha256": "e432ea106930fdba13a222bf218a8d3ca2aebcccddf1d840b887b24df9a04e71",
+        "adapted_path": "formalization/Bgs/Mathlib/CoherenceMemory.lean",
+        "adapted_sha256": "5b620e04f803ed3a39900d8348ee5e998d7539b58ca46158227d1eace77c61cb",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.coherent_part_formula",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.return_memory_recurrence",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.offPart_apply",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.diag_conj_diagonal",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs2_eq_re_trace",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs2_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs2_eq_zero_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs2_conjU",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs2_offPart_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs2_cohE_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs2_cohE_iterate_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.unistochastic_row_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.unistochastic_col_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.conjL_pow_apply",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.trace_conjU",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.trace_conjU_iterate",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs2_conjU_iterate",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.exists_offdiag_orbit",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coherence_plateau_hs",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.offPart_add",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.offPart_smul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cohEL_pow_apply",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.toHS_of",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_HSMat_of",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coherence_plateau_opNorm",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/CueReference.lean",
+        "source_sha256": "766dd5001ae4cc2d9d77cc0efdb419032646969547134843715320ef804dd92d",
+        "adapted_path": "formalization/Bgs/Mathlib/CueReference.lean",
+        "adapted_sha256": "ed823984020d620932f1740e128fb6afad824763f2715ebf73a4cb5b918b6c46",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.min_succ_eq_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hasSum_shifted_geometric",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cue_series_hasSum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cueL_closed_form",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tendsto_N_one_sub_exp",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cueL_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.laplace_min_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.plateau_defect_neg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/DeletedClock.lean",
+        "source_sha256": "169c2854ab066ce90cf9eace729603e40c52d085c1fa99f9a8f3558c0b773ce7",
+        "adapted_path": "formalization/Bgs/Mathlib/DeletedClock.lean",
+        "adapted_sha256": "92a3b915da6928ec09c835457efed2fbc93e75557132be7f8d78ae1bf892bb71",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.traceT_deleted",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_traceT_deleted_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_deleted",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.traceT_one_of_rotated",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.deleted_not_rotatedClock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_deleted_gt_clock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tendsto_inv_nat_nhdsNE",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tendsto_N_exp_sub_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hasDerivAt_bose",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.exp_two_div_sq_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_deleted_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.deleted_coeff_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_deleted_excess_asymptotic",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/DigitFUP.lean",
+        "source_sha256": "0b7ed37de4bb9ae58458cbaa60c2a9053dad9f17270891dcc775d7a852411ef6",
+        "adapted_path": "formalization/Bgs/Mathlib/DigitFUP.lean",
+        "adapted_sha256": "4bea80d6eef45c73a02f1e3874e0439e42c0b7bf8eee2be8a308f06ffaa29e06",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.digit_zero",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.digit_succ",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.repunit_succ",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.digit_complement",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.digit_add_repunit_ne",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.offDiag_complement",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.geom_exp_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.dft2_fupWitness",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.dft2_fupWitness_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_sq_dft2_fupWitness",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.even_offdiag_fup_saturated",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/DigitFUPBinary.lean",
+        "source_sha256": "ac5f71213897dc0196f3da04b95e4cccba2d551289592e7d6bcf678a041358a6",
+        "adapted_path": "formalization/Bgs/Mathlib/DigitFUPBinary.lean",
+        "adapted_sha256": "a95ae2e1772d1595f1f78219481f357955b057eadb171f8c5bca686c0df121b1",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.eq_of_digit_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.offDiag_two_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.dft1_add_period",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.dft1_parseval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_odd_freq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_dft2_antidiag",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.compression_sq_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_sq_antidiag",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.binary_offdiag_fup_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.binary_offdiag_fup_sharp",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/ExactCumulants.lean",
+        "source_sha256": "2b20caf62b9dcf236504b42437268b85f9e12cfa34cdf448747aa2511cb2de57",
+        "adapted_path": "formalization/Bgs/Mathlib/ExactCumulants.lean",
+        "adapted_sha256": "db29896dd0833a233543fd5308fb1bea02f3a98b696471b1321bb90c5fbe2f10",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.hP_natCast",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hP_neg_natCast",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hP_succ",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs_eq_hP",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.halfInt_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs_point_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs_point_ne_zero'",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hP_inv",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hP_invSq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs_eq_hP'",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs_point_ne_sub_nat",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs_point_shift",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseT1_eval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseT2_eval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseT3_eval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseT4b_eval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseT4a_eval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hs_eq_hP''",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hP_inv_nat",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hP_inv_negNat",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hP_invSq_nat",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hP_invSq_negNat",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseKappa_formula_short",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseR2_empty",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseR1_empty",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseKappa_formula_middle",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseKappa_formula_plateau",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseKappa_diag",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseKappa_two_mul_sub_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hHarm_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hHarm_mono",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseKappa_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hHarm_one_le_log",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cseM2_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cueKappa_grouping",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cueVar_short",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cueVar_middle",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cueVar_long",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cueVar_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cueVar_comparison",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/FirstReturnPulse.lean",
+        "source_sha256": "ec962d7a85f41e24f0052d7ef12992b93528c03a815f17619990e99d5f031b0b",
+        "adapted_path": "formalization/Bgs/Mathlib/FirstReturnPulse.lean",
+        "adapted_sha256": "9d93abca605c93fb17fcbcee59ef63a8f27e4ca0b5a66657272e8858284b9f01",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.chirpV_pow_apply",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_pow_of_dvd",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_pow_entry_normSq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coreH_sq_eq_K",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coreK_pow_three",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coreH_pow_even",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coreK_pow_cases",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coreH_pow_odd_entry_normSq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.intensity_flatA_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.intensity_flatA_pow_odd",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.intensity_flatA_pow_odd_dvd",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.intensity_flatA_pow_even",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/FlatChirp.lean",
+        "source_sha256": "f0396bf462e063a4c9033b8aa48be9766f7ce375e5dee411d1968d9d40017f04",
+        "adapted_path": "formalization/Bgs/Mathlib/FlatChirp.lean",
+        "adapted_sha256": "f920587dd929896437ca39ee7b877df40af5150df6ceabcccd39b4c4ea550e70",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.two_ne_zero_zmod",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_psi_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.psi_conj",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirp_sum_normSq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sqrt_inv_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.conj_sqrt_inv",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fourier_conj_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fourier_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fourierF_transpose",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fourier_unitary'",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_apply",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_transpose",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpD_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_trace_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_pow_p",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_entry_normSq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_trace_pow_normSq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.chirpV_trace_pow_norm",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coreH_mul_transpose",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coreH_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coreH_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coreH_pow_six",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coreH_entry_normSq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.reversal_coreH",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.reversal_coreH_mul_conjTranspose",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/FlatPerturb.lean",
+        "source_sha256": "8a3e62a1e40764e892470f351d2950e1d8d4bc8df2e4cb2440d9cf52a6abaefd",
+        "adapted_path": "formalization/Bgs/Mathlib/FlatPerturb.lean",
+        "adapted_sha256": "e3d38304fcdbdfeef4da2b295211e2d634cd6efc7bceda3c35840121ad2bcf41",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.pow_sub_pow_norm_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.l2_norm_le_one_of_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.entry_norm_le_l2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.trace_norm_le_l2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.phaseE_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.phaseE_sub_one_norm_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.mul_phase_sub_norm_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.intensityP_mul_phase",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.reversalB_mul_phase",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.l2_norm_mul_self_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.l2_norm_proj",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.l2_norm_unitary_conj",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatU_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatU_entry_normSq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.kron_one_flatJ_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_reversalB_flatA",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_reversalB_flatU",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatU_trace_sub_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatU_trace_pow_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatU_trace_resonance",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatU_form_factor_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/FlatTensor.lean",
+        "source_sha256": "665765ed2538b896c3dea3122e2475fc8ac5ab9d53aae730a187581d8c685071",
+        "adapted_path": "formalization/Bgs/Mathlib/FlatTensor.lean",
+        "adapted_sha256": "dbdb4a35d9112ecf0a1e639f2a667838ae10e815eb7adf8cf66b23066889a453",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.tensorPow_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tensorPow_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tensorPow_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tensorPow_conjTranspose",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tensorPow_trace",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tensorPow_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.reversalB_tensorPow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.normSq_tensorPow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.kron_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.kron_conjTranspose",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.kron_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.reversalB_kron",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.kron_trace",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.unitary_entry_normSq_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.unitary_entry_norm_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.unitary_trace_norm_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.unitary_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatA_card",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatA_entry_normSq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatA_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatA_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatA_pow_period",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.reversalB_chirpV",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatJ_mul_self",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatJ_conjTranspose",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.reversalB_flatA",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tensorPow_smul_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.reversalB_flatA_mul_conjTranspose",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatA_trace_pow_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatA_trace_pow_div_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.four_pow_mod_six",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatA_pow_resonance",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatA_trace_resonance",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/FormFactorCurve.lean",
+        "source_sha256": "d702901ec0489fab7f380b8228c115440a1fa41c2a3078b6096063bd97e9b539",
+        "adapted_path": "formalization/Bgs/Mathlib/FormFactorCurve.lean",
+        "adapted_sha256": "329adf5a7b9798ed59ec03be38e2436ceb25ded28173b400adc2c1a0d65e0675",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.midpoint_le_log",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.harmonic_half_sum_le_log_ratio",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.harmonic_half_sum_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.ceil_index_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.harmonic_half_sum_le_log_dist",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/FreshPhaseAverage.lean",
+        "source_sha256": "55bfe33452d4a5fb932e9230b91dfa79f102ea97a3415d0c4a09f4ea0bff5d0d",
+        "adapted_path": "formalization/Bgs/Mathlib/FreshPhaseAverage.lean",
+        "adapted_sha256": "f51ca5c30991735c5703319ec74d11236e7160ff9632f3cca76eb1987c4f9088",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.poisson_moment",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fresh_disc_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.freshDelta_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.freshDelta_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fresh_sum_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.freshZeta_norm_lt_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.freshDenom_factor",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.normSq_freshZeta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fresh_phase_moment",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.freshDenom_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.continuous_freshDenom",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fresh_circleIntegrable_div",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fresh_phase_conj_moment",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fresh_phase_conjugated_average",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fresh_phase_leverage_average",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fresh_phase_leverage_identity",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/HardyClock.lean",
+        "source_sha256": "3800aadffb1bc46d3f1f6f195937acc717cbda2f3be1b8de527d898134ec201b",
+        "adapted_path": "formalization/Bgs/Mathlib/HardyClock.lean",
+        "adapted_sha256": "6357935be755098543c79e5ca98d07f94323c3744361c17dab5a65cb05364006",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.one_sub_b_pow_ne",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hardyWeight_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hardyWeight_N",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hardyWeight_second_difference",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.add_inv_lt_add_inv",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hardyWeight_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abel_equality_obstruction",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sinh_le_mul_cosh'",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sinh_div_strictMonoOn",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.one_lt_sinh_div",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cue_hardy_excess_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/HardyIdentity.lean",
+        "source_sha256": "867961db9146902091de0fd075243ed5cba82f2f5f1714d8eda2b0fbc281f269",
+        "adapted_path": "formalization/Bgs/Mathlib/HardyIdentity.lean",
+        "adapted_sha256": "7cad5eb9d056ddd16d9c6f2f73f6a8b55da447af479fba51f75fbc7fc92923d7",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.secPoly_eval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.secPoly_natDegree_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.secular_eq_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.reflected_eq_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.secular_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.secular_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.differentiable_secular",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.circleAverage_div_secular",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_reflected_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.conj_secular_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.conj_hardyNum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hardyNumRefl_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hardyNum_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.secular_decomp",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_sq_expand",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.clock_constant_identity",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.radialRatio_hardy_identity",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.radialRatio_ge_clock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.circleAverage_eq_zero_vanish",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hardyPoly_eval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hardyPoly_coeff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.radialRatio_eq_clock_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/HardyRigidity.lean",
+        "source_sha256": "cdd27e5c8278eaa54834ab043a495e4f8c3b28bca6ce802432c525c7a3ed87ad",
+        "adapted_path": "formalization/Bgs/Mathlib/HardyRigidity.lean",
+        "adapted_sha256": "542a9187502d6cedb733ac75f710b79e1f3afd6d82d37f4b4b0e5c6305caa382",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.norm_phaseEig",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.phaseEig_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.phaseEig_pow_eq_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.secPoly_prod_form",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.secPoly_roots",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.secPoly_eq_of_interior",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.secPoly_coeff_N",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.secPoly_coeff_N_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.isRotatedClock_of_interior",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.interior_of_isRotatedClock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.interior_coeff_zero_iff_rotated",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.radialRatio_eq_clock_iff_rotated",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/HyperbolicEigenline.lean",
+        "source_sha256": "2de4784bc9534ec8988b6d88ec54dc1ca7bd9a72ebb2ec342b47346ad37bf8c6",
+        "adapted_path": "formalization/Bgs/Mathlib/HyperbolicEigenline.lean",
+        "adapted_sha256": "9932fafa9c4282f7006c061f8a2ea367625d6f2741aa19403788f8f5b59554a7",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.int_sq_ne_sq_sub_four",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hyperbolic_eigenvalue_irrational",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.hyperbolic_eigenline_irrational",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_eigenline_irrational",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/LocalJetObstruction.lean",
+        "source_sha256": "ed4838a12422e0cb493c51dd7c464ed86da31390c2167cee9cf12fd53532e2c8",
+        "adapted_path": "formalization/Bgs/Mathlib/LocalJetObstruction.lean",
+        "adapted_sha256": "2699c45e9a1dd142213278f97868a5bec326f11fbbd943073aabb4851f3ea87c",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.LocalJet.Gfun_expand",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.hasDerivAt_Gu",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.hasDerivAt_Gz",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.deriv_Gu",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.deriv_Gz",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.deriv_GSu",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.deriv_GSz",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.Gfun_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.Gfun_eq_zero_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.bracket_expansion",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.bracket_coeff_three",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.monomial_coboundary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.bracket_is_coboundary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.bracket_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.a_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.LocalJet.project_a",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/MultiradiusRigidity.lean",
+        "source_sha256": "9e395a00eeaeff33c0f77f2b6533424f5816f45c1521068da5106fe3b2de0af0",
+        "adapted_path": "formalization/Bgs/Mathlib/MultiradiusRigidity.lean",
+        "adapted_sha256": "71e11db3cb30aff2fcd4efc3a7b07ee21058f1952b224e1a938595556aefe7a0",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.support_eq_filter_range",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.list_range_countP",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.signVariations_le_card_support",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.real_sparse_pos_roots_card_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sparse_pos_roots_card_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flat_coeff_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.card_le_coeffRank_of_linearIndependent",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.normSq_vecPoly_expand",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.orthogonal_isFlat",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.orthogonal_card_nonzero_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.multiradius_rigidity",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flat_at_rank_radii_orthogonal",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sharpExample_poly",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sharpExample_normSq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sharpExample_isFlat_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sharpExample_not_orthogonal",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sharpExample_rank",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sharpExample_attains_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_vecPoly_quadVec",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.two_radius_quadrature_rigidity",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/PairSumFactorization.lean",
+        "source_sha256": "1f42cd0cea1fe20a1ac9d7657b44e06e819c3040f0e0667fb98bbf44167946fa",
+        "adapted_path": "formalization/Bgs/Mathlib/PairSumFactorization.lean",
+        "adapted_sha256": "06d874bb4a8bc84adad6a30b95ecdfe76fdf701ced903866aa7f2243f0ba7478",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.pairPoly_monic",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pairSumPoly_monic",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.natDegree_pairPoly",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.natDegree_pairSumPoly",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.eval_pairPoly",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.prod_pairs_eq_diag_mul_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.resultant_pairPoly_left",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.natDegree_reflect_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.resultant_reflect_eq_prod",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pair_sum_resultant_factorization",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pair_sum_resultant_factorization_poly",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.doublePoly_eq_scaleRoots",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.doublePoly_coeff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.rootMultiplicity_zero_D_mul_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.two_le_rootMultiplicity_zero_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pair_sum_order_three_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.parity_eval_neg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.prod_roots_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pair_sum_const_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/PeriodicPoints.lean",
+        "source_sha256": "adfb17b88b14264c8d39a8d1497b8b14969e87820d389509787c643b12ddb93f",
+        "adapted_path": "formalization/Bgs/Mathlib/PeriodicPoints.lean",
+        "adapted_sha256": "092161f099181504e89d9f5918830a22c0c3f3da3f5fb2a9fb575053e420111a",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.px_succ",
+            "axioms": []
+          },
+          {
+            "name": "Bgs.Mathlib.py_succ",
+            "axioms": []
+          },
+          {
+            "name": "Bgs.Mathlib.px_zero",
+            "axioms": []
+          },
+          {
+            "name": "Bgs.Mathlib.py_zero",
+            "axioms": []
+          },
+          {
+            "name": "Bgs.Mathlib.catC_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catC_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pell_xy",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pxy_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.px_mono",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.py_mono",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_pow_eq_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pell_odd",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pell_even",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_pow_sub_one_odd",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.catS_pow_sub_one_even",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fix_count_odd",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.fix_count_even",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.annihilator_odd",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.annihilator_even",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.ell_values",
+            "axioms": []
+          },
+          {
+            "name": "Bgs.Mathlib.ell_ge_fourteen",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/PhaseChannel.lean",
+        "source_sha256": "91dd53b9fcb56a09f4d1a4de2213f0fa4b82ab778ad3c4c280348be37512f801",
+        "adapted_path": "formalization/Bgs/Mathlib/PhaseChannel.lean",
+        "adapted_sha256": "f6661f442691a4744404e44e5a7981a3d1e5f0e67bbc7371b8654a17d7177288",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.stochastic_pow_entry_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.degree_two_coeff_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.unistochastic_pow_entry_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/PureLoss.lean",
+        "source_sha256": "56975f124f363b0d4b6a9108c197e70291b11fd169ebcbfe402f627768444385",
+        "adapted_path": "formalization/Bgs/Mathlib/PureLoss.lean",
+        "adapted_sha256": "077c2c13bc730d0e3011a64254d30f038949b32e4493e1fb926fee4cfba4d368",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.pow_add_pow_le_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_d_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_h_mem",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_s_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_amb_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_r2_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_r2_source_formula_false",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_r2_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_delta_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_r2_near",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_delta_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.neg_log_one_sub_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_L_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sqrt_one_sub_exp_lipschitz",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_replacement_error",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_mean_shift",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pl_fluctuation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/QuadraticResponse.lean",
+        "source_sha256": "a204c6cf09aa0296c14f5ae2857438b33f30c082754677149e97befe66e65a8d",
+        "adapted_path": "formalization/Bgs/Mathlib/QuadraticResponse.lean",
+        "adapted_sha256": "ef0a1b6428e945b4c6d1a526673350637561bdd7e73cf204add3d664b6caeccf",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.allpass_identity",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.orbit_determinants",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tail_symbol_constants",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.third_moments",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.conjTranspose_pow_scalar",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.conjPow_periodic",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.lag_periodic",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.lag_at_period",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.gram_singular_of_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.lag_gram_singular",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.coercive_far_from_singular",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/RadialTail.lean",
+        "source_sha256": "ec9ab14c04b2cd04d8da8fe5c8d6d7ec30b3196aa2a6a0e8352a0a8f339396d2",
+        "adapted_path": "formalization/Bgs/Mathlib/RadialTail.lean",
+        "adapted_sha256": "0bc465f9bec30b3cef3a267a1329e8e822a3d1c4cd6a95a36480f603ecad6e5a",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.RadialTail.sqrt_one_add_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.norm_radial_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.one_sub_normSq_radial",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.radial_norm_lt_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.radial_inverse",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.log_one_add_normSq_radial",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.diskWeight_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.diskWeight_le_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.radial_integral",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.disk_weight_integral",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.diskWeight_integrable",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.exp_neg_mul_neg_log",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.centered_disk_tail_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.RadialTail.absorbed_tail_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/ResonanceComb.lean",
+        "source_sha256": "cf97ca49172f790c10ae83dc717604b0cab337f0b01db8b7da7396296c52d2ea",
+        "adapted_path": "formalization/Bgs/Mathlib/ResonanceComb.lean",
+        "adapted_sha256": "df1e83cfa86b7c669b165d185281bfcee215a78b3831275fc4c17c30c64166fe",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.ResonanceComb.rem_zero_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.ResonanceComb.hasDerivAt_rem",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.ResonanceComb.rem_neg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.ResonanceComb.norm_rem_le_of_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.ResonanceComb.norm_rem_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.ResonanceComb.exp_I_taylor_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.ResonanceComb.gaussian_moment_ratio",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.ResonanceComb.gaussian_moment_ratio_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/SineKernel.lean",
+        "source_sha256": "fae528abb4eb9f092df4a043b45b18f5d004e24b49065fc804beb56c8c568e25",
+        "adapted_path": "formalization/Bgs/Mathlib/SineKernel.lean",
+        "adapted_sha256": "96a3afb78d5979fe3a88b6a5b57971bd8ecba6ada4ad03cdc7955bdd5d48f4db",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.sineKernel_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sineKernel_of_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sineKernel_sq_le_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sine2Pair_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sine2Pair_le_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sine2Pair_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sine2Pair_int",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sine2Pair_tendsto_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sineKernel_sq_eq_half_fourier",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sineKernel_sq_eq_fourier_triangle",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cue_form_factor_eq_one_sub_triangle",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/TraceMobius.lean",
+        "source_sha256": "0a3316adbc7bccb6a6b3219879221678d706d5a8f12d8da6a3ce0cc22e82f208",
+        "adapted_path": "formalization/Bgs/Mathlib/TraceMobius.lean",
+        "adapted_sha256": "910258905dca5d57ca653b09afb0171ec1c992e029753c66702ce5f01126c9a4",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.ephase_add",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.traceZ_eq_sum_ephase",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.distinct_sum_two",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.distinct_sum_three",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_not_mem_range",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.distinct_sum_cons",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/TraceMobiusGeneral.lean",
+        "source_sha256": "dc764ce8b8354876bb27cab0b1fef4a3ab0d0ac3f7c7fcbed0922460aa07edf9",
+        "adapted_path": "formalization/Bgs/Mathlib/TraceMobiusGeneral.lean",
+        "adapted_sha256": "c6c26770aef26e5e5d28b5730a32fea4105f92e2f681536ae3143efdb629aa6b",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.sum_sign_stabilizer",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.const_on_sameCycle",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_const_on_cycles",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.prod_ephase",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.distinctSum_cycle_formula",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/TraceReconstruction.lean",
+        "source_sha256": "5152b6c95c0193890cb1ce99f51e2b650a15af240963b4a5674802d6122c23c2",
+        "adapted_path": "formalization/Bgs/Mathlib/TraceReconstruction.lean",
+        "adapted_sha256": "586bdb01fbea08b519e5f852f5ed769ccd5b3ace620f5d7ec954a46ef35cd202",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.test_int_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tsum_test_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.tsum_test_lattice",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.clock_trace_window",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.doubled_trace_window",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pairStat_clock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pairStat_doubled",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.short_traces_do_not_determine_pair_statistic",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/TwoClock.lean",
+        "source_sha256": "31f7e40bc9d5ae69531ec884e5b71a9cf3ddacee68f372af5d38652a8c1405dd",
+        "adapted_path": "formalization/Bgs/Mathlib/TwoClock.lean",
+        "adapted_sha256": "1a64fa6b6d457fb35d77e4d0a905270d1bfe2c824a71a0897f4e88ce895e3d9c",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.traceZ_natCast",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.traceZ_neg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_sum_sub_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.gramMoment_formula",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_range_sub_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cueGramMoment_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.traceT_twoGon",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_traceT_twoGon_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.gramMoment_twoGon",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.exists_twoGon_cue_gram",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.twoClockB_hasSum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.twoClockB_closed_form",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.abelL_twoGon",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.twoClockB_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.twoClockB_ne_cue",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/TwoStepObstruction.lean",
+        "source_sha256": "3279138eaf7eedb2f28d1ace8e15509fe03dff58c67cb4118367ee79a7c16087",
+        "adapted_path": "formalization/Bgs/Mathlib/TwoStepObstruction.lean",
+        "adapted_sha256": "a79b7a4e09064482595926a5e557b37e23da7a7e880176ce41d2c085ae933ee9",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.star_dot_sub_self",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.star_dot_comm",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_sq_sub",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.dot_star_self_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.gamma_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.householder_apply",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.householder_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.mulVec_single_eq_col",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.unitary_mul_conj",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.unitary_norm_vec",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.twoStep_prescriptions",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.twoStep_P2_entry",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.twoStep_value",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.mul_flatJR",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.flatJR_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.pow_mul_flatJR",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sub_flatJR_pow",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.l2_one_le_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.entry_mul_mul_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.row_sq_sub_flat",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.col_sq_sub_flat",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.doublyStochastic_power_entry",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.doublyStochastic_power_entry_delta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/TwoStepVariance.lean",
+        "source_sha256": "b53d4cf392b3422f5ce325586d075b5762e1182e1bd86c06885b462d0bb47682",
+        "adapted_path": "formalization/Bgs/Mathlib/TwoStepVariance.lean",
+        "adapted_sha256": "81f3c83747f11bcccae9cf63eded6e900a836bdbe1d953e110ff566dd7083c04",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.feedback_coeff_norm_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.two_re_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.increment_pointwise_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.six_sq_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.increment_second_moment_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.intensity_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.row_sum_intensity",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.col_sum_intensity",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.parseval_unitary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.K_le_delta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_r_sq_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_A_full_sq_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.A_split_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.norm_sum_mul_sq_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.C_cauchy_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_C_sq_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.F_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.sum_F_sq_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      },
+      {
+        "original": "RequestProject/UniformCluster.lean",
+        "source_sha256": "3ade0dc5bea2bae438efe77c01ea008ed5fb152d273e31031d66e2789096b27d",
+        "adapted_path": "formalization/Bgs/Mathlib/UniformCluster.lean",
+        "adapted_sha256": "066db9afb97b1e5f350d3b89904147f7e1d234aeed85471466a37a44da17df30",
+        "theorems": [
+          {
+            "name": "Bgs.Mathlib.cyclic_cross_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cyclic_form_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.diagDominant_sup_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.diagDominant_det_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.diagDominant_inv_row_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.diagDominant_inv_decay",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "name": "Bgs.Mathlib.cluster_B1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ]
+      }
+    ],
+    "public_theorems_checked": 589,
+    "allowed_new_layer_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "toolchain": {
+      "lean": "4.33.1",
+      "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "release_archive_sha256": "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235",
+      "application_path_shim": "computations/maintenance/lean_proc_self_compat.c; existing shim redirects only self readlink; no kernel/proof modification"
+    },
+    "commands": [
+      "PATH=<verified-lean>/bin:$PATH LD_PRELOAD=<compiled-existing-shim> lake build",
+      "PATH=<verified-lean>/bin:$PATH LD_PRELOAD=<compiled-existing-shim> lake env lean <generated-print-axioms-file>"
+    ],
+    "lake_jobs": 8776,
+    "logs": {
+      "build.log": "8229c20b973b00d607fa3ccf0f73cf67d721b4f38ee24401288bc3a30a993d6d",
+      "axioms.log": "b02d69224769751494fe8e4e4e35b0fc6cb991e9f29eb82025b2337fff5a08a8"
+    },
+    "initial_port_attempts": "Earlier attempts failed on version-specific conditionals and conversion transparency. Those errors were repaired before the final successful build; no proof statements were weakened.",
+    "coverage_map": "formalization/MATHLIB_LAYER_RU.md",
+    "nonclaims": [
+      "No formal BGS or original signed hierarchy proof.",
+      "CUE form factor is defined rather than derived from Haar measure.",
+      "Pure-loss module proves scalar statements; full channel/tensor argument remains analytic.",
+      "Legacy native_decide certificates retain their separate native-evaluation trust."
+    ],
+    "pure_loss_scalar_check": {
+      "u": "1/16",
+      "eta": "1/2",
+      "n": 1,
+      "actual_r2": "255/256",
+      "old_display": "257/256",
+      "corrected_display": "255/256",
+      "arithmetic": "exact rational, independently recomputed"
+    },
+    "pure_loss_numeric_check": {
+      "finite_B_cases": 300,
+      "max_abs_L_minus_4q_over_uq": 4.368073023755583,
+      "max_delta_over_q": 4.266666666666667,
+      "max_proved_lhs_over_theorem_rhs": 0.05514879935351338,
+      "replacement_precision_regression": {
+        "absolute_tolerance": "1e-95",
+        "cases": 3,
+        "decimal_precision": 110,
+        "maximum_absolute_error": "1.4137757281277062937e-110",
+        "reference": "direct mpmath binomial sum; no Python float division"
+      },
+      "scalar_grid_points": 440,
+      "scope": "Deterministic high-precision finite checks of scalar inequalities and the binomial replacement formula; analytic proof supplies the continuum theorem.",
+      "status": "PASS"
+    },
+    "finalized_date": "2026-10-28",
+    "manuscript_build": {
+      "status": "PASS",
+      "started_utc": "2026-10-27T18:52:50.255969+00:00",
+      "scope": "Three LaTeX passes, no horizontal overflow or unresolved references/citations, immutable TeX inputs. Mathematical truth and page-image inspection are separate.",
+      "engine": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)",
+      "source_sha256": {
+        "manuscript/BGS_unified.tex": "6bee620d7297c72497e472235949aadf52069e2e315246627596a7a35b1b4c68",
+        "manuscript/appendix_a_claim_index.tex": "6646c829d8b8f0dcb7cdc2215a056843c06d4392f2bf4325548c9608728de594",
+        "manuscript/ch01_introduction.tex": "2fcb8816112af656cca6624c8aec4a5d1f9f53da5362163637b3b7d9c080225e",
+        "manuscript/compensated_times.tex": "3983f3f79d3f433e6e06c8b06cbe06846f5aeb7b4db775690a328bc4f14d6f70",
+        "manuscript/consolidation_addendum.tex": "c6029d8b9371d9bff787b0d8339ba99ec168ba0d99e663141302e44a80466c9f",
+        "manuscript/figures/fig_flagship_chain.tex": "264aaac5bbc286b5b8797bbdd3289a8c076d0c03c7b29af17a364077024f6e67",
+        "manuscript/figures/fig_reading_map.tex": "873fca85059f202013499ca662327f071447a699a6c4b0695b573ab0514668c8",
+        "manuscript/front_matter.tex": "54a233d2db937e47eb3ae6d5b65ea8534a2a5a85dadd12aceb45b82b87ed0fe8",
+        "manuscript/general_spectra.tex": "78068816331088ffe207018925b5ae253ba76a58044248987a3711a65b092e60",
+        "manuscript/notation.tex": "0dc0af74865aa3488e8a9aa3ee90246ecb4ac30cfcc34e2602538b5493e23406",
+        "manuscript/preface.tex": "1f098c7fe0d1eba020deab748fa661a9a25bbdd2e06911a60370aa3346e8e39a",
+        "manuscript/supplement_verbatim.tex": "70ae3088a858bd25f3d7ed50588198a0e9612ba3e3fb46888e01ebaa14bb5268",
+        "manuscript/transversality.tex": "94e5412180ed16a436c7b35a3de0c8915194d31a5b2c8f4f17b7934acf1d2fa7",
+        "manuscript/unified_bibliography.tex": "91510510bf74a3de171dc26e2677b302876151704dee16e1556fd896eec6b241",
+        "manuscript/unified_sections/abel_gaussian_rigidity.tex": "1f5cc5bd58126fcbfcc7642deb79232c65d4c48047a29e9f4185efb6fdaa7585",
+        "manuscript/unified_sections/actual_path_theorems.tex": "c2284c393fb181c95eb705bf4da648f9e9cae7dfde0f69009b291a578498d224",
+        "manuscript/unified_sections/actual_seven_primary_commutant.tex": "460d03f87b024e11ed9634b0846a3a107afb34e694a8116da160dd4d51a53592",
+        "manuscript/unified_sections/analytic.tex": "da6e39e05d2171f6e5f9117eb0e740e4558f3e0dcedfa54298364fa91fad6cc8",
+        "manuscript/unified_sections/analytic_resonance_rigidity.tex": "86e31676045b996ce333bc8f556c29e1276c0dbde5f59bc493d5676879a3bac4",
+        "manuscript/unified_sections/appendix_b_provenance_and_verification.tex": "94deb7f333e8218db6e1c84e09cea78f6e43f88884feb3027e2738efac557ea7",
+        "manuscript/unified_sections/arithmetic_translation_exclusion.tex": "a1d6dabc20e262b3494750d31f890a635b62afb446c5efbc85bd6ff479f1d6b6",
+        "manuscript/unified_sections/balanced_control.tex": "c4ebebbdaf93815d8769940e3b0661586e957044ad428642d795edf52c0c4ad8",
+        "manuscript/unified_sections/cayley_curve_uniform.tex": "55fd7c2c0233a7b76c01fbbc6577de515d4a22c834cf76406713ac93d1721d20",
+        "manuscript/unified_sections/cayley_scaling.tex": "23ab9391a703ecf697a2e9fb384d78b4dcd01fd6eeabf8b6d101a6f66f9f3d5d",
+        "manuscript/unified_sections/cayley_trace_gaussian.tex": "ca666a49581b22b8265505fc09e954c7a56c6ba3dbb7cf95e18d7bf5b64e3030",
+        "manuscript/unified_sections/ch02_arithmetic_core.tex": "977d96cf024f7d5d399201c504ae7a5765eb16692ede5ca66499eed8e348cade",
+        "manuscript/unified_sections/ch07_floquet_coboundary_resonance.tex": "785ad8dadec375f1dadc2fcb5117ca3cc41e0161cce4ff637811c0a22ee35021",
+        "manuscript/unified_sections/ch09_locality_fixed_strength.tex": "be4bed064d45020a6be42987751ebfe661b82e035d8582113030d91b07df387f",
+        "manuscript/unified_sections/ch10_resonance_rigidity.tex": "0139a4f8b43d0a5adbef77e4b9a382e213328b32a3c34766c02707076c26567e",
+        "manuscript/unified_sections/ch13_tomography_and_discrimination.tex": "1156ce693b4a04401bba7d2f61c684b69d78c75f8e855fccacc0f747287dc46a",
+        "manuscript/unified_sections/ch15_conclusion.tex": "94dec42408cd671b64f25379e66bb149733b9c3d449c75f62dbeb7eb2d1c219e",
+        "manuscript/unified_sections/circular_phase_trace_schemes.tex": "e2d69dbb052469f7b849512d922f03abb911031dda0d9fa2b52242a0f7205c3c",
+        "manuscript/unified_sections/cobfourth.tex": "2417f77ea1abcb310021d08d6bc5cec1ecb78c7dc33d9cab2a0da30ac4eda0f6",
+        "manuscript/unified_sections/coherent_aperture_minimax.tex": "e8d07a20321095cf22fb71eae34422b3ac686058af475da6633c7bb8339fce13",
+        "manuscript/unified_sections/collective_occupation_hierarchy.tex": "56a4987acd7b892da32526ec2226500a6ebf5017ceeb58cb1cbfcc2e16c1c7c2",
+        "manuscript/unified_sections/entire_gauge.tex": "c95d9cc471ac07f73c0df7b082348d5beb5c21818170d3825ef56d8013a21a24",
+        "manuscript/unified_sections/exact_homoclinic_potential.tex": "6ed224c026621ecad2cd3296f90763a5309d1fc2e660b7aa6804fc4bb37685db",
+        "manuscript/unified_sections/factorial_ordered_diagonal.tex": "c6558de74584d98940b82e5296400f58ef417f5c991ed46b82c608069ad45991",
+        "manuscript/unified_sections/finite_fourier.tex": "f9e12748d984a8c1a4b4bc64f512be738c3987b8bcef18d79da4efaa6c84a6d7",
+        "manuscript/unified_sections/finite_orbit_resonance.tex": "8782e690b9aaa7cdcea1f191af92765c7f84386bb3a920bf27d5bd5a673ceea6",
+        "manuscript/unified_sections/fixed_map_frontier.tex": "f35596ec5ce70bd369464af6b70a7dbee0bd2bfd84d1245faf4fcf5ff6e855ab",
+        "manuscript/unified_sections/fixed_map_symmetry_crossover_coercivity.tex": "24a9dbe3d84ee8de02a595ef988947108d69b7b6cf932efd6dd88c66e544ac43",
+        "manuscript/unified_sections/four_block_unmarking.tex": "1d606609b2ffbcfdfb9cba50944b90b89a043d65bb0ae3bba244c4d82f2f08f9",
+        "manuscript/unified_sections/four_cut_rank_two_kernel.tex": "9b2c1b88e929e56c818530c6f1980297504896c51820804131af658bdecb291c",
+        "manuscript/unified_sections/four_mode.tex": "a0d64be4f0276e060d739a379b1c491f339ff63687754635e7b9a393ecb51067",
+        "manuscript/unified_sections/generic_wiener_resonance.tex": "2c8ab24c44dc7eef6f5e029ab7be49af8282c1c4a5d8f3518f7173558fd6967c",
+        "manuscript/unified_sections/global_rotated_box_trace.tex": "ee7f959cec15cd7b6c9a2b982178429d862e08aefdf06676c0f150a7a16af3b2",
+        "manuscript/unified_sections/hamming_low_switch_residual.tex": "5ad7fde78dceb8b5743923f4a9db10dc8e8d922c9db148b05152e417de78517f",
+        "manuscript/unified_sections/heisenberg_wkb_reductions.tex": "1b18997878628bd6e2d6af19be607603d9a44859bff86812c4def8493ece4338",
+        "manuscript/unified_sections/heterodyne_aperture_minimax.tex": "9b3063680edc0a3ca752b14ed172a5b384212c86536784693d0abd2d836ee836",
+        "manuscript/unified_sections/holomorphic_shell_rigidity.tex": "f0b2d6696bbace259942ada5be071ccecda21568f49376022d33e54fc3644ed0",
+        "manuscript/unified_sections/husimi_shell_tomography.tex": "8924a95a2c61dbe7e0c3df800e0a6631a2d359325180df759afd57a0e4f16965",
+        "manuscript/unified_sections/inserted_trace_closure.tex": "fbff49f08923ae954dd448fb8e36034725fa44e996256e31b4b67d5e1c089b48",
+        "manuscript/unified_sections/isospectral_clock_control.tex": "823bb9c1e62d200cb0f233bc7d4e37864173e26306d9546a6d54e8a92f3e9ddb",
+        "manuscript/unified_sections/literal_time_multiplicity_bounds.tex": "8cd61eea1a165a1e39f4c9565e3bcf274734b4d0ddc62952f53d200eedb6343e",
+        "manuscript/unified_sections/magnetic.tex": "7fb8948b9d2144908756f3379afa05b3c5e2ae4db2d428e28b51793211d183f8",
+        "manuscript/unified_sections/microscopic_operator_stability.tex": "5cf3ad87cca884426cab43a54cfa1a00ac9b44f404862266b5e58f440ebbef6a",
+        "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex": "9ec49d9753805a865eaaf567d52ee20c01b0053e98a8530887ad1834bc894409",
+        "manuscript/unified_sections/mixed.tex": "284bf33e242a9b58423f3aa1a7c924b5ced088d7b584b3a84cb481468468a3cd",
+        "manuscript/unified_sections/ordered_diagonal_companion.tex": "4604b033b752b6cb1f0961710fe91782da5dc6519a3e7e7022b940958bef7307",
+        "manuscript/unified_sections/paired_phase_reductions.tex": "0a8d8bbdd7f13c9ab51fcc03b61546da0cefb1aed3c3b52c227281e00e543d24",
+        "manuscript/unified_sections/pell_blocks.tex": "697f1f134f322e71a1dca21c5e8374f8b39e35df82645e62b01a4206548289dc",
+        "manuscript/unified_sections/pell_harmonic_returns.tex": "a86a75e22bf18dd3aa75ea8fbf2a04f77c6f6b4e0cef1d221b69cede6a191ea3",
+        "manuscript/unified_sections/pell_harmonic_transition.tex": "66dc3e1215be9eea461c6450017d4abe8282667d1d866026eef1fba815d93cd8",
+        "manuscript/unified_sections/phase_channel_jets.tex": "d12a9c918f8823880b38a1b3988a3198654ef6f2c4560202afa4a4ac51e1ef2c",
+        "manuscript/unified_sections/phase_crossover.tex": "2f261c36858770fd8ad4e8717d6165b309a99ade839391db80f7663b525226e6",
+        "manuscript/unified_sections/physical_kick_decay.tex": "426686ee6cf628a5c3b32c203895930d2daead85828cc0579bd4266e3b13bcde",
+        "manuscript/unified_sections/polynomial_multisphere.tex": "c4b1ba17f26de8061285759a99928a2885c013cb8daf02ae5cb023b51e9db6ce",
+        "manuscript/unified_sections/ramified_higher_extension.tex": "3ae4581a503b7c3a0d3a0502fe63dcce1add40d4bda6cb8b7def838d38c248ff",
+        "manuscript/unified_sections/return_gas.tex": "7daab06e950587d77e500cd50d51279dd52754ecc943c9b9bdd0fd74d93505b4",
+        "manuscript/unified_sections/return_general.tex": "a264c6ebaa06574a79f6f380a960eb323922bd84f25a08484d9c0ca591088592",
+        "manuscript/unified_sections/return_obstruction.tex": "53a2f3fb8921d7daaf22afdc71d4bc16cf1a1c812272f7116d1349337d306fdc",
+        "manuscript/unified_sections/return_periodic.tex": "0c36c0deec5e548a636a854d0af5e90d9975d2b865abf412a1838988de86c2d9",
+        "manuscript/unified_sections/return_phase.tex": "e60bbf69c862a6b4953ac2a6bbb8c9c062dd2f5a71281c721875f075f6f61ad2",
+        "manuscript/unified_sections/return_position.tex": "6e2ba20242070a4aae8780e3297d4278a9951b22ef8f9b044c90ce3133313fd1",
+        "manuscript/unified_sections/return_words.tex": "daeaa7d56f80d01b357df6150bb1d09074e78d3cbc6eeb345b8feb288774e1ea",
+        "manuscript/unified_sections/reviewed_phase_signed_trace.tex": "1b368e8185b2018ead66f1da3f4d8b7cd2f7fbbb160bac5ac75e78bef911415c",
+        "manuscript/unified_sections/robustness.tex": "be231b5d6638ec314e32b129acc76413ed15596d617f055417d8cdf0b269f1ec",
+        "manuscript/unified_sections/row_frontier.tex": "962432741f78dc87733e310982dc30bfda21d18a6973118263baaa83854fd43f",
+        "manuscript/unified_sections/selected_weighted_coefficient.tex": "7889ad2218049ecdd1300f9a459bf2ea521051046a3132711b89a4e74b1a027a",
+        "manuscript/unified_sections/sharp.tex": "582ddd486346779834f9e8c3a456a9b7acc63b6004d386ee877313ede7266751",
+        "manuscript/unified_sections/shell_stability_obstruction.tex": "519e8ddd243d1a67b3211691dd7e85527847aa642c40324464b7b87b6ec6827d",
+        "manuscript/unified_sections/smooth.tex": "1d4fda448aaf0973bc2b8adbd125ab1abf017271c79656363e74bff007ad78f0",
+        "manuscript/unified_sections/smooth_residual.tex": "0ae8901a0940416c817c1976791e4a3a710d248630037016f091f0433be86fd6",
+        "manuscript/unified_sections/spectral_corpus_one_step_returns.tex": "54723c53fcc9fff4eebf5a63e4104745ab9c884588c1ce1bebb77512f7306ccd",
+        "manuscript/unified_sections/spectral_extensions.tex": "c795a7e0b4e01049d1e378cc1256e5e515b8334ff9ced5e99279d52408e9395a",
+        "manuscript/unified_sections/spectral_functionals_integration.tex": "b4901e8ffc8f05aa609de3fbffc5c9ea808683cddc53e8ca1f9eaf400732204e",
+        "manuscript/unified_sections/spectral_modules.tex": "b8c6591fbc7fcd89ad7cebb9225f57944d76b5931678ec53f087148df2234bf0",
+        "manuscript/unified_sections/spectral_resolution.tex": "c7ce20bcdbdcac1980003220629bd117c35c4b5e701b88eef6b6a3071cde11fa",
+        "manuscript/unified_sections/temporal_resonance.tex": "9d1e3bf167b8ce41e0ed9e3e1ee28c68ad2097580f598611561209745892a234",
+        "manuscript/unified_sections/three_block_unmarking.tex": "99e6870995ffc80aaaad29252f4bdd357f24c55ab07fd35a7b83765b2f8f278e",
+        "manuscript/unified_sections/unmasked_insertion_closure.tex": "ec865211c799464e60b817f18552395c973bb86fe700247f152cef60156a6f32",
+        "manuscript/unified_sections/wiener_resonance_stability.tex": "763d6f5fad67b5ab3767a28488e9184a65f5de6fd472efdd50dae1a179aeebf7",
+        "manuscript/unified_sections/wiener_riesz.tex": "5a3b388fd0f784a59f6460b6110eb1c0c6031a94ee65ae9dc88d59ee98521790"
+      },
+      "passes": [
+        {
+          "command": [
+            "/usr/bin/pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-output-directory=/workspace/scratch/980ff7770509/work/aristotle_import_20261027/manuscript-final",
+            "BGS_unified.tex"
+          ],
+          "returncode": 0,
+          "log": "pass-1.log",
+          "sha256": "5e6bc5de0ccff679295bf2838556d4c571d4ff9d3d52697817d8721642e4cb88"
+        },
+        {
+          "command": [
+            "/usr/bin/pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-output-directory=/workspace/scratch/980ff7770509/work/aristotle_import_20261027/manuscript-final",
+            "BGS_unified.tex"
+          ],
+          "returncode": 0,
+          "log": "pass-2.log",
+          "sha256": "5e6bc5de0ccff679295bf2838556d4c571d4ff9d3d52697817d8721642e4cb88"
+        },
+        {
+          "command": [
+            "/usr/bin/pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-output-directory=/workspace/scratch/980ff7770509/work/aristotle_import_20261027/manuscript-final",
+            "BGS_unified.tex"
+          ],
+          "returncode": 0,
+          "log": "pass-3.log",
+          "sha256": "5e6bc5de0ccff679295bf2838556d4c571d4ff9d3d52697817d8721642e4cb88"
+        }
+      ],
+      "sources_unchanged": true,
+      "forbidden_warnings": [],
+      "runtime_seconds": 14.559948088000056,
+      "page_count": 343,
+      "pdf_sha256": "cde68d3150495eb759c0206c1951627ee7433bec31bef96ea0affc371b5f6934",
+      "pdf_bytes": 2592565,
+      "latex_log_sha256": "7630a0165acbf9bf48fa551900b6c60ca652cbd06e28fbfe2c363753ddf3bcd2",
+      "published_pdf": "manuscript/BGS_unified.pdf"
+    },
+    "integration_checks": {
+      "scientific_registry": {
+        "status": "PASS",
+        "claims": 202,
+        "external_dependencies": 57,
+        "scientific_states_promoted": 0
+      },
+      "generated_views": {
+        "status": "PASS",
+        "views": [
+          "registry",
+          "research",
+          "errata",
+          "status"
+        ]
+      },
+      "repository_audit": {
+        "status": "PASS",
+        "recursive_lean_import_coverage": "PASS"
+      },
+      "historical_preservation": {
+        "status": "PASS",
+        "source_records_verified": 70,
+        "epoch_tests": 12
+      },
+      "registry_coverage_tests": {
+        "status": "PASS",
+        "tests": 4
+      },
+      "maintenance_regression": {
+        "status": "PASS_AFTER_ISOLATED_RERUN",
+        "suite_tests": 252,
+        "suite_failures": 0,
+        "suite_errors": 1,
+        "suite_log_sha256": "af25604c6d5ff032f4d7ce7db23007b8523e98b143cdbd7bfc03f5f99a313cf8",
+        "suite_error": "Fractional routing subprocess exceeded 30 s while traversing the large local .lake cache.",
+        "isolated_rerun": {
+          "status": "PASS",
+          "tests": 1,
+          "runtime_seconds": 2.189,
+          "log": "----------------------------------------------------------------------\nRan 1 test in 2.189s\n\nOK\n",
+          "log_sha256": "60f17fa80241bd39dc8d513f72e826988f43edbfab1a0d6c8355288f3b4adbf5",
+          "environment_change": "Moved only the untracked .lake build cache outside the source tree. Test and timeout unchanged. Both normal and optimized Python routing checks ran."
+        },
+        "full_suite_not_repeated_after_isolated_rerun": true
+      },
+      "assertion_guard_repair": "Added the standard __debug__ guard to the existing balanced_rounding_fixture_20261027.py; assertion-guard and mutation tests then passed.",
+      "manuscript_references": {
+        "status": "PASS",
+        "inputs": 93,
+        "visited": 94,
+        "labels": 615,
+        "references": 238,
+        "duplicates": 0,
+        "unresolved": 0
+      },
+      "page_review": {
+        "status": "PASS",
+        "pages": [
+          194,
+          239
+        ],
+        "scope": "Visually inspected the new formalization appendix and corrected pure-loss identity."
+      }
+    },
+    "integration_source_sha256": {
+      "formalization/Bgs.lean": "92623bd37b43f86cacf6eb73ffd98bf797bde35b389dd7a3f2c0b4b20427cc78",
+      "formalization/Bgs/Mathlib.lean": "782740c230e2f752ee122c919d9dc9cc0e4b89705e9440adbdc2d6738ce022c2",
+      "formalization/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "formalization/lakefile.toml": "3a17e5f4d76c4e07d04e22a8be869979a266d82007d94bd51d94a91665bc63a1",
+      "formalization/lake-manifest.json": "0f4d0d744cc68bb9f6c3cc863f08a69a2b06d23e7e47254b993d9b34a869bd6e"
+    }
+  },
+  "recovery_date": "2026-10-28",
+  "recovery_note": "Previous execution is immutable evidence from the earlier environment, not a new run. Raw build/axiom logs were lost with that environment; their recorded digests and complete per-theorem axiom inventory are retained. Current recovery checks are recorded separately."
+}

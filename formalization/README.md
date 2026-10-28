@@ -1,9 +1,9 @@
 # Lean 4 formalization
 
-There are 29 active source modules. All 29 compiled with Lean 4.33.1 on 26 October (3075 Lake jobs, no warnings or errors), including CoherenceBudget, TraceStatement, RetTowerGeometry, Fm009TraceObstruction, Fm001Statement and Fm021Statement. See the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) for the previous receipt's source hashes, logs, adapter and exact scope. The older receipts below retain their historical scope.
+The active graph now contains the 29 existing source modules and 39 adapted Mathlib modules (68 leaf modules plus two aggregators). See the [coverage map](MATHLIB_LAYER_RU.md) and [integration receipt](../evidence/formalization/aristotle_20261027/receipt.json) for the successful 8776-job build and axiom audit of all 589 public theorems in the new layer. The following earlier build remains historical. All 29 compiled with Lean 4.33.1 on 26 October (3075 Lake jobs, no warnings or errors), including CoherenceBudget, TraceStatement, RetTowerGeometry, Fm009TraceObstruction, Fm001Statement and Fm021Statement. See the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) for the previous receipt's source hashes, logs, adapter and exact scope. The older receipts below retain their historical scope.
 
 **Claim ID:** BGS-FORMAL-001. This is the finite-certificate, algebraic-kernel
-and falsifier layer. A Lean theorem certifies the proposition in its source;
+and falsifier layer, extended by scoped Mathlib theorems including selected scalar/reference limits. A Lean theorem certifies the proposition in its source;
 the informal analytic corpus is substantially larger.
 
 ## Build and current receipt
@@ -21,7 +21,7 @@ The hosted formalization job on main 4c2afe5 also completed the same aggregate
 build without the local application-path adapter. Earlier 16-, 17-, 19- and
 20-module receipts remain historical. The new cavity analysis is not formalized.
 
-`Bgs.lean` imports every module directly under `Bgs/`. Historical `drafts/`
+`Bgs.lean` reaches every active module recursively, including `Bgs.Mathlib`. Historical `drafts/`
 remain outside the active graph; speculative `sorry` files do not count as
 formal progress.
 
