@@ -111,17 +111,22 @@ higher-copy estimates, signed noise removal and deterministic BGS retain
 separate open boundaries. Earlier wording about the original rate is
 superseded at precisely this scope.
 
-## Maintained and generated sources
+## Maintained, TeX-canonical and generated sources
 
-| Source | Editing rule |
-|---|---|
-| Six `unified_sections/return_*.tex` chapters | Edit the maintained Markdown proofs; regenerate with `computations/maintenance/sync_return_sections.py` |
-| Fixed-map frontier | Edit `mathematics/fixed-map/fixed_map_resolvent_frontier.md`; use `computations/maintenance/sync_fixed_map_section.py` |
-| Finite-orbit resonance chapter | Edit its registered Markdown authority; use `computations/maintenance/sync_finite_orbit_section.py` |
-| Other included TeX sections | Maintain directly, respecting their registered mathematical sources and status |
+The six `unified_sections/return_*.tex` chapters, the fixed-map frontier
+and the finite-orbit resonance chapter are **hand-edited TeX-canonical
+sections**. Their converted theorem environments and numbering must be
+preserved. Edit these TeX files directly and reconcile any changed theorem
+statement or hypothesis against the related maintained Markdown proofs;
+neither representation may silently strengthen the other. The three legacy
+synchronizers (`sync_return_sections.py`, `sync_fixed_map_section.py` and
+`sync_finite_orbit_section.py`) **refuse regeneration**. Their `--check`
+mode prints `SKIP` and **does not detect drift**; do not interpret its
+zero exit code as evidence of mathematical or textual equivalence.
 
-Each synchronizer accepts `--check` to detect drift. The complete contracts
-are in [generated_sources.json](../record/generated_sources.json).
+Other genuinely generated sections follow the declared regeneration or
+fail-closed check commands. The distinct generated and hand-edited source
+contracts are in [generated_sources.json](../record/generated_sources.json).
 Sequential `*_partN.tex` files are non-overlapping source segments, included
 in order to preserve recovered text bytes. They are not competing manuscripts.
 Return-law equation tags use the `Ret.` prefix.

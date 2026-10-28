@@ -43,7 +43,7 @@ current status must be read before using a historical route.
 | [scientific_dependencies.json](scientific_dependencies.json), [dependency graph](scientific_dependency_graph.md) | Maintained theorem/programme dependencies |
 | [retractions.md](retractions.md), [errata.json](errata.json) | False/superseded statements, failure mechanisms and normalized corrections |
 | [repository_conventions.md](../docs/repository_conventions.md) | Scientific governance and source hierarchy |
-| [generated_sources.json](generated_sources.json) | Generated publication-source contracts |
+| [generated_sources.json](generated_sources.json) | Actual generated-source contracts, separate TeX-canonical chapters and their manual concordance boundary |
 | [mathematics_topics.json](mathematics_topics.json) | Thematic classification of maintained proof notes |
 | [branch_protection_policy.md](../docs/branch_protection_policy.md) | Canonical-branch review policy |
 

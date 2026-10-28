@@ -266,17 +266,61 @@ def audit_claim_inventory() -> None:
         elif bool(claim["formalization"]) != ("lean_formalization" in methods):
             fail("claim verification inventory Lean tag drift: " + item["id"])
 
+def audit_publication_source_contracts(data: dict) -> None:
+    """Check path/authority contracts, not semantic equality of proof texts."""
+    produced: set[str] = set()
+    for rule in data.get("rules", []):
+        if rule.get("hand_edited_tex_canonical"):
+            fail("TeX-canonical publication source falsely listed as generated")
+        require_path(rule["producer"])
+        for rel in rule.get("generated", []):
+            if rel in produced:
+                fail("duplicate generated publication surface: " + rel)
+            produced.add(rel)
+            require_path(rel, allow_build=True)
+        for rel in rule.get("authoritative_sources", []):
+            require_path(rel)
+
+    curated = data.get("curated_publication_surfaces")
+    if not isinstance(curated, list) or not curated:
+        fail("missing curated TeX-canonical publication contracts")
+    seen: set[str] = set()
+    for item in curated:
+        if (item.get("authority") != "TeX"
+                or item.get("verification") !=
+                    "manual-theorem-and-hypothesis-concordance"):
+            fail("invalid TeX-canonical publication contract")
+        files = item.get("canonical_files")
+        if not isinstance(files, list) or not files:
+            fail("curated TeX contract has no canonical files")
+        script = item.get("legacy_sync_script")
+        if not isinstance(script, str):
+            fail("curated TeX contract missing legacy synchronizer")
+        require_path(script)
+        related = item.get("related_proof_sources")
+        if not isinstance(related, list) or not related:
+            fail("curated TeX contract missing related proof sources")
+        for rel in related:
+            require_path(rel)
+        for rel in files:
+            if (not isinstance(rel, str)
+                    or not rel.startswith("manuscript/")
+                    or not rel.endswith(".tex")):
+                fail("invalid curated TeX publication file")
+            if rel in produced:
+                fail("publication surface both generated and TeX-canonical: " + rel)
+            if rel in seen:
+                fail("duplicate curated TeX publication file: " + rel)
+            seen.add(rel)
+            require_path(rel)
+
+
 def audit_generated_and_environment() -> None:
     pointer=load(ROOT / "literature" / "metadata_audit.json")
     for key in ("cache","digest","review"):
         require_path(pointer[key])
     data = load(GENERATED)
-    for rule in data.get("rules", []):
-        require_path(rule["producer"])
-        for rel in rule.get("generated", []):
-            require_path(rel, allow_build=True)
-        for rel in rule.get("authoritative_sources", []):
-            require_path(rel)
+    audit_publication_source_contracts(data)
 
     env = load(ENVIRONMENT)
     require_path(env["python"]["requirements"])

@@ -135,11 +135,11 @@ all higher factorial orders remain open. No once-counted unmarking theorem is as
 
 ## 6. Verification boundary
 
-`../computations/verification/actual_path_theorems.py` checks exact coefficients for all twelve
+`../../computations/verification/actual_path_theorems.py` checks exact coefficients for all twelve
 same-coordinate differences, exact rational amplitude/remainder comparisons,
 and exact distinct-port uniform-link cancellation for a complex rational
 unitary and boundary link lengths. The source and independent marked
-verifiers are replayed with their hashes in `../evidence/executions/20261006/path-theorems/receipt.json`.
+verifiers are replayed with their hashes in `../../evidence/executions/20261006/path-theorems/receipt.json`.
 Finite tests support the identified algebra only; the analytic N-limit rests
 on the proof above and the shared parametrix. No finite-N experiment at
 rescaled coupling is offered as evidence for the actual fixed-tau limit.

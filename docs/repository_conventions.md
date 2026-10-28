@@ -44,7 +44,7 @@ Finite computation may support a theorem route but may not be promoted into an a
 
 Maintained mathematical sources are edited at their authoritative source location.
 
-Generated manuscript chapters must be regenerated from their source or verified with a fail-closed synchronization check. Generated PDFs, logs, caches, and build trees do not belong in the active source tree unless they are deliberately promoted as evidence with provenance.
+Genuinely generated manuscript chapters must be regenerated from their source or verified with a fail-closed synchronization check. The eight hand-edited TeX-canonical chapters listed in `record/generated_sources.json` are instead maintained directly: the legacy synchronizers refuse regeneration, and their `--check` result is SKIP, **not** a source-equivalence test. Their hypotheses and theorem statements must be manually reconciled with related Markdown proofs. Generated PDFs, logs, caches, and build trees do not belong in the active source tree unless they are deliberately promoted as evidence with provenance.
 
 The consolidated manuscript has one active entry point:
 

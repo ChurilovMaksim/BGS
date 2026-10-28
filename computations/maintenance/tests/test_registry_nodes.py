@@ -87,6 +87,26 @@ class RegistryNodesTests(unittest.TestCase):
             with self.assertRaisesRegex(SystemExit, 'source blob is stale'):
                 MODULE.audit_claim_inventory()
 
+    def test_hand_edited_tex_is_not_generated(self):
+        data = json.loads((MODULE.ROOT / 'record/generated_sources.json').read_text())
+        curated = data['curated_publication_surfaces']
+        paths = [path for item in curated for path in item['canonical_files']]
+        self.assertEqual(len(paths), 8)
+        self.assertEqual(len(set(paths)), 8)
+        self.assertFalse(any(rule.get('hand_edited_tex_canonical')
+                             for rule in data['rules']))
+        MODULE.audit_publication_source_contracts(data)
+
+        conflict = copy.deepcopy(data)
+        conflict['rules'][0]['generated'].append(paths[0])
+        with self.assertRaisesRegex(SystemExit, 'both generated and TeX-canonical'):
+            MODULE.audit_publication_source_contracts(conflict)
+
+        duplicate = copy.deepcopy(data)
+        duplicate['curated_publication_surfaces'][1]['canonical_files'].append(paths[0])
+        with self.assertRaisesRegex(SystemExit, 'duplicate curated TeX'):
+            MODULE.audit_publication_source_contracts(duplicate)
+
     def test_nested_lean_import_closure(self):
         import tempfile
         audit_source = SOURCE.with_name('repository_audit.py')
