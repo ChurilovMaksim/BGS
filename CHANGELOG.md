@@ -2,6 +2,8 @@
 
 ## 2026-10-28 — kick-blind arithmetic spikes
 
+Register BGS-TRACE-119. At the single dimension \(N=u_{205}\) the fixed kick satisfies \(L_N(U_N;1)>3/4\). The argument is a positive-time diagram expansion: resonant diagrams of degree at most 11 are archimedean zeros, and indecomposable gaps are at most 4, so the activity remainder stays below the Abel budget. Python, C++ and a Lean rational witness certify the integers. The third-order operator-norm remainder and the Hilbert--Schmidt triangle remain silent at this index. At \(n=207\) the pure second-order center still lies below \(3/4\). BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+
 Register BGS-TRACE-118. At \(N=u_{203}\) the fixed kick still satisfies \(L_N(U_N;1)>3/4\), by a second-order trace expansion. The cat-map orbit of the symbol is trace-orthogonal except for one overlap of size \(7/10^6\). Python, C++ and a Lean rational witness certify the integers. The same third-order majorant is vacuous at \(n=205\). The Hilbert--Schmidt triangle is silent at that index as well, and at \(n=207\) the pure second-order center lies below \(3/4\). BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
 
 Register BGS-TRACE-117. The pure cat map stays a fixed distance from the CUE Abel value on \(N=u_n\) for every odd \(n\ge5\). The fixed kick \(\tau=10^{-80}\) preserves that gap on the 99 odd indices \(5\le n\le201\), through the 77-digit dimension \(u_{201}\). Python, C++ and a Lean rational witness certify the integers. The one-term estimate stops beating \(3/4\) at \(n=203\). BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.

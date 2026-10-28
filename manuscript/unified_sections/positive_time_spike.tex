@@ -1,0 +1,28 @@
+\section{Positive-time expansion at \(u_{205}\)}
+\label{sec:positive-time-spike}
+The second-order disk of Section~\ref{sec:orbit-orthogonal-kick-spike}
+is silent at \(n=205\). A positive-time diagram expansion that keeps
+trace orthogonality still clears the Abel threshold at that one dimension.
+The canonical proof is
+\path{mathematics/fixed-map/positive_time_spike.md}.
+The integer comparisons are certified by
+\path{formalization/Bgs/PositiveTimeRational.lean} and recomputed by the
+Python and C++ verifiers named there. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Positive-time spike, BGS-TRACE-119]
+\label{thm:positive-time-spike}
+Let \(n=205\) and \(N=u_n\), with \(u_m\) the Pell companion of
+Section~\ref{sec:kick-blind-arithmetic-spike}. At the fixed coupling
+\(\tau=10^{-80}\),
+\[
+ L_N(U_N;1)>\frac34.
+\]
+The distance from this value to \((1-e^{-2})/4\) is greater than \(1/2\).
+The integer \(u_{205}\) has \(79\) decimal digits, so any statement that the
+distance is less than \(1/2\) for every odd \(N\ge N_0\) requires
+\(N_0>u_{205}\). At \(n=207\) the pure second-order center satisfies
+\((1-\varepsilon_2)^2<3/4\), so no disk of radius \(E\ge0\) about
+\(N(1-\varepsilon_2)\) proves the gap there. The estimate does not decide
+the limit or a generic odd dimension.
+\end{theorem}
