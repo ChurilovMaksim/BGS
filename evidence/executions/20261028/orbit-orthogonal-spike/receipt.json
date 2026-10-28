@@ -1,0 +1,53 @@
+{
+  "schema": "bgs-orbit-orthogonal-spike-v1",
+  "claim": "BGS-TRACE-118",
+  "n": 203,
+  "u_203_digits": 78,
+  "u_203": "252600454664614554703519770255050826534615034647211566192959636252856146870839",
+  "norm_203": -1,
+  "mode_count": 32,
+  "sigma": "66033/160000",
+  "gamma_lag_one": "-7/2000000",
+  "sigma_eff": "1650797/4000000",
+  "majorant": "184981/160000",
+  "resonances": {
+    "n": 203,
+    "hit_count": 4,
+    "lags": [
+      1,
+      202
+    ]
+  },
+  "resonances_205": {
+    "n": 205,
+    "hit_count": 4,
+    "lags": [
+      1,
+      204
+    ]
+  },
+  "resonances_207": {
+    "n": 207,
+    "hit_count": 4,
+    "lags": [
+      1,
+      206
+    ]
+  },
+  "quadrature_beats_three_quarters": true,
+  "one_term_beats_three_quarters": false,
+  "sentinel_205_remainder_at_least_one": true,
+  "hs_triangle_205_exceeds_one": true,
+  "disk_room_205": true,
+  "disk_ceiling_207": true,
+  "margin_digits": 591,
+  "coarse_eps2_below": "1/1000",
+  "coarse_eps3_below": "1/25",
+  "sources_sha256": {
+    "python": "d3cce87ff26bc6855ff4f553b9c71812f746436b96c9e60c0302eca453d51128",
+    "cpp": "42bd4440c5af77b5e5b351d1387eb15d408c1907f40cf2d7323b4502c522f786",
+    "lean": "65602db8a43a2e3dc64f1faea3a0f40bd7c47eabca405bb1e6419fdec9f63e09",
+    "proof": "068d0200431b2e343cdd86c28cf9718427cbbcd789d5e7daea1df01f04add787"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, the limit, a gap at a generic odd dimension, a positive lower bound at n=205, or a negative theorem that L itself drops at n=207."
+}
