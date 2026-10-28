@@ -65,3 +65,9 @@ Do not relabel a partial local overlay as a full repository checkout. Report
 local changes, commits, pushes, full builds, and limited checks separately.
 The user authorized work on main; preserve a clean base, review the diff,
 and do not force-push or rewrite history.
+
+## Cloud Agent environment
+
+`python` and `python3` on `PATH` are Python 3.13 from `/opt/bgs`, with the pins in `requirements.txt`. `/usr/bin/python3` remains the image Python 3.12 and does not import those packages. `cc` and `c++` are GCC. CMake's compiler test does not link `libstdc++` when `c++` is the image Clang alternative. Lean 4.33.1 is on `PATH`; `formalization/lean-toolchain` is the pin, and `(cd formalization && lake build)` is the formalization gate. Pandoc 3.12.1 and pdfLaTeX are installed for the manuscript builder.
+
+Export `OPENBLAS_NUM_THREADS=1` and `OMP_NUM_THREADS=1` before numerical checks. Point `verify_workspace.py --logs` outside the repository. Commands and limits are in `REPRODUCE_unified.md` and `environment/runtime-manifest.json`. This section does not change a mathematical claim.
