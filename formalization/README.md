@@ -1,12 +1,14 @@
 # Lean 4 formalization
 
-The active graph now contains the 29 existing source modules and 39 adapted Mathlib modules (68 leaf modules plus two aggregators). See the [coverage map](MATHLIB_LAYER_RU.md) and [integration receipt](../evidence/formalization/aristotle_20261027/receipt.json) for the successful 8776-job build and axiom audit of all 589 public theorems in the new layer. The following earlier build remains historical. All 29 compiled with Lean 4.33.1 on 26 October (3075 Lake jobs, no warnings or errors), including CoherenceBudget, TraceStatement, RetTowerGeometry, Fm009TraceObstruction, Fm001Statement and Fm021Statement. See the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) for the previous receipt's source hashes, logs, adapter and exact scope. The older receipts below retain their historical scope.
+The active source graph consists of **29 pre-existing modules** and **39 adapted Aristotle/Mathlib modules**, with 68 leaf modules and two aggregators. They share the original Lean 4.33.1/Lake project: `Bgs.lean` imports `Bgs.Mathlib`, which reaches every new module. No second project root or duplicate proof tree is maintained.
+
+The [Mathlib coverage map](MATHLIB_LAYER_RU.md) links individual declarations to existing theorem families and their exact proof scope. The [integration receipt](../evidence/formalization/aristotle_20261027/receipt.json) separates the earlier 8,776-job Lean build and 589 public-declaration axiom checks from the later GitHub merge. This is not an independent verification of the full analytic corpus, and it does not close BGS.
 
 **Claim ID:** BGS-FORMAL-001. This is the finite-certificate, algebraic-kernel
 and falsifier layer, extended by scoped Mathlib theorems including selected scalar/reference limits. A Lean theorem certifies the proposition in its source;
 the informal analytic corpus is substantially larger.
 
-## Build and current receipt
+## Build and execution provenance
 
 From the repository root:
 
@@ -14,8 +16,11 @@ From the repository root:
 (cd formalization && lake build)
 ```
 
-The pinned release is **Lean 4.33.1**. The
-[11 October execution](../archive/evidence/executions/20261011/chat-research/fresh/lean_execution.json)
+The pinned release is **Lean 4.33.1**. The previous integration environment recorded a completed build of the adapted source graph (8,776 Lake jobs, 589 declaration axiom inventories); its raw execution logs were not recoverable after the environment change. The source and historical execution digests are preserved in the integration receipt. Hosted CI did not independently validate the merged source because the repository owner reported exhausted GitHub Actions minutes. No post-merge Lean build is claimed.
+
+All 29 earlier leaf modules were compiled on 26 October (3,075 Lake jobs), including `CoherenceBudget`, `TraceStatement`, `RetTowerGeometry`, `Fm009TraceObstruction`, `Fm001Statement` and `Fm021Statement`; see the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) and its exact scope.
+
+The [11 October execution](../archive/evidence/executions/20261011/chat-research/fresh/lean_execution.json)
 and its preserved Lake logs record **23 active modules / 26 Lake jobs**.
 The hosted formalization job on main 4c2afe5 also completed the same aggregate
 build without the local application-path adapter. Earlier 16-, 17-, 19- and

@@ -68,6 +68,7 @@ The programme contains independently distinguishable lines of work:
 | Traces and insertion calculus | Selected [WKB](mathematics/fixed-map/factorial_wkb_reduction.md), [ordered-diagonal](mathematics/fixed-map/factorial_ordered_diagonal.md), and [unmasked](mathematics/fixed-map/right_frame_unmasked_pinch_hierarchy.md) sectors | Complete high-switch signed remainder, masks and endpoints |
 | Stochastic comparison | [FLOW-014](mathematics/fixed-map/circular_dyson_actual_start.md) and [FLOW-017](mathematics/fixed-map/coboundary_all_order_limit.md) noisy local laws on explicitly stated schedules | Removal of the noise for the original deterministic family |
 | Other mathematics | [Cayley](mathematics/topics/cayley-arithmetic/README.md), [Pell](mathematics/topics/pell/README.md), [return](mathematics/topics/returns/README.md), resonance, locality and information results | A proved implication from their separate regimes to deterministic BGS |
+| Lean formalization | The [Mathlib coverage map](formalization/MATHLIB_LAYER_RU.md) ties 29 existing and 39 adapted modules to precisely scoped finite, algebraic and selected scalar/reference results; a historical receipt records axiom checks of 589 declarations | The full analytic trace hierarchy and deterministic BGS limit |
 
 The decisive obstacle is not a shortage of finite-dimensional identities: it is **controlled cancellation of signed Heisenberg-scale contributions** for the unchanged propagator. Neither a numerical spacing plot nor a result for a randomized auxiliary model closes that gap. Consult the [research brief](RESEARCH.md) for precise scope and [obligation board](mathematics/open_questions.md) for the remaining work.
 
@@ -189,7 +190,7 @@ The [consolidated research manuscript](manuscript/README.md) is a **living, full
 
 [Reproduction guide](REPRODUCE_unified.md) · [Computation and verification](computations/README.md) · [Formalization scope](formalization/README.md) · [Literature and priority](literature/README.md) · [Contributing](CONTRIBUTING.md) · [How to cite](CITATION.cff)
 
-The [11 October 2026 execution packet](archive/evidence/executions/20261011/chat-research/fresh/README.md) records exact Python/C++ controls, 23 active Lean modules and the manuscript build for that revision. **Lean verifies selected finite/algebraic kernels, not the complete analytic corpus or BGS.** Project proof status does not imply independent external refereeing or an established novelty/priority claim.
+The [11 October 2026 execution packet](archive/evidence/executions/20261011/chat-research/fresh/README.md) records exact Python/C++ controls, 23 active Lean modules and the manuscript build for that earlier revision. The [28 October formalization](formalization/README.md) extends the source graph to 68 leaf modules; its [execution receipt](evidence/formalization/aristotle_20261027/receipt.json) distinguishes historical kernel checks from the GitHub merge, which has no fresh CI verification. **Lean verifies selected finite/algebraic and scalar/reference kernels, not the complete analytic corpus or BGS.** Project proof status does not imply independent external refereeing or an established novelty/priority claim.
 
 
 ## License
@@ -201,4 +202,3 @@ under CC BY 4.0 — see `LICENSE-CC-BY-4.0.txt`. The per-path map is in
 `LICENSE_POLICY.md`. Until this release, no open license was granted;
 see `LICENSE_POLICY.md` for the history of that decision.
 
-The [Mathlib coverage map](formalization/MATHLIB_LAYER_RU.md) documents 39 integrated modules and 589 checked theorem declarations, including selected scalar/reference limits. The complete analytic corpus and BGS remain outside this coverage.

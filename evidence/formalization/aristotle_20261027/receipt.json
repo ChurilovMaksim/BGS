@@ -1,6 +1,6 @@
 {
   "schema": "bgs-aristotle-integration-v2",
-  "status": "RECOVERY_IN_PROGRESS",
+  "status": "INTEGRATED_IN_MAIN",
   "base_commit": "d403a59359a7fbdd5b95654bea954d6abddb6be3",
   "previous_execution_blob": "636956d1239bd9a303760171f3e08920fec252f9",
   "previous_execution": {
@@ -5702,5 +5702,38 @@
     }
   },
   "recovery_date": "2026-10-28",
-  "recovery_note": "Previous execution is immutable evidence from the earlier environment, not a new run. Raw build/axiom logs were lost with that environment; their recorded digests and complete per-theorem axiom inventory are retained. Current recovery checks are recorded separately."
+  "recovery_note": "Previous execution is immutable evidence from the earlier environment, not a new run. Raw build/axiom logs were lost with that environment; their recorded digests and complete per-theorem axiom inventory are retained. Current recovery checks are recorded separately.",
+    "integration": {
+      "status": "MERGED",
+      "completed_date": "2026-10-28",
+      "repository": "ChurilovMaksim/BGS",
+      "target_branch": "main",
+      "pull_request": 34,
+      "pull_request_url": "https://github.com/ChurilovMaksim/BGS/pull/34",
+      "source_commit": "9192b4ac5b8613b160d3ef64a0b31d29642d5f32",
+      "merge_commit": "52a328acfb1c1c096e6e9d3b487a9c1ad8c80d59",
+      "merge_method": "squash",
+      "inspected_source_graph": {
+        "existing_leaf_modules": 29,
+        "adapted_mathlib_leaf_modules": 39,
+        "unique_mathlib_imports": 39,
+        "missing_mathlib_imports": 0,
+        "orphan_mathlib_modules": 0
+      },
+      "inspected_registry": {
+        "existing_claims": 202,
+        "post_merge_claims": 202,
+        "changed_claim_statuses": 0,
+        "errata_entries": 60
+      },
+      "current_execution_status": {
+        "github_actions": "UNAVAILABLE_FOR_VALIDATION",
+        "workflow_observation": "PR #34 jobs concluded failure before a confirmed verification; no successful new CI check recorded.",
+        "reported_cause": "Repository owner reports that the GitHub Actions minutes are exhausted.",
+        "freshly_executed_lean_build": false,
+        "freshly_executed_manuscript_build": false,
+        "preserved_prior_build_and_axiom_results": true,
+        "warning": "Do not equate historical run receipts or import-graph inspection with an independently executed post-merge kernel check."
+      }
+    }
 }
