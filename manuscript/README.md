@@ -211,6 +211,15 @@ protocol. A successful LaTeX build is typesetting evidence, not proof evidence.
 
 ## Current integration and verification
 
+The 28 October Aristotle integration updates the canonical TeX sources (the
+claim index, provenance appendix, tomography chapter and conclusion) and carries
+the ERR-060 pure-loss correction without replacing earlier manuscript sections.
+The checked-in `BGS_unified.pdf` predates these TeX edits. It therefore remains
+a historical rendering until regenerated; the TeX source is authoritative for
+the new material. The 343-page build recorded in the [historical integration
+receipt](../evidence/formalization/aristotle_20261027/receipt.json) is not a
+post-merge GitHub Actions verification.
+
 [The research record](../record/README.md) indexes the 11–19 October continuations.
 [The repository audit](../archive/record/repository_reconciliation_20261020.md) records current
 source/build checks separately from historical receipts. Integration does not
