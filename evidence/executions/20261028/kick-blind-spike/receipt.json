@@ -1,0 +1,31 @@
+{
+  "schema": "bgs-kick-blind-spike-v2",
+  "claim": "BGS-TRACE-117",
+  "status": "passed",
+  "odd_n_first": 5,
+  "odd_n_last": 201,
+  "odd_dimension_count": 99,
+  "sentinel_n": 203,
+  "sentinel_below_three_quarters": true,
+  "u_5": "41",
+  "u_7": "239",
+  "u_201": "43339386297227576661095959458572614328030405537398930692163383984677691985393",
+  "v_201": "30645573943232956180057972969833245887630954508753693529117371074705767728665",
+  "u_201_decimal_digits": 77,
+  "norm_201": "-1",
+  "fourier_modes": 32,
+  "mode_7_0": "9/20",
+  "majorant": "184981/160000",
+  "uniform_margin_digits": 171,
+  "sources_sha256": {
+    "computations/verification/kick_blind_spike.py": "55deb4006598234b8267289908f8951ddd17c779320ff27c14e0a8d97f20faac",
+    "computations/cpp/kick_blind_spike.cpp": "1a6ef26fe4d4efb10488f6f3a46c04034274071ae5298dfea8f6fb751f5ea036",
+    "formalization/Bgs/KickBlindRational.lean": "d959fc1494bf11814f98d1e097f3fd3d6394236c9b60236d5a21e6702870fc1c"
+  },
+  "nonclaims": [
+    "BGS-TRACE-005 remains open",
+    "BGS-BGS-001 remains open",
+    "the kicked statement is 99 explicit dimensions, not the N to infinity limit",
+    "n=203 is a failure of this one-term lower bound, not a proved drop of L_N"
+  ]
+}

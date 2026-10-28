@@ -29,6 +29,7 @@ The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the correct
 
 ## Current theorem capsules
 
+- **[Kick-blind arithmetic spikes](../../fixed-map/kick_blind_arithmetic_spike.md)** — TRACE-117: the pure cat map stays above the CUE Abel value at every \(N=u_n\) for odd \(n\ge5\), and the fixed kick preserves that gap for odd \(n\) from 5 through 201. The limit remains open.
 - **[Position mixing and cyclic ramp](../../fixed-map/position_chain_mixing.md)** — Actual fixed-coupling position chain has an eventual constant singular gap; cyclic contributions and a specified marked three-link contraction are controlled.
 - **[Reverse-cyclic suppression](../../fixed-map/reversed_path_decay.md)** — The actual reversed-entry kernel has vanishing operator norm; general signed noncyclic pairs remain open.
 

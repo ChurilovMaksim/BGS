@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "cc5e87e8763d3bf137533c993ce9934db77793de",
+ "source_blob_sha": "7fbf64a94ab3298c04d1ca72b0d2f07804570ed0",
  "generated": "2026-10-28",
  "method_enumeration": [
   "analytic_proof",
@@ -26,7 +26,8 @@
   "Method tags are claimed methods from registry wording and nonempty links. A new Lean link documents scoped coverage only; it does not certify a full analytic theorem or provide external refereeing.",
   "SPoF risk labels imported from the 2026-10-25 inventory were NOT all re-adjudicated for the new formalization. All changed Lean-link rows are marked risk_reassessment=PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE; new claim rows are provisional.",
   "Path existence and record equality are metadata checks, not re-execution, proof verification, or literature/priority audits. See SOURCE_OF_TRUTH.md and the per-claim boundary.",
-  "review_provenance fields on some claims record internal reviews but are not automatically sufficient to certify independent proof review."
+  "review_provenance fields on some claims record internal reviews but are not automatically sufficient to certify independent proof review.",
+  "BGS-TRACE-117 was appended on 2026-10-28. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee."
  ],
  "claims": [
   {
@@ -7437,6 +7438,50 @@
    "other_weaknesses": [
     "single_reviewer_author_check_only",
     "unformalized_analytic_chain"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-117",
+   "title": "Kick-blind arithmetic spikes of the fixed cat map",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261028/kick-blind-spike/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/kick_blind_spike.py",
+    "computations/cpp/kick_blind_spike.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/KickBlindRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+   "boundary": "Odd dimensions N=u_n for every odd n>=5 in the pure cat-map Abel statistic, and for every odd n with 5<=n<=201 for the fixed kick tau=10^{-80}. On those kicked dimensions L_N(U_N;1)>3/4, so the distance to (1-e^{-2})/4 exceeds 1/2. Any effective bound of that distance by 1/2 for all odd N>=N_0 needs N_0>u_201 (77 decimal digits). The one-term lower bound is at most 3/4 at n=203. Does not prove the N to infinity limit, a gap at every odd N, the off-diagonal sum, or any k>2. Lean certifies the Pell norm at n=201, the uniform rational comparison, and the n=5 endpoint only. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the Pell norm at n=201, the uniform rational comparison, and the n=5 endpoint. The Weyl conjugation, unitarity, and trace comparison are not formalized. Python and C++ recheck the integers and the Fourier majorant.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
    ],
    "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
   }

@@ -6,6 +6,8 @@ The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum 
 
 **Scientific status (22 October 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**. Several related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. The [22 October repository review](record/audits/repository_recheck_20261022/report.md) records its exact verification scope. [Registered status](record/claims.json) · [Open proof obligations](mathematics/open_questions.md).
 
+**Kick-blind spikes (28 October 2026).** On the pure cat map, every odd return $n\ge5$ at dimension $N=u_n$ keeps the Abel pair statistic a distance greater than $1/2$ from the CUE value. The fixed kick $\tau=10^{-80}$ preserves that gap at each of the 99 odd indices $5\le n\le201$, including the 77-digit dimension $u_{201}$. This is [BGS-TRACE-117](mathematics/fixed-map/kick_blind_arithmetic_spike.md). It does not prove the limit. BGS-TRACE-005 and BGS-BGS-001 remain open.
+
 ![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
 
 *Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*

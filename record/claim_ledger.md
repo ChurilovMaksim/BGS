@@ -1,5 +1,9 @@
 # Claim ledger
 
+## Kick-blind arithmetic spikes, 28 October 2026
+
+BGS-TRACE-117 is a project proof with an exact integer certificate and a Lean rational witness. For every odd \(n\ge5\), the pure cat map at dimension \(N=u_n\) has \(L_N(M_N;1)>3/4\). For every odd \(n\) with \(5\le n\le201\), the fixed kick \(\tau=10^{-80}\) preserves the same gap for \(U_N\). The largest such dimension, \(u_{201}\), has 77 decimal digits, so any effective statement that the Abel gap is less than \(1/2\) for all odd \(N\ge N_0\) needs \(N_0>u_{201}\). The one-term lower bound stops beating \(3/4\) at \(n=203\). The argument is self-contained and overlaps the classical cat-map trace arithmetic of BGS-FM-010 without using that note as a lemma. [Proof](../mathematics/fixed-map/kick_blind_arithmetic_spike.md), [certificate](../evidence/executions/20261028/kick-blind-spike/README.md). BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
+
 ## Aristotle formalization integration, 28 October 2026
 
 Adapted all 39 substantive modules from the older Aristotle snapshot into the existing Lean 4.33.1 graph. The [coverage map](../formalization/MATHLIB_LAYER_RU.md) and [receipt](../evidence/formalization/aristotle_20261027/receipt.json) record exact theorem scope, 589 axiom-audited declarations and the successful aggregate build. ERR-060 corrects the pure-loss scalar identity in the proof and manuscript. Current claim states, TRACE-114–116 and pinned dependencies are retained; no BGS closure is asserted.
