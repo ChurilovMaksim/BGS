@@ -1,0 +1,39 @@
+\section{Kick-blind arithmetic spikes}
+\label{sec:kick-blind-arithmetic-spike}
+The fixed coupling does not erase every arithmetic spike of this cat map
+inside the norm window $\tau N\|A_N\|<1$. The canonical proof is
+\path{mathematics/fixed-map/kick_blind_arithmetic_spike.md}.
+The rational comparisons are certified by
+\path{formalization/Bgs/KickBlindRational.lean} and recomputed by the
+Python and C++ verifiers named there. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+Let $u_0=1$, $v_0=0$ and $u_{m+1}=u_m+2v_m$, $v_{m+1}=u_m+v_m$.
+Every $u_m$ is odd. The Abel statistic is
+$L_N(V;1)=N^{-2}\sum_{m\ge1}e^{-2m/N}|\operatorname{Tr}V^m|^2$.
+The CUE value $(1-e^{-2})/4$ is strictly less than $1/4$.
+
+\begin{theorem}[Pure cat-map Abel spike, BGS-TRACE-117]
+\label{thm:pure-cat-abel-spike}
+For every odd integer $n\ge5$, at dimension $N=u_n$, the cat-map propagator
+satisfies $M_N^n=\zeta I$ with $|\zeta|=1$, and
+\[
+ L_N(M_N;1)\ge1-\frac{2n}{N}>\frac34.
+\]
+Hence its distance to $(1-e^{-2})/4$ is greater than $1/2$.
+\end{theorem}
+
+\begin{theorem}[Kick-blind window, BGS-TRACE-117]
+\label{thm:kick-blind-window}
+For every odd integer $n$ with $5\le n\le201$, at dimension $N=u_n$ and at
+the fixed coupling $\tau=10^{-80}$,
+\[
+ L_N(U_N;1)>\frac34.
+\]
+The same distance to the CUE Abel value is therefore greater than $1/2$.
+The integer $u_{201}$ has $77$ decimal digits. Any statement that this
+distance is less than $1/2$ for every odd $N\ge N_0$ requires $N_0>u_{201}$.
+The one-term proof stops being conclusive at the next odd index $n=203$.
+It does not decide $\lim_{N\to\infty}$ and does not apply to a generic odd
+dimension.
+\end{theorem}

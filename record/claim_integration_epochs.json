@@ -653,6 +653,12 @@
       "state": "proved",
       "source": "mathematics/trace-bridge/microscopic_unitary_stability_20261027.md",
       "disposition": "27 October continuation: reconstructed analytic author proof; exact boundary in registry and record/trace005_continuation_review.md. No independent referee or formal certification."
+    },
+    {
+      "id": "BGS-TRACE-117",
+      "state": "proved",
+      "source": "mathematics/fixed-map/kick_blind_arithmetic_spike.md",
+      "disposition": "28 October 2026: pure cat-map Abel spike for every odd n>=5 at N=u_n, and the same gap for the fixed kick on the 99 odd indices 5<=n<=201. Rational witness in KickBlindRational.lean; Python and C++ integer certificates. Does not close TRACE-005 or BGS-001. The one-term lower bound stops beating 3/4 at n=203."
     }
   ],
   "invariants": [
