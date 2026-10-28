@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Aristotle formalization integration, 28 October 2026
+
+Adapted all 39 substantive modules from the older Aristotle snapshot into the existing Lean 4.33.1 graph. The [coverage map](../formalization/MATHLIB_LAYER_RU.md) and [receipt](../evidence/formalization/aristotle_20261027/receipt.json) record exact theorem scope, 589 axiom-audited declarations and the successful aggregate build. ERR-060 corrects the pure-loss scalar identity in the proof and manuscript. Current claim states, TRACE-114–116 and pinned dependencies are retained; no BGS closure is asserted.
+
 ## Operator resolution and the short-trace barrier, 27 October 2026
 
 [TRACE-114](fixed-map/balanced_rounding_research_20261027.md) shows that even absolute $o(1)$ preservation of polynomially many short traces and eigenvectors does not determine a microscopic law for a general quantizer. [TRACE-115/116](trace-bridge/microscopic_unitary_stability_20261027.md) prove bounded-test and positive-energy stability, then transfer the original-family pair test through $O(N^{-2})$ matrix errors using TRACE-113. The unitary error is $O(1/\log N)$; the nonunitary finite-trace error is $O(1/\sqrt{\log N}+1/N)$. These are analytic author proofs, not external refereeing. The [disposition review](../record/trace005_continuation_review.md) credits existing results and tracks the unadopted candidate estimates. The original pair limit and all-order hierarchy remain open.
@@ -532,7 +536,7 @@ boundaries and closure conditions, is the generated
 
 | Claim | State | Title |
 |---|---|---|
-| `BGS-FORMAL-001` | **PROVED** | Active Lean algebraic/finite kernel graph |
+| `BGS-FORMAL-001` | **PROVED** | Active Lean graph: finite kernels and scoped Mathlib theorems |
 | `BGS-FORMAL-002` | **PROVED** | Bounded rank-two four-cut executable certificate |
 | `BGS-FORMAL-003` | **PROVED** | Compiled seven-primary finite GF(5) array certificate |
 

@@ -57,5 +57,28 @@ class RegistryNodesTests(unittest.TestCase):
                     with self.assertRaisesRegex(SystemExit, 'nodes do not match'):
                         MODULE.audit_graph(claims)
 
+    def test_nested_lean_import_closure(self):
+        import tempfile
+        audit_source = SOURCE.with_name('repository_audit.py')
+        spec = importlib.util.spec_from_file_location('bgs_lean_coverage', audit_source)
+        audit = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(audit)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            nested = root / 'formalization/Bgs/Mathlib'
+            nested.mkdir(parents=True)
+            (root / 'formalization/Bgs.lean').write_text('import Bgs.Mathlib\n')
+            (nested.parent / 'Mathlib.lean').write_text('import Bgs.Mathlib.Example\n')
+            (nested / 'Example.lean').write_text('-- proof fixture\n')
+            with patch.object(audit, 'ROOT', root):
+                audit.check_lean_coverage()
+                (nested / 'Orphan.lean').write_text('-- unreachable\n')
+                with self.assertRaisesRegex(RuntimeError, 'does not reach'):
+                    audit.check_lean_coverage()
+                (nested / 'Orphan.lean').unlink()
+                (nested / 'Example.lean').unlink()
+                with self.assertRaisesRegex(RuntimeError, 'missing active Lean import'):
+                    audit.check_lean_coverage()
+
 if __name__ == '__main__':
     unittest.main()

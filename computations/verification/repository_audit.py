@@ -286,13 +286,24 @@ def check_cpp_coverage() -> None:
 
 
 def check_lean_coverage() -> None:
-    bgs = ROOT / "formalization" / "Bgs"
-    modules = sorted(p.stem for p in bgs.glob("*.lean"))
-    entry = (ROOT / "formalization" / "Bgs.lean").read_text(encoding="utf-8")
-    imports = set(re.findall(r"^import\s+Bgs\.([A-Za-z0-9_]+)\s*$", entry, re.M))
-    missing = [m for m in modules if m not in imports]
+    root = ROOT / "formalization"
+    expected = {"Bgs." + ".".join(p.relative_to(root / "Bgs").with_suffix("").parts)
+                for p in (root / "Bgs").rglob("*.lean")}
+    visited = set()
+    pending = ["Bgs"]
+    while pending:
+        module = pending.pop()
+        if module in visited:
+            continue
+        source = root.joinpath(*module.split(".")).with_suffix(".lean")
+        if not source.is_file():
+            fail("missing active Lean import: " + module)
+        visited.add(module)
+        pending.extend(re.findall(r"^import\s+(Bgs(?:\.[A-Za-z0-9_]+)*)\s*$",
+                                  source.read_text(encoding="utf-8"), re.M))
+    missing = sorted(expected - visited)
     if missing:
-        fail("Bgs.lean does not import active module(s): " + ", ".join(missing))
+        fail("Bgs.lean does not reach active module(s): " + ", ".join(missing))
 
 
 def check_bilingual_readmes() -> None:

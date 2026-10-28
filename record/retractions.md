@@ -215,3 +215,7 @@ explicitly, retaining its previous digest and the missing-old-bytes limit.
 ERR-059: two Markdown display defects were repaired at their canonical
 sources: the visible brace in Möbius equation (8), and separate displays
 for pair-heat equations (H22)/(H23). Their mathematical content is unchanged.
+
+## ERR-060 — Pure-loss scalar identity, 28 October 2026
+
+The displayed identity for $r^2$ omitted $-4u^2e$. The maintained proof and manuscript now include that term. At $u=1/16$, $\eta=1/2$, $n=1$, the actual value is $255/256$ rather than $257/256$. `Bgs.Mathlib.PureLoss.pl_r2_eq` and `pl_r2_source_formula_false` certify the correction. Bounds and claim states are unchanged; the formal channel/tensor proof is not supplied.

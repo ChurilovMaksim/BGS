@@ -1,7 +1,7 @@
 {
   "schema": "bgs-follow-on-claim-epoch-v1",
   "base_epoch": "2026-10-07-wave3",
-  "reviewed_on": "2026-10-27",
+  "reviewed_on": "2026-10-28",
   "purpose": "Explicit state/source lineage through the already adopted 19 October research; earlier reviews do not certify later claims.",
   "after_wave3": [
     {
@@ -780,12 +780,14 @@
         "evidence": [
           "archive/evidence/executions/20261020/toolchain-followup/receipt.json",
           "evidence/executions/20261006/original-channel-gap/lean.log",
-          "evidence/executions/20261006/original-channel-gap/integration.json"
+          "evidence/executions/20261006/original-channel-gap/integration.json",
+          "evidence/formalization/aristotle_20261027/receipt.json"
         ],
-        "boundary": "Pinned Lean 4.33.1 build of all 25 active modules completed successfully (3071 Lake jobs, no warnings or errors), including CoherenceBudget and TraceStatement, per the fresh full build of 25 October 2026 on the formalization sources at live main HEAD 0ed548d (byte-identical to the build scratch copy; Mathlib v4.33.1). native_decide retains its declared native-evaluation trust boundary. This establishes the current finite/algebraic source graph was compiled, not analytic BGS formalization."
+        "boundary": "Lean 4.33.1 and the pinned Mathlib build the 29 existing and 39 added leaf modules (8776 Lake jobs, zero errors/warnings). All 589 public theorem/lemma declarations in the new Mathlib layer have only standard axioms propext, Classical.choice and Quot.sound, or none. Exact scopes are in formalization/MATHLIB_LAYER_RU.md; CUE is defined, not derived from Haar measure, and pure-loss coverage is scalar only. Legacy native_decide retains native-evaluation trust. BGS and the original signed Heisenberg hierarchy remain open.",
+        "title": "Active Lean graph: finite kernels and scoped Mathlib theorems"
       },
-      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the 25 October 2026 boundary re-pin to the fresh 25-module full build (3071 Lake jobs, Lean 4.33.1, Mathlib v4.33.1); this re-pin changes no status, source, or other field.",
-      "review": "record/errata.json; archive/MANIFEST-Brest.md"
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. Further admit the phase-1 archival relocation of this claim's evidence receipts from evidence/executions/ to archive/evidence/executions/ (package B-rest, 23 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Further admit the 25 October 2026 boundary re-pin to the fresh 25-module full build (3071 Lake jobs, Lean 4.33.1, Mathlib v4.33.1); this re-pin changes no status, source, or other field. Aristotle integration (28 October 2026): add scoped formalization pointers and the audited formal-graph boundary; no state or dependency change.",
+      "review": "record/errata.json; archive/MANIFEST-Brest.md; formalization/MATHLIB_LAYER_RU.md; evidence/formalization/aristotle_20261027/receipt.json"
     },
     {
       "id": "BGS-RES-006",
@@ -817,10 +819,13 @@
       "historical_row_sha256": "3ee17ef04b6e57243e285839fc4f97074b2b45210f19f466cd3368c31bb0dd2e",
       "fields": {
         "ledger_status": "ELEMENTARY CONSTRUCTION + AUTHOR CHECK; SHARED COMPUTATIONAL CONTROL IS FLOAT64 DIAGONAL-ONLY (SEE BGS-RES-006)",
-        "source": "mathematics/trace-bridge/two_clock_gram_falsifier.md"
+        "source": "mathematics/trace-bridge/two_clock_gram_falsifier.md",
+        "formalization": [
+          "formalization/Bgs/Mathlib/TwoClock.lean"
+        ]
       },
-      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-008 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change.",
-      "review": "record/errata.json"
+      "disposition": "Preserve the original sealed input row; admit only these already recorded authority corrections from main 7fb99b4. Status CAYLEY-003 remains verification-pending. This recheck adds no theorem promotion. Phase-2 P2-MATH wave 10a additionally admits only the topical relocation of BGS-TRACE-008 field(s) ['source'] to mathematics/trace-bridge/ (see archive/MANIFEST-P2MATH10a.md); no status or content change. Aristotle integration (28 October 2026): add scoped formalization pointers and the audited formal-graph boundary; no state or dependency change.",
+      "review": "record/errata.json; formalization/MATHLIB_LAYER_RU.md; evidence/formalization/aristotle_20261027/receipt.json"
     },
     {
       "id": "BGS-FORMAL-003",
@@ -1095,10 +1100,13 @@
           "evidence/executions/20261006/clock-control/mutation_checks.json",
           "archive/record/clock_control_review_20261006.md"
         ],
-        "source": "mathematics/spectral-obstructions/isospectral_clock_moment_control.md"
+        "source": "mathematics/spectral-obstructions/isospectral_clock_moment_control.md",
+        "formalization": [
+          "formalization/Bgs/Mathlib/ClockCharacter.lean"
+        ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-2 topical relocation of this claim's source note from mathematics/isospectral_clock_moment_control.md to mathematics/spectral-obstructions/isospectral_clock_moment_control.md (package P2-MATH wave 8, 24 October 2026), on the same paths-only terms; this relocation adds no theorem promotion.",
-      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-F2.md; archive/MANIFEST-P2MATH8.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's record-layer evidence receipts from record/ to archive/record/ (package F-2, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Further admit the phase-2 topical relocation of this claim's source note from mathematics/isospectral_clock_moment_control.md to mathematics/spectral-obstructions/isospectral_clock_moment_control.md (package P2-MATH wave 8, 24 October 2026), on the same paths-only terms; this relocation adds no theorem promotion. Aristotle integration (28 October 2026): add scoped formalization pointers and the audited formal-graph boundary; no state or dependency change.",
+      "review": "archive/MANIFEST-F2.md; archive/MANIFEST-F2.md; archive/MANIFEST-P2MATH8.md; formalization/MATHLIB_LAYER_RU.md; evidence/formalization/aristotle_20261027/receipt.json"
     },
     {
       "id": "BGS-FM-021",
@@ -1636,10 +1644,13 @@
           "archive/evidence/20260927/cue_upload_audit.json",
           "archive/evidence/20260927/cue_upload_manifest.json"
         ],
-        "source": "mathematics/fixed-map/frozen_periodic_point_annihilator.md"
+        "source": "mathematics/fixed-map/frozen_periodic_point_annihilator.md",
+        "formalization": [
+          "formalization/Bgs/Mathlib/PeriodicPoints.lean"
+        ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/frozen_periodic_point_annihilator.md to mathematics/fixed-map/frozen_periodic_point_annihilator.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
-      "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/frozen_periodic_point_annihilator.md to mathematics/fixed-map/frozen_periodic_point_annihilator.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Aristotle integration (28 October 2026): add scoped formalization pointers and the audited formal-graph boundary; no state or dependency change.",
+      "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md; formalization/MATHLIB_LAYER_RU.md; evidence/formalization/aristotle_20261027/receipt.json"
     },
     {
       "id": "BGS-FM-014",
@@ -1678,10 +1689,14 @@
           "archive/evidence/20260930/heisenberg_note_manifest.json"
         ],
         "source": "mathematics/fixed-map/offdiagonal_digit_fup.md",
-        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXTERNAL-THEOREM + EXACT ALGEBRA AND FINITE CONTROLS"
+        "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXTERNAL-THEOREM + EXACT ALGEBRA AND FINITE CONTROLS",
+        "formalization": [
+          "formalization/Bgs/Mathlib/DigitFUP.lean",
+          "formalization/Bgs/Mathlib/DigitFUPBinary.lean"
+        ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/offdiagonal_digit_fup.md to mathematics/fixed-map/offdiagonal_digit_fup.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change.",
-      "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9B): source mathematics/offdiagonal_digit_fup.md to mathematics/fixed-map/offdiagonal_digit_fup.md (archive/MANIFEST-P2MATH9B.md); no status, content, or other contract-field change. Aristotle integration (28 October 2026): add scoped formalization pointers and the audited formal-graph boundary; no state or dependency change.",
+      "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9B.md; formalization/MATHLIB_LAYER_RU.md; evidence/formalization/aristotle_20261027/receipt.json"
     },
     {
       "id": "BGS-RES-004",
@@ -1837,10 +1852,13 @@
       "id": "BGS-RES-002",
       "historical_row_sha256": "61fa140d852598eec623d75010c7539ef3feb611d607a82d930a64aa3408ea7d",
       "fields": {
-        "source": "mathematics/resonance-cohomology/local_jet_resonance_obstruction.md"
+        "source": "mathematics/resonance-cohomology/local_jet_resonance_obstruction.md",
+        "formalization": [
+          "formalization/Bgs/Mathlib/LocalJetObstruction.lean"
+        ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of this claim's source from mathematics/local_jet_resonance_obstruction.md to mathematics/resonance-cohomology/local_jet_resonance_obstruction.md (P2-MATH wave 7); no status, content, or other contract-field change.",
-      "review": "archive/MANIFEST-P2MATH7.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of this claim's source from mathematics/local_jet_resonance_obstruction.md to mathematics/resonance-cohomology/local_jet_resonance_obstruction.md (P2-MATH wave 7); no status, content, or other contract-field change. Aristotle integration (28 October 2026): add scoped formalization pointers and the audited formal-graph boundary; no state or dependency change.",
+      "review": "archive/MANIFEST-P2MATH7.md; formalization/MATHLIB_LAYER_RU.md; evidence/formalization/aristotle_20261027/receipt.json"
     },
     {
       "id": "BGS-FM-002",
@@ -1962,10 +1980,15 @@
         ],
         "evidence": [
           "mathematics/trace-bridge/trace_to_local_statistics_bridge.md"
+        ],
+        "formalization": [
+          "formalization/Bgs/Mathlib/TraceMobius.lean",
+          "formalization/Bgs/Mathlib/TraceMobiusGeneral.lean",
+          "formalization/Bgs/Mathlib/TraceReconstruction.lean"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-TRACE-001 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change. Wave 6 (2026-10-25): manuscript pointer refreshed path-only from the phase-4-superseded manuscript/audit_and_frontier.tex to the wired successor manuscript/unified_sections/appendix_b_provenance_and_verification.tex (same section title and label sec:verification, wired at BGS_unified.tex:90); no status, content, or other field change. Receipt-linkage package (2026-10-25): evidence field linked path-only to the recovered proof path(s) mathematics/trace-bridge/trace_to_local_statistics_bridge.md; no status, source-content, or other field change.",
-      "review": "archive/MANIFEST-P2MATH10a.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-TRACE-001 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change. Wave 6 (2026-10-25): manuscript pointer refreshed path-only from the phase-4-superseded manuscript/audit_and_frontier.tex to the wired successor manuscript/unified_sections/appendix_b_provenance_and_verification.tex (same section title and label sec:verification, wired at BGS_unified.tex:90); no status, content, or other field change. Receipt-linkage package (2026-10-25): evidence field linked path-only to the recovered proof path(s) mathematics/trace-bridge/trace_to_local_statistics_bridge.md; no status, source-content, or other field change. Aristotle integration (28 October 2026): add scoped formalization pointers and the audited formal-graph boundary; no state or dependency change.",
+      "review": "archive/MANIFEST-P2MATH10a.md; formalization/MATHLIB_LAYER_RU.md; evidence/formalization/aristotle_20261027/receipt.json"
     },
     {
       "id": "BGS-TRACE-002",
@@ -2020,10 +2043,13 @@
         "ledger_status": "EXACT ELEMENTARY PROOF + INTERNAL AUTHOR CHECK",
         "evidence": [
           "mathematics/trace-bridge/clustered_abel_window_boundary.md"
+        ],
+        "formalization": [
+          "formalization/Bgs/Mathlib/AbelPoisson.lean"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-TRACE-006 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change. Receipt-linkage package (2026-10-25): evidence field linked path-only to the recovered proof path(s) mathematics/trace-bridge/clustered_abel_window_boundary.md; no status, source-content, or other field change.",
-      "review": "archive/MANIFEST-P2MATH10a.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of BGS-TRACE-006 field(s) ['source'] to mathematics/trace-bridge/ (P2-MATH wave 10a); no status, source-content, or other field change. Receipt-linkage package (2026-10-25): evidence field linked path-only to the recovered proof path(s) mathematics/trace-bridge/clustered_abel_window_boundary.md; no status, source-content, or other field change. Aristotle integration (28 October 2026): add scoped formalization pointers and the audited formal-graph boundary; no state or dependency change.",
+      "review": "archive/MANIFEST-P2MATH10a.md; formalization/MATHLIB_LAYER_RU.md; evidence/formalization/aristotle_20261027/receipt.json"
     },
     {
       "id": "BGS-TRACE-023",
@@ -2113,10 +2139,13 @@
         "source": "mathematics/fixed-map/fixed_map_resolvent_frontier.md",
         "evidence": [
           "mathematics/fixed-map/fixed_map_resolvent_frontier.md"
+        ],
+        "formalization": [
+          "formalization/Bgs/Mathlib/ClockFloor.lean"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/fixed_map_resolvent_frontier.md to mathematics/fixed-map/fixed_map_resolvent_frontier.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Receipt-linkage package (2026-10-25): evidence field linked path-only to the recovered proof path(s) mathematics/fixed-map/fixed_map_resolvent_frontier.md; no status, source-content, or other field change.",
-      "review": "archive/MANIFEST-P2MATH9A.md"
+      "disposition": "Preserve the original sealed input row; admit only the Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/fixed_map_resolvent_frontier.md to mathematics/fixed-map/fixed_map_resolvent_frontier.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Receipt-linkage package (2026-10-25): evidence field linked path-only to the recovered proof path(s) mathematics/fixed-map/fixed_map_resolvent_frontier.md; no status, source-content, or other field change. Aristotle integration (28 October 2026): add scoped formalization pointers and the audited formal-graph boundary; no state or dependency change.",
+      "review": "archive/MANIFEST-P2MATH9A.md; formalization/MATHLIB_LAYER_RU.md; evidence/formalization/aristotle_20261027/receipt.json"
     },
     {
       "id": "BGS-FLOW-001",
