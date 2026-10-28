@@ -21,7 +21,7 @@ records under CC BY 4.0 unless a source note says otherwise.
 Single-license metadata fields cannot express the layering:
 `CITATION.cff` records `MIT` with a comment noting the CC BY 4.0
 layer, and `.zenodo.json` records `CC-BY-4.0` with the split
-documented in its notes (proposal D4, pending confirmation). This
+documented in its notes (the proposal is superseded by the applied release policy). This
 file is authoritative for the per-path map.
 
 ## History
