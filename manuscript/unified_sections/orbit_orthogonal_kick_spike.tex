@@ -1,0 +1,26 @@
+\section{Orbit-orthogonal kick at \(u_{203}\)}
+\label{sec:orbit-orthogonal-kick-spike}
+The one-term majorant of Section~\ref{sec:kick-blind-arithmetic-spike} stops
+above \(3/4\) at \(n=201\). At the next odd Pell dimension the kicks are
+trace-orthogonal except for one explicit overlap, and a second-order
+expansion still clears the same threshold. The canonical proof is
+\path{mathematics/fixed-map/orbit_orthogonal_kick_spike.md}.
+The integer comparisons are certified by
+\path{formalization/Bgs/OrbitOrthogonalRational.lean} and recomputed by the
+Python and C++ verifiers named there. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Quadrature spike, BGS-TRACE-118]
+\label{thm:orbit-orthogonal-spike}
+Let \(n=203\) and \(N=u_n\), with \(u_m\) the Pell companion of
+Section~\ref{sec:kick-blind-arithmetic-spike}. At the fixed coupling
+\(\tau=10^{-80}\),
+\[
+ L_N(U_N;1)>\frac34.
+\]
+The distance from this value to \((1-e^{-2})/4\) is greater than \(1/2\).
+The integer \(u_{203}\) has \(78\) decimal digits, so any statement that the
+distance is less than \(1/2\) for every odd \(N\ge N_0\) requires
+\(N_0>u_{203}\). The same third-order majorant is already at least \(1\) at
+\(n=205\). The estimate does not decide the limit or a generic odd dimension.
+\end{theorem}

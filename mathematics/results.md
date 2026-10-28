@@ -2,7 +2,9 @@
 
 ## Kick-blind arithmetic spikes, 28 October 2026
 
-[TRACE-117](fixed-map/kick_blind_arithmetic_spike.md) keeps the pure cat-map Abel statistic a distance greater than \(1/2\) from the CUE value at every \(N=u_n\) with \(n\) odd and at least \(5\). The same gap survives the fixed kick on the 99 odd indices from \(5\) through \(201\), including the 77-digit dimension \(u_{201}\). The rational comparisons are a Lean `decide` witness plus independent Python and C++ integer checks. The one-term estimate is inconclusive at \(n=203\). Signed cancellation for the remaining dimensions, and BGS-TRACE-005, remain open.
+[TRACE-117](fixed-map/kick_blind_arithmetic_spike.md) keeps the pure cat-map Abel statistic a distance greater than \(1/2\) from the CUE value at every \(N=u_n\) with \(n\) odd and at least \(5\). The same gap survives the fixed kick on the 99 odd indices from \(5\) through \(201\), including the 77-digit dimension \(u_{201}\). The rational comparisons are a Lean `decide` witness plus independent Python and C++ integer checks. The one-term estimate is inconclusive at \(n=203\).
+
+[TRACE-118](fixed-map/orbit_orthogonal_kick_spike.md) clears that index. At \(N=u_{203}\) a second-order expansion, using trace orthogonality of the symbol orbit up to one explicit overlap, gives \(L_N(U_N;1)>3/4\). The same third-order majorant is silent at \(n=205\). Signed cancellation for the remaining dimensions, and BGS-TRACE-005, remain open.
 
 ## Aristotle formalization integration, 28 October 2026
 
@@ -433,7 +435,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**203 registered claims: 177 proved, 12 verification-pending, 9 conditional, 5 open.**
+**204 registered claims: 178 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -599,7 +601,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (94 claims)
+### TRACE family (95 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -697,5 +699,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-115` | **PROVED** | Bounded microscopic stability and positive pair-energy comparison for unitary perturbations |
 | `BGS-TRACE-116` | **PROVED** | Original-family compact pair test transfers through O(N^-2) matrix error |
 | `BGS-TRACE-117` | **PROVED** | Kick-blind arithmetic spikes of the fixed cat map |
+| `BGS-TRACE-118` | **PROVED** | Orbit-orthogonal kick at the Pell dimension u_203 |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

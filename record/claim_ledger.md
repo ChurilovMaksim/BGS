@@ -2,6 +2,8 @@
 
 ## Kick-blind arithmetic spikes, 28 October 2026
 
+BGS-TRACE-118 is a project proof with an exact integer certificate and a Lean rational witness. At the single dimension \(N=u_{203}\), the fixed kick satisfies \(L_N(U_N;1)>3/4\). The proof expands the kicked trace to second order. Cross terms vanish except for the explicit overlap \(\gamma(1)=\gamma(202)=-7/2000000\), and the third-order remainder still leaves the Abel term above \(3/4\). The integer \(u_{203}\) has 78 decimal digits, so any effective statement that the Abel gap is less than \(1/2\) for all odd \(N\ge N_0\) needs \(N_0>u_{203}\). The same remainder majorant is at least \(1\) at \(n=205\). [Proof](../mathematics/fixed-map/orbit_orthogonal_kick_spike.md), [certificate](../evidence/executions/20261028/orbit-orthogonal-spike/README.md). BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
+
 BGS-TRACE-117 is a project proof with an exact integer certificate and a Lean rational witness. For every odd \(n\ge5\), the pure cat map at dimension \(N=u_n\) has \(L_N(M_N;1)>3/4\). For every odd \(n\) with \(5\le n\le201\), the fixed kick \(\tau=10^{-80}\) preserves the same gap for \(U_N\). The largest such dimension, \(u_{201}\), has 77 decimal digits, so any effective statement that the Abel gap is less than \(1/2\) for all odd \(N\ge N_0\) needs \(N_0>u_{201}\). The one-term lower bound stops beating \(3/4\) at \(n=203\). The argument is self-contained and overlaps the classical cat-map trace arithmetic of BGS-FM-010 without using that note as a lemma. [Proof](../mathematics/fixed-map/kick_blind_arithmetic_spike.md), [certificate](../evidence/executions/20261028/kick-blind-spike/README.md). BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
 
 ## Aristotle formalization integration, 28 October 2026

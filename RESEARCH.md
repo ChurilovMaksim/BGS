@@ -2,7 +2,9 @@
 
 ## Kick-blind arithmetic spikes, 28 October 2026
 
-[TRACE-117](mathematics/fixed-map/kick_blind_arithmetic_spike.md) proves two statements for the maintained family. The pure cat map at \(N=u_n\), for every odd \(n\ge5\), has Abel value \(L_N(M_N;1)>3/4\). The fixed kick \(\tau=10^{-80}\) preserves \(L_N(U_N;1)>3/4\) for every odd \(n\) with \(5\le n\le201\). The distance to the CUE value \((1-e^{-2})/4\) is therefore greater than \(1/2\) on those dimensions, and no effective startup \(N_0\le u_{201}\) works for every larger odd dimension. The one-term lower bound drops to at most \(3/4\) at \(n=203\). This is not the \(N\to\infty\) limit. BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
+[TRACE-117](mathematics/fixed-map/kick_blind_arithmetic_spike.md) proves two statements for the maintained family. The pure cat map at \(N=u_n\), for every odd \(n\ge5\), has Abel value \(L_N(M_N;1)>3/4\). The fixed kick \(\tau=10^{-80}\) preserves \(L_N(U_N;1)>3/4\) for every odd \(n\) with \(5\le n\le201\). The distance to the CUE value \((1-e^{-2})/4\) is therefore greater than \(1/2\) on those dimensions, and no effective startup \(N_0\le u_{201}\) works for every larger odd dimension. The one-term lower bound drops to at most \(3/4\) at \(n=203\).
+
+[TRACE-118](mathematics/fixed-map/orbit_orthogonal_kick_spike.md) replaces that one-term estimate at the single dimension \(N=u_{203}\). The cat-map orbit of the \(32\) Fourier modes is trace-orthogonal except for the overlap \(\gamma(1)=-7/2000000\), and the second-order trace expansion with a third-order operator-norm remainder still gives \(L_N(U_N;1)>3/4\). The same remainder is already at least \(1\) at \(n=205\). Any effective startup for every larger odd dimension now needs \(N_0>u_{203}\) (78 decimal digits). This is not the \(N\to\infty\) limit. BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
 
 ## Aristotle formalization integration, 28 October 2026
 

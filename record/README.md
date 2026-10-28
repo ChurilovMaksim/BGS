@@ -2,7 +2,7 @@
 
 ## Kick-blind arithmetic spikes, 28 October 2026
 
-[TRACE-117](kick_blind_spike_20261028.md) records the pure cat-map Abel spike and the finite kicked window through \(u_{201}\). [Execution scope](../evidence/executions/20261028/kick-blind-spike/README.md). BGS-TRACE-005 and BGS-BGS-001 remain open.
+[TRACE-118](orbit_orthogonal_spike_20261028.md) records the quadrature spike at \(u_{203}\). [Execution scope](../evidence/executions/20261028/orbit-orthogonal-spike/README.md). [TRACE-117](kick_blind_spike_20261028.md) records the pure cat-map Abel spike and the finite kicked window through \(u_{201}\). [Execution scope](../evidence/executions/20261028/kick-blind-spike/README.md). BGS-TRACE-005 and BGS-BGS-001 remain open.
 
 [Latest whole-repository recheck](audits/repository_recheck_20261022/report.md):
 authenticated full checkout, registry and authority repairs, five external

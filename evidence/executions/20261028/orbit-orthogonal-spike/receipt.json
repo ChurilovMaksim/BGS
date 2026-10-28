@@ -1,0 +1,33 @@
+{
+  "schema": "bgs-orbit-orthogonal-spike-v1",
+  "claim": "BGS-TRACE-118",
+  "n": 203,
+  "u_203_digits": 78,
+  "u_203": "252600454664614554703519770255050826534615034647211566192959636252856146870839",
+  "norm_203": -1,
+  "mode_count": 32,
+  "sigma": "66033/160000",
+  "gamma_lag_one": "-7/2000000",
+  "sigma_eff": "1650797/4000000",
+  "majorant": "184981/160000",
+  "resonances": {
+    "hit_count": 4,
+    "lags": [
+      1,
+      202
+    ]
+  },
+  "quadrature_beats_three_quarters": true,
+  "one_term_beats_three_quarters": false,
+  "sentinel_205_remainder_at_least_one": true,
+  "margin_digits": 591,
+  "coarse_eps2_below": "1/1000",
+  "coarse_eps3_below": "1/25",
+  "sources_sha256": {
+    "python": "903398507dc2518e3114a9782b05a6c90203415b24b03cd7178ceed739cb8fc1",
+    "cpp": "cb96c1f706a6639b0f7669b04f873cba11dcb0527070490eabcec552bb2ec367",
+    "lean": "b37b4607d06f75ef6d83f576aac30edd816ad85befbd6feceaf1322b58054963",
+    "proof": "c0e1f457aa40dd9774d16dab313071b9a1a30d8e1ee0297556cb8c095e25ff53"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, the limit, a gap at a generic odd dimension, or a positive lower bound at n=205."
+}

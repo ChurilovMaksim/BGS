@@ -37,5 +37,6 @@ import Bgs.Fm001Statement
 import Bgs.Fm021Statement
 
 import Bgs.KickBlindRational
+import Bgs.OrbitOrthogonalRational
 
 import Bgs.Mathlib
