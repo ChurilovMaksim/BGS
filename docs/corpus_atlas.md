@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**340 maintained proof notes; 10 topic views; 204 core claim IDs.**
+**341 maintained proof notes; 10 topic views; 205 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
 | open | 5 |
-| proved | 178 |
+| proved | 179 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 141 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 142 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -148,6 +148,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Physical polynomial approximation and its all-order trace error](../mathematics/fixed-map/physical_trace_polynomial_approximation.md) | `BGS-TRACE-107` (proved) |
 | [Principal WKB polar quantization and smooth spectral transport](../mathematics/fixed-map/polar_wkb_quantization_stability.md) | Consult proof and full ledger |
 | [Position-chain mixing, cyclic ramp and a marked three-link estimate](../mathematics/fixed-map/position_chain_mixing.md) | `BGS-FM-021` (proved) |
+| [Positive-time trace expansion at the Pell dimension \(u_{205}\)](../mathematics/fixed-map/positive_time_spike.md) | `BGS-TRACE-119` (proved) |
 | [Prime resonant blocks: exact sector criterion and spectral comb](../mathematics/fixed-map/prime_resonant_sector.md) | `BGS-TRACE-009` (proved) |
 | [Quadratic coboundary noise: covariance, ellipticity, and its transfer boundary](../mathematics/fixed-map/quadratic_coboundary_noise.md) | `BGS-FLOW-003` (proved) |
 | [Explicit ambient-space and cycle interface](../mathematics/fixed-map/quadratic_cycle_interface.md) | Consult proof and full ledger |

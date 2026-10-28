@@ -6,6 +6,8 @@
 
 [TRACE-118](fixed-map/orbit_orthogonal_kick_spike.md) clears that index. At \(N=u_{203}\) a second-order expansion, using trace orthogonality of the symbol orbit up to one explicit overlap, gives \(L_N(U_N;1)>3/4\). The same third-order majorant, and the Hilbert--Schmidt triangle, are silent at \(n=205\). At \(n=207\) the pure second-order center itself satisfies \((1-\varepsilon_2)^2<3/4\). Signed cancellation for the remaining dimensions, and BGS-TRACE-005, remain open.
 
+[TRACE-119](fixed-map/positive_time_spike.md) clears \(n=205\) by a positive-time expansion. Resonant diagrams of degree at most \(11\) are exact archimedean zeros, indecomposable gaps are at most \(4\), and the resulting activity bound leaves an Abel term above \(3/4\) at \(N=u_{205}\) (79 digits). The \(n=207\) disk remains below \(3/4\). BGS-TRACE-005 stays open.
+
 ## Aristotle formalization integration, 28 October 2026
 
 Adapted all 39 substantive modules from the older Aristotle snapshot into the existing Lean 4.33.1 graph. The [coverage map](../formalization/MATHLIB_LAYER_RU.md) and [receipt](../evidence/formalization/aristotle_20261027/receipt.json) record exact theorem scope, 589 axiom-audited declarations and the successful aggregate build. ERR-060 corrects the pure-loss scalar identity in the proof and manuscript. Current claim states, TRACE-114–116 and pinned dependencies are retained; no BGS closure is asserted.
@@ -435,7 +437,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**204 registered claims: 178 proved, 12 verification-pending, 9 conditional, 5 open.**
+**205 registered claims: 179 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -601,7 +603,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (95 claims)
+### TRACE family (96 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -700,5 +702,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-116` | **PROVED** | Original-family compact pair test transfers through O(N^-2) matrix error |
 | `BGS-TRACE-117` | **PROVED** | Kick-blind arithmetic spikes of the fixed cat map |
 | `BGS-TRACE-118` | **PROVED** | Orbit-orthogonal kick at the Pell dimension u_203 |
+| `BGS-TRACE-119` | **PROVED** | Positive-time trace expansion at the Pell dimension u_205 |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

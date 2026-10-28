@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "e0434656a8c8a6723cdcb4342322472699f2d8ac",
+ "source_blob_sha": "a4ca4c4fb05289904da44e5c9863b47499fc1d67",
  "generated": "2026-10-28",
  "method_enumeration": [
   "analytic_proof",
@@ -28,7 +28,8 @@
   "Path existence and record equality are metadata checks, not re-execution, proof verification, or literature/priority audits. See SOURCE_OF_TRUTH.md and the per-claim boundary.",
   "review_provenance fields on some claims record internal reviews but are not automatically sufficient to certify independent proof review.",
   "BGS-TRACE-117 was appended on 2026-10-28. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
-  "BGS-TRACE-118 was appended on 2026-10-28. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee."
+  "BGS-TRACE-118 was appended on 2026-10-28. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
+  "BGS-TRACE-119 was appended on 2026-10-28. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee."
  ],
  "claims": [
   {
@@ -7525,6 +7526,50 @@
    "boundary": "Single odd dimension N=u_203 for the fixed kick tau=10^{-80}. At that dimension L_N(U_N;1)>3/4, so the distance to (1-e^{-2})/4 exceeds 1/2. Any effective bound of that distance by 1/2 for all odd N>=N_0 needs N_0>u_203 (78 decimal digits). The third-order remainder and the Hilbert-Schmidt triangle are both silent at n=205, although the pure second-order center still clears 3/4 there. At n=207 the same center satisfies (1-eps_2)^2<3/4, so the disk cannot prove the gap; this is not a proof that L itself drops. The overlap classification used for that center is proved at n=205 and n=207 only. Does not prove the N to infinity limit, a gap at every odd N, the off-diagonal sum, or any k>2. Lean certifies the Pell norm at n=203, the size comparisons, the cleared rational gap, the n=205 sentinel, the half-period sizes, the Hilbert-Schmidt triangle, the n=205 disk room, and the n=207 disk ceiling. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the Pell norm at n=203, the size comparisons, the cleared rational gap, the n=205 sentinel, the half-period sizes, the Hilbert-Schmidt triangle, the n=205 disk room, and the n=207 disk ceiling. The Weyl trace, the resonance classification, and the Taylor remainder are not formalized. Python and C++ recheck the integers, the Fourier mass, and the direct lag scans at n=203, 205, and 207.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-119",
+   "title": "Positive-time trace expansion at the Pell dimension u_205",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261028/positive-time-spike/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/positive_time_spike.py",
+    "computations/cpp/positive_time_spike.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/PositiveTimeRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+   "boundary": "Single odd dimension N=u_205 for the fixed kick tau=10^{-80}. At that dimension L_N(U_N;1)>3/4, so the distance to (1-e^{-2})/4 exceeds 1/2. Any effective bound of that distance by 1/2 for all odd N>=N_0 needs N_0>u_205 (79 decimal digits). The argument is a positive-time diagram expansion with trace orthogonality; it does not revive the third-order operator-norm remainder or the Hilbert-Schmidt triangle, both of which stay silent at n=205. At n=207 the pure second-order center satisfies (1-eps_2)^2<3/4, so no disk N(1-eps_2-E) with E>=0 proves the gap; this is not a proof that L itself drops. Does not prove the N to infinity limit, a gap at every odd N, the off-diagonal sum, or any k>2. Lean certifies the norm block at diameter 186, the gap comparison 4860*beta^5<1, the scale x<7/2, the window activities, the degree tail, the coarse chain, and the cleared Abel comparison at room 1/12. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the norm block at diameter 186, the gap comparison 4860*beta^5<1, the scale x<7/2, the window activities through degree 11, the degree tail, the coarse chain, and the cleared Abel comparison at room 1/12. The Weyl product, the arc lift, and the diagram expansion are not formalized. Python and C++ recheck the integers, the 32-mode bound, and the same comparisons.",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
    ],
