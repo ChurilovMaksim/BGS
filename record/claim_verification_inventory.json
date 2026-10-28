@@ -1,9 +1,9 @@
 {
  "schema": "bgs-claim-verification-inventory-v1",
- "base_commit": "5f234063aa8d4967c823c557ba1afcadfe229242",
+ "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "068826c8732ed692ddc00b58d8a1b2c43c7c8373",
- "generated": "2026-10-25",
+ "source_blob_sha": "cc5e87e8763d3bf137533c993ce9934db77793de",
+ "generated": "2026-10-28",
  "method_enumeration": [
   "analytic_proof",
   "exact_identity",
@@ -22,10 +22,11 @@
  "unevidenced_rule": "unevidenced=true iff state==open OR (evidence==[] AND verifiers==[] AND formalization==[]). For such rows methods=[\"unevidenced\"] and ledger_claimed_methods preserves what the ledger said, so the registry's claim is not erased, only its lack of a receipt path is marked. This is the B.5 input set.",
  "spof_rule": "spof is the primary mechanical single point of failure, picked by fixed priority: no_proof_or_receipt_in_tree > sole_receipt_is_failed_integrity_audit > sole_listed_verifier_removed > partial_scope > conditional_on_unproved_input > float_only_finite_control > formalization_only_no_verifier_or_evidence > single_evidence_path_no_verifier > single_external_input_no_independent_review > single_reviewer_author_check_only > review_not_shown_independent > no_claim_specific_finite_control > finite_controls_separate_from_proof > unformalized_analytic_chain > no_finite_or_exact_control_layer > single_verifier_implementation_only > thin_layer_stack; NONE is used only when >=3 distinct non-analytic layers plus a receipt path are present. other_weaknesses lists every further predicate that also holds. spof=NONE is NOT a full-verification claim; negative-control coverage is not a claims.json field and is therefore never asserted here.",
  "caveats": [
-  "Methods are CLAIMED methods from registry prose plus receipt-path existence; this inventory does NOT re-execute any verifier or re-prove any claim.",
-  "Receipt-path existence on the snapshot tree is established by the repo's scientific_registry_audit.py, which require_path-checks every listed path; that audit is a consistency check, not a proof check (its own docstring).",
-  "No per-claim review_provenance field exists in claims.json on this base (the field occurs only inside an unrelated archive provenance file); provenance here is ledger_status + structured lists + boundary, as above.",
-  "This artifact changes no claim state, source, id or title and does not touch the approved literal (93) or claims.json."
+  "Inventory ID set, title/state/ledger/boundary and evidence/verifier/Lean paths were mechanically reconciled with record/claims.json on 2026-10-28. No theorem state was upgraded.",
+  "Method tags are claimed methods from registry wording and nonempty links. A new Lean link documents scoped coverage only; it does not certify a full analytic theorem or provide external refereeing.",
+  "SPoF risk labels imported from the 2026-10-25 inventory were NOT all re-adjudicated for the new formalization. All changed Lean-link rows are marked risk_reassessment=PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE; new claim rows are provisional.",
+  "Path existence and record equality are metadata checks, not re-execution, proof verification, or literature/priority audits. See SOURCE_OF_TRUTH.md and the per-claim boundary.",
+  "review_provenance fields on some claims record internal reviews but are not automatically sufficient to certify independent proof review."
  ],
  "claims": [
   {
@@ -622,7 +623,7 @@
   },
   {
    "id": "BGS-FORMAL-001",
-   "title": "Active Lean algebraic/finite kernel graph",
+   "title": "Active Lean graph: finite kernels and scoped Mathlib theorems",
    "state": "proved",
    "methods": [
     "finite_control",
@@ -635,21 +636,22 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 3,
+    "evidence": 4,
     "verifiers": 0,
     "formalization": 1
    },
    "evidence": [
     "archive/evidence/executions/20261020/toolchain-followup/receipt.json",
     "evidence/executions/20261006/original-channel-gap/lean.log",
-    "evidence/executions/20261006/original-channel-gap/integration.json"
+    "evidence/executions/20261006/original-channel-gap/integration.json",
+    "evidence/formalization/aristotle_20261027/receipt.json"
    ],
    "verifiers": [],
    "formalization": [
     "formalization/Bgs.lean"
    ],
    "ledger_status": "CURRENT PINNED BUILD VERIFIED; FINITE/ALGEBRAIC SCOPE",
-   "boundary": "Pinned Lean 4.33.1 build of all 25 active modules completed successfully (3071 Lake jobs, no warnings or errors), including CoherenceBudget and TraceStatement, per the fresh full build of 25 October 2026 on the formalization sources at live main HEAD 0ed548d (byte-identical to the build scratch copy; Mathlib v4.33.1). native_decide retains its declared native-evaluation trust boundary. This establishes the current finite/algebraic source graph was compiled, not analytic BGS formalization.",
+   "boundary": "Lean 4.33.1 and the pinned Mathlib build the 29 existing and 39 added leaf modules (8776 Lake jobs, zero errors/warnings). All 589 public theorem/lemma declarations in the new Mathlib layer have only standard axioms propext, Classical.choice and Quot.sound, or none. Exact scopes are in formalization/MATHLIB_LAYER_RU.md; CUE is defined, not derived from Haar measure, and pure-loss coverage is scalar only. Legacy native_decide retains native-evaluation trust. BGS and the original signed Heisenberg hierarchy remain open.",
    "spof": "single_evidence_path_no_verifier",
    "spof_detail": "evidence path(s) exist but no verifier script path is listed",
    "other_weaknesses": []
@@ -757,7 +759,8 @@
    "title": "Local-jet resonance obstruction",
    "state": "proved",
    "methods": [
-    "exact_identity"
+    "exact_identity",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "exact_identity"
@@ -767,18 +770,21 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 0,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "supplement/fixed_map/README.md"
    ],
    "verifiers": [],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/LocalJetObstruction.lean"
+   ],
    "ledger_status": "EXACT LOCAL CONSTRUCTION + FRESH SYMBOLIC REGRESSION",
    "boundary": "Local polynomial counterexample; not a periodic torus counterexample.",
    "spof": "single_evidence_path_no_verifier",
    "spof_detail": "evidence path(s) exist but no verifier script path is listed",
-   "other_weaknesses": []
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-RES-003",
@@ -1017,7 +1023,8 @@
    "title": "Partition-Mobius formula for distinct-index spectral sums",
    "state": "proved",
    "methods": [
-    "exact_identity"
+    "exact_identity",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "exact_identity"
@@ -1027,18 +1034,23 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 0,
-    "formalization": 0
+    "formalization": 3
    },
    "evidence": [
     "mathematics/trace-bridge/trace_to_local_statistics_bridge.md"
    ],
    "verifiers": [],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/TraceMobius.lean",
+    "formalization/Bgs/Mathlib/TraceMobiusGeneral.lean",
+    "formalization/Bgs/Mathlib/TraceReconstruction.lean"
+   ],
    "ledger_status": "EXACT",
    "boundary": "Deterministic finite-N identity.",
    "spof": "single_evidence_path_no_verifier",
    "spof_detail": "evidence path(s) exist but no verifier script path is listed",
-   "other_weaknesses": []
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-002",
@@ -1157,7 +1169,8 @@
    "methods": [
     "analytic_proof",
     "exact_identity",
-    "author_check"
+    "author_check",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -1169,27 +1182,31 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 0,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "mathematics/trace-bridge/clustered_abel_window_boundary.md"
    ],
    "verifiers": [],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/AbelPoisson.lean"
+   ],
    "ledger_status": "EXACT ELEMENTARY PROOF + INTERNAL AUTHOR CHECK",
    "boundary": "Abstract unitary spectra. The Abel consequence for the compensated Pell family depends on its separate project pinning theorem; no frozen-map mixed cancellation is asserted.",
    "spof": "single_evidence_path_no_verifier",
    "spof_detail": "evidence path(s) exist but no verifier script path is listed",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-007",
    "title": "Universal sharp Abel lower bound attained by the clock spectrum",
    "state": "proved",
    "methods": [
-    "exact_identity"
+    "exact_identity",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "exact_identity"
@@ -1199,18 +1216,21 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 0,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "mathematics/fixed-map/fixed_map_resolvent_frontier.md"
    ],
    "verifiers": [],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/ClockFloor.lean"
+   ],
    "ledger_status": "EXACT + CHECKED COHN–KUMAR THEOREM 1.2",
    "boundary": "Every finite unitary spectrum and s>0. The bound is attained by the regular N-gon and the CUE benchmark is strictly larger; no uniform excess over the clock floor or frozen-model limit is proved.",
    "spof": "single_evidence_path_no_verifier",
    "spof_detail": "evidence path(s) exist but no verifier script path is listed",
-   "other_weaknesses": []
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-008",
@@ -1218,6 +1238,7 @@
    "state": "proved",
    "methods": [
     "author_check",
+    "lean_formalization",
     "float_numerics"
    ],
    "ledger_claimed_methods": [
@@ -1229,13 +1250,15 @@
    "receipt_counts": {
     "evidence": 0,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [],
    "verifiers": [
     "computations/verification/gram_resolvent_normalization.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/TwoClock.lean"
+   ],
    "ledger_status": "ELEMENTARY CONSTRUCTION + AUTHOR CHECK; SHARED COMPUTATIONAL CONTROL IS FLOAT64 DIAGONAL-ONLY (SEE BGS-RES-006)",
    "boundary": "Abstract simple odd unitary spectra, weakly Haar with unit-interval occupancy at most three, all power traces nonzero, and Gram second moment tending to 4/3, yet pair Abel limit differs from CUE. Not the maintained frozen propagator.",
    "spof": "float_only_finite_control",
@@ -1244,7 +1267,8 @@
     "no_finite_or_exact_control_layer",
     "single_reviewer_author_check_only",
     "single_verifier_implementation_only"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-CUE-001",
@@ -1357,7 +1381,8 @@
     "analytic_proof",
     "exact_identity",
     "finite_control",
-    "author_check"
+    "author_check",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -1370,7 +1395,7 @@
    "receipt_counts": {
     "evidence": 2,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "archive/evidence/20260927/cue_upload_audit.json",
@@ -1379,14 +1404,17 @@
    "verifiers": [
     "computations/verification/cue_upload_audit.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/PeriodicPoints.lean"
+   ],
    "ledger_status": "ELEMENTARY PROJECT PROOF + EXACT FINITE REGRESSION + AUTHOR-LEVEL AUDIT",
    "boundary": "Every positive classical linear-cat time. Exact unweighted Fourier averages only; no oscillatory Birkhoff weight, nonlinear fixed-point sum, quantum Heisenberg trace estimate or BGS limit. Prior Pell arithmetic credited; novelty unverified.",
    "spof": "single_reviewer_author_check_only",
    "spof_detail": "author check is the only review layer; no independent review",
    "other_weaknesses": [
     "single_verifier_implementation_only"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-FLOW-003",
@@ -1862,7 +1890,8 @@
     "exact_identity",
     "finite_control",
     "author_check",
-    "external_theorem"
+    "external_theorem",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -1876,7 +1905,7 @@
    "receipt_counts": {
     "evidence": 2,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 2
    },
    "evidence": [
     "archive/evidence/20260930/heisenberg_note_checks.json",
@@ -1885,7 +1914,10 @@
    "verifiers": [
     "computations/verification/heisenberg_note_audit.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/DigitFUP.lean",
+    "formalization/Bgs/Mathlib/DigitFUPBinary.lean"
+   ],
    "ledger_status": "PROJECT PROOF + AUTHOR CHECK + EXTERNAL-THEOREM + EXACT ALGEBRA AND FINITE CONTROLS",
    "boundary": "Ideal isotropic digit sets only: odd bases and M=2 pass; even M>=4 have exact norm 1 at every scale by a supported discrete unit vector. Binary norm sqrt(2/N). Prior Cohen criterion; no exponent extracted for base 7, nonlinear distortion theorem or actual-map coding.",
    "spof": "single_external_input_no_independent_review",
@@ -1893,7 +1925,8 @@
    "other_weaknesses": [
     "single_reviewer_author_check_only",
     "single_verifier_implementation_only"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-009",
@@ -2703,7 +2736,8 @@
     "analytic_proof",
     "exact_identity",
     "finite_control",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -2716,7 +2750,7 @@
    "receipt_counts": {
     "evidence": 4,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "evidence/executions/20261006/clock-control/exact_checks.json",
@@ -2727,14 +2761,17 @@
    "verifiers": [
     "computations/verification/isospectral_clock_control.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/ClockCharacter.lean"
+   ],
    "ledger_status": "PROJECT PROOF + INTERNAL INDEPENDENT AUDIT + EXACT FINITE CONTROLS",
    "boundary": "Same-ensemble all-k induced Hilbert–Schmidt channel error at most 1/N and exact two-copy error 1/(N²−1), despite deterministic clock spacings. No diamond-norm approximation, frozen-map Egorov property, deterministic BGS result, global priority or formal certification.",
    "spof": "NONE",
    "spof_detail": "no single point of failure among the inventoried layers (>=3 distinct non-analytic layers with a receipt path, and no specific ledger-admitted weakness above); this is NOT a claim of full verification, and absence of negative controls is not evidenced either way by claims.json",
    "other_weaknesses": [
     "single_verifier_implementation_only"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-FM-021",
@@ -3913,7 +3950,7 @@
    "receipt_counts": {
     "evidence": 2,
     "verifiers": 2,
-    "formalization": 1
+    "formalization": 2
    },
    "evidence": [
     "archive/evidence/executions/20261008/phase-channel-jet/channel_review.md",
@@ -3924,13 +3961,15 @@
     "computations/cpp/phase_occupation_jet_verifier.cpp"
    ],
    "formalization": [
-    "formalization/Bgs/PhaseChannelJetKernels.lean"
+    "formalization/Bgs/PhaseChannelJetKernels.lean",
+    "formalization/Bgs/Mathlib/PhaseChannel.lean"
    ],
    "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION + BOUNDED CONTROLS",
    "boundary": "Uniform coordinate phases reused at every return; Frobenius channel norm and norm of averaged full eigenspace pinching. No microscopic form factor, mixed-source law, deterministic phase limit or BGS. Computational controls are finite float64/complex128 quadrature and random samples (channels m in (3, 4); cascade samples at m<=6; jets at m<=3); per the verifier's own scope they do not certify the general analytic theorems.",
    "spof": "no_finite_or_exact_control_layer",
    "spof_detail": "no finite, exact or certificate control layer is inventoried",
-   "other_weaknesses": []
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-054",
@@ -4193,14 +4232,15 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 0,
-    "formalization": 1
+    "formalization": 2
    },
    "evidence": [
     "archive/evidence/executions/20261011/chat-research/README.md"
    ],
    "verifiers": [],
    "formalization": [
-    "formalization/Bgs/PhaseFrameWitness.lean"
+    "formalization/Bgs/PhaseFrameWitness.lean",
+    "formalization/Bgs/Mathlib/FreshPhaseAverage.lean"
    ],
    "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT ONLY; NO CLAIM-SPECIFIC FINITE CONTROL (SHARED CHAT-RESEARCH CHECKPOINT SCRIPT REMOVED AS VERIFIER)",
    "boundary": "Exact finite controls and the specified Haar-frame comparison model. A constructed clock/basis obstruction at one phase point is not a typical phase-ensemble or literal-map counterexample.",
@@ -4210,7 +4250,8 @@
     "no_claim_specific_finite_control",
     "review_not_shown_independent",
     "single_evidence_path_no_verifier"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-062",
@@ -4464,7 +4505,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "finite_control"
+    "finite_control",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -4475,7 +4517,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "archive/evidence/executions/20261011/chat-research/README.md"
@@ -4483,7 +4525,9 @@
    "verifiers": [
     "computations/verification/circular_phase_controls.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/ExactCumulants.lean"
+   ],
    "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
    "boundary": "Growing n/N->1, d=o(N), logarithmic critical variance, every fixed cumulant and mixed moment, conditional Gaussian law. Second/fourth cumulants are prior HSW formulas; no independent-block interpretation or external novelty certificate.",
    "spof": "review_not_shown_independent",
@@ -4491,7 +4535,8 @@
    "other_weaknesses": [
     "finite_controls_separate_from_proof",
     "single_verifier_implementation_only"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-070",
@@ -4499,7 +4544,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "finite_control"
+    "finite_control",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -4510,7 +4556,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "archive/evidence/executions/20261011/chat-research/README.md"
@@ -4518,7 +4564,9 @@
    "verifiers": [
     "computations/verification/circular_phase_controls.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/FormFactorCurve.lean"
+   ],
    "ledger_status": "PROJECT PROOF WITH EXPLICIT HYPOTHESES; INTERNAL AUDIT AND FINITE CONTROLS HAVE SEPARATE SCOPE",
    "boundary": "Mean L2(0,T) convergence of the ceil(N*tau) interpolation and all-time individual CSE MSE control. No expected temporal supremum; floor interpolation with n=0 is excluded. The limiting curves are prior work.",
    "spof": "review_not_shown_independent",
@@ -4526,7 +4574,8 @@
    "other_weaknesses": [
     "finite_controls_separate_from_proof",
     "single_verifier_implementation_only"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-071",
@@ -4645,7 +4694,8 @@
    "methods": [
     "analytic_proof",
     "finite_control",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -4657,7 +4707,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "archive/evidence/executions/20261012/unitary-two-step/README.md"
@@ -4665,14 +4715,17 @@
    "verifiers": [
     "computations/verification/unitary_two_step_obstruction.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/TwoStepObstruction.lean"
+   ],
    "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; FINITE CONTROLS SEPARATE",
    "boundary": "For each sufficiently large n, genuine unitary intensities have logarithmic flatness, vanishing centered singular norm and an exact logarithmic two-step peak. Correct rho^(h-2) bound, uniform three-step mixing and one-step frozen-entry Schur variance consequence. No maintained trajectory, all-time flatness probability, chaotic quantizer, BGS counterexample or world-priority claim.",
    "spof": "finite_controls_separate_from_proof",
    "spof_detail": "ledger states finite controls are separate/scoped, so they do not certify the analytic chain itself",
    "other_weaknesses": [
     "single_verifier_implementation_only"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-075",
@@ -4792,7 +4845,8 @@
    "methods": [
     "analytic_proof",
     "finite_control",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -4804,7 +4858,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "archive/evidence/executions/20261013/two-step-variance/README.md"
@@ -4812,14 +4866,17 @@
    "verifiers": [
     "computations/verification/two_step_increment_variance.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/TwoStepVariance.lean"
+   ],
    "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; FINITE CONTROLS SEPARATE",
    "boundary": "Any unitary S with max |Sij|²<=1/4; distinct frozen endpoint labels. Strong deterministic sum over surviving ports for arbitrary circle phases implies raw conditional second moment <=2600 delta²[(P²)ij+(P³)ij]/u under conditionally uniform selection among all u ports, with endpoint increments zero. No sustained concentration, early entry survival, deterministic microscopic law, BGS or priority claim.",
    "spof": "finite_controls_separate_from_proof",
    "spof_detail": "ledger states finite controls are separate/scoped, so they do not certify the analytic chain itself",
    "other_weaknesses": [
     "single_verifier_implementation_only"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-079",
@@ -4900,7 +4957,8 @@
    "methods": [
     "analytic_proof",
     "finite_control",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -4912,7 +4970,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 2,
-    "formalization": 0
+    "formalization": 3
    },
    "evidence": [
     "archive/evidence/executions/20261014/spectrum-coherence/README.md"
@@ -4921,12 +4979,17 @@
     "computations/verification/spectrum_coherence_controls.py",
     "computations/cpp/coherence_memory_verifier.cpp"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/FlatChirp.lean",
+    "formalization/Bgs/Mathlib/FlatTensor.lean",
+    "formalization/Bgs/Mathlib/FlatPerturb.lean"
+   ],
    "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; FINITE CONTROLS SEPARATE",
    "boundary": "Abstract deterministic family on N_k=4^k p_k with odd primes p_k->infinity. Exact P=J, reversal norm2^-k, simple spectrum and macroscopic uniform phase law coexist with origin-averaged empty microscopic point process, weak spacing delta0, non-UI counts and Heisenberg form-factor resonances. Generic phase lemma applies to every invertible complex matrix. Not the unchanged odd-N fixed-map propagator, a fixed smooth chaotic quantization, a contradiction to a full phase-averaged ensemble, BGS, priority or analytic formal certification.",
    "spof": "finite_controls_separate_from_proof",
    "spof_detail": "ledger states finite controls are separate/scoped, so they do not certify the analytic chain itself",
-   "other_weaknesses": []
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-082",
@@ -4949,7 +5012,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 2,
-    "formalization": 1
+    "formalization": 2
    },
    "evidence": [
     "archive/evidence/executions/20261014/spectrum-coherence/README.md"
@@ -4959,13 +5022,15 @@
     "computations/cpp/coherence_memory_verifier.cpp"
    ],
    "formalization": [
-    "formalization/Bgs/CoherenceBudget.lean"
+    "formalization/Bgs/CoherenceBudget.lean",
+    "formalization/Bgs/Mathlib/CoherenceMemory.lean"
    ],
    "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; OBSERVED-RETURN INPUT EXPLICIT; FINITE ARITHMETIC FORMAL SCOPE SEPARATE",
    "boundary": "Every unitary U of dimension N>=2, Hilbert--Schmidt off-diagonal compression E=Q Ad_U Q: ||E^r||=1 for integers0<=r<N. Exact compressed resolvent for |z|<1 and coherent-return recurrence. This is a singular-norm obstruction, not a spectral-radius assertion or nondecay for every source. TRACE-081 separately gives order-one observed returns near N. Lean kernel proves only positivity of the numerical product (N-1)(N-r); compilation scope is recorded separately. No actual fixed-map signed-source estimate, microscopic universality, BGS or priority claim. Computational controls cover only the N=4 Hadamard core and the N=2 rational-rotation endpoint witness at z=1/5 (returns j<9); per the control script's own scope this is a finite core, not generic or asymptotic coverage.",
    "spof": "NONE",
    "spof_detail": "no single point of failure among the inventoried layers (>=3 distinct non-analytic layers with a receipt path, and no specific ledger-admitted weakness above); this is NOT a claim of full verification, and absence of negative controls is not evidenced either way by claims.json",
-   "other_weaknesses": []
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-083",
@@ -4973,7 +5038,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -4984,20 +5050,23 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 0,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "archive/evidence/executions/20261014/first-return/README.md"
    ],
    "verifiers": [],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/FirstReturnPulse.lean"
+   ],
    "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; ALL-SOURCE TAIL AND UNCONJUGATED TRACE SCOPES EXPLICIT",
    "boundary": "Abstract N=4^k p family, k>=2 and odd prime p. Exact first-return amplitudes have support at 1,2,p,2p before column-phase perturbation. At t=2p the perturbed memory coefficient is almost an isometry on (4^k-1)(p-1) centered diagonal directions; normalized HS energy tends to one as k,p tend to infinity. Its all-source monitored energy tail beyond 2p is at most 16 N^-6. Choosing p_k>=4^(k^2) makes 2p exceed every fixed N^alpha, 0<alpha<1, while remaining o(N). For p!=3, normalized unconjugated q-th pulse traces approach 1_{3 divides q}, with explicit q*4p*N^-4 error; this is not a conjugated covariance or an assertion about F_{2pq}. No actual fixed-map signed source, BGS, full formal certification or priority conclusion.",
    "spof": "single_evidence_path_no_verifier",
    "spof_detail": "evidence path(s) exist but no verifier script path is listed",
    "other_weaknesses": [
     "no_finite_or_exact_control_layer"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-FM-032",
@@ -5353,7 +5422,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "author_check"
+    "author_check",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -5364,7 +5434,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 4
    },
    "evidence": [
     "archive/evidence/executions/20261016/chat-integration/receipt.json"
@@ -5372,7 +5442,12 @@
    "verifiers": [
     "computations/verification/imported_finite_controls/hardy/verify_hardy.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/HardyClock.lean",
+    "formalization/Bgs/Mathlib/HardyIdentity.lean",
+    "formalization/Bgs/Mathlib/HardyRigidity.lean",
+    "formalization/Bgs/Mathlib/DeletedClock.lean"
+   ],
    "ledger_status": "PROJECT PROOF + AUTHOR CHECK",
    "boundary": "p is the characteristic polynomial of a unitary, with all roots on the unit circle. Self-inversiveness alone is insufficient. Required CUE excesses are positive and unproved for the physical family.",
    "spof": "single_reviewer_author_check_only",
@@ -5380,7 +5455,8 @@
    "other_weaknesses": [
     "no_finite_or_exact_control_layer",
     "single_verifier_implementation_only"
-   ]
+   ],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-092",
@@ -5388,7 +5464,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -5399,7 +5476,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 2,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "evidence/executions/20261016/abel-gaussian/receipt.json"
@@ -5408,12 +5485,15 @@
     "computations/verification/abel_gaussian_wick/verify_abel.py",
     "computations/verification/abel_gaussian_wick/verify_rigidity.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/ClockRigidity.lean"
+   ],
    "ledger_status": "PROJECT PROOF + COORDINATOR RECONSTRUCTION + INDEPENDENT INTERNAL REVIEW",
    "boundary": "Every unitary spectrum, N>=1 including multiplicities; stationary intensity-one processes with finite displayed q-energy. Local bounded-Lipschitz Wasserstein bound C sqrt(Abel excess), with exponent optimal. No estimate of physical Abel excess, CUE convergence or all-order signed hierarchy.",
    "spof": "no_finite_or_exact_control_layer",
    "spof_detail": "no finite, exact or certificate control layer is inventoried",
-   "other_weaknesses": []
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-TRACE-093",
@@ -6566,7 +6646,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "finite_control"
+    "finite_control",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -6577,7 +6658,7 @@
    "receipt_counts": {
     "evidence": 2,
     "verifiers": 2,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "evidence/executions/20261006/corpus-revision/final/checks/multiradius_rigidity.log",
@@ -6587,12 +6668,15 @@
     "computations/verification/multiradius_rigidity.py",
     "computations/verification/two_radius_rigidity.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Mathlib/MultiradiusRigidity.lean"
+   ],
    "ledger_status": "PROJECT PROOF (SELF-CONTAINED) + FINITE-REGRESSION",
    "boundary": "Self-contained algebraic statements, independent of the BGS conjecture; priority relative to polynomial sphere-map and filter-bank literature is not asserted. The flat-tail classification subsection of the manuscript section is covered via mathematics/information-theory/two_radius_quadrature_rigidity.md (see fixlog).",
    "spof": "thin_layer_stack",
    "spof_detail": "entire inventoried stack is only: analytic_proof, finite_control",
-   "other_weaknesses": []
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_SCOPE_REVIEW_AFTER_LEAN_LINK_CHANGE"
   },
   {
    "id": "BGS-RES-017",
@@ -7251,6 +7335,110 @@
    "spof": "formalization_only_no_verifier_or_evidence",
    "spof_detail": "Lean formalization path(s) only; no evidence or verifier path in the tree",
    "other_weaknesses": []
+  },
+  {
+   "id": "BGS-TRACE-114",
+   "title": "Balanced spectral rounding preserves polynomial short traces without a local law",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261027/continuation-integration.json"
+   ],
+   "verifiers": [
+    "computations/verification/balanced_rounding_fixture_20261027.py"
+   ],
+   "formalization": [],
+   "ledger_status": "ANALYTIC PROOF + AUTHOR SELF-REVIEW",
+   "boundary": "General auxiliary family: gamma<1/2, gamma+1/2<alpha<1; absolute o(1) trace errors through N^gamma, operator error O(N^-alpha), same eigenbasis and empty weak local limit. Not the exact kicked family, sharp Egorov preservation or a BGS counterexample.",
+   "spof": "single_reviewer_author_check_only",
+   "spof_detail": "Newly inventoried 2026-10-28; author self-review and receipt linkage do not certify the analytic argument; independent proof review is pending.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only",
+    "unformalized_analytic_chain"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-115",
+   "title": "Bounded microscopic stability and positive pair-energy comparison for unitary perturbations",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261027/continuation-integration.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "ANALYTIC PROOF + AUTHOR SELF-REVIEW",
+   "boundary": "Arbitrary finite unitaries, including multiplicities. o(N^-1) norm error preserves weak laws; unbounded compact pair tests require the displayed positive-energy majorant. Relative Poisson control does not identify the limit.",
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "Newly inventoried 2026-10-28; author self-review and receipt linkage do not certify the analytic argument; independent proof review is pending.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only",
+    "unformalized_analytic_chain"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-116",
+   "title": "Original-family compact pair test transfers through O(N^-2) matrix error",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261027/continuation-integration.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "ANALYTIC PROOF + AUTHOR SELF-REVIEW",
+   "boundary": "Original fixed tau and all sufficiently large odd N, using existing TRACE-113 and its inherited external input. Pair-test difference O(1/log N) for unitary approximants and O(1/sqrt(log N)+1/N) for arbitrary matrices. Constants noneffective; no nonunitary phase process, CUE limit or higher-order comparison asserted.",
+   "spof": "single_evidence_path_no_verifier",
+   "spof_detail": "Newly inventoried 2026-10-28; author self-review and receipt linkage do not certify the analytic argument; independent proof review is pending.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only",
+    "unformalized_analytic_chain"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
   }
  ],
  "recovery_upgrade": {
@@ -7563,5 +7751,37 @@
     ]
    }
   ]
+ },
+ "risk_assessment_provenance": {
+  "mechanical_metadata_refreshed": "2026-10-28",
+  "prior_risk_classification_base": "5f234063aa8d4967c823c557ba1afcadfe229242",
+  "scope_reassessment_pending_ids": [
+   "BGS-RES-002",
+   "BGS-TRACE-001",
+   "BGS-TRACE-006",
+   "BGS-TRACE-007",
+   "BGS-TRACE-008",
+   "BGS-FM-012",
+   "BGS-FUP-001",
+   "BGS-TRACE-014",
+   "BGS-TRACE-053",
+   "BGS-TRACE-061",
+   "BGS-TRACE-069",
+   "BGS-TRACE-070",
+   "BGS-TRACE-074",
+   "BGS-TRACE-078",
+   "BGS-TRACE-081",
+   "BGS-TRACE-082",
+   "BGS-TRACE-083",
+   "BGS-TRACE-091",
+   "BGS-TRACE-092",
+   "BGS-RES-016"
+  ],
+  "new_rows_need_independent_proof_review": [
+   "BGS-TRACE-114",
+   "BGS-TRACE-115",
+   "BGS-TRACE-116"
+  ],
+  "warning": "Risk/SPoF labels on earlier entries are historical and not newly adjudicated; a Lean file link is not proof of the full claim. New rows are provisional. Structured evidence paths verify only that artifacts are registered, not that their conclusions are correct."
  }
 }
