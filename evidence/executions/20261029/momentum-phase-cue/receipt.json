@@ -1,0 +1,50 @@
+{
+  "schema": "bgs-momentum-phase-cue-v1",
+  "claims": [
+    "BGS-TRACE-140",
+    "BGS-TRACE-141",
+    "BGS-TRACE-142"
+  ],
+  "haar_limit": "m",
+  "moment_limit": "k! m^k",
+  "crossover": "verification-pending: main terms m and m exp(-v m); non-injective remainder unbounded",
+  "odd_energy": "9/125000",
+  "primes_checked": [
+    5,
+    7,
+    11,
+    13
+  ],
+  "hypothesis": "lambda not congruent to -1",
+  "residue_t3": {
+    "moduli": [
+      5,
+      7,
+      11,
+      13
+    ],
+    "value": 27,
+    "residues": [
+      2,
+      6,
+      5,
+      1
+    ]
+  },
+  "gaussian_sample": {
+    "p": 29,
+    "m": 3,
+    "v": 0.4,
+    "samples": 600,
+    "mean": 3.709072377846118,
+    "prediction": 3.9035826357366057,
+    "independent_exact_p29": 3.7555
+  },
+  "sources_sha256": {
+    "python": "fd5e871f527cb4083a9dff1df47a8396d93e5977397e14db4800daaea1c7b726",
+    "cpp": "a33ec6f00d33383a022de991fca7ae11f9b3937c3ff4283a17baf9ad5dd5882d",
+    "lean": "850187dcaafd97195d772adb82863f636b17166d831d978c2c27aad04f115435",
+    "proof": "51a8562a17e0269b4f095f8a91b6c74384645c8a6d5b9fcd9407e0e3ef11ab95"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, the sixteen-phase form factor, or the Gaussian limit of BGS-TRACE-142."
+}

@@ -6,6 +6,8 @@
 
 ## Fixed-time limits for a general hyperbolic cat map, 29 October 2026
 
+[TRACE-140](fixed-map/momentum_phase_cue.md) gives the short-time unitary value for Haar phases in position and in momentum. For an odd prime not dividing \(\beta\delta\), with \(\lambda=\delta^{-1}\not\equiv -1\), the distance from \(\mathbb E\lvert\operatorname{Tr} U^m\rvert^2\) to \(m P(p,m)/p^m\) is at most \((m!)^2(1+2m(m-1))/p\) when \(m\ge 3\). At time two the same congruence is required, and the distance to \(2\) is at most \(20/p\); if \(\delta\equiv -1\) the limits are \(4\) and \(2m\). [TRACE-141](fixed-map/momentum_phase_cue.md) gives the moment \(k!\,m^k\). [TRACE-142](fixed-map/momentum_phase_cue.md) identifies the Gaussian main term \(m(1+e^{-vm})\); the non-injective remainder is not bounded, so the limit is verification-pending. The odd symbol energy is \(9/125000\). The choice \(v=\sigma_{\mathrm{odd}}\eta^2\) is a convention, and partner-variance matching gives twice this. The count \(m\) is the diagonal count of Tanner and of Pakoński–Życzkowski–Kuś; the finite-\(p\) error constant is the extension proved here. BGS-TRACE-005 stays open.
+
 [TRACE-132](fixed-map/hyperbolic_short_time_limit.md) identifies the fixed-time limits. For Haar diagonal phases the limit is \(2m\) at each \(m\ge 3\), with distance at most \(m!(1+m(m-1))/N\) from \(2m P(N,m)/N^m\). The antiunitary \(\Theta'=DEK_0\) reverses \(DM_N\) for every hyperbolic \(S\). Times one and two tend to \(1\) and \(2\). A finite cosine with \(\eta=o(N^{-2/3})\) tends to \(1\) along odd \(N\) coprime to \(\beta(2-u_m)\); along \(N\) divisible by \(7\) (e.g. \(35,77,91,707\)) the time-\(3\) kernel has order at least \(49\), so the limit \(1\) fails when \(\gcd(N,\beta(2-u_m))>1\). If the frequencies \(1\) through \(m\) are present, sending \(\eta\to\infty\) before \(N\to\infty\) recovers \(2m\). A second diagonal factor does not replace \(2m\) by \(m\). Row inversion on an odd prime has limit \(m\). A momentum sine leaves the class, and its form factor is not identified. The orthogonal-class name remains a heuristic for \(\Theta'\). BGS-TRACE-005 stays open.
 
 ## Diagonal phase average for every hyperbolic cat map, 29 October 2026
@@ -481,7 +483,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**223 registered claims: 195 proved, 12 verification-pending, 9 conditional, 7 open.**
+**226 registered claims: 197 proved, 13 verification-pending, 9 conditional, 7 open.**
 
 ### BGS family (1 claim)
 
@@ -647,7 +649,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (114 claims)
+### TRACE family (117 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -765,5 +767,8 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-135` | **PROVED** | Half-period parity reduction of the scalar-return trace |
 | `BGS-TRACE-136` | **OPEN** | Free-with-parity revival law at even order (conjecture) |
 | `BGS-TRACE-137` | **OPEN** | Exponential revival law at odd order for generic dimensions (conjecture) |
+| `BGS-TRACE-140` | **PROVED** | Unitary short-time form factor for Haar momentum phases |
+| `BGS-TRACE-141` | **PROVED** | Unitary moment hierarchy for Haar momentum phases |
+| `BGS-TRACE-142` | **VERIFICATION-PENDING** | Gaussian momentum-phase crossover from 2m to m |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

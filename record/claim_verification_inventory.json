@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "9616a0a3a42716c352bad9ede20a6f6ec19d46d4",
+ "source_blob_sha": "e9efa16d8fec39001205dbf844a8abf1597af361",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -53,7 +53,8 @@
   "BGS-TRACE-133 was appended on 2026-10-29. Its Lean file certifies integer phase facts at N=7, m=3 and |Lambda_3|=7 only; the twisted closure operator identity was checked by the author and was given an independent internal referee audit.",
   "BGS-TRACE-134 was appended on 2026-10-29. Its Lean file certifies orders, kappa, and norm-lemma boxes only; the analytic bound and limit theorem were checked by the author and were given an independent internal referee audit.",
   "BGS-TRACE-135 was appended on 2026-10-29. Its Lean file certifies half-period parity at 61 and 101 only; the reduction identity was checked by the author and was given an independent internal referee audit.",
-  "BGS-TRACE-136 and BGS-TRACE-137 were registered as open conjectures on 2026-10-29; Monte Carlo rows are diagnostics only."
+  "BGS-TRACE-136 and BGS-TRACE-137 were registered as open conjectures on 2026-10-29; Monte Carlo rows are diagnostics only.",
+  "BGS-TRACE-140, BGS-TRACE-141 and BGS-TRACE-142 were appended on 2026-10-29. TRACE-142 is verification-pending: the Gaussian non-injective remainder is not bounded. Lean decides the odd-symbol energy, the constants 468 and 20, and the residues 27 mod 5, 7, 11 and 13 only. The programs recompute Haar buckets; they do not compute a 2k-th moment, so TRACE-141 does not claim a computer certificate. The form factor was checked by the author and was not given an independent referee."
  ],
  "claims": [
   {
@@ -8359,6 +8360,130 @@
    "spof_detail": "state is open; Monte Carlo and diagnostics in the verifier are not a proof receipt",
    "other_weaknesses": [],
    "risk_reassessment": "OPEN_CONJECTURE"
+  },
+  {
+   "id": "BGS-TRACE-140",
+   "title": "Unitary short-time form factor for Haar momentum phases",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/momentum-phase-cue/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/momentum_phase_cue.py",
+    "computations/cpp/momentum_phase_cue.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/MomentumPhaseCue.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "For an odd prime p not dividing beta or delta, with lambda = delta^{-1} not congruent to -1 modulo p, Haar position phases and Haar momentum phases give E|Tr U|^2 = 1 and |E|Tr U^2|^2 - 2| <= 20/p (at time two this uses lambda not congruent to -1, i.e. delta not congruent to -1 mod p; for delta = -1 the limits are 4 and 2m). For every m >= 3 the distance from E|Tr U^m|^2 to m P(p,m)/p^m is at most (m!)^2 (1+2m(m-1))/p. The fixed-m limit is m, and the same bound reaches m <= c log p / log log p for any fixed c < 1/2. It does not reach m <= p^alpha. Position conjugation reverses the momentum factor if and only if its eigenvalues are even under j -> -j, a Haar-null condition. The reflection contribution to the form factor is o(1). For a general hyperbolic S the reversing antiunitary of a position-diagonal kick is Theta' = D E_q K_0 from BGS-TRACE-131, equal to D K_0 when alpha is congruent to delta modulo p. An antiunitary that is not diagonal in the position basis is not classified. This is not the fixed kick, not the sixteen-phase ensemble, and not Haar measure on U(p). No Heisenberg-scale statement is proved. The m count is the diagonal count of Tanner and of Pakonski-Zyczkowski-Kus; the finite-p error constant is the extension proved here. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the odd-symbol energy, the constants 468 and 20, and the residues 27 mod 5, 7, 11, 13. It does not sum the form factor. Python and C++ recompute the occupation buckets at the primes 5, 7 and 11.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-141",
+   "title": "Unitary moment hierarchy for Haar momentum phases",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/momentum-phase-cue/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/momentum_phase_cue.py",
+    "computations/cpp/momentum_phase_cue.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/MomentumPhaseCue.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "Under the hypotheses of BGS-TRACE-140, for each fixed integer k >= 1 and every m >= 3 the distance from E|Tr U^m|^{2k} to k! m^k P(p,km)/p^{km} is at most ((km)!)^2 (1+2km(km-1))/p. The fixed-time limit is k! m^k. For fixed k the logarithmic window has c < 1/(2k) and does not reach m <= p^alpha. The measure is not Haar measure on U(p). The listed programs recompute Haar buckets and integer constants; they do not compute a 2k-th moment. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides integer comparisons only. The listed programs recompute Haar buckets; they do not compute E|Tr U^m|^{2k}. No computer certificate of the moment is claimed.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-142",
+   "title": "Gaussian momentum-phase crossover from 2m to m",
+   "state": "verification-pending",
+   "methods": [
+    "analytic_proof",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/momentum-phase-cue/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/momentum_phase_cue.py",
+    "computations/cpp/momentum_phase_cue.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/MomentumPhaseCue.lean"
+   ],
+   "ledger_status": "ANALYTIC MAIN TERMS + MONTE CARLO SANITY CHECK + AUTHOR SELF-REVIEW",
+   "boundary": "Under the hypotheses of BGS-TRACE-140, the Gaussian main terms are m rotations and m e^{-vm} from reflections; the non-injective remainder is not bounded, so the limit m(1+e^{-vm}) is verification-pending. The evaluation of those main terms inverts A and uses lambda^t not congruent to 1 for t from 1 through m; TRACE-140 itself uses only lambda not congruent to -1. At v=0 the proposed limit is 2m and as v tends to infinity the proposed limit is m. With tau = m/p and Lambda = v p the proposed limit equals p tau (1+e^{-Lambda tau}), the diagonal approximation of the Pandey-Mehta form factor. The odd part of the maintained symbol has energy 9/125000. Setting v equal to that energy times eta^2 produces Lambda = (9/125000) eta^2 p (a convention; partner-variance matching gives twice this). That identification is not an evaluation of the sixteen-phase propagator. The formula is not stated for m < 3. Encounter corrections of order tau^2 are not proved. A seeded sample of 600 draws at p=29, m=3, v=0.4 has mean 3.709. An independent exact value is 3.7555 at p=29, and Richardson extrapolations give 3.8985 against 3.9036 at v=0.4 and 3.144 against 3.149 at v=1. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "The Gaussian main terms are evaluated and the non-injective remainder is not bounded. A 600-draw Monte Carlo is a sanity check, not a bound. Lean decides the odd energy and the residues 27 mod 5, 7, 11, 13 only.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
   }
  ],
  "recovery_upgrade": {
