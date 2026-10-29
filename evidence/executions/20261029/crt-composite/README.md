@@ -12,7 +12,7 @@
 - The reduction of every nonsplit tail at a smaller prime at least \(37\) to one degree-eight majorant, including the odd inert-half corner.
 - A finite sandwich of every semiprime whose prime factors are less than \(100\).
 
-`receipt.json` records the windows and the SHA-256 hashes of the certificate sources.
+`receipt.json` records the windows and the SHA-256 hashes of the certificate sources. The proof hash was refreshed after Theorem 3 dropped the redundant disjunct that placed \(N=21\) outside the inert full-order partners. The Python, C++, and Lean sources are unchanged from the 29 October execution and were not re-run for that sentence.
 
 ## Commands
 

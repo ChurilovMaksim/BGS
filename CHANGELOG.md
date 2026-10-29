@@ -1,5 +1,21 @@
 # Scientific changelog
 
+## 2026-10-29 — Separation wording and the semiprime partner
+
+Section 2 of `mathematics/fixed-map/offdiagonal_strategy.md` no longer treats an upper bound below \(5/7\) as a separation of \(L_N(U_N;1)\) from the CUE value: \(5/7\) is larger than \((1-e^{-2})/4\). A separation is a weighted one-term gap, an upper bound \(L_N(U_N;1)\le(1-e^{-2})/4-c\) for a fixed \(c>0\), or a lower bound above \(3/4\). The fixed-point count of a trace square is the lemma in Section 2 of BGS-TRACE-120, cited in Section 2 of BGS-TRACE-122. Theorem 3 of BGS-TRACE-122 states that the non-short partner of \(7\) is an inert prime of order \(q+1\), which already includes \(q=3\). No claim state changes. The Python, C++, and Lean certificates were not re-run.
+
+## 2026-10-29 — Strategy note ranks the concrete model and the generalizations
+
+Section 7 of `mathematics/fixed-map/offdiagonal_strategy.md` ranks open routes by significance and by realistic provability. Priority 1 is a correct statement about this \(U_N\). The signed sum at times of order \(N\) is the significant target and is not within reach. An exact symmetry test of the 32-mode symbol is the realistic concrete step; `BGS-FM-001` already excludes a classical \(C^1\) reversor and does not classify the quantum ensemble. Priority 2 records, without opening a claim, a pure-map statement for a general hyperbolic matrix in \(\mathrm{SL}(2,\mathbb Z)\), a general trigonometric kick, the monomials \(\tau^2 N^3\) and \(\tau^2 N^2\) already present in the second derivative of `BGS-TRACE-125`, and an ensemble classification. The classification and the scaled-coupling limit law are not within reach. No new claim ID.
+
+## 2026-10-29 — Strategy note records an unverified reconnaissance
+
+Section 6 of `mathematics/fixed-map/offdiagonal_strategy.md` records an external reconnaissance as a lead list. No constant from that report is adopted. The half-order divisibility in the report is the lemma already proved in BGS-TRACE-121 and corrected by ERR-061; no maintained note on this branch still uses \(t=(p+1)/2\) as a nonempty class. The hypothesis \(2t\ge p+1\) in BGS-TRACE-120 remains a lower bound and, on an odd prime, is exactly the inert full order. The next route named in the note is a symmetry-breaking reformulation of the kicked model. No new claim ID is opened. BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+## 2026-10-29 — Uniform Pell-orbit overlap
+
+Register BGS-TRACE-125. For every odd integer \(n\ge5\), at \(N=u_n\), the fixed symbol overlaps only at lags \(1\) and \(n-1\), both with value \(-7/2000000\). The quadratic trace coefficient of the transported product is exactly \(n\cdot1650797/4000000\). The sequence \(u_n\) is exponential, not an arithmetic progression. The index \(n=5\) is a finite scan; every larger odd index is a size, archimedean, and quadratic-form argument. This is \(f''(0)\), not a bound on \(f(1)\). The claim does not assert that Kurlberg–Rudnick degeneracies fail to be eigenvalues of the kicked propagator: that sentence does not follow from BGS-FM-032. A separation of \(L_N(U_N;1)\) from the CUE value is a bound on the Abel sum, not a lower bound on one normalized trace. Prime squares, including \(315\), are placed by BGS-TRACE-124; \(315\) is short because its radical \(105\) is short. The ledger phrase says that Lean certifies integer comparisons only. Python, C++ and that Lean witness certify the integers. No new kick window is claimed. The third-order remainder, the signed off-diagonal sum, and the limit stay open. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+
 ## 2026-10-29 — Half-order errata and the odd-modulus assembly
 
 ERR-061, ERR-062 and ERR-063 correct three statements already registered on this branch. The order \(t=(p+1)/2\) does not occur: a split order divides \((p-1)/2\), and an inert cofactor \((p+1)/t\) is odd. The long class is the inert full order. A split full-order tower and a non-short product of \(3\) with a short prime are empty, so they are not kick windows. The square-free window \(N=15r\) requires an odd prime \(r\ge7\); \(N=45\) is strongly short and is covered by \(8t\le3N\). Theorem 1 of BGS-TRACE-124 is assembled from BGS-TRACE-121 Theorems 1 and 2, BGS-TRACE-122 Theorem 3, BGS-TRACE-123 Theorem 1, and Sections 2--7 for a non-square-free modulus that is not a prime power. The ledger phrase for BGS-TRACE-117 through BGS-TRACE-124 now says that Lean certifies integer comparisons only. The inert-domain check compares \(\gamma<5\), not \(\gamma/q<5\). No claim state changes. BGS-TRACE-005 and BGS-BGS-001 remain open.
@@ -7,6 +23,7 @@ ERR-061, ERR-062 and ERR-063 correct three statements already registered on this
 ## 2026-10-29 — Every odd modulus lies above 3/4 or below 5/7
 
 Register BGS-TRACE-124. Every odd modulus \(N\ge3\) satisfies \(L_N(M_N;1)>3/4\) or \(L_N(M_N;1)<5/7\). The modulus \(315=3^2\cdot5\cdot7\) is short because its radical \(105\) is short; no separate expansion at \(315\) is required. The fixed kick \(\tau=10^{-80}\) preserves the gap above \(3/4\) when \(8t(N)\le3N\) and \(N\le10^{39}\), through \(10^{26}\) on the ratio-preserving families whose pure margin exceeds \(13/420\), and through \(2\cdot10^{26}\) for \(N=15r\). The kick is not claimed for a ceiling tower: at \(3\cdot23\) the gap \(575/22594\) is smaller than \(13/420\). It is not claimed for an inert exponent-one partner \(q\ge40\), for \(15r>2\cdot10^{26}\), or at \(u_{207}\). Python, C++ and a Lean rational witness certify the integers. Lean certifies the closed comparisons, including the fraction at inert partner \(13\); the other twenty-six inert rows are recomputed only by the two integer programs. No density is proved. The signed off-diagonal sum stays open. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+
 
 ## 2026-10-29 — Square-free products of at least three primes
 

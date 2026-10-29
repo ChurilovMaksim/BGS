@@ -18,6 +18,8 @@
 
 [TRACE-124](fixed-map/odd_modulus_abel.md) places every odd modulus on one side of the pair of thresholds: \(L_N(M_N;1)>3/4\) or \(L_N(M_N;1)<5/7\). The modulus \(315=3^2\cdot5\cdot7\) is short because its radical \(105\) is short. The fixed kick preserves the gap above \(3/4\) when \(8t(N)\le3N\) and \(N\le10^{39}\), through \(10^{26}\) on the ratio-preserving families whose pure margin exceeds \(13/420\), and through \(2\cdot10^{26}\) for \(N=15r\). The kick is not claimed for a ceiling tower, for an inert partner \(q\ge40\) at exponent one, for \(15r>2\cdot10^{26}\), or at \(u_{207}\). No density is proved. BGS-TRACE-005 stays open.
 
+[TRACE-125](fixed-map/uniform_orbit_overlap.md) gives the same transported overlap at every odd Pell return. For odd \(n\ge5\) and \(N=u_n\), \(\gamma(r)=0\) on \(1\le r\le n-1\) except \(\gamma(1)=\gamma(n-1)=-7/2000000\), so \(\operatorname{Tr}(S^2)/N=n\cdot1650797/4000000\). This is the second derivative of the transported-product trace at zero coupling. It does not bound the third-order remainder and does not move the signed off-diagonal sum. BGS-TRACE-005 stays open.
+
 ## Aristotle formalization integration, 28 October 2026
 
 Adapted all 39 substantive modules from the older Aristotle snapshot into the existing Lean 4.33.1 graph. The [coverage map](../formalization/MATHLIB_LAYER_RU.md) and [receipt](../evidence/formalization/aristotle_20261027/receipt.json) record exact theorem scope, 589 axiom-audited declarations and the successful aggregate build. ERR-060 corrects the pure-loss scalar identity in the proof and manuscript. Current claim states, TRACE-114–116 and pinned dependencies are retained; no BGS closure is asserted.
@@ -447,7 +449,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**210 registered claims: 184 proved, 12 verification-pending, 9 conditional, 5 open.**
+**211 registered claims: 185 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -613,7 +615,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (101 claims)
+### TRACE family (102 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -718,5 +720,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-122` | **PROVED** | Chinese product for the cat-map trace square |
 | `BGS-TRACE-123` | **PROVED** | Square-free products of at least three primes lie above 3/4 |
 | `BGS-TRACE-124` | **PROVED** | Every odd modulus lies above 3/4 or below 5/7 |
+| `BGS-TRACE-125` | **PROVED** | Uniform Pell-orbit overlap of the fixed symbol |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->
