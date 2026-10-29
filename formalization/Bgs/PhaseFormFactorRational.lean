@@ -8,11 +8,17 @@ The coefficient function below is `fCoeff` from `TraceStatement.lean`, scaled by
 4000. This file certifies the resulting integer table: 32 nonzero modes,
 Hermitian symmetry, Hilbert--Schmidt energy 66033/160000, parity energy
 663/4000000, the strict majorant 184981/160000, and the unreduced reversal
-sum 66031/80000.
+sum 66031/80000. It also decides the scaled zero-mode energies at the primes
+3, 5, 7 and 11, the three small prime-revival identities, and the folded
+symbol identity `A_7 = (9/10) I`.
 
-It does not formalize the trace closure, the phase average, or the folding
-of those sums modulo N. Those arguments are in
-`mathematics/fixed-map/interaction_phase_form_factor.md`.
+`coeff` is frequency-first: `coeff k ℓ = 4000 * fCoeff(k, ℓ)`. The note's
+displacement is `(a, b) = (ℓ, k)`, so `c_(a,b) = coeff b a`. The reversal
+summand uses that identification. Summing it over `[-40, 40]²` gives
+`13206200`.
+
+It does not formalize the trace closure or the phase average. Those
+arguments are in `mathematics/fixed-map/interaction_phase_form_factor.md`.
 -/
 
 def rNum : Int → Int
@@ -113,12 +119,63 @@ def majorantSum : Int × Int :=
 def witnessCount : Nat :=
   majorantWitnesses.length
 
+/-- Reversal summand in the note's coordinates `(a, b) = (ℓ, k)`.
+`c_(a,b) = coeff b a`. The reflected mode `σ(a,b) = (a, -b)` contributes
+`coeff (-b) a`, and `S(a,b) = (3a+4b, 2a+3b)` contributes
+`coeff (2a+3b) (3a+4b)`. The summand is the scaled
+`|conj(c_σ) - c_S|²`. -/
 def revAt (a b : Int) : Int :=
-  let cs := coeff a (-b)
-  let ct := coeff (3 * a + 4 * b) (2 * a + 3 * b)
+  let cs := coeff (-b) a
+  let ct := coeff (2 * a + 3 * b) (3 * a + 4 * b)
   let dr := cs.1 - ct.1
   let di := -cs.2 - ct.2
   dr * dr + di * di
+
+/-- Scaled energy of the modes with both frequencies divisible by `p`. -/
+def sigma0Scaled (p : Nat) : Int :=
+  box.foldl (fun s pnt =>
+    let k := pnt.1
+    let ell := pnt.2
+    let c := coeff k ell
+    if p ∣ k.natAbs ∧ p ∣ ell.natAbs then
+      s + c.1 * c.1 + c.2 * c.2
+    else
+      s) 0
+
+/-- Nonnegative residue of an integer modulo `n`. -/
+def residue (z : Int) (n : Nat) : Nat :=
+  if z ≥ 0 then
+    z.toNat % n
+  else
+    let r := z.natAbs % n
+    if r = 0 then 0 else n - r
+
+abbrev FoldRow := Nat × Nat × Int × Int
+
+def insertFold (rows : List FoldRow) (a b : Nat) (re im : Int) : List FoldRow :=
+  match rows with
+  | [] => [(a, b, re, im)]
+  | (a', b', re', im') :: rest =>
+    if a = a' ∧ b = b' then
+      (a, b, re + re', im + im') :: rest
+    else
+      (a', b', re', im') :: insertFold rest a b re im
+
+/-- Fold `(ℓ, k)` modulo `p`. The row is `(ℓ mod p, k mod p, re, im)`. -/
+def foldPrime (p : Nat) : List FoldRow :=
+  box.foldl (fun rows pnt =>
+    let c := coeff pnt.1 pnt.2
+    if c.1 = 0 ∧ c.2 = 0 then
+      rows
+    else
+      insertFold rows (residue pnt.2 p) (residue pnt.1 p) c.1 c.2) []
+
+def scalar7 : Bool :=
+  (foldPrime 7).all fun row =>
+    if row.1 = 0 ∧ row.2.1 = 0 then
+      row.2.2.1 = 3600 ∧ row.2.2.2 = 0
+    else
+      row.2.2.1 = 0 ∧ row.2.2.2 = 0
 
 def revSum : Int :=
   (List.range 81).foldl (fun s i =>
@@ -172,3 +229,36 @@ theorem phase_reversal :
 theorem phase_revival_41 :
     5 * 66033 * 1681 * 32000 = 111001473 * 160000 := by
   decide
+
+theorem phase_sigma0_3 : sigma0Scaled 3 = 20250 := by
+  native_decide
+
+theorem phase_sigma0_5 : sigma0Scaled 5 = 50 := by
+  native_decide
+
+theorem phase_sigma0_7 : sigma0Scaled 7 = 6480000 := by
+  native_decide
+
+theorem phase_sigma0_11 : sigma0Scaled 11 = 0 := by
+  native_decide
+
+theorem phase_sigma0_3_fraction : 20250 * 64000 = 81 * 16000000 := by
+  decide
+
+theorem phase_sigma0_5_fraction : 50 * 320000 = 16000000 := by
+  decide
+
+theorem phase_sigma0_7_fraction : 6480000 * 200 = 81 * 16000000 := by
+  decide
+
+theorem phase_revival_3 : 4 * (66033 * 2 - 81 * 5) * 9 = 1184949 * 4 := by
+  decide
+
+theorem phase_revival_5 : 6 * (66033 * 2 - 1) * 25 = 79239 * 250 := by
+  decide
+
+theorem phase_revival_7 : 3 * (66033 - 81 * 800) * 49 = 181251 := by
+  decide
+
+theorem phase_scalar_7 : scalar7 = true := by
+  native_decide

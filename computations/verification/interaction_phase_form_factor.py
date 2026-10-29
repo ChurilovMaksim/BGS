@@ -3,8 +3,9 @@
 
 Arithmetic. Symbol coefficients, the Hilbert--Schmidt energy, the strict
 majorant, the parity defect and the position-conjugation reversal defect are
-exact `fractions.Fraction` values. The prime-revival coefficient at N=41 is
-an exact rational identity. The cyclotomic witness that the fixed-kick linear
+exact `fractions.Fraction` values. The prime-revival coefficients at the
+orders modulo 3, 5, 7 and 41 are exact rational identities, with the
+zero-mode energy sigma_0(p) kept at the three small primes. The cyclotomic witness that the fixed-kick linear
 coefficient is nonzero at N=11, m=3 is exact integer arithmetic in
 Q(i)(zeta_11).
 
@@ -299,6 +300,13 @@ def check_symmetries(cert: dict) -> dict:
         reversal = reversal_defect_mod(N)
         if N == 7:
             assert parity == 0 and reversal == 0
+            folded = fold_coeff(7)
+            assert (0, 0) in folded
+            for key, (re, im) in folded.items():
+                if key == (0, 0):
+                    assert re == Fraction(9, 10) and im == 0
+                else:
+                    assert re == 0 and im == 0, (key, re, im)
         else:
             assert parity > 0 and reversal > 0, N
         if N >= 19:
@@ -334,6 +342,7 @@ def matrix_symmetry_spotcheck(cert: dict) -> None:
         assert np.linalg.norm(np.conjugate(M) - M.conj().T) < 1e-8
         if N == 7:
             assert parity_hs < 1e-8 and reversal_hs < 1e-8
+            assert np.linalg.norm(A - 0.9 * np.eye(N)) < 1e-8
             eta = 0.2
             U = expm(1j * eta * A) @ M
             assert np.linalg.norm(P @ U @ P - U) < 1e-8
@@ -454,7 +463,7 @@ def matrix_order_two(N: int, m: int, Mm: np.ndarray) -> complex:
 
 
 def check_order_two() -> dict:
-    points = [(5, 1), (5, 2), (7, 1), (7, 3), (9, 2), (11, 1), (11, 3), (15, 2)]
+    points = [(3, 4), (5, 1), (5, 2), (5, 6), (7, 1), (7, 3), (9, 2), (11, 1), (11, 3), (15, 2)]
     worst = 0.0
     for N, m in points:
         table, ker = preimage_table(N, m)
@@ -653,29 +662,79 @@ def two_pair_average() -> dict:
     return {"two_pair_abs": err, "two_pair_closed": float(np.real(closed)), "two_pair_grid": acc}
 
 
-def prime_revival() -> dict:
-    N, m = 41, 5
-    # order exactly 5
-    I = np.array([[1, 0], [0, 1]], dtype=object)
-    assert np.array_equal(mat_pow(5) % N, I)
-    for d in range(1, 5):
-        assert not np.array_equal(mat_pow(d) % N, I)
-        Ad = mat_pow(d) - I
-        det = int(Ad[0, 0] * Ad[1, 1] - Ad[0, 1] * Ad[1, 0]) % N
-        assert det != 0
-    for (a, b), _, _ in MODES:
-        assert (a % N, b % N) != (0, 0)
-    sigma = sum((re * re + im * im) for _, re, im in MODES)
-    D2 = -m * sigma * (N * N)
-    # numerical closed form
-    table, ker = preimage_table(N, m)
-    assert ker == N * N
+REVIVALS = (
+    # N, order, sigma_0, modes (ell, k) congruent to 0, D2
+    (3, 4, Fraction(81, 64000), {(0, 6), (0, -6), (0, 9), (0, -9)}, Fraction(-1184949, 80000)),
+    (5, 6, Fraction(1, 320000), {(0, 5), (0, -5)}, Fraction(-79239, 1280)),
+    (7, 3, Fraction(81, 200), {(0, 7), (0, -7)}, Fraction(-181251, 160000)),
+    (41, 5, Fraction(0), set(), Fraction(-111001473, 32000)),
+)
+
+
+def sigma0_of(p: int) -> tuple[Fraction, set[tuple[int, int]]]:
+    total = Fraction(0)
+    found: set[tuple[int, int]] = set()
+    for (a, b), re, im in MODES:
+        if a % p == 0 and b % p == 0:
+            total += re * re + im * im
+            found.add((a, b))
+    return total, found
+
+
+def fixed_quadratic_difference(N: int, m: int) -> float:
+    """Central difference of the fixed-kick squared trace. This estimates Q, not D2."""
     M = cat(N)
-    Z = np.trace(np.linalg.matrix_power(M, m))
-    closed = order_two_coefficient(N, m, table, Z)
-    assert abs(closed - float(D2)) < 1e-4
-    assert abs(abs(Z) ** 2 - N * N) < 1e-6
-    return {"revival_D2": str(D2), "sigma": str(sigma), "float_abs": abs(closed - float(D2))}
+    A = np.zeros((N, N), dtype=np.complex128)
+    for (a, b), re, im in MODES:
+        A += complex(float(re), float(im)) * weyl(N, a, b)
+
+    def tr2(h: float) -> float:
+        return abs(np.trace(np.linalg.matrix_power(expm(1j * h * A) @ M, m))) ** 2
+
+    h = 1e-4
+    return (tr2(h) + tr2(-h) - 2.0 * tr2(0.0)) / (2.0 * h * h)
+
+
+def prime_revival() -> dict:
+    sigma = sum((re * re + im * im) for _, re, im in MODES)
+    assert sigma == Fraction(66033, 160000)
+    identity = np.array([[1, 0], [0, 1]], dtype=object)
+    out: dict[str, object] = {"sigma": str(sigma)}
+    worst = 0.0
+    for N, m, sigma0, modes, D2 in REVIVALS:
+        assert np.array_equal(mat_pow(m) % N, identity)
+        for d in range(1, m):
+            assert not np.array_equal(mat_pow(d) % N, identity)
+            Ad = mat_pow(d) - identity
+            det = int(Ad[0, 0] * Ad[1, 1] - Ad[0, 1] * Ad[1, 0]) % N
+            assert det != 0, (N, d)
+        got0, found = sigma0_of(N)
+        assert got0 == sigma0, (N, got0, found)
+        assert found == modes
+        assert D2 == -m * (sigma - sigma0) * (N * N)
+        table, ker = preimage_table(N, m)
+        assert ker == N * N
+        M = cat(N)
+        Mm = np.linalg.matrix_power(M, m)
+        Z = np.trace(Mm)
+        closed = order_two_coefficient(N, m, table, Z)
+        err = abs(closed - float(D2))
+        assert err < 1e-4, (N, err, closed, float(D2))
+        assert abs(abs(Z) ** 2 - N * N) < 1e-6
+        if N == 7:
+            # A_7 is scalar, so the fixed-kick trace square is independent of eta.
+            # The phase-averaged coefficient D2 is a different, nonzero rational.
+            diff = fixed_quadratic_difference(N, m)
+            assert abs(diff) < 1e-3, diff
+            out["fixed_Q_difference_7"] = diff
+        worst = max(worst, err)
+        out[f"D2_{N}"] = str(D2)
+        out[f"sigma0_{N}"] = str(sigma0)
+    for p in (11, 13, 17, 19, 41):
+        got0, found = sigma0_of(p)
+        assert got0 == 0 and found == set(), p
+    out["float_abs"] = worst
+    return out
 
 
 def main() -> None:

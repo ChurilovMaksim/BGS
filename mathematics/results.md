@@ -2,7 +2,7 @@
 
 ## Phase-averaged form factor, 29 October 2026
 
-[TRACE-126](fixed-map/interaction_phase_form_factor.md) is an average over independent phases on the 16 mode pairs of the kick. For every odd dimension and every power, the averaged squared trace equals \(|K_m|+\eta^2 D_2+\rho\), with \(D_2\) a Gauss-sum coefficient and with an explicit remainder. At an odd prime the second-order revival term is \(-m\sigma N^2\). The fixed kick has a linear term, nonzero at \(N=11\), \(m=3\). Parity and position conjugation survive for the kicked propagator only at dimension \(7\). The signed off-diagonal sum and any limit with \(\tau^2 N^3\) tending to a positive constant remain open. BGS-TRACE-005 stays open.
+[TRACE-126](fixed-map/interaction_phase_form_factor.md) is an average over independent phases on the 16 mode pairs of the kick. For every odd dimension and every power, the averaged squared trace equals \(|K_m|+\eta^2 D_2+\rho\), with \(D_2\) a Gauss-sum coefficient and with an explicit remainder. At an odd prime \(p\) the second-order revival term is \(-m(\sigma-\sigma_0(p))p^2\), with \(\sigma_0(p)=0\) for \(p\ge 11\) and with the three exceptions \(\sigma_0(3)=81/64000\), \(\sigma_0(5)=1/320000\), \(\sigma_0(7)=81/200\). The fixed kick has a linear term, nonzero at \(N=11\), \(m=3\). Parity and position conjugation fail for the kicked propagator when \(0<\lvert\eta\rvert<\pi/B\), except at dimension \(7\), where \(A_7=(9/10)I\). The signed off-diagonal sum and any limit with \(\tau^2 N^3\) tending to a positive constant remain open. BGS-TRACE-005 stays open.
 
 ## Kick-blind arithmetic spikes, 28 October 2026
 

@@ -1,7 +1,7 @@
 # Phase-averaged form factor and classical symmetry defects
 
 **Claim ID:** `BGS-TRACE-126`.
-**Status:** project proof. The rational symbol identities, the cyclotomic nonvanishing witness, and the prime-revival coefficient are recomputed in independent Python and C++ integer arithmetic. The stable parity and reversal defects are the same integer sums. A Lean 4.33.1 module certifies the scaled Fourier table, its energy, its parity energy, its majorant, and the unreduced reversal sum. No external referee.
+**Status:** project proof. The rational symbol identities, the cyclotomic nonvanishing witness, and the prime-revival coefficients, including the zero-mode energies at the primes \(3\), \(5\) and \(7\), are recomputed in independent Python and C++ integer arithmetic. The stable parity and reversal defects are the same integer sums. A Lean 4.33.1 module certifies the scaled Fourier table, its energy, its parity energy, its majorant, the unreduced reversal sum, the three zero-mode energies, and the identity \(A_7=(9/10)I\). No external referee.
 
 The argument uses the phase-free conjugation from `BGS-TRACE-117`, Section 2, and no other statement from that note.
 
@@ -40,23 +40,39 @@ The coefficient \(D_2(N,m)\) is real and is the finite sum of Gauss sums in Sect
 If \(x=m B\lvert\eta\rvert\) with the majorant \(B=184981/160000\) of Section 2, then
 \[
 \lvert\rho_m(N,\eta)\rvert
-\le N^2\cdot\frac{x^3}{6}\Bigl(2+\frac{x^3}{6}\Bigr).
+\le N^2\Biggl(\frac{x^3}{6}\Bigl(2+\frac{x^3}{6}\Bigr)+\frac{x^4}{4}\Biggr).
 \]
 In particular the identity is an explicit absolutely convergent series in \(\eta\). The hypothesis \(m\lvert\eta\rvert\le 5/6\) implies \(x\le 1\), since \(B<6/5\).
 
-**Corollary (prime revival, second order).** Let \(N\) be an odd prime and let \(m\) be the multiplicative order of \(S\) modulo \(N\). Then no nonzero symbol mode is fixed by \(S^\delta\) for \(1\le\delta<m\), the image of \(I-S^m\) is \(\{0\}\), and
+**Corollary (prime revival, second order).** Let \(p\) be an odd prime and let \(m\) be the multiplicative order of \(S\) modulo \(p\). Then \(S^m\equiv I\), so \(\lvert K_m\rvert=p^2\) and the image of \(I-S^m\) is \(\{0\}\). A symbol mode lies in that image precisely when it is congruent to \(0\) modulo \(p\). Write
 \[
-D_2(N,m)=-m\sigma N^2,\qquad
+\sigma_0(p)=\sum_{v\equiv 0\pmod p}\lvert c_v\rvert^2.
+\]
+Section 4 gives
+\[
+D_2(p,m)=-m\bigl(\sigma-\sigma_0(p)\bigr)p^2,
+\qquad
 \sigma=\frac{66033}{160000}.
 \]
-Thus
+The support satisfies \(\lvert\ell\rvert\le 1\) and \(\lvert k\rvert\le 9\). For every prime \(p\ge 11\), the congruence \(v\equiv 0\pmod p\) forces \(v=0\), and \(c_0=0\), so \(\sigma_0(p)=0\) and \(D_2(p,m)=-m\sigma p^2\). The three smaller primes are exceptions, read off the symbol table:
 \[
-\mathbb E_\varphi\lvert\operatorname{Tr} U_N(\eta,\varphi)^m\rvert^2
-=N^2\bigl(1-m\sigma\eta^2\bigr)+\rho_m(N,\eta),
+\begin{aligned}
+\sigma_0(3)&=\frac{81}{64000},
+& D_2(3,4)&=-\frac{1184949}{80000},\\
+\sigma_0(5)&=\frac{1}{320000},
+& D_2(5,6)&=-\frac{79239}{1280},\\
+\sigma_0(7)&=\frac{81}{200},
+& D_2(7,3)&=-\frac{181251}{160000}.
+\end{aligned}
 \]
-with the same remainder. At \(N=41\), the order is \(5\) and
+The modes are \((\ell,k)=(0,\pm 6),(0,\pm 9)\) at \(p=3\), \((0,\pm 5)\) at \(p=5\), and \((0,\pm 7)\) at \(p=7\). Each coefficient at \(p=7\) equals \(9/20\). At \(p=41\) the order is \(5\), \(\sigma_0(41)=0\), and
 \[
 D_2(41,5)=-\frac{111001473}{32000}.
+\]
+In every case
+\[
+\mathbb E_\varphi\lvert\operatorname{Tr} U_p(\eta,\varphi)^m\rvert^2
+=p^2\bigl(1-m(\sigma-\sigma_0(p))\eta^2\bigr)+\rho_m(p,\eta).
 \]
 
 **Theorem 2 (fixed kick through order two).** At the single phase \(\varphi=0\),
@@ -64,7 +80,12 @@ D_2(41,5)=-\frac{111001473}{32000}.
 \lvert\operatorname{Tr} U_N(\eta)^m\rvert^2
 =\lvert K_m\rvert+\eta L_1(N,m)+\eta^2 Q(N,m)+r_m(N,\eta),
 \]
-where the remainder obeys the same bound as \(\rho_m\), the quadratic coefficient \(Q\) is the same word sum as \(D_2\) before the phase average, and
+where the quadratic coefficient \(Q\) is the same word sum as \(D_2\) before the phase average. The remainder satisfies
+\[
+\lvert r_m(N,\eta)\rvert
+\le N^2\Biggl(\frac{x^3}{6}\Bigl(2+\frac{x^3}{6}\Bigr)+x^3+\frac{x^4}{4}\Biggr)
+\]
+with the same \(x\) as in Theorem 1, and
 \[
 L_1(N,m)=-2m\,\lvert K_m\rvert\,\operatorname{Im}\Sigma(N,m),
 \]
@@ -89,18 +110,18 @@ The parity defect and the reversal defect
 \]
 are the squared \(\ell^2\) norms of the folded symbol differences in Section 5.
 
-- \(\Delta_{\mathrm{par}}(7)=\Delta_{\mathrm{rev}}(7)=0\). Consequently \(P\) commutes with \(U_7(\eta)\) for every real \(\eta\), and \(K_0U_7(\eta)K_0=U_7(\eta)^{-1}\).
-- For every odd \(N\ne 7\), \(\Delta_{\mathrm{par}}(N)>0\). For every odd \(N\ge 19\),
+- At \(N=7\), folding the symbol gives \(A_7=(9/10)I\). Consequently \(\Delta_{\mathrm{par}}(7)=\Delta_{\mathrm{rev}}(7)=0\), \(P\) commutes with \(U_7(\eta)\) for every real \(\eta\), and \(K_0U_7(\eta)K_0=U_7(\eta)^{-1}\). The kick is a scalar, so this dimension does not test a nontrivial symmetry.
+- For every odd \(N\ne 7\), \(\Delta_{\mathrm{par}}(N)>0\) and \(\Delta_{\mathrm{rev}}(N)>0\). For every odd \(N\ge 19\),
   \[
   \Delta_{\mathrm{par}}(N)=\frac{663}{1000000}.
   \]
-- For every odd \(N\ne 7\), \(\Delta_{\mathrm{rev}}(N)>0\). For every odd \(N\ge 79\),
+  For every odd \(N\ge 79\),
   \[
   \Delta_{\mathrm{rev}}(N)=\frac{66031}{80000}.
   \]
-The finitely many odd moduli from \(3\) through \(77\) are part of the integer certificate. Thus, outside dimension \(7\), neither symmetry survives for the kicked propagator.
+The finitely many odd moduli from \(3\) through \(77\) are part of the integer certificate. For every odd \(N\ne 7\) and every real coupling with \(0<\lvert\eta\rvert<\pi/B\), neither symmetry is a symmetry of \(U_N(\eta)\). Section 5 records the argument: the defects are positive, and the exponential is injective on the ball of radius \(\pi\). At \(\eta=0\) both symmetries hold, because they hold for \(M_N\).
 
-**Boundary.** Theorem 1 averages an auxiliary ensemble. Theorem 2 expands the fixed kick; it does not estimate the signed off-diagonal sum in the Abel statistic. The prime-revival corollary is a second-order identity. If \(m\) is comparable to \(N\) and \(m B\lvert\eta\rvert\) stays bounded, then \(\eta^2 N m^2=O(1/N)\) whenever \(\eta=\tau N\) and \(m\le N\), so a limit with \(\tau^2 N^3\) tending to a positive constant lies outside the truncation. No such limit is proved. The second and fourth moments in Kurlberg–Rudnick, arXiv:math/0302277, were re-read from that abstract on 29 October 2026: they concern normalized Hecke matrix elements of the desymmetrized quantum cat map. They are not inputs, and they do not evaluate \(N^{-1}\lvert\operatorname{Tr}U_N^m\rvert\). Theorem 3 concerns parity and position-basis conjugation only. An \(N\)-dependent antiunitary outside that pair is not classified. Dimension \(7\) is an aliasing identity, not a spectral-limit theorem. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
+**Boundary.** Theorem 1 averages an auxiliary ensemble. Theorem 2 expands the fixed kick; it does not estimate the signed off-diagonal sum in the Abel statistic. The prime-revival corollary is a second-order identity, and \(\sigma_0(p)\) is part of that identity at \(p=3,5,7\). If \(m\) is comparable to \(N\) and \(m B\lvert\eta\rvert\le 1\), the relative correction is \(m\eta^2=\tau^2 N^2 m\). Along \(m\sim N\) this is of size \(\tau^2 N^3\), which is \(O(1/N)\). A limit with \(\tau^2 N^3\) tending to a positive constant lies outside the truncation. No such limit is proved. The second and fourth moments in Kurlberg–Rudnick, arXiv:math/0302277, were re-read from that abstract on 29 October 2026: they concern normalized Hecke matrix elements of the desymmetrized quantum cat map. They are not inputs, and they do not evaluate \(N^{-1}\lvert\operatorname{Tr}U_N^m\rvert\). Theorem 3 concerns parity and position-basis conjugation only. An \(N\)-dependent antiunitary outside that pair is not classified. Dimension \(7\) is the scalar identity \(A_7=(9/10)I\), not a spectral-limit theorem. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
 
 ## 2. Symbol, cocycle and Egorov
 
@@ -174,13 +195,32 @@ U_N(\eta,\varphi)^m
 \]
 with \(A_j(\varphi)=M_N^j A_N(\varphi)M_N^{-j}\) and with the product ordered from \(j=0\) on the left to \(j=m-1\) on the right. Write \(W(\eta)\) for the product and \(f(\eta)=\operatorname{Tr}(W(\eta)M_N^m)\). Then \(f(0)=Z_m\).
 
-Each factor \(\exp(i\eta A_j)\) is unitary. The Leibniz rule bounds the \(n\)th derivative of an \(m\)-fold product by \((m\lVert A\rVert)^n\). Hence \(\lvert f^{(n)}(t)\rvert\le N(m B)^n\) for every \(t\). Lagrange's remainder gives
+Each factor \(\exp(i\eta A_j)\) is unitary, and \(t\mapsto f(t)\) is a smooth map from \(\mathbb R\) into \(\mathbb C\). The integral form of Taylor's theorem in that Banach space gives
 \[
 f(\eta)=Z_m+\eta f_1+\eta^2 f_2+R,
 \qquad
-\lvert R\rvert\le N\frac{x^3}{6},
+R=\int_0^\eta\frac{(\eta-t)^2}{2}f'''(t)\,dt,
 \]
-and the elementary comparison \(\bigl\lvert\lvert f\rvert^2-\lvert Z_m+\eta f_1+\eta^2 f_2\rvert^2\bigr\rvert\le(2N+\lvert R\rvert)\lvert R\rvert\) is the remainder in Theorems 1 and 2.
+with \(f_1=f'(0)\) and \(f_2=f''(0)/2\). The scalar Lagrange form is not used: it does not apply to a complex-valued map. The Leibniz rule bounds the \(n\)th derivative of an \(m\)-fold product by \((m\lVert A\rVert)^n\), so \(\lvert f'''(t)\rvert\le N(m B)^3\). Hence \(\lvert R\rvert\le N x^3/6\).
+
+Write \(P_2=Z_m+\eta f_1+\eta^2 f_2\). Then \(f=P_2+R\) and
+\[
+\lvert f\rvert^2-\lvert P_2\rvert^2=2\operatorname{Re}(\overline f\, R)-\lvert R\rvert^2,
+\]
+so this difference is at most \((2N+\lvert R\rvert)\lvert R\rvert\le N^2(x^3/6)(2+x^3/6)\). Expanding the polynomial gives
+\[
+\lvert P_2\rvert^2
+=\lvert Z_m\rvert^2+2\operatorname{Re}\bigl(\overline{Z_m}(\eta f_1+\eta^2 f_2)\bigr)+\lvert\eta f_1\rvert^2
++2\eta^3\operatorname{Re}(\overline{f_1}f_2)+\eta^4\lvert f_2\rvert^2.
+\]
+The displayed order-two expression in Theorems 1 and 2 is the first three groups of terms. The two groups that remain satisfy
+\[
+\bigl\lvert 2\eta^3\operatorname{Re}(\overline{f_1}f_2)\bigr\rvert
+\le N^2 x^3,
+\qquad
+\eta^4\lvert f_2\rvert^2\le N^2\frac{x^4}{4},
+\]
+because \(\lvert f_1\rvert\le N m B\) and \(\lvert f_2\rvert\le N(m B)^2/2\). The map \(\varphi\mapsto\varphi+\pi\) sends every coefficient to its negative, so \(f_1\) changes sign and \(f_2\) does not. The expectation of \(\operatorname{Re}(\overline{f_1}f_2)\) therefore vanishes, while the quartic term does not. These estimates are the remainder in Theorem 1. The fixed kick keeps the cubic term, and the same estimates are the remainder in Theorem 2.
 
 Differentiating the product yields
 \[
@@ -227,7 +267,13 @@ This is Theorem 1. The same expansion without the average is Theorem 2, and
 =-2m\lvert K_m\rvert\operatorname{Im}\Sigma.
 \]
 
-At a prime \(N\), \(S^\delta-I\) is invertible whenever \(S^\delta\not\equiv I\). If \(m\) is the order, this holds for every \(1\le\delta<m\), so a symbol mode satisfies \(S^\delta v\equiv v\) only for \(v\equiv 0\), which is not a mode. Also \(S^m\equiv I\), so the image of \(I-S^m\) is \(\{0\}\) and the first sum in \(D_2\) vanishes. Every off-diagonal \(\theta\) vanishes with it. The remaining term is \(-m\sigma N^2\). Both verifiers check that the order modulo \(41\) is exactly \(5\), that each proper power is invertible, and that the resulting rational value is \(-111001473/32000\).
+Let \(p\) be an odd prime and let \(m\) be the order of \(S\) modulo \(p\). Then \(S^m\equiv I\), so the image of \(I-S^m\) is \(\{0\}\) and \(\lvert K_m\rvert=p^2\). A symbol mode meets that image precisely when \(v\equiv 0\pmod p\), and the first sum in \(D_2\) is \(\sigma_0(p)\). For \(1\le\delta<m\) the matrix \(S^\delta-I\) is invertible over the field \(\mathbb F_p\), so \(S^\delta v\equiv v\) if and only if \(v\equiv 0\). For every such mode the transported difference \((S^j-S^k)v\) reduces to \(0\), the cocycle vanishes because \(\omega(v,\cdot)\equiv 0\), and the Gauss phase of \(0\) is \(0\). Hence \(\theta(j,k,v)=1\). For every other mode the difference misses the image and \(\theta=0\). There are \(m(m-1)/2\) pairs \(j<k\), so the off-diagonal contribution is \(m(m-1)\sigma_0(p)\). The parenthesis collapses to
+\[
+m^2\sigma_0(p)-m\sigma-m(m-1)\sigma_0(p)=-m\bigl(\sigma-\sigma_0(p)\bigr).
+\]
+Therefore \(D_2(p,m)=-m(\sigma-\sigma_0(p))p^2\).
+
+For \(p\ge 11\) the support forces \(\sigma_0(p)=0\). The three exceptions are finite sums. At \(p=3\) the modes \((\ell,k)=(0,\pm 6),(0,\pm 9)\) contribute \(81/64000\), the order is \(4\), and \(D_2(3,4)=-1184949/80000\). At \(p=5\) the modes \((0,\pm 5)\) contribute \(1/320000\), the order is \(6\), and \(D_2(5,6)=-79239/1280\). At \(p=7\) the modes \((0,\pm 7)\) each have coefficient \(9/20\) and contribute \(81/200\), the order is \(3\), and \(D_2(7,3)=-181251/160000\). Both verifiers recompute these orders, the four values of \(\sigma_0\), and the four rational values of \(D_2\), including \(D_2(41,5)=-111001473/32000\). They also compare the Gauss-sum evaluation of \(D_2\) with those rationals in floating point.
 
 The cyclotomic witness is the same arithmetic. The preimages and the phases \(\psi_3(w)\) modulo \(11\) are computed from \(S\), the scaled coefficients lie in \(\mathbb Z[i]\), and the difference \(4000(\Sigma-\overline\Sigma)\) reduces through \(\zeta^{10}=-1-\zeta-\cdots-\zeta^9\) to the displayed polynomial with vanishing Gaussian-imaginary part. The powers \(1,\zeta,\ldots,\zeta^9\) are a basis of \(\mathbb Q(\zeta_{11})\), so the element is nonzero. Hence \(\Sigma\ne\overline\Sigma\).
 
@@ -259,7 +305,9 @@ On \(\mathbb Z^2\) every vector that meets the support of either function has co
 \]
 The integer certificate evaluates the folded sum at every odd modulus from \(3\) through \(77\). The value is \(0\) at \(N=7\) and positive otherwise. The same certificate compares the coefficient operators with the literal matrices at \(N=7,9,11,15\), and at \(N=7\) it checks \(PU_7P=U_7\) and \(K_0U_7K_0=U_7^{-1}\) for one nonzero coupling.
 
-The vanishing at \(N=7\) is the aliasing of the frequency-\(7\) modes of \(\cos(14\pi q)\) onto the zero mode, together with the collisions among the remaining frequencies. The certificate is the exact folded sum, not an interpretation of the aliasing.
+The vanishing at \(N=7\) is the identity \(A_7=(9/10)I\). The modes \((\ell,k)=(0,\pm 7)\) each have coefficient \(9/20\) and both reduce to the zero mode, while every other residue class sums to zero. The verifiers check that fold. A scalar multiple of the identity commutes with \(P\) and is fixed by \(K_0\) and by conjugation with \(M_7\), so both defects vanish and both symmetries hold for every real coupling. The identity is exact and finite. It is not a spectral-limit theorem.
+
+For every odd \(N\ne 7\) the defects are positive, so \(PA_NP\ne A_N\) and \(K_0A_NK_0\ne M_N^{-1}A_NM_N\). The operator norm of \(A_N\) is strictly less than \(B\). If \(0<\lvert\eta\rvert<\pi/B\), then \(\eta A_N\), \(\eta PA_NP\), \(\eta K_0A_NK_0\) and \(\eta M_N^{-1}A_NM_N\) all lie in the open ball of radius \(\pi\). On that ball of Hermitian matrices the exponential is injective, because a difference of two such matrices has spectrum in \((-2\pi,2\pi)\), and the only multiple of \(2\pi\) in that interval is \(0\). Equality of the exponentials would therefore force the kicks to be equal. Neither symmetry passes to \(U_N(\eta)\) in this range of the coupling. At \(\eta=0\) both symmetries hold, because they hold for \(M_N\).
 
 ## 6. Self-audit
 
@@ -267,11 +315,13 @@ The trace closure and the phase average were rederived from the cocycle and chec
 
 The order-two formula counts each mode once in \(\sum_v\lvert c_v\rvert^2\). Replacing that sum by a sum over the 16 pairs would double it. The matrix assembly of the same balanced words matches the formula; that comparison is what fixes the normalization.
 
-Theorem 1 does not assert that \(D_2\) has a limit, that the series reproduces \(\min(m,N)\), or that the fixed kick is close to its phase average. At a scalar return the phase-averaged second-order term is negative, of size \(m\sigma\eta^2 N^2\). The fixed kick has, in addition, the linear term of Theorem 2, which the witness shows is nonzero.
+Theorem 1 does not assert that \(D_2\) has a limit, that the series reproduces \(\min(m,N)\), or that the fixed kick is close to its phase average. At a scalar return the phase-averaged second-order term is \(-m(\sigma-\sigma_0)\eta^2 N^2\). It equals \(-m\sigma\eta^2 N^2\) when no symbol mode is congruent to \(0\). The fixed kick has, in addition, the linear term of Theorem 2, which the witness shows is nonzero.
 
-The passage from \(N^{-1}\lvert\operatorname{Tr} U_N^m\rvert\) to an average of \(\exp(i\eta m\langle\psi,A\psi\rangle)\) would require replacing the time-ordered product by the exponential of the averaged kick. That replacement is not proved. Inside the bound \(m B\lvert\eta\rvert\le 1\) with \(m\le N\) and \(\eta=\tau N\), the quantity \(\tau^2 N^3\) is \(O(1/N)\) along \(m\sim N\). The Kurlberg–Rudnick moment calculation remains a statement about a different matrix-element ensemble.
+The passage from \(N^{-1}\lvert\operatorname{Tr} U_N^m\rvert\) to an average of \(\exp(i\eta m\langle\psi,A\psi\rangle)\) would require replacing the time-ordered product by the exponential of the averaged kick. That replacement is not proved. Inside the bound \(m B\lvert\eta\rvert\le 1\) with \(m\le N\) and \(\eta=\tau N\), the relative correction \(m\eta^2=\tau^2 N^2 m\) is of size \(\tau^2 N^3\), which is \(O(1/N)\) along \(m\sim N\). The Kurlberg–Rudnick moment calculation remains a statement about a different matrix-element ensemble.
 
-Theorem 3 does not say that the spectrum at \(N=7\) is COE, and it does not say that every larger dimension is CUE. It says that these two symmetries of \(M_N\) fail to be symmetries of \(U_N(\eta)\) except at \(N=7\).
+Theorem 3 does not say that the spectrum at \(N=7\) is COE, and it does not say that every larger dimension is CUE. It says that these two symmetries of \(M_N\) fail to be symmetries of \(U_N(\eta)\) when \(0<\lvert\eta\rvert<\pi/B\), except at \(N=7\), where the kick is the scalar \((9/10)I\).
+
+Self-red-team correction, 29 October 2026. The first draft of this note stated \(D_2(p,m)=-m\sigma p^2\) at every odd prime, on the ground that a vector congruent to \(0\) is not a symbol mode. That step fails at \(p=3,5,7\): the modes listed in the corollary are nonzero on \(\mathbb Z^2\) and act as the identity in the Weyl calculus modulo \(p\), so they lie in the image \(\{0\}\). The coefficient is \(-m(\sigma-\sigma_0(p))p^2\). The same draft bounded \(\bigl\lvert\lvert f\rvert^2-\lvert P_2\rvert^2\bigr\rvert\) by \((2N+\lvert R\rvert)\lvert R\rvert\) and treated that quantity as the remainder after the displayed quadratic polynomial. The polynomial \(\lvert P_2\rvert^2\) still contains \(2\eta^3\operatorname{Re}(\overline{f_1}f_2)\) and \(\eta^4\lvert f_2\rvert^2\). The averaged cubic expectation vanishes. The quartic term does not, and the fixed kick keeps both. The derivative remainder is the integral form, because \(f\) is complex-valued. A third slip wrote \(\eta^2 N m^2=O(1/N)\). Under \(m B\lvert\eta\rvert\le 1\) that quantity is \(O(N)\). The relative correction is \(m\eta^2\), of size \(\tau^2 N^3=O(1/N)\) along \(m\sim N\).
 
 ## 7. Certificates
 
@@ -280,4 +330,4 @@ Theorem 3 does not say that the spectrum at \(N=7\) is COE, and it does not say 
 - `formalization/Bgs/PhaseFormFactorRational.lean`
 - `evidence/executions/20261029/phase-form-factor/README.md`
 
-Lean decides the scaled coefficient table, the count of 32 modes, Hermitian symmetry, the energy \(6603300\), the parity energy \(2652\), the majorant sum, and the unreduced reversal sum \(13206200\). It does not formalize the trace closure, the phase average, or the folding over \(N\). Python and C++ recompute those integer sums from the coefficient formula, the cyclotomic witness, the order at \(41\), and the folded defects. They also compare the Gauss-sum traces and the interaction picture with literal matrices in floating point. A pass of the certificate does not prove `BGS-TRACE-005` or `BGS-BGS-001`.
+Lean decides the scaled coefficient table, the count of 32 modes, Hermitian symmetry, the energy \(6603300\), the parity energy \(2652\), the majorant sum, and the unreduced reversal sum \(13206200\). The reversal summand is written in the note's displacement coordinates \((a,b)=(\ell,k)\), while `coeff` is frequency-first, so \(c_{(a,b)}\) is `coeff(b,a)`. Lean also decides the scaled zero-mode energies at the primes \(3\), \(5\), \(7\) and \(11\), the three small revival identities, and the folded symbol identity \(A_7=(9/10)I\). It does not formalize the trace closure or the phase average. Python and C++ recompute the integer sums from the coefficient formula, the cyclotomic witness, the orders and zero-mode energies at the primes \(3\), \(5\), \(7\) and \(41\), and the folded defects. They also compare the Gauss-sum traces, the revival coefficient, and the interaction picture with literal matrices in floating point. A pass of the certificate does not prove `BGS-TRACE-005` or `BGS-BGS-001`.

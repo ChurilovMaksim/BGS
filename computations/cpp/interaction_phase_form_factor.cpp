@@ -1,12 +1,15 @@
 // Independent integer and floating-point certificate for BGS-TRACE-126.
 // Recomputes the scaled Fourier table, the parity and reversal defects,
-// the cyclotomic witness at N=11, m=3, and the prime-revival coefficient
-// at N=41. Floating-point matrix comparisons are finite checks of the
+// the cyclotomic witness at N=11, m=3, and the prime-revival coefficients
+// at the orders modulo 3, 5, 7 and 41, including sigma_0. Floating-point
+// matrix comparisons are finite checks of the
 // trace closure. A pass does not prove BGS-TRACE-005.
 
+#include <algorithm>
 #include <complex>
 #include <cstdint>
 #include <cmath>
+#include <initializer_list>
 #include <iostream>
 #include <map>
 #include <stdexcept>
@@ -249,6 +252,9 @@ std::pair<long, long> apply(const Mat2& A, long x, long y, long N) {
     return {modn(A.a00 * x + A.a01 * y, N), modn(A.a10 * x + A.a11 * y, N)};
 }
 
+void check_prime_revivals();
+void check_scalar_seven();
+
 void check_cyclotomic_and_revival() {
     const long N = 11;
     const int m = 3;
@@ -295,6 +301,85 @@ void check_cyclotomic_and_revival() {
         check(det != 0, "proper power invertible");
     }
     check(5L * 66033L * 1681L * 32000L == 111001473L * 160000L, "revival rational");
+    check_prime_revivals();
+}
+
+long sigma0_scaled(long p) {
+    long total = 0;
+    for (long k = -9; k <= 9; ++k)
+        for (long ell = -1; ell <= 1; ++ell) {
+            if (k % p != 0 || ell % p != 0) continue;
+            auto c = coeff(k, ell);
+            total += c.first * c.first + c.second * c.second;
+        }
+    return total;
+}
+
+bool is_identity(const Mat2& A) {
+    return A.a00 == 1 && A.a01 == 0 && A.a10 == 0 && A.a11 == 1;
+}
+
+void check_order(int m, long N) {
+    Mat2 S{3, 4, 2, 3};
+    check(is_identity(pow_mod(S, m, N)), "order divides");
+    for (int d = 1; d < m; ++d) {
+        auto A = pow_mod(S, d, N);
+        check(!is_identity(A), "exact order");
+        long det = modn((A.a00 - 1) * (A.a11 - 1) - A.a01 * A.a10, N);
+        check(det != 0, "proper power invertible");
+    }
+}
+
+void check_zero_modes(long p, std::initializer_list<std::pair<long, long>> expect) {
+    std::vector<std::pair<long, long>> found;
+    for (long k = -9; k <= 9; ++k)
+        for (long ell = -1; ell <= 1; ++ell) {
+            auto c = coeff(k, ell);
+            if (c.first == 0 && c.second == 0) continue;
+            if (k % p == 0 && ell % p == 0) found.push_back({k, ell});
+        }
+    check(found.size() == expect.size(), "zero-mode count");
+    for (auto mode : expect) {
+        check(std::find(found.begin(), found.end(), mode) != found.end(), "zero mode");
+    }
+}
+
+void check_prime_revivals() {
+    // Scaled |c|^2 sums. The denominator of every |c_v|^2 is 16000000.
+    check(sigma0_scaled(3) == 20250, "sigma0(3)");
+    check(sigma0_scaled(5) == 50, "sigma0(5)");
+    check(sigma0_scaled(7) == 6480000, "sigma0(7)");
+    check(sigma0_scaled(11) == 0, "sigma0(11)");
+    check(sigma0_scaled(41) == 0, "sigma0(41)");
+    check(20250L * 64000L == 81L * 16000000L, "sigma0(3) fraction");
+    check(50L * 320000L == 16000000L, "sigma0(5) fraction");
+    check(6480000L * 200L == 81L * 16000000L, "sigma0(7) fraction");
+    // Modes are stored frequency-first, (k, ell). The note's (0, ±k) is (k, 0).
+    check_zero_modes(3, {{6, 0}, {-6, 0}, {9, 0}, {-9, 0}});
+    check_zero_modes(5, {{5, 0}, {-5, 0}});
+    check_zero_modes(7, {{7, 0}, {-7, 0}});
+    check_order(4, 3);
+    check_order(6, 5);
+    check_order(3, 7);
+    check_order(5, 41);
+    // D2 = -m (sigma - sigma0) p^2, cleared against the stated fractions.
+    check(4L * (66033L * 2L - 81L * 5L) * 9L == 1184949L * 4L, "D2(3,4)");
+    check(6L * (66033L * 2L - 1L) * 25L == 79239L * 250L, "D2(5,6)");
+    check(3L * (66033L - 81L * 800L) * 49L == 181251L, "D2(7,3)");
+}
+
+void check_scalar_seven() {
+    auto acc = fold(7);
+    bool saw = false;
+    for (const auto& entry : acc) {
+        if (entry.first.first == 0 && entry.first.second == 0) {
+            check(entry.second.first == 3600 && entry.second.second == 0, "A7 scalar");
+            saw = true;
+        } else {
+            check(entry.second.first == 0 && entry.second.second == 0, "A7 off scalar");
+        }
+    }
+    check(saw, "A7 zero mode present");
 }
 
 int inv_mod(int a, int N) {
@@ -470,6 +555,9 @@ void check_matrices() {
                 Minv[static_cast<size_t>(i * N + j)] = std::conj(M[static_cast<size_t>(j * N + i)]);
         auto rev = matmul(Minv, AM, N);
         check(norm_diff(Ac, rev) < 1e-8, "reversal at 7");
+        std::vector<C> scalar(A.size(), 0);
+        for (int x = 0; x < N; ++x) scalar[static_cast<size_t>(x * N + x)] = 0.9;
+        check(norm_diff(A, scalar) < 1e-8, "A7 equals 9/10 I");
     }
 }
 
@@ -479,6 +567,7 @@ int main() {
     try {
         check_symbol();
         check_defects();
+        check_scalar_seven();
         check_cyclotomic_and_revival();
         check_matrices();
     } catch (const std::exception& ex) {

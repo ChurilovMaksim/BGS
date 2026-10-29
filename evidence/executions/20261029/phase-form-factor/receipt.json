@@ -7,18 +7,31 @@
   "parity_defect_for_odd_N_at_least_19": "663/1000000",
   "reversal_defect_for_odd_N_at_least_79": "66031/80000",
   "only_odd_dimension_where_both_symmetries_survive": 7,
+  "scalar_kick_at_7": "9/10",
+  "symmetry_failure_range": "0 < |eta| < pi/B for every odd N other than 7",
   "cyclotomic_witness": "N=11,m=3",
-  "prime_revival_example": {
-    "N": 41,
-    "order": 5,
-    "D2": "-111001473/32000"
+  "prime_revival_formula": "D2=-m(sigma-sigma0(p))p^2",
+  "sigma0": {
+    "3": "81/64000",
+    "5": "1/320000",
+    "7": "81/200",
+    "every_prime_at_least_11": "0"
   },
+  "prime_revival_values": {
+    "3,4": "-1184949/80000",
+    "5,6": "-79239/1280",
+    "7,3": "-181251/160000",
+    "41,5": "-111001473/32000"
+  },
+  "averaged_remainder": "N^2 [(x^3/6)(2+x^3/6)+x^4/4]",
+  "fixed_kick_remainder": "N^2 [(x^3/6)(2+x^3/6)+x^3+x^4/4]",
   "floating_point_trace_closure": "absolute error below 1e-8 on the odd dimensions 3,5,7,9,11,15,21,25,27,35 and powers 1..6 in Python; C++ checks 5,7,9,11,15 and powers 1..4",
   "sources_sha256": {
-    "python": "64d8669caa319741d849edc6f093b10d71cf805a335a2cd6ffaef0502555c7e1",
-    "cpp": "5017711d8350323582d7e3a24140c51a095ed13a04af7087b09f3ba614349271",
-    "lean": "7d9a015823beb88f00c70943f48e0645c1fac7f72a4eb9c8654bb0c14586a2aa",
-    "proof": "ebe3f528ae2e83de20d9332829beeda7f7c389617f49224953637e5b7fe06003"
+    "python": "1ce104faddba74acd0aac9b0c13f987b547915f3ee0006412d0b95f338b225d7",
+    "cpp": "6a60b5fe0fc89d8681ca5c45b4052b4b8c282150abd42c78f0fcb2bb294bc082",
+    "lean": "c86fd3031b61c468ac6e5a91a223a636933a361f5cb24634d25b9230f466dabd",
+    "proof": "8c1aae6420e290bad9ed8f2bc594da2173b78436407c11c4a603dae5610e5eb0"
   },
+  "self_red_team": "29 October 2026 correction of the unmerged note: zero-mode energy at primes 3, 5 and 7, quartic term inside |P2|^2, integral remainder, and the relative correction m eta^2.",
   "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a revival limit, or the absence of every N-dependent antiunitary. The phase average is not the fixed kick."
 }
