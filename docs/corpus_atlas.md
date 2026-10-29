@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**345 maintained proof notes; 10 topic views; 209 core claim IDs.**
+**346 maintained proof notes; 10 topic views; 210 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
 | open | 5 |
-| proved | 183 |
+| proved | 184 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 146 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 147 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -130,6 +130,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Exact microscopic noise defect and barriers to deterministic transfer](../mathematics/fixed-map/microscopic_noise_removal.md) | `BGS-FLOW-015` (proved) |
 | [Ordered-diagonal interfaces for several and mismatched cycles](../mathematics/fixed-map/mixed_ordered_diagonal.md) | Consult proof and full ledger |
 | [Pressure growth of nonlinear brackets in the fixed frozen model](../mathematics/fixed-map/nonlinear_bracket_pressure.md) | `BGS-FM-006` (proved) |
+| [Every odd modulus lies above \(3/4\) or below \(5/7\)](../mathematics/fixed-map/odd_modulus_abel.md) | `BGS-TRACE-124` (proved) |
 | [Odd-depth newest-sector first-order splitting](../mathematics/fixed-map/odd_newest_sector_first_jet.md) | Consult proof and full ledger |
 | [Second-order splitting of the deepest odd-depth core](../mathematics/fixed-map/odd_oldform_second_jet.md) | Consult proof and full ledger |
 | [Combining the odd newest sector and residual-125 core](../mathematics/fixed-map/odd_sector_count_combination.md) | Consult proof and full ledger |

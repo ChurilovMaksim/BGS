@@ -14,7 +14,9 @@
 
 [TRACE-122](fixed-map/crt_composite_abel.md) extends the trace square to every odd modulus by the Chinese remainder theorem, and gives the square-free Abel sum as a finite combination of geometric series. Every product of two odd primes is then decided: short composite orders, non-short multiples of \(7\), and non-short products of \(3\) with a short prime lie above \(3/4\), and every remaining semiprime lies below \(5/7\). The fixed kick preserves the gap above \(3/4\) through \(10^{26}\) for \(N=21\), for split full-order multiples of \(7\), and for a non-short product of \(3\) with a short prime of odd order, if any such prime exists.
 
-[TRACE-123](fixed-map/squarefree_product_abel.md) places every square-free product of at least three distinct odd primes above \(3/4\). The fixed kick preserves that gap through \(10^{39}\) for four or more prime factors and for three prime factors not divisible by \(15\), and through \(10^{26}\) for \(N=15r\). The modulus \(N=195\) is settled by the eight-term subset expansion, not by the short-order test. A prime square such as \(315=3^2\cdot5\cdot7\) stays unresolved, as do the density of the order classes and the kick at \(u_{207}\). BGS-TRACE-005 stays open.
+[TRACE-123](fixed-map/squarefree_product_abel.md) places every square-free product of at least three distinct odd primes above \(3/4\). The fixed kick preserves that gap through \(10^{39}\) for four or more prime factors and for three prime factors not divisible by \(15\), and through \(10^{26}\) for \(N=15r\). The modulus \(N=195\) is settled by the eight-term subset expansion, not by the short-order test. A prime square is outside this statement.
+
+[TRACE-124](fixed-map/odd_modulus_abel.md) places every odd modulus on one side of the pair of thresholds: \(L_N(M_N;1)>3/4\) or \(L_N(M_N;1)<5/7\). The modulus \(315=3^2\cdot5\cdot7\) is short because its radical \(105\) is short. The fixed kick preserves the gap above \(3/4\) when \(8t(N)\le3N\) and \(N\le10^{39}\), through \(10^{26}\) on the ratio-preserving families whose pure margin exceeds \(13/420\), and through \(2\cdot10^{26}\) for \(N=15r\). The kick is not claimed for a ceiling tower, for an inert partner \(q\ge40\) at exponent one, for \(15r>2\cdot10^{26}\), or at \(u_{207}\). No density is proved. BGS-TRACE-005 stays open.
 
 ## Aristotle formalization integration, 28 October 2026
 
@@ -445,7 +447,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**209 registered claims: 183 proved, 12 verification-pending, 9 conditional, 5 open.**
+**210 registered claims: 184 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -611,7 +613,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (100 claims)
+### TRACE family (101 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -715,5 +717,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-121` | **PROVED** | Cat-map order trichotomy for primes and prime powers |
 | `BGS-TRACE-122` | **PROVED** | Chinese product for the cat-map trace square |
 | `BGS-TRACE-123` | **PROVED** | Square-free products of at least three primes lie above 3/4 |
+| `BGS-TRACE-124` | **PROVED** | Every odd modulus lies above 3/4 or below 5/7 |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

@@ -1,0 +1,41 @@
+{
+  "schema": "bgs-odd-modulus-abel-v1",
+  "claim": "BGS-TRACE-124",
+  "pure_dichotomy": "L(M)>3/4 or L(M)<5/7 for every odd N>=3",
+  "kick_windows": {
+    "strongly_short": "8t(N)<=3N and N<=10^39",
+    "ratio_preserving_margin": "N<=10^26",
+    "fifteen_times_prime": "N<=2*10^26"
+  },
+  "kick_not_claimed": [
+    "ceiling towers",
+    "inert exponent-one partner q>=40",
+    "15r above 2*10^26",
+    "u_207"
+  ],
+  "orders_checked": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47
+  ],
+  "series_degree_lower": 4,
+  "short_example": "315=3^2*5*7",
+  "sources_sha256": {
+    "python": "2b48cbb764c8873d156e6b230adde5c265d4e0fa9f588fea4629fab5554d79f7",
+    "cpp": "664f187e86eef950f97b928c895a961a0b4976c192dac4bd85160f8f11c039bb",
+    "lean": "54903a6f78e4bc41e9e7180defee51bc3bead1619fd09013d129cb6705e7fa1c",
+    "proof": "e1227730ab4ec97b7a2362a9964f35da6465a6361847bb42dc404d2387db1b30"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a density, the signed off-diagonal sum, the limit, the kick on a ceiling tower, the kick on an inert exponent-one partner q>=40, the kick on 15r above 2*10^26, or the kicked statistic at u_207."
+}

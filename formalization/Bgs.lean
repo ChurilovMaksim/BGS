@@ -43,5 +43,6 @@ import Bgs.OrderLadderRational
 import Bgs.OrderTrichotomyRational
 import Bgs.CrtCompositeRational
 import Bgs.SquarefreeProductRational
+import Bgs.OddModulusRational
 
 import Bgs.Mathlib

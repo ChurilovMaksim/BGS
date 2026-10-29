@@ -5373,6 +5373,34 @@
       "manuscript": [
         "manuscript/unified_sections/squarefree_product_abel.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-124",
+      "title": "Every odd modulus lies above 3/4 or below 5/7",
+      "source": "mathematics/fixed-map/odd_modulus_abel.md",
+      "dependencies": [
+        "BGS-TRACE-120",
+        "BGS-TRACE-121",
+        "BGS-TRACE-122",
+        "BGS-TRACE-123"
+      ],
+      "boundary": "Every odd modulus N>=3 satisfies L(M)>3/4 or L(M)<5/7. The modulus 315=3^2*5*7 is short because its radical 105 is short, so no separate expansion at 315 is required. The fixed kick tau=10^{-80} preserves L(U)>3/4 when 8t(N)<=3N and N<=10^{39}, including every odd N whose radical is strongly short; when N<=10^{26} and N is a ratio-preserving tower whose pure margin exceeds 13/420, namely a split full-order tower over a multiple of 7, N=3*7^a for a>=2, an inert full-order tower with the exponent of 7 at least 2, an inert tower 7q^b with the exponent of 7 equal to 1 and 13<=q<=39, a conditional non-short product of 3 with a short prime of odd order, and 3*5^b*13 for b>=2; and when N=15r with r an odd prime other than 5 and N<=2*10^{26}. The kick is not claimed for a ratio-preserving ceiling tower: at 3*23 the gap 575/22594 is smaller than 13/420. The kick is not claimed for an inert exponent-one partner q>=40, for 15r above 2*10^{26}, or at u_207. No density is proved. The signed off-diagonal sum, the limit, and every k>2 stay open. Values above 3/4 lie at distance greater than 1/2 from the CUE value, on the side away from (1-e^{-2})/4. Lean certifies the closed integer comparisons, including the displayed fraction at inert partner 13; the other twenty-six inert rows are recomputed by Python and C++. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/odd-modulus-abel/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/odd_modulus_abel.py",
+        "computations/cpp/odd_modulus_abel.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/OddModulusRational.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/odd_modulus_abel.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."
