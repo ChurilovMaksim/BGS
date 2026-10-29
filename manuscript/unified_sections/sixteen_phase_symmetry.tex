@@ -1,0 +1,26 @@
+\section{Symmetry class of the sixteen-phase ensemble}
+\label{sec:sixteen-phase-symmetry}
+The canonical proof is
+\path{mathematics/fixed-map/sixteen_phase_symmetry.md}.
+The integer energy is certified by
+\path{formalization/Bgs/SixteenPhaseSymmetryRational.lean}.
+Python and C++ check the similarity and the momentum sine.
+No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+
+\begin{theorem}[Symmetry class, BGS-TRACE-130]
+\label{thm:sixteen-phase-symmetry}
+Let \(A^{\mathrm{diag}}(\varphi)\) be the position-diagonal part of the sixteen-phase
+symbol. For every real \(\eta\) and every phase vector, \(e^{i\eta A^{\mathrm{diag}}}M_N\)
+is similar to the symmetric unitary \(D^{1/2}M_ND^{1/2}\). Every such realization
+lies in the orthogonal class. A position sine does not leave that class.
+
+The displacement-\(\ell=1\) modes have energy \(9/160000\). The momentum sine
+\(B_N=(T_N(1,0)-T_N(-1,0))/(2i)\) is Hermitian and odd under position
+conjugation, with symbol energy \(1/2\). For \(\varepsilon\ne 0\) the kick
+\(A^{\mathrm{diag}}+\varepsilon B_N\) is not even under that conjugation, and
+Theorem 1 does not apply. Neither statement identifies a COE or CUE form factor.
+The time-one averaged squared trace remains the vanishing-coefficient statement
+of BGS-TRACE-129.
+\end{theorem}

@@ -49,5 +49,6 @@ import Bgs.PhaseFormFactorRational
 import Bgs.DiagonalPhaseFormFactorRational
 import Bgs.DiagonalPhaseShortTimeRational
 import Bgs.ScalarReturnBesselRational
+import Bgs.SixteenPhaseSymmetryRational
 
 import Bgs.Mathlib

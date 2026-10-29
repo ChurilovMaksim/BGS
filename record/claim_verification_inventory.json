@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "2c82c0d0e9ff4aa1f2b3e5f76343782dc698e0a6",
+ "source_blob_sha": "21453db6bae709271ea42a7111a2c81d7af67853",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -44,7 +44,8 @@
   "On 2026-10-29 a self-red-team correction replaced the orthogonal-class sentence of BGS-TRACE-127 by the antiunitary Theta = D K_0. Similarity to a symmetric matrix does not assign the class. The class name is a heuristic, not a COE form factor.",
   "On 2026-10-29 a self-red-team correction of BGS-TRACE-128 replaced S(ra,sa)=S(r,s) by S(ra, s a^{-1})=S(r,s), replaced the phase gap by 3*4^{-1}-9, called the monomials reduced monomials rather than characters, and replaced the square-root conjugation by conjugation with D2.",
   "BGS-TRACE-129 was appended on 2026-10-29. Its Lean file certifies the orders, the quadruple counts at 5 and 7, and the momentum-row energy only; the Bessel average was checked by the author and was not given an independent referee.",
-  "On 2026-10-29 a self-red-team correction of BGS-TRACE-129 recorded that the Bessel identity is the classical orbit sum, not the quantum sixteen-phase average; that time one equals 1+rho_1; that each of ell=+1 and ell=-1 has energy 9/160000; and that Lean does not certify minimality of the order 12 at p=11. The quadruple rows at 11, 31, 41 and 47 are Python-only."
+  "On 2026-10-29 a self-red-team correction of BGS-TRACE-129 recorded that the Bessel identity is the classical orbit sum, not the quantum sixteen-phase average; that time one equals 1+rho_1; that each of ell=+1 and ell=-1 has energy 9/160000; and that Lean does not certify minimality of the order 12 at p=11. The quadruple rows at 11, 31, 41 and 47 are Python-only.",
+  "BGS-TRACE-130 was appended on 2026-10-29. Its Lean file certifies the momentum-row energy, the determinant, and the integer form of the momentum-sine energy only; the similarity was checked by the author and was not given an independent referee."
  ],
  "claims": [
   {
@@ -8025,6 +8026,50 @@
    "boundary": "If S^m is congruent to I modulo an odd N, then M_N^m is the scalar (Tr M_N^m)/N and U^m equals that scalar times the product of the Egorov transports of the phased kick. Modes congruent to 0 modulo N contribute only a global phase, and sigma_0(N)=0 for every N>9. For every odd N, det(S-I)=-4, so S-I is invertible and the order-two coefficient at time one vanishes: E|Tr U|^2 = 1 plus the remainder of BGS-TRACE-126, inside the window B|eta|<=1. For a position-diagonal kick the classical orbit sum has phase average N^{-4} sum_{z,z'} prod_r J_0(2 eta |c_r| |V_r(z)-V_r(z')|). At an odd prime whose first rows of S^0 through S^{m-1} are pairwise distinct, each non-zero frequency has mean square m, and the degree-two jet is 1 - m sigma_diag eta^2, the same jet as exp(-m sigma_diag eta^2). The degree-four gap is the number of non-permutation solutions of U_a+U_b=U_c+U_d. That excess vanishes at the primes 7, 31, 41 and 47, and equals 120 at p=11, where the Bessel average at lambda=1 is about 1.23 times the exponential. Each of the rows ell=+1 and ell=-1 has energy 9/160000, hence 9/80000 together. The Bessel identity is the classical orbit sum and is not the quantum sixteen-phase average. The exponential is not claimed for eta^2 sigma m of order one. No COE limit and no CUE crossover are proved. The asymmetry between N=201 and N=203 is not treated. Lean decides det(S-I)=-4, the orders at 5 and 7 with the checked proper divisors, the identity S^{12}=I at p=11 without a minimality certificate, the quadruple counts 90 and 15, and the identity 900/4000^2=9/160000. The quadruple rows at 11, 31, 41 and 47 are Python-only. It does not sum the Bessel average. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the determinant, the orders at 5, 7 and 11, the quadruple counts at those primes, and the momentum-row energy. The Bessel average is not formalized. Python and C++ recompute the quadruple table and the Bessel sum.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-130",
+   "title": "Symmetry class of the sixteen-phase ensemble",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/sixteen-phase-symmetry/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/sixteen_phase_symmetry.py",
+    "computations/cpp/sixteen_phase_symmetry.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/SixteenPhaseSymmetryRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "For every odd N>=3, the position-diagonal part of the sixteen-phase symbol is a real diagonal matrix. For every real eta and every phase vector, exp(i eta A_diag) M_N is similar to the symmetric unitary D^{1/2} M_N D^{1/2}, so every such realization lies in the orthogonal class. A position sine does not leave that class. A CUE form factor is incompatible with this symmetry. A COE form factor is compatible with it and is not proved. The modes with displacement ell=1 have symbol energy 9/160000, and the modes with ell=-1 have the same energy. The momentum sine B_N=(T_N(1,0)-T_N(-1,0))/(2i) is Hermitian and odd under position conjugation, with symbol energy 1/2. For every real epsilon not equal to 0, the kick A_diag+epsilon B_N is not even under position conjugation, and the similarity does not apply. The form factor of that ensemble is not identified with the CUE form factor. Neither statement evaluates E|Tr U^m|^2 for m>=2. The time-one coefficient remains the statement of BGS-TRACE-129. The samples at N=201 and N=203 are not used. The golden-rule scale eta^2 N * 9/160000 is not derived. Lean decides the identity 900/4000^2=9/160000, det(S-I)=-4, and the integer form (1+1)/4=1/2 of the momentum-sine energy. It does not formalize the similarity. Python and C++ check the symmetry of D^{1/2} M D^{1/2} and the oddness of B_N at N=3,5,7,11. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the momentum-row energy, the determinant, and the integer form of the momentum-sine energy. The similarity is not formalized. Python and C++ check it at N=3, 5, 7 and 11.",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
    ],

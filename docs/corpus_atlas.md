@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**352 maintained proof notes; 10 topic views; 215 core claim IDs.**
+**353 maintained proof notes; 10 topic views; 216 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
 | open | 5 |
-| proved | 189 |
+| proved | 190 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 153 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 154 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -183,6 +183,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Bessel form of the scalar-return orbit sum](../mathematics/fixed-map/scalar_return_bessel.md) | `BGS-TRACE-129` (proved) |
 | [Scale-normalized positive-quantization bound for the unchanged BGS kick](../mathematics/fixed-map/scaled_weyl_overlap.md) | `BGS-FM-033` (conditional) |
 | [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/fixed-map/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
+| [Symmetry class of the sixteen-phase ensemble](../mathematics/fixed-map/sixteen_phase_symmetry.md) | `BGS-TRACE-130` (proved) |
 | [Distance to the unperturbed spectral orbit: proved global bounds](../mathematics/fixed-map/spectral_orbit_distance.md) | `BGS-TRACE-110` (proved) |
 | [Square-free products of at least three primes](../mathematics/fixed-map/squarefree_product_abel.md) | `BGS-TRACE-123` (proved) |
 | [A once-counted stationary-label residual on the pair normalization](../mathematics/fixed-map/stationary_cyclic_residual.md) | Consult proof and full ledger |

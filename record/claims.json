@@ -5527,6 +5527,32 @@
       "manuscript": [
         "manuscript/unified_sections/scalar_return_bessel.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-130",
+      "title": "Symmetry class of the sixteen-phase ensemble",
+      "source": "mathematics/fixed-map/sixteen_phase_symmetry.md",
+      "dependencies": [
+        "BGS-TRACE-126",
+        "BGS-TRACE-129"
+      ],
+      "boundary": "For every odd N>=3, the position-diagonal part of the sixteen-phase symbol is a real diagonal matrix. For every real eta and every phase vector, exp(i eta A_diag) M_N is similar to the symmetric unitary D^{1/2} M_N D^{1/2}, so every such realization lies in the orthogonal class. A position sine does not leave that class. A CUE form factor is incompatible with this symmetry. A COE form factor is compatible with it and is not proved. The modes with displacement ell=1 have symbol energy 9/160000, and the modes with ell=-1 have the same energy. The momentum sine B_N=(T_N(1,0)-T_N(-1,0))/(2i) is Hermitian and odd under position conjugation, with symbol energy 1/2. For every real epsilon not equal to 0, the kick A_diag+epsilon B_N is not even under position conjugation, and the similarity does not apply. The form factor of that ensemble is not identified with the CUE form factor. Neither statement evaluates E|Tr U^m|^2 for m>=2. The time-one coefficient remains the statement of BGS-TRACE-129. The samples at N=201 and N=203 are not used. The golden-rule scale eta^2 N * 9/160000 is not derived. Lean decides the identity 900/4000^2=9/160000, det(S-I)=-4, and the integer form (1+1)/4=1/2 of the momentum-sine energy. It does not formalize the similarity. Python and C++ check the symmetry of D^{1/2} M D^{1/2} and the oddness of B_N at N=3,5,7,11. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/sixteen-phase-symmetry/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/sixteen_phase_symmetry.py",
+        "computations/cpp/sixteen_phase_symmetry.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/SixteenPhaseSymmetryRational.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/sixteen_phase_symmetry.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."
