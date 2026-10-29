@@ -91,7 +91,7 @@
     "computations/verification/lineC/data/engine_rot_m9.log": "ffaa91462cc11da15542fe03d3257e301bf03f778e52c2cd456a21eef2fa24c6",
     "computations/verification/lineC/data/symbolic_m1_7.log": "241463c780dd1d17e26c27e690cad6ec95e0820dce7e7c80a0b92d46ae042805",
     "computations/verification/lineC/data/symbolic_m8.log": "3790378fb3329f97d4252efdfe1fd34b098015e85b31617cf0a713e1e1fc8623",
-    "mathematics/fixed-map/random_phase_encounter_pairs.md": "c4d5fab88322e69c40c08077a143fda04a0f5f5976ba1ad9eb030fb4b046d14a",
+    "mathematics/fixed-map/random_phase_encounter_pairs.md": "eebcb2765a625f166bd95367838ed6522ac1d21491da507074f3f600608d623a",
     "evidence/executions/20261029/lineC-random-phase/AxiomsLineC.lean": "bfc808865e1fc1211697c4d938e1376456439908b7226666ddbbb6e494228f55",
     "evidence/executions/20261029/lineC-random-phase/README.md": "3e5720ad52e711d35ec9704a7d113d369515a7b5eb6436bbfcd1c9d60feb46e4",
     "evidence/executions/20261029/lineC-random-phase/audit_fractions.log": "1904d84e710056368c5746b58b5f5757de38a5cbef71f8132d3b6dc914e18e7c",
@@ -126,9 +126,9 @@
     "evidence/executions/20261029/lineC-random-phase/verify_exact.log": "ba474f9af3398af5aaee2fb1c5512d48d9406294b8c4527760e47d5952992979",
     "evidence/executions/20261029/lineC-random-phase/verify_thm1.log": "3726037d936d3e0e717608b34d382ab6196f3e0d9020aa96a7aa5f35716b7b3f",
     "computations/verification/lineC/independent_replay/README.md": "b4aeb83d925780fbec17ae5389a9c82b017f8486a34f610dec8a5e3dfc89f61a",
-    "computations/verification/lineC/independent_replay/replay_inrepo.py": "9fe9a980009f53c9923391d3da3441b9145c2546edf92d1fba34e5650859caf5"
+    "computations/verification/lineC/independent_replay/replay_inrepo.py": "5ce72ef3c5d0afddbe18880622af383cb42a67918c22fed873ee2989803fc53f"
   },
-  "nonclaim": "Does not prove BGS-TRACE-005 or BGS-BGS-001; does not cover the fixed kick, the 16-mode ensemble or band-limited ensembles; no fixed-tau statement; the tau^2 coefficient was derived diagrammatically by Gnutzmann-Seif 2004 for this ensemble.; the m=1,2,3 values are BGS-TRACE-127 and are not re-claimed",
+  "nonclaim": "Does not prove BGS-TRACE-005 or BGS-BGS-001; does not cover the fixed kick, the 16-mode ensemble or band-limited ensembles; no fixed-tau statement; the tau^2 coefficient was derived diagrammatically by Gnutzmann-Seif 2004 for this ensemble; the m=1,2,3 values are BGS-TRACE-127 and are not re-claimed",
   "id_renumbering": {
     "packet": [
       "BGS-TRACE-138",
@@ -166,7 +166,7 @@
     "computations/verification/lineC/independent_replay/sym.py": "a9559ed2da97bef02382124ad149e37236eb1e0ce6deb7bed324d775ea7672bb",
     "computations/verification/lineC/independent_replay/REPORT.md": "1d706c924145080f08b3e109c8b3e3fb702ca1acc106724f23c29644b074ee64",
     "formalization/Bgs/LineCEncounter.lean": "dd2f4e4197bf3fe7c3903e3504f602c9403824b2199507b5c6b0e31840f77c4d",
-    "mathematics/fixed-map/random_phase_encounter_pairs.md": "c4d5fab88322e69c40c08077a143fda04a0f5f5976ba1ad9eb030fb4b046d14a",
+    "mathematics/fixed-map/random_phase_encounter_pairs.md": "eebcb2765a625f166bd95367838ed6522ac1d21491da507074f3f600608d623a",
     "computations/verification/lineC/independent_replay/README.md": "b4aeb83d925780fbec17ae5389a9c82b017f8486a34f610dec8a5e3dfc89f61a",
     "computations/verification/lineC/independent_replay/brute.cpp": "176ae8feec83ec30045e4d0ef7754fbb6c26776ac37619bffa592600296a9d6d",
     "computations/verification/lineC/independent_replay/brute_exact.py": "d6e79420544aa9e205754cd59b51f8554e0b2e2dd6b92086caea1f891cf3df14",
@@ -175,7 +175,7 @@
     "computations/verification/lineC/independent_replay/fit.py": "65affcd73213a14b73a0d3d5b8df7b149538d56d622e5ae0521b765faa6f285c",
     "computations/verification/lineC/independent_replay/literal_float.py": "ee0cea8b38b936ddbf7d99907945339c846500d48af78146384001de784ff747",
     "computations/verification/lineC/independent_replay/prop2_composite.py": "33bed2ab657873028fe92da3ff121bedc06aa6e22be41b33c1de6428fc4f7ac6",
-    "computations/verification/lineC/independent_replay/replay_inrepo.py": "9fe9a980009f53c9923391d3da3441b9145c2546edf92d1fba34e5650859caf5",
+    "computations/verification/lineC/independent_replay/replay_inrepo.py": "5ce72ef3c5d0afddbe18880622af383cb42a67918c22fed873ee2989803fc53f",
     "computations/verification/lineC/independent_replay/run_sym.py": "ef45179ac027a2e1eb16bd094948924e47fbe940ceb2ee40d7f67bb81d4a8e24",
     "computations/verification/lineC/independent_replay/square_class.py": "fbb40819c8b1484036f3ef60142e228d86d68417e3f397940e6a1d623d7f5775",
     "computations/verification/lineC/independent_replay/validity.py": "9d498a043b7e7ce0cce2fc92a523abb35ee539d68b3a34cda2329ee8abf7375f",
@@ -210,8 +210,6 @@
     "evidence/executions/20261029/lineC-random-phase/independent_replay/sym_m9_k18.pkl": "00259f70ccbe4560d9a6f35362415a7400b0feff0a427e73a443f1f7146be5ec",
     "evidence/executions/20261029/lineC-random-phase/independent_replay/thm1_check.log": "de369b196b55db7a909f258bcf2509c7c99572e4391ef526fcc7121a37811691",
     "evidence/executions/20261029/lineC-random-phase/independent_replay/validity.log": "f5707ec463693e0265e2376befdc27eb8fdef264cc6c7f985ccfa8f77d18fc38",
-    "evidence/executions/20261029/lineC-random-phase/README.md": "3e5720ad52e711d35ec9704a7d113d369515a7b5eb6436bbfcd1c9d60feb46e4",
-    "computations/verification/lineC/independent_replay/__pycache__/sym.cpython-312.pyc": "9244c941e9b1e9659b4a01e01b65d9ccc61a6901221b5219ceb084d4bd7b1bf5",
-    "computations/verification/lineC/independent_replay/engine": "5c5bdffa4ca157e7cd0b57a4a157610f8c7e7d895b7d43c9af1ab1413eec31ea"
+    "evidence/executions/20261029/lineC-random-phase/README.md": "3e5720ad52e711d35ec9704a7d113d369515a7b5eb6436bbfcd1c9d60feb46e4"
   }
 }

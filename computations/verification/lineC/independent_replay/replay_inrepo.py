@@ -41,6 +41,7 @@ srcs = {
     12: "engine_m12_def2.log",
 }
 ms = [int(a) for a in sys.argv[1:]] or list(range(3, 13))
+failed = False
 for m in ms:
     k2 = 2 * m if m <= 10 else 5
     t0 = time.time()
@@ -58,7 +59,12 @@ for m in ms:
             ok = False
             print("DIFF", m, p)
             break
+    if not same_pkl or not ok:
+        failed = True
     print(
         f"m={m}: fresh replay == deposited pkl: {same_pkl}; == packet {srcs[m]} at {len(primes)} primes in [101,1200] ({'through p^-5/2' if kmax2 else 'all orders'}): {ok}; {dt:.1f}s",
         flush=True,
     )
+
+if failed:
+    sys.exit(1)
