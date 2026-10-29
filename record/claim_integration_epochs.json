@@ -748,7 +748,7 @@
       "id": "BGS-TRACE-132",
       "state": "proved",
       "source": "mathematics/fixed-map/hyperbolic_short_time_limit.md",
-      "disposition": "29 October 2026: fixed-time limits. Haar diagonal phases tend to 2m for each m>=3, with error m!(1+m(m-1))/N. Theta' = D E K_0 reverses D M for every hyperbolic S. A finite cosine with eta=o(N^{-2/3}) tends to 1 along odd N coprime to beta(2-u_m), and not at the model dimensions 35, 77, 91 and 707 at time 3. Sending eta to infinity first, with frequencies 1 through m present, recovers 2m. Row inversion tends to m. A momentum sine is not identified. A same-day referee correction restricted the limit 1 away from general N. Does not close TRACE-005 or BGS-001."
+      "disposition": "29 October 2026: fixed-time limits. Haar diagonal phases tend to 2m for each m>=3, with error m!(1+m(m-1))/N. Theta' = D E K_0 reverses D M for every hyperbolic S. A finite cosine with eta=o(N^{-2/3}) tends to 1 along odd N coprime to beta(2-u_m); along N divisible by 7 (e.g. 35, 77, 91, 707) the time-3 kernel has order at least 49, so the limit 1 fails when gcd(N, beta(2-u_m)) > 1. Sending eta to infinity first, with frequencies 1 through m present, recovers 2m. Row inversion tends to m. A momentum sine is not identified. A same-day referee correction restricted the limit 1 away from general N. Does not close TRACE-005 or BGS-001."
     }
   ],
   "invariants": [

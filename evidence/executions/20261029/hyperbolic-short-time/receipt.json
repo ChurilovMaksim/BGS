@@ -2,7 +2,7 @@
   "schema": "bgs-hyperbolic-short-time-v1",
   "claim": "BGS-TRACE-132",
   "haar_limit_m_at_least_3": "2m",
-  "perturbative_limit": "1, when eta = o(p^{-2/3})",
+  "perturbative_limit": "1, when eta = o(p^{-2/3}) along odd N with gcd(N, beta(2-u_m)) = 1",
   "inversion_limit": "m",
   "inequality_rows": 48,
   "p3_time3": "3.444444444444",
