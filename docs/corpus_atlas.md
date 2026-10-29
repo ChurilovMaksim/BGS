@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**346 maintained proof notes; 10 topic views; 210 core claim IDs.**
+**349 maintained proof notes; 10 topic views; 212 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
 | open | 5 |
-| proved | 184 |
+| proved | 186 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 147 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 150 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -131,10 +131,12 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Exact microscopic noise defect and barriers to deterministic transfer](../mathematics/fixed-map/microscopic_noise_removal.md) | `BGS-FLOW-015` (proved) |
 | [Ordered-diagonal interfaces for several and mismatched cycles](../mathematics/fixed-map/mixed_ordered_diagonal.md) | Consult proof and full ledger |
 | [Pressure growth of nonlinear brackets in the fixed frozen model](../mathematics/fixed-map/nonlinear_bracket_pressure.md) | `BGS-FM-006` (proved) |
+| [Every odd modulus lies above \(3/4\) or below \(5/7\)](../mathematics/fixed-map/odd_modulus_abel.md) | `BGS-TRACE-124` (proved) |
 | [Odd-depth newest-sector first-order splitting](../mathematics/fixed-map/odd_newest_sector_first_jet.md) | Consult proof and full ledger |
 | [Second-order splitting of the deepest odd-depth core](../mathematics/fixed-map/odd_oldform_second_jet.md) | Consult proof and full ledger |
 | [Combining the odd newest sector and residual-125 core](../mathematics/fixed-map/odd_sector_count_combination.md) | Consult proof and full ledger |
 | [Off-diagonal digit alphabets: an exact parity classification](../mathematics/fixed-map/offdiagonal_digit_fup.md) | `BGS-FUP-001` (proved) |
+| [Strategy note: the signed off-diagonal sum](../mathematics/fixed-map/offdiagonal_strategy.md) | Consult proof and full ledger |
 | [The complete oldform tower and its zero first-order blocks](../mathematics/fixed-map/oldform_tower_compression.md) | Consult proof and full ledger |
 | [Strict one-step contraction of every nonzero actual charge block](../mathematics/fixed-map/onestep_charge_gap.md) | Consult proof and full ledger |
 | [Orbit-orthogonal kick at the Pell dimension \(u_{203}\)](../mathematics/fixed-map/orbit_orthogonal_kick_spike.md) | `BGS-TRACE-118` (proved) |
@@ -187,6 +189,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Uniform bounded cat eigenspaces on N=7*5^e](../mathematics/fixed-map/uniform_cat_multiplicity.md) | Consult proof and full ledger |
 | [Uniform massive covariance and formal connected coefficients](../mathematics/fixed-map/uniform_cluster_lemma.md) | Consult proof and full ledger |
 | [Actual kick simplicity for N=7*5^e](../mathematics/fixed-map/uniform_five_cluster_simplicity.md) | `BGS-FM-025` (proved) |
+| [Uniform Pell-orbit overlap of the fixed symbol](../mathematics/fixed-map/uniform_orbit_overlap.md) | `BGS-TRACE-125` (proved) |
 | [One-step squared-trace transcendence in every odd dimension except seven](../mathematics/fixed-map/uniform_trace_square_transcendence.md) | Consult proof and full ledger |
 | [Stability-weighted periodic equidistribution for the actual frozen map](../mathematics/fixed-map/weighted_periodic_equidistribution.md) | Consult proof and full ledger |
 | [BGS-TRACE-027: weighted phase coherence and slow-window Ward covariance](../mathematics/fixed-map/weighted_phase_coherence_covariance.md) | `BGS-TRACE-027` (proved) |

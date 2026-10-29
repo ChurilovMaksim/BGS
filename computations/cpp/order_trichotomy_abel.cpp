@@ -1,7 +1,8 @@
 // Independent integer certificate for BGS-TRACE-121.
 // Recomputes the exponential bounds, the cleared comparisons, the 10^25
 // window, the Pell count through u_207, the order witnesses, a kernel
-// sample, and the trichotomy through modulus 500.
+// sample, the trichotomy through modulus 500, and the half-order
+// congruences through 10^6.
 // A pass does not prove BGS-TRACE-005.
 
 #include <cstdint>
@@ -400,6 +401,64 @@ int closed_kernel(int p, int k, int delta, int t, int m) {
     return value;
 }
 
+int order_of_lambda(int p, int eps) {
+    int modulus = eps == 1 ? (p - 1) / 2 : p + 1;
+    int t = modulus;
+    int n = modulus;
+    for (int d = 2; d * d <= n;) {
+        if (n % d == 0) {
+            while (t % d == 0) {
+                auto [u, v] = lam_pow(t / d, static_cast<std::uint64_t>(p));
+                if (u == 1 && v == 0) t /= d;
+                else break;
+            }
+            while (n % d == 0) n /= d;
+        }
+        d += d == 2 ? 1 : 2;
+    }
+    if (n > 1) {
+        while (t % n == 0) {
+            auto [u, v] = lam_pow(t / n, static_cast<std::uint64_t>(p));
+            if (u == 1 && v == 0) t /= n;
+            else break;
+        }
+    }
+    return t;
+}
+
+void check_half_order() {
+    constexpr int limit = 1000000;
+    std::vector<char> prime_s(static_cast<std::size_t>(limit) + 1, 1);
+    prime_s[0] = prime_s[1] = 0;
+    for (int p = 2; p * p <= limit; ++p) {
+        if (!prime_s[static_cast<std::size_t>(p)]) continue;
+        for (int q = p * p; q <= limit; q += p) prime_s[static_cast<std::size_t>(q)] = 0;
+    }
+    for (int p = 3; p <= limit; p += 2) {
+        if (!prime_s[static_cast<std::size_t>(p)]) continue;
+        int eps = (p % 8 == 1 || p % 8 == 7) ? 1 : -1;
+        if (eps == 1) {
+            auto [u, v] = lam_pow((p - 1) / 2, static_cast<std::uint64_t>(p));
+            if (u != 1 || v != 0) fail("split congruence");
+        } else {
+            auto [u, v] = lam_pow((p + 1) / 2, static_cast<std::uint64_t>(p));
+            if (u + 1 != static_cast<std::uint64_t>(p) || v != 0) fail("inert congruence");
+        }
+        int t = order_of_lambda(p, eps);
+        if (p <= 500 && t != matrix_order(p)) fail("order agreement");
+        if (2 * t == p + 1) fail("half order");
+        if (eps == 1) {
+            if (((p - 1) / 2) % t != 0 || t == p - 1) fail("split scan");
+        } else if (((p + 1) / t) % 2 == 0 || t % 2 != 0) {
+            fail("inert scan");
+        }
+        if (p >= 5 && 3 * t <= p - eps) {
+            int order_3q = (t % 4 == 0) ? t : (t % 2 == 0 ? 2 * t : 4 * t);
+            if (12LL * order_3q > 15LL * p) fail("three short");
+        }
+    }
+}
+
 void check_primes() {
     bool saw_seven = false;
     for (int p = 3; p <= 500; ++p) {
@@ -408,17 +467,25 @@ void check_primes() {
         int eps = (p % 8 == 1 || p % 8 == 7) ? 1 : -1;
         int modulus = p - eps;
         if (modulus % t != 0) fail("div");
+        if (2 * t == p + 1) fail("vacuous half");
+        if (eps == 1) {
+            if (((p - 1) / 2) % t != 0 || t == p - 1) fail("split divisor");
+        } else if (((p + 1) / t) % 2 == 0) {
+            fail("inert cofactor");
+        }
         bool half = eps == 1 && 2 * t == p - 1;
-        bool long_order = t == modulus || (eps == -1 && 2 * t == p + 1);
+        bool long_order = t == modulus;
         bool short_order = 3 * t <= modulus;
         int classes = static_cast<int>(half) + static_cast<int>(long_order) + static_cast<int>(short_order);
         if (classes != 1) fail("class");
+        if (long_order && eps != -1) fail("long split");
         if (short_order && p >= 5 && 12 * t > 5 * p) fail("short ineq");
-        if (long_order && 2 * t < p + 1) fail("long ineq");
+        if (long_order && t != p + 1) fail("long ineq");
         if (half && p == 7) saw_seven = true;
         if (half && p < 17 && p != 7) fail("small half");
     }
     if (!saw_seven) fail("missing 7");
+    check_half_order();
 
     for (int p = 3; p <= 80; ++p) {
         if (!prime(p)) continue;

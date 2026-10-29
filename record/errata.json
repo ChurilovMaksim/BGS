@@ -1,6 +1,6 @@
 {
   "schema": "bgs-errata-v1",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "status_authority": "record/retractions.md",
   "entries": [
     {
@@ -440,6 +440,27 @@
       "title": "Pure-loss discrimination note: displayed identity for r^2 omitted the term -4u^2 e",
       "disposition": "corrected: r^2=1-2uh+u^2(1-z+e)^2-4u^2 e (machine-checked in the Mathlib layer, module PureLoss, theorems pl_r2_eq and pl_r2_source_formula_false; counterexample u=1/16, eta=1/2, n=1 gives 1020/1024, not 1028/1024)",
       "downstream": "Theorem and all displayed bounds unchanged; they follow from the corrected identity (pl_r2_near, pl_delta_bounds, pl_L_bounds). Python/C++ verifiers compute r^2 directly and were unaffected. No claim state changed.",
+      "authority": "record/retractions.md"
+    },
+    {
+      "id": "ERR-061",
+      "title": "Cat-map trichotomy listed the empty order t=(p+1)/2 as long",
+      "disposition": "corrected: a split order divides (p-1)/2, and an inert cofactor (p+1)/t is odd, so the long class is the inert full order t=p+1. The same divisibility is already in BGS-TRACE-009, Section 1. Checked for every odd prime through 10^6.",
+      "downstream": "BGS-TRACE-121 states the half-order lemma. The Abel comparisons and the claim state are unchanged. BGS-TRACE-122 and BGS-TRACE-124 drop the windows that required the empty order.",
+      "authority": "record/retractions.md"
+    },
+    {
+      "id": "ERR-062",
+      "title": "Semiprime kick corollary named two empty families",
+      "disposition": "corrected: no split prime has order q-1, and every product of 3 with a short prime q>=5 satisfies 12 lcm(4,t(q)) <= 15q. The remaining kick window in BGS-TRACE-122 is N=21.",
+      "downstream": "The pure semiprime dichotomy is unchanged. The conditional non-short family is not a kick window in BGS-TRACE-124.",
+      "authority": "record/retractions.md"
+    },
+    {
+      "id": "ERR-063",
+      "title": "Square-free kick window N=15r admitted r=3",
+      "disposition": "corrected: r is an odd prime at least 7. The modulus 45=3^2*5 is not square-free; BGS-TRACE-124 places it by 8*12 <= 3*45. A prime square is outside BGS-TRACE-123 and is placed by BGS-TRACE-124. The modulus 315 is short because its radical 105 is short.",
+      "downstream": "The square-free theorem is unchanged. No bound is left open at 315.",
       "authority": "record/retractions.md"
     }
   ]

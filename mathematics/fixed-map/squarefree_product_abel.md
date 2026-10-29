@@ -29,9 +29,9 @@ and the distance from this value to \((1-e^{-2})/4\) is greater than \(1/2\).
 
 - If \(N\) is square-free, has at least four distinct prime factors, and \(N\le10^{39}\), then \(L_N(U_N;1)>3/4\).
 - If \(N\) is a product of three distinct odd primes, \(15\) does not divide \(N\), and \(N\le10^{39}\), then \(L_N(U_N;1)>3/4\).
-- If \(N=15r\) with \(r\) an odd prime other than \(5\), and \(N\le10^{26}\), then \(L_N(U_N;1)>3/4\).
+- If \(N=15r\) with \(r\) an odd prime and \(r\ge7\), and \(N\le10^{26}\), then \(L_N(U_N;1)>3/4\). The conditions \(r=3\) and \(r=5\) make \(15r\) divisible by a square, so they are outside this theorem. The modulus \(45=3^2\cdot5\) is placed by `BGS-TRACE-124`.
 
-**Boundary.** A prime square is not covered. The modulus \(315=3^2\cdot5\cdot7\) has three distinct prime factors and is not square-free; no bound is claimed there, nor for any other modulus divisible by \(p^2\). Products of two distinct primes remain the dichotomy of `BGS-TRACE-122`. No density of short, long, or split-half primes is proved. For \(N=15r>10^{26}\) the pure sum is above \(3/4\), and the kick is not claimed. The kick at \(u_{207}\) stays outside both windows. Every value above \(3/4\) lies at distance greater than \(1/2\) from the CUE value; that is the side away from \((1-e^{-2})/4\), not an identification of the limit. The signed off-diagonal sum, every \(k>2\), `BGS-TRACE-005` and `BGS-BGS-001` stay open.
+**Boundary.** A prime square is not treated in this note. The modulus \(315=3^2\cdot5\cdot7\) is not square-free. `BGS-TRACE-124` places every odd modulus, and \(315\) is short because its radical \(105\) is short. Products of two distinct primes remain the dichotomy of `BGS-TRACE-122`. No density of short, long, or split-half primes is proved. For \(N=15r>10^{26}\) the pure sum is above \(3/4\), and the kick is not claimed. The kick at \(u_{207}\) stays outside both windows. Every value above \(3/4\) lies at distance greater than \(1/2\) from the CUE value; that is the side away from \((1-e^{-2})/4\), not an identification of the limit. The signed off-diagonal sum, every \(k>2\), `BGS-TRACE-005` and `BGS-BGS-001` stay open.
 
 ## 2. Orders divide even integers
 
@@ -253,7 +253,7 @@ Every product of three distinct odd primes not divisible by \(15\) therefore sat
 
 ### Products of fifteen
 
-Let \(N=15r\) with \(r\ge7\) prime and \(r\neq5\). The same estimate as in the seven case gives \(t(N)=\operatorname{lcm}(12,t(r))\le6(r+1)\), so
+Let \(N=15r\) with \(r\ge7\) prime. Then \(r\neq3\) and \(r\neq5\), so \(N\) is square-free. The same estimate as in the seven case gives \(t(N)=\operatorname{lcm}(12,t(r))\le6(r+1)\), so
 
 \[
 \frac{2t(N)}{N}\le\frac{4(r+1)}{5r}.

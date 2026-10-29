@@ -383,7 +383,8 @@ std::string kind_of(int p, int t) {
     int eps = legendre(p);
     int modulus = p - eps;
     if (3 * t <= modulus) return "short";
-    if (t == modulus || (eps == -1 && 2 * t == p + 1)) return "long";
+    if (2 * t == p + 1) throw std::runtime_error("vacuous half");
+    if (t == modulus) return "long";
     if (eps == 1 && 2 * t == p - 1) return "half";
     throw std::runtime_error("unclassified");
 }
@@ -607,6 +608,7 @@ void check_sandwich() {
             bool short_order = 12LL * order <= 5LL * modulus;
             bool seven = (p == 7 || q == 7) && !short_order;
             bool three_short = p == 3 && kinds_code[q] == 0 && !short_order;
+            require(!three_short, "vacuous three-short");
             Rat alpha = Rat::make(Big::from_u64(2ULL * order), Big::from_u64(modulus));
             Rat beta = Rat::make(Big::from_u64(2ULL * t), Big::from_u64(modulus));
             Rat gamma = Rat::make(Big::from_u64(2ULL * s), Big::from_u64(modulus));

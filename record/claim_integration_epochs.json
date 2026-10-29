@@ -697,6 +697,18 @@
       "disposition": "29 October 2026: every square-free odd modulus with at least three distinct prime factors has pure Abel value above 3/4. The fixed kick preserves that gap through 10^39 for four or more prime factors and for three prime factors not divisible by 15, and through 10^26 for N=15r. Prime squares, including 315, stay outside the statement. Does not close TRACE-005 or BGS-001."
     },
     {
+      "id": "BGS-TRACE-124",
+      "state": "proved",
+      "source": "mathematics/fixed-map/odd_modulus_abel.md",
+      "disposition": "29 October 2026: every odd modulus has pure Abel value above 3/4 or below 5/7. The modulus 315 is short because its radical 105 is short. The fixed kick preserves the upper gap when 8t<=3N and N<=10^39, through 10^26 on the ratio-preserving families whose pure margin exceeds 13/420, and through 2*10^26 on N=15r. The kick is not claimed for a ceiling tower, for an inert exponent-one partner q>=40, for 15r above 2*10^26, or at u_207. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-125",
+      "state": "proved",
+      "source": "mathematics/fixed-map/uniform_orbit_overlap.md",
+      "disposition": "29 October 2026: uniform Pell-orbit overlap for every odd n>=5 at N=u_n. The symbol overlap vanishes except at lags 1 and n-1, where it equals -7/2000000, and the quadratic trace coefficient is n*1650797/4000000. The index n=5 is a finite scan; every larger odd index is the size, archimedean, and quadratic-form argument. The claim does not assert that Kurlberg-Rudnick degeneracies fail to be eigenvalues of the kicked propagator. Does not close TRACE-005 or BGS-001."
+    },
+    {
       "id": "BGS-TRACE-126",
       "state": "proved",
       "source": "mathematics/fixed-map/interaction_phase_form_factor.md",

@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "24549f279d3954d6ab39c33ba24e78d5f5eb36fc",
+ "source_blob_sha": "d933b02ba51be9db073938b243723e05fc90527c",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -34,6 +34,9 @@
   "BGS-TRACE-121 was appended on 2026-10-29. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
   "BGS-TRACE-122 was appended on 2026-10-29. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
   "BGS-TRACE-123 was appended on 2026-10-29. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
+  "BGS-TRACE-124 was appended on 2026-10-29. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
+  "BGS-TRACE-125 was appended on 2026-10-29. Its Lean file certifies rational inequalities, the mode mass, the lag-1 coefficient, and the scan at N=41 only; the Pell induction, the archimedean embedding, and the quadratic-form descent are pen-and-paper. The analytic comparison was checked by the author and was not given an independent referee.",
+  "On 2026-10-29 the ledger phrase LEAN FORMALIZATION on BGS-TRACE-117 through BGS-TRACE-125 was replaced by LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY). The methods tag lean_formalization is retained because the Lean file is nonempty. It certifies integer comparisons only.",
   "BGS-TRACE-126 was appended on 2026-10-29. Its Lean file certifies the scaled symbol arithmetic only; the trace closure and the phase average were checked by the author and were not given an independent referee.",
   "BGS-TRACE-126 was corrected on 2026-10-29 after a self-red-team review of the unmerged note. Symbol modes congruent to 0 at the primes 3, 5 and 7 lie in the image, so the prime-revival coefficient is -m (sigma - sigma_0(p)) p^2. The remainder bounds include the quartic term inside |P_2|^2. The derivative remainder is the integral form."
  ],
@@ -590,7 +593,7 @@
    ],
    "formalization": [],
    "ledger_status": "PROJECT PROOF + CLASSICAL FIXED-POINT INTEGER REGRESSION (Tr(U_N^m) NOT EVALUATED) + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR CHECK",
-   "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality. Separate independently reviewed one-step companion: |Tr U_N(t)|\u00b2 is transcendental for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1. This does not extend squared-trace transcendence to higher powers on7|N or establish spectral simplicity. Prior all-power nonvanishing theorem and inherited source/review status remain intact. Finite regression scope: classical Weyl fixed points and one rational orbit margin for odd N<106 and m<25 only; the regression does not evaluate Tr(U_N^m). The second verifier spectral_extensions.py replays only finite cluster/pivot cases and the one-step trace-square companion.",
+   "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality. Separate independently reviewed one-step companion: |Tr U_N(t)|² is transcendental for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1. This does not extend squared-trace transcendence to higher powers on7|N or establish spectral simplicity. Prior all-power nonvanishing theorem and inherited source/review status remain intact. Finite regression scope: classical Weyl fixed points and one rational orbit margin for odd N<106 and m<25 only; the regression does not evaluate Tr(U_N^m). The second verifier spectral_extensions.py replays only finite cluster/pivot cases and the one-step trace-square companion.",
    "spof": "single_reviewer_author_check_only",
    "spof_detail": "author check is the only review layer; no independent review",
    "other_weaknesses": [
@@ -920,7 +923,7 @@
    ],
    "formalization": [],
    "ledger_status": "FINITE-N IDENTITY + PROJECT DERIVATION; COMPUTATIONAL CONTROL IS FLOAT64 FINITE-N REGRESSION, NOT EXACT",
-   "boundary": "Any unitary N\u00d7N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows. Computational control scope: double-precision (float64) diagonal clock spectra at N=10, 11, 20, 21 and s=1.3, 2.5 only, with a manually inserted phase 0.21374 for odd N; PASS covers 8 finite cases with no asymptotic claim and does not exercise arbitrary unitaries.",
+   "boundary": "Any unitary N×N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows. Computational control scope: double-precision (float64) diagonal clock spectra at N=10, 11, 20, 21 and s=1.3, 2.5 only, with a manually inserted phase 0.21374 for odd N; PASS covers 8 finite cases with no asymptotic claim and does not exercise arbitrary unitaries.",
    "spof": "NONE",
    "spof_detail": "no single point of failure among the inventoried layers (>=3 distinct non-analytic layers with a receipt path, and no specific ledger-admitted weakness above); this is NOT a claim of full verification, and absence of negative controls is not evidenced either way by claims.json",
    "other_weaknesses": [
@@ -1234,7 +1237,7 @@
    "formalization": [
     "formalization/Bgs/Mathlib/ClockFloor.lean"
    ],
-   "ledger_status": "EXACT + CHECKED COHN\u2013KUMAR THEOREM 1.2",
+   "ledger_status": "EXACT + CHECKED COHN–KUMAR THEOREM 1.2",
    "boundary": "Every finite unitary spectrum and s>0. The bound is attained by the regular N-gon and the CUE benchmark is strictly larger; no uniform excess over the clock floor or frozen-model limit is proved.",
    "spof": "single_evidence_path_no_verifier",
    "spof_detail": "evidence path(s) exist but no verifier script path is listed",
@@ -1303,7 +1306,7 @@
     "computations/verification/cue_singular_energy.py"
    ],
    "formalization": [],
-   "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS\u2013BOURGADE THEOREM 1.1 + AUTHOR CHECK",
+   "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR CHECK",
    "boundary": "Haar U(N) only: stable limit for inverse chord powers 3/2<p<3 and exact p=2 mean. Weak local limits do not control unregularized pair energy. No transfer to the maintained deterministic map, and novelty/priority is unestablished.",
    "spof": "single_reviewer_author_check_only",
    "spof_detail": "author check is the only review layer; no independent review",
@@ -1494,7 +1497,7 @@
    ],
    "formalization": [],
    "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS",
-   "boundary": "Same initial matrix; bounded first two traces for microscopic operator coupling at t log N -> 0; weak local comparison requires t(1+|p1|\u00b2+|p2|\u00b2) -> 0. No deterministic noise removal, arbitrary-start Dyson relaxation, or unbounded local moments.",
+   "boundary": "Same initial matrix; bounded first two traces for microscopic operator coupling at t log N -> 0; weak local comparison requires t(1+|p1|²+|p2|²) -> 0. No deterministic noise removal, arbitrary-start Dyson relaxation, or unbounded local moments.",
    "spof": "single_reviewer_author_check_only",
    "spof_detail": "author check is the only review layer; no independent review",
    "other_weaknesses": [
@@ -2774,7 +2777,7 @@
     "formalization/Bgs/Mathlib/ClockCharacter.lean"
    ],
    "ledger_status": "PROJECT PROOF + INTERNAL INDEPENDENT AUDIT + EXACT FINITE CONTROLS",
-   "boundary": "Same-ensemble all-k induced Hilbert\u2013Schmidt channel error at most 1/N and exact two-copy error 1/(N\u00b2\u22121), despite deterministic clock spacings. No diamond-norm approximation, frozen-map Egorov property, deterministic BGS result, global priority or formal certification.",
+   "boundary": "Same-ensemble all-k induced Hilbert–Schmidt channel error at most 1/N and exact two-copy error 1/(N²−1), despite deterministic clock spacings. No diamond-norm approximation, frozen-map Egorov property, deterministic BGS result, global priority or formal certification.",
    "spof": "NONE",
    "spof_detail": "no single point of failure among the inventoried layers (>=3 distinct non-analytic layers with a receipt path, and no specific ledger-admitted weakness above); this is NOT a claim of full verification, and absence of negative controls is not evidenced either way by claims.json",
    "other_weaknesses": [
@@ -3198,7 +3201,7 @@
    ],
    "formalization": [],
    "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEWS; FULL QUANTUM WEIGHTS OPEN",
-   "boundary": "Literal tau=10^-80, actual stationary action, one unit-winding displacement. Infinite bounded correction, beta=29/5 localization and Holder phase map; K_(m,N)=muhat(-N)+O(N beta^(-m/2)). Actual q-fibre monotonicity and mu(I)<=(28|I|)^gamma, gamma=log(3+2sqrt2)/log7; sum_(n=1)^M |muhat(n)|\u00b2<=112 M^(1-gamma). Only Frostman Sections1-3 independently accepted. This is dimension/Fourier-index averaging, not pointwise decay or time averaging at fixed N. No complete quantum amplitude, other displacement/torsion control, signed hierarchy or BGS conclusion.",
+   "boundary": "Literal tau=10^-80, actual stationary action, one unit-winding displacement. Infinite bounded correction, beta=29/5 localization and Holder phase map; K_(m,N)=muhat(-N)+O(N beta^(-m/2)). Actual q-fibre monotonicity and mu(I)<=(28|I|)^gamma, gamma=log(3+2sqrt2)/log7; sum_(n=1)^M |muhat(n)|²<=112 M^(1-gamma). Only Frostman Sections1-3 independently accepted. This is dimension/Fourier-index averaging, not pointwise decay or time averaging at fixed N. No complete quantum amplitude, other displacement/torsion control, signed hierarchy or BGS conclusion.",
    "spof": "no_finite_or_exact_control_layer",
    "spof_detail": "no finite, exact or certificate control layer is inventoried",
    "other_weaknesses": [
@@ -3863,7 +3866,7 @@
    ],
    "formalization": [],
    "ledger_status": "PROJECT PROOF + FRESH INDEPENDENT FOCUSED REVIEW + NEW INDEPENDENT EXACT/FINITE CONTROLS; ORIGINAL ARCHIVE REPLAY UNAVAILABLE",
-   "boundary": "Finite-unitary covariance retains complete occupation sums and nontrivial Green\u2013Kubo H. Actual convergence only on ceil(T_N/2)<=m<=T_N, no all-fixed-m or full-prefix Ward convergence, no effective startup or microscopic window. Unconjugated B-kernel bound removes only the degree-two exception for the stated mixed-moment family. Absorbed Ward (13), balanced law, literal signed masked T16, TRACE-005, higher factorial identification and BGS remain OPEN. No formal certificate or external referee audit. Original ZIP 403; archived checker/receipts/source-pins unavailable and unreplayed.",
+   "boundary": "Finite-unitary covariance retains complete occupation sums and nontrivial Green–Kubo H. Actual convergence only on ceil(T_N/2)<=m<=T_N, no all-fixed-m or full-prefix Ward convergence, no effective startup or microscopic window. Unconjugated B-kernel bound removes only the degree-two exception for the stated mixed-moment family. Absorbed Ward (13), balanced law, literal signed masked T16, TRACE-005, higher factorial identification and BGS remain OPEN. No formal certificate or external referee audit. Original ZIP 403; archived checker/receipts/source-pins unavailable and unreplayed.",
    "spof": "NONE",
    "spof_detail": "no single point of failure among the inventoried layers (>=3 distinct non-analytic layers with a receipt path, and no specific ledger-admitted weakness above); this is NOT a claim of full verification, and absence of negative controls is not evidenced either way by claims.json",
    "other_weaknesses": []
@@ -4879,7 +4882,7 @@
     "formalization/Bgs/Mathlib/TwoStepVariance.lean"
    ],
    "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; FINITE CONTROLS SEPARATE",
-   "boundary": "Any unitary S with max |Sij|\u00b2<=1/4; distinct frozen endpoint labels. Strong deterministic sum over surviving ports for arbitrary circle phases implies raw conditional second moment <=2600 delta\u00b2[(P\u00b2)ij+(P\u00b3)ij]/u under conditionally uniform selection among all u ports, with endpoint increments zero. No sustained concentration, early entry survival, deterministic microscopic law, BGS or priority claim.",
+   "boundary": "Any unitary S with max |Sij|²<=1/4; distinct frozen endpoint labels. Strong deterministic sum over surviving ports for arbitrary circle phases implies raw conditional second moment <=2600 delta²[(P²)ij+(P³)ij]/u under conditionally uniform selection among all u ports, with endpoint increments zero. No sustained concentration, early entry survival, deterministic microscopic law, BGS or priority claim.",
    "spof": "finite_controls_separate_from_proof",
    "spof_detail": "ledger states finite controls are separate/scoped, so they do not certify the analytic chain itself",
    "other_weaknesses": [
@@ -7312,7 +7315,7 @@
   },
   {
    "id": "BGS-FM-037",
-   "title": "Finite torus level sets and branch scales at p=199 (Q = a\u00b2-ab-b\u00b2, cyclic action of order 11)",
+   "title": "Finite torus level sets and branch scales at p=199 (Q = a²-ab-b², cyclic action of order 11)",
    "state": "proved",
    "methods": [
     "exact_identity",
@@ -7340,7 +7343,7 @@
     "formalization/Bgs/TorusScaleLaw.lean"
    ],
    "ledger_status": "EXACT + FINITE-CERTIFICATE",
-   "boundary": "Fixed finite design certificate at p=199 only: Q(a,b)=a\u00b2-ab-b\u00b2 under the cyclic action generated by A^T=[[2,1],[1,1]] of order 11; every nonzero level has 198 nonzero points and 18 cyclic orbits, the zero cone minus the origin has 396 points, the action is free on nonzero levels; a=139 has order 11, inverse 63, half-trace 123, branch scales 123 and 76 with 123\u00b2=76\u00b2=5 (mod 199) and 123*76=-5 (mod 199). Not a general scale or level-set theorem; the analytic Weil intertwining motivation is not formalized here.",
+   "boundary": "Fixed finite design certificate at p=199 only: Q(a,b)=a²-ab-b² under the cyclic action generated by A^T=[[2,1],[1,1]] of order 11; every nonzero level has 198 nonzero points and 18 cyclic orbits, the zero cone minus the origin has 396 points, the action is free on nonzero levels; a=139 has order 11, inverse 63, half-trace 123, branch scales 123 and 76 with 123²=76²=5 (mod 199) and 123*76=-5 (mod 199). Not a general scale or level-set theorem; the analytic Weil intertwining motivation is not formalized here.",
    "spof": "formalization_only_no_verifier_or_evidence",
    "spof_detail": "Lean formalization path(s) only; no evidence or verifier path in the tree",
    "other_weaknesses": []
@@ -7484,7 +7487,7 @@
    "formalization": [
     "formalization/Bgs/KickBlindRational.lean"
    ],
-   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
    "boundary": "Odd dimensions N=u_n for every odd n>=5 in the pure cat-map Abel statistic, and for every odd n with 5<=n<=201 for the fixed kick tau=10^{-80}. On those kicked dimensions L_N(U_N;1)>3/4, so the distance to (1-e^{-2})/4 exceeds 1/2. Any effective bound of that distance by 1/2 for all odd N>=N_0 needs N_0>u_201 (77 decimal digits). The one-term lower bound is at most 3/4 at n=203. Does not prove the N to infinity limit, a gap at every odd N, the off-diagonal sum, or any k>2. Lean certifies the Pell norm at n=201, the uniform rational comparison, and the n=5 endpoint only. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the Pell norm at n=201, the uniform rational comparison, and the n=5 endpoint. The Weyl conjugation, unitarity, and trace comparison are not formalized. Python and C++ recheck the integers and the Fourier majorant.",
@@ -7528,7 +7531,7 @@
    "formalization": [
     "formalization/Bgs/OrbitOrthogonalRational.lean"
    ],
-   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
    "boundary": "Single odd dimension N=u_203 for the fixed kick tau=10^{-80}. At that dimension L_N(U_N;1)>3/4, so the distance to (1-e^{-2})/4 exceeds 1/2. Any effective bound of that distance by 1/2 for all odd N>=N_0 needs N_0>u_203 (78 decimal digits). The third-order remainder and the Hilbert-Schmidt triangle are both silent at n=205, although the pure second-order center still clears 3/4 there. At n=207 the same center satisfies (1-eps_2)^2<3/4, so the disk cannot prove the gap; this is not a proof that L itself drops. The overlap classification used for that center is proved at n=205 and n=207 only. Does not prove the N to infinity limit, a gap at every odd N, the off-diagonal sum, or any k>2. Lean certifies the Pell norm at n=203, the size comparisons, the cleared rational gap, the n=205 sentinel, the half-period sizes, the Hilbert-Schmidt triangle, the n=205 disk room, and the n=207 disk ceiling. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the Pell norm at n=203, the size comparisons, the cleared rational gap, the n=205 sentinel, the half-period sizes, the Hilbert-Schmidt triangle, the n=205 disk room, and the n=207 disk ceiling. The Weyl trace, the resonance classification, and the Taylor remainder are not formalized. Python and C++ recheck the integers, the Fourier mass, and the direct lag scans at n=203, 205, and 207.",
@@ -7572,7 +7575,7 @@
    "formalization": [
     "formalization/Bgs/PositiveTimeRational.lean"
    ],
-   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
    "boundary": "Single odd dimension N=u_205 for the fixed kick tau=10^{-80}. At that dimension L_N(U_N;1)>3/4, so the distance to (1-e^{-2})/4 exceeds 1/2. Any effective bound of that distance by 1/2 for all odd N>=N_0 needs N_0>u_205 (79 decimal digits). The argument is a positive-time diagram expansion with trace orthogonality; it does not revive the third-order operator-norm remainder or the Hilbert-Schmidt triangle, both of which stay silent at n=205. At n=207 the pure second-order center satisfies (1-eps_2)^2<3/4, so no disk N(1-eps_2-E) with E>=0 proves the gap; this is not a proof that L itself drops. Does not prove the N to infinity limit, a gap at every odd N, the off-diagonal sum, or any k>2. Lean certifies the norm block at diameter 186, the gap comparison 4860*beta^5<1, the scale x<7/2, the window activities, the degree tail, the coarse chain, and the cleared Abel comparison at room 1/12. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the norm block at diameter 186, the gap comparison 4860*beta^5<1, the scale x<7/2, the window activities through degree 11, the degree tail, the coarse chain, and the cleared Abel comparison at room 1/12. The Weyl product, the arc lift, and the diagram expansion are not formalized. Python and C++ recheck the integers, the 32-mode bound, and the same comparisons.",
@@ -7616,7 +7619,7 @@
    "formalization": [
     "formalization/Bgs/OrderLadderRational.lean"
    ],
-   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
    "boundary": "For every odd N>=3, if the order t of C modulo N satisfies 12t<=5N, then L_N(M_N;1)>3/4 and the distance to (1-e^{-2})/4 exceeds 1/2. If p is an odd prime and 2t>=p+1, with the direct evaluation t(3)=4, then L_p(M_p;1)<5/7, so that distance is less than 1/2. The fixed kick tau=10^{-80} preserves the short-order gap for every such N<=10^{39} and the long-order ceiling for every such prime p<=10^{26}. At N=35, which is not a Pell number, the order is 6 and the first return alone is below 3/4. The prime p=7 meets neither hypothesis; its return subsum is below 3/4 and the full sum is not decided. Does not decide the kicked map at u_207, any order strictly between 5N/12 and (N+1)/2, the N to infinity limit, the off-diagonal sum, or any k>2. Lean certifies the rational comparisons and the two digit windows only. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the rational exponential comparisons and the two digit windows. The Weyl trace square, the divisibility criterion, and the kick telescoping are not formalized. Python and C++ recheck the integers, the order agreement through modulus 300, and the 32-mode majorant. Python alone repeats the cyclotomic trace at p=5 and p=7.",
@@ -7660,8 +7663,8 @@
    "formalization": [
     "formalization/Bgs/OrderTrichotomyRational.lean"
    ],
-   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
-   "boundary": "Every odd prime order of C divides p-epsilon, with epsilon = 1 precisely when p is 1 or 7 mod 8. The order is short, long, or split-half. For p>=5 a short order gives L(M)>3/4. A long order gives L(M)<5/7. The only split-half prime below 17 is p=7, where L(M)>3/4; every larger split-half prime has L(M)<41/60. For every power p^k with k>=2 the same alternatives are decided by the lifting depth delta: depth at least 2, and every short prime, put the power above 3/4; depth 1 on a long prime puts it below 5/7; every power of 7 is above 3/4; every depth-1 power of a split-half prime p>=17 is below 5/7. The fixed kick preserves the prime comparisons through 10^26, the depth-1 long and seven-power comparisons through 10^26, and the large split-half powers through 10^25. A short prime p>=11 has 8t<=3p, so TRACE-120 carries the kicked gap up to 10^39. For every odd n>=5, t(u_n) divides n, so the pure map at u_n, including u_207, is above 3/4; the kick at u_207 stays outside every window. At p=13 and p=31 the prime is on the CUE side of distance 1/2 and the square is above 3/4. No density is proved. Moduli with two distinct prime factors, the off-diagonal sum, the limit, and any k>2 stay open. Lean certifies the rational comparisons and the 10^25 window only. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "Every odd prime order of C divides p-epsilon, with epsilon = 1 precisely when p is 1 or 7 mod 8. The order is short, long, or split-half. The long class is the inert full order t=p+1. The clause t=(p+1)/2 does not occur, and a split prime satisfies t dividing (p-1)/2, so t=p-1 does not occur. For p>=5 a short order gives L(M)>3/4. A long order gives L(M)<5/7. The only split-half prime below 17 is p=7, where L(M)>3/4; every larger split-half prime has L(M)<41/60. For every power p^k with k>=2 the same alternatives are decided by the lifting depth delta: depth at least 2, and every short prime, put the power above 3/4; depth 1 on a long prime puts it below 5/7; every power of 7 is above 3/4; every depth-1 power of a split-half prime p>=17 is below 5/7. The fixed kick preserves the prime comparisons through 10^26, the depth-1 long and seven-power comparisons through 10^26, and the large split-half powers through 10^25. A short prime p>=11 has 8t<=3p, so TRACE-120 carries the kicked gap up to 10^39. For every odd n>=5, t(u_n) divides n, so the pure map at u_n, including u_207, is above 3/4; the kick at u_207 stays outside every window. At p=13 and p=31 the prime is on the CUE side of distance 1/2 and the square is above 3/4. No density is proved. Moduli with two distinct prime factors, the off-diagonal sum, the limit, and any k>2 stay open. Lean certifies the integer comparisons and the 10^25 window only. It does not formalize the splitting law, the half-order lemma, or the kick. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the rational exponential comparisons and the 10^25 window. The splitting law, the kernel count, and the kick telescoping are not formalized. Python and C++ recheck the integers, the witnesses at 7, 13 and 31, the Pell count through u_207, the order trichotomy through the odd primes at most 500, and the kernel formula for odd primes at most 80.",
    "other_weaknesses": [
@@ -7704,8 +7707,8 @@
    "formalization": [
     "formalization/Bgs/CrtCompositeRational.lean"
    ],
-   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
-   "boundary": "For every odd N, the pure trace square is the product of the prime-power trace squares, and t(N) is the lcm of the prime-power orders. On a square-free modulus the Abel sum is a finite sum of geometric series. For N=pq, a short composite order, a non-short multiple of 7, and a non-short product of 3 with a short prime give L(M)>3/4. Every remaining semiprime has L(M)<5/7. The fixed kick preserves L(U)>3/4 through 10^26 for N=21, for N=7q with q congruent to 1 or 7 mod 8, t(q)=q-1 and 3 not dividing q-1, and for a non-short product of 3 with a short prime of odd order. No such short prime is asserted to exist. The kick is not transferred on the side below 5/7 or on inert full-order multiples of 7. N=195 is not short and no bound is claimed for three or more distinct prime factors. No density is proved. The signed off-diagonal sum, the limit, every k>2, and the kick at u_207 stay open. Lean certifies the positivity integers, the defect endpoint, the two explicit lower bounds, the short-factor corners, and the reduction of the nonsplit tail at primes at least 37 to one degree-eight majorant. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "For every odd N, the pure trace square is the product of the prime-power trace squares, and t(N) is the lcm of the prime-power orders. On a square-free modulus the Abel sum is a finite sum of geometric series. For N=pq, a short composite order and a non-short multiple of 7 give L(M)>3/4. Every product of 3 with a short prime q>=5 is short. Every remaining semiprime has L(M)<5/7. A split prime does not have order q-1, and no prime has order (q+1)/2. The fixed kick preserves L(U)>3/4 through 10^26 for N=21. The split full-order window and the non-short product of 3 with a short prime do not occur. The kick is not transferred on the side below 5/7 or on inert full-order multiples of 7. This note does not bound N=195; the square-free case of three or more primes is TRACE-123, and every odd modulus is TRACE-124. No density is proved. The signed off-diagonal sum, the limit, every k>2, and the kick at u_207 stay open. Lean certifies the positivity integers, the defect endpoint, the two explicit lower bounds, the short-factor corners, and the reduction of the nonsplit tail at primes at least 37 to one degree-eight majorant. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the positivity integers, the defect endpoint, the two explicit lower bounds, the short-factor corners, and the reduction of the nonsplit tail at primes at least 37 to one degree-eight majorant. The Chinese-remainder count, the subset expansion, and the kick telescoping are not formalized. Python and C++ recompute the exponential bounds, the seven-family polynomial, the nine orders below 30, the tail reduction, and the semiprime sandwich for prime factors below 100.",
    "other_weaknesses": [
@@ -7748,10 +7751,98 @@
    "formalization": [
     "formalization/Bgs/SquarefreeProductRational.lean"
    ],
-   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
-   "boundary": "Every square-free odd modulus with at least three distinct prime factors has L(M)>3/4, and the distance to (1-e^{-2})/4 exceeds 1/2. The fixed kick tau=10^{-80} preserves L(U)>3/4 when there are at least four prime factors and N<=10^{39}, when N is a product of three distinct odd primes not divisible by 15 and N<=10^{39}, and when N=15r with r an odd prime other than 5 and N<=10^{26}. For 15r above 10^{26} the pure sum stays above 3/4 and the kick is not claimed. A prime square is not covered: 315=3^2*5*7 has three distinct prime factors and no bound is claimed. Semiprimes remain the dichotomy of TRACE-122. No density is proved. The kick at u_207, the signed off-diagonal sum, the limit, and every k>2 stay open. Values above 3/4 lie at distance greater than 1/2 from the CUE value, on the side away from (1-e^{-2})/4. Lean certifies the corner integers, the finite-table comparisons, and the three rational lower bounds against 82/105. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "Every square-free odd modulus with at least three distinct prime factors has L(M)>3/4, and the distance to (1-e^{-2})/4 exceeds 1/2. The fixed kick tau=10^{-80} preserves L(U)>3/4 when there are at least four prime factors and N<=10^{39}, when N is a product of three distinct odd primes not divisible by 15 and N<=10^{39}, and when N=15r with r an odd prime at least 7 and N<=10^{26}. The values r=3 and r=5 make 15r divisible by a square, so they are outside this note. For 15r above 10^{26} the pure sum stays above 3/4 and the kick is not claimed. A prime square is not treated here. The modulus 315=3^2*5*7 is not square-free; TRACE-124 places every odd modulus, and 315 is short because its radical 105 is short. Semiprimes remain the dichotomy of TRACE-122. No density is proved. The kick at u_207, the signed off-diagonal sum, the limit, and every k>2 stay open. Values above 3/4 lie at distance greater than 1/2 from the CUE value, on the side away from (1-e^{-2})/4. Lean certifies the corner integers, the finite-table comparisons, and the three rational lower bounds against 82/105. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the corner integers, the finite-table comparisons, and the three rational lower bounds against 82/105. The order divisibility, the least-common-multiple bound, and the kick telescoping are not formalized. Python and C++ recompute the ten orders, the least common multiples in the tables, the corner integers, and the degree-four lower bounds.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-124",
+   "title": "Every odd modulus lies above 3/4 or below 5/7",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/odd-modulus-abel/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/odd_modulus_abel.py",
+    "computations/cpp/odd_modulus_abel.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/OddModulusRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "Every odd modulus N>=3 satisfies L(M)>3/4 or L(M)<5/7. The proof assembles prime powers from TRACE-121 Theorems 1 and 2, semiprimes from TRACE-122 Theorem 3, square-free products of at least three primes from TRACE-123 Theorem 1, and the remaining non-square-free moduli from the radical comparison and Sections 2-7. The modulus 315=3^2*5*7 is short because its radical 105 is short, so no separate expansion at 315 is required. The fixed kick tau=10^{-80} preserves L(U)>3/4 when 8t(N)<=3N and N<=10^{39}, including every odd N whose radical is strongly short and including N=45; when N<=10^{26} and N is a ratio-preserving tower whose pure margin exceeds 13/420, namely N=3*7^a for a>=2, an inert full-order tower with the exponent of 7 at least 2, an inert tower 7q^b with the exponent of 7 equal to 1 and 13<=q<=39, and 3*5^b*13 for b>=2; and when N=15r with r an odd prime at least 7 and N<=2*10^{26}. A split full-order tower does not occur, and a non-short product of 3 with a short prime does not occur. The kick is not claimed for a ratio-preserving ceiling tower: at 3*23 the gap 575/22594 is smaller than 13/420. The kick is not claimed for an inert exponent-one partner q>=40, for 15r above 2*10^{26}, or at u_207. No density is proved. The signed off-diagonal sum, the limit, and every k>2 stay open. Values above 3/4 lie at distance greater than 1/2 from the CUE value, on the side away from (1-e^{-2})/4. Lean certifies the closed integer comparisons, including the displayed fraction at inert partner 13; the other twenty-six inert rows are recomputed by Python and C++. It does not formalize the kernel expansion, the quadrant comparison, or the kick telescoping. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the closed integer comparisons, including the ceiling crossings, the tail numerators and differences, the drop inequalities, the degree-four crosses against 82/105, the inert partner 13 fraction, the inert tail that stays below 82/105, and the defect endpoint at 2*10^26. The kernel expansion, the quadrant comparison, and the kick telescoping are not formalized. Python and C++ recompute the fourteen orders, the ceiling majorants, the tail identities, the twenty-seven inert rows, and the defect endpoint.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-125",
+   "title": "Uniform Pell-orbit overlap of the fixed symbol",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/uniform-orbit-overlap/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/uniform_orbit_overlap.py",
+    "computations/cpp/uniform_orbit_overlap.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/UniformOrbitOverlapRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "For every odd integer n>=5, at N=u_n, the Fourier overlap gamma(r) of the fixed 32-mode symbol under C is zero for 1<=r<=n-1 except at r=1 and r=n-1, where it equals -7/2000000. The quadratic trace coefficient of the transported product is exactly n*1650797/4000000. The index n=5 is a finite modular scan of the middle lags; every odd n>=7 is the size, archimedean, and quadratic-form argument. This does not bound the third-order remainder, does not prove L(U)>3/4 at any new dimension, does not prove that the weighted off-diagonal sum tends to its CUE correction, and does not decide the limit. The pure cat map is already non-CUE by TRACE-117. This claim does not assert that Kurlberg-Rudnick degeneracies fail to be eigenvalues of the fixed-kick propagator; that sentence does not follow from FM-032 and is not part of the proof. Lean certifies integer comparisons only: the rational seeds, the lag-1 coefficient, the box enumeration at exponent 1, and the exhaustive scan at N=41. It does not formalize the Pell induction, the archimedean embedding, or the quadratic-form descent. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the rational seeds, the 32-mode mass, the lag-1 coefficient, the exponent-1 box count, and the exhaustive scan at N=41. The Pell induction, the archimedean embedding, and the quadratic-form descent are not formalized. Python and C++ recompute the modes, the overlaps through n=11, and the size identities through n=31.",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
    ],

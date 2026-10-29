@@ -1,0 +1,33 @@
+\section{Uniform Pell-orbit overlap}
+\label{sec:uniform-orbit-overlap}
+For every odd integer \(n\ge5\), at the Pell dimension \(N=u_n\), the fixed
+symbol has only two nonzero transported overlaps. The canonical proof is
+\path{mathematics/fixed-map/uniform_orbit_overlap.md}.
+The integer comparisons are certified by
+\path{formalization/Bgs/UniformOrbitOverlapRational.lean} and recomputed by the
+Python and C++ verifiers named there. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Uniform Pell-orbit overlap, BGS-TRACE-125]
+\label{thm:uniform-orbit-overlap}
+Let \(n\ge5\) be an odd integer and let \(N=u_n\). The overlap \(\gamma(r)\) of
+the fixed \(32\)-mode symbol under \(C\) vanishes for \(1\le r\le n-1\) except
+at \(r=1\) and \(r=n-1\), where
+\[
+\gamma(1)=\gamma(n-1)=-\frac7{2000000}.
+\]
+The quadratic trace coefficient of the transported product is
+\[
+\frac{\operatorname{Tr}(S^2)}{N}=n\cdot\frac{1650797}{4000000}.
+\]
+This is \(f''(0)/(-\theta^2 N)\) for
+\(f(t)=\operatorname{Tr}\prod_{j=0}^{n-1}\exp(ti\theta A_j)\).
+
+The index \(n=5\) is a finite scan of the middle lags modulo \(41\). Every
+odd \(n\ge7\) is the size, archimedean, and quadratic-form argument. The
+identity does not bound the third-order remainder, does not give
+\(L_N(U_N;1)>3/4\) at any new dimension, and does not estimate the signed
+off-diagonal sum at times of order \(N\). The pure cat map is already away
+from the CUE Abel value by BGS-TRACE-117. BGS-TRACE-005 and BGS-BGS-001
+remain open.
+\end{theorem}
