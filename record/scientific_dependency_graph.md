@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**206 registered nodes; 247 direct prerequisite edges.**
+**207 registered nodes; 248 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -219,4 +219,5 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-117](../mathematics/fixed-map/kick_blind_arithmetic_spike.md) | proved | None registered | None registered | 2 |
 | [BGS-TRACE-118](../mathematics/fixed-map/orbit_orthogonal_kick_spike.md) | proved | `BGS-TRACE-117` | None registered | 1 |
 | [BGS-TRACE-119](../mathematics/fixed-map/positive_time_spike.md) | proved | `BGS-TRACE-118` | None registered | 0 |
-| [BGS-TRACE-120](../mathematics/fixed-map/order_ladder_abel.md) | proved | `BGS-TRACE-117` | None registered | 0 |
+| [BGS-TRACE-120](../mathematics/fixed-map/order_ladder_abel.md) | proved | `BGS-TRACE-117` | None registered | 1 |
+| [BGS-TRACE-121](../mathematics/fixed-map/order_trichotomy_abel.md) | proved | `BGS-TRACE-120` | None registered | 0 |

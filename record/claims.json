@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "status_authority": "record/claims.json",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -5294,6 +5294,31 @@
       ],
       "manuscript": [
         "manuscript/unified_sections/order_ladder_abel.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-121",
+      "title": "Cat-map order trichotomy for primes and prime powers",
+      "source": "mathematics/fixed-map/order_trichotomy_abel.md",
+      "dependencies": [
+        "BGS-TRACE-120"
+      ],
+      "boundary": "Every odd prime order of C divides p-epsilon, with epsilon = 1 precisely when p is 1 or 7 mod 8. The order is short, long, or split-half. For p>=5 a short order gives L(M)>3/4. A long order gives L(M)<5/7. The only split-half prime below 17 is p=7, where L(M)>3/4; every larger split-half prime has L(M)<41/60. For every power p^k with k>=2 the same alternatives are decided by the lifting depth delta: depth at least 2, and every short prime, put the power above 3/4; depth 1 on a long prime puts it below 5/7; every power of 7 is above 3/4; every depth-1 power of a split-half prime p>=17 is below 5/7. The fixed kick preserves the prime comparisons through 10^26, the depth-1 long and seven-power comparisons through 10^26, and the large split-half powers through 10^25. A short prime p>=11 has 8t<=3p, so TRACE-120 carries the kicked gap up to 10^39. For every odd n>=5, t(u_n) divides n, so the pure map at u_n, including u_207, is above 3/4; the kick at u_207 stays outside every window. At p=13 and p=31 the prime is on the CUE side of distance 1/2 and the square is above 3/4. No density is proved. Moduli with two distinct prime factors, the off-diagonal sum, the limit, and any k>2 stay open. Lean certifies the rational comparisons and the 10^25 window only. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/order-trichotomy/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/order_trichotomy_abel.py",
+        "computations/cpp/order_trichotomy_abel.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/OrderTrichotomyRational.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/order_trichotomy_abel.tex"
       ]
     }
   ],

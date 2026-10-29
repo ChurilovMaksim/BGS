@@ -40,5 +40,6 @@ import Bgs.KickBlindRational
 import Bgs.OrbitOrthogonalRational
 import Bgs.PositiveTimeRational
 import Bgs.OrderLadderRational
+import Bgs.OrderTrichotomyRational
 
 import Bgs.Mathlib

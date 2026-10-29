@@ -1,0 +1,49 @@
+\section{Cat-map order trichotomy}
+\label{sec:order-trichotomy-abel}
+Every odd prime order of \(C\) divides \(p-\varepsilon\) and is short, long,
+or split-half. Every odd prime power is decided by the lifting depth of
+the first return. The canonical proof is
+\path{mathematics/fixed-map/order_trichotomy_abel.md}.
+The integer comparisons are certified by
+\path{formalization/Bgs/OrderTrichotomyRational.lean} and recomputed by the
+Python and C++ verifiers named there. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Order trichotomy, BGS-TRACE-121]
+\label{thm:order-trichotomy-abel}
+Let \(p\) be an odd prime and let \(t=t(p)\) be the order of the frequency
+matrix \(C\) from Section~\ref{sec:kick-blind-arithmetic-spike}. Set
+\(\varepsilon=1\) if \(p\equiv1\) or \(7\pmod8\), and \(\varepsilon=-1\) if
+\(p\equiv3\) or \(5\pmod8\). Then \(t\) divides \(p-\varepsilon\). The
+order is short when \(t\le(p-\varepsilon)/3\), long when \(t=p-\varepsilon\)
+or when \(\varepsilon=-1\) and \(t=(p+1)/2\), and split-half when
+\(\varepsilon=1\) and \(t=(p-1)/2\). These three classes are exhaustive and
+disjoint. A short order with \(p\ge5\) gives \(L_p(M_p;1)>3/4\), so the
+distance to \((1-e^{-2})/4\) is greater than \(1/2\). A long order gives
+\(L_p(M_p;1)<5/7\), so that distance is less than \(1/2\). The only
+split-half prime below \(17\) is \(p=7\), where \(L_7(M_7;1)>3/4\). Every
+split-half prime \(p\ge17\) satisfies \(L_p(M_p;1)<41/60<5/7\).
+
+Let \(\delta\) be the largest positive integer with
+\(C^{t}\equiv I\pmod{p^\delta}\). For \(k\ge2\) the order modulo \(p^k\)
+is \(t\,p^{\max(k-\delta,0)}\). If \(\delta\ge2\), or if \(\delta=1\) and
+\(12t\le5p\), then \(L(M)>3/4\). If \(\delta=1\) and \(2t\ge p+1\), then
+\(L(M)<5/7\). If \(\delta=1\) and \(t=(p-1)/2\), the power lies above
+\(3/4\) when \(p=7\) and below \(5/7\) when \(p\ge17\).
+
+For the fixed kick \(\tau=10^{-80}\), every long prime \(p\le10^{26}\),
+every split-half prime \(17\le p\le10^{26}\), every depth-one long power
+\(p^k\le10^{26}\), and every power of \(7\) through \(10^{26}\) keeps the
+same comparison. A depth-one power of a split-half prime \(p\ge17\) keeps
+\(L(U)<5/7\) through \(10^{25}\). A short prime \(p\ge11\) satisfies
+\(8t\le3p\), so Theorem~\ref{thm:order-ladder-abel} carries the kicked gap
+up to \(10^{39}\). For every odd \(n\ge5\), \(t(u_n)\) divides \(n\), and
+the pure map at \(u_n\), including the \(79\)-digit dimension \(u_{207}\),
+satisfies \(L>3/4\). The kick at \(u_{207}\) lies outside every window.
+The primes \(p=13\) and \(p=31\) lie below \(5/7\), while their squares
+lie above \(3/4\). No density of any order class is proved. A modulus
+with two distinct prime factors, the signed off-diagonal sum, the limit,
+and every \(k>2\) stay open. The weight \(e^{-2m/N}\) is the
+Heisenberg-time weight of this diagonal trace square; the comparison is
+only with \(3/4\) and \(5/7\).
+\end{theorem}

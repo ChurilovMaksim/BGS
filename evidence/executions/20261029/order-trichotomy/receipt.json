@@ -1,0 +1,22 @@
+{
+  "schema": "bgs-order-trichotomy-abel-v1",
+  "claim": "BGS-TRACE-121",
+  "prime_window": "10^26",
+  "split_tower_window": "10^25",
+  "short_kick_window": "10^39",
+  "witness_t7": 3,
+  "witness_t13": 14,
+  "witness_delta13": 2,
+  "witness_t31": 15,
+  "witness_delta31": 2,
+  "u_207_digits": 79,
+  "order_agreement_through": 500,
+  "kernel_primes_through": 80,
+  "sources_sha256": {
+    "python": "1f8978c7bbecae681d8c9f589d35f94e0052bd0214afc6033ee1714c8683b7c4",
+    "cpp": "10f7ba7f62113dc7486c03f16634d9f2259319acda2a10371745b9c25603073d",
+    "lean": "6a1337d434850947d49c51ac97c8b060d50a142e56ec646754e1a9cecd7d121e",
+    "proof": "86b5b139320fa4047d7be32917c14fddb60401efc9a4cc35dfb5c0029e21e129"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a density, a two-prime modulus, the signed off-diagonal sum, the limit, or the kicked statistic at u_207. The prime and kernel censuses are finite checks."
+}

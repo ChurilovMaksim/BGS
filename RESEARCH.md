@@ -10,6 +10,8 @@
 
 [TRACE-120](mathematics/fixed-map/order_ladder_abel.md) is the order principle underneath those spikes. If the cat-map order satisfies \(12t(N)\le5N\), the pure propagator has \(L_N(M_N;1)>3/4\). If \(p\) is an odd prime and the order is at least \((p+1)/2\), \(L_p(M_p;1)\) lies at distance less than \(1/2\) from the CUE value. The fixed kick preserves the short side for all such odd \(N\le10^{39}\) and the long side for all such primes \(p\le10^{26}\). This is not a limit, not a generic odd dimension, and not a kicked gap at \(u_{207}\). BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
 
+[TRACE-121](mathematics/fixed-map/order_trichotomy_abel.md) classifies every odd prime and every odd prime power. The order divides \(p-\varepsilon\) and is short, long, or split-half. The prime \(p=7\), and every power of \(7\), lies above \(3/4\); every larger split-half prime lies below \(5/7\). Depth at least two moves the higher powers to the side above \(3/4\). The pure map at \(u_{207}\) is already on that side because its order divides \(207\). The kick at \(u_{207}\) remains unresolved. No density is proved. BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
+
 ## Aristotle formalization integration, 28 October 2026
 
 Adapted all 39 substantive modules from the older Aristotle snapshot into the existing Lean 4.33.1 graph. The [coverage map](formalization/MATHLIB_LAYER_RU.md) and [receipt](evidence/formalization/aristotle_20261027/receipt.json) record exact theorem scope, 589 axiom-audited declarations and the successful aggregate build. ERR-060 corrects the pure-loss scalar identity in the proof and manuscript. Current claim states, TRACE-114–116 and pinned dependencies are retained; no BGS closure is asserted.
