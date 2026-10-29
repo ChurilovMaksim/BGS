@@ -1,0 +1,18 @@
+{
+  "schema": "bgs-crt-composite-abel-v1",
+  "claim": "BGS-TRACE-122",
+  "kick_window": "10^26",
+  "orders_below": 30,
+  "sandwich_prime_cap": 100,
+  "series_degree_upper": 8,
+  "series_degree_lower": 4,
+  "witness_t29": 10,
+  "three_prime_example": "195=3*5*13",
+  "sources_sha256": {
+    "python": "302feba9fd907035668cd0bfb3fcb2cd9d6ee529cb8531de3695213174c5b7b7",
+    "cpp": "4410fdcc931d7f40cc10f56e5a72771b71b54811b45f496f8dddc6388adc7a1a",
+    "lean": "f8ecc4051c1b70a29eb3d1b92f4ec28631819a0a30462310a8fa79a1442386bf",
+    "proof": "3de5429754924362f396430f3eb86677cb4c9072af5b7ca68b1745f5c896ba71"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a density, a three-prime threshold, the signed off-diagonal sum, the limit, or the kicked statistic at u_207. The semiprime sandwich is a finite check."
+}

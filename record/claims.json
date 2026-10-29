@@ -5320,6 +5320,32 @@
       "manuscript": [
         "manuscript/unified_sections/order_trichotomy_abel.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-122",
+      "title": "Chinese product for the cat-map trace square",
+      "source": "mathematics/fixed-map/crt_composite_abel.md",
+      "dependencies": [
+        "BGS-TRACE-120",
+        "BGS-TRACE-121"
+      ],
+      "boundary": "For every odd N, the pure trace square is the product of the prime-power trace squares, and t(N) is the lcm of the prime-power orders. On a square-free modulus the Abel sum is a finite sum of geometric series. For N=pq, a short composite order, a non-short multiple of 7, and a non-short product of 3 with a short prime give L(M)>3/4. Every remaining semiprime has L(M)<5/7. The fixed kick preserves L(U)>3/4 through 10^26 for N=21, for N=7q with q congruent to 1 or 7 mod 8, t(q)=q-1 and 3 not dividing q-1, and for a non-short product of 3 with a short prime of odd order. No such short prime is asserted to exist. The kick is not transferred on the side below 5/7 or on inert full-order multiples of 7. N=195 is not short and no bound is claimed for three or more distinct prime factors. No density is proved. The signed off-diagonal sum, the limit, every k>2, and the kick at u_207 stay open. Lean certifies the positivity integers, the defect endpoint, the two explicit lower bounds, the short-factor corners, and the reduction of the nonsplit tail at primes at least 37 to one degree-eight majorant. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/crt-composite/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/crt_composite_abel.py",
+        "computations/cpp/crt_composite_abel.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/CrtCompositeRational.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/crt_composite_abel.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

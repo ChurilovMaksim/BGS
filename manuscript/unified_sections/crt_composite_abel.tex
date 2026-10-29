@@ -1,0 +1,41 @@
+\section{Chinese product for the cat-map trace square}
+\label{sec:crt-composite-abel}
+The trace square of the pure cat map multiplies over the prime-power
+factors of every odd modulus. Every product of two odd primes then lies
+strictly above \(3/4\) or strictly below \(5/7\). The canonical proof is
+\path{mathematics/fixed-map/crt_composite_abel.md}.
+The integer comparisons are certified by
+\path{formalization/Bgs/CrtCompositeRational.lean} and recomputed by the
+Python and C++ verifiers named there. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Chinese product and the semiprime dichotomy, BGS-TRACE-122]
+\label{thm:crt-composite-abel}
+Let \(N=\prod_ip_i^{k_i}\) be odd. For every integer \(m\ge0\),
+\[
+\lvert\operatorname{Tr}M_N^m\rvert^2
+=\prod_i\lvert\operatorname{Tr}M_{p_i^{k_i}}^m\rvert^2,
+\]
+and the order \(t(N)\) is the least common multiple of the orders
+\(t(p_i^{k_i})\). If \(N\) is square-free, \(L_N(M_N;1)\) is the sum,
+over subsets of the prime factors, of a positive coefficient times the
+geometric series at the least common multiple of the corresponding orders.
+
+Let \(N=pq\) with odd primes \(p<q\) and let \(T=t(N)\). If \(12T\le5N\),
+or if \(7\) divides \(N\) and the product is not short, or if \(p=3\) and
+\(q\) is a short prime whose product is not short, then
+\(L_N(M_N;1)>3/4\), so the distance to \((1-e^{-2})/4\) is greater than
+\(1/2\). Every remaining semiprime satisfies \(L_N(M_N;1)<5/7\), so that
+distance is less than \(1/2\).
+
+For the fixed kick \(\tau=10^{-80}\) and every such \(N\le10^{26}\), the
+gap above \(3/4\) survives when \(N=21\), when \(N=7q\) with
+\(q\equiv1\) or \(7\pmod8\), \(t(q)=q-1\) and \(3\nmid(q-1)\), and when
+\(N=3q\) is a non-short product of \(3\) with a short prime of odd order.
+No such short prime is asserted to exist. The kick is not transferred on
+the side below \(5/7\), nor on the inert full-order multiples of \(7\).
+The modulus \(N=195\) is not short, and no bound is claimed for three or
+more prime factors. No density is proved. The kick at the \(79\)-digit
+dimension \(u_{207}\), the signed off-diagonal sum, the limit, and every
+\(k>2\) stay open.
+\end{theorem}

@@ -49,7 +49,7 @@ Direct division gives \(\delta(3)=\delta(5)=\delta(7)=1\). In particular every p
 
 **Crossing.** The verifiers recompute the recurrence below. One has \(t(13)=14\) and \(\delta(13)=2\), so \(L_{13}(M_{13};1)<5/7\) while \(L_{169}(M_{169};1)>3/4\). Likewise \(t(31)=15\) and \(\delta(31)=2\), so \(L_{31}(M_{31};1)<41/60\) while \(L_{961}(M_{961};1)>3/4\).
 
-**Boundary.** These statements classify every odd prime and every odd prime power. They do not classify a modulus divisible by two distinct primes, do not give a density of any order class, and do not give the CUE value. The Abel weight \(e^{-2m/N}\) is the Heisenberg-time weight, but the comparison is only with the thresholds \(3/4\) and \(5/7\). The off-diagonal sum, every \(k>2\), the limit, `BGS-TRACE-005` and `BGS-BGS-001` stay open.
+**Boundary.** These statements classify every odd prime and every odd prime power. They do not classify a modulus divisible by two distinct primes; that semiprime case is `BGS-TRACE-122`. They do not give a density of any order class, and they do not give the CUE value. The Abel weight \(e^{-2m/N}\) is the Heisenberg-time weight, but the comparison is only with the thresholds \(3/4\) and \(5/7\). The off-diagonal sum, every \(k>2\), the limit, `BGS-TRACE-005` and `BGS-BGS-001` stay open.
 
 ## 2. Where the characteristic polynomial splits
 

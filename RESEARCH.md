@@ -12,6 +12,8 @@
 
 [TRACE-121](mathematics/fixed-map/order_trichotomy_abel.md) classifies every odd prime and every odd prime power. The order divides \(p-\varepsilon\) and is short, long, or split-half. The prime \(p=7\), and every power of \(7\), lies above \(3/4\); every larger split-half prime lies below \(5/7\). Depth at least two moves the higher powers to the side above \(3/4\). The pure map at \(u_{207}\) is already on that side because its order divides \(207\). The kick at \(u_{207}\) remains unresolved. No density is proved. BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
 
+[TRACE-122](mathematics/fixed-map/crt_composite_abel.md) multiplies that trace square over the prime-power factors of every odd modulus and decides every product of two odd primes. The short composite orders and the seven-family lie above \(3/4\); every remaining semiprime lies below \(5/7\). The fixed kick keeps the gap above \(3/4\) through \(10^{26}\) on two explicit sub-families, not on the side below \(5/7\). Three or more distinct prime factors, the density of the order classes, the signed off-diagonal sum, and the kick at \(u_{207}\) remain unresolved. BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
+
 ## Aristotle formalization integration, 28 October 2026
 
 Adapted all 39 substantive modules from the older Aristotle snapshot into the existing Lean 4.33.1 graph. The [coverage map](formalization/MATHLIB_LAYER_RU.md) and [receipt](evidence/formalization/aristotle_20261027/receipt.json) record exact theorem scope, 589 axiom-audited declarations and the successful aggregate build. ERR-060 corrects the pure-loss scalar identity in the proof and manuscript. Current claim states, TRACE-114–116 and pinned dependencies are retained; no BGS closure is asserted.
