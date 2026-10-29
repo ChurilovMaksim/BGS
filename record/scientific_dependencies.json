@@ -1,6 +1,6 @@
 {
   "schema": "bgs-scientific-dependencies-v1",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "nodes": [
     "BGS-BGS-001",
     "BGS-CAYLEY-001",
@@ -207,7 +207,8 @@
     "BGS-TRACE-117",
     "BGS-TRACE-118",
     "BGS-TRACE-119",
-    "BGS-TRACE-120"
+    "BGS-TRACE-120",
+    "BGS-TRACE-121"
   ],
   "edges": [
     {
@@ -1443,6 +1444,11 @@
     {
       "from": "BGS-TRACE-118",
       "to": "BGS-TRACE-119",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-120",
+      "to": "BGS-TRACE-121",
       "type": "scientific-prerequisite"
     }
   ],

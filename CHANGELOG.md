@@ -1,5 +1,9 @@
 # Scientific changelog
 
+## 2026-10-29 — cat-map order trichotomy
+
+Register BGS-TRACE-121. The order of \(C\) modulo an odd prime divides \(p-\varepsilon\) and is short, long, or split-half. Short primes lie above \(3/4\), long primes lie below \(5/7\), and the only undecided prime of TRACE-120, \(p=7\), lies above \(3/4\). Every larger split-half prime lies below \(41/60\). The lifting depth decides every odd prime power: powers of \(7\) stay above \(3/4\), depth-one powers of a larger split-half prime stay below \(5/7\), and depth at least two puts the higher powers above \(3/4\). The fixed kick preserves these comparisons through \(10^{26}\), except the large split-half powers, which stop at \(10^{25}\). The pure map at every odd Pell dimension \(n\ge5\), including \(u_{207}\), is already above \(3/4\); the kick at \(u_{207}\) is not. Python, C++ and a Lean rational witness certify the integers. No density is proved. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+
 ## 2026-10-28 — cat-map order ladder
 
 Register BGS-TRACE-120. The multiplicative order \(t(N)\) of the frequency matrix \(C\) decides the Abel statistic. If \(12t(N)\le5N\), the pure cat map satisfies \(L_N(M_N;1)>3/4\). If \(p\) is an odd prime and \(2t(p)\ge p+1\), the distance from \(L_p(M_p;1)\) to the CUE value is less than \(1/2\). The fixed kick preserves the short side for every such odd \(N\le10^{39}\) and the long side for every such prime \(p\le10^{26}\). At \(N=35\), not a Pell number, one return lies below \(3/4\) and the geometric ladder crosses it. Python, C++ and a Lean rational witness certify the integers. The kicked map at \(u_{207}\) is not decided. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
