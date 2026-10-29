@@ -34,9 +34,9 @@ For every integer \(m\ge 3\),
 \]
 In particular, for each fixed \(m\ge 1\),
 \[
-\lim_{\substack{p\to\infty\\ p\text{ admissible}}}\mathbb E\lvert\operatorname{Tr} U^m\rvert^2=m
+\lim_{\substack{p\to\infty\\ \delta\not\equiv -1\pmod p}}\mathbb E\lvert\operatorname{Tr} U^m\rvert^2=m
 \]
-for \(m\ge 3\), and the limits at times one and two are \(1\) and \(2\). If \(m(p)\ge 3\), if \((m!)^2 m^2=o(p)\), and if \(m^2=o(p)\), the ratio of the expectation to \(m\) tends to \(1\). Every sequence \(m\le c\log p/\log\log p\) with a fixed \(c<1/2\) lies in this range for all large admissible \(p\). The estimate does not reach \(m\le p^{\alpha}\).
+for \(m\ge 3\), and the limits at times one and two are \(1\) and \(2\). If \(m(p)\ge 3\), if \((m!)^2 m^2=o(p)\), and if \(m^2=o(p)\), the ratio of the expectation to \(m\) tends to \(1\). Every sequence \(m\le c\log p/\log\log p\) with a fixed \(c<1/2\) lies in this range for all large \(p\) with \(\delta\not\equiv -1\pmod p\). The estimate does not reach \(m\le p^{\alpha}\).
 
 Position conjugation reverses the momentum factor \(R\) if and only if \(\xi_j=\xi_{-j}\) for every frequency \(j\). That locus has Haar measure zero. The reflection contribution, which the antiunitary \(\Theta'=DE_qK_0\) of `BGS-TRACE-131` (equal to \(DK_0\) when \(\alpha\equiv\delta\pmod p\)) doubles for a position-diagonal kick, is \(o(1)\) for Haar momentum phases.
 
@@ -45,7 +45,7 @@ Position conjugation reverses the momentum factor \(R\) if and only if \(\xi_j=\
 \Bigl\lvert\mathbb E\lvert\operatorname{Tr} U^m\rvert^{2k}-k!\,m^k\,\frac{P(p,km)}{p^{km}}\Bigr\rvert
 \le\frac{\bigl((km)!\bigr)^2\bigl(1+2km(km-1)\bigr)}{p}.
 \]
-For each fixed \(k\) and \(m\ge 3\), the expectation tends to \(k!\,m^k\). If \(k\) is fixed and \(m\le c\log p/\log\log p\) with \(c<1/(2k)\), the ratio to \(k!\,m^k\) tends to \(1\).
+For each fixed \(k\) and \(m\ge 3\), the expectation tends to \(k!\,m^k\). The same row-wise argument applied blockwise leaves exactly the centraliser \(\mathbb Z_m\wr S_k\). If \(k\) is fixed and \(m\le c\log p/\log\log p\) with \(c<1/(2k)\), the ratio to \(k!\,m^k\) tends to \(1\).
 
 **Theorem 3 (Gaussian crossover, verification-pending).** Let \(v\ge 0\) and let \(g_j\), \(j\in\mathbb F_p\), be independent standard real Gaussians, independent of \(D\). Set \(\xi_j=\exp(i\sqrt{v}\,g_j)\), let \(E=\mathrm{diag}(\xi)\), and keep \(U=DRM\). The rotation, reflection and non-dihedral main terms are evaluated in Sections 3–5, where the inverse of \(A=I-\lambda C\) is used and therefore \(\lambda^t\not\equiv 1\) for \(1\le t\le m\). Theorems 1 and 2 do not use that inverse: their hypothesis is only \(\lambda\not\equiv -1\). The contribution of non-injective position words is not bounded here: the occupation count of Section 6 uses the Haar momentum constraint and does not apply to Gaussian weights. The limit \(m(1+e^{-vm})\) is therefore stated as verification-pending. Exact finite-\(p\) values approach it with a gap of about \(4/p\) at \(m=3\), \(v=0.4\). With \(\tau=m/p\) and \(\Lambda=vp\), the proposed limit is
 \[
@@ -92,7 +92,7 @@ where \(c_j\) is the multiplicity of \(j\) in \(s\) minus its multiplicity in \(
 
 ## 3. Rotations and the cycle automorphism group
 
-Let \(\rho\in S_m\) act by \((x\circ\rho)_t=x_{\rho(t)}\). If \(x\) is injective and \(y\) has the same image, there is a unique such \(\rho\). The same holds for momenta. Summing over all words and dividing by the stabilizer is estimated at the end of this section; the injective sum is the one that enters the error.
+Let \(\rho\in S_m\) act by \((x\circ\rho)_t=x_{\rho(t)}\). If \(x\) is injective and \(y\) has the same image, there is a unique such \(\rho\). The same holds for momenta.
 
 The coefficient of \(x_j\) in \(\Phi(x,s)-\Phi(x\circ\rho,r)\) is
 \[
@@ -102,7 +102,7 @@ where \(\alpha=\rho^{-1}\) and indices are read in \(\mathbb Z/m\mathbb Z\). In 
 \[
 (As)_j=s_j-\lambda s_{j-1}
 \]
-and \((P_{\alpha}v)_j=v_{\alpha(j)}\). The matrix of \(A\) is \(I-\lambda C\), where \(C\) is the cycle shift \((Cs)_j=s_{j-1}\). Since \(\lambda^m\neq 1\) and \(C^m=I\),
+and \((P_{\alpha}v)_j=v_{\alpha(j)}\). The matrix of \(A\) is \(I-\lambda C\), where \(C\) is the cycle shift \((Cs)_j=s_{j-1}\). When \(\lambda^m\not\equiv 1\pmod p\) and \(C^m=I\),
 \[
 A^{-1}=\frac1{1-\lambda^m}\sum_{k=0}^{m-1}\lambda^k C^k.
 \]
@@ -120,7 +120,7 @@ A^{-1}RA=R(A^{T})^{-1}A
 \]
 is orthogonal. The \(m\) reflections are disjoint from the \(m\) rotations when \(m\ge 3\). A \(2\)-cycle is equal to its reversal, which is why \(m=2\) is excluded from the factor \(1+e^{-vm}\).
 
-For the Haar weight only occupation-matched momenta survive. A reflection does not preserve occupation for a positive-density set of momenta: \(L\) is not a permutation matrix. A permutation matrix would be orthogonal, hence \(\alpha\) would be dihedral, and the reflection case is not a coordinate permutation when \(\lambda\not\equiv\pm 1\). The Haar main term is therefore only the \(m\) rotations.
+For the Haar weight only occupation-matched momenta survive. A reflection does not preserve occupation for a positive-density set of momenta: \(L\) is not a permutation matrix. A permutation matrix would be orthogonal, hence \(\alpha\) would be dihedral, and the reflection case is not a coordinate permutation when \(\lambda\not\equiv -1\). The Haar main term is therefore only the \(m\) rotations.
 
 ## 4. Square sums and charges on the dihedral families
 
@@ -169,7 +169,7 @@ The matrix identity
 \[
 B_{\rho,\sigma}=0\iff P_\sigma-P_{\rho^{-1}}=\lambda\bigl(CP_\sigma-P_{\rho^{-1}}C\bigr)
 \]
-has entries in \(\{0,\pm 1\}\) on the left and in \(\lambda\{0,\pm 1\}\) on the right. If \(\lambda\not\equiv\pm 1\), both sides vanish, so \(\sigma=\rho^{-1}\) is a rotation. Checking \(\lambda\equiv 1\) directly among sums of permutation matrices leaves only the rotations. Checking \(\lambda\equiv -1\) leaves the rotations and the \(m\) reflections. Thus, when \(\lambda\not\equiv -1\), one has \(B=0\) only for the \(m\) rotations. Every other pair has \(\dim\ker B\le m-1\), and this part of the sum lies in
+has entries in \(\{0,\pm 1\}\) on the left and in \(\lambda\{0,\pm 1\}\) on the right. If \(\lambda\not\equiv -1\), both sides vanish, so \(\sigma=\rho^{-1}\) is a rotation. If \(\lambda\equiv 1\), row \(i\) of \(AP_\sigma-P_{\rho^{-1}}A\) vanishes only if the multisets \(\{\sigma(i),\tau(i)-1\}\) and \(\{\tau(i),\sigma(i-1)\}\) agree (\(\tau=\rho^{-1}\)); since \(\sigma(i)\neq\sigma(i-1)\), this forces \(\sigma(i)=\tau(i)\) and \(\sigma(i-1)=\tau(i)-1\) for all \(i\), so \(\sigma=\tau\) is a rotation. Checking \(\lambda\equiv -1\) leaves the rotations and the \(m\) reflections. Thus, when \(\lambda\not\equiv -1\), one has \(B=0\) only for the \(m\) rotations. Every other pair has \(\dim\ker B\le m-1\), and this part of the sum lies in
 \[
 \bigl[m,\,m+\bigl((m!)^2-m\bigr)/p\bigr].
 \]
