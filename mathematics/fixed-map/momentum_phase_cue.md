@@ -169,7 +169,7 @@ The matrix identity
 \[
 B_{\rho,\sigma}=0\iff P_\sigma-P_{\rho^{-1}}=\lambda\bigl(CP_\sigma-P_{\rho^{-1}}C\bigr)
 \]
-has entries in \(\{0,\pm 1\}\) on the left and in \(\lambda\{0,\pm 1\}\) on the right. If \(\lambda\not\equiv -1\), both sides vanish, so \(\sigma=\rho^{-1}\) is a rotation. If \(\lambda\equiv 1\), row \(i\) of \(AP_\sigma-P_{\rho^{-1}}A\) vanishes only if the multisets \(\{\sigma(i),\tau(i)-1\}\) and \(\{\tau(i),\sigma(i-1)\}\) agree (\(\tau=\rho^{-1}\)); since \(\sigma(i)\neq\sigma(i-1)\), this forces \(\sigma(i)=\tau(i)\) and \(\sigma(i-1)=\tau(i)-1\) for all \(i\), so \(\sigma=\tau\) is a rotation. Checking \(\lambda\equiv -1\) leaves the rotations and the \(m\) reflections. Thus, when \(\lambda\not\equiv -1\), one has \(B=0\) only for the \(m\) rotations. Every other pair has \(\dim\ker B\le m-1\), and this part of the sum lies in
+has entries in \(\{0,\pm 1\}\) on the left and in \(\lambda\{0,\pm 1\}\) on the right. If \(\lambda\not\equiv\pm 1\), both sides vanish, so \(\sigma=\rho^{-1}\) is a rotation. If \(\lambda\equiv 1\), row \(i\) of \(AP_\sigma-P_{\rho^{-1}}A\) vanishes only if the multisets \(\{\sigma(i),\tau(i)-1\}\) and \(\{\tau(i),\sigma(i-1)\}\) agree (\(\tau=\rho^{-1}\)); since \(\sigma(i)\neq\sigma(i-1)\), this forces \(\sigma(i)=\tau(i)\) and \(\sigma(i-1)=\tau(i)-1\) for all \(i\), so \(\sigma=\tau\) is a rotation. Checking \(\lambda\equiv -1\) leaves the rotations and the \(m\) reflections. Thus, when \(\lambda\not\equiv -1\), one has \(B=0\) only for the \(m\) rotations. Every other pair has \(\dim\ker B\le m-1\), and this part of the sum lies in
 \[
 \bigl[m,\,m+\bigl((m!)^2-m\bigr)/p\bigr].
 \]
