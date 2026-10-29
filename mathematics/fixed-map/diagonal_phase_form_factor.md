@@ -49,7 +49,7 @@ The trace-closure lemma gives \(\lvert\operatorname{Tr} M_N^m\rvert^2=\lvert\ker
 - at time \(3\), if \(7\) does not divide \(N\), the diagonal-phase value is strictly larger than the pure value \(1\);
 - at time \(3\), if \(7\) divides \(N\), the pure value is \(49\) and the diagonal-phase value is strictly smaller than \(6\).
 
-**Boundary.** The diagonal phases are independent at the \(N\) sites. They are not the \(16\) mode-pair phases of `BGS-TRACE-126`, and \(U_N\) is not the fixed kick at \(\tau=10^{-80}\). The time-three limit \(6\) is not the CUE value \(3\), and the time-two value tends to \(2\), which is the CUE value at time two and not the COE value \(4\). No symmetry class is identified. The bound \(m!\) lies above \(N^2\) once \(m\) is large, so it does not separate a revival at Heisenberg time. Nothing is claimed for \(m\ge 4\) except the factorial bound. Section 6 records a finite sample of the \(16\)-phase ensemble; that sample is not an evaluation of its expectation and not a limit. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
+**Boundary.** The diagonal phases are independent at the \(N\) sites. They are not the \(16\) mode-pair phases of `BGS-TRACE-126`, and \(U_N\) is not the fixed kick at \(\tau=10^{-80}\). Every realization is unitarily similar to the symmetric unitary \(D^{1/2}M_ND^{1/2}\), so the ensemble lies in the orthogonal class. The time-three limit \(6\) equals \(2\cdot 3\): a \(3\)-cycle and its reversal have the same amplitude. The time-two limit is \(2\), not \(4\), because a \(2\)-cycle equals its own reversal. The measure is the Haar measure on an \(N\)-torus, not the Haar measure on the circular orthogonal ensemble, and the form factor for \(m\ge 4\) is not evaluated beyond the bound \(m!\). That bound lies above \(N^2\) once \(m\) is large, so it does not separate a revival at Heisenberg time. Section 6 records a finite sample of the \(16\)-phase ensemble; that sample is not an evaluation of its expectation and not a limit. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
 
 ## 2. Occupation buckets
 
@@ -167,7 +167,19 @@ Theorem 3 follows from these orders and the trace-closure lemma. The comparison 
 
 The direction of the time-three comparison changes according as \(7\) divides \(N\). At \(N=7\) the pure squared trace is \(49\) and the diagonal-phase value is \(235/49\). The same dimension is the scalar identity \(A_7=(9/10)I\) for the \(32\)-mode symbol; that identity is not used here, and the diagonal phases do not fold to a scalar.
 
-## 6. The sixteen-phase ensemble, as a sample
+## 6. Prior ensemble and the orthogonal symmetry
+
+The matrix \(U=DM\) with fixed moduli and independent diagonal phases is the eigenvalue ensemble of a unitary-stochastic ensemble. Tanner, Journal of Physics A 34 (2001), 8485–8500, arXiv:nlin/0104014, equation (2), writes a unitary with those moduli as \(D_1\tilde U D_2\). The average of a function of the eigenvalues reduces to the \(N\) phases in \(D_1\). Section II.2 of that paper records that a symmetric \(\tilde U\) is expected to retain time-reversal symmetry. Section III.1 writes the form factor as a double sum over closed paths and multiplies the diagonal term by \(g=2\) when a path and its reversal share the phase. Pakoński, Życzkowski and Kuś, Journal of Physics A 34 (2001), 9303–9317, arXiv:nlin/0011050, Section V, record that after the free phases are averaged, the surviving pairs of periodic orbits are those that visit each vertex the same number of times. The bucket decomposition in Section 2 is that occupation constraint. It is the standard calculus for \(U_{jk}=e^{i\Phi_j}w_{jk}\) with independent \(\Phi_j\) and fixed \(w_{jk}\). These two papers were read from the arXiv record and the journal citation pages on 29 October 2026. They are not inputs of the identities below. The identities proved in this note are the exact finite-\(N\) values at times one, two and three for this cat-map quantization, and the comparison with \(\lvert\ker(S^m-I)\rvert\).
+
+The cat-map matrix is symmetric because \(Q(x,y)=Q(y,x)\). Choose a square root \(D^{1/2}\) of the diagonal unitary \(D\). Then
+\[
+DM_N=D^{1/2}\bigl(D^{1/2}M_ND^{1/2}\bigr)D^{-1/2}.
+\]
+The conjugate \(S=D^{1/2}M_ND^{1/2}\) satisfies \(S^T=S\). It is unitary, so \(S^{-1}=\overline S\). Complex conjugation in the position basis is therefore a time-reversal symmetry of \(S\), and hence of every realization of \(U_N\). The ensemble lies in the orthogonal class for every \(D\).
+
+In the count of Section 4 the two orientations of a triangle have the same amplitude, so six words add and the limit is \(6=2\cdot 3\). At time two the words \((a,b)\) and \((b,a)\) are the two directions of one \(2\)-cycle, and that cycle equals its reversal. There is no second orbit to add, and the limit is \(2\), not \(4\).
+
+## 7. The sixteen-phase ensemble, as a sample
 
 The ensemble of `BGS-TRACE-126` puts one uniform phase on each of the \(16\) mode pairs and keeps those phases fixed along the orbit. Section 1 does not evaluate it. Outside the window \(m B\lvert\eta\rvert\le 1\), a CUE identification \( \mathbb E_\varphi\lvert\operatorname{Tr} U^m\rvert^2=\min(m,N) \) was tested numerically and is not adopted.
 
@@ -178,7 +190,7 @@ The probe builds \(U(\eta,\varphi)=\exp(i\eta A_N(\varphi))M_N\) from the same W
 
 A wider Python scan, not repeated entrywise in C++, shows arithmetic revivals of size \(N^2\) falling once \(\eta\) is of order \(1\) or larger, except at dimension \(7\), and it shows other pairs \((N,m,\eta)\) with the same kind of spike. Those rows are properties of the recorded samples. They are not a proved lower bound on the expectation, and they are the reason this note does not identify the sixteen-phase form factor with the CUE or COE ramp.
 
-## 7. Self-audit
+## 8. Self-audit
 
 The time-two count was checked against the closed form before the time-three count was trusted. Replacing the six triangle words by three would replace the limit \(6\) by a different rational; the enumeration rejects that replacement. The one-site and two-site buckets were not given the cat-map phase identity, because their amplitudes agree for every flat matrix.
 
@@ -188,15 +200,15 @@ Nat subtraction is not used for the gap. The factored form \((5N-4)(N-1)\) is an
 
 The trace-closure input is not re-proved. The verifiers compare the literal squared trace of \(M_N^m\) with the kernel count; that comparison is a finite check of the cited lemma, not a second proof.
 
-Section 6 does not say that the sixteen-phase expectation equals the printed sample mean. It does not say that the expectation tends to \(\min(m,N)\). A single large sample at \(N=31\), \(m=5\), \(\eta=2\) is compatible both with a finite-\(N\) resonance that disappears as \(N\to\infty\) and with a limit that is not CUE. Neither alternative is proved.
+Section 7 does not say that the sixteen-phase expectation equals the printed sample mean. It does not say that the expectation tends to \(\min(m,N)\). A single large sample at \(N=31\), \(m=5\), \(\eta=2\) is compatible both with a finite-\(N\) resonance that disappears as \(N\to\infty\) and with a limit that is not CUE. Neither alternative is proved.
 
-No external theorem is used as a lemma. Averages over diagonal unitaries have a graphical calculus in the literature; that calculus is not an input. The Haar form factor of \(U(N)\) is not an input. The Keating–Mezzadri discussion of one shear and of two orthogonal shears is background for why a CUE guess was tested in Section 6. It is not a lemma, and the test did not adopt the guess.
+Tanner and Pakoński–Życzkowski–Kuś are priority references for the ensemble and for the occupation constraint. No identity in Theorems 1–3 is quoted from them. The orthogonal symmetry explains the factors \(6\) and \(2\). It does not replace the count, and it does not identify the \(N\)-torus measure with Haar measure on the circular orthogonal ensemble.
 
-## 8. Certificates
+## 9. Certificates
 
 - `computations/verification/diagonal_phase_form_factor.py`
 - `computations/cpp/diagonal_phase_form_factor.cpp`
 - `formalization/Bgs/DiagonalPhaseFormFactorRational.lean`
 - `evidence/executions/20261029/diagonal-phase-form-factor/README.md`
 
-Lean decides \(S^2\), \(S^3\), \(\det(S^2-I)=-32\), the factorization \(S^3-I=14A\) with \(\det A=-1\), the identity \((5N-4)(N-1)=5N^2-9N+4\), the strict gaps at times two and three, and the comparison with \(6\). Python and C++ enumerate the occupation sum at times \(1\), \(2\) and \(3\) for every odd modulus in the receipt, including \(3\), \(5\) and \(7\), and match the closed forms. They recompute both kernels. They recompute one common sixteen-phase sample. A pass does not prove `BGS-TRACE-005` or `BGS-BGS-001`.
+Lean decides \(S^2\), \(S^3\), \(\det(S^2-I)=-32\), the factorization \(S^3-I=14A\) with \(\det A=-1\), the identity \((5N-4)(N-1)=5N^2-9N+4\), the strict gaps at times two and three, the comparison with \(6\), and the brute-force kernel of \(S^3-I\) at \(N=7,9,21,49\). Python and C++ check the occupation sums in floating point at times \(1\), \(2\) and \(3\) for every odd modulus in the receipt, including \(3\), \(5\) and \(7\), and match the closed forms. They recompute both kernels. They recompute one common sixteen-phase sample. A pass does not prove `BGS-TRACE-005` or `BGS-BGS-001`.

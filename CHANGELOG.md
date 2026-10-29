@@ -2,7 +2,7 @@
 
 ## 2026-10-29 — Diagonal random-phase form factor
 
-Register BGS-TRACE-127. For a flat matrix times independent uniform phases on the diagonal, the averaged squared trace equals \(1\) at time one, \((2N-1)/N\) at time two, and is at most \(m!\) at every positive time. For the cat-map quantization the time-three value is \((6N^2-9N+4)/N^2\). The pure kernel has order \(1\) at time two, and order \(49\) or \(1\) at time three according as \(7\) divides the odd modulus. A draft formula \(7^{2v_7(N)}\) was rejected by the count at \(N=49\), which returns \(49\). The sixteen-phase ensemble of BGS-TRACE-126 is not identified with CUE or COE. Python, C++ and a Lean rational witness certify the integers and the occupation sums. The dependency on BGS-TRACE-126 is the trace-closure lemma only. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+Register BGS-TRACE-127. For a flat matrix times independent uniform phases on the diagonal, the averaged squared trace equals \(1\) at time one, \((2N-1)/N\) at time two, and is at most \(m!\) at every positive time. For the cat-map quantization the time-three value is \((6N^2-9N+4)/N^2\). The pure kernel has order \(1\) at time two, and order \(49\) or \(1\) at time three according as \(7\) divides the odd modulus. A draft formula \(7^{2v_7(N)}\) was rejected by the count at \(N=49\), which returns \(49\). The sixteen-phase ensemble of BGS-TRACE-126 is not identified with CUE or COE. Python and C++ check the occupation sums in floating point; a Lean rational witness certifies the integer factorisations and gaps. The dependency on BGS-TRACE-126 is the trace-closure lemma only. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
 
 ## 2026-10-29 — Phase-averaged form factor
 

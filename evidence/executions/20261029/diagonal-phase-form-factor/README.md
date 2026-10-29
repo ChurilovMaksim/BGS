@@ -1,6 +1,6 @@
 # BGS-TRACE-127 certificate
 
-29 October 2026. The occupation sums are floating-point checks of the counting argument. The kernels, the symbol energy, and the phase identity of \(Q\) are exact integer checks. Python and C++ both perform them. Lean decides the matrix factorizations and the integer gaps. It does not formalize the path count.
+29 October 2026. Python and C++ check the occupation sums in floating point. The kernels, the symbol energy, and the phase identity of \(Q\) are exact integer checks in both programs. A Lean rational witness certifies the integer factorisations, the gaps, and the brute-force kernel of \(S^3-I\) at \(N=7,9,21,49\). It does not formalize the path count.
 
 ## Coverage
 

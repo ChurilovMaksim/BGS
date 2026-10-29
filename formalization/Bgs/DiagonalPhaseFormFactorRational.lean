@@ -53,7 +53,7 @@ theorem s2Entries :
 theorem s3Factor :
     ((7 : Int) * 7 - 10 * 5 = -1) ∧
     (14 * 7 + 1 = 99) ∧ (14 * 10 = 140) ∧
-    (14 * 5 = 70) ∧ (14 * 7 + 1 = 99) := by
+    (14 * 5 = 70) := by
   decide
 
 theorem s3Entries :
@@ -70,22 +70,16 @@ theorem pureRevivalAt7 : (7 : Int) * 7 = 49 := by
 theorem sixBelowFortyNine : (6 : Int) < 49 := by
   decide
 
-/-- Certificate dimensions, including `3`, `5` and `7`. -/
-def certN : List Nat := [3, 5, 7, 9, 11, 15, 21, 25, 27, 35, 45, 49, 63, 105]
+/-- Brute-force count of `(a,b) mod N` with `(S^3-I)(a,b) = 0`,
+where `S^3-I = [[98,140],[70,98]]`. -/
+def kernelCount3 (N : Nat) : Nat :=
+  (List.range N).foldl (fun acc a =>
+    (List.range N).foldl (fun acc2 b =>
+      let e1 := (98 * a + 140 * b) % N
+      let e2 := (70 * a + 98 * b) % N
+      acc2 + if e1 = 0 ∧ e2 = 0 then 1 else 0) acc) 0
 
-/-- For odd `N`, `gcd(14,N)` is `7` when `7` divides `N` and `1` otherwise. -/
-def ker3 (N : Nat) : Nat := if N % 7 = 0 then 49 else 1
-
-def ker3Ok : Bool :=
-  certN.all fun N =>
-    if N % 7 = 0 then ker3 N = 49 else ker3 N = 1
-
-theorem ker3_certificate : ker3Ok = true := by
-  decide
-
-theorem ker3_7 : ker3 7 = 49 := by decide
-theorem ker3_9 : ker3 9 = 1 := by decide
-theorem ker3_21 : ker3 21 = 49 := by decide
-theorem ker3_49 : ker3 49 = 49 := by decide
-theorem ker3_63 : ker3 63 = 49 := by decide
-theorem ker3_105 : ker3 105 = 49 := by decide
+theorem kernelCount3_7 : kernelCount3 7 = 49 := by decide
+theorem kernelCount3_9 : kernelCount3 9 = 1 := by decide
+theorem kernelCount3_21 : kernelCount3 21 = 49 := by decide
+theorem kernelCount3_49 : kernelCount3 49 = 49 := by decide
