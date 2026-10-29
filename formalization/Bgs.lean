@@ -53,5 +53,6 @@ import Bgs.SixteenPhaseSymmetryRational
 import Bgs.HyperbolicDiagonalFormFactor
 import Bgs.HyperbolicShortTime
 import Bgs.RevivalClosureRational
+import Bgs.MomentumPhaseCue
 
 import Bgs.Mathlib

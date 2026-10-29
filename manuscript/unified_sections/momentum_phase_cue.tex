@@ -1,0 +1,38 @@
+\section{Unitary short-time form factor for a momentum-phase cat map}
+\label{sec:momentum-phase-cue}
+The phases below are independent Haar phases in the position basis and in the
+momentum basis, or independent Gaussian momentum phases of variance \(v\).
+They are not the sixteen mode-pair phases, and the propagator is not the fixed kick.
+The canonical proof is
+\path{mathematics/fixed-map/momentum_phase_cue.md}.
+Integer comparisons are certified by
+\path{formalization/Bgs/MomentumPhaseCue.lean}.
+Python and C++ recompute the occupation buckets in floating point. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Momentum-phase unitary value, BGS-TRACE-140]
+\label{thm:momentum-phase-cue}
+Let \(p\) be an odd prime, let \(S\in\mathrm{SL}(2,\mathbb Z)\) be hyperbolic, and assume \(p\) does not divide the upper-right entry or the lower-right entry. Let \(\lambda\) be the inverse of the lower-right entry, and assume \(\lambda\not\equiv -1\pmod p\). Let \(D\) and \(E\) be independent Haar diagonal unitaries, let \(R\) be \(E\) conjugated into the momentum basis by the Fourier matrix, and set \(U=DRM\). Then \(\mathbb E\lvert\operatorname{Tr} U\rvert^2=1\). At time two assume \(\lambda\not\equiv-1\). The distance to \(2\) is at most \(20/p\). For every \(m\ge 3\),
+\[
+\Bigl\lvert\mathbb E\lvert\operatorname{Tr} U^m\rvert^2
+-m\frac{P(p,m)}{p^m}\Bigr\rvert
+\le\frac{(m!)^2\bigl(1+2m(m-1)\bigr)}{p}.
+\]
+The fixed-time limit is \(m\). The logarithmic window has \(c<1/2\) and does not reach \(m\le p^{\alpha}\). Position conjugation reverses the momentum factor if and only if its eigenvalues are even, a measure-zero condition. The reflection contribution is \(o(1)\).
+\end{theorem}
+
+\begin{theorem}[Moments, BGS-TRACE-141]
+\label{thm:momentum-phase-moments}
+Under the same hypotheses, for each fixed integer \(k\ge 1\) and every \(m\ge 3\),
+\[
+\Bigl\lvert\mathbb E\lvert\operatorname{Tr} U^m\rvert^{2k}
+-k!\,m^k\frac{P(p,km)}{p^{km}}\Bigr\rvert
+\le\frac{\bigl((km)!\bigr)^2\bigl(1+2km(km-1)\bigr)}{p}.
+\]
+The fixed-time limit is \(k!\,m^k\). For fixed \(k\) the logarithmic window has \(c<1/(2k)\).
+\end{theorem}
+
+\begin{theorem}[Gaussian crossover, BGS-TRACE-142, verification-pending]
+\label{thm:momentum-phase-crossover}
+Replace the Haar momentum eigenvalues by \(\exp(i\sqrt{v}\,g_j)\) with independent standard Gaussians \(g_j\) and variance \(v\ge 0\). The rotation and reflection main terms are \(m\) and \(m e^{-vm}\), evaluated where \(A=I-\lambda C\) is invertible, so \(\lambda^t\not\equiv 1\) for \(1\le t\le m\). Theorems 1 and 2 do not use that inverse. The contribution of non-injective position words is not bounded: the occupation count uses the Haar momentum constraint and does not apply to Gaussian weights. The limit \(m(1+e^{-vm})\) is verification-pending. Exact finite-\(p\) values approach it with a gap of about \(4/p\) at \(m=3\), \(v=0.4\). The odd part of the maintained symbol has energy \(9/125000\). The choice \(v=\sigma_{\mathrm{odd}}\eta^2\) is a convention; partner-variance matching gives twice this. Neither identification evaluates the sixteen-phase propagator.
+\end{theorem}

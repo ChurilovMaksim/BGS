@@ -1,0 +1,100 @@
+{
+  "odd_energy": "9/125000",
+  "rows": [
+    {
+      "p": 5,
+      "m": 2,
+      "admissible": true,
+      "value": 1.64,
+      "main": 2.0,
+      "gap": 0.36,
+      "bound": 4.0
+    },
+    {
+      "p": 5,
+      "m": 3,
+      "admissible": true,
+      "value": 2.8816,
+      "main": 1.44,
+      "gap": 1.4416,
+      "bound": 93.6
+    },
+    {
+      "p": 7,
+      "m": 2,
+      "admissible": true,
+      "value": 1.7346938776,
+      "main": 2.0,
+      "gap": 0.2653061224,
+      "bound": 2.8571428571
+    },
+    {
+      "p": 7,
+      "m": 3,
+      "admissible": true,
+      "value": 2.9541857559,
+      "main": 1.8367346939,
+      "gap": 1.1174510621,
+      "bound": 66.8571428571
+    },
+    {
+      "p": 11,
+      "m": 2,
+      "admissible": true,
+      "value": 1.826446281,
+      "main": 2.0,
+      "gap": 0.173553719,
+      "bound": 1.8181818182
+    },
+    {
+      "p": 11,
+      "m": 3,
+      "admissible": true,
+      "value": 2.9875691551,
+      "main": 2.2314049587,
+      "gap": 0.7561641964,
+      "bound": 42.5454545455
+    },
+    {
+      "p": 13,
+      "m": 2,
+      "admissible": true,
+      "value": 1.8520710059,
+      "main": 2.0,
+      "gap": 0.1479289941,
+      "bound": 1.5384615385
+    },
+    {
+      "p": 13,
+      "m": 3,
+      "admissible": true,
+      "value": 3.418402717,
+      "main": 2.3431952663,
+      "gap": 1.0752074507,
+      "bound": 36.0
+    }
+  ],
+  "gaussian_sample": {
+    "p": 29,
+    "m": 3,
+    "v": 0.4,
+    "samples": 600,
+    "mean": 3.709072377846118,
+    "prediction": 3.9035826357366057
+  },
+  "residue_t3": {
+    "moduli": [
+      5,
+      7,
+      11,
+      13
+    ],
+    "value": 27,
+    "residues": [
+      2,
+      6,
+      5,
+      1
+    ]
+  }
+}

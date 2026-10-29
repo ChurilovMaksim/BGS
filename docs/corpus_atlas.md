@@ -27,21 +27,21 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**356 maintained proof notes; 10 topic views; 223 core claim IDs.**
+**357 maintained proof notes; 10 topic views; 226 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
 | open | 7 |
-| proved | 195 |
-| verification-pending | 12 |
+| proved | 197 |
+| verification-pending | 13 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
 No state is inferred for an unregistered note. Read its proof and the full ledger.
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 157 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 158 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -134,6 +134,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Uniform cancellation of macroscopic coordinate-translation path pairs](../mathematics/fixed-map/macroscopic_coordinate_translation.md) | Consult proof and full ledger |
 | [Exact microscopic noise defect and barriers to deterministic transfer](../mathematics/fixed-map/microscopic_noise_removal.md) | `BGS-FLOW-015` (proved) |
 | [Ordered-diagonal interfaces for several and mismatched cycles](../mathematics/fixed-map/mixed_ordered_diagonal.md) | Consult proof and full ledger |
+| [Unitary short-time form factor for a momentum-phase cat map](../mathematics/fixed-map/momentum_phase_cue.md) | `BGS-TRACE-140` (proved); `BGS-TRACE-141` (proved); `BGS-TRACE-142` (verification-pending) |
 | [Pressure growth of nonlinear brackets in the fixed frozen model](../mathematics/fixed-map/nonlinear_bracket_pressure.md) | `BGS-FM-006` (proved) |
 | [Every odd modulus lies above \(3/4\) or below \(5/7\)](../mathematics/fixed-map/odd_modulus_abel.md) | `BGS-TRACE-124` (proved) |
 | [Odd-depth newest-sector first-order splitting](../mathematics/fixed-map/odd_newest_sector_first_jet.md) | Consult proof and full ledger |
