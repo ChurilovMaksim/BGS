@@ -70,6 +70,10 @@ imports Mathlib, which this project does not vendor as in-repo sources (`lake-ma
 | `Fm009TraceObstruction.lean` | FM-009 implication kernel only: common reversor ⇒ trace([A,M]³) = 0; axioms [propext, Classical.choice, Quot.sound]; the nonzero computation (1) remains project proof |
 | `Fm001Statement.lean` | FM-001: statement formalization only — exact Weyl dictionary (§1), Fourier weight 51451/1000 and 32-mode count (§3) as `Prop`s; no theorems and no proofs; the §2 classical conclusions (Anosov, trivial C¹ centralizer, no C¹ reversor, no affine conjugacy) are NOT stated — no C¹-diffeomorphism/Anosov API in Mathlib 4.33.1; statement definitions depend on axioms [propext, Classical.choice, Quot.sound] |
 | `Fm021Statement.lean` | FM-021: statement formalization only — mixing, powers, trace/cyclic ramps and marked three-link bounds as `Prop`s, plus the §4 pair CUE target stated as open; no theorems and no proofs; statement definitions depend on axioms [propext, Classical.choice, Quot.sound] |
+| `LineBDerand.lean` | `Bgs.LineB.Derand`: finite `decide` certificates for the fixed diagonal kick (Lemma Q, Pell identity, \(D_m\), \(g'_m\)); no `sorry`, no `native_decide`; no analytic limit |
+| `LineBPhase2.lean` | `Bgs.LineB.Phase2`: finite `decide` certificates for Theorem D at odd \(m\le 9\), symbol symmetries through \(n\le 60\), and Theorem N hypotheses at \(m=7,19\); no `sorry`, no `native_decide` |
+| `LineBPhase3.lean` | `Bgs.LineB.Phase3`: norm-class invariance by `ring`, odd-symbol square, parity-lattice sums, and the \(m=7\) order check; imports `Mathlib.Tactic.Ring`; no `sorry`, no `native_decide` |
+| `LineBPhase4.lean` | `Bgs.LineB.Phase4`: rational bounds by `norm_num` and the lattice relation `m3_relation` by `decide`; imports `Mathlib`; no `sorry`, no `native_decide`; not a formalization of Theorem D_cert |
 
 The former isolated `CayleyExceptionalK23.lean` was folded into
 `CayleyEnergy.lean`; generic and exceptional controls share one implementation.

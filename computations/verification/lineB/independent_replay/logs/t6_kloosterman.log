@@ -1,0 +1,5 @@
+h=41: Gauss ratio sum/(h e(-A^-1/h)) = A=1:+1.000000+9.0e-16i, A=2:+1.000000-5.6e-16i, A=5:+1.000000+5.3e-16i | max|sum_r Kl(rs)conj Kl(rs') - h(h[s=s']-1)| = 1.599e+03; s=s'=0 entry 41.0 vs 1640.0; s=s'=1 1640.0 vs 1640.0
+h=239: Gauss ratio sum/(h e(-A^-1/h)) = A=1:+1.000000-2.0e-16i, A=2:+1.000000-1.8e-15i, A=5:+1.000000-2.9e-14i | max|sum_r Kl(rs)conj Kl(rs') - h(h[s=s']-1)| = 5.664e+04; s=s'=0 entry 239.0 vs 56882.0; s=s'=1 56882.0 vs 56882.0
+h=1393: Gauss ratio sum/(h e(-A^-1/h)) = A=1:+1.000000-1.1e-15i, A=2:+1.000000+4.1e-15i, A=5:+1.000000+4.0e-15i
+h=41: restricted to s,s' != 0: max dev = 2.27e-13; row s=0 vs s'!=0: G[0,1]=0.0 (formula -41)
+h=239: restricted to s,s' != 0: max dev = 1.46e-11; row s=0 vs s'!=0: G[0,1]=0.0 (formula -239)

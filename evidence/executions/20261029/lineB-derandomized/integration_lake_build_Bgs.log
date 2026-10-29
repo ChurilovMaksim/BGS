@@ -1,0 +1,281 @@
+=== date ===
+Thu Oct 29 10:06:51 PM UTC 2026
+=== lake exe cache get ===
+info: mathlib: cloning https://github.com/leanprover-community/mathlib4
+info: mathlib: checking out revision '0df444a360eaa60ab8c11dca51a86af692955474'
+info: plausible: cloning https://github.com/leanprover-community/plausible
+info: plausible: checking out revision 'b7eb3304aeae834b12dda98993a37f6a41f6f0bb'
+info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+info: LeanSearchClient: checking out revision '5f4d51b81cbd3f6b32b156bfad9056621a040404'
+info: importGraph: cloning https://github.com/leanprover-community/import-graph
+info: importGraph: checking out revision '16f02aa7642864af59f1ff0e384a015994db9118'
+info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+info: proofwidgets: checking out revision '4be2e3d5087eeb272cf5a8853b8f9dd025ef5957'
+info: aesop: cloning https://github.com/leanprover-community/aesop
+info: aesop: checking out revision '3448c0bcc5ce01b2d1546e483ec3620e32df3d0e'
+info: Qq: cloning https://github.com/leanprover-community/quote4
+info: Qq: checking out revision '92c15be17b7caf78c2ad767ec40f89052d908d81'
+info: batteries: cloning https://github.com/leanprover-community/batteries
+info: batteries: checking out revision '4488d40d070b9700d4d5a6aa342f0d40c31b2a2d'
+info: Cli: cloning https://github.com/leanprover/lean4-cli
+info: Cli: checking out revision '6130a47896ce867c6a4a55373441e59e565bad0f'
+✔ [1/5] Built Cache.Cli (239ms)
+✔ [2/5] Built Cache.Lean (265ms)
+✔ [6/26] Built Cache.Cli:c.o (96ms)
+✔ [7/26] Built Cache.Lean:c.o (100ms)
+✔ [8/26] Built Cache.Infra (246ms)
+✔ [9/26] Built Cache.Infra:c.o (141ms)
+✔ [10/26] Built Batteries.Tactic.OpenPrivate (571ms)
+✔ [11/26] Built Batteries.Tactic.OpenPrivate:c.o (819ms)
+✔ [12/26] Built Cache.IO (887ms)
+✔ [13/26] Built Cache.Hashing (506ms)
+✔ [14/26] Built Cache.Hashing:c.o (293ms)
+✔ [15/26] Built Cache.IO:c.o (1.1s)
+✔ [16/26] Built Cache.Requests (1.3s)
+✔ [17/26] Built Cache.Marker (421ms)
+✔ [18/26] Built Cache.Marker:c.o (75ms)
+✔ [19/26] Built Cache.Query (443ms)
+✔ [20/26] Built Cache.Query:c.o (199ms)
+✔ [21/26] Built Cache.Warning (417ms)
+✔ [22/26] Built Cache.Warning:c.o (171ms)
+✔ [23/26] Built Cache.Requests:c.o (1.9s)
+✔ [24/26] Built Cache.Main (773ms)
+✔ [25/26] Built Cache.Main:c.o (679ms)
+✔ [26/26] Built cache:exe (684ms)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 8690 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4-master
+Downloaded: 1 file(s) [attempted 1/8690 = 0%, 58 KB/s], Decompressed: 0[KDownloaded: 81 file(s) [attempted 81/8690 = 0%, 439 KB/s], Decompressed: 44[KDownloaded: 187 file(s) [attempted 187/8690 = 2%, 891 KB/s], Decompressed: 95[KDownloaded: 293 file(s) [attempted 293/8690 = 3%, 282 KB/s], Decompressed: 155[KDownloaded: 414 file(s) [attempted 414/8690 = 4%, 1605 KB/s], Decompressed: 155[KDownloaded: 526 file(s) [attempted 526/8690 = 6%, 535 KB/s], Decompressed: 155[KDownloaded: 654 file(s) [attempted 654/8690 = 7%, 424 KB/s], Decompressed: 279[KDownloaded: 785 file(s) [attempted 785/8690 = 9%, 191 KB/s], Decompressed: 279[KDownloaded: 920 file(s) [attempted 920/8690 = 10%, 155 KB/s], Decompressed: 279[KDownloaded: 1048 file(s) [attempted 1048/8690 = 12%, 693 KB/s], Decompressed: 279[KDownloaded: 1174 file(s) [attempted 1174/8690 = 13%, 638 KB/s], Decompressed: 279[KDownloaded: 1293 file(s) [attempted 1293/8690 = 14%, 735 KB/s], Decompressed: 279[KDownloaded: 1433 file(s) [attempted 1433/8690 = 16%, 2634 KB/s], Decompressed: 279[KDownloaded: 1559 file(s) [attempted 1559/8690 = 17%, 268 KB/s], Decompressed: 279[KDownloaded: 1698 file(s) [attempted 1698/8690 = 19%, 5475 KB/s], Decompressed: 626[KDownloaded: 1831 file(s) [attempted 1831/8690 = 21%, 130 KB/s], Decompressed: 626[KDownloaded: 1955 file(s) [attempted 1955/8690 = 22%, 964 KB/s], Decompressed: 626[KDownloaded: 2085 file(s) [attempted 2085/8690 = 23%, 2624 KB/s], Decompressed: 626[KDownloaded: 2209 file(s) [attempted 2209/8690 = 25%, 317 KB/s], Decompressed: 626[KDownloaded: 2341 file(s) [attempted 2341/8690 = 26%, 896 KB/s], Decompressed: 626[KDownloaded: 2467 file(s) [attempted 2467/8690 = 28%, 1605 KB/s], Decompressed: 626[KDownloaded: 2598 file(s) [attempted 2598/8690 = 29%, 4451 KB/s], Decompressed: 626[KDownloaded: 2719 file(s) [attempted 2719/8690 = 31%, 1251 KB/s], Decompressed: 626[KDownloaded: 2857 file(s) [attempted 2857/8690 = 32%, 5108 KB/s], Decompressed: 626[KDownloaded: 2982 file(s) [attempted 2982/8690 = 34%, 480 KB/s], Decompressed: 626[KDownloaded: 3115 file(s) [attempted 3115/8690 = 35%, 668 KB/s], Decompressed: 626[KDownloaded: 3257 file(s) [attempted 3257/8690 = 37%, 278 KB/s], Decompressed: 626[KDownloaded: 3383 file(s) [attempted 3383/8690 = 38%, 504 KB/s], Decompressed: 626[KDownloaded: 3500 file(s) [attempted 3500/8690 = 40%, 175 KB/s], Decompressed: 626[KDownloaded: 3618 file(s) [attempted 3618/8690 = 41%, 98 KB/s], Decompressed: 626[KDownloaded: 3739 file(s) [attempted 3739/8690 = 43%, 1108 KB/s], Decompressed: 626[KDownloaded: 3881 file(s) [attempted 3881/8690 = 44%, 5047 KB/s], Decompressed: 626[KDownloaded: 4014 file(s) [attempted 4014/8690 = 46%, 208 KB/s], Decompressed: 626[KDownloaded: 4147 file(s) [attempted 4147/8690 = 47%, 1263 KB/s], Decompressed: 626[KDownloaded: 4280 file(s) [attempted 4280/8690 = 49%, 736 KB/s], Decompressed: 626[KDownloaded: 4410 file(s) [attempted 4410/8690 = 50%, 1729 KB/s], Decompressed: 626[KDownloaded: 4545 file(s) [attempted 4545/8690 = 52%, 3333 KB/s], Decompressed: 1691[KDownloaded: 4683 file(s) [attempted 4683/8690 = 53%, 592 KB/s], Decompressed: 1691[KDownloaded: 4806 file(s) [attempted 4806/8690 = 55%, 771 KB/s], Decompressed: 1691[KDownloaded: 4946 file(s) [attempted 4946/8690 = 56%, 785 KB/s], Decompressed: 1691[KDownloaded: 5072 file(s) [attempted 5072/8690 = 58%, 504 KB/s], Decompressed: 1691[KDownloaded: 5202 file(s) [attempted 5202/8690 = 59%, 353 KB/s], Decompressed: 1691[KDownloaded: 5337 file(s) [attempted 5337/8690 = 61%, 2085 KB/s], Decompressed: 1691[KDownloaded: 5472 file(s) [attempted 5472/8690 = 62%, 1734 KB/s], Decompressed: 1691[KDownloaded: 5598 file(s) [attempted 5598/8690 = 64%, 819 KB/s], Decompressed: 1691[KDownloaded: 5738 file(s) [attempted 5738/8690 = 66%, 1377 KB/s], Decompressed: 1691[KDownloaded: 5873 file(s) [attempted 5873/8690 = 67%, 184 KB/s], Decompressed: 1691[KDownloaded: 6004 file(s) [attempted 6004/8690 = 69%, 230 KB/s], Decompressed: 1691[KDownloaded: 6134 file(s) [attempted 6134/8690 = 70%, 3163 KB/s], Decompressed: 1691[KDownloaded: 6265 file(s) [attempted 6265/8690 = 72%, 4175 KB/s], Decompressed: 1691[KDownloaded: 6390 file(s) [attempted 6390/8690 = 73%, 1723 KB/s], Decompressed: 1691[KDownloaded: 6516 file(s) [attempted 6516/8690 = 74%, 80 KB/s], Decompressed: 1691[KDownloaded: 6651 file(s) [attempted 6651/8690 = 76%, 465 KB/s], Decompressed: 1691[KDownloaded: 6775 file(s) [attempted 6775/8690 = 77%, 1548 KB/s], Decompressed: 1691[KDownloaded: 6917 file(s) [attempted 6917/8690 = 79%, 611 KB/s], Decompressed: 1691[KDownloaded: 7047 file(s) [attempted 7047/8690 = 81%, 385 KB/s], Decompressed: 1691[KDownloaded: 7175 file(s) [attempted 7175/8690 = 82%, 1354 KB/s], Decompressed: 1691[KDownloaded: 7302 file(s) [attempted 7302/8690 = 84%, 443 KB/s], Decompressed: 1691[KDownloaded: 7425 file(s) [attempted 7425/8690 = 85%, 1231 KB/s], Decompressed: 1691[KDownloaded: 7557 file(s) [attempted 7557/8690 = 86%, 227 KB/s], Decompressed: 1691[KDownloaded: 7683 file(s) [attempted 7683/8690 = 88%, 1174 KB/s], Decompressed: 1691[KDownloaded: 7811 file(s) [attempted 7811/8690 = 89%, 803 KB/s], Decompressed: 1691[KDownloaded: 7930 file(s) [attempted 7930/8690 = 91%, 117 KB/s], Decompressed: 1691[KDownloaded: 8065 file(s) [attempted 8065/8690 = 92%, 417 KB/s], Decompressed: 1691[KDownloaded: 8200 file(s) [attempted 8200/8690 = 94%, 811 KB/s], Decompressed: 1691[KDownloaded: 8319 file(s) [attempted 8319/8690 = 95%, 2002 KB/s], Decompressed: 1691[KDownloaded: 8454 file(s) [attempted 8454/8690 = 97%, 935 KB/s], Decompressed: 1691[KDownloaded: 8573 file(s) [attempted 8573/8690 = 98%, 281 KB/s], Decompressed: 1691[KDownloaded: 8683 file(s) [attempted 8683/8690 = 99%, 220 KB/s], Decompressed: 1691[KDownloaded: 8687 file(s) [attempted 8687/8690 = 99%, 281 KB/s], Decompressed: 1691[KDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 281 KB/s], Decompressed: 1691[K
+Decompressed 8690 file(s)
+Already decompressed 8690 file(s)
+cache_exit:0
+=== lake build Bgs ===
+bash: /usr/bin/time: No such file or directory
+build_exit:127
+=== date ===
+Thu Oct 29 10:07:45 PM UTC 2026
+DONE
+=== lake build Bgs (retry; /usr/bin/time was absent on the first attempt) ===
+Thu Oct 29 10:13:17 PM UTC 2026
+✔ [1/26] Built Bgs.CueLoopKernels (983ms)
+ℹ [2/26] Built Bgs.FibonacciRatioSmall (980ms)
+info: Bgs/FibonacciRatioSmall.lean:104:0: 'Bgs.FibonacciRatioSmall.bounded_energy' depends on axioms: [bounded_energy._native.native_decide.ax_1_1]
+info: Bgs/FibonacciRatioSmall.lean:105:0: 'Bgs.FibonacciRatioSmall.bounded_high_collisions_are_local' depends on axioms: [bounded_high_collisions_are_local._native.native_decide.ax_1_1]
+info: Bgs/FibonacciRatioSmall.lean:106:0: 'Bgs.FibonacciRatioSmall.difference_one_multiplicity' depends on axioms: [difference_one_multiplicity._native.native_decide.ax_1_1]
+info: Bgs/FibonacciRatioSmall.lean:107:0: 'Bgs.FibonacciRatioSmall.difference_two_multiplicity' depends on axioms: [difference_two_multiplicity._native.native_decide.ax_1_1]
+info: Bgs/FibonacciRatioSmall.lean:108:0: 'Bgs.FibonacciRatioSmall.difference_four_multiplicity' depends on axioms: [difference_four_multiplicity._native.native_decide.ax_1_1]
+ℹ [3/26] Built Bgs.AnalyticOrbitKernels (1.2s)
+info: Bgs/AnalyticOrbitKernels.lean:43:0: 'Bgs.AnalyticOrbitKernels.growthBySteps' depends on axioms: [propext, Quot.sound]
+info: Bgs/AnalyticOrbitKernels.lean:44:0: 'Bgs.AnalyticOrbitKernels.positiveCancellation' does not depend on any axioms
+info: Bgs/AnalyticOrbitKernels.lean:45:0: 'Bgs.AnalyticOrbitKernels.negativeNoncancellation' does not depend on any axioms
+info: Bgs/AnalyticOrbitKernels.lean:46:0: 'Bgs.AnalyticOrbitKernels.signedActionsDiffer' does not depend on any axioms
+ℹ [4/26] Built Bgs.HistoricalMobiusDegenerateFiber (250ms)
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:47:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_constant_53' depends on axioms: [d0_constant_53._native.native_decide.ax_1_1]
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:48:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_cardinality_53' depends on axioms: [d0_cardinality_53._native.native_decide.ax_1_1]
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:49:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_constant_199' depends on axioms: [d0_constant_199._native.native_decide.ax_1_1]
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:50:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_cardinality_199' depends on axioms: [d0_cardinality_199._native.native_decide.ax_1_1]
+ℹ [5/26] Built Bgs.LocalityKernels (468ms)
+info: Bgs/LocalityKernels.lean:38:0: 'Bgs.LocalityKernels.image_band' depends on axioms: [propext, Quot.sound]
+info: Bgs/LocalityKernels.lean:39:0: 'Bgs.LocalityKernels.excludes_support_strip' depends on axioms: [propext, Quot.sound]
+info: Bgs/LocalityKernels.lean:40:0: 'Bgs.LocalityKernels.cauchy_disk_constant' does not depend on any axioms
+info: Bgs/LocalityKernels.lean:41:0: 'Bgs.LocalityKernels.exponent_budget' depends on axioms: [propext, Quot.sound]
+info: Bgs/LocalityKernels.lean:42:0: 'Bgs.LocalityKernels.gap_partition' depends on axioms: [propext, Quot.sound]
+ℹ [6/26] Built Bgs.CayleyEnergy (1.8s)
+info: Bgs/CayleyEnergy.lean:138:0: 'Bgs.CayleyEnergy.k11_generic_energy' depends on axioms: [k11_generic_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:139:0: 'Bgs.CayleyEnergy.k11_exceptional_energy' depends on axioms: [k11_exceptional_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:140:0: 'Bgs.CayleyEnergy.k13_generic_energy' depends on axioms: [k13_generic_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:141:0: 'Bgs.CayleyEnergy.k13_exceptional_energy' depends on axioms: [k13_exceptional_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:142:0: 'Bgs.CayleyEnergy.k23_energy' depends on axioms: [k23_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:143:0: 'Bgs.CayleyEnergy.k23_has_excess' depends on axioms: [k23_has_excess._native.native_decide.ax_1_1]
+✔ [7/26] Built Bgs.MagneticTraceSmall (597ms)
+ℹ [8/26] Built Bgs.PairKeySecondMoment (366ms)
+info: Bgs/PairKeySecondMoment.lean:78:0: 'Bgs.PairKeySecondMoment.constraint_count' depends on axioms: [constraint_count._native.native_decide.ax_1_1]
+info: Bgs/PairKeySecondMoment.lean:79:0: 'Bgs.PairKeySecondMoment.parameterization_bijection' depends on axioms: [parameterization_bijection._native.native_decide.ax_1_1]
+info: Bgs/PairKeySecondMoment.lean:80:0: 'Bgs.PairKeySecondMoment.design_sizes' depends on axioms: [design_sizes._native.native_decide.ax_1_1]
+info: Bgs/PairKeySecondMoment.lean:81:0: 'Bgs.PairKeySecondMoment.generator_exact_order' depends on axioms: [generator_exact_order._native.native_decide.ax_1_1]
+✔ [9/26] Built Bgs.PellCohomology (463ms)
+✔ [10/26] Built Bgs.PellEchoWeights (462ms)
+ℹ [11/26] Built Bgs.PellCoboundary (826ms)
+info: Bgs/PellCoboundary.lean:53:0: 'Bgs.PellCoboundary.structuralIdentity' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellCoboundary.lean:54:0: 'Bgs.PellCoboundary.firstSpeciesPeriod' depends on axioms: [firstSpeciesPeriod._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:55:0: 'Bgs.PellCoboundary.secondSpeciesPeriod' depends on axioms: [secondSpeciesPeriod._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:56:0: 'Bgs.PellCoboundary.pairCount' depends on axioms: [pairCount._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:57:0: 'Bgs.PellCoboundary.distinctCount' depends on axioms: [distinctCount._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:58:0: 'Bgs.PellCoboundary.noZero' depends on axioms: [noZero._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:59:0: 'Bgs.PellCoboundary.multiplicityAtMostTwo' depends on axioms: [multiplicityAtMostTwo._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:60:0: 'Bgs.PellCoboundary.doubleKeyCount' depends on axioms: [doubleKeyCount._native.native_decide.ax_1_1]
+ℹ [12/26] Built Bgs.PellFourierKernel (442ms)
+info: Bgs/PellFourierKernel.lean:47:0: 'Bgs.PellFourierKernel.telescope' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellFourierKernel.lean:48:0: 'Bgs.PellFourierKernel.zeroEndpoint' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellFourierKernel.lean:49:0: 'Bgs.PellFourierKernel.reconstruct' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellFourierKernel.lean:50:0: 'Bgs.PellFourierKernel.periodTwoCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [13/26] Built Bgs.TorusScaleLaw (272ms)
+info: Bgs/TorusScaleLaw.lean:38:0: 'Bgs.TorusScaleLaw.generator_exact_order_and_inverse' does not depend on any axioms
+info: Bgs/TorusScaleLaw.lean:39:0: 'Bgs.TorusScaleLaw.inverse_and_half_power' does not depend on any axioms
+info: Bgs/TorusScaleLaw.lean:40:0: 'Bgs.TorusScaleLaw.half_trace_and_discriminant' does not depend on any axioms
+info: Bgs/TorusScaleLaw.lean:41:0: 'Bgs.TorusScaleLaw.branch_scales' does not depend on any axioms
+ℹ [14/26] Built Bgs.PairKeyFourthMoment (6.8s)
+info: Bgs/PairKeyFourthMoment.lean:78:0: 'Bgs.PairKeyFourthMoment.diagonal_multiplicity' depends on axioms: [diagonal_multiplicity._native.native_decide.ax_1_1]
+info: Bgs/PairKeyFourthMoment.lean:79:0: 'Bgs.PairKeyFourthMoment.off_diagonal_keys_injective' depends on axioms: [off_diagonal_keys_injective._native.native_decide.ax_1_1]
+info: Bgs/PairKeyFourthMoment.lean:80:0: 'Bgs.PairKeyFourthMoment.coupled_constraint_count' depends on axioms: [coupled_constraint_count._native.native_decide.ax_1_1]
+ℹ [15/26] Built Bgs.PhaseChannelJetKernels (431ms)
+info: Bgs/PhaseChannelJetKernels.lean:38:0: 'Bgs.PhaseChannelJetKernels.jet_coefficient_elimination' depends on axioms: [propext, Quot.sound]
+info: Bgs/PhaseChannelJetKernels.lean:39:0: 'Bgs.PhaseChannelJetKernels.poisson_localization' depends on axioms: [propext, Quot.sound]
+info: Bgs/PhaseChannelJetKernels.lean:40:0: 'Bgs.PhaseChannelJetKernels.cascade_increment' depends on axioms: [propext, Quot.sound]
+info: Bgs/PhaseChannelJetKernels.lean:41:0: 'Bgs.PhaseChannelJetKernels.fourier_degree_two_trace_defect' depends on axioms: [propext, Quot.sound]
+ℹ [16/26] Built Bgs.PhaseFrameWitness (365ms)
+info: Bgs/PhaseFrameWitness.lean:30:0: 1
+info: Bgs/PhaseFrameWitness.lean:32:0: 'Bgs.PhaseFrameWitness.phaseWitness_determinant' depends on axioms: [propext]
+ℹ [17/26] Built Bgs.TorusDimensionBound (346ms)
+info: Bgs/TorusDimensionBound.lean:18:0: 'Bgs.TorusDimensionBound.zero_weight_dimension_bound' depends on axioms: [propext]
+ℹ [18/26] Built Bgs.ActiveRankDefect (355ms)
+info: Bgs/ActiveRankDefect.lean:21:0: 'Bgs.ActiveRankDefect.activeDefectCost' depends on axioms: [propext, Quot.sound]
+info: Bgs/ActiveRankDefect.lean:22:0: 'Bgs.ActiveRankDefect.rankFourGivesSecondOrder' depends on axioms: [propext, Quot.sound]
+ℹ [19/26] Built Bgs.CoherenceBudget (329ms)
+info: Bgs/CoherenceBudget.lean:16:0: 'Bgs.CoherenceBudget.budget_positive' depends on axioms: [propext, Quot.sound]
+ℹ [21/26] Built Bgs.GeneralHyperbolicParity (384ms)
+info: Bgs/GeneralHyperbolicParity.lean:72:0: 'Bgs.GeneralHyperbolicParity.invariant_refinement' does not depend on any axioms
+info: Bgs/GeneralHyperbolicParity.lean:73:0: 'Bgs.GeneralHyperbolicParity.refinement_polarization' does not depend on any axioms
+info: Bgs/GeneralHyperbolicParity.lean:74:0: 'Bgs.GeneralHyperbolicParity.nontrivial_central_parity' does not depend on any axioms
+info: Bgs/GeneralHyperbolicParity.lean:75:0: 'Bgs.GeneralHyperbolicParity.negative_trace_period' does not depend on any axioms
+info: Bgs/GeneralHyperbolicParity.lean:76:0: 'Bgs.GeneralHyperbolicParity.mixed_period' does not depend on any axioms
+ℹ [22/66] Built Bgs.CayleyCurveEnergy (589ms)
+info: Bgs/CayleyCurveEnergy.lean:115:0: 'Bgs.CayleyCurveEnergy.toric_curve_counts_match' depends on axioms: [toric_curve_counts_match._native.native_decide.ax_1_1]
+info: Bgs/CayleyCurveEnergy.lean:116:0: 'Bgs.CayleyCurveEnergy.diagonal_curve_counts' depends on axioms: [diagonal_curve_counts._native.native_decide.ax_1_1]
+info: Bgs/CayleyCurveEnergy.lean:117:0: 'Bgs.CayleyCurveEnergy.enlarged_curve_total' depends on axioms: [enlarged_curve_total._native.native_decide.ax_1_1]
+info: Bgs/CayleyCurveEnergy.lean:118:0: 'Bgs.CayleyCurveEnergy.max_offdiagonal_curve_count' depends on axioms: [max_offdiagonal_curve_count._native.native_decide.ax_1_1]
+ℹ [3054/3096] Built Bgs.TorusLevelSets (10s)
+info: Bgs/TorusLevelSets.lean:85:0: 'Bgs.TorusLevelSets.nonzero_level_cardinality' depends on axioms: [nonzero_level_cardinality._native.native_decide.ax_1_1]
+info: Bgs/TorusLevelSets.lean:86:0: 'Bgs.TorusLevelSets.zero_cone_cardinality' depends on axioms: [zero_cone_cardinality._native.native_decide.ax_1_1]
+info: Bgs/TorusLevelSets.lean:87:0: 'Bgs.TorusLevelSets.nonzero_level_orbit_count' depends on axioms: [nonzero_level_orbit_count._native.native_decide.ax_1_1]
+info: Bgs/TorusLevelSets.lean:88:0: 'Bgs.TorusLevelSets.global_count_identity' does not depend on any axioms
+info: Bgs/TorusLevelSets.lean:89:0: 'Bgs.TorusLevelSets.nonzero_level_action_free' depends on axioms: [nonzero_level_action_free._native.native_decide.ax_1_1]
+ℹ [3055/3096] Built Bgs.Fm009TraceObstruction (1.0s)
+info: Bgs/Fm009TraceObstruction.lean:90:0: 'Bgs.Fm009TraceObstruction.trace_cube_eq_zero_of_common_reversor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [3056/3096] Built Bgs.KickBlindRational (451ms)
+✔ [3057/3096] Built Bgs.OrbitOrthogonalRational (747ms)
+ℹ [3058/3096] Built Bgs.RetTowerGeometry (3.8s)
+info: Bgs/RetTowerGeometry.lean:224:0: 'Bgs.RetTowerGeometry.sep_p_43_31' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:225:0: 'Bgs.RetTowerGeometry.cand_j3_p_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:226:0: 'Bgs.RetTowerGeometry.cand_j3_m_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:227:0: 'Bgs.RetTowerGeometry.noCand_j1_p' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:228:0: 'Bgs.RetTowerGeometry.noCand_j1_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:229:0: 'Bgs.RetTowerGeometry.noCand_j2_p' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:230:0: 'Bgs.RetTowerGeometry.noCand_j2_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:231:0: 'Bgs.RetTowerGeometry.lobe_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:232:0: 'Bgs.RetTowerGeometry.support_area' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3059/3096] Built Bgs.OrderLadderRational (307ms)
+✔ [3060/3096] Built Bgs.PositiveTimeRational (498ms)
+✔ [3061/3096] Built Bgs.OrderTrichotomyRational (353ms)
+✔ [3062/3096] Built Bgs.CrtCompositeRational (438ms)
+✔ [3063/3096] Built Bgs.SquarefreeProductRational (429ms)
+✔ [3064/3096] Built Bgs.OddModulusRational (1.1s)
+✔ [3065/3096] Built Bgs.UniformOrbitOverlapRational (2.3s)
+✔ [3066/3096] Built Bgs.DiagonalPhaseFormFactorRational (1.4s)
+✔ [3067/3096] Built Bgs.DiagonalPhaseShortTimeRational (1.2s)
+✔ [3068/3096] Built Bgs.ScalarReturnBesselRational (1.1s)
+✔ [3069/3096] Built Bgs.SixteenPhaseSymmetryRational (519ms)
+✔ [3070/3096] Built Bgs.HyperbolicDiagonalFormFactor (1.8s)
+✔ [3071/3096] Built Bgs.HyperbolicShortTime (401ms)
+✔ [3072/3096] Built Bgs.PhaseFormFactorRational (15s)
+✔ [3073/3096] Built Bgs.MomentumPhaseCue (280ms)
+✔ [3074/3096] Built Bgs.RevivalClosureRational (10s)
+ℹ [3075/3096] Built Bgs.FourCutKernel (51s)
+info: Bgs/FourCutKernel.lean:105:0: 'Bgs.FourCutKernel.pairs_through_12' depends on axioms: [propext, pairs_through_12._native.native_decide.ax_1_1]
+info: Bgs/FourCutKernel.lean:106:0: 'Bgs.FourCutKernel.triples_through_10' depends on axioms: [propext, triples_through_10._native.native_decide.ax_1_1]
+info: Bgs/FourCutKernel.lean:107:0: theorem Bgs.FourCutKernel.pairs_through_12 : through 12 false = { configurations := 3858, matchCount := 560 } :=
+of_decide_eq_true pairs_through_12._native.native_decide.ax_1_1
+info: Bgs/FourCutKernel.lean:108:0: theorem Bgs.FourCutKernel.triples_through_10 : through 10 true = { configurations := 650 } :=
+of_decide_eq_true triples_through_10._native.native_decide.ax_1_1
+info: Bgs/FourCutKernel.lean:113:0: 'Bgs.FourCutKernel.pair_m4_excluded' depends on axioms: [propext]
+info: Bgs/FourCutKernel.lean:114:0: 'Bgs.FourCutKernel.triple_m4_excluded' depends on axioms: [propext]
+✔ [3076/3096] Built Bgs.LineBDerand (1.3s)
+✔ [3077/3096] Built Bgs.LineBPhase2 (13s)
+✔ [3089/3114] Built Bgs.LineBPhase3 (3.2s)
+✔ [3104/3116] Built Bgs.TraceStatement (5.1s)
+✔ [3107/3116] Built Bgs.Fm021Statement (1.9s)
+✔ [3108/3116] Built Bgs.Fm001Statement (1.7s)
+ℹ [6982/7070] Built Bgs.LineDCerts (46s)
+info: Bgs/LineDCerts.lean:141:0: 'Bgs.LineDCerts.hx_ok' does not depend on any axioms
+info: Bgs/LineDCerts.lean:142:0: 'Bgs.LineDCerts.fix_count' does not depend on any axioms
+info: Bgs/LineDCerts.lean:143:0: 'Bgs.LineDCerts.rad_count' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:144:0: 'Bgs.LineDCerts.coll4_ok' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:145:0: 'Bgs.LineDCerts.coll6_ok' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:146:0: 'Bgs.LineDCerts.coll_control' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:147:0: 'Bgs.LineDCerts.D_values' does not depend on any axioms
+info: Bgs/LineDCerts.lean:148:0: 'Bgs.LineDCerts.hx_control' does not depend on any axioms
+info: Bgs/LineDCerts.lean:149:0: 'Bgs.LineDCerts.fix_control' does not depend on any axioms
+info: Bgs/LineDCerts.lean:150:0: 'Bgs.LineDCerts.rad_control' depends on axioms: [propext]
+✔ [8756/8800] Built Bgs.Mathlib.UniformCluster (6.5s)
+✔ [8757/8800] Built Bgs.Mathlib.TwoStepVariance (9.4s)
+✔ [8758/8800] Built Bgs.Mathlib.TwoStepObstruction (4.8s)
+✔ [8759/8800] Built Bgs.Mathlib.SineKernel (3.8s)
+✔ [8760/8800] Built Bgs.Mathlib.ResonanceComb (3.9s)
+✔ [8761/8800] Built Bgs.Mathlib.RadialTail (5.2s)
+✔ [8762/8800] Built Bgs.Mathlib.QuadraticResponse (4.1s)
+✔ [8763/8800] Built Bgs.Mathlib.PhaseChannel (4.2s)
+ℹ [8764/8800] Built Bgs.SevenPrimary (108s)
+info: Bgs/SevenPrimary.lean:111:0: 'Bgs.SevenPrimary.product_0' depends on axioms: [propext, Quot.sound, product_0._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:113:0: 'Bgs.SevenPrimary.rabin_0' depends on axioms: [propext, Quot.sound, rabin_0._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:115:0: 'Bgs.SevenPrimary.degrees_0' depends on axioms: [propext, degrees_0._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:131:0: 'Bgs.SevenPrimary.product_1' depends on axioms: [propext, Quot.sound, product_1._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:133:0: 'Bgs.SevenPrimary.rabin_1' depends on axioms: [propext, Quot.sound, rabin_1._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:135:0: 'Bgs.SevenPrimary.degrees_1' depends on axioms: [propext, degrees_1._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:148:0: 'Bgs.SevenPrimary.product_2' depends on axioms: [propext, Quot.sound, product_2._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:150:0: 'Bgs.SevenPrimary.rabin_2' depends on axioms: [propext, Quot.sound, rabin_2._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:152:0: 'Bgs.SevenPrimary.degrees_2' depends on axioms: [propext, degrees_2._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:168:0: 'Bgs.SevenPrimary.product_3' depends on axioms: [propext, Quot.sound, product_3._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:170:0: 'Bgs.SevenPrimary.rabin_3' depends on axioms: [propext, Quot.sound, rabin_3._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:172:0: 'Bgs.SevenPrimary.degrees_3' depends on axioms: [propext, degrees_3._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:185:0: 'Bgs.SevenPrimary.product_4' depends on axioms: [propext, Quot.sound, product_4._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:187:0: 'Bgs.SevenPrimary.rabin_4' depends on axioms: [propext, Quot.sound, rabin_4._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:189:0: 'Bgs.SevenPrimary.degrees_4' depends on axioms: [propext, degrees_4._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:213:0: 'Bgs.SevenPrimary.product_5' depends on axioms: [propext, Quot.sound, product_5._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:215:0: 'Bgs.SevenPrimary.rabin_5' depends on axioms: [propext, Quot.sound, rabin_5._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:217:0: 'Bgs.SevenPrimary.degrees_5' depends on axioms: [propext, degrees_5._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:234:0: 'Bgs.SevenPrimary.product_6' depends on axioms: [propext, Quot.sound, product_6._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:236:0: 'Bgs.SevenPrimary.rabin_6' depends on axioms: [propext, Quot.sound, rabin_6._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:238:0: 'Bgs.SevenPrimary.degrees_6' depends on axioms: [propext, degrees_6._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:244:0: 'Bgs.SevenPrimary.order49' depends on axioms: [order49._native.native_decide.ax_1_1]
+✔ [8765/8800] Built Bgs.Mathlib.PairSumFactorization (5.0s)
+✔ [8766/8800] Built Bgs.Mathlib.PureLoss (12s)
+✔ [8767/8800] Built Bgs.Mathlib.LocalJetObstruction (5.5s)
+✔ [8768/8800] Built Bgs.Mathlib.HyperbolicEigenline (3.7s)
+✔ [8769/8800] Built Bgs.Mathlib.HardyClock (6.4s)
+✔ [8770/8800] Built Bgs.Mathlib.FreshPhaseAverage (6.1s)
+✔ [8771/8800] Built Bgs.Mathlib.FormFactorCurve (5.7s)
+✔ [8772/8800] Built Bgs.Mathlib.FlatChirp (10s)
+✔ [8773/8800] Built Bgs.Mathlib.DigitFUP (5.0s)
+✔ [8774/8800] Built Bgs.Mathlib.CueReference (4.5s)
+✔ [8775/8800] Built Bgs.Mathlib.ClockCharacter (4.5s)
+✔ [8776/8800] Built Bgs.Mathlib.CoherenceMemory (5.3s)
+✔ [8777/8800] Built Bgs.Mathlib.CatMap (4.5s)
+✔ [8778/8800] Built Bgs.Mathlib.AbsorptionBound (5.8s)
+✔ [8779/8800] Built Bgs.Mathlib.AbelPoisson (6.7s)
+✔ [8780/8800] Built Bgs.Mathlib.HardyIdentity (6.3s)
+✔ [8781/8800] Built Bgs.LineBPhase4 (10s)
+✔ [8782/8800] Built Bgs.Mathlib.ExactCumulants (8.0s)
+✔ [8783/8800] Built Bgs.Mathlib.FlatTensor (5.2s)
+✔ [8784/8800] Built Bgs.Mathlib.DigitFUPBinary (6.4s)
+✔ [8785/8800] Built Bgs.Mathlib.PeriodicPoints (6.4s)
+✔ [8786/8800] Built Bgs.Mathlib.MultiradiusRigidity (11s)
+✔ [8787/8800] Built Bgs.Mathlib.TraceReconstruction (5.1s)
+✔ [8788/8800] Built Bgs.Mathlib.TwoClock (7.1s)
+✔ [8789/8800] Built Bgs.Mathlib.FlatPerturb (6.4s)
+✔ [8790/8800] Built Bgs.Mathlib.ClockFloor (9.1s)
+✔ [8791/8800] Built Bgs.Mathlib.FirstReturnPulse (10s)
+✔ [8792/8800] Built Bgs.Mathlib.ClockRigidity (6.4s)
+✔ [8793/8800] Built Bgs.Mathlib.TraceMobius (8.6s)
+✔ [8794/8800] Built Bgs.Mathlib.HardyRigidity (4.2s)
+✔ [8795/8800] Built Bgs.Mathlib.TraceMobiusGeneral (4.1s)
+✔ [8796/8800] Built Bgs.Mathlib.DeletedClock (5.6s)
+✔ [8797/8800] Built Bgs.Mathlib (3.3s)
+✔ [8798/8800] Built Bgs.LineCEncounter (210s)
+✔ [8799/8800] Built Bgs (4.1s)
+Build completed successfully (8800 jobs).
+build_exit:0
+elapsed_sec:251
+Thu Oct 29 10:17:28 PM UTC 2026
+BUILD_DONE

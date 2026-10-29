@@ -1,0 +1,21 @@
+m=3 D=196 e=[28, 7] h=7 gprime=14 (2h=14) #units=6
+  support = 1/2*1 + V_odd for all sampled nu; |k|^2 = 1/h^2 = 1/D_eff on it  [OK]
+  k_nu(-xi) = k_nu(xi)  [OK]
+  direct deficit sum(2m-|Gamma xi|) over S = 59; Theorem D closed form = 59; ratio deficit/h^2 / (m^2/h) = 0.93651
+  reflection fixing a vertex: 7 fixed points on S (Lemma F predicts h_m = 7)
+  Prop K/C: h^2 K(xi,xi') = mu(q)/phi(q), q=h/gcd(r-r',h): max err over 49^2 pairs, all 6 units = 6.68e-16; distinct values [-0.166666666667, 1.0]
+  B^sym = 4.79591837   2m = 6   time 0.0s
+m=5 D=6724 e=[164, 41] h=41 gprime=82 (2h=82) #units=40
+  support = 1/2*1 + V_odd for all sampled nu; |k|^2 = 1/h^2 = 1/D_eff on it  [OK]
+  k_nu(-xi) = k_nu(xi)  [OK]
+  direct deficit sum(2m-|Gamma xi|) over S = 1009; Theorem D closed form = 1009; ratio deficit/h^2 / (m^2/h) = 0.98439
+  reflection fixing a vertex: 41 fixed points on S (Lemma F predicts h_m = 41)
+  Prop K/C: h^2 K(xi,xi') = mu(q)/phi(q), q=h/gcd(r-r',h): max err over 400^2 pairs, all 40 units = 5.58e-16; distinct values [-0.025, 1.0]
+  B^sym = 9.39976205   2m = 10   time 0.6s
+m=7 D=228484 e=[956, 239] h=239 gprime=478 (2h=478) #units=238
+  support = 1/2*1 + V_odd for all sampled nu; |k|^2 = 1/h^2 = 1/D_eff on it  [OK]
+  k_nu(-xi) = k_nu(xi)  [OK]
+  direct deficit sum(2m-|Gamma xi|) over S = 11675; Theorem D closed form = 11675; ratio deficit/h^2 / (m^2/h) = 0.99693
+  reflection fixing a vertex: 239 fixed points on S (Lemma F predicts h_m = 239)
+  Prop K/C: h^2 K(xi,xi') = mu(q)/phi(q), q=h/gcd(r-r',h): max err over 400^2 pairs, all 238 units = 1.33e-15; distinct values [-0.004201680672, 1.0]
+  B^sym = 13.79560932   2m = 14   time 10.4s

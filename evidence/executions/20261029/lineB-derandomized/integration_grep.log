@@ -1,0 +1,6 @@
+=== grep sorry|native_decide formalization/Bgs/LineB*.lean ===
+formalization/Bgs/LineBDerand.lean:3:  BGS derandomization: finite exact certificates (core Lean 4, kernel `decide`, no native_decide).
+formalization/Bgs/LineBPhase2.lean:2:  BGS derandomization, phase 2: finite certificates (core Lean 4, kernel `decide`, no native_decide).
+formalization/Bgs/LineBPhase3.lean:2:  BGS derandomization, phase 3: finite / algebraic cores.  Kernel `decide` (no native_decide) and Mathlib `ring`.
+formalization/Bgs/LineBPhase4.lean:2:/-! Phase 4 finite certificates (decide / norm_num only; no native_decide). -/
+grep_exit:0

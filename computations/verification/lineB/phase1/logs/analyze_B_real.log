@@ -1,0 +1,44 @@
+# kick real
+m=1 D=4 D_eff=1 2m=2 B_exact=1.000000 B_sym=1.000000 2m-B_sym=1.000000 #xi on short orbits=1 clusters=1 nonsym_clusters=0 max_in_cluster_spread=0.0e+00 min_gap_between_clusters=nan sqrtD=2.0 t=0.3s
+m=2 D=32 D_eff=4 2m=4 B_exact=1.500000 B_sym=1.500000 2m-B_sym=2.500000 #xi on short orbits=4 clusters=3 nonsym_clusters=0 max_in_cluster_spread=0.0e+00 min_gap_between_clusters=1.800e+00 sqrtD=5.7 t=0.0s
+m=3 D=196 D_eff=49 2m=6 B_exact=7.367347 B_sym=4.795918 2m-B_sym=1.204082 #xi on short orbits=19 clusters=8 nonsym_clusters=4 max_in_cluster_spread=4.4e-16 min_gap_between_clusters=3.351e-02 sqrtD=14.0 t=0.0s
+   nonsym cluster size 6 orbit sizes [3 3 3 3 3 3] S= [-2.90489173 -2.90489173 -2.90489173]
+     theta*d2 seq [22, 10, 10] d2= 28
+     orbit class (10, 10, 22)
+     orbit class (6, 18, 18)
+   nonsym cluster size 12 orbit sizes [6 6 6 6 6 6 6 6] S= [-2.6 -2.6 -2.6]
+     theta*d2 seq [26, 6, 10] d2= 28
+     orbit class (6, 10, 26)
+     orbit class (2, 18, 22)
+   nonsym cluster size 6 orbit sizes [3 3 3 3 3 3] S= [-2.46431041 -2.46431041 -2.46431041]
+     theta*d2 seq [10, 2, 2] d2= 28
+     orbit class (2, 2, 10)
+     orbit class (18, 26, 26)
+   nonsym cluster size 6 orbit sizes [3 3 3 3 3 3] S= [-2.43079785 -2.43079785 -2.43079785]
+     theta*d2 seq [2, 6, 6] d2= 28
+     orbit class (2, 6, 6)
+     orbit class (22, 22, 26)
+m=4 D=1152 D_eff=72 2m=8 B_exact=6.888889 B_sym=5.083333 2m-B_sym=2.916667 #xi on short orbits=48 clusters=13 nonsym_clusters=5 max_in_cluster_spread=9.8e-15 min_gap_between_clusters=1.000e-01 sqrtD=33.9 t=0.0s
+   nonsym cluster size 8 orbit sizes [4 4 4 4 4 4 4 4] S= [-0.75710678 -0.75710678 -0.75710678]
+     theta*d2 seq [36, 92, 36, 28] d2= 96
+     orbit class (28, 36, 92, 36)
+     orbit class (4, 60, 68, 60)
+   nonsym cluster size 2 orbit sizes [1 1] S= [-1.52655666e-15 -1.84574578e-15]
+     theta*d2 seq [24, 24, 24, 24] d2= 96
+     orbit class (72, 72, 72, 72)
+     orbit class (24, 24, 24, 24)
+   nonsym cluster size 8 orbit sizes [4 4 4 4 4 4 4 4] S= [0.15 0.15 0.15]
+     theta*d2 seq [24, 56, 24, 88] d2= 96
+     orbit class (24, 56, 24, 88)
+     orbit class (8, 72, 40, 72)
+   nonsym cluster size 8 orbit sizes [4 4 4 4 4 4 4 4] S= [0.3 0.3 0.3]
+     theta*d2 seq [40, 8, 8, 40] d2= 96
+     orbit class (8, 8, 40, 40)
+     orbit class (56, 56, 88, 88)
+   nonsym cluster size 8 orbit sizes [4 4 4 4 4 4 4 4] S= [0.65710678 0.65710678 0.65710678]
+     theta*d2 seq [12, 20, 12, 52] d2= 96
+     orbit class (12, 20, 12, 52)
+     orbit class (44, 84, 76, 84)
+m=5 D=6724 D_eff=1681 2m=10 B_exact=17.609161 B_sym=9.399762 2m-B_sym=0.600238 #xi on short orbits=201 clusters=105 nonsym_clusters=84 max_in_cluster_spread=1.9e-14 min_gap_between_clusters=6.484e-04 sqrtD=82.0 t=0.0s
+m=6 D=39200 D_eff=4900 2m=12 B_exact=19.431429 B_sym=11.190612 2m-B_sym=0.809388 #xi on short orbits=640 clusters=216 nonsym_clusters=170 max_in_cluster_spread=1.8e-14 min_gap_between_clusters=6.667e-05 sqrtD=198.0 t=0.1s
+m=7 D=228484 D_eff=57121 2m=14 B_exact=27.182875 B_sym=13.795609 2m-B_sym=0.204391 #xi on short orbits=1667 clusters=2160 nonsym_clusters=2040 max_in_cluster_spread=2.2e-14 min_gap_between_clusters=1.708e-06 sqrtD=478.0 t=3.8s

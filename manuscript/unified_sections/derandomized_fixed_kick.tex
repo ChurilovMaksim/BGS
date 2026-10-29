@@ -1,0 +1,123 @@
+% Line B section. Registered IDs BGS-TRACE-163 to BGS-TRACE-182.
+% On main 502af245 the highest registered TRACE id is BGS-TRACE-162, so 163 is the next free id. Not renumbered.
+% Wiring: \input{unified_sections/derandomized_fixed_kick.tex} in manuscript/BGS_unified.tex, Chapter 14,
+% directly after \input{unified_sections/band_limited_kick_bridge.tex}.
+% The packet named the slot after random_phase_encounter_pairs.tex; that slot is the Line D section.
+\section{Derandomized short-time form factor for the fixed diagonal kick}
+\label{sec:derandomized-fixed-kick}
+This section treats the diagonal (position) part of the repository kick,
+\(U=K_\eta M_N\) with \(K_\eta=\operatorname{diag}e^{i\eta f(q/N)}\), \(f\) the fixed
+real 32-mode trigonometric polynomial, \(S=\bigl(\begin{smallmatrix}3&4\\2&3\end{smallmatrix}\bigr)\),
+odd \(N\), and fixed time \(m\) (below the Ehrenfest time).
+The canonical note is \path{mathematics/fixed-map/derandomized_fixed_kick.md}; the proofs are the four
+phase reports under \path{mathematics/fixed-map/derandomized_fixed_kick/}.
+Scripts and logs are in \path{computations/verification/lineB/}; finite instances are checked in
+\path{formalization/Bgs/LineBDerand.lean}, \path{LineBPhase2.lean}, \path{LineBPhase3.lean} and
+\path{LineBPhase4.lean} (kernel \texttt{decide}, \texttt{norm\_num}, \texttt{ring}; no \texttt{sorry}, no \texttt{native\_decide}).
+An independent referee audit and its replay scripts are deposited in
+\path{computations/verification/lineB/independent_replay/}.
+The statuses below are those of \path{record/claims.json}.
+
+\paragraph{Required non-claims.}
+\begin{enumerate}[label=(\arabic*)]
+\item Nothing is proved at \(\tau=m/N=O(1)\). All results are fixed-\(m\) (diagonal / below Ehrenfest). This is not progress on BGS-BGS-001 or BGS-TRACE-148.
+\item ``\(B_m\to 2m\)'' is not claimed. Theorem N covers a finite list of certified NSW primes, and the infinitude of NSW primes is open.
+\item The parity crossover is the derandomized analogue of the known BGOS/Pandey--Mehta symmetry-breaking crossover. It is not a Keating--Mezzadri pseudo-symmetry, and the phenomenon is not new.
+\item The certified decay bound is vacuous below \(m^+(\eta)\) (\(10^2\)--\(10^5\)). It says nothing at the numerically accessible \(m\).
+\item Conjecture R is not reduced to any known conjecture or large-sieve inequality. The ``quadratic large sieve'' phrasing is withdrawn. KR/Bourgain/BGK do not apply (minimal period \(\operatorname{ord}_h\lambda=m\)).
+\item The fixed-\(\eta\) CLT is numerical only (\(m\le 11\)); the KS yardstick is heuristic.
+\item The \((m,\eta)=(11,2)\) outlier is unexplained; the torsion attribution is withdrawn.
+\item The Theorem D\(_{\mathrm{cert}}\) arithmetic is IEEE float with an a-priori error bound (plus arb coefficients), not full interval arithmetic, until the full directed-rounding rerun.
+\end{enumerate}
+
+\paragraph{Notation.} \(\lambda=3+2\sqrt2\); for odd \(m\), \(h=h_m\) is the NSW number with
+\(h_m^2=(\operatorname{Tr}S^m-2)/4\). \(F_m(\eta)\) is the fixed-\(\eta\) second moment
+\(\mathbb E_\nu\lvert Z_m(\nu;\eta)\rvert^2\) and \(B_m\) its \(\eta\)-Bohr mean;
+\(\sigma^2=\lVert u\rVert_2^2=3.75\cdot10^{-4}\) with \(u=2f_{\mathrm{odd}}\).
+Time reversal \(U^{\mathsf T}=K^{-1}UK\) is the \(\alpha\equiv\delta\) case of BGS-TRACE-131 and is cited, not re-claimed.
+The random-phase results BGS-TRACE-127, 128, 132, 143, 144 are comparisons, not dependencies.
+
+\begin{theorem}[Exact trace formula and finite-\(m\) diagonal law, BGS-TRACE-163, proved]
+\label{thm:lineB-trace-formula}
+For odd \(N\) with \(\gcd(N,D_m)=1\),
+\(\operatorname{Tr}(K_\eta M)^m=\operatorname{Tr}M^m\sum_{n\in\mathbb Z^m}\hat\Phi(n)\,e(Q(n)/N)\,e(-\nu_N y'_m\operatorname{Nm}(\alpha_n)/g'_m)\)
+with \(\nu_N=N^{-1}\bmod g'_m\) and \(\alpha_n=\sum_j n_j\lambda^j\); hence
+\(\operatorname{Tr}U^m/\operatorname{Tr}M^m=Z_m(\nu_N;\eta)+O(1/N)\), the \(N\)-average equals the \(\nu\)-average \(F_m(\eta)\),
+and \(B_m=2m\) for \(m\le 8\). Pointwise self-averaging in a single \(N\) is false.
+\end{theorem}
+
+\begin{theorem}[General \(m\) under non-degeneracy, BGS-TRACE-164, conditional on ND\(_m\)]
+Under ND\(_m\), \(0\le 2m-B_m\le 224\,m^2D_m^{-1/2}\). ND\(_m\) is verified exactly for \(m\le 8\) and by float clustering at \(m=9\).
+\end{theorem}
+
+\begin{theorem}[Ramanujan kernel and exact odd-\(m\) ramp, BGS-TRACE-165, proved]
+For every odd \(m\): \(D_m=4h_m^2\), the support is \(\mathcal S=\tfrac12\mathbb 1+\widehat V_{\mathrm{odd}}\),
+the kernel is \(K(\xi,\xi')=\mu(q)/(\varphi(q)D_{\mathrm{eff}})\), and
+\(2m-B^{\mathrm{sym}}_m=h_m^{-2}\sum_{d\mid m}[2(m-d)a(d)+d^2b(d)]=\tfrac{m^2}{h_m}(1+O(\lambda^{-m/6}))\).
+\end{theorem}
+
+\begin{lemma}[p-splitting and symbol facts, BGS-TRACE-166, proved]
+A vanishing sum \(\sum A(w)w=0\) over \(\mu_{p^e}\) with coefficients in \(\mathbb Q(\zeta_M)\), \(p\nmid M\), is constant on \(\mu_p\)-cosets; the aliased kick symbol has the shifted structure \(\tilde c_{\pm7}=(-360,0)\).
+\end{lemma}
+
+\begin{remark}[Automatic admissibility, BGS-TRACE-167, proved]
+For odd \(m\) with \(h_m\) prime and \(h_m>18\), hypotheses (a), (b) of Theorem N hold automatically.
+Proof: \(O/hO\cong\mathbb F_h\times\mathbb F_h\) (2 is a square mod \(h\)), conjugation sends \(\lambda\mapsto\lambda^{-1}\) and \(\operatorname{ord}_h\lambda=m\); so \(\lambda^d\in\mathbb F_h\) forces \(\lambda^d=1\), and \(\lambda^a+\lambda^b=6\) forces \(\lambda^a\lambda^b=1\), whence \(\{\lambda^a,\lambda^b\}=\{\lambda,\lambda^{-1}\}\) because these are the only roots of \(t^2-6t+1\) of norm 1.
+Checked by an independent second reader. Theorem N below does not use this remark.
+\end{remark}
+
+\begin{theorem}[Theorem N, BGS-TRACE-168, proved]
+For \(m\in\{7,19,29,47,59,163,257,421,937,947,1493\}\), exactly the \(m\) for which \(h_m\) is certified prime
+(ECPP for \(m\ge 59\), APRCL for \(m\le 47\)), every coincidence on the support is formal and
+\(\lvert B_m-B^{\mathrm{sym}}_m\rvert\le 8m^2N_m/h_m\). The bound is \(<1\) only from \(m=29\) on.
+\end{theorem}
+
+\begin{proposition}[Norm-class formula, BGS-TRACE-169, proved]
+For odd \(m\), \(F_m(\eta)=h^{-2}\sum_{r,r'}A_r\bar A_{r'}\,\mu(q_{rr'})/\varphi(q_{rr'})\), \(q_{rr'}=h/\gcd(r-r',h)\).
+The Gauss-sum proof covers every odd \(m\), including \(p^2\mid h\); it was checked by an independent second reader.
+\end{proposition}
+
+\begin{theorem}[Parity decomposition and transfer formula, BGS-TRACE-170, proved]
+For odd \(m\) and every \(\eta\), \(F_m(\eta)=B^{\mathrm{sym}}_m+2m\chi_m(\eta)+\tilde W^{\mathrm{rest}}_m(\eta)\) with
+\(\lvert\tilde W^{\mathrm{rest}}-W^{\mathrm{rest}}\rvert\le 4m^2/h_m\), and
+\(\chi_m(\eta)=\sum_{a=0}^{3}(-1)^a\operatorname{Tr}M_a(\eta)^m\). These are identities; no bound on \(\tilde W^{\mathrm{rest}}\) is claimed.
+\end{theorem}
+
+\begin{theorem}[Lower bound, BGS-TRACE-171, proved]
+For odd \(m\ge 5\) and all real \(\eta\), \(\chi_m(\eta)\ge 1-\tfrac12 m\sigma^2\eta^2\). It fails at \(m=3\), where \(7e_0=H_3(1,0,0)^{\mathsf T}+\mathbb 1\) is a lattice relation (Lean: \texttt{m3\_relation}).
+\end{theorem}
+
+\begin{lemma}[Majorant framework, BGS-TRACE-172, proved]
+Around every closed cycle \(\gamma_0\sum N(s_j)\le c\sum\lvert n_j-a\rvert\); hence \(\lvert\operatorname{Tr}M_a^m\rvert\le\operatorname{Tr}A_a^m\le\rho^{m-1}\sum_s(Av)(s)/v(s)\) whenever \(v>0\) and \(Av\le\rho v\).
+\end{lemma}
+
+\begin{theorem}[Certified decay on \(\eta\in[1,81.574]\), BGS-TRACE-173, proved (computer-assisted, directed rounding; upgraded by the second reader)]
+\label{thm:lineB-dcert}
+For each of 93 contiguous intervals \(I\) covering \([1,81.57406988332305]\) there are constants \(C'_I\le 1.43e+07\) and \(\rho'_I\le 0.999820<1\) with
+\(\lvert\chi_m(\eta)\rvert\le C'_I\rho_I'^{\,m-1}\) for all \(\eta\in I\) and odd \(m\ge 5\).
+The constants are those of the independent directed-rounding re-certification (\path{computations/verification/lineB/second_reader/logs/b1/b1_summary.json}): arb ball enclosures in \(\eta\), outward rounding by \texttt{nextafter} after every floating-point operation, and arb for the outside-box region and lattice tail.
+It assumes IEEE-754 binary64 round-to-nearest, correctness of arb, and libm \texttt{exp} accurate to \(10^{-6}\) relative inside the drop term (of size \(\le10^{-29}\)).
+The authors' float constants (\(C_I\le3.64\cdot10^6\)) are not directed-rounding certified and are not part of this statement.
+The bound is \(<1\) only for \(m\ge m^+(\eta)\) (for the directed-rounding constants, \(m^+(1)=116570\) for the bound \(\le 0.01\); \(10^2\)--\(10^5\) over the range).
+\end{theorem}
+
+\begin{theorem}[Decay at every fixed \(\eta\ne0\), BGS-TRACE-174, conditional]
+Assume (I1) trace class and the periodic-orbit trace formula for the analytically weighted transfer operator on an anisotropic space
+(Faure--Roy 2006 with Rugh's analytic-weight extension), (I2) peripheral resonances are \(L^\infty\) eigenvalues, and (I3) measurable-to-continuous Liv\v{s}ic for \(S^1\)-valued cocycles (Liv\v{s}ic 1972; Pollicott--Walkden 2001).
+Then for every \(\eta\ne0\) there are \(\mu(\eta)<1\) and \(C_\eta\) with \(\lvert\chi_m(\eta)\rvert\le C_\eta\mu(\eta)^{m-1}\). \(C_\eta\) is not explicit and no uniformity in \(\eta\) is claimed.
+\end{theorem}
+
+\begin{theorem}[\(N\)-average, BGS-TRACE-175, proved]
+For \(N\in(X,2X]\), \(\gcd(N,D_m)=1\),
+\(\langle\lvert\operatorname{Tr}U_N^m\rvert^2\rangle_N=F_m(\eta)+O(m s_2s_0^{2m-1}/X+D_m\min(s_0^{2m},D_{\mathrm{eff}})/X)\), uniformly for \(m\le(1-\varepsilon)c(\eta)\log X\).
+\end{theorem}
+
+\begin{theorem}[Moment CLT, BGS-TRACE-176, conditional on ND\(^{(\le k)}\)]
+Under ND\(^{(\le k)}\), \(k!B^k(1-k^2w_{\max}/B)\le\mathbb E\lvert Z_m\rvert^{2k}\le k!B^k\) for the joint \((\nu,\text{Bohr-}\eta)\) average.
+\end{theorem}
+
+\begin{remark}[Numerical observations and open items, BGS-TRACE-177 to 182]
+BGS-TRACE-177 records numerical data only (ND\(^{(2)}\) at small \(m\), the \(\mu(\eta)\) spectrum, the crossover \(m_*\), \(\lvert\tilde W^{\mathrm{rest}}\rvert/2m\le 0.11,0.05,0.018,0.008\) at \(m=7,9,11,13\) for \(\eta\in[10,400]\), fixed-\(\eta\) law numerics, torsion-split numbers).
+BGS-TRACE-178: the torsion-class split \(F=F_{\mathrm{gen}}+F_{\mathrm{tor}}\) is a trivial exact identity (proved); its reading is numerical.
+Open: Conjecture R (\(\max_{\eta\in[\eta_0,\eta_1]}\lvert\tilde W^{\mathrm{rest}}_m(\eta)\rvert=o(m)\), BGS-TRACE-179), the fixed-\(\eta\) CLT (180), ND for composite \(h_m\) and even \(m\) (181), and the \((11,2)\) outlier (182).
+\end{remark}

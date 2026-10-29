@@ -1,0 +1,14 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+m=7 h=239 digits=3 APRCL_isprime=True
+m=19 h=9369319 digits=7 APRCL_isprime=True
+m=29 h=63018038201 digits=11 APRCL_isprime=True
+m=47 h=489133282872437279 digits=18 APRCL_isprime=True
+m=59 digits=23 cert_N_equals_h=True primecertisvalid=True steps=1
+m=163 digits=63 cert_N_equals_h=True primecertisvalid=True steps=6
+m=257 digits=99 cert_N_equals_h=True primecertisvalid=True steps=10
+m=421 digits=161 cert_N_equals_h=True primecertisvalid=True steps=21
+m=937 digits=359 cert_N_equals_h=True primecertisvalid=True steps=48
+m=947 digits=363 cert_N_equals_h=True primecertisvalid=True steps=45
+m=1493 digits=572 cert_N_equals_h=True primecertisvalid=True steps=74
+CONTROL tampered cert rejected=True; CONTROL h+2 mismatch detected=True
+PASS

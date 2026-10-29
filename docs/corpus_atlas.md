@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**359 maintained proof notes; 10 topic views; 246 core claim IDs.**
+**364 maintained proof notes; 10 topic views; 266 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
-| conditional | 10 |
-| open | 12 |
-| proved | 209 |
+| conditional | 13 |
+| open | 17 |
+| proved | 221 |
 | verification-pending | 15 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 160 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 165 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -72,6 +72,11 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [BGS-TRACE-029: convex weak-noise stability and unsigned deconvolution barrier](../mathematics/fixed-map/convex_pinch_weak_noise_and_deconvolution.md) | `BGS-TRACE-029` (proved) |
 | [Quartic coordinate return for the original fixed kick](../mathematics/fixed-map/coordinate_return_quartic.md) | `BGS-TRACE-108` (proved) |
 | [Chinese product for the cat-map trace square](../mathematics/fixed-map/crt_composite_abel.md) | `BGS-TRACE-122` (proved) |
+| [Line B: derandomizing the BGS short-time form factor for the fixed-kick perturbed cat map (phases 1–4)](../mathematics/fixed-map/derandomized_fixed_kick.md) | `BGS-TRACE-163` (proved); `BGS-TRACE-164` (conditional); `BGS-TRACE-165` (proved); `BGS-TRACE-166` (proved); `BGS-TRACE-167` (proved); `BGS-TRACE-168` (proved); `BGS-TRACE-169` (proved); `BGS-TRACE-170` (proved); `BGS-TRACE-171` (proved); `BGS-TRACE-172` (proved); `BGS-TRACE-173` (proved); `BGS-TRACE-174` (conditional); `BGS-TRACE-175` (proved); `BGS-TRACE-176` (conditional); `BGS-TRACE-177` (open); `BGS-TRACE-178` (proved); `BGS-TRACE-179` (open); `BGS-TRACE-180` (open); `BGS-TRACE-181` (open); `BGS-TRACE-182` (open) |
+| [BGS derandomization for the fixed-kick perturbed cat map](../mathematics/fixed-map/derandomized_fixed_kick/phase1_trace_formula.md) | Consult proof and full ledger |
+| [Phase 2: arithmetic kernel, exact ramp, coincidence theory, moments (final; referee fixes applied 2026-10-29)](../mathematics/fixed-map/derandomized_fixed_kick/phase2_kernel_ramp_nd.md) | Consult proof and full ledger |
+| [Phase 3: fixed-η off-diagonal W_m(η), parity symmetry breaking, primality certificates](../mathematics/fixed-map/derandomized_fixed_kick/phase3_parity_decomposition.md) | Consult proof and full ledger |
+| [Phase 4 report: rigorous parity term, Conjecture R, torsion](../mathematics/fixed-map/derandomized_fixed_kick/phase4_parity_certificate.md) | Consult proof and full ledger |
 | [Diagonal random-phase form factor at times one, two and three](../mathematics/fixed-map/diagonal_phase_form_factor.md) | `BGS-TRACE-127` (proved) |
 | [Short-time limits of the diagonal-phase form factor](../mathematics/fixed-map/diagonal_phase_short_time.md) | `BGS-TRACE-128` (proved) |
 | [Uniform classical displacement density and a logarithmic spectral comparison](../mathematics/fixed-map/displacement_density_trace_bound.md) | `BGS-TRACE-112` (proved) |

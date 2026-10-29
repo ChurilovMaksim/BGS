@@ -917,6 +917,126 @@
       "state": "open",
       "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
       "disposition": "29 October 2026: open conjecture on R-scaling of the band-limited deviation. Monte Carlo at p=101, 211 and 401 is a diagnostic. The account of Line C's chi^2/dof about 967 is a numerical record, not a derivation from the fixed-m results. Depends on TRACE-160 and TRACE-148. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-163",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: exact Pell-norm trace formula, orbit form and kernel structure for the fixed diagonal kick; B_m = 2m for m <= 8. Depends on TRACE-131 (time reversal, alpha congruent delta), cited and not re-claimed. Fixed m only. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-164",
+      "state": "conditional",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: conditional on ND_m, 0 <= 2m - B_m <= 224 m^2 D_m^{-1/2}. B_m -> 2m is not claimed. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-165",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: Ramanujan kernel and exact odd-m diagonal ramp (Prop K, Lemma S + Addendum, Lemma F, Theorem D). Concerns B^sym, not B_m. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-166",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: p-splitting lemma and symbol facts (C2, C3); the sign of the shifted symbol is fixed. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-167",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: automatic admissibility for NSW-prime m, proved after the second reader's norm-1 repair of the split case of (b). Not used by TRACE-168. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-168",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: Theorem N bound for the eleven certified NSW-prime m. Nontrivial from m = 29. The infinitude of NSW primes is open. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-169",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: Prop C norm-class formula for all odd m, confirmed by the second reader. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-170",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: Theorem W identity and Theorem T transfer formula. No bound on W~rest is claimed. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-171",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: Lemma V and Prop L, chi_m >= 1 - (1/2) m sigma^2 eta^2 for odd m >= 5. It fails at m = 3. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-172",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: tilted majorant, cycle inequality and Collatz-Wielandt trace bound. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-173",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: Theorem D_cert on eta in [1, 81.574], proved only with the second reader's directed-rounding constants. The authors' float constants are excluded. Assumes IEEE-754 binary64, arb, and libm exp accurate to relative 1e-6 in the drop term. The bound is vacuous below m^+(eta). Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-174",
+      "state": "conditional",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: conditional decay of chi_m at every fixed eta != 0, on inputs (I1)-(I3). The weighted-torus form of (I1) is not written out in the cited sources, so the claim stays conditional. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-175",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: Theorem U, the N-average reproduces the nu-average with an explicit error and window. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-176",
+      "state": "conditional",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: Theorem G, a conditional moment CLT for the joint (nu, Bohr-eta) average, on ND^(<=k). Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-177",
+      "state": "open",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: numerical observations only (ND^(2), mu(eta), m_*, W~rest tables, fixed-eta numerics, torsion-split numbers). Filed as open because the record has no numerical state. No theorem is claimed. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-178",
+      "state": "proved",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: exact torsion-class split F = F_gen + F_tor, a trivial identity. Its interpretation is numerical. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-179",
+      "state": "open",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: open Conjecture R / R_NSW. Not reduced to a known conjecture or a large-sieve inequality. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-180",
+      "state": "open",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: open fixed-eta central limit law. Numerical only for m <= 11; the KS yardstick is heuristic. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-181",
+      "state": "open",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: open non-degeneracy ND_m for composite h_m and for even m. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-182",
+      "state": "open",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "29 October 2026: the (m, eta) = (11, 2) outlier is unexplained; the torsion attribution is withdrawn. Does not close TRACE-148 or BGS-001."
     }
   ],
   "invariants": [

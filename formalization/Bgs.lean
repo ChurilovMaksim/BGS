@@ -56,5 +56,9 @@ import Bgs.RevivalClosureRational
 import Bgs.MomentumPhaseCue
 import Bgs.LineCEncounter
 import Bgs.LineDCerts
+import Bgs.LineBDerand
+import Bgs.LineBPhase2
+import Bgs.LineBPhase3
+import Bgs.LineBPhase4
 
 import Bgs.Mathlib
