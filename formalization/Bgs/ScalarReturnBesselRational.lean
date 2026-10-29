@@ -1,6 +1,8 @@
 set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 
+namespace Bgs.ScalarReturnBesselRational
+
 /-!
 # Rational witness for BGS-TRACE-129
 
@@ -23,7 +25,7 @@ theorem detSI : (2 : Int) * 2 - 4 * 2 = -4 := by decide
 theorem order5 : matPow 5 6 = (1, 0, 0, 1) := by decide
 theorem order7 : matPow 7 3 = (1, 0, 0, 1) := by decide
 theorem order11 : matPow 11 12 = (1, 0, 0, 1) := by decide
-theorem notOrder5 : matPow 5 1 ≠ (1, 0, 0, 1) ∧ matPow 5 5 ≠ (1, 0, 0, 1) := by decide
+theorem notOrder5 : matPow 5 1 ≠ (1, 0, 0, 1) ∧ matPow 5 2 ≠ (1, 0, 0, 1) ∧ matPow 5 3 ≠ (1, 0, 0, 1) ∧ matPow 5 5 ≠ (1, 0, 0, 1) := by decide
 theorem notOrder7 : matPow 7 1 ≠ (1, 0, 0, 1) ∧ matPow 7 2 ≠ (1, 0, 0, 1) := by decide
 
 def row (n j : Nat) : Nat × Nat :=
@@ -68,3 +70,4 @@ def oddSum : Int :=
 
 theorem oddEnergy : oddSum = 900 := by decide
 theorem oddRatio : (900 : Int) * 160000 = 9 * 16000000 := by decide
+end Bgs.ScalarReturnBesselRational

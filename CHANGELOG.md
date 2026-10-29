@@ -2,7 +2,7 @@
 
 ## 2026-10-29 — Self-red-team of the scalar-return Bessel identity
 
-BGS-TRACE-129. The Bessel identity is the phase average of the classical position-diagonal orbit sum. It is not the quantum sixteen-phase average. A referee Monte Carlo, recorded in the proof, differs from that classical average by a factor of up to about \(3\) at \(N=11\), \(m=12\), and at \(N=29\), \(m=10\), and tracks it at zero quadruple excess for \(\lambda\lesssim 1\). The factor \(J_0\) and its products are classical. Time one equals \(1+\rho_1\), not the bare value \(1\). Each of \(\ell=\pm 1\) has energy \(9/160000\), so \(9/80000\) together. Lean does not certify that the order at \(p=11\) is exactly \(12\), and the quadruple rows at \(11\), \(31\), \(41\) and \(47\) are Python-only. No new external dependency.
+BGS-TRACE-129. The Bessel identity is the phase average of the classical position-diagonal orbit sum. It is not the quantum sixteen-phase average. A referee Monte Carlo, recorded in the proof, differs from that classical average by ≈1.7 at \(N=11\), \(m=12\), and by up to ≈6 at \(N=29\), \(m=10\) (\(\eta=2\)), and tracks it at zero quadruple excess for \(\lambda\lesssim 1\). The factor \(J_0\) and its products are classical. Time one equals \(1+\rho_1\), not the bare value \(1\). Each of \(\ell=\pm 1\) has energy \(9/160000\), so \(9/80000\) together. Lean does not certify that the order at \(p=11\) is exactly \(12\), and the quadruple rows at \(11\), \(31\), \(41\) and \(47\) are Python-only. No new external dependency.
 
 ## 2026-10-29 — Bessel form of the scalar-return orbit sum
 
