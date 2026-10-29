@@ -1,0 +1,10 @@
++ rm -rf /workspace/bgs-lineD/lean_build_v2
++ cp -a /workspace/bgs-build/formalization /workspace/bgs-lineD/lean_build_v2
++ cp /workspace/bgs-lineD/lean/LineDCerts.lean /workspace/bgs-lineD/lean_build_v2/Bgs/LineDCerts.lean
++ cd /workspace/bgs-lineD/lean_build_v2
++ lake exe cache get
++ echo 'cache_get exit 0'
++ echo 'build exit 0'
++ sha256sum Bgs/LineDCerts.lean /workspace/bgs-lineD/lean/LineDCerts.lean
++ grep -nE 'sorry|native_decide|admit|implemented_by|extern|unsafe|opaque|^axiom|^import' Bgs/LineDCerts.lean
++ echo 'grep exit 1 (1 = nothing found)'

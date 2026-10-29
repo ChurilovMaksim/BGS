@@ -1,0 +1,1415 @@
+test_output_defaults_under_build (test_actual_commutant_portability.ActualCommutantPortability.test_output_defaults_under_build) ... ok
+test_silent_imports_explicit_checks (test_actual_commutant_portability.ActualCommutantPortability.test_silent_imports_explicit_checks) ... ok
+test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) ... 
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='env2', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='-O', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='-O', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='-OO', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='-OO', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='env1', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='env1', imported=True) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='env2', imported=False) ... FAIL
+  test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='env2', imported=True) ... FAIL
+test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) ... 
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/diagonal_phase_form_factor.py', mode='normal') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/diagonal_phase_form_factor.py', mode='-O') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/diagonal_phase_form_factor.py', mode='-OO') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/diagonal_phase_form_factor.py', mode='env1') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/diagonal_phase_form_factor.py', mode='env2') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='normal') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-O') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-OO') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env1') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env2') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/interaction_phase_form_factor.py', mode='normal') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/interaction_phase_form_factor.py', mode='-O') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/interaction_phase_form_factor.py', mode='-OO') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/interaction_phase_form_factor.py', mode='env1') ... FAIL
+  test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/interaction_phase_form_factor.py', mode='env2') ... FAIL
+test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) ... ERROR
+test_frozen_constant_false_identity_and_valid_control (test_assertion_entry_policy.AssertionEntryPolicyTests.test_frozen_constant_false_identity_and_valid_control) ... ok
+test_guard_precedes_imports_and_handles_future_and_docstring (test_assertion_entry_policy.AssertionEntryPolicyTests.test_guard_precedes_imports_and_handles_future_and_docstring) ... ok
+test_import_closure_and_explicit_check_only_modules (test_assertion_entry_policy.AssertionEntryPolicyTests.test_import_closure_and_explicit_check_only_modules) ... ok
+test_package_initializers_and_repository_parent_named_tests (test_assertion_entry_policy.AssertionEntryPolicyTests.test_package_initializers_and_repository_parent_named_tests) ... ok
+test_preserved_spectral_inputs_are_not_maintained_entries (test_assertion_entry_policy.AssertionEntryPolicyTests.test_preserved_spectral_inputs_are_not_maintained_entries) ... ok
+test_static_coverage_and_guard_removal_mutations (test_assertion_entry_policy.AssertionEntryPolicyTests.test_static_coverage_and_guard_removal_mutations) ... FAIL
+test_custom_header_and_malformed_macros (test_boost_probe.BoostProbeTest.test_custom_header_and_malformed_macros) ... ok
+test_missing_compiler_and_timeout (test_boost_probe.BoostProbeTest.test_missing_compiler_and_timeout) ... ok
+test_outputs_cannot_overwrite_sources_or_create_untracked_receipt (test_boost_probe.BoostProbeTest.test_outputs_cannot_overwrite_sources_or_create_untracked_receipt) ... ok
+test_runner_preserves_assertions_under_optimized_environment (test_boost_probe.BoostProbeTest.test_runner_preserves_assertions_under_optimized_environment) ... ok
+test_matching_timestamp_pyc_is_not_executed (test_charge_authenticated_loader.AuthenticatedChargeLoader.test_matching_timestamp_pyc_is_not_executed) ... ok
+test_environment_difference_is_provenance (test_charge_strengthening_portability.ComparisonTests.test_environment_difference_is_provenance) ... ok
+test_missing_and_unexpected_structure (test_charge_strengthening_portability.ComparisonTests.test_missing_and_unexpected_structure) ... ok
+test_nonfinite_provenance_runtime_rejected (test_charge_strengthening_portability.ComparisonTests.test_nonfinite_provenance_runtime_rejected) ... ok
+test_raw_expected_bytes_remain_unchanged (test_charge_strengthening_portability.ComparisonTests.test_raw_expected_bytes_remain_unchanged) ... ok
+test_scientific_change_reports_exact_path (test_charge_strengthening_portability.ComparisonTests.test_scientific_change_reports_exact_path) ... ok
+test_type_length_source_and_bounded_paths (test_charge_strengthening_portability.ComparisonTests.test_type_length_source_and_bounded_paths) ... ok
+test_unknown_schema_duplicate_and_nonfinite_rejected (test_charge_strengthening_portability.ComparisonTests.test_unknown_schema_duplicate_and_nonfinite_rejected) ... ok
+test_each_maintained_checker_failure_survives_optimization (test_charge_strengthening_portability.ExecutionTests.test_each_maintained_checker_failure_survives_optimization) ... ok
+test_expected_bytes_cached_before_external_mutation (test_charge_strengthening_portability.ExecutionTests.test_expected_bytes_cached_before_external_mutation) ... ok
+test_silent_imports_normal_and_optimized (test_charge_strengthening_portability.ExecutionTests.test_silent_imports_normal_and_optimized) ... ok
+test_source_corruption_rejected_before_execution (test_charge_strengthening_portability.ExecutionTests.test_source_corruption_rejected_before_execution) ... ok
+test_wrapper_failure_and_stale_outputs (test_charge_strengthening_portability.ExecutionTests.test_wrapper_failure_and_stale_outputs) ... ok
+test_invalid_modes_rejected (test_cohesive_portability.CohesivePortability.test_invalid_modes_rejected) ... ok
+test_optimized_arithmetic_corruption_rejected (test_cohesive_portability.CohesivePortability.test_optimized_arithmetic_corruption_rejected) ... ok
+test_silent_imports (test_cohesive_portability.CohesivePortability.test_silent_imports) ... ok
+test_valid_and_false_coordinate_identity (test_collective_assertion_guard.CollectiveAssertionGuardTests.test_valid_and_false_coordinate_identity) ... ok
+test_ordered_explicit_failure_active (test_collective_cat_portability.CollectiveCatPortability.test_ordered_explicit_failure_active) ... ok
+test_silent_entry_and_helper_imports (test_collective_cat_portability.CollectiveCatPortability.test_silent_entry_and_helper_imports) ... ok
+test_zero_root_difference_rejected (test_collective_cat_portability.CollectiveCatPortability.test_zero_root_difference_rejected) ... ok
+test_complete_runner_stale_outputs_failed_and_empty_producers (test_dependent_replay.ReplayTest.test_complete_runner_stale_outputs_failed_and_empty_producers) ... ok
+test_failed_producer_never_replays_stale_certificate (test_dependent_replay.ReplayTest.test_failed_producer_never_replays_stale_certificate) ... ok
+test_successful_producer_missing_output_is_blocked_and_mutation_detected (test_dependent_replay.ReplayTest.test_successful_producer_missing_output_is_blocked_and_mutation_detected) ... ok
+test_silent_imports_and_active_failures (test_exceptional_seven_portability.ExceptionalSevenPortability.test_silent_imports_and_active_failures) ... ok
+test_amendment_old_value_and_provenance_mismatch_rejected (test_external_epoch_preservation.ExternalEpochPreservation.test_amendment_old_value_and_provenance_mismatch_rejected) ... ok
+test_automatic_extension_rejected (test_external_epoch_preservation.ExternalEpochPreservation.test_automatic_extension_rejected) ... ok
+test_changed_historical_bytes_rejected (test_external_epoch_preservation.ExternalEpochPreservation.test_changed_historical_bytes_rejected) ... ok
+test_current_epoch_preserves_39_contracts (test_external_epoch_preservation.ExternalEpochPreservation.test_current_epoch_preserves_39_contracts) ... ok
+test_historical_claim_amendments_are_exact_and_explicit (test_external_epoch_preservation.ExternalEpochPreservation.test_historical_claim_amendments_are_exact_and_explicit) ... ok
+test_malformed_amendments_rejected (test_external_epoch_preservation.ExternalEpochPreservation.test_malformed_amendments_rejected) ... ok
+test_modified_old_locator_rejected (test_external_epoch_preservation.ExternalEpochPreservation.test_modified_old_locator_rejected) ... ok
+test_reviewed_amendment_admitted_at_exact_value (test_external_epoch_preservation.ExternalEpochPreservation.test_reviewed_amendment_admitted_at_exact_value) ... ok
+test_tamper_outside_amended_field_rejected (test_external_epoch_preservation.ExternalEpochPreservation.test_tamper_outside_amended_field_rejected) ... ok
+test_tampered_amended_value_rejected (test_external_epoch_preservation.ExternalEpochPreservation.test_tampered_amended_value_rejected) ... ok
+test_undeclared_new_dependency_rejected (test_external_epoch_preservation.ExternalEpochPreservation.test_undeclared_new_dependency_rejected) ... ok
+test_unknown_and_admitted_later_amendment_ids_rejected (test_external_epoch_preservation.ExternalEpochPreservation.test_unknown_and_admitted_later_amendment_ids_rejected) ... ok
+test_normal_circulant_cannot_pass_nonnormal_control (test_factorial_diagonal_portability.FactorialDiagonalPortability.test_normal_circulant_cannot_pass_nonnormal_control) ... ok
+test_silent_imports (test_factorial_diagonal_portability.FactorialDiagonalPortability.test_silent_imports) ... ok
+test_certificate_tampering_rejected (test_first_seven_portability.FirstSevenPortability.test_certificate_tampering_rejected) ... ok
+test_silent_imports_and_explicit_checks (test_first_seven_portability.FirstSevenPortability.test_silent_imports_and_explicit_checks) ... ok
+test_source_output_rejected (test_first_seven_portability.FirstSevenPortability.test_source_output_rejected) ... ok
+test_external_build_and_symlink_resolution (test_four_cut_output_policy.OutputPolicyTests.test_external_build_and_symlink_resolution) ... ok
+test_source_and_ancestor_rejected_without_creation (test_four_cut_output_policy.OutputPolicyTests.test_source_and_ancestor_rejected_without_creation) ... ok
+test_all_eight_split_cases_retain_success_and_failure (test_fractional_provenance.FractionalDurableEvidence.test_all_eight_split_cases_retain_success_and_failure) ... ok
+test_existing_or_source_output_directory_rejected (test_fractional_provenance.FractionalDurableEvidence.test_existing_or_source_output_directory_rejected) ... ok
+test_failure_retains_raw_results_and_exact_mismatch_paths (test_fractional_provenance.FractionalDurableEvidence.test_failure_retains_raw_results_and_exact_mismatch_paths) ... ok
+test_invalid_provenance_failure_also_retains_raw_results (test_fractional_provenance.FractionalDurableEvidence.test_invalid_provenance_failure_also_retains_raw_results) ... ok
+test_success_retains_actual_expected_logs_and_provenance (test_fractional_provenance.FractionalDurableEvidence.test_success_retains_actual_expected_logs_and_provenance) ... ok
+test_timeout_retains_partial_logs_and_regular_actual (test_fractional_provenance.FractionalDurableEvidence.test_timeout_retains_partial_logs_and_regular_actual) ... ok
+test_actual_optional_timing_still_typed (test_fractional_provenance.FractionalProvenance.test_actual_optional_timing_still_typed) ... ok
+test_duplicate_nonfinite_and_unknown_schema_rejected (test_fractional_provenance.FractionalProvenance.test_duplicate_nonfinite_and_unknown_schema_rejected) ... ok
+test_expected_timing_required_and_strictly_typed (test_fractional_provenance.FractionalProvenance.test_expected_timing_required_and_strictly_typed) ... ok
+test_integer_float_and_bool_changes_rejected (test_fractional_provenance.FractionalProvenance.test_integer_float_and_bool_changes_rejected) ... ok
+test_missing_versions_and_unknown_roots_rejected (test_fractional_provenance.FractionalProvenance.test_missing_versions_and_unknown_roots_rejected) ... ok
+test_nested_runtime_names_remain_scientific (test_fractional_provenance.FractionalProvenance.test_nested_runtime_names_remain_scientific) ... ok
+test_scientific_value_change_is_reported (test_fractional_provenance.FractionalProvenance.test_scientific_value_change_is_reported) ... ok
+test_split_case_has_no_provenance_exclusions (test_fractional_provenance.FractionalProvenance.test_split_case_has_no_provenance_exclusions) ... ok
+test_synthesis_boolean_is_not_integer (test_fractional_provenance.FractionalProvenance.test_synthesis_boolean_is_not_integer) ... ok
+test_version_types_and_empty_values_rejected (test_fractional_provenance.FractionalProvenance.test_version_types_and_empty_values_rejected) ... ok
+test_versions_are_retained_separately_and_science_exact (test_fractional_provenance.FractionalProvenance.test_versions_are_retained_separately_and_science_exact) ... ok
+test_current_routing_and_corruption_contract (test_fractional_routing.FractionalRouting.test_current_routing_and_corruption_contract) ... ok
+test_no_source_output_writes (test_heisenberg_wkb_portability.WkbPortability.test_no_source_output_writes) ... ok
+test_silent_imports_and_explicit_checks (test_heisenberg_wkb_portability.WkbPortability.test_silent_imports_and_explicit_checks) ... ok
+test_explicit_failure_survives_optimization (test_intermediate_layer_portability.IntermediateLayerPortability.test_explicit_failure_survives_optimization) ... ok
+test_imports_are_silent (test_intermediate_layer_portability.IntermediateLayerPortability.test_imports_are_silent) ... ok
+test_mismatch_retains_actual_result_before_raising (test_intermediate_layer_portability.IntermediateLayerPortability.test_mismatch_retains_actual_result_before_raising) ... ok
+test_only_allowlisted_top_level_environment_is_ignored (test_intermediate_layer_portability.IntermediateLayerPortability.test_only_allowlisted_top_level_environment_is_ignored) ... ok
+test_mutating_original_input_is_rejected (test_intermediate_replay_freshness.IntermediateReplayFreshness.test_mutating_original_input_is_rejected) ... ok
+test_new_correct_result_passes_and_new_wrong_result_fails (test_intermediate_replay_freshness.IntermediateReplayFreshness.test_new_correct_result_passes_and_new_wrong_result_fails) ... ok
+test_noop_missing_and_early_return_fail_with_or_without_staged_result (test_intermediate_replay_freshness.IntermediateReplayFreshness.test_noop_missing_and_early_return_fail_with_or_without_staged_result) ... ok
+test_symlink_result_is_not_fresh_regular_output (test_intermediate_replay_freshness.IntermediateReplayFreshness.test_symlink_result_is_not_fresh_regular_output) ... ok
+test_canonical_validator_output (test_key_geometry_domains.KeyGeometryDomainTests.test_canonical_validator_output) ... ok
+test_integer_helper_contracts (test_key_geometry_domains.KeyGeometryDomainTests.test_integer_helper_contracts) ... ok
+test_invalid_prime_domains (test_key_geometry_domains.KeyGeometryDomainTests.test_invalid_prime_domains) ... ok
+test_invalid_subgroups_rejected_independently (test_key_geometry_domains.KeyGeometryDomainTests.test_invalid_subgroups_rejected_independently) ... ok
+test_reported_example_and_input_unchanged (test_key_geometry_domains.KeyGeometryDomainTests.test_reported_example_and_input_unchanged) ... ok
+test_representatives_against_original_quadruple_oracle (test_key_geometry_domains.KeyGeometryDomainTests.test_representatives_against_original_quadruple_oracle) ... ok
+test_each_explicit_failure_in_both_modes (test_loop_test_reductions.LoopReductionTests.test_each_explicit_failure_in_both_modes) ... ok
+test_portable_explicit_output (test_loop_test_reductions.LoopReductionTests.test_portable_explicit_output) ... ok
+test_silent_import_in_both_modes (test_loop_test_reductions.LoopReductionTests.test_silent_import_in_both_modes) ... ok
+test_valid_normal_and_optimized (test_loop_test_reductions.LoopReductionTests.test_valid_normal_and_optimized) ... ok
+test_wrapped_and_malformed_counts (test_manuscript_page_count.ManuscriptPageCountTests.test_wrapped_and_malformed_counts) ... ok
+test_include_cycle_and_duplicate_labels_reported (test_manuscript_reference_audit.ManuscriptReferenceAudit.test_include_cycle_and_duplicate_labels_reported) ... ok
+test_literal_verbatim_and_comment_are_ignored (test_manuscript_reference_audit.ManuscriptReferenceAudit.test_literal_verbatim_and_comment_are_ignored) ... ok
+test_missing_citation_source_and_duplicate_bibitem_fail (test_manuscript_reference_audit.ManuscriptReferenceAudit.test_missing_citation_source_and_duplicate_bibitem_fail) ... ok
+test_positive_inline_and_preserved_escaped_percent (test_manuscript_reference_audit.ManuscriptReferenceAudit.test_positive_inline_and_preserved_escaped_percent) ... ok
+test_silent_imports_explicit_checks (test_paired_phase_portability.PairedPhasePortability.test_silent_imports_explicit_checks) ... ok
+test_source_output_rejected (test_paired_phase_portability.PairedPhasePortability.test_source_output_rejected) ... ok
+test_input_tampering_and_zero_inverse (test_ramified_first_seven_portability.RamifiedPortability.test_input_tampering_and_zero_inverse) ... ok
+test_silent_normal_and_optimized_import (test_ramified_first_seven_portability.RamifiedPortability.test_silent_normal_and_optimized_import) ... ok
+test_source_output_rejected (test_ramified_first_seven_portability.RamifiedPortability.test_source_output_rejected) ... ok
+test_imports_and_no_assertions (test_ramified_higher_portability.HigherRamifiedPortability.test_imports_and_no_assertions) ... ok
+test_optimized_zero_inverse_rejected (test_ramified_higher_portability.HigherRamifiedPortability.test_optimized_zero_inverse_rejected) ... ok
+test_source_output_rejected (test_ramified_higher_portability.HigherRamifiedPortability.test_source_output_rejected) ... ok
+test_exact_node_set (test_registry_nodes.RegistryNodesTests.test_exact_node_set) ... ok
+test_external_inputs_remain_structured_and_resolved (test_registry_nodes.RegistryNodesTests.test_external_inputs_remain_structured_and_resolved) ... ok
+test_hand_edited_tex_is_not_generated (test_registry_nodes.RegistryNodesTests.test_hand_edited_tex_is_not_generated) ... ok
+test_inventory_metadata_drift_rejected (test_registry_nodes.RegistryNodesTests.test_inventory_metadata_drift_rejected) ... ok
+test_inventory_snapshot_and_statement_only_open_claim (test_registry_nodes.RegistryNodesTests.test_inventory_snapshot_and_statement_only_open_claim) ... ok
+test_inventory_stale_source_sha_rejected (test_registry_nodes.RegistryNodesTests.test_inventory_stale_source_sha_rejected) ... ok
+test_nested_lean_import_closure (test_registry_nodes.RegistryNodesTests.test_nested_lean_import_closure) ... ok
+test_no_external_refereeing_is_not_an_external_theorem (test_registry_nodes.RegistryNodesTests.test_no_external_refereeing_is_not_an_external_theorem) ... ok
+test_known_replays_get_fresh_distinct_paths_under_logs (test_replay_artifact_routing.ReplayArtifactRouting.test_known_replays_get_fresh_distinct_paths_under_logs) ... ok
+test_other_checks_keep_existing_command_contract (test_replay_artifact_routing.ReplayArtifactRouting.test_other_checks_keep_existing_command_contract) ... ok
+test_budget_types_and_bounds_fail_closed (test_research_checkpoint_portability.BudgetProposal.test_budget_types_and_bounds_fail_closed) ... ok
+test_elapsed_is_typed_bounded_provenance_only (test_research_checkpoint_portability.BudgetProposal.test_elapsed_is_typed_bounded_provenance_only) ... ok
+test_memory_unchanged_and_cpu_bound_exact (test_research_checkpoint_portability.BudgetProposal.test_memory_unchanged_and_cpu_bound_exact) ... ok
+test_only_exact_n4_has_larger_budget (test_research_checkpoint_portability.BudgetProposal.test_only_exact_n4_has_larger_budget) ... ok
+test_outer_watchdog_only_named_wrapper_changes (test_research_checkpoint_portability.BudgetProposal.test_outer_watchdog_only_named_wrapper_changes) ... ok
+test_timeout_partial_capture_and_failure_receipt (test_research_checkpoint_portability.BudgetProposal.test_timeout_partial_capture_and_failure_receipt) ... ok
+test_assertion_message_remains_lazy (test_research_checkpoint_portability.CheckpointPortability.test_assertion_message_remains_lazy) ... ok
+test_copied_worker_input_is_authenticated_after_execution (test_research_checkpoint_portability.CheckpointPortability.test_copied_worker_input_is_authenticated_after_execution) ... ok
+test_difference_diagnostic_is_bounded (test_research_checkpoint_portability.CheckpointPortability.test_difference_diagnostic_is_bounded) ... ok
+test_duplicate_and_nonfinite_json_rejected (test_research_checkpoint_portability.CheckpointPortability.test_duplicate_and_nonfinite_json_rejected) ... ok
+test_durable_failed_source_check_has_terminal_receipt (test_research_checkpoint_portability.CheckpointPortability.test_durable_failed_source_check_has_terminal_receipt) ... ok
+test_durable_output_rejects_stale_source_overlap_and_symlinks (test_research_checkpoint_portability.CheckpointPortability.test_durable_output_rejects_stale_source_overlap_and_symlinks) ... ok
+test_durable_raw_artifact_bytes_and_hash_are_retained (test_research_checkpoint_portability.CheckpointPortability.test_durable_raw_artifact_bytes_and_hash_are_retained) ... ok
+test_environment_provenance_has_exact_types_and_shape (test_research_checkpoint_portability.CheckpointPortability.test_environment_provenance_has_exact_types_and_shape) ... ok
+test_explicit_assertions_active_under_optimization (test_research_checkpoint_portability.CheckpointPortability.test_explicit_assertions_active_under_optimization) ... ok
+test_generated_result_ancestor_escape_is_rejected (test_research_checkpoint_portability.CheckpointPortability.test_generated_result_ancestor_escape_is_rejected) ... ok
+test_generated_result_is_fresh_and_exact (test_research_checkpoint_portability.CheckpointPortability.test_generated_result_is_fresh_and_exact) ... ok
+test_log_parser_requires_complete_final_object (test_research_checkpoint_portability.CheckpointPortability.test_log_parser_requires_complete_final_object) ... ok
+test_missing_symlink_and_escaping_sources_fail_closed (test_research_checkpoint_portability.CheckpointPortability.test_missing_symlink_and_escaping_sources_fail_closed) ... ok
+test_only_declared_provenance_root_fields_exempted (test_research_checkpoint_portability.CheckpointPortability.test_only_declared_provenance_root_fields_exempted) ... ok
+test_relocated_explicit_source_map_and_immutable_cache (test_research_checkpoint_portability.CheckpointPortability.test_relocated_explicit_source_map_and_immutable_cache) ... ok
+test_silent_import_normal_and_optimized (test_research_checkpoint_portability.CheckpointPortability.test_silent_import_normal_and_optimized) ... ok
+test_typed_scientific_comparison (test_research_checkpoint_portability.CheckpointPortability.test_typed_scientific_comparison) ... ok
+test_missing_pointer_digest_mutation_and_escape_rejected (test_research_views.ResearchViewBoundaries.test_missing_pointer_digest_mutation_and_escape_rejected) ... ok
+test_scoped_state_preserved_and_unindexed_proof_rejected (test_research_views.ResearchViewBoundaries.test_scoped_state_preserved_and_unindexed_proof_rejected) ... ok
+test_unknown_dependency_cycle_and_duplicate_rejected (test_research_views.ResearchViewBoundaries.test_unknown_dependency_cycle_and_duplicate_rejected) ... ok
+test_entrypoints_import_silently (test_residual_batch_portability.ResidualPortability.test_entrypoints_import_silently) ... ok
+test_source_corruption_fails_before_replay (test_residual_batch_portability.ResidualPortability.test_source_corruption_fails_before_replay) ... ok
+test_bounded_mismatch_paths (test_schur_portability.SchurPortability.test_bounded_mismatch_paths) ... ok
+test_duplicate_keys_and_nonfinite_tokens_rejected (test_schur_portability.SchurPortability.test_duplicate_keys_and_nonfinite_tokens_rejected) ... ok
+test_entrypoint_replay_corruption_rejected (test_schur_portability.SchurPortability.test_entrypoint_replay_corruption_rejected) ... ok
+test_expected_bytes_are_cached_before_child_execution (test_schur_portability.SchurPortability.test_expected_bytes_are_cached_before_child_execution) ... ok
+test_finite_runtime_and_environment_validation (test_schur_portability.SchurPortability.test_finite_runtime_and_environment_validation) ... ok
+test_known_provenance_paths_only (test_schur_portability.SchurPortability.test_known_provenance_paths_only) ... ok
+test_nested_environment_key_injection_rejected (test_schur_portability.SchurPortability.test_nested_environment_key_injection_rejected) ... ok
+test_output_cannot_overwrite_historical_inputs (test_schur_portability.SchurPortability.test_output_cannot_overwrite_historical_inputs) ... ok
+test_scientific_values_and_structure_rejected (test_schur_portability.SchurPortability.test_scientific_values_and_structure_rejected) ... ok
+test_source_corruption_rejected_before_execution (test_schur_portability.SchurPortability.test_source_corruption_rejected_before_execution) ... ok
+test_empty_or_invalid_programmatic_mode_plan_is_rejected_before_execution (test_schur_replay_freshness.SchurReplayFreshness.test_empty_or_invalid_programmatic_mode_plan_is_rejected_before_execution) ... ok
+test_entrypoint_rejects_symlink_replay_before_source_execution (test_schur_replay_freshness.SchurReplayFreshness.test_entrypoint_rejects_symlink_replay_before_source_execution) ... ok
+test_input_mutation_stops_before_next_child_including_control_children (test_schur_replay_freshness.SchurReplayFreshness.test_input_mutation_stops_before_next_child_including_control_children) ... ok
+test_new_correct_results_pass_and_workspaces_exclude_original_expectations (test_schur_replay_freshness.SchurReplayFreshness.test_new_correct_results_pass_and_workspaces_exclude_original_expectations) ... ok
+test_new_wrong_science_is_rejected_and_actual_diagnostics_retained (test_schur_replay_freshness.SchurReplayFreshness.test_new_wrong_science_is_rejected_and_actual_diagnostics_retained) ... ok
+test_nonzero_or_timeout_child_preserves_its_actual_result (test_schur_replay_freshness.SchurReplayFreshness.test_nonzero_or_timeout_child_preserves_its_actual_result) ... ok
+test_noop_early_return_and_missing_reject_prefilled_or_absent_results (test_schur_replay_freshness.SchurReplayFreshness.test_noop_early_return_and_missing_reject_prefilled_or_absent_results) ... ok
+test_output_and_input_symlink_ancestors_rejected_before_child (test_schur_replay_freshness.SchurReplayFreshness.test_output_and_input_symlink_ancestors_rejected_before_child) ... ok
+test_repair_map_preserves_original_seals_and_binds_current_wrappers (test_schur_replay_freshness.SchurReplayFreshness.test_repair_map_preserves_original_seals_and_binds_current_wrappers) ... ok
+test_replacing_input_identity_or_symlink_is_rejected_with_correct_result (test_schur_replay_freshness.SchurReplayFreshness.test_replacing_input_identity_or_symlink_is_rejected_with_correct_result) ... ok
+test_symlink_directory_fifo_and_hardlink_results_rejected (test_schur_replay_freshness.SchurReplayFreshness.test_symlink_directory_fifo_and_hardlink_results_rejected) ... ok
+test_timestamp_valid_precompiled_cache_cannot_replace_authenticated_source (test_schur_replay_freshness.SchurReplayFreshness.test_timestamp_valid_precompiled_cache_cannot_replace_authenticated_source) ... ok
+test_dense_histogram_finite_agreement (test_twisted_magnetic_integer_contracts.MagneticIntegerContracts.test_dense_histogram_finite_agreement) ... ok
+test_dlog_validation_preserves_entry_types (test_twisted_magnetic_integer_contracts.MagneticIntegerContracts.test_dlog_validation_preserves_entry_types) ... ok
+test_gauge_index_and_q_representatives (test_twisted_magnetic_integer_contracts.MagneticIntegerContracts.test_gauge_index_and_q_representatives) ... ok
+test_invalid_H_and_indices (test_twisted_magnetic_integer_contracts.MagneticIntegerContracts.test_invalid_H_and_indices) ... ok
+test_invalid_prime_types_and_domains (test_twisted_magnetic_integer_contracts.MagneticIntegerContracts.test_invalid_prime_types_and_domains) ... ok
+test_invalid_scalar_types (test_twisted_magnetic_integer_contracts.MagneticIntegerContracts.test_invalid_scalar_types) ... ok
+test_numpy_integers_and_subgroup_representatives (test_twisted_magnetic_integer_contracts.MagneticIntegerContracts.test_numpy_integers_and_subgroup_representatives) ... ok
+test_reported_overflow_and_q_representatives (test_twisted_magnetic_integer_contracts.MagneticIntegerContracts.test_reported_overflow_and_q_representatives) ... ok
+test_vectorized_prime_cap_before_allocation (test_twisted_magnetic_integer_contracts.MagneticIntegerContracts.test_vectorized_prime_cap_before_allocation) ... ok
+test_zero_residues_and_nonpositive_orders (test_twisted_magnetic_integer_contracts.MagneticIntegerContracts.test_zero_residues_and_nonpositive_orders) ... ok
+test_existing_public_integer_contracts (test_twisted_magnetic_integer_contracts.ReusedJacobiValidators.test_existing_public_integer_contracts) ... ok
+test_mixed_boolean_inputs_rejected_before_numpy_coercion (test_twisted_magnetic_integer_contracts.ReusedJacobiValidators.test_mixed_boolean_inputs_rejected_before_numpy_coercion) ... ok
+test_all_public_scalar_types (test_twisted_magnetic_integer_contracts.TwistedIntegerContracts.test_all_public_scalar_types) ... ok
+test_closed_form_representatives_and_bool_parity (test_twisted_magnetic_integer_contracts.TwistedIntegerContracts.test_closed_form_representatives_and_bool_parity) ... ok
+test_invalid_design_domains (test_twisted_magnetic_integer_contracts.TwistedIntegerContracts.test_invalid_design_domains) ... ok
+test_numpy_design_and_trace_representatives (test_twisted_magnetic_integer_contracts.TwistedIntegerContracts.test_numpy_design_and_trace_representatives) ... ok
+test_odd_parity_requires_a_boolean (test_twisted_magnetic_integer_contracts.TwistedIntegerContracts.test_odd_parity_requires_a_boolean) ... ok
+test_square_roots_independent_finite_oracle (test_twisted_magnetic_integer_contracts.TwistedIntegerContracts.test_square_roots_independent_finite_oracle) ... ok
+test_analytical_symplectic_fourier_hypotheses (test_wave2_portable_replay.PortableSchurNorms.test_analytical_symplectic_fourier_hypotheses) ... ok
+test_exact_symplectic_fourier_row_orthogonality_counts (test_wave2_portable_replay.PortableSchurNorms.test_exact_symplectic_fourier_row_orthogonality_counts) ... ok
+test_historical_reference_passes_without_special_difference (test_wave2_portable_replay.PortableSchurNorms.test_historical_reference_passes_without_special_difference) ... ok
+test_historical_resolution_cannot_redirect_or_refresh_a_seal (test_wave2_portable_replay.PortableSchurNorms.test_historical_resolution_cannot_redirect_or_refresh_a_seal) ... ok
+test_new_numeric_fields_and_wrong_sample_ids_are_rejected (test_wave2_portable_replay.PortableSchurNorms.test_new_numeric_fields_and_wrong_sample_ids_are_rejected) ... ok
+test_numeric_relations_and_outside_values_remain_fail_closed (test_wave2_portable_replay.PortableSchurNorms.test_numeric_relations_and_outside_values_remain_fail_closed) ... ok
+test_source_bytes_and_comparison_scope (test_wave2_portable_replay.PortableSchurNorms.test_source_bytes_and_comparison_scope) ... ERROR
+test_two_host_realizations_pass_with_raw_values_preserved (test_wave2_portable_replay.PortableSchurNorms.test_two_host_realizations_pass_with_raw_values_preserved) ... ok
+test_changed_source_fail_closed (test_wave2_replay_protocol.DurableProtocol.test_changed_source_fail_closed) ... ok
+test_failure_keeps_logs_actual_expected_receipt (test_wave2_replay_protocol.DurableProtocol.test_failure_keeps_logs_actual_expected_receipt) ... ok
+test_nonempty_output_rejected (test_wave2_replay_protocol.DurableProtocol.test_nonempty_output_rejected) ... ok
+test_output_inside_sources_rejected (test_wave2_replay_protocol.DurableProtocol.test_output_inside_sources_rejected) ... ok
+test_shared_asserts_remain_active_under_O (test_wave2_replay_protocol.DurableProtocol.test_shared_asserts_remain_active_under_O) ... ok
+test_symlink_source_rejected (test_wave2_replay_protocol.DurableProtocol.test_symlink_source_rejected) ... ok
+test_changed_archive_fails (test_wave2_replay_protocol.HistoricalAliasProtocol.test_changed_archive_fails) ... ok
+test_declared_override_resolves (test_wave2_replay_protocol.HistoricalAliasProtocol.test_declared_override_resolves) ... ok
+test_historical_sha_cannot_refresh (test_wave2_replay_protocol.HistoricalAliasProtocol.test_historical_sha_cannot_refresh) ... ok
+test_historical_target_cannot_change (test_wave2_replay_protocol.HistoricalAliasProtocol.test_historical_target_cannot_change) ... ok
+test_old_input_bytes_preserved_under_logical_path (test_wave2_replay_protocol.HistoricalAliasProtocol.test_old_input_bytes_preserved_under_logical_path) ... ok
+test_other_proofs_cannot_be_overridden (test_wave2_replay_protocol.HistoricalAliasProtocol.test_other_proofs_cannot_be_overridden) ... ok
+test_all_reference_diagnostics_below_tolerance_pass_and_above_fail (test_wave2_replay_protocol.NamedNumericDiagnostics.test_all_reference_diagnostics_below_tolerance_pass_and_above_fail) ... ok
+test_authentic_payloads_and_every_value_policy_retained (test_wave2_replay_protocol.NamedNumericDiagnostics.test_authentic_payloads_and_every_value_policy_retained) ... ok
+test_missing_or_wrong_nested_location_fails (test_wave2_replay_protocol.NamedNumericDiagnostics.test_missing_or_wrong_nested_location_fails) ... ok
+test_nonfinite_nonbool_negative_overflow_nested_diagnostics_fail (test_wave2_replay_protocol.NamedNumericDiagnostics.test_nonfinite_nonbool_negative_overflow_nested_diagnostics_fail) ... ok
+test_original_relations_cannot_be_relaxed_by_reference_tolerance (test_wave2_replay_protocol.NamedNumericDiagnostics.test_original_relations_cannot_be_relaxed_by_reference_tolerance) ... ok
+test_original_residual_caps_below_at_above (test_wave2_replay_protocol.NamedNumericDiagnostics.test_original_residual_caps_below_at_above) ... ok
+test_scientific_digest_explicitly_identifies_normalized_projection (test_wave2_replay_protocol.NamedNumericDiagnostics.test_scientific_digest_explicitly_identifies_normalized_projection) ... ok
+test_undeclared_diagnostics_remain_exact (test_wave2_replay_protocol.NamedNumericDiagnostics.test_undeclared_diagnostics_remain_exact) ... ok
+test_unlisted_fields_counts_inputs_parameters_exact_zeros_stay_exact (test_wave2_replay_protocol.NamedNumericDiagnostics.test_unlisted_fields_counts_inputs_parameters_exact_zeros_stay_exact) ... ok
+test_unlisted_wrong_task_omitted_loosened_or_mistyped_policy_fails (test_wave2_replay_protocol.NamedNumericDiagnostics.test_unlisted_wrong_task_omitted_loosened_or_mistyped_policy_fails) ... ok
+test_bad_version_fails (test_wave2_replay_protocol.ScienceProtocol.test_bad_version_fails) ... ok
+test_bool_runtime_fails (test_wave2_replay_protocol.ScienceProtocol.test_bool_runtime_fails) ... ok
+test_boolean_integer_type_fails (test_wave2_replay_protocol.ScienceProtocol.test_boolean_integer_type_fails) ... ok
+test_changed_exact_result_fails (test_wave2_replay_protocol.ScienceProtocol.test_changed_exact_result_fails) ... ok
+test_duplicate_json_fails (test_wave2_replay_protocol.ScienceProtocol.test_duplicate_json_fails) ... ok
+test_exponent_overflow_json_fails (test_wave2_replay_protocol.ScienceProtocol.test_exponent_overflow_json_fails) ... ok
+test_extra_scientific_field_fails (test_wave2_replay_protocol.ScienceProtocol.test_extra_scientific_field_fails) ... ok
+test_historical_extra_known_pin_fails (test_wave2_replay_protocol.ScienceProtocol.test_historical_extra_known_pin_fails) ... ok
+test_historical_pin_omission_fails (test_wave2_replay_protocol.ScienceProtocol.test_historical_pin_omission_fails) ... ok
+test_historical_wrong_known_pin_key_fails (test_wave2_replay_protocol.ScienceProtocol.test_historical_wrong_known_pin_key_fails) ... ok
+test_missing_check_fails (test_wave2_replay_protocol.ScienceProtocol.test_missing_check_fails) ... ok
+test_missing_provenance_fails (test_wave2_replay_protocol.ScienceProtocol.test_missing_provenance_fails) ... ok
+test_named_extra_source_digest_swap_fails (test_wave2_replay_protocol.ScienceProtocol.test_named_extra_source_digest_swap_fails) ... ok
+test_nan_runtime_fails (test_wave2_replay_protocol.ScienceProtocol.test_nan_runtime_fails) ... ok
+test_negative_runtime_fails (test_wave2_replay_protocol.ScienceProtocol.test_negative_runtime_fails) ... ok
+test_nonfinite_json_fails (test_wave2_replay_protocol.ScienceProtocol.test_nonfinite_json_fails) ... ok
+test_optimization_is_provenance (test_wave2_replay_protocol.ScienceProtocol.test_optimization_is_provenance) ... ok
+test_runtime_versions_are_not_science (test_wave2_replay_protocol.ScienceProtocol.test_runtime_versions_are_not_science) ... ok
+test_snapshot_metadata_is_separately_validated (test_wave2_replay_protocol.ScienceProtocol.test_snapshot_metadata_is_separately_validated) ... ok
+test_sources_current (test_wave2_replay_protocol.ScienceProtocol.test_sources_current) ... ERROR
+test_unknown_provenance_policy_fails (test_wave2_replay_protocol.ScienceProtocol.test_unknown_provenance_policy_fails) ... ok
+test_wrong_code_hash_fails (test_wave2_replay_protocol.ScienceProtocol.test_wrong_code_hash_fails) ... ok
+test_code_hash_mutation_fails (test_wave3_replay_protocol.Wave3Protocol.test_code_hash_mutation_fails) ... ok
+test_current_source_closure (test_wave3_replay_protocol.Wave3Protocol.test_current_source_closure) ... ok
+test_explicit_assert_failure_is_retained (test_wave3_replay_protocol.Wave3Protocol.test_explicit_assert_failure_is_retained) ... ok
+test_input_symlink_fails (test_wave3_replay_protocol.Wave3Protocol.test_input_symlink_fails) ... ok
+test_noop_cannot_reuse_old_expected_output (test_wave3_replay_protocol.Wave3Protocol.test_noop_cannot_reuse_old_expected_output) ... ok
+test_scientific_failure_keeps_terminal_receipt (test_wave3_replay_protocol.Wave3Protocol.test_scientific_failure_keeps_terminal_receipt) ... ok
+test_source_output_overlap_rejected (test_wave3_replay_protocol.Wave3Protocol.test_source_output_overlap_rejected) ... ok
+test_success_keeps_all_raw_outputs (test_wave3_replay_protocol.Wave3Protocol.test_success_keeps_all_raw_outputs) ... ok
+test_archive_modified_missing_added_sources (test_workspace_sources.SourcesTest.test_archive_modified_missing_added_sources) ... ok
+test_archive_positive_and_null_provenance (test_workspace_sources.SourcesTest.test_archive_positive_and_null_provenance) ... ok
+test_archive_runner_success_missing_manifest_and_during_run_mutation (test_workspace_sources.SourcesTest.test_archive_runner_success_missing_manifest_and_during_run_mutation) ... ok
+test_control_bytes_and_history_exclusion (test_workspace_sources.SourcesTest.test_control_bytes_and_history_exclusion) ... ok
+test_duplicate_manifest_keys_and_missing_null (test_workspace_sources.SourcesTest.test_duplicate_manifest_keys_and_missing_null) ... ok
+test_git_positive_dirty_and_parent_git_not_archive_identity (test_workspace_sources.SourcesTest.test_git_positive_dirty_and_parent_git_not_archive_identity) ... ok
+test_git_runner_success_and_dirty_rejection (test_workspace_sources.SourcesTest.test_git_runner_success_and_dirty_rejection) ... ok
+test_invalid_manifest_version_commit_and_paths (test_workspace_sources.SourcesTest.test_invalid_manifest_version_commit_and_paths) ... ok
+test_symlink_rejected (test_workspace_sources.SourcesTest.test_symlink_rejected) ... ok
+test_versions_missing_unknown_and_mismatch (test_workspace_sources.SourcesTest.test_versions_missing_unknown_and_mismatch) ... ok
+
+======================================================================
+ERROR: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 138, in check
+    guard = next(node for node in tree.body if isinstance(node, ast.If))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 152, in test_false_predicate_mutations_for_every_protected_module
+    for path, outcomes in pool.map(check, paths):
+RuntimeError: generator raised StopIteration
+
+======================================================================
+ERROR: test_source_bytes_and_comparison_scope (test_wave2_portable_replay.PortableSchurNorms.test_source_bytes_and_comparison_scope)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_wave2_portable_replay.py", line 94, in test_source_bytes_and_comparison_scope
+    self.assertGreater(len(v2.sealed_source_bytes()),50)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/computations/verification/wave2_portable_replay.py", line 77, in sealed_source_bytes
+    historical.require(historical.digest(data)==digest,'changed source: '+rel)
+  File "/workspace/computations/verification/wave2_checked_replay.py", line 30, in require
+    raise RuntimeError(message)
+RuntimeError: changed source: mathematics/position_chain_mixing.md
+
+======================================================================
+ERROR: test_sources_current (test_wave2_replay_protocol.ScienceProtocol.test_sources_current)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_wave2_replay_protocol.py", line 94, in test_sources_current
+    self.assertGreater(len(wave2_portable_replay.sealed_source_bytes()),50)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/computations/verification/wave2_portable_replay.py", line 77, in sealed_source_bytes
+    historical.require(historical.digest(data)==digest,'changed source: '+rel)
+  File "/workspace/computations/verification/wave2_checked_replay.py", line 30, in require
+    raise RuntimeError(message)
+RuntimeError: changed source: mathematics/position_chain_mixing.md
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/diagonal_phase_form_factor.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/interaction_phase_form_factor.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/fixes_check.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/brute_exact.py", line 16, in <module>\n    p,m = int(sys.argv[1]), int(sys.argv[2])\n          ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/brute_exact.py", line 16, in <module>\n    p,m = int(sys.argv[1]), int(sys.argv[2])\n          ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/brute_exact.py", line 16, in <module>\n    p,m = int(sys.argv[1]), int(sys.argv[2])\n          ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/brute_exact.py", line 16, in <module>\n    p,m = int(sys.argv[1]), int(sys.argv[2])\n          ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/brute_exact.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 34, in <module>\n    th=parse(\'/workspace/bgs-lineC/logs/\'+f,m)\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 10, in parse\n    for line in open(path):\n                ^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/bgs-lineC/logs/symbolic_m1_7.log\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 7, in <module>\n    from sym import legendre, evaluate\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 34, in <module>\n    th=parse(\'/workspace/bgs-lineC/logs/\'+f,m)\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 10, in parse\n    for line in open(path):\n                ^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/bgs-lineC/logs/symbolic_m1_7.log\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 7, in <module>\n    from sym import legendre, evaluate\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 34, in <module>\n    th=parse(\'/workspace/bgs-lineC/logs/\'+f,m)\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 10, in parse\n    for line in open(path):\n                ^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/bgs-lineC/logs/symbolic_m1_7.log\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 7, in <module>\n    from sym import legendre, evaluate\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 34, in <module>\n    th=parse(\'/workspace/bgs-lineC/logs/\'+f,m)\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 10, in parse\n    for line in open(path):\n                ^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/bgs-lineC/logs/symbolic_m1_7.log\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/compare_theirs.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/compare_theirs.py", line 7, in <module>\n    from sym import legendre, evaluate\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/fit.py", line 11, in <module>\n    re,sq=evaluate(run_engine(m,p,2*m),p,symbolic=False); vals.append(float(re))\n                   ^^^^^^^^^^^^^^^^^^^\n  File "/workspace/computations/verification/lineC/independent_replay/sym.py", line 45, in run_engine\n    out = subprocess.run([HERE+\'/engine\',str(m),str(mode),str(maxk2),str(nth)],input=inp,capture_output=True,text=True,check=True).stdout\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/subprocess.py", line 548, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/computations/verification/lineC/independent_replay/engine\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/fit.py", line 5, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/fit.py", line 11, in <module>\n    re,sq=evaluate(run_engine(m,p,2*m),p,symbolic=False); vals.append(float(re))\n                   ^^^^^^^^^^^^^^^^^^^\n  File "/workspace/computations/verification/lineC/independent_replay/sym.py", line 45, in run_engine\n    out = subprocess.run([HERE+\'/engine\',str(m),str(mode),str(maxk2),str(nth)],input=inp,capture_output=True,text=True,check=True).stdout\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/subprocess.py", line 548, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/computations/verification/lineC/independent_replay/engine\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/fit.py", line 5, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/fit.py", line 11, in <module>\n    re,sq=evaluate(run_engine(m,p,2*m),p,symbolic=False); vals.append(float(re))\n                   ^^^^^^^^^^^^^^^^^^^\n  File "/workspace/computations/verification/lineC/independent_replay/sym.py", line 45, in run_engine\n    out = subprocess.run([HERE+\'/engine\',str(m),str(mode),str(maxk2),str(nth)],input=inp,capture_output=True,text=True,check=True).stdout\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/subprocess.py", line 548, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/computations/verification/lineC/independent_replay/engine\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/fit.py", line 5, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/fit.py", line 11, in <module>\n    re,sq=evaluate(run_engine(m,p,2*m),p,symbolic=False); vals.append(float(re))\n                   ^^^^^^^^^^^^^^^^^^^\n  File "/workspace/computations/verification/lineC/independent_replay/sym.py", line 45, in run_engine\n    out = subprocess.run([HERE+\'/engine\',str(m),str(mode),str(maxk2),str(nth)],input=inp,capture_output=True,text=True,check=True).stdout\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/subprocess.py", line 548, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/computations/verification/lineC/independent_replay/engine\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/fit.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/fit.py", line 5, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/prop2_composite.py", line 4, in <module>\n    from sym import wseries, setpartitions\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/prop2_composite.py", line 4, in <module>\n    from sym import wseries, setpartitions\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/prop2_composite.py", line 4, in <module>\n    from sym import wseries, setpartitions\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/prop2_composite.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/prop2_composite.py", line 4, in <module>\n    from sym import wseries, setpartitions\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py", line 43, in <module>\n    ms = [int(a) for a in sys.argv[1:]] or list(range(3, 13))\n          ^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py", line 43, in <module>\n    ms = [int(a) for a in sys.argv[1:]] or list(range(3, 13))\n          ^^^^^^\nValueError: invalid literal for int() with base 10: \'/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py", line 43, in <module>\n    ms = [int(a) for a in sys.argv[1:]] or list(range(3, 13))\n          ^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py", line 43, in <module>\n    ms = [int(a) for a in sys.argv[1:]] or list(range(3, 13))\n          ^^^^^^\nValueError: invalid literal for int() with base 10: \'/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py", line 43, in <module>\n    ms = [int(a) for a in sys.argv[1:]] or list(range(3, 13))\n          ^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py", line 43, in <module>\n    ms = [int(a) for a in sys.argv[1:]] or list(range(3, 13))\n          ^^^^^^\nValueError: invalid literal for int() with base 10: \'/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py", line 43, in <module>\n    ms = [int(a) for a in sys.argv[1:]] or list(range(3, 13))\n          ^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/replay_inrepo.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py", line 43, in <module>\n    ms = [int(a) for a in sys.argv[1:]] or list(range(3, 13))\n          ^^^^^^\nValueError: invalid literal for int() with base 10: \'/workspace/computations/verification/lineC/independent_replay/replay_inrepo.py\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/run_sym.py", line 4, in <module>\n    m=int(sys.argv[1]); maxk2=int(sys.argv[2]) if len(sys.argv)>2 else 2*m\n      ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/run_sym.py", line 3, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/run_sym.py", line 4, in <module>\n    m=int(sys.argv[1]); maxk2=int(sys.argv[2]) if len(sys.argv)>2 else 2*m\n      ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/run_sym.py", line 3, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/run_sym.py", line 4, in <module>\n    m=int(sys.argv[1]); maxk2=int(sys.argv[2]) if len(sys.argv)>2 else 2*m\n      ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/run_sym.py", line 3, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/run_sym.py", line 4, in <module>\n    m=int(sys.argv[1]); maxk2=int(sys.argv[2]) if len(sys.argv)>2 else 2*m\n      ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/run_sym.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/run_sym.py", line 3, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/sym.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 127, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/validity.py", line 9, in <module>\n    terms,_=pickle.load(open(f\'/workspace/audit/lineC/logs/sym_m{m}_k{2*m}.pkl\',\'rb\'))\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/audit/lineC/logs/sym_m3_k6.pkl\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/validity.py", line 5, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/validity.py", line 9, in <module>\n    terms,_=pickle.load(open(f\'/workspace/audit/lineC/logs/sym_m{m}_k{2*m}.pkl\',\'rb\'))\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/audit/lineC/logs/sym_m3_k6.pkl\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/validity.py", line 5, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/validity.py", line 9, in <module>\n    terms,_=pickle.load(open(f\'/workspace/audit/lineC/logs/sym_m{m}_k{2*m}.pkl\',\'rb\'))\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/audit/lineC/logs/sym_m3_k6.pkl\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/validity.py", line 5, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/independent_replay/validity.py", line 9, in <module>\n    terms,_=pickle.load(open(f\'/workspace/audit/lineC/logs/sym_m{m}_k{2*m}.pkl\',\'rb\'))\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: \'/workspace/audit/lineC/logs/sym_m3_k6.pkl\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/independent_replay/validity.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/independent_replay/validity.py", line 5, in <module>\n    from sym import *\nModuleNotFoundError: No module named \'sym\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='-O', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/run_engine.py", line 6, in <module>\n    m = int(sys.argv[1]); NS = int(sys.argv[2]) if len(sys.argv) > 2 else 8\n        ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='-O', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/run_engine.py", line 4, in <module>\n    from gauss_exact import rho_classes, w_coeffs\nModuleNotFoundError: No module named \'gauss_exact\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='-OO', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/run_engine.py", line 6, in <module>\n    m = int(sys.argv[1]); NS = int(sys.argv[2]) if len(sys.argv) > 2 else 8\n        ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='-OO', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/run_engine.py", line 4, in <module>\n    from gauss_exact import rho_classes, w_coeffs\nModuleNotFoundError: No module named \'gauss_exact\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='env1', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/run_engine.py", line 6, in <module>\n    m = int(sys.argv[1]); NS = int(sys.argv[2]) if len(sys.argv) > 2 else 8\n        ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='env1', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/run_engine.py", line 4, in <module>\n    from gauss_exact import rho_classes, w_coeffs\nModuleNotFoundError: No module named \'gauss_exact\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='env2', imported=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "/workspace/computations/verification/lineC/run_engine.py", line 6, in <module>\n    m = int(sys.argv[1]); NS = int(sys.argv[2]) if len(sys.argv) > 2 else 8\n        ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: \'--output\'\n'
+
+======================================================================
+FAIL: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects) (path='computations/verification/lineC/run_engine.py', mode='env2', imported=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 128, in test_all_optimized_entries_and_imports_fail_before_side_effects
+    self.assertIn(policy.MESSAGE, result.stderr)
+AssertionError: 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.' not found in 'Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/computations/verification/lineC/run_engine.py", line 4, in <module>\n    from gauss_exact import rho_classes, w_coeffs\nModuleNotFoundError: No module named \'gauss_exact\'\n'
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/diagonal_phase_form_factor.py', mode='normal')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 156, in test_false_predicate_mutations_for_every_protected_module
+    self.assertEqual(result.stdout, '')
+AssertionError: 'occupation-max-abs-err 5.955e-12\nkernels[1333 chars]OK\n' != ''
+Diff is 1412 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/diagonal_phase_form_factor.py', mode='-O')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/diagonal_phase_form_factor.py', mode='-OO')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/diagonal_phase_form_factor.py', mode='env1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/diagonal_phase_form_factor.py', mode='env2')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='normal')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 156, in test_false_predicate_mutations_for_every_protected_module
+    self.assertEqual(result.stdout, '')
+AssertionError: 'BGS-TRACE-131 ok\ntrichotomy_rows 392\nke[123 chars]48\n' != ''
+- BGS-TRACE-131 ok
+- trichotomy_rows 392
+- kernel_49 49
+- split_3 9 3
+- unipotent_5 5
+- revival -42025/8 -375/8
+- time_one_defect 1.623121560698
+- revival_jet -46.858421501748
+
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-O')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='-OO')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/hyperbolic_diagonal_form_factor.py', mode='env2')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/interaction_phase_form_factor.py', mode='normal')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 156, in test_false_predicate_mutations_for_every_protected_module
+    self.assertEqual(result.stdout, '')
+AssertionError: "all exact and floating checks passed\nsy[1488 chars]]}\n" != ''
+Diff is 1543 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/interaction_phase_form_factor.py', mode='-O')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/interaction_phase_form_factor.py', mode='-OO')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/interaction_phase_form_factor.py', mode='env1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_false_predicate_mutations_for_every_protected_module (test_assertion_entry_policy.AssertionEntryPolicyTests.test_false_predicate_mutations_for_every_protected_module) (path='computations/verification/interaction_phase_form_factor.py', mode='env2')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 155, in test_false_predicate_mutations_for_every_protected_module
+    self.assertNotEqual(result.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_static_coverage_and_guard_removal_mutations (test_assertion_entry_policy.AssertionEntryPolicyTests.test_static_coverage_and_guard_removal_mutations)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/computations/maintenance/tests/test_assertion_entry_policy.py", line 52, in test_static_coverage_and_guard_removal_mutations
+    self.assertEqual(policy.violations(ROOT), [])
+AssertionError: Lists differ: ['computations/verification/diagonal_phase[775 chars].py'] != []
+
+First list contains 13 additional elements.
+First extra element 0:
+'computations/verification/diagonal_phase_form_factor.py'
+
+Diff is 866 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 256 tests in 208.443s
+
+FAILED (failures=120, errors=3)
+UNIT_EXIT:1

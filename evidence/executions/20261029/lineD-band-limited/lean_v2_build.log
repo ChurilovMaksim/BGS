@@ -1,0 +1,21 @@
++ lake build Bgs.LineDCerts
+warning: mathlib: repository '/workspace/bgs-lineD/lean_build_v2/.lake/packages/mathlib' has local changes
+ℹ [2/2] Built Bgs.LineDCerts (46s)
+info: Bgs/LineDCerts.lean:141:0: 'Bgs.LineDCerts.hx_ok' does not depend on any axioms
+info: Bgs/LineDCerts.lean:142:0: 'Bgs.LineDCerts.fix_count' does not depend on any axioms
+info: Bgs/LineDCerts.lean:143:0: 'Bgs.LineDCerts.rad_count' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:144:0: 'Bgs.LineDCerts.coll4_ok' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:145:0: 'Bgs.LineDCerts.coll6_ok' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:146:0: 'Bgs.LineDCerts.coll_control' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:147:0: 'Bgs.LineDCerts.D_values' does not depend on any axioms
+info: Bgs/LineDCerts.lean:148:0: 'Bgs.LineDCerts.hx_control' does not depend on any axioms
+info: Bgs/LineDCerts.lean:149:0: 'Bgs.LineDCerts.fix_control' does not depend on any axioms
+info: Bgs/LineDCerts.lean:150:0: 'Bgs.LineDCerts.rad_control' depends on axioms: [propext]
+Build completed successfully (2 jobs).
+
+real	0m47.692s
+user	0m44.841s
+sys	0m2.475s
+build exit 0
+aa5178c27bba54d6c3091845ff7f0a2bfc27fd91f4a6a3a455896962da3aae8f  Bgs/LineDCerts.lean
+aa5178c27bba54d6c3091845ff7f0a2bfc27fd91f4a6a3a455896962da3aae8f  /workspace/bgs-lineD/lean/LineDCerts.lean

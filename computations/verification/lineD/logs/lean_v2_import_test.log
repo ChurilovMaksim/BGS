@@ -1,0 +1,12 @@
+warning: mathlib: repository '/workspace/bgs-lineD/lean_build_v2/.lake/packages/mathlib' has local changes
+Bgs.LineDCerts.hx_ok :
+  (Bgs.LineDCerts.hxOK 3 && Bgs.LineDCerts.hxOK 4 && Bgs.LineDCerts.hxOK 5 && Bgs.LineDCerts.hxOK 6 &&
+        Bgs.LineDCerts.hxOK 7 &&
+      Bgs.LineDCerts.hxOK 8) =
+    true
+'Bgs.LineDCerts.coll6_ok' depends on axioms: [propext]
+
+real	0m1.423s
+user	0m0.577s
+sys	0m0.569s
+exit 0

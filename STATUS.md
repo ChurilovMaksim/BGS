@@ -14,15 +14,15 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-29**. **232 registered claims.**
+**2026-10-29**. **246 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 201 |
-| verification-pending | 14 |
-| conditional | 9 |
-| open | 8 |
-| **Total** | **232** |
+| proved | 209 |
+| verification-pending | 15 |
+| conditional | 10 |
+| open | 12 |
+| **Total** | **246** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -43,12 +43,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 23 |
 | RET | 3 | 0 | 1 | 0 | 4 |
-| TRACE | 103 | 12 | 4 | 4 | 123 |
-| **Total** | 201 | 14 | 9 | 8 | **232** |
+| TRACE | 111 | 13 | 5 | 8 | 137 |
+| **Total** | 209 | 15 | 10 | 12 | **246** |
 
 ## Open programme obligations
 
-8 registered claims are open. Their closure
+12 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -62,6 +62,10 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-136` | Free-with-parity revival law at even order (conjecture) | [mathematics/fixed-map/revival_closure_law.md](mathematics/fixed-map/revival_closure_law.md) |
 | `BGS-TRACE-137` | Exponential revival law at odd order for generic dimensions (conjecture) | [mathematics/fixed-map/revival_closure_law.md](mathematics/fixed-map/revival_closure_law.md) |
 | `BGS-TRACE-148` | Scaling-limit conjecture for the Haar diagonal-phase cat-map form factor | [mathematics/fixed-map/random_phase_encounter_pairs.md](mathematics/fixed-map/random_phase_encounter_pairs.md) |
+| `BGS-TRACE-155` | B_m^sym < 2m for even m beyond the computed range | [mathematics/fixed-map/band_limited_kick_bridge.md](mathematics/fixed-map/band_limited_kick_bridge.md) |
+| `BGS-TRACE-159` | 1/N coefficient for uniform phases (J0) at large eta | [mathematics/fixed-map/band_limited_kick_bridge.md](mathematics/fixed-map/band_limited_kick_bridge.md) |
+| `BGS-TRACE-161` | Intermediate band K = kappa N | [mathematics/fixed-map/band_limited_kick_bridge.md](mathematics/fixed-map/band_limited_kick_bridge.md) |
+| `BGS-TRACE-162` | Crossover conjecture: R-scaling of the band-limited deviation and the mode threshold | [mathematics/fixed-map/band_limited_kick_bridge.md](mathematics/fixed-map/band_limited_kick_bridge.md) |
 
 ## Corrections
 
@@ -75,7 +79,7 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 129 follow-on claims adopted after
+It records 143 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 18 external IDs.

@@ -5966,6 +5966,355 @@
         "manuscript/unified_sections/random_phase_encounter_pairs.tex"
       ],
       "closure_condition": "Prove or refute Conjecture 8: c_2(m)=2m^3+O(m^2); for each k the trivial-character coefficient of p^{-k} is the COE leading term times (1+O(1/m)); and every half-integer or character term is O(m^k) at order p^{-k} or p^{-k-1/2}, hence vanishes in the tau-scaling limit."
+    },
+    {
+      "id": "BGS-TRACE-149",
+      "title": "Band-limited random kick: exact trace bridge E|Tr U^m|^2 = Psi_m(t_N)",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-131",
+        "BGS-TRACE-133"
+      ],
+      "boundary": "U = exp(i eta V_theta) M_N, M_N the S=[[3,4],[2,3]] cat-map matrix of Lines B/C, V_theta(x) = sum_{k in K} a_k cos(2 pi k x/N + theta_k), a fixed finite mode set K with a_k != 0; J0 ensemble: theta_k iid uniform; G ensemble: circular complex Gaussian coefficients with E|c_k|^2 = a_k^2. H_m = 6I - C - C^T, D_m = det H_m = Tr S^m - 2, X_m = D_m H_m^{-1}. For every odd N with gcd(N, D_m) = 1 (primality not used) and every theta: Tr U^m = Tr M_N^m sum_n Ghat_theta(n) e(t_N 2 n^T X_m n), t_N = (D_m^{-1} mod N)/N, |Tr M_N^m| = 1; hence E_theta|Tr U^m|^2 = Psi_m(t_N), Psi_m C^infinity (not claimed real-analytic), even (V -> -V symmetry), 1-periodic, independent of N. This is Line B Theorem 1 (Line B packet) applied for each theta; the mechanism is Boasman-Keating 1995 section 5 and is not claimed as new. When N | D_m the normalisation fails. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + NUMERICAL CHECK (pathwise <= 4e-14) + INDEPENDENT REFEREE AUDIT (fresh code, <= 1e-12 at 28 cases)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/code/verify_exact.py",
+        "computations/verification/lineD/referee_replay/d1_check.py",
+        "computations/verification/lineD/referee_replay/psi_check.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineDCerts.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-150",
+      "title": "Band-limited random kick: 1/N expansion and residue period g'_m",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-149"
+      ],
+      "boundary": "t_N = t* + 1/(N D_m), t* = -N^{-1}/D_m (mod 1); E = Psi_m(t*) + c_1/N + O(N^-2), c_1 = Psi_m'(t*)/D_m, for fixed (m, K, a, eta). Psi_m(t*) depends only on +-N mod g'_m, g'_m = D_m/gcd(D_m, 2X_ii, 4X_ij) = 14, 48, 82, 280, 478, 1632, 2786 (m=3..9), an upper bound on the period. The O(N^-2) constant is NOT uniform in eta or K; the limits N -> infinity and eta -> infinity do not commute (m=3, K=1, J0, p=101: p(E-Psi(t*)) = 40.5 vs c_1 = -201 at eta=16). The condition eta^2 (sum k^2 a_k^2) m << N is heuristic. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT QUADRATURE CHECKS (p <= 1601) + INDEPENDENT REFEREE AUDIT",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/code/regime1_check.py",
+        "computations/verification/lineD/referee_replay/psi_check.py",
+        "computations/verification/lineD/referee_replay/extra.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-151",
+      "title": "Band-limited random kick: orbit-pair formula and Gauss-weight support",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-149",
+        "BGS-TRACE-133"
+      ],
+      "boundary": "Psi_m(s/D) = sum over xi, xi' in Fix_m = {xi : H_m xi in Z^m} (period-m solutions of q_{j+1}+q_{j-1} = 6 q_j mod 1; same count D_m as Fix S^m, no bijection claimed) of phihat_s(xi) conj phihat_s(xi') prod_k omega_k(eta(S_k(xi)-S_k(xi'))), omega = J0(a|z|) (standard Kluyver average, as in BGS-TRACE-133) or exp(-a^2|z|^2/4). |phihat_s|^2 in {0, |V[4]|/D_m}, support independent of s (Line B Prop R). D_eff = 49, 72, 1681, 4900, 57121 (m=3..7). Orbit form not claimed as new (Boasman-Keating). Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + NUMERICAL CHECK (1e-10) + LEAN FINITE INSTANCES (|ker(H_m mod 4)|, m=3..6) + INDEPENDENT REFEREE AUDIT",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/code/verify_exact.py",
+        "computations/verification/lineD/code/structure.py",
+        "computations/verification/lineD/referee_replay/structure.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineDCerts.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-152",
+      "title": "Band-limited random kick: strong-kick limit B_m^sym at every residue under P_K-separation",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-151"
+      ],
+      "boundary": "If a_k != 0 for k in K and P_K(xi) = (S_k(xi))_{k in K} separates dihedral (Gamma) classes on the support, then lim_{eta->inf} Psi_m(t*) = B_m^sym = D_eff^{-1} sum_{supp}|Gamma xi| for every residue. Iterated limit (N -> infinity first). Quenched-ensemble analogue of Line B Theorem 4. At finite eta Psi_m(t*) is residue dependent and takes values in a range containing 2m; the COE value 2m is not obtained at any fixed m. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + INDEPENDENT REFEREE AUDIT",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/code/psi.py",
+        "computations/verification/lineD/referee_replay/run_d4.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-153",
+      "title": "Band-limited random kick: computer-assisted instances m=3..7 (B^sym values, Gamma-separation, K=1 collisions)",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-152",
+        "BGS-TRACE-156"
+      ],
+      "boundary": "B_m^sym = 235/49, 61/12, 15801/1681, 27417/2450, 788019/57121 (m=3..7). Multiset => Gamma-class on Fix_m checked exactly for m <= 7, so K = {1..m} and K = {1,2} separate Gamma-classes for m <= 7. K = {1}: separates on the support for m = 3, 5, 7 (gaps 0.753, 1.936e-3, 3.685e-5); m = 4 and 6 have one collision group each (2 and 26 Gamma-classes, half-turn invariant; listed sequences Lean-certified as orbits, support/distinctness/completeness checked in Python). Non-separation is necessary, not sufficient, for residue dependence of the limit (m=4, K=1: 4.861111 at all residues; m=6, K=1: {10.705923, 11.165914}). eta-threshold tables are N -> infinity values only. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "verification-pending",
+      "ledger_status": "COMPUTER-ASSISTED (exact integer and 60-digit checks) + INDEPENDENT REFEREE REPLAY; pending: deposit of a second independent exact replay as verifier of record",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/code/structure.py",
+        "computations/verification/lineD/code/collisions.py",
+        "computations/verification/lineD/code/regime1_tables.py",
+        "computations/verification/lineD/code/eta_threshold.py",
+        "computations/verification/lineD/referee_replay/structure.py",
+        "computations/verification/lineD/referee_replay/m6_k1.py",
+        "computations/verification/lineD/referee_replay/lean_semantics.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineDCerts.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-154",
+      "title": "B_m^sym < 2m for every odd m",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-151"
+      ],
+      "boundary": "For odd m, D_eff = a_m^2 with a_m odd, so the Gamma-invariant support has odd size; the reversal involution has a fixed point xi_0 with |Gamma xi_0| <= m, hence 2m - B_m^sym >= m/D_eff > 0. Same argument whenever 2m does not divide D_eff (e.g. m = 6). Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF (referee argument) + EXACT VALUES m <= 9",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/referee_replay/structure.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-155",
+      "title": "B_m^sym < 2m for even m beyond the computed range",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-154"
+      ],
+      "boundary": "Verified by enumeration for m <= 9 (B_4^sym = 61/12, B_6^sym = 27417/2450, B_8^sym = 15.298683). For even m with 2m | D_eff (m = 4, 8, ...) no general proof. Closure: a proof of a Gamma-stabiliser point on the support for every even m, or of Line B's ND_m bound in this form. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "open",
+      "ledger_status": "OPEN",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/code/structure.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ],
+      "closure_condition": "A proof of a Gamma-stabiliser point on the support for every even m, or of Line B's ND_m bound in this form."
+    },
+    {
+      "id": "BGS-TRACE-156",
+      "title": "P_K separates point multisets for K containing {1..m}; half-turn collisions for odd K at even m",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-151"
+      ],
+      "boundary": "(a) Newton identities: S_1..S_m determine the multiset {e(xi_j)} (multisets only; multiset => Gamma-class is BGS-TRACE-153, m <= 7). (b) For even m and K inside the odd integers, any orbit whose point multiset is invariant under q -> q + 1/2 has S_k = 0 for all odd k, so all such orbits collide. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + LEAN FINITE INSTANCES (listed m=4, m=6 sequences are half-turn invariant orbits)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/code/collisions.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineDCerts.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-157",
+      "title": "1/N coefficient: Gamma-diagonal part vanishes; oddness in the residue",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-150",
+        "BGS-TRACE-151"
+      ],
+      "boundary": "c_1 = (2/pi) Im sum phihat(xi) conj phihat(xi') E[G(xi) conj G(xi') beta(xi)], beta = i eta h_0 sum v''(xi_i) - eta^2 v'^T H^{-1} v'. (a) The pairs xi' in Gamma xi contribute zero (both ensembles). (e) c_1(-N mod g'_m) = -c_1(N mod g'_m), so c_1 averages to 0 over residues and cannot equal -2m^2 uniformly in N; for single residues and some eta, c_1 = -2m^2 is not excluded. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + NUMERICAL CHECK (Gamma-diagonal part <= 1e-12; residue sum 0 to 1e-11) + INDEPENDENT REFEREE RE-DERIVATION",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/code/c1_tables.py",
+        "computations/verification/lineD/referee_replay/c1_validate.py",
+        "computations/verification/lineD/referee_replay/run_c1.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-158",
+      "title": "1/N coefficient, Gaussian ensemble: c_1 -> 0 as eta -> infinity under Gamma-separation",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-157",
+        "BGS-TRACE-153"
+      ],
+      "boundary": "G ensemble only. Tilted expectation f*b with f = prod exp(-a_k^2 eta^2 |Delta S_k|^2/4) and b real, polynomial of degree 4 in eta; if P_K separates Gamma-classes with gap delta, |c_1| <= C_m eta^4 exp(-a_min^2 eta^2 delta^2/4) -> 0. Separation holds for K containing {1..m} or {1,2} only for m <= 7 (computer check, BGS-TRACE-153). Non-separating K: c_1 grows (m=4, K=1: c_1 = +-0.302 eta^2). Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "conditional",
+      "ledger_status": "CONDITIONAL on P_K-separation of Gamma-classes (unconditional for m <= 7 once BGS-TRACE-153 is promoted); ANALYTIC PROOF + EXACT TABLES m=3..6",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/code/psi.py",
+        "computations/verification/lineD/code/c1_tables.py",
+        "computations/verification/lineD/code/c1_summary.py",
+        "computations/verification/lineD/referee_replay/d4_d6.py",
+        "computations/verification/lineD/referee_replay/c1_validate.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-159",
+      "title": "1/N coefficient for uniform phases (J0) at large eta",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-157"
+      ],
+      "boundary": "Open. Numerically c_1 does not tend to 0 for the J0 ensemble: m=3, K=1 (separating): max_s|c_1| = 13.3, 128.7, 682.7, 7182, 85063, 453908 at eta = 1, 4, 16, 64, 256, 1024 (about eta^1.5). Closure: an asymptotic for the Bessel-tilted moments. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "open",
+      "ledger_status": "OPEN (numerics by independent referee)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/referee_replay/c1_j0.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ],
+      "closure_condition": "An asymptotic for the Bessel-tilted moments."
+    },
+    {
+      "id": "BGS-TRACE-160",
+      "title": "Full-band random kick equals the maximal random-phase ensemble up to p^m exp(-c p)",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-146"
+      ],
+      "boundary": "K = {1..(p-1)/2}, a_k = a, odd prime p: |E - E_LineC(p,m)| <= p^m exp(-eta^2 a^2 p/4) (G) and <= p^m exp(-beta eta^2 a^2 p), beta = min(0.2, 0.2676/(2 m eta a)^2) (J0). With BGS-TRACE-146 (prime p > 4^m): E = 2m - 2m^2/p + O_m(p^{-3/2}) for m >= 5. Only a transfer of Line C, not a new COE theorem. G full band: sites iid up to a global phase that cancels. J0 bound useful only for p >> m^3 log p. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT ENUMERATION (p = 5..13) + INDEPENDENT REFEREE AUDIT",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/referee_replay/d7_check.py",
+        "computations/verification/lineD/code/linec_exact.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-161",
+      "title": "Intermediate band K = kappa N",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-160"
+      ],
+      "boundary": "Sketch only: needs a lower bound min_{Delta} sum_{k<=K}|Delta_hat(k)|^2 >= c N^gamma over admissible Delta (super-resolution / partial-Fourier smallest singular value on the N-th roots of unity with multiplicities). Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "open",
+      "ledger_status": "OPEN (SKETCH)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ],
+      "closure_condition": "Sketch only: needs a lower bound min_{Delta} sum_{k<=K}|Delta_hat(k)|^2 >= c N^gamma over admissible Delta (super-resolution / partial-Fourier smallest singular value on the N-th roots of unity with multiplicities)."
+    },
+    {
+      "id": "BGS-TRACE-162",
+      "title": "Crossover conjecture: R-scaling of the band-limited deviation and the mode threshold",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "dependencies": [
+        "BGS-TRACE-160",
+        "BGS-TRACE-148"
+      ],
+      "boundary": "Conjecture: with R = pi eta (sum k^2 a_k^2)^{1/2}/p fixed, lim_p E = 2m + F_m(R), F_m(R) -> 0 as R -> infinity; Line C's -2m^2/p needs R -> infinity. Numerics (J0, eta a = 2, Monte Carlo, p = 101, 211, 401): collapse at p = 211 and 401 only; deviations below MC error for R >~ 1.6 (K ~ 12, 20, 31). Caveats: two primes; R derived from the G weight but tested on J0 data; K_* ~ p^{2/3} only restates fixed R; R_* depends on the MC precision. Line C's chi^2/dof ~ 967 for its 7-mode kick is consistent with an effectively single-mode regime (K_eff = 1.04, R = 0.39); numerical record, not derived from fixed-m results. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+      "state": "open",
+      "ledger_status": "OPEN / CONJECTURE (NUMERICAL DIAGNOSTICS ONLY)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/lineD-band-limited/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineD/code/mc_band.py",
+        "computations/verification/lineD/code/mc_fast.py",
+        "computations/verification/lineD/code/analyze_scan.py",
+        "computations/verification/lineD/code/analyze_fast.py",
+        "computations/verification/lineD/code/rc_table.py",
+        "computations/verification/lineD/referee_replay/d8_spot.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/band_limited_kick_bridge.tex"
+      ],
+      "closure_condition": "Conjecture: with R = pi eta (sum k^2 a_k^2)^{1/2}/p fixed, lim_p E = 2m + F_m(R), F_m(R) -> 0 as R -> infinity; Line C's -2m^2/p needs R -> infinity."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

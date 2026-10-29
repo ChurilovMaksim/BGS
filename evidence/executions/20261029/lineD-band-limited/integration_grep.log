@@ -1,0 +1,3 @@
+command: grep -nE "sorry|native_decide|admit|implemented_by|extern|unsafe|opaque|^axiom|^import" formalization/Bgs/LineDCerts.lean
+grep_exit:1
+interpretation: exit 1 means the pattern did not match. The module has no sorry, native_decide, admit, implemented_by, extern, unsafe, opaque, axiom declaration, or import.

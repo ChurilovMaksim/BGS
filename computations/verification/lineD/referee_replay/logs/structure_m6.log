@@ -1,0 +1,16 @@
+m=6 D=39200 g'=280 |Fix|=39200 |V[4]|=8
+  s=1 (s mod g'=1): rad-formula levels D|phi|^2 on supp = [8.], |supp|=4900 | direct-vs-rad 1.2e-18 | Gamma-inv 7.4e-18 | parity-inv 7.4e-18 | sum phihat = 1.000000000000-0.000000000000j
+  s=3 (s mod g'=3): rad-formula levels D|phi|^2 on supp = [8.], |supp|=4900 | direct-vs-rad 1.1e-18 | Gamma-inv 7.4e-18 | parity-inv 7.2e-18 | sum phihat = 1.000000000000-0.000000000000j
+  s=9 (s mod g'=9): rad-formula levels D|phi|^2 on supp = [8.], |supp|=4900 | direct-vs-rad 1.2e-18 | Gamma-inv 7.3e-18 | parity-inv 7.0e-18 | sum phihat = 1.000000000000-0.000000000000j
+  s=11 (s mod g'=11): rad-formula levels D|phi|^2 on supp = [8.], |supp|=4900 | direct-vs-rad 1.0e-18 | Gamma-inv 7.8e-18 | parity-inv 7.2e-18 | sum phihat = 1.000000000000-0.000000000000j
+  s=277 (s mod g'=277): rad-formula levels D|phi|^2 on supp = [8.], |supp|=4900 | direct-vs-rad 1.2e-18 | Gamma-inv 7.4e-18 | parity-inv 7.2e-18 | sum phihat = 1.000000000000-0.000000000000j
+  s=279 (s mod g'=279): rad-formula levels D|phi|^2 on supp = [8.], |supp|=4900 | direct-vs-rad 1.1e-18 | Gamma-inv 7.7e-18 | parity-inv 7.2e-18 | sum phihat = 1.000000000000-0.000000000000j
+  support s-independent over tested s: True; D_eff=4900; D/D_eff=8.0
+  B_sym = 27417/2450 = 11.190612; 2m - B_sym = 0.809388
+  #support points with |Gamma xi|<2m: 640;  D_eff odd: False; 2m | D_eff: False
+  multiset classes on supp: 470; Gamma classes on supp: 470; multisets containing >1 Gamma class: 0
+  (full Fix_m) multisets containing >1 Gamma class: 0
+  K=[1]: Gamma-class reps in collisions (tol 1e-9): 26; min nonzero gap = 7.857e-03
+    collision reps all half-turn-invariant multisets: True; max |S_1| among them: 1.39e-15
+  K=[1, 2]: Gamma-class reps in collisions (tol 1e-9): 0; min nonzero gap = 3.531e-02
+  K=[1, 2, 3]: Gamma-class reps in collisions (tol 1e-9): 0; min nonzero gap = 3.192e-01

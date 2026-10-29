@@ -1,0 +1,9 @@
+validate eta=1 s=3: quadrature c1=0.871518  numeric d/dt=0.871518
+validate eta=4 s=3: quadrature c1=71.451591  numeric d/dt=71.449395
+validate eta=8 s=3: quadrature c1=186.887604  numeric d/dt=186.908035
+J0 m=3 K=1 (separating, gap 0.753) eta=1: max_s|c1|=13.3227   G-ensemble for comparison: 8.701e+00
+J0 m=3 K=1 (separating, gap 0.753) eta=4: max_s|c1|=128.7455   G-ensemble for comparison: 1.908e+01
+J0 m=3 K=1 (separating, gap 0.753) eta=16: max_s|c1|=682.6920   G-ensemble for comparison: 1.326e-11
+J0 m=3 K=1 (separating, gap 0.753) eta=64: max_s|c1|=7181.6412   G-ensemble for comparison: 1.006e-12
+J0 m=3 K=1 (separating, gap 0.753) eta=256: max_s|c1|=85062.7903   G-ensemble for comparison: 1.610e-11
+J0 m=3 K=1 (separating, gap 0.753) eta=1024: max_s|c1|=453908.3148   G-ensemble for comparison: 2.576e-10
