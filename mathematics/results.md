@@ -2,7 +2,7 @@
 
 ## Symmetry class of the sixteen-phase ensemble, 29 October 2026
 
-[TRACE-130](fixed-map/sixteen_phase_symmetry.md) places every position-diagonal realization in the orthogonal class. For every real \(\eta\) and every phase, \(e^{i\eta A^{\mathrm{diag}}}M_N\) is similar to the symmetric unitary \(D^{1/2}M_ND^{1/2}\). A position sine does not leave the class. The displacement-\(\ell=1\) modes have energy \(9/160000\), and so do the modes with \(\ell=-1\). The momentum sine \(B_N=(T_N(1,0)-T_N(-1,0))/(2i)\) is Hermitian and odd under position conjugation, with symbol energy \(1/2\). For \(\varepsilon\ne 0\) the similarity does not apply. Neither statement is a COE or CUE form factor. BGS-TRACE-005 stays open.
+[TRACE-130](fixed-map/sixteen_phase_symmetry.md) proves that for every real diagonal kick the antiunitary \(\Theta=DK_0\) satisfies \(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). The orthogonal-class name is a heuristic. It is not a COE form factor, and it does not exclude a CUE form factor. Each of the rows \(\ell=\pm 1\) has energy \(9/160000\). The full symbol is \(K_0\)-even only for some phases. The momentum sine has symbol energy \(1/2\), and a nonzero multiple is not a function of position. BGS-TRACE-005 stays open.
 
 ## Scalar-return orbit sum, 29 October 2026
 

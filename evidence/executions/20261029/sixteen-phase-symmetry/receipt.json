@@ -1,7 +1,7 @@
 {
   "schema": "bgs-sixteen-phase-symmetry-v1",
   "claim": "BGS-TRACE-130",
-  "orthogonal_similarity": "exp(i eta A_diag) M_N is similar to D^{1/2} M_N D^{1/2}",
+  "antiunitary": "Theta = D K_0 satisfies Theta^2 = I and Theta U Theta^{-1} = U^dagger for every real diagonal kick",
   "momentum_row_energy": "9/160000",
   "momentum_sine_energy": "1/2",
   "checked_dimensions": [3, 5, 7, 11],
@@ -9,8 +9,8 @@
   "sources_sha256": {
     "python": "51369a0a461f79a5fbd3e6bdcdb127ba2bf8318c2a9660b01b603890c5f2e95f",
     "cpp": "7c863d20748978ff5e16a6fc98551f051ddee7a4174e7ce1fa60ddf407b4238b",
-    "lean": "4f271611d7c5ed97531006b91129fad71ae5bca01726d4f01cc0784ff81361b7",
-    "proof": "67086f0de195f7cd254429c685cee77063f811f2d0fc7bdb862a4f97a0aa69d9"
+    "lean": "3cc7fa0288bdde51ac430dca7e41cbf1a0eae042c8c828a7183f60c159b3cef9",
+    "proof": "66fbc6e01cad54102f75486f3843c4d1520d4acf691cac083741fb954f471856"
   },
   "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a COE form factor, or a CUE form factor."
 }

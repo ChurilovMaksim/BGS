@@ -183,7 +183,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Bessel form of the scalar-return orbit sum](../mathematics/fixed-map/scalar_return_bessel.md) | `BGS-TRACE-129` (proved) |
 | [Scale-normalized positive-quantization bound for the unchanged BGS kick](../mathematics/fixed-map/scaled_weyl_overlap.md) | `BGS-FM-033` (conditional) |
 | [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/fixed-map/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
-| [Symmetry class of the sixteen-phase ensemble](../mathematics/fixed-map/sixteen_phase_symmetry.md) | `BGS-TRACE-130` (proved) |
+| [Local antiunitary for a position-diagonal kick](../mathematics/fixed-map/sixteen_phase_symmetry.md) | `BGS-TRACE-130` (proved) |
 | [Distance to the unperturbed spectral orbit: proved global bounds](../mathematics/fixed-map/spectral_orbit_distance.md) | `BGS-TRACE-110` (proved) |
 | [Square-free products of at least three primes](../mathematics/fixed-map/squarefree_product_abel.md) | `BGS-TRACE-123` (proved) |
 | [A once-counted stationary-label residual on the pair normalization](../mathematics/fixed-map/stationary_cyclic_residual.md) | Consult proof and full ledger |

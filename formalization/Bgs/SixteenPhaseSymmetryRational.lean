@@ -3,8 +3,9 @@ set_option maxHeartbeats 0
 /-!
 # Rational witness for BGS-TRACE-130
 
-The momentum-row energy `9/160000` and `det(S-I)=-4`.
-The similarity is not formalized.
+The momentum-row energy `9/160000`, `det(S-I)=-4`, and the
+rational identity `1/4 + 1/4 = 1/2` for the momentum-sine symbol.
+The antiunitary is not formalized.
 -/
 
 def rNum : Int → Int
@@ -27,5 +28,7 @@ def oddSum : Int :=
 theorem oddEnergy : oddSum = 900 := by decide
 theorem oddRatio : (900 : Int) * 160000 = 9 * 16000000 := by decide
 theorem detSI : (2 : Int) * 2 - 4 * 2 = -4 := by decide
-/-- The two momentum-sine coefficients have squared moduli adding as `(1+1)/4 = 1/2`. -/
-theorem momentumSymbol : ((1 + 1 : Int) = 2) ∧ (2 * 2 = 4) := by decide
+/-- Cross-multiplication of `1/4 + 1/4 = 1/2`, the squared moduli of the two
+momentum-sine coefficients. `Rat` equality does not reduce under `decide`. -/
+theorem momentumSymbol : ((1 * 4 + 1 * 4 : Int) * 2) = (1 * (4 * 4)) := by
+  decide
