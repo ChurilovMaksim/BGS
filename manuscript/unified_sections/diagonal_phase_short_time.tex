@@ -1,0 +1,48 @@
+\section{Short-time limits of the diagonal-phase form factor}
+\label{sec:diagonal-phase-short-time}
+The phases below are independent at the \(N\) sites of the position basis.
+They are not the sixteen mode-pair phases, and the propagator is not the fixed kick.
+The canonical proof is
+\path{mathematics/fixed-map/diagonal_phase_short_time.md}.
+Integer comparisons are certified by
+\path{formalization/Bgs/DiagonalPhaseShortTimeRational.lean}.
+Python and C++ check the occupation sums in floating point. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Short-time diagonal-phase limits, BGS-TRACE-128]
+\label{thm:diagonal-phase-short-time}
+Let \(N\ge 3\) be odd, let \(M_N\) be the symmetric cat-map quantization, and let
+\(D\) be diagonal with independent uniform phases. For \(U_N=DM_N\),
+\(\mathbb E\lvert\operatorname{Tr} U_N\rvert^2=1\) and
+\(\mathbb E\lvert\operatorname{Tr} U_N^2\rvert^2=(2N-1)/N\). For every integer
+\(m\ge 3\), with \(P(N,m)\) the falling factorial,
+\[
+\Bigl\lvert\mathbb E\lvert\operatorname{Tr} U_N^m\rvert^2
+-2m\frac{P(N,m)}{N^m}\Bigr\rvert
+\le\frac{m!(1+m(m-1))}{N}.
+\]
+The limit at fixed \(m\ge 3\) is \(2m\). The same bound reaches every sequence
+\(m\le c\log N/\log\log N\) with a fixed \(c<1\), and it does not reach
+\(m\le N^{\alpha}\).
+
+Let \(p\) be an odd prime and let \(W_p\) be \(M_p\) with rows permuted by
+\(x\mapsto x^{-1}\), with \(0\) fixed. At \(p=3\) this permutation is the
+identity. For \(V_p=DW_p\) and every \(m\ge 3\),
+\[
+\Bigl\lvert\mathbb E\lvert\operatorname{Tr} V_p^m\rvert^2
+-m\frac{P(p,m)}{p^m}\Bigr\rvert
+\le m!\Bigl(3^{1/4}p^{-1/4}+\frac{m(m-1)+2}{p}\Bigr).
+\]
+The limit at fixed \(m\) is \(m\). The logarithmic window has \(c<1/4\) and
+does not reach \(m\le p^{\alpha}\). For \(p\ge 5\) the matrix \(W_p\) is not
+symmetric. A second independent diagonal does not break the reversal:
+conjugating with \(D_2\) gives \(D_2(D_1M_ND_2)D_2^{-1}=(D_2D_1)M_N\).
+
+The limit \(2m\) is the short-time orthogonal value and the limit \(m\) is the
+short-time unitary value. Neither ensemble is Haar measure on the
+corresponding circular ensemble, neither is the sixteen-phase kick, and
+neither is the fixed propagator. The constants are not sharp. No
+Heisenberg-scale statement is proved. The verifiers include \(N=3,5,7\). At
+time four the symmetric value is about \(7.527892\) at \(N=49\), against a
+main term about \(7.056652\), toward \(8\).
+\end{theorem}

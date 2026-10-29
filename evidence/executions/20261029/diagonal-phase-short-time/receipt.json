@@ -1,0 +1,32 @@
+{
+  "schema": "bgs-diagonal-phase-short-time-v1",
+  "claim": "BGS-TRACE-128",
+  "symmetric_limit": "2m for each fixed m>=3",
+  "symmetric_gap": "m!(1+m(m-1))/N",
+  "inversion_limit": "m for each fixed m>=1",
+  "inversion_gap": "m!(3^(1/4) p^(-1/4)+(m(m-1)+2)/p)",
+  "logarithmic_windows": "c<1 for the symmetric ensemble and c<1/4 for the inversion",
+  "not_reached": "m<=N^alpha",
+  "p3": "inversion is the identity",
+  "symmetry_witness": "(1,2) for p!=11, and (2,0) at p=11",
+  "N49_m4": {
+    "E": "7.527892289777",
+    "main": "7.056651565249"
+  },
+  "N3_m3": {
+    "E": "3.444444444444",
+    "main": "1.333333333333"
+  },
+  "p5_m3": "2.920000000000",
+  "p31_m4": "3.971503994579",
+  "kloosterman": {"5": 36, "7": 90},
+  "languages_agree_to": "1e-12",
+  "sources_sha256": {
+    "python": "1e856e0d48303fbbd177788713a8242df1eab1f99bf68a2d0c2dbf3f9f56c52a",
+    "cpp": "cca75b745566d75b0631add903ca59c746b8626b8f7b575370cd485569cf6cbb",
+    "lean": "1e1741a83780da70c95eb3cb58bad30ecb0c547b78a085720aa569c47bbc7536",
+    "proof": "599fc87e0ca6432addde960d0e2c17d013ac17611604201717202b2d19f3f519"
+  },
+  "self_red_team": "The pair (1,2) does not break symmetry at p=11; the proof uses (2,0) there. The inversion constant keeps the extra 2m!/p. Two diagonals stay orthogonal by similarity.",
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a window m<=N^alpha, or the sixteen-phase expectation."
+}

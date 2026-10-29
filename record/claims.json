@@ -5477,6 +5477,31 @@
       "manuscript": [
         "manuscript/unified_sections/diagonal_phase_form_factor.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-128",
+      "title": "Short-time limits of the diagonal-phase form factor",
+      "source": "mathematics/fixed-map/diagonal_phase_short_time.md",
+      "dependencies": [
+        "BGS-TRACE-127"
+      ],
+      "boundary": "For every odd N>=3 and the symmetric cat-map quantization M_N, with D diagonal and Haar on the N-torus, E|Tr (D M_N)|^2=1 and E|Tr (D M_N)^2|^2=(2N-1)/N. For every integer m>=3, the absolute difference between E|Tr (D M_N)^m|^2 and 2m P(N,m)/N^m is at most m!(1+m(m-1))/N, where P is the falling factorial. The fixed-m limit is 2m. The same bound gives the limit along m(N)<=c log N/log log N for any fixed c<1, and it does not reach m<=N^alpha. For an odd prime p, the row-inverted matrix W_p with pi(0)=0 and pi(x)=x^{-1} is flat, and V_p=D W_p. At p=3, pi is the identity. For every odd prime and every m>=3, the absolute difference between E|Tr V_p^m|^2 and m P(p,m)/p^m is at most m!(3^(1/4) p^(-1/4)+(m(m-1)+2)/p). The fixed-m limit is m. The logarithmic window uses c<1/4 and does not reach m<=p^alpha. A second independent diagonal does not break time reversal, because conjugating with D2 gives D2(D1 M D2)D2^{-1}=(D2 D1)M. The square-root conjugation is false. The constants are not sharp. No Heisenberg-scale statement is proved. This is not the sixteen-phase ensemble and not the fixed kick. The measure is not Haar measure on COE or CUE. Lean decides the symmetric constants 42, 312 and 2520, the identity (6N^2-9N+4)-6(N-1)(N-2)=9N-8, the comparison 9N-8<=42N, the integer main terms at N=3,5,7, and the Kloosterman counts 36 and 90. It does not sum the complex form factor. Python and C++ check the occupation inequalities in floating point, including N=3,5,7 and the time-four value at N=49. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/diagonal-phase-short-time/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/diagonal_phase_short_time.py",
+        "computations/cpp/diagonal_phase_short_time.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/DiagonalPhaseShortTimeRational.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/diagonal_phase_short_time.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

@@ -214,7 +214,8 @@
     "BGS-TRACE-124",
     "BGS-TRACE-125",
     "BGS-TRACE-126",
-    "BGS-TRACE-127"
+    "BGS-TRACE-127",
+    "BGS-TRACE-128"
   ],
   "edges": [
     {
@@ -1520,6 +1521,11 @@
     {
       "from": "BGS-TRACE-126",
       "to": "BGS-TRACE-127",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-127",
+      "to": "BGS-TRACE-128",
       "type": "scientific-prerequisite"
     }
   ],

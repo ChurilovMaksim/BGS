@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**213 registered nodes; 261 direct prerequisite edges.**
+**214 registered nodes; 262 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -226,4 +226,5 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-124](../mathematics/fixed-map/odd_modulus_abel.md) | proved | `BGS-TRACE-120`, `BGS-TRACE-121`, `BGS-TRACE-122`, `BGS-TRACE-123` | None registered | 0 |
 | [BGS-TRACE-125](../mathematics/fixed-map/uniform_orbit_overlap.md) | proved | `BGS-TRACE-117`, `BGS-TRACE-118` | None registered | 0 |
 | [BGS-TRACE-126](../mathematics/fixed-map/interaction_phase_form_factor.md) | proved | `BGS-TRACE-117` | None registered | 1 |
-| [BGS-TRACE-127](../mathematics/fixed-map/diagonal_phase_form_factor.md) | proved | `BGS-TRACE-126` | None registered | 0 |
+| [BGS-TRACE-127](../mathematics/fixed-map/diagonal_phase_form_factor.md) | proved | `BGS-TRACE-126` | None registered | 1 |
+| [BGS-TRACE-128](../mathematics/fixed-map/diagonal_phase_short_time.md) | proved | `BGS-TRACE-127` | None registered | 0 |

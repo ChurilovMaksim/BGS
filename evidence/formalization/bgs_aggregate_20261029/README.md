@@ -28,3 +28,8 @@ On branch `cursor/diagonal-phase-form-factor-51b0` (PR #48 stack base), after wr
 Log: [build_head48.log](build_head48.log) (sha256 `017489182fbb778be91784385815cfa5e8f870b18106a82de8c9c1119aaa1601`).
 
 Head commits on the linear stack (#48 → #47 → #49 → #50) each record an additional log in this folder after the same command sequence.
+
+| Branch | Log | Exit |
+|---|---|---|
+| `cursor/diagonal-phase-form-factor-51b0` (#48) | [build_head48.log](build_head48.log) | 0 |
+| `cursor/diagonal-phase-short-time-51b0` (#47) | [build_head47.log](build_head47.log) | 0 |
