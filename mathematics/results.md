@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Local antiunitary for a position-diagonal kick, 29 October 2026
+
+[TRACE-130](fixed-map/sixteen_phase_symmetry.md) proves that for every real diagonal kick the antiunitary \(\Theta=DK_0\) satisfies \(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). The orthogonal-class name is a heuristic. It is not a COE form factor, and it does not exclude a CUE form factor. Each of the rows \(\ell=\pm 1\) has energy \(9/160000\). The full symbol is \(K_0\)-even only for some phases. The momentum sine has symbol energy \(1/2\), and a nonzero multiple is not a function of position. BGS-TRACE-005 stays open.
+
 ## Scalar-return orbit sum, 29 October 2026
 
 [TRACE-129](fixed-map/scalar_return_bessel.md) gives the Bessel average of the classical position-diagonal orbit sum at a return \(S^m\equiv I\). It is not an identity for the quantum sixteen-phase average. The degree-two jet is \(\exp(-m\sigma_{\mathrm{diag}}\eta^2)\). The degree-four gap is the quadruple excess of the position orbit. It vanishes at \(7\), \(31\), \(41\) and \(47\), and it equals \(120\) at \(11\). Time one equals \(1+\rho_1\) inside the perturbative window. Each momentum row \(\ell=\pm 1\) has energy \(9/160000\). No form-factor limit at times of order \(N\) is proved. BGS-TRACE-005 stays open.
@@ -465,7 +469,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**215 registered claims: 189 proved, 12 verification-pending, 9 conditional, 5 open.**
+**216 registered claims: 190 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -631,7 +635,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (106 claims)
+### TRACE family (107 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -741,5 +745,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-127` | **PROVED** | Diagonal random-phase form factor of the cat map at times one, two and three |
 | `BGS-TRACE-128` | **PROVED** | Short-time limits of the diagonal-phase form factor |
 | `BGS-TRACE-129` | **PROVED** | Bessel form of the scalar-return orbit sum |
+| `BGS-TRACE-130` | **PROVED** | Local antiunitary for a position-diagonal kick |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

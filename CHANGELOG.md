@@ -1,5 +1,13 @@
 # Scientific changelog
 
+## 2026-10-29 — Self-red-team of the position-diagonal antiunitary
+
+BGS-TRACE-130. Similarity to a symmetric unitary does not assign an orthogonal class, and it does not exclude a CUE form factor: \(O^T\Lambda O\) with orthogonal \(O\) and CUE eigenvalues is symmetric and has the CUE form factor. The proved statement is the antiunitary \(\Theta=DK_0\), with \(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). The class name is a heuristic. The symbol fails to be \(K_0\)-even only for almost every phase. The coefficient on the row \(\ell=1\) is \((-3-4i)r(k)\), not \((-3+4i)r(k)\). Lean certifies the cross-multiplication of \(1/4+1/4=1/2\), not the two arithmetic tautologies \(1+1=2\) and \(2\cdot 2=4\). No new external dependency.
+
+## 2026-10-29 — Local antiunitary for a position-diagonal kick
+
+Register BGS-TRACE-130. For every real diagonal kick, the antiunitary \(\Theta=DK_0\) satisfies \(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). The orthogonal-class name is a heuristic and does not exclude a CUE form factor. Each of the rows \(\ell=\pm 1\) has energy \(9/160000\). The momentum sine has symbol energy \(1/2\) and is not a function of position. Neither statement evaluates the averaged squared trace for \(m\ge 2\). The time-one value remains \(1+\rho_1\) from BGS-TRACE-129. The samples at \(N=201\) and \(N=203\) are not used, and the scale \(\eta^2 N\cdot 9/160000\) is not derived. Python and C++ check the symmetric conjugate and the momentum sine at \(N=3,5,7,11\); a Lean witness certifies the energy identity \(900/4000^2=9/160000\), \(\det(S-I)=-4\), and the cross-multiplication of \(1/4+1/4=1/2\). BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+
 ## 2026-10-29 — Self-red-team of the scalar-return Bessel identity
 
 BGS-TRACE-129. The Bessel identity is the phase average of the classical position-diagonal orbit sum. It is not the quantum sixteen-phase average. A referee Monte Carlo, recorded in the proof, differs from that classical average by ≈1.7 at \(N=11\), \(m=12\), and by up to ≈6 at \(N=29\), \(m=10\) (\(\eta=2\)), and tracks it at zero quadruple excess for \(\lambda\lesssim 1\). The factor \(J_0\) and its products are classical. Time one equals \(1+\rho_1\), not the bare value \(1\). Each of \(\ell=\pm 1\) has energy \(9/160000\), so \(9/80000\) together. Lean does not certify that the order at \(p=11\) is exactly \(12\), and the quadruple rows at \(11\), \(31\), \(41\) and \(47\) are Python-only. No new external dependency.

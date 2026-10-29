@@ -1,0 +1,16 @@
+{
+  "schema": "bgs-sixteen-phase-symmetry-v1",
+  "claim": "BGS-TRACE-130",
+  "antiunitary": "Theta = D K_0 satisfies Theta^2 = I and Theta U Theta^{-1} = U^dagger for every real diagonal kick",
+  "momentum_row_energy": "9/160000",
+  "momentum_sine_energy": "1/2",
+  "checked_dimensions": [3, 5, 7, 11],
+  "not_claimed": "COE or CUE form factor; golden-rule scale eta^2 N * 9/160000",
+  "sources_sha256": {
+    "python": "51369a0a461f79a5fbd3e6bdcdb127ba2bf8318c2a9660b01b603890c5f2e95f",
+    "cpp": "7c863d20748978ff5e16a6fc98551f051ddee7a4174e7ce1fa60ddf407b4238b",
+    "lean": "3cc7fa0288bdde51ac430dca7e41cbf1a0eae042c8c828a7183f60c159b3cef9",
+    "proof": "66fbc6e01cad54102f75486f3843c4d1520d4acf691cac083741fb954f471856"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a COE form factor, or a CUE form factor."
+}

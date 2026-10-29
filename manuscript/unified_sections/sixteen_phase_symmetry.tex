@@ -1,0 +1,31 @@
+\section{Local antiunitary for a position-diagonal kick}
+\label{sec:sixteen-phase-symmetry}
+The canonical proof is
+\path{mathematics/fixed-map/sixteen_phase_symmetry.md}.
+The integer energy is certified by
+\path{formalization/Bgs/SixteenPhaseSymmetryRational.lean}.
+Python and C++ check the symmetric conjugate and the momentum sine.
+No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+
+\begin{theorem}[Position-diagonal antiunitary, BGS-TRACE-130]
+\label{thm:sixteen-phase-symmetry}
+Let \(A^{\mathrm{diag}}(\varphi)\) be the position-diagonal part of the sixteen-phase
+symbol, and let \(D=\exp(i\eta A^{\mathrm{diag}}(\varphi))\). For every real \(\eta\)
+and every phase vector, the antiunitary \(\Theta=DK_0\) satisfies \(\Theta^2=1\) and
+\(\Theta(DM_N)\Theta^{-1}=(DM_N)^\dagger\). The same identity holds for every real
+diagonal kick, including a position sine. The orthogonal-class name is the
+heuristic for this antiunitary. It is not a COE form factor, and it does not
+exclude a CUE form factor.
+
+The displacement-\(\ell=1\) modes have energy \(9/160000\), with
+\(4000\,c_{1,k}=(-3-4i)r(k)\), and the row \(\ell=-1\) has the same energy.
+The full symbol fails to be even under position conjugation for almost every
+phase, and it is even for some phases. The momentum sine
+\(B_N=(T_N(1,0)-T_N(-1,0))/(2i)\) is Hermitian and odd under that conjugation,
+with symbol energy \(1/2\). For \(\varepsilon\ne 0\) the kick
+\(A^{\mathrm{diag}}+\varepsilon B_N\) is not a function of position, so the
+antiunitary is not claimed for it. Neither statement identifies a form factor.
+The time-one averaged squared trace remains \(1+\rho_1\) from BGS-TRACE-129.
+\end{theorem}

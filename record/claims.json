@@ -5527,6 +5527,32 @@
       "manuscript": [
         "manuscript/unified_sections/scalar_return_bessel.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-130",
+      "title": "Local antiunitary for a position-diagonal kick",
+      "source": "mathematics/fixed-map/sixteen_phase_symmetry.md",
+      "dependencies": [
+        "BGS-TRACE-126",
+        "BGS-TRACE-129"
+      ],
+      "boundary": "For every odd N>=3 and every real diagonal kick, including every position-diagonal realization of the sixteen-phase symbol and every extra position sine, if D is the diagonal unitary exponential of the kick and U=D M_N, the antiunitary Theta=D K_0 satisfies Theta^2=I and Theta U Theta^{-1}=U^dagger. The orthogonal-class name is the heuristic attached to that antiunitary. It is not a COE form factor, and it does not exclude a CUE form factor. The modes with displacement ell=1 have symbol energy 9/160000, and the modes with ell=-1 have the same energy, with 4000 c_{1,k}=(-3-4i) r(k). The full symbol fails to be K_0-even for almost every phase and is K_0-even for some phases. The momentum sine B_N=(T_N(1,0)-T_N(-1,0))/(2i) is Hermitian and K_0-odd, with symbol energy 1/2. For epsilon not equal to 0 the kick A_diag+epsilon B_N is not a function of position, so the antiunitary argument does not apply, and the form factor of that ensemble is not identified. Neither statement evaluates E|Tr U^m|^2 for m>=2. The time-one value remains 1+rho_1 from BGS-TRACE-129. The samples at N=201 and N=203 are not used. The golden-rule scale eta^2 N * 9/160000 is not derived. Lean decides 900/4000^2=9/160000, det(S-I)=-4, and the cross-multiplication (1*4+1*4)*2=1*(4*4) of 1/4+1/4=1/2. It does not formalize the antiunitary. Python and C++ check that D^{1/2} M D^{1/2} is symmetric and that B_N is odd at N=3,5,7,11. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/sixteen-phase-symmetry/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/sixteen_phase_symmetry.py",
+        "computations/cpp/sixteen_phase_symmetry.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/SixteenPhaseSymmetryRational.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/sixteen_phase_symmetry.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."
