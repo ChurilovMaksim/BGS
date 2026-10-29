@@ -60,6 +60,7 @@ add_executable(diagonal_phase_short_time computations/cpp/diagonal_phase_short_t
 add_executable(scalar_return_bessel computations/cpp/scalar_return_bessel.cpp)
 add_executable(revival_closure_law computations/cpp/revival_closure_law.cpp)
 add_executable(revival_half_period_parity computations/cpp/revival_half_period_parity.cpp)
+target_include_directories(revival_closure_law PRIVATE ${Boost_INCLUDE_DIRS})
 add_executable(sixteen_phase_symmetry computations/cpp/sixteen_phase_symmetry.cpp)
 add_executable(odd_modulus_abel computations/cpp/odd_modulus_abel.cpp)
 add_executable(uniform_orbit_overlap computations/cpp/uniform_orbit_overlap.cpp)

@@ -2,7 +2,7 @@
 
 ## Twisted closure and revival at the scalar return, 29 October 2026
 
-[TRACE-133](fixed-map/revival_closure_law.md) gives the twisted closure formula for the position-diagonal kick at every time, with cocycle phase \(\beta\) and \(|\Lambda_m|=N^{m-2}\). [TRACE-134](fixed-map/revival_closure_law.md) gives a pointwise bound at the scalar return and the \(\exp(-\eta^2 t\sigma_d/2)\) limit on the minimal-period sequence; the explicit bound is non-informative at computable \(N\). [TRACE-135](fixed-map/revival_closure_law.md) reduces the scalar-return trace when \(S^{t/2}\equiv -I\). [TRACE-136](fixed-map/revival_closure_law.md) and [TRACE-137](fixed-map/revival_closure_law.md) are open conjectures for even and odd order respectively. Position-diagonal kick only (\(\sigma_d=13203/32000\)). BGS-TRACE-005 stays open.
+[TRACE-133](fixed-map/revival_closure_law.md) gives the twisted closure formula for the position-diagonal kick at every time, with cocycle phase \(\beta\) and \(|\Lambda_m|=N^{m-2}\). [TRACE-134](fixed-map/revival_closure_law.md) gives a pointwise bound at the scalar return and the \(\exp(-\eta^2 t\sigma_d/2)\) limit on the minimal-period sequence; the explicit bound is non-informative at computable \(N\) (first below \(1\) near \(N\approx10^{191}\) at \(\lambda=1/4\)). [TRACE-135](fixed-map/revival_closure_law.md) reduces the scalar-return trace when \(S^{t/2}\equiv -I\). [TRACE-136](fixed-map/revival_closure_law.md) and [TRACE-137](fixed-map/revival_closure_law.md) are open conjectures for even and odd order respectively. Position-diagonal kick only (\(\sigma_d=13203/32000\)). BGS-TRACE-005 stays open.
 
 ## Fixed-time limits for a general hyperbolic cat map, 29 October 2026
 

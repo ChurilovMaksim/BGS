@@ -17,7 +17,7 @@
 namespace revival {
 
 constexpr double kPi = 0x1.921fb54442d18p+1;
-constexpr double kLam = 3.0 + 2.0 * std::sqrt(2.0);
+const double kLam = 3.0 + 2.0 * std::sqrt(2.0);
 
 using C = std::complex<double>;
 using Mat = std::vector<C>;
