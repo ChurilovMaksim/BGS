@@ -55,5 +55,6 @@ import Bgs.HyperbolicShortTime
 import Bgs.RevivalClosureRational
 import Bgs.MomentumPhaseCue
 import Bgs.LineCEncounter
+import Bgs.LineDCerts
 
 import Bgs.Mathlib

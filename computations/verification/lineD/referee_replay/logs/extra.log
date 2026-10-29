@@ -1,0 +1,12 @@
+m=3 K=[1] G eta=4: max_s|Psi-B_sym|=0.3611  (<= 0.02m*... threshold 0.06: False)
+m=3 K=[1] G eta=8: max_s|Psi-B_sym|=0.0004  (<= 0.02m*... threshold 0.06: True)
+m=4 K=[1, 2] G eta=2: max_s|Psi-B_sym|=0.2762  (<= 0.02m*... threshold 0.08: False)
+m=4 K=[1, 2] G eta=4: max_s|Psi-B_sym|=0.0007  (<= 0.02m*... threshold 0.08: True)
+m=5 K=[1, 2] G eta=8: max_s|Psi-B_sym|=0.4010  (<= 0.02m*... threshold 0.10: False)
+m=5 K=[1, 2] G eta=16: max_s|Psi-B_sym|=0.0297  (<= 0.02m*... threshold 0.10: True)
+m=5 K=[1, 2, 3, 4] G eta=2: max_s|Psi-B_sym|=0.2437  (<= 0.02m*... threshold 0.10: False)
+m=5 K=[1, 2, 3, 4] G eta=4: max_s|Psi-B_sym|=0.0052  (<= 0.02m*... threshold 0.10: True)
+p=101 m=3 K=1 J0 eta=1: exact E=2.9298  Psi(t*)=2.7990  p*(E-Psi*)=13.21   B_3^sym=4.7959  E_LineC=5.9113
+p=101 m=3 K=1 J0 eta=4: exact E=3.3477  Psi(t*)=3.4911  p*(E-Psi*)=-14.48   B_3^sym=4.7959  E_LineC=5.9113
+p=101 m=3 K=1 J0 eta=16: exact E=4.1962  Psi(t*)=3.7953  p*(E-Psi*)=40.49   B_3^sym=4.7959  E_LineC=5.9113
+p=101 m=3 K=1 J0 eta=64: exact E=4.7821  Psi(t*)=4.3689  p*(E-Psi*)=41.73   B_3^sym=4.7959  E_LineC=5.9113

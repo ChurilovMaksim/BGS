@@ -833,6 +833,90 @@
       "state": "open",
       "source": "mathematics/fixed-map/random_phase_encounter_pairs.md",
       "disposition": "29 October 2026: open scaling-limit conjecture. The guess c2=2m^3 for all m>=10 is refuted at m=12. The m<=12 table is consistent with the conjecture and does not prove it. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-149",
+      "state": "proved",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: exact trace bridge E|Tr U^m|^2 = Psi_m(t_N) for every odd N with gcd(N, D_m)=1. Psi_m is C^infty, even and 1-periodic. This is Line B Theorem 1 applied for each theta; the mechanism is Boasman-Keating 1995 section 5 and is not claimed as new. Depends on TRACE-131 and TRACE-133. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-150",
+      "state": "proved",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: 1/N expansion and residue period bound g'_m at fixed (m, K, a, eta). The O(N^{-2}) remainder is not uniform in eta or K. Depends on TRACE-149. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-151",
+      "state": "proved",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: orbit-pair formula and Gauss-weight support. The orbit form is the Boasman-Keating mechanism, not claimed as new. Lean decides |ker(H_m mod 4)| for m=3..6 only. Depends on TRACE-149 and TRACE-133. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-152",
+      "state": "proved",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: under P_K-separation of dihedral classes, the strong-kick limit is B_m^sym at every residue. Iterated limit, N to infinity first. Quenched-ensemble analogue of Line B Theorem 4. Depends on TRACE-151. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-153",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: computer-assisted instances m=3..7 (exact B^sym rationals, Gamma-separation, K=1 collisions). An independent referee replay is deposited. The ledger still asks for a second independent exact replay as verifier of record, so the state stays verification-pending. Depends on TRACE-152 and TRACE-156. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-154",
+      "state": "proved",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: B_m^sym < 2m for every odd m, by an odd-size support argument. Even m is not included. Depends on TRACE-151. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-155",
+      "state": "open",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: open. B_m^sym < 2m for even m is enumerated through m=9 and not proved beyond that range. Depends on TRACE-154. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-156",
+      "state": "proved",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: Newton identities separate point multisets; half-turn collisions for odd K at even m. Lean certifies the listed m=4 and m=6 sequences only. Depends on TRACE-151. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-157",
+      "state": "proved",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: the dihedral-diagonal part of c_1 vanishes and c_1 is odd in the residue, so it is not -2m^2 uniformly in N. Single residues are not excluded. Depends on TRACE-150 and TRACE-151. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-158",
+      "state": "conditional",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: conditional on P_K-separation of Gamma-classes. Gaussian ensemble only: c_1 tends to 0, with b of degree 4 in eta. Separation for m<=7 is the verification-pending TRACE-153. Depends on TRACE-157 and TRACE-153. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-159",
+      "state": "open",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: open. For uniform phases, c_1 is not shown to vanish and numerically grows with eta. Depends on TRACE-157. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-160",
+      "state": "proved",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: the full band equals the Line C ensemble up to p^m exp(-c p). A transfer of TRACE-146 for prime p>4^m, not a new COE theorem. Depends on TRACE-146. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-161",
+      "state": "open",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: open sketch of the intermediate band K = kappa N. Depends on TRACE-160. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-162",
+      "state": "open",
+      "source": "mathematics/fixed-map/band_limited_kick_bridge.md",
+      "disposition": "29 October 2026: open conjecture on R-scaling of the band-limited deviation. Monte Carlo at p=101, 211 and 401 is a diagnostic. The account of Line C's chi^2/dof about 967 is a numerical record, not a derivation from the fixed-m results. Depends on TRACE-160 and TRACE-148. Does not close TRACE-005 or BGS-001."
     }
   ],
   "invariants": [

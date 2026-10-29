@@ -27,21 +27,21 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**358 maintained proof notes; 10 topic views; 232 core claim IDs.**
+**359 maintained proof notes; 10 topic views; 246 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
-| conditional | 9 |
-| open | 8 |
-| proved | 201 |
-| verification-pending | 14 |
+| conditional | 10 |
+| open | 12 |
+| proved | 209 |
+| verification-pending | 15 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
 No state is inferred for an unregistered note. Read its proof and the full ledger.
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 159 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 160 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -56,6 +56,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Exponentially negligible balanced coordinate-Hamming hierarchy](../mathematics/fixed-map/balanced_hamming_hierarchy.md) | Consult proof and full ledger |
 | [Balanced-phase regularization: a classical and quantum theorem](../mathematics/fixed-map/balanced_phase_controllability.md) | `BGS-RES-017` (proved) |
 | [Balanced spectral rounding and short-trace information](../mathematics/fixed-map/balanced_rounding_research_20261027.md) | `BGS-TRACE-114` (proved) |
+| [Line D — band-limited random kicks on the quantized cat map (v2, after independent referee audit)](../mathematics/fixed-map/band_limited_kick_bridge.md) | `BGS-TRACE-149` (proved); `BGS-TRACE-150` (proved); `BGS-TRACE-151` (proved); `BGS-TRACE-152` (proved); `BGS-TRACE-153` (verification-pending); `BGS-TRACE-154` (proved); `BGS-TRACE-155` (open); `BGS-TRACE-156` (proved); `BGS-TRACE-157` (proved); `BGS-TRACE-158` (conditional); `BGS-TRACE-159` (open); `BGS-TRACE-160` (proved); `BGS-TRACE-161` (open); `BGS-TRACE-162` (open) |
 | [Circular Dyson relaxation from the actual frozen initial spectrum](../mathematics/fixed-map/circular_dyson_actual_start.md) | `BGS-FLOW-014` (proved) |
 | [Exact clock structure factor and the scale of spectral noise removal](../mathematics/fixed-map/clock_structure_and_noise_scale.md) | `BGS-FLOW-018` (proved) |
 | [All fixed correlation orders for the original coboundary chain](../mathematics/fixed-map/coboundary_all_order_limit.md) | `BGS-FLOW-017` (proved) |

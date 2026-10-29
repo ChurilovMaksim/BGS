@@ -1,0 +1,6 @@
+warning: mathlib: repository '/workspace/audit/lineD/lean_build/.lake/packages/mathlib' has local changes
+'Bgs.LineDCerts.D_values' does not depend on any axioms
+'Bgs.LineDCerts.hx_control' does not depend on any axioms
+'Bgs.LineDCerts.fix_control' does not depend on any axioms
+'Bgs.LineDCerts.rad_control' depends on axioms: [propext]
+Bgs.LineDCerts.coll6_ok : (Bgs.LineDCerts.collOK 560 Bgs.LineDCerts.coll6 && Bgs.LineDCerts.coll6.length == 26) = true

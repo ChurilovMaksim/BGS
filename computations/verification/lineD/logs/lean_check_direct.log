@@ -1,0 +1,11 @@
+warning: mathlib: repository '/workspace/bgs-lineD/build/.lake/packages/mathlib' has local changes
+Bgs/LineDCerts.lean:37:10: warning: Variable name `m` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _m
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+real	1m29.456s
+user	0m48.638s
+sys	0m2.105s

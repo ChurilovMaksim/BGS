@@ -4,6 +4,10 @@
 
 [TRACE-143](fixed-map/random_phase_encounter_pairs.md) identifies the Haar diagonal-phase cat map at odd $N$ with Tanner's random-phase DFT. [TRACE-144](fixed-map/random_phase_encounter_pairs.md) is the exact Gauss-sum formula, rational for every $p\equiv 3\pmod 4$. [TRACE-145](fixed-map/random_phase_encounter_pairs.md) classifies the order-$1/p$ pairs as $2$-opt, swap and figure-eight. [TRACE-146](fixed-map/random_phase_encounter_pairs.md) gives $a_2=-2m^2$ for every $m\ge 5$ and every prime $p>4^m$. Gnutzmann–Seif 2004 derived $2\tau-2\tau^2$ diagrammatically for this ensemble, Gnutzmann–Altland 2005 and Pluhař–Weidenmüller 2014 predict the full COE form factor non-rigorously, and Berkolaiko–Keating 1999 did exact all-pairs combinatorics for random-phase star graphs; new here is only the rigorous fixed-$m$ exact-in-$p$ result, the complete classification including swaps, and the $m\le 12$ expansions. The explicit remainder is non-informative below $(C_m/2m^2)^2$. [TRACE-147](fixed-map/random_phase_encounter_pairs.md) is verification-pending: the computer-assisted expansion through $m=12$ deviates from the fixed-$m$ COE value $2m^3$ at $m=5,6,8,9,12$, and an independent referee replay of every coefficient at $171$ primes is deposited. Promotion is a separate status decision, as for BGS-RES-022. [TRACE-148](fixed-map/random_phase_encounter_pairs.md) is the open scaling-limit conjecture. The values at $m=1,2,3$ remain TRACE-127. This does not prove BGS-TRACE-005 or BGS-BGS-001, and it does not cover the fixed kick.
 
+## Band-limited random kicks, 29 October 2026
+
+[TRACE-149](fixed-map/band_limited_kick_bridge.md) is the exact bridge $E|\mathrm{Tr}\,U^m|^2=\Psi_m(t_N)$ for few-mode random kicks at every odd $N$ with $\gcd(N,D_m)=1$ (Line B's Theorem 1 per realisation; Boasman–Keating mechanism, not new). [TRACE-150](fixed-map/band_limited_kick_bridge.md) gives the $1/N$ expansion and the residue period bound $g'_m$; the remainder is not uniform in $\eta$ or $K$. [TRACE-151](fixed-map/band_limited_kick_bridge.md) is the orbit-pair form with the Gauss-weight support. [TRACE-152](fixed-map/band_limited_kick_bridge.md) proves the strong-kick limit $B_m^{\mathrm{sym}}$ at every residue under dihedral-class separation; the instances $m\le7$ are verification-pending ([TRACE-153](fixed-map/band_limited_kick_bridge.md)); [TRACE-154](fixed-map/band_limited_kick_bridge.md) proves $B_m^{\mathrm{sym}}<2m$ for odd $m$, even $m$ is open ([TRACE-155](fixed-map/band_limited_kick_bridge.md)); [TRACE-156](fixed-map/band_limited_kick_bridge.md) is multiset separation and half-turn collisions. [TRACE-157](fixed-map/band_limited_kick_bridge.md): the dihedral-diagonal part of $c_1$ vanishes and $c_1$ is odd in the residue; [TRACE-158](fixed-map/band_limited_kick_bridge.md) (conditional, Gaussian ensemble only) gives $c_1\to0$; [TRACE-159](fixed-map/band_limited_kick_bridge.md) (uniform phases) is open. [TRACE-160](fixed-map/band_limited_kick_bridge.md) transfers Line C to the full band; [TRACE-161](fixed-map/band_limited_kick_bridge.md) and [TRACE-162](fixed-map/band_limited_kick_bridge.md) (intermediate band; crossover conjecture with Monte Carlo diagnostics) are open. On main at d6fa6e2a the next free TRACE identifier was 149, so this block is registered as BGS-TRACE-149 through BGS-TRACE-162; the Line B packet had not merged. This does not prove BGS-TRACE-005 or BGS-BGS-001.
+
 ## Twisted closure and revival at the scalar return, 29 October 2026
 
 [TRACE-133](fixed-map/revival_closure_law.md) gives the twisted closure formula for the position-diagonal kick at every time, with cocycle phase \(\beta\) and \(|\Lambda_m|=N^{m-2}\). [TRACE-134](fixed-map/revival_closure_law.md) gives a pointwise bound at the scalar return and the \(\exp(-\eta^2 t\sigma_d/2)\) limit on the minimal-period sequence; the explicit bound is non-informative at computable \(N\) (first below \(1\) near \(N\approx10^{191}\) at \(\lambda=1/4\)). [TRACE-135](fixed-map/revival_closure_law.md) reduces the scalar-return trace when \(S^{t/2}\equiv -I\). [TRACE-136](fixed-map/revival_closure_law.md) and [TRACE-137](fixed-map/revival_closure_law.md) are open conjectures for even and odd order respectively. Position-diagonal kick only (\(\sigma_d=13203/32000\)). BGS-TRACE-005 stays open.
@@ -487,7 +491,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**232 registered claims: 201 proved, 14 verification-pending, 9 conditional, 8 open.**
+**246 registered claims: 209 proved, 15 verification-pending, 10 conditional, 12 open.**
 
 ### BGS family (1 claim)
 
@@ -653,7 +657,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (123 claims)
+### TRACE family (137 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -780,5 +784,19 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-146` | **PROVED** | Exact tau^2 coefficient of the Haar diagonal-phase cat-map form factor at fixed time |
 | `BGS-TRACE-147` | **VERIFICATION-PENDING** | Computer-assisted exact expansions to m=12 and the fixed-m tau^3 deviation from COE |
 | `BGS-TRACE-148` | **OPEN** | Scaling-limit conjecture for the Haar diagonal-phase cat-map form factor |
+| `BGS-TRACE-149` | **PROVED** | Band-limited random kick: exact trace bridge E\|Tr U^m\|^2 = Psi_m(t_N) |
+| `BGS-TRACE-150` | **PROVED** | Band-limited random kick: 1/N expansion and residue period g'_m |
+| `BGS-TRACE-151` | **PROVED** | Band-limited random kick: orbit-pair formula and Gauss-weight support |
+| `BGS-TRACE-152` | **PROVED** | Band-limited random kick: strong-kick limit B_m^sym at every residue under P_K-separation |
+| `BGS-TRACE-153` | **VERIFICATION-PENDING** | Band-limited random kick: computer-assisted instances m=3..7 (B^sym values, Gamma-separation, K=1 collisions) |
+| `BGS-TRACE-154` | **PROVED** | B_m^sym < 2m for every odd m |
+| `BGS-TRACE-155` | **OPEN** | B_m^sym < 2m for even m beyond the computed range |
+| `BGS-TRACE-156` | **PROVED** | P_K separates point multisets for K containing {1..m}; half-turn collisions for odd K at even m |
+| `BGS-TRACE-157` | **PROVED** | 1/N coefficient: Gamma-diagonal part vanishes; oddness in the residue |
+| `BGS-TRACE-158` | **CONDITIONAL** | 1/N coefficient, Gaussian ensemble: c_1 -> 0 as eta -> infinity under Gamma-separation |
+| `BGS-TRACE-159` | **OPEN** | 1/N coefficient for uniform phases (J0) at large eta |
+| `BGS-TRACE-160` | **PROVED** | Full-band random kick equals the maximal random-phase ensemble up to p^m exp(-c p) |
+| `BGS-TRACE-161` | **OPEN** | Intermediate band K = kappa N |
+| `BGS-TRACE-162` | **OPEN** | Crossover conjecture: R-scaling of the band-limited deviation and the mode threshold |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

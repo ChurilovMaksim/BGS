@@ -1,0 +1,80 @@
+=== scientific_registry_audit ===
+scientific-registry-audit: OK (246 claims, 57 external dependencies)
+exit:0
+=== repository_audit ===
+PASS check_canonical_identity
+PASS check_required
+PASS check_retired_julia
+PASS check_archive_contract
+PASS check_manuscript_surface
+PASS check_workflows
+PASS check_maintenance_surface
+PASS check_cpp_coverage
+PASS check_lean_coverage
+PASS check_bilingual_readmes
+PASS check_active_markdown_links
+PASS repository_audit
+exit:0
+=== wave3_integration_audit ===
+{
+  "status": "passed",
+  "new_theorem_ids": 2,
+  "immutable_Wave3_rows": 42,
+  "right_receipt_files": 31,
+  "convex_receipt_files": 9,
+  "earlier_claims_preserved": 101,
+  "wrapper_links": 6,
+  "right_frame_controls": 72,
+  "separated_controls": 227,
+  "exact_convex_controls": 1486,
+  "independent_floating_controls": 8708,
+  "Wave2_section_unchanged": true,
+  "unavailable_author222_replayed": false,
+  "scope": "Byte/lineage/scope/link checks; no additional proof audit or aggregate build."
+}
+exit:0
+=== render checks ===
+claim-registry-render: OK
+registry_exit:0
+status-render: OK
+status_exit:0
+Research navigation views synchronized
+views_exit:0
+errata-render: OK
+errata_exit:0
+bibliography-render: OK
+bibliography_exit:0
+=== manuscript reference audit ===
+{
+  "root": "manuscript/BGS_unified.tex",
+  "input_files": 113,
+  "visited_files": 114,
+  "cited_keys": 57,
+  "bibliography_keys": 73,
+  "labels": 663,
+  "references": 245,
+  "unresolved_labels": [],
+  "duplicate_labels": [],
+  "errors": []
+}
+manuscript_exit:0
+=== wave3 source closure ===
+Wave3 source closure: OK
+wave3_sources_exit:0
+=== compileall ===
+compileall_exit:0
+=== bibliographic self-test (pre-existing drift expected) ===
+EXT-BR-1975: dependency graph changed; refresh impact review explicitly
+bibliographic_exit:1
+=== wave2 portable source seal (pre-existing digest mismatch expected) ===
+Traceback (most recent call last):
+  File "/workspace/computations/verification/wave2_portable_replay.py", line 378, in <module>
+    main()
+  File "/workspace/computations/verification/wave2_portable_replay.py", line 369, in main
+    sealed_source_bytes()
+  File "/workspace/computations/verification/wave2_portable_replay.py", line 77, in sealed_source_bytes
+    historical.require(historical.digest(data)==digest,'changed source: '+rel)
+  File "/workspace/computations/verification/wave2_checked_replay.py", line 30, in require
+    raise RuntimeError(message)
+RuntimeError: changed source: mathematics/position_chain_mixing.md
+wave2_exit:1

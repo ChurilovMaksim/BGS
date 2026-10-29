@@ -1,0 +1,63 @@
+% Line D section. Registered IDs BGS-TRACE-149 to BGS-TRACE-162.
+% On main d6fa6e2a the next free TRACE id was 149 (Line B had not merged); no renumbering.
+% Wiring: \input{unified_sections/band_limited_kick_bridge.tex} in manuscript/BGS_unified.tex, Chapter 14,
+% directly after \input{unified_sections/random_phase_encounter_pairs.tex}.
+\section{Band-limited random kicks: from Pell arithmetic to the random-phase ensemble}
+\label{sec:band-limited-kick-bridge}
+We consider \(U=e^{i\eta V_\theta}M_N\) with \(S=\bigl(\begin{smallmatrix}3&4\\2&3\end{smallmatrix}\bigr)\), the matrix
+\(M_N\) of the random-phase sections, and \(V_\theta(x)=\sum_{k\in\mathcal K}a_k\cos(2\pi kx/N+\theta_k)\) with a fixed
+finite mode set \(\mathcal K\), \(a_k\neq0\), and either i.i.d.\ uniform \(\theta_k\) (J0 ensemble) or circular complex
+Gaussian coefficients with \(\mathbb E|c_k|^2=a_k^2\) (G ensemble). Put \(H_m=6I-C-C^{\mathsf T}\),
+\(D_m=\det H_m=\operatorname{Tr}S^m-2\), \(X_m=D_mH_m^{-1}\in\mathbb Z^{m\times m}\).
+The canonical note is \path{mathematics/fixed-map/band_limited_kick_bridge.md}; scripts and logs are in
+\path{computations/verification/lineD/}, with the independent referee audit and its replay scripts in
+\path{computations/verification/lineD/referee_replay/}. Finite instances are checked in
+\path{formalization/Bgs/LineDCerts.lean} (kernel \texttt{decide}, no imports, no \texttt{sorry}, no \texttt{native\_decide}).
+The statuses below are those of \path{record/claims.json}.
+
+\paragraph{Required non-claims.}
+\begin{enumerate}[label=(\arabic*)]
+\item This does not prove BGS-TRACE-005 or BGS-BGS-001, and it says nothing about eigenvalue statistics beyond the second moment of \(\operatorname{Tr}U^m\) at fixed \(m\).
+\item The exact trace identity (D1) and its orbit form (D3) are the Boasman--Keating mechanism and Line B Theorem 1 applied for each kick realisation; they are not claimed as new.
+\item All regime-I statements are iterated limits, \(p\to\infty\) first at fixed \((m,\mathcal K,a,\eta)\), then \(\eta\to\infty\); the \(O(p^{-2})\) remainder is not uniform in \(\eta\) or \(K\).
+\item The strong-kick value \(B_m^{\mathrm{sym}}\) is reached only under \(P_{\mathcal K}\)-separation of dihedral classes, which is verified by computer for \(m\le 7\), not proved for general \(m\).
+\item At finite \(\eta\) the leading term \(\Psi_m(t^*)\) depends on \(p \bmod g'_m\) and is not \(2m\); the COE value \(2m\) is not obtained at any fixed \(m\) in this model.
+\item The decay \(c_1\to0\) is proved only for the Gaussian ensemble with separating \(\mathcal K\); for uniform phases \(c_1\) is not shown to vanish and numerically grows with \(\eta\).
+\item The full-band result D7 is only a transfer of Line C (BGS-TRACE-146), not a new COE theorem.
+\item The \(R\)-scaling, the \(K_*\propto p^{2/3}\) law and the threshold \(R_*\) are numerical/heuristic (two to three primes, Monte Carlo) and depend on the Monte Carlo precision.
+\item The account of Line C's \(\chi^2/\mathrm{dof}\approx 967\) is qualitative and numerical; it is not derived from D1--D6, which concern fixed \(m\).
+\item Lean certifies only finite arithmetic facts (\(H_mX_m=D_mI\), orbit counts, \(|\ker(H_m \bmod 4)|\), and that listed sequences are half-turn-invariant orbits); no analytic statement of Line D is formalised.
+\item Intermediate band \(K=\kappa p\) is a sketch only.
+\end{enumerate}
+
+\paragraph{Exact bridge (BGS-TRACE-149, proved).} For every odd \(N\) with \(\gcd(N,D_m)=1\) and every \(\theta\),
+\(\operatorname{Tr}U^m=\operatorname{Tr}M_N^m\sum_{n\in\mathbb Z^m}\widehat G_\theta(n)\,e(t_N\,2n^{\mathsf T}X_mn)\),
+\(t_N=(D_m^{-1}\bmod N)/N\), \(|\operatorname{Tr}M_N^m|=1\); hence \(\mathbb E_\theta|\operatorname{Tr}U^m|^2=\Psi_m(t_N)\) with
+\(\Psi_m\) smooth (\(C^\infty\)), even (by \(V\mapsto-V\)) and \(1\)-periodic. This is Line B's Theorem~1 applied for each
+\(\theta\) (Boasman--Keating 1995, \S5).
+
+\paragraph{Expansion and period (BGS-TRACE-150, proved).} \(t_N\equiv t^*+1/(ND_m)\), \(t^*=-\bar N/D_m\), and
+\(\mathbb E|\operatorname{Tr}U^m|^2=\Psi_m(t^*)+c_1/N+O_{m,\mathcal K,a,\eta}(N^{-2})\), \(c_1=\Psi_m'(t^*)/D_m\);
+\(\Psi_m(t^*)\) depends only on \(\pm N\bmod g'_m\), \(g'_m=D_m/\gcd(D_m,2X_{ii},4X_{ij})\) (an upper bound on the period).
+The remainder is not uniform in \(\eta\) or \(K\): at \(m=3\), \(K=1\), \(p=101\), \(\eta=16\) the two-term expansion has the wrong sign.
+
+\paragraph{Orbit form (BGS-TRACE-151, proved).} \(\Psi_m(s/D_m)=\sum_{\xi,\xi'\in\mathrm{Fix}_m}\hat\varphi_s(\xi)\overline{\hat\varphi_s(\xi')}
+\prod_k\omega_k(\eta(S_k(\xi)-S_k(\xi')))\), \(\mathrm{Fix}_m=\{\xi:H_m\xi\in\mathbb Z^m\}\) (period-\(m\) solutions of
+\(q_{j+1}+q_{j-1}=6q_j\bmod1\)), \(\omega=J_0(a|z|)\) (Kluyver) or \(e^{-a^2|z|^2/4}\);
+\(|\hat\varphi_s|^2\in\{0,|V[4]|/D_m\}\) with \(s\)-independent support.
+
+\paragraph{Strong-kick limit (BGS-TRACE-152, 154 proved; 153 verification-pending; 155 open).}
+If \(P_{\mathcal K}=(S_k)_{k\in\mathcal K}\) separates dihedral classes on the support,
+\(\lim_{\eta\to\infty}\Psi_m(t^*)=B_m^{\mathrm{sym}}\) at every residue; \(B_m^{\mathrm{sym}}=235/49,\ 61/12,\ 15801/1681,\ 27417/2450,\ 788019/57121\)
+for \(m=3,\dots,7\), and \(B_m^{\mathrm{sym}}<2m\) for every odd \(m\) (even \(m\): enumeration for \(m\le9\) only).
+Separation of multisets by \(\{1,\dots,m\}\) is Newton's identities (BGS-TRACE-156); multiset \(\Rightarrow\) dihedral class is a
+computer check for \(m\le7\).
+
+\paragraph{The \(1/N\) coefficient (BGS-TRACE-157 proved, 158 conditional, 159 open).} The dihedral-diagonal part of \(c_1\)
+vanishes and \(c_1\) is odd under \(N\mapsto-N\bmod g'_m\), so it is not \(-2m^2\) uniformly in \(N\). For the G ensemble with
+separating \(\mathcal K\), \(|c_1|\le C_m\eta^4e^{-a_{\min}^2\eta^2\delta^2/4}\to0\). For uniform phases \(c_1\) grows numerically.
+
+\paragraph{Full band (BGS-TRACE-160, proved) and beyond (161, 162 open).} For \(\mathcal K=\{1,\dots,(p-1)/2\}\), \(a_k\equiv a\),
+\(|\mathbb E|\operatorname{Tr}U^m|^2-E_{\mathrm{LineC}}(p,m)|\le p^me^{-\eta^2a^2p/4}\) (G) and \(\le p^me^{-\beta\eta^2a^2p}\) (J0); with
+BGS-TRACE-146 (\(p>4^m\)) this gives \(2m-2m^2/p+O_m(p^{-3/2})\) for \(m\ge5\). The intermediate band and the crossover
+scaling in \(R=\pi\eta(\sum k^2a_k^2)^{1/2}/p\) are open (sketch and conjecture with Monte Carlo diagnostics).

@@ -1,0 +1,10 @@
+warning: mathlib: repository '/workspace/audit/lineD/lean_build/.lake/packages/mathlib' has local changes
+ℹ [2/2] Built Bgs.LineDCerts (49s)
+info: Bgs/LineDCerts.lean:135:0: 'Bgs.LineDCerts.hx_ok' does not depend on any axioms
+info: Bgs/LineDCerts.lean:136:0: 'Bgs.LineDCerts.fix_count' does not depend on any axioms
+info: Bgs/LineDCerts.lean:137:0: 'Bgs.LineDCerts.rad_count' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:138:0: 'Bgs.LineDCerts.coll4_ok' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:139:0: 'Bgs.LineDCerts.coll6_ok' depends on axioms: [propext]
+info: Bgs/LineDCerts.lean:140:0: 'Bgs.LineDCerts.coll_control' depends on axioms: [propext]
+Build completed successfully (2 jobs).
+BUILD_DONE rc=0 elapsed=51s

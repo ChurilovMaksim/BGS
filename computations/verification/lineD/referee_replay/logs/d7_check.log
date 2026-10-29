@@ -1,0 +1,31 @@
+p=5 m=3: E_LineC(enum)=4.360000000000
+   eta*a=0.5: |E_G-E_LC|=1.277e+00 (bound 9.15e+01, ok=True)  |E_J0-E_LC|=8.148e-01 (bound 1.20e+02, ok=True)
+   eta*a=1.0: |E_G-E_LC|=3.933e-02 (bound 3.58e+01, ok=True)  |E_J0-E_LC|=1.869e+00 (bound 1.20e+02, ok=True)
+   eta*a=2.0: |E_G-E_LC|=1.188e-04 (bound 8.42e-01, ok=True)  |E_J0-E_LC|=6.483e-01 (bound 1.20e+02, ok=True)
+   eta*a=4.0: |E_G-E_LC|=0.000e+00 (bound 2.58e-07, ok=True)  |E_J0-E_LC|=8.042e-02 (bound 1.20e+02, ok=True)
+p=7 m=3: E_LineC(enum)=4.795918367347 ref=4.795918367347 diff=-3.6e-15
+   eta*a=0.5: |E_G-E_LC|=1.395e+01 (bound 2.21e+02, ok=True)  |E_J0-E_LC|=1.096e+01 (bound 3.26e+02, ok=True)
+   eta*a=1.0: |E_G-E_LC|=7.395e-01 (bound 5.96e+01, ok=True)  |E_J0-E_LC|=1.391e+00 (bound 3.26e+02, ok=True)
+   eta*a=2.0: |E_G-E_LC|=1.834e-05 (bound 3.13e-01, ok=True)  |E_J0-E_LC|=9.529e-02 (bound 3.26e+02, ok=True)
+   eta*a=4.0: |E_G-E_LC|=0.000e+00 (bound 2.37e-10, ok=True)  |E_J0-E_LC|=5.714e-02 (bound 3.26e+02, ok=True)
+   MC literal kick J0 eta*a=1: 3.3900 +- 0.0144 vs formula 3.4047
+p=11 m=3: E_LineC(enum)=5.214876033058 ref=5.214876033058 diff=0.0e+00
+   eta*a=0.5: |E_G-E_LC|=1.296e+00 (bound 6.69e+02, ok=True)  |E_J0-E_LC|=1.027e+00 (bound 1.23e+03, ok=True)
+   eta*a=1.0: |E_G-E_LC|=2.192e-02 (bound 8.51e+01, ok=True)  |E_J0-E_LC|=5.229e-02 (bound 1.23e+03, ok=True)
+   eta*a=2.0: |E_G-E_LC|=1.494e-09 (bound 2.22e-02, ok=True)  |E_J0-E_LC|=1.056e-03 (bound 1.23e+03, ok=True)
+   eta*a=4.0: |E_G-E_LC|=8.882e-16 (bound 1.04e-16, ok=False)  |E_J0-E_LC|=1.963e-03 (bound 1.23e+03, ok=True)
+p=13 m=3: E_LineC(enum)=5.331360946746 ref=5.331360946746 diff=2.7e-15
+   eta*a=0.5: |E_G-E_LC|=6.976e-01 (bound 9.75e+02, ok=True)  |E_J0-E_LC|=2.345e-01 (bound 1.99e+03, ok=True)
+   eta*a=1.0: |E_G-E_LC|=2.743e-03 (bound 8.52e+01, ok=True)  |E_J0-E_LC|=1.423e-01 (bound 1.99e+03, ok=True)
+   eta*a=2.0: |E_G-E_LC|=8.348e-12 (bound 4.97e-03, ok=True)  |E_J0-E_LC|=4.427e-02 (bound 1.99e+03, ok=True)
+   eta*a=4.0: |E_G-E_LC|=8.882e-16 (bound 5.73e-20, ok=False)  |E_J0-E_LC|=2.002e-03 (bound 1.99e+03, ok=True)
+p=7 m=4: E_LineC(enum)=5.332361516035 ref=5.332361516035 diff=-3.6e-15
+   eta*a=0.5: |E_G-E_LC|=2.210e+00 (bound 1.55e+03, ok=True)  |E_J0-E_LC|=1.944e+00 (bound 2.33e+03, ok=True)
+   eta*a=1.0: |E_G-E_LC|=1.533e-01 (bound 4.17e+02, ok=True)  |E_J0-E_LC|=3.101e-01 (bound 2.33e+03, ok=True)
+   eta*a=2.0: |E_G-E_LC|=3.958e-06 (bound 2.19e+00, ok=True)  |E_J0-E_LC|=1.619e-02 (bound 2.33e+03, ok=True)
+   eta*a=4.0: |E_G-E_LC|=8.882e-16 (bound 1.66e-09, ok=True)  |E_J0-E_LC|=8.424e-03 (bound 2.33e+03, ok=True)
+p=5 m=4: E_LineC(enum)=4.759108350560
+   eta*a=0.5: |E_G-E_LC|=2.083e+00 (bound 4.57e+02, ok=True)  |E_J0-E_LC|=1.970e+00 (bound 6.12e+02, ok=True)
+   eta*a=1.0: |E_G-E_LC|=3.860e-01 (bound 1.79e+02, ok=True)  |E_J0-E_LC|=5.236e-01 (bound 6.12e+02, ok=True)
+   eta*a=2.0: |E_G-E_LC|=2.373e-04 (bound 4.21e+00, ok=True)  |E_J0-E_LC|=5.963e-01 (bound 6.12e+02, ok=True)
+   eta*a=4.0: |E_G-E_LC|=0.000e+00 (bound 1.29e-06, ok=True)  |E_J0-E_LC|=5.584e-02 (bound 6.12e+02, ok=True)
