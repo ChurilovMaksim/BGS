@@ -41,3 +41,5 @@ Head commits on the linear stack (#48 → #47 → #49 → #50) each record an ad
 On 29 October 2026, after `lake exe cache get`, `lake build Bgs` exited 0 (`8791` jobs) on `cursor/hyperbolic-diagonal-form-factor-cf38`. Log: [build_trace131.log](build_trace131.log), sha256 `2118079bc22700518846e55ca75c84e3a5d0f64fbcaf786ea7c2bd0e3d938b8c`. The new module is `Bgs.HyperbolicDiagonalFormFactor`. It uses `decide` and contains neither `sorry` nor `native_decide`.
 
 A second build on the same branch, after `Bgs.HyperbolicShortTime` was added, exited 0 (`8792` jobs). Log: [build_trace132.log](build_trace132.log), sha256 `de90e9a410bd3309cfd7a135d8bcee1c8568c7bff3b1bbf053446ef5448c27e0`. That module likewise uses `decide` and contains neither `sorry` nor `native_decide`.
+
+The referee correction of 29 October 2026 was rebuilt with the same command. `lake build Bgs` exited 0 (`8792` jobs). Log: [build_referee_fix.log](build_referee_fix.log), sha256 `d99f3e30a5a4ac8a499f0a59aa04073215d66c912b73917df5e530d68f05f492`.

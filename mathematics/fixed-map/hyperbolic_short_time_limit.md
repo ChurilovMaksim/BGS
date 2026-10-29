@@ -1,7 +1,7 @@
 # Fixed-time limits for a general hyperbolic cat map
 
 **Claim ID:** `BGS-TRACE-132`.
-**Status:** project proof. Python and C++ recompute the occupation sums in floating point for equal-diagonal and unequal-diagonal matrices, and they check the stated inequalities, including at \(N=5,7,11\). Lean decides the integer error constants and the comparison that shows the order-two majorant at a fixed positive coupling does not force the value \(2m\). It does not sum the complex form factor. No external referee.
+**Status:** project proof. Python and C++ recompute the occupation sums in floating point for equal-diagonal and unequal-diagonal matrices, and they check the stated inequalities, including at \(N=5,7,11\). The Lean file decides only the arithmetic of the integers \(42\), \(312\), \(13+9=22\), \(22/36=11/18\), and \(121\cdot 11>6\cdot 18\). Those comparisons do not formalize the occupation estimate or the form factor. No external referee.
 
 The quantization, the flatness, and the time-three closed form are Theorem 1 and its corollary in `BGS-TRACE-131`. The Kloosterman fourth-moment bound is the lemma of `BGS-TRACE-128`, Section 4. The occupation expansion is that of `BGS-TRACE-127`, Section 2. `BGS-TRACE-005` and `BGS-BGS-001` remain **open**.
 
@@ -20,17 +20,19 @@ For each fixed \(m\ge 3\),
 \lim_{\substack{N\to\infty\\ N\text{ odd},\ \gcd(\beta,N)=1}}
 \mathbb E\lvert\operatorname{Tr} U^m\rvert^2=2m.
 \]
-The same bound gives the limit along \(m(N)\le c\log N/\log\log N\) for any fixed \(c<1\), and it does not reach \(m\le N^{\alpha}\). The limit does not use \(\alpha=\delta\). The antiunitary \(\Theta=DK_0\) of `BGS-TRACE-131` exists if and only if \(\alpha=\delta\). The value \(2m\) is the short-time count coming from a cycle and its reversal. The orthogonal-class name is the heuristic for that antiunitary when it exists. The measure is Haar measure on an \(N\)-torus, not Haar measure on the circular orthogonal ensemble. At time one the limit is \(1\), not \(2\). At time two the limit is \(2\), not \(4\), because a \(2\)-cycle equals its reversal.
+The same bound gives the limit along \(m(N)\le c\log N/\log\log N\) for any fixed \(c<1\), and it does not reach \(m\le N^{\alpha}\). The antiunitary \(\Theta'=DEK_0\) of `BGS-TRACE-131` reverses \(DM_N(S)\) for every \(S\) in the family. It reduces to \(DK_0\) precisely when \(\alpha\equiv\delta\pmod N\). The value \(2m\) is the short-time count coming from a cycle and its reversal under that antiunitary. The orthogonal-class name is the heuristic attached to \(\Theta'\). The measure is Haar measure on an \(N\)-torus, not Haar measure on the circular orthogonal ensemble. At time one the limit is \(1\), not \(2\). At time two the limit is \(2\), not \(4\), because a \(2\)-cycle equals its reversal.
 
-**Theorem 2 (finite cosine, perturbative window).** Let \(m\ge 1\) be fixed and let the kick be a finite cosine as in `BGS-TRACE-131`, with energy \(\sigma\) and majorant \(B\). Let \(p\) run through odd primes not dividing \(\beta(2-u_m)\). Then \(\lvert\ker(S^m-I)\rvert=1\) and
+**Theorem 2 (finite cosine, perturbative window).** Let \(m\ge 1\) be fixed and let the kick be a finite cosine as in `BGS-TRACE-131`, with energy \(\sigma\) and majorant \(B\). Let \(N\ge 3\) be odd and satisfy \(\gcd\bigl(N,\beta(2-u_m)\bigr)=1\). Then \(\lvert\ker(S^m-I)\rvert=1\) and
 \[
 \bigl\lvert\mathbb E_\varphi\lvert\operatorname{Tr} U(\eta,\varphi)^m\rvert^2-1\bigr\rvert
 \le 2m^2\sigma\eta^2
-+p^2\Biggl(\frac{x^3}{6}\Bigl(2+\frac{x^3}{6}\Bigr)+\frac{x^4}{4}\Biggr),
++N^2\Biggl(\frac{x^3}{6}\Bigl(2+\frac{x^3}{6}\Bigr)+\frac{x^4}{4}\Biggr),
 \]
-where \(x=m B\lvert\eta\rvert\). If \(\eta_p\to 0\) and \(p^2\lvert\eta_p\rvert^3\to 0\), the expectation tends to \(1\). Every sequence \(\eta_p=o(p^{-2/3})\) lies in this range. The limit is not \(2m\).
+where \(x=m B\lvert\eta\rvert\). If \(\eta_N\to 0\) and \(N^2\lvert\eta_N\rvert^3\to 0\), the expectation tends to \(1\). Every sequence \(\eta_N=o(N^{-2/3})\) along this set of moduli lies in the range. The set contains every odd prime outside the finite list of prime divisors of \(\beta(2-u_m)\). The limit is not \(2m\).
 
-If \(\eta\) is independent of \(p\) and nonzero, the displayed majorant tends to infinity. It does not prove a limit, and it does not prove the value \(2m\). At time one, `BGS-TRACE-131` already gives the exact value \(1\) for every real \(\eta\) whenever \(\gcd(2-t,p)=1\), which holds for every large odd prime.
+The hypothesis \(\gcd(N,2-u_m)=1\) is necessary for the limit \(1\). For the model matrix at time \(3\), one has \(2-u_3=-196\), and the kernel has order \(49\) at each of \(N=35,77,91,707\). Along those dimensions the pure term does not tend to \(1\).
+
+If \(\eta\) is independent of \(N\) and nonzero, the displayed majorant tends to infinity. It does not prove a limit, and it does not prove the value \(2m\). At time one, `BGS-TRACE-131` already gives the exact value \(1\) for every real \(\eta\) whenever \(\gcd(2-t,N)=1\).
 
 **Theorem 3 (coupling sent to infinity first).** Suppose \(m\ge 3\) and the frequency set contains \(\{1,\ldots,m\}\), with every amplitude nonzero. For every odd \(N>m\) with \(\gcd(\beta,N)=1\),
 \[
@@ -62,13 +64,13 @@ For each fixed \(m\ge 3\), the limit along such primes is \(m\). This inversion 
 
 If a momentum term \(\varepsilon B_N\) with \(B_N=(T_N(1,0)-T_N(-1,0))/(2i)\) and \(\varepsilon\neq 0\) is added to a position-diagonal kick, the propagator leaves the class \(DM_N(S)\). The antiunitary of `BGS-TRACE-130` is not claimed, and the form factor is not identified. A proof that this ensemble has short-time value \(m\) would need the reversal amplitudes to separate and the non-rotational character sums, including the reversals, to be \(o(1)\), as they are for \(W_p\). That estimate is not proved here.
 
-**Boundary.** Hyperbolicity is used to know that \(2-u_m\neq 0\), so Theorem 2 excludes only finitely many primes. Theorem 1 uses flatness and the phase of \(M_N(S)\), not the size of the trace. No Heisenberg-scale statement is proved. The sixteen-phase ensemble of `BGS-TRACE-126` is not evaluated. Tanner, Journal of Physics A 34 (2001), 8485–8500, arXiv:nlin/0104014, Sections II.2 and III.1, and Pakoński, Życzkowski and Kuś, Journal of Physics A 34 (2001), 9303–9317, arXiv:nlin/0011050, Section V, remain the priority references for the ensemble and the occupation constraint, as in `BGS-TRACE-127`. They are not inputs of the error term. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
+**Boundary.** Hyperbolicity is used to know that \(2-u_m\neq 0\), so Theorem 2 excludes only finitely many prime factors of the modulus. Theorem 1 uses flatness and the phase of \(M_N(S)\), not the size of the trace. The factor \(2m\) is the dihedral count of Tanner, Journal of Physics A 34 (2001), 8485–8500, arXiv:nlin/0104014, Sections II.2 and III.1, and of Pakoński, Życzkowski and Kuś, Journal of Physics A 34 (2001), 9303–9317, arXiv:nlin/0011050, Section V. The extension of their constant to every hyperbolic \(S\) in the normalization of `BGS-TRACE-131` is the new step, and it is a modest one. The comparison values \(\min(m,N)\) for the circular unitary ensemble and the orthogonal moments are those of Diaconis and Shahshahani, Journal of Applied Probability 31A (1994), 49–62, and of Rains, Probability Theory and Related Fields 107 (1997), 219–241. The short-time orthogonal shape \(2\tau-\tau\log(1+2\tau)\) is the form factor in Haake's compendium; the limit proved here is the fixed-\(m\) value \(2m\), not that curve. Keating and Mezzadri, Nonlinearity 13 (2000), 747–774, are the prior account of the pseudo-symmetry \(\Theta'\). None of these sources is an input of the error term. No Heisenberg-scale statement is proved. The sixteen-phase ensemble of `BGS-TRACE-126` is not evaluated. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
 
 ## 2. The dihedral count
 
 The occupation expansion writes the Haar expectation as a sum of \(A(x)\overline{A(y)}\) over words with the same occupation. A non-injective word contributes at most \(m!\,m(m-1)/(2N)\), by the union bound of `BGS-TRACE-128`, Section 2.
 
-For an injective word the permutations of its index set split into the dihedral group of order \(2m\) and the rest. A rotation preserves the product of entries. A reversal preserves it as well: the sum of the square terms in the quadratic form is \(\kappa(\alpha+\delta)\sum_i x_i^2\) in every ordering of a closed word, and the cross term \(-2\kappa\,xy\) is symmetric. This cancellation does not use \(\alpha=\delta\). There are \(P(N,m)\) injective words, so the dihedral permutations contribute \(2m\,P(N,m)/N^m\).
+For an injective word the permutations of its index set split into the dihedral group of order \(2m\) and the rest. A rotation preserves the product of entries. A reversal preserves it as well: the sum of the square terms in the quadratic form is \(\kappa(\alpha+\delta)\sum_i x_i^2\) in every ordering of a closed word, and the cross term \(-2\kappa\,xy\) is symmetric. The cancellation is the content of the identity \(M_N=E M_N^{\mathsf T} E^{-1}\) from `BGS-TRACE-131`: a reversal of a closed word has the same amplitude for every \(S\) in the family. There are \(P(N,m)\) injective words, so the dihedral permutations contribute \(2m\,P(N,m)/N^m\).
 
 If \(\rho\) is not dihedral, the undirected edge sets differ, so the phase difference
 \[
@@ -80,7 +82,7 @@ The limit \(2m\) is the limit of the main term. The logarithmic window is the es
 
 ## 3. The perturbative window
 
-`BGS-TRACE-131`, Theorem 3, gives \(\lvert K_m\rvert=1\) for every odd prime not dividing \(\beta(2-u_m)\). Hyperbolicity supplies \(2-u_m\neq 0\), so only finitely many primes divide the second factor. The expansion of that note then gives the displayed majorant, because \(\lvert D_2\rvert\le 2m^2\sigma\). If \(x\to 0\) and \(p^2 x^3\to 0\), both terms tend to \(0\). The relation \(x=m B\lvert\eta\rvert\) with \(m\) and \(B\) fixed converts \(p^2\lvert\eta\rvert^3\to 0\) into the hypothesis, and \(\eta\to 0\) is the same condition when the exponent \(-2/3\) is negative.
+If \(\gcd(N,2-u_m)=1\), then \(S^m-I\) is invertible over \(\mathbb Z/N\mathbb Z\), so \(\lvert K_m\rvert=1\). The coprimality with \(\beta\) is the quantization hypothesis. Hyperbolicity supplies \(2-u_m\neq 0\), so only finitely many primes divide the second factor. The expansion of `BGS-TRACE-131` then gives the displayed majorant, because \(\lvert D_2\rvert\le 2m^2\sigma\). If \(x\to 0\) and \(N^2 x^3\to 0\), both terms tend to \(0\). The relation \(x=m B\lvert\eta\rvert\) with \(m\) and \(B\) fixed converts \(N^2\lvert\eta\rvert^3\to 0\) into the hypothesis. The four composite dimensions in Theorem 2 are divisible by \(7\), and \(7\) divides \(196=u_3(6)-2\), so they are outside the hypothesis. The programs count the kernel \(49\) at each of them.
 
 The comparison \(11\cdot 121>6\cdot 18\) is the case \(m=3\), \(N=11\), \(x=1\): the pure remainder majorant is \(N^2\cdot 11/18\), which already exceeds \(6=2\cdot 3\). A fixed coupling inside \(x=1\) is not forced near \(2m\) by this estimate.
 
@@ -115,4 +117,4 @@ Row inversion produces the value \(m\). It is a modification of the propagator, 
 - `formalization/Bgs/HyperbolicShortTime.lean`
 - `evidence/executions/20261029/hyperbolic-short-time/README.md`
 
-The programs check the symmetric inequality for \(m=3,4\) on the odd moduli \(5\) through \(15\) for the model matrix, for \(\begin{pmatrix}2&1\\1&1\end{pmatrix}\), and for \(\begin{pmatrix}5&2\\2&1\end{pmatrix}\), and the inversion inequality on the primes \(5,7,11\). Lean decides the constants \(42\) and \(312\), the identity \(11/18\) for the remainder majorant at \(x=1\), and \(121\cdot 11>6\cdot 18\). A pass does not prove `BGS-TRACE-005` or `BGS-BGS-001`.
+The programs check the symmetric inequality for \(m=3,4\) on the odd moduli \(5\) through \(15\) for the model matrix, for \(\begin{pmatrix}2&1\\1&1\end{pmatrix}\), and for \(\begin{pmatrix}5&2\\2&1\end{pmatrix}\), and the inversion inequality on the primes \(5,7,11\). The Lean file decides the arithmetic \(3!\cdot 7=42\), \(4!\cdot 13=312\), \(13+9=22\), \(22\cdot 18=11\cdot 36\), and \(121\cdot 11>6\cdot 18\). These are the integers written in the majorant. They do not certify the occupation bound. Python and C++ check that bound on the stated range, and Python counts the kernel \(49\) at \(N=35,77,91,707\). A pass does not prove `BGS-TRACE-005` or `BGS-BGS-001`.

@@ -3,11 +3,11 @@ set_option maxHeartbeats 0
 namespace Bgs.HyperbolicShortTime
 
 /-!
-# Integer witness for BGS-TRACE-132
+# Arithmetic of integers written in BGS-TRACE-132
 
-The error constants of the dihedral bound and the comparison showing that
-the order-two majorant at `x = 1` exceeds `2 * 3` when `N = 11`.
-The occupation sum is not formalized.
+`3! * 7 = 42`, `4! * 13 = 312`, `13 + 9 = 22`, `22 * 18 = 11 * 36`,
+and `121 * 11 > 6 * 18`. These comparisons do not formalize the
+occupation estimate, the form factor, or `D_2`.
 -/
 
 def fact : Nat → Nat
@@ -23,7 +23,5 @@ theorem remainderAtUnit : (22 : Int) * 18 = 11 * 36 := by decide
 
 /-- At `N = 11` and `x = 1` the remainder majorant `N^2 * 11/18` exceeds `6`. -/
 theorem majorantExceedsTwoM : (121 : Int) * 11 > 6 * 18 := by decide
-
-theorem dihedral3 : (2 : Int) * 3 = 6 := by decide
 
 end Bgs.HyperbolicShortTime

@@ -8,16 +8,17 @@
   "p3_time3": "3.444444444444",
   "majorant_comparison": "121*11 > 6*18",
   "sources_sha256": {
-    "python": "1ef8bed48d38441722b2275696dd1518b3bac7bd08c072465b366d512f206ab5",
+    "python": "922ce3d2e4ba8721d1e6e1fd4240f30f53991357bbc8ddd15cac5ceba6ce5603",
     "cpp": "a1b7f02a1e2cb7cac9e9630432ac268b7a0bbc11e761e01f42bf048dcfe781d9",
-    "lean": "aa8340336f6e50c21e04d6cbc9be74fbde4ebd4f86126b3371d9a09cbff9d142",
-    "proof": "59f56ca7263b1adb3e9443f8fe847250c36029bc2e5b32814bc2b69faefe9d92"
+    "lean": "d44371431600c33325f4220563522f038c7418f8740e5418487b62803aea4acd",
+    "proof": "97853de08c4c4e50177f8899af0a8b0a887b6f8bcb8cca9417ff32ec0a2e9722"
   },
   "build": {
     "command": "cd formalization && lake exe cache get && lake build Bgs",
     "exit": 0,
     "jobs": 8792,
-    "log_sha256": "de90e9a410bd3309cfd7a135d8bcee1c8568c7bff3b1bbf053446ef5448c27e0"
+    "log_sha256": "d99f3e30a5a4ac8a499f0a59aa04073215d66c912b73917df5e530d68f05f492",
+    "note": "referee-fix rebuild"
   },
   "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a fixed-eta limit for a thin cosine, a momentum-sine form factor, or a Heisenberg-scale statement."
 }

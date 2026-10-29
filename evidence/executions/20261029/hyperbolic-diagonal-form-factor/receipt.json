@@ -3,9 +3,26 @@
   "claim": "BGS-TRACE-131",
   "quantization": "odd N, gcd(beta,N)=1, prefactor N^{-1/2}, phase kappa(delta x^2-2xy+alpha y^2)",
   "kernel_trichotomy": "1, p, or p^2 for odd primes not dividing beta",
-  "trace_split_outside_hypothesis": {"trace": -16, "modulus": 3, "kernels": [9, 3]},
-  "prime_power": {"N": 49, "m": 3, "kernel": 49, "not": 2401},
-  "unipotent": {"matrix": "[[2,1],[1,1]]", "m": 2, "p": 5, "kernel": 5},
+  "trace_split_outside_hypothesis": {
+    "trace": -16,
+    "modulus": 3,
+    "kernels": [
+      9,
+      3
+    ]
+  },
+  "prime_power": {
+    "N": 49,
+    "m": 3,
+    "kernel": 49,
+    "not": 2401
+  },
+  "unipotent": {
+    "matrix": "[[2,1],[1,1]]",
+    "m": 2,
+    "p": 5,
+    "kernel": 5
+  },
   "sigma_for_a1_1_a2_half": "5/8",
   "revival": {
     "model_41_5": "-42025/8",
@@ -17,10 +34,10 @@
   "revival_jet_target": -46.875,
   "trichotomy_rows": 392,
   "sources_sha256": {
-    "python": "fec0b829d299e5d6b0c9a0e5f25dee48187836a2c18f7b8fc2380741fa88edff",
-    "cpp": "1ae64b382fd6c6445782f6f92fc5d95d3c15fd74c4b3baec7231a85c675af0bd",
-    "lean": "ca20cbf05b6dbfdfaeb7acc9073255645fcf558c6b0bc80299fb9faa3e35bd28",
-    "proof": "4a317a36404e2031863a97d6b61836e2995a3d2bb4593806df946bc27353539f"
+    "python": "601e26e0c1ddc32cedbd542ed7bde3e85c66a769f348d9fd359daa4ceb921af8",
+    "cpp": "bcb38cad7daeeb2a7e95b7790cedbe916e0b1b0e7a72c9ae41915a99a2142088",
+    "lean": "aa46b034edc7e8b3a77513f3b55423a1d699c47cff525b4a3a763fc64f6b3e5e",
+    "proof": "1c62b436c2eb4968e5fb4b05b59da69ba502b4a8b5a9f942115d518f8c70af2b"
   },
   "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, the all-order revival law, or a fixed-time COE or CUE limit."
 }

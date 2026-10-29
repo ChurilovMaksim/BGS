@@ -271,8 +271,10 @@ int main() {
           }
         }
         require(unit < kTol && flat < kTol, "unitarity");
-        bool equal = s.first.first == s.second.second;
-        require(equal ? sym < kTol : sym > 1e-6, "symmetry");
+        long long diff = s.first.first - s.second.second;
+        diff %= n;
+        if (diff < 0) diff += n;
+        require(diff == 0 ? sym < kTol : sym > 1e-6, "symmetry");
         for (int step = 1; step <= 3; ++step) {
           std::vector<C> powv(n * n);
           std::vector<C> cur = m;

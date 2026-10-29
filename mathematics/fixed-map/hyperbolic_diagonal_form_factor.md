@@ -1,7 +1,7 @@
 # Diagonal phase average for every hyperbolic cat map
 
 **Claim ID:** `BGS-TRACE-131`.
-**Status:** project proof. The companion arithmetic, the prime kernel trichotomy, the trace-equivalent kernel split outside the coprimality hypothesis, the prime-power count \(49\), and the revival rationals are recomputed in independent Python and C++ integer arithmetic. Both programs recompute the quantization in floating point: unitarity, flatness, symmetry, and the squared-trace identity. Python also checks the Haar values at times one through three and the second-order revival jet at one small prime. Both programs evaluate the time-one Bessel sum. A Lean 4.33.1 module certifies the companion identity on a finite range, the kernel counts, the order at \(41\), the revival cross-multiplications, and the trace-equivalent split. It does not formalize the operator expansion. No external referee.
+**Status:** project proof. The companion arithmetic, the prime kernel trichotomy, the trace-equivalent kernel split outside the coprimality hypothesis, the prime-power count \(49\), and the revival rationals are recomputed in independent Python and C++ integer arithmetic. Both programs recompute the quantization in floating point: unitarity, flatness, symmetry, and the squared-trace identity. Python also checks the Haar values at times one through three and the second-order revival jet at one small prime. Both programs evaluate the time-one Bessel sum. A Lean 4.33.1 module decides Cassini's identity at ten listed pairs \((t,n)\), the value \(u_3(6)=198\), the matrix identities \(S^n=v_n S-v_{n-1}I\) and \(\det(S^n-I)=2-u_n\) for the listed matrices and exponents, the kernels obtained by reducing those matrices, the order at \(41\), and the integer products \(5\cdot5\cdot1681=42025\) and \(3\cdot5\cdot25=375\). Those products are the numerators in the revival arithmetic. They are not a formalization of \(D_2\). The module does not formalize the operator expansion. No external referee.
 
 The Weyl operators are those of `formalization/Bgs/TraceStatement.lean`, as used in `BGS-TRACE-126`. The expansion below is rederived for a general hyperbolic matrix and a general finite cosine; it does not quote the \(32\)-mode coefficient of that note. The antiunitary, when the quantization is symmetric, is the identity of `BGS-TRACE-130` applied to this matrix. `BGS-TRACE-005` and `BGS-BGS-001` remain **open**. The all-order revival law at \(m=\mathrm{ord}(S\bmod N)\) is not proved here.
 
@@ -29,7 +29,11 @@ T_N(u)T_N(w)=e_N\bigl(2^{-1}\omega(u,w)\bigr)\,T_N(u+w).
 \[
 M_N(S)\,T_N(v)\,M_N(S)^{-1}=T_N(Sv).
 \]
-The matrix \(M_N(S)\) is symmetric if and only if \(\alpha=\delta\). Consequently, when \(\alpha=\delta\), the antiunitary \(\Theta=DK_0\) of `BGS-TRACE-130` satisfies \(\Theta^2=I\) and \(\Theta(DM_N(S))\Theta^{-1}=(DM_N(S))^\dagger\) for every real diagonal unitary \(D\). When \(\alpha\neq\delta\) that antiunitary does not reverse \(M_N(S)\). The orthogonal-class name remains the heuristic attached to the antiunitary. It is not a COE form factor.
+The matrix \(M_N(S)\) is symmetric if and only if \(\alpha\equiv\delta\pmod N\). Let \(E\) be the diagonal unitary \((E\psi)(x)=e_N(\kappa(\delta-\alpha)x^2)\psi(x)\). Then \(M_N(S)=E\,M_N(S)^{\mathsf T}\,E^{-1}\). For every diagonal unitary \(D\), the antiunitary \(\Theta'=DEK_0\) satisfies \((\Theta')^2=I\) and
+\[
+\Theta'(DM_N(S))(\Theta')^{-1}=(DM_N(S))^\dagger.
+\]
+When \(\alpha\equiv\delta\pmod N\) one has \(E=I\), so \(\Theta'=DK_0\). When \(\alpha\not\equiv\delta\pmod N\), \(DK_0\) does not reverse \(M_N(S)\). The orthogonal-class name remains the heuristic attached to \(\Theta'\). It is not a COE form factor. This gauge is the pseudo-symmetry of Keating and Mezzadri, Nonlinearity 13 (2000), 747–774.
 
 **Corollary (Haar diagonal, times one through three).** Let \(D\) be diagonal with independent uniform phases and set \(U=DM_N(S)\). Then
 \[
@@ -70,9 +74,9 @@ both have determinant \(1\) and \(\det(S-I)=18\), but
 \]
 on \((\mathbb Z/3\mathbb Z)^2\). Both upper-right entries are divisible by \(3\), so Theorem 1 does not apply at that prime.
 
-At the prime power \(49\), every matrix of trace \(6\) in the certificate, including \(\begin{pmatrix}3&4\\2&3\end{pmatrix}\) and \(\begin{pmatrix}5&2\\2&1\end{pmatrix}\), has \(\lvert\ker(S^3-I)\rvert=49\), not \(7^4\). The valuation \(v_7(2-u_3)=2\) depends only on the trace. The kernel order at a prime power is not claimed to equal \(p^{2v_p(2-u_m)}\) and is not claimed for a general prime power.
+At the prime power \(49\), the two trace-\(6\) matrices checked in the certificate, \(\begin{pmatrix}3&4\\2&3\end{pmatrix}\) and \(\begin{pmatrix}5&2\\2&1\end{pmatrix}\), both have \(\lvert\ker(S^3-I)\rvert=49\), not \(7^4\). The certificate does not enumerate every matrix of trace \(6\). The valuation \(v_7(2-u_3)=2\) depends only on the trace. The kernel order at a prime power is not claimed to equal \(p^{2v_p(2-u_m)}\) and is not claimed for a general prime power.
 
-**Theorem 4 (cosine kick).** Let \(\mathcal K\) be a finite set of integers not divisible by \(N\), and let \(a_k\in\mathbb R\). Let \(\varphi_k\) be independent and uniform on \(\mathbb R/2\pi\mathbb Z\), and let
+**Theorem 4 (cosine kick).** Let \(\mathcal K\) be a finite set of integers and let \(a_k\in\mathbb R\). Frequencies divisible by \(N\) are allowed. Let \(\varphi_k\) be independent and uniform on \(\mathbb R/2\pi\mathbb Z\), and let
 \[
 f(q)=\sum_{k\in\mathcal K}a_k\cos\bigl(2\pi k q/N+\varphi_k\bigr).
 \]
@@ -97,11 +101,12 @@ For every real \(\eta\) and every \(m\ge 1\),
 \mathbb E_\varphi\lvert\operatorname{Tr} U(\eta,\varphi)^m\rvert^2
 =\lvert K_m\rvert+\eta^2 D_2(S,a,m,N)+\rho_m(N,\eta),
 \]
-where \(K_m=\ker(S^m-I)\) and \(D_2\) is the Gauss-sum coefficient of Section 5. It is real and satisfies \(\lvert D_2\rvert\le 2m^2\sigma\,\lvert K_m\rvert\). With \(x=m B\lvert\eta\rvert\),
+where \(K_m=\ker(S^m-I)\). Write \(g(\eta)\) for the expectation on the left. The substitution \(\varphi\mapsto\varphi+\pi\) replaces \(\eta\) by \(-\eta\), so \(g\) is even. Define \(D_2(S,a,m,N)=\frac12 g''(0)\). Section 5 gives the same coefficient as a Gauss sum. It is real and satisfies \(\lvert D_2\rvert\le 2m^2\sigma\,\lvert K_m\rvert\). With \(x=m B\lvert\eta\rvert\),
 \[
 \lvert\rho_m(N,\eta)\rvert
 \le N^2\Biggl(\frac{x^3}{6}\Bigl(2+\frac{x^3}{6}\Bigr)+\frac{x^4}{4}\Biggr).
 \]
+The factor \(x^3\) is an artifact of the estimate \(2\lvert f\rvert\,\lvert R\rvert\). It is not an odd term of \(g\). The bound is valid and is not sharp.
 
 **Theorem 5 (identity revival, second order).** Let \(p\) be an odd prime not dividing \(\beta\), and let \(m\) be the multiplicative order of \(S\) modulo \(p\), so \(S^m\equiv I\). Let \(\sigma_0(p)\) be the sum of \(a_k^2/2\) over those \(k\in\mathcal K\) divisible by \(p\). Then
 \[
@@ -115,9 +120,13 @@ D_2=-\frac{42025}{8},
 \qquad
 D_2=-\frac{375}{8}
 \]
-respectively, and \(\sigma_0=0\) in both cases.
+respectively, and \(\sigma_0=0\) in both cases. The same formula with frequencies \(\{1,5\}\) and amplitudes \(1\) and \(1/2\), at the second of these pairs, has \(\sigma_0(5)=1/8\) and
+\[
+D_2=-3\Bigl(\frac58-\frac18\Bigr)\cdot 25=-\frac{75}{2}.
+\]
+The mode of frequency \(5\) is divisible by the dimension. It is included in Theorem 4.
 
-**Boundary.** Theorems 4 and 5 average an auxiliary torus of Fourier phases. They do not evaluate the fixed kick at one phase, the signed off-diagonal sum, or the propagator at times of order \(N\). The second-order revival identity is not an exact formula for \(\mathbb E\lvert\operatorname{Tr} U^m\rvert^2\) at \(m=\mathrm{ord}(S\bmod N)\). The fixed-time limit, the COE value \(2m\), and the CUE value \(m\) are not claimed; those scalings are `BGS-TRACE-132`. The Kurlberg–Rudnick matrix-element moments are not inputs. Hannay and Berry, Physica D 1 (1980), 267–290, introduced the quantization of linear torus maps. Kurlberg and Rudnick, Duke Mathematical Journal 103 (2000), 47–77, arXiv:chao-dyn/9901031, Section 1.2, record exact Egorov for every \(A\in\mathrm{SL}(2,\mathbb Z)\) and, in the companion discussion of degeneracies, the mean multiplicity \(N/\mathrm{ord}(A,N)\). Those statements are prior context. The normalization, the kernel trichotomy under \(\gcd(\beta,p)=1\), the cosine expansion, and the defect split are proved in this note and are not quoted from those papers. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
+**Boundary.** Theorems 4 and 5 average an auxiliary torus of Fourier phases. They do not evaluate the fixed kick at one phase, the signed off-diagonal sum, or the propagator at times of order \(N\). The second-order revival identity is not an exact formula for \(\mathbb E\lvert\operatorname{Tr} U^m\rvert^2\) at \(m=\mathrm{ord}(S\bmod N)\). The fixed-time limit, the COE value \(2m\), and the CUE value \(m\) are not claimed; those scalings are `BGS-TRACE-132`. The Kurlberg–Rudnick matrix-element moments are not inputs. Hannay and Berry, Physica D 1 (1980), 267–290, introduced the quantization of linear torus maps. Keating, Nonlinearity 4 (1991), 309–341, gives the periodic-orbit formula for the squared trace of the quantum cat map; Theorem 2 is a derivation in the normalization fixed above, not a new trace formula. Knabe, Journal of Physics A 23 (1990), 2013, and Mezzadri, Nonlinearity 15 (2002), treat the modular quantization and its multiplicativity. Kurlberg and Rudnick, Duke Mathematical Journal 103 (2000), 47–77, arXiv:chao-dyn/9901031, Section 1.2, record exact Egorov for every \(A\in\mathrm{SL}(2,\mathbb Z)\) and, in the companion discussion of degeneracies, the mean multiplicity \(N/\mathrm{ord}(A,N)\). Keating and Mezzadri, Nonlinearity 13 (2000), 747–774, identify the arithmetic pseudo-symmetries that keep an antiunitary after a shear. Those statements are prior context. The normalization, the kernel trichotomy under \(\gcd(\beta,p)=1\), the cosine expansion, and the defect split are proved in this note and are not quoted from those papers. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
 
 ## 2. Companion arithmetic
 
@@ -145,7 +154,16 @@ For Egorov, compare \((M_N T_N(a,b)\psi)(x)\) with \((T_N(S(a,b))M_N\psi)(x)\). 
 \]
 All identities are polynomial identities over \(\mathbb Z[1/2,1/\beta]\) and descend to \(\mathbb Z/N\mathbb Z\). Therefore \(M_N T_N(v)=T_N(Sv)M_N\).
 
-The exponent of \((M_N)_{xy}\) minus the exponent of \((M_N)_{yx}\) is \(\kappa(\delta-\alpha)(x^2-y^2)\). If \(\alpha=\delta\) the matrix is symmetric. If \(\alpha\neq\delta\), then \(\kappa(\delta-\alpha)\) is a unit times a nonzero integer, and the value at \((x,y)=(1,0)\) is nonzero in \(\mathbb Z/N\mathbb Z\) for \(N>1\). A unitary symmetric matrix satisfies \(M^{-1}=\overline M=K_0 M K_0\). The antiunitary argument of `BGS-TRACE-130` then applies verbatim to \(D M_N(S)\). If \(\alpha\neq\delta\), then \(M^{-1}=\overline{M^{\mathsf T}}\neq\overline M\), so \(K_0 M K_0\neq M^{-1}\).
+The exponent of \((M_N)_{xy}\) minus the exponent of \((M_N)_{yx}\) is \(\kappa(\delta-\alpha)(x^2-y^2)\). Since \(\kappa\) is a unit, this vanishes for every \(x,y\) if and only if \(\alpha\equiv\delta\pmod N\). The integer equality \(\alpha=\delta\) is sufficient and is not necessary. The matrices \(\begin{pmatrix}6&1\\5&1\end{pmatrix}\) at \(N=5\), \(\begin{pmatrix}1&1\\3&4\end{pmatrix}\) at \(N=3\), and \(\begin{pmatrix}0&1\\-1&-3\end{pmatrix}\) at \(N=3\) all have \(\alpha\not=\delta\) and \(\alpha\equiv\delta\pmod N\), and each quantization is symmetric.
+
+Let \(E\) be diagonal with entries \(e_N(\kappa(\delta-\alpha)x^2)\). The entry \((E M_N^{\mathsf T} E^{-1})_{xy}\) has exponent
+\[
+\kappa(\delta-\alpha)x^2+\kappa(\delta y^2-2xy+\alpha x^2)-\kappa(\delta-\alpha)y^2
+=\kappa(\delta x^2-2xy+\alpha y^2).
+\]
+Thus \(M_N=E M_N^{\mathsf T} E^{-1}\). Let \(D\) be diagonal and unitary, and set \(F=DE\) and \(\Theta'=FK_0\). Then \(K_0FK_0=F^{-1}\), so \((\Theta')^2=I\). The linear operator \(\Theta'(DM_N)\Theta'\) is \(F\,\overline{DM_N}\,\overline F\). Since \(\overline D=D^{-1}\) and \(D\) commutes with \(E\), this equals \(E\,\overline{M_N}\,E^{-1}D^{-1}\). Conjugating \(M_N=E M_N^{\mathsf T} E^{-1}\) gives \(E\,\overline{M_N}\,E^{-1}=\overline{M_N^{\mathsf T}}=M_N^{-1}\). Therefore the operator is \(M_N^{-1}D^{-1}=(DM_N)^\dagger\).
+
+When \(\alpha\equiv\delta\pmod N\), one has \(E=I\) and \(\Theta'=DK_0\). When \(\alpha\not\equiv\delta\pmod N\), \(\overline{M_N}\neq M_N^{-1}\), so \(DK_0\) does not reverse \(M_N\). The value \(2m\) in `BGS-TRACE-132` is the short-time count attached to \(\Theta'\), which exists for every \(S\) in the family.
 
 The Haar corollary is the occupation count of `BGS-TRACE-127`, Sections 3 and 4, with one change at the triangle. Write \(Q(u,v)=\kappa(\delta u^2-2uv+\alpha v^2)\). For a closed word the sum of the square terms is \(\kappa(\alpha+\delta)\sum_i x_i^2\) in every ordering. The difference of two orientations is a sum of cross terms. On a triangle those cross terms are \(-2\kappa\) times the same three products \(xy\), \(yz\), and \(zx\), read in either cyclic order. Hence the two amplitudes agree for every \(S\) in the family, and the count \((6N^2-9N+4)/N^2\) follows as in that note.
 
@@ -168,13 +186,13 @@ For the prime power, \(u_3(6)=198\) and \(2-u_3=-196=-4\cdot 49\). The kernel co
 
 ## 5. The cosine average
 
-Multiplication by \(e_N(kq)\) is \(T_N(0,k)\). Therefore
+If \(N\) divides \(k\), then \(\cos(2\pi k q/N+\varphi_k)=\cos\varphi_k\). The corresponding factor of the kick is the scalar \(a_k\cos\varphi_k\), and \(\lvert\rho_k(x)-\rho_k(y)\rvert=0\), so the Bessel factor is \(J_0(0)=1\). The exact path sum does not exclude these frequencies. If \(N\) does not divide \(2k\), multiplication by \(e_N(kq)\) is \(T_N(0,k)\) and
 \[
 A(\varphi)
 =\sum_{k\in\mathcal K}\frac{a_k}{2}
 \Bigl(e^{i\varphi_k}T_N(0,k)+e^{-i\varphi_k}T_N(0,-k)\Bigr),
 \]
-provided \(N\nmid k\), so that \((0,k)\not\equiv(0,-k)\). Each pair contributes \(a_k^2/4+a_k^2/4=a_k^2/2\) to the symbol energy, and \(\sigma\) is that sum. Each \(T_N(v)\) is unitary, so \(\lVert A(\varphi)\rVert\le B\).
+with \((0,k)\not\equiv(0,-k)\). Each such pair contributes \(a_k^2/2\) to the symbol energy. A frequency divisible by \(N\) contributes the same quantity \(a_k^2/2\) to \(\sigma\), and it is removed again by \(\sigma_0\) when the dimension divides it. Each \(T_N(v)\) is unitary, and a scalar of modulus at most \(\lvert a_k\rvert\) does not enlarge the operator bound, so \(\lVert A(\varphi)\rVert\le B\).
 
 The propagator is diagonal in the position basis times \(M_N(S)\). Expanding the trace and averaging the characters \(e^{i\varphi_k}\) produces a factor for each \(k\). The sum of cosines along a word minus the sum along a second word equals \(\lvert\rho_k(x)-\rho_k(y)\rvert\cos(\varphi_k+\alpha)\) for a phase \(\alpha\) independent of \(\varphi_k\). The integral of \(\exp(i\eta a_k r\cos\theta)\) is \(J_0(\eta a_k r)\). Independence of the angles multiplies these factors. This is Theorem 4's exact formula. The classical sum in `BGS-TRACE-129` averages a phase over torus points without the matrix amplitudes \(A(x)\overline{A(y)}\). The two expressions agree only in situations that note does not claim.
 
@@ -193,14 +211,19 @@ U^m
 \qquad
 A_j=M_N^j A M_N^{-j}.
 \]
-The integral remainder of Taylor's theorem in \(\mathbb C\), the bound \(\lvert f'''\rvert\le N(mB)^3\), and the splitting of \(\lvert P_2\rvert^2\) into the quadratic jet, the cubic term, and the quartic term are unchanged. The substitution \(\varphi\mapsto\varphi+\pi\) sends every coefficient to its negative, so the averaged cubic term vanishes and the quartic term is kept in \(\rho\). The same estimates give the displayed remainder.
+The integral remainder of Taylor's theorem in \(\mathbb C\), the bound \(\lvert f'''\rvert\le N(mB)^3\), and the splitting of \(\lvert P_2\rvert^2\) into the quadratic jet, the cubic term, and the quartic term are unchanged. The substitution \(\varphi\mapsto\varphi+\pi\) sends every coefficient to its negative, so \(g\) is even, the averaged cubic term vanishes, and the quartic term is kept in \(\rho\). The displayed majorant still contains a factor \(x^3\), coming from \(2\lvert f\rvert\,\lvert R\rvert\). That factor bounds a cross term. It is not an odd summand of \(g\), and the bound is not sharp. The same estimates give the displayed remainder.
 
 A monomial in the coefficients averages to zero unless each pair has total charge zero. Hence \(\mathbb E f_1=0\) and
 \[
 \mathbb E\lvert f_1\rvert^2
 =m^2\lvert K_m\rvert\sum_{v\in\operatorname{Im}(I-S^m)}\lvert c_v\rvert^2.
 \]
-The quadratic words \(T_N(S^j v)T_N(-S^k v)\) contribute the cocycle \(e_N(-2^{-1}\omega(v,S^{k-j}v))\) and a Gauss phase when \((S^j-S^k)v\) lies in the image. Collecting \(2\operatorname{Re}(\overline{Z_m}\,\mathbb E f_2)\) produces
+The quadratic words \(T_N(S^j v)T_N(-S^k v)\) contribute the cocycle and a Gauss phase. For \(j<k\), write \(\delta=k-j\) and \(w=(S^j-S^k)v\). If \(w\) is not in the image of \(I-S^m\), set \(\theta(j,k,v)=0\). If \((I-S^m)z\equiv w\), set
+\[
+\theta(j,k,v)
+=e_N\bigl(-2^{-1}\omega(v,S^\delta v)+2^{-1}\omega(z,S^m z)\bigr).
+\]
+Thus \(\theta\) is the product of the cocycle, the Gauss phase, and the indicator of the image, and \(\lvert\theta\rvert\le 1\). Collecting \(2\operatorname{Re}(\overline{Z_m}\,\mathbb E f_2)\) produces
 \[
 D_2
 =\lvert K_m\rvert\Biggl(
@@ -221,6 +244,10 @@ The two numerical revivals are this identity. For \(a_1=1\) and \(a_2=1/2\), \(\
 
 The column computation shows unitarity without a hypothesis on \(\gcd(\alpha,N)\). A draft that required \(\alpha\) to be a unit was rejected by the matrices \(\begin{pmatrix}6&1\\5&1\end{pmatrix}\) at \(N=9\) and \(\begin{pmatrix}3&4\\2&3\end{pmatrix}\) at every odd modulus in the certificate: the quadratic coefficient in one variable vanishes modulo a divisor of \(N\), and the geometric sum still orthonormalizes the matrix.
 
+A draft stated that \(M_N\) is symmetric if and only if \(\alpha=\delta\). The exponent difference is \(\kappa(\delta-\alpha)(x^2-y^2)\) modulo \(N\), so a nonzero integer \(\delta-\alpha\) may still vanish modulo \(N\). The three matrices named in Section 3 are symmetric. The corrected test is \(\alpha\equiv\delta\pmod N\).
+
+A draft also said that \(DK_0\) reverses \(DM_N\) only when \(\alpha=\delta\). The diagonal \(E\) removes the discrepancy between \(M_N\) and \(M_N^{\mathsf T}\) for every \(S\), and \(\Theta'=DEK_0\) reverses \(DM_N\) in every case. The programs check that identity on the three congruence examples and on \(\begin{pmatrix}5&2\\2&1\end{pmatrix}\) at \(N=7\).
+
 The diagonal phase is \(\kappa(t-2)x^2\), not \(\kappa t x^2\). The factor \(t-2=-(2-u_1)\) is what matches the kernel of \(S-I\). Replacing it by \(t\) makes the time-one sum disagree with \(\lvert\operatorname{Tr} M_N\rvert^2\) at \(N=9\) for the model matrix.
 
 The identity revival was checked by a direct Bessel evaluation at \(N=5\), \(m=3\), \(\eta=0.02\): \((\mathbb E-25)/\eta^2\) equals \(-46.858\), against \(-375/8=-46.875\). The difference is the size of the next term in \(\eta\), not a second value of \(D_2\).
@@ -236,4 +263,4 @@ No limit \(2m\), no limit \(m\), and no exact revival formula is stated. The fix
 - `formalization/Bgs/HyperbolicDiagonalFormFactor.lean`
 - `evidence/executions/20261029/hyperbolic-diagonal-form-factor/README.md`
 
-Lean decides the companion identity for the listed traces and indices, \(\det(S^n-I)=2-u_n\) on that range, the kernels at the primes and at \(49\), the order \(5\) modulo \(41\), the two revival cross-multiplications, and the trace-equivalent kernels \(9\) and \(3\). Python and C++ recompute the same integers. Python checks the Haar values and the revival jet; both programs evaluate the time-one Bessel sum. A pass does not prove `BGS-TRACE-005` or `BGS-BGS-001`.
+Lean decides Cassini's identity at the ten listed pairs, \(u_3(6)=198\), the identities \(S^n=v_n S-v_{n-1}I\) and \(\det(S^n-I)=2-u_n\) for the listed matrices and exponents, the kernels of the matrices obtained by that reduction, the order \(5\) modulo \(41\), and the products \(42025\) and \(375\). It does not decide \(D_2\) or the phase average. Python and C++ recompute the same integers. Python checks the congruence counterexamples, the antiunitary \(\Theta'\), the Haar values, both revival jets, and the zero-mode value \(-75/2\). Both programs evaluate the time-one Bessel sum. A pass does not prove `BGS-TRACE-005` or `BGS-BGS-001`.

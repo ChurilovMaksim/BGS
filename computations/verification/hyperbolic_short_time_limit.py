@@ -107,6 +107,24 @@ def main() -> None:
     # Majorant obstruction: N^2 * 11/18 > 6 at N=11.
     if 121 * 11 <= 6 * 18:
         raise SystemExit("majorant")
+    # Model kernel at time 3 stays 49 on these composite dimensions.
+    model = np.array([[3, 4], [2, 3]], dtype=object)
+    for composite in (35, 77, 91, 707):
+        power = np.eye(2, dtype=object)
+        for _ in range(3):
+            power = power @ model
+        gap = (power - np.eye(2, dtype=object)) % composite
+        count = 0
+        e00, e01 = int(gap[0, 0]), int(gap[0, 1])
+        e10, e11 = int(gap[1, 0]), int(gap[1, 1])
+        for x in range(composite):
+            row = (e00 * x) % composite
+            row2 = (e10 * x) % composite
+            for y in range(composite):
+                if (row + e01 * y) % composite == 0 and (row2 + e11 * y) % composite == 0:
+                    count += 1
+        if count != 49:
+            raise SystemExit(f"composite kernel {composite} {count}")
     print("BGS-TRACE-132 ok")
     print(f"inequality_rows {rows}")
     print(f"p3_time3 {plain:.12f}")

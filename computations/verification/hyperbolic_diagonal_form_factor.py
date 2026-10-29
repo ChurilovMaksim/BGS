@@ -160,6 +160,35 @@ def revival_jet(s, n, m, eta, amps):
     return float(np.real(acc))
 
 
+def _check_antiunitary(s, n, mat) -> None:
+    alpha, beta, _gamma, delta = s
+    kappa = (-pow((2 * beta) % n, -1, n)) % n
+    xs = np.arange(n)
+    shear = (kappa * ((delta - alpha) % n) * xs * xs) % n
+    e_diag = np.exp(2j * PI * shear / n)
+    phase = np.linspace(0.1, 1.7, n)
+    d_diag = np.exp(1j * phase)
+    f_diag = d_diag * e_diag
+    # M = E M^T E^{-1}
+    transported = (e_diag[:, None] * mat.T) / e_diag[None, :]
+    if np.max(np.abs(mat - transported)) > 1e-8:
+        raise SystemExit(f"shear {s} {n}")
+    u = d_diag[:, None] * mat
+    # Theta' psi = F conj(psi); Theta' U Theta' = U^dagger
+    sample = np.arange(n) + 1j * (n - np.arange(n))
+
+    def theta(psi):
+        return f_diag * np.conj(psi)
+
+    if np.max(np.abs(theta(theta(sample)) - sample)) > 1e-8:
+        raise SystemExit(f"theta square {s} {n}")
+    if np.max(np.abs(theta(u @ theta(sample)) - u.conj().T @ sample)) > 1e-8:
+        raise SystemExit(f"theta reverse {s} {n}")
+    if (delta - alpha) % n != 0:
+        if np.max(np.abs(np.conj(mat) - np.linalg.inv(mat))) < 1e-6:
+            raise SystemExit(f"DK0 unexpectedly reverses {s} {n}")
+
+
 def main() -> None:
     for t in (3, 4, 5, 6, 7, 8, -16):
         for n in range(1, 13):
@@ -255,6 +284,9 @@ def main() -> None:
         raise SystemExit("beta should be divisible by 3")
     if kernel(matrices["model"], 3, 49) != 49 or kernel(matrices["five"], 3, 49) != 49:
         raise SystemExit("49")
+    for composite in (35, 77, 91, 707):
+        if kernel(matrices["model"], 3, composite) != 49:
+            raise SystemExit(f"composite kernel {composite}")
     if kernel(matrices["fib"], 2, 5) != 5:
         raise SystemExit("unipotent 5")
     if v_seq(3, 2) % 5 == 0:
@@ -288,9 +320,10 @@ def main() -> None:
             sym = np.max(np.abs(mat - mat.T))
             if unit > ABS_TOL or flat > ABS_TOL:
                 raise SystemExit(f"unitarity {s} {n} {unit} {flat}")
-            if alpha == delta and sym > ABS_TOL:
+            congruent = (alpha - delta) % n == 0
+            if congruent and sym > ABS_TOL:
                 raise SystemExit(f"expected symmetric {s} {n}")
-            if alpha != delta and sym < 1e-6:
+            if (not congruent) and sym < 1e-6:
                 raise SystemExit(f"expected asymmetric {s} {n}")
             for m in (1, 2, 3):
                 tr2 = abs(np.trace(np.linalg.matrix_power(mat, m))) ** 2
@@ -333,6 +366,21 @@ def main() -> None:
     slope = (jet - 25.0) / (0.02**2)
     if abs(slope + 375 / 8) > 0.05:
         raise SystemExit(f"revival jet {slope}")
+    zero_mode = revival_jet(matrices["equal"], 5, 3, 0.02, ((1, 1.0), (5, 0.5)))
+    zero_slope = (zero_mode - 25.0) / (0.02**2)
+    if abs(zero_slope + 75 / 2) > 0.05:
+        raise SystemExit(f"zero-mode jet {zero_slope}")
+
+    # alpha ≡ delta (mod N) with alpha != delta, and the antiunitary Theta'.
+    congruent = ((6, 1, 5, 1), 5), ((1, 1, 3, 4), 3), ((0, 1, -1, -3), 3)
+    for s, n in congruent:
+        if (s[0] - s[3]) % n != 0 or s[0] == s[3]:
+            raise SystemExit(f"bad congruence example {s} {n}")
+        mat = quant(s, n)
+        if np.max(np.abs(mat - mat.T)) > ABS_TOL:
+            raise SystemExit(f"congruence not symmetric {s} {n}")
+        _check_antiunitary(s, n, mat)
+    _check_antiunitary((5, 2, 2, 1), 7, quant((5, 2, 2, 1), 7))
 
     print("BGS-TRACE-131 ok")
     print(f"trichotomy_rows {tri}")

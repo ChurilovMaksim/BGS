@@ -6,9 +6,11 @@ namespace Bgs.HyperbolicDiagonalFormFactor
 /-!
 # Finite certificate for BGS-TRACE-131
 
-Companion values, kernel counts, the order of the model matrix modulo 41,
-the revival cross-multiplications, and the trace-equivalent kernel split.
-The operator expansion is not formalized.
+Decides Cassini at ten pairs, `u 6 3 = 198`, the identities
+`S^n = v_n S - v_{n-1} I` and `det(S^n - I) = 2 - u_n` for the matrices
+and exponents below, and the kernels of those reduced matrices.
+The products `42025` and `375` are integer arithmetic of the revival
+numerators. They do not formalize `D_2` or the phase average.
 -/
 
 def v (t : Int) : Nat → Int
@@ -36,8 +38,6 @@ theorem sign_trace : u (-6) 5 = -u 6 5 := by decide
 
 theorem gap_model : u 6 3 = 198 ∧ 2 - u 6 3 = -196 := by decide
 
-theorem gap_tr5 : (4 * 0 - 1 * 3 : Int) = -3 ∧ 2 - 5 = -3 := by decide
-
 abbrev Mat := (Int × Int) × (Int × Int)
 
 def norm (n a : Int) : Int := (a % n + n) % n
@@ -56,6 +56,41 @@ def powMod (n : Int) (a : Mat) : Nat → Mat
 
 def model : Mat := ((3, 4), (2, 3))
 def five : Mat := ((5, 2), (2, 1))
+def fib : Mat := ((2, 1), (1, 1))
+def tr5 : Mat := ((4, 1), (3, 1))
+def sPlus : Mat := ((-20, -9), (9, 4))
+def sMinus : Mat := ((-17, -18), (1, 1))
+
+def mul (a b : Mat) : Mat :=
+  ((a.1.1 * b.1.1 + a.1.2 * b.2.1, a.1.1 * b.1.2 + a.1.2 * b.2.2),
+   (a.2.1 * b.1.1 + a.2.2 * b.2.1, a.2.1 * b.1.2 + a.2.2 * b.2.2))
+
+def ipow : Mat → Nat → Mat
+  | _, 0 => eye
+  | a, k + 1 => mul (ipow a k) a
+
+def subI (a : Mat) : Mat :=
+  ((a.1.1 - 1, a.1.2), (a.2.1, a.2.2 - 1))
+
+def detM (a : Mat) : Int := a.1.1 * a.2.2 - a.1.2 * a.2.1
+
+def smul (c : Int) (a : Mat) : Mat :=
+  ((c * a.1.1, c * a.1.2), (c * a.2.1, c * a.2.2))
+
+def madd (a b : Mat) : Mat :=
+  ((a.1.1 + b.1.1, a.1.2 + b.1.2), (a.2.1 + b.2.1, a.2.2 + b.2.2))
+
+/-- `v_n S - v_{n-1} I`, for `n ≥ 1`. -/
+def companion (t : Int) (n : Nat) (s : Mat) : Mat :=
+  madd (smul (v t n) s) (smul (-(v t (n - 1))) eye)
+
+theorem model_companion_3 : ipow model 3 = companion 6 3 model := by decide
+theorem model_det_3 : detM (subI (ipow model 3)) = 2 - u 6 3 := by decide
+theorem five_companion_2 : ipow five 2 = companion 6 2 five := by decide
+theorem five_det_2 : detM (subI (ipow five 2)) = 2 - u 6 2 := by decide
+theorem fib_companion_2 : ipow fib 2 = companion 3 2 fib := by decide
+theorem fib_det_2 : detM (subI (ipow fib 2)) = 2 - u 3 2 := by decide
+theorem tr5_det : detM (subI tr5) = 2 - u 5 1 := by decide
 
 theorem order41 : powMod 41 model 5 = eye := by decide
 
@@ -76,20 +111,21 @@ def kernelOf (n : Nat) (e00 e01 e10 e11 : Nat) : Nat :=
       let b := (e10 * x + e11 * y) % n
       acc2 + if a = 0 && b = 0 then 1 else 0) acc) 0
 
-/-- `S^3 - I` for `S = [[3,4],[2,3]]` is `[[98,140],[70,98]]`. -/
-theorem kernel_model_49 : kernelOf 49 98 140 70 98 = 49 := by decide
+def kernelMat (n : Nat) (a : Mat) : Nat :=
+  kernelOf n
+    (norm (n : Int) (a.1.1 - 1)).toNat
+    (norm (n : Int) a.1.2).toNat
+    (norm (n : Int) a.2.1).toNat
+    (norm (n : Int) (a.2.2 - 1)).toNat
 
-/-- `S^3 - I` for `S = [[5,2],[2,1]]` is `[[168,70],[70,28]]`. -/
-theorem kernel_five_49 : kernelOf 49 168 70 70 28 = 49 := by decide
+theorem kernel_model_49 : kernelMat 49 (powMod 49 model 3) = 49 := by decide
+theorem kernel_five_49 : kernelMat 49 (powMod 49 five 3) = 49 := by decide
+theorem kernel_model_7 : kernelMat 7 (powMod 7 model 3) = 49 := by decide
+theorem kernel_fib_5 : kernelMat 5 (powMod 5 fib 2) = 5 := by decide
 
-theorem kernel_model_7 : kernelOf 7 98 140 70 98 = 49 := by decide
-
-/-- Unipotent defect: `S = [[2,1],[1,1]]`, `S^2 - I` modulo 5. -/
-theorem kernel_fib_5 : kernelOf 5 4 3 3 1 = 5 := by decide
-
-/-- Trace `-16`, outside `gcd(β, p) = 1`. Residues modulo 3. -/
-theorem kernel_plus_3 : kernelOf 3 0 0 0 0 = 9 := by decide
-theorem kernel_minus_3 : kernelOf 3 0 0 1 0 = 3 := by decide
+/-- Trace `-16`. The matrices are reduced from their integer entries. -/
+theorem kernel_plus_3 : kernelMat 3 sPlus = 9 := by decide
+theorem kernel_minus_3 : kernelMat 3 sMinus = 3 := by decide
 
 theorem revival_41 : (5 : Int) * 5 * (41 * 41) = 42025 := by decide
 theorem revival_5 : (3 : Int) * 5 * (5 * 5) = 375 := by decide
