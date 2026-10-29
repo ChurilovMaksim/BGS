@@ -2,7 +2,7 @@
 
 ## Short-time diagonal-phase limits, 29 October 2026
 
-[TRACE-128](fixed-map/diagonal_phase_short_time.md) gives the fixed-time limit of the diagonal-phase form factor. For the symmetric cat map the limit is \(2m\) at each \(m\ge 3\), and the distance to \(2m P(N,m)/N^m\) is at most \(m!(1+m(m-1))/N\). The logarithmic window \(m\le c\log N/\log\log N\) with \(c<1\) is included. A power \(m\le N^{\alpha}\) is not. Row inversion by \(x\mapsto x^{-1}\) on an odd prime produces the limit \(m\), except at \(p=3\), where the permutation is the identity. A second diagonal factor does not leave the orthogonal class. The sixteen-phase ensemble of TRACE-126 is not evaluated. BGS-TRACE-005 stays open.
+[TRACE-128](fixed-map/diagonal_phase_short_time.md) gives the fixed-time limit of the diagonal-phase form factor. For the symmetric cat map the limit is \(2m\) at each \(m\ge 3\), and the distance to \(2m P(N,m)/N^m\) is at most \(m!(1+m(m-1))/N\). The logarithmic window \(m\le c\log N/\log\log N\) with \(c<1\) is included. A power \(m\le N^{\alpha}\) is not. Row inversion by \(x\mapsto x^{-1}\) on an odd prime produces the limit \(m\), except at \(p=3\), where the permutation is the identity. A second diagonal factor is conjugate, by \(D_2\), to one diagonal times \(M_N\). The sixteen-phase ensemble of TRACE-126 is not evaluated. BGS-TRACE-005 stays open.
 
 ## Diagonal random-phase form factor, 29 October 2026
 

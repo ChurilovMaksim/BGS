@@ -35,7 +35,7 @@ For each fixed \(m\ge 1\),
 \]
 where the cases \(m=1\) and \(m=2\) are the flat-matrix identities of `BGS-TRACE-127` and do not use \(\pi\). If \(m(p)\ge 3\), if the right-hand side of the inequality tends to \(0\), and if \(m(p)^2=o(p)\), then the ratio of the expectation to \(m(p)\) tends to \(1\). Every sequence \(m\le c\log p/\log\log p\) with a fixed \(c<1/4\) lies in this range for all large \(p\). The estimate does not reach \(m\le p^{\alpha}\) for a fixed \(\alpha>0\).
 
-**Boundary.** Both ensembles use independent phases at the sites. Neither is the sixteen-phase kick of `BGS-TRACE-126`, and neither is the fixed propagator at \(\tau=10^{-80}\). Theorem 1 places \(DM_N\) in the orthogonal class already identified in `BGS-TRACE-127`: the limit \(2m\) is the short-time value of the circular orthogonal ensemble, coming from reversal doubling, and the measure is not Haar measure on that ensemble. Theorem 2 breaks that reversal by the inversion permutation. Its limit \(m\) is the short-time value of the circular unitary ensemble. A second independent diagonal does not break the reversal: \(D_1M_ND_2\) is similar to a single diagonal times \(M_N\), by conjugating with \(D_2^{1/2}\), so its spectrum is the spectrum of Theorem 1. The error constants are large enough for the limits and are not sharp. No Heisenberg-scale statement \(m\asymp N\) is proved. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
+**Boundary.** Both ensembles use independent phases at the sites. Neither is the sixteen-phase kick of `BGS-TRACE-126`, and neither is the fixed propagator at \(\tau=10^{-80}\). Theorem 1 uses the antiunitary \(\Theta=DK_0\) of `BGS-TRACE-127`. The limit \(2m\) is the short-time value coming from reversal doubling. The orthogonal-class name is the heuristic for that antiunitary, and the measure is not Haar measure on the circular orthogonal ensemble. Theorem 2 breaks that reversal by the inversion permutation. Its limit \(m\) is the short-time value associated with no reversal. A second independent diagonal does not break the reversal: conjugating with \(D_2\) gives \(D_2(D_1M_ND_2)D_2^{-1}=(D_2D_1)M_N\), so the spectrum is the spectrum of Theorem 1. The error constants are large enough for the limits and are not sharp. No Heisenberg-scale statement \(m\asymp N\) is proved. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
 
 ## 2. Buckets, symmetry, and a bilinear Gauss sum
 
@@ -113,7 +113,7 @@ S(r,s)=\sum_{n=1}^{p-1}e\bigl((rn+s n^{-1})/p\bigr).
 
 The proof is Kloosterman's fourth-moment count, as set out by Heath-Brown in the Nieuw Archief voor Wiskunde, fifth series, volume 1 (2000), 380–384, which was read on 29 October 2026. It is reproduced here and is an input only of the prime case \(p\ge 5\) in Theorem 2. Weil's square-root bound is not used.
 
-For \(a\not\equiv 0\), \(S(ra,sa)=S(r,s)\). As \(a\) runs through \(1,\ldots,p-1\), the pairs \((ra,sa)\) are distinct. Hence if \(\Sigma=\sum_{r=0}^{p-1}\sum_{s=0}^{p-1}\lvert S(r,s)\rvert^4\), the single value \(\lvert S(r,s)\rvert^4\) occurs at least \(p-1\) times and \((p-1)\lvert S(r,s)\rvert^4\le\Sigma\).
+For \(a\not\equiv 0\), \(S(ra,sa^{-1})=S(r,s)\): the substitution \(m=an\) sends \(ran+sa^{-1}n^{-1}\) to \(rm+sm^{-1}\). If \(p\) divides neither \(r\) nor \(s\), then as \(a\) runs through \(1,\ldots,p-1\) the pairs \((ra,sa^{-1})\) are distinct, because the first coordinate determines \(a\). Hence if \(\Sigma=\sum_{r=0}^{p-1}\sum_{s=0}^{p-1}\lvert S(r,s)\rvert^4\), the single value \(\lvert S(r,s)\rvert^4\) occurs at least \(p-1\) times on that orbit and \((p-1)\lvert S(r,s)\rvert^4\le\Sigma\). The identity \(S(ra,sa)=S(r,s)\) is false; at \(p=5\), \(r=1\), \(s=2\), \(a=2\) the two sums are not equal.
 
 Expanding the fourth power and summing the geometric series in \(r\) and in \(s\) shows that \(\Sigma=p^2\) times the number of quadruples \((n_1,n_2,n_3,n_4)\) in \(\{1,\ldots,p-1\}^4\) with
 \[
@@ -125,7 +125,7 @@ The count is not saturated. At \(p=5\) there are \(36\) quadruples and \(3\cdot 
 
 ## 5. Inversion breaks the reversal
 
-On an odd prime the map \(\pi(x)=x^{-1}\) for \(x\ne 0\), with \(\pi(0)=0\), is an involution. At \(p=3\) one has \(2\cdot 2\equiv 1\), so \(\pi\) is the identity on \(\mathbb F_3\) and \(W_3=M_3\). For \(p\ge 5\) the matrix \(W_p\) is not symmetric. Let \(\delta=Q(2^{-1},1)-Q(1,2)\). Expanding gives \(\delta=3\cdot 4^{-1}-2^{-1}-8\), so \(4\delta=-33\). The exponents of \((W_p)_{12}\) and \((W_p)_{21}\) therefore differ unless \(p\) divides \(33\). The only prime \(p\ge 5\) dividing \(33\) is \(p=11\). At that prime let \(\eta=Q(2^{-1},0)-Q(0,2)=3(4^{-1}-4)\). Then \(4\eta=-45\), and \(11\) does not divide \(45\), so the exponents of \((W_{11})_{20}\) and \((W_{11})_{02}\) differ. The verifier evaluates the pair \((1,2)\) for every listed prime other than \(11\), and the pair \((2,0)\) at \(p=11\).
+On an odd prime the map \(\pi(x)=x^{-1}\) for \(x\ne 0\), with \(\pi(0)=0\), is an involution. At \(p=3\) one has \(2\cdot 2\equiv 1\), so \(\pi\) is the identity on \(\mathbb F_3\) and \(W_3=M_3\). For \(p\ge 5\) the matrix \(W_p\) is not symmetric. Let \(\delta=Q(2^{-1},1)-Q(1,2)\). Then \(Q(2^{-1},1)=3\cdot 4^{-1}-1+3=3\cdot 4^{-1}+2\) and \(Q(1,2)=3-4+12=11\), so \(\delta=3\cdot 4^{-1}-9\) and \(4\delta=-33\). The exponents of \((W_p)_{12}\) and \((W_p)_{21}\) therefore differ unless \(p\) divides \(33\). The only prime \(p\ge 5\) dividing \(33\) is \(p=11\). At that prime let \(\eta=Q(2^{-1},0)-Q(0,2)=3(4^{-1}-4)\). Then \(4\eta=-45\), and \(11\) does not divide \(45\), so the exponents of \((W_{11})_{20}\) and \((W_{11})_{02}\) differ. The verifier evaluates the pair \((1,2)\) for every listed prime other than \(11\), and the pair \((2,0)\) at \(p=11\).
 
 For the trivial bound at \(p=3\), the occupation expansion gives \(\lvert\mathbb E\rvert\le m!\) at every time, and the main term is at most \(m\). Thus the absolute difference is at most \(m!+m\). The constant of Theorem 2 at \(p=3\) equals
 \[
@@ -173,7 +173,7 @@ m!\Bigl(3^{1/4}p^{-1/4}+\frac{m(m-1)+2}{p}\Bigr).
 \]
 This is Theorem 2 for \(p\ge 5\). The coefficient \(+2\) is the sum of the \(x_i=0\) term and the zero locus of \(L_i\); dropping either term is not the argument above.
 
-The monomials \(x_a^{-1}x_b\) on \((\mathbb F_p^\times)^m\), for \(a\ne b\), are distinct characters once \(p\ge 5\), because the exponent \(-1\) is not congruent to \(1\) modulo \(p-1\). They are linearly independent. Consequently \(\Phi_\rho\) is not the zero function on the torus when \(\rho\) is not a rotation, and that permutation is correctly excluded from the main term.
+The monomials \(x_a^{-1}x_b\) on \((\mathbb F_p^\times)^m\), for \(a\ne b\), are distinct reduced monomials once \(p\ge 5\), because the exponent \(-1\) is not congruent to \(1\) modulo \(p-1\). Distinct reduced monomials are linearly independent functions on the torus. Consequently \(\Phi_\rho\) is not the zero function on the torus when \(\rho\) is not a rotation, and that permutation is correctly excluded from the main term.
 
 For \(m=1\) and \(m=2\) the flat-matrix evaluation does not see \(\pi\). The limit \(m\) follows for each fixed \(m\), since both error terms tend to \(0\). For the logarithmic window, \(m!\le m^m\). If \(m\le c\log p/\log\log p\) with \(c<1/4\), then \(m\log m\le c\log p\) for all large \(p\), so \(m!\le p^c\). Both \(m!\,p^{-1/4}\) and \(m!\,m^2/p\) tend to \(0\), and \(m^2=o(p)\).
 
@@ -191,11 +191,13 @@ The fourth-moment count allows the two families of quadruples to overlap, so \(3
 
 Tanner, Journal of Physics A 34 (2001), 8485–8500, and Pakoński–Życzkowski–Kuś, Journal of Physics A 34 (2001), 9303–9317, remain the priority references for the ensemble and the occupation constraint, as recorded in `BGS-TRACE-127`. Kloosterman's \(p^{3/4}\) bound is used only in Theorem 2, through the argument of Section 4. Weil's square-root bound is not used.
 
-Two independent diagonals were considered and rejected as a break of time reversal. If \(D_1\) and \(D_2\) are diagonal unitaries, then
+Two independent diagonals were considered and rejected as a break of time reversal. If \(D_1\) and \(D_2\) are diagonal unitaries, conjugating with \(D_2\) gives
 \[
-D_2^{1/2}(D_1 M_N D_2)D_2^{-1/2}=(D_2^{1/2}D_1 D_2^{1/2})M_N.
+D_2(D_1 M_N D_2)D_2^{-1}=(D_2 D_1)M_N.
 \]
-The spectrum is the spectrum of Theorem 1 whenever \(M_N\) is symmetric. The inversion model is a different matrix.
+The right-hand side is one diagonal times \(M_N\), so the spectrum is the spectrum of Theorem 1 whenever \(M_N\) is symmetric. The square-root formula \(D_2^{1/2}(D_1 M_N D_2)D_2^{-1/2}=(D_2^{1/2}D_1 D_2^{1/2})M_N\) does not hold. The inversion model is a different matrix.
+
+A same-day referee correction replaced four steps. The Kloosterman scaling is \(S(ra,sa^{-1})=S(r,s)\), not \(S(ra,sa)=S(r,s)\). The phase gap is \(\delta=3\cdot 4^{-1}-9\). The monomials \(x_a^{-1}x_b\) are reduced monomials, not characters. The second diagonal is removed by conjugating with \(D_2\).
 
 No Heisenberg-scale form factor is claimed, and the sixteen-phase ensemble is untouched.
 

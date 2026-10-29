@@ -1,8 +1,12 @@
 # Scientific changelog
 
+## 2026-10-29 — Self-red-team of the short-time diagonal-phase argument
+
+BGS-TRACE-128. The Kloosterman scaling is \(S(ra,sa^{-1})=S(r,s)\). The identity \(S(ra,sa)=S(r,s)\) is false. The phase gap is \(\delta=3\cdot 4^{-1}-9\), and \(4\delta=-33\) is unchanged. The monomials \(x_a^{-1}x_b\) are distinct reduced monomials, not characters. A second diagonal is removed by conjugating with \(D_2\): \(D_2(D_1M_ND_2)D_2^{-1}=(D_2D_1)M_N\). The square-root conjugation is false. The limits are unchanged. No new external dependency.
+
 ## 2026-10-29 — Short-time limits of the diagonal-phase form factor
 
-Register BGS-TRACE-128. For the symmetric cat map times independent uniform phases on the diagonal, the averaged squared trace at each fixed time \(m\ge 3\) tends to \(2m\), with an explicit \(O(m!/N)\) gap from the dihedral main term \(2m P(N,m)/N^m\). The same bound reaches \(m\le c\log N/\log\log N\) for \(c<1\) and does not reach \(m\le N^{\alpha}\). Inverting the rows by \(x\mapsto x^{-1}\) on an odd prime breaks the reversal and the limit is \(m\), with a Kloosterman error of order \(p^{-1/4}\). At \(p=3\) the inversion is the identity. A second independent diagonal stays in the orthogonal class by similarity. Python and C++ check the occupation sums in floating point; a Lean rational witness certifies the integer form of the symmetric error constant, the time-three comparison, and the Kloosterman quadruple counts at the primes 5 and 7. The dependency on BGS-TRACE-127 is the occupation expansion and the times one and two. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+Register BGS-TRACE-128. For the symmetric cat map times independent uniform phases on the diagonal, the averaged squared trace at each fixed time \(m\ge 3\) tends to \(2m\), with an explicit \(O(m!/N)\) gap from the dihedral main term \(2m P(N,m)/N^m\). The same bound reaches \(m\le c\log N/\log\log N\) for \(c<1\) and does not reach \(m\le N^{\alpha}\). Inverting the rows by \(x\mapsto x^{-1}\) on an odd prime breaks the reversal and the limit is \(m\), with a Kloosterman error of order \(p^{-1/4}\). At \(p=3\) the inversion is the identity. A second independent diagonal is removed by conjugating with \(D_2\), not with \(D_2^{1/2}\). Python and C++ check the occupation sums in floating point; a Lean rational witness certifies the integer form of the symmetric error constant, the time-three comparison, and the Kloosterman quadruple counts at the primes 5 and 7. The dependency on BGS-TRACE-127 is the occupation expansion and the times one and two. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
 
 ## 2026-10-29 — Self-red-team of the diagonal-phase symmetry
 
