@@ -232,3 +232,8 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-130](../mathematics/fixed-map/sixteen_phase_symmetry.md) | proved | `BGS-TRACE-126`, `BGS-TRACE-129` | None registered | 2 |
 | [BGS-TRACE-131](../mathematics/fixed-map/hyperbolic_diagonal_form_factor.md) | proved | `BGS-TRACE-126`, `BGS-TRACE-127`, `BGS-TRACE-130` | None registered | 1 |
 | [BGS-TRACE-132](../mathematics/fixed-map/hyperbolic_short_time_limit.md) | proved | `BGS-TRACE-127`, `BGS-TRACE-128`, `BGS-TRACE-130`, `BGS-TRACE-131` | None registered | 0 |
+| [BGS-TRACE-133](../mathematics/fixed-map/revival_closure_law.md) | proved | `BGS-TRACE-126`, `BGS-TRACE-129`, `BGS-TRACE-131` | None registered | 3 |
+| [BGS-TRACE-134](../mathematics/fixed-map/revival_closure_law.md) | proved | `BGS-TRACE-133`, `BGS-TRACE-126`, `BGS-TRACE-129` | None registered | 1 |
+| [BGS-TRACE-135](../mathematics/fixed-map/revival_closure_law.md) | proved | `BGS-TRACE-133`, `BGS-TRACE-126` | None registered | 1 |
+| [BGS-TRACE-136](../mathematics/fixed-map/revival_closure_law.md) | open | `BGS-TRACE-135`, `BGS-TRACE-129` | None registered | 0 |
+| [BGS-TRACE-137](../mathematics/fixed-map/revival_closure_law.md) | open | `BGS-TRACE-133`, `BGS-TRACE-134` | None registered | 0 |

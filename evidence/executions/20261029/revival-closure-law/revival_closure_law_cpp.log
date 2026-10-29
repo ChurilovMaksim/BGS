@@ -1,0 +1,12 @@
+conventions: Egorov M T(v) M^-1 = T(Sv) at N=5,7,11  ok
+Theorem A: 12 (N,m) cases, |Lambda_m|=N^(m-2), max rel err 4.1e-14  ok
+scalar return: |Tr M^t| = N and Tr U^t = (Tr M^t/N) Tr(prod D_j) at N=7,41,35,239  ok
+phase average: J0 path sum = trapezoid quadrature (N=7 m=2,3; N=11 m=2)  ok
+Lemma 1 exhaustive (N,L,A,closures): [(41, 3, 5, 0), (239, 4, 6, 6), (239, 5, 5, 6), (1189, 5, 8, 26)]  ok; witness (-7,1,-7) at N=41 outside the window
+dichotomy N=239 t=7 A=5: elements=514 case1=28 (runs checked) case2=486  ok
+dichotomy N=1393 t=9 A=5: elements=2050 case1=108 (runs checked) case2=1942  ok
+families (kappa=4): [7, 41, 239, 1393, 8119, 47321, 275807]  (kappa=32): [35, 1189, 40391]  orders ok; sigma_d = 13203/32000
+explicit bound lam=1/4: N=41 -> 12.597 (no information); t=501, log10 N=191 -> 0.788
+diagnostic N=41 t=5 lam=1: max_phi |R - dhat0^t| = 3.577e-02 (100 draws)
+diagnostic N=239 t=7 lam=1: max_phi |R - dhat0^t| = 1.957e-02 (100 draws)
+PASS

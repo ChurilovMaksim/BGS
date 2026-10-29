@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Twisted closure and revival at the scalar return, 29 October 2026
+
+[TRACE-133](fixed-map/revival_closure_law.md) gives the twisted closure formula for the position-diagonal kick at every time, with cocycle phase \(\beta\) and \(|\Lambda_m|=N^{m-2}\). [TRACE-134](fixed-map/revival_closure_law.md) gives a pointwise bound at the scalar return and the \(\exp(-\eta^2 t\sigma_d/2)\) limit on the minimal-period sequence; the explicit bound is non-informative at computable \(N\). [TRACE-135](fixed-map/revival_closure_law.md) reduces the scalar-return trace when \(S^{t/2}\equiv -I\). [TRACE-136](fixed-map/revival_closure_law.md) and [TRACE-137](fixed-map/revival_closure_law.md) are open conjectures for even and odd order respectively. Position-diagonal kick only (\(\sigma_d=13203/32000\)). BGS-TRACE-005 stays open.
+
 ## Fixed-time limits for a general hyperbolic cat map, 29 October 2026
 
 [TRACE-132](fixed-map/hyperbolic_short_time_limit.md) identifies the fixed-time limits. For Haar diagonal phases the limit is \(2m\) at each \(m\ge 3\), with distance at most \(m!(1+m(m-1))/N\) from \(2m P(N,m)/N^m\). The antiunitary \(\Theta'=DEK_0\) reverses \(DM_N\) for every hyperbolic \(S\). Times one and two tend to \(1\) and \(2\). A finite cosine with \(\eta=o(N^{-2/3})\) tends to \(1\) along odd \(N\) coprime to \(\beta(2-u_m)\); along \(N\) divisible by \(7\) (e.g. \(35,77,91,707\)) the time-\(3\) kernel has order at least \(49\), so the limit \(1\) fails when \(\gcd(N,\beta(2-u_m))>1\). If the frequencies \(1\) through \(m\) are present, sending \(\eta\to\infty\) before \(N\to\infty\) recovers \(2m\). A second diagonal factor does not replace \(2m\) by \(m\). Row inversion on an odd prime has limit \(m\). A momentum sine leaves the class, and its form factor is not identified. The orthogonal-class name remains a heuristic for \(\Theta'\). BGS-TRACE-005 stays open.
@@ -477,7 +481,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**218 registered claims: 192 proved, 12 verification-pending, 9 conditional, 5 open.**
+**223 registered claims: 195 proved, 12 verification-pending, 9 conditional, 7 open.**
 
 ### BGS family (1 claim)
 
@@ -643,7 +647,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (109 claims)
+### TRACE family (114 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -756,5 +760,10 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-130` | **PROVED** | Local antiunitary for a position-diagonal kick |
 | `BGS-TRACE-131` | **PROVED** | Diagonal phase average for every hyperbolic cat map |
 | `BGS-TRACE-132` | **PROVED** | Fixed-time limits for a general hyperbolic cat map |
+| `BGS-TRACE-133` | **PROVED** | Twisted closure formula for the diagonal-kick cat map at every time |
+| `BGS-TRACE-134` | **PROVED** | Pointwise revival bound at the scalar return and its limit on the minimal-period sequence |
+| `BGS-TRACE-135` | **PROVED** | Half-period parity reduction of the scalar-return trace |
+| `BGS-TRACE-136` | **OPEN** | Free-with-parity revival law at even order (conjecture) |
+| `BGS-TRACE-137` | **OPEN** | Exponential revival law at odd order for generic dimensions (conjecture) |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

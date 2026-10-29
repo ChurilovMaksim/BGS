@@ -749,6 +749,36 @@
       "state": "proved",
       "source": "mathematics/fixed-map/hyperbolic_short_time_limit.md",
       "disposition": "29 October 2026: fixed-time limits. Haar diagonal phases tend to 2m for each m>=3, with error m!(1+m(m-1))/N. Theta' = D E K_0 reverses D M for every hyperbolic S. A finite cosine with eta=o(N^{-2/3}) tends to 1 along odd N coprime to beta(2-u_m); along N divisible by 7 (e.g. 35, 77, 91, 707) the time-3 kernel has order at least 49, so the limit 1 fails when gcd(N, beta(2-u_m)) > 1. Sending eta to infinity first, with frequencies 1 through m present, recovers 2m. Row inversion tends to m. A momentum sine is not identified. A same-day referee correction restricted the limit 1 away from general N. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-133",
+      "state": "proved",
+      "source": "mathematics/fixed-map/revival_closure_law.md",
+      "disposition": "29 October 2026: twisted closure formula for the diagonal-kick cat map at every time, with Pell cocycle phase beta and |Lambda_m|=N^(m-2). Specialises BGS-TRACE-126 and the scalar return of BGS-TRACE-129. The Kluyver J0 phase average is recorded, not claimed as new. Lean decides only integer phase facts at N=7, m=3. Position-diagonal kick only. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-134",
+      "state": "proved",
+      "source": "mathematics/fixed-map/revival_closure_law.md",
+      "disposition": "29 October 2026: pointwise revival bound at the scalar return and exp(-eta^2 t sigma_d/2) limit on the Bonechi-De Bievre minimal-period sequence. The explicit bound gives no information at computable N (first below 1 near N~10^191 at lambda=1/4). Monte Carlo on the family is diagnostic only. Diagonal kick only. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-135",
+      "state": "proved",
+      "source": "mathematics/fixed-map/revival_closure_law.md",
+      "disposition": "29 October 2026: at odd primes with even order, S^(t/2)=-I and Tr U^t/Tr M^t = N^-1 Tr(A P A P). Fails at composite N when S^(t/2) is not -I. Parity structure is classical; only the reduction is recorded. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-136",
+      "state": "open",
+      "source": "mathematics/fixed-map/revival_closure_law.md",
+      "disposition": "29 October 2026: open conjecture (free-with-parity revival at even order). Monte Carlo at 61 and 101 is diagnostic only. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-137",
+      "state": "open",
+      "source": "mathematics/fixed-map/revival_closure_law.md",
+      "disposition": "29 October 2026: open conjecture (exponential revival at odd order for generic dimensions). BGS-TRACE-134 does not apply when t >> log N. Does not close TRACE-005 or BGS-001."
     }
   ],
   "invariants": [

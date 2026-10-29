@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "686b81e766b22749e5c667a2e01b9a5cb0375164",
+ "source_blob_sha": "5ef6651283b6688166f397a43b891bf68cc798f1",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -49,7 +49,11 @@
   "On 2026-10-29 a self-red-team correction of BGS-TRACE-130 replaced similarity to a symmetric unitary by the antiunitary Theta=D K_0, deleted the claim that a CUE form factor is incompatible with that symmetry, restricted K_0-evenness to almost every phase, and corrected the sign of c_{1,k} to (-3-4i) r(k).",
   "BGS-TRACE-131 was appended on 2026-10-29. Its Lean file certifies companion values, kernel counts, the order modulo 41, the shared order modulo 11, and the revival cross-multiplications only; the operator expansion was checked by the author and was not given an independent referee.",
   "BGS-TRACE-132 was appended on 2026-10-29. Its Lean file certifies the error constants and the majorant comparison only; the occupation bounds were checked by the author and were not given an independent referee.",
-  "On 2026-10-29 a referee correction of BGS-TRACE-131 and BGS-TRACE-132 replaced symmetry iff alpha=delta by congruence modulo N, recorded the antiunitary Theta'=D E K_0 for every S, restricted the limit 1 to moduli coprime to beta(2-u_m), and narrowed the Lean wording to the integer facts actually decided."
+  "On 2026-10-29 a referee correction of BGS-TRACE-131 and BGS-TRACE-132 replaced symmetry iff alpha=delta by congruence modulo N, recorded the antiunitary Theta'=D E K_0 for every S, restricted the limit 1 to moduli coprime to beta(2-u_m), and narrowed the Lean wording to the integer facts actually decided.",
+  "BGS-TRACE-133 was appended on 2026-10-29. Its Lean file certifies integer phase facts at N=7, m=3 and |Lambda_3|=7 only; the twisted closure operator identity was checked by the author and was given an independent internal referee audit.",
+  "BGS-TRACE-134 was appended on 2026-10-29. Its Lean file certifies orders, kappa, and norm-lemma boxes only; the analytic bound and limit theorem were checked by the author and were given an independent internal referee audit.",
+  "BGS-TRACE-135 was appended on 2026-10-29. Its Lean file certifies half-period parity at 61 and 101 only; the reduction identity was checked by the author and was given an independent internal referee audit.",
+  "BGS-TRACE-136 and BGS-TRACE-137 were registered as open conjectures on 2026-10-29; Monte Carlo rows are diagnostics only."
  ],
  "claims": [
   {
@@ -8166,6 +8170,201 @@
     "single_reviewer_author_check_only"
    ],
    "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-133",
+   "title": "Twisted closure formula for the diagonal-kick cat map at every time",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/revival-closure-law/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/revival_closure_law.py",
+    "computations/cpp/revival_closure_law.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/RevivalClosureRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER FACTS ONLY) + INDEPENDENT INTERNAL REVIEW",
+   "boundary": "For every odd N, every m>=1 and every diagonal D, with D_j=M_N^j D M_N^{-j}, Tr(D_0...D_{m-1}) = N sum over a in Lambda_m of e_N(beta(a)) prod_j dhat(a_j), where Lambda_m={a in (Z/N)^m: sum_j a_j S^j e_2 = 0}, beta(a)=-2 sum_{i<j} a_i a_j y_{j-i} and S^d=[[x_d,4y_d],[2y_d,x_d]]. |Lambda_m|=N^{m-2} for m>=2 and Lambda_1={0}. a lies in Lambda_m iff a(S)=0 mod N iff N divides a(lambda) in Z[sqrt2] (N odd); Z[lambda]=Z[2 sqrt2] has index 2 and is not used. If S^m=I mod N then M_N^m=cI with |c|=1, |Tr M_N^m|=N and Tr U^m=(Tr M_N^m/N) Tr(D_0...D_{m-1}). Deleting e_N(beta) gives exactly the classical orbit sum. The general kick sum_u g(u)T(u) has the same formula with the symplectic cocycle phase. The phase average E|Tr(D_phi M)^m|^2 = sum_{x,y} K(x) conj K(y) prod_r J_0(w_r|V_r(x)-V_r(y)|) is the standard Kluyver average and is recorded, not claimed as new. The formula is an explicit form, with the Pell cocycle, of an exact expansion of Boasman-Keating type and specialises the trace closure of BGS-TRACE-126 and the scalar return of BGS-TRACE-129. Python checks 12 (N,m) cases to relative error 2.6e-14, the scalar return at 7, 41, 35 and 239, and the J_0 sum against quadrature. Lean decides only the Heisenberg phase arithmetic at N=7, m=3 and |Lambda_3|=7 at N=7; it does not formalize the operator identity or the trace. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW",
+   "spof_detail": "Lean decides only the Heisenberg phase arithmetic at N=7, m=3 and |Lambda_3|=7 at N=7. The operator identity and the trace are not formalized. Python and C++ check twelve (N,m) cases, scalar returns, the J0 path sum, norm-lemma boxes, and dichotomy counts."
+  },
+  {
+   "id": "BGS-TRACE-134",
+   "title": "Pointwise revival bound at the scalar return and its limit on the minimal-period sequence",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/revival-closure-law/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/revival_closure_law.py",
+    "computations/cpp/revival_closure_law.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/RevivalClosureRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER FACTS ONLY) + INDEPENDENT INTERNAL REVIEW; EXPLICIT BOUND NON-INFORMATIVE AT COMPUTABLE N (LIMIT THEOREM)",
+   "boundary": "Diagonal kick only (ell=0 rows, sigma_d=13203/32000; the full-kick sigma=66033/160000 exceeds it by the ell=+-1 rows, 9/80000). Norm lemma: a polynomial of degree <L with coefficients <=A and p(S)=0 mod N is a multiple of x^2-6x+1 when A^2 lambda^L<=4N^2; runs separated by gaps >floor(2 log_lambda(A/2)) are separately relations with at least three terms. If S^t=I mod N, N>18 and 2<=A<N/2, then for every phase vector |Tr U^t/Tr M_N^t - dhat(0)^t| <= E_T+E_D+E_R with E_T=t tau_A e^{W(t-1)}, E_D=sum_{s>=s0} C(t,s) rho^s, E_R=(1+w)^t-1, w=(G_A+1)^2 rho^3/(1-(G_A+1)rho), and |dhat(0)-J|<=W^3 e^W/6. If N tends to infinity with eta^2 t -> theta and t=2 log_lambda N + o(sqrt t), the ratio tends to exp(-theta sigma_d/2) uniformly in the phases, so E|Tr U^t|^2/N^2 -> exp(-eta^2 t sigma_d). The hypothesis holds on the Bonechi-De Bievre minimal-period sequence used by Faure-Nonnenmacher-De Bievre: 7, 41, 239, 1393, 8119, 47321 (kappa=4) and 35, 1189, 40391 (kappa=32). The explicit bound gives no information at computable N: at lambda_rev=1/4 it is 12.6 at N=41 and first falls below 1 near N=10^191 (0.788 at t=501); at lambda_rev=1 it is 2.36 at N=10^19139. Monte Carlo at N<=8119 is consistent with the limit and is a diagnostic only. Nothing is claimed at returns kt with k>=2, for generic N, for the full kick or for the fixed kick. Lean decides the orders at 7, 41, 239, 1393, 35 and 1189, kappa at nine family members (minimality is not certified for 8119, 47321 and 40391), Cayley-Hamilton, the Pell shape, and two exhaustive norm-lemma boxes (N=41, L=3, |c|<=5, which contains no non-zero closure; N=239, L=4, |c|<=6). It does not formalize the analytic bound. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW",
+   "spof_detail": "Lean decides orders, kappa, Cayley-Hamilton, Pell shape, and two norm-lemma boxes. The analytic bound is not formalized. Python and C++ check the explicit bound regime and limit diagnostics on the minimal-period sequence."
+  },
+  {
+   "id": "BGS-TRACE-135",
+   "title": "Half-period parity reduction of the scalar-return trace",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/revival-closure-law/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/revival_half_period_parity.py",
+    "computations/cpp/revival_half_period_parity.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/RevivalClosureRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER FACTS ONLY) + INDEPENDENT INTERNAL REVIEW",
+   "boundary": "If N is an odd prime and t=ord_N(S) is even, then S^{t/2}=-I mod N, M_N^{t/2}=cP with P the parity and |c|=1, and Tr U^t/Tr M_N^t = N^{-1} Tr(A P A P) with A=D_0...D_{t/2-1} for every diagonal kick. The same holds for composite N whenever S^{t/2}=-I (201, 401, 801); it fails at 203, 205 and 1001, where S^{t/2} is 57I, 124I and 274I. The parity structure of half-periods is classical (Hannay-Berry, Kurlberg-Rudnick); only the reduction is recorded. Python checks S^{t/2}=-I at all 54 odd primes below 400 with even order and the reduction at 61 and 101 in floating point. Lean decides S^{t/2}=-I and the orders 62 and 102 at 61 and 101. No revival law follows from this identity alone; see BGS-TRACE-136.",
+   "spof": "unformalized_analytic_chain",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW",
+   "spof_detail": "Lean decides S^(t/2)=-I and the orders at 61 and 101. Python and C++ check all odd primes below 400 with even order and the parity reduction at 61 and 101."
+  },
+  {
+   "id": "BGS-TRACE-136",
+   "title": "Free-with-parity revival law at even order (conjecture)",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/revival-closure-law/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/revival_half_period_parity.py",
+    "computations/cpp/revival_half_period_parity.cpp"
+   ],
+   "formalization": [],
+   "ledger_status": "OPEN",
+   "boundary": "Conjecture, not proved. For odd primes with even order and eta^2 t sigma_d = lambda fixed, the free-probability heuristic F_2=(mu mu')^{n-1}[mu mu' + n(tau(D PDP) - mu mu')], n=t/2, predicts E|Tr U^t/Tr M_N^t|^2 -> e^{-lambda}(1 + lambda^2 sum_r|c_r|^4/(2 sigma_d^2)) = e^{-lambda}(1+0.1204622 lambda^2). The constant is derived from the heuristic, not fitted. Monte Carlo at 61 and 101 (1500 draws, lambda=1,2,3) agrees with F_2 within 2.2 sigma in five of six rows and is 3.4 sigma low at N=61, lambda=3; it rejects the naive e^{-lambda} by up to a factor 2 and the classical-orbit law e^{-lambda} prod_r I_0(2 lambda |c_r|^2/sigma_d) by 4 to about 50 sigma. These are diagnostics only.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open; Monte Carlo and diagnostics in the verifier are not a proof receipt",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN_CONJECTURE"
+  },
+  {
+   "id": "BGS-TRACE-137",
+   "title": "Exponential revival law at odd order for generic dimensions (conjecture)",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/revival-closure-law/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "OPEN",
+   "boundary": "Conjecture, not proved. For odd primes with odd order t and eta^2 t sigma_d = lambda fixed, E|Tr U^t|^2/N^2 -> e^{-lambda} is expected. Monte Carlo (1500 draws) gives ratios to e^{-lambda} within 0.95-1.035 at N=71, 127, 151 and 263 for lambda<=3, and 0.989, 0.935 and 0.82 at N=47 for lambda=1, 2 and 3. BGS-TRACE-134 does not apply because t is much larger than 2 log_lambda N for generic N (Kurlberg-Rudnick); a proof would need cancellation in the twisted sparse-closure sums of BGS-TRACE-133.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open; Monte Carlo and diagnostics in the verifier are not a proof receipt",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN_CONJECTURE"
   }
  ],
  "recovery_upgrade": {
