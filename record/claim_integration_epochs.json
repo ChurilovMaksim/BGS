@@ -713,6 +713,12 @@
       "state": "proved",
       "source": "mathematics/fixed-map/interaction_phase_form_factor.md",
       "disposition": "29 October 2026: phase average over the 16 mode-pair phases of |Tr U^m|^2, with explicit order-two Gauss-sum coefficient. The averaged remainder is at most N^2 [(x^3/6)(2+x^3/6)+x^4/4]. At an odd prime p the second-order revival coefficient is -m (sigma-sigma_0(p)) p^2, with sigma_0 vanishing for p>=11 and with the exceptions at 3, 5 and 7. The fixed kick has a nonzero linear term at N=11, m=3. Both symmetries fail for 0<|eta|<pi/B except at N=7, where A_7=(9/10) I. Same-day self-red-team correction of the zero-mode energy and the quartic remainder. Does not close TRACE-005 or BGS-001 and does not prove a revival limit."
+    },
+    {
+      "id": "BGS-TRACE-127",
+      "state": "proved",
+      "source": "mathematics/fixed-map/diagonal_phase_form_factor.md",
+      "disposition": "29 October 2026: exact diagonal-phase form factor of D M_N at times 1, 2 and 3, with the bucket bound m! at every positive time. The pure kernel is 1 at time 2 and is 49 or 1 at time 3 according as 7 divides the odd modulus. A draft 7^{2 v_7(N)} is false at N=49. The time-reversal is the antiunitary Theta=D K_0. Similarity to a symmetric matrix does not assign an orthogonal class, and that label is a heuristic, not a COE form factor. Not the 16-phase ensemble and not a CUE limit. Does not close TRACE-005 or BGS-001."
     }
   ],
   "invariants": [

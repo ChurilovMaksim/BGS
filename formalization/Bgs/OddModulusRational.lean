@@ -2,6 +2,8 @@ set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 set_option exponentiation.threshold 4096
 
+namespace Bgs.OddModulusRational
+
 /-!
 # Rational witness for BGS-TRACE-124
 
@@ -163,3 +165,4 @@ theorem odd_majorant_exceeds : 184981 * 10 ^ 154 > 320000 := by
 
 theorem odd_majorant_defined : 184981 * 10 ^ 79 < 160000 * 10 ^ 80 := by
   decide
+end Bgs.OddModulusRational

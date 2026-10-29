@@ -1,0 +1,51 @@
+\section{Diagonal random-phase form factor at times one, two and three}
+\label{sec:diagonal-phase-form-factor}
+The phases below are independent at the \(N\) sites of the position basis.
+They are not the sixteen mode-pair phases of the kicked ensemble, and the
+propagator is not the fixed kick. The canonical proof is
+\path{mathematics/fixed-map/diagonal_phase_form_factor.md}.
+The integer comparisons are certified by
+\path{formalization/Bgs/DiagonalPhaseFormFactorRational.lean} and recomputed
+by the Python and C++ verifiers named there. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Diagonal random-phase form factor, BGS-TRACE-127]
+\label{thm:diagonal-phase-form-factor}
+Let \(M\) be an \(N\times N\) complex matrix with every entry of modulus
+\(N^{-1/2}\), and let \(D\) be diagonal with independent uniform phases.
+For \(U=DM\) and every integer \(m\ge 1\),
+\[
+\mathbb E\lvert\operatorname{Tr} U^m\rvert^2\le m!.
+\]
+The first two times are exact:
+\(\mathbb E\lvert\operatorname{Tr} U\rvert^2=1\) and
+\(\mathbb E\lvert\operatorname{Tr} U^2\rvert^2=(2N-1)/N\).
+For the cat-map quantization at every odd \(N\ge 3\),
+\[
+\mathbb E\lvert\operatorname{Tr} U_N^3\rvert^2=\frac{6N^2-9N+4}{N^2},
+\]
+which lies strictly between \(1\) and \(6\). On the same dimensions,
+\(\lvert\ker(S^2-I)\rvert=1\) and \(\lvert\ker(S^3-I)\rvert\) equals \(49\)
+if \(7\) divides \(N\) and equals \(1\) otherwise. By the trace-closure lemma
+of BGS-TRACE-126 these are the pure squared traces, so the diagonal-phase
+value lies above the pure value at time \(2\), above it at time \(3\) when
+\(7\) does not divide \(N\), and below \(6\) while the pure value equals
+\(49\) when \(7\) divides \(N\).
+
+For every diagonal unitary \(D\), the antiunitary \(\Theta=DK_0\) satisfies
+\(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). The orthogonal-class
+label is the heuristic attached to that antiunitary, not a COE form factor.
+The symmetric conjugate \(\Sigma_D=D^{1/2}M_ND^{1/2}\) does not assign the
+class. The
+time-three limit \(6\) equals \(2\cdot 3\), because a \(3\)-cycle and its
+reversal contribute the same amplitude. The time-two limit is \(2\), not
+\(4\), because a \(2\)-cycle equals its own reversal. The \(N\)-torus measure
+is not Haar measure on the circular orthogonal ensemble. The bound \(m!\)
+does not separate a revival once \(m!\ge N^2\).
+Nothing beyond that bound is claimed for \(m\ge 4\). A deterministic
+twenty-four-draw sample of the sixteen-phase ensemble, recomputed in both
+verifiers, has mean \(44.632431403503\) at \(N=7\), time \(3\), \(\eta=2\),
+and mean \(47.417022055369\) at \(N=31\), time \(5\), \(\eta=2\), where the
+kernel of \(S^5-I\) has order \(1\). That sample is not an evaluation of
+the sixteen-phase expectation and not a CUE or COE limit.
+\end{theorem}

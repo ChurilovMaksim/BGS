@@ -1,0 +1,14 @@
+{
+  "scope": "Full default target Bgs after rational-module namespace isolation on PR #48 stack base.",
+  "branch": "cursor/diagonal-phase-form-factor-51b0",
+  "base_commit": "4ff8c4ac0409c9f3a183a43c9c421172f4c25938",
+  "exit_code": 0,
+  "jobs": 8787,
+  "commands": [
+    "cd formalization && lake exe cache get",
+    "cd formalization && lake build Bgs"
+  ],
+  "log_path": "evidence/formalization/bgs_aggregate_20261029/build_head48.log",
+  "log_sha256": "017489182fbb778be91784385815cfa5e8f870b18106a82de8c9c1119aaa1601",
+  "trust_boundary": "Witness modules use kernel decide only; namespace change is import hygiene, not new mathematics."
+}

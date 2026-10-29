@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**349 maintained proof notes; 10 topic views; 212 core claim IDs.**
+**350 maintained proof notes; 10 topic views; 213 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
 | open | 5 |
-| proved | 186 |
+| proved | 187 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 150 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 151 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -71,6 +71,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [BGS-TRACE-029: convex weak-noise stability and unsigned deconvolution barrier](../mathematics/fixed-map/convex_pinch_weak_noise_and_deconvolution.md) | `BGS-TRACE-029` (proved) |
 | [Quartic coordinate return for the original fixed kick](../mathematics/fixed-map/coordinate_return_quartic.md) | `BGS-TRACE-108` (proved) |
 | [Chinese product for the cat-map trace square](../mathematics/fixed-map/crt_composite_abel.md) | `BGS-TRACE-122` (proved) |
+| [Diagonal random-phase form factor at times one, two and three](../mathematics/fixed-map/diagonal_phase_form_factor.md) | `BGS-TRACE-127` (proved) |
 | [Uniform classical displacement density and a logarithmic spectral comparison](../mathematics/fixed-map/displacement_density_trace_bound.md) | `BGS-TRACE-112` (proved) |
 | [A low-trace obstruction to prescribed-time Dyson relaxation](../mathematics/fixed-map/dyson_relaxation_obstruction.md) | `BGS-FLOW-013` (proved) |
 | [Egorov overlap rigidity and separation from affine quantizations](../mathematics/fixed-map/egorov_overlap_rigidity.md) | `BGS-FM-016` (proved) |

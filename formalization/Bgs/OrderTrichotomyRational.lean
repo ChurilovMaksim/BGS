@@ -2,6 +2,8 @@ set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 set_option exponentiation.threshold 4096
 
+namespace Bgs.OrderTrichotomyRational
+
 /-!
 # Rational witness for BGS-TRACE-121
 
@@ -60,3 +62,4 @@ theorem order_trichotomy_window :
       < 14146865 * 2 * ((10 : Nat) ^ 25 - 2)
           * (160000 * (10 : Nat) ^ 80 - 184981 * (10 : Nat) ^ 25) := by
   decide
+end Bgs.OrderTrichotomyRational

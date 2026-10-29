@@ -2,6 +2,8 @@ set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 set_option exponentiation.threshold 4096
 
+namespace Bgs.PositiveTimeRational
+
 /-!
 # Rational witness for BGS-TRACE-119
 
@@ -102,3 +104,4 @@ theorem positive_time_abel :
       4 * (u205 - 410) * (11 * denEps - 12 * numEps) ^ 2
         > 3 * u205 * (12 * denEps) ^ 2 := by
   decide
+end Bgs.PositiveTimeRational

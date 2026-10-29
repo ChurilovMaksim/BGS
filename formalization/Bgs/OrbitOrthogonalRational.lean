@@ -1,6 +1,8 @@
 set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 
+namespace Bgs.OrbitOrthogonalRational
+
 /-!
 # Rational witness for BGS-TRACE-118
 
@@ -124,3 +126,4 @@ theorem orbit_disk_ceiling :
     num207 < diskDen ∧
     4 * (diskDen - num207) ^ 2 < 3 * diskDen ^ 2 := by
   decide
+end Bgs.OrbitOrthogonalRational

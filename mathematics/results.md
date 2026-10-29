@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Diagonal random-phase form factor, 29 October 2026
+
+[TRACE-127](fixed-map/diagonal_phase_form_factor.md) evaluates \(U=DM_N\) with independent uniform phases on the \(N\) position sites. For every flat matrix, the phase-averaged squared trace is \(1\) at time one, \((2N-1)/N\) at time two, and at most \(m!\) at time \(m\). For the cat-map quantization at every odd \(N\ge 3\), the time-three value is \((6N^2-9N+4)/N^2\). The pure squared trace is \(1\) at time two. At time three it is \(49\) when \(7\) divides \(N\) and \(1\) otherwise, including at \(N=49\). The diagonal-phase value lies above the pure value at time two, above it at time three when \(7\) does not divide \(N\), and below \(6\) when the pure value is \(49\). The time-three limit \(6\) equals \(2\cdot 3\): the antiunitary \(\Theta=DK_0\) squares to \(1\) and reverses \(U\), which is a heuristic orthogonal label and not a COE form factor, and a \(2\)-cycle is its own reversal so the time-two limit is \(2\). The sixteen-phase ensemble of TRACE-126 is not evaluated. A twenty-four-draw sample of that ensemble is recorded and is not a limit. BGS-TRACE-005 stays open.
+
 ## Phase-averaged form factor, 29 October 2026
 
 [TRACE-126](fixed-map/interaction_phase_form_factor.md) is an average over independent phases on the 16 mode pairs of the kick. For every odd dimension and every power, the averaged squared trace equals \(|K_m|+\eta^2 D_2+\rho\), with \(D_2\) a Gauss-sum coefficient and with an explicit remainder. At an odd prime \(p\) the second-order revival term is \(-m(\sigma-\sigma_0(p))p^2\), with \(\sigma_0(p)=0\) for \(p\ge 11\) and with the three exceptions \(\sigma_0(3)=81/64000\), \(\sigma_0(5)=1/320000\), \(\sigma_0(7)=81/200\). The fixed kick has a linear term, nonzero at \(N=11\), \(m=3\). Parity and position conjugation fail for the kicked propagator when \(0<\lvert\eta\rvert<\pi/B\), except at dimension \(7\), where \(A_7=(9/10)I\). The signed off-diagonal sum and any limit with \(\tau^2 N^3\) tending to a positive constant remain open. BGS-TRACE-005 stays open.
@@ -453,7 +457,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**212 registered claims: 186 proved, 12 verification-pending, 9 conditional, 5 open.**
+**213 registered claims: 187 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -619,7 +623,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (103 claims)
+### TRACE family (104 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -726,5 +730,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-124` | **PROVED** | Every odd modulus lies above 3/4 or below 5/7 |
 | `BGS-TRACE-125` | **PROVED** | Uniform Pell-orbit overlap of the fixed symbol |
 | `BGS-TRACE-126` | **PROVED** | Phase-averaged form factor and classical symmetry defects of the kicked cat map |
+| `BGS-TRACE-127` | **PROVED** | Diagonal random-phase form factor of the cat map at times one, two and three |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

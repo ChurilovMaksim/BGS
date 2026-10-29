@@ -2,6 +2,8 @@ set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 set_option exponentiation.threshold 4096
 
+namespace Bgs.SquarefreeProductRational
+
 /-!
 # Rational witness for BGS-TRACE-123
 
@@ -149,3 +151,4 @@ theorem sqf_kick_663 : 8 * 56 ≤ 3 * 663 := by
 
 theorem sqf_kick_741 : 8 * 140 ≤ 3 * 741 := by
   decide
+end Bgs.SquarefreeProductRational

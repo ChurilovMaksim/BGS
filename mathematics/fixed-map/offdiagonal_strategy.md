@@ -104,3 +104,5 @@ These sit beside Priority 1. A generalization enters the registry only after the
 ### What a later certificate can honestly close
 
 Within reach, and not done: the finite symmetry test for this symbol, and a line-by-line separation of the existing Abel proofs into the hyperbolic part and the discriminant-\(2\) part. Out of reach with the present method: `BGS-TRACE-005`, `BGS-BGS-001`, an ensemble classification, a general smooth-kick theorem, a scaled-coupling limit law, and every numerical bound reported in Section 6.
+
+A later note, [the diagonal random-phase form factor](diagonal_phase_form_factor.md), is `BGS-TRACE-127`. It proves the occupation form factor of \(DM_N\) at times one, two and three, for independent phases at the \(N\) sites. That propagator is not the sixteen-phase ensemble of `BGS-TRACE-126` and not this \(U_N\). The sixteen-phase form factor at coupling of order \(1\) stays unresolved there.

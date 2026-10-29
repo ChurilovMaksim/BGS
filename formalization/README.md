@@ -13,8 +13,10 @@ the informal analytic corpus is substantially larger.
 From the repository root:
 
 ```sh
-(cd formalization && lake build)
+(cd formalization && lake exe cache get && lake build Bgs)
 ```
+
+Run `lake exe cache get` once per environment (or after a Mathlib pin change) to install prebuilt Mathlib oleans; reuse the same `formalization/.lake` tree across branch checkouts. The [2026-10-29 aggregate receipt](../evidence/formalization/bgs_aggregate_20261029/README.md) records a full `Bgs` build after the rational-module namespace fix on the TRACE-127 stack.
 
 The pinned release is **Lean 4.33.1**. The previous integration environment recorded a completed build of the adapted source graph (8,776 Lake jobs, 589 declaration axiom inventories); its raw execution logs were not recoverable after the environment change. The source and historical execution digests are preserved in the integration receipt. Hosted CI did not independently validate the merged source because the repository owner reported exhausted GitHub Actions minutes. No post-merge Lean build is claimed.
 
