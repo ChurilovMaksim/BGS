@@ -2,7 +2,7 @@
 
 The packet numbered these statements BGS-TRACE-138 to BGS-TRACE-143. Main already registers BGS-TRACE-140 to BGS-TRACE-142, so the registered IDs are BGS-TRACE-143 to BGS-TRACE-148.
 
-This certificate checks `mathematics/fixed-map/random_phase_encounter_pairs.md` for the **maximal Haar diagonal-phase ensemble** U = D_θ·M_N, S = [[3,4],[2,3]]. It does not cover the fixed kick, the 16-mode ensemble or band-limited ensembles. A pass proves neither BGS-TRACE-005 nor BGS-BGS-001. Gnutzmann–Seif 2004 derived 2τ−2τ² diagrammatically for this ensemble; new here is only the rigorous fixed-m exact-in-p result, the complete classification including swaps, and the m≤12 expansions.
+This certificate checks `mathematics/fixed-map/random_phase_encounter_pairs.md` for the **maximal Haar diagonal-phase ensemble** U = D_θ·M_N, S = [[3,4],[2,3]]. It does not cover the fixed kick, the 16-mode ensemble or band-limited ensembles. A pass proves neither BGS-TRACE-005 nor BGS-BGS-001. Gnutzmann–Seif 2004 derived 2τ−2τ² diagrammatically for this ensemble, Gnutzmann–Altland 2005 and Pluhař–Weidenmüller 2014 predict the full COE form factor non-rigorously, and Berkolaiko–Keating 1999 did exact all-pairs combinatorics for random-phase star graphs; new here is only the rigorous fixed-m exact-in-p result, the complete classification including swaps, and the m≤12 expansions.
 
 ```sh
 cd computations/verification/lineC
@@ -11,7 +11,9 @@ python3 fixes_check.py                  # ~5 s, prints PASS (39/39): constants C
 python3 verify_thm1.py                  # Theorem 1 matrix identities and eigenphases (floating point)
 python3 verify_exact.py                 # V1 brute force vs Prop. 2; V2 symbolic vs per-prime (floating point)
 python3 threshold_check.py 7 3 257 6    # exact comparison prime by prime (m<=7: ~20 s; m=8: ~65 s per prime)
-python3 rank_dist.py                    # Lemma 4 exhaustive check, m=4..9
+python3 rank_dist.py 9                  # Lemma 4 exhaustive check, m=4..9
+for m in 5 6 7; do python3 decompose.py $m; done   # decompose_5_7.log
+python3 symbolic.py 1 7                 # data/symbolic_m1_7.log
 g++ -O2 -std=c++17 -pthread -o engine engine.cpp && python3 run_engine.py 8 8   # Theorem 7 expansion, m=8
 python3 run_engine.py 12 8 2            # m=12 through p^-5/2 (~4 min on 8 threads)
 ```
@@ -20,8 +22,10 @@ Lean, toolchain `leanprover/lean4:v4.33.1`:
 
 ```sh
 lean formalization/Bgs/LineCEncounter.lean            # no imports; every theorem by decide
-cd formalization && lake exe cache get && lake build Bgs.LineCEncounter && lake env lean AxiomsLineC.lean
+cd formalization && lake exe cache get && lake build Bgs.LineCEncounter && lake env lean ../evidence/executions/20261029/lineC-random-phase/AxiomsLineC.lean
 ```
+
+`lean_controls.sh` is the packet script; it names the packet workspace `/workspace/bgs-lineC` and is a record, not a repository command.
 
 Logs in this directory:
 * `fixes_check.log` and `threshold_m{2..8}.log` are the v2 checks, all exact in Q(eps*sqrt p) except the floating-point brute-force anchors.
