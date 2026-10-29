@@ -1,0 +1,20 @@
+{
+  "schema": "bgs-squarefree-product-abel-v1",
+  "claim": "BGS-TRACE-123",
+  "kick_windows": {
+    "four_or_more_primes": "10^39",
+    "three_primes_not_divisible_by_15": "10^39",
+    "fifteen_times_prime": "10^26"
+  },
+  "orders_checked": [3, 5, 7, 11, 13, 17, 19, 23, 29, 31],
+  "series_degree_lower": 4,
+  "three_prime_example": "195=3*5*13",
+  "non_squarefree_example": "315=9*5*7",
+  "sources_sha256": {
+    "python": "121e7baa688945a26b6cd1c6806203bab79c0a380b9640baa9868051dc801d25",
+    "cpp": "3daf3c0acc233c1c09879a8735ab1d65b6650b043d5c363b89370e9aa16ab2a7",
+    "lean": "3b9cbd254f0f339b01cf27b35bae6aecd2181b85bc11188fbf9d0500c6bdb7a8",
+    "proof": "ea14ffc33e251c49e1a53e390e072610fd3abc0d31524ed38ee161b57e7317e2"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a density, a prime square, the signed off-diagonal sum, the limit, or the kicked statistic at u_207. The kick on 15r stops at 10^26."
+}

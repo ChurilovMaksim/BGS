@@ -12,7 +12,9 @@
 
 [TRACE-121](fixed-map/order_trichotomy_abel.md) removes the intermediate interval for primes and prime powers. The order modulo an odd prime divides \(p-\varepsilon\) and is short, long, or split-half. The prime \(p=7\) lies above \(3/4\), and every larger split-half prime lies below \(41/60\). The lifting depth decides every higher power: powers of \(7\) stay above \(3/4\), while depth at least two puts \(13^2\) and \(31^2\) above \(3/4\) even though those primes themselves lie on the CUE side of distance \(1/2\). The fixed kick preserves the new comparisons through \(10^{26}\), except depth-one powers of a split-half prime \(p\ge17\), which stop at \(10^{25}\). For every odd \(n\ge5\) the pure map at \(u_n\), including \(u_{207}\), is already above \(3/4\). The kick at \(u_{207}\) stays unresolved. No density is proved. BGS-TRACE-005 stays open.
 
-[TRACE-122](fixed-map/crt_composite_abel.md) extends the trace square to every odd modulus by the Chinese remainder theorem, and gives the square-free Abel sum as a finite combination of geometric series. Every product of two odd primes is then decided: short composite orders, non-short multiples of \(7\), and non-short products of \(3\) with a short prime lie above \(3/4\), and every remaining semiprime lies below \(5/7\). The fixed kick preserves the gap above \(3/4\) through \(10^{26}\) for \(N=21\), for split full-order multiples of \(7\), and for a non-short product of \(3\) with a short prime of odd order, if any such prime exists. A modulus with three distinct prime factors, the density of the order classes, and the kick at \(u_{207}\) stay unresolved. BGS-TRACE-005 stays open.
+[TRACE-122](fixed-map/crt_composite_abel.md) extends the trace square to every odd modulus by the Chinese remainder theorem, and gives the square-free Abel sum as a finite combination of geometric series. Every product of two odd primes is then decided: short composite orders, non-short multiples of \(7\), and non-short products of \(3\) with a short prime lie above \(3/4\), and every remaining semiprime lies below \(5/7\). The fixed kick preserves the gap above \(3/4\) through \(10^{26}\) for \(N=21\), for split full-order multiples of \(7\), and for a non-short product of \(3\) with a short prime of odd order, if any such prime exists.
+
+[TRACE-123](fixed-map/squarefree_product_abel.md) places every square-free product of at least three distinct odd primes above \(3/4\). The fixed kick preserves that gap through \(10^{39}\) for four or more prime factors and for three prime factors not divisible by \(15\), and through \(10^{26}\) for \(N=15r\). The modulus \(N=195\) is settled by the eight-term subset expansion, not by the short-order test. A prime square such as \(315=3^2\cdot5\cdot7\) stays unresolved, as do the density of the order classes and the kick at \(u_{207}\). BGS-TRACE-005 stays open.
 
 ## Aristotle formalization integration, 28 October 2026
 
@@ -443,7 +445,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**208 registered claims: 182 proved, 12 verification-pending, 9 conditional, 5 open.**
+**209 registered claims: 183 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -609,7 +611,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (99 claims)
+### TRACE family (100 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -712,5 +714,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-120` | **PROVED** | Cat-map order governs the fixed-map Abel statistic |
 | `BGS-TRACE-121` | **PROVED** | Cat-map order trichotomy for primes and prime powers |
 | `BGS-TRACE-122` | **PROVED** | Chinese product for the cat-map trace square |
+| `BGS-TRACE-123` | **PROVED** | Square-free products of at least three primes lie above 3/4 |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

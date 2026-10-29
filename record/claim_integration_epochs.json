@@ -689,6 +689,12 @@
       "state": "proved",
       "source": "mathematics/fixed-map/crt_composite_abel.md",
       "disposition": "29 October 2026: the pure trace square multiplies over the prime-power factors of every odd modulus, and every product of two odd primes lies above 3/4 or below 5/7. The fixed kick preserves the upper gap through 10^26 on N=21, on split full-order multiples of 7, and on a non-short product of 3 with a short prime of odd order. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-123",
+      "state": "proved",
+      "source": "mathematics/fixed-map/squarefree_product_abel.md",
+      "disposition": "29 October 2026: every square-free odd modulus with at least three distinct prime factors has pure Abel value above 3/4. The fixed kick preserves that gap through 10^39 for four or more prime factors and for three prime factors not divisible by 15, and through 10^26 for N=15r. Prime squares, including 315, stay outside the statement. Does not close TRACE-005 or BGS-001."
     }
   ],
   "invariants": [
