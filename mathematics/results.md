@@ -8,6 +8,8 @@
 
 [TRACE-119](fixed-map/positive_time_spike.md) clears \(n=205\) by a positive-time expansion. Resonant diagrams of degree at most \(11\) are exact archimedean zeros, indecomposable gaps are at most \(4\), and the resulting activity bound leaves an Abel term above \(3/4\) at \(N=u_{205}\) (79 digits). The \(n=207\) disk remains below \(3/4\). BGS-TRACE-005 stays open.
 
+[TRACE-120](fixed-map/order_ladder_abel.md) replaces the next single-index disk by the order of \(C\) modulo \(N\). If \(12t(N)\le5N\), the pure cat map satisfies \(L_N(M_N;1)>3/4\). If \(p\) is an odd prime and the order is at least \((p+1)/2\), the same statistic lies at distance less than \(1/2\) from the CUE value. The fixed kick preserves the short side for every such odd \(N\le10^{39}\) and the long side for every such prime \(p\le10^{26}\). The dimension \(N=35\), of order \(6\), is not a Pell number, and one return there lies below \(3/4\). The kicked map at \(u_{207}\) stays unresolved. BGS-TRACE-005 stays open.
+
 ## Aristotle formalization integration, 28 October 2026
 
 Adapted all 39 substantive modules from the older Aristotle snapshot into the existing Lean 4.33.1 graph. The [coverage map](../formalization/MATHLIB_LAYER_RU.md) and [receipt](../evidence/formalization/aristotle_20261027/receipt.json) record exact theorem scope, 589 axiom-audited declarations and the successful aggregate build. ERR-060 corrects the pure-loss scalar identity in the proof and manuscript. Current claim states, TRACE-114–116 and pinned dependencies are retained; no BGS closure is asserted.
@@ -437,7 +439,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**205 registered claims: 179 proved, 12 verification-pending, 9 conditional, 5 open.**
+**206 registered claims: 180 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -603,7 +605,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (96 claims)
+### TRACE family (97 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -703,5 +705,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-117` | **PROVED** | Kick-blind arithmetic spikes of the fixed cat map |
 | `BGS-TRACE-118` | **PROVED** | Orbit-orthogonal kick at the Pell dimension u_203 |
 | `BGS-TRACE-119` | **PROVED** | Positive-time trace expansion at the Pell dimension u_205 |
+| `BGS-TRACE-120` | **PROVED** | Cat-map order governs the fixed-map Abel statistic |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

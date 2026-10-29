@@ -39,5 +39,6 @@ import Bgs.Fm021Statement
 import Bgs.KickBlindRational
 import Bgs.OrbitOrthogonalRational
 import Bgs.PositiveTimeRational
+import Bgs.OrderLadderRational
 
 import Bgs.Mathlib

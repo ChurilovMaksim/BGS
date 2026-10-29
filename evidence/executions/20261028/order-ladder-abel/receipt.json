@@ -1,0 +1,24 @@
+{
+  "schema": "bgs-order-ladder-abel-v1",
+  "claim": "BGS-TRACE-120",
+  "short_window": "10^39",
+  "long_window": "10^26",
+  "majorant": "184981/160000",
+  "witness_N35_order": 6,
+  "witness_p5_order": 6,
+  "witness_p7_order": 3,
+  "order_agreement_through": 300,
+  "short_orders_through_300": 70,
+  "long_primes_through_300": 24,
+  "cyclotomic_traces": [
+    "p=5 m=1..6",
+    "p=7 m=1..6"
+  ],
+  "sources_sha256": {
+    "python": "84726af057a1ac3371474c8036de489c7883e97284adeb70519ec6277f035f31",
+    "cpp": "e33262dea4c8d59fa7e906ca4978ef78aa5cac47111fbe3daca05516d7f05232",
+    "lean": "7845067a59c62384ad111e888782dbcc9bded36a121e2ee279ce214b8c6493c0",
+    "proof": "85abc725535106733a8837294626d4d7b57ca56200928dc3733afb42a1cf34bd"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, the limit, a CUE value, or the kicked statistic at u_207. The modulus-300 census is a finite check, not a density theorem. p=7 meets neither order hypothesis."
+}

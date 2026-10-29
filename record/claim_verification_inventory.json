@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "a4ca4c4fb05289904da44e5c9863b47499fc1d67",
+ "source_blob_sha": "b85fcd8723ba7377192b22b86a5b3e8e093977ad",
  "generated": "2026-10-28",
  "method_enumeration": [
   "analytic_proof",
@@ -29,7 +29,8 @@
   "review_provenance fields on some claims record internal reviews but are not automatically sufficient to certify independent proof review.",
   "BGS-TRACE-117 was appended on 2026-10-28. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
   "BGS-TRACE-118 was appended on 2026-10-28. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
-  "BGS-TRACE-119 was appended on 2026-10-28. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee."
+  "BGS-TRACE-119 was appended on 2026-10-28. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
+  "BGS-TRACE-120 was appended on 2026-10-28. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee."
  ],
  "claims": [
   {
@@ -7570,6 +7571,50 @@
    "boundary": "Single odd dimension N=u_205 for the fixed kick tau=10^{-80}. At that dimension L_N(U_N;1)>3/4, so the distance to (1-e^{-2})/4 exceeds 1/2. Any effective bound of that distance by 1/2 for all odd N>=N_0 needs N_0>u_205 (79 decimal digits). The argument is a positive-time diagram expansion with trace orthogonality; it does not revive the third-order operator-norm remainder or the Hilbert-Schmidt triangle, both of which stay silent at n=205. At n=207 the pure second-order center satisfies (1-eps_2)^2<3/4, so no disk N(1-eps_2-E) with E>=0 proves the gap; this is not a proof that L itself drops. Does not prove the N to infinity limit, a gap at every odd N, the off-diagonal sum, or any k>2. Lean certifies the norm block at diameter 186, the gap comparison 4860*beta^5<1, the scale x<7/2, the window activities, the degree tail, the coarse chain, and the cleared Abel comparison at room 1/12. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the norm block at diameter 186, the gap comparison 4860*beta^5<1, the scale x<7/2, the window activities through degree 11, the degree tail, the coarse chain, and the cleared Abel comparison at room 1/12. The Weyl product, the arc lift, and the diagram expansion are not formalized. Python and C++ recheck the integers, the 32-mode bound, and the same comparisons.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-120",
+   "title": "Cat-map order governs the fixed-map Abel statistic",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261028/order-ladder-abel/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/order_ladder_abel.py",
+    "computations/cpp/order_ladder_abel.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/OrderLadderRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+   "boundary": "For every odd N>=3, if the order t of C modulo N satisfies 12t<=5N, then L_N(M_N;1)>3/4 and the distance to (1-e^{-2})/4 exceeds 1/2. If p is an odd prime and 2t>=p+1, with the direct evaluation t(3)=4, then L_p(M_p;1)<5/7, so that distance is less than 1/2. The fixed kick tau=10^{-80} preserves the short-order gap for every such N<=10^{39} and the long-order ceiling for every such prime p<=10^{26}. At N=35, which is not a Pell number, the order is 6 and the first return alone is below 3/4. The prime p=7 meets neither hypothesis; its return subsum is below 3/4 and the full sum is not decided. Does not decide the kicked map at u_207, any order strictly between 5N/12 and (N+1)/2, the N to infinity limit, the off-diagonal sum, or any k>2. Lean certifies the rational comparisons and the two digit windows only. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the rational exponential comparisons and the two digit windows. The Weyl trace square, the divisibility criterion, and the kick telescoping are not formalized. Python and C++ recheck the integers, the order agreement through modulus 300, and the 32-mode majorant. Python alone repeats the cyclotomic trace at p=5 and p=7.",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
    ],

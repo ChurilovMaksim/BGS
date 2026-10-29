@@ -671,6 +671,12 @@
       "state": "proved",
       "source": "mathematics/fixed-map/positive_time_spike.md",
       "disposition": "28 October 2026: positive-time diagram expansion at N=u_205. Resonant diagrams of degree at most 11 are archimedean zeros, indecomposable gaps are at most 4, and the Abel lower bound exceeds 3/4. The n=207 second-order disk remains below 3/4. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-120",
+      "state": "proved",
+      "source": "mathematics/fixed-map/order_ladder_abel.md",
+      "disposition": "28 October 2026: the order of C modulo N decides the Abel statistic. Short order 12t<=5N gives L(M)>3/4 for every odd N. Long order 2t>=p+1 gives distance less than 1/2 from the CUE value at every odd prime. The fixed kick preserves the two sides through 10^39 and 10^26. N=35 shows that one return need not suffice. Does not close TRACE-005 or BGS-001 and does not decide the kicked map at u_207."
     }
   ],
   "invariants": [
