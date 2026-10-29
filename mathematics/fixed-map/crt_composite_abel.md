@@ -42,7 +42,7 @@ Every coefficient \(c_S\) is positive, and the coefficients sum to \(1\).
 **Theorem 3 (semiprime dichotomy).** Let \(N=pq\) with odd primes \(p<q\), and let \(T=t(N)\). Exactly one of the following holds.
 
 - If \(12T\le5N\), then \(L_N(M_N;1)>3/4\). The distance from this value to \((1-e^{-2})/4\) is greater than \(1/2\).
-- If \(7\) divides \(N\) and \(12T>5N\), then again \(L_N(M_N;1)>3/4\), with the same distance. The partner is then an inert prime of order \(q+1\), or else \(N=21\).
+- If \(7\) divides \(N\) and \(12T>5N\), then again \(L_N(M_N;1)>3/4\), with the same distance. The partner is then an inert prime of order \(q+1\). This includes \(N=21\), whose partner \(q=3\) is inert of order \(4\).
 - In every remaining case, \(L_N(M_N;1)<5/7\). The statistic lies below \(3/4\), and its distance to \((1-e^{-2})/4\) is less than \(1/2\).
 
 The two clauses which previously stood beside these alternatives do not occur. A split prime does not have order \(q-1\), and no prime has order \((q+1)/2\), by the half-order lemma of `BGS-TRACE-121`. Every product of \(3\) with a short prime \(q\ge5\) satisfies \(12T\le5N\), by the lemma in Section 7, so it falls under the first alternative.

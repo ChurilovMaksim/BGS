@@ -1,5 +1,9 @@
 # Scientific changelog
 
+## 2026-10-29 — Separation wording and the semiprime partner
+
+Section 2 of `mathematics/fixed-map/offdiagonal_strategy.md` no longer treats an upper bound below \(5/7\) as a separation of \(L_N(U_N;1)\) from the CUE value: \(5/7\) is larger than \((1-e^{-2})/4\). A separation is a weighted one-term gap, an upper bound \(L_N(U_N;1)\le(1-e^{-2})/4-c\) for a fixed \(c>0\), or a lower bound above \(3/4\). The fixed-point count of a trace square is the lemma in Section 2 of BGS-TRACE-120, cited in Section 2 of BGS-TRACE-122. Theorem 3 of BGS-TRACE-122 states that the non-short partner of \(7\) is an inert prime of order \(q+1\), which already includes \(q=3\). No claim state changes. The Python, C++, and Lean certificates were not re-run.
+
 ## 2026-10-29 — Strategy note ranks the concrete model and the generalizations
 
 Section 7 of `mathematics/fixed-map/offdiagonal_strategy.md` ranks open routes by significance and by realistic provability. Priority 1 is a correct statement about this \(U_N\). The signed sum at times of order \(N\) is the significant target and is not within reach. An exact symmetry test of the 32-mode symbol is the realistic concrete step; `BGS-FM-001` already excludes a classical \(C^1\) reversor and does not classify the quantum ensemble. Priority 2 records, without opening a claim, a pure-map statement for a general hyperbolic matrix in \(\mathrm{SL}(2,\mathbb Z)\), a general trigonometric kick, the monomials \(\tau^2 N^3\) and \(\tau^2 N^2\) already present in the second derivative of `BGS-TRACE-125`, and an ensemble classification. The classification and the scaled-coupling limit law are not within reach. No new claim ID.
