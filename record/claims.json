@@ -5579,6 +5579,33 @@
       "manuscript": [
         "manuscript/unified_sections/hyperbolic_diagonal_form_factor.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-132",
+      "title": "Fixed-time limits for a general hyperbolic cat map",
+      "source": "mathematics/fixed-map/hyperbolic_short_time_limit.md",
+      "dependencies": [
+        "BGS-TRACE-127",
+        "BGS-TRACE-128",
+        "BGS-TRACE-131"
+      ],
+      "boundary": "For every hyperbolic S in SL(2,Z) and every odd N coprime to the upper-right entry beta, Haar diagonal phases satisfy |E|Tr U^m|^2 - 2m P(N,m)/N^m| <= m!(1+m(m-1))/N for m>=3. The fixed-time limit is 2m. It does not use alpha=delta. The antiunitary Theta=D K_0 exists precisely when alpha=delta, and the orthogonal-class name is a heuristic. At time one the limit is 1. At time two it is 2, not 4. A finite cosine with eta=o(p^{-2/3}) has limit 1 along odd primes outside the finite set of divisors of beta(2-u_m). A fixed nonzero eta is not forced near 2m: at N=11 and x=1 the remainder majorant N^2*11/18 exceeds 6. If the frequencies {1,...,m} are present, lim eta to infinity equals the Haar value, and the subsequent limit in N is 2m. The opposite order is not identified. A second diagonal is conjugate to one diagonal times M and does not produce the value m. Row inversion on an odd prime not dividing beta has limit m, with the Kloosterman error of TRACE-128. At p=3 the inversion is the identity. A momentum sine leaves the class DM, and its form factor is not identified. The logarithmic window does not reach m<=N^alpha. No Heisenberg-scale statement is proved. Lean decides the constants 42 and 312, the reduction 22/36=11/18, and 121*11>6*18. It does not sum the form factor. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/hyperbolic-short-time/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/hyperbolic_short_time_limit.py",
+        "computations/cpp/hyperbolic_short_time_limit.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/HyperbolicShortTime.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/hyperbolic_short_time_limit.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

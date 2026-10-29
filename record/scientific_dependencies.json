@@ -218,7 +218,8 @@
     "BGS-TRACE-128",
     "BGS-TRACE-129",
     "BGS-TRACE-130",
-    "BGS-TRACE-131"
+    "BGS-TRACE-131",
+    "BGS-TRACE-132"
   ],
   "edges": [
     {
@@ -1547,6 +1548,16 @@
       "type": "scientific-prerequisite"
     },
     {
+      "from": "BGS-TRACE-127",
+      "to": "BGS-TRACE-132",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-128",
+      "to": "BGS-TRACE-132",
+      "type": "scientific-prerequisite"
+    },
+    {
       "from": "BGS-TRACE-129",
       "to": "BGS-TRACE-130",
       "type": "scientific-prerequisite"
@@ -1554,6 +1565,11 @@
     {
       "from": "BGS-TRACE-130",
       "to": "BGS-TRACE-131",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-131",
+      "to": "BGS-TRACE-132",
       "type": "scientific-prerequisite"
     }
   ],

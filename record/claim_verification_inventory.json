@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "912248448fa6f0ab53f81092d409f5318b33a0da",
+ "source_blob_sha": "a568383d8cd5d8bd5f9ccc6d2455a3efce6b8e59",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -47,7 +47,8 @@
   "On 2026-10-29 a self-red-team correction of BGS-TRACE-129 recorded that the Bessel identity is the classical orbit sum, not the quantum sixteen-phase average; that time one equals 1+rho_1; that each of ell=+1 and ell=-1 has energy 9/160000; and that Lean does not certify minimality of the order 12 at p=11. The quadruple rows at 11, 31, 41 and 47 are Python-only.",
   "BGS-TRACE-130 was appended on 2026-10-29. Its Lean file certifies the momentum-row energy, the determinant, and the integer form of the momentum-sine energy only; the similarity was checked by the author and was not given an independent referee.",
   "On 2026-10-29 a self-red-team correction of BGS-TRACE-130 replaced similarity to a symmetric unitary by the antiunitary Theta=D K_0, deleted the claim that a CUE form factor is incompatible with that symmetry, restricted K_0-evenness to almost every phase, and corrected the sign of c_{1,k} to (-3-4i) r(k).",
-  "BGS-TRACE-131 was appended on 2026-10-29. Its Lean file certifies companion values, kernel counts, the order modulo 41, the shared order modulo 11, and the revival cross-multiplications only; the operator expansion was checked by the author and was not given an independent referee."
+  "BGS-TRACE-131 was appended on 2026-10-29. Its Lean file certifies companion values, kernel counts, the order modulo 41, the shared order modulo 11, and the revival cross-multiplications only; the operator expansion was checked by the author and was not given an independent referee.",
+  "BGS-TRACE-132 was appended on 2026-10-29. Its Lean file certifies the error constants and the majorant comparison only; the occupation bounds were checked by the author and were not given an independent referee."
  ],
  "claims": [
   {
@@ -8116,6 +8117,50 @@
    "boundary": "For every S=[[alpha, beta],[gamma, delta]] in SL(2,Z) with |tr|>=3, and every odd N>=3 with gcd(beta,N)=1, the position-basis matrix with phase kappa(delta x^2-2xy+alpha y^2), kappa=-(2 beta)^{-1}, and prefactor N^{-1/2} is unitary and flat. It is symmetric if and only if alpha=delta. Egorov holds for the repository Weyl operators, and |Tr M^m|^2 equals |ker(S^m-I)| on (Z/NZ)^2. The sequences u_n and v_n, and det(S^n-I)=2-u_n, depend only on the trace. For an odd prime p not dividing beta the kernel has order 1, p, or p^2 according as p does not divide 2-u_m, S^m is a nontrivial unipotent, or S^m=I. The identity test v_m=0 and v_{m-1}=-1 depends only on the trace when p does not divide beta. If p does not divide 2(t^2-4), the order divides p-(Delta/p). If p divides beta, equal traces need not agree: the matrices [[-20,-9],[9,4]] and [[-17,-18],[1,1]] have kernels 9 and 3 modulo 3. At N=49 the trace-6 matrices [[3,4],[2,3]] and [[5,2],[2,1]] both have kernel 49 at time 3, not 2401. For a finite cosine kick with i.i.d. uniform phases the quantum average is the Bessel path sum. It is not the classical orbit sum of TRACE-129. If gcd(2-tr,N)=1 the time-one average equals 1 for every real eta. The order-two expansion is |ker|+eta^2 D_2+rho with |D_2|<=2 m^2 sigma |ker|, sigma=sum a_k^2/2, and |rho|<=N^2[(x^3/6)(2+x^3/6)+x^4/4] for x=m B|eta| and B=sum |a_k|. At an identity revival D_2=-m(sigma-sigma_0)p^2. For a_1=1 and a_2=1/2 this is -42025/8 at the model matrix, time 5, prime 41, and -375/8 at [[2,1],[3,2]], time 3, prime 5. The unipotent defect at [[2,1],[1,1]], time 2, prime 5, has kernel 5 and is not given that coefficient. Haar diagonal phases give the flat values 1 and (2N-1)/N at times one and two, and (6N^2-9N+4)/N^2 at time three, whether or not the diagonals agree. This is not the all-order revival law and not a fixed-time limit. The antiunitary Theta=D K_0 reverses U precisely when alpha=delta; the orthogonal-class name is a heuristic. Lean decides companion values, kernels, the order 5 modulo 41, the order 12 modulo 11 for two trace-6 matrices, and the revival cross-multiplications. It does not formalize the expansion. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides companion values, kernel counts, the order modulo 41, the shared order modulo 11, and the revival cross-multiplications. The operator expansion is not formalized. Python and C++ recompute the integers and the floating-point checks.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-132",
+   "title": "Fixed-time limits for a general hyperbolic cat map",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/hyperbolic-short-time/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/hyperbolic_short_time_limit.py",
+    "computations/cpp/hyperbolic_short_time_limit.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/HyperbolicShortTime.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "For every hyperbolic S in SL(2,Z) and every odd N coprime to the upper-right entry beta, Haar diagonal phases satisfy |E|Tr U^m|^2 - 2m P(N,m)/N^m| <= m!(1+m(m-1))/N for m>=3. The fixed-time limit is 2m. It does not use alpha=delta. The antiunitary Theta=D K_0 exists precisely when alpha=delta, and the orthogonal-class name is a heuristic. At time one the limit is 1. At time two it is 2, not 4. A finite cosine with eta=o(p^{-2/3}) has limit 1 along odd primes outside the finite set of divisors of beta(2-u_m). A fixed nonzero eta is not forced near 2m: at N=11 and x=1 the remainder majorant N^2*11/18 exceeds 6. If the frequencies {1,...,m} are present, lim eta to infinity equals the Haar value, and the subsequent limit in N is 2m. The opposite order is not identified. A second diagonal is conjugate to one diagonal times M and does not produce the value m. Row inversion on an odd prime not dividing beta has limit m, with the Kloosterman error of TRACE-128. At p=3 the inversion is the identity. A momentum sine leaves the class DM, and its form factor is not identified. The logarithmic window does not reach m<=N^alpha. No Heisenberg-scale statement is proved. Lean decides the constants 42 and 312, the reduction 22/36=11/18, and 121*11>6*18. It does not sum the form factor. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the error constants 42 and 312, the reduction of the unit majorant to 11/18, and the comparison 121*11>6*18. The occupation sum is not formalized. Python and C++ check 48 inequalities.",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
    ],

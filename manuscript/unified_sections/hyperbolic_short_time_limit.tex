@@ -1,0 +1,29 @@
+\section{Fixed-time limits for a general hyperbolic cat map}
+\label{sec:hyperbolic-short-time-limit}
+The canonical proof is
+\path{mathematics/fixed-map/hyperbolic_short_time_limit.md}.
+The integer witness is
+\path{formalization/Bgs/HyperbolicShortTime.lean}.
+Python and C++ check the occupation inequalities.
+No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+
+\begin{theorem}[Fixed-time limits, BGS-TRACE-132]
+\label{thm:hyperbolic-short-time-limit}
+Let \(S\in\mathrm{SL}(2,\mathbb Z)\) be hyperbolic and let \(N\) be odd and coprime
+to the upper-right entry. For the Haar diagonal ensemble \(U=DM_N(S)\) and every
+\(m\ge 3\),
+\[
+\bigl\lvert\mathbb E\lvert\operatorname{Tr} U^m\rvert^2-2m P(N,m)/N^m\bigr\rvert
+\le m!(1+m(m-1))/N.
+\]
+The fixed-time limit is \(2m\). It does not use equality of the diagonal entries
+of \(S\). At times one and two the limits are \(1\) and \(2\). A finite cosine
+kick in the window \(\eta=o(N^{-2/3})\) has limit \(1\), not \(2m\). If the
+frequencies \(\{1,\ldots,m\}\) are present, sending \(\eta\to\infty\) before
+\(N\to\infty\) recovers \(2m\). A second diagonal factor does not replace \(2m\)
+by \(m\). Row inversion on an odd prime not dividing the upper-right entry has
+limit \(m\). A momentum sine takes the propagator out of this class, and its
+form factor is not identified. The orthogonal-class name remains a heuristic.
+\end{theorem}
