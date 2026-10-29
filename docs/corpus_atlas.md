@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**341 maintained proof notes; 10 topic views; 205 core claim IDs.**
+**342 maintained proof notes; 10 topic views; 206 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
 | open | 5 |
-| proved | 179 |
+| proved | 180 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 142 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 143 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -136,6 +136,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [The complete oldform tower and its zero first-order blocks](../mathematics/fixed-map/oldform_tower_compression.md) | Consult proof and full ledger |
 | [Strict one-step contraction of every nonzero actual charge block](../mathematics/fixed-map/onestep_charge_gap.md) | Consult proof and full ledger |
 | [Orbit-orthogonal kick at the Pell dimension \(u_{203}\)](../mathematics/fixed-map/orbit_orthogonal_kick_spike.md) | `BGS-TRACE-118` (proved) |
+| [The cat-map order governs the Abel statistic](../mathematics/fixed-map/order_ladder_abel.md) | `BGS-TRACE-120` (proved) |
 | [Centered ordered-diagonal cyclic trace](../mathematics/fixed-map/ordered_diagonal_cyclic_trace.md) | Consult proof and full ledger |
 | [Ordinary compact-stratum centering and fixed-N cutoff](../mathematics/fixed-map/ordinary_compact_stratum_centering.md) | `BGS-FM-031` (proved) |
 | [Original ordered two-pair channel: logarithmic-loss gap](../mathematics/fixed-map/original_channel_gap.md) | `BGS-FM-020` (proved) |

@@ -5270,6 +5270,31 @@
       "manuscript": [
         "manuscript/unified_sections/positive_time_spike.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-120",
+      "title": "Cat-map order governs the fixed-map Abel statistic",
+      "source": "mathematics/fixed-map/order_ladder_abel.md",
+      "dependencies": [
+        "BGS-TRACE-117"
+      ],
+      "boundary": "For every odd N>=3, if the order t of C modulo N satisfies 12t<=5N, then L_N(M_N;1)>3/4 and the distance to (1-e^{-2})/4 exceeds 1/2. If p is an odd prime and 2t>=p+1, with the direct evaluation t(3)=4, then L_p(M_p;1)<5/7, so that distance is less than 1/2. The fixed kick tau=10^{-80} preserves the short-order gap for every such N<=10^{39} and the long-order ceiling for every such prime p<=10^{26}. At N=35, which is not a Pell number, the order is 6 and the first return alone is below 3/4. The prime p=7 meets neither hypothesis; its return subsum is below 3/4 and the full sum is not decided. Does not decide the kicked map at u_207, any order strictly between 5N/12 and (N+1)/2, the N to infinity limit, the off-diagonal sum, or any k>2. Lean certifies the rational comparisons and the two digit windows only. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261028/order-ladder-abel/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/order_ladder_abel.py",
+        "computations/cpp/order_ladder_abel.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/OrderLadderRational.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/order_ladder_abel.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

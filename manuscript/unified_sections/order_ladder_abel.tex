@@ -1,0 +1,32 @@
+\section{Cat-map order and the Abel statistic}
+\label{sec:order-ladder-abel}
+The one-term disk and the positive-time expansion stop at individual Pell
+dimensions. The Abel statistic of the pure cat map is instead decided by
+the multiplicative order of \(C\) modulo \(N\). The canonical proof is
+\path{mathematics/fixed-map/order_ladder_abel.md}.
+The integer comparisons are certified by
+\path{formalization/Bgs/OrderLadderRational.lean} and recomputed by the
+Python and C++ verifiers named there. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Order ladder, BGS-TRACE-120]
+\label{thm:order-ladder-abel}
+Let \(N\ge3\) be odd and let \(t(N)\) be the least positive integer with
+\(C^{t(N)}\equiv I\pmod N\), for the frequency matrix \(C\) of
+Section~\ref{sec:kick-blind-arithmetic-spike}. If \(12\,t(N)\le5N\), then
+\(L_N(M_N;1)>3/4\), and the distance from this value to
+\((1-e^{-2})/4\) is greater than \(1/2\). If \(p\) is an odd prime, the
+order is \(t(3)=4\). For \(p=3\), and for every prime \(p\ge5\) with
+\(2\,t(p)\ge p+1\), one has \(L_p(M_p;1)<5/7\), and the distance from
+this value to \((1-e^{-2})/4\) is less than \(1/2\).
+
+For the fixed kick \(\tau=10^{-80}\), the same strict gap above \(3/4\)
+holds whenever \(8\,t(N)\le3N\) and \(N\le10^{39}\). Every odd prime
+\(p\le10^{26}\) on the long-order side satisfies \(L_p(U_p;1)<5/7\), so
+the kicked statistic lies below \(3/4\) and within distance \(1/2\) of the
+CUE value. The odd dimension \(N=35\) has order \(6\), is not a Pell
+number, and its first return alone lies below \(3/4\). The prime \(p=7\)
+meets neither order hypothesis, and the estimate does not decide
+\(L_7(M_7;1)\). It does not decide the kicked map at \(u_{207}\), the
+limit, or a generic odd dimension.
+\end{theorem}
