@@ -11,7 +11,8 @@
 - The cubic comparison for primes at least \(31\).
 - The drop inequalities, including the shortness of radical \(105\) and of \(315\).
 - The degree-four lower bounds on the above-side towers, each above \(82/105\).
-- All twenty-seven inert comparisons for partners \(13\) through \(39\), and the scaled tail at partner \(40\), which lies above \(3/4\) and below \(82/105\).
+- All twenty-seven inert comparisons for partners \(13\) through \(39\). Each degree-four argument, including \(\gamma=2(q+1)/(7q)\), is strictly less than \(5\). The scaled tail at partner \(40\) lies above \(3/4\) and below \(82/105\).
+- The degree-four corners at the ratios \(80/87\), \(20/87\) and \(80/261\). They are recomputed and are not a kick window: three times a short prime is short, and a split full-order tower does not occur.
 - The defect comparison \(D(2\cdot10^{26})<857840479/16733546028\), and the majorant exceeding \(1\) at \(10^{78}\).
 
 `receipt.json` records the windows and the SHA-256 hashes of the certificate sources.

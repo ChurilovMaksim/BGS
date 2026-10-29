@@ -13,10 +13,11 @@
   "order_agreement_through": 500,
   "kernel_primes_through": 80,
   "sources_sha256": {
-    "python": "1f8978c7bbecae681d8c9f589d35f94e0052bd0214afc6033ee1714c8683b7c4",
-    "cpp": "10f7ba7f62113dc7486c03f16634d9f2259319acda2a10371745b9c25603073d",
+    "python": "a6e753c07015591a1645291b1cf8a3309cec34bbad8263a0a63bfda744511413",
+    "cpp": "c7cd3449d790ef147d9d41abcf29a943463e156477fddea3736146eadfd4d49f",
     "lean": "6a1337d434850947d49c51ac97c8b060d50a142e56ec646754e1a9cecd7d121e",
-    "proof": "86b5b139320fa4047d7be32917c14fddb60401efc9a4cc35dfb5c0029e21e129"
+    "proof": "d45a13ac52321d3a0495c49489e7770bb24a7019ee86f802a534b65e173f22b2"
   },
-  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a density, a two-prime modulus, the signed off-diagonal sum, the limit, or the kicked statistic at u_207. The prime and kernel censuses are finite checks."
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a density, a two-prime modulus, the signed off-diagonal sum, the limit, or the kicked statistic at u_207. The prime and kernel censuses are finite checks.",
+  "half_order_scan_through": 1000000
 }

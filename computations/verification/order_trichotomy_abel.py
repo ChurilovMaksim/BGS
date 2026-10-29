@@ -3,9 +3,9 @@
 
 Recomputes the exponential bounds, the cleared Abel comparisons, the
 10^25 kick window, the Pell induction through u_207, the order witnesses,
-the prime-power kernel law, and the trichotomy for every odd prime
-through 500. No floating comparison is used. A pass does not prove
-BGS-TRACE-005.
+the prime-power kernel law, the trichotomy for every odd prime through
+500, and the half-order congruences for every odd prime through 10^6.
+No floating comparison is used. A pass does not prove BGS-TRACE-005.
 """
 from __future__ import annotations
 
@@ -224,8 +224,15 @@ def check_primes() -> None:
         eps = legendre(p)
         modulus = p - eps
         require(modulus % t == 0, f"divisibility {p}")
-        if t == modulus or (eps == -1 and t * 2 == p + 1):
+        require(2 * t != p + 1, f"vacuous half {p}")
+        if eps == 1:
+            require(((p - 1) // 2) % t == 0, f"split divisor {p}")
+            require(t != p - 1, f"vacuous split full {p}")
+        else:
+            require(((p + 1) // t) % 2 == 1, f"inert cofactor {p}")
+        if t == modulus:
             kind = "long"
+            require(eps == -1, f"long split {p}")
         elif eps == 1 and t * 2 == p - 1:
             kind = "half"
             seen_half.append(p)
@@ -236,8 +243,75 @@ def check_primes() -> None:
         if kind == "short" and p >= 5:
             require(12 * t <= 5 * p, f"short inequality {p}")
         if kind == "long":
-            require(2 * t >= p + 1, f"long inequality {p}")
+            require(t == p + 1, f"long inequality {p}")
     require(seen_half[0] == 7 and all(p >= 17 for p in seen_half[1:]), "half range")
+
+
+def sieve(limit: int) -> list[int]:
+    mark = bytearray(b"\x01") * (limit + 1)
+    mark[0] = mark[1] = 0
+    p = 2
+    while p * p <= limit:
+        if mark[p]:
+            start = p * p
+            mark[start : limit + 1 : p] = b"\x00" * (((limit - start) // p) + 1)
+        p += 1
+    return [n for n in range(3, limit + 1, 2) if mark[n]]
+
+
+def order_of_lambda(p: int, eps: int) -> int:
+    modulus = (p - 1) // 2 if eps == 1 else p + 1
+    t = modulus
+    n = modulus
+    d = 2
+    while d * d <= n:
+        if n % d == 0:
+            while t % d == 0:
+                u, v = lam_pow(t // d, p)
+                if u == 1 and v == 0:
+                    t //= d
+                else:
+                    break
+            while n % d == 0:
+                n //= d
+        d += 1 if d == 2 else 2
+    if n > 1:
+        while t % n == 0:
+            u, v = lam_pow(t // n, p)
+            if u == 1 and v == 0:
+                t //= n
+            else:
+                break
+    return t
+
+
+def check_half_order(limit: int = 10**6) -> None:
+    for p in sieve(limit):
+        eps = legendre(p)
+        if eps == 1:
+            u, v = lam_pow((p - 1) // 2, p)
+            require(u == 1 and v == 0, f"split congruence {p}")
+        else:
+            u, v = lam_pow((p + 1) // 2, p)
+            require(u == p - 1 and v == 0, f"inert congruence {p}")
+        t = order_of_lambda(p, eps)
+        if p <= 500:
+            require(t == matrix_order(p), f"order agreement {p}")
+        require(2 * t != p + 1, f"half order {p}")
+        if eps == 1:
+            require(((p - 1) // 2) % t == 0, f"split scan {p}")
+            require(t != p - 1, f"split full scan {p}")
+        else:
+            require(((p + 1) // t) % 2 == 1, f"cofactor scan {p}")
+            require(t % 2 == 0, f"inert parity {p}")
+        if p >= 5 and 3 * t <= p - eps:
+            if t % 4 == 0:
+                order_3q = t
+            elif t % 2 == 0:
+                order_3q = 2 * t
+            else:
+                order_3q = 4 * t
+            require(12 * order_3q <= 15 * p, f"three-short {p}")
 
 
 def check_kernels() -> None:
@@ -267,6 +341,7 @@ def main() -> None:
     check_witnesses()
     check_pell()
     check_primes()
+    check_half_order()
     check_kernels()
     print("order-trichotomy-abel: pass")
 

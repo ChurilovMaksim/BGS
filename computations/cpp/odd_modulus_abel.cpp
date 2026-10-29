@@ -524,7 +524,7 @@ Rat inert_subsum(int q) {
     auto qq = static_cast<std::uint64_t>(q);
     Rat alpha = Rat::frac(6 * (qq + 1), 7 * qq);
     Rat gamma = Rat::frac(2 * (qq + 1), 7 * qq);
-    require(alpha < Rat::from_u64(5) && (gamma / Rat::from_u64(qq)) < Rat::from_u64(5), "inert domain");
+    require(alpha < Rat::from_u64(5) && gamma < Rat::from_u64(5), "inert domain");
     Rat top = Rat::frac(48, 49) * rl(alpha) + Rat::frac(1, 49) * rl(gamma);
     Rat low = Rat::frac(48, 49) * rl(alpha / Rat::from_u64(qq)) +
               Rat::frac(1, 49) * rl(gamma / Rat::from_u64(qq));

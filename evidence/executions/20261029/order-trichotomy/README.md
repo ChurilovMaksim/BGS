@@ -11,6 +11,7 @@
 - The witnesses \(t(7)=3\), \(t(13)=14\) with depth \(2\), and \(t(31)=15\) with depth \(2\).
 - The Pell induction through \(u_{207}\) and its \(79\) digits.
 - The order trichotomy for every odd prime through \(500\), and the kernel formula for every odd prime \(p\le80\) at modulus \(p^k\), \(k\le3\), whenever the modulus is at most \(1000\).
+- The half-order congruences for every odd prime through \(10^6\): \(C^{(p-1)/2}\equiv I\) when \(p\) splits, and \(C^{(p+1)/2}\equiv -I\) when \(p\) is inert. On the same range the order satisfies \(t\neq(p+1)/2\), a split order divides \((p-1)/2\), an inert cofactor is odd, and every short prime \(q\) satisfies \(12\operatorname{lcm}(4,t(q))\le15q\). Through \(500\) that order agrees with the order read by multiplying \(C\).
 
 `receipt.json` records those windows and SHA-256 hashes of the certificate sources.
 

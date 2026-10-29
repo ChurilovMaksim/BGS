@@ -289,7 +289,7 @@ def check_lower_bounds() -> None:
 def inert_subsum(q: int) -> Fraction:
     alpha = Fraction(6 * (q + 1), 7 * q)
     gamma = Fraction(2 * (q + 1), 7 * q)
-    require(alpha < 5 and gamma / q < 5, f"inert domain {q}")
+    require(alpha < 5 and gamma < 5, f"inert domain {q}")
     top = Fraction(48, 49) * rl(alpha) + Fraction(1, 49) * rl(gamma)
     low = Fraction(48, 49) * rl(alpha / q) + Fraction(1, 49) * rl(gamma / q)
     return (1 - Fraction(1, q * q)) * top + Fraction(1, q * q) * low

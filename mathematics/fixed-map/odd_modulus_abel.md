@@ -3,7 +3,7 @@
 **Claim ID:** `BGS-TRACE-124`.
 **Status:** project proof. The rational comparisons are typechecked in Lean 4.33.1 and recomputed in independent Python and C++ integer arithmetic. No external referee.
 
-The argument depends on `BGS-TRACE-120` for the short-order theorem, the return lower bound \(L_N(M_N;1)\ge R(2t(N)/N)\), the comparisons \(5/7<3/4\) and \(5/7<(3-e^{-2})/4\), and the kick-difference estimate. It depends on `BGS-TRACE-121` for the splitting law, the kernel formula, the values \(\delta(3)=\delta(5)=\delta(7)=1\) and \(\delta(13)=2\), and the two comparisons \(L_7(M_7;1)-13/420>3/4\) and \(7238798455/8237425794-13/420>3/4\). It depends on `BGS-TRACE-122` for the Chinese product, the semiprime dichotomy, and the case division of the ceiling. It depends on `BGS-TRACE-123` for every square-free product of at least three primes, including the unique non-short product \(N=195\), and for the kick on \(N=15r\) through \(10^{26}\).
+The argument depends on `BGS-TRACE-120` for the short-order theorem, the return lower bound \(L_N(M_N;1)\ge R(2t(N)/N)\), the comparisons \(5/7<3/4\) and \(5/7<(3-e^{-2})/4\), and the kick-difference estimate. It depends on `BGS-TRACE-121` for Theorems 1 and 2, which place every odd prime and every odd prime power, for the half-order lemma, for the splitting law, the kernel formula, the values \(\delta(3)=\delta(5)=\delta(7)=1\) and \(\delta(13)=2\), and the two comparisons \(L_7(M_7;1)-13/420>3/4\) and \(7238798455/8237425794-13/420>3/4\). It depends on `BGS-TRACE-122` for the Chinese product, the semiprime dichotomy, the emptiness of a non-short product of \(3\) with a short prime, and the case division of the ceiling. It depends on `BGS-TRACE-123` for every square-free product of at least three primes, including the unique product \(N=195\) that fails \(12t\le5N\), and for the kick on square-free \(N=15r\) through \(10^{26}\).
 
 `BGS-TRACE-005` and `BGS-BGS-001` remain **open**.
 
@@ -18,11 +18,22 @@ Keep the notation of `BGS-TRACE-120`. In particular \(N\ge3\) is odd, \(t(N)\) i
 
 The modulus \(315=3^2\cdot5\cdot7\) is in the first case. Its radical is \(105\), which is short, so \(315\) is short by the comparison in Section 2. No separate expansion at \(315\) is required.
 
+**Assembly of Theorem 1.** Let \(N\ge3\) be odd.
+
+1. If \(N\) is a prime power, Theorems 1 and 2 of `BGS-TRACE-121` give the dichotomy. This includes every non-square-free prime power, whether or not its prime radical is short.
+2. If \(N\) is a product of two distinct odd primes, Theorem 3 of `BGS-TRACE-122` gives the dichotomy. A split partner of order \(q-1\) does not occur, and a non-short product of \(3\) with a short prime does not occur.
+3. If \(N\) is square-free and has at least three distinct odd prime factors, Theorem 1 of `BGS-TRACE-123` gives \(L_N(M_N;1)>3/4\).
+4. Otherwise \(N\) is not square-free and not a prime power. Sections 2--7 place it. If the radical is short, Section 2 gives \(L_N(M_N;1)>3/4\). If the radical fails \(12\,t\le5N\), then it is a non-short semiprime or \(195\): a non-preserving power is short by Section 3, a ratio-preserving ceiling tower lies below \(5/7\) by Sections 5 and 6, and a ratio-preserving tower on the other side lies above \(3/4\) by Section 7.
+
+A non-short prime radical is a prime power and is case 1. It is not left to the sentence that begins Section 3.
+
 **Theorem 2 (fixed kick, partial).** Let \(\tau=10^{-80}\) and \(B=184981/160000\).
 
-- If \(8\,t(N)\le3N\) and \(N\le10^{39}\), then \(L_N(U_N;1)>3/4\). In particular this holds for \(N=315\).
-- If \(N\le10^{26}\) and \(N\) belongs to one of the ratio-preserving families in Section 7 whose pure margin exceeds \(13/420\), then \(L_N(U_N;1)>3/4\).
-- If \(N=15r\) with \(r\) an odd prime other than \(5\) and \(N\le2\cdot10^{26}\), then \(L_N(U_N;1)>3/4\). The range \(N\le10^{26}\) is `BGS-TRACE-123`. The range \(10^{26}<N\le2\cdot10^{26}\) is Section 8.
+- If \(8\,t(N)\le3N\) and \(N\le10^{39}\), then \(L_N(U_N;1)>3/4\). In particular this holds for \(N=315\), and for \(N=45\).
+- If \(N\le10^{26}\) and \(N\) is one of \(3\cdot7^a\) with \(a\ge2\), an inert full-order tower \(7^aq^b\) with \(a\ge2\), an inert tower \(7q^b\) with the exponent of \(7\) equal to \(1\) and \(13\le q\le39\), or \(3\cdot5^b\cdot13\) with \(b\ge2\), then \(L_N(U_N;1)>3/4\). Each of these is ratio-preserving and the pure margin exceeds \(13/420\).
+- If \(N=15r\) with \(r\) an odd prime, \(r\ge7\), and \(N\le2\cdot10^{26}\), then \(L_N(U_N;1)>3/4\). The range \(N\le10^{26}\) is `BGS-TRACE-123`. The range \(10^{26}<N\le2\cdot10^{26}\) is Section 8.
+
+A split full-order tower does not occur. A non-short product of \(3\) with a short prime does not occur. Neither is a kick window. The value \(r=3\) gives \(N=45=3^2\cdot5\), which is not square-free. Here \(\delta(3)=1\), so \(t(9)=t(3)\cdot3=12\), and \(t(5)=6\), hence \(t(45)=\operatorname{lcm}(12,6)=12\). Then \(8\cdot12=96\le135=3\cdot45\), and the first bullet applies. The value \(r=5\) gives \(N=75=3\cdot5^2\), a ratio-preserving tower over the ceiling semiprime \(15\); the kick is not claimed on a ceiling tower.
 
 **Boundary.** The kick is not claimed for a ratio-preserving tower over a ceiling semiprime. At \(3\cdot23\) the tower majorant of Section 5 leaves a gap \(575/22594\) below \(5/7\), and \(575/22594<13/420\), so that majorant does not absorb the defect. The kick is not claimed for an inert full-order tower \(7q^b\) with the exponent of \(7\) equal to \(1\) and \(q\ge40\). The comparison which proves \(L>3/4\) on that tail lies below \(82/105\). The kick is not claimed for \(N=15r>2\cdot10^{26}\). The same defect majorant exceeds \(1\) at every integer of \(79\) digits, and `BGS-TRACE-119` already shows that no nonnegative remainder about the pure second-order center proves the gap at \(u_{207}\). No density is proved. The signed off-diagonal sum, the limit, and every \(k>2\) stay open. A value above \(3/4\) lies at distance greater than \(1/2\) from the CUE value, on the side away from \((1-e^{-2})/4\).
 
@@ -48,7 +59,7 @@ In particular \(M=105=3\cdot5\cdot7\) has \(t(105)=\operatorname{lcm}(4,6,3)=12\
 
 ## 3. A non-preserving power is short
 
-It remains to treat a non-square-free \(N\) whose radical is non-short. The radical is then either a non-short semiprime or \(195\).
+Inside case 4 of the assembly, consider a non-square-free \(N\) that is not a prime power and whose radical \(M\) fails \(12\,t(M)\le5M\). Then \(M\) is square-free and has at least two distinct prime factors. By `BGS-TRACE-122` and `BGS-TRACE-123`, the only such moduli are a non-short semiprime and \(195\).
 
 **Lemma (drop).** In either case a non-preserving power satisfies \(12\,t(N)\le5N\), so Theorem 1 of `BGS-TRACE-120` gives \(L_N(M_N;1)>3/4\).
 
@@ -198,17 +209,11 @@ The kick is not transferred on any ceiling tower.
 
 ## 7. Towers on the side above \(3/4\)
 
-The remaining ratio-preserving towers lie over a non-short multiple of \(7\), over a non-short product of \(3\) with a short prime, or in the family \(3\cdot5^b\cdot13\). A non-preserving power in any of these families is already short by Section 3. No such short prime is asserted to exist; the three-times-short statements stay conditional, as in `BGS-TRACE-122`.
+The remaining ratio-preserving towers lie over a non-short multiple of \(7\), or in the family \(3\cdot5^b\cdot13\). A non-preserving power in either family is already short by Section 3. A split full-order partner does not occur. A product of \(3\) with a short prime is short by Section 7 of `BGS-TRACE-122`, so it is not a tower over a non-short radical.
 
 ### Split full order
 
-Let \(q\not=7\), \(t(q)=q-1\) and \(3\nmid(q-1)\), and let \(N=7^aq^b\) be ratio-preserving. Keep the times at which the full \(q\)-kernel and the top two \(7\)-levels occur. The resulting disjoint subsum is
-
-\[
-\frac{48}{49}R(\alpha)+\frac1{49}R(\alpha/7)
-\]
-
-when \(a\ge2\), with \(\alpha=6(q-1)/(7q)\). Both arguments are strictly smaller than \(6/7\) and \(6/49\), so the subsum is strictly larger than the seven-power expression of `BGS-TRACE-121`. When \(a=1\) the same selection, now using the square-free weight at \(7\), is the subsum \((48/49)R(\alpha)+(1/49)R(\gamma)\) of `BGS-TRACE-122`, with \(\gamma=2(q-1)/(7q)\), and it is strictly larger than \(L_7(M_7;1)\). In both sub-cases the pure value exceeds \(3/4\). For \(N\le10^{26}\) the two cited comparisons with \(13/420\) give \(L_N(U_N;1)>3/4\).
+The hypothesis \(t(q)=q-1\) with \(q\) split contradicts the half-order lemma of `BGS-TRACE-121`: a split order divides \((q-1)/2\). The tower is empty. It is not a kick window, and the subsum previously written for it is not used.
 
 ### The tower over \(21\)
 
@@ -253,21 +258,9 @@ For \(q\ge40\) the same subsum is strictly larger than \((1-q^{-2})\) times the 
 
 ### Three times a short prime
 
-Let \(q\ge29\) be short, with \(t(q)\) odd and \(12\,t(3q)>5\cdot3q\), as in Section 7 of `BGS-TRACE-122`. Then \(T=4t(q)\) and the corner bounds \(\alpha\le80/87\), \(\gamma\le20/87\) remain in force. If the exponent of \(q\) is arbitrary and the exponent of \(3\) is \(1\), the top \(q\)-level has \(q\)-weight \(1\), and the disjoint \(3\)-weight gives
+Section 7 of `BGS-TRACE-122` proves that if \(q\ge5\) is short and \(T=\operatorname{lcm}(4,t(q))\), then \(12T\le15q\). The three cases are the ones used there. If \(4\) divides \(t(q)\), then \(T=t(q)\) and \(12T\le4(q+1)\le15q\). If \(t(q)\equiv2\pmod4\), then \(T=2t(q)\) and \(12T=24t(q)\le8(q+1)\le15q\). If \(t(q)\) is odd, the half-order lemma forces \(q\) to be split and \(t(q)\le(q-1)/6\le(q+1)/4\), so \(T=4t(q)\) and \(48t(q)\le12(q+1)\le15q\). Thus \(3q\) is short, and so is every higher power, by Section 2. The conditional non-short family is empty. No short prime is asserted to exist.
 
-\[
-\frac89R(\alpha)+\frac19R(\gamma)
-\ge\frac89R\Bigl(\frac{80}{87}\Bigr)+\frac19R\Bigl(\frac{20}{87}\Bigr).
-\]
-
-The degree-four value \(114226176533733/112075008606140\) exceeds \(82/105\). If instead the exponent of \(3\) is at least \(2\), preservation requires that \(3\) does not divide \(t(q)\). The top two \(3\)-levels give
-
-\[
-\frac89R(\alpha)+\frac19R(\alpha/3)
-\ge\frac89R\Bigl(\frac{80}{87}\Bigr)+\frac19R\Bigl(\frac{80}{261}\Bigr),
-\]
-
-and the degree-four value \(2228970493853307/2479202684534320\) exceeds \(82/105\). If \(3\) divides \(t(q)\), or if \(\delta(q)\ge2\), the power is non-preserving and Section 3 applies. Whenever the pure margin above is the one in use and \(N\le10^{26}\), the kicked gap follows. No such prime \(q\) is asserted to exist.
+Both programs still recompute the unused degree-four values \(114226176533733/112075008606140\) and \(2228970493853307/2479202684534320\). Those comparisons are not a kick window.
 
 ### Powers of \(195\)
 
@@ -283,7 +276,7 @@ Both arguments are strictly less than \(5\). The degree-four value \(50134551873
 
 The windows of Theorem 2 that come from a pure margin of \(13/420\), or from strong shortness, have already been named. Two further questions were left open by `BGS-TRACE-123`.
 
-Let \(N=15r\) with \(r\) an odd prime, \(r\not=5\), and \(10^{26}<N\le2\cdot10^{26}\). Section 6 of `BGS-TRACE-123` gives \(t(N)\le6(r+1)\), hence
+Let \(N=15r\) with \(r\ge7\) an odd prime and \(10^{26}<N\le2\cdot10^{26}\). Then \(N\) is square-free. Section 6 of `BGS-TRACE-123` gives \(t(N)\le6(r+1)\), hence
 
 \[
 \frac{2t(N)}{N}\le\frac{4(r+1)}{5r}=\frac45+\frac{4}{5r}.
@@ -323,7 +316,7 @@ The ceiling majorant is an upper bound, not a kick. The inert family with expone
 
 ## 10. Certificates
 
-The Python and C++ programs recompute the fourteen orders, the five products of \(23\) with a prime below \(50\), the five explicit majorants, the tail identities and their second differences, the cubic at primes at least \(31\), the drop inequalities, the degree-four lower bounds, the twenty-seven inert comparisons, and the defect endpoint at \(2\cdot10^{26}\). The Lean file certifies the closed integer comparisons, including the displayed fraction at inert partner \(13\). The other twenty-six inert rows are recomputed by both integer programs and are not repeated in Lean. Lean does not formalize the kernel expansion, the quadrant comparison, or the kick telescoping. The analytic comparisons themselves were checked by the author and were not given an independent referee.
+The Python and C++ programs recompute the fourteen orders, the five products of \(23\) with a prime below \(50\), the five explicit majorants, the tail identities and their second differences, the cubic at primes at least \(31\), the drop inequalities, the degree-four lower bounds, the twenty-seven inert comparisons, and the defect endpoint at \(2\cdot10^{26}\). The inert-domain check requires each degree-four argument to be strictly less than \(5\), including \(\gamma\) itself. The three-times-short corners and the former split full-order subsum are not kick windows: those families are empty. The Lean file certifies the closed integer comparisons, including the displayed fraction at inert partner \(13\). The other twenty-six inert rows are recomputed by both integer programs and are not repeated in Lean. Lean does not formalize the kernel expansion, the quadrant comparison, or the kick telescoping. The analytic comparisons themselves were checked by the author and were not given an independent referee.
 
 - `computations/verification/odd_modulus_abel.py`
 - `computations/cpp/odd_modulus_abel.cpp`
