@@ -1,5 +1,7 @@
 set_option maxRecDepth 100000
 
+namespace Bgs.KickBlindRational
+
 /-!
 # Rational witness for BGS-TRACE-117
 
@@ -63,3 +65,4 @@ theorem kickBlind_n5_rho : xDen5 > 6 * xNum5 := by
 theorem kickBlind_n5 : 124 * (xDen5 - 6 * xNum5) ^ 2 >
     123 * (xDen5 - xNum5) ^ 2 := by
   decide
+end Bgs.KickBlindRational

@@ -1,6 +1,8 @@
 set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 
+namespace Bgs.PhaseFormFactorRational
+
 /-!
 # Rational witness for BGS-TRACE-126
 
@@ -262,3 +264,4 @@ theorem phase_revival_7 : 3 * (66033 - 81 * 800) * 49 = 181251 := by
 
 theorem phase_scalar_7 : scalar7 = true := by
   decide
+end Bgs.PhaseFormFactorRational

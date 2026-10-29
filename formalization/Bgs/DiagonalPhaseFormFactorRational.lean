@@ -1,6 +1,8 @@
 set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 
+namespace Bgs.DiagonalPhaseFormFactorRational
+
 /-!
 # Rational witness for BGS-TRACE-127
 
@@ -83,3 +85,4 @@ theorem kernelCount3_7 : kernelCount3 7 = 49 := by decide
 theorem kernelCount3_9 : kernelCount3 9 = 1 := by decide
 theorem kernelCount3_21 : kernelCount3 21 = 49 := by decide
 theorem kernelCount3_49 : kernelCount3 49 = 49 := by decide
+end Bgs.DiagonalPhaseFormFactorRational

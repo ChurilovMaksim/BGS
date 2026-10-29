@@ -2,6 +2,8 @@ set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 set_option exponentiation.threshold 4096
 
+namespace Bgs.UniformOrbitOverlapRational
+
 /-!
 # Rational witness for BGS-TRACE-125
 
@@ -165,3 +167,4 @@ theorem overlap_scan : middleScan = true := by
 theorem overlap_mass :
     (sigmaNum + 2 * (-56)) * 4000000 = (1650797 : Int) * 4000 * 4000 := by
   decide
+end Bgs.UniformOrbitOverlapRational

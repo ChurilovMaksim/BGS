@@ -2,6 +2,8 @@ set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 set_option exponentiation.threshold 4096
 
+namespace Bgs.CrtCompositeRational
+
 /-!
 # Rational witness for BGS-TRACE-122
 
@@ -134,3 +136,4 @@ theorem crt_defect_endpoint :
       < 26 * ((10 : Nat) ^ 26 - 2)
           * (160000 * (10 : Nat) ^ 80 - 184981 * (10 : Nat) ^ 26) := by
   decide
+end Bgs.CrtCompositeRational

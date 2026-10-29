@@ -2,6 +2,8 @@ set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 set_option exponentiation.threshold 4096
 
+namespace Bgs.OrderLadderRational
+
 /-!
 # Rational witness for BGS-TRACE-120
 
@@ -53,3 +55,4 @@ theorem order_ladder_long_window :
     184981 * (10 : Nat) ^ 104 * 420
       < 26 * ((10 : Nat) ^ 26 - 2) * (160000 * (10 : Nat) ^ 80 - 184981 * (10 : Nat) ^ 26) := by
   decide
+end Bgs.OrderLadderRational

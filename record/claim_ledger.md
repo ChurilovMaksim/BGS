@@ -1,5 +1,9 @@
 # Claim ledger
 
+## Lean aggregate import hygiene, 29 October 2026
+
+Referee re-audit (stack #48–#50): combined `lake build Bgs` failed because rational witness modules exported duplicate top-level names (`rNum`, `quadCount`, `iter`, and related symbols). Each affected file under `formalization/Bgs/` is wrapped in `namespace Bgs.<ModuleName> … end`. No theorem statements or proofs were changed. Receipt: [evidence/formalization/bgs_aggregate_20261029/README.md](../evidence/formalization/bgs_aggregate_20261029/README.md). Fast rebuild: `lake exe cache get` then `lake build Bgs`.
+
 ## Self-red-team, 29 October 2026
 
 BGS-TRACE-127. The sentence that \(DM_N\) lies in the orthogonal class because it is similar to \(D^{1/2}M_ND^{1/2}\) is withdrawn. Every unitary is similar to a diagonal matrix, so that similarity assigns no class. The time-reversal that is proved is the local antiunitary \(\Theta=DK_0\), with \(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). The orthogonal-class name is the heuristic attached to that antiunitary, as in Tanner, Journal of Physics A 34 (2001), Section IV.1, and is not a COE form factor. The Tanner locator is Section II.2, not equation (2). The symmetric conjugate is written \(\Sigma_D\). The counting identities are unchanged.
