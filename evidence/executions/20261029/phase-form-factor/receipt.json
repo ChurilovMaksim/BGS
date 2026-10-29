@@ -1,0 +1,24 @@
+{
+  "schema": "bgs-phase-form-factor-v1",
+  "claim": "BGS-TRACE-126",
+  "ensemble": "16 independent uniform phases, one per nonzero mode pair",
+  "energy": "66033/160000",
+  "majorant": "184981/160000",
+  "parity_defect_for_odd_N_at_least_19": "663/1000000",
+  "reversal_defect_for_odd_N_at_least_79": "66031/80000",
+  "only_odd_dimension_where_both_symmetries_survive": 7,
+  "cyclotomic_witness": "N=11,m=3",
+  "prime_revival_example": {
+    "N": 41,
+    "order": 5,
+    "D2": "-111001473/32000"
+  },
+  "floating_point_trace_closure": "absolute error below 1e-8 on the odd dimensions 3,5,7,9,11,15,21,25,27,35 and powers 1..6 in Python; C++ checks 5,7,9,11,15 and powers 1..4",
+  "sources_sha256": {
+    "python": "64d8669caa319741d849edc6f093b10d71cf805a335a2cd6ffaef0502555c7e1",
+    "cpp": "5017711d8350323582d7e3a24140c51a095ed13a04af7087b09f3ba614349271",
+    "lean": "7d9a015823beb88f00c70943f48e0645c1fac7f72a4eb9c8654bb0c14586a2aa",
+    "proof": "ebe3f528ae2e83de20d9332829beeda7f7c389617f49224953637e5b7fe06003"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a revival limit, or the absence of every N-dependent antiunitary. The phase average is not the fixed kick."
+}

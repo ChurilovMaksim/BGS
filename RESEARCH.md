@@ -1,5 +1,9 @@
 # BGS research brief
 
+## Phase-averaged form factor, 29 October 2026
+
+[TRACE-126](mathematics/fixed-map/interaction_phase_form_factor.md) evaluates the squared trace after the 16 mode-pair phases of the kick are averaged. The result is \(|K_m|+\eta^2 D_2+\rho\), where \(D_2\) is a finite Gauss-sum coefficient of size at most \(2m^2\sigma|K_m|\) and the remainder is controlled by the operator norm of the kick. At an odd prime, with \(m\) the order of \(S\), the second-order coefficient is exactly \(-m\sigma N^2\). The fixed kick is not even in the coupling: its linear coefficient is nonzero at \(N=11\), \(m=3\). Parity and position-basis conjugation are symmetries of \(M_N\), and both survive for the kicked propagator only at dimension \(7\). A limit in which \(\tau^2 N^3\) tends to a positive constant, at times comparable to \(N\), lies outside the proved truncation. BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
+
 ## Kick-blind arithmetic spikes, 28 October 2026
 
 [TRACE-117](mathematics/fixed-map/kick_blind_arithmetic_spike.md) proves two statements for the maintained family. The pure cat map at \(N=u_n\), for every odd \(n\ge5\), has Abel value \(L_N(M_N;1)>3/4\). The fixed kick \(\tau=10^{-80}\) preserves \(L_N(U_N;1)>3/4\) for every odd \(n\) with \(5\le n\le201\). The distance to the CUE value \((1-e^{-2})/4\) is therefore greater than \(1/2\) on those dimensions, and no effective startup \(N_0\le u_{201}\) works for every larger odd dimension. The one-term lower bound drops to at most \(3/4\) at \(n=203\).

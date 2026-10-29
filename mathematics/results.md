@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Phase-averaged form factor, 29 October 2026
+
+[TRACE-126](fixed-map/interaction_phase_form_factor.md) is an average over independent phases on the 16 mode pairs of the kick. For every odd dimension and every power, the averaged squared trace equals \(|K_m|+\eta^2 D_2+\rho\), with \(D_2\) a Gauss-sum coefficient and with an explicit remainder. At an odd prime the second-order revival term is \(-m\sigma N^2\). The fixed kick has a linear term, nonzero at \(N=11\), \(m=3\). Parity and position conjugation survive for the kicked propagator only at dimension \(7\). The signed off-diagonal sum and any limit with \(\tau^2 N^3\) tending to a positive constant remain open. BGS-TRACE-005 stays open.
+
 ## Kick-blind arithmetic spikes, 28 October 2026
 
 [TRACE-117](fixed-map/kick_blind_arithmetic_spike.md) keeps the pure cat-map Abel statistic a distance greater than \(1/2\) from the CUE value at every \(N=u_n\) with \(n\) odd and at least \(5\). The same gap survives the fixed kick on the 99 odd indices from \(5\) through \(201\), including the 77-digit dimension \(u_{201}\). The rational comparisons are a Lean `decide` witness plus independent Python and C++ integer checks. The one-term estimate is inconclusive at \(n=203\).
@@ -445,7 +449,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**209 registered claims: 183 proved, 12 verification-pending, 9 conditional, 5 open.**
+**210 registered claims: 184 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -611,7 +615,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (100 claims)
+### TRACE family (101 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -715,5 +719,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-121` | **PROVED** | Cat-map order trichotomy for primes and prime powers |
 | `BGS-TRACE-122` | **PROVED** | Chinese product for the cat-map trace square |
 | `BGS-TRACE-123` | **PROVED** | Square-free products of at least three primes lie above 3/4 |
+| `BGS-TRACE-126` | **PROVED** | Phase-averaged form factor and classical symmetry defects of the kicked cat map |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

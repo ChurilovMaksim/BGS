@@ -1,5 +1,9 @@
 # Scientific changelog
 
+## 2026-10-29 — Phase-averaged form factor
+
+Register BGS-TRACE-126. For the auxiliary ensemble in which the 16 mode pairs of the kick carry independent uniform phases, the averaged squared trace equals \(|K_m|+\eta^2 D_2+\rho\), with \(D_2\) an explicit Gauss-sum coefficient and with an operator-norm remainder. At an odd prime the second-order revival coefficient is \(-m\sigma N^2\). The fixed kick has a linear term, nonzero at \(N=11\), \(m=3\). Parity and position-basis conjugation survive for the kicked propagator only at dimension \(7\). No revival limit is proved. The dependency on BGS-TRACE-117 is the phase-free conjugation only. Python, C++ and a Lean rational witness certify the symbol arithmetic. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+
 ## 2026-10-29 — Square-free products of at least three primes
 
 Register BGS-TRACE-123. Every square-free odd modulus with at least three distinct prime factors satisfies \(L_N(M_N;1)>3/4\), at distance greater than \(1/2\) from the CUE value. The fixed kick \(\tau=10^{-80}\) preserves that gap through \(10^{39}\) when there are at least four prime factors, and when the modulus is a product of three primes not divisible by \(15\). On \(N=15r\) the kick is preserved only through \(10^{26}\); above that window the pure sum remains above \(3/4\) and the kick is not claimed. The modulus \(N=195\) is not short, and the bound there is the eight-term subset expansion. A prime square is not covered; \(315=3^2\cdot5\cdot7\) is an example with no bound. Semiprimes remain the dichotomy of BGS-TRACE-122. Python, C++ and a Lean rational witness certify the integers. No density is proved. The kick at \(u_{207}\) remains unresolved. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
