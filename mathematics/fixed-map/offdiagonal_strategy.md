@@ -2,7 +2,7 @@
 
 **Status:** strategy, 29 October 2026. This note is not a theorem and has no claim ID. It does not close `BGS-TRACE-005` or `BGS-BGS-001`. Section 6 records an external reconnaissance. That section is a lead list. No constant, window, or mechanism in it has been re-derived here, and none of it is a registered claim.
 
-The diagonal Abel classification for every odd modulus is `BGS-TRACE-124`. Further case splits on the order of \(C\) do not estimate the signed sum that `BGS-TRACE-005` asks for. This note records which uniform methods were examined, which identity is proved in [the uniform overlap law](uniform_orbit_overlap.md), and which structural question is the next route.
+The diagonal Abel classification for every odd modulus is `BGS-TRACE-124`. Further case splits on the order of \(C\) do not estimate the signed sum that `BGS-TRACE-005` asks for. This note records which uniform methods were examined, which identity is proved in [the uniform overlap law](uniform_orbit_overlap.md), and how the open routes rank. Priority 1 is a correct proved statement about the spectrum of this \(U_N\). Priority 2, kept in parallel in Section 7, is a generalization whose method transfers. Section 7 ranks both by significance and by realistic provability.
 
 ## 1. The target
 
@@ -44,7 +44,7 @@ The identity fixes \(f''(0)\). It does not fix \(f(1)\). The third-derivative ma
 
 ## 5. What remains open
 
-A bound that separates \(L_N(U_N;1)\) from the CUE value, in one of the three senses of Section 2, would refute `BGS-BGS-001` for this map. No such bound is proved. A limit of the signed statistic to the CUE value would be `BGS-TRACE-005` in the pair case. No such limit is proved. The remainder past \(f''(0)\), and any other expression for \(\operatorname{Tr}U_N^m\) at times of order \(N\), stay open. They are not the next route. Section 6 explains why a sharper diagonal dichotomy is also not the next route.
+A bound that separates \(L_N(U_N;1)\) from the CUE value, in one of the three senses of Section 2, would refute `BGS-BGS-001` for this map. No such bound is proved. A limit of the signed statistic to the CUE value would be `BGS-TRACE-005` in the pair case. No such limit is proved. The remainder past \(f''(0)\), and any other expression for \(\operatorname{Tr}U_N^m\) at times of order \(N\), stay open. They are the missing step of Priority 1, and Section 7 records that this step is not within reach of the methods now proved. A sharper diagonal dichotomy is not that step.
 
 Prime squares are placed by `BGS-TRACE-124`. The modulus \(315=3^2\cdot5\cdot7\) is short because its radical \(105\) is short. Density of the order classes is not the route either.
 
@@ -69,4 +69,38 @@ One distinction already follows from the proved Abel bounds and does not need th
 
 **Reading list, not a dependency.** Kurlberg–Rudnick, arXiv:chao-dyn/9901031, and Keating–Mezzadri, Nonlinearity 13 (2000), 747–775, are already background in Section 2. The names Keating (1991), Kurlberg–Rudnick (2001), Kurlberg (2003), Roskam (2000 and 2002), and Boasman–Keating (1995) were not opened in this pass. They are not registered external lemmas. Exact locators belong in `literature/` before any of them is used in a proof.
 
-**Priority.** The next route is the symmetry-breaking reformulation: identify the part of the symbol that preserves parity and time reversal, prove or refute the commutation, and only then write a scaled-coupling statement whose hypotheses match that decomposition. A sharper pure-map gap, a depth-one series, and a longer kick expansion can be certified afterwards. They do not control the signed sum at times of order \(N\). No new claim ID is opened for any item in this section.
+The symmetry-breaking proposal is one route inside the ranking of Section 7. It is not a substitute for a theorem about this \(U_N\), and it is not yet a theorem. A sharper pure-map gap, a depth-one series, and a longer kick expansion remain uncertified proposals. They do not control the signed sum at times of order \(N\). No new claim ID is opened for any item in this section.
+
+## 7. Ranked routes
+
+Two axes are used. Significance means the distance from a correct statement about spectral statistics. Provability means what the methods already in this repository can realistically close under the quality gate: an exact numeric check, Lean where the statement is an integer comparison, an audit, and wording that stops at the proof. A route may rank high on one axis and low on the other. Nothing in this section is a new claim.
+
+The model of Priority 1 is fixed. \(S=\begin{pmatrix}3&4\\2&3\end{pmatrix}\), \(C=S^T\), \(\tau=10^{-80}\), and \(U_N=\exp(i\tau N A_N)M_N\). The symbol of \(A_N\) has 32 Fourier modes. `BGS-FM-001` already proves that the classical kicked map has trivial \(C^1\) centralizer and no \(C^1\) reversor for every flow time \(\kappa\) with \(0<\lvert\kappa\rvert\le10^{-12}\). Equation (4) of that note identifies the classical map of this \(U_N\) with that theorem at \(\kappa=\tau/(2\pi)\), and \(\lvert\tau/(2\pi)\rvert\le10^{-12}\). Its boundary excludes ordinary \(C^1\) reversors and does not exclude an \(N\)-dependent quantum symmetry. It does not prove `BGS-BGS-001`.
+
+### Priority 1: this \(U_N\)
+
+1. **The signed sum at times of order \(N\).** Significance is maximal: this is `BGS-TRACE-005` for the pair weight, and `BGS-BGS-001` needs it. Provability is not within reach. Sections 2 and 3 record the obstruction. Gauss sums and the Weil representation stop at \(M_N\). `BGS-FM-032` is an additive distance for odd primes \(p>99\). `BGS-TRACE-125` fixes \(f''(0)\) and does not fix \(f(1)\). No estimate in the corpus controls the noncommutative product out to time \(m\asymp N\).
+
+2. **An exact symmetry test for this 32-mode symbol.** Significance is high and is still about this \(U_N\). The question is whether the Fourier coefficients of the maintained symbol commute with a stated parity operator or satisfy a stated reversal identity. `BGS-FM-001` answers the classical \(C^1\) question for the full symbol and leaves the quantum question open. Provability of the finite test is realistic: the mode list is finite, the arithmetic can be rational, and Lean can decide the resulting integer identities. Provability of a Poisson, COE, two-block COE, or CUE limit from the outcome of that test is not within reach. A truncated kick, built by dropping modes, is a different operator. A theorem about that truncation is not a theorem about \(U_N\) until the dropped part is estimated.
+
+3. **The Abel scalar \(L_N(U_N;1)\).** Significance is real and limited. It is one number. A value near \((1-e^{-2})/4\) would not be a spacing law, and a value far from it would not identify the ensemble. The windows already proved are those of `BGS-TRACE-117` through `BGS-TRACE-124`. Further windows are realistic case work. They are not the strongest statement on this list. The second-derivative identity of `BGS-TRACE-125` rewrites, with \(\theta=\tau N\), as
+\[
+f''(0)=-\tau^2 N^3\, n\cdot\frac{1650797}{4000000}.
+\]
+The normalized coefficient is \(f''(0)/N=-\tau^2 N^2 n\cdot 1650797/4000000\). Both monomials are this identity. At the short-kick edge \(N=10^{39}\) one has \(\tau^2 N^3=10^{-43}\). The equation \(\tau^2 N^3=1\) is \(N^3=10^{160}\). These are exponent comparisons. They are not a crossover of \(L_N(U_N;1)\) and not a limit law.
+
+### Priority 2: generalizations whose method transfers
+
+These sit beside Priority 1. A generalization enters the registry only after the same quality gate. None is opened here.
+
+1. **Every hyperbolic matrix in \(\mathrm{SL}(2,\mathbb Z)\), for the pure propagator.** Significance is high. The trace-square formulae in `BGS-TRACE-120` are proved for this \(C\). A fixed-point interpretation of those squares was reported in Section 6 and is not a lemma here. The constants \(3/4\) and \(5/7\), the Pell overlaps, and the 32-mode kick use \(S\) and this symbol. Provability of a written separation is realistic. The work is to mark, lemma by lemma, which steps in `BGS-TRACE-120` through `BGS-TRACE-125` use only a splitting law in \(\mathbb F_p[x]/(x^2-\Delta)\) and which use \(\Delta=2\) or the mode list. That marking is not done in this note. `BGS-CAYLEY-010` already gives finite exact spectra for arbitrary hyperbolic matrices under its fixed-point-free hypothesis, and its boundary says that a later "work verbatim" transfer was not proved. The kicked operator for a general cat map is not within reach, because \(A_N\) is this symbol.
+
+2. **A quantitative symmetry-breaking parameter for a general trigonometric kick.** Significance is high for the ensemble question. Provability splits. For this 32-mode symbol the parameter is the finite test in Priority 1. For a general smooth or trigonometric kick, with an arbitrary Fourier support and an arbitrary size of the breaking part, the required symbol calculus is not in the proved corpus. That general theorem is not within reach.
+
+3. **A scaled-coupling limit.** Significance is high if the fixed \(\tau=10^{-80}\) never leaves a perturbative regime, because the registered statement would then be the wrong limit. Provability of the limit law is not within reach. The monomials \(\tau^2 N^3\) and \(\tau^2 N^2\) occur in the identity above. Sending either to infinity is a proposed limit, not a theorem, and it is not `BGS-BGS-001`. The strong-coupling experiments and the extrapolated scales in Section 6 stay uncertified.
+
+4. **A classification theorem: arithmetic order and pseudo-symmetries decide Poisson, COE, two COE blocks, or CUE.** Significance is maximal among the generalizations. Provability is not within reach. It is the open problem that `BGS-BGS-001` is one instance of. The names of the four ensembles can be recorded as the shape of a future statement. No implication from the order of \(S\), from a Hecke degeneracy, or from a pseudo-symmetry to one of those ensembles is a lemma of this repository. `BGS-FM-001` removes a classical \(C^1\) reversor and does not choose an ensemble.
+
+### What a later certificate can honestly close
+
+Within reach, and not done: the finite symmetry test for this symbol, and a line-by-line separation of the existing Abel proofs into the hyperbolic part and the discriminant-\(2\) part. Out of reach with the present method: `BGS-TRACE-005`, `BGS-BGS-001`, an ensemble classification, a general smooth-kick theorem, a scaled-coupling limit law, and every numerical bound reported in Section 6.

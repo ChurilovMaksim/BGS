@@ -1,5 +1,9 @@
 # Scientific changelog
 
+## 2026-10-29 — Strategy note ranks the concrete model and the generalizations
+
+Section 7 of `mathematics/fixed-map/offdiagonal_strategy.md` ranks open routes by significance and by realistic provability. Priority 1 is a correct statement about this \(U_N\). The signed sum at times of order \(N\) is the significant target and is not within reach. An exact symmetry test of the 32-mode symbol is the realistic concrete step; `BGS-FM-001` already excludes a classical \(C^1\) reversor and does not classify the quantum ensemble. Priority 2 records, without opening a claim, a pure-map statement for a general hyperbolic matrix in \(\mathrm{SL}(2,\mathbb Z)\), a general trigonometric kick, the monomials \(\tau^2 N^3\) and \(\tau^2 N^2\) already present in the second derivative of `BGS-TRACE-125`, and an ensemble classification. The classification and the scaled-coupling limit law are not within reach. No new claim ID.
+
 ## 2026-10-29 — Strategy note records an unverified reconnaissance
 
 Section 6 of `mathematics/fixed-map/offdiagonal_strategy.md` records an external reconnaissance as a lead list. No constant from that report is adopted. The half-order divisibility in the report is the lemma already proved in BGS-TRACE-121 and corrected by ERR-061; no maintained note on this branch still uses \(t=(p+1)/2\) as a nonempty class. The hypothesis \(2t\ge p+1\) in BGS-TRACE-120 remains a lower bound and, on an odd prime, is exactly the inert full order. The next route named in the note is a symmetry-breaking reformulation of the kicked model. No new claim ID is opened. BGS-TRACE-005 and BGS-BGS-001 remain open.
