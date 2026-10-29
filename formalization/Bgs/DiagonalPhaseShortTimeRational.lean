@@ -1,6 +1,8 @@
 set_option maxRecDepth 1000000
 set_option maxHeartbeats 0
 
+namespace Bgs.DiagonalPhaseShortTimeRational
+
 /-!
 # Rational witness for BGS-TRACE-128
 
@@ -104,3 +106,4 @@ theorem main5At7 : 2 * 5 * (7 * 6 * 5 * 4 * 3) = 25200 ∧ 7 ^ 5 = 16807 := by d
 theorem trivial3 : fact 3 + 3 ≤ fact 3 * (3 * 2 + 5) / 3 := by decide
 theorem trivial4 : fact 4 + 4 ≤ fact 4 * (4 * 3 + 5) / 3 := by decide
 theorem trivial5 : fact 5 + 5 ≤ fact 5 * (5 * 4 + 5) / 3 := by decide
+end Bgs.DiagonalPhaseShortTimeRational
