@@ -1,0 +1,183 @@
+=== fixes_check ===
+F1  Theorem 6 constants
+ w(1..6) = ['1', '-1/2', '2/3', '-11/8', '19/5', '-473/36']
+PASS w(1..5) = 1, -1/2, 2/3, -11/8, 19/5
+PASS sum|W| recurrence = direct enumeration (m <= 7)
+ m |  C_m = m! sum|W|  | 4^m        | 8^m        | (C_m/2m^2)^2 = p beyond which C_m p^-3/2 < 2m^2/p
+  3 |                19 |         64 |        512 | 1.11
+  4 |               211 |        256 |    4.1e+03 | 43.5
+  5 |              3651 |       1024 |   3.28e+04 | 5.33e+03
+  6 |             90921 |       4096 |   2.62e+05 | 1.59e+06
+  7 |       3.08151e+06 |      16384 |    2.1e+06 | 9.89e+08
+  8 |       1.36408e+08 |      65536 |   1.68e+07 | 1.14e+12
+  9 |       7.64218e+09 |     262144 |   1.34e+08 | 2.23e+15
+ 10 |       5.28579e+11 |    1048576 |   1.07e+09 | 6.98e+18
+ 11 |       4.42373e+13 |    4194304 |   8.59e+09 | 3.34e+22
+ 12 |       4.40599e+15 |   16777216 |   6.87e+10 | 2.34e+26
+PASS C_5 = 3651
+PASS (C_m/2m^2)^2 > 4^m for all 5 <= m <= 12 (explicit bound uninformative at the Hadamard threshold)
+ m=3,4: informative from p > (C_m/|c_1|)^2 = 4.45679012345679 77.29340277777777 (below 4^m)
+PASS Hadamard: prod_B 4|B| <= 4^m, since 4k <= 4^k for k >= 1 (k <= 64)
+F2  small m
+PASS symbolic m=1: {0: 1}
+PASS symbolic m=2: {0: 2, -1: -1}
+PASS symbolic m=3: {0: 6, -1: -9, -2: 4}
+PASS m=2 p=5: Prop.2 exact = 9/5 = 2-1/p; brute(literal M_N) = 1.800000000000000
+PASS m=2 p=7: Prop.2 exact = 13/7 = 2-1/p; brute(literal M_N) = 1.857142857142856
+PASS m=2 p=11: Prop.2 exact = 21/11 = 2-1/p; brute(literal M_N) = 1.909090909090909
+PASS m=2 p=13: Prop.2 exact = 25/13 = 2-1/p; brute(literal M_N) = 1.923076923076924
+PASS m=3 p=5: Prop.2 exact = 109/25 = 6-9/p+4/p^2
+PASS m=3 p=7: Prop.2 exact = 235/49 = 6-9/p+4/p^2
+PASS m=3 p=11: Prop.2 exact = 631/121 = 6-9/p+4/p^2
+PASS m=3 p=13: Prop.2 exact = 901/169 = 6-9/p+4/p^2
+PASS m=1 p=7: brute = 1
+F3  square class of the cross coefficient (p = 1 mod 4 flips the sqrt(p) terms)
+ p=13 m=4: E(square c)=6.4004753801564 E(non-square c)=6.3742173827020 E(literal M_N)=6.4004753801564; exact = 14033/2197 + (8/2197)*sqrt(p)  [sign of sqrt term flips]
+PASS square-class flip p=13 m=4
+ p=5 m=4: E(square c)=4.7591083505600 E(non-square c)=4.4728916494400 E(literal M_N)=4.7591083505600; exact = 577/125 + (8/125)*sqrt(p)  [sign of sqrt term flips]
+PASS square-class flip p=5 m=4
+ p=7 m=4: E(square c)=5.3323615160350 E(non-square c)=5.3323615160350 E(literal M_N)=5.3323615160350; exact = 1829/343 + (0)*sqrt(p)  [sign of sqrt term flips]
+PASS square-class flip p=7 m=4
+ p=11 m=4: E(square c)=6.1404958677686 E(non-square c)=6.1404958677686 E(literal M_N)=6.1404958677686; exact = 743/121 + (0)*sqrt(p)  [sign of sqrt term flips]
+PASS square-class flip p=11 m=4
+ p=13 m=5: E(square c)=6.9388288135887 E(non-square c)=6.9893249625396 E(literal M_N)=6.9388288135887; exact = 198901/28561 + (-200/28561)*sqrt(p)  [sign of sqrt term flips]
+PASS square-class flip p=13 m=5
+PASS p=13 m=4: E = 14033/2197 + 8 sqrt(13)/2197 (square class); non-square gives 14033/2197 - 8 sqrt(13)/2197
+F4  c_1(m), c_2(m) against COE; tau-scaling size of the deviation
+PASS engine_m6.log == symbolic_m1_7.log (all orders) for m=6
+PASS engine_m7.log == symbolic_m1_7.log (all orders) for m=7
+ m | c1   | COE c1 | c2 (trivial char) + characters | COE 2m^3 | delta = c2-2m^3 | delta/m^2 | c2/m^3
+  3 | -9   |    -18 | 4       |    54 | -50    | -5.556 | 0.1481
+  4 | -24  |    -32 | 42      |   128 | -86    | -5.375 | 0.6562
+  5 | -50  |    -50 | 175    {5: Fraction(10, 1)} |   250 | -75    | -3.000 | 1.4000
+PASS c1(5) = -2m^2
+  6 | -72  |    -72 | 390     |   432 | -42    | -1.167 | 1.8056
+PASS c1(6) = -2m^2
+  7 | -98  |    -98 | 686     |   686 | 0      | +0.000 | 2.0000
+PASS c1(7) = -2m^2
+  8 | -128 |   -128 | 1008    |  1024 | -16    | -0.250 | 1.9688
+PASS c1(8) = -2m^2
+  9 | -162 |   -162 | 1512    |  1458 | 54     | +0.667 | 2.0741
+PASS c1(9) = -2m^2
+ 10 | -200 |   -200 | 2000    |  2000 | 0      | +0.000 | 2.0000
+PASS c1(10) = -2m^2
+ 11 | -242 |   -242 | 2662    |  2662 | 0      | +0.000 | 2.0000
+PASS c1(11) = -2m^2
+ 12 | -288 |   -288 | 3480    |  3456 | 24     | +0.167 | 2.0139
+PASS c1(12) = -2m^2
+PASS c1(3) = -9, c1(4) = -24
+PASS no p^-3/2 term for m <= 12
+PASS c2 != 2m^3 exactly at m in {5,6,8,9,12} among 5..12 (m=3,4 also differ)
+PASS c2(12) = 3480, 2*12^3 = 3456
+ NOTE: at m=5, (5/p)=-1 gives c2-2m^3 = -85 = -3.4 m^2, so the v1 bound "<= 3m^2" was false; corrected to 3.4 m^2
+PASS |c2 - 2m^3| <= 3.4m^2 for 5 <= m <= 12 (incl. the (5/p) term at m=5); <= 0.7m^2 for m >= 8; <= 2m for m >= 10
+ In K(tau) = E/p with tau = m/p, the deviation contributes delta(m)/p^3 = (delta/m^2) * tau^2 / p,
+ i.e. O(tau^2/p) -> 0 at fixed tau IF |delta| = O(m^2) persists (observed only for m <= 12; not proved).
+F5  brute-force anchor: m=7, p=7, literal M_N (823543 paths)
+PASS m=7 p=7 brute = 6.7934874074578 vs Prop.2 exact 799247/117649 = 6.7934874074578
+PASS (39/39 checks)
+fixes_exit:0
+=== verify_thm1 ===
+N=   5 |M-Delta F Delta|=2.5e-16  |P F_(1/4) P^T - F_DFT|=0.0e+00  max eigenphase diff=4.4e-16  E|TrU^4|^2: M 4.759108350560  F_DFT 4.759108350560
+N=   7 |M-Delta F Delta|=1.4e-16  |P F_(1/4) P^T - F_DFT|=0.0e+00  max eigenphase diff=6.7e-16  E|TrU^4|^2: M 5.332361516035  F_DFT 5.332361516035
+N=   9 |M-Delta F Delta|=3.0e-16  |P F_(1/4) P^T - F_DFT|=0.0e+00  max eigenphase diff=1.1e-15  E|TrU^4|^2: M 5.839506172840  F_DFT 5.839506172840
+N=  11 |M-Delta F Delta|=2.6e-16  |P F_(1/4) P^T - F_DFT|=0.0e+00  max eigenphase diff=8.9e-16  E|TrU^4|^2: M 6.140495867769  F_DFT 6.140495867769
+N=  13 |M-Delta F Delta|=2.0e-16  |P F_(1/4) P^T - F_DFT|=0.0e+00  max eigenphase diff=1.1e-15  E|TrU^4|^2: M 6.400475380156  F_DFT 6.400475380156
+N=  15 |M-Delta F Delta|=3.1e-16  |P F_(1/4) P^T - F_DFT|=0.0e+00  max eigenphase diff=1.1e-15
+N=  21 |M-Delta F Delta|=5.4e-16  |P F_(1/4) P^T - F_DFT|=0.0e+00  max eigenphase diff=2.2e-15
+N= 101 |M-Delta F Delta|=2.4e-16  |P F_(1/4) P^T - F_DFT|=0.0e+00  max eigenphase diff=3.1e-15
+N= 103 |M-Delta F Delta|=3.0e-16  |P F_(1/4) P^T - F_DFT|=0.0e+00  max eigenphase diff=4.0e-15
+thm1_exit:0
+=== verify_exact ===
+V1: brute force (literal M_N) vs Prop.2
+N=  5 m=3  brute=4.360000000000  prop2_direct=4.360000000000 (|Im|=0.0e+00)  prop2_modp=4.360000000000  max|diff|=8.88e-16
+N=  5 m=5  brute=4.708485438200  prop2_direct=4.708485438200 (|Im|=1.7e-15)  prop2_modp=4.708485438200  max|diff|=1.00e-13
+N=  5 m=7  brute=5.484486222162  prop2_direct=nan (|Im|=0.0e+00)  prop2_modp=5.484486222162  max|diff|=nan
+N=  7 m=3  brute=4.795918367347  prop2_direct=4.795918367347 (|Im|=0.0e+00)  prop2_modp=4.795918367347  max|diff|=2.66e-15
+N=  7 m=4  brute=5.332361516035  prop2_direct=5.332361516035 (|Im|=1.5e-16)  prop2_modp=5.332361516035  max|diff|=4.44e-15
+N=  7 m=6  brute=6.226393764503  prop2_direct=nan (|Im|=0.0e+00)  prop2_modp=6.226393764503  max|diff|=nan
+N=  9 m=3  brute=5.049382716049  prop2_direct=5.049382716049 (|Im|=0.0e+00)  prop2_modp=nan  max|diff|=2.66e-15
+N=  9 m=4  brute=5.839506172840  prop2_direct=5.839506172840 (|Im|=8.6e-16)  prop2_modp=nan  max|diff|=4.44e-15
+N= 11 m=3  brute=5.214876033058  prop2_direct=5.214876033058 (|Im|=0.0e+00)  prop2_modp=5.214876033058  max|diff|=8.88e-16
+N= 11 m=5  brute=6.714090567584  prop2_direct=6.714090567584 (|Im|=9.5e-16)  prop2_modp=6.714090567584  max|diff|=1.78e-15
+N= 13 m=4  brute=6.400475380156  prop2_direct=6.400475380156 (|Im|=6.7e-17)  prop2_modp=6.400475380156  max|diff|=2.66e-15
+N= 13 m=5  brute=6.938828813589  prop2_direct=6.938828813589 (|Im|=3.4e-16)  prop2_modp=6.938828813589  max|diff|=1.07e-14
+N= 15 m=3  brute=5.417777777778  prop2_direct=5.417777777778 (|Im|=0.0e+00)  prop2_modp=nan  max|diff|=3.55e-15
+N= 15 m=4  brute=6.576888888889  prop2_direct=6.576888888889 (|Im|=8.6e-16)  prop2_modp=nan  max|diff|=5.33e-15
+N= 17 m=4  brute=6.733560929169  prop2_direct=6.733560929169 (|Im|=5.4e-16)  prop2_modp=6.733560929169  max|diff|=8.88e-16
+N= 19 m=4  brute=6.848374398600  prop2_direct=6.848374398600 (|Im|=3.4e-16)  prop2_modp=6.848374398600  max|diff|=5.33e-15
+N= 21 m=3  brute=5.580498866213  prop2_direct=5.580498866213 (|Im|=0.0e+00)  prop2_modp=nan  max|diff|=0.00e+00
+N= 23 m=4  brute=7.033204569738  prop2_direct=7.033204569738 (|Im|=1.8e-16)  prop2_modp=7.033204569738  max|diff|=3.55e-15
+N= 29 m=4  brute=7.222767695209  prop2_direct=7.222767695209 (|Im|=2.4e-16)  prop2_modp=7.222767695209  max|diff|=1.78e-15
+V2: symbolic large-p expansion vs per-prime exact evaluation
+m=3 p=  101 symbolic=5.911283207528673 exact=5.911283207528673 diff=0.0e+00
+m=3 p=  103 symbolic=5.912998397586954 exact=5.912998397586954 diff=0.0e+00
+m=3 p= 1009 symbolic=5.991084206462943 exact=5.991084206462943 diff=0.0e+00
+m=3 p= 1013 symbolic=5.991119396512660 exact=5.991119396512660 diff=0.0e+00
+m=3 p=10007 symbolic=5.999100669503367 exact=5.999100669503367 diff=0.0e+00
+m=3 p=10009 symbolic=5.999100849199753 exact=5.999100849199753 diff=0.0e+00
+m=4 p=  101 symbolic=7.766539486038516 exact=7.766539486038516 diff=0.0e+00
+m=4 p=  103 symbolic=7.770918994405739 exact=7.770918994405739 diff=0.0e+00
+m=4 p= 1009 symbolic=7.976255542678599 exact=7.976255542678599 diff=0.0e+00
+m=4 p= 1013 symbolic=7.976349138180148 exact=7.976349138180148 diff=0.0e+00
+m=4 p=10007 symbolic=7.997602098204509 exact=7.997602098204509 diff=0.0e+00
+m=4 p=10009 symbolic=7.997602578068059 exact=7.997602578068060 diff=8.9e-16
+m=5 p=  101 symbolic=9.522682802508861 exact=9.522682802508859 diff=1.8e-15
+m=5 p=  103 symbolic=9.529753934134021 exact=9.529753934134021 diff=0.0e+00
+m=5 p= 1009 symbolic=9.950627305465543 exact=9.950627305465543 diff=0.0e+00
+m=5 p= 1013 symbolic=9.950802060259507 exact=9.950802060259509 diff=1.8e-15
+m=5 p=10007 symbolic=9.995005144845022 exact=9.995005144845020 diff=1.8e-15
+m=5 p=10009 symbolic=9.995006342227262 exact=9.995006342227262 diff=0.0e+00
+m=6 p=  101 symbolic=11.322735524055362 exact=11.322735524055362 diff=0.0e+00
+m=6 p=  103 symbolic=11.336078170328491 exact=11.336078170328491 diff=2.5e-20
+m=6 p= 1009 symbolic=11.929021114292885 exact=11.929021114292885 diff=0.0e+00
+m=6 p= 1013 symbolic=11.929300038206669 exact=11.929300038206669 diff=0.0e+00
+m=6 p=10007 symbolic=11.992808929158739 exact=11.992808929158739 diff=7.1e-26
+m=6 p=10009 symbolic=11.992810357974186 exact=11.992810357974184 diff=1.8e-15
+m=7 p=  101 symbolic=13.092341106141218 exact=13.092341106141216 diff=1.8e-15
+m=7 p=  103 symbolic=13.108911624088854 exact=13.108911624088854 diff=3.4e-21
+m=7 p= 1009 symbolic=13.903543030546546 exact=13.903543030546546 diff=0.0e+00
+m=7 p= 1013 symbolic=13.903921426898147 exact=13.903921426898147 diff=0.0e+00
+m=7 p=10007 symbolic=13.990213700699762 exact=13.990213700699762 diff=0.0e+00
+m=7 p=10009 symbolic=13.990215654591852 exact=13.990215654591854 diff=1.8e-15
+exact_exit:0
+=== rank_dist 9 ===
+m=4 #H=3 (r,|C\H|) counts: {(0, 0): 1, (2, 2): 2}
+   rank-2: (|C\H|, sqclass of pivot product) -> count {(2, -1): 2}  predicted 2-opt m(m-3)/2=2, swaps m(m-5)/2=0
+m=5 #H=12 (r,|C\H|) counts: {(0, 0): 1, (2, 2): 5, (4, 3): 5, (4, 5): 1}
+   rank-2: (|C\H|, sqclass of pivot product) -> count {(2, -1): 5}  predicted 2-opt m(m-3)/2=5, swaps m(m-5)/2=0
+m=6 #H=60 (r,|C\H|) counts: {(0, 0): 1, (2, 2): 9, (2, 4): 3, (4, 3): 20, (4, 4): 12, (4, 6): 3, (5, 5): 12}
+   rank-2: (|C\H|, sqclass of pivot product) -> count {(2, -1): 9, (4, -1): 3}  predicted 2-opt m(m-3)/2=9, swaps m(m-5)/2=3
+m=7 #H=360 (r,|C\H|) counts: {(0, 0): 1, (2, 2): 14, (2, 4): 7, (4, 3): 49, (4, 4): 56, (4, 5): 28, (4, 6): 14, (4, 7): 7, (5, 5): 28, (5, 6): 14, (6, 4): 28, (6, 5): 56, (6, 6): 42, (6, 7): 16}
+   rank-2: (|C\H|, sqclass of pivot product) -> count {(2, -1): 14, (4, -1): 7}  predicted 2-opt m(m-3)/2=14, swaps m(m-5)/2=7
+m=8 #H=2520 (r,|C\H|) counts: {(0, 0): 1, (2, 2): 20, (2, 4): 12, (4, 3): 96, (4, 4): 154, (4, 5): 96, (4, 6): 44, (4, 7): 24, (4, 8): 1, (5, 5): 48, (5, 6): 24, (5, 8): 8, (6, 4): 136, (6, 5): 464, (6, 6): 512, (6, 7): 248, (6, 8): 72, (7, 5): 32, (7, 6): 160, (7, 7): 272, (7, 8): 96}
+   rank-2: (|C\H|, sqclass of pivot product) -> count {(2, -1): 20, (4, -1): 12}  predicted 2-opt m(m-3)/2=20, swaps m(m-5)/2=12
+m=9 #H=20160 (r,|C\H|) counts: {(0, 0): 1, (2, 2): 27, (2, 4): 18, (4, 3): 165, (4, 4): 333, (4, 5): 216, (4, 6): 135, (4, 7): 63, (4, 8): 9, (4, 9): 3, (5, 5): 72, (5, 6): 36, (6, 4): 396, (6, 5): 1737, (6, 6): 2502, (6, 7): 1530, (6, 8): 675, (6, 9): 110, (7, 5): 108, (7, 6): 576, (7, 7): 1278, (7, 8): 684, (7, 9): 198, (8, 5): 306, (8, 6): 1476, (8, 7): 3132, (8, 8): 3132, (8, 9): 1242}
+   rank-2: (|C\H|, sqclass of pivot product) -> count {(2, -1): 27, (4, -1): 18}  predicted 2-opt m(m-3)/2=27, swaps m(m-5)/2=18
+rank_exit:0
+=== threshold m=5 primes 7..97 ===
+m=5 p=   7 exact=(12601/2401) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  11 exact=(98301/14641) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  13 exact=(198901/28561) + (-200/28561)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  17 exact=(630901/83521) + (-200/83521)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  19 exact=(53679/6859) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  23 exact=(2268601/279841) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  29 exact=(5997801/707281) + (-200/707281)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  31 exact=(7911501/923521) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  37 exact=(16420501/1874161) + (-200/1874161)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  41 exact=(25106601/2825761) + (-200/2825761)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  43 exact=(30501001/3418801) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  47 exact=(43951801/4879681) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  53 exact=(71903701/7890481) + (-200/7890481)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  59 exact=(111525501/12117361) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  61 exact=(127773801/13845841) + (-200/13845841)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  67 exact=(187187401/20151121) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  71 exact=(237125901/25411681) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  73 exact=(265382101/28398241) + (-200/28398241)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  79 exact=(365972301/38950081) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  83 exact=(447097801/47458321) + (0)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  89 exact=(593604201/62742241) + (-200/62742241)*eps*sqrt(p)  symbolic_equal=True
+m=5 p=  97 exact=(841173301/88529281) + (-200/88529281)*eps*sqrt(p)  symbolic_equal=True
+SUMMARY m=5 primes in [7,97]: expansion exact at 22 primes; differs at []
+thr_exit:0
+DONE

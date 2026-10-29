@@ -1,0 +1,16 @@
+m=3: symbolic == exact per-prime for all primes checked in [5,257] except []
+m=4: symbolic == exact per-prime for all primes checked in [5,257] except []
+m=5: symbolic == exact per-prime for all primes checked in [7,257] except [(5, 'p|D')]
+m=6: symbolic == exact per-prime for all primes checked in [7,257] except [(5, 'p|D')]
+m=7: symbolic == exact per-prime for all primes checked in [11,257] except [(5, 'p|D'), (7, 'p|D')]
+m=8: symbolic == exact per-prime for all primes checked in [19,139] except [(5, 'p|D'), (7, 'p|D'), (11, 'p|D'), (13, 'p|D'), (17, 'p|D')]
+brute p=19 m=5: E = 53679/6859 + (0)sqrt(p) ; symbolic expansion equal: True
+brute p=23 m=5: E = 2268601/279841 + (0)sqrt(p) ; symbolic expansion equal: True
+brute p=29 m=5: E = 5997801/707281 + (-200/707281)sqrt(p) ; symbolic expansion equal: True
+brute p=31 m=5: E = 7911501/923521 + (0)sqrt(p) ; symbolic expansion equal: True
+brute p=19 m=6: E = 22383883/2476099 + (0)sqrt(p) ; symbolic expansion equal: True
+brute p=23 m=6: E = 60981687/6436343 + (0)sqrt(p) ; symbolic expansion equal: True
+brute p=29 m=6: E = 203200761/20511149 + (-66084/20511149)sqrt(p) ; symbolic expansion equal: True
+brute p=19 m=7: E = 479551339/47045881 + (0)sqrt(p) ; symbolic expansion equal: True
+brute p=23 m=7: E = 1586829819/148035889 + (0)sqrt(p) ; symbolic expansion equal: True
+brute p=19 m=8: E = 9934675709/893871739 + (0)sqrt(p) ; symbolic expansion equal: True

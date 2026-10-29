@@ -1,0 +1,14 @@
+m=4: #undirected Ham cycles=3, rank distribution={0: 1, 2: 2}, rank2: 2-opt=2 (m(m-3)/2=2), swap=0 (max(0,m(m-5)/2)=0), unclassified=0
+m=5: #undirected Ham cycles=12, rank distribution={0: 1, 2: 5, 4: 6}, rank2: 2-opt=5 (m(m-3)/2=5), swap=0 (max(0,m(m-5)/2)=0), unclassified=0
+m=6: #undirected Ham cycles=60, rank distribution={0: 1, 2: 12, 4: 35, 5: 12}, rank2: 2-opt=9 (m(m-3)/2=9), swap=3 (max(0,m(m-5)/2)=3), unclassified=0
+m=7: #undirected Ham cycles=360, rank distribution={0: 1, 2: 21, 4: 154, 5: 42, 6: 142}, rank2: 2-opt=14 (m(m-3)/2=14), swap=7 (max(0,m(m-5)/2)=7), unclassified=0
+m=8: #undirected Ham cycles=2520, rank distribution={0: 1, 2: 32, 4: 415, 5: 80, 6: 1432, 7: 560}, rank2: 2-opt=20 (m(m-3)/2=20), swap=12 (max(0,m(m-5)/2)=12), unclassified=0
+m=9: #undirected Ham cycles=20160, rank distribution={0: 1, 2: 45, 4: 924, 5: 108, 6: 6950, 7: 2844, 8: 9288}, rank2: 2-opt=27 (m(m-3)/2=27), swap=18 (max(0,m(m-5)/2)=18), unclassified=0
+m=10: #undirected Ham cycles=181440, rank distribution={0: 1, 2: 60, 4: 1765, 5: 160, 6: 23460, 7: 8200, 8: 94914, 9: 52880}, rank2: 2-opt=35 (m(m-3)/2=35), swap=25 (max(0,m(m-5)/2)=25), unclassified=0
+Lemma5 m=3: #words with figure-eight edge multiset = m*d(g)*d(m-g) for all g=1..m-1: True
+Lemma5 m=4: #words with figure-eight edge multiset = m*d(g)*d(m-g) for all g=1..m-1: True
+Lemma5 m=5: #words with figure-eight edge multiset = m*d(g)*d(m-g) for all g=1..m-1: True
+Lemma5 m=6: #words with figure-eight edge multiset = m*d(g)*d(m-g) for all g=1..m-1: True
+Lemma5 m=7: #words with figure-eight edge multiset = m*d(g)*d(m-g) for all g=1..m-1: True
+Lemma5 m=8: #words with figure-eight edge multiset = m*d(g)*d(m-g) for all g=1..m-1: True
+Lemma5 m=9: #words with figure-eight edge multiset = m*d(g)*d(m-g) for all g=1..m-1: True

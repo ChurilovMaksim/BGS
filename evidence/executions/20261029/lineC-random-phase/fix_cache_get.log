@@ -1,0 +1,31 @@
+warning: mathlib: repository '/workspace/bgs-lineC/build/.lake/packages/mathlib' has local changes
+✔ [1/5] Built Cache.Cli (324ms)
+✔ [2/12] Built Cache.Lean (462ms)
+✔ [6/26] Built Cache.Cli:c.o (134ms)
+✔ [7/26] Built Cache.Lean:c.o (143ms)
+✔ [8/26] Built Cache.Infra (408ms)
+✔ [9/26] Built Cache.Infra:c.o (178ms)
+✔ [10/26] Built Batteries.Tactic.OpenPrivate (875ms)
+✔ [11/26] Built Batteries.Tactic.OpenPrivate:c.o (1.0s)
+✔ [12/26] Built Cache.IO (1.2s)
+✔ [13/26] Built Cache.Hashing (709ms)
+✔ [14/26] Built Cache.Hashing:c.o (348ms)
+✔ [15/26] Built Cache.IO:c.o (1.3s)
+✔ [16/26] Built Cache.Requests (1.7s)
+✔ [17/26] Built Cache.Marker (524ms)
+✔ [18/26] Built Cache.Marker:c.o (99ms)
+✔ [19/26] Built Cache.Query (595ms)
+✔ [20/26] Built Cache.Query:c.o (251ms)
+✔ [21/26] Built Cache.Warning (637ms)
+✔ [22/26] Built Cache.Warning:c.o (213ms)
+✔ [23/26] Built Cache.Requests:c.o (2.6s)
+✔ [24/26] Built Cache.Main (1.0s)
+✔ [25/26] Built Cache.Main:c.o (842ms)
+✔ [26/26] Built cache:exe (928ms)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Decompressing 8689 already-cached file(s) (1 already decompressed)
+No files to download
+Decompressed 8689 already-cached file(s)
+Completed successfully in 15732 ms!
+cache_exit=0

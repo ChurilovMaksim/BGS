@@ -14,15 +14,15 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-29**. **226 registered claims.**
+**2026-10-29**. **232 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 197 |
-| verification-pending | 13 |
+| proved | 201 |
+| verification-pending | 14 |
 | conditional | 9 |
-| open | 7 |
-| **Total** | **226** |
+| open | 8 |
+| **Total** | **232** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -43,12 +43,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 23 |
 | RET | 3 | 0 | 1 | 0 | 4 |
-| TRACE | 99 | 11 | 4 | 3 | 117 |
-| **Total** | 197 | 13 | 9 | 7 | **226** |
+| TRACE | 103 | 12 | 4 | 4 | 123 |
+| **Total** | 201 | 14 | 9 | 8 | **232** |
 
 ## Open programme obligations
 
-7 registered claims are open. Their closure
+8 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -61,6 +61,7 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-005` | Model-specific signed Heisenberg-scale desymmetrized joint-trace estimate | [mathematics/open_questions.md](mathematics/open_questions.md) |
 | `BGS-TRACE-136` | Free-with-parity revival law at even order (conjecture) | [mathematics/fixed-map/revival_closure_law.md](mathematics/fixed-map/revival_closure_law.md) |
 | `BGS-TRACE-137` | Exponential revival law at odd order for generic dimensions (conjecture) | [mathematics/fixed-map/revival_closure_law.md](mathematics/fixed-map/revival_closure_law.md) |
+| `BGS-TRACE-148` | Scaling-limit conjecture for the Haar diagonal-phase cat-map form factor | [mathematics/fixed-map/random_phase_encounter_pairs.md](mathematics/fixed-map/random_phase_encounter_pairs.md) |
 
 ## Corrections
 
@@ -74,7 +75,7 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 123 follow-on claims adopted after
+It records 129 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 18 external IDs.
