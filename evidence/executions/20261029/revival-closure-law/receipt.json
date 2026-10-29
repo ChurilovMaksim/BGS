@@ -1,0 +1,112 @@
+{
+  "schema": "bgs-revival-closure-law-v1",
+  "claims": [
+    "BGS-TRACE-133",
+    "BGS-TRACE-134",
+    "BGS-TRACE-135"
+  ],
+  "open_companions": [
+    "BGS-TRACE-136",
+    "BGS-TRACE-137"
+  ],
+  "scope": "position-diagonal kick (ell=0 rows), sigma_d = 13203/32000",
+  "theorem_a": {
+    "cases": 12,
+    "max_relative_error": "2.6e-14",
+    "lambda_count": "N^(m-2), m>=2"
+  },
+  "scalar_return": [
+    7,
+    41,
+    35,
+    239
+  ],
+  "norm_lemma_boxes": [
+    [
+      41,
+      3,
+      5,
+      0
+    ],
+    [
+      239,
+      4,
+      6,
+      6
+    ],
+    [
+      239,
+      5,
+      5,
+      6
+    ],
+    [
+      1189,
+      5,
+      8,
+      26
+    ]
+  ],
+  "dichotomy_case1_checked": {
+    "239:A=5": 28,
+    "1393:A=5": 108
+  },
+  "families": {
+    "kappa4": [
+      7,
+      41,
+      239,
+      1393,
+      8119,
+      47321,
+      275807
+    ],
+    "kappa32": [
+      35,
+      1189,
+      40391
+    ]
+  },
+  "explicit_bound_lambda_quarter": {
+    "N=41": "12.6",
+    "t=501,N~1e191": "0.788"
+  },
+  "parity": {
+    "even_order_primes_below_400": 54,
+    "reduction_checked": [
+      61,
+      101
+    ]
+  },
+  "diagnostic_only": "Monte Carlo rows for the limit theorem and for open BGS-TRACE-136/137",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "lean": "leanprover/lean4:v4.33.1",
+    "lake_build_Bgs_exit": 0,
+    "scientific_registry_audit": "OK"
+  },
+  "sources_sha256": {
+    "python_closure": "21302e44058e85129c9ac68cfb9bfc795d509ba494d5b8682dc9e8cc904910cb",
+    "python_parity": "017b7d013e34d39e05a8fb29b546aa4d0e48c5cca14176008fa064c16a078164",
+    "cpp_closure": "dc872a1f94958be44424536fdd4ad430ffd4e7e9f8a048aa5adb18d50ab589fd",
+    "cpp_parity": "2a05ea51a7f284d73376adeb6252d20ed779518e3fbc4021eea1ca49e8c0d79e",
+    "cpp_common": "fce85013c60e3036022c92c1871c77c4a12b639c9d5d14b0530f13a8c6052fad",
+    "lean": "922cc356974b8219a593a0e19a60d2cfea6fee866bdbc14badadf65a0d2a1f15",
+    "proof": "295df802a8ba2b1d1e9aeb402b6dd50e487f225e963c9e540be77b87e68441a7",
+    "manuscript": "f1f57e5ab4fb3e2ba239af8caa695cc7d2e9c9b7f28dd08fbbaae46d5a18095f",
+    "lean_controls_script": "9c6abd78ee921b9087ade78b2b2fcd0f340502a064524848fea265ae55320c9b"
+  },
+  "logs_sha256": {
+    "lean_axioms.log": "2b89e68a5f7d6515a8a8acefa41f58c7c4526ad8643fb9e40ccd168f26a751a6",
+    "revival_half_period_parity_cpp.log": "ce06645c301b1c4032c1f406a0b9955136b6b60dcc4c26e84ee47ce855214753",
+    "revival_half_period_parity.log": "5e4ecff2bcd21853f1a96858f5c3592e7d842ebd53eb9de59df9cc0d53850ec1",
+    "scientific_registry_audit.log": "660fcd75e8f3244c6bf3c518c14c58f447b9aac9643cc055a5964f9a3f80c527",
+    "revival_closure_law_cpp.log": "8820446c8161e39b8c05a3836e4657d65c69cd0fe6f8b49705b449676c473364",
+    "revival_closure_law.log": "a9991dd70a1c31e58ae22e13b3c7876bec60747ff56678897252e5d2cb436eba",
+    "lean_controls.log": "b507e2781f64d719932ef2c08c8389bcba860b5137db5ac542fa2e4e87c7eb72",
+    "lake_build_Bgs.log": "6ff640a5319e31c7c37ae4b8731cc637e74a79fbb80c0ac6892c014eb52b8b4c"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, BGS-TRACE-136, BGS-TRACE-137, any statement for the full or fixed kick, or any statement at returns kt with k>=2. The explicit bound gives no information at computable N."
+}

@@ -14,15 +14,15 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-29**. **218 registered claims.**
+**2026-10-29**. **223 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 192 |
+| proved | 195 |
 | verification-pending | 12 |
 | conditional | 9 |
-| open | 5 |
-| **Total** | **218** |
+| open | 7 |
+| **Total** | **223** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -43,12 +43,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 23 |
 | RET | 3 | 0 | 1 | 0 | 4 |
-| TRACE | 94 | 10 | 4 | 1 | 109 |
-| **Total** | 192 | 12 | 9 | 5 | **218** |
+| TRACE | 97 | 10 | 4 | 3 | 114 |
+| **Total** | 195 | 12 | 9 | 7 | **223** |
 
 ## Open programme obligations
 
-5 registered claims are open. Their closure
+7 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -59,6 +59,8 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-INFO-001` | Full vanishing-noise tomography transition | [mathematics/open_questions.md](mathematics/open_questions.md) |
 | `BGS-RES-003` | All-members analytic resonance nondegeneracy | [mathematics/open_questions.md](mathematics/open_questions.md) |
 | `BGS-TRACE-005` | Model-specific signed Heisenberg-scale desymmetrized joint-trace estimate | [mathematics/open_questions.md](mathematics/open_questions.md) |
+| `BGS-TRACE-136` | Free-with-parity revival law at even order (conjecture) | [mathematics/fixed-map/revival_closure_law.md](mathematics/fixed-map/revival_closure_law.md) |
+| `BGS-TRACE-137` | Exponential revival law at odd order for generic dimensions (conjecture) | [mathematics/fixed-map/revival_closure_law.md](mathematics/fixed-map/revival_closure_law.md) |
 
 ## Corrections
 
@@ -72,7 +74,7 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 115 follow-on claims adopted after
+It records 120 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 18 external IDs.

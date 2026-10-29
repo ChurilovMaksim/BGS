@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**355 maintained proof notes; 10 topic views; 218 core claim IDs.**
+**356 maintained proof notes; 10 topic views; 223 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
-| open | 5 |
-| proved | 192 |
+| open | 7 |
+| proved | 195 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 156 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 157 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -178,6 +178,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Residual-125 packets and uniform second-order splitting](../mathematics/fixed-map/residual125_uniform_splitting.md) | Consult proof and full ledger |
 | [Residual-25 affine-return discriminator](../mathematics/fixed-map/residual25_affine_dictionary.md) | Consult proof and full ledger |
 | [Reversed-coordinate-path decay at the fixed physical coupling](../mathematics/fixed-map/reversed_path_decay.md) | `BGS-FM-022` (proved) |
+| [Twisted closure formula and the revival law at the scalar return (diagonal kick)](../mathematics/fixed-map/revival_closure_law.md) | `BGS-TRACE-133` (proved); `BGS-TRACE-134` (proved); `BGS-TRACE-135` (proved); `BGS-TRACE-136` (open); `BGS-TRACE-137` (open) |
 | [BGS-TRACE-028: actual right frame and complete unmasked pinch hierarchy](../mathematics/fixed-map/right_frame_unmasked_pinch_hierarchy.md) | `BGS-TRACE-028` (proved) |
 | [An actual high-dimensional LOCAL first-loop resummation](../mathematics/fixed-map/rotated_local_first_loop.md) | Consult proof and full ledger |
 | [The new charge gap survives microscopic spectral rounding](../mathematics/fixed-map/rounding_gap_obstruction.md) | Consult proof and full ledger |

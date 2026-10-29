@@ -1,0 +1,87 @@
+\section{Twisted closure and the revival law at the scalar return}
+\label{sec:revival-closure-law}
+The kick in this section is the position-diagonal kick \(D_\varphi\): the
+\(\ell=0\) rows of the sixteen-pair kick, with energy
+\(\sigma_d=13203/32000\). The full-kick energy \(\sigma=66033/160000\) exceeds
+it by the \(\ell=\pm1\) rows, \(9/80000\) in total.
+
+The canonical proof is
+\path{mathematics/fixed-map/revival_closure_law.md}.
+Finite integer facts are certified by
+\path{formalization/Bgs/RevivalClosureRational.lean}.
+Python checks the identities in floating point and prints Monte Carlo
+diagnostics.
+An internal referee audit is recorded. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Twisted closure formula, BGS-TRACE-133]
+\label{thm:revival-closure}
+Let \(N\) be odd, \(m\ge1\), \(D\) diagonal and \(D_j=M_N^jDM_N^{-j}\). Then
+\[
+\operatorname{Tr}(D_0\cdots D_{m-1})
+=N\sum_{a\in\Lambda_m}e_N(\beta(a))\prod_{j<m}\hat d(a_j),
+\]
+where
+\(\Lambda_m=\{a:\sum_ja_jS^je_2\equiv0\}\),
+\(\beta(a)=-2\sum_{i<j}a_ia_jy_{j-i}\) and
+\(S^d=\begin{pmatrix}x_d&4y_d\\2y_d&x_d\end{pmatrix}\).
+The set has \(\lvert\Lambda_m\rvert=N^{m-2}\) for \(m\ge2\).
+If \(S^m\equiv I\pmod N\), then
+\(\operatorname{Tr}U^m=(\operatorname{Tr}M_N^m/N)\operatorname{Tr}(D_0\cdots D_{m-1})\)
+and \(\lvert\operatorname{Tr}M_N^m\rvert=N\).
+Dropping \(e_N(\beta)\) gives the classical orbit sum.
+\end{theorem}
+
+The formula is an explicit form, with the Pell cocycle, of an exact expansion
+of the type of Boasman and Keating. It specialises the trace closure of
+BGS-TRACE-126 and the scalar return of BGS-TRACE-129. Its phase average is the
+standard Kluyver average
+\(\mathbb E\lvert\operatorname{Tr}(D_\varphi M)^m\rvert^2
+=\sum_{x,y}K(x)\overline{K(y)}\prod_rJ_0(w_r\lvert V_r(x)-V_r(y)\rvert)\).
+
+\begin{theorem}[Pointwise revival bound, BGS-TRACE-134]
+\label{thm:revival-bound}
+Let \(S^t\equiv I\pmod N\), \(N>18\) and \(2\le A<N/2\). Then, for every
+\(\varphi\),
+\(\lvert\operatorname{Tr}U^t/\operatorname{Tr}M_N^t-\hat d(0)^t\rvert\le E_T+E_D+E_R\),
+with the explicit terms of the canonical note. Moreover
+\(\lvert\hat d(0)-J\rvert\le W^3e^W/6\).
+If \(N\to\infty\) with \(\eta^2t\to\theta\) and
+\(t=2\log_\lambda N+o(\sqrt t)\), then
+\(\operatorname{Tr}U^t/\operatorname{Tr}M_N^t\to e^{-\theta\sigma_d/2}\)
+uniformly in \(\varphi\).
+This applies along the Bonechi--De~Bi\`evre minimal-period sequence:
+\(7,41,239,1393,\dots\) with \(\kappa=4\), and \(35,1189,40391,\dots\) with
+\(\kappa=32\).
+\end{theorem}
+
+The proof rests on a norm lemma in \(\mathbb Z[\sqrt2]\): a closure with
+coefficients at most \(A\) in a window of length \(L\), with
+\(A^2\lambda^L\le4N^2\), is an exact multiple of \(x^2-6x+1\).
+
+The explicit bound gives no information at computable dimensions. At
+\(\lambda_{\rm rev}=1/4\) it first falls below \(1\) near \(N\approx10^{191}\),
+and at \(\lambda_{\rm rev}=1\) it is still \(2.36\) at \(N\approx10^{19139}\).
+Monte Carlo at \(N\le8119\) is consistent with the limit.
+
+\begin{theorem}[Half-period parity reduction, BGS-TRACE-135]
+\label{thm:revival-parity}
+If \(N\) is an odd prime and \(t\) is even, then \(S^{t/2}\equiv-I\) and
+\(M_N^{t/2}=cP\), with \(P\) the parity. Hence
+\(\operatorname{Tr}U^t/\operatorname{Tr}M_N^t=N^{-1}\operatorname{Tr}(A\,PAP)\)
+with \(A=D_0\cdots D_{t/2-1}\).
+\end{theorem}
+
+The parity structure is classical (Hannay--Berry; Kurlberg--Rudnick).
+
+Two statements remain open: BGS-TRACE-136 and BGS-TRACE-137.
+\begin{itemize}
+\item BGS-TRACE-136 is a free-probability heuristic for even \(t\). It
+predicts \(\mathbb E\lvert R\rvert^2\to e^{-\lambda}(1+0.1205\lambda^2)\).
+Monte Carlo at \(61\) and \(101\) agrees within \(3.4\sigma\) and rejects the
+classical-orbit law.
+\item BGS-TRACE-137 is the exponential law for odd \(t\) at generic
+dimensions. Monte Carlo agrees within \(5\%\) for \(71\le N\le263\) and is
+\(18\%\) low at \(N=47\), \(\lambda=3\).
+\end{itemize}
+Neither statement is proved.

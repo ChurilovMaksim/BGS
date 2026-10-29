@@ -52,5 +52,6 @@ import Bgs.ScalarReturnBesselRational
 import Bgs.SixteenPhaseSymmetryRational
 import Bgs.HyperbolicDiagonalFormFactor
 import Bgs.HyperbolicShortTime
+import Bgs.RevivalClosureRational
 
 import Bgs.Mathlib
