@@ -1,0 +1,169 @@
+{
+  "schema": "bgs-lineC-random-phase-v1",
+  "created": "2026-10-29 (Europe/Berlin)",
+  "claims_proved": [
+    "BGS-TRACE-143",
+    "BGS-TRACE-144",
+    "BGS-TRACE-145",
+    "BGS-TRACE-146"
+  ],
+  "claims_verification_pending": [
+    "BGS-TRACE-147"
+  ],
+  "claims_open": [
+    "BGS-TRACE-148"
+  ],
+  "ids_provisional": false,
+  "scope": "maximal Haar diagonal-phase ensemble U=D_theta M_N, S=[[3,4],[2,3]], odd N; fixed m",
+  "results": {
+    "fixes_check": "PASS 39/39",
+    "theorem6_threshold": "p > 4^m (Hadamard)",
+    "C_m": {
+      "5": 3651,
+      "6": 90921,
+      "7": "3.08e6",
+      "8": "1.36e8",
+      "12": "4.41e15"
+    },
+    "informative_threshold_(C_m/2m^2)^2": {
+      "5": "5.33e3",
+      "6": "1.59e6",
+      "7": "9.89e8",
+      "8": "1.14e12",
+      "12": "2.34e26"
+    },
+    "exactness_ranges_computational": {
+      "2": "all primes 3..257",
+      "3": "all primes 3..257",
+      "4": "all primes 3..257",
+      "5": "all primes 3..257 except 5",
+      "6": "primes 7..257 (fails 3,5)",
+      "7": "primes 7..257 (fails 3,5)",
+      "8": "p=11 and primes 19..257 (fails 3,5,7,13,17)"
+    },
+    "c2": {
+      "5": "175+10(5/p)",
+      "6": 390,
+      "7": 686,
+      "8": 1008,
+      "9": 1512,
+      "10": 2000,
+      "11": 2662,
+      "12": 3480
+    },
+    "c2_minus_2m3_max_over_m2_(5..12)": 3.4,
+    "m2_exact": "2-1/p",
+    "m3_exact": "6-9/p+4/p^2",
+    "square_class_p13_m4": "14033/2197 +/- 8 sqrt(13)/2197",
+    "tanner_rate": "(3/4) N^(-4/3)",
+    "lean_build": "lake build Bgs.LineCEncounter exit 0, 254 s; axioms subset of {propext}; 7/7 false controls rejected"
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.5.4",
+    "lean": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "lean_toolchain": "leanprover/lean4:v4.33.1"
+  },
+  "files_sha256": {
+    "formalization/Bgs/LineCEncounter.lean": "dd2f4e4197bf3fe7c3903e3504f602c9403824b2199507b5c6b0e31840f77c4d",
+    "computations/verification/lineC/brute.py": "a0aa2ae71671bc96c8aa18483e631912ba144951f567eeddc18572ba2a017b37",
+    "computations/verification/lineC/coe.py": "87762a67c1b472173f98c39d54b6bb3de0499b73ef97377d01a9d2041e7dae4e",
+    "computations/verification/lineC/decompose.py": "05f76bd81ab31477d13925d4a8e824aec176cf6cf48737fad1e32cdafd1fa8de",
+    "computations/verification/lineC/engine.cpp": "caafc673e70fd5dc7f97b86ccb238e8ba2f740b335e1e093d0b9e9ee055e415a",
+    "computations/verification/lineC/fixes_check.py": "935e0a64fef03fbf386e05e480f286a9ffcab280b73bc6cea37246de25731626",
+    "computations/verification/lineC/gauss_exact.py": "5ef1fa5e80ab1be53d56c8d022fa2570f6c8cbaa07e75d922f2a0a135e7642cc",
+    "computations/verification/lineC/model.py": "b21510136eddec761fd37953660cfad4c6f507c1ea6cd469a919351e4767c5b7",
+    "computations/verification/lineC/rank_dist.py": "d115dc5aea5c1a7bfe17a1a82eb292b3e079628f9d439a588602c2cc99088b6b",
+    "computations/verification/lineC/run_engine.py": "05916f6a4e96641ae4e315855f0869838866a117bd0d1b9c8dccdbdd5e10a44c",
+    "computations/verification/lineC/symbolic.py": "31940136d1b4053e0fff2164972877c6ce933fd7f46c38341a89c66f2e4189be",
+    "computations/verification/lineC/threshold_check.py": "28f05de7e536412981f063cf72c30269d53d963684abbc9b6001b710f673cb11",
+    "computations/verification/lineC/verify_exact.py": "4330bffbc33b4aa5c4a4f5161799ef7cce40fd0e13e3cf202e2f4bbffb5f1948",
+    "computations/verification/lineC/verify_thm1.py": "4ad4c2e426da28996cdd859c22c370b0183e9b8d2feb98bed548c93469642aeb",
+    "computations/verification/lineC/data/engine_m10.log": "8725f544ab9e372397f65b49e3fc69853dcecb9e4b62258e3064f1938d527f3b",
+    "computations/verification/lineC/data/engine_m11_def2.log": "fbaa7200a2d11ec9f8b865bee0173a0f30f5d70eae5a48ad935e66d5b705a8ed",
+    "computations/verification/lineC/data/engine_m12_def2.log": "f8d0c53bbab2a5671e97e3227ae70a42a48e740d148eb181c4d12c4fd106d771",
+    "computations/verification/lineC/data/engine_m6.log": "eb9fd7d581bc51224322217beca8dd9d854130e472fa8c876e211016a4f1f298",
+    "computations/verification/lineC/data/engine_m7.log": "46ce79db2cb008c39290027c27e5fa3b7ed723fb2641c0c17d48545e5831c749",
+    "computations/verification/lineC/data/engine_m8.log": "5bb8cb3105dda977e31ccf8b7b9a7e8e4259f8a9b4cdbb205e45aeeacc696d5c",
+    "computations/verification/lineC/data/engine_m9.log": "ffaa91462cc11da15542fe03d3257e301bf03f778e52c2cd456a21eef2fa24c6",
+    "computations/verification/lineC/data/engine_m9_def2_check.log": "c1b58ec2636e4b2093e36b58705925bb0ccb5f9424d55fb1e58b251eaaefebcb",
+    "computations/verification/lineC/data/engine_rot_m8.log": "5bb8cb3105dda977e31ccf8b7b9a7e8e4259f8a9b4cdbb205e45aeeacc696d5c",
+    "computations/verification/lineC/data/engine_rot_m9.log": "ffaa91462cc11da15542fe03d3257e301bf03f778e52c2cd456a21eef2fa24c6",
+    "computations/verification/lineC/data/symbolic_m1_7.log": "241463c780dd1d17e26c27e690cad6ec95e0820dce7e7c80a0b92d46ae042805",
+    "computations/verification/lineC/data/symbolic_m8.log": "3790378fb3329f97d4252efdfe1fd34b098015e85b31617cf0a713e1e1fc8623",
+    "mathematics/fixed-map/random_phase_encounter_pairs.md": "6a42a9e31e49b12f12b79832e9b4593629b0af18b3a076898f048178e882f3b0",
+    "evidence/executions/20261029/lineC-random-phase/AxiomsLineC.lean": "bfc808865e1fc1211697c4d938e1376456439908b7226666ddbbb6e494228f55",
+    "evidence/executions/20261029/lineC-random-phase/README.md": "f4c82c8003f577b0d7adb4933ca97ec38e6ba7676c1d9165b9bcc3f2b41349df",
+    "evidence/executions/20261029/lineC-random-phase/audit_fractions.log": "1904d84e710056368c5746b58b5f5757de38a5cbef71f8132d3b6dc914e18e7c",
+    "evidence/executions/20261029/lineC-random-phase/coe_check.log": "a11334582f2a270aaa14ceff10ff62b1abedeb33eb74718e8c4f148f7da7031a",
+    "evidence/executions/20261029/lineC-random-phase/coeff_table.md": "5f8094d5cdaf624dbe495befeff20bcc03b6b2d0fb53f2d76e2a1517666b4b72",
+    "evidence/executions/20261029/lineC-random-phase/decompose_5_7.log": "0384630871bf226d4873c8ffeef7681d2879f905ccb2e7e7feff513be2650548",
+    "evidence/executions/20261029/lineC-random-phase/engine_m11_def2.log": "fbaa7200a2d11ec9f8b865bee0173a0f30f5d70eae5a48ad935e66d5b705a8ed",
+    "evidence/executions/20261029/lineC-random-phase/engine_m12_def2.log": "f8d0c53bbab2a5671e97e3227ae70a42a48e740d148eb181c4d12c4fd106d771",
+    "evidence/executions/20261029/lineC-random-phase/engine_m8.log": "5bb8cb3105dda977e31ccf8b7b9a7e8e4259f8a9b4cdbb205e45aeeacc696d5c",
+    "evidence/executions/20261029/lineC-random-phase/exact_m8_p101_103.log": "2800a7191a49063e1dda049045105a156a5cf8e7d20376f7200f98456c41ad88",
+    "evidence/executions/20261029/lineC-random-phase/fix_cache_get.log": "f858639b988f1bbcf1ba6fc3261282bea9817eabb0e96b958dc924bab0229164",
+    "evidence/executions/20261029/lineC-random-phase/fix_lake_build_LineC.log": "27dbc1c75b6f5519f0ea99142cd5c843178223bf6fad4adbebad5db49a998f83",
+    "evidence/executions/20261029/lineC-random-phase/fix_lean_axioms_LineC.log": "73b8052f5bac51a6d00374bab6ef1d84723688858d8622452acee447a941268f",
+    "evidence/executions/20261029/lineC-random-phase/fix_lean_controls.log": "5d49a90c3c5f2707394be019abcdca548bf869f592ab6dcd789db17a85930493",
+    "evidence/executions/20261029/lineC-random-phase/fixes_check.log": "c95cc55ade7e2ed11e1bab979a8f98594a1ff1ba19df7907f87df9bf0e7f2c91",
+    "evidence/executions/20261029/lineC-random-phase/lean_axioms_LineC.log": "fdf54084a9367655cb9e1da7e7d038f93761a6cb9d6534fc1fe7db4a3ff5429c",
+    "evidence/executions/20261029/lineC-random-phase/lean_controls.log": "fa67c145d146f1918cc35a2b31b7422f6db2899786bd678b50af0e97f503bea6",
+    "evidence/executions/20261029/lineC-random-phase/lean_controls.sh": "e3f24c67c735997140960cd505dfc48e71d2049904ca03fd7c709712c87e6df5",
+    "evidence/executions/20261029/lineC-random-phase/lit_check.md": "b3f3c8e62f54b032ba7d58c9067252d4fa079ec9c1e60fd239f891b50771c079",
+    "evidence/executions/20261029/lineC-random-phase/own_lake_build_LineC.log": "e438e579ceb8e02f4cf60940bf5062f7ee0def6c7d0cda3c2039b3899eb6f272",
+    "evidence/executions/20261029/lineC-random-phase/rank_dist.log": "70bf6a140bd0aeaa5b6a531fffbed672b0238f680f676c970cae4bdbcedf3409",
+    "evidence/executions/20261029/lineC-random-phase/symbolic_m1_7.log": "241463c780dd1d17e26c27e690cad6ec95e0820dce7e7c80a0b92d46ae042805",
+    "evidence/executions/20261029/lineC-random-phase/symbolic_m8.log": "3790378fb3329f97d4252efdfe1fd34b098015e85b31617cf0a713e1e1fc8623",
+    "evidence/executions/20261029/lineC-random-phase/tanner2001_p10_sigma_3over4.png": "7656f023bbc6d4d1f172d867df4e780f074c9c5c1cd32e9a77ecfb408ab2b5bf",
+    "evidence/executions/20261029/lineC-random-phase/threshold_m2.log": "f8d1ece1a06d64d2686f5c73326d22b8ecfaa9250bfc1173de0bd2035fc6964e",
+    "evidence/executions/20261029/lineC-random-phase/threshold_m3.log": "182ad62f35d3b9d730027c8ffb606ed045cabcf8d64b35ea80d2bb29b0fcdaf5",
+    "evidence/executions/20261029/lineC-random-phase/threshold_m4.log": "96367f9f347733259c4e644492412bbde3c8434ae6835eb5bb2b76c330992c5f",
+    "evidence/executions/20261029/lineC-random-phase/threshold_m5.log": "e8695daa069875e96aae9539da78c82eed130875c10e8e14fc02af110a35030f",
+    "evidence/executions/20261029/lineC-random-phase/threshold_m6.log": "ced7a0965a3bec47a899614c764ab18d5e078ca910098811c12d0e6c3c654302",
+    "evidence/executions/20261029/lineC-random-phase/threshold_m7.log": "a7134cacbffd1817f130bd71956181434f04b5e4bcd71e9778a0ff23a9fb17f1",
+    "evidence/executions/20261029/lineC-random-phase/threshold_m8.log": "fe0a57c01a323fa96597ef08683b44ff71845ea6e1f8f7700eb2ee196915fd56",
+    "evidence/executions/20261029/lineC-random-phase/verify_exact.log": "ba474f9af3398af5aaee2fb1c5512d48d9406294b8c4527760e47d5952992979",
+    "evidence/executions/20261029/lineC-random-phase/verify_thm1.log": "3726037d936d3e0e717608b34d382ab6196f3e0d9020aa96a7aa5f35716b7b3f"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005 or BGS-BGS-001; does not cover the fixed kick, the 16-mode ensemble or band-limited ensembles; no fixed-tau statement; the tau^2 coefficient was derived diagrammatically by Gnutzmann-Seif 2004 for this ensemble.",
+  "id_renumbering": {
+    "packet": [
+      "BGS-TRACE-138",
+      "BGS-TRACE-139",
+      "BGS-TRACE-140",
+      "BGS-TRACE-141",
+      "BGS-TRACE-142",
+      "BGS-TRACE-143"
+    ],
+    "registered": [
+      "BGS-TRACE-143",
+      "BGS-TRACE-144",
+      "BGS-TRACE-145",
+      "BGS-TRACE-146",
+      "BGS-TRACE-147",
+      "BGS-TRACE-148"
+    ],
+    "reason": "Main at 0c0568e0 already registers BGS-TRACE-140 through BGS-TRACE-142. BGS-TRACE-138 and BGS-TRACE-139 are unused. The packet block is registered from BGS-TRACE-143."
+  },
+  "theorem7_status": "verification-pending; independent replay deposited; promotion is a separate status decision, as for BGS-RES-022",
+  "packet_tarball_sha256": "bfffbd30b23b054bb4e495057c51e57b1468d648c228daa8c7d2c3c01c8ddcee",
+  "independent_replay": "computations/verification/lineC/independent_replay/",
+  "integration_verify_log": "evidence/executions/20261029/lineC-random-phase/integration_verify.log",
+  "files_absent_after_integration": [
+    "INTEGRATION.md",
+    "formalization/Bgs.lean.patch",
+    "record/claims_entries_TRACE-138_to_143.json"
+  ],
+  "integration_sha256": {
+    "evidence/executions/20261029/lineC-random-phase/integration_verify.log": "d23b9798b0691426a203970e2f50a34a4bd42e18c782ca918b22755bd252b580",
+    "evidence/executions/20261029/lineC-random-phase/integration_axioms.log": "b5ac5d8c565294e470bd30d4af3b8c10e50a2198b5f573372828c4c9558b77b3",
+    "evidence/executions/20261029/lineC-random-phase/independent_replay/compare_theirs.log": "0e8dfdba7a9e1a33459f73966d3c6c516f22f1fa606f21e33cc03dc57fe719ed",
+    "evidence/executions/20261029/lineC-random-phase/independent_replay/README.md": "e9cf624d60ad9b1429b3bcba99873acc4d8f1f65c271b780ac4afaabe3231d43",
+    "computations/verification/lineC/independent_replay/engine.cpp": "8e5dea7b839f78066b668cab16e2b45a782c042498f49317ef406a580fd0ee00",
+    "computations/verification/lineC/independent_replay/sym.py": "a9559ed2da97bef02382124ad149e37236eb1e0ce6deb7bed324d775ea7672bb",
+    "computations/verification/lineC/independent_replay/REPORT.md": "1d706c924145080f08b3e109c8b3e3fb702ca1acc106724f23c29644b074ee64",
+    "formalization/Bgs/LineCEncounter.lean": "dd2f4e4197bf3fe7c3903e3504f602c9403824b2199507b5c6b0e31840f77c4d",
+    "mathematics/fixed-map/random_phase_encounter_pairs.md": "6a42a9e31e49b12f12b79832e9b4593629b0af18b3a076898f048178e882f3b0"
+  }
+}

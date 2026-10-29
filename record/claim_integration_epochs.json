@@ -797,6 +797,42 @@
       "state": "verification-pending",
       "source": "mathematics/fixed-map/momentum_phase_cue.md",
       "disposition": "29 October 2026: the Gaussian main terms are m rotations and m exp(-v m) from reflections. The non-injective remainder is not bounded, so the limit m(1+exp(-v m)) is verification-pending. The choice v = sigma_odd eta^2 is a convention; partner-variance matching gives twice this. A 600-draw sample at p=29 has mean 3.709, and an independent exact value is 3.7555. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-143",
+      "state": "proved",
+      "source": "mathematics/fixed-map/random_phase_encounter_pairs.md",
+      "disposition": "29 October 2026: Haar diagonal-phase cat map at odd N is unitarily conjugate to Tanner's random-phase DFT, by a measure-preserving relabelling. The square class of the cross coefficient flips half-integer terms when p=1 mod 4 and leaves integer-order coefficients unchanged. Depends on TRACE-127 and TRACE-131. Not the fixed kick. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-144",
+      "state": "proved",
+      "source": "mathematics/fixed-map/random_phase_encounter_pairs.md",
+      "disposition": "29 October 2026: exact Gauss-sum and partition-lattice formula for the Haar diagonal-phase form factor. Rational for every p=3 mod 4; no p^{-1/2} term; rank stable for p>4^m. Lean decides the m=3 counting step at N=7, 11 and 13 only. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-145",
+      "state": "proved",
+      "source": "mathematics/fixed-map/random_phase_encounter_pairs.md",
+      "disposition": "29 October 2026: complete classification of the order-1/p pairs as 2-opt, swap and figure-eight, with counts. The swap class is absent from the Gnutzmann-Seif 2004 diagram families. Lean decides the m=6 instances only. Rank 1 and rank 3 are absent at deficit 0 through m=10 in the referee enumeration; that is not a general lemma. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-146",
+      "state": "proved",
+      "source": "mathematics/fixed-map/random_phase_encounter_pairs.md",
+      "disposition": "29 October 2026: for p>4^m the coefficient of 1/p is exactly -2m^2 for every m>=5 (COE -2 tau^2), with a0=2m and a1=0. Gnutzmann-Seif 2004 derived 2 tau - 2 tau^2 diagrammatically for this ensemble; new here is the rigorous fixed-m exact-in-p identity and the complete classification, including swaps. The explicit remainder is non-informative below (C_m/2m^2)^2. m=1,2,3 are TRACE-127 and are not re-claimed. Depends on TRACE-144, TRACE-145 and TRACE-128. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-147",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/random_phase_encounter_pairs.md",
+      "disposition": "29 October 2026: computer-assisted exact expansions, all orders for m<=10 and through p^{-5/2} for m=11,12. c2 differs from the fixed-m COE value 2m^3 at m=5,6,8,9,12 (3480 against 3456 at m=12). An independent referee engine is deposited and reproduces every coefficient at 171 primes. The state stays verification-pending; promotion is a separate status decision, as for BGS-RES-022. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-148",
+      "state": "open",
+      "source": "mathematics/fixed-map/random_phase_encounter_pairs.md",
+      "disposition": "29 October 2026: open scaling-limit conjecture. The guess c2=2m^3 for all m>=10 is refuted at m=12. The m<=12 table is consistent with the conjecture and does not prove it. Does not close TRACE-005 or BGS-001."
     }
   ],
   "invariants": [

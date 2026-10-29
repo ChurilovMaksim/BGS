@@ -27,21 +27,21 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**357 maintained proof notes; 10 topic views; 226 core claim IDs.**
+**358 maintained proof notes; 10 topic views; 232 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
-| open | 7 |
-| proved | 197 |
-| verification-pending | 13 |
+| open | 8 |
+| proved | 201 |
+| verification-pending | 14 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
 No state is inferred for an unregistered note. Read its proof and the full ledger.
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 158 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 159 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -176,6 +176,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [R1 dictionary: external §16 phase model ↔ repo fixed-map model](../mathematics/fixed-map/r1_dictionary.md) | Consult proof and full ledger |
 | [Chain-trace closure at the first seven-primary level, including ramification at 5](../mathematics/fixed-map/ramified_first_seven_commutant.md) | Consult proof and full ledger |
 | [A q-divided-power lattice reduction for the remaining ramified higher-seven family](../mathematics/fixed-map/ramified_higher_seven_commutant.md) | Consult proof and full ledger |
+| [Random-phase cat map: exact encounter classification and the τ² coefficient (Line C)](../mathematics/fixed-map/random_phase_encounter_pairs.md) | `BGS-TRACE-143` (proved); `BGS-TRACE-144` (proved); `BGS-TRACE-145` (proved); `BGS-TRACE-146` (proved); `BGS-TRACE-147` (verification-pending); `BGS-TRACE-148` (open) |
 | [Residual-125 packets and uniform second-order splitting](../mathematics/fixed-map/residual125_uniform_splitting.md) | Consult proof and full ledger |
 | [Residual-25 affine-return discriminator](../mathematics/fixed-map/residual25_affine_dictionary.md) | Consult proof and full ledger |
 | [Reversed-coordinate-path decay at the fixed physical coupling](../mathematics/fixed-map/reversed_path_decay.md) | `BGS-FM-022` (proved) |

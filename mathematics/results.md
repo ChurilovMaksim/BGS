@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Random-phase encounter pairs, 29 October 2026
+
+[TRACE-143](fixed-map/random_phase_encounter_pairs.md) identifies the Haar diagonal-phase cat map at odd $N$ with Tanner's random-phase DFT. [TRACE-144](fixed-map/random_phase_encounter_pairs.md) is the exact Gauss-sum formula, rational for every $p\equiv 3\pmod 4$. [TRACE-145](fixed-map/random_phase_encounter_pairs.md) classifies the order-$1/p$ pairs as $2$-opt, swap and figure-eight. [TRACE-146](fixed-map/random_phase_encounter_pairs.md) gives $a_2=-2m^2$ for every $m\ge 5$ and every prime $p>4^m$. Gnutzmann–Seif 2004 derived $2\tau-2\tau^2$ diagrammatically for this ensemble; new here is only the rigorous fixed-$m$ exact-in-$p$ result, the complete classification including swaps, and the $m\le 12$ expansions. The explicit remainder is non-informative below $(C_m/2m^2)^2$. [TRACE-147](fixed-map/random_phase_encounter_pairs.md) is verification-pending: the computer-assisted expansion through $m=12$ deviates from the fixed-$m$ COE value $2m^3$ at $m=5,6,8,9,12$, and an independent referee replay of every coefficient at $171$ primes is deposited. Promotion is a separate status decision, as for BGS-RES-022. [TRACE-148](fixed-map/random_phase_encounter_pairs.md) is the open scaling-limit conjecture. The values at $m=1,2,3$ remain TRACE-127. This does not prove BGS-TRACE-005 or BGS-BGS-001, and it does not cover the fixed kick.
+
 ## Twisted closure and revival at the scalar return, 29 October 2026
 
 [TRACE-133](fixed-map/revival_closure_law.md) gives the twisted closure formula for the position-diagonal kick at every time, with cocycle phase \(\beta\) and \(|\Lambda_m|=N^{m-2}\). [TRACE-134](fixed-map/revival_closure_law.md) gives a pointwise bound at the scalar return and the \(\exp(-\eta^2 t\sigma_d/2)\) limit on the minimal-period sequence; the explicit bound is non-informative at computable \(N\) (first below \(1\) near \(N\approx10^{191}\) at \(\lambda=1/4\)). [TRACE-135](fixed-map/revival_closure_law.md) reduces the scalar-return trace when \(S^{t/2}\equiv -I\). [TRACE-136](fixed-map/revival_closure_law.md) and [TRACE-137](fixed-map/revival_closure_law.md) are open conjectures for even and odd order respectively. Position-diagonal kick only (\(\sigma_d=13203/32000\)). BGS-TRACE-005 stays open.
@@ -483,7 +487,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**226 registered claims: 197 proved, 13 verification-pending, 9 conditional, 7 open.**
+**232 registered claims: 201 proved, 14 verification-pending, 9 conditional, 8 open.**
 
 ### BGS family (1 claim)
 
@@ -649,7 +653,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (117 claims)
+### TRACE family (123 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -770,5 +774,11 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-140` | **PROVED** | Unitary short-time form factor for Haar momentum phases |
 | `BGS-TRACE-141` | **PROVED** | Unitary moment hierarchy for Haar momentum phases |
 | `BGS-TRACE-142` | **VERIFICATION-PENDING** | Gaussian momentum-phase crossover from 2m to m |
+| `BGS-TRACE-143` | **PROVED** | Haar diagonal-phase cat map equals the random-phase DFT star graph |
+| `BGS-TRACE-144` | **PROVED** | Exact Gauss-sum and partition-lattice formula for the Haar diagonal-phase form factor |
+| `BGS-TRACE-145` | **PROVED** | Complete classification of the first off-diagonal pairs: 2-opt, swap and figure-eight |
+| `BGS-TRACE-146` | **PROVED** | Exact tau^2 coefficient of the Haar diagonal-phase cat-map form factor at fixed time |
+| `BGS-TRACE-147` | **VERIFICATION-PENDING** | Computer-assisted exact expansions to m=12 and the fixed-m tau^3 deviation from COE |
+| `BGS-TRACE-148` | **OPEN** | Scaling-limit conjecture for the Haar diagonal-phase cat-map form factor |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

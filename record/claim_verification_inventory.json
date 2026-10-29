@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "e9efa16d8fec39001205dbf844a8abf1597af361",
+ "source_blob_sha": "b4193c83c80b64c565bdd8516f9105debc3eac26",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -54,7 +54,8 @@
   "BGS-TRACE-134 was appended on 2026-10-29. Its Lean file certifies orders, kappa, and norm-lemma boxes only; the analytic bound and limit theorem were checked by the author and were given an independent internal referee audit.",
   "BGS-TRACE-135 was appended on 2026-10-29. Its Lean file certifies half-period parity at 61 and 101 only; the reduction identity was checked by the author and was given an independent internal referee audit.",
   "BGS-TRACE-136 and BGS-TRACE-137 were registered as open conjectures on 2026-10-29; Monte Carlo rows are diagnostics only.",
-  "BGS-TRACE-140, BGS-TRACE-141 and BGS-TRACE-142 were appended on 2026-10-29. TRACE-142 is verification-pending: the Gaussian non-injective remainder is not bounded. Lean decides the odd-symbol energy, the constants 468 and 20, and the residues 27 mod 5, 7, 11 and 13 only. The programs recompute Haar buckets; they do not compute a 2k-th moment, so TRACE-141 does not claim a computer certificate. The form factor was checked by the author and was not given an independent referee."
+  "BGS-TRACE-140, BGS-TRACE-141 and BGS-TRACE-142 were appended on 2026-10-29. TRACE-142 is verification-pending: the Gaussian non-injective remainder is not bounded. Lean decides the odd-symbol energy, the constants 468 and 20, and the residues 27 mod 5, 7, 11 and 13 only. The programs recompute Haar buckets; they do not compute a 2k-th moment, so TRACE-141 does not claim a computer certificate. The form factor was checked by the author and was not given an independent referee.",
+  "BGS-TRACE-143 through BGS-TRACE-148 were appended on 2026-10-29. The packet numbered them BGS-TRACE-138 through BGS-TRACE-143; those numbers collide with BGS-TRACE-140 through BGS-TRACE-142 already on main, so the statements start at BGS-TRACE-143. TRACE-144, TRACE-145 and TRACE-146 have Lean finite instances only. TRACE-147 is verification-pending: an independent referee replay of every Theorem 7 coefficient at 171 primes is deposited, and promotion remains a separate status decision, as for BGS-RES-022. TRACE-148 is an open conjecture. Gnutzmann-Seif 2004 derived 2 tau - 2 tau^2 diagrammatically for this ensemble; the new content is the rigorous fixed-m exact-in-p result, the complete classification including swaps, and the m<=12 expansions. The values at m=1,2,3 remain BGS-TRACE-127."
  ],
  "claims": [
   {
@@ -8484,6 +8485,242 @@
     "single_reviewer_author_check_only"
    ],
    "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-143",
+   "title": "Haar diagonal-phase cat map equals the random-phase DFT star graph",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineC-random-phase/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineC/verify_thm1.py",
+    "computations/verification/lineC/fixes_check.py"
+   ],
+   "formalization": [],
+   "ledger_status": "ANALYTIC PROOF + NUMERICAL CHECK + INDEPENDENT REFEREE AUDIT",
+   "boundary": "For every odd N and S=[[3,4],[2,3]], M_N = Delta F_{1/4} Delta with Delta=diag e_N(-3*8^{-1}x^2), and P F_{1/4} P^{-1} = F (DFT) for (Pf)(x)=f(2x). For every theta, D_theta M_N is unitarily conjugate to D_theta' F with theta'_x = theta_{2x} - 2pi*6*8^{-1}(2x)^2/N, a measure-preserving bijection of the N-torus, so the eigenvalue law under Haar theta is that of Tanner's DFT star graph, which is also the class-AI star graph of Gnutzmann-Seif 2004. For a general unit cross coefficient beta the law depends only on the square class of beta. At prime N=p a non-square class flips the sign of every half-integer (sqrt p) term of E|Tr U^m|^2 and leaves every integer-order term unchanged; this matters only for p=1 mod 4 (p=13, m=4: 14033/2197 +/- 8 sqrt13/2197). Odd N only. The identification is elementary. Floating-point checks at N=5..103, including composite N, give errors <=5.4e-16, and eigenphases agree to 4.9e-15. Not formalized in Lean. Not the fixed kick and not the 16-mode ensemble. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Floating-point checks of the matrix identity and eigenphases. Not formalized in Lean. An independent referee audit is recorded.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-144",
+   "title": "Exact Gauss-sum and partition-lattice formula for the Haar diagonal-phase form factor",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineC-random-phase/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineC/verify_exact.py",
+    "computations/verification/lineC/gauss_exact.py",
+    "computations/verification/lineC/threshold_check.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineCEncounter.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (FINITE INSTANCES) + INDEPENDENT REFEREE AUDIT",
+   "boundary": "For odd N, E|Tr U^m|^2 = N^{-m} sum_{rho in Pi_m} W(rho) sum_{sigma in S_m} G_N(rho,sigma), with G_N = sum_z e_N(c Q_{rho,sigma}(z)), c=4^{-1}, and W(rho) the product over blocks of w(|B|), where sum w(n)t^n/n! = log sum t^n/(n!)^2 (w = 1, -1/2, 2/3, -11/8, 19/5). At prime p, G_p = p^{n-r/2} eps_p^r (delta/p). E is rational for every p=3 mod 4, lies in Q(sqrt p) for p=1 mod 4, and has no p^{-1/2} term. By Hadamard every relevant minor is at most 4^m in absolute value, so for p>4^m the rank and the square class over F_p equal those over Q. Brute force with the literal M_N matches at 19 (N,m) cases including composite N (1e-13), and exactly in rationals at the referee's 17 (p,m) pairs. Lean decides the counting step at N=7,11,13, m=3 (235/49, 631/121, 901/169), not the probabilistic reduction. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the m=3 counting step at N=7, 11 and 13 only. It does not formalize the probabilistic reduction or the Gauss-sum evaluation.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-145",
+   "title": "Complete classification of the first off-diagonal pairs: 2-opt, swap and figure-eight",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "finite_control",
+    "computer_certificate",
+    "lean_formalization",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "finite_control",
+    "computer_certificate",
+    "lean_formalization",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineC-random-phase/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineC/rank_dist.py",
+    "computations/verification/lineC/decompose.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineCEncounter.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXHAUSTIVE COMPUTER CHECK (m<=9) + LEAN FINITE INSTANCES (m=6) + INDEPENDENT REFEREE AUDIT",
+   "boundary": "At deficit 0, rank_Q(A_C - A_H)=2 for a Hamiltonian cycle H != C holds iff H is a 2-opt of C (m(m-3)/2 cycles) or a swap of two vertices at cyclic distance >=3 (m(m-5)/2 cycles, m>=5). Each gives a hyperbolic Gauss sum N^{n-1} for every odd N. The diagonal is D_m (2m permutations, m>=3). At deficit 1 and rank 0 the pairs are the figure-eight words, m d(g) d(m-g) of them, with weight w(2)=-1/2. Rank 1 is impossible at deficit 0. Ranks 1 and 3 are absent at deficit 0 for m<=9 here (m<=10 in the referee check), but that is not a general lemma. The swap class is absent from the three diagram families of Gnutzmann-Seif 2004. Exhaustive checks: Lemma 4 for m<=9 (m<=10 by the referee), Lemma 5 for m<=9. Lean decides m=6 only: aut6, ham6=60, rank2_class6, rank2_counts6 (1, 9, 3) and fig8_6. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the m=6 instances only. The exhaustive rank check through m=9, and the referee check through m=10, are finite enumerations, not a general lemma.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-146",
+   "title": "Exact tau^2 coefficient of the Haar diagonal-phase cat-map form factor at fixed time",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineC-random-phase/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineC/fixes_check.py",
+    "computations/verification/lineC/threshold_check.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineCEncounter.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER FACTS ONLY) + INDEPENDENT REFEREE AUDIT; EXPLICIT REMAINDER NON-INFORMATIVE BELOW (C_m/2m^2)^2",
+   "boundary": "For m>=3 and every prime p>4^m, E|Tr(D M_p)^m|^2 = sum_{k=0}^{2m-1} a_{m,k}(p) p^{-k/2} exactly. Each a_{m,k} is a Q-combination of eps_p^r (D/p) with r=k mod 2, so it vanishes for k odd and p=3 mod 4. The coefficients a_0=2m and a_1=0 hold for all m; a_2=-2m^2 for every m>=5, with -9 at m=3 and -24 at m=4. This is the COE coefficient -2 tau^2: 2-opt pairs give m^2(m-3), swaps m^2(m-5) and figure-eights -2m^3+6m^2. Corollary: |E - 2m - a_2/p| <= C_m p^{-3/2} with C_m = m! sum|W| (3651, 90921, 3.1e6, 1.4e8 at m=5..8). That explicit bound is informative only for p > (C_m/2m^2)^2 (5.3e3 at m=5, 1.1e12 at m=8, 2.3e26 at m=12). Fixed m only, not uniform in m, nothing at fixed tau. The tau^2 coefficient was derived diagrammatically for the same ensemble, in the limit n,B->infinity, by Gnutzmann-Seif 2004 (PRE 69 056219/056220), and is predicted non-rigorously by Gnutzmann-Altland 2005 and Pluhar-Weidenmuller 2014. What is new is the rigorous fixed-m, exact-in-p statement with a complete pair classification. Refines BGS-TRACE-128 at prime N. Lean decides coeff_identity for 5<=m<=300 and hyp_counts at p=5,7,11,13. It does not formalize the Gauss-sum evaluation or the Hadamard bound. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the integer coefficient identity for 5<=m<=300 and the hyperbolic counts at four primes. It does not formalize the Gauss-sum evaluation or the Hadamard bound. The explicit remainder is non-informative below (C_m/2m^2)^2.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-147",
+   "title": "Computer-assisted exact expansions to m=12 and the fixed-m tau^3 deviation from COE",
+   "state": "verification-pending",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 2,
+    "verifiers": 7,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineC-random-phase/receipt.json",
+    "evidence/executions/20261029/lineC-random-phase/independent_replay/compare_theirs.log"
+   ],
+   "verifiers": [
+    "computations/verification/lineC/engine.cpp",
+    "computations/verification/lineC/run_engine.py",
+    "computations/verification/lineC/gauss_exact.py",
+    "computations/verification/lineC/symbolic.py",
+    "computations/verification/lineC/threshold_check.py",
+    "computations/verification/lineC/independent_replay/engine.cpp",
+    "computations/verification/lineC/independent_replay/sym.py"
+   ],
+   "formalization": [],
+   "ledger_status": "COMPUTER-ASSISTED EXACT EXPANSION (ALGORITHM PROVED) + COMPUTATIONAL SMALL-PRIME RANGES; INDEPENDENT REPLAY DEPOSITED 2026-10-29; STATUS REVIEW PENDING",
+   "boundary": "Exact large-p expansions for p>4^m: all orders for m<=10, and through p^{-5/2} for m=11,12 (partitions of deficit<=2). There is no p^{-3/2} term for m<=12. c2 equals 2m^3 at m=7,10,11 and differs at m=5 (175+10(5/p)), 6 (390), 8 (1008), 9 (1512) and 12 (3480 vs 3456); |c2-2m^3|<=3.4m^2. This is a fixed-m deviation from the finite-N COE value. It does not contradict Gnutzmann-Seif, whose result stops at O(tau^3). In K at fixed tau it is (c2-2m^3)/m^2 * tau^2/p, consistent with COE in the scaling limit, but that limit is not proved. p^{-5/2} appears only for p=1 mod 4, nonzero at m=4,6,8,10 (8, -72, 128(2/p), 200) and zero at m=12. These values are for the square class of the cross coefficient, which holds for this S. Character terms appear at p^{-2} (m=5) and p^{-3}: (5/p), (2/p), (-3/p), (-7/p). COMPUTATIONAL: the expansion is exact at every prime 3<=p<=257 for m=2,3,4, at every prime 7<=p<=257 for m=5,6,7 (it fails at 3 and 5; m=5 also holds at 3), and at every prime 19<=p<=257 and at p=11 for m=8 (it fails at 3,5,7,13,17). Exact arithmetic (C++ rank mod 2^61-1 under the Hadamard bound, Bareiss determinants, Python fractions). A second implementation exists for m<=8 in the packet. The referee's from-scratch engine is deposited at computations/verification/lineC/independent_replay/, and evidence/executions/20261029/lineC-random-phase/independent_replay/compare_theirs.log records that it reproduces every coefficient for m=3..12 at 171 primes in [101,1200], including m=11 and m=12 through p^{-5/2}. No Lean. The state remains verification-pending: the expansions and the small-prime ranges are computer-assisted, and promotion is a separate status decision, as for BGS-RES-022. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Computer-assisted exact expansion. An independent referee engine is deposited and agrees at 171 primes. No Lean certificate of the expansions. The state stays verification-pending; promotion is a separate status decision, as for BGS-RES-022.",
+   "other_weaknesses": [
+    "thin_layer_stack"
+   ],
+   "risk_reassessment": "STATUS_REVIEW_PENDING_AFTER_REPLAY"
+  },
+  {
+   "id": "BGS-TRACE-148",
+   "title": "Scaling-limit conjecture for the Haar diagonal-phase cat-map form factor",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [
+    "exact_identity"
+   ],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineC-random-phase/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "CONJECTURE; EXACT DATA m<=12 AND MONTE CARLO DIAGNOSTICS ONLY",
+   "boundary": "Conjecture 8: (a) c2(m)=2m^3+O(m^2); the guess c2=2m^3 for m>=10 is refuted at m=12. (b) For each k the trivial-character p^{-k} coefficient is the COE leading term times (1+O(1/m)). (c) All half-integer and character terms are O(m^k) at order p^{-k} or p^{-k-1/2}, so they vanish in the tau-scaling limit. The m<=12 data and the Monte Carlo at N=101,103 (chi^2/dof 0.93-1.25 against the finite-N COE over 0<tau<=2) are consistent. Gnutzmann-Altland 2005 and Pluhar-Weidenmuller 2014 predict the full COE K(tau) non-rigorously. Open. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open; the m<=12 table and the Monte Carlo are diagnostics, not a proof of the scaling limit",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN_CONJECTURE"
   }
  ],
  "recovery_upgrade": {
