@@ -1,5 +1,13 @@
 # Scientific changelog
 
+## 2026-10-29 — Self-red-team of the scalar-return Bessel identity
+
+BGS-TRACE-129. The Bessel identity is the phase average of the classical position-diagonal orbit sum. It is not the quantum sixteen-phase average. A referee Monte Carlo, recorded in the proof, differs from that classical average by ≈1.7 at \(N=11\), \(m=12\), and by up to ≈6 at \(N=29\), \(m=10\) (\(\eta=2\)), and tracks it at zero quadruple excess for \(\lambda\lesssim 1\). The factor \(J_0\) and its products are classical. Time one equals \(1+\rho_1\), not the bare value \(1\). Each of \(\ell=\pm 1\) has energy \(9/160000\), so \(9/80000\) together. Lean does not certify that the order at \(p=11\) is exactly \(12\), and the quadruple rows at \(11\), \(31\), \(41\) and \(47\) are Python-only. No new external dependency.
+
+## 2026-10-29 — Bessel form of the scalar-return orbit sum
+
+Register BGS-TRACE-129. At a scalar return \(S^m\equiv I\), the cat-map propagator is a scalar and the kicked trace is the trace of the Egorov product. Modes congruent to \(0\) cancel in the squared modulus, and the time-one coefficient vanishes for every odd dimension, so the averaged squared trace equals \(1+\rho_1\) inside the perturbative window. For a position-diagonal kick the classical orbit sum has an exact phase average, a product of Bessel factors \(J_0\) indexed by pairs of torus points. That identity is not the quantum sixteen-phase average. Its degree-two jet is the exponential \(\exp(-m\sigma_{\mathrm{diag}}\eta^2)\). The degree-four gap is the additive excess of the position orbit: it vanishes at the primes \(7\), \(31\), \(41\) and \(47\), and it does not vanish at \(11\). Each of the rows \(\ell=\pm 1\) has energy \(9/160000\). No COE limit and no CUE crossover are claimed. Python and C++ check the orbit counts and the Bessel sum in floating point; a Lean rational witness certifies the orders at \(5\) and \(7\), the quadruple counts at those primes, and the energy identity. It does not certify minimality of the order \(12\) at \(p=11\). BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+
 ## 2026-10-29 — Self-red-team of the short-time diagonal-phase argument
 
 BGS-TRACE-128. The Kloosterman scaling is \(S(ra,sa^{-1})=S(r,s)\). The identity \(S(ra,sa)=S(r,s)\) is false. The phase gap is \(\delta=3\cdot 4^{-1}-9\), and \(4\delta=-33\) is unchanged. The monomials \(x_a^{-1}x_b\) are distinct reduced monomials, not characters. A second diagonal is removed by conjugating with \(D_2\): \(D_2(D_1M_ND_2)D_2^{-1}=(D_2D_1)M_N\). The square-root conjugation is false. The limits are unchanged. No new external dependency.
