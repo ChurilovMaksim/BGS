@@ -2,6 +2,8 @@
 
 ## Phase average, revival, and the signed sum
 
+BGS-TRACE-127 gives the exact diagonal-phase form factor of \(DM_N\) at times one, two and three, and the bound \(m!\) at every time. The phases are independent at the \(N\) sites. They are not the sixteen mode-pair phases, and the time-three value tends to \(6\), not to the CUE value \(3\). The sixteen-phase ensemble at coupling of order \(1\), for times growing with \(N\), remains unresolved: a finite sample suppresses some arithmetic revivals and still shows spikes that are not kernel spikes. That sample is not a limit.
+
 BGS-TRACE-126 evaluates an auxiliary average of \(|\operatorname{Tr} U^m|^2\) over independent phases on the 16 mode pairs, through order \(\eta^2\), and identifies the second-order coefficient at a prime revival. That average is not the fixed-kick statistic. The linear term of the fixed kick is nonzero at \(N=11\), \(m=3\). Replacing the time-ordered product at a full period by the exponential of the averaged kick is not proved, so the Kurlberg–Rudnick matrix-element law does not evaluate \(N^{-1}|\operatorname{Tr} U^P|\). Inside the truncation \(m B|\eta|\le 1\) with \(m\le N\) and \(\eta=\tau N\), the parameter \(\tau^2 N^3\) is \(O(1/N)\) along \(m\sim N\). A positive limiting value of that parameter remains open.
 
 Parity and position-basis conjugation hold for every real coupling at dimension \(7\), where the kick is \((9/10)I\), and they fail for every other odd dimension when \(0<\lvert\eta\rvert<\pi/B\). That dichotomy does not decide a COE or CUE limit. The signed off-diagonal sum in BGS-TRACE-005 remains the open fixed-family obligation.

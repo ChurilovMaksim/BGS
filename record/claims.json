@@ -5452,6 +5452,31 @@
       "manuscript": [
         "manuscript/unified_sections/interaction_phase_form_factor.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-127",
+      "title": "Diagonal random-phase form factor of the cat map at times one, two and three",
+      "source": "mathematics/fixed-map/diagonal_phase_form_factor.md",
+      "dependencies": [
+        "BGS-TRACE-126"
+      ],
+      "boundary": "For every N>=1 and every complex N by N matrix with all entries of modulus N^{-1/2}, if D is diagonal with independent uniform phases and U=DM, then E|Tr U^m|^2 <= m! for every m>=1, E|Tr U|^2=1, and E|Tr U^2|^2=(2N-1)/N. For the cat-map quantization at every odd N>=3, E|Tr U_N^3|^2=(6N^2-9N+4)/N^2, strictly between 1 and 6. On those dimensions |ker(S^2-I)|=1 and |ker(S^3-I)| equals 49 if 7 divides N and equals 1 otherwise. By the trace-closure lemma of BGS-TRACE-126 these are the pure squared traces. The diagonal-phase value is strictly above the pure value at time 2, strictly above it at time 3 when 7 does not divide N, and strictly below 6 while the pure value is 49 when 7 divides N. The kernel does not grow with the exponent of 7: at N=49 it is 49, not 2401. This is not the 16-phase ensemble of BGS-TRACE-126 and not the fixed kick. The time-three limit 6 is not the CUE value 3. No symmetry class is identified. The bound m! does not separate a revival once m! >= N^2. Nothing beyond that bound is claimed for m>=4. A 24-draw splitmix sample at eta=2, recomputed in Python and C++, has mean 44.632431403503 at N=7 time 3 and mean 47.417022055369 at N=31 time 5, where |ker(S^5-I)|=1. That sample is not the sixteen-phase expectation and not a CUE or COE limit. Lean decides the matrix factorizations, the numerator identity (5N-4)(N-1)=5N^2-9N+4, and the strict gaps. It does not formalize the path count. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/diagonal-phase-form-factor/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/diagonal_phase_form_factor.py",
+        "computations/cpp/diagonal_phase_form_factor.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/DiagonalPhaseFormFactorRational.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/diagonal_phase_form_factor.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

@@ -1,0 +1,33 @@
+{
+  "schema": "bgs-diagonal-phase-form-factor-v1",
+  "claim": "BGS-TRACE-127",
+  "ensemble": "independent uniform phases on the N position sites",
+  "time_one": "1",
+  "time_two": "(2N-1)/N",
+  "time_three": "(6N^2-9N+4)/N^2",
+  "factorial_bound": "m!",
+  "kernel_time_two": "1 for every odd N>=3",
+  "kernel_time_three": "49 if 7 divides N, else 1",
+  "rejected_draft": "7^{2 v_7(N)} fails at N=49, where the kernel is 49 not 2401",
+  "occupation_max_abs_err": "below 1e-11 in Python and C++",
+  "certificate_dimensions": [3, 5, 7, 9, 11, 15, 21, 25, 27, 35, 45, 49, 63, 105],
+  "sixteen_phase_sample": {
+    "seed": 20261029,
+    "draws": 24,
+    "eta": 2,
+    "dimensions": [3, 5, 7, 11, 31],
+    "times": "1..6",
+    "N7_m3_mean": "44.632431403503",
+    "N31_m5_mean": "47.417022055369",
+    "ker_S5_mod_31": 1,
+    "languages_agree_to_twelve_digits": true
+  },
+  "sources_sha256": {
+    "python": "c464d64c7460ddf689a8a2a6449957930b77ecdd88bbec621d4d02044c5ed58f",
+    "cpp": "224bae4d310c98af420b6ace2e4f1851e96f69d6784bbeb42bc196382c45426f",
+    "lean": "27814e8aadde0c1e632937eec5630317981fc29feeafea469a8e67fd7817aa72",
+    "proof": "61d90140a49869afb9648b768db944cf8bdbee1431ebed0bc64b2eead4b51b24"
+  },
+  "self_red_team": "The draft kernel 7^{2 v_7(N)} was rejected by the count at N=49. The sixteen-phase sample is not a limit.",
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a CUE or COE limit, or the sixteen-phase expectation."
+}

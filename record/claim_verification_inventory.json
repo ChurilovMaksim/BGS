@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "d933b02ba51be9db073938b243723e05fc90527c",
+ "source_blob_sha": "3a5822b257dc55fbd81ce61d0b5f37bcb1e1ac0c",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -38,7 +38,8 @@
   "BGS-TRACE-125 was appended on 2026-10-29. Its Lean file certifies rational inequalities, the mode mass, the lag-1 coefficient, and the scan at N=41 only; the Pell induction, the archimedean embedding, and the quadratic-form descent are pen-and-paper. The analytic comparison was checked by the author and was not given an independent referee.",
   "On 2026-10-29 the ledger phrase LEAN FORMALIZATION on BGS-TRACE-117 through BGS-TRACE-125 was replaced by LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY). The methods tag lean_formalization is retained because the Lean file is nonempty. It certifies integer comparisons only.",
   "BGS-TRACE-126 was appended on 2026-10-29. Its Lean file certifies the scaled symbol arithmetic only; the trace closure and the phase average were checked by the author and were not given an independent referee.",
-  "BGS-TRACE-126 was corrected on 2026-10-29 after a self-red-team review of the unmerged note. Symbol modes congruent to 0 at the primes 3, 5 and 7 lie in the image, so the prime-revival coefficient is -m (sigma - sigma_0(p)) p^2. The remainder bounds include the quartic term inside |P_2|^2. The derivative remainder is the integral form."
+  "BGS-TRACE-126 was corrected on 2026-10-29 after a self-red-team review of the unmerged note. Symbol modes congruent to 0 at the primes 3, 5 and 7 lie in the image, so the prime-revival coefficient is -m (sigma - sigma_0(p)) p^2. The remainder bounds include the quartic term inside |P_2|^2. The derivative remainder is the integral form.",
+  "BGS-TRACE-127 was appended on 2026-10-29. Its Lean file certifies the integer factorizations and gaps only; the occupation count was checked by the author and was not given an independent referee. A draft kernel 7^{2 v_7(N)} was rejected by the count at N=49."
  ],
  "claims": [
   {
@@ -7887,6 +7888,50 @@
    "boundary": "For every odd N>=3, every m>=1 and every real eta, the average of |Tr U(eta,phi)^m|^2 over independent uniform phases on the 16 mode pairs equals |ker(S^m-I)| + eta^2 D_2(N,m) + rho, with D_2 an explicit Gauss-sum coefficient of size at most 2 m^2 sigma |ker| and with sigma=66033/160000. With x=m B |eta| and B=184981/160000, the averaged remainder satisfies |rho| <= N^2 [(x^3/6)(2+x^3/6)+x^4/4]. The fixed-kick remainder satisfies |r| <= N^2 [(x^3/6)(2+x^3/6)+x^3+x^4/4]. At an odd prime p, with m the order of S, D_2=-m (sigma-sigma_0(p)) p^2, where sigma_0(p) is the energy of the symbol modes congruent to 0 modulo p: sigma_0(3)=81/64000, sigma_0(5)=1/320000, sigma_0(7)=81/200, and sigma_0(p)=0 for every prime p>=11. The values include D_2(3,4)=-1184949/80000, D_2(5,6)=-79239/1280, D_2(7,3)=-181251/160000 and D_2(41,5)=-111001473/32000. The fixed kick has linear coefficient -2 m |ker| Im Sigma, nonzero at N=11, m=3 by a cyclotomic witness. Parity and position-basis conjugation commute or reverse M_N. Both kick defects vanish at N=7, where A_7=(9/10) I, and both are positive for every other odd N. For 0<|eta|<pi/B the kicked propagator therefore fails both symmetries outside dimension 7. The stable defects are 663/1000000 for odd N>=19 and 66031/80000 for odd N>=79. This is an auxiliary phase average, not the fixed kick and not the signed off-diagonal sum. No revival limit is proved: a positive limit of tau^2 N^3 at times comparable to N lies outside the truncation. The Kurlberg-Rudnick moments are not inputs. N-dependent antiunitaries other than these two symmetries are not classified. Lean certifies the scaled Fourier table, the energy, the parity energy, the majorant, the unreduced reversal sum, the three zero-mode energies and the scalar identity A_7=(9/10) I. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the scaled Fourier table, the energy, the parity energy, the majorant, the unreduced reversal sum, the zero-mode energies at 3, 5, 7 and 11, and the folded identity A_7=(9/10) I. The trace closure and the phase average are not formalized. Python and C++ recompute the integer sums, the cyclotomic witness, the orders and revival coefficients at 3, 5, 7 and 41, and the folded defects, and compare the Gauss-sum traces with literal matrices in floating point.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-127",
+   "title": "Diagonal random-phase form factor of the cat map at times one, two and three",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/diagonal-phase-form-factor/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/diagonal_phase_form_factor.py",
+    "computations/cpp/diagonal_phase_form_factor.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/DiagonalPhaseFormFactorRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "For every N>=1 and every complex N by N matrix with all entries of modulus N^{-1/2}, if D is diagonal with independent uniform phases and U=DM, then E|Tr U^m|^2 <= m! for every m>=1, E|Tr U|^2=1, and E|Tr U^2|^2=(2N-1)/N. For the cat-map quantization at every odd N>=3, E|Tr U_N^3|^2=(6N^2-9N+4)/N^2, strictly between 1 and 6. On those dimensions |ker(S^2-I)|=1 and |ker(S^3-I)| equals 49 if 7 divides N and equals 1 otherwise. By the trace-closure lemma of BGS-TRACE-126 these are the pure squared traces. The diagonal-phase value is strictly above the pure value at time 2, strictly above it at time 3 when 7 does not divide N, and strictly below 6 while the pure value is 49 when 7 divides N. The kernel does not grow with the exponent of 7: at N=49 it is 49, not 2401. This is not the 16-phase ensemble of BGS-TRACE-126 and not the fixed kick. The time-three limit 6 is not the CUE value 3. No symmetry class is identified. The bound m! does not separate a revival once m! >= N^2. Nothing beyond that bound is claimed for m>=4. A 24-draw splitmix sample at eta=2, recomputed in Python and C++, has mean 44.632431403503 at N=7 time 3 and mean 47.417022055369 at N=31 time 5, where |ker(S^5-I)|=1. That sample is not the sixteen-phase expectation and not a CUE or COE limit. Lean decides the matrix factorizations, the numerator identity (5N-4)(N-1)=5N^2-9N+4, and the strict gaps. It does not formalize the path count. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the matrix factorizations, the numerator identity, and the strict gaps. The occupation count is not formalized. Python and C++ enumerate it on the certificate dimensions, including N=3, 5 and 7, and recompute one sixteen-phase sample.",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
    ],
