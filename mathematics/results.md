@@ -2,7 +2,7 @@
 
 ## Scalar-return orbit sum, 29 October 2026
 
-[TRACE-129](fixed-map/scalar_return_bessel.md) evaluates the sixteen-phase ensemble at a return \(S^m\equiv I\). The cat-map power is scalar. The classical orbit sum of a position-diagonal kick has an exact Bessel average, whose degree-two jet is \(\exp(-m\sigma_{\mathrm{diag}}\eta^2)\). The degree-four gap is the quadruple excess of the position orbit. It vanishes at \(7\), \(31\), \(41\) and \(47\), and it equals \(120\) at \(11\). Time one stays at the pure value \(1\) inside the perturbative window. The momentum-row energy is \(9/160000\). No form-factor limit at times of order \(N\) is proved. BGS-TRACE-005 stays open.
+[TRACE-129](fixed-map/scalar_return_bessel.md) gives the Bessel average of the classical position-diagonal orbit sum at a return \(S^m\equiv I\). It is not an identity for the quantum sixteen-phase average. The degree-two jet is \(\exp(-m\sigma_{\mathrm{diag}}\eta^2)\). The degree-four gap is the quadruple excess of the position orbit. It vanishes at \(7\), \(31\), \(41\) and \(47\), and it equals \(120\) at \(11\). Time one equals \(1+\rho_1\) inside the perturbative window. Each momentum row \(\ell=\pm 1\) has energy \(9/160000\). No form-factor limit at times of order \(N\) is proved. BGS-TRACE-005 stays open.
 
 ## Short-time diagonal-phase limits, 29 October 2026
 

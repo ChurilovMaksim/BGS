@@ -1,7 +1,7 @@
 # Bessel form of the scalar-return orbit sum
 
 **Claim ID:** `BGS-TRACE-129`.
-**Status:** project proof. The scalar reduction, the vanishing of the time-one coefficient, the Bessel identity for the classical orbit sum, and the second-moment count are proved below. Python and C++ recompute the integer orbit counts and the Bessel sum in floating point, including at the primes \(5\), \(7\) and \(11\). Lean decides the integer identities only. It does not sum the complex form factor. No external referee.
+**Status:** project proof. The scalar reduction, the vanishing of the time-one coefficient, the Bessel identity for the classical orbit sum, and the second-moment count are proved below. Python and C++ recompute the integer orbit counts and the Bessel sum in floating point. Lean decides \(\det(S-I)=-4\), the orders at \(5\) and \(7\) together with the checked proper divisors, the identity \(S^{12}\equiv I\pmod{11}\) without a certificate that \(12\) is minimal, the quadruple counts at \(5\) and \(7\), and the momentum-row energy. The quadruple rows at \(11\), \(31\), \(41\) and \(47\) are Python-only. Lean does not sum the Bessel average. No external referee.
 
 `BGS-TRACE-126` supplies Egorov, the trace closure, and the order-two coefficient. `BGS-TRACE-005` and `BGS-BGS-001` remain **open**. The COE limit of the sixteen-phase ensemble, and the crossover to CUE produced by the momentum modes, are not proved.
 
@@ -22,7 +22,7 @@ where \(A_j(\varphi)=M_N^j A_N(\varphi)M_N^{-j}=\sum_v c_v(\varphi)\,T_N(S^j v)\
 \mathbb E_\varphi\lvert\operatorname{Tr} U_N(\eta,\varphi)\rvert^2
 =1+\rho_1(N,\eta),
 \]
-with the remainder bound of that note. Inside the window \(B\lvert\eta\rvert\le 1\) the expectation stays at \(1\), which is the pure value, rather than at the short-time orthogonal value \(2\). The identity is not claimed for large \(\lvert\eta\rvert\).
+with the remainder bound of that note. Inside the window \(B\lvert\eta\rvert\le 1\) the expectation equals \(1+\rho_1(N,\eta)\), the pure value plus that remainder, rather than the short-time value \(2\). The identity is not claimed for large \(\lvert\eta\rvert\).
 
 **Theorem 3 (classical orbit sum).** Let the kick be position-diagonal: only modes \((\ell,k)=(0,k)\) are kept, and write \(a_\varphi\) for its real symbol, so
 \[
@@ -53,7 +53,7 @@ where \(V(z)=\sum_{j<m}e_p(k\,q(S^j z))\). Consequently the degree-two jet of th
 \]
 with \(\sigma_{\mathrm{diag}}\) the energy of the diagonal modes. The same jet is \(1-m(\sigma_{\mathrm{diag}}-\sigma_0)\eta^2\) when zero modes are present. This is the degree-two jet of \(\exp(-m(\sigma_{\mathrm{diag}}-\sigma_0)\eta^2)\).
 
-**Boundary.** The identity \(\mathbb E\lvert\operatorname{Tr} U^m\rvert^2=N^2\exp(-m(\sigma-\sigma_0)\eta^2)\) is not proved for \(\eta^2\sigma m\) of order one. Inside the window \(m B\lvert\eta\rvert\le 1\) of `BGS-TRACE-126`, that exponential and the proved quadratic differ by at most \(\mu^2 e^{\mu}/2\) with \(\mu=m(\sigma-\sigma_0)\eta^2=O(1/m)\), so both lie within the remainder of that note of the expectation. At a scalar return the same quadratic is the jet of Theorem 3. The degree-four gap is the number of non-permutation solutions of \(U_a+U_b=U_c+U_d\). That excess vanishes at the primes \(7\), \(31\), \(41\) and \(47\), and it does not vanish at \(11\). The momentum modes \(\ell=\pm 1\) have total energy \(9/160000\) in the \(\ell=1\) row; they are the only modes that can break position conjugation. Their smallness is why a COE regime can persist, and it is not a proof of a COE limit or of a CUE crossover. The asymmetry between \(N=201\) and \(N=203\) is not treated. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
+**Boundary.** The identity \(\mathbb E\lvert\operatorname{Tr} U^m\rvert^2=N^2\exp(-m(\sigma-\sigma_0)\eta^2)\) is not proved for \(\eta^2\sigma m\) of order one. Inside the window \(m B\lvert\eta\rvert\le 1\) of `BGS-TRACE-126`, that exponential and the proved quadratic differ by at most \(\mu^2 e^{\mu}/2\) with \(\mu=m(\sigma-\sigma_0)\eta^2=O(1/m)\), so both lie within the remainder of that note of the expectation. At a scalar return the same quadratic is the jet of Theorem 3. The degree-four gap is the number of non-permutation solutions of \(U_a+U_b=U_c+U_d\). That excess vanishes at the primes \(7\), \(31\), \(41\) and \(47\), and it does not vanish at \(11\). The rows \(\ell=+1\) and \(\ell=-1\) each have energy \(9/160000\), hence \(9/80000\) together. They are the only modes that can break position conjugation. Their smallness is why a COE regime can persist, and it is not a proof of a COE limit or of a CUE crossover. The asymmetry between \(N=201\) and \(N=203\) is not treated. `BGS-TRACE-005` and `BGS-BGS-001` remain open.
 
 ## 2. Scalar return and time one
 
@@ -83,7 +83,7 @@ The phases are independent, and
 \[
 (2\pi)^{-1}\int_0^{2\pi}\exp(iw\cos(\varphi+\psi))\,d\varphi=J_0(w)
 \]
-does not depend on \(\psi\). The average of one orbit factor is \(\prod_r J_0(2\eta\lvert c_r\rvert\,\lvert V_r(z)\rvert)\).
+does not depend on \(\psi\). This is the classical Bessel integral, equivalently the constant term of the Jacobi–Anger expansion. A product of such factors, one for each independent random phase, is the classical calculus of a planar random walk with prescribed step lengths: Kluyver, A local probability problem, Proceedings of the Section of Sciences, Koninklijke Akademie van Wetenschappen te Amsterdam, 8 (1905), 341–350, which was read on 29 October 2026 from the Academy record. The product is not new. The content proved here is the bookkeeping that attaches those factors to the cat-map position orbit and that reads the degree-four gap as the quadruple excess of that orbit. The average of one orbit factor is \(\prod_r J_0(2\eta\lvert c_r\rvert\,\lvert V_r(z)\rvert)\).
 
 For the square, the difference of two such cosine sums is
 \[
@@ -131,11 +131,23 @@ The fourth moment \(p^{-2}\sum_z\lvert V\rvert^4\) equals the number of quadrupl
 
 Where the excess vanishes, the fourth moment is the Wick count \(2m^2-m\). Where it does not, the Bessel average lies above the exponential once \(\eta^2 m\) is of order one. At \(p=11\), order \(12\), and \(\lambda=m\sigma_{\mathrm{diag}}\eta^2=1\), the programs record a ratio greater than \(1.1\). At \(p=31\) and \(p=47\), where the excess vanishes, the same ratio at \(\lambda=1\) stays within three percent of \(1\). Neither numerical row is the missing estimate that would promote the exponential to an identity.
 
-The momentum row \(\ell=1\) has scaled energy \(\sum 25 r(k)^2=900\), hence energy \(900/4000^2=9/160000\). Position conjugation fixes every \(\ell=0\) mode and moves the \(\ell=\pm 1\) modes. That energy is the exact weight of the breaking. A limit shape for the form factor at times of order \(N\), whether orthogonal or unitary, is not deduced from it.
+The momentum row \(\ell=1\) has scaled energy \(\sum 25 r(k)^2=900\), hence energy \(900/4000^2=9/160000\). The row \(\ell=-1\) has the same energy, so the two rows together have energy \(9/80000\). Position conjugation fixes every \(\ell=0\) mode and moves the \(\ell=\pm 1\) modes. That per-row energy is the exact weight of the breaking. The rows of the table at \(11\), \(31\), \(41\) and \(47\) are Python and C++ counts. Lean certifies the quadruple counts only at \(5\) and \(7\), and it does not certify that \(12\) is the minimal order at \(p=11\). A limit shape for the form factor at times of order \(N\), whether orthogonal or unitary, is not deduced from it.
 
 ## 6. Self-audit
 
-The factor \(J_0\) is an average over a phase, not an eigenvalue of the propagator. The several-time quantum product \(\prod_j\exp(i\eta A_j)\) is not the exponential of the sum, and it is not claimed to equal the orbit sum. They share the value \(Z_m\) at \(\eta=0\) and the same order-two coefficient at a scalar return; the programs compare them in floating point and the gap is not given a uniform bound of size \(o(N^2)\) for \(\eta^2 m\) of order one.
+The factor \(J_0\) is an average over a phase, not an eigenvalue of the propagator. Theorem 3 is an identity for the classical position-diagonal orbit sum. It is not an identity for the quantum sixteen-phase average \(\mathbb E\lvert\operatorname{Tr} U^m\rvert^2/N^2\). The several-time quantum product \(\prod_j\exp(i\eta A_j)\) is not the exponential of the sum, and it is not claimed to equal the orbit sum. They share the value \(Z_m\) at \(\eta=0\) and the same order-two coefficient at a scalar return; the gap is not given a uniform bound of size \(o(N^2)\) for \(\eta^2 m\) of order one.
+
+The independent referee audit of 29 October 2026 recorded the following Monte Carlo of \(\mathbb E\lvert\operatorname{Tr} U^m\rvert^2/N^2\) at \(m=\operatorname{ord}(S\bmod N)\), beside the Bessel average of Theorem 3, a classical Monte Carlo of the orbit sum, and \(\exp(-m\eta^2(\sigma-\sigma_0))\). The three couplings are \(\eta=1/2\), \(1\) and \(2\). This table is numerical evidence from that audit. It was not re-executed by the certificates of this note.
+
+| \(N\) | \(m\) | quantum | Bessel | classical MC | exponential |
+|---:|---:|---|---|---|---|
+| 7 | 3 | 0.9942, 0.9770, 0.9122 | 0.9943, 0.9776, 0.9147 | 0.9943, 0.9779, 0.9132 | 0.9942, 0.9771, 0.9117 |
+| 11 | 12 | 0.377, 0.111, 0.084 | 0.397, 0.191, 0.115 | 0.386, 0.196, 0.110 | 0.290, 0.0071, 0 |
+| 29 | 10 | 0.390, 0.070, 0.0146 | 0.449, 0.195, 0.087 | 0.453, 0.206, 0.080 | 0.356, 0.016, 0 |
+| 41 | 5 | 0.593, 0.1154, 0.0088 | 0.595, 0.116, 0.006 | 0.594, 0.1162, 0.0077 | 0.597, 0.127, 0.0003 |
+| 199 | 9 | 0.395, 0.032, 0.0011 | 0.391, 0.021, 0.001 |  | 0.395, 0.024, 0 |
+
+The quantum column tracks the Bessel column at the zero-excess primes \(7\) and \(41\) for small \(\lambda\), and at \(N=199\). At \(N=11\), \(m=12\), and at \(N=29\), \(m=10\), the quantum average and the Bessel average differ by a factor of up to about \(3\). The exponential tracks the Bessel average only for \(\lambda\lesssim 1\) at zero excess. None of these rows promotes Theorem 3 to a quantum identity.
 
 The exponential \(\exp(-m\sigma\eta^2)\) is the degree-two jet, and it is the exact Bessel average of a complex Gaussian whose second moment equals \(2m\). The orbit is not that Gaussian whenever the quadruple excess is positive. A bound \(\lvert\mathbb E\lvert\operatorname{Tr}\rvert^2-N^2 e^{-\mu}\rvert\le N^2\varepsilon(\mu)\) with \(\varepsilon(\mu)\to 0\) for each fixed \(\mu\), uniformly in the prime, is not proved. The window \(m B\lvert\eta\rvert\le 1\) remains the one in which `BGS-TRACE-126` controls the quantum expectation.
 
