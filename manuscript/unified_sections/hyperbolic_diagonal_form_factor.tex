@@ -1,0 +1,46 @@
+\section{Diagonal phase average for every hyperbolic cat map}
+\label{sec:hyperbolic-diagonal-form-factor}
+The canonical proof is
+\path{mathematics/fixed-map/hyperbolic_diagonal_form_factor.md}.
+The integer certificate is
+\path{formalization/Bgs/HyperbolicDiagonalFormFactor.lean}.
+Python and C++ recompute the companion arithmetic, the kernels, and the time-one Bessel evaluation.
+No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+
+\begin{theorem}[Hyperbolic diagonal form factor, BGS-TRACE-131]
+\label{thm:hyperbolic-diagonal-form-factor}
+Let \(S=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix}\in\mathrm{SL}(2,\mathbb Z)\)
+with \(|\alpha+\delta|\ge 3\), and let \(N\ge 3\) be odd with \(\gcd(\beta,N)=1\).
+The position-basis matrix \(M_N(S)\) with phase
+\(\kappa(\delta x^2-2xy+\alpha y^2)\), \(\kappa\equiv-(2\beta)^{-1}\),
+and prefactor \(N^{-1/2}\) is unitary and flat. It is symmetric if and only if
+\(\alpha\equiv\delta\pmod N\). For every \(m\ge 1\),
+\(\lvert\operatorname{Tr} M_N(S)^m\rvert^2=\lvert\ker(S^m-I)\rvert\).
+The sequences \(u_n=\operatorname{tr}(S^n)\) and \(v_n\) depend only on the trace.
+For an odd prime \(p\nmid\beta\), the kernel has order \(1\), \(p\), or \(p^2\)
+according as \(p\nmid(2-u_m)\), the matrix is a nontrivial unipotent, or
+\(S^m\equiv I\). The last test is \(v_m\equiv 0\) and \(v_{m-1}\equiv-1\), and
+it depends only on the trace. If \(p\nmid 2\Delta\), the order divides
+\(p-(\Delta/p)\). If \(p\mid\beta\), equal traces need not agree: the two
+matrices of trace \(-16\) in the note have kernels \(9\) and \(3\) modulo \(3\).
+
+For \(f=\sum_k a_k\cos(2\pi k q/N+\varphi_k)\) with independent uniform phases,
+the quantum average of \(\lvert\operatorname{Tr} U^m\rvert^2\) is the Bessel
+path sum of the note. If \(\gcd(2-t,N)=1\), the time-one value is \(1\) for
+every real coupling. In general
+\[
+\mathbb E_\varphi\lvert\operatorname{Tr} U^m\rvert^2
+=\lvert\ker(S^m-I)\rvert+\eta^2 D_2(S,a,m,N)+\rho,
+\]
+with \(\lvert D_2\rvert\le 2m^2\sigma\lvert\ker\rvert\),
+\(\sigma=\sum a_k^2/2\), and the remainder of the note.
+At an identity revival, \(D_2=-m(\sigma-\sigma_0(p))p^2\). This is not the
+all-order revival law. The fixed-time limit is not claimed.
+Let \(E=\mathrm{diag}\,e_N(\kappa(\delta-\alpha)x^2)\). Then \(M_N=EM_N^{\mathsf T}E^{-1}\),
+and \(\Theta'=DEK_0\) satisfies \((\Theta')^2=I\) and reverses \(DM_N\) for every such
+\(S\) and every diagonal unitary \(D\). It reduces to \(DK_0\) when
+\(\alpha\equiv\delta\pmod N\). The orthogonal-class name is a heuristic for
+\(\Theta'\), in the sense of Keating--Mezzadri, Nonlinearity 13 (2000), 747.
+\end{theorem}

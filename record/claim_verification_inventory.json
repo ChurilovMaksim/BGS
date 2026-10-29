@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "9d0a67182d2be059c9735a0ca4e789d40f27b2d0",
+ "source_blob_sha": "686b81e766b22749e5c667a2e01b9a5cb0375164",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -46,7 +46,10 @@
   "BGS-TRACE-129 was appended on 2026-10-29. Its Lean file certifies the orders, the quadruple counts at 5 and 7, and the momentum-row energy only; the Bessel average was checked by the author and was not given an independent referee.",
   "On 2026-10-29 a self-red-team correction of BGS-TRACE-129 recorded that the Bessel identity is the classical orbit sum, not the quantum sixteen-phase average; that time one equals 1+rho_1; that each of ell=+1 and ell=-1 has energy 9/160000; and that Lean does not certify minimality of the order 12 at p=11. The quadruple rows at 11, 31, 41 and 47 are Python-only.",
   "BGS-TRACE-130 was appended on 2026-10-29. Its Lean file certifies the momentum-row energy, the determinant, and the integer form of the momentum-sine energy only; the similarity was checked by the author and was not given an independent referee.",
-  "On 2026-10-29 a self-red-team correction of BGS-TRACE-130 replaced similarity to a symmetric unitary by the antiunitary Theta=D K_0, deleted the claim that a CUE form factor is incompatible with that symmetry, restricted K_0-evenness to almost every phase, and corrected the sign of c_{1,k} to (-3-4i) r(k)."
+  "On 2026-10-29 a self-red-team correction of BGS-TRACE-130 replaced similarity to a symmetric unitary by the antiunitary Theta=D K_0, deleted the claim that a CUE form factor is incompatible with that symmetry, restricted K_0-evenness to almost every phase, and corrected the sign of c_{1,k} to (-3-4i) r(k).",
+  "BGS-TRACE-131 was appended on 2026-10-29. Its Lean file certifies companion values, kernel counts, the order modulo 41, the shared order modulo 11, and the revival cross-multiplications only; the operator expansion was checked by the author and was not given an independent referee.",
+  "BGS-TRACE-132 was appended on 2026-10-29. Its Lean file certifies the error constants and the majorant comparison only; the occupation bounds were checked by the author and were not given an independent referee.",
+  "On 2026-10-29 a referee correction of BGS-TRACE-131 and BGS-TRACE-132 replaced symmetry iff alpha=delta by congruence modulo N, recorded the antiunitary Theta'=D E K_0 for every S, restricted the limit 1 to moduli coprime to beta(2-u_m), and narrowed the Lean wording to the integer facts actually decided."
  ],
  "claims": [
   {
@@ -601,7 +604,7 @@
    ],
    "formalization": [],
    "ledger_status": "PROJECT PROOF + CLASSICAL FIXED-POINT INTEGER REGRESSION (Tr(U_N^m) NOT EVALUATED) + PRIMARY LINDEMANN-WEIERSTRASS INPUT + AUTHOR CHECK",
-   "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality. Separate independently reviewed one-step companion: |Tr U_N(t)|² is transcendental for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1. This does not extend squared-trace transcendence to higher powers on7|N or establish spectral simplicity. Prior all-power nonvanishing theorem and inherited source/review status remain intact. Finite regression scope: classical Weyl fixed points and one rational orbit margin for odd N<106 and m<25 only; the regression does not evaluate Tr(U_N^m). The second verifier spectral_extensions.py replays only finite cluster/pivot cases and the one-step trace-square companion.",
+   "boundary": "For all odd N and all m>=1, Tr(U_N^m) is nonzero. Scalar power occurs only at N=7. Algebraic-entry commutant scalar for 7 not dividing N, unitary Weyl-normalizer commuter scalar at odd N>=19. No upper trace bound or microscopic universality. Separate independently reviewed one-step companion: |Tr U_N(t)|\u00b2 is transcendental for every odd N>=3 except7 at nonzero real algebraic t; at7 it equals1. This does not extend squared-trace transcendence to higher powers on7|N or establish spectral simplicity. Prior all-power nonvanishing theorem and inherited source/review status remain intact. Finite regression scope: classical Weyl fixed points and one rational orbit margin for odd N<106 and m<25 only; the regression does not evaluate Tr(U_N^m). The second verifier spectral_extensions.py replays only finite cluster/pivot cases and the one-step trace-square companion.",
    "spof": "single_reviewer_author_check_only",
    "spof_detail": "author check is the only review layer; no independent review",
    "other_weaknesses": [
@@ -931,7 +934,7 @@
    ],
    "formalization": [],
    "ledger_status": "FINITE-N IDENTITY + PROJECT DERIVATION; COMPUTATIONAL CONTROL IS FLOAT64 FINITE-N REGRESSION, NOT EXACT",
-   "boundary": "Any unitary N×N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows. Computational control scope: double-precision (float64) diagonal clock spectra at N=10, 11, 20, 21 and s=1.3, 2.5 only, with a manually inserted phase 0.21374 for odd N; PASS covers 8 finite cases with no asymptotic claim and does not exercise arbitrary unitaries.",
+   "boundary": "Any unitary N\u00d7N matrix. The pair Abel limit is equivalent to the displayed scalar adjoint-resolvent limit; no model-specific convergence or higher joint-trace estimate follows. Computational control scope: double-precision (float64) diagonal clock spectra at N=10, 11, 20, 21 and s=1.3, 2.5 only, with a manually inserted phase 0.21374 for odd N; PASS covers 8 finite cases with no asymptotic claim and does not exercise arbitrary unitaries.",
    "spof": "NONE",
    "spof_detail": "no single point of failure among the inventoried layers (>=3 distinct non-analytic layers with a receipt path, and no specific ledger-admitted weakness above); this is NOT a claim of full verification, and absence of negative controls is not evidenced either way by claims.json",
    "other_weaknesses": [
@@ -1245,7 +1248,7 @@
    "formalization": [
     "formalization/Bgs/Mathlib/ClockFloor.lean"
    ],
-   "ledger_status": "EXACT + CHECKED COHN–KUMAR THEOREM 1.2",
+   "ledger_status": "EXACT + CHECKED COHN\u2013KUMAR THEOREM 1.2",
    "boundary": "Every finite unitary spectrum and s>0. The bound is attained by the regular N-gon and the CUE benchmark is strictly larger; no uniform excess over the clock floor or frozen-model limit is proved.",
    "spof": "single_evidence_path_no_verifier",
    "spof_detail": "evidence path(s) exist but no verifier script path is listed",
@@ -1314,7 +1317,7 @@
     "computations/verification/cue_singular_energy.py"
    ],
    "formalization": [],
-   "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS–BOURGADE THEOREM 1.1 + AUTHOR CHECK",
+   "ledger_status": "PROJECT DEDUCTION + CHECKED BEN AROUS\u2013BOURGADE THEOREM 1.1 + AUTHOR CHECK",
    "boundary": "Haar U(N) only: stable limit for inverse chord powers 3/2<p<3 and exact p=2 mean. Weak local limits do not control unregularized pair energy. No transfer to the maintained deterministic map, and novelty/priority is unestablished.",
    "spof": "single_reviewer_author_check_only",
    "spof_detail": "author check is the only review layer; no independent review",
@@ -1505,7 +1508,7 @@
    ],
    "formalization": [],
    "ledger_status": "PROJECT PROOF + AUTHOR CHECK + FINITE CONTROLS",
-   "boundary": "Same initial matrix; bounded first two traces for microscopic operator coupling at t log N -> 0; weak local comparison requires t(1+|p1|²+|p2|²) -> 0. No deterministic noise removal, arbitrary-start Dyson relaxation, or unbounded local moments.",
+   "boundary": "Same initial matrix; bounded first two traces for microscopic operator coupling at t log N -> 0; weak local comparison requires t(1+|p1|\u00b2+|p2|\u00b2) -> 0. No deterministic noise removal, arbitrary-start Dyson relaxation, or unbounded local moments.",
    "spof": "single_reviewer_author_check_only",
    "spof_detail": "author check is the only review layer; no independent review",
    "other_weaknesses": [
@@ -2785,7 +2788,7 @@
     "formalization/Bgs/Mathlib/ClockCharacter.lean"
    ],
    "ledger_status": "PROJECT PROOF + INTERNAL INDEPENDENT AUDIT + EXACT FINITE CONTROLS",
-   "boundary": "Same-ensemble all-k induced Hilbert–Schmidt channel error at most 1/N and exact two-copy error 1/(N²−1), despite deterministic clock spacings. No diamond-norm approximation, frozen-map Egorov property, deterministic BGS result, global priority or formal certification.",
+   "boundary": "Same-ensemble all-k induced Hilbert\u2013Schmidt channel error at most 1/N and exact two-copy error 1/(N\u00b2\u22121), despite deterministic clock spacings. No diamond-norm approximation, frozen-map Egorov property, deterministic BGS result, global priority or formal certification.",
    "spof": "NONE",
    "spof_detail": "no single point of failure among the inventoried layers (>=3 distinct non-analytic layers with a receipt path, and no specific ledger-admitted weakness above); this is NOT a claim of full verification, and absence of negative controls is not evidenced either way by claims.json",
    "other_weaknesses": [
@@ -3209,7 +3212,7 @@
    ],
    "formalization": [],
    "ledger_status": "PROJECT ANALYTIC PROOF + INDEPENDENT INTERNAL REVIEWS; FULL QUANTUM WEIGHTS OPEN",
-   "boundary": "Literal tau=10^-80, actual stationary action, one unit-winding displacement. Infinite bounded correction, beta=29/5 localization and Holder phase map; K_(m,N)=muhat(-N)+O(N beta^(-m/2)). Actual q-fibre monotonicity and mu(I)<=(28|I|)^gamma, gamma=log(3+2sqrt2)/log7; sum_(n=1)^M |muhat(n)|²<=112 M^(1-gamma). Only Frostman Sections1-3 independently accepted. This is dimension/Fourier-index averaging, not pointwise decay or time averaging at fixed N. No complete quantum amplitude, other displacement/torsion control, signed hierarchy or BGS conclusion.",
+   "boundary": "Literal tau=10^-80, actual stationary action, one unit-winding displacement. Infinite bounded correction, beta=29/5 localization and Holder phase map; K_(m,N)=muhat(-N)+O(N beta^(-m/2)). Actual q-fibre monotonicity and mu(I)<=(28|I|)^gamma, gamma=log(3+2sqrt2)/log7; sum_(n=1)^M |muhat(n)|\u00b2<=112 M^(1-gamma). Only Frostman Sections1-3 independently accepted. This is dimension/Fourier-index averaging, not pointwise decay or time averaging at fixed N. No complete quantum amplitude, other displacement/torsion control, signed hierarchy or BGS conclusion.",
    "spof": "no_finite_or_exact_control_layer",
    "spof_detail": "no finite, exact or certificate control layer is inventoried",
    "other_weaknesses": [
@@ -3874,7 +3877,7 @@
    ],
    "formalization": [],
    "ledger_status": "PROJECT PROOF + FRESH INDEPENDENT FOCUSED REVIEW + NEW INDEPENDENT EXACT/FINITE CONTROLS; ORIGINAL ARCHIVE REPLAY UNAVAILABLE",
-   "boundary": "Finite-unitary covariance retains complete occupation sums and nontrivial Green–Kubo H. Actual convergence only on ceil(T_N/2)<=m<=T_N, no all-fixed-m or full-prefix Ward convergence, no effective startup or microscopic window. Unconjugated B-kernel bound removes only the degree-two exception for the stated mixed-moment family. Absorbed Ward (13), balanced law, literal signed masked T16, TRACE-005, higher factorial identification and BGS remain OPEN. No formal certificate or external referee audit. Original ZIP 403; archived checker/receipts/source-pins unavailable and unreplayed.",
+   "boundary": "Finite-unitary covariance retains complete occupation sums and nontrivial Green\u2013Kubo H. Actual convergence only on ceil(T_N/2)<=m<=T_N, no all-fixed-m or full-prefix Ward convergence, no effective startup or microscopic window. Unconjugated B-kernel bound removes only the degree-two exception for the stated mixed-moment family. Absorbed Ward (13), balanced law, literal signed masked T16, TRACE-005, higher factorial identification and BGS remain OPEN. No formal certificate or external referee audit. Original ZIP 403; archived checker/receipts/source-pins unavailable and unreplayed.",
    "spof": "NONE",
    "spof_detail": "no single point of failure among the inventoried layers (>=3 distinct non-analytic layers with a receipt path, and no specific ledger-admitted weakness above); this is NOT a claim of full verification, and absence of negative controls is not evidenced either way by claims.json",
    "other_weaknesses": []
@@ -4890,7 +4893,7 @@
     "formalization/Bgs/Mathlib/TwoStepVariance.lean"
    ],
    "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL RECONSTRUCTION; FINITE CONTROLS SEPARATE",
-   "boundary": "Any unitary S with max |Sij|²<=1/4; distinct frozen endpoint labels. Strong deterministic sum over surviving ports for arbitrary circle phases implies raw conditional second moment <=2600 delta²[(P²)ij+(P³)ij]/u under conditionally uniform selection among all u ports, with endpoint increments zero. No sustained concentration, early entry survival, deterministic microscopic law, BGS or priority claim.",
+   "boundary": "Any unitary S with max |Sij|\u00b2<=1/4; distinct frozen endpoint labels. Strong deterministic sum over surviving ports for arbitrary circle phases implies raw conditional second moment <=2600 delta\u00b2[(P\u00b2)ij+(P\u00b3)ij]/u under conditionally uniform selection among all u ports, with endpoint increments zero. No sustained concentration, early entry survival, deterministic microscopic law, BGS or priority claim.",
    "spof": "finite_controls_separate_from_proof",
    "spof_detail": "ledger states finite controls are separate/scoped, so they do not certify the analytic chain itself",
    "other_weaknesses": [
@@ -7323,7 +7326,7 @@
   },
   {
    "id": "BGS-FM-037",
-   "title": "Finite torus level sets and branch scales at p=199 (Q = a²-ab-b², cyclic action of order 11)",
+   "title": "Finite torus level sets and branch scales at p=199 (Q = a\u00b2-ab-b\u00b2, cyclic action of order 11)",
    "state": "proved",
    "methods": [
     "exact_identity",
@@ -7351,7 +7354,7 @@
     "formalization/Bgs/TorusScaleLaw.lean"
    ],
    "ledger_status": "EXACT + FINITE-CERTIFICATE",
-   "boundary": "Fixed finite design certificate at p=199 only: Q(a,b)=a²-ab-b² under the cyclic action generated by A^T=[[2,1],[1,1]] of order 11; every nonzero level has 198 nonzero points and 18 cyclic orbits, the zero cone minus the origin has 396 points, the action is free on nonzero levels; a=139 has order 11, inverse 63, half-trace 123, branch scales 123 and 76 with 123²=76²=5 (mod 199) and 123*76=-5 (mod 199). Not a general scale or level-set theorem; the analytic Weil intertwining motivation is not formalized here.",
+   "boundary": "Fixed finite design certificate at p=199 only: Q(a,b)=a\u00b2-ab-b\u00b2 under the cyclic action generated by A^T=[[2,1],[1,1]] of order 11; every nonzero level has 198 nonzero points and 18 cyclic orbits, the zero cone minus the origin has 396 points, the action is free on nonzero levels; a=139 has order 11, inverse 63, half-trace 123, branch scales 123 and 76 with 123\u00b2=76\u00b2=5 (mod 199) and 123*76=-5 (mod 199). Not a general scale or level-set theorem; the analytic Weil intertwining motivation is not formalized here.",
    "spof": "formalization_only_no_verifier_or_evidence",
    "spof_detail": "Lean formalization path(s) only; no evidence or verifier path in the tree",
    "other_weaknesses": []
@@ -8071,6 +8074,94 @@
    "boundary": "For every odd N>=3 and every real diagonal kick, including every position-diagonal realization of the sixteen-phase symbol and every extra position sine, if D is the diagonal unitary exponential of the kick and U=D M_N, the antiunitary Theta=D K_0 satisfies Theta^2=I and Theta U Theta^{-1}=U^dagger. The orthogonal-class name is the heuristic attached to that antiunitary. It is not a COE form factor, and it does not exclude a CUE form factor. The modes with displacement ell=1 have symbol energy 9/160000, and the modes with ell=-1 have the same energy, with 4000 c_{1,k}=(-3-4i) r(k). The full symbol fails to be K_0-even for almost every phase and is K_0-even for some phases. The momentum sine B_N=(T_N(1,0)-T_N(-1,0))/(2i) is Hermitian and K_0-odd, with symbol energy 1/2. For epsilon not equal to 0 the kick A_diag+epsilon B_N is not a function of position, so the antiunitary argument does not apply, and the form factor of that ensemble is not identified. Neither statement evaluates E|Tr U^m|^2 for m>=2. The time-one value remains 1+rho_1 from BGS-TRACE-129. The samples at N=201 and N=203 are not used. The golden-rule scale eta^2 N * 9/160000 is not derived. Lean decides 900/4000^2=9/160000, det(S-I)=-4, and the cross-multiplication (1*4+1*4)*2=1*(4*4) of 1/4+1/4=1/2. It does not formalize the antiunitary. Python and C++ check that D^{1/2} M D^{1/2} is symmetric and that B_N is odd at N=3,5,7,11. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the momentum-row energy, the determinant, and the cross-multiplication of 1/4+1/4=1/2. The antiunitary is not formalized. Python and C++ check the symmetric conjugate and the oddness of B_N at N=3, 5, 7 and 11.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-131",
+   "title": "Diagonal phase average for every hyperbolic cat map",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/hyperbolic-diagonal-form-factor/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/hyperbolic_diagonal_form_factor.py",
+    "computations/cpp/hyperbolic_diagonal_form_factor.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/HyperbolicDiagonalFormFactor.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "For every S=[[alpha, beta],[gamma, delta]] in SL(2,Z) with |tr|>=3, and every odd N>=3 with gcd(beta,N)=1, the position-basis matrix with phase kappa(delta x^2-2xy+alpha y^2), kappa=-(2 beta)^{-1}, and prefactor N^{-1/2} is unitary and flat. It is symmetric if and only if alpha is congruent to delta modulo N. The matrices [[6,1],[5,1]] at N=5, [[1,1],[3,4]] at N=3, and [[0,1],[-1,-3]] at N=3 are symmetric even though the integer diagonals differ. Let E be diagonal with entries e_N(kappa(delta-alpha)x^2). Then M = E M^T E^{-1}. For every diagonal unitary D, Theta' = D E K_0 satisfies Theta'^2=I and Theta'(D M) Theta'^{-1}=(D M)^dagger. Theta' reduces to D K_0 precisely when alpha is congruent to delta modulo N. The orthogonal-class name is a heuristic for Theta', not a COE form factor. Egorov holds, and |Tr M^m|^2 equals |ker(S^m-I)|. The sequences u_n and v_n, and det(S^n-I)=2-u_n, depend only on the trace. For an odd prime p not dividing beta the kernel has order 1, p, or p^2 according as p does not divide 2-u_m, S^m is a nontrivial unipotent, or S^m=I. The identity test depends only on the trace when p does not divide beta. If p does not divide 2(t^2-4), the order divides p-(Delta/p). If p divides beta, the matrices [[-20,-9],[9,4]] and [[-17,-18],[1,1]] have kernels 9 and 3 modulo 3. The certificate checks kernel 49 at time 3 modulo 49 for the two trace-6 matrices [[3,4],[2,3]] and [[5,2],[2,1]] only. The Bessel path sum allows frequencies divisible by N. D_2 is half of g''(0), with g the phase-averaged squared trace, and it equals the Gauss sum in the note. The expectation is even in eta; the x^3 piece of the remainder majorant is an artifact of the estimate. At an identity revival D_2=-m(sigma-sigma_0)p^2, including -42025/8, -375/8, and -75/2 for frequencies {1,5} at p=5. This is not the all-order revival law and not a fixed-time limit. Lean decides Cassini at ten pairs, u_3(6)=198, the companion and determinant identities for the listed matrices, and the kernels of those reduced matrices. The products 42025 and 375 are integer arithmetic, not a formalization of D_2. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides Cassini at ten pairs, u_3(6)=198, the companion and determinant identities for the listed matrices, and the kernels of those reduced matrices. The products 42025 and 375 are integer arithmetic. The operator expansion and D_2 are not formalized.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-132",
+   "title": "Fixed-time limits for a general hyperbolic cat map",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/hyperbolic-short-time/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/hyperbolic_short_time_limit.py",
+    "computations/cpp/hyperbolic_short_time_limit.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/HyperbolicShortTime.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "For every hyperbolic S in SL(2,Z) and every odd N coprime to the upper-right entry beta, Haar diagonal phases satisfy |E|Tr U^m|^2 - 2m P(N,m)/N^m| <= m!(1+m(m-1))/N for m>=3, where P is the falling factorial. The fixed-time limit is 2m. The antiunitary Theta' = D E K_0 of TRACE-131 reverses D M for every such S, and it reduces to D K_0 when alpha is congruent to delta modulo N. The orthogonal-class name is a heuristic for Theta'. At time one the limit is 1. At time two it is 2, not 4. A finite cosine with eta=o(N^{-2/3}) has limit 1 along odd N with gcd(N, beta(2-u_m))=1, including all but finitely many primes. Along N divisible by 7 (e.g. 35, 77, 91, 707) the time-3 kernel has order at least 49, so the limit 1 fails when gcd(N, beta(2-u_m)) > 1. A fixed nonzero eta is not forced near 2m: at N=11 and x=1 the remainder majorant N^2*11/18 exceeds 6. If the frequencies {1,...,m} are present, lim eta to infinity equals the Haar value, and the subsequent limit in N is 2m. The opposite order is not identified. A second diagonal does not produce the value m. Row inversion on an odd prime not dividing beta has limit m. A momentum sine is not identified. The 2m and m counts are those of Tanner and of Pakonski-Zyczkowski-Kus; the general-S error constant is the extension proved here. Lean decides only the arithmetic 42, 312, 13+9=22, 22*18=11*36, and 121*11>6*18. It does not formalize the occupation bound. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides only the arithmetic 42, 312, 13+9=22, 22*18=11*36, and 121*11>6*18. It does not formalize the occupation bound. Python and C++ check 48 inequalities and the kernel 49 at N=35, 77, 91 and 707.",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
    ],

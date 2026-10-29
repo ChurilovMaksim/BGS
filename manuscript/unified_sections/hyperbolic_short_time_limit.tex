@@ -1,0 +1,36 @@
+\section{Fixed-time limits for a general hyperbolic cat map}
+\label{sec:hyperbolic-short-time-limit}
+The canonical proof is
+\path{mathematics/fixed-map/hyperbolic_short_time_limit.md}.
+The integer witness is
+\path{formalization/Bgs/HyperbolicShortTime.lean}.
+Python and C++ check the occupation inequalities.
+No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+
+\begin{theorem}[Fixed-time limits, BGS-TRACE-132]
+\label{thm:hyperbolic-short-time-limit}
+Let \(S\in\mathrm{SL}(2,\mathbb Z)\) be hyperbolic and let \(N\) be odd and coprime
+to the upper-right entry. Write \(P(N,m)=N(N-1)\cdots(N-m+1)\) for \(m\le N\),
+and \(P(N,m)=0\) for \(m>N\). For the Haar diagonal ensemble \(U=DM_N(S)\) and
+every \(m\ge 3\),
+\[
+\bigl\lvert\mathbb E\lvert\operatorname{Tr} U^m\rvert^2-2m P(N,m)/N^m\bigr\rvert
+\le m!(1+m(m-1))/N.
+\]
+The fixed-time limit is \(2m\). The antiunitary \(\Theta'=DEK_0\) of
+BGS-TRACE-131 reverses \(DM_N\) for every such \(S\). At times one and two the
+limits are \(1\) and \(2\). A finite cosine in the window
+\(\eta=o(N^{-2/3})\), along odd \(N\) with \(\gcd(N,\beta(2-u_m))=1\), has
+limit \(1\), not \(2m\). The same conclusion fails when that gcd exceeds \(1\):
+the model kernel at time three has order \(49\) for \(N=35,77,91,707\). If the
+frequencies \(\{1,\ldots,m\}\) are present, sending \(\eta\to\infty\) before
+\(N\to\infty\) recovers \(2m\). A second diagonal factor does not replace \(2m\)
+by \(m\). Row inversion on an odd prime not dividing the upper-right entry has
+limit \(m\). A momentum sine takes the propagator out of this class, and its
+form factor is not identified. The orthogonal-class name remains a heuristic
+for \(\Theta'\). The factor \(2m\) is the count of Tanner and of
+Pako\'nski--\.Zyczkowski--Ku\'s; the extension to a general hyperbolic \(S\)
+is the error term above.
+\end{theorem}
