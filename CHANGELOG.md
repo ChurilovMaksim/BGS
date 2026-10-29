@@ -1,5 +1,9 @@
 # Scientific changelog
 
+## 2026-10-29 — Strategy note records an unverified reconnaissance
+
+Section 6 of `mathematics/fixed-map/offdiagonal_strategy.md` records an external reconnaissance as a lead list. No constant from that report is adopted. The half-order divisibility in the report is the lemma already proved in BGS-TRACE-121 and corrected by ERR-061; no maintained note on this branch still uses \(t=(p+1)/2\) as a nonempty class. The hypothesis \(2t\ge p+1\) in BGS-TRACE-120 remains a lower bound and, on an odd prime, is exactly the inert full order. The next route named in the note is a symmetry-breaking reformulation of the kicked model. No new claim ID is opened. BGS-TRACE-005 and BGS-BGS-001 remain open.
+
 ## 2026-10-29 — Uniform Pell-orbit overlap
 
 Register BGS-TRACE-125. For every odd integer \(n\ge5\), at \(N=u_n\), the fixed symbol overlaps only at lags \(1\) and \(n-1\), both with value \(-7/2000000\). The quadratic trace coefficient of the transported product is exactly \(n\cdot1650797/4000000\). The sequence \(u_n\) is exponential, not an arithmetic progression. The index \(n=5\) is a finite scan; every larger odd index is a size, archimedean, and quadratic-form argument. This is \(f''(0)\), not a bound on \(f(1)\). The claim does not assert that Kurlberg–Rudnick degeneracies fail to be eigenvalues of the kicked propagator: that sentence does not follow from BGS-FM-032. A separation of \(L_N(U_N;1)\) from the CUE value is a bound on the Abel sum, not a lower bound on one normalized trace. Prime squares, including \(315\), are placed by BGS-TRACE-124; \(315\) is short because its radical \(105\) is short. The ledger phrase says that Lean certifies integer comparisons only. Python, C++ and that Lean witness certify the integers. No new kick window is claimed. The third-order remainder, the signed off-diagonal sum, and the limit stay open. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
