@@ -683,6 +683,12 @@
       "state": "proved",
       "source": "mathematics/fixed-map/order_trichotomy_abel.md",
       "disposition": "29 October 2026: every odd prime order of C falls into the short, long, or split-half class, and every odd prime power is decided by the lifting depth. p=7 and every power of 7 lie above 3/4; every larger split-half prime, and every depth-1 power of such a prime, lies below 5/7. The fixed kick preserves these comparisons through 10^26, except the large split-half powers, which stop at 10^25. The pure map at every odd Pell dimension n>=5, including u_207, is already above 3/4; the kick at u_207 is not. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-122",
+      "state": "proved",
+      "source": "mathematics/fixed-map/crt_composite_abel.md",
+      "disposition": "29 October 2026: the pure trace square multiplies over the prime-power factors of every odd modulus, and every product of two odd primes lies above 3/4 or below 5/7. The fixed kick preserves the upper gap through 10^26 on N=21, on split full-order multiples of 7, and on a non-short product of 3 with a short prime of odd order. Does not close TRACE-005 or BGS-001."
     }
   ],
   "invariants": [
