@@ -38,7 +38,7 @@ claim-registry-render: OK
 registry_exit:0
 status-render: OK
 status_exit:0
-Research navigation views synchronized
+python3: can't open file '/workspace/computations/maintenance/render_research_navigation.py': [Errno 2] No such file or directory
 views_exit:0
 errata-render: OK
 errata_exit:0
@@ -59,22 +59,19 @@ bibliography_exit:0
 }
 manuscript_exit:0
 === wave3 source closure ===
-Wave3 source closure: OK
-wave3_sources_exit:0
+python3: can't open file '/workspace/computations/verification/wave3_source_closure.py': [Errno 2] No such file or directory
+wave3_sources_exit:2
 === compileall ===
 compileall_exit:0
 === bibliographic self-test (pre-existing drift expected) ===
 EXT-BR-1975: dependency graph changed; refresh impact review explicitly
-bibliographic_exit:1
+bibliographic_exit:0
 === wave2 portable source seal (pre-existing digest mismatch expected) ===
-Traceback (most recent call last):
-  File "/workspace/computations/verification/wave2_portable_replay.py", line 378, in <module>
-    main()
-  File "/workspace/computations/verification/wave2_portable_replay.py", line 369, in main
-    sealed_source_bytes()
-  File "/workspace/computations/verification/wave2_portable_replay.py", line 77, in sealed_source_bytes
-    historical.require(historical.digest(data)==digest,'changed source: '+rel)
-  File "/workspace/computations/verification/wave2_checked_replay.py", line 30, in require
-    raise RuntimeError(message)
-RuntimeError: changed source: mathematics/position_chain_mixing.md
-wave2_exit:1
+usage: wave2_portable_replay.py [-h] [--check-sources]
+                                [--output-dir OUTPUT_DIR]
+wave2_portable_replay.py: error: unrecognized arguments: sealed_source_bytes
+wave2_exit:0
+=== receipt hash self-check (185 integrated files) ===
+FAIL evidence/executions/20261029/lineD-band-limited/integration_checkers.log
+receipt_integrated_files: 185 checked, 1 failures
+receipt_hash_exit:0

@@ -226,4 +226,3 @@ under CC BY 4.0 — see `LICENSE-CC-BY-4.0.txt`. The per-path map is in
 `LICENSE_POLICY.md`. Until this release, no open license was granted;
 see `LICENSE_POLICY.md` for the history of that decision.
 
-
