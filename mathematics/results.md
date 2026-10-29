@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Short-time diagonal-phase limits, 29 October 2026
+
+[TRACE-128](fixed-map/diagonal_phase_short_time.md) gives the fixed-time limit of the diagonal-phase form factor. For the symmetric cat map the limit is \(2m\) at each \(m\ge 3\), and the distance to \(2m P(N,m)/N^m\) is at most \(m!(1+m(m-1))/N\). The logarithmic window \(m\le c\log N/\log\log N\) with \(c<1\) is included. A power \(m\le N^{\alpha}\) is not. Row inversion by \(x\mapsto x^{-1}\) on an odd prime produces the limit \(m\), except at \(p=3\), where the permutation is the identity. A second diagonal factor does not leave the orthogonal class. The sixteen-phase ensemble of TRACE-126 is not evaluated. BGS-TRACE-005 stays open.
+
 ## Diagonal random-phase form factor, 29 October 2026
 
 [TRACE-127](fixed-map/diagonal_phase_form_factor.md) evaluates \(U=DM_N\) with independent uniform phases on the \(N\) position sites. For every flat matrix, the phase-averaged squared trace is \(1\) at time one, \((2N-1)/N\) at time two, and at most \(m!\) at time \(m\). For the cat-map quantization at every odd \(N\ge 3\), the time-three value is \((6N^2-9N+4)/N^2\). The pure squared trace is \(1\) at time two. At time three it is \(49\) when \(7\) divides \(N\) and \(1\) otherwise, including at \(N=49\). The diagonal-phase value lies above the pure value at time two, above it at time three when \(7\) does not divide \(N\), and below \(6\) when the pure value is \(49\). The time-three limit \(6\) equals \(2\cdot 3\): the antiunitary \(\Theta=DK_0\) squares to \(1\) and reverses \(U\), which is a heuristic orthogonal label and not a COE form factor, and a \(2\)-cycle is its own reversal so the time-two limit is \(2\). The sixteen-phase ensemble of TRACE-126 is not evaluated. A twenty-four-draw sample of that ensemble is recorded and is not a limit. BGS-TRACE-005 stays open.
@@ -457,7 +461,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**213 registered claims: 187 proved, 12 verification-pending, 9 conditional, 5 open.**
+**214 registered claims: 188 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -623,7 +627,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (104 claims)
+### TRACE family (105 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -731,5 +735,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-125` | **PROVED** | Uniform Pell-orbit overlap of the fixed symbol |
 | `BGS-TRACE-126` | **PROVED** | Phase-averaged form factor and classical symmetry defects of the kicked cat map |
 | `BGS-TRACE-127` | **PROVED** | Diagonal random-phase form factor of the cat map at times one, two and three |
+| `BGS-TRACE-128` | **PROVED** | Short-time limits of the diagonal-phase form factor |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

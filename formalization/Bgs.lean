@@ -47,5 +47,6 @@ import Bgs.OddModulusRational
 import Bgs.UniformOrbitOverlapRational
 import Bgs.PhaseFormFactorRational
 import Bgs.DiagonalPhaseFormFactorRational
+import Bgs.DiagonalPhaseShortTimeRational
 
 import Bgs.Mathlib

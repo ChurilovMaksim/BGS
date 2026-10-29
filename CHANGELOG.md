@@ -1,5 +1,9 @@
 # Scientific changelog
 
+## 2026-10-29 — Short-time limits of the diagonal-phase form factor
+
+Register BGS-TRACE-128. For the symmetric cat map times independent uniform phases on the diagonal, the averaged squared trace at each fixed time \(m\ge 3\) tends to \(2m\), with an explicit \(O(m!/N)\) gap from the dihedral main term \(2m P(N,m)/N^m\). The same bound reaches \(m\le c\log N/\log\log N\) for \(c<1\) and does not reach \(m\le N^{\alpha}\). Inverting the rows by \(x\mapsto x^{-1}\) on an odd prime breaks the reversal and the limit is \(m\), with a Kloosterman error of order \(p^{-1/4}\). At \(p=3\) the inversion is the identity. A second independent diagonal stays in the orthogonal class by similarity. Python and C++ check the occupation sums in floating point; a Lean rational witness certifies the integer form of the symmetric error constant, the time-three comparison, and the Kloosterman quadruple counts at the primes 5 and 7. The dependency on BGS-TRACE-127 is the occupation expansion and the times one and two. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+
 ## 2026-10-29 — Self-red-team of the diagonal-phase symmetry
 
 BGS-TRACE-127. The time-reversal is the antiunitary \(\Theta=DK_0\), with \(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). Similarity to \(D^{1/2}M_ND^{1/2}\) does not assign an orthogonal class. That class name is a heuristic, not a COE form factor. The Tanner locator is Section II.2, and Section IV.1 is the closest prior result for the heuristic. The symmetric conjugate is named \(\Sigma_D\). No counting identity changes. No new external dependency.

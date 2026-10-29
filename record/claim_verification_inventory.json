@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "2c8e5ab8534c257e52af5e886fb5ced4c69adfd1",
+ "source_blob_sha": "669571c1be539401a7c38a19ee862b7358385b40",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -40,7 +40,8 @@
   "BGS-TRACE-126 was appended on 2026-10-29. Its Lean file certifies the scaled symbol arithmetic only; the trace closure and the phase average were checked by the author and were not given an independent referee.",
   "BGS-TRACE-126 was corrected on 2026-10-29 after a self-red-team review of the unmerged note. Symbol modes congruent to 0 at the primes 3, 5 and 7 lie in the image, so the prime-revival coefficient is -m (sigma - sigma_0(p)) p^2. The remainder bounds include the quartic term inside |P_2|^2. The derivative remainder is the integral form.",
   "BGS-TRACE-127 was appended on 2026-10-29. Its Lean file certifies the integer factorizations and gaps only; the occupation count was checked by the author and was not given an independent referee. A draft kernel 7^{2 v_7(N)} was rejected by the count at N=49.",
-  "On 2026-10-29 a self-red-team correction replaced the orthogonal-class sentence of BGS-TRACE-127 by the antiunitary Theta = D K_0. Similarity to a symmetric matrix does not assign the class. The class name is a heuristic, not a COE form factor."
+  "On 2026-10-29 a self-red-team correction replaced the orthogonal-class sentence of BGS-TRACE-127 by the antiunitary Theta = D K_0. Similarity to a symmetric matrix does not assign the class. The class name is a heuristic, not a COE form factor.",
+  "BGS-TRACE-128 was appended on 2026-10-29. Its Lean file certifies the integer error constants, the time-three comparison, and the Kloosterman quadruple counts at 5 and 7 only; the occupation bounds were checked by the author and were not given an independent referee."
  ],
  "claims": [
   {
@@ -7933,6 +7934,50 @@
    "boundary": "For every N>=1 and every complex N by N matrix with all entries of modulus N^{-1/2}, if D is diagonal with independent uniform phases and U=DM, then E|Tr U^m|^2 <= m! for every m>=1, E|Tr U|^2=1, and E|Tr U^2|^2=(2N-1)/N. For the cat-map quantization at every odd N>=3, E|Tr U_N^3|^2=(6N^2-9N+4)/N^2, strictly between 1 and 6. On those dimensions |ker(S^2-I)|=1 and |ker(S^3-I)| equals 49 if 7 divides N and equals 1 otherwise. By the trace-closure lemma of BGS-TRACE-126 these are the pure squared traces. The diagonal-phase value is strictly above the pure value at time 2, strictly above it at time 3 when 7 does not divide N, and strictly below 6 while the pure value is 49 when 7 divides N. The kernel does not grow with the exponent of 7: at N=49 it is 49, not 2401. This is not the 16-phase ensemble of BGS-TRACE-126 and not the fixed kick. For every diagonal unitary D, the antiunitary Theta = D K_0 satisfies Theta^2 = I and Theta (D M_N) Theta^{-1} = (D M_N)^dagger. The orthogonal-class label is the heuristic attached to that antiunitary and is not a COE form factor. Similarity to Sigma_D = D^{1/2} M_N D^{1/2} does not assign the class. The time-three limit 6 equals 2*3 because a 3-cycle and its reversal contribute the same amplitude. The time-two limit is 2, not 4, because a 2-cycle equals its own reversal. The measure is Haar measure on an N-torus, not Haar measure on the circular orthogonal ensemble. The bound m! does not separate a revival once m! >= N^2. Nothing beyond that bound is claimed for m>=4. A 24-draw splitmix sample at eta=2, recomputed in Python and C++, has mean 44.632431403503 at N=7 time 3 and mean 47.417022055369 at N=31 time 5, where |ker(S^5-I)|=1. That sample is not the sixteen-phase expectation and not a CUE or COE limit. Lean decides the matrix factorizations, the numerator identity (5N-4)(N-1)=5N^2-9N+4, and the strict gaps. It does not formalize the path count. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the matrix factorizations, the numerator identity, and the strict gaps. The occupation count is not formalized. Python and C++ enumerate it on the certificate dimensions, including N=3, 5 and 7, and recompute one sixteen-phase sample.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-128",
+   "title": "Short-time limits of the diagonal-phase form factor",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/diagonal-phase-short-time/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/diagonal_phase_short_time.py",
+    "computations/cpp/diagonal_phase_short_time.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/DiagonalPhaseShortTimeRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "For every odd N>=3 and the symmetric cat-map quantization M_N, with D diagonal and Haar on the N-torus, E|Tr (D M_N)|^2=1 and E|Tr (D M_N)^2|^2=(2N-1)/N. For every integer m>=3, the absolute difference between E|Tr (D M_N)^m|^2 and 2m P(N,m)/N^m is at most m!(1+m(m-1))/N, where P is the falling factorial. The fixed-m limit is 2m. The same bound gives the limit along m(N)<=c log N/log log N for any fixed c<1, and it does not reach m<=N^alpha. For an odd prime p, the row-inverted matrix W_p with pi(0)=0 and pi(x)=x^{-1} is flat, and V_p=D W_p. At p=3, pi is the identity. For every odd prime and every m>=3, the absolute difference between E|Tr V_p^m|^2 and m P(p,m)/p^m is at most m!(3^(1/4) p^(-1/4)+(m(m-1)+2)/p). The fixed-m limit is m. The logarithmic window uses c<1/4 and does not reach m<=p^alpha. A second independent diagonal does not break time reversal, because D1 M D2 is similar to a single diagonal times M. The constants are not sharp. No Heisenberg-scale statement is proved. This is not the sixteen-phase ensemble and not the fixed kick. The measure is not Haar measure on COE or CUE. Lean decides the symmetric constants 42, 312 and 2520, the identity (6N^2-9N+4)-6(N-1)(N-2)=9N-8, the comparison 9N-8<=42N, the integer main terms at N=3,5,7, and the Kloosterman counts 36 and 90. It does not sum the complex form factor. Python and C++ check the occupation inequalities in floating point, including N=3,5,7 and the time-four value at N=49. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the symmetric error constants, the time-three numerator gap, the integer main terms at N=3, 5 and 7, and the Kloosterman quadruple counts at p=5 and p=7. The occupation bounds are not formalized. Python and C++ check them in floating point, including N=3, 5 and 7 and the time-four value at N=49.",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
    ],
