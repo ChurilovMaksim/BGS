@@ -5553,6 +5553,32 @@
       "manuscript": [
         "manuscript/unified_sections/sixteen_phase_symmetry.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-131",
+      "title": "Diagonal phase average for every hyperbolic cat map",
+      "source": "mathematics/fixed-map/hyperbolic_diagonal_form_factor.md",
+      "dependencies": [
+        "BGS-TRACE-126",
+        "BGS-TRACE-130"
+      ],
+      "boundary": "For every S=[[alpha, beta],[gamma, delta]] in SL(2,Z) with |tr|>=3, and every odd N>=3 with gcd(beta,N)=1, the position-basis matrix with phase kappa(delta x^2-2xy+alpha y^2), kappa=-(2 beta)^{-1}, and prefactor N^{-1/2} is unitary and flat. It is symmetric if and only if alpha=delta. Egorov holds for the repository Weyl operators, and |Tr M^m|^2 equals |ker(S^m-I)| on (Z/NZ)^2. The sequences u_n and v_n, and det(S^n-I)=2-u_n, depend only on the trace. For an odd prime p not dividing beta the kernel has order 1, p, or p^2 according as p does not divide 2-u_m, S^m is a nontrivial unipotent, or S^m=I. The identity test v_m=0 and v_{m-1}=-1 depends only on the trace when p does not divide beta. If p does not divide 2(t^2-4), the order divides p-(Delta/p). If p divides beta, equal traces need not agree: the matrices [[-20,-9],[9,4]] and [[-17,-18],[1,1]] have kernels 9 and 3 modulo 3. At N=49 the trace-6 matrices [[3,4],[2,3]] and [[5,2],[2,1]] both have kernel 49 at time 3, not 2401. For a finite cosine kick with i.i.d. uniform phases the quantum average is the Bessel path sum. It is not the classical orbit sum of TRACE-129. If gcd(2-tr,N)=1 the time-one average equals 1 for every real eta. The order-two expansion is |ker|+eta^2 D_2+rho with |D_2|<=2 m^2 sigma |ker|, sigma=sum a_k^2/2, and |rho|<=N^2[(x^3/6)(2+x^3/6)+x^4/4] for x=m B|eta| and B=sum |a_k|. At an identity revival D_2=-m(sigma-sigma_0)p^2. For a_1=1 and a_2=1/2 this is -42025/8 at the model matrix, time 5, prime 41, and -375/8 at [[2,1],[3,2]], time 3, prime 5. The unipotent defect at [[2,1],[1,1]], time 2, prime 5, has kernel 5 and is not given that coefficient. Haar diagonal phases give the flat values 1 and (2N-1)/N at times one and two, and (6N^2-9N+4)/N^2 at time three, whether or not the diagonals agree. This is not the all-order revival law and not a fixed-time limit. The antiunitary Theta=D K_0 reverses U precisely when alpha=delta; the orthogonal-class name is a heuristic. Lean decides companion values, kernels, the order 5 modulo 41, the order 12 modulo 11 for two trace-6 matrices, and the revival cross-multiplications. It does not formalize the expansion. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/hyperbolic-diagonal-form-factor/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/hyperbolic_diagonal_form_factor.py",
+        "computations/cpp/hyperbolic_diagonal_form_factor.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/HyperbolicDiagonalFormFactor.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/hyperbolic_diagonal_form_factor.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

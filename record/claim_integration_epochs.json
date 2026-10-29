@@ -1,7 +1,7 @@
 {
   "schema": "bgs-follow-on-claim-epoch-v1",
   "base_epoch": "2026-10-07-wave3",
-  "reviewed_on": "2026-10-28",
+  "reviewed_on": "2026-10-29",
   "purpose": "Explicit state/source lineage through the already adopted 19 October research; earlier reviews do not certify later claims.",
   "after_wave3": [
     {
@@ -737,6 +737,12 @@
       "state": "proved",
       "source": "mathematics/fixed-map/sixteen_phase_symmetry.md",
       "disposition": "29 October 2026: for every real diagonal kick the antiunitary Theta=D K_0 squares to 1 and reverses U. The orthogonal-class name is a heuristic and does not exclude a CUE form factor. Each momentum row has energy 9/160000. The momentum sine has symbol energy 1/2 and is not a function of position. Does not close TRACE-005 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-131",
+      "state": "proved",
+      "source": "mathematics/fixed-map/hyperbolic_diagonal_form_factor.md",
+      "disposition": "29 October 2026: phase average for every hyperbolic S in SL(2,Z) and a finite cosine kick. The quantization is unitary and flat when N is odd and coprime to the upper-right entry, and symmetric exactly when the diagonal entries agree. The prime kernel is 1, p, or p^2 from the trace when p does not divide beta. Equal trace does not determine the kernel when p divides beta. The order-two coefficient at an identity revival is -m(sigma-sigma_0)p^2. Time one equals 1 when gcd(2-tr,N)=1. This is not the all-order revival law and not a fixed-time limit. Does not close TRACE-005 or BGS-001."
     }
   ],
   "invariants": [

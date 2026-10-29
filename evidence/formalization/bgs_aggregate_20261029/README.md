@@ -29,7 +29,13 @@ Log: [build_head48.log](build_head48.log) (sha256 `017489182fbb778be91784385815c
 
 Head commits on the linear stack (#48 → #47 → #49 → #50) each record an additional log in this folder after the same command sequence.
 
+| Branch | Log | Exit |
+|---|---|---|
 | `cursor/diagonal-phase-form-factor-51b0` (#48) | [build_head48.log](build_head48.log) | 0 |
 | `cursor/diagonal-phase-short-time-51b0` (#47) | [build_head47.log](build_head47.log) | 0 |
 | `cursor/scalar-return-bessel-51b0` (#49) | [build_head49.log](build_head49.log) | 0 |
 | `cursor/sixteen-phase-symmetry-51b0` (#50) | [build_head50.log](build_head50.log) | 0 |
+
+## TRACE-131 build
+
+On 29 October 2026, after `lake exe cache get`, `lake build Bgs` exited 0 (`8791` jobs) on `cursor/hyperbolic-diagonal-form-factor-cf38`. Log: [build_trace131.log](build_trace131.log), sha256 `2118079bc22700518846e55ca75c84e3a5d0f64fbcaf786ea7c2bd0e3d938b8c`. The new module is `Bgs.HyperbolicDiagonalFormFactor`. It uses `decide` and contains neither `sorry` nor `native_decide`.

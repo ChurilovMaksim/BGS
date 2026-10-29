@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "9d0a67182d2be059c9735a0ca4e789d40f27b2d0",
+ "source_blob_sha": "912248448fa6f0ab53f81092d409f5318b33a0da",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -46,7 +46,8 @@
   "BGS-TRACE-129 was appended on 2026-10-29. Its Lean file certifies the orders, the quadruple counts at 5 and 7, and the momentum-row energy only; the Bessel average was checked by the author and was not given an independent referee.",
   "On 2026-10-29 a self-red-team correction of BGS-TRACE-129 recorded that the Bessel identity is the classical orbit sum, not the quantum sixteen-phase average; that time one equals 1+rho_1; that each of ell=+1 and ell=-1 has energy 9/160000; and that Lean does not certify minimality of the order 12 at p=11. The quadruple rows at 11, 31, 41 and 47 are Python-only.",
   "BGS-TRACE-130 was appended on 2026-10-29. Its Lean file certifies the momentum-row energy, the determinant, and the integer form of the momentum-sine energy only; the similarity was checked by the author and was not given an independent referee.",
-  "On 2026-10-29 a self-red-team correction of BGS-TRACE-130 replaced similarity to a symmetric unitary by the antiunitary Theta=D K_0, deleted the claim that a CUE form factor is incompatible with that symmetry, restricted K_0-evenness to almost every phase, and corrected the sign of c_{1,k} to (-3-4i) r(k)."
+  "On 2026-10-29 a self-red-team correction of BGS-TRACE-130 replaced similarity to a symmetric unitary by the antiunitary Theta=D K_0, deleted the claim that a CUE form factor is incompatible with that symmetry, restricted K_0-evenness to almost every phase, and corrected the sign of c_{1,k} to (-3-4i) r(k).",
+  "BGS-TRACE-131 was appended on 2026-10-29. Its Lean file certifies companion values, kernel counts, the order modulo 41, the shared order modulo 11, and the revival cross-multiplications only; the operator expansion was checked by the author and was not given an independent referee."
  ],
  "claims": [
   {
@@ -8071,6 +8072,50 @@
    "boundary": "For every odd N>=3 and every real diagonal kick, including every position-diagonal realization of the sixteen-phase symbol and every extra position sine, if D is the diagonal unitary exponential of the kick and U=D M_N, the antiunitary Theta=D K_0 satisfies Theta^2=I and Theta U Theta^{-1}=U^dagger. The orthogonal-class name is the heuristic attached to that antiunitary. It is not a COE form factor, and it does not exclude a CUE form factor. The modes with displacement ell=1 have symbol energy 9/160000, and the modes with ell=-1 have the same energy, with 4000 c_{1,k}=(-3-4i) r(k). The full symbol fails to be K_0-even for almost every phase and is K_0-even for some phases. The momentum sine B_N=(T_N(1,0)-T_N(-1,0))/(2i) is Hermitian and K_0-odd, with symbol energy 1/2. For epsilon not equal to 0 the kick A_diag+epsilon B_N is not a function of position, so the antiunitary argument does not apply, and the form factor of that ensemble is not identified. Neither statement evaluates E|Tr U^m|^2 for m>=2. The time-one value remains 1+rho_1 from BGS-TRACE-129. The samples at N=201 and N=203 are not used. The golden-rule scale eta^2 N * 9/160000 is not derived. Lean decides 900/4000^2=9/160000, det(S-I)=-4, and the cross-multiplication (1*4+1*4)*2=1*(4*4) of 1/4+1/4=1/2. It does not formalize the antiunitary. Python and C++ check that D^{1/2} M D^{1/2} is symmetric and that B_N is odd at N=3,5,7,11. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the momentum-row energy, the determinant, and the cross-multiplication of 1/4+1/4=1/2. The antiunitary is not formalized. Python and C++ check the symmetric conjugate and the oddness of B_N at N=3, 5, 7 and 11.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-131",
+   "title": "Diagonal phase average for every hyperbolic cat map",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/hyperbolic-diagonal-form-factor/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/hyperbolic_diagonal_form_factor.py",
+    "computations/cpp/hyperbolic_diagonal_form_factor.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/HyperbolicDiagonalFormFactor.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+   "boundary": "For every S=[[alpha, beta],[gamma, delta]] in SL(2,Z) with |tr|>=3, and every odd N>=3 with gcd(beta,N)=1, the position-basis matrix with phase kappa(delta x^2-2xy+alpha y^2), kappa=-(2 beta)^{-1}, and prefactor N^{-1/2} is unitary and flat. It is symmetric if and only if alpha=delta. Egorov holds for the repository Weyl operators, and |Tr M^m|^2 equals |ker(S^m-I)| on (Z/NZ)^2. The sequences u_n and v_n, and det(S^n-I)=2-u_n, depend only on the trace. For an odd prime p not dividing beta the kernel has order 1, p, or p^2 according as p does not divide 2-u_m, S^m is a nontrivial unipotent, or S^m=I. The identity test v_m=0 and v_{m-1}=-1 depends only on the trace when p does not divide beta. If p does not divide 2(t^2-4), the order divides p-(Delta/p). If p divides beta, equal traces need not agree: the matrices [[-20,-9],[9,4]] and [[-17,-18],[1,1]] have kernels 9 and 3 modulo 3. At N=49 the trace-6 matrices [[3,4],[2,3]] and [[5,2],[2,1]] both have kernel 49 at time 3, not 2401. For a finite cosine kick with i.i.d. uniform phases the quantum average is the Bessel path sum. It is not the classical orbit sum of TRACE-129. If gcd(2-tr,N)=1 the time-one average equals 1 for every real eta. The order-two expansion is |ker|+eta^2 D_2+rho with |D_2|<=2 m^2 sigma |ker|, sigma=sum a_k^2/2, and |rho|<=N^2[(x^3/6)(2+x^3/6)+x^4/4] for x=m B|eta| and B=sum |a_k|. At an identity revival D_2=-m(sigma-sigma_0)p^2. For a_1=1 and a_2=1/2 this is -42025/8 at the model matrix, time 5, prime 41, and -375/8 at [[2,1],[3,2]], time 3, prime 5. The unipotent defect at [[2,1],[1,1]], time 2, prime 5, has kernel 5 and is not given that coefficient. Haar diagonal phases give the flat values 1 and (2N-1)/N at times one and two, and (6N^2-9N+4)/N^2 at time three, whether or not the diagonals agree. This is not the all-order revival law and not a fixed-time limit. The antiunitary Theta=D K_0 reverses U precisely when alpha=delta; the orthogonal-class name is a heuristic. Lean decides companion values, kernels, the order 5 modulo 41, the order 12 modulo 11 for two trace-6 matrices, and the revival cross-multiplications. It does not formalize the expansion. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides companion values, kernel counts, the order modulo 41, the shared order modulo 11, and the revival cross-multiplications. The operator expansion is not formalized. Python and C++ recompute the integers and the floating-point checks.",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
    ],

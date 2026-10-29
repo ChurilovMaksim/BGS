@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Diagonal phase average for every hyperbolic cat map, 29 October 2026
+
+[TRACE-131](fixed-map/hyperbolic_diagonal_form_factor.md) extends the phase average from one cat map to every hyperbolic matrix in \(\mathrm{SL}(2,\mathbb Z)\). For odd \(N\) coprime to the upper-right entry, the quantization is unitary and flat, and it is symmetric exactly when the diagonal entries agree. The pure squared trace equals the order of the kernel. A finite cosine kick with independent uniform phases has quantum average equal to a Bessel-weighted path sum, and the order-two expansion is \(|\ker|+\eta^2 D_2+\rho\) with an explicit remainder. The trace, the Pell companion, and the splitting of the discriminant determine the prime kernel when the prime does not divide the upper-right entry. Two matrices of trace \(-16\) have different kernels modulo \(3\), and both of those upper-right entries are divisible by \(3\). At an identity revival the second-order coefficient is \(-m(\sigma-\sigma_0)p^2\). Time one equals \(1\) whenever \(\gcd(2-\operatorname{tr} S,N)=1\). This is not the all-order revival law and not a fixed-time limit. BGS-TRACE-005 stays open.
+
 ## Local antiunitary for a position-diagonal kick, 29 October 2026
 
 [TRACE-130](fixed-map/sixteen_phase_symmetry.md) proves that for every real diagonal kick the antiunitary \(\Theta=DK_0\) satisfies \(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). The orthogonal-class name is a heuristic. It is not a COE form factor, and it does not exclude a CUE form factor. Each of the rows \(\ell=\pm 1\) has energy \(9/160000\). The full symbol is \(K_0\)-even only for some phases. The momentum sine has symbol energy \(1/2\), and a nonzero multiple is not a function of position. BGS-TRACE-005 stays open.
@@ -469,7 +473,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**216 registered claims: 190 proved, 12 verification-pending, 9 conditional, 5 open.**
+**217 registered claims: 191 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -635,7 +639,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (107 claims)
+### TRACE family (108 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -746,5 +750,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-128` | **PROVED** | Short-time limits of the diagonal-phase form factor |
 | `BGS-TRACE-129` | **PROVED** | Bessel form of the scalar-return orbit sum |
 | `BGS-TRACE-130` | **PROVED** | Local antiunitary for a position-diagonal kick |
+| `BGS-TRACE-131` | **PROVED** | Diagonal phase average for every hyperbolic cat map |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->
