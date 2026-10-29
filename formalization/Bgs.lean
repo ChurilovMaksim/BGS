@@ -42,5 +42,6 @@ import Bgs.PositiveTimeRational
 import Bgs.OrderLadderRational
 import Bgs.OrderTrichotomyRational
 import Bgs.CrtCompositeRational
+import Bgs.SquarefreeProductRational
 
 import Bgs.Mathlib

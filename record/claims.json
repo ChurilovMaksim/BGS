@@ -5346,6 +5346,33 @@
       "manuscript": [
         "manuscript/unified_sections/crt_composite_abel.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-123",
+      "title": "Square-free products of at least three primes lie above 3/4",
+      "source": "mathematics/fixed-map/squarefree_product_abel.md",
+      "dependencies": [
+        "BGS-TRACE-120",
+        "BGS-TRACE-121",
+        "BGS-TRACE-122"
+      ],
+      "boundary": "Every square-free odd modulus with at least three distinct prime factors has L(M)>3/4, and the distance to (1-e^{-2})/4 exceeds 1/2. The fixed kick tau=10^{-80} preserves L(U)>3/4 when there are at least four prime factors and N<=10^{39}, when N is a product of three distinct odd primes not divisible by 15 and N<=10^{39}, and when N=15r with r an odd prime other than 5 and N<=10^{26}. For 15r above 10^{26} the pure sum stays above 3/4 and the kick is not claimed. A prime square is not covered: 315=3^2*5*7 has three distinct prime factors and no bound is claimed. Semiprimes remain the dichotomy of TRACE-122. No density is proved. The kick at u_207, the signed off-diagonal sum, the limit, and every k>2 stay open. Values above 3/4 lie at distance greater than 1/2 from the CUE value, on the side away from (1-e^{-2})/4. Lean certifies the corner integers, the finite-table comparisons, and the three rational lower bounds against 82/105. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/squarefree-product/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/squarefree_product_abel.py",
+        "computations/cpp/squarefree_product_abel.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/SquarefreeProductRational.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/squarefree_product_abel.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

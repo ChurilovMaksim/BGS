@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**344 maintained proof notes; 10 topic views; 208 core claim IDs.**
+**345 maintained proof notes; 10 topic views; 209 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
 | open | 5 |
-| proved | 182 |
+| proved | 183 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 145 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 146 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -178,6 +178,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Scale-normalized positive-quantization bound for the unchanged BGS kick](../mathematics/fixed-map/scaled_weyl_overlap.md) | `BGS-FM-033` (conditional) |
 | [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/fixed-map/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
 | [Distance to the unperturbed spectral orbit: proved global bounds](../mathematics/fixed-map/spectral_orbit_distance.md) | `BGS-TRACE-110` (proved) |
+| [Square-free products of at least three primes](../mathematics/fixed-map/squarefree_product_abel.md) | `BGS-TRACE-123` (proved) |
 | [A once-counted stationary-label residual on the pair normalization](../mathematics/fixed-map/stationary_cyclic_residual.md) | Consult proof and full ledger |
 | [Half-radius obstruction even with reverse-kernel decay](../mathematics/fixed-map/symplectic_half_radius_obstruction.md) | Consult proof and full ledger |
 | [Once-counted distinct-port three-block cancellation](../mathematics/fixed-map/three_block_unmarking.md) | `BGS-TRACE-015` (proved) |
