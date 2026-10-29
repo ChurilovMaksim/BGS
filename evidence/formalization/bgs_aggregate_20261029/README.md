@@ -29,7 +29,7 @@ Log: [build_head48.log](build_head48.log) (sha256 `017489182fbb778be91784385815c
 
 Head commits on the linear stack (#48 → #47 → #49 → #50) each record an additional log in this folder after the same command sequence.
 
-| Branch | Log | Exit |
-|---|---|---|
 | `cursor/diagonal-phase-form-factor-51b0` (#48) | [build_head48.log](build_head48.log) | 0 |
 | `cursor/diagonal-phase-short-time-51b0` (#47) | [build_head47.log](build_head47.log) | 0 |
+| `cursor/scalar-return-bessel-51b0` (#49) | [build_head49.log](build_head49.log) | 0 |
+| `cursor/sixteen-phase-symmetry-51b0` (#50) | [build_head50.log](build_head50.log) | 0 |

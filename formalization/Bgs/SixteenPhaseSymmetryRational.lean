@@ -1,5 +1,7 @@
 set_option maxHeartbeats 0
 
+namespace Bgs.SixteenPhaseSymmetryRational
+
 /-!
 # Rational witness for BGS-TRACE-130
 
@@ -32,3 +34,4 @@ theorem detSI : (2 : Int) * 2 - 4 * 2 = -4 := by decide
 momentum-sine coefficients. `Rat` equality does not reduce under `decide`. -/
 theorem momentumSymbol : ((1 * 4 + 1 * 4 : Int) * 2) = (1 * (4 * 4)) := by
   decide
+end Bgs.SixteenPhaseSymmetryRational

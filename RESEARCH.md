@@ -1,6 +1,6 @@
 # BGS research brief
 
-## Symmetry class of the sixteen-phase ensemble, 29 October 2026
+## Local antiunitary for a position-diagonal kick, 29 October 2026
 
 [TRACE-130](mathematics/fixed-map/sixteen_phase_symmetry.md) proves a local antiunitary for every real diagonal kick, including every position-diagonal realization of the sixteen-phase symbol. If \(D\) is the diagonal unitary exponential of that kick and \(U=DM_N\), then \(\Theta=DK_0\) satisfies \(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). The orthogonal-class name is the heuristic for that antiunitary. It is not a COE form factor, and a symmetric unitary can carry the CUE form factor, so the symmetry does not exclude CUE. Each of the rows \(\ell=\pm 1\) has energy \(9/160000\). The full symbol is not \(K_0\)-even for almost every phase, and it is \(K_0\)-even for some phases. The momentum sine has symbol energy \(1/2\) and is not a function of position, so the antiunitary is not claimed for a nonzero multiple of it. The time-one value remains \(1+\rho_1\) from TRACE-129. BGS-TRACE-005 and BGS-BGS-001 remain OPEN.
 

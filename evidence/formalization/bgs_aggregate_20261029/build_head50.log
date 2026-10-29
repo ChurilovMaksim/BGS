@@ -1,0 +1,138 @@
+ℹ [1/621] Replayed Bgs.AnalyticOrbitKernels
+info: Bgs/AnalyticOrbitKernels.lean:43:0: 'Bgs.AnalyticOrbitKernels.growthBySteps' depends on axioms: [propext, Quot.sound]
+info: Bgs/AnalyticOrbitKernels.lean:44:0: 'Bgs.AnalyticOrbitKernels.positiveCancellation' does not depend on any axioms
+info: Bgs/AnalyticOrbitKernels.lean:45:0: 'Bgs.AnalyticOrbitKernels.negativeNoncancellation' does not depend on any axioms
+info: Bgs/AnalyticOrbitKernels.lean:46:0: 'Bgs.AnalyticOrbitKernels.signedActionsDiffer' does not depend on any axioms
+ℹ [2/621] Replayed Bgs.CayleyEnergy
+info: Bgs/CayleyEnergy.lean:138:0: 'Bgs.CayleyEnergy.k11_generic_energy' depends on axioms: [k11_generic_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:139:0: 'Bgs.CayleyEnergy.k11_exceptional_energy' depends on axioms: [k11_exceptional_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:140:0: 'Bgs.CayleyEnergy.k13_generic_energy' depends on axioms: [k13_generic_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:141:0: 'Bgs.CayleyEnergy.k13_exceptional_energy' depends on axioms: [k13_exceptional_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:142:0: 'Bgs.CayleyEnergy.k23_energy' depends on axioms: [k23_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:143:0: 'Bgs.CayleyEnergy.k23_has_excess' depends on axioms: [k23_has_excess._native.native_decide.ax_1_1]
+ℹ [3/621] Replayed Bgs.CayleyCurveEnergy
+info: Bgs/CayleyCurveEnergy.lean:115:0: 'Bgs.CayleyCurveEnergy.toric_curve_counts_match' depends on axioms: [toric_curve_counts_match._native.native_decide.ax_1_1]
+info: Bgs/CayleyCurveEnergy.lean:116:0: 'Bgs.CayleyCurveEnergy.diagonal_curve_counts' depends on axioms: [diagonal_curve_counts._native.native_decide.ax_1_1]
+info: Bgs/CayleyCurveEnergy.lean:117:0: 'Bgs.CayleyCurveEnergy.enlarged_curve_total' depends on axioms: [enlarged_curve_total._native.native_decide.ax_1_1]
+info: Bgs/CayleyCurveEnergy.lean:118:0: 'Bgs.CayleyCurveEnergy.max_offdiagonal_curve_count' depends on axioms: [max_offdiagonal_curve_count._native.native_decide.ax_1_1]
+ℹ [5/621] Replayed Bgs.FibonacciRatioSmall
+info: Bgs/FibonacciRatioSmall.lean:104:0: 'Bgs.FibonacciRatioSmall.bounded_energy' depends on axioms: [bounded_energy._native.native_decide.ax_1_1]
+info: Bgs/FibonacciRatioSmall.lean:105:0: 'Bgs.FibonacciRatioSmall.bounded_high_collisions_are_local' depends on axioms: [bounded_high_collisions_are_local._native.native_decide.ax_1_1]
+info: Bgs/FibonacciRatioSmall.lean:106:0: 'Bgs.FibonacciRatioSmall.difference_one_multiplicity' depends on axioms: [difference_one_multiplicity._native.native_decide.ax_1_1]
+info: Bgs/FibonacciRatioSmall.lean:107:0: 'Bgs.FibonacciRatioSmall.difference_two_multiplicity' depends on axioms: [difference_two_multiplicity._native.native_decide.ax_1_1]
+info: Bgs/FibonacciRatioSmall.lean:108:0: 'Bgs.FibonacciRatioSmall.difference_four_multiplicity' depends on axioms: [difference_four_multiplicity._native.native_decide.ax_1_1]
+ℹ [6/621] Replayed Bgs.GeneralHyperbolicParity
+info: Bgs/GeneralHyperbolicParity.lean:72:0: 'Bgs.GeneralHyperbolicParity.invariant_refinement' does not depend on any axioms
+info: Bgs/GeneralHyperbolicParity.lean:73:0: 'Bgs.GeneralHyperbolicParity.refinement_polarization' does not depend on any axioms
+info: Bgs/GeneralHyperbolicParity.lean:74:0: 'Bgs.GeneralHyperbolicParity.nontrivial_central_parity' does not depend on any axioms
+info: Bgs/GeneralHyperbolicParity.lean:75:0: 'Bgs.GeneralHyperbolicParity.negative_trace_period' does not depend on any axioms
+info: Bgs/GeneralHyperbolicParity.lean:76:0: 'Bgs.GeneralHyperbolicParity.mixed_period' does not depend on any axioms
+ℹ [7/621] Replayed Bgs.HistoricalMobiusDegenerateFiber
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:47:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_constant_53' depends on axioms: [d0_constant_53._native.native_decide.ax_1_1]
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:48:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_cardinality_53' depends on axioms: [d0_cardinality_53._native.native_decide.ax_1_1]
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:49:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_constant_199' depends on axioms: [d0_constant_199._native.native_decide.ax_1_1]
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:50:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_cardinality_199' depends on axioms: [d0_cardinality_199._native.native_decide.ax_1_1]
+ℹ [8/621] Replayed Bgs.LocalityKernels
+info: Bgs/LocalityKernels.lean:38:0: 'Bgs.LocalityKernels.image_band' depends on axioms: [propext, Quot.sound]
+info: Bgs/LocalityKernels.lean:39:0: 'Bgs.LocalityKernels.excludes_support_strip' depends on axioms: [propext, Quot.sound]
+info: Bgs/LocalityKernels.lean:40:0: 'Bgs.LocalityKernels.cauchy_disk_constant' does not depend on any axioms
+info: Bgs/LocalityKernels.lean:41:0: 'Bgs.LocalityKernels.exponent_budget' depends on axioms: [propext, Quot.sound]
+info: Bgs/LocalityKernels.lean:42:0: 'Bgs.LocalityKernels.gap_partition' depends on axioms: [propext, Quot.sound]
+ℹ [10/621] Replayed Bgs.PairKeyFourthMoment
+info: Bgs/PairKeyFourthMoment.lean:78:0: 'Bgs.PairKeyFourthMoment.diagonal_multiplicity' depends on axioms: [diagonal_multiplicity._native.native_decide.ax_1_1]
+info: Bgs/PairKeyFourthMoment.lean:79:0: 'Bgs.PairKeyFourthMoment.off_diagonal_keys_injective' depends on axioms: [off_diagonal_keys_injective._native.native_decide.ax_1_1]
+info: Bgs/PairKeyFourthMoment.lean:80:0: 'Bgs.PairKeyFourthMoment.coupled_constraint_count' depends on axioms: [coupled_constraint_count._native.native_decide.ax_1_1]
+ℹ [11/621] Replayed Bgs.PairKeySecondMoment
+info: Bgs/PairKeySecondMoment.lean:78:0: 'Bgs.PairKeySecondMoment.constraint_count' depends on axioms: [constraint_count._native.native_decide.ax_1_1]
+info: Bgs/PairKeySecondMoment.lean:79:0: 'Bgs.PairKeySecondMoment.parameterization_bijection' depends on axioms: [parameterization_bijection._native.native_decide.ax_1_1]
+info: Bgs/PairKeySecondMoment.lean:80:0: 'Bgs.PairKeySecondMoment.design_sizes' depends on axioms: [design_sizes._native.native_decide.ax_1_1]
+info: Bgs/PairKeySecondMoment.lean:81:0: 'Bgs.PairKeySecondMoment.generator_exact_order' depends on axioms: [generator_exact_order._native.native_decide.ax_1_1]
+ℹ [12/621] Replayed Bgs.PellCoboundary
+info: Bgs/PellCoboundary.lean:53:0: 'Bgs.PellCoboundary.structuralIdentity' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellCoboundary.lean:54:0: 'Bgs.PellCoboundary.firstSpeciesPeriod' depends on axioms: [firstSpeciesPeriod._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:55:0: 'Bgs.PellCoboundary.secondSpeciesPeriod' depends on axioms: [secondSpeciesPeriod._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:56:0: 'Bgs.PellCoboundary.pairCount' depends on axioms: [pairCount._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:57:0: 'Bgs.PellCoboundary.distinctCount' depends on axioms: [distinctCount._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:58:0: 'Bgs.PellCoboundary.noZero' depends on axioms: [noZero._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:59:0: 'Bgs.PellCoboundary.multiplicityAtMostTwo' depends on axioms: [multiplicityAtMostTwo._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:60:0: 'Bgs.PellCoboundary.doubleKeyCount' depends on axioms: [doubleKeyCount._native.native_decide.ax_1_1]
+ℹ [15/621] Replayed Bgs.PellFourierKernel
+info: Bgs/PellFourierKernel.lean:47:0: 'Bgs.PellFourierKernel.telescope' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellFourierKernel.lean:48:0: 'Bgs.PellFourierKernel.zeroEndpoint' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellFourierKernel.lean:49:0: 'Bgs.PellFourierKernel.reconstruct' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellFourierKernel.lean:50:0: 'Bgs.PellFourierKernel.periodTwoCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [16/621] Replayed Bgs.TorusLevelSets
+info: Bgs/TorusLevelSets.lean:85:0: 'Bgs.TorusLevelSets.nonzero_level_cardinality' depends on axioms: [nonzero_level_cardinality._native.native_decide.ax_1_1]
+info: Bgs/TorusLevelSets.lean:86:0: 'Bgs.TorusLevelSets.zero_cone_cardinality' depends on axioms: [zero_cone_cardinality._native.native_decide.ax_1_1]
+info: Bgs/TorusLevelSets.lean:87:0: 'Bgs.TorusLevelSets.nonzero_level_orbit_count' depends on axioms: [nonzero_level_orbit_count._native.native_decide.ax_1_1]
+info: Bgs/TorusLevelSets.lean:88:0: 'Bgs.TorusLevelSets.global_count_identity' does not depend on any axioms
+info: Bgs/TorusLevelSets.lean:89:0: 'Bgs.TorusLevelSets.nonzero_level_action_free' depends on axioms: [nonzero_level_action_free._native.native_decide.ax_1_1]
+ℹ [17/621] Replayed Bgs.TorusScaleLaw
+info: Bgs/TorusScaleLaw.lean:38:0: 'Bgs.TorusScaleLaw.generator_exact_order_and_inverse' does not depend on any axioms
+info: Bgs/TorusScaleLaw.lean:39:0: 'Bgs.TorusScaleLaw.inverse_and_half_power' does not depend on any axioms
+info: Bgs/TorusScaleLaw.lean:40:0: 'Bgs.TorusScaleLaw.half_trace_and_discriminant' does not depend on any axioms
+info: Bgs/TorusScaleLaw.lean:41:0: 'Bgs.TorusScaleLaw.branch_scales' does not depend on any axioms
+ℹ [18/621] Replayed Bgs.FourCutKernel
+info: Bgs/FourCutKernel.lean:105:0: 'Bgs.FourCutKernel.pairs_through_12' depends on axioms: [propext, pairs_through_12._native.native_decide.ax_1_1]
+info: Bgs/FourCutKernel.lean:106:0: 'Bgs.FourCutKernel.triples_through_10' depends on axioms: [propext, triples_through_10._native.native_decide.ax_1_1]
+info: Bgs/FourCutKernel.lean:107:0: theorem Bgs.FourCutKernel.pairs_through_12 : through 12 false = { configurations := 3858, matchCount := 560 } :=
+of_decide_eq_true pairs_through_12._native.native_decide.ax_1_1
+info: Bgs/FourCutKernel.lean:108:0: theorem Bgs.FourCutKernel.triples_through_10 : through 10 true = { configurations := 650 } :=
+of_decide_eq_true triples_through_10._native.native_decide.ax_1_1
+info: Bgs/FourCutKernel.lean:113:0: 'Bgs.FourCutKernel.pair_m4_excluded' depends on axioms: [propext]
+info: Bgs/FourCutKernel.lean:114:0: 'Bgs.FourCutKernel.triple_m4_excluded' depends on axioms: [propext]
+ℹ [19/621] Replayed Bgs.SevenPrimary
+info: Bgs/SevenPrimary.lean:111:0: 'Bgs.SevenPrimary.product_0' depends on axioms: [propext, Quot.sound, product_0._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:113:0: 'Bgs.SevenPrimary.rabin_0' depends on axioms: [propext, Quot.sound, rabin_0._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:115:0: 'Bgs.SevenPrimary.degrees_0' depends on axioms: [propext, degrees_0._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:131:0: 'Bgs.SevenPrimary.product_1' depends on axioms: [propext, Quot.sound, product_1._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:133:0: 'Bgs.SevenPrimary.rabin_1' depends on axioms: [propext, Quot.sound, rabin_1._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:135:0: 'Bgs.SevenPrimary.degrees_1' depends on axioms: [propext, degrees_1._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:148:0: 'Bgs.SevenPrimary.product_2' depends on axioms: [propext, Quot.sound, product_2._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:150:0: 'Bgs.SevenPrimary.rabin_2' depends on axioms: [propext, Quot.sound, rabin_2._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:152:0: 'Bgs.SevenPrimary.degrees_2' depends on axioms: [propext, degrees_2._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:168:0: 'Bgs.SevenPrimary.product_3' depends on axioms: [propext, Quot.sound, product_3._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:170:0: 'Bgs.SevenPrimary.rabin_3' depends on axioms: [propext, Quot.sound, rabin_3._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:172:0: 'Bgs.SevenPrimary.degrees_3' depends on axioms: [propext, degrees_3._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:185:0: 'Bgs.SevenPrimary.product_4' depends on axioms: [propext, Quot.sound, product_4._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:187:0: 'Bgs.SevenPrimary.rabin_4' depends on axioms: [propext, Quot.sound, rabin_4._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:189:0: 'Bgs.SevenPrimary.degrees_4' depends on axioms: [propext, degrees_4._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:213:0: 'Bgs.SevenPrimary.product_5' depends on axioms: [propext, Quot.sound, product_5._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:215:0: 'Bgs.SevenPrimary.rabin_5' depends on axioms: [propext, Quot.sound, rabin_5._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:217:0: 'Bgs.SevenPrimary.degrees_5' depends on axioms: [propext, degrees_5._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:234:0: 'Bgs.SevenPrimary.product_6' depends on axioms: [propext, Quot.sound, product_6._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:236:0: 'Bgs.SevenPrimary.rabin_6' depends on axioms: [propext, Quot.sound, rabin_6._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:238:0: 'Bgs.SevenPrimary.degrees_6' depends on axioms: [propext, degrees_6._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:244:0: 'Bgs.SevenPrimary.order49' depends on axioms: [order49._native.native_decide.ax_1_1]
+ℹ [20/621] Replayed Bgs.PhaseChannelJetKernels
+info: Bgs/PhaseChannelJetKernels.lean:38:0: 'Bgs.PhaseChannelJetKernels.jet_coefficient_elimination' depends on axioms: [propext, Quot.sound]
+info: Bgs/PhaseChannelJetKernels.lean:39:0: 'Bgs.PhaseChannelJetKernels.poisson_localization' depends on axioms: [propext, Quot.sound]
+info: Bgs/PhaseChannelJetKernels.lean:40:0: 'Bgs.PhaseChannelJetKernels.cascade_increment' depends on axioms: [propext, Quot.sound]
+info: Bgs/PhaseChannelJetKernels.lean:41:0: 'Bgs.PhaseChannelJetKernels.fourier_degree_two_trace_defect' depends on axioms: [propext, Quot.sound]
+ℹ [21/621] Replayed Bgs.PhaseFrameWitness
+info: Bgs/PhaseFrameWitness.lean:30:0: 1
+info: Bgs/PhaseFrameWitness.lean:32:0: 'Bgs.PhaseFrameWitness.phaseWitness_determinant' depends on axioms: [propext]
+ℹ [22/621] Replayed Bgs.TorusDimensionBound
+info: Bgs/TorusDimensionBound.lean:18:0: 'Bgs.TorusDimensionBound.zero_weight_dimension_bound' depends on axioms: [propext]
+ℹ [23/621] Replayed Bgs.ActiveRankDefect
+info: Bgs/ActiveRankDefect.lean:21:0: 'Bgs.ActiveRankDefect.activeDefectCost' depends on axioms: [propext, Quot.sound]
+info: Bgs/ActiveRankDefect.lean:22:0: 'Bgs.ActiveRankDefect.rankFourGivesSecondOrder' depends on axioms: [propext, Quot.sound]
+ℹ [24/621] Replayed Bgs.CoherenceBudget
+info: Bgs/CoherenceBudget.lean:16:0: 'Bgs.CoherenceBudget.budget_positive' depends on axioms: [propext, Quot.sound]
+ℹ [3069/3234] Replayed Bgs.RetTowerGeometry
+info: Bgs/RetTowerGeometry.lean:224:0: 'Bgs.RetTowerGeometry.sep_p_43_31' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:225:0: 'Bgs.RetTowerGeometry.cand_j3_p_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:226:0: 'Bgs.RetTowerGeometry.cand_j3_m_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:227:0: 'Bgs.RetTowerGeometry.noCand_j1_p' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:228:0: 'Bgs.RetTowerGeometry.noCand_j1_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:229:0: 'Bgs.RetTowerGeometry.noCand_j2_p' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:230:0: 'Bgs.RetTowerGeometry.noCand_j2_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:231:0: 'Bgs.RetTowerGeometry.lobe_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/RetTowerGeometry.lean:232:0: 'Bgs.RetTowerGeometry.support_area' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3070/3234] Replayed Bgs.Fm009TraceObstruction
+info: Bgs/Fm009TraceObstruction.lean:90:0: 'Bgs.Fm009TraceObstruction.trace_cube_eq_zero_of_common_reversor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [4099/4636] Built Bgs.SixteenPhaseSymmetryRational (273ms)
+✔ [8789/8790] Built Bgs (4.2s)
+Build completed successfully (8790 jobs).

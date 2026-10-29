@@ -1,6 +1,6 @@
 # Theorem families and their limits
 
-## Symmetry class of the sixteen-phase ensemble, 29 October 2026
+## Local antiunitary for a position-diagonal kick, 29 October 2026
 
 [TRACE-130](fixed-map/sixteen_phase_symmetry.md) proves that for every real diagonal kick the antiunitary \(\Theta=DK_0\) satisfies \(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). The orthogonal-class name is a heuristic. It is not a COE form factor, and it does not exclude a CUE form factor. Each of the rows \(\ell=\pm 1\) has energy \(9/160000\). The full symbol is \(K_0\)-even only for some phases. The momentum sine has symbol energy \(1/2\), and a nonzero multiple is not a function of position. BGS-TRACE-005 stays open.
 
@@ -745,6 +745,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-127` | **PROVED** | Diagonal random-phase form factor of the cat map at times one, two and three |
 | `BGS-TRACE-128` | **PROVED** | Short-time limits of the diagonal-phase form factor |
 | `BGS-TRACE-129` | **PROVED** | Bessel form of the scalar-return orbit sum |
-| `BGS-TRACE-130` | **PROVED** | Symmetry class of the sixteen-phase ensemble |
+| `BGS-TRACE-130` | **PROVED** | Local antiunitary for a position-diagonal kick |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->
