@@ -231,16 +231,16 @@ theorem phase_revival_41 :
   decide
 
 theorem phase_sigma0_3 : sigma0Scaled 3 = 20250 := by
-  native_decide
+  decide
 
 theorem phase_sigma0_5 : sigma0Scaled 5 = 50 := by
-  native_decide
+  decide
 
 theorem phase_sigma0_7 : sigma0Scaled 7 = 6480000 := by
-  native_decide
+  decide
 
 theorem phase_sigma0_11 : sigma0Scaled 11 = 0 := by
-  native_decide
+  decide
 
 theorem phase_sigma0_3_fraction : 20250 * 64000 = 81 * 16000000 := by
   decide
@@ -261,4 +261,4 @@ theorem phase_revival_7 : 3 * (66033 - 81 * 800) * 49 = 181251 := by
   decide
 
 theorem phase_scalar_7 : scalar7 = true := by
-  native_decide
+  decide
