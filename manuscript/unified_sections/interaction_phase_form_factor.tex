@@ -1,0 +1,58 @@
+\section{Phase-averaged form factor and classical symmetry defects}
+\label{sec:interaction-phase-form-factor}
+The phase average below is an average over an auxiliary \(16\)-torus of kick
+phases. It is not a theorem about the fixed kick, and it does not bear on
+the signed off-diagonal sum. The canonical proof is
+\path{mathematics/fixed-map/interaction_phase_form_factor.md}.
+The rational identities are certified by
+\path{formalization/Bgs/PhaseFormFactorRational.lean} and recomputed by the
+Python and C++ verifiers named there. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Phase-averaged form factor, BGS-TRACE-126]
+\label{thm:interaction-phase-form-factor}
+Let \(N\ge 3\) be odd, let \(\eta\in\mathbb R\), and let each of the \(16\)
+pairs of nonzero Fourier modes of the kick carry an independent uniform phase.
+For every integer \(m\ge 1\),
+\[
+\mathbb E_\varphi\lvert\operatorname{Tr} U_N(\eta,\varphi)^m\rvert^2
+=\lvert K_m\rvert+\eta^2 D_2(N,m)+\rho_m(N,\eta),
+\]
+where \(K_m=\ker(S^m-I)\) and \(D_2(N,m)\) is the explicit Gauss-sum
+coefficient of the proof. It satisfies
+\(\lvert D_2\rvert\le 2m^2\sigma\lvert K_m\rvert\) with
+\(\sigma=66033/160000\). If \(x=m B\lvert\eta\rvert\) and
+\(B=184981/160000\), the averaged remainder satisfies
+\[
+\lvert\rho_m(N,\eta)\rvert
+\le N^2\Biggl(\frac{x^3}{6}\Bigl(2+\frac{x^3}{6}\Bigr)+\frac{x^4}{4}\Biggr).
+\]
+The fixed-kick remainder through the same order is at most
+\(N^2\bigl[(x^3/6)(2+x^3/6)+x^3+x^4/4\bigr]\).
+
+At an odd prime \(p\), with \(m\) the order of \(S\) modulo \(p\),
+\[
+D_2(p,m)=-m\bigl(\sigma-\sigma_0(p)\bigr)p^2,
+\]
+where \(\sigma_0(p)\) is the energy of the symbol modes congruent to \(0\)
+modulo \(p\). This energy equals \(81/64000\) at \(p=3\), \(1/320000\) at
+\(p=5\), \(81/200\) at \(p=7\), and \(0\) for every prime \(p\ge 11\).
+Thus \(D_2(3,4)=-1184949/80000\), \(D_2(5,6)=-79239/1280\),
+\(D_2(7,3)=-181251/160000\) and \(D_2(41,5)=-111001473/32000\).
+At the single phase \(\varphi=0\) the linear
+coefficient need not vanish: at \(N=11\), \(m=3\) it is nonzero by a
+cyclotomic witness.
+
+Parity \(\psi(x)\mapsto\psi(-x)\) commutes with \(M_N\), and position-basis
+complex conjugation reverses \(M_N\). At \(N=7\) the kick equals \((9/10)I\),
+so both symmetries survive for every real coupling. For every other odd
+\(N\) both defects are positive. For \(0<\lvert\eta\rvert<\pi/B\) the kicked
+propagator therefore fails both symmetries outside dimension \(7\). The
+parity defect equals \(663/1000000\) once \(N\ge 19\). The reversal defect
+equals \(66031/80000\) once \(N\ge 79\).
+
+No revival limit is proved. A positive limit of \(\tau^2 N^3\) at times
+comparable to \(N\) lies outside the truncation \(m B\lvert\eta\rvert\le 1\).
+The Kurlberg--Rudnick moment calculation is not an input. An \(N\)-dependent
+antiunitary other than the two symmetries above is not classified.
+\end{theorem}

@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "65cd2805a0dd93f39919e9eae3612eeb761ced88",
+ "source_blob_sha": "d933b02ba51be9db073938b243723e05fc90527c",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -36,7 +36,9 @@
   "BGS-TRACE-123 was appended on 2026-10-29. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
   "BGS-TRACE-124 was appended on 2026-10-29. Its Lean file certifies rational inequalities only; the analytic comparison was checked by the author and was not given an independent referee.",
   "BGS-TRACE-125 was appended on 2026-10-29. Its Lean file certifies rational inequalities, the mode mass, the lag-1 coefficient, and the scan at N=41 only; the Pell induction, the archimedean embedding, and the quadratic-form descent are pen-and-paper. The analytic comparison was checked by the author and was not given an independent referee.",
-  "On 2026-10-29 the ledger phrase LEAN FORMALIZATION on BGS-TRACE-117 through BGS-TRACE-125 was replaced by LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY). The methods tag lean_formalization is retained because the Lean file is nonempty. It certifies integer comparisons only."
+  "On 2026-10-29 the ledger phrase LEAN FORMALIZATION on BGS-TRACE-117 through BGS-TRACE-125 was replaced by LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY). The methods tag lean_formalization is retained because the Lean file is nonempty. It certifies integer comparisons only.",
+  "BGS-TRACE-126 was appended on 2026-10-29. Its Lean file certifies the scaled symbol arithmetic only; the trace closure and the phase average were checked by the author and were not given an independent referee.",
+  "BGS-TRACE-126 was corrected on 2026-10-29 after a self-red-team review of the unmerged note. Symbol modes congruent to 0 at the primes 3, 5 and 7 lie in the image, so the prime-revival coefficient is -m (sigma - sigma_0(p)) p^2. The remainder bounds include the quartic term inside |P_2|^2. The derivative remainder is the integral form."
  ],
  "claims": [
   {
@@ -7841,6 +7843,50 @@
    "boundary": "For every odd integer n>=5, at N=u_n, the Fourier overlap gamma(r) of the fixed 32-mode symbol under C is zero for 1<=r<=n-1 except at r=1 and r=n-1, where it equals -7/2000000. The quadratic trace coefficient of the transported product is exactly n*1650797/4000000. The index n=5 is a finite modular scan of the middle lags; every odd n>=7 is the size, archimedean, and quadratic-form argument. This does not bound the third-order remainder, does not prove L(U)>3/4 at any new dimension, does not prove that the weighted off-diagonal sum tends to its CUE correction, and does not decide the limit. The pure cat map is already non-CUE by TRACE-117. This claim does not assert that Kurlberg-Rudnick degeneracies fail to be eigenvalues of the fixed-kick propagator; that sentence does not follow from FM-032 and is not part of the proof. Lean certifies integer comparisons only: the rational seeds, the lag-1 coefficient, the box enumeration at exponent 1, and the exhaustive scan at N=41. It does not formalize the Pell induction, the archimedean embedding, or the quadratic-form descent. BGS-TRACE-005 and BGS-BGS-001 remain open.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean decides the rational seeds, the 32-mode mass, the lag-1 coefficient, the exponent-1 box count, and the exhaustive scan at N=41. The Pell induction, the archimedean embedding, and the quadratic-form descent are not formalized. Python and C++ recompute the modes, the overlaps through n=11, and the size identities through n=31.",
+   "other_weaknesses": [
+    "single_reviewer_author_check_only"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-126",
+   "title": "Phase-averaged form factor and classical symmetry defects of the kicked cat map",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "computer_certificate",
+    "lean_formalization",
+    "author_check"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/phase-form-factor/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/interaction_phase_form_factor.py",
+    "computations/cpp/interaction_phase_form_factor.cpp"
+   ],
+   "formalization": [
+    "formalization/Bgs/PhaseFormFactorRational.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN FORMALIZATION + AUTHOR SELF-REVIEW",
+   "boundary": "For every odd N>=3, every m>=1 and every real eta, the average of |Tr U(eta,phi)^m|^2 over independent uniform phases on the 16 mode pairs equals |ker(S^m-I)| + eta^2 D_2(N,m) + rho, with D_2 an explicit Gauss-sum coefficient of size at most 2 m^2 sigma |ker| and with sigma=66033/160000. With x=m B |eta| and B=184981/160000, the averaged remainder satisfies |rho| <= N^2 [(x^3/6)(2+x^3/6)+x^4/4]. The fixed-kick remainder satisfies |r| <= N^2 [(x^3/6)(2+x^3/6)+x^3+x^4/4]. At an odd prime p, with m the order of S, D_2=-m (sigma-sigma_0(p)) p^2, where sigma_0(p) is the energy of the symbol modes congruent to 0 modulo p: sigma_0(3)=81/64000, sigma_0(5)=1/320000, sigma_0(7)=81/200, and sigma_0(p)=0 for every prime p>=11. The values include D_2(3,4)=-1184949/80000, D_2(5,6)=-79239/1280, D_2(7,3)=-181251/160000 and D_2(41,5)=-111001473/32000. The fixed kick has linear coefficient -2 m |ker| Im Sigma, nonzero at N=11, m=3 by a cyclotomic witness. Parity and position-basis conjugation commute or reverse M_N. Both kick defects vanish at N=7, where A_7=(9/10) I, and both are positive for every other odd N. For 0<|eta|<pi/B the kicked propagator therefore fails both symmetries outside dimension 7. The stable defects are 663/1000000 for odd N>=19 and 66031/80000 for odd N>=79. This is an auxiliary phase average, not the fixed kick and not the signed off-diagonal sum. No revival limit is proved: a positive limit of tau^2 N^3 at times comparable to N lies outside the truncation. The Kurlberg-Rudnick moments are not inputs. N-dependent antiunitaries other than these two symmetries are not classified. Lean certifies the scaled Fourier table, the energy, the parity energy, the majorant, the unreduced reversal sum, the three zero-mode energies and the scalar identity A_7=(9/10) I. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean decides the scaled Fourier table, the energy, the parity energy, the majorant, the unreduced reversal sum, the zero-mode energies at 3, 5, 7 and 11, and the folded identity A_7=(9/10) I. The trace closure and the phase average are not formalized. Python and C++ recompute the integer sums, the cyclotomic witness, the orders and revival coefficients at 3, 5, 7 and 41, and the folded defects, and compare the Gauss-sum traces with literal matrices in floating point.",
    "other_weaknesses": [
     "single_reviewer_author_check_only"
    ],

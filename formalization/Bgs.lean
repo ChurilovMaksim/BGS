@@ -45,5 +45,6 @@ import Bgs.CrtCompositeRational
 import Bgs.SquarefreeProductRational
 import Bgs.OddModulusRational
 import Bgs.UniformOrbitOverlapRational
+import Bgs.PhaseFormFactorRational
 
 import Bgs.Mathlib

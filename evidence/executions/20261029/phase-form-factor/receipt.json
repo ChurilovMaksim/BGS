@@ -1,0 +1,37 @@
+{
+  "schema": "bgs-phase-form-factor-v1",
+  "claim": "BGS-TRACE-126",
+  "ensemble": "16 independent uniform phases, one per nonzero mode pair",
+  "energy": "66033/160000",
+  "majorant": "184981/160000",
+  "parity_defect_for_odd_N_at_least_19": "663/1000000",
+  "reversal_defect_for_odd_N_at_least_79": "66031/80000",
+  "only_odd_dimension_where_both_symmetries_survive": 7,
+  "scalar_kick_at_7": "9/10",
+  "symmetry_failure_range": "0 < |eta| < pi/B for every odd N other than 7",
+  "cyclotomic_witness": "N=11,m=3",
+  "prime_revival_formula": "D2=-m(sigma-sigma0(p))p^2",
+  "sigma0": {
+    "3": "81/64000",
+    "5": "1/320000",
+    "7": "81/200",
+    "every_prime_at_least_11": "0"
+  },
+  "prime_revival_values": {
+    "3,4": "-1184949/80000",
+    "5,6": "-79239/1280",
+    "7,3": "-181251/160000",
+    "41,5": "-111001473/32000"
+  },
+  "averaged_remainder": "N^2 [(x^3/6)(2+x^3/6)+x^4/4]",
+  "fixed_kick_remainder": "N^2 [(x^3/6)(2+x^3/6)+x^3+x^4/4]",
+  "floating_point_trace_closure": "absolute error below 1e-8 on the odd dimensions 3,5,7,9,11,15,21,25,27,35 and powers 1..6 in Python; C++ checks 5,7,9,11,15 and powers 1..4",
+  "sources_sha256": {
+    "python": "1ce104faddba74acd0aac9b0c13f987b547915f3ee0006412d0b95f338b225d7",
+    "cpp": "6a60b5fe0fc89d8681ca5c45b4052b4b8c282150abd42c78f0fcb2bb294bc082",
+    "lean": "86a9a2f09dbf034242f3d5036000fe6e4981c169ab07b06dc9ce8b8af886f876",
+    "proof": "7b254a438ac698cd42f8878e300377c290e6b88e72a321d30abec0810cc7c295"
+  },
+  "self_red_team": "29 October 2026 correction of the unmerged note: zero-mode energy at primes 3, 5 and 7, quartic term inside |P2|^2, integral remainder, and the relative correction m eta^2.",
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a revival limit, or the absence of every N-dependent antiunitary. The phase average is not the fixed kick."
+}

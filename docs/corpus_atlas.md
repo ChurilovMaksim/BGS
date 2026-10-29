@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**348 maintained proof notes; 10 topic views; 211 core claim IDs.**
+**349 maintained proof notes; 10 topic views; 212 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 9 |
 | open | 5 |
-| proved | 185 |
+| proved | 186 |
 | verification-pending | 12 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 149 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 150 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -117,6 +117,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Exact heat compensation of a Heisenberg pair test](../mathematics/fixed-map/heisenberg_pair_heat_formula.md) | `BGS-FLOW-021` (proved) |
 | [Corrected hook-cycle, tree and phase-current reduction](../mathematics/fixed-map/hook_tree_phase_current_reduction.md) | `BGS-TRACE-026` (proved) |
 | [Inserted trace and the exact obstruction to a quantum coboundary](../mathematics/fixed-map/inserted_trace_coboundary.md) | `BGS-TRACE-109` (proved) |
+| [Phase-averaged form factor and classical symmetry defects](../mathematics/fixed-map/interaction_phase_form_factor.md) | `BGS-TRACE-126` (proved) |
 | [Intermediate-old-layer rotated returns: exact operator and obstruction](../mathematics/fixed-map/intermediate_return_operator.md) | Consult proof and full ledger |
 | [Kick-blind arithmetic spikes of the fixed map](../mathematics/fixed-map/kick_blind_arithmetic_spike.md) | `BGS-TRACE-117` (proved) |
 | [Fixed-word freeness of the literal kick and cat factors](../mathematics/fixed-map/literal_fixed_word_freeness.md) | Consult proof and full ledger |

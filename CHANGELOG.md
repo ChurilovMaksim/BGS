@@ -1,5 +1,9 @@
 # Scientific changelog
 
+## 2026-10-29 — Phase-averaged form factor
+
+Register BGS-TRACE-126. For the auxiliary ensemble in which the 16 mode pairs of the kick carry independent uniform phases, the averaged squared trace equals \(|K_m|+\eta^2 D_2+\rho\), with \(D_2\) an explicit Gauss-sum coefficient and with an operator-norm remainder. At an odd prime \(p\) the second-order revival coefficient is \(-m(\sigma-\sigma_0(p))p^2\). The zero-mode energy is \(\sigma_0(3)=81/64000\), \(\sigma_0(5)=1/320000\), \(\sigma_0(7)=81/200\), and \(\sigma_0(p)=0\) for every prime \(p\ge 11\). The fixed kick has a linear term, nonzero at \(N=11\), \(m=3\). Parity and position-basis conjugation fail for the kicked propagator when \(0<\lvert\eta\rvert<\pi/B\), except at dimension \(7\), where \(A_7=(9/10)I\). A same-day self-red-team correction replaced the first formula \(-m\sigma N^2\), which omitted those three zero modes, and enlarged the remainder by the quartic term inside the Taylor polynomial. No revival limit is proved. The dependency on BGS-TRACE-117 is the phase-free conjugation only. Python, C++ and a Lean rational witness certify the symbol arithmetic. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
+
 ## 2026-10-29 — Separation wording and the semiprime partner
 
 Section 2 of `mathematics/fixed-map/offdiagonal_strategy.md` no longer treats an upper bound below \(5/7\) as a separation of \(L_N(U_N;1)\) from the CUE value: \(5/7\) is larger than \((1-e^{-2})/4\). A separation is a weighted one-term gap, an upper bound \(L_N(U_N;1)\le(1-e^{-2})/4-c\) for a fixed \(c>0\), or a lower bound above \(3/4\). The fixed-point count of a trace square is the lemma in Section 2 of BGS-TRACE-120, cited in Section 2 of BGS-TRACE-122. Theorem 3 of BGS-TRACE-122 states that the non-short partner of \(7\) is an inert prime of order \(q+1\), which already includes \(q=3\). No claim state changes. The Python, C++, and Lean certificates were not re-run.
@@ -23,7 +27,6 @@ ERR-061, ERR-062 and ERR-063 correct three statements already registered on this
 ## 2026-10-29 — Every odd modulus lies above 3/4 or below 5/7
 
 Register BGS-TRACE-124. Every odd modulus \(N\ge3\) satisfies \(L_N(M_N;1)>3/4\) or \(L_N(M_N;1)<5/7\). The modulus \(315=3^2\cdot5\cdot7\) is short because its radical \(105\) is short; no separate expansion at \(315\) is required. The fixed kick \(\tau=10^{-80}\) preserves the gap above \(3/4\) when \(8t(N)\le3N\) and \(N\le10^{39}\), through \(10^{26}\) on the ratio-preserving families whose pure margin exceeds \(13/420\), and through \(2\cdot10^{26}\) for \(N=15r\). The kick is not claimed for a ceiling tower: at \(3\cdot23\) the gap \(575/22594\) is smaller than \(13/420\). It is not claimed for an inert exponent-one partner \(q\ge40\), for \(15r>2\cdot10^{26}\), or at \(u_{207}\). Python, C++ and a Lean rational witness certify the integers. Lean certifies the closed comparisons, including the fraction at inert partner \(13\); the other twenty-six inert rows are recomputed only by the two integer programs. No density is proved. The signed off-diagonal sum stays open. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
-
 
 ## 2026-10-29 — Square-free products of at least three primes
 
