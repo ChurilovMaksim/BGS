@@ -1,8 +1,11 @@
 # Scientific changelog
 
+## 2026-10-29 — Bessel form of the scalar-return orbit sum
+
+Register BGS-TRACE-129. At a scalar return \(S^m\equiv I\), the cat-map propagator is a scalar and the kicked trace is the trace of the Egorov product. Modes congruent to \(0\) cancel in the squared modulus, and the time-one coefficient vanishes for every odd dimension, so the averaged squared trace stays at \(1\) inside the perturbative window. For a position-diagonal kick the classical orbit sum has an exact phase average, a product of Bessel factors \(J_0\) indexed by pairs of torus points. Its degree-two jet is the exponential \(\exp(-m\sigma_{\mathrm{diag}}\eta^2)\). The degree-four gap is the additive excess of the position orbit: it vanishes at the primes \(7\), \(31\), \(41\) and \(47\), and it does not vanish at \(11\). The momentum-row energy is \(9/160000\). No COE limit and no CUE crossover are claimed. Python and C++ check the orbit counts and the Bessel sum in floating point; a Lean rational witness certifies the orders, the quadruple counts at \(5\) and \(7\), and the energy identity. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
 ## 2026-10-29 — Self-red-team of the short-time diagonal-phase argument
 
-BGS-TRACE-128. The Kloosterman scaling is \(S(ra,sa^{-1})=S(r,s)\). The identity \(S(ra,sa)=S(r,s)\) is false. The phase gap is \(\delta=3\cdot 4^{-1}-9\), and \(4\delta=-33\) is unchanged. The monomials \(x_a^{-1}x_b\) are distinct reduced monomials, not characters. A second diagonal is removed by conjugating with \(D_2\): \(D_2(D_1M_ND_2)D_2^{-1}=(D_2D_1)M_N\). The square-root conjugation is false. The limits are unchanged. No new external dependency.
+BGS-TRACE-128. The Kloosterman scaling is \(S(ra,sa^{-1})=S(r,s)\). The identity \(S(ra,sa)=S(r,s)\) is false. The phase gap is \(\delta=3\cdot 4^{-1}-9\), and \(4\delta=-33\) is unchanged. The monomials \(x_a^{-1}x_b\) are distinct reduced monomials, not characters. A second diagonal is removed by conjugating with \(D_2\): \(D_2(D_1M_ND_2)D_2^{-1}=(D_2D_1)M_N\). The square-root conjugation is false. The limits are unchanged. No new external dependency.>>>>>>> dffa0dc5 (Prove the Bessel form of the scalar-return orbit sum (TRACE-129))
 
 ## 2026-10-29 — Short-time limits of the diagonal-phase form factor
 

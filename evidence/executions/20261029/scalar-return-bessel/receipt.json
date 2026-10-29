@@ -1,0 +1,17 @@
+{
+  "schema": "bgs-scalar-return-bessel-v1",
+  "claim": "BGS-TRACE-129",
+  "bessel_identity": "E|S|^2 = N^{-4} sum_{z,z'} prod_r J_0(2 eta |c_r| |V_r(z)-V_r(z')|)",
+  "time_one": "D_2 vanishes for every odd N",
+  "momentum_row_energy": "9/160000",
+  "quadruple_excess": {"5": 24, "7": 0, "11": 120, "31": 0, "41": 0, "47": 0},
+  "lambda_one_ratio": {"11": "1.2307", "31": "0.9880", "47": "0.9848"},
+  "not_claimed": "E|Tr U^m|^2 = N^2 exp(-m sigma eta^2) at eta^2 sigma m of order one",
+  "sources_sha256": {
+    "python": "6196d79257d97d6b6d4e91bf1b5083efe9df4d929bb8af9e062806fda3a6591b",
+    "cpp": "ea611aaf9642708b6e9dbde3876353e67c268caaddcfbe2b7522b723eee17212",
+    "lean": "c6470d570e946a32574a15b5a00910b036130d9172cf30912208e1dda1d65085",
+    "proof": "de203077dea023bdee95775dd91b10f3f02aa529ca09ab0ae0a0cf62d3d5a087"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a COE limit, or a CUE crossover."
+}

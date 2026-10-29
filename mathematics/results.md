@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Scalar-return orbit sum, 29 October 2026
+
+[TRACE-129](fixed-map/scalar_return_bessel.md) evaluates the sixteen-phase ensemble at a return \(S^m\equiv I\). The cat-map power is scalar. The classical orbit sum of a position-diagonal kick has an exact Bessel average, whose degree-two jet is \(\exp(-m\sigma_{\mathrm{diag}}\eta^2)\). The degree-four gap is the quadruple excess of the position orbit. It vanishes at \(7\), \(31\), \(41\) and \(47\), and it equals \(120\) at \(11\). Time one stays at the pure value \(1\) inside the perturbative window. The momentum-row energy is \(9/160000\). No form-factor limit at times of order \(N\) is proved. BGS-TRACE-005 stays open.
+
 ## Short-time diagonal-phase limits, 29 October 2026
 
 [TRACE-128](fixed-map/diagonal_phase_short_time.md) gives the fixed-time limit of the diagonal-phase form factor. For the symmetric cat map the limit is \(2m\) at each \(m\ge 3\), and the distance to \(2m P(N,m)/N^m\) is at most \(m!(1+m(m-1))/N\). The logarithmic window \(m\le c\log N/\log\log N\) with \(c<1\) is included. A power \(m\le N^{\alpha}\) is not. Row inversion by \(x\mapsto x^{-1}\) on an odd prime produces the limit \(m\), except at \(p=3\), where the permutation is the identity. A second diagonal factor is conjugate, by \(D_2\), to one diagonal times \(M_N\). The sixteen-phase ensemble of TRACE-126 is not evaluated. BGS-TRACE-005 stays open.
@@ -461,7 +465,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**214 registered claims: 188 proved, 12 verification-pending, 9 conditional, 5 open.**
+**215 registered claims: 189 proved, 12 verification-pending, 9 conditional, 5 open.**
 
 ### BGS family (1 claim)
 
@@ -627,7 +631,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (105 claims)
+### TRACE family (106 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -736,5 +740,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-126` | **PROVED** | Phase-averaged form factor and classical symmetry defects of the kicked cat map |
 | `BGS-TRACE-127` | **PROVED** | Diagonal random-phase form factor of the cat map at times one, two and three |
 | `BGS-TRACE-128` | **PROVED** | Short-time limits of the diagonal-phase form factor |
+| `BGS-TRACE-129` | **PROVED** | Bessel form of the scalar-return orbit sum |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->
