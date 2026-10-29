@@ -1,0 +1,41 @@
+\section{Every odd modulus}
+\label{sec:odd-modulus-abel}
+Every odd modulus \(N\ge3\) has pure Abel value strictly above \(3/4\) or
+strictly below \(5/7\). The canonical proof is
+\path{mathematics/fixed-map/odd_modulus_abel.md}.
+The integer comparisons are certified by
+\path{formalization/Bgs/OddModulusRational.lean} and recomputed by the
+Python and C++ verifiers named there. No external refereeing is asserted.
+BGS-TRACE-005 and BGS-BGS-001 remain open.
+
+\begin{theorem}[Odd moduli above \(3/4\) or below \(5/7\), BGS-TRACE-124]
+\label{thm:odd-modulus-abel}
+Let \(N\ge3\) be odd. Exactly one of the following holds:
+\(L_N(M_N;1)>3/4\), so the distance from this value to
+\((1-e^{-2})/4\) is greater than \(1/2\), or
+\(L_N(M_N;1)<5/7\), so that distance is less than \(1/2\).
+The modulus \(315=3^2\cdot5\cdot7\) is in the first case, because its
+radical \(105\) is short.
+
+For the fixed kick \(\tau=10^{-80}\), the gap \(L_N(U_N;1)>3/4\) holds
+when \(8\,t(N)\le3N\) and \(N\le10^{39}\), in particular at \(N=315\).
+It holds when \(N\le10^{26}\) and \(N\) is a ratio-preserving tower whose
+pure margin exceeds \(13/420\): the tower \(3\cdot7^a\) with \(a\ge2\), an
+inert full-order tower whose exponent of \(7\) is at least \(2\), an inert
+tower \(7q^b\) with exponent of \(7\) equal to \(1\) and
+\(13\le q\le39\), or \(3\cdot5^b\cdot13\) with \(b\ge2\). A split
+full-order tower does not occur, and a non-short product of \(3\) with a
+short prime does not occur. It holds when
+\(N=15r\) with \(r\) an odd prime, \(r\ge7\), and \(N\le2\cdot10^{26}\).
+The modulus \(45=3^2\cdot5\) is strongly short, so the first window applies
+to it.
+
+The kick is not claimed for a ratio-preserving tower over a ceiling
+semiprime. At \(3\cdot23\) the gap from the tower majorant to \(5/7\) is
+\(575/22594\), which is smaller than \(13/420\). The kick is not claimed
+for an inert tower \(7q^b\) with the exponent of \(7\) equal to \(1\) and
+\(q\ge40\): the comparison which proves \(L>3/4\) on that tail lies below
+\(82/105\). The kick is not claimed for \(N=15r>2\cdot10^{26}\), nor at
+the \(79\)-digit dimension \(u_{207}\). No density is proved. The signed
+off-diagonal sum, the limit, and every \(k>2\) stay open.
+\end{theorem}

@@ -219,3 +219,15 @@ for pair-heat equations (H22)/(H23). Their mathematical content is unchanged.
 ## ERR-060 — Pure-loss scalar identity, 28 October 2026
 
 The displayed identity for $r^2$ omitted $-4u^2e$. The maintained proof and manuscript now include that term. At $u=1/16$, $\eta=1/2$, $n=1$, the actual value is $255/256$ rather than $257/256$. `Bgs.Mathlib.PureLoss.pl_r2_eq` and `pl_r2_source_formula_false` certify the correction. Bounds and claim states are unchanged; the formal channel/tensor proof is not supplied.
+
+## ERR-061 — Inert half order in the cat-map trichotomy, 29 October 2026
+
+Theorem 1 of BGS-TRACE-121 listed $t=(p+1)/2$ as a long order when $\varepsilon=-1$. That clause is empty. Write $\alpha=1+\sqrt2$, so $N(\alpha)=-1$ and $\lambda=\alpha^2=3+2\sqrt2$. If $p$ splits, $\lambda^{(p-1)/2}=1$, hence $t$ divides $(p-1)/2$ and $t=p-1$ does not occur. If $p$ is inert, $\lambda^{(p+1)/2}=-1$, hence the cofactor $(p+1)/t$ is odd and $t=(p+1)/2$ does not occur. The long class is the inert full order $t=p+1$. The same divisibility is already stated for the order of $S=C^T$ in Section 1 of BGS-TRACE-009. The Abel comparisons and claim state are unchanged. The finite scan through every odd prime $p\le10^6$ checks the matrix form of the two congruences.
+
+## ERR-062 — Two empty semiprime kick windows, 29 October 2026
+
+Theorem 3 and the kick corollary of BGS-TRACE-122 named a split full-order multiple of $7$ and a non-short product of $3$ with a short prime of odd order. Both families are empty. A split order divides $(q-1)/2$. If $q\ge5$ is short and $T=\operatorname{lcm}(4,t(q))$, then $12T\le15q$: the order is at most $(q+1)/3$, the case $4\mid t$ gives $T=t$, the case $t\equiv2\pmod4$ gives $24t\le8(q+1)$, and an odd order is split with $t\le(q+1)/4$, hence $48t\le15q$. The kick corollary that remains is $N=21$. The pure dichotomy is unchanged.
+
+## ERR-063 — Square-free hypothesis on $N=15r$, 29 October 2026
+
+Theorem 2 of BGS-TRACE-123 said $N=15r$ for an odd prime $r$ other than $5$. The prime $r=3$ gives $45=3^2\cdot5$, which is not square-free, and $r=5$ gives $75=3\cdot5^2$. The kick window is $r\ge7$. The modulus $45$ is strongly short by BGS-TRACE-124, since $t(45)=12$ and $8\cdot12\le3\cdot45$. This note does not treat a prime square. BGS-TRACE-124 places every odd modulus, and $315$ is short because its radical $105$ is short.

@@ -3,7 +3,7 @@
 **Claim ID:** `BGS-TRACE-121`.
 **Status:** project proof. The rational comparisons are typechecked in Lean 4.33.1 and recomputed in independent Python and C++ integer arithmetic. No external referee.
 
-The argument depends on `BGS-TRACE-120` for the trace-square identity, the criterion that an odd modulus divides \(u_t\) or \(v_t\), the short-order and long-order Abel theorems, the comparisons \(1/(e-1)<7/12\), \(1/(e^2-1)<1/6\) and \(5/7<(3-e^{-2})/4\), and the kick-difference estimate of its Section 7. It uses the norm majorant \(B=184981/160000\) only through that estimate. The orders \(t(3)=4\) and \(t(5)=6\) are the evaluations already proved there.
+The argument depends on `BGS-TRACE-120` for the trace-square identity, the criterion that an odd modulus divides \(u_t\) or \(v_t\), the short-order and long-order Abel theorems, the comparisons \(1/(e-1)<7/12\), \(1/(e^2-1)<1/6\) and \(5/7<(3-e^{-2})/4\), and the kick-difference estimate of its Section 7. It uses the norm majorant \(B=184981/160000\) only through that estimate. The orders \(t(3)=4\) and \(t(5)=6\) are the evaluations already proved there. The sharper divisibility in the half-order lemma is the arithmetic already stated for the order of \(S=C^T\) in Section 1 of `BGS-TRACE-009`. The proof is written in Section 3 and does not use the open cancellation hypothesis of that note.
 
 `BGS-TRACE-005` and `BGS-BGS-001` remain **open**.
 
@@ -20,8 +20,10 @@ Write \(\lambda=3+2\sqrt2\), so \(\lambda^m=U_m+V_m\sqrt2\) with the same intege
 **Theorem 1 (every odd prime).** Let \(p\) be an odd prime and \(t=t(p)\). Set \(\varepsilon=1\) if \(p\equiv1\) or \(7\pmod8\), and \(\varepsilon=-1\) if \(p\equiv3\) or \(5\pmod8\). Then \(t\) divides \(p-\varepsilon\), and exactly one of the following holds.
 
 - **Short.** \(t\le(p-\varepsilon)/3\). For \(p\ge5\) one has \(12t\le5p\), so \(L_p(M_p;1)>3/4\) and the distance from this value to \((1-e^{-2})/4\) is greater than \(1/2\).
-- **Long.** \(t=p-\varepsilon\), or else \(\varepsilon=-1\) and \(t=(p+1)/2\). Then \(L_p(M_p;1)<5/7\), so the statistic lies below \(3/4\) and its distance to \((1-e^{-2})/4\) is less than \(1/2\).
+- **Long.** \(\varepsilon=-1\) and \(t=p+1\). Then \(L_p(M_p;1)<5/7\), so the statistic lies below \(3/4\) and its distance to \((1-e^{-2})/4\) is less than \(1/2\).
 - **Split-half.** \(\varepsilon=1\) and \(t=(p-1)/2\). The only odd prime below \(17\) with \(\varepsilon=1\) is \(p=7\). At that prime \(L_7(M_7;1)>3/4\). For every split-half prime \(p\ge17\), \(L_p(M_p;1)<41/60<5/7\).
+
+The clause \(t=(p+1)/2\) does not occur, and a split prime does not have order \(p-1\). Both exclusions are the half-order lemma in Section 3. On an odd prime the inequality \(2t\ge p+1\) is exactly the long class.
 
 **Theorem 2 (every odd prime power).** Let \(\delta=\delta(p)\) be the largest positive integer such that \(C^{t(p)}\equiv I\pmod{p^\delta}\). For \(k\ge1\), the order of \(C\) modulo \(p^k\) is
 
@@ -32,7 +34,7 @@ t(p^k)=t(p)\,p^{\max(k-\delta,0)}.
 If \(k\ge2\), exactly one of the following applies.
 
 - If \(\delta\ge2\), or if \(\delta=1\) and \(12\,t(p)\le5p\), then \(12\,t(p^k)\le5\,p^k\), so \(L(M)>3/4\).
-- If \(\delta=1\) and \(2\,t(p)\ge p+1\), then \(L(M)<5/7\).
+- If \(\delta=1\) and \(2\,t(p)\ge p+1\), then \(L(M)<5/7\). By the half-order lemma this hypothesis is exactly \(\varepsilon=-1\) and \(t(p)=p+1\).
 - If \(\delta=1\), \(t(p)=(p-1)/2\) and \(p=7\), then \(L(M)>3/4\).
 - If \(\delta=1\), \(t(p)=(p-1)/2\) and \(p\ge17\), then \(L(M)<5/7\).
 
@@ -49,7 +51,7 @@ Direct division gives \(\delta(3)=\delta(5)=\delta(7)=1\). In particular every p
 
 **Crossing.** The verifiers recompute the recurrence below. One has \(t(13)=14\) and \(\delta(13)=2\), so \(L_{13}(M_{13};1)<5/7\) while \(L_{169}(M_{169};1)>3/4\). Likewise \(t(31)=15\) and \(\delta(31)=2\), so \(L_{31}(M_{31};1)<41/60\) while \(L_{961}(M_{961};1)>3/4\).
 
-**Boundary.** These statements classify every odd prime and every odd prime power. They do not classify a modulus divisible by two distinct primes; that semiprime case is `BGS-TRACE-122`. They do not give a density of any order class, and they do not give the CUE value. The Abel weight \(e^{-2m/N}\) is the Heisenberg-time weight, but the comparison is only with the thresholds \(3/4\) and \(5/7\). The off-diagonal sum, every \(k>2\), the limit, `BGS-TRACE-005` and `BGS-BGS-001` stay open.
+**Boundary.** These statements classify every odd prime and every odd prime power. The long class is the inert full order. The value \(t=(p+1)/2\) does not occur, and a split prime does not have order \(p-1\). They do not classify a modulus divisible by two distinct primes; that semiprime case is `BGS-TRACE-122`. They do not give a density of any order class, and they do not give the CUE value. The Abel weight \(e^{-2m/N}\) is the Heisenberg-time weight, but the comparison is only with the thresholds \(3/4\) and \(5/7\). The off-diagonal sum, every \(k>2\), the limit, `BGS-TRACE-005` and `BGS-BGS-001` stay open.
 
 ## 2. Where the characteristic polynomial splits
 
@@ -97,14 +99,25 @@ so the conjugate of \(\lambda_p\) is \(\lambda_p^p\), and \(\lambda_p^{p+1}=\lam
 
 In both cases \(t(p)\) divides \(p-\varepsilon\).
 
+**Lemma (half-order obstruction).** Let \(p\) be an odd prime and \(t=t(p)\). Write \(\alpha=1+\sqrt2\). Then \(N(\alpha)=\alpha(1-\sqrt2)=-1\) and \(\lambda=\alpha^2=3+2\sqrt2\).
+
+- If \(\varepsilon=1\), then \(t\) divides \((p-1)/2\). In particular \(t\neq p-1\) and \(t\neq(p+1)/2\).
+- If \(\varepsilon=-1\), then \(\lambda^{(p+1)/2}=-1\) in \(\mathbb F_p[\sqrt2]\). Hence \(t\) does not divide \((p+1)/2\). Since \(t\) divides \(p+1\), the positive cofactor \((p+1)/t\) is odd. In particular \(t\neq(p+1)/2\), and \(t\) is even. The full order \(t=p+1\) has cofactor \(1\) and is not excluded.
+
+If \(\varepsilon=1\), choose \(s\in\mathbb F_p\) with \(s^2=2\) and set \(\alpha_p=1+s\). Then \(\alpha_p^2=3+2s=\lambda_p\) and \(\alpha_p\neq0\). Fermat's theorem in \(\mathbb F_p^\times\) gives \(\alpha_p^{p-1}=1\), so \(\lambda_p^{(p-1)/2}=1\). The order of \(\lambda_p\) is \(t\), so \(t\) divides \((p-1)/2\).
+
+If \(\varepsilon=-1\), work in the field \(\mathbb F_p[x]/(x^2-2)\) and set \(\alpha_p=1+x\). Then \(\alpha_p^2=\lambda_p\) and \(\alpha_p(1-x)=1-x^2=-1\). For \(0<r<p\) the prime \(p\) divides \(\binom{p}{r}\), and Fermat gives \(a^p=a\), so \((a+bx)^p=a^p+b^px^p=a+bx^p\). Also \(x^2=2\), hence \(x^p=x\cdot2^{(p-1)/2}\). Section 2 gives \(2^{(p-1)/2}=-1\), so \(x^p=-x\) and \(\alpha_p^p=1-x\). Therefore \(\alpha_p^{p+1}=(1+x)(1-x)=-1\), and \(\lambda_p^{(p+1)/2}=\alpha_p^{p+1}=-1\neq1\). The order \(t\) does not divide \((p+1)/2\). If the cofactor \((p+1)/t\) were even, \(t\) would divide \((p+1)/2\). The cofactor is therefore odd. Since \(p+1\) is even, \(t\) is even. The value \(t=(p+1)/2\) would have cofactor \(2\), so it does not occur.
+
+The same two divisibility statements are already recorded for the order of \(S=C^T\) in Section 1 of `BGS-TRACE-009`. The argument here does not use the open hypothesis of that note.
+
+Both programs check the matrix form for every odd prime through \(10^6\). If \(\varepsilon=1\), then \(C^{(p-1)/2}\equiv I\pmod p\). If \(\varepsilon=-1\), then \(C^{(p+1)/2}\equiv -I\pmod p\). On the same range they recompute \(t(p)\) and check the two exclusions, the parity of the inert cofactor, and, for every short prime \(q\ge5\), the inequality \(12\operatorname{lcm}(4,t(q))\le15q\) used in `BGS-TRACE-122`. Through \(500\) that order agrees with the order read by multiplying \(C\). The range is a finite check. The lemma is the proof for every odd prime.
+
 ## 4. Proof of the trichotomy
 
-Let \(M=p-\varepsilon\), so \(t\mid M\) and \(M\in\{p-1,p+1\}\). Both values are even. If a positive divisor \(d\) of \(M\) satisfies \(d<M/2\), then \(M/d\ge3\), hence \(d\le M/3\). The only divisors that can exceed \(M/3\) are therefore \(M/2\) and \(M\).
+Let \(M=p-\varepsilon\), so \(t\mid M\) and \(M\in\{p-1,p+1\}\). Both values are even. If a positive divisor \(d\) of \(M\) satisfies \(d<M/2\), then \(M/d\ge3\), hence \(d\le M/3\). The only divisors that can exceed \(M/3\) are therefore \(M/2\) and \(M\). The half-order lemma removes two of the four formal possibilities.
 
-- If \(t\le M/3\), the order is short.
-- If \(t=M\), then \(2t=2(p-\varepsilon)\ge p+1\), so the order is long.
-- If \(t=M/2\) and \(\varepsilon=-1\), then \(2t=p+1\), so the order is long.
-- If \(t=M/2\) and \(\varepsilon=1\), then \(t=(p-1)/2\). This is the split-half case: \(2t=p-1<p+1\), and \(t>(p-1)/3\).
+- If \(\varepsilon=1\), then \(t\) divides \(M/2\), so \(t\neq M\). The case \(t=M/2\) is split-half: \(2t=p-1<p+1\) and \(t>(p-1)/3\). The case \(t\le M/3\) is short. There is no long split prime.
+- If \(\varepsilon=-1\), then \(t\neq M/2\). The case \(t=M\) is the long class \(t=p+1\), and \(2t=2(p+1)\ge p+1\). The case \(t\le M/3\) is short. The formal value \(t=(p+1)/2\) does not occur.
 
 For a short order and \(p\ge5\), \(3t\le p-\varepsilon\), so \(12t\le4(p-\varepsilon)\le4(p+1)\). Also \(4(p+1)\le5p-1\), because \(5\le p\). Thus \(12t\le5p-1\), and Theorem 1 of `BGS-TRACE-120` gives \(L_p(M_p;1)>3/4\). The CUE value is strictly less than \(1/4\), so the distance is greater than \(1/2\).
 
@@ -451,8 +464,8 @@ The comparisons decide whether \(L_N(M_N;1)\) and, inside the stated windows, \(
 
 | Check | What it certifies |
 |---|---|
-| `computations/verification/order_trichotomy_abel.py` | The majorants \(23441/9947\), \(45187/33957\), \(31780817/28118111\) and the partial sum \(213457/83521\); the cleared comparisons of Sections 5, 6, 9 and 11, including the \(10^{25}\) window; the Pell induction through \(u_{207}\) and its \(79\) digits; the witnesses \(p=3,5,7,13,31\); the kernel formula for every odd prime \(p\le80\) at modulus \(p^k\), \(k\le3\), and all times through \(4p\); the trichotomy for every odd prime through \(500\) |
-| `computations/cpp/order_trichotomy_abel.cpp` | The same series, comparisons, window, Pell count, witnesses, kernel sample and trichotomy, in independent integer arithmetic |
-| `formalization/Bgs/OrderTrichotomyRational.lean` | `decide` proofs of the cleared comparisons and of the \(10^{25}\) window. Typechecked with Lean 4.33.1. It does not formalize Sections 2–4 or 7–8 |
+| `computations/verification/order_trichotomy_abel.py` | The majorants \(23441/9947\), \(45187/33957\), \(31780817/28118111\) and the partial sum \(213457/83521\); the cleared comparisons of Sections 5, 6, 9 and 11, including the \(10^{25}\) window; the Pell induction through \(u_{207}\) and its \(79\) digits; the witnesses \(p=3,5,7,13,31\); the kernel formula for every odd prime \(p\le80\) at modulus \(p^k\), \(k\le3\), and all times through \(4p\); the trichotomy for every odd prime through \(500\); the half-order congruences, the two exclusions, and the inequality \(12\operatorname{lcm}(4,t(q))\le15q\) for every short prime, through \(10^6\) |
+| `computations/cpp/order_trichotomy_abel.cpp` | The same series, comparisons, window, Pell count, witnesses, kernel sample, trichotomy, and half-order scan, in independent integer arithmetic |
+| `formalization/Bgs/OrderTrichotomyRational.lean` | `decide` proofs of the cleared comparisons and of the \(10^{25}\) window. Typechecked with Lean 4.33.1. It does not formalize Sections 2–4 or 7–8, and it does not formalize the half-order lemma |
 
 The aggregate `lake build` was not rerun: the Mathlib cache was not present. The new module imports only the Lean prelude.

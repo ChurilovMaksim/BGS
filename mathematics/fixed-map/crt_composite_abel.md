@@ -42,17 +42,16 @@ Every coefficient \(c_S\) is positive, and the coefficients sum to \(1\).
 **Theorem 3 (semiprime dichotomy).** Let \(N=pq\) with odd primes \(p<q\), and let \(T=t(N)\). Exactly one of the following holds.
 
 - If \(12T\le5N\), then \(L_N(M_N;1)>3/4\). The distance from this value to \((1-e^{-2})/4\) is greater than \(1/2\).
-- If \(7\) divides \(N\) and \(12T>5N\), then again \(L_N(M_N;1)>3/4\), with the same distance.
-- If \(p=3\), \(q\) is short in the sense of `BGS-TRACE-121`, and \(12T>5N\), then again \(L_N(M_N;1)>3/4\), with the same distance.
+- If \(7\) divides \(N\) and \(12T>5N\), then again \(L_N(M_N;1)>3/4\), with the same distance. The partner is then an inert prime of order \(q+1\), or else \(N=21\).
 - In every remaining case, \(L_N(M_N;1)<5/7\). The statistic lies below \(3/4\), and its distance to \((1-e^{-2})/4\) is less than \(1/2\).
 
-**Corollary (kick on two sub-families).** Let \(\tau=10^{-80}\) and let \(B=184981/160000\). Suppose \(N\le10^{26}\).
+The two clauses which previously stood beside these alternatives do not occur. A split prime does not have order \(q-1\), and no prime has order \((q+1)/2\), by the half-order lemma of `BGS-TRACE-121`. Every product of \(3\) with a short prime \(q\ge5\) satisfies \(12T\le5N\), by the lemma in Section 7, so it falls under the first alternative.
 
-- If \(N=7q\) with \(q\equiv1\) or \(7\pmod8\), \(t(q)=q-1\) and \(3\nmid(q-1)\), then \(L_N(U_N;1)>3/4\).
-- If \(N=21\), then \(L_N(U_N;1)>3/4\).
-- If \(N=3q\), \(q\) is short, \(t(q)\) is odd and \(12T>5N\), then \(L_N(U_N;1)>3/4\). No such prime \(q\) is asserted to exist.
+**Corollary (kick).** Let \(\tau=10^{-80}\) and let \(B=184981/160000\). If \(N=21\le10^{26}\), then \(L_N(U_N;1)>3/4\).
 
-**Boundary.** The product in Theorem 1 is the diagonal trace square of \(M_N\). It does not estimate the signed off-diagonal sum of the kicked propagator. Theorem 3 stops at two prime factors: \(N=195=3\cdot5\cdot13\) has order \(84\) and \(12\cdot84>5\cdot195\), so the short-order theorem does not apply, and this note gives no bound there. No density of short, long, or split-half primes is proved. The pure ceilings in Section 8 are not shown to lie \(13/420\) below \(5/7\), and the majorant of Section 6 at \(q=13\) is not shown to lie \(13/420\) above \(3/4\), so the kick is not transferred on those classes. The kick at \(u_{207}\) stays outside every window. The limit, every \(k>2\), `BGS-TRACE-005` and `BGS-BGS-001` stay open.
+The hypothesis \(N=7q\) with \(q\equiv1\) or \(7\pmod8\), \(t(q)=q-1\) and \(3\nmid(q-1)\) does not occur. The hypothesis \(N=3q\) with \(q\) short, \(t(q)\) odd and \(12T>5N\) does not occur. Neither hypothesis is a kick window.
+
+**Boundary.** The product in Theorem 1 is the diagonal trace square of \(M_N\). It does not estimate the signed off-diagonal sum of the kicked propagator. Theorem 3 stops at two prime factors: \(N=195=3\cdot5\cdot13\) has order \(84\) and \(12\cdot84>5\cdot195\), so the short-order theorem does not apply, and this note gives no bound there. The square-free case of three or more primes is `BGS-TRACE-123`, and every odd modulus is `BGS-TRACE-124`. A split full-order partner and a non-short product of \(3\) with a short prime do not occur. No density of short, long, or split-half primes is proved. The pure ceilings in Section 8 are not shown to lie \(13/420\) below \(5/7\), and the majorant of Section 6 at \(q=13\) is not shown to lie \(13/420\) above \(3/4\), so the kick is not transferred on those classes. The kick at \(u_{207}\) stays outside every window. The limit, every \(k>2\), `BGS-TRACE-005` and `BGS-BGS-001` stay open.
 
 ## 2. Product of fixed vectors
 
@@ -115,7 +114,7 @@ Section 3 of `BGS-TRACE-120` says that an odd prime \(p\) divides the order inde
 | \(23\) | \(11\) | \(u_{11}=8119=23\cdot353\) | split-half |
 | \(29\) | \(10\) | \(v_{10}=2378=29\cdot82\) | short |
 
-Each witness shows that the order divides the displayed index. Both programs recompute the recurrence and check that no smaller positive index is divisible by \(p\), so the order equals that index. Theorem 1 of `BGS-TRACE-121` then assigns the class. In particular there is no short odd prime below \(29\), and none of these nine primes has inert half order \(t=(p+1)/2\).
+Each witness shows that the order divides the displayed index. Both programs recompute the recurrence and check that no smaller positive index is divisible by \(p\), so the order equals that index. Theorem 1 of `BGS-TRACE-121` then assigns the class. In particular there is no short odd prime below \(29\). The half-order lemma of that note says that no odd prime, among these nine or outside them, has order \((p+1)/2\).
 
 ## 5. Which semiprimes are short
 
@@ -143,27 +142,19 @@ The four products in which \(17\) is the larger prime are short by the orders of
 
 ## 6. The seven family
 
-Let \(q\neq7\) and \(N=7q\). If \(3\) divides \(s=t(q)\), then \(T=s\le q+1\) and \(12(q+1)\le35q\), so the composite is short. If \(3\) does not divide \(s\), then \(T=3s\). The trichotomy leaves four possibilities.
+Let \(q\neq7\) and \(N=7q\). If \(3\) divides \(s=t(q)\), then \(T=s\le q+1\) and \(12(q+1)\le35q\), so the composite is short. If \(3\) does not divide \(s\), then \(T=3s\). The trichotomy leaves the following possibilities. The half-order lemma of `BGS-TRACE-121` removes two of them.
 
 - A short partner has \(s\le(q+1)/3\), hence \(T\le q+1\), and the composite is short.
 - A split-half partner has \(s=(q-1)/2\), hence \(12T=18(q-1)\le35q\).
-- An inert half partner has \(s=(q+1)/2\), hence \(12T=18(q+1)\le35q\) for every \(q\ge3\).
-- A full partner has \(s=q-\varepsilon\). Then \(12T=36(q-\varepsilon)\). This exceeds \(35q\) for every \(\varepsilon=-1\), and for \(\varepsilon=1\) precisely when \(q>36\).
+- An inert partner of order \((q+1)/2\) does not occur.
+- A split partner of order \(q-1\) does not occur, because a split order divides \((q-1)/2\).
+- An inert full partner has \(s=q+1\). Then \(12T=36(q+1)\), which exceeds \(35q\).
 
-Thus a non-short multiple of \(7\) has full partner order not divisible by \(3\). The products \(5\cdot7\) and \(3\cdot7\) are the cases in which \(7\) is the larger prime. The first has \(T=6\) and is short. The second is \(N=21\), treated below; its partner \(q=3\) is the full order \(4\), not divisible by \(3\).
+Thus a non-short multiple of \(7\) has inert full partner order not divisible by \(3\). The products \(5\cdot7\) and \(3\cdot7\) are the cases in which \(7\) is the larger prime. The first has \(T=6\) and is short. The second is \(N=21\), treated below; its partner \(q=3\) is the full order \(4\), not divisible by \(3\).
 
 ### Split full order
 
-Suppose \(\varepsilon=1\) and \(s=q-1\), with \(3\nmid(q-1)\). Keep only the times divisible by \(s\). For those times the factor at \(q\) equals \(1\), and \(3\) divides the time if and only if \(3\) divides the cofactor, because \(3\) does not divide \(s\). The resulting subsum is
-
-\[
-\frac{48}{49}R(\alpha)+\frac1{49}R(\gamma),
-\qquad
-\alpha=\frac{6(q-1)}{7q},\quad
-\gamma=\frac{2(q-1)}{7q}.
-\]
-
-Both ratios are strictly smaller than the ratios \(6/7\) and \(2/7\) at the prime \(7\), and \(R\) is strictly decreasing, so the subsum is strictly larger than \(L_7(M_7;1)\). The discarded times contribute a positive amount. Therefore \(L_N(M_N;1)>L_7(M_7;1)\). Section 5 of `BGS-TRACE-121` gives \(L_7(M_7;1)>3/4\).
+The hypothesis \(\varepsilon=1\) and \(s=q-1\) contradicts the half-order lemma: a split order divides \((q-1)/2\), which is strictly smaller than \(q-1\). The family is empty. It is not a kick window, and the subsum previously written for it is not used.
 
 ### The direct modulus \(N=21\)
 
@@ -244,37 +235,35 @@ Each quadratic factor of \(D\) is positive for the same reason:
 
 Hence \(D(q)>0\) and \(\varphi(q)>3/4\) for every integer \(q\ge13\). Therefore \(L_N(M_N;1)>3/4\) throughout the inert full-order family.
 
-## 7. Three times a short prime
+## 7. Three times a short prime is short
 
-Let \(p=3\) and let \(q\ge29\) be short, with the composite non-short. Lemma C forces \(g=1\), so \(s\) is odd and \(T=4s\). The short bound \(s\le(q+1)/3\) gives
+**Lemma.** Let \(q\ge5\) be a short odd prime, write \(t=t(q)\) and \(T=\operatorname{lcm}(4,t)\), and set \(N=3q\). Then \(12T\le5N\). Theorem 1 of `BGS-TRACE-120` gives \(L_N(M_N;1)>3/4\). The conditional family in which \(q\) is short and \(12T>5N\) is empty. No short prime is asserted to exist. The prime \(q=3\) is not in this family: it is long of order \(4\).
 
-\[
-\alpha=\frac{8s}{3q}\le\frac{8(q+1)}{9q}\le\frac{80}{87},
-\qquad
-\gamma=\frac{2s}{3q}\le\frac{20}{87},
-\]
+Short means \(t\le(q-\varepsilon)/3\le(q+1)/3\).
 
-the last comparisons because \((q+1)/q\) decreases and equality holds at \(q=29\). Also \(1-q^{-2}\ge840/841\). Since \(R\) decreases,
+If \(4\) divides \(t\), then \(T=t\) and \(12T=12t\le4(q+1)\). The comparison \(4(q+1)\le15q\) is \(4\le11q\), true for every integer \(q\ge5\). Since \(5N=15q\), one has \(12T\le5N\).
 
-\[
-L_N(M_N;1)
-\ge\frac89\cdot\frac{840}{841}\,R(\alpha)
-+\frac{840}{841}\cdot\frac19\,R(\gamma)
-\ge\frac89\cdot\frac{840}{841}\,R\Bigl(\frac{80}{87}\Bigr)
-+\frac{840}{9\cdot841}\,R\Bigl(\frac{20}{87}\Bigr).
-\]
+If \(t\equiv2\pmod4\), then \(\gcd(4,t)=2\) and \(T=2t\), so \(12T=24t\le8(q+1)\). The comparison \(8(q+1)\le15q\) is \(8\le7q\), true for every integer \(q\ge5\).
 
-The same degree-four majorant produces
+If \(t\) is odd, then \(q\) is split. An inert prime has even order, because the cofactor \((q+1)/t\) is odd and \(q+1\) is even. The half-order lemma therefore gives \(t\mid(q-1)/2\). Write \((q-1)/2=tc\). The case \(c=1\) is the split-half order, which is not short. The case \(c=2\) gives \(t=(q-1)/4\). A split prime is congruent to \(1\) or \(7\) modulo \(8\), and divisibility of \(q-1\) by \(4\) forces \(q\equiv1\pmod8\), so \((q-1)/4=2\cdot(q-1)/8\) is even. An odd order cannot arise with \(c=2\). Hence \(c\ge3\) and
 
 \[
-\frac{5704517734146}{5603750430307},
+t\le\frac{q-1}6\le\frac{q+1}4.
 \]
 
-which is strictly larger than \(3/4\) and than \(82/105\).
+The second comparison is \(4(q-1)\le6(q+1)\), that is \(0\le2q+10\). Since \(t\) is odd, \(T=4t\) and \(12T=48t\). Then
+
+\[
+48t\le48\cdot\frac{q+1}4=12(q+1)\le15q,
+\]
+
+because \(12(q+1)\le15q\) is \(12\le3q\). Thus \(48t\le15q\), which is \(12T\le5N\).
+
+In every case the product is short. Both programs still recompute the unused degree-four value \(5704517734146/5603750430307\) at the corner ratios \(80/87\) and \(20/87\). That comparison is not a witness of a non-short product. The order scan of `BGS-TRACE-121`, through every odd prime \(q\le10^6\), checks \(12T\le15q\) whenever \(q\) is short.
 
 ## 8. The ceiling
 
-It remains to bound every semiprime that is not short, not a non-short multiple of \(7\), and not three times a short prime. Lemmas A and B exclude every semiprime that has a short factor or the factor \(17\). Both remaining orders are therefore non-short, and neither prime is \(7\) or \(17\).
+It remains to bound every semiprime that is not short and not a non-short multiple of \(7\). Section 7 says that three times a short prime is already short. Lemmas A and B exclude every semiprime that has a short factor or the factor \(17\). Both remaining orders are therefore non-short, and neither prime is \(7\) or \(17\).
 
 For \(z>0\) let \(P_8(z)=\sum_{j=0}^{8}z^j/j!\). The next term of the exponential series is positive, so \(e^z>P_8(z)\) and \(R(z)<1/(P_8(z)-1)\). Combined with \(R(z)<1/z\) and with \(A<1\), \(B<q^{-2}\), \(C<p^{-2}\),
 
@@ -353,7 +342,7 @@ Likewise \(p/((p-1)q)\le31/(30\cdot33)\) and \(1/(2pq)\le1/(2\cdot31\cdot33)\). 
 
 ### Every other large semiprime
 
-The smaller prime is now non-split and non-short, and at least \(37\). The odd primes below \(37\) are \(3,5,7,11,13,17,19,23,29,31\), each already placed: \(29\) is short and \(31\) is split-half. The order is long, so either \(t=p-\varepsilon\) or \(t=(p+1)/2\). A full order is even. The inert half-order \((p+1)/2\) is odd when \(p\equiv5\pmod8\) and even when \(p\equiv3\pmod8\).
+The smaller prime is now non-split and non-short, and at least \(37\). The odd primes below \(37\) are \(3,5,7,11,13,17,19,23,29,31\), each already placed: \(29\) is short and \(31\) is split-half. The order is long. By the half-order lemma the long class is exactly \(t=p+1\), so the order is even. The value \(t=(p+1)/2\) does not occur, whether \(p\equiv3\pmod8\) or \(p\equiv5\pmod8\).
 
 If the partner is short, Lemma A gives a short composite. If \(g\ge3\), then \(T\le(p+1)(q+1)/3\), so \(12T\le4(p+1)(q+1)\). The difference used in Lemma A,
 
@@ -361,9 +350,9 @@ If the partner is short, Lemma A gives a short composite. If \(g\ge3\), then \(T
 5pq-4(p+1)(q+1)=(p-4)(q-4)-20,
 \]
 
-is positive for \(p\ge5\) and \(q\ge29\). If the smaller order is an inert half and \(g\ge2\), or if that order is an inert half and the partner is a half order, then \(T\le(p+1)(q+1)/4\). The same bound holds when \(g\ge2\) and the partner is a half order, because \(t\le p+1\) and \(s\le(q+1)/2\). In these situations \(12T\le3(p+1)(q+1)\). The difference \(5pq-3(p+1)(q+1)\) increases in each variable for \(p,q\ge3\), and its value at \((29,31)\) is \(4495-2880>0\). Every such composite is short.
+is positive for \(p\ge5\) and \(q\ge29\). If \(g\ge2\) and the partner is a half order, then \(t\le p+1\) and \(s\le(q+1)/2\), so \(T\le(p+1)(q+1)/4\) and \(12T\le3(p+1)(q+1)\). The difference \(5pq-3(p+1)(q+1)\) increases in each variable for \(p,q\ge3\), and its value at \((29,31)\) is \(4495-2880>0\). Every such composite is short. An inert half-order does not occur, so no further case is created by writing \((p+1)/2\) in place of the smaller order.
 
-What remains is an odd inert half with a full partner and \(g=1\), or a full smaller order whose partner is a half order with \(g=1\) or a full order with \(g=2\). A full partner of a full smaller order cannot have \(g=1\), since both orders are even. An even inert half meets a full partner in \(g\ge2\), already shown to be short. Throughout, \(q\ge p+2\).
+What remains is a full smaller order whose partner is a half order with \(g=1\), or a full order with \(g=2\). A full partner of a full smaller order cannot have \(g=1\), since both orders are even. Throughout, \(q\ge p+2\).
 
 For a full smaller order, \(t\ge p-1\), hence
 
@@ -391,7 +380,7 @@ Since \(P_8\) is increasing, the right side of (\(\ast\)) is strictly smaller th
 
 The ratios \(840/899\), \(29/(56\cdot31)\) and \(31/(29\cdot30)\) are a convenient majorant. They are not values attained at a nonsplit prime: \(29\) is short and \(31\) is split-half.
 
-For an odd inert half, \(t=(p+1)/2\), the partner is full and \(g=1\). Then
+No prime has inert half order, so the following comparison meets no semiprime. It is retained because both programs recompute it, and it is not an input to the exhaustion. If one assumed an odd inert half \(t=(p+1)/2\), a full partner and \(g=1\), then
 
 \[
 \alpha
@@ -426,7 +415,7 @@ Both programs recompute (\(\ast\ast\)) and find it strictly less than \(5/7\).
 
 This exhausts the semiprimes. In the remaining case of Theorem 3, \(L_N(M_N;1)<5/7\). Section 5 of `BGS-TRACE-120` supplies \(5/7<3/4\) and \(5/7<(3-e^{-2})/4\).
 
-## 9. The kick on two sub-families
+## 9. The kick on \(N=21\)
 
 Section 7 of `BGS-TRACE-120` records, for the fixed kick and every odd dimension with \(BN<10^{80}\),
 
@@ -452,16 +441,7 @@ The logarithm of this majorant has positive derivative on the real interval \([3
 
 Thus the difference is strictly less than \(13/420\) for every odd \(N\le10^{26}\).
 
-On the split full-order family of Section 6, \(L_N(M_N;1)>L_7(M_7;1)\) and \(L_7(M_7;1)-13/420>3/4\). Hence
-
-\[
-L_N(U_N;1)
->L_N(M_N;1)-\frac{13}{420}
->L_7(M_7;1)-\frac{13}{420}
->\frac34
-\]
-
-whenever \(N=7q\le10^{26}\). The same subtraction applies to the two rational lower bounds of Sections 6 and 7, both of which exceed \(82/105\). This is the corollary. It does not apply to a ceiling semiprime, nor to the inert full-order family, because those pure margins are not known to dominate \(13/420\).
+The split full-order family does not occur, and Section 7 shows that three times a short prime is short, so neither family contributes a kick window. The subtraction applies to \(N=21\), whose rational lower bound exceeds \(82/105\). Hence \(L_{21}(U_{21};1)>3/4\). This is the corollary. It does not apply to a ceiling semiprime, nor to the inert full-order family, because those pure margins are not known to dominate \(13/420\). The unused corner \(5704517734146/5603750430307\) also exceeds \(82/105\); it is not the value of a semiprime.
 
 ## 10. What this does not prove
 

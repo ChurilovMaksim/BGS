@@ -151,10 +151,16 @@ def check_orders() -> None:
         eps = legendre(p)
         modulus = p - eps
         require(modulus % t == 0, f"splitting {p}")
+        require(2 * t != p + 1, f"vacuous half {p}")
+        if eps == 1:
+            require(((p - 1) // 2) % t == 0, f"split divisor {p}")
+        else:
+            require(((p + 1) // t) % 2 == 1, f"inert cofactor {p}")
         if t * 3 <= modulus:
             kind = "short"
-        elif t == modulus or (eps == -1 and 2 * t == p + 1):
+        elif t == modulus:
             kind = "long"
+            require(eps == -1, f"long split {p}")
         elif eps == 1 and 2 * t == p - 1:
             kind = "half"
         else:
@@ -380,9 +386,11 @@ def order_of(p: int) -> int:
 def kind_of(p: int, t: int) -> str:
     eps = legendre(p)
     modulus = p - eps
+    if 2 * t == p + 1:
+        raise SystemExit(f"vacuous half {p}")
     if 3 * t <= modulus:
         return "short"
-    if t == modulus or (eps == -1 and 2 * t == p + 1):
+    if t == modulus:
         return "long"
     if eps == 1 and 2 * t == p - 1:
         return "half"
@@ -405,6 +413,7 @@ def check_sandwich() -> None:
             short = 12 * order <= 5 * modulus
             seven = (p == 7 or q == 7) and not short
             three_short = p == 3 and kinds[q] == "short" and not short
+            require(not three_short, f"vacuous three-short {p}*{q}")
             alpha = Fraction(2 * order, modulus)
             beta = Fraction(2 * t, modulus)
             gamma = Fraction(2 * s, modulus)
