@@ -1,5 +1,9 @@
 # Scientific changelog
 
+## 2026-10-29 — Self-red-team of the diagonal-phase symmetry
+
+BGS-TRACE-127. The time-reversal is the antiunitary \(\Theta=DK_0\), with \(\Theta^2=1\) and \(\Theta U\Theta^{-1}=U^\dagger\). Similarity to \(D^{1/2}M_ND^{1/2}\) does not assign an orthogonal class. That class name is a heuristic, not a COE form factor. The Tanner locator is Section II.2, and Section IV.1 is the closest prior result for the heuristic. The symmetric conjugate is named \(\Sigma_D\). No counting identity changes. No new external dependency.
+
 ## 2026-10-29 — Diagonal random-phase form factor
 
 Register BGS-TRACE-127. For a flat matrix times independent uniform phases on the diagonal, the averaged squared trace equals \(1\) at time one, \((2N-1)/N\) at time two, and is at most \(m!\) at every positive time. For the cat-map quantization the time-three value is \((6N^2-9N+4)/N^2\). The pure kernel has order \(1\) at time two, and order \(49\) or \(1\) at time three according as \(7\) divides the odd modulus. A draft formula \(7^{2v_7(N)}\) was rejected by the count at \(N=49\), which returns \(49\). The sixteen-phase ensemble of BGS-TRACE-126 is not identified with CUE or COE. Python and C++ check the occupation sums in floating point; a Lean rational witness certifies the integer factorisations and gaps. The dependency on BGS-TRACE-126 is the trace-closure lemma only. BGS-TRACE-005 and BGS-BGS-001 remain open. No new external dependency.
