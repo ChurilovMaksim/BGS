@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**210 registered nodes; 257 direct prerequisite edges.**
+**211 registered nodes; 259 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -216,11 +216,12 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-114](../mathematics/fixed-map/balanced_rounding_research_20261027.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-115](../mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) | proved | `BGS-RES-006` | None registered | 1 |
 | [BGS-TRACE-116](../mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) | proved | `BGS-TRACE-113`, `BGS-TRACE-115` | None registered | 0 |
-| [BGS-TRACE-117](../mathematics/fixed-map/kick_blind_arithmetic_spike.md) | proved | None registered | None registered | 2 |
-| [BGS-TRACE-118](../mathematics/fixed-map/orbit_orthogonal_kick_spike.md) | proved | `BGS-TRACE-117` | None registered | 1 |
+| [BGS-TRACE-117](../mathematics/fixed-map/kick_blind_arithmetic_spike.md) | proved | None registered | None registered | 3 |
+| [BGS-TRACE-118](../mathematics/fixed-map/orbit_orthogonal_kick_spike.md) | proved | `BGS-TRACE-117` | None registered | 2 |
 | [BGS-TRACE-119](../mathematics/fixed-map/positive_time_spike.md) | proved | `BGS-TRACE-118` | None registered | 0 |
 | [BGS-TRACE-120](../mathematics/fixed-map/order_ladder_abel.md) | proved | `BGS-TRACE-117` | None registered | 4 |
 | [BGS-TRACE-121](../mathematics/fixed-map/order_trichotomy_abel.md) | proved | `BGS-TRACE-120` | None registered | 3 |
 | [BGS-TRACE-122](../mathematics/fixed-map/crt_composite_abel.md) | proved | `BGS-TRACE-120`, `BGS-TRACE-121` | None registered | 2 |
 | [BGS-TRACE-123](../mathematics/fixed-map/squarefree_product_abel.md) | proved | `BGS-TRACE-120`, `BGS-TRACE-121`, `BGS-TRACE-122` | None registered | 1 |
 | [BGS-TRACE-124](../mathematics/fixed-map/odd_modulus_abel.md) | proved | `BGS-TRACE-120`, `BGS-TRACE-121`, `BGS-TRACE-122`, `BGS-TRACE-123` | None registered | 0 |
+| [BGS-TRACE-125](../mathematics/fixed-map/uniform_orbit_overlap.md) | proved | `BGS-TRACE-117`, `BGS-TRACE-118` | None registered | 0 |

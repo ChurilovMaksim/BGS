@@ -1,0 +1,16 @@
+{
+  "schema": "bgs-uniform-orbit-overlap-v1",
+  "claim": "BGS-TRACE-125",
+  "coefficient": "n*1650797/4000000",
+  "lag_one": "-7/2000000",
+  "finite_scan": "n=5, N=41",
+  "analytic_range": "every odd n>=7",
+  "redundant_scans": [7, 9, 11],
+  "sources_sha256": {
+    "python": "b02356dbd5493b6db7291bbfa3028c79c144d2182da9b13c6221d66d7e2e2619",
+    "cpp": "84362aa69e07545bf43b81f0b3c796f3e6248c7e59e513f0ce90a72c24c74f1f",
+    "lean": "ed00a89dd82cb8f88af53b042cdf8a9947cf7c2ffe08d993cc8091c34b63322d",
+    "proof": "c0a111d85e8599d2e54bee2c4b2da059c22e1cc3a0ace5ec2318b4c5acd6b3c3"
+  },
+  "nonclaim": "Does not prove BGS-TRACE-005, BGS-BGS-001, a third-order remainder bound, a new kicked gap, the signed off-diagonal sum, or the limit. The pure cat map is already non-CUE by BGS-TRACE-117."
+}

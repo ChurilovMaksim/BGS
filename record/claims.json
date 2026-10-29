@@ -5401,6 +5401,32 @@
       "manuscript": [
         "manuscript/unified_sections/odd_modulus_abel.tex"
       ]
+    },
+    {
+      "id": "BGS-TRACE-125",
+      "title": "Uniform Pell-orbit overlap of the fixed symbol",
+      "source": "mathematics/fixed-map/uniform_orbit_overlap.md",
+      "dependencies": [
+        "BGS-TRACE-117",
+        "BGS-TRACE-118"
+      ],
+      "boundary": "For every odd integer n>=5, at N=u_n, the Fourier overlap gamma(r) of the fixed 32-mode symbol under C is zero for 1<=r<=n-1 except at r=1 and r=n-1, where it equals -7/2000000. The quadratic trace coefficient of the transported product is exactly n*1650797/4000000. The index n=5 is a finite modular scan of the middle lags; every odd n>=7 is the size, archimedean, and quadratic-form argument. This does not bound the third-order remainder, does not prove L(U)>3/4 at any new dimension, does not prove that the weighted off-diagonal sum tends to its CUE correction, and does not decide the limit. The pure cat map is already non-CUE by TRACE-117. This claim does not assert that Kurlberg-Rudnick degeneracies fail to be eigenvalues of the fixed-kick propagator; that sentence does not follow from FM-032 and is not part of the proof. Lean certifies integer comparisons only: the rational seeds, the lag-1 coefficient, the box enumeration at exponent 1, and the exhaustive scan at N=41. It does not formalize the Pell induction, the archimedean embedding, or the quadratic-form descent. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + EXACT IDENTITY + COMPUTER CERTIFICATE + LEAN RATIONAL WITNESS (INTEGER COMPARISONS ONLY) + AUTHOR SELF-REVIEW",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261029/uniform-orbit-overlap/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/uniform_orbit_overlap.py",
+        "computations/cpp/uniform_orbit_overlap.cpp"
+      ],
+      "formalization": [
+        "formalization/Bgs/UniformOrbitOverlapRational.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/uniform_orbit_overlap.tex"
+      ]
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."
