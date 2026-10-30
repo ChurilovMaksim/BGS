@@ -60,5 +60,7 @@ import Bgs.LineBDerand
 import Bgs.LineBPhase2
 import Bgs.LineBPhase3
 import Bgs.LineBPhase4
+import Bgs.LineE
+import Bgs.LineEResonance
 
 import Bgs.Mathlib

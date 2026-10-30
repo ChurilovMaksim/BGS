@@ -1,0 +1,28 @@
+# 2026-10-30T09:42:17Z false controls
+--- c1.lean (lean exit 1)
+../evidence/executions/20261030/lineE-resonant-transfer/controls/c1.lean:3:39: error: Tactic `decide` proved that the proposition
+  cert 5 6091 = true
+is false
+c1.lean: rejected (expected reason)
+--- c2.lean (lean exit 1)
+../evidence/executions/20261030/lineE-resonant-transfer/controls/c2.lean:3:38: error: Tactic `decide` proved that the proposition
+  cert 3 181 = true
+is false
+c2.lean: rejected (expected reason)
+--- c3.lean (lean exit 1)
+../evidence/executions/20261030/lineE-resonant-transfer/controls/c3.lean:3:54: error: Tactic `decide` proved that the proposition
+  cert49 5 1 12717 32 6 1 38 = true
+is false
+c3.lean: rejected (expected reason)
+--- c4.lean (lean exit 1)
+../evidence/executions/20261030/lineE-resonant-transfer/controls/c4.lean:3:55: error: Tactic `decide` proved that the proposition
+  cert49 6 1 74603 32 16 5 11 = true
+is false
+c4.lean: rejected (expected reason)
+--- c5.lean (lean exit 1)
+../evidence/executions/20261030/lineE-resonant-transfer/controls/c5.lean:3:34: error: Tactic `decide` proved that the proposition
+  nsw 8 % 7 = 0
+is false
+c5.lean: rejected (expected reason)
+5/5 false controls rejected for the expected reason
+exit 0

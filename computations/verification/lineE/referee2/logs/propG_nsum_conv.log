@@ -1,0 +1,5 @@
+tail |ghat| beyond 9: 1.1448791702394684e-05  s0= 1.484170685835448
+m=5 eta=0.8 L=9 worst rel 2.78e-04
+m=5 eta=0.8 L=12 worst rel 6.05e-06
+CONTROL sign-flipped t, m=3: worst rel 4.77e+00 (should be large)
+CONTROL sign-flipped t, m=5: worst rel 2.48e+01 (should be large)

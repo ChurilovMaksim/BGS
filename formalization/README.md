@@ -2,8 +2,9 @@
 
 The active source graph consists of **33 modules listed below**
 (29 pre-existing modules and 4 fixed-diagonal-kick modules added in PR #56),
-**39 adapted Aristotle/Mathlib modules** and **20 further finite-certificate
-modules imported directly by `Bgs.lean`** (listed below), with **92 leaf modules**
+**39 adapted Aristotle/Mathlib modules** and **22 further finite-certificate
+modules imported directly by `Bgs.lean`** (listed below; 20 on main plus `LineE.lean` and
+`LineEResonance.lean` added in PR #57), with **94 leaf modules**
 and two aggregators (`Bgs.lean` and `Bgs.Mathlib`). They share the original Lean 4.33.1/Lake project: `Bgs.lean` imports `Bgs.Mathlib`, which reaches every new module. No second project root or duplicate proof tree is maintained.
 
 The [Mathlib coverage map](MATHLIB_LAYER_RU.md) links individual declarations to existing theorem families and their exact proof scope. The [integration receipt](../evidence/formalization/aristotle_20261027/receipt.json) separates the earlier 8,776-job Lean build and 589 public-declaration axiom checks from the later GitHub merge. This is not an independent verification of the full analytic corpus, and it does not close BGS.
@@ -98,6 +99,8 @@ imports Mathlib, which this project does not vendor as in-repo sources (`lake-ma
 | `SquarefreeProductRational.lean` | Rational witness for BGS-TRACE-123: integer comparisons placing every square-free odd modulus with at least three distinct prime factors above 3/4 and clearing the fixed-kick margin inside the stated windows; does not formalize the divisibility of the orders, the least-common-multiple bound, or the kick telescoping |
 | `UniformOrbitOverlapRational.lean` | Rational witness for BGS-TRACE-125: integer seeds, the 32-mode mass, the lag-1 coefficient, the exponent-1 box count, and the exhaustive support scan at `N = 41`; does not formalize the Pell induction, the archimedean embedding, or the quadratic-form descent |
 | `LineDCerts.lean` | Line D finite arithmetic certificates (kernel `decide`, Lean core only, no Mathlib import) for `mathematics/fixed-map/band_limited_kick_bridge.md`: `hx_ok` (`H_m X_m = D_m I` for `3 ≤ m ≤ 8`), `fix_count` (period-`m` sequence count equals `D_m` for `m = 3, d₂ = 28` and `m = 4, d₂ = 96`), `rad_count` (`D_m / D_eff` values for `m = 3..6`), `coll4_ok`/`coll6_ok` (listed collision sequences only); does not formalize the Gauss-sum completion (Theorem D1), Fourier inversion (Prop. D3), strong-kick limit (Theorem D4), analytic bounds, or numerics; does not certify support, Γ-inequivalence, or completeness of the collision set |
+| `LineE.lean` | `Bgs.LineE`: Line E resonant residue N ≡ −4 (mod h_m) (BGS-TRACE-183): Pell identity and x_d mod 4, y_d mod 2 for all d; exact coefficient congruences `cert5`…`cert21` by `decide`, control `cert11_control`; no `sorry`, no `native_decide`; the analytic IFS law and the ball-arithmetic certificates are not formalized |
+| `LineEResonance.lean` | `Bgs.LineE` (step 2, audited by the second referee; BGS-TRACE-193, 194): `nsw_mod7` (7 ∣ h_m ↔ 3 ∣ m, all m) and the a = 7 resonance coefficient identities `cert49_*` at m = 5,…,19, s = ±1, by `decide`, control `cert49_11_control`; no `sorry`, no `native_decide` |
 
 The former isolated `CayleyExceptionalK23.lean` was folded into
 `CayleyEnergy.lean`; generic and exceptional controls share one implementation.

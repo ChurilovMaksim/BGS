@@ -1,0 +1,25 @@
+# 2026-10-30 python -m unittest discover -s computations/maintenance/tests
+## pristine main 347f1730 (git worktree)
+Ran 256 tests in 191.464s
+
+FAILED (failures=116, errors=103, skipped=1)
+## branch lineE-resonant-transfer
+Ran 256 tests in 359.573s
+
+FAILED (failures=116, errors=104, skipped=1)
+## failing/erroring test ids: branch minus main
+> ERROR: test_current_routing_and_corruption_contract (test_fractional_routing.FractionalRouting.test_current_routing_and_corruption_contract)
+## main minus branch: (none above with '<')
+## rerun alone on branch
+Ran 1 test in 44.793s
+
+OK
+
+# second run with the full scientific venv (sympy 1.14.0, numpy 2.5.4, scipy 1.18.1, mpmath 1.3.0), nice 10, under certificate load
+## pristine main
+FAILED (failures=104, errors=4, skipped=1)
+## branch
+FAILED (failures=104, errors=5, skipped=1)
+## branch minus main
+> ERROR: test_current_routing_and_corruption_contract (test_fractional_routing.FractionalRouting.test_current_routing_and_corruption_contract)
+## no failure message mentions lineE / LineE / resonant_residue

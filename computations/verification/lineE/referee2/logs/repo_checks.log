@@ -1,0 +1,45 @@
+== computations/verification/scientific_registry_audit.py
+scientific-registry-audit: OK (280 claims, 57 external dependencies)
+rc=0
+== computations/verification/bibliographic_metadata_audit.py --self-test
+EXT-BR-1975: dependency graph changed; refresh impact review explicitly
+rc=1
+== computations/maintenance/render_bibliography.py --check
+bibliography-render: OK
+rc=0
+== computations/maintenance/render_claim_registry.py --check
+claim-registry-render: OK
+rc=0
+== computations/maintenance/render_errata.py --check
+errata-render: OK
+rc=0
+== computations/maintenance/render_research_views.py --check
+Research navigation views synchronized
+rc=0
+== computations/maintenance/render_status.py --check
+status-render: OK
+rc=0
+== computations/verification/repository_audit.py
+PASS check_lean_coverage
+PASS check_bilingual_readmes
+PASS check_active_markdown_links
+PASS repository_audit
+rc=0
+== computations/maintenance/sync_return_sections.py --check
+    ~~~~~~~~~~~~~~^^
+  File "<audit-clone>/computations/maintenance/sync_return_sections.py", line 87, in require_pandoc
+    raise RuntimeError('pandoc not found on PATH; sync requires pandoc 3.12.1')
+RuntimeError: pandoc not found on PATH; sync requires pandoc 3.12.1
+rc=1
+== computations/maintenance/sync_finite_orbit_section.py --check
+SKIP finite-orbit source synchronization: TARGET hand-edited since Pass 1; TeX is source of truth
+rc=0
+== computations/maintenance/sync_fixed_map_section.py --check
+SKIP fixed-map source synchronization: TARGET hand-edited since Pass 1/2; TeX is source of truth
+rc=0
+== computations/maintenance/audit_manuscript_references.py --check
+  "unresolved_labels": [],
+  "duplicate_labels": [],
+  "errors": []
+}
+rc=0

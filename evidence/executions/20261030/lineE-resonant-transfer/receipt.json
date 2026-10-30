@@ -1,0 +1,169 @@
+{
+  "schema": "bgs-lineE-integration-receipt-v1",
+  "base": "ChurilovMaksim/BGS@347f1730",
+  "merged_main": "ChurilovMaksim/BGS@4f9d4766 (normal merge commit; closure_condition added for BGS-TRACE-188 and 196; #print axioms coverage 1255/1255)",
+  "branch": "lineE-resonant-transfer",
+  "integrated_on": "2026-10-30",
+  "id_assignment": {
+    "highest_registered_trace_on_main": "BGS-TRACE-182",
+    "assigned": "BGS-TRACE-183 through BGS-TRACE-196",
+    "renumbered": false,
+    "counts": {
+      "proved": 8,
+      "conditional": 2,
+      "open": 4
+    },
+    "proved": [
+      "BGS-TRACE-183",
+      "BGS-TRACE-184",
+      "BGS-TRACE-185",
+      "BGS-TRACE-186",
+      "BGS-TRACE-187",
+      "BGS-TRACE-193",
+      "BGS-TRACE-194",
+      "BGS-TRACE-195"
+    ],
+    "conditional": [
+      "BGS-TRACE-188",
+      "BGS-TRACE-196"
+    ],
+    "open": [
+      "BGS-TRACE-189",
+      "BGS-TRACE-190",
+      "BGS-TRACE-191",
+      "BGS-TRACE-192"
+    ],
+    "refereed_first_referee": [
+      "BGS-TRACE-183",
+      "BGS-TRACE-184",
+      "BGS-TRACE-185",
+      "BGS-TRACE-186",
+      "BGS-TRACE-187",
+      "BGS-TRACE-188",
+      "BGS-TRACE-189",
+      "BGS-TRACE-190",
+      "BGS-TRACE-191",
+      "BGS-TRACE-192"
+    ],
+    "refereed_second_referee": [
+      "BGS-TRACE-193",
+      "BGS-TRACE-194",
+      "BGS-TRACE-195",
+      "BGS-TRACE-196"
+    ],
+    "annotated_unchanged": [
+      "BGS-TRACE-179",
+      "BGS-TRACE-180",
+      "BGS-TRACE-182"
+    ]
+  },
+  "referee_report": "computations/verification/lineE/referee/REPORT.md",
+  "second_referee_report": "computations/verification/lineE/referee2/REPORT.md",
+  "second_referee_fixes_applied": [
+    "R1 safe-direction rounding of every quoted certified bound (E3 enclosures outward, E5 and E13 lower bounds down, eta = 1.25 '< 0.448')",
+    "R2 F bounds attributed to residues +-196 and +-4; +-196-only bounds quoted",
+    "R3 proof of gamma = -s iota(c) for all m (m-independent operators)",
+    "R4 H_infinity,7 stated per sign s",
+    "R5 README qualifiers (finitely supported kicks; L-truncated operators)",
+    "R6 absolute scratch paths replaced by placeholders",
+    "R7 dangling references fixed",
+    "N1 |Z|^2 wording",
+    "N2 sum|ghat| < infinity in Prop. G",
+    "N3 F_lower includes +-4",
+    "N4 zres pragma + build_zres.sh FMA guard",
+    "N5 external timestamp of the pre-registration",
+    "N6 N = 43 wording, L >= 56 note",
+    "N7 referee interval widths",
+    "N8 TRACE-182 reason vs closure condition; 192 closure",
+    "N10 T_*.npy hashed in this receipt"
+  ],
+  "referee_fixes_applied": [
+    "F1 scope (k1-kick analogue; TRACE-179 open)",
+    "F2 violation vs positivity ranges",
+    "F3 TRACE-180 moment form only",
+    "F4 Keating-Mezzadri analogy only",
+    "F5 E7 residues relabelled",
+    "F6 sanity line",
+    "F7 vendored review scripts, pinned versions, Lean under formalization/Bgs, no lineE claims.json copy",
+    "F8 finite-N table regenerated with rho > L/(lambda-1)",
+    "F9 cache keyed by sector, explicit Bessel tail, numpy determinism note, all nine certificates regenerated",
+    "F10 E2 proof details",
+    "F11 overlap: Pell identity h_{m-2} y_{(m-1)/2} == 1 mod h_m, TRACE-117..119, FM-036",
+    "F12 E8/E10 scope 3 | m",
+    "F13 E1 hypotheses and kappa table labelled numerical",
+    "nits: h_29 prime listed; L = 8 enclosure is b11 +- 0.05"
+  ],
+  "python_environment": {
+    "python": "3.13.5",
+    "python-flint": "0.9.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "zres_build": "gcc -O3 -march=native -ffp-contract=off -fno-fast-math -fopenmp"
+  },
+  "lean_build": {
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "command": "lake exe cache get && lake build Bgs",
+    "logs": [
+      "lake_cache_get.log",
+      "lake_build_Bgs.log",
+      "lean_axioms_LineE.log",
+      "lean_controls.log"
+    ],
+    "axioms_allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorryAx": false,
+    "native_decide": false,
+    "false_controls_rejected": "5/5",
+    "second_referee_extra_controls": "computations/verification/lineE/referee2/lean"
+  },
+  "certificates": {
+    "k1_ifs": "computations/verification/lineE/logs/cert_*.json (9, regenerated 2026-10-30 with fixed code; certified |mu*| bounds and sector certifications identical to the refereed run; sector-4 b11 midpoints differ by <= 1.3e-61)",
+    "lineB_kick_classsum": "computations/verification/lineE/step2/cert_class.jsonl"
+  },
+  "m17_preregistration": {
+    "prediction_file": "computations/verification/lineE/step2/predictions.jsonl",
+    "prediction_written_utc": "2026-10-30T06:41:06Z",
+    "certificate_started_utc": "2026-10-30T06:39:56Z",
+    "predicted_Z2": {
+      "N=-196": 566587137.857,
+      "N=+196": 704767395.343
+    },
+    "certified": "PENDING (certificate running at commit time; no m = 17 bound claimed)"
+  },
+  "nonclaims": [
+    "Conjecture R (BGS-TRACE-179) is not disproved for any kick; all unconditional growth statements cover finitely many m.",
+    "No BGS counterexample; nothing about eigenvalue statistics beyond the second moment of Tr U^m; no progress on BGS-TRACE-148.",
+    "Not an instance of a Keating-Mezzadri pseudo-symmetry (analogy only).",
+    "BGS-TRACE-180 is not contradicted as a convergence-in-law statement.",
+    "BGS-TRACE-195 covers m = 11 and 13 only; the m = 17 certificate was pending at commit time and nothing is claimed for it."
+  ],
+  "sha256": {
+    "formalization/Bgs/LineE.lean": "b93fd7e1b52232e8432e806b9ba255c6081a55d5d3c5910bb7f024c577c1e84d",
+    "formalization/Bgs/LineEResonance.lean": "61aa16283011f74f4a1f220e3cdb4b174401aee80c0793fcb297024c36633dba",
+    "mathematics/fixed-map/resonant_residue_lineE.md": "b330dabcd5f390e24a653503e0b4109ff1280382f123ac2b0c08763dee540dcb",
+    "computations/verification/lineE/code/cert.py": "c0a28b3ed1e782954ee7f1c1b1adc4d946c35535cc257b323e5cfabb1fcaba46",
+    "computations/verification/lineE/code/bounds.py": "b7841a6d695783602fbd3ed94a58eecdfb7c977ffb2c7caa4450aef277c605d3",
+    "computations/verification/lineE/step2/cert_class.py": "c837c8bb44bfe299fa7f4d6731f399671ebbfd7e50447094181273b80d045932",
+    "computations/verification/lineE/step2/zres.c": "77a31d4d0da1a1331938f98089148ce76b24b05d6815d11d078ff3eb8d36c263",
+    "computations/verification/lineE/step2/cert_class.jsonl": "38db5e7298eb511b4dfbb7de1f49aba1b4e35cb3d36156ff6ee30e193afa2ab5",
+    "computations/verification/lineE/referee/REPORT.md": "1ff61ab01f5bc9d088fc9a77ec42567852a5e731309458c01d57921eb77eeb35",
+    "computations/verification/lineE/referee/logs/T_full_eta2.0_m11.npy": "7e18285a2789085040c60a39714e910bf3ca3bf0a9051e91776b80170ebb9bef",
+    "computations/verification/lineE/referee/logs/T_full_eta2.0_m13.npy": "b625c83a2ee44d66f0e5d40d2a98bafa33ec621fcda1c56f7f5a860a2f27e30c",
+    "computations/verification/lineE/referee/logs/T_full_eta2.0_m5.npy": "382fe7b7ad29c68693e345404f79fd2cb66f97df81e64dcac791e59210c22189",
+    "computations/verification/lineE/referee/logs/T_full_eta2.0_m7.npy": "f699f926d023478238298887c862b9115127afa295081a816793f1fa93c89f78",
+    "computations/verification/lineE/referee/logs/T_full_eta2.0_m9.npy": "b208dbf234142b44494fe00cf63932e18c0c73497dd14a8416a52c862bb153b5",
+    "computations/verification/lineE/referee/logs/T_k1_eta2.0_m11.npy": "18689b324c0cfd82671564e80ac9414ebfe69239fc53d488fe53cb372410d410",
+    "computations/verification/lineE/referee/logs/T_k1_eta2.0_m13.npy": "7ec5ef97fbff05c71a005bc9e6f5ee6ae502a292c8a89854454ddca3c4ca34c3",
+    "computations/verification/lineE/referee/logs/T_k1_eta2.0_m5.npy": "d1dbcf044b2220ac4f9b7f1905c1dc1687ce922a7f953408b224f10bb7d23214",
+    "computations/verification/lineE/referee/logs/T_k1_eta2.0_m7.npy": "16083934c1e96c5c1692372cc416a060a5922f244561a0c6dba7d8b272c2bc8d",
+    "computations/verification/lineE/referee/logs/T_k1_eta2.0_m9.npy": "de22da5cda75e2c52fc2ad40d6ca453bdbbff380daeb5a8b41294172daaca498",
+    "computations/verification/lineE/referee2/REPORT.md": "c126b0d6624c618e34040d9ebf55ce2d3232cfb9ee6134360f2208349447622b",
+    "computations/verification/lineE/referee2/code/ivsum.c": "4dd6732b39096c1391c95ed0977861184459b0e2e1c034e5d8aaceee83034fc2",
+    "computations/verification/lineE/referee2/code/ivcert.py": "55956adc1544cac33d9f12d4ed7d96928c79e2e7d90fc39e1ed3a396bfd50272",
+    "computations/verification/lineE/step2/build_zres.sh": "326ae50218f220bd79e3a7e5250d37ad22f7c7857d58483e12f6a57731b31baa"
+  }
+}
