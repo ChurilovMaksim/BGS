@@ -1,0 +1,57 @@
+# 2026-10-30 22:16:54 +0500 checks after the owner audit of PR #59 (A1-A4: BGS-TRACE-210 split, nsw_dvd citation, refV0 path); worktree before commit; all with nice -n 10
+## $ python3 computations/maintenance/render_bibliography.py --check
+bibliography-render: OK
+exit 0
+
+## $ python3 computations/maintenance/render_claim_registry.py --check
+claim-registry-render: OK
+exit 0
+
+## $ python3 computations/maintenance/render_errata.py --check
+errata-render: OK
+exit 0
+
+## $ python3 computations/maintenance/render_research_views.py --check
+Research navigation views synchronized
+exit 0
+
+## $ python3 computations/maintenance/render_spectral_research.py --check
+PASS: spectral thematic views and review matrix
+exit 0
+
+## $ python3 computations/maintenance/render_status.py --check
+status-render: OK
+exit 0
+
+## $ python3 computations/verification/scientific_registry_audit.py
+scientific-registry-audit: OK (294 claims, 57 external dependencies)
+exit 0
+
+## $ python3 computations/verification/repository_audit.py
+PASS check_lean_coverage
+PASS check_bilingual_readmes
+PASS check_active_markdown_links
+PASS repository_audit
+exit 0
+
+## $ python3 computations/verification/wave3_integration_audit.py
+  "Wave2_section_unchanged": true,
+  "unavailable_author222_replayed": false,
+  "scope": "Byte/lineage/scope/link checks; no additional proof audit or aggregate build."
+}
+exit 0
+
+## $ python3 computations/maintenance/audit_manuscript_references.py --check
+  "unresolved_labels": [],
+  "duplicate_labels": [],
+  "errors": []
+}
+exit 0
+
+## $ python3 evidence/executions/20261030/lineH/restore_packet_bytes.py
+OK   mathematics/fixed-map/lineH_49state_certificate.md
+OK   formalization/Bgs/LineH.lean
+exit 0
+
+No .lean file changed in this step, so Lean was not rebuilt (lake_build_Bgs.log stands).
+DONE 2026-10-30 22:17:44 +0500

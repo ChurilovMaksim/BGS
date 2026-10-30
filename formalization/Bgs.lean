@@ -64,5 +64,6 @@ import Bgs.LineE
 import Bgs.LineEResonance
 import Bgs.LineF
 import Bgs.LineG
+import Bgs.LineH
 
 import Bgs.Mathlib

@@ -14,15 +14,16 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-30**. **290 registered claims.**
+**2026-10-30**. **294 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 235 |
+| proved | 238 |
 | verification-pending | 15 |
 | conditional | 15 |
 | open | 25 |
-| **Total** | **290** |
+| refuted | 1 |
+| **Total** | **294** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -30,21 +31,21 @@ external refereeing. The complete per-claim surface is the generated
 
 ## Claims by family and state
 
-| Family | proved | verification-pending | conditional | open | Total |
-|---|---:|---:|---:|---:|---:|
-| BGS | 0 | 0 | 0 | 1 | 1 |
-| CAYLEY | 9 | 1 | 0 | 1 | 11 |
-| CUE | 2 | 0 | 0 | 0 | 2 |
-| FLOW | 25 | 0 | 0 | 0 | 25 |
-| FM | 35 | 0 | 2 | 0 | 37 |
-| FORMAL | 3 | 0 | 0 | 0 | 3 |
-| FUP | 1 | 0 | 0 | 0 | 1 |
-| INFO | 0 | 0 | 0 | 1 | 1 |
-| LOOP | 0 | 0 | 1 | 0 | 1 |
-| RES | 20 | 1 | 1 | 1 | 23 |
-| RET | 3 | 0 | 1 | 0 | 4 |
-| TRACE | 137 | 13 | 10 | 21 | 181 |
-| **Total** | 235 | 15 | 15 | 25 | **290** |
+| Family | proved | verification-pending | conditional | open | refuted | Total |
+|---|---:|---:|---:|---:|---:|---:|
+| BGS | 0 | 0 | 0 | 1 | 0 | 1 |
+| CAYLEY | 9 | 1 | 0 | 1 | 0 | 11 |
+| CUE | 2 | 0 | 0 | 0 | 0 | 2 |
+| FLOW | 25 | 0 | 0 | 0 | 0 | 25 |
+| FM | 35 | 0 | 2 | 0 | 0 | 37 |
+| FORMAL | 3 | 0 | 0 | 0 | 0 | 3 |
+| FUP | 1 | 0 | 0 | 0 | 0 | 1 |
+| INFO | 0 | 0 | 0 | 1 | 0 | 1 |
+| LOOP | 0 | 0 | 1 | 0 | 0 | 1 |
+| RES | 20 | 1 | 1 | 1 | 0 | 23 |
+| RET | 3 | 0 | 1 | 0 | 0 | 4 |
+| TRACE | 140 | 13 | 10 | 21 | 1 | 185 |
+| **Total** | 238 | 15 | 15 | 25 | 1 | **294** |
 
 ## Open programme obligations
 
@@ -67,7 +68,6 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-161` | Intermediate band K = kappa N | [mathematics/fixed-map/band_limited_kick_bridge.md](mathematics/fixed-map/band_limited_kick_bridge.md) |
 | `BGS-TRACE-162` | Crossover conjecture: R-scaling of the band-limited deviation and the mode threshold | [mathematics/fixed-map/band_limited_kick_bridge.md](mathematics/fixed-map/band_limited_kick_bridge.md) |
 | `BGS-TRACE-177` | Numerical observations: ND^(2) at small m, mu(eta) spectrum, m_* crossover, W~rest tables, fixed-eta CLT numerics, torsion-split numbers | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
-| `BGS-TRACE-179` | Conjecture R / R_NSW: W~rest_m(eta) = o(m) uniformly on compact eta-ranges | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
 | `BGS-TRACE-180` | Fixed-eta (nu-only) central limit law | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
 | `BGS-TRACE-181` | Non-degeneracy ND_m for composite h_m and for even m | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
 | `BGS-TRACE-182` | The (m, eta) = (11, 2) outlier | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
@@ -79,6 +79,7 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-204` | Line G G3: dilution identity along divisors d of h_m | [mathematics/fixed-map/resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
 | `BGS-TRACE-205` | Line G classification record: resonant families, growth rates, G5 (h_d \| h_m), G6 (sparsity), G7 (moment heuristic), eta-scan | [mathematics/fixed-map/resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
 | `BGS-TRACE-206` | Line G: Conjecture R' (corrected mean law for the k1 kick at eta = 2) with a pre-registered m = 17 test | [mathematics/fixed-map/resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
+| `BGS-TRACE-210` | Conjecture R_NSW: W~rest_m(eta) = o(m) along m with h_m prime | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
 
 ## Corrections
 
@@ -92,7 +93,7 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 187 follow-on claims adopted after
+It records 191 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 18 external IDs.

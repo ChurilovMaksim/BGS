@@ -144,11 +144,17 @@ C_η is not explicit, and uniformity in η is not claimed.
 ### <a id="claim-178"></a>BGS-TRACE-178: torsion-split identity F = F_gen + F_tor (proved, trivial; interpretation numerical)
 - `phase4_parity_certificate.md` §2.3.
 
-### <a id="claim-179"></a>BGS-TRACE-179: Conjecture R / R_NSW (open)
+### <a id="claim-179"></a>BGS-TRACE-179: Conjecture R (refuted as stated, at η = 2; R_NSW split out as BGS-TRACE-210)
 - For 0 < η₀ ≤ η₁: max_{η∈[η₀,η₁]} |W̃^rest_m(η)| = o(m).
 - Evidence: for η ∈ [10, 400], |W̃^rest|/2m ≤ 0.11 (m = 7), 0.05 (m = 9), 0.018 (m = 11; −0.0175 at η = 400), 0.008 (m = 13; three η).
 - Literature check: `phase4_parity_certificate.md` §2.1–§2.2.
 - *Line E annotation (2026-10-30; state unchanged, open):* see `resonant_residue_lineE.md`. The k1-kick analogue of R is violated on a finite range (BGS-TRACE-187, computer-assisted) and, conditionally on H∞, for all large m (BGS-TRACE-188). For the kick of this conjecture, |W̃rest_m(2)| > m is certified at m = 11 and 13 only (BGS-TRACE-195, computer-assisted; an m = 17 certificate is pending and nothing is claimed for it), and asymptotic failure along 3 ∤ m holds only conditionally on H∞,7 (BGS-TRACE-196). R itself is not disproved.
+- *Line H annotation (2026-10-30; state changed open → refuted):* see [`lineH_49state_certificate.md`](lineH_49state_certificate.md). For this conjecture's kick (the Line B diagonal kick f_B) at η = 2, BGS-TRACE-209 (computer-assisted, on BGS-TRACE-207 and 208; independent referee audit, ACCEPT AFTER FIXES) gives W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m. So for every compact η-range containing 2 the maximum is not o(m), and R as stated is false. R_NSW, originally part of this entry, is registered separately as BGS-TRACE-210 (below). Not covered: odd m with 3 ∤ m in {17, 19, 23, 25, 29, 31, 35, 37, 41, 43} (m = 11, 13 are BGS-TRACE-195), every m with 3 | m, η ≠ 2, and s = +1; R restricted to compact ranges avoiding 2 is open and not registered separately. This is not a statement about BGS (BGS-BGS-001) and not progress on BGS-TRACE-148. The "R itself is not disproved" of the Line E annotation describes the state before Line H.
+
+### <a id="claim-210"></a>BGS-TRACE-210: Conjecture R_NSW (open; split from BGS-TRACE-179 on 2026-10-30)
+- For 0 < η₀ ≤ η₁: max_{η∈[η₀,η₁]} |W̃^rest_m(η)| = o(m) along the odd m with h_m prime (NSW-prime m). This set is not known to be infinite. Statement: `phase4_parity_certificate.md` §2.2 ("Version R_NSW").
+- Such m are prime, since h_d | h_m for d | m with m odd (Lean `Bgs.LineG.nsw_dvd`, `formalization/Bgs/LineG.lean`; not registered by a proved claim); so 3 ∤ m when m > 3.
+- *Status (Line H, 2026-10-30):* undecided. BGS-TRACE-209 (computer-assisted) gives W̃rest_m(2)/m ≥ 1.4·10⁴ at every m ≥ 47 with h_m prime, so R_NSW fails for every compact η-range containing 2 if there are infinitely many such m, and holds vacuously otherwise: R_NSW is equivalent to the finiteness of the set of m with h_m prime, which is unknown. BGS-TRACE-209 is cited as evidence, not registered as a dependency. Not a statement about BGS-BGS-001; no progress on BGS-TRACE-148.
 
 ### <a id="claim-180"></a>BGS-TRACE-180: fixed-η CLT (open)
 - *Line E annotation (2026-10-30; state unchanged, open):* at η ≈ 2 the ν-law has atoms of mass 1/φ(2h) carrying |Z|² ≈ Λ^{2m} (BGS-TRACE-190, 192), so the moment form (M4 → 2, normalisation by √F) fails numerically there; convergence in law of Z/√(bulk variance) is not contradicted.

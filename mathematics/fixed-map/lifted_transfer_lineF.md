@@ -2,6 +2,8 @@
 
 **Claims:** BGS-TRACE-197 to BGS-TRACE-202. **Annotated (states unchanged):** BGS-TRACE-187, BGS-TRACE-188, BGS-TRACE-191, BGS-TRACE-196. **BGS-TRACE-179 (Conjecture R) stays open.**
 
+**Later work (Line H, 30 October 2026).** For the Line B kick f_B at η = 2, BGS-TRACE-209 (computer-assisted, refereed) gives W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m, on the lifted space of BGS-TRACE-197 ([lineH_49state_certificate.md](lineH_49state_certificate.md)). Conjecture R (BGS-TRACE-179) as stated is therefore refuted (registered state `refuted`; R_NSW, formerly part of 179, is the open BGS-TRACE-210). BGS-TRACE-196 stays conditional as stated; its conclusion for s = −1 holds on the lifted space. Statements below that R is not disproved describe the state before Line H.
+
 **Inputs** (cited, not re-claimed):
 - Line E (`resonant_residue_lineE.md`): BGS-TRACE-183 (E1, the resonant residue N ≡ −4 mod h_m and the collapse of the phase), BGS-TRACE-184 (E2, the four-sector law with |c_a| = ½ for even a, c_a = 0 for odd a), BGS-TRACE-193 (E11, Z_{f7}(ν) = Z_{k1}(49ν) for 3 ∤ m), BGS-TRACE-194 (E12, the 49-state law).
 - BGS-TRACE-165 (B^sym_m ≤ 2m) and BGS-TRACE-170 (W̃rest_m = F_m − B^sym_m − 2mχ_m, |χ_m| ≤ 1).

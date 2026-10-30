@@ -176,7 +176,7 @@ Inputs, with citations and hypothesis matching:
 
 ### 2.2 Precise statement [C]
 **Conjecture R.** Fix 0 < η₀ ≤ η₁ < ∞. Then max_{η∈[η₀,η₁]} |W̃^rest_m(η)|/m → 0 as m → ∞ through odd integers.
-- Version R_NSW: the same along odd m with h_m prime. This sequence is not known to be infinite.
+- Version R_NSW: the same along odd m with h_m prime. This sequence is not known to be infinite. (Registered separately as BGS-TRACE-210 since 2026-10-30; BGS-TRACE-179 is Conjecture R only.)
 - No torsion-removal clause: by §2.3 the torsion classes carry no extra mass at η ≥ 10, and at small η the anomaly is not torsion-supported. The phase-3 clause "after removing classes with gcd(r,h) divisible by p ≤ 28m" is withdrawn.
 - Evidence [N] (W̃^rest/2m, phase-3 logs plus the referee's true-W^rest table): |W̃^rest|/2m ≤ 0.11, 0.05, 0.018, 0.008 at m = 7, 9, 11, 13 for η ∈ [10, 400] [ref8-fix]. At m = 13 and η = 25 the value is below the resolution |E|/2m.
 - Not obtained: O(m^{1−δ}), density-one or prime-h subsequence results. I report no partial theorem.

@@ -9,7 +9,7 @@ Notation is that of Section~\ref{sec:resonant-residue-lineE}. The canonical note
 \path{computations/verification/lineF/}, \path{computations/verification/lineG/} and \path{computations/verification/lineFG/}. The combinatorial and algebraic cores are
 kernel-checked in \path{formalization/Bgs/LineF.lean} and \path{formalization/Bgs/LineG.lean} (no \texttt{sorry}, no \texttt{native\_decide}). Statuses are those of \path{record/claims.json}.
 
-\paragraph{Scope and non-claims.} Every rigorous statement below concerns the \(k1\) kick \(0.9\cos2\pi q\) (and \(f_7\) by BGS-TRACE-193). Nothing concerns the Line B kick \(f_B\) of Conjecture R: BGS-TRACE-179 stays open and BGS-TRACE-196 stays conditional. BGS-TRACE-199 proves the conclusion of BGS-TRACE-188 for \(k1\) at \(\eta=2\) on a different, explicit space; hypothesis \(H_\infty\) as stated there is neither proved nor needed.
+\paragraph{Scope and non-claims.} Every rigorous statement below concerns the \(k1\) kick \(0.9\cos2\pi q\) (and \(f_7\) by BGS-TRACE-193). Nothing concerns the Line B kick \(f_B\) of Conjecture R: in this section BGS-TRACE-179 stays open and BGS-TRACE-196 stays conditional (later, Section~\ref{sec:lineH-49state}: BGS-TRACE-179 is refuted as stated at \(\eta=2\) by BGS-TRACE-209, and BGS-TRACE-196 stays conditional as stated). BGS-TRACE-199 proves the conclusion of BGS-TRACE-188 for \(k1\) at \(\eta=2\) on a different, explicit space; hypothesis \(H_\infty\) as stated there is neither proved nor needed.
 
 \begin{theorem}[Lifted trace identity, BGS-TRACE-197, proved]
 Let \(\rho_V>\lambda/(2(\lambda-1))\approx0.6036\), \(\rho_E>1/(2(\lambda-1))\approx0.1036\), \(\beta>0\), and \(\sum_n\lvert w(n)\rvert e^{\alpha\lvert n\rvert}<\infty\) with \(\alpha>2\pi c\max(\rho_V,\rho_E)+\beta/\lambda\). The vertex and edge operators \(L_V,L_E\) on weighted \(\ell^2\)-sums of Hardy spaces over the disc lattices are trace class, and for every \(m\ge1\), \(\sum_{n\in\mathbb Z^m}\prod_jw(n_j)e(cn_js_j)=(1-\lambda^{-m})(\operatorname{Tr}L_V^m-\operatorname{Tr}L_E^m)\), where \(s_j\) is the periodic orbit of the word \(n\). Hence \(Z_m(\nu^*)=(1-\lambda^{-m})\sum_{a\in\{0,2,4,6\}}c_a(\operatorname{Tr}L_{V,a}^m-\operatorname{Tr}L_{E,a}^m)\) for the full alphabet. The counting step (number of closed vertex chains minus closed edge chains equals one) is formalised in Lean.
@@ -32,7 +32,7 @@ For the full-alphabet \(k1\) kick, \(\lvert\tilde W^{\mathrm{rest}}_m\rvert>m\) 
 \end{theorem}
 
 \begin{remark}[Open items of Line F, BGS-TRACE-202]
-Float spectra give \(\lvert\mu^*(\eta)\rvert>\lambda^{1/4}\) for \(\eta\in(0.951,3.212)\) (not certified). For \(f_B\) the lift reduces the infinite-alphabet part of \(H_{\infty,7}\) to a finite certificate of about 24\,000 dimensions per operator, which was not run; float values \(\lvert\mu\rvert=1.8839,1.8968\), next cluster \(1.27\)--\(1.30\), stable under two discretisations.
+Float spectra give \(\lvert\mu^*(\eta)\rvert>\lambda^{1/4}\) for \(\eta\in(0.951,3.212)\) (not certified). For \(f_B\) the lift reduces the infinite-alphabet part of \(H_{\infty,7}\) to a finite certificate of about 24\,000 dimensions per operator, which was not run here (it is run for \(s=-1\) in Section~\ref{sec:lineH-49state}, BGS-TRACE-208); float values \(\lvert\mu\rvert=1.8839,1.8968\), next cluster \(1.27\)--\(1.30\), stable under two discretisations.
 \end{remark}
 
 \begin{theorem}[General partial-trace law, BGS-TRACE-203, proved (finite alphabet)]

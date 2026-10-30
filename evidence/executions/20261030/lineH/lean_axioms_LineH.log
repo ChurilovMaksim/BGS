@@ -1,0 +1,11 @@
+$ lake env lean ../evidence/executions/20261030/lineH/AxiomsLineH.lean
+'Bgs.LineH.geom_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineH.dom_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineH.h_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineH.yp_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineH.k_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineH.kappa_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineH.inv49_mod8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineH.sq_residues_mod8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineH.shift4' depends on axioms: [propext, Quot.sound]
+exit 0

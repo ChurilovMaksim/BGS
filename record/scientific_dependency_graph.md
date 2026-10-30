@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**290 registered nodes; 404 direct prerequisite edges.**
+**294 registered nodes; 414 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -262,21 +262,21 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-162](../mathematics/fixed-map/band_limited_kick_bridge.md) | open | `BGS-TRACE-148`, `BGS-TRACE-160` | None registered | 0 |
 | [BGS-TRACE-163](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-131` | None registered | 9 |
 | [BGS-TRACE-164](../mathematics/fixed-map/derandomized_fixed_kick.md) | conditional | `BGS-TRACE-131`, `BGS-TRACE-163` | None registered | 1 |
-| [BGS-TRACE-165](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-163` | None registered | 11 |
+| [BGS-TRACE-165](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-163` | None registered | 12 |
 | [BGS-TRACE-166](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | None registered | None registered | 2 |
 | [BGS-TRACE-167](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-166` | None registered | 0 |
 | [BGS-TRACE-168](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-166` | None registered | 2 |
 | [BGS-TRACE-169](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-165` | None registered | 2 |
-| [BGS-TRACE-170](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-169` | None registered | 12 |
+| [BGS-TRACE-170](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-169` | None registered | 14 |
 | [BGS-TRACE-171](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-170` | None registered | 2 |
 | [BGS-TRACE-172](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-170` | None registered | 1 |
 | [BGS-TRACE-173](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-171`, `BGS-TRACE-172` | None registered | 0 |
 | [BGS-TRACE-174](../mathematics/fixed-map/derandomized_fixed_kick.md) | conditional | `BGS-TRACE-170`, `BGS-TRACE-171` | None registered | 0 |
 | [BGS-TRACE-175](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-163` | None registered | 0 |
 | [BGS-TRACE-176](../mathematics/fixed-map/derandomized_fixed_kick.md) | conditional | `BGS-TRACE-165`, `BGS-TRACE-168` | None registered | 1 |
-| [BGS-TRACE-177](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-170` | None registered | 2 |
+| [BGS-TRACE-177](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-170` | None registered | 3 |
 | [BGS-TRACE-178](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-169` | None registered | 1 |
-| [BGS-TRACE-179](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-170`, `BGS-TRACE-177` | None registered | 3 |
+| [BGS-TRACE-179](../mathematics/fixed-map/derandomized_fixed_kick.md) | refuted | `BGS-TRACE-170`, `BGS-TRACE-177` | None registered | 3 |
 | [BGS-TRACE-180](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-176`, `BGS-TRACE-179` | None registered | 0 |
 | [BGS-TRACE-181](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-164`, `BGS-TRACE-168` | None registered | 0 |
 | [BGS-TRACE-182](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-177`, `BGS-TRACE-178` | None registered | 1 |
@@ -291,10 +291,10 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-191](../mathematics/fixed-map/resonant_residue_lineE.md) | open | `BGS-TRACE-185` | None registered | 0 |
 | [BGS-TRACE-192](../mathematics/fixed-map/resonant_residue_lineE.md) | open | `BGS-TRACE-182`, `BGS-TRACE-190` | None registered | 0 |
 | [BGS-TRACE-193](../mathematics/fixed-map/resonant_residue_lineE.md) | proved | `BGS-TRACE-163`, `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-187` | None registered | 1 |
-| [BGS-TRACE-194](../mathematics/fixed-map/resonant_residue_lineE.md) | proved | `BGS-TRACE-163`, `BGS-TRACE-183`, `BGS-TRACE-184` | None registered | 2 |
+| [BGS-TRACE-194](../mathematics/fixed-map/resonant_residue_lineE.md) | proved | `BGS-TRACE-163`, `BGS-TRACE-183`, `BGS-TRACE-184` | None registered | 3 |
 | [BGS-TRACE-195](../mathematics/fixed-map/resonant_residue_lineE.md) | proved | `BGS-TRACE-163`, `BGS-TRACE-165`, `BGS-TRACE-170` | None registered | 0 |
 | [BGS-TRACE-196](../mathematics/fixed-map/resonant_residue_lineE.md) | conditional | `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-179`, `BGS-TRACE-194` | None registered | 0 |
-| [BGS-TRACE-197](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-183`, `BGS-TRACE-184` | None registered | 4 |
+| [BGS-TRACE-197](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-183`, `BGS-TRACE-184` | None registered | 6 |
 | [BGS-TRACE-198](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-197` | None registered | 2 |
 | [BGS-TRACE-199](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-197`, `BGS-TRACE-198` | None registered | 1 |
 | [BGS-TRACE-200](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-193`, `BGS-TRACE-199` | None registered | 0 |
@@ -304,3 +304,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-204](../mathematics/fixed-map/resonance_classification_lineG.md) | open | `BGS-TRACE-203` | None registered | 1 |
 | [BGS-TRACE-205](../mathematics/fixed-map/resonance_classification_lineG.md) | open | `BGS-TRACE-203`, `BGS-TRACE-204` | None registered | 1 |
 | [BGS-TRACE-206](../mathematics/fixed-map/resonance_classification_lineG.md) | open | `BGS-TRACE-179`, `BGS-TRACE-205` | None registered | 0 |
+| [BGS-TRACE-207](../mathematics/fixed-map/lineH_49state_certificate.md) | proved | `BGS-TRACE-194`, `BGS-TRACE-197` | None registered | 2 |
+| [BGS-TRACE-208](../mathematics/fixed-map/lineH_49state_certificate.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-207` | None registered | 1 |
+| [BGS-TRACE-209](../mathematics/fixed-map/lineH_49state_certificate.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-207`, `BGS-TRACE-208` | None registered | 0 |
+| [BGS-TRACE-210](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-170`, `BGS-TRACE-177` | None registered | 0 |

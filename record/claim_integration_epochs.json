@@ -1016,9 +1016,9 @@
     },
     {
       "id": "BGS-TRACE-179",
-      "state": "open",
+      "state": "refuted",
       "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
-      "disposition": "29 October 2026: open Conjecture R / R_NSW. Not reduced to a known conjecture or a large-sieve inequality. Does not close TRACE-148 or BGS-001."
+      "disposition": "29 October 2026: open Conjecture R / R_NSW. Not reduced to a known conjecture or a large-sieve inequality. Does not close TRACE-148 or BGS-001. 30 October 2026 (Line H): explicit state review open -> refuted: Conjecture R as stated is false at eta = 2 (BGS-TRACE-209, computer-assisted, refereed); the NSW-prime version R_NSW is split out as BGS-TRACE-210 (open); does not close TRACE-148 or BGS-001."
     },
     {
       "id": "BGS-TRACE-180",
@@ -1181,6 +1181,30 @@
       "state": "open",
       "source": "mathematics/fixed-map/resonance_classification_lineG.md",
       "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-207",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineH_49state_certificate.md",
+      "disposition": "30 October 2026 (Line H): proved (paper proof + Lean parity core + exact check); kappa lemma and 49-state full-alphabet lifted identity; refereed. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-208",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineH_49state_certificate.md",
+      "disposition": "30 October 2026 (Line H): proved (computer-assisted, arb + float BLAS with a-priori bound); Line B kick, eta = 2, s = -1; V_0 certificate of record by the referee; refereed. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-209",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineH_49state_certificate.md",
+      "disposition": "30 October 2026 (Line H): proved (computer-assisted); W~rest_m(2)/m >= 1.4e4 for odd m >= 47, 3 not dividing m; refutes Conjecture R (TRACE-179) as stated; not a BGS statement. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-210",
+      "state": "open",
+      "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
+      "disposition": "30 October 2026 (Line H): open conjecture R_NSW, split from TRACE-179 (owner audit of PR #59); undecided: violated at every m >= 47 with h_m prime by TRACE-209, infinitude of NSW primes unknown. Does not close TRACE-148 or BGS-001."
     }
   ],
   "invariants": [
