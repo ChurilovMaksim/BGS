@@ -6,7 +6,7 @@ This page is a **navigation and presentation guide**, not a theorem statement or
 
 **New reader:** [README](../README.md) → [background](reader_guide.en.md) → [research brief](../RESEARCH.md) → [open problems](../mathematics/open_questions.md). The README introduces the original conjecture before describing internal project results.
 
-**Referee:** [source-of-truth hierarchy](../SOURCE_OF_TRUTH.md) → [status ledger](../record/claim_ledger.md) → [registered claim](../record/claims.json) → authoritative [mathematical proof](../mathematics/README.md) → [external dependencies](../literature/README.md) → [review protocol](../REVIEWING.md). Read a complete proof and its assumptions before declaring an external result applicable or establishing priority.
+**Referee:** [source-of-truth hierarchy](../SOURCE_OF_TRUTH.md) → [registered claim](../record/claims.json) → [claim registry](../record/claim_registry.md) → [status ledger](../record/claim_ledger.md) → authoritative [mathematical proof](../mathematics/README.md) → [external dependencies](../literature/README.md) → [review protocol](../REVIEWING.md). Read a complete proof and its assumptions before declaring an external result applicable or establishing priority.
 
 **Reproducer:** [reproduction](../REPRODUCE_unified.md) → [computation guide](../computations/README.md) → [formalization limits](../formalization/README.md) → [dated evidence](../evidence/README.md). A completed build or finite test certifies only its explicit checked target.
 
