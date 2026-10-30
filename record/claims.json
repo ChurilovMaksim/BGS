@@ -7224,7 +7224,7 @@
       ],
       "boundary": "Assume rho_V > lambda/(2(lambda-1)) ~ 0.6036, rho_E > 1/(2(lambda-1)) ~ 0.1036, beta > 0, and sum_n |w(n)| e^{alpha|n|} < infinity for some alpha > 2 pi c max(rho_V,rho_E) + beta/lambda (c = 1/(4 sqrt 2)). Then the vertex and edge operators L_V, L_E on weighted l2-direct sums of Hardy spaces over the disc lattices are trace class and, for every m >= 1, sum_{n in Z^m} prod_j w(n_j) e(c n_j s_j) = (1-lambda^-m)(Tr L_V^m - Tr L_E^m) (s_j the periodic orbit). With E1/E2 (BGS-TRACE-183/184): Z_m(nu*) = (1-lambda^-m) sum_{a in {0,2,4,6}} c_a (Tr L_{V,a}^m - Tr L_{E,a}^m), |c_a| = 1/2, for the FULL (untruncated) alphabet; real shifts (the 49-state law) are covered. Lean formalises only the counting step (#fixed points - #adjacent fixed pairs = 1, and adjacent fixed pairs = closed edge chains); trace class, the trace formula and the chain-to-block identification are paper arguments.",
       "state": "proved",
-      "ledger_status": "ANALYTIC PROOF + LEAN COMBINATORIAL CORE (vertex_minus_edge, edge_closed_iff) + FLOAT CHECKS (vs exact class sums m<=15 to 9.1e-14; referee own code vs physical traces m=5..11) + INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "ledger_status": "ANALYTIC PROOF + LEAN COMBINATORIAL CORE (vertex_minus_edge, edge_closed_iff) + FLOAT CHECKS (vs exact class sums m<=15 to 9.1e-14; referee own code vs physical traces m=5..13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
@@ -7325,7 +7325,9 @@
       "source": "mathematics/fixed-map/lifted_transfer_lineF.md",
       "dependencies": [
         "BGS-TRACE-197",
-        "BGS-TRACE-198"
+        "BGS-TRACE-198",
+        "BGS-TRACE-165",
+        "BGS-TRACE-170"
       ],
       "boundary": "k1 kick, full alphabet, grid points only (lower bounds rounded down, enclosures outward): eta = 1.25: |mu*| in [1.708750, 1.710751], F_m/2m >= 2.927 at m = 31 and |W~rest_m| > m for every odd m >= 31; eta = 1.5: [1.810900, 1.812901], |W~rest_m| > m for odd m >= 19; eta = 1.75: [1.880799, 1.882800], for odd m >= 15; eta = 2.25 (K0 = 5, r2 = 1.45): [1.909830, 1.911831], for odd m >= 31; eta = 2.5 (K0 = 5, r2 = 1.45): [1.866601, 1.868602], for odd m >= 35. In each row the lower bound on F_m/2m increases in m and is >= C g^m/m with g > 1 (asserted in bounds_lift.py). Nothing between grid points (see BGS-TRACE-191, 202); eta = 2.75, 3.0 not run.",
       "state": "proved",
