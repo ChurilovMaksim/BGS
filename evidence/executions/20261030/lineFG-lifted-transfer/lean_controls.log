@@ -1,0 +1,22 @@
+# 2026-10-30T11:36:44Z false controls
+--- c1.lean (lean exit 1)
+../evidence/executions/20261030/lineFG-lifted-transfer/controls/c1.lean:3:37: error: Tactic `decide` proved that the proposition
+  nsw 17 = 1607523
+is false
+c1.lean: rejected (expected reason)
+--- c2.lean (lean exit 1)
+../evidence/executions/20261030/lineFG-lifted-transfer/controls/c2.lean:3:31: error: Tactic `decide` proved that the proposition
+  nsw 5 = 43
+is false
+c2.lean: rejected (expected reason)
+--- c3.lean (lean exit 1)
+../evidence/executions/20261030/lineFG-lifted-transfer/controls/c3.lean:2:57: error: unsolved goals
+⊢ False
+c3.lean: rejected (expected reason)
+--- c4.lean (lean exit 1)
+../evidence/executions/20261030/lineFG-lifted-transfer/controls/c4.lean:3:34: error: Tactic `decide` proved that the proposition
+  nsw 3 ∣ nsw 5
+is false
+c4.lean: rejected (expected reason)
+4/4 false controls rejected for the expected reason
+exit 0

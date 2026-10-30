@@ -6766,7 +6766,7 @@
         "BGS-TRACE-170",
         "BGS-TRACE-177"
       ],
-      "boundary": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m; R_NSW: along m with h_m prime (not known to be infinite). Not reduced to a large-sieve inequality ('quadratic large sieve' phrasing withdrawn); Kurlberg-Rudnick, Bourgain and Bourgain-Glibichuk-Konyagin bounds do not apply since ord_h lambda = m is minimal. Derandomized analogue of the off-diagonal problem of BGS-TRACE-145 to 148; no progress on BGS-TRACE-148 is claimed. Line E annotation (2026-10-30, state unchanged): the k1-kick analogue of R is violated on a finite range (BGS-TRACE-187) and conditionally for all large m (BGS-TRACE-188); for this conjecture's kick |W~rest_m(2)| > m is certified at m = 11 and 13 only (BGS-TRACE-195, computer-assisted; an m = 17 certificate is pending and nothing is claimed for it) and asymptotic failure along 3 not dividing m holds only conditionally on H_infinity,7 (BGS-TRACE-196). R is not disproved.",
+      "boundary": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m; R_NSW: along m with h_m prime (not known to be infinite). Not reduced to a large-sieve inequality ('quadratic large sieve' phrasing withdrawn); Kurlberg-Rudnick, Bourgain and Bourgain-Glibichuk-Konyagin bounds do not apply since ord_h lambda = m is minimal. Derandomized analogue of the off-diagonal problem of BGS-TRACE-145 to 148; no progress on BGS-TRACE-148 is claimed. Line E annotation (2026-10-30, state unchanged): the k1-kick analogue of R is violated on a finite range (BGS-TRACE-187) and conditionally for all large m (BGS-TRACE-188); for this conjecture's kick |W~rest_m(2)| > m is certified at m = 11 and 13 only (BGS-TRACE-195, computer-assisted; an m = 17 certificate is pending and nothing is claimed for it) and asymptotic failure along 3 not dividing m holds only conditionally on H_infinity,7 (BGS-TRACE-196). R is not disproved. Line F/G annotation (2026-10-30, state unchanged): for the k1 kick the analogue of R now fails for every odd m >= 15 at eta = 2 unconditionally (computer-assisted, BGS-TRACE-199; also BGS-TRACE-201 at certified grid points), and for the pure 7-mode kick for 3 not dividing m (BGS-TRACE-200). For this conjecture's kick nothing changes: asymptotic failure is still only conditional on H_infinity,7 (BGS-TRACE-196). Conjecture R' (BGS-TRACE-206) is a separate, open conjecture about the k1 kick. R is not disproved.",
       "state": "open",
       "ledger_status": "CONJECTURE; NUMERICAL EVIDENCE m<=13 ONLY; NOT REDUCED TO ANY KNOWN CONJECTURE",
       "external_dependencies": [],
@@ -6962,7 +6962,7 @@
         "BGS-TRACE-165",
         "BGS-TRACE-170"
       ],
-      "boundary": "k1 kick f(q) = 0.9 cos 2 pi q (NOT the Line B kick of BGS-TRACE-179): |W~rest_m(eta)| > m, more precisely W~rest_m/m >= 7.97 ... 2847 and F_m/2m >= 5.98 ... 1425 (lower bounds quoted rounded down), for every odd m in [17,39] at eta = 2; for m in [19,27] at eta = 1.75 and m in [23,33] at eta = 1.5 (positivity ranges are larger but do not violate anything); nothing at eta = 1.25 (there the certified lower bounds on F_m/2m are all < 0.448). Uses F_m >= |Z(nu*)|^2/phi(2h), W~rest >= F - 4m (BGS-TRACE-165, 170). Finitely many m: Conjecture R (an o(m) statement) is not disproved for any kick.",
+      "boundary": "k1 kick f(q) = 0.9 cos 2 pi q (NOT the Line B kick of BGS-TRACE-179): |W~rest_m(eta)| > m, more precisely W~rest_m/m >= 7.97 ... 2847 and F_m/2m >= 5.98 ... 1425 (lower bounds quoted rounded down), for every odd m in [17,39] at eta = 2; for m in [19,27] at eta = 1.75 and m in [23,33] at eta = 1.5 (positivity ranges are larger but do not violate anything); nothing at eta = 1.25 (there the certified lower bounds on F_m/2m are all < 0.448). Uses F_m >= |Z(nu*)|^2/phi(2h), W~rest >= F - 4m (BGS-TRACE-165, 170). Finitely many m: Conjecture R (an o(m) statement) is not disproved for any kick. Line F annotation (2026-10-30, state unchanged): extended to all odd m >= 15 at eta = 2, for the full (untruncated) k1 alphabet, by BGS-TRACE-199 (F_m/2m >= 6.03, W~rest_m/m >= 8.06), and to the grid of BGS-TRACE-201 (including eta = 1.25).",
       "state": "proved",
       "ledger_status": "COMPUTER-ASSISTED PROOF (ARB; FINITE RANGE OF m; k1 KICK ONLY) + REFEREE INDEPENDENT ARB ARITHMETIC; INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied)",
       "external_dependencies": [],
@@ -6988,7 +6988,7 @@
         "BGS-TRACE-165",
         "BGS-TRACE-170"
       ],
-      "boundary": "If the full-alphabet k1 operator L_4^(infinity) is quasi-compact on a Banach space of analytic functions on a domain containing D_rho, with an isolated simple eigenvalue |mu_infinity| > lambda^(1/4), the rest of the spectra of all L_a^(infinity) in a smaller disc, and the trace formula holds, then F_m(2) >= C (|mu_infinity|^2 lambda^(-1/2))^m for large odd m, so the k1-kick analogue of Conjecture R fails at eta = 2. k1 kick only; not BGS-TRACE-179 itself.",
+      "boundary": "If the full-alphabet k1 operator L_4^(infinity) is quasi-compact on a Banach space of analytic functions on a domain containing D_rho, with an isolated simple eigenvalue |mu_infinity| > lambda^(1/4), the rest of the spectra of all L_a^(infinity) in a smaller disc, and the trace formula holds, then F_m(2) >= C (|mu_infinity|^2 lambda^(-1/2))^m for large odd m, so the k1-kick analogue of Conjecture R fails at eta = 2. k1 kick only; not BGS-TRACE-179 itself. Line F annotation (2026-10-30, state unchanged): the conclusion (failure of the k1-kick analogue of R at eta = 2 for all large odd m) is established unconditionally (computer-assisted) by BGS-TRACE-199 on a different, explicit lifted space (BGS-TRACE-197, 198). H_infinity as stated here (a single analytic domain containing D_rho) is not proved and is no longer needed for the conclusion.",
       "state": "conditional",
       "ledger_status": "CONDITIONAL (HYPOTHESIS H_INFINITY: QUASI-COMPACT FULL-ALPHABET OPERATOR WITH ISOLATED SIMPLE EIGENVALUE |mu| > lambda^(1/4)) + FLOAT EVIDENCE; INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied)",
       "external_dependencies": [],
@@ -7062,7 +7062,7 @@
       "dependencies": [
         "BGS-TRACE-185"
       ],
-      "boundary": "The certificates of BGS-TRACE-185 to 187 are at 9 grid values of eta; nothing is certified between grid points.",
+      "boundary": "The certificates of BGS-TRACE-185 to 187 are at 9 grid values of eta; nothing is certified between grid points. Line F annotation (2026-10-30, state unchanged): for the full k1 alphabet BGS-TRACE-201 certifies the grid points eta in {1.25, 1.5, 1.75, 2, 2.25, 2.5}; a float window (0.951, 3.212) is BGS-TRACE-202 (open). Nothing is certified between grid points.",
       "state": "open",
       "ledger_status": "OPEN; NO WORK CLAIMED",
       "external_dependencies": [],
@@ -7196,7 +7196,7 @@
         "BGS-TRACE-170",
         "BGS-TRACE-179"
       ],
-      "boundary": "Hypothesis H_infinity,7, stated per sign s in {+1,-1}: the full-alphabet 49-state operators of BGS-TRACE-194 for the Line B kick at eta = 2 and that s are quasi-compact on a suitable Banach space with the trace formula, one sector has an isolated simple eigenvalue mu_s dominating all other spectrum of that s-family. If this holds for some s with |mu_s| > lambda^(1/4), then |Z_m(nu_{7,s})| ~ |mu_s|^m, F_m(2) >= C max_s (|mu_s|^2 lambda^(-1/2))^m over such s, and W~rest_m(2)/m -> infinity along odd m with 3 not dividing m: Conjecture R (BGS-TRACE-179) would fail at eta = 2. Nothing along 3 | m. H_infinity,7 is not proved.",
+      "boundary": "Hypothesis H_infinity,7, stated per sign s in {+1,-1}: the full-alphabet 49-state operators of BGS-TRACE-194 for the Line B kick at eta = 2 and that s are quasi-compact on a suitable Banach space with the trace formula, one sector has an isolated simple eigenvalue mu_s dominating all other spectrum of that s-family. If this holds for some s with |mu_s| > lambda^(1/4), then |Z_m(nu_{7,s})| ~ |mu_s|^m, F_m(2) >= C max_s (|mu_s|^2 lambda^(-1/2))^m over such s, and W~rest_m(2)/m -> infinity along odd m with 3 not dividing m: Conjecture R (BGS-TRACE-179) would fail at eta = 2. Nothing along 3 | m. H_infinity,7 is not proved. Line F annotation (2026-10-30, state unchanged, stays conditional): the infinite-alphabet part of H_infinity,7 is reduced by the lift of BGS-TRACE-197 to a finite (about 24 000-dimensional per operator) ball-arithmetic certificate, which was not run. Float evidence (Line F F7, K = 14): leading |mu| = 1.8839 (s = +1) and 1.8968 (s = -1), next cluster 1.27-1.30 stable under two discretisations, lifted 49-state trace identity matching exact class sums to <= 5.9e-7.",
       "state": "conditional",
       "ledger_status": "CONDITIONAL (HYPOTHESIS H_INFINITY,7 ON THE FULL-ALPHABET 49-STATE OPERATORS) + FLOAT SPECTRAL EVIDENCE (|mu_+1| = 1.884, |mu_-1| = 1.897 > lambda^(1/4) = 1.554, NEXT <= 1.30) + PRE-REGISTERED m = 17 PREDICTION (CERTIFICATE PENDING, UNTESTED); SECOND INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee2/REPORT.md; fixes R1-R7 applied)",
       "external_dependencies": [],
@@ -7213,6 +7213,271 @@
         "manuscript/unified_sections/resonant_residue_lineE.tex"
       ],
       "closure_condition": "Hypothesis H_infinity,7(s) is proved for at least one sign s in {+1,-1}: the full-alphabet 49-state operators of BGS-TRACE-194 for the Line B kick at eta = 2 and that s are quasi-compact on a Banach space of analytic functions with the trace formula, and one sector has an isolated simple eigenvalue mu_s with |mu_s| > lambda^(1/4) dominating all other spectrum of the s-family. The float Galerkin values (|mu_+1| = 1.884, |mu_-1| = 1.897) and the pending m = 17 certificate are supporting evidence, not part of the condition. Closure yields failure of Conjecture R at eta = 2 along odd m with 3 not dividing m only; the subsequence 3 | m is outside this claim's closure."
+    },
+    {
+      "id": "BGS-TRACE-197",
+      "title": "Line F F1: lifted vertex-minus-edge trace identity for the full-alphabet resonance transfer operators",
+      "source": "mathematics/fixed-map/lifted_transfer_lineF.md",
+      "dependencies": [
+        "BGS-TRACE-183",
+        "BGS-TRACE-184"
+      ],
+      "boundary": "Assume rho_V > lambda/(2(lambda-1)) ~ 0.6036, rho_E > 1/(2(lambda-1)) ~ 0.1036, beta > 0, and sum_n |w(n)| e^{alpha|n|} < infinity for some alpha > 2 pi c max(rho_V,rho_E) + beta/lambda (c = 1/(4 sqrt 2)). Then the vertex and edge operators L_V, L_E on weighted l2-direct sums of Hardy spaces over the disc lattices are trace class and, for every m >= 1, sum_{n in Z^m} prod_j w(n_j) e(c n_j s_j) = (1-lambda^-m)(Tr L_V^m - Tr L_E^m) (s_j the periodic orbit). With E1/E2 (BGS-TRACE-183/184): Z_m(nu*) = (1-lambda^-m) sum_{a in {0,2,4,6}} c_a (Tr L_{V,a}^m - Tr L_{E,a}^m), |c_a| = 1/2, for the FULL (untruncated) alphabet; real shifts (the 49-state law) are covered. Lean formalises only the counting step (#fixed points - #adjacent fixed pairs = 1, and adjacent fixed pairs = closed edge chains); trace class, the trace formula and the chain-to-block identification are paper arguments.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + LEAN COMBINATORIAL CORE (vertex_minus_edge, edge_closed_iff) + FLOAT CHECKS (vs exact class sums m<=15 to 9.1e-14; referee own code vs physical traces m=5..13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineF/code/lift.py",
+        "computations/verification/lineF/code/spec_float.py",
+        "computations/verification/lineF/code/xcheck_class.py",
+        "computations/verification/lineFG/referee/code/own_lift.py",
+        "computations/verification/lineFG/referee/code/check2.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineF.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/lifted_transfer_lineFG.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-198",
+      "title": "Line F F2: certified spectrum of the lifted k1 operators at eta = 2 (full alphabet), and the sector-2/6 reflection lemma",
+      "source": "mathematics/fixed-map/lifted_transfer_lineF.md",
+      "dependencies": [
+        "BGS-TRACE-197"
+      ],
+      "boundary": "k1 kick 0.9 cos 2 pi q, eta = 2, full alphabet, lifted operators of BGS-TRACE-197 (K0 = 4, rho_V = 1.2, rho_E = 0.8, beta = 2.5): L_{V,4} has exactly one eigenvalue (algebraically simple) in D(b11, 2e-6), |mu*| in [1.9154712, 1.9154753] (outward rounded), and no other spectrum in |z| >= 1; L_{V,0}, L_{V,2}, L_{V,6} and L_{E,a} (a = 0,2,4,6) have spectrum in |z| < 1; ||L_V||_1 <= 730.15, ||L_E||_1 <= 22.94. Reflection lemma (paper): (U Phi)_k(s) = Phi_{-k}(-s) (vertex), Phi_{-e-1}(-s) (edge) is unitary and U L_w U^-1 = L_{w(-.)}; for k1, L_{.,6} = U L_{.,2} U^-1. Referee re-certification with own code: |mu*| in [1.914473, 1.916474], other sectors below 1. Not a statement about the Line B kick.",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED (ARB BALL ARITHMETIC, python-flint 0.9.0, 128 BIT) + PAPER REFLECTION LEMMA + INDEPENDENT REFEREE RE-CERTIFICATION (own code, different parameters) + INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineF/code/cert_lift.py",
+        "computations/verification/lineF/code/run1.sh",
+        "computations/verification/lineF/code/run2.sh",
+        "computations/verification/lineF/code/run_neg.sh",
+        "computations/verification/lineFG/referee/code/own_cert.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/lifted_transfer_lineFG.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-199",
+      "title": "Line F F3: for every odd m >= 15 the k1-kick analogue of Conjecture R fails at eta = 2 (unconditional, computer-assisted)",
+      "source": "mathematics/fixed-map/lifted_transfer_lineF.md",
+      "dependencies": [
+        "BGS-TRACE-197",
+        "BGS-TRACE-198",
+        "BGS-TRACE-165",
+        "BGS-TRACE-170"
+      ],
+      "boundary": "k1 kick 0.9 cos 2 pi q (NOT the Line B kick of BGS-TRACE-179), eta = 2: |Z_m(nu*)| >= (1/2)(1-lambda^-m)(mu_lo^m - 4(T_V+T_E)) > 0 for every odd m >= 13 (mu_lo = 1.9154712, 4(T_V+T_E) <= 3012.30); for every odd m >= 15, F_m(2)/2m >= 6.03 and W~rest_m(2)/m >= 8.06 (lower bounds rounded down), both increasing, and F_m(2)/2m >= 0.169 * 1.5197^m / m -> infinity. Hence |W~rest_m(2)| > m for all odd m >= 15 and the k1-kick analogue of Conjecture R is false. This proves the conclusion of BGS-TRACE-188 (k1, eta = 2) unconditionally (computer-assisted) on a different, explicit (lifted) space; hypothesis H_infinity as stated there is neither proved nor needed. Conjecture R (BGS-TRACE-179) is not disproved; nothing about the Line B kick.",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED (ARB) + PAPER CHAIN (Lidskii, Weyl, F_m >= |Z|^2/phi(2h), W~rest >= F - 4m) + CLOSED FORM ASSERTED IN bounds_lift.py + REFEREE INDEPENDENT CHAIN (F_15/2m >= 6.654) + INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineF/code/bounds_lift.py",
+        "computations/verification/lineF/code/safe_table.py",
+        "computations/verification/lineFG/referee/code/own_bounds.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/lifted_transfer_lineFG.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-200",
+      "title": "Line F F4: the all-m failure transfers to the pure 7-mode kick f7 for 3 not dividing m",
+      "source": "mathematics/fixed-map/lifted_transfer_lineF.md",
+      "dependencies": [
+        "BGS-TRACE-193",
+        "BGS-TRACE-199"
+      ],
+      "boundary": "f7 = 0.9 cos 2 pi 7q, eta = 2: for every odd m >= 15 with 3 not dividing m, F_m(f7)/2m >= 6.03 and W~rest_m(f7)/m >= 8.06, and F_m(f7)/2m >= 0.169 * 1.5197^m / m. Nothing along 3 | m. Not the Line B kick.",
+      "state": "proved",
+      "ledger_status": "IMMEDIATE FROM BGS-TRACE-193 (Z_f7(nu) = Z_k1(49 nu), 3 not dividing m) + BGS-TRACE-199; INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineF/code/bounds_lift.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/lifted_transfer_lineFG.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-201",
+      "title": "Line F F5: certified all-m growth at the grid points eta in {1.25, 1.5, 1.75, 2.25, 2.5} (k1, full alphabet)",
+      "source": "mathematics/fixed-map/lifted_transfer_lineF.md",
+      "dependencies": [
+        "BGS-TRACE-197",
+        "BGS-TRACE-198",
+        "BGS-TRACE-165",
+        "BGS-TRACE-170"
+      ],
+      "boundary": "k1 kick, full alphabet, grid points only (lower bounds rounded down, enclosures outward): eta = 1.25: |mu*| in [1.708750, 1.710751], F_m/2m >= 2.927 at m = 31 and |W~rest_m| > m for every odd m >= 31; eta = 1.5: [1.810900, 1.812901], |W~rest_m| > m for odd m >= 19; eta = 1.75: [1.880799, 1.882800], for odd m >= 15; eta = 2.25 (K0 = 5, r2 = 1.45): [1.909830, 1.911831], for odd m >= 31; eta = 2.5 (K0 = 5, r2 = 1.45): [1.866601, 1.868602], for odd m >= 35. In each row the lower bound on F_m/2m increases in m and is >= C g^m/m with g > 1 (asserted in bounds_lift.py). Nothing between grid points (see BGS-TRACE-191, 202); eta = 2.75, 3.0 not run.",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED (ARB), SAME PIPELINE AS BGS-TRACE-198; eta = 2.5 row completed after the referee audit (E sector 6 certified directly and equal to sector 2 by the reflection lemma); INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineF/code/cert_lift.py",
+        "computations/verification/lineF/code/bounds_lift.py",
+        "computations/verification/lineF/code/safe_table.py",
+        "computations/verification/lineF/code/run2.sh"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/lifted_transfer_lineFG.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-202",
+      "title": "Line F F6: float growth window eta in (0.951, 3.212) for the k1 sector-4 eigenvalue",
+      "source": "mathematics/fixed-map/lifted_transfer_lineF.md",
+      "dependencies": [
+        "BGS-TRACE-197"
+      ],
+      "boundary": "Float spectra of the lifted k1 operators: the sector-4 leading |mu*(eta)| exceeds lambda^(1/4) = 1.5538 for eta in (0.9511, 3.2115) (bisection); sector 0 exceeds it again near eta = 5. Not certified; certified only at the grid points of BGS-TRACE-201.",
+      "state": "open",
+      "ledger_status": "FLOAT NUMERICS (two discretisations, bisection); INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineF/code/eta_curve.py",
+        "computations/verification/lineF/code/eta_thresh.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/lifted_transfer_lineFG.tex"
+      ],
+      "closure_condition": "An interval-arithmetic certificate that |mu*(eta)| > lambda^(1/4) (with the full Line F chain) for all eta in a stated interval, or a proof that the window is (eta_-, eta_+) with certified endpoints; this would also settle the corresponding part of BGS-TRACE-191."
+    },
+    {
+      "id": "BGS-TRACE-203",
+      "title": "Line G G1/G1'/G2: general (a,b) partial-trace transfer law for Z_m(nu), finite alphabet",
+      "source": "mathematics/fixed-map/resonance_classification_lineG.md",
+      "dependencies": [
+        "BGS-TRACE-183",
+        "BGS-TRACE-184",
+        "BGS-TRACE-194"
+      ],
+      "boundary": "For every unit nu and every (a,b) with b nu == a (mod 2h), b != 0, and every kick with finite support |n| <= L (rho > L/(lambda-1)): Z_m(nu) = (1-lambda^-m) Tr_H[(I x <1|) L^m (I x |delta_0>)] with L = sum_n ghat(n) R_n x A_n on H^2(D_rho) x C^{b^2}, R_n phi(s) = e(coef(n^2/2+ns)) phi((s+n)/lambda), coef = -4ac/b, A_n the automaton step for P mod b. P(n) = sum psi(|i-j|) n_i n_j exactly (BGS-TRACE-183). On each residue class of m mod the period of (k, y', h) mod b, Z_m(nu_{a,b}) is an exponential sum (1-lambda^-m) sum_mu c_mu mu^m over the eigenvalues of a fixed trace-class operator. Finite alphabet only: the infinite k1 alphabet would need a Line-F-type lift of the C^{b^2}-extended operator (not done). Galerkin truncations are numerical.",
+      "state": "proved",
+      "ledger_status": "ANALYTIC PROOF + LEAN ALGEBRAIC CORE (phase_split, u_succ, w_succ, quad_form) + FLOAT CHECKS (author 34/34; referee own code <= 1.3e-14 for |a|/b <= 1) + INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineG/code/law.py",
+        "computations/verification/lineG/code/check_law.py",
+        "computations/verification/lineFG/referee/code/g_law.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineG.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/lifted_transfer_lineFG.tex"
+      ]
+    },
+    {
+      "id": "BGS-TRACE-204",
+      "title": "Line G G3: dilution identity along divisors d of h_m",
+      "source": "mathematics/fixed-map/resonance_classification_lineG.md",
+      "dependencies": [
+        "BGS-TRACE-203"
+      ],
+      "boundary": "For odd d | h, t = j y' (mod d), gcd(t,d) = 1, |G_d(t)| = d: Z(nu0 + 2hj/d) = (G_d(t)/d^2) sum_{beta in O/d} e(tbar Nm(beta)/d) Z^(beta)_{nu0} (O = Z[sqrt 2]; Z^(beta) with the kick at site i translated by Tr(beta lambda^i)/d). Proof sketch only; checked by brute force for prime d (7 at m = 9, 41 at m = 5) and alphabets |n| <= 1, 2; composite d untested. The main-term approximation |Z|^2 ~ |Z_rho|^2/d^2 has no rigorous error bound (observed 0.1-37%).",
+      "state": "open",
+      "ledger_status": "PROOF SKETCH + EXACT FLOAT CHECKS (49 cases, prime d = 7, 41 only, max rel. err. 2.8e-14); INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineG/code/check_dilution.py",
+        "computations/verification/lineG/code/dil_stats.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/lifted_transfer_lineFG.tex"
+      ],
+      "closure_condition": "A complete written proof of the identity for all odd d | h_m (ideally with a brute-force check at a composite d such as d = 217 at m = 15)."
+    },
+    {
+      "id": "BGS-TRACE-205",
+      "title": "Line G classification record: resonant families, growth rates, G5 (h_d | h_m), G6 (sparsity), G7 (moment heuristic), eta-scan",
+      "source": "mathematics/fixed-map/resonance_classification_lineG.md",
+      "dependencies": [
+        "BGS-TRACE-203",
+        "BGS-TRACE-204"
+      ],
+      "boundary": "k1 and Line B kicks, eta = 2, m = 7..15: every outlier found is explained numerically by a G2 primary (dominant N == +-4, +-8), a G3 dilution family (main-term tolerance up to 37% at d = 287) or a 49x Galois image (Line B kick); float growth rates r(+-4) = 1.9154732, r(+-8) ~ 1.615, r(+-2) ~ 1.50, second tier 1.33-1.41 (only r(+-4) independently checked). G5: h_d | h_m for odd m, d | m (Lean, classical). G6: |R| <= 2|P| tau(h) D (a count). G7 (heuristic, not a theorem): a family with |Z| ~ r^m is relevant for the k-th moment of |Z|^2 iff r > lambda^(1/(4k)); a moment-form CLT for the bulk is expected to fail [N]. eta-scan: bulk F/2m rises with m towards ~2, coupling-dependent.",
+      "state": "open",
+      "ledger_status": "FLOAT NUMERICS / CLASS SUMS (IEEE double) + HEURISTIC (G7) + LEAN LEMMA G5 (nsw_dvd, nsw_17); INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineG/code/step1e.py",
+        "computations/verification/lineG/code/step1f.py",
+        "computations/verification/lineG/code/tier2.py",
+        "computations/verification/lineG/code/eta_scan.py",
+        "computations/verification/lineG/code/classes_orb.c"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineG.lean"
+      ],
+      "manuscript": [
+        "manuscript/unified_sections/lifted_transfer_lineFG.tex"
+      ],
+      "closure_condition": "Certified (interval) growth rates for the families N == +-8, +-2 and the second tier, a proof of G3 (BGS-TRACE-204), and a proof of the G7 dichotomy under explicit hypotheses; the record is then superseded by theorems."
+    },
+    {
+      "id": "BGS-TRACE-206",
+      "title": "Line G: Conjecture R' (corrected mean law for the k1 kick at eta = 2) with a pre-registered m = 17 test",
+      "source": "mathematics/fixed-map/resonance_classification_lineG.md",
+      "dependencies": [
+        "BGS-TRACE-205",
+        "BGS-TRACE-179"
+      ],
+      "boundary": "Frozen definition (k1, eta = 2, odd m, h = h_m, phi = phi(2h)): P* = {(2,8),(-2,8),(2,16),(-2,16)} (N == +-4, +-8); Z_rho = Z_m(nu_rho) with b nu_rho == a (mod 2h); levels d | h, 1 < d <= sqrt h, members M_d(rho) = {nu unit: b nu == a mod 2h/d, not mod 2h/d' for d' | d, d' < d}, n_d = |M_d|, level included iff |Z_rho|^2/d^2 >= 4m; RMT_m = 4m - m^2/h; Res_m = (1/phi) sum_rho [(|Z_rho|^2 - RMT_m) + sum_{d incl.} n_d (|Z_rho|^2/d^2 - RMT_m)]; W'_m = F_m - RMT_m - Res_m. Conjecture R': W'_m = o(m), i.e. (F_m - Res_m)/2m -> 2. A conjecture about the k1 kick; it is not a statement about Conjecture R (BGS-TRACE-179), which concerns the Line B kick and max_eta |W~rest_m(eta)| = o(m) and stays open. Evidence is four points with an upward drift of W'/m; o(m) is not established.",
+      "state": "open",
+      "ledger_status": "CONJECTURE + FLOAT EVIDENCE m = 9..15 (W'/m = -0.74, -0.31, -0.04, +0.47; upward drift) + PRE-REGISTERED m = 17 TEST (PREDICTIONS_m17.json, sha256 fa8505f5...aa344; outcome not included in this registration (unreviewed)); INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineG/code/formula_table.py",
+        "computations/verification/lineG/code/eval17.py",
+        "computations/verification/lineG/PREDICTIONS_m17.json"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/lifted_transfer_lineFG.tex"
+      ],
+      "closure_condition": "A proof that W'_m = o(m) for the k1 kick at eta = 2 with the frozen definition, or a disproof (e.g. W'_m/m bounded away from 0 along a subsequence). The pre-registered m = 17 outcome is a test, not a closure."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

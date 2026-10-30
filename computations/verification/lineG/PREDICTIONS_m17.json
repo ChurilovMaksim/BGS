@@ -1,0 +1,30 @@
+{
+ "registered_at_box_time": "2026-10-30 13:17:06 +0500",
+ "note": "Pre-registered BEFORE logs/Torb_k1_m17.bin and logs/Torb_full_m17.bin exist (batch_orb.sh still running). Values from code/law.py (rational-reconstruction transfer law) and growth extrapolation from m<=15 class sums. eta=2, m=17, h=1607521=103*15607, phi(2h)=1591812.",
+ "k1": {
+  "primary_law": [
+   {"N_mod_h": "+4",   "rho": [2,8],   "Z2": 9.89300e8, "rel_tol": 1e-5, "method": "law L10 rho2.6 K50"},
+   {"N_mod_h": "-4",   "rho": [-2,8],  "Z2": 9.89294e8, "rel_tol": 1e-5, "method": "law L10 rho2.6 K50"},
+   {"N_mod_h": "+8",   "rho": [2,16],  "Z2": 3.01760e6, "rel_tol": 1e-5, "method": "law L10 rho2.6 K50"},
+   {"N_mod_h": "-8",   "rho": [-2,16], "Z2": 3.01686e6, "rel_tol": 1e-5, "method": "law L10 rho2.6 K50"},
+   {"N_mod_h": "+2",   "rho": [2,4],   "Z2": 4.3803e5, "rel_tol": 1e-3, "method": "law L6 rho1.5 K40 (m=15 check 1.2e-4)"},
+   {"N_mod_h": "-2",   "rho": [-2,4],  "Z2": 4.4138e5, "rel_tol": 1e-3, "method": "law L6 rho1.5 K40"},
+   {"N_mod_h": "+16/6 (nu=3/8)", "rho": [6,16],  "Z2": 8.9547e4, "rel_tol": 1e-3, "method": "law L6 rho1.5 K40"},
+   {"N_mod_h": "-16/6", "rho": [-6,16], "Z2": 8.4711e4, "rel_tol": 1e-3, "method": "law L6 rho1.5 K40"}
+  ],
+  "dilution_d103": {"family": "nu with 8 nu ≡ ±2 mod 2h/103, excluding the primary", "mean_Z2_per_member": 9.33e4, "band": [7.5e4, 1.17e5], "law": "|Z(nu*)|^2/103^2"},
+  "second_tier_extrapolated": [
+   {"rho": [22,96], "Z2": 3.3e4, "band_factor": 1.6}, {"rho": [-22,96], "Z2": 3.3e4, "band_factor": 1.6},
+   {"rho": [2,12], "Z2": 1.4e4, "band_factor": 1.6}, {"rho": [-2,12], "Z2": 1.4e4, "band_factor": 1.6}
+  ],
+  "bulk": {"definition": "mean |Z|^2/(2m) over units outside dilution families (d|h, 1<d<=sqrt h) of PR={±(2,8),±(2,16),±(2,4),±(6,16)} and outside all nu with shortest-vector height<=8", "value": 2.04, "band": [1.95, 2.15], "Wprime_over_m": [-0.10, 0.30]},
+  "F_over_2m_total": {"value": 39.1, "band": [38.7, 39.5]},
+  "growth_rates": {"(2,8)": 1.915, "(2,16)": 1.615, "(2,4)": 1.50, "(22,96)": 1.41, "threshold_lambda^(1/4)": 1.5538}
+ },
+ "full": {
+  "lineE_registered": "N≡-196: 5.666e8, N≡+196: 7.048e8 (Line E step2 predictions.jsonl, 06:41 UTC)",
+  "primary_extrapolated": [{"N_mod_h": "±392 (=49*8)", "Z2": 2.0e6, "band_factor": 1.5}, {"N_mod_h": "±98 (=49*2)", "Z2": 3.0e5, "band_factor": 2.0}],
+  "dilution_d103_of_±196": {"mean_Z2_per_member": 6.0e4, "band": [4.0e4, 9.0e4]},
+  "bulk": {"definition": "as k1 but primaries PR ∪ 49-images", "value": 2.03, "band": [1.95, 2.15]}
+ }
+}

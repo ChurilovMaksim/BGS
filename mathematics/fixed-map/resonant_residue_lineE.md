@@ -2,6 +2,8 @@
 
 **Claims:** BGS-TRACE-183 to BGS-TRACE-196. **Annotated:** BGS-TRACE-179, BGS-TRACE-180, BGS-TRACE-182 (states unchanged).
 
+**Later work (Line F, 30 October 2026).** The conclusion of BGS-TRACE-188 (k1, η = 2) is established unconditionally (computer-assisted) by BGS-TRACE-199 on a different, explicit lifted space ([lifted_transfer_lineF.md](lifted_transfer_lineF.md)); H∞ as stated here is not proved and 188 stays conditional. BGS-TRACE-187 is extended to every odd m ≥ 15 at η = 2 by BGS-TRACE-199. BGS-TRACE-196 stays conditional and BGS-TRACE-179 stays open.
+
 **Inputs** (cited, not re-claimed):
 - BGS-TRACE-163: Theorem 1, Lemma Q, Theorem 3 and Proposition R.
 - BGS-TRACE-165: Lemma S, and B^sym_m ≤ 2m.

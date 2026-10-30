@@ -1,0 +1,53 @@
+computations/verification/lineG/code/step1c.py:29: RuntimeWarning: Mean of empty slice
+  print(f'  resonant count={len(res)} ({len(res)/phi:.4%}), share F/2m={sum(r[0] for r in res)/phi/(2*m):.4f}; nonres mean/(4m)={zs.mean()/(4*m):.4f}  (rest F/2m={zs.mean()/(2*m):.4f})')
+<venv>/lib/python3.13/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+computations/verification/lineG/code/step1c.py:30: RuntimeWarning: Mean of empty slice
+  x=zs/zs.mean(); print(f'  nonres E[x^2]={np.mean(x**2):.3f} E[x^3]={np.mean(x**3):.2f} max x={x.max():.2f}  P(x>5)={np.mean(x>5):.2e} (Exp law: {math.exp(-5):.2e})')
+<venv>/lib/python3.13/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+== k1 m=9 h=1393 {7: 1, 199: 1} divisors=[1, 7, 199, 1393] phi=1188 F/2m=4.8392  B=8
+  resonant count=948 (79.7980%), share F/2m=4.5484; nonres mean/(4m)=0.7196  (rest F/2m=1.4392)
+  nonres E[x^2]=2.107 E[x^3]=6.64 max x=6.37  P(x>5)=8.33e-03 (Exp law: 6.74e-03)
+   d=     1 nu≡-2/8 mod 2h/d  n=   1 mean|Z|^2=  3.022e+04 share=1.4130
+   d=     1 nu≡2/8 mod 2h/d  n=   1 mean|Z|^2=  3.004e+04 share=1.4049
+   d=     7 nu≡2/8 mod 2h/d  n=   5 mean|Z|^2=      793.2 share=0.1855
+   d=     7 nu≡-2/8 mod 2h/d  n=   5 mean|Z|^2=      607.8 share=0.1421
+   d=     1 nu≡2/16 mod 2h/d  n=   1 mean|Z|^2=       1405 share=0.0657
+   d=     1 nu≡-2/16 mod 2h/d  n=   1 mean|Z|^2=       1372 share=0.0642
+   d=     1 nu≡2/4 mod 2h/d  n=   1 mean|Z|^2=      754.3 share=0.0353
+   d=     1 nu≡-2/4 mod 2h/d  n=   1 mean|Z|^2=      650.6 share=0.0304
+   d=     7 nu≡-5/1 mod 2h/d  n=   5 mean|Z|^2=      74.81 share=0.0175
+   d=     1 nu≡6/16 mod 2h/d  n=   1 mean|Z|^2=        350 share=0.0164
+   d=     7 nu≡15/7 mod 2h/d  n=   6 mean|Z|^2=      57.88 share=0.0162
+   d=     7 nu≡4/10 mod 2h/d  n=   5 mean|Z|^2=      68.72 share=0.0161
+   d=     7 nu≡-16/10 mod 2h/d  n=   5 mean|Z|^2=      61.57 share=0.0144
+   d=     7 nu≡-2/16 mod 2h/d  n=   5 mean|Z|^2=      59.01 share=0.0138
+  top nonresonant: [(np.float64(4.6), 2293, (-23, 17)), (np.float64(4.0), 1257, (-37, 31)), (np.float64(3.5), 155, (4, 18)), (np.float64(3.3), 1781, (38, 36)), (np.float64(3.2), 1067, (1, 47)), (np.float64(2.8), 23, (23, 1)), (np.float64(2.8), 2073, (-13, 43)), (np.float64(2.7), 1719, (-1, 47))]
+== k1 m=11 h=8119 {23: 1, 353: 1} divisors=[1, 23, 353, 8119] phi=7744 F/2m=6.8939  B=8
+  resonant count=3476 (44.8864%), share F/2m=5.8931; nonres mean/(4m)=0.9079  (rest F/2m=1.8159)
+  nonres E[x^2]=2.766 E[x^3]=18.36 max x=23.42  P(x>5)=1.59e-02 (Exp law: 6.74e-03)
+   d=     1 nu≡-2/8 mod 2h/d  n=   1 mean|Z|^2=  4.058e+05 share=2.3818
+   d=     1 nu≡2/8 mod 2h/d  n=   1 mean|Z|^2=  4.053e+05 share=2.3787
+   d=    23 nu≡2/8 mod 2h/d  n=  21 mean|Z|^2=      782.1 share=0.0964
+   d=    23 nu≡-2/8 mod 2h/d  n=  21 mean|Z|^2=      766.9 share=0.0945
+   d=     1 nu≡-2/16 mod 2h/d  n=   1 mean|Z|^2=       9612 share=0.0564
+   d=     1 nu≡2/16 mod 2h/d  n=   1 mean|Z|^2=       9496 share=0.0557
+   d=     1 nu≡-2/4 mod 2h/d  n=   1 mean|Z|^2=       3612 share=0.0212
+   d=     1 nu≡2/4 mod 2h/d  n=   1 mean|Z|^2=       3410 share=0.0200
+   d=    23 nu≡7/1 mod 2h/d  n=  21 mean|Z|^2=      67.39 share=0.0083
+   d=     1 nu≡-6/16 mod 2h/d  n=   1 mean|Z|^2=       1336 share=0.0078
+   d=    23 nu≡-9/7 mod 2h/d  n=  21 mean|Z|^2=      62.89 share=0.0078
+   d=    23 nu≡15/13 mod 2h/d  n=  21 mean|Z|^2=       62.2 share=0.0077
+   d=    23 nu≡-10/12 mod 2h/d  n=  21 mean|Z|^2=      57.98 share=0.0071
+   d=    23 nu≡-14/4 mod 2h/d  n=  21 mean|Z|^2=      57.38 share=0.0071
+  top nonresonant: [(np.float64(21.3), 9975, (16, 70)), (np.float64(16.6), 11019, (10, 28)), (np.float64(15.4), 773, (-5, 21)), (np.float64(14.9), 955, (-3, 17)), (np.float64(12.6), 11333, (22, 96)), (np.float64(12.4), 11831, (32, 70)), (np.float64(11.0), 4905, (-22, 96)), (np.float64(10.8), 6315, (4, 18))]
+== k1 m=13 h=47321 {79: 1, 599: 1} divisors=[1, 79, 599, 47321] phi=46644 F/2m=11.1966  B=8
+  resonant count=46644 (100.0000%), share F/2m=11.1966; nonres mean/(4m)=nan  (rest F/2m=nan)
+Traceback (most recent call last):
+  File "computations/verification/lineG/code/step1c.py", line 30, in <module>
+    x=zs/zs.mean(); print(f'  nonres E[x^2]={np.mean(x**2):.3f} E[x^3]={np.mean(x**3):.2f} max x={x.max():.2f}  P(x>5)={np.mean(x>5):.2e} (Exp law: {math.exp(-5):.2e})')
+                                                                                                  ~~~~~^^
+  File "<venv>/lib/python3.13/site-packages/numpy/_core/_methods.py", line 41, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+ValueError: zero-size array to reduction operation maximum which has no identity

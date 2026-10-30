@@ -1,0 +1,35 @@
+import Bgs.LineF
+import Bgs.LineG
+#print axioms Bgs.LineF.step_round
+#print axioms Bgs.LineF.StepOK.mono
+#print axioms Bgs.LineF.StepOK.comp
+#print axioms Bgs.LineF.comp_step
+#print axioms Bgs.LineF.edgeOK_iff
+#print axioms Bgs.LineF.edge_closed_iff
+#print axioms Bgs.LineF.VE_step
+#print axioms Bgs.LineF.count_identity
+#print axioms Bgs.LineF.fix_outside
+#print axioms Bgs.LineF.evBelow_comp
+#print axioms Bgs.LineF.evAbove_comp
+#print axioms Bgs.LineF.round_below
+#print axioms Bgs.LineF.round_above
+#print axioms Bgs.LineF.evLe_comp
+#print axioms Bgs.LineF.evGe_comp
+#print axioms Bgs.LineF.evBelow_comp'
+#print axioms Bgs.LineF.evAbove_comp'
+#print axioms Bgs.LineF.allStep_round
+#print axioms Bgs.LineF.evLe_round
+#print axioms Bgs.LineF.evGe_round
+#print axioms Bgs.LineF.vertex_minus_edge
+#print axioms Bgs.LineG.phase_split
+#print axioms Bgs.LineG.w_succ
+#print axioms Bgs.LineG.u_succ
+#print axioms Bgs.LineG.quad_form
+#print axioms Bgs.LineG.re_dvd_pow
+#print axioms Bgs.LineG.nsw_dvd
+#print axioms Bgs.LineG.nsw_3
+#print axioms Bgs.LineG.nsw_5
+#print axioms Bgs.LineG.nsw_7
+#print axioms Bgs.LineG.nsw_17
+#print axioms Bgs.LineG.h17_factor
+#print axioms Bgs.LineG.h17_pell

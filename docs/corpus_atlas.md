@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**365 maintained proof notes; 10 topic views; 280 core claim IDs.**
+**367 maintained proof notes; 10 topic views; 290 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
 | conditional | 15 |
-| open | 21 |
-| proved | 229 |
+| open | 25 |
+| proved | 235 |
 | verification-pending | 15 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
@@ -41,7 +41,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 166 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 168 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -130,6 +130,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Phase-averaged form factor and classical symmetry defects](../mathematics/fixed-map/interaction_phase_form_factor.md) | `BGS-TRACE-126` (proved) |
 | [Intermediate-old-layer rotated returns: exact operator and obstruction](../mathematics/fixed-map/intermediate_return_operator.md) | Consult proof and full ledger |
 | [Kick-blind arithmetic spikes of the fixed map](../mathematics/fixed-map/kick_blind_arithmetic_spike.md) | `BGS-TRACE-117` (proved) |
+| [Line F: full-alphabet resonance transfer operators on lifted Hardy spaces, and an all-m failure of the k1-kick analogue of Conjecture R](../mathematics/fixed-map/lifted_transfer_lineF.md) | `BGS-TRACE-197` (proved); `BGS-TRACE-198` (proved); `BGS-TRACE-199` (proved); `BGS-TRACE-200` (proved); `BGS-TRACE-201` (proved); `BGS-TRACE-202` (open) |
 | [Fixed-word freeness of the literal kick and cat factors](../mathematics/fixed-map/literal_fixed_word_freeness.md) | Consult proof and full ledger |
 | [An explicit triple-logarithmic window for the literal mixed-word traces](../mathematics/fixed-map/literal_growing_word_window.md) | Consult proof and full ledger |
 | [Literal kick-phase law and post-wrapping cat-comparison obstruction](../mathematics/fixed-map/literal_kick_phase_law.md) | Consult proof and full ledger |
@@ -185,6 +186,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Random-phase cat map: exact encounter classification and the τ² coefficient (Line C)](../mathematics/fixed-map/random_phase_encounter_pairs.md) | `BGS-TRACE-143` (proved); `BGS-TRACE-144` (proved); `BGS-TRACE-145` (proved); `BGS-TRACE-146` (proved); `BGS-TRACE-147` (verification-pending); `BGS-TRACE-148` (open) |
 | [Residual-125 packets and uniform second-order splitting](../mathematics/fixed-map/residual125_uniform_splitting.md) | Consult proof and full ledger |
 | [Residual-25 affine-return discriminator](../mathematics/fixed-map/residual25_affine_dictionary.md) | Consult proof and full ledger |
+| [Line G: a general resonance law for the fixed-kick cat map, dilution families, and a corrected conjecture R′](../mathematics/fixed-map/resonance_classification_lineG.md) | `BGS-TRACE-203` (proved); `BGS-TRACE-204` (open); `BGS-TRACE-205` (open); `BGS-TRACE-206` (open) |
 | [Line E: resonant residues of the fixed-kick cat map. An exact transfer-operator law for giant traces, and what it says about Conjecture R](../mathematics/fixed-map/resonant_residue_lineE.md) | `BGS-TRACE-183` (proved); `BGS-TRACE-184` (proved); `BGS-TRACE-185` (proved); `BGS-TRACE-186` (proved); `BGS-TRACE-187` (proved); `BGS-TRACE-188` (conditional); `BGS-TRACE-189` (open); `BGS-TRACE-190` (open); `BGS-TRACE-191` (open); `BGS-TRACE-192` (open); `BGS-TRACE-193` (proved); `BGS-TRACE-194` (proved); `BGS-TRACE-195` (proved); `BGS-TRACE-196` (conditional) |
 | [Reversed-coordinate-path decay at the fixed physical coupling](../mathematics/fixed-map/reversed_path_decay.md) | `BGS-FM-022` (proved) |
 | [Twisted closure formula and the revival law at the scalar return (diagonal kick)](../mathematics/fixed-map/revival_closure_law.md) | `BGS-TRACE-133` (proved); `BGS-TRACE-134` (proved); `BGS-TRACE-135` (proved); `BGS-TRACE-136` (open); `BGS-TRACE-137` (open) |
