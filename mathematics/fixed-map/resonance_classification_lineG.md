@@ -4,6 +4,8 @@
 
 **Later work (Line H, 30 October 2026).** For the Line B kick f_B at η = 2, BGS-TRACE-209 (computer-assisted, refereed) gives W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m, on the lifted space of BGS-TRACE-197 ([lineH_49state_certificate.md](lineH_49state_certificate.md)). Conjecture R (BGS-TRACE-179) as stated is therefore refuted (registered state `refuted`; R_NSW, formerly part of 179, is the open BGS-TRACE-210). BGS-TRACE-196 stays conditional as stated; its conclusion for s = −1 holds on the lifted space. Statements below that R is not disproved describe the state before Line H.
 
+**Later work (Line I, 31 October 2026).** [lineI_rprime_reduction.md](lineI_rprime_reduction.md) (BGS-TRACE-211 to BGS-TRACE-220) reduces R′ (§3, BGS-TRACE-206) exactly to (E″), (T″) and the dilation remainder (D) (BGS-TRACE-213). It proves none of these. For d = 7 it certifies the square part of (D) (ρ = (±2,8) only; the (±2,16) level-7 members are not controlled) (BGS-TRACE-215) and shows that the operator-radius route to the cross part fails (BGS-TRACE-217). It gives a written proof of the G3 member formula for every odd d | h_m (BGS-TRACE-212, Prop I2′), and the completing-the-square derivation of the G3 form below (lineI note §3). On that basis BGS-TRACE-204 is registered as proved, with a dependency on BGS-TRACE-212 (owner decision, audit of PR #60). The amended Conjecture R′_A is BGS-TRACE-220 (open). BGS-TRACE-206 stays open with its frozen definition.
+
 **Inputs** (cited, not re-claimed): BGS-TRACE-183 (E1; in particular the exact form P(n) = Σ_{i,j} ψ(|i−j|) n_i n_j of the quadratic form, Line E proof step 2), BGS-TRACE-184 (E2), BGS-TRACE-193 (E11, Galois scaling for the pure 7-mode kick), BGS-TRACE-194 (E12, the a²-resonance law), BGS-TRACE-195 (Prop. G, class-sum representation), BGS-TRACE-165 and 170 (the split F = B^sym + 2mχ + W̃rest).
 
 **Review state.** Written by the Line G author (`computations/verification/lineG/AUTHOR_REPORT.md`) and audited by an independent referee (`computations/verification/lineFG/referee/REPORT.md`, Part G). The referee verified G2 with own code (`referee/code/g_law.py`) and found one substantive overclaim about Conjecture R and an inconsistent definition of R′; both are fixed below. Fixes are marked **[RG1]**–**[RG5]**, nits **[RGn]**.
@@ -16,7 +18,7 @@ S = [[3,4],[2,3]], λ = 3 + 2√2, odd m, h = h_m (the NSW numbers 1, 7, 41, 239
 
 1. **Classification of outliers [RG2].** Every outlier ν (|Z(ν)|² ≫ 2m) found at m = 7…15, for both kicks, is explained *numerically* by one of three mechanisms, within the stated main-term tolerances (0.1–15 % for dominant families, up to 37 % at d = 287):
    * the partial-trace law G2 (proved, finite alphabet): primaries are short vectors (a, b) of the lattice {bν ≡ a mod 2h}; the dominant ones are N ≡ ±4 (Line E's E1) and N ≡ ±8;
-   * the dilution identity G3 (an identity checked to 2.8e-14, but with a proof sketch only, and without a rigorous bound on the β ≠ 0 terms): secondary families along the divisors d | h;
+   * the dilution identity G3 (an identity checked to 2.8e-14, with a proof sketch only at this date and without a rigorous bound on the β ≠ 0 terms; proved later from BGS-TRACE-212, see G3 below): secondary families along the divisors d | h;
    * Galois scaling G4 (= TRACE-193): for f_B, the families N ≡ ±196, ±392, ±98 sit at the 49× images of ±4, ±8, ±2.
 2. **Sparsity (G6)** and the **moment heuristic (G7, [H])**: a family with |Z| ≍ r^m matters for the k-th moment of |Z|² roughly iff r > λ^{1/(4k)} (for the mean: λ^{1/4} = 1.5538). Numerically only N ≡ ±4 (r = 1.9154732) and N ≡ ±8 (r ≈ 1.615) exceed λ^{1/4} among the families tested.
 3. **Conjecture R′ [C] [RG3]** (k1, η = 2), with a single frozen definition (§3): F_m = 4m + Res_m + o(m), where Res_m is an explicit sum over the primaries N ≡ ±4, ±8 and their dilution levels. Evidence is four points m = 9…15 with an upward drift; o(m) is **not** established by the data.
@@ -42,13 +44,17 @@ Fix (a, b), coef := −4ac/b with c = 1/(4√2), supp ĝ ⊂ [−L, L], ρ > L/(
 
 *Checks [N].* Author: 34/34 well-conditioned cases agree with brute-force word sums to 1e-14 … 1e-9 (`computations/verification/lineG/logs/check_law.log`); large-coupling representatives overflow in the Galerkin step (numerical conditioning, not a failure of the identity). Referee, own code (`computations/verification/lineFG/referee/code/g_law.py`, `logs/g_law.log`): random complex weights, |n| ≤ 2, m = 5 and 7, brute force over all units: agreement ≤ 1.3e-14 for every tested (a, b) with |a|/b ≤ 1.
 
-### G3 (dilution identity; BGS-TRACE-204) [P-sketch] [N]
+### G3 (dilution identity; BGS-TRACE-204) [P via BGS-TRACE-212] [N]
 Let d | h be odd, t = j·y′ (mod d) with gcd(t, d) = 1, and G_d(t) the quadratic Gauss sum, |G_d(t)| = d **[RGn]** (odd d is needed because the discriminant of x² − 2y² is 8). Writing n ↦ α_n ∈ O = Z[√2] (P(n) ≡ y′·Nm(α_n) mod h on the relevant lattice) and splitting α_n mod d,
   Z(ν₀ + 2hj/d) = (G_d(t)/d²) Σ_{β∈O/d} e(t̄·Nm(β)/d) Z^{(β)}_{ν₀},
 where Z^{(β)} is the same sum with the kick at site i translated by Tr(βλ^i)/d.
 *Proof sketch.* Finite Fourier analysis on O/d: insert the indicator of α_n ≡ β (mod d) as an average of additive characters and complete the square in e(jP/d) = e(t·Nm(α_n)/d); the β = 0 term gives the main term (G_d/d²) Z_{ν₀}. A full written proof is **not** given.
 *Checks [N].* `code/check_dilution.py` is a genuine brute-force-versus-formula test: 49 cases, maximal relative error 2.8e-14 (`logs/check_dilution.log`), but only for **prime** d (7 at m = 9, 41 at m = 5) and alphabets |n| ≤ 1, 2. Composite d (e.g. 217 at m = 15, used in §2) is untested. The main term |Z|² ≈ |Z_ρ|²/d² is good to 0.1–2 % for d = 7, 31 at m = 15, 1–4 % for d = 23, 79, 15 % for d = 41 and 37 % for d = 287 (`logs/dil_stats.log`); the size of the β ≠ 0 terms is not bounded rigorously.
-**State: open** until a full proof is written (ideally with a composite-d check).
+**State (31 October 2026): proved.** The written proof is Prop I2′ (BGS-TRACE-212), together with the completing-the-square step
+G_t(β) = e(t̄·Nm β/d)·G_d(t) ([lineI_rprime_reduction.md](lineI_rprime_reduction.md) §3). Brute-force checks of the displayed formula cover
+prime and composite d: 217, 287, 961 and 1271 at m = 15, 49 and 1673 at m = 21, and others, with error ≤ 8.4e−15. This is an owner
+decision from the audit of PR #60. Before that date the state was open, pending a full proof. The main-term approximation is still
+unbounded and is not claimed.
 
 ### G4 (Galois scaling) — no new claim
 If ĝ(n) = 0 unless a | n, then Z_g(ν) = Z_{g_a}(a²ν). This is BGS-TRACE-193. For f_B (dominated by its frequency-7 harmonic, but not exactly 7-periodic) the families N ≡ ±196, ±392, ±98 are located at the predicted 49× images of ±4, ±8, ±2 at m = 11, 13 (`logs/tier2full.log`); their sizes are not exact images. When 7 | h (3 | m) the image is not a unit residue and the mass appears as a level-7 dilution family, which is why the f_B value of F/2m is small at m = 9, 15 (1.82, 3.91) and large at m = 11, 13.
@@ -144,7 +150,7 @@ Res_m is explicit: each |Z_ρ|² is given by G2 (an m-independent operator on ea
 ## 6. Rigor statement
 
 - Class sums are IEEE double (a-priori rounding ≈ 1e-8 relative on |Z|), not interval arithmetic. Growth rates come from Galerkin truncations without a rigorous error bound for the infinite k1 alphabet.
-- Lean covers the algebraic core only (phase split, automaton, quadratic form, NSW divisibility, m = 17 facts); G2 is a paper proof, G3 a sketch, G6 a count, G7 a heuristic.
+- Lean covers the algebraic core only (phase split, automaton, quadratic form, NSW divisibility, m = 17 facts); G2 is a paper proof, G3 a sketch at this date (proved on 2026-10-31 from BGS-TRACE-212), G6 a count, G7 a heuristic.
 - Negative results: Galois-twisted reconstructions (`code/probe.py`) do not simplify outliers; shortest-vector classification misses dilution families; broad primary lists over-classify (up to 40 % of residues at small m).
 
 ## 7. Literature and novelty

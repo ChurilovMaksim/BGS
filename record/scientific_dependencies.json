@@ -1,6 +1,6 @@
 {
   "schema": "bgs-scientific-dependencies-v1",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "nodes": [
     "BGS-BGS-001",
     "BGS-CAYLEY-001",
@@ -295,7 +295,17 @@
     "BGS-TRACE-207",
     "BGS-TRACE-208",
     "BGS-TRACE-209",
-    "BGS-TRACE-210"
+    "BGS-TRACE-210",
+    "BGS-TRACE-211",
+    "BGS-TRACE-212",
+    "BGS-TRACE-213",
+    "BGS-TRACE-214",
+    "BGS-TRACE-215",
+    "BGS-TRACE-216",
+    "BGS-TRACE-217",
+    "BGS-TRACE-218",
+    "BGS-TRACE-219",
+    "BGS-TRACE-220"
   ],
   "edges": [
     {
@@ -2204,6 +2214,16 @@
       "type": "scientific-prerequisite"
     },
     {
+      "from": "BGS-TRACE-183",
+      "to": "BGS-TRACE-212",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-183",
+      "to": "BGS-TRACE-217",
+      "type": "scientific-prerequisite"
+    },
+    {
       "from": "BGS-TRACE-184",
       "to": "BGS-TRACE-185",
       "type": "scientific-prerequisite"
@@ -2236,6 +2256,11 @@
     {
       "from": "BGS-TRACE-184",
       "to": "BGS-TRACE-203",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-184",
+      "to": "BGS-TRACE-217",
       "type": "scientific-prerequisite"
     },
     {
@@ -2319,6 +2344,11 @@
       "type": "scientific-prerequisite"
     },
     {
+      "from": "BGS-TRACE-197",
+      "to": "BGS-TRACE-215",
+      "type": "scientific-prerequisite"
+    },
+    {
       "from": "BGS-TRACE-198",
       "to": "BGS-TRACE-199",
       "type": "scientific-prerequisite"
@@ -2329,8 +2359,18 @@
       "type": "scientific-prerequisite"
     },
     {
+      "from": "BGS-TRACE-198",
+      "to": "BGS-TRACE-217",
+      "type": "scientific-prerequisite"
+    },
+    {
       "from": "BGS-TRACE-199",
       "to": "BGS-TRACE-200",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-199",
+      "to": "BGS-TRACE-217",
       "type": "scientific-prerequisite"
     },
     {
@@ -2344,6 +2384,16 @@
       "type": "scientific-prerequisite"
     },
     {
+      "from": "BGS-TRACE-203",
+      "to": "BGS-TRACE-215",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-203",
+      "to": "BGS-TRACE-216",
+      "type": "scientific-prerequisite"
+    },
+    {
       "from": "BGS-TRACE-204",
       "to": "BGS-TRACE-205",
       "type": "scientific-prerequisite"
@@ -2351,6 +2401,16 @@
     {
       "from": "BGS-TRACE-205",
       "to": "BGS-TRACE-206",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-206",
+      "to": "BGS-TRACE-213",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-206",
+      "to": "BGS-TRACE-220",
       "type": "scientific-prerequisite"
     },
     {
@@ -2366,6 +2426,36 @@
     {
       "from": "BGS-TRACE-208",
       "to": "BGS-TRACE-209",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-212",
+      "to": "BGS-TRACE-204",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-212",
+      "to": "BGS-TRACE-215",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-213",
+      "to": "BGS-TRACE-220",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-215",
+      "to": "BGS-TRACE-217",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-216",
+      "to": "BGS-TRACE-215",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-216",
+      "to": "BGS-TRACE-217",
       "type": "scientific-prerequisite"
     }
   ],
@@ -2391,10 +2481,10 @@
     "BGS-TRACE-191",
     "BGS-TRACE-192",
     "BGS-TRACE-202",
-    "BGS-TRACE-204",
     "BGS-TRACE-205",
     "BGS-TRACE-206",
-    "BGS-TRACE-210"
+    "BGS-TRACE-210",
+    "BGS-TRACE-220"
   ],
   "note": "Generated from record/claims.json; registered programme prerequisites, not every lemma or proof of a downstream claim."
 }

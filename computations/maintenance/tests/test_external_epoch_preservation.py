@@ -80,7 +80,7 @@ class ExternalEpochPreservation(unittest.TestCase):
 
     def test_current_epoch_preserves_39_contracts(self):
         epoch=json.loads((ROOT/'record/claim_integration_epochs.json').read_text())
-        self.assertEqual(check_external_epoch(ROOT,epoch),(39,18))
+        self.assertEqual(check_external_epoch(ROOT,epoch),(39,21))
 
     def test_historical_claim_amendments_are_exact_and_explicit(self):
         epoch=json.loads((ROOT/'record/claim_integration_epochs.json').read_text())
@@ -136,7 +136,7 @@ class ExternalEpochPreservation(unittest.TestCase):
                  for path in sealed['project_sources']]
             self.save_store(root,[self.amendment(sealed,'project_sources',new)])
             self.save(root,self.relocated_registry(registry,'project_sources',new))
-            self.assertEqual(check_external_epoch(root,epoch),(39,18))
+            self.assertEqual(check_external_epoch(root,epoch),(39,21))
 
     def test_tampered_amended_value_rejected(self):
         with tempfile.TemporaryDirectory() as temporary:

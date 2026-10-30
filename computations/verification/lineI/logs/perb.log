@@ -1,0 +1,25 @@
+k1 m=11: #b=123 overall nonres mean=0.8958; per-b z-score: rms=1.39 (1 if per-b means are pure noise), max|z|=6.1
+   b in [1,16): n_b=   15 weighted mean=0.9108 rms z=1.75
+   b in [16,64): n_b=   48 weighted mean=0.9049 rms z=1.05
+   b in [64,256): n_b=   60 weighted mean=0.8793 rms z=1.52
+k1 m=13: #b=308 overall nonres mean=0.9725; per-b z-score: rms=1.47 (1 if per-b means are pure noise), max|z|=9.9
+   b in [1,16): n_b=   15 weighted mean=1.0558 rms z=1.88
+   b in [16,64): n_b=   48 weighted mean=0.9777 rms z=1.35
+   b in [64,256): n_b=  191 weighted mean=0.9688 rms z=1.55
+   b in [256,1024): n_b=   54 weighted mean=0.9313 rms z=1.15
+k1 m=15: #b=764 overall nonres mean=1.0360; per-b z-score: rms=1.59 (1 if per-b means are pure noise), max|z|=18.9
+   b in [1,16): n_b=   15 weighted mean=1.1415 rms z=3.03
+   b in [16,64): n_b=   48 weighted mean=1.0646 rms z=1.59
+   b in [64,256): n_b=  192 weighted mean=1.0368 rms z=2.02
+   b in [256,1024): n_b=  509 weighted mean=1.0269 rms z=1.32
+k1 m=17: #b=1886 overall nonres mean=1.0129; per-b z-score: rms=1.57 (1 if per-b means are pure noise), max|z|=30.7
+   b in [1,16): n_b=   15 weighted mean=1.2079 rms z=5.19
+   b in [16,64): n_b=   48 weighted mean=1.0773 rms z=2.83
+   b in [64,256): n_b=  192 weighted mean=1.0382 rms z=3.00
+   b in [256,1024): n_b=  768 weighted mean=1.0090 rms z=1.27
+   b in [1024,4096): n_b=  863 weighted mean=0.9958 rms z=1.00
+full m=13: #b=308 overall nonres mean=0.9783; per-b z-score: rms=1.14 (1 if per-b means are pure noise), max|z|=6.5
+   b in [1,16): n_b=   15 weighted mean=0.9928 rms z=0.78
+   b in [16,64): n_b=   48 weighted mean=0.9598 rms z=1.06
+   b in [64,256): n_b=  191 weighted mean=0.9801 rms z=1.04
+   b in [256,1024): n_b=   54 weighted mean=0.9942 rms z=1.55
