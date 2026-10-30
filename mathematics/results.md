@@ -2,7 +2,7 @@
 
 ## Certified 49-state spectrum for the Line B kick (Line H), 30 October 2026
 
-[TRACE-207](fixed-map/lineH_49state_certificate.md) (proved): the κ lemma and the full-alphabet 49-state lifted trace identity for the Line B kick. [TRACE-208](fixed-map/lineH_49state_certificate.md) (proved, computer-assisted): at η = 2 and s = −1, V_0 has exactly one eigenvalue in |z| > 1.5, simple, with |μ*| ∈ [1.846834, 1.946835]; the rest of the spectrum is certified inside. [TRACE-209](fixed-map/lineH_49state_certificate.md) (proved, computer-assisted): W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m. Consequence: [TRACE-179](fixed-map/derandomized_fixed_kick.md) (Conjecture R as stated) is refuted. Limits: R_NSW is undecided; the odd m with 3 ∤ m in 17–43, 3 | m, η ≠ 2 and s = +1 are not covered; TRACE-196 stays conditional as stated; nothing about BGS itself.
+[TRACE-207](fixed-map/lineH_49state_certificate.md) (proved): the κ lemma and the full-alphabet 49-state lifted trace identity for the Line B kick. [TRACE-208](fixed-map/lineH_49state_certificate.md) (proved, computer-assisted): at η = 2 and s = −1, V_0 has exactly one eigenvalue in |z| > 1.5, simple, with |μ*| ∈ [1.846834, 1.946835]; the rest of the spectrum is certified inside. [TRACE-209](fixed-map/lineH_49state_certificate.md) (proved, computer-assisted): W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m. Consequence: [TRACE-179](fixed-map/derandomized_fixed_kick.md) (Conjecture R as stated) is refuted. Limits: R_NSW ([TRACE-210](fixed-map/derandomized_fixed_kick.md), split from 179) is open; the odd m with 3 ∤ m in 17–43, 3 | m, η ≠ 2 and s = +1 are not covered; TRACE-196 stays conditional as stated; nothing about BGS itself.
 
 ## Resonant residues of the fixed kick (Line E), 30 October 2026
 
@@ -503,7 +503,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**293 registered claims: 238 proved, 15 verification-pending, 15 conditional, 24 open, 1 refuted.**
+**294 registered claims: 238 proved, 15 verification-pending, 15 conditional, 25 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -669,7 +669,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (184 claims)
+### TRACE family (185 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -826,7 +826,7 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-176` | **CONDITIONAL** | Theorem G: joint (nu, Bohr-eta) moments and a conditional moment CLT |
 | `BGS-TRACE-177` | **OPEN** | Numerical observations: ND^(2) at small m, mu(eta) spectrum, m_* crossover, W~rest tables, fixed-eta CLT numerics, torsion-split numbers |
 | `BGS-TRACE-178` | **PROVED** | Exact torsion-class split F = F_gen + F_tor |
-| `BGS-TRACE-179` | **REFUTED** | Conjecture R / R_NSW: W~rest_m(eta) = o(m) uniformly on compact eta-ranges |
+| `BGS-TRACE-179` | **REFUTED** | Conjecture R: W~rest_m(eta) = o(m) uniformly on compact eta-ranges |
 | `BGS-TRACE-180` | **OPEN** | Fixed-eta (nu-only) central limit law |
 | `BGS-TRACE-181` | **OPEN** | Non-degeneracy ND_m for composite h_m and for even m |
 | `BGS-TRACE-182` | **OPEN** | The (m, eta) = (11, 2) outlier |
@@ -857,5 +857,6 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-207` | **PROVED** | Line H: kappa lemma (\|c_b\| = 1/2 for all odd m, 3 not dividing m) and the full-alphabet 49-state lifted trace identity for the Line B kick |
 | `BGS-TRACE-208` | **PROVED** | Line H: certified spectrum of the 49-state lifted operators for the Line B kick f_B at eta = 2, s = -1 (N == +196) |
 | `BGS-TRACE-209` | **PROVED** | Line H: Conjecture R fails for the Line B kick: W~rest_m(2)/m >= 1.4e4 for every odd m >= 47 with 3 not dividing m |
+| `BGS-TRACE-210` | **OPEN** | Conjecture R_NSW: W~rest_m(eta) = o(m) along m with h_m prime |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

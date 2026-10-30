@@ -294,7 +294,8 @@
     "BGS-TRACE-206",
     "BGS-TRACE-207",
     "BGS-TRACE-208",
-    "BGS-TRACE-209"
+    "BGS-TRACE-209",
+    "BGS-TRACE-210"
   ],
   "edges": [
     {
@@ -2108,6 +2109,11 @@
       "type": "scientific-prerequisite"
     },
     {
+      "from": "BGS-TRACE-170",
+      "to": "BGS-TRACE-210",
+      "type": "scientific-prerequisite"
+    },
+    {
       "from": "BGS-TRACE-171",
       "to": "BGS-TRACE-173",
       "type": "scientific-prerequisite"
@@ -2135,6 +2141,11 @@
     {
       "from": "BGS-TRACE-177",
       "to": "BGS-TRACE-182",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-177",
+      "to": "BGS-TRACE-210",
       "type": "scientific-prerequisite"
     },
     {
@@ -2382,7 +2393,8 @@
     "BGS-TRACE-202",
     "BGS-TRACE-204",
     "BGS-TRACE-205",
-    "BGS-TRACE-206"
+    "BGS-TRACE-206",
+    "BGS-TRACE-210"
   ],
   "note": "Generated from record/claims.json; registered programme prerequisites, not every lemma or proof of a downstream claim."
 }

@@ -4,7 +4,7 @@ Status: computer-assisted (arb ball arithmetic plus float BLAS with a-priori rou
 elementary steps. Independent referee audit: `computations/verification/lineH/referee/REPORT.md`, verdict ACCEPT AFTER FIXES. Fixes
 1–5 and recommendations 6–10 are applied (§9).
 
-Registered claims (`record/claims.json`): §2–§3 are **BGS-TRACE-207**, §4 is **BGS-TRACE-208**, §5 is **BGS-TRACE-209**. By BGS-TRACE-209, BGS-TRACE-179 (Conjecture R) is registered as **refuted** (R as stated; R_NSW is not decided). This paragraph was added at integration; the rest of the note is byte-identical to the refereed packet (see `evidence/executions/20261030/lineH/README.md`).
+Registered claims (`record/claims.json`): §2–§3 are **BGS-TRACE-207**, §4 is **BGS-TRACE-208**, §5 is **BGS-TRACE-209**. By BGS-TRACE-209, BGS-TRACE-179 (Conjecture R) is registered as **refuted** (R as stated); R_NSW is registered separately as **BGS-TRACE-210** (open). This paragraph was added at integration; it and the other integration edits of this note are listed in `evidence/executions/20261030/lineH/INTEGRATION.md`.
 
 ## 1. Objects
 * **Map and kick.** S = [[3,4],[2,3]] and λ = 3+2√2. The kick f_B is the Line B diagonal (l = 0) kick, with Fourier coefficients
@@ -95,7 +95,7 @@ a-posteriori Householder residual).
 | E_4 rest | R = 1.0 | 0.0531 | re-decided exactly (ref_bounds on v4) |
 | E_6 rest | R = 1.0 | 0.0531 | re-decided exactly (ref_bounds on v4) |
 
-* **V_0 certificate of record:** the referee's ref_rig.py output (`referee/refV0.json`): F·R₁ = 0.8947, F·R₂ = 0.5916 at
+* **V_0 certificate of record:** the referee's ref_rig.py output (`referee/out/refV0.json`): F·R₁ = 0.8947, F·R₂ = 0.5916 at
   (R, r₁) = (1.5, 0.05). The author's v4 re-run is consistent with it (table above).
 * **Margin.** At r₁ = 0.05 the author's F·R₁ is 0.9136, a margin of 8.6%. Robustness cross-check at r₁ = 0.1: F·R₁ = 0.5859,
   which still certifies |μ*| ≥ 1.796834 > λ^{1/4}. The first admissible m is unchanged.
@@ -132,8 +132,8 @@ BGS-TRACE-165 (B^sym ≤ 2m) and BGS-TRACE-170 (|χ_m| ≤ 1). Lower bounds, rou
 **Main consequence.** **W̃rest_m(2)/m ≥ 1.4e4 for every odd m ≥ 47 with 3 ∤ m.** Hence:
 * **Conjecture R (BGS-TRACE-179), as stated, is false.** For every compact η-range [η₀, η₁] ∋ 2, max_η |W̃rest_m(η)| ≥ 1.4e4·m along
   an infinite set of odd m, so it is not o(m). (R is still open for compact ranges that do not contain 2.)
-* **R_NSW.** If h_m is prime then m is prime, since h_d | h_m for d | m (BGS-TRACE-205, G5). So 3 ∤ m for m > 3, and the bound
-  applies: R_NSW is violated at every m ≥ 47 with h_m prime. Whether there are infinitely many such m is unknown. If there are,
+* **R_NSW.** If h_m is prime then m is prime, since h_d | h_m for d | m with m odd (Lean `Bgs.LineG.nsw_dvd`, `formalization/Bgs/LineG.lean`; not registered by a proved claim). So 3 ∤ m for m > 3, and the bound
+  applies: R_NSW (registered as BGS-TRACE-210, open) is violated at every m ≥ 47 with h_m prime. Whether there are infinitely many such m is unknown. If there are,
   R_NSW is false; otherwise it is vacuous.
 * **TRACE-196.** This proves the conclusion of BGS-TRACE-196 (s = −1) unconditionally, but computer-assisted, on the explicit lifted
   space of BGS-TRACE-197. Hypothesis H_∞,7 as stated there (the TRACE-194 operators on a single-disc Banach space) is neither proved
@@ -149,7 +149,7 @@ BGS-TRACE-165 (B^sym ≤ 2m) and BGS-TRACE-170 (|χ_m| ≤ 1). Lower bounds, rou
 
 ## 7. Dependencies (cited, not re-proved)
 BGS-TRACE-194 (law), BGS-TRACE-197 (lifted identity and counting), BGS-TRACE-165 and 170 (B^sym ≤ 2m and |χ| ≤ 1),
-BGS-TRACE-205 G5 (h_d | h_m, used only for R_NSW), python-flint/arb, IEEE binary64 round-to-nearest, and OpenBLAS zgemm without Strassen.
+the Lean lemma `Bgs.LineG.nsw_dvd` in `formalization/Bgs/LineG.lean` (h_d | h_m, used only for R_NSW), python-flint/arb, IEEE binary64 round-to-nearest, and OpenBLAS zgemm without Strassen.
 
 ## 8. Checks and controls
 * Referee:

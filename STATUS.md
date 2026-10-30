@@ -14,16 +14,16 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-30**. **293 registered claims.**
+**2026-10-30**. **294 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
 | proved | 238 |
 | verification-pending | 15 |
 | conditional | 15 |
-| open | 24 |
+| open | 25 |
 | refuted | 1 |
-| **Total** | **293** |
+| **Total** | **294** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -44,12 +44,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 0 | 23 |
 | RET | 3 | 0 | 1 | 0 | 0 | 4 |
-| TRACE | 140 | 13 | 10 | 20 | 1 | 184 |
-| **Total** | 238 | 15 | 15 | 24 | 1 | **293** |
+| TRACE | 140 | 13 | 10 | 21 | 1 | 185 |
+| **Total** | 238 | 15 | 15 | 25 | 1 | **294** |
 
 ## Open programme obligations
 
-24 registered claims are open. Their closure
+25 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -79,6 +79,7 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-204` | Line G G3: dilution identity along divisors d of h_m | [mathematics/fixed-map/resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
 | `BGS-TRACE-205` | Line G classification record: resonant families, growth rates, G5 (h_d \| h_m), G6 (sparsity), G7 (moment heuristic), eta-scan | [mathematics/fixed-map/resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
 | `BGS-TRACE-206` | Line G: Conjecture R' (corrected mean law for the k1 kick at eta = 2) with a pre-registered m = 17 test | [mathematics/fixed-map/resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
+| `BGS-TRACE-210` | Conjecture R_NSW: W~rest_m(eta) = o(m) along m with h_m prime | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
 
 ## Corrections
 
@@ -92,7 +93,7 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 190 follow-on claims adopted after
+It records 191 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 18 external IDs.

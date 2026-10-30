@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "2c19859a3fe26973e35b1e22a973ed4e5db24ee8",
+ "source_blob_sha": "56ccd747b7196bac35f04d6a4468446225437e34",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -9848,7 +9848,7 @@
   },
   {
    "id": "BGS-TRACE-179",
-   "title": "Conjecture R / R_NSW: W~rest_m(eta) = o(m) uniformly on compact eta-ranges",
+   "title": "Conjecture R: W~rest_m(eta) = o(m) uniformly on compact eta-ranges",
    "state": "refuted",
    "methods": [
     "computer_certificate",
@@ -9879,13 +9879,11 @@
     "computations/verification/lineH/referee/code/ref_bounds.py"
    ],
    "formalization": [],
-   "ledger_status": "REFUTED AS STATED (eta = 2, odd m >= 47, 3 not dividing m) BY BGS-TRACE-209: COMPUTER-ASSISTED (ARB) + PAPER CHAIN + INDEPENDENT REFEREE AUDIT (computations/verification/lineH/referee/REPORT.md; ACCEPT AFTER FIXES). R_NSW NOT DECIDED. ORIGINAL REGISTRATION: CONJECTURE; NUMERICAL EVIDENCE m<=13 ONLY; NOT REDUCED TO ANY KNOWN CONJECTURE",
-   "boundary": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m; R_NSW: along m with h_m prime (not known to be infinite). Not reduced to a large-sieve inequality ('quadratic large sieve' phrasing withdrawn); Kurlberg-Rudnick, Bourgain and Bourgain-Glibichuk-Konyagin bounds do not apply since ord_h lambda = m is minimal. Derandomized analogue of the off-diagonal problem of BGS-TRACE-145 to 148; no progress on BGS-TRACE-148 is claimed. Line E annotation (2026-10-30, state unchanged): the k1-kick analogue of R is violated on a finite range (BGS-TRACE-187) and conditionally for all large m (BGS-TRACE-188); for this conjecture's kick |W~rest_m(2)| > m is certified at m = 11 and 13 only (BGS-TRACE-195, computer-assisted; an m = 17 certificate is pending and nothing is claimed for it) and asymptotic failure along 3 not dividing m holds only conditionally on H_infinity,7 (BGS-TRACE-196). R is not disproved. Line F/G annotation (2026-10-30, state unchanged): for the k1 kick the analogue of R now fails for every odd m >= 15 at eta = 2 unconditionally (computer-assisted, BGS-TRACE-199; also BGS-TRACE-201 at certified grid points), and for the pure 7-mode kick for 3 not dividing m (BGS-TRACE-200). For this conjecture's kick nothing changes: asymptotic failure is still only conditional on H_infinity,7 (BGS-TRACE-196). Conjecture R' (BGS-TRACE-206) is a separate, open conjecture about the k1 kick. R is not disproved. Line H annotation (2026-10-30): STATE CHANGED open -> refuted (Conjecture R as stated). For this conjecture's kick (Line B diagonal kick f_B, l = 0) at eta = 2, BGS-TRACE-209 (computer-assisted, on BGS-TRACE-207/208; independent referee audit, ACCEPT AFTER FIXES) gives W~rest_m(2)/m >= 1.4e4 for every odd m >= 47 with 3 not dividing m. Hence for every compact eta-range [eta0, eta1] containing 2, max_eta |W~rest_m(eta)| is not o(m), and R, which asserts o(m) for every compact range, is false. Scope of 'refuted': R exactly as stated here, for the Line B kick; it is not a statement about BGS (BGS-BGS-001 stays open; neither proved nor disproved) and not about BGS-TRACE-148. R_NSW is NOT refuted: the bound violates it at every m >= 47 with h_m prime (such m are prime, so 3 does not divide m), and whether there are infinitely many such m is unknown (if there are, R_NSW is false; otherwise it is vacuous). Not covered by BGS-TRACE-209: odd m with 3 not dividing m in {17,19,23,25,29,31,35,37,41,43} (m = 11, 13: BGS-TRACE-195), every m with 3 | m, eta != 2 (in particular the restriction of R to compact ranges avoiding 2 is open and not registered separately), and s = +1. The statements 'R is not disproved' in the Line E and Line F/G annotations above are superseded by this annotation.",
+   "ledger_status": "REFUTED AS STATED (eta = 2, odd m >= 47, 3 not dividing m) BY BGS-TRACE-209: COMPUTER-ASSISTED (ARB) + PAPER CHAIN + INDEPENDENT REFEREE AUDIT (computations/verification/lineH/referee/REPORT.md; ACCEPT AFTER FIXES). R_NSW: SEE BGS-TRACE-210 (SPLIT 2026-10-30). ORIGINAL REGISTRATION: CONJECTURE; NUMERICAL EVIDENCE m<=13 ONLY; NOT REDUCED TO ANY KNOWN CONJECTURE",
+   "boundary": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m. (The NSW-prime version R_NSW, originally part of this entry, is BGS-TRACE-210.) Not reduced to a large-sieve inequality ('quadratic large sieve' phrasing withdrawn); Kurlberg-Rudnick, Bourgain and Bourgain-Glibichuk-Konyagin bounds do not apply since ord_h lambda = m is minimal. Derandomized analogue of the off-diagonal problem of BGS-TRACE-145 to 148; no progress on BGS-TRACE-148 is claimed. Line E annotation (2026-10-30, state unchanged): the k1-kick analogue of R is violated on a finite range (BGS-TRACE-187) and conditionally for all large m (BGS-TRACE-188); for this conjecture's kick |W~rest_m(2)| > m is certified at m = 11 and 13 only (BGS-TRACE-195, computer-assisted; an m = 17 certificate is pending and nothing is claimed for it) and asymptotic failure along 3 not dividing m holds only conditionally on H_infinity,7 (BGS-TRACE-196). R is not disproved. Line F/G annotation (2026-10-30, state unchanged): for the k1 kick the analogue of R now fails for every odd m >= 15 at eta = 2 unconditionally (computer-assisted, BGS-TRACE-199; also BGS-TRACE-201 at certified grid points), and for the pure 7-mode kick for 3 not dividing m (BGS-TRACE-200). For this conjecture's kick nothing changes: asymptotic failure is still only conditional on H_infinity,7 (BGS-TRACE-196). Conjecture R' (BGS-TRACE-206) is a separate, open conjecture about the k1 kick. R is not disproved. Line H annotation (2026-10-30): STATE CHANGED open -> refuted (Conjecture R as stated). For this conjecture's kick (Line B diagonal kick f_B, l = 0) at eta = 2, BGS-TRACE-209 (computer-assisted, on BGS-TRACE-207/208; independent referee audit, ACCEPT AFTER FIXES) gives W~rest_m(2)/m >= 1.4e4 for every odd m >= 47 with 3 not dividing m. Hence for every compact eta-range [eta0, eta1] containing 2, max_eta |W~rest_m(eta)| is not o(m), and R, which asserts o(m) for every compact range, is false. Scope of 'refuted': R exactly as stated here, for the Line B kick; it is not a statement about BGS (BGS-BGS-001 stays open; neither proved nor disproved) and not about BGS-TRACE-148. The NSW-prime version R_NSW, formerly part of this entry, is registered separately as BGS-TRACE-210 (open; split 2026-10-30). Not covered by BGS-TRACE-209: odd m with 3 not dividing m in {17,19,23,25,29,31,35,37,41,43} (m = 11, 13: BGS-TRACE-195), every m with 3 | m, eta != 2 (in particular the restriction of R to compact ranges avoiding 2 is open and not registered separately), and s = +1. The statements 'R is not disproved' in the Line E and Line F/G annotations above are superseded by this annotation.",
    "spof": "unformalized_analytic_chain",
-   "spof_detail": "State refuted rests solely on BGS-TRACE-209 (computer-assisted; certificates of BGS-TRACE-208; referee re-certified V_0 and E_0 and re-decided the rest exactly). Refutes R as stated through eta = 2 only; partial scope: R_NSW and compact ranges avoiding eta = 2 are not decided.",
-   "other_weaknesses": [
-    "partial_scope"
-   ],
+   "spof_detail": "State refuted rests solely on BGS-TRACE-209 (computer-assisted; certificates of BGS-TRACE-208; referee re-certified V_0 and E_0 and re-decided the rest exactly). Refutes R as stated through eta = 2; the NSW-prime version was split out as BGS-TRACE-210 (open).",
+   "other_weaknesses": [],
    "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
   },
   {
@@ -10963,11 +10961,41 @@
     "formalization/Bgs/LineH.lean"
    ],
    "ledger_status": "COMPUTER-ASSISTED (ARB 256-BIT CHAIN, bounds49.py; INPUTS PADDED 2^-40; ROWS ASSERTED INCREASING; CLOSED-FORM TAIL ASSERTED) + PAPER CHAIN (Lidskii, Weyl, F_m >= |Z|^2/phi(2h_m), phi(2h_m) = phi(h_m) <= h_m - 1 since h_m odd, W~rest >= F - 4m) + LEAN (Bgs.LineH.geom_tail, dom_lower) + REFEREE EXACT-RATIONAL RE-DECISION + INDEPENDENT REFEREE AUDIT (computations/verification/lineH/referee/REPORT.md; ACCEPT AFTER FIXES; fixes 1-5 and recommendations 6-10 applied)",
-   "boundary": "Line B diagonal kick f_B (the kick of BGS-TRACE-179), eta = 2: for every odd m >= 47 with 3 not dividing m, |Z_m(nu*)| >= (1/2)(1-lambda^-m)(mu_lo^m - 1.5^(m-1) T_V - 3 * 1.45^(m-1) T_V - 4 T_E) > 0 (mu_lo = 1.846834, T_V <= 10672.622, T_E <= 1106.332), F_m(2)/2m >= 7000 and W~rest_m(2)/m >= 1.4e4 (m = 47; both increasing in m), and F_m(2)/2m >= 0.2499 * 1.41279^m / m for odd m >= 599, 3 not dividing m. Hence Conjecture R (BGS-TRACE-179) as stated is false (every compact eta-range containing 2), and R_NSW is violated at every m >= 47 with h_m prime (such m are prime by h_d | h_m, so 3 does not divide m; whether infinitely many exist is unknown). Proves the conclusion of BGS-TRACE-196 (s = -1) on the lifted space of BGS-TRACE-197; H_infinity,7 as stated there is neither proved nor needed. Not covered: odd m with 3 not dividing m in {17,19,23,25,29,31,35,37,41,43} (m = 11, 13: BGS-TRACE-195; m = 5, 7: nothing), all m with 3 | m, eta != 2, s = +1.",
+   "boundary": "Line B diagonal kick f_B (the kick of BGS-TRACE-179), eta = 2: for every odd m >= 47 with 3 not dividing m, |Z_m(nu*)| >= (1/2)(1-lambda^-m)(mu_lo^m - 1.5^(m-1) T_V - 3 * 1.45^(m-1) T_V - 4 T_E) > 0 (mu_lo = 1.846834, T_V <= 10672.622, T_E <= 1106.332), F_m(2)/2m >= 7000 and W~rest_m(2)/m >= 1.4e4 (m = 47; both increasing in m), and F_m(2)/2m >= 0.2499 * 1.41279^m / m for odd m >= 599, 3 not dividing m. Hence Conjecture R (BGS-TRACE-179) as stated is false (every compact eta-range containing 2), and Conjecture R_NSW (BGS-TRACE-210) is violated at every m >= 47 with h_m prime (such m are prime since h_d | h_m for d | m, m odd: Lean Bgs.LineG.nsw_dvd in formalization/Bgs/LineG.lean (h_d | h_m for d | m, m odd; not registered by a proved claim); so 3 does not divide m; whether infinitely many such m exist is unknown, so R_NSW is undecided). Proves the conclusion of BGS-TRACE-196 (s = -1) on the lifted space of BGS-TRACE-197; H_infinity,7 as stated there is neither proved nor needed. Not covered: odd m with 3 not dividing m in {17,19,23,25,29,31,35,37,41,43} (m = 11, 13: BGS-TRACE-195; m = 5, 7: nothing), all m with 3 | m, eta != 2, s = +1.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Rests on the BGS-TRACE-208 certificates and the BGS-TRACE-207 identity; the all-m chain and tail are asserted in bounds49.py and re-decided by the referee in exact rationals; Lean covers geom_tail and dom_lower only.",
    "other_weaknesses": [],
    "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-210",
+   "title": "Conjecture R_NSW: W~rest_m(eta) = o(m) along m with h_m prime",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [
+    "computer_certificate"
+   ],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 2,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json",
+    "evidence/executions/20261030/lineH/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "CONJECTURE (SPLIT FROM BGS-TRACE-179 ON 2026-10-30); UNDECIDED: VIOLATED AT EVERY m >= 47 WITH h_m PRIME BY BGS-TRACE-209 (COMPUTER-ASSISTED); EQUIVALENT TO FINITELY MANY NSW PRIMES (INFINITUDE UNKNOWN)",
+   "boundary": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity along the odd m with h_m prime (NSW-prime m; such m are prime by Lean Bgs.LineG.nsw_dvd in formalization/Bgs/LineG.lean (h_d | h_m for d | m, m odd; not registered by a proved claim); the set is not known to be infinite). Split on 2026-10-30 from BGS-TRACE-179, of which it was the R_NSW part; Conjecture R (BGS-TRACE-179) itself is refuted. Status: undecided. BGS-TRACE-209 (computer-assisted) gives W~rest_m(2)/m >= 1.4e4 at every m >= 47 with h_m prime (3 does not divide such m), so R_NSW fails for every compact eta-range containing 2 if there are infinitely many such m; if there are only finitely many, R_NSW holds vacuously. Hence R_NSW is equivalent to the finiteness of the set of m with h_m prime, which is unknown. No dependency on BGS-TRACE-209 is registered (it is cited as the evidence for this reduction). Not a statement about BGS (BGS-BGS-001) and no progress on BGS-TRACE-148.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN_CONJECTURE"
   }
  ],
  "recovery_upgrade": {

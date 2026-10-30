@@ -2,7 +2,7 @@
 
 **Claims:** BGS-TRACE-203 to BGS-TRACE-206. **Cross-referenced (states unchanged):** BGS-TRACE-179 (open at that date; refuted as stated by Line H), BGS-TRACE-183, 184, 193, 194, 196.
 
-**Later work (Line H, 30 October 2026).** For the Line B kick f_B at η = 2, BGS-TRACE-209 (computer-assisted, refereed) gives W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m, on the lifted space of BGS-TRACE-197 ([lineH_49state_certificate.md](lineH_49state_certificate.md)). Conjecture R (BGS-TRACE-179) as stated is therefore refuted (registered state `refuted`; R_NSW undecided). BGS-TRACE-196 stays conditional as stated; its conclusion for s = −1 holds on the lifted space. Statements below that R is not disproved describe the state before Line H.
+**Later work (Line H, 30 October 2026).** For the Line B kick f_B at η = 2, BGS-TRACE-209 (computer-assisted, refereed) gives W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m, on the lifted space of BGS-TRACE-197 ([lineH_49state_certificate.md](lineH_49state_certificate.md)). Conjecture R (BGS-TRACE-179) as stated is therefore refuted (registered state `refuted`; R_NSW, formerly part of 179, is the open BGS-TRACE-210). BGS-TRACE-196 stays conditional as stated; its conclusion for s = −1 holds on the lifted space. Statements below that R is not disproved describe the state before Line H.
 
 **Inputs** (cited, not re-claimed): BGS-TRACE-183 (E1; in particular the exact form P(n) = Σ_{i,j} ψ(|i−j|) n_i n_j of the quadratic form, Line E proof step 2), BGS-TRACE-184 (E2), BGS-TRACE-193 (E11, Galois scaling for the pure 7-mode kick), BGS-TRACE-194 (E12, the a²-resonance law), BGS-TRACE-195 (Prop. G, class-sum representation), BGS-TRACE-165 and 170 (the split F = B^sym + 2mχ + W̃rest).
 
