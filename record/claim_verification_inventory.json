@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "275ea9bf4a7823411f922740b993e1258a578030",
+ "source_blob_sha": "e8f3a397e6ccf05bdbf391ccaa23ef0829fea231",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -9869,7 +9869,7 @@
    "verifiers": [],
    "formalization": [],
    "ledger_status": "CONJECTURE; NUMERICAL EVIDENCE m<=13 ONLY; NOT REDUCED TO ANY KNOWN CONJECTURE",
-   "boundary": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m; R_NSW: along m with h_m prime (not known to be infinite). Not reduced to a large-sieve inequality ('quadratic large sieve' phrasing withdrawn); Kurlberg-Rudnick, Bourgain and Bourgain-Glibichuk-Konyagin bounds do not apply since ord_h lambda = m is minimal. Derandomized analogue of the off-diagonal problem of BGS-TRACE-145 to 148; no progress on BGS-TRACE-148 is claimed.",
+   "boundary": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m; R_NSW: along m with h_m prime (not known to be infinite). Not reduced to a large-sieve inequality ('quadratic large sieve' phrasing withdrawn); Kurlberg-Rudnick, Bourgain and Bourgain-Glibichuk-Konyagin bounds do not apply since ord_h lambda = m is minimal. Derandomized analogue of the off-diagonal problem of BGS-TRACE-145 to 148; no progress on BGS-TRACE-148 is claimed. Line E annotation (2026-10-30, state unchanged): the k1-kick analogue of R is violated on a finite range (BGS-TRACE-187) and conditionally for all large m (BGS-TRACE-188); for this conjecture's kick |W~rest_m(2)| > m is certified at m = 11 and 13 only (m = 17 certificate pending) (BGS-TRACE-195, not yet refereed) and asymptotic failure along 3 not dividing m holds only conditionally on H_infinity,7 (BGS-TRACE-196). R is not disproved.",
    "spof": "no_proof_or_receipt_in_tree",
    "spof_detail": "state is open",
    "other_weaknesses": [],
@@ -9900,7 +9900,7 @@
    ],
    "formalization": [],
    "ledger_status": "OPEN; NUMERICAL ONLY (m<=11); KS YARDSTICK HEURISTIC",
-   "boundary": "The law of Z_m(nu) over units nu at fixed eta is conjectured Gaussian for eta bounded away from 0. Numerics at m = 11 only; far from Gaussian at small eta (M4 = 15.9 at (11,5), 1556 at (11,2)).",
+   "boundary": "The law of Z_m(nu) over units nu at fixed eta is conjectured Gaussian for eta bounded away from 0. Numerics at m = 11 only; far from Gaussian at small eta (M4 = 15.9 at (11,5), 1556 at (11,2)). Line E annotation (2026-10-30, state unchanged): at eta ~ 2 the nu-law has atoms of mass 1/phi(2h) carrying |Z|^2 ~ Lambda^(2m) (BGS-TRACE-190, 192), so the moment form (M4 -> 2, normalisation by sqrt F) fails numerically there; convergence in law of Z/sqrt(bulk variance) is not contradicted.",
    "spof": "no_proof_or_receipt_in_tree",
    "spof_detail": "state is open",
    "other_weaknesses": [],
@@ -9959,11 +9959,518 @@
    ],
    "formalization": [],
    "ledger_status": "OPEN; UNEXPLAINED NUMERICAL OUTLIER; TORSION ATTRIBUTION WITHDRAWN",
-   "boundary": "F/2m = 5.56 and M4 = 1556 at (m, eta) = (11, 2). The exact torsion split shows the excess is carried by the generic classes (+3.25), not by the 23-torsion classes; the phase-3 torsion attribution is withdrawn and no explanation is claimed.",
+   "boundary": "F/2m = 5.56 and M4 = 1556 at (m, eta) = (11, 2). The exact torsion split shows the excess is carried by the generic classes (+3.25), not by the 23-torsion classes; the phase-3 torsion attribution is withdrawn and no explanation is claimed. Line E annotation (2026-10-30, state unchanged): numerically identified with the N == +-196 (mod h_m) resonance (BGS-TRACE-192; 3.522 of F/2m = 5.562) and bounded rigorously from below by F_11(2)/2m >= 3.5227 from those two residues (BGS-TRACE-195, not yet refereed), so it is not a numerical artefact; a proved mechanism for all m is only conditional (BGS-TRACE-196), so the closure condition is not met.",
    "spof": "no_proof_or_receipt_in_tree",
    "spof_detail": "state is open",
    "other_weaknesses": [],
    "risk_reassessment": "OPEN_CONJECTURE"
+  },
+  {
+   "id": "BGS-TRACE-183",
+   "title": "Line E E1: resonant residue N == -4 mod h_m; exact collapse of the Pell phase to q/2 + kappa (sum n)^2/8",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "independent_review",
+    "lean_formalization",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/code/resid.py",
+    "computations/verification/lineE/referee/code/e1_exact.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineE.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT RATIONAL CHECK (m<=41) + LEAN FINITE INSTANCES (m=5..21; pell and xy_mod for all d) + DIRECT PHYSICAL TRACES (m<=13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied)",
+   "boundary": "Odd m >= 5, nu* the odd lift mod 2h_m of -4^{-1} mod h_m (N == -4 mod h_m). For every kick with sum n^2|ghat(n)| < infinity: Z_m(nu*) = sum_n Phihat(n) e(q(n)/2 + kappa_m (sum n)^2/8), q = n^T H^{-1} n, kappa_m odd; at -nu* the phase is -q/2 - kappa (sum n)^2/8. Finite N: for odd N == -4 mod h_m (gcd(N,D_m)=1 is then automatic) Tr(K M_N)^m = Tr M_N^m * sum_n Phihat(n) e((1+4/N) q/2 + kappa(sum n)^2/8), |Tr M_N^m| = 1. The kappa table (7,5,3,1 for m == 5,7,1,3 mod 8) and k in {-5,-3} are numerical (m<=41) and inessential. Starting formula is BGS-TRACE-163 Theorem 1 (Boasman-Keating mechanism); only the residue and the collapse are new.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies the coefficient congruences at m = 5..21 and the Pell facts for all d; the passage to Z_m and the finite-N statement are paper arguments (refereed).",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-184",
+   "title": "Line E E2: exact IFS transfer-operator law at the resonant residue (finite alphabet)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 7,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/code/trace_check.py",
+    "computations/verification/lineE/code/ifs_explore.py",
+    "computations/verification/lineE/review/predict_finiteN.py",
+    "computations/verification/lineE/review/indep_trace.py",
+    "computations/verification/lineE/referee/code/tmop.py",
+    "computations/verification/lineE/referee/code/cmp_tm.py",
+    "computations/verification/lineE/referee/code/direct_trace.py"
+   ],
+   "formalization": [],
+   "ledger_status": "ANALYTIC PROOF (RUELLE / BANDTLOW-JENKINSON TRACE FORMULA + LIDSKII ON H^2(D_rho)) + NUMERICAL CHECKS (BRUTE FORCE 1e-13; DIRECT TRACES m<=13 AT 1e-8 WITH rho > L/(lambda-1); EXACT CLASS SUMS m<=15 AT 1e-8) + INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied)",
+   "boundary": "Kick with ghat supported in |n| <= L (finite alphabet), rho > L/(lambda-1): Z_m(nu*) = (1-lambda^-m) sum_{a in {0,2,4,6}} c_a Tr L_a^m with c_a = (1/8) sum_b e((kappa b^2 - a b)/8), |c_a| = 1/2 (a even), c_a = 0 (a odd), (L_a phi)(s) = sum_{|n|<=L} ghat(n) e(c n^2/2 + a n/8) e(c n s) phi((s+n)/lambda) on H^2(D_rho), c = 1/(4 sqrt 2). The operators do not depend on m; finite N: c -> c(1+4/N). Not claimed for infinite alphabets (see BGS-TRACE-188).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Analytic trace-formula argument (cited Ruelle / Bandtlow-Jenkinson + Lidskii); not formalised; numerically confirmed to 1e-8.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-185",
+   "title": "Line E E3: certified spectrum of the L-truncated k1-kick IFS operators on a 9-point eta grid",
+   "state": "proved",
+   "methods": [
+    "computer_certificate",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/code/cert.py",
+    "computations/verification/lineE/code/run_certs.sh",
+    "computations/verification/lineE/referee/certrun/cert_nocache.py"
+   ],
+   "formalization": [],
+   "ledger_status": "COMPUTER-ASSISTED PROOF (PYTHON-FLINT/ARB BALL ARITHMETIC, 700-1200 BITS; RIESZ-PROJECTION RANK ARGUMENT, NO SAMPLING) + REFEREE RERUN AND NEGATIVE CONTROLS + CODE FIXES F9 (CACHE KEY, EXPLICIT BESSEL TAIL) WITH FULL REGENERATION; INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied)",
+   "boundary": "k1 kick f(q) = 0.9 cos 2 pi q only, truncated to |n| <= L (L = 6, 8), rho = 2, eta in {1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3}: L_4 has exactly one (simple) eigenvalue mu* in D(b11, r1), e.g. |mu*| in [1.9154751, 1.9154771] at eta = 2, L = 6; all other eigenvalues of L_0, L_2, L_4, L_6 in |z| <= r2 (r2 = 1, or 1.45 for eta >= 2.25). Certificates computations/verification/lineE/logs/cert_*.json. Not about the full-alphabet operator and not about the Line B kick.",
+   "spof": "single_verifier_implementation_only",
+   "spof_detail": "One certificate implementation (cert.py), re-run unchanged and with a no-cache variant by the referee; no second independent arb implementation of the resolvent bounds.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-186",
+   "title": "Line E E4: exponential lower bound |Z_L(m)| > 0 for all odd m >= m0 (truncated k1 kick)",
+   "state": "proved",
+   "methods": [
+    "computer_certificate",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/code/bounds.py",
+    "computations/verification/lineE/referee/code/own_bounds.py"
+   ],
+   "formalization": [],
+   "ledger_status": "COMPUTER-ASSISTED PROOF (ARB; WEYL INEQUALITY WITH TRACE-NORM BOUND) + REFEREE INDEPENDENT ARB ARITHMETIC; INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied)",
+   "boundary": "Truncated k1 kick of BGS-TRACE-185: |Z_L(m)| >= (1-lambda^-m) (mu_lo^m - 4 T1 r2^(m-1))/2 > 0 for every odd m >= m0, m0 = 17 (eta <= 2, L = 6), 19 (L = 8), 41, 49, 63, 103 (eta = 2.25, 2.5, 2.75, 3). Truncated alphabet only.",
+   "spof": "single_verifier_implementation_only",
+   "spof_detail": "Rests on the BGS-TRACE-185 certificates; the bound arithmetic was redone in independent referee arb code.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-187",
+   "title": "Line E E5: finite-range violation of the k1-kick analogue of Conjecture R",
+   "state": "proved",
+   "methods": [
+    "computer_certificate",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/code/bounds.py",
+    "computations/verification/lineE/referee/code/own_bounds.py"
+   ],
+   "formalization": [],
+   "ledger_status": "COMPUTER-ASSISTED PROOF (ARB; FINITE RANGE OF m; k1 KICK ONLY) + REFEREE INDEPENDENT ARB ARITHMETIC; INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied)",
+   "boundary": "k1 kick f(q) = 0.9 cos 2 pi q (NOT the Line B kick of BGS-TRACE-179): |W~rest_m(eta)| > m, more precisely W~rest_m/m >= 7.98 ... 2848 and F_m/2m >= 5.99 ... 1426, for every odd m in [17,39] at eta = 2; for m in [19,27] at eta = 1.75 and m in [23,33] at eta = 1.5 (positivity ranges are larger but do not violate anything); nothing at eta = 1.25. Uses F_m >= |Z(nu*)|^2/phi(2h), W~rest >= F - 4m (BGS-TRACE-165, 170). Finitely many m: Conjecture R (an o(m) statement) is not disproved for any kick.",
+   "spof": "single_verifier_implementation_only",
+   "spof_detail": "Rests on the BGS-TRACE-185 certificates; finite range of m, k1 kick only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-188",
+   "title": "Line E E6: the k1-kick analogue of Conjecture R fails at eta = 2 under hypothesis H_infinity",
+   "state": "conditional",
+   "methods": [
+    "conditional_input",
+    "independent_review",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "conditional_input",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/code/ifs_explore.py"
+   ],
+   "formalization": [],
+   "ledger_status": "CONDITIONAL (HYPOTHESIS H_INFINITY: QUASI-COMPACT FULL-ALPHABET OPERATOR WITH ISOLATED SIMPLE EIGENVALUE |mu| > lambda^(1/4)) + FLOAT EVIDENCE; INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied)",
+   "boundary": "If the full-alphabet k1 operator L_4^(infinity) is quasi-compact on a Banach space of analytic functions on a domain containing D_rho, with an isolated simple eigenvalue |mu_infinity| > lambda^(1/4), the rest of the spectra of all L_a^(infinity) in a smaller disc, and the trace formula holds, then F_m(2) >= C (|mu_infinity|^2 lambda^(-1/2))^m for large odd m, so the k1-kick analogue of Conjecture R fails at eta = 2. k1 kick only; not BGS-TRACE-179 itself.",
+   "spof": "conditional_on_unproved_input",
+   "spof_detail": "Conditional on H_infinity (full-alphabet spectral gap), not discharged.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-189",
+   "title": "Line E E7: m = 15 prediction versus outcome (k1 kick, eta = 2)",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [
+    "float_numerics",
+    "independent_review"
+   ],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/code/tm2.py",
+    "computations/verification/lineE/referee/code/run_classes.py"
+   ],
+   "formalization": [],
+   "ledger_status": "NUMERICAL RECORD ONLY (NO THEOREM CLAIMED); EXACT CLASS SUMS AND FLOAT TRANSFER OPERATOR; INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied)",
+   "boundary": "Predicted F_15(2)/2m >= 20, observed 27.885 (exact class sums, all units). |Z(nu*)|^2 = 7.34867e7 matches the E2 law to 1e-8 (L = 10); 7.34915e7 is |Z(-nu*)|^2 and matches its own law; the earlier '6e-5 discrepancy' compared the two residues and is withdrawn.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN"
+  },
+  {
+   "id": "BGS-TRACE-190",
+   "title": "Line E E8: Line B kick, giant traces at N == -/+196 mod h_m when 3 does not divide m",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [
+    "float_numerics",
+    "independent_review"
+   ],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/review/indep_trace_full.py",
+    "computations/verification/lineE/referee/code/run_classes.py",
+    "computations/verification/lineE/referee/code/aud.py"
+   ],
+   "formalization": [],
+   "ledger_status": "NUMERICAL (EXACT CLASS SUMS m<=15, TWO INDEPENDENT CODES; DIRECT PHYSICAL TRACE m=11) + INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied); STRUCTURE PROVED FOR 3 NOT DIVIDING m IN BGS-TRACE-194",
+   "boundary": "Line B diagonal kick f_B (14 modes, c_{+-7} = 9/20), eta = 2: for m = 7, 11, 13 the top two residues are N == -/+196 = -/+4*49 mod h_m (Galois images of the k1 resonance via the 7-mode). When 3 | m, 7 | h_m and the image does not exist: m = 9 gives F/2m = 1.82, m = 15 gives F/2m = 3.91 (resonance diluted on N == +-196 mod h/7, carrying 1.745). The evidence is not monotone in m.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN"
+  },
+  {
+   "id": "BGS-TRACE-191",
+   "title": "Line E E9: eta-interval (not grid) certification of the resonant growth",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "OPEN; NO WORK CLAIMED",
+   "boundary": "The certificates of BGS-TRACE-185 to 187 are at 9 grid values of eta; nothing is certified between grid points.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN"
+  },
+  {
+   "id": "BGS-TRACE-192",
+   "title": "Line E E10: the TRACE-182 (m, eta) = (11, 2) outlier is the +-196 resonance",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [
+    "float_numerics",
+    "independent_review"
+   ],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/referee/code/e10.py"
+   ],
+   "formalization": [],
+   "ledger_status": "NUMERICAL IDENTIFICATION (EXACT CLASS SUMS m = 7, 11, 13) + RIGOROUS LOWER BOUND AT m = 11, 13 FROM BGS-TRACE-195 (NOT YET REFEREED) + INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee/REPORT.md; fixes F1-F13 applied)",
+   "boundary": "Line B kick, eta = 2: the residues N == +-196 carry 3.522 of F/2m = 5.562 at m = 11 (remainder 2.040) and 6.458 of 8.590 at m = 13 (remainder 2.132). Numerical identification only; a proved mechanism for all m is conditional (BGS-TRACE-196). BGS-TRACE-182 stays open.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN"
+  },
+  {
+   "id": "BGS-TRACE-193",
+   "title": "Line E E11: pure 7-mode kick, Z_f7(nu) = Z_k1(49 nu); E5 bounds hold verbatim for f7 when 3 does not divide m",
+   "state": "verification-pending",
+   "methods": [
+    "analytic_proof",
+    "author_check",
+    "lean_formalization",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "author_check",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/step2/check_f7.py",
+    "computations/verification/lineE/code/bounds.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineEResonance.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF (FOURIER SUPPORT SCALING) + LEAN (7 | h_m IFF 3 | m, ALL m) + NUMERICAL CHECK (ALL UNITS, m = 5, 7, 9, 11); NOT YET REFEREED (Line E step 2, 2026-10-30); AUTHOR SELF-CHECK WITH INDEPENDENT CODE",
+   "boundary": "f7(q) = 0.9 cos 2 pi 7q: Z_f7(nu) = Z_k1(49 nu) for every nu; for odd m with 3 not dividing m, 49 is a unit mod 2h_m, so F_m(f7) = F_m(k1) and W~rest_m(f7) = W~rest_m(k1) (both kicks even, chi = 1). Hence |W~rest_m(f7; eta)| > m at eta = 2 for m in {17,19,23,25,29,31,35,37}, at eta = 1.75 for m in {19,23,25}, at eta = 1.5 for m in {23,25,29,31}. f7 is NOT the Line B kick (13 further modes up to 1/20). Finite range: R is not disproved.",
+   "spof": "single_reviewer_author_check_only",
+   "spof_detail": "New in Line E step 2; not yet refereed.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-194",
+   "title": "Line E E12: exact a^2-resonance law; 49-state IFS law for the Line B kick at N == -/+196 when 3 does not divide m",
+   "state": "verification-pending",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "author_check",
+    "lean_formalization",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "author_check",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 7,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/step2/lawlib.py",
+    "computations/verification/lineE/step2/check_phase.py",
+    "computations/verification/lineE/step2/tm49.py",
+    "computations/verification/lineE/step2/check_trace.py",
+    "computations/verification/lineE/step2/cert49_py.py",
+    "computations/verification/lineE/step2/check_finiteN.py",
+    "computations/verification/lineE/step2/cmp_full.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineEResonance.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF (EMBEDDING Z[sqrt2,1/2] -> Z/a^2 + TRACE FORMULA ON H^2 (X) l^2(Z/a^2)) + EXACT CHECKS (52/52 COEFFICIENT IDENTITIES m<=41; 138/138 PHASE CHECKS) + LEAN FINITE INSTANCES (a = 7, m = 5..19, s = +-1) + NUMERICAL (BRUTE FORCE 1e-13; DIRECT PHYSICAL TRACE m = 11 AT 5e-5); NOT YET REFEREED (Line E step 2, 2026-10-30); AUTHOR SELF-CHECK WITH INDEPENDENT CODE",
+   "boundary": "a odd, gcd(a,2h_m) = 1, 2 a square mod every p | a, lambda^m != 1 mod every p | a; nu the odd lift of -s(4a^2)^{-1} mod h_m (N == -s 4a^2 mod h_m), 4a^2 nu + s = k h. Then -nu y' Nm(alpha_n)/g' == (s c/a^2)[sum n_j s_j + sum n_j^2/2] + kappa (sum n)^2/8 + (gamma/a^2)[sum n_j sigma_j + 2^{-1} sum n_j^2] mod 1 (s_j real periodic orbit, sigma_j the periodic orbit of sigma -> l^{-1}(sigma + n) in Z/a^2), and for finite alphabets Z_m(nu) = (1-lambda^-m) sum_b c_b Tr L_b^m with 49-state (a = 7) operators on H^2(D_rho) (x) l^2(Z/a^2). For a = 7 the hypotheses hold iff 3 does not divide m. Finite alphabet only; nothing about growth is claimed here.",
+   "spof": "single_reviewer_author_check_only",
+   "spof_detail": "New in Line E step 2; not yet refereed. Lean checks coefficient identities at m = 5..19 only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-195",
+   "title": "Line E E13: Gauss-completed orbit formula (Prop. G) and rigorous finite-m lower bounds for the TRACE-179 kick at eta = 2",
+   "state": "verification-pending",
+   "methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "author_check",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "author_check",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/step2/cert_class.py",
+    "computations/verification/lineE/step2/zres.c",
+    "computations/verification/lineE/step2/check_propG.py"
+   ],
+   "formalization": [],
+   "ledger_status": "ANALYTIC PROOF (PROP. G FROM BGS-TRACE-163 THEOREM 3, PROP. R AND BGS-TRACE-165 LEMMA S) + COMPUTER-ASSISTED BOUND (ARB TABLES, IEEE-DOUBLE KERNEL WITH A-PRIORI ROUNDING BOUND, NO FMA) + CROSS-CHECKS AGAINST REFEREE CLASS SUMS; NOT YET REFEREED (Line E step 2, 2026-10-30); AUTHOR SELF-CHECK WITH INDEPENDENT CODE",
+   "boundary": "Prop. G: |Z_m(nu)| = h^{-1} |sum_{(z0,z1) in (Z/h)^2} e(t R(z)/h) prod_j g(1/2 + z_j/h)|, t = (16 nu)^{-1} mod h, R(z) = 2 z^T H z/h mod h, for every odd m and unit nu, any kick (no truncation). Certified for the exact Line B diagonal kick f_B at eta = 2: F_m/2m >= 3.5227 and W~rest_m/m >= 3.0454 at m = 11; F_m/2m >= 6.4579 and W~rest_m/m >= 8.9159 at m = 13; m = 17: certificate pending (pre-registered predictions |Z|^2 = 5.66587e8 at N = -196 and 7.04767e8 at N = +196 mod h_17, 49-state law L = 48, K = 40; no m = 17 bound is claimed). Hence |W~rest_m(2)| > m for the TRACE-179 kick at these m only; nothing about m -> infinity.",
+   "spof": "single_reviewer_author_check_only",
+   "spof_detail": "New in Line E step 2; not yet refereed. Single implementation of the rigorous-rounding kernel (zres.c) with an a-priori error bound.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-196",
+   "title": "Line E E14: conditional asymptotic failure of Conjecture R for the Line B kick at eta = 2 along 3 not dividing m",
+   "state": "conditional",
+   "methods": [
+    "conditional_input",
+    "author_check",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "conditional_input",
+    "author_check",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineE/step2/spec_full.py",
+    "computations/verification/lineE/step2/predict.py",
+    "computations/verification/lineE/step2/tm49.py"
+   ],
+   "formalization": [],
+   "ledger_status": "CONDITIONAL (HYPOTHESIS H_INFINITY,7 ON THE FULL-ALPHABET 49-STATE OPERATORS) + FLOAT SPECTRAL EVIDENCE (|mu| = 1.884, 1.897 > lambda^(1/4) = 1.554, NEXT <= 1.30) + PRE-REGISTERED m = 17 PREDICTION (CERTIFICATE PENDING, UNTESTED); NOT YET REFEREED (Line E step 2, 2026-10-30); AUTHOR SELF-CHECK WITH INDEPENDENT CODE",
+   "boundary": "If the full-alphabet 49-state operators of BGS-TRACE-194 for the Line B kick at eta = 2 are quasi-compact on a suitable Banach space with the trace formula, one sector has an isolated simple eigenvalue |mu_infinity| > lambda^(1/4), and all other spectrum lies in a smaller disc, then F_m(2) >= C (|mu_infinity|^2 lambda^(-1/2))^m and W~rest_m(2)/m -> infinity along odd m with 3 not dividing m: Conjecture R (BGS-TRACE-179) would fail at eta = 2. Nothing along 3 | m. H_infinity,7 is not proved.",
+   "spof": "conditional_on_unproved_input",
+   "spof_detail": "Conditional on H_infinity,7 (not discharged); float spectral evidence only; not yet refereed.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
   }
  ],
  "recovery_upgrade": {

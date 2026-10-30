@@ -1,0 +1,137 @@
+{
+  "schema": "bgs-lineE-integration-receipt-v1",
+  "base": "ChurilovMaksim/BGS@347f1730",
+  "branch": "lineE-resonant-transfer",
+  "integrated_on": "2026-10-30",
+  "id_assignment": {
+    "highest_registered_trace_on_main": "BGS-TRACE-182",
+    "assigned": "BGS-TRACE-183 through BGS-TRACE-196",
+    "renumbered": false,
+    "counts": {
+      "proved": 5,
+      "conditional": 2,
+      "open": 4,
+      "verification-pending": 3
+    },
+    "proved": [
+      "BGS-TRACE-183",
+      "BGS-TRACE-184",
+      "BGS-TRACE-185",
+      "BGS-TRACE-186",
+      "BGS-TRACE-187"
+    ],
+    "conditional": [
+      "BGS-TRACE-188",
+      "BGS-TRACE-196"
+    ],
+    "open": [
+      "BGS-TRACE-189",
+      "BGS-TRACE-190",
+      "BGS-TRACE-191",
+      "BGS-TRACE-192"
+    ],
+    "verification-pending": [
+      "BGS-TRACE-193",
+      "BGS-TRACE-194",
+      "BGS-TRACE-195"
+    ],
+    "refereed": [
+      "BGS-TRACE-183",
+      "BGS-TRACE-184",
+      "BGS-TRACE-185",
+      "BGS-TRACE-186",
+      "BGS-TRACE-187",
+      "BGS-TRACE-188",
+      "BGS-TRACE-189",
+      "BGS-TRACE-190",
+      "BGS-TRACE-191",
+      "BGS-TRACE-192"
+    ],
+    "not_yet_refereed": [
+      "BGS-TRACE-193",
+      "BGS-TRACE-194",
+      "BGS-TRACE-195",
+      "BGS-TRACE-196"
+    ],
+    "annotated_unchanged": [
+      "BGS-TRACE-179",
+      "BGS-TRACE-180",
+      "BGS-TRACE-182"
+    ]
+  },
+  "referee_report": "computations/verification/lineE/referee/REPORT.md",
+  "referee_fixes_applied": [
+    "F1 scope (k1-kick analogue; TRACE-179 open)",
+    "F2 violation vs positivity ranges",
+    "F3 TRACE-180 moment form only",
+    "F4 Keating-Mezzadri analogy only",
+    "F5 E7 residues relabelled",
+    "F6 sanity line",
+    "F7 vendored review scripts, pinned versions, Lean under formalization/Bgs, no lineE claims.json copy",
+    "F8 finite-N table regenerated with rho > L/(lambda-1)",
+    "F9 cache keyed by sector, explicit Bessel tail, numpy determinism note, all nine certificates regenerated",
+    "F10 E2 proof details",
+    "F11 overlap: Pell identity h_{m-2} y_{(m-1)/2} == 1 mod h_m, TRACE-117..119, FM-036",
+    "F12 E8/E10 scope 3 | m",
+    "F13 E1 hypotheses and kappa table labelled numerical",
+    "nits: h_29 prime listed; L = 8 enclosure is b11 +- 0.05"
+  ],
+  "python_environment": {
+    "python": "3.13.5",
+    "python-flint": "0.9.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "zres_build": "gcc -O3 -march=native -ffp-contract=off -fno-fast-math -fopenmp"
+  },
+  "lean_build": {
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "command": "lake exe cache get && lake build Bgs",
+    "logs": [
+      "lake_cache_get.log",
+      "lake_build_Bgs.log",
+      "lean_axioms_LineE.log",
+      "lean_controls.log"
+    ],
+    "axioms_allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorryAx": false,
+    "native_decide": false,
+    "false_controls_rejected": "5/5"
+  },
+  "certificates": {
+    "k1_ifs": "computations/verification/lineE/logs/cert_*.json (9, regenerated 2026-10-30 with fixed code; certified |mu*| bounds and sector certifications identical to the refereed run; sector-4 b11 midpoints differ by <= 1.3e-61)",
+    "lineB_kick_classsum": "computations/verification/lineE/step2/cert_class.jsonl"
+  },
+  "m17_preregistration": {
+    "prediction_file": "computations/verification/lineE/step2/predictions.jsonl",
+    "prediction_written_utc": "2026-10-30T06:41:06Z",
+    "certificate_started_utc": "2026-10-30T06:39:56Z",
+    "predicted_Z2": {
+      "N=-196": 566587137.857,
+      "N=+196": 704767395.343
+    },
+    "certified": "PENDING (certificate running at commit time; no m = 17 bound claimed)"
+  },
+  "nonclaims": [
+    "Conjecture R (BGS-TRACE-179) is not disproved for any kick; all unconditional growth statements cover finitely many m.",
+    "No BGS counterexample; nothing about eigenvalue statistics beyond the second moment of Tr U^m; no progress on BGS-TRACE-148.",
+    "Not an instance of a Keating-Mezzadri pseudo-symmetry (analogy only).",
+    "BGS-TRACE-180 is not contradicted as a convergence-in-law statement.",
+    "BGS-TRACE-193 to 196 have not been refereed."
+  ],
+  "sha256": {
+    "formalization/Bgs/LineE.lean": "b3a91202d2b1e83ef030570e679569562c8f96548050f6f834bdbe20754e65f1",
+    "formalization/Bgs/LineEResonance.lean": "abd0b0866b82875f502608f3b15db69dd96a52194a0c4ed167d77a125cfcc29e",
+    "mathematics/fixed-map/resonant_residue_lineE.md": "342d73edf0fe12473583eb61386e2cf5c74a58081034d5906647f29f72551d1d",
+    "computations/verification/lineE/code/cert.py": "c0a28b3ed1e782954ee7f1c1b1adc4d946c35535cc257b323e5cfabb1fcaba46",
+    "computations/verification/lineE/code/bounds.py": "b7841a6d695783602fbd3ed94a58eecdfb7c977ffb2c7caa4450aef277c605d3",
+    "computations/verification/lineE/step2/cert_class.py": "3103e3a8b967e0fa4e943cab27e16ac66993bfa3f98fc8a14f1f8ece60434943",
+    "computations/verification/lineE/step2/zres.c": "968f045be0f6a593fc60887af3d3d8a93e35ef3c4c539dd529e1fd97ca78e7b0",
+    "computations/verification/lineE/step2/cert_class.jsonl": "38db5e7298eb511b4dfbb7de1f49aba1b4e35cb3d36156ff6ee30e193afa2ab5",
+    "computations/verification/lineE/referee/REPORT.md": "5996e80f3e0a40208c8ca2e1c2ca40f25a9c2a5f0b8e87f80f5dea89edbde92c"
+  }
+}

@@ -148,10 +148,13 @@ C_η is not explicit, and uniformity in η is not claimed.
 - For 0 < η₀ ≤ η₁: max_{η∈[η₀,η₁]} |W̃^rest_m(η)| = o(m).
 - Evidence: for η ∈ [10, 400], |W̃^rest|/2m ≤ 0.11 (m = 7), 0.05 (m = 9), 0.018 (m = 11; −0.0175 at η = 400), 0.008 (m = 13; three η).
 - Literature check: `phase4_parity_certificate.md` §2.1–§2.2.
+- *Line E annotation (2026-10-30; state unchanged, open):* see `resonant_residue_lineE.md`. The k1-kick analogue of R is violated on a finite range (BGS-TRACE-187, computer-assisted) and, conditionally on H∞, for all large m (BGS-TRACE-188). For the kick of this conjecture, |W̃rest_m(2)| > m is certified at m = 11 and 13 only (m = 17 certificate pending) (BGS-TRACE-195, not yet refereed), and asymptotic failure along 3 ∤ m holds only conditionally on H∞,7 (BGS-TRACE-196). R itself is not disproved.
 
 ### <a id="claim-180"></a>BGS-TRACE-180: fixed-η CLT (open)
+- *Line E annotation (2026-10-30; state unchanged, open):* at η ≈ 2 the ν-law has atoms of mass 1/φ(2h) carrying |Z|² ≈ Λ^{2m} (BGS-TRACE-190, 192), so the moment form (M4 → 2, normalisation by √F) fails numerically there; convergence in law of Z/√(bulk variance) is not contradicted.
 ### <a id="claim-181"></a>BGS-TRACE-181: ND for composite h_m and even m (open)
 ### <a id="claim-182"></a>BGS-TRACE-182: the (11, 2) outlier (open; torsion attribution withdrawn)
+- *Line E annotation (2026-10-30; state unchanged, open):* numerically identified with the N ≡ ±196 (mod h_m) resonance (BGS-TRACE-192: 3.522 of F/2m = 5.562), with a rigorous lower bound F_11(2)/2m ≥ 3.5227 from those two residues (BGS-TRACE-195, not yet refereed), so the outlier is not a numerical artefact. A proved mechanism for all m is only conditional (BGS-TRACE-196), so the closure condition is not met.
 
 ## Literature and novelty (short)
 - Boasman–Keating 1995: Fourier/Gauss expansion for cat-map form factors.

@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Resonant residues of the fixed kick (Line E), 30 October 2026
+
+[TRACE-183](fixed-map/resonant_residue_lineE.md) (proved): the exact collapse of the Pell phase at N ≡ −4 (mod h_m). [TRACE-184](fixed-map/resonant_residue_lineE.md) (proved): the m-independent IFS transfer-operator law, finite alphabet. [TRACE-185](fixed-map/resonant_residue_lineE.md)–[187](fixed-map/resonant_residue_lineE.md) (proved, computer-assisted, k1 kick only): the certified leading eigenvalue, the exponential lower bound for all m ≥ m0 for the truncated kick, and |W̃rest_m| > m for odd m ∈ [17,39] at η = 2 (also m ∈ [19,27] at η = 1.75 and m ∈ [23,33] at η = 1.5). [TRACE-188](fixed-map/resonant_residue_lineE.md) (conditional): asymptotic failure of the k1 analogue of R under H∞. [TRACE-189](fixed-map/resonant_residue_lineE.md)–[192](fixed-map/resonant_residue_lineE.md) (open; numerical records, the ∓196 resonance of the Line B kick when 3 ∤ m, η-interval certification, and the identification of the TRACE-182 outlier). Not yet refereed: [TRACE-193](fixed-map/resonant_residue_lineE.md)–[195](fixed-map/resonant_residue_lineE.md) (verification-pending: the 7-mode corollary, the a²-resonance law, and rigorous Line B kick bounds at m = 11 and 13 (m = 17 certificate pending)) and [TRACE-196](fixed-map/resonant_residue_lineE.md) (conditional failure of R along 3 ∤ m). Limits: no o(m) statement is disproved, and Conjecture R (TRACE-179) stays open.
+
 ## Fixed diagonal kick, 29 October 2026
 
 [TRACE-163](fixed-map/derandomized_fixed_kick.md) is the exact Pell-norm trace formula for the fixed diagonal kick, the orbit form, and $B_m=2m$ at $m\le 8$ (proved). [TRACE-164](fixed-map/derandomized_fixed_kick.md) is conditional on $\mathrm{ND}_m$. [TRACE-165](fixed-map/derandomized_fixed_kick.md) is the Ramanujan kernel and the exact odd-$m$ ramp (proved). [TRACE-166](fixed-map/derandomized_fixed_kick.md) is the $p$-splitting lemma (proved). [TRACE-167](fixed-map/derandomized_fixed_kick.md) is automatic admissibility (proved, after the second reader's repair). [TRACE-168](fixed-map/derandomized_fixed_kick.md) is Theorem N for eleven certified NSW primes (proved; nontrivial from $m=29$). [TRACE-169](fixed-map/derandomized_fixed_kick.md) is the norm-class formula (proved). [TRACE-170](fixed-map/derandomized_fixed_kick.md) is the parity decomposition and the transfer formula (proved). [TRACE-171](fixed-map/derandomized_fixed_kick.md) is the lower bound for odd $m\ge 5$ (proved). [TRACE-172](fixed-map/derandomized_fixed_kick.md) is the majorant framework (proved). [TRACE-173](fixed-map/derandomized_fixed_kick.md) is the certified decay on $\eta\in[1,81.574]$ (proved only with the directed-rounding constants; the authors' float constants are excluded). [TRACE-174](fixed-map/derandomized_fixed_kick.md) is conditional on (I1)–(I3). [TRACE-175](fixed-map/derandomized_fixed_kick.md) is the $N$-average theorem (proved). [TRACE-176](fixed-map/derandomized_fixed_kick.md) is conditional on $\mathrm{ND}^{(\le k)}$. [TRACE-178](fixed-map/derandomized_fixed_kick.md) is the trivial torsion-split identity (proved; the reading is numerical). [TRACE-177](fixed-map/derandomized_fixed_kick.md), [TRACE-179](fixed-map/derandomized_fixed_kick.md), [TRACE-180](fixed-map/derandomized_fixed_kick.md), [TRACE-181](fixed-map/derandomized_fixed_kick.md) and [TRACE-182](fixed-map/derandomized_fixed_kick.md) are open. Nothing is proved at $\tau=m/N=O(1)$. This is not progress on BGS-BGS-001 or BGS-TRACE-148. "$B_m\to 2m$" is not claimed.
@@ -495,7 +499,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**266 registered claims: 221 proved, 15 verification-pending, 13 conditional, 17 open.**
+**280 registered claims: 226 proved, 18 verification-pending, 15 conditional, 21 open.**
 
 ### BGS family (1 claim)
 
@@ -661,7 +665,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (157 claims)
+### TRACE family (171 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -822,5 +826,19 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-180` | **OPEN** | Fixed-eta (nu-only) central limit law |
 | `BGS-TRACE-181` | **OPEN** | Non-degeneracy ND_m for composite h_m and for even m |
 | `BGS-TRACE-182` | **OPEN** | The (m, eta) = (11, 2) outlier |
+| `BGS-TRACE-183` | **PROVED** | Line E E1: resonant residue N == -4 mod h_m; exact collapse of the Pell phase to q/2 + kappa (sum n)^2/8 |
+| `BGS-TRACE-184` | **PROVED** | Line E E2: exact IFS transfer-operator law at the resonant residue (finite alphabet) |
+| `BGS-TRACE-185` | **PROVED** | Line E E3: certified spectrum of the L-truncated k1-kick IFS operators on a 9-point eta grid |
+| `BGS-TRACE-186` | **PROVED** | Line E E4: exponential lower bound \|Z_L(m)\| > 0 for all odd m >= m0 (truncated k1 kick) |
+| `BGS-TRACE-187` | **PROVED** | Line E E5: finite-range violation of the k1-kick analogue of Conjecture R |
+| `BGS-TRACE-188` | **CONDITIONAL** | Line E E6: the k1-kick analogue of Conjecture R fails at eta = 2 under hypothesis H_infinity |
+| `BGS-TRACE-189` | **OPEN** | Line E E7: m = 15 prediction versus outcome (k1 kick, eta = 2) |
+| `BGS-TRACE-190` | **OPEN** | Line E E8: Line B kick, giant traces at N == -/+196 mod h_m when 3 does not divide m |
+| `BGS-TRACE-191` | **OPEN** | Line E E9: eta-interval (not grid) certification of the resonant growth |
+| `BGS-TRACE-192` | **OPEN** | Line E E10: the TRACE-182 (m, eta) = (11, 2) outlier is the +-196 resonance |
+| `BGS-TRACE-193` | **VERIFICATION-PENDING** | Line E E11: pure 7-mode kick, Z_f7(nu) = Z_k1(49 nu); E5 bounds hold verbatim for f7 when 3 does not divide m |
+| `BGS-TRACE-194` | **VERIFICATION-PENDING** | Line E E12: exact a^2-resonance law; 49-state IFS law for the Line B kick at N == -/+196 when 3 does not divide m |
+| `BGS-TRACE-195` | **VERIFICATION-PENDING** | Line E E13: Gauss-completed orbit formula (Prop. G) and rigorous finite-m lower bounds for the TRACE-179 kick at eta = 2 |
+| `BGS-TRACE-196` | **CONDITIONAL** | Line E E14: conditional asymptotic failure of Conjecture R for the Line B kick at eta = 2 along 3 not dividing m |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

@@ -1,0 +1,30 @@
+import Bgs.LineE
+import Bgs.LineEResonance
+#print axioms Bgs.LineE.pell
+#print axioms Bgs.LineE.xy_mod
+#print axioms Bgs.LineE.cert5
+#print axioms Bgs.LineE.cert7
+#print axioms Bgs.LineE.cert9
+#print axioms Bgs.LineE.cert11
+#print axioms Bgs.LineE.cert13
+#print axioms Bgs.LineE.cert15
+#print axioms Bgs.LineE.cert17
+#print axioms Bgs.LineE.cert19
+#print axioms Bgs.LineE.cert21
+#print axioms Bgs.LineE.cert11_control
+#print axioms Bgs.LineE.nsw_mod7_cycle
+#print axioms Bgs.LineE.nsw_mod7
+#print axioms Bgs.LineE.three_dvd_iff
+#print axioms Bgs.LineE.cert49_5p
+#print axioms Bgs.LineE.cert49_5m
+#print axioms Bgs.LineE.cert49_7p
+#print axioms Bgs.LineE.cert49_7m
+#print axioms Bgs.LineE.cert49_11p
+#print axioms Bgs.LineE.cert49_11m
+#print axioms Bgs.LineE.cert49_13p
+#print axioms Bgs.LineE.cert49_13m
+#print axioms Bgs.LineE.cert49_17p
+#print axioms Bgs.LineE.cert49_17m
+#print axioms Bgs.LineE.cert49_19p
+#print axioms Bgs.LineE.cert49_19m
+#print axioms Bgs.LineE.cert49_11_control

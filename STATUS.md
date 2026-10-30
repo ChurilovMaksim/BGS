@@ -14,15 +14,15 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-29**. **266 registered claims.**
+**2026-10-30**. **280 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 221 |
-| verification-pending | 15 |
-| conditional | 13 |
-| open | 17 |
-| **Total** | **266** |
+| proved | 226 |
+| verification-pending | 18 |
+| conditional | 15 |
+| open | 21 |
+| **Total** | **280** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -43,12 +43,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 23 |
 | RET | 3 | 0 | 1 | 0 | 4 |
-| TRACE | 123 | 13 | 8 | 13 | 157 |
-| **Total** | 221 | 15 | 13 | 17 | **266** |
+| TRACE | 128 | 16 | 10 | 17 | 171 |
+| **Total** | 226 | 18 | 15 | 21 | **280** |
 
 ## Open programme obligations
 
-17 registered claims are open. Their closure
+21 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -71,6 +71,10 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-180` | Fixed-eta (nu-only) central limit law | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
 | `BGS-TRACE-181` | Non-degeneracy ND_m for composite h_m and for even m | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
 | `BGS-TRACE-182` | The (m, eta) = (11, 2) outlier | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
+| `BGS-TRACE-189` | Line E E7: m = 15 prediction versus outcome (k1 kick, eta = 2) | [mathematics/fixed-map/resonant_residue_lineE.md](mathematics/fixed-map/resonant_residue_lineE.md) |
+| `BGS-TRACE-190` | Line E E8: Line B kick, giant traces at N == -/+196 mod h_m when 3 does not divide m | [mathematics/fixed-map/resonant_residue_lineE.md](mathematics/fixed-map/resonant_residue_lineE.md) |
+| `BGS-TRACE-191` | Line E E9: eta-interval (not grid) certification of the resonant growth | [mathematics/fixed-map/resonant_residue_lineE.md](mathematics/fixed-map/resonant_residue_lineE.md) |
+| `BGS-TRACE-192` | Line E E10: the TRACE-182 (m, eta) = (11, 2) outlier is the +-196 resonance | [mathematics/fixed-map/resonant_residue_lineE.md](mathematics/fixed-map/resonant_residue_lineE.md) |
 
 ## Corrections
 
@@ -84,7 +88,7 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 163 follow-on claims adopted after
+It records 177 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 18 external IDs.

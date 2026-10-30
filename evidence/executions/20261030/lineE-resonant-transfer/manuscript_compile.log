@@ -1,0 +1,14 @@
+# 2026-10-30T08:19:40Z tectonic 0.15.0 -X compile BGS_unified.tex (pdflatex not installed)
+## 1. this checkout, unmodified
+exit 1
+error: unified_sections/derandomized_fixed_kick.tex:94: Extra }, or forgotten $
+error: halted on potentially-recoverable error as specified
+## pre-existing on main 347f1730 (line unchanged by this branch):
+\begin{theorem}[Certified decay on \(\eta\in[1,81.574]\), BGS-TRACE-173, proved (computer-assisted, directed rounding; upgraded by the second reader)]
+## 2. scratch copy with only that line's optional argument braced
+exit 0
+warnings in resonant_residue_lineE.tex:
+0
+undefined references/citations in log:
+0
+pages: Pages:           365
