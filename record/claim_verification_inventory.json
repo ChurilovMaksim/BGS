@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "68e1585c0d2812b591036afe6dfe5535a75ae2ef",
+ "source_blob_sha": "485167d4e7d963d79aa7df30076e60e84a07a3a7",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -3921,7 +3921,7 @@
    ],
    "formalization": [],
    "ledger_status": "PROJECT PROOFS + FRESH INDEPENDENT RECONSTRUCTION + BOUNDED CONTROLS; EXACT SCOPE RESTRICTIONS",
-   "boundary": "Every complete unmasked convex insertion mixture closes at its stated normalized band, uniformly all z_N in [0,1]. Arbitrary B is fixed within the averaged run; no uncontrolled B_n. S3 tail is three-insertion centered control uniform theta/gaps/j, not j=1,2 pointwise control. No raw coefficient N^-2 bound, Hamming/high-switch extraction, source derivatives/rates, deconvolution or undamped zero-insertion identification. T16, Ward(13), balanced law, TRACE005 and BGS OPEN. Author222 suite inaccessible and unreplayed; no formalization.",
+   "boundary": "Every complete unmasked convex insertion mixture closes at its stated normalized band, uniformly all z_N in [0,1]. Arbitrary B is fixed within the averaged run; no uncontrolled B_n. S3 tail is three-insertion centered control uniform theta/gaps/j, not j=1,2 pointwise control. No raw coefficient N^-2 bound, Hamming/high-switch extraction, source derivatives/rates, deconvolution or undamped zero-insertion identification. T16, Ward(13), balanced law, TRACE-005 and BGS OPEN. Author222 suite inaccessible and unreplayed; no formalization.",
    "spof": "thin_layer_stack",
    "spof_detail": "entire inventoried stack is only: analytic_proof, exact_identity, independent_review",
    "other_weaknesses": []
