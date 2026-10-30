@@ -1,6 +1,6 @@
 {
   "schema": "bgs-errata-v1",
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "status_authority": "record/retractions.md",
   "entries": [
     {
@@ -461,6 +461,13 @@
       "title": "Square-free kick window N=15r admitted r=3",
       "disposition": "corrected: r is an odd prime at least 7. The modulus 45=3^2*5 is not square-free; BGS-TRACE-124 places it by 8*12 <= 3*45. A prime square is outside BGS-TRACE-123 and is placed by BGS-TRACE-124. The modulus 315 is short because its radical 105 is short.",
       "downstream": "The square-free theorem is unchanged. No bound is left open at 315.",
+      "authority": "record/retractions.md"
+    },
+    {
+      "id": "ERR-064",
+      "title": "Stale module-count and audit figures in formalization README, SOURCE_OF_TRUTH and ERR-035/ERR-036",
+      "disposition": "superseded figures — corrected by the accompanying Phase 1 drafts, old entries not edited",
+      "downstream": "On the 2026-10-29 audit snapshot the active Lean graph is 87 leaf modules (29 pre-existing + 39 Bgs.Mathlib.* + 19 further Bgs.lean imports) + 2 aggregators; on main at PR #55 it is 88 leaf modules with Bgs.LineDCerts added; on main at PR #56 (HEAD 347f1730, 2026-10-30) it is 92 leaf modules (33 listed in the README table + 39 Bgs.Mathlib.* + 20 further Bgs.lean imports) + 2 aggregators, 1026 theorems, 167 lemmas, 116 #print axioms commands. The formalization README line 3 (68 leaf modules) and the SOURCE_OF_TRUTH figure (18 of 159) were corrected by the accompanying Phase 1 commit. The 24-module / 27-job figures remain a partial 20 October build snapshot only. The ledger_status audit figure was re-measured on the 266-claim registry (221 proved / 15 verification-pending / 13 conditional / 17 open): 31 of 266 on 30 October 2026 (29 of 232 on 29 October 2026), and must not be fixed by synchronisation.",
       "authority": "record/retractions.md"
     }
   ]
