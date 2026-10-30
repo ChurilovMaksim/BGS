@@ -2,9 +2,9 @@
 
 The active source graph consists of **33 modules listed below**
 (29 pre-existing modules and 4 fixed-diagonal-kick modules added in PR #56),
-**39 adapted Aristotle/Mathlib modules** and **25 further finite-certificate
+**39 adapted Aristotle/Mathlib modules** and **27 further finite-certificate
 modules imported directly by `Bgs.lean`** (listed below; 20 on main plus `LineE.lean` and
-`LineEResonance.lean` added in PR #57, `LineF.lean` and `LineG.lean` added for Lines F and G, and `LineH.lean` added for Line H), with **97 leaf modules**
+`LineEResonance.lean` added in PR #57, `LineF.lean` and `LineG.lean` added for Lines F and G, `LineH.lean` added for Line H, and `LineI.lean` and `LineIArith.lean` added for Line I), with **99 leaf modules**
 and two aggregators (`Bgs.lean` and `Bgs.Mathlib`). They share the original Lean 4.33.1/Lake project: `Bgs.lean` imports `Bgs.Mathlib`, which reaches every new module. No second project root or duplicate proof tree is maintained.
 
 The [Mathlib coverage map](MATHLIB_LAYER_RU.md) links individual declarations to existing theorem families and their exact proof scope. The [integration receipt](../evidence/formalization/aristotle_20261027/receipt.json) separates the earlier 8,776-job Lean build and 589 public-declaration axiom checks from the later GitHub merge. This is not an independent verification of the full analytic corpus, and it does not close BGS.
@@ -104,6 +104,8 @@ imports Mathlib, which this project does not vendor as in-repo sources (`lake-ma
 | `LineF.lean` | `Bgs.LineF` (BGS-TRACE-197): the combinatorial core of the lifted trace identity — monotone integer step maps, closed vertex chains minus closed edge chains equal one (`count_identity`, `vertex_minus_edge`), with the rounding-map hypotheses stated in each theorem. The analytic trace-class part is not formalised. |
 | `LineG.lean` | `Bgs.LineG` (BGS-TRACE-203, 205): the G1 phase split over ℚ, the Pell recursion/quadratic-form identity, `nsw_dvd` (d ∣ m, m odd ⇒ h_d ∣ h_m, all m, via ℤ√2), and `decide` instances `nsw_3`…`nsw_17` with the h₁₇ factorisation. |
 | `LineH.lean` | `Bgs.LineH` (BGS-TRACE-207, 209): the parity steps of the κ lemma (`h_odd`, `yp_odd`, `k_odd`, `kappa_odd`, `inv49_mod8`), the Gauss-sum residues mod 8 (`sq_residues_mod8`, `shift4`), and the generic chain lemmas `geom_tail` (monotone propagation in m) and `dom_lower` (triangle step). No certificate numbers enter Lean; the Gauss-sum evaluation, the operator theory and the arb certificates are not formalised. |
+| `LineI.lean` | `Bgs.LineI` (BGS-TRACE-212): the finite algebra of the dilation-coset L² law: `cross_term`, `sum_N_sq` (Σ_u N(u)² = d³ + d² − d), `coset_decomp`, and the norm counts `norm_count_7` (Z/7) and `norm_count_23_zero` (Z/23). The Fourier step, the congruence P ≡ y′Nm(α_n) and Prop I2′ are paper proofs. |
+| `LineIArith.lean` | `Bgs.LineIArith` (BGS-TRACE-212, 216, 219): the Pell identity h_m² − 2U_m² = (−1)^m, `two_isSq_mod` (ε = +1 for odd m), `seven_dvd_nsw_iff` (7 ∣ h_m ↔ m ≡ 3 mod 6), `lucasU_two_mul` (U_2m = 2h_mU_m), `primitive_dvd_nsw` and `finite_set_fails`. The primitive-divisor theorem (Bilu–Hanrot–Voutier) is an explicit **hypothesis** and is not formalised. No certificate numbers enter Lean. |
 
 The former isolated `CayleyExceptionalK23.lean` was folded into
 `CayleyEnergy.lean`; generic and exceptional controls share one implementation.

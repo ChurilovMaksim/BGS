@@ -1,0 +1,19 @@
+$ lake env lean ../evidence/executions/20261031/lineI/AxiomsLineI.lean   # 2026-10-31 02:39:18 +0500
+'Bgs.LineI.cross_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineI.sum_N_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineI.normSq_add'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineI.coset_decomp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineI.norm_count_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineI.norm_count_23_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineIArith.nsw_eq' depends on axioms: [propext]
+'Bgs.LineIArith.norm_alpha' does not depend on any axioms
+'Bgs.LineIArith.pell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineIArith.two_isSq_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineIArith.lucasU_two_mul' depends on axioms: [propext]
+'Bgs.LineIArith.nsw_dvd_lucasU_two_mul' depends on axioms: [propext]
+'Bgs.LineIArith.lucasU_two' depends on axioms: [propext]
+'Bgs.LineIArith.nsw_add_six' depends on axioms: [propext]
+'Bgs.LineIArith.seven_dvd_nsw_iff' depends on axioms: [propext, Quot.sound]
+'Bgs.LineIArith.primitive_dvd_nsw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineIArith.finite_set_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0

@@ -1205,6 +1205,66 @@
       "state": "open",
       "source": "mathematics/fixed-map/derandomized_fixed_kick.md",
       "disposition": "30 October 2026 (Line H): open conjecture R_NSW, split from TRACE-179 (owner audit of PR #59); undecided: violated at every m >= 47 with h_m prime by TRACE-209, infinitude of NSW primes unknown. Does not close TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-211",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
+      "disposition": "31 October 2026 (Line I): proved (definitional identity: relative phase split); float check; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-212",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
+      "disposition": "31 October 2026 (Line I): proved (paper proof + Lean core: Gauss-sum algebra, norm counts, eps = +1, 7 | h_m); dilation-coset L^2 law and per-member formula for every odd d | h_m; float checks incl. composite d; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-213",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
+      "disposition": "31 October 2026 (Line I): proved; exact reduction of R' to (E''), (T''), (D), none proved; quantifiers fixed (B5, DF1); refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-214",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
+      "disposition": "31 October 2026 (Line I): proved; Fourier/Ramanujan expansion of weighted horocycle sums; 'diagonal invisible' withdrawn and not registered; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-215",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
+      "disposition": "31 October 2026 (Line I): proved (computer-assisted, arb + float BLAS); d = 7 square term only, m == 3 mod 6, <= 0.01 for m >= 321; cross term not controlled; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-216",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
+      "disposition": "31 October 2026 (Line I): proved (exact integer check mod 8 + paper transfer to the infinite operators); referee Galerkin check; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-217",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
+      "disposition": "31 October 2026 (Line I): proved (computer-assisted); certified 1.262 < |mu| < 1.45 (1.28371 float only); mu0 >= 1.9154712 from TRACE-198/199 (DF3); rig_dom3b v3 after DF4; c(beta) != 0 not certified; R' not disproved; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-218",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
+      "disposition": "31 October 2026 (Line I): proved (orthogonality + Moebius inversion); the 'exactly the resonance terms' reading downgraded to heuristic (DF6); refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-219",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
+      "disposition": "31 October 2026 (Line I): proved modulo the cited primitive-divisor theorem (BHV 2001 Thm 1.4, Carmichael 1913); Lean checks the deduction with it as hypothesis; no size claim (DF7); S-arithmetic obstruction is an assessment; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-220",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
+      "disposition": "31 October 2026 (Line I): open conjecture R'_A (amended mean law); float and heuristic evidence only; TRACE-206 keeps its frozen definition. Does not close TRACE-206, TRACE-148 or BGS-001."
     }
   ],
   "invariants": [

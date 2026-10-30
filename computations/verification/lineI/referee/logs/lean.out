@@ -1,0 +1,14 @@
+'LineI.cross_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LineI.sum_N_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LineI.coset_decomp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LineI.norm_count_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LineI.norm_count_23_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+/workspace/audit/lineI/LineI_ax.lean:118:14: error(lean.unknownIdentifier): Unknown constant `cross_term`
+/workspace/audit/lineI/LineI_ax.lean:119:14: error(lean.unknownIdentifier): Unknown constant `sum_N_sq`
+/workspace/audit/lineI/LineI_ax.lean:120:14: error(lean.unknownIdentifier): Unknown constant `coset_decomp`
+/workspace/audit/lineI/LineI_ax.lean:121:14: error(lean.unknownIdentifier): Unknown constant `norm_count_7`
+/workspace/audit/lineI/LineI_ax.lean:122:14: error(lean.unknownIdentifier): Unknown constant `norm_count_23_zero`
+
+real	4m5.626s
+user	0m41.742s
+sys	0m12.030s

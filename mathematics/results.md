@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Reduction of Conjecture R′ and the d = 7 twisted certificates (Line I), 31 October 2026
+
+[TRACE-211](fixed-map/lineI_rprime_reduction.md) (proved): relative phase split. [TRACE-212](fixed-map/lineI_rprime_reduction.md) (proved; Lean core): the dilation-coset L² law and the per-member Gauss-sum formula Z_t = ω_t Z0/d + Δ_t for every odd d | h_m. [TRACE-213](fixed-map/lineI_rprime_reduction.md) (proved): W′_m = (non-resonant sum) + φ⁻¹ Σ Dev_d(ρ) exactly, so R′ follows from (E″), (T″) and (D); none of these is proved. [TRACE-214](fixed-map/lineI_rprime_reduction.md) (proved): Fourier/Ramanujan expansion of weighted horocycle sums. [TRACE-215](fixed-map/lineI_rprime_reduction.md) (proved, computer-assisted): the d = 7 square term is ≤ 0.01 for every m ≡ 3 (mod 6), m ≥ 321 (k1 kick, η = 2). [TRACE-216](fixed-map/lineI_rprime_reduction.md) (proved): exact monomial intertwiners. [TRACE-217](fixed-map/lineI_rprime_reduction.md) (proved, computer-assisted): three simple top twisted eigenvalues with 1.262 < |μ| < 1.45, so r_tw > √λ/μ₀ and the operator-radius route to the d = 7 cross term fails. [TRACE-218](fixed-map/lineI_rprime_reduction.md) (proved): aliasing/Möbius identity. [TRACE-219](fixed-map/lineI_rprime_reduction.md) (proved modulo BHV): h_m has a new odd prime for every m ≥ 16. [TRACE-220](fixed-map/lineI_rprime_reduction.md) (open): Conjecture R′_A. Limits: [TRACE-206](fixed-map/resonance_classification_lineG.md) (R′) stays open and is neither proved nor disproved; c(β) ≠ 0 is not certified.
+
 ## Certified 49-state spectrum for the Line B kick (Line H), 30 October 2026
 
 [TRACE-207](fixed-map/lineH_49state_certificate.md) (proved): the κ lemma and the full-alphabet 49-state lifted trace identity for the Line B kick. [TRACE-208](fixed-map/lineH_49state_certificate.md) (proved, computer-assisted): at η = 2 and s = −1, V_0 has exactly one eigenvalue in |z| > 1.5, simple, with |μ*| ∈ [1.846834, 1.946835]; the rest of the spectrum is certified inside. [TRACE-209](fixed-map/lineH_49state_certificate.md) (proved, computer-assisted): W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m. Consequence: [TRACE-179](fixed-map/derandomized_fixed_kick.md) (Conjecture R as stated) is refuted. Limits: R_NSW ([TRACE-210](fixed-map/derandomized_fixed_kick.md), split from 179) is open; the odd m with 3 ∤ m in 17–43, 3 | m, η ≠ 2 and s = +1 are not covered; TRACE-196 stays conditional as stated; nothing about BGS itself.
@@ -503,7 +507,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**294 registered claims: 238 proved, 15 verification-pending, 15 conditional, 25 open, 1 refuted.**
+**304 registered claims: 247 proved, 15 verification-pending, 15 conditional, 26 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -669,7 +673,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (185 claims)
+### TRACE family (195 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -858,5 +862,15 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-208` | **PROVED** | Line H: certified spectrum of the 49-state lifted operators for the Line B kick f_B at eta = 2, s = -1 (N == +196) |
 | `BGS-TRACE-209` | **PROVED** | Line H: Conjecture R fails for the Line B kick: W~rest_m(2)/m >= 1.4e4 for every odd m >= 47 with 3 not dividing m |
 | `BGS-TRACE-210` | **OPEN** | Conjecture R_NSW: W~rest_m(eta) = o(m) along m with h_m prime |
+| `BGS-TRACE-211` | **PROVED** | Line I Prop I1: relative phase split Z_m(nu0+delta) = Z_m(nu0) sigmahat(delta) (k1 kick, any unit nu0) |
+| `BGS-TRACE-212` | **PROVED** | Line I Prop I2/I2': dilation-coset L^2 law and per-member Gauss-sum formula for the members Z_m(nu0 + 2hj/d), d odd, d \| h_m |
+| `BGS-TRACE-213` | **PROVED** | Line I Thm I4: exact reduction of Conjecture R' to (E''), (T'') and the dilation remainder (D) |
+| `BGS-TRACE-214` | **PROVED** | Line I Lemma I5': Fourier expansion of weighted horocycle sums of \|Z_nu\|^2 (all residues and units via Ramanujan sums) |
+| `BGS-TRACE-215` | **PROVED** | Line I Thm I6 v2: certified bound on the d = 7 dilation square term for the k1 kick at eta = 2, rho = (+-2,8), all m == 3 (mod 6) |
+| `BGS-TRACE-216` | **PROVED** | Line I: exact monomial intertwiners between the eight (m mod 24, a = +-2) cases of the (+-2,8) twisted G2 operators and the beta -> -beta reflection |
+| `BGS-TRACE-217` | **PROVED** | Line I Thm I9: certified top twisted spectrum for d = 7 (classes 1:3, 2:1): three simple eigenvalues with 1.262 < \|mu\| < 1.45, so r_tw > sqrt(lambda)/mu0 |
+| `BGS-TRACE-218` | **PROVED** | Line I: aliasing (Moebius) identity for the unit-residue mean F_m |
+| `BGS-TRACE-219` | **PROVED** | Line I: unbounded prime support of h_m (a new odd prime for every m >= 16; every finite prime set fails for all large m) |
+| `BGS-TRACE-220` | **OPEN** | Line I: Conjecture R'_A (amended mean law with actual dilation-member values) for the k1 kick at eta = 2 |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

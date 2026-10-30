@@ -1,0 +1,27 @@
+== k1 m=13: cells (y-band, x-quarter, phi/15deg): count/expected and weighted mean x
+  y[0.87,1): n=    2080 cells x: min=0.256 max=2.030 sd=0.312
+  y[1.00,2): n=   14756 cells x: min=0.814 max=1.170 sd=0.078
+  y[1.50,3): n=   14992 cells x: min=0.790 max=1.224 sd=0.090
+  y[3.00,10): n=   10410 cells x: min=0.791 max=1.230 sd=0.110
+  y[10.00,1000000000): n=    4406 cells x: min=0.661 max=2.408 sd=0.398
+  unweighted count z-scores vs Haar: rms=0.95 max=2.5 (y<3 cells only meaningful)
+  phi-profile y[1.5,3) (15deg bins from 0): 0.946 0.952 0.976 0.971 0.915 1.043 1.002 0.977 0.916 0.944 1.000 0.955
+  phi-profile y[3,10) (15deg bins from 0): 0.878 0.905 0.917 0.890 1.054 1.090 1.083 0.945 0.937 0.962 0.898 0.936
+== k1 m=15: cells (y-band, x-quarter, phi/15deg): count/expected and weighted mean x
+  y[0.87,1): n=   10148 cells x: min=0.758 max=1.358 sd=0.125
+  y[1.00,2): n=   71152 cells x: min=0.918 max=1.133 sd=0.049
+  y[1.50,3): n=   70612 cells x: min=0.932 max=1.135 sd=0.039
+  y[3.00,10): n=   49970 cells x: min=0.942 max=1.223 sd=0.064
+  y[10.00,1000000000): n=   21316 cells x: min=0.911 max=2.238 sd=0.272
+  unweighted count z-scores vs Haar: rms=1.10 max=3.7 (y<3 cells only meaningful)
+  phi-profile y[1.5,3) (15deg bins from 0): 1.051 0.993 1.028 1.002 1.014 1.063 1.034 1.007 1.020 1.021 1.012 1.026
+  phi-profile y[3,10) (15deg bins from 0): 1.011 0.997 0.980 0.984 1.046 1.108 1.120 1.049 0.983 0.966 1.014 1.039
+== k1 m=17: cells (y-band, x-quarter, phi/15deg): count/expected and weighted mean x
+  y[0.87,1): n=   71548 cells x: min=0.887 max=1.140 sd=0.043
+  y[1.00,2): n=  506836 cells x: min=0.971 max=1.036 sd=0.013
+  y[1.50,3): n=  506936 cells x: min=0.965 max=1.037 sd=0.018
+  y[3.00,10): n=  354624 cells x: min=0.952 max=1.135 sd=0.039
+  y[10.00,1000000000): n=  151868 cells x: min=0.944 max=2.042 sd=0.225
+  unweighted count z-scores vs Haar: rms=0.96 max=2.4 (y<3 cells only meaningful)
+  phi-profile y[1.5,3) (15deg bins from 0): 0.997 0.996 1.001 0.972 0.992 1.019 1.022 0.993 0.977 1.001 1.000 0.998
+  phi-profile y[3,10) (15deg bins from 0): 1.003 0.990 0.985 0.975 1.014 1.090 1.077 1.006 0.986 0.985 0.986 1.006
