@@ -290,7 +290,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-190](../mathematics/fixed-map/resonant_residue_lineE.md) | open | `BGS-TRACE-163`, `BGS-TRACE-183` | None registered | 1 |
 | [BGS-TRACE-191](../mathematics/fixed-map/resonant_residue_lineE.md) | open | `BGS-TRACE-185` | None registered | 0 |
 | [BGS-TRACE-192](../mathematics/fixed-map/resonant_residue_lineE.md) | open | `BGS-TRACE-182`, `BGS-TRACE-190` | None registered | 0 |
-| [BGS-TRACE-193](../mathematics/fixed-map/resonant_residue_lineE.md) | verification-pending | `BGS-TRACE-163`, `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-187` | None registered | 0 |
-| [BGS-TRACE-194](../mathematics/fixed-map/resonant_residue_lineE.md) | verification-pending | `BGS-TRACE-163`, `BGS-TRACE-183`, `BGS-TRACE-184` | None registered | 1 |
-| [BGS-TRACE-195](../mathematics/fixed-map/resonant_residue_lineE.md) | verification-pending | `BGS-TRACE-163`, `BGS-TRACE-165`, `BGS-TRACE-170` | None registered | 0 |
+| [BGS-TRACE-193](../mathematics/fixed-map/resonant_residue_lineE.md) | proved | `BGS-TRACE-163`, `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-187` | None registered | 0 |
+| [BGS-TRACE-194](../mathematics/fixed-map/resonant_residue_lineE.md) | proved | `BGS-TRACE-163`, `BGS-TRACE-183`, `BGS-TRACE-184` | None registered | 1 |
+| [BGS-TRACE-195](../mathematics/fixed-map/resonant_residue_lineE.md) | proved | `BGS-TRACE-163`, `BGS-TRACE-165`, `BGS-TRACE-170` | None registered | 0 |
 | [BGS-TRACE-196](../mathematics/fixed-map/resonant_residue_lineE.md) | conditional | `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-179`, `BGS-TRACE-194` | None registered | 0 |

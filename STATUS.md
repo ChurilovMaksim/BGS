@@ -18,8 +18,8 @@ Registry schema `bgs-claims-v1`; registry updated
 
 | Registered state | Claims |
 |---|---:|
-| proved | 226 |
-| verification-pending | 18 |
+| proved | 229 |
+| verification-pending | 15 |
 | conditional | 15 |
 | open | 21 |
 | **Total** | **280** |
@@ -43,8 +43,8 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 23 |
 | RET | 3 | 0 | 1 | 0 | 4 |
-| TRACE | 128 | 16 | 10 | 17 | 171 |
-| **Total** | 226 | 18 | 15 | 21 | **280** |
+| TRACE | 131 | 13 | 10 | 17 | 171 |
+| **Total** | 229 | 15 | 15 | 21 | **280** |
 
 ## Open programme obligations
 

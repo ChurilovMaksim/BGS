@@ -10,7 +10,8 @@
 
 **Review state.**
 - Claims 183–192 (E1–E10) were audited by an independent referee. The report is `computations/verification/lineE/referee/REPORT.md`. Every required fix F1–F13 and every nit is applied below. Each section marks where a fix is applied with **[F#]**.
-- Claims 193–196 (E11–E14) are new in this revision (the "step 2" extension). **They have not been refereed.** They are registered as *verification-pending* (E11–E13) or *conditional* (E14).
+- Claims 193–196 (E11–E14) are the "step 2" extension. They were audited by a second independent referee (`computations/verification/lineE/referee2/REPORT.md`, verdict "merge after fixes"). Its required fixes R1–R7 and the correct nits N1–N11 are applied below, marked **[R#]** / **[N#]**. E11–E13 are registered as *proved* (E11 and E13 computer-assisted; E13 for m = 11, 13 only) and E14 as *conditional*.
+- **Rounding convention [R1].** Every certified bound is quoted in the safe direction: lower bounds rounded down, upper bounds rounded up, enclosures rounded outward. The exact values are in the cited JSON logs.
 
 **Labels.**
 - **[P]**: proved here, using the cited inputs.
@@ -39,8 +40,8 @@ What is and is not shown.
   - all m, but conditional: E6 [C].
 - For the TRACE-179 kick f_B the results are:
   - (i) numerical identifications (E8, E10);
-  - (ii) an exact law (E12, not yet refereed);
-  - (iii) rigorous finite-m lower bounds at m = 11 and 13 (E13, not yet refereed; an m = 17 certificate is running, with a pre-registered prediction, and nothing is claimed for it);
+  - (ii) an exact law (E12);
+  - (iii) rigorous finite-m lower bounds at m = 11 and 13 (E13; an m = 17 certificate is running, with a pre-registered prediction, and nothing is claimed for it);
   - (iv) a conditional asymptotic statement along 3 ∤ m (E14).
 - **Conjecture R (TRACE-179) is not disproved.** It is an o(m) statement as m → ∞. Finitely many m cannot contradict it, and the asymptotic statements are conditional. TRACE-179 stays **open**.
 - Nothing here is a counterexample to BGS (TRACE-005), and nothing concerns eigenvalue statistics beyond the second moment of Tr U^m. No progress on TRACE-148 is claimed.
@@ -66,21 +67,21 @@ The notation is that of BGS-TRACE-163:
 | BGS-TRACE-184 | E2 | Exact IFS law Z_L = (1−λ^{−m}) Σ_{a even} c_a Tr 𝓛_a^m, operators independent of m; **finite alphabet** | [P] | proved |
 | BGS-TRACE-185 | E3 | Certified spectrum of the L-truncated k1 operators (η-grid of 9 points) | [CA] | proved (computer-assisted) |
 | BGS-TRACE-186 | E4 | \|Z_L(m)\| ≥ (1−λ^{−m})·½(μ_lo^m − 4T₁r₂^{m−1}) > 0 for all odd m ≥ m0 (truncated k1 kick) | [CA] | proved (computer-assisted) |
-| BGS-TRACE-187 | E5 | Physical k1 kick: η = 2, odd m ∈ [17,39], W̃rest_m/m ≥ 7.98…2848; η = 1.75 for m ∈ [19,27]; η = 1.5 for m ∈ [23,33] | [CA] | proved (computer-assisted; k1, finite range) |
+| BGS-TRACE-187 | E5 | Physical k1 kick: η = 2, odd m ∈ [17,39], W̃rest_m/m ≥ 7.97…2847; η = 1.75 for m ∈ [19,27]; η = 1.5 for m ∈ [23,33] | [CA] | proved (computer-assisted; k1, finite range) |
 | BGS-TRACE-188 | E6 | k1-kick analogue of R fails at η = 2, *if* H∞ holds | [C] | conditional |
 | BGS-TRACE-189 | E7 | m = 15 prediction vs outcome (k1) | [N] | open (numerical record) |
 | BGS-TRACE-190 | E8 | f_B: giant traces at N ≡ ∓196 (mod h_m) when 3 ∤ m; diluted when 3 \| m | [N] | open |
 | BGS-TRACE-191 | E9 | η-interval certification | — | open |
 | BGS-TRACE-192 | E10 | The TRACE-182 outlier is the ±196 resonance | [N] (+E13) | open (numerical identification) |
 
-**New in this revision, not yet refereed (E11–E14).**
+**Step 2 (E11–E14), audited by the second referee.**
 
 | ID | # | statement (scope) | label | state |
 |---|---|---|---|---|
-| BGS-TRACE-193 | E11 | Pure 7-mode kick: Z_{f7}(ν) = Z_{k1}(49ν). Hence the E5 bounds hold verbatim for f7 at 3 ∤ m | [P] [CA] [Lean nsw mod 7] | verification-pending |
-| BGS-TRACE-194 | E12 | a²-resonance law, N ≡ ∓4a² (mod h): 49-state IFS law for f_B at N ≡ ∓196 when 3 ∤ m; finite alphabet | [P] [Lean m ≤ 19] | verification-pending |
-| BGS-TRACE-195 | E13 | Gauss-completed orbit formula (Prop. G), and rigorous lower bounds for the **TRACE-179 kick** at m = 11 and 13 (m = 17 certificate pending) | [P] [CA] | verification-pending |
-| BGS-TRACE-196 | E14 | If the full-alphabet 49-state operator has a dominant simple eigenvalue \|μ\| > λ^{1/4} (H∞,7), then R fails for f_B at η = 2 along 3 ∤ m | [C] | conditional |
+| BGS-TRACE-193 | E11 | Pure 7-mode kick: Z_{f7}(ν) = Z_{k1}(49ν). Hence the E5 bounds hold verbatim for f7 at 3 ∤ m | [P] [CA] [Lean nsw mod 7] | proved (computer-assisted via 187) |
+| BGS-TRACE-194 | E12 | a²-resonance law, N ≡ ∓4a² (mod h): 49-state IFS law for f_B at N ≡ ∓196 when 3 ∤ m; m-independent operators; finite alphabet | [P] [Lean m ≤ 19] | proved |
+| BGS-TRACE-195 | E13 | Gauss-completed orbit formula (Prop. G), and rigorous lower bounds for the **TRACE-179 kick** at m = 11 and 13 only (an m = 17 certificate is pending; nothing claimed) | [P] [CA] | proved (computer-assisted; m = 11, 13 only) |
+| BGS-TRACE-196 | E14 | If, for some sign s, the full-alphabet 49-state s-family has a dominant simple eigenvalue \|μ_s\| > λ^{1/4} (H∞,7), then R fails for f_B at η = 2 along 3 ∤ m | [C] | conditional |
 
 **Non-claims.**
 - Not a BGS counterexample. Nothing about level statistics. Nothing about TRACE-148.
@@ -206,17 +207,17 @@ Method: `code/cert.py`, python-flint/arb at 700–1200 bits.
 - *Determinism.* numpy is used only to precondition (the approximate eigenvector). b11 can vary between runs: at the 1e-88 level in the referee rerun, and by up to 1.3e-61 (sector-4 midpoint) in the regeneration below. The certified enclosures do not depend on this: the regenerated |μ*| bounds and all sector certifications are identical to the refereed run.
 - *Regeneration.* All nine certificates were regenerated with the fixed code (`code/run_certs.sh`). The logs are in `computations/verification/lineE/logs/`.
 
-| cert | η | L | K | \|μ*\| ∈ | r₁ | r₂ | m0 (E4) |
+| cert | η | L | K | \|μ*\| ∈ (rounded outward) [R1] | r₁ | r₂ | m0 (E4) |
 |---|---|---|---|---|---|---|---|
-| cert_L6 | 2.0 | 6 | 100 | [1.9154751, 1.9154771] | 1e-6 | 1.0 | 17 |
-| cert_L8b_eta2 | 2.0 | 8 | 170 | b11 ± 0.05 = [1.86547, 1.96547] | 0.05 | 1.0 | 19 |
-| cert_L6_eta1.25 | 1.25 | 6 | 100 | [1.65975, 1.75975] | 0.05 | 1.0 | 17 |
-| cert_L6_eta1.5 | 1.5 | 6 | 100 | [1.76190, 1.86190] | 0.05 | 1.0 | 17 |
-| cert_L6_eta1.75 | 1.75 | 6 | 100 | [1.83180, 1.93180] | 0.05 | 1.0 | 17 |
-| cert_L6r145_eta2.25 | 2.25 | 6 | 100 | [1.86083, 1.96083] | 0.05 | 1.45 | 41 |
-| cert_L6r145_eta2.5 | 2.5 | 6 | 100 | [1.81757, 1.91757] | 0.05 | 1.45 | 49 |
-| cert_L6r145_eta2.75 | 2.75 | 6 | 100 | [1.73712, 1.83712] | 0.05 | 1.45 | 63 |
-| cert_L6r145_eta3.0 | 3.0 | 6 | 100 | [1.62250, 1.72250] | 0.05 | 1.45 | 103 |
+| cert_L6 | 2.0 | 6 | 100 | [1.9154750, 1.9154771] | 1e-6 | 1.0 | 17 |
+| cert_L8b_eta2 | 2.0 | 8 | 170 | b11 ± 0.05 ⊂ [1.86547, 1.96548] | 0.05 | 1.0 | 19 |
+| cert_L6_eta1.25 | 1.25 | 6 | 100 | [1.65975, 1.75976] | 0.05 | 1.0 | 17 |
+| cert_L6_eta1.5 | 1.5 | 6 | 100 | [1.76189, 1.86190] | 0.05 | 1.0 | 17 |
+| cert_L6_eta1.75 | 1.75 | 6 | 100 | [1.83179, 1.93180] | 0.05 | 1.0 | 17 |
+| cert_L6r145_eta2.25 | 2.25 | 6 | 100 | [1.86083, 1.96084] | 0.05 | 1.45 | 41 |
+| cert_L6r145_eta2.5 | 2.5 | 6 | 100 | [1.81757, 1.91758] | 0.05 | 1.45 | 49 |
+| cert_L6r145_eta2.75 | 2.75 | 6 | 100 | [1.73712, 1.83713] | 0.05 | 1.45 | 63 |
+| cert_L6r145_eta3.0 | 3.0 | 6 | 100 | [1.62249, 1.72250] | 0.05 | 1.45 | 103 |
 
 Notes:
 - For r₁ = 0.05 the enclosure is just b11 ± 0.05 (nit). It certifies at r₁ = 1e-6 for L = 6, η = 2.
@@ -231,12 +232,12 @@ Notes:
 - F_m ≥ |Z(ν*)|²/φ(2h), with φ(2h) = φ(h) ≤ h − 1.
 - W̃rest_m ≥ F_m − 4m.
 
-η = 2, k1 kick (best of L = 6 and L = 8):
+η = 2, k1 kick (best of L = 6 and L = 8; lower bounds rounded down [R1]; exact values in `logs/cert_L6_bounds.json` and `logs/cert_L8b_eta2_bounds.json`):
 
 | m | 17 | 19 | 21 | 23 | 25 | 27 | 29 | 31 | 33 | 35 | 37 | 39 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| F_m/2m ≥ | 5.99 | 20.3 | 36.0 | 44.1 | 88.0 | 167 | 310 | 554 | 927 | 1355 | 1426 | 404 |
-| W̃rest_m/m ≥ | 7.98 | 36.6 | 68.0 | 84.3 | 172 | 331 | 616 | 1104 | 1851 | 2706 | 2848 | 804 |
+| F_m/2m ≥ | 5.98 | 20.2 | 35.9 | 44.1 | 87.9 | 167 | 310 | 554 | 927 | 1354 | 1425 | 403 |
+| W̃rest_m/m ≥ | 7.97 | 36.5 | 67.9 | 84.2 | 171 | 330 | 616 | 1104 | 1850 | 2705 | 2847 | 803 |
 
 **Violation range vs positivity range [F2].** |W̃rest_m| > m needs F/2m > 2.5, and W̃rest > 0 needs F/2m > 2.
 
@@ -245,7 +246,7 @@ Notes:
 | 2.0 | m ∈ [17,39] | **m ∈ [17,39]** |
 | 1.75 | m ∈ [17,27] | **m ∈ [19,27]** |
 | 1.5 | m ∈ [17,33] | **m ∈ [23,33]** |
-| 1.25 | m ∈ [17,41] | **none** (F/2m ≥ 0.45 at most) |
+| 1.25 | m ∈ [17,41] | **none** (every certified lower bound on F/2m is < 0.448) |
 | ≥ 2.25 | empty physical range at L = 6 | none |
 
 Further notes:
@@ -290,8 +291,8 @@ The referee's suggested route, recorded and not attempted: H²/H^∞ on thin sta
 | 13 | 8.590 | 6.458 | 2.132 |
 
 - This is a numerical identification of the TRACE-182 outlier.
-- E13 below gives **rigorous** lower bounds for the ±196 contributions at m = 11, 13: 3.5227 and 6.4579, which match the table. So the outlier is not a numerical artefact.
-- A proved *mechanism* for all m is still missing: E14 is conditional. TRACE-182 therefore stays **open**.
+- E13 below gives **rigorous** lower bounds for the ±196 contributions at m = 11, 13 [R2]: F/2m ≥ 3.5221 and ≥ 6.4576 from the residues ±196 alone, consistent with the table. So the outlier is not a numerical artefact.
+- TRACE-182 stays **open** [N8]: its closure condition concerns (m, η) = (11, 2). The ±196 share is bounded rigorously and governed by the exact law E12, but the residual F/2m ≈ 2.04 (the part not carried by ±196) is not rigorously controlled. A mechanism for all m (E14) is a separate, conditional statement.
 
 **TRACE-180 [F3].**
 - The ν-law at η ≈ 2 has two atoms, each of mass 1/φ(2h) → 0, carrying |Z|² ≈ Λ^{2m}.
@@ -300,9 +301,9 @@ The referee's suggested route, recorded and not attempted: H²/H^∞ on thin sta
 
 ---------------------------------------------------------------------------------------------------
 
-## 10. Step 2 (new, not yet refereed): from k1 to the actual Line B kick
+## 10. Step 2: from k1 to the actual Line B kick (second referee audit)
 
-Everything in §10 is new in this revision. It has been self-checked with code independent of the E1–E10 code. It has **not** been seen by the referee. The verifiers are in `computations/verification/lineE/step2/`.
+Everything in §10 was added in step 2. It was self-checked with code independent of the E1–E10 code and then audited by a second independent referee, who re-derived E11, E12 and Prop. G on paper and reproduced the checks with its own code (`computations/verification/lineE/referee2/`). The author verifiers are in `computations/verification/lineE/step2/`.
 
 ### 10.1 E11, the pure 7-mode kick — BGS-TRACE-193 [P] [CA] [Lean]
 
@@ -319,7 +320,9 @@ Everything in §10 is new in this revision. It has been self-checked with code i
 2. If 3 ∤ m then 7 ∤ h_m (Lean `nsw_mod7`: nsw j ≡ 0 (mod 7) ⟺ j ≡ 1 (mod 3), with m = 2j+1). So 49 is a unit mod g′ = 2h, and ν ↦ 49ν permutes the units. Hence F(f7) = F(k1).
 3. B^sym is kick-independent (TRACE-165). Both kicks are even, so χ_m ≡ 1 for both. Hence W̃rest agrees. ∎
 
-**Check** (`step2/check_f7.py`, Prop. G over all units, no truncation): Z_{f7}(ν) = Z_{k1}(49ν) to ≤ 2e-8 absolute at m = 5, 7, 11, and F(f7) = F(k1) to 1e-14 relative there. At m = 9 (3 | m) F(f7) = 32.88 ≠ F(k1) = 87.11, so the hypothesis 3 ∤ m is genuinely needed. The k1 values F_m/2m = 1.843, 2.805, 4.839, 6.894 reproduce the referee's exact class sums.
+**Check** (`step2/check_f7.py`, Prop. G over all units, no truncation): |Z_{f7}(ν)|² = |Z_{k1}(49ν)|² to ≤ 1.6e-8 absolute (the log compares |Z|²) at m = 5, 7, 11 [N1], and F(f7) = F(k1) to 1e-14 relative there. At m = 9 (3 | m) F(f7) = 32.88 ≠ F(k1) = 87.11, so the hypothesis 3 ∤ m is genuinely needed. The k1 values F_m/2m = 1.843, 2.805, 4.839, 6.894 reproduce the referee's exact class sums.
+
+**Second referee.** Paper proof re-derived. Rigorous check with the referee's interval kernel at m = 7: the |Z|² enclosures of Z_{f7} at N ≡ −196 and of Z_{k1} at N ≡ −4 both lie in [2220.05341290628, 2220.05341290657], and those at N ≡ +196 and N ≡ +4 both lie in [2244.37816549711, 2244.37816549744] (rounded outward; `referee2/logs/ivcert.jsonl`). The m = 9 control fails as it should (196 is not invertible mod h_9).
 
 **Scope.** f7 is **not** the TRACE-179 kick. f_B has 13 further modes, of size up to 1/20.
 
@@ -385,7 +388,12 @@ At finite N (TRACE-163 Thm 1), s·c is replaced by s·c(1 + s·4a²/N).
 
 **Remarks.**
 - For a = 1 the theorem reduces to E1/E2 (κ only, no γ-term).
-- For a = 7, γ ∈ {11, 38} (one value per root r), independent of m for m ≤ 41. It equals −s·ι(c), with ι(c) = ι(1/(4√2)). This identity is observed [N] (`step2/cert49_py.log`); it is not needed.
+- **Lemma (γ is independent of m) [R3].** Under the hypotheses of E12, γ ≡ −s·ι(c) = −s·r/8 (mod a²) for every m, where c = 1/(4√2) = √2/8. *Proof* (second referee, `referee2/REPORT.md` §2):
+  - mod a², 4a²ν + s = kh gives k ≡ s·h⁻¹; and v = (1 − ua²)/8 ≡ 8⁻¹;
+  - by step 4, β̄λ^{−m} = β, so B(1 − ℓ^{−m}) = ι(β̄ − β) = ι(√2h/2) = rh/2;
+  - hence γ = −k·v·2B(1 − ℓ^{−m}) ≡ −s·h⁻¹·8⁻¹·rh = −s·r/8 = −s·ι(c). ∎
+  - **Consequence.** The operators 𝓛_b of E12 do not depend on m; only the coefficients c_b do, through κ. The statement "m-independent operators" (manuscript, BGS-TRACE-194) and E14 use exactly this.
+  - For a = 7 and the root r ≡ 10 (mod 49) used in Lean (ℓ⁻¹ ≡ 32), γ = 11 for s = +1 and γ = 38 for s = −1; the other root r ≡ −10 swaps them. This agrees with the exact checks (`step2/cert49_py.log`, all odd m ≤ 41 with 3 ∤ m) and with Lean (m ≤ 19). The general-m identity is not formalised in Lean.
 - For a = 3, 5, 11 there is no √2 mod a², and E12 does not apply.
 
 **Checks.**
@@ -397,12 +405,14 @@ At finite N (TRACE-163 Thm 1), s·c is replaced by s·c(1 + s·4a²/N).
   - `cert49_11_control` (wrong γ) evaluates to false.
   - `nsw_mod7` proves 7 | h_m ⟺ 3 | m for all m.
 - **Independent physical check** (`step2/check_finiteN.py`, finite-N form). The direct trace |Tr U_N^m|² for the **Line B kick** at m = 11, N = 7923 = h − 196 is 262377.67. It comes from the matrix-free code `review/indep_trace_full.py`, which shares no code with step 2. The 49-state law (L = 48, K = 30/40) gives 262391.35, a relative difference of 5.2e-5. This residual is consistent with the truncation L = 48 of ĝ, as in the infinite-N comparison below.
-  - At N = 43 (m = 7) the effective coupling c(1+196/N) ≈ 5.6c puts the Galerkin computation outside its regime. It diverges, and this case is recorded as not tested.
+  - At N = 43 (m = 7) the effective coupling is c(1+196/N) ≈ 5.6c, and the float Galerkin computation is numerically unstable there (values ≈ 1e198). This case is recorded as not tested [N6].
+  - The 5.2e-5 residual at m = 11 is explained by the truncation: L = 48 sits just below the n = 49 harmonic of the 7-mode (J_7(1.8) ≈ 1e-4). A cleaner check would use L ≥ 56 [N6].
 - `step2/cmp_full.py` (infinite N, Line B kick, η = 2): the law (L = 40, K = 30) vs the referee's exact class sums agrees to 1e-4…4e-3 at m = 5, 7, 11, 13.
+- **Second referee** (own code, `referee2/code/`): the phase identity with the theorem's own κ, γ formulas, 178/178 cases (a ∈ {1, 7, 17, 23, 31}, odd m ≤ 25, s = ±1, both roots; 20 cases correctly skipped by gcd or (ii)); the trace law against an independent 49-state Galerkin, 5e-15 to 7e-14 (m = 5, 7; a = 1, 7; s = ±1; both roots); the γ+1 control fails at O(1) (`referee2/logs/e12_phase.log`, `e12_trace.log`).
 
 ### 10.3 E13, Gauss completion and rigorous bounds for the TRACE-179 kick — BGS-TRACE-195 [P] [CA]
 
-**Proposition G (exact orbit formula on the support).** Let m be odd, ν a unit mod 2h, and t = (16ν)⁻¹ mod h. Let z_j = a_jz₀ + b_jz₁ (mod h) denote the q-sequences mod h: z_{j+1} = 6z_j − z_{j−1}, periodic since T^m ≡ I (mod h). Then
+**Proposition G (exact orbit formula on the support).** Let the kick satisfy Σ_n |ĝ(n)| < ∞ (needed for the Poisson step of TRACE-163 Theorem 3) [N2]. Let m be odd, ν a unit mod 2h, and t = (16ν)⁻¹ mod h. Let z_j = a_jz₀ + b_jz₁ (mod h) denote the q-sequences mod h: z_{j+1} = 6z_j − z_{j−1}, periodic since T^m ≡ I (mod h). Then
 
   |Z_m(ν)| = h⁻¹ |Σ_{(z₀,z₁)∈(Z/h)²} e(t·R(z)/h) Π_{j<m} g(½ + z_j/h)|,  where R(z) := 2zᵀHz/h mod h.
 
@@ -423,6 +433,7 @@ R is a binary quadratic form mod h in (z₀, z₁). Its coefficients (A, B, C) a
 **Remarks.**
 - Observed [N]: R = −ȳ′·(z₀² − 6z₀z₁ + z₁²) (mod h). This agrees with the referee's independent class-sum formula, which has v = −16̄ν̄ȳ′ (referee §3.1). It is not used: the certificate computes A, B, C directly and checks R at 200 random points.
 - Prop. G uses no truncation of ĝ. The values g(½ + z/h) = e^{iηf(½+z/h)} are evaluated directly.
+- Second referee: Prop. G against a brute n-sum for a non-even kick with complex Fourier coefficients, all units: 4e-8 at m = 3; 2.8e-4 → 6e-6 at m = 5 as L = 9 → 12. The sign-flipped phase fails (relative error 4.8 and 25) (`referee2/logs/propG_nsum*.log`).
 - Check `step2/check_propG.py`: Prop. G vs brute-force n-sum (k1), m = 5, L = 9: relative ≤ 7e-7 at the resonant and at non-resonant ν. At m = 7, L = 4 the n-sum is truncation-limited (1e-2).
 
 **Certificate** (`step2/cert_class.py` + `step2/zres.c`). It certifies lower bounds on |Z_m(ν)|² at N ≡ ∓196 for the **exact Line B kick f_B**.
@@ -430,9 +441,10 @@ R is a binary quadratic form mod h in (z₀, z₁). Its coefficients (A, B, C) a
 Inputs:
 - The kick coefficients are exact rationals, asserted equal to `model.py fCoeff(k,0)`.
 - Tables of g(½+k/h) and e(k/h) are computed in arb (96 bits) and rounded to double. The measured error is eps.
+- The certificate evaluates four residues, N ≡ ±196 and N ≡ ±4. The F bound recorded in `cert_class.jsonl` (`F_lower`) sums all four; the ±196-only bound is quoted separately below [R2, N3].
 
 Kernel:
-- IEEE double, without FMA contraction or fast-math.
+- IEEE double, without FMA contraction or fast-math. The guarantee depends on this [N4]: with `-march=native` alone GCC emits FMA instructions. `zres.c` therefore carries `#pragma GCC optimize("fp-contract=off")`, and `step2/build_zres.sh` builds with the documented flags and refuses a binary whose disassembly contains FMA instructions. An FMA build would need its own error analysis.
 - Rows are summed in double. Row totals are accumulated in x87 long double (u_L = 2⁻⁶⁴).
 
 A-priori error bound (`errbound`), with u = 2⁻⁵³ and n = h:
@@ -441,43 +453,46 @@ A-priori error bound (`errbound`), with u = 2⁻⁵³ and n = h:
 - *Row totals.* ≤ √2·γ_{n+T+2}(u_L)·n²(1+e_m)(1+γ_n), where T is the number of threads.
 
 The resulting bound on |S − S_exact| is subtracted from |S|, which is padded by (1 − 2⁻⁵⁰) for the output and abs() roundings. The final bounds are:
-- F_m ≥ (|Z(ν₊)|² + |Z(ν₋)|²)/φ(2h);
+- F_m ≥ Σ_{residues} |Z(ν)|²/φ(2h), over the evaluated residues (every term of the average defining F_m is ≥ 0);
 - W̃rest_m ≥ F_m − 4m.
 
-Results (η = 2, Line B diagonal kick f_B; `step2/cert_class.jsonl`):
+Results (η = 2, Line B diagonal kick f_B; `step2/cert_class.jsonl`; lower bounds rounded down, error bounds rounded up [R1]):
 
-| m | h | \|Z\|² ≥ at N ≡ −196 | \|Z\|² ≥ at N ≡ +196 | F_m/2m ≥ | W̃rest_m/m ≥ | abs. error bound on S |
-|---|---|---|---|---|---|---|
-| 11 | 8119 | 290544.5725 | 309515.7860 | 3.5227 | 3.0454 | 8.4e-5 |
-| 13 | 47321 | 3628100.5005 | 4203360.8595 | 6.4579 | 8.9159 | 1.7e-2 |
-| 17 | 1607521 | *pending* | *pending* | *pending* | *pending* | — |
+| m | h | \|Z\|² ≥ at N ≡ −196 | \|Z\|² ≥ at N ≡ +196 | F_m/2m ≥ (±196 alone) | W̃rest_m/m ≥ (±196 alone) | F_m/2m ≥ (±196, ±4) | W̃rest_m/m ≥ (±196, ±4) | a-priori error bound on S | referee interval width on S |
+|---|---|---|---|---|---|---|---|---|---|
+| 11 | 8119 | 290544.5724 | 309515.7860 | 3.5221 | 3.0442 | 3.5227 | 3.0454 | 8.5e-5 | 5e-6 |
+| 13 | 47321 | 3628100.5005 | 4203360.8594 | 6.4576 | 8.9152 | 6.4579 | 8.9158 | 1.7e-2 | 5e-4 |
+| 17 | 1607521 | *pending* | *pending* | *pending* | *pending* | *pending* | *pending* | — | — |
 
-- m = 5 and 7 reproduce the referee's exact class sums. At m = 11 and 13, the certified F/2m bounds from the two residues alone are within 1e-4 of the referee's "carried by ±196" column (3.522, 6.458).
+- m = 5 and 7 reproduce the referee's exact class sums. At m = 11 and 13, the certified ±196-only bounds (3.5221, 6.4576) are consistent with the first referee's "carried by ±196" column (3.522, 6.458) [R2].
+- **Independent reproduction (second referee).** A directed-rounding interval kernel (`referee2/code/ivsum.c`, `ivcert.py`; outward-rounded arb tables at 160 bits, FE_UPWARD with a runtime rounding-mode self-test), sharing no code with `zres`, gives |Z|² ∈ [290544.5724756, 290544.5724762] and [309515.7860440, 309515.7860447] at m = 11, and [3628100.501866, 3628100.501904] and [4203360.860882, 4203360.860925] at m = 13. All four intervals lie above the quoted lower bounds (`referee2/logs/ivcert_m11*.out`, `ivcert_m13.out`). The referee also audited the `zres` error analysis line by line and found it sound.
 - Predictions from the 49-state law (L = 48, K = 40, ρ = 2.2) are in `step2/predictions.jsonl`, written 2026-10-30 07:40–07:41 CET.
   - m = 11: 290557 and 309515. m = 13: 3628327 and 4203526. These were computed *after* the m = 11, 13 certificates, so they are consistency checks only.
-  - m = 17: 5.66587e8 (N ≡ −196) and 7.04767e8 (N ≡ +196). These were written while the m = 17 certificate was running (started 07:39:56 CET), before its result existed. This is a genuine pre-registered prediction; the outcome is still pending.
+  - m = 17: 5.66587e8 (N ≡ −196) and 7.04767e8 (N ≡ +196). These were written while the m = 17 certificate was running (started 07:39:56 CET), before its result existed. The JSONL timestamps are self-written; the external timestamp is the push of commit e3b83dcb to GitHub (PR #57 opened 2026-10-30 09:20:32 CET), while the certificate was still running [N5]. This is a genuine pre-registered prediction; the outcome is still pending.
   - Certified m = 17 values: **pending.** The certificate was still running when this revision was committed, so no m = 17 bound is claimed anywhere in this revision. When it finishes, its two values are to be compared with the predictions above; the comparison is a test of the 49-state law (E12/E14), not an input to any claim.
 
-**What E13 proves.** For the TRACE-179 kick at η = 2, |W̃rest_m(2)| > m at m = 11 and 13 (m = 17 certificate pending). In particular F_11(2)/2m ≥ 3.52, so the TRACE-182 outlier is genuine and is carried by the ±196 residues. **What it does not prove:** anything about m → ∞. R is untouched.
+**What E13 proves.** For the TRACE-179 kick at η = 2, |W̃rest_m(2)| > m at m = 11 and 13 only (m = 17 certificate pending). In particular F_11(2)/2m ≥ 3.5221 from the ±196 residues alone, so the ±196 part of the TRACE-182 outlier is genuine. **What it does not prove:** anything about m → ∞. R is untouched.
 
 ### 10.4 E14, conditional asymptotic failure of R for the TRACE-179 kick along 3 ∤ m — BGS-TRACE-196 [C]
 
-**Hypothesis H∞,7.** Let 𝓛_b^{(∞)} be the full-alphabet (all n ∈ Z) 49-state operators of E12 for f_B at η = 2 and a = 7. On some Banach space of functions on U × Z/49, with U ⊃ D_ρ, the following hold:
+**Hypothesis H∞,7(s), for a sign s ∈ {+1, −1}** [R4]. Let 𝓛_{b,s}^{(∞)} be the full-alphabet (all n ∈ Z) 49-state operators of E12 for f_B at η = 2, a = 7 and this s. (By the Lemma in §10.2 they do not depend on m.) On some Banach space of functions on U × Z/49, with U ⊃ D_ρ, the following hold:
 - these operators are quasi-compact;
 - the trace formula of E12 holds;
-- one sector b₀ has an isolated simple eigenvalue μ∞ with |μ∞| > λ^{1/4};
-- all other spectrum (all sectors, both s = ±1) lies in a strictly smaller disc;
+- one sector b₀ has an isolated simple eigenvalue μ_s with |μ_s| > λ^{1/4};
+- all other spectrum of the s-family (all sectors b) lies in a strictly smaller disc;
 - the eigenvalue has a non-vanishing coefficient. This is automatic: |c_b| = ½, and the multiplicity is 1.
 
-**Statement.** Under H∞,7, for odd m → ∞ with 3 ∤ m:
-- |Z_m(ν_{7,±})| ≍ |μ∞|^m;
-- F_m(2) ≥ C·(|μ∞|²/λ^{1/2})^m;
+**Statement.** If H∞,7(s) holds for at least one s, then for odd m → ∞ with 3 ∤ m:
+- |Z_m(ν_{7,s})| ≍ |μ_s|^m for every such s (using |c_b| = ½, multiplicity 1 and 1 − λ^{−m} → 1);
+- F_m(2) ≥ C·max_s (|μ_s|²/λ^{1/2})^m, the max over the signs s for which H∞,7(s) holds (F ≥ |Z|²/φ(2h) and h_m < λ^{m/2}/2);
 - W̃rest_m(2)/m → ∞.
 
-So Conjecture R (TRACE-179) fails at η = 2 for the Line B kick along the subsequence 3 ∤ m, *conditionally on H∞,7*. Nothing is claimed along 3 | m (E8).
+The two signs need not have the same leading eigenvalue (float values 1.884 and 1.897 below); one sign suffices.
+
+So Conjecture R (TRACE-179), a statement about the max over a compact η-range along all odd m, fails at η = 2 for the Line B kick along the subsequence 3 ∤ m, *conditionally on H∞,7(s) for some s*. Nothing is claimed along 3 | m (E8).
 
 **Evidence for H∞,7** [N]. These are float Galerkin computations, not certified (`step2/spec_full_m13_K30.log`; L = 40, K = 30, ρ = 2):
-- leading eigenvalues |μ| = 1.884 (s = +1, b = 4) and 1.897 (s = −1, b = 0);
+- leading eigenvalues |μ_{+1}| = 1.884 (b = 4) and |μ_{−1}| = 1.897 (b = 0);
 - the next eigenvalues are ≤ 1.30 in every sector;
 - λ^{1/4} = 1.554;
 - the law (L = 48, K = 40) reproduces the certified m = 11, 13 values to ≤ 1e-4 (computed after those certificates, so a consistency check only). The pre-registered m = 17 prediction (§10.3) is not yet tested: its certificate is pending.
@@ -491,12 +506,12 @@ So Conjecture R (TRACE-179) fails at η = 2 for the Line B kick along the subseq
 ## 11. Effect on existing claims
 
 - **BGS-TRACE-179 (Conjecture R): stays open.**
-  - Evidence against R for the Line B kick is now: rigorous at m = 11 and 13 (m = 17 certificate pending) (E13); exact structure along 3 ∤ m (E12); a conditional asymptotic disproof (E14). The weak point is 3 | m (E8).
+  - Evidence against R for the Line B kick is now: rigorous at m = 11 and 13 only (E13; m = 17 pending); exact structure along 3 ∤ m (E12); a conditional asymptotic disproof (E14). The weak point is 3 | m (E8).
   - The k1-kick analogue of R is refuted on a finite range (E5) and conditionally for all large m (E6).
 - **BGS-TRACE-180 (fixed-η CLT): stays open.** The moment form fails at η ≈ 2. Convergence in law is not contradicted [F3].
 - **BGS-TRACE-182 ((11,2) outlier): stays open.**
-  - Numerical identification (E10), plus a rigorous lower bound F_11(2)/2m ≥ 3.52 from the ±196 residues (E13). So the outlier is not a numerical artefact.
-  - The closure condition (a *proved mechanism*) is met only conditionally (E14).
+  - Numerical identification (E10), plus a rigorous lower bound F_11(2)/2m ≥ 3.5221 from the ±196 residues alone (E13), whose contribution obeys the exact law E12. So the outlier is not a numerical artefact.
+  - It stays open because the residual F/2m ≈ 2.04 at (11, 2), the part not carried by ±196, is not rigorously controlled [N8]. The closure condition of 182 concerns (11, 2) only; the all-m mechanism (E14) is separate and conditional.
 
 ## 12. Lean
 
@@ -504,7 +519,7 @@ So Conjecture R (TRACE-179) fails at η = 2 for the Line B kick along the subseq
 - `pell` and `xy_mod`, for all d;
 - `cert5`…`cert21`, and the control `cert11_control`.
 
-`formalization/Bgs/LineEResonance.lean` (new, not refereed):
+`formalization/Bgs/LineEResonance.lean` (step 2; audited by the second referee, who added its own false controls in `referee2/lean/`):
 - `nsw_mod7_cycle`, `nsw_mod7` (7 | h_m ⟺ 3 | m), `three_dvd_iff`;
 - `cert49`, `cert49_{5,7,11,13,17,19}{p,m}`, and the control `cert49_11_control`.
 
@@ -513,7 +528,7 @@ Both files:
 - have no `sorry` and no `native_decide`;
 - use only the axioms propext, Classical.choice and Quot.sound (`#print axioms` log in the evidence receipt).
 
-Not formalised: the analytic trace formulas (E2, E12), the ball-arithmetic certificates (E3–E5, E13), and the passage from coefficient identities to Z (a one-line argument).
+Not formalised: the analytic trace formulas (E2, E12), the general-m identity γ = −s·ι(c) (§10.2), E11's Fourier argument, Prop. G, the ball-arithmetic and IEEE certificates (E3–E5, E13), and the passage from coefficient identities to Z (a one-line argument).
 
 ## 13. Reproduce
 
@@ -526,9 +541,10 @@ Not formalised: the analytic trace formulas (E2, E12), the ball-arithmetic certi
   - `review/indep_trace.py m 2.0 512`;
   - `review/indep_trace_full.py 11 2.0 512 196`.
 - Step 2:
-  - `gcc -O3 -march=native -ffp-contract=off -fno-fast-math -fopenmp -o step2/zres step2/zres.c`;
+  - `bash step2/build_zres.sh` (documented flags; refuses FMA builds);
   - `step2/check_phase.py`, `check_trace.py`, `check_propG.py`, `cert49_py.py`, `check_finiteN.py`;
-  - `step2/cert_class.py full m 2.0 196,-196 [threads]`.
+  - `step2/cert_class.py full m 2.0 196,-196,4,-4 [threads]`;
+  - second referee: see `referee2/REPORT.md` §9 (interval kernel `referee2/code/ivsum.c`, `ivcert.py`).
 - Lean: `cd formalization && lake exe cache get && lake build Bgs`.
 
 ## Appendix A. Overlap with the record [F11]

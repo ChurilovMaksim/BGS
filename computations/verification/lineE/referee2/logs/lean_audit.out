@@ -1,0 +1,26 @@
+'Bgs.LineE.nsw_mod7_cycle' depends on axioms: [propext, Quot.sound]
+'Bgs.LineE.nsw_mod7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineE.three_dvd_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineE.cert49_5p' depends on axioms: [propext]
+'Bgs.LineE.cert49_11p' depends on axioms: [propext]
+'Bgs.LineE.cert49_11m' depends on axioms: [propext]
+'Bgs.LineE.cert49_13p' depends on axioms: [propext]
+'Bgs.LineE.cert49_13m' depends on axioms: [propext]
+'Bgs.LineE.cert49_17p' depends on axioms: [propext]
+'Bgs.LineE.cert49_19m' depends on axioms: [propext]
+'Bgs.LineE.cert49_11_control' depends on axioms: [propext]
+'Bgs.LineE.pell' depends on axioms: [propext]
+'Bgs.LineE.xy_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineE.cert21' depends on axioms: [propext]
+nsw_mod7 : ∀ (j : ℕ), nsw j % 7 = 0 ↔ j % 3 = 1
+true
+false
+false
+false
+false
+false
+[1, 0, 6, 1, 0, 6, 1, 0, 6, 1, 0, 6]
+
+real	0m16.893s
+user	0m4.914s
+sys	0m2.389s

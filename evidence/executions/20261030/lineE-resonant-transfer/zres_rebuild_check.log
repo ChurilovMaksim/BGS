@@ -1,0 +1,8 @@
+# 2026-10-30T09:16:00Z N4 check: zres.c with '#pragma GCC optimize("fp-contract=off")'
+## build_zres.sh (documented flags + objdump FMA guard)
+zres built; 0 FMA instructions
+## control: gcc -O3 -march=native -fopenmp WITHOUT -ffp-contract=off
+with pragma: FMA instructions = 0
+pragma removed: FMA instructions = 10 (the guard in build_zres.sh would refuse such a binary)
+## cert_class.py full 11 2.0 196,-196,4,-4 8 with the rebuilt zres vs committed cert_class.jsonl (m = 11 record)
+fields differing (timings excluded): none (bit-identical)

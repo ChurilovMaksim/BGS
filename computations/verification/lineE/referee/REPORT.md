@@ -1,7 +1,9 @@
+> **Repository copy.** Absolute scratch-directory paths of the audit machine are replaced by placeholders in angle brackets (`<referee-dir>` = the first referee's working tree, copied to `computations/verification/lineE/referee/`; `<referee2-dir>` = this audit's working tree, copied to `computations/verification/lineE/referee2/`; `<author-packet>` = the author packet; `<audit-clone>` = a fresh clone of the repository). They are not part of the repository. The text is otherwise unchanged.
+
 # Referee audit of Line E (resonant residues of the kicked cat map)
 
-**Object audited.** `/workspace/bgs-next/lineE/` (REPORT.md, OVERLAP.md, NOTES.md, code/, logs/, review/, lean/), against the repository `ChurilovMaksim/BGS` at main `347f173`. The repo was cloned read-only to `/workspace/audit/BGS`.
-**Auditor's working tree.** `/workspace/audit/lineE/` (`code/`, `logs/`, `lean/`, `certrun/`, `NOTES.md`). Backup: `/home/box/audit_lineE_backup/`.
+**Object audited.** `<author-packet>/` (REPORT.md, OVERLAP.md, NOTES.md, code/, logs/, review/, lean/), against the repository `ChurilovMaksim/BGS` at main `347f173`. The repo was cloned read-only to `<workspace>/audit/BGS`.
+**Auditor's working tree.** `<referee-dir>/` (`code/`, `logs/`, `lean/`, `certrun/`, `NOTES.md`). Backup: `<backup-dir>/`.
 **Nothing was pushed, opened or posted.**
 
 Quality gate applied (user's wording): nothing enters the repo unless it has been checked numerically, formalized (preferably in Lean), and checked for hidden logical or factual errors and exaggerations.
@@ -307,7 +309,7 @@ This is a numerical identification of the TRACE-182 outlier. A *proof* for the f
 - **F5.** E7: correct the numbers. |Z(ν*)|² = 7.34867e7 (exact class sum) = TO 7.34867e7 (about 1e-8). The value 7.3491e7 is |Z(−ν*)|².
 - **F6.** §5 sanity line: "|Z(ν*)|²/φ(h)/2m ≈ 18.3", not "true F/2m ≈ 18".
 - **F7 (reproducibility).**
-  - `review/indep_trace_full.py` and `review/predict_finiteN.py` import `drv`/`dlib.CK` from `/workspace/bgs-next/code` and `/workspace/bgs-derand/code`, which are outside the packet. Vendor them or switch to `computations/verification/lineB/common/model.py`.
+  - `review/indep_trace_full.py` and `review/predict_finiteN.py` import `drv`/`dlib.CK` from `<author-workspace>/code` and `<lineB-workspace>/code`, which are outside the packet. Vendor them or switch to `computations/verification/lineB/common/model.py`.
   - Pin the venv: python-flint 0.9.0, numpy 2.5.4.
   - Put the Lean file at `formalization/Bgs/LineE.lean` with `lake build Bgs.LineE`, and log `#print axioms`.
   - Do not ship `lineE/claims.json`; it is a full copy of the registry. Ship proposed entries instead.
@@ -366,9 +368,9 @@ This is a numerical identification of the TRACE-182 outlier. A *proof* for the f
 ## 12. Reproduce (auditor)
 
 ```
-P=/workspace/bgs-derand/phase3/venv/bin/python        # numpy, scipy, sympy, python-flint 0.9.0
-cd /workspace/audit/lineE/code && gcc -O3 -march=native -fopenmp -o classes classes.c -lm
+P=<python-venv>/bin/python        # numpy, scipy, sympy, python-flint 0.9.0
+cd <referee-dir>/code && gcc -O3 -march=native -fopenmp -o classes classes.c -lm
 $P e1_exact.py; $P t_validate.py; $P run_classes.py k1 2.0 5,7,9,11,13,15; $P run_classes.py full 2.0 5,7,9,11,13,15
-$P cmp_tm.py; $P direct_trace.py 5,7,9,11; $P own_bounds.py /workspace/bgs-next/lineE/logs/cert_L6.json; $P e10.py
-cd /workspace/lineB_mainbuild/formalization && lake exe cache get && lake env lean /workspace/audit/lineE/lean/LineE_audit.lean
+$P cmp_tm.py; $P direct_trace.py 5,7,9,11; $P own_bounds.py <author-packet>/logs/cert_L6.json; $P e10.py
+cd <lean-build-tree>/formalization && lake exe cache get && lake env lean <referee-dir>/lean/LineE_audit.lean
 ```

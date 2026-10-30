@@ -1,3 +1,5 @@
+> **Repository copy.** Absolute scratch-directory paths of the audit machine are replaced by placeholders in angle brackets (`<referee-dir>` = the first referee's working tree, copied to `computations/verification/lineE/referee/`; `<referee2-dir>` = this audit's working tree, copied to `computations/verification/lineE/referee2/`; `<author-packet>` = the author packet; `<audit-clone>` = a fresh clone of the repository). They are not part of the repository. The text is otherwise unchanged.
+
 # Audit Line E notes
 - 06:35 started; read REPORT/NOTES/OVERLAP
 - 06:50 Paper check E1: derived independently. Z(nu)=sum Phihat e(-2nu q), q=n^T H^-1 n; -2nu q - q/2 = k h q/2 = k r/(8h), r=n^T X n, X=h(y' x_d - 2h y_d) => mod 8 using x_d=(-1)^d mod4, y_d=d mod2, y' odd => kappa=k y' mod 8. CORRECT. gcd(N,D)=1 automatic (N odd, N=-4 mod h). (1+4/N) factor correct.
@@ -7,7 +9,7 @@
 - cert.py: powers_bound cache keyed by id(Y) w/o holding ref -> id reuse possible (sector 6 may reuse sector 2 norms). Benign because L_6 = R L_2 R (R: phi(s)->phi(-s), unitary) -- I derived w_a(-n)=w_{-a}(n). Need rerun with cache fixed.
 - E8: 49 not invertible mod h when 3|m (7|h_m). Scope.
 - Independent F_m plan: class sums T(r) over gamma in Z[sqrt2]/h, |Z(nu)|^2 = h^-2 |sum_r e(v r/h) T(r)|^2, r=Q(z0,z1)=z0^2-6z0z1+z1^2, v*=4bar*ybar' (to verify sign numerically).
-- 07:20 code in /workspace/audit/lineE/code (aud.py, classes.c, e1_exact.py, tmop.py, cmp_tm.py, direct_trace.py, run_classes.py). logs in ../logs.
+- 07:20 code in <referee-dir>/code (aud.py, classes.c, e1_exact.py, tmop.py, cmp_tm.py, direct_trace.py, run_classes.py). logs in ../logs.
   * e1_exact: identity exact for m=5..25 (40 random n each), kappa 7,5,3,1 table m<=41 OK; control nu*+2 fails; minus residue gives conj form.
   * class sums (my derivation: |Z(nu)|^2=h^-2|sum_r e(v r/h)T(r)|^2, v=-16bar nubar y'bar) validated vs n-sum (m=5 k1).
   * k1 eta=2 F/2m: m5 1.843, m7 2.805, m9 4.839, m11 6.894, m13 11.197. full: m11 5.5617 (=TRACE-182 5.56), m13 8.5896 (=author/LineB 223.3285).

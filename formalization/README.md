@@ -75,7 +75,7 @@ imports Mathlib, which this project does not vendor as in-repo sources (`lake-ma
 | `LineBPhase3.lean` | `Bgs.LineB.Phase3`: norm-class invariance by `ring`, odd-symbol square, parity-lattice sums, and the \(m=7\) order check; imports `Mathlib.Tactic.Ring`; no `sorry`, no `native_decide` |
 | `LineBPhase4.lean` | `Bgs.LineB.Phase4`: rational bounds by `norm_num` and the lattice relation `m3_relation` by `decide`; imports `Mathlib`; no `sorry`, no `native_decide`; not a formalization of Theorem D_cert |
 | `LineE.lean` | `Bgs.LineE`: Line E resonant residue N ≡ −4 (mod h_m) (BGS-TRACE-183): Pell identity and x_d mod 4, y_d mod 2 for all d; exact coefficient congruences `cert5`…`cert21` by `decide`, control `cert11_control`; no `sorry`, no `native_decide`; the analytic IFS law and the ball-arithmetic certificates are not formalized |
-| `LineEResonance.lean` | `Bgs.LineE` (step 2, not yet refereed; BGS-TRACE-193, 194): `nsw_mod7` (7 ∣ h_m ↔ 3 ∣ m, all m) and the a = 7 resonance coefficient identities `cert49_*` at m = 5,…,19, s = ±1, by `decide`, control `cert49_11_control`; no `sorry`, no `native_decide` |
+| `LineEResonance.lean` | `Bgs.LineE` (step 2, audited by the second referee; BGS-TRACE-193, 194): `nsw_mod7` (7 ∣ h_m ↔ 3 ∣ m, all m) and the a = 7 resonance coefficient identities `cert49_*` at m = 5,…,19, s = ±1, by `decide`, control `cert49_11_control`; no `sorry`, no `native_decide` |
 
 The former isolated `CayleyExceptionalK23.lean` was folded into
 `CayleyEnergy.lean`; generic and exceptional controls share one implementation.

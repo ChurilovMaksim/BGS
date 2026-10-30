@@ -4,6 +4,8 @@
    Plain IEEE double arithmetic, explicit real formulas, compiled with -ffp-contract=off (no FMA contraction), no fast-math.
    Row sums in double, row totals accumulated in long double.  Error bound computed by the driver (a priori).
    usage: zres m h tabfile coeffile nt t1 t2 ... outfile */
+/* The a-priori error bound assumes no FMA contraction (see resonant_residue_lineE.md, section 10.3, and build_zres.sh). */
+#pragma GCC optimize("fp-contract=off")
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>

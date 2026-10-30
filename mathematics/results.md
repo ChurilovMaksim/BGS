@@ -2,7 +2,7 @@
 
 ## Resonant residues of the fixed kick (Line E), 30 October 2026
 
-[TRACE-183](fixed-map/resonant_residue_lineE.md) (proved): the exact collapse of the Pell phase at N ≡ −4 (mod h_m). [TRACE-184](fixed-map/resonant_residue_lineE.md) (proved): the m-independent IFS transfer-operator law, finite alphabet. [TRACE-185](fixed-map/resonant_residue_lineE.md)–[187](fixed-map/resonant_residue_lineE.md) (proved, computer-assisted, k1 kick only): the certified leading eigenvalue, the exponential lower bound for all m ≥ m0 for the truncated kick, and |W̃rest_m| > m for odd m ∈ [17,39] at η = 2 (also m ∈ [19,27] at η = 1.75 and m ∈ [23,33] at η = 1.5). [TRACE-188](fixed-map/resonant_residue_lineE.md) (conditional): asymptotic failure of the k1 analogue of R under H∞. [TRACE-189](fixed-map/resonant_residue_lineE.md)–[192](fixed-map/resonant_residue_lineE.md) (open; numerical records, the ∓196 resonance of the Line B kick when 3 ∤ m, η-interval certification, and the identification of the TRACE-182 outlier). Not yet refereed: [TRACE-193](fixed-map/resonant_residue_lineE.md)–[195](fixed-map/resonant_residue_lineE.md) (verification-pending: the 7-mode corollary, the a²-resonance law, and rigorous Line B kick bounds at m = 11 and 13 (m = 17 certificate pending)) and [TRACE-196](fixed-map/resonant_residue_lineE.md) (conditional failure of R along 3 ∤ m). Limits: no o(m) statement is disproved, and Conjecture R (TRACE-179) stays open.
+[TRACE-183](fixed-map/resonant_residue_lineE.md) (proved): the exact collapse of the Pell phase at N ≡ −4 (mod h_m). [TRACE-184](fixed-map/resonant_residue_lineE.md) (proved): the m-independent IFS transfer-operator law, finite alphabet. [TRACE-185](fixed-map/resonant_residue_lineE.md)–[187](fixed-map/resonant_residue_lineE.md) (proved, computer-assisted, k1 kick only): the certified leading eigenvalue, the exponential lower bound for all m ≥ m0 for the truncated kick, and |W̃rest_m| > m for odd m ∈ [17,39] at η = 2 (also m ∈ [19,27] at η = 1.75 and m ∈ [23,33] at η = 1.5). [TRACE-188](fixed-map/resonant_residue_lineE.md) (conditional): asymptotic failure of the k1 analogue of R under H∞. [TRACE-189](fixed-map/resonant_residue_lineE.md)–[192](fixed-map/resonant_residue_lineE.md) (open; numerical records, the ∓196 resonance of the Line B kick when 3 ∤ m, η-interval certification, and the identification of the TRACE-182 outlier). After a second referee audit: [TRACE-193](fixed-map/resonant_residue_lineE.md)–[195](fixed-map/resonant_residue_lineE.md) (proved: the 7-mode corollary, computer-assisted via 187; the a²-resonance law; computer-assisted Line B kick bounds at m = 11 and 13 only, with an m = 17 certificate pending) and [TRACE-196](fixed-map/resonant_residue_lineE.md) (conditional failure of R along 3 ∤ m). Limits: no o(m) statement is disproved, and Conjecture R (TRACE-179) stays open.
 
 ## Fixed diagonal kick, 29 October 2026
 
@@ -499,7 +499,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**280 registered claims: 226 proved, 18 verification-pending, 15 conditional, 21 open.**
+**280 registered claims: 229 proved, 15 verification-pending, 15 conditional, 21 open.**
 
 ### BGS family (1 claim)
 
@@ -836,9 +836,9 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-190` | **OPEN** | Line E E8: Line B kick, giant traces at N == -/+196 mod h_m when 3 does not divide m |
 | `BGS-TRACE-191` | **OPEN** | Line E E9: eta-interval (not grid) certification of the resonant growth |
 | `BGS-TRACE-192` | **OPEN** | Line E E10: the TRACE-182 (m, eta) = (11, 2) outlier is the +-196 resonance |
-| `BGS-TRACE-193` | **VERIFICATION-PENDING** | Line E E11: pure 7-mode kick, Z_f7(nu) = Z_k1(49 nu); E5 bounds hold verbatim for f7 when 3 does not divide m |
-| `BGS-TRACE-194` | **VERIFICATION-PENDING** | Line E E12: exact a^2-resonance law; 49-state IFS law for the Line B kick at N == -/+196 when 3 does not divide m |
-| `BGS-TRACE-195` | **VERIFICATION-PENDING** | Line E E13: Gauss-completed orbit formula (Prop. G) and rigorous finite-m lower bounds for the TRACE-179 kick at eta = 2 |
+| `BGS-TRACE-193` | **PROVED** | Line E E11: pure 7-mode kick, Z_f7(nu) = Z_k1(49 nu); E5 bounds hold verbatim for f7 when 3 does not divide m |
+| `BGS-TRACE-194` | **PROVED** | Line E E12: exact a^2-resonance law; 49-state IFS law for the Line B kick at N == -/+196 when 3 does not divide m |
+| `BGS-TRACE-195` | **PROVED** | Line E E13: Gauss-completed orbit formula (Prop. G) and rigorous finite-m lower bounds for the TRACE-179 kick at eta = 2 |
 | `BGS-TRACE-196` | **CONDITIONAL** | Line E E14: conditional asymptotic failure of Conjecture R for the Line B kick at eta = 2 along 3 not dividing m |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

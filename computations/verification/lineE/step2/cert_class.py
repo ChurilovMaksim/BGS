@@ -1,6 +1,6 @@
 """Certified |Z_m(nu)| at the resonant residues N == -+196 (and -+4) for the Line B diagonal kick (and sub-kicks), via
    |Z_m(nu)| = h^{-1} | sum_{z q-seq mod h} e(t R(z)/h) prod_j g(1/2 + z_j/h) |,   t = (16 nu)^{-1} mod h,   R(z) = 2 z^T H z / h mod h,
-(Proposition G of step2/PROOF_G.md, from TRACE-163 Theorem 3 + Prop R + TRACE-165 Lemma S).  Tables in arb, kernel zres.c in IEEE double
+(Proposition G of mathematics/fixed-map/resonant_residue_lineE.md, section 10.3, from TRACE-163 Theorem 3 + Prop R + TRACE-165 Lemma S).  Tables in arb, kernel zres.c in IEEE double
 with an a-priori rounding bound.  Output: rigorous lower/upper bounds for |Z(nu)|^2, F_m >= sum|Z|^2/phi(2h), W~rest >= F - 4m.
 usage: cert_class.py kick m eta offsets(e.g. 196,-196) [threads]"""
 import sys, os, json, math, time, subprocess, random

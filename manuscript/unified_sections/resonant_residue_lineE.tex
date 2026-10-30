@@ -2,7 +2,8 @@
 % Wiring: \input{unified_sections/resonant_residue_lineE.tex} in manuscript/BGS_unified.tex, Chapter 14,
 % directly after \input{unified_sections/derandomized_fixed_kick.tex}.
 % BGS-TRACE-183 to 192 were audited by an independent referee (computations/verification/lineE/referee/REPORT.md);
-% BGS-TRACE-193 to 196 are new and not yet refereed.
+% BGS-TRACE-193 to 196 were audited by a second independent referee (computations/verification/lineE/referee2/REPORT.md).
+% Certified bounds are quoted in the safe direction (lower bounds rounded down, enclosures outward).
 \section{Resonant residues of the fixed-kick cat map (Line E)}
 \label{sec:resonant-residue-lineE}
 Notation is that of Section~\ref{sec:derandomized-fixed-kick}: \(Z_m(\nu)=\sum_{n\in\mathbb Z^m}\hat\Phi(n)e(-\nu y'_m\operatorname{Nm}(\alpha_n)/g'_m)\),
@@ -31,7 +32,7 @@ If \(\hat g\) is supported in \(\lvert n\rvert\le L\) and \(\rho>L/(\lambda-1)\)
 \end{theorem}
 
 \begin{theorem}[Certified spectrum and growth for the \(k1\) kick, BGS-TRACE-185 to 187, proved (computer-assisted)]
-For the \(L\)-truncated \(k1\) operators (\(L=6,8\)) at \(\eta\in\{1.25,\dots,3\}\), \(\mathcal L_4\) has a simple eigenvalue \(\mu^*\) (e.g.\ \(\lvert\mu^*\rvert\in[1.9154751,1.9154771]\) at \(\eta=2\), \(L=6\)) and all other spectrum lies in \(\lvert z\rvert\le r_2\) (185); hence \(\lvert Z_L(m)\rvert>0\) grows exponentially for all odd \(m\ge m_0\) (186).
+For the \(L\)-truncated \(k1\) operators (\(L=6,8\)) at \(\eta\in\{1.25,\dots,3\}\), \(\mathcal L_4\) has a simple eigenvalue \(\mu^*\) (e.g.\ \(\lvert\mu^*\rvert\in[1.9154750,1.9154771]\) at \(\eta=2\), \(L=6\)) and all other spectrum lies in \(\lvert z\rvert\le r_2\) (185); hence \(\lvert Z_L(m)\rvert>0\) grows exponentially for all odd \(m\ge m_0\) (186).
 For the physical \(k1\) kick, \(\lvert\tilde W^{\mathrm{rest}}_m\rvert>m\) for odd \(m\in[17,39]\) at \(\eta=2\), \(m\in[19,27]\) at \(\eta=1.75\), \(m\in[23,33]\) at \(\eta=1.5\) (187). This concerns the \(k1\)-kick analogue of Conjecture R only.
 \end{theorem}
 
@@ -43,28 +44,28 @@ If the full-alphabet \(k1\) operator has an isolated simple eigenvalue \(\lvert\
 BGS-TRACE-189: the \(m=15\) prediction \(F/2m\ge20\) (\(k1\)) was met (27.885); \(\lvert Z(\nu^*)\rvert^2=7.34867\cdot10^7\) agrees with the law to \(10^{-8}\).
 BGS-TRACE-190: for \(f_B\) the giant traces sit at \(N\equiv\mp196\bmod h_m\) when \(3\nmid m\); when \(3\mid m\), \(7\mid h_m\) and the resonance is diluted (\(F/2m=1.82\) at \(m=9\), \(3.91\) at \(m=15\)).
 BGS-TRACE-191: \(\eta\)-interval certification is open.
-BGS-TRACE-192: the \((11,2)\) outlier of BGS-TRACE-182 is carried by the residues \(N\equiv\pm196\) (3.522 of 5.562); a proved mechanism for all \(m\) is missing.
+BGS-TRACE-192: the \((11,2)\) outlier of BGS-TRACE-182 is carried by the residues \(N\equiv\pm196\) (3.522 of 5.562); the residual \(F/2m\approx2.04\) at \((11,2)\) is not rigorously controlled, and a mechanism for all \(m\) is only conditional (196).
 \end{remark}
 
-\paragraph{Extension to the Line B kick (BGS-TRACE-193 to 196; not yet refereed).}
+\paragraph{Extension to the Line B kick (BGS-TRACE-193 to 196; second referee audit).}
 
-\begin{proposition}[Pure 7-mode kick, BGS-TRACE-193, verification-pending]
+\begin{proposition}[Pure 7-mode kick, BGS-TRACE-193, proved (computer-assisted via 187)]
 \(Z_{f_7}(\nu)=Z_{k1}(49\nu)\). If \(3\nmid m\) then \(7\nmid h_m\) (Lean, all \(m\)), so \(F_m(f_7)=F_m(k1)\) and \(\tilde W^{\mathrm{rest}}_m(f_7)=\tilde W^{\mathrm{rest}}_m(k1)\); the bounds of BGS-TRACE-187 hold for \(f_7\) at \(m\in\{17,19,23,25,29,31,35,37\}\) (\(\eta=2\)).
 \end{proposition}
 
-\begin{theorem}[\(a^2\)-resonance law, BGS-TRACE-194, verification-pending]
+\begin{theorem}[\(a^2\)-resonance law, BGS-TRACE-194, proved]
 Let \(a\) be odd, coprime to \(2h_m\), with \(2\) a square and \(\lambda^m\not\equiv1\) modulo every prime \(p\mid a\); let \(N\equiv-s\,4a^2\bmod h_m\), \(s=\pm1\).
 Then the phase of \(Z_m(\nu)\) splits exactly into a real IFS part \((sc/a^2)[\sum n_js_j+\frac12\sum n_j^2]\), a sector term \(\kappa(\sum n)^2/8\) and a part \((\gamma/a^2)[\sum n_j\sigma_j+\bar{2}\sum n_j^2]\) driven by the periodic orbit of \(\sigma\mapsto\ell^{-1}(\sigma+n)\) in \(\mathbb Z/a^2\).
-For finite alphabets, \(Z_m(\nu)=(1-\lambda^{-m})\sum_bc_b\operatorname{Tr}\mathcal L_b^m\) with \(m\)-independent operators on \(H^2(D_\rho)\otimes\ell^2(\mathbb Z/a^2)\). For \(a=7\) the hypotheses hold iff \(3\nmid m\).
+For finite alphabets, \(Z_m(\nu)=(1-\lambda^{-m})\sum_bc_b\operatorname{Tr}\mathcal L_b^m\) with operators on \(H^2(D_\rho)\otimes\ell^2(\mathbb Z/a^2)\) that do not depend on \(m\), because \(\gamma\equiv-s\,\iota(c)=-sr/8\bmod a^2\) for every \(m\) (\(r^2\equiv2\)); only the coefficients \(c_b\) depend on \(m\). For \(a=7\) the hypotheses hold iff \(3\nmid m\).
 \end{theorem}
 
-\begin{theorem}[Exact orbit formula and certified bounds for the Line B kick, BGS-TRACE-195, verification-pending]
-For odd \(m\) and every unit \(\nu\),
+\begin{theorem}[Exact orbit formula and certified bounds for the Line B kick, BGS-TRACE-195, proved (computer-assisted; \(m=11,13\) only)]
+For every kick with \(\sum_n\lvert\hat g(n)\rvert<\infty\), odd \(m\) and every unit \(\nu\),
 \[\lvert Z_m(\nu)\rvert=h^{-1}\Bigl\lvert\sum_{(z_0,z_1)\in(\mathbb Z/h)^2}e(tR(z)/h)\prod_jg(\tfrac12+z_j/h)\Bigr\rvert,\]
 with \(t=(16\nu)^{-1}\bmod h\), \(R(z)=2z^{\mathsf T}Hz/h\bmod h\).
-For the Line B kick \(f_B\) at \(\eta=2\) (rigorous IEEE kernel with an a-priori rounding bound): \(F_m/2m\ge3.5227\) and \(\tilde W^{\mathrm{rest}}_m/m\ge3.0454\) at \(m=11\); \(F_m/2m\ge6.4579\) and \(\tilde W^{\mathrm{rest}}_m/m\ge8.9159\) at \(m=13\); at \(m=17\) no bound is claimed (certificate pending; pre-registered predictions \(\lvert Z\rvert^2\approx5.66587\cdot10^8\) and \(7.04767\cdot10^8\) at \(N\equiv\mp196\)). Nothing is claimed as \(m\to\infty\).
+For the Line B kick \(f_B\) at \(\eta=2\) (IEEE kernel with an a-priori rounding bound; reproduced by an independent directed-rounding interval kernel), from the residues \(N\equiv\pm196\) alone: \(F_m/2m\ge3.5221\) and \(\tilde W^{\mathrm{rest}}_m/m\ge3.0442\) at \(m=11\); \(F_m/2m\ge6.4576\) and \(\tilde W^{\mathrm{rest}}_m/m\ge8.9152\) at \(m=13\) (with the residues \(\pm4\) added: \(3.5227\), \(3.0454\), \(6.4579\), \(8.9158\)); at \(m=17\) no bound is claimed (certificate pending; pre-registered predictions \(\lvert Z\rvert^2\approx5.66587\cdot10^8\) and \(7.04767\cdot10^8\) at \(N\equiv\mp196\)). Nothing is claimed as \(m\to\infty\).
 \end{theorem}
 
 \begin{theorem}[Conditional failure of Conjecture R for the Line B kick, BGS-TRACE-196, conditional]
-If the full-alphabet 49-state operators of BGS-TRACE-194 for \(f_B\) at \(\eta=2\) have an isolated simple eigenvalue \(\lvert\mu_\infty\rvert>\lambda^{1/4}\) dominating the rest of the spectrum (hypothesis \(H_{\infty,7}\); float evidence \(\lvert\mu\rvert\approx1.88\)--\(1.90\), next \(\le1.30\)), then \(\tilde W^{\mathrm{rest}}_m(2)/m\to\infty\) along odd \(m\) with \(3\nmid m\), so Conjecture R would fail at \(\eta=2\). Nothing is claimed along \(3\mid m\).
+If, for some sign \(s\), the full-alphabet 49-state operators of BGS-TRACE-194 for \(f_B\) at \(\eta=2\) and that \(s\) have an isolated simple eigenvalue \(\mu_s\) with \(\lvert\mu_s\rvert>\lambda^{1/4}\) dominating the rest of the spectrum of the \(s\)-family (hypothesis \(H_{\infty,7}(s)\); float evidence \(\lvert\mu_{+1}\rvert\approx1.884\), \(\lvert\mu_{-1}\rvert\approx1.897\), next \(\le1.30\)), then \(\lvert Z_m(\nu_{7,s})\rvert\asymp\lvert\mu_s\rvert^m\), \(F_m(2)\ge C\max_s(\lvert\mu_s\rvert^2\lambda^{-1/2})^m\) over such \(s\), and \(\tilde W^{\mathrm{rest}}_m(2)/m\to\infty\) along odd \(m\) with \(3\nmid m\), so Conjecture R would fail at \(\eta=2\). Nothing is claimed along \(3\mid m\).
 \end{theorem}

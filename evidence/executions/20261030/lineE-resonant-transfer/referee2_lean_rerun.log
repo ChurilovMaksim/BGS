@@ -1,0 +1,33 @@
+# 2026-10-30T09:19:52Z second referee's Lean files run from their repository location
+## lake env lean ../computations/verification/lineE/referee2/lean/Audit57.lean
+'Bgs.LineE.nsw_mod7_cycle' depends on axioms: [propext, Quot.sound]
+'Bgs.LineE.nsw_mod7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineE.three_dvd_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineE.cert49_5p' depends on axioms: [propext]
+'Bgs.LineE.cert49_11p' depends on axioms: [propext]
+'Bgs.LineE.cert49_11m' depends on axioms: [propext]
+'Bgs.LineE.cert49_13p' depends on axioms: [propext]
+'Bgs.LineE.cert49_13m' depends on axioms: [propext]
+'Bgs.LineE.cert49_17p' depends on axioms: [propext]
+'Bgs.LineE.cert49_19m' depends on axioms: [propext]
+'Bgs.LineE.cert49_11_control' depends on axioms: [propext]
+'Bgs.LineE.pell' depends on axioms: [propext]
+'Bgs.LineE.xy_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bgs.LineE.cert21' depends on axioms: [propext]
+nsw_mod7 : ∀ (j : ℕ), nsw j % 7 = 0 ↔ j % 3 = 1
+true
+false
+false
+false
+false
+false
+[1, 0, 6, 1, 0, 6, 1, 0, 6, 1, 0, 6]
+exit 0
+## lake env lean ../computations/verification/lineE/referee2/lean/Neg57.lean
+../computations/verification/lineE/referee2/lean/Neg57.lean:3:55: error: Tactic `decide` proved that the proposition
+  cert49 5 1 12717 32 6 1 12 = true
+is false
+../computations/verification/lineE/referee2/lean/Neg57.lean:4:55: error: Tactic `decide` proved that the proposition
+  cert49 5 1 12717 32 6 3 11 = true
+is false
+exit 1
