@@ -1,0 +1,14 @@
+# 2026-10-30 21:50:20 +0500 tectonic 0.15.0 -X compile BGS_unified.tex (pdflatex not installed), scratch copy of manuscript/
+## pre-existing on main 24bd3988 (unchanged by this branch): unified_sections/derandomized_fixed_kick.tex:94 optional theorem argument contains ']' and halts tectonic; the scratch copy braces that optional argument only (same workaround as lineFG-lifted-transfer/manuscript_compile.log)
+exit 0
+engine warning lines: 109
+warning: unified_bibliography.tex:463: Underfull \hbox (badness 2351) in paragraph at lines 458--463
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `BGS_unified.pdf` (2.06 MiB)
+note: Skipped writing 3 intermediate files (use --keep-intermediates to keep them)
+-rw-r--r-- 1 box box 2160323 Oct 30 21:46 BGS_unified.pdf
+Pages:           368
+DONE
+warnings mentioning lineH_49state_certificate.tex: 0
+undefined references/citations in log: 0

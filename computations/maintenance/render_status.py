@@ -26,7 +26,7 @@ EPOCHS = ROOT / "record" / "claim_integration_epochs.json"
 STATUS = ROOT / "STATUS.md"
 RESULTS = ROOT / "mathematics" / "results.md"
 
-STATES = ("proved", "verification-pending", "conditional", "open")
+STATES = ("proved", "verification-pending", "conditional", "open", "refuted")
 BEGIN = "<!-- BEGIN GENERATED: registered family tables (render_status.py). Do not edit this section by hand. -->"
 END = "<!-- END GENERATED: registered family tables (render_status.py) -->"
 

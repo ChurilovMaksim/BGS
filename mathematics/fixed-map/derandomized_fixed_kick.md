@@ -144,11 +144,12 @@ C_η is not explicit, and uniformity in η is not claimed.
 ### <a id="claim-178"></a>BGS-TRACE-178: torsion-split identity F = F_gen + F_tor (proved, trivial; interpretation numerical)
 - `phase4_parity_certificate.md` §2.3.
 
-### <a id="claim-179"></a>BGS-TRACE-179: Conjecture R / R_NSW (open)
+### <a id="claim-179"></a>BGS-TRACE-179: Conjecture R / R_NSW (refuted as stated, at η = 2; R_NSW undecided)
 - For 0 < η₀ ≤ η₁: max_{η∈[η₀,η₁]} |W̃^rest_m(η)| = o(m).
 - Evidence: for η ∈ [10, 400], |W̃^rest|/2m ≤ 0.11 (m = 7), 0.05 (m = 9), 0.018 (m = 11; −0.0175 at η = 400), 0.008 (m = 13; three η).
 - Literature check: `phase4_parity_certificate.md` §2.1–§2.2.
 - *Line E annotation (2026-10-30; state unchanged, open):* see `resonant_residue_lineE.md`. The k1-kick analogue of R is violated on a finite range (BGS-TRACE-187, computer-assisted) and, conditionally on H∞, for all large m (BGS-TRACE-188). For the kick of this conjecture, |W̃rest_m(2)| > m is certified at m = 11 and 13 only (BGS-TRACE-195, computer-assisted; an m = 17 certificate is pending and nothing is claimed for it), and asymptotic failure along 3 ∤ m holds only conditionally on H∞,7 (BGS-TRACE-196). R itself is not disproved.
+- *Line H annotation (2026-10-30; state changed open → refuted):* see [`lineH_49state_certificate.md`](lineH_49state_certificate.md). For this conjecture's kick (the Line B diagonal kick f_B) at η = 2, BGS-TRACE-209 (computer-assisted, on BGS-TRACE-207 and 208; independent referee audit, ACCEPT AFTER FIXES) gives W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m. So for every compact η-range containing 2 the maximum is not o(m), and R as stated is false. R_NSW is not decided: it is violated at every m ≥ 47 with h_m prime, and whether there are infinitely many such m is unknown. Not covered: odd m with 3 ∤ m in {17, 19, 23, 25, 29, 31, 35, 37, 41, 43} (m = 11, 13 are BGS-TRACE-195), every m with 3 | m, η ≠ 2, and s = +1; R restricted to compact ranges avoiding 2 is open and not registered separately. This is not a statement about BGS (BGS-BGS-001) and not progress on BGS-TRACE-148. The "R itself is not disproved" of the Line E annotation describes the state before Line H.
 
 ### <a id="claim-180"></a>BGS-TRACE-180: fixed-η CLT (open)
 - *Line E annotation (2026-10-30; state unchanged, open):* at η ≈ 2 the ν-law has atoms of mass 1/φ(2h) carrying |Z|² ≈ Λ^{2m} (BGS-TRACE-190, 192), so the moment form (M4 → 2, normalisation by √F) fails numerically there; convergence in law of Z/√(bulk variance) is not contradicted.

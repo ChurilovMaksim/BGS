@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "485167d4e7d963d79aa7df30076e60e84a07a3a7",
+ "source_blob_sha": "2c19859a3fe26973e35b1e22a973ed4e5db24ee8",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -9849,31 +9849,44 @@
   {
    "id": "BGS-TRACE-179",
    "title": "Conjecture R / R_NSW: W~rest_m(eta) = o(m) uniformly on compact eta-ranges",
-   "state": "open",
+   "state": "refuted",
    "methods": [
-    "unevidenced"
+    "computer_certificate",
+    "analytic_proof",
+    "independent_review"
    ],
    "ledger_claimed_methods": [
+    "computer_certificate",
+    "analytic_proof",
+    "independent_review",
     "float_numerics"
    ],
-   "unevidenced": true,
+   "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
-    "verifiers": 0,
+    "evidence": 2,
+    "verifiers": 4,
     "formalization": 0
    },
    "evidence": [
-    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+    "evidence/executions/20261029/lineB-derandomized/receipt.json",
+    "evidence/executions/20261030/lineH/receipt.json"
    ],
-   "verifiers": [],
+   "verifiers": [
+    "computations/verification/lineH/code/bounds49.py",
+    "computations/verification/lineH/code/rig_spec.py",
+    "computations/verification/lineH/referee/code/ref_rig.py",
+    "computations/verification/lineH/referee/code/ref_bounds.py"
+   ],
    "formalization": [],
-   "ledger_status": "CONJECTURE; NUMERICAL EVIDENCE m<=13 ONLY; NOT REDUCED TO ANY KNOWN CONJECTURE",
-   "boundary": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m; R_NSW: along m with h_m prime (not known to be infinite). Not reduced to a large-sieve inequality ('quadratic large sieve' phrasing withdrawn); Kurlberg-Rudnick, Bourgain and Bourgain-Glibichuk-Konyagin bounds do not apply since ord_h lambda = m is minimal. Derandomized analogue of the off-diagonal problem of BGS-TRACE-145 to 148; no progress on BGS-TRACE-148 is claimed. Line E annotation (2026-10-30, state unchanged): the k1-kick analogue of R is violated on a finite range (BGS-TRACE-187) and conditionally for all large m (BGS-TRACE-188); for this conjecture's kick |W~rest_m(2)| > m is certified at m = 11 and 13 only (BGS-TRACE-195, computer-assisted; an m = 17 certificate is pending and nothing is claimed for it) and asymptotic failure along 3 not dividing m holds only conditionally on H_infinity,7 (BGS-TRACE-196). R is not disproved. Line F/G annotation (2026-10-30, state unchanged): for the k1 kick the analogue of R now fails for every odd m >= 15 at eta = 2 unconditionally (computer-assisted, BGS-TRACE-199; also BGS-TRACE-201 at certified grid points), and for the pure 7-mode kick for 3 not dividing m (BGS-TRACE-200). For this conjecture's kick nothing changes: asymptotic failure is still only conditional on H_infinity,7 (BGS-TRACE-196). Conjecture R' (BGS-TRACE-206) is a separate, open conjecture about the k1 kick. R is not disproved.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "state is open",
-   "other_weaknesses": [],
-   "risk_reassessment": "OPEN_CONJECTURE"
+   "ledger_status": "REFUTED AS STATED (eta = 2, odd m >= 47, 3 not dividing m) BY BGS-TRACE-209: COMPUTER-ASSISTED (ARB) + PAPER CHAIN + INDEPENDENT REFEREE AUDIT (computations/verification/lineH/referee/REPORT.md; ACCEPT AFTER FIXES). R_NSW NOT DECIDED. ORIGINAL REGISTRATION: CONJECTURE; NUMERICAL EVIDENCE m<=13 ONLY; NOT REDUCED TO ANY KNOWN CONJECTURE",
+   "boundary": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m; R_NSW: along m with h_m prime (not known to be infinite). Not reduced to a large-sieve inequality ('quadratic large sieve' phrasing withdrawn); Kurlberg-Rudnick, Bourgain and Bourgain-Glibichuk-Konyagin bounds do not apply since ord_h lambda = m is minimal. Derandomized analogue of the off-diagonal problem of BGS-TRACE-145 to 148; no progress on BGS-TRACE-148 is claimed. Line E annotation (2026-10-30, state unchanged): the k1-kick analogue of R is violated on a finite range (BGS-TRACE-187) and conditionally for all large m (BGS-TRACE-188); for this conjecture's kick |W~rest_m(2)| > m is certified at m = 11 and 13 only (BGS-TRACE-195, computer-assisted; an m = 17 certificate is pending and nothing is claimed for it) and asymptotic failure along 3 not dividing m holds only conditionally on H_infinity,7 (BGS-TRACE-196). R is not disproved. Line F/G annotation (2026-10-30, state unchanged): for the k1 kick the analogue of R now fails for every odd m >= 15 at eta = 2 unconditionally (computer-assisted, BGS-TRACE-199; also BGS-TRACE-201 at certified grid points), and for the pure 7-mode kick for 3 not dividing m (BGS-TRACE-200). For this conjecture's kick nothing changes: asymptotic failure is still only conditional on H_infinity,7 (BGS-TRACE-196). Conjecture R' (BGS-TRACE-206) is a separate, open conjecture about the k1 kick. R is not disproved. Line H annotation (2026-10-30): STATE CHANGED open -> refuted (Conjecture R as stated). For this conjecture's kick (Line B diagonal kick f_B, l = 0) at eta = 2, BGS-TRACE-209 (computer-assisted, on BGS-TRACE-207/208; independent referee audit, ACCEPT AFTER FIXES) gives W~rest_m(2)/m >= 1.4e4 for every odd m >= 47 with 3 not dividing m. Hence for every compact eta-range [eta0, eta1] containing 2, max_eta |W~rest_m(eta)| is not o(m), and R, which asserts o(m) for every compact range, is false. Scope of 'refuted': R exactly as stated here, for the Line B kick; it is not a statement about BGS (BGS-BGS-001 stays open; neither proved nor disproved) and not about BGS-TRACE-148. R_NSW is NOT refuted: the bound violates it at every m >= 47 with h_m prime (such m are prime, so 3 does not divide m), and whether there are infinitely many such m is unknown (if there are, R_NSW is false; otherwise it is vacuous). Not covered by BGS-TRACE-209: odd m with 3 not dividing m in {17,19,23,25,29,31,35,37,41,43} (m = 11, 13: BGS-TRACE-195), every m with 3 | m, eta != 2 (in particular the restriction of R to compact ranges avoiding 2 is open and not registered separately), and s = +1. The statements 'R is not disproved' in the Line E and Line F/G annotations above are superseded by this annotation.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "State refuted rests solely on BGS-TRACE-209 (computer-assisted; certificates of BGS-TRACE-208; referee re-certified V_0 and E_0 and re-decided the rest exactly). Refutes R as stated through eta = 2 only; partial scope: R_NSW and compact ranges avoiding eta = 2 are not decided.",
+   "other_weaknesses": [
+    "partial_scope"
+   ],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
   },
   {
    "id": "BGS-TRACE-180",
@@ -10390,7 +10403,7 @@
     "formalization/Bgs/LineEResonance.lean"
    ],
    "ledger_status": "ANALYTIC PROOF (EMBEDDING Z[sqrt2,1/2] -> Z/a^2 + TRACE FORMULA ON H^2 (X) l^2(Z/a^2)) + EXACT CHECKS (52/52 COEFFICIENT IDENTITIES m<=41; 138/138 PHASE CHECKS) + LEAN FINITE INSTANCES (a = 7, m = 5..19, s = +-1) + NUMERICAL (BRUTE FORCE 1e-13; DIRECT PHYSICAL TRACE m = 11 AT 5e-5) + REFEREE CHECKS (178/178 PHASE CASES; OWN 49-STATE GALERKIN 7e-14); SECOND INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee2/REPORT.md; fixes R1-R7 applied)",
-   "boundary": "a odd, gcd(a,2h_m) = 1, 2 a square mod every p | a, lambda^m != 1 mod every p | a; nu the odd lift of -s(4a^2)^{-1} mod h_m (N == -s 4a^2 mod h_m), 4a^2 nu + s = k h. Then -nu y' Nm(alpha_n)/g' == (s c/a^2)[sum n_j s_j + sum n_j^2/2] + kappa (sum n)^2/8 + (gamma/a^2)[sum n_j sigma_j + 2^{-1} sum n_j^2] mod 1 (s_j real periodic orbit, sigma_j the periodic orbit of sigma -> l^{-1}(sigma + n) in Z/a^2), and for finite alphabets Z_m(nu) = (1-lambda^-m) sum_b c_b Tr L_b^m with 49-state (a = 7) operators on H^2(D_rho) (x) l^2(Z/a^2). Here gamma = -s iota(c) = -s r/8 mod a^2 for every m (proof in the source, sec. 10.2), so the operators L_b do not depend on m; only the coefficients c_b depend on m, through kappa. For a = 7 the hypotheses hold iff 3 does not divide m. Finite alphabet only; nothing about growth is claimed here.",
+   "boundary": "a odd, gcd(a,2h_m) = 1, 2 a square mod every p | a, lambda^m != 1 mod every p | a; nu the odd lift of -s(4a^2)^{-1} mod h_m (N == -s 4a^2 mod h_m), 4a^2 nu + s = k h. Then -nu y' Nm(alpha_n)/g' == (s c/a^2)[sum n_j s_j + sum n_j^2/2] + kappa (sum n)^2/8 + (gamma/a^2)[sum n_j sigma_j + 2^{-1} sum n_j^2] mod 1 (s_j real periodic orbit, sigma_j the periodic orbit of sigma -> l^{-1}(sigma + n) in Z/a^2), and for finite alphabets Z_m(nu) = (1-lambda^-m) sum_b c_b Tr L_b^m with 49-state (a = 7) operators on H^2(D_rho) (x) l^2(Z/a^2). Here gamma = -s iota(c) = -s r/8 mod a^2 for every m (proof in the source, sec. 10.2), so the operators L_b do not depend on m; only the coefficients c_b depend on m, through kappa. For a = 7 the hypotheses hold iff 3 does not divide m. Finite alphabet only; nothing about growth is claimed here. Line H annotation (2026-10-30): extended to the full alphabet on the lifted space by BGS-TRACE-207; kappa is odd for every odd m with 3 not dividing m (BGS-TRACE-207).",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Paper proof re-derived by the second referee (referee2), including gamma = -s iota(c) for all m; Lean checks coefficient identities at m = 5..19 only; trace formula not formalised.",
    "other_weaknesses": [],
@@ -10463,8 +10476,8 @@
     "computations/verification/lineE/step2/tm49.py"
    ],
    "formalization": [],
-   "ledger_status": "CONDITIONAL (HYPOTHESIS H_INFINITY,7 ON THE FULL-ALPHABET 49-STATE OPERATORS) + FLOAT SPECTRAL EVIDENCE (|mu_+1| = 1.884, |mu_-1| = 1.897 > lambda^(1/4) = 1.554, NEXT <= 1.30) + PRE-REGISTERED m = 17 PREDICTION (CERTIFICATE PENDING, UNTESTED); SECOND INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee2/REPORT.md; fixes R1-R7 applied)",
-   "boundary": "Hypothesis H_infinity,7, stated per sign s in {+1,-1}: the full-alphabet 49-state operators of BGS-TRACE-194 for the Line B kick at eta = 2 and that s are quasi-compact on a suitable Banach space with the trace formula, one sector has an isolated simple eigenvalue mu_s dominating all other spectrum of that s-family. If this holds for some s with |mu_s| > lambda^(1/4), then |Z_m(nu_{7,s})| ~ |mu_s|^m, F_m(2) >= C max_s (|mu_s|^2 lambda^(-1/2))^m over such s, and W~rest_m(2)/m -> infinity along odd m with 3 not dividing m: Conjecture R (BGS-TRACE-179) would fail at eta = 2. Nothing along 3 | m. H_infinity,7 is not proved. Line F annotation (2026-10-30, state unchanged, stays conditional): the infinite-alphabet part of H_infinity,7 is reduced by the lift of BGS-TRACE-197 to a finite (about 24 000-dimensional per operator) ball-arithmetic certificate, which was not run. Float evidence (Line F F7, K = 14): leading |mu| = 1.8839 (s = +1) and 1.8968 (s = -1), next cluster 1.27-1.30 stable under two discretisations, lifted 49-state trace identity matching exact class sums to <= 5.9e-7.",
+   "ledger_status": "CONDITIONAL (HYPOTHESIS H_INFINITY,7 ON THE FULL-ALPHABET 49-STATE OPERATORS) + FLOAT SPECTRAL EVIDENCE (|mu_+1| = 1.884, |mu_-1| = 1.897 > lambda^(1/4) = 1.554, NEXT <= 1.30) + PRE-REGISTERED m = 17 PREDICTION (CERTIFICATE PENDING, UNTESTED); SECOND INDEPENDENT REFEREE AUDIT (computations/verification/lineE/referee2/REPORT.md; fixes R1-R7 applied) + CONCLUSION (s = -1) ESTABLISHED ON THE LIFTED SPACE BY BGS-TRACE-209",
+   "boundary": "Hypothesis H_infinity,7, stated per sign s in {+1,-1}: the full-alphabet 49-state operators of BGS-TRACE-194 for the Line B kick at eta = 2 and that s are quasi-compact on a suitable Banach space with the trace formula, one sector has an isolated simple eigenvalue mu_s dominating all other spectrum of that s-family. If this holds for some s with |mu_s| > lambda^(1/4), then |Z_m(nu_{7,s})| ~ |mu_s|^m, F_m(2) >= C max_s (|mu_s|^2 lambda^(-1/2))^m over such s, and W~rest_m(2)/m -> infinity along odd m with 3 not dividing m: Conjecture R (BGS-TRACE-179) would fail at eta = 2. Nothing along 3 | m. H_infinity,7 is not proved. Line F annotation (2026-10-30, state unchanged, stays conditional): the infinite-alphabet part of H_infinity,7 is reduced by the lift of BGS-TRACE-197 to a finite (about 24 000-dimensional per operator) ball-arithmetic certificate, which was not run. Float evidence (Line F F7, K = 14): leading |mu| = 1.8839 (s = +1) and 1.8968 (s = -1), next cluster 1.27-1.30 stable under two discretisations, lifted 49-state trace identity matching exact class sums to <= 5.9e-7. Line H annotation (2026-10-30, state unchanged): the CONCLUSION of this claim for s = -1 (|Z_m(nu_{7,-1})| ~ |mu|^m with |mu| > lambda^(1/4), W~rest_m(2)/m -> infinity along odd m with 3 not dividing m) is established unconditionally (computer-assisted) on the explicit lifted space of BGS-TRACE-197 by BGS-TRACE-207/208/209: |mu*| in [1.846834, 1.946835], W~rest_m(2)/m >= 1.4e4 for odd m >= 47, 3 not dividing m. s = +1 is not certified. The pre-registered m = 17 prediction remains untested by a certificate.",
    "spof": "conditional_on_unproved_input",
    "spof_detail": "Conditional on H_infinity,7 (per sign s; not discharged); float spectral evidence only; implication checked by the second referee.",
    "other_weaknesses": [],
@@ -10506,7 +10519,7 @@
     "formalization/Bgs/LineF.lean"
    ],
    "ledger_status": "ANALYTIC PROOF + LEAN COMBINATORIAL CORE (vertex_minus_edge, edge_closed_iff) + FLOAT CHECKS (vs exact class sums m<=15 to 9.1e-14; referee own code vs physical traces m=5..13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied)",
-   "boundary": "Assume rho_V > lambda/(2(lambda-1)) ~ 0.6036, rho_E > 1/(2(lambda-1)) ~ 0.1036, beta > 0, and sum_n |w(n)| e^{alpha|n|} < infinity for some alpha > 2 pi c max(rho_V,rho_E) + beta/lambda (c = 1/(4 sqrt 2)). Then the vertex and edge operators L_V, L_E on weighted l2-direct sums of Hardy spaces over the disc lattices are trace class and, for every m >= 1, sum_{n in Z^m} prod_j w(n_j) e(c n_j s_j) = (1-lambda^-m)(Tr L_V^m - Tr L_E^m) (s_j the periodic orbit). With E1/E2 (BGS-TRACE-183/184): Z_m(nu*) = (1-lambda^-m) sum_{a in {0,2,4,6}} c_a (Tr L_{V,a}^m - Tr L_{E,a}^m), |c_a| = 1/2, for the FULL (untruncated) alphabet; real shifts (the 49-state law) are covered. Lean formalises only the counting step (#fixed points - #adjacent fixed pairs = 1, and adjacent fixed pairs = closed edge chains); trace class, the trace formula and the chain-to-block identification are paper arguments.",
+   "boundary": "Assume rho_V > lambda/(2(lambda-1)) ~ 0.6036, rho_E > 1/(2(lambda-1)) ~ 0.1036, beta > 0, and sum_n |w(n)| e^{alpha|n|} < infinity for some alpha > 2 pi c max(rho_V,rho_E) + beta/lambda (c = 1/(4 sqrt 2)). Then the vertex and edge operators L_V, L_E on weighted l2-direct sums of Hardy spaces over the disc lattices are trace class and, for every m >= 1, sum_{n in Z^m} prod_j w(n_j) e(c n_j s_j) = (1-lambda^-m)(Tr L_V^m - Tr L_E^m) (s_j the periodic orbit). With E1/E2 (BGS-TRACE-183/184): Z_m(nu*) = (1-lambda^-m) sum_{a in {0,2,4,6}} c_a (Tr L_{V,a}^m - Tr L_{E,a}^m), |c_a| = 1/2, for the FULL (untruncated) alphabet; real shifts (the 49-state law) are covered. Lean formalises only the counting step (#fixed points - #adjacent fixed pairs = 1, and adjacent fixed pairs = closed edge chains); trace class, the trace formula and the chain-to-block identification are paper arguments. Line H annotation (2026-10-30): the 49-state (real-shift x C^49) case is written out in BGS-TRACE-207.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Lean certifies the counting step only (vertex_minus_edge, edge_closed_iff); trace class, trace formula and chain-to-block identification are paper arguments re-derived by the referee; float checks by author and referee (own code).",
    "other_weaknesses": [],
@@ -10836,6 +10849,125 @@
    "spof_detail": "state is open",
    "other_weaknesses": [],
    "risk_reassessment": "OPEN"
+  },
+  {
+   "id": "BGS-TRACE-207",
+   "title": "Line H: kappa lemma (|c_b| = 1/2 for all odd m, 3 not dividing m) and the full-alphabet 49-state lifted trace identity for the Line B kick",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "float_numerics",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "float_numerics",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineH/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineH/code/kappa_check.py",
+    "computations/verification/lineH/code/tracechk.py",
+    "computations/verification/lineH/code/cert49_build.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineH.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + LEAN CORE (Bgs.LineH: h_odd, yp_odd, k_odd, kappa_odd, inv49_mod8, sq_residues_mod8, shift4) + EXACT CHECK (398 pairs (m,s), odd m <= 599, 3 not dividing m, in Q(sqrt2)) + FLOAT CHECK (certified operator family vs exact class sums, m = 5,7,11,13, rel <= 8.9e-9; reproduced by referee) + INDEPENDENT REFEREE AUDIT (computations/verification/lineH/referee/REPORT.md; ACCEPT AFTER FIXES; fixes 1-5 and recommendations 6-10 applied)",
+   "boundary": "For every odd m with 3 not dividing m and s = +-1: kappa = -k u y' mod 8 is odd (h^2+1 = 2y'^2 forces h, y' odd; 196 nu + s = k h forces k odd; u = 49^-1 == 1 mod 8), hence c_b = 8^-1 sum_t e((kappa t^2 - b t)/8) has |c_b| = 1/2 (b even), 0 (b odd). For the Line B diagonal kick f_B (any eta) and the TRACE-194 49-state law (a = 7, gamma, lambda_7^-1 m-independent), the lifted operators V_b, E_b of BGS-TRACE-197 with real shifts x = n/7 tensored with the monomial matrices U_n on C^49 (weighted l2 sums of H^2(D(c,rho)) x C^49, rho > 0.6036 (V), > 0.1036 (E)) are trace class and Z_m(nu_{7,s}) = (1-lambda^-m) sum_{b in {0,2,4,6}} c_b (Tr V_b^m - Tr E_b^m) for the FULL alphabet. Proof: block trace factorises as Tr(M_p C_psi) Tr(U_{n_{m-1}}...U_{n_0}); the C^49 factor is a monomial matrix whose permutation sigma -> lambda_7^-m sigma + const has exactly one fixed point iff 3 does not divide m, giving the TRACE-194 phase; vertex-minus-edge counting (Bgs.LineF.vertex_minus_edge, real shifts); absolute trace-norm convergence. Lean covers only the parity/residue steps; the Gauss-sum evaluation |G(kappa)| = 4 and the operator theory are paper arguments.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies the parity/residue steps of the kappa lemma only; the Gauss-sum evaluation, the trace factorisation and the trace-norm convergence are paper arguments checked by the referee; exact check (398 pairs) and float trace check (rel <= 8.9e-9) by author and referee.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-208",
+   "title": "Line H: certified spectrum of the 49-state lifted operators for the Line B kick f_B at eta = 2, s = -1 (N == +196)",
+   "state": "proved",
+   "methods": [
+    "computer_certificate",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 6,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineH/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineH/code/ghat_arb.py",
+    "computations/verification/lineH/code/cert49_build.py",
+    "computations/verification/lineH/code/rig_spec.py",
+    "computations/verification/lineH/referee/code/ref_rig.py",
+    "computations/verification/lineH/referee/code/ref_bounds.py",
+    "computations/verification/lineH/referee/code/ref_entries.py"
+   ],
+   "formalization": [],
+   "ledger_status": "COMPUTER-ASSISTED (ARB 128-BIT, python-flint 0.9.0; FLOAT BLAS WITH A-PRIORI BOUND sqrt2*gamma_{2n+2}, ANY SUMMATION ORDER/FMA; A-POSTERIORI HOUSEHOLDER RESIDUAL) + REFEREE INDEPENDENT RE-CERTIFICATION OF V_0 AND E_0 (ref_rig.py; V_0 CERTIFICATE OF RECORD) + REFEREE EXACT-RATIONAL RE-DECISION + INDEPENDENT ENTRY CHECK (120 entries <= 2.3e-14) + INDEPENDENT REFEREE AUDIT (computations/verification/lineH/referee/REPORT.md; ACCEPT AFTER FIXES; fixes 1-5 and recommendations 6-10 applied)",
+   "boundary": "Line B diagonal kick f_B (fCoeff(k,0)), eta = 2, s = -1 (nu* with N == +196 mod h_m), lifted 49-state operators of BGS-TRACE-207 (K0 = 2, rho = 0.85, beta = 3.5; Galerkin V: K = 30/24, D = 6762; E: K = 22/18, D = 3920): V_0 has exactly one eigenvalue mu* in |z| > 1.5, algebraically simple, |mu* - b11| < 0.05, |mu*| in [1.846834, 1.946835] (outward rounded) > lambda^(1/4) = 1.5537740; the rest of sigma(V_0) and sigma(V_2), sigma(V_4), sigma(V_6) lie in |z| < 1.5 resp. 1.45; sigma(E_b) in |z| < 1 (b = 0,2,4,6); ||V_b||_1 <= 10672.622, ||E_b||_1 <= 1106.332. Certificate values (F.R < 1, arb): V_0 (R, r1) = (1.5, 0.05): referee 0.8947/0.5916, author v4 0.9135/0.6235 (margin 8.6%; at r1 = 0.1: F.R1 = 0.5859). Relies on OpenBLAS zgemm without Strassen (verified build: scipy-openblas 0.3.34, SkylakeX). s = +1 not certified.",
+   "spof": "single_verifier_implementation_only",
+   "spof_detail": "V_0 certificate of record is the referee ref_rig.py run (independent implementation); V_2/V_4/V_6 and E_2/E_4/E_6 rest certificates come from one implementation (rig_spec.py v4) and were re-decided by the referee in exact rationals from stored scalars, not re-run; relies on OpenBLAS zgemm without Strassen.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-209",
+   "title": "Line H: Conjecture R fails for the Line B kick: W~rest_m(2)/m >= 1.4e4 for every odd m >= 47 with 3 not dividing m",
+   "state": "proved",
+   "methods": [
+    "computer_certificate",
+    "analytic_proof",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "computer_certificate",
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261030/lineH/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineH/code/bounds49.py",
+    "computations/verification/lineH/referee/code/ref_bounds.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineH.lean"
+   ],
+   "ledger_status": "COMPUTER-ASSISTED (ARB 256-BIT CHAIN, bounds49.py; INPUTS PADDED 2^-40; ROWS ASSERTED INCREASING; CLOSED-FORM TAIL ASSERTED) + PAPER CHAIN (Lidskii, Weyl, F_m >= |Z|^2/phi(2h_m), phi(2h_m) = phi(h_m) <= h_m - 1 since h_m odd, W~rest >= F - 4m) + LEAN (Bgs.LineH.geom_tail, dom_lower) + REFEREE EXACT-RATIONAL RE-DECISION + INDEPENDENT REFEREE AUDIT (computations/verification/lineH/referee/REPORT.md; ACCEPT AFTER FIXES; fixes 1-5 and recommendations 6-10 applied)",
+   "boundary": "Line B diagonal kick f_B (the kick of BGS-TRACE-179), eta = 2: for every odd m >= 47 with 3 not dividing m, |Z_m(nu*)| >= (1/2)(1-lambda^-m)(mu_lo^m - 1.5^(m-1) T_V - 3 * 1.45^(m-1) T_V - 4 T_E) > 0 (mu_lo = 1.846834, T_V <= 10672.622, T_E <= 1106.332), F_m(2)/2m >= 7000 and W~rest_m(2)/m >= 1.4e4 (m = 47; both increasing in m), and F_m(2)/2m >= 0.2499 * 1.41279^m / m for odd m >= 599, 3 not dividing m. Hence Conjecture R (BGS-TRACE-179) as stated is false (every compact eta-range containing 2), and R_NSW is violated at every m >= 47 with h_m prime (such m are prime by h_d | h_m, so 3 does not divide m; whether infinitely many exist is unknown). Proves the conclusion of BGS-TRACE-196 (s = -1) on the lifted space of BGS-TRACE-197; H_infinity,7 as stated there is neither proved nor needed. Not covered: odd m with 3 not dividing m in {17,19,23,25,29,31,35,37,41,43} (m = 11, 13: BGS-TRACE-195; m = 5, 7: nothing), all m with 3 | m, eta != 2, s = +1.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Rests on the BGS-TRACE-208 certificates and the BGS-TRACE-207 identity; the all-m chain and tail are asserted in bounds49.py and re-decided by the referee in exact rationals; Lean covers geom_tail and dom_lower only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
   }
  ],
  "recovery_upgrade": {

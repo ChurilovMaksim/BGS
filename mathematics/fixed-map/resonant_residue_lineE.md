@@ -2,6 +2,8 @@
 
 **Claims:** BGS-TRACE-183 to BGS-TRACE-196. **Annotated:** BGS-TRACE-179, BGS-TRACE-180, BGS-TRACE-182 (states unchanged).
 
+**Later work (Line H, 30 October 2026).** For the Line B kick f_B at η = 2, BGS-TRACE-209 (computer-assisted, refereed) gives W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m, on the lifted space of BGS-TRACE-197 ([lineH_49state_certificate.md](lineH_49state_certificate.md)). Conjecture R (BGS-TRACE-179) as stated is therefore refuted (registered state `refuted`; R_NSW undecided). BGS-TRACE-196 stays conditional as stated; its conclusion for s = −1 holds on the lifted space. Statements below that R is not disproved describe the state before Line H.
+
 **Later work (Line F, 30 October 2026).** The conclusion of BGS-TRACE-188 (k1, η = 2) is established unconditionally (computer-assisted) by BGS-TRACE-199 on a different, explicit lifted space ([lifted_transfer_lineF.md](lifted_transfer_lineF.md)); H∞ as stated here is not proved and 188 stays conditional. BGS-TRACE-187 is extended to every odd m ≥ 15 at η = 2 by BGS-TRACE-199. BGS-TRACE-196 stays conditional and BGS-TRACE-179 stays open.
 
 **Inputs** (cited, not re-claimed):

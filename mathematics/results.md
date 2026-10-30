@@ -1,8 +1,12 @@
 # Theorem families and their limits
 
+## Certified 49-state spectrum for the Line B kick (Line H), 30 October 2026
+
+[TRACE-207](fixed-map/lineH_49state_certificate.md) (proved): the κ lemma and the full-alphabet 49-state lifted trace identity for the Line B kick. [TRACE-208](fixed-map/lineH_49state_certificate.md) (proved, computer-assisted): at η = 2 and s = −1, V_0 has exactly one eigenvalue in |z| > 1.5, simple, with |μ*| ∈ [1.846834, 1.946835]; the rest of the spectrum is certified inside. [TRACE-209](fixed-map/lineH_49state_certificate.md) (proved, computer-assisted): W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m. Consequence: [TRACE-179](fixed-map/derandomized_fixed_kick.md) (Conjecture R as stated) is refuted. Limits: R_NSW is undecided; the odd m with 3 ∤ m in 17–43, 3 | m, η ≠ 2 and s = +1 are not covered; TRACE-196 stays conditional as stated; nothing about BGS itself.
+
 ## Resonant residues of the fixed kick (Line E), 30 October 2026
 
-[TRACE-183](fixed-map/resonant_residue_lineE.md) (proved): the exact collapse of the Pell phase at N ≡ −4 (mod h_m). [TRACE-184](fixed-map/resonant_residue_lineE.md) (proved): the m-independent IFS transfer-operator law, finite alphabet. [TRACE-185](fixed-map/resonant_residue_lineE.md)–[187](fixed-map/resonant_residue_lineE.md) (proved, computer-assisted, k1 kick only): the certified leading eigenvalue, the exponential lower bound for all m ≥ m0 for the truncated kick, and |W̃rest_m| > m for odd m ∈ [17,39] at η = 2 (also m ∈ [19,27] at η = 1.75 and m ∈ [23,33] at η = 1.5). [TRACE-188](fixed-map/resonant_residue_lineE.md) (conditional): asymptotic failure of the k1 analogue of R under H∞. [TRACE-189](fixed-map/resonant_residue_lineE.md)–[192](fixed-map/resonant_residue_lineE.md) (open; numerical records, the ∓196 resonance of the Line B kick when 3 ∤ m, η-interval certification, and the identification of the TRACE-182 outlier). After a second referee audit: [TRACE-193](fixed-map/resonant_residue_lineE.md)–[195](fixed-map/resonant_residue_lineE.md) (proved: the 7-mode corollary, computer-assisted via 187; the a²-resonance law; computer-assisted Line B kick bounds at m = 11 and 13 only, with an m = 17 certificate pending) and [TRACE-196](fixed-map/resonant_residue_lineE.md) (conditional failure of R along 3 ∤ m). Limits: no o(m) statement is disproved, and Conjecture R (TRACE-179) stays open.
+[TRACE-183](fixed-map/resonant_residue_lineE.md) (proved): the exact collapse of the Pell phase at N ≡ −4 (mod h_m). [TRACE-184](fixed-map/resonant_residue_lineE.md) (proved): the m-independent IFS transfer-operator law, finite alphabet. [TRACE-185](fixed-map/resonant_residue_lineE.md)–[187](fixed-map/resonant_residue_lineE.md) (proved, computer-assisted, k1 kick only): the certified leading eigenvalue, the exponential lower bound for all m ≥ m0 for the truncated kick, and |W̃rest_m| > m for odd m ∈ [17,39] at η = 2 (also m ∈ [19,27] at η = 1.75 and m ∈ [23,33] at η = 1.5). [TRACE-188](fixed-map/resonant_residue_lineE.md) (conditional): asymptotic failure of the k1 analogue of R under H∞. [TRACE-189](fixed-map/resonant_residue_lineE.md)–[192](fixed-map/resonant_residue_lineE.md) (open; numerical records, the ∓196 resonance of the Line B kick when 3 ∤ m, η-interval certification, and the identification of the TRACE-182 outlier). After a second referee audit: [TRACE-193](fixed-map/resonant_residue_lineE.md)–[195](fixed-map/resonant_residue_lineE.md) (proved: the 7-mode corollary, computer-assisted via 187; the a²-resonance law; computer-assisted Line B kick bounds at m = 11 and 13 only, with an m = 17 certificate pending) and [TRACE-196](fixed-map/resonant_residue_lineE.md) (conditional failure of R along 3 ∤ m). Limits: no o(m) statement is disproved, and Conjecture R (TRACE-179) stays open. (Later: Line H, above, refutes Conjecture R as stated at η = 2.)
 
 ## Fixed diagonal kick, 29 October 2026
 
@@ -499,7 +503,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**290 registered claims: 235 proved, 15 verification-pending, 15 conditional, 25 open.**
+**293 registered claims: 238 proved, 15 verification-pending, 15 conditional, 24 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -665,7 +669,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (181 claims)
+### TRACE family (184 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -822,7 +826,7 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-176` | **CONDITIONAL** | Theorem G: joint (nu, Bohr-eta) moments and a conditional moment CLT |
 | `BGS-TRACE-177` | **OPEN** | Numerical observations: ND^(2) at small m, mu(eta) spectrum, m_* crossover, W~rest tables, fixed-eta CLT numerics, torsion-split numbers |
 | `BGS-TRACE-178` | **PROVED** | Exact torsion-class split F = F_gen + F_tor |
-| `BGS-TRACE-179` | **OPEN** | Conjecture R / R_NSW: W~rest_m(eta) = o(m) uniformly on compact eta-ranges |
+| `BGS-TRACE-179` | **REFUTED** | Conjecture R / R_NSW: W~rest_m(eta) = o(m) uniformly on compact eta-ranges |
 | `BGS-TRACE-180` | **OPEN** | Fixed-eta (nu-only) central limit law |
 | `BGS-TRACE-181` | **OPEN** | Non-degeneracy ND_m for composite h_m and for even m |
 | `BGS-TRACE-182` | **OPEN** | The (m, eta) = (11, 2) outlier |
@@ -850,5 +854,8 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-204` | **OPEN** | Line G G3: dilution identity along divisors d of h_m |
 | `BGS-TRACE-205` | **OPEN** | Line G classification record: resonant families, growth rates, G5 (h_d \| h_m), G6 (sparsity), G7 (moment heuristic), eta-scan |
 | `BGS-TRACE-206` | **OPEN** | Line G: Conjecture R' (corrected mean law for the k1 kick at eta = 2) with a pre-registered m = 17 test |
+| `BGS-TRACE-207` | **PROVED** | Line H: kappa lemma (\|c_b\| = 1/2 for all odd m, 3 not dividing m) and the full-alphabet 49-state lifted trace identity for the Line B kick |
+| `BGS-TRACE-208` | **PROVED** | Line H: certified spectrum of the 49-state lifted operators for the Line B kick f_B at eta = 2, s = -1 (N == +196) |
+| `BGS-TRACE-209` | **PROVED** | Line H: Conjecture R fails for the Line B kick: W~rest_m(2)/m >= 1.4e4 for every odd m >= 47 with 3 not dividing m |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

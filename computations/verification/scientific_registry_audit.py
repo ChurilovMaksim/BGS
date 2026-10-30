@@ -27,7 +27,7 @@ ERRATA_RE = re.compile(r"^ERR-[0-9]{3}$")
 CLAIM_RE = re.compile(r"^BGS-[A-Z]+-[0-9]{3}$")
 LEDGER_ID_RE = re.compile(r"(?<![A-Z0-9-])BGS-[A-Z]+-[0-9]{3}(?![0-9])")
 EXTERNAL_RE = re.compile(r"^EXT-[A-Z0-9]+-[A-Z0-9-]+$")
-ALLOWED_STATES = {"proved", "conditional", "open", "verification-pending"}
+ALLOWED_STATES = {"proved", "conditional", "open", "verification-pending", "refuted"}
 
 def fail(message: str) -> None:
     raise SystemExit("scientific-registry-audit: " + message)
