@@ -1,0 +1,132 @@
+Checker run on the Line B integration tree, 2026-10-29.
+Failures already present on main 502af245, not introduced by Line B:
+  bibliographic_metadata_audit.py --self-test exits 1: EXT-BR-1975 dependency graph changed because the recorded transitive impact list omits BGS-TRACE-116. The live closure contains BGS-TRACE-116 and no Line B id.
+  wave2_portable_replay.py --check-sources exits 1: sealed digest mismatch for mathematics/position_chain_mixing.md.
+  wave2_integration_audit.py exits 1: integrated wrapper sha256 of mathematics/fixed-map/rounding_simple_spectrum_endpoint_barriers.md (BGS-TRACE-025) does not match record/wave2_promotion_mapping.json. The working-tree sha256 equals git show origin/main for that file (814d6da2b7eb8d7268c81c876706d2b0719560746bf8dd91219286e05d787b89); the mapping records d918c7a5b49c041d68a0820f556e98e8be7cfec71a52c551c447f3fe983697ca. The file was not edited.
+GitHub Actions was not executed. pandoc 3.12.1 is on PATH for the sync --check commands. pdflatex is not installed, so manuscript/BGS_unified.pdf was not rebuilt.
+
+=== scientific_registry_audit ===
+scientific-registry-audit: OK (266 claims, 57 external dependencies)
+exit:0
+
+=== repository_audit ===
+PASS check_canonical_identity
+PASS check_required
+PASS check_retired_julia
+PASS check_archive_contract
+PASS check_manuscript_surface
+PASS check_workflows
+PASS check_maintenance_surface
+PASS check_cpp_coverage
+PASS check_lean_coverage
+PASS check_bilingual_readmes
+PASS check_active_markdown_links
+PASS repository_audit
+exit:0
+
+=== text_control_audit ===
+Maintained-text C0/UTF-8 audit passed (binary/evidence/archive/papers excluded).
+exit:0
+
+=== wave2_integration_audit ===
+Traceback (most recent call last):
+  File "/workspace/computations/verification/wave2_integration_audit.py", line 256, in <module>
+    if __name__=='__main__':print(json.dumps(run(),indent=2))
+                                             ^^^^^
+  File "/workspace/computations/verification/wave2_integration_audit.py", line 226, in run
+    require(sha(path)==c['integrated_wrapper_sha256'],'integrated wrapper mapping changed')
+  File "/workspace/computations/verification/wave2_checked_replay.py", line 30, in require
+    raise RuntimeError(message)
+RuntimeError: integrated wrapper mapping changed
+exit:1
+
+=== wave3_integration_audit ===
+{
+  "status": "passed",
+  "new_theorem_ids": 2,
+  "immutable_Wave3_rows": 42,
+  "right_receipt_files": 31,
+  "convex_receipt_files": 9,
+  "earlier_claims_preserved": 101,
+  "wrapper_links": 6,
+  "right_frame_controls": 72,
+  "separated_controls": 227,
+  "exact_convex_controls": 1486,
+  "independent_floating_controls": 8708,
+  "Wave2_section_unchanged": true,
+  "unavailable_author222_replayed": false,
+  "scope": "Byte/lineage/scope/link checks; no additional proof audit or aggregate build."
+}
+exit:0
+
+=== render_claim_registry ===
+claim-registry-render: OK
+exit:0
+
+=== render_status ===
+status-render: OK
+exit:0
+
+=== render_research_views ===
+Research navigation views synchronized
+exit:0
+
+=== render_errata ===
+errata-render: OK
+exit:0
+
+=== render_bibliography ===
+bibliography-render: OK
+exit:0
+
+=== audit_manuscript_references ===
+{
+  "root": "manuscript/BGS_unified.tex",
+  "input_files": 114,
+  "visited_files": 115,
+  "cited_keys": 57,
+  "bibliography_keys": 73,
+  "labels": 666,
+  "references": 245,
+  "unresolved_labels": [],
+  "duplicate_labels": [],
+  "errors": []
+}
+exit:0
+
+=== sync_finite_orbit ===
+SKIP finite-orbit source synchronization: TARGET hand-edited since Pass 1; TeX is source of truth
+exit:0
+
+=== sync_fixed_map ===
+SKIP fixed-map source synchronization: TARGET hand-edited since Pass 1/2; TeX is source of truth
+exit:0
+
+=== sync_return_sections ===
+SKIP hand-edited chapters (TeX is source of truth): manuscript/unified_sections/return_gas.tex, manuscript/unified_sections/return_position.tex, manuscript/unified_sections/return_periodic.tex, manuscript/unified_sections/return_phase.tex, manuscript/unified_sections/return_general.tex, manuscript/unified_sections/return_obstruction.tex
+exit:0
+
+=== wave3_sources ===
+Wave3 source closure: OK
+exit:0
+
+=== compileall ===
+exit:0
+
+=== bibliographic_self_test ===
+EXT-BR-1975: dependency graph changed; refresh impact review explicitly
+exit:1
+
+=== wave2_portable_sources ===
+Traceback (most recent call last):
+  File "/workspace/computations/verification/wave2_portable_replay.py", line 378, in <module>
+    main()
+  File "/workspace/computations/verification/wave2_portable_replay.py", line 369, in main
+    sealed_source_bytes()
+  File "/workspace/computations/verification/wave2_portable_replay.py", line 77, in sealed_source_bytes
+    historical.require(historical.digest(data)==digest,'changed source: '+rel)
+  File "/workspace/computations/verification/wave2_checked_replay.py", line 30, in require
+    raise RuntimeError(message)
+RuntimeError: changed source: mathematics/position_chain_mixing.md
+exit:1
+

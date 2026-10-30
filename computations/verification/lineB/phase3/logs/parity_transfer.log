@@ -1,0 +1,38 @@
+Validation: chi_m transfer vs direct support sum
+ m=3 eta=2 K=8 transfer=+0.9940251890-1.5e-17j direct=+0.9940251890 |diff|=2.0e-14
+ m=3 eta=10 K=8 transfer=+0.8649995874-5.0e-17j direct=+0.8649995876 |diff|=1.2e-10
+ m=3 eta=50 K=8 transfer=+0.5229590374+4.4e-16j direct=+0.5229578739 |diff|=1.2e-06
+ m=3 eta=200 K=14 transfer=+0.5198287836+1.0e-15j direct=+0.5198985826 |diff|=7.0e-05
+ m=5 eta=2 K=8 transfer=+0.9962570180+1.5e-17j direct=+0.9962570180 |diff|=3.3e-16
+ m=5 eta=10 K=8 transfer=+0.9105247095+6.2e-17j direct=+0.9105247095 |diff|=2.5e-11
+ m=5 eta=50 K=8 transfer=+0.1687732386-1.0e-16j direct=+0.1687729129 |diff|=3.3e-07
+ m=5 eta=200 K=14 transfer=+0.1482957929+1.4e-15j direct=+0.1482716092 |diff|=2.4e-05
+ m=7 eta=2 K=8 transfer=+0.9947670030+1.1e-17j direct=+0.9947670030 |diff|=3.3e-16
+ m=7 eta=10 K=8 transfer=+0.8787657017+5.0e-17j direct=+0.8787657017 |diff|=4.1e-12
+ m=7 eta=50 K=8 transfer=+0.0811819697+9.4e-17j direct=+0.0811818420 |diff|=1.3e-07
+ m=7 eta=200 K=14 transfer=+0.0194258846+2.5e-16j direct=+0.0194288621 |diff|=3.0e-06
+ m=9 eta=2 K=8 transfer=+0.9932777863+1.4e-17j direct=+0.9932777863 |diff|=4.4e-16
+ m=9 eta=10 K=8 transfer=+0.8473323982+6.1e-17j direct=+0.8473323982 |diff|=5.2e-13
+ m=9 eta=50 K=8 transfer=+0.0726987344+1.7e-17j direct=+0.0726987951 |diff|=6.1e-08
+ m=9 eta=200 K=14 transfer=+0.0099836957+6.1e-17j direct=+0.0099841450 |diff|=4.5e-07
+Leading eigenvalues |mu| of M_a (a=0..3) and of |M_a| (positive majorant), eta grid; K convergence
+ eta=  0.5 K=8 max|mu_a|=0.999953 (per a: 0.99995 0.05482 0.05015 0.05132)  rho(|M|) max=1.0000  m_half(=log2/-log|mu|)=14787.8
+ eta=  0.5 K=12 max|mu_a|=0.999953 (per a: 0.99995 0.05482 0.05015 0.05132)  rho(|M|) max=1.0000  m_half(=log2/-log|mu|)=14787.8
+ eta=    1 K=8 max|mu_a|=0.999813 (per a: 0.99981 0.08041 0.07113 0.07316)  rho(|M|) max=0.9998  m_half(=log2/-log|mu|)=3697.5
+ eta=    1 K=12 max|mu_a|=0.999813 (per a: 0.99981 0.08041 0.07113 0.07316)  rho(|M|) max=0.9998  m_half(=log2/-log|mu|)=3697.5
+ eta=    2 K=8 max|mu_a|=0.999251 (per a: 0.99925 0.11946 0.10117 0.10437)  rho(|M|) max=0.9993  m_half(=log2/-log|mu|)=924.9
+ eta=    2 K=12 max|mu_a|=0.999251 (per a: 0.99925 0.11946 0.10117 0.10437)  rho(|M|) max=0.9993  m_half(=log2/-log|mu|)=924.9
+ eta=    5 K=8 max|mu_a|=0.995345 (per a: 0.99535 0.20593 0.16255 0.16629)  rho(|M|) max=0.9955  m_half(=log2/-log|mu|)=148.6
+ eta=    5 K=12 max|mu_a|=0.995345 (per a: 0.99535 0.20593 0.16255 0.16629)  rho(|M|) max=0.9955  m_half(=log2/-log|mu|)=148.6
+ eta=   10 K=8 max|mu_a|=0.981765 (per a: 0.98177 0.31261 0.23504 0.23272)  rho(|M|) max=0.9825  m_half(=log2/-log|mu|)=37.7
+ eta=   10 K=12 max|mu_a|=0.981765 (per a: 0.98177 0.31261 0.23504 0.23272)  rho(|M|) max=0.9825  m_half(=log2/-log|mu|)=37.7
+ eta=   25 K=8 max|mu_a|=0.900343 (per a: 0.90034 0.49515 0.38607 0.40926)  rho(|M|) max=0.9091  m_half(=log2/-log|mu|)=6.6
+ eta=   25 K=12 max|mu_a|=0.900343 (per a: 0.90034 0.49515 0.38607 0.40926)  rho(|M|) max=0.9091  m_half(=log2/-log|mu|)=6.6
+ eta=   50 K=8 max|mu_a|=0.731050 (per a: 0.73105 0.51021 0.53597 0.56323)  rho(|M|) max=0.7911  m_half(=log2/-log|mu|)=2.2
+ eta=   50 K=12 max|mu_a|=0.731050 (per a: 0.73105 0.51021 0.53597 0.56323)  rho(|M|) max=0.7911  m_half(=log2/-log|mu|)=2.2
+ eta=  100 K=8 max|mu_a|=0.619965 (per a: 0.61997 0.43985 0.58941 0.43106)  rho(|M|) max=0.9484  m_half(=log2/-log|mu|)=1.4
+ eta=  100 K=12 max|mu_a|=0.619954 (per a: 0.61995 0.43982 0.58940 0.43117)  rho(|M|) max=0.9488  m_half(=log2/-log|mu|)=1.4
+ eta=  200 K=14 max|mu_a|=0.558634 (per a: 0.49621 0.44784 0.55863 0.44282)  rho(|M|) max=1.2544  m_half(=log2/-log|mu|)=1.2
+ eta=  200 K=20 max|mu_a|=0.558634 (per a: 0.49621 0.44783 0.55863 0.44282)  rho(|M|) max=1.2544  m_half(=log2/-log|mu|)=1.2
+ eta=  400 K=14 max|mu_a|=0.543549 (per a: 0.54355 0.47017 0.49183 0.45443)  rho(|M|) max=1.6582  m_half(=log2/-log|mu|)=1.1
+ eta=  400 K=20 max|mu_a|=0.544912 (per a: 0.54491 0.46972 0.49242 0.45575)  rho(|M|) max=1.7087  m_half(=log2/-log|mu|)=1.1

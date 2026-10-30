@@ -1,0 +1,15 @@
+# smoke test of relocated packet scripts, run from the packet tree
+## phase3/W_decomp.py 5 1,10
+m=5 h=41 B_sym=9.399762 (2m=10) error bound on W_par approx ~4m*m*h/h^2=2.439
+  eta=     1 F/2m=1.1521 chi=+0.99906 (transfer +0.99906) W_par/2m=+0.9991 W_rest/2m=-0.7869
+  eta=    10 F/2m=1.7791 chi=+0.91052 (transfer +0.91052) W_par/2m=+0.9105 W_rest/2m=-0.0714
+  time 2s
+## phase2/deficit_odd.py (tail)
+m=35 h_m=12477253282759 deficit=9.817866e-11 m^2/h_m=9.817866e-11 ratio=1.000000 B_sym/2m=0.999999999999
+m=37 h_m=72722761475561 deficit=1.882492e-11 m^2/h_m=1.882492e-11 ratio=1.000000 B_sym/2m=1.000000000000
+m=39 h_m=423859315570607 deficit=3.588455e-12 m^2/h_m=3.588455e-12 ratio=1.000000 B_sym/2m=1.000000000000
+m=41 h_m=2470433131948081 deficit=6.804475e-13 m^2/h_m=6.804475e-13 ratio=1.000000 B_sym/2m=1.000000000000
+## phase4/certify_v2.py
+1 1.1 rem 2.7180091568536636e-11 {'trunc_tilted': 1.0684126597766446e-204, 'spill': 0.0, 'x': 0.00758165199627868}
+50 50.5 rem 4.341873836314768e-07 {'trunc_tilted': 6.994782242837836e-100, 'spill': 0.0, 'x': 0.03790825998139337}
+81.2445 81.5741 rem 8.00872465884729e-08 {'trunc_tilted': 2.0424531412463226e-86, 'spill': 0.0, 'x': 0.02498912497973445}

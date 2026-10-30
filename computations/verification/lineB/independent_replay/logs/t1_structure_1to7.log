@@ -1,0 +1,13 @@
+m=1 D=4 e=[4] h=1 gprime=2 (2h=2) #units=1
+  support = 1/2*1 + V_odd for all sampled nu; |k|^2 = 1/h^2 = 1/D_eff on it  [OK]
+  k_nu(-xi) = k_nu(xi)  [OK]
+  direct deficit sum(2m-|Gamma xi|) over S = 1; Theorem D closed form = 1; ratio deficit/h^2 / (m^2/h) = 1.00000
+  reflection fixing a vertex: 1 fixed points on S (Lemma F predicts h_m = 1)
+Traceback (most recent call last):
+  File "/workspace/audit/derand23/code/t1_structure.py", line 71, in <module>
+    for m in [int(x) for x in sys.argv[1].split(',')]: run(m)
+                                                       ~~~^^^
+  File "/workspace/audit/derand23/code/t1_structure.py", line 60, in run
+    r=(X[:,0]**2-6*X[:,0]*X[:,1]+X[:,1]**2)%h
+                          ~^^^^^
+IndexError: index 1 is out of bounds for axis 1 with size 1

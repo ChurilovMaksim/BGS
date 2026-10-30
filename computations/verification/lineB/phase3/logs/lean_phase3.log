@@ -1,0 +1,10 @@
+# build dir: /workspace/bgs-derand/phase3/build (own cp -a copy); lake exe cache get -> No files to download
+Build completed successfully (727 jobs).
+'BgsPhase3.P1_form_invariant' depends on axioms: [propext, Quot.sound]
+'BgsPhase3.P2_odd_norm' depends on axioms: [propext]
+'BgsPhase3.P3_H_ones' depends on axioms: [propext]
+'BgsPhase3.P3_sum' depends on axioms: [propext]
+'BgsPhase3.P4_m7' does not depend on any axioms
+'BgsPhase3.P5_no_periodic' does not depend on any axioms
+1
+# Rebuilt Thu Oct 29 20:31:26 +05 2026 after box restore removed phase3/build: fresh cp -a of formalization, lake exe cache get (Completed successfully), lake build Bgs.Phase3Checks -> success; axioms as above (unchanged).

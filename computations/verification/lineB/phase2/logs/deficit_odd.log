@@ -1,0 +1,28 @@
+== direct counting on the support vs closed form (odd m) ==
+m=1 D_eff=1 h_m^2=1 direct sum(2m-|Gamma xi|)=1 closed form=1 match=True deficit=1.000000  #S-fixed points in support=1
+m=3 D_eff=49 h_m^2=49 direct sum(2m-|Gamma xi|)=59 closed form=59 match=True deficit=1.204082  #S-fixed points in support=1
+m=5 D_eff=1681 h_m^2=1681 direct sum(2m-|Gamma xi|)=1009 closed form=1009 match=True deficit=0.600238  #S-fixed points in support=1
+m=7 D_eff=57121 h_m^2=57121 direct sum(2m-|Gamma xi|)=11675 closed form=11675 match=True deficit=0.204391  #S-fixed points in support=1
+m=9 D_eff=1940449 h_m^2=1940449 direct sum(2m-|Gamma xi|)=112913 closed form=112913 match=True deficit=0.058189  #S-fixed points in support=1
+== exact deficit 2m - B_sym for odd m (closed form) and leading term m^2/h_m ==
+m= 1 h_m=1 deficit=1.000000e+00 m^2/h_m=1.000000e+00 ratio=1.000000 B_sym/2m=0.500000000000
+m= 3 h_m=7 deficit=1.204082e+00 m^2/h_m=1.285714e+00 ratio=0.936508 B_sym/2m=0.799319727891
+m= 5 h_m=41 deficit=6.002380e-01 m^2/h_m=6.097561e-01 ratio=0.984390 B_sym/2m=0.939976204640
+m= 7 h_m=239 deficit=2.043907e-01 m^2/h_m=2.050209e-01 ratio=0.996926 B_sym/2m=0.985400665755
+m= 9 h_m=1393 deficit=5.818911e-02 m^2/h_m=5.814788e-02 ratio=1.000709 B_sym/2m=0.996767271676
+m=11 h_m=8119 deficit=1.490180e-02 m^2/h_m=1.490331e-02 ratio=0.999898 B_sym/2m=0.999322645628
+m=13 h_m=47321 deficit=3.571289e-03 m^2/h_m=3.571353e-03 ratio=0.999982 B_sym/2m=0.999862642739
+m=15 h_m=275807 deficit=8.161199e-04 m^2/h_m=8.157879e-04 ratio=1.000407 B_sym/2m=0.999972796003
+m=17 h_m=1607521 deficit=1.797798e-04 m^2/h_m=1.797799e-04 ratio=0.999999 B_sym/2m=0.999994712358
+m=19 h_m=9369319 deficit=3.853001e-05 m^2/h_m=3.853001e-05 ratio=1.000000 B_sym/2m=0.999998986052
+m=21 h_m=54608393 deficit=8.076186e-06 m^2/h_m=8.075682e-06 ratio=1.000062 B_sym/2m=0.999999807710
+m=23 h_m=318281039 deficit=1.662053e-06 m^2/h_m=1.662053e-06 ratio=1.000000 B_sym/2m=0.999999963868
+m=25 h_m=1855077841 deficit=3.369131e-07 m^2/h_m=3.369131e-07 ratio=1.000000 B_sym/2m=0.999999993262
+m=27 h_m=10812186007 deficit=6.742451e-08 m^2/h_m=6.742392e-08 ratio=1.000009 B_sym/2m=0.999999998751
+m=29 h_m=63018038201 deficit=1.334539e-08 m^2/h_m=1.334539e-08 ratio=1.000000 B_sym/2m=0.999999999770
+m=31 h_m=367296043199 deficit=2.616418e-09 m^2/h_m=2.616418e-09 ratio=1.000000 B_sym/2m=0.999999999958
+m=33 h_m=2140758220993 deficit=5.086989e-10 m^2/h_m=5.086983e-10 ratio=1.000001 B_sym/2m=0.999999999992
+m=35 h_m=12477253282759 deficit=9.817866e-11 m^2/h_m=9.817866e-11 ratio=1.000000 B_sym/2m=0.999999999999
+m=37 h_m=72722761475561 deficit=1.882492e-11 m^2/h_m=1.882492e-11 ratio=1.000000 B_sym/2m=1.000000000000
+m=39 h_m=423859315570607 deficit=3.588455e-12 m^2/h_m=3.588455e-12 ratio=1.000000 B_sym/2m=1.000000000000
+m=41 h_m=2470433131948081 deficit=6.804475e-13 m^2/h_m=6.804475e-13 ratio=1.000000 B_sym/2m=1.000000000000

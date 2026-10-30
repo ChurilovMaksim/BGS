@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**246 registered nodes; 319 direct prerequisite edges.**
+**266 registered nodes; 348 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -230,7 +230,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-128](../mathematics/fixed-map/diagonal_phase_short_time.md) | proved | `BGS-TRACE-127` | None registered | 3 |
 | [BGS-TRACE-129](../mathematics/fixed-map/scalar_return_bessel.md) | proved | `BGS-TRACE-126` | None registered | 4 |
 | [BGS-TRACE-130](../mathematics/fixed-map/sixteen_phase_symmetry.md) | proved | `BGS-TRACE-126`, `BGS-TRACE-129` | None registered | 3 |
-| [BGS-TRACE-131](../mathematics/fixed-map/hyperbolic_diagonal_form_factor.md) | proved | `BGS-TRACE-126`, `BGS-TRACE-127`, `BGS-TRACE-130` | None registered | 5 |
+| [BGS-TRACE-131](../mathematics/fixed-map/hyperbolic_diagonal_form_factor.md) | proved | `BGS-TRACE-126`, `BGS-TRACE-127`, `BGS-TRACE-130` | None registered | 7 |
 | [BGS-TRACE-132](../mathematics/fixed-map/hyperbolic_short_time_limit.md) | proved | `BGS-TRACE-127`, `BGS-TRACE-128`, `BGS-TRACE-130`, `BGS-TRACE-131` | None registered | 0 |
 | [BGS-TRACE-133](../mathematics/fixed-map/revival_closure_law.md) | proved | `BGS-TRACE-126`, `BGS-TRACE-129`, `BGS-TRACE-131` | None registered | 5 |
 | [BGS-TRACE-134](../mathematics/fixed-map/revival_closure_law.md) | proved | `BGS-TRACE-126`, `BGS-TRACE-129`, `BGS-TRACE-133` | None registered | 1 |
@@ -260,3 +260,23 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-160](../mathematics/fixed-map/band_limited_kick_bridge.md) | proved | `BGS-TRACE-146` | None registered | 2 |
 | [BGS-TRACE-161](../mathematics/fixed-map/band_limited_kick_bridge.md) | open | `BGS-TRACE-160` | None registered | 0 |
 | [BGS-TRACE-162](../mathematics/fixed-map/band_limited_kick_bridge.md) | open | `BGS-TRACE-148`, `BGS-TRACE-160` | None registered | 0 |
+| [BGS-TRACE-163](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-131` | None registered | 3 |
+| [BGS-TRACE-164](../mathematics/fixed-map/derandomized_fixed_kick.md) | conditional | `BGS-TRACE-131`, `BGS-TRACE-163` | None registered | 1 |
+| [BGS-TRACE-165](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-163` | None registered | 4 |
+| [BGS-TRACE-166](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | None registered | None registered | 2 |
+| [BGS-TRACE-167](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-166` | None registered | 0 |
+| [BGS-TRACE-168](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-166` | None registered | 2 |
+| [BGS-TRACE-169](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-165` | None registered | 2 |
+| [BGS-TRACE-170](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-169` | None registered | 5 |
+| [BGS-TRACE-171](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-170` | None registered | 2 |
+| [BGS-TRACE-172](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-170` | None registered | 1 |
+| [BGS-TRACE-173](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-171`, `BGS-TRACE-172` | None registered | 0 |
+| [BGS-TRACE-174](../mathematics/fixed-map/derandomized_fixed_kick.md) | conditional | `BGS-TRACE-170`, `BGS-TRACE-171` | None registered | 0 |
+| [BGS-TRACE-175](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-163` | None registered | 0 |
+| [BGS-TRACE-176](../mathematics/fixed-map/derandomized_fixed_kick.md) | conditional | `BGS-TRACE-165`, `BGS-TRACE-168` | None registered | 1 |
+| [BGS-TRACE-177](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-170` | None registered | 2 |
+| [BGS-TRACE-178](../mathematics/fixed-map/derandomized_fixed_kick.md) | proved | `BGS-TRACE-169` | None registered | 1 |
+| [BGS-TRACE-179](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-170`, `BGS-TRACE-177` | None registered | 1 |
+| [BGS-TRACE-180](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-176`, `BGS-TRACE-179` | None registered | 0 |
+| [BGS-TRACE-181](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-164`, `BGS-TRACE-168` | None registered | 0 |
+| [BGS-TRACE-182](../mathematics/fixed-map/derandomized_fixed_kick.md) | open | `BGS-TRACE-177`, `BGS-TRACE-178` | None registered | 0 |

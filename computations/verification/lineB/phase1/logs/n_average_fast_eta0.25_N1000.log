@@ -1,0 +1,6 @@
+# eta=0.25 odd N in [1001,1201) step 2; max over N,m of ||TrM^m|-1| = 2.2e-13
+m=1 #N=100 avg|TrU^m|^2=1.0754 (se 0.0004)  same-sample avg|Z(nu_N)|^2=1.0000  F_m(eta)=1.0000  RMS(|TrU|^2-|Z(nu_N)|^2)=0.0755
+m=2 #N=100 avg|TrU^m|^2=1.2331 (se 0.0683)  same-sample avg|Z(nu_N)|^2=1.2298  F_m(eta)=1.2298  RMS(|TrU|^2-|Z(nu_N)|^2)=0.0557
+m=3 #N=85 avg|TrU^m|^2=1.1686 (se 0.0284)  same-sample avg|Z(nu_N)|^2=1.0204  F_m(eta)=1.0219  RMS(|TrU|^2-|Z(nu_N)|^2)=0.1527
+m=4 #N=67 avg|TrU^m|^2=1.7606 (se 0.1634)  same-sample avg|Z(nu_N)|^2=1.7711  F_m(eta)=1.8319  RMS(|TrU|^2-|Z(nu_N)|^2)=0.1490
+m=5 #N=97 avg|TrU^m|^2=2.1727 (se 0.1718)  same-sample avg|Z(nu_N)|^2=2.1724  F_m(eta)=2.1182  RMS(|TrU|^2-|Z(nu_N)|^2)=0.1593

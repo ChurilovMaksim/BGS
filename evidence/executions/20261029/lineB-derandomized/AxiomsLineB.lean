@@ -1,0 +1,57 @@
+import Bgs.LineBDerand
+import Bgs.LineBPhase2
+import Bgs.LineBPhase3
+import Bgs.LineBPhase4
+#print axioms Bgs.LineB.Derand.lemmaQ_1
+#print axioms Bgs.LineB.Derand.lemmaQ_2
+#print axioms Bgs.LineB.Derand.lemmaQ_3
+#print axioms Bgs.LineB.Derand.lemmaQ_4
+#print axioms Bgs.LineB.Derand.lemmaQ_5
+#print axioms Bgs.LineB.Derand.lemmaQ_6
+#print axioms Bgs.LineB.Derand.lemmaQ_7
+#print axioms Bgs.LineB.Derand.lemmaQ_8
+#print axioms Bgs.LineB.Derand.lemmaQ_9
+#print axioms Bgs.LineB.Derand.lemmaQ_10
+#print axioms Bgs.LineB.Derand.lemmaQ_12
+#print axioms Bgs.LineB.Derand.lemmaQ_bad_fails
+#print axioms Bgs.LineB.Derand.D_values
+#print axioms Bgs.LineB.Derand.pell_id
+#print axioms Bgs.LineB.Derand.gprime_values
+#print axioms Bgs.LineB.Derand.yprime_values
+#print axioms Bgs.LineB.Derand.d1_values
+#print axioms Bgs.LineB.Derand.det_check
+#print axioms Bgs.LineB.Derand.D_closed
+#print axioms Bgs.LineB.Derand.d1_divisible
+#print axioms Bgs.LineB.Derand.d1d2
+#print axioms Bgs.LineB.Derand.Deff_values
+#print axioms Bgs.LineB.Phase2.thmD_matches_direct
+#print axioms Bgs.LineB.Phase2.Deff_odd
+#print axioms Bgs.LineB.Phase2.only_n7_has_symmetries
+#print axioms Bgs.LineB.Phase2.n7_all_units
+#print axioms Bgs.LineB.Phase2.shifted_real_parts
+#print axioms Bgs.LineB.Phase2.big_weight_separation
+#print axioms Bgs.LineB.Phase2.coefficient_classes
+#print axioms Bgs.LineB.Phase2.thmN_m7
+#print axioms Bgs.LineB.Phase2.thmN_m19_prime
+#print axioms Bgs.LineB.Phase2.thmN_m19_h
+#print axioms Bgs.LineB.Phase2.thmN_m19_order
+#print axioms Bgs.LineB.Phase2.thmN_m19_condA
+#print axioms Bgs.LineB.Phase2.thmN_m19_condB
+#print axioms Bgs.LineB.Phase3.P1_form_invariant
+#print axioms Bgs.LineB.Phase3.P2_odd_norm
+#print axioms Bgs.LineB.Phase3.P3_H_ones
+#print axioms Bgs.LineB.Phase3.P3_sum
+#print axioms Bgs.LineB.Phase3.P4_m7
+#print axioms Bgs.LineB.Phase3.P5_no_periodic
+#print axioms Bgs.LineB.Phase4.U2_value
+#print axioms Bgs.LineB.Phase4.sigma2_decimal
+#print axioms Bgs.LineB.Phase4.G0_SAFE_ok
+#print axioms Bgs.LineB.Phase4.CC_SAFE_ok
+#print axioms Bgs.LineB.Phase4.m5_prime
+#print axioms Bgs.LineB.Phase4.m5_U
+#print axioms Bgs.LineB.Phase4.m7_prime
+#print axioms Bgs.LineB.Phase4.m7_U
+#print axioms Bgs.LineB.Phase4.m3_relation
+#print axioms Bgs.LineB.Phase4.m9_norm
+#print axioms Bgs.LineB.Phase4.T4
+#print axioms Bgs.LineB.Phase4.h9_sq

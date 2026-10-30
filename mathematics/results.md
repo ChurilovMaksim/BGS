@@ -1,5 +1,9 @@
 # Theorem families and their limits
 
+## Fixed diagonal kick, 29 October 2026
+
+[TRACE-163](fixed-map/derandomized_fixed_kick.md) is the exact Pell-norm trace formula for the fixed diagonal kick, the orbit form, and $B_m=2m$ at $m\le 8$ (proved). [TRACE-164](fixed-map/derandomized_fixed_kick.md) is conditional on $\mathrm{ND}_m$. [TRACE-165](fixed-map/derandomized_fixed_kick.md) is the Ramanujan kernel and the exact odd-$m$ ramp (proved). [TRACE-166](fixed-map/derandomized_fixed_kick.md) is the $p$-splitting lemma (proved). [TRACE-167](fixed-map/derandomized_fixed_kick.md) is automatic admissibility (proved, after the second reader's repair). [TRACE-168](fixed-map/derandomized_fixed_kick.md) is Theorem N for eleven certified NSW primes (proved; nontrivial from $m=29$). [TRACE-169](fixed-map/derandomized_fixed_kick.md) is the norm-class formula (proved). [TRACE-170](fixed-map/derandomized_fixed_kick.md) is the parity decomposition and the transfer formula (proved). [TRACE-171](fixed-map/derandomized_fixed_kick.md) is the lower bound for odd $m\ge 5$ (proved). [TRACE-172](fixed-map/derandomized_fixed_kick.md) is the majorant framework (proved). [TRACE-173](fixed-map/derandomized_fixed_kick.md) is the certified decay on $\eta\in[1,81.574]$ (proved only with the directed-rounding constants; the authors' float constants are excluded). [TRACE-174](fixed-map/derandomized_fixed_kick.md) is conditional on (I1)–(I3). [TRACE-175](fixed-map/derandomized_fixed_kick.md) is the $N$-average theorem (proved). [TRACE-176](fixed-map/derandomized_fixed_kick.md) is conditional on $\mathrm{ND}^{(\le k)}$. [TRACE-178](fixed-map/derandomized_fixed_kick.md) is the trivial torsion-split identity (proved; the reading is numerical). [TRACE-177](fixed-map/derandomized_fixed_kick.md), [TRACE-179](fixed-map/derandomized_fixed_kick.md), [TRACE-180](fixed-map/derandomized_fixed_kick.md), [TRACE-181](fixed-map/derandomized_fixed_kick.md) and [TRACE-182](fixed-map/derandomized_fixed_kick.md) are open. Nothing is proved at $\tau=m/N=O(1)$. This is not progress on BGS-BGS-001 or BGS-TRACE-148. "$B_m\to 2m$" is not claimed.
+
 ## Random-phase encounter pairs, 29 October 2026
 
 [TRACE-143](fixed-map/random_phase_encounter_pairs.md) identifies the Haar diagonal-phase cat map at odd $N$ with Tanner's random-phase DFT. [TRACE-144](fixed-map/random_phase_encounter_pairs.md) is the exact Gauss-sum formula, rational for every $p\equiv 3\pmod 4$. [TRACE-145](fixed-map/random_phase_encounter_pairs.md) classifies the order-$1/p$ pairs as $2$-opt, swap and figure-eight. [TRACE-146](fixed-map/random_phase_encounter_pairs.md) gives $a_2=-2m^2$ for every $m\ge 5$ and every prime $p>4^m$. Gnutzmann–Seif 2004 derived $2\tau-2\tau^2$ diagrammatically for this ensemble, Gnutzmann–Altland 2005 and Pluhař–Weidenmüller 2014 predict the full COE form factor non-rigorously, and Berkolaiko–Keating 1999 did exact all-pairs combinatorics for random-phase star graphs; new here is only the rigorous fixed-$m$ exact-in-$p$ result, the complete classification including swaps, and the $m\le 12$ expansions. The explicit remainder is non-informative below $(C_m/2m^2)^2$. [TRACE-147](fixed-map/random_phase_encounter_pairs.md) is verification-pending: the computer-assisted expansion through $m=12$ deviates from the fixed-$m$ COE value $2m^3$ at $m=5,6,8,9,12$, and an independent referee replay of every coefficient at $171$ primes is deposited. Promotion is a separate status decision, as for BGS-RES-022. [TRACE-148](fixed-map/random_phase_encounter_pairs.md) is the open scaling-limit conjecture. The values at $m=1,2,3$ remain TRACE-127. This does not prove BGS-TRACE-005 or BGS-BGS-001, and it does not cover the fixed kick.
@@ -491,7 +495,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**246 registered claims: 209 proved, 15 verification-pending, 10 conditional, 12 open.**
+**266 registered claims: 221 proved, 15 verification-pending, 13 conditional, 17 open.**
 
 ### BGS family (1 claim)
 
@@ -657,7 +661,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (137 claims)
+### TRACE family (157 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -798,5 +802,25 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-160` | **PROVED** | Full-band random kick equals the maximal random-phase ensemble up to p^m exp(-c p) |
 | `BGS-TRACE-161` | **OPEN** | Intermediate band K = kappa N |
 | `BGS-TRACE-162` | **OPEN** | Crossover conjecture: R-scaling of the band-limited deviation and the mode threshold |
+| `BGS-TRACE-163` | **PROVED** | Fixed diagonal kick: exact Pell-norm trace formula, orbit form and kernel structure; 2m law at m <= 8 |
+| `BGS-TRACE-164` | **CONDITIONAL** | 2m law for the eta-Bohr mean at general m, conditional on ND_m |
+| `BGS-TRACE-165` | **PROVED** | Ramanujan kernel and exact odd-m diagonal ramp (Prop K, Lemma S + Addendum, Lemma F, Theorem D) |
+| `BGS-TRACE-166` | **PROVED** | p-splitting lemma for vanishing sums and symbol facts (C2, C3) |
+| `BGS-TRACE-167` | **PROVED** | Automatic admissibility for NSW-prime m (Frobenius argument) |
+| `BGS-TRACE-168` | **PROVED** | Theorem N: unconditional formal non-degeneracy bound for the eleven certified NSW-prime m |
+| `BGS-TRACE-169` | **PROVED** | Proposition C: norm-class formula for the fixed-eta second moment, all odd m |
+| `BGS-TRACE-170` | **PROVED** | Theorem W (parity decomposition) and Theorem T (transfer-operator formula for chi_m) |
+| `BGS-TRACE-171` | **PROVED** | Lemma V and Proposition L: lower bound chi_m(eta) >= 1 - m sigma^2 eta^2 / 2 for odd m >= 5 |
+| `BGS-TRACE-172` | **PROVED** | Tilted majorant, cycle inequality and Collatz-Wielandt trace bound for the parity transfer operator |
+| `BGS-TRACE-173` | **PROVED** | Theorem D_cert: certified exponential decay of chi_m on eta in [1, 81.574] |
+| `BGS-TRACE-174` | **CONDITIONAL** | Decay of chi_m at every fixed eta != 0 |
+| `BGS-TRACE-175` | **PROVED** | Theorem U: the N-average reproduces the nu-average, with explicit error and window |
+| `BGS-TRACE-176` | **CONDITIONAL** | Theorem G: joint (nu, Bohr-eta) moments and a conditional moment CLT |
+| `BGS-TRACE-177` | **OPEN** | Numerical observations: ND^(2) at small m, mu(eta) spectrum, m_* crossover, W~rest tables, fixed-eta CLT numerics, torsion-split numbers |
+| `BGS-TRACE-178` | **PROVED** | Exact torsion-class split F = F_gen + F_tor |
+| `BGS-TRACE-179` | **OPEN** | Conjecture R / R_NSW: W~rest_m(eta) = o(m) uniformly on compact eta-ranges |
+| `BGS-TRACE-180` | **OPEN** | Fixed-eta (nu-only) central limit law |
+| `BGS-TRACE-181` | **OPEN** | Non-degeneracy ND_m for composite h_m and for even m |
+| `BGS-TRACE-182` | **OPEN** | The (m, eta) = (11, 2) outlier |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

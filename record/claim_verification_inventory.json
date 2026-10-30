@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "355c4cf0a91cfd471d561a55d42d14066bf28ba3",
+ "source_blob_sha": "275ea9bf4a7823411f922740b993e1258a578030",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -56,7 +56,8 @@
   "BGS-TRACE-136 and BGS-TRACE-137 were registered as open conjectures on 2026-10-29; Monte Carlo rows are diagnostics only.",
   "BGS-TRACE-140, BGS-TRACE-141 and BGS-TRACE-142 were appended on 2026-10-29. TRACE-142 is verification-pending: the Gaussian non-injective remainder is not bounded. Lean decides the odd-symbol energy, the constants 468 and 20, and the residues 27 mod 5, 7, 11 and 13 only. The programs recompute Haar buckets; they do not compute a 2k-th moment, so TRACE-141 does not claim a computer certificate. The form factor was checked by the author and was not given an independent referee.",
   "BGS-TRACE-143 through BGS-TRACE-148 were appended on 2026-10-29. The packet numbered them BGS-TRACE-138 through BGS-TRACE-143; those numbers collide with BGS-TRACE-140 through BGS-TRACE-142 already on main, so the statements start at BGS-TRACE-143. TRACE-144, TRACE-145 and TRACE-146 have Lean finite instances only. TRACE-147 is verification-pending: an independent referee replay of every Theorem 7 coefficient at 171 primes is deposited, and promotion remains a separate status decision, as for BGS-RES-022. TRACE-148 is an open conjecture. Gnutzmann-Seif 2004 derived 2 tau - 2 tau^2 diagrammatically for this ensemble; the new content is the rigorous fixed-m exact-in-p result, the complete classification including swaps, and the m<=12 expansions. The values at m=1,2,3 remain BGS-TRACE-127.",
-  "BGS-TRACE-149 through BGS-TRACE-162 were appended on 2026-10-29. The packet's provisional block was BGS-TRACE-149 through BGS-TRACE-162. On main d6fa6e2a the highest TRACE id was BGS-TRACE-148, so 149 was the next free id and no renumbering was done. Historical gaps BGS-TRACE-138 and BGS-TRACE-139 were left unused. Line B had not merged, so no Line B claim ids were added as dependencies. Eight claims are proved, BGS-TRACE-153 is verification-pending, BGS-TRACE-158 is conditional, and BGS-TRACE-155, BGS-TRACE-159, BGS-TRACE-161 and BGS-TRACE-162 are open. Lean certifies finite arithmetic facts only. This does not prove BGS-TRACE-005 or BGS-BGS-001."
+  "BGS-TRACE-149 through BGS-TRACE-162 were appended on 2026-10-29. The packet's provisional block was BGS-TRACE-149 through BGS-TRACE-162. On main d6fa6e2a the highest TRACE id was BGS-TRACE-148, so 149 was the next free id and no renumbering was done. Historical gaps BGS-TRACE-138 and BGS-TRACE-139 were left unused. Line B had not merged, so no Line B claim ids were added as dependencies. Eight claims are proved, BGS-TRACE-153 is verification-pending, BGS-TRACE-158 is conditional, and BGS-TRACE-155, BGS-TRACE-159, BGS-TRACE-161 and BGS-TRACE-162 are open. Lean certifies finite arithmetic facts only. This does not prove BGS-TRACE-005 or BGS-BGS-001.",
+  "BGS-TRACE-163 through BGS-TRACE-182 were appended on 2026-10-29. On main 502af245 the highest TRACE id was BGS-TRACE-162, so 163 was the next free id and no renumbering was done. Twelve claims are proved (163, 165, 166, 167, 168, 169, 170, 171, 172, 173, 175, 178), three are conditional (164, 174, 176), and five are open (177 numerical-only, 179, 180, 181, 182). TRACE-173 is proved only with the directed-rounding constants. Lean certifies finite arithmetic facts only. This is not progress on BGS-BGS-001 or BGS-TRACE-148."
  ],
  "claims": [
   {
@@ -9220,6 +9221,745 @@
    "formalization": [],
    "ledger_status": "OPEN / CONJECTURE (NUMERICAL DIAGNOSTICS ONLY)",
    "boundary": "Conjecture: with R = pi eta (sum k^2 a_k^2)^{1/2}/p fixed, lim_p E = 2m + F_m(R), F_m(R) -> 0 as R -> infinity; Line C's -2m^2/p needs R -> infinity. Numerics (J0, eta a = 2, Monte Carlo, p = 101, 211, 401): collapse at p = 211 and 401 only; deviations below MC error for R >~ 1.6 (K ~ 12, 20, 31). Caveats: two primes; R derived from the G weight but tested on J0 data; K_* ~ p^{2/3} only restates fixed R; R_* depends on the MC precision. Line C's chi^2/dof ~ 967 for its 7-mode kick is consistent with an effectively single-mode regime (K_eff = 1.04, R = 0.39); numerical record, not derived from fixed-m results. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN_CONJECTURE"
+  },
+  {
+   "id": "BGS-TRACE-163",
+   "title": "Fixed diagonal kick: exact Pell-norm trace formula, orbit form and kernel structure; 2m law at m <= 8",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 5,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase1/verify_thm1.py",
+    "computations/verification/lineB/phase1/verify_exact.py",
+    "computations/verification/lineB/phase1/t_rad.py",
+    "computations/verification/lineB/phase1/analyze_B.py",
+    "computations/verification/lineB/phase1/n_average_fast.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBDerand.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT FINITE COMPUTATION (m<=8) + LEAN FINITE INSTANCES (H_m X_m = D_m I, tables) + INDEPENDENT REFEREE AUDIT",
+   "boundary": "U = K_eta M_N with K_eta = diag e^{i eta f(q/N)}, f the fixed real 32-mode trigonometric position kick, S=[[3,4],[2,3]], odd N with gcd(N,D_m)=1, fixed m. Theorem 1: Tr(K_eta M)^m = Tr M^m * sum_n Phihat(n) e(Q(n)/N) e(-nu_N y'_m Nm(alpha_n)/g'_m), nu_N = N^{-1} mod g'_m, alpha_n in Z[lambda], lambda=3+2sqrt2; hence Tr U^m / Tr M^m = Z_m(nu_N; eta) + O(1/N). Theorem 3 / Prop R: orbit form over the q-sequence group Fix(T^m), T=[[0,1],[-1,6]], with |k_nu|^2 in {0,|V[4]|/D}. Theorem 2: the N-average equals the nu-average F_m(eta). The eta-Bohr mean B_m equals 2m for m<=8 (m != 6 treated exactly, distinctness of S-classes certified by an exact cyclotomic class computation; F1, F2 wording). Time reversal U^T = K^{-1} U K is the alpha=delta case of BGS-TRACE-131 and is cited, not re-claimed. Pointwise self-averaging in one N is false (|Tr U_N^m|^2 is asymptotically a non-constant function of N^{-1} mod g'_m). Fixed m only; diagonal (l=0) kick only; nothing at tau = m/N = O(1).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies finite arithmetic facts only; no analytic statement of Line B is formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-164",
+   "title": "2m law for the eta-Bohr mean at general m, conditional on ND_m",
+   "state": "conditional",
+   "methods": [
+    "exact_identity",
+    "lean_formalization",
+    "float_numerics",
+    "conditional_input"
+   ],
+   "ledger_claimed_methods": [
+    "exact_identity",
+    "float_numerics",
+    "conditional_input"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase1/analyze_B.py",
+    "computations/verification/lineB/phase1/analyze_B9.py",
+    "computations/verification/lineB/phase1/crossover.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBDerand.lean"
+   ],
+   "ledger_status": "CONDITIONAL PROJECT THEOREM (ON THE FINITELY CHECKABLE NON-DEGENERACY CONDITION ND_m) + FINITE CHECKS (EXACT m<=8, FLOAT CLUSTERING m=9)",
+   "boundary": "Theorem 4: under ND_m, 0 <= 2m - B_m <= 224 m^2 D_m^{-1/2}. Theorem 5: for eta = tau N the N-average over D_eff/(delta_m tau) << X << tau^{-1-1/(m+1)} performs the eta-average; with tau = 1e-80 and the crude constants the window is non-empty only for m <= 6. ND_m is verified exactly for m <= 8 (m != 6, where two torsion coincidences are identified exactly) and by float clustering at m = 9. For general m the statement is conditional on ND_m; for the eleven certified NSW-prime m see BGS-TRACE-168. 2m is the COE diagonal-approximation value at fixed m (tau = m/N -> 0), not a statement at tau = O(1). B_m -> 2m is not claimed.",
+   "spof": "conditional_on_unproved_input",
+   "spof_detail": "Conditional on a hypothesis that is not discharged in this claim.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-165",
+   "title": "Ramanujan kernel and exact odd-m diagonal ramp (Prop K, Lemma S + Addendum, Lemma F, Theorem D)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 4,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase2/kernel_ramanujan.py",
+    "computations/verification/lineB/phase2/deficit_odd.py",
+    "computations/verification/lineB/phase2/support_shift.py",
+    "computations/verification/lineB/independent_replay/code/t1_structure.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBPhase2.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXACT FINITE CHECK (Theorem D vs direct orbit counts m<=9; audit m=11) + LEAN FINITE INSTANCES (m<=9) + INDEPENDENT REFEREE AUDIT",
+   "boundary": "Prop K: k_nu(xi) conj k_nu(xi') = D_eff^{-1} e(nubar t) with t independent of nu, so K(xi,xi') = mu(q)/(phi(q) D_eff). Lemma S + Addendum (every odd m): D_m = 4 h_m^2, V_2 = <1> = Z/4, support S = 1/2*1 + V^_odd. Lemma F: reflections fix h_d period-d points. Theorem D: 2m - B^sym_m = h_m^{-2} sum_{d|m}[2(m-d)a(d) + d^2 b(d)] = m^2/h_m (1+O(lambda^{-m/6})), uniformly in odd m. Concerns B^sym (Gamma-diagonal), not B_m itself.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies finite arithmetic facts only; no analytic statement of Line B is formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-166",
+   "title": "p-splitting lemma for vanishing sums and symbol facts (C2, C3)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase2/alias_symmetry.py",
+    "computations/verification/lineB/phase1/exact_torsion.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBPhase2.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + EXHAUSTIVE FINITE COMPUTATION (n<=400) + LEAN FINITE INSTANCES (n<=60, coefficient classes) + INDEPENDENT REFEREE AUDIT",
+   "boundary": "C2: for p prime, p not dividing M, A: mu_{p^e} -> Q(zeta_M) with sum A(w) w = 0 is constant on mu_p-cosets; a vanishing sum supported on fewer than p points is zero. C3: Galois covariance S(a xi) = sigma_a S(xi) (a = 1 mod 4); the aliased symbol has affine symmetries only at n = 7 (exhaustive n <= 400; argument for n >= 19); shifted-symbol structure c~_{+-7} = (-360, 0) (sign fixed by the referee), separation 320 < 360. Specific to the fixed 32-mode kick.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies finite arithmetic facts only; no analytic statement of Line B is formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-167",
+   "title": "Automatic admissibility for NSW-prime m (Frobenius argument)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase2/nsw_admissible.py",
+    "computations/verification/lineB/independent_replay/code/t4_thmN.py",
+    "computations/verification/lineB/second_reader/code/sr167_admissibility.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBPhase2.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF (CONJUGATION ARGUMENT, REPORT2 C4 LEMMA) CHECKED BY AN INDEPENDENT SECOND READER (2026-10-29; BLOCKER B2 CLOSED); SPLIT-CASE STEP OF (b) REPAIRED BY THE SECOND READER (NORM-1 ARGUMENT); EXHAUSTIVE CHECK OF (a), (b) FOR THE 12 LISTED NSW-PRIME m WITH h_m > 18",
+   "boundary": "For odd m with h_m prime and h_m > 18: (a) lambda^d != k'/k mod h for all d and k != k' in the support K of the kick symbol, and (b) lambda^a + lambda^b = 6 only for {a,b} = {1,-1}. Argument (O/hO = F_h x F_h always splits, since 2 is a square mod h; sigma = conjugation, sigma(lambda) = lambda^{-1}; ord_h lambda = m): lambda^d in F_h forces lambda^d = +-1, hence = 1; lambda^a + lambda^b = 6 forces lambda^a lambda^b = 1, and of the four roots of t^2 - 6t + 1 in F_h x F_h only lambda, lambda^{-1} have norm 1, so {lambda^a,lambda^b} = {lambda,lambda^{-1}}. Not used by BGS-TRACE-168, whose eleven instances are checked directly.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies finite arithmetic facts only; no analytic statement of Line B is formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-168",
+   "title": "Theorem N: unconditional formal non-degeneracy bound for the eleven certified NSW-prime m",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 5,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/ecpp/verify_ecpp.py",
+    "computations/verification/lineB/phase2/nsw_admissible.py",
+    "computations/verification/lineB/phase3/ecpp_certs.py",
+    "computations/verification/lineB/independent_replay/code/a1_ecpp_verify.py",
+    "computations/verification/lineB/independent_replay/code/t4_thmN.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBPhase2.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + ECPP PRIMALITY CERTIFICATES (7, PARI primecertisvalid + INDEPENDENT PURE-PYTHON CHECKER) + APRCL (4) + LEAN FINITE INSTANCES (m=7,19) + INDEPENDENT REFEREE AUDIT",
+   "boundary": "For m in {7, 19, 29, 47, 59, 163, 257, 421, 937, 947, 1493} (exactly the m for which h_m is certified prime; h_m > 28m; hypotheses (a), (b) verified for these m): every S-coincidence on the support is formal and |B_m - B^sym_m| <= 8 m^2 N_m / h_m, N_m = C(14m,2) + m + m(m(m+1)/2 - 1). The bound is < 1 only from m = 29 on (10^{3.91} at m = 7, 12 at m = 19). With BGS-TRACE-165 this gives |B_m/2m - 1| explicitly small for these m. It concerns the eta-Bohr mean B_m, not F_m(eta) at fixed eta. The infinitude of NSW primes is open, so B_m -> 2m is not claimed.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies finite arithmetic facts only; no analytic statement of Line B is formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-169",
+   "title": "Proposition C: norm-class formula for the fixed-eta second moment, all odd m",
+   "state": "proved",
+   "methods": [
+    "independent_review",
+    "lean_formalization",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 5,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase3/fast_classes.py",
+    "computations/verification/lineB/phase3/W_scan.py",
+    "computations/verification/lineB/independent_replay/code/t2_fixed_eta.py",
+    "computations/verification/lineB/second_reader/code/sr169_propC.py",
+    "computations/verification/lineB/second_reader/code/sr169_selfdual.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBPhase3.lean"
+   ],
+   "ledger_status": "PROJECT PROOF (GAUSS-SUM ARGUMENT, ALL ODD m INCL. p^2 | h) + NUMERICAL AGREEMENT m=5,7,9 + INDEPENDENT REFEREE CHECK + INDEPENDENT SECOND READER (2026-10-29; BLOCKER B2 CLOSED: LINE-BY-LINE RE-DERIVATION; FRESH DIRECT CHECK m=3,5,7 OVER ALL UNITS, KERNEL IDENTITY m=9, p^2 | h PRIMARY COMPONENTS m=15 (31^2), m=21 (7^2))",
+   "boundary": "For odd m, h = h_m, q(x) = x0^2 - 6 x0 x1 + x1^2 mod h, A_r(eta) = sum_{q(x)=r} e^{i eta S(1/2 + x/h)}: F_m(eta) = h^{-2} sum_{r,r'} A_r conj(A_r') mu(q_rr')/phi(q_rr'), q_rr' = h/gcd(r-r',h). Self-duality with norm-torus Kloosterman sums (orthogonality for prime h). Fixed-kick counterpart of the random-phase Gauss-sum formula (BGS-TRACE-144), proved independently.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies finite arithmetic facts only; no analytic statement of Line B is formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-170",
+   "title": "Theorem W (parity decomposition) and Theorem T (transfer-operator formula for chi_m)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "independent_review",
+    "lean_formalization",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 5,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase3/W_decomp.py",
+    "computations/verification/lineB/phase3/parity_split.py",
+    "computations/verification/lineB/phase3/parity_transfer.py",
+    "computations/verification/lineB/independent_replay/code/t2_fixed_eta.py",
+    "computations/verification/lineB/independent_replay/code/t3_transfer.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBPhase3.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF (EXACT IDENTITIES) + NUMERICAL AGREEMENT + LEAN FINITE INSTANCES + INDEPENDENT REFEREE AUDIT",
+   "boundary": "Theorem W: for odd m and every eta, F_m(eta) = B^sym_m + 2m chi_m(eta) + W~rest_m(eta), W~rest := W^rest + E, |E| <= 4m^2/h_m, chi_m(eta) = h^{-2} sum_{x in V^_odd} exp(i eta [S(1/2+x/h) - S(1/2-x/h)]). Theorem T: chi_m(eta) = sum_{a=0}^{3} (-1)^a Tr M_a(eta)^m with M_a[(p,q),(q,r)] = what_eta(6q - p - r + a), absolutely convergent, explicit truncation error. Identities only: no bound on W~rest is claimed.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies finite arithmetic facts only; no analytic statement of Line B is formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-171",
+   "title": "Lemma V and Proposition L: lower bound chi_m(eta) >= 1 - m sigma^2 eta^2 / 2 for odd m >= 5",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 4,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase4/lemmaV.py",
+    "computations/verification/lineB/phase4/lowercheck.py",
+    "computations/verification/lineB/independent_replay/code/t10_lemmaV.py",
+    "computations/verification/lineB/independent_replay/code/t11_propL.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBPhase4.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + LEAN FINITE INSTANCES (m=5,7 cases, m>=9 norm inequality base) + BRUTE FORCE m<=61 + INDEPENDENT REFEREE REPLAY",
+   "boundary": "Lemma V: for odd m >= 5 no nonzero n in H Z^m + Z 1 has |supp n| <= 2 and |n|_inf <= 18 (norm argument h^2 | Nm(a + b lambda^d) for m >= 9; finite check for m = 5, 7). Prop L: E X = 0, E X^2 = m sigma^2 (sigma^2 = 3.75e-4) and chi_m(eta) >= 1 - m sigma^2 eta^2/2 for all real eta. Fails at m = 3 (7 e_0 is a relation; 7 = h_3). Informative only for m << 1/(sigma^2 eta^2).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies finite arithmetic facts only; no analytic statement of Line B is formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-172",
+   "title": "Tilted majorant, cycle inequality and Collatz-Wielandt trace bound for the parity transfer operator",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase4/transfer.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBPhase4.lean"
+   ],
+   "ledger_status": "ANALYTIC PROOF + LEAN CONSTANT CHECKS (gamma0, c) + INDEPENDENT REFEREE AUDIT",
+   "boundary": "With eigen-coordinates along lambda, lambda^{-1}: gamma0 sum N(s_j) <= c sum |n_j - a| around every closed cycle (gamma0 = 2sqrt2 - 2, c = 1/(2sqrt2)); hence |Tr M_a(eta)^m| <= Tr A_a^m for the tilted majorant A_a and all eta in an interval, and Tr A^m <= rho^{m-1} sum_s (Av)(s)/v(s) whenever v > 0 and Av <= rho v on Z^2. Framework only; the numbers are BGS-TRACE-173.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies finite arithmetic facts only; no analytic statement of Line B is formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-173",
+   "title": "Theorem D_cert: certified exponential decay of chi_m on eta in [1, 81.574]",
+   "state": "proved",
+   "methods": [
+    "computer_certificate",
+    "independent_review",
+    "lean_formalization",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "computer_certificate",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 12,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase4/certify3.py",
+    "computations/verification/lineB/phase4/certify_v2.py",
+    "computations/verification/lineB/phase4/rerun_grid.py",
+    "computations/verification/lineB/phase4/summarize_v2.py",
+    "computations/verification/lineB/phase4/grid.py",
+    "computations/verification/lineB/phase4/check_bounds.py",
+    "computations/verification/lineB/phase4/summarize_grid.py",
+    "computations/verification/lineB/independent_replay/code/t9_cert.py",
+    "computations/verification/lineB/second_reader/code/b1_runner.py",
+    "computations/verification/lineB/second_reader/code/b1_summarize.py",
+    "computations/verification/lineB/second_reader/code/sr173_ballcover.py",
+    "computations/verification/lineB/second_reader/code/sr173_coefcheck.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineBPhase4.lean"
+   ],
+   "ledger_status": "COMPUTER-ASSISTED PROOF: INDEPENDENT DIRECTED-ROUNDING RE-CERTIFICATION OF ALL 93/93 INTERVALS (REFEREE t9_cert.py, UNMODIFIED; ARB BALL ENVELOPES, NEXTAFTER OUTWARD ROUNDING, ARB OUTSIDE-BOX AND LATTICE TAIL; RUN AND CHECKED BY THE SECOND READER 2026-10-29; BLOCKER B1 CLOSED) + ANALYTIC FRAMEWORK BGS-TRACE-171/172; THE AUTHORS' SHARPER IEEE-FLOAT CONSTANTS (G1/G2 FIXED; ALL 93/93 INTERVALS RE-CERTIFIED WITH THE FIXED ENVELOPES (SAME FLOAT METHOD, RERUN 2026-10-29); LIBM <= 4 ULP HYPOTHESIS) ARE NOT COVERED BY THE DIRECTED-ROUNDING PROOF",
+   "boundary": "For every eta in [1, 81.57406988] (93 closed intervals I with shared endpoints) and every odd m >= 5: 1 - m sigma^2 eta^2/2 <= chi_m(eta) and |chi_m(eta)| <= C'_I rho'_I^{m-1} with the directed-rounding constants of the second-reader run (computations/verification/lineB/second_reader/logs/b1/b1_summary.json): rho'_I in [0.90000, 0.99982], C'_I <= 1.43e+07. The authors' sharper table (rho_I in [0.853, 0.99986], C_I <= 3.64e6; IEEE float with a-priori bound SAFE = 1 + 1e-9, libm exp/log <= 4 ulp) is a float certificate only and is not part of the proved statement. The upper bound is < 1 only for m >= m+(eta) (directed-rounding constants: about 1.2e+05 at eta = 1, 1e2-1e3 for most eta >= 15, at most 1.2e+05); it says nothing at m <= 13 nor, for eta <= 10, at the NSW-prime m of BGS-TRACE-168. eta in (81.6, 100] is not certified. Hypotheses of the directed-rounding proof: IEEE-754 binary64 round-to-nearest (outward rounding by nextafter; sparse mat-vec by the a-priori bound for nonnegative sums), python-flint/arb enclosures, and libm exp accurate to relative 1e-6 in the dropped-coefficient mass (a term <= 1e-29).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Lean certifies finite arithmetic facts only; no analytic statement of Line B is formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-174",
+   "title": "Decay of chi_m at every fixed eta != 0",
+   "state": "conditional",
+   "methods": [
+    "conditional_input"
+   ],
+   "ledger_claimed_methods": [
+    "conditional_input"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase3/parity_transfer.py"
+   ],
+   "formalization": [],
+   "ledger_status": "CONDITIONAL ON NAMED EXTERNAL INPUTS (I1) FAURE-ROY/RUGH ANALYTIC RUELLE-POLLICOTT SPECTRUM, (I2) MEAN ERGODIC THEOREM FOR PERIPHERAL RESONANCES, (I3) LIVSIC / POLLICOTT-WALKDEN; INPUTS CITED, NOT RE-VERIFIED",
+   "boundary": "Conditional on (I1)-(I3): for every eta != 0 the leading resonance of the parity transfer operator has modulus mu(eta) < 1 and |chi_m(eta)| <= C_eta (mu(eta) + eps)^m. Last step: a peripheral resonance would make the cocycle a continuous coboundary, which sums to zero on every periodic orbit, so X = 0 on the support, contradicting Prop L (BGS-TRACE-171). C_eta is not explicit; no rate is claimed. Citations in the packet's external_dependencies field, kept here because that field accepts only registered EXT ids: F. Faure, N. Roy, Nonlinearity 19 (2006) 1233-1252 (Thm 1, Prop 5; torus analogues); H. H. Rugh, Nonlinearity 5 (1992) 1237-1263 (analytic weights); J. von Neumann mean ergodic theorem (Walters, Thm 1.14; Reed-Simon I, Thm II.11); A. N. Livsic, Izv. Akad. Nauk SSSR Ser. Mat. 36 (1972) 1296-1320; M. Pollicott, C. Walkden, Trans. AMS 353 (2001) 2879-2895.",
+   "spof": "conditional_on_unproved_input",
+   "spof_detail": "Conditional on a hypothesis that is not discharged in this claim.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-175",
+   "title": "Theorem U: the N-average reproduces the nu-average, with explicit error and window",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase2/s0_table.py",
+    "computations/verification/lineB/phase1/n_average_fast.py",
+    "computations/verification/lineB/independent_replay/code/t5_s0.py"
+   ],
+   "formalization": [],
+   "ledger_status": "ANALYTIC PROOF (CORRECTED INTERPRETATION) + NUMERICAL CHECK + INDEPENDENT REFEREE AUDIT",
+   "boundary": "Averaging over N in (X, 2X], gcd(N, D_m) = 1: <|Tr U_N^m|^2>_N = F_m(eta) + O(m s2 s0^{2m-1}/X + D_m min(s0^{2m}, D_eff)/X), s0 = sum|ghat|, s2 = sum n^2|ghat|; uniform for m <= (1-eps) c(eta) log X, c(eta) = 1/(log lambda + 2 log s0(eta)). Fixed eta; logarithmic window only (below Ehrenfest).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Analytic argument with numerical or exact checks. No Lean formalization of this statement.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-176",
+   "title": "Theorem G: joint (nu, Bohr-eta) moments and a conditional moment CLT",
+   "state": "conditional",
+   "methods": [
+    "conditional_input"
+   ],
+   "ledger_claimed_methods": [
+    "conditional_input"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase2/nd2.py",
+    "computations/verification/lineB/independent_replay/code/t7_thmG.py"
+   ],
+   "formalization": [],
+   "ledger_status": "CONDITIONAL PROJECT THEOREM (ON ND^(<=k) INCLUDING UNEQUAL-LENGTH RELATIONS) + FINITE CHECKS",
+   "boundary": "Under ND^(<=k): E|Z_m|^{2k} = M_k = sum (k!/prod a_o!)^2 prod w_o^{a_o}, k! B^k (1 - k^2 w_max/B) <= M_k <= k! B^k, so Z_m/sqrt(B_m) tends to a complex Gaussian in moments. Average over nu AND the Bohr variable eta, not at fixed eta. ND^(<=k) is not proved in general.",
+   "spof": "conditional_on_unproved_input",
+   "spof_detail": "Conditional on a hypothesis that is not discharged in this claim.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-177",
+   "title": "Numerical observations: ND^(2) at small m, mu(eta) spectrum, m_* crossover, W~rest tables, fixed-eta CLT numerics, torsion-split numbers",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [
+    "exact_identity",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 8,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase2/nd2.py",
+    "computations/verification/lineB/phase3/parity_transfer_run.py",
+    "computations/verification/lineB/phase3/W_decomp.py",
+    "computations/verification/lineB/phase3/fixed_eta_dist.py",
+    "computations/verification/lineB/phase4/torsion2.py",
+    "computations/verification/lineB/independent_replay/code/t2_fixed_eta.py",
+    "computations/verification/lineB/independent_replay/code/t8_nd2.py",
+    "computations/verification/lineB/independent_replay/code/t12_torsion.py"
+   ],
+   "formalization": [],
+   "ledger_status": "NUMERICAL-ONLY (NO THEOREM CLAIMED); FLOAT AND EXACT COMPUTATIONS WITH LOGS; INDEPENDENT REFEREE REPLAY OF THE TABLES",
+   "boundary": "Recorded data, no statement claimed: ND^(2) holds at the tested small odd m and fails at m = 4, 6 on small torsion; the leading eigenvalue satisfies |mu(eta)| < 1 for eta in [0.1, 400] at truncation K <= 20, mu(eta) = exp(-2||f_odd||^2 eta^2)(1 + O(eta^4)) to leading order, m_* = log 2/(-log mu); |W~rest|/2m <= 0.11 (m = 7), <= 0.05 (m = 9), <= 0.018 (m = 11; -0.0175 at eta = 400), <= 0.008 (m = 13) for eta in [10, 400]; fixed-eta law at m = 11: M4 = 1.94-2.00, KS = 0.006-0.013 for eta >= 10; torsion-split numbers at m = 9, 11. Mapped to state 'open' because the record has no numerical-only state.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN_CONJECTURE"
+  },
+  {
+   "id": "BGS-TRACE-178",
+   "title": "Exact torsion-class split F = F_gen + F_tor",
+   "state": "proved",
+   "methods": [
+    "exact_identity",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "exact_identity",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase4/torsion2.py",
+    "computations/verification/lineB/independent_replay/code/t12_torsion.py"
+   ],
+   "formalization": [],
+   "ledger_status": "TRIVIAL EXACT IDENTITY (PROVED); ITS INTERPRETATION IS NUMERICAL ONLY",
+   "boundary": "For a prime p | h_m, splitting the norm classes r by r = 0 mod p gives F = F_gen + F_tor exactly (Prop C regrouped). The identity is trivial; the computed values (m = 9: p = 7, 199; m = 11: p = 23, 353) and their reading are numerical only (BGS-TRACE-177). In particular the (11, 2) excess is not carried by the 23-torsion classes.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Analytic argument with numerical or exact checks. No Lean formalization of this statement.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-179",
+   "title": "Conjecture R / R_NSW: W~rest_m(eta) = o(m) uniformly on compact eta-ranges",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [
+    "float_numerics"
+   ],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "CONJECTURE; NUMERICAL EVIDENCE m<=13 ONLY; NOT REDUCED TO ANY KNOWN CONJECTURE",
+   "boundary": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m; R_NSW: along m with h_m prime (not known to be infinite). Not reduced to a large-sieve inequality ('quadratic large sieve' phrasing withdrawn); Kurlberg-Rudnick, Bourgain and Bourgain-Glibichuk-Konyagin bounds do not apply since ord_h lambda = m is minimal. Derandomized analogue of the off-diagonal problem of BGS-TRACE-145 to 148; no progress on BGS-TRACE-148 is claimed.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN_CONJECTURE"
+  },
+  {
+   "id": "BGS-TRACE-180",
+   "title": "Fixed-eta (nu-only) central limit law",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [
+    "float_numerics"
+   ],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase3/fixed_eta_dist.py"
+   ],
+   "formalization": [],
+   "ledger_status": "OPEN; NUMERICAL ONLY (m<=11); KS YARDSTICK HEURISTIC",
+   "boundary": "The law of Z_m(nu) over units nu at fixed eta is conjectured Gaussian for eta bounded away from 0. Numerics at m = 11 only; far from Gaussian at small eta (M4 = 15.9 at (11,5), 1556 at (11,2)).",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN_CONJECTURE"
+  },
+  {
+   "id": "BGS-TRACE-181",
+   "title": "Non-degeneracy ND_m for composite h_m and for even m",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "OPEN",
+   "boundary": "ND_m (hence the unconditional 2m law of BGS-TRACE-164) is open for odd m with composite h_m having prime factors <= 28m (e.g. h_9 = 7 * 199) and for even m (m = 4, 6 fail on small torsion; no even-m deficit formula).",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN_CONJECTURE"
+  },
+  {
+   "id": "BGS-TRACE-182",
+   "title": "The (m, eta) = (11, 2) outlier",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [
+    "float_numerics"
+   ],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineB/phase4/torsion2.py",
+    "computations/verification/lineB/independent_replay/code/t12_torsion.py"
+   ],
+   "formalization": [],
+   "ledger_status": "OPEN; UNEXPLAINED NUMERICAL OUTLIER; TORSION ATTRIBUTION WITHDRAWN",
+   "boundary": "F/2m = 5.56 and M4 = 1556 at (m, eta) = (11, 2). The exact torsion split shows the excess is carried by the generic classes (+3.25), not by the 23-torsion classes; the phase-3 torsion attribution is withdrawn and no explanation is claimed.",
    "spof": "no_proof_or_receipt_in_tree",
    "spof_detail": "state is open",
    "other_weaknesses": [],
