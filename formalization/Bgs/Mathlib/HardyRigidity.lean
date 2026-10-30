@@ -196,4 +196,16 @@ theorem radialRatio_eq_clock_iff_rotated (hN : 1 ≤ N) (x : Fin N → ℝ) {a b
   rw [radialRatio_eq_clock_iff (phaseEig x) (norm_phaseEig x) hN hb0 hba ha1,
     interior_coeff_zero_iff_rotated hN x]
 
+#print axioms norm_phaseEig
+#print axioms phaseEig_ne_zero
+#print axioms phaseEig_pow_eq_iff
+#print axioms secPoly_prod_form
+#print axioms secPoly_roots
+#print axioms secPoly_eq_of_interior
+#print axioms secPoly_coeff_N
+#print axioms secPoly_coeff_N_ne_zero
+#print axioms isRotatedClock_of_interior
+#print axioms interior_of_isRotatedClock
+#print axioms interior_coeff_zero_iff_rotated
+#print axioms radialRatio_eq_clock_iff_rotated
 end Bgs.Mathlib

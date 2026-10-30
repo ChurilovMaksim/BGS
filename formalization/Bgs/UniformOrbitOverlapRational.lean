@@ -167,4 +167,17 @@ theorem overlap_scan : middleScan = true := by
 theorem overlap_mass :
     (sigmaNum + 2 * (-56)) * 4000000 = (1650797 : Int) * 4000 * 4000 := by
   decide
+#print axioms overlap_seeds
+#print axioms overlap_norm
+#print axioms overlap_archimedean
+#print axioms overlap_coefficient
+#print axioms overlap_quadratic_seed
+#print axioms overlap_positivity
+#print axioms overlap_rhs
+#print axioms overlap_expansion
+#print axioms overlap_modes
+#print axioms overlap_sigma
+#print axioms overlap_box
+#print axioms overlap_scan
+#print axioms overlap_mass
 end Bgs.UniformOrbitOverlapRational

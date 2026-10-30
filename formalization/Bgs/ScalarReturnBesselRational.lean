@@ -70,4 +70,16 @@ def oddSum : Int :=
 
 theorem oddEnergy : oddSum = 900 := by decide
 theorem oddRatio : (900 : Int) * 160000 = 9 * 16000000 := by decide
+#print axioms detSI
+#print axioms order5
+#print axioms order7
+#print axioms order11
+#print axioms notOrder5
+#print axioms notOrder7
+#print axioms quad5
+#print axioms quad7
+#print axioms perm5
+#print axioms perm7
+#print axioms oddEnergy
+#print axioms oddRatio
 end Bgs.ScalarReturnBesselRational

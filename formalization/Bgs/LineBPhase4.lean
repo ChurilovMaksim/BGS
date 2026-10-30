@@ -44,4 +44,16 @@ theorem T4 : T 4 = 1154 := by decide
 /-- h_m² = (T_m - 2)/4, checked for m = 9: T_9 = 7761798. -/
 theorem h9_sq : (T 9 - 2) = 4 * 1393^2 := by decide
 
+#print axioms U2_value
+#print axioms sigma2_decimal
+#print axioms G0_SAFE_ok
+#print axioms CC_SAFE_ok
+#print axioms m5_prime
+#print axioms m5_U
+#print axioms m7_prime
+#print axioms m7_U
+#print axioms m3_relation
+#print axioms m9_norm
+#print axioms T4
+#print axioms h9_sq
 end Bgs.LineB.Phase4

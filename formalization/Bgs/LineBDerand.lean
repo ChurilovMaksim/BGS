@@ -102,4 +102,26 @@ theorem d1d2 : (List.range' 1 12).all (fun m => (d1 m * d2 m : Int) == Dm m) = t
 theorem Deff_values : (List.range' 1 8).map (fun m => (Dm m).toNat / radSize m)
     = [1, 4, 49, 72, 1681, 4900, 57121, 83232] := by decide
 
+#print axioms lemmaQ_1
+#print axioms lemmaQ_2
+#print axioms lemmaQ_3
+#print axioms lemmaQ_4
+#print axioms lemmaQ_5
+#print axioms lemmaQ_6
+#print axioms lemmaQ_7
+#print axioms lemmaQ_8
+#print axioms lemmaQ_9
+#print axioms lemmaQ_10
+#print axioms lemmaQ_12
+#print axioms lemmaQ_bad_fails
+#print axioms D_values
+#print axioms pell_id
+#print axioms gprime_values
+#print axioms yprime_values
+#print axioms d1_values
+#print axioms det_check
+#print axioms D_closed
+#print axioms d1_divisible
+#print axioms d1d2
+#print axioms Deff_values
 end Bgs.LineB.Derand

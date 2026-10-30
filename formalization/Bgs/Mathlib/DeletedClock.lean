@@ -309,4 +309,17 @@ theorem abelL_deleted_excess_asymptotic {s : ℝ} (hs : 0 < s) :
   field_simp
   ring
 
+#print axioms traceT_deleted
+#print axioms norm_traceT_deleted_sq
+#print axioms abelL_deleted
+#print axioms traceT_one_of_rotated
+#print axioms deleted_not_rotatedClock
+#print axioms abelL_deleted_gt_clock
+#print axioms tendsto_inv_nat_nhdsNE
+#print axioms tendsto_N_exp_sub_one
+#print axioms hasDerivAt_bose
+#print axioms exp_two_div_sq_eq
+#print axioms abelL_deleted_tendsto
+#print axioms deleted_coeff_pos
+#print axioms abelL_deleted_excess_asymptotic
 end Bgs.Mathlib

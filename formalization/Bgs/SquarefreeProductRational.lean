@@ -151,4 +151,49 @@ theorem sqf_kick_663 : 8 * 56 ≤ 3 * 663 := by
 
 theorem sqf_kick_741 : 8 * 140 ≤ 3 * 741 := by
   decide
+#print axioms sqf_four
+#print axioms sqf_five
+#print axioms sqf_at_least_five
+#print axioms sqf_three_seven
+#print axioms sqf_fifteen_tail
+#print axioms sqf_fifteen_slope
+#print axioms sqf_seven_tail
+#print axioms sqf_seven_slope
+#print axioms sqf_eleven_tail
+#print axioms sqf_eleven_slope
+#print axioms sqf_thirteen_tail
+#print axioms sqf_thirteen_slope
+#print axioms sqf_seventeen_tail
+#print axioms sqf_seventeen_slope
+#print axioms sqf_return_corner
+#print axioms sqf_return_slope
+#print axioms sqf_wide_domain
+#print axioms sqf_narrow_domain
+#print axioms sqf_subset_domain
+#print axioms sqf_kick_threshold
+#print axioms sqf_wide
+#print axioms sqf_narrow
+#print axioms sqf_one_nine_five
+#print axioms sqf_pure_105
+#print axioms sqf_pure_165
+#print axioms sqf_pure_255
+#print axioms sqf_pure_285
+#print axioms sqf_pure_345
+#print axioms sqf_pure_195
+#print axioms sqf_miss_345
+#print axioms sqf_miss_195
+#print axioms sqf_kick_105
+#print axioms sqf_kick_165
+#print axioms sqf_kick_255
+#print axioms sqf_kick_285
+#print axioms sqf_kick_435
+#print axioms sqf_kick_465
+#print axioms sqf_kick_429
+#print axioms sqf_kick_561
+#print axioms sqf_kick_627
+#print axioms sqf_kick_759
+#print axioms sqf_kick_957
+#print axioms sqf_kick_1023
+#print axioms sqf_kick_663
+#print axioms sqf_kick_741
 end Bgs.SquarefreeProductRational

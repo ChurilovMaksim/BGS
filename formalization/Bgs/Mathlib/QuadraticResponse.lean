@@ -164,4 +164,15 @@ theorem coercive_far_from_singular {A B : Matrix m m ℂ} {c : ℝ}
 
 end Coercive
 
+#print axioms allpass_identity
+#print axioms orbit_determinants
+#print axioms tail_symbol_constants
+#print axioms third_moments
+#print axioms conjTranspose_pow_scalar
+#print axioms conjPow_periodic
+#print axioms lag_periodic
+#print axioms lag_at_period
+#print axioms gram_singular_of_zero
+#print axioms lag_gram_singular
+#print axioms coercive_far_from_singular
 end Bgs.Mathlib

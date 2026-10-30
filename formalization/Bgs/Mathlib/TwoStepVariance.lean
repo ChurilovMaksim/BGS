@@ -371,4 +371,22 @@ theorem sum_F_sq_le {S : Matrix n n ℂ} (h : S * Sᴴ = 1) {δ : ℝ}
 
 end Coordinates
 
+#print axioms feedback_coeff_norm_le
+#print axioms two_re_le
+#print axioms increment_pointwise_le
+#print axioms six_sq_le
+#print axioms increment_second_moment_le
+#print axioms intensity_nonneg
+#print axioms row_sum_intensity
+#print axioms col_sum_intensity
+#print axioms parseval_unitary
+#print axioms K_le_delta
+#print axioms sum_r_sq_le
+#print axioms sum_A_full_sq_le
+#print axioms A_split_bound
+#print axioms norm_sum_mul_sq_le
+#print axioms C_cauchy_le
+#print axioms sum_C_sq_le
+#print axioms F_le
+#print axioms sum_F_sq_le
 end Bgs.Mathlib

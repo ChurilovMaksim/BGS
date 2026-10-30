@@ -62,4 +62,9 @@ theorem trace1 : canonical 1 = closedCanonical 1 := by native_decide
 theorem trace2 : canonical 2 = closedCanonical 2 := by native_decide
 theorem trace3 : canonical 3 = closedCanonical 3 := by native_decide
 theorem trace4 : canonical 4 = closedCanonical 4 := by native_decide
+#print axioms first_closed_anchor
+#print axioms trace1
+#print axioms trace2
+#print axioms trace3
+#print axioms trace4
 end Bgs.MagneticTraceSmall

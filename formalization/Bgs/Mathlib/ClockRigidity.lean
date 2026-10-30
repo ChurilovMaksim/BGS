@@ -366,4 +366,15 @@ theorem abelL_gt_clock (hN : 1 ≤ N) (x : Fin N → ℝ) (hx : ¬ IsRotatedCloc
     1 / (Real.exp (2 * s) - 1) < abelL x s :=
   lt_of_le_of_ne (abelL_ge_clock hN x hs) fun h => hx ((abelL_eq_clock_iff hN x hs).1 h.symm)
 
+#print axioms sinh_lt_mul_cosh
+#print axioms two_sinh_lt
+#print axioms key_strict
+#print axioms Hfun_eq_zero_iff
+#print axioms clock_floor_eq_coth
+#print axioms pair_cos_sum_eq_norm
+#print axioms abelL_excess_decomposition
+#print axioms isRotatedClock_of_pairs
+#print axioms abelL_of_isRotatedClock
+#print axioms abelL_eq_clock_iff
+#print axioms abelL_gt_clock
 end Bgs.Mathlib

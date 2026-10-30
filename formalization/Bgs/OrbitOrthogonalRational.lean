@@ -126,4 +126,18 @@ theorem orbit_disk_ceiling :
     num207 < diskDen ∧
     4 * (diskDen - num207) ^ 2 < 3 * diskDen ^ 2 := by
   decide
+#print axioms orbit_norm
+#print axioms orbit_odd
+#print axioms orbit_bases
+#print axioms orbit_size_100
+#print axioms orbit_size_101
+#print axioms orbit_dominates_linear_form
+#print axioms orbit_scale
+#print axioms orbit_gap
+#print axioms orbit_coarse
+#print axioms orbit_sentinel
+#print axioms orbit_size_next
+#print axioms orbit_hs_triangle
+#print axioms orbit_disk_room
+#print axioms orbit_disk_ceiling
 end Bgs.OrbitOrthogonalRational

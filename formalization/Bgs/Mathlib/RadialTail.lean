@@ -252,6 +252,20 @@ theorem absorbed_tail_bound {n : ℕ} {c : ℝ} (hc : 0 ≤ c) (L s : ℝ)
     mul_assoc]
   exact mul_le_mul_of_nonneg_left h (Real.exp_pos _).le
 
+#print axioms sqrt_one_add_pos
+#print axioms norm_radial_sq
+#print axioms one_sub_normSq_radial
+#print axioms radial_norm_lt_one
+#print axioms radial_inverse
+#print axioms log_one_add_normSq_radial
+#print axioms diskWeight_nonneg
+#print axioms diskWeight_le_one
+#print axioms radial_integral
+#print axioms disk_weight_integral
+#print axioms diskWeight_integrable
+#print axioms exp_neg_mul_neg_log
+#print axioms centered_disk_tail_bound
+#print axioms absorbed_tail_bound
 end RadialTail
 
 end Bgs.Mathlib

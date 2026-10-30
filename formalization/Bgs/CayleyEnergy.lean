@@ -142,4 +142,19 @@ theorem k23_has_excess :
 #print axioms k23_energy
 #print axioms k23_has_excess
 
+#print axioms k11_generic_generator
+#print axioms k11_generic_pair_count
+#print axioms k11_generic_is_forced
+#print axioms k11_exceptional_generator
+#print axioms k11_exceptional_pair_count
+#print axioms k11_exceptional_has_excess
+#print axioms k13_generic_generator
+#print axioms k13_generic_pair_count
+#print axioms k13_generic_is_forced
+#print axioms k13_exceptional_generator
+#print axioms k13_exceptional_pair_count
+#print axioms k13_exceptional_has_excess
+#print axioms k23_generator
+#print axioms k23_pair_count
+#print axioms k23_forced_baseline
 end Bgs.CayleyEnergy

@@ -165,4 +165,45 @@ theorem odd_majorant_exceeds : 184981 * 10 ^ 154 > 320000 := by
 
 theorem odd_majorant_defined : 184981 * 10 ^ 79 < 160000 * 10 ^ 80 := by
   decide
+#print axioms odd_thresholds
+#print axioms odd_kick_threshold
+#print axioms odd_u_fifteen
+#print axioms odd_u_thirty_nine
+#print axioms odd_u_sixty_five
+#print axioms odd_u_eleven_thirteen
+#print axioms odd_u_twenty_three_thirty_seven
+#print axioms odd_corner_below
+#print axioms odd_corner_gap_value
+#print axioms odd_corner_gap_defect
+#print axioms odd_tail_three
+#print axioms odd_tail_five
+#print axioms odd_tail_eleven
+#print axioms odd_tail_thirteen
+#print axioms odd_tail_nineteen
+#print axioms odd_tail_twenty_three
+#print axioms odd_large_numerator
+#print axioms odd_large_first
+#print axioms odd_large_second
+#print axioms odd_drop_base
+#print axioms odd_drop_step
+#print axioms odd_raise_three
+#print axioms odd_raise_partner
+#print axioms odd_drop_195
+#print axioms odd_radical_105
+#print axioms odd_floor_room
+#print axioms odd_return_threshold
+#print axioms odd_fifteen_ratio
+#print axioms odd_series_domain
+#print axioms odd_lower_21
+#print axioms odd_lower_195
+#print axioms odd_lower_inert_a2
+#print axioms odd_lower_three_short_a1
+#print axioms odd_lower_three_short_a2
+#print axioms odd_inert_thirteen
+#print axioms odd_inert_tail_pure
+#print axioms odd_inert_tail_kick
+#print axioms odd_defect_domain
+#print axioms odd_defect_endpoint
+#print axioms odd_majorant_exceeds
+#print axioms odd_majorant_defined
 end Bgs.OddModulusRational

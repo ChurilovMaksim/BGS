@@ -75,4 +75,13 @@ theorem nonsplit_square_control :
 #print axioms negative_trace_period
 #print axioms mixed_period
 
+#print axioms refinement_nonzero
+#print axioms prime_square_modulus
+#print axioms mixed_modulus
+#print axioms odd_sector_dimension
+#print axioms odd_root_multiplicity
+#print axioms even_sector_dimension
+#print axioms even_root_multiplicity
+#print axioms split_factor
+#print axioms nonsplit_square_control
 end Bgs.GeneralHyperbolicParity

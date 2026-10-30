@@ -264,4 +264,29 @@ theorem phase_revival_7 : 3 * (66033 - 81 * 800) * 49 = 181251 := by
 
 theorem phase_scalar_7 : scalar7 = true := by
   decide
+#print axioms phase_mode_count
+#print axioms phase_hermitian
+#print axioms phase_energy_scaled
+#print axioms phase_energy
+#print axioms phase_imag_scaled
+#print axioms phase_imag_energy
+#print axioms phase_parity_fraction
+#print axioms phase_witness_count
+#print axioms phase_witnesses
+#print axioms phase_majorant
+#print axioms phase_majorant_beats_energy
+#print axioms phase_reversal_scaled
+#print axioms phase_reversal
+#print axioms phase_revival_41
+#print axioms phase_sigma0_3
+#print axioms phase_sigma0_5
+#print axioms phase_sigma0_7
+#print axioms phase_sigma0_11
+#print axioms phase_sigma0_3_fraction
+#print axioms phase_sigma0_5_fraction
+#print axioms phase_sigma0_7_fraction
+#print axioms phase_revival_3
+#print axioms phase_revival_5
+#print axioms phase_revival_7
+#print axioms phase_scalar_7
 end Bgs.PhaseFormFactorRational

@@ -365,4 +365,27 @@ theorem doublyStochastic_power_entry_delta {P : Matrix (Fin n) (Fin n) ℝ}
 
 end Companion
 
+#print axioms star_dot_sub_self
+#print axioms star_dot_comm
+#print axioms norm_sq_sub
+#print axioms dot_star_self_ne_zero
+#print axioms gamma_ne_zero
+#print axioms householder_apply
+#print axioms householder_unitary
+#print axioms mulVec_single_eq_col
+#print axioms unitary_mul_conj
+#print axioms unitary_norm_vec
+#print axioms twoStep_prescriptions
+#print axioms twoStep_P2_entry
+#print axioms twoStep_value
+#print axioms mul_flatJR
+#print axioms flatJR_mul
+#print axioms pow_mul_flatJR
+#print axioms sub_flatJR_pow
+#print axioms l2_one_le_one
+#print axioms entry_mul_mul_le
+#print axioms row_sq_sub_flat
+#print axioms col_sq_sub_flat
+#print axioms doublyStochastic_power_entry
+#print axioms doublyStochastic_power_entry_delta
 end Bgs.Mathlib
