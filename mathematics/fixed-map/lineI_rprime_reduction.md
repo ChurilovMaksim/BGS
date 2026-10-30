@@ -85,7 +85,7 @@ inert branch of (b) is vacuous here. 7 | h_m ⟺ m ≡ 3 (mod 6) (Lean `seven_dv
   * d = 7, 31, 41, 217, 287, 961 = 31², 1271 (m = 15);
   * d = 7, 49, 1673 (m = 21).
 
-  The worst relative error is ≤ 8.4e−15. The negative control t̄ ↦ −t̄ fails, with error O(1). On this basis BGS-TRACE-204 is registered
+  The worst relative error is ≤ 8.4e−15. The negative control t̄ ↦ −t̄ is run and logged by the same script and fails in every case, with error ≥ 1.19. On this basis BGS-TRACE-204 is registered
   as **proved**, with a dependency on this claim (owner decision). Its non-claim is unchanged: the main-term approximation
   |Z|² ≈ |Z_ρ|²/d² has no rigorous error bound.
 * **Heuristic corollary [H].** The frozen dilation term is o(1) relative to the main term iff the twisted radii satisfy r_tw < √λ/μ₀

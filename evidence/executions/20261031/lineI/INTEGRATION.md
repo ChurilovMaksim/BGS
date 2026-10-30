@@ -139,7 +139,7 @@ excluded and can be regenerated with the run scripts. Absolute scratch paths in 
     G3 formula, with Line G's conventions (`check_dilution.py`).
   * Numerical check: `integration_checks/lineI_G3_form_check.py` covers 19 (m, d) pairs, including composite d = 217, 287, 961, 1271
     (m = 15) and 49, 1673 (m = 21), plus d = 287 and d = 49 as requested. Max errors: completing-the-square 8.4e−15, G3 formula
-    8.3e−15. A negative control (−t̄β sign) fails with error 2.0. The log ends `ALL_OK` in ~47 s.
+    8.3e−15. The negative control, with the sign flipped to e(−t̄·Nmβ/d), is built into the script and logged per (m, d). It fails as expected in every case, with min error 1.19 and max 3.26. A separate scratch run at m = 9 had given 2.0. The run requires it to fail. The log ends `ALL_OK` in ~47 s.
   * The main-term approximation stays unbounded and is not claimed.
   * Also updated: the Line G note G3 section, the manuscript remark and the claim index.
 * **Nits.**

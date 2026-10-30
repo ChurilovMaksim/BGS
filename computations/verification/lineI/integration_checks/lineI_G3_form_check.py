@@ -6,7 +6,9 @@ For t a unit mod d, tbar = t^-1 mod d, beta = b1 + b2 sqrt2, Nm = x^2 - 2y^2, Tr
  (G3) Z_m(nu0 + 2hj/d) = (G_d(t)/d^2) sum_{beta mod d} e(tbar Nm(beta)/d) Zhat(beta),
       Zhat(beta) = sum_n w(n) e(Tr(beta alpha_n)/d),  w(n) = Phihat(n) e(-nu0 P(n)/2h),  t = j y' mod d,
  LHS by brute force over all words directly from P(n) = sum psi(|i-j|) n_i n_j (psi(k) = y' x_k - 2h y_k), random site-dependent
- complex weights, random unit nu0; |G_d(t)| = d. Conventions are those of computations/verification/lineG/code/check_dilution.py."""
+ complex weights, random unit nu0; |G_d(t)| = d. Conventions are those of computations/verification/lineG/code/check_dilution.py.
+NEGATIVE CONTROL (expected FAIL): the same G3 sum with the sign of the phase flipped, e(-tbar Nm(beta)/d), is evaluated for every
+(m, d, j); its error must be large (> 1e-3) in every case, otherwise the check is not discriminating and the run reports FAIL."""
 import itertools, math, json, numpy as np
 rng=np.random.default_rng(20261031)
 def nsw_U(m):
@@ -17,7 +19,7 @@ def e(x): return np.exp(2j*np.pi*x)
 CASES=[(5,(0,1,2),[41]),(7,(-1,0,1),[239]),(9,(-1,0,1),[7,199,1393]),(11,(0,1),[23,353]),(13,(0,1),[79,599]),
        (15,(0,1),[7,31,41,217,287,961,1271]),(21,(0,1),[7,49,1673])]
 NJ=8   # number of unit j tested per d (all of them when fewer)
-out={}; worst=dict(S=0.0,G3=0.0,absG=0.0)
+out={}; worst=dict(S=0.0,G3=0.0,absG=0.0); negctl_min=float('inf')
 for m,alph,ds in CASES:
     h,yp=nsw_U(m); M=2*h; assert h*h+1==2*yp*yp
     psi=np.array([(yp*nsw_U(2*k)[0]-h*nsw_U(2*k)[1])%M for k in range(m)],dtype=np.int64)
@@ -46,7 +48,7 @@ for m,alph,ds in CASES:
         NmB=(B1*B1-2*B2*B2)%d
         js=[j for j in range(1,d) if math.gcd((j*yp)%d,d)==1 and math.gcd((nu0+M//d*j)%M,M)==1]
         if len(js)>NJ: js=sorted(rng.choice(js,NJ,replace=False).tolist())
-        xs=np.arange(d); eS=eG3=eA=0.0
+        xs=np.arange(d); eS=eG3=eA=0.0; eN=0.0
         for j in js:
             t=(j*yp)%d; tb=pow(t,-1,d)
             g1=np.array([np.sum(e(-((t*xs*xs+2*b*xs)%d)/d)) for b in range(d)])
@@ -56,9 +58,13 @@ for m,alph,ds in CASES:
             Zt=np.sum(W*e(-(((nu0+M//d*j)%M)*P%M)/M))
             R=Gd/d**2*np.sum(e((tb*NmB%d)/d)*Zhat)
             eG3=max(eG3,abs(Zt-R)/scale)
-        rec[d]=dict(js=js,completing_square=eS,G3_form=eG3,absGd_minus_d=eA)
+            Rneg=Gd/d**2*np.sum(e((-tb*NmB%d)/d)*Zhat)   # negative control: flipped sign
+            eN=max(eN,abs(Zt-Rneg)/scale)
+        rec[d]=dict(js=js,completing_square=eS,G3_form=eG3,absGd_minus_d=eA,negctl_flipped_sign_G3_err=eN,negctl_result='FAIL (expected)' if eN>1e-3 else 'PASS (unexpected)')
+        negctl_min=min(negctl_min,eN)
         worst['S']=max(worst['S'],eS); worst['G3']=max(worst['G3'],eG3); worst['absG']=max(worst['absG'],eA)
     out[m]=dict(h=h,nu0=nu0,alphabet=list(alph),words=len(words),checks=rec)
-print(json.dumps(dict(cases=out,worst=worst),indent=1,default=str))
-ok=all(v<1e-9 for v in worst.values())
+print(json.dumps(dict(cases=out,worst=worst,negctl_min_err_over_cases=negctl_min),indent=1,default=str))
+print('NEGATIVE CONTROL (flipped sign e(-tbar Nm beta/d)): FAIL as expected, min error over all (m,d) = %.3g' % negctl_min if negctl_min>1e-3 else 'NEGATIVE CONTROL UNEXPECTEDLY PASSED (min error %.3g)' % negctl_min)
+ok=all(v<1e-9 for v in worst.values()) and negctl_min>1e-3
 print('ALL_OK' if ok else 'FAIL')

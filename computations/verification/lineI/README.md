@@ -36,7 +36,7 @@ section), are applied. BGS-TRACE-206 stays open. R′_A (BGS-TRACE-220) is an op
   author code). They cover I1, I2/I2′, I4, I5′, the aliasing identity and the prime-support facts at m = 5, 7, 9, and composite
   d = 287 (m = 15) and d = 49 (m = 21). `lineI_G3_form_check.py` (owner audit) checks the completing-the-square identity
   G_t(β) = e(t̄·Nm β/d)·G_d(t) and the BGS-TRACE-204 G3 formula against brute force for 19 (m, d) pairs, including composite
-  d = 217, 287, 961, 1271, 49, 1673 (max error 8.4e−15). All three logs end `ALL_OK`.
+  d = 217, 287, 961, 1271, 49, 1673 (max error 8.4e−15). It also runs a sign-flipped negative control, which fails as required (min error 1.19). All three logs end `ALL_OK`.
 * `referee/`: the referee's independent code (`code/`, `delta/code/`), logs and outputs. This includes `own_rig.py` (an independent
   REST certificate for class 1:3), `brute.py` (brute force from the definitions), `galcheck*.py` (intertwiner Galerkin check) and
   the DF4 rerun.
