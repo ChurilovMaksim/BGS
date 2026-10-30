@@ -6719,7 +6719,7 @@
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"
       ],
-      "closure_condition": "Recorded data, no statement claimed."
+      "closure_condition": "None as a theorem: this entry records numerical data only; any statement drawn from it needs its own registered claim and proof."
     },
     {
       "id": "BGS-TRACE-178",
@@ -6764,7 +6764,7 @@
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"
       ],
-      "closure_condition": "For 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m; R_NSW: along m with h_m prime (not known to be infinite)."
+      "closure_condition": "Prove or refute: for 0 < eta0 <= eta1 < infinity, max_{eta in [eta0,eta1]} |W~rest_m(eta)| = o(m) as m -> infinity through odd m (R), or along m with h_m prime (R_NSW)."
     },
     {
       "id": "BGS-TRACE-180",
@@ -6788,7 +6788,7 @@
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"
       ],
-      "closure_condition": "The law of Z_m(nu) over units nu at fixed eta is conjectured Gaussian for eta bounded away from 0."
+      "closure_condition": "Prove or refute that the law of Z_m(nu) over units nu at fixed eta bounded away from 0 is asymptotically Gaussian as m -> infinity."
     },
     {
       "id": "BGS-TRACE-181",
@@ -6810,7 +6810,7 @@
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"
       ],
-      "closure_condition": "ND_m (hence the unconditional 2m law of BGS-TRACE-164) is open for odd m with composite h_m having prime factors <= 28m (e.g. h_9 = 7 * 199) and for even m (m = 4, 6 fail on small torsion; no even-m deficit formula)."
+      "closure_condition": "Prove ND_m for odd m with composite h_m having prime factors <= 28m (e.g. h_9 = 7 * 199) and for even m (m = 4, 6 fail on small torsion), or give an even-m deficit formula."
     },
     {
       "id": "BGS-TRACE-182",
@@ -6835,7 +6835,7 @@
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"
       ],
-      "closure_condition": "The (m, eta) = (11, 2) outlier is unexplained; the torsion attribution is withdrawn."
+      "closure_condition": "Give a proved mechanism for the (m, eta) = (11, 2) outlier, or show that it is a numerical artefact."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

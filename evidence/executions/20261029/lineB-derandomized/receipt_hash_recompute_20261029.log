@@ -5,3 +5,25 @@ mismatches 0
 paths in the commit but not in the receipt hash map, other than the receipt itself: none
 The receipt file is not in the hash map. This log is not in the hash map.
 All recorded hashes match the committed blobs.
+
+=== Audit-fix recompute (PR #56 audit fixes F1-F5, N2, N5, N6), 2026-10-29 ===
+Recomputed sha256 of every integrated_files_sha256 path from the final bytes of the audit-fix commit's working tree (parent 817c2c8b25247736a48600ad6a363688d7caaa9e).
+recorded 346 (345 previous + integration_controls_reason.log)
+mismatches 0
+entries whose hash changed: 14
+  CHANGELOG.md
+  README.md
+  README.ru.md
+  computations/verification/lineB/independent_replay/README.md
+  evidence/executions/20261029/lineB-derandomized/README.md
+  evidence/executions/20261029/lineB-derandomized/controls/lean_controls.sh
+  evidence/executions/20261029/lineB-derandomized/integration_controls_reason.log
+  manuscript/unified_sections/derandomized_fixed_kick.tex
+  mathematics/fixed-map/derandomized_fixed_kick.md
+  mathematics/open_questions.md
+  record/claim_ledger.md
+  record/claim_registry.md
+  record/claim_verification_inventory.json
+  record/claims.json
+The receipt file is not in the hash map. This log is not in the hash map.
+All recorded hashes match the final bytes.

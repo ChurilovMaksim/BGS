@@ -17,6 +17,20 @@ This directory backs `mathematics/fixed-map/derandomized_fixed_kick.md`.
 
 *Second-reader note (2026-10-29):* the full directed-rounding rerun has now been done (93/93, claim-173). Non-claim 8 still applies to the authors' float grid and its constants; TRACE-173 is proved with the directed-rounding constants only.
 
+## Second-reader addendum (verbatim, referee audit §8.10a)
+
+The lines below are copied byte-for-byte from `computations/verification/lineB/independent_replay/REFEREE_AUDIT_REPORT.md` lines 497–505.
+
+### 8.10a Second-reader addendum (2026-10-29, added by the independent second reader; the table above is the referee's and is left unchanged)
+
+| Item | Referee status (8.10) | After second reading |
+|---|---|---|
+| Automatic admissibility (Frobenius), TRACE-167 | verification-pending | **proved** (statement confirmed; part (b) needed a one-line fix in the split case, norm-1 argument; fix applied) |
+| Prop C for all odd m, TRACE-169 | verification-pending | **proved** (confirmed, incl. p² | h; no fix) |
+| Theorem D_cert on η ∈ [1, 81.574], TRACE-173 | verification-pending | **proved (computer-assisted)** with the directed-rounding constants of t9_cert.py (unmodified): 93/93 valid, contiguous [1, 81.57406988332305], max ρ' = 0.99981969, max C' = 1.4296e7; not with the float constants (C_I ≤ 3.64e6) |
+
+Blockers: B1 closed (all 93 intervals re-certified with directed rounding; G1/G2 were fixed by the authors). B2 closed. B3 unchanged (174 stays conditional). Report and logs: packet `computations/verification/lineB/second_reader/`.
+
 ## Research-box logs (deposited with the packet; not re-executed in this integration)
 
 `lake_cache_get.log`, `lake_build_LineB.log`, `lake_build_Bgs.log`, `lean_axioms_LineB.log` and `lean_controls.log` are the packet's isolated build on a copy of main `d6fa6e2a`. Mathlib came from the cache. Those logs are not the build of this checkout.
@@ -70,8 +84,9 @@ bash <this dir>/controls/lean_controls.sh <this dir>/controls   # 6 false varian
 | `lake_cache_get.log`, `lake_build_LineB.log`, `lake_build_Bgs.log` | isolated copy of main d6fa6e2a `formalization/` + the packet: cache get exit 0; the four modules exit 0; full `lake build` (Bgs, 8799 jobs) exit 0. Mathlib came from the cache, not built from source |
 | `AxiomsLineB.lean`, `lean_axioms_LineB.log` | `#print axioms` for all 53 theorems. Results: 36 use no axioms, 8 use [propext], 1 uses [propext, Quot.sound], 8 use [propext, Classical.choice, Quot.sound] (Mathlib `norm_num`/`ring`). No sorryAx, no ofReduceBool. |
 | `controls/`, `lean_controls.log` | 6/6 false controls rejected (`decide` reports each proposition false) |
+| `integration_controls_reason.log` | audit fix N6: `controls/lean_controls.sh` now keeps stderr and counts a control only if Lean rejects it for the expected reason (`decide` proves the proposition false, or `norm_num` leaves `False` unsolved); rerun on this checkout's build |
 | `verify_ecpp.log` | PASS |
-| `grid_v2_summary.json`, `grid_v2_summary.txt`, `grid_v2_w0.jsonl`, `grid_v2_w1.jsonl` | the TRACE-173 rerun with the G1/G2-fixed envelopes: all 93/93 intervals re-certified (same float method; status unchanged) |
+| `grid_v2_summary.json`, `grid_v2_summary.txt`, `grid_v2_w0.jsonl`, `grid_v2_w1.jsonl` | the TRACE-173 rerun with the G1/G2-fixed envelopes: all 93/93 intervals re-certified (same float method; this rerun alone does not change the status) |
 | `packet_smoke.log` | relocated scripts run from the packet tree (W_decomp m = 5, deficit_odd, certify_v2 self-test) |
 | `receipt.json` | sha256 of the packet tarball and of the integrated files, from `git show HEAD:path`. The receipt does not hash itself. |
 | `integration_lake_build_Bgs.log`, `integration_axioms.log`, `integration_grep.log`, `integration_checkers.log` | this checkout |

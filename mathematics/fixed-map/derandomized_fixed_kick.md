@@ -109,7 +109,7 @@ Each section below names the statement and its status and points to the proof. W
 - Envelope fixes:
   - G1: the tilted Bessel truncation tail is now proved: ≤ 2y^{J+1}/(J+1)!·e^y per factor, at most 10⁻²⁰⁴ at η = 1 and 2.1·10⁻⁸⁶ at η = 81.6.
   - G2: the [9:−9] edge mass is padded and added exactly; it is 0 in all runs.
-- The **full 93-interval rerun with the fixed envelopes** (2026-10-29) re-certified all 93/93 intervals: coverage [1, 81.57407] contiguous, max_a ρ_I ∈ [0.852733, 0.999860] (identical to the original grid to 7·10⁻¹⁶), max Σ_a C_I = 3.64·10⁶, tilted truncation tail ≤ 2.0·10⁻⁸⁶, edge spill 0. Logs: `computations/verification/lineB/phase4/logs/grid_v2_*`; summary in `evidence/executions/20261029/lineB-derandomized/receipt.json` (`results.dcert_rerun`). This rerun uses the same IEEE-float method (not interval arithmetic), so it does not change the status.
+- The **full 93-interval rerun with the fixed envelopes** (2026-10-29) re-certified all 93/93 intervals: coverage [1, 81.57407] contiguous, max_a ρ_I ∈ [0.852733, 0.999860] (identical to the original grid to 7·10⁻¹⁶), max Σ_a C_I = 3.64·10⁶, tilted truncation tail ≤ 2.0·10⁻⁸⁶, edge spill 0. Logs: `computations/verification/lineB/phase4/logs/grid_v2_*`; summary in `computations/verification/lineB/phase4/logs/grid_v2_summary.json` (byte-identical copy in `evidence/executions/20261029/lineB-derandomized/grid_v2_summary.json`). This rerun uses the same IEEE-float method (not interval arithmetic), so it does not change the status.
 - Hypotheses:
   - IEEE-754 binary64 semantics;
   - libm exp/log accurate to ≤ 4 ulp;

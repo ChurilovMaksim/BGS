@@ -27,4 +27,4 @@ B=0.0176777; K=0.0088388      # beta=0.1/(4 sqrt2), kappa=beta/2 in the referee'
 python3 t9_cert.py 1.0 1.1 $B $K 45.2548 25     # see REFEREE_AUDIT_REPORT.md §7 and §8.11 for all commands
 ```
 
-Requirements: Python 3 with numpy, scipy, sympy, mpmath, gmpy2, cypari2, python-flint (arb). The referee's own logs cover 6 of the 93 intervals. The full directed-rounding rerun was done afterwards by the second reader with this `t9_cert.py`; see `../second_reader/`.
+Requirements: Python 3 with numpy, scipy, sympy, mpmath, gmpy2, cypari2, python-flint (arb). The referee's own logs cover 6 of the 93 intervals. The full directed-rounding rerun was done afterwards by the second reader with the referee's unmodified `t9_cert.py` (sha256 2dee8e5490d0ebff3a0793ffbdc8dae11281ef6396394c1a7b72a49b9d118947); the copy here differs only by the assertion guard and the repo-relative `sys.path` line. See `../second_reader/`.

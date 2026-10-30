@@ -1,0 +1,40 @@
+=== lean controls with stderr kept and the rejection reason asserted (audit fix N6) ===
+Thu Oct 29 22:58:27 UTC 2026
+=== lake exe cache get ===
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 8690 file(s)
+cache_exit:0
+=== bash controls/lean_controls.sh controls ===
+--- c1.lean (lean exit 1)
+/workspace/audit/pr56/work/evidence/executions/20261029/lineB-derandomized/controls/c1.lean:3:64: error: Tactic `decide` proved that the proposition
+  (fun j => H3 ![1, 0, 0] j + 1) = ![6, 0, 0]
+is false
+c1.lean: rejected (expected reason)
+--- c2.lean (lean exit 1)
+/workspace/audit/pr56/work/evidence/executions/20261029/lineB-derandomized/controls/c2.lean:3:51: error: Tactic `decide` proved that the proposition
+  ∀ (k : Fin 5), Umod 41 ↑k ≠ 0
+is false
+c2.lean: rejected (expected reason)
+--- c3.lean (lean exit 1)
+/workspace/audit/pr56/work/evidence/executions/20261029/lineB-derandomized/controls/c3.lean:3:43: error: Tactic `decide` proved that the proposition
+  T 9 - 2 = 4 * 1392 ^ 2
+is false
+c3.lean: rejected (expected reason)
+--- c4.lean (lean exit 1)
+/workspace/audit/pr56/work/evidence/executions/20261029/lineB-derandomized/controls/c4.lean:3:36: error: Tactic `decide` proved that the proposition
+  hm 19 = 9369321
+is false
+c4.lean: rejected (expected reason)
+--- c5.lean (lean exit 1)
+/workspace/audit/pr56/work/evidence/executions/20261029/lineB-derandomized/controls/c5.lean:3:39: error: Tactic `decide` proved that the proposition
+  checkQBad 5 = true
+is false
+c5.lean: rejected (expected reason)
+--- c6.lean (lean exit 1)
+/workspace/audit/pr56/work/evidence/executions/20261029/lineB-derandomized/controls/c6.lean:2:41: error: unsolved goals
+⊢ False
+c6.lean: rejected (expected reason)
+6/6 false controls rejected for the expected reason
+controls_exit:0
+Thu Oct 29 22:59:01 UTC 2026
