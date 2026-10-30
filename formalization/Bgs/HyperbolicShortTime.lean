@@ -24,4 +24,9 @@ theorem remainderAtUnit : (22 : Int) * 18 = 11 * 36 := by decide
 /-- At `N = 11` and `x = 1` the remainder majorant `N^2 * 11/18` exceeds `6`. -/
 theorem majorantExceedsTwoM : (121 : Int) * 11 > 6 * 18 := by decide
 
+#print axioms symErr3
+#print axioms symErr4
+#print axioms remainderParts
+#print axioms remainderAtUnit
+#print axioms majorantExceedsTwoM
 end Bgs.HyperbolicShortTime

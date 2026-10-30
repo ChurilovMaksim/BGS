@@ -169,4 +169,25 @@ theorem ell_ge_fourteen {m : ℕ} (hm : 3 ≤ m) :
     have h4' : py 4 = 12 := by decide
     omega
 
+#print axioms px_succ
+#print axioms py_succ
+#print axioms px_zero
+#print axioms py_zero
+#print axioms catC_sq
+#print axioms catC_pow
+#print axioms pell_xy
+#print axioms pxy_nonneg
+#print axioms px_mono
+#print axioms py_mono
+#print axioms catS_pow_eq_sq
+#print axioms pell_odd
+#print axioms pell_even
+#print axioms catS_pow_sub_one_odd
+#print axioms catS_pow_sub_one_even
+#print axioms fix_count_odd
+#print axioms fix_count_even
+#print axioms annihilator_odd
+#print axioms annihilator_even
+#print axioms ell_values
+#print axioms ell_ge_fourteen
 end Bgs.Mathlib

@@ -65,4 +65,12 @@ theorem kickBlind_n5_rho : xDen5 > 6 * xNum5 := by
 theorem kickBlind_n5 : 124 * (xDen5 - 6 * xNum5) ^ 2 >
     123 * (xDen5 - xNum5) ^ 2 := by
   decide
+#print axioms kickBlind_norm
+#print axioms kickBlind_positive
+#print axioms kickBlind_odd
+#print axioms kickBlind_bases
+#print axioms kickBlind_rho
+#print axioms kickBlind_uniform
+#print axioms kickBlind_n5_rho
+#print axioms kickBlind_n5
 end Bgs.KickBlindRational

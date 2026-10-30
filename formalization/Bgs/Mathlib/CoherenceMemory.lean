@@ -385,4 +385,29 @@ theorem coherence_plateau_opNorm {N : ℕ} (hN : 2 ≤ N) {U : Matrix (Fin N) (F
 
 end OpNorm
 
+#print axioms coherent_part_formula
+#print axioms return_memory_recurrence
+#print axioms offPart_apply
+#print axioms diag_conj_diagonal
+#print axioms hs2_eq_re_trace
+#print axioms hs2_nonneg
+#print axioms hs2_eq_zero_iff
+#print axioms hs2_conjU
+#print axioms hs2_offPart_le
+#print axioms hs2_cohE_le
+#print axioms hs2_cohE_iterate_le
+#print axioms unistochastic_row_sum
+#print axioms unistochastic_col_sum
+#print axioms conjL_pow_apply
+#print axioms trace_conjU
+#print axioms trace_conjU_iterate
+#print axioms hs2_conjU_iterate
+#print axioms exists_offdiag_orbit
+#print axioms coherence_plateau_hs
+#print axioms offPart_add
+#print axioms offPart_smul
+#print axioms cohEL_pow_apply
+#print axioms toHS_of
+#print axioms norm_HSMat_of
+#print axioms coherence_plateau_opNorm
 end Bgs.Mathlib

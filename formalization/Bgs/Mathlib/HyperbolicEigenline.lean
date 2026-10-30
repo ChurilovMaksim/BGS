@@ -98,4 +98,8 @@ theorem catS_eigenline_irrational (v : Fin 2 → ℝ) (hv : v ≠ 0) (μ : ℝ)
   hyperbolic_eigenline_irrational _ (by simp [det_fin_two])
     (by simp [trace, Fin.sum_univ_two]) v hv μ hev
 
+#print axioms int_sq_ne_sq_sub_four
+#print axioms hyperbolic_eigenvalue_irrational
+#print axioms hyperbolic_eigenline_irrational
+#print axioms catS_eigenline_irrational
 end Bgs.Mathlib

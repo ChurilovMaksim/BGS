@@ -425,4 +425,26 @@ theorem radialRatio_eq_clock_iff (lam : Fin N → ℂ) (hlam : ∀ j, ‖lam j�
     rw [this, circleAverage_const]
     ring
 
+#print axioms secPoly_eval
+#print axioms secPoly_natDegree_le
+#print axioms secular_eq_sum
+#print axioms reflected_eq_sum
+#print axioms secular_zero
+#print axioms secular_ne_zero
+#print axioms differentiable_secular
+#print axioms circleAverage_div_secular
+#print axioms norm_reflected_eq
+#print axioms conj_secular_mul
+#print axioms conj_hardyNum
+#print axioms hardyNumRefl_zero
+#print axioms hardyNum_zero
+#print axioms secular_decomp
+#print axioms norm_sq_expand
+#print axioms clock_constant_identity
+#print axioms radialRatio_hardy_identity
+#print axioms radialRatio_ge_clock
+#print axioms circleAverage_eq_zero_vanish
+#print axioms hardyPoly_eval
+#print axioms hardyPoly_coeff
+#print axioms radialRatio_eq_clock_iff
 end Bgs.Mathlib

@@ -166,4 +166,9 @@ theorem distinctSum_cycle_formula {N k : ℕ} (x : Fin N → ℝ) (m : Fin k →
   refine Finset.sum_congr rfl fun t _ => ?_
   exact prod_ephase x _ m t
 
+#print axioms sum_sign_stabilizer
+#print axioms const_on_sameCycle
+#print axioms sum_const_on_cycles
+#print axioms prod_ephase
+#print axioms distinctSum_cycle_formula
 end Bgs.Mathlib

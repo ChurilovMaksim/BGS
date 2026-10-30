@@ -251,4 +251,15 @@ theorem cue_hardy_excess_pos {s t : ℝ} (hs : 0 < s) (hst : s < t) :
   apply mul_lt_mul_of_pos_left _ (by positivity)
   linarith
 
+#print axioms one_sub_b_pow_ne
+#print axioms hardyWeight_zero
+#print axioms hardyWeight_N
+#print axioms hardyWeight_second_difference
+#print axioms add_inv_lt_add_inv
+#print axioms hardyWeight_pos
+#print axioms abel_equality_obstruction
+#print axioms sinh_le_mul_cosh'
+#print axioms sinh_div_strictMonoOn
+#print axioms one_lt_sinh_div
+#print axioms cue_hardy_excess_pos
 end Bgs.Mathlib

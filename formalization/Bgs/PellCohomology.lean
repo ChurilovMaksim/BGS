@@ -47,4 +47,12 @@ theorem period11 : vector 11 = (1,0) := by native_decide
 theorem pairKeyCount11 : pairKeys.length = 220 := by native_decide
 theorem pairKeysUnique11 : pairKeys.Nodup := by native_decide
 theorem pairKeysNonzero11 : pairKeys.contains (0,0) = false := by native_decide
+#print axioms interior_difference
+#print axioms boundary_difference
+#print axioms centered_pair
+#print axioms pell11
+#print axioms period11
+#print axioms pairKeyCount11
+#print axioms pairKeysUnique11
+#print axioms pairKeysNonzero11
 end Bgs.PellCohomology

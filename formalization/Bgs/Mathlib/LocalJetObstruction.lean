@@ -204,6 +204,22 @@ theorem project_a : Real.sqrt (((3 + 2 * √2) ^ 2 + (3 + 2 * √2)⁻¹ ^ 2) / 
   congr 1
   nlinarith
 
+#print axioms Gfun_expand
+#print axioms hasDerivAt_Gu
+#print axioms hasDerivAt_Gz
+#print axioms deriv_Gu
+#print axioms deriv_Gz
+#print axioms deriv_GSu
+#print axioms deriv_GSz
+#print axioms Gfun_nonneg
+#print axioms Gfun_eq_zero_iff
+#print axioms bracket_expansion
+#print axioms bracket_coeff_three
+#print axioms monomial_coboundary
+#print axioms bracket_is_coboundary
+#print axioms bracket_ne_zero
+#print axioms a_pos
+#print axioms project_a
 end LocalJet
 
 end Bgs.Mathlib

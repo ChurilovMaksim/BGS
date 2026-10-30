@@ -612,4 +612,33 @@ theorem abelL_ge_clock (hN : 1 ≤ N) (x : Fin N → ℝ) (hs : 0 < s) :
   rw [hval]
   linarith
 
+#print axioms qN_pos
+#print axioms qN_lt_one
+#print axioms qN_pow_N
+#print axioms sinh_sq_mul_exp
+#print axioms gc_eq_zero
+#print axioms qN_pow
+#print axioms four_sinh_sq
+#print axioms gc_eq_of_lt
+#print axioms gc_nonneg
+#print axioms gc_zero
+#print axioms pc_hasSum
+#print axioms pc_pos
+#print axioms pc_summable
+#print axioms sc_hasSum
+#print axioms fejc_hasSum
+#print axioms hc_hasSum
+#print axioms gc_hasSum
+#print axioms dirichlet_mul
+#print axioms fej_aux
+#print axioms fejSum_mul
+#print axioms sum_range_sub
+#print axioms fejSum_zero
+#print axioms Hfun_zero
+#print axioms sinh_le_mul_cosh
+#print axioms two_sinh_le
+#print axioms Hfun_nonneg
+#print axioms pair_cos_sum_nonneg
+#print axioms poisson_energy_ge
+#print axioms abelL_ge_clock
 end Bgs.Mathlib

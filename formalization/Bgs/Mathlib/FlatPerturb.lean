@@ -284,4 +284,25 @@ theorem flatU_form_factor_ge (k p : ℕ) [NeZero p] (hk : 1 ≤ k) (α) {ε : �
   rw [le_div_iff₀ hN]
   nlinarith [mul_le_mul h2 h2 h0 (norm_nonneg _)]
 
+#print axioms pow_sub_pow_norm_le
+#print axioms l2_norm_le_one_of_unitary
+#print axioms entry_norm_le_l2
+#print axioms trace_norm_le_l2
+#print axioms phaseE_unitary
+#print axioms phaseE_sub_one_norm_le
+#print axioms mul_phase_sub_norm_le
+#print axioms intensityP_mul_phase
+#print axioms reversalB_mul_phase
+#print axioms l2_norm_mul_self_eq
+#print axioms l2_norm_proj
+#print axioms l2_norm_unitary_conj
+#print axioms flatU_unitary
+#print axioms flatU_entry_normSq
+#print axioms kron_one_flatJ_ne_zero
+#print axioms norm_reversalB_flatA
+#print axioms norm_reversalB_flatU
+#print axioms flatU_trace_sub_le
+#print axioms flatU_trace_pow_le
+#print axioms flatU_trace_resonance
+#print axioms flatU_form_factor_ge
 end Bgs.Mathlib

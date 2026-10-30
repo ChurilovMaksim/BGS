@@ -283,4 +283,37 @@ theorem flatA_trace_resonance (k p : ℕ) [NeZero p] (hk : 1 ≤ k) :
     (flatA k p ^ ((4 ^ k - 4) * p)).trace = (4 ^ k * p : ℕ) := by
   rw [flatA_pow_resonance k p hk, trace_one, flatA_card]
 
+#print axioms tensorPow_mul
+#print axioms tensorPow_one
+#print axioms tensorPow_pow
+#print axioms tensorPow_conjTranspose
+#print axioms tensorPow_trace
+#print axioms tensorPow_unitary
+#print axioms reversalB_tensorPow
+#print axioms normSq_tensorPow
+#print axioms kron_pow
+#print axioms kron_conjTranspose
+#print axioms kron_unitary
+#print axioms reversalB_kron
+#print axioms kron_trace
+#print axioms unitary_entry_normSq_le
+#print axioms unitary_entry_norm_le
+#print axioms unitary_trace_norm_le
+#print axioms unitary_pow
+#print axioms flatA_card
+#print axioms flatA_entry_normSq
+#print axioms flatA_unitary
+#print axioms flatA_pow
+#print axioms flatA_pow_period
+#print axioms reversalB_chirpV
+#print axioms flatJ_mul_self
+#print axioms flatJ_conjTranspose
+#print axioms reversalB_flatA
+#print axioms tensorPow_smul_one
+#print axioms reversalB_flatA_mul_conjTranspose
+#print axioms flatA_trace_pow_le
+#print axioms flatA_trace_pow_div_le
+#print axioms four_pow_mod_six
+#print axioms flatA_pow_resonance
+#print axioms flatA_trace_resonance
 end Bgs.Mathlib

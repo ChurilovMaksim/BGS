@@ -278,4 +278,31 @@ theorem reversal_coreH_mul_conjTranspose :
   fin_cases i <;> fin_cases j <;>
     simp [mul_apply, Fin.sum_univ_four, map_ofNat] <;> norm_num
 
+#print axioms two_ne_zero_zmod
+#print axioms sum_psi_mul
+#print axioms psi_conj
+#print axioms chirp_sum_normSq
+#print axioms sqrt_inv_sq
+#print axioms conj_sqrt_inv
+#print axioms fourier_conj_mul
+#print axioms fourier_unitary
+#print axioms fourierF_transpose
+#print axioms fourier_unitary'
+#print axioms chirpV_apply
+#print axioms chirpV_unitary
+#print axioms chirpV_transpose
+#print axioms chirpV_pow
+#print axioms chirpD_pow
+#print axioms chirpV_trace_pow
+#print axioms chirpV_pow_p
+#print axioms chirpV_entry_normSq
+#print axioms chirpV_trace_pow_normSq
+#print axioms chirpV_trace_pow_norm
+#print axioms coreH_mul_transpose
+#print axioms coreH_unitary
+#print axioms coreH_sq
+#print axioms coreH_pow_six
+#print axioms coreH_entry_normSq
+#print axioms reversal_coreH
+#print axioms reversal_coreH_mul_conjTranspose
 end Bgs.Mathlib

@@ -85,4 +85,21 @@ theorem kernelCount3_7 : kernelCount3 7 = 49 := by decide
 theorem kernelCount3_9 : kernelCount3 9 = 1 := by decide
 theorem kernelCount3_21 : kernelCount3 21 = 49 := by decide
 theorem kernelCount3_49 : kernelCount3 49 = 49 := by decide
+#print axioms subSubCancel
+#print axioms time3Numerator
+#print axioms time2Gap
+#print axioms time3Gap
+#print axioms time3BelowSix
+#print axioms time2AtMostTwo
+#print axioms s2Det
+#print axioms s2Entries
+#print axioms s3Factor
+#print axioms s3Entries
+#print axioms revivalAt7
+#print axioms pureRevivalAt7
+#print axioms sixBelowFortyNine
+#print axioms kernelCount3_7
+#print axioms kernelCount3_9
+#print axioms kernelCount3_21
+#print axioms kernelCount3_49
 end Bgs.DiagonalPhaseFormFactorRational

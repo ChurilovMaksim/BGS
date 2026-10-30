@@ -104,4 +104,9 @@ theorem harmonic_half_sum_le_log_dist {N n : ℕ} {τ : ℝ}
   have := Real.log_le_log (by positivity) hmono
   linarith
 
+#print axioms midpoint_le_log
+#print axioms harmonic_half_sum_le_log_ratio
+#print axioms harmonic_half_sum_le
+#print axioms ceil_index_bound
+#print axioms harmonic_half_sum_le_log_dist
 end Bgs.Mathlib

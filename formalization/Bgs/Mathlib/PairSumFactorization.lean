@@ -269,4 +269,23 @@ theorem pair_sum_const_sq [IsDomain R] {m : ℕ} (x : Fin m → R) (E O : R[X])
   rw [hS]
   exact (mul_left_cancel₀ hne hA).symm
 
+#print axioms pairPoly_monic
+#print axioms pairSumPoly_monic
+#print axioms natDegree_pairPoly
+#print axioms natDegree_pairSumPoly
+#print axioms eval_pairPoly
+#print axioms prod_pairs_eq_diag_mul_sq
+#print axioms resultant_pairPoly_left
+#print axioms natDegree_reflect_le
+#print axioms resultant_reflect_eq_prod
+#print axioms pair_sum_resultant_factorization
+#print axioms pair_sum_resultant_factorization_poly
+#print axioms doublePoly_eq_scaleRoots
+#print axioms doublePoly_coeff
+#print axioms rootMultiplicity_zero_D_mul_sq
+#print axioms two_le_rootMultiplicity_zero_iff
+#print axioms pair_sum_order_three_iff
+#print axioms parity_eval_neg
+#print axioms prod_roots_eq
+#print axioms pair_sum_const_sq
 end Bgs.Mathlib

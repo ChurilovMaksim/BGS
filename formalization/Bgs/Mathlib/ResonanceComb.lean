@@ -136,6 +136,14 @@ theorem gaussian_moment_ratio_tendsto (A : ℝ) :
   refine h.congr fun r => ?_
   rw [div_pow, pow_mul, div_div]
 
+#print axioms rem_zero_eq
+#print axioms hasDerivAt_rem
+#print axioms rem_neg
+#print axioms norm_rem_le_of_nonneg
+#print axioms norm_rem_le
+#print axioms exp_I_taylor_bound
+#print axioms gaussian_moment_ratio
+#print axioms gaussian_moment_ratio_tendsto
 end ResonanceComb
 
 end Bgs.Mathlib

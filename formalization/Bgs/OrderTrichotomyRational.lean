@@ -62,4 +62,17 @@ theorem order_trichotomy_window :
       < 14146865 * 2 * ((10 : Nat) ^ 25 - 2)
           * (160000 * (10 : Nat) ^ 80 - 184981 * (10 : Nat) ^ 25) := by
   decide
+#print axioms order_trichotomy_sixteen
+#print axioms order_trichotomy_half_assembly
+#print axioms order_trichotomy_seven
+#print axioms order_trichotomy_seven_tower
+#print axioms order_trichotomy_split_tower
+#print axioms order_trichotomy_long_tower
+#print axioms order_trichotomy_long_kick
+#print axioms order_trichotomy_three
+#print axioms order_trichotomy_five
+#print axioms order_trichotomy_seven_kick
+#print axioms order_trichotomy_seven_tower_kick
+#print axioms order_trichotomy_square_gap
+#print axioms order_trichotomy_window
 end Bgs.OrderTrichotomyRational

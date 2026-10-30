@@ -492,4 +492,44 @@ theorem cueVar_comparison (N n : ℕ) (hN : 2 ≤ N) :
   rw [e]
   exact mul_le_mul_of_nonneg_right this (by positivity)
 
+#print axioms hP_natCast
+#print axioms hP_neg_natCast
+#print axioms hP_succ
+#print axioms hs_eq_hP
+#print axioms halfInt_ne_zero
+#print axioms hs_point_ne_zero
+#print axioms hs_point_ne_zero'
+#print axioms hP_inv
+#print axioms hP_invSq
+#print axioms hs_eq_hP'
+#print axioms hs_point_ne_sub_nat
+#print axioms hs_point_shift
+#print axioms cseT1_eval
+#print axioms cseT2_eval
+#print axioms cseT3_eval
+#print axioms cseT4b_eval
+#print axioms cseT4a_eval
+#print axioms hs_eq_hP''
+#print axioms hP_inv_nat
+#print axioms hP_inv_negNat
+#print axioms hP_invSq_nat
+#print axioms hP_invSq_negNat
+#print axioms cseKappa_formula_short
+#print axioms cseR2_empty
+#print axioms cseR1_empty
+#print axioms cseKappa_formula_middle
+#print axioms cseKappa_formula_plateau
+#print axioms cseKappa_diag
+#print axioms cseKappa_two_mul_sub_one
+#print axioms hHarm_nonneg
+#print axioms hHarm_mono
+#print axioms cseKappa_le
+#print axioms hHarm_one_le_log
+#print axioms cseM2_le
+#print axioms cueKappa_grouping
+#print axioms cueVar_short
+#print axioms cueVar_middle
+#print axioms cueVar_long
+#print axioms cueVar_le
+#print axioms cueVar_comparison
 end Bgs.Mathlib

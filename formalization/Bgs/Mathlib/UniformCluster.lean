@@ -200,4 +200,11 @@ theorem cluster_B1 (d : ι → ℝ) (R : Matrix ι ι ℝ)
   · have := diagDominant_inv_decay d R hd hR hab dist hdist0 htri hloc j k
     norm_num at this ⊢; linarith
 
+#print axioms cyclic_cross_le
+#print axioms cyclic_form_bounds
+#print axioms diagDominant_sup_bound
+#print axioms diagDominant_det_ne_zero
+#print axioms diagDominant_inv_row_sum
+#print axioms diagDominant_inv_decay
+#print axioms cluster_B1
 end Bgs.Mathlib

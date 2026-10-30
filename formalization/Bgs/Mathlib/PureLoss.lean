@@ -301,4 +301,21 @@ theorem pl_fluctuation (hu : 0 ≤ u) (hu1 : u ≤ 1) (hη0 : 0 ≤ η) (hη1 : 
 
 end PureLoss
 
+#print axioms pow_add_pow_le_one
+#print axioms pl_d_eq
+#print axioms pl_h_mem
+#print axioms pl_s_bounds
+#print axioms pl_amb_ge
+#print axioms pl_r2_eq
+#print axioms pl_r2_source_formula_false
+#print axioms pl_r2_ge
+#print axioms pl_delta_eq
+#print axioms pl_r2_near
+#print axioms pl_delta_bounds
+#print axioms neg_log_one_sub_bounds
+#print axioms pl_L_bounds
+#print axioms sqrt_one_sub_exp_lipschitz
+#print axioms pl_replacement_error
+#print axioms pl_mean_shift
+#print axioms pl_fluctuation
 end Bgs.Mathlib

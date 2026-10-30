@@ -186,4 +186,10 @@ theorem distinct_sum_cons {N k : ℕ} (x : Fin N → ℝ) (m₀ : ℤ) (m : Fin 
     ring
   · simp [hj]
 
+#print axioms ephase_add
+#print axioms traceZ_eq_sum_ephase
+#print axioms distinct_sum_two
+#print axioms distinct_sum_three
+#print axioms sum_not_mem_range
+#print axioms distinct_sum_cons
 end Bgs.Mathlib

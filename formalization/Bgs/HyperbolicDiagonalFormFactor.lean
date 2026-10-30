@@ -139,4 +139,31 @@ theorem gcd_time_one :
 
 theorem square_41 : (41 : Int) * 41 = 1681 := by decide
 
+#print axioms cassini_range
+#print axioms sign_trace
+#print axioms gap_model
+#print axioms model_companion_3
+#print axioms model_det_3
+#print axioms five_companion_2
+#print axioms five_det_2
+#print axioms fib_companion_2
+#print axioms fib_det_2
+#print axioms tr5_det
+#print axioms order41
+#print axioms order41_not_1
+#print axioms order41_not_2
+#print axioms order41_not_4
+#print axioms same_trace_order_11
+#print axioms same_trace_order_11_proper
+#print axioms kernel_model_49
+#print axioms kernel_five_49
+#print axioms kernel_model_7
+#print axioms kernel_fib_5
+#print axioms kernel_plus_3
+#print axioms kernel_minus_3
+#print axioms revival_41
+#print axioms revival_5
+#print axioms sigma_five_eighths
+#print axioms gcd_time_one
+#print axioms square_41
 end Bgs.HyperbolicDiagonalFormFactor
