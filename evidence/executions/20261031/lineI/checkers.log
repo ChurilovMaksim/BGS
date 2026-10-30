@@ -1,4 +1,3 @@
-# Required and other checks on branch line-I-rprime (all with nice -n 10), 2026-10-31 02:49 +0500. Every failure below also fails on pristine main 4f5056b8 with identical output (checkers_baseline_main_4f5056b8.log; diff = the claim count line 294 -> 304 only).
 ## $ python3 computations/maintenance/render_bibliography.py --check
 bibliography-render: OK
 exit 0
@@ -24,7 +23,7 @@ status-render: OK
 exit 0
 
 ## $ python3 computations/verification/scientific_registry_audit.py
-scientific-registry-audit: OK (304 claims, 57 external dependencies)
+scientific-registry-audit: OK (304 claims, 60 external dependencies)
 exit 0
 
 ## $ python3 computations/verification/repository_audit.py
@@ -46,7 +45,7 @@ exit 0
 exit 0
 
 ## $ python3 computations/verification/wave2_integration_audit.py
-  File "/workspace/bgs-lineI/integ/computations/verification/wave2_integration_audit.py", line 234, in run
+  File "/workspace/bgs-lineI/integ/computations/verification/wave2_integration_audit.py", line 235, in run
     require(sha(path)==c['integrated_wrapper_sha256'],'integrated wrapper mapping changed')
     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/workspace/bgs-lineI/integ/computations/verification/wave2_checked_replay.py", line 30, in require
@@ -97,7 +96,7 @@ exit 1
 AssertionError: 'Output inside maintained source is forbidden' not found in 'Traceback (most recent call last):\n  File "/workspace/bgs-lineI/integ/computations/verification/ramified_first_seven_trace.py", line 7, in <module>\n    import sympy as s\nModuleNotFoundError: No module named \'sympy\'\n'
 
 ----------------------------------------------------------------------
-Ran 256 tests in 344.002s
+Ran 256 tests in 587.208s
 
 FAILED (failures=116, errors=104, skipped=1)
 exit 1

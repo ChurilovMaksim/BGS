@@ -32,8 +32,8 @@ at their recorded paths; identical bytes can have different provenance.
 | Core registry state | IDs |
 |---|---:|
 | conditional | 15 |
-| open | 26 |
-| proved | 247 |
+| open | 25 |
+| proved | 248 |
 | refuted | 1 |
 | verification-pending | 15 |
 
@@ -189,7 +189,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Random-phase cat map: exact encounter classification and the τ² coefficient (Line C)](../mathematics/fixed-map/random_phase_encounter_pairs.md) | `BGS-TRACE-143` (proved); `BGS-TRACE-144` (proved); `BGS-TRACE-145` (proved); `BGS-TRACE-146` (proved); `BGS-TRACE-147` (verification-pending); `BGS-TRACE-148` (open) |
 | [Residual-125 packets and uniform second-order splitting](../mathematics/fixed-map/residual125_uniform_splitting.md) | Consult proof and full ledger |
 | [Residual-25 affine-return discriminator](../mathematics/fixed-map/residual25_affine_dictionary.md) | Consult proof and full ledger |
-| [Line G: a general resonance law for the fixed-kick cat map, dilution families, and a corrected conjecture R′](../mathematics/fixed-map/resonance_classification_lineG.md) | `BGS-TRACE-203` (proved); `BGS-TRACE-204` (open); `BGS-TRACE-205` (open); `BGS-TRACE-206` (open) |
+| [Line G: a general resonance law for the fixed-kick cat map, dilution families, and a corrected conjecture R′](../mathematics/fixed-map/resonance_classification_lineG.md) | `BGS-TRACE-203` (proved); `BGS-TRACE-204` (proved); `BGS-TRACE-205` (open); `BGS-TRACE-206` (open) |
 | [Line E: resonant residues of the fixed-kick cat map. An exact transfer-operator law for giant traces, and what it says about Conjecture R](../mathematics/fixed-map/resonant_residue_lineE.md) | `BGS-TRACE-183` (proved); `BGS-TRACE-184` (proved); `BGS-TRACE-185` (proved); `BGS-TRACE-186` (proved); `BGS-TRACE-187` (proved); `BGS-TRACE-188` (conditional); `BGS-TRACE-189` (open); `BGS-TRACE-190` (open); `BGS-TRACE-191` (open); `BGS-TRACE-192` (open); `BGS-TRACE-193` (proved); `BGS-TRACE-194` (proved); `BGS-TRACE-195` (proved); `BGS-TRACE-196` (conditional) |
 | [Reversed-coordinate-path decay at the fixed physical coupling](../mathematics/fixed-map/reversed_path_decay.md) | `BGS-FM-022` (proved) |
 | [Twisted closure formula and the revival law at the scalar return (diagonal kick)](../mathematics/fixed-map/revival_closure_law.md) | `BGS-TRACE-133` (proved); `BGS-TRACE-134` (proved); `BGS-TRACE-135` (proved); `BGS-TRACE-136` (open); `BGS-TRACE-137` (open) |

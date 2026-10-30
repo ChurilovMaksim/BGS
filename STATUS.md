@@ -18,10 +18,10 @@ Registry schema `bgs-claims-v1`; registry updated
 
 | Registered state | Claims |
 |---|---:|
-| proved | 247 |
+| proved | 248 |
 | verification-pending | 15 |
 | conditional | 15 |
-| open | 26 |
+| open | 25 |
 | refuted | 1 |
 | **Total** | **304** |
 
@@ -44,12 +44,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 0 | 23 |
 | RET | 3 | 0 | 1 | 0 | 0 | 4 |
-| TRACE | 149 | 13 | 10 | 22 | 1 | 195 |
-| **Total** | 247 | 15 | 15 | 26 | 1 | **304** |
+| TRACE | 150 | 13 | 10 | 21 | 1 | 195 |
+| **Total** | 248 | 15 | 15 | 25 | 1 | **304** |
 
 ## Open programme obligations
 
-26 registered claims are open. Their closure
+25 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -76,7 +76,6 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-191` | Line E E9: eta-interval (not grid) certification of the resonant growth | [mathematics/fixed-map/resonant_residue_lineE.md](mathematics/fixed-map/resonant_residue_lineE.md) |
 | `BGS-TRACE-192` | Line E E10: the TRACE-182 (m, eta) = (11, 2) outlier is the +-196 resonance | [mathematics/fixed-map/resonant_residue_lineE.md](mathematics/fixed-map/resonant_residue_lineE.md) |
 | `BGS-TRACE-202` | Line F F6: float growth window eta in (0.951, 3.212) for the k1 sector-4 eigenvalue | [mathematics/fixed-map/lifted_transfer_lineF.md](mathematics/fixed-map/lifted_transfer_lineF.md) |
-| `BGS-TRACE-204` | Line G G3: dilution identity along divisors d of h_m | [mathematics/fixed-map/resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
 | `BGS-TRACE-205` | Line G classification record: resonant families, growth rates, G5 (h_d \| h_m), G6 (sparsity), G7 (moment heuristic), eta-scan | [mathematics/fixed-map/resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
 | `BGS-TRACE-206` | Line G: Conjecture R' (corrected mean law for the k1 kick at eta = 2) with a pre-registered m = 17 test | [mathematics/fixed-map/resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
 | `BGS-TRACE-210` | Conjecture R_NSW: W~rest_m(eta) = o(m) along m with h_m prime | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
@@ -97,7 +96,7 @@ Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 It records 201 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
-external-dependency extension of 18 external IDs.
+external-dependency extension of 21 external IDs.
 
 ## Reading the status surfaces
 

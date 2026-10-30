@@ -2430,7 +2430,17 @@
     },
     {
       "from": "BGS-TRACE-212",
+      "to": "BGS-TRACE-204",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-212",
       "to": "BGS-TRACE-215",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-213",
+      "to": "BGS-TRACE-220",
       "type": "scientific-prerequisite"
     },
     {
@@ -2471,7 +2481,6 @@
     "BGS-TRACE-191",
     "BGS-TRACE-192",
     "BGS-TRACE-202",
-    "BGS-TRACE-204",
     "BGS-TRACE-205",
     "BGS-TRACE-206",
     "BGS-TRACE-210",

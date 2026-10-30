@@ -12,17 +12,16 @@ receipt and logs are here.
 | 212 | proved (Lean core) | Prop I2/I2′: dilation-coset L² law (prime d ∥ h) and the per-member Gauss-sum formula (every odd d ∣ h) |
 | 213 | proved | Thm I4: exact reduction W′ = non-resonant sum + φ⁻¹ΣDev, so R′ ⇐ (E″)+(T″)+(D) |
 | 214 | proved | Lemma I5′: Fourier/Ramanujan expansion of weighted horocycle sums |
-| 215 | proved (computer-assisted) | Thm I6 v2: d = 7 square term ≤ 0.01 for m ≡ 3 (mod 6), m ≥ 321 (k1, η = 2) |
+| 215 | proved (computer-assisted; EXT-RS-1962) | Thm I6 v2: d = 7 square term ≤ 0.01 for m ≡ 3 (mod 6), m ≥ 321 (k1, η = 2); ρ = (±2,8) only, the (±2,16) level-7 members are not controlled |
 | 216 | proved | exact monomial intertwiners between the eight (m mod 24, a = ±2) cases, and the β → −β reflection |
 | 217 | proved (computer-assisted) | Thm I9: three simple top twisted eigenvalues, certified 1.262 < \|μ\| < 1.45, so r_tw > √λ/μ₀ |
 | 218 | proved | aliasing (Möbius) identity for F_m |
-| 219 | proved (modulo BHV / Carmichael; Lean deduction) | h_m has a new odd prime factor for every m ≥ 16, so every finite prime set fails |
+| 219 | proved (modulo BHV, EXT-BHV-2001; Carmichael EXT-CARMICHAEL-1913 corroborating; Lean deduction) | h_m has a new odd prime factor for every m ≥ 16, so every finite prime set fails |
 | 220 | open | Conjecture R′_A (amended mean law) |
 
 BGS-TRACE-206 stays **open**. Its boundary and ledger_status are appended with the Line I reduction, the failure of the
 operator-radius route, and the heuristic, unproved risk to the frozen definition. Its title, state, dependencies and closure
-condition are unchanged. BGS-TRACE-204 is unchanged; a review of its state in light of I2′ (BGS-TRACE-212) is recommended but was
-not done here. The following were withdrawn and are not registered: "diagonal invisible" (B6), "primitive prime p ~ h^c" (DF7),
+condition are unchanged. BGS-TRACE-204 was unchanged at first integration. After the owner audit it was promoted to proved; see below. The following were withdrawn and are not registered: "diagonal invisible" (B6), "primitive prime p ~ h^c" (DF7),
 and "the resonance terms are exactly the large-e Möbius terms" (DF6).
 
 ## Delta fixes DF1–DF7 (referee DELTA section)
@@ -32,8 +31,8 @@ and "the resonance terms are exactly the large-e Möbius terms" (DF6).
   * the bounds log is byte-identical to v2, and the JSON differs only in `version`/`code_sha256`;
   * the intertwiner JSON differs only in `code_sha256`.
 * **DF3**: μ₀ is now taken from Line F's certified enclosure |μ*| ∈ [1.9154712, 1.9154753] (BGS-TRACE-198, certificate
-  `computations/verification/lineF/`; BGS-TRACE-199 for all m). It is the same quantity as Line I's float 1.915473 (the growth rate of
-  |Z_m(ν_ρ)|), but not literally the same operator.
+  `computations/verification/lineF/`; BGS-TRACE-199 for all m). (Reworded by owner-audit fix R5: μ₀ := liminf |Z_m(ν*)|^(1/m), and
+  the bound rests directly on BGS-TRACE-199's |Z_m(ν*)| ≥ ½(1−λ^(−m))(1.9154712^m − 3012.30), odd m ≥ 13.)
   * ρ = (−2, 8) is N ≡ −4 directly.
   * ρ = (2, 8) follows by conjugation: conj ĝ = (−1)ⁿĝ, and the sector coefficients shift c_a → c_{a−4}.
   * Arb gives √λ/1.9154712 = 1.2603758…, so √λ/μ₀ ≤ 1.260376. This is slightly sharper than the 1.260378 in the brief.
@@ -91,12 +90,12 @@ excluded and can be regenerated with the run scripts. Absolute scratch paths in 
 
 ## Deviations from the brief / Line H layout
 1. No manuscript section: `manuscript` = [] for 211–220. Line H added `lineH_49state_certificate.tex`; this was not requested here.
-2. Bilu–Hanrot–Voutier / Carmichael and Rosser–Schoenfeld are cited in prose and not registered as external dependencies
-   (`external_dependencies` = []).
+2. (Superseded by owner-audit fix R1.) At first integration, Bilu–Hanrot–Voutier / Carmichael and Rosser–Schoenfeld were cited
+   in prose only. They are now registered as EXT-BHV-2001 and EXT-CARMICHAEL-1913 (on 219) and EXT-RS-1962 (on 215).
 3. DF2 was applied to both scripts (see above).
 4. Threshold 1.260376 (arb) instead of 1.260378; registered upper end 1.9154753.
 5. `record/mathematics_topics.json` was edited (needed by the render check; Line H did the same).
-6. Whether BGS-TRACE-204's state should change is left for review.
+6. (Resolved by owner decision, fix R6.) BGS-TRACE-204 is now proved.
 
 ## Checks (all with `nice -n 10`)
 | file | content |
@@ -107,3 +106,60 @@ excluded and can be regenerated with the run scripts. Absolute scratch paths in 
 | `axioms_coverage.log` | 1314/1314 |
 | `checkers.log` | All pass: the six render `--check`, scientific_registry_audit (304 claims), repository_audit, wave3_integration_audit, audit_manuscript_references, sync_finite_orbit/fixed_map. wave2_integration_audit, sync_return_sections, check_spectral_edition, the bibliographic self-test and the unit tests fail identically on pristine main |
 | `integration_reruns/` | identity and composite-d checks byte-identical; sym_v3 and cert_v3 sha-identical |
+
+## Owner audit of PR #60 (verdict MERGE AFTER FIXES), applied 31 October 2026
+* **R1, external theorems.** `literature/external_dependencies.json` now registers the following:
+
+  | ID | Theorem | Status |
+  |---|---|---|
+  | EXT-RS-1962 | Rosser–Schoenfeld, Theorem 15, pp. 71–72, (3.41)–(3.42) | primary scan read |
+  | EXT-BHV-2001 | Bilu–Hanrot–Voutier, Theorem 1.4 | primary PDF **not** obtained (bot wall/paywall); number and statement corroborated by the abstract and a secondary citation; page not pinned |
+  | EXT-CARMICHAEL-1913 | Carmichael 1913 | corroborating; locator XXIII vs 21 unverified |
+
+  They are listed on 215 (RS) and 219 (BHV, Carmichael). Both claims stay proved. The review record is
+  `literature/lineI_sources_20261031.md`.
+
+  The bibliographic cache gained the 3 records in a new snapshot, `registry_metadata_20261031_lineI.json`, with review
+  `record/audits/metadata_cache_refresh_20261031_lineI/report.md`. The self-test now fails only on the pre-existing EXT-BR-1975 line,
+  exactly as on main. The v4 negative-control path was updated to point at the new cache.
+* **R2, 215 scope.** "ρ = (±2,8) only; the (±2,16) level-7 members are not controlled" is carried in these places:
+  * the 206 boundary and ledger_status, the 213 boundary, and the 215 boundary and ledger;
+  * note §4;
+  * README, README.ru, RESEARCH, CHANGELOG, the topic README and results.md;
+  * the Line G "Later work" paragraph, the 215 epochs disposition, open_questions.md and the packet README.
+* **R3.** 1.0187 → 1.0185 (1.915473·1.28371/2.414214 = 1.01851). Changed in the 206 and 217 boundaries, note §8 and open_questions.md.
+* **R4.**
+  * 216: `formalization` = []. The ledger now says the Lean module holds only the auxiliary lemma `seven_dvd_nsw_iff`, not the
+    intertwiners, and the inventory drops `lean_formalization`.
+  * 212 epochs disposition: "Gauss-sum algebra" → "coset L² algebra (c)–(d)".
+* **R5.** 217: μ₀ := liminf |Z_m(ν*)|^(1/m). The bound rests directly on TRACE-199,
+  |Z_m(ν*)| ≥ ½(1−λ^(−m))(1.9154712^m − 3012.30) for odd m ≥ 13. The phrase "same quantity, not the same operator" is dropped.
+* **R6, BGS-TRACE-204 → proved** (dependencies [203, 212]).
+  * Derivation, note §3: tNmγ + Trβγ = tNm(γ + t̄β̄) − t̄Nmβ, so G_t(β) = e(t̄Nmβ/d)·G_d(t). Substituting into I2′ gives exactly 204's
+    G3 formula, with Line G's conventions (`check_dilution.py`).
+  * Numerical check: `integration_checks/lineI_G3_form_check.py` covers 19 (m, d) pairs, including composite d = 217, 287, 961, 1271
+    (m = 15) and 49, 1673 (m = 21), plus d = 287 and d = 49 as requested. Max errors: completing-the-square 8.4e−15, G3 formula
+    8.3e−15. A negative control (−t̄β sign) fails with error 2.0. The log ends `ALL_OK` in ~47 s.
+  * The main-term approximation stays unbounded and is not claimed.
+  * Also updated: the Line G note G3 section, the manuscript remark and the claim index.
+* **Nits.**
+  * 215: 0.004574 is the exact-constant value; the rounded constants give 0.004575.
+  * 220: dependency 213 added.
+  * v1/v2 verifiers are marked superseded by v3 in the claim ledgers and the packet README: bounds_sq → cert_v3, sym → sym_v3,
+    dom v2 → dom_v3, and LineI.lean v1 → v2.
+* The inventory mirrors 204, 206, 212, 213, 215, 216, 217, 219 and 220, and `source_blob_sha` has been recomputed.
+* **Maintenance data lists.** Three files changed so that the new EXT ids are admitted. No check was removed or relaxed.
+  * `computations/verification/wave2_integration_audit.py`: the hard-coded set of admitted-later EXT ids gains
+    EXT-RS-1962, EXT-BHV-2001 and EXT-CARMICHAEL-1913. The epoch store records the same ids in
+    `external_dependency_extension.added_ids`, and its source_reviews gains the Line I review. This follows the precedent of
+    commit 39efa322, which admitted EXT-BT-1971 and others.
+  * `test_external_epoch_preservation.py`: the expected count changes from (39,18) to (39,21).
+  * `v4_negative_controls.py`: tampers the new digest-pinned cache instead of the superseded one.
+* **Checks after the audit fixes.** All runs used `nice -n 10`.
+  * `lake exe cache get`: exit 0. `lake build Bgs`: "Build completed successfully (8815 jobs)". The Lean sources are unchanged.
+  * `checkers.log` agrees line for line with the pristine-main baseline, except for these lines:
+    * the claim/EXT counts (304 / 60);
+    * a wave2 traceback line number, shifted by one because of the added id line.
+  * The unit tests give 116 failures and 104 errors. These are the pre-existing failures plus `test_fractional_routing`, which times
+    out because `check_routing.py` rglobs the 7.9 GB gitignored `.lake`. The auditor reports the same environment artefact.
+

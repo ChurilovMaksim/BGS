@@ -7,14 +7,15 @@ recommendations R1–R7 applied; delta review of Session 4: ACCEPT AFTER FIXES, 
 
 Registered claims (`record/claims.json`): §2 is **BGS-TRACE-211**, §3 is **BGS-TRACE-212**, §4 is **BGS-TRACE-213**, §5 is
 **BGS-TRACE-214**, §6 is **BGS-TRACE-215**, §7 is **BGS-TRACE-216**, §8 is **BGS-TRACE-217**, §9.1 is **BGS-TRACE-218**, §9.2 is
-**BGS-TRACE-219**, and Conjecture R′_A (§9.3) is **BGS-TRACE-220** (open). **BGS-TRACE-206 (Conjecture R′) stays open.** The packet
+**BGS-TRACE-219**, and Conjecture R′_A (§9.3) is **BGS-TRACE-220** (open). The derivation of the Line G G3 form in §3 proves
+**BGS-TRACE-204** (owner decision, audit of PR #60). **BGS-TRACE-206 (Conjecture R′) stays open.** The packet
 is `computations/verification/lineI/`; the integration record is `evidence/executions/20261031/lineI/INTEGRATION.md`.
 
 **Scope.** Everything here is about the single-cosine **k1** kick 0.9 cos 2πq at η = 2 (ĝ(n) = iⁿJ_n(1.8)), the map S = [[3,4],[2,3]],
 λ = 3 + 2√2, odd m, h = h_m = Re(1+√2)^m, y′ = Im(1+√2)^m (h² + 1 = 2y′²), φ = φ(2h). Nothing here is a statement about the Line B kick,
 about Conjecture R (BGS-TRACE-179) or R_NSW (BGS-TRACE-210), or about BGS (BGS-BGS-001); there is no progress on BGS-TRACE-148.
 The goal of Line I was a proof of Conjecture R′ (BGS-TRACE-206). **It was not obtained.** What was obtained: exact identities for the
-dilation members, an exact reduction of R′ to three sub-statements, certified bounds on the d = 7 square term, a certified lower bound
+dilation members, an exact reduction of R′ to three sub-statements, certified bounds on the d = 7 square term (ρ = (±2,8) only), a certified lower bound
 on the d = 7 twisted spectral radius that rules out the operator-radius route to the d = 7 cross term, and two arithmetic lemmas.
 Withdrawn during review and NOT registered: the statement that the diagonal is "invisible" in Lemma I5 (§5), the "p ~ h^c" size claim (§9.2),
 and the claim that resonance terms are "exactly" the large-e Möbius terms (§9.1).
@@ -64,8 +65,29 @@ inert branch of (b) is vacuous here. 7 | h_m ⟺ m ≡ 3 (mod 6) (Lean `seven_dv
   d = 7 (m = 9): ≤ 6.6e−13) and `lineI_composite_d_check.py` (I2′ and |G_t| = d for composite d = 287 = 7·41 at m = 15 and d = 49 at
   m = 21, prime d = 7, 41: ≤ 3.9e−15). Twisted-trace closure: m = 9, ρ = (2,8), the members predicted from the 49 twisted traces agree with
   the class sums to 2.6e−8 (`code/dilpred.py`, `logs/dilpred_d7.log`).
-* **Relation to BGS-TRACE-204 (Line G G3, open).** I2′ is the G3 dilution identity written as d⁻²ΣẐ(β)G_t(β) (completing the square in
-  G_t gives G3's form), with the proof above for every odd d | h. BGS-TRACE-204's state is not changed by this integration.
+* **The Line G G3 form; proof of BGS-TRACE-204 [P; N].** Let t be a unit mod d, t̄ = t⁻¹ mod d, and let γ ↦ γ̄ be the conjugation
+  x + y√2 ↦ x − y√2 on ℤ[√2]/d. Then, in ℤ/d, t·Nm(γ + t̄β̄) = t(γ + t̄β̄)(γ̄ + t̄β) = t·Nm γ + (γβ + γ̄β̄) + t̄·Nm β, and γβ + γ̄β̄ = Tr(βγ), so
+    t·Nm γ + Tr(βγ) = t·Nm(γ′) − t̄·Nm β,   γ′ = γ + t̄β̄.
+  The map γ ↦ γ′ is a bijection of ℤ[√2]/d. Hence G_t(β) = e(t̄·Nm β/d)·G_d(t), where G_d(t) = G_t(0) = Σ_γ e(−t·Nm γ/d) and |G_d(t)| = d.
+  Substituting this into I2′ gives
+    Z_m(ν₀ + 2hj/d) = (G_d(t)/d²) Σ_{β mod d} e(t̄·Nm β/d) Ẑ(β),
+  which is exactly the G3 formula of BGS-TRACE-204, with Z^{(β)}_{ν₀} = Ẑ(β) and the same sign conventions as Line G's
+  `check_dilution.py`. Two remarks on conventions:
+  * The right side is invariant under β ↦ −β (Nm(−β) = Nm β), so the direction of the kick translation does not matter.
+  * The step uses only the congruence and Fourier inversion. So it holds for every odd d | h, prime or composite, and every j with
+    t = jy′ a unit.
+
+  **Check [N]:** `integration_checks/lineI_G3_form_check.py` compares the formula against brute force directly from P(n). It uses random
+  site-dependent weights and a random unit ν₀, and also checks the completed square G_t(β) = e(t̄Nmβ/d)G_d(t) for every β. Cases:
+  * d = 41 (m = 5) and 239 (m = 7);
+  * d = 7, 199, 1393 = h (m = 9);
+  * d = 23, 353 (m = 11) and 79, 599 (m = 13);
+  * d = 7, 31, 41, 217, 287, 961 = 31², 1271 (m = 15);
+  * d = 7, 49, 1673 (m = 21).
+
+  The worst relative error is ≤ 8.4e−15. The negative control t̄ ↦ −t̄ fails, with error O(1). On this basis BGS-TRACE-204 is registered
+  as **proved**, with a dependency on this claim (owner decision). Its non-claim is unchanged: the main-term approximation
+  |Z|² ≈ |Z_ρ|²/d² has no rigorous error bound.
 * **Heuristic corollary [H].** The frozen dilation term is o(1) relative to the main term iff the twisted radii satisfy r_tw < √λ/μ₀
   (cross part) and r_tw < λ^{1/4} (square part); μ₀ is the growth rate of |Z_ρ| (§8).
 
@@ -80,7 +102,8 @@ with y > Y(m), both after removing 𝓡_m, and (D) the dilation remainder φ⁻�
 **Alternative sufficient hypothesis** (sufficient, not equivalent; DF1): (T″) for EVERY Y(m) → ∞ and (E″) for each fixed Y, with a diagonal
 choice of Y(m) growing slowly enough. Normalisation: all sums over units, divided by φ(2h).
 *Proof.* Insert Res_m and use disjointness; the diagonal argument is standard. ∎  None of (E″), (T″), (D) is proved. For d = 7 the square
-part of (D) is controlled (BGS-TRACE-215), the cross part is not, and BGS-TRACE-217 shows that the operator-radius route to it fails.
+part of (D) is controlled only for ρ = (±2,8) (BGS-TRACE-215); the (±2,16) level-7 members are not controlled; the cross part is not
+controlled, and BGS-TRACE-217 shows that the operator-radius route to it fails.
 Numerical check of the bookkeeping (frozen definition, all levels included, random weights): `integration_checks` C7, ≤ 4.4e−16.
 
 ## 5. Lemma I5′ (Fourier expansion of weighted horocycle sums) — BGS-TRACE-214 [P; N]
@@ -100,7 +123,8 @@ not part of this claim. Check: `integration_checks` C6 (random c_k, |k| ≤ 40),
   |Ẑ(β)| ≤ 6.769·10⁶ · 1.45^m + 6.859·10⁴   (outward rounded; exact CV = 6 768 179.601…, CE = 68 586.18…),
 and the square term of level 7 satisfies
   7 Σ_u |δ_u|² / φ(2h_m) ≤ (13/7)·48·(6.769·10⁶·1.45^m + 6.859·10⁴)² · (e^γ lnln h + 2.50637/lnln h)/h,
-which is ≤ 0.01 for every such m ≥ 321 (0.004574 at m = 321; m = 315 gives 0.01046) and decays like (1.45²/√λ)^m ≤ 0.87089^m
+which is ≤ 0.01 for every such m ≥ 321 (0.004574 at m = 321 with the exact constants CV, CE; 0.004575 with the rounded constants
+displayed; m = 315 gives 0.01046) and decays like (1.45²/√λ)^m ≤ 0.87089^m
 (rigorous tail for m ≥ 1425, ≤ 4.7·10⁻⁶⁹ at m = 1425).
 **Proof chain.** (1) Certified spectra [CA] of the lifted twisted operators (G2 automaton factor on the 16 reachable states ⊗ 3-cycle twist
 ⊗ the vertex/edge Hardy lattices of BGS-TRACE-197; K0 = 2, ρ = 0.85, β = 3.5, full alphabet |n| ≤ 150 explicit + analytic tail) for all 8
@@ -109,9 +133,9 @@ rig_spec v4 of Line H unchanged (sha f346e22c…). (2) ‖L^n‖ ≤ R^{n+1}G/(1
 identity Ẑ = c_m(Tr BV^m − Tr BE^m), c_m = 1 − λ^{−m}, from BGS-TRACE-197 with a finite monomial state factor and rank-one B, termwise per
 word (as in BGS-TRACE-207); referee brute force over all 5⁹ words at |n| ≤ 2 (agreement 1e−12…5e−14) and full alphabet at m = 9 (1.1e−8).
 (4) Class invariance Ẑ(λβ) = Ẑ(β) (λ^m ≡ 1 mod 2h, cyclic quadratic form), Ẑ(−β) = Ẑ(β). (5) Parseval and N(u) ≤ 2d − 1. (6) Rosser–Schoenfeld
-lower bound for φ. (7) All other operator cases and ρ = (−2,8) by the exact intertwiners of BGS-TRACE-216. Arithmetic in arb
-(`cert_v2/bounds_sq_v2.py`; DF2 path-fixed rerun `cert_v3/bounds_sq_v3.py`, log byte-identical).
-**Scope.** Only the SQUARE part of the d = 7 remainder, only ρ = (±2,8), only m ≡ 3 (mod 6); < 0.01 only from m = 321. The cross term
+Theorem 15 (Illinois J. Math. 6 (1962), pp. 71–72, (3.42); registered as EXT-RS-1962) lower bound for φ, applied with n = h_m. (7) All other operator cases and ρ = (−2,8) by the exact intertwiners of BGS-TRACE-216. Arithmetic in arb
+(`cert_v2/bounds_sq_v2.py`; DF2 path-fixed rerun `cert_v3/bounds_sq_v3.py`, log byte-identical; v3 supersedes v2, which is kept as provenance).
+**Scope.** Only the SQUARE part of the d = 7 remainder, only ρ = (±2,8) (the (±2,16) level-7 members are not controlled), only m ≡ 3 (mod 6); < 0.01 only from m = 321. The cross term
 2Re(Z̄_ρδ₀) is NOT controlled. Trusted components: arb/python-flint 0.9.0, IEEE binary64, OpenBLAS zgemm without Strassen, Line F F1.
 Galerkin matrices are not stored in the repository; they regenerate deterministically (commands in the packet README; the referee
 regenerated V_1_3/E_1_3 byte-identically).
@@ -127,24 +151,27 @@ and a monomial Y with Y A_{−n} Y⁻¹ = A_n. Consequently, for the TRUE lifted
 Spectra (for J: conjugated, moduli and multiplicities preserved), sup_{|z|=R}‖(z − L)⁻¹‖, trace norms and ‖B‖ are invariant, and β ↦ −β
 permutes the classes; hence every certificate of BGS-TRACE-215 and BGS-TRACE-217 transfers to all m ≡ 3 (mod 6), ρ = (±2,8).
 Witnesses: `sym/monomial_intertw.py` (integer arithmetic mod 8; `sym/monomial_intertw.json`; DF2 path-fixed rerun `sym_v3/`, identical JSON
-except the code hash). Referee: symbolic check, own Galerkin check to ≤ 1.2e−16 with negative controls (1.16 / 1.13), and a DIRECT
+except the code hash; v3 supersedes v1, which is kept as provenance). Referee: symbolic check, own Galerkin check to ≤ 1.2e−16 with negative controls (1.16 / 1.13), and a DIRECT
 certificate of the transferred case m = 15, a = −2, class 1:3 (`cert2/`): F(V, 1.45) = 0.356981, F(E, 1.0) = 0.013833, equal to the m = 9
-values. Lean: `seven_dvd_nsw_iff` only; the intertwiner witnesses are checked by exact integer code, not in Lean.
+values. Not formalised: the intertwiner witnesses are checked by exact integer code, not in Lean (the auxiliary fact 7 | h_m ⟺ m ≡ 3 mod 6 is
+the Lean lemma `seven_dvd_nsw_iff`, registered under BGS-TRACE-212).
 
 ## 8. Theorem I9 (certified lower bound for the top twisted spectral radius) — BGS-TRACE-217 [CA + P]
 **Statement.** For the lifted twisted V operator (K0 = 2, ρ = 0.85, β = 3.5) with β in class 1:3 or 2:1 (the two classes with the largest
 float radii), in every operator case m ≡ 3 (mod 6), ρ = (±2,8):
   σ(V_β) ∩ {|z| > 1.22} = {μ, ωμ, ω²μ} (ω = e^{2πi/3}), each eigenvalue algebraically simple, with the CERTIFIED range 1.262 < |μ| < 1.45;
 the rest of σ(V_β) lies in |z| < 1.22. Hence r_tw(β) = |μ_β| > 1.262 > 1.260376 ≥ √λ/μ₀.
-**μ₀ (DF3).** μ₀ is the growth rate of |Z_ρ|, the quantity in the cross term. Certified input: Line F, BGS-TRACE-198 (F2) and BGS-TRACE-199
-(F3), `computations/verification/lineF/logs/certV_eta2_a4_tight.json` (sector 4, `mu_abs_lower` = 1.91547120413…): the lifted k1
-operator L_{V,4} at η = 2 has one simple eigenvalue μ* with |μ*| ∈ [1.9154712, 1.9154753] (registered enclosure) and all other spectrum
-(all sectors, V and E) in |z| < 1, so lim |Z_m(ν*)|^{1/m} = |μ*| for ν* with N ≡ −4, i.e. ρ = (−2,8). It is the same QUANTITY as Line I's
-float μ₀ = 1.915473, not literally the same operator: Line F's L_{V,4} and Line I's untwisted lifted G2 operator are two trace
-representations of the same sequence Z_m(ν_ρ). For ρ = (2,8) (ν = −ν*): conj ĝ(n) = (−1)ⁿĝ(n) and the TRACE-183 phase at −ν* give
-conj Z_m(−ν*) = Σ_n Φ̂(n) e(q/2 + κ(Σn)²/8 + (Σn)/2); the factor e(4s/8) shifts the TRACE-184 sector coefficients (c_a ↦ c_{a−4}, still of
-modulus ½ for even a), so the TRACE-199 lower bound |Z| ≥ ½(1 − λ^{−m})(1.9154712^m − 3012.30) holds verbatim. Hence μ₀ ≥ 1.9154712 for
-both ρ and √λ/μ₀ ≤ (1+√2)/1.9154712 = 1.2603758… ≤ 1.260376 (arb). (Float growth rates of both ρ: 1.9154732, Line G.)
+**μ₀ (DF3; wording per owner audit R5).** Define μ₀ := lim |Z_m(ν_ρ)|^{1/m} over odd m (the quantity in the cross term). The limit
+exists by BGS-TRACE-198 and BGS-TRACE-199. The bound rests directly on BGS-TRACE-199's lower bound for the sequence itself:
+* **ρ = (−2,8).** 8ν ≡ −2 (mod 2h) means 4ν ≡ −1 (mod h), and the unit condition picks the odd lift. So ν_{(−2,8)} = ν* of
+  BGS-TRACE-183, and BGS-TRACE-199 gives |Z_m(ν*)| ≥ ½(1 − λ^{−m})(1.9154712^m − 3012.30) for every odd m ≥ 13, hence μ₀ ≥ 1.9154712.
+  BGS-TRACE-198 (|μ*| ∈ [1.9154712, 1.9154753], `computations/verification/lineF/logs/certV_eta2_a4_tight.json`) supplies the upper end.
+  Line F uses the same kick convention, w = iⁿJ_n(0.9η) with η = 2.
+* **ρ = (2,8)** (ν = −ν*). Use conj ĝ(n) = (−1)ⁿĝ(n) and the TRACE-183 phase at −ν*:
+  conj Z_m(−ν*) = Σ_n Φ̂(n) e(q/2 + κ(Σn)²/8 + (Σn)/2). The factor e(4s/8) shifts the TRACE-184 sector coefficients (c_a ↦ c_{a−4}, still of
+  modulus ½ for even a), so the same lower bound holds.
+
+Hence √λ/μ₀ ≤ (1+√2)/1.9154712 = 1.2603758… ≤ 1.260376 (arb). (Float growth rates of both ρ: 1.9154732, Line G.)
 **Certificate [CA].** `dom/rig_dom3b.py` generalises Line H rig_spec v4 to a k-dimensional (k = 3) Householder deflation with an
 a-posteriori residual; T₀ = [[Λ, b₁₂], [0, Y]]; the three eigenvalues of Λ are isolated in arb (all |·| > R), σ(Y) ⊂ {|z| < R} by Neumann
 validity; sup_{|z|=R}‖(z − T₀)⁻¹‖ by a pointwise bound on 4096 grid points plus covering by the resolvent identity; homotopy F < 1 ⇒ the
@@ -159,7 +186,7 @@ the 3-element multiset is one free orbit of z ↦ ωz, hence three distinct simp
 limsup |Ẑ(β)|^{1/m} = |μ| > 1.262 > √λ/μ₀; in the second case no proof of (D) at d = 7 can go through r_tw < √λ/μ₀.
 **Not certified / not implied.** c(β) ≠ 0 (float ≈ 0.5); the sign and size of the frozen d = 7 term in W′ (needs the Z₀ coefficients, the
 8 classes in δ₀ and both ρ); frozen R′ is NOT disproved (bulk, (±2,16) members and other levels uncontrolled). The statement that the
-frozen d = 7 term contributes ≍ 1.0187^m/m to W′/m along a subsequence (so that frozen R′ would fail around m ≈ 300–400) is a heuristic [H].
+frozen d = 7 term contributes ≍ 1.0185^m/m to W′/m along a subsequence (so that frozen R′ would fail around m ≈ 300–400) is a heuristic [H].
 
 ## 9. Arithmetic and structural statements
 ### 9.1 Aliasing (Möbius) identity — BGS-TRACE-218 [P; N]
@@ -177,8 +204,8 @@ Math. 539 (2001) 75–122, Theorem 1.4: for n > 30 every n-th Lucas number has a
 pairs) U_{2m} has, for every m ≥ 16, a prime p dividing it and not (α − β)²U₁⋯U_{2m−1}. Then p is odd, p | h_m, and p ∤ h_{m′} for 0 < m′ < m.
 Hence every m ≥ 16 contributes a NEW odd prime of h_m, and every finite set S of primes misses a prime factor of h_m for all sufficiently
 large m. **Lean** (`Bgs.LineIArith`): `pell`, `lucasU_two_mul`, `nsw_dvd_lucasU_two_mul`, `primitive_dvd_nsw` and `finite_set_fails` — the
-deduction is kernel-checked with the primitive-divisor theorem as an explicit hypothesis (BHV itself is not formalised and is cited, not
-registered as an external dependency). No size statement on these primes is claimed (the earlier "p ~ h^c" is withdrawn). Check
+deduction is kernel-checked with the primitive-divisor theorem as an explicit hypothesis. BHV itself is not formalised; it is registered as
+the external dependency EXT-BHV-2001, and Carmichael 1913 as EXT-CARMICHAEL-1913 (corroborating). No size statement on these primes is claimed (the earlier "p ~ h^c" is withdrawn). Check
 (`integration_checks` C8): every m = 2..60 has a new prime of h_m; for 16 ≤ m ≤ 60 every primitive prime of U_{2m} divides h_m and no earlier h.
 **[assessment], not part of the claim.** A transfer operator on a FIXED S-arithmetic space only sees residues with S-smooth reduced
 denominator; once h_m has a prime outside S, every unit residue has reduced denominator 2h_m, so all are invisible to it. The full-adelic
@@ -202,5 +229,10 @@ files are kept in `computations/verification/lineI/pre_delta/`.
 
 ## 11. Dependencies
 BGS-TRACE-183, 184 (phase collapse and sector law), 197 (lifted trace identity), 198, 199 (certified μ*), 203 (G2 law), 206 (frozen
-definition). External, cited and not registered: Bilu–Hanrot–Voutier 2001 (Theorem 1.4), Rosser–Schoenfeld (φ lower bound), the Ruelle /
-Bandtlow–Jenkinson trace formula (via BGS-TRACE-197).
+definition). BGS-TRACE-204 now depends on BGS-TRACE-212 (§3). External, registered in `literature/external_dependencies.json`
+(review: `literature/lineI_sources_20261031.md`):
+* EXT-BHV-2001 (Bilu–Hanrot–Voutier 2001, Theorem 1.4) for BGS-TRACE-219;
+* EXT-CARMICHAEL-1913 for BGS-TRACE-219, corroborating;
+* EXT-RS-1962 (Rosser–Schoenfeld 1962, Theorem 15) for BGS-TRACE-215.
+
+The Ruelle / Bandtlow–Jenkinson trace formula enters through BGS-TRACE-197. That gap predates Line I and is out of scope here.

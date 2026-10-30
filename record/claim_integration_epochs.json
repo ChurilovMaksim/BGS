@@ -1166,9 +1166,9 @@
     },
     {
       "id": "BGS-TRACE-204",
-      "state": "open",
+      "state": "proved",
       "source": "mathematics/fixed-map/resonance_classification_lineG.md",
-      "disposition": "30 October 2026 (Lines F, G): open; proof sketch + exact checks at prime d. Does not close TRACE-148, TRACE-179 or BGS-001."
+      "disposition": "30 October 2026 (Lines F, G): open; proof sketch + exact checks at prime d. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line I, owner audit of PR #60): explicit state review open -> proved: the G3 form follows from Prop I2' (BGS-TRACE-212, proved for every odd d | h) by completing the square, G_t(beta) = e(tbar Nm beta/d) G_d(t) (written in mathematics/fixed-map/lineI_rprime_reduction.md section 3); brute-force check of the displayed formula for prime and composite d (217, 287, 961, 1271, 49, 1673 and others), <= 8.4e-15; the main-term approximation stays unbounded and is not claimed. Does not close TRACE-206, TRACE-148 or BGS-001."
     },
     {
       "id": "BGS-TRACE-205",
@@ -1216,7 +1216,7 @@
       "id": "BGS-TRACE-212",
       "state": "proved",
       "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
-      "disposition": "31 October 2026 (Line I): proved (paper proof + Lean core: Gauss-sum algebra, norm counts, eps = +1, 7 | h_m); dilation-coset L^2 law and per-member formula for every odd d | h_m; float checks incl. composite d; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line I): proved (paper proof + Lean core: coset L^2 algebra (c)-(d), norm counts, eps = +1, 7 | h_m); dilation-coset L^2 law and per-member formula for every odd d | h_m; float checks incl. composite d; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
     },
     {
       "id": "BGS-TRACE-213",
@@ -1234,7 +1234,7 @@
       "id": "BGS-TRACE-215",
       "state": "proved",
       "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
-      "disposition": "31 October 2026 (Line I): proved (computer-assisted, arb + float BLAS); d = 7 square term only, m == 3 mod 6, <= 0.01 for m >= 321; cross term not controlled; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line I): proved (computer-assisted, arb + float BLAS); d = 7 square term only, rho = (+-2,8) only ((+-2,16) level-7 members not controlled), m == 3 mod 6, <= 0.01 for m >= 321; cross term not controlled; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
     },
     {
       "id": "BGS-TRACE-216",
@@ -1273,7 +1273,7 @@
     "New entries are not automatically classified as theorems and do not imply a BGS local law."
   ],
   "external_dependency_extension": {
-    "reviewed_on": "2026-10-22",
+    "reviewed_on": "2026-10-31",
     "historical_registry": "archive/evidence/executions/20261011/chat-research/baselines/external_dependencies_20261007.json",
     "added_ids": [
       "EXT-OO-1997",
@@ -1293,16 +1293,20 @@
       "EXT-FI-1980",
       "EXT-ZAGIER-1997",
       "EXT-BORDA-2020",
-      "EXT-BT-1971"
+      "EXT-BT-1971",
+      "EXT-RS-1962",
+      "EXT-BHV-2001",
+      "EXT-CARMICHAEL-1913"
     ],
-    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Eighteen explicitly reviewed later inputs are admitted; source review dates and limits remain in the selected snapshot.",
+    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Twenty-one explicitly reviewed later inputs are admitted (the last three, EXT-RS-1962, EXT-BHV-2001 and EXT-CARMICHAEL-1913, on 2026-10-31 in the owner audit of PR #60, Line I); source review dates and limits remain in the selected snapshot.",
     "source_reviews": [
       "literature/abel_gaussian_sources_20261016.md",
       "literature/chat_integration_sources_20261016.md",
       "literature/phase_ensemble_sources_20261019.md",
       "literature/wick_poisson_sources_20261016.md",
       "literature/bowen_ruelle_trace_closure_20261021.md",
-      "literature/arithmetic_dependency_closure_20261022.md"
+      "literature/arithmetic_dependency_closure_20261022.md",
+      "literature/lineI_sources_20261031.md"
     ]
   },
   "historical_claim_amendments": [

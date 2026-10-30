@@ -30,7 +30,9 @@
    "BGS-TRACE-220": "open"
   },
   "changed": [
-   "BGS-TRACE-206 (boundary and ledger_status appended; state open unchanged)"
+   "BGS-TRACE-206 (boundary and ledger_status appended; state open unchanged)",
+   "BGS-TRACE-204 (owner audit R6: open -> proved, dependency BGS-TRACE-212 added)",
+   "BGS-TRACE-213 (boundary: 215 scope)"
   ],
   "not_registered": [
    "'diagonal invisible' (withdrawn, referee B6)",
@@ -66,12 +68,27 @@
   "count": 3
  },
  "mu0": {
+  "definition": "mu0 := liminf |Z_m(nu*)|^(1/m)",
   "source_claims": [
-   "BGS-TRACE-198",
    "BGS-TRACE-199"
   ],
-  "enclosure_registered": "|mu*| in [1.9154712, 1.9154753] (lineF)",
+  "bound": "|Z_m(nu*)| >= (1/2)(1-lambda^-m)(1.9154712^m - 3012.30), odd m >= 13",
   "used": "mu0 >= 1.9154712, sqrt(lambda)/mu0 <= 1.260376 (arb)"
+ },
+ "owner_audit": {
+  "pr": 60,
+  "verdict": "MERGE AFTER FIXES",
+  "applied_on": "2026-10-31",
+  "fixes": [
+   "R1 EXT-RS-1962, EXT-BHV-2001, EXT-CARMICHAEL-1913 registered",
+   "R2 215 scope rho=(+-2,8) only carried",
+   "R3 1.0185",
+   "R4 216 formalization [], 212 disposition wording",
+   "R5 217 mu0 via TRACE-199",
+   "R6 204 proved via 212 (G3 form check, 19 (m,d) pairs, max err 8.4e-15)",
+   "nits"
+  ],
+  "G3_check": "computations/verification/lineI/integration_checks/lineI_G3_form_check.py"
  },
  "python_environment": {
   "python": "3.13 (venv bgs-derand/phase3)",
@@ -97,7 +114,7 @@
   "computations/verification/lineI/AUTHOR_REPORT_v1.md": "e4377cd75db262c02a1382530fb0a6570c99a760592480517b8b9c653316c96d",
   "computations/verification/lineI/AUTHOR_REPORT_v2.md": "92517a4d2742d43621f97abd765a0112ed10e47f8a427a443d5c53aed13d0ce5",
   "computations/verification/lineI/PROVENANCE_PATHS.md": "b5c2bd4e3bf8b50f515f77ebb0d56894c140fbaf6de3dfd888590083046d21a6",
-  "computations/verification/lineI/README.md": "5c5d5e33413f420b2cd4d7e677da9ad29b7926379cf0fec4a0c184ef14c532bd",
+  "computations/verification/lineI/README.md": "d8df3bf0f22f31a89535777aafd91d7e470c80c80c6e4ad9a711af1b8ee9113c",
   "computations/verification/lineI/cert/bounds_sq.py": "d86ddf8f36db61c17dc3fe38bad0aee24a6c7d9d3e9ec0f928b6f7e34a20de2b",
   "computations/verification/lineI/cert/cert49_build_orig.py": "2b5d693fe60da8f56e5e5e78dcf9a08bbbd84dd649212055831971b7bb363610",
   "computations/verification/lineI/cert/certG_build.py": "aa86c186336c9149fb1c7ad9c333f3ffbae5671c7d2087c41713edd18f6ee2c2",
@@ -268,6 +285,8 @@
   "computations/verification/lineI/dom_v3/logs/run.out": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "computations/verification/lineI/dom_v3/rig_dom3b.py": "e4ff0f7fbd971c197d62d5745f34b965838072beca703dbca67826342b654e4b",
   "computations/verification/lineI/dom_v3/run_dom_v3.sh": "3ca099f2fcdea0c0954f90d291b6fea6b7f5a9b1a04e77173f8036ed8e3975a1",
+  "computations/verification/lineI/integration_checks/lineI_G3_form_check.log": "2c6382eb5e86a25856ed8a59f01cd4fd3c1e44a873e4cc008c3e6984a84cae1d",
+  "computations/verification/lineI/integration_checks/lineI_G3_form_check.py": "f208c12df80d2865dfbda28ce9537f4f8ee9ac4242b7da8374d0af21cc6f1833",
   "computations/verification/lineI/integration_checks/lineI_composite_d_check.log": "34960a1b02fea32e74c318a719a9a0dc0e9c47a88e4072f21e062c03a8bb7faa",
   "computations/verification/lineI/integration_checks/lineI_composite_d_check.py": "78ab696534fda0d7e9e67109efb09fcc1a06b52baa7e74466707f4e776d76894",
   "computations/verification/lineI/integration_checks/lineI_identity_checks.log": "145b12c537b6895c25a121f42793d994e16d72e43db01f4907da5167f9674d5d",
@@ -428,7 +447,9 @@
   "computations/verification/lineI/theory_session4.md": "9ea538247f137b79b5139f1cf8ca896a973354a5b6861a0586eb3c8d8b4aac94",
   "formalization/Bgs/LineI.lean": "335c8d53ffa4278f93336e5a2ffd6b052b641e90accde40898435f9215ac8d46",
   "formalization/Bgs/LineIArith.lean": "ba88a153bd1d4657fd005ec937959827a8293eb5aedaa05f91a5770ee75a8a3c",
-  "mathematics/fixed-map/lineI_rprime_reduction.md": "a5c35fd5d647c49c548b7b4eaa52a78123800c78ec0020a228b08861c138b497",
+  "mathematics/fixed-map/lineI_rprime_reduction.md": "976aa4c240c1c740f96bc6792990e42177124def21145c8dadecb113c8171918",
+  "literature/lineI_sources_20261031.md": "c6da8515fd3fe3c2273ad4396b210070fd2173d7577b3d7b2524962c0c2659f6",
+  "evidence/source_metadata/registry_metadata_20261031_lineI.json": "0ee62f1210a80f0710bfc0748695614fb9381c3574addc6897a4860e31a9fe36",
   "evidence/executions/20261031/lineI/AxiomsLineI.lean": "fc874b7119b38e10dcce7f554cdf014b38bff37a7594a6e41b971ef1387b1bb7",
   "evidence/executions/20261031/lineI/README.md": "1aacbcc2a25c669cf76c33fb2b43bf46608d0f838330d5fa771448357354c254",
   "evidence/executions/20261031/lineI/axioms_coverage.log": "2557408871a8820396fc115f3fc99f0b907f9a114344dad21f711d635e4bc6f3",
@@ -437,8 +458,8 @@
   "evidence/executions/20261031/lineI/integration_reruns/lineI_composite_d_check.log": "206fa1664a3c3b7246020da3083b2ca5282bb366a44a437de0cb0ef6da0d9ed6",
   "evidence/executions/20261031/lineI/integration_reruns/lineI_identity_checks.log": "5280c3cf9e9316e7dfbd3ff0255c9f976f14e17e49a9cc5a70e0115782f32aad",
   "evidence/executions/20261031/lineI/integration_reruns/monomial_intertw.log": "215cdd34a39cc78303b7041b6bf30f53e258ea31210430320751743c4c62a114",
-  "evidence/executions/20261031/lineI/lake_build_Bgs.log": "6e8691144bdcbe61a51cb7eed609c058383bbfc96b4642ac6df7bd9e98bf968c",
-  "evidence/executions/20261031/lineI/lake_cache_get.log": "16db6d0e98cac166f1274c0cd5f1c269a9ed805e25f30d237e36e8f376d53e3d",
+  "evidence/executions/20261031/lineI/lake_build_Bgs.log": "ba6d1f14d4eea1f802e1e81199e9c90e72ec505aeb9687475f3e5f57e0abf1a7",
+  "evidence/executions/20261031/lineI/lake_cache_get.log": "8400dadb32327c1210d92a5e932f93544cbc4f0702792ed727ead00fe5381271",
   "evidence/executions/20261031/lineI/lean_axioms_LineI.log": "e8da1418d8d37b5fb0dcf06219502a0ca6f86933303a9e638d21ff98ca8b5f11"
  }
 }

@@ -52,13 +52,13 @@ def check_external_epoch(root, epoch):
     historical_contract_sha256 (canonical JSON of the sealed row, same
     serializer as check_prior_claims), wave, disposition, review (a
     manifest/review pointer, as in the claims channel). The checker is
-    fail-closed: a row for an unknown id (including any of the 18
+    fail-closed: a row for an unknown id (including any of the 21
     admitted-later ids, which are not byte-sealed and need no channel),
     a mismatched old value or contract hash, a vacuous amendment, a
     duplicate (id, field) pair, an attempt to amend 'id' or
     'metadata_audit', or any malformed row fails loudly, never silently.
 
-    The 18 admitted-later ids are NOT byte-compared here, by design of the
+    The 21 admitted-later ids are NOT byte-compared here, by design of the
     pre-existing seal: only their declared set is checked (declared ==
     allowed, total id set == sealed + allowed). Their field values are
     covered instead by scientific_registry_audit.py (require_path on every
@@ -88,7 +88,8 @@ def check_external_epoch(root, epoch):
     allowed={'EXT-OO-1997','EXT-MATSUMOTO-2007','EXT-VV-2017','EXT-JM-2015',
              'EXT-HSW-1999','EXT-TROPP-2011','EXT-AGG-1989','EXT-PITTEL-2016','EXT-KPSS-2002','EXT-BF-2023','EXT-CS-2006','EXT-STANLEY-1981',
              'EXT-BR-1975','EXT-WANG-1982','EXT-FI-1980','EXT-ZAGIER-1997',
-             'EXT-BORDA-2020','EXT-BT-1971'}
+             'EXT-BORDA-2020','EXT-BT-1971',
+             'EXT-RS-1962','EXT-BHV-2001','EXT-CARMICHAEL-1913'}
     declared=extension.get('added_ids',[])
     require(len(declared)==len(allowed) and set(declared)==allowed,
             'external extension requires explicit epoch review')

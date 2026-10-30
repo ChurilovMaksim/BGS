@@ -1,6 +1,6 @@
 {
   "schema": "bgs-external-dependencies-v1",
-  "updated": "2026-10-22",
+  "updated": "2026-10-31",
   "dependencies": [
     {
       "id": "EXT-BAB-2013",
@@ -1107,6 +1107,60 @@
         "literature/arithmetic_dependency_closure_20261022.md"
       ],
       "metadata_audit": "evidence/source_metadata/registry_metadata_20261022_recheck.json#EXT-BT-1971"
+    },
+    {
+      "id": "EXT-RS-1962",
+      "authors": [
+        "J. Barkley Rosser",
+        "Lowell Schoenfeld"
+      ],
+      "title": "Approximate formulas for some functions of prime numbers",
+      "identifier": "DOI:10.1215/ijm/1255631807",
+      "pinned_version": "Illinois Journal of Mathematics 6 (1962), no. 1, 64-94",
+      "locator": "Theorem 15, pp. 71-72, inequalities (3.41)-(3.42): n/phi(n) < e^gamma loglog n + 2.50637/loglog n for every n >= 3 (with 5/2 in place of 2.50637 except at n = 223092870)",
+      "checked_on": "2026-10-31",
+      "dependency_role": "load-bearing external theorem",
+      "mapping": "Applied with n = h_m (odd, >= 3; phi(2h_m) = phi(h_m)) to bound 1/phi(2h_m) <= (e^gamma lnln h + 2.50637/lnln h)/h in the d = 7 square-term bound of BGS-TRACE-215 (cert_v2/bounds_sq_v2.py, cert_v3/bounds_sq_v3.py). The exceptional n is even and does not occur; (3.42) covers it anyway.",
+      "project_sources": [
+        "mathematics/fixed-map/lineI_rprime_reduction.md",
+        "literature/lineI_sources_20261031.md"
+      ]
+    },
+    {
+      "id": "EXT-BHV-2001",
+      "authors": [
+        "Yuri Bilu",
+        "Guillaume Hanrot",
+        "Paul M. Voutier"
+      ],
+      "title": "Existence of primitive divisors of Lucas and Lehmer numbers",
+      "identifier": "DOI:10.1515/crll.2001.080",
+      "pinned_version": "Journal fur die reine und angewandte Mathematik 539 (2001), 75-122 (appendix by M. Mignotte)",
+      "locator": "Theorem 1.4 (Section 1): for n > 30 every n-th Lucas number has a primitive divisor; primitive divisor of u_n: p | u_n, p not dividing (alpha-beta)^2 u_1...u_{n-1}. Theorem number corroborated by the publisher abstract and a secondary citation; primary page not pinned (see literature/lineI_sources_20261031.md)",
+      "checked_on": "2026-10-31",
+      "dependency_role": "load-bearing external theorem",
+      "mapping": "Lucas pair alpha, beta = 1 +- sqrt2 ((P,Q) = (2,-1); alpha+beta = 2, alpha beta = -1 coprime; alpha/beta not a root of unity), u_n = U_n (Pell), V_n = 2h_n. With n = 2m > 30 (m >= 16) a primitive prime p of U_2m is odd (p does not divide 8), divides h_m (U_2m = 2 h_m U_m, p does not divide U_m) and no h_m' with m' < m (h_m' | U_2m'). Used in BGS-TRACE-219 through the hypothesis hBHV of Bgs.LineIArith.finite_set_fails (weaker than Theorem 1.4).",
+      "project_sources": [
+        "mathematics/fixed-map/lineI_rprime_reduction.md",
+        "literature/lineI_sources_20261031.md"
+      ]
+    },
+    {
+      "id": "EXT-CARMICHAEL-1913",
+      "authors": [
+        "R. D. Carmichael"
+      ],
+      "title": "On the Numerical Factors of the Arithmetic Forms alpha^n +- beta^n",
+      "identifier": "DOI:10.2307/1967797",
+      "pinned_version": "Annals of Mathematics (2) 15 (1913), no. 1/4, 30-70",
+      "locator": "Carmichael's theorem on real Lucas sequences (cited as Theorem XXIII by secondary sources; Wikipedia gives Theorem 21): for real non-degenerate Lucas sequences and n not in {1, 2, 6}, U_n has a primitive prime divisor except n = 12, (P,Q) = (+-1,-1). Locator unverified in the primary text",
+      "checked_on": "2026-10-31",
+      "dependency_role": "corroborating prior result; not load-bearing (EXT-BHV-2001 suffices for the stated range)",
+      "mapping": "(P,Q) = (2,-1) is a real Lucas sequence (D = 8 > 0), so U_2m has a primitive prime for every m >= 2 with 2m != 6; this corroborates, with a smaller threshold, the m >= 16 range of BGS-TRACE-219.",
+      "project_sources": [
+        "mathematics/fixed-map/lineI_rprime_reduction.md",
+        "literature/lineI_sources_20261031.md"
+      ]
     }
   ]
 }

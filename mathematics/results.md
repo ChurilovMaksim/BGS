@@ -2,7 +2,7 @@
 
 ## Reduction of Conjecture R′ and the d = 7 twisted certificates (Line I), 31 October 2026
 
-[TRACE-211](fixed-map/lineI_rprime_reduction.md) (proved): relative phase split. [TRACE-212](fixed-map/lineI_rprime_reduction.md) (proved; Lean core): the dilation-coset L² law and the per-member Gauss-sum formula Z_t = ω_t Z0/d + Δ_t for every odd d | h_m. [TRACE-213](fixed-map/lineI_rprime_reduction.md) (proved): W′_m = (non-resonant sum) + φ⁻¹ Σ Dev_d(ρ) exactly, so R′ follows from (E″), (T″) and (D); none of these is proved. [TRACE-214](fixed-map/lineI_rprime_reduction.md) (proved): Fourier/Ramanujan expansion of weighted horocycle sums. [TRACE-215](fixed-map/lineI_rprime_reduction.md) (proved, computer-assisted): the d = 7 square term is ≤ 0.01 for every m ≡ 3 (mod 6), m ≥ 321 (k1 kick, η = 2). [TRACE-216](fixed-map/lineI_rprime_reduction.md) (proved): exact monomial intertwiners. [TRACE-217](fixed-map/lineI_rprime_reduction.md) (proved, computer-assisted): three simple top twisted eigenvalues with 1.262 < |μ| < 1.45, so r_tw > √λ/μ₀ and the operator-radius route to the d = 7 cross term fails. [TRACE-218](fixed-map/lineI_rprime_reduction.md) (proved): aliasing/Möbius identity. [TRACE-219](fixed-map/lineI_rprime_reduction.md) (proved modulo BHV): h_m has a new odd prime for every m ≥ 16. [TRACE-220](fixed-map/lineI_rprime_reduction.md) (open): Conjecture R′_A. Limits: [TRACE-206](fixed-map/resonance_classification_lineG.md) (R′) stays open and is neither proved nor disproved; c(β) ≠ 0 is not certified.
+[TRACE-211](fixed-map/lineI_rprime_reduction.md) (proved): relative phase split. [TRACE-212](fixed-map/lineI_rprime_reduction.md) (proved; Lean core): the dilation-coset L² law and the per-member Gauss-sum formula Z_t = ω_t Z0/d + Δ_t for every odd d | h_m. [TRACE-213](fixed-map/lineI_rprime_reduction.md) (proved): W′_m = (non-resonant sum) + φ⁻¹ Σ Dev_d(ρ) exactly, so R′ follows from (E″), (T″) and (D); none of these is proved. [TRACE-214](fixed-map/lineI_rprime_reduction.md) (proved): Fourier/Ramanujan expansion of weighted horocycle sums. [TRACE-215](fixed-map/lineI_rprime_reduction.md) (proved, computer-assisted): the d = 7 square term is ≤ 0.01 for every m ≡ 3 (mod 6), m ≥ 321 (k1 kick, η = 2; ρ = (±2,8) only, the (±2,16) level-7 members are not controlled). [TRACE-216](fixed-map/lineI_rprime_reduction.md) (proved): exact monomial intertwiners. [TRACE-217](fixed-map/lineI_rprime_reduction.md) (proved, computer-assisted): three simple top twisted eigenvalues with 1.262 < |μ| < 1.45, so r_tw > √λ/μ₀ and the operator-radius route to the d = 7 cross term fails. [TRACE-218](fixed-map/lineI_rprime_reduction.md) (proved): aliasing/Möbius identity. [TRACE-219](fixed-map/lineI_rprime_reduction.md) (proved modulo BHV): h_m has a new odd prime for every m ≥ 16. [TRACE-220](fixed-map/lineI_rprime_reduction.md) (open): Conjecture R′_A. Limits: [TRACE-206](fixed-map/resonance_classification_lineG.md) (R′) stays open and is neither proved nor disproved; c(β) ≠ 0 is not certified.
 
 ## Certified 49-state spectrum for the Line B kick (Line H), 30 October 2026
 
@@ -507,7 +507,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**304 registered claims: 247 proved, 15 verification-pending, 15 conditional, 26 open, 1 refuted.**
+**304 registered claims: 248 proved, 15 verification-pending, 15 conditional, 25 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -855,7 +855,7 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-201` | **PROVED** | Line F F5: certified all-m growth at the grid points eta in {1.25, 1.5, 1.75, 2.25, 2.5} (k1, full alphabet) |
 | `BGS-TRACE-202` | **OPEN** | Line F F6: float growth window eta in (0.951, 3.212) for the k1 sector-4 eigenvalue |
 | `BGS-TRACE-203` | **PROVED** | Line G G1/G1'/G2: general (a,b) partial-trace transfer law for Z_m(nu), finite alphabet |
-| `BGS-TRACE-204` | **OPEN** | Line G G3: dilution identity along divisors d of h_m |
+| `BGS-TRACE-204` | **PROVED** | Line G G3: dilution identity along divisors d of h_m |
 | `BGS-TRACE-205` | **OPEN** | Line G classification record: resonant families, growth rates, G5 (h_d \| h_m), G6 (sparsity), G7 (moment heuristic), eta-scan |
 | `BGS-TRACE-206` | **OPEN** | Line G: Conjecture R' (corrected mean law for the k1 kick at eta = 2) with a pre-registered m = 17 test |
 | `BGS-TRACE-207` | **PROVED** | Line H: kappa lemma (\|c_b\| = 1/2 for all odd m, 3 not dividing m) and the full-alphabet 49-state lifted trace identity for the Line B kick |
