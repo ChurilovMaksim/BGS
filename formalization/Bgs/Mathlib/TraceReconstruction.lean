@@ -198,4 +198,12 @@ theorem short_traces_do_not_determine_pair_statistic {M : ℕ} (hM : 1 ≤ M) {�
   · simp [traceT]
   · rw [clock_trace_window hM hn1 hn, doubled_trace_window hM hn1 hn]
 
+#print axioms test_int_eq_zero
+#print axioms tsum_test_eq_zero
+#print axioms tsum_test_lattice
+#print axioms clock_trace_window
+#print axioms doubled_trace_window
+#print axioms pairStat_clock
+#print axioms pairStat_doubled
+#print axioms short_traces_do_not_determine_pair_statistic
 end Bgs.Mathlib

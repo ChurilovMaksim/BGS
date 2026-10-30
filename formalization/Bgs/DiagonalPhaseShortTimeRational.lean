@@ -106,4 +106,30 @@ theorem main5At7 : 2 * 5 * (7 * 6 * 5 * 4 * 3) = 25200 ∧ 7 ^ 5 = 16807 := by d
 theorem trivial3 : fact 3 + 3 ≤ fact 3 * (3 * 2 + 5) / 3 := by decide
 theorem trivial4 : fact 4 + 4 ≤ fact 4 * (4 * 3 + 5) / 3 := by decide
 theorem trivial5 : fact 5 + 5 ≤ fact 5 * (5 * 4 + 5) / 3 := by decide
+#print axioms subSubCancel
+#print axioms prodExpand
+#print axioms quadCount5
+#print axioms quadCount7
+#print axioms quadCap5
+#print axioms quadCap7
+#print axioms symErr3
+#print axioms symErr4
+#print axioms symErr5
+#print axioms dihedral3
+#print axioms dihedral4
+#print axioms dihedral5
+#print axioms time3MainDifference
+#print axioms time3WithinBound
+#print axioms main3At3
+#print axioms main3At5
+#print axioms main3At7
+#print axioms main4At3
+#print axioms main4At5
+#print axioms main4At7
+#print axioms main5At3
+#print axioms main5At5
+#print axioms main5At7
+#print axioms trivial3
+#print axioms trivial4
+#print axioms trivial5
 end Bgs.DiagonalPhaseShortTimeRational

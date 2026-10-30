@@ -19,7 +19,8 @@ When surfaces disagree, resolve them in this order:
 The `ledger_status` field stored per claim in `record/claims.json` is a
 historical free-text transcription of ledger wording. It is not a
 machine-checked mirror of `record/claim_ledger.md` (an audit on
-20 October 2026 found only 18 of its 159 values verbatim in the ledger)
+30 October 2026 found only 31 of its 266 values verbatim in the ledger;
+the 29 October 2026 audit found 29 of its then-232 values)
 and must not be used as a synchronisation check between the two files.
 
 The manuscript is publication-facing exposition, not an independent authority

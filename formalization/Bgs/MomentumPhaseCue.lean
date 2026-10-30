@@ -28,4 +28,11 @@ theorem exclude11 : (27 : Nat) % 11 = 5 := by decide
 /-- Residue `27 ≡ 1 (mod 13)`, the `t = 3` check at this prime. -/
 theorem hit13 : (27 : Nat) % 13 = 1 := by decide
 
+#print axioms oddEnergy
+#print axioms timeThreeConstant
+#print axioms timeTwoConstant
+#print axioms exclude5
+#print axioms exclude7
+#print axioms exclude11
+#print axioms hit13
 end Bgs.MomentumPhaseCue

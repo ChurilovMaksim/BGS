@@ -403,4 +403,19 @@ theorem twoClockB_ne_cue (φ : ℝ) :
     rw [div_lt_div_iff₀ (by norm_num) (by norm_num)]; nlinarith
   linarith
 
+#print axioms traceZ_natCast
+#print axioms traceZ_neg
+#print axioms sum_sum_sub_eq
+#print axioms gramMoment_formula
+#print axioms sum_range_sub_mul
+#print axioms cueGramMoment_eq
+#print axioms traceT_twoGon
+#print axioms norm_traceT_twoGon_mul
+#print axioms gramMoment_twoGon
+#print axioms exists_twoGon_cue_gram
+#print axioms twoClockB_hasSum
+#print axioms twoClockB_closed_form
+#print axioms abelL_twoGon
+#print axioms twoClockB_le
+#print axioms twoClockB_ne_cue
 end Bgs.Mathlib

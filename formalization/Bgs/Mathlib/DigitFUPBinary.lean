@@ -352,4 +352,14 @@ theorem binary_offdiag_fup_sharp {k : ℕ} (hk : 1 ≤ k) :
     rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
     field_simp
 
+#print axioms eq_of_digit_eq
+#print axioms offDiag_two_iff
+#print axioms dft1_add_period
+#print axioms dft1_parseval
+#print axioms sum_odd_freq
+#print axioms norm_dft2_antidiag
+#print axioms compression_sq_eq
+#print axioms norm_sq_antidiag
+#print axioms binary_offdiag_fup_bound
+#print axioms binary_offdiag_fup_sharp
 end Bgs.Mathlib

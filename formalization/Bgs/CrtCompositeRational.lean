@@ -136,4 +136,39 @@ theorem crt_defect_endpoint :
       < 26 * ((10 : Nat) ^ 26 - 2)
           * (160000 * (10 : Nat) ^ 80 - 184981 * (10 : Nat) ^ 26) := by
   decide
+#print axioms crt_larger_short
+#print axioms crt_both_large
+#print axioms crt_seventeen
+#print axioms crt_three_even
+#print axioms crt_half_corner
+#print axioms crt_inert_corner
+#print axioms crt_three_primes
+#print axioms crt_kick_threshold
+#print axioms crt_twenty_one
+#print axioms crt_three_short
+#print axioms crt_twenty_one_plain
+#print axioms crt_three_short_plain
+#print axioms crt_seven_kick
+#print axioms crt_quartic_gap
+#print axioms crt_linear_gap
+#print axioms crt_quadratic_one
+#print axioms crt_quadratic_two
+#print axioms crt_factor_constant
+#print axioms crt_factor_linear
+#print axioms crt_factor_quadratic
+#print axioms crt_factor_cubic
+#print axioms crt_factor_quartic
+#print axioms crt_n_at_13
+#print axioms crt_nprime_at_13
+#print axioms crt_npprime_at_13
+#print axioms crt_derivative_leading
+#print axioms crt_second_leading
+#print axioms crt_full_alpha
+#print axioms crt_full_beta
+#print axioms crt_full_gamma
+#print axioms crt_full_unit
+#print axioms crt_inert_numerator
+#print axioms crt_inert_denominator
+#print axioms crt_inert_extras
+#print axioms crt_defect_endpoint
 end Bgs.CrtCompositeRational

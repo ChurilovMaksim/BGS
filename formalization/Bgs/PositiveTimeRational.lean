@@ -104,4 +104,14 @@ theorem positive_time_abel :
       4 * (u205 - 410) * (11 * denEps - 12 * numEps) ^ 2
         > 3 * u205 * (12 * denEps) ^ 2 := by
   decide
+#print axioms positive_time_norm_205
+#print axioms positive_time_bases
+#print axioms positive_time_norm_block
+#print axioms positive_time_gap
+#print axioms positive_time_scale
+#print axioms positive_time_tail
+#print axioms positive_time_phi3
+#print axioms positive_time_phi2
+#print axioms positive_time_coarse
+#print axioms positive_time_abel
 end Bgs.PositiveTimeRational

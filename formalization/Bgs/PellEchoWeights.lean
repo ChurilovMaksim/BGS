@@ -44,4 +44,10 @@ theorem half_period_right (ell r : Int) :
   unfold numerator
   omega
 
+#print axioms adjacent_difference
+#print axioms cyclic_jump
+#print axioms echo_nonwrapped
+#print axioms echo_wrapped
+#print axioms half_period_left
+#print axioms half_period_right
 end Bgs.PellEchoWeights

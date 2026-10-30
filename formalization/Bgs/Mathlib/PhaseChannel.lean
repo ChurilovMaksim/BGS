@@ -53,4 +53,7 @@ theorem unistochastic_pow_entry_le {m : ℕ} {S : Matrix (Fin m) (Fin m) ℂ}
     rw [RCLike.star_def, Complex.mul_conj']
   simpa using (by exact_mod_cast h2 : (∑ k, ‖S a k‖ ^ 2 : ℝ) = 1)
 
+#print axioms stochastic_pow_entry_le
+#print axioms degree_two_coeff_le
+#print axioms unistochastic_pow_entry_le
 end Bgs.Mathlib

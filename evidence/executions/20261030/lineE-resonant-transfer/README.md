@@ -16,24 +16,33 @@ This directory backs `mathematics/fixed-map/resonant_residue_lineE.md` and `manu
 6. The resonance is an analogy to Keating–Mezzadri pseudo-symmetries; no pseudo-symmetry operator is exhibited and no instance of their mechanism is claimed.
 7. The step-2 certificate (195) is IEEE double/long double arithmetic with an a-priori rounding bound (arb-rounded tables), not ball arithmetic. The second referee reproduced the m = 11 and 13 bounds with an independent directed-rounding interval kernel.
 
+## Merge of main 4f9d4766 (2026-10-30)
+
+The branch was brought up to date with a normal merge commit of `origin/main` at 4f9d4766 (three commits after 347f1730: LineCEncounter split and `#print axioms` coverage, Phase 1 docs, closure conditions for conditional claims). Changes made for the merge:
+
+- `formalization/README.md`: textual conflict resolved by keeping both sides; the `LineE.lean` / `LineEResonance.lean` rows follow main's `LineDCerts.lean` row; counts updated to 22 further finite-certificate modules imported directly by `Bgs.lean` and 94 leaf modules (main: 20 and 92). Not changed here: main's count does not include the 8 `LineCEncounter*` submodules created by the split (it names only `LineCEncounter.lean`).
+- `record/claims.json` regenerated from main's 4f9d4766 registry plus the Line E entries (not hand-merged): main's 13 new closure conditions are kept, and the two conditional Line E claims now carry a `closure_condition` (BGS-TRACE-188: H_infinity proved; BGS-TRACE-196: H_infinity,7(s) proved for some sign s), so all 15 conditional claims have one. Open Line E claims already had one. Generated surfaces re-rendered; this also refreshes `ERRATA.md`, `STATUS.md` and `record/claim_registry.md`, which were stale on main 4f9d4766 (their render `--check` fails there).
+- `#print axioms` coverage in main's convention (one `#print axioms <name>` per theorem/lemma, inside the namespace before `end`): 12 lines in `LineE.lean`, 16 in `LineEResonance.lean`. `axioms_coverage.py` is a static check of that convention over `formalization/Bgs/**/*.lean`; it gives 1227/1227 on main 4f9d4766 and 1255/1255 on this branch (`axioms_coverage.log`).
+
 ## Lean (this checkout, `leanprover/lean4:v4.33.1`)
 
 | file | content |
 |---|---|
 | `lake_cache_get.log` | `lake exe cache get`: exit 0, 8690 cached files already decompressed. Mathlib was not built from source. |
-| `lake_build_Bgs.log` | full `lake build Bgs` with `Bgs.LineE` and `Bgs.LineEResonance` imported after `Bgs.LineBPhase4`; both modules rebuilt from scratch; "Build completed successfully"; exit 0 |
+| `lake_build_Bgs.log` | full `lake build Bgs` with `Bgs.LineE` and `Bgs.LineEResonance` imported after `Bgs.LineBPhase4`; rerun after the merge: "Build completed successfully (8810 jobs)", exit 0; `Bgs.LineE` (115 s) and `Bgs.LineEResonance` (28 s) rebuilt under machine load. The log carries the in-file `#print axioms` output; the 28 Line E lines are 24 [propext], 1 [propext, Quot.sound], 3 [propext, Classical.choice, Quot.sound]. Pre-existing modules from main (e.g. `SevenPrimary`, `CayleyEnergy`, `PellCoboundary`) report `native_decide` auxiliary axioms in this output; none of them is a Line E module. |
 | `AxiomsLineE.lean`, `lean_axioms_LineE.log` | `#print axioms` for all 28 theorems: 24 [propext], 1 [propext, Quot.sound], 3 [propext, Classical.choice, Quot.sound]. No sorryAx, no ofReduceBool. No `sorry`/`native_decide` in either module (the only matches are comments). |
+| `axioms_coverage.py`, `axioms_coverage.log` | static `#print axioms` coverage: 1255/1255 theorem/lemma declarations, exit 0 |
 | `controls/`, `lean_controls.log` | 5/5 false controls rejected for the expected reason (`decide` proves the proposition false); the script counts any other failure as BAD |
 
 ## Repository checkers
 
-`checkers.log` (this checkout; pandoc 3.12.1 on PATH). Exit 0: scientific registry audit, repository audit, text-control audit, wave3 integration audit, all render `--check` scripts, manuscript reference audit, the three section-sync `--check` scripts (finite-orbit and fixed-map SKIP as hand-edited), wave3 source closure, `compileall -W error::SyntaxWarning`.
+`checkers.log` (merged checkout; pandoc 3.12.1 on PATH). Exit 0: scientific registry audit, repository audit, text-control audit, all render `--check` scripts, manuscript reference audit, the three section-sync `--check` scripts (finite-orbit and fixed-map SKIP as hand-edited), wave3 source closure, `compileall -W error::SyntaxWarning`.
 
-Exit 1, identically on pristine main 347f1730 (not caused by this branch): bibliographic `--self-test` (EXT-BR-1975 dependency graph), `wave2_portable_replay.py --check-sources` (sealed digest of `mathematics/position_chain_mixing.md`), `wave2_integration_audit.py` (integrated wrapper mapping).
+Exit 1 on pristine main 4f9d4766 as well (not caused by this branch): `wave3_integration_audit.py` ("old claim contract changed outside reviewed amendment: BGS-FM-004", from main's closure-condition commit 4f9d4766; it passed on this branch before the merge); and, identically on main 347f1730: bibliographic `--self-test` (EXT-BR-1975 dependency graph), `wave2_portable_replay.py --check-sources` (sealed digest of `mathematics/position_chain_mixing.md`), `wave2_integration_audit.py` (integrated wrapper mapping).
 
-`unittest_summary.log`: `python -m unittest discover -s computations/maintenance/tests` gives 116 failures / 103 errors / 1 skip on pristine main with system python (sympy missing) and 104 failures / 4 errors with the full scientific venv, and in both runs the same set on this branch, except one 30 s subprocess timeout (`test_fractional_routing`) caused by machine load from the certificate jobs; it passes when rerun alone (logged).
+`unittest_summary.log` (before the merge): `python -m unittest discover -s computations/maintenance/tests` gives 116 failures / 103 errors / 1 skip on pristine main with system python (sympy missing) and 104 failures / 4 errors with the full scientific venv, and in both runs the same set on this branch, except one 30 s subprocess timeout (`test_fractional_routing`) caused by machine load from the certificate jobs; it passes when rerun alone (logged).
 
-`manuscript_compile.log`: `pdflatex` is not installed, so `build_unified_manuscript.py` was not run. A tectonic 0.15.0 compile of `BGS_unified.tex` halts at a pre-existing error on main (`derandomized_fixed_kick.tex:94`, a `]` inside a theorem optional argument; line unchanged by this branch). With that one line braced in a scratch copy (not committed), the whole manuscript, including the new section, compiles with no undefined references.
+`manuscript_compile.log` (before the merge; main 4f9d4766 changed no manuscript file): `pdflatex` is not installed, so `build_unified_manuscript.py` was not run. A tectonic 0.15.0 compile of `BGS_unified.tex` halts at a pre-existing error on main (`derandomized_fixed_kick.tex:94`, a `]` inside a theorem optional argument; line unchanged by this branch). With that one line braced in a scratch copy (not committed), the whole manuscript, including the new section, compiles with no undefined references.
 
 GitHub Actions was not executed.
 

@@ -331,6 +331,23 @@ theorem actual_constants :
     generalize (10 : ℝ) ^ (-66 : ℤ) = x at h h0 ⊢
     nlinarith
 
+#print axioms absorption_scalar_identity
+#print axioms absorption_scalar_bound
+#print axioms norm_multiset_prod_map
+#print axioms det_one_sub_smul_eq_prod
+#print axioms absorption_det_bound
+#print axioms eigenvalue_norm_le_of_contraction
+#print axioms absorption_det_bound_of_contraction
+#print axioms absorption_det_sharp
+#print axioms half_one_add_exp_neg
+#print axioms log_half_one_add_exp_neg
+#print axioms absorption_log_term_ge
+#print axioms absorption_complex_counterexample
+#print axioms mul_tanh_le_two_logcosh
+#print axioms tanh_div_antitone
+#print axioms logcosh_div_ge
+#print axioms neg_log_one_sub_tanh_sq
+#print axioms actual_constants
 end Absorption
 
 end Bgs.Mathlib

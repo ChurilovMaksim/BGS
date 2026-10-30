@@ -298,4 +298,15 @@ theorem even_offdiag_fup_saturated {M : ℕ} (hMe : Even M) (hM : 3 ≤ M) (k : 
     rw [Finset.sum_congr rfl hrow, Finset.sum_const, Finset.card_range, nsmul_eq_mul]
     field_simp
 
+#print axioms digit_zero
+#print axioms digit_succ
+#print axioms repunit_succ
+#print axioms digit_complement
+#print axioms digit_add_repunit_ne
+#print axioms offDiag_complement
+#print axioms geom_exp_sum
+#print axioms dft2_fupWitness
+#print axioms dft2_fupWitness_ne_zero
+#print axioms norm_sq_dft2_fupWitness
+#print axioms even_offdiag_fup_saturated
 end Bgs.Mathlib

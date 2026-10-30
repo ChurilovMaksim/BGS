@@ -80,4 +80,17 @@ theorem cert21 : cert 10 68260491 = true := by decide
 /-- negative control: a wrong residue (nu* + 2) must fail -/
 theorem cert11_control : cert 5 6091 = false := by decide
 
+#print axioms pell
+#print axioms xy_mod
+#print axioms cert5
+#print axioms cert7
+#print axioms cert9
+#print axioms cert11
+#print axioms cert13
+#print axioms cert15
+#print axioms cert17
+#print axioms cert19
+#print axioms cert21
+#print axioms cert11_control
+
 end Bgs.LineE

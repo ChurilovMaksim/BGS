@@ -40,4 +40,10 @@ theorem P5_no_periodic : ((List.range 13).filter (· ≥ 1)).all (fun n =>
       let p : Int × Int := ((i : Int) - 6, (j : Int) - 6)
       p == (0,0) || iter n p != p))) = true := by decide
 
+#print axioms P1_form_invariant
+#print axioms P2_odd_norm
+#print axioms P3_H_ones
+#print axioms P3_sum
+#print axioms P4_m7
+#print axioms P5_no_periodic
 end Bgs.LineB.Phase3

@@ -642,4 +642,24 @@ theorem two_radius_quadrature_rigidity (c : ℕ → ℂ) (n : ℕ) {ρ₁ ρ₂ 
     convert! h1.trans hrank using 2
     ext j; simp
 
+#print axioms support_eq_filter_range
+#print axioms list_range_countP
+#print axioms signVariations_le_card_support
+#print axioms real_sparse_pos_roots_card_le
+#print axioms sparse_pos_roots_card_le
+#print axioms flat_coeff_eq_zero
+#print axioms card_le_coeffRank_of_linearIndependent
+#print axioms normSq_vecPoly_expand
+#print axioms orthogonal_isFlat
+#print axioms orthogonal_card_nonzero_le
+#print axioms multiradius_rigidity
+#print axioms flat_at_rank_radii_orthogonal
+#print axioms sharpExample_poly
+#print axioms sharpExample_normSq
+#print axioms sharpExample_isFlat_iff
+#print axioms sharpExample_not_orthogonal
+#print axioms sharpExample_rank
+#print axioms sharpExample_attains_bound
+#print axioms norm_vecPoly_quadVec
+#print axioms two_radius_quadrature_rigidity
 end Bgs.Mathlib

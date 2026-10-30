@@ -140,4 +140,19 @@ theorem trace113_window :
   have h := Real.sq_sqrt (show (0 : ℝ) ≤ 2 by norm_num)
   rw [Real.sqrt_eq_iff_mul_self_eq] <;> nlinarith [Real.sqrt_nonneg 2]
 
+#print axioms catS_det
+#print axioms catS_trace
+#print axioms catS_preserves_pell
+#print axioms catS_mulVec
+#print axioms catS_sq
+#print axioms catS_trace_pow_rec
+#print axioms catLambda_eq_sq
+#print axioms catLambda_mul_inv
+#print axioms one_lt_catLambda
+#print axioms catS_trace_pow_real
+#print axioms catS_trace_pow_gt_two
+#print axioms det_sub_one_of_det_one
+#print axioms catS_det_pow_sub_one
+#print axioms catS_abs_det_pow_sub_one
+#print axioms trace113_window
 end Bgs.Mathlib

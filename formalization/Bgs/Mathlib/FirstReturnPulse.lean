@@ -123,4 +123,16 @@ theorem intensity_flatA_pow_even (k p : ℕ) [Fact p.Prime] (hp2 : p ≠ 2) (r :
         (if p ∣ 2 * r then (if i.2 = j.2 then (1 : ℝ) else 0) else 1 / (p : ℝ)) := by
   rw [intensity_flatA_pow k p hp2, coreH_pow_even]
 
+#print axioms chirpV_pow_apply
+#print axioms chirpV_pow_of_dvd
+#print axioms chirpV_pow_entry_normSq
+#print axioms coreH_sq_eq_K
+#print axioms coreK_pow_three
+#print axioms coreH_pow_even
+#print axioms coreK_pow_cases
+#print axioms coreH_pow_odd_entry_normSq
+#print axioms intensity_flatA_pow
+#print axioms intensity_flatA_pow_odd
+#print axioms intensity_flatA_pow_odd_dvd
+#print axioms intensity_flatA_pow_even
 end Bgs.Mathlib

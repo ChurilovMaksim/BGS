@@ -32,4 +32,7 @@ theorem eliminate_cubic (l c q t z e₂ e₃ : Int)
     16*q = 16*l + 8*z - 4*t + e₃ - 8*e₂ := by
   omega
 
+#print axioms cubic_below_dimension
+#print axioms cubic_positive_part
+#print axioms eliminate_cubic
 end Bgs.CueLoopKernels

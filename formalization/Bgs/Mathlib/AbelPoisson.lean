@@ -333,4 +333,16 @@ theorem cluster_trace_eq_zero {K : ℕ} (hK : 1 ≤ K) (n : ℕ) {m : ℕ} (hm :
   rw [cluster_trace_factorization, traceT_clock hK]
   simp [hm]
 
+#print axioms exp_lt_one_of_neg'
+#print axioms poisson_denom_pos
+#print axioms poisson_hasSum
+#print axioms poissonKernel_exp
+#print axioms norm_traceT_sq
+#print axioms abelL_poisson_identity
+#print axioms traceT_clock
+#print axioms abelL_clock
+#print axioms pair_count_ge
+#print axioms abelL_cluster_lower_bound
+#print axioms cluster_trace_factorization
+#print axioms cluster_trace_eq_zero
 end Bgs.Mathlib

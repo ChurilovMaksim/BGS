@@ -117,4 +117,5 @@ theorem max_offdiagonal_curve_count : maxOffDiagonal = 12 := by
 #print axioms enlarged_curve_total
 #print axioms max_offdiagonal_curve_count
 
+#print axioms generator_exact_order
 end Bgs.CayleyCurveEnergy

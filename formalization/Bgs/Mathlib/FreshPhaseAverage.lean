@@ -305,4 +305,20 @@ theorem fresh_phase_leverage_identity (hγ : ‖γ‖ < 1) :
   nlinarith [hsq]
 
 end FreshParams
+#print axioms poisson_moment
+#print axioms fresh_disc_pos
+#print axioms freshDelta_pos
+#print axioms freshDelta_sq
+#print axioms fresh_sum_pos
+#print axioms freshZeta_norm_lt_one
+#print axioms freshDenom_factor
+#print axioms normSq_freshZeta
+#print axioms fresh_phase_moment
+#print axioms freshDenom_pos
+#print axioms continuous_freshDenom
+#print axioms fresh_circleIntegrable_div
+#print axioms fresh_phase_conj_moment
+#print axioms fresh_phase_conjugated_average
+#print axioms fresh_phase_leverage_average
+#print axioms fresh_phase_leverage_identity
 end Bgs.Mathlib

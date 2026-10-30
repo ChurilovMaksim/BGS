@@ -197,4 +197,12 @@ theorem laplace_min_one {s : ℝ} (hs : 0 < s) :
 theorem plateau_defect_neg {x : ℝ} (hx : 1 < x) : min x 1 - x = 1 - x ∧ 1 - x < 0 := by
   refine ⟨by rw [min_eq_right hx.le], by linarith⟩
 
+#print axioms min_succ_eq_sum
+#print axioms hasSum_shifted_geometric
+#print axioms cue_series_hasSum
+#print axioms cueL_closed_form
+#print axioms tendsto_N_one_sub_exp
+#print axioms cueL_tendsto
+#print axioms laplace_min_one
+#print axioms plateau_defect_neg
 end Bgs.Mathlib

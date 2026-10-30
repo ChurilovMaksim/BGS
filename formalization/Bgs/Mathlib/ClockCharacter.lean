@@ -242,4 +242,17 @@ theorem lattice_points_in_window (η x : ℝ) (L : ℕ) (n : ℤ)
     have : (n : ℝ) < ⌈x - η⌉ + L := by linarith [h.2]
     exact_mod_cast this
 
+#print axioms zpow_eq_of_intCast_eq
+#print axioms clock_entry_eq
+#print axioms den_residue_injective
+#print axioms clock_den_ne_zero
+#print axioms clock_alternant_ratio
+#print axioms clock_trace_pow_eq_zero
+#print axioms clock_low_characters
+#print axioms two_copy_dimensions
+#print axioms clock_two_copy_max
+#print axioms dim_ge_of_sq
+#print axioms clock_trace_pow_N
+#print axioms lattice_count
+#print axioms lattice_points_in_window
 end Bgs.Mathlib

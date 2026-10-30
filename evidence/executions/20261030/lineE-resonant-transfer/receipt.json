@@ -1,6 +1,7 @@
 {
   "schema": "bgs-lineE-integration-receipt-v1",
   "base": "ChurilovMaksim/BGS@347f1730",
+  "merged_main": "ChurilovMaksim/BGS@4f9d4766 (normal merge commit; closure_condition added for BGS-TRACE-188 and 196; #print axioms coverage 1255/1255)",
   "branch": "lineE-resonant-transfer",
   "integrated_on": "2026-10-30",
   "id_assignment": {
@@ -141,8 +142,8 @@
     "BGS-TRACE-195 covers m = 11 and 13 only; the m = 17 certificate was pending at commit time and nothing is claimed for it."
   ],
   "sha256": {
-    "formalization/Bgs/LineE.lean": "b3a91202d2b1e83ef030570e679569562c8f96548050f6f834bdbe20754e65f1",
-    "formalization/Bgs/LineEResonance.lean": "abd0b0866b82875f502608f3b15db69dd96a52194a0c4ed167d77a125cfcc29e",
+    "formalization/Bgs/LineE.lean": "b93fd7e1b52232e8432e806b9ba255c6081a55d5d3c5910bb7f024c577c1e84d",
+    "formalization/Bgs/LineEResonance.lean": "61aa16283011f74f4a1f220e3cdb4b174401aee80c0793fcb297024c36633dba",
     "mathematics/fixed-map/resonant_residue_lineE.md": "b330dabcd5f390e24a653503e0b4109ff1280382f123ac2b0c08763dee540dcb",
     "computations/verification/lineE/code/cert.py": "c0a28b3ed1e782954ee7f1c1b1adc4d946c35535cc257b323e5cfabb1fcaba46",
     "computations/verification/lineE/code/bounds.py": "b7841a6d695783602fbd3ed94a58eecdfb7c977ffb2c7caa4450aef277c605d3",

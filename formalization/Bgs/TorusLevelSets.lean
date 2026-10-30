@@ -88,4 +88,5 @@ theorem nonzero_level_action_free : freeAction = true := by
 #print axioms global_count_identity
 #print axioms nonzero_level_action_free
 
+#print axioms action_generator_exact_order
 end Bgs.TorusLevelSets

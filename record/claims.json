@@ -240,7 +240,8 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Normalized mixed-residual decay hypotheses remain unproved for the frozen propagator."
+      "boundary": "Normalized mixed-residual decay hypotheses remain unproved for the frozen propagator.",
+      "closure_condition": "The normalized mixed-residual decay hypotheses (H3) hold for the frozen propagator: for every fixed s > 0, with w = is/2 and v = −is/2, |E_{2,N}(w,v)|/(1+M_3) → 0, |E_{3,N}(w,v,v)|/(1+M_4) → 0, and |E_{3,N}(w,w,v)|/(1+M_4) → 0, for U_N = exp(i 10^(−80) N A_N) M_N. Finite regression is supporting evidence, not part of the condition."
     },
     {
       "id": "BGS-FM-005",
@@ -490,7 +491,8 @@
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
-      "boundary": "Single-anchor/all-order and countably dense mixed tests suffice for the whole-space compact-uniform hypothesis. FM-007 is used only for actual logarithmic short-leg deletion, O(N^(-1/40) log N) with the original denominator, not for external characterization. Actual anchors, long-long signed residual and full hierarchy remain open. Formalization coverage is integer kernels only: formalization/Bgs/CueLoopKernels.lean proves cleared-denominator cubic identities (cubic_below_dimension, cubic_positive_part, eliminate_cubic); it does not formalize trace expectations, real/complex analysis, or BGS."
+      "boundary": "Single-anchor/all-order and countably dense mixed tests suffice for the whole-space compact-uniform hypothesis. FM-007 is used only for actual logarithmic short-leg deletion, O(N^(-1/40) log N) with the original denominator, not for external characterization. Actual anchors, long-long signed residual and full hierarchy remain open. Formalization coverage is integer kernels only: formalization/Bgs/CueLoopKernels.lean proves cleared-denominator cubic identities (cubic_below_dimension, cubic_positive_part, eliminate_cubic); it does not formalize trace expectations, real/complex analysis, or BGS.",
+      "closure_condition": "The whole-space compact-uniform hypothesis holds beyond the single-anchor/ all-order and countably dense mixed tests: actual anchors, the long-long signed residual and the full hierarchy are established. FM-007's role remains actual logarithmic short-leg deletion, O(N^(−1/40) log N) with the original denominator, not external characterization."
     },
     {
       "id": "BGS-RES-001",
@@ -3042,7 +3044,8 @@
         "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "For every fixed L, K,kappa>0 and m=ceil(log(2N)^(1+kappa)), intersection-probability uniform equality of all incoming/outgoing diagonal powers through L, vanishing off-diagonal powers and mixed entries S(uT/N)^r, and all fixed empirical clock moments. The explicit full-depth reference measure follows conditionally; its rank lower bound is exact pathwise. Additional flatness probability tending to one yields actual weak probability convergence and killed-expectation convergence only. Flatness probability, growing-order and edge bounds, unrestricted exceptional-event moments, actual freeness, scalar microscopic eigenphase identification and BGS remain open. Two false original finite-word assertions were repaired before promotion; finite controls and internal review are not formal or external certification.",
-      "priority_status": "not-established"
+      "priority_status": "not-established",
+      "closure_condition": "All-time flatness holds (flatness probability tending to one). Under it, the explicit full-depth reference measure and actual weak probability convergence and killed-expectation convergence follow as stated in the boundary; the rank lower bound is already exact pathwise. Growing-order and edge bounds, unrestricted exceptional-event moments, actual freeness, scalar microscopic eigenphase identification and BGS are outside this claim's closure and remain open separately."
     },
     {
       "id": "BGS-TRACE-061",
@@ -3388,7 +3391,8 @@
         "manuscript/unified_sections/microscopic_paths_and_phase_laws.tex"
       ],
       "boundary": "Every ordered centered singular value contracts under classical stochastic complementation; independently, every ordered singular value contracts under algebraic Schur complementation of an arbitrary complex contraction with invertible deleted-block resolvent. Quantum intensity and reversal matrices have these complements as conditional means only. Under all-time flatness, explicit stopped-potential bounds propagate small initial intensity and reversal gaps to ceil(log(2N)^(3+kappa)) with intersection failure O(log(2N)^(-kappa)). FM-021/022 supply the respective actual-map initial gaps. Flatness probability, complete symmetry classification, scalar microscopic law and BGS remain open.",
-      "priority_status": "not-established"
+      "priority_status": "not-established",
+      "closure_condition": "All-time flatness holds. Under it, the explicit stopped-potential bounds propagate the small initial intensity and reversal gaps (supplied for the actual map by FM-021/022) to ceil(log(2N)^(3+κ)) with intersection failure O(log(2N)^(−κ)), as stated in the boundary. Flatness probability, complete symmetry classification, scalar microscopic law and BGS remain open separately and are outside this claim's closure."
     },
     {
       "id": "BGS-TRACE-074",
@@ -3781,7 +3785,8 @@
       "manuscript": [
         "manuscript/unified_sections/spectral_functionals_integration.tex"
       ],
-      "boundary": "Conditional on the exact quantitative G1-G3 analytic inputs pinned in the source. Finite algebra checks do not recertify those analytic inputs. No cyclic Heisenberg trace bound."
+      "boundary": "Conditional on the exact quantitative G1-G3 analytic inputs pinned in the source. Finite algebra checks do not recertify those analytic inputs. No cyclic Heisenberg trace bound.",
+      "closure_condition": "The exact quantitative G1–G3 analytic inputs pinned in the source (mathematics/fixed-map/scaled_weyl_overlap.md) are established. Finite algebra checks do not by themselves recertify those analytic inputs and do not close this claim."
     },
     {
       "id": "BGS-CUE-002",
@@ -4029,7 +4034,8 @@
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_focus_20261017/dimension_uniform_feedback.md",
         "archive/evidence/executions/20261019/chat-research/bgs_focus_20261016/deep_feedback_gaussian.md"
-      ]
+      ],
+      "closure_condition": "The pinned feedback trajectory/moment inputs and the reversal hypothesis hold as stated in the source, with u → ∞ and u/N → 0 (no substitution u = 2 and no fixed frozen spectrum law)."
     },
     {
       "id": "BGS-TRACE-096",
@@ -4074,7 +4080,8 @@
       "proof_dependencies": [
         "archive/evidence/executions/20261019/chat-research/bgs_continue_20261017/uniform_heisenberg_path_current.md",
         "archive/evidence/executions/20261019/chat-research/bgs_continue_20261017/tensor_path_current_limit.md"
-      ]
+      ],
+      "closure_condition": "The stated fixed-level TV compactness TC holds. The claim then evaluates the specified normalized positive current only; Haar identification and all signed traces are outside its scope and are not closed by it."
     },
     {
       "id": "BGS-TRACE-098",
@@ -4697,7 +4704,8 @@
       "proof_dependencies": [
         "mathematics/resonance-cohomology/phase_regularized_resonance.md",
         "mathematics/resonance-cohomology/weighted_wiener_resonance.md"
-      ]
+      ],
+      "closure_condition": "The four-atom gap separation lemma used by thm:two-variable-tail is proved in full: a complete proof (recalculated in full) replaces the manuscript sketch that the 2026-10-20 review did not accept as a complete proof. The fuller algebraic argument recorded in mathematics/resonance-cohomology/phase_regularized_resonance.md is then the proof of record for the lemma."
     },
     {
       "id": "BGS-RES-015",
@@ -4718,7 +4726,8 @@
         "manuscript/unified_sections/phase_crossover.tex"
       ],
       "boundary": "Fixed q>=1, R>=2q and fixed nonzero v; constants depend only on A, v, q, R. Two-sided order estimate, not a claimed exact leading constant. Smallest eigenvalue of a classical observable Gram matrix, not the spectral edge of a quantum Hamiltonian or a BGS eigenphase statistic.",
-      "dependency_scope": "BGS-RES-014 is cited for the general two-variable tail symbol only; for this fixed-support family the symbol is computed directly in the section and in mathematics/resonance-cohomology/two_window_resonance_crossover.md (complete finite-difference proof), so the conditional four-atom gap lemma of the general case is not used."
+      "dependency_scope": "BGS-RES-014 is cited for the general two-variable tail symbol only; for this fixed-support family the symbol is computed directly in the section and in mathematics/resonance-cohomology/two_window_resonance_crossover.md (complete finite-difference proof), so the conditional four-atom gap lemma of the general case is not used.",
+      "scope_check": "2026-10-30 scope check (base 347f1730): dependency_scope verified accurate — BGS-RES-014 is cited only for the general two-variable tail symbol; for this fixed-support family the symbol is recomputed directly (two_window_resonance_crossover.md §2, |(z²−tz+1)^q|² and the reciprocal-circle identity); the conditional four-atom gap lemma is not invoked (single orbit; gaps k ≥ R+1−2q ≥ 1). No premise_discharge is needed. Scope verdict only, not an attestation of the §§3–5 estimates. Sources (blobs at 347f): mathematics/resonance-cohomology/two_window_resonance_crossover.md 91a939…, mathematics/resonance-cohomology/resonance_riesz_regularization.md da2c145…, manuscript/unified_sections/phase_crossover.tex 2d7e23…."
     },
     {
       "id": "BGS-RES-016",
@@ -4887,7 +4896,8 @@
       "manuscript": [
         "manuscript/unified_sections/return_words.tex"
       ],
-      "boundary": "Conditional on the exact return identity (RW.1) and on the pairwise disjoint tower E_j=S^{-j}E, 0<=j<L, for the chosen symbols; anti-palindromic lists h_{L-1-j}=-h_j satisfy (RW.1) automatically for every e and N. Uniform for |kappa|<=B, each fixed B. The explicit four-site example of the section is registered separately as BGS-RET-004: its tower disjointness rests on the exact integer certificate named in the section (computations/cpp/return_word_certificate.cpp, with its deposited PASS log) and on the independent Python verifier computations/verification/noncommuting_tower.py."
+      "boundary": "Conditional on the exact return identity (RW.1) and on the pairwise disjoint tower E_j=S^{-j}E, 0<=j<L, for the chosen symbols; anti-palindromic lists h_{L-1-j}=-h_j satisfy (RW.1) automatically for every e and N. Uniform for |kappa|<=B, each fixed B. The explicit four-site example of the section is registered separately as BGS-RET-004: its tower disjointness rests on the exact integer certificate named in the section (computations/cpp/return_word_certificate.cpp, with its deposited PASS log) and on the independent Python verifier computations/verification/noncommuting_tower.py.",
+      "closure_condition": "The exact return identity (RW.1) holds and the tower E_j = S^(−j)E, 0 ≤ j < L, is pairwise disjoint for the chosen symbols, uniformly for |κ| ≤ B at each fixed B. Anti-palindromic lists h_{L−1−j} = −h_j satisfy (RW.1) automatically for every e and N, as stated in the boundary."
     },
     {
       "id": "BGS-RET-004",
@@ -6218,7 +6228,8 @@
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/band_limited_kick_bridge.tex"
-      ]
+      ],
+      "closure_condition": "P_K-separation of Gamma-classes holds with a gap delta: for m ≤ 7, this is established by promotion of BGS-TRACE-153 to proved (the computer check for K containing {1..m} or {1,2}); for m > 7, separation must be established separately. Under separation, |c_1| → 0 by the bound in the boundary (|c_1| ≤ C_m η^4 exp(−a_min² η² δ²/4))."
     },
     {
       "id": "BGS-TRACE-159",
@@ -6369,7 +6380,8 @@
       ],
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"
-      ]
+      ],
+      "closure_condition": "ND_m is established for general m (beyond the finite checks: exact for m ≤ 8, m ≠ 6, and float clustering at m = 9). Then Theorem 4 (0 ≤ 2m − B_m ≤ 224 m² D_m^(−1/2)) and Theorem 5 (the N-average over the stated window performing the eta-average) hold as stated; 2m remains the COE diagonal-approximation value at fixed m (τ = m/N → 0), not a statement at τ = O(1), and B_m → 2m is not claimed by this closure."
     },
     {
       "id": "BGS-TRACE-165",
@@ -6641,7 +6653,8 @@
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"
-      ]
+      ],
+      "closure_condition": "The named external inputs are verified for the parity transfer operator, not merely cited: (I1) the Faure–Roy/Rugh analytic Ruelle–Pollicott spectrum, (I2) the mean ergodic theorem for peripheral resonances, and (I3) Livsic / Pollicott–Walkden. Then for every η ≠ 0 the leading resonance has modulus μ(η) < 1 and |χ_m(η)| ≤ C_η (μ(η) + ε)^m, with C_η not explicit and no rate claimed."
     },
     {
       "id": "BGS-TRACE-175",
@@ -6689,7 +6702,8 @@
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"
-      ]
+      ],
+      "closure_condition": "ND^(≤k) is proved in general, including unequal-length relations. Then E|Z_m|^(2k) = M_k with k! B^k (1 − k² w_max/B) ≤ M_k ≤ k! B^k, and Z_m/√(B_m) tends to a complex Gaussian in moments, averaged over ν AND the Bohr variable η, not at fixed η."
     },
     {
       "id": "BGS-TRACE-177",
@@ -6987,7 +7001,8 @@
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/resonant_residue_lineE.tex"
-      ]
+      ],
+      "closure_condition": "Hypothesis H_infinity is proved: the full-alphabet k1 operator L_4^(infinity) is quasi-compact on a Banach space of analytic functions on a domain containing D_rho, with an isolated simple eigenvalue |mu_infinity| > lambda^(1/4), the rest of the spectra of all L_a^(infinity) in a smaller disc, and the trace formula holds. Float Galerkin evidence is supporting evidence, not part of the condition. Closure yields the k1-kick analogue of Conjecture R only; Conjecture R itself (BGS-TRACE-179) is outside this claim's closure."
     },
     {
       "id": "BGS-TRACE-189",
@@ -7196,7 +7211,8 @@
       "formalization": [],
       "manuscript": [
         "manuscript/unified_sections/resonant_residue_lineE.tex"
-      ]
+      ],
+      "closure_condition": "Hypothesis H_infinity,7(s) is proved for at least one sign s in {+1,-1}: the full-alphabet 49-state operators of BGS-TRACE-194 for the Line B kick at eta = 2 and that s are quasi-compact on a Banach space of analytic functions with the trace formula, and one sector has an isolated simple eigenvalue mu_s with |mu_s| > lambda^(1/4) dominating all other spectrum of the s-family. The float Galerkin values (|mu_+1| = 1.884, |mu_-1| = 1.897) and the pending m = 17 certificate are supporting evidence, not part of the condition. Closure yields failure of Conjecture R at eta = 2 along odd m with 3 not dividing m only; the subsequence 3 | m is outside this claim's closure."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

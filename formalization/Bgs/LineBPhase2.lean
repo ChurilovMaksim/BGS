@@ -98,4 +98,17 @@ theorem thmN_m19_condA : condA 9369319 19 = true := by decide
 set_option maxRecDepth 20000 in
 theorem thmN_m19_condB : condB 9369319 19 = true := by decide
 
+#print axioms thmD_matches_direct
+#print axioms Deff_odd
+#print axioms only_n7_has_symmetries
+#print axioms n7_all_units
+#print axioms shifted_real_parts
+#print axioms big_weight_separation
+#print axioms coefficient_classes
+#print axioms thmN_m7
+#print axioms thmN_m19_prime
+#print axioms thmN_m19_h
+#print axioms thmN_m19_order
+#print axioms thmN_m19_condA
+#print axioms thmN_m19_condB
 end Bgs.LineB.Phase2

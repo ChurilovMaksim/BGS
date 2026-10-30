@@ -82,4 +82,21 @@ theorem cert49_19m : cert49 9 (-1) 5975331 32 9 7 38 = true := by decide
 /-- negative control: the wrong 7-adic coupling (γ = 38 instead of 11 at s = +1) fails -/
 theorem cert49_11_control : cert49 5 1 12717 32 6 1 38 = false := by decide
 
+#print axioms nsw_mod7_cycle
+#print axioms nsw_mod7
+#print axioms three_dvd_iff
+#print axioms cert49_5p
+#print axioms cert49_5m
+#print axioms cert49_7p
+#print axioms cert49_7m
+#print axioms cert49_11p
+#print axioms cert49_11m
+#print axioms cert49_13p
+#print axioms cert49_13m
+#print axioms cert49_17p
+#print axioms cert49_17m
+#print axioms cert49_19p
+#print axioms cert49_19m
+#print axioms cert49_11_control
+
 end Bgs.LineE

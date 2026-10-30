@@ -135,4 +135,15 @@ theorem cue_form_factor_eq_one_sub_triangle (t : ℝ) :
   · rw [min_eq_left h, max_eq_left (by linarith)]; ring
   · rw [min_eq_right h, max_eq_right (by linarith)]; ring
 
+#print axioms sineKernel_zero
+#print axioms sineKernel_of_ne_zero
+#print axioms sineKernel_sq_le_one
+#print axioms sine2Pair_nonneg
+#print axioms sine2Pair_le_one
+#print axioms sine2Pair_zero
+#print axioms sine2Pair_int
+#print axioms sine2Pair_tendsto_one
+#print axioms sineKernel_sq_eq_half_fourier
+#print axioms sineKernel_sq_eq_fourier_triangle
+#print axioms cue_form_factor_eq_one_sub_triangle
 end Bgs.Mathlib

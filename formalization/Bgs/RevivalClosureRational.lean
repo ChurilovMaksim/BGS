@@ -175,4 +175,31 @@ theorem half_101 : isMinusOne 101 (powMod 101 51) = true := by decide
 theorem ord_61 : ordIs 61 62 = true := by decide
 theorem ord_101 : ordIs 101 102 = true := by decide
 
+#print axioms ord_7
+#print axioms ord_41
+#print axioms ord_239
+#print axioms ord_1393
+#print axioms ord_35
+#print axioms ord_1189
+#print axioms kappa_7
+#print axioms kappa_41
+#print axioms kappa_239
+#print axioms kappa_1393
+#print axioms kappa_8119
+#print axioms kappa_47321
+#print axioms kappa_35
+#print axioms kappa_1189
+#print axioms kappa_40391
+#print axioms cayley_hamilton
+#print axioms pell_shape
+#print axioms cocycle_y
+#print axioms thmA_phase_7
+#print axioms lambda_count_7
+#print axioms window_41
+#print axioms window_239
+#print axioms window_239_nonvacuous
+#print axioms half_61
+#print axioms half_101
+#print axioms ord_61
+#print axioms ord_101
 end Bgs.RevivalClosureRational

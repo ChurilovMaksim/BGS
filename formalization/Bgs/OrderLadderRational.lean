@@ -55,4 +55,16 @@ theorem order_ladder_long_window :
     184981 * (10 : Nat) ^ 104 * 420
       < 26 * ((10 : Nat) ^ 26 - 2) * (160000 * (10 : Nat) ^ 80 - 184981 * (10 : Nat) ^ 26) := by
   decide
+#print axioms order_ladder_five_sixths
+#print axioms order_ladder_exp_partial
+#print axioms order_ladder_exp_square
+#print axioms order_ladder_half_gap
+#print axioms order_ladder_three_quarter_gap
+#print axioms order_ladder_distance_room
+#print axioms order_ladder_return_margin
+#print axioms order_ladder_four_returns
+#print axioms order_ladder_one_return_fails
+#print axioms order_ladder_seven_return
+#print axioms order_ladder_short_window
+#print axioms order_ladder_long_window
 end Bgs.OrderLadderRational

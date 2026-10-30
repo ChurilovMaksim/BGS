@@ -34,4 +34,8 @@ theorem detSI : (2 : Int) * 2 - 4 * 2 = -4 := by decide
 momentum-sine coefficients. `Rat` equality does not reduce under `decide`. -/
 theorem momentumSymbol : ((1 * 4 + 1 * 4 : Int) * 2) = (1 * (4 * 4)) := by
   decide
+#print axioms oddEnergy
+#print axioms oddRatio
+#print axioms detSI
+#print axioms momentumSymbol
 end Bgs.SixteenPhaseSymmetryRational
