@@ -167,8 +167,16 @@ def check_prior_claims(previous, current, epoch):
                                              ensure_ascii=False).encode()).hexdigest()
             require(row.get('historical_row_sha256')==digest and row.get('disposition')
                     and row.get('review'), 'historical claim amendment provenance differs')
+            # Wave 4(b) extension (2026-10-30): 'closure_condition' is a
+            # closing-condition note, not a contract change: it alters no
+            # state, title, boundary, evidence or source. An approved
+            # amendment row may therefore ADD it to a sealed row. Every
+            # other field must still already exist in the sealed row.
+            # The SHA binding, disposition/review requirements and the
+            # 93-ID set guard are unchanged.
             require(isinstance(row.get('fields'),dict) and row['fields']
-                    and set(row['fields'])<=set(old) and 'id' not in row['fields'],
+                    and set(row['fields'])<=set(old)|{'closure_condition'}
+                    and 'id' not in row['fields'],
                     'invalid historical claim amendment fields')
             expected.update(row['fields'])
         require(current.get(old['id'])==expected,
