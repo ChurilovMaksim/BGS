@@ -499,7 +499,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**280 registered claims: 229 proved, 15 verification-pending, 15 conditional, 21 open.**
+**290 registered claims: 235 proved, 15 verification-pending, 15 conditional, 25 open.**
 
 ### BGS family (1 claim)
 
@@ -665,7 +665,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (171 claims)
+### TRACE family (181 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -840,5 +840,15 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-194` | **PROVED** | Line E E12: exact a^2-resonance law; 49-state IFS law for the Line B kick at N == -/+196 when 3 does not divide m |
 | `BGS-TRACE-195` | **PROVED** | Line E E13: Gauss-completed orbit formula (Prop. G) and rigorous finite-m lower bounds for the TRACE-179 kick at eta = 2 |
 | `BGS-TRACE-196` | **CONDITIONAL** | Line E E14: conditional asymptotic failure of Conjecture R for the Line B kick at eta = 2 along 3 not dividing m |
+| `BGS-TRACE-197` | **PROVED** | Line F F1: lifted vertex-minus-edge trace identity for the full-alphabet resonance transfer operators |
+| `BGS-TRACE-198` | **PROVED** | Line F F2: certified spectrum of the lifted k1 operators at eta = 2 (full alphabet), and the sector-2/6 reflection lemma |
+| `BGS-TRACE-199` | **PROVED** | Line F F3: for every odd m >= 15 the k1-kick analogue of Conjecture R fails at eta = 2 (unconditional, computer-assisted) |
+| `BGS-TRACE-200` | **PROVED** | Line F F4: the all-m failure transfers to the pure 7-mode kick f7 for 3 not dividing m |
+| `BGS-TRACE-201` | **PROVED** | Line F F5: certified all-m growth at the grid points eta in {1.25, 1.5, 1.75, 2.25, 2.5} (k1, full alphabet) |
+| `BGS-TRACE-202` | **OPEN** | Line F F6: float growth window eta in (0.951, 3.212) for the k1 sector-4 eigenvalue |
+| `BGS-TRACE-203` | **PROVED** | Line G G1/G1'/G2: general (a,b) partial-trace transfer law for Z_m(nu), finite alphabet |
+| `BGS-TRACE-204` | **OPEN** | Line G G3: dilution identity along divisors d of h_m |
+| `BGS-TRACE-205` | **OPEN** | Line G classification record: resonant families, growth rates, G5 (h_d \| h_m), G6 (sparsity), G7 (moment heuristic), eta-scan |
+| `BGS-TRACE-206` | **OPEN** | Line G: Conjecture R' (corrected mean law for the k1 kick at eta = 2) with a pre-registered m = 17 test |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

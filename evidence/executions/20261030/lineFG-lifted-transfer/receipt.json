@@ -1,0 +1,143 @@
+{
+  "schema": "bgs-lineFG-integration-receipt-v1",
+  "base": "ChurilovMaksim/BGS@e378ad11 (main after PR #57, merge 1d9b6580)",
+  "branch": "lineFG-lifted-transfer",
+  "integrated_on": "2026-10-30",
+  "id_assignment": {
+    "highest_registered_trace_on_main": "BGS-TRACE-196",
+    "assigned": "BGS-TRACE-197 through BGS-TRACE-206 (as proposed by the referee)",
+    "renumbered": false,
+    "counts": {
+      "proved": 6,
+      "open": 4
+    },
+    "proved": [
+      "BGS-TRACE-197",
+      "BGS-TRACE-198",
+      "BGS-TRACE-199",
+      "BGS-TRACE-200",
+      "BGS-TRACE-201",
+      "BGS-TRACE-203"
+    ],
+    "open": [
+      "BGS-TRACE-202",
+      "BGS-TRACE-204",
+      "BGS-TRACE-205",
+      "BGS-TRACE-206"
+    ],
+    "annotated_unchanged": [
+      "BGS-TRACE-179",
+      "BGS-TRACE-187",
+      "BGS-TRACE-188",
+      "BGS-TRACE-191",
+      "BGS-TRACE-196"
+    ],
+    "conjecture_state": "the registry has no conjecture state; BGS-TRACE-206 (Conjecture R') is open with a closure_condition"
+  },
+  "referee_report": "computations/verification/lineFG/referee/REPORT.md",
+  "referee_fixes_applied": [
+    "F.6 every quoted bound rounded in the safe direction (code/safe_table.py; e.g. W~rest/m >= 8.06 at m = 15, |mu*| in [1.9154712, 1.9154753], eta = 1.25 table and enclosure consistent)",
+    "H-infinity wording: BGS-TRACE-199 proves the conclusion of BGS-TRACE-188 on a different space; H_infinity is neither proved nor needed; 188 stays conditional",
+    "eta = 2.5 included only with the sector-6 = sector-2 reflection lemma (proof in the note) and a completed E certificate; completed after the audit, not seen by the referee",
+    "F7 wording: float evidence, stable under two discretisations",
+    "Lean moved to formalization/Bgs (Bgs.LineF, Bgs.LineG), wired into Bgs.lean, hypotheses in theorem statements, #print axioms per declaration",
+    "F.7 closed-form assertions in bounds_lift.py (2048-bit check of 2(h-1) < lambda^(m/2))",
+    "G section 3 overclaim removed; R' frozen to one definition (formula_table.py 'pred', k1 only); G3 open (sketch); G7 heuristic",
+    "absolute scratch paths replaced by repository-relative paths or placeholders"
+  ],
+  "python_environment": {
+    "python": "3.13.5",
+    "python-flint": "0.9.0 (128-bit arb)",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0"
+  },
+  "lean_build": {
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "command": "lake exe cache get && nice -n 10 lake build Bgs",
+    "logs": [
+      "lake_cache_get.log",
+      "lake_build_Bgs.log",
+      "lean_axioms_LineFG.log",
+      "lean_controls.log",
+      "axioms_coverage.log"
+    ],
+    "axioms_allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorryAx": false,
+    "native_decide": false
+  },
+  "m17_preregistration": {
+    "file": "computations/verification/lineG/PREDICTIONS_m17.json",
+    "sha256": "fa8505f503790ae2c6265f917debdd4b023b2c50b79412daac7d14f72b8aa344",
+    "outcome": "not included: the k1 m = 17 evaluation finished during integration, after the referee audit, and is unreviewed; nothing is claimed at m = 17"
+  },
+  "nonclaims": [
+    "Conjecture R (BGS-TRACE-179, Line B kick f_B) is not disproved; BGS-TRACE-196 stays conditional.",
+    "All unconditional all-m statements concern the k1 kick (and f7 for 3 not dividing m).",
+    "H_infinity of BGS-TRACE-188 is not proved; its conclusion is obtained on a different space.",
+    "The eta-window (0.951, 3.212) and the f_B lifted eigenvalues are float evidence only.",
+    "R' (BGS-TRACE-206) is a conjecture with four data points; no BGS counterexample; no progress on BGS-TRACE-148."
+  ],
+  "sha256": {
+    "formalization/Bgs/LineF.lean": "0e31f0f9fe484a327d8cf3650032f5a81f7ce4255883209de753d7a202bb5498",
+    "formalization/Bgs/LineG.lean": "d42e31bb4bb70a5fc4c73cd7177b0d7853eb7971863089704acadb3e1d0044ce",
+    "mathematics/fixed-map/lifted_transfer_lineF.md": "e35bbd499b787737e0325ed4e333568ef359d0bf1100dc6ab4f73a470daede7b",
+    "mathematics/fixed-map/resonance_classification_lineG.md": "adf7252016ff8934f109d6dfe942dece69104f8f8ef85c4085e1f03d7a1d7e24",
+    "manuscript/unified_sections/lifted_transfer_lineFG.tex": "5afc7c0e15ddf7b699a3bce5a823070b53d12cad947dfa29257b162f93d3c35f",
+    "computations/verification/lineF/code/lift.py": "3e94a8b88c227d01093725c2c7f193339e628ba9ac741d4f3c00bcba63c5df64",
+    "computations/verification/lineF/code/cert_lift.py": "9391cc4d2d651fe4ff418e096365fe01c0900b98f6199db6eef7d86bfb022b4a",
+    "computations/verification/lineF/code/bounds_lift.py": "0a621237045c3eb2e8282104501b61d40a27dd1bead9035fd04032b1c6a75e3b",
+    "computations/verification/lineF/code/safe_table.py": "fa5f53503c553d06cef8799a89a84fe6e33682e9ceed1671aee6c9e74ae4a01c",
+    "computations/verification/lineF/logs/safe_table.md": "d24188890ae80fe300a96e7556c22bf98ec15399157b8c757c308827d44c8d40",
+    "computations/verification/lineG/PREDICTIONS_m17.json": "fa8505f503790ae2c6265f917debdd4b023b2c50b79412daac7d14f72b8aa344",
+    "computations/verification/lineG/PREDICTIONS_m17.sha256": "99a9fd11fdff3e840ff2e9405360f92d7674b0e2d9f30c463b4f4064fb955120",
+    "computations/verification/lineG/code/formula_table.py": "6f5bcbc20a8508d803fd5104545bcd813cbbc458d0fc19a105b149eb3994c054",
+    "computations/verification/lineG/code/eval17.py": "a56aa6e136c325e2c670c2a53d4aa39241f9e08995d164911095c2fc843d3be2",
+    "computations/verification/lineG/code/law.py": "877a95a5de303026c5fc2892cc802041cfd1669ccf0f1ee9392b74034d714d4a",
+    "computations/verification/lineG/logs/bin_sha256.txt": "d9142effdbfaa39c704f78f259712b9ef1b0dbae48ac7b2337194b0dd1d40647",
+    "computations/verification/lineFG/referee/REPORT.md": "5ef8582e6097315c8ac9c81f06315cbb49f19753cf6f8439931b99272e11218a",
+    "computations/verification/lineFG/referee/code/own_cert.py": "c47ca955436ef7b2d8419aafb632888098c8d2cccf28a6099ee7504447ee21c2",
+    "computations/verification/lineFG/referee/code/g_law.py": "8f109dd392c045ab7228dbdf2bdc268ed9925e7a9b6df6ecbf88045db750f754",
+    "computations/verification/lineF/logs/bounds_eta1.25.json": "02b1fffa13134c066b3de39fefc9ca7a64dc7a7f86f5dc0eb6aa02da2c3fc94d",
+    "computations/verification/lineF/logs/bounds_eta1.5.json": "bb230a85184e55131912d71f854e6dcf28a31fff0f300424abcf2077efa90cae",
+    "computations/verification/lineF/logs/bounds_eta1.75.json": "6ca64ba1d90bac74280bc3f51b74bdf82215684acc1a9382dec09fad50a2b0df",
+    "computations/verification/lineF/logs/bounds_eta2.25.json": "7dafadfc627a8d8c4483d9d34787c0afaa63d28120b9877840920e4ca2c328e2",
+    "computations/verification/lineF/logs/bounds_eta2.5.json": "45a051e3e8c62c859dc66cc962a5610ce217aa4934e4f78c55a32a494820d773",
+    "computations/verification/lineF/logs/bounds_eta2.json": "80a435868b28d389c5d80512d07f5abf52ae643a30901622ff670b8dedfe5260",
+    "computations/verification/lineF/logs/certE_eta1.25.json": "9850892cf513964bef13a1ed63d3b141350c4520a60fc3d374fb628fa5850725",
+    "computations/verification/lineF/logs/certE_eta1.5.json": "9a801729bd7bf72c42f04f489397385ce5608728352a69cc6b0cfa6617300af4",
+    "computations/verification/lineF/logs/certE_eta1.75.json": "b9f296c181cb676c33b31010b4c8020b7541d244b657b5ac767c8538ee35707c",
+    "computations/verification/lineF/logs/certE_eta2.25.json": "b1b45bd94b1df2cbbe9defca30b0cfe5172333fd9d6a1718c5e7ef8c34997498",
+    "computations/verification/lineF/logs/certE_eta2.5.json": "eb9337e3bd6ec2a4902d899b694fc350ed2115d17ce9be1123f8f0a98ed8c4db",
+    "computations/verification/lineF/logs/certE_eta2.json": "c7e9ae15688116c4d3b18d4d2e67bf4272274a853a53e55b9108bfa29150270b",
+    "computations/verification/lineF/logs/certV_eta1.25_a0.json": "074e531f3104c4337939257b9520c85c7541eb2663810c5830ef4b175696b995",
+    "computations/verification/lineF/logs/certV_eta1.25_a2.json": "faa58c3ff886191c67913722dc8d42f5bb5e1c77b7eee37162dea90e66c68801",
+    "computations/verification/lineF/logs/certV_eta1.25_a4.json": "46c1c93f0cd1a24dd559eaa68ffdaf19f779d1c8ecce15f7854846e8e94c19b6",
+    "computations/verification/lineF/logs/certV_eta1.25_a6.json": "3a177691708f777c72b073198573f636eb095e15d10d4e1c5bdc260ff69b2dd8",
+    "computations/verification/lineF/logs/certV_eta1.5_a0.json": "69472e921827e460197b5f6c46a8d6b8551b4301365ab8baa77c67d8a52208f7",
+    "computations/verification/lineF/logs/certV_eta1.5_a2.json": "9dba6a420daabcc2cd8a944a0d7d96b1ad0282c18bf3230ed5626364e112df3f",
+    "computations/verification/lineF/logs/certV_eta1.5_a4.json": "87d63f3d322e553036557ef0f7d00c7351c21dd054d17e7ce79a6bca833c2140",
+    "computations/verification/lineF/logs/certV_eta1.5_a6.json": "346cef7c5b6526647b9751182e35c35924b9c2ee7136776cab761b7b1c7f269d",
+    "computations/verification/lineF/logs/certV_eta1.75_a0.json": "67dd00f707bba40f8f9803368ce16245635335ed91122b7e35b11624da09b43e",
+    "computations/verification/lineF/logs/certV_eta1.75_a2.json": "966e470e5c17a4c3a0e690fe8b9fc99e00a6c91624328c12705b371ee434002f",
+    "computations/verification/lineF/logs/certV_eta1.75_a4.json": "aab21336f2e9770a1b83afb558a7ed196e1f61fdea792d67c7b50e29b073902f",
+    "computations/verification/lineF/logs/certV_eta1.75_a6.json": "6588c98dc768b683132d546cd39c70a4aeb87d54f68310c4815d9fe05aa8a2b7",
+    "computations/verification/lineF/logs/certV_eta2.25_a0.json": "ae9bc80e4e22eb10947ee67bc6138b38170f8b998ed1b765e2973f7e8e642411",
+    "computations/verification/lineF/logs/certV_eta2.25_a2.json": "8717e4859a7af6982cd36da00212cc5e8df8645c8d1f20276b6d5855e1a10e30",
+    "computations/verification/lineF/logs/certV_eta2.25_a4.json": "e758b319c928b4db207bcd0142455e4877629aa5472d3e2007748729aa80e2af",
+    "computations/verification/lineF/logs/certV_eta2.25_a6.json": "d2cca655cfd1766bd98ba5a0e517ed6cdf27f47b657ebab7cc8d5a4c6bd59663",
+    "computations/verification/lineF/logs/certV_eta2.5_a0.json": "ce008ae56a93506038a421fb5bdb921789de31b8e0f22caf8e8194fc37772d0a",
+    "computations/verification/lineF/logs/certV_eta2.5_a2.json": "87c05ed0ce7e49cb316bccee75d620826a3db995bf64f699d1f31168b6d4fe6a",
+    "computations/verification/lineF/logs/certV_eta2.5_a4.json": "e8678bc78dd93b38a4e2f289c79c89a8542902ec9633dab10a2004f1b4ad9d6c",
+    "computations/verification/lineF/logs/certV_eta2.5_a6.json": "ec50d3c0f0c20a2df8f67bcd5b7455cae4b5e4c990a8ff0f1bb72bc45f66ad4d",
+    "computations/verification/lineF/logs/certV_eta2_a0.json": "96bc499dedb04931d2af594ec8bc8b36f99fe51ad20b1fa6c970e2d441c60c75",
+    "computations/verification/lineF/logs/certV_eta2_a2.json": "f0f23be61b33803f517db52fc762324eded5a5f9060d5c198e5ae7d5ae05e418",
+    "computations/verification/lineF/logs/certV_eta2_a4.json": "b8d8d2ebf78fe68d4d46a90a8bf42f00a917b2cb6c083b05c7aa762eb7e963a5",
+    "computations/verification/lineF/logs/certV_eta2_a4_tight.json": "c77348b666be93769dc02b940d3bfa357d5c593fac27a550868c2362b2795db1",
+    "computations/verification/lineF/logs/certV_eta2_a6.json": "b0eda74e542485201ca44d8097cb1e66ad11eedebf03104ddc159c7d3d4ff459"
+  }
+}

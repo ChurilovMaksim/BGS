@@ -1,0 +1,46 @@
+% Lines F and G. Registered IDs BGS-TRACE-197 to BGS-TRACE-206 (next free after BGS-TRACE-196 on main e378ad11).
+% Wiring: \input{unified_sections/lifted_transfer_lineFG.tex} in manuscript/BGS_unified.tex, directly after the Line E section.
+% Audited by an independent referee (computations/verification/lineFG/referee/REPORT.md); blocking fixes applied.
+% Certified bounds are quoted in the safe direction (lower bounds rounded down, upper bounds up, enclosures outward).
+\section{Lifted transfer operators and the resonance classification (Lines F and G)}
+\label{sec:lifted-transfer-lineFG}
+Notation is that of Section~\ref{sec:resonant-residue-lineE}. The canonical notes are \path{mathematics/fixed-map/lifted_transfer_lineF.md} and
+\path{mathematics/fixed-map/resonance_classification_lineG.md}; scripts, logs, certificates, the pre-registered \(m=17\) file and the referee material are in
+\path{computations/verification/lineF/}, \path{computations/verification/lineG/} and \path{computations/verification/lineFG/}. The combinatorial and algebraic cores are
+kernel-checked in \path{formalization/Bgs/LineF.lean} and \path{formalization/Bgs/LineG.lean} (no \texttt{sorry}, no \texttt{native\_decide}). Statuses are those of \path{record/claims.json}.
+
+\paragraph{Scope and non-claims.} Every rigorous statement below concerns the \(k1\) kick \(0.9\cos2\pi q\) (and \(f_7\) by BGS-TRACE-193). Nothing concerns the Line B kick \(f_B\) of Conjecture R: BGS-TRACE-179 stays open and BGS-TRACE-196 stays conditional. BGS-TRACE-199 proves the conclusion of BGS-TRACE-188 for \(k1\) at \(\eta=2\) on a different, explicit space; hypothesis \(H_\infty\) as stated there is neither proved nor needed.
+
+\begin{theorem}[Lifted trace identity, BGS-TRACE-197, proved]
+Let \(\rho_V>\lambda/(2(\lambda-1))\approx0.6036\), \(\rho_E>1/(2(\lambda-1))\approx0.1036\), \(\beta>0\), and \(\sum_n\lvert w(n)\rvert e^{\alpha\lvert n\rvert}<\infty\) with \(\alpha>2\pi c\max(\rho_V,\rho_E)+\beta/\lambda\). The vertex and edge operators \(L_V,L_E\) on weighted \(\ell^2\)-sums of Hardy spaces over the disc lattices are trace class, and for every \(m\ge1\), \(\sum_{n\in\mathbb Z^m}\prod_jw(n_j)e(cn_js_j)=(1-\lambda^{-m})(\operatorname{Tr}L_V^m-\operatorname{Tr}L_E^m)\), where \(s_j\) is the periodic orbit of the word \(n\). Hence \(Z_m(\nu^*)=(1-\lambda^{-m})\sum_{a\in\{0,2,4,6\}}c_a(\operatorname{Tr}L_{V,a}^m-\operatorname{Tr}L_{E,a}^m)\) for the full alphabet. The counting step (number of closed vertex chains minus closed edge chains equals one) is formalised in Lean.
+\end{theorem}
+
+\begin{theorem}[Certified spectrum at eta two, BGS-TRACE-198, proved (computer-assisted)]
+For the full-alphabet \(k1\) operators at \(\eta=2\), \(L_{V,4}\) has exactly one eigenvalue \(\mu^*\) (simple) with \(\lvert\mu^*\rvert\ge1\), and \(\lvert\mu^*\rvert\in[1.9154712,1.9154753]\); all other spectrum of all sectors of both lattices lies in \(\lvert z\rvert<1\); \(\lVert L_V\rVert_1\le730.15\), \(\lVert L_E\rVert_1\le22.94\). The reflection \((U\Phi)_k(s)=\Phi_{-k}(-s)\) is unitary and conjugates sector 2 to sector 6.
+\end{theorem}
+
+\begin{theorem}[All-m failure of the k1 analogue of Conjecture R, BGS-TRACE-199, proved (computer-assisted)]
+For the \(k1\) kick at \(\eta=2\) and every odd \(m\ge15\): \(F_m/2m\ge6.03\), \(\tilde W^{\mathrm{rest}}_m/m\ge8.06\), and \(F_m/2m\ge0.169\cdot1.5197^m/m\to\infty\). In particular \(\lvert\tilde W^{\mathrm{rest}}_m(2)\rvert>m\) for all odd \(m\ge15\).
+\end{theorem}
+
+\begin{corollary}[Pure 7-mode kick, BGS-TRACE-200, proved (computer-assisted)]
+The bounds of BGS-TRACE-199 hold for \(f_7=0.9\cos2\pi\cdot7q\) at \(\eta=2\) for every odd \(m\ge15\) with \(3\nmid m\).
+\end{corollary}
+
+\begin{theorem}[Certified eta grid, BGS-TRACE-201, proved (computer-assisted; grid points only)]
+For the full-alphabet \(k1\) kick, \(\lvert\tilde W^{\mathrm{rest}}_m\rvert>m\) for every odd \(m\ge m_1(\eta)\) with \(m_1=31,19,15,31,35\) at \(\eta=1.25,1.5,1.75,2.25,2.5\); e.g.\ \(\lvert\mu^*\rvert\in[1.708750,1.710751]\) and \(F_{31}/2m\ge2.927\) at \(\eta=1.25\).
+\end{theorem}
+
+\begin{remark}[Open items of Line F, BGS-TRACE-202]
+Float spectra give \(\lvert\mu^*(\eta)\rvert>\lambda^{1/4}\) for \(\eta\in(0.951,3.212)\) (not certified). For \(f_B\) the lift reduces the infinite-alphabet part of \(H_{\infty,7}\) to a finite certificate of about 24\,000 dimensions per operator, which was not run; float values \(\lvert\mu\rvert=1.8839,1.8968\), next cluster \(1.27\)--\(1.30\), stable under two discretisations.
+\end{remark}
+
+\begin{theorem}[General partial-trace law, BGS-TRACE-203, proved (finite alphabet)]
+For every unit \(\nu\) and every \((a,b)\) with \(b\nu\equiv a\pmod{2h}\), and every finitely supported kick, \(Z_m(\nu)=(1-\lambda^{-m})\operatorname{Tr}_H[(I\otimes\langle\mathbb 1\rvert)\mathcal L^m(I\otimes\lvert\delta_0\rangle)]\) with \(\mathcal L=\sum_n\hat g(n)R_n\otimes A_n\) on \(H^2(D_\rho)\otimes\mathbb C^{b^2}\), \(R_n\) a weighted composition operator with coupling \(-4ac/b\) and \(A_n\) the automaton step for \(P\bmod b\). On each residue class of \(m\) the sequence is an exponential sum over the eigenvalues of a fixed trace-class operator.
+\end{theorem}
+
+\begin{remark}[Dilution, classification and Conjecture R prime, BGS-TRACE-204 to 206]
+BGS-TRACE-204 (open): a dilution identity along divisors \(d\mid h_m\), with a proof sketch and exact checks at prime \(d\) only.
+BGS-TRACE-205 (open): the numerical classification of outliers at \(m=7,\dots,15\) (primaries \(N\equiv\pm4,\pm8\), dilution families, \(49\times\) images), \(h_d\mid h_m\) (Lean), a sparsity count and a heuristic moment hierarchy.
+BGS-TRACE-206 (open conjecture): with the frozen definition of the explicit resonance sum \(\mathrm{Res}_m\) over \(N\equiv\pm4,\pm8\) and their included dilution levels, \(F_m=4m+\mathrm{Res}_m+o(m)\) for the \(k1\) kick at \(\eta=2\). The evidence is four values \(m=9,\dots,15\) with an upward drift; an \(m=17\) test is pre-registered (sha256 \texttt{fa8505f5\dots aa344}) and its outcome is not included here. It is not a statement about Conjecture R.
+\end{remark}

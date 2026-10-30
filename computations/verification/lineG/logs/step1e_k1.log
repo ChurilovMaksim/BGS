@@ -1,0 +1,108 @@
+== k1 m=9 h=1393 {7: 1, 199: 1} ds=[1, 7] phi=1188 F/2m=4.8392
+  resonant 84 (7.071%) share=3.4893 | nonres F/2m=1.4526 W'/m=-1.095 | E[x^2]=2.119 max x=7.4 #x>20=0
+   (1, -2, 8) n=1 mean|Z|^2=3.022e+04 share=1.4130
+   (1, 2, 8) n=1 mean|Z|^2=3.004e+04 share=1.4049
+   (7, 2, 8) n=5 mean|Z|^2=793.2 share=0.1855
+   (7, -2, 8) n=5 mean|Z|^2=607.8 share=0.1421
+   (1, 2, 16) n=1 mean|Z|^2=1405 share=0.0657
+   (1, -2, 16) n=1 mean|Z|^2=1372 share=0.0642
+   (1, 2, 4) n=1 mean|Z|^2=754.3 share=0.0353
+   (1, -2, 4) n=1 mean|Z|^2=650.6 share=0.0304
+   (1, 6, 16) n=1 mean|Z|^2=350 share=0.0164
+   (7, -2, 16) n=5 mean|Z|^2=59.01 share=0.0138
+   (7, 6, 16) n=5 mean|Z|^2=55.94 share=0.0131
+   (7, 2, 16) n=5 mean|Z|^2=54.03 share=0.0126
+  leftover outliers:
+    x=    7.4 nu=1189 shortest=(-35, 7) explain(d,a,b)=None
+    x=    7.0 nu=1845 shortest=(-37, 3) explain(d,a,b)=None
+    x=    6.5 nu=677 shortest=(-25, 37) explain(d,a,b)=None
+    x=    6.3 nu=2293 shortest=(-23, 17) explain(d,a,b)=None
+    x=    6.1 nu=223 shortest=(3, 25) explain(d,a,b)=None
+    x=    5.9 nu=403 shortest=(35, 7) explain(d,a,b)=None
+    x=    5.6 nu=1257 shortest=(-37, 31) explain(d,a,b)=None
+    x=    5.5 nu=855 shortest=(-29, 13) explain(d,a,b)=None
+    x=    5.2 nu=1599 shortest=(49, 7) explain(d,a,b)=None
+    x=    5.2 nu=1075 shortest=(45, 13) explain(d,a,b)=None
+    x=    5.1 nu=2467 shortest=(-21, 35) explain(d,a,b)=None
+    x=    5.0 nu=319 shortest=(21, 35) explain(d,a,b)=None
+== k1 m=11 h=8119 {23: 1, 353: 1} ds=[1, 23] phi=7744 F/2m=6.8939
+  resonant 214 (2.763%) share=5.1615 | nonres F/2m=1.7816 W'/m=-0.437 | E[x^2]=2.681 max x=23.9 #x>20=1
+   (1, -2, 8) n=1 mean|Z|^2=4.058e+05 share=2.3818
+   (1, 2, 8) n=1 mean|Z|^2=4.053e+05 share=2.3787
+   (23, 2, 8) n=21 mean|Z|^2=782.1 share=0.0964
+   (23, -2, 8) n=21 mean|Z|^2=766.9 share=0.0945
+   (1, -2, 16) n=1 mean|Z|^2=9612 share=0.0564
+   (1, 2, 16) n=1 mean|Z|^2=9496 share=0.0557
+   (1, -2, 4) n=1 mean|Z|^2=3612 share=0.0212
+   (1, 2, 4) n=1 mean|Z|^2=3410 share=0.0200
+   (1, -6, 16) n=1 mean|Z|^2=1336 share=0.0078
+   (23, 2, 16) n=21 mean|Z|^2=53.08 share=0.0065
+   (23, -6, 16) n=21 mean|Z|^2=38.96 share=0.0048
+   (23, -2, 16) n=21 mean|Z|^2=36.93 share=0.0046
+  leftover outliers:
+    x=   23.9 nu=9975 shortest=(16, 70) explain(d,a,b)=None
+    x=   19.8 nu=11001 shortest=(33, 31) explain(d,a,b)=(33, 1, 33, 31)
+    x=   18.7 nu=11019 shortest=(10, 28) explain(d,a,b)=(28, 1, 10, 28)
+    x=   17.3 nu=773 shortest=(-5, 21) explain(d,a,b)=(21, 1, -5, 21)
+    x=   16.7 nu=955 shortest=(-3, 17) explain(d,a,b)=(17, 1, -3, 17)
+    x=   16.1 nu=12009 shortest=(-34, 96) explain(d,a,b)=None
+    x=   14.2 nu=11333 shortest=(22, 96) explain(d,a,b)=None
+    x=   13.9 nu=11831 shortest=(32, 70) explain(d,a,b)=None
+    x=   12.9 nu=14293 shortest=(89, 25) explain(d,a,b)=None
+    x=   12.3 nu=4905 shortest=(-22, 96) explain(d,a,b)=None
+    x=   12.2 nu=8373 shortest=(18, 64) explain(d,a,b)=None
+    x=   12.1 nu=6315 shortest=(4, 18) explain(d,a,b)=(18, 1, 4, 18)
+== k1 m=13 h=47321 {79: 1, 599: 1} ds=[1, 79] phi=46644 F/2m=11.1966
+  resonant 662 (1.419%) share=9.2842 | nonres F/2m=1.9399 W'/m=-0.120 | E[x^2]=3.178 max x=57.0 #x>20=39
+   (1, 2, 8) n=1 mean|Z|^2=5.459e+06 share=4.5015
+   (1, -2, 8) n=1 mean|Z|^2=5.459e+06 share=4.5013
+   (79, -2, 8) n=77 mean|Z|^2=905.5 share=0.0575
+   (79, 2, 8) n=77 mean|Z|^2=890.9 share=0.0566
+   (1, 2, 16) n=1 mean|Z|^2=6.513e+04 share=0.0537
+   (1, -2, 16) n=1 mean|Z|^2=6.498e+04 share=0.0536
+   (1, 2, 4) n=1 mean|Z|^2=1.764e+04 share=0.0145
+   (1, -2, 4) n=1 mean|Z|^2=1.749e+04 share=0.0144
+   (1, 6, 16) n=1 mean|Z|^2=5079 share=0.0042
+   (79, -2, 4) n=77 mean|Z|^2=51.51 share=0.0033
+   (79, -2, 16) n=77 mean|Z|^2=50.39 share=0.0032
+   (1, -6, 16) n=1 mean|Z|^2=3531 share=0.0029
+  leftover outliers:
+    x=   57.0 nu=36505 shortest=(16, 70) explain(d,a,b)=None
+    x=   45.4 nu=22675 shortest=(34, 96) explain(d,a,b)=None
+    x=   43.7 nu=25691 shortest=(172, 70) explain(d,a,b)=None
+    x=   42.4 nu=75911 shortest=(22, 96) explain(d,a,b)=None
+    x=   40.0 nu=2029 shortest=(134, 140) explain(d,a,b)=None
+    x=   40.0 nu=92613 shortest=(-134, 140) explain(d,a,b)=None
+    x=   39.8 nu=5567 shortest=(-3, 17) explain(d,a,b)=(17, 1, -3, 17)
+    x=   39.8 nu=3847 shortest=(-29, 123) explain(d,a,b)=None
+    x=   38.5 nu=18731 shortest=(-22, 96) explain(d,a,b)=None
+    x=   35.0 nu=68951 shortest=(-172, 70) explain(d,a,b)=None
+    x=   34.9 nu=30421 shortest=(10, 28) explain(d,a,b)=(28, 1, 10, 28)
+    x=   34.4 nu=90795 shortest=(29, 123) explain(d,a,b)=None
+== k1 m=15 h=275807 {7: 1, 31: 2, 41: 1} ds=[1, 7, 31, 41, 217, 287] phi=223200 F/2m=27.8850
+  resonant 3396 (1.522%) share=25.8461 | nonres F/2m=2.0704 W'/m=+0.141 | E[x^2]=3.244 max x=134.9 #x>20=101
+   (1, 2, 8) n=1 mean|Z|^2=7.349e+07 share=10.9754
+   (1, -2, 8) n=1 mean|Z|^2=7.349e+07 share=10.9747
+   (7, -2, 8) n=5 mean|Z|^2=1.526e+06 share=1.1398
+   (7, 2, 8) n=5 mean|Z|^2=1.501e+06 share=1.1205
+   (31, 2, 8) n=30 mean|Z|^2=7.654e+04 share=0.3429
+   (31, -2, 8) n=30 mean|Z|^2=7.627e+04 share=0.3417
+   (41, 2, 8) n=39 mean|Z|^2=5.042e+04 share=0.2936
+   (41, -2, 8) n=39 mean|Z|^2=4.982e+04 share=0.2902
+   (1, -2, 16) n=1 mean|Z|^2=4.431e+05 share=0.0662
+   (1, 2, 16) n=1 mean|Z|^2=4.428e+05 share=0.0661
+   (217, -2, 8) n=150 mean|Z|^2=1615 share=0.0362
+   (217, 2, 8) n=150 mean|Z|^2=1600 share=0.0358
+  leftover outliers:
+    x=  134.9 nu=339013 shortest=(22, 96) explain(d,a,b)=None
+    x=  132.2 nu=212601 shortest=(-22, 96) explain(d,a,b)=None
+    x=  122.1 nu=149733 shortest=(644, 70) explain(d,a,b)=None
+    x=  116.5 nu=11831 shortest=(51, 373) explain(d,a,b)=None
+    x=  112.7 nu=539783 shortest=(-51, 373) explain(d,a,b)=None
+    x=  109.0 nu=401881 shortest=(-644, 70) explain(d,a,b)=None
+    x=  100.1 nu=178125 shortest=(-34, 96) explain(d,a,b)=None
+    x=   82.1 nu=40391 shortest=(408, 478) explain(d,a,b)=(1189, 41, 29, 1)
+    x=   70.1 nu=229839 shortest=(-2, 12) explain(d,a,b)=(12, 1, -2, 12)
+    x=   69.8 nu=520969 shortest=(4, 18) explain(d,a,b)=(18, 1, 4, 18)
+    x=   69.4 nu=321775 shortest=(2, 12) explain(d,a,b)=(12, 1, 2, 12)
+    x=   61.3 nu=297581 shortest=(-18, 76) explain(d,a,b)=None
