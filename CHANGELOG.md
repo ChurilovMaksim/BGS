@@ -1,5 +1,37 @@
 # Scientific changelog
 
+## 2026-10-31 — Lines N2–N4: the inherited level h_p, certified Λ, Theorem C′ (TRACE-286–298)
+
+Register as project proofs. Line N2 (referee READY after N2-F1–N2-F9, applied by the author in REPORT_N2_v2/v3):
+* BGS-TRACE-286: Theorem A, a proved implication from the open Ω-hypothesis 287 (like TRACE-257). It is not a refutation.
+* 288: Theorem B, periodic-orbit sums over the index-4 subgroup G_p.
+* 289: Theorem C, the pressure reduction, with Λ in the O1 space (N2-F1).
+* 290: Prop E, with arb r₂(4000).
+
+Line N3 (READY after N3-F1–N3-F11, applied by the author in v2):
+* 291, 292: isotropic Lemmas 1.1 and 1.2.
+* 293: M6 condition C3.
+* 294: Lemma I, together with N4's Lemma I₁₆.
+
+Line N4 (READY after N4-F1–N4-F9, applied at integration as REPORT_N4_v2.md §7, author file kept with its sha256):
+* 295: the [CA] free-family bounds Λ^{8V} ≤ 1.9656353, Λ^{8E} ≤ 0.4915932, Λ^{16V} ≤ 2.9413897, Λ^{16E} ≤ 0.4474396. The 16V value is
+  rounded up from the author's 2.9413896 because f + π = 2.94138961 (I-1).
+* 296: Theorem C′ for p with h_p squarefree. Squarefreeness is not proved; the only evidence is [N].
+* 297: the gauge lemma, up to a unimodular scalar.
+
+Register as **open**: 287 (the Ω-hypothesis) and 298 (the isotropic part at q ∣ h_p).
+
+Scope widenings (states unchanged):
+* 222: to arbitrary twists and non-autonomous products (C1).
+* 266: to composite conductors c with ord_c λ = p.
+
+276 stays open; only C2 remains. Line N5 supersedes the single-slow-window analysis of N4 §3.3–§3.4, so its numbers (G ≤ 1.547, 1.4468,
+1.2426/1.0672/0.9165) are **not registered**. Nothing from N5 is registered either (not yet refereed), and neither are the 7·h_p unit
+points. New Lean modules: `Bgs.LineN2Arith`, `Bgs.LineN3Arith`, `Bgs.LineN4Arith` (referee files).
+
+**BGS-TRACE-206 and 239 stay open, and 240 stays conditional.** No refutation is claimed. There is no BGS counterexample and no progress on
+BGS-TRACE-148.
+
 ## 2026-10-31 — Lines M and N: conductor structure along m = 3p, Theorem W⁺, scarred conductors (TRACE-269–285)
 
 Owner audit of PR #65 (MERGE after fixes), applied on the same branch: R1 the isotropic bound of N1.3 / Theorem W⁺ (TRACE-279, 280)

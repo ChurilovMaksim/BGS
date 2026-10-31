@@ -1,5 +1,22 @@
 # BGS research brief
 
+## The inherited level h_p, certified Λ and Theorem C′ (Lines N2–N4), 31 October 2026
+
+* **Periodic orbits at h_p.** Theorem B ([TRACE-288](mathematics/fixed-map/lineN2N4_inherited_level.md)) writes the class sums at c = h_p as sums over the index-4 subgroup G_p of
+  Fix(A^p). Theorem C ([TRACE-289](mathematics/fixed-map/lineN2N4_inherited_level.md)) and Prop E ([TRACE-290](mathematics/fixed-map/lineN2N4_inherited_level.md)) reduce the G_p-average to Λ·r₂, with r₂(4000) certified in arb.
+* **Certified Λ and Theorem C′.** Lemma I / I₁₆ ([TRACE-294](mathematics/fixed-map/lineN2N4_inherited_level.md)) and the arb bounds Λ^{8V} ≤ 1.9656353, Λ^{8E} ≤ 0.4915932,
+  Λ^{16V} ≤ 2.9413897, Λ^{16E} ≤ 0.4474396 ([TRACE-295](mathematics/fixed-map/lineN2N4_inherited_level.md)) give Theorem C′ ([TRACE-296](mathematics/fixed-map/lineN2N4_inherited_level.md)). For p with h_p squarefree (not proved
+  for any p) the unit-β rates are 1.27438 / 0.80266 / 1.45789 / 0.77812, below the targets.
+* **Isotropic structure.** Isotropic twists are geometric ([TRACE-291](mathematics/fixed-map/lineN2N4_inherited_level.md)), the isotropic part is a line quadrature
+  ([TRACE-292](mathematics/fixed-map/lineN2N4_inherited_level.md)), M6 condition C3 holds ([TRACE-293](mathematics/fixed-map/lineN2N4_inherited_level.md); C1 by the widened TRACE-222; C2 open), and there is a gauge lemma
+  ([TRACE-297](mathematics/fixed-map/lineN2N4_inherited_level.md)). Open: the isotropic part at q ∣ h_p ([TRACE-298](mathematics/fixed-map/lineN2N4_inherited_level.md)).
+  Caveat: Line N5 (under refereeing, not registered) reports that the 16D = 1 isotropic family at h_p has rate 1.42785 > T and a
+  positive cross contribution ≈ 2.735^m > ξ_lo^m; if confirmed, this target and the Ω-hypothesis fail along m = 3p.
+* **Theorem A** ([TRACE-286](mathematics/fixed-map/lineN2N4_inherited_level.md)) is a proved implication from the open Ω-hypothesis ([TRACE-287](mathematics/fixed-map/lineN2N4_inherited_level.md)).
+* The N4 §3.3–§3.4 window numbers are superseded by Line N5, which is not yet refereed; they are not registered.
+
+R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
+
 ## Conductor structure, Theorem W⁺ and scarred conductors (Lines M and N), 31 October 2026
 
 * **Line M (no new route).** Open conductors at distinct m = 3p are disjoint ([TRACE-269](mathematics/fixed-map/lineMN_conductor_structure.md)); averaged hypotheses are not weaker

@@ -92,5 +92,8 @@ import Bgs.LineBTraceM1
 import Bgs.LineLConst
 import Bgs.LineMArith
 import Bgs.LineNArith
+import Bgs.LineN2Arith
+import Bgs.LineN3Arith
+import Bgs.LineN4Arith
 
 import Bgs.Mathlib

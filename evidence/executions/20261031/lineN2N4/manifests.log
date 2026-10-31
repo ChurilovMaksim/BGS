@@ -1,0 +1,40 @@
+## lineN2/SHA256_N2.txt
+OK: 34  not OK: 0
+## lineN2/SHA256_N2_v2.txt
+OK: 37  not OK: 0
+## lineN2/SHA256_N2_v3.txt
+OK: 1  not OK: 0
+## lineN3/SHA256_N3.txt
+OK: 33  not OK: 9
+sha256sum: ./logs/R_identity_320.npy: No such file or directory
+./logs/R_identity_320.npy: FAILED open or read
+sha256sum: ./logs/g_R_V_K04_K55_NT24_cert.npy: No such file or directory
+./logs/g_R_V_K04_K55_NT24_cert.npy: FAILED open or read
+sha256sum: ./logs/g_R_V_K04_K55_NT25_cert2.npy: No such file or directory
+./logs/g_R_V_K04_K55_NT25_cert2.npy: FAILED open or read
+sha256sum: ./logs/g_R_V_phase1.npy: No such file or directory
+./logs/g_R_V_phase1.npy: FAILED open or read
+sha256sum: WARNING: 4 listed files could not be read
+## lineN3/SHA256_N3_v2.txt
+OK: 1  not OK: 0
+## lineN4/SHA256_N4.txt
+OK: 54  not OK: 5
+sha256sum: ../N2/REPORT_N2_v3.md: No such file or directory
+../N2/REPORT_N2_v3.md: FAILED open or read
+sha256sum: ../N3/REPORT_N3_v2.md: No such file or directory
+../N3/REPORT_N3_v2.md: FAILED open or read
+sha256sum: WARNING: 2 listed files could not be read
+## lineN2/referee/SHA256.txt
+OK: 9  not OK: 0
+## lineN3/referee/SHA256.txt
+OK: 14  not OK: 0
+## lineN4/referee/SHA256.txt
+OK: 12  not OK: 0
+## lineN2/SHA256_N2.txt.sha256
+SHA256_N2.txt: OK
+## lineN2/SHA256_N2_v2.txt.sha256
+SHA256_N2_v2.txt: OK
+## lineN3/SHA256_N3.txt.sha256
+SHA256_N3.txt: OK
+## lineN4/SHA256_N4.txt.sha256
+SHA256_N4.txt: OK

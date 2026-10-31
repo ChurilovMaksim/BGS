@@ -14,16 +14,16 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-31**. **369 registered claims.**
+**2026-10-31**. **382 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 303 |
+| proved | 314 |
 | verification-pending | 15 |
 | conditional | 17 |
-| open | 33 |
+| open | 35 |
 | refuted | 1 |
-| **Total** | **369** |
+| **Total** | **382** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -44,12 +44,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 0 | 23 |
 | RET | 3 | 0 | 1 | 0 | 0 | 4 |
-| TRACE | 205 | 13 | 12 | 29 | 1 | 260 |
-| **Total** | 303 | 15 | 17 | 33 | 1 | **369** |
+| TRACE | 216 | 13 | 12 | 31 | 1 | 273 |
+| **Total** | 314 | 15 | 17 | 35 | 1 | **382** |
 
 ## Open programme obligations
 
-33 registered claims are open. Their closure
+35 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -88,6 +88,8 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-274` | Line M M4c (open): the (+-2,16) inclusion rule degenerates (no borderline level) for m >~ 85 | [mathematics/fixed-map/lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
 | `BGS-TRACE-276` | Line M M6 (open, conditional on C1-C4): the +-rho pairing law at all levels (cross_+ + cross_- = 2 Re sum_{a,b} conj(c_a z_a) c_b y_b (1 + s_a s_b)) | [mathematics/fixed-map/lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
 | `BGS-TRACE-282` | Line N (open [H]): Theorem W for composite conductors c \| h_{3p} with c <= p^C (at least two prime factors >= 2p + 1) via Bourgain's finite-ring theorem | [mathematics/fixed-map/lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
+| `BGS-TRACE-287` | Line N2 Omega-hypothesis (open): for infinitely many m in S+ with m >= m1 and every family F, the beta-weighted pressure sum Omega^F_m(k,a) is <= e^{o(m)} ((1 - delta) T_F)^m for some fixed k, a, delta > 0 | [mathematics/fixed-map/lineN2N4_inherited_level.md](mathematics/fixed-map/lineN2N4_inherited_level.md) |
+| `BGS-TRACE-298` | Line N3/N4 open item: the isotropic part at q \| h_p (and at the mixed levels 7q), i.e. a bound \|D_q + D_qbar\| <= ((1 - delta) T)^m for the isotropic lines at every prime q \| h_p, together with composite d \| h_p having an isotropic prime component | [mathematics/fixed-map/lineN2N4_inherited_level.md](mathematics/fixed-map/lineN2N4_inherited_level.md) |
 
 ## Corrections
 
@@ -101,7 +103,7 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 266 follow-on claims adopted after
+It records 279 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 29 external IDs.

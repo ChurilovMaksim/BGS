@@ -1,0 +1,6 @@
+cases 16 blocks 128 f1/f2 disjoint & equal size violations 64
+pattern parity id on even r count 64 is swap^(r+PAR): True
+pattern parity swap on even r count 64 is swap^(r+PAR): True
+distinct actions 16
+max |<f1,f2>| = 9.769962616701378e-15  max | |f1|^2-|f2|^2 | = 0
+Counter({(32, 32, 0): 64, (64, 64, 64): 64})

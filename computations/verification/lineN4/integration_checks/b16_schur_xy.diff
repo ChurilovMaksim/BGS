@@ -1,0 +1,13 @@
+1c1,3
+< """N4 (B16) [CA]: twist- and block-uniform certificate for the (+-2,16) families in the Line F space.
+---
+> """[Integration copy for N4-F8: identical to code/b16_schur.py except (i) the J3 data path is the repo copy and (ii) the Schur
+> test vectors x, y are stored next to d. Diff: integration_checks/b16_schur_xy.diff.]
+> N4 (B16) [CA]: twist- and block-uniform certificate for the (+-2,16) families in the Line F space.
+14c16,17
+< J16=json.load(open('/workspace/bgs-lineJ/J3/logs/blocks16_exact.json'))
+---
+> import os
+> J16=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','..','lineJ','J3','logs','blocks16_exact.json')))  # integration: repo copy of the J3 data
+97a101
+> np.save(outf.replace('.json','_x.npy'),xv); np.save(outf.replace('.json','_y.npy'),yv)  # integration (N4-F8): store the Schur test vectors x, y
