@@ -2,7 +2,7 @@
 
 *v4: Line N19b, 2026-11-01 (Asia/Yekaterinburg, UTC+5). v4 = v3 + referee lineN16 §4 edits E1–E7 (verbatim) + N16 referee minor notes (N16-1…N16-4) in the H1/H4 rows; see §10. v1, v2, v3 kept unchanged.*
 
-*Repo copy (integration, 2026-11-01): one owner wording fix. In the §2 p₁ row and the §3 crossover row, the file reference "N18b a_crossover_v2.py with robin() corrected/fixed" now reads "N19b a_crossover_v3.py (robin() corrected; v2 in N18b had the bug)". The author original has sha256 6d6c88ed…616207 (/workspace/bgs-lineN/THEOREM_DRAFT_v4.md); the change is recorded in evidence/executions/20261101/lineNgas/README.md.*
+*Repo copy (integration, 2026-11-01): one owner wording fix. In the §2 p₁ row and the §3 crossover row, the file reference "N18b a_crossover_v2.py with robin() corrected/fixed" now reads "N19b a_crossover_v3.py (robin() corrected; v2 in N18b had the bug)". The author original has sha256 6d6c88ed…616207 (/workspace/bgs-lineN/THEOREM_DRAFT_v4.md); the change is recorded in evidence/executions/20261101/lineNgas/README.md. Second owner fix (audit of b380a884): the §2 theorem heading said "v3 not yet refereed"; it now says that v3 passed the final referee lineN16 (GO after E1–E7) and that v4 = v3 + E1–E7.*
 
 *v3: Line N18b, 2026-11-01 (Asia/Yekaterinburg, UTC+5).*
 - **Applies:** referee lineN15 §3 items 1–20, plus the N15 items affecting the draft (N15-F1, N15-F2, N15-F3). It also incorporates N16 §3 (gap (a) status table) and REPORT_N17b_v2 (N18b).
@@ -44,7 +44,7 @@
 - **Gas.** X_coded = 2[(1+Λ)^p e^{pΔ} − 1] − (dense part) (N11 §4). The lower bound used is |1 + X_coded| ≥ 2(1 + Re Λ_lo′)^p e^{−pδ} − 1, **not** with (1 + Re Λ − δ)^p (N11-F4).
 
 ## 2. Conditional main theorem (draft)
-**Theorem R♯-mod v3 (draft) [P mod inputs H0–H8, assembly; v2 bookkeeping checked by referee lineN15 item 20, v3 not yet refereed].**
+**Theorem R♯-mod v4 (draft) [P mod inputs H0–H8, assembly; v2 bookkeeping checked by referee lineN15 item 20; v3 passed the final referee lineN16 (GO after E1–E7); v4 = v3 + E1–E7].**
 Let p be prime, m = 3p, p ≥ p_thr := max of the thresholds listed below. Assume H0–H8 at p. Put
 
   B_p := (n/h_p)·[(2(1+Re Λ_lo′)^p e^{−pδ} − 1 − |X_tail| − |X_cross| − |Y| − e^{−0.28p})² − 1] − I_p − ε_16 − ε_fl − ε_other,

@@ -1,0 +1,39 @@
+## $ python3 computations/maintenance/render_bibliography.py --check
+bibliography-render: OK
+exit 0
+## $ python3 computations/maintenance/render_claim_registry.py --check
+claim-registry-render: OK
+exit 0
+## $ python3 computations/maintenance/render_errata.py --check
+errata-render: OK
+exit 0
+## $ python3 computations/maintenance/render_research_views.py --check
+Research navigation views synchronized
+exit 0
+## $ python3 computations/maintenance/render_spectral_research.py --check
+PASS: spectral thematic views and review matrix
+exit 0
+## $ python3 computations/maintenance/render_status.py --check
+status-render: OK
+exit 0
+## $ python3 computations/verification/scientific_registry_audit.py
+scientific-registry-audit: OK (408 claims, 68 external dependencies)
+exit 0
+## $ python3 computations/verification/repository_audit.py
+PASS check_active_markdown_links
+PASS repository_audit
+exit 0
+## $ python3 computations/verification/bibliographic_metadata_audit.py
+EXT-BR-1975: dependency graph changed; refresh impact review explicitly
+exit 1
+## $ python3 computations/verification/lineN_theorem_draft/integration_checks/proved_deps_gate_Ngas.py
+new ids 299..324: 26 {'conditional': 1, 'open': 7, 'proved': 14, 'verification-pending': 4}
+proved claims: 328
+missing dependency ids: []
+strict range 244..324 violations: []
+new violations outside the strict range: []
+pre-existing on main (listed, out of scope): [('BGS-RES-015', 'BGS-RES-014'), ('BGS-RES-023', 'BGS-RES-022'), ('BGS-TRACE-076', 'BGS-TRACE-060'), ('BGS-TRACE-077', 'BGS-TRACE-073'), ('BGS-TRACE-080', 'BGS-TRACE-060'), ('BGS-TRACE-080', 'BGS-TRACE-073'), ('BGS-TRACE-236', 'BGS-TRACE-231')]
+cycles: []
+open/conditional new ids without closure_condition: []
+GATE_OK
+exit 0

@@ -1666,7 +1666,7 @@
       "id": "BGS-TRACE-287",
       "state": "open",
       "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
-      "disposition": "31 October 2026 (Lines N2-N4): open hypothesis; N2 Omega-hypothesis (beta-weighted pressure sums); closure: proof or disproof for infinitely many m in S+. Does not close TRACE-206, TRACE-148 or BGS-001. Owner audit of PR #66 (R1): Line N5 caveat (corrected N5 v2, under refereeing, not registered: the 16D = 1 isotropic family at h_p has rate 1.42785 > T and a positive cross contribution about 2.735^m > xi_lo^m; if confirmed the hypothesis fails along m = 3p); state unchanged."
+      "disposition": "31 October 2026 (Lines N2-N4): open hypothesis; N2 Omega-hypothesis (beta-weighted pressure sums); closure: proof or disproof for infinitely many m in S+. Does not close TRACE-206, TRACE-148 or BGS-001. Owner audit of PR #66 (R1): Line N5 caveat (corrected N5 v2, under refereeing, not registered: the 16D = 1 isotropic family at h_p has rate 1.42785 > T and a positive cross contribution about 2.735^m > xi_lo^m; if confirmed the hypothesis fails along m = 3p); state unchanged. Owner audit of b380a884: N5 caveat updated, N5 v2 refereed READY in lineN6 (no longer 'under refereeing'); still not registered; state unchanged."
     },
     {
       "id": "BGS-TRACE-288",
@@ -1732,13 +1732,13 @@
       "id": "BGS-TRACE-298",
       "state": "open",
       "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
-      "disposition": "31 October 2026 (Lines N2-N4): open; isotropic part at q | h_p (and 7q, composite d with an isotropic component); closure: proof or counterexample. Does not close TRACE-206, TRACE-148 or BGS-001. Owner audit of PR #66 (R1): small-m numerics qualified (m <= 21 only); Line N5 caveat pointer; state unchanged."
+      "disposition": "31 October 2026 (Lines N2-N4): open; isotropic part at q | h_p (and 7q, composite d with an isotropic component); closure: proof or counterexample. Does not close TRACE-206, TRACE-148 or BGS-001. Owner audit of PR #66 (R1): small-m numerics qualified (m <= 21 only); Line N5 caveat pointer; state unchanged. Owner audit of b380a884: N5 caveat updated, N5 v2 refereed READY in lineN6; still not registered; state unchanged."
     },
     {
       "id": "BGS-TRACE-299",
       "state": "conditional",
       "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
-      "disposition": "1 November 2026 (Lines N5-N18b, gas route): conditional theorem [P mod inputs H0-H8] (Theorem R#-mod, canonical statement THEOREM_DRAFT_v4; lineN16 GO after edits E1-E7); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): conditional theorem [P mod inputs H0-H8] (Theorem R#-mod, canonical statement THEOREM_DRAFT_v4; lineN16 GO after edits E1-E7); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted. Owner audit of b380a884: retitled Theorem R#-mod v4 (= v3 after lineN16 edits E1-E7); dependencies on the certified and pending inputs 308, 311, 312, 319-323 added; state unchanged (conditional)."
     },
     {
       "id": "BGS-TRACE-300",
@@ -1852,7 +1852,7 @@
       "id": "BGS-TRACE-318",
       "state": "proved",
       "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
-      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [P-arith] (gas vs Robin: p1 >= 1386 core / 1390 delta_true G <= 15, first prime 1399; robin() fixed in N19b; lineN16); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [P-arith] (gas vs Robin: p1 >= 1386 core / 1390 for the input delta = 2.470e-6, first prime 1399; robin() fixed in N19b; lineN16); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted. Owner audit of b380a884: reworded as an arithmetic implication in the input delta (p >= 1390 for delta = 2.470e-6); whether delta_true <= 2.470e-6 is BGS-TRACE-322 (verification-pending); state unchanged."
     },
     {
       "id": "BGS-TRACE-319",

@@ -1,6 +1,6 @@
-# Lines N5–N19b: the polymer-gas route to frozen R′ along m = 3p — a conditional reduction (Theorem R♯-mod v3)
+# Lines N5–N19b: the polymer-gas route to frozen R′ along m = 3p — a conditional reduction (Theorem R♯-mod v4 = v3 after lineN16 edits E1–E7)
 
-**Status: frozen R′ (BGS-TRACE-206) is not refuted.** This note registers the conditional Theorem R♯-mod v3 (BGS-TRACE-299). The
+**Status: frozen R′ (BGS-TRACE-206) is not refuted.** This note registers the conditional Theorem R♯-mod v4 (= v3 after lineN16 edits E1–E7; BGS-TRACE-299). The
 theorem reduces a refutation along m = 3p to explicit open inputs H1–H8 (BGS-TRACE-300..306). The note also registers the proved
 ingredients of the reduction and the ingredients that are still pending verification. The labels follow THEOREM_DRAFT_v4 §8
 (`computations/verification/lineN_theorem_draft/THEOREM_DRAFT_v4.md`), which is the **canonical statement**; v1–v3 are kept as history.
@@ -67,8 +67,9 @@ No proved claim depends on a non-proved claim, except on BGS-TRACE-206 through i
   * 315: the K_p identity [P].
   * 316: the CRT count n = 7371 [P].
   * 317: the level bookkeeping [P].
-  * 318: the gas-vs-Robin crossover [P-arith]: p₁ ≥ 1386 (core δ) / **p₁ ≥ 1390** (δ = 2.470e-6), first prime 1399, under the
-    stated idealisation. It uses N19b's `a_crossover_v3.py` (robin() corrected) and is refereed in lineN16 §2a. 1390 is a lower
+  * 318: the gas-vs-Robin crossover [P-arith], an arithmetic implication in the input δ: p ≥ 1386 at the core δ, and **p ≥ 1390 for
+    the input value δ = 2.470e-6**, first prime 1399, under the stated idealisation. Whether δ_true(G ≤ 15) ≤ 2.470e-6 holds is
+    BGS-TRACE-322 (verification-pending); 318 does not depend on it, but 299 depends on both. It uses N19b's `a_crossover_v3.py` (robin() corrected) and is refereed in lineN16 §2a. 1390 is a lower
     bound for the true p₁.
   * 319: Lemma 1 (sublattice separation) [P], refereed in lineN16 §2b with L1-a/L1-b.
   * 321: A_bad j ≤ 12 [CA-fp], checked in lineN14, lineN15 §1a and lineN16 §1e.
@@ -115,7 +116,7 @@ No proved claim depends on a non-proved claim, except on BGS-TRACE-206 through i
 
 | id | state | claim |
 |---|---|---|
-| BGS-TRACE-299 | conditional | Line N Theorem R#-mod v3 (conditional): if H0-H8 (BGS-TRACE-300..306 and the standing package) hold at p and B_p >= kappa > 0 for infinitely many primes p >= p_thr, then W'_{3p}/m -> infinity and frozen R' is false along m = 3p (conditional; not a refutation) |
+| BGS-TRACE-299 | conditional | Line N Theorem R#-mod v4 (= v3 after lineN16 edits E1-E7) (conditional): if H0-H8 (BGS-TRACE-300..306 and the standing package) hold at p and B_p >= kappa > 0 for infinitely many primes p >= p_thr, then W'_{3p}/m -> infinity and frozen R' is false along m = 3p (conditional; not a refutation) |
 | BGS-TRACE-300 | open | Line N hypothesis H1 (open [H]): collision lemma - lattice-to-collision reduction for shell sums with constant C <= 0.082 at J0 = 12, plus the A_bad tail j > 12 |
 | BGS-TRACE-301 | open | Line N hypothesis H3 (open): Kotecky-Preiss polymer weight e^{a\|gamma\|} with a = 5.93e-6 at g0 = 4 (log -> modulus), finite part certified, tail j > 12 = H1 |
 | BGS-TRACE-302 | open | Line N hypothesis H4 (open, no working route): core -> true conversion of the interaction constant, now = difference-form (pair-minus-product) conversion + the G > 15 true-functional tail |
@@ -134,7 +135,7 @@ No proved claim depends on a non-proved claim, except on BGS-TRACE-206 through i
 | BGS-TRACE-315 | proved | Line N17b K_p arithmetic [P]: h_{3p} = h_p K_p with K_p = 4 h_p^2 + 3, 7 \| K_p, gcd(h_p, K_p) \| 3; h_15 = 7 * 31^2 * 41 |
 | BGS-TRACE-316 | proved | Line N17b CRT count [P]: at h = 8119 = 23 * 353 (m = 33) S = CRT and n = 7371 = 21 * 351; 7743 - 7371 = 372 are the non-unit nu excluded by BGS-TRACE-206 |
 | BGS-TRACE-317 | proved | Line N17b level bookkeeping [P]: W'_m = NR part + phi^-1 sum Dev_d(rho) (BGS-TRACE-213), NR >= -RMT >= -4m, level floor -(h_p/d) S_rho, inclusion m0 = 15 |
-| BGS-TRACE-318 | proved | Line N18b/N19b gas vs Robin crossover [P-arith]: with tails = Y = X_cross = eps = 0 and n/h_p := 1, the gas growth exceeds the Robin bound on inherited levels for all p >= 1386 (core delta) and all p >= 1390 (delta = 2.470e-6, the G <= 15 part); first prime 1399 |
+| BGS-TRACE-318 | proved | Line N18b/N19b gas vs Robin crossover [P-arith], an arithmetic implication: under the idealisation tails = Y = X_cross = eps = 0 and n/h_p := 1, the gas lower bound exceeds the Robin bound on inherited levels for all p >= 1386 at the core value delta = 5.14476e-7 (BGS-TRACE-307) and, for the INPUT value delta = 2.470e-6, for all p >= 1390; first prime 1399 |
 | BGS-TRACE-319 | proved | Line N14b/N18b Lemma 1 (sublattice separation) [P]: for squarefree d with split prime factors, delta-close pairs of the conductor-d components H_d separate after n_* steps, with delta0 = 1/(4 sqrt2 (lambda+1)) = 0.025888 and constant C = 16 lambda^2 delta^2 h^2 lambda^{-p} |
 | BGS-TRACE-320 | verification-pending | Line N14b Lemma 2 (subgroup C', c_B = 0.7375) [P-sketch, asymptotic, constants ignored], covering iso parts d <= 1.588^p; p = 31 covered (H5, not P) |
 | BGS-TRACE-321 | proved | Line N15 [CA-fp]: A_bad finite part j <= 12 = 2.031569e-6 at g0 = 4 (c3 radii) and short types sum \|w\| = 9.970e-7 (173 rows incl. alpha = 4) |

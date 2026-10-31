@@ -28,7 +28,15 @@ The author original is `/workspace/bgs-lineN/THEOREM_DRAFT_v4.md`, sha256 6d6c88
 * In the §2 p₁ row and the §3 crossover row, the file reference "N18b a_crossover_v2.py with robin() corrected/fixed" now reads
   "N19b a_crossover_v3.py (robin() corrected; v2 in N18b had the bug)".
 * A one-line note under v4's header records the change.
-* Nothing else differs (diff: 2 rows + the note).
+* **Second owner fix (audit of b380a884).** The §2 theorem heading (line ~49 of the repo copy) said "Theorem R♯-mod v3 (draft) [… v3 not
+  yet refereed]". It now reads "Theorem R♯-mod v4 (draft) [… v3 passed the final referee lineN16 (GO after E1–E7); v4 = v3 + E1–E7]".
+  The repo-copy note under v4's header records this too.
+* Nothing else differs from the author original (diff: the two file-reference rows, the theorem heading, and the note).
+
+## Dependencies on TRACE-206
+BGS-TRACE-316 (CRT count) and BGS-TRACE-317 (level bookkeeping) are proved claims that depend on BGS-TRACE-206 (open). They use it
+**only for its frozen definition**: which units and levels are included, and W′_m itself. That is the allowed exception of the
+proved-deps gate (`ALLOWED_DEFINITIONAL = {BGS-TRACE-206}`). They do not use Conjecture R′.
 
 ## Not mapped to claims
 These are listed in the note under "Not registered":
