@@ -1,0 +1,19 @@
+OK   h_3, h_5, h_7, h_9 = 7, 41, 239, 1393 
+OK   M7a lambda^p = 1 + 2 h_p eps^p, odd p < 120 
+OK   M1 gcd(h_m, h_n) = h_gcd(m,n), odd m, n < 120 
+OK   M1/L3 h_3m = h_m (4 h_m^2 + 3), odd m < 60 
+OK   M3 floor base mu_lo^2/lambda^(2/3) >= 1.13287 (report 1.13288 = rounded) 1.1328794
+OK   M3 margin over D7 1.0184224: >= 1.11238 (report 1.11239 = rounded) 1.1123866
+OK   M4b growth base mu_lo/lambda^(1/4) = 1.2328 1.2327863
+OK   M5 base mu*^2/xi_lo = 1.4923 
+OK   W+ log10 c_N = 9 log10 eps_F - log10 17.31 ~ -113.80 (eps_F = 10^-12.507) -113.8013
+OK   W+ beats Weil iff p >= 10^(3 (log c_W - log c_N)) ~ 10^264.5 264.544
+OK   N1.2 4 3^(4/3) < 17.31 17.306995
+OK   N1.2 (2,3) constant 34.62 = 2 * 17.31 
+OK   N1.3 Cochrane-Pinner lambda = 2/3^(1/4) in (1.51967, 1.519672) (report 1.51967 = rounded down) 1.5196714
+OK   N3 theta_8V = ((1 - delta/2) 1.28359/mu_lo)^30 in [5.38e-6, 5.4e-6] 5.39011e-6
+OK   N3 Lean theta8V numerator 1.278387 >= (1 - delta/2) 1.28359 1.278386634
+OK   N3 thresholds 3 theta/2 ~ 8.1e-6 (rank 3p), theta/2 ~ 2.7e-6 (rank p) 
+OK   N4 |det(S^p - 1)| = 4 h_p^2, odd p < 60 
+OK   N4 index N(4 sqrt2)/[O^dual : O] = 32/8 = 4 
+ALL_OK

@@ -1,0 +1,15 @@
+strong divisibility failures (odd m,n<=301): 0
+3|h_m for odd m<=399: []
+h_3p identity fails: []
+nontrivial family-overlap candidates (m=9..39): 0
+ p   m   log(kappa)/m  exp   D7rate log(1.0184224)= 0.018254763305891163
+11 33 0.12476 1.13288
+17 51 0.12476 1.13288
+29 87 0.12476 1.13288
+53 159 0.12476 1.13288
+101 303 0.12476 1.13288
+Traceback (most recent call last):
+  File "/workspace/bgs-lineM/code/m_checks.py", line 42, in <module>
+    m=3*p; hp=H[p]; h=H[m]
+                      ~^^^
+KeyError: 597

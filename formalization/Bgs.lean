@@ -88,5 +88,7 @@ import Bgs.LineBNAverageBridge
 import Bgs.LineKFinite
 import Bgs.LineBTraceM1
 import Bgs.LineLConst
+import Bgs.LineMArith
+import Bgs.LineNArith
 
 import Bgs.Mathlib

@@ -1,0 +1,12 @@
+Lines M/N integration reruns (31 Oct 2026, UTC+5), scratch copy /workspace/lineMN-integ/rerun of the repository packets.
+Each output (last line "exit N" appended) was compared with the packet log (diff without the exit line):
+  lineN/code/n6_theta.py      -> out_n6_theta.log      IDENTICAL to lineN/logs/n6_theta.log      (exit 0)
+  lineN/code/n2_constants.py  -> out_n2_constants.log  IDENTICAL to lineN/logs/n2_constants.log  (exit 0)
+  lineM/code/m_incl_v2.py     -> out_m_incl_v2.log     IDENTICAL to lineM/logs/m_incl_v2.log     (exit 0)
+  lineM/code/m_checks_v2.py   -> out_m_checks_v2.log   IDENTICAL to lineM/logs/m_checks_v2.log   (exit 0; needs sympy,
+                                 run with /workspace/bgs-derand/phase3/venv python 3, sympy 1.14.0; a first run with the
+                                 system python failed on the missing import only)
+The scripts read the Line L final constants from /workspace/bgs-lineL/logs/final_constants.jsonl (byte-identical to
+computations/verification/lineL/logs/final_constants.jsonl). Not rerun (cost): n1_factor (PARI), n3_check, n4_smooth, n5_slow_toy,
+the referee scripts ref_m.py / ref_n.py (their logs are part of the referee packets).
+Integration constant checks: computations/verification/lineN/integration_checks/lineMN_checks.py -> lineMN_checks.log (ALL_OK).

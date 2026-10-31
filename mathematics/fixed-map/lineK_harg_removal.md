@@ -246,8 +246,9 @@ o(ξ_lo^m).
   truncations each). Scaling ĝ by 1.1 gives the ratio 1.21 exactly.
 * This is **not** the certified two-disc operator, and C1 is not proved.
 
-**Not registered.** The Bourgain extension to q ≤ p^C is [P-cite], ineffective and conditional on (OP) (K2 report §3); it is not in the
-registration list for this integration. The literature assessments in K2 §3 are [assessment].
+**Not registered.** The Bourgain extension to q ≤ p^C is [P-cite], effective with constants not computed (corrected from "ineffective"
+by the Line N referee, N-F6) and conditional on (OP) (K2 report §3); it is not in the registration list for this integration. Later work:
+with OP proved (Line L) it is registered as BGS-TRACE-281 (`lineMN_conductor_structure.md` §4). The literature assessments in K2 §3 are [assessment].
 
 ## 7. Numerics, negative findings and assessment (not claims)
 * **K4 [N, toy only].** Cat-map block operator-norm rates of a toy single-disc Galerkin are R_k^cat = 6.338, 2.255, 1.337, 1.131, 1.037,

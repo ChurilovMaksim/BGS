@@ -1180,7 +1180,7 @@
       "id": "BGS-TRACE-206",
       "state": "open",
       "source": "mathematics/fixed-map/resonance_classification_lineG.md",
-      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed. 31 October 2026 (Line K): state unchanged (open); S+ infinite unconditionally (TRACE-235), so frozen R' is false under H-natural alone (TRACE-236) or under H-natural_mid (TRACE-239, 240); both open; no refutation claimed. 31 October 2026 (Line L): state unchanged (open); OP proved (TRACE-244), Theorem W and K2' proved under standing inputs (TRACE-245, 246); open range reduced to H_mean (TRACE-256, open; TRACE-257); no refutation claimed."
+      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed. 31 October 2026 (Line K): state unchanged (open); S+ infinite unconditionally (TRACE-235), so frozen R' is false under H-natural alone (TRACE-236) or under H-natural_mid (TRACE-239, 240); both open; no refutation claimed. 31 October 2026 (Line L): state unchanged (open); OP proved (TRACE-244), Theorem W and K2' proved under standing inputs (TRACE-245, 246); open range reduced to H_mean (TRACE-256, open; TRACE-257); no refutation claimed. 31 October 2026 (Lines M/N): state unchanged (open); no refutation route found (Line M); Theorem W+ and the qualitative prime range (TRACE-280, 281); Theorem N3 / Corollary N3' (TRACE-283, 284): K2' is never a refutation route for p >= p0, the open-range target must be beta-weighted; no refutation claimed."
     },
     {
       "id": "BGS-TRACE-207",
@@ -1372,7 +1372,7 @@
       "id": "BGS-TRACE-238",
       "state": "proved",
       "source": "mathematics/fixed-map/lineK_harg_removal.md",
-      "disposition": "31 October 2026 (Line K): proved (paper + computer-assisted S_Z <= 0.5000001); Prop K2: levels d >= L_m absorbed by positivity; crossover m ~ 1.68e9 numerical only; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line K): proved (paper + computer-assisted S_Z <= 0.5000001); Prop K2: levels d >= L_m absorbed by positivity; crossover m ~ 1.68e9 numerical only; refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Lines M/N): state unchanged (proved); refined by M5 (TRACE-275)."
     },
     {
       "id": "BGS-TRACE-239",
@@ -1420,13 +1420,13 @@
       "id": "BGS-TRACE-246",
       "state": "proved",
       "source": "mathematics/fixed-map/lineK_harg_removal.md",
-      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem K2': frozen R' implies a slow lambda-orbit at an open conductor; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): explicit state review conditional -> proved [P + CA] under the same proved standing inputs (S_Z / Prop K2 = TRACE-238 included), m >= m1 (effective, not computed); caveat (Prop S, TRACE-258): true, but not a refutation route for the m covered by Prop S; refereed. Owner audit of PR #64 (R1): TRACE-240 (conditional) is not a dependency; only its proved implication is used, re-derived from TRACE-231 (1)-(2), 235, 237, 238."
+      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem K2': frozen R' implies a slow lambda-orbit at an open conductor; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): explicit state review conditional -> proved [P + CA] under the same proved standing inputs (S_Z / Prop K2 = TRACE-238 included), m >= m1 (effective, not computed); caveat (Prop S, TRACE-258): true, but not a refutation route for the m covered by Prop S; refereed. Owner audit of PR #64 (R1): TRACE-240 (conditional) is not a dependency; only its proved implication is used, re-derived from TRACE-231 (1)-(2), 235, 237, 238. 31 October 2026 (Lines M/N): state unchanged (proved); the [H] coverage caveat is replaced by Theorem N3 (TRACE-283, now a dependency) and Corollary N3' (TRACE-284): never a refutation route for p >= p0 (effective, not computed)."
     },
     {
       "id": "BGS-TRACE-247",
       "state": "open",
       "source": "mathematics/fixed-map/lineK_harg_removal.md",
-      "disposition": "31 October 2026 (Line K): open conjecture C1 (lim I_k^{1/k} = 1 for the true families); toy float evidence only. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): state unchanged (open); no longer needed for OP (TRACE-244 proved without it); Theorem U (TRACE-254) is its L^2 version and does not imply it."
+      "disposition": "31 October 2026 (Line K): open conjecture C1 (lim I_k^{1/k} = 1 for the true families); toy float evidence only. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): state unchanged (open); no longer needed for OP (TRACE-244 proved without it); Theorem U (TRACE-254) is its L^2 version and does not imply it. 31 October 2026 (Lines M/N): state unchanged (open); the unweighted Line L section 6 target 'exclude slow lambda-orbits' is false on c >= lambda^{theta r/2 + t} (TRACE-283, 284) and is restated as a beta-weighted target."
     },
     {
       "id": "BGS-TRACE-248",
@@ -1492,7 +1492,7 @@
       "id": "BGS-TRACE-258",
       "state": "proved",
       "source": "mathematics/fixed-map/lineL_op_open_range.md",
-      "disposition": "31 October 2026 (Line L): proved (paper, given Line F spectral data); Prop S: slow beta exist at q || h_m with log_lambda q >= C_k + 6.1e-6 m; K2' not a refutation route at such m; refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line L): proved (paper, given Line F spectral data); Prop S: slow beta exist at q || h_m with log_lambda q >= C_k + 6.1e-6 m; K2' not a refutation route at such m; refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Lines M/N): state unchanged (proved); the [H] coverage caveat is superseded by Theorem N3 (TRACE-283, now a dependency), its composite-conductor extension."
     },
     {
       "id": "BGS-TRACE-259",
@@ -1553,6 +1553,108 @@
       "state": "proved",
       "source": "mathematics/fixed-map/lineL_op_open_range.md",
       "disposition": "31 October 2026 (Line L): proved (paper); L3 Lemma E cusp excursions; refereed (L3 READY after fixes L3-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-269",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper + Lean finite range); M1 strong divisibility gcd(h_m, h_n) = h_gcd(m,n), open conductors at distinct m = 3p disjoint; refereed (Line M READY after M-F1..F12, applied by the author in REPORT_M_v2.md). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-270",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper); M2 averaging lemma, positive-weight averaged H-natural implies H-natural with delta/2; refereed (Line M READY after M-F1..F12, applied by the author in REPORT_M_v2.md). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-271",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper on the Line F certificate TRACE-198/199); M3 inherited-level no-go for positivity methods at h_p, m = 3p >= 495, (+-2,8); not a refutation; refereed (Line M READY after M-F1..F12, applied by the author in REPORT_M_v2.md). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-272",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper + Lean core); M4a P* families disjoint for every odd m; refereed (Line M READY after M-F1..F12, applied by the author in REPORT_M_v2.md). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-273",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper on the Line F certificate); M4b (+-2,8) rule includes every d | h, 1 < d <= sqrt h, odd m >= 15; refereed (Line M READY after M-F1..F12, applied by the author in REPORT_M_v2.md). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-274",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): open (float evidence only); M4c (+-2,16) rule degenerates for m >~ 85; closure: certified |Z_16| >= c r^m with r^2 > sqrt(lambda). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-275",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper); M5 refinement of Prop K2 (TRACE-238), sharp within the quadratic relaxation; refereed (Line M READY after M-F1..F12, applied by the author in REPORT_M_v2.md). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-276",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): open (conditional on C1-C4); M6 +-rho pairing law; closure: C1-C3 for (+-2,8) at squarefree levels. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-277",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper + Lean lam_pow_eq); M7a arithmetic of h_p; M7b literature as annotation (Kurlberg-Rudnick CMP 222 (2001) verified); refereed (Line M READY after M-F1..F12, applied by the author in REPORT_M_v2.md). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-278",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper); N0 reduction to binomial sums over <lambda mod q> and budget eps_F independent of m; refereed (Line N READY after N-F1..F10, applied at integration as REPORT_N_v2.md section 12). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-279",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper + cited OSV Lemma 4.3, Voloch via OSV Lemma 2.1, Cochrane-Pinner Thm 1.1); N1.1-N1.3, J_3 hypothesis q >= c_W p^2, tau >= 10^45 (N-F4); refereed (Line N READY after N-F1..F10, applied at integration as REPORT_N_v2.md section 12). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-280",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper + cited + arb constants of Line L) under the standing inputs of Theorem W (m1 effective, not computed); Theorem W+, c_N = 10^-113.80, beyond Weil only for p >= 10^264.5; refereed (Line N READY after N-F1..F10, applied at integration as REPORT_N_v2.md section 12). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-281",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (cited Bourgain JAMS 2005); prime q, 7q <= p^C, p0(C) effective, constants not computed; refereed (Line N READY after N-F1..F10, applied at integration as REPORT_N_v2.md section 12). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-282",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): open [H]; composite c <= p^C via Bourgain's finite-ring theorem (paper not read). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-283",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper on the per-family certified bound of TRACE-198); Theorem N3 scarred conductors carry slow beta = 1, t_F and p0 effective, not computed; refereed (Line N READY after N-F1..F10, applied at integration as REPORT_N_v2.md section 12). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-284",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved corollary (paper on TRACE-198); K2' conclusion holds without assuming frozen R' for p >= p0 (effective, not computed); unweighted slow-orbit target false; refereed (Line N READY after N-F1..F10, applied at integration as REPORT_N_v2.md section 12). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-285",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
+      "disposition": "31 October 2026 (Lines M/N): proved (paper + Lean finite checks); N4 conductor-h_p points are a subgroup of index 4 in Fix(T^p) (N-F8); refereed (Line N READY after N-F1..F10, applied at integration as REPORT_N_v2.md section 12). Does not close TRACE-206, TRACE-148 or BGS-001."
     }
   ],
   "invariants": [
@@ -1588,9 +1690,13 @@
       "EXT-VINOGRADOV-1937",
       "EXT-WEYL-1916",
       "EXT-DAVENPORT-1980",
-      "EXT-WEIL-1948"
+      "EXT-WEIL-1948",
+      "EXT-OSV-2023",
+      "EXT-OSV-2024",
+      "EXT-CP-2011",
+      "EXT-BOURGAIN-2005"
     ],
-    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Twenty-five explicitly reviewed later inputs are admitted (EXT-RS-1962, EXT-BHV-2001 and EXT-CARMICHAEL-1913 on 2026-10-31 in the owner audit of PR #60, Line I; EXT-VINOGRADOV-1937, EXT-WEYL-1916 and EXT-DAVENPORT-1980 on 2026-10-31 in the Line J integration; the last one, EXT-WEIL-1948, on 2026-10-31 in the Line K integration); source review dates and limits remain in the selected snapshot.",
+    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Twenty-nine explicitly reviewed later inputs are admitted (EXT-RS-1962, EXT-BHV-2001 and EXT-CARMICHAEL-1913 on 2026-10-31 in the owner audit of PR #60, Line I; EXT-VINOGRADOV-1937, EXT-WEYL-1916 and EXT-DAVENPORT-1980 on 2026-10-31 in the Line J integration; EXT-WEIL-1948 on 2026-10-31 in the Line K integration; the last four, EXT-OSV-2023, EXT-OSV-2024, EXT-CP-2011 and EXT-BOURGAIN-2005, on 2026-10-31 in the Lines M/N integration); source review dates and limits remain in the selected snapshot.",
     "source_reviews": [
       "literature/abel_gaussian_sources_20261016.md",
       "literature/chat_integration_sources_20261016.md",
@@ -1600,7 +1706,8 @@
       "literature/arithmetic_dependency_closure_20261022.md",
       "literature/lineI_sources_20261031.md",
       "literature/lineJ_sources_20261031.md",
-      "literature/lineK_sources_20261031.md"
+      "literature/lineK_sources_20261031.md",
+      "literature/lineMN_sources_20261031.md"
     ]
   },
   "historical_claim_amendments": [

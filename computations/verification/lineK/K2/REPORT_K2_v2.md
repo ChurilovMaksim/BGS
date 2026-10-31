@@ -17,7 +17,7 @@ Box `/workspace/bgs-lineK/K2/`, 31 Oct 2026 (UTC+5). Nothing was pushed. This bu
    - c_k > 0 is explicit in terms of the Fourier ℓ¹-norm of a block observable.
    - **(OP) is the only extra input:** the cat-map second moment I_k of the true twisted operator families must satisfy I_k^{1/2k} < 1.28359 for (±2,8), and < 1.4742 for (±2,16).
    - **Toy evidence for (OP) [N]:** for a toy single-disc Galerkin (not the certified two-disc operators), the exact (carry-automaton) I_k has per-step ratio I_{k+1}/I_k = 1 to within 10⁻¹⁰. The rate is 1, far below 1.28. This is consistent with the unitarity Σ|ĝ(n)|² = ΣJ_n(1.8)² = 1 (**Conjecture C1**, [H]).
-3. **Bourgain extension [P-cite], ineffective.** Bourgain's Mordell-type bound (binomial sums over subgroups, JAMS 2005) and BGK give, for every fixed C, the same conclusion for prime levels q ≤ p^C, with an ineffective p₀(C,k). The explicit literature (Cochrane–Pinner, Heath-Brown–Konyagin explicit) does **not** beat Weil for the binomial sums needed here (§3).
+3. **Bourgain extension [P-cite], effective, constants not computed** (§9, N-F6). Bourgain's Mordell-type bound (binomial sums over subgroups, JAMS 2005) and BGK give, for every fixed C, the same conclusion for prime levels q ≤ p^C, with p₀(C,k) effective, constants not computed. The explicit literature (Cochrane–Pinner, Heath-Brown–Konyagin explicit) does **not** beat Weil for the binomial sums needed here (§3); superseded by Line N1′ (§9, N-F10).
 4. **Clean conditional theorem (Theorem K2′).** Assume (OP). Frozen R′ ⇒ for every large m ∈ S⁺ some *open-range* conductor c carries a **slow λ-orbit**: a β whose k-block HS-average along {βλ^i/c} is ≥ ((1−δ)·1.28359)^{2k}. The open range is c ∈ (c_kp², L_m), c prime or composite with ≥ 2 large primes. This is an explicit, checkable equidistribution failure.
 5. **Negative findings:**
    - **(b) Counting levels cannot work.** A single level with the trivial bound already beats D7 by (μ*/1.2836)^m.
@@ -118,7 +118,7 @@ where T_k(q) := Σ_{γ≠0, |N(γ)|≥q} |c_γ| → 0 as q → ∞ (dominated co
 **Relation to the frozen-R′ boundary remark (TRACE-179).** The first three bullets are [P] (W1) or [P-cite]. Statements about what is or is not known in the literature are **[assessment]**. The frozen text says Korobov/Bourgain/BGK-type bounds "do not apply" because ord_h λ = m is minimal. This is correct for the composite modulus h as a whole, and here is the precise sense in which they still enter.
 - **The relevant subgroup is small.** For a prime q | h_m, the orbit subgroup is H = ⟨λ⟩ ⊂ (O/q)*, of order r(q) = ord_q λ ∈ {p, 3p} (rank lemma; 7 contributes r = 3). This is order ~p inside a group of order ~q².
 - **Weil range.** Weil (Theorem W1) is non-trivial only when |H| ≫ √q, i.e. q ≲ p².
-- **Bourgain/BGK range.** The sum-product bounds of Bourgain (JAMS 2005) and BGK (JLMS 2006) need |H| ≥ q^ε, i.e. q ≤ p^{1/ε} = p^C. They give a saving q^{−δ(ε)} with δ ineffective (or astronomically small).
+- **Bourgain/BGK range.** The sum-product bounds of Bourgain (JAMS 2005) and BGK (JLMS 2006) need |H| ≥ q^ε, i.e. q ≤ p^{1/ε} = p^C. They give a saving q^{−δ(ε)} with δ effective, constants not computed (or astronomically small) (§9, N-F6).
 - **Beyond p^C.** For q > p^C we have |H| < q^{1/C}, so no fixed power saving is available. Prime factors of h_{3p} reach size ≈ λ^{p} (q² ≤ |N(λ^r−1)|), where |H| = r is only a constant multiple of log q (r ≥ log_λ q). This is the short-orbit regime the frozen remark refers to. [assessment] No non-trivial bound for Σ_{h∈H}e(Tr(xh)/q) with |H| ≍ log q is known to me in general. [P] For slow β (by definition) no uniform bound of the needed strength can hold.
 - **What K2 adds [assessment].** BGK helps exactly for prime levels q ≤ p^C and nowhere else. The remaining obstruction lives in p^C < q < L_m. It cannot be removed by any known exponential-sum technology over subgroups, which is why Theorem K2′ isolates it as an explicit equidistribution failure.
 
@@ -129,9 +129,9 @@ where T_k(q) := Σ_{γ≠0, |N(γ)|≥q} |c_γ| → 0 as q → ∞ (dominated co
   - gcd(q−1−e, q−1) = e;
   - gcd(2e − (q−1), q−1) ≤ 2e.
 - This gives |Σ_H| ≤ r·q^{−δ(C)}. For AB = 0 use Bourgain–Glibichuk–Konyagin (J. London Math. Soc. 73 (2006)).
-- So W3 holds with error A_k·q^{−δ(C)} + T_k(q), and Theorem W extends to all prime conductors q ≤ p^C (and 7q), with p₀(C,k) **ineffective**.
+- So W3 holds with error A_k·q^{−δ(C)} + T_k(q), and Theorem W extends to all prime conductors q ≤ p^C (and 7q), with p₀(C,k) **effective, constants not computed** (§9, N-F6).
 
-**Explicit versions do not help for the binomial (non-isotropic) sums.**
+**Explicit versions do not help for the binomial (non-isotropic) sums.** (Superseded by Line N1′, see §9, N-F10.)
 - Cochrane–Pinner, *Explicit bounds on monomial and binomial exponential sums*, Thm 1.3: |Σ_x e_q(ax^k + bx^l)| ≤ (k−l, q−1) + 2.292·d^{13/46}q^{89/92}.
 - With k = e, l = −e and d = e this gives |Σ_H| ≤ 2 + 2.292·r^{33/46}q^{1/4}. That is non-trivial only for q ≲ r^{1.13}, which is worse than Weil (q ≲ r²).
 - For the linear (isotropic) sums, the explicit Heath-Brown–Konyagin bounds (Cochrane–Pinner Thm 1.2) reach q ≲ r³. They do not cover the binomial part.
@@ -199,7 +199,7 @@ Assume (OP_k, δ). Let p₀ be as in Theorem W. For m = 3p ∈ S⁺ with p ≥ p
 
 > **Frozen R′ ⇒ for all large m ∈ S⁺ (an infinite set, Theorem K3), some open conductor c of h_m (with c < L_m) carries a slow λ-orbit.**
 
-This is an explicit equidistribution failure. For given m, c, β it is checkable in principle by a certified operator computation (truncation with rigorous error), given the operator families. With Bourgain [P-cite], "q ≤ c_kp²" may be replaced by "q ≤ p^C" for any fixed C (ineffective). Labels: [P] given (OP_k, δ), Theorem J/J3 [CA] and Prop K2 [P + CA].
+This is an explicit equidistribution failure. For given m, c, β it is checkable in principle by a certified operator computation (truncation with rigorous error), given the operator families. With Bourgain [P-cite], "q ≤ c_kp²" may be replaced by "q ≤ p^C" for any fixed C (effective, constants not computed; §9, N-F6). Labels: [P] given (OP_k, δ), Theorem J/J3 [CA] and Prop K2 [P + CA].
 
 ## 7. Files
 
@@ -226,3 +226,13 @@ paragraph, and Theorem W step 3.
 
 The conclusions of W2′, Theorem W and Theorem K2′ are unchanged: the constant is still C′ = e^{O(k)}, independent of m. W2′ is [P] for every bounded read-out.
 
+## 9. Errata N-F6, N-F10 (Line N referee, 31 Oct 2026; applied at integration of Lines M/N)
+
+Applied in the repository copy at the Lines M/N integration (`evidence/executions/20261031/lineMN/INTEGRATION.md`), on the referee's
+instruction in `computations/verification/lineN/referee/REPORT.md`. As with §8, `SHA256_K2.txt` records the author's file
+(`../pre_polish/K2/REPORT_K2_v2.md`), not this copy.
+
+| Item | Where | Change |
+|---|---|---|
+| N-F6 | §0 item 3, §3 (twice), §5 Bourgain/BGK range, §6 | "ineffective" → "effective, constants not computed". Bourgain's §5(1) gives δ_r > exp(−C₃r(ε^{−C₂} + log r)) with absolute constants not computed, so p₀(C,k) is effective (BGS-TRACE-281) |
+| N-F10 | §0 item 3, §3 "Explicit versions do not help …" | Superseded by Line N1′ (REPORT_N_v2 §0; BGS-TRACE-279, 280): OSV's method with Voloch's point count, made explicit, beats Weil for the binomial sums when q ≤ c_N p^{7/3}, c_N = 10^{−113.80} (non-empty beyond Weil only for p ≥ 10^{264.5}) |

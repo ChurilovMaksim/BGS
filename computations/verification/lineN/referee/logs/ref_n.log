@@ -1,0 +1,53 @@
+[A] constants from Line L final_constants.jsonl (Line-L budget eps=eta/(3A_k))
+    4*3^(4/3) = 17.306995
+    8V k 15 log10 eps -12.507  log10 cW -25.615 (L: -25.615)  log10 cN -113.798  c23 -75.81  ciso -101.51  p*(33>W) 10^264.55
+    8E k 14 log10 eps -10.165  log10 cW -20.932 (L: -20.932)  log10 cN -92.723  c23 -61.76  ciso -82.77  p*(33>W) 10^215.37
+    16V k 14 log10 eps -10.964  log10 cW -22.530 (L: -22.530)  log10 cN -99.916  c23 -66.55  ciso -89.17  p*(33>W) 10^232.16
+    16E k 14 log10 eps -10.118  log10 cW -20.838 (L: -20.838)  log10 cN -92.300  c23 -61.48  ciso -82.40  p*(33>W) 10^214.38
+[B] J3 bound / tau^(11/3) in the W+ region (needs <= 17.31):
+    log10p=264.6 tau=p  q/tau^2=10^-25.6  ratio=17.3069948437
+    log10p=264.6 tau=p  q/tau^2=10^-25.6  ratio=17.3069948437
+    log10p=264.6 tau=3p q/tau^2=10^-26.6  ratio=17.3069948437
+    log10p=264.6 tau=3p q/tau^2=10^-26.6  ratio=17.3069948437
+    q>=tau^2 at top of range (q=cN p^7/3, tau=3p)? False
+    log10p=300.0 tau=p  q/tau^2=10^-25.6  ratio=17.3069948437
+    log10p=300.0 tau=p  q/tau^2=10^-13.8  ratio=17.3069948437
+    log10p=300.0 tau=3p q/tau^2=10^-26.6  ratio=17.3069948437
+    log10p=300.0 tau=3p q/tau^2=10^-14.8  ratio=17.3069948437
+    q>=tau^2 at top of range (q=cN p^7/3, tau=3p)? False
+    log10p=344.0 tau=p  q/tau^2=10^-25.6  ratio=17.3069948437
+    log10p=344.0 tau=p  q/tau^2=10^0.9  ratio=17.3069948437
+    log10p=344.0 tau=3p q/tau^2=10^-26.6  ratio=17.3069948437
+    log10p=344.0 tau=3p q/tau^2=10^-0.1  ratio=17.3069948437
+    q>=tau^2 at top of range (q=cN p^7/3, tau=3p)? False
+    log10p=400.0 tau=p  q/tau^2=10^-25.6  ratio=17.3069948437
+    log10p=400.0 tau=p  q/tau^2=10^19.5  ratio=17.3069948437
+    log10p=400.0 tau=3p q/tau^2=10^-26.6  ratio=17.3069948437
+    log10p=400.0 tau=3p q/tau^2=10^18.6  ratio=17.3069948437
+    q>=tau^2 at top of range (q=cN p^7/3, tau=3p)? True
+[C] theta 8V 5.3901e-6 (N: 5.39e-6 / 6.01e-6)
+[C] theta 8E 6.0057e-6 (N: 5.39e-6 / 6.01e-6)
+[D] Fix(T^p) vs conductor-h_p points
+    p=3 h_p=7  #Fix=|det(S^p-I)|=196  (4h^2=196)  #cond pts=49  all fixed=True  index=4
+    p=5 h_p=41  #Fix=|det(S^p-I)|=6724  (4h^2=6724)  #cond pts=1681  all fixed=True  index=4
+    p=7 h_p=239  #Fix=|det(S^p-I)|=228484  (4h^2=228484)  #cond pts=57121  all fixed=True  index=4
+[E] exact J2, J3, max|S| (direct), real levels q | h_{3p}, q<=4700
+    p=5 q=31 tau=15 J2=435(=2t^2-t:True) J3=24225 J3/bound=0.0503 max|S|/tau=0.4722 b22=0.718 b23=0.916 b33=1.031 iso=0.1886 CP=0.846 ok=True
+    p=5 q=41 tau=5 J2=45(=2t^2-t:True) J3=545 J3/bound=0.0667 max|S|/tau=0.9218 b22=1.311 b23=1.413 b33=1.406 iso=0.5859 CP=1.322 ok=True
+    p=7 q=239 tau=7 J2=91(=2t^2-t:True) J3=1645 J3/bound=0.0630 max|S|/tau=0.9354 b22=1.735 b23=1.673 b33=1.555 iso=0.6774 CP=1.453 ok=True
+    p=7 q=4663 tau=21 J2=861(=2t^2-t:True) J3=53193 J3/bound=0.0399 max|S|/tau=0.7908 b22=2.132 b23=1.839 b33=1.610 iso=0.4643 CP=1.395 ok=True
+    p=11 q=23 tau=11 J2=231(=2t^2-t:True) J3=8327 J3/bound=0.0533 max|S|/tau=0.5344 b22=0.776 b23=0.975 b33=1.082 iso=0.2227 CP=0.915 ok=True
+    p=11 q=353 tau=11 J2=231(=2t^2-t:True) J3=6941 J3/bound=0.0528 max|S|/tau=0.8224 b22=1.536 b23=1.515 b33=1.437 iso=0.5017 CP=1.287 ok=True
+    p=13 q=79 tau=13 J2=325(=2t^2-t:True) J3=11947 J3/bound=0.0473 max|S|/tau=0.6424 b22=0.974 b23=1.116 b33=1.171 iso=0.3470 CP=1.003 ok=True
+    p=13 q=313 tau=39 J2=3003(=2t^2-t:True) J3=382395 J3/bound=0.0285 max|S|/tau=0.4339 b22=0.798 b23=0.941 b33=1.020 iso=0.2434 CP=0.789 ok=True
+    p=13 q=599 tau=13 J2=325(=2t^2-t:True) J3=11713 J3/bound=0.0491 max|S|/tau=0.7830 b22=1.616 b23=1.556 b33=1.457 iso=0.4844 CP=1.292 ok=True
+    p=17 q=103 tau=17 J2=561(=2t^2-t:True) J3=28475 J3/bound=0.0427 max|S|/tau=0.5902 b22=0.912 b23=1.058 b33=1.123 iso=0.3073 CP=0.937 ok=True
+    p=17 q=409 tau=51 J2=5151(=2t^2-t:True) J3=863277 J3/bound=0.0241 max|S|/tau=0.3519 b22=0.747 b23=0.893 b33=0.980 iso=0.2040 CP=0.738 ok=True
+    p=19 q=457 tau=57 J2=6441(=2t^2-t:True) J3=1222707 J3/bound=0.0228 max|S|/tau=0.3568 b22=0.727 b23=0.874 b33=0.964 iso=0.2202 CP=0.717 ok=True
+    p=23 q=47 tau=23 J2=1035(=2t^2-t:True) J3=110147 J3/bound=0.0478 max|S|/tau=0.3560 b22=0.646 b23=0.842 b33=0.966 iso=0.1506 CP=0.759 ok=True
+    p=37 q=223 tau=37 J2=2701(=2t^2-t:True) J3=333703 J3/bound=0.0295 max|S|/tau=0.4015 b22=0.753 b23=0.908 b33=0.998 iso=0.2364 CP=0.771 ok=True
+    p=41 q=2297 tau=41 J2=3321(=2t^2-t:True) J3=399299 J3/bound=0.0263 max|S|/tau=0.5615 b22=1.282 b23=1.282 b33=1.248 iso=0.3105 CP=0.993 ok=True
+    p=47 q=1129 tau=141 J2=39621(=2t^2-t:True) J3=22645023 J3/bound=0.0151 max|S|/tau=0.2321 b22=0.580 b23=0.734 b33=0.843 iso=0.1055 CP=0.572 ok=True
+    p=61 q=367 tau=183 J2=66795(=2t^2-t:True) J3=301779993 J3/bound=0.0582 max|S|/tau=0.1419 b22=0.385 b23=0.567 b33=0.718 iso=0.0524 CP=0.451 ok=True
+    levels: 17
+EXIT 0

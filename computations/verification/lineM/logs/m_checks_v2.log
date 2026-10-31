@@ -1,0 +1,35 @@
+[0] recurrence (v1) == fast power, odd m<700: True
+[1] strong divisibility failures odd m,n<=301: 0
+[2] odd m<1300 with 3|h_m: []
+[3] h_3p identity failures p<433: []
+[4] m=5 h=41: units in >=2 families (levels<=sqrt h, primaries incl.): 0; primaries per family: [1, 1, 1, 1]
+[4] m=7 h=239: units in >=2 families (levels<=sqrt h, primaries incl.): 0; primaries per family: [1, 1, 1, 1]
+[4] m=9 h=1393: units in >=2 families (levels<=sqrt h, primaries incl.): 0; primaries per family: [1, 1, 1, 1]
+[4] m=11 h=8119: units in >=2 families (levels<=sqrt h, primaries incl.): 0; primaries per family: [1, 1, 1, 1]
+[4] m=13 h=47321: units in >=2 families (levels<=sqrt h, primaries incl.): 0; primaries per family: [1, 1, 1, 1]
+[4] m=15 h=275807: units in >=2 families (levels<=sqrt h, primaries incl.): 0; primaries per family: [1, 1, 1, 1]
+[4] m=17 h=1607521: units in >=2 families (levels<=sqrt h, primaries incl.): 0; primaries per family: [1, 1, 1, 1]
+[5] capacity base mu*^2/lam^(2/3) = 1.1328793814340947  ratio to 1.0184224: 1.1123865514290483
+    p=11 m=33 (log kappa)/m = 0.12476  base 1.13288  (closed form; tends to the constant above)
+    p=17 m=51 (log kappa)/m = 0.12476  base 1.13288  (closed form; tends to the constant above)
+    p=29 m=87 (log kappa)/m = 0.12476  base 1.13288  (closed form; tends to the constant above)
+    p=53 m=159 (log kappa)/m = 0.12476  base 1.13288  (closed form; tends to the constant above)
+    p=101 m=303 (log kappa)/m = 0.12476  base 1.13288  (closed form; tends to the constant above)
+    p=199 m=597 (log kappa)/m = 0.12476  base 1.13288  (closed form; tends to the constant above)
+[5] L_m base mu^2/xi = 1.4922706655246925  h_p base lam^(1/6) = 1.3415037626305777  sqrt h base lam^(1/4) = 1.5537739740300374
+[6] p=5: squarefree=True omega=1 min q=41 (q=1 mod 2p: True) n/h_p=0.9512 >= 1-2w/(2p+1)=0.8182: True
+[6] p=7: squarefree=True omega=1 min q=239 (q=1 mod 2p: True) n/h_p=0.9916 >= 1-2w/(2p+1)=0.8667: True
+[6] p=11: squarefree=True omega=2 min q=23 (q=1 mod 2p: True) n/h_p=0.9079 >= 1-2w/(2p+1)=0.8261: True
+[6] p=13: squarefree=True omega=2 min q=79 (q=1 mod 2p: True) n/h_p=0.9714 >= 1-2w/(2p+1)=0.8519: True
+[6] p=17: squarefree=True omega=2 min q=103 (q=1 mod 2p: True) n/h_p=0.9805 >= 1-2w/(2p+1)=0.8857: True
+[6] p=19: squarefree=True omega=1 min q=9369319 (q=1 mod 2p: True) n/h_p=1.0000 >= 1-2w/(2p+1)=0.9487: True
+[6] p=23: squarefree=True omega=2 min q=47 (q=1 mod 2p: True) n/h_p=0.9574 >= 1-2w/(2p+1)=0.9149: True
+[6] p=29: squarefree=True omega=1 min q=63018038201 (q=1 mod 2p: True) n/h_p=1.0000 >= 1-2w/(2p+1)=0.9661: True
+[6] p=31: squarefree=True omega=2 min q=424577 (q=1 mod 2p: True) n/h_p=1.0000 >= 1-2w/(2p+1)=0.9365: True
+[6] p=37: squarefree=True omega=3 min q=223 (q=1 mod 2p: True) n/h_p=0.9910 >= 1-2w/(2p+1)=0.9200: True
+[6] p=41: squarefree=True omega=3 min q=2297 (q=1 mod 2p: True) n/h_p=0.9991 >= 1-2w/(2p+1)=0.9277: True
+[6] p=43: squarefree=True omega=3 min q=19609 (q=1 mod 2p: True) n/h_p=0.9999 >= 1-2w/(2p+1)=0.9310: True
+[6] p=47: squarefree=True omega=1 min q=489133282872437279 (q=1 mod 2p: True) n/h_p=1.0000 >= 1-2w/(2p+1)=0.9789: True
+[6] p=53: squarefree=True omega=2 min q=9940681 (q=1 mod 2p: True) n/h_p=1.0000 >= 1-2w/(2p+1)=0.9626: True
+[6] p=59: squarefree=True omega=1 min q=19175002942688032928599 (q=1 mod 2p: True) n/h_p=1.0000 >= 1-2w/(2p+1)=0.9832: True
+[6] p=61: squarefree=True omega=2 min q=92111 (q=1 mod 2p: True) n/h_p=1.0000 >= 1-2w/(2p+1)=0.9675: True

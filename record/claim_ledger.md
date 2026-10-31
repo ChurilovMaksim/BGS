@@ -1,5 +1,16 @@
 # Claim ledger
 
+## Conductor structure, Theorem W⁺ and scarred conductors (Lines M and N), 31 October 2026
+
+Project proofs: BGS-TRACE-269, 270, 272, 275, 277 (paper; Lean `Bgs.LineM` for 269, 272, 277); 271, 273 (paper on the Line F certificate
+BGS-TRACE-198/199); 278 (paper); 279 (paper + cited OSV, Voloch via OSV, Cochrane–Pinner); 280 (Theorem W⁺, under the standing inputs of
+Theorem W, m₁ effective, not computed); 281 (cited Bourgain JAMS 2005; p₀(C) effective, constants not computed); 283, 284 (paper on the
+TRACE-198 certificate; t_F and p₀ effective, not computed; Lean `Bgs.LineN.theta8V`); 285 (paper; Lean `Bgs.LineN`). Referee fixes:
+Line M by the author (REPORT_M_v2.md), Line N at integration (REPORT_N_v2.md §12).
+
+Open: BGS-TRACE-274 (M4c), 276 (M6, conditional on C1–C4), 282 (composite c ≤ p^C, [H]). Annotations, states unchanged: 206, 238, 246,
+247, 258 (246 and 258 now depend on 283). BGS-TRACE-206 (frozen R′) stays **open** and is not refuted.
+
 ## OP certified, Theorem W and K2′ without OP, and the open range in frozen R′ (Lines L, L2, L3), 31 October 2026
 
 State changes (explicit reviews, referee tables): BGS-TRACE-244 (OP) open → proved [P + CA]; BGS-TRACE-245 (Theorem W) and
