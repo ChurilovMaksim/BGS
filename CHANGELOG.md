@@ -2,6 +2,13 @@
 
 ## 2026-10-31 — Lines M and N: conductor structure along m = 3p, Theorem W⁺, scarred conductors (TRACE-269–285)
 
+Owner audit of PR #65 (MERGE after fixes), applied on the same branch: R1 the isotropic bound of N1.3 / Theorem W⁺ (TRACE-279, 280)
+now uses the middle Cochrane–Pinner branch λq^{1/4}τ^{−5/8} (q^{1/2} < τ ≤ q^{2/3}/3) besides the Gauss and 5/8 branches; coverage
+of the whole W⁺ range for every p is checked analytically and on a grid (lineN/integration_checks/iso_coverage.py); statement of W⁺
+unchanged. R2 the Cochrane–Pinner Thm 1.1 range is 3p^{1/3} < |A| ≤ p^{1/2} (EXT-CP-2011 locator; preprint of 5 Oct 2009, published
+text not accessible). R3 TRACE-278 budget sentence. S1–S3 family scope (±2,8), named statements in TRACE-284, annotational 283 edge
+of TRACE-246/258. No state changes.
+
 Register as project proofs (Line M, referee READY after M-F1–M-F12, applied by the author in REPORT_M_v2.md): BGS-TRACE-269 (M1,
 strong divisibility; open conductors at distinct m = 3p disjoint), 270 (M2, averaged H♮ ⇒ H♮ with δ/2), 271 (M3, inherited-level no-go
 for positivity methods, m = 3p ≥ 495, (±2,8); on the Line F certificate), 272 (M4a, P* families disjoint), 273 (M4b, (±2,8) rule

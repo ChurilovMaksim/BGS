@@ -34,7 +34,9 @@ The referee's verdict was READY-after-fixes N-F1–N-F10, and the brief asked th
 * N-F10: N1′ supersedes K2 lines 134–137.
 
 Integration notes in the same section:
-* I-1: the Cochrane–Pinner Thm 1.1 range condition, and the constant 2/3^{1/4} = 1.519671…
+* I-1: the Cochrane–Pinner Thm 1.1 ranges (3q^{1/3} < τ ≤ q^{1/2} and q^{1/2} < τ ≤ q^{2/3}/3), all three isotropic branches, and the
+  constant 2/3^{1/4} = 1.519671… (amended after the owner audit of PR #65; iso_coverage.py).
+* I-5: owner audit of PR #65, registry wording R3 (278 budget), S1–S3 (family scope, named statements, annotational 283 edge).
 * I-2: isotropic sums via Bourgain Thm 1 with r = 1; BGK is context only.
 * I-3: only F = (±2,8)V is used, because TRACE-198 puts the spectrum of L_E in |z| < 1, so the author's (8E) θ is dropped.
 * I-4: "unconditionally" → "without assuming frozen R′" (PR #64 R2 wording).

@@ -73,11 +73,24 @@
   "original_sha256": "b740bc392982b9dc81caa200b2599f01543497364301779c3be13bdb4c22b883",
   "items": [
    "N-F1..N-F10",
-   "I-1 Cochrane-Pinner range and constant",
+   "I-1 Cochrane-Pinner ranges (3q^{1/3} < tau <= q^{1/2}; q^{1/2} < tau <= q^{2/3}/3), three-branch isotropic bound, constant (amended after owner audit of PR #65, R1/R2)",
    "I-2 Bourgain r = 1 for isotropic sums",
    "I-3 F = (+-2,8)V only",
-   "I-4 wording without assuming frozen R'"
-  ]
+   "I-4 wording without assuming frozen R'",
+   "I-5 owner audit of PR #65: R3 (278 budget), S1-S3"
+  ],
+  "owner_audit_pr65": {
+   "report": "/workspace/audit/pr65/AUDIT.md (owner, not in tree)",
+   "fixes": [
+    "R1",
+    "R2",
+    "R3",
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "iso_coverage": "computations/verification/lineN/integration_checks/iso_coverage.py (ISO_COVERAGE_OK)"
+  }
  },
  "repo_wording_fixes": [
   "computations/verification/lineK/K2/REPORT_K2_v2.md (section 9; N-F6, N-F10)",
@@ -141,7 +154,7 @@
   "computations/verification/lineM/referee/logs/ref_m.log": "f0a5fd9fc5b3029023b39b58485b125dc2831d39d3124f1bf5a6bf9f59cf7507",
   "computations/verification/lineN/NOTES_N.md": "3466316b282a6a829f4710d85d6b21b60426ec1437a2827cb3fe591ecf97e039",
   "computations/verification/lineN/REPORT_N.md": "b740bc392982b9dc81caa200b2599f01543497364301779c3be13bdb4c22b883",
-  "computations/verification/lineN/REPORT_N_v2.md": "60ee28df88f0f3a3833fd995c7b7b13939aea8f86c594c2384da445a3a799a9c",
+  "computations/verification/lineN/REPORT_N_v2.md": "4e156386b15d4ebab5b165018300fed43be1f5ebf08187566c900caf660fa5d8",
   "computations/verification/lineN/SHA256_N.txt": "b56cee6d59a75386ccf8b6b26b6830450114f7664100a2ee490b2aa4cd5299e1",
   "computations/verification/lineN/SHA256_N.txt.sha256": "7083a5d26f228add8d79dabd13767af176d03f7523cab8264f715914fa4d10b9",
   "computations/verification/lineN/code/n1_factor.py": "fe9e0f356580510f76be6a44ce0e228c49381c7198e23b89699630f67f7335b3",
@@ -151,6 +164,8 @@
   "computations/verification/lineN/code/n4_summary.py": "d0979a8afb511694086667f771ba6ee19f3cae87bcffba3066da271ff635d858",
   "computations/verification/lineN/code/n5_slow_toy.py": "ae8843e08d188f63a7d8d21b2e04a7cfde869be4b04a19fd216b72a579937a40",
   "computations/verification/lineN/code/n6_theta.py": "62f6287907b989460ab3add3751f6f206e1fdf26f7c75c8c15476949a7c3b385",
+  "computations/verification/lineN/integration_checks/iso_coverage.log": "43e16c902ffee73ef890e8a3a4413e2209962121395767981c4d86bcf7ee4a9a",
+  "computations/verification/lineN/integration_checks/iso_coverage.py": "df8767b1dc61850634756dae7c9ca837bdc0727dbb8d7814983a4ab10b42be57",
   "computations/verification/lineN/integration_checks/lineMN_checks.log": "b0a30fb840f8933d84ea3496a76aa58c9bcba9d596d92c3ffcc7a392d4e2f549",
   "computations/verification/lineN/integration_checks/lineMN_checks.py": "26fd113c2aae76fd91ac3e98050c3c6928d2f49a7feec0abb496421b03180ba0",
   "computations/verification/lineN/integration_checks/proved_deps_gate_MN.log": "d625ca13d3cac836bc726e5a10fc35a7e825ef720f6f1b04ec448eb985549e91",
@@ -185,9 +200,9 @@
   "computations/verification/lineN/referee/logs/rerun_n6_theta.log": "aa2eda3043583ffc94854009cb05a3c721de3363070bac20697810cdb7259928",
   "formalization/Bgs/LineMArith.lean": "71c1853ee6b84af3ee3adc6ed571c0658f1ff59bb94ac5014329dc2cd0724fbb",
   "formalization/Bgs/LineNArith.lean": "d8e3c3f10d67abf8360578bb82892db8ef6df7d8838f11c3ee203005a85c3263",
-  "mathematics/fixed-map/lineMN_conductor_structure.md": "65f13b8b37aa75bf64720e292354cf7bbc46e4350ccf79ca0011caadc2deffcf",
-  "literature/lineMN_sources_20261031.md": "513d96e566d3a4c558bb38fb5af589a45fd6764a51229bfde49fa667da98ef41",
-  "evidence/source_metadata/registry_metadata_20261031_lineMN.json": "713e06ce1d19a9a1773495cd2b240268348a60a3d6405edaed5e6965139c4db2",
+  "mathematics/fixed-map/lineMN_conductor_structure.md": "61c924349de9c2e1f542901d23e8861ee557979b9a4a186c89566762fe29a581",
+  "literature/lineMN_sources_20261031.md": "e0fd88f73035da91a1b7c0496fc8f743591db8846638072bc8e750a327841928",
+  "evidence/source_metadata/registry_metadata_20261031_lineMN.json": "fd9f2a1cffe43f83dc156a59da06de854e2272a859dab83e61ef1456421a89b7",
   "evidence/executions/20261031/lineMN/integration_reruns/out_m_checks_v2.log": "655a06f0057ec1bc2a755150c5d2ee9b194273f7c30a07c5572c292d044d6dfb",
   "evidence/executions/20261031/lineMN/integration_reruns/out_m_incl_v2.log": "6d6834decede46ccbab538d2b046f4df78b565ced100241f81433b7bb0b31a1e",
   "evidence/executions/20261031/lineMN/integration_reruns/out_n2_constants.log": "f74736f3cf7adea82ad0cedf3db1617588012d352ba99db2eb58ee3008f2fae7",
@@ -197,6 +212,12 @@
   "evidence/executions/20261031/lineMN/lake_cache_get.log": "8400dadb32327c1210d92a5e932f93544cbc4f0702792ed727ead00fe5381271",
   "evidence/executions/20261031/lineMN/lean_axioms_LineMArith.log": "7785371ee1f8f0a32ac6eab009051754f2c49bb6bfe57e16501c2f968ba92de7",
   "evidence/executions/20261031/lineMN/lean_axioms_LineNArith.log": "ec764c72df3be5e3e19222f12d49ed3d40a13bb5331bb34315705c29b8bf94cb",
-  "evidence/executions/20261031/lineMN/manifests.log": "5e302bf3a7fca3251d2bfa2d8e8a9427e29fa6993bd8f8cc866638821c82e975"
+  "evidence/executions/20261031/lineMN/manifests.log": "5e302bf3a7fca3251d2bfa2d8e8a9427e29fa6993bd8f8cc866638821c82e975",
+  "evidence/executions/20261031/lineMN/owner_audit_pr65/iso_coverage.log": "43e16c902ffee73ef890e8a3a4413e2209962121395767981c4d86bcf7ee4a9a",
+  "evidence/executions/20261031/lineMN/owner_audit_pr65/lake_build_Bgs.log": "2dce952a59b4f2280b3fa21046a377310434b94c07919b83a4bc7497736f48dd",
+  "evidence/executions/20261031/lineMN/owner_audit_pr65/lake_cache_get.log": "8400dadb32327c1210d92a5e932f93544cbc4f0702792ed727ead00fe5381271",
+  "evidence/executions/20261031/lineMN/owner_audit_pr65/lineMN_checks.log": "b0a30fb840f8933d84ea3496a76aa58c9bcba9d596d92c3ffcc7a392d4e2f549",
+  "evidence/executions/20261031/lineMN/owner_audit_pr65/proved_deps_gate_MN.log": "d625ca13d3cac836bc726e5a10fc35a7e825ef720f6f1b04ec448eb985549e91",
+  "evidence/executions/20261031/lineMN/owner_audit_pr65/proved_deps_gate_lineL.log": "4c5ac792d6149c7f5fda77e7c9b74b47c1e41398740841e8eac407bca1de007f"
  }
 }

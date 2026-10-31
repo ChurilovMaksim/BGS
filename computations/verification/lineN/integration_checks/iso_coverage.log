@@ -1,0 +1,10 @@
+Part 1: analytic case split (log10 units), registered range q <= max(c_W p^2, c_N p^{7/3})
+  16E: log10 eps_F = -10.117915; T_B1 = 41.903, T_B2 = 82.3973; C: logc_N < -3log3 True, L + logc_N/8 = -14.0433 <= e True; beyond-Weil from log10 p = 264.54 -> COVERED for all p
+  16V: log10 eps_F = -10.964191; T_B1 = 45.2881, T_B2 = 89.1675; C: logc_N < -3log3 True, L + logc_N/8 = -14.0433 <= e True; beyond-Weil from log10 p = 264.54 -> COVERED for all p
+  8E: log10 eps_F = -10.165013; T_B1 = 42.0914, T_B2 = 82.7741; C: logc_N < -3log3 True, L + logc_N/8 = -14.0433 <= e True; beyond-Weil from log10 p = 264.54 -> COVERED for all p
+  8V: log10 eps_F = -12.506581; T_B1 = 51.4577, T_B2 = 101.507; C: logc_N < -3log3 True, L + logc_N/8 = -14.0433 <= e True; beyond-Weil from log10 p = 264.54 -> COVERED for all p
+Part 2: numerical grid in floats (all families, tau = p*10^j); step 0.01 in log10 q for log10 p <= 400,
+        2000 equispaced points plus the case boundaries 2t+2e, 2t, 1.5t for larger p
+  grid points: 61533169; uncovered with G+CP3+CP5: 0
+  (8V, tau in {p,3p}) uncovered with G+CP5 only (pre-R1 text): 4748748; first at log10 p = 266.4, log10 q = 507.79
+ISO_COVERAGE_OK

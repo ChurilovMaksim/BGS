@@ -3,7 +3,7 @@
 31 Oct 2026 (Asia/Yekaterinburg, UTC+5). Work dir /workspace/bgs-lineN. Nothing was pushed.
 
 **v2 (integration copy).** The integrator wrote this version on 31 Oct 2026 (UTC+5). It applies the referee fixes N-F1 … N-F10
-(`referee/REPORT.md`, verdict READY-after-fixes) and four integration notes I-1 … I-4. The author's text is `REPORT_N.md`, kept
+(`referee/REPORT.md`, verdict READY-after-fixes) and five integration notes I-1 … I-5 (I-1 amended and I-5 added after the owner audit of PR #65). The author's text is `REPORT_N.md`, kept
 unchanged (sha256 b740bc392982b9dc81caa200b2599f01543497364301779c3be13bdb4c22b883, listed in `SHA256_N.txt`). Every change is listed in §12. The author was not consulted.
 Labels: [P] proved here; [P-cite] proved from a cited theorem whose statement I read (hypotheses checked, proof not re-verified);
 [CA] computer-assisted; [N] numerics; [H] heuristic; [assessment] opinion. "Standing inputs" = Line F/J/J3/L16 + the Line L
@@ -66,7 +66,7 @@ From K2_v2 §2 (W1/W3) and REPORT_L_v2 §3 (both verified line by line):
 | Bourgain–Konyagin, CRAS 337 (2003) | \|Σ_{x∈G}e_p(xξ)\| ≲ \|G\|p^{−γ}, γ = exp(−c₁/δ^{c₂}), for \|G\| ≳ p^δ; c₁, c₂ unspecified absolute constants | linear (isotropic) only; not numerically explicit |
 | BGK, JLMS 73 (2006) 380–398 | ∀ε ∃δ(ε): \|G\| ≥ p^ε ⇒ max_{a≠0}\|Σ_{x∈G}e_p(ax)\| ≤ \|G\|p^{−δ} | linear only; δ not explicit |
 | **Bourgain, JAMS 18 (2005) 477–499, Thm 1 / Cor (1.21)** | ord(θ_i) > p^ε and ord(θ_iθ_j⁻¹) > p^ε ⇒ max_{a_i∈F_p*}\|Σ_{s=1}^{p−1}e_p(Σ a_iθ_iˢ)\| < p^{1−δ(ε)}. **Both a_i must be nonzero** | yes: θ = ℓ, ℓ⁻¹ with orders r and r (r odd) ⇒ non-isotropic sums, for q ≤ p^C; δ not explicit |
-| Cochrane–Pinner, QJM 62 (2011), Thm 1.1 | \|Σ_{x∈A}e_p(ax)\| ≤ λ\|A\|^{5/8}p^{1/8}, λ = 2/3^{1/4} = 1.51967, valid for every subgroup A (explicit Heath-Brown–Konyagin) | isotropic sums, explicit, q ≲ 10^{−101.5}p³ |
+| Cochrane–Pinner, QJM 62 (2011), Thm 1.1 | for a subgroup A: \|Σ_{x∈A}e_p(ax)\| ≤ λ\|A\|^{5/8}p^{1/8} for 3p^{1/3} < \|A\| ≤ p^{1/2}, ≤ λ\|A\|^{3/8}p^{1/4} for p^{1/2} < \|A\| ≤ p^{2/3}/3, ≤ p^{1/2} for \|A\| > p^{2/3}/3; λ = 2/3^{1/4} = 1.519671… (explicit Heath-Brown–Konyagin; ranges as in the author preprint of 5 Oct 2009, I-1) | isotropic sums, explicit; the 3/8 (middle) branch is needed in the W⁺ range (I-1) |
 | Cochrane–Pinner Thm 1.3 | \|Σ e_p(axᵏ+bxˡ)\| ≤ (k−l,p−1) + 2.292d^{13/46}p^{89/92} | binomial; worse than Weil here (K2 correct) |
 | Di Benedetto–Garaev–García–González-Sánchez–Shparlinski–Trujillo, JNT (2020), arXiv 2003.06165, Thm 3.1 | \|S_a(H)\| ≲ H^{2689/2880}p^{1/72} for p^{1/4} < H < p^{1/2} (≲ hides p^{o(1)}) | linear only; o(1) losses not explicit |
 | Bourgain–Garaev, Math. Proc. Camb. 146 (2009) | H ~ p^{1/4}: H^{1−175/9437184+o(1)} | linear only |
@@ -120,9 +120,14 @@ For (2,3) and (3,3) assume also τ ≥ 10⁴⁵ and q ≥ c_W p² (the J₃ hypo
 - (2,3): |S|/τ ≤ (34.62)^{1/12}·q^{1/6}τ^{−13/36}.
 - (3,3): |S|/τ ≤ 17.31^{1/9}·(q/τ^{7/3})^{1/9}.
 
-For isotropic x: |S|/τ ≤ min(√q/τ, 1.51967·q^{1/8}τ^{−3/8}) [Cochrane–Pinner Thm 1.1]. (I-1: their constant is λ = 2/3^{1/4} = 1.519671…, quoted here
-rounded down as 1.51967; Cochrane–Pinner state the 5/8 bound for (1/3)q^{1/3} < τ ≤ q^{1/2}; for τ > q^{1/2} the Gauss-period bound √q is used. In the isotropic range q ≤ 10^{−101.5}p³ with τ ≥ p
-one has τ > q^{1/3}, so the bound applies there.)
+For isotropic x: |S|/τ ≤ min(√q/τ, λq^{1/4}τ^{−5/8}, λq^{1/8}τ^{−3/8}), λ = 2/3^{1/4} = 1.519671… [Cochrane–Pinner Thm 1.1], each branch only in its range:
+√q (Gauss period) for every τ; λτ^{3/8}q^{1/4} for q^{1/2} < τ ≤ q^{2/3}/3; λτ^{5/8}q^{1/8} for 3q^{1/3} < τ ≤ q^{1/2}. A coset gH′ has the same bounds (replace a by ag).
+(I-1, amended after the owner audit of PR #65: the report's 1.51967 rounds λ down. The middle branch is needed: for c_W p² < q < τ² the 5/8
+bound does not apply and √q/τ > ε_F once q > ε_F²τ², which happens inside the W⁺ range for p ≥ 10^{266.4} (τ = p). With the three branches the
+isotropic case is covered on the whole W⁺ range for every p: Gauss for q ≤ ε_F²τ²; the middle branch for ε_F²τ² < q < τ², since there
+λq^{1/4}τ^{−5/8} < λτ^{−1/8} ≤ ε_F for τ ≥ 10^{101.6} and τ ≤ q^{2/3}/3 for τ ≥ 10^{51.5}; the 5/8 branch for τ² ≤ q ≤ c_N p^{7/3}, since there
+τ ≥ p > 3q^{1/3} and λq^{1/8}τ^{−3/8} ≤ λc_N^{1/8}p^{−1/12} < ε_F. Grid and case-split check: integration_checks/iso_coverage.py, all four families,
+10^{264.5} ≤ p ≤ 10^{400} and larger p.)
 
 [N] check: all three inequalities hold, with room, on the 17 real levels q | h_{3p} with q ≤ 6000 (exact 2D FFT; logs/n3_check.log).
 
@@ -133,7 +138,7 @@ for prime conductors q and 7q. Hypotheses restated (N-F4): the part beyond Weil 
 p ≥ 10^{264.5}; there τ ≥ p ≥ 10⁴⁵ and q ≥ c_W p², so the J₃ constant 17.31 applies. The binding family is (±2,8)V. The other families give c_N between 10^{−99.9} and 10^{−92.3}.
 - (3,3) beats Weil exactly when p ≥ 10^{264.5}.
 - (2,3) gives 10^{−75.8}p^{13/6} and is never the best option once (3,3) beats Weil.
-- The isotropic part has a wider range (10^{−101.5}p³), so the non-isotropic sums are binding.
+- The isotropic part is covered on the whole range for every p by the three branches of N1.3 (I-1; the 5/8 branch alone reaches 10^{−101.5}p³ but does not cover c_W p² < q < τ²), so the non-isotropic sums are binding.
 - *Proof.* Insert N1.3 in W3 in place of W1, with τ ≥ p and budget ε_F. Then apply Theorem W unchanged. The constants are in
   logs/n2_constants.log.
 
@@ -313,7 +318,8 @@ from near-0 orbits.
 | N-F8 | §0 N4, §7 | index 4 (not 32): ((1/h_p)O + O^∨)/O^∨ has h_p² points, Fix(T^p) has 4h_p²; downstream N4 statements rechecked (the margin heuristic does not use the index) |
 | N-F9 | §0 N1 | table harmonised with the body: J₂ ≤ 2τ² − τ, J₃ ≤ 17.31τ^{11/3} |
 | N-F10 | §0 N1′ | N1′ supersedes REPORT_K2_v2.md:134–137 ("explicit versions do not help for the binomial sums"); pointer added there |
-| I-1 | §3 N1.3 | Cochrane–Pinner Thm 1.1 range (1/3)q^{1/3} < τ ≤ q^{1/2} stated; holds in the isotropic W⁺ range; constant 2/3^{1/4} = 1.519671… (1.51967 rounds down) |
+| I-1 | §2, §3 N1.3, W⁺ | Cochrane–Pinner Thm 1.1 ranges stated as 3q^{1/3} < τ ≤ q^{1/2} (5/8 branch) and q^{1/2} < τ ≤ q^{2/3}/3 (3/8 branch); the §2 phrase "valid for every subgroup A" removed; the isotropic bound uses all three branches (Gauss, 3/8, 5/8), which cover the W⁺ range for every p (iso_coverage.py); constant 2/3^{1/4} = 1.519671… (1.51967 rounds down). Amended after the owner audit of PR #65 (R1, R2) |
 | I-2 | §4 | the isotropic case of N2 cites Bourgain JAMS Theorem 1 with r = 1; BGK as context only (not read) |
 | I-3 | §6 | θ_F only for F = (±2,8)V; the (8E) value 6.01·10⁻⁶ is not used (TRACE-198: spectrum of L_E in \|z\| < 1) |
 | I-4 | §0, §6, §9 | "holds unconditionally" → "holds without assuming frozen R′" (wording as in the registry, PR #64 R2) |
+| I-5 | registry | owner audit of PR #65: TRACE-278 budget sentence A_k sup\|S\| ≤ η_F/3, i.e. sup\|S\| ≤ ε_F (as in §1 here, R3); family scope "open for the (±2,8) families; slow orbit in (±2,8)V" and θ = θ_(±2,8)V added to TRACE-246/247/258/284 (S1); TRACE-284 names K2′ (TRACE-246), Theorem U (TRACE-254) and Lemma E (TRACE-268) (S2); the TRACE-283 edge of 246/258 marked annotational (S3) |

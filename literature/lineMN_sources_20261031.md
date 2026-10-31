@@ -26,10 +26,15 @@ into the repository.
 ## EXT-CP-2011: explicit Heath-Brown–Konyagin bound (new)
 * **Identity.** T. Cochrane, C. Pinner, "Explicit bounds on monomial and binomial exponential sums", Q. J. Math. 62 (2011), no. 2,
   323–349, DOI 10.1093/qmath/hap041.
-* **Used.** Theorem 1.1, the 5/8 range: |Σ_{x∈A} e_p(ax)| ≤ λ|A|^{5/8}p^{1/8} for (1/3)p^{1/3} < |A| ≤ p^{1/2}, with λ = 2/3^{1/4} =
-  1.519671… (the report rounds it down to 1.51967). It enters BGS-TRACE-279 (isotropic x).
-* **Range check (integration note I-1).** In the isotropic range q ≤ 10^{−101.5}p³ with τ ≥ p we have τ > q^{1/3}. Above q^{1/2}
-  the Gauss-period bound √q is used instead.
+* **Used.** Theorem 1.1, both explicit branches: |Σ_{x∈A} e_p(ax)| ≤ λ|A|^{5/8}p^{1/8} for 3p^{1/3} < |A| ≤ p^{1/2} and
+  ≤ λ|A|^{3/8}p^{1/4} for p^{1/2} < |A| ≤ p^{2/3}/3, with λ = 2/3^{1/4} = 1.519671… (the report rounds it down to 1.51967). They enter
+  BGS-TRACE-279 (isotropic x) together with the Gauss-period bound √q.
+* **Locator check.** The ranges were read in the author preprint dated 5 Oct 2009 (owner audit of PR #65, R2: the lower limit is
+  3p^{1/3}, not p^{1/3}/3). The published QJM text was not accessible (the publisher returned 403 on 31 Oct 2026); identity and
+  pages checked on Crossref.
+* **Range check (integration note I-1, amended after the owner audit of PR #65, R1).** The middle branch is needed for
+  c_W p² < q < τ²; with Gauss, middle and 5/8 branches the isotropic case covers the Theorem W⁺ range for every p
+  (`computations/verification/lineN/integration_checks/iso_coverage.py`).
 * **Not used.** Theorem 1.3 (binomial sums) is worse than Weil here, as Line K already found.
 
 ## EXT-BOURGAIN-2005: Mordell's estimate revisited (new)

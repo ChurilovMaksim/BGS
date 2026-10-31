@@ -49,11 +49,11 @@ anywhere: every threshold (m₁, p₀(C), t_F, p₀ of N3) is effective, not com
 **Changed earlier claims (annotations; no state changes):**
 * **BGS-TRACE-246 (K2′, proved)** and **BGS-TRACE-258 (Prop S, proved):** the [H] caveat "that this covers all or most m" is replaced by
   the proved statement of Theorem N3 (BGS-TRACE-283), which is added as a dependency of both. For every p ≥ p₀ (effective, not computed)
-  the conductor c = h_p, which lies in K2′'s open set, carries the slow orbit β = 1. So K2′'s conclusion holds without assuming frozen R′,
+  the conductor c = h_p, which lies in K2′'s open set (open for the (±2,8) families; slow orbit in (±2,8)V), carries the slow orbit β = 1. So K2′'s conclusion holds without assuming frozen R′,
   and K2′ is never a refutation route for such m (Corollary N3′, BGS-TRACE-284). To keep the graph acyclic, N3 credits Prop S in its
-  text only and does not depend on 246, 258 or M3.
+  text only and does not depend on 246, 258 or M3. The 283 edge of 246 and 258 is annotational: K2′ and Prop S do not use N3.
 * **BGS-TRACE-247 (Conjecture C1, open) and the Line L §6 target.** The unweighted target "exclude slow λ-orbits at conductors
-  c ∈ (c_W p², L_m)" (REPORT_L_v2 §6) is **false** on c ≥ λ^{θr/2+t} (by N3). It is restated as a **β-weighted** target: bound the
+  c ∈ (c_W p², L_m)" (REPORT_L_v2 §6) is **false** on c ≥ λ^{θr/2+t}, θ = θ_(±2,8)V (by N3). It is restated as a **β-weighted** target: bound the
   β-weighted mean of the twisted orbit sums at the scarred conductors, h_p first. Examples are H_mean (BGS-TRACE-256) and the
   periodic-orbit pressure form of N4 ([H]). C1 itself is unaffected.
 * **BGS-TRACE-238 (Prop K2, proved):** M5 (BGS-TRACE-275) is recorded as its refinement (sharp within the quadratic relaxation), and M3
@@ -122,7 +122,10 @@ levels.
 - J₂ ≤ 2τ² − τ.
 - J₃ ≤ 17.31τ^{11/3} for q ≥ c_W p², τ ≥ 10⁴⁵ (N-F4). This uses OSV Lemma 4.3 (absolute irreducibility) and Voloch's point count, cited
   via OSV, Math. Proc. Camb. Lemma 2.1.
-- Isotropic sums: Cochrane–Pinner Thm 1.1, constant 2/3^{1/4} = 1.519671…, range (1/3)q^{1/3} < τ ≤ q^{1/2} (integration note I-1).
+- Isotropic sums: |S|/τ ≤ min(√q/τ, λq^{1/4}τ^{−5/8}, λq^{1/8}τ^{−3/8}), λ = 2/3^{1/4} = 1.519671… (Cochrane–Pinner Thm 1.1), each branch in its
+  range: Gauss period for every τ, the 3/8 branch for q^{1/2} < τ ≤ q^{2/3}/3, the 5/8 branch for 3q^{1/3} < τ ≤ q^{1/2}. The middle branch is
+  needed for c_W p² < q < τ²; with all three the isotropic case covers the W⁺ range for every p (integration note I-1, owner audit of
+  PR #65 R1/R2; `computations/verification/lineN/integration_checks/iso_coverage.py`).
 
 **Theorem W⁺ (BGS-TRACE-280).**
 - Under the standing inputs of Theorem W, Theorem W holds for q ≤ max(c_W p², c_N p^{7/3}), with c_N = 10^{−113.80}.
@@ -149,7 +152,9 @@ not read. Its closure condition is to verify its hypotheses for R = O/c.
 - Only F = (±2,8)V is used. The author's (8E) value is dropped because the spectrum of L_E lies in |z| < 1 (I-3).
 
 **Corollary N3′ (BGS-TRACE-284).**
-- For m = 3p ∈ S⁺ with p ≥ p₀, c = h_p is open (M3) and slow.
+- For m = 3p ∈ S⁺ with p ≥ p₀, c = h_p is open for the (±2,8) families (M3) and slow in (±2,8)V.
+- Named consequences: the conclusion of K2′ (BGS-TRACE-246) holds without assuming frozen R′; Theorem U (BGS-TRACE-254) and Lemma E
+  (BGS-TRACE-268) are not contradicted.
 - So K2′'s conclusion holds without assuming frozen R′, and no strengthening of the exponential-sum input can turn K2′ into a refutation.
 - **The unweighted target "exclude slow λ-orbits" is false on c ≥ λ^{θr/2+t}; the open-range target must be β-weighted.**
 

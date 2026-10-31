@@ -1307,10 +1307,10 @@
       "title": "Explicit Bounds on Monomial and Binomial Exponential Sums",
       "identifier": "DOI:10.1093/qmath/hap041",
       "pinned_version": "The Quarterly Journal of Mathematics 62 (2011), no. 2, 323-349",
-      "locator": "Theorem 1.1 (explicit Heath-Brown-Konyagin): for a subgroup A of Z_p^* and (a, p) = 1, max |sum_{x in A} e_p(ax)| <= p^{1/2} for |A| > p^{2/3}/3, <= lambda |A|^{3/8} p^{1/4} for p^{1/2} < |A| <= p^{2/3}/3, and <= lambda |A|^{5/8} p^{1/8} for p^{1/3}/3 < |A| <= p^{1/2}, lambda = 2/3^{1/4} = 1.519671...",
+      "locator": "Theorem 1.1 (explicit Heath-Brown-Konyagin): for a subgroup A of Z_p^* and (a, p) = 1, max |sum_{x in A} e_p(ax)| <= p^{1/2} for |A| > p^{2/3}/3, <= lambda |A|^{3/8} p^{1/4} for p^{1/2} < |A| <= p^{2/3}/3, and <= lambda |A|^{5/8} p^{1/8} for 3 p^{1/3} < |A| <= p^{1/2}, lambda = 2/3^{1/4} = 1.519671... (ranges checked against the author preprint dated 5 Oct 2009; the published QJM text was not accessible, publisher returned 403 on 2026-10-31)",
       "checked_on": "2026-10-31",
       "dependency_role": "load-bearing external theorem",
-      "mapping": "Proposition N1.3, isotropic x (BGS-TRACE-279): |S|/tau <= min(sqrt q/tau, (2/3^{1/4}) q^{1/8} tau^{-3/8}); the 5/8 range (1/3) q^{1/3} < tau <= q^{1/2} holds in the isotropic range q <= 10^-101.5 p^3 with tau >= p (integration note I-1); above q^{1/2} the Gauss-period bound sqrt q is used. Used through BGS-TRACE-279 in Theorem W+ (BGS-TRACE-280).",
+      "mapping": "Proposition N1.3, isotropic x (BGS-TRACE-279): |S|/tau <= min(sqrt q/tau, lambda q^{1/4} tau^{-5/8}, lambda q^{1/8} tau^{-3/8}), lambda = 2/3^{1/4}, each branch only in its range (Gauss period for every tau; middle branch for q^{1/2} < tau <= q^{2/3}/3; 5/8 branch for 3 q^{1/3} < tau <= q^{1/2}); with all three branches the isotropic case covers the whole Theorem W+ range for every p (owner audit of PR #65, R1/R2; integration note I-1; iso_coverage.py). Used through BGS-TRACE-279 in Theorem W+ (BGS-TRACE-280).",
       "project_sources": [
         "mathematics/fixed-map/lineMN_conductor_structure.md",
         "literature/lineMN_sources_20261031.md",
