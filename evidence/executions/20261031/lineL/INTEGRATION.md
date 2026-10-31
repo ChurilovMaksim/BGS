@@ -56,7 +56,7 @@ Base: `origin/main` e9e1550a (merge of PR #63). Branch `line-L-op`. Commits as C
 6. The L2 and L3 errata were written by the integrator, not the author.
 7. Numerics, heuristics (deficit identity, slow-orbit model, Lemma Q Remark, cost bound) and assessments are notes only.
 
-## Checker results (31 Oct 2026, ~16:20–16:45 UTC+5)
+## Checker results (31 Oct 2026, completed by 15:43 UTC+5)
 * Branch: render_bibliography, render_claim_registry, render_errata, render_research_views, render_spectral_research, render_status
   (all `--check`), scientific_registry_audit, repository_audit, wave3_integration_audit, audit_manuscript_references: exit 0.
 * Pre-existing failures, identical on main e9e1550a (`checkers_baseline_main_e9e1550a.log`): wave2_integration_audit ("integrated wrapper
