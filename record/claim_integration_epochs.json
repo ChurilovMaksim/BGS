@@ -1414,13 +1414,13 @@
       "id": "BGS-TRACE-245",
       "state": "proved",
       "source": "mathematics/fixed-map/lineK_harg_removal.md",
-      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem W: Weil-range conductors q <= c_k p^2 negligible; asymptotic only; refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): explicit state review conditional -> proved [P + CA]: OP condition dropped (TRACE-244 proved); under the standing inputs (TRACE-197, J3 with L16, Weil) for m >= m1 (effective, not computed), c_W = 10^-25.62, q0 = 10^13.2; no explicit p0; refereed."
+      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem W: Weil-range conductors q <= c_k p^2 negligible; asymptotic only; refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): explicit state review conditional -> proved [P + CA]: OP condition dropped (TRACE-244 proved); under the proved standing inputs (TRACE-197, 225, 226, 227, 238, 241; only the proved identity and [CA] bounds of Line J, TRACE-212/213/228, are used, not the conditional conclusion of TRACE-231 nor the open TRACE-232, 233, 239, 256) for m >= m1 (effective, not computed), c_W = 10^-25.62, q0 = 10^13.2; no explicit p0; refereed."
     },
     {
       "id": "BGS-TRACE-246",
       "state": "proved",
       "source": "mathematics/fixed-map/lineK_harg_removal.md",
-      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem K2': frozen R' implies a slow lambda-orbit at an open conductor; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): explicit state review conditional -> proved [P + CA] under the same standing inputs plus S_Z (Prop K2), m >= m1 (effective, not computed); caveat (Prop S, TRACE-258): true, but not a refutation route for the m covered by Prop S; refereed."
+      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem K2': frozen R' implies a slow lambda-orbit at an open conductor; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): explicit state review conditional -> proved [P + CA] under the same proved standing inputs (S_Z / Prop K2 = TRACE-238 included), m >= m1 (effective, not computed); caveat (Prop S, TRACE-258): true, but not a refutation route for the m covered by Prop S; refereed. Owner audit of PR #64 (R1): TRACE-240 (conditional) is not a dependency; only its proved implication is used, re-derived from TRACE-231 (1)-(2), 235, 237, 238."
     },
     {
       "id": "BGS-TRACE-247",
@@ -1486,7 +1486,7 @@
       "id": "BGS-TRACE-257",
       "state": "proved",
       "source": "mathematics/fixed-map/lineL_op_open_range.md",
-      "disposition": "31 October 2026 (Line L): proved implication (paper): H_mean (TRACE-256, open) implies frozen R' false; no refutation claimed; refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line L): proved implication (paper): H_mean (TRACE-256, open) implies frozen R' false; no refutation claimed; refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Owner audit of PR #64 (R1): TRACE-240 and the antecedent TRACE-256 are not listed as dependencies; the proved implication of Theorem K is re-derived from its proved components. Does not close TRACE-206, TRACE-148 or BGS-001."
     },
     {
       "id": "BGS-TRACE-258",

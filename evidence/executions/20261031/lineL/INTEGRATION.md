@@ -64,3 +64,43 @@ Base: `origin/main` e9e1550a (merge of PR #63). Branch `line-L-op`. Commits as C
   (EXT-BR-1975 drift), unittests. A second unittest run gave identical sorted FAIL/ERROR lists on branch and main (219 entries each,
   116 failures + 103 errors); the first branch run had one extra error (104), consistent with the known timeout of the routing test in a
   working tree that contains `formalization/.lake`.
+
+## Owner audit of PR #64 (head d65557ef): fixes applied (31 Oct 2026, UTC+5)
+Audit verdict MERGE-after-fixes. Changes: `record/claims.json`, the note `mathematics/fixed-map/lineL_op_open_range.md`, this file,
+`formalization/Bgs/LineLConst.lean` (`#print axioms` lines only) and the regenerated registry views, inventory (`source_blob_sha`) and
+epochs. Scripts: `integ_logs/edit_claims_R.py`, `edit_note_R.py`, `edit_inv_epochs_R.py` (integrator scratch, not in the repository).
+* **R1 (strict option).** BGS-TRACE-245 and 246 no longer depend on BGS-TRACE-231 (conditional); they depend on its proved inputs
+  212, 213, 225, 227, 228 instead (each in state proved; 197, 226, 238, 241 kept or added; 246 also gets 237 and 241). The ledger reads:
+  standing inputs 197, 225, 226, 227, 238, 241 (all proved); only the proved identity and computer-assisted bounds of Line J
+  (212/213/228) are used; the conditional conclusion of TRACE-231 and the open hypotheses 232, 233, 239, 256 are not used.
+  BGS-TRACE-240 (Theorem K, conditional) is removed from the dependencies of 246 and 257; only its proved implication
+  ("O♮^{<L}_m = o(ξ_lo^m) along an infinite subset of S⁺ ⇒ W′_m/m → ∞"), re-derived from its proved components (235; the proved parts of
+  231 with 238; 237), is used, and this is stated explicitly. For 257 (a proved implication) the open antecedent H_mean (BGS-TRACE-256)
+  is no longer listed as a dependency; the boundary says so. The boundaries of 245, 246, 253, 257, the 206 annotation phrase and the
+  note §1 (standing inputs) are reworded accordingly.
+* **R2.** In 246, 258 and the note §6: "holds unconditionally" → "holds without assuming frozen R′".
+* **S2.** `#print axioms` for all 23 theorems of `Bgs.LineLConst` (was 14); all report "does not depend on any axioms"
+  (`lean_axioms_LineLConst.log`).
+* **S3.** 252 and the note §3 state δ_F = δ_OP/2.
+* **S1 (policy, no new records).** The four standard results are not added to `literature/external_dependencies.json`. The schema would
+  admit book references (precedent EXT-VINOGRADOV-1937), but a record there needs a source review that was read and pinned, a
+  metadata-snapshot entry, an admission in `claim_integration_epochs.json` (`external_dependency_extension.added_ids`) and
+  `external_dependencies` links on the claims; this was outside the scope of this fix round (claims.json and notes only), and the
+  Minkowski and Cauchy textbook texts were not read here. Policy for Line L: standard textbook facts that are used as lemmas and are
+  checked numerically or are elementary are named in the claim boundary, with a locator where one was read, and are not registered as
+  external theorems. Locators: Neumann's addition theorem, DLMF 10.23.2 (for J and integer order no restriction on u, v; with u = v it
+  gives Σ_a J_a(x) J_{a−d}(x) = δ_{d0}); Graf's addition theorem, DLMF 10.23.7; Jacobi–Anger, DLMF 10.12.1 with t = i e^{iθ} (giving
+  e^{ix cos θ} = Σ_n iⁿ J_n(x) e^{inθ}) and 10.12.2–3 (both pages read on 31 Oct 2026). Minkowski's convex-body theorem (used for a cube in
+  Lemma B2, BGS-TRACE-261) and Cauchy's root bound (|root| ≤ 1 + max|a_i/a_n|, L2-F2, BGS-TRACE-261): standard, no page pinned. None of
+  the four is on the 244–246 chain; Graf and Jacobi–Anger were also checked numerically in the owner audit (errors < 3·10⁻³²).
+  Registering them is a possible follow-up.
+* **Deviation count (audit S4).** The deviations list above has 7 items. The integration report to the owner listed 9: it left out
+  item 7 (notes only) and added three items recorded elsewhere: the changed titles of 245/246 (see "Registry"), the
+  `v4_negative_controls.py` data string (see the metadata report), and that the L3 inheritance run at (7, 239) was not repeated at
+  integration (only `inherit_test 5 41` and `excursion_check` were rerun, see `integration_reruns/summary.txt`). Nothing else is missing.
+* **Dependency gate.** `computations/verification/lineL/integration_checks/proved_deps_gate.py` (log next to it) checks that no proved
+  claim depends on a non-proved claim other than BGS-TRACE-206. The check is strict for 244–268 and fails on any new violation. Seven
+  (claim, dependency) pairs outside Line L already violate the gate on main e9e1550a; they are listed in the script as data and left
+  unchanged here: 076→060, 077→073, 080→060/073, RES-015→RES-014, RES-023→RES-022, 236→231. Result: GATE_OK.
+* The metadata snapshot `registry_metadata_20261031_lineL.json` regenerates byte-identically (sha256 7d7d4900…), because the transitive
+  impact sets are unchanged.

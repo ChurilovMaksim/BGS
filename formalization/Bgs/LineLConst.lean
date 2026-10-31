@@ -77,11 +77,20 @@ theorem L3_F1_rate : 18808 * 12835900 ≤ 24142135 * 10000 := by decide
 end Bgs.LineL
 
 #print axioms Bgs.LineL.propS_const
+#print axioms Bgs.LineL.rate_8V_lt_target
+#print axioms Bgs.LineL.rate_8E_lt_target
+#print axioms Bgs.LineL.rate_16V_lt_target
+#print axioms Bgs.LineL.rate_16E_lt_target
 #print axioms Bgs.LineL.delta8V
 #print axioms Bgs.LineL.barrier8
 #print axioms Bgs.LineL.barrier16
+#print axioms Bgs.LineL.barrier8_gt_barrier16
+#print axioms Bgs.LineL.sqrt2_lower
+#print axioms Bgs.LineL.sqrt2_upper
+#print axioms Bgs.LineL.h9
 #print axioms Bgs.LineL.h21
 #print axioms Bgs.LineL.h_norm
+#print axioms Bgs.LineL.barrier_above_h
 #print axioms Bgs.LineL.barrier_above_h21
 #print axioms Bgs.LineL.lambda_gt_five
 #print axioms Bgs.LineL.B1_const

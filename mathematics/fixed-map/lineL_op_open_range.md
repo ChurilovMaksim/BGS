@@ -20,8 +20,15 @@ code, logs, manifests `SHA256_L.txt`, `L2/SHA256_L2.txt`, `L3/SHA256_L3.txt`, re
 `integration_checks/`). The integration record is `evidence/executions/20261031/lineL/INTEGRATION.md`.
 
 **Standing inputs** (unchanged from Lines F, J, K; every "proved" below is relative to them): the Line F/J lattice trace representation and
-its radius hypotheses (BGS-TRACE-197; ½/ρ_V + 1/λ = 0.838 < 1 at ρ_V = 0.75, ½/(λρ_E) + 1/λ = 0.6005 < 1 at ρ_E = 0.2), Theorem J/J3 with
-Lemma L16 (BGS-TRACE-225, 226, 231), S_Z / Prop K2 (BGS-TRACE-238), and the Weil bound W1 (BGS-TRACE-241, EXT-WEIL-1948).
+its radius hypotheses (BGS-TRACE-197; ½/ρ_V + 1/λ = 0.838 < 1 at ρ_V = 0.75, ½/(λρ_E) + 1/λ = 0.6005 < 1 at ρ_E = 0.2), Theorem J
+(BGS-TRACE-225), Lemma L16 (BGS-TRACE-226), the (±2,16) level-7 control (BGS-TRACE-227), S_Z / Prop K2 (BGS-TRACE-238), and the Weil bound
+W1 (BGS-TRACE-241, EXT-WEIL-1948); **all proved**. Of Theorem J3 (BGS-TRACE-231, conditional) only the notation and its proved parts
+(1) identity (BGS-TRACE-212, 213, 228) and (2) [CA] bounds (BGS-TRACE-225, 227) are used; the conditional conclusion of BGS-TRACE-231 and
+the open hypotheses BGS-TRACE-232, 233, 239, 256 are not used. Theorem K (BGS-TRACE-240, conditional) enters 246 and 257 only through its
+proved implication "O♮^{<L}_m = o(ξ_lo^m) along an infinite subset of S⁺ ⇒ W′_m/m → ∞", re-derived from its proved components
+(BGS-TRACE-235, the proved parts of 231 with 238, and 237); 240 is not listed as a dependency of any proved claim here. H_mean
+(BGS-TRACE-256, open) is the antecedent of the implication 257 and is likewise not listed as its dependency. No proved claim of this note
+depends on a non-proved claim, except on BGS-TRACE-206 through its frozen definition (precedent BGS-TRACE-213, 225, 237, 238).
 
 **Registered claims** (`record/claims.json`):
 
@@ -98,7 +105,7 @@ Rates at smaller k are not certified with these constants (e.g. (±2,8)V at k = 
 cases in a scratch copy (paths repointed): output identical except timing (evidence §INTEGRATION).
 
 **T_k bound and constants [P + CA] (BGS-TRACE-252).** |N(α_v)| ≤ ((aX + Y/a)/2)², X = Σ|v_j|λ^j, Y = Σ|v_j|λ^{−j}, a = λ^{−(k−1)/2}; hence
-T_k(q) ≤ C_pair·e^{−2s√q}·Π_j A(τ_j + s(aλ^j + λ^{−j}/a))² for every s > 0, evaluated in arb on a grid. Per family δ_F = (1 − rate_F/target_F)/2
+T_k(q) ≤ C_pair·e^{−2s√q}·Π_j A(τ_j + s(aλ^j + λ^{−j}/a))² for every s > 0, evaluated in arb on a grid. Per family δ_F = (1 − rate_F/target_F)/2 = δ_OP/2
 (0.00811 for (±2,8)V), η_F = (((1 − δ_F/2)target_F)^{2k} − I_k)/3, c_F = (η_F/(6A_k))², log₁₀ c_F = −25.62 / −20.93 / −22.53 / −20.84,
 log₁₀ q₀ = 13.2 / 12.3 / 12.3 / 12.2. **c_W := 10^−25.62 ≤ min_F c_F, q₀ := 10^13.2.** The Weil range q ≤ c_W p² is non-vacuous
 (c_W p² ≥ 2p + 1) only from p ≈ 2/c_W ≈ 8.3·10²⁵ (the report rounds to 8.2·10²⁵).
@@ -140,13 +147,13 @@ Theorem K1 (BGS-TRACE-237) the level contributes 2Re(conj Z_ρ·(D_iso − E_b/q
 level q, together with the analogue at open composite levels.
 
 **H_mean ⇒ frozen R′ refuted [P] (BGS-TRACE-257).** By Theorem K1, Prop K2 and Theorem W the open part of O♮ is then o(ξ_lo^m), so
-H♮_mid holds along these m and Theorem K (BGS-TRACE-240) refutes frozen R′. This is an implication; H_mean is not proved.
+H♮_mid holds along these m and the proved implication of Theorem K (BGS-TRACE-240; see §1, standing inputs) refutes frozen R′. This is an implication; H_mean is not proved.
 
 **Prop S [P, given the Line F spectral data ρ₀ ≥ μ*] (BGS-TRACE-258).** For the (±2,8) family F with k = k_F there is C_k (effective, not
 computed) such that β = 1 is slow at every prime q ∥ h_m with log_λ q ≥ C_k + r(T/ρ₀)^{2k}, T = (1−δ/2)·1.28359; C_k = log_λ(2/ε_k) + k/2 + 1.
 The number of good blocks is **min(r, 2I − k + 2)** (indices cyclic mod r; referee nit). With k = 15, (1.28359/1.9154712)^30 = 6.09·10⁻⁶ ≤
 6.1·10⁻⁶ and r ≤ m, the threshold is log_λ q ≥ C_k + 6.1·10⁻⁶·m. **Consequence [P] (L2-F4 wording):** for every m ∈ S⁺ such that h_m has a
-prime q ∥ h_m in (max(c_W p², λ^{C_k + 6.1·10⁻⁶·m}), L_m), the conclusion of K2′ holds unconditionally, so K2′ gives no contradiction at
+prime q ∥ h_m in (max(c_W p², λ^{C_k + 6.1·10⁻⁶·m}), L_m), the conclusion of K2′ holds without assuming frozen R′, so K2′ gives no contradiction at
 such m. That this covers all or most m is **[H]** (not registered).
 
 ## 7. L2: cancellation-free and height methods (BGS-TRACE-259..262)
