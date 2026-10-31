@@ -1180,7 +1180,7 @@
       "id": "BGS-TRACE-206",
       "state": "open",
       "source": "mathematics/fixed-map/resonance_classification_lineG.md",
-      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed."
+      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed. 31 October 2026 (Line K): state unchanged (open); S+ infinite unconditionally (TRACE-235), so frozen R' is false under H-natural alone (TRACE-236) or under H-natural_mid (TRACE-239, 240); both open; no refutation claimed."
     },
     {
       "id": "BGS-TRACE-207",
@@ -1330,7 +1330,7 @@
       "id": "BGS-TRACE-231",
       "state": "conditional",
       "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
-      "disposition": "31 October 2026 (Line J3): conditional (implication proved (paper + computer-assisted inputs + external theorems EXT-VINOGRADOV-1937, EXT-DAVENPORT-1980, EXT-WEYL-1916; conditional on open hypotheses); frozen R' false along m = 3p under the open hypotheses H-natural (TRACE-232) and H_arg (TRACE-233); unconditionally R' forces exponential cancellation by conductor-not-in-{1,7} parts on S+; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line J3): conditional (implication proved (paper + computer-assisted inputs + external theorems EXT-VINOGRADOV-1937, EXT-DAVENPORT-1980, EXT-WEYL-1916; conditional on open hypotheses); frozen R' false along m = 3p under the open hypotheses H-natural (TRACE-232) and H_arg (TRACE-233); unconditionally R' forces exponential cancellation by conductor-not-in-{1,7} parts on S+; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line K): state unchanged (conditional); H_arg no longer needed (S+ infinite by TRACE-235); closure condition now H-natural (TRACE-232) only; dependency TRACE-233 replaced by TRACE-235."
     },
     {
       "id": "BGS-TRACE-232",
@@ -1342,7 +1342,91 @@
       "id": "BGS-TRACE-233",
       "state": "open",
       "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
-      "disposition": "31 October 2026 (Line J3): open hypothesis H_arg (arg xi/2 pi irrational); denominators < 1339 excluded (computer-assisted). Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line J3): open hypothesis H_arg (arg xi/2 pi irrational); denominators < 1339 excluded (computer-assisted). Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line K): state unchanged (open); no longer needed for TRACE-231 (bypassed by TRACE-235); H_arg itself not proved."
+    },
+    {
+      "id": "BGS-TRACE-234",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): proved (exact-integer gap check + paper sieve + Lean: finite part in lake build Bgs, full gap range by kernel-decide chunk files outside lake build Bgs, chunk 1547..1646 re-split for memory); gap lemma for b' >= 447, exceptions 504, 560, 616, 840; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-235",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): proved (paper case split + computer-assisted inputs + external theorems EXT-DIRICHLET-1837, EXT-VINOGRADOV-1937, EXT-DAVENPORT-1980, EXT-WEYL-1916 + Lean finite checks); Theorem K3: S+ infinite in every unit class p0 mod 56, unconditionally; H_arg (TRACE-233) bypassed, not proved; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-236",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): proved (computer-assisted via Theorem J/J3 + TRACE-235); Corollary K3: the dichotomy on an infinite S+; refutation of frozen R' conditional on H-natural (TRACE-232, open); not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-237",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): proved (paper proof + exact Z[zeta_q] check q <= 47); Theorem K1 light-cone identity at prime levels, 2 a square mod q; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-238",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): proved (paper + computer-assisted S_Z <= 0.5000001); Prop K2: levels d >= L_m absorbed by positivity; crossover m ~ 1.68e9 numerical only; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-239",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): open hypothesis H-natural_mid (alternative to H-natural, not a weakening). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-240",
+      "state": "conditional",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): conditional (on H-natural TRACE-232 or H-natural_mid TRACE-239, both open); Theorem K: frozen R' false under either; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-241",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): proved (paper proof modulo the Weil bound EXT-WEIL-1948, application unverified); Lemma W1; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-242",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): proved (paper proof; bounded read-out form after referee W-F7, applied at integration); Lemma W2' for every bounded read-out; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-243",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): proved (paper proof on W1); Lemma W3 orbit average; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-244",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): open hypothesis (OP_k, delta) on the cat-map second moments; toy float evidence only. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-245",
+      "state": "conditional",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem W: Weil-range conductors q <= c_k p^2 negligible; asymptotic only; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-246",
+      "state": "conditional",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem K2': frozen R' implies a slow lambda-orbit at an open conductor; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-247",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineK_harg_removal.md",
+      "disposition": "31 October 2026 (Line K): open conjecture C1 (lim I_k^{1/k} = 1 for the true families); toy float evidence only. Does not close TRACE-206, TRACE-148 or BGS-001."
     }
   ],
   "invariants": [
@@ -1377,9 +1461,10 @@
       "EXT-CARMICHAEL-1913",
       "EXT-VINOGRADOV-1937",
       "EXT-WEYL-1916",
-      "EXT-DAVENPORT-1980"
+      "EXT-DAVENPORT-1980",
+      "EXT-WEIL-1948"
     ],
-    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Twenty-four explicitly reviewed later inputs are admitted (EXT-RS-1962, EXT-BHV-2001 and EXT-CARMICHAEL-1913 on 2026-10-31 in the owner audit of PR #60, Line I; the last three, EXT-VINOGRADOV-1937, EXT-WEYL-1916 and EXT-DAVENPORT-1980, on 2026-10-31 in the Line J integration); source review dates and limits remain in the selected snapshot.",
+    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Twenty-five explicitly reviewed later inputs are admitted (EXT-RS-1962, EXT-BHV-2001 and EXT-CARMICHAEL-1913 on 2026-10-31 in the owner audit of PR #60, Line I; EXT-VINOGRADOV-1937, EXT-WEYL-1916 and EXT-DAVENPORT-1980 on 2026-10-31 in the Line J integration; the last one, EXT-WEIL-1948, on 2026-10-31 in the Line K integration); source review dates and limits remain in the selected snapshot.",
     "source_reviews": [
       "literature/abel_gaussian_sources_20261016.md",
       "literature/chat_integration_sources_20261016.md",
@@ -1388,7 +1473,8 @@
       "literature/bowen_ruelle_trace_closure_20261021.md",
       "literature/arithmetic_dependency_closure_20261022.md",
       "literature/lineI_sources_20261031.md",
-      "literature/lineJ_sources_20261031.md"
+      "literature/lineJ_sources_20261031.md",
+      "literature/lineK_sources_20261031.md"
     ]
   },
   "historical_claim_amendments": [

@@ -1,0 +1,25 @@
+   A = arccos(0.84431)/pi = 0.18001064843000862077
+PASS 18001/100000 <= A (80-digit mpmath; the claim uses the arb bound)
+PASS 1/6 < 18001/100000
+PASS Lemma K3(a) on 447..2645: failures (gap >= A_low b') exactly {504, 560, 616, 840}
+PASS every other b' in 447..2645 has max gap <= b'/6
+PASS 9 sieve survivors exactly {}, {3}, {5}, {11}, {13}, {17}, {3,5}, {3,11}, {3,13}
+PASS all survivors have 56(F+1)/A_low <= 2645
+PASS l = 23 excluded: 2/22 < A_low - 1/23
+PASS no a/b in the certified enclosure for b in {1512, 560, 1680, 616, 1848, 2520}
+PASS least denominator with a fraction in the enclosure is 1339
+PASS candidate b for exceptional b': b' (if 3 does not divide b') or 3b'
+PASS Lambda = log(mu^2/xi_lo) = 0.40030 (to 5 digits)
+PASS K2 non-vacuity needs Lambda(1+eta) < log(eps)/2, i.e. eta < 0.4407/0.4003 - 1 = 0.1009 (3 digits)
+PASS Theorem K arithmetic: 0.99/2 - 0.01 (K_min/K_j)/2 - (1-delta) 0.98/2 >= 0.98 delta/2 (K_min/K_j = 1, delta = 1/100)
+PASS Theorem K arithmetic: 0.99/2 - 0.01 (K_min/K_j)/2 - (1-delta) 0.98/2 >= 0.98 delta/2 (K_min/K_j = 1, delta = 1/2)
+PASS Theorem K arithmetic: 0.99/2 - 0.01 (K_min/K_j)/2 - (1-delta) 0.98/2 >= 0.98 delta/2 (K_min/K_j = 1/2, delta = 1/100)
+PASS Theorem K arithmetic: 0.99/2 - 0.01 (K_min/K_j)/2 - (1-delta) 0.98/2 >= 0.98 delta/2 (K_min/K_j = 1/2, delta = 1/2)
+PASS Theorem K arithmetic: 0.99/2 - 0.01 (K_min/K_j)/2 - (1-delta) 0.98/2 >= 0.98 delta/2 (K_min/K_j = 1/10, delta = 1/100)
+PASS Theorem K arithmetic: 0.99/2 - 0.01 (K_min/K_j)/2 - (1-delta) 0.98/2 >= 0.98 delta/2 (K_min/K_j = 1/10, delta = 1/2)
+PASS 1.6677 * 1.4742 < xi_lo = 2.4586893
+PASS 1.6677 * 1.4743 > xi_lo (the withdrawn constant was false)
+PASS mu_up * 1.28359 = 1.9154753 * 1.28359 < xi_lo
+PASS W2' constant: (1-x)^(-1/x) <= 4 <= e^2 on (0, 1/2]
+PASS every odd prime factor q != 7 (< 20000) of h_m, odd m < 61, has q = +-1 mod 8 (2 a square mod q)
+ALL_OK

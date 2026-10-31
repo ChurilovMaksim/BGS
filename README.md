@@ -18,6 +18,13 @@ The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum 
 
 **Certified 49-state spectrum for the Line B kick; Conjecture R refuted at η = 2 (Line H, 30 October 2026).** For the Line B diagonal kick f_B, which is the kick of Conjecture R, the κ lemma gives |c_b| = ½ (b even) for every odd m with 3 ∤ m, and the 49-state law extends to the full alphabet on the lifted space ([BGS-TRACE-207](mathematics/fixed-map/lineH_49state_certificate.md)). At η = 2 and s = −1 (N ≡ +196 mod h_m), the lifted operator V_0 has exactly one eigenvalue outside |z| = 1.5; it is simple and |μ*| ∈ [1.846834, 1.946835] > λ^(1/4) ([208](mathematics/fixed-map/lineH_49state_certificate.md), computer-assisted; the V_0 certificate of record is the referee's independent re-certification). Hence W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m ([209](mathematics/fixed-map/lineH_49state_certificate.md), computer-assisted), so Conjecture R ([BGS-TRACE-179](mathematics/fixed-map/derandomized_fixed_kick.md)) as stated is false; it is registered as refuted. This is a statement about R for this kick, not about BGS: BGS-BGS-001 is neither proved nor disproved. R_NSW, formerly part of TRACE-179, is registered separately as an open conjecture ([BGS-TRACE-210](mathematics/fixed-map/derandomized_fixed_kick.md)); it fails if and only if h_m is prime for infinitely many m, which is unknown. Not covered: odd m with 3 ∤ m in {17, …, 43}, every m with 3 | m, η ≠ 2, and s = +1. TRACE-196 stays conditional as stated; its conclusion for s = −1 now holds on the lifted space.
 
+**H_arg removed in frozen R′ (Line K, 31 October 2026).** Theorem K3 ([BGS-TRACE-235](mathematics/fixed-map/lineK_harg_removal.md), refereed)
+proves that S⁺ is infinite unconditionally, so frozen R′ is false along m = 3p under the single open hypothesis H♮
+([236](mathematics/fixed-map/lineK_harg_removal.md)). H_arg ([233](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)) is bypassed, not proved.
+Further results: the exact light-cone identity at prime levels ([237](mathematics/fixed-map/lineK_harg_removal.md)), large levels absorbed by
+positivity ([238](mathematics/fixed-map/lineK_harg_removal.md)), and the Weil range, conditional on an operator input ([245](mathematics/fixed-map/lineK_harg_removal.md)).
+R′ ([206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
+
 **The d = 7 twisted coefficient in frozen R′ (Line J, 31 October 2026).** The leading d = 7 coefficient is exact
 ([BGS-TRACE-221](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)): class 1:3 cancels exactly between ρ = (±2,8), while classes 2:1 and 0:1 survive.
 

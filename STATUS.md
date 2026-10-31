@@ -14,16 +14,16 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-31**. **317 registered claims.**
+**2026-10-31**. **331 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 258 |
+| proved | 266 |
 | verification-pending | 15 |
-| conditional | 16 |
-| open | 27 |
+| conditional | 19 |
+| open | 30 |
 | refuted | 1 |
-| **Total** | **317** |
+| **Total** | **331** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -44,12 +44,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 0 | 23 |
 | RET | 3 | 0 | 1 | 0 | 0 | 4 |
-| TRACE | 160 | 13 | 11 | 23 | 1 | 208 |
-| **Total** | 258 | 15 | 16 | 27 | 1 | **317** |
+| TRACE | 168 | 13 | 14 | 26 | 1 | 222 |
+| **Total** | 266 | 15 | 19 | 30 | 1 | **331** |
 
 ## Open programme obligations
 
-27 registered claims are open. Their closure
+30 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -82,6 +82,9 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-220` | Line I: Conjecture R'_A (amended mean law with actual dilation-member values) for the k1 kick at eta = 2 | [mathematics/fixed-map/lineI_rprime_reduction.md](mathematics/fixed-map/lineI_rprime_reduction.md) |
 | `BGS-TRACE-232` | Line J3 hypothesis H-natural: the conductor-not-in-{1,7} part O-natural_m does not cancel the d = 7 term on infinitely many m in S+ | [mathematics/fixed-map/lineJ_d7_twisted_coefficient.md](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) |
 | `BGS-TRACE-233` | Line J3 hypothesis H_arg: arg(xi_2:1)/2 pi is irrational | [mathematics/fixed-map/lineJ_d7_twisted_coefficient.md](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) |
+| `BGS-TRACE-239` | Line K hypothesis H-natural_mid: for some delta > 0 and infinitely many m in S+, O-natural_m^{<L} >= -(1 - delta) 0.98 (K_j/2) xi_lo^m | [mathematics/fixed-map/lineK_harg_removal.md](mathematics/fixed-map/lineK_harg_removal.md) |
+| `BGS-TRACE-244` | Line K operator input (OP_k, delta): the cat-map second moments satisfy (I_k^F)^{1/2k} <= (1 - delta) 1.28359 for every (+-2,8) family and <= (1 - delta) 1.4742 for every (+-2,16) family | [mathematics/fixed-map/lineK_harg_removal.md](mathematics/fixed-map/lineK_harg_removal.md) |
+| `BGS-TRACE-247` | Line K Conjecture C1: for the true twisted operator families, lim_k (I_k^F)^{1/k} = 1 | [mathematics/fixed-map/lineK_harg_removal.md](mathematics/fixed-map/lineK_harg_removal.md) |
 
 ## Corrections
 
@@ -95,10 +98,10 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 214 follow-on claims adopted after
+It records 228 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
-external-dependency extension of 24 external IDs.
+external-dependency extension of 25 external IDs.
 
 ## Reading the status surfaces
 

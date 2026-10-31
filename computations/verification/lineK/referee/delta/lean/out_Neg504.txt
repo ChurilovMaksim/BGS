@@ -1,0 +1,9 @@
+Neg504.lean:28:13: warning: Variable name `bp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _bp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Neg504.lean:29:92: error: Tactic `decide` proved that the proposition
+  ((List.range 5).all fun i => excNone (502 + i) || okB (502 + i)) = true
+is false

@@ -1,5 +1,18 @@
 # BGS research brief
 
+## H_arg removed, the light-cone identity and the Weil range in frozen R′ (Line K), 31 October 2026
+
+* **H_arg removed.** Theorem K3 ([TRACE-235](mathematics/fixed-map/lineK_harg_removal.md)) proves that S⁺ is infinite in every unit class mod 56 by a
+  case split on arg ξ/2π. The irrational case uses Vinogradov. In the rational case the denominator is ≥ 1339 (Line J enclosure),
+  and a gap lemma ([TRACE-234](mathematics/fixed-map/lineK_harg_removal.md)) plus Dirichlet with CRT finish the proof. H_arg itself is not proved.
+* **Consequence.** Frozen R′ is false along m = 3p under H♮ alone ([TRACE-236](mathematics/fixed-map/lineK_harg_removal.md)), and Theorem K
+  ([TRACE-240](mathematics/fixed-map/lineK_harg_removal.md), conditional) allows the alternative H♮_mid ([TRACE-239](mathematics/fixed-map/lineK_harg_removal.md)).
+* **Levels.** Prime levels satisfy an exact light-cone identity ([TRACE-237](mathematics/fixed-map/lineK_harg_removal.md)). Levels d ≥ L_m are absorbed
+  by positivity ([TRACE-238](mathematics/fixed-map/lineK_harg_removal.md); non-vacuous only from m ≈ 1.68·10⁹). The Weil range q ≤ c_k p² is
+  negligible conditionally on an operator input OP ([TRACE-241](mathematics/fixed-map/lineK_harg_removal.md)–[TRACE-246](mathematics/fixed-map/lineK_harg_removal.md)).
+
+R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open; H♮, H♮_mid and OP are open.
+
 ## The d = 7 twisted coefficient in frozen R′ (Line J), 31 October 2026
 
 Line J decides the question that Line I left open.

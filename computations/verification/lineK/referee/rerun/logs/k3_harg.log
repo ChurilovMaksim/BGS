@@ -1,0 +1,6 @@
+A (lower) = 0.1800106484300086  exact range 447.. 6000  worst gap ratio (0.2222222222222222, (504, 1))  fails [(504, 1, 0.2222222222222222), (504, 3, 0.2222222222222222), (504, 5, 0.2222222222222222), (504, 9, 0.2222222222222222), (504, 11, 0.2222222222222222)]
+prime sets allowing a sieve failure: [((3,), 3.0), ((5,), 2.5), ((11,), 2.2), ((13,), 2.167), ((17,), 2.125), ((3, 5), 7.5), ((3, 11), 6.6), ((3, 13), 6.5)]  => any failure has b' <= 2644.2880138009023
+failing b' (exact gap check): [504, 560, 616, 840]
+of these, compatible with the certified enclosure of arg xi/2pi: []
+K3 CLAIM PROVED (exact + sieve)
+exit 0

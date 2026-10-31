@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**370 maintained proof notes; 10 topic views; 317 core claim IDs.**
+**371 maintained proof notes; 10 topic views; 331 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
-| conditional | 16 |
-| open | 27 |
-| proved | 258 |
+| conditional | 19 |
+| open | 30 |
+| proved | 266 |
 | refuted | 1 |
 | verification-pending | 15 |
 
@@ -42,7 +42,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 171 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 172 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -135,6 +135,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Line H: certified 49-state resonance operator for the Line B kick f_B at η = 2, and the failure of Conjecture R](../mathematics/fixed-map/lineH_49state_certificate.md) | `BGS-TRACE-207` (proved); `BGS-TRACE-208` (proved); `BGS-TRACE-209` (proved) |
 | [Line I: averaging across residues for Conjecture R′ — exact dilation laws, a reduction, and certified twisted spectra](../mathematics/fixed-map/lineI_rprime_reduction.md) | `BGS-TRACE-211` (proved); `BGS-TRACE-212` (proved); `BGS-TRACE-213` (proved); `BGS-TRACE-214` (proved); `BGS-TRACE-215` (proved); `BGS-TRACE-216` (proved); `BGS-TRACE-217` (proved); `BGS-TRACE-218` (proved); `BGS-TRACE-219` (proved); `BGS-TRACE-220` (open) |
 | [Line J: the d = 7 twisted coefficient in frozen R′ — exact sector law, certified growth, (±2,16), inheritance and a conditional refutation along m = 3p](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | `BGS-TRACE-221` (proved); `BGS-TRACE-222` (proved); `BGS-TRACE-223` (proved); `BGS-TRACE-224` (proved); `BGS-TRACE-225` (proved); `BGS-TRACE-226` (proved); `BGS-TRACE-227` (proved); `BGS-TRACE-228` (proved); `BGS-TRACE-229` (proved); `BGS-TRACE-230` (proved); `BGS-TRACE-231` (conditional); `BGS-TRACE-232` (open); `BGS-TRACE-233` (open) |
+| [Line K: H_arg removed (S⁺ infinite unconditionally), the light-cone identity, large levels by positivity, and the Weil range — towards an unconditional refutation of frozen R′](../mathematics/fixed-map/lineK_harg_removal.md) | `BGS-TRACE-234` (proved); `BGS-TRACE-235` (proved); `BGS-TRACE-236` (proved); `BGS-TRACE-237` (proved); `BGS-TRACE-238` (proved); `BGS-TRACE-239` (open); `BGS-TRACE-240` (conditional); `BGS-TRACE-241` (proved); `BGS-TRACE-242` (proved); `BGS-TRACE-243` (proved); `BGS-TRACE-244` (open); `BGS-TRACE-245` (conditional); `BGS-TRACE-246` (conditional); `BGS-TRACE-247` (open) |
 | [Fixed-word freeness of the literal kick and cat factors](../mathematics/fixed-map/literal_fixed_word_freeness.md) | Consult proof and full ledger |
 | [An explicit triple-logarithmic window for the literal mixed-word traces](../mathematics/fixed-map/literal_growing_word_window.md) | Consult proof and full ledger |
 | [Literal kick-phase law and post-wrapping cat-comparison obstruction](../mathematics/fixed-map/literal_kick_phase_law.md) | Consult proof and full ledger |

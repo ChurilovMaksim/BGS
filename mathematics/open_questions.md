@@ -2,6 +2,13 @@
 
 ## Phase average, revival, and the signed sum
 
+Line K (BGS-TRACE-234 to BGS-TRACE-247) settles item (b) of the Line J list below in its second form: S⁺ is infinite without
+H_arg (BGS-TRACE-235), so H_arg (BGS-TRACE-233) is no longer needed, although it is still unproved. The following remain open:
+* **H♮ (BGS-TRACE-232)** or the alternative **H♮_mid (BGS-TRACE-239)**; either one refutes frozen R′ along m = 3p (BGS-TRACE-240).
+* **The operator input OP (BGS-TRACE-244)** and **Conjecture C1 (BGS-TRACE-247)**; OP makes the Weil range negligible
+  (BGS-TRACE-245) and reduces frozen R′ to a slow λ-orbit at an open conductor (BGS-TRACE-246).
+* The middle range c_k p² < q < L_m has no proved control.
+
 Line J (BGS-TRACE-221 to BGS-TRACE-233) settles item (i) of the Line I list below: the leading coefficient is exact and non-zero, and
 class 1:3 cancels exactly while 2:1 survives (BGS-TRACE-221). It certifies the oscillating growth of the frozen d = 7 term along
 subsequences (BGS-TRACE-225) and controls the (±2,16) members (BGS-TRACE-227). The following remain open:

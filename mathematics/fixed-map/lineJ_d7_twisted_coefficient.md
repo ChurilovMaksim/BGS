@@ -10,6 +10,10 @@ arithmetic cores (`Bgs.LineJArith`, §9). Independent referee audit: `computatio
 
 The integration polish (L16-a, L16-b, citation check, J3-F8) is described in §10.
 
+**Later work (Line K, 31 October 2026).** [lineK_harg_removal.md](lineK_harg_removal.md) (BGS-TRACE-234 to BGS-TRACE-247) proves that S⁺ is infinite unconditionally
+(BGS-TRACE-235), so H_arg (BGS-TRACE-233) is no longer needed for Theorem J3 (BGS-TRACE-231), whose closure condition is now H♮ alone.
+H_arg is bypassed, not proved. Frozen R′ stays open.
+
 **Registered claims** (`record/claims.json`):
 
 | § | claim | content | label |

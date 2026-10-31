@@ -4,6 +4,10 @@
 
 **Later work (Line H, 30 October 2026).** For the Line B kick f_B at η = 2, BGS-TRACE-209 (computer-assisted, refereed) gives W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m, on the lifted space of BGS-TRACE-197 ([lineH_49state_certificate.md](lineH_49state_certificate.md)). Conjecture R (BGS-TRACE-179) as stated is therefore refuted (registered state `refuted`; R_NSW, formerly part of 179, is the open BGS-TRACE-210). BGS-TRACE-196 stays conditional as stated; its conclusion for s = −1 holds on the lifted space. Statements below that R is not disproved describe the state before Line H.
 
+**Later work (Line K, 31 October 2026).** [lineK_harg_removal.md](lineK_harg_removal.md) (BGS-TRACE-234 to BGS-TRACE-247) removes H_arg: S⁺ is infinite
+unconditionally (BGS-TRACE-235), so frozen R′ is false along m = 3p under H♮ alone (BGS-TRACE-236) or the alternative H♮_mid
+(BGS-TRACE-240). BGS-TRACE-206 stays open.
+
 **Later work (Line J, 31 October 2026).** [lineJ_d7_twisted_coefficient.md](lineJ_d7_twisted_coefficient.md) (BGS-TRACE-221 to BGS-TRACE-233) certifies that the frozen d = 7 term of R′
 oscillates with growth ≥ 1.0184224^m along subsequences (BGS-TRACE-225). It refutes frozen R′ along m = 3p only under the open
 hypotheses BGS-TRACE-232 and 233 (BGS-TRACE-231). BGS-TRACE-206 stays open.

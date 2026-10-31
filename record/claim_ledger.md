@@ -1,5 +1,22 @@
 # Claim ledger
 
+## H_arg removed, the light-cone identity and the Weil range in frozen R′ (Line K), 31 October 2026
+
+Project proofs:
+* BGS-TRACE-234 (Lemma K3; exact integers + paper sieve; Lean: finite part in `lake build Bgs`, full gap range by chunk files outside
+  it);
+* BGS-TRACE-235 (Theorem K3, unconditional; uses EXT-DIRICHLET-1837, EXT-VINOGRADOV-1937, EXT-DAVENPORT-1980, EXT-WEYL-1916);
+* BGS-TRACE-236 (Corollary K3; dichotomy proved, refutation conditional on H♮);
+* BGS-TRACE-237 (Theorem K1);
+* BGS-TRACE-238 (Prop K2; crossover m ≈ 1.68·10⁹ numerical only);
+* BGS-TRACE-241 (W1, uses EXT-WEIL-1948), BGS-TRACE-242 (W2′, all bounded read-outs), BGS-TRACE-243 (W3).
+
+Conditional: BGS-TRACE-240 (Theorem K, on H♮ or H♮_mid), BGS-TRACE-245 (Theorem W) and BGS-TRACE-246 (Theorem K2′), both on OP.
+Open: BGS-TRACE-239 (H♮_mid), BGS-TRACE-244 (OP), BGS-TRACE-247 (Conjecture C1).
+
+BGS-TRACE-231 stays conditional, now on H♮ only. BGS-TRACE-233 (H_arg) stays open and is bypassed, not proved. BGS-TRACE-206
+(frozen R′) stays **open** and is not refuted. Negative findings and toy numerics are recorded in the note only.
+
 ## The d = 7 twisted coefficient in frozen R′ (Line J), 31 October 2026
 
 Project proofs:
