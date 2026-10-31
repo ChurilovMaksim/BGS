@@ -1,0 +1,28 @@
+# Provenance of the m = 17 Line E certificate run (box state, 2026-10-31)
+
+source dir: /workspace/bgs-next/lineE/step2 (author scratch)
+kernel binary zres sha256: ed4186a89f25bc6b656ae8dc64bdd984e1ce364dea0cbfa0c540b0346add2cf9
+binary compiler: GCC: (Debian 14.2.0-19) 14.2.0
+FMA instructions in objdump -d zres (regex of build_zres.sh): 0
+binary mtime: 2026-10-30 11:38:38 +0500; cert_class.jsonl mtime: 2026-10-31 01:26:30 +0500
+
+cert_class.py: scratch 3e3f31b2fcad186f93f30ca9b1862f50cb4a4dbe10dc3472d00a0e7948c8a710 / repo c837c8bb44bfe299fa7f4d6731f399671ebbfd7e50447094181273b80d045932
+zres.c: scratch 968f045be0f6a593fc60887af3d3d8a93e35ef3c4c539dd529e1fd97ca78e7b0 / repo 77a31d4d0da1a1331938f98089148ce76b24b05d6815d11d078ff3eb8d36c263
+lawlib.py: scratch 73b49942dd94d625f54e5d0a0739c05da375579c5a397bf6638af6857be0bc9e / repo 73b49942dd94d625f54e5d0a0739c05da375579c5a397bf6638af6857be0bc9e
+predict.py: scratch a3fab34c3818a898a546c21a98656b6586ed8431a0d135202e75fa724ffd1d0f / repo a3fab34c3818a898a546c21a98656b6586ed8431a0d135202e75fa724ffd1d0f
+predictions.jsonl: scratch 7dcb582ab62ed14dd01765449aa049b512737b39d50eeb5da5d2ed9796bdf9a6 / repo 7dcb582ab62ed14dd01765449aa049b512737b39d50eeb5da5d2ed9796bdf9a6
+
+## diff scratch -> repo (cert_class.py)
+3c3
+< (Proposition G of step2/PROOF_G.md, from TRACE-163 Theorem 3 + Prop R + TRACE-165 Lemma S).  Tables in arb, kernel zres.c in IEEE double
+---
+> (Proposition G of mathematics/fixed-map/resonant_residue_lineE.md, section 10.3, from TRACE-163 Theorem 3 + Prop R + TRACE-165 Lemma S).  Tables in arb, kernel zres.c in IEEE double
+23c23
+<     sys.path.insert(0, '/workspace/bgs-int/BGS/computations/verification/lineB/common')
+---
+>     sys.path.insert(0, os.path.join(HERE, '..', '..', 'lineB', 'common'))
+
+## diff scratch -> repo (zres.c)
+6a7,8
+> /* The a-priori error bound assumes no FMA contraction (see resonant_residue_lineE.md, section 10.3, and build_zres.sh). */
+> #pragma GCC optimize("fp-contract=off")
