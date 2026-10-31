@@ -6074,7 +6074,10 @@
         "computations/verification/lineD/code/psi.py",
         "computations/verification/lineD/referee_replay/run_d4.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/LineDStrongKick.lean",
+        "formalization/Bgs/LineDStrongKickBridge.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/band_limited_kick_bridge.tex"
       ]
@@ -6127,7 +6130,10 @@
       "verifiers": [
         "computations/verification/lineD/referee_replay/structure.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/LineDParity.lean",
+        "formalization/Bgs/LineDParityBridge.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/band_limited_kick_bridge.tex"
       ]
@@ -6199,7 +6205,10 @@
         "computations/verification/lineD/referee_replay/c1_validate.py",
         "computations/verification/lineD/referee_replay/run_c1.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/LineDCoeff.lean",
+        "formalization/Bgs/LineDCoeffBridge.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/band_limited_kick_bridge.tex"
       ]
@@ -6350,7 +6359,12 @@
         "computations/verification/lineB/phase1/n_average_fast.py"
       ],
       "formalization": [
-        "formalization/Bgs/LineBDerand.lean"
+        "formalization/Bgs/LineBDerand.lean",
+        "formalization/Bgs/LineBTraceFormula.lean",
+        "formalization/Bgs/LineBGauss.lean",
+        "formalization/Bgs/LineBExpand.lean",
+        "formalization/Bgs/LineBTsum.lean",
+        "formalization/Bgs/LineDDmBridge.lean"
       ],
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"

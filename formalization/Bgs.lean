@@ -73,5 +73,15 @@ import Bgs.LineDBridge
 import Bgs.LineDParity
 import Bgs.LineDOrbitPairFull
 import Bgs.LineJArith
+import Bgs.LineBTraceFormula
+import Bgs.LineBGauss
+import Bgs.LineBExpand
+import Bgs.LineBTsum
+import Bgs.LineDDmBridge
+import Bgs.LineDStrongKick
+import Bgs.LineDStrongKickBridge
+import Bgs.LineDParityBridge
+import Bgs.LineDCoeff
+import Bgs.LineDCoeffBridge
 
 import Bgs.Mathlib
