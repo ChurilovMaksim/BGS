@@ -96,8 +96,9 @@ exit 1
 AssertionError: 'Output inside maintained source is forbidden' not found in 'Traceback (most recent call last):\n  File "<repo>/computations/verification/ramified_first_seven_trace.py", line 7, in <module>\n    import sympy as s\nModuleNotFoundError: No module named \'sympy\'\n'
 
 ----------------------------------------------------------------------
-Ran 256 tests in 412.716s
+Ran 256 tests in 352.240s
 
-FAILED (failures=116, errors=104, skipped=1)
+FAILED (failures=116, errors=103, skipped=1)
 exit 1
 
+DONE

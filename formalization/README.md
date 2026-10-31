@@ -4,7 +4,7 @@ The active source graph consists of **33 modules listed below**
 (29 pre-existing modules and 4 fixed-diagonal-kick modules added in PR #56),
 **39 adapted Aristotle/Mathlib modules** and **28 further finite-certificate
 modules imported directly by `Bgs.lean`** (listed below; 20 on main plus `LineE.lean` and
-`LineEResonance.lean` added in PR #57, `LineF.lean` and `LineG.lean` added for Lines F and G, `LineH.lean` added for Line H, `LineI.lean` and `LineIArith.lean` added for Line I, and `LineJArith.lean` added for Line J), with **100 leaf modules**
+`LineEResonance.lean` added in PR #57, `LineF.lean` and `LineG.lean` added for Lines F and G, `LineH.lean` added for Line H, `LineI.lean` and `LineIArith.lean` added for Line I, and `LineJArith.lean` added for Line J; the five Line D orbit-pair modules `LineDDefs`, `LineDOrbitPair`, `LineDBridge`, `LineDParity`, `LineDOrbitPairFull` added on main in b96ef6bd are imported by `Bgs.lean` but not yet counted here), with **100 leaf modules**
 and two aggregators (`Bgs.lean` and `Bgs.Mathlib`). They share the original Lean 4.33.1/Lake project: `Bgs.lean` imports `Bgs.Mathlib`, which reaches every new module. No second project root or duplicate proof tree is maintained.
 
 The [Mathlib coverage map](MATHLIB_LAYER_RU.md) links individual declarations to existing theorem families and their exact proof scope. The [integration receipt](../evidence/formalization/aristotle_20261027/receipt.json) separates the earlier 8,776-job Lean build and 589 public-declaration axiom checks from the later GitHub merge. This is not an independent verification of the full analytic corpus, and it does not close BGS.

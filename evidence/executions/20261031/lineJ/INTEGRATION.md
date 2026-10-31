@@ -1,6 +1,6 @@
 # Line J integration record (31 October 2026, UTC+5)
 
-* **Base.** `ChurilovMaksim/BGS` origin/main 195a24f9 (the merge of PR #60). Main was unchanged at the 2026-10-31 fetch.
+* **Base.** `ChurilovMaksim/BGS` origin/main 195a24f9 (the merge of PR #60). Before pushing, main had moved to b96ef6bd (Line D orbit-pair Lean modules; BGS-TRACE-151 formalization list). It was merged into this branch (no rebase): the only conflict was the import list in `Bgs.lean` (both sets kept), the inventory row of BGS-TRACE-151 was re-mirrored and its blob sha refreshed, renders were unchanged, and every check below was rerun on the merged tree.
 * **Branch.** `line-J-rprime-d7`.
 * **Sources.**
   * Author: box `/workspace/bgs-lineJ/` (REPORT_v2, STRATEGY_v2, code, logs, SHA256_v2; J3/REPORT_J3_v2, SHA256_J3_v2).
@@ -86,7 +86,7 @@ The author's file is in `pre_polish/` with sha256 bf83ef6b…, which equals the 
 `formalization/Bgs/LineJArith.lean` is imported by `Bgs.lean`.
 * No `sorry`; no `native_decide` (`decide` only for the mod-49 orbit).
 * Axioms are subsets of {propext, Classical.choice, Quot.sound}.
-* `lake exe cache get` ran first ("No files to download"). `nice -n 10 lake build Bgs` exited 0 with 8816 jobs.
+* `lake exe cache get` ran first ("No files to download"). `nice -n 10 lake build Bgs` exited 0 with 8816 jobs before the merge and 8821 jobs after merging b96ef6bd (the log is the post-merge build).
 * Claims carry `formalization` only where the Lean states the named core (221, 224, 228, 230). The ledger strings say exactly what
   is covered.
 
@@ -117,7 +117,7 @@ The author's file is in `pre_polish/` with sha256 bf83ef6b…, which equals the 
    consistent (K_min ≥ table min), as stated in the note §5 and claim 227.
 
 ## Checks (all with nice -n 10)
-`checkers.log` holds this branch, and `checkers_baseline_main_195a24f9.log` holds pristine main (a detached worktree of 195a24f9).
+`checkers.log` holds this branch (merged tree), and `checkers_baseline_main_195a24f9.log` holds pristine main (a detached worktree of 195a24f9). `checkers_baseline_main_b96ef6bd.log` holds the same checks on the new main b96ef6bd. That run differs from 195a24f9 only in that scientific_registry_audit exits 1 there ("claim verification inventory source blob is stale", because main edited claims.json without refreshing the inventory). The merge on this branch fixes that, and its unittest counts under parallel load were 117/104, the same flaky pattern noted below.
 
 **Required checks, all exit 0:**
 * render_bibliography, render_claim_registry, render_errata, render_research_views, render_spectral_research and render_status,
@@ -135,7 +135,6 @@ The rest give the same outcome as main:
 * bibliographic_metadata_audit `--self-test`: exit 1, only on the pre-existing `EXT-BR-1975: dependency graph changed` line (same
   on main). The three new records match, and no other record's impact set changed.
 * unittest discover (256 tests): 116 failures, 103 errors, 1 skipped, both here and on main. A per-test outcome diff (verbose runs)
-  shows **0 differences**. An earlier non-verbose branch run showed one extra error, a timeout-type environment artefact of the 7.9 GB
-  `.lake` tree; it did not recur.
+  shows **0 differences**. Non-verbose branch runs under load showed one extra outcome. In one run it was identified as `test_fractional_routing` (a subprocess with a 30 s timeout, run while `lake build` was busy). That test passes alone on the branch, and its target `check_routing.py` exits 0 with and without `-O`, so this is load-dependent flakiness and not a regression. The counts in `checkers.log` come from that run.
 
-`lake build Bgs` exit 0, 8816 jobs (`lake_build_Bgs.log`).
+`lake build Bgs` exit 0, 8821 jobs on the merged tree (`lake_build_Bgs.log`).

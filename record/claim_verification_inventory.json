@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "06773ddea2651850d0c1a4d31b179966efc8d3d9",
+ "source_blob_sha": "cfe0799b902e56314f5616c526408017d86558de",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -8823,7 +8823,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 3,
-    "formalization": 1
+    "formalization": 2
    },
    "evidence": [
     "evidence/executions/20261029/lineD-band-limited/receipt.json"
@@ -8834,7 +8834,8 @@
     "computations/verification/lineD/referee_replay/structure.py"
    ],
    "formalization": [
-    "formalization/Bgs/LineDCerts.lean"
+    "formalization/Bgs/LineDCerts.lean",
+    "formalization/Bgs/LineDOrbitPairFull.lean"
    ],
    "ledger_status": "ANALYTIC PROOF + NUMERICAL CHECK (1e-10) + LEAN FINITE INSTANCES (|ker(H_m mod 4)|, m=3..6) + INDEPENDENT REFEREE AUDIT",
    "boundary": "Psi_m(s/D) = sum over xi, xi' in Fix_m = {xi : H_m xi in Z^m} (period-m solutions of q_{j+1}+q_{j-1} = 6 q_j mod 1; same count D_m as Fix S^m, no bijection claimed) of phihat_s(xi) conj phihat_s(xi') prod_k omega_k(eta(S_k(xi)-S_k(xi'))), omega = J0(a|z|) (standard Kluyver average, as in BGS-TRACE-133) or exp(-a^2|z|^2/4). |phihat_s|^2 in {0, |V[4]|/D_m}, support independent of s (Line B Prop R). D_eff = 49, 72, 1681, 4900, 57121 (m=3..7). Orbit form not claimed as new (Boasman-Keating). Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",

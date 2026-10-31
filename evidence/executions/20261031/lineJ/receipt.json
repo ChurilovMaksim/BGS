@@ -1,6 +1,6 @@
 {
  "schema": "bgs-lineJ-integration-receipt-v1",
- "base": "ChurilovMaksim/BGS origin/main 195a24f9 (merge of PR #60); unchanged at fetch 2026-10-31",
+ "base": "ChurilovMaksim/BGS origin/main 195a24f9 (merge of PR #60), then merged origin/main b96ef6bd before push",
  "branch": "line-J-rprime-d7",
  "prepared_on": "2026-10-31",
  "id_assignment": {
@@ -77,7 +77,7 @@
   "axioms": "propext, Classical.choice, Quot.sound (subsets)",
   "sorryAx": false,
   "native_decide": false,
-  "build": "nice -n 10 lake build Bgs: exit 0, 8816 jobs (after lake exe cache get)"
+  "build": "nice -n 10 lake build Bgs: exit 0, 8821 jobs on the tree merged with b96ef6bd (after lake exe cache get)"
  },
  "excluded_from_packet": "Galerkin .npy/.npz matrices (regenerate with code/run_cert_build.sh, J3/code/run_build16.sh), __pycache__",
  "sha256": {
@@ -2301,7 +2301,7 @@
   "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md": "f4af0987b6c6030d6c344a57866070dc7471a604cc8b88ef08cc8e9b3ceb023e",
   "literature/lineJ_sources_20261031.md": "30c2b35435df0d19282351023d013153a4036a949f6e77f2fa76de29eaaf3970",
   "evidence/source_metadata/registry_metadata_20261031_lineJ.json": "6761938124c42d1143398e466458ea7b1f573264a085b8c061e3f92ab3ffffb8",
-  "evidence/executions/20261031/lineJ/README.md": "1d516fb2626e82036fd5fe426d8a345ad7a4aa7206d573bfa5093b49878c5c02",
+  "evidence/executions/20261031/lineJ/README.md": "95d9756115300e7b266034d6a43fc74638954ad036744e572ef1562851373c29",
   "evidence/executions/20261031/lineJ/integration_reruns/assemble16.out": "317a2bbc48faf93935a096a8f2b948e3bd9db65f71bde4df8bf3a8004942eb0e",
   "evidence/executions/20261031/lineJ/integration_reruns/assemble_v2.out": "7f811c8875b97709725ac530d9c5f922435428e5cd9c90aaaa94705e76ed66e0",
   "evidence/executions/20261031/lineJ/integration_reruns/exact_B.out": "af4e11cc8cb592b56624c1744a3b6097d190be095233cae2967ee04fbf5333c4",
@@ -2311,8 +2311,8 @@
   "evidence/executions/20261031/lineJ/integration_reruns/rat_excl.out": "ca092e7735a8abab17970896a376ed0e0bbc16ad5deba0e7615004359f1caf37",
   "evidence/executions/20261031/lineJ/integration_reruns/run.sh": "a3a3ad8950c0aa5a2778c3cf7a644c21b6ecab8f5ed23309b0018f71f42f8e9c",
   "evidence/executions/20261031/lineJ/integration_reruns/sectors_exact.out": "ec1e09ac30d01f68a6ffc67e38b162cdac362004f952737319031ace89c777ef",
-  "evidence/executions/20261031/lineJ/lake_build_Bgs.log": "f9a66f9666c67bbb071f8097a97cafc09990845d75ea2f17547bc7601ba3e058",
-  "evidence/executions/20261031/lineJ/lake_cache_get.log": "8400dadb32327c1210d92a5e932f93544cbc4f0702792ed727ead00fe5381271",
+  "evidence/executions/20261031/lineJ/lake_build_Bgs.log": "8a02c8c827fcdb5b3ff3ab40af06061ff003440a3958742aa16500f1d7d62cd8",
+  "evidence/executions/20261031/lineJ/lake_cache_get.log": "150017ad5e4c5c292a3215e25636d367ef06a8d2252c7feccb7aa8d6c93041b8",
   "evidence/executions/20261031/lineJ/lean_axioms_LineJArith.log": "2f8f815ddd93851c9499c4477d6e27fffe393e106fb8ca911bc50bec058d8f1c"
  }
 }
