@@ -67,5 +67,10 @@ import Bgs.LineG
 import Bgs.LineH
 import Bgs.LineI
 import Bgs.LineIArith
+import Bgs.LineDDefs
+import Bgs.LineDOrbitPair
+import Bgs.LineDBridge
+import Bgs.LineDParity
+import Bgs.LineDOrbitPairFull
 
 import Bgs.Mathlib
