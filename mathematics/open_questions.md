@@ -2,6 +2,14 @@
 
 ## Phase average, revival, and the signed sum
 
+Line J (BGS-TRACE-221 to BGS-TRACE-233) settles item (i) of the Line I list below: the leading coefficient is exact and non-zero, and
+class 1:3 cancels exactly while 2:1 survives (BGS-TRACE-221). It certifies the oscillating growth of the frozen d = 7 term along
+subsequences (BGS-TRACE-225) and controls the (±2,16) members (BGS-TRACE-227). The following remain open:
+* (a) **H♮ (BGS-TRACE-232).** Bound the conductor ∉ {1, 7} part O♮_m on S⁺ ⊂ {3p} one-sidedly, e.g. |O♮_m| ≤ e^{o(m)}r^m with
+  r < 2.4587. This needs twisted-rate bounds uniform in the conductor.
+* (b) **H_arg (BGS-TRACE-233).** Prove arg ξ₂:₁/2π ∉ ℚ, or show that S⁺ is infinite without it.
+* (c) **Frozen R′ itself (BGS-TRACE-206).** It is false along m = 3p if (a) and (b) hold (BGS-TRACE-231); otherwise it is undecided.
+
 Line I (BGS-TRACE-211 to BGS-TRACE-220) reduces Conjecture R′ (BGS-TRACE-206) exactly to (E″), (T″) and (D) (BGS-TRACE-213) and leaves the following open. (i) Decide whether the leading coefficient c(β) of the top twisted eigenvalue vanishes, for d = 7 and classes 1:3 and 2:1. It is ≈ 0.5 in floats and not certified. If c(β) ≠ 0, then |Ẑ(β)| grows like |μ|^m with |μ| > √λ/μ₀ (BGS-TRACE-217); the d = 7 cross term of the frozen R′ is then heuristically ~1.0185^m/m in W′/m. (ii) Control the (±2,16) level-7 members (BGS-TRACE-215 covers ρ = (±2,8) only), model the other levels, and rule out (or find) a compensating bulk term. Until then, neither a proof nor a disproof of the frozen R′ follows. (iii) Prove (E″) and (T″) for the non-resonant units, which would give R′_A (BGS-TRACE-220). (iv) Find a substitute for the S-arithmetic transfer route that BGS-TRACE-219 rules out for any fixed finite prime set (this is an assessment, not a theorem).
 
 Line H (BGS-TRACE-207 to BGS-TRACE-209) refutes Conjecture R (BGS-TRACE-179) as stated, at η = 2, and leaves the following open. (i) The odd m with 3 ∤ m in {17, 19, 23, 25, 29, 31, 35, 37, 41, 43}, where the Weyl term dominates the certified bound (m = 11, 13 are BGS-TRACE-195). (ii) Every m with 3 | m (BGS-TRACE-190). (iii) η ≠ 2 for the Line B kick: certifying η-intervals would decide R restricted to compact ranges avoiding 2, which is not registered separately. (iv) The sign s = +1. (v) R_NSW (BGS-TRACE-210, open; split from BGS-TRACE-179): it fails if and only if h_m is prime for infinitely many m, which is unknown. (vi) H∞,7 as stated in BGS-TRACE-196 (single-disc space) is not proved; only its conclusion for s = −1 is established, on the lifted space. None of this bears on BGS-BGS-001 or BGS-TRACE-148.

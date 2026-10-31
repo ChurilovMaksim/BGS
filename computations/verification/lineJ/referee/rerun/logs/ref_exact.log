@@ -1,0 +1,6 @@
+(A) random-word sector law checks: 3200 failures: 0
+(B) max rel diff |W21| arb vs assemble double: [1.1207e-15 +/- 2.23e-20]  (margin used 1e-9)
+    distinct |W21|: ['[0.0544949226015 +/- 4.64e-14]', '[0.122448979592 +/- 1.64e-13]', '[0.152691380047 +/- 3.68e-14]', '[0.220645437037 +/- 3.28e-13]']
+    12/49 cos(k pi/7), k=1,2,3: ['[0.220645437037 +/- 3.28e-13]', '[0.152691380047 +/- 3.68e-14]', '[0.0544949226015 +/- 4.64e-14]']  6/49= [0.122448979592 +/- 1.64e-13]
+(C) member sets m=j+168k, k<=15: 894 checks, mismatches 0 ;  (D) h odd & h<lam^{m/2}/2 failures: 435
+(D) m=9..2997 (m=3 mod 6): h odd, 4h^2=2(x_m-1), x_m^2-8y_m^2=1 (=> 4h^2 = lam^m+lam^-m-2 < lam^m): failures 0

@@ -1,0 +1,4 @@
++ timeout 1200 nice -n 10 /workspace/bgs-derand/phase3/venv/bin/python code/rat_excl.py
+{'interval': [0.887975909832077, 0.8879762669871324], 'simplest': '1189/1339', 'b_min': 1339}
++ echo 'exit 0'
+exit 0

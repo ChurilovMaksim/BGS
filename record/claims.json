@@ -7471,9 +7471,9 @@
         "BGS-TRACE-205",
         "BGS-TRACE-179"
       ],
-      "boundary": "Frozen definition (k1, eta = 2, odd m, h = h_m, phi = phi(2h)): P* = {(2,8),(-2,8),(2,16),(-2,16)} (N == +-4, +-8); Z_rho = Z_m(nu_rho) with b nu_rho == a (mod 2h); levels d | h, 1 < d <= sqrt h, members M_d(rho) = {nu unit: b nu == a mod 2h/d, not mod 2h/d' for d' | d, d' < d}, n_d = |M_d|, level included iff |Z_rho|^2/d^2 >= 4m; RMT_m = 4m - m^2/h; Res_m = (1/phi) sum_rho [(|Z_rho|^2 - RMT_m) + sum_{d incl.} n_d (|Z_rho|^2/d^2 - RMT_m)]; W'_m = F_m - RMT_m - Res_m. Conjecture R': W'_m = o(m), i.e. (F_m - Res_m)/2m -> 2. A conjecture about the k1 kick; it is not a statement about Conjecture R (BGS-TRACE-179), which concerns the Line B kick and max_eta |W~rest_m(eta)| = o(m) and stays open. Evidence is four points with an upward drift of W'/m; o(m) is not established. Line I (2026-10-31; BGS-TRACE-211..220, mathematics/fixed-map/lineI_rprime_reduction.md): exact reduction W'_m = (non-resonant sum) + phi^-1 sum Dev_d(rho) (BGS-TRACE-213), so R' follows from (E''), (T'') and (D), none of which is proved; for d = 7 the square part of (D) is certified small for m >= 321 for rho = (+-2,8) only; the (+-2,16) level-7 members are not controlled (BGS-TRACE-215), the cross part is not controlled, and BGS-TRACE-217 shows r_tw > 1.262 > sqrt(lambda)/mu0, so the operator-radius route to it fails (unless the leading coefficient c(beta) vanishes, which is not decided). Heuristically (not proved: c(beta) != 0 uncertified, (+-2,16) members and other levels not modelled, no bulk compensation excluded) the frozen d = 7 term contributes ~1.0185^m/m to W'/m, so frozen R' may fail at m of a few hundred; this is neither a proof nor a disproof. The amended Conjecture R'_A (actual member values) is BGS-TRACE-220 (open).",
+      "boundary": "Frozen definition (k1, eta = 2, odd m, h = h_m, phi = phi(2h)): P* = {(2,8),(-2,8),(2,16),(-2,16)} (N == +-4, +-8); Z_rho = Z_m(nu_rho) with b nu_rho == a (mod 2h); levels d | h, 1 < d <= sqrt h, members M_d(rho) = {nu unit: b nu == a mod 2h/d, not mod 2h/d' for d' | d, d' < d}, n_d = |M_d|, level included iff |Z_rho|^2/d^2 >= 4m; RMT_m = 4m - m^2/h; Res_m = (1/phi) sum_rho [(|Z_rho|^2 - RMT_m) + sum_{d incl.} n_d (|Z_rho|^2/d^2 - RMT_m)]; W'_m = F_m - RMT_m - Res_m. Conjecture R': W'_m = o(m), i.e. (F_m - Res_m)/2m -> 2. A conjecture about the k1 kick; it is not a statement about Conjecture R (BGS-TRACE-179), which concerns the Line B kick and max_eta |W~rest_m(eta)| = o(m) and stays open. Evidence is four points with an upward drift of W'/m; o(m) is not established. Line I (2026-10-31; BGS-TRACE-211..220, mathematics/fixed-map/lineI_rprime_reduction.md): exact reduction W'_m = (non-resonant sum) + phi^-1 sum Dev_d(rho) (BGS-TRACE-213), so R' follows from (E''), (T'') and (D), none of which is proved; for d = 7 the square part of (D) is certified small for m >= 321 for rho = (+-2,8) only; the (+-2,16) level-7 members are not controlled (BGS-TRACE-215), the cross part is not controlled, and BGS-TRACE-217 shows r_tw > 1.262 > sqrt(lambda)/mu0, so the operator-radius route to it fails (unless the leading coefficient c(beta) vanishes, which is not decided). Heuristically (not proved: c(beta) != 0 uncertified, (+-2,16) members and other levels not modelled, no bulk compensation excluded) the frozen d = 7 term contributes ~1.0185^m/m to W'/m, so frozen R' may fail at m of a few hundred; this is neither a proof nor a disproof. The amended Conjecture R'_A (actual member values) is BGS-TRACE-220 (open). Line J (2026-10-31; BGS-TRACE-221..233, mathematics/fixed-map/lineJ_d7_twisted_coefficient.md): the leading d = 7 coefficient is exact (BGS-TRACE-221; class 1:3 cancels exactly between rho = (2,8) and (-2,8), classes 2:1 and 0:1 survive), and Theorem J (BGS-TRACE-225, computer-assisted) shows the frozen d = 7, (+-2,8) contribution phi^-1 D7/m to W'/m is >= K_j 1.0184224^m/m in absolute value with each sign for at least one m in every 6 consecutive terms of each class j mod 168 (m == 3 mod 6, m >= M0(j) in [297, 495]); the (+-2,16) level-7 members are now controlled (<= 1% for m >= 243, BGS-TRACE-227). The remaining terms O_m (other levels, unbounded prime support) are not controlled. Theorem J3 (BGS-TRACE-231, conditional): frozen R' is false along m = 3p under the open hypotheses H-natural (BGS-TRACE-232) and H_arg (BGS-TRACE-233); unconditionally, if R' holds, the conductor-not-in-{1,7} parts must cancel the d = 7 term exponentially on S+. This is not a refutation; R' stays open. The Line I heuristic sentence above is superseded by these statements.",
       "state": "open",
-      "ledger_status": "CONJECTURE + FLOAT EVIDENCE m = 9..15 (W'/m = -0.74, -0.31, -0.04, +0.47; upward drift) + PRE-REGISTERED m = 17 TEST (PREDICTIONS_m17.json, sha256 fa8505f5...aa344; outcome not included in this registration (unreviewed)); INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied); LINE I (2026-10-31): REDUCTION (BGS-TRACE-213) AND CERTIFIED d = 7 SQUARE TERM FOR rho = (+-2,8) ONLY ((+-2,16) LEVEL-7 MEMBERS NOT CONTROLLED) / TWISTED-RADIUS LOWER BOUND (BGS-TRACE-215, 217); HEURISTIC RISK FOR THE FROZEN DEFINITION; STATE UNCHANGED (OPEN)",
+      "ledger_status": "CONJECTURE + FLOAT EVIDENCE m = 9..15 (W'/m = -0.74, -0.31, -0.04, +0.47; upward drift) + PRE-REGISTERED m = 17 TEST (PREDICTIONS_m17.json, sha256 fa8505f5...aa344; outcome not included in this registration (unreviewed)); INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied); LINE I (2026-10-31): REDUCTION (BGS-TRACE-213) AND CERTIFIED d = 7 SQUARE TERM FOR rho = (+-2,8) ONLY ((+-2,16) LEVEL-7 MEMBERS NOT CONTROLLED) / TWISTED-RADIUS LOWER BOUND (BGS-TRACE-215, 217); HEURISTIC RISK FOR THE FROZEN DEFINITION; STATE UNCHANGED (OPEN); LINE J (2026-10-31): EXACT d = 7 LEADING COEFFICIENT (BGS-TRACE-221), CERTIFIED OSCILLATING d = 7 GROWTH ALONG SUBSEQUENCES (BGS-TRACE-225), (+-2,16) CONTROLLED (BGS-TRACE-227), CONDITIONAL REFUTATION ALONG m = 3p UNDER OPEN H-NATURAL AND H_ARG (BGS-TRACE-231..233); NOT REFUTED; STATE UNCHANGED (OPEN)",
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
@@ -7826,6 +7826,351 @@
       "formalization": [],
       "manuscript": [],
       "closure_condition": "A proof that W'^A_m = o(m) for the k1 kick at eta = 2, or a disproof (W'^A_m/m bounded away from 0 along a subsequence)."
+    },
+    {
+      "id": "BGS-TRACE-221",
+      "title": "Line J Prop J-C: exact sector law, exact leading d = 7 coefficient B_C, exact cancellation of sectors 2, 6 and survival of sectors 0, 4 for rho = (+-2,8)",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-197",
+        "BGS-TRACE-198",
+        "BGS-TRACE-199",
+        "BGS-TRACE-203",
+        "BGS-TRACE-212",
+        "BGS-TRACE-216",
+        "BGS-TRACE-222"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, m == 3 (mod 6) (so 7 | h_m), frozen definition of BGS-TRACE-206. rho in {(2,8), (-2,8)}, d = 7, the 8 classes C of beta != 0 mod +-lambda. (i) Sector law [P + exact check]: for every operator case (m mod 24 in {9,15,21,3}) and a = +-2 the 16-state G2 automaton has four rank-one sectors f_a, a in {0,2,4,6}, A_n f_a = e(an/8) f_a, the complement is orthogonal to the read-out and contributes 0, and J = sum_a c_a(case,rho) with |c_a| = 1/2 exactly in Z[zeta_8]; hence Zhat_rho(beta) = c_m sum_a c_a(case,rho) (1/3)[Tr V_{beta,a}^m - Tr E_{beta,a}^m], c_m = 1 - lambda^-m, so every top twisted orbit has coefficient exactly (8th root of unity)/2 != 0 (decides the question left open in BGS-TRACE-217). (ii) Leading coefficient: with Zhat_{+-,C} = c_m (c^+-_C mu_{C,+-}^m + eps^+-_C), the leading part of cross_+ + cross_- for class C is 2 c_m^2 Re(B_C xi_C^m), xi_C = mu* mu_{C,+}, B_C = c0f (c^+_C - conj c^-_C) W_C(+,m), using W(-rho) = conj W(rho) (exact in Z[zeta_7]) and c4f = -c0f (from the exact sector table). (iii) Sectors 2 and 6: c^+_a = conj c^-_{a+4} = 1/2, so B = 0 EXACTLY for every orbit in s2/s6, including the certified top of class 1:3 (exact by the operator identity BGS-TRACE-222, not by certificates). Sectors 0 and 4: c^+_a = -conj c^-_{a+4}, so B_C = 2 c0f c_a^(+) W_C and |B_C| = |W_C|/2 (classes 2:1 and 0:1 survive). (iv) |W_C| = (12/49)|cos(k pi/7)|, k in {1,2,3}, or 6/49 when 7 | m (arb from exact Z[zeta_7] histograms); W_2:1, W_0:1 != 0 for all 28 residues j = m mod 168; B_C has period dividing 168 = lcm(24, 42) since ord_49(1+sqrt2) = 42 and nu0 == +-2 (mod 7). Lean (Bgs.LineJArith: pell49_period, pell49_periodic, pell49_lambda_order) checks only the mod-49 period 42 of the coordinates of (1+sqrt2)^m; the sector law and B_C are paper proofs with exact computer checks. That the tops of classes 1:2 and 1:5 lie in s6 is float-only and not used. Not a statement about Conjecture R (BGS-TRACE-179) or BGS.",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF + EXACT CHECKS (sectors_exact.py, exact_B.py, fixes_checks.py: Z[zeta_8]/Z[zeta_7], ALL EXACT CHECKS PASSED) + LEAN CORE (Bgs.LineJArith: pell49_period, pell49_periodic, pell49_lambda_order; mod-49 period only) + FLOAT MODEL CHECK (check_model.py <= 4e-7 rel.) + REFEREE EXACT RERUN (ref_exact.py 3200 words, ref_conj.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/code/sectors_exact.py",
+        "computations/verification/lineJ/code/exact_B.py",
+        "computations/verification/lineJ/code/fixes_checks.py",
+        "computations/verification/lineJ/code/check_model.py",
+        "computations/verification/lineJ/referee/rerun/code/ref_exact.py",
+        "computations/verification/lineJ/referee/rerun/code/ref_conj.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineJArith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-222",
+      "title": "Line J: sector-level antiunitary map sigma(V^(-2)_{beta,a+4}) = conj sigma(V^(+2)_{beta,a}) (and likewise for E) for the (+-2,8) twisted sector operators",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-203",
+        "BGS-TRACE-216"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, m == 3 (mod 6) (so 7 | h_m), frozen definition of BGS-TRACE-206. Sector operators V^(C)_{beta,a}, E^(C)_{beta,a} (letter weight ghat(n) e(Cn^2/2) e(an/8) e(n tau_i(beta)/7), C = -4 a c0/8, acting by M_{Cn} C_n on the real-centred disc lattices). K-conjugation gives K V^(C)_{beta,a} K = V^(-C)_{-beta,4-a} (real centres, conj ghat(n) = (-1)^n ghat(n) = e(4n/8) ghat(n), K M_C K = M_{-C}); the reflection R (n -> -n, s -> -s, c -> -c; rounding to cores symmetric since lambda is irrational) gives R V^(-C)_{-beta,4-a} R = V^(-C)_{beta,a-4}; hence V^(-2)_{beta,a+4} = (RK) V^(+2)_{beta,a} (RK)^-1 with RK antiunitary, so the spectra are complex conjugate with multiplicities, and the same for E. The sector operators do not depend on the case m mod 24; only the constants c_a(case,rho) do. BGS-TRACE-216 restricted to sectors. Galerkin-level referee check of all 64 pairs (sorted |entries| to 2e-41, top-6 eigenvalues conjugate to 7.7e-15) is a numerical corroboration, not part of the proof.",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF (WRITTEN IN REFEREE ROUND F5) + FLOAT CHECK (REFEREE GALERKIN-LEVEL ALL 64 PAIRS, ref_conj.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/referee/rerun/code/ref_conj.py"
+      ],
+      "formalization": [],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-223",
+      "title": "Line J: certified top-orbit and rest certificates for the d = 7 sector operators: |mu_2:1| in [1.28359503, 1.28359523], |xi| = |mu* mu_2:1| >= 2.4586893 > sqrt(lambda)",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-197",
+        "BGS-TRACE-198",
+        "BGS-TRACE-203",
+        "BGS-TRACE-216",
+        "BGS-TRACE-222"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, m == 3 (mod 6) (so 7 | h_m), frozen definition of BGS-TRACE-206. Lifted twisted sector operators (builder certG_build_sector.py = Line I dom_v3 builder with the sector state factor; V: K0 = 5, rho = 1.2, K = 60, beta = 2.5, D = 1980; E: K0 = 4, rho = 0.8, K = 40; cases a = +2 (m == 9 mod 24) and a = -2 (m == 15 mod 24), the other cases by exact symmetry). Certificates (arb ball arithmetic, python-flint; float BLAS with a-priori bound; total perturbation pertT ~ 2.37e-10, deflation-dominated, included in F): count certificates (rig_dom3b.py, Line I v3 sha e4ff0f7f, unchanged): exactly 3 eigenvalues in |z| > 0.8 (2:1), > 0.9 (0:1), > 1.0 (1:3); disc certificates (rig_disc.py, new, audited line by line; r = 1e-7): |mu_2:1| in [1.2835950326, 1.2835952326], |mu_0:1| <= 1.2624308, |mu_1:3| <= 1.2837144; orbits {mu, omega mu, omega^2 mu} by the exact Z/3 symmetry; rest certificates (rig_spec.py, Line H v4 sha f346e22c, mode rest): the other 58 V blocks with R <= 1.247 (Neumann order p = 64) and all 64 E blocks with R = 0.45 (122 rest certificates; 6 count + 6 disc certificates). With mu* in D(b11, 2e-6), |mu*| in [1.9154712, 1.9154753] (BGS-TRACE-198): |xi_2:1| >= 2.4586893 > sqrt(lambda) = 2.4142136 and |xi|/sqrt(lambda) >= 1.0184224. Relies on OpenBLAS zgemm without Strassen, IEEE binary64, python-flint/arb.",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED (ARB, python-flint; FLOAT BLAS WITH A-PRIORI BOUND; rig_dom3b v3, rig_disc NEW (AUDITED), rig_spec v4) + REFEREE RERUNS (both discs, 3 count, 12 rest certificates; variant disc on the other orbit member; negative control r = 1e-8 fails) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/code/certG_build_sector.py",
+        "computations/verification/lineJ/code/gstates_sector.py",
+        "computations/verification/lineJ/code/rig_dom3b.py",
+        "computations/verification/lineJ/code/rig_disc.py",
+        "computations/verification/lineJ/code/rig_spec.py",
+        "computations/verification/lineJ/code/run_cert_tracked.sh",
+        "computations/verification/lineJ/code/run_cert_rest2_0.sh",
+        "computations/verification/lineJ/code/run_cert_rest2_1.sh"
+      ],
+      "formalization": [],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-224",
+      "title": "Line J window lemma: for theta in [theta_lo, theta_up] subset (0, pi], among N = ceil(2 pi/theta_lo) consecutive k some cos(alpha + k theta) >= cos(theta_up/2) and some <= -cos(theta_up/2)",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [],
+      "boundary": "Elementary: for any real alpha and theta in [theta_lo, theta_up] subset (0, pi], among any N = ceil(2 pi/theta_lo) consecutive integers k there is one with cos(alpha + k theta) >= cos(theta_up/2) and one with cos(alpha + k theta) <= -cos(theta_up/2) (a closed arc of length theta_up >= theta cannot be jumped by steps theta; first entry after <= ceil((2 pi - theta_up)/theta) <= N - 1 steps). Applied with theta = 168 arg xi_2:1 mod 2 pi in [1.130677114, 1.131054118] (from the certified discs of BGS-TRACE-223): N = 6, cos(theta_up/2) >= 0.8443062873, and ceil((2 pi - theta_up)/theta) <= 5. Lean (Bgs.LineJArith: window_step, window_N) checks the real-line stepping core (a <= x + ceil((a-x)/theta) theta <= a + L for 0 < theta <= L) and the constants N = 6 and (2 pi - 1.131054118)/theta <= 5 for theta >= 1.130677114; the reduction of the circle statement to the real-line core is a paper step.",
+      "state": "proved",
+      "ledger_status": "ELEMENTARY PROOF + LEAN CORE (Bgs.LineJArith: window_step, window_N; real-line core and constants only) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/code/assemble_v2.py",
+        "computations/verification/lineJ/integration_checks/lineJ_arith_checks.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineJArith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-225",
+      "title": "Line J Theorem J: the frozen d = 7, (+-2,8) contribution oscillates with growth >= 1.0184224^m: both signs in every 6 consecutive members of each class mod 168 (m == 3 mod 6)",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-197",
+        "BGS-TRACE-198",
+        "BGS-TRACE-199",
+        "BGS-TRACE-206",
+        "BGS-TRACE-212",
+        "BGS-TRACE-213",
+        "BGS-TRACE-216",
+        "BGS-TRACE-221",
+        "BGS-TRACE-222",
+        "BGS-TRACE-223",
+        "BGS-TRACE-224"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, m == 3 (mod 6) (so 7 | h_m), frozen definition of BGS-TRACE-206. D7(m) = sum_{rho = (+-2,8)} sum_{t in M_7(rho)} (|Z_t|^2 - |Z_rho|^2/49) (level 7 included under the frozen cut-off for m >= 13 by BGS-TRACE-199). Let j = m mod 168. For m >= M0(j) the expansion cross_+ + cross_- = 2 c_m^2 Re(B_2:1 xi^m) + 2 c_m^2 Re(B_0:1 xi_0:1^m) + Err(m) (1:3 term exactly 0, BGS-TRACE-221) satisfies c_win |B_2:1| |xi|^m > |B_0:1| |xi_0:1|^m + |Err|/(2 c_m^2), where Err rigorously bounds all non-top eigenvalues of the 64 V and 64 E blocks, the Line F subleading error of Z0 (H0 <= 1506.18) times every Zhat, including the class 1:3 whose leading part cancels (relative rate mu_1:3/xi <= 0.52212), and the Galerkin errors; the square term sq <= sum_rho 6((6/7) sum_C |Zhat_C|)^2 is absorbed on the m- side. Conclusion: in every 6 consecutive terms m0, m0+168, ..., m0+840 of the class j with m0 >= M0(j) there are m+ and m- with D7(m+-)/(m phi(2h_m)) >= +K_j 1.0184224^m/m resp. <= -K_j 1.0184224^m/m; M0(j) in [297, 495], K_j > 0 tabulated per residue (computations/verification/lineJ/REPORT_v2.md section 3; logs/assemble_v2.json; table K_j carries a 1e-3 safety margin below K_j+ = K_j-), and from m0 >= M1(j) in [417, 621] both values are >= 1 in absolute value. A subsequence statement, not a statement for every m. Corollary (conditional): with W'_m = W'_A,m + phi^-1 (D7(m) + O_m) (BGS-TRACE-213) and W'_A >= -4m, if O_m >= -C m phi(2h_m) for all large m then W'_m/m -> +infinity along the m+ and frozen R' fails; frozen R', R'_A (BGS-TRACE-220) and O_m = o(m phi) cannot all hold; R' and R'_A together force phi^-1 O_m/m unbounded in both directions. O_m (other levels, (+-2,16) members, other members of P*) is NOT controlled here; frozen R' (BGS-TRACE-206) is NOT refuted.",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED (ARB ASSEMBLY assemble_v2.py FROM THE BGS-TRACE-223 CERTIFICATES, mu* FROM DECIMAL STRINGS, |W_C| FROM EXACT HISTOGRAMS) + PAPER (EXPANSION, MONOTONICITY OF THE BRACKET, WINDOW LEMMA) + REFEREE INDEPENDENT REPRODUCTION OF M0, M1, K_j (ref_assemble.py) + FLOAT NUMERICS m = 201..453 (NOT PART OF THE PROOF) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/code/assemble_v2.py",
+        "computations/verification/lineJ/code/numerics_large_m.py",
+        "computations/verification/lineJ/referee/rerun/code/ref_assemble.py",
+        "computations/verification/lineJ/referee/rerun/code/ref_numerics.py",
+        "computations/verification/lineJ/referee/delta2/code/assemble_v2_redirect.py"
+      ],
+      "formalization": [],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-226",
+      "title": "Line J3 Lemma L16: lifted trace formula for rho = (+-2,16) restricted to the exact 2-dimensional monomial blocks",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-197",
+        "BGS-TRACE-203",
+        "BGS-TRACE-207"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, m == 3 (mod 6) (so 7 | h_m), frozen definition of BGS-TRACE-206. rho = (a,16), a = +-2. Exact blocks [exact check, blocks16_exact.py]: for each of the 16 cases (m mod 48 x a) the 64-state automaton splits into 8 mutually orthogonal invariant 2-dimensional monomial blocks (entries in {0} u zeta_16^Z, supports 32 and 64, A_n diagonal or swap with zeta_16 phases, the all-ones vector in the span); 32 distinct factors after deduplication. Lemma: Z_rho(m) = (1 - lambda^-m) sum_B [Tr((I x J_B) V_B^m) - Tr((I x J_B) E_B^m)], V_B = sum_n ghat(n) e(Cn^2/2) V_n x A_{B,n} on the lifted vertex lattice (E_B likewise on the edge lattice), C = -4 a c0/16, and the twisted analogue with the cyclic 3-state factor. J_B = G_B^-1 F_B^* delta0 alpha_B^* G_B is the coordinate matrix of (P_B delta0)(P_B 1)^* in the orthogonal, non-normalised block basis; its coordinate operator norm is <= 1/2 (the norm used in BGS-TRACE-227). Proof: G2 (BGS-TRACE-203) per word on the reachable set, per-word lift Tr_H C_w = Tr V_w - Tr E_w of BGS-TRACE-197 (uniform in the real multiplier constant), resummation by dominated convergence with sum_w |c_w| ||V_{n_m}...V_{n_1}||_1 <= (sum_n |ghat(n)| ||V_n||_1)^m < infinity, exact block restriction (unitary finite-order A_n). Float word test (3200 words, 1.1e-14) and referee J_B re-derivation (5e-16) corroborate. Block basis sha256 814e4659b8868391df0bffd3ab509d1dcde1e878b43bc6fca06a52ffde073960 (J3/logs/SHA256_blocks16_basis.txt).",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF (J3-F1 FIX; L16-a/L16-b INTEGRATION POLISH) + EXACT CHECK (blocks16_exact.py) + FLOAT WORD TEST (wordtest16.py, 1.1e-14) + REFEREE J_B RE-DERIVATION (ref_L16_blocks.py, 5e-16) + BASIS PROVENANCE CHECK (lineJ_J3F8_basis_provenance.py, ALL_OK) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/J3/code/blocks16_exact.py",
+        "computations/verification/lineJ/J3/code/gstates16_block.py",
+        "computations/verification/lineJ/J3/code/wordtest16.py",
+        "computations/verification/lineJ/referee/delta3/ref_L16_blocks.py",
+        "computations/verification/lineJ/integration_checks/lineJ_J3F8_basis_provenance.py"
+      ],
+      "formalization": [],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-227",
+      "title": "Line J3: the d = 7 contribution of rho = (+-2,16) (with inherited copies) is <= 1% of (K_min/2) xi_lo^m for m >= 243",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-212",
+        "BGS-TRACE-225",
+        "BGS-TRACE-226",
+        "BGS-TRACE-228"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, m == 3 (mod 6) (so 7 | h_m), frozen definition of BGS-TRACE-206. rho = (+-2,16), d = 7. 576 rest certificates (32 block factors x {V, E} x {untwisted, 8 d = 7 classes}; builder certG_build16.py on the block basis of BGS-TRACE-226; rig_spec v4), all certified: R_untwisted <= 1.6677, R_twisted <= 1.2587, cross rate R_u R_t <= 2.0991 = 0.8538 xi_lo, square rate R_t^2 <= 1.5843 = 0.6444 xi_lo (xi_lo = 2.4586893). Via L16, Cauchy and the certified resolvent ||T^(m-1)|| <= R^m fullR/(1-F), with crude weights |W_C| <= 36/49 and the square part included: |X16(m)| <= 0.01 (K_min/2) xi_lo^m for every m >= 213, and including all composite-level inherited copies (factor <= sigma(h)/h <= 1 + (m/2) ln lambda, BGS-TRACE-228) for every m >= 243. K_min = 0.00998476 = min over the 28 residues of K_j+ and K_j- (x (1 - 1e-6)), which is >= the margin-reduced table value min K_j = 0.009975 of BGS-TRACE-225, so |X16| <= 0.01 X7 wherever the growth step of Theorem J holds. Relies on OpenBLAS zgemm without Strassen, IEEE binary64, python-flint/arb.",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED (576 REST CERTIFICATES, rig_spec v4; ARB ASSEMBLY assemble16.py) + REFEREE REBUILD AND RE-CERTIFICATION OF 90/576 (BIT-IDENTICAL) AND INDEPENDENT ASSEMBLY (ref_assemble16.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/J3/code/certG_build16.py",
+        "computations/verification/lineJ/J3/code/gstates16_block.py",
+        "computations/verification/lineJ/J3/code/rig_spec.py",
+        "computations/verification/lineJ/J3/code/run_build16.sh",
+        "computations/verification/lineJ/J3/code/assemble16.py",
+        "computations/verification/lineJ/referee/j3/certs/ref_cert16.py",
+        "computations/verification/lineJ/referee/j3/ref/ref_assemble16.py"
+      ],
+      "formalization": [],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-228",
+      "title": "Line J3 inheritance theorem: W_{ce, e beta'} = (n_e/e^2) W_{c, beta'} for coprime odd c, e with ce | h_m (composite levels carry positive multiples of lower-level class sums)",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-206",
+        "BGS-TRACE-212"
+      ],
+      "boundary": "Odd m, h = h_m, frozen member sets M_d(rho) of BGS-TRACE-206, O = Z[sqrt2]. Let c, e be coprime odd integers with c > 1, ce | h_m, d = ce, beta' in O/c, beta = e beta'. Then (i) Zhat^(d)_beta = Zhat^(c)_beta' and (ii) W_{d,beta} = (n_e/e^2) W_{c,beta'}, where n_e = #{j mod e : j a unit mod e and nu0 + (2h/d) j not == 0 mod l for every prime l | e with v_l(h) = v_l(d)} >= 0, independent of c, beta' and the sign of rho; for a prime q, n_q = q - 2 if q || h and q - 1 if q^2 | h. Proof by CRT (x/d == x ebar/c + x cbar/e mod 1), |G^(e)_u(0)|^2 = e^2 for units u, and independence of the mod-e conditions. Consequences: every composite-level copy of the d = 7 cross term is a positive multiple of it, summing to A_m = 1 + sum n_D'/D'^2 in [1, sigma(h)/h], the same for +-rho (so the 1:3 cancellation of BGS-TRACE-221 persists); square parts of every Dev_d are >= 0. Lean (Bgs.LineJArith: count_excl_one, count_units) checks only the finite counts q - 2 and q - 1; the CRT/Gauss-sum argument is a paper proof. Exact check: class sums W_C compared in arb from exact integer histograms to <= 9e-56 at (m, a, q) = (15, 2, 41), (15, -2, 31), (33, 2, 23).",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF (GENERAL gcd(c,e) = 1 FORM AFTER J3-F5) + LEAN CORE (Bgs.LineJArith: count_excl_one, count_units; counts only) + EXACT CHECK (inherit_proof_check.py, <= 9e-56) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/J3/code/inherit_proof_check.py",
+        "computations/verification/lineJ/J3/code/inherit7q.py",
+        "computations/verification/lineJ/integration_checks/lineJ_arith_checks.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineJArith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-229",
+      "title": "Line J3: prime-level complete-sum bound: |W_{q,beta}| <= 2/q^2 for non-isotropic beta, (q-2)/q^2 for the 2(q-1) isotropic beta (q || h_m)",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-212"
+      ],
+      "boundary": "Odd m, h = h_m, prime q || h_m, frozen members of level q. Completing the square, conj G_t(0) G_t(beta) = q^2 e(N(beta) tbar/q); the labels t = j y' cover F_q^* except exactly one value t_b. Hence W_{q,beta} = q^-2 (-1 - e(N(beta) tbar_b/q)), |W_{q,beta}| <= 2/q^2, for non-isotropic beta (N(beta) != 0 mod q), and W_{q,beta} = (q-2)/q^2 for the 2(q-1) isotropic beta != 0 (2 is a square mod q as 2y'^2 == 1). If q^2 | h there is no missing label and the values are 1/q^2 and (q-1)/q^2. A bound on the complete Gauss-sum weights only; it does not bound the twisted sums Zhat(beta). That this suppresses the slow-twist danger on m = 3p is a heuristic, not part of the claim. Float check: q = 41 max q^2|W| = 1.994 (non-isotropic), 39 (isotropic); q = 31: 1.000, 30.",
+      "state": "proved",
+      "ledger_status": "ELEMENTARY PROOF + FLOAT CHECK (primelevel_W.py; referee rerun) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/J3/code/primelevel_W.py"
+      ],
+      "formalization": [],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-230",
+      "title": "Line J3 r(q) lemma: for odd m and an odd prime q, q | h_m iff r(q) := ord_q(lambda) divides m",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [],
+      "boundary": "h_m = (epsilon^m + epsilonbar^m)/2 with epsilon = 1 + sqrt2, epsilonbar = -epsilon^-1, lambda = epsilon^2 = 3 + 2 sqrt2. For an odd prime q let r(q) be the multiplicative order of lambda in (Z[sqrt2]/q)^*. For odd m: 2 h_m = epsilon^m - epsilon^-m, so q | h_m iff epsilon^(2m) == 1 iff lambda^m == 1 iff r(q) | m (h is the companion V-type sequence, so this is not the standard U-type rank rule). Corollary: if r(q) = p is an odd prime then q == 1 (mod 2p); on m = 3p (p prime, p != 7) every prime q != 7 dividing h_m has rank p or 3p, and 49 does not divide h_m (lambda has order 21 mod 49). Lean (Bgs.LineJArith: rank_core) proves the ring identity: for a unit epsilon of any commutative ring and odd m, epsilon^m + (-epsilon^-1)^m = 0 iff (epsilon^2)^m = 1; pell49_lambda_order proves the order 21 of lambda mod 49 (coordinates). The passage to Z[sqrt2]/q and the corollary are paper steps. That small-rank levels dominate elsewhere (so m = 3p is the natural subsequence) is numerical/heuristic and not claimed.",
+      "state": "proved",
+      "ledger_status": "ELEMENTARY PROOF + LEAN CORE (Bgs.LineJArith: rank_core, pell49_lambda_order) + EXACT CHECK (ranks.py; integration check lineJ_arith_checks.py: q | h_m iff r(q) | m for odd m <= 61, primes < 3000) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/J3/code/ranks.py",
+        "computations/verification/lineJ/integration_checks/lineJ_arith_checks.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineJArith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-231",
+      "title": "Line J3 Theorem J3 (conditional): frozen R' is false along m = 3p under H-natural and H_arg; unconditionally, if R' holds the conductor-not-in-{1,7} parts must cancel the d = 7 term exponentially on S+",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-206",
+        "BGS-TRACE-212",
+        "BGS-TRACE-213",
+        "BGS-TRACE-225",
+        "BGS-TRACE-227",
+        "BGS-TRACE-228",
+        "BGS-TRACE-230",
+        "BGS-TRACE-232",
+        "BGS-TRACE-233"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, m == 3 (mod 6) (so 7 | h_m), frozen definition of BGS-TRACE-206. m = 3p, p prime, m >= 495 (= max M0(j) over j in 3(Z/56)^*), so j = m mod 168 in 3(Z/56)^* and 7 || h_m. S+ = {m = 3p : cos(arg(B_j xi^m)) >= 0.84431} (inside the window arc of BGS-TRACE-225, 0.84431 > c_win). O-natural_m = sum of the cross parts over (rho in P*, included d, beta of conductor not in {1, 7}) (prime(-power) levels of rank p or 3p, their inherited copies, mixed 7c parts). (1) [P] Identity (BGS-TRACE-212, 213, 228): W'_m = W'_A + phi^-1 [A_m X7_m + X16_m + Q_m + O-natural_m], X7 = d = 7 cross part of (+-2,8), X16 = d = 7 part of (+-2,16) with inherited copies, Q_m >= 0, A_m >= 1. (2) [CA] On S+: X7_m >= (K_j/2) xi_lo^m (BGS-TRACE-225), |X16_m| <= 0.01 (K_min/2) xi_lo^m (BGS-TRACE-227), W'_A >= -4m; hence W'_m >= -4m + 0.99 K_j 1.0184224^m + phi^-1 O-natural_m on S+. (3) [P, external theorems] Under H_arg (BGS-TRACE-233), S+ is infinite, with relative density arccos(0.84431)/pi = 0.18001 among primes p == p0 (mod 56), p >= 167 (Vinogradov's theorem on sum_{p<=x} e(p gamma) = o(pi(x)) for irrational gamma, EXT-VINOGRADOV-1937; prime number theorem in arithmetic progressions, EXT-DAVENPORT-1980; Weyl criterion, EXT-WEYL-1916). [CA] arg xi/2 pi in [0.88797591, 0.88797627] is not a rational with denominator < 1339 (rat_excl.py, outward rounded). Corollary (referee wording): frozen R' (BGS-TRACE-206) is false along m = 3p under H-natural (BGS-TRACE-232) and H_arg (BGS-TRACE-233); unconditionally, if R' holds, the conductor-not-in-{1,7} parts must cancel the d = 7 term exponentially on S+: R' implies phi^-1 O-natural_m <= -0.99 K_j 1.0184^m + 4m + o(m) along S+ (S+ infinite under H_arg). A conditional implication: H-natural and H_arg are open, and BGS-TRACE-206 is NOT refuted.",
+      "state": "conditional",
+      "ledger_status": "CONDITIONAL PROJECT THEOREM (ON THE OPEN HYPOTHESES H-NATURAL, BGS-TRACE-232, AND H_ARG, BGS-TRACE-233): PAPER PROOF OF THE IMPLICATION + COMPUTER-ASSISTED INPUTS (BGS-TRACE-225, 227; rat_excl.py) + EXTERNAL THEOREMS (EXT-VINOGRADOV-1937, EXT-DAVENPORT-1980, EXT-WEYL-1916; CITATION CHECKED AT INTEGRATION) + REFEREE RECOMPUTATION (ref_rat.py; density 0.18001); HYPOTHESES BGS-TRACE-232, 233 OPEN + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [
+        "EXT-VINOGRADOV-1937",
+        "EXT-DAVENPORT-1980",
+        "EXT-WEYL-1916"
+      ],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/J3/code/rat_excl.py",
+        "computations/verification/lineJ/J3/code/assemble16.py",
+        "computations/verification/lineJ/code/assemble_v2.py",
+        "computations/verification/lineJ/referee/j3/ref/ref_rat.py",
+        "computations/verification/lineJ/integration_checks/lineJ_arith_checks.py"
+      ],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "H-natural (BGS-TRACE-232) and H_arg (BGS-TRACE-233) are proved (or S+ is shown infinite and H-natural holds on it); then frozen R' (BGS-TRACE-206) is false along m = 3p. The unconditional dichotomy (R' forces phi^-1 O-natural_m <= -0.99 K_j 1.0184^m + 4m + o(m) along S+) holds as stated."
+    },
+    {
+      "id": "BGS-TRACE-232",
+      "title": "Line J3 hypothesis H-natural: the conductor-not-in-{1,7} part O-natural_m does not cancel the d = 7 term on infinitely many m in S+",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-206",
+        "BGS-TRACE-213",
+        "BGS-TRACE-225",
+        "BGS-TRACE-228"
+      ],
+      "boundary": "Notation of BGS-TRACE-231 (m = 3p, S+, O-natural_m = cross parts of conductor not in {1, 7}, K_j, xi_lo). H-natural: for some delta > 0, O-natural_m >= -(1 - delta) 0.99 (K_j/2) xi_lo^m for infinitely many m in S+. Sufficient form: |O-natural_m| <= e^(o(m)) r^m with r < xi_lo = 2.4587. Open: it requires twisted-rate bounds uniform in the conductor at unboundedly many conductors (BGS-TRACE-219); a Parseval route is circular with R'_A, and no equidistribution theorem for twisted transfer products along hyperbolic toral orbits is available. Evidence is numerical/heuristic only (slow-twist survey, effective rate ~1.0; generic radii <= 1.06). Not a statement about Conjecture R (BGS-TRACE-179) or BGS.",
+      "state": "open",
+      "ledger_status": "OPEN HYPOTHESIS + FLOAT/HEURISTIC EVIDENCE ONLY (slowtwist.py, levels_survey2.py; NOT A PROOF) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/J3/code/slowtwist.py",
+        "computations/verification/lineJ/J3/code/levels_survey2.py"
+      ],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "A proof of the stated one-sided bound for infinitely many m in S+ (e.g. |O-natural_m| <= e^(o(m)) r^m with r < 2.4587), or a disproof (O-natural_m <= -(1-delta) 0.99 (K_j/2) xi_lo^m for all large m in S+, every delta > 0)."
+    },
+    {
+      "id": "BGS-TRACE-233",
+      "title": "Line J3 hypothesis H_arg: arg(xi_2:1)/2 pi is irrational",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "dependencies": [
+        "BGS-TRACE-223"
+      ],
+      "boundary": "xi_2:1 = mu* mu_2:1 (BGS-TRACE-223). H_arg: arg(xi_2:1)/2 pi is not in Q. Certified so far only: arg xi/2 pi in [0.88797591, 0.88797627] contains no rational with denominator < 1339 (least: 1189/1339) (rat_excl.py, outward rounded); a sharper enclosure can raise that bound but can never prove irrationality. H_arg is used in BGS-TRACE-231 only to make S+ infinite; a possible removal route (Dirichlet for p mod 56b plus a gap bound and a finite check for small b) is not carried out.",
+      "state": "open",
+      "ledger_status": "OPEN HYPOTHESIS + COMPUTER-ASSISTED PARTIAL EXCLUSION (DENOMINATORS < 1339; rat_excl.py, referee ref_rat.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261031/lineJ/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineJ/J3/code/rat_excl.py",
+        "computations/verification/lineJ/referee/j3/ref/ref_rat.py"
+      ],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "A proof that arg(xi_2:1)/2 pi is irrational (or that S+ is infinite without it), or an exact rational value."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

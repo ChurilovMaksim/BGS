@@ -1161,6 +1161,57 @@
         "mathematics/fixed-map/lineI_rprime_reduction.md",
         "literature/lineI_sources_20261031.md"
       ]
+    },
+    {
+      "id": "EXT-VINOGRADOV-1937",
+      "authors": [
+        "I. M. Vinogradov"
+      ],
+      "title": "The Method of Trigonometrical Sums in the Theory of Numbers (equidistribution of (p gamma) mod 1 over the primes, Chapter XI; first announced in Dokl. Akad. Nauk SSSR 15 (1937))",
+      "identifier": "Interscience, London-New York, 1954 (English transl. K. F. Roth, A. Davenport); original announcement Dokl. Akad. Nauk SSSR 15 (1937), 291-294 (Russian); no DOI",
+      "pinned_version": "The Method of Trigonometrical Sums in the Theory of Numbers, Interscience 1954, Chapter XI (as cited in Kuipers-Niederreiter, Uniform Distribution of Sequences, Wiley 1974, Chapter 1 Section 2 Notes: Vinogradov [3, 4; 5, Chapter 11])",
+      "locator": "Statement: for irrational gamma, sum_{p <= x} e(p gamma) = o(pi(x)), equivalently (p_n gamma) is u.d. mod 1. Located through Kuipers-Niederreiter Ch. 1 Sec. 2 Notes (text read) and Davenport GTM 74 2nd ed. Sections 25-26 (contents page); the primary text (Doklady note, Chapter XI of the book) was not read and no page is pinned. Iwaniec-Kowalski Theorem 13.6 is only the minor-arc estimate and is not cited as the full statement",
+      "checked_on": "2026-10-31",
+      "dependency_role": "load-bearing external theorem",
+      "mapping": "Applied with gamma = H alpha + k/56 (H != 0, k mod 56, alpha = 3 arg xi_2:1/2 pi irrational under H_arg, BGS-TRACE-233) to get sum_{p <= x, p == p0 mod 56} e(p H alpha) = o(pi(x)), hence equidistribution of (p alpha) over p == p0 (mod 56) with EXT-DAVENPORT-1980 and EXT-WEYL-1916; this makes S+ infinite of relative density 0.18001 in BGS-TRACE-231.",
+      "project_sources": [
+        "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+        "literature/lineJ_sources_20261031.md"
+      ]
+    },
+    {
+      "id": "EXT-WEYL-1916",
+      "authors": [
+        "Hermann Weyl"
+      ],
+      "title": "Ueber die Gleichverteilung von Zahlen mod. Eins",
+      "identifier": "DOI:10.1007/BF01475864",
+      "pinned_version": "Mathematische Annalen 77 (1916), 313-352",
+      "locator": "Weyl criterion: a sequence (x_n) is u.d. mod 1 iff (1/N) sum_{n <= N} e(H x_n) -> 0 for every integer H != 0; textbook form Kuipers-Niederreiter, Uniform Distribution of Sequences (1974), Chapter 1, Theorem 2.1 (text read; KN attribute it to Weyl [2, 4], [4] = this paper). The primary 1916 text was not read; the page of the criterion within pp. 313-352 is not pinned",
+      "checked_on": "2026-10-31",
+      "dependency_role": "load-bearing external theorem",
+      "mapping": "Applied to the subsequence of primes p == p0 (mod 56) (counting measure normalised by #{p <= x, p == p0}) with x_p = p alpha, alpha = 3 arg xi_2:1/2 pi, to pass from the exponential-sum bound (EXT-VINOGRADOV-1937) to equidistribution and hence to the density arccos(0.84431)/pi = 0.18001 of S+ in BGS-TRACE-231.",
+      "project_sources": [
+        "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+        "literature/lineJ_sources_20261031.md"
+      ]
+    },
+    {
+      "id": "EXT-DAVENPORT-1980",
+      "authors": [
+        "Harold Davenport"
+      ],
+      "title": "Multiplicative Number Theory (second edition, revised by Hugh L. Montgomery)",
+      "identifier": "DOI:10.1007/978-1-4757-5927-3",
+      "pinned_version": "Graduate Texts in Mathematics 74, Springer, New York, 2nd ed. 1980",
+      "locator": "Sections 20 and 22, 'The prime number theorem for arithmetic progressions (I), (II)' (pp. 121-125 and 132-134 per the publisher contents page): pi(x; q, a) ~ pi(x)/phi(q) for (a, q) = 1. Section 1 (Dirichlet) gives only infinitude and is not sufficient for the density. Primary text not read; locator from the publisher contents page",
+      "checked_on": "2026-10-31",
+      "dependency_role": "load-bearing external theorem",
+      "mapping": "Applied with q = 56 and (p0, 56) = 1: #{p <= x : p == p0 mod 56} ~ pi(x)/24, so the normalisation in the equidistribution step of BGS-TRACE-231 is by a positive proportion of all primes and the o(pi(x)) of EXT-VINOGRADOV-1937 suffices.",
+      "project_sources": [
+        "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+        "literature/lineJ_sources_20261031.md"
+      ]
     }
   ]
 }

@@ -1,0 +1,7 @@
++ timeout 1200 nice -n 10 /workspace/bgs-derand/phase3/venv/bin/python code/inherit_proof_check.py
+15 2 41 {'n_q': 39, 'n_members_7q': 195, 'n_members_7': 5, 'max_diff': 9.230308407486938e-56}
+15 -2 31 {'n_q': 30, 'n_members_7q': 150, 'n_members_7': 5, 'max_diff': 5.5384912241364295e-56}
+33 2 23 {'n_q': 21, 'n_members_7q': 105, 'n_members_7': 5, 'max_diff': 2.4634316117294903e-56}
+ALL CHECKS PASSED
++ echo 'exit 0'
+exit 0

@@ -1,0 +1,19 @@
++ timeout 1200 nice -n 10 /workspace/bgs-derand/phase3/venv/bin/python code/assemble16.py
+{
+ "R_untwisted_max": 1.6677,
+ "R_twisted_max": 1.2587,
+ "rate_cross": 2.09913399,
+ "rate_sq": 1.58432569,
+ "xi_lo": 2.4586893,
+ "ratio_cross": 0.8537613882323399,
+ "ratio_sq": 0.644378161160908,
+ "K_min": 0.00998476356116227,
+ "M16_eps0.5": 189,
+ "M16inh_eps0.5": 219,
+ "M16_eps0.1": 195,
+ "M16inh_eps0.1": 231,
+ "M16_eps0.01": 213,
+ "M16inh_eps0.01": 243
+}
++ echo 'exit 0'
+exit 0

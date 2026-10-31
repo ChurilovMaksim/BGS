@@ -1,0 +1,7 @@
+b 8 max_tau r(L_tau) 1.9154732036883066 at tau 0.0  min 0.5100148073746971
+  d=7 class (1, 3) max over 8 shifts a/8 (and sign conventions) r= (np.float64(1.5371765799732215), np.float64(0.625))
+  d=7 class (2, 1) max over 8 shifts a/8 (and sign conventions) r= (np.float64(1.2835951356658766), np.float64(0.5))
+  d=7 class (0, 1) max over 8 shifts a/8 (and sign conventions) r= (np.float64(1.2624306294849912), np.float64(0.0))
+  Lyapunov e^gamma (iid uniform tau), runs: [np.float64(0.7929), np.float64(0.8086), np.float64(0.8069), np.float64(0.8114)]
+b 16 max_tau r(L_tau) 1.8399644567740998 at tau 0.0  min 0.709247364972381
+  Lyapunov e^gamma (iid uniform tau), runs: [np.float64(0.8748), np.float64(0.8835), np.float64(0.886), np.float64(0.8879)]

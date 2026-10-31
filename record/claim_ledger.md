@@ -1,5 +1,27 @@
 # Claim ledger
 
+## The d = 7 twisted coefficient in frozen R′ (Line J), 31 October 2026
+
+Project proofs:
+* BGS-TRACE-221 (exact sector law and leading coefficient; exact checks; Lean core: mod-49 period only);
+* BGS-TRACE-222 (sector-level antiunitary map);
+* BGS-TRACE-224 (window lemma; Lean core);
+* BGS-TRACE-226 (Lemma L16);
+* BGS-TRACE-228 (inheritance; Lean counts only);
+* BGS-TRACE-229 (prime-level complete sums);
+* BGS-TRACE-230 (r(q) lemma; Lean ring identity).
+
+Computer-assisted proofs (arb plus float BLAS with a-priori bounds; refereed):
+* BGS-TRACE-223 (certificates);
+* BGS-TRACE-225 (Theorem J; subsequence statement);
+* BGS-TRACE-227 ((±2,16) negligible for m ≥ 243).
+
+BGS-TRACE-231 (Theorem J3) is a conditional implication. It uses EXT-VINOGRADOV-1937, EXT-DAVENPORT-1980 and EXT-WEYL-1916, and rests
+on the open hypotheses BGS-TRACE-232 (H♮) and BGS-TRACE-233 (H_arg).
+
+BGS-TRACE-206 (frozen R′) stays **open**. It is not refuted: the conductor ∉ {1, 7} terms are not controlled. Numerics (m = 201…453)
+and the strategy assessment are recorded in the note only, not as claims.
+
 ## State change: BGS-TRACE-204 (Line G G3) open → proved, 31 October 2026
 
 Owner decision in the audit of PR #60. The G3 form of the dilution identity follows from Prop I2′ (BGS-TRACE-212, proved for every odd d | h) by completing the square: G_t(β) = e(t̄·Nm β/d)·G_d(t) (`mathematics/fixed-map/lineI_rprime_reduction.md` §3). It is checked against brute force for prime and composite d (217, 287, 961, 1271, 49, 1673 and others; ≤ 8.4e−15), with a negative control. Dependency added: BGS-TRACE-212. The main-term approximation |Z|² ≈ |Z_ρ|²/d² stays unbounded and is not claimed.

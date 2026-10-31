@@ -1180,7 +1180,7 @@
       "id": "BGS-TRACE-206",
       "state": "open",
       "source": "mathematics/fixed-map/resonance_classification_lineG.md",
-      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001."
+      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed."
     },
     {
       "id": "BGS-TRACE-207",
@@ -1265,6 +1265,84 @@
       "state": "open",
       "source": "mathematics/fixed-map/lineI_rprime_reduction.md",
       "disposition": "31 October 2026 (Line I): open conjecture R'_A (amended mean law); float and heuristic evidence only; TRACE-206 keeps its frozen definition. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-221",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J): proved (paper proof + exact Z[zeta_8]/Z[zeta_7] checks + Lean core: mod-49 period only); exact sector law and leading d = 7 coefficient B_C; sectors 2, 6 cancel exactly, 0, 4 survive; period 168; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-222",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J): proved (paper proof); sector-level antiunitary map RK between rho = (2,8) and (-2,8); refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-223",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J): proved (computer-assisted, arb + float BLAS); count/disc/rest certificates, |xi_2:1| >= 2.4586893 > sqrt(lambda); refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-224",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J): proved (elementary + Lean core: real-line step and constants); window lemma N = 6; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-225",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J): proved (computer-assisted); Theorem J: frozen d = 7, (+-2,8) contribution >= K_j 1.0184224^m/m with both signs in every 6 consecutive members of each class mod 168, m == 3 mod 6, m >= M0(j); subsequence statement; O_m not controlled; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-226",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J3): proved (paper proof + exact block check); Lemma L16 for rho = (+-2,16) on exact 2-dimensional blocks; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-227",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J3): proved (computer-assisted, 576 rest certificates); (+-2,16) d = 7 part <= 1% of (K_min/2) xi_lo^m for m >= 243 incl. inherited copies; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-228",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J3): proved (paper proof + exact check + Lean core: counts only); inheritance theorem for coprime odd c, e; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-229",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J3): proved (elementary); prime-level complete-sum bound; does not bound twisted sums; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-230",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J3): proved (elementary + Lean core: ring identity, order 21 mod 49); r(q) lemma for the companion sequence h_m; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-231",
+      "state": "conditional",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J3): conditional (implication proved (paper + computer-assisted inputs + external theorems EXT-VINOGRADOV-1937, EXT-DAVENPORT-1980, EXT-WEYL-1916; conditional on open hypotheses); frozen R' false along m = 3p under the open hypotheses H-natural (TRACE-232) and H_arg (TRACE-233); unconditionally R' forces exponential cancellation by conductor-not-in-{1,7} parts on S+; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-232",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J3): open hypothesis H-natural; float and heuristic evidence only. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-233",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
+      "disposition": "31 October 2026 (Line J3): open hypothesis H_arg (arg xi/2 pi irrational); denominators < 1339 excluded (computer-assisted). Does not close TRACE-206, TRACE-148 or BGS-001."
     }
   ],
   "invariants": [
@@ -1296,9 +1374,12 @@
       "EXT-BT-1971",
       "EXT-RS-1962",
       "EXT-BHV-2001",
-      "EXT-CARMICHAEL-1913"
+      "EXT-CARMICHAEL-1913",
+      "EXT-VINOGRADOV-1937",
+      "EXT-WEYL-1916",
+      "EXT-DAVENPORT-1980"
     ],
-    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Twenty-one explicitly reviewed later inputs are admitted (the last three, EXT-RS-1962, EXT-BHV-2001 and EXT-CARMICHAEL-1913, on 2026-10-31 in the owner audit of PR #60, Line I); source review dates and limits remain in the selected snapshot.",
+    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Twenty-four explicitly reviewed later inputs are admitted (EXT-RS-1962, EXT-BHV-2001 and EXT-CARMICHAEL-1913 on 2026-10-31 in the owner audit of PR #60, Line I; the last three, EXT-VINOGRADOV-1937, EXT-WEYL-1916 and EXT-DAVENPORT-1980, on 2026-10-31 in the Line J integration); source review dates and limits remain in the selected snapshot.",
     "source_reviews": [
       "literature/abel_gaussian_sources_20261016.md",
       "literature/chat_integration_sources_20261016.md",
@@ -1306,7 +1387,8 @@
       "literature/wick_poisson_sources_20261016.md",
       "literature/bowen_ruelle_trace_closure_20261021.md",
       "literature/arithmetic_dependency_closure_20261022.md",
-      "literature/lineI_sources_20261031.md"
+      "literature/lineI_sources_20261031.md",
+      "literature/lineJ_sources_20261031.md"
     ]
   },
   "historical_claim_amendments": [

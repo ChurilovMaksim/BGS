@@ -1,5 +1,27 @@
 # BGS research brief
 
+## The d = 7 twisted coefficient in frozen R′ (Line J), 31 October 2026
+
+Line J decides the question that Line I left open.
+* **Exact leading coefficient.** An exact sector decomposition of the automaton shows that every top twisted orbit has coefficient
+  exactly (8th root of unity)/2 ([TRACE-221](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)).
+* **Cancellation and survival.** In the frozen d = 7 term, the classes in sectors 2 and 6 (including the leading class 1:3) cancel
+  exactly between ρ = (2,8) and (−2,8), by an antiunitary sector map ([TRACE-222](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)). Classes 2:1 and 0:1
+  survive.
+* **Theorem J.** With certified spectra ([TRACE-223](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)) and a window lemma
+  ([TRACE-224](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)), Theorem J ([TRACE-225](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md), computer-assisted) proves the
+  following. The frozen d = 7, (±2,8) contribution to W′/m oscillates with growth ≥ 1.0184224^m, taking both signs in every 6
+  consecutive members of each class mod 168.
+* **Line J3.** The (±2,16) members are controlled ([TRACE-226](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md),
+  [TRACE-227](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)). An inheritance theorem ([TRACE-228](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)), prime-level complete sums
+  ([TRACE-229](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)) and the r(q) lemma ([TRACE-230](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)) isolate the remaining
+  conductor ∉ {1, 7} part O♮.
+* **Theorem J3** ([TRACE-231](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)) is conditional. Frozen R′ is false along m = 3p under the open hypotheses
+  H♮ ([TRACE-232](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)) and H_arg ([TRACE-233](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)). Unconditionally, if R′ holds, O♮
+  must cancel the d = 7 term exponentially on S⁺.
+
+R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
+
 ## Reduction of Conjecture R′ and the d = 7 twisted certificates (Line I), 31 October 2026
 
 [TRACE-213](mathematics/fixed-map/lineI_rprime_reduction.md) reduces Conjecture R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md), frozen definition, k1 kick at η = 2) exactly to a non-resonant equidistribution statement (E″), a tail statement (T″) and the dilation remainder (D), using the relative phase split ([TRACE-211](mathematics/fixed-map/lineI_rprime_reduction.md)) and the dilation-coset law with its per-member Gauss-sum formula ([TRACE-212](mathematics/fixed-map/lineI_rprime_reduction.md), Lean core). For d = 7, [TRACE-215](mathematics/fixed-map/lineI_rprime_reduction.md) certifies that the square part of (D) is ≤ 0.01 for m ≥ 321 (ρ = (±2,8) only; the (±2,16) level-7 members are not controlled), using lifted twisted operators and the exact intertwiners of [TRACE-216](mathematics/fixed-map/lineI_rprime_reduction.md). [TRACE-217](mathematics/fixed-map/lineI_rprime_reduction.md) certifies a twisted radius r_tw > 1.262 > √λ/μ₀, so bounding the cross part by operator radii cannot work. [TRACE-218](mathematics/fixed-map/lineI_rprime_reduction.md) (aliasing identity) and [TRACE-219](mathematics/fixed-map/lineI_rprime_reduction.md) (unbounded prime support of h_m, modulo BHV) record two structural facts. The amended Conjecture R′_A ([TRACE-220](mathematics/fixed-map/lineI_rprime_reduction.md)) is open. R′ stays open. A heuristic, not a proof, suggests that the frozen d = 7 term may make R′ fail at m of a few hundred.

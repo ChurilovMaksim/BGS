@@ -14,16 +14,16 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-31**. **304 registered claims.**
+**2026-10-31**. **317 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 248 |
+| proved | 258 |
 | verification-pending | 15 |
-| conditional | 15 |
-| open | 25 |
+| conditional | 16 |
+| open | 27 |
 | refuted | 1 |
-| **Total** | **304** |
+| **Total** | **317** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -44,12 +44,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 0 | 23 |
 | RET | 3 | 0 | 1 | 0 | 0 | 4 |
-| TRACE | 150 | 13 | 10 | 21 | 1 | 195 |
-| **Total** | 248 | 15 | 15 | 25 | 1 | **304** |
+| TRACE | 160 | 13 | 11 | 23 | 1 | 208 |
+| **Total** | 258 | 15 | 16 | 27 | 1 | **317** |
 
 ## Open programme obligations
 
-25 registered claims are open. Their closure
+27 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -80,6 +80,8 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-206` | Line G: Conjecture R' (corrected mean law for the k1 kick at eta = 2) with a pre-registered m = 17 test | [mathematics/fixed-map/resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
 | `BGS-TRACE-210` | Conjecture R_NSW: W~rest_m(eta) = o(m) along m with h_m prime | [mathematics/fixed-map/derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
 | `BGS-TRACE-220` | Line I: Conjecture R'_A (amended mean law with actual dilation-member values) for the k1 kick at eta = 2 | [mathematics/fixed-map/lineI_rprime_reduction.md](mathematics/fixed-map/lineI_rprime_reduction.md) |
+| `BGS-TRACE-232` | Line J3 hypothesis H-natural: the conductor-not-in-{1,7} part O-natural_m does not cancel the d = 7 term on infinitely many m in S+ | [mathematics/fixed-map/lineJ_d7_twisted_coefficient.md](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) |
+| `BGS-TRACE-233` | Line J3 hypothesis H_arg: arg(xi_2:1)/2 pi is irrational | [mathematics/fixed-map/lineJ_d7_twisted_coefficient.md](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) |
 
 ## Corrections
 
@@ -93,10 +95,10 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 201 follow-on claims adopted after
+It records 214 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
-external-dependency extension of 21 external IDs.
+external-dependency extension of 24 external IDs.
 
 ## Reading the status surfaces
 

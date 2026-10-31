@@ -1,5 +1,26 @@
 # Theorem families and their limits
 
+## The d = 7 twisted coefficient in frozen R′ (Line J), 31 October 2026
+
+* [TRACE-221](fixed-map/lineJ_d7_twisted_coefficient.md) (proved; exact checks; Lean core: mod-49 period): every top twisted orbit has coefficient exactly (8th
+  root of unity)/2. In the ρ = (2,8) + (−2,8) combination, the sectors 2 and 6 (including class 1:3) cancel exactly, and the sectors
+  0 and 4 (classes 2:1 and 0:1) survive with |B| = |W|/2.
+* [TRACE-222](fixed-map/lineJ_d7_twisted_coefficient.md) (proved): sector-level antiunitary map.
+* [TRACE-223](fixed-map/lineJ_d7_twisted_coefficient.md) (proved, computer-assisted): |μ₂:₁| ∈ [1.28359503, 1.28359523], and |μ*μ₂:₁| ≥ 2.4586893 > √λ.
+* [TRACE-224](fixed-map/lineJ_d7_twisted_coefficient.md) (proved; Lean core): window lemma.
+* [TRACE-225](fixed-map/lineJ_d7_twisted_coefficient.md) (proved, computer-assisted): **Theorem J**. The frozen d = 7, (±2,8) contribution to W′/m is
+  ≥ K_j·1.0184224^m/m in absolute value, with each sign, for some m in every 6 consecutive members of each class j mod 168
+  (m ≡ 3 mod 6, m ≥ M0(j) ∈ [297, 495]).
+* [TRACE-226](fixed-map/lineJ_d7_twisted_coefficient.md) and [TRACE-227](fixed-map/lineJ_d7_twisted_coefficient.md) (proved; 227 computer-assisted): the (±2,16) members at d = 7 are
+  ≤ 1 % for m ≥ 243.
+* [TRACE-228](fixed-map/lineJ_d7_twisted_coefficient.md), [TRACE-229](fixed-map/lineJ_d7_twisted_coefficient.md) and [TRACE-230](fixed-map/lineJ_d7_twisted_coefficient.md) (proved): inheritance, prime-level complete
+  sums and the r(q) lemma.
+* [TRACE-231](fixed-map/lineJ_d7_twisted_coefficient.md) (conditional): frozen R′ is false along m = 3p under H♮ ([TRACE-232](fixed-map/lineJ_d7_twisted_coefficient.md), open) and
+  H_arg ([TRACE-233](fixed-map/lineJ_d7_twisted_coefficient.md), open). Unconditionally, if R′ holds, the conductor ∉ {1, 7} parts must cancel the d = 7 term
+  exponentially on S⁺.
+
+Limits: [TRACE-206](fixed-map/resonance_classification_lineG.md) (R′) stays open and is not refuted.
+
 ## Reduction of Conjecture R′ and the d = 7 twisted certificates (Line I), 31 October 2026
 
 [TRACE-211](fixed-map/lineI_rprime_reduction.md) (proved): relative phase split. [TRACE-212](fixed-map/lineI_rprime_reduction.md) (proved; Lean core): the dilation-coset L² law and the per-member Gauss-sum formula Z_t = ω_t Z0/d + Δ_t for every odd d | h_m. [TRACE-213](fixed-map/lineI_rprime_reduction.md) (proved): W′_m = (non-resonant sum) + φ⁻¹ Σ Dev_d(ρ) exactly, so R′ follows from (E″), (T″) and (D); none of these is proved. [TRACE-214](fixed-map/lineI_rprime_reduction.md) (proved): Fourier/Ramanujan expansion of weighted horocycle sums. [TRACE-215](fixed-map/lineI_rprime_reduction.md) (proved, computer-assisted): the d = 7 square term is ≤ 0.01 for every m ≡ 3 (mod 6), m ≥ 321 (k1 kick, η = 2; ρ = (±2,8) only, the (±2,16) level-7 members are not controlled). [TRACE-216](fixed-map/lineI_rprime_reduction.md) (proved): exact monomial intertwiners. [TRACE-217](fixed-map/lineI_rprime_reduction.md) (proved, computer-assisted): three simple top twisted eigenvalues with 1.262 < |μ| < 1.45, so r_tw > √λ/μ₀ and the operator-radius route to the d = 7 cross term fails. [TRACE-218](fixed-map/lineI_rprime_reduction.md) (proved): aliasing/Möbius identity. [TRACE-219](fixed-map/lineI_rprime_reduction.md) (proved modulo BHV): h_m has a new odd prime for every m ≥ 16. [TRACE-220](fixed-map/lineI_rprime_reduction.md) (open): Conjecture R′_A. Limits: [TRACE-206](fixed-map/resonance_classification_lineG.md) (R′) stays open and is neither proved nor disproved; c(β) ≠ 0 is not certified.
@@ -507,7 +528,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**304 registered claims: 248 proved, 15 verification-pending, 15 conditional, 25 open, 1 refuted.**
+**317 registered claims: 258 proved, 15 verification-pending, 16 conditional, 27 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -673,7 +694,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (195 claims)
+### TRACE family (208 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -872,5 +893,18 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-218` | **PROVED** | Line I: aliasing (Moebius) identity for the unit-residue mean F_m |
 | `BGS-TRACE-219` | **PROVED** | Line I: unbounded prime support of h_m (a new odd prime for every m >= 16; every finite prime set fails for all large m) |
 | `BGS-TRACE-220` | **OPEN** | Line I: Conjecture R'_A (amended mean law with actual dilation-member values) for the k1 kick at eta = 2 |
+| `BGS-TRACE-221` | **PROVED** | Line J Prop J-C: exact sector law, exact leading d = 7 coefficient B_C, exact cancellation of sectors 2, 6 and survival of sectors 0, 4 for rho = (+-2,8) |
+| `BGS-TRACE-222` | **PROVED** | Line J: sector-level antiunitary map sigma(V^(-2)_{beta,a+4}) = conj sigma(V^(+2)_{beta,a}) (and likewise for E) for the (+-2,8) twisted sector operators |
+| `BGS-TRACE-223` | **PROVED** | Line J: certified top-orbit and rest certificates for the d = 7 sector operators: \|mu_2:1\| in [1.28359503, 1.28359523], \|xi\| = \|mu* mu_2:1\| >= 2.4586893 > sqrt(lambda) |
+| `BGS-TRACE-224` | **PROVED** | Line J window lemma: for theta in [theta_lo, theta_up] subset (0, pi], among N = ceil(2 pi/theta_lo) consecutive k some cos(alpha + k theta) >= cos(theta_up/2) and some <= -cos(theta_up/2) |
+| `BGS-TRACE-225` | **PROVED** | Line J Theorem J: the frozen d = 7, (+-2,8) contribution oscillates with growth >= 1.0184224^m: both signs in every 6 consecutive members of each class mod 168 (m == 3 mod 6) |
+| `BGS-TRACE-226` | **PROVED** | Line J3 Lemma L16: lifted trace formula for rho = (+-2,16) restricted to the exact 2-dimensional monomial blocks |
+| `BGS-TRACE-227` | **PROVED** | Line J3: the d = 7 contribution of rho = (+-2,16) (with inherited copies) is <= 1% of (K_min/2) xi_lo^m for m >= 243 |
+| `BGS-TRACE-228` | **PROVED** | Line J3 inheritance theorem: W_{ce, e beta'} = (n_e/e^2) W_{c, beta'} for coprime odd c, e with ce \| h_m (composite levels carry positive multiples of lower-level class sums) |
+| `BGS-TRACE-229` | **PROVED** | Line J3: prime-level complete-sum bound: \|W_{q,beta}\| <= 2/q^2 for non-isotropic beta, (q-2)/q^2 for the 2(q-1) isotropic beta (q \|\| h_m) |
+| `BGS-TRACE-230` | **PROVED** | Line J3 r(q) lemma: for odd m and an odd prime q, q \| h_m iff r(q) := ord_q(lambda) divides m |
+| `BGS-TRACE-231` | **CONDITIONAL** | Line J3 Theorem J3 (conditional): frozen R' is false along m = 3p under H-natural and H_arg; unconditionally, if R' holds the conductor-not-in-{1,7} parts must cancel the d = 7 term exponentially on S+ |
+| `BGS-TRACE-232` | **OPEN** | Line J3 hypothesis H-natural: the conductor-not-in-{1,7} part O-natural_m does not cancel the d = 7 term on infinitely many m in S+ |
+| `BGS-TRACE-233` | **OPEN** | Line J3 hypothesis H_arg: arg(xi_2:1)/2 pi is irrational |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

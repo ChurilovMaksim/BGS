@@ -2,9 +2,9 @@
 
 The active source graph consists of **33 modules listed below**
 (29 pre-existing modules and 4 fixed-diagonal-kick modules added in PR #56),
-**39 adapted Aristotle/Mathlib modules** and **27 further finite-certificate
+**39 adapted Aristotle/Mathlib modules** and **28 further finite-certificate
 modules imported directly by `Bgs.lean`** (listed below; 20 on main plus `LineE.lean` and
-`LineEResonance.lean` added in PR #57, `LineF.lean` and `LineG.lean` added for Lines F and G, `LineH.lean` added for Line H, and `LineI.lean` and `LineIArith.lean` added for Line I), with **99 leaf modules**
+`LineEResonance.lean` added in PR #57, `LineF.lean` and `LineG.lean` added for Lines F and G, `LineH.lean` added for Line H, `LineI.lean` and `LineIArith.lean` added for Line I, and `LineJArith.lean` added for Line J; the five Line D orbit-pair modules `LineDDefs`, `LineDOrbitPair`, `LineDBridge`, `LineDParity`, `LineDOrbitPairFull` added on main in b96ef6bd are imported by `Bgs.lean` but not yet counted here), with **100 leaf modules**
 and two aggregators (`Bgs.lean` and `Bgs.Mathlib`). They share the original Lean 4.33.1/Lake project: `Bgs.lean` imports `Bgs.Mathlib`, which reaches every new module. No second project root or duplicate proof tree is maintained.
 
 The [Mathlib coverage map](MATHLIB_LAYER_RU.md) links individual declarations to existing theorem families and their exact proof scope. The [integration receipt](../evidence/formalization/aristotle_20261027/receipt.json) separates the earlier 8,776-job Lean build and 589 public-declaration axiom checks from the later GitHub merge. This is not an independent verification of the full analytic corpus, and it does not close BGS.
@@ -106,6 +106,7 @@ imports Mathlib, which this project does not vendor as in-repo sources (`lake-ma
 | `LineH.lean` | `Bgs.LineH` (BGS-TRACE-207, 209): the parity steps of the κ lemma (`h_odd`, `yp_odd`, `k_odd`, `kappa_odd`, `inv49_mod8`), the Gauss-sum residues mod 8 (`sq_residues_mod8`, `shift4`), and the generic chain lemmas `geom_tail` (monotone propagation in m) and `dom_lower` (triangle step). No certificate numbers enter Lean; the Gauss-sum evaluation, the operator theory and the arb certificates are not formalised. |
 | `LineI.lean` | `Bgs.LineI` (BGS-TRACE-212): the finite algebra of the dilation-coset L² law: `cross_term`, `sum_N_sq` (Σ_u N(u)² = d³ + d² − d), `coset_decomp`, and the norm counts `norm_count_7` (Z/7) and `norm_count_23_zero` (Z/23). The Fourier step, the congruence P ≡ y′Nm(α_n) and Prop I2′ are paper proofs. |
 | `LineIArith.lean` | `Bgs.LineIArith` (BGS-TRACE-212, 219; BGS-TRACE-216 cites `seven_dvd_nsw_iff` only as an auxiliary fact): the Pell identity h_m² − 2U_m² = (−1)^m, `two_isSq_mod` (ε = +1 for odd m), `seven_dvd_nsw_iff` (7 ∣ h_m ↔ m ≡ 3 mod 6), `lucasU_two_mul` (U_2m = 2h_mU_m), `primitive_dvd_nsw` and `finite_set_fails`. The primitive-divisor theorem (Bilu–Hanrot–Voutier) is an explicit **hypothesis** and is not formalised. No certificate numbers enter Lean. |
+| `LineJArith.lean` | `Bgs.LineJArith` (BGS-TRACE-221, 224, 228, 230; arithmetic cores only): `rank_core` (for a unit ε of a commutative ring and odd m, ε^m + (−ε⁻¹)^m = 0 ↔ (ε²)^m = 1), `pell49_period` and `pell49_periodic` (the coordinates of (1+√2)^m mod 49 have exact period 42), `pell49_lambda_order` (λ has order 21 mod 49), `count_excl_one` and `count_units` (q − 2 and q − 1 residues in ZMod q), `window_step` (real-line stepping core of the window lemma) and `window_N` (⌈2π/1.130677114⌉ = 6, (2π − 1.131054118)/θ ≤ 5). The sector law, the certificates, Theorem J, L16, inheritance, J3 and the passage to ℤ[√2]/q are **not** formalised. |
 
 The former isolated `CayleyExceptionalK23.lean` was folded into
 `CayleyEnergy.lean`; generic and exceptional controls share one implementation.
