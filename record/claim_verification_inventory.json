@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "3388b0e2b18df869feb3a41b15c56de413ec885c",
+ "source_blob_sha": "282d3a69258d2220dae226f00cd39e79b26eaee8",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -9259,7 +9259,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 5,
-    "formalization": 6
+    "formalization": 7
    },
    "evidence": [
     "evidence/executions/20261029/lineB-derandomized/receipt.json"
@@ -9277,7 +9277,8 @@
     "formalization/Bgs/LineBGauss.lean",
     "formalization/Bgs/LineBExpand.lean",
     "formalization/Bgs/LineBTsum.lean",
-    "formalization/Bgs/LineDDmBridge.lean"
+    "formalization/Bgs/LineDDmBridge.lean",
+    "formalization/Bgs/LineBTraceM1.lean"
    ],
    "ledger_status": "ANALYTIC PROOF + EXACT FINITE COMPUTATION (m<=8) + LEAN FINITE INSTANCES (H_m X_m = D_m I, tables) + INDEPENDENT REFEREE AUDIT",
    "boundary": "U = K_eta M_N with K_eta = diag e^{i eta f(q/N)}, f the fixed real 32-mode trigonometric position kick, S=[[3,4],[2,3]], odd N with gcd(N,D_m)=1, fixed m. Theorem 1: Tr(K_eta M)^m = Tr M^m * sum_n Phihat(n) e(Q(n)/N) e(-nu_N y'_m Nm(alpha_n)/g'_m), nu_N = N^{-1} mod g'_m, alpha_n in Z[lambda], lambda=3+2sqrt2; hence Tr U^m / Tr M^m = Z_m(nu_N; eta) + O(1/N). Theorem 3 / Prop R: orbit form over the q-sequence group Fix(T^m), T=[[0,1],[-1,6]], with |k_nu|^2 in {0,|V[4]|/D}. Theorem 2: the N-average equals the nu-average F_m(eta). The eta-Bohr mean B_m equals 2m for m<=8 (m != 6 treated exactly, distinctness of S-classes certified by an exact cyclotomic class computation; F1, F2 wording). Time reversal U^T = K^{-1} U K is the alpha=delta case of BGS-TRACE-131 and is cited, not re-claimed. Pointwise self-averaging in one N is false (|Tr U_N^m|^2 is asymptotically a non-constant function of N^{-1} mod g'_m). Fixed m only; diagonal (l=0) kick only; nothing at tau = m/N = O(1).",
