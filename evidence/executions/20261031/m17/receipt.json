@@ -1,0 +1,42 @@
+{
+ "schema": "bgs-m17-evidence-receipt-v1",
+ "base": "ChurilovMaksim/BGS origin/main aa4d517b (merge of PR #61)",
+ "branch": "m17-evidence",
+ "prepared_on": "2026-10-31",
+ "claims_annotated": {
+  "BGS-TRACE-195": "proved (scope m = 11, 13 unchanged)",
+  "BGS-TRACE-196": "conditional (unchanged)",
+  "BGS-TRACE-179": "refuted (unchanged)",
+  "BGS-TRACE-206": "open (unchanged)"
+ },
+ "sources": {
+  "lineE": "/workspace/bgs-next/lineE/step2/cert_class.jsonl, cert_m17_full.out (author scratch, box)",
+  "lineG": "/workspace/bgs-lineG/logs/eval17_full.{log,json}, formula_table_full_17.json, batch_orb.log; REPORT.md section 5 (REPORT.md sha256 6ae77c44a9778e5b6521f8fcebc4fdb5a9eb7e8911e6b4115f8d731c40caa94e)"
+ },
+ "kernel_binary_sha256": "ed4186a89f25bc6b656ae8dc64bdd984e1ce364dea0cbfa0c540b0346add2cf9",
+ "kernel_fma_instructions": 0,
+ "excluded": {
+  "Torb_full_m17.bin": "86439dfe2db302be5df7aeecbf38ce828c3eb51dce02c46560701d61cb2aa5be",
+  "zres (binary)": "ed4186a89f25bc6b656ae8dc64bdd984e1ce364dea0cbfa0c540b0346add2cf9"
+ },
+ "nonclaims": [
+  "No claim changes state; BGS-TRACE-195 proved scope stays m = 11, 13.",
+  "The m = 17 certificate is from the author implementation only and was not independently reproduced or refereed.",
+  "Single-m numerics say nothing about m -> infinity.",
+  "The full-kick Line G tests are not tests of Conjecture R' (k1 kick); the k1 m = 17 outcome is not registered."
+ ],
+ "sha256": {
+  "evidence/executions/20261031/m17/README.md": "4c2c974c368303789d2aea9d75024f2ff7ed75e29d2f0c32c2432b06a70adcba",
+  "evidence/executions/20261031/m17/check/m17_crosscheck.log": "855a7c2424f6095e9873a490e3f8b4eca3db4aea6ffb7399cd5bef20c4a2ca11",
+  "evidence/executions/20261031/m17/check/m17_crosscheck.py": "6a5a905e1cec6f5f66f281563edbc318f4e4cf5b1b3bf911773e1cd0e8786b77",
+  "evidence/executions/20261031/m17/lineE/PROVENANCE.txt": "76ae9f5105b9082e95f6f34ef77773d9e7a56e268dffd0afad553a134441b32f",
+  "evidence/executions/20261031/m17/lineE/cert_class.jsonl": "caebb1c5b9a29544223aeb185494c1f7b4986618b9f0380557265a919a1170c6",
+  "evidence/executions/20261031/m17/lineE/cert_m17_full.out": "bf8ef0be4cd464d71fdc1a7647a5f3e70c1c5a4e3ebb1ceb403eeb9ae729e297",
+  "evidence/executions/20261031/m17/lineG/EXCLUDED_BINARIES.txt": "9a59689da8f886cd7c5d231b6d4f7fb0cb529c1b3c402b6d9f224f08555270cb",
+  "evidence/executions/20261031/m17/lineG/REPORT_section5.md": "70e93cad72de0d2898942dde93094cbd6a0773d782ddf8feae7ee003914ef1e1",
+  "evidence/executions/20261031/m17/lineG/batch_orb.log": "ed87e9da6c3cf3f8258f51724c2f76a8ea8f7d2b67b50662fa335224872b9467",
+  "evidence/executions/20261031/m17/lineG/eval17_full.json": "25050955af0c3c16141f61aea25342c58b31f91ae1c15952fdbb7f6f19c6a4f7",
+  "evidence/executions/20261031/m17/lineG/eval17_full.log": "dc7d75e7bb4da04befeaccbde1463b4bae81c8e7df3f6d63c1995f904d429dbd",
+  "evidence/executions/20261031/m17/lineG/formula_table_full_17.json": "56b1cd2ba82c53a7733f3a87a95bb2316268724e5e316f39217ac540b46fb9d2"
+ }
+}

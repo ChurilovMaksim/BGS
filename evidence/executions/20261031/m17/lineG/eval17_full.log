@@ -1,0 +1,17 @@
+86439dfe2db302be5df7aeecbf38ce828c3eb51dce02c46560701d61cb2aa5be  ../logs/Torb_full_m17.bin
+predictions sha256 fa8505f503790ae2c6265f917debdd4b023b2c50b79412daac7d14f72b8aa344
+full m=17 h=1607521 phi=1591812 F/2m=25.7986
+  top residues: [(2649129, '7.0474e+08', (2, 392)), (565913, '5.6655e+08', (-2, 392)), (2128325, '2.0291e+06', (2, 784)), (1086717, '1.5254e+06', (-2, 784)), (475695, '3.2357e+05', (2, 196)), (2739347, '2.6353e+05', (-2, 196)), (308079, '7.3703e+04', (1515, 407)), (370507, '7.2005e+04', (81, 269)), (2087277, '7.1467e+04', (561, 707)), (2149705, '7.1378e+04', (399, 169)), (214437, '7.1318e+04', (1513, 15)), (2336989, '7.1296e+04', (1116, 238))]
+  full (2,392) observed 704735761.4261316 LineE registered (sign convention to be matched) 704800000.0
+  full (-2,392) observed 566546213.2095506 LineE registered (sign convention to be matched) 566600000.0
+  primary (2,784) ±392: observed 2.02912e+06 predicted band [1.33333e+06,3e+06] -> PASS
+  primary (-2,784) ±392: observed 1.52545e+06 predicted band [1.33333e+06,3e+06] -> PASS
+  primary (2,196) ±98: observed 323572 predicted band [150000,600000] -> PASS
+  primary (-2,196) ±98: observed 263531 predicted band [150000,600000] -> PASS
+  d103 dilution mean (full): observed 60115.3 predicted band [40000,90000] -> PASS
+  H=8: removed 0.105% bulk F/2m=2.0054 W'/m=+0.011 Ex2=13.442 max x=698.5
+  bulk F/2m (H=8): observed 2.0054 predicted band [1.95,2.15] -> PASS
+  H=16: removed 0.112% bulk F/2m=2.0054 W'/m=+0.011 Ex2=13.442 max x=698.5
+  H=32: removed 0.143% bulk F/2m=2.0054 W'/m=+0.011 Ex2=13.443 max x=698.5
+  H=64: removed 0.260% bulk F/2m=2.0051 W'/m=+0.010 Ex2=13.441 max x=698.5
+m=17 F2m=25.7986 RMT2m=2.0000 Res_pred_2m=23.7788 Res_act_2m=23.7799 Wrest_over_m=47.5971 Wprime_pred_over_m=0.0396 Wprime_act_over_m=0.0374 n_res=408
