@@ -1,0 +1,9 @@
+## $ python3 computations/verification/lineN4/integration_checks/check_schur_xy.py
+{"run": "b8_schur_E", "cert_fields_identical": true, "d_identical_to_author": true, "d_equals_sqrt_x_over_y": true, "x_pos": true, "y_pos": true, "f_core": 0.4915878223890123, "normR_bound": 13082.284724704154}
+{"run": "b8_schur_V", "cert_fields_identical": true, "d_identical_to_author": true, "d_equals_sqrt_x_over_y": true, "x_pos": true, "y_pos": true, "f_core": 3.9319753677912717, "normR_bound": 17862.79855234551}
+SCHUR_XY_OK
+exit 0
+## $ python3 computations/verification/lineN4/integration_checks/blocks16_exact_inner.py
+{'blocks': 128, 'inner_products_zero': True, 'norms': [32, 64], 'supports': {'disjoint': 64, 'identical': 64, 'other': 0}, 'parity_counts': {0: 64, 1: 64}, 'distinct_actions': 16}
+BLOCKS16_EXACT_OK
+exit 0

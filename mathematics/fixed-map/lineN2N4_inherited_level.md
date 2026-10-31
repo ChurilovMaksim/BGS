@@ -60,7 +60,7 @@ Amended (state unchanged):
 for infinitely many m ∈ S⁺, m ≥ m₁ (BGS-TRACE-245), every family has Ω^F_m ≤ e^{o(m)}((1−δ)T_F)^m, then the open-range cross part is
 o(ξ_lo^m), H♮_mid holds and frozen R′ is false. Families (N2-F4): the upper bound |Z_ρ| ≤ Cμ_F^m with μ_F T_F ≤ ξ_lo (μ*·T = 2.458680
 < ξ_lo; μ_F ≤ 1.6677 for (±2,16), BGS-TRACE-253). Levels (N2-F3): the Weil range and composite levels below c_W p² by BGS-TRACE-245
-and the "open" definition of BGS-TRACE-246. Non-triviality: the N3 slow orbit contributes ≤ 1.0644^m (Lean `Bgs.LineN2.slow`).
+and the "open" definition of BGS-TRACE-246. Slow orbit: the β = 1 slow orbit of Theorem N3 (BGS-TRACE-283) contributes ≤ 1.0644^m (Lean `Bgs.LineN2.slow`), so it does not by itself falsify the hypothesis; see the Line N5 caveat in §3.
 
 ## 2. Theorem B, Theorem C, Proposition E (BGS-TRACE-288–290)
 A^p − 1 = h_p B, det B = −4; G_p = (1/h_p)Z²/Z² has index 4 in Fix(A^p) (Lean `idx3`, `idx5`; [N] p ≤ 47). L3 S4 at the composite
@@ -76,6 +76,8 @@ L_τT_σ = T_{λσ}L_{τ−κλσ}, L_τG_ν = G_{ν/λ}L_{τ+ν/λ} makes a pro
 **up to a unimodular scalar** (N4-F1). No bound on the isotropic part is known (298): M6 does not cancel the dominant {4}×{4} terms, and
 one-parameter orbits of length p ≈ 2log q are beyond BGK/Bourgain and beyond the Lemma Q lag.
 
+Line N5 caveat (not registered; owner audit of PR #66, R1): Line N5 (`REPORT_N5_v2.md`, after the sign correction of N5 v1; under refereeing) reports [P-sketch + N] that the 16D = 1 isotropic family at q = h_p has rate → μ*λ^{−1/6} = 1.42785 > T and a positive cross contribution ≈ 2.735^m > ξ_lo^m. If confirmed, the target of BGS-TRACE-298 and the Ω-hypothesis (287) fail along m = 3p, and Theorem A (286) gives nothing there. The small-m numerics (m ≤ 21) say nothing about large m.
+
 ## 4. Certified Λ and Theorem C′ (BGS-TRACE-294–296)
 Lemma I / I₁₆ transfers free-family bounds from the Line F spaces to the O1 spaces with p-independent constants. N4 certifies all four
 free-family radii in arb (8V: τ-cell scheme with the N3 extremal norm R, committed as `lineN3/logs/g_R_V_final.npy`; 8E, 16V, 16E:
@@ -88,6 +90,7 @@ is an implication **for p with h_p squarefree** (prime-power conductor weights a
   `remainder_rates` and `leading_fails` are left out of `LineN4Arith.lean`.
 * The 16D = 1 dominant-family identification and its shares 88.9% / 62.0% [N] (N5 relies on it; to be registered with N5 after review).
 * The 7·h_p unit points (N3-F9, [P-sketch]; N5 has an unrefereed [P] upgrade).
+* Line N5 / N6 (under refereeing): the 16D = 1 isotropic family at h_p (rate 1.42785, positive cross part ≈ 2.735^m), see the §3 caveat.
 * M6 condition C2 ([P-sketch], N3-F2): remains a condition of the open BGS-TRACE-276.
 * The pressure interpretation (Cao–Feng–Huang 2008) [cite], the barriers for the method's majorant (2.617^m at clamp a = 1, N2-F7),
   the level-split numerics (N2-F8) and the sampled Λ values 1.98242 etc. (N2-F6, superseded lower estimates).

@@ -149,6 +149,8 @@ Labels: **[P]** proved here or cited proved; **[CA]** computer-assisted with bal
   *[v2, N4-F4] It is an implication for p with h_p squarefree: the [N] check of §5 (no q < 3·10⁶ with q² | h_p, p ≤ 10⁵) is evidence only and
   does not prove that any h_p is squarefree.*
 - N3 §4 item 4 is closed. Items 1 (isotropic at q | h_p; now localised to (a) and (b) of §3.4), 2 (index loss at proper divisors) and 3 (K_p-levels) remain.
+  *[v2, I-2] Superseded: the localisation of item 1 to (a) and (b) of §3.4 rests on the single-slow-window premise and is superseded by Line N5
+  (not refereed, not integrated); item 1 is registered generically as open (BGS-TRACE-298). Owner audit of PR #66, S2.*
   R′ is **not** refuted along m = 3p.
 
 ## 5. Referee N3 fixes that concern N4 (audit/lineN3, received 18:35)
@@ -190,3 +192,4 @@ Labels: **[P]** proved here or cited proved; **[CA]** computer-assisted with bal
 | I-1 | §0, §2.4, §4 | 16V: certified f + π = 2.94138961 > 2.9413896, so the registered bound is Λ ≤ 2.9413897 (rate (Λr₂)^{1/3} = 1.4578840 < 1.45789 unchanged) |
 | I-2 | §0 row (3), §3.3–§3.4 | superseded by Line N5 (Lemma H; not refereed, not integrated): G ≤ 1.547, 1.4468 and 1.2426 / 1.0672 / 0.9165 are not registered |
 | I-3 | §5 (N3-F9) | 7·h_p unit points not registered (an unrefereed N5 upgrade exists) |
+| I-2 (PR #66 S2) | §4 | the §3.4 localisation of item 1 marked superseded |

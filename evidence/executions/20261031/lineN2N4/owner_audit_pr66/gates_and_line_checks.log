@@ -1,0 +1,24 @@
+## $ python3 computations/verification/lineN4/integration_checks/proved_deps_gate_N2N4.py
+pre-existing on main (listed, out of scope): [('BGS-RES-015', 'BGS-RES-014'), ('BGS-RES-023', 'BGS-RES-022'), ('BGS-TRACE-076', 'BGS-TRACE-060'), ('BGS-TRACE-077', 'BGS-TRACE-073'), ('BGS-TRACE-080', 'BGS-TRACE-060'), ('BGS-TRACE-080', 'BGS-TRACE-073'), ('BGS-TRACE-236', 'BGS-TRACE-231')]
+cycles: []
+open/conditional new ids without closure_condition: []
+GATE_OK
+exit 0
+## $ python3 computations/verification/lineN/integration_checks/proved_deps_gate_MN.py
+pre-existing on main (listed, out of scope): [('BGS-RES-015', 'BGS-RES-014'), ('BGS-RES-023', 'BGS-RES-022'), ('BGS-TRACE-076', 'BGS-TRACE-060'), ('BGS-TRACE-077', 'BGS-TRACE-073'), ('BGS-TRACE-080', 'BGS-TRACE-060'), ('BGS-TRACE-080', 'BGS-TRACE-073'), ('BGS-TRACE-236', 'BGS-TRACE-231')]
+cycles: []
+open/conditional new ids without closure_condition: []
+GATE_OK
+exit 0
+## $ python3 computations/verification/lineL/integration_checks/proved_deps_gate.py
+new violations outside Line L: []
+pre-existing on main (listed, out of scope): [('BGS-RES-015', 'BGS-RES-014'), ('BGS-RES-023', 'BGS-RES-022'), ('BGS-TRACE-076', 'BGS-TRACE-060'), ('BGS-TRACE-077', 'BGS-TRACE-073'), ('BGS-TRACE-080', 'BGS-TRACE-060'), ('BGS-TRACE-080', 'BGS-TRACE-073'), ('BGS-TRACE-236', 'BGS-TRACE-231')]
+pre-existing pairs no longer present: []
+GATE_OK
+exit 0
+## $ python3 computations/verification/lineN4/integration_checks/lineN2N4_checks.py
+OK   slow orbit (mu*^3/lambda)^{1/3} <= 1.0644 (1.0643702893872017353240920069)
+OK   Green kernel sum = 1/4 
+OK   d_squarefree: no square hits ([N] evidence only) (2750 pairs)
+LINE_N2N4_CHECKS_OK
+exit 0

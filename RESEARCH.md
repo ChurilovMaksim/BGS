@@ -10,6 +10,8 @@
 * **Isotropic structure.** Isotropic twists are geometric ([TRACE-291](mathematics/fixed-map/lineN2N4_inherited_level.md)), the isotropic part is a line quadrature
   ([TRACE-292](mathematics/fixed-map/lineN2N4_inherited_level.md)), M6 condition C3 holds ([TRACE-293](mathematics/fixed-map/lineN2N4_inherited_level.md); C1 by the widened TRACE-222; C2 open), and there is a gauge lemma
   ([TRACE-297](mathematics/fixed-map/lineN2N4_inherited_level.md)). Open: the isotropic part at q ∣ h_p ([TRACE-298](mathematics/fixed-map/lineN2N4_inherited_level.md)).
+  Caveat: Line N5 (under refereeing, not registered) reports that the 16D = 1 isotropic family at h_p has rate 1.42785 > T and a
+  positive cross contribution ≈ 2.735^m > ξ_lo^m; if confirmed, this target and the Ω-hypothesis fail along m = 3p.
 * **Theorem A** ([TRACE-286](mathematics/fixed-map/lineN2N4_inherited_level.md)) is a proved implication from the open Ω-hypothesis ([TRACE-287](mathematics/fixed-map/lineN2N4_inherited_level.md)).
 * The N4 §3.3–§3.4 window numbers are superseded by Line N5, which is not yet refereed; they are not registered.
 

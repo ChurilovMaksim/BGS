@@ -92,3 +92,35 @@ Registered numbers are rounded upward (bounds) or checked below the target (rate
   `#print axioms` for every theorem (8 + 9 + 6). LineN4 differs from the referee file in three ways: the I-1 correction, two theorems
   removed, and two added (`unit_rates_registered`, `lemI16_V`). `lake exe cache get` and `lake build Bgs` exit 0 (8841 jobs). Axioms are
   propext, Classical.choice and Quot.sound only, with no sorry and no native_decide.
+
+## Owner audit of PR #66 (head 9849ee67): fixes applied
+
+origin/main 5c292e7e was merged in first. It adds LineDCoeffReality and LineDStrongKickConc and the formalization lists of 152 and 157.
+The inventory refresh mirrors 152 and 157.
+
+The claim edits (R1, S1, S3) are made by hand in `record/claims.json` and change wording only. They change no state and no dependency
+edge. The registry, inventory and epochs are regenerated.
+* **R1, 298.** The four computed (m, q) are marked "m ≤ 21 only and say nothing about large m". There is a Line N5 caveat, and the N5
+  sentence now reads "under refereeing; nothing from N5 or N6 is registered here".
+* **R1, 286.** "Not trivially false" is narrowed. The β = 1 slow orbit at c = h_p does not by itself falsify the hypothesis, which says
+  nothing about the other isotropic β. The text points to the caveat in 287 and 298.
+* **R1, 287.** The partial results carry a neutral "Line N5 caveat (not registered)". It uses the corrected N5 v2 facts:
+  * the 16D = 1 isotropic family at q = h_p has rate → μ*λ^{−1/6} = 1.42785 > T = 1.28359;
+  * its cross contribution is positive, ≈ μ*²λ^{−1/6} = 2.735^m > ξ_lo^m;
+  * N5 is under refereeing;
+  * if confirmed, the Ω-hypothesis fails along m = 3p with h_p squarefree, and Theorem A gives nothing there.
+  * The same pointer is in 298 and in the note and RESEARCH.md.
+* **S1, 295.** RK from 222 is cited only for (±2, 8). (±2, 16) does not use 222, because the Schur certificate is sign-independent:
+  M = Σ|J_n||B_n| ⊗ P_n depends only on |C| = c0/2 (b16_schur.py, REPORT_N4_v2 §2.2).
+* **S3, 286.** BGS-TRACE-283 (Theorem N3) is named as the source of the slow orbit, as text and not as a dependency, so the graph is
+  unchanged.
+* **S2.** REPORT_N4_v2 §4 now says that the localisation of item 1 to §3.4 (a) and (b) is superseded by Line N5. The errata table gets
+  row I-2. The receipt sha is refreshed.
+* **R2.** There is a new bibliographic snapshot, `evidence/source_metadata/registry_metadata_20261031_lineN2N4.json` (+ .sha256). It
+  adds transitive impact for EXT-DIRICHLET-1837, VINOGRADOV-1937, WEYL-1916 and DAVENPORT-1980 (286, 287) and for EXT-WEIL-1948 (286,
+  287, 289, 290, 294, 296). The review note is `record/audits/metadata_cache_refresh_20261031_lineN2N4/report.md`. The pointer
+  `literature/metadata_audit.json` and the v4_negative_controls data path are switched. bibliographic_metadata_audit now fails only on
+  the pre-existing EXT-BR-1975, as on main.
+* **S4.** See `CHECKS_SUMMARY.md`: every known-failing checker, branch vs main 5c292e7e.
+
+Nothing from Line N5 or N6 is registered.

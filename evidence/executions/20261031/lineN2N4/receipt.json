@@ -1,6 +1,6 @@
 {
  "schema": "bgs-lineN2N4-integration-receipt-v1",
- "base": "ChurilovMaksim/BGS origin/main 3c7ac4a6 (merge of PR #65)",
+ "base": "ChurilovMaksim/BGS origin/main 3c7ac4a6 (merge of PR #65); origin/main 5c292e7e merged in for the owner audit of PR #66",
  "branch": "line-N2N4",
  "prepared_on": "2026-10-31",
  "id_assignment": {
@@ -71,7 +71,7 @@
   "items": [
    "N4-F1..N4-F9",
    "I-1 16V Lambda rounded up to 2.9413897 (f + penalty = 2.94138961)",
-   "I-2 sections 3.3-3.4 superseded by Line N5, not registered",
+   "I-2 sections 3.3-3.4 and the section 4 localisation of item 1 superseded by Line N5, not registered (PR #66 S2)",
    "I-3 7 h_p unit points not registered"
   ]
  },
@@ -126,7 +126,21 @@
   "axioms": "propext, Classical.choice, Quot.sound at most",
   "sorryAx": false,
   "native_decide": false,
-  "build": "lake exe cache get; lake build Bgs: exit 0, 8841 jobs; see lake_build_Bgs.log"
+  "build": "lake exe cache get; lake build Bgs: exit 0, 8841 jobs; see lake_build_Bgs.log; after the owner audit of PR #66: exit 0, 8843 jobs, owner_audit_pr66/lake_build_Bgs.log"
+ },
+ "owner_audit_pr66": {
+  "audit": "MERGE-after-fixes on head 9849ee67",
+  "applied": [
+   "R1 (286, 287, 298 wording; N5 v2 caveat, not registered)",
+   "R2 (bibliographic snapshot lineN2N4; fails only on EXT-BR-1975 as on main)",
+   "S1 (295 citation: 222 for (+-2,8) only; (+-2,16) sign-independent)",
+   "S2 (REPORT_N4_v2 section 4 superseded)",
+   "S3 (283 named in 286 as slow-orbit source, text only)",
+   "S4 (CHECKS_SUMMARY: known-failing checkers branch vs main 5c292e7e)"
+  ],
+  "states_changed": [],
+  "dependencies_changed": [],
+  "n5_n6_registered": false
  },
  "sha256": {
   "computations/verification/lineN2/NOTES_N2.md": "f8ddf61fd0ba141940f63f133d177eb9b1e23272c1300a4bc5a72cc6e1a373c1",
@@ -237,7 +251,7 @@
   "computations/verification/lineN3/referee/logs/rerun_i_cert_V.out": "bcb95428162534a7f3b41c9b201f64d9f0ff55cc7f6cda68807a71c2396e9f29",
   "computations/verification/lineN4/NOTES_N4.md": "4de57fdb5a067036195c3ab2fb43a28e2de9e9480f2629bd35a484c18ba6edde",
   "computations/verification/lineN4/REPORT_N4.md": "6b8684a3b9af7b24025b3659f084ffaae81a156b7cb0d9c80ee790288d909b4a",
-  "computations/verification/lineN4/REPORT_N4_v2.md": "2f4a550a3587148c10adf886c392ba0b2c9af1f168c4a06f1753276190539cc0",
+  "computations/verification/lineN4/REPORT_N4_v2.md": "f33558a0dd0a69416fea08b47bf7bc9789eb85cf755188601a1430a847b3bab2",
   "computations/verification/lineN4/SHA256_N4.txt": "adef0f478c40b1708a37c66cdb53c660d3894a1acbb9ffc2470019a64fd9f15f",
   "computations/verification/lineN4/SHA256_N4.txt.sha256": "1f7d43557bf6b153ec1c4eac1a11a1e87514a9018dbf4628f4dc9971bd29a0aa",
   "computations/verification/lineN4/code/a_probe.py": "999e8dd1f1a4617e58a264bd6fcfc970c557a1f0d0afe96c7b0f07f14cc1388e",
@@ -348,7 +362,11 @@
   "formalization/Bgs/LineN2Arith.lean": "8d75e09d10b65680228a3bfbacab423cf427804bd48fa8ab7d50aeb609272ee7",
   "formalization/Bgs/LineN3Arith.lean": "c63d59e4c8c42b80a24920987a225e3f467d49976d7cdf7d6a28b45857f06258",
   "formalization/Bgs/LineN4Arith.lean": "547a3af580595948c6cde0456d0e28e0df39290b8ed9ec6384021b69f9cd74fa",
-  "mathematics/fixed-map/lineN2N4_inherited_level.md": "5d6cc0698a4a92d3292cafa6074fe4bf65f64dc4483baecc10249918e5617d39",
+  "mathematics/fixed-map/lineN2N4_inherited_level.md": "5d2e8cb7eb9d68dd812a8b055681e188e225b27de8251e70989d079c60a122b5",
+  "evidence/source_metadata/registry_metadata_20261031_lineN2N4.json": "12cd7dd335e5fc468aeb5f0401ba9770694388605f1be4ba7730c47b34464b9e",
+  "evidence/source_metadata/registry_metadata_20261031_lineN2N4.sha256": "798e05c5ac5e6963444355d8c56a69ab64d22cc25b9a5d781e99e75840775559",
+  "record/audits/metadata_cache_refresh_20261031_lineN2N4/report.md": "2c13d80f00c36b223ff8c62b573a26006fe0031018d25e0ce335cda96dbf9fef",
+  "literature/metadata_audit.json": "3ed502228339c1c6699213d29668396881e5486147fec24c51380f0599f5f4c6",
   "evidence/executions/20261031/lineN2N4/integration_reruns/iso_coverage_rerun_pr65.log": "43e16c902ffee73ef890e8a3a4413e2209962121395767981c4d86bcf7ee4a9a",
   "evidence/executions/20261031/lineN2N4/integration_reruns/out_a_index_identity.log": "0ddabd5270e02072cf511ab2f94406d21336676f8eb82ebb09fa5b3dc648a01b",
   "evidence/executions/20261031/lineN2N4/integration_reruns/out_ref_n2.log": "bf5bfee1cf0845ad160d636572215c6eb6adec6a0dcf9d6dc3b7c18caec04f6c",
