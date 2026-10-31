@@ -156,6 +156,13 @@ The number of good blocks is **min(r, 2I − k + 2)** (indices cyclic mod r; ref
 prime q ∥ h_m in (max(c_W p², λ^{C_k + 6.1·10⁻⁶·m}), L_m), the conclusion of K2′ holds without assuming frozen R′, so K2′ gives no contradiction at
 such m. That this covers all or most m is **[H]** (not registered).
 
+**Later work (Lines M/N, `lineMN_conductor_structure.md` §5).** The [H] coverage sentence above is superseded by Theorem N3 (BGS-TRACE-283,
+proved on the certified bound of BGS-TRACE-198), the composite-conductor extension of Prop S. For every p ≥ p₀ (effective, not computed)
+the conductor h_p lies in K2′'s open set and carries the slow β = 1 (Corollary N3′, BGS-TRACE-284). So the conclusion of K2′ holds
+without assuming frozen R′ at every such m. The unweighted target "exclude slow λ-orbits at conductors c ∈ (c_W p², L_m)"
+(REPORT_L_v2 §6) is **false** on c ≥ λ^{θr/2+t}. The open-range target must be β-weighted, as H_mean already is (annotation on
+BGS-TRACE-247).
+
 ## 7. L2: cancellation-free and height methods (BGS-TRACE-259..262)
 
 **Lemma A1 [P] (BGS-TRACE-259).** Σ_{β∈ℓ(𝔮)}|Ẑ_β|² = q·Σ_u|A(u+𝔮)|²; |D_𝔮|² ≤ (1 − 1/q)C_𝔮, C_𝔮 = Σ_u|A(u+𝔮)|² − |Z|²/q

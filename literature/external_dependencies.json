@@ -1257,6 +1257,84 @@
         "literature/lineK_sources_20261031.md",
         "computations/verification/lineK/K2/REPORT_K2_v2.md"
       ]
+    },
+    {
+      "id": "EXT-OSV-2023",
+      "authors": [
+        "Alina Ostafe",
+        "Igor E. Shparlinski",
+        "José Felipe Voloch"
+      ],
+      "title": "Equations and Character Sums with Matrix Powers, Kloosterman Sums over Small Subgroups, and Quantum Ergodicity",
+      "identifier": "DOI:10.1093/imrn/rnac226",
+      "pinned_version": "International Mathematics Research Notices 2023, no. 16, 14196-14238; arXiv:2110.10941 (the arXiv text is the one read by the author and the referee; lemma numbering of the published version was not compared)",
+      "locator": "Lemma 4.3: for gcd(s, q) = 1 and ab(ab - 1) != 0 the polynomial (X^s + Y^s + a)(X^s + Y^s + bX^sY^s) - X^sY^s is absolutely irreducible over F_q. Context only (not load-bearing here): the moment inequality (6.6) (re-derived in diagonal form in Line N, Lemma N1.1) and Theorem 2.7 / Corollary 2.9 (S_{2,p}(a, b; A) << min(tau^{23/36} p^{1/6}, tau^{20/27} p^{1/9}), implied constants not stated)",
+      "checked_on": "2026-10-31",
+      "dependency_role": "load-bearing external theorem",
+      "mapping": "Lemma N1.2(b) (BGS-TRACE-279): the non-degenerate (a, b) count of the energy J_3 is R/s^2 with R the number of F_q-points of this curve, s = (q-1)/tau; absolute irreducibility is what allows Voloch's point count (EXT-OSV-2024). Used through BGS-TRACE-279 in Theorem W+ (BGS-TRACE-280).",
+      "project_sources": [
+        "mathematics/fixed-map/lineMN_conductor_structure.md",
+        "literature/lineMN_sources_20261031.md",
+        "computations/verification/lineN/REPORT_N_v2.md"
+      ]
+    },
+    {
+      "id": "EXT-OSV-2024",
+      "authors": [
+        "Alina Ostafe",
+        "Igor E. Shparlinski",
+        "José Felipe Voloch"
+      ],
+      "title": "Weil Sums over Small Subgroups",
+      "identifier": "DOI:10.1017/S0305004123000415",
+      "pinned_version": "Mathematical Proceedings of the Cambridge Philosophical Society 176 (2024), no. 1, 39-53; arXiv:2211.07739 (arXiv text read)",
+      "locator": "Lemma 2.1 (Voloch, Acta Arith. 52 (1989) 197-201, Theorem (i), in the form quoted there): for F absolutely irreducible over F_p of degree d < p, #{F = 0} <= 4 d^{4/3} p^{2/3} + 3p. Voloch's original was not retrieved (cited via this lemma)",
+      "checked_on": "2026-10-31",
+      "dependency_role": "load-bearing external theorem",
+      "mapping": "Lemma N1.2(b) (BGS-TRACE-279): R <= 4 d^{4/3} q^{2/3} + 3q for the curve of EXT-OSV-2023, d = 3s < q (d > q^{1/4} holds since q >= tau^{4/3}), giving J_3 <= tau^3 [4 3^{4/3} (q tau/(q-1))^{2/3} + 3 q tau^2/(q-1)^2] + 12 tau^3 and J_3 <= 17.31 tau^{11/3} for q >= c_W p^2, tau >= 10^45. Used through BGS-TRACE-279 in Theorem W+ (BGS-TRACE-280).",
+      "project_sources": [
+        "mathematics/fixed-map/lineMN_conductor_structure.md",
+        "literature/lineMN_sources_20261031.md",
+        "computations/verification/lineN/REPORT_N_v2.md"
+      ]
+    },
+    {
+      "id": "EXT-CP-2011",
+      "authors": [
+        "Todd Cochrane",
+        "Christopher Pinner"
+      ],
+      "title": "Explicit Bounds on Monomial and Binomial Exponential Sums",
+      "identifier": "DOI:10.1093/qmath/hap041",
+      "pinned_version": "The Quarterly Journal of Mathematics 62 (2011), no. 2, 323-349",
+      "locator": "Theorem 1.1 (explicit Heath-Brown-Konyagin): for a subgroup A of Z_p^* and (a, p) = 1, max |sum_{x in A} e_p(ax)| <= p^{1/2} for |A| > p^{2/3}/3, <= lambda |A|^{3/8} p^{1/4} for p^{1/2} < |A| <= p^{2/3}/3, and <= lambda |A|^{5/8} p^{1/8} for 3 p^{1/3} < |A| <= p^{1/2}, lambda = 2/3^{1/4} = 1.519671... (ranges checked against the author preprint dated 5 Oct 2009; the published QJM text was not accessible, publisher returned 403 on 2026-10-31)",
+      "checked_on": "2026-10-31",
+      "dependency_role": "load-bearing external theorem",
+      "mapping": "Proposition N1.3, isotropic x (BGS-TRACE-279): |S|/tau <= min(sqrt q/tau, lambda q^{1/4} tau^{-5/8}, lambda q^{1/8} tau^{-3/8}), lambda = 2/3^{1/4}, each branch only in its range (Gauss period for every tau; middle branch for q^{1/2} < tau <= q^{2/3}/3; 5/8 branch for 3 q^{1/3} < tau <= q^{1/2}); with all three branches the isotropic case covers the whole Theorem W+ range for every p (owner audit of PR #65, R1/R2; integration note I-1; iso_coverage.py). Used through BGS-TRACE-279 in Theorem W+ (BGS-TRACE-280).",
+      "project_sources": [
+        "mathematics/fixed-map/lineMN_conductor_structure.md",
+        "literature/lineMN_sources_20261031.md",
+        "computations/verification/lineN/REPORT_N_v2.md"
+      ]
+    },
+    {
+      "id": "EXT-BOURGAIN-2005",
+      "authors": [
+        "Jean Bourgain"
+      ],
+      "title": "Mordell's Exponential Sum Estimate Revisited",
+      "identifier": "DOI:10.1090/S0894-0347-05-00476-5",
+      "pinned_version": "Journal of the American Mathematical Society 18 (2005), no. 2, 477-499 (S 0894-0347(05)00476-5)",
+      "locator": "Theorem 1 and Corollary (1.21): for r >= 1 and eps > 0 there is delta = delta(r, eps) > 0 such that if theta_1, ..., theta_r in F_p^* satisfy ord(theta_i) > p^eps and ord(theta_i theta_j^-1) > p^eps (i != j), then max_{a_i in F_p^*} |sum_{s=1}^{p-1} e_p(sum_i a_i theta_i^s)| < p^{1-delta}; Remark (1) (the case r = 1, Bourgain-Konyagin); section 5(1): delta_r > exp(-C_3 r (eps^-C_2 + log r)) with absolute constants not computed",
+      "checked_on": "2026-10-31",
+      "dependency_role": "load-bearing external theorem",
+      "mapping": "Line N N2 (BGS-TRACE-281): theta_1 = l, theta_2 = 1/l (orders r, r; ratio order r; r odd, r >= p >= q^{1/C}) give |S(x)| <= (q/(q-1)) q^{-delta(C)} for non-isotropic x at prime q <= p^C; r = 1 for isotropic x; with eps_F of BGS-TRACE-278, Theorem W holds for q, 7q <= p^C and p >= p0(C) = eps_F^{-1/delta(C)}, effective, constants not computed.",
+      "project_sources": [
+        "mathematics/fixed-map/lineMN_conductor_structure.md",
+        "literature/lineMN_sources_20261031.md",
+        "computations/verification/lineN/REPORT_N_v2.md",
+        "computations/verification/lineK/K2/REPORT_K2_v2.md"
+      ]
     }
   ]
 }

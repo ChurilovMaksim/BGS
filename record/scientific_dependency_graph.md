@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**352 registered nodes; 618 direct prerequisite edges.**
+**369 registered nodes; 676 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -295,15 +295,15 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-195](../mathematics/fixed-map/resonant_residue_lineE.md) | proved | `BGS-TRACE-163`, `BGS-TRACE-165`, `BGS-TRACE-170` | None registered | 0 |
 | [BGS-TRACE-196](../mathematics/fixed-map/resonant_residue_lineE.md) | conditional | `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-179`, `BGS-TRACE-194` | None registered | 0 |
 | [BGS-TRACE-197](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-183`, `BGS-TRACE-184` | None registered | 15 |
-| [BGS-TRACE-198](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-197` | None registered | 8 |
-| [BGS-TRACE-199](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-197`, `BGS-TRACE-198` | None registered | 5 |
+| [BGS-TRACE-198](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-197` | None registered | 11 |
+| [BGS-TRACE-199](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-197`, `BGS-TRACE-198` | None registered | 7 |
 | [BGS-TRACE-200](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-193`, `BGS-TRACE-199` | None registered | 0 |
 | [BGS-TRACE-201](../mathematics/fixed-map/lifted_transfer_lineF.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-197`, `BGS-TRACE-198` | None registered | 0 |
 | [BGS-TRACE-202](../mathematics/fixed-map/lifted_transfer_lineF.md) | open | `BGS-TRACE-197` | None registered | 0 |
 | [BGS-TRACE-203](../mathematics/fixed-map/resonance_classification_lineG.md) | proved | `BGS-TRACE-183`, `BGS-TRACE-184`, `BGS-TRACE-194` | None registered | 9 |
 | [BGS-TRACE-204](../mathematics/fixed-map/resonance_classification_lineG.md) | proved | `BGS-TRACE-203`, `BGS-TRACE-212` | None registered | 1 |
 | [BGS-TRACE-205](../mathematics/fixed-map/resonance_classification_lineG.md) | open | `BGS-TRACE-203`, `BGS-TRACE-204` | None registered | 1 |
-| [BGS-TRACE-206](../mathematics/fixed-map/resonance_classification_lineG.md) | open | `BGS-TRACE-179`, `BGS-TRACE-205` | None registered | 11 |
+| [BGS-TRACE-206](../mathematics/fixed-map/resonance_classification_lineG.md) | open | `BGS-TRACE-179`, `BGS-TRACE-205` | None registered | 16 |
 | [BGS-TRACE-207](../mathematics/fixed-map/lineH_49state_certificate.md) | proved | `BGS-TRACE-194`, `BGS-TRACE-197` | None registered | 3 |
 | [BGS-TRACE-208](../mathematics/fixed-map/lineH_49state_certificate.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-207` | None registered | 1 |
 | [BGS-TRACE-209](../mathematics/fixed-map/lineH_49state_certificate.md) | proved | `BGS-TRACE-165`, `BGS-TRACE-170`, `BGS-TRACE-207`, `BGS-TRACE-208` | None registered | 0 |
@@ -318,44 +318,44 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-218](../mathematics/fixed-map/lineI_rprime_reduction.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-219](../mathematics/fixed-map/lineI_rprime_reduction.md) | proved | None registered | `EXT-BHV-2001`, `EXT-CARMICHAEL-1913` | 0 |
 | [BGS-TRACE-220](../mathematics/fixed-map/lineI_rprime_reduction.md) | open | `BGS-TRACE-206`, `BGS-TRACE-213` | None registered | 0 |
-| [BGS-TRACE-221](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-203`, `BGS-TRACE-212`, `BGS-TRACE-216`, `BGS-TRACE-222` | None registered | 5 |
-| [BGS-TRACE-222](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-203`, `BGS-TRACE-216` | None registered | 3 |
+| [BGS-TRACE-221](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-203`, `BGS-TRACE-212`, `BGS-TRACE-216`, `BGS-TRACE-222` | None registered | 6 |
+| [BGS-TRACE-222](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-203`, `BGS-TRACE-216` | None registered | 4 |
 | [BGS-TRACE-223](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-198`, `BGS-TRACE-203`, `BGS-TRACE-216`, `BGS-TRACE-222` | None registered | 3 |
 | [BGS-TRACE-224](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | None registered | None registered | 1 |
-| [BGS-TRACE-225](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-206`, `BGS-TRACE-212`, `BGS-TRACE-213`, `BGS-TRACE-216`, `BGS-TRACE-221`, `BGS-TRACE-222`, `BGS-TRACE-223`, `BGS-TRACE-224` | None registered | 9 |
+| [BGS-TRACE-225](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-206`, `BGS-TRACE-212`, `BGS-TRACE-213`, `BGS-TRACE-216`, `BGS-TRACE-221`, `BGS-TRACE-222`, `BGS-TRACE-223`, `BGS-TRACE-224` | None registered | 11 |
 | [BGS-TRACE-226](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-203`, `BGS-TRACE-207` | None registered | 11 |
-| [BGS-TRACE-227](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-212`, `BGS-TRACE-225`, `BGS-TRACE-226`, `BGS-TRACE-228` | None registered | 7 |
-| [BGS-TRACE-228](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-206`, `BGS-TRACE-212` | None registered | 7 |
-| [BGS-TRACE-229](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-212` | None registered | 2 |
-| [BGS-TRACE-230](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | None registered | None registered | 6 |
+| [BGS-TRACE-227](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-212`, `BGS-TRACE-225`, `BGS-TRACE-226`, `BGS-TRACE-228` | None registered | 8 |
+| [BGS-TRACE-228](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-206`, `BGS-TRACE-212` | None registered | 9 |
+| [BGS-TRACE-229](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-212` | None registered | 3 |
+| [BGS-TRACE-230](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | None registered | None registered | 13 |
 | [BGS-TRACE-231](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | conditional | `BGS-TRACE-206`, `BGS-TRACE-212`, `BGS-TRACE-213`, `BGS-TRACE-225`, `BGS-TRACE-227`, `BGS-TRACE-228`, `BGS-TRACE-230`, `BGS-TRACE-232`, `BGS-TRACE-235` | `EXT-DAVENPORT-1980`, `EXT-VINOGRADOV-1937`, `EXT-WEYL-1916` | 2 |
 | [BGS-TRACE-232](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | open | `BGS-TRACE-206`, `BGS-TRACE-213`, `BGS-TRACE-225`, `BGS-TRACE-228` | None registered | 2 |
 | [BGS-TRACE-233](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | open | `BGS-TRACE-223` | None registered | 0 |
 | [BGS-TRACE-234](../mathematics/fixed-map/lineK_harg_removal.md) | proved | None registered | None registered | 1 |
-| [BGS-TRACE-235](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-223`, `BGS-TRACE-225`, `BGS-TRACE-234` | `EXT-DAVENPORT-1980`, `EXT-DIRICHLET-1837`, `EXT-VINOGRADOV-1937`, `EXT-WEYL-1916` | 7 |
+| [BGS-TRACE-235](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-223`, `BGS-TRACE-225`, `BGS-TRACE-234` | `EXT-DAVENPORT-1980`, `EXT-DIRICHLET-1837`, `EXT-VINOGRADOV-1937`, `EXT-WEYL-1916` | 8 |
 | [BGS-TRACE-236](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-225`, `BGS-TRACE-227`, `BGS-TRACE-231`, `BGS-TRACE-235` | None registered | 1 |
-| [BGS-TRACE-237](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-206`, `BGS-TRACE-212`, `BGS-TRACE-226`, `BGS-TRACE-229` | None registered | 5 |
-| [BGS-TRACE-238](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-206`, `BGS-TRACE-213`, `BGS-TRACE-225`, `BGS-TRACE-226`, `BGS-TRACE-227`, `BGS-TRACE-228`, `BGS-TRACE-230` | None registered | 8 |
+| [BGS-TRACE-237](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-206`, `BGS-TRACE-212`, `BGS-TRACE-226`, `BGS-TRACE-229` | None registered | 6 |
+| [BGS-TRACE-238](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-206`, `BGS-TRACE-213`, `BGS-TRACE-225`, `BGS-TRACE-226`, `BGS-TRACE-227`, `BGS-TRACE-228`, `BGS-TRACE-230` | None registered | 11 |
 | [BGS-TRACE-239](../mathematics/fixed-map/lineK_harg_removal.md) | open | `BGS-TRACE-235`, `BGS-TRACE-238` | None registered | 1 |
 | [BGS-TRACE-240](../mathematics/fixed-map/lineK_harg_removal.md) | conditional | `BGS-TRACE-231`, `BGS-TRACE-232`, `BGS-TRACE-235`, `BGS-TRACE-236`, `BGS-TRACE-237`, `BGS-TRACE-238`, `BGS-TRACE-239` | None registered | 0 |
-| [BGS-TRACE-241](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-230` | `EXT-WEIL-1948` | 4 |
+| [BGS-TRACE-241](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-230` | `EXT-WEIL-1948` | 5 |
 | [BGS-TRACE-242](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-221`, `BGS-TRACE-226` | None registered | 2 |
-| [BGS-TRACE-243](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-221`, `BGS-TRACE-226`, `BGS-TRACE-241` | None registered | 6 |
+| [BGS-TRACE-243](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-221`, `BGS-TRACE-226`, `BGS-TRACE-241` | None registered | 8 |
 | [BGS-TRACE-244](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-221`, `BGS-TRACE-226`, `BGS-TRACE-243`, `BGS-TRACE-249`, `BGS-TRACE-250`, `BGS-TRACE-251` | None registered | 3 |
-| [BGS-TRACE-245](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-212`, `BGS-TRACE-213`, `BGS-TRACE-225`, `BGS-TRACE-226`, `BGS-TRACE-227`, `BGS-TRACE-228`, `BGS-TRACE-229`, `BGS-TRACE-235`, `BGS-TRACE-238`, `BGS-TRACE-241`, `BGS-TRACE-242`, `BGS-TRACE-243`, `BGS-TRACE-244`, `BGS-TRACE-250`, `BGS-TRACE-251`, `BGS-TRACE-252` | None registered | 2 |
-| [BGS-TRACE-246](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-212`, `BGS-TRACE-213`, `BGS-TRACE-225`, `BGS-TRACE-226`, `BGS-TRACE-227`, `BGS-TRACE-228`, `BGS-TRACE-235`, `BGS-TRACE-237`, `BGS-TRACE-238`, `BGS-TRACE-241`, `BGS-TRACE-242`, `BGS-TRACE-244`, `BGS-TRACE-245`, `BGS-TRACE-252` | None registered | 1 |
+| [BGS-TRACE-245](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-212`, `BGS-TRACE-213`, `BGS-TRACE-225`, `BGS-TRACE-226`, `BGS-TRACE-227`, `BGS-TRACE-228`, `BGS-TRACE-229`, `BGS-TRACE-235`, `BGS-TRACE-238`, `BGS-TRACE-241`, `BGS-TRACE-242`, `BGS-TRACE-243`, `BGS-TRACE-244`, `BGS-TRACE-250`, `BGS-TRACE-251`, `BGS-TRACE-252` | None registered | 5 |
+| [BGS-TRACE-246](../mathematics/fixed-map/lineK_harg_removal.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-212`, `BGS-TRACE-213`, `BGS-TRACE-225`, `BGS-TRACE-226`, `BGS-TRACE-227`, `BGS-TRACE-228`, `BGS-TRACE-235`, `BGS-TRACE-237`, `BGS-TRACE-238`, `BGS-TRACE-241`, `BGS-TRACE-242`, `BGS-TRACE-244`, `BGS-TRACE-245`, `BGS-TRACE-252`, `BGS-TRACE-283` | None registered | 3 |
 | [BGS-TRACE-247](../mathematics/fixed-map/lineK_harg_removal.md) | open | `BGS-TRACE-243`, `BGS-TRACE-244` | None registered | 0 |
 | [BGS-TRACE-248](../mathematics/fixed-map/lineL_op_open_range.md) | proved | None registered | None registered | 4 |
 | [BGS-TRACE-249](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-221`, `BGS-TRACE-226` | None registered | 2 |
-| [BGS-TRACE-250](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-243`, `BGS-TRACE-248`, `BGS-TRACE-249` | None registered | 5 |
-| [BGS-TRACE-251](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-248`, `BGS-TRACE-250` | None registered | 4 |
-| [BGS-TRACE-252](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-243`, `BGS-TRACE-250`, `BGS-TRACE-251` | None registered | 5 |
+| [BGS-TRACE-250](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-243`, `BGS-TRACE-248`, `BGS-TRACE-249` | None registered | 7 |
+| [BGS-TRACE-251](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-248`, `BGS-TRACE-250` | None registered | 5 |
+| [BGS-TRACE-252](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-243`, `BGS-TRACE-250`, `BGS-TRACE-251` | None registered | 8 |
 | [BGS-TRACE-253](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-226`, `BGS-TRACE-227`, `BGS-TRACE-238`, `BGS-TRACE-252` | None registered | 1 |
 | [BGS-TRACE-254](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-206`, `BGS-TRACE-248` | None registered | 2 |
 | [BGS-TRACE-255](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-237` | None registered | 6 |
 | [BGS-TRACE-256](../mathematics/fixed-map/lineL_op_open_range.md) | open | `BGS-TRACE-237`, `BGS-TRACE-255` | None registered | 0 |
 | [BGS-TRACE-257](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-212`, `BGS-TRACE-213`, `BGS-TRACE-225`, `BGS-TRACE-226`, `BGS-TRACE-227`, `BGS-TRACE-228`, `BGS-TRACE-235`, `BGS-TRACE-237`, `BGS-TRACE-238`, `BGS-TRACE-241`, `BGS-TRACE-245`, `BGS-TRACE-255` | None registered | 0 |
-| [BGS-TRACE-258](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-246`, `BGS-TRACE-251`, `BGS-TRACE-252` | None registered | 0 |
+| [BGS-TRACE-258](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-246`, `BGS-TRACE-251`, `BGS-TRACE-252`, `BGS-TRACE-283` | None registered | 0 |
 | [BGS-TRACE-259](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-254`, `BGS-TRACE-255` | None registered | 2 |
 | [BGS-TRACE-260](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-250`, `BGS-TRACE-259` | None registered | 0 |
 | [BGS-TRACE-261](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-230`, `BGS-TRACE-248`, `BGS-TRACE-259` | None registered | 1 |
@@ -363,6 +363,23 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-263](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-206`, `BGS-TRACE-212`, `BGS-TRACE-254` | None registered | 2 |
 | [BGS-TRACE-264](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-238`, `BGS-TRACE-255`, `BGS-TRACE-263` | None registered | 1 |
 | [BGS-TRACE-265](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-230`, `BGS-TRACE-263`, `BGS-TRACE-264` | None registered | 0 |
-| [BGS-TRACE-266](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-203`, `BGS-TRACE-206`, `BGS-TRACE-216`, `BGS-TRACE-230` | None registered | 0 |
+| [BGS-TRACE-266](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-203`, `BGS-TRACE-206`, `BGS-TRACE-216`, `BGS-TRACE-230` | None registered | 1 |
 | [BGS-TRACE-267](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-243`, `BGS-TRACE-255` | None registered | 0 |
 | [BGS-TRACE-268](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-255` | None registered | 0 |
+| [BGS-TRACE-269](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-230` | None registered | 1 |
+| [BGS-TRACE-270](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-225`, `BGS-TRACE-227`, `BGS-TRACE-235` | None registered | 0 |
+| [BGS-TRACE-271](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-225`, `BGS-TRACE-228`, `BGS-TRACE-230`, `BGS-TRACE-238`, `BGS-TRACE-246`, `BGS-TRACE-269`, `BGS-TRACE-273` | None registered | 1 |
+| [BGS-TRACE-272](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-206` | None registered | 0 |
+| [BGS-TRACE-273](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-206` | None registered | 1 |
+| [BGS-TRACE-274](../mathematics/fixed-map/lineMN_conductor_structure.md) | open | `BGS-TRACE-206`, `BGS-TRACE-238` | None registered | 0 |
+| [BGS-TRACE-275](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-206`, `BGS-TRACE-237`, `BGS-TRACE-238` | None registered | 0 |
+| [BGS-TRACE-276](../mathematics/fixed-map/lineMN_conductor_structure.md) | open | `BGS-TRACE-206`, `BGS-TRACE-221`, `BGS-TRACE-222`, `BGS-TRACE-228`, `BGS-TRACE-229` | None registered | 0 |
+| [BGS-TRACE-277](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-230` | None registered | 2 |
+| [BGS-TRACE-278](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-230`, `BGS-TRACE-241`, `BGS-TRACE-243`, `BGS-TRACE-245`, `BGS-TRACE-250`, `BGS-TRACE-252` | None registered | 4 |
+| [BGS-TRACE-279](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-230`, `BGS-TRACE-278` | `EXT-CP-2011`, `EXT-OSV-2023`, `EXT-OSV-2024` | 1 |
+| [BGS-TRACE-280](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-245`, `BGS-TRACE-252`, `BGS-TRACE-278`, `BGS-TRACE-279` | `EXT-CP-2011`, `EXT-OSV-2023`, `EXT-OSV-2024` | 0 |
+| [BGS-TRACE-281](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-230`, `BGS-TRACE-245`, `BGS-TRACE-278` | `EXT-BOURGAIN-2005` | 0 |
+| [BGS-TRACE-282](../mathematics/fixed-map/lineMN_conductor_structure.md) | open | `BGS-TRACE-278` | None registered | 0 |
+| [BGS-TRACE-283](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-230`, `BGS-TRACE-243`, `BGS-TRACE-250`, `BGS-TRACE-251`, `BGS-TRACE-252`, `BGS-TRACE-277` | None registered | 3 |
+| [BGS-TRACE-284](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-246`, `BGS-TRACE-271`, `BGS-TRACE-283` | None registered | 0 |
+| [BGS-TRACE-285](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-266`, `BGS-TRACE-277` | None registered | 0 |

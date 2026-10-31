@@ -1,0 +1,39 @@
+[1] Pell norm h^2+1=2y^2 (odd m<=1299): True
+[2] strong divisibility failures odd m,n<=601: 0
+[3] LTE valuation failures: 0 of 901
+[4] r(q) lemma mismatches q<300, m<400: 0
+[5] 3|h_m odd m<1300: [] ; lambda^k mod 3: [(0, 2), (2, 0), (0, 1), (1, 0)]
+[6] h_3n=h_n(4h_n^2+3) fails odd n<=431: []
+[7] gcd(h_3p,h_3p') !=7 for primes 5<=p<p'<=200: []
+[8] p, omega(h_p), all q==1 mod 2p, lam^p==1 mod 2h_p, mod 4h_p, phi(h_p)/h_p, n/h_p, min q
+    (3, 1, True, True, False, 0.85714286, 0.71428571, 7)
+    (5, 1, True, True, False, 0.97560976, 0.95121951, 41)
+    (7, 1, True, True, False, 0.9958159, 0.9916318, 239)
+    (11, 2, True, True, False, 0.95381205, 0.90787043, 23)
+    (13, 2, True, True, False, 0.98569346, 0.97142918, 79)
+    (17, 2, True, True, False, 0.99022781, 0.98045686, 103)
+    (19, 1, True, True, False, 0.99999989, 0.99999979, 9369319)
+    (23, 2, True, True, False, 0.97872326, 0.95744653, 47)
+    (29, 1, True, True, False, 1.0, 1.0, 63018038201)
+    (31, 2, True, True, False, 0.99999649, 0.99999298, 424577)
+    (37, 3, True, True, False, 0.99548884, 0.99097792, 223)
+    (41, 3, True, True, False, 0.99956107, 0.99912213, 2297)
+    (43, 3, True, True, False, 0.99994228, 0.99988456, 19609)
+    (47, 1, True, True, False, 1.0, 1.0, 489133282872437279)
+    (53, 2, True, True, False, 0.9999999, 0.9999998, 9940681)
+    (59, 1, True, True, False, 1.0, 1.0, 19175002942688032928599)
+    (61, 2, True, True, False, 0.99998914, 0.99997829, 92111)
+[9] m=5 h=41: nu in >=2 families (levels<=sqrt h incl primaries): 0; levels divide h: True; primaries per family [np.int64(1), np.int64(1), np.int64(1), np.int64(1)]
+[9] m=7 h=239: nu in >=2 families (levels<=sqrt h incl primaries): 0; levels divide h: True; primaries per family [np.int64(1), np.int64(1), np.int64(1), np.int64(1)]
+[9] m=9 h=1393: nu in >=2 families (levels<=sqrt h incl primaries): 0; levels divide h: True; primaries per family [np.int64(1), np.int64(1), np.int64(1), np.int64(1)]
+[9] m=11 h=8119: nu in >=2 families (levels<=sqrt h incl primaries): 0; levels divide h: True; primaries per family [np.int64(1), np.int64(1), np.int64(1), np.int64(1)]
+[9] m=13 h=47321: nu in >=2 families (levels<=sqrt h incl primaries): 0; levels divide h: True; primaries per family [np.int64(1), np.int64(1), np.int64(1), np.int64(1)]
+[9] m=15 h=275807: nu in >=2 families (levels<=sqrt h incl primaries): 0; levels divide h: True; primaries per family [np.int64(1), np.int64(1), np.int64(1), np.int64(1)]
+[9] m=17 h=1607521: nu in >=2 families (levels<=sqrt h incl primaries): 0; levels divide h: True; primaries per family [np.int64(1), np.int64(1), np.int64(1), np.int64(1)]
+[9] m=19 h=9369319: nu in >=2 families (levels<=sqrt h incl primaries): 0; levels divide h: True; primaries per family [np.int64(1), np.int64(1), np.int64(1), np.int64(1)]
+[10] M5 decomposition max rel err: 4.3618415364045174e-14 ; Dev>=-n|Z|^2/d^2 holds (=Prop K2 per-level bound)
+[11] M6 sign algebra max err: 2.6645352591003757e-15  -> pairs with s_a=s_b DOUBLE (incl {2,6}x{2,6}), s_a!=s_b cancel
+[12] capacity base mu^2/lam^(2/3)=1.132879 ; /1.0184224=1.112387 ; L_m base mu^2/xi=1.492271 ; h_p base 1.34150 ; sqrt h base 1.55377
+[13] L_m<sqrt h needs eta_m<0.1009; with eta<=2.010/log(2p+1): p > 2.24e+08
+[14] (1+sqrt2)^m mod 8, m=1..16: [(1, 1), (3, 2), (7, 5), (1, 4), (1, 5), (3, 6), (7, 1), (1, 0), (1, 1), (3, 2), (7, 5), (1, 4), (1, 5), (3, 6), (7, 1), (1, 0)]
+[15] m vs 3m mod 8 distinct for odd m: True

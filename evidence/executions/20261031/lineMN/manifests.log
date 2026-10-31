@@ -1,0 +1,38 @@
+== lineM/SHA256_M.txt (in lineM)
+OK lines: 14
+== lineM/referee/SHA256.txt (in lineM/referee)
+OK lines: 5
+== lineN/SHA256_N.txt (in lineN)
+sha256sum: ./logs/cp.pdf: No such file or directory
+./logs/cp.pdf: FAILED open or read
+sha256sum: ./logs/cp.txt: No such file or directory
+./logs/cp.txt: FAILED open or read
+sha256sum: ./logs/mss1701.pdf: No such file or directory
+./logs/mss1701.pdf: FAILED open or read
+sha256sum: ./logs/mss1701.txt: No such file or directory
+./logs/mss1701.txt: FAILED open or read
+sha256sum: ./logs/osv2110.pdf: No such file or directory
+./logs/osv2110.pdf: FAILED open or read
+sha256sum: ./logs/osv2110.txt: No such file or directory
+./logs/osv2110.txt: FAILED open or read
+sha256sum: ./logs/voloch.pdf: No such file or directory
+./logs/voloch.pdf: FAILED open or read
+sha256sum: ./logs/wss2211.pdf: No such file or directory
+./logs/wss2211.pdf: FAILED open or read
+sha256sum: ./logs/wss2211.txt: No such file or directory
+./logs/wss2211.txt: FAILED open or read
+sha256sum: WARNING: 9 listed files could not be read
+OK lines: 28
+== lineN/referee/SHA256.txt (in lineN/referee)
+sha256sum: lit/bourgain2005.pdf: No such file or directory
+lit/bourgain2005.pdf: FAILED open or read
+sha256sum: lit/bourgain2005.txt: No such file or directory
+lit/bourgain2005.txt: FAILED open or read
+sha256sum: lit/voloch1989.pdf: No such file or directory
+lit/voloch1989.pdf: FAILED open or read
+sha256sum: WARNING: 3 listed files could not be read
+OK lines: 8
+== lineM/SHA256_M.txt.sha256
+SHA256_M.txt: OK
+== lineN/SHA256_N.txt.sha256
+SHA256_N.txt: OK

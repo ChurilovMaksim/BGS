@@ -14,16 +14,16 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-31**. **352 registered claims.**
+**2026-10-31**. **369 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 289 |
+| proved | 303 |
 | verification-pending | 15 |
 | conditional | 17 |
-| open | 30 |
+| open | 33 |
 | refuted | 1 |
-| **Total** | **352** |
+| **Total** | **369** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -44,12 +44,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 0 | 23 |
 | RET | 3 | 0 | 1 | 0 | 0 | 4 |
-| TRACE | 191 | 13 | 12 | 26 | 1 | 243 |
-| **Total** | 289 | 15 | 17 | 30 | 1 | **352** |
+| TRACE | 205 | 13 | 12 | 29 | 1 | 260 |
+| **Total** | 303 | 15 | 17 | 33 | 1 | **369** |
 
 ## Open programme obligations
 
-30 registered claims are open. Their closure
+33 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -85,6 +85,9 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-239` | Line K hypothesis H-natural_mid: for some delta > 0 and infinitely many m in S+, O-natural_m^{<L} >= -(1 - delta) 0.98 (K_j/2) xi_lo^m | [mathematics/fixed-map/lineK_harg_removal.md](mathematics/fixed-map/lineK_harg_removal.md) |
 | `BGS-TRACE-247` | Line K Conjecture C1: for the true twisted operator families, lim_k (I_k^F)^{1/k} = 1 | [mathematics/fixed-map/lineK_harg_removal.md](mathematics/fixed-map/lineK_harg_removal.md) |
 | `BGS-TRACE-256` | Line L2 hypothesis H_mean: for some delta > 0 and infinitely many m in S+, \|D_iso(q) - E_b(q)/q\| <= ((1 - delta) target)^m at every open prime level q, with the analogue at open composite levels | [mathematics/fixed-map/lineL_op_open_range.md](mathematics/fixed-map/lineL_op_open_range.md) |
+| `BGS-TRACE-274` | Line M M4c (open): the (+-2,16) inclusion rule degenerates (no borderline level) for m >~ 85 | [mathematics/fixed-map/lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
+| `BGS-TRACE-276` | Line M M6 (open, conditional on C1-C4): the +-rho pairing law at all levels (cross_+ + cross_- = 2 Re sum_{a,b} conj(c_a z_a) c_b y_b (1 + s_a s_b)) | [mathematics/fixed-map/lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
+| `BGS-TRACE-282` | Line N (open [H]): Theorem W for composite conductors c \| h_{3p} with c <= p^C (at least two prime factors >= 2p + 1) via Bourgain's finite-ring theorem | [mathematics/fixed-map/lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
 
 ## Corrections
 
@@ -98,10 +101,10 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 249 follow-on claims adopted after
+It records 266 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
-external-dependency extension of 25 external IDs.
+external-dependency extension of 29 external IDs.
 
 ## Reading the status surfaces
 

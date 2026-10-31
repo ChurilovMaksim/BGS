@@ -31,10 +31,10 @@ from the box on 2026-10-31 (UTC+5).
 No new source was fetched for these four. Their review status is unchanged.
 
 ## Not registered
-* **Bourgain extension (K2 report v2 §3, [P-cite], ineffective).** The report cites J. Bourgain, "Mordell's exponential sum
+* **Bourgain extension (K2 report v2 §3, [P-cite]; "ineffective" there, corrected to "effective, constants not computed" by Line N, N-F6).** The report cites J. Bourgain, "Mordell's exponential sum
   estimate revisited", JAMS 18 (2005) 477–499, and Bourgain–Glibichuk–Konyagin, J. London Math. Soc. 73 (2006). With them,
-  "q ≤ c_k p²" in Theorem W / K2′ could be replaced by "q ≤ p^C" (ineffective p₀(C, k)). The referee's DELTA §D5 table lists this
-  extension as [P-cite, ineffective], conditional on OP, but the integration brief's registration list does not include it. It is
+  "q ≤ c_k p²" in Theorem W / K2′ could be replaced by "q ≤ p^C" (p₀(C, k) effective, constants not computed). The referee's DELTA §D5 table lists this
+  extension as [P-cite, ineffective (sic; N-F6)], conditional on OP, but the integration brief's registration list does not include it. It is
   therefore **not registered**, and neither reference is added (deviation recorded in
   `evidence/executions/20261031/lineK/INTEGRATION.md`). The registered Theorem W
   (BGS-TRACE-245) and K2′ (BGS-TRACE-246) use the Weil range q ≤ c_k p² only.

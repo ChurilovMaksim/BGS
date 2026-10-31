@@ -1,0 +1,34 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+5 h_p: 2.31 | K_p: 1.21 2.13
+7 h_p: 2.81 | K_p: 1.00 4.34
+11 h_p: 1.31 2.45 | K_p: 0.81 7.27
+13 h_p: 1.70 2.49 | K_p: 0.76 2.24 5.94
+17 h_p: 1.64 3.41 | K_p: 0.69 2.12 7.77
+19 h_p: 5.45 | K_p: 0.66 2.08 3.26 5.38
+23 h_p: 1.23 5.02 | K_p: 0.62 12.31
+29 h_p: 7.38 | K_p: 0.58 2.83 4.63 7.14
+31 h_p: 3.77 3.98 | K_p: 0.57 4.31 4.60 6.44
+37 h_p: 1.50 2.91 4.43 | K_p: 0.54 2.42 15.10
+41 h_p: 2.08 3.40 4.06 | K_p: 0.52 2.45 2.93 5.15 8.40
+43 h_p: 2.63 3.17 4.09 | K_p: 0.52 3.81 4.91 10.92
+47 h_p: 10.58 | K_p: 0.51 1.83 7.64 11.55
+53 h_p: 4.06 7.53 | K_p: 0.49 3.09 4.06 15.89
+59 h_p: 12.58 | K_p: 0.48 12.13 12.90
+61 h_p: 2.78 10.13 | K_p: 0.47 1.44 2.18 4.21 5.32 12.53
+67 h_p: 4.84 9.04 | K_p: 0.46 5.15 10.19 12.29
+71 h_p: 1.68 2.88 9.96 | K_p: 0.46 4.06 9.73 15.12
+73 h_p: 3.44 5.13 6.26 | K_p: 0.45 1.42 28.12
+79 h_p: 2.39 4.99 8.40 | K_p: 0.45 1.66 29.76
+83 h_p: 1.16 4.80 5.06 5.38 | K_p: 0.44 32.67
+89 h_p: 1.76 15.56 | K_p: 0.43 1.71 2.34 4.42 26.05
+97 h_p: 1.84 7.19 9.51 | K_p: 0.43 36.95
+101 h_p: 1.39 1.45 1.87 14.43 | K_p: 0.42 4.72 4.96 28.47
+103 h_p: 1.50 5.50 12.44 | K_p: 0.42 5.30 6.55 26.90
+107 h_p: 5.44 14.60 | K_p: 0.42 3.27 36.68
+Traceback (most recent call last):
+  File "/workspace/bgs-lineN/code/n1_factor.py", line 35, in <module>
+    F=pari(f"iferr(alarm({TL},factor({N})),E,0)")
+  File "cypari2/pari_instance.pyx", line 800, in cypari2.pari_instance.Pari.__call__
+  File "cypari2/gen.pyx", line 4784, in cypari2.gen.objtogen
+  File "cypari2/convert.pyx", line 545, in cypari2.convert.PyObject_AsGEN
+cysignals.signals.AlarmInterrupt

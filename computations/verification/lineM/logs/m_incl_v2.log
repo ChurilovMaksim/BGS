@@ -1,0 +1,4 @@
+certified: |Z|^2>=4mh holds for odd m in [first, 20001]; first = 15 ; failures >= first: []
+odd m < 15 where certified bound does not suffice: [9, 11, 13]
+monotone beyond: ratio ~ (mu/lam^(1/4))^m/sqrt(m), base 1.23278625592615983690114952360358324455181333611251426836926
+float (Line G growth_law, referee): m=11 ratio 1.13, m=13 ratio 2.22 -> [N] at m=11,13

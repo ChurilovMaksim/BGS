@@ -1,5 +1,20 @@
 # BGS research brief
 
+## Conductor structure, Theorem W⁺ and scarred conductors (Lines M and N), 31 October 2026
+
+* **Line M (no new route).** Open conductors at distinct m = 3p are disjoint ([TRACE-269](mathematics/fixed-map/lineMN_conductor_structure.md)); averaged hypotheses are not weaker
+  ([TRACE-270](mathematics/fixed-map/lineMN_conductor_structure.md)); the P* families are disjoint and the (±2,8) rule is degenerate for odd m ≥ 15 ([TRACE-272](mathematics/fixed-map/lineMN_conductor_structure.md), [TRACE-273](mathematics/fixed-map/lineMN_conductor_structure.md));
+  at the inherited level h_p (m = 3p ≥ 495) the Prop K2 floor exceeds the D7 demand by more than 1.11238^m, a no-go for positivity
+  methods ([TRACE-271](mathematics/fixed-map/lineMN_conductor_structure.md), [TRACE-275](mathematics/fixed-map/lineMN_conductor_structure.md)). Open: M4c ([TRACE-274](mathematics/fixed-map/lineMN_conductor_structure.md)) and the ±ρ pairing law M6 ([TRACE-276](mathematics/fixed-map/lineMN_conductor_structure.md)).
+* **Line N, Theorem W⁺.** Theorem W extends to q ≤ max(c_W p², c_N p^{7/3}), c_N = 10^−113.80, beyond Weil only for p ≥ 10^264.5
+  ([TRACE-278](mathematics/fixed-map/lineMN_conductor_structure.md)–[TRACE-280](mathematics/fixed-map/lineMN_conductor_structure.md)); prime q ≤ p^C via Bourgain, p₀(C) effective, constants not computed ([TRACE-281](mathematics/fixed-map/lineMN_conductor_structure.md)); composites
+  open ([TRACE-282](mathematics/fixed-map/lineMN_conductor_structure.md)).
+* **Line N, scarred conductors.** Theorem N3 ([TRACE-283](mathematics/fixed-map/lineMN_conductor_structure.md)): c = h_p carries the slow β = 1 for every p ≥ p₀ (effective, not computed),
+  so K2′'s conclusion holds without assuming frozen R′ ([TRACE-284](mathematics/fixed-map/lineMN_conductor_structure.md)); the unweighted "exclude slow orbits" target is false, and the
+  open-range target must be β-weighted (annotations on TRACE-246, 247, 258). N4: index 4 in Fix(T^p) ([TRACE-285](mathematics/fixed-map/lineMN_conductor_structure.md)).
+
+R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
+
 ## OP certified, Theorem W and K2′ without OP, and the open range in frozen R′ (Lines L, L2, L3), 31 October 2026
 
 * **OP proved.** The second moment of the true lattice-lifted k1 families is bounded without cancellation by a positive collision sum

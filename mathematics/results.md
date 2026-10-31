@@ -1,5 +1,13 @@
 # Theorem families and their limits
 
+## Conductor structure, Theorem W⁺ and scarred conductors (Lines M and N), 31 October 2026
+
+* [TRACE-269](fixed-map/lineMN_conductor_structure.md), [TRACE-270](fixed-map/lineMN_conductor_structure.md), [TRACE-277](fixed-map/lineMN_conductor_structure.md) (proved; Lean `Bgs.LineM`): strong divisibility and disjoint open conductors; averaging lemma; ord_c λ | 3p, λ^p = 1 + 2h_pε^p.
+* [TRACE-271](fixed-map/lineMN_conductor_structure.md), [TRACE-273](fixed-map/lineMN_conductor_structure.md) (proved on the Line F certificate), [TRACE-272](fixed-map/lineMN_conductor_structure.md), [TRACE-275](fixed-map/lineMN_conductor_structure.md) (proved): inherited-level no-go for positivity, (±2,8) rule degenerate, families disjoint, Prop K2 sharp.
+* [TRACE-274](fixed-map/lineMN_conductor_structure.md), [TRACE-276](fixed-map/lineMN_conductor_structure.md) (open): (±2,16) rule; ±ρ pairing law.
+* [TRACE-278](fixed-map/lineMN_conductor_structure.md)–[TRACE-280](fixed-map/lineMN_conductor_structure.md) (proved): Theorem W⁺, c_N = 10^−113.80, beyond Weil only for p ≥ 10^264.5; [TRACE-281](fixed-map/lineMN_conductor_structure.md) (proved, cited): q ≤ p^C, p₀(C) effective, constants not computed; [TRACE-282](fixed-map/lineMN_conductor_structure.md) (open).
+* [TRACE-283](fixed-map/lineMN_conductor_structure.md), [TRACE-284](fixed-map/lineMN_conductor_structure.md) (proved on the Line F certificate): scarred conductors carry slow β; K2′ is never a refutation route for p ≥ p₀. [TRACE-285](fixed-map/lineMN_conductor_structure.md) (proved; Lean `Bgs.LineN`): index 4.
+
 ## OP certified, Theorem W and K2′ without OP, and the open range in frozen R′ (Lines L, L2, L3), 31 October 2026
 
 * [TRACE-248](fixed-map/lineL_op_open_range.md), [TRACE-249](fixed-map/lineL_op_open_range.md), [TRACE-250](fixed-map/lineL_op_open_range.md) (proved): collision structure, Lemma O1, Theorem OP_abs (no cancellation).
@@ -559,7 +567,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**352 registered claims: 289 proved, 15 verification-pending, 17 conditional, 30 open, 1 refuted.**
+**369 registered claims: 303 proved, 15 verification-pending, 17 conditional, 33 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -725,7 +733,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (243 claims)
+### TRACE family (260 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -972,5 +980,22 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-266` | **PROVED** | Line L3 S4 (transfer-side spectral form at rank-p levels): if r(q) = p then Zhat^{(3p)}_beta = c_{3p} Tr_K[(I_K tensor <1\|) Pi_beta^3 (I_K tensor \|0>)], Pi_beta the p-step twisted transfer operator (given the Line G/I transfer law) |
 | `BGS-TRACE-267` | **PROVED** | Line L3 Lemma Q (exact line quadrature): (1/q) sum_{beta in l(q)} F(beta/q) = sum_{gamma in q} c_gamma; so the isotropic-line mean block energy lies in [I_k - T_k(q), I_k + T_k(q)] for every q, without Weil |
 | `BGS-TRACE-268` | **PROVED** | Line L3 Lemma E (cusp excursions): if dist(Tr(beta lambda^j)/q, Z) <= eps for k >= 3 consecutive j (0 < eps <= 1/16, beta != 0), then lambda^{k-1} <= 264 eps^2 q (beta isotropic) and <= 264 eps^2 q^2 (every beta != 0) |
+| `BGS-TRACE-269` | **PROVED** | Line M M1: gcd(h_m, h_n) = h_gcd(m,n) for odd m, n; for m = 3p every prime q != 7 dividing h_m has r(q) in {p, 3p}, so the open conductors at distinct m = 3p are pairwise disjoint (only 7 is shared) |
+| `BGS-TRACE-270` | **PROVED** | Line M M2 (averaging lemma): a positive-weight averaged form of H-natural (with delta) implies H-natural with delta/2; averaged hypotheses are never weaker |
+| `BGS-TRACE-271` | **PROVED** | Line M M3 (inherited-level no-go for positivity methods): for m = 3p >= 495 and rho = (+-2,8), the level d = h_p is included and open, and the Prop K2 per-level floor there is >= c 1.13287^m, exceeding the D7 demand by more than 1.11238^m |
+| `BGS-TRACE-272` | **PROVED** | Line M M4a: the four P* families are disjoint for every odd m (no unit lies in two families at levels <= sqrt h, primaries included; each family has exactly one primary) |
+| `BGS-TRACE-273` | **PROVED** | Line M M4b: for odd m >= 15 the (+-2,8) inclusion rule of the frozen definition includes every level d \| h with 1 < d <= sqrt h (no borderline level), on the Line F certified bound |
+| `BGS-TRACE-274` | **OPEN** | Line M M4c (open): the (+-2,16) inclusion rule degenerates (no borderline level) for m >~ 85 |
+| `BGS-TRACE-275` | **PROVED** | Line M M5 (refinement of Prop K2): at an included level d, squares offset a cross deficit X only if d >~ 4\|Z_rho\|^2/X, and minimising over the member sum gives exactly Prop K2's per-level bound -n_d \|Z_rho\|^2/d^2 (sharp within the quadratic relaxation) |
+| `BGS-TRACE-276` | **OPEN** | Line M M6 (open, conditional on C1-C4): the +-rho pairing law at all levels (cross_+ + cross_- = 2 Re sum_{a,b} conj(c_a z_a) c_b y_b (1 + s_a s_b)) |
+| `BGS-TRACE-277` | **PROVED** | Line M M7a (arithmetic): ord_c(lambda) \| 3p for c \| h_{3p}; lambda^p = 1 + 2 h_p eps^p, so lambda^p == 1 mod 2h_p; p = 2 log_lambda h_p + 2 log_lambda 2 + o(1); open prime conductors q \| h_{3p} have ord_q(lambda) <= 3p < q |
+| `BGS-TRACE-278` | **PROVED** | Line N N0 (reduction and budget): the frozen orbit average at a prime conductor q \| h_{3p} is I_k + sum_{gamma != 0} c_gamma S(gamma beta) with S a binomial sum over H = <lambda mod q> of order r in {p, 3p}; no Gauss-type phase survives; per-level threshold eps_F = eta_F/(3 A_k^F) independent of m (eps = 10^-12.51 for (+-2,8)V) |
+| `BGS-TRACE-279` | **PROVED** | Line N N1.1-N1.3: moment inequality \|S\|^{2kl} <= q^2 tau^{2kl-2k-2l} J_k J_l, energies J_2 <= 2 tau^2 - tau and J_3 <= 17.31 tau^{11/3} (q >= c_W p^2, tau >= 10^45), and the explicit binomial bounds (2,2), (2,3), (3,3) with the three-branch isotropic bound (Gauss period and both Cochrane-Pinner branches) |
+| `BGS-TRACE-280` | **PROVED** | Line N Theorem W+ (explicit beyond-Weil range): Theorem W holds, under its standing inputs and for m >= m1 (effective, not computed), for prime conductors q and 7q with q <= max(c_W p^2, c_N p^{7/3}), c_N = 10^-113.80; beyond Weil only for p >= 10^264.5 |
+| `BGS-TRACE-281` | **PROVED** | Line N N2 (qualitative extension, prime conductors): for every fixed C, Theorem W holds for prime conductors q, 7q <= p^C with p >= p0(C) = eps_F^{-1/delta(C)}, p0(C) effective, constants not computed (Bourgain, JAMS 2005) |
+| `BGS-TRACE-282` | **OPEN** | Line N (open [H]): Theorem W for composite conductors c \| h_{3p} with c <= p^C (at least two prime factors >= 2p + 1) via Bourgain's finite-ring theorem |
+| `BGS-TRACE-283` | **PROVED** | Line N Theorem N3 (scarred conductors carry slow beta): for F = (+-2,8)V, theta_F = 5.39e-6 and t_F effective, not computed, every conductor c with r = ord_c lambda > 2(N + k) and log_lambda c >= theta_F (1 + kappa) r/2 + t_F + k has the slow beta = 1; in particular c = h_p for every p >= p0 (effective, not computed) |
+| `BGS-TRACE-284` | **PROVED** | Line N Corollary N3': for every m = 3p in S+ with p >= p0 (effective, not computed) the conclusion of K2' holds without assuming frozen R' (c = h_p is open for the (+-2,8) families and carries the slow beta = 1 in (+-2,8)V), so K2' is never a refutation route there and the unweighted 'exclude slow lambda-orbits' target is false |
+| `BGS-TRACE-285` | **PROVED** | Line N N4 (identification of the inherited level): the conductor-h_p points ((1/h_p)O + O^dual)/O^dual (h_p^2 points) form a subgroup of index 4 in Fix(T^p) (4 h_p^2 points), so level-h_p twisted sums are periodic-orbit sums of the cat map |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

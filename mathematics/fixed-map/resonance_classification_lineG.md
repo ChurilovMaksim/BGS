@@ -4,6 +4,10 @@
 
 **Later work (Line H, 30 October 2026).** For the Line B kick f_B at η = 2, BGS-TRACE-209 (computer-assisted, refereed) gives W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m, on the lifted space of BGS-TRACE-197 ([lineH_49state_certificate.md](lineH_49state_certificate.md)). Conjecture R (BGS-TRACE-179) as stated is therefore refuted (registered state `refuted`; R_NSW, formerly part of 179, is the open BGS-TRACE-210). BGS-TRACE-196 stays conditional as stated; its conclusion for s = −1 holds on the lifted space. Statements below that R is not disproved describe the state before Line H.
 
+**Later work (Lines M and N, 31 October 2026).** [lineMN_conductor_structure.md](lineMN_conductor_structure.md) (BGS-TRACE-269 to BGS-TRACE-285) finds no new refutation route
+(Line M), proves the explicit Theorem W⁺ and Theorem N3 (c = h_p carries the slow β = 1 for every p ≥ p₀, effective, not computed), so
+K2′ is never a refutation route there and the open-range target must be β-weighted. R′ stays open.
+
 **Later work (Lines L, L2, L3, 31 October 2026).** [lineL_op_open_range.md](lineL_op_open_range.md) (BGS-TRACE-248 to BGS-TRACE-268) proves the operator input OP
 (BGS-TRACE-244), so Theorem W and K2′ hold under the standing inputs (BGS-TRACE-245, 246), and reduces the open range to the open mean
 hypothesis H_mean (BGS-TRACE-256), which would refute frozen R′ (BGS-TRACE-257). BGS-TRACE-206 stays open.

@@ -1,5 +1,35 @@
 # Scientific changelog
 
+## 2026-10-31 — Lines M and N: conductor structure along m = 3p, Theorem W⁺, scarred conductors (TRACE-269–285)
+
+Owner audit of PR #65 (MERGE after fixes), applied on the same branch: R1 the isotropic bound of N1.3 / Theorem W⁺ (TRACE-279, 280)
+now uses the middle Cochrane–Pinner branch λq^{1/4}τ^{−5/8} (q^{1/2} < τ ≤ q^{2/3}/3) besides the Gauss and 5/8 branches; coverage
+of the whole W⁺ range for every p is checked analytically and on a grid (lineN/integration_checks/iso_coverage.py); statement of W⁺
+unchanged. R2 the Cochrane–Pinner Thm 1.1 range is 3p^{1/3} < |A| ≤ p^{1/2} (EXT-CP-2011 locator; preprint of 5 Oct 2009, published
+text not accessible). R3 TRACE-278 budget sentence. S1–S3 family scope (±2,8), named statements in TRACE-284, annotational 283 edge
+of TRACE-246/258. No state changes.
+
+Register as project proofs (Line M, referee READY after M-F1–M-F12, applied by the author in REPORT_M_v2.md): BGS-TRACE-269 (M1,
+strong divisibility; open conductors at distinct m = 3p disjoint), 270 (M2, averaged H♮ ⇒ H♮ with δ/2), 271 (M3, inherited-level no-go
+for positivity methods, m = 3p ≥ 495, (±2,8); on the Line F certificate), 272 (M4a, P* families disjoint), 273 (M4b, (±2,8) rule
+degenerate for odd m ≥ 15; on the Line F certificate), 275 (M5, refinement of Prop K2), 277 (M7a, arithmetic; Kurlberg–Rudnick
+CMP 222 (2001) verified against the publisher, annotation only). Register as **open**: 274 (M4c) and 276 (M6, conditional on C1–C4).
+
+Line N (referee READY after N-F1–N-F10; fixes applied at integration as REPORT_N_v2.md §12, author file kept with its sha256): project
+proofs BGS-TRACE-278 (N0 reduction and budget ε_F), 279 (N1.1–N1.3; OSV Lemma 4.3, Voloch via OSV Lemma 2.1, Cochrane–Pinner Thm 1.1),
+280 (Theorem W⁺, q ≤ max(c_W p², c_N p^{7/3}), c_N = 10^−113.80, beyond Weil only for p ≥ 10^264.5; under the standing inputs of
+Theorem W, m₁ effective, not computed), 281 (prime q ≤ p^C via Bourgain JAMS 2005; p₀(C) effective, constants not computed), 283
+(Theorem N3, scarred conductors carry the slow β = 1; on the TRACE-198 certificate; t_F and p₀ effective, not computed), 284
+(Corollary N3′), 285 (N4, index 4 in Fix(T^p)). Register as **open**: 282 (composite c ≤ p^C, [H]). New external dependencies:
+EXT-OSV-2023, EXT-OSV-2024, EXT-CP-2011, EXT-BOURGAIN-2005 (`literature/lineMN_sources_20261031.md`).
+
+Annotations (states unchanged): 246 and 258 replace the [H] "covers all or most m" caveat by Theorem N3 and depend on 283; 247 and the
+Line L §6 target: the unweighted "exclude slow λ-orbits" target is false on c ≥ λ^{θr/2+t} and is restated as a β-weighted target; 238
+(refined by M5); 206. Wording (N-F6): "ineffective" → "effective, constants not computed" in lineK_harg_removal.md and REPORT_K2_v2.md
+(§9 errata, with the N-F10 pointer). README standing-inputs wording aligned with the PR #64 R1 dependency rule. New Lean modules
+`Bgs.LineMArith`, `Bgs.LineNArith` (referee files). **BGS-TRACE-206 stays open**; no refutation is claimed. There is no BGS
+counterexample and no progress on BGS-TRACE-148.
+
 ## 2026-10-31 — Lines L, L2, L3: OP certified, Theorem W and K2′ without OP, the open range in frozen R′ (TRACE-248–268)
 
 State reviews (referee tables): **BGS-TRACE-244 (OP) open → proved [P + CA]**: (OP_k, δ) holds for the four k1 lattice-lifted families

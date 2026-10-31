@@ -2,6 +2,12 @@
 
 ## Phase average, revival, and the signed sum
 
+Lines M and N (BGS-TRACE-269 to BGS-TRACE-285): by Theorem N3 (BGS-TRACE-283) the open-range target cannot be "no slow λ-orbit":
+c = h_p carries the slow β = 1 for every p ≥ p₀ (effective, not computed). The following remain open:
+* a **β-weighted** bound at the scarred conductors, h_p first: H_mean (BGS-TRACE-256) or a periodic-orbit pressure bound (N4, [H]);
+* composite conductors c ≤ p^C (BGS-TRACE-282), the (±2,16) inclusion rule (BGS-TRACE-274) and the ±ρ pairing law (BGS-TRACE-276);
+* computing t_F, p₀ (N3) and p₀(C) (Bourgain).
+
 Lines L, L2 and L3 (BGS-TRACE-248 to BGS-TRACE-268) settle the operator input OP (BGS-TRACE-244, proved), so Theorem W and K2′
 (BGS-TRACE-245, 246) hold under the standing inputs for m ≥ m₁ (effective, not computed). The following remain open:
 * **H_mean (BGS-TRACE-256)**, a mean bound for D_iso − E_b/q at the open levels c_W p² < q < L_m; it would refute frozen R′ (BGS-TRACE-257).
