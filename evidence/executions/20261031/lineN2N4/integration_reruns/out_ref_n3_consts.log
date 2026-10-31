@@ -1,0 +1,7 @@
+Lemma I V: O1->F theta=(0.5+1.2/lam)/0.75 = 0.9412 ; weight slope 0.25/lam=0.0429
+Lemma I V: F->O1 2 steps theta=(0.5+1/(2lam)+0.75/lam^2)/1.2 = 0.5066 ; |c| exponent -0.25+2.5/lam^2 = -0.1764 ; 1 step would be 0.1789
+Lemma I E: dev=0.1036 ; O1->F 2 steps theta=(dev+0.8/lam^2)/0.2=0.6355 (1 step 1.1152) ; F->O1 exponent -0.3+2.5/lam^2=-0.2264 (1 step 0.1289); F->O1 2-step theta=(dev+0.2/lam^2)/0.8=0.1368
+8V rate (L r2)^(1/3)=1.27440  Lambda margin T^3/r2/L=1.0218  kappa=T^3/(L r2)=1.02180  sqrt=1.01084  log_lam=0.00612  delta=0.00716
+8E rate (L r2)^(1/3)=1.20428  Lambda margin T^3/r2/L=1.2109  kappa=T^3/(L r2)=1.21087  sqrt=1.10040  log_lam=0.05427  delta=0.06179
+Lemma E: log_lam(264/256)+1=1.0175 ; eps giving +0.76: 0.0498
+7 h_p ~ lam^(m/6) vs L_m=lam^(0.2271 m): 1/6=0.1667 < 0.2271

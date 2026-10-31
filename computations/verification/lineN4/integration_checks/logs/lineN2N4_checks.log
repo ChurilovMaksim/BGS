@@ -1,0 +1,23 @@
+OK   r2(4000) 8V <= 1.0529012 (log 1.0529011503787689)
+OK   r2(4000) 8E <= 1.0519234 (log 1.0519233454365582)
+OK   r2(4000) 16V <= 1.0534557 (log 1.05345567103422)
+OK   r2(4000) 16E <= 1.0529202 (log 1.0529201643742354)
+OK   Lambda 8V <= 1.9656353 (log 1.9656352143215072)
+OK   Lambda 8E <= 0.4915932 (log 0.49159313580718594)
+OK   Lambda 16V <= 2.9413897 (log 2.9413896055264517)
+OK   Lambda 16E <= 0.4474396 (log 0.44743955369539606)
+OK   I-1: author 16V value 2.9413896 is below the certified bound (2.9413896055264517)
+OK   rate 8V = 1.2743738596 <= 1.27438 < T 
+OK   threshold 8V: Lambda < T^3/r2 (2.00859026903215515377891106972)
+OK   rate 8E = 0.8026569940 <= 0.80266 < T 
+OK   threshold 8E: Lambda < T^3/r2 (2.01045732471801558934804568469)
+OK   rate 16V = 1.4578839279 <= 1.45789 < T 
+OK   threshold 16V: Lambda < T^3/r2 (3.04125575141697937559215826541)
+OK   rate 16E = 0.7781141121 <= 0.77812 < T 
+OK   threshold 16E: Lambda < T^3/r2 (3.04280249014882609337345793157)
+OK   delta 8V >= 0.0071 
+OK   delta 16V >= 0.011 
+OK   slow orbit (mu*^3/lambda)^{1/3} <= 1.0644 (1.0643702893872017353240920069)
+OK   Green kernel sum = 1/4 
+OK   d_squarefree: no square hits ([N] evidence only) (2750 pairs)
+LINE_N2N4_CHECKS_OK

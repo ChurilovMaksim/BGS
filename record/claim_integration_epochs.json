@@ -1180,7 +1180,7 @@
       "id": "BGS-TRACE-206",
       "state": "open",
       "source": "mathematics/fixed-map/resonance_classification_lineG.md",
-      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed. 31 October 2026 (Line K): state unchanged (open); S+ infinite unconditionally (TRACE-235), so frozen R' is false under H-natural alone (TRACE-236) or under H-natural_mid (TRACE-239, 240); both open; no refutation claimed. 31 October 2026 (Line L): state unchanged (open); OP proved (TRACE-244), Theorem W and K2' proved under standing inputs (TRACE-245, 246); open range reduced to H_mean (TRACE-256, open; TRACE-257); no refutation claimed. 31 October 2026 (Lines M/N): state unchanged (open); no refutation route found (Line M); Theorem W+ and the qualitative prime range (TRACE-280, 281); Theorem N3 / Corollary N3' (TRACE-283, 284): K2' is never a refutation route for p >= p0, the open-range target must be beta-weighted; no refutation claimed."
+      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed. 31 October 2026 (Line K): state unchanged (open); S+ infinite unconditionally (TRACE-235), so frozen R' is false under H-natural alone (TRACE-236) or under H-natural_mid (TRACE-239, 240); both open; no refutation claimed. 31 October 2026 (Line L): state unchanged (open); OP proved (TRACE-244), Theorem W and K2' proved under standing inputs (TRACE-245, 246); open range reduced to H_mean (TRACE-256, open; TRACE-257); no refutation claimed. 31 October 2026 (Lines M/N): state unchanged (open); no refutation route found (Line M); Theorem W+ and the qualitative prime range (TRACE-280, 281); Theorem N3 / Corollary N3' (TRACE-283, 284): K2' is never a refutation route for p >= p0, the open-range target must be beta-weighted; no refutation claimed. 31 October 2026 (Lines N2-N4): state unchanged (open); Theorem A (TRACE-286) is a proved implication from the open Omega-hypothesis (TRACE-287); Theorem C' (TRACE-296) controls the unit-beta part at h_p for p with h_p squarefree; the isotropic part at q | h_p is open (TRACE-298); no refutation claimed."
     },
     {
       "id": "BGS-TRACE-207",
@@ -1276,7 +1276,7 @@
       "id": "BGS-TRACE-222",
       "state": "proved",
       "source": "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
-      "disposition": "31 October 2026 (Line J): proved (paper proof); sector-level antiunitary map RK between rho = (2,8) and (-2,8); refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line J): proved (paper proof); sector-level antiunitary map RK between rho = (2,8) and (-2,8); refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Lines N2-N4): state unchanged (proved); scope widened to arbitrary twists tau in R/Z and non-autonomous products (same proof; M6 condition C1, N3-F1)."
     },
     {
       "id": "BGS-TRACE-223",
@@ -1540,7 +1540,7 @@
       "id": "BGS-TRACE-266",
       "state": "proved",
       "source": "mathematics/fixed-map/lineL_op_open_range.md",
-      "disposition": "31 October 2026 (Line L): proved given the Line G/I transfer law (TRACE-203, 216); L3 S4 spectral form at rank-p levels; float check; refereed (L3 READY after fixes L3-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line L): proved given the Line G/I transfer law (TRACE-203, 216); L3 S4 spectral form at rank-p levels; float check; refereed (L3 READY after fixes L3-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Lines N2-N4): state unchanged (proved); scope widened to any odd conductor c with ord_c(lambda) = p, e.g. c = h_p (same proof; N2-F2; +dep 277)."
     },
     {
       "id": "BGS-TRACE-267",
@@ -1600,7 +1600,7 @@
       "id": "BGS-TRACE-276",
       "state": "open",
       "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
-      "disposition": "31 October 2026 (Lines M/N): open (conditional on C1-C4); M6 +-rho pairing law; closure: C1-C3 for (+-2,8) at squarefree levels. Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Lines M/N): open (conditional on C1-C4); M6 +-rho pairing law; closure: C1-C3 for (+-2,8) at squarefree levels. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Lines N2-N4): state unchanged (open); C1 (TRACE-222 widened) and C3 (TRACE-293) proved; C2 open; closure reduced to C2."
     },
     {
       "id": "BGS-TRACE-277",
@@ -1655,6 +1655,84 @@
       "state": "proved",
       "source": "mathematics/fixed-map/lineMN_conductor_structure.md",
       "disposition": "31 October 2026 (Lines M/N): proved (paper + Lean finite checks); N4 conductor-h_p points are a subgroup of index 4 in Fix(T^p) (N-F8); refereed (Line N READY after N-F1..F10, applied at integration as REPORT_N_v2.md section 12). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-286",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved implication (paper); N2 Theorem A: the Omega-hypothesis (TRACE-287, open) implies H-natural_mid and frozen R' false, m >= m1 (effective, not computed); not a refutation; refereed (Line N2 READY after N2-F1..F9, applied by the author in REPORT_N2_v2/v3). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-287",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): open hypothesis; N2 Omega-hypothesis (beta-weighted pressure sums); closure: proof or disproof for infinitely many m in S+. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-288",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved (paper + Lean finite checks); N2 Theorem B: class sums at h_p are periodic-orbit sums over the index-4 subgroup G_p; uses TRACE-266 widened to composite levels; refereed (Line N2 READY after N2-F1..F9, applied by the author in REPORT_N2_v2/v3). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-289",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved (paper, mod standing inputs); N2 Theorem C pressure reduction, Lambda in the O1 space or via Lemma I (N2-F1); refereed (Line N2 READY after N2-F1..F9, applied by the author in REPORT_N2_v2/v3). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-290",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved (paper + arb certificate + Lean); N2 Prop E, r_2(4000) for the four families; refereed (Line N2 READY after N2-F1..F9, applied by the author in REPORT_N2_v2/v3). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-291",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved (paper); N3 Lemma 1.1 geometric isotropic twist sequences, ord l = p; refereed (Line N3 READY after N3-F1..F11, applied by the author in REPORT_N3_v2). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-292",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved (paper); N3 Lemma 1.2 isotropic part as a line quadrature; refereed (Line N3 READY after N3-F1..F11, applied by the author in REPORT_N3_v2). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-293",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved (paper); N3 M6 condition C3, W(-rho) = conj W(rho); refereed (Line N3 READY after N3-F1..F11, applied by the author in REPORT_N3_v2). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-294",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved (paper + Lean arithmetic); N3 Lemma I / N4 Lemma I16 intertwining, p-independent constants (not computed); refereed (Line N3 READY after N3-F1..F11, applied by the author in REPORT_N3_v2); refereed (Line N4 READY after N4-F1..F9, applied at integration as REPORT_N4_v2.md section 7). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-295",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved [CA] (arb); N4 free-family Lambda: 8V <= 1.9656353, 8E <= 0.4915932, 16V <= 2.9413897 (rounded up at integration, I-1), 16E <= 0.4474396; refereed (Line N4 READY after N4-F1..F9, applied at integration as REPORT_N4_v2.md section 7). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-296",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved (paper on certified inputs) as an implication for p with h_p squarefree (squarefreeness not proved; [N] only); Theorem C' unit-point rates 1.27438 / 0.80266 / 1.45789 / 0.77812; refereed (Line N3 READY after N3-F1..F11, applied by the author in REPORT_N3_v2); refereed (Line N4 READY after N4-F1..F9, applied at integration as REPORT_N4_v2.md section 7). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-297",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): proved (paper); N4 gauge lemma up to a unimodular scalar (N4-F1); the N4 section 3.3-3.4 window analysis is superseded by Line N5 (unrefereed) and not registered; refereed (Line N4 READY after N4-F1..F9, applied at integration as REPORT_N4_v2.md section 7). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-298",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
+      "disposition": "31 October 2026 (Lines N2-N4): open; isotropic part at q | h_p (and 7q, composite d with an isotropic component); closure: proof or counterexample. Does not close TRACE-206, TRACE-148 or BGS-001."
     }
   ],
   "invariants": [

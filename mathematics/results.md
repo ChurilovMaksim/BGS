@@ -567,7 +567,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**369 registered claims: 303 proved, 15 verification-pending, 17 conditional, 33 open, 1 refuted.**
+**382 registered claims: 314 proved, 15 verification-pending, 17 conditional, 35 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -733,7 +733,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (260 claims)
+### TRACE family (273 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -933,7 +933,7 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-219` | **PROVED** | Line I: unbounded prime support of h_m (a new odd prime for every m >= 16; every finite prime set fails for all large m) |
 | `BGS-TRACE-220` | **OPEN** | Line I: Conjecture R'_A (amended mean law with actual dilation-member values) for the k1 kick at eta = 2 |
 | `BGS-TRACE-221` | **PROVED** | Line J Prop J-C: exact sector law, exact leading d = 7 coefficient B_C, exact cancellation of sectors 2, 6 and survival of sectors 0, 4 for rho = (+-2,8) |
-| `BGS-TRACE-222` | **PROVED** | Line J: sector-level antiunitary map sigma(V^(-2)_{beta,a+4}) = conj sigma(V^(+2)_{beta,a}) (and likewise for E) for the (+-2,8) twisted sector operators |
+| `BGS-TRACE-222` | **PROVED** | Line J: sector-level antiunitary map sigma(V^(-2)_{tau,a+4}) = conj sigma(V^(+2)_{tau,a}) (and likewise for E) for the (+-2,8) twisted sector operators, for every twist tau in R/Z and for every non-autonomous product (scope widened at the Lines N2-N4 integration) |
 | `BGS-TRACE-223` | **PROVED** | Line J: certified top-orbit and rest certificates for the d = 7 sector operators: \|mu_2:1\| in [1.28359503, 1.28359523], \|xi\| = \|mu* mu_2:1\| >= 2.4586893 > sqrt(lambda) |
 | `BGS-TRACE-224` | **PROVED** | Line J window lemma: for theta in [theta_lo, theta_up] subset (0, pi], among N = ceil(2 pi/theta_lo) consecutive k some cos(alpha + k theta) >= cos(theta_up/2) and some <= -cos(theta_up/2) |
 | `BGS-TRACE-225` | **PROVED** | Line J Theorem J: the frozen d = 7, (+-2,8) contribution oscillates with growth >= 1.0184224^m: both signs in every 6 consecutive members of each class mod 168 (m == 3 mod 6) |
@@ -977,7 +977,7 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-263` | **PROVED** | Line L3 S1 (walk-measure form): A = chi B_m with chi(x) = e(-nu0 y' Nm x/2h) and Bhat_m(y) = prod_{j<m} g(Tr lambda^j y), g(t) = e^{i 1.8 cos 2 pi t}, so \|Bhat_m\| = 1 |
 | `BGS-TRACE-264` | **PROVED** | Line L3 S2 (CRT split): A(q) is a level-2h/q Gauss sum of B_m on q; \|A(q)\| <= h/q and \|D_q\| <= 2h/q when \|Z\| <= h, which gives \|D_q\| <= T^m only for q >~ 1.8808^m, above L_m |
 | `BGS-TRACE-265` | **PROVED** | Line L3 S3 (no Gauss-side folding): h_{3p} = h_p (4 h_p^2 + 3); every prime of K_p = 4 h_p^2 + 3 other than 7 (rank 3) has rank 3p, so the level-K_p factor of the m = 3p phase does not reduce to m = p |
-| `BGS-TRACE-266` | **PROVED** | Line L3 S4 (transfer-side spectral form at rank-p levels): if r(q) = p then Zhat^{(3p)}_beta = c_{3p} Tr_K[(I_K tensor <1\|) Pi_beta^3 (I_K tensor \|0>)], Pi_beta the p-step twisted transfer operator (given the Line G/I transfer law) |
+| `BGS-TRACE-266` | **PROVED** | Line L3 S4 (transfer-side spectral form at rank-p levels): if r(c) = ord_c(lambda) = p for an odd conductor c (prime or composite, e.g. c = h_p) then Zhat^{(3p)}_beta = c_{3p} Tr_K[(I_K tensor <1\|) Pi_beta^3 (I_K tensor \|0>)], Pi_beta the p-step twisted transfer operator (given the Line G/I transfer law) |
 | `BGS-TRACE-267` | **PROVED** | Line L3 Lemma Q (exact line quadrature): (1/q) sum_{beta in l(q)} F(beta/q) = sum_{gamma in q} c_gamma; so the isotropic-line mean block energy lies in [I_k - T_k(q), I_k + T_k(q)] for every q, without Weil |
 | `BGS-TRACE-268` | **PROVED** | Line L3 Lemma E (cusp excursions): if dist(Tr(beta lambda^j)/q, Z) <= eps for k >= 3 consecutive j (0 < eps <= 1/16, beta != 0), then lambda^{k-1} <= 264 eps^2 q (beta isotropic) and <= 264 eps^2 q^2 (every beta != 0) |
 | `BGS-TRACE-269` | **PROVED** | Line M M1: gcd(h_m, h_n) = h_gcd(m,n) for odd m, n; for m = 3p every prime q != 7 dividing h_m has r(q) in {p, 3p}, so the open conductors at distinct m = 3p are pairwise disjoint (only 7 is shared) |
@@ -997,5 +997,18 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-283` | **PROVED** | Line N Theorem N3 (scarred conductors carry slow beta): for F = (+-2,8)V, theta_F = 5.39e-6 and t_F effective, not computed, every conductor c with r = ord_c lambda > 2(N + k) and log_lambda c >= theta_F (1 + kappa) r/2 + t_F + k has the slow beta = 1; in particular c = h_p for every p >= p0 (effective, not computed) |
 | `BGS-TRACE-284` | **PROVED** | Line N Corollary N3': for every m = 3p in S+ with p >= p0 (effective, not computed) the conclusion of K2' holds without assuming frozen R' (c = h_p is open for the (+-2,8) families and carries the slow beta = 1 in (+-2,8)V), so K2' is never a refutation route there and the unweighted 'exclude slow lambda-orbits' target is false |
 | `BGS-TRACE-285` | **PROVED** | Line N N4 (identification of the inherited level): the conductor-h_p points ((1/h_p)O + O^dual)/O^dual (h_p^2 points) form a subgroup of index 4 in Fix(T^p) (4 h_p^2 points), so level-h_p twisted sums are periodic-orbit sums of the cat map |
+| `BGS-TRACE-286` | **PROVED** | Line N2 Theorem A (beta-weighted K2'): the Omega-hypothesis (BGS-TRACE-287) implies H-natural_mid and hence that frozen R' is false along m = 3p (a proved implication; the Omega-hypothesis is open) |
+| `BGS-TRACE-287` | **OPEN** | Line N2 Omega-hypothesis (open): for infinitely many m in S+ with m >= m1 and every family F, the beta-weighted pressure sum Omega^F_m(k,a) is <= e^{o(m)} ((1 - delta) T_F)^m for some fixed k, a, delta > 0 |
+| `BGS-TRACE-288` | **PROVED** | Line N2 Theorem B: at c = h_p the class sums are periodic-orbit sums: sum_beta W_{h_p,beta} Zhat_beta = sum_{y in G_p} W(y) sum_F a_F Tr(J_F M_F(y)^3) over the index-4 subgroup G_p = (1/h_p)Z^2/Z^2 of Fix(A^p), with Fourier form and a Bowen-ball comparison with Lebesgue |
+| `BGS-TRACE-289` | **PROVED** | Line N2 Theorem C (pressure reduction): limsup_p (1/p) log E_{y in G_p} \|Zhat^F(y)\| <= log Lambda^F_{k'} + log r_2^F(k) + eta, with Lambda the k'-step cocycle norm in the O1 space (or in the Line F space via Lemma I) and r_2 a Collatz-Wielandt bound for the carry automaton |
+| `BGS-TRACE-290` | **PROVED** | Line N2 Proposition E (finite tail-free collision majorant) with arb certificates: r_2(4000) <= 1.0529012 (8V), 1.0519234 (8E), 1.0534557 (16V), 1.0529202 (16E) |
+| `BGS-TRACE-291` | **PROVED** | Line N3 Lemma 1.1 (geometric twist sequences): for prime q = qq' split, q \| h_p, the isotropic beta in the ideal q have tau_i(beta) = s l^i / q mod 1 with l = lambda mod qbar of order exactly p; unit beta have tau_i = (s1 l^i + s2 l^-i)/q |
+| `BGS-TRACE-292` | **PROVED** | Line N3 Lemma 1.2 (isotropic part as a line quadrature): at a prime q \|\| h, q \| h_p, the isotropic cross part is 2 Re(conj Z_rho ((q - 2)/q)(D_q + D_qbar)), the same weight for +-rho |
+| `BGS-TRACE-293` | **PROVED** | Line N3 M6 condition C3: W_{q,beta}(-rho) = conj W_{q,beta}(rho) at every prime level q \|\| h_m for rho = (+-2,8), and at composite levels via inheritance (isotropic weights equal) |
+| `BGS-TRACE-294` | **PROVED** | Line N3 Lemma I / Line N4 Lemma I16 (intertwining): sup_y \|\|P^{O1}_{k'}(y)\|\|^{1/k'} <= (C_I kappa_F)^{1/k'} Lambda_free^F with C_I independent of k', p and the twists, for all four families |
+| `BGS-TRACE-295` | **PROVED** | Line N4 certified free-family joint spectral radii [CA]: Lambda_free^{8V} <= 1.9656353, Lambda_free^{8E} <= 0.4915932, Lambda_free^{16V} <= 2.9413897, Lambda_free^{16E} <= 0.4474396, uniform over all twist sequences |
+| `BGS-TRACE-296` | **PROVED** | Line N3/N4 Theorem C': for p with h_p squarefree and p >= p0 (effective, not computed), the unit-beta cross part at c = h_p is O(((1 - delta) T_F)^m) for all four families, with unit-point rates (Lambda r_2)^{1/3} <= 1.27438 (8V), 0.80266 (8E), 1.45789 (16V), 0.77812 (16E) |
+| `BGS-TRACE-297` | **PROVED** | Line N4 gauge lemma: L_tau T_sigma = T_{lambda sigma} L_{tau - kappa lambda sigma}, L_tau G_nu = G_{nu/lambda} L_{tau + nu/lambda}; a product along a two-sided geometric twist t0 + a lambda^i + b lambda^-i is a gauge conjugate of L_{t0}^n up to a unimodular scalar |
+| `BGS-TRACE-298` | **OPEN** | Line N3/N4 open item: the isotropic part at q \| h_p (and at the mixed levels 7q), i.e. a bound \|D_q + D_qbar\| <= ((1 - delta) T)^m for the isotropic lines at every prime q \| h_p, together with composite d \| h_p having an isotropic prime component |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

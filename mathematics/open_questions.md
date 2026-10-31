@@ -2,6 +2,14 @@
 
 ## Phase average, revival, and the signed sum
 
+Lines N2–N4 (BGS-TRACE-286 to BGS-TRACE-298): the unit-β part at c = h_p is controlled for p with h_p squarefree (Theorem C′,
+BGS-TRACE-296). The following remain open:
+* the isotropic lines at q ∣ h_p and 7q (BGS-TRACE-298);
+* the Ω-hypothesis (BGS-TRACE-287);
+* M6 condition C2 (BGS-TRACE-276);
+* squarefreeness of h_p, or the conductor weights at q^a;
+* the K_p-prime and mixed rank-3p conductors.
+
 Lines M and N (BGS-TRACE-269 to BGS-TRACE-285): by Theorem N3 (BGS-TRACE-283) the open-range target cannot be "no slow λ-orbit":
 c = h_p carries the slow β = 1 for every p ≥ p₀ (effective, not computed). The following remain open:
 * a **β-weighted** bound at the scarred conductors, h_p first: H_mean (BGS-TRACE-256) or a periodic-orbit pressure bound (N4, [H]);
