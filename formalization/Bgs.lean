@@ -67,5 +67,6 @@ import Bgs.LineG
 import Bgs.LineH
 import Bgs.LineI
 import Bgs.LineIArith
+import Bgs.LineJArith
 
 import Bgs.Mathlib

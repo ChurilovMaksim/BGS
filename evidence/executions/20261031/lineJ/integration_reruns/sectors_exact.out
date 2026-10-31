@@ -1,0 +1,14 @@
++ cd code
++ T /workspace/bgs-derand/phase3/venv/bin/python sectors_exact.py
++ timeout 1200 nice -n 10 /workspace/bgs-derand/phase3/venv/bin/python sectors_exact.py
+9,2 k,psi0,psi1 3 1 1 sectors [0, 2, 4, 6] {0: (0.5, np.float64(5.0)), 2: (0.5, np.float64(0.0)), 4: (0.5, np.float64(1.0)), 6: (0.5, np.float64(0.0))}
+9,-2 k,psi0,psi1 5 1 1 sectors [0, 2, 4, 6] {0: (0.5, np.float64(3.0)), 2: (0.5, np.float64(0.0)), 4: (0.5, np.float64(7.0)), 6: (0.5, np.float64(0.0))}
+15,2 k,psi0,psi1 5 1 5 sectors [0, 2, 4, 6] {0: (0.5, np.float64(3.0)), 2: (0.5, np.float64(0.0)), 4: (0.5, np.float64(7.0)), 6: (0.5, np.float64(0.0))}
+15,-2 k,psi0,psi1 3 1 5 sectors [0, 2, 4, 6] {0: (0.5, np.float64(5.0)), 2: (0.5, np.float64(0.0)), 4: (0.5, np.float64(1.0)), 6: (0.5, np.float64(0.0))}
+21,2 k,psi0,psi1 3 5 5 sectors [0, 2, 4, 6] {0: (0.5, np.float64(1.0)), 2: (0.5, np.float64(0.0)), 4: (0.5, np.float64(5.0)), 6: (0.5, np.float64(0.0))}
+21,-2 k,psi0,psi1 5 5 5 sectors [0, 2, 4, 6] {0: (0.5, np.float64(7.0)), 2: (0.5, np.float64(0.0)), 4: (0.5, np.float64(3.0)), 6: (0.5, np.float64(0.0))}
+27,2 k,psi0,psi1 5 5 1 sectors [0, 2, 4, 6] {0: (0.5, np.float64(7.0)), 2: (0.5, np.float64(0.0)), 4: (0.5, np.float64(3.0)), 6: (0.5, np.float64(0.0))}
+27,-2 k,psi0,psi1 3 5 1 sectors [0, 2, 4, 6] {0: (0.5, np.float64(1.0)), 2: (0.5, np.float64(0.0)), 4: (0.5, np.float64(5.0)), 6: (0.5, np.float64(0.0))}
+ALL EXACT CHECKS PASSED
++ echo 'exit 0'
+exit 0

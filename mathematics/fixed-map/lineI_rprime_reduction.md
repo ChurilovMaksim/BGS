@@ -11,6 +11,12 @@ Registered claims (`record/claims.json`): §2 is **BGS-TRACE-211**, §3 is **BGS
 **BGS-TRACE-204** (owner decision, audit of PR #60). **BGS-TRACE-206 (Conjecture R′) stays open.** The packet
 is `computations/verification/lineI/`; the integration record is `evidence/executions/20261031/lineI/INTEGRATION.md`.
 
+**Later work (Line J, 31 October 2026).** [lineJ_d7_twisted_coefficient.md](lineJ_d7_twisted_coefficient.md) (BGS-TRACE-221 to BGS-TRACE-233) decides c(β) ≠ 0 exactly
+(BGS-TRACE-221): class 1:3 cancels exactly between ρ = (±2,8), and 2:1 survives. It proves Theorem J (BGS-TRACE-225): the frozen d = 7
+term oscillates with growth ≥ 1.0184224^m along subsequences. The heuristic statement at the end of §8 about the d = 7 cross term is
+superseded by these. Frozen R′ is refuted along m = 3p only conditionally (BGS-TRACE-231, under the open BGS-TRACE-232 and 233), and it
+stays open.
+
 **Scope.** Everything here is about the single-cosine **k1** kick 0.9 cos 2πq at η = 2 (ĝ(n) = iⁿJ_n(1.8)), the map S = [[3,4],[2,3]],
 λ = 3 + 2√2, odd m, h = h_m = Re(1+√2)^m, y′ = Im(1+√2)^m (h² + 1 = 2y′²), φ = φ(2h). Nothing here is a statement about the Line B kick,
 about Conjecture R (BGS-TRACE-179) or R_NSW (BGS-TRACE-210), or about BGS (BGS-BGS-001); there is no progress on BGS-TRACE-148.

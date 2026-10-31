@@ -1,5 +1,35 @@
 # Scientific changelog
 
+## 2026-10-31 — Line J: the d = 7 twisted coefficient in frozen R′ (TRACE-221–233)
+
+Register as project proofs:
+* BGS-TRACE-221 (Prop J-C: exact sector law; exact leading d = 7 coefficient B_C; class 1:3 cancels exactly, classes 2:1 and 0:1
+  survive; period 168; Lean core `Bgs.LineJArith`, mod-49 period only);
+* BGS-TRACE-222 (sector-level antiunitary map);
+* BGS-TRACE-224 (window lemma; Lean real-line core and constants);
+* BGS-TRACE-226 (Lemma L16 for ρ = (±2,16));
+* BGS-TRACE-228 (inheritance theorem; Lean counts only);
+* BGS-TRACE-229 (prime-level complete-sum bound);
+* BGS-TRACE-230 (r(q) lemma; Lean ring identity).
+
+Register as computer-assisted proofs:
+* BGS-TRACE-223 (certificates, |ξ| ≥ 2.4586893 > √λ);
+* BGS-TRACE-225 (Theorem J: the frozen d = 7, (±2,8) contribution to W′/m is ≥ K_j·1.0184224^m/m in absolute value, with each sign,
+  for some m in every 6 consecutive members of each class mod 168, m ≡ 3 (mod 6); a subsequence statement);
+* BGS-TRACE-227 ((±2,16) at d = 7 is ≤ 1 % for m ≥ 243).
+
+Register BGS-TRACE-231 (Theorem J3) as a **conditional** implication: frozen R′ is false along m = 3p under H♮ and H_arg; unconditionally,
+if R′ holds, the conductor ∉ {1, 7} parts must cancel the d = 7 term exponentially on S⁺. H♮ (BGS-TRACE-232) and H_arg
+(BGS-TRACE-233) are registered as **open**.
+
+**BGS-TRACE-206 stays open**: its boundary and ledger are updated, and no refutation is claimed.
+
+External theorems registered for BGS-TRACE-231: EXT-VINOGRADOV-1937, EXT-WEYL-1916 and EXT-DAVENPORT-1980. The cited IK Theorem 13.6
+was checked and replaced, since it is the minor-arc estimate only.
+
+Independent referee audit: `computations/verification/lineJ/referee/REPORT.md` (final DELTA3: ready to integrate). New Lean module:
+`Bgs.LineJArith`. There is no BGS counterexample and no progress on BGS-TRACE-148.
+
 ## 2026-10-31 — Line I: reduction of Conjecture R′ and the d = 7 twisted certificates (TRACE-211–220)
 
 Register BGS-TRACE-211 (relative phase split), BGS-TRACE-212 (dilation-coset L² law and per-member Gauss-sum formula for every odd d | h_m; Lean core `Bgs.LineI`, `Bgs.LineIArith`), BGS-TRACE-213 (exact reduction of R′ to (E″), (T″) and the dilation remainder (D), none of which is proved), BGS-TRACE-214 (Fourier/Ramanujan-sum expansion of weighted horocycle sums of |Z_ν|²), BGS-TRACE-216 (exact monomial intertwiners between the eight (m mod 24, a = ±2) operator cases), BGS-TRACE-218 (aliasing/Möbius identity for F_m) and BGS-TRACE-219 (h_m has a new odd prime factor for every m ≥ 16, so every finite prime set fails for all large m; modulo the Bilu–Hanrot–Voutier/Carmichael primitive-divisor theorem, which enters the Lean proof as a hypothesis) as project proofs. Register BGS-TRACE-215 (for the k1 kick at η = 2, d = 7 and every m ≡ 3 (mod 6): |Ẑ(β)| ≤ 6.769·10⁶·1.45^m + 6.859·10⁴ and the normalised square term 7Σ_u|δ_u|²/φ(2h_m) ≤ 0.01 for m ≥ 321; ρ = (±2,8) only, the (±2,16) level-7 members are not controlled) and BGS-TRACE-217 (classes 1:3 and 2:1 have exactly three simple twisted eigenvalues outside |z| = 1.22, with certified 1.262 < |μ| < 1.45, so r_tw > 1.262 > 1.260376 ≥ √λ/μ₀, μ₀ ≥ 1.9154712 from BGS-TRACE-198/199) as computer-assisted proofs (python-flint/arb and float BLAS with an a-priori rounding bound). Register the amended Conjecture R′_A (BGS-TRACE-220) as open, with float and heuristic evidence only. **BGS-TRACE-206 stays open**: its boundary now records the reduction, that the operator-radius route to the d = 7 cross term fails, and the heuristic, unproved risk that the frozen R′ fails at m of a few hundred (c(β) ≠ 0 is not certified). An independent referee audit (`computations/verification/lineI/referee/REPORT.md`) returned ACCEPT AFTER FIXES; rounds B1–B9 and R1–R7 and the delta fixes DF1–DF7 are applied (DF3: μ₀ from Line F's certified enclosure; DF4: `rig_dom3b` takes gmax over exact upper ends, and the class 1:3 and 2:1 certificates were rerun and remain certified at R = 1.262; DF5: I9 states the certified range; DF6/DF7: overstatements removed). Withdrawn statements ("diagonal invisible", "primitive prime p ~ h^c", "the resonance terms are exactly the large-e Möbius terms") are not registered. **Owner audit of PR #60 (MERGE AFTER FIXES):**
