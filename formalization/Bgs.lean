@@ -85,5 +85,6 @@ import Bgs.LineDCoeff
 import Bgs.LineDCoeffBridge
 import Bgs.LineBNAverage
 import Bgs.LineBNAverageBridge
+import Bgs.LineBTraceM1
 
 import Bgs.Mathlib
