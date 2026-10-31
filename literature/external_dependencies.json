@@ -1176,7 +1176,16 @@
       "mapping": "Applied with gamma = H alpha + k/56 (H != 0, k mod 56, alpha = 3 arg xi_2:1/2 pi irrational under H_arg, BGS-TRACE-233) to get sum_{p <= x, p == p0 mod 56} e(p H alpha) = o(pi(x)), hence equidistribution of (p alpha) over p == p0 (mod 56) with EXT-DAVENPORT-1980 and EXT-WEYL-1916; this makes S+ infinite of relative density 0.18001 in BGS-TRACE-231.",
       "project_sources": [
         "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
-        "literature/lineJ_sources_20261031.md"
+        "literature/lineJ_sources_20261031.md",
+        "mathematics/fixed-map/lineK_harg_removal.md",
+        "literature/lineK_sources_20261031.md"
+      ],
+      "additional_uses": [
+        {
+          "claim": "BGS-TRACE-235",
+          "source": "mathematics/fixed-map/lineK_harg_removal.md",
+          "scope": "Theorem K3 irrational case (Line K): the same application as in BGS-TRACE-231 (u.d. of (p alpha) over p == p0 mod 56), now as one branch of an unconditional case split on arg xi/2 pi; H_arg (BGS-TRACE-233) is not assumed."
+        }
       ]
     },
     {
@@ -1193,7 +1202,16 @@
       "mapping": "Applied to the subsequence of primes p == p0 (mod 56) (counting measure normalised by #{p <= x, p == p0}) with x_p = p alpha, alpha = 3 arg xi_2:1/2 pi, to pass from the exponential-sum bound (EXT-VINOGRADOV-1937) to equidistribution and hence to the density arccos(0.84431)/pi = 0.18001 of S+ in BGS-TRACE-231.",
       "project_sources": [
         "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
-        "literature/lineJ_sources_20261031.md"
+        "literature/lineJ_sources_20261031.md",
+        "mathematics/fixed-map/lineK_harg_removal.md",
+        "literature/lineK_sources_20261031.md"
+      ],
+      "additional_uses": [
+        {
+          "claim": "BGS-TRACE-235",
+          "source": "mathematics/fixed-map/lineK_harg_removal.md",
+          "scope": "Theorem K3 irrational case (Line K): Weyl criterion for the primes p == p0 (mod 56), as in BGS-TRACE-231."
+        }
       ]
     },
     {
@@ -1210,7 +1228,34 @@
       "mapping": "Applied with q = 56 and (p0, 56) = 1: #{p <= x : p == p0 mod 56} ~ pi(x)/24, so the normalisation in the equidistribution step of BGS-TRACE-231 is by a positive proportion of all primes and the o(pi(x)) of EXT-VINOGRADOV-1937 suffices.",
       "project_sources": [
         "mathematics/fixed-map/lineJ_d7_twisted_coefficient.md",
-        "literature/lineJ_sources_20261031.md"
+        "literature/lineJ_sources_20261031.md",
+        "mathematics/fixed-map/lineK_harg_removal.md",
+        "literature/lineK_sources_20261031.md"
+      ],
+      "additional_uses": [
+        {
+          "claim": "BGS-TRACE-235",
+          "source": "mathematics/fixed-map/lineK_harg_removal.md",
+          "scope": "Theorem K3 irrational case (Line K): normalisation #{p <= x : p == p0 mod 56} ~ pi(x)/24, as in BGS-TRACE-231."
+        }
+      ]
+    },
+    {
+      "id": "EXT-WEIL-1948",
+      "authors": [
+        "André Weil"
+      ],
+      "title": "On Some Exponential Sums",
+      "identifier": "DOI:10.1073/pnas.34.5.204",
+      "pinned_version": "Proceedings of the National Academy of Sciences of the USA 34 (1948), no. 5, 204-207 (published 15 May 1948; PubMed 16578290; PMC1079093)",
+      "locator": "Estimates for exponential sums attached to a multiplicative character chi of k* and an additive character omega over the rational function field k(t), derived from the Riemann hypothesis for curves over finite fields; the Kloosterman case |K(a, b; p)| <= 2 sqrt p is derived there. The text of pp. 204-205 (set-up: the character p(m) = omega[R_m(1/T)] chi[R_m(b)], conductor of degree N + d, L-series a polynomial of degree N + d - 2) was read in a search-index text extract; pp. 206-207 (the final estimates) were not read and no equation is pinned. The twisted form |sum_x chi(x) e((ax + b/x)/q)| <= 2 sqrt q (q prime, (a, b) != (0, 0) mod q) used here is the standard consequence; it was not checked against the primary page",
+      "checked_on": "2026-10-31",
+      "dependency_role": "load-bearing external theorem",
+      "mapping": "Applied in Lemma W1 (BGS-TRACE-241) with q prime, q | h_{3p}, q == +-1 mod 8, H = <l> subset F_q^* of order r(q): detecting H by the characters of F_q^* trivial on H writes sum_{h in H} e((Ah + B/h)/q) as an average of twisted Kloosterman sums (AB != 0; each <= 2 sqrt q) or Gauss sums (AB = 0; modulus sqrt q or 1), giving <= 2 sqrt q (<= sqrt q if AB = 0). Used only through W1 in Lemma W3 and the conditional Theorem W / K2' (BGS-TRACE-243, 245, 246).",
+      "project_sources": [
+        "mathematics/fixed-map/lineK_harg_removal.md",
+        "literature/lineK_sources_20261031.md",
+        "computations/verification/lineK/K2/REPORT_K2_v2.md"
       ]
     }
   ]

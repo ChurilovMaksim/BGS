@@ -1,5 +1,21 @@
 # Theorem families and their limits
 
+## H_arg removed, the light-cone identity and the Weil range in frozen R′ (Line K), 31 October 2026
+
+* [TRACE-234](fixed-map/lineK_harg_removal.md) (proved; exact integers, sieve, Lean finite part): gap lemma for b′ ≥ 447, exceptions 504, 560, 616, 840.
+* [TRACE-235](fixed-map/lineK_harg_removal.md) (proved): **Theorem K3**. S⁺ ∩ {3p : p ≡ p₀ (56)} is infinite for every unit p₀, with no hypothesis on
+  arg ξ. H_arg ([TRACE-233](fixed-map/lineJ_d7_twisted_coefficient.md)) is bypassed, not proved.
+* [TRACE-236](fixed-map/lineK_harg_removal.md) (proved, computer-assisted inputs): the J3 dichotomy holds on an infinite S⁺; frozen R′ is false under H♮
+  alone.
+* [TRACE-237](fixed-map/lineK_harg_removal.md) (proved): light-cone identity at prime levels.
+* [TRACE-238](fixed-map/lineK_harg_removal.md) (proved): large levels d ≥ L_m absorbed by positivity (non-vacuous only from m ≈ 1.68·10⁹, numerical).
+* [TRACE-240](fixed-map/lineK_harg_removal.md) (conditional): frozen R′ false under H♮ or H♮_mid ([TRACE-239](fixed-map/lineK_harg_removal.md), open).
+* [TRACE-241](fixed-map/lineK_harg_removal.md), [TRACE-242](fixed-map/lineK_harg_removal.md), [TRACE-243](fixed-map/lineK_harg_removal.md) (proved): Weil-range lemmas W1–W3 (W1 modulo the cited Weil bound, EXT-WEIL-1948).
+* [TRACE-245](fixed-map/lineK_harg_removal.md) and [TRACE-246](fixed-map/lineK_harg_removal.md) (conditional on OP, [TRACE-244](fixed-map/lineK_harg_removal.md), open): Theorem W and
+  Theorem K2′. Conjecture C1 ([TRACE-247](fixed-map/lineK_harg_removal.md)) is open.
+
+Limits: [TRACE-206](fixed-map/resonance_classification_lineG.md) (R′) stays open and is not refuted.
+
 ## The d = 7 twisted coefficient in frozen R′ (Line J), 31 October 2026
 
 * [TRACE-221](fixed-map/lineJ_d7_twisted_coefficient.md) (proved; exact checks; Lean core: mod-49 period): every top twisted orbit has coefficient exactly (8th
@@ -528,7 +544,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**317 registered claims: 258 proved, 15 verification-pending, 16 conditional, 27 open, 1 refuted.**
+**331 registered claims: 266 proved, 15 verification-pending, 19 conditional, 30 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -694,7 +710,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (208 claims)
+### TRACE family (222 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -906,5 +922,19 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-231` | **CONDITIONAL** | Line J3 Theorem J3 (conditional): frozen R' is false along m = 3p under H-natural and H_arg; unconditionally, if R' holds the conductor-not-in-{1,7} parts must cancel the d = 7 term exponentially on S+ |
 | `BGS-TRACE-232` | **OPEN** | Line J3 hypothesis H-natural: the conductor-not-in-{1,7} part O-natural_m does not cancel the d = 7 term on infinitely many m in S+ |
 | `BGS-TRACE-233` | **OPEN** | Line J3 hypothesis H_arg: arg(xi_2:1)/2 pi is irrational |
+| `BGS-TRACE-234` | **PROVED** | Line K Lemma K3 (gap lemma): for b' >= 447, b' not in {504, 560, 616, 840}, every unit class mod gcd(56, b') has maximal cyclic gap < A b' among the units mod b' in that class (A = arccos(0.84431)/pi) |
+| `BGS-TRACE-235` | **PROVED** | Line K Theorem K3: S+ contains infinitely many m = 3p with p == p0 (mod 56) for every unit p0 mod 56, unconditionally (H_arg removed) |
+| `BGS-TRACE-236` | **PROVED** | Line K Corollary K3: frozen R' implies phi^-1 O-natural_m <= -0.99 K_j 1.0184224^m + 4m + o(m) on an infinite set of m = 3p (each unit class p0 mod 56); hence H-natural alone refutes frozen R' |
+| `BGS-TRACE-237` | **PROVED** | Line K Theorem K1 (light-cone identity): for a prime q != 7, q \|\| h_m, 2 a square mod q, sum_{beta != 0} Zhat_beta W_{q,beta} = D_iso - E_b/q |
+| `BGS-TRACE-238` | **PROVED** | Line K Prop K2 (large levels by positivity): for m = 3p >= 495 the levels d >= L_m = (mu*^2/xi)^{m(1+eta_m)} contribute >= -0.01 (K_min/2) xi_lo^m; S_Z <= 0.5000001; eta_m <= (2.010 + o(1))/log(2p+1) |
+| `BGS-TRACE-239` | **OPEN** | Line K hypothesis H-natural_mid: for some delta > 0 and infinitely many m in S+, O-natural_m^{<L} >= -(1 - delta) 0.98 (K_j/2) xi_lo^m |
+| `BGS-TRACE-240` | **CONDITIONAL** | Line K Theorem K (conditional): frozen R' is false under H-natural or under the alternative hypothesis H-natural_mid |
+| `BGS-TRACE-241` | **PROVED** | Line K Lemma W1 (Weil bound over the orbit subgroup): for q prime, H = <l> subset F_q^* of order r and A, B in F_q not both 0, \|sum_{h in H} e((Ah + B/h)/q)\| <= 2 sqrt q (<= sqrt q if AB = 0); degeneracy criterion |
+| `BGS-TRACE-242` | **PROVED** | Line K Lemma W2' (non-cyclic block AM-GM, every bounded read-out): \|Tr(J X)\| <= C_J max(1, sup\|\|L\|\|)^{2k} e^2 max(1, (1/m) sum_{i<m} \|\|P(i)\|\|_HS^2)^{(Q-1)/2} |
+| `BGS-TRACE-243` | **PROVED** | Line K Lemma W3 (orbit average): (1/r) sum_{i<r} f_k(beta lambda^i/q) <= I_k + 2 sqrt q A_k/r + T_k(q) for q \|\| h, beta != 0, with T_k(q) -> 0 (6 sqrt q for conductor 7q) |
+| `BGS-TRACE-244` | **OPEN** | Line K operator input (OP_k, delta): the cat-map second moments satisfy (I_k^F)^{1/2k} <= (1 - delta) 1.28359 for every (+-2,8) family and <= (1 - delta) 1.4742 for every (+-2,16) family |
+| `BGS-TRACE-245` | **CONDITIONAL** | Line K Theorem W (conditional on OP): for p >= p0(k), the conductors q, 7q with q prime, q \| h_{3p}, q <= c_k p^2 contribute o(xi_lo^m) to O-natural on S+, including inherited copies |
+| `BGS-TRACE-246` | **CONDITIONAL** | Line K Theorem K2' (conditional on OP): frozen R' implies that for all large m in S+ some open conductor c of h_m carries a slow lambda-orbit |
+| `BGS-TRACE-247` | **OPEN** | Line K Conjecture C1: for the true twisted operator families, lim_k (I_k^F)^{1/k} = 1 |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

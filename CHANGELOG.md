@@ -1,5 +1,30 @@
 # Scientific changelog
 
+## 2026-10-31 — Line K: H_arg removed, the light-cone identity and the Weil range in frozen R′ (TRACE-234–247)
+
+Register as project proofs:
+* BGS-TRACE-234 (Lemma K3, gap lemma; exact-integer check + paper sieve; Lean `Bgs.LineKFinite` for the finite part, the full gap
+  range by kernel-`decide` chunk files kept **outside** `lake build Bgs` and recompiled at integration, the 100-modulus chunk 1547..1646
+  re-split into five 20-modulus chunks for memory);
+* BGS-TRACE-235 (**Theorem K3**: S⁺ ∩ {3p : p ≡ p₀ (56)} is infinite for every unit p₀, **unconditionally**; H_arg is bypassed by a
+  case split, not proved);
+* BGS-TRACE-236 (Corollary K3: the dichotomy on an infinite S⁺; the refutation of frozen R′ is conditional on H♮ alone);
+* BGS-TRACE-237 (Theorem K1: light-cone identity at prime levels q ∥ h, 2 a square mod q; exact check q ≤ 47);
+* BGS-TRACE-238 (Prop K2: levels d ≥ L_m absorbed by positivity; S_Z ≤ 0.5000001; non-vacuous only from m ≈ 1.68·10⁹ [N]);
+* BGS-TRACE-241 (Lemma W1, modulo the Weil bound EXT-WEIL-1948), BGS-TRACE-242 (Lemma W2′, every bounded read-out, after referee
+  W-F7 applied at integration), BGS-TRACE-243 (Lemma W3).
+
+Register as **conditional**: BGS-TRACE-240 (Theorem K: frozen R′ false under H♮ or H♮_mid), BGS-TRACE-245 (Theorem W) and
+BGS-TRACE-246 (Theorem K2′), both conditional on the operator input OP. Register as **open**: BGS-TRACE-239 (H♮_mid, an alternative to
+H♮, not a weakening), BGS-TRACE-244 (OP) and BGS-TRACE-247 (Conjecture C1).
+
+BGS-TRACE-231 stays conditional; its closure condition now needs only H♮ (BGS-TRACE-232). BGS-TRACE-233 (H_arg) stays open: it is no
+longer needed for 231 and is **bypassed, not proved**. **BGS-TRACE-206 stays open**; no refutation is claimed.
+
+New external theorem: EXT-WEIL-1948. New Lean module: `Bgs.LineKFinite`. Independent referee audit:
+`computations/verification/lineK/referee/REPORT.md` (DELTA: ready to integrate; DELTA2: K2 ready after W-F7). There is no BGS
+counterexample and no progress on BGS-TRACE-148.
+
 ## 2026-10-31 — Line J: the d = 7 twisted coefficient in frozen R′ (TRACE-221–233)
 
 Register as project proofs:
