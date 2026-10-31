@@ -1,0 +1,64 @@
+## $ python3 computations/maintenance/render_bibliography.py --check
+bibliography-render: OK
+exit 0
+
+## $ python3 computations/maintenance/render_claim_registry.py --check
+claim-registry-render: OK
+exit 0
+
+## $ python3 computations/maintenance/render_errata.py --check
+errata-render: OK
+exit 0
+
+## $ python3 computations/maintenance/render_research_views.py --check
+Research navigation views synchronized
+exit 0
+
+## $ python3 computations/maintenance/render_spectral_research.py --check
+PASS: spectral thematic views and review matrix
+exit 0
+
+## $ python3 computations/maintenance/render_status.py --check
+status-render: OK
+exit 0
+
+## $ python3 computations/verification/scientific_registry_audit.py
+scientific-registry-audit: OK (382 claims, 68 external dependencies)
+exit 0
+
+## $ python3 computations/verification/repository_audit.py
+PASS check_maintenance_surface
+PASS check_cpp_coverage
+PASS check_lean_coverage
+PASS check_bilingual_readmes
+PASS check_active_markdown_links
+PASS repository_audit
+exit 0
+
+## $ python3 computations/verification/wave3_integration_audit.py
+  "exact_convex_controls": 1486,
+  "independent_floating_controls": 8708,
+  "Wave2_section_unchanged": true,
+  "unavailable_author222_replayed": false,
+  "scope": "Byte/lineage/scope/link checks; no additional proof audit or aggregate build."
+}
+exit 0
+
+## $ python3 computations/verification/wave2_integration_audit.py
+  File "/workspace/lineL-integ/integ/computations/verification/wave2_integration_audit.py", line 238, in run
+    require(sha(path)==c['integrated_wrapper_sha256'],'integrated wrapper mapping changed')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/lineL-integ/integ/computations/verification/wave2_checked_replay.py", line 30, in require
+    raise RuntimeError(message)
+RuntimeError: integrated wrapper mapping changed
+exit 1
+
+## $ python3 computations/maintenance/audit_manuscript_references.py --check
+  "labels": 669,
+  "references": 254,
+  "unresolved_labels": [],
+  "duplicate_labels": [],
+  "errors": []
+}
+exit 0
+
