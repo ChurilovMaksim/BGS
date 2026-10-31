@@ -13,6 +13,7 @@
   Caveat: Line N5 (under refereeing, not registered) reports that the 16D = 1 isotropic family at h_p has rate 1.42785 > T and a
   positive cross contribution ≈ 2.735^m > ξ_lo^m; if confirmed, this target and the Ω-hypothesis fail along m = 3p.
 * **Theorem A** ([TRACE-286](mathematics/fixed-map/lineN2N4_inherited_level.md)) is a proved implication from the open Ω-hypothesis ([TRACE-287](mathematics/fixed-map/lineN2N4_inherited_level.md)).
+* **Gas route (Lines N5–N19b).** Theorem R♯-mod v3 ([TRACE-299](mathematics/fixed-map/lineN5N18_gas_conditional.md), conditional) reduces a refutation of frozen R′ along m = 3p to the open inputs H1–H8 ([TRACE-300](mathematics/fixed-map/lineN5N18_gas_conditional.md)–306); proved/certified ingredients TRACE-307–319 and 321 (incl. p₁ ≥ 1390, first prime 1399, and Lemma 1), pending TRACE-320, 322–324. Frozen R′ is not refuted. Canonical statement: THEOREM_DRAFT_v4 (final referee lineN16).
 * The N4 §3.3–§3.4 window numbers are superseded by Line N5, which is not yet refereed; they are not registered.
 
 R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.

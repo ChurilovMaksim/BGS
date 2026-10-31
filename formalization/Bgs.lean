@@ -96,5 +96,16 @@ import Bgs.LineNArith
 import Bgs.LineN2Arith
 import Bgs.LineN3Arith
 import Bgs.LineN4Arith
+import Bgs.LineN5Arith
+import Bgs.LineN6Arith
+import Bgs.LineN7Arith
+import Bgs.LineN8Arith
+import Bgs.LineN10Arith
+import Bgs.LineN11Arith
+import Bgs.LineN12Arith
+import Bgs.LineN13Arith
+import Bgs.LineN14Arith
+import Bgs.LineN15Arith
+import Bgs.LineN16Arith
 
 import Bgs.Mathlib

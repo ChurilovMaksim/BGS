@@ -1,0 +1,274 @@
+{
+ "c_star": 0.3870028112593766,
+ "need": 0.3410940559463239,
+ "args": {
+  "A_trivial_index_loss": {
+   "c": 1.0,
+   "theta_max": 0.1935014056296883,
+   "d_max_base": 1.406485522967966
+  },
+  "B_coarser_separation_sup_leftover_true_norm": {
+   "c": 0.7375315186833117,
+   "theta_max": 0.26236357461053234,
+   "d_max_base": 1.5880083956044102
+  },
+  "B2_same_with_PropE_majorant_sup_g0": {
+   "c": 0.9440087218294937,
+   "theta_max": 0.20497840873194642,
+   "d_max_base": 1.4352299937098234
+  },
+  "C_min_shift_pressure_theta_half_fixedpoint_lower": {
+   "c": 0.8261279826698895,
+   "theta_max": 0.23422691119156658,
+   "d_max_base": 1.511167945644588
+  }
+ },
+ "classification": [
+  [
+   5,
+   "prime",
+   null
+  ],
+  [
+   7,
+   "prime",
+   null
+  ],
+  [
+   11,
+   "composite",
+   {
+    "factors": [
+     "23",
+     "353"
+    ],
+    "theta_max_iso": 0.3025477991157463,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   13,
+   "composite",
+   {
+    "factors": [
+     "79",
+     "599"
+    ],
+    "theta_max_iso": 0.2790775711345015,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   17,
+   "composite",
+   {
+    "factors": [
+     "103",
+     "15607"
+    ],
+    "theta_max_iso": 0.322206788850543,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   19,
+   "prime",
+   null
+  ],
+  [
+   23,
+   "composite",
+   {
+    "factors": [
+     "47",
+     "6771937"
+    ],
+    "theta_max_iso": 0.3879393717601332,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   29,
+   "prime",
+   null
+  ],
+  [
+   31,
+   "composite",
+   {
+    "factors": [
+     "424577",
+     "865087"
+    ],
+    "theta_max_iso": 0.2501700930087997,
+    "covered_A": false,
+    "covered_B": true
+   }
+  ],
+  [
+   37,
+   "composite",
+   {
+    "factors": [
+     "223",
+     "37223",
+     "8761009"
+    ],
+    "theta_max_iso": 0.40646787717608573,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   41,
+   "composite",
+   {
+    "factors": [
+     "2297",
+     "302663",
+     "3553471"
+    ],
+    "theta_max_iso": 0.3833236606897787,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   43,
+   "composite",
+   {
+    "factors": [
+     "19609",
+     "153511",
+     "4783321"
+    ],
+    "theta_max_iso": 0.3604597327711506,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   47,
+   "prime",
+   null
+  ],
+  [
+   53,
+   "composite",
+   {
+    "factors": [
+     "9940681",
+     "9742382798081"
+    ],
+    "theta_max_iso": 0.3201211099783509,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   59,
+   "prime",
+   null
+  ],
+  [
+   61,
+   "composite",
+   {
+    "factors": [
+     "92111",
+     "1213319877845761591"
+    ],
+    "theta_max_iso": 0.38724848917994725,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   67,
+   "composite",
+   {
+    "factors": [
+     "681400319",
+     "32474209598556281"
+    ],
+    "theta_max_iso": 0.32191291650551973,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   71,
+   "composite",
+   {
+    "factors": [
+     "1279",
+     "215983",
+     "2721156687009413567"
+    ],
+    "theta_max_iso": 0.43730192251556965,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   73,
+   "composite",
+   {
+    "factors": [
+     "2593399",
+     "3626711833",
+     "465814116463"
+    ],
+    "theta_max_iso": 0.37984487270642886,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   79,
+   "composite",
+   {
+    "factors": [
+     "34129",
+     "2939707079",
+     "8646125287954009"
+    ],
+    "theta_max_iso": 0.42006830691315145,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   83,
+   "composite",
+   {
+    "factors": [
+     "167",
+     "1600823657",
+     "5205877529",
+     "21173759489"
+    ],
+    "theta_max_iso": 0.4602814584334819,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ],
+  [
+   89,
+   "composite",
+   {
+    "factors": [
+     "2671",
+     "2184399715923584421940461280831"
+    ],
+    "theta_max_iso": 0.4452886966123964,
+    "covered_A": false,
+    "covered_B": false
+   }
+  ]
+ ]
+}

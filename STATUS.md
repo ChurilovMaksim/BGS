@@ -14,16 +14,16 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-10-31**. **382 registered claims.**
+**2026-11-01**. **408 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 314 |
-| verification-pending | 15 |
-| conditional | 17 |
-| open | 35 |
+| proved | 328 |
+| verification-pending | 19 |
+| conditional | 18 |
+| open | 42 |
 | refuted | 1 |
-| **Total** | **382** |
+| **Total** | **408** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -44,12 +44,12 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 0 | 23 |
 | RET | 3 | 0 | 1 | 0 | 0 | 4 |
-| TRACE | 216 | 13 | 12 | 31 | 1 | 273 |
-| **Total** | 314 | 15 | 17 | 35 | 1 | **382** |
+| TRACE | 230 | 17 | 13 | 38 | 1 | 299 |
+| **Total** | 328 | 19 | 18 | 42 | 1 | **408** |
 
 ## Open programme obligations
 
-35 registered claims are open. Their closure
+42 registered claims are open. Their closure
 conditions are registered per claim in `record/claims.json` and
 rendered in full in the [claim registry](record/claim_registry.md).
 
@@ -90,6 +90,13 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-282` | Line N (open [H]): Theorem W for composite conductors c \| h_{3p} with c <= p^C (at least two prime factors >= 2p + 1) via Bourgain's finite-ring theorem | [mathematics/fixed-map/lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
 | `BGS-TRACE-287` | Line N2 Omega-hypothesis (open): for infinitely many m in S+ with m >= m1 and every family F, the beta-weighted pressure sum Omega^F_m(k,a) is <= e^{o(m)} ((1 - delta) T_F)^m for some fixed k, a, delta > 0 | [mathematics/fixed-map/lineN2N4_inherited_level.md](mathematics/fixed-map/lineN2N4_inherited_level.md) |
 | `BGS-TRACE-298` | Line N3/N4 open item: the isotropic part at q \| h_p (and at the mixed levels 7q), i.e. a bound \|D_q + D_qbar\| <= ((1 - delta) T)^m for the isotropic lines at every prime q \| h_p, together with composite d \| h_p having an isotropic prime component | [mathematics/fixed-map/lineN2N4_inherited_level.md](mathematics/fixed-map/lineN2N4_inherited_level.md) |
+| `BGS-TRACE-300` | Line N hypothesis H1 (open [H]): collision lemma - lattice-to-collision reduction for shell sums with constant C <= 0.082 at J0 = 12, plus the A_bad tail j > 12 | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-301` | Line N hypothesis H3 (open): Kotecky-Preiss polymer weight e^{a\|gamma\|} with a = 5.93e-6 at g0 = 4 (log -> modulus), finite part certified, tail j > 12 = H1 | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-302` | Line N hypothesis H4 (open, no working route): core -> true conversion of the interaction constant, now = difference-form (pair-minus-product) conversion + the G > 15 true-functional tail | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-303` | Line N hypothesis H5 (open): composite h_p - (a) mixed classes (R-mix) E_{mixed,d} F_p <= e^{o(p)} d^c r_2^p with c < 0.387 uniformly in d \| h_p; (b) the 2^omega - 2 cross lines; (c) partially isotropic points; or p in P = {h_p prime} | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-304` | Line N hypothesis H6 (open): inputs of Theorem C' - an explicit p0 and squarefreeness of h_p (or conductor-q^a weights) | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-305` | Line N hypothesis H7* (open): for included levels d not in {h_p} u {e h_p}, d < L_fl = h_p^{1+o(1)}: \|Lin_d\| <= eps_d \|Z_rho\|^2/h_p with sum eps_d <= kappa0, i.e. cross-correlation growth < T' = 1.42785; needed even for prime h_p | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-306` | Line N hypothesis H8 (open): deep wrap-around points of gap (a) at composite h_p - free if per-point weights are not d-amplified, otherwise need c < 1.1718 l0 / ln d (= 0.6647 l0 / log_lambda d) | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 
 ## Corrections
 
@@ -103,7 +110,7 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 279 follow-on claims adopted after
+It records 305 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 29 external IDs.

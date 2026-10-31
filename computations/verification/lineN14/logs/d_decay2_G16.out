@@ -1,0 +1,127 @@
+single odd [0.3020870971386381, 0.2429771524790694] Gam [np.float64(2.105846543262473), np.float64(2.8886757558443947)]
+single odd|h0|s1 [0.3020870971386381, 0.2429771524790694] Gam [np.float64(2.105846543262473), np.float64(2.8886757558443947)]
+/workspace/bgs-lineN/N14/code/d_decay2.py:99: RuntimeWarning: invalid value encountered in scalar divide
+  ratio_last=per[-1]['cls']/per[-2]['cls']))
+{"i": "odd", "j": "odd", "h": 0, "s": 1, "sum_cls": 0.026548468734975295} G0 cls 0.0182 rate nan
+single odd|h0|s-1 [0.30208709713863796, 0.24297715247906923] Gam [np.float64(2.1058465432624724), np.float64(2.8886757558443947)]
+{"i": "odd", "j": "odd", "h": 0, "s": -1, "sum_cls": 0.026548468734975295} G0 cls 0.0182 rate nan
+single odd|h1|s1 [0.24297715247906934, 0.30208709713863796] Gam [np.float64(2.888675755844395), np.float64(2.1058465432624724)]
+{"i": "odd", "j": "odd", "h": 1, "s": 1, "sum_cls": 0.013025353848026056} G0 cls 0.00835 rate nan
+single odd|h1|s-1 [0.2429771524790702, 0.3020870971386381] Gam [np.float64(2.888675755844395), np.float64(2.105846543262473)]
+{"i": "odd", "j": "odd", "h": 1, "s": -1, "sum_cls": 0.013025353848026056} G0 cls 0.00835 rate nan
+single sq2|h0|s1 [0.17393745860241988, 0.17979587798253896] Gam [np.float64(2.621676755435065), np.float64(2.5904547796557247)]
+{"i": "odd", "j": "sq2", "h": 0, "s": 1, "sum_cls": 0.03850663380652297} G0 cls 0.0261 rate nan
+single sq2|h0|s-1 [0.17393745860242024, 0.17979587798253918] Gam [np.float64(2.621676755435065), np.float64(2.590454779655722)]
+{"i": "odd", "j": "sq2", "h": 0, "s": -1, "sum_cls": 0.03850663380652297} G0 cls 0.0261 rate nan
+single sq2|h1|s1 [0.17979587798253913, 0.17393745860242024] Gam [np.float64(2.590454779655722), np.float64(2.621676755435065)]
+{"i": "odd", "j": "sq2", "h": 1, "s": 1, "sum_cls": 0.01809578136609513} G0 cls 0.0117 rate nan
+single sq2|h1|s-1 [0.17979587798253863, 0.17393745860241988] Gam [np.float64(2.5904547796557247), np.float64(2.621676755435065)]
+{"i": "odd", "j": "sq2", "h": 1, "s": -1, "sum_cls": 0.01809578136609513} G0 cls 0.0117 rate nan
+single two|h0|s1 [0.1476133085002229, 0.10071289764489676] Gam [np.float64(3.14667841453106), np.float64(1.8686895029407604)]
+{"i": "odd", "j": "two", "h": 0, "s": 1, "sum_cls": 0.05479257194777909} G0 cls 0.0372 rate nan
+single two|h0|s-1 [0.14761330850022322, 0.10071289764489706] Gam [np.float64(3.14667841453106), np.float64(1.8686895029407604)]
+{"i": "odd", "j": "two", "h": 0, "s": -1, "sum_cls": 0.05479257194777909} G0 cls 0.0372 rate nan
+single two|h1|s1 [0.1007128976448969, 0.14761330850022322] Gam [np.float64(1.8686895029407606), np.float64(3.14667841453106)]
+{"i": "odd", "j": "two", "h": 1, "s": 1, "sum_cls": 0.024586957268977194} G0 cls 0.0161 rate nan
+single two|h1|s-1 [0.10071289764489681, 0.1476133085002229] Gam [np.float64(1.8686895029407606), np.float64(3.14667841453106)]
+{"i": "odd", "j": "two", "h": 1, "s": -1, "sum_cls": 0.024586957268977194} G0 cls 0.0161 rate nan
+single 2sq2|h0|s1 [0.038369963609483984, 0.06790846731118919] Gam [np.float64(2.823792198007415), np.float64(2.3315385409875846)]
+{"i": "odd", "j": "2sq2", "h": 0, "s": 1, "sum_cls": 0.08636143443016087} G0 cls 0.0566 rate nan
+single 2sq2|h0|s-1 [0.03836996360948414, 0.06790846731118896] Gam [np.float64(2.823792198007415), np.float64(2.331538540987585)]
+{"i": "odd", "j": "2sq2", "h": 0, "s": -1, "sum_cls": 0.08636143443016087} G0 cls 0.0566 rate nan
+single 2sq2|h1|s1 [0.06790846731118898, 0.03836996360948414] Gam [np.float64(2.331538540987585), np.float64(2.823792198007415)]
+{"i": "odd", "j": "2sq2", "h": 1, "s": 1, "sum_cls": 0.040051520147759145} G0 cls 0.0251 rate nan
+single 2sq2|h1|s-1 [0.06790846731118907, 0.038369963609483984] Gam [np.float64(2.3315385409875846), np.float64(2.823792198007415)]
+{"i": "odd", "j": "2sq2", "h": 1, "s": -1, "sum_cls": 0.040051520147759145} G0 cls 0.0251 rate nan
+single four|h0|s1 [0.021905043122458508, 0.059550475300054244] Gam [np.float64(2.275778910533382), np.float64(2.8706797877182173)]
+{"i": "odd", "j": "four", "h": 0, "s": 1, "sum_cls": 0.11956398566302728} G0 cls 0.0793 rate nan
+single four|h0|s-1 [0.021905043122458532, 0.05955047530005425] Gam [np.float64(2.275778910533385), np.float64(2.8706797877182173)]
+{"i": "odd", "j": "four", "h": 0, "s": -1, "sum_cls": 0.11956398566302595} G0 cls 0.0793 rate nan
+single four|h1|s1 [0.05955047530005428, 0.021905043122458532] Gam [np.float64(2.8706797877182173), np.float64(2.275778910533385)]
+{"i": "odd", "j": "four", "h": 1, "s": 1, "sum_cls": 0.05680038203763971} G0 cls 0.0356 rate nan
+single four|h1|s-1 [0.05955047530005419, 0.021905043122458508] Gam [np.float64(2.8706797877182173), np.float64(2.275778910533382)]
+{"i": "odd", "j": "four", "h": 1, "s": -1, "sum_cls": 0.05680038203764037} G0 cls 0.0356 rate nan
+single sq2 [0.17393745860241988, 0.17979587798253896] Gam [np.float64(2.621676755435065), np.float64(2.5904547796557247)]
+{"i": "sq2", "j": "odd", "h": 0, "s": 1, "sum_cls": 0.034783451312030866} G0 cls 0.0238 rate nan
+{"i": "sq2", "j": "odd", "h": 0, "s": -1, "sum_cls": 0.034783451312030866} G0 cls 0.0238 rate nan
+{"i": "sq2", "j": "odd", "h": 1, "s": 1, "sum_cls": 0.0172682915155149} G0 cls 0.011 rate nan
+{"i": "sq2", "j": "odd", "h": 1, "s": -1, "sum_cls": 0.0172682915155149} G0 cls 0.011 rate nan
+{"i": "sq2", "j": "sq2", "h": 0, "s": 1, "sum_cls": 0.050594014639855356} G0 cls 0.0343 rate nan
+{"i": "sq2", "j": "sq2", "h": 0, "s": -1, "sum_cls": 0.050594014639855356} G0 cls 0.0343 rate nan
+{"i": "sq2", "j": "sq2", "h": 1, "s": 1, "sum_cls": 0.023966866646252916} G0 cls 0.0154 rate nan
+{"i": "sq2", "j": "sq2", "h": 1, "s": -1, "sum_cls": 0.023966866646252916} G0 cls 0.0154 rate nan
+{"i": "sq2", "j": "two", "h": 0, "s": 1, "sum_cls": 0.07209315093276203} G0 cls 0.0488 rate nan
+{"i": "sq2", "j": "two", "h": 0, "s": -1, "sum_cls": 0.07209315093276203} G0 cls 0.0488 rate nan
+{"i": "sq2", "j": "two", "h": 1, "s": 1, "sum_cls": 0.032485490261135785} G0 cls 0.0212 rate nan
+{"i": "sq2", "j": "two", "h": 1, "s": -1, "sum_cls": 0.032485490261135785} G0 cls 0.0212 rate nan
+{"i": "sq2", "j": "2sq2", "h": 0, "s": 1, "sum_cls": 0.11475218726673275} G0 cls 0.0749 rate nan
+{"i": "sq2", "j": "2sq2", "h": 0, "s": -1, "sum_cls": 0.11475218726673275} G0 cls 0.0749 rate nan
+{"i": "sq2", "j": "2sq2", "h": 1, "s": 1, "sum_cls": 0.05344938599709148} G0 cls 0.0332 rate nan
+{"i": "sq2", "j": "2sq2", "h": 1, "s": -1, "sum_cls": 0.05344938599709148} G0 cls 0.0332 rate nan
+{"i": "sq2", "j": "four", "h": 0, "s": 1, "sum_cls": 0.15892295888929242} G0 cls 0.105 rate nan
+{"i": "sq2", "j": "four", "h": 0, "s": -1, "sum_cls": 0.15892295888929242} G0 cls 0.105 rate nan
+{"i": "sq2", "j": "four", "h": 1, "s": 1, "sum_cls": 0.07590660104999425} G0 cls 0.0472 rate nan
+{"i": "sq2", "j": "four", "h": 1, "s": -1, "sum_cls": 0.07590660104999492} G0 cls 0.0472 rate nan
+single two [0.1476133085002229, 0.10071289764489676] Gam [np.float64(3.14667841453106), np.float64(1.8686895029407604)]
+{"i": "two", "j": "odd", "h": 0, "s": 1, "sum_cls": 0.040673885297900725} G0 cls 0.0276 rate nan
+{"i": "two", "j": "odd", "h": 0, "s": -1, "sum_cls": 0.040673885297900725} G0 cls 0.0276 rate nan
+{"i": "two", "j": "odd", "h": 1, "s": 1, "sum_cls": 0.020898749879083356} G0 cls 0.0131 rate nan
+{"i": "two", "j": "odd", "h": 1, "s": -1, "sum_cls": 0.020898749879083356} G0 cls 0.0131 rate nan
+{"i": "two", "j": "sq2", "h": 0, "s": 1, "sum_cls": 0.05950591199988553} G0 cls 0.0399 rate nan
+{"i": "two", "j": "sq2", "h": 0, "s": -1, "sum_cls": 0.05950591199988553} G0 cls 0.0399 rate nan
+{"i": "two", "j": "sq2", "h": 1, "s": 1, "sum_cls": 0.02891431472336059} G0 cls 0.0182 rate nan
+{"i": "two", "j": "sq2", "h": 1, "s": -1, "sum_cls": 0.02891431472336059} G0 cls 0.0182 rate nan
+{"i": "two", "j": "two", "h": 0, "s": 1, "sum_cls": 0.08491631870291494} G0 cls 0.057 rate nan
+{"i": "two", "j": "two", "h": 0, "s": -1, "sum_cls": 0.08491631870291494} G0 cls 0.057 rate nan
+{"i": "two", "j": "two", "h": 1, "s": 1, "sum_cls": 0.03889667417689302} G0 cls 0.025 rate nan
+{"i": "two", "j": "two", "h": 1, "s": -1, "sum_cls": 0.03889667417689302} G0 cls 0.025 rate nan
+{"i": "two", "j": "2sq2", "h": 0, "s": 1, "sum_cls": 0.13828627523999204} G0 cls 0.0889 rate nan
+{"i": "two", "j": "2sq2", "h": 0, "s": -1, "sum_cls": 0.13828627523999204} G0 cls 0.0889 rate nan
+{"i": "two", "j": "2sq2", "h": 1, "s": 1, "sum_cls": 0.06565601549809297} G0 cls 0.0399 rate nan
+{"i": "two", "j": "2sq2", "h": 1, "s": -1, "sum_cls": 0.06565601549809297} G0 cls 0.0399 rate nan
+{"i": "two", "j": "four", "h": 0, "s": 1, "sum_cls": 0.19079968588110696} G0 cls 0.125 rate nan
+{"i": "two", "j": "four", "h": 0, "s": -1, "sum_cls": 0.1907996858811063} G0 cls 0.125 rate nan
+{"i": "two", "j": "four", "h": 1, "s": 1, "sum_cls": 0.09333618746082673} G0 cls 0.0569 rate nan
+{"i": "two", "j": "four", "h": 1, "s": -1, "sum_cls": 0.09333618746082673} G0 cls 0.0569 rate nan
+single 2sq2 [0.038369963609483984, 0.06790846731118919] Gam [np.float64(2.823792198007415), np.float64(2.3315385409875846)]
+{"i": "2sq2", "j": "odd", "h": 0, "s": 1, "sum_cls": 0.10137227210101707} G0 cls 0.0704 rate nan
+{"i": "2sq2", "j": "odd", "h": 0, "s": -1, "sum_cls": 0.10137227210101707} G0 cls 0.0704 rate nan
+{"i": "2sq2", "j": "odd", "h": 1, "s": 1, "sum_cls": 0.04736898294973346} G0 cls 0.0311 rate nan
+{"i": "2sq2", "j": "odd", "h": 1, "s": -1, "sum_cls": 0.04736898294973346} G0 cls 0.0311 rate nan
+{"i": "2sq2", "j": "sq2", "h": 0, "s": 1, "sum_cls": 0.14724579479338917} G0 cls 0.102 rate nan
+{"i": "2sq2", "j": "sq2", "h": 0, "s": -1, "sum_cls": 0.14724579479338917} G0 cls 0.102 rate nan
+{"i": "2sq2", "j": "sq2", "h": 1, "s": 1, "sum_cls": 0.06625903229780383} G0 cls 0.0439 rate nan
+{"i": "2sq2", "j": "sq2", "h": 1, "s": -1, "sum_cls": 0.0662590322978045} G0 cls 0.0439 rate nan
+{"i": "2sq2", "j": "two", "h": 0, "s": 1, "sum_cls": 0.2114200903454544} G0 cls 0.147 rate nan
+{"i": "2sq2", "j": "two", "h": 0, "s": -1, "sum_cls": 0.2114200903454535} G0 cls 0.147 rate nan
+{"i": "2sq2", "j": "two", "h": 1, "s": 1, "sum_cls": 0.09122556951515381} G0 cls 0.0612 rate nan
+{"i": "2sq2", "j": "two", "h": 1, "s": -1, "sum_cls": 0.09122556951515381} G0 cls 0.0612 rate nan
+{"i": "2sq2", "j": "2sq2", "h": 0, "s": 1, "sum_cls": 0.3307225957093056} G0 cls 0.225 rate nan
+{"i": "2sq2", "j": "2sq2", "h": 0, "s": -1, "sum_cls": 0.3307225957093043} G0 cls 0.225 rate nan
+{"i": "2sq2", "j": "2sq2", "h": 1, "s": 1, "sum_cls": 0.14525796584536388} G0 cls 0.0941 rate nan
+{"i": "2sq2", "j": "2sq2", "h": 1, "s": -1, "sum_cls": 0.14525796584536477} G0 cls 0.0941 rate nan
+{"i": "2sq2", "j": "four", "h": 0, "s": 1, "sum_cls": 0.46985447219640375} G0 cls 0.325 rate nan
+{"i": "2sq2", "j": "four", "h": 0, "s": -1, "sum_cls": 0.4698544721964022} G0 cls 0.325 rate nan
+{"i": "2sq2", "j": "four", "h": 1, "s": 1, "sum_cls": 0.2078744222695721} G0 cls 0.135 rate nan
+{"i": "2sq2", "j": "four", "h": 1, "s": -1, "sum_cls": 0.2078744222695721} G0 cls 0.135 rate nan
+single four [0.021905043122458508, 0.059550475300054244] Gam [np.float64(2.275778910533382), np.float64(2.8706797877182173)]
+{"i": "four", "j": "odd", "h": 0, "s": 1, "sum_cls": 0.1447504442041665} G0 cls 0.101 rate nan
+{"i": "four", "j": "odd", "h": 0, "s": -1, "sum_cls": 0.1447504442041665} G0 cls 0.101 rate nan
+{"i": "four", "j": "odd", "h": 1, "s": 1, "sum_cls": 0.06729534556407502} G0 cls 0.0443 rate nan
+{"i": "four", "j": "odd", "h": 1, "s": -1, "sum_cls": 0.06729534556407502} G0 cls 0.0443 rate nan
+{"i": "four", "j": "sq2", "h": 0, "s": 1, "sum_cls": 0.21105765899979567} G0 cls 0.147 rate nan
+{"i": "four", "j": "sq2", "h": 0, "s": -1, "sum_cls": 0.21105765899979567} G0 cls 0.147 rate nan
+{"i": "four", "j": "sq2", "h": 1, "s": 1, "sum_cls": 0.0942977690932636} G0 cls 0.0626 rate nan
+{"i": "four", "j": "sq2", "h": 1, "s": -1, "sum_cls": 0.09429776909326426} G0 cls 0.0626 rate nan
+{"i": "four", "j": "two", "h": 0, "s": 1, "sum_cls": 0.30468178839840165} G0 cls 0.213 rate nan
+{"i": "four", "j": "two", "h": 0, "s": -1, "sum_cls": 0.3046817883984019} G0 cls 0.213 rate nan
+{"i": "four", "j": "two", "h": 1, "s": 1, "sum_cls": 0.13011136632122144} G0 cls 0.0876 rate nan
+{"i": "four", "j": "two", "h": 1, "s": -1, "sum_cls": 0.13011136632122144} G0 cls 0.0876 rate nan
+{"i": "four", "j": "2sq2", "h": 0, "s": 1, "sum_cls": 0.480849062498659} G0 cls 0.33 rate nan
+{"i": "four", "j": "2sq2", "h": 0, "s": -1, "sum_cls": 0.4808490624986581} G0 cls 0.33 rate nan
+{"i": "four", "j": "2sq2", "h": 1, "s": 1, "sum_cls": 0.20801392559310172} G0 cls 0.135 rate nan
+{"i": "four", "j": "2sq2", "h": 1, "s": -1, "sum_cls": 0.20801392559310306} G0 cls 0.135 rate nan
+{"i": "four", "j": "four", "h": 0, "s": 1, "sum_cls": 0.6909565907826831} G0 cls 0.483 rate nan
+{"i": "four", "j": "four", "h": 0, "s": -1, "sum_cls": 0.6909565907826807} G0 cls 0.483 rate nan
+{"i": "four", "j": "four", "h": 1, "s": 1, "sum_cls": 0.2991801562937231} G0 cls 0.196 rate nan
+{"i": "four", "j": "four", "h": 1, "s": -1, "sum_cls": 0.29918015629372374} G0 cls 0.196 rate nan

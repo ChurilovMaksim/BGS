@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "status_authority": "record/claims.json",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -9864,6 +9864,619 @@
       "formalization": [],
       "manuscript": [],
       "closure_condition": "A proof that for infinitely many m = 3p in S+ (with m >= m1) the isotropic cross part at every prime q | h_p, at the mixed levels 7q and at composite d | h_p with an isotropic prime component is <= e^{o(m)} ((1 - delta) T_F)^m for every family F, or a counterexample (an infinite family of m where it exceeds T_F^m)."
+    },
+    {
+      "id": "BGS-TRACE-299",
+      "title": "Line N Theorem R#-mod v3 (conditional): if H0-H8 (BGS-TRACE-300..306 and the standing package) hold at p and B_p >= kappa > 0 for infinitely many primes p >= p_thr, then W'_{3p}/m -> infinity and frozen R' is false along m = 3p (conditional; not a refutation)",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-206",
+        "BGS-TRACE-213",
+        "BGS-TRACE-271",
+        "BGS-TRACE-273",
+        "BGS-TRACE-227",
+        "BGS-TRACE-296",
+        "BGS-TRACE-210",
+        "BGS-TRACE-300",
+        "BGS-TRACE-301",
+        "BGS-TRACE-302",
+        "BGS-TRACE-303",
+        "BGS-TRACE-304",
+        "BGS-TRACE-305",
+        "BGS-TRACE-306",
+        "BGS-TRACE-307",
+        "BGS-TRACE-309",
+        "BGS-TRACE-310",
+        "BGS-TRACE-313",
+        "BGS-TRACE-314",
+        "BGS-TRACE-315",
+        "BGS-TRACE-317",
+        "BGS-TRACE-318",
+        "BGS-TRACE-324"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. Statement [P mod inputs H0-H8; assembly]: for p prime, m = 3p, p >= p_thr (max of the thresholds: p0 of C' (H6, not computed), Prop X' p >= 1289, eps16 p >= 339, BGS-TRACE-227 p >= 81, BGS-TRACE-271 p >= 165, gas-vs-Robin p1 >= 1390 (first prime 1399) under the idealisation of BGS-TRACE-318, a lower bound for the true p1 since the G > 15 part of delta is open (H4); p1 with all budgets not computed), W'_{3p}/m >= -4 + m^-1 sum_{rho = (+-2,8)} S_rho B_p, B_p := (n/h_p)[(2(1 + Re Lambda_lo')^p e^{-p delta} - 1 - |X_tail| - |X_cross| - |Y| - e^{-0.28p})^2 - 1] - I_p - eps_16 - eps_fl - eps_other, with S_rho >= c 1.13287^m (BGS-TRACE-271; mu*^2/eps^{4/3} = 1.1328794, Lean Bgs.LineN16.scale_gt_113287; the 1.13288 of draft v3 rounded the rate up), I_p = sigma(K_p)/K_p - 1 <= e^gamma ln ln K_p + 0.6483/ln ln K_p - 1 (Robin 1984, Thm 2), delta the TRUE-functional interaction constant (all G; G > 15 open = H4). Hypotheses: H0 standing package of N6 Theorem R# (Line F/J/J3/L16 trace representation, BGS-TRACE-197/199/207/212/213/228; Prop X architecture, BGS-TRACE-324; n_cert [CA]); H1 collision lemma (BGS-TRACE-300); H2 core interaction (met, BGS-TRACE-307); H3 KP polymer weight (BGS-TRACE-301); H4 core->true conversion (BGS-TRACE-302); H5 composite h_p (BGS-TRACE-303) or p in P = {h_p prime}; H6 C' inputs (BGS-TRACE-304); H7* levels other than h_p (BGS-TRACE-305); H8 wrap-around (BGS-TRACE-306). Subsequence version: on P (h_p prime) H5 holds, H6 reduces to p0, H8 reduces to H1 [P-sketch]; R' fails along m = 3p, p in P, if H0-H4, H6 (p0), H7* (K_p levels incl. prime powers) hold, p >= p_thr and P is infinite; infinitude of P is equivalent to the failure of R_NSW (BGS-TRACE-210) and is open. Only B_p >= kappa is needed (REPORT_N17b_v2 section 2). The gas growth beats Robin on inherited levels but not the unconditional tau(h_m) <= e^{Theta(p/log p)} (Nicolas-Robin 1983), so floors absorb only d >= L_fl and H7* is needed below. Unconditionally proved: no refutation of R' and no single-p inequality in the large-p regime; small-p data (W' tables m <= 17; level data m = 21, 33, 39; the TW-law estimate +2.95 at m = 57) are [N] only and not registered. Canonical statement: THEOREM_DRAFT_v4 (v1-v3 kept as history). v2 bookkeeping checked by referee lineN15 item 20; v3 checked by the final referee lineN16 (GO once edits E1-E7 are made; applied in v4, diff check only). Superseded and withdrawn items (draft section 6, incl. the N18b robin() erratum: crossovers 1382/1386 and '12.77 at p = 1289' superseded by 1386/1390 and 12.85) are not registered.",
+      "state": "conditional",
+      "ledger_status": "CONDITIONAL THEOREM [P MOD INPUTS H0-H8] (ASSEMBLY; THE INPUTS H1, H3, H4, H5, H6, H7*, H8 ARE OPEN; FROZEN R' IS NOT REFUTED) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED)) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN16/referee/REPORT.md; FINAL PASS: N16 READY AFTER MINOR FIXES N16-1..4; N18b READY AFTER R1 (robin() FIX, N19b); THEOREM_DRAFT_v3 GO ONCE EDITS E1-E7 ARE MADE, APPLIED IN THEOREM_DRAFT_v4)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN19b/REPORT_N17b_v3.md",
+        "computations/verification/lineN_theorem_draft/THEOREM_DRAFT_v4.md"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineN5Arith.lean",
+        "formalization/Bgs/LineN6Arith.lean",
+        "formalization/Bgs/LineN10Arith.lean",
+        "formalization/Bgs/LineN12Arith.lean",
+        "formalization/Bgs/LineN15Arith.lean",
+        "formalization/Bgs/LineN16Arith.lean"
+      ],
+      "manuscript": [],
+      "closure_condition": "Close every open input H1, H3, H4, H5 (or infinitude of P), H6, H7*, H8 (BGS-TRACE-300..306), compute p_thr with all budgets, and show B_p >= kappa > 0 for infinitely many p; or disprove an input in a way that kills the route."
+    },
+    {
+      "id": "BGS-TRACE-300",
+      "title": "Line N hypothesis H1 (open [H]): collision lemma - lattice-to-collision reduction for shell sums with constant C <= 0.082 at J0 = 12, plus the A_bad tail j > 12",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-309",
+        "BGS-TRACE-312"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. [H] Statement: the shell sums of the gas satisfy the lattice -> collision reduction with collision constant C <= 0.082 at J0 = 12, and the A_bad tail j > 12 is bounded (the value 1.56e-8 used in N15 kp.py is an [H] placeholder, N15-F1, not Lemma D). Proved: exact carry reduction and torus-mean identity (BGS-TRACE-312). [N] only (not registered): carry sums with |e| <= 3 (n <= 6) and |e| <= 1 (n <= 12) equal the i.i.d. value to relative <= 1.7e-9 (about 1.35e-11 for n >= 5; reproduced without cancellation, lineN16 section 1a); |e| >= 4 not computed ([H] negligible: isolated-carry entry weights 7e-3, 3e-8, 2e-15 for c = 1, 2, 3); N15's apparent prefactor non-convergence was an artefact of the share proxy (N16 section 1). Margin [N]: C_emp = 4.4e-4 vs 0.082 (186x, Lean Bgs.LineN16.coll_margin; the 150x of draft v1/v2 was the N14 budget margin). Missing: certified multi-step carry operators (phase-keeping certificate on the 633 pair states) and the box/aliasing constants of the Poisson step.",
+      "state": "open",
+      "ledger_status": "OPEN HYPOTHESIS [H] (INPUT H1 OF BGS-TRACE-299) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "A phase-keeping carry certificate on the 633 pair states (or an analytic Gram tail), the box/aliasing constants of the Poisson step, C <= 0.082 at J0 = 12 and a proved j > 12 tail."
+    },
+    {
+      "id": "BGS-TRACE-301",
+      "title": "Line N hypothesis H3 (open): Kotecky-Preiss polymer weight e^{a|gamma|} with a = 5.93e-6 at g0 = 4 (log -> modulus), finite part certified, tail j > 12 = H1",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-300",
+        "BGS-TRACE-307",
+        "BGS-TRACE-321"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. N15 section 4: a = 5.93e-6 at g0 = 4, S0 = 2.063e-6; S0 + S1/(1 + g0) <= a for g0 = 2..6 (Lean Bgs.LineN15.kp_g2..kp_g6); A_bad^KP + delta_int = 2.5774e-6 (Bgs.LineN15.kp_budget). KP criterion [P] (Kotecky-Preiss 1986, anchored-cluster corollary for the per-site log-correction: Ueltschi 2004, Fernandez-Procacci 2007; N15-F2). Finite part [CA-fp]; tail j > 12 = H1 ([H] placeholder, N15-F1); background interplay, tail l-weighting and polymer normalisation [P-sketch]. Open because of the [H] tail and the [P-sketch] parts.",
+      "state": "open",
+      "ledger_status": "OPEN (FINITE PART [CA-fp], KP CRITERION [P] CITED, TAIL [H] = H1, WRITE-UP [P-sketch]; INPUT H3 OF BGS-TRACE-299) + LEAN ARITHMETIC (Bgs.LineN15.kp_g2..kp_g6, kp_budget) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN15/code/kp.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineN15Arith.lean"
+      ],
+      "manuscript": [],
+      "closure_condition": "Proof of the j > 12 tail (H1) and written-out KP corollary, background interplay and polymer normalisation."
+    },
+    {
+      "id": "BGS-TRACE-302",
+      "title": "Line N hypothesis H4 (open, no working route): core -> true conversion of the interaction constant, now = difference-form (pair-minus-product) conversion + the G > 15 true-functional tail",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-307",
+        "BGS-TRACE-322"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. The H-product route is vacuous (N15 section 5). Vector-chain conversion per window: E/|r| ~ 2e-3 for singles, ~ 8% (median) for pair windows, max 5.27 [P-sketch lemma, which must include the second-order dPi^2 ||Q|| term; CA-fp numerics], giving delta_true(G <= 15) <= 2.470e-6 (BGS-TRACE-322). Under box widening the G > 15 bound is flat (~1.5e-7 per G), so it is not controlled; the pair-window error is dominated (~93%) by the accumulated per-step core -> true perturbation, so a difference-form conversion must cancel that term, not only the end-projector term (N16 section 2; lineN16 section 1); single-core conversion <= 2.094e-8 relative [CA]+[P-sketch].",
+      "state": "open",
+      "ledger_status": "OPEN (NO WORKING ROUTE; INPUT H4 OF BGS-TRACE-299) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN16/referee/REPORT.md; FINAL PASS: N16 READY AFTER MINOR FIXES N16-1..4; N18b READY AFTER R1 (robin() FIX, N19b); THEOREM_DRAFT_v3 GO ONCE EDITS E1-E7 ARE MADE, APPLIED IN THEOREM_DRAFT_v4)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "A difference-form (pair-minus-product) core -> true conversion cancelling the per-step perturbation (dominant) and end-projector terms, and a bound on the G > 15 true-functional tail."
+    },
+    {
+      "id": "BGS-TRACE-303",
+      "title": "Line N hypothesis H5 (open): composite h_p - (a) mixed classes (R-mix) E_{mixed,d} F_p <= e^{o(p)} d^c r_2^p with c < 0.387 uniformly in d | h_p; (b) the 2^omega - 2 cross lines; (c) partially isotropic points; or p in P = {h_p prime}",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-313",
+        "BGS-TRACE-319",
+        "BGS-TRACE-320"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. (b) was omitted in draft v1/v2 (N7-F6). Partial: c_B = 0.7375 at [P-sketch] (asymptotic, constants ignored; BGS-TRACE-320), covering iso parts d <= 1.588^p; p = 31 (h_31 = 424577 * 865087, balanced semiprime, theta_max = 0.250 < 0.262) is covered by this, not by P. Evidence c <= 0 is [N]. No known theorem applies (N15b literature check, not refereed). On P (a)-(c) vanish.",
+      "state": "open",
+      "ledger_status": "OPEN (INPUT H5 OF BGS-TRACE-299) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN14/referee/REPORT.md; N13b/N14b READY AFTER MINOR FIXES; N14 READY AFTER F14.1, CLOSED BY lineN15)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "Prove (R-mix) with c < 0.387 uniformly in d | h_p together with bounds for the cross lines and partially isotropic points, or restrict to P and prove P infinite (equivalent to the failure of R_NSW, BGS-TRACE-210)."
+    },
+    {
+      "id": "BGS-TRACE-304",
+      "title": "Line N hypothesis H6 (open): inputs of Theorem C' - an explicit p0 and squarefreeness of h_p (or conductor-q^a weights)",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-296",
+        "BGS-TRACE-315"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). C' is [P + CA* mod H6] (BGS-TRACE-296); p0 is not computed; squarefreeness of h_p is a Wieferich-type open question (N3-F8). The old 'level 7 h_p unit points' clause (N3-F9) is subsumed by the inherited-level floor I_p (7 | K_p, BGS-TRACE-315), on or off P.",
+      "state": "open",
+      "ledger_status": "OPEN (INPUT H6 OF BGS-TRACE-299) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "An explicit p0 for C' and either h_p squarefree (for the p used) or C' with conductor-q^a weights."
+    },
+    {
+      "id": "BGS-TRACE-305",
+      "title": "Line N hypothesis H7* (open): for included levels d not in {h_p} u {e h_p}, d < L_fl = h_p^{1+o(1)}: |Lin_d| <= eps_d |Z_rho|^2/h_p with sum eps_d <= kappa0, i.e. cross-correlation growth < T' = 1.42785; needed even for prime h_p",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-223",
+        "BGS-TRACE-227",
+        "BGS-TRACE-238",
+        "BGS-TRACE-244",
+        "BGS-TRACE-251",
+        "BGS-TRACE-252",
+        "BGS-TRACE-265",
+        "BGS-TRACE-273",
+        "BGS-TRACE-275",
+        "BGS-TRACE-280",
+        "BGS-TRACE-281",
+        "BGS-TRACE-282",
+        "BGS-TRACE-317"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. Covered: d = 7 (BGS-TRACE-223, |mu_{1:3}| <= 1.2837144 [CA]; (+-2,16) level-7 members via N7 / BGS-TRACE-227, per the BGS-TRACE-215/217 caveat); inherited levels (I_p floor) [P]; d >= L_fl (floor) [P]; inclusion (BGS-TRACE-273). Weil range: OP proved (BGS-TRACE-244/251); Theorem W proved under standing inputs, non-vacuous only for p >~ 8.3e25 (BGS-TRACE-252; m1 uncomputed); extensions BGS-TRACE-280/281 (beyond-Weil non-empty only for p >= 10^264.5); composite conductors open (BGS-TRACE-282); covers nothing at realistic p. OPEN: hp-div, mixed and all K_p levels including prime powers (31^2 | K_5, 7^2 | K_7; rank 3p, BGS-TRACE-265). Floor analogue Prop K2 (BGS-TRACE-238/275). Non-h_p Dev numerics (small, mixed signs, REPORT_N17b_v2 section 4) are [N], not registered.",
+      "state": "open",
+      "ledger_status": "OPEN (INPUT H7* OF BGS-TRACE-299) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "Bounds |Lin_d| <= eps_d |Z_rho|^2/h_p with sum eps_d <= kappa0 for the hp-div, mixed and K_p levels (incl. prime powers) below L_fl."
+    },
+    {
+      "id": "BGS-TRACE-306",
+      "title": "Line N hypothesis H8 (open): deep wrap-around points of gap (a) at composite h_p - free if per-point weights are not d-amplified, otherwise need c < 1.1718 l0 / ln d (= 0.6647 l0 / log_lambda d)",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-300",
+        "BGS-TRACE-308",
+        "BGS-TRACE-320"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. Prime h_p: reduces to H1 [P-sketch]. The threshold is [P] arithmetic conditional on the subgroup second-moment lemma and H1 (q = (lambda rhobar^2)^{3/2} from the l^3 <= l^2 step), rhobar_true = 0.28028 [P-sketch from BGS-TRACE-308]; with rhobar = 0.30: 0.9678 l0/ln d = 0.5490 l0/log_lambda d. N14 section 3's '0.97 l0/log_lambda d' (mixed units) is withdrawn (N16b section 1(b), lineN15 section 1g).",
+      "state": "open",
+      "ledger_status": "OPEN (INPUT H8 OF BGS-TRACE-299; THRESHOLD ARITHMETIC [P], CONDITIONAL) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "The subgroup second-moment lemma, H1, and either non-amplified per-point weights or c < 1.1718 l0/ln d."
+    },
+    {
+      "id": "BGS-TRACE-307",
+      "title": "Line N H2 met [CA-fp]: core interaction constant delta_int^core <= 5.14476e-7 (c3_mid, closed F14.1; referee arb 5.1447502e-7)",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-309",
+        "BGS-TRACE-311"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. [CA-fp] IEEE binary64 with derived a-priori rounding bounds (standard model + libm <= 1 ulp): kappa_der < 5.879e-14, KAP = 1e-13 + 2u (Lean Bgs.LineN15.epsc_bound, kapd_bound, kap_slack); coded upper 5.144750e-7 <= 5.14476e-7 (dint_round). Referee arb confirmation 5.1447502e-7 (lineN15 section 1b). Superseded: c2_mid radii and 5.14415e-7 / 5.14416e-7. The Lemma D core tail G > 15 <= 1.56e-8 is [P+N] and not part of this claim. This is the CORE functional; the true functional is H4 (BGS-TRACE-302).",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED [CA-fp] (IEEE STANDARD MODEL + LIBM <= 1 ULP; REFEREE ARB REPLAY) + LEAN ARITHMETIC (Bgs.LineN15) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN15/code/c3_mid.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineN15Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-308",
+      "title": "Line N [CA-fp]: rhobar <= 0.28 by an eigen-solver-free residual certificate (N15 b_cp3)",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-309"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. [CA-fp]. Not part of this claim: the core -> true value 0.28028 [P-sketch] and the tensor joint-pair claim [H].",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED [CA-fp] + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN15/code/b_cp3.py",
+        "computations/verification/lineN14/code/b_cp2.py"
+      ],
+      "formalization": [],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-309",
+      "title": "Line N11 coding lemma [P]: the isotropic sum at q = h_p is coded by the gas, X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part), and |1 + X_gas| >= 2(1 + Re Lambda)^p e^{-p delta} - 1 given the model form",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-213",
+        "BGS-TRACE-313"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. [P] coding lemma (N11 section 3). The lower bound (N11 section 0) is [P given the model form]; the invalid (1 + Re Lambda - delta)^p form of draft v1/v2 is withdrawn (N11-F4).",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF [P] (LOWER BOUND GIVEN THE MODEL FORM) + LEAN ARITHMETIC (Bgs.LineN11) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN11/referee/REPORT.md; N11 READY AFTER FIXES F1, F2, F6; REPORT_N11_v2 FIXES CHECKED BY lineN12)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN11/code/c_coding.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineN11Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-310",
+      "title": "Line N [CA]: Re Lambda_lo >= 6.238e-4 (Re Lambda_lo' = 6.234e-4 after charges)",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-198",
+        "BGS-TRACE-309"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. [CA] (N11 section 0, N14).",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED [CA] + INDEPENDENT REFEREE AUDIT (computations/verification/lineN11/referee/REPORT.md; N11 READY AFTER FIXES F1, F2, F6; REPORT_N11_v2 FIXES CHECKED BY lineN12) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN14/referee/REPORT.md; N13b/N14b READY AFTER MINOR FIXES; N14 READY AFTER F14.1, CLOSED BY lineN15)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs/LineN11Arith.lean",
+        "formalization/Bgs/LineN14Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-311",
+      "title": "Line N13 adapted norm [CA] (cond_H 21.103, Lip_H 167.213, Qtilde 0.45) and quadratic step bound N_H <= 1 + 1.01e-12 + 4260 t^2 for |t| <= 1/256 [CA]+[P]",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-309"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. Scope of the quadratic bound: |t| <= 1/256 only (lineN13 partition); the |t| > 1/256 table is BGS-TRACE-323.",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED [CA] (ARB, b_arb.py; REFEREE ARB REPLAY OF V1-V3, lineN12) + PAPER PROOF [P] + LEAN ARITHMETIC (Bgs.LineN13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN13/referee/REPORT.md; N13 READY AFTER FIXES F1-F3; ACCEPTED BY lineN14 (N13_v2))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN13/code/b_arb.py",
+        "computations/verification/lineN13/code/b2_quad.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineN12Arith.lean",
+        "formalization/Bgs/LineN13Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-312",
+      "title": "Line N15 exact carry reduction [P]: |e| <= 15 (sharp |e| <= 14, 29 values, 633 reachable pair states) and the torus-mean identity [P]",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-309"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. The sharp |e| <= 14 and the count 633 are the referee's (N15-F3, audit lineN15 section 1e).",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF [P] + REFEREE ENUMERATION + LEAN ARITHMETIC (Bgs.LineN15) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs/LineN15Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-313",
+      "title": "Line N7/N8b Lemmas P, P' (all isotropic points at q = h_p, with the 4-fixed-point correction N8b-F3), P'_c, the classification and the weight amplification A_c [P]",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-229",
+        "BGS-TRACE-285"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [P] (N7; N8b sections 1-3). The p-uniform Lemma A-infinity (N7/N8) and hypothesis G (N8b) are withdrawn and not registered.",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF [P] + LEAN ARITHMETIC (Bgs.LineN7, Bgs.LineN8) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN7/referee/REPORT.md; N7 READY AFTER FIXES; FIXES APPLIED IN REPORT_N7_v2, ACCEPTED BY lineN10) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN8/referee/REPORT.md; N8/N8b READY AFTER FIXES; 4-FIXED-POINT ERRATUM N8b-F3 UPHELD; FIXES ACCEPTED BY lineN10/lineN11)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs/LineN7Arith.lean",
+        "formalization/Bgs/LineN8Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-314",
+      "title": "Line N7: the (+-2,16) contribution is closed at all levels for p >= 339 (two-term B16 form; crude form p >= 498) [CA]+[P]",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-198",
+        "BGS-TRACE-226",
+        "BGS-TRACE-227",
+        "BGS-TRACE-228",
+        "BGS-TRACE-229"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [CA]+[P]; the dom certificates use J3 rig_spec for spectral containment between the contours, so the result inherits the [CA] standing of BGS-TRACE-227 (N7-F2); linear algebra float with gamma_n bounds. 'p >~ 415' is withdrawn.",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED [CA] (INHERITS J3 rig_spec, N7-F2) + PAPER PROOF [P] + LEAN ARITHMETIC (Bgs.LineN7) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN7/referee/REPORT.md; N7 READY AFTER FIXES; FIXES APPLIED IN REPORT_N7_v2, ACCEPTED BY lineN10)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN7/code/a_dom16.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineN7Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-315",
+      "title": "Line N17b K_p arithmetic [P]: h_{3p} = h_p K_p with K_p = 4 h_p^2 + 3, 7 | K_p, gcd(h_p, K_p) | 3; h_15 = 7 * 31^2 * 41",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-265",
+        "BGS-TRACE-277"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [P]; Lean checks p = 5, 7, 11, 13 (Bgs.LineN15.h3p_5..h3p_13, seven_K, h15); numeric p <= 400 (N17b a_levels.py).",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF [P] + LEAN FINITE CHECKS (Bgs.LineN15) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN17b/code/a_levels.py"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineN15Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-316",
+      "title": "Line N17b CRT count [P]: at h = 8119 = 23 * 353 (m = 33) S = CRT and n = 7371 = 21 * 351; 7743 - 7371 = 372 are the non-unit nu excluded by BGS-TRACE-206",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-206",
+        "BGS-TRACE-315"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [P]; Lean Bgs.LineN15.tot8119, crt_counts, nratio. B1 correction: the 372 are not hp-div members; the equality 372 = 21 + 351 is a coincidence (REPORT_N17b_v2 section 5(b)).",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF [P] + LEAN ARITHMETIC (Bgs.LineN15) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs/LineN15Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-317",
+      "title": "Line N17b level bookkeeping [P]: W'_m = NR part + phi^-1 sum Dev_d(rho) (BGS-TRACE-213), NR >= -RMT >= -4m, level floor -(h_p/d) S_rho, inclusion m0 = 15",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-206",
+        "BGS-TRACE-213",
+        "BGS-TRACE-273"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [P] (N17b section 1, g_threshold.py; lineN15 section 2(c),(f)). Dev_7 values at m = 15, 21, 33, 39 (d_g3dev.py) are [N] and not registered.",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b, NOT YET REFEREED))",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN17b/code/g_threshold.py"
+      ],
+      "formalization": [],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-318",
+      "title": "Line N18b/N19b gas vs Robin crossover [P-arith]: with tails = Y = X_cross = eps = 0 and n/h_p := 1, the gas growth exceeds the Robin bound on inherited levels for all p >= 1386 (core delta) and all p >= 1390 (delta = 2.470e-6, the G <= 15 part); first prime 1399",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-307",
+        "BGS-TRACE-310"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. [P-arith: float/mpmath evaluation + monotonicity] (N19b a_crossover_v3.py, robin() corrected; v2 in N18b had the bug, to the Robin term 0.6483/ln ln K_p; REPORT_N17b_v3; referee mpmath recomputation with exact K_p, lineN16 section 2a: margins 0.0153 at p = 1386 and 0.0021 at p = 1390, no violation at any prime 1399 <= p <= 5000, Robin 12.849 at p = 1289). Monotonicity [P]: G'(p) = 4x(2x - 1) ln b increasing, envelope ln K_p <= (2p+1) ln eps, slope bound 2e^gamma/(2p+1) < 0.0219 (Lean Bgs.LineN16.env_slope_small). Scope: the stated idealisation only; 1390 is a lower bound for the true p1 because delta in B_p is the all-G true delta whose G > 15 part is open (H4); p1 with all budgets is not computed. Superseded: N18b's 1382/1386 (robin() used 0.6483/ln K_p) and 'about 1500 with v1 budgets'.",
+      "state": "proved",
+      "ledger_status": "PAPER ARITHMETIC [P-arith] (FLOAT/MPMATH EVALUATION + MONOTONICITY [P]) + LEAN ARITHMETIC (Bgs.LineN16.env_slope_small) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN16/referee/REPORT.md; FINAL PASS: N16 READY AFTER MINOR FIXES N16-1..4; N18b READY AFTER R1 (robin() FIX, N19b); THEOREM_DRAFT_v3 GO ONCE EDITS E1-E7 ARE MADE, APPLIED IN THEOREM_DRAFT_v4)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN19b/code/a_crossover_v3.py",
+        "computations/verification/lineN19b/logs/a_crossover_v3_d5.144760e-07.json",
+        "computations/verification/lineN19b/logs/a_crossover_v3_d2.470000e-06.json",
+        "computations/verification/lineN16/referee/code/ref_crossover.py",
+        "computations/verification/lineN16/referee/logs/ref_crossover.json"
+      ],
+      "formalization": [
+        "formalization/Bgs/LineN16Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-319",
+      "title": "Line N14b/N18b Lemma 1 (sublattice separation) [P]: for squarefree d with split prime factors, delta-close pairs of the conductor-d components H_d separate after n_* steps, with delta0 = 1/(4 sqrt2 (lambda+1)) = 0.025888 and constant C = 16 lambda^2 delta^2 h^2 lambda^{-p}",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-313"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [P] written-out proof REPORT_N17b_v2 section 6 (N18b), refereed line by line in lineN16 section 2b (verdict [P]) with the cosmetic fixes L1-a (C = 16 lambda^2 delta^2 h^2 lambda^{-p}, not 16 lambda delta^2 ...) and L1-b ((gamma) = d O^dual b with b integral, so |N(gamma)| = N(d) N(b)/8 >= d/8). Lean Bgs.LineN16.lemma1_C, max_sq_ge. Scope: squarefree d with split prime factors; that H_d is the set used in Lemma 2 belongs to Lemma 2 (BGS-TRACE-320, [P-sketch]).",
+      "state": "proved",
+      "ledger_status": "PAPER PROOF [P] + LEAN ARITHMETIC (Bgs.LineN16.lemma1_C, max_sq_ge) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN14/referee/REPORT.md; N13b/N14b READY AFTER MINOR FIXES; N14 READY AFTER F14.1, CLOSED BY lineN15) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN16/referee/REPORT.md; FINAL PASS: N16 READY AFTER MINOR FIXES N16-1..4; N18b READY AFTER R1 (robin() FIX, N19b); THEOREM_DRAFT_v3 GO ONCE EDITS E1-E7 ARE MADE, APPLIED IN THEOREM_DRAFT_v4)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs/LineN16Arith.lean"
+      ],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-320",
+      "title": "Line N14b Lemma 2 (subgroup C', c_B = 0.7375) [P-sketch, asymptotic, constants ignored], covering iso parts d <= 1.588^p; p = 31 covered (H5, not P)",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-296",
+        "BGS-TRACE-319"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [P-sketch] (N14b section 2); Lean Bgs.LineN14 (p31_cover). c_D = 0.899 as a ceiling (N14b) is withdrawn.",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION-PENDING [P-sketch] + LEAN ARITHMETIC (Bgs.LineN14) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN14/referee/REPORT.md; N13b/N14b READY AFTER MINOR FIXES; N14 READY AFTER F14.1, CLOSED BY lineN15)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs/LineN14Arith.lean"
+      ],
+      "manuscript": [],
+      "closure_condition": "A full proof with explicit constants (upgrade of the [P-sketch] to [P])."
+    },
+    {
+      "id": "BGS-TRACE-321",
+      "title": "Line N15 [CA-fp]: A_bad finite part j <= 12 = 2.031569e-6 at g0 = 4 (c3 radii) and short types sum |w| = 9.970e-7 (173 rows incl. alpha = 4)",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-307",
+        "BGS-TRACE-309"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. [CA-fp] (N15 a_cert3.py; N14). Referee: lineN14 spot check; c3-radii method lineN15 section 1a; lineN16 section 1e re-ran 10 classes across j = 0..12 bit-identical, absw_up >= absw_float in all 5109 rows, core total j <= 12 = 2.0315690546e-6.",
+      "state": "proved",
+      "ledger_status": "COMPUTER-ASSISTED [CA-fp] + INDEPENDENT REFEREE AUDIT (computations/verification/lineN14/referee/REPORT.md; N13b/N14b READY AFTER MINOR FIXES; N14 READY AFTER F14.1, CLOSED BY lineN15) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN16/referee/REPORT.md; FINAL PASS: N16 READY AFTER MINOR FIXES N16-1..4; N18b READY AFTER R1 (robin() FIX, N19b); THEOREM_DRAFT_v3 GO ONCE EDITS E1-E7 ARE MADE, APPLIED IN THEOREM_DRAFT_v4)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN15/code/a_cert3.py",
+        "computations/verification/lineN16/referee/code/rerun_acert3_spot.py"
+      ],
+      "formalization": [],
+      "manuscript": []
+    },
+    {
+      "id": "BGS-TRACE-322",
+      "title": "Line N16 [CA-fp]+[P-sketch]: delta_true(G <= 15) <= 2.470e-6 (vector-chain conversion per window, E/|r| ~ 1.7e-3)",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-307"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. [CA-fp] numerics with a [P-sketch] conversion lemma (N16 conv_vec.py, f_post_true.json). Numerics reproduced by lineN16 sections 1c-d (sum dev_by_G = 2.469789e-6 vs coded upper 2.469791e-6; conv_vec rerun bit-identical on 12 rows); the written lemma must include the second-order dPi^2 ||Q|| term. The G > 15 true tail is open (H4, BGS-TRACE-302).",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION-PENDING ([P-sketch] CONVERSION LEMMA; [CA-fp] NUMERICS REPRODUCED) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN16/referee/REPORT.md; FINAL PASS: N16 READY AFTER MINOR FIXES N16-1..4; N18b READY AFTER R1 (robin() FIX, N19b); THEOREM_DRAFT_v3 GO ONCE EDITS E1-E7 ARE MADE, APPLIED IN THEOREM_DRAFT_v4)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN16/code/conv_vec.py",
+        "computations/verification/lineN16/logs/f_post_true.json"
+      ],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "A written proof of the conversion lemma including the second-order dPi^2 ||Q|| term."
+    },
+    {
+      "id": "BGS-TRACE-323",
+      "title": "Line N15 [CA-fp]: SVD-free step-norm table for |t| > 1/256, max 2.91656",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-311"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Gas notation (THEOREM_DRAFT_v3 section 1): level-h_p sum phi^-1 Dev_{h_p} >= S_rho (n/h_p)(|1 + X + Y|^2 - 1), S_rho = phi^-1 |Z_rho|^2 / h_p; X the isotropic sum (at composite h_p also the 2^omega(h_p) - 2 cross lines, not coded by the gas), Y = Y_U + Y_mix + partially isotropic points; gas X_coded = 2[(1 + Lambda)^p e^{p Delta} - 1] - (dense part) (N11 section 4); delta = interaction constant; Re Lambda_lo' = 6.234e-4. [CA-fp] (N15 nh_table_rig.py). Method refereed (lineN15 section 1a); values not independently recomputed.",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION-PENDING [CA-fp] (METHOD REFEREED lineN15 SECTION 1a; VALUES NOT INDEPENDENTLY RECOMPUTED)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [
+        "computations/verification/lineN15/code/nh_table_rig.py"
+      ],
+      "formalization": [],
+      "manuscript": [],
+      "closure_condition": "Independent recomputation of the nh_table_rig.py values."
+    },
+    {
+      "id": "BGS-TRACE-324",
+      "title": "Line N8 Prop X' (explicit error, p >= 1289) with the 15 small-depth classes [CA]: [P mod Line F certificates + class CA] for the certified classes; k-parity mechanism and E-family absorption [P-sketch]",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "dependencies": [
+        "BGS-TRACE-198",
+        "BGS-TRACE-199",
+        "BGS-TRACE-313"
+      ],
+      "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [P mod certs] (N8 section 2; N8-F3/F4/F5: p >= 1289 is a choice); 15 small-depth classes (near-0 + 14) [CA] (N8 section 0). Pending because of the [P-sketch] parts.",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION-PENDING ([P MOD CERTS] WITH [P-sketch] PARTS) + LEAN ARITHMETIC (Bgs.LineN8) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN8/referee/REPORT.md; N8/N8b READY AFTER FIXES; 4-FIXED-POINT ERRATUM N8b-F3 UPHELD; FIXES ACCEPTED BY lineN10/lineN11)",
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261101/lineNgas/receipt.json"
+      ],
+      "verifiers": [],
+      "formalization": [
+        "formalization/Bgs/LineN8Arith.lean"
+      ],
+      "manuscript": [],
+      "closure_condition": "Written proofs of the k-parity mechanism and the E-family absorption (the [P-sketch] parts)."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."
