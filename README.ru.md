@@ -22,12 +22,13 @@
 ([BGS-TRACE-221](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)): класс 1:3 точно сокращается между ρ = (±2,8), а классы 2:1 и 0:1 сохраняются.
 
 Теорема J ([225](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md), с помощью компьютера, прошла рецензию) показывает, что вклад замороженного члена
-d = 7, (±2,8) в W′/m растёт как 1,0184224^m и принимает оба знака вдоль каждого класса по модулю 168. Члены (±2,16) пренебрежимо
-малы ([227](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)).
+d = 7, (±2,8) в W′/m по модулю не меньше K_j·1,0184224^m/m, с каждым знаком, хотя бы для одного m среди любых 6 последовательных членов
+каждого класса j по модулю 168 (m ≡ 3 mod 6, m ≥ M0(j)); это утверждение о подпоследовательностях. Члены (±2,16) пренебрежимо
+малы при m ≥ 243 ([227](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)).
 
 Теорема J3 ([231](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)) **условна**: замороженная R′ ложна вдоль m = 3p при двух открытых гипотезах
 ([232](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md), [233](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)). Без условий R′ потребовала бы экспоненциального сокращения
-со стороны частей с кондуктором ∉ {1, 7}. R′ ([206](mathematics/fixed-map/resonance_classification_lineG.md)) остаётся открытой.
+со стороны частей с кондуктором ∉ {1, 7} на множестве S⁺ значений m = 3p, бесконечность которого известна только при H_arg. R′ ([206](mathematics/fixed-map/resonance_classification_lineG.md)) остаётся открытой.
 
 **Редукция гипотезы R′ (линия I, 31 октября 2026 года).** Гипотеза R′ ([BGS-TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) точно сведена к трём утверждениям (E″), (T″) и (D), ни одно из которых не доказано ([BGS-TRACE-213](mathematics/fixed-map/lineI_rprime_reduction.md)). Редукция опирается на L²-закон для дилатационных смежных классов с формулой гауссовых сумм для каждого члена ([212](mathematics/fixed-map/lineI_rprime_reduction.md), с ядром на Lean). Для d = 7 квадратичная часть дилатационного остатка сертифицированно мала при m ≥ 321 (только для ρ = (±2,8); члены уровня 7 для (±2,16) не контролируются) ([215](mathematics/fixed-map/lineI_rprime_reduction.md)). Сертифицированный скрученный радиус r_tw > 1,262 > √λ/μ₀ показывает, что операторными радиусами перекрёстную часть не оценить ([217](mathematics/fixed-map/lineI_rprime_reduction.md)); оба сертификата получены с помощью компьютера и прошли рецензию. R′ остаётся открытой. Исправленная гипотеза R′_A ([220](mathematics/fixed-map/lineI_rprime_reduction.md)) открыта, и в её пользу есть только эвристические данные.
 

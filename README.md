@@ -22,12 +22,13 @@ The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum 
 ([BGS-TRACE-221](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)): class 1:3 cancels exactly between ρ = (±2,8), while classes 2:1 and 0:1 survive.
 
 Theorem J ([225](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md), computer-assisted, refereed) shows that the frozen d = 7, (±2,8) contribution to W′/m
-grows like 1.0184224^m with both signs along every class mod 168. The (±2,16) members are negligible
+is at least K_j·1.0184224^m/m in absolute value, with each sign, for some m in every 6 consecutive members of each class j mod 168
+(m ≡ 3 mod 6, m ≥ M0(j)); this is a subsequence statement. The (±2,16) members are negligible for m ≥ 243
 ([227](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)).
 
 Theorem J3 ([231](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)) is **conditional**: frozen R′ is false along m = 3p under two open hypotheses
 ([232](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md), [233](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)). Unconditionally, R′ would force exponential cancellation by
-the conductor ∉ {1, 7} parts. R′ ([206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
+the conductor ∉ {1, 7} parts on the set S⁺ of m = 3p, which is known to be infinite only under H_arg. R′ ([206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
 
 **Reduction of Conjecture R′ (Line I, 31 October 2026).** Conjecture R′ ([BGS-TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) is reduced exactly to three statements (E″), (T″) and (D), none of which is proved ([BGS-TRACE-213](mathematics/fixed-map/lineI_rprime_reduction.md)). The reduction rests on a dilation-coset L² law with a per-member Gauss-sum formula ([212](mathematics/fixed-map/lineI_rprime_reduction.md), with a Lean core). For d = 7, the square part of the dilation remainder is certified small for m ≥ 321 (ρ = (±2,8) only; the (±2,16) level-7 members are not controlled) ([215](mathematics/fixed-map/lineI_rprime_reduction.md)). A certified twisted radius r_tw > 1.262 > √λ/μ₀ shows that operator radii cannot control the cross part ([217](mathematics/fixed-map/lineI_rprime_reduction.md)); both certificates are computer-assisted and refereed. R′ stays open. The amended Conjecture R′_A ([220](mathematics/fixed-map/lineI_rprime_reduction.md)) is open, with heuristic evidence only.
 
