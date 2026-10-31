@@ -153,7 +153,8 @@ The author was busy elsewhere, so W-F7 was applied by the integrator. The author
 9. **Main's stale inventory** (`source_blob_sha` and the formalization lists of 152, 154, 157, 163 and 175) is re-mirrored here. This
    fixes two `test_registry_nodes` failures that are present on main.
 10. **`k2_SZ.py` reads `/workspace/bgs-lineJ/J3` by absolute path.** It was rerun against the box copy (read-only). It is not
-    portable as committed.
+    portable as committed. (Owner audit of PR #63: `integration_checks/run_k2_SZ_portable.py` reruns the unchanged, sha-pinned
+    source with that path replaced by the repository copy `computations/verification/lineJ/J3`; both outputs are byte-identical.)
 11. **`k2_SZ.json` stores `S_Z_upper` as the float 0.5.** The arb value is S_Z = 2C₈² + 2C₁₆² = ½ + O(10⁻¹³⁶), where
     C₈ ≤ (1 + λ^{−495})(½ + 1506.18·1.9154712^{−495}) and C₁₆ ≤ 3.8·10⁻²⁵. The registered bound 0.5000001 is therefore valid.
 

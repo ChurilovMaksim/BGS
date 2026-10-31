@@ -10,7 +10,7 @@
 * [TRACE-237](fixed-map/lineK_harg_removal.md) (proved): light-cone identity at prime levels.
 * [TRACE-238](fixed-map/lineK_harg_removal.md) (proved): large levels d ≥ L_m absorbed by positivity (non-vacuous only from m ≈ 1.68·10⁹, numerical).
 * [TRACE-240](fixed-map/lineK_harg_removal.md) (conditional): frozen R′ false under H♮ or H♮_mid ([TRACE-239](fixed-map/lineK_harg_removal.md), open).
-* [TRACE-241](fixed-map/lineK_harg_removal.md), [TRACE-242](fixed-map/lineK_harg_removal.md), [TRACE-243](fixed-map/lineK_harg_removal.md) (proved): Weil-range lemmas W1–W3.
+* [TRACE-241](fixed-map/lineK_harg_removal.md), [TRACE-242](fixed-map/lineK_harg_removal.md), [TRACE-243](fixed-map/lineK_harg_removal.md) (proved): Weil-range lemmas W1–W3 (W1 modulo the cited Weil bound, EXT-WEIL-1948).
 * [TRACE-245](fixed-map/lineK_harg_removal.md) and [TRACE-246](fixed-map/lineK_harg_removal.md) (conditional on OP, [TRACE-244](fixed-map/lineK_harg_removal.md), open): Theorem W and
   Theorem K2′. Conjecture C1 ([TRACE-247](fixed-map/lineK_harg_removal.md)) is open.
 
