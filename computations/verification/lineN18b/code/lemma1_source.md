@@ -1,0 +1,28 @@
+- **Lemma 1 (sublattice separation), written out (N14b Lemma 1 with referee fixes (i)–(iii)) [P once refereed].**
+  - **Setting.**
+    - O = ℤ[√2], ε = 1+√2, λ = ε². ι(α) = (α, α′) ∈ ℝ² with α′ the Galois conjugate.
+    - O^∨ = (2√2)⁻¹O is the inverse different; |N(γ)| ≥ N(𝔞)·|N(2√2)⁻¹| = N(𝔞)/8 for γ ∈ 𝔞O^∨ ∖ 0.
+    - The torus is 𝕋 = ℝ²/ι(O^∨), on which the cat map acts by A = diag(λ, λ⁻¹) in (u, s) = ι-coordinates. (This is the trace-pairing identification used in C′; it is the source of the factor 8, referee fix (ii).)
+    - Distance: ‖z‖ := max(|z_u|, |z_s|), and d_𝕋(x, y) := min over lifts. s₀ := min{‖ι(γ)‖ : γ ∈ O^∨ ∖ 0} = 1/(2√2), since ‖ι(γ)‖² ≥ |N(γ)| ≥ 1/8.
+  - **Components (fix (i)).**
+    - Let h = h_p and d | h, d squarefree with all prime factors split (true for d | h_p).
+    - The iso-mod-d set is H_d = ⋃_{𝔡} H_𝔡, H_𝔡 := ι(h⁻¹𝔡O^∨)/ι(O^∨) ⊂ 𝕋. The union runs over the 2^{ω(d)} ideals 𝔡 with N𝔡 = d (one prime above each q | d).
+    - 𝔡 | (d) | (h), so h·O^∨ ⊂ 𝔡O^∨ and Λ_𝔡 := ι(h⁻¹𝔡O^∨) is a lattice containing the periods.
+    - Every nonzero z ∈ Λ_𝔡 has |z_u z_s| = |N(γ)|/h² ≥ d/(8h²) (admissibility: (γ) ⊂ 𝔡O^∨ ⇒ N𝔡·N(O^∨) divides N(γ)).
+  - **Statement.** Fix δ ∈ (0, δ₀], δ₀ := s₀/(2(λ+1)) = 1/(4√2(λ+1)) ≈ 0.0259, and put n_* := 1 + ⌈log_λ(16δ²h²/d)⌉.
+    - **(a) Separation per component.** If x ≠ y ∈ H_𝔡 (same 𝔡) satisfy d_𝕋(A^k x, A^k y) < δ for 0 ≤ k < n, then n < n_*. That is, each component is (n_*, δ)-separated. Since h² ≍ λ^p, n_* = p − log_λ d + O(1) with explicit O(1).
+    - **(b) Bowen count (fix (iii)).** For every z ∈ 𝕋 and 1 ≤ n ≤ n_*: #(H_d ∩ B_n(z, δ/2)) ≤ 2^{ω(d)}·(1 + λ^{n_*−n}), where B_n(z, r) = {x : d_𝕋(A^k x, A^k z) < r, 0 ≤ k < n}. For n ≥ n_* the bound is 2^{ω(d)}.
+  - **Proof of (a).**
+    - Let z_k be the lift of A^k x − A^k y with ‖z_k‖ < δ.
+    - A z_k is a lift of A^{k+1}x − A^{k+1}y, so A z_k − z_{k+1} ∈ ι(O^∨) with norm < λδ + δ ≤ s₀/2 < s₀. Hence A z_k = z_{k+1}, and inductively z_k = A^k z₀.
+    - z₀ ∈ Λ_𝔡 ∖ {0}, because x, y lie in the same component and x ≠ y.
+    - From |λ^k z_{0,u}| < δ for k = n−1 and |z_{0,s}| < δ: |z_{0,u} z_{0,s}| < δ²λ^{−(n−1)}.
+    - If n ≥ n_*, then λ^{n−1} ≥ 16δ²h²/d, so |N| < d/(16h²) < d/(8h²). This contradicts admissibility.
+  - **Proof of (b).**
+    - Work with one component H_𝔡 and lift B_n(z, δ/2) (same continuity argument, δ/2 ≤ δ₀) to the box Q = {|w_u| < (δ/2)λ^{−(n−1)}, |w_s| < δ/2} around a lift of z.
+    - Partition Q in the u-direction into ⌈λ^{n_*−n}⌉ ≤ 1 + λ^{n_*−n} sub-boxes of u-width ≤ δλ^{−(n_*−1)}.
+    - Two points of H_𝔡 in one sub-box differ by w ∈ Λ_𝔡 with |w_u| < δλ^{−(n_*−1)} and |w_s| < δ, so |N| < δ²λ^{−(n_*−1)} ≤ d/(16h²). Hence w = 0.
+    - So each sub-box contains ≤ 1 point per component. Summing over the 2^{ω(d)} components gives (b). ∎
+  - **Use in Lemma 2.**
+    - (b) with n = n_* replaces N14b's "1 + Cλ^{p−n}/d" with explicit C = 16λδ²h²λ^{−p}, which is ≍ 1 since h_p² ≍ λ^p/4. The 2^{ω(d)} = d^{o(1)} is absorbed in e^{o(p)}.
+    - Lemma 2 stays [P-sketch] (the window re-run of C′ is not written line by line).

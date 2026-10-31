@@ -1,0 +1,8 @@
+Q cond 1.11e+03
+box theta 0.125 k 1 G 128 rho 1.3 J 3 -> exp(maxmean)=2.3489 max single=2.5085
+free theta 0.125 k 1 G 128 rho 1.3 J 3 -> exp(maxmean)=2.5085 max single=2.5085
+Q cond 1.11e+03
+Terminated
+Q cond 1.11e+03
+box theta 0.125 k 3 G 128 rho 1.3 J 8 -> exp(maxmean)=1.5298 max single=1.8151
+free theta 0.125 k 3 G 128 rho 1.3 J 8 -> exp(maxmean)=2.0444 max single=2.0447

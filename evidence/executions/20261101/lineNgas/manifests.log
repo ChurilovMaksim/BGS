@@ -1,0 +1,55 @@
+lineN10/SHA256_N10.txt: OK
+lineN10/referee/SHA256.txt: OK
+lineN10b/SHA256_N10b.txt: 1 FAILED/missing: ./NOTES_N10b.md 
+lineN10b/SHA256_N10b_v2.txt: OK
+lineN11/SHA256_N11.txt: OK
+lineN11/referee/SHA256.txt: OK
+lineN11b/SHA256_N11b.txt: OK
+lineN11b/referee/SHA256.txt: OK
+lineN12/SHA256_N12.txt: 2 FAILED/missing: sha256sum: ./logs/a_ops.npz: No such file or directory ./logs/a_ops.npz sha256sum: ./logs/adapted_norm_t0.0_k0.45.npz: No such file or directory ./logs/adapted_norm_t0.0_k0.45.npz 
+lineN12/referee/SHA256.txt: OK
+lineN12b/SHA256_N12b.txt: 2 FAILED/missing: sha256sum: ./code/__pycache__/common.cpython-313.pyc: No such file or directory ./code/__pycache__/common.cpython-313.pyc sha256sum: ./logs/b_cone_G16_th0.125_cells.npz: No such file or directory ./logs/b_cone_G16_th0.125_cells.npz 
+lineN13/SHA256_N13.txt: OK
+lineN13/referee/SHA256.txt: OK
+lineN13b/SHA256_N13b.txt: OK
+lineN14/SHA256_N14.txt: OK
+lineN14/referee/SHA256.txt: OK
+lineN14b/SHA256_N14b.txt: OK
+lineN15/SHA256_N15.txt: 2 FAILED/missing: sha256sum: ../N13/logs/c_replay.jsonl: No such file or directory ../N13/logs/c_replay.jsonl sha256sum: ../N13/logs/c_replay.out: No such file or directory ../N13/logs/c_replay.out 
+lineN15/referee/SHA256.txt: OK
+lineN15b/SHA256_N15b.txt: OK
+lineN16/SHA256_N16.txt: OK
+lineN16b/SHA256_N16b.txt: OK
+lineN17b/SHA256_N17b.txt: 27 FAILED/missing: sha256sum: N17b/NOTES_N17b.md: No such file or directory N17b/NOTES_N17b.md sha256sum: N17b/REPORT_N17b.md: No such file or directory N17b/REPORT_N17b.md sha256sum: N17b/code/a_levels.py: No such file or directory N17b/code/a_levels.py sha256sum: N17b/code/a_mixed_majorant.py: No such file or direct
+lineN18b/SHA256_N18b.txt: 10 FAILED/missing: sha256sum: N18b/NOTES_N18b.md: No such file or directory N18b/NOTES_N18b.md sha256sum: N18b/REPORT_N17b_v2.md: No such file or directory N18b/REPORT_N17b_v2.md sha256sum: N18b/code/a_crossover_v2.py: No such file or directory N18b/code/a_crossover_v2.py sha256sum: N18b/code/b_make_v2.py: No such fil
+lineN5/SHA256_N5.txt: 2 FAILED/missing: sha256sum: ./code/__pycache__/a_model.cpython-313.pyc: No such file or directory ./code/__pycache__/a_model.cpython-313.pyc sha256sum: ./code/__pycache__/b_family.cpython-313.pyc: No such file or directory ./code/__pycache__/b_family.cpython-313.pyc 
+lineN5/SHA256_N5_v2.txt: OK
+lineN5/referee/SHA256.txt: OK
+lineN6/SHA256_N6.txt: OK
+lineN6/referee/SHA256.txt: OK
+lineN7/SHA256_N7.txt: 1 FAILED/missing: sha256sum: ../N7b/NOTES_FROM_N7.md: No such file or directory ../N7b/NOTES_FROM_N7.md 
+lineN7/referee/SHA256.txt: OK
+lineN7b/SHA256_N7b.txt: OK
+lineN8/SHA256_N8.txt: OK
+lineN8/referee/SHA256.txt: OK
+lineN8b/SHA256_N8b.txt: OK
+lineN9/SHA256_N9.txt: OK
+lineN9b/SHA256_N9b.txt: 1 FAILED/missing: ./NOTES_N9b.md 
+lineN9b/SHA256_N9b_v2.txt: OK
+
+## Resolution of the non-OK lines above
+- lineN12 / lineN12b: the missing .npz files are the excluded files over 5 MiB (EXCLUDED.md). Their sha256 match the manifest.
+- lineN5 / lineN12b: the missing __pycache__/*.pyc are excluded (regenerable).
+- lineN15: ../N13/logs/c_replay.* verify OK when resolved to ../lineN13/.
+- lineN7: ../N7b/NOTES_FROM_N7.md verifies OK when resolved to ../lineN7b/.
+- lineN17b / lineN18b: the parent-relative paths N17b/..., N18b/... verify OK through symlinks. The THEOREM_DRAFT{,_v2,_v3}.md entries
+  equal the sha256 of computations/verification/lineN_theorem_draft/*.
+- lineN10b/SHA256_N10b.txt (NOTES_N10b.md) and lineN9b/SHA256_N9b.txt (NOTES_N9b.md) do not match, and they do not match in the source
+  /workspace/bgs-lineN either: the notes were edited after the v1 manifest (the N10b timestamp fix accepted by lineN13). The v2
+  manifests SHA256_N10b_v2.txt and SHA256_N9b_v2.txt verify OK.
+
+## Added after the final referee (lineN16) and Line N19b
+- lineN16/referee/SHA256.txt: OK
+- lineN19b/SHA256_N19b.txt: OK. Its paths are relative to bgs-lineN; THEOREM_DRAFT{,_v2,_v3}.md are checked against lineN_theorem_draft/*.
+  THEOREM_DRAFT_v4.md is checked against the author original (sha256 6d6c88ed…616207); the repo copy differs by the owner wording fix
+  recorded in README.md.

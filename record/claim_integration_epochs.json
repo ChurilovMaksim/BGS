@@ -1180,7 +1180,7 @@
       "id": "BGS-TRACE-206",
       "state": "open",
       "source": "mathematics/fixed-map/resonance_classification_lineG.md",
-      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed. 31 October 2026 (Line K): state unchanged (open); S+ infinite unconditionally (TRACE-235), so frozen R' is false under H-natural alone (TRACE-236) or under H-natural_mid (TRACE-239, 240); both open; no refutation claimed. 31 October 2026 (Line L): state unchanged (open); OP proved (TRACE-244), Theorem W and K2' proved under standing inputs (TRACE-245, 246); open range reduced to H_mean (TRACE-256, open; TRACE-257); no refutation claimed. 31 October 2026 (Lines M/N): state unchanged (open); no refutation route found (Line M); Theorem W+ and the qualitative prime range (TRACE-280, 281); Theorem N3 / Corollary N3' (TRACE-283, 284): K2' is never a refutation route for p >= p0, the open-range target must be beta-weighted; no refutation claimed. 31 October 2026 (Lines N2-N4): state unchanged (open); Theorem A (TRACE-286) is a proved implication from the open Omega-hypothesis (TRACE-287); Theorem C' (TRACE-296) controls the unit-beta part at h_p for p with h_p squarefree; the isotropic part at q | h_p is open (TRACE-298); no refutation claimed."
+      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed. 31 October 2026 (Line K): state unchanged (open); S+ infinite unconditionally (TRACE-235), so frozen R' is false under H-natural alone (TRACE-236) or under H-natural_mid (TRACE-239, 240); both open; no refutation claimed. 31 October 2026 (Line L): state unchanged (open); OP proved (TRACE-244), Theorem W and K2' proved under standing inputs (TRACE-245, 246); open range reduced to H_mean (TRACE-256, open; TRACE-257); no refutation claimed. 31 October 2026 (Lines M/N): state unchanged (open); no refutation route found (Line M); Theorem W+ and the qualitative prime range (TRACE-280, 281); Theorem N3 / Corollary N3' (TRACE-283, 284): K2' is never a refutation route for p >= p0, the open-range target must be beta-weighted; no refutation claimed. 31 October 2026 (Lines N2-N4): state unchanged (open); Theorem A (TRACE-286) is a proved implication from the open Omega-hypothesis (TRACE-287); Theorem C' (TRACE-296) controls the unit-beta part at h_p for p with h_p squarefree; the isotropic part at q | h_p is open (TRACE-298); no refutation claimed. 1 November 2026 (Lines N5-N18b): state unchanged (open); Theorem R#-mod v3 (TRACE-299) is a conditional reduction to the open inputs TRACE-300..306; no refutation claimed."
     },
     {
       "id": "BGS-TRACE-207",
@@ -1666,7 +1666,7 @@
       "id": "BGS-TRACE-287",
       "state": "open",
       "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
-      "disposition": "31 October 2026 (Lines N2-N4): open hypothesis; N2 Omega-hypothesis (beta-weighted pressure sums); closure: proof or disproof for infinitely many m in S+. Does not close TRACE-206, TRACE-148 or BGS-001. Owner audit of PR #66 (R1): Line N5 caveat (corrected N5 v2, under refereeing, not registered: the 16D = 1 isotropic family at h_p has rate 1.42785 > T and a positive cross contribution about 2.735^m > xi_lo^m; if confirmed the hypothesis fails along m = 3p); state unchanged."
+      "disposition": "31 October 2026 (Lines N2-N4): open hypothesis; N2 Omega-hypothesis (beta-weighted pressure sums); closure: proof or disproof for infinitely many m in S+. Does not close TRACE-206, TRACE-148 or BGS-001. Owner audit of PR #66 (R1): Line N5 caveat (corrected N5 v2, under refereeing, not registered: the 16D = 1 isotropic family at h_p has rate 1.42785 > T and a positive cross contribution about 2.735^m > xi_lo^m; if confirmed the hypothesis fails along m = 3p); state unchanged. Owner audit of b380a884: N5 caveat updated, N5 v2 refereed READY in lineN6 (no longer 'under refereeing'); still not registered; state unchanged."
     },
     {
       "id": "BGS-TRACE-288",
@@ -1732,7 +1732,163 @@
       "id": "BGS-TRACE-298",
       "state": "open",
       "source": "mathematics/fixed-map/lineN2N4_inherited_level.md",
-      "disposition": "31 October 2026 (Lines N2-N4): open; isotropic part at q | h_p (and 7q, composite d with an isotropic component); closure: proof or counterexample. Does not close TRACE-206, TRACE-148 or BGS-001. Owner audit of PR #66 (R1): small-m numerics qualified (m <= 21 only); Line N5 caveat pointer; state unchanged."
+      "disposition": "31 October 2026 (Lines N2-N4): open; isotropic part at q | h_p (and 7q, composite d with an isotropic component); closure: proof or counterexample. Does not close TRACE-206, TRACE-148 or BGS-001. Owner audit of PR #66 (R1): small-m numerics qualified (m <= 21 only); Line N5 caveat pointer; state unchanged. Owner audit of b380a884: N5 caveat updated, N5 v2 refereed READY in lineN6; still not registered; state unchanged."
+    },
+    {
+      "id": "BGS-TRACE-299",
+      "state": "conditional",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): conditional theorem [P mod inputs H0-H8] (Theorem R#-mod, canonical statement THEOREM_DRAFT_v4; lineN16 GO after edits E1-E7); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted. Owner audit of b380a884: retitled Theorem R#-mod v4 (= v3 after lineN16 edits E1-E7); dependencies on the certified and pending inputs 308, 311, 312, 319-323 added; state unchanged (conditional)."
+    },
+    {
+      "id": "BGS-TRACE-300",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): open hypothesis H1 [H] (collision lemma); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-301",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): open hypothesis H3 (KP polymer weight; finite part [CA-fp], tail [H]); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-302",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): open hypothesis H4 (core -> true conversion; no working route); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-303",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): open hypothesis H5 (composite h_p) or P = {h_p prime}; labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-304",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): open hypothesis H6 (C' inputs: explicit p0, squarefree h_p); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-305",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): open hypothesis H7* (levels other than h_p, incl. K_p prime powers); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-306",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): open hypothesis H8 (wrap-around points at composite h_p); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-307",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [CA-fp] (H2 met: delta_int^core <= 5.14476e-7); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-308",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [CA-fp] (rhobar <= 0.28); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-309",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [P] (N11 coding lemma; lower bound given the model form); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-310",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [CA] (Re Lambda_lo >= 6.238e-4); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-311",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [CA]+[P] (adapted norm; quadratic step bound |t| <= 1/256); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-312",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [P] (exact carry reduction, torus identity); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-313",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [P] (Lemmas P, P', P'_c, A_c); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-314",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [CA]+[P] ((+-2,16) closed, p >= 339; inherits J3 rig_spec); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-315",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [P] (K_p identity, 7 | K_p); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-316",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [P] (CRT count n = 7371 at h = 8119); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-317",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [P] (level bookkeeping, NR >= -4m, floors, m0 = 15); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-318",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [P-arith] (gas vs Robin: p1 >= 1386 core / 1390 for the input delta = 2.470e-6, first prime 1399; robin() fixed in N19b; lineN16); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted. Owner audit of b380a884: reworded as an arithmetic implication in the input delta (p >= 1390 for delta = 2.470e-6); whether delta_true <= 2.470e-6 is BGS-TRACE-322 (verification-pending); state unchanged."
+    },
+    {
+      "id": "BGS-TRACE-319",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [P] (Lemma 1, sublattice separation; lineN16); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-320",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): verification-pending [P-sketch] (Lemma 2, c_B = 0.7375; p = 31); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-321",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): proved [CA-fp] (A_bad j <= 12; lineN15/lineN16); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-322",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): verification-pending [P-sketch] conversion lemma, [CA-fp] numerics reproduced by lineN16 (delta_true(G <= 15) <= 2.470e-6); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-323",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): verification-pending [CA-fp] (step-norm table |t| > 1/256; method refereed, values not recomputed); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-324",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/lineN5N18_gas_conditional.md",
+      "disposition": "1 November 2026 (Lines N5-N18b, gas route): verification-pending ([P mod certs] with [P-sketch] parts; Prop X'); labels per THEOREM_DRAFT_v4 and referee lineN16. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted."
     }
   ],
   "invariants": [
