@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "282d3a69258d2220dae226f00cd39e79b26eaee8",
+ "source_blob_sha": "29129d825b93e198003fffd6a18fd78140114750",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -10859,13 +10859,14 @@
    "unevidenced": true,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 2,
+    "evidence": 3,
     "verifiers": 3,
     "formalization": 0
    },
    "evidence": [
     "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json",
-    "evidence/executions/20261031/m17/receipt.json"
+    "evidence/executions/20261031/m17/receipt.json",
+    "evidence/executions/20261031/lineL/receipt.json"
    ],
    "verifiers": [
     "computations/verification/lineG/code/formula_table.py",
@@ -10873,8 +10874,8 @@
     "computations/verification/lineG/PREDICTIONS_m17.json"
    ],
    "formalization": [],
-   "ledger_status": "CONJECTURE + FLOAT EVIDENCE m = 9..15 (W'/m = -0.74, -0.31, -0.04, +0.47; upward drift) + PRE-REGISTERED m = 17 TEST (PREDICTIONS_m17.json, sha256 fa8505f5...aa344; outcome not included in this registration (unreviewed)); INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied); LINE I (2026-10-31): REDUCTION (BGS-TRACE-213) AND CERTIFIED d = 7 SQUARE TERM FOR rho = (+-2,8) ONLY ((+-2,16) LEVEL-7 MEMBERS NOT CONTROLLED) / TWISTED-RADIUS LOWER BOUND (BGS-TRACE-215, 217); HEURISTIC RISK FOR THE FROZEN DEFINITION; STATE UNCHANGED (OPEN); LINE J (2026-10-31): EXACT d = 7 LEADING COEFFICIENT (BGS-TRACE-221), CERTIFIED OSCILLATING d = 7 GROWTH ALONG SUBSEQUENCES (BGS-TRACE-225), (+-2,16) CONTROLLED (BGS-TRACE-227), CONDITIONAL REFUTATION ALONG m = 3p UNDER OPEN H-NATURAL AND H_ARG (BGS-TRACE-231..233); NOT REFUTED; STATE UNCHANGED (OPEN); LINE K (2026-10-31): S+ INFINITE UNCONDITIONALLY (BGS-TRACE-235), REFUTATION CONDITIONAL ON H-NATURAL ALONE (BGS-TRACE-236) OR H-NATURAL_MID (BGS-TRACE-239, 240); NOT REFUTED; STATE UNCHANGED (OPEN)",
-   "boundary": "Frozen definition (k1, eta = 2, odd m, h = h_m, phi = phi(2h)): P* = {(2,8),(-2,8),(2,16),(-2,16)} (N == +-4, +-8); Z_rho = Z_m(nu_rho) with b nu_rho == a (mod 2h); levels d | h, 1 < d <= sqrt h, members M_d(rho) = {nu unit: b nu == a mod 2h/d, not mod 2h/d' for d' | d, d' < d}, n_d = |M_d|, level included iff |Z_rho|^2/d^2 >= 4m; RMT_m = 4m - m^2/h; Res_m = (1/phi) sum_rho [(|Z_rho|^2 - RMT_m) + sum_{d incl.} n_d (|Z_rho|^2/d^2 - RMT_m)]; W'_m = F_m - RMT_m - Res_m. Conjecture R': W'_m = o(m), i.e. (F_m - Res_m)/2m -> 2. A conjecture about the k1 kick; it is not a statement about Conjecture R (BGS-TRACE-179), which concerns the Line B kick and max_eta |W~rest_m(eta)| = o(m) and stays open. Evidence is four points with an upward drift of W'/m; o(m) is not established. Line I (2026-10-31; BGS-TRACE-211..220, mathematics/fixed-map/lineI_rprime_reduction.md): exact reduction W'_m = (non-resonant sum) + phi^-1 sum Dev_d(rho) (BGS-TRACE-213), so R' follows from (E''), (T'') and (D), none of which is proved; for d = 7 the square part of (D) is certified small for m >= 321 for rho = (+-2,8) only; the (+-2,16) level-7 members are not controlled (BGS-TRACE-215), the cross part is not controlled, and BGS-TRACE-217 shows r_tw > 1.262 > sqrt(lambda)/mu0, so the operator-radius route to it fails (unless the leading coefficient c(beta) vanishes, which is not decided). Heuristically (not proved: c(beta) != 0 uncertified, (+-2,16) members and other levels not modelled, no bulk compensation excluded) the frozen d = 7 term contributes ~1.0185^m/m to W'/m, so frozen R' may fail at m of a few hundred; this is neither a proof nor a disproof. The amended Conjecture R'_A (actual member values) is BGS-TRACE-220 (open). Line J (2026-10-31; BGS-TRACE-221..233, mathematics/fixed-map/lineJ_d7_twisted_coefficient.md): the leading d = 7 coefficient is exact (BGS-TRACE-221; class 1:3 cancels exactly between rho = (2,8) and (-2,8), classes 2:1 and 0:1 survive), and Theorem J (BGS-TRACE-225, computer-assisted) shows the frozen d = 7, (+-2,8) contribution phi^-1 D7/m to W'/m is >= K_j 1.0184224^m/m in absolute value with each sign for at least one m in every 6 consecutive terms of each class j mod 168 (m == 3 mod 6, m >= M0(j) in [297, 495]); the (+-2,16) level-7 members are now controlled (<= 1% for m >= 243, BGS-TRACE-227). The remaining terms O_m (other levels, unbounded prime support) are not controlled. Theorem J3 (BGS-TRACE-231, conditional): frozen R' is false along m = 3p under the open hypotheses H-natural (BGS-TRACE-232) and H_arg (BGS-TRACE-233); unconditionally, if R' holds, the conductor-not-in-{1,7} parts must cancel the d = 7 term exponentially on S+. This is not a refutation; R' stays open. The Line I heuristic sentence above is superseded by these statements. m = 17 annotation (2026-10-31; state unchanged, stays open): the full-kick part of PREDICTIONS_m17.json (the Line B kick, not the k1 kick of R') was evaluated in float. All 6 registered full-kick tests pass (evidence/executions/20261031/m17/lineG/eval17_full.log, .json): the (+-2,784) and (+-2,196) primaries, the d = 103 dilution mean of +-196, and the bulk F/2m (H = 8) = 2.0054 in [1.95, 2.15]. This is not a test of R', which concerns the k1 kick. The k1 m = 17 outcome is still not included in this registration. Line K (2026-10-31; BGS-TRACE-234..247, mathematics/fixed-map/lineK_harg_removal.md): S+ is infinite unconditionally (Theorem K3, BGS-TRACE-235; H_arg bypassed, not proved), so frozen R' is false under H-natural alone (Corollary K3, BGS-TRACE-236) and, unconditionally, frozen R' forces exponential cancellation of D7 by the conductor-not-in-{1,7} parts on an infinite set of m = 3p. Theorem K (BGS-TRACE-240, conditional): frozen R' is false under H-natural or the alternative H-natural_mid (BGS-TRACE-239, open). Exact light-cone identity at prime levels (BGS-TRACE-237), large levels d >= L_m absorbed by positivity (BGS-TRACE-238; vacuous below m ~ 1.68e9 [N]), Weil-range conductors negligible conditionally on the operator input OP (BGS-TRACE-244, 245), and frozen R' implies a slow lambda-orbit at an open conductor conditionally on OP (BGS-TRACE-246). None of H-natural, H-natural_mid, OP is proved. This is NOT a refutation; R' stays open.",
+   "ledger_status": "CONJECTURE + FLOAT EVIDENCE m = 9..15 (W'/m = -0.74, -0.31, -0.04, +0.47; upward drift) + PRE-REGISTERED m = 17 TEST (PREDICTIONS_m17.json, sha256 fa8505f5...aa344; outcome not included in this registration (unreviewed)); INDEPENDENT REFEREE AUDIT (computations/verification/lineFG/referee/REPORT.md; blocking fixes applied); LINE I (2026-10-31): REDUCTION (BGS-TRACE-213) AND CERTIFIED d = 7 SQUARE TERM FOR rho = (+-2,8) ONLY ((+-2,16) LEVEL-7 MEMBERS NOT CONTROLLED) / TWISTED-RADIUS LOWER BOUND (BGS-TRACE-215, 217); HEURISTIC RISK FOR THE FROZEN DEFINITION; STATE UNCHANGED (OPEN); LINE J (2026-10-31): EXACT d = 7 LEADING COEFFICIENT (BGS-TRACE-221), CERTIFIED OSCILLATING d = 7 GROWTH ALONG SUBSEQUENCES (BGS-TRACE-225), (+-2,16) CONTROLLED (BGS-TRACE-227), CONDITIONAL REFUTATION ALONG m = 3p UNDER OPEN H-NATURAL AND H_ARG (BGS-TRACE-231..233); NOT REFUTED; STATE UNCHANGED (OPEN); LINE K (2026-10-31): S+ INFINITE UNCONDITIONALLY (BGS-TRACE-235), REFUTATION CONDITIONAL ON H-NATURAL ALONE (BGS-TRACE-236) OR H-NATURAL_MID (BGS-TRACE-239, 240); NOT REFUTED; STATE UNCHANGED (OPEN); LINE L (2026-10-31): OP PROVED (BGS-TRACE-244), THEOREM W AND K2' PROVED UNDER STANDING INPUTS (BGS-TRACE-245, 246), OPEN RANGE REDUCED TO H_MEAN (BGS-TRACE-256, OPEN; 257); NOT REFUTED; STATE UNCHANGED (OPEN)",
+   "boundary": "Frozen definition (k1, eta = 2, odd m, h = h_m, phi = phi(2h)): P* = {(2,8),(-2,8),(2,16),(-2,16)} (N == +-4, +-8); Z_rho = Z_m(nu_rho) with b nu_rho == a (mod 2h); levels d | h, 1 < d <= sqrt h, members M_d(rho) = {nu unit: b nu == a mod 2h/d, not mod 2h/d' for d' | d, d' < d}, n_d = |M_d|, level included iff |Z_rho|^2/d^2 >= 4m; RMT_m = 4m - m^2/h; Res_m = (1/phi) sum_rho [(|Z_rho|^2 - RMT_m) + sum_{d incl.} n_d (|Z_rho|^2/d^2 - RMT_m)]; W'_m = F_m - RMT_m - Res_m. Conjecture R': W'_m = o(m), i.e. (F_m - Res_m)/2m -> 2. A conjecture about the k1 kick; it is not a statement about Conjecture R (BGS-TRACE-179), which concerns the Line B kick and max_eta |W~rest_m(eta)| = o(m) and stays open. Evidence is four points with an upward drift of W'/m; o(m) is not established. Line I (2026-10-31; BGS-TRACE-211..220, mathematics/fixed-map/lineI_rprime_reduction.md): exact reduction W'_m = (non-resonant sum) + phi^-1 sum Dev_d(rho) (BGS-TRACE-213), so R' follows from (E''), (T'') and (D), none of which is proved; for d = 7 the square part of (D) is certified small for m >= 321 for rho = (+-2,8) only; the (+-2,16) level-7 members are not controlled (BGS-TRACE-215), the cross part is not controlled, and BGS-TRACE-217 shows r_tw > 1.262 > sqrt(lambda)/mu0, so the operator-radius route to it fails (unless the leading coefficient c(beta) vanishes, which is not decided). Heuristically (not proved: c(beta) != 0 uncertified, (+-2,16) members and other levels not modelled, no bulk compensation excluded) the frozen d = 7 term contributes ~1.0185^m/m to W'/m, so frozen R' may fail at m of a few hundred; this is neither a proof nor a disproof. The amended Conjecture R'_A (actual member values) is BGS-TRACE-220 (open). Line J (2026-10-31; BGS-TRACE-221..233, mathematics/fixed-map/lineJ_d7_twisted_coefficient.md): the leading d = 7 coefficient is exact (BGS-TRACE-221; class 1:3 cancels exactly between rho = (2,8) and (-2,8), classes 2:1 and 0:1 survive), and Theorem J (BGS-TRACE-225, computer-assisted) shows the frozen d = 7, (+-2,8) contribution phi^-1 D7/m to W'/m is >= K_j 1.0184224^m/m in absolute value with each sign for at least one m in every 6 consecutive terms of each class j mod 168 (m == 3 mod 6, m >= M0(j) in [297, 495]); the (+-2,16) level-7 members are now controlled (<= 1% for m >= 243, BGS-TRACE-227). The remaining terms O_m (other levels, unbounded prime support) are not controlled. Theorem J3 (BGS-TRACE-231, conditional): frozen R' is false along m = 3p under the open hypotheses H-natural (BGS-TRACE-232) and H_arg (BGS-TRACE-233); unconditionally, if R' holds, the conductor-not-in-{1,7} parts must cancel the d = 7 term exponentially on S+. This is not a refutation; R' stays open. The Line I heuristic sentence above is superseded by these statements. m = 17 annotation (2026-10-31; state unchanged, stays open): the full-kick part of PREDICTIONS_m17.json (the Line B kick, not the k1 kick of R') was evaluated in float. All 6 registered full-kick tests pass (evidence/executions/20261031/m17/lineG/eval17_full.log, .json): the (+-2,784) and (+-2,196) primaries, the d = 103 dilution mean of +-196, and the bulk F/2m (H = 8) = 2.0054 in [1.95, 2.15]. This is not a test of R', which concerns the k1 kick. The k1 m = 17 outcome is still not included in this registration. Line K (2026-10-31; BGS-TRACE-234..247, mathematics/fixed-map/lineK_harg_removal.md): S+ is infinite unconditionally (Theorem K3, BGS-TRACE-235; H_arg bypassed, not proved), so frozen R' is false under H-natural alone (Corollary K3, BGS-TRACE-236) and, unconditionally, frozen R' forces exponential cancellation of D7 by the conductor-not-in-{1,7} parts on an infinite set of m = 3p. Theorem K (BGS-TRACE-240, conditional): frozen R' is false under H-natural or the alternative H-natural_mid (BGS-TRACE-239, open). Exact light-cone identity at prime levels (BGS-TRACE-237), large levels d >= L_m absorbed by positivity (BGS-TRACE-238; vacuous below m ~ 1.68e9 [N]), Weil-range conductors negligible conditionally on the operator input OP (BGS-TRACE-244, 245), and frozen R' implies a slow lambda-orbit at an open conductor conditionally on OP (BGS-TRACE-246). None of H-natural, H-natural_mid, OP is proved. This is NOT a refutation; R' stays open. Lines L, L2, L3 (2026-10-31; BGS-TRACE-248..268, mathematics/fixed-map/lineL_op_open_range.md): the operator input OP is proved (BGS-TRACE-244, cancellation-free certificate), so Theorem W (BGS-TRACE-245) and Theorem K2' (BGS-TRACE-246) hold under the standing Line F/J/J3/L16/S_Z/Weil inputs for m >= m1 (effective, not computed), c_W = 10^-25.62, q0 = 10^13.2. The (+-2,16) open range narrows to q < (1.6677^2/xi_lo)^{m(1+eta)} (BGS-TRACE-253). L2: the open range needs the mean statement H_mean (BGS-TRACE-256, open), which would refute frozen R' (BGS-TRACE-257); per-beta statements cannot close it (Prop S, BGS-TRACE-258: slow beta exist, so K2' is not a refutation route at the m it covers); cancellation-free collision counts fail at every level dividing h_m (Prop A2, BGS-TRACE-260) and the height argument's zone is disjoint from the open range for large p (BGS-TRACE-261, 262). H-natural, H-natural_mid and H_mean are not proved. This is NOT a refutation; R' stays OPEN.",
    "spof": "no_proof_or_receipt_in_tree",
    "spof_detail": "state is open",
    "other_weaknesses": [],
@@ -12283,100 +12284,117 @@
   {
    "id": "BGS-TRACE-244",
    "title": "Line K operator input (OP_k, delta): the cat-map second moments satisfy (I_k^F)^{1/2k} <= (1 - delta) 1.28359 for every (+-2,8) family and <= (1 - delta) 1.4742 for every (+-2,16) family",
-   "state": "open",
-   "methods": [
-    "unevidenced"
-   ],
-   "ledger_claimed_methods": [
-    "independent_review",
-    "float_numerics"
-   ],
-   "unevidenced": true,
-   "adverse_receipt": false,
-   "receipt_counts": {
-    "evidence": 1,
-    "verifiers": 1,
-    "formalization": 0
-   },
-   "evidence": [
-    "evidence/executions/20261031/lineK/receipt.json"
-   ],
-   "verifiers": [
-    "computations/verification/lineK/K2/code/n1_collision.py"
-   ],
-   "formalization": [],
-   "ledger_status": "OPEN HYPOTHESIS (OPERATOR INPUT) + TOY FLOAT EVIDENCE ONLY (n1_collision.py; NOT THE TRUE OPERATORS) + INDEPENDENT REFEREE AUDIT (computations/verification/lineK/referee/REPORT.md; first round ACCEPT AFTER FIXES, DELTA READY TO INTEGRATE (K2 after W-F1, W-F2), DELTA2 READY (K2 after W-F7, applied at integration); fixes applied)",
-   "boundary": "Notation of BGS-TRACE-243 (I_k^F = c_0 = integral of f_k^F over the torus T = (O tensor R)/O^dual, for the true twisted operator families). (OP_k, delta): (I_k^F)^{1/2k} <= (1 - delta) 1.28359 for every (+-2,8) family F, and <= (1 - delta) 1.4742 for every (+-2,16) family (1.4742 < xi_lo/1.6677 = 1.4742995; the earlier constant 1.4743 was false, referee W-F2). Not proved. Evidence [N, toy only]: exact carry-automaton I_k of a toy single-disc Galerkin (not the certified two-disc operators) has per-step ratio 1 - 1e-10 (I_k^{1/2k} < 1.2836 from k ~ 41); see Conjecture C1 (BGS-TRACE-247). A [CA] proof would certify the spectral radius of the true collision superoperator; not attempted.",
-   "spof": "no_proof_or_receipt_in_tree",
-   "spof_detail": "state is open",
-   "other_weaknesses": [],
-   "risk_reassessment": "OPEN_CONJECTURE"
-  },
-  {
-   "id": "BGS-TRACE-245",
-   "title": "Line K Theorem W (conditional on OP): for p >= p0(k), the conductors q, 7q with q prime, q | h_{3p}, q <= c_k p^2 contribute o(xi_lo^m) to O-natural on S+, including inherited copies",
-   "state": "conditional",
+   "state": "proved",
    "methods": [
     "analytic_proof",
+    "computer_certificate",
     "independent_review",
-    "conditional_input"
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
-    "independent_review",
-    "conditional_input"
+    "computer_certificate",
+    "independent_review"
    ],
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
-    "verifiers": 1,
+    "evidence": 2,
+    "verifiers": 6,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineK/receipt.json",
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineK/K2/code/n1_collision.py",
+    "computations/verification/lineL/code/l3_op_cert.py",
+    "computations/verification/lineL/code/l4_const.py",
+    "computations/verification/lineL/logs/final_op_cert.jsonl",
+    "computations/verification/lineL/logs/final_constants.jsonl",
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineLConst.lean"
+   ],
+   "ledger_status": "PROVED [P + CA] (LINE L, 2026-10-31: EXPLICIT STATE REVIEW OPEN -> PROVED; LEMMA O1, THEOREM OP_ABS, ARB CERTIFICATE BGS-TRACE-249..251; INTEGRATION RERUN IDENTICAL); LINE K: OPEN HYPOTHESIS (OPERATOR INPUT) WITH TOY FLOAT EVIDENCE ONLY (n1_collision.py); INDEPENDENT REFEREE AUDITS (computations/verification/lineK/referee/REPORT.md; computations/verification/lineL/referee/REPORT.md, Line L DELTA READY)",
+   "boundary": "Notation of BGS-TRACE-243 (I_k^F = c_0 = integral of f_k^F over the torus T = (O tensor R)/O^dual, for the true twisted operator families). (OP_k, delta): (I_k^F)^{1/2k} <= (1 - delta) 1.28359 for every (+-2,8) family F, and <= (1 - delta) 1.4742 for every (+-2,16) family (1.4742 < xi_lo/1.6677 = 1.4742995; the earlier constant 1.4743 was false, referee W-F2). Line K status (superseded by the Line L state review below): not proved; evidence [N, toy only]: exact carry-automaton I_k of a toy single-disc Galerkin (not the certified two-disc operators) has per-step ratio 1 - 1e-10 (I_k^{1/2k} < 1.2836 from k ~ 41); see Conjecture C1 (BGS-TRACE-247). A [CA] proof would certify the spectral radius of the true collision superoperator; not attempted in Line K. Lines L, L2, L3 (2026-10-31; BGS-TRACE-248..268, mathematics/fixed-map/lineL_op_open_range.md): explicit state review open -> proved [P + CA]: (OP_k, delta) holds for the four k1 lattice-lifted families at the certified (k, rho, beta), delta ~ 0.0162 for (+-2,8)V. Proof: Lemma O1 (BGS-TRACE-249) + Theorem OP_abs (BGS-TRACE-250, cancellation-free) + arb certificate (BGS-TRACE-251): I_k^{1/2k} <= 1.26278 ((+-2,8)V, k = 15, rho = 0.75, beta = 0.25), 1.13642 ((+-2,8)E, k = 14, 0.20, 0.30), 1.39243 ((+-2,16)V, k = 14, 0.90, 0.30), 1.30276 ((+-2,16)E, k = 14, 0.20, 0.30); delta_OP = 1 - rate/target = 0.0162, 0.115, 0.055, 0.116; each family has its own k (W2' bounds each Zhat_beta^F separately). These are the Line F operators (beta-weighted, a diagonal conjugation that leaves traces unchanged), so the claim inherits only the BGS-TRACE-197 well-definedness and radius hypotheses. Conjecture C1 (BGS-TRACE-247) is not used and stays open.",
+   "spof": "single_verifier_implementation_only",
+   "spof_detail": "Paper Lemma O1 + Theorem OP_abs (cancellation-free) and one arb certificate implementation (l3_op_cert.py / l4_const.py; integration rerun identical); Lean checks only the scaled comparisons rate < target and delta_OP(8V) >= 0.0162; relative to the Line F operator definitions and the BGS-TRACE-197 radius hypotheses.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-245",
+   "title": "Line K Theorem W (OP proved in Line L; under the standing inputs): for m = 3p in S+ with m >= m1 (effective, not computed), the conductors q, 7q with q prime, q | h_{3p}, q <= c_W p^2 (c_W = 10^-25.62, q0 = 10^13.2) contribute o(xi_lo^m) to O-natural, including inherited copies",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 2,
+    "verifiers": 4,
     "formalization": 0
    },
    "evidence": [
-    "evidence/executions/20261031/lineK/receipt.json"
+    "evidence/executions/20261031/lineK/receipt.json",
+    "evidence/executions/20261031/lineL/receipt.json"
    ],
    "verifiers": [
-    "computations/verification/lineK/integration_checks/lineK_checks.py"
+    "computations/verification/lineK/integration_checks/lineK_checks.py",
+    "computations/verification/lineL/integration_checks/lineL_checks.py",
+    "computations/verification/lineL/code/l4_const.py",
+    "computations/verification/lineL/logs/final_constants.jsonl"
    ],
    "formalization": [],
-   "ledger_status": "CONDITIONAL PROJECT THEOREM (ON (OP_k, delta), BGS-TRACE-244, OPEN): PAPER PROOF (ON W1-W3, Prop K2) + INTEGRATION CONSTANT CHECK (lineK_checks.py; 1.4742 VALID, 1.4743 FALSE) + INDEPENDENT REFEREE AUDIT (computations/verification/lineK/referee/REPORT.md; first round ACCEPT AFTER FIXES, DELTA READY TO INTEGRATE (K2 after W-F1, W-F2), DELTA2 READY (K2 after W-F7, applied at integration); fixes applied)",
-   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 (S+, O-natural_m, K_j, xi, xi_lo = 2.4586893). Assume (OP_k, delta) (BGS-TRACE-244). Choose eta > 0 with (I_k + 3 eta)^{1/2k} <= (1 - delta/2) target, q0 with T_k(q0) <= eta, c_k = (eta/(6 A_k))^2. Then there is p0 such that for every m = 3p in S+ with p >= p0: |sum over conductors c in {q, 7q : q prime, q | h_m, q <= c_k p^2} of the cross parts, including inherited copies| = o(xi_lo^m). [P] given (OP): W3 (orbit average <= I_k + 3 eta), W2' (|Zhat_beta| <= C' max(1, (1 - delta/2) target)^m, C' = e^{O(k)} independent of m; bounded-J form after W-F7), per-level weight sum |W_beta| < 4^{omega(d)}, inherited copies O(log m), tau(h) = e^{O(m/log m)} levels, |Z_rho| <= C_rho mu^m (BGS-TRACE-238), mu * 1.28359 = 2.4586849 < xi_lo and 1.6677 * 1.4742 = 2.458523 < xi_lo. Asymptotic only: c_k ~ 1e-800 and p0 ~ 1e800 in the toy basis. Not proved unconditionally; (OP) is open. BGS-TRACE-206 (frozen R') is NOT refuted.",
-   "spof": "conditional_on_unproved_input",
-   "spof_detail": "Conditional on (OP_k, delta) (BGS-TRACE-244, open); asymptotic only (c_k ~ 1e-800, p0 ~ 1e800 in the toy basis).",
+   "ledger_status": "PROVED [P + CA] UNDER THE STANDING INPUTS (BGS-TRACE-197, 226, 231, 241) (LINE L, 2026-10-31: EXPLICIT STATE REVIEW CONDITIONAL -> PROVED; OP PROVED, BGS-TRACE-244; c_W = 10^-25.62, q0 = 10^13.2 EXPLICIT; m1 EFFECTIVE, NOT COMPUTED); LINE K: CONDITIONAL ON OP, PAPER PROOF (ON W1-W3, Prop K2) + INTEGRATION CONSTANT CHECK (lineK_checks.py; 1.4742 VALID, 1.4743 FALSE); INDEPENDENT REFEREE AUDITS (computations/verification/lineK/referee/REPORT.md; computations/verification/lineL/referee/REPORT.md, Line L DELTA READY)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 (S+, O-natural_m, K_j, xi, xi_lo = 2.4586893). Assume (OP_k, delta) (BGS-TRACE-244). Choose eta > 0 with (I_k + 3 eta)^{1/2k} <= (1 - delta/2) target, q0 with T_k(q0) <= eta, c_k = (eta/(6 A_k))^2. Then there is p0 such that for every m = 3p in S+ with p >= p0: |sum over conductors c in {q, 7q : q prime, q | h_m, q <= c_k p^2} of the cross parts, including inherited copies| = o(xi_lo^m). [P] given (OP): W3 (orbit average <= I_k + 3 eta), W2' (|Zhat_beta| <= C' max(1, (1 - delta/2) target)^m, C' = e^{O(k)} independent of m; bounded-J form after W-F7), per-level weight sum |W_beta| < 4^{omega(d)}, inherited copies O(log m), tau(h) = e^{O(m/log m)} levels, |Z_rho| <= C_rho mu^m (BGS-TRACE-238), mu * 1.28359 = 2.4586849 < xi_lo and 1.6677 * 1.4742 = 2.458523 < xi_lo. Asymptotic only: c_k ~ 1e-800 and p0 ~ 1e800 in the toy basis. Line K status (superseded below): (OP) was open. BGS-TRACE-206 (frozen R') is NOT refuted. Lines L, L2, L3 (2026-10-31; BGS-TRACE-248..268, mathematics/fixed-map/lineL_op_open_range.md): explicit state review conditional -> proved [P + CA]: the OP condition is dropped, since (OP_k, delta) is proved (BGS-TRACE-244). Assuming the standing inputs (the Line F/J lattice trace representation BGS-TRACE-197, Theorem J/J3 with Lemma L16 BGS-TRACE-226, 231, and the Weil bound W1 BGS-TRACE-241): for every m = 3p in S+ with m >= m1 (effective, not computed; in particular 2p+1 >= q0) the total cross part of the conductors c in {q, 7q}, q | h_m prime, q <= c_W p^2, including inherited copies, is o(xi_lo^m), with c_W = 10^-25.62 and q0 = 10^13.2 (BGS-TRACE-252; the T_k bound is valid for q >= q0). Per conductor |Zhat_beta^F| <= C'_F ((1 - delta_F/2) target_F)^m, C'_F = e^{O(k)}; W2' in bounded-J form (BGS-TRACE-242, W-F7), applied family by family to the beta-conjugated families (J commutes with the conjugation, referee F4). m1 depends on sup ||L||, sup ||L||_1, C'_F, the conductor count and the margins (delta_F/2 ~ 0.004 for (+-2,8)V); it is NOT computed, and no explicit p0 is claimed. The range is non-vacuous only from p ~ 8.3e25. The 'asymptotic only: c_k ~ 1e-800 and p0 ~ 1e800 in the toy basis' sentence above is superseded. BGS-TRACE-206 (frozen R') is NOT refuted.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof on W1-W3, Prop K2 and the certified OP (BGS-TRACE-244, 252); relative to the standing inputs BGS-TRACE-197, J3/L16 (226, 231) and the Weil bound (EXT-WEIL-1948, application unverified); m1 effective but not computed; not formalised.",
    "other_weaknesses": [],
    "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
   },
   {
    "id": "BGS-TRACE-246",
-   "title": "Line K Theorem K2' (conditional on OP): frozen R' implies that for all large m in S+ some open conductor c of h_m carries a slow lambda-orbit",
-   "state": "conditional",
+   "title": "Line K Theorem K2' (OP proved in Line L; under the standing inputs): for m in S+ with m >= m1 (effective, not computed), frozen R' implies that some open conductor c of h_m carries a slow lambda-orbit",
+   "state": "proved",
    "methods": [
     "analytic_proof",
-    "independent_review",
-    "conditional_input"
+    "computer_certificate",
+    "independent_review"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
-    "independent_review",
-    "conditional_input"
+    "computer_certificate",
+    "independent_review"
    ],
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 0,
     "formalization": 0
    },
    "evidence": [
-    "evidence/executions/20261031/lineK/receipt.json"
+    "evidence/executions/20261031/lineK/receipt.json",
+    "evidence/executions/20261031/lineL/receipt.json"
    ],
    "verifiers": [],
    "formalization": [],
-   "ledger_status": "CONDITIONAL PROJECT THEOREM (ON (OP_k, delta), BGS-TRACE-244, OPEN): PAPER PROOF (ON W2', THEOREM W, THEOREM K, Prop K2) + INDEPENDENT REFEREE AUDIT (computations/verification/lineK/referee/REPORT.md; first round ACCEPT AFTER FIXES, DELTA READY TO INTEGRATE (K2 after W-F1, W-F2), DELTA2 READY (K2 after W-F7, applied at integration); fixes applied)",
-   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 (S+, O-natural_m, K_j, xi, xi_lo = 2.4586893). Assume (OP_k, delta) (BGS-TRACE-244), p0 as in Theorem W (BGS-TRACE-245). For m = 3p in S+, p >= p0, a conductor c | h_m is open if c not in {1, 7} u {q, 7q : q <= c_k p^2} and c < L_m (vacuous for m <~ 1.68e9 [N]); beta at an open conductor c is slow if (1/r) sum_{i<r} f_k^F(beta lambda^i/c) > ((1 - delta/2) target_F)^{2k} for some family F. [P] given (OP): if no open conductor of h_m has a slow beta, the open part of O-natural_m is o(xi_lo^m) (W2'), the Weil part is o(xi_lo^m) (Theorem W), so O-natural^{<L} = o(xi_lo^m), H-natural_mid holds along such m and W'_m/m -> infinity (Theorem K, BGS-TRACE-240). Hence frozen R' implies: for all large m in S+ (an infinite set, BGS-TRACE-235) some open conductor carries a slow lambda-orbit. For given m, c, beta this is checkable in principle by a certified operator computation (truncation with rigorous error). Conductors c >= L_m occur only at absorbed levels; prime powers and composites are included in 'open'. Not proved unconditionally. BGS-TRACE-206 (frozen R') is NOT refuted.",
-   "spof": "conditional_on_unproved_input",
-   "spof_detail": "Conditional on (OP_k, delta) (BGS-TRACE-244, open); a structural statement about frozen R', not a refutation.",
+   "ledger_status": "PROVED [P + CA] UNDER THE STANDING INPUTS (BGS-TRACE-197, 226, 231, 238, 241) (LINE L, 2026-10-31: EXPLICIT STATE REVIEW CONDITIONAL -> PROVED; OP PROVED, BGS-TRACE-244; m >= m1 EFFECTIVE, NOT COMPUTED; NOT A REFUTATION ROUTE FOR THE m COVERED BY PROP S, BGS-TRACE-258); LINE K: CONDITIONAL ON OP, PAPER PROOF (ON W2', THEOREM W, THEOREM K, Prop K2); INDEPENDENT REFEREE AUDITS (computations/verification/lineK/referee/REPORT.md; computations/verification/lineL/referee/REPORT.md, Line L DELTA READY, L2 READY AFTER TEXT FIXES)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 (S+, O-natural_m, K_j, xi, xi_lo = 2.4586893). Assume (OP_k, delta) (BGS-TRACE-244), p0 as in Theorem W (BGS-TRACE-245). For m = 3p in S+, p >= p0, a conductor c | h_m is open if c not in {1, 7} u {q, 7q : q <= c_k p^2} and c < L_m (vacuous for m <~ 1.68e9 [N]); beta at an open conductor c is slow if (1/r) sum_{i<r} f_k^F(beta lambda^i/c) > ((1 - delta/2) target_F)^{2k} for some family F. [P] given (OP): if no open conductor of h_m has a slow beta, the open part of O-natural_m is o(xi_lo^m) (W2'), the Weil part is o(xi_lo^m) (Theorem W), so O-natural^{<L} = o(xi_lo^m), H-natural_mid holds along such m and W'_m/m -> infinity (Theorem K, BGS-TRACE-240). Hence frozen R' implies: for all large m in S+ (an infinite set, BGS-TRACE-235) some open conductor carries a slow lambda-orbit. For given m, c, beta this is checkable in principle by a certified operator computation (truncation with rigorous error). Conductors c >= L_m occur only at absorbed levels; prime powers and composites are included in 'open'. Line K status (superseded below): conditional on (OP). BGS-TRACE-206 (frozen R') is NOT refuted. Lines L, L2, L3 (2026-10-31; BGS-TRACE-248..268, mathematics/fixed-map/lineL_op_open_range.md): explicit state review conditional -> proved [P + CA], under the same standing inputs as BGS-TRACE-245 plus S_Z / Prop K2 (BGS-TRACE-238): for all sufficiently large m = 3p in S+ (m >= m1, effective, not computed), frozen R' implies a slow lambda-orbit at an open conductor c | h_m, c not in {1, 7} u {q, 7q : q <= c_W p^2}, c < L_m (for (+-2,16): c < (1.6677^2/xi_lo)^{m(1+eta)}, BGS-TRACE-253), c_W = 10^-25.62, q0 = 10^13.2; slow means (1/r) sum_{i<r} f_k^F(beta lambda^i/c) > ((1 - delta_F/2) target_F)^{2k} for some family F, with the k_F, delta_F of BGS-TRACE-252. No explicit p0 is claimed. CAVEAT (Prop S, BGS-TRACE-258): K2' is true, but it is NOT a refutation route for the m covered by Prop S (m in S+ such that h_m has a prime q || h_m in (max(c_W p^2, lambda^{C_k + 6.1e-6 m}), L_m)): there the conclusion of K2' holds unconditionally, so it yields no contradiction. That this covers all or most m is [H]. The open-range target is the mean statement H_mean (BGS-TRACE-256, open; H_mean implies the refutation, BGS-TRACE-257). BGS-TRACE-206 (frozen R') is NOT refuted.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof on W2', Theorem W and Theorem K with the certified OP; same standing inputs plus S_Z / Prop K2; m1 effective but not computed; not a refutation route for the m covered by Prop S (BGS-TRACE-258); not formalised.",
    "other_weaknesses": [],
    "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
   },
@@ -12394,23 +12412,763 @@
    "unevidenced": true,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 1,
     "formalization": 0
    },
    "evidence": [
-    "evidence/executions/20261031/lineK/receipt.json"
+    "evidence/executions/20261031/lineK/receipt.json",
+    "evidence/executions/20261031/lineL/receipt.json"
    ],
    "verifiers": [
     "computations/verification/lineK/K2/code/n1_collision.py"
    ],
    "formalization": [],
-   "ledger_status": "OPEN CONJECTURE [H] + TOY FLOAT EVIDENCE ONLY (n1_collision.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineK/referee/REPORT.md; first round ACCEPT AFTER FIXES, DELTA READY TO INTEGRATE (K2 after W-F1, W-F2), DELTA2 READY (K2 after W-F7, applied at integration); fixes applied)",
-   "boundary": "Notation of BGS-TRACE-243. Conjecture C1 [H/conjecture]: lim_k (I_k^F)^{1/k} = 1 for the true (+-2,8) and (+-2,16) families (this would give (OP_k, delta), BGS-TRACE-244, for large k). Heuristic: the scalar word weights satisfy |a_w| = prod |ghat(n_j)| with sum |ghat|^2 = sum J_n(1.8)^2 = 1 (unitarity), and exact collisions add no growth. Evidence [N, toy only]: exact carry-automaton I_k of a toy single-disc Galerkin, per-step ratio 1 - 1e-10, stable under K = 24/40, NMAX 7/9, EMAX 6/8; control: scaling ghat by 1.1 gives ratio 1.21 exactly. Not the certified two-disc operators; absolute-value bounds fail (letter weights grow like e^{2 pi |coef| |n| rho} in the H^2(D_rho) norm). Not proved.",
+   "ledger_status": "OPEN CONJECTURE [H] + TOY FLOAT EVIDENCE ONLY (n1_collision.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineK/referee/REPORT.md; first round ACCEPT AFTER FIXES, DELTA READY TO INTEGRATE (K2 after W-F1, W-F2), DELTA2 READY (K2 after W-F7, applied at integration); fixes applied); LINE L (2026-10-31): NOT NEEDED FOR OP (BGS-TRACE-244 PROVED WITHOUT IT); L2 VERSION THEOREM U (BGS-TRACE-254) PROVED, DOES NOT IMPLY C1; STATE UNCHANGED (OPEN)",
+   "boundary": "Notation of BGS-TRACE-243. Conjecture C1 [H/conjecture]: lim_k (I_k^F)^{1/k} = 1 for the true (+-2,8) and (+-2,16) families (this would give (OP_k, delta), BGS-TRACE-244, for large k). Heuristic: the scalar word weights satisfy |a_w| = prod |ghat(n_j)| with sum |ghat|^2 = sum J_n(1.8)^2 = 1 (unitarity), and exact collisions add no growth. Evidence [N, toy only]: exact carry-automaton I_k of a toy single-disc Galerkin, per-step ratio 1 - 1e-10, stable under K = 24/40, NMAX 7/9, EMAX 6/8; control: scaling ghat by 1.1 gives ratio 1.21 exactly. Not the certified two-disc operators; absolute-value bounds fail (letter weights grow like e^{2 pi |coef| |n| rho} in the H^2(D_rho) norm). Not proved. Lines L, L2, L3 (2026-10-31; BGS-TRACE-248..268, mathematics/fixed-map/lineL_op_open_range.md): (state unchanged, open): (OP_k, delta) is now proved WITHOUT C1 (BGS-TRACE-244, by the cancellation-free bound BGS-TRACE-250 and the certificate BGS-TRACE-251), so C1 is no longer needed for OP. Theorem U (BGS-TRACE-254) is the exact L^2 (level-h Parseval) version behind C1; it does NOT imply C1. [N, notes only] the absolute collision automaton has r_abs = 1.0511.",
    "spof": "no_proof_or_receipt_in_tree",
    "spof_detail": "state is open",
    "other_weaknesses": [],
    "risk_reassessment": "OPEN_CONJECTURE"
+  },
+  {
+   "id": "BGS-TRACE-248",
+   "title": "Line L collision structure: alpha_v = sum_j v_j lambda^j = 0 iff (X^2 - 6X + 1) | v(X); carries and the Green's-function bound",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/code/l3_op_cert.py"
+   ],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "lambda = 3 + 2 sqrt2 has minimal polynomial X^2 - 6X + 1, so for v in Z^k, alpha_v = 0 iff v(X) = (X^2 - 6X + 1) E(X) with E in Z[X]. The coefficients e_j of E are carries, v_j = e_j - 6 e_{j-1} + e_{j-2}, and |e_j| <= C0g sum_i |v_i| lambda^{-|j+1-i|} with C0g = 1/(lambda - lambda^-1) (Green's function of the recursion). Hence the exact-collision sums S_k of BGS-TRACE-250 are transfer-matrix sums over carry states (e_{j-1}, e_j). Referee check: the only collision with |v_j| <= 3 at k = 6 is v = 0.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (minimal polynomial, carry recursion, Green's function); referee small-k check; not formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-249",
+   "title": "Line L Lemma O1 (word Hilbert-Schmidt bound) for the beta-weighted lattice-lifted k1 families, with the outermost-letter tau assignment",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/referee/ref/ref_O1_stress.py",
+    "computations/verification/lineL/referee/ref/ref_checks.py",
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] (AFTER REFEREE F3, F4) + REFEREE FLOAT STRESS TEST (ref_O1_stress.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Families: the true lattice-lifted k1 operators of Line F/J, (L_tau Phi)_c(s) = sum_n w(n) e(n tau) e(kappa n s) omega(c)/omega(f_n(c)) Phi_{f_n(c)}((s+n)/lambda), kappa = C0 ((+-2,8)) or C0/2 ((+-2,16)), vertex discs radius rho (V) or edge discs (E) on H^2, omega(c) = e^{-beta |c|} (a diagonal conjugation on sites: traces unchanged, commutes with J = I and J = I tensor J_B, referee F4); TRACE-197 radius conditions 1/(2 rho_V) + 1/lambda = 0.838 < 1 at 0.75, 1/(2 lambda rho_E) + 1/lambda = 0.6005 < 1 at 0.2. [P] For a k-word w = (n_0..n_{k-1}) the block M_w is a weighted composition operator with affine symbol of slope lambda^-k and ||M_w||_HS <= |Phihat_w| prod_j e^{tau_j |n_j|} (1 - theta^2)^{-1/2} (NS coth(beta(1 - lambda^-k)) e^{2 beta (dev + 1)})^{1/2}, tau_j = 2 pi kappa rho lambda^-j + beta lambda^{-(k-j)}, j = 0 the OUTERMOST letter (first applied to the input disc; essential: referee stress test k <= 5, |n| <= 10 gives max HS/bound 0.287, and 93.8 with the assignment reversed), theta = (rho lambda^-k + dev)/rho < 1, dev <= lambda/(2(lambda-1)) = 0.6036 (V), 1/(2(lambda-1)) = 0.1036 (E); the '+1' is slack for V and needed for E (dev_E + 1 = 1.1036 >= 0.6036 covers the site drift), NS = 64 internal states for L16 (1 for (+-2,8)). Referee numerical checks ref_checks.py (max ratio 0.484) and ref_O1_stress.py (0.287).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof; referee float stress tests (ref_checks.py, ref_O1_stress.py) only; not formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-250",
+   "title": "Line L Theorem OP_abs (cancellation-free second moment): I_k <= C_pair S_k and A_k <= C_pair prod_j A(tau_j)^2 for the true lattice-lifted k1 families",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/code/l3_op_cert.py"
+   ],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Families: the true lattice-lifted k1 operators of Line F/J, (L_tau Phi)_c(s) = sum_n w(n) e(n tau) e(kappa n s) omega(c)/omega(f_n(c)) Phi_{f_n(c)}((s+n)/lambda), kappa = C0 ((+-2,8)) or C0/2 ((+-2,16)), vertex discs radius rho (V) or edge discs (E) on H^2, omega(c) = e^{-beta |c|} (a diagonal conjugation on sites: traces unchanged, commutes with J = I and J = I tensor J_B, referee F4); TRACE-197 radius conditions 1/(2 rho_V) + 1/lambda = 0.838 < 1 at 0.75, 1/(2 lambda rho_E) + 1/lambda = 0.6005 < 1 at 0.2. [P] With f_k(y) = ||P_k(y)||_HS^2 = sum_gamma c_gamma e(Tr gamma y): |c_gamma| <= sum_{alpha_{n-n'} = gamma} ||M_n||_HS ||M_n'||_HS, so I_k = c_0 <= C_pair S_k, C_pair = NS coth(beta(1 - lambda^-k)) e^{2 beta (dev+1)}/(1 - theta^2), S_k = sum_{v: alpha_v = 0} prod_j rho_j(v_j), rho_j(d) = sum_a |J_a(1.8)| |J_{a-d}(1.8)| e^{tau_j (|a| + |a-d|)}, and A_k = sum_{gamma != 0} |c_gamma| <= C_pair prod_j A(tau_j)^2, A(s) = sum_a |J_a(1.8)| e^{s |a|}. No cancellation is used (Cauchy-Schwarz for the HS pairing, Lemma O1, sum over n with v = n - n' fixed). The sector phases and the chirp are unimodular and unused, so one bound covers all sectors. Notes only [N]: the absolute collision automaton has spectral radius r_abs = 1.0511 (l2_rabs.py).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (Cauchy-Schwarz, Lemma O1); not formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-251",
+   "title": "Line L OP certificate: certified I_k^{1/2k} <= 1.26278 / 1.13642 / 1.39243 / 1.30276 for (+-2,8)V/E and (+-2,16)V/E, below the targets 1.28359 and 1.4742",
+   "state": "proved",
+   "methods": [
+    "computer_certificate",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 5,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/code/l3_op_cert.py",
+    "computations/verification/lineL/code/l4_const.py",
+    "computations/verification/lineL/logs/final_op_cert.jsonl",
+    "computations/verification/lineL/logs/final_constants.jsonl",
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineLConst.lean"
+   ],
+   "ledger_status": "COMPUTER-ASSISTED [CA] (ARB BALL ARITHMETIC; REFEREE RERUN AND INTEGRATION RERUN IDENTICAL) + LEAN SCALAR COMPARISONS (Bgs.LineL) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Families: the true lattice-lifted k1 operators of Line F/J, (L_tau Phi)_c(s) = sum_n w(n) e(n tau) e(kappa n s) omega(c)/omega(f_n(c)) Phi_{f_n(c)}((s+n)/lambda), kappa = C0 ((+-2,8)) or C0/2 ((+-2,16)), vertex discs radius rho (V) or edge discs (E) on H^2, omega(c) = e^{-beta |c|} (a diagonal conjugation on sites: traces unchanged, commutes with J = I and J = I tensor J_B, referee F4); TRACE-197 radius conditions 1/(2 rho_V) + 1/lambda = 0.838 < 1 at 0.75, 1/(2 lambda rho_E) + 1/lambda = 0.6005 < 1 at 0.2. [CA] (arb, python-flint prec 128; code/l3_op_cert.py, code/l4_const.py; logs/final_op_cert.jsonl, logs/final_constants.jsonl): S_k <= S_box + tail, S_box the exact arb enumeration over carries |e_j| <= E0 = 6, tail a Chernoff bound (t = 2) for max |e_j| > E0 (<= 2.5e-14); arb J_a(1.8) for |a| <= 60 (l3) or 200 (l4), tail |J_a(x)| <= (x/2)^|a|/|a|!. Certified (k, rho, beta; I_k <=; I_k^{1/2k} <=; target): (+-2,8)V (15, 0.75, 0.25; 1095.97; 1.26278; 1.28359), (+-2,8)E (14, 0.20, 0.30; 35.90; 1.13642; 1.28359), (+-2,16)V (14, 0.90, 0.30; 10608.6; 1.39243; 1.4742), (+-2,16)E (14, 0.20, 0.30; 1645.2; 1.30276; 1.4742); A_k <= 1.75e14, 7.24e11, 2.55e14, 3.11e13. Rates for smaller k are not certified with these constants ((+-2,8)V at k = 14: 1.2858). Integration rerun of the four final cases in a scratch copy: identical output except timing; lineL_checks.py re-reads the arb upper ends; Lean Bgs.LineL (rate_*_lt_target, delta8V) checks the scaled comparisons only, not the certificate.",
+   "spof": "single_verifier_implementation_only",
+   "spof_detail": "One arb certificate implementation (two script versions l3/l4 give identical values; referee and integration reruns identical); Lean checks only the scaled comparisons with the targets.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-252",
+   "title": "Line L T_k bound and Weil-range constants: c_W = 10^-25.62 <= min_F c_F, q0 = 10^13.2; the range q <= c_W p^2 is non-vacuous only from p ~ 8.3e25",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 5,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/code/l3_op_cert.py",
+    "computations/verification/lineL/code/l4_const.py",
+    "computations/verification/lineL/logs/final_op_cert.jsonl",
+    "computations/verification/lineL/logs/final_constants.jsonl",
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] + COMPUTER-ASSISTED CONSTANTS [CA] (l4_const.py; INTEGRATION RERUN IDENTICAL; lineL_checks.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Families: the true lattice-lifted k1 operators of Line F/J, (L_tau Phi)_c(s) = sum_n w(n) e(n tau) e(kappa n s) omega(c)/omega(f_n(c)) Phi_{f_n(c)}((s+n)/lambda), kappa = C0 ((+-2,8)) or C0/2 ((+-2,16)), vertex discs radius rho (V) or edge discs (E) on H^2, omega(c) = e^{-beta |c|} (a diagonal conjugation on sites: traces unchanged, commutes with J = I and J = I tensor J_B, referee F4); TRACE-197 radius conditions 1/(2 rho_V) + 1/lambda = 0.838 < 1 at 0.75, 1/(2 lambda rho_E) + 1/lambda = 0.6005 < 1 at 0.2. [P] |N(alpha_v)| <= XY <= ((aX + Y/a)/2)^2, X = sum |v_j| lambda^j, Y = sum |v_j| lambda^-j, a = lambda^{-(k-1)/2}; hence T_k(q) <= C_pair e^{-2 s sqrt q} prod_j A(tau_j + s(a lambda^j + lambda^-j/a))^2 for every s > 0 (Chernoff), monotone in q. [CA] evaluated in arb on an s-grid and a log10 q grid of step 0.1. Per family F: delta_F = (1 - rate_F/target_F)/2, eta_F = (((1 - delta_F/2) target_F)^{2k} - I_k)/3, c_F = (eta_F/(6 A_k))^2, q0_F with T_k(q0_F) <= eta_F: (+-2,8)V delta 0.00811, log10 c_F -25.62, log10 q0 13.2; (+-2,8)E 0.0573, -20.93, 12.3; (+-2,16)V 0.0277, -22.53, 12.3; (+-2,16)E 0.0581, -20.84, 12.2. c_W := 10^-25.62 <= min_F c_F and q0 := 10^13.2 = max_F q0_F. Non-vacuity c_W p^2 >= 2p + 1 needs p >= 2/c_W = 8.34e25 (the report rounds to 8.2e25). These constants are explicit; the threshold m1 of Theorem W (BGS-TRACE-245) is effective but NOT computed; no explicit p0 is claimed.",
+   "spof": "single_verifier_implementation_only",
+   "spof_detail": "Paper T_k bound plus one arb grid evaluation (l4_const.py; integration rerun identical); integration constant check lineL_checks.py.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-253",
+   "title": "Line L (+-2,16) narrowing: the (+-2,16) levels are absorbed for q >= (1.6677^2/xi_lo)^{m(1+eta)}, eta <= (4.282 + o(1))/log(2p+1), so the (+-2,16) open range is c_W p^2 < q < (1.6677^2/xi_lo)^{m(1+eta)} (1.6677^2/xi_lo = 1.13118...)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/integration_checks/lineL_checks.py",
+    "computations/verification/lineK/code/k2_SZ.py"
+   ],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] + COMPUTER-ASSISTED CONSTANTS [CA] (VIA PROP K2 AND THE J3 REST CERTIFICATES) + INTEGRATION CONSTANT CHECK (lineL_checks.py; EXACT BASE 1.13118, QUOTED 1.1311 ROUNDED DOWN) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Standing inputs: the Line F/J lattice trace representation and its radius hypotheses (BGS-TRACE-197), Theorem J/J3 with Lemma L16 (BGS-TRACE-225, 226, 231), S_Z / Prop K2 (BGS-TRACE-238) and the Weil bound W1 (BGS-TRACE-241). [P + CA] With d <= |Z|/(2 sqrt m) and positivity absorption (Prop K2, BGS-TRACE-238, with Lambda_16 = log(1.6677^2/xi_lo) in place of Lambda and the (+-2,16) constant C <= 3.8e-25 in place of S_Z), the (+-2,16) levels are absorbed for q >= (1.6677^2/xi_lo)^{m(1+eta)}, eta = eta_m^{(16)} <= (0.4043/Lambda_16 + 1)/log(2p+1) + O(log l/m) = (4.282 + o(1))/log(2p+1), l = log(2p+1) (referee F5: eta specified). Integration note: 1.6677^2/xi_lo = 1.13118 and Lambda_16 = 0.12326; REPORT_L_v2 and the referee quote 1.1311 and 0.12319 (rounded down, which slightly understates the open range); registered here in the exact form; 0.4043/0.12326 + 1 = 4.27999 <= 4.282 (lineL_checks.py). For (+-2,8) there is no narrowing (L_m = 1.4923^{m(1+eta_m)}).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof via Prop K2 with the (+-2,16) constant from the J3 rest certificates; registered in the exact form (1.13118; reports quote 1.1311 rounded down); not formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-254",
+   "title": "Line L Theorem U (level-h scalar L^2 unitarity): the TRACE-206 autocorrelation R(v) vanishes at every exact collision and every collision mod h, so sum_x |A(x)|^2 = 1 and sum_{beta mod h} |Zhat(beta/h)|^2 = h^2",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/code/l1_unitarity_check.py",
+    "computations/verification/lineL/logs/l1_unit_m5_L4.log"
+   ],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] (PHASE CONGRUENCE FORM OF P(n) TAKEN AS GIVEN, REFEREE CAVEAT) + FLOAT CHECKS m = 5 (AUTHOR), 7, 9 (REFEREE) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). w(n) = Phihat(n) e(-nu0 P(n)/2h), Phihat(n) = prod_j ghat(n_j), alpha_n = sum_j n_j lambda^j, A(x) = sum_{alpha_n = x} w(n), Zhat(beta) = sum_n w(n) e(Tr(beta alpha_n)/q). Lemma U1 [P]: R(v) := sum_n w(n) conj w(n - v) = e(nu0 P(v)/2h) prod_j kappa(v_j, theta_j), kappa(d, theta) = sum_a ghat(a) conj ghat(a - d) e(-a theta), theta_j = nu0 y' Tr(lambda^-j alpha_v)/(2h) (P quadratic, cross term linear, psi(d) = y' x_d - 2h y_d, x_d = Tr(lambda^d)/2). Theorem U [P]: if alpha_v = 0 or alpha_v in hO then all theta_j in Z and kappa(d, 0) = i^d J_d(0) = delta_{d,0} (Neumann/Graf addition theorem), so R(v) = delta_{v,0} sum |w|^2; hence sum_{x in O} |A(x)|^2 = 1 and sum_{beta mod h} |Zhat(beta/h)|^2 = h^2. At a level q | h, (1/q^2) sum_beta |Zhat_beta|^2 = sum_{alpha_v in qO} R(v) is NOT 1 in general (twist at level h/q). Link to Conjecture C1 (BGS-TRACE-247): Theorem U is the exact L^2 version behind C1 and does NOT imply C1; it controls no individual level. Referee caveat: the congruence form of the TRACE-206 phase P(n) (the psi_d coefficients) is taken as given, not re-derived (supported numerically only). [N] level-h Parseval at m = 5 (h = 41, |n_j| <= 4) to 3e-11 (l1_unit_m5_L4.log); referee extended to m = 7, 9.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (Neumann/Graf addition theorem, not registered as an external dependency); the congruence form of the TRACE-206 phase P(n) is taken as given (referee caveat); float checks at m = 5, 7, 9 only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-255",
+   "title": "Line L2 decomposition: D_q = (1/q) sum_{beta in l(q) minus 0} Zhat_beta, D_iso = D_q + D_qbar - (1/q^2) sum_{beta != 0} Zhat_beta (open prime levels q || h_m)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). q || h_m an open prime level, qO = q qbar split; l(a) subset O/q the annihilator of an ideal a containing qO under (beta, x) -> e(Tr(beta x)/q), l(q), l(qbar) the two isotropic lines. [P] A(a) = [O:a]^-1 sum_{beta in l(a)} Zhat_beta (orthogonality); D_q := A(q) - A_tot/q = (1/q) sum_{beta in l(q) minus 0} Zhat_beta; D_iso = D_q + D_qbar - (A(qO) - A_tot/q^2) (q cap qbar = qO, (2q-1)/q^2 = 2/q - 1/q^2); A(qO) - A_tot/q^2 = (1/q^2) sum_{beta != 0} Zhat_beta. With Theorem K1 (BGS-TRACE-237) the level contributes 2 Re(conj Z_rho (D_iso - E_b/q)): averages over beta with weights 1/q (isotropic lines) and about 1/q^2 elsewhere, not per-beta bounds.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (orthogonality on O/q); not formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-256",
+   "title": "Line L2 hypothesis H_mean: for some delta > 0 and infinitely many m in S+, |D_iso(q) - E_b(q)/q| <= ((1 - delta) target)^m at every open prime level q, with the analogue at open composite levels",
+   "state": "open",
+   "methods": [
+    "unevidenced"
+   ],
+   "ledger_claimed_methods": [
+    "independent_review"
+   ],
+   "unevidenced": true,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/L2/code/iso_survey.py",
+    "computations/verification/lineL/L2/code/full_level.py"
+   ],
+   "formalization": [],
+   "ledger_status": "OPEN HYPOTHESIS (MEAN FORM OF THE OPEN-RANGE INPUT) + FLOAT LEVEL SURVEY ONLY [N] ((+-2,16) NOT TESTED) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7); LINE L3 (2026-10-31): STRUCTURAL ROUTE DOES NOT CLOSE IT (BGS-TRACE-263..268); STATE UNCHANGED (OPEN)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Open levels as in BGS-TRACE-246 (conductors not in {1, 7} u {q, 7q : q <= c_W p^2}, below L_m). H_mean: for some delta > 0 and infinitely many m in S+, |D_iso(q) - E_b(q)/q| <= ((1 - delta) target)^m at every open prime level q (target 1.28359 for (+-2,8), 1.4742 for (+-2,16)), together with the analogue at open composite levels. A mean statement: individual |Zhat_beta| do exceed the target (rate 1.44-1.56 at (15, 41), (21, 239) [N]). Not proved. Evidence [N, notes only]: L2 level survey (23 isotropic cases m = 15..183, q <= 19609; 6 full levels m <= 51, q <= 239; (2,8) and (-2,8) only; worst full K1 rate 1.178 < 1.28359 at (21, 239)); (+-2,16) not tested; extrapolation from m <= 51 is not reliable. Line L3 (2026-10-31; BGS-TRACE-263..268): the structural/recursive route (walk-measure form, CRT split, inheritance to m = p, spectral form at rank-p levels, exact line quadrature, cusp excursions) does not prove H_mean; the trivial CRT bound needs q >~ 1.8808^m > L_m (BGS-TRACE-264) and the Gauss side does not fold to m = p (BGS-TRACE-265). [assessment, not registered] H_mean is an equidistribution statement beyond the Ehrenfest time; by analogy with Faure-Nonnenmacher-De Bievre (2003), principles valid for all cat-map quantizations at minimal period cannot suffice, and kick-specific input seems necessary.",
+   "spof": "no_proof_or_receipt_in_tree",
+   "spof_detail": "state is open",
+   "other_weaknesses": [],
+   "risk_reassessment": "OPEN_CONJECTURE"
+  },
+  {
+   "id": "BGS-TRACE-257",
+   "title": "Line L2: H_mean implies that frozen R' is false along m = 3p (a proved implication; H_mean is open)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "PROVED IMPLICATION [P] (H_MEAN, BGS-TRACE-256, IS OPEN; THE REFUTATION OF FROZEN R' IS NOT CLAIMED) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Standing inputs: the Line F/J lattice trace representation and its radius hypotheses (BGS-TRACE-197), Theorem J/J3 with Lemma L16 (BGS-TRACE-225, 226, 231), S_Z / Prop K2 (BGS-TRACE-238) and the Weil bound W1 (BGS-TRACE-241). [P] If H_mean (BGS-TRACE-256) holds then, by Theorem K1 (BGS-TRACE-237: each open prime level contributes 2 Re(conj Z_rho (D_iso - E_b/q)), |Z_rho| <= C_rho mu^m with mu * 1.28359 < xi_lo and 1.6677 * 1.4742 < xi_lo), Prop K2 (BGS-TRACE-238; levels >= L_m absorbed) and Theorem W (BGS-TRACE-245; Weil range negligible, m >= m1 effective, not computed), the open part of O-natural is o(xi_lo^m) up to e^{o(m)} level counts, so H-natural_mid holds along these m and Theorem K (BGS-TRACE-240) gives W'_m/m -> infinity: frozen R' is false. This is an implication only; H_mean is NOT proved. BGS-TRACE-206 (frozen R') is NOT refuted.",
+   "spof": "conditional_on_unproved_input",
+   "spof_detail": "A proved implication whose hypothesis H_mean (BGS-TRACE-256) is open; relative to the standing inputs via Theorem W and Theorem K.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-258",
+   "title": "Line L2 Prop S: beta = 1 is slow at every prime q || h_m with log_lambda q >= C_k + 6.1e-6 m (C_k effective, not computed); consequence: K2' gives no contradiction at m where h_m has such a prime below L_m",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineLConst.lean"
+   ],
+   "ledger_status": "PAPER PROOF [P] (GIVEN THE LINE F SPECTRAL DATA; BLOCK COUNT min(r, 2I - k + 2) AND L2-F4 WORDING APPLIED AT INTEGRATION) + LEAN CONSTANT (Bgs.LineL.propS_const) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Given the Line F spectral data (BGS-TRACE-198: some (+-2,8) family F has untwisted spectral radius rho0 >= mu* = 1.9154712; standing). [P] Fix F and k = k_F = 15 (BGS-TRACE-251), T = (1 - delta/2) 1.28359. f_k^F >= 0 is continuous with f_k(0) >= rho0^{2k}, so f_k >= rho0^{2k}/2 on [0, eps_k]^k; for beta = 1, tau_i = Tr(lambda^i)/q in [0, eps_k] for |i| <= I = floor(log_lambda(eps_k q/2)); the number of good blocks is min(r, 2I - k + 2) (indices cyclic mod r; referee nit, applied at integration), so the orbit average exceeds T^{2k} once I >= k/2 + r (T/rho0)^{2k}; with C_k = log_lambda(2/eps_k) + k/2 + 1, (1.28359/1.9154712)^30 = 6.09e-6 <= 6.1e-6 (Lean Bgs.LineL.propS_const) and r <= m, beta = 1 is slow at every prime q || h_m with log_lambda q >= C_k + 6.1e-6 m. Consequence [P] (L2-F4 wording): for every m in S+ such that h_m has a prime q || h_m in (max(c_W p^2, lambda^{C_k + 6.1e-6 m}), L_m), the conclusion of K2' (BGS-TRACE-246) holds unconditionally, so K2' gives no contradiction at such m: K2' is true but not a refutation route there. C_k is not computed, so which m qualify is not determined; that this covers all or most m is [H] (factor data of K2 n2_factor_h.log), NOT registered.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof given the Line F spectral data; C_k effective but not computed; Lean checks only (1.28359/1.9154712)^30 <= 6.1e-6.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-259",
+   "title": "Line L2 Lemma A1 (exact second moment mod q): sum_{beta in l(q)} |Zhat_beta|^2 = q sum_u |A(u + q)|^2, |D_q|^2 <= (1 - 1/q) C_q, C_q = 1 + sum_{alpha_v in q minus 0} R(v) - |Z|^2/q",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Notation of BGS-TRACE-254, 255, q || h_m split. [P] sum_{beta in l(q)} |Zhat_beta|^2 = q sum_{u in O/q} |A(u + q)|^2 (Parseval on O/q); by Cauchy-Schwarz over the q - 1 nonzero beta, |D_q|^2 <= ((q-1)/q^2) sum_{beta in l(q) minus 0} |Zhat_beta|^2 = (1 - 1/q) C_q with C_q := sum_u |A(u + q)|^2 - |Z|^2/q >= 0. In collision form sum_u |A(u + q)|^2 = sum_{v: alpha_v in q} R(v); exact collisions alpha_v = 0, v != 0 contribute 0 (Theorem U), v = 0 contributes sum |w|^2 = 1, so C_q = 1 + sum_{alpha_v in q minus 0} R(v) - |Z|^2/q exactly: only sporadic collisions remain.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (Parseval on O/q, Theorem U); not formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-260",
+   "title": "Line L2 Prop A2 (phase-blind barrier): every cancellation-free collision bound for C_q + |Z|^2/q is >= G^{2m}/q, G = sum_n |J_n(1.8)| = 2.3693986; it certifies the target only for q >= 3.4074^m ((+-2,8)) or 2.5832^m ((+-2,16)), above h_m itself",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/L2/code/barrier_consts.py",
+    "computations/verification/lineL/L2/logs/barrier_consts.log",
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineLConst.lean"
+   ],
+   "ledger_status": "PAPER PROOF [P] + ARB CONSTANTS [CA] (barrier_consts.py; lineL_checks.py) + LEAN SCALAR INEQUALITIES (Bgs.LineL) (L2-F1 APPLIED AT INTEGRATION) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [P] M(u) := sum_{n: alpha_n == u (q)} |w(n)|, sum_u M(u) = G^m; any bound of C_q + |Z|^2/q by a sum of |w(n)||w(n')| over the pairs colliding mod q is >= sum_u M(u)^2 >= G^{2m}/q (Cauchy-Schwarz). So a phase-blind bound certifies |D_q| <= T^m only if G^{2m}/q <= T^{2m}, i.e. q >= (G/T)^{2m} = 3.4074^m (T = 1.28359) or 2.5832^m (T = 1.4742). [CA] G = 2.3693986 and the two ratios (barrier_consts.py; Lean Bgs.LineL barrier8, barrier16 from G >= 2.3693985). L2-F1 (applied at integration): h_m ~ (1/2) 2.4142^m, so sqrt h_m ~ 1.5538^m; both thresholds exceed h_m itself (Lean barrier_above_h, barrier_above_h21), so NO level q dividing h_m qualifies. Also [CA] the main term |Z|^2/q exceeds T^{2m} for every q < (1/4)(mu*/T)^{2m} = (1/4) 2.2269^m, so any usable bound is a signed statement. Notes only [N]: the exact-collision part of the absolute sum is <= C r_abs^m, r_abs = 1.0511.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (Cauchy-Schwarz) with arb constants (barrier_consts.py); Lean checks the scaled ratio inequalities from G >= 2.3693985 only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-261",
+   "title": "Line L2 Lemmas B1-B3 (height/norm, split q): q <= 1.4571 lambda^{r-1} ||F||_inf^2 for sporadic folded collisions; Minkowski vectors with ||F||_inf <= q^{1/r}; the sum over prime ideals above h",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineLConst.lean"
+   ],
+   "ledger_status": "PAPER PROOF [P] (B2 WITH L2-F2, APPLIED AT INTEGRATION) + LEAN SCALAR INEQUALITIES (Bgs.LineL) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Positions are cyclic (lambda^m == 1 mod 2h_m); modulo q, lambda has order r in {p, 3p} (BGS-TRACE-230), and a word difference folds to F_v(X) = sum_{s<r} (sum_{t: s+tr<m} v_{s+tr}) X^s. B1, B2 are stated for SPLIT q (q == +-1 mod 8, the case q || h_m); for inert q the lattice has index q^2 and B2 gives ||F||_inf <= q^{2/r}. B1 [P]: F in Z^r, F(lambda) in q minus 0 => q <= |N(F(lambda))| <= (lambda/(lambda-1))^2 lambda^{r-1} ||F||_inf^2 <= 1.4571 lambda^{r-1} ||F||_inf^2 (r odd, G = lambda^{-c} F(lambda), c = (r-1)/2, both embeddings; (lambda/(lambda-1))^2 = 1.45711; Lean B1_const). B2 [P]: Lambda_q = {F in Z^r : F(l) = 0 in F_q} has index q, so it contains F != 0 with ||F||_inf <= q^{1/r} (Minkowski, cube); for q < L_m and r >= p: q^{1/r} < (1.4923^3)^{1+eta} = 3.3233^{1+eta} (Lean B2_const). L2-F2 (applied at integration): 'sporadic collisions of height <= 4 exist' requires 3.3233^{1+eta} < 5, i.e. eta < 0.340, so it holds for large p only; such F is genuinely sporadic: a nonzero F with ||F||_inf <= 4 cannot vanish at lambda (Cauchy root bound: every root has modulus < 1 + 4 = 5 < lambda = 5.83; Lean lambda_gt_five), so F(lambda) in q minus 0. B3 [P]: for alpha_v != 0, ||v||_inf <= H, the distinct prime ideals q | h containing alpha_v are coprime, so sum log Nq <= log |N(alpha_v)| <= log(1.457 lambda^{m-1} H^2), and summing with the absolute weights gives sum_{q | h} log Nq (Coll^abs_q - exact part) <= (1 + o(1)) m log lambda G^{2m}. [assessment, not registered] B3 does not help (it is compatible with Prop A2).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proofs (norm bound, Minkowski, Cauchy root bound; standard results not registered as external dependencies); Lean checks the scalar constants only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-262",
+   "title": "Line L2: for all sufficiently large p the height zone of Lemma B1 and the open range (c_W p^2, L_m) are disjoint, for (+-2,8) and (+-2,16)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 1,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] (AFTER L2-F2, L2-F3, APPLIED AT INTEGRATION) + INTEGRATION CONSTANT CHECK (lineL_checks.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [P] With r >= p the height argument (B1) excludes sporadic collisions only for q > 1.457 lambda^{p-1} H^2, growth lambda^{m/3} = 1.7996^m (r = 3p: lambda^m, worse). (+-2,8): log L_m/m = 0.40030 (1 + eta_m) < log(lambda)/3 = 0.58758 iff eta_m < 0.4678, true for all large p since eta_m <= (2.010 + o(1))/log(2p+1) (BGS-TRACE-238). (+-2,16): Lambda_16 (1 + eta^(16)) < 0.58758 iff eta^(16) < 3.77 (3.767 with the exact Lambda_16 = 0.12326; 3.770 with the quoted 0.12319), true for all sufficiently large p since eta^(16) <= (4.282 + o(1))/log(2p+1) (BGS-TRACE-253); L2-F3 (applied at integration): 'for every p' replaced by 'for all sufficiently large p' (the bounds carry o(1) and O(log l/m) terms). Hence for large p the height zone does not meet (c_W p^2, L_m), and the height argument closes neither the (+-2,16) range nor any part of the (+-2,8) range.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper comparison of growth exponents for large p; integration constant check only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-263",
+   "title": "Line L3 S1 (walk-measure form): A = chi B_m with chi(x) = e(-nu0 y' Nm x/2h) and Bhat_m(y) = prod_{j<m} g(Tr lambda^j y), g(t) = e^{i 1.8 cos 2 pi t}, so |Bhat_m| = 1",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md, section Line L3 referee: READY AFTER FIXES L3-F1..F4, applied at integration as REPORT_L3.md section 6)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206; m = 3p, notation of BGS-TRACE-254, 255 (w(n) = Phihat(n) e(-nu0 P(n)/2h), A, Zhat_beta, D_q, l(q)); T = 1.28359 for (+-2,8). [P] By BGS-TRACE-212, P(n) = y' Nm(alpha_n) - 2h sum_{i,j} y_{|i-j|} n_i n_j (sum x_{|i-j|} n_i n_j = alpha_n alphabar_n, Tr lambda^d = 2 x_d), and the 2h-term gives e(integer) = 1. Hence w(n) = Phihat(n) chi(alpha_n), chi(x) = e(-nu0 y' Nm x/2h) is 2hO-periodic, A(x) = chi(x) B_m(x) with B_m(x) = sum_{alpha_n = x} Phihat(n) (the law of the walk alpha_n with i.i.d. complex steps ghat(n_j) at positions lambda^j), and Bhat_m(y) = sum_x B_m(x) e(Tr xy) = prod_{j<m} g(Tr lambda^j y) with g(t) = sum ghat(n) e(nt) = e^{i 1.8 cos 2 pi t} (Jacobi-Anger), so |Bhat_m| = 1 identically (the Fourier side of Theorem U).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (TRACE-212 phase identity, Jacobi-Anger); not formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-264",
+   "title": "Line L3 S2 (CRT split): A(q) is a level-2h/q Gauss sum of B_m on q; |A(q)| <= h/q and |D_q| <= 2h/q when |Z| <= h, which gives |D_q| <= T^m only for q >~ 1.8808^m, above L_m",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "computer_certificate",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/referee/L3/s2s3.py",
+    "computations/verification/lineL/referee/L3/s2s3.log",
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineLConst.lean"
+   ],
+   "ledger_status": "PAPER PROOF [P] (AFTER L3-F1, APPLIED AT INTEGRATION; REFEREE GAUSS-SHAPE CHECK s2s3.py) + LEAN SCALAR (Bgs.LineL.L3_F1_rate) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md, section Line L3 referee: READY AFTER FIXES L3-F1..F4, applied at integration as REPORT_L3.md section 6)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206; m = 3p, notation of BGS-TRACE-254, 255 (w(n) = Phihat(n) e(-nu0 P(n)/2h), A, Zhat_beta, D_q, l(q)); T = 1.28359 for (+-2,8). [P] q || h an odd prime, M' = 2h/q (even, == 2 mod 4), a M' + b q = 1 (gcd(q, M') = 1): 1/2h = a/q + b/M', chi(x) = e(-c a Nm x/q) e(-c b Nm x/M'), c = nu0 y'; Nm x == 0 (mod q) on q u qbar, so A(q) = sum_{x in q} B_m(x) psi'(x) with psi' at level M'; Fourier on both factors (characters indexed by O^dual, or (Z/M')^2, since the trace pairing degenerates at 2): A(q) = sum_z Fhat(z) Bhat_m(z/2h), F = 1_q tensor psi', sum |Fhat_q| = 1. L3-F1 (applied at integration): |Fhat_{M'}| = 2/M' on exactly M'^2/4 points and 0 elsewhere (referee check with the actual coefficient at (m, q) = (9, 199), (9, 7)), so sum |Fhat_{M'}| = M'/2 and, with |Bhat_m| = 1 (BGS-TRACE-263), |A(q)| <= h/q and |D_q| <= h/q + |Z|/q <= 2h/q whenever |Z| <= h (true for m >= 495 by the Z-bound of Prop K2, BGS-TRACE-238, |Z_rho| <= C_rho mu^m, C ~ 1/2, mu = 1.9154753 < 1 + sqrt2; for smaller m to be checked case by case). Hence |D_q| <= T^m follows only for q >= 2h/T^m ~ ((1 + sqrt2)/1.28359)^m = 1.8808^m (Lean L3_F1_rate), which is above L_m = 1.4923^{m(1+eta_m)} once eta_m < 0.578 (all large p). This is the large-sieve threshold of REPORT_L_v2 section 5(c) as an exact trivial bound (the author's 4h/q, threshold 2 x 1.8808^m, sharpened by L3-F1).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (CRT, Gauss sums) after L3-F1 (applied at integration; referee Gauss-shape check at two (m, q)); |Z| <= h only for m >= 495 via Prop K2; Lean checks the scalar 1.8808 only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-265",
+   "title": "Line L3 S3 (no Gauss-side folding): h_{3p} = h_p (4 h_p^2 + 3); every prime of K_p = 4 h_p^2 + 3 other than 7 (rank 3) has rank 3p, so the level-K_p factor of the m = 3p phase does not reduce to m = p",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "exact_identity",
+    "independent_review",
+    "lean_formalization"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "exact_identity",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 2,
+    "formalization": 1
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/referee/L3/s2s3.py",
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [
+    "formalization/Bgs/LineLConst.lean"
+   ],
+   "ledger_status": "PAPER PROOF [P] (AFTER L3-F2, APPLIED AT INTEGRATION) + EXACT CHECKS p <= 23 (REFEREE s2s3.py; lineL_checks.py) + LEAN FINITE INSTANCES (Bgs.LineL) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md, section Line L3 referee: READY AFTER FIXES L3-F1..F4, applied at integration as REPORT_L3.md section 6)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206; m = 3p, notation of BGS-TRACE-254, 255 (w(n) = Phihat(n) e(-nu0 P(n)/2h), A, Zhat_beta, D_q, l(q)); T = 1.28359 for (+-2,8). [P] For q | h_p and m = 3p, lambda^p == 1 (mod 2h_p) and B_{3p} = B_p * (lambda^p)_* B_p * (lambda^{2p})_* B_p, so B_{3p} == B_p^{*3} as measures mod 2h_p. But h_{3p} = h_p (4 h_p^2 + 3) (V_{3n} = V_n^3 + 3 V_n for odd n, V_n = eta^n - eta^-n = 2 h_n, eta = 1 + sqrt2) and gcd(h_p, K_p) | 3, K_p = 4 h_p^2 + 3. L3-F2 (applied at integration): if q' | K_p and lambda^p == 1 mod q' then q' divides 2h_1 = 2 or 2h_3 = 14, so the only exception is 7, of rank 3 (not 3 as the author wrote); 7 | K_p for every p = 5..23 (49 | K_7, so 49 | h_21; v_7(h_{3p}) = 1 + v_7(p)), 3 never occurs (gcd = 1 for p <= 23); every other prime of K_p has rank 3p (e.g. 31, 4663, 313, 4088137, 409, 457, 14593). By S2 (BGS-TRACE-264) the phase psi' has a factor at level K_p, where lambda^p is not == 1 and no folding is available: the Gauss side does not reduce to m = p. Exact checks for p <= 23 (lineL_checks.py; referee; Lean L3_S3_identity, L3_F2_seven, L3_F2_49 for p = 5..23). (49 | h_21 does not affect '49 does not divide h' in Prop K2, which is for m >= 495.)",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (Lucas-type identity, rank argument) after L3-F2 (applied at integration); exact and Lean checks of finite instances p <= 23 only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-266",
+   "title": "Line L3 S4 (transfer-side spectral form at rank-p levels): if r(q) = p then Zhat^{(3p)}_beta = c_{3p} Tr_K[(I_K tensor <1|) Pi_beta^3 (I_K tensor |0>)], Pi_beta the p-step twisted transfer operator (given the Line G/I transfer law)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/L3/code/inherit_test.py",
+    "computations/verification/lineL/L3/logs/inherit_p5_q41.json",
+    "computations/verification/lineL/L3/logs/inherit_p7_q239.json"
+   ],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] GIVEN THE LINE G/I TRANSFER LAW (BGS-TRACE-203, 216) + FLOAT CHECK [N] (inherit_test.py, ERROR <= 1.7e-13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md, section Line L3 referee: READY AFTER FIXES L3-F1..F4, applied at integration as REPORT_L3.md section 6)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206; m = 3p, notation of BGS-TRACE-254, 255 (w(n) = Phihat(n) e(-nu0 P(n)/2h), A, Zhat_beta, D_q, l(q)); T = 1.28359 for (+-2,8). [P given the Line G/I transfer law (BGS-TRACE-203, 216)] If r(q) = ord_q(lambda) = p (BGS-TRACE-230), the twists tau_i(beta) = Tr(beta lambda^i)/q have period p, and by cyclicity the transfer law gives Zhat^{(3p)}_beta = c_{3p} Tr_K[(I_K tensor <1|) Pi_beta^3 (I_K tensor |0>)], Pi_beta = prod_{i<p} T_{tau_i} the p-step operator on H^2-Galerkin tensor (P mod b) states, built with the m = 3p automaton constants (m == 3 mod 6). L3-F3 label (applied at integration): '[P by construction]' replaced by '[P given Line G/I] + [N]'. [N] check inherit_test.py: error <= 1.7e-13 at (p, q) = (5, 41) and (7, 239), 6 isotropic beta each (referee: <= 1.73e-13; |mu| = 7.0159, (1/2)|mu|^3 = 172.67 vs |Zhat| = 172.74). Not registered [N/assessment]: that no m = p quantity bounds Zhat^{(3p)} (|Zhat^{(p)}|^3 does not track |Zhat^{(3p)}|).",
+   "spof": "conditional_on_unproved_input",
+   "spof_detail": "Proved given the Line G/I transfer law (BGS-TRACE-203, 216; proved claims, finite-alphabet law), applied with period-p twists; float check of the spectral identity at two levels only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-267",
+   "title": "Line L3 Lemma Q (exact line quadrature): (1/q) sum_{beta in l(q)} F(beta/q) = sum_{gamma in q} c_gamma; so the isotropic-line mean block energy lies in [I_k - T_k(q), I_k + T_k(q)] for every q, without Weil",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 0,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] (REMARK RELABELLED [H] BY L3-F3, NOT REGISTERED) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md, section Line L3 referee: READY AFTER FIXES L3-F1..F4, applied at integration as REPORT_L3.md section 6)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206; m = 3p, notation of BGS-TRACE-254, 255 (w(n) = Phihat(n) e(-nu0 P(n)/2h), A, Zhat_beta, D_q, l(q)); T = 1.28359 for (+-2,8). [P] For any absolutely convergent F(y) = sum_gamma c_gamma e(Tr gamma y) and a prime q | q of degree 1: (1/q) sum_{beta in l(q)} F(beta/q) = sum_{gamma in q} c_gamma (orthogonality on l(q), whose annihilator is q mod q, q odd); the average is exactly c_0 when F has no frequency gamma != 0 with |Nm gamma| >= q (gamma in q minus 0 implies |Nm gamma| >= q). Use: for F = f_k (BGS-TRACE-243 notation) the isotropic-line mean block energy lies in [I_k - T_k(q), I_k + T_k(q)], with no Weil input and no upper limit on q. NOT registered: the Remark on Hoelder decoupling (reproducing the positivity threshold mu*^m/q, i.e. the base of L_m) is [H] (L3-F3, applied at integration).",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (orthogonality on the isotropic line); not formalised.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
+  },
+  {
+   "id": "BGS-TRACE-268",
+   "title": "Line L3 Lemma E (cusp excursions): if dist(Tr(beta lambda^j)/q, Z) <= eps for k >= 3 consecutive j (0 < eps <= 1/16, beta != 0), then lambda^{k-1} <= 264 eps^2 q (beta isotropic) and <= 264 eps^2 q^2 (every beta != 0)",
+   "state": "proved",
+   "methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "ledger_claimed_methods": [
+    "analytic_proof",
+    "independent_review",
+    "float_numerics"
+   ],
+   "unevidenced": false,
+   "adverse_receipt": false,
+   "receipt_counts": {
+    "evidence": 1,
+    "verifiers": 3,
+    "formalization": 0
+   },
+   "evidence": [
+    "evidence/executions/20261031/lineL/receipt.json"
+   ],
+   "verifiers": [
+    "computations/verification/lineL/L3/code/excursion_check.py",
+    "computations/verification/lineL/L3/logs/excursion_check.json",
+    "computations/verification/lineL/integration_checks/lineL_checks.py"
+   ],
+   "formalization": [],
+   "ledger_status": "PAPER PROOF [P] (REFEREE: CONSERVATIVE CONSTANTS) + FLOAT RUN-LENGTH CHECK [N] (excursion_check.py) + INTEGRATION CONSTANT CHECK (lineL_checks.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md, section Line L3 referee: READY AFTER FIXES L3-F1..F4, applied at integration as REPORT_L3.md section 6)",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206; m = 3p, notation of BGS-TRACE-254, 255 (w(n) = Phihat(n) e(-nu0 P(n)/2h), A, Zhat_beta, D_q, l(q)); T = 1.28359 for (+-2,8). [P] Write Tr(betatilde lambda^j)/q = n_j + u_j, |u_j| <= eps; the recurrence t_{j+1} = 6 t_j - t_{j-1} and 8 eps < 1 force n_{j+1} = 6 n_j - n_{j-1} on the window; so n_j = Tr(gamma lambda^j), gamma = n_0/2 + (n_1 - 3 n_0)/8 sqrt2 in (1/8)O; delta = betatilde/q - gamma gives u_j = sigma_1(delta) lambda^j + sigma_2(delta) lambda^-j and |sigma_1 sigma_2(delta)| <= 4 eps^2 lambda^{-(k-1)} (1 - lambda^{-2(k-1)})^{-2} <= 4.12 eps^2 lambda^{-(k-1)} (referee: an exact solve gives the smaller eps^2 lambda^-K/(1 - lambda^-K)^2); 8 q delta in O minus qO, in the conjugate ideal when beta is isotropic, so |Nm(8 q delta)| >= q (isotropic) or >= 1; 64 x 4.12 <= 264. The bound with q^2 holds for every beta != 0 (referee). At eps = 0.05: isotropic runs <= log_lambda q + 0.76, others <= 2 log_lambda q + 0.76. [N] excursion_check.py: observed runs within the bounds at q = 41, 239, 353, 599, 4663, 15607. [assessment, not registered] Lemma E does not control time near other rational points.",
+   "spof": "unformalized_analytic_chain",
+   "spof_detail": "Paper proof (recurrence, norm bound) with conservative constants; float run-length check only.",
+   "other_weaknesses": [],
+   "risk_reassessment": "PENDING_INDEPENDENT_PROOF_REVIEW"
   }
  ],
  "recovery_upgrade": {

@@ -1,5 +1,27 @@
 # Scientific changelog
 
+## 2026-10-31 — Lines L, L2, L3: OP certified, Theorem W and K2′ without OP, the open range in frozen R′ (TRACE-248–268)
+
+State reviews (referee tables): **BGS-TRACE-244 (OP) open → proved [P + CA]**: (OP_k, δ) holds for the four k1 lattice-lifted families
+at the certified (k, ρ, β), δ ≈ 0.0162 for (±2,8)V. **BGS-TRACE-245 (Theorem W) and BGS-TRACE-246 (K2′) conditional → proved
+[P + CA]**, under the standing inputs (TRACE-197 Line F/J trace representation, J3 with L16, S_Z (Prop K2), Weil), for m ≥ m₁
+(effective, not computed), c_W = 10^−25.62, q₀ = 10^13.2; no explicit p₀ is claimed. Caveat on 246 (Prop S): K2′ is true, but it is not a
+refutation route for the m covered by Prop S. BGS-TRACE-247 (C1) stays open.
+
+Register as project proofs: BGS-TRACE-248 (collision structure), 249 (Lemma O1), 250 (Theorem OP_abs, cancellation-free), 251
+(four-family arb certificate), 252 (T_k bound, c_W, q₀), 253 ((±2,16) narrowing to q < (1.6677²/ξ_lo)^{m(1+η)}), 254 (Theorem U;
+the L² version of C1, does not imply it), 255 (L2 decomposition), 257 (H_mean ⇒ frozen R′ false; an implication), 258 (Prop S),
+259 (Lemma A1), 260 (Prop A2, phase-blind barrier), 261 (Lemmas B1–B3), 262 (height zone and open range disjoint for large p).
+Line L3 (structural/recursive route; it does not close the open range): BGS-TRACE-263 (S1, walk-measure form), 264 (S2, CRT split,
+|D_𝔮| ≤ 2h/q, after L3-F1), 265 (S3, no Gauss-side folding; exceptional prime 7, after L3-F2), 266 (S4, spectral form at rank-p
+levels, given the Line G/I transfer law), 267 (Lemma Q), 268 (Lemma E), all proved. Register as **open**: BGS-TRACE-256 (H_mean). Numerics (r_abs = 1.0511, the L2 level survey), the deficit identity [H] and the
+negative assessments are in the note only.
+
+The referee's L2 text fixes L2-F1–F4 and the Prop S block count, and the L3 fixes L3-F1–F4, were applied at integration as errata
+sections of the repository copies of REPORT_L2.md and REPORT_L3.md (author files kept in `pre_polish/`). New Lean module: `Bgs.LineLConst` (scalar constant inequalities only).
+Independent referee audit: `computations/verification/lineL/referee/REPORT.md`. **BGS-TRACE-206 stays open**; no refutation is claimed.
+There is no BGS counterexample and no progress on BGS-TRACE-148.
+
 ## 2026-10-31 — Line K: H_arg removed, the light-cone identity and the Weil range in frozen R′ (TRACE-234–247)
 
 Register as project proofs:

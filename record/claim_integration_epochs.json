@@ -1180,7 +1180,7 @@
       "id": "BGS-TRACE-206",
       "state": "open",
       "source": "mathematics/fixed-map/resonance_classification_lineG.md",
-      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed. 31 October 2026 (Line K): state unchanged (open); S+ infinite unconditionally (TRACE-235), so frozen R' is false under H-natural alone (TRACE-236) or under H-natural_mid (TRACE-239, 240); both open; no refutation claimed."
+      "disposition": "30 October 2026 (Lines F, G): open conjecture R' (frozen definition) with a pre-registered m = 17 test. Does not close TRACE-148, TRACE-179 or BGS-001. 31 October 2026 (Line J): state unchanged (open); Theorem J (TRACE-225) certifies oscillating d = 7 growth along subsequences and Theorem J3 (TRACE-231) refutes frozen R' along m = 3p only under the open hypotheses TRACE-232, TRACE-233; no refutation claimed. 31 October 2026 (Line K): state unchanged (open); S+ infinite unconditionally (TRACE-235), so frozen R' is false under H-natural alone (TRACE-236) or under H-natural_mid (TRACE-239, 240); both open; no refutation claimed. 31 October 2026 (Line L): state unchanged (open); OP proved (TRACE-244), Theorem W and K2' proved under standing inputs (TRACE-245, 246); open range reduced to H_mean (TRACE-256, open; TRACE-257); no refutation claimed."
     },
     {
       "id": "BGS-TRACE-207",
@@ -1406,27 +1406,153 @@
     },
     {
       "id": "BGS-TRACE-244",
-      "state": "open",
+      "state": "proved",
       "source": "mathematics/fixed-map/lineK_harg_removal.md",
-      "disposition": "31 October 2026 (Line K): open hypothesis (OP_k, delta) on the cat-map second moments; toy float evidence only. Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line K): open hypothesis (OP_k, delta) on the cat-map second moments; toy float evidence only. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): explicit state review open -> proved [P + CA]: (OP_k, delta) holds for the four k1 lattice-lifted families at the certified (k, rho, beta), delta ~ 0.0162 for (+-2,8)V (TRACE-249, 250, 251); refereed (Line L DELTA READY)."
     },
     {
       "id": "BGS-TRACE-245",
-      "state": "conditional",
+      "state": "proved",
       "source": "mathematics/fixed-map/lineK_harg_removal.md",
-      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem W: Weil-range conductors q <= c_k p^2 negligible; asymptotic only; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem W: Weil-range conductors q <= c_k p^2 negligible; asymptotic only; refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): explicit state review conditional -> proved [P + CA]: OP condition dropped (TRACE-244 proved); under the standing inputs (TRACE-197, J3 with L16, Weil) for m >= m1 (effective, not computed), c_W = 10^-25.62, q0 = 10^13.2; no explicit p0; refereed."
     },
     {
       "id": "BGS-TRACE-246",
-      "state": "conditional",
+      "state": "proved",
       "source": "mathematics/fixed-map/lineK_harg_removal.md",
-      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem K2': frozen R' implies a slow lambda-orbit at an open conductor; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line K): conditional (on OP, TRACE-244, open); Theorem K2': frozen R' implies a slow lambda-orbit at an open conductor; not a refutation; refereed. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): explicit state review conditional -> proved [P + CA] under the same standing inputs plus S_Z (Prop K2), m >= m1 (effective, not computed); caveat (Prop S, TRACE-258): true, but not a refutation route for the m covered by Prop S; refereed."
     },
     {
       "id": "BGS-TRACE-247",
       "state": "open",
       "source": "mathematics/fixed-map/lineK_harg_removal.md",
-      "disposition": "31 October 2026 (Line K): open conjecture C1 (lim I_k^{1/k} = 1 for the true families); toy float evidence only. Does not close TRACE-206, TRACE-148 or BGS-001."
+      "disposition": "31 October 2026 (Line K): open conjecture C1 (lim I_k^{1/k} = 1 for the true families); toy float evidence only. Does not close TRACE-206, TRACE-148 or BGS-001. 31 October 2026 (Line L): state unchanged (open); no longer needed for OP (TRACE-244 proved without it); Theorem U (TRACE-254) is its L^2 version and does not imply it."
+    },
+    {
+      "id": "BGS-TRACE-248",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper); collision structure alpha_v = 0 iff (X^2 - 6X + 1) | v, carries; refereed (Line L DELTA READY). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-249",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper); Lemma O1 word HS bound, outermost-letter tau assignment, '+1' needed for E; refereed (Line L DELTA READY). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-250",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper); Theorem OP_abs cancellation-free second moment I_k <= C_pair S_k; refereed (Line L DELTA READY). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-251",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (computer-assisted, arb); four-family OP certificate, rates 1.26278 / 1.13642 / 1.39243 / 1.30276 below 1.28359 / 1.4742; integration rerun identical; Lean scalar comparisons; refereed (Line L DELTA READY). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-252",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper + arb); T_k bound, c_W = 10^-25.62, q0 = 10^13.2; non-vacuous only from p ~ 8.3e25; no explicit p0; refereed (Line L DELTA READY). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-253",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper + arb constants); (+-2,16) open range narrows to q < (1.6677^2/xi_lo)^{m(1+eta)}, eta <= (4.282 + o(1))/log(2p+1); refereed (Line L DELTA READY). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-254",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper; phase congruence form taken as given); Theorem U level-h L^2 unitarity; linked to C1 (TRACE-247), does not imply it; refereed (Line L DELTA READY). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-255",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper); L2 decomposition of D_q, D_iso through Zhat_beta; refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-256",
+      "state": "open",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): open hypothesis H_mean (mean bound of the K1 combination at open levels); float level survey only. Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-257",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved implication (paper): H_mean (TRACE-256, open) implies frozen R' false; no refutation claimed; refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-258",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper, given Line F spectral data); Prop S: slow beta exist at q || h_m with log_lambda q >= C_k + 6.1e-6 m; K2' not a refutation route at such m; refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-259",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper); Lemma A1 exact second moment mod q; refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-260",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper + arb); Prop A2 phase-blind barrier, thresholds 3.4074^m and 2.5832^m exceed h_m; refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-261",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper); Lemmas B1-B3 height/norm (split q; B2 after L2-F2); refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-262",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper); height zone and open range disjoint for all sufficiently large p; refereed (L2 READY after text fixes L2-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-263",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper); L3 S1 walk-measure form, |Bhat_m| = 1; refereed (L3 READY after fixes L3-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-264",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper, after L3-F1); L3 S2 CRT split, |D_q| <= 2h/q when |Z| <= h, threshold ~1.8808^m above L_m; refereed (L3 READY after fixes L3-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-265",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper, after L3-F2); L3 S3 h_{3p} = h_p(4h_p^2 + 3), exceptional prime 7 (rank 3), no Gauss-side folding; refereed (L3 READY after fixes L3-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-266",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved given the Line G/I transfer law (TRACE-203, 216); L3 S4 spectral form at rank-p levels; float check; refereed (L3 READY after fixes L3-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-267",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper); L3 Lemma Q exact line quadrature; refereed (L3 READY after fixes L3-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
+    },
+    {
+      "id": "BGS-TRACE-268",
+      "state": "proved",
+      "source": "mathematics/fixed-map/lineL_op_open_range.md",
+      "disposition": "31 October 2026 (Line L): proved (paper); L3 Lemma E cusp excursions; refereed (L3 READY after fixes L3-F1..F4, applied at integration). Does not close TRACE-206, TRACE-148 or BGS-001."
     }
   ],
   "invariants": [

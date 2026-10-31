@@ -16,6 +16,10 @@
 The packet is `computations/verification/lineK/` (author reports `REPORT_v2.md` and `K2/REPORT_K2_v2.md`, code, logs, Lean, referee
 files). The integration record is `evidence/executions/20261031/lineK/INTEGRATION.md`.
 
+**Later work (Lines L, L2, L3, 31 October 2026).** [lineL_op_open_range.md](lineL_op_open_range.md) (BGS-TRACE-248 to BGS-TRACE-268) proves OP
+(BGS-TRACE-244, open → proved) by a cancellation-free bound and an arb certificate, so Theorem W and K2′ (BGS-TRACE-245, 246) hold
+under the standing inputs for m ≥ m₁ (effective, not computed), c_W = 10^−25.62. C1 (BGS-TRACE-247) stays open. Frozen R′ stays open.
+
 **Registered claims** (`record/claims.json`):
 
 | § | claim | content | label | state |

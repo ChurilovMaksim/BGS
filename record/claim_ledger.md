@@ -1,5 +1,19 @@
 # Claim ledger
 
+## OP certified, Theorem W and K2′ without OP, and the open range in frozen R′ (Lines L, L2, L3), 31 October 2026
+
+State changes (explicit reviews, referee tables): BGS-TRACE-244 (OP) open → proved [P + CA]; BGS-TRACE-245 (Theorem W) and
+BGS-TRACE-246 (K2′) conditional → proved [P + CA] under the standing inputs (TRACE-197, J3 with L16, S_Z, Weil), m ≥ m₁ effective, not
+computed, c_W = 10^−25.62, q₀ = 10^13.2; 246 is not a refutation route for the m covered by Prop S (BGS-TRACE-258).
+
+Project proofs: BGS-TRACE-248, 249, 250 (paper); 251 (arb certificate; Lean scalar comparisons); 252, 253 (paper + arb); 254 (Theorem U,
+phase congruence form taken as given); 255, 257 (implication from the open 256), 258, 259, 260, 261, 262 (paper; L2 text fixes applied at
+integration); Line L3: 263, 264 (after L3-F1), 265 (after L3-F2), 267, 268 (paper), 266 (given the Line G/I transfer law); L3 fixes
+applied at integration.
+
+Open: BGS-TRACE-256 (H_mean). BGS-TRACE-247 (C1) stays open. BGS-TRACE-206 (frozen R′) stays **open** and is not refuted. Numerics,
+the deficit identity [H] and negative assessments are recorded in the note only.
+
 ## H_arg removed, the light-cone identity and the Weil range in frozen R′ (Line K), 31 October 2026
 
 Project proofs:
