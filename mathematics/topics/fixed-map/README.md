@@ -35,6 +35,14 @@ The exact odd-dimensional frozen propagator uses fixed tau=10^(-80), the correct
 - **[Resonance classification (Line G)](../../fixed-map/resonance_classification_lineG.md)** — TRACE-203–206. A general partial-trace law for every unit ν (proved, finite alphabet); the dilution identity, the outlier classification and the corrected mean law R′ (pre-registered m = 17 test) are open.
 - **[49-state certificate (Line H)](../../fixed-map/lineH_49state_certificate.md)** — TRACE-207–209. For the Line B kick at η = 2 (s = −1), the lifted 49-state operator V_0 has one certified simple eigenvalue with |μ*| ∈ [1.846834, 1.946835], and W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m (computer-assisted, refereed). Conjecture R (TRACE-179) as stated is therefore refuted; R_NSW is the separate open TRACE-210. The odd m with 3 ∤ m in 17–43, 3 | m, η ≠ 2 and s = +1 are not covered, and BGS itself is not addressed.
 - **[Reduction of Conjecture R′ (Line I)](../../fixed-map/lineI_rprime_reduction.md)** — TRACE-211–220. An exact reduction of R′ (TRACE-206) to (E″), (T″) and the dilation remainder (D), none of which is proved. It uses the dilation-coset L² law with a per-member Gauss-sum formula. Lean covers only the finite coset algebra and the norm counts; the Fourier step and the Gauss-sum formula are paper proofs. For d = 7 there are computer-assisted certificates: the square term is ≤ 0.01 for m ≥ 321 (ρ = (±2,8) only; the (±2,16) level-7 members are not controlled), and the twisted radius is r_tw > 1.262 > √λ/μ₀, so operator radii cannot control the cross term. Also: exact intertwiners, an aliasing identity, and the unbounded prime support of h_m. R′ stays open; R′_A (TRACE-220) is open.
+- **[OP certified, Theorem W and K2′ without OP, the open range in frozen R′ (Lines L, L2, L3)](../../fixed-map/lineL_op_open_range.md)** — TRACE-248–268; state reviews of TRACE-244–246.
+  - OP (TRACE-244) is proved by a cancellation-free bound (TRACE-249, 250) and an arb certificate (TRACE-251).
+  - Theorem W and K2′ (TRACE-245, 246) hold under the standing inputs for m ≥ m₁ (effective, not computed), c_W = 10^−25.62 (TRACE-252).
+  - Theorem U (TRACE-254) is the L² version of C1 (TRACE-247, open) and does not imply it; (±2,16) narrowing (TRACE-253).
+  - L2: the open range needs H_mean (TRACE-256, open; TRACE-257); Prop S, Lemma A1, Prop A2, Lemmas B1–B3 and disjointness (TRACE-258–262).
+  - L3: the structural/recursive route (TRACE-263–268) does not close it.
+  - Lean: `Bgs.LineLConst` (scalar constants only).
+  - R′ stays open.
 - **[H_arg removed, light-cone identity and the Weil range in frozen R′ (Line K)](../../fixed-map/lineK_harg_removal.md)** — TRACE-234–247.
   - Theorem K3 (TRACE-235): S⁺ is infinite unconditionally (gap lemma TRACE-234; H_arg bypassed, not proved).
   - Frozen R′ is false under H♮ alone (TRACE-236) or under H♮_mid (TRACE-239, 240); both open.

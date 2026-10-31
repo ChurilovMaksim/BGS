@@ -2,6 +2,14 @@
 
 ## Phase average, revival, and the signed sum
 
+Lines L, L2 and L3 (BGS-TRACE-248 to BGS-TRACE-268) settle the operator input OP (BGS-TRACE-244, proved), so Theorem W and K2′
+(BGS-TRACE-245, 246) hold under the standing inputs for m ≥ m₁ (effective, not computed). The following remain open:
+* **H_mean (BGS-TRACE-256)**, a mean bound for D_iso − E_b/q at the open levels c_W p² < q < L_m; it would refute frozen R′ (BGS-TRACE-257).
+  Per-β bounds, phase-blind collision counts, the height argument and the L3 structural route cannot give it (BGS-TRACE-258, 260,
+  262, 264, 265).
+* H♮ (BGS-TRACE-232) and H♮_mid (BGS-TRACE-239); Conjecture C1 (BGS-TRACE-247), no longer needed for OP.
+* Computing m₁ (Theorem W) and C_k (Prop S).
+
 Line K (BGS-TRACE-234 to BGS-TRACE-247) settles item (b) of the Line J list below in its second form: S⁺ is infinite without
 H_arg (BGS-TRACE-235), so H_arg (BGS-TRACE-233) is no longer needed, although it is still unproved. The following remain open:
 * **H♮ (BGS-TRACE-232)** or the alternative **H♮_mid (BGS-TRACE-239)**; either one refutes frozen R′ along m = 3p (BGS-TRACE-240).

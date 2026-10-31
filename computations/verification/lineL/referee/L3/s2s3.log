@@ -1,0 +1,19 @@
+5 gcd 1 K factors {7: (1, 3), 31: (2, 15)}
+7 gcd 1 K factors {7: (2, 3), 4663: (1, 21)}
+11 gcd 1 K factors {7: (1, 3), 37667521: (1, 33)}
+13 gcd 1 K factors {7: (1, 3), 313: (1, 39), 4088137: (1, 39)}
+17 gcd 1 K factors {7: (1, 3), 409: (1, 51), 3610372009: (1, 51)}
+19 gcd 1 K factors {7: (1, 3), 457: (1, 57), 14593: (1, 57), 7521721: (1, 57)}
+23 gcd 1 K factors {7: (1, 3), 57887325592525441: (1, 69)}
+m 9 q 199 M' 14 gcd(k,M') 1 sum|Fhat| 6.999999999999998 max|Fhat|*M' 2.0000000000000004 support 49 of 196
+m 9 q 7 M' 398 gcd(k,M') 1 sum|Fhat| 199.00000000000017 max|Fhat|*M' 2.000000000000004 support 39601 of 158404
+Traceback (most recent call last):
+  File "/workspace/audit/lineL/L3/s2s3.py", line 27, in <module>
+    X,Y=np.meshgrid(A,A,indexing='ij')
+        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/workspace/bgs-derand/phase3/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 5209, in meshgrid
+    output = tuple(x.copy() for x in output)
+  File "/workspace/bgs-derand/phase3/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 5209, in <genexpr>
+    output = tuple(x.copy() for x in output)
+                   ~~~~~~^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 1.52 TiB for an array with shape (456974, 456974) and data type int64

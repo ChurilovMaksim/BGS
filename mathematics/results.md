@@ -1,5 +1,20 @@
 # Theorem families and their limits
 
+## OP certified, Theorem W and K2′ without OP, and the open range in frozen R′ (Lines L, L2, L3), 31 October 2026
+
+* [TRACE-248](fixed-map/lineL_op_open_range.md), [TRACE-249](fixed-map/lineL_op_open_range.md), [TRACE-250](fixed-map/lineL_op_open_range.md) (proved): collision structure, Lemma O1, Theorem OP_abs (no cancellation).
+* [TRACE-251](fixed-map/lineL_op_open_range.md) (proved, arb certificate; Lean scalar comparisons): I_k^{1/2k} ≤ 1.26278 / 1.13642 / 1.39243 / 1.30276 below 1.28359 / 1.4742.
+* [TRACE-244](fixed-map/lineK_harg_removal.md) (open → **proved**): OP for the four families, δ ≈ 0.0162 for (±2,8)V.
+* [TRACE-252](fixed-map/lineL_op_open_range.md) (proved): c_W = 10^−25.62, q₀ = 10^13.2; non-vacuous only from p ≈ 8.3·10²⁵.
+* [TRACE-245](fixed-map/lineK_harg_removal.md), [TRACE-246](fixed-map/lineK_harg_removal.md) (conditional → **proved**, under the standing inputs, m ≥ m₁ effective, not computed): Theorem W and K2′; K2′ is not a refutation route for the m covered by Prop S.
+* [TRACE-253](fixed-map/lineL_op_open_range.md) (proved): (±2,16) open range narrows to q < (1.6677²/ξ_lo)^{m(1+η)}.
+* [TRACE-254](fixed-map/lineL_op_open_range.md) (proved): Theorem U (level-h L² unitarity); does not imply C1 ([TRACE-247](fixed-map/lineK_harg_removal.md), open).
+* [TRACE-255](fixed-map/lineL_op_open_range.md), [TRACE-257](fixed-map/lineL_op_open_range.md)–[TRACE-262](fixed-map/lineL_op_open_range.md) (proved): decomposition, H_mean ⇒ frozen R′ false (implication), Prop S, Lemma A1, Prop A2, Lemmas B1–B3, disjointness for large p.
+* [TRACE-256](fixed-map/lineL_op_open_range.md) (open): H_mean.
+* [TRACE-263](fixed-map/lineL_op_open_range.md)–[TRACE-268](fixed-map/lineL_op_open_range.md) (proved; 266 given the Line G/I transfer law): L3 structural route (walk-measure form, CRT split with |D_𝔮| ≤ 2h/q, no Gauss-side folding, rank-p spectral form, Lemma Q, Lemma E); it does not close the open range.
+
+Limits: [TRACE-206](fixed-map/resonance_classification_lineG.md) (R′) stays open and is not refuted.
+
 ## H_arg removed, the light-cone identity and the Weil range in frozen R′ (Line K), 31 October 2026
 
 * [TRACE-234](fixed-map/lineK_harg_removal.md) (proved; exact integers, sieve, Lean finite part): gap lemma for b′ ≥ 447, exceptions 504, 560, 616, 840.
@@ -544,7 +559,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**331 registered claims: 266 proved, 15 verification-pending, 19 conditional, 30 open, 1 refuted.**
+**352 registered claims: 289 proved, 15 verification-pending, 17 conditional, 30 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -710,7 +725,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (222 claims)
+### TRACE family (243 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -932,9 +947,30 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-241` | **PROVED** | Line K Lemma W1 (Weil bound over the orbit subgroup): for q prime, H = <l> subset F_q^* of order r and A, B in F_q not both 0, \|sum_{h in H} e((Ah + B/h)/q)\| <= 2 sqrt q (<= sqrt q if AB = 0); degeneracy criterion |
 | `BGS-TRACE-242` | **PROVED** | Line K Lemma W2' (non-cyclic block AM-GM, every bounded read-out): \|Tr(J X)\| <= C_J max(1, sup\|\|L\|\|)^{2k} e^2 max(1, (1/m) sum_{i<m} \|\|P(i)\|\|_HS^2)^{(Q-1)/2} |
 | `BGS-TRACE-243` | **PROVED** | Line K Lemma W3 (orbit average): (1/r) sum_{i<r} f_k(beta lambda^i/q) <= I_k + 2 sqrt q A_k/r + T_k(q) for q \|\| h, beta != 0, with T_k(q) -> 0 (6 sqrt q for conductor 7q) |
-| `BGS-TRACE-244` | **OPEN** | Line K operator input (OP_k, delta): the cat-map second moments satisfy (I_k^F)^{1/2k} <= (1 - delta) 1.28359 for every (+-2,8) family and <= (1 - delta) 1.4742 for every (+-2,16) family |
-| `BGS-TRACE-245` | **CONDITIONAL** | Line K Theorem W (conditional on OP): for p >= p0(k), the conductors q, 7q with q prime, q \| h_{3p}, q <= c_k p^2 contribute o(xi_lo^m) to O-natural on S+, including inherited copies |
-| `BGS-TRACE-246` | **CONDITIONAL** | Line K Theorem K2' (conditional on OP): frozen R' implies that for all large m in S+ some open conductor c of h_m carries a slow lambda-orbit |
+| `BGS-TRACE-244` | **PROVED** | Line K operator input (OP_k, delta): the cat-map second moments satisfy (I_k^F)^{1/2k} <= (1 - delta) 1.28359 for every (+-2,8) family and <= (1 - delta) 1.4742 for every (+-2,16) family |
+| `BGS-TRACE-245` | **PROVED** | Line K Theorem W (OP proved in Line L; under the standing inputs): for m = 3p in S+ with m >= m1 (effective, not computed), the conductors q, 7q with q prime, q \| h_{3p}, q <= c_W p^2 (c_W = 10^-25.62, q0 = 10^13.2) contribute o(xi_lo^m) to O-natural, including inherited copies |
+| `BGS-TRACE-246` | **PROVED** | Line K Theorem K2' (OP proved in Line L; under the standing inputs): for m in S+ with m >= m1 (effective, not computed), frozen R' implies that some open conductor c of h_m carries a slow lambda-orbit |
 | `BGS-TRACE-247` | **OPEN** | Line K Conjecture C1: for the true twisted operator families, lim_k (I_k^F)^{1/k} = 1 |
+| `BGS-TRACE-248` | **PROVED** | Line L collision structure: alpha_v = sum_j v_j lambda^j = 0 iff (X^2 - 6X + 1) \| v(X); carries and the Green's-function bound |
+| `BGS-TRACE-249` | **PROVED** | Line L Lemma O1 (word Hilbert-Schmidt bound) for the beta-weighted lattice-lifted k1 families, with the outermost-letter tau assignment |
+| `BGS-TRACE-250` | **PROVED** | Line L Theorem OP_abs (cancellation-free second moment): I_k <= C_pair S_k and A_k <= C_pair prod_j A(tau_j)^2 for the true lattice-lifted k1 families |
+| `BGS-TRACE-251` | **PROVED** | Line L OP certificate: certified I_k^{1/2k} <= 1.26278 / 1.13642 / 1.39243 / 1.30276 for (+-2,8)V/E and (+-2,16)V/E, below the targets 1.28359 and 1.4742 |
+| `BGS-TRACE-252` | **PROVED** | Line L T_k bound and Weil-range constants: c_W = 10^-25.62 <= min_F c_F, q0 = 10^13.2; the range q <= c_W p^2 is non-vacuous only from p ~ 8.3e25 |
+| `BGS-TRACE-253` | **PROVED** | Line L (+-2,16) narrowing: the (+-2,16) levels are absorbed for q >= (1.6677^2/xi_lo)^{m(1+eta)}, eta <= (4.282 + o(1))/log(2p+1), so the (+-2,16) open range is c_W p^2 < q < (1.6677^2/xi_lo)^{m(1+eta)} (1.6677^2/xi_lo = 1.13118...) |
+| `BGS-TRACE-254` | **PROVED** | Line L Theorem U (level-h scalar L^2 unitarity): the TRACE-206 autocorrelation R(v) vanishes at every exact collision and every collision mod h, so sum_x \|A(x)\|^2 = 1 and sum_{beta mod h} \|Zhat(beta/h)\|^2 = h^2 |
+| `BGS-TRACE-255` | **PROVED** | Line L2 decomposition: D_q = (1/q) sum_{beta in l(q) minus 0} Zhat_beta, D_iso = D_q + D_qbar - (1/q^2) sum_{beta != 0} Zhat_beta (open prime levels q \|\| h_m) |
+| `BGS-TRACE-256` | **OPEN** | Line L2 hypothesis H_mean: for some delta > 0 and infinitely many m in S+, \|D_iso(q) - E_b(q)/q\| <= ((1 - delta) target)^m at every open prime level q, with the analogue at open composite levels |
+| `BGS-TRACE-257` | **PROVED** | Line L2: H_mean implies that frozen R' is false along m = 3p (a proved implication; H_mean is open) |
+| `BGS-TRACE-258` | **PROVED** | Line L2 Prop S: beta = 1 is slow at every prime q \|\| h_m with log_lambda q >= C_k + 6.1e-6 m (C_k effective, not computed); consequence: K2' gives no contradiction at m where h_m has such a prime below L_m |
+| `BGS-TRACE-259` | **PROVED** | Line L2 Lemma A1 (exact second moment mod q): sum_{beta in l(q)} \|Zhat_beta\|^2 = q sum_u \|A(u + q)\|^2, \|D_q\|^2 <= (1 - 1/q) C_q, C_q = 1 + sum_{alpha_v in q minus 0} R(v) - \|Z\|^2/q |
+| `BGS-TRACE-260` | **PROVED** | Line L2 Prop A2 (phase-blind barrier): every cancellation-free collision bound for C_q + \|Z\|^2/q is >= G^{2m}/q, G = sum_n \|J_n(1.8)\| = 2.3693986; it certifies the target only for q >= 3.4074^m ((+-2,8)) or 2.5832^m ((+-2,16)), above h_m itself |
+| `BGS-TRACE-261` | **PROVED** | Line L2 Lemmas B1-B3 (height/norm, split q): q <= 1.4571 lambda^{r-1} \|\|F\|\|_inf^2 for sporadic folded collisions; Minkowski vectors with \|\|F\|\|_inf <= q^{1/r}; the sum over prime ideals above h |
+| `BGS-TRACE-262` | **PROVED** | Line L2: for all sufficiently large p the height zone of Lemma B1 and the open range (c_W p^2, L_m) are disjoint, for (+-2,8) and (+-2,16) |
+| `BGS-TRACE-263` | **PROVED** | Line L3 S1 (walk-measure form): A = chi B_m with chi(x) = e(-nu0 y' Nm x/2h) and Bhat_m(y) = prod_{j<m} g(Tr lambda^j y), g(t) = e^{i 1.8 cos 2 pi t}, so \|Bhat_m\| = 1 |
+| `BGS-TRACE-264` | **PROVED** | Line L3 S2 (CRT split): A(q) is a level-2h/q Gauss sum of B_m on q; \|A(q)\| <= h/q and \|D_q\| <= 2h/q when \|Z\| <= h, which gives \|D_q\| <= T^m only for q >~ 1.8808^m, above L_m |
+| `BGS-TRACE-265` | **PROVED** | Line L3 S3 (no Gauss-side folding): h_{3p} = h_p (4 h_p^2 + 3); every prime of K_p = 4 h_p^2 + 3 other than 7 (rank 3) has rank 3p, so the level-K_p factor of the m = 3p phase does not reduce to m = p |
+| `BGS-TRACE-266` | **PROVED** | Line L3 S4 (transfer-side spectral form at rank-p levels): if r(q) = p then Zhat^{(3p)}_beta = c_{3p} Tr_K[(I_K tensor <1\|) Pi_beta^3 (I_K tensor \|0>)], Pi_beta the p-step twisted transfer operator (given the Line G/I transfer law) |
+| `BGS-TRACE-267` | **PROVED** | Line L3 Lemma Q (exact line quadrature): (1/q) sum_{beta in l(q)} F(beta/q) = sum_{gamma in q} c_gamma; so the isotropic-line mean block energy lies in [I_k - T_k(q), I_k + T_k(q)] for every q, without Weil |
+| `BGS-TRACE-268` | **PROVED** | Line L3 Lemma E (cusp excursions): if dist(Tr(beta lambda^j)/q, Z) <= eps for k >= 3 consecutive j (0 < eps <= 1/16, beta != 0), then lambda^{k-1} <= 264 eps^2 q (beta isotropic) and <= 264 eps^2 q^2 (every beta != 0) |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

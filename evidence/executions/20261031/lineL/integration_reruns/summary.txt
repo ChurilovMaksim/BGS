@@ -1,0 +1,8 @@
+Integration reruns (31 Oct 2026, box, nice -n 10, venv bgs-derand/phase3 python), in scratch copies with the absolute output paths repointed
+(the scripts write to /workspace/bgs-lineL/...; no author directory was written):
+- code/l3_op_cert.py and code/l4_const.py for the four final cases (8V k15 0.75 0.25; 8E k14 0.2 0.3; 16V k14 0.9 0.3; 16E k14 0.2 0.3; E0 = 6, t = 2):
+  output identical to logs/final_op_cert.jsonl and logs/final_constants.jsonl except the timing field "sec".
+- L3/code/excursion_check.py: identical to L3/logs/excursion_check.json.
+- L3/code/inherit_test.py 5 41: identical to L3/logs/inherit_p5_q41.json (the (7, 239) case was not rerun, cost).
+- integration_checks/lineL_checks.py: ALL_OK (log next to the script).
+Not rerun: l2_rabs.py (r_abs [N], notes only), the L2 level survey [N], barrier_consts.py (referee rerun in referee/L2rerun).

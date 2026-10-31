@@ -1,5 +1,24 @@
 # BGS research brief
 
+## OP certified, Theorem W and K2′ without OP, and the open range in frozen R′ (Lines L, L2, L3), 31 October 2026
+
+* **OP proved.** The second moment of the true lattice-lifted k1 families is bounded without cancellation by a positive collision sum
+  (Lemma O1, Theorem OP_abs, [TRACE-249](mathematics/fixed-map/lineL_op_open_range.md), [TRACE-250](mathematics/fixed-map/lineL_op_open_range.md)), and an arb certificate gives I_k^{1/2k} ≤ 1.26278 / 1.13642 /
+  1.39243 / 1.30276 below the targets ([TRACE-251](mathematics/fixed-map/lineL_op_open_range.md)). So OP ([TRACE-244](mathematics/fixed-map/lineL_op_open_range.md)) is proved, δ ≈ 0.0162 for (±2,8)V.
+* **Theorem W and K2′.** Under the standing inputs, the Weil range q ≤ c_W p² (c_W = 10^−25.62, q₀ = 10^13.2; [TRACE-252](mathematics/fixed-map/lineL_op_open_range.md)) is
+  negligible for m ≥ m₁, effective but not computed ([TRACE-245](mathematics/fixed-map/lineL_op_open_range.md)), and frozen R′ forces a slow λ-orbit at an open conductor
+  ([TRACE-246](mathematics/fixed-map/lineL_op_open_range.md)). The range is non-vacuous only from p ≈ 8.3·10²⁵. The (±2,16) open range narrows ([TRACE-253](mathematics/fixed-map/lineL_op_open_range.md)).
+* **Theorem U.** Exact level-h L² unitarity ([TRACE-254](mathematics/fixed-map/lineL_op_open_range.md)); it does not imply C1 ([TRACE-247](mathematics/fixed-map/lineL_op_open_range.md), open).
+* **Open range (L2).** What is needed is a mean bound, H_mean ([TRACE-256](mathematics/fixed-map/lineL_op_open_range.md), open), which would refute frozen R′
+  ([TRACE-257](mathematics/fixed-map/lineL_op_open_range.md)). Slow β exist (Prop S, [TRACE-258](mathematics/fixed-map/lineL_op_open_range.md)), so K2′ is not a refutation route at the m it covers; phase-blind
+  collision counts fail at every level dividing h_m ([TRACE-260](mathematics/fixed-map/lineL_op_open_range.md)), and the height argument's zone misses the open range for large p
+  ([TRACE-261](mathematics/fixed-map/lineL_op_open_range.md), [TRACE-262](mathematics/fixed-map/lineL_op_open_range.md)).
+* **Structural route (L3).** Exact walk-measure form, CRT split and spectral form at rank-p levels ([TRACE-263](mathematics/fixed-map/lineL_op_open_range.md)–[TRACE-266](mathematics/fixed-map/lineL_op_open_range.md)),
+  exact line quadrature and cusp excursions ([TRACE-267](mathematics/fixed-map/lineL_op_open_range.md), [TRACE-268](mathematics/fixed-map/lineL_op_open_range.md)). The trivial CRT bound needs q ≳ 1.8808^m > L_m, and the
+  Gauss side does not fold to m = p; the route does not close the open range.
+
+R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open; H♮, H♮_mid and H_mean are open.
+
 ## H_arg removed, the light-cone identity and the Weil range in frozen R′ (Line K), 31 October 2026
 
 * **H_arg removed.** Theorem K3 ([TRACE-235](mathematics/fixed-map/lineK_harg_removal.md)) proves that S⁺ is infinite in every unit class mod 56 by a
