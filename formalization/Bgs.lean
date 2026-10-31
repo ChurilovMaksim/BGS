@@ -83,5 +83,7 @@ import Bgs.LineDStrongKickBridge
 import Bgs.LineDParityBridge
 import Bgs.LineDCoeff
 import Bgs.LineDCoeffBridge
+import Bgs.LineBNAverage
+import Bgs.LineBNAverageBridge
 
 import Bgs.Mathlib

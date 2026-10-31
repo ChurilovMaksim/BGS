@@ -6690,7 +6690,10 @@
         "computations/verification/lineB/phase1/n_average_fast.py",
         "computations/verification/lineB/independent_replay/code/t5_s0.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/LineBNAverage.lean",
+        "formalization/Bgs/LineBNAverageBridge.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"
       ]
