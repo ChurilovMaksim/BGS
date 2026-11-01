@@ -21,7 +21,123 @@
    ]
   },
   {
-   "title": "Fixed kick: uniform trace bounds and arithmetic spikes (Sept–Oct 2026)",
+   "title": "Phase I (September 2026): Cayley arithmetic, Pell returns, resonance, locality",
+   "note": "The earliest corpus: arithmetic and dynamical side programmes that fix the vocabulary used later.",
+   "claims": [
+    [
+     "BGS-CAYLEY-002",
+     "Cayley additive-energy reduction"
+    ],
+    [
+     "BGS-CAYLEY-006",
+     "Gaussian limits of the full Cayley–Jacobi trace"
+    ],
+    [
+     "BGS-CAYLEY-005",
+     "Sharp centered pointwise Cayley energy target"
+    ],
+    [
+     "BGS-RET-001",
+     "Harmonic return law for the kicked Pell propagator"
+    ],
+    [
+     "BGS-FLOW-022",
+     "Critical resonance law for the kicked Pell propagator"
+    ],
+    [
+     "BGS-RET-003",
+     "All-orders quantum conjugacy for noncommuting return words"
+    ],
+    [
+     "BGS-RES-005",
+     "Full-lag classical Riesz gap for the frozen symbol"
+    ],
+    [
+     "BGS-RES-003",
+     "All-members analytic resonance nondegeneracy"
+    ],
+    [
+     "BGS-FM-034",
+     "Fixed-strength all-orders comparison for a coboundary kick"
+    ],
+    [
+     "BGS-INFO-001",
+     "Full vanishing-noise tomography transition"
+    ]
+   ]
+  },
+  {
+   "title": "Phase II (20 September – 7 October 2026): the fixed map, the trace bridge and noisy comparisons",
+   "claims": [
+    [
+     "BGS-TRACE-003",
+     "Weighted Heisenberg-scale joint-trace comparison suffices for band-limited RMT correlations"
+    ],
+    [
+     "BGS-TRACE-004",
+     "Every-compact-bandwidth comparison extends to Schwartz tests"
+    ],
+    [
+     "BGS-LOOP-001",
+     "Full mixed loop hierarchy implies the target compact correlations"
+    ],
+    [
+     "BGS-FM-001",
+     "Classical symmetry exclusions for the frozen model"
+    ],
+    [
+     "BGS-FM-010",
+     "Every power trace is nonzero; scalar returns classified"
+    ],
+    [
+     "BGS-FM-021",
+     "Position-chain mixing and cyclic ramp for the actual map"
+    ],
+    [
+     "BGS-TRACE-017",
+     "Fixed-order WKB reduction of the factorial trace hierarchy"
+    ],
+    [
+     "BGS-TRACE-010",
+     "Absolute all-order comparison against CUE is impossible (obstruction)"
+    ],
+    [
+     "BGS-FLOW-014",
+     "Circular Dyson relaxation and original-chain Sine2 from the actual start"
+    ]
+   ]
+  },
+  {
+   "title": "Phase III (8–19 October 2026): phase channels, clocks, collisions, obstructions",
+   "claims": [
+    [
+     "BGS-TRACE-068",
+     "Frozen circular phase laws in the three symmetry classes"
+    ],
+    [
+     "BGS-TRACE-080",
+     "Unconditional feedback flatness and fixed-order clock laws"
+    ],
+    [
+     "BGS-TRACE-086",
+     "All-order signed diagonal hierarchy implies local Sine2 and moment UI (implication)"
+    ],
+    [
+     "BGS-TRACE-094",
+     "Heisenberg Wick collision Poisson law"
+    ],
+    [
+     "BGS-TRACE-081",
+     "Perfect intensity mixing does not identify microscopic statistics (obstruction)"
+    ],
+    [
+     "BGS-TRACE-055",
+     "Submitted polylogarithmic deep-source hierarchy"
+    ]
+   ]
+  },
+  {
+   "title": "Phases IV–V (21–29 October 2026): uniform traces and arithmetic spikes",
    "claims": [
     [
      "BGS-TRACE-113",
@@ -30,6 +146,10 @@
     [
      "BGS-TRACE-116",
      "Compact pair test transfers through an O(N^-2) matrix error"
+    ],
+    [
+     "BGS-TRACE-114",
+     "Short traces do not determine a local law for a general quantizer (barrier)"
     ],
     [
      "BGS-TRACE-117",
@@ -46,7 +166,7 @@
    ]
   },
   {
-   "title": "Random-phase and random-kick ensembles",
+   "title": "Random-phase and random-kick ensembles (Phase V and Lines C, D)",
    "claims": [
     [
      "BGS-TRACE-127",
@@ -71,7 +191,7 @@
    ]
   },
   {
-   "title": "Fixed diagonal kick and Conjecture R (Lines B, E–H)",
+   "title": "Fixed diagonal kick and Conjecture R (Phase VI: Lines B, E–H)",
    "claims": [
     [
      "BGS-TRACE-163",
@@ -104,12 +224,16 @@
    ]
   },
   {
-   "title": "Frozen R′ along m = 3p (Lines G, I–N4)",
+   "title": "Frozen R′ along m = 3p (Phase VII: Lines G, I–N4)",
    "note": "R′ (BGS-TRACE-206) is a corrected mean law for the k1 kick at η = 2. Everything below either bounds a part of it or derives its failure from a stated hypothesis. R′ is neither proved nor refuted.",
    "claims": [
     [
      "BGS-TRACE-206",
      "Conjecture R′ (corrected mean law, k1 kick, eta = 2)"
+    ],
+    [
+     "BGS-TRACE-213",
+     "Exact reduction of R′ to (E″), (T″) and (D), none of them proved (Line I)"
     ],
     [
      "BGS-TRACE-225",
@@ -146,7 +270,7 @@
    ]
   },
   {
-   "title": "Main current result: Theorem R♯-mod v5 (Lines N5–N21, polymer-gas route)",
+   "title": "End point of Phase VII: Theorem R♯-mod v5 (Lines N5–N21, polymer-gas route)",
    "note": "This theorem is conditional. It says that if the open inputs H0, H1 and H5–H8 hold and B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr, then W′_{3p}/m → ∞, so frozen R′ fails along m = 3p. H2 and H4 are met and H3 follows from H1. The inputs are open, so this is a reduction, not a refutation of R′. v5 (referee lineN22) supersedes v4 (BGS-TRACE-299): B_p now also charges the bad-cluster rate A_bad^KP, so the threshold depends on H1’s constant.",
    "claims": [
     [

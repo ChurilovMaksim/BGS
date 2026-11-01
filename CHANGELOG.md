@@ -1,5 +1,26 @@
 # Scientific changelog
 
+## 2026-11-01 — Final editorial pass: whole-programme README, reader guides and indexes (no claim changes)
+
+README.md and README.ru.md rewritten as an overview of the whole programme (seven phases, Cayley arithmetic to Lines I–N), with
+a results table across all phases. RESULTS.md (via `record/results_spec.json` and `render_results.py`) now has groups for
+Phases I–III. RESEARCH.md summary, `mathematics/results.md`, `mathematics/open_questions.md`, the reader guides, the topic
+indexes and the manuscript abstract and introduction updated to the v5 state and the full programme. The claim ledger gains the
+missing narrative sections for Lines N2–N4 and N5–N19b. Registry states are unchanged. Receipt:
+[evidence/executions/20261101/final_editorial/README.md](evidence/executions/20261101/final_editorial/README.md).
+
+## 2026-11-01 — Lines N20, N21: Theorem R♯-mod v5, H4 met, H1 re-scoped (TRACE-325–336)
+
+Referee lineN22 GO after E1–E12. New: 325 (Theorem R♯-mod v5, **conditional** on H0, H1, H5–H8; supersedes 299), 332 (Prop. K)
+and 333 (crossover with all rate budgets) conditional on H1; 326–331 and 335 proved; 336 (H1 re-scoped) open. State changes:
+302 (H4) open → proved; 322 and 323 verification-pending → proved. The proposed claim 334 is erratum ERR-065. See the
+[claim ledger](record/claim_ledger.md). **BGS-TRACE-206 (frozen R′) stays open and is not refuted.**
+
+## 2026-11-01 — Lines N5–N19b: the polymer-gas route and Theorem R♯-mod v4 (TRACE-299–324)
+
+Referees lineN6–lineN16. Registered 299 (Theorem R♯-mod v4, conditional on H0–H8), the open hypotheses 300–306 (H2 met by 307),
+proved ingredients 307–319 and 321, verification-pending 320, 322, 323, 324. No refutation of frozen R′ is claimed.
+
 ## 2026-10-31 — Lines N2–N4: the inherited level h_p, certified Λ, Theorem C′ (TRACE-286–298)
 
 Register as project proofs. Line N2 (referee READY after N2-F1–N2-F9, applied by the author in REPORT_N2_v2/v3):

@@ -2,19 +2,46 @@
 
 ## Summary (1 November 2026)
 
-[RESULTS.md](RESULTS.md) is the one-page overview, with a results table and known issues. The dated sections below follow newest first.
+[README.md](README.md) gives the balanced overview of the whole programme and [RESULTS.md](RESULTS.md) the generated one-page
+results table. The dated sections below follow newest first; the oldest phases are at the end of this page and in
+[mathematics/results.md](mathematics/results.md).
 
 * **Target: open.** Microscopic BGS universality for the fixed map (BGS-BGS-001) and the signed Heisenberg-scale trace estimate
-  ([TRACE-005](mathematics/open_questions.md)) are not proved.
-* **Proved, at stated scope.** These include uniform trace bounds for the fixed kick, exact random-phase and band-limited
-  form factors, the fixed-kick trace formula and certified decay on η ∈ [1, 81.574], and Theorems J, K3, W, W⁺, N3 and C′ on the
-  frozen R′ side. "Proved" means a project proof, often computer-assisted and internally refereed, not external refereeing.
-* **Refuted.** Conjecture R at η = 2 ([TRACE-179](mathematics/fixed-map/derandomized_fixed_kick.md), via
+  ([TRACE-005](mathematics/open_questions.md)) are not proved. 419 claims are registered: 338 proved, 17 verification-pending,
+  21 conditional, 42 open, 1 refuted. "Proved" means a project proof at the stated scope, often computer-assisted and internally
+  refereed, not external refereeing.
+* **Phase I (September): arithmetic and side programmes.** Cayley pair-key and energy reductions and Gaussian trace limits
+  (CAYLEY-001..011), Pell/Floquet return laws (RET-001/002, FLOW-022..025), resonance cohomology (RES family) and fixed-strength
+  locality (FM-034..036). Open: the centered Cayley target (CAYLEY-005), analytic nondegeneracy (RES-003), the tomography
+  transition (INFO-001).
+* **Phase II (20 September to 7 October): the fixed-map frontier.** The model and its structure (FM-001..031), the exact
+  trace-to-statistics bridge (TRACE-001..008), intensity mixing, path cancellations and fixed-order sectors (TRACE-009..029), and
+  noisy Dyson/coboundary comparisons (FLOW-001..021).
+* **Phase III (8–19 October): phase channels, clocks, collisions and obstructions** (TRACE-053..105). Ten of its claims are
+  verification-pending, including TRACE-055.
+* **Phase IV (21–27 October): uniform traces.** The uniform power-trace bound for the original family
+  ([TRACE-113](mathematics/fixed-map/fixed_kick_uniform_trace_bound.md)) and operator-stability transfer (TRACE-114..116).
+* **Phase V (28–29 October): Abel spikes and exact form factors** (TRACE-117..142), and the Aristotle Lean integration (FORMAL-001).
+* **Phase VI (29–30 October): Lines B–H.** Random-phase pairs and band-limited kicks (Lines C, D), the fixed diagonal kick (Line B)
+  and the refutation of Conjecture R at η = 2 ([TRACE-179](mathematics/fixed-map/derandomized_fixed_kick.md), via
   [TRACE-209](mathematics/fixed-map/lineH_49state_certificate.md), computer-assisted).
-* **Open frontier.** Frozen R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) is open and is **not refuted**.
-* **Main current result: conditional.** Theorem R♯-mod v4 ([TRACE-299](mathematics/fixed-map/lineN5N18_gas_conditional.md)) reduces the failure of frozen R′ along m = 3p to
-  the open inputs H1 and H3–H8 ([TRACE-300](mathematics/fixed-map/lineN5N18_gas_conditional.md)–306), with H2 met (TRACE-307). Some ingredients are verification-pending
-  (TRACE-320, 322, 323, 324). A v5 revision is expected after the H1 and H4 lines report.
+* **Phase VII (31 October to 1 November): Lines I–N.** Frozen R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md))
+  is open and **not refuted**. Theorems J, K3, W, W⁺, N3 and C′ are proved at their stated scope. The end point,
+  Theorem R♯-mod v5 ([TRACE-325](mathematics/fixed-map/lineN5N18_gas_conditional.md)), is **conditional**: it reduces the failure
+  of frozen R′ along m = 3p to the open inputs H0, H1 (TRACE-336) and H5–H8 (TRACE-303..306). It supersedes v4 (TRACE-299).
+
+## Theorem R♯-mod v5, H4 met, H1 re-scoped (Lines N20, N21; referee lineN22), 1 November 2026
+
+* **Theorem R♯-mod v5** ([TRACE-325](mathematics/fixed-map/lineN5N18_gas_conditional.md), conditional; canonical statement
+  `computations/verification/lineN_theorem_draft/THEOREM_DRAFT_v5.md`). B_p now carries e^{−p(δ + A_bad^KP)}: the
+  Kotecký–Preiss step charges the bad-cluster activity, so the threshold depends on the constant of H1. Supersedes v4 (TRACE-299).
+* **H4 met.** δ_true ≤ 5.0313·10⁻⁶ for all G (TRACE-326, [P] + [CA-fp]); TRACE-302 is proved, and TRACE-322 and 323 became proved.
+* **H1 re-scoped and H3 derived.** H1 is now the bad-cluster joint second moment (TRACE-336, open); Prop. K (TRACE-332, conditional)
+  shows H1 implies H3. Prop. F (TRACE-329) shows that no unrestricted carry/torus bound gives H1.
+* **Crossover.** With all rate budgets and idealised additive terms, the first prime is 3307 for C ≤ 0.082 (fragile) and 1409 for
+  C ≤ 8.8·10⁻⁴ (TRACE-333, conditional on H1).
+
+R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
 
 ## The inherited level h_p, certified Λ and Theorem C′ (Lines N2–N4), 31 October 2026
 
@@ -29,7 +56,7 @@
   Caveat: Line N5 v2 (refereed READY in lineN6; not registered as a claim, only its threshold T′ = 1.42785 enters H7*, TRACE-305) reports that the 16D = 1 isotropic family at h_p has rate 1.42785 > T and a
   positive cross contribution ≈ 2.735^m > ξ_lo^m; if confirmed, this target and the Ω-hypothesis fail along m = 3p.
 * **Theorem A** ([TRACE-286](mathematics/fixed-map/lineN2N4_inherited_level.md)) is a proved implication from the open Ω-hypothesis ([TRACE-287](mathematics/fixed-map/lineN2N4_inherited_level.md)).
-* **Gas route (Lines N5–N19b).** Theorem R♯-mod v4 ([TRACE-299](mathematics/fixed-map/lineN5N18_gas_conditional.md), conditional) reduces a refutation of frozen R′ along m = 3p to the open inputs H1–H8 ([TRACE-300](mathematics/fixed-map/lineN5N18_gas_conditional.md)–306); proved/certified ingredients TRACE-307–319 and 321 (incl. p₁ ≥ 1390, first prime 1399, and Lemma 1), pending TRACE-320, 322–324. Frozen R′ is not refuted. Canonical statement: THEOREM_DRAFT_v4 (final referee lineN16).
+* **Gas route (Lines N5–N19b; superseded on 1 November by v5, above).** Theorem R♯-mod v4 ([TRACE-299](mathematics/fixed-map/lineN5N18_gas_conditional.md), conditional) reduces a refutation of frozen R′ along m = 3p to the open inputs H1–H8 ([TRACE-300](mathematics/fixed-map/lineN5N18_gas_conditional.md)–306); proved/certified ingredients TRACE-307–319 and 321 (incl. p₁ ≥ 1390, first prime 1399, and Lemma 1), pending TRACE-320, 322–324. Frozen R′ is not refuted. Canonical statement: THEOREM_DRAFT_v4 (final referee lineN16).
 * The N4 §3.3–§3.4 window numbers are superseded by Line N5 (N5 v2 refereed READY in lineN6); they are not registered.
 
 R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
