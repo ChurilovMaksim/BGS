@@ -1,5 +1,16 @@
 # Reproduce the current consolidated research state
 
+## Current gates, 1 November 2026
+
+The current local gate is the set of 23 checkers listed in the
+[final editorial receipt](evidence/executions/20261101/final_editorial/README.md)
+(registry and repository audits, bibliography audits, every renderer with `--check`, the frozen-packet
+checks, the wave2/wave3 replays and the manuscript reference audit), the maintenance unit tests
+(`python -m unittest discover -s computations/maintenance/tests`), `lake build Bgs` in `formalization/`,
+and `python computations/maintenance/build_unified_manuscript.py --engine auto --output-dir out`.
+The sync checks need pandoc 3.12.1 on `PATH`. The dated sections below record earlier gates and stay valid
+for their own revisions.
+
 ## Trace closure checks, 22 October 2026
 
 Run `python3 -O computations/verification/trace_closure_checks.py` for the

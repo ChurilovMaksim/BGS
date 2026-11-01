@@ -1,5 +1,13 @@
 # BGS consolidated research manuscript
 
+## Final editorial pass, 1 November 2026
+
+The abstract (`front_matter.tex`), the introduction and guide (`ch01_introduction.tex`) and the conclusion
+(`unified_sections/ch15_conclusion.tex`) now describe the whole programme in seven phases, from the September arithmetic
+chapters to Lines I–N, with current registry counts (419 claims). A `\part*` divider "Lines B--H" now precedes the Line C–H
+sections; section and theorem numbers are unchanged. The current build has **381 pages**, 0 overfull boxes and no unresolved
+references; see "Current integration and verification" below. Dated sections below describe earlier revisions.
+
 ## Phase-4 Pass 2: chapter assembly, 25 October 2026
 
 The manuscript now reads as chapters. Part dividers mark chapter
@@ -225,13 +233,16 @@ protocol. A successful LaTeX build is typesetting evidence, not proof evidence.
 The 28 October Aristotle integration updates the canonical TeX sources (the
 claim index, provenance appendix, tomography chapter and conclusion) and carries
 the ERR-060 pure-loss correction without replacing earlier manuscript sections.
-The checked-in `BGS_unified.pdf` was regenerated on 1 November 2026 from the
-current TeX sources, including the new chapter "Lines I--N and the conditional
-gas theorem" (`unified_sections/lines_I_N_gas_theorem.tex`). It is a 379-page
+The checked-in `BGS_unified.pdf` was regenerated on 1 November 2026 (final editorial
+pass) from the current TeX sources, including the chapter "Lines I--N and the conditional
+gas theorem" (`unified_sections/lines_I_N_gas_theorem.tex`), the new part divider for
+Lines B--H, and the revised abstract, introduction and conclusion. It is a 381-page
 local build (`build_unified_manuscript.py --engine auto --publish`, Tectonic
 0.17.0, 0 overfull boxes, no unresolved references; PDF sha256
-e3343127d454806e7425b554f26c1e74530d56bd609bf9c94fe7848a6d714e50, receipt in
-[`evidence/executions/20261101/final_presentation/`](../evidence/executions/20261101/final_presentation/README.md));
+b2a63e5039736b5ab0fa049faebcc0647e6006836917b9dcc2f479531c97d3e7, receipt in
+[`evidence/executions/20261101/final_editorial/`](../evidence/executions/20261101/final_editorial/README.md)).
+The previous 379-page build is recorded in
+[`evidence/executions/20261101/final_presentation/`](../evidence/executions/20261101/final_presentation/README.md);
 the TeX source stays authoritative. The 343-page build recorded in the [historical integration
 receipt](../evidence/formalization/aristotle_20261027/receipt.json) is not a
 post-merge GitHub Actions verification.

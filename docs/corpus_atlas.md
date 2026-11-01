@@ -12,7 +12,7 @@ explains status changes; the registry controls registered status and covers fewe
 | Reading task | Entry point |
 |---|---|
 | Exact deterministic family and microscopic target | [Model](../mathematics/fixed-map/fixed_map_resolvent_frontier.md), [trace bridge](../mathematics/trace-bridge/trace_to_local_statistics_bridge.md) |
-| Current achievements and unresolved implications | [Research brief](../RESEARCH.md), [theorem index](../mathematics/results.md), [open questions](../mathematics/open_questions.md) |
+| Current achievements and unresolved implications | [Programme overview](../README.md), [Research brief](../RESEARCH.md), [theorem index](../mathematics/results.md), [open questions](../mathematics/open_questions.md) |
 | Complete registered dependency structure | [Dependency view](../record/scientific_dependency_graph.md) |
 | Reproduce a result | [Reproduction guide](../REPRODUCE_unified.md), [computation guide](../computations/README.md) |
 | Understand source and execution boundaries | [Literature](../literature/README.md), [evidence](../evidence/README.md), [formalization](../formalization/README.md) |

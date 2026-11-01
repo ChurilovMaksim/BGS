@@ -15,6 +15,28 @@ unchanged: 299 (superseded by 325), 300 (re-scoped as 336), 301 (H3, stays open;
 not the theorem's p₁). The proposed claim 334 is recorded as erratum ERR-065, not as a claim. BGS-TRACE-206 (frozen R′) stays
 **open** and is not refuted. Note: [lineN5N18_gas_conditional.md](../mathematics/fixed-map/lineN5N18_gas_conditional.md), v5 update.
 
+## The polymer-gas route and Theorem R♯-mod v4 (Lines N5–N19b; referees lineN6–lineN16), 1 November 2026
+
+*Section added in the final editorial pass (1 November 2026) from the registry and the note
+[lineN5N18_gas_conditional.md](../mathematics/fixed-map/lineN5N18_gas_conditional.md); the integration itself was merged
+before the v5 section above. States are as registered at integration; later changes are marked.*
+
+Conditional: BGS-TRACE-299 (Theorem R♯-mod v4, on H0–H8; superseded by 325 on 1 November). Open: the hypotheses H1, H3, H5, H6,
+H7*, H8 (BGS-TRACE-300, 301, 303, 304, 305, 306) and H4 (302; open → proved on 1 November, above). H2 is met (307, [CA-fp]).
+Project proofs: 307–319 and 321 ([P], [CA], [CA-fp] or [P-arith] as stated in each title), including the gas-vs-Robin
+crossover 318 (an arithmetic implication; p ≥ 1390 at the input δ = 2.470e-6, first prime 1399, under the stated idealisation).
+Verification-pending: 320 (Lemma 2, [P-sketch]), 324 (Prop X′) and, at integration, 322 and 323 (both proved on 1 November,
+above). BGS-TRACE-206 (frozen R′) stays **open** and is not refuted.
+
+## The inherited level h_p, certified Λ and Theorem C′ (Lines N2–N4), 31 October 2026
+
+*Section added in the final editorial pass (1 November 2026) from the registry and [CHANGELOG.md](../CHANGELOG.md).*
+
+Project proofs: BGS-TRACE-286 (Theorem A, an implication from the open 287), 288 (Theorem B), 289 (Theorem C), 290 (Prop E, arb
+r₂(4000)), 291, 292 (isotropic Lemmas 1.1, 1.2), 293 (M6 condition C3), 294 (Lemma I / I₁₆), 295 ([CA] free-family bounds on Λ),
+296 (Theorem C′ for p with h_p squarefree; squarefreeness is not proved), 297 (gauge lemma). Open: 287 (Ω-hypothesis), 298 (the
+isotropic part at q ∣ h_p). Scope widenings, states unchanged: 222, 266. BGS-TRACE-206 stays **open**.
+
 ## Conductor structure, Theorem W⁺ and scarred conductors (Lines M and N), 31 October 2026
 
 Project proofs: BGS-TRACE-269, 270, 272, 275, 277 (paper; Lean `Bgs.LineM` for 269, 272, 277); 271, 273 (paper on the Line F certificate

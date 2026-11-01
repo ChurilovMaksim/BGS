@@ -1,5 +1,20 @@
 # Open mathematical obligations
 
+The two questions behind the whole programme are open: microscopic BGS universality for the fixed map (BGS-BGS-001) and the
+signed Heisenberg-scale trace estimate (BGS-TRACE-005, below). The sections that follow list the open inputs line by line,
+newest first; [README.md](../README.md) places them in the full programme.
+
+## Inputs of Theorem R♯-mod v5 (Lines N5–N21), 1 November 2026
+
+Theorem R♯-mod v5 ([BGS-TRACE-325](fixed-map/lineN5N18_gas_conditional.md), conditional) would make frozen R′ (BGS-TRACE-206) fail along m = 3p. Its inputs that are not proved are:
+* **H1, re-scoped** ([BGS-TRACE-336](fixed-map/lineN5N18_gas_conditional.md)): the bad-cluster joint second moment on the ε-chain and the near-collision constants.
+  Prop. F ([BGS-TRACE-329](fixed-map/lineN5N18_gas_conditional.md)) shows that no unrestricted carry/torus bound can give it. H3 follows from H1 (BGS-TRACE-332).
+* **H5–H8** ([BGS-TRACE-303](fixed-map/lineN5N18_gas_conditional.md)–[BGS-TRACE-306](fixed-map/lineN5N18_gas_conditional.md)): composite h_p, the inputs of Theorem C′
+  (explicit p₀ and squarefree h_p), levels other than h_p, and wrap-around points at composite h_p.
+* **H0**, the standing package taken as given: proved Line F/H/I/J claims (BGS-TRACE-197, 199, 207, 212, 213, 228),
+  Prop X′ (BGS-TRACE-324, verification-pending) and n_cert.
+* B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr; p_thr depends on the constant of H1 (BGS-TRACE-333, conditional).
+
 ## Phase average, revival, and the signed sum
 
 Lines N2–N4 (BGS-TRACE-286 to BGS-TRACE-298): the unit-β part at c = h_p is controlled for p with h_p squarefree (Theorem C′,
