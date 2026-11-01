@@ -238,9 +238,10 @@ def check_manuscript_surface() -> None:
         MANUSCRIPT / "unified_sections/ch15_conclusion_seed.tex",
         MANUSCRIPT / "weighted_and_edgeworth.tex",
     }
-    # Planned, deliberately unwired drafts (owner decision, 1 November 2026):
-    # the Lines I-N chapter skeleton lists registry claims only and must not
-    # enter the build until the Line N theorem settles (v4 -> v5).
+    # Deliberately unwired drafts (owner decision, 1 November 2026): the
+    # Lines I-N chapter skeleton lists registry claims only. It is superseded
+    # by the wired chapter unified_sections/lines_I_N_gas_theorem.tex (v5) and
+    # is kept, unwired, as history.
     drafts = {
         MANUSCRIPT / "unified_sections/lines_I_N_skeleton.tex",
     }

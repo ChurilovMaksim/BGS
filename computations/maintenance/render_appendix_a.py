@@ -106,10 +106,10 @@ def render() -> str:
         r"mentions in the manuscript's reachable TeX inputs, excluding this index itself;",
         r'the short form TRACE-$nnn$ used in section prose counts as a mention.',
         r'A registry-only entry has no body mention; its proof and evidence remain in',
-        r'its authoritative source. In particular, the Lines I--N results',
-        r'(BGS-TRACE-211 onwards, including the conditional Theorem R$\sharp$-mod v5,',
-        r'BGS-TRACE-325) are not yet written up as a chapter of this manuscript;',
-        r'see \path{RESULTS.md}. File line numbers are navigation, not proof certification.',
+        r'its authoritative source. The Lines I--N results (BGS-TRACE-211 onwards,',
+        r'including the conditional Theorem R$\sharp$-mod v5, BGS-TRACE-325) are summarised',
+        r'in the chapter of Section~\ref{sec:lines-I-N}; many of their ingredients are',
+        r'registry-only. File line numbers are navigation, not proof certification.',
     ]
     out += figure(counts)
     out += [

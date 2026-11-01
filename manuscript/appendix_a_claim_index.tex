@@ -7,10 +7,10 @@ not independent external refereeing. The table maps each ID to its current
 mentions in the manuscript's reachable TeX inputs, excluding this index itself;
 the short form TRACE-$nnn$ used in section prose counts as a mention.
 A registry-only entry has no body mention; its proof and evidence remain in
-its authoritative source. In particular, the Lines I--N results
-(BGS-TRACE-211 onwards, including the conditional Theorem R$\sharp$-mod v5,
-BGS-TRACE-325) are not yet written up as a chapter of this manuscript;
-see \path{RESULTS.md}. File line numbers are navigation, not proof certification.
+its authoritative source. The Lines I--N results (BGS-TRACE-211 onwards,
+including the conditional Theorem R$\sharp$-mod v5, BGS-TRACE-325) are summarised
+in the chapter of Section~\ref{sec:lines-I-N}; many of their ingredients are
+registry-only. File line numbers are navigation, not proof certification.
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[x=1cm,y=0.62cm]
@@ -42,7 +42,7 @@ Claim ID & State & Manuscript mentions (file:line) \\
 Claim ID & State & Manuscript mentions (file:line) \\
 \hline
 \endhead
-\texttt{BGS-BGS-001} & open & \path{unified_sections/fixed_map_frontier.tex}:7; \path{unified_sections/fixed_map_frontier.tex}:688; \path{unified_sections/fixed_map_frontier.tex}:827; \path{unified_sections/fixed_map_frontier.tex}:1630; \path{unified_sections/fixed_map_frontier.tex}:1843; \path{unified_sections/fixed_map_frontier.tex}:1882; \path{unified_sections/fixed_map_frontier.tex}:1914; \path{unified_sections/fixed_map_frontier.tex}:1985; \path{unified_sections/fixed_map_frontier.tex}:2078; \path{unified_sections/physical_kick_decay.tex}:97; \path{unified_sections/kick_blind_arithmetic_spike.tex}:9; \path{unified_sections/orbit_orthogonal_kick_spike.tex}:11; \path{unified_sections/positive_time_spike.tex}:11; \path{unified_sections/order_ladder_abel.tex}:10; \path{unified_sections/order_trichotomy_abel.tex}:10; \path{unified_sections/crt_composite_abel.tex}:10; \path{unified_sections/squarefree_product_abel.tex}:9; \path{unified_sections/odd_modulus_abel.tex}:9; \path{unified_sections/uniform_orbit_overlap.tex}:9; \path{unified_sections/uniform_orbit_overlap.tex}:31; \path{unified_sections/interaction_phase_form_factor.tex}:10; \path{unified_sections/diagonal_phase_form_factor.tex}:10; \path{unified_sections/diagonal_phase_short_time.tex}:10; \path{unified_sections/scalar_return_bessel.tex}:9; \path{unified_sections/sixteen_phase_symmetry.tex}:9; \path{unified_sections/hyperbolic_diagonal_form_factor.tex}:9; \path{unified_sections/hyperbolic_short_time_limit.tex}:9; \path{unified_sections/revival_closure_law.tex}:15; \path{unified_sections/momentum_phase_cue.tex}:11; \path{unified_sections/random_phase_encounter_pairs.tex}:10; \path{unified_sections/band_limited_kick_bridge.tex}:20; \path{unified_sections/derandomized_fixed_kick.tex}:23; \path{unified_sections/lineH_49state_certificate.tex}:9; \path{unified_sections/ch15_conclusion.tex}:87 \\
+\texttt{BGS-BGS-001} & open & \path{unified_sections/fixed_map_frontier.tex}:7; \path{unified_sections/fixed_map_frontier.tex}:688; \path{unified_sections/fixed_map_frontier.tex}:827; \path{unified_sections/fixed_map_frontier.tex}:1630; \path{unified_sections/fixed_map_frontier.tex}:1843; \path{unified_sections/fixed_map_frontier.tex}:1882; \path{unified_sections/fixed_map_frontier.tex}:1914; \path{unified_sections/fixed_map_frontier.tex}:1985; \path{unified_sections/fixed_map_frontier.tex}:2078; \path{unified_sections/physical_kick_decay.tex}:97; \path{unified_sections/kick_blind_arithmetic_spike.tex}:9; \path{unified_sections/orbit_orthogonal_kick_spike.tex}:11; \path{unified_sections/positive_time_spike.tex}:11; \path{unified_sections/order_ladder_abel.tex}:10; \path{unified_sections/order_trichotomy_abel.tex}:10; \path{unified_sections/crt_composite_abel.tex}:10; \path{unified_sections/squarefree_product_abel.tex}:9; \path{unified_sections/odd_modulus_abel.tex}:9; \path{unified_sections/uniform_orbit_overlap.tex}:9; \path{unified_sections/uniform_orbit_overlap.tex}:31; \path{unified_sections/interaction_phase_form_factor.tex}:10; \path{unified_sections/diagonal_phase_form_factor.tex}:10; \path{unified_sections/diagonal_phase_short_time.tex}:10; \path{unified_sections/scalar_return_bessel.tex}:9; \path{unified_sections/sixteen_phase_symmetry.tex}:9; \path{unified_sections/hyperbolic_diagonal_form_factor.tex}:9; \path{unified_sections/hyperbolic_short_time_limit.tex}:9; \path{unified_sections/revival_closure_law.tex}:15; \path{unified_sections/momentum_phase_cue.tex}:11; \path{unified_sections/random_phase_encounter_pairs.tex}:10; \path{unified_sections/band_limited_kick_bridge.tex}:20; \path{unified_sections/derandomized_fixed_kick.tex}:23; \path{unified_sections/lineH_49state_certificate.tex}:9; \path{unified_sections/lines_I_N_gas_theorem.tex}:8; \path{unified_sections/ch15_conclusion.tex}:87 \\
 \texttt{BGS-CAYLEY-001} & proved & --- (registry only) \\
 \texttt{BGS-CAYLEY-002} & proved & --- (registry only) \\
 \texttt{BGS-CAYLEY-003} & verification-pending & --- (registry only) \\
@@ -155,7 +155,7 @@ Claim ID & State & Manuscript mentions (file:line) \\
 \texttt{BGS-TRACE-002} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-003} & proved & \path{unified_sections/fixed_map_frontier.tex}:1897 \\
 \texttt{BGS-TRACE-004} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-005} & open & \path{unified_sections/fixed_map_frontier.tex}:7; \path{unified_sections/fixed_map_frontier.tex}:250; \path{unified_sections/fixed_map_frontier.tex}:274; \path{unified_sections/fixed_map_frontier.tex}:283; \path{unified_sections/fixed_map_frontier.tex}:688; \path{unified_sections/fixed_map_frontier.tex}:827; \path{unified_sections/fixed_map_frontier.tex}:1240; \path{unified_sections/fixed_map_frontier.tex}:1630; \path{unified_sections/fixed_map_frontier.tex}:1697; \path{unified_sections/fixed_map_frontier.tex}:1843; \path{unified_sections/fixed_map_frontier.tex}:1882; \path{unified_sections/fixed_map_frontier.tex}:1914; \path{unified_sections/fixed_map_frontier.tex}:1985; \path{unified_sections/fixed_map_frontier.tex}:2078; \path{unified_sections/actual_path_theorems.tex}:117; \path{unified_sections/heisenberg_wkb_reductions.tex}:38; \path{unified_sections/global_rotated_box_trace.tex}:100; \path{unified_sections/paired_phase_reductions.tex}:58; \path{unified_sections/selected_weighted_coefficient.tex}:36; \path{unified_sections/factorial_ordered_diagonal.tex}:33; \path{unified_sections/reviewed_phase_signed_trace.tex}:8; \path{unified_sections/reviewed_phase_signed_trace.tex}:166; \path{unified_sections/unmasked_insertion_closure.tex}:103; \path{unified_sections/phase_channel_jets.tex}:270; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:121; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:365; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:417; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:643; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:873; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:978; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:1262; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:1482; \path{unified_sections/spectral_functionals_integration.tex}:11; \path{unified_sections/physical_kick_decay.tex}:97; \path{unified_sections/inserted_trace_closure.tex}:179; \path{unified_sections/kick_blind_arithmetic_spike.tex}:9; \path{unified_sections/orbit_orthogonal_kick_spike.tex}:11; \path{unified_sections/positive_time_spike.tex}:11; \path{unified_sections/order_ladder_abel.tex}:10; \path{unified_sections/order_trichotomy_abel.tex}:10; \path{unified_sections/crt_composite_abel.tex}:10; \path{unified_sections/squarefree_product_abel.tex}:9; \path{unified_sections/odd_modulus_abel.tex}:9; \path{unified_sections/uniform_orbit_overlap.tex}:9; \path{unified_sections/uniform_orbit_overlap.tex}:31; \path{unified_sections/interaction_phase_form_factor.tex}:10; \path{unified_sections/diagonal_phase_form_factor.tex}:10; \path{unified_sections/diagonal_phase_short_time.tex}:10; \path{unified_sections/scalar_return_bessel.tex}:9; \path{unified_sections/sixteen_phase_symmetry.tex}:9; \path{unified_sections/hyperbolic_diagonal_form_factor.tex}:9; \path{unified_sections/hyperbolic_short_time_limit.tex}:9; \path{unified_sections/revival_closure_law.tex}:15; \path{unified_sections/momentum_phase_cue.tex}:11; \path{unified_sections/random_phase_encounter_pairs.tex}:10; \path{unified_sections/band_limited_kick_bridge.tex}:20; \path{unified_sections/ch15_conclusion.tex}:85; \path{unified_sections/ch15_conclusion.tex}:104; \path{figures/fig_flagship_chain.tex}:18 \\
+\texttt{BGS-TRACE-005} & open & \path{unified_sections/fixed_map_frontier.tex}:7; \path{unified_sections/fixed_map_frontier.tex}:250; \path{unified_sections/fixed_map_frontier.tex}:274; \path{unified_sections/fixed_map_frontier.tex}:283; \path{unified_sections/fixed_map_frontier.tex}:688; \path{unified_sections/fixed_map_frontier.tex}:827; \path{unified_sections/fixed_map_frontier.tex}:1240; \path{unified_sections/fixed_map_frontier.tex}:1630; \path{unified_sections/fixed_map_frontier.tex}:1697; \path{unified_sections/fixed_map_frontier.tex}:1843; \path{unified_sections/fixed_map_frontier.tex}:1882; \path{unified_sections/fixed_map_frontier.tex}:1914; \path{unified_sections/fixed_map_frontier.tex}:1985; \path{unified_sections/fixed_map_frontier.tex}:2078; \path{unified_sections/actual_path_theorems.tex}:117; \path{unified_sections/heisenberg_wkb_reductions.tex}:38; \path{unified_sections/global_rotated_box_trace.tex}:100; \path{unified_sections/paired_phase_reductions.tex}:58; \path{unified_sections/selected_weighted_coefficient.tex}:36; \path{unified_sections/factorial_ordered_diagonal.tex}:33; \path{unified_sections/reviewed_phase_signed_trace.tex}:8; \path{unified_sections/reviewed_phase_signed_trace.tex}:166; \path{unified_sections/unmasked_insertion_closure.tex}:103; \path{unified_sections/phase_channel_jets.tex}:270; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:121; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:365; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:417; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:643; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:873; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:978; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:1262; \path{unified_sections/microscopic_paths_and_phase_laws.tex}:1482; \path{unified_sections/spectral_functionals_integration.tex}:11; \path{unified_sections/physical_kick_decay.tex}:97; \path{unified_sections/inserted_trace_closure.tex}:179; \path{unified_sections/kick_blind_arithmetic_spike.tex}:9; \path{unified_sections/orbit_orthogonal_kick_spike.tex}:11; \path{unified_sections/positive_time_spike.tex}:11; \path{unified_sections/order_ladder_abel.tex}:10; \path{unified_sections/order_trichotomy_abel.tex}:10; \path{unified_sections/crt_composite_abel.tex}:10; \path{unified_sections/squarefree_product_abel.tex}:9; \path{unified_sections/odd_modulus_abel.tex}:9; \path{unified_sections/uniform_orbit_overlap.tex}:9; \path{unified_sections/uniform_orbit_overlap.tex}:31; \path{unified_sections/interaction_phase_form_factor.tex}:10; \path{unified_sections/diagonal_phase_form_factor.tex}:10; \path{unified_sections/diagonal_phase_short_time.tex}:10; \path{unified_sections/scalar_return_bessel.tex}:9; \path{unified_sections/sixteen_phase_symmetry.tex}:9; \path{unified_sections/hyperbolic_diagonal_form_factor.tex}:9; \path{unified_sections/hyperbolic_short_time_limit.tex}:9; \path{unified_sections/revival_closure_law.tex}:15; \path{unified_sections/momentum_phase_cue.tex}:11; \path{unified_sections/random_phase_encounter_pairs.tex}:10; \path{unified_sections/band_limited_kick_bridge.tex}:20; \path{unified_sections/lines_I_N_gas_theorem.tex}:8; \path{unified_sections/ch15_conclusion.tex}:85; \path{unified_sections/ch15_conclusion.tex}:104; \path{figures/fig_flagship_chain.tex}:18 \\
 \texttt{BGS-TRACE-006} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-007} & proved & \path{unified_sections/fixed_map_frontier.tex}:7; \path{unified_sections/fixed_map_frontier.tex}:129; \path{unified_sections/fixed_map_frontier.tex}:1205 \\
 \texttt{BGS-TRACE-008} & proved & \path{unified_sections/fixed_map_frontier.tex}:7; \path{unified_sections/fixed_map_frontier.tex}:251 \\
@@ -304,7 +304,7 @@ Claim ID & State & Manuscript mentions (file:line) \\
 \texttt{BGS-TRACE-176} & conditional & \path{unified_sections/derandomized_fixed_kick.tex}:115 \\
 \texttt{BGS-TRACE-177} & open & \path{unified_sections/derandomized_fixed_kick.tex}:119; \path{unified_sections/derandomized_fixed_kick.tex}:120 \\
 \texttt{BGS-TRACE-178} & proved & \path{unified_sections/derandomized_fixed_kick.tex}:121 \\
-\texttt{BGS-TRACE-179} & refuted & \path{unified_sections/derandomized_fixed_kick.tex}:122; \path{unified_sections/resonant_residue_lineE.tex}:18; \path{unified_sections/resonant_residue_lineE.tex}:19; \path{unified_sections/lifted_transfer_lineFG.tex}:12; \path{unified_sections/lineH_49state_certificate.tex}:9; \path{unified_sections/lineH_49state_certificate.tex}:23; \path{unified_sections/lineH_49state_certificate.tex}:24 \\
+\texttt{BGS-TRACE-179} & refuted & \path{unified_sections/derandomized_fixed_kick.tex}:122; \path{unified_sections/resonant_residue_lineE.tex}:18; \path{unified_sections/resonant_residue_lineE.tex}:19; \path{unified_sections/lifted_transfer_lineFG.tex}:12; \path{unified_sections/lineH_49state_certificate.tex}:9; \path{unified_sections/lineH_49state_certificate.tex}:23; \path{unified_sections/lineH_49state_certificate.tex}:24; \path{unified_sections/lines_I_N_gas_theorem.tex}:14 \\
 \texttt{BGS-TRACE-180} & open & \path{unified_sections/resonant_residue_lineE.tex}:19 \\
 \texttt{BGS-TRACE-181} & open & --- (registry only) \\
 \texttt{BGS-TRACE-182} & open & \path{unified_sections/resonant_residue_lineE.tex}:47 \\
@@ -322,7 +322,7 @@ Claim ID & State & Manuscript mentions (file:line) \\
 \texttt{BGS-TRACE-194} & proved & \path{unified_sections/resonant_residue_lineE.tex}:56; \path{unified_sections/resonant_residue_lineE.tex}:70; \path{unified_sections/lineH_49state_certificate.tex}:12 \\
 \texttt{BGS-TRACE-195} & proved & \path{unified_sections/resonant_residue_lineE.tex}:62; \path{unified_sections/lineH_49state_certificate.tex}:9 \\
 \texttt{BGS-TRACE-196} & conditional & \path{unified_sections/resonant_residue_lineE.tex}:69; \path{unified_sections/lifted_transfer_lineFG.tex}:12; \path{unified_sections/lineH_49state_certificate.tex}:24 \\
-\texttt{BGS-TRACE-197} & proved & \path{unified_sections/lifted_transfer_lineFG.tex}:14; \path{unified_sections/lineH_49state_certificate.tex}:12 \\
+\texttt{BGS-TRACE-197} & proved & \path{unified_sections/lifted_transfer_lineFG.tex}:14; \path{unified_sections/lineH_49state_certificate.tex}:12; \path{unified_sections/lines_I_N_gas_theorem.tex}:112 \\
 \texttt{BGS-TRACE-198} & proved & \path{unified_sections/lifted_transfer_lineFG.tex}:18 \\
 \texttt{BGS-TRACE-199} & proved & \path{unified_sections/lifted_transfer_lineFG.tex}:12; \path{unified_sections/lifted_transfer_lineFG.tex}:22; \path{unified_sections/lifted_transfer_lineFG.tex}:27 \\
 \texttt{BGS-TRACE-200} & proved & \path{unified_sections/lifted_transfer_lineFG.tex}:26 \\
@@ -331,135 +331,135 @@ Claim ID & State & Manuscript mentions (file:line) \\
 \texttt{BGS-TRACE-203} & proved & \path{unified_sections/lifted_transfer_lineFG.tex}:38 \\
 \texttt{BGS-TRACE-204} & proved & \path{unified_sections/lifted_transfer_lineFG.tex}:42; \path{unified_sections/lifted_transfer_lineFG.tex}:43 \\
 \texttt{BGS-TRACE-205} & open & \path{unified_sections/lifted_transfer_lineFG.tex}:44 \\
-\texttt{BGS-TRACE-206} & open & \path{unified_sections/lifted_transfer_lineFG.tex}:45 \\
+\texttt{BGS-TRACE-206} & open & \path{unified_sections/lifted_transfer_lineFG.tex}:45; \path{unified_sections/lines_I_N_gas_theorem.tex}:8; \path{unified_sections/lines_I_N_gas_theorem.tex}:14; \path{unified_sections/lines_I_N_gas_theorem.tex}:102 \\
 \texttt{BGS-TRACE-207} & proved & \path{unified_sections/lineH_49state_certificate.tex}:11 \\
 \texttt{BGS-TRACE-208} & proved & \path{unified_sections/lifted_transfer_lineFG.tex}:35; \path{unified_sections/lineH_49state_certificate.tex}:15 \\
 \texttt{BGS-TRACE-209} & proved & \path{unified_sections/derandomized_fixed_kick.tex}:122; \path{unified_sections/resonant_residue_lineE.tex}:19; \path{unified_sections/lifted_transfer_lineFG.tex}:12; \path{unified_sections/lineH_49state_certificate.tex}:19 \\
-\texttt{BGS-TRACE-210} & open & \path{unified_sections/derandomized_fixed_kick.tex}:122; \path{unified_sections/lineH_49state_certificate.tex}:24 \\
-\texttt{BGS-TRACE-211} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-212} & proved & \path{unified_sections/lifted_transfer_lineFG.tex}:43 \\
-\texttt{BGS-TRACE-213} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-214} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-215} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-216} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-217} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-218} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-219} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-220} & open & --- (registry only) \\
-\texttt{BGS-TRACE-221} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-222} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-223} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-210} & open & \path{unified_sections/derandomized_fixed_kick.tex}:122; \path{unified_sections/lineH_49state_certificate.tex}:24; \path{unified_sections/lines_I_N_gas_theorem.tex}:131 \\
+\texttt{BGS-TRACE-211} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:8; \path{unified_sections/lines_I_N_gas_theorem.tex}:21 \\
+\texttt{BGS-TRACE-212} & proved & \path{unified_sections/lifted_transfer_lineFG.tex}:43; \path{unified_sections/lines_I_N_gas_theorem.tex}:21 \\
+\texttt{BGS-TRACE-213} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:18 \\
+\texttt{BGS-TRACE-214} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:21 \\
+\texttt{BGS-TRACE-215} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:21 \\
+\texttt{BGS-TRACE-216} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:21 \\
+\texttt{BGS-TRACE-217} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:21 \\
+\texttt{BGS-TRACE-218} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:21 \\
+\texttt{BGS-TRACE-219} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:21 \\
+\texttt{BGS-TRACE-220} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:21 \\
+\texttt{BGS-TRACE-221} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:25 \\
+\texttt{BGS-TRACE-222} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:25 \\
+\texttt{BGS-TRACE-223} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:25 \\
 \texttt{BGS-TRACE-224} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-225} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-226} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-227} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-228} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-229} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-230} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-231} & conditional & --- (registry only) \\
-\texttt{BGS-TRACE-232} & open & --- (registry only) \\
-\texttt{BGS-TRACE-233} & open & --- (registry only) \\
-\texttt{BGS-TRACE-234} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-235} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-236} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-237} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-238} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-239} & open & --- (registry only) \\
-\texttt{BGS-TRACE-240} & conditional & --- (registry only) \\
-\texttt{BGS-TRACE-241} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-242} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-243} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-244} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-245} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-246} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-247} & open & --- (registry only) \\
-\texttt{BGS-TRACE-248} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-249} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-250} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-251} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-252} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-225} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:26 \\
+\texttt{BGS-TRACE-226} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:29 \\
+\texttt{BGS-TRACE-227} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:29; \path{unified_sections/lines_I_N_gas_theorem.tex}:125 \\
+\texttt{BGS-TRACE-228} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:29 \\
+\texttt{BGS-TRACE-229} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:29 \\
+\texttt{BGS-TRACE-230} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:29 \\
+\texttt{BGS-TRACE-231} & conditional & \path{unified_sections/lines_I_N_gas_theorem.tex}:29 \\
+\texttt{BGS-TRACE-232} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:29 \\
+\texttt{BGS-TRACE-233} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:29 \\
+\texttt{BGS-TRACE-234} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-235} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:33 \\
+\texttt{BGS-TRACE-236} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-237} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-238} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-239} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-240} & conditional & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-241} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-242} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-243} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-244} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-245} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
+\texttt{BGS-TRACE-246} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
+\texttt{BGS-TRACE-247} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:36 \\
+\texttt{BGS-TRACE-248} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
+\texttt{BGS-TRACE-249} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
+\texttt{BGS-TRACE-250} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
+\texttt{BGS-TRACE-251} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
+\texttt{BGS-TRACE-252} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
 \texttt{BGS-TRACE-253} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-254} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-254} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
 \texttt{BGS-TRACE-255} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-256} & open & --- (registry only) \\
-\texttt{BGS-TRACE-257} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-258} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-256} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
+\texttt{BGS-TRACE-257} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
+\texttt{BGS-TRACE-258} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
 \texttt{BGS-TRACE-259} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-260} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-261} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-262} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-263} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-263} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:40 \\
 \texttt{BGS-TRACE-264} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-265} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-266} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-267} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-268} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-269} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-270} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-271} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-269} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:44 \\
+\texttt{BGS-TRACE-270} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:44 \\
+\texttt{BGS-TRACE-271} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:44; \path{unified_sections/lines_I_N_gas_theorem.tex}:125 \\
 \texttt{BGS-TRACE-272} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-273} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-274} & open & --- (registry only) \\
+\texttt{BGS-TRACE-274} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:44 \\
 \texttt{BGS-TRACE-275} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-276} & open & --- (registry only) \\
 \texttt{BGS-TRACE-277} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-278} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-279} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-280} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-281} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-282} & open & --- (registry only) \\
-\texttt{BGS-TRACE-283} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-284} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-285} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-286} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-287} & open & --- (registry only) \\
+\texttt{BGS-TRACE-280} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:45 \\
+\texttt{BGS-TRACE-281} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:48 \\
+\texttt{BGS-TRACE-282} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:48 \\
+\texttt{BGS-TRACE-283} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:48 \\
+\texttt{BGS-TRACE-284} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:48 \\
+\texttt{BGS-TRACE-285} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:50 \\
+\texttt{BGS-TRACE-286} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:50 \\
+\texttt{BGS-TRACE-287} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:50 \\
 \texttt{BGS-TRACE-288} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-289} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-290} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-289} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:50 \\
+\texttt{BGS-TRACE-290} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:50 \\
 \texttt{BGS-TRACE-291} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-292} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-293} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-294} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-295} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-296} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-294} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:50 \\
+\texttt{BGS-TRACE-295} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:50 \\
+\texttt{BGS-TRACE-296} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:50 \\
 \texttt{BGS-TRACE-297} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-298} & open & --- (registry only) \\
-\texttt{BGS-TRACE-299} & conditional & --- (registry only) \\
+\texttt{BGS-TRACE-298} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:50 \\
+\texttt{BGS-TRACE-299} & conditional & \path{unified_sections/lines_I_N_gas_theorem.tex}:102 \\
 \texttt{BGS-TRACE-300} & open & --- (registry only) \\
-\texttt{BGS-TRACE-301} & open & --- (registry only) \\
-\texttt{BGS-TRACE-302} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-303} & open & --- (registry only) \\
-\texttt{BGS-TRACE-304} & open & --- (registry only) \\
-\texttt{BGS-TRACE-305} & open & --- (registry only) \\
-\texttt{BGS-TRACE-306} & open & --- (registry only) \\
-\texttt{BGS-TRACE-307} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-308} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-309} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-310} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-311} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-312} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-313} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-314} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-315} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-316} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-317} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-318} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-319} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-320} & verification-pending & --- (registry only) \\
-\texttt{BGS-TRACE-321} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-301} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:115 \\
+\texttt{BGS-TRACE-302} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:116 \\
+\texttt{BGS-TRACE-303} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:117 \\
+\texttt{BGS-TRACE-304} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:118 \\
+\texttt{BGS-TRACE-305} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:119 \\
+\texttt{BGS-TRACE-306} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:120 \\
+\texttt{BGS-TRACE-307} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:68; \path{unified_sections/lines_I_N_gas_theorem.tex}:114 \\
+\texttt{BGS-TRACE-308} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:73 \\
+\texttt{BGS-TRACE-309} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:55 \\
+\texttt{BGS-TRACE-310} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:67 \\
+\texttt{BGS-TRACE-311} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:74 \\
+\texttt{BGS-TRACE-312} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:77 \\
+\texttt{BGS-TRACE-313} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:83 \\
+\texttt{BGS-TRACE-314} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:83 \\
+\texttt{BGS-TRACE-315} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:14 \\
+\texttt{BGS-TRACE-316} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:83 \\
+\texttt{BGS-TRACE-317} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:83 \\
+\texttt{BGS-TRACE-318} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:129 \\
+\texttt{BGS-TRACE-319} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:83 \\
+\texttt{BGS-TRACE-320} & verification-pending & \path{unified_sections/lines_I_N_gas_theorem.tex}:83 \\
+\texttt{BGS-TRACE-321} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:76 \\
 \texttt{BGS-TRACE-322} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-323} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-324} & verification-pending & --- (registry only) \\
-\texttt{BGS-TRACE-325} & conditional & --- (registry only) \\
-\texttt{BGS-TRACE-326} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-327} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-328} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-329} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-330} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-331} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-332} & conditional & --- (registry only) \\
-\texttt{BGS-TRACE-333} & conditional & --- (registry only) \\
-\texttt{BGS-TRACE-335} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-336} & open & --- (registry only) \\
+\texttt{BGS-TRACE-323} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:75 \\
+\texttt{BGS-TRACE-324} & verification-pending & \path{unified_sections/lines_I_N_gas_theorem.tex}:83; \path{unified_sections/lines_I_N_gas_theorem.tex}:112 \\
+\texttt{BGS-TRACE-325} & conditional & \path{unified_sections/lines_I_N_gas_theorem.tex}:8; \path{unified_sections/lines_I_N_gas_theorem.tex}:94 \\
+\texttt{BGS-TRACE-326} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:69; \path{unified_sections/lines_I_N_gas_theorem.tex}:83; \path{unified_sections/lines_I_N_gas_theorem.tex}:93 \\
+\texttt{BGS-TRACE-327} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:71 \\
+\texttt{BGS-TRACE-328} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:72 \\
+\texttt{BGS-TRACE-329} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:85 \\
+\texttt{BGS-TRACE-330} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:78 \\
+\texttt{BGS-TRACE-331} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:79 \\
+\texttt{BGS-TRACE-332} & conditional & \path{unified_sections/lines_I_N_gas_theorem.tex}:85; \path{unified_sections/lines_I_N_gas_theorem.tex}:115 \\
+\texttt{BGS-TRACE-333} & conditional & \path{unified_sections/lines_I_N_gas_theorem.tex}:126 \\
+\texttt{BGS-TRACE-335} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:70 \\
+\texttt{BGS-TRACE-336} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:8; \path{unified_sections/lines_I_N_gas_theorem.tex}:113 \\
 \end{longtable}
 \end{center}

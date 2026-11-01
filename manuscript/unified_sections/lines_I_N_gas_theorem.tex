@@ -1,0 +1,143 @@
+% Lines I--N chapter. Registered IDs BGS-TRACE-211 to BGS-TRACE-336 (BGS-TRACE-334 is not registered; it is erratum ERR-065).
+% Written 1 November 2026 from record/claims.json, mathematics/fixed-map/lineN5N18_gas_conditional.md and the canonical
+% statement computations/verification/lineN_theorem_draft/THEOREM_DRAFT_v5.md (author v5 with referee lineN22 edits E1--E8).
+% Every state below is the registry state; the registry is authoritative. Replaces the unwired outline lines_I_N_skeleton.tex,
+% which is kept unchanged as history.
+\section{Lines I--N: the frozen mean law \texorpdfstring{$R'$}{R'} and the conditional gas theorem}
+\label{sec:lines-I-N}
+\paragraph{Status first.} The corrected mean law \(R'\) (BGS-TRACE-206) is \emph{open and not refuted}. Nothing in this chapter proves or disproves BGS (BGS-BGS-001) or the signed trace estimate BGS-TRACE-005. The main result, Theorem~R\(\sharp\)-mod v5 (BGS-TRACE-325, Section~\ref{sec:lines-I-N-main}), is \emph{conditional}: it derives the failure of frozen \(R'\) along \(m=3p\) from explicitly listed open inputs. The registry holds 125 claims in the range BGS-TRACE-211 to BGS-TRACE-336: 99 proved, 6 conditional, 18 open and 2 verification-pending.
+
+\paragraph{Sources and labels.} The canonical notes are \path{mathematics/fixed-map/lineI_rprime_reduction.md}, \path{lineJ_d7_twisted_coefficient.md}, \path{lineK_harg_removal.md}, \path{lineL_op_open_range.md}, \path{lineMN_conductor_structure.md}, \path{lineN2N4_inherited_level.md} and \path{lineN5N18_gas_conditional.md} (all in \path{mathematics/fixed-map/}). Author and referee packets are in \path{computations/verification/lineI/} to \path{lineN19b/} and in \path{evidence/executions/20261101/lineNgas/}. Inside a statement, [P] marks a written and refereed proof, [P-sketch] an argument complete in outline, [CA] rigorous ball or interval arithmetic, [CA-fp] IEEE binary64 with derived a-priori rounding bounds, [P-arith] an arithmetic implication checked in floating point with exact integer parts, [N] numerics without error control and [H] a hypothesis. [N] items are evidence, not proof, and are not registered.
+
+\subsection{Setting}
+\label{sec:lines-I-N-setting}
+Throughout, the kick is the single cosine \(0.9\cos2\pi q\) (the \(k_1\) kick, \(\hat g(n)=i^nJ_n(1.8)\)) at \(\eta=2\), with \(S=\begin{pmatrix}3&4\\2&3\end{pmatrix}\), \(\lambda=3+2\sqrt2=\varepsilon^2\) and \(\varepsilon=1+\sqrt2\). The numbers \(h_m\) satisfy \(\lambda^m\equiv1\pmod{h_m}\); for \(m=3p\) one has \(h_{3p}=h_pK_p\) with \(K_p=4h_p^2+3\), \(7\mid K_p\) and \(\gcd(h_p,K_p)\mid3\) (BGS-TRACE-315, proved). The frozen definition of BGS-TRACE-206 fixes the primary set \(P^*=\{(2,8),(-2,8),(2,16),(-2,16)\}\), the levels \(d\mid h\) with \(1<d\le\sqrt h\), the members \(M_d(\rho)\), the inclusion rule \(\lvert Z_\rho\rvert^2/d^2\ge4m\), and the deviation \(W'_m=F_m-\mathrm{RMT}_m-\mathrm{Res}_m\) with \(\mathrm{RMT}_m=4m-m^2/h\). Conjecture \(R'\) is the statement \(W'_m=o(m)\). It concerns the \(k_1\) kick; Conjecture R for the Line B kick (BGS-TRACE-179) is a different statement and is refuted at \(\eta=2\) (Section~\ref{sec:lineH-49state}).
+
+\subsection{Line I: an exact reduction of \texorpdfstring{$R'$}{R'}}
+\label{sec:lines-I-N-lineI}
+\begin{theorem}[Reduction of \(R'\), BGS-TRACE-213, proved]
+\(W'_m\) splits exactly into a non-resonant part plus \(\varphi^{-1}\sum_{\rho,d}\mathrm{Dev}_d(\rho)\) over the included levels. Hence \(R'\) follows from three statements \((E'')\), \((T'')\) and the dilation remainder \((D)\). None of the three is proved.
+\end{theorem}
+The reduction rests on the relative phase split \(Z_m(\nu_0+\delta)=Z_m(\nu_0)\hat\sigma(\delta)\) (BGS-TRACE-211), a dilation-coset \(L^2\) law with a per-member Gauss-sum formula (BGS-TRACE-212), the Fourier expansion of weighted horocycle sums (BGS-TRACE-214), an aliasing identity (BGS-TRACE-218) and the fact that \(h_m\) has unbounded prime support (BGS-TRACE-219); all are proved. For \(d=7\) the square part of \((D)\) is certified small for \(\rho=(\pm2,8)\) (BGS-TRACE-215, proved); the \((\pm2,16)\) level-7 members are not controlled there, and the monomial intertwiners between the twisted cases are exact (BGS-TRACE-216). The certified top twisted spectrum has three simple eigenvalues with \(1.262<\lvert\mu\rvert<1.45\), so \(r_{\mathrm{tw}}>\sqrt\lambda/\mu_0\) (BGS-TRACE-217, proved): operator radii cannot control the cross part. The amended law \(R'_A\) (BGS-TRACE-220) is open.
+
+\subsection{Lines J and J3: the level-7 coefficient}
+\label{sec:lines-I-N-lineJ}
+The leading \(d=7\) coefficient is exact: class \(1{:}3\) cancels between \(\rho=(2,8)\) and \((-2,8)\), while classes \(2{:}1\) and \(0{:}1\) survive (BGS-TRACE-221, proved). An antiunitary sector map relates the \((\pm2,8)\) twisted sector operators for every twist (BGS-TRACE-222), and the top orbit is certified: \(\lvert\mu_{2:1}\rvert\in[1.28359503,1.28359523]\) and \(\lvert\xi\rvert\ge2.4586893>\sqrt\lambda\) (BGS-TRACE-223, proved).
+\begin{theorem}[Theorem J, BGS-TRACE-225, proved (computer-assisted)]
+The frozen \(d=7\), \((\pm2,8)\) contribution to \(W'_m/m\) oscillates with growth at least \(1.0184224^m\): for \(m\equiv3\pmod6\) it takes both signs, with modulus at least \(K_j\,1.0184224^m/m\), within every six consecutive members of each class \(j\bmod168\) beyond an explicit start \(M_0(j)\in[297,495]\). This is a subsequence statement.
+\end{theorem}
+Line J3 adds the lifted trace formula for \(\rho=(\pm2,16)\) (BGS-TRACE-226), shows that its \(d=7\) part is at most \(1\%\) of the main term for \(m\ge243\) (BGS-TRACE-227), proves the inheritance identity \(W_{ce,e\beta'}=(n_e/e^2)W_{c,\beta'}\) for coprime odd \(c,e\) with \(ce\mid h_m\) (BGS-TRACE-228), the prime-level complete-sum bound (BGS-TRACE-229) and the criterion \(q\mid h_m\iff\operatorname{ord}_q(\lambda)\mid m\) (BGS-TRACE-230); all are proved. Theorem J3 (BGS-TRACE-231) is \emph{conditional}: frozen \(R'\) is false along \(m=3p\) under the open hypotheses \(H^\natural\) (BGS-TRACE-232) and \(H_{\arg}\) (BGS-TRACE-233).
+
+\subsection{Line K: removing \texorpdfstring{$H_{\arg}$}{H\_arg}}
+\label{sec:lines-I-N-lineK}
+\begin{theorem}[Theorem K3, BGS-TRACE-235, proved]
+The set \(S^+\) contains infinitely many \(m=3p\) with \(p\equiv p_0\pmod{56}\), for every unit \(p_0\bmod56\), unconditionally.
+\end{theorem}
+The proof uses the gap lemma K3 (BGS-TRACE-234, proved; its finite inputs are kernel-checked in \path{formalization/Bgs/LineKFinite.lean}). Hence frozen \(R'\) forces \(\varphi^{-1}O^\natural_m\le-0.99K_j\,1.0184224^m+4m+o(m)\) on an infinite set of \(m=3p\), so \(H^\natural\) alone would refute it (BGS-TRACE-236, proved). \(H_{\arg}\) is bypassed, not proved. Further proved results are the light-cone identity at prime levels (BGS-TRACE-237), absorption of large levels by positivity, with \(S_Z\le0.5000001\) (BGS-TRACE-238), the Weil bound over the orbit subgroup (BGS-TRACE-241), a non-cyclic block AM--GM bound (BGS-TRACE-242), the orbit-average lemma W3 (BGS-TRACE-243) and the operator input OP (BGS-TRACE-244). Theorem K (BGS-TRACE-240) is conditional on \(H^\natural\) or on \(H^\natural_{\mathrm{mid}}\) (BGS-TRACE-239, open); Conjecture C1 (BGS-TRACE-247) is open.
+
+\subsection{Lines L, L2 and L3: OP certified and the open range}
+\label{sec:lines-I-N-lineL}
+A cancellation-free second-moment bound (BGS-TRACE-250) and an arb certificate give \(I_k^{1/2k}\le1.26278,\ 1.13642,\ 1.39243,\ 1.30276\) for the four families, below the targets \(1.28359\) and \(1.4742\) (BGS-TRACE-251, proved). With the collision structure (BGS-TRACE-248) and the word Hilbert--Schmidt bound (BGS-TRACE-249), Theorem W (BGS-TRACE-245) and K2\('\) (BGS-TRACE-246) hold under the standing proved inputs for \(m\ge m_1\) (effective, not computed), with \(c_W=10^{-25.62}\); the Weil range is non-vacuous only from \(p\approx8.3\cdot10^{25}\) (BGS-TRACE-252). Level-\(h\) unitarity holds exactly (BGS-TRACE-254). Line L2 shows that the remaining open range needs the mean statement \(H_{\mathrm{mean}}\) (BGS-TRACE-256, open), which would refute frozen \(R'\) along \(m=3p\) (BGS-TRACE-257, a proved implication). Per-\(\beta\), phase-blind and height arguments cannot close it (BGS-TRACE-258, 260, 262), and Line L3 finds the structural route blocked as well (BGS-TRACE-263 to 268); all of these results are proved.
+
+\subsection{Lines M and N0--N4: conductor structure and the inherited level}
+\label{sec:lines-I-N-lineM}
+Open conductors at distinct \(m=3p\) are pairwise disjoint apart from \(7\) (BGS-TRACE-269), averaged hypotheses are never weaker (BGS-TRACE-270), and at the inherited level \(d=h_p\) the per-level floor exceeds the \(D_7\) demand by more than \(1.11238^m\), so no positivity method can close that level (BGS-TRACE-271, proved; it also gives the scale \(S_\rho\ge c\,1.13287^m\) used below). M4c and the pairing law M6 are open (BGS-TRACE-274, 276).
+\begin{theorem}[Theorem W\(^+\), BGS-TRACE-280, proved]
+Theorem W extends to prime conductors \(q\) and \(7q\) with \(q\le\max(c_Wp^2,c_Np^{7/3})\), \(c_N=10^{-113.80}\). The range beyond Weil is non-empty only for \(p\ge10^{264.5}\).
+\end{theorem}
+For every fixed \(C\) the prime range extends to \(q\le p^C\) for \(p\ge p_0(C)\), effective but not computed (BGS-TRACE-281, proved, via Bourgain 2005); composite conductors are open (BGS-TRACE-282). Theorem N3 (BGS-TRACE-283, proved) shows that the conductor \(h_p\) carries the slow orbit \(\beta=1\) for every \(p\ge p_0\), so the conclusion of K2\('\) holds without assuming \(R'\) (BGS-TRACE-284): an unweighted ``exclude slow orbits'' target is false, and the open-range target must be \(\beta\)-weighted.
+
+At \(c=h_p\) the class sums are periodic-orbit sums over the index-4 subgroup \(G_p\) of \(\mathrm{Fix}(A^p)\) (BGS-TRACE-285, 288, proved). A pressure reduction (BGS-TRACE-289), arb bounds \(r_2(4000)\le1.0534557\) for the carry automaton of all four families (BGS-TRACE-290), the intertwining Lemma I (BGS-TRACE-294) and certified free-family joint spectral radii (BGS-TRACE-295) give Theorem C\('\) (BGS-TRACE-296, proved): \emph{for \(p\) with \(h_p\) squarefree}, which is not proved for any \(p\), the unit-\(\beta\) cross part at \(h_p\) is \(O(((1-\delta)T_F)^m)\) for all four families. Theorem A (BGS-TRACE-286) is a proved implication from the open \(\Omega\)-hypothesis (BGS-TRACE-287); the isotropic lines at \(q\mid h_p\) are open (BGS-TRACE-298).
+
+\subsection{Lines N5--N21: the polymer gas}
+\label{sec:lines-I-N-gas}
+The isotropic sum at \(q=h_p\) is coded by a polymer gas. The level-\(h_p\) sum satisfies \(\varphi^{-1}\mathrm{Dev}_{h_p}\ge S_\rho(n/h_p)(\lvert1+X+Y\rvert^2-1)\) with \(S_\rho=\varphi^{-1}\lvert Z_\rho\rvert^2/h_p\), where \(X\) is the isotropic sum (at composite \(h_p\) it also contains \(2^{\omega(h_p)}-2\) cross lines that the gas does not code) and \(Y\) collects the unit, mixed and partially isotropic points.
+\begin{lemma}[Coding lemma, BGS-TRACE-309, proved]
+\(X_{\mathrm{coded}}=2[(1+\Lambda)^pe^{p\Delta}-1]-(\text{dense part})\), and \(\lvert1+X_{\mathrm{gas}}\rvert\ge2(1+\operatorname{Re}\Lambda)^pe^{-p\delta}-1\) given the model form.
+\end{lemma}
+Table~\ref{tab:lines-I-N-constants} lists the certified constants that enter the theorem. All rows are registered as proved.
+\begin{table}[ht]
+\centering\small
+\caption{Certified inputs of the gas bound (registry state: proved).}
+\label{tab:lines-I-N-constants}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.5\textwidth}>{\raggedright\arraybackslash}p{0.16\textwidth}@{}}
+\toprule
+Claim & Statement & Label\\
+\midrule
+BGS-TRACE-310 & \(\operatorname{Re}\Lambda_{\mathrm{lo}}\ge6.238\cdot10^{-4}\); \(\operatorname{Re}\Lambda'_{\mathrm{lo}}=6.234\cdot10^{-4}\) after charges & [CA]\\
+BGS-TRACE-307 & H2 met: \(\delta^{\mathrm{core}}_{\mathrm{int}}\le5.14476\cdot10^{-7}\) & [CA-fp]\\
+BGS-TRACE-326 & H4 met: \(\delta_{\mathrm{true}}\le5.0313\cdot10^{-6}\) for all \(G\) & [P]+[CA-fp]\\
+BGS-TRACE-335 & Lemma C: \(\delta_{\mathrm{true}}(G\le15)\le2.2102\cdot10^{-6}\) & [P]+[CA-fp]\\
+BGS-TRACE-327 & Lemma \(D^T\): the tail \(G\ge37\) is at most \(1.0843\cdot10^{-7}\) & [P]+[CA-fp]\\
+BGS-TRACE-328 & Lemma Q: \(K_0<56.78\), \(\mathrm{Rem}<1.591\cdot10^{-3}\) & [P]+[CA]\\
+BGS-TRACE-308 & \(\bar\rho\le0.28\), eigen-solver-free residual certificate & [CA-fp]\\
+BGS-TRACE-311 & adapted norm; \(N_H\le1+1.01\cdot10^{-12}+4260t^2\) for \(\lvert t\rvert\le1/256\) & [CA]+[P]\\
+BGS-TRACE-323 & step-norm table for \(\lvert t\rvert>1/256\), maximum \(2.91656\) & [CA-fp]\\
+BGS-TRACE-321 & \(A_{\mathrm{bad}}\) finite part \(j\le12\): \(2.031569\cdot10^{-6}\) at \(g_0=4\) & [CA-fp]\\
+BGS-TRACE-312 & exact carry reduction: \(\lvert e\rvert\le15\) (sharp 14), 633 pair states & [P]\\
+BGS-TRACE-330 & Lemma J: joint collisions are \(\varepsilon\)-adic, \(\lvert e\rvert\le51\), 6145 pair states & [P]\\
+BGS-TRACE-331 & Line N20 Theorem A: the H1 shell law for \(j\le14\), core functional, \(C_{\mathrm{cert}}(j)\le4.36\cdot10^{-4}\) & [CA-fp]\\
+\bottomrule
+\end{tabular}
+\end{table}
+The decomposition of \(\delta_{\mathrm{true}}\) recorded in BGS-TRACE-326 is \(2.2102\cdot10^{-6}\) (\(G\le15\)) \(+\,2.712658\cdot10^{-6}\) (\(16\le G\le36\)) \(+\,1.0843\cdot10^{-7}\) (\(G\ge37\)) \(+\,3.1\cdot10^{-13}\) (\(G>60\)). Further proved bookkeeping includes Lemmas P and P\('\) for all isotropic points at \(q=h_p\) (BGS-TRACE-313), closure of the \((\pm2,16)\) contribution for \(p\ge339\) (BGS-TRACE-314), the CRT count at \(h=8119\) (BGS-TRACE-316), the level bookkeeping \(W'_m=\mathrm{NR}+\varphi^{-1}\sum\mathrm{Dev}_d(\rho)\) with \(\mathrm{NR}\ge-4m\) (BGS-TRACE-317) and the sublattice separation Lemma 1 (BGS-TRACE-319). Lemma 2 (BGS-TRACE-320) and Prop.~X\('\) (BGS-TRACE-324) are verification-pending.
+
+Two results close routes. Prop.~F (BGS-TRACE-329, proved) shows that the unrestricted joint torus mean is at least \(5.1\cdot10^{-7}\lambda^{-n}\) for \(1\le n\le10^{10}\), so no unrestricted carry or torus-mean bound can give H1; the bad-cluster restriction must enter any certificate. Prop.~K (BGS-TRACE-332) is \emph{conditional on H1}: the H1 shell law with \(C\le0.082\) at \(J_0=12\) implies H3 with Kotecký--Preiss weight \(a=a(C)\le2.70\cdot10^{-3}\) and budget at least \(2.738\cdot10^{-4}\).
+
+\subsection{Theorem R\texorpdfstring{$\sharp$}{\#}-mod v5}
+\label{sec:lines-I-N-main}
+Let \(p\) be prime, \(m=3p\), and put
+\[
+B_p:=\frac{n}{h_p}\Bigl[\bigl(2(1+\operatorname{Re}\Lambda'_{\mathrm{lo}})^pe^{-p(\delta+A^{\mathrm{KP}}_{\mathrm{bad}})}-1-\lvert X_{\mathrm{tail}}\rvert-\lvert X_{\mathrm{cross}}\rvert-\lvert Y\rvert-e^{-0.28p}\bigr)^2-1\Bigr]-I_p-\varepsilon_{16}-\varepsilon_{\mathrm{fl}}-\varepsilon_{\mathrm{other}},
+\]
+with \(\delta=\delta_{\mathrm{true}}\le5.0313\cdot10^{-6}\) (BGS-TRACE-326), \(A^{\mathrm{KP}}_{\mathrm{bad}}=S_0(a)\) the Kotecký--Preiss weighted bad-cluster activity of Prop.~K, which depends on the constant \(C\) of H1, and \(I_p=\sigma(K_p)/K_p-1\), bounded by Robin's inequality.
+\begin{theorem}[Theorem R\(\sharp\)-mod v5, BGS-TRACE-325, conditional]
+\label{thm:lines-I-N-rsharp-v5}
+Assume the inputs H0, H1 and H5--H8 of Table~\ref{tab:lines-I-N-inputs} at \(p\), for \(p\ge p_{\mathrm{thr}}\). Then
+\[
+\frac{W'_{3p}}{m}\ge-4+\frac1m\sum_{\rho=(\pm2,8)}S_\rho B_p,\qquad S_\rho\ge c\,1.13287^m .
+\]
+Consequently, if \(B_p\ge\kappa>0\) for infinitely many primes \(p\ge p_{\mathrm{thr}}\), then \(W'_{3p}/m\to\infty\) and frozen \(R'\) is false along \(m=3p\).
+\end{theorem}
+The label is [P mod inputs H0, H1, H5--H8]. The step that puts \(A^{\mathrm{KP}}_{\mathrm{bad}}\) in the exponent (\(\lvert\ln\Xi_{\mathrm{bad}}\rvert\le pS_0(a)\), the anchored Kotecký--Preiss corollary of Ueltschi 2004, Thm.~1, with background-renormalised activities) is [P-sketch]; referee lineN22 judged it correct and necessary. The theorem supersedes v4 (BGS-TRACE-299), whose \(B_p\) charged \(\delta\) alone. It uses BGS-TRACE-206 only for the frozen definition. \textbf{It is a reduction, not a refutation: frozen \(R'\) is not refuted.}
+
+\begin{table}[ht]
+\centering\small
+\caption{Inputs of Theorem~\ref{thm:lines-I-N-rsharp-v5} and their registry states.}
+\label{tab:lines-I-N-inputs}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.1\textwidth}>{\raggedright\arraybackslash}p{0.56\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}@{}}
+\toprule
+Input & Content & State\\
+\midrule
+H0 & standing package: the Line F/J/J3/L16 trace representation (BGS-TRACE-197, 199, 207, 212, 213, 228), the Prop.~X\('\) architecture (BGS-TRACE-324) and \(n_{\mathrm{cert}}\) & taken as given; 324 verification-pending\\
+H1 & re-scoped by N20: bad-cluster joint \((A,B)\) second moment \(\sum_{\mathrm{bad},j}\lvert r_Ar_B\rvert^2\le C\,2^{j(1-\beta(0.28))}\) for \(j>J_0=12\) with \(C\le0.082\), plus near-collision constants & open (BGS-TRACE-336)\\
+H2 & core interaction constant & met (BGS-TRACE-307)\\
+H3 & Kotecký--Preiss polymer weight & open (BGS-TRACE-301); not an input: H1 implies it by Prop.~K (BGS-TRACE-332)\\
+H4 & core-to-true conversion & met (BGS-TRACE-302 via 326)\\
+H5 & composite \(h_p\): mixed classes, cross lines, partially isotropic points; or \(p\) with \(h_p\) prime & open (BGS-TRACE-303)\\
+H6 & inputs of Theorem C\(\,'\): explicit \(p_0\) and squarefree \(h_p\) & open (BGS-TRACE-304)\\
+H7\(^*\) & levels other than \(h_p\) below \(L_{\mathrm{fl}}\), growth below \(T'=1.42785\) & open (BGS-TRACE-305)\\
+H8 & wrap-around points at composite \(h_p\) & open (BGS-TRACE-306)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Thresholds and the crossover.} \(p_{\mathrm{thr}}\) is the maximum of: \(p_0\) of Theorem C\('\) (H6, not computed); \(p\ge1289\) for Prop.~X\('\); \(p\ge339\) for \(\varepsilon_{16}\); \(p\ge81\) (BGS-TRACE-227); \(p\ge165\) (BGS-TRACE-271); and the gas-versus-Robin crossover \(p_1\).
+\begin{proposition}[Gas versus Robin with all rate budgets, BGS-TRACE-333, conditional]
+Under the idealisation tails \(=Y=X_{\mathrm{cross}}=\varepsilon=0\), \(n/h_p:=1\), and with \(\delta_{\mathrm{eff}}=\delta_{\mathrm{true}}+A^{\mathrm{KP}}_{\mathrm{bad}}\), the gas lower bound exceeds the Robin bound on inherited levels for all \(p\ge3305\), first prime \(3307\), when \(C\le0.082\) (\(\delta_{\mathrm{eff}}=3.4962\cdot10^{-4}\)); for \(p\ge1726\), first prime \(1733\), when \(C\le0.04\); and for \(p\ge1402\), first prime \(1409\), when \(C\le8.8\cdot10^{-4}\) (\(\delta_{\mathrm{eff}}=7.4115\cdot10^{-6}\)). There is no violation among primes up to \(5000\).
+\end{proposition}
+The label is [P-arith] (float with exact big-integer \(K_p\) and monotonicity; reproduced in mpmath by referee lineN22). The value \(3307\) is fragile: multiplying \(A^{\mathrm{KP}}_{\mathrm{bad}}\) by \(1.01\) moves it to \(3359\). The value \(1409\) is robust up to a factor \(2\). It is conditional on H1 through \(A^{\mathrm{KP}}_{\mathrm{bad}}\). The crossover with the additive budgets (tails, \(Y\), \(X_{\mathrm{cross}}\), \(\varepsilon\), \(n/h_p\)) is not computed. The earlier ``first prime 1399'' (BGS-TRACE-318, proved under its own idealisation with \(\delta\) only) is not the threshold of Theorem~\ref{thm:lines-I-N-rsharp-v5}.
+
+\paragraph{Subsequence version.} On \(\mathcal P=\{p:h_p\text{ prime}\}\), H5 holds (cross lines included), the squarefree clause of H6 is trivial and H8 reduces to H1 [P-sketch]. So \(R'\) fails along \(m=3p\), \(p\in\mathcal P\), if H0, H1, H6 (\(p_0\) only) and H7\(^*\) hold, \(p\ge p_{\mathrm{thr}}\), and \(\mathcal P\) is infinite. Infinitude of \(\mathcal P\) is equivalent to the failure of \(R_{\mathrm{NSW}}\) (BGS-TRACE-210, open).
+
+\subsection{What is not proved}
+\label{sec:lines-I-N-limits}
+\begin{itemize}
+\item Frozen \(R'\) is not refuted, unconditionally or at any single \(p\); no single-\(p\) inequality is proved in the large-\(p\) regime.
+\item H1 is the first open input. Only the finite shells \(j\le14\) are certified, for the core functional; by Prop.~F they are not evidence for the tail.
+\item H7\(^*\) is needed even for prime \(h_p\); Theorem W covers nothing at realistic \(p\).
+\item Small-\(p\) data (exact \(W'\) tables for \(m\le17\), level data at \(m=21,33,39\)) are [N] only.
+\item Novelty is not claimed: no systematic literature search was made for prior occurrences of Lemma P\('\), the polymer-gas structure, the collision-automaton certificate or the subgroup separation lemma.
+\end{itemize}
+
+\paragraph{Formalization.} The Lean modules \path{formalization/Bgs/LineN20Arith.lean}, \path{LineN20TailArith.lean} and \path{LineN21Arith.lean} check the finite arithmetic of Lines N20 and N21 (for instance the budget sum behind \(\delta_{\mathrm{true}}\)); with the earlier Line N modules they certify arithmetic only, not the analytic arguments. They use no \texttt{sorry} and no \texttt{native\_decide}.
