@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "7bcfeaef5e18d40f8c30266c1b02855055549785",
+ "source_blob_sha": "c9e59d729a45ddb5378ca88a7f35004b938425b8",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -58,7 +58,8 @@
   "BGS-TRACE-143 through BGS-TRACE-148 were appended on 2026-10-29. The packet numbered them BGS-TRACE-138 through BGS-TRACE-143; those numbers collide with BGS-TRACE-140 through BGS-TRACE-142 already on main, so the statements start at BGS-TRACE-143. TRACE-144, TRACE-145 and TRACE-146 have Lean finite instances only. TRACE-147 is verification-pending: an independent referee replay of every Theorem 7 coefficient at 171 primes is deposited, and promotion remains a separate status decision, as for BGS-RES-022. TRACE-148 is an open conjecture. Gnutzmann-Seif 2004 derived 2 tau - 2 tau^2 diagrammatically for this ensemble; the new content is the rigorous fixed-m exact-in-p result, the complete classification including swaps, and the m<=12 expansions. The values at m=1,2,3 remain BGS-TRACE-127.",
   "BGS-TRACE-149 through BGS-TRACE-162 were appended on 2026-10-29. The packet's provisional block was BGS-TRACE-149 through BGS-TRACE-162. On main d6fa6e2a the highest TRACE id was BGS-TRACE-148, so 149 was the next free id and no renumbering was done. Historical gaps BGS-TRACE-138 and BGS-TRACE-139 were left unused. Line B had not merged, so no Line B claim ids were added as dependencies. Eight claims are proved, BGS-TRACE-153 is verification-pending, BGS-TRACE-158 is conditional, and BGS-TRACE-155, BGS-TRACE-159, BGS-TRACE-161 and BGS-TRACE-162 are open. Lean certifies finite arithmetic facts only. This does not prove BGS-TRACE-005 or BGS-BGS-001.",
   "BGS-TRACE-163 through BGS-TRACE-182 were appended on 2026-10-29. On main 502af245 the highest TRACE id was BGS-TRACE-162, so 163 was the next free id and no renumbering was done. Twelve claims are proved (163, 165, 166, 167, 168, 169, 170, 171, 172, 173, 175, 178), three are conditional (164, 174, 176), and five are open (177 numerical-only, 179, 180, 181, 182). TRACE-173 is proved only with the directed-rounding constants. Lean certifies finite arithmetic facts only. This is not progress on BGS-BGS-001 or BGS-TRACE-148.",
-  "1 November 2026 (THEOREM_DRAFT_v5 integration, referee lineN22): rows BGS-TRACE-325..333, 335, 336 appended; rows 302 (open -> proved), 322 and 323 (verification-pending -> proved) rebuilt with new method tags; 299, 300, 301, 318 re-mirrored (ledger/boundary text only). New and rebuilt rows are provisional (PENDING_INDEPENDENT_PROOF_REVIEW); Lean links certify finite arithmetic only."
+  "1 November 2026 (THEOREM_DRAFT_v5 integration, referee lineN22): rows BGS-TRACE-325..333, 335, 336 appended; rows 302 (open -> proved), 322 and 323 (verification-pending -> proved) rebuilt with new method tags; 299, 300, 301, 318 re-mirrored (ledger/boundary text only). New and rebuilt rows are provisional (PENDING_INDEPENDENT_PROOF_REVIEW); Lean links certify finite arithmetic only.",
+  "1 November 2026 (Lean batch 1, evidence/executions/20261101/lean_batch1/README.md): Lean links and lean_formalization tags added to BGS-FM-001, FM-009, FM-036, RET-004, TRACE-248, TRACE-271, TRACE-291, TRACE-297; every link is partial (see formalization_scope in claims.json) and certifies only the finite/algebraic statement named there. No state changed."
  ],
  "claims": [
   {
@@ -267,7 +268,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "finite_control"
+    "finite_control",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -276,15 +278,19 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 0,
-    "formalization": 0
+    "formalization": 2
    },
    "evidence": [
-    "supplement/fixed_map/README.md"
+    "supplement/fixed_map/README.md",
+    "evidence/executions/20261101/lean_batch1/README.md"
    ],
    "verifiers": [],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Fm001Statement.lean",
+    "formalization/Bgs/Fm001Exact.lean"
+   ],
    "ledger_status": "PROJECT PROOF + FRESH FINITE-REGRESSION",
    "boundary": "Excludes ordinary C1 centralizers/reversors and relevant affine C1 conjugacies in the stated small-coupling range; does not exclude N-dependent quantum symmetries or prove BGS.",
    "spof": "single_evidence_path_no_verifier",
@@ -550,7 +556,8 @@
     "analytic_proof",
     "exact_identity",
     "computer_certificate",
-    "author_check"
+    "author_check",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -561,19 +568,23 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 3,
+    "evidence": 4,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 2
    },
    "evidence": [
     "archive/evidence/20260924/antireversor/certificate_result.json",
     "archive/evidence/20260924/antireversor/certificate_polynomial.csv",
-    "archive/evidence/20260924/antireversor/certificate_polynomial_7.csv"
+    "archive/evidence/20260924/antireversor/certificate_polynomial_7.csv",
+    "evidence/executions/20261101/lean_batch1/README.md"
    ],
    "verifiers": [
     "computations/verification/frozen_antireversor.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Fm009TraceObstruction.lean",
+    "formalization/Bgs/Fm009CubeArith.lean"
+   ],
    "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF + EXACT INTEGER REPLAY + AUTHOR CHECK",
    "boundary": "For odd N>=3 except N=7, no arbitrary common antiunitary reversing the pair (A_N,M_N). For U_N alone excludes only algebraic-entry antiunitaries; arbitrary finite-dimensional antiunitary reversors always exist.",
    "spof": "single_reviewer_author_check_only",
@@ -6363,7 +6374,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -6372,18 +6384,21 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 2,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/certificates/locality_execution_summary.json"
+    "evidence/certificates/locality_execution_summary.json",
+    "evidence/executions/20261101/lean_batch1/README.md"
    ],
    "verifiers": [
     "computations/verification/fixed_strength_locality.py",
     "computations/cpp/fixed_strength_locality_exact.cpp"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/PellModuliArith.lean"
+   ],
    "ledger_status": "PROJECT PROOF + INDEPENDENT INTERNAL REVIEW",
    "boundary": "Pell moduli only: K through odd primes, N+F sqrt(2)=(1+sqrt(2))^K, odd parity space of dimension D=(N-1)/2=Kn. Global unfolding by the mean density D; no density-adapted unfolding, further desymmetrized sector, or local universality conclusion.",
    "spof": "no_finite_or_exact_control_layer",
@@ -6946,7 +6961,8 @@
     "exact_identity",
     "finite_control",
     "computer_certificate",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -6958,19 +6974,22 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 2,
+    "evidence": 3,
     "verifiers": 2,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "evidence/executions/20261006/corpus-revision/final/checks/noncommuting_tower.log",
-    "evidence/executions/20261006/corpus-revision/final/checks/cpp_return_word_certificate.log"
+    "evidence/executions/20261006/corpus-revision/final/checks/cpp_return_word_certificate.log",
+    "evidence/executions/20261101/lean_batch1/README.md"
    ],
    "verifiers": [
     "computations/verification/noncommuting_tower.py",
     "computations/cpp/return_word_certificate.cpp"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/RetTowerGeometry.lean"
+   ],
    "ledger_status": "PROJECT PROOF + EXACT FINITE CERTIFICATE + INDEPENDENT INTERNAL REVIEW",
    "boundary": "The explicit example only: S=[[3,4],[2,3]], r=1/96, z=(5/11,0), symbols a,b as in (RW.15). Pairwise disjointness of E, S^{-1}E, S^{-2}E, S^{-3}E is a finite exact-rational assertion (30 separation obligations, base-lobe margin 37/528), certified by the C++ integer verifier named in the section with its deposited PASS log and independently by the Python verifier; the Python exact-geometry check was replayed on the current revision on 2026-10-20 and reproduced 37/528, 30 separations and the 1/288 area bound. Nonvanishing of {g,Cg} is the point evaluation (RW.9) in the source; Gamma_T(g)=0 is (RW.10). The floating-point unitary and ODE parts of the Python verifier are falsifiers, not proof inputs. No hypothesis of BGS-RET-003 is discharged for any other data.",
    "spof": "NONE",
@@ -12452,7 +12471,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -12461,17 +12481,20 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261031/lineL/receipt.json"
+    "evidence/executions/20261031/lineL/receipt.json",
+    "evidence/executions/20261101/lean_batch1/README.md"
    ],
    "verifiers": [
     "computations/verification/lineL/code/l3_op_cert.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineLCollision.lean"
+   ],
    "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
    "boundary": "lambda = 3 + 2 sqrt2 has minimal polynomial X^2 - 6X + 1, so for v in Z^k, alpha_v = 0 iff v(X) = (X^2 - 6X + 1) E(X) with E in Z[X]. The coefficients e_j of E are carries, v_j = e_j - 6 e_{j-1} + e_{j-2}, and |e_j| <= C0g sum_i |v_i| lambda^{-|j+1-i|} with C0g = 1/(lambda - lambda^-1) (Green's function of the recursion). Hence the exact-collision sums S_k of BGS-TRACE-250 are transfer-matrix sums over carry states (e_{j-1}, e_j). Referee check: the only collision with |v_j| <= 3 at k = 6 is v = 0.",
    "spof": "unformalized_analytic_chain",
@@ -13266,7 +13289,8 @@
    "methods": [
     "analytic_proof",
     "computer_certificate",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -13276,12 +13300,13 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 5,
-    "formalization": 0
+    "formalization": 2
    },
    "evidence": [
-    "evidence/executions/20261031/lineMN/receipt.json"
+    "evidence/executions/20261031/lineMN/receipt.json",
+    "evidence/executions/20261101/lean_batch1/README.md"
    ],
    "verifiers": [
     "computations/verification/lineM/code/m_checks_v2.py",
@@ -13290,7 +13315,10 @@
     "computations/verification/lineM/referee/logs/ref_m.log",
     "computations/verification/lineN/integration_checks/lineMN_checks.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineM3Const.lean",
+    "formalization/Bgs/LineN16Arith.lean"
+   ],
    "ledger_status": "PAPER PROOF [P] ON THE LINE F CERTIFIED BOUND (BGS-TRACE-198, 199 [CA]) (STRUCTURAL NO-GO FOR POSITIVITY METHODS; NOT A REFUTATION) + CONSTANT ARITHMETIC (lineMN_checks.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineM/referee/REPORT.md; READY AFTER FIXES M-F1..M-F12, APPLIED BY THE AUTHOR IN REPORT_M_v2.md)",
    "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). m = 3p >= 495, rho = (+-2,8) only. [P on Line F [CA]] (a) h_p | h_{3p} (M1, BGS-TRACE-269) and h_p <= sqrt h_{3p}, so by M4b (BGS-TRACE-273, m >= 15) the level h_p is included. (b) Its conductor-h_p part is open in the sense of BGS-TRACE-246 (not in {1, 7} u {q, 7q : q <= c_W p^2}, not absorbed); v1's 'h_p < L_m < sqrt h' is dropped (referee M-F5d). (c) Dev_{h_p} >= -n_{h_p} |Z_rho|^2/h_p^2 is the Prop K2 per-level bound (BGS-TRACE-238); n_q = q - 2 for q || h (BGS-TRACE-228), every q | h_p is == 1 mod 2p (BGS-TRACE-230), omega(h_p) <= log h_p/log(2p+1), so n_{h_p}/h_p >= 1 - 2 omega(h_p)/(2p+1) -> 1 ([N] p <= 61: all h_p squarefree, ratio in [0.908, 1]); with the Line F F3 bound |Z_rho| >= (1/2)(1 - lambda^-m)(mu_lo^m - 3012.4), mu_lo = 1.9154712 (BGS-TRACE-198, 199) and phi <= h, the floor in units of phi is >= c (mu_lo^2/lambda^{2/3})^m >= c 1.13287^m (mu_lo^2/lambda^{2/3} = 1.1328794), exceeding the D7 demand 0.99 K_j 1.0184224^m (BGS-TRACE-225) by more than 1.11238^m (ratio 1.1123866) [constant arithmetic; lineMN_checks.py; the report's 1.13288 and 1.11239 are rounded to nearest and are registered here as the lower bounds 1.13287, 1.11238]. (d) Meaning: no positivity or Cauchy-Schwarz bound at d = h_p can force the cross part there above the D7 demand: a no-go for the METHOD, not a refutation, and it does not show that a conspiracy is realisable. (e) Prime factors q | h_p carry the same capacity statement but need not be open (23 | h_11, 47 | h_23, 79 | h_13 lie in the Weil range for large p). Not registered: 'every refutation needs a signed equidistribution theorem at h_p' ([assessment]). BGS-TRACE-206 (frozen R') is NOT refuted.",
    "spof": "single_verifier_implementation_only",
@@ -14013,6 +14041,7 @@
    "methods": [
     "analytic_proof",
     "independent_review",
+    "lean_formalization",
     "float_numerics"
    ],
    "ledger_claimed_methods": [
@@ -14023,17 +14052,20 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261031/lineN2N4/receipt.json"
+    "evidence/executions/20261031/lineN2N4/receipt.json",
+    "evidence/executions/20261101/lean_batch1/README.md"
    ],
    "verifiers": [
     "computations/verification/lineN3/referee/code/ref_n3_consts.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineN3Order.lean"
+   ],
    "ledger_status": "PAPER PROOF [P] + FLOAT CHECK [N] + INDEPENDENT REFEREE AUDIT (computations/verification/lineN3/referee/REPORT.md; READY AFTER FIXES N3-F1..N3-F11, APPLIED BY THE AUTHOR IN REPORT_N3_v2.md)",
    "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Setting: q prime, q || h_m, q | h_p, m = 3p, q = qq' split in O = Z[sqrt2]; l := lambda mod q' in F_q^*. [P] l has order exactly p: it divides p since lambda^p - 1 = 2 h_p eps^p (BGS-TRACE-277), and is not 1 since N(lambda - 1) = -4 (q odd). For beta in q minus 0 (mod q), y := beta/q in q'^{-1}/O and gamma -> Tr(gamma y) mod 1 factors through O/q' = F_q (y q' in O, Tr(O) in Z), so tau_i(beta) = Tr(lambda^i y) = s l^i / q (mod 1) for a unique s in F_q^*; on the other line the ratio is l^{-1} (N(lambda) = 1). For unit beta, tau_i = (s1 l^i + s2 l^{-i})/q with s1 s2 != 0. So the isotropic points are exactly those whose twist sequence is one geometric progression, and Zhat_beta is constant on <l>-cosets ((q - 1)/p orbits per line; cyclicity of the trace). [N] check: 4 distinct values per line at (15, 41), 17 at (21, 239).",
    "spof": "unformalized_analytic_chain",
@@ -14244,7 +14276,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -14253,15 +14286,18 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 0,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261031/lineN2N4/receipt.json"
+    "evidence/executions/20261031/lineN2N4/receipt.json",
+    "evidence/executions/20261101/lean_batch1/README.md"
    ],
    "verifiers": [],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineN4Gauge.lean"
+   ],
    "ledger_status": "PAPER PROOF [P] (UP TO A UNIMODULAR SCALAR, N4-F1) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN4/referee/REPORT.md; READY AFTER FIXES N4-F1..N4-F9, APPLIED AT INTEGRATION AS REPORT_N4_v2.md SECTION 7)",
    "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). L_tau Phi(s) = sum_n w(n) e(n tau) e(kappa n s) Phi((s + n)/lambda) on functions holomorphic near R (the lattice-of-discs space of BGS-TRACE-197 is its localisation), T_sigma Phi(s) = Phi(s + sigma), G_nu Phi(s) = e(nu s) Phi(s). [P] Direct substitution gives L_tau T_sigma = T_{lambda sigma} L_{tau - kappa lambda sigma} and L_tau G_nu = G_{nu/lambda} L_{tau + nu/lambda}. Corollary: for tau_i = t0 + a lambda^i + b lambda^{-i} (i < n), sigma_i = -a lambda^{i-1}/kappa, nu_i = b lambda^{1-i}: prod_{i<n} L_{tau_i} = T_{-lambda sigma_{n-1}} G_{-b lambda^{1-n}} L_{t0}^n G_{lambda b} T_{sigma_0} up to a unimodular scalar (T_sigma G_nu = e(nu sigma) G_nu T_sigma; N4-F1), harmless for every norm or modulus statement; on the disc space this holds whenever the gauges are below the disc margin. Isotropic twists (BGS-TRACE-291) are two-sided geometric about the sector-4 constant twist t0 = 1/2. Not registered at this integration: the single-slow-window analysis of N4 sections 3.3-3.4 (requirement G <= 1.547, leading rate 1.4468, remainder rates 1.2426 / 1.0672 / 0.9165), superseded by Line N5 (N5 v2 refereed READY in lineN6; its packet is integrated with Lines N5-N19b, mathematics/fixed-map/lineN5N18_gas_conditional.md; no N5 statement is registered except the threshold T' = 1.42785 used in H7*, BGS-TRACE-305); the 16D = 1 dominant-family identification and its [N] shares (88.9% / 62.0%).",
    "spof": "unformalized_analytic_chain",

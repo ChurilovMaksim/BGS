@@ -2946,13 +2946,18 @@
         "evidence": [
           "archive/evidence/20260924/antireversor/certificate_result.json",
           "archive/evidence/20260924/antireversor/certificate_polynomial.csv",
-          "archive/evidence/20260924/antireversor/certificate_polynomial_7.csv"
+          "archive/evidence/20260924/antireversor/certificate_polynomial_7.csv",
+          "evidence/executions/20261101/lean_batch1/README.md"
         ],
         "source": "mathematics/fixed-map/frozen_common_antireversor_certificate.md",
-        "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF + EXACT INTEGER REPLAY + AUTHOR CHECK"
+        "ledger_status": "CERTIFICATE-BACKED PROJECT PROOF + EXACT INTEGER REPLAY + AUTHOR CHECK",
+        "formalization": [
+          "formalization/Bgs/Fm009TraceObstruction.lean",
+          "formalization/Bgs/Fm009CubeArith.lean"
+        ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/frozen_common_antireversor_certificate.md to mathematics/fixed-map/frozen_common_antireversor_certificate.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
-      "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md"
+      "disposition": "Preserve the original sealed input row; admit only the phase-1 archival relocation of this claim's evidence receipts from evidence/ to archive/evidence/ (package A-plain, 23 October 2026). Paths only: state, source and every other contract field are unchanged, and the evidence list is otherwise identical in content and order. This relocation adds no theorem promotion. Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/frozen_common_antireversor_certificate.md to mathematics/fixed-map/frozen_common_antireversor_certificate.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Lean batch 1 (1 November 2026): admit the formalization links formalization/Bgs/Fm009TraceObstruction.lean, formalization/Bgs/Fm009CubeArith.lean and the appended evidence receipt evidence/executions/20261101/lean_batch1/README.md; partial Lean coverage of the finite/algebraic statements named in that receipt only; no state, title, boundary, source or other contract-field change.",
+      "review": "archive/MANIFEST-Aplain.md; archive/MANIFEST-P2MATH9A.md; evidence/executions/20261101/lean_batch1/README.md"
     },
     {
       "id": "BGS-FM-012",
@@ -3409,10 +3414,18 @@
       "id": "BGS-FM-001",
       "historical_row_sha256": "ea4d122b4e54cfe95a286a9101e34bfd96dbdf2e7a008f1e5b5b87ebd5179f1d",
       "fields": {
-        "source": "mathematics/fixed-map/fixed_model_symmetry_theorem.md"
+        "source": "mathematics/fixed-map/fixed_model_symmetry_theorem.md",
+        "formalization": [
+          "formalization/Bgs/Fm001Statement.lean",
+          "formalization/Bgs/Fm001Exact.lean"
+        ],
+        "evidence": [
+          "supplement/fixed_map/README.md",
+          "evidence/executions/20261101/lean_batch1/README.md"
+        ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/fixed_model_symmetry_theorem.md to mathematics/fixed-map/fixed_model_symmetry_theorem.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change.",
-      "review": "archive/MANIFEST-P2MATH9A.md"
+      "disposition": "Preserve the original sealed input row; admit only the Phase-2 topical relocation (P2-MATH wave 9A): source mathematics/fixed_model_symmetry_theorem.md to mathematics/fixed-map/fixed_model_symmetry_theorem.md (archive/MANIFEST-P2MATH9A.md); no status, content, or other contract-field change. Lean batch 1 (1 November 2026): admit the formalization links formalization/Bgs/Fm001Statement.lean, formalization/Bgs/Fm001Exact.lean and the appended evidence receipt evidence/executions/20261101/lean_batch1/README.md; partial Lean coverage of the finite/algebraic statements named in that receipt only; no state, title, boundary, source or other contract-field change.",
+      "review": "archive/MANIFEST-P2MATH9A.md; evidence/executions/20261101/lean_batch1/README.md"
     },
     {
       "id": "BGS-FM-003",

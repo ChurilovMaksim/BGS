@@ -172,10 +172,14 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "supplement/fixed_map/README.md"
+        "supplement/fixed_map/README.md",
+        "evidence/executions/20261101/lean_batch1/README.md"
       ],
       "verifiers": [],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Fm001Statement.lean",
+        "formalization/Bgs/Fm001Exact.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
@@ -359,12 +363,16 @@
       "evidence": [
         "archive/evidence/20260924/antireversor/certificate_result.json",
         "archive/evidence/20260924/antireversor/certificate_polynomial.csv",
-        "archive/evidence/20260924/antireversor/certificate_polynomial_7.csv"
+        "archive/evidence/20260924/antireversor/certificate_polynomial_7.csv",
+        "evidence/executions/20261101/lean_batch1/README.md"
       ],
       "verifiers": [
         "computations/verification/frozen_antireversor.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/Fm009TraceObstruction.lean",
+        "formalization/Bgs/Fm009CubeArith.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/fixed_map_frontier.tex"
       ],
@@ -4532,17 +4540,21 @@
       "dependencies": [],
       "external_dependencies": [],
       "evidence": [
-        "evidence/certificates/locality_execution_summary.json"
+        "evidence/certificates/locality_execution_summary.json",
+        "evidence/executions/20261101/lean_batch1/README.md"
       ],
       "verifiers": [
         "computations/verification/fixed_strength_locality.py",
         "computations/cpp/fixed_strength_locality_exact.cpp"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/PellModuliArith.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/ch09_locality_fixed_strength.tex"
       ],
-      "boundary": "Pell moduli only: K through odd primes, N+F sqrt(2)=(1+sqrt(2))^K, odd parity space of dimension D=(N-1)/2=Kn. Global unfolding by the mean density D; no density-adapted unfolding, further desymmetrized sector, or local universality conclusion."
+      "boundary": "Pell moduli only: K through odd primes, N+F sqrt(2)=(1+sqrt(2))^K, odd parity space of dimension D=(N-1)/2=Kn. Global unfolding by the mean density D; no density-adapted unfolding, further desymmetrized sector, or local universality conclusion.",
+      "formalization_scope": "Partial: the section 4 Pell-moduli arithmetic only (N^2 - 2F^2 = -1, s = 2F = F^-1 with s^2 = 2, (1+s)^K = 1, h = 3+2s, h^K = 1, h - 1 = 2(1+s); for K prime, order of h exactly K modulo every prime p | N, 1 - h^j and 1 + h^j units). The Weyl implementer, the multiplicity count and all spectral conclusions of Theorem C are not formalized."
     },
     {
       "id": "BGS-RES-008",
@@ -4909,17 +4921,21 @@
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261006/corpus-revision/final/checks/noncommuting_tower.log",
-        "evidence/executions/20261006/corpus-revision/final/checks/cpp_return_word_certificate.log"
+        "evidence/executions/20261006/corpus-revision/final/checks/cpp_return_word_certificate.log",
+        "evidence/executions/20261101/lean_batch1/README.md"
       ],
       "verifiers": [
         "computations/verification/noncommuting_tower.py",
         "computations/cpp/return_word_certificate.cpp"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/RetTowerGeometry.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/return_words.tex"
       ],
-      "boundary": "The explicit example only: S=[[3,4],[2,3]], r=1/96, z=(5/11,0), symbols a,b as in (RW.15). Pairwise disjointness of E, S^{-1}E, S^{-2}E, S^{-3}E is a finite exact-rational assertion (30 separation obligations, base-lobe margin 37/528), certified by the C++ integer verifier named in the section with its deposited PASS log and independently by the Python verifier; the Python exact-geometry check was replayed on the current revision on 2026-10-20 and reproduced 37/528, 30 separations and the 1/288 area bound. Nonvanishing of {g,Cg} is the point evaluation (RW.9) in the source; Gamma_T(g)=0 is (RW.10). The floating-point unitary and ODE parts of the Python verifier are falsifiers, not proof inputs. No hypothesis of BGS-RET-003 is discharged for any other data."
+      "boundary": "The explicit example only: S=[[3,4],[2,3]], r=1/96, z=(5/11,0), symbols a,b as in (RW.15). Pairwise disjointness of E, S^{-1}E, S^{-2}E, S^{-3}E is a finite exact-rational assertion (30 separation obligations, base-lobe margin 37/528), certified by the C++ integer verifier named in the section with its deposited PASS log and independently by the Python verifier; the Python exact-geometry check was replayed on the current revision on 2026-10-20 and reproduced 37/528, 30 separations and the 1/288 area bound. Nonvanishing of {g,Cg} is the point evaluation (RW.9) in the source; Gamma_T(g)=0 is (RW.10). The floating-point unitary and ODE parts of the Python verifier are falsifiers, not proof inputs. No hypothesis of BGS-RET-003 is discharged for any other data.",
+      "formalization_scope": "Partial: the section 3 finite exact-rational tower certificate (S^3, 30 separation inequalities, candidate completeness, j = 1, 2 emptiness, lobe gap 37/528, area 1/288). The bracket nonvanishing {g,Cg} != 0, Gamma_T(g) = 0 and the analytic RW3/RW7 statements are not formalized."
     },
     {
       "id": "BGS-RES-023",
@@ -8600,13 +8616,17 @@
       "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261031/lineL/receipt.json"
+        "evidence/executions/20261031/lineL/receipt.json",
+        "evidence/executions/20261101/lean_batch1/README.md"
       ],
       "verifiers": [
         "computations/verification/lineL/code/l3_op_cert.py"
       ],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineLCollision.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: lambda^2 - 6 lambda + 1 = 0, alpha_v = 0 iff (X^2 - 6X + 1) | v(X) in Z[X], the carry recursion v_j = e_j - 6e_{j-1} + e_{j-2}, and the referee check (only v = 0 with |v_j| <= 3, k = 6, indices 0..5). The Green-function carry bound with C0g = 1/(lambda - lambda^-1) and the transfer-matrix reading are not formalized."
     },
     {
       "id": "BGS-TRACE-249",
@@ -9146,7 +9166,8 @@
       "ledger_status": "PAPER PROOF [P] ON THE LINE F CERTIFIED BOUND (BGS-TRACE-198, 199 [CA]) (STRUCTURAL NO-GO FOR POSITIVITY METHODS; NOT A REFUTATION) + CONSTANT ARITHMETIC (lineMN_checks.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineM/referee/REPORT.md; READY AFTER FIXES M-F1..M-F12, APPLIED BY THE AUTHOR IN REPORT_M_v2.md)",
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261031/lineMN/receipt.json"
+        "evidence/executions/20261031/lineMN/receipt.json",
+        "evidence/executions/20261101/lean_batch1/README.md"
       ],
       "verifiers": [
         "computations/verification/lineM/code/m_checks_v2.py",
@@ -9155,8 +9176,12 @@
         "computations/verification/lineM/referee/logs/ref_m.log",
         "computations/verification/lineN/integration_checks/lineMN_checks.py"
       ],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineM3Const.lean",
+        "formalization/Bgs/LineN16Arith.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: part (c) constant arithmetic only: mu_lo^2/lambda^(2/3) >= 1.13287 and mu_lo^2/(lambda^(2/3) * 1.0184224) >= 1.11238 (real rpow statements). Parts (a), (b), (d), (e), the Prop K2 per-level bound and the Line F certified bound are not formalized."
     },
     {
       "id": "BGS-TRACE-272",
@@ -9679,13 +9704,17 @@
       "ledger_status": "PAPER PROOF [P] + FLOAT CHECK [N] + INDEPENDENT REFEREE AUDIT (computations/verification/lineN3/referee/REPORT.md; READY AFTER FIXES N3-F1..N3-F11, APPLIED BY THE AUTHOR IN REPORT_N3_v2.md)",
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261031/lineN2N4/receipt.json"
+        "evidence/executions/20261031/lineN2N4/receipt.json",
+        "evidence/executions/20261101/lean_batch1/README.md"
       ],
       "verifiers": [
         "computations/verification/lineN3/referee/code/ref_n3_consts.py"
       ],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineN3Order.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: the order statement only: for odd primes p, q with q | h_p and a square root s of 2 mod q (split q), l = image of lambda under sqrt2 -> s has order exactly p (lambda^p = 1 + 2 h_p eps^p, N(lambda - 1) = -4). The twist-sequence description and orbit count are not formalized."
     },
     {
       "id": "BGS-TRACE-292",
@@ -9839,11 +9868,15 @@
       "ledger_status": "PAPER PROOF [P] (UP TO A UNIMODULAR SCALAR, N4-F1) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN4/referee/REPORT.md; READY AFTER FIXES N4-F1..N4-F9, APPLIED AT INTEGRATION AS REPORT_N4_v2.md SECTION 7)",
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261031/lineN2N4/receipt.json"
+        "evidence/executions/20261031/lineN2N4/receipt.json",
+        "evidence/executions/20261101/lean_batch1/README.md"
       ],
       "verifiers": [],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineN4Gauge.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: the two gauge identities L_tau T_sigma = T_{lambda sigma} L_{tau - kappa lambda sigma} and L_tau G_nu = G_{nu/lambda} L_{tau + nu/lambda} (arbitrary weights, all functions, tsum form) and T_sigma G_nu = e(nu sigma) G_nu T_sigma. The geometric-twist product corollary is not formalized."
     },
     {
       "id": "BGS-TRACE-298",
