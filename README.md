@@ -1,95 +1,51 @@
-# BGS — quantum chaos and spectral universality
+# BGS: a kicked quantized cat map and the open BGS frontier
 
-[**Results**](RESULTS.md) · [Русский](README.ru.md) · [Research overview](RESEARCH.md) · [Corpus atlas](docs/corpus_atlas.md) · [Mathematical introduction](docs/reader_guide.en.md) · [Theorem index](mathematics/results.md) · [Complete manuscript](manuscript/README.md)
+[![claims](https://img.shields.io/badge/registered_claims-419-informational)](record/claim_registry.md)
+[![proved](https://img.shields.io/badge/proved-338-success)](record/claim_registry.md)
+[![conditional](https://img.shields.io/badge/conditional-21-yellow)](record/claim_registry.md)
+[![open](https://img.shields.io/badge/open-42-orange)](mathematics/open_questions.md)
+[![pending](https://img.shields.io/badge/verification--pending-17-lightgrey)](record/claim_registry.md)
+[![refuted](https://img.shields.io/badge/refuted-1-critical)](record/claim_registry.md)
+[![Lean 4](https://img.shields.io/badge/Lean_4-155_modules,_local_build_OK-blueviolet)](formalization/README.md)
+[![PDF](https://img.shields.io/badge/manuscript-PDF,_379_pages-blue)](manuscript/BGS_unified.pdf)
+[![licence](https://img.shields.io/badge/licence-MIT_+_CC_BY_4.0-lightgrey)](LICENSE_POLICY.md)
 
-The **Bohigas–Giannoni–Schmit conjecture** is a central question in quantum chaos: under appropriate dynamical and symmetry conditions, why should the microscopic energy-level statistics of deterministic chaotic systems agree with random-matrix theory? This repository develops exact mathematics, counterexamples, and reproducible verification around this question, especially for one explicitly specified quantum torus map.
+[**Results**](RESULTS.md) · [Русский](README.ru.md) · [Research brief](RESEARCH.md) · [Claim registry](record/claim_registry.md) · [Mathematical introduction](docs/reader_guide.en.md) · [Theorem index](mathematics/results.md) · [Manuscript (PDF)](manuscript/BGS_unified.pdf) · [Corpus atlas](docs/corpus_atlas.md)
 
-**Scientific status (1 November 2026):** The microscopic BGS limit for the fixed deterministic map below is **open**: fixed-strength universality (BGS-BGS-001) and the model-specific signed trace estimate (BGS-TRACE-005) are not proved. Many related theorems have project proofs in their precisely stated regimes; none is a proof of universality for all chaotic systems. Conjecture R is refuted at η = 2 (Line H). The corrected mean law R′ ([BGS-TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) is open and is not refuted. The main current result, Theorem R♯-mod v4 ([BGS-TRACE-299](mathematics/fixed-map/lineN5N18_gas_conditional.md)), is **conditional**. **[RESULTS.md](RESULTS.md)** is the generated one-page summary: proved, conditional and open results, a results table, a reader's guide and known issues. [Registered status](record/claims.json) · [Open proof obligations](mathematics/open_questions.md).
+> **Abstract.** This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified kicked, quantized cat map on the torus. **The BGS limit for this map is not proved:** fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both open. Around that target the programme registers 419 precisely scoped claims; 338 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). They include uniform trace bounds for the fixed kick, exact random-phase form factors, and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179). The current frontier is the corrected mean law R′ (BGS-TRACE-206), which is **open and not refuted**. The main recent result, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the failure of frozen R′ along m = 3p to the explicitly listed open inputs H0, H1 and H5–H8.
 
-**Kick-blind spikes (28 October 2026).** On the pure cat map, every odd return $n\ge5$ at dimension $N=u_n$ keeps the Abel pair statistic a distance greater than $1/2$ from the CUE value. The fixed kick $\tau=10^{-80}$ preserves that gap at each of the 99 odd indices $5\le n\le201$, including the 77-digit dimension $u_{201}$. This is [BGS-TRACE-117](mathematics/fixed-map/kick_blind_arithmetic_spike.md). The next odd index $n=203$ is settled by a second-order expansion: the cat-map orbit of the symbol is trace-orthogonal up to one explicit overlap, and [BGS-TRACE-118](mathematics/fixed-map/orbit_orthogonal_kick_spike.md) gives the same gap at the 78-digit dimension $u_{203}$. The next odd index $n=205$ is settled by a positive-time expansion that keeps trace orthogonality: [BGS-TRACE-119](mathematics/fixed-map/positive_time_spike.md) gives the same gap at the 79-digit dimension $u_{205}$. At $n=207$ the pure second-order center still satisfies $(1-\varepsilon_2)^2<3/4$, so that disk cannot prove the gap. The order of $C$ modulo $N$ splits the same statistic: [BGS-TRACE-120](mathematics/fixed-map/order_ladder_abel.md) puts every odd dimension with $12t(N)\le5N$ strictly above $3/4$, and puts every odd prime whose order is at least half the dimension within distance $1/2$ of the CUE value. The fixed kick preserves the short side through $10^{39}$ and the long side through $10^{26}$. The dimension $N=35$, of order $6$, is not a Pell number, and one return there lies below $3/4$. [BGS-TRACE-121](mathematics/fixed-map/order_trichotomy_abel.md) closes the remaining prime orders: every order divides $p-\varepsilon$ and is short, long, or split-half, the prime $p=7$ lies above $3/4$, and every larger split-half prime lies below $5/7$. The same depth decides every prime power. The pure map at $u_{207}$ is already above $3/4$, because its order divides $207$. None of these results proves the limit or the kicked gap at $u_{207}$. [BGS-TRACE-122](mathematics/fixed-map/crt_composite_abel.md) multiplies the trace square over the prime-power factors of every odd modulus and decides every product of two odd primes: short composite orders and the seven-family lie above $3/4$, and every remaining semiprime lies below $5/7$. The fixed kick preserves that upper gap through $10^{26}$ on $N=21$. A split full-order window and a non-short product of $3$ with a short prime do not occur. [BGS-TRACE-123](mathematics/fixed-map/squarefree_product_abel.md) places every square-free odd modulus with at least three distinct prime factors strictly above $3/4$. The fixed kick preserves that gap through $10^{39}$ when there are at least four prime factors or the modulus is a product of three primes not divisible by $15$, and through $10^{26}$ on $N=15r$. A prime square such as $315=3^2\cdot5\cdot7$ is outside that statement. [BGS-TRACE-124](mathematics/fixed-map/odd_modulus_abel.md) places every odd modulus strictly above $3/4$ or strictly below $5/7$; $315$ is short because its radical $105$ is short. The fixed kick preserves the upper gap when $8t(N)\le3N$ and $N\le10^{39}$, through $10^{26}$ on the ratio-preserving families whose pure margin exceeds $13/420$, and through $2\cdot10^{26}$ on $N=15r$. The kick is not claimed for a ceiling tower, for an inert partner $q\ge40$ at exponent one, for $15r>2\cdot10^{26}$, or at $u_{207}$. [BGS-TRACE-125](mathematics/fixed-map/uniform_orbit_overlap.md) gives the quadratic trace coefficient of the transported product at every odd Pell return $n\ge5$: $Tr(S^2)/N=n\cdot1650797/4000000$. The dimensions $u_n$ form an exponential sequence. This coefficient is the second derivative at zero coupling, not a bound on $f(1)$, and it does not decide the eigenvalues of $U_N$. The [strategy note](mathematics/fixed-map/offdiagonal_strategy.md) is not a theorem. The density of the order classes and the signed off-diagonal sum stay open. BGS-TRACE-005 and BGS-BGS-001 remain open.
+The badge counts are static and are copied from [`record/claims.json`](record/claims.json) (registry updated 2026-11-01); the registry, not this page, decides every status ([SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md)). **GitHub Actions is not running on this repository** (account billing, as of 1 November 2026), so there is no CI badge: every check quoted here was run locally, and the logs are committed under [`evidence/executions/`](evidence/README.md).
 
-**Random-phase encounter pairs (29 October 2026).** For $U=D\cdot M_p$ with Haar diagonal $D$ and $S=\begin{pmatrix}3&4\\2&3\end{pmatrix}$, [BGS-TRACE-143](mathematics/fixed-map/random_phase_encounter_pairs.md)–[146](mathematics/fixed-map/random_phase_encounter_pairs.md) give, for each fixed $m$ and every prime $p>4^m$, an exact identity $E|\mathrm{Tr}\,U^m|^2=\sum_k a_{m,k}(p)p^{-k/2}$ with $a_{m,0}=2m$, $a_{m,1}=0$, $a_{m,2}=-2m^2$ ($m\ge5$). The coefficient of $1/p$ is $-2m^2$ for every $m\ge 5$. Gnutzmann–Seif 2004 derived $2\tau-2\tau^2$ diagrammatically for this ensemble, Gnutzmann–Altland 2005 and Pluhař–Weidenmüller 2014 predict the full COE form factor non-rigorously, and Berkolaiko–Keating 1999 did exact all-pairs combinatorics for random-phase star graphs; new here is only the rigorous fixed-$m$ exact-in-$p$ result, the complete classification including swaps, and the $m\le 12$ expansions. [BGS-TRACE-147](mathematics/fixed-map/random_phase_encounter_pairs.md) records the computer-assisted expansions through $m=12$, including the fixed-$m$ deviation from the COE $\tau^3$ value at $m=5,6,8,9,12$. An independent referee engine reproduces every coefficient at $171$ primes; the claim stays verification-pending, and promotion is a separate status decision, as for BGS-RES-022. [BGS-TRACE-148](mathematics/fixed-map/random_phase_encounter_pairs.md) is the open scaling-limit conjecture. The values at $m=1,2,3$ are BGS-TRACE-127 and are not re-claimed. This does not prove BGS-TRACE-005 or BGS-BGS-001, and it does not cover the fixed kick.
+## Contents
 
-**Band-limited random kicks (29 October 2026).** For $U=e^{i\eta V_\theta}M_N$ with a fixed finite set of random cosine modes, [BGS-TRACE-149](mathematics/fixed-map/band_limited_kick_bridge.md)–[151](mathematics/fixed-map/band_limited_kick_bridge.md) prove the exact bridge $E|\mathrm{Tr}\,U^m|^2=\Psi_m(t_N)$ for every odd $N$ with $\gcd(N,D_m)=1$, its $1/N$ expansion with residue period $g'_m$ (not uniform in $\eta$ or $K$), and the orbit-pair form over period-$m$ solutions of $q_{j+1}+q_{j-1}=6q_j$; these are Line B's Theorem 1 applied for each kick realisation and the Boasman–Keating mechanism, not new. [BGS-TRACE-152](mathematics/fixed-map/band_limited_kick_bridge.md) proves that under separation of dihedral classes the strong-kick limit is $B_m^{\mathrm{sym}}$ at every residue, and [BGS-TRACE-154](mathematics/fixed-map/band_limited_kick_bridge.md) that $B_m^{\mathrm{sym}}<2m$ for every odd $m$; the instances $m\le7$ are verification-pending ([BGS-TRACE-153](mathematics/fixed-map/band_limited_kick_bridge.md)) and even $m$ is open ([BGS-TRACE-155](mathematics/fixed-map/band_limited_kick_bridge.md)). [BGS-TRACE-157](mathematics/fixed-map/band_limited_kick_bridge.md) shows the $1/N$ coefficient is odd in the residue, so it is not $-2m^2$ uniformly in $N$; its decay is conditional and Gaussian-only ([BGS-TRACE-158](mathematics/fixed-map/band_limited_kick_bridge.md)), and open for uniform phases ([BGS-TRACE-159](mathematics/fixed-map/band_limited_kick_bridge.md)). [BGS-TRACE-160](mathematics/fixed-map/band_limited_kick_bridge.md) transfers Line C (BGS-TRACE-146) to the full band up to $p^me^{-cp}$; the intermediate band and the crossover scaling are open ([BGS-TRACE-161](mathematics/fixed-map/band_limited_kick_bridge.md), [162](mathematics/fixed-map/band_limited_kick_bridge.md)). On main at d6fa6e2a the next free TRACE identifier was 149, so this block is registered as BGS-TRACE-149 through BGS-TRACE-162; the Line B packet had not merged. This does not prove BGS-TRACE-005 or BGS-BGS-001, and it says nothing about eigenvalue statistics beyond the second moment of $\mathrm{Tr}\,U^m$ at fixed $m$.
+* [Status at a glance](#status-at-a-glance)
+* [The problem](#the-problem): [what the conjecture asks](#what-the-conjecture-asks), [the exact model and target](#the-exact-model-and-target), [the frozen mean law R′](#the-frozen-mean-law-r-bgs-trace-206)
+* [Main results](#main-results) and [Theorem R♯-mod v5](#the-main-current-result-theorem-r-mod-v5-conditional)
+* [How the research lines fit together](#how-the-research-lines-fit-together)
+* [What else is established, and what is missing](#what-else-is-established-and-what-is-missing)
+* [Verification philosophy](#verification-philosophy)
+* [Repository map](#repository-map)
+* [How to reproduce](#how-to-reproduce)
+* [Known issues](#known-issues)
+* [Three reconstructed analytic results](#three-reconstructed-analytic-results)
+* [Read, reproduce, and cite](#read-reproduce-and-cite)
 
-**Resonant residues of the fixed kick (30 October 2026).** At the residues N ≡ −4 (mod h_m), the Pell phase of Line B collapses exactly ([BGS-TRACE-183](mathematics/fixed-map/resonant_residue_lineE.md)). For finitely supported kicks, Z_m is then the trace of m-independent IFS transfer operators ([184](mathematics/fixed-map/resonant_residue_lineE.md)). For the single-cosine kick 0.9 cos 2πq, the leading eigenvalue of the L-truncated operators is certified (185–186), and |W̃rest_m| > m is proved for odd m ∈ [17,39] at η = 2 ([187](mathematics/fixed-map/resonant_residue_lineE.md), computer-assisted). This is the k1-kick analogue of Conjecture R, not R itself. Refereed in a second audit: the a²-resonance law, which gives a 49-state law for the Line B kick at N ≡ ∓196 when 3 ∤ m ([194](mathematics/fixed-map/resonant_residue_lineE.md)); computer-assisted bounds for the Line B kick at m = 11 and 13 ([195](mathematics/fixed-map/resonant_residue_lineE.md)); and a conditional asymptotic failure of R along 3 ∤ m ([196](mathematics/fixed-map/resonant_residue_lineE.md)). TRACE-180 and 182 stay open; TRACE-179 (Conjecture R) is refuted as stated by Line H (below).
+## Status at a glance
 
-**Lifted transfer operators (Lines F and G, 30 October 2026).** Lifting the resonance operators to vertex and edge lattices of Hardy spaces gives trace-class operators for the full kick alphabet and an exact trace identity ([BGS-TRACE-197](mathematics/fixed-map/lifted_transfer_lineF.md)). For the single-cosine kick 0.9 cos 2πq at η = 2, the leading eigenvalue is certified in arb, |μ*| ∈ [1.9154712, 1.9154753] ([198](mathematics/fixed-map/lifted_transfer_lineF.md)), and |W̃rest_m| > m is proved for every odd m ≥ 15 ([199](mathematics/fixed-map/lifted_transfer_lineF.md), computer-assisted); this is the conclusion of the conditional [188](mathematics/fixed-map/resonant_residue_lineE.md), obtained on a different space, for the k1-kick analogue of Conjecture R, not for R itself. The same holds for the 7-mode kick when 3 ∤ m ([200](mathematics/fixed-map/lifted_transfer_lineF.md)) and at the grid points η = 1.25, 1.5, 1.75, 2.25, 2.5 from explicit m ([201](mathematics/fixed-map/lifted_transfer_lineF.md)). Line G proves a general partial-trace law for every unit ν ([203](mathematics/fixed-map/resonance_classification_lineG.md)); the dilution identity, the classification record and a corrected mean law R′ with a pre-registered m = 17 test are open ([204](mathematics/fixed-map/resonance_classification_lineG.md)–[206](mathematics/fixed-map/resonance_classification_lineG.md)). For Conjecture R itself see Line H below; the Line B kick result (196) stays conditional as stated.
+| Registered state | Claims | Meaning |
+|---|---:|---|
+| proved | 338 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
+| verification-pending | 17 | Argument or computation exists; an independent check is outstanding |
+| conditional | 21 | Proved implication from stated hypotheses that are themselves open |
+| open | 42 | Conjecture, hypothesis or programme obligation without a proof |
+| refuted | 1 | Shown false as stated (Conjecture R, BGS-TRACE-179) |
+| **total** | **419** | |
 
-**Certified 49-state spectrum for the Line B kick; Conjecture R refuted at η = 2 (Line H, 30 October 2026).** For the Line B diagonal kick f_B, which is the kick of Conjecture R, the κ lemma gives |c_b| = ½ (b even) for every odd m with 3 ∤ m, and the 49-state law extends to the full alphabet on the lifted space ([BGS-TRACE-207](mathematics/fixed-map/lineH_49state_certificate.md)). At η = 2 and s = −1 (N ≡ +196 mod h_m), the lifted operator V_0 has exactly one eigenvalue outside |z| = 1.5; it is simple and |μ*| ∈ [1.846834, 1.946835] > λ^(1/4) ([208](mathematics/fixed-map/lineH_49state_certificate.md), computer-assisted; the V_0 certificate of record is the referee's independent re-certification). Hence W̃rest_m(2)/m ≥ 1.4·10⁴ for every odd m ≥ 47 with 3 ∤ m ([209](mathematics/fixed-map/lineH_49state_certificate.md), computer-assisted), so Conjecture R ([BGS-TRACE-179](mathematics/fixed-map/derandomized_fixed_kick.md)) as stated is false; it is registered as refuted. This is a statement about R for this kick, not about BGS: BGS-BGS-001 is neither proved nor disproved. R_NSW, formerly part of TRACE-179, is registered separately as an open conjecture ([BGS-TRACE-210](mathematics/fixed-map/derandomized_fixed_kick.md)); it fails if and only if h_m is prime for infinitely many m, which is unknown. Not covered: odd m with 3 ∤ m in {17, …, 43}, every m with 3 | m, η ≠ 2, and s = +1. TRACE-196 stays conditional as stated; its conclusion for s = −1 now holds on the lifted space.
+144 non-open claims link Lean 4 files, out of 155 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
-**The polymer-gas route to frozen R′: Theorem R♯-mod v4, conditional (Lines N5–N19b, 1 November 2026).** Theorem R♯-mod v4 ([BGS-TRACE-299](mathematics/fixed-map/lineN5N18_gas_conditional.md)) states that if the inputs H0–H8 hold and B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr, then W′_{3p}/m → ∞, so frozen R′ fails along m = 3p. The inputs H1 and H3–H8 ([BGS-TRACE-300](mathematics/fixed-map/lineN5N18_gas_conditional.md)–[BGS-TRACE-306](mathematics/fixed-map/lineN5N18_gas_conditional.md)) are **open**, so this is a conditional reduction, not a refutation. H4 currently has no working route. The proved and certified ingredients include the interaction bound for H2 ([BGS-TRACE-307](mathematics/fixed-map/lineN5N18_gas_conditional.md)) and the gas-versus-Robin crossover p₁ ≥ 1390 under a stated idealisation ([BGS-TRACE-318](mathematics/fixed-map/lineN5N18_gas_conditional.md)). Several ingredients remain verification-pending ([BGS-TRACE-322](mathematics/fixed-map/lineN5N18_gas_conditional.md), [BGS-TRACE-324](mathematics/fixed-map/lineN5N18_gas_conditional.md)). Referee passes are lineN5–lineN16; the canonical statement is THEOREM_DRAFT_v4. Lean checks the arithmetic only. R′ ([BGS-TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open; BGS-TRACE-005 and BGS-BGS-001 remain open.
+## The problem
 
-**The inherited level h_p, certified Λ and Theorem C′ (Lines N2–N4, 31 October 2026).** At c = h_p the class sums are periodic-orbit
-sums over an index-4 subgroup of Fix(A^p) ([BGS-TRACE-288](mathematics/fixed-map/lineN2N4_inherited_level.md)). A pressure reduction ([289](mathematics/fixed-map/lineN2N4_inherited_level.md), [290](mathematics/fixed-map/lineN2N4_inherited_level.md)), the intertwining Lemma I
-([294](mathematics/fixed-map/lineN2N4_inherited_level.md)) and arb bounds for all four free-family Λ ([295](mathematics/fixed-map/lineN2N4_inherited_level.md)) give Theorem C′ ([296](mathematics/fixed-map/lineN2N4_inherited_level.md)): for p with h_p squarefree, which is not
-proved for any p, the unit-β part at h_p grows below the target. The isotropic lines at q ∣ h_p remain open ([298](mathematics/fixed-map/lineN2N4_inherited_level.md)). Theorem A
-([286](mathematics/fixed-map/lineN2N4_inherited_level.md)) is only an implication from an open hypothesis ([287](mathematics/fixed-map/lineN2N4_inherited_level.md)). R′ ([206](mathematics/fixed-map/resonance_classification_lineG.md))
-stays open.
-
-**Conductor structure, Theorem W⁺ and scarred conductors (Lines M and N, 31 October 2026).** Line M finds no new route to refuting
-frozen R′: open conductors at distinct m = 3p are disjoint ([BGS-TRACE-269](mathematics/fixed-map/lineMN_conductor_structure.md)), averaged hypotheses are not weaker ([270](mathematics/fixed-map/lineMN_conductor_structure.md)), and at
-the inherited level h_p no positivity method can reach the D7 demand ([271](mathematics/fixed-map/lineMN_conductor_structure.md), [275](mathematics/fixed-map/lineMN_conductor_structure.md)); M4c and M6 are open ([274](mathematics/fixed-map/lineMN_conductor_structure.md), [276](mathematics/fixed-map/lineMN_conductor_structure.md)).
-Line N gives an explicit range beyond Weil, q ≤ c_N p^{7/3} with c_N = 10^−113.80, which matters only for p ≥ 10^264.5 (Theorem W⁺,
-[280](mathematics/fixed-map/lineMN_conductor_structure.md)), and the qualitative prime range q ≤ p^C with p₀(C) effective, constants not computed ([281](mathematics/fixed-map/lineMN_conductor_structure.md)). Theorem N3 ([283](mathematics/fixed-map/lineMN_conductor_structure.md),
-refereed) shows that the conductor h_p carries the slow orbit β = 1 for every p ≥ p₀ (effective, not computed), so K2′'s conclusion holds
-without assuming frozen R′ ([284](mathematics/fixed-map/lineMN_conductor_structure.md)): the open-range target must be β-weighted. R′ ([206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
-
-**OP certified; Theorem W and K2′ without OP; the open range in frozen R′ (Line L, 31 October 2026).** The operator input OP
-([BGS-TRACE-244](mathematics/fixed-map/lineL_op_open_range.md), refereed) is now proved by a cancellation-free bound and an arb certificate ([250](mathematics/fixed-map/lineL_op_open_range.md), [251](mathematics/fixed-map/lineL_op_open_range.md)), so
-Theorem W and K2′ ([245](mathematics/fixed-map/lineL_op_open_range.md), [246](mathematics/fixed-map/lineL_op_open_range.md)) hold under the standing proved inputs (Line F/J trace representation, Theorem J, L16, the proved parts of J3, S_Z and Weil: 197, 225, 226, 227, 238, 241; the conditional J3 conclusion 231 is not used) for m ≥ m₁ (effective, not computed),
-with c_W = 10^−25.62. Line L2 shows that the remaining open range needs a mean statement H_mean ([256](mathematics/fixed-map/lineL_op_open_range.md), open), which would refute
-frozen R′ ([257](mathematics/fixed-map/lineL_op_open_range.md)); per-β, phase-blind and height arguments cannot close it ([258](mathematics/fixed-map/lineL_op_open_range.md), [260](mathematics/fixed-map/lineL_op_open_range.md), [262](mathematics/fixed-map/lineL_op_open_range.md)), and Line L3 finds the structural/recursive route blocked as well ([263](mathematics/fixed-map/lineL_op_open_range.md)–[268](mathematics/fixed-map/lineL_op_open_range.md)).
-R′ ([206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
-
-**H_arg removed in frozen R′ (Line K, 31 October 2026).** Theorem K3 ([BGS-TRACE-235](mathematics/fixed-map/lineK_harg_removal.md), refereed)
-proves that S⁺ is infinite unconditionally, so frozen R′ is false along m = 3p under the single open hypothesis H♮
-([236](mathematics/fixed-map/lineK_harg_removal.md)). H_arg ([233](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)) is bypassed, not proved.
-Further results: the exact light-cone identity at prime levels ([237](mathematics/fixed-map/lineK_harg_removal.md)), large levels absorbed by
-positivity ([238](mathematics/fixed-map/lineK_harg_removal.md)), and the Weil range, conditional on an operator input ([245](mathematics/fixed-map/lineK_harg_removal.md)).
-R′ ([206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
-
-**The d = 7 twisted coefficient in frozen R′ (Line J, 31 October 2026).** The leading d = 7 coefficient is exact
-([BGS-TRACE-221](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)): class 1:3 cancels exactly between ρ = (±2,8), while classes 2:1 and 0:1 survive.
-
-Theorem J ([225](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md), computer-assisted, refereed) shows that the frozen d = 7, (±2,8) contribution to W′/m
-is at least K_j·1.0184224^m/m in absolute value, with each sign, for some m in every 6 consecutive members of each class j mod 168
-(m ≡ 3 mod 6, m ≥ M0(j)); this is a subsequence statement. The (±2,16) members are negligible for m ≥ 243
-([227](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)).
-
-Theorem J3 ([231](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)) is **conditional**: frozen R′ is false along m = 3p under two open hypotheses
-([232](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md), [233](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md)). Unconditionally, R′ would force exponential cancellation by
-the conductor ∉ {1, 7} parts on the set S⁺ of m = 3p, which is known to be infinite only under H_arg. R′ ([206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.
-
-**Reduction of Conjecture R′ (Line I, 31 October 2026).** Conjecture R′ ([BGS-TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) is reduced exactly to three statements (E″), (T″) and (D), none of which is proved ([BGS-TRACE-213](mathematics/fixed-map/lineI_rprime_reduction.md)). The reduction rests on a dilation-coset L² law with a per-member Gauss-sum formula ([212](mathematics/fixed-map/lineI_rprime_reduction.md), with a Lean core). For d = 7, the square part of the dilation remainder is certified small for m ≥ 321 (ρ = (±2,8) only; the (±2,16) level-7 members are not controlled) ([215](mathematics/fixed-map/lineI_rprime_reduction.md)). A certified twisted radius r_tw > 1.262 > √λ/μ₀ shows that operator radii cannot control the cross part ([217](mathematics/fixed-map/lineI_rprime_reduction.md)); both certificates are computer-assisted and refereed. R′ stays open. The amended Conjecture R′_A ([220](mathematics/fixed-map/lineI_rprime_reduction.md)) is open, with heuristic evidence only.
-
-**Fixed diagonal kick (29 October 2026).** Line B is the fixed-$m$, fixed-kick derandomized analogue of the random-phase short-time results, for $U=K_\eta M_N$ with the diagonal part of the repository kick. Proved: [BGS-TRACE-163](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-165](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-166](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-167](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-168](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-169](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-170](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-171](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-172](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-173](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-175](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-178](mathematics/fixed-map/derandomized_fixed_kick.md). Conditional: [BGS-TRACE-164](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-174](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-176](mathematics/fixed-map/derandomized_fixed_kick.md). Open: [BGS-TRACE-177](mathematics/fixed-map/derandomized_fixed_kick.md) (numerical-only), [BGS-TRACE-179](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-180](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-181](mathematics/fixed-map/derandomized_fixed_kick.md), [BGS-TRACE-182](mathematics/fixed-map/derandomized_fixed_kick.md). BGS-TRACE-173 is proved only with the directed-rounding constants; the authors' float constants are excluded. Nothing is proved at τ = m/N = O(1). All results are fixed-m (diagonal / below Ehrenfest). This is not progress on BGS-BGS-001 or BGS-TRACE-148. "B_m → 2m" is not claimed. Theorem N covers a finite list of certified NSW primes, and the infinitude of NSW primes is open. The Theorem D_cert arithmetic is IEEE float with an a-priori error bound (plus arb coefficients), not full interval arithmetic, until the full directed-rounding rerun. (Second-reader annotation, not part of the referee's verbatim text: that rerun has now been done, 93/93; non-claim 8 still applies to the authors' float grid, and BGS-TRACE-173 is proved with the directed-rounding constants only.) On main at 502af245 the highest registered TRACE id was BGS-TRACE-162, so BGS-TRACE-163 was the next free id and the block was not renumbered.
-
-**Unitary short-time value for momentum phases (29 October 2026).** [BGS-TRACE-140](mathematics/fixed-map/momentum_phase_cue.md) proves that Haar phases in position and in momentum give $E|\mathrm{Tr}\, U^m|^2\to m$ for each fixed $m\ge 3$, on odd primes with $\delta\not\equiv -1$, with an explicit error of order $(m!)^2/p$. The same window reaches $m\le c\log p/\log\log p$ for $c<1/2$. [BGS-TRACE-141](mathematics/fixed-map/momentum_phase_cue.md) gives the moment limit $k!\,m^k$. [BGS-TRACE-142](mathematics/fixed-map/momentum_phase_cue.md) identifies the Gaussian main term $m(1+e^{-vm})$; the non-injective remainder is not bounded, so the limit is verification-pending. The odd part of the maintained symbol has energy $9/125000$. This is not the fixed kick and not the sixteen-phase ensemble. BGS-TRACE-005 and BGS-BGS-001 remain open.
-
-**Fixed-time limits (29 October 2026).** [BGS-TRACE-132](mathematics/fixed-map/hyperbolic_short_time_limit.md) gives the fixed-time limits for every hyperbolic matrix. Haar diagonal phases tend to $2m$ for each $m\ge 3$, with an explicit error. The antiunitary $\Theta'=DEK_0$ reverses $DM_N$ for every such matrix. A finite cosine with $\eta=o(N^{-2/3})$ tends to $1$ along odd $N$ coprime to $\beta(2-u_m)$, along $N$ divisible by $7$ (e.g. $35,77,91,707$) the time-$3$ kernel has order at least $49$, so the limit $1$ fails when $\gcd(N,\beta(2-u_m))>1$. Sending $\eta\to\infty$ first, with frequencies $1$ through $m$ present, recovers $2m$. Row inversion tends to $m$. A momentum sine is not identified, and the orthogonal-class name remains a heuristic for $\Theta'$. BGS-TRACE-005 and BGS-BGS-001 remain open.
-
-**Revival closure law (29 October 2026).** [BGS-TRACE-133](mathematics/fixed-map/revival_closure_law.md)–[135](mathematics/fixed-map/revival_closure_law.md) prove, for the position-diagonal kick ($\sigma_d=13203/32000$), the twisted closure formula, a pointwise bound at the scalar return with its limit along the Bonechi–De Bièvre minimal-period sequence, and the half-period parity reduction. The explicit bound of BGS-TRACE-134 gives no information at any computable $N$: at $\lambda=1/4$ it first drops below $1$ near $N\approx 10^{191}$, so only the limit is proved. [BGS-TRACE-136](mathematics/fixed-map/revival_closure_law.md) and [BGS-TRACE-137](mathematics/fixed-map/revival_closure_law.md) are open conjectures for even and odd order; Monte Carlo rows are diagnostics only. BGS-TRACE-005 and BGS-BGS-001 remain open.
-
-**Hyperbolic diagonal form factor (29 October 2026).** [BGS-TRACE-131](mathematics/fixed-map/hyperbolic_diagonal_form_factor.md) extends the phase average from one cat map to every hyperbolic matrix in $\mathrm{SL}(2,\mathbb Z)$. For odd $N$ coprime to the upper-right entry, the quantization is unitary and flat, and symmetric exactly when the diagonal entries agree modulo $N$. The antiunitary $\Theta'=DEK_0$ reverses the kicked propagator for every such matrix. A finite cosine kick has phase average $|\ker|+\eta^2 D_2+\rho$, with an explicit remainder. The prime kernel is read from the trace when the prime does not divide that entry. At an identity revival the second-order coefficient is $-m(\sigma-\sigma_0)p^2$. This is not the all-order revival law and not a fixed-time limit. BGS-TRACE-005 and BGS-BGS-001 remain open.
-
-**Local antiunitary for a position-diagonal kick (29 October 2026).** [BGS-TRACE-130](mathematics/fixed-map/sixteen_phase_symmetry.md) proves that for every real diagonal kick, including every position-diagonal realization, the antiunitary $\Theta=DK_0$ satisfies $\Theta^2=1$ and $\Theta U\Theta^{-1}=U^\dagger$. The orthogonal-class name is the heuristic for that antiunitary. It is not a COE form factor, and it does not exclude a CUE form factor. Each of the rows $\ell=\pm 1$ has energy $9/160000$, with $4000 c_{1,k}=(-3-4i)r(k)$. The full symbol fails to be real for almost every phase. The momentum sine has symbol energy $1/2$ and leaves the antiunitary argument. BGS-TRACE-005 and BGS-BGS-001 remain open.
-
-**Scalar-return orbit sum (29 October 2026).** [BGS-TRACE-129](mathematics/fixed-map/scalar_return_bessel.md) gives the phase average of the classical orbit sum for a position-diagonal kick at a return $S^m\equiv I$. That identity is not the quantum sixteen-phase average. The average is a product of Bessel factors $J_0$. Its degree-two jet is $\exp(-m\sigma_{\mathrm{diag}}\eta^2)$. The degree-four gap is an additive count on the position orbit, and the exponential is not an identity at $\eta^2\sigma m$ of order one. Time one equals $1+\rho_1$ inside the perturbative window. Each of the rows $\ell=\pm 1$ has energy $9/160000$. A referee sample differs from the classical average by ≈1.7 at $N=11$ and by up to ≈6 at $N=29$ ($\eta=2$). No COE or CUE limit is proved. BGS-TRACE-005 and BGS-BGS-001 remain open.
-
-**Short-time diagonal-phase limits (29 October 2026).** [BGS-TRACE-128](mathematics/fixed-map/diagonal_phase_short_time.md) gives the fixed-time limit of the cat map times independent uniform phases on the $N$ position sites. For each $m\ge 3$ the averaged squared trace tends to $2m$, with an explicit gap from the dihedral main term. Inverting the rows by $x\mapsto x^{-1}$ on an odd prime changes the limit to $m$. Neither bound reaches a power of $N$. This is not the sixteen-phase ensemble and not the fixed kick. BGS-TRACE-005 and BGS-BGS-001 remain open.
-
-**Diagonal random-phase form factor (29 October 2026).** [BGS-TRACE-127](mathematics/fixed-map/diagonal_phase_form_factor.md) gives the exact averaged squared trace of the cat map times independent uniform phases on the $N$ position sites, at times one, two and three, together with the bound $m!$ at every time. The pure kernel is $1$ at time two and is $49$ or $1$ at time three according as $7$ divides the odd modulus. The time-three limit is $6$, not the CUE value $3$. This is not the sixteen-phase ensemble and not the fixed kick. BGS-TRACE-005 and BGS-BGS-001 remain open.
-
-**Phase-averaged form factor (29 October 2026).** For the auxiliary ensemble in which the 16 mode pairs of the kick carry independent uniform phases, [BGS-TRACE-126](mathematics/fixed-map/interaction_phase_form_factor.md) gives the exact order-two expansion of the averaged squared trace, with an explicit Gauss-sum coefficient and an operator-norm remainder. At an odd prime $p$ the second-order revival coefficient is $-m(\sigma-\sigma_0(p))p^2$, where $\sigma_0(p)$ is the energy of the symbol modes congruent to $0$ modulo $p$: $\sigma_0(3)=81/64000$, $\sigma_0(5)=1/320000$, $\sigma_0(7)=81/200$, and $\sigma_0(p)=0$ for every prime $p\ge 11$. The fixed kick has a linear term, nonzero at $N=11$, $m=3$. Parity and position-basis conjugation fail for the kicked propagator when $0<|\eta|<\pi/B$, except at dimension $7$, where $A_7=(9/10)I$. No revival limit is proved. BGS-TRACE-005 and BGS-BGS-001 remain open.
-
-![BGS research logic: exact model, proved reductions, and outstanding signed spectral comparison](assets/figures/bgs_frontier.svg)
-
-*Research map, not a chain of proved implications: the final arrow is the missing mathematical step.*
-
-*GPT 6 and Muse Spark 1.3 were used for repository work, verification, and code implementation.*
-
-## What the conjecture asks
+### What the conjecture asks
 
 Bohigas, Giannoni and Schmit's [1984 paper](https://doi.org/10.1103/PhysRevLett.52.1) connected chaotic quantum spectra with universal random-matrix fluctuations. A rigorous theorem needs a specified quantum family, the correct symmetry sector, a justified unfolding, and a local correlation limit. Classical hyperbolicity alone does not automatically guarantee a particular symmetry class or a universal spectrum.
 
@@ -105,7 +61,7 @@ K(x,y)=\frac{\sin\pi(x-y)}{\pi(x-y)},
 
 *Analytic benchmark curves, **not measured data** from the deterministic map. The figure depicts pair correlation, not the nearest-neighbour spacing distribution.*
 
-## The exact model and target
+### The exact model and target
 
 For odd $N\ge3$, the maintained family is
 
@@ -132,6 +88,108 @@ L_N(s)=\frac{1}{N^2}\sum_{m\ge1}e^{-2sm/N}
 The full [BGS-TRACE-005 obligation](mathematics/open_questions.md#b-prove-heisenberg-scale-desymmetrized-joint-trace-estimates) is stronger: correctly desymmetrized **signed factorial joint-trace comparison** for every fixed order and every compactly supported smooth Fourier test, at powers $m\asymp N$. The absolute value is taken **after the complete Fourier sum**, rather than term by term. The [trace-to-local-statistics bridge](mathematics/trace-bridge/trace_to_local_statistics_bridge.md) explains the further tightness/extension conditions.
 
 The [operator-resolution continuation](mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) transfers the original-family pair test through $O(N^{-2})$ matrix error using TRACE-113; it does not determine that limit. The complementary [short-trace barrier](mathematics/fixed-map/balanced_rounding_research_20261027.md) shows why polynomially many short traces and coarse quantum data alone are insufficient for a general quantizer. The [review](record/trace005_continuation_review.md) separates these author-checked proofs from prior results and remaining candidates.
+
+### The frozen mean law R′ (BGS-TRACE-206)
+
+The recent lines work with a simpler single-cosine kick, the k1 kick 0.9 cos 2πq at η = 2, with λ = 3 + 2√2. For odd m the Pell-type modulus h_m satisfies λ^m ≡ 1 (mod h_m). Conjecture R for the Line B kick (BGS-TRACE-179) predicted that a renormalised trace deviation is o(m). Line H shows that it fails at η = 2 (BGS-TRACE-209, computer-assisted), so BGS-TRACE-179 is registered as **refuted**. Line G then proposed a corrected mean law R′ for the k1 kick ([BGS-TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)). It subtracts the resonant contributions of a fixed primary set P* = {(±2, 8), (±2, 16)} at every included level d | h_m with 1 < d ≤ √h_m, and asserts that the remaining deviation W′_m is o(m).
+
+The definition is **frozen**: inclusion rule, members and normalisation are fixed in the claim boundary, so later lines cannot tune it. Lines I–N study whether frozen R′ holds along m = 3p (p prime). **R′ is open. It is neither proved nor refuted.**
+
+## Main results
+
+A selection, with registry states. The complete list is [`record/claim_registry.md`](record/claim_registry.md); the generated summary is [RESULTS.md](RESULTS.md). Tags: [P] paper proof, [CA] interval or ball arithmetic, [CA-fp] floating point with derived a-priori rounding bounds, [P-arith] arithmetic implication, [H] hypothesis.
+
+| Claim | State | Result | Lean | Source |
+|---|---|---|---|---|
+| BGS-BGS-001 | **open** | Fixed-strength microscopic BGS universality for the maintained frozen map | — | [model](mathematics/fixed-map/fixed_map_resolvent_frontier.md) |
+| BGS-TRACE-005 | **open** | Signed Heisenberg-scale desymmetrized joint-trace estimate (the model-specific gap to BGS) | statement only | [open questions](mathematics/open_questions.md) |
+| BGS-TRACE-113 | proved | Uniform power-trace bound for the original fixed-kick family (strict pressure gap) | — | [note](mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) |
+| BGS-TRACE-117 | proved | Kick-blind arithmetic spikes: the Abel pair statistic stays more than 1/2 from CUE at odd Pell returns | yes | [note](mathematics/fixed-map/kick_blind_arithmetic_spike.md) |
+| BGS-TRACE-124 | proved | Every odd modulus lies above 3/4 or below 5/7 (pure cat map) | yes | [note](mathematics/fixed-map/odd_modulus_abel.md) |
+| BGS-TRACE-127 | proved | Diagonal random-phase form factor at times one, two and three | yes | [note](mathematics/fixed-map/diagonal_phase_form_factor.md) |
+| BGS-TRACE-143 | proved | Haar diagonal-phase cat map = random-phase DFT star graph; exact encounter-pair identity (Line C) | — | [note](mathematics/fixed-map/random_phase_encounter_pairs.md) |
+| BGS-TRACE-149 | proved | Band-limited random kick: exact trace bridge (Line D) | yes | [note](mathematics/fixed-map/band_limited_kick_bridge.md) |
+| BGS-TRACE-173 | proved | Certified exponential decay of χ_m for η in [1, 81.574] (computer-assisted; Line B) | yes | [note](mathematics/fixed-map/derandomized_fixed_kick.md) |
+| BGS-TRACE-209 | proved | Conjecture R fails for the Line B kick at η = 2: W̃rest_m/m ≥ 1.4·10⁴ for odd m ≥ 47, 3 ∤ m (Line H, [CA]) | yes | [note](mathematics/fixed-map/lineH_49state_certificate.md) |
+| BGS-TRACE-179 | **refuted** | Conjecture R as stated (o(m) uniformly on compact η-ranges) | — | [note](mathematics/fixed-map/derandomized_fixed_kick.md) |
+| BGS-TRACE-206 | **open** | Conjecture R′ (corrected mean law, k1 kick, η = 2) | — | [note](mathematics/fixed-map/resonance_classification_lineG.md) |
+| BGS-TRACE-213 | proved | Line I: exact reduction of R′ to (E″), (T″) and the dilation remainder (D), none of which is proved | — | [note](mathematics/fixed-map/lineI_rprime_reduction.md) |
+| BGS-TRACE-225 | proved | Theorem J: the d = 7 contribution oscillates with growth ≥ 1.0184224^m (computer-assisted) | — | [note](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) |
+| BGS-TRACE-235 | proved | Theorem K3: S⁺ contains infinitely many m = 3p in every unit class mod 56 | yes | [note](mathematics/fixed-map/lineK_harg_removal.md) |
+| BGS-TRACE-244 | proved | Operator input OP for the four families (arb certificate) | yes | [note](mathematics/fixed-map/lineK_harg_removal.md) |
+| BGS-TRACE-257 | proved | H_mean implies frozen R′ is false along m = 3p (implication only; H_mean, BGS-TRACE-256, is open) | — | [note](mathematics/fixed-map/lineL_op_open_range.md) |
+| BGS-TRACE-283 | proved | Theorem N3: scarred conductors carry the slow orbit β = 1 | yes | [note](mathematics/fixed-map/lineMN_conductor_structure.md) |
+| BGS-TRACE-296 | proved | Theorem C′: unit-β part at h_p, for p with h_p squarefree (squarefreeness is not proved for any p) | yes | [note](mathematics/fixed-map/lineN2N4_inherited_level.md) |
+| **BGS-TRACE-325** | **conditional** | **Theorem R♯-mod v5**: conditional reduction of "frozen R′ fails along m = 3p" to H0, H1, H5–H8 | yes | [note](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| BGS-TRACE-326 | proved | H4 met: δ_true ≤ 5.0313·10⁻⁶ for all G ([P] + [CA-fp]) | yes | [note](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| BGS-TRACE-332 | conditional | Prop. K: H1 implies H3 (Kotecký–Preiss weight a = a(C)) | yes | [note](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| BGS-TRACE-333 | conditional | Gas vs Robin crossover with all rate budgets: first prime 3307 (C ≤ 0.082) / 1409 (C ≤ 8.8·10⁻⁴) | yes | [note](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+
+### The main current result: Theorem R♯-mod v5 (conditional)
+
+The canonical statement is [`THEOREM_DRAFT_v5.md`](computations/verification/lineN_theorem_draft/THEOREM_DRAFT_v5.md) (author v5 with the final referee lineN22 edits E1–E8); the registered claim is BGS-TRACE-325, and the manuscript chapter is [`lines_I_N_gas_theorem.tex`](manuscript/unified_sections/lines_I_N_gas_theorem.tex). For p prime and m = 3p, put
+
+```math
+B_p=\frac{n}{h_p}\Big[\big(2(1+\mathrm{Re}\,\Lambda'_{\mathrm{lo}})^{p}\,e^{-p(\delta+A_{\mathrm{bad}}^{\mathrm{KP}})}-1-|X_{\mathrm{tail}}|-|X_{\mathrm{cross}}|-|Y|-e^{-0.28p}\big)^{2}-1\Big]-I_p-\varepsilon_{16}-\varepsilon_{\mathrm{fl}}-\varepsilon_{\mathrm{other}} .
+```
+
+The gas lower bound inside the bracket is 2(1 + Re Λ′)^p e^{−p(δ + A_bad)} − 1, with Re Λ′_lo = 6.234·10⁻⁴ (BGS-TRACE-310), δ = δ_true ≤ 5.0313·10⁻⁶ (BGS-TRACE-326) and A_bad = A_bad^KP, the Kotecký–Preiss bad-cluster activity of Prop. K (BGS-TRACE-332), which depends on the constant C of H1. I_p = σ(K_p)/K_p − 1 is bounded by Robin's inequality. Under H0, H1 and H5–H8 at p, for p ≥ p_thr,
+
+```math
+\frac{W'_{3p}}{m}\;\ge\;-4+\frac1m\sum_{\rho=(\pm2,8)}S_\rho\,B_p,\qquad S_\rho\ge c\,1.13287^{m},
+```
+
+so **if B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr, then W′_{3p}/m → ∞ and frozen R′ is false along m = 3p.** The theorem is [P mod inputs]; the step that puts A_bad^KP in the exponent is [P-sketch], and referee lineN22 judged it correct and necessary. It supersedes v4 (BGS-TRACE-299).
+
+| Input | Content | Registry state |
+|---|---|---|
+| H0 | Standing package (Line F/J/J3/L16 trace representation; Prop. X′ architecture, BGS-TRACE-324; n_cert) | taken as given; BGS-TRACE-324 is verification-pending |
+| H1 | Re-scoped by Line N20: bad-cluster joint (A, B) second moment, C ≤ 0.082 at J₀ = 12, plus near-collision constants | **open** ([BGS-TRACE-336](mathematics/fixed-map/lineN5N18_gas_conditional.md)) |
+| H2 | Core interaction constant δ_int^core ≤ 5.14476·10⁻⁷ | met (BGS-TRACE-307, proved, [CA-fp]) |
+| H3 | Kotecký–Preiss polymer weight | **open** (BGS-TRACE-301); no longer an input, since H1 implies it by Prop. K (BGS-TRACE-332, conditional) |
+| H4 | Core-to-true conversion | **met**: δ_true ≤ 5.0313·10⁻⁶ (BGS-TRACE-302 via BGS-TRACE-326, proved) |
+| H5 | Composite h_p, or p with h_p prime | **open** (BGS-TRACE-303) |
+| H6 | Inputs of Theorem C′: explicit p₀, squarefree h_p | **open** (BGS-TRACE-304) |
+| H7* | Levels other than h_p, growth below T′ = 1.42785 | **open** (BGS-TRACE-305) |
+| H8 | Wrap-around points at composite h_p | **open** (BGS-TRACE-306) |
+
+**Crossover (BGS-TRACE-333, conditional on H1, [P-arith]).** Under the idealisation tails = Y = X_cross = ε = 0, n/h_p := 1, the gas bound beats the Robin bound on inherited levels from the **first prime 3307** when C ≤ 0.082. This value is fragile: +1 % in A_bad^KP moves it to 3359. With C ≤ 8.8·10⁻⁴ the first prime is **1409**, and that value is robust up to a factor 2 in A_bad^KP. The crossover with the additive budgets is not computed.
+
+> **R′ is NOT refuted.** Theorem R♯-mod v5 is a reduction. Its inputs H0, H1 and H5–H8 are open, and H7* is needed even when h_p is prime. No single-p inequality is proved in the large-p regime, and small-p data are numerical only.
+
+## How the research lines fit together
+
+```mermaid
+flowchart TD
+  MODEL["Kicked quantized cat map<br/>BGS-BGS-001 and BGS-TRACE-005: open"]
+  EARLY["Earlier corpus, Sept to Oct 2026<br/>uniform trace bounds, Abel spikes, random-phase form factors"]
+  B["Line B: fixed diagonal kick<br/>Conjecture R stated"]
+  C["Line C: random-phase encounter pairs"]
+  D["Line D: band-limited random kicks"]
+  E["Line E: resonant residues"]
+  FG["Lines F and G: lifted transfer operators<br/>R prime stated"]
+  H["Line H: 49-state certificate<br/>Conjecture R refuted at eta = 2"]
+  RP["Frozen R prime, BGS-TRACE-206<br/>OPEN, not refuted"]
+  I["Line I: exact reduction of R prime"]
+  J["Lines J and J3: level-7 coefficient, Theorem J"]
+  K["Line K: H_arg removed, Theorem K3, OP"]
+  L["Lines L to L3: OP certified, the open range"]
+  MN["Lines M and N0 to N4: conductors, inherited level h_p, Theorem C prime"]
+  GAS["Lines N5 to N21: polymer gas, delta_true, crossover"]
+  T["Theorem R-sharp-mod v5, BGS-TRACE-325<br/>CONDITIONAL"]
+  OPEN["Open inputs H0, H1, H5 to H8"]
+  MODEL --> EARLY
+  MODEL --> B
+  MODEL --> C
+  MODEL --> D
+  B --> E --> FG --> H
+  FG --> RP
+  RP --> I --> J --> K --> L --> MN --> GAS --> T
+  OPEN -.-> T
+  T -.->|"if B_p is at least kappa infinitely often"| RP
+```
+
+*A research map, not a chain of proved implications. The dashed arrows are conditional. The repository labels its fixed-map lines B to N; there is no "Line A" label, and the earlier corpus is shown as one node.*
 
 ## What else is established, and what is missing
 
@@ -164,39 +222,97 @@ The cyclic linear term has normalized shape $x=m/N$, whereas the CUE reference i
 
 *Analytic comparison (no simulation). The shaded region is the magnitude of the negative correction required relative to the cyclic linear contribution.*
 
-## Recent results and their boundaries
+## Verification philosophy
 
-The latest fixed-map results have project proofs with explicit time and scale limits:
+**One authority for status.** Only the registry state in [`record/claims.json`](record/claims.json) counts. Notes, this README, RESULTS.md and the manuscript are views of it. The [dated ledger](record/claim_ledger.md) explains each change, and [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md) says how to resolve conflicts.
 
-| Result | Established scope | Boundary |
-|---|---|---|
-| [Inserted trace, TRACE-109](mathematics/fixed-map/finite_grid_one_step_trace.md) | Finite-grid corrected amplitude; inserted trace error $O(N^{-1})$ | Selected insertion, not the full signed hierarchy |
-| [Spectral distance, TRACE-110](mathematics/fixed-map/spectral_orbit_distance.md) | Global $O(1/\log N)$ matching; matching lower order along Pell dimensions | Macroscopic matching does not imply microscopic statistics |
-| [Displacement density, TRACE-112](mathematics/fixed-map/displacement_density_trace_bound.md) | Uniform classical density control and an independent logarithmic-time trace route | No Heisenberg-time cancellation |
-| [Uniform power trace, TRACE-113](mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) | $|\mathrm{Tr}\,U_N^m|\le Ca^m$, $1<a<\sqrt{3+2\sqrt2}$, with one size threshold for all $m$ | The bound is uninformative at $m\asymp N$ |
+**Evidence tags.** Inside notes and theorem drafts:
 
-The [fourteen-round research edition](mathematics/spectral_research/README.md)
-preserves 535 supplied source units with thematic reading paths and a
-[standalone remaining task](record/remaining_breakthrough_task_20261021.md).
+| Tag | Meaning |
+|---|---|
+| [P] | Paper proof, written out (and refereed where stated) |
+| [P-sketch] | Argument complete in outline only |
+| [CA] | Computer-assisted with rigorous ball or interval arithmetic (arb) |
+| [CA-fp] | IEEE binary64 with derived a-priori rounding bounds under the stated model; **not** [CA] |
+| [P-arith] | Arithmetic implication, checked in floating point with exact integer parts and monotonicity |
+| [N] | Numerics without error control: evidence, never proof, and never registered as proved |
+| [H] | Hypothesis or heuristic |
 
-The auxiliary phase ensemble uses a Fourier seed of dimension $N=p^{2d}$,
-odd prime $p$, and independent uniform phases. Its scaled trace time
-$t=m/N$ is separate from the fixed kick strength in the deterministic model.
+A conditional theorem is exactly as strong as its weakest open input. Superseded or withdrawn values are kept in the drafts' errata sections and are not cited.
 
-| Theorem family | Established scope | Remaining implication |
-|---|---|---|
-| [Signed phase cluster sums](mathematics/trace-bridge/phase_ensemble_continuation.md) | Author proofs, registered verification pending: total-defect-two sum for $0<t<1$; arbitrary counts of clusters of individual defects at most two for $0<t<1/9$, with uniform $O(N^{-1})$ error | Higher connected types and frozen-model transfer |
-| [Positive Cauchy projections](mathematics/trace-bridge/cauchy_positive_source_boundary.md) | Author proofs, registered verification pending: exact scalar laws and explicit separation of full matrix laws | Positive projections alone do not identify the spectral law |
-| [Abel clock rigidity](mathematics/trace-bridge/abel_clock_rigidity.md), [flat collision law](mathematics/trace-bridge/wick_collision_poisson.md) | Sharp square-root stability and auxiliary Wick ratio $B/G\to e^{-\alpha^2}$ | Physical non-flat signed comparison |
-| [All-order process implication](mathematics/trace-bridge/all_order_process_closure.md) | Complete signed hierarchy implies local Sine2 and local moment control | The physical hierarchy remains open |
-| [Full-depth feedback](mathematics/trace-bridge/unconditional_feedback_flatness.md) | Entry/intensity bounds and fixed-order clocks under named startup inputs and cutoff | Initial microscopic law and signed transfer |
+**Lean 4 formalization.** [`formalization/`](formalization/README.md) holds 155 modules under `formalization/Bgs` (2186 `theorem`/`lemma` declarations, counted by grep), pinned to `leanprover/lean4:v4.33.1` and Mathlib through `lake-manifest.json`. Lean checks the finite and arithmetic kernels named in each claim boundary, not the analytic arguments; 144 non-open claims link a Lean file. Build:
 
-The rows distinguish proved project results from deposited author proofs whose
-registered verification is pending. Consult the [complete registry](record/claim_registry.md)
-for each state and its exact boundary.
-The Gaussian benchmark is classical; external priority is not established.
-[Detailed research brief](RESEARCH.md) · [Review history](record/README.md) ·
-[Repository reconciliation](record/audits/repository_recheck_20261022/report.md).
+```sh
+cd formalization && lake exe cache get && lake build Bgs
+```
+
+The last full local build ended "Build completed successfully (8862 jobs)" ([log](evidence/executions/20261101/lineNgas/v5_integration/lake_build_Bgs.log)); this PR does not change any Lean file. **No `sorry`** is allowed in the active graph, and the newer modules print their axioms (at most `propext`, `Classical.choice`, `Quot.sound`). **Legacy `native_decide`:** 88 uses in 12 older modules trust the compiler beyond the kernel axioms. The claim boundaries disclose this, and the Line B–N modules use none.
+
+**Referee audits.** Every line from E onwards has an independent internal referee pass. There are 24 `referee/` folders under [`computations/verification/`](computations/verification/lineN16/referee/REPORT.md) (lineE to lineN16), and the final Line N referees lineN20, lineN21, lineN21b and lineN22 are in [`evidence/executions/20261101/lineNgas/referee/`](evidence/executions/20261101/lineNgas/v5_integration/README.md). Referee findings are applied verbatim and listed in the drafts. None of this is external peer review.
+
+**Dependency gate.** No proved claim may depend on a non-proved claim. The gate [`proved_deps_gate_v5.py`](computations/verification/lineN_theorem_draft/integration_checks/proved_deps_gate_v5.py) is strict for BGS-TRACE-244..336, with one exception: the frozen definition of BGS-TRACE-206. Its last run returned GATE_OK ([log](computations/verification/lineN_theorem_draft/integration_checks/proved_deps_gate_v5.log)). Seven older violations on main are recorded there as out of scope.
+
+**Frozen packets.** Author and referee packets under `computations/verification/line*/` are kept verbatim and pinned by sha256 ([registry](computations/maintenance/frozen_evidence_packets.json)). They record what was run; they are not maintained entry points.
+
+## Repository map
+
+```sh
+BGS/
+├── README.md, README.ru.md   # this page (English / Russian)
+├── RESULTS.md                # generated one-page summary (render_results.py)
+├── RESEARCH.md               # dated research brief
+├── SOURCE_OF_TRUTH.md        # which surface decides what
+├── record/                   # claims.json (the registry), ledger, errata, audits, generated views
+├── mathematics/              # maintained proofs and their exact boundaries
+│   └── fixed-map/            # the model, Lines B to N notes (line*.md)
+├── computations/
+│   ├── verification/         # checkers, audits; line*/ = frozen author and referee packets
+│   │   └── lineN_theorem_draft/   # THEOREM_DRAFT v1 to v5, V5 packet, dependency gate
+│   └── maintenance/          # renderers, manuscript builder, unit tests (tests/)
+├── formalization/            # Lean 4 project (Bgs.lean, Bgs/*.lean, lakefile.toml)
+├── manuscript/               # unified TeX source and the tracked BGS_unified.pdf
+│   └── unified_sections/     # one .tex per section, incl. lines_I_N_gas_theorem.tex
+├── evidence/                 # dated receipts: commands, hashes, logs
+├── literature/               # exact-source checks, bibliography, priority notes
+├── docs/                     # reader guides, conventions, corpus atlas
+├── papers/                   # focused candidate paper scopes (not submissions)
+├── supplement/               # supplementary fixed-map material
+├── environment/              # runtime manifest
+├── assets/figures/           # README and manuscript figures
+└── archive/                  # historical snapshots, kept for provenance
+```
+
+## How to reproduce
+
+All commands run from the repository root. Python dependencies are pinned in `requirements.txt`; the 1 November runs used a virtual environment with pandoc on `PATH`.
+
+```sh
+pip install -r requirements.txt
+## registry and repository audits
+python computations/verification/scientific_registry_audit.py
+python computations/verification/repository_audit.py
+## generated views must be in sync (each prints OK)
+python computations/maintenance/render_results.py --check
+python computations/maintenance/render_appendix_a.py --check
+python computations/maintenance/render_claim_registry.py --check
+## unit tests (40 files, 266 tests)
+python -m unittest discover -s computations/maintenance/tests
+## Lean
+(cd formalization && lake exe cache get && lake build Bgs)
+## manuscript PDF (pdflatex, or Tectonic via the TECTONIC variable)
+python computations/maintenance/build_unified_manuscript.py --engine auto --output-dir out
+```
+
+The full list of 23 checkers (registry audit, bibliographic audit and self-test, eight render checks, frozen-packet checks, repository and spectral-edition audits, wave2/wave3 audits and source checks, manuscript references and the three sync checks) and their latest results are in [`evidence/executions/20261101/final_presentation/`](evidence/executions/20261101/final_presentation/README.md). The manuscript builder fails on any overfull box, unresolved reference or citation, or duplicate label, and records a manifest; `--publish` copies the verified PDF to `manuscript/`. More detail: [REPRODUCE_unified.md](REPRODUCE_unified.md).
+
+## Known issues
+
+* **No continuous integration.** GitHub Actions refused to start jobs on this repository as of 1 November 2026 (account billing). All check results quoted here and in recent PRs are local runs with committed logs.
+* **Legacy `native_decide`.** 88 uses in 12 older Lean modules rely on native evaluation and therefore trust the compiler. The LineB–N modules use none.
+* **Hash-pinned broken links.** 24 relative links in 11 files point to paths that later moved. Those files are byte-pinned by seals, manifests or receipts, or generated, and are left unedited on purpose; see [RESULTS.md](RESULTS.md#known-issues) for the list.
+* **Frozen evidence packets.** 368 verbatim, sha256-pinned packet files are outside the assertion-entry policy and the SyntaxWarning compile step ([rationale](computations/maintenance/ASSERTION_POLICY.md)).
+* **Thin evidence on a few claims.** BGS-TRACE-095 and BGS-TRACE-097 (conditional) list no verifier. BGS-RES-015 (proved) cites its own note as evidence and depends on the conditional BGS-RES-014 for a symbol identity that it recomputes directly.
+* **The manuscript summarises Lines I–N.** Lines I–N (BGS-TRACE-211..336) are covered by one concise chapter that states results and registry states. Their proofs stay in the `mathematics/fixed-map/line*.md` notes and the packets.
 
 ## Three reconstructed analytic results
 
@@ -263,19 +379,12 @@ attached article to maintained results and explicitly pending candidates.
 
 For an accessible beginning, read the [mathematical background](docs/reader_guide.en.md). Then use the [theorem index](mathematics/results.md) or [topic map](mathematics/topics/README.md) to reach canonical proofs. The [claim registry](record/claims.json) controls registered status; the [dated ledger](record/claim_ledger.md) explains changes, and [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md) defines how to resolve conflicting surfaces.
 
-The [consolidated research manuscript](manuscript/README.md) is a **living, full-length scientific account**, intentionally retained while the research continues; it is neither a completed proof of BGS nor a replacement for proof sources. [Focused paper scopes](papers/README.md) are separate, potential publication units rather than asserted submissions.
+The [consolidated research manuscript](manuscript/README.md) ([PDF](manuscript/BGS_unified.pdf)) is a **living, full-length scientific account**. It is neither a completed proof of BGS nor a replacement for the proof sources. [Focused paper scopes](papers/README.md) are potential publication units, not submissions.
 
-[Reproduction guide](REPRODUCE_unified.md) · [Computation and verification](computations/README.md) · [Formalization scope](formalization/README.md) · [Literature and priority](literature/README.md) · [Contributing](CONTRIBUTING.md) · [How to cite](CITATION.cff)
+[Reproduction guide](REPRODUCE_unified.md) · [Computation and verification](computations/README.md) · [Formalization scope](formalization/README.md) · [Literature and priority](literature/README.md) · [Contributing](CONTRIBUTING.md) · [Reviewing](REVIEWING.md) · [Errata](ERRATA.md) · [Changelog](CHANGELOG.md)
 
-The [11 October 2026 execution packet](archive/evidence/executions/20261011/chat-research/fresh/README.md) records exact Python/C++ controls, 23 active Lean modules and the manuscript build for that earlier revision. The [28 October formalization](formalization/README.md) extends the source graph to 68 leaf modules; its [execution receipt](evidence/formalization/aristotle_20261027/receipt.json) distinguishes historical kernel checks from the GitHub merge, which has no fresh CI verification. **Lean verifies selected finite/algebraic and scalar/reference kernels, not the complete analytic corpus or BGS.** Project proof status does not imply independent external refereeing or an established novelty/priority claim.
+**Citation.** Cite the specific result where available, and this repository for the corpus and the verification infrastructure. The metadata are in [CITATION.cff](CITATION.cff): Maksim Churilov, *BGS: arithmetic quantum chaos and spectral universality*, version research-2026.10.1, https://github.com/ChurilovMaksim/BGS. That version names the research-2026.10.1 release, not the current main branch.
 
+**Licence.** Source code (`computations/`, `formalization/`) is released under the MIT License ([LICENSE](LICENSE)). Scholarly texts, the manuscript, mathematical exposition, registries and research data are released under CC BY 4.0 ([LICENSE-CC-BY-4.0.txt](LICENSE-CC-BY-4.0.txt)). The per-path map and its history are in [LICENSE_POLICY.md](LICENSE_POLICY.md).
 
-## License
-
-Source code (`computations/`, `formalization/`) is released under the
-MIT License — see `LICENSE`. Scholarly texts, the manuscript,
-mathematical exposition, registries and research data are released
-under CC BY 4.0 — see `LICENSE-CC-BY-4.0.txt`. The per-path map is in
-`LICENSE_POLICY.md`. Until this release, no open license was granted;
-see `LICENSE_POLICY.md` for the history of that decision.
-
+*GPT 6 and Muse Spark 1.3 were used for repository work, verification, and code implementation. Project proof status does not imply independent external refereeing or an established novelty or priority claim.*
