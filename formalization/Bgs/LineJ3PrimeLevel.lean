@@ -18,8 +18,9 @@ For a prime `q`, write `ψ(x) = e(x/q)` (`ZMod.stdAddChar`, i.e. `exp(2πi·x.va
 
 **Partial coverage:** the completing-the-square identity `conj G_t(0)G_t(β) = q² e(N(β)t̄/q)`, the fact that the labels
 `t = j y′` cover `F_q^*` minus exactly one value `t_b`, and the count `2(q − 1)` of isotropic `β ≠ 0` (with `2` a square
-mod `q`) are the source's inputs and are **not** formalized; this file formalizes the complete character-sum
-evaluation and the resulting values/bound.  The float checks (q = 41, 31) are not formalized.  The claim's
+mod `q`) are the source's inputs and are **not** formalized in this file; this file formalizes the complete character-sum
+evaluation and the resulting values/bound.  (Lean batch 3: the completing-the-square identity, `2` a square and the isotropic
+count are proved in `Bgs.LineJ3GaussSquare`; only the label covering remains unformalized.)  The float checks (q = 41, 31) are not formalized.  The claim's
 heuristic remark on m = 3p is not part of the claim.  All proofs are kernel-checked.
 -/
 

@@ -1,5 +1,16 @@
 # Scientific changelog
 
+## 2026-11-01 — Lean batch 3: Lemma A1/Q, batch-2 gap closures, TRACE-216, TRACE-143, FM-026, TRACE-178 (no state changes)
+
+Eight new modules (`LineLLineOrth`, `LineIMoebius`, `LineISummable`, `LineJ3GaussSquare`, `LineIMonomial`, `LineCDFTStar`,
+`Fm026Counts`, `LineBTorsionSplit`; 75 theorems, no `sorry`, no `native_decide`, axioms within {propext, Classical.choice,
+Quot.sound}). New Lean links: BGS-TRACE-259, TRACE-267, TRACE-216, TRACE-143, FM-026 (sealed row, admitted via its amendment
+row) and TRACE-178. Extended: BGS-TRACE-211 (now the full registered identity, including summable kicks), TRACE-218 (Möbius
+formula, summable first identity) and TRACE-229 (completing the square, |G_t(0)|² = q², isotropic count). Dated Lean notes were
+appended to the boundaries of TRACE-143 and TRACE-216. Except for TRACE-211, every link is **partial** (see `formalization_scope`).
+`lake build` completed (8882 jobs); 162 non-open claims link Lean, out of 175 modules. Receipt:
+[lean_batch3](evidence/executions/20261101/lean_batch3/README.md).
+
 ## 2026-11-01 — Lean batch 2: TRACE-297 corollary and four further partial formalizations (no state changes)
 
 Five new modules (`LineN4GaugeTwist`, `LineIPhaseSplit`, `LineIAliasing`, `LineJ3PrimeLevel`, `ResonanceMarginConst`; 31

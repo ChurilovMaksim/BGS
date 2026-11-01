@@ -1,4 +1,6 @@
-"""Generates INVENTORY.md from record/claims.json at a562e0cf; the class column is a manual planning judgement encoded in A/B."""
+"""Generates INVENTORY.md from record/claims.json at a562e0cf (baseline classes; the class column is a manual planning judgement
+encoded in A/B) and, for the current-status column and totals, from the working-tree record/claims.json (updated after Lean
+batch 3, 1 November 2026). Run from the repository root."""
 import json,collections
 import subprocess
 d=json.loads(subprocess.run(['git','show','a562e0cf:record/claims.json'],capture_output=True,check=True).stdout);c=d['claims']
@@ -62,6 +64,14 @@ B={
 'BGS-FM-014':'finite type for translated symbol differences (trigonometric-polynomial algebra)',
 'BGS-FM-023':'exclusion of bounded-power translation algebras (finite algebra part)',
 }
+import glob,re
+cur={x['id']:x for x in json.load(open('record/claims.json',encoding='utf-8'))['claims']}
+def status(i):
+  x=cur[i]
+  if not x['formalization']: return 'no Lean link'
+  bs=sorted({m.group(1) for e in x['evidence'] for m in [re.search(r'lean_batch(\d)',e)] if m})
+  part='full' if x.get('formalization_scope','').startswith('Prop I1') else 'partial'
+  return part+' (batch '+'/'.join(bs)+'): '+', '.join('`'+f.split('/')[-1]+'`' for f in x['formalization'])
 rows=[];cnt=collections.Counter()
 lean_have=[x for x in pc if x['formalization']]
 for x in pc:
@@ -71,7 +81,7 @@ for x in pc:
   elif i in B: cl,t='b',B[i]
   else: cl,t='c','out of scope today (analytic, asymptotic, probabilistic, or certified floating/interval numerics needing heavy infrastructure)'
   cnt[cl]+=1
-  rows.append((i,x['title'].replace('|','/'),x['state'],cl,t))
+  rows.append((i,x['title'].replace('|','/'),x['state'],cl,t,status(i)))
 L=[]
 L.append('# Lean inventory, 1 November 2026\n')
 L.append('Base: origin/main a562e0cf (branch lean-batch-1). Source: `record/claims.json` (registry view `record/claim_registry.md`), read at a562e0cf (before the batch-1 links were added) by `make_inventory.py` in this directory (run from the repository root).\n')
@@ -79,14 +89,18 @@ L.append(f'* Registry: {len(c)} claims; proved/conditional: {len(pc)}; all non-o
 L.append(f'* Proved/conditional claims that already linked Lean files before batch 1: {len(lean_have)} (144 non-open claims in total link Lean; 155 modules in `formalization/Bgs`).')
 L.append(f'* Proved/conditional claims without Lean before batch 1: {len(rows)}: class (a) {cnt["a"]}, class (b) {cnt["b"]}, class (c) {cnt["c"]}.\n')
 L.append('Classes: **(a)** finite or arithmetic statements (exact identities, finite computations, explicit rational/real constant inequalities, combinatorial counts, Pell / finite-field facts), directly formalizable; **(b)** finite-dimensional or algebraic lemmas formalizable with modest effort; **(c)** analytic, asymptotic or probabilistic results (and large certified floating/interval numerics) that need heavy Mathlib infrastructure, out of scope today. Classification is a planning judgement from the registry title, boundary and source; for claims in (a)/(b) it concerns the finite/algebraic **part** named in the target column, not the whole claim unless stated.\n')
-L.append('Claims marked "(batch 1)" were formalized (partially) in `evidence/executions/20261101/lean_batch1/`: 7 of class (a) and 1 of class (b) (BGS-TRACE-297). After batch 1, 211 proved/conditional claims have no Lean link: 6 in (a), 41 in (b), 164 in (c).\n')
+linked=collections.Counter(r[3] for r in rows if cur[r[0]]['formalization'])
+left=collections.Counter(r[3] for r in rows if not cur[r[0]]['formalization'])
+nonopen_cur=sum(1 for x in cur.values() if x['state']!='open' and x['formalization'])
+mods=len(glob.glob('formalization/Bgs/**/*.lean',recursive=True))
+L.append(f'**Current status (after Lean batches 1-3, receipts `evidence/executions/20261101/lean_batch{{1,2,3}}/`):** of the {len(rows)} baseline claims, {sum(linked.values())} now link Lean (class (a) {linked["a"]}, class (b) {linked["b"]}, class (c) {linked["c"]}); {sum(left.values())} still have no Lean link (class (a) {left["a"]}, class (b) {left["b"]}, class (c) {left["c"]}). Registry-wide, {nonopen_cur} non-open claims link Lean; {mods} modules in `formalization/Bgs`. Every batch link is partial unless the status column says full; the scope of each link is its `formalization_scope` field in `record/claims.json` (BGS-FM-001, FM-009, FM-026: in the batch receipt, sealed rows).\n')
 L.append('## Proved/conditional claims already linking Lean\n')
 L.append(', '.join(f'`{x["id"]}`' for x in lean_have)+'\n')
 L.append('## Proved/conditional claims without Lean (before batch 1)\n')
-L.append('| Claim | Title | State | Class | Planned Lean target |')
-L.append('|---|---|---|---|---|')
+L.append('| Claim | Title | State | Class | Planned Lean target | Current Lean status |')
+L.append('|---|---|---|---|---|---|')
 order={'a':0,'b':1,'c':2}
 for r in sorted(rows,key=lambda r:(order[r[3]],r[0])):
-  L.append(f'| {r[0]} | {r[1]} | {r[2]} | ({r[3]}) | {r[4]} |')
+  L.append(f'| {r[0]} | {r[1]} | {r[2]} | ({r[3]}) | {r[4]} | {r[5]} |')
 open('evidence/executions/20261101/lean_inventory/INVENTORY.md','w',encoding='utf-8').write('\n'.join(L)+'\n')
-print(cnt,len(rows),len(lean_have))
+print(cnt,len(rows),len(lean_have),'linked',linked,'left',left,nonopen_cur,mods)

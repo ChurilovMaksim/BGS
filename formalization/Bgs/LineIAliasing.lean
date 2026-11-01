@@ -19,9 +19,9 @@ The right side of `aliasing_mean` is `∑_j C_Z(jq)` regrouped by `j = (P(n) −
 `q ∣ P(n) − P(n')` are exactly the pairs counted by some `C_Z(jq)`, each by exactly one `j`); the regrouping
 into a `j`-indexed series is not itself spelled out in Lean.
 
-**Partial coverage:** (i) only the first identity is formalized; the Möbius formula
-`F_m = φ(2h)⁻¹ ∑_{e | 2h} μ(e)(2h/e) ∑_j C_Z(j·2h/e)` is **not** formalized here; (ii) the kick is finitely
-supported (finite index set), the source allows `∑ |Φ̂| < ∞`; (iii) the identity is proved for every `q ≥ 1`
+**Partial coverage:** (i) only the first identity is formalized here; the Möbius formula
+`F_m = φ(2h)⁻¹ ∑_{e | 2h} μ(e)(2h/e) ∑_j C_Z(j·2h/e)` is in `Bgs.LineIMoebius` (Lean batch 3, finite support); (ii) the kick is
+finitely supported (finite index set); the case `∑ |Φ̂| < ∞` is in `Bgs.LineISummable` (Lean batch 3); (iii) the identity is proved for every `q ≥ 1`
 (the claim needs only `q ∣ 2h`).  All proofs are kernel-checked.
 -/
 
