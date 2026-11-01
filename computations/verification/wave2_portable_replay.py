@@ -52,7 +52,12 @@ def sealed_source_bytes(root=historical.ROOT):
     expected['mathematics/fractional_hamming_cancellation.md']='mathematics/fixed-map/fractional_hamming_cancellation.md'
     expected['mathematics/literal_fixed_word_freeness.md']='mathematics/fixed-map/literal_fixed_word_freeness.md'
     expected['mathematics/literal_growing_word_window.md']='mathematics/fixed-map/literal_growing_word_window.md'
-    expected['mathematics/position_chain_mixing.md']='mathematics/fixed-map/position_chain_mixing.md'
+    # final-polish-1 (2026-11-01): commit 3f1858b6 (2026-10-28) repaired two
+    # relative links in the live fixed-map copy, so it no longer matches the
+    # pinned digest (3a589f...). The pinned bytes survive verbatim in the
+    # schur_reduction pinned tree (same tree as the governance files above);
+    # the live file is deliberately NOT reverted, exactly as for radial_shell.
+    expected['mathematics/position_chain_mixing.md']='archive/evidence/schur_reduction_20261007/raw/review/pinned/BGS/mathematics/position_chain_mixing.md'
     expected['mathematics/reversed_path_decay.md']='mathematics/fixed-map/reversed_path_decay.md'
     expected['mathematics/onestep_charge_gap.md']='mathematics/fixed-map/onestep_charge_gap.md'
     # Wave 5 (2026-10-25): the fourteen-note trace-bridge move. Six

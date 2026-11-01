@@ -35,7 +35,7 @@ archive snapshot.
     exponential polynomial. The scalar-generator case `N=7` is exceptional;
     this argument does not classify dimensions divisible by 7 and greater
     than 7. See
-    [`frozen_spectral_flow_controls.md`](../mathematics/frozen_spectral_flow_controls.md).
+    [`frozen_spectral_flow_controls.md`](../mathematics/fixed-map/frozen_spectral_flow_controls.md).
 
 ## Editorial and implementation corrections
 
@@ -144,7 +144,7 @@ step regime. Its own bound gives convergence with
 $t_N=L_N/N$, $L_N\to\infty$, $L_N=o(\log N)$ and
 $\varepsilon_N=N^{-a}$, $a>20$, since
 $N^{20}e^{CNt_N}\varepsilon_N=N^{20-a+o(1)}$.
-The stronger [FLOW-011](../mathematics/coboundary_polynomial_limit.md)
+The stronger [FLOW-011](../mathematics/fixed-map/coboundary_polynomial_limit.md)
 now retains the $O_f(N^{-1/3})$ smooth-test rate at exactly $2N^{34}$
 original random steps. Current status surfaces are corrected; the
 30 September quantitative theorem and dated evidence are not retracted.

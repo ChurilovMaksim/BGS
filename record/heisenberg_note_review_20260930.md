@@ -19,19 +19,19 @@ The corrected maintained sources supersede it wherever they disagree.
 
 ## 1. Results retained and completed
 
-- [FM-014](../mathematics/frozen_phase_finite_type.md): exact coefficient
+- [FM-014](../mathematics/fixed-map/frozen_phase_finite_type.md): exact coefficient
   isolation proves the submitted order-15 transversality; removing one zero
   of the annihilator improves the plain phase to order 14. The order-15
   version remains uniform under an arbitrary linear addition. A complete
   sublevel/partition argument proves the corresponding scalar cancellation
   rates, with the exact macroscopic-distance hypothesis preserved.
-- [FM-015](../mathematics/frozen_commutator_action.md): the classical
+- [FM-015](../mathematics/fixed-map/frozen_commutator_action.md): the classical
   commutator loop has a specified local mixed-coordinate action
   $s=t\Delta g+E$, with $\|E\|_{C^{15}}\le10^{61}t^2$ and normalized
   pure-$q$ derivatives bounded by $10^{49}t^2$. The actual Hamiltonian
   time $t=\tau/(2\pi)$ preserves both finite-type lower bounds.
   This completes the classical obligation, not the quantum FIO obligation.
-- [FUP-001](../mathematics/offdiagonal_digit_fup.md): repair of the false
+- [FUP-001](../mathematics/fixed-map/offdiagonal_digit_fup.md): repair of the false
   line classification proves the ideal base-7 Fourier FUP, by the prior
   Cohen criterion. The argument extends to an exact parity classification:
   every odd base and the binary base pass; even bases at least 4 have

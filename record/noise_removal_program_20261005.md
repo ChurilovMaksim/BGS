@@ -1,7 +1,7 @@
 # Deterministic transfer programme, 5 October 2026
 
 Base: `41db2b9b5b5e2c60d4aec7bc11724598da41b40e`, clean local and remote
-main at opening. Parent checkpoint: [actual-start review](general_start_review_20261004.md).
+main at opening. Parent checkpoint: [actual-start review](../archive/record/general_start_review_20261004.md).
 Original objective: full BGS, without replacing a natural deterministic
 quantization by an auxiliary stochastic model. The maintained frozen map
 is one concrete target within that broader objective; solving it would
@@ -21,7 +21,7 @@ FLOW-014 supplies Sine$_2$ for Brownian motion and the original noisy
 coboundary chain from the actual start at a logarithmic time. Deterministic
 noise removal is the first missing implication along this route.
 TRACE-005 remains the direct alternative. New
-[FLOW-015](../mathematics/microscopic_noise_removal.md) proves the exact
+[FLOW-015](../mathematics/fixed-map/microscopic_noise_removal.md) proves the exact
 signed defect reduction, the full mixed-trace calculus and four scoped
 boundaries below. **The actual defect estimate and full BGS remain open.**
 
@@ -209,7 +209,7 @@ objective. Untried routes are not called exhausted.
 
 ## 8. Local integration verification
 
-The [integration evidence](../evidence/executions/20261005-noise-removal-integration.json)
+The [integration evidence](../archive/evidence/executions/20261005-noise-removal-integration.json)
 records five focused verifier passes with an unchanged source inventory
 during the run, the successful 65-claim/25-source registry audit, repository
 gates and exact source synchronization. The complete unified manuscript

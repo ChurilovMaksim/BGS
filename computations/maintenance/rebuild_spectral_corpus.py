@@ -135,7 +135,12 @@ def projection(e: dict, raw: bytes, entries: list[dict]) -> bytes:
     if digest(b) != e['sha256']: raise ValueError('Source hash: ' + e['original_path'])
     mode = e['projection']
     if mode == 'byte-exact': return b
-    if mode == 'gzip-byte-exact': return gzip.compress(b, mtime=0)
+    if mode == 'gzip-byte-exact':
+        # Pin the RFC 1952 OS header byte to 3 (Unix), as written by the
+        # Python versions that produced the stored projections: Python 3.13
+        # writes 255 for gzip.compress(mtime=0), which changed only this byte.
+        g = gzip.compress(b, mtime=0)
+        return g[:9] + b'\x03' + g[10:]
     s = b.decode('utf-8')
     if mode == 'container-front-matter':
         m = re.search(r'^# (?:Источник:|Приложение \d+[:.])', s, re.M)

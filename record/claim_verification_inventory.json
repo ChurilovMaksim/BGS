@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "7fe7ceeb0e489b7856199df0a7932fabd0a63e88",
+ "source_blob_sha": "a7a186ee8f8229fee0af98b6f4a9c98259b21d04",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -8744,7 +8744,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 3,
-    "formalization": 1
+    "formalization": 2
    },
    "evidence": [
     "evidence/executions/20261029/lineD-band-limited/receipt.json"
@@ -8755,7 +8755,8 @@
     "computations/verification/lineD/referee_replay/psi_check.py"
    ],
    "formalization": [
-    "formalization/Bgs/LineDCerts.lean"
+    "formalization/Bgs/LineDCerts.lean",
+    "formalization/Bgs/LineD149Props.lean"
    ],
    "ledger_status": "ANALYTIC PROOF + NUMERICAL CHECK (pathwise <= 4e-14) + INDEPENDENT REFEREE AUDIT (fresh code, <= 1e-12 at 28 cases)",
    "boundary": "U = exp(i eta V_theta) M_N, M_N the S=[[3,4],[2,3]] cat-map matrix of Lines B/C, V_theta(x) = sum_{k in K} a_k cos(2 pi k x/N + theta_k), a fixed finite mode set K with a_k != 0; J0 ensemble: theta_k iid uniform; G ensemble: circular complex Gaussian coefficients with E|c_k|^2 = a_k^2. H_m = 6I - C - C^T, D_m = det H_m = Tr S^m - 2, X_m = D_m H_m^{-1}. For every odd N with gcd(N, D_m) = 1 (primality not used) and every theta: Tr U^m = Tr M_N^m sum_n Ghat_theta(n) e(t_N 2 n^T X_m n), t_N = (D_m^{-1} mod N)/N, |Tr M_N^m| = 1; hence E_theta|Tr U^m|^2 = Psi_m(t_N), Psi_m C^infinity (not claimed real-analytic), even (V -> -V symmetry), 1-periodic, independent of N. This is Line B Theorem 1 (Line B packet) applied for each theta; the mechanism is Boasman-Keating 1995 section 5 and is not claimed as new. When N | D_m the normalisation fails. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
@@ -8772,6 +8773,7 @@
     "analytic_proof",
     "exact_identity",
     "independent_review",
+    "lean_formalization",
     "float_numerics"
    ],
    "ledger_claimed_methods": [
@@ -8785,7 +8787,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 3,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "evidence/executions/20261029/lineD-band-limited/receipt.json"
@@ -8795,7 +8797,9 @@
     "computations/verification/lineD/referee_replay/psi_check.py",
     "computations/verification/lineD/referee_replay/extra.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineDPhaseLemma.lean"
+   ],
    "ledger_status": "ANALYTIC PROOF + EXACT QUADRATURE CHECKS (p <= 1601) + INDEPENDENT REFEREE AUDIT",
    "boundary": "t_N = t* + 1/(N D_m), t* = -N^{-1}/D_m (mod 1); E = Psi_m(t*) + c_1/N + O(N^-2), c_1 = Psi_m'(t*)/D_m, for fixed (m, K, a, eta). Psi_m(t*) depends only on +-N mod g'_m, g'_m = D_m/gcd(D_m, 2X_ii, 4X_ij) = 14, 48, 82, 280, 478, 1632, 2786 (m=3..9), an upper bound on the period. The O(N^-2) constant is NOT uniform in eta or K; the limits N -> infinity and eta -> infinity do not commute (m=3, K=1, J0, p=101: p(E-Psi(t*)) = 40.5 vs c_1 = -201 at eta=16). The condition eta^2 (sum k^2 a_k^2) m << N is heuristic. Does not prove BGS-TRACE-005 or BGS-BGS-001; says nothing about eigenvalue statistics beyond the second moment of Tr U^m at fixed m.",
    "spof": "unformalized_analytic_chain",
@@ -9745,7 +9749,7 @@
    "receipt_counts": {
     "evidence": 1,
     "verifiers": 3,
-    "formalization": 2
+    "formalization": 4
    },
    "evidence": [
     "evidence/executions/20261029/lineB-derandomized/receipt.json"
@@ -9757,7 +9761,9 @@
    ],
    "formalization": [
     "formalization/Bgs/LineBNAverage.lean",
-    "formalization/Bgs/LineBNAverageBridge.lean"
+    "formalization/Bgs/LineBNAverageBridge.lean",
+    "formalization/Bgs/LineBNAverageM1.lean",
+    "formalization/Bgs/LineBNAverageUnits.lean"
    ],
    "ledger_status": "ANALYTIC PROOF (CORRECTED INTERPRETATION) + NUMERICAL CHECK + INDEPENDENT REFEREE AUDIT",
    "boundary": "Averaging over N in (X, 2X], gcd(N, D_m) = 1: <|Tr U_N^m|^2>_N = F_m(eta) + O(m s2 s0^{2m-1}/X + D_m min(s0^{2m}, D_eff)/X), s0 = sum|ghat|, s2 = sum n^2|ghat|; uniform for m <= (1-eps) c(eta) log X, c(eta) = 1/(log lambda + 2 log s0(eta)). Fixed eta; logarithmic window only (below Ehrenfest).",
@@ -14256,7 +14262,7 @@
    "verifiers": [],
    "formalization": [],
    "ledger_status": "PAPER PROOF [P] (UP TO A UNIMODULAR SCALAR, N4-F1) + INDEPENDENT REFEREE AUDIT (computations/verification/lineN4/referee/REPORT.md; READY AFTER FIXES N4-F1..N4-F9, APPLIED AT INTEGRATION AS REPORT_N4_v2.md SECTION 7)",
-   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). L_tau Phi(s) = sum_n w(n) e(n tau) e(kappa n s) Phi((s + n)/lambda) on functions holomorphic near R (the lattice-of-discs space of BGS-TRACE-197 is its localisation), T_sigma Phi(s) = Phi(s + sigma), G_nu Phi(s) = e(nu s) Phi(s). [P] Direct substitution gives L_tau T_sigma = T_{lambda sigma} L_{tau - kappa lambda sigma} and L_tau G_nu = G_{nu/lambda} L_{tau + nu/lambda}. Corollary: for tau_i = t0 + a lambda^i + b lambda^{-i} (i < n), sigma_i = -a lambda^{i-1}/kappa, nu_i = b lambda^{1-i}: prod_{i<n} L_{tau_i} = T_{-lambda sigma_{n-1}} G_{-b lambda^{1-n}} L_{t0}^n G_{lambda b} T_{sigma_0} up to a unimodular scalar (T_sigma G_nu = e(nu sigma) G_nu T_sigma; N4-F1), harmless for every norm or modulus statement; on the disc space this holds whenever the gauges are below the disc margin. Isotropic twists (BGS-TRACE-291) are two-sided geometric about the sector-4 constant twist t0 = 1/2. Not registered at this integration: the single-slow-window analysis of N4 sections 3.3-3.4 (requirement G <= 1.547, leading rate 1.4468, remainder rates 1.2426 / 1.0672 / 0.9165), superseded by Line N5 (not yet refereed, not integrated); the 16D = 1 dominant-family identification and its [N] shares (88.9% / 62.0%).",
+   "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). L_tau Phi(s) = sum_n w(n) e(n tau) e(kappa n s) Phi((s + n)/lambda) on functions holomorphic near R (the lattice-of-discs space of BGS-TRACE-197 is its localisation), T_sigma Phi(s) = Phi(s + sigma), G_nu Phi(s) = e(nu s) Phi(s). [P] Direct substitution gives L_tau T_sigma = T_{lambda sigma} L_{tau - kappa lambda sigma} and L_tau G_nu = G_{nu/lambda} L_{tau + nu/lambda}. Corollary: for tau_i = t0 + a lambda^i + b lambda^{-i} (i < n), sigma_i = -a lambda^{i-1}/kappa, nu_i = b lambda^{1-i}: prod_{i<n} L_{tau_i} = T_{-lambda sigma_{n-1}} G_{-b lambda^{1-n}} L_{t0}^n G_{lambda b} T_{sigma_0} up to a unimodular scalar (T_sigma G_nu = e(nu sigma) G_nu T_sigma; N4-F1), harmless for every norm or modulus statement; on the disc space this holds whenever the gauges are below the disc margin. Isotropic twists (BGS-TRACE-291) are two-sided geometric about the sector-4 constant twist t0 = 1/2. Not registered at this integration: the single-slow-window analysis of N4 sections 3.3-3.4 (requirement G <= 1.547, leading rate 1.4468, remainder rates 1.2426 / 1.0672 / 0.9165), superseded by Line N5 (N5 v2 refereed READY in lineN6; its packet is integrated with Lines N5-N19b, mathematics/fixed-map/lineN5N18_gas_conditional.md; no N5 statement is registered except the threshold T' = 1.42785 used in H7*, BGS-TRACE-305); the 16D = 1 dominant-family identification and its [N] shares (88.9% / 62.0%).",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Direct substitution, exact up to a unimodular scalar (N4-F1); not formalised.",
    "other_weaknesses": [],

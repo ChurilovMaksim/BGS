@@ -25,7 +25,7 @@ Run `lake exe cache get` once per environment (or after a Mathlib pin change) to
 
 The pinned release is **Lean 4.33.1**. The previous integration environment recorded a completed build of the adapted source graph (8,776 Lake jobs, 589 declaration axiom inventories); its raw execution logs were not recoverable after the environment change. The source and historical execution digests are preserved in the integration receipt. Hosted CI did not independently validate the merged source because the repository owner reported exhausted GitHub Actions minutes. No post-merge Lean build is claimed.
 
-All 29 earlier leaf modules were compiled on 26 October (3,075 Lake jobs), including `CoherenceBudget`, `TraceStatement`, `RetTowerGeometry`, `Fm009TraceObstruction`, `Fm001Statement` and `Fm021Statement`; see the [toolchain follow-up](../evidence/executions/20261020/toolchain-followup/README.md) and its exact scope.
+All 29 earlier leaf modules were compiled on 26 October (3,075 Lake jobs), including `CoherenceBudget`, `TraceStatement`, `RetTowerGeometry`, `Fm009TraceObstruction`, `Fm001Statement` and `Fm021Statement`; see the [toolchain follow-up](../archive/evidence/executions/20261020/toolchain-followup/README.md) and its exact scope.
 
 The [11 October execution](../archive/evidence/executions/20261011/chat-research/fresh/lean_execution.json)
 and its preserved Lake logs record **23 active modules / 26 Lake jobs**.
@@ -136,7 +136,7 @@ Ordinary environments use `lake build` directly. The optional Linux shim
 `computations/maintenance/lean_proc_self_compat.c` redirects only a missing
 exact self-executable lookup in the hosted runtime; it does not change the
 Lean executable or proof checker. The
-[execution packet](../evidence/executions/20261008/phase-channel-jet/README.md)
+[execution packet](../archive/evidence/executions/20261008/phase-channel-jet/README.md)
 records the actual command and verified release-archive digest.
 
 Earlier receipts, including the [seven-primary aggregate build](../evidence/formalization/seven_primary_20261006/aggregate-build.json)
@@ -164,5 +164,5 @@ The new main 57150ac formalization job was skipped after the prerequisite
 jobs failed without available code-step receipts; its rerun also skipped
 formalization. At that checkpoint CoherenceBudget remained without a confirmed
 compiler execution; the 20 October follow-up above now supplies one. This does not change the earlier actually compiled
-Std modules. See the [CI observation receipt](../evidence/executions/20261014/first-return/ci_observation.json).
+Std modules. See the [CI observation receipt](../archive/evidence/executions/20261014/first-return/ci_observation.json).
 TRACE-083 adds no Lean operator formalization.
