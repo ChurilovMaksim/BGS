@@ -4,7 +4,7 @@
 
 ## In one paragraph
 
-This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified quantized, kicked cat map on the torus. **The BGS limit for this map is not proved.** Fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. Around that target, the programme registers 419 precisely scoped claims. 338 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). Among them are uniform trace bounds for the fixed kick, exact random-phase form factors, and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179). The current frontier is the corrected mean law R′ (BGS-TRACE-206), which remains **open and is not refuted**. The main recent result, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.
+This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified quantized, kicked cat map on the torus. **The BGS limit for this map is not proved.** Fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. Around that target, the programme registers 419 precisely scoped claims. 338 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). The work ran in seven phases from September to November 2026: Cayley arithmetic, Pell return laws, resonance cohomology and locality (Phase I); the structure of the fixed map, the exact trace-to-statistics bridge and noisy Dyson comparisons (Phase II); phase channels, clock laws, collision laws and obstructions (Phase III); uniform power-trace bounds for the original kick family (Phase IV); arithmetic Abel spikes and exact random-phase form factors (Phase V); the fixed diagonal kick and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179, Phase VI, Lines B–H); and the corrected mean law R′ (BGS-TRACE-206, Phase VII, Lines I–N), which remains **open and is not refuted**. The end point of Phase VII, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.
 
 ## Status at a glance
 
@@ -33,17 +33,60 @@ These are the questions the programme set out to answer. None of them is settled
 | `BGS-TRACE-005` | **open** | Signed Heisenberg-scale desymmetrized joint-trace estimate (the model-specific gap to BGS) | statement only | [open_questions.md](mathematics/open_questions.md) |
 | `BGS-TRACE-148` | **open** | Scaling limit of the Haar diagonal-phase cat-map form factor | — | [random_phase_encounter_pairs.md](mathematics/fixed-map/random_phase_encounter_pairs.md) |
 
-### Fixed kick: uniform trace bounds and arithmetic spikes (Sept–Oct 2026)
+### Phase I (September 2026): Cayley arithmetic, Pell returns, resonance, locality
+
+The earliest corpus: arithmetic and dynamical side programmes that fix the vocabulary used later.
+
+| Claim | State | Result (short label) | Lean | Source |
+|---|---|---|---|---|
+| `BGS-CAYLEY-002` | **proved** | Cayley additive-energy reduction | yes | [cayley_additive_energy.md](mathematics/cayley-arithmetic/cayley_additive_energy.md) |
+| `BGS-CAYLEY-006` | **proved** | Gaussian limits of the full Cayley–Jacobi trace | — | [cayley_trace_gaussian_limit.md](mathematics/cayley-arithmetic/cayley_trace_gaussian_limit.md) |
+| `BGS-CAYLEY-005` | **open** | Sharp centered pointwise Cayley energy target | — | [open_questions.md](mathematics/open_questions.md) |
+| `BGS-RET-001` | **proved** | Harmonic return law for the kicked Pell propagator | — | [pell_harmonic_returns.md](mathematics/pell/pell_harmonic_returns.md) |
+| `BGS-FLOW-022` | **proved** | Critical resonance law for the kicked Pell propagator | yes | [pell_floquet_normal_form.md](mathematics/pell/pell_floquet_normal_form.md) |
+| `BGS-RET-003` | **conditional** | All-orders quantum conjugacy for noncommuting return words | — | [noncommuting_return_words.md](mathematics/returns/noncommuting_return_words.md) |
+| `BGS-RES-005` | **proved** | Full-lag classical Riesz gap for the frozen symbol | — | [frozen_full_lag_resonance.md](mathematics/resonance-cohomology/frozen_full_lag_resonance.md) |
+| `BGS-RES-003` | **open** | All-members analytic resonance nondegeneracy | — | [open_questions.md](mathematics/open_questions.md) |
+| `BGS-FM-034` | **proved** | Fixed-strength all-orders comparison for a coboundary kick | yes | [fixed_strength_locality.md](mathematics/locality/fixed_strength_locality.md) |
+| `BGS-INFO-001` | **open** | Full vanishing-noise tomography transition | — | [open_questions.md](mathematics/open_questions.md) |
+
+### Phase II (20 September – 7 October 2026): the fixed map, the trace bridge and noisy comparisons
+
+| Claim | State | Result (short label) | Lean | Source |
+|---|---|---|---|---|
+| `BGS-TRACE-003` | **proved** | Weighted Heisenberg-scale joint-trace comparison suffices for band-limited RMT correlations | — | [trace_to_local_statistics_bridge.md](mathematics/trace-bridge/trace_to_local_statistics_bridge.md) |
+| `BGS-TRACE-004` | **proved** | Every-compact-bandwidth comparison extends to Schwartz tests | — | [bandlimited_correlation_extension.md](mathematics/trace-bridge/bandlimited_correlation_extension.md) |
+| `BGS-LOOP-001` | **conditional** | Full mixed loop hierarchy implies the target compact correlations | yes | [fixed_map_resolvent_frontier.md](mathematics/fixed-map/fixed_map_resolvent_frontier.md) |
+| `BGS-FM-001` | **proved** | Classical symmetry exclusions for the frozen model | — | [fixed_model_symmetry_theorem.md](mathematics/fixed-map/fixed_model_symmetry_theorem.md) |
+| `BGS-FM-010` | **proved** | Every power trace is nonzero; scalar returns classified | — | [frozen_arithmetic_trace_rigidity.md](mathematics/fixed-map/frozen_arithmetic_trace_rigidity.md) |
+| `BGS-FM-021` | **proved** | Position-chain mixing and cyclic ramp for the actual map | — | [position_chain_mixing.md](mathematics/fixed-map/position_chain_mixing.md) |
+| `BGS-TRACE-017` | **proved** | Fixed-order WKB reduction of the factorial trace hierarchy | — | [factorial_wkb_reduction.md](mathematics/fixed-map/factorial_wkb_reduction.md) |
+| `BGS-TRACE-010` | **proved** | Absolute all-order comparison against CUE is impossible (obstruction) | — | [signed_heisenberg_comparison.md](mathematics/trace-bridge/signed_heisenberg_comparison.md) |
+| `BGS-FLOW-014` | **proved** | Circular Dyson relaxation and original-chain Sine2 from the actual start | — | [circular_dyson_actual_start.md](mathematics/fixed-map/circular_dyson_actual_start.md) |
+
+### Phase III (8–19 October 2026): phase channels, clocks, collisions, obstructions
+
+| Claim | State | Result (short label) | Lean | Source |
+|---|---|---|---|---|
+| `BGS-TRACE-068` | **proved** | Frozen circular phase laws in the three symmetry classes | — | [phase_contraction.md](mathematics/trace-bridge/phase_contraction.md) |
+| `BGS-TRACE-080` | **proved** | Unconditional feedback flatness and fixed-order clock laws | — | [unconditional_feedback_flatness.md](mathematics/trace-bridge/unconditional_feedback_flatness.md) |
+| `BGS-TRACE-086` | **proved** | All-order signed diagonal hierarchy implies local Sine2 and moment UI (implication) | — | [all_order_process_closure.md](mathematics/trace-bridge/all_order_process_closure.md) |
+| `BGS-TRACE-094` | **proved** | Heisenberg Wick collision Poisson law | — | [wick_collision_poisson.md](mathematics/trace-bridge/wick_collision_poisson.md) |
+| `BGS-TRACE-081` | **proved** | Perfect intensity mixing does not identify microscopic statistics (obstruction) | yes | [flat_spectrum_obstruction.md](mathematics/spectral-obstructions/flat_spectrum_obstruction.md) |
+| `BGS-TRACE-055` | **verification-pending** | Submitted polylogarithmic deep-source hierarchy | — | [research_checkpoint_20261008.md](archive/record/research_checkpoint_20261008.md) |
+
+### Phases IV–V (21–29 October 2026): uniform traces and arithmetic spikes
 
 | Claim | State | Result (short label) | Lean | Source |
 |---|---|---|---|---|
 | `BGS-TRACE-113` | **proved** | Uniform power-trace bound for the original fixed-kick family (strict pressure gap) | — | [fixed_kick_uniform_trace_bound.md](mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) |
 | `BGS-TRACE-116` | **proved** | Compact pair test transfers through an O(N^-2) matrix error | — | [microscopic_unitary_stability_20261027.md](mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) |
+| `BGS-TRACE-114` | **proved** | Short traces do not determine a local law for a general quantizer (barrier) | — | [balanced_rounding_research_20261027.md](mathematics/fixed-map/balanced_rounding_research_20261027.md) |
 | `BGS-TRACE-117` | **proved** | Kick-blind arithmetic spikes: Abel pair statistic stays more than 1/2 from CUE at odd Pell returns | yes | [kick_blind_arithmetic_spike.md](mathematics/fixed-map/kick_blind_arithmetic_spike.md) |
 | `BGS-TRACE-124` | **proved** | Every odd modulus lies above 3/4 or below 5/7 (pure cat map) | yes | [odd_modulus_abel.md](mathematics/fixed-map/odd_modulus_abel.md) |
 | `BGS-TRACE-125` | **proved** | Quadratic trace coefficient at every odd Pell return | yes | [uniform_orbit_overlap.md](mathematics/fixed-map/uniform_orbit_overlap.md) |
 
-### Random-phase and random-kick ensembles
+### Random-phase and random-kick ensembles (Phase V and Lines C, D)
 
 | Claim | State | Result (short label) | Lean | Source |
 |---|---|---|---|---|
@@ -53,7 +96,7 @@ These are the questions the programme set out to answer. None of them is settled
 | `BGS-TRACE-149` | **proved** | Band-limited random kick: exact trace bridge E\|Tr U^m\|^2 = Psi_m(t_N) | yes | [band_limited_kick_bridge.md](mathematics/fixed-map/band_limited_kick_bridge.md) |
 | `BGS-TRACE-154` | **proved** | B_m^sym < 2m for every odd m | yes | [band_limited_kick_bridge.md](mathematics/fixed-map/band_limited_kick_bridge.md) |
 
-### Fixed diagonal kick and Conjecture R (Lines B, E–H)
+### Fixed diagonal kick and Conjecture R (Phase VI: Lines B, E–H)
 
 | Claim | State | Result (short label) | Lean | Source |
 |---|---|---|---|---|
@@ -65,13 +108,14 @@ These are the questions the programme set out to answer. None of them is settled
 | `BGS-TRACE-179` | **refuted** | Conjecture R as stated (o(m) uniformly on compact eta-ranges) | — | [derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
 | `BGS-TRACE-210` | **open** | Conjecture R_NSW (along m with h_m prime) | — | [derandomized_fixed_kick.md](mathematics/fixed-map/derandomized_fixed_kick.md) |
 
-### Frozen R′ along m = 3p (Lines G, I–N4)
+### Frozen R′ along m = 3p (Phase VII: Lines G, I–N4)
 
 R′ (BGS-TRACE-206) is a corrected mean law for the k1 kick at η = 2. Everything below either bounds a part of it or derives its failure from a stated hypothesis. R′ is neither proved nor refuted.
 
 | Claim | State | Result (short label) | Lean | Source |
 |---|---|---|---|---|
 | `BGS-TRACE-206` | **open** | Conjecture R′ (corrected mean law, k1 kick, eta = 2) | — | [resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
+| `BGS-TRACE-213` | **proved** | Exact reduction of R′ to (E″), (T″) and (D), none of them proved (Line I) | — | [lineI_rprime_reduction.md](mathematics/fixed-map/lineI_rprime_reduction.md) |
 | `BGS-TRACE-225` | **proved** | Theorem J: the d = 7 contribution oscillates with growth >= 1.0184224^m (computer-assisted) | — | [lineJ_d7_twisted_coefficient.md](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) |
 | `BGS-TRACE-235` | **proved** | Theorem K3: S+ contains infinitely many m = 3p in every unit class mod 56 | yes | [lineK_harg_removal.md](mathematics/fixed-map/lineK_harg_removal.md) |
 | `BGS-TRACE-244` | **proved** | Operator input OP for the four families (arb certificate) | yes | [lineK_harg_removal.md](mathematics/fixed-map/lineK_harg_removal.md) |
@@ -81,7 +125,7 @@ R′ (BGS-TRACE-206) is a corrected mean law for the k1 kick at η = 2. Everythi
 | `BGS-TRACE-283` | **proved** | Theorem N3: scarred conductors carry the slow orbit beta = 1 | yes | [lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
 | `BGS-TRACE-296` | **proved** | Theorem C′: unit-beta part at h_p, for p with h_p squarefree (not proved for any p) | yes | [lineN2N4_inherited_level.md](mathematics/fixed-map/lineN2N4_inherited_level.md) |
 
-### Main current result: Theorem R♯-mod v5 (Lines N5–N21, polymer-gas route)
+### End point of Phase VII: Theorem R♯-mod v5 (Lines N5–N21, polymer-gas route)
 
 This theorem is conditional. It says that if the open inputs H0, H1 and H5–H8 hold and B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr, then W′_{3p}/m → ∞, so frozen R′ fails along m = 3p. H2 and H4 are met and H3 follows from H1. The inputs are open, so this is a reduction, not a refutation of R′. v5 (referee lineN22) supersedes v4 (BGS-TRACE-299): B_p now also charges the bad-cluster rate A_bad^KP, so the threshold depends on H1’s constant.
 

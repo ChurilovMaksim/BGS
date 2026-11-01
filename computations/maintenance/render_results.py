@@ -83,10 +83,14 @@ def render(root: Path = ROOT) -> str:
       '(BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. '
       f'Around that target, the programme registers {total} precisely scoped claims. {count["proved"]} are proved at their stated '
       'scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). '
-      'Among them are uniform trace bounds for the fixed kick, exact random-phase form factors, and a computer-assisted '
-      'refutation of Conjecture R at η = 2 (BGS-TRACE-179). The current frontier is the corrected mean law R′ (BGS-TRACE-206), '
-      'which remains **open and is not refuted**. The main recent result, **Theorem R♯-mod v5 (BGS-TRACE-325), is '
-      'conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.')
+      'The work ran in seven phases from September to November 2026: Cayley arithmetic, Pell return laws, resonance '
+      'cohomology and locality (Phase I); the structure of the fixed map, the exact trace-to-statistics bridge and noisy '
+      'Dyson comparisons (Phase II); phase channels, clock laws, collision laws and obstructions (Phase III); uniform '
+      'power-trace bounds for the original kick family (Phase IV); arithmetic Abel spikes and exact random-phase form factors '
+      '(Phase V); the fixed diagonal kick and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179, '
+      'Phase VI, Lines B–H); and the corrected mean law R′ (BGS-TRACE-206, Phase VII, Lines I–N), which remains **open and '
+      'is not refuted**. The end point of Phase VII, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the '
+      'failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.')
     w('')
     w('## Status at a glance')
     w('')

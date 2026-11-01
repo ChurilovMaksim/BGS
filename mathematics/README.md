@@ -1,5 +1,15 @@
 # Mathematical proofs
 
+## Where to start (1 November 2026)
+
+This directory holds the proofs of all seven phases of the programme. [results.md](results.md) lists the theorem families
+newest first; [open_questions.md](open_questions.md) lists what is missing; [topics/README.md](topics/README.md) gives reading
+orders by area. The dated sections below record the October reorganisations of Phases I–IV. Phases V–VII live mainly in
+`fixed-map/`: the Abel-spike and form-factor notes (TRACE-117–142, 28–29 October), Lines B–H (TRACE-143–210, 29–30 October,
+including the refutation of Conjecture R, BGS-TRACE-179) and Lines I–N (TRACE-211–336, 31 October – 1 November, frozen R′
+open, Theorem R♯-mod v5 conditional). [topics/fixed-map/README.md](topics/fixed-map/README.md) lists the line notes in
+order. BGS (BGS-BGS-001) and the signed trace estimate (BGS-TRACE-005) are open.
+
 ## Trace results and dependency closure, 22 October 2026
 
 The [review](../record/spectral_research/trace_closure.md) closes the inserted-trace input in TRACE-109 by a
@@ -56,6 +66,8 @@ The canonical theorem sources live at stable paths in this directory.
 | What are the reconstructed analytic inequalities? | [Max-entry phase channel](trace-bridge/max_entry_phase_channel.md), [sharp inner jets](trace-bridge/sharp_inner_jet.md), [real-flow transport](trace-bridge/phase_channel_real_flow.md) | TRACE-053/054/056; full proofs with internal reconstruction, no external-priority verdict |
 | Which full-depth clock conclusions are unconditional? | [Exact Haar feedback and entropy-stable clocks](trace-bridge/haar_feedback_clock_law.md) | Independent initial laws with relative entropy O(log N) relative to Haar; deterministic and microscopic-law boundaries explicit |
 | Which feedback flatness is unconditional? | [Max-entry feedback flatness](trace-bridge/unconditional_feedback_flatness.md) | TRACE-080 under its named phase-channel and matrix-concentration inputs; deterministic local spectral universality remains open |
+| What did Lines B–H prove about the fixed kick? | [Fixed diagonal kick](fixed-map/derandomized_fixed_kick.md), [49-state certificate](fixed-map/lineH_49state_certificate.md) | Conjecture R refuted at η = 2 (computer-assisted); R_NSW (TRACE-210) open; BGS not addressed |
+| Where does frozen R′ stand (Lines I–N)? | [Line I reduction](fixed-map/lineI_rprime_reduction.md), [Line L](fixed-map/lineL_op_open_range.md), [gas route](fixed-map/lineN5N18_gas_conditional.md) | R′ (TRACE-206) open, not refuted; Theorem R♯-mod v5 (TRACE-325) conditional on H0, H1, H5–H8 |
 | What is proved in the other regimes? | [Arithmetic/return/resonance topics](topics/README.md) | Each family retains its own hypotheses and scales |
 
 ## Essential distinctions

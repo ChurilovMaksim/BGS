@@ -1,5 +1,26 @@
 # Theorem families and their limits
 
+Sections are newest first. Phases I–V (September to 29 October 2026, Cayley arithmetic through Abel spikes and form
+factors) are further down; Phase VI (Lines B–H) and Phase VII (Lines I–N) are at the top. The target BGS-BGS-001 and the
+signed trace estimate BGS-TRACE-005 are open throughout. [README.md](../README.md) gives the whole programme in one page.
+
+## Theorem R♯-mod v5 and the polymer-gas route (Lines N5–N21), 1 November 2026
+
+* [TRACE-325](fixed-map/lineN5N18_gas_conditional.md) (conditional): Theorem R♯-mod v5. If H0, H1 ([TRACE-336](fixed-map/lineN5N18_gas_conditional.md), open) and H5–H8 ([TRACE-303](fixed-map/lineN5N18_gas_conditional.md)–[TRACE-306](fixed-map/lineN5N18_gas_conditional.md), open) hold at p,
+  and B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr, then W′_{3p}/m → ∞ and frozen R′ fails along m = 3p. This is a
+  reduction, not a refutation. It supersedes v4 ([TRACE-299](fixed-map/lineN5N18_gas_conditional.md), conditional).
+* [TRACE-307](fixed-map/lineN5N18_gas_conditional.md) (proved, computer-assisted): H2 met, δ_int^core ≤ 5.14476·10⁻⁷. [TRACE-326](fixed-map/lineN5N18_gas_conditional.md) (proved, [P] + [CA-fp]): δ_true ≤ 5.0313·10⁻⁶
+  for all G, so H4 ([TRACE-302](fixed-map/lineN5N18_gas_conditional.md)) is met.
+* [TRACE-332](fixed-map/lineN5N18_gas_conditional.md) (conditional on H1): Prop. K, H1 implies H3. [TRACE-329](fixed-map/lineN5N18_gas_conditional.md) (proved): Prop. F, no unrestricted carry/torus bound gives H1.
+* [TRACE-333](fixed-map/lineN5N18_gas_conditional.md) (conditional on H1): gas vs Robin crossover with all rate budgets; first prime 3307 for C ≤ 0.082, 1409 for C ≤ 8.8·10⁻⁴.
+* Frozen R′ ([TRACE-206](fixed-map/resonance_classification_lineG.md)) is open and not refuted.
+
+## The inherited level h_p, certified Λ and Theorem C′ (Lines N2–N4), 31 October 2026
+
+* [TRACE-288](fixed-map/lineN2N4_inherited_level.md)–[TRACE-290](fixed-map/lineN2N4_inherited_level.md) (proved): periodic-orbit form of the class sums at c = h_p, reduction of the G_p-average to Λ·r₂.
+* [TRACE-294](fixed-map/lineN2N4_inherited_level.md)–[TRACE-296](fixed-map/lineN2N4_inherited_level.md) (proved): Lemma I / I₁₆, arb bounds on Λ, and Theorem C′ for p with h_p squarefree (not known for any p).
+* [TRACE-286](fixed-map/lineN2N4_inherited_level.md) (proved): Theorem A, an implication from the open Ω-hypothesis [TRACE-287](fixed-map/lineN2N4_inherited_level.md). [TRACE-298](fixed-map/lineN2N4_inherited_level.md) (open): the isotropic part at q ∣ h_p.
+
 ## Conductor structure, Theorem W⁺ and scarred conductors (Lines M and N), 31 October 2026
 
 * [TRACE-269](fixed-map/lineMN_conductor_structure.md), [TRACE-270](fixed-map/lineMN_conductor_structure.md), [TRACE-277](fixed-map/lineMN_conductor_structure.md) (proved; Lean `Bgs.LineM`): strong divisibility and disjoint open conductors; averaging lemma; ord_c λ | 3p, λ^p = 1 + 2h_pε^p.
