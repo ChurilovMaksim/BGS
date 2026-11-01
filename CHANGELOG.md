@@ -1,5 +1,15 @@
 # Scientific changelog
 
+## 2026-11-01 — Lean batch 4: Line L collision form and decomposition, TRACE-204, 293, 267 closure, 218 regrouping, 273 (no state changes)
+
+Seven new modules (`LineGDilution`, `LineN3SignConj`, `LineL3Quadrature`, `LineLCollisionForm`, `LineL2Decomp`,
+`LineIRegroup`, `LineMInclusion`; 39 theorems, no `sorry`, no `native_decide`, axioms within {propext, Classical.choice,
+Quot.sound}). New Lean links: BGS-TRACE-204, TRACE-293, TRACE-254, TRACE-255 and TRACE-273. Extended: BGS-TRACE-267
+(Nm γ ≠ 0, |Nm γ| ≥ q on 𝔮∖0, the c₀ case), TRACE-259 (collision form of C_𝔮) and TRACE-218 (regrouping into Σ_j C_Z(jq)
+and the Möbius formula in C_Z form, finite support). Every link is **partial** (see `formalization_scope`); no boundary was
+changed. `lake build` completed (8889 jobs); 167 non-open claims link Lean, out of 182 modules. Receipt:
+[lean_batch4](evidence/executions/20261101/lean_batch4/README.md).
+
 ## 2026-11-01 — Lean batch 3: Lemma A1/Q, batch-2 gap closures, TRACE-216, TRACE-143, FM-026, TRACE-178 (no state changes)
 
 Eight new modules (`LineLLineOrth`, `LineIMoebius`, `LineISummable`, `LineJ3GaussSquare`, `LineIMonomial`, `LineCDFTStar`,
