@@ -1,5 +1,15 @@
 # Scientific changelog
 
+## 2026-11-01 — Legacy `native_decide` cleanup and the p = 17, q = 103 exact (R-mix) run (no claim changes)
+
+51 of the 88 legacy `native_decide` proofs were replaced by kernel-checked `decide +kernel`; **37 uses in 8 older modules** remain
+(memory guard, timeout or kernel recursion limit; SevenPrimary keeps all 22). Statements are unchanged; `lake build` completed
+(8862 jobs). The boundary of BGS-CAYLEY-002 still says "by native_decide" for all five designs (a protected contract; now
+conservative). The exact-mode (R-mix) majorant run at p = 17, q = 103 gives E_M/W0 = 0.3488, c_coll = −0.227 ([N], one prime;
+evidence only, not registered). Receipts:
+[native_decide_cleanup](evidence/executions/20261101/lineNgas/native_decide_cleanup/README.md),
+[p17_q103_exact](evidence/executions/20261101/lineNgas/p17_q103_exact/README.md).
+
 ## 2026-11-01 — Final editorial pass: whole-programme README, reader guides and indexes (no claim changes)
 
 README.md and README.ru.md rewritten as an overview of the whole programme (seven phases, Cayley arithmetic to Lines I–N), with
