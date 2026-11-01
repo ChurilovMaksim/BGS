@@ -24,7 +24,7 @@ No auxiliary operator, damped endpoint or fixed-word limit replaces those tasks.
 The [maintained claim card](../mathematics/trace-bridge/phase_trace_checkpoint.md) gives exact
 hypotheses and original reviewed proof locators. Accepted frozen proof bytes
 are preserved, including historical preparation headings. The
-[proof copy map](research_checkpoint_proof_mapping.json) and
+[proof copy map](../archive/record/research_checkpoint_proof_mapping.json) and
 [retained source map](research_checkpoint_source_bindings.json) distinguish
 those bytes from new current acceptance/status exposition.
 
@@ -95,7 +95,7 @@ page images remain. Original logs and failure histories are not replaced.
 
 ## R6 implementation repairs and actual source-bound builds
 
-[The R6 repair record](r6_checked_repair_20261007.md) distinguishes final v3
+[The R6 repair record](../archive/record/r6_checked_repair_20261007.md) distinguishes final v3
 replay freshness and exact-integer arithmetic fixes from the preserved old
 failed/no-op history. Fresh C++22/Lean19 builds have exact source bindings
 to the prior unpublished snapshot; they are pre-final-freeze scoped builds,
@@ -130,13 +130,13 @@ extension adds fresh external/excluded-build raw output and failure-retention
 receipts, with 17 maintenance methods passing in four runtime/mode
 configurations. Final durable source-pinned runs may continue read-only after
 source freeze; root aggregate gates retain their own final actual artifacts. The source-closure review is
-[partial](research_checkpoint_partial_review.json), with existing observations
+[partial](../archive/record/research_checkpoint_partial_review.json), with existing observations
 preserved and final whole-snapshot acceptance still pending. The explicit
-[initial-to-current protocol delta](research_checkpoint_protocol_source_delta.json)
+[initial-to-current protocol delta](../archive/record/research_checkpoint_protocol_source_delta.json)
 preserves original integration-wrapper bytes and failed independent controls.
 [Schur freshness/loader repair](schur_replay_freshness_repair_receipt.json)
 retains its eight final mathematical runs, 24 controls and exact source deltas.
-[Charge loader repair](charge_replay_loader_repair_map.json) executes only
+[Charge loader repair](../archive/record/charge_replay_loader_repair_map.json) executes only
 authenticated source bytes and preserves the original wrapper/map. Neither
 repair changes a mathematical checker, proof or expected payload.
 Copied-input and ancestor checks are fail-closed acceptance detection, not a
@@ -198,7 +198,7 @@ with a spectral-rounding or fixed-word shortcut.
 ## Post-run local acceptance
 
 The pre-freeze pending status above is superseded, for the exact tested snapshot,
-by [final local acceptance](checked_checkpoint_acceptance_20261007.md).
+by [final local acceptance](../archive/record/checked_checkpoint_acceptance_20261007.md).
 Scientific 208/208, maintenance 146 in each mode, supplement 28/28,
 fresh C++22/Lean19 and the 274-page manuscript passed. Hosted CI for the
 new publication is separate; BGS/TRACE-005 remain open.

@@ -3,7 +3,7 @@
 **Claim:** `BGS-FM-006`. **Scope:** internal derivation and exact algebra; no
 independent referee report, novelty assessment, or quantum universality claim.
 The status authority is [`claim_ledger.md`](claim_ledger.md); the full
-argument is [`nonlinear_bracket_pressure.md`](../mathematics/nonlinear_bracket_pressure.md).
+argument is [`nonlinear_bracket_pressure.md`](../mathematics/fixed-map/nonlinear_bracket_pressure.md).
 
 ## Proof audit
 

@@ -1,6 +1,6 @@
 # Intermediate old-layer promotion: source and scope
 
-This packet sharpens BGS-FM-026 only. The [theorem owner](../mathematics/literal_time_multiplicity_bounds.md)
+This packet sharpens BGS-FM-026 only. The [theorem owner](../mathematics/fixed-map/literal_time_multiplicity_bounds.md)
 records all four accepted even counts and retains the inherited multiplicity
 and odd count. The three new proofs have independent internal ACCEPT reviews;
 none of the finite replays alone certifies a uniform implication.

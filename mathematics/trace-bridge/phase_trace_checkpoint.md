@@ -61,16 +61,16 @@ comparison, higher factorial hierarchy and TRACE-005 remain open.
 
 The three independently reviewed proofs are:
 
-- [Compact color-one full-pair identity](../compact_phase_pair_identity.md):
+- [Compact color-one full-pair identity](compact_phase_pair_identity.md):
   for arbitrary finite unitary U and |a|,|b|<1, arbitrary complex c,d, the
   product of the specified local four-state compact coefficient functionals
   equals E_D det(I-cDU)det(I-dU*D*)/[det(I-aDU)det(I-bU*D*)]. The functional
   has its coherent-section/trace-class domain; it is not a positive measure
   on arbitrary superfunctions.
-- [Universal complete-pair Abel bound](../uniform_phase_pair_abel_bound.md):
+- [Universal complete-pair Abel bound](uniform_phase_pair_abel_bound.md):
   F_N(s)<=coth(s/N)/(2N), with the stated normal-family and weighted-tail
   consequences, for every unitary and s>0.
-- [Complex microscopic source bounds](../complex_microscopic_phase_source_bounds.md):
+- [Complex microscopic source bounds](complex_microscopic_phase_source_bounds.md):
   L^p norm of the normalized complex resolvent trace is at most
   100p/(1-exp(-sigma)); the exponential-moment bound gives a genuine complex
   numerator-source neighborhood at any fixed finite flavor count and every
@@ -135,15 +135,15 @@ For positive N,k, unitary U, P_ij=|U_ij|^2,
 max P_ij<=C/N and ||P-J||<=rho<1, arbitrary strict k-by-k contractions
 Z_j with sum_j Z_j=0 satisfy S_U(Z)>=H(Z)/(2K^2),
 K=1+sqrt(C-1)/(1-rho), with the exact determinant action and height in
-[the scalar proof](../global_bosonic_body_coercivity.md) and
-[the block proof](../matrix_block_body_coercivity.md). It includes singular,
+[the scalar proof](global_bosonic_body_coercivity.md) and
+[the block proof](matrix_block_body_coercivity.md). It includes singular,
 nonnormal blocks and is dimension-uniform in k. The generalized exponential
 metric increase theorem of Bhatia is the checked external leaf.
 
 [Actual constants](actual_body_coercivity_constants.md) give eventual odd-N
-C=5,rho=1/2,c=1/50 at fixed tau. [Radial translation](../bosonic_body_radial_translation.md)
+C=5,rho=1/2,c=1/50 at fixed tau. [Radial translation](bosonic_body_radial_translation.md)
 retains the nonlinear centered slice and only the specified auxiliary
-coordinate-Lebesgue tail. [Real absorption](../real_absorption_body_coercivity.md)
+coordinate-Lebesgue tail. [Real absorption](real_absorption_body_coercivity.md)
 proves |det(I-alpha A)|>=((1+alpha)/2)^d |det(I-A)| for spectral radius<=1
 and real alpha in [0,1], hence S_alpha>=cH-ks/2 at alpha=exp(-s/N).
 There is no generic complex-alpha replacement. Scalar ordinary centering
@@ -155,7 +155,7 @@ tails, entropy and signed cancellations remain outside the theorem.
 
 ## Scoped obstruction and source correction
 
-The separately reviewed [growing-period example](../growing_period_switch_boundary_obstruction.md)
+The separately reviewed [growing-period example](growing_period_switch_boundary_obstruction.md)
 is a changed N=p^2 Fourier/cubic family. It preserves P=J, reverse decay
 and vanishing nonzero cyclic charge blocks, and has period 2p and small
 normalized power traces for m<2sqrt(N). Nevertheless its genuine high-Hamming,
@@ -178,7 +178,7 @@ omissions and five nonduplicating next research prompts are in
 
 ## Reviewed balanced-side obstruction and Ward reduction
 
-The [boundary-delay obstruction](../balanced_boundary_delay_obstruction.md) is a
+The [boundary-delay obstruction](balanced_boundary_delay_obstruction.md) is a
 separately reviewed auxiliary Fourier/tensor family with exactly flat P=J
 and decaying reverse norm, but an infinite second moment of its unregularized
 one-channel boundary angular delay for every tensor dimension. It excludes
