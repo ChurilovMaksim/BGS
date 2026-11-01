@@ -1,0 +1,32 @@
+EXIT 0 | computations/verification/scientific_registry_audit.py | scientific-registry-audit: OK (419 claims, 68 external dependencies)
+EXIT 0 | computations/verification/bibliographic_metadata_audit.py --self-test | NON-CLAIM: metadata agreement and locator hits do not establish theorem applicability.
+EXIT 0 | computations/verification/bibliographic_metadata_audit.py | NON-CLAIM: metadata agreement and locator hits do not establish theorem applicability.
+EXIT 0 | computations/maintenance/render_bibliography.py --check | bibliography-render: OK
+EXIT 0 | computations/maintenance/render_claim_registry.py --check | claim-registry-render: OK
+EXIT 0 | computations/maintenance/render_errata.py --check | errata-render: OK
+EXIT 0 | computations/maintenance/render_research_views.py --check | Research navigation views synchronized
+EXIT 0 | computations/maintenance/render_status.py --check | status-render: OK
+EXIT 0 | computations/maintenance/render_spectral_research.py --check | PASS: spectral thematic views and review matrix
+EXIT 0 | computations/maintenance/render_results.py --check | results-render: OK
+EXIT 0 | computations/maintenance/render_appendix_a.py --check | appendix-a: OK
+EXIT 0 | computations/maintenance/frozen_packets.py --check | frozen-packets: OK (39 packet directories, 368 registered files, all byte-identical and exempt)
+EXIT 0 | computations/maintenance/frozen_packets.py --compile-check | compile-check: OK (SyntaxWarning is an error outside 368 exempt frozen packet files)
+EXIT 0 | computations/verification/repository_audit.py | PASS repository_audit
+EXIT 0 | computations/verification/check_spectral_edition.py | }
+EXIT 0 | computations/verification/wave2_integration_audit.py | }
+EXIT 0 | computations/verification/wave3_integration_audit.py | }
+EXIT 0 | computations/verification/wave2_portable_replay.py --check-sources | Wave2 portable successor: original sealed source closure OK
+EXIT 0 | computations/verification/wave3_checked_replay.py --check-sources | Wave3 source closure: OK
+EXIT 0 | computations/maintenance/audit_manuscript_references.py --check | }
+EXIT 1 | computations/maintenance/sync_return_sections.py --check | RuntimeError: pandoc not found on PATH; sync requires pandoc 3.12.1
+EXIT 0 | computations/maintenance/sync_finite_orbit_section.py --check | SKIP finite-orbit source synchronization: TARGET hand-edited since Pass 1; TeX is source of truth
+EXIT 0 | computations/maintenance/sync_fixed_map_section.py --check | SKIP fixed-map source synchronization: TARGET hand-edited since Pass 1/2; TeX is source of truth
+EXIT 0 | computations/maintenance/render_appendix_a.py --check | appendix-a: OK
+EXIT 0 | computations/maintenance/render_bibliography.py --check | bibliography-render: OK
+EXIT 0 | computations/maintenance/render_claim_registry.py --check | claim-registry-render: OK
+EXIT 0 | computations/maintenance/render_errata.py --check | errata-render: OK
+EXIT 0 | computations/maintenance/render_research_views.py --check | Research navigation views synchronized
+EXIT 0 | computations/maintenance/render_results.py --check | results-render: OK
+EXIT 0 | computations/maintenance/render_spectral_research.py --check | PASS: spectral thematic views and review matrix
+EXIT 0 | computations/maintenance/render_status.py --check | status-render: OK
+DONE
