@@ -1,5 +1,14 @@
 # Scientific changelog
 
+## 2026-11-01 — Lean batch 2: TRACE-297 corollary and four further partial formalizations (no state changes)
+
+Five new modules (`LineN4GaugeTwist`, `LineIPhaseSplit`, `LineIAliasing`, `LineJ3PrimeLevel`, `ResonanceMarginConst`; 31
+theorems, no `sorry`, no `native_decide`, axioms within {propext, Classical.choice, Quot.sound}). BGS-TRACE-297 gains the
+geometric-twist product corollary (by induction from the gauge lemmas). BGS-TRACE-211, TRACE-218, TRACE-229 and RES-023 now
+link Lean. Every link is **partial** and certifies only the statement named in its `formalization_scope`. `lake build`
+completed (8874 jobs); 156 non-open claims link Lean, out of 167 modules. Receipt:
+[lean_batch2](evidence/executions/20261101/lean_batch2/README.md).
+
 ## 2026-11-01 — Lean batch 1: partial formalization of eight proved claims (no state changes)
 
 Seven new modules (`Fm001Exact`, `Fm009CubeArith`, `PellModuliArith`, `LineLCollision`, `LineM3Const`, `LineN3Order`,

@@ -4950,18 +4950,22 @@
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_radius8.json",
-        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_margin.json"
+        "evidence/executions/20261006/corpus-revision/final/checks/certificates-mpuvq_28/resonance_nondegeneracy_margin.json",
+        "evidence/executions/20261101/lean_batch2/README.md"
       ],
       "verifiers": [
         "computations/verification/resonance_nondegeneracy_margin.py",
         "computations/verification/check_resonance_certificate.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/ResonanceMarginConst.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/ch10_resonance_rigidity.tex"
       ],
       "boundary": "Fixed Pell matrix T and P_8 only. The explicit constant rests on the deposited radius-eight certificate (5,704 deductions; replay PASS) compiled by the quantitative rule printed in the section: the reconstructed integer B has 712 binary digits (215 decimal digits), hence B <= 2^714 and Gamma_T(g) >= (pi^2/41472) * 2^(-2B) * ||g||_2^4 implies the printed (ND.10). The author's original margin report remains undeposited and their generated integer (stated: 714 binary digits) is not reproduced; the deposited reconstruction is an independent exact-arithmetic implementation of the same printed rule whose smaller valid integer confirms the printed bound a fortiori. The constant is deliberately very poor and is not a crossover estimate; the qualitative compactness bound c_8 > 0 does not depend on it.",
-      "premise_discharge": "Premise discharge (recorded 2026-10-23): statement (C) was re-verified end-to-end on 2026-10-23. The maintained Boolean replay (computations/verification/check_resonance_certificate.py, byte-identical to the validated pin e75801af6acaf360b5c26b3f7f73b2f8a5a8ac2b34b8da8c86429dcfdd742fb5) was re-run and passes; its output equals the deposited resonance_certificate_replay.json in every field (5,704 deductions; all 144 complex variables eliminated; 4 negative controls rejected). The margin compiler was re-run and reproduces the deposited resonance_nondegeneracy_margin.json in every field (B = 712 bits; all 105 refutation children; all 144 final variable bounds) except the compiler's own source hash; that single drift is a 3-line __debug__ assert-guard added after the 2026-10-21 deposit, verified by full diff. The remainder of BGS-RES-022 (its C++ leg, never run in any deposited record; the C++ source is not deposited) lies outside this dependency's scope and remains BGS-RES-022's own open residual."
+      "premise_discharge": "Premise discharge (recorded 2026-10-23): statement (C) was re-verified end-to-end on 2026-10-23. The maintained Boolean replay (computations/verification/check_resonance_certificate.py, byte-identical to the validated pin e75801af6acaf360b5c26b3f7f73b2f8a5a8ac2b34b8da8c86429dcfdd742fb5) was re-run and passes; its output equals the deposited resonance_certificate_replay.json in every field (5,704 deductions; all 144 complex variables eliminated; 4 negative controls rejected). The margin compiler was re-run and reproduces the deposited resonance_nondegeneracy_margin.json in every field (B = 712 bits; all 105 refutation children; all 144 final variable bounds) except the compiler's own source hash; that single drift is a 3-line __debug__ assert-guard added after the 2026-10-21 deposit, verified by full diff. The remainder of BGS-RES-022 (its C++ leg, never run in any deposited record; the C++ source is not deposited) lies outside this dependency's scope and remains BGS-RES-022's own open residual.",
+      "formalization_scope": "Partial: the final arithmetic step only: the deposited integer B (verbatim from resonance_nondegeneracy_margin.json) satisfies 2^711 <= B < 2^712 (712 binary digits) and B <= 2^714, and Gamma >= (pi^2/41472) 2^(-2B) X with X >= 0 implies Gamma >= (pi^2/41472) 2^(-2^715) X, the printed (ND.10). The radius-eight certificate replay and the compilation of B from it are not formalized."
     },
     {
       "id": "BGS-TRACE-106",
@@ -7654,13 +7658,17 @@
       "ledger_status": "ELEMENTARY PROOF (DEFINITIONAL IDENTITY) + FLOAT CHECK (integration re-implementation, random weights, m = 5, 7, 9, rel <= 4e-13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261031/lineI/receipt.json"
+        "evidence/executions/20261031/lineI/receipt.json",
+        "evidence/executions/20261101/lean_batch2/README.md"
       ],
       "verifiers": [
         "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
       ],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineIPhaseSplit.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: Prop I1 Z_m(nu0 + delta) = Z_m(nu0) sigmahat(delta) for every integer delta, and total mass sum_p sigma(p) = 1, for any modulus M = 2h >= 1, any phases P(n) in Z and any complex nu0 with Z_m(nu0) != 0, for a finitely supported kick. The absolutely summable (infinitely supported k1) case and the halo heuristic are not formalized."
     },
     {
       "id": "BGS-TRACE-212",
@@ -7822,13 +7830,17 @@
       "ledger_status": "ELEMENTARY PROOF (ORTHOGONALITY AND MOEBIUS INVERSION; OVERSTATEMENT REMOVED IN DELTA FIX DF6) + FLOAT CHECK (integration re-implementation, every q | 2h with q <= 4000 and the Moebius form, m = 5, 7, 9, <= 2.4e-12) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261031/lineI/receipt.json"
+        "evidence/executions/20261031/lineI/receipt.json",
+        "evidence/executions/20261101/lean_batch2/README.md"
       ],
       "verifiers": [
         "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
       ],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineIAliasing.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: the first identity (1/q) sum_{nu mod q} |Z_m(nu/q)|^2 = sum_{n,n'} Phihat(n) conj Phihat(n') 1[q | P(n) - P(n')] (= sum_j C_Z(jq), regrouped by j) for every q >= 1 and a finitely supported kick, with the character orthogonality sum_{nu<q} e(-nu k/q) = q 1[q | k]. The Moebius formula for F_m and the absolutely summable case are not formalized."
     },
     {
       "id": "BGS-TRACE-219",
@@ -8108,13 +8120,17 @@
       "ledger_status": "ELEMENTARY PROOF + FLOAT CHECK (primelevel_W.py; referee rerun) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261031/lineJ/receipt.json"
+        "evidence/executions/20261031/lineJ/receipt.json",
+        "evidence/executions/20261101/lean_batch2/README.md"
       ],
       "verifiers": [
         "computations/verification/lineJ/J3/code/primelevel_W.py"
       ],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineJ3PrimeLevel.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: the complete character-sum step over F_q (q prime): W = q^-2 sum_{t in F_q^*, t != t_b} e(N tbar/q) equals q^-2(-1 - e(N tbar_b/q)) with |W| <= 2/q^2 for N != 0, (q-2)/q^2 for N = 0, and without a missing label -1/q^2 resp. (q-1)/q^2. The completing-the-square identity conj G_t(0) G_t(beta) = q^2 e(N(beta) tbar/q), the label covering (F_q^* minus exactly one t_b), the count 2(q-1) of isotropic beta and the float checks are not formalized."
     },
     {
       "id": "BGS-TRACE-230",
@@ -9869,14 +9885,16 @@
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261031/lineN2N4/receipt.json",
-        "evidence/executions/20261101/lean_batch1/README.md"
+        "evidence/executions/20261101/lean_batch1/README.md",
+        "evidence/executions/20261101/lean_batch2/README.md"
       ],
       "verifiers": [],
       "formalization": [
-        "formalization/Bgs/LineN4Gauge.lean"
+        "formalization/Bgs/LineN4Gauge.lean",
+        "formalization/Bgs/LineN4GaugeTwist.lean"
       ],
       "manuscript": [],
-      "formalization_scope": "Partial: the two gauge identities L_tau T_sigma = T_{lambda sigma} L_{tau - kappa lambda sigma} and L_tau G_nu = G_{nu/lambda} L_{tau + nu/lambda} (arbitrary weights, all functions, tsum form) and T_sigma G_nu = e(nu sigma) G_nu T_sigma. The geometric-twist product corollary is not formalized."
+      "formalization_scope": "Partial: the two gauge identities L_tau T_sigma = T_{lambda sigma} L_{tau - kappa lambda sigma} and L_tau G_nu = G_{nu/lambda} L_{tau + nu/lambda} and T_sigma G_nu = e(nu sigma) G_nu T_sigma (LineN4Gauge), and the geometric-twist corollary prod_{i<n} L_{tau_i} = T_{-lambda sigma_{n-1}} G_{-b lambda^{1-n}} L_{t0}^n G_{lambda b} T_{sigma_0} by induction (LineN4GaugeTwist; scalar exactly 1 in this ordering, hence unimodular), for arbitrary weights, complex a, b, t0, kappa != 0, lambda != 0 and all functions C -> C (tsum form). The disc-space (small-gauge) reading is not formalized."
     },
     {
       "id": "BGS-TRACE-298",
