@@ -10,7 +10,7 @@
   * the (u,v)-parametrization is a bijection onto P at this design;
   * a has exact order K and m=(p-1)/K=4.
 
-  The larger finite searches use native_decide; CI builds every active module.
+  The finite searches use kernel-checked `decide +kernel`; CI builds every active module.
 -/
 
 namespace Bgs.PairKeySecondMoment
@@ -61,19 +61,19 @@ def sortPairs : List (Nat × Nat) → List (Nat × Nat)
   | h :: t => insertPair h (sortPairs t)
 
 theorem constraint_count : P.length = (K - 1) * (K - 2) := by
-  native_decide
+  decide +kernel
 
 theorem parameterization_bijection :
     sortPairs P = sortPairs (UV.map param) := by
-  native_decide
+  decide +kernel
 
 theorem design_sizes : H.length = K ∧ m * K + 1 = N ∧ m = 4 := by
-  native_decide
+  decide +kernel
 
 theorem generator_exact_order :
     powmod a K N = 1 ∧
     (List.range (K - 1)).all fun i => !(powmod a (i + 1) N == 1) := by
-  native_decide
+  decide +kernel
 
 #print axioms constraint_count
 #print axioms parameterization_bijection

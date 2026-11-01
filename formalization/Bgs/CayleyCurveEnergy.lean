@@ -94,23 +94,23 @@ def maxOffDiagonal : Nat := offDiagonalCounts.foldl Nat.max 0
 
 theorem generator_exact_order :
     generatorExactOrder N K a = true := by
-  native_decide
+  decide +kernel
 
 /-- The rational ratio-fibre and transformed polynomial curve counts agree. -/
 theorem toric_curve_counts_match : allCurveCountsMatch = true := by
-  native_decide
+  decide +kernel
 
 /-- Every parameter-diagonal enlarged fibre has exactly 2K-1 points. -/
 theorem diagonal_curve_counts : allDiagonalCounts = true := by
-  native_decide
+  decide +kernel
 
 /-- Exact enlarged energy surrogate at the exceptional K=13 design. -/
 theorem enlarged_curve_total : enlargedTotal = 1036 := by
-  native_decide
+  decide +kernel
 
 /-- Largest off-diagonal parameter-fibre count in the design. -/
 theorem max_offdiagonal_curve_count : maxOffDiagonal = 12 := by
-  native_decide
+  decide +kernel
 
 #print axioms toric_curve_counts_match
 #print axioms diagonal_curve_counts

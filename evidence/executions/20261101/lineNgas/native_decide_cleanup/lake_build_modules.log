@@ -1,0 +1,157 @@
+== lake build Bgs.SevenPrimary
+ℹ [2/2] Built Bgs.SevenPrimary (108s)
+info: Bgs/SevenPrimary.lean:111:0: 'Bgs.SevenPrimary.product_0' depends on axioms: [propext, Quot.sound, product_0._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:113:0: 'Bgs.SevenPrimary.rabin_0' depends on axioms: [propext, Quot.sound, rabin_0._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:115:0: 'Bgs.SevenPrimary.degrees_0' depends on axioms: [propext, degrees_0._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:131:0: 'Bgs.SevenPrimary.product_1' depends on axioms: [propext, Quot.sound, product_1._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:133:0: 'Bgs.SevenPrimary.rabin_1' depends on axioms: [propext, Quot.sound, rabin_1._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:135:0: 'Bgs.SevenPrimary.degrees_1' depends on axioms: [propext, degrees_1._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:148:0: 'Bgs.SevenPrimary.product_2' depends on axioms: [propext, Quot.sound, product_2._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:150:0: 'Bgs.SevenPrimary.rabin_2' depends on axioms: [propext, Quot.sound, rabin_2._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:152:0: 'Bgs.SevenPrimary.degrees_2' depends on axioms: [propext, degrees_2._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:168:0: 'Bgs.SevenPrimary.product_3' depends on axioms: [propext, Quot.sound, product_3._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:170:0: 'Bgs.SevenPrimary.rabin_3' depends on axioms: [propext, Quot.sound, rabin_3._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:172:0: 'Bgs.SevenPrimary.degrees_3' depends on axioms: [propext, degrees_3._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:185:0: 'Bgs.SevenPrimary.product_4' depends on axioms: [propext, Quot.sound, product_4._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:187:0: 'Bgs.SevenPrimary.rabin_4' depends on axioms: [propext, Quot.sound, rabin_4._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:189:0: 'Bgs.SevenPrimary.degrees_4' depends on axioms: [propext, degrees_4._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:213:0: 'Bgs.SevenPrimary.product_5' depends on axioms: [propext, Quot.sound, product_5._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:215:0: 'Bgs.SevenPrimary.rabin_5' depends on axioms: [propext, Quot.sound, rabin_5._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:217:0: 'Bgs.SevenPrimary.degrees_5' depends on axioms: [propext, degrees_5._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:234:0: 'Bgs.SevenPrimary.product_6' depends on axioms: [propext, Quot.sound, product_6._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:236:0: 'Bgs.SevenPrimary.rabin_6' depends on axioms: [propext, Quot.sound, rabin_6._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:238:0: 'Bgs.SevenPrimary.degrees_6' depends on axioms: [propext, degrees_6._native.native_decide.ax_1_1]
+info: Bgs/SevenPrimary.lean:244:0: 'Bgs.SevenPrimary.order49' depends on axioms: [order49._native.native_decide.ax_1_1]
+Build completed successfully (2 jobs).
+== lake build Bgs.FourCutKernel
+ℹ [2/2] Built Bgs.FourCutKernel (56s)
+info: Bgs/FourCutKernel.lean:105:0: 'Bgs.FourCutKernel.pairs_through_12' depends on axioms: [propext, pairs_through_12._native.native_decide.ax_1_1]
+info: Bgs/FourCutKernel.lean:106:0: 'Bgs.FourCutKernel.triples_through_10' depends on axioms: [propext, triples_through_10._native.native_decide.ax_1_1]
+info: Bgs/FourCutKernel.lean:107:0: theorem Bgs.FourCutKernel.pairs_through_12 : through 12 false = { configurations := 3858, matchCount := 560 } :=
+of_decide_eq_true pairs_through_12._native.native_decide.ax_1_1
+info: Bgs/FourCutKernel.lean:108:0: theorem Bgs.FourCutKernel.triples_through_10 : through 10 true = { configurations := 650 } :=
+of_decide_eq_true triples_through_10._native.native_decide.ax_1_1
+info: Bgs/FourCutKernel.lean:113:0: 'Bgs.FourCutKernel.pair_m4_excluded' depends on axioms: [propext]
+info: Bgs/FourCutKernel.lean:114:0: 'Bgs.FourCutKernel.triple_m4_excluded' depends on axioms: [propext]
+Build completed successfully (2 jobs).
+== lake build Bgs.CayleyEnergy
+ℹ [2/2] Replayed Bgs.CayleyEnergy
+info: Bgs/CayleyEnergy.lean:138:0: 'Bgs.CayleyEnergy.k11_generic_energy' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:139:0: 'Bgs.CayleyEnergy.k11_exceptional_energy' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:140:0: 'Bgs.CayleyEnergy.k13_generic_energy' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:141:0: 'Bgs.CayleyEnergy.k13_exceptional_energy' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:142:0: 'Bgs.CayleyEnergy.k23_energy' depends on axioms: [k23_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:143:0: 'Bgs.CayleyEnergy.k23_has_excess' depends on axioms: [k23_has_excess._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:145:0: 'Bgs.CayleyEnergy.k11_generic_generator' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:146:0: 'Bgs.CayleyEnergy.k11_generic_pair_count' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:147:0: 'Bgs.CayleyEnergy.k11_generic_is_forced' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:148:0: 'Bgs.CayleyEnergy.k11_exceptional_generator' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:149:0: 'Bgs.CayleyEnergy.k11_exceptional_pair_count' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:150:0: 'Bgs.CayleyEnergy.k11_exceptional_has_excess' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:151:0: 'Bgs.CayleyEnergy.k13_generic_generator' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:152:0: 'Bgs.CayleyEnergy.k13_generic_pair_count' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:153:0: 'Bgs.CayleyEnergy.k13_generic_is_forced' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:154:0: 'Bgs.CayleyEnergy.k13_exceptional_generator' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:155:0: 'Bgs.CayleyEnergy.k13_exceptional_pair_count' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:156:0: 'Bgs.CayleyEnergy.k13_exceptional_has_excess' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:157:0: 'Bgs.CayleyEnergy.k23_generator' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:158:0: 'Bgs.CayleyEnergy.k23_pair_count' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:159:0: 'Bgs.CayleyEnergy.k23_forced_baseline' does not depend on any axioms
+Build completed successfully (2 jobs).
+== lake build Bgs.FibonacciRatioSmall
+ℹ [2/2] Replayed Bgs.FibonacciRatioSmall
+info: Bgs/FibonacciRatioSmall.lean:104:0: 'Bgs.FibonacciRatioSmall.bounded_energy' depends on axioms: [bounded_energy._native.native_decide.ax_1_1]
+info: Bgs/FibonacciRatioSmall.lean:105:0: 'Bgs.FibonacciRatioSmall.bounded_high_collisions_are_local' depends on axioms: [bounded_high_collisions_are_local._native.native_decide.ax_1_1]
+info: Bgs/FibonacciRatioSmall.lean:106:0: 'Bgs.FibonacciRatioSmall.difference_one_multiplicity' does not depend on any axioms
+info: Bgs/FibonacciRatioSmall.lean:107:0: 'Bgs.FibonacciRatioSmall.difference_two_multiplicity' does not depend on any axioms
+info: Bgs/FibonacciRatioSmall.lean:108:0: 'Bgs.FibonacciRatioSmall.difference_four_multiplicity' does not depend on any axioms
+Build completed successfully (2 jobs).
+== lake build Bgs.MagneticTraceSmall
+ℹ [2/2] Replayed Bgs.MagneticTraceSmall
+info: Bgs/MagneticTraceSmall.lean:65:0: 'Bgs.MagneticTraceSmall.first_closed_anchor' depends on axioms: [propext]
+info: Bgs/MagneticTraceSmall.lean:66:0: 'Bgs.MagneticTraceSmall.trace1' depends on axioms: [propext]
+info: Bgs/MagneticTraceSmall.lean:67:0: 'Bgs.MagneticTraceSmall.trace2' depends on axioms: [propext]
+info: Bgs/MagneticTraceSmall.lean:68:0: 'Bgs.MagneticTraceSmall.trace3' depends on axioms: [propext]
+info: Bgs/MagneticTraceSmall.lean:69:0: 'Bgs.MagneticTraceSmall.trace4' depends on axioms: [propext, trace4._native.native_decide.ax_1_1]
+Build completed successfully (2 jobs).
+== lake build Bgs.PairKeyFourthMoment
+ℹ [2/2] Replayed Bgs.PairKeyFourthMoment
+info: Bgs/PairKeyFourthMoment.lean:78:0: 'Bgs.PairKeyFourthMoment.diagonal_multiplicity' does not depend on any axioms
+info: Bgs/PairKeyFourthMoment.lean:79:0: 'Bgs.PairKeyFourthMoment.off_diagonal_keys_injective' depends on axioms: [off_diagonal_keys_injective._native.native_decide.ax_1_1]
+info: Bgs/PairKeyFourthMoment.lean:80:0: 'Bgs.PairKeyFourthMoment.coupled_constraint_count' depends on axioms: [coupled_constraint_count._native.native_decide.ax_1_1]
+Build completed successfully (2 jobs).
+== lake build Bgs.PairKeySecondMoment
+ℹ [2/2] Replayed Bgs.PairKeySecondMoment
+info: Bgs/PairKeySecondMoment.lean:78:0: 'Bgs.PairKeySecondMoment.constraint_count' does not depend on any axioms
+info: Bgs/PairKeySecondMoment.lean:79:0: 'Bgs.PairKeySecondMoment.parameterization_bijection' does not depend on any axioms
+info: Bgs/PairKeySecondMoment.lean:80:0: 'Bgs.PairKeySecondMoment.design_sizes' does not depend on any axioms
+info: Bgs/PairKeySecondMoment.lean:81:0: 'Bgs.PairKeySecondMoment.generator_exact_order' does not depend on any axioms
+Build completed successfully (2 jobs).
+== lake build Bgs.PellCoboundary
+ℹ [2/2] Replayed Bgs.PellCoboundary
+info: Bgs/PellCoboundary.lean:53:0: 'Bgs.PellCoboundary.structuralIdentity' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellCoboundary.lean:54:0: 'Bgs.PellCoboundary.firstSpeciesPeriod' does not depend on any axioms
+info: Bgs/PellCoboundary.lean:55:0: 'Bgs.PellCoboundary.secondSpeciesPeriod' does not depend on any axioms
+info: Bgs/PellCoboundary.lean:56:0: 'Bgs.PellCoboundary.pairCount' does not depend on any axioms
+info: Bgs/PellCoboundary.lean:57:0: 'Bgs.PellCoboundary.distinctCount' depends on axioms: [distinctCount._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:58:0: 'Bgs.PellCoboundary.noZero' does not depend on any axioms
+info: Bgs/PellCoboundary.lean:59:0: 'Bgs.PellCoboundary.multiplicityAtMostTwo' depends on axioms: [multiplicityAtMostTwo._native.native_decide.ax_1_1]
+info: Bgs/PellCoboundary.lean:60:0: 'Bgs.PellCoboundary.doubleKeyCount' depends on axioms: [doubleKeyCount._native.native_decide.ax_1_1]
+Build completed successfully (2 jobs).
+== lake build Bgs.PellCohomology
+ℹ [2/2] Replayed Bgs.PellCohomology
+info: Bgs/PellCohomology.lean:50:0: 'Bgs.PellCohomology.interior_difference' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellCohomology.lean:51:0: 'Bgs.PellCohomology.boundary_difference' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellCohomology.lean:52:0: 'Bgs.PellCohomology.centered_pair' depends on axioms: [propext, Quot.sound]
+info: Bgs/PellCohomology.lean:53:0: 'Bgs.PellCohomology.pell11' does not depend on any axioms
+info: Bgs/PellCohomology.lean:54:0: 'Bgs.PellCohomology.period11' does not depend on any axioms
+info: Bgs/PellCohomology.lean:55:0: 'Bgs.PellCohomology.pairKeyCount11' does not depend on any axioms
+info: Bgs/PellCohomology.lean:56:0: 'Bgs.PellCohomology.pairKeysUnique11' does not depend on any axioms
+info: Bgs/PellCohomology.lean:57:0: 'Bgs.PellCohomology.pairKeysNonzero11' does not depend on any axioms
+Build completed successfully (2 jobs).
+== lake build Bgs.TorusLevelSets
+ℹ [2/2] Replayed Bgs.TorusLevelSets
+info: Bgs/TorusLevelSets.lean:85:0: 'Bgs.TorusLevelSets.nonzero_level_cardinality' depends on axioms: [nonzero_level_cardinality._native.native_decide.ax_1_1]
+info: Bgs/TorusLevelSets.lean:86:0: 'Bgs.TorusLevelSets.zero_cone_cardinality' does not depend on any axioms
+info: Bgs/TorusLevelSets.lean:87:0: 'Bgs.TorusLevelSets.nonzero_level_orbit_count' depends on axioms: [nonzero_level_orbit_count._native.native_decide.ax_1_1]
+info: Bgs/TorusLevelSets.lean:88:0: 'Bgs.TorusLevelSets.global_count_identity' does not depend on any axioms
+info: Bgs/TorusLevelSets.lean:89:0: 'Bgs.TorusLevelSets.nonzero_level_action_free' depends on axioms: [nonzero_level_action_free._native.native_decide.ax_1_1]
+info: Bgs/TorusLevelSets.lean:91:0: 'Bgs.TorusLevelSets.action_generator_exact_order' does not depend on any axioms
+Build completed successfully (2 jobs).
+== lake build Bgs.CayleyCurveEnergy
+ℹ [2/3] Replayed Bgs.CayleyEnergy
+info: Bgs/CayleyEnergy.lean:138:0: 'Bgs.CayleyEnergy.k11_generic_energy' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:139:0: 'Bgs.CayleyEnergy.k11_exceptional_energy' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:140:0: 'Bgs.CayleyEnergy.k13_generic_energy' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:141:0: 'Bgs.CayleyEnergy.k13_exceptional_energy' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:142:0: 'Bgs.CayleyEnergy.k23_energy' depends on axioms: [k23_energy._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:143:0: 'Bgs.CayleyEnergy.k23_has_excess' depends on axioms: [k23_has_excess._native.native_decide.ax_1_1]
+info: Bgs/CayleyEnergy.lean:145:0: 'Bgs.CayleyEnergy.k11_generic_generator' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:146:0: 'Bgs.CayleyEnergy.k11_generic_pair_count' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:147:0: 'Bgs.CayleyEnergy.k11_generic_is_forced' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:148:0: 'Bgs.CayleyEnergy.k11_exceptional_generator' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:149:0: 'Bgs.CayleyEnergy.k11_exceptional_pair_count' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:150:0: 'Bgs.CayleyEnergy.k11_exceptional_has_excess' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:151:0: 'Bgs.CayleyEnergy.k13_generic_generator' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:152:0: 'Bgs.CayleyEnergy.k13_generic_pair_count' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:153:0: 'Bgs.CayleyEnergy.k13_generic_is_forced' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:154:0: 'Bgs.CayleyEnergy.k13_exceptional_generator' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:155:0: 'Bgs.CayleyEnergy.k13_exceptional_pair_count' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:156:0: 'Bgs.CayleyEnergy.k13_exceptional_has_excess' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:157:0: 'Bgs.CayleyEnergy.k23_generator' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:158:0: 'Bgs.CayleyEnergy.k23_pair_count' does not depend on any axioms
+info: Bgs/CayleyEnergy.lean:159:0: 'Bgs.CayleyEnergy.k23_forced_baseline' does not depend on any axioms
+ℹ [3/3] Built Bgs.CayleyCurveEnergy (25s)
+info: Bgs/CayleyCurveEnergy.lean:115:0: 'Bgs.CayleyCurveEnergy.toric_curve_counts_match' does not depend on any axioms
+info: Bgs/CayleyCurveEnergy.lean:116:0: 'Bgs.CayleyCurveEnergy.diagonal_curve_counts' does not depend on any axioms
+info: Bgs/CayleyCurveEnergy.lean:117:0: 'Bgs.CayleyCurveEnergy.enlarged_curve_total' does not depend on any axioms
+info: Bgs/CayleyCurveEnergy.lean:118:0: 'Bgs.CayleyCurveEnergy.max_offdiagonal_curve_count' does not depend on any axioms
+info: Bgs/CayleyCurveEnergy.lean:120:0: 'Bgs.CayleyCurveEnergy.generator_exact_order' does not depend on any axioms
+Build completed successfully (3 jobs).
+== lake build Bgs.HistoricalMobiusDegenerateFiber
+ℹ [2/2] Replayed Bgs.HistoricalMobiusDegenerateFiber
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:47:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_constant_53' does not depend on any axioms
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:48:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_cardinality_53' does not depend on any axioms
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:49:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_constant_199' does not depend on any axioms
+info: Bgs/HistoricalMobiusDegenerateFiber.lean:50:0: 'Bgs.HistoricalMobiusDegenerateFiber.d0_cardinality_199' does not depend on any axioms
+Build completed successfully (2 jobs).

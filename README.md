@@ -246,7 +246,7 @@ A conditional theorem is exactly as strong as its weakest open input. Superseded
 cd formalization && lake exe cache get && lake build Bgs
 ```
 
-The last full local build ended "Build completed successfully (8862 jobs)" ([log](evidence/executions/20261101/lineNgas/v5_integration/lake_build_Bgs.log)); this PR does not change any Lean file. **No `sorry`** is allowed in the active graph, and the newer modules print their axioms (at most `propext`, `Classical.choice`, `Quot.sound`). **Legacy `native_decide`:** 88 uses in 12 older modules trust the compiler beyond the kernel axioms. The claim boundaries disclose this, and the Line B–N modules use none.
+The last full local build ended "Build completed successfully (8862 jobs)" ([log](evidence/executions/20261101/lineNgas/v5_integration/lake_build_Bgs.log)); this PR replaces 51 legacy `native_decide` proofs by kernel-checked `decide +kernel` ([log](evidence/executions/20261101/lineNgas/native_decide_cleanup/lake_build_Bgs.log)). **No `sorry`** is allowed in the active graph, and the newer modules print their axioms (at most `propext`, `Classical.choice`, `Quot.sound`). **Legacy `native_decide`:** 37 uses in 8 older modules trust the compiler beyond the kernel axioms. The claim boundaries disclose this, and the Line B–N modules use none.
 
 **Referee audits.** Every line from E onwards has an independent internal referee pass. There are 24 `referee/` folders under [`computations/verification/`](computations/verification/lineN16/referee/REPORT.md) (lineE to lineN16), and the final Line N referees lineN20, lineN21, lineN21b and lineN22 are in [`evidence/executions/20261101/lineNgas/referee/`](evidence/executions/20261101/lineNgas/v5_integration/README.md). Referee findings are applied verbatim and listed in the drafts. None of this is external peer review.
 
@@ -308,7 +308,7 @@ The full list of 23 checkers (registry audit, bibliographic audit and self-test,
 ## Known issues
 
 * **No continuous integration.** GitHub Actions refused to start jobs on this repository as of 1 November 2026 (account billing). All check results quoted here and in recent PRs are local runs with committed logs.
-* **Legacy `native_decide`.** 88 uses in 12 older Lean modules rely on native evaluation and therefore trust the compiler. The LineB–N modules use none.
+* **Legacy `native_decide`.** 37 uses in 8 older Lean modules rely on native evaluation and therefore trust the compiler. The LineB–N modules use none.
 * **Hash-pinned broken links.** 24 relative links in 11 files point to paths that later moved. Those files are byte-pinned by seals, manifests or receipts, or generated, and are left unedited on purpose; see [RESULTS.md](RESULTS.md#known-issues) for the list.
 * **Frozen evidence packets.** 368 verbatim, sha256-pinned packet files are outside the assertion-entry policy and the SyntaxWarning compile step ([rationale](computations/maintenance/ASSERTION_POLICY.md)).
 * **Thin evidence on a few claims.** BGS-TRACE-095 and BGS-TRACE-097 (conditional) list no verifier. BGS-RES-015 (proved) cites its own note as evidence and depends on the conditional BGS-RES-014 for a symbol identity that it recomputes directly.

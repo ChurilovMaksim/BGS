@@ -93,13 +93,13 @@ theorem bounded_high_collisions_are_local :
 
 -- Representative high-multiplicity bins: +1, +2, +4.
 theorem difference_one_multiplicity : collisionCount (x3, x1) = 4 := by
-  native_decide
+  decide +kernel
 
 theorem difference_two_multiplicity : collisionCount (x2, x1) = 3 := by
-  native_decide
+  decide +kernel
 
 theorem difference_four_multiplicity : collisionCount (x2, nx1) = 3 := by
-  native_decide
+  decide +kernel
 
 #print axioms bounded_energy
 #print axioms bounded_high_collisions_are_local

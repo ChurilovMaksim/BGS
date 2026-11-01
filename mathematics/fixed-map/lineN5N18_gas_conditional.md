@@ -131,6 +131,12 @@ Frozen R′ (BGS-TRACE-206) is **not** refuted.
   * The NSW primes ≤ 300 (FLINT).
   * The non-h_p Dev numerics.
   * The collision margin of 186×.
+  * The (R-mix) majorant runs of N16b §2, and the exact-mode run p = 17, q = 103 (h₁₇ = 103·15607, 2.51e10 points, finished
+    1 November 2026): E_M = 0.72637, W0 = 2.08247, E_M/W0 = 0.349, c_coll = −0.227. Like every earlier exact row (p = 11, 13 and
+    p = 17, q = 15607; c_coll between −0.58 and −0.40) it has E_M < W0, so it is consistent with the [N] remark "c ≤ 0" in H5; it is
+    the c_coll closest to 0 so far, and the N16b sampled estimate for this case (ratio 0.065) was ≈ 5× low. One prime, float, no
+    error control; not evidence for (R-mix) uniformly in d or for large p
+    ([evidence](../../evidence/executions/20261101/lineNgas/p17_q103_exact/README.md)).
 * **Negative results.**
   * The D1 + G*_gas route is dead (θ ∈ [1/16, 1/4]).
   * The 4-fold automaton gives ≥ 5.41151 > 2.611 ([CA] for the author, [CA*] for the referee).
