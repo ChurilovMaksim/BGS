@@ -49,83 +49,83 @@ def generatorExactOrder (N K a : Nat) : Bool :=
 
 theorem k11_generic_generator :
     generatorExactOrder 199 11 139 = true := by
-  native_decide
+  decide +kernel
 
 theorem k11_generic_pair_count :
     (admissiblePairs 199 11 139).length = 90 := by
-  native_decide
+  decide +kernel
 
 theorem k11_generic_energy :
     collisionEnergy 199 11 139 = 170 := by
-  native_decide
+  decide +kernel
 
 theorem k11_generic_is_forced :
     collisionEnergy 199 11 139 = forcedBaseline 11 := by
-  native_decide
+  decide +kernel
 
 theorem k11_exceptional_generator :
     generatorExactOrder 67 11 64 = true := by
-  native_decide
+  decide +kernel
 
 theorem k11_exceptional_pair_count :
     (admissiblePairs 67 11 64).length = 90 := by
-  native_decide
+  decide +kernel
 
 theorem k11_exceptional_energy :
     collisionEnergy 67 11 64 = 218 := by
-  native_decide
+  decide +kernel
 
 theorem k11_exceptional_has_excess :
     collisionEnergy 67 11 64 > forcedBaseline 11 := by
-  native_decide
+  decide +kernel
 
 /-! ## K = 13: one generic and one exceptional reduction. -/
 
 theorem k13_generic_generator :
     generatorExactOrder 521 13 101 = true := by
-  native_decide
+  decide +kernel
 
 theorem k13_generic_pair_count :
     (admissiblePairs 521 13 101).length = 132 := by
-  native_decide
+  decide +kernel
 
 theorem k13_generic_energy :
     collisionEnergy 521 13 101 = 252 := by
-  native_decide
+  decide +kernel
 
 theorem k13_generic_is_forced :
     collisionEnergy 521 13 101 = forcedBaseline 13 := by
-  native_decide
+  decide +kernel
 
 theorem k13_exceptional_generator :
     generatorExactOrder 53 13 10 = true := by
-  native_decide
+  decide +kernel
 
 theorem k13_exceptional_pair_count :
     (admissiblePairs 53 13 10).length = 132 := by
-  native_decide
+  decide +kernel
 
 theorem k13_exceptional_energy :
     collisionEnergy 53 13 10 = 460 := by
-  native_decide
+  decide +kernel
 
 theorem k13_exceptional_has_excess :
     collisionEnergy 53 13 10 > forcedBaseline 13 := by
-  native_decide
+  decide +kernel
 
 /-! ## K = 23 non-uniformity witness. -/
 
 theorem k23_generator :
     generatorExactOrder 461 23 23 = true := by
-  native_decide
+  decide +kernel
 
 theorem k23_pair_count :
     (admissiblePairs 461 23 23).length = 462 := by
-  native_decide
+  decide +kernel
 
 theorem k23_forced_baseline :
     forcedBaseline 23 = 902 := by
-  native_decide
+  decide +kernel
 
 theorem k23_energy :
     collisionEnergy 461 23 23 = 1190 := by

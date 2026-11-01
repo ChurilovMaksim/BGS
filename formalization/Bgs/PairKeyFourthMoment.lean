@@ -66,7 +66,7 @@ def strictlySorted : List (Nat × Nat) → Bool
   | x :: y :: rest => lePair x y && !(x == y) && strictlySorted (y :: rest)
 
 theorem diagonal_multiplicity : diagonalCount = N - 2 := by
-  native_decide
+  decide +kernel
 
 theorem off_diagonal_keys_injective :
     strictlySorted (sortPairs (allOffDiagonal.map keyOf)) = true := by

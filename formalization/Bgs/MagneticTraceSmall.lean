@@ -57,10 +57,10 @@ def closedCanonical (m : Nat) : List Int :=
   let c := (coefficientPower m).map (fun x => 2*x)
   c.map (fun x => x-c.getD 6 0)
 
-theorem first_closed_anchor : closedCanonical 1 = [0,0,4,2,2,4,0] := by native_decide
-theorem trace1 : canonical 1 = closedCanonical 1 := by native_decide
-theorem trace2 : canonical 2 = closedCanonical 2 := by native_decide
-theorem trace3 : canonical 3 = closedCanonical 3 := by native_decide
+theorem first_closed_anchor : closedCanonical 1 = [0,0,4,2,2,4,0] := by decide +kernel
+theorem trace1 : canonical 1 = closedCanonical 1 := by decide +kernel
+theorem trace2 : canonical 2 = closedCanonical 2 := by decide +kernel
+theorem trace3 : canonical 3 = closedCanonical 3 := by decide +kernel
 theorem trace4 : canonical 4 = closedCanonical 4 := by native_decide
 #print axioms first_closed_anchor
 #print axioms trace1

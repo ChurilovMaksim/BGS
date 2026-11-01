@@ -39,11 +39,11 @@ def multiplicity (v : Prod Int Int) : Nat :=
 set_option maxRecDepth 100000
 set_option maxHeartbeats 0
 
-theorem firstSpeciesPeriod : vector 0 11 = (2,4) := by native_decide
-theorem secondSpeciesPeriod : vector 1 11 = (4,4) := by native_decide
-theorem pairCount : pairKeys.length = 880 := by native_decide
+theorem firstSpeciesPeriod : vector 0 11 = (2,4) := by decide +kernel
+theorem secondSpeciesPeriod : vector 1 11 = (4,4) := by decide +kernel
+theorem pairCount : pairKeys.length = 880 := by decide +kernel
 theorem distinctCount : pairKeys.eraseDups.length = 836 := by native_decide
-theorem noZero : pairKeys.contains (0,0) = false := by native_decide
+theorem noZero : pairKeys.contains (0,0) = false := by decide +kernel
 theorem multiplicityAtMostTwo :
     pairKeys.all (fun v => decide (multiplicity v <= 2)) = true := by native_decide
 theorem doubleKeyCount :

@@ -32,17 +32,17 @@ def d0Values199 : List Nat :=
 
 theorem d0_constant_53 :
     d0Values53.all (fun v => v == 1) = true := by
-  native_decide
+  decide +kernel
 
 theorem d0_cardinality_53 : d0Values53.length = 51 := by
-  native_decide
+  decide +kernel
 
 theorem d0_constant_199 :
     d0Values199.all (fun v => v == 1) = true := by
-  native_decide
+  decide +kernel
 
 theorem d0_cardinality_199 : d0Values199.length = 197 := by
-  native_decide
+  decide +kernel
 
 #print axioms d0_constant_53
 #print axioms d0_cardinality_53

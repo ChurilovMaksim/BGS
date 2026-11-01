@@ -53,7 +53,7 @@ def orderCheck : Bool :=
   ((List.range (K - 1)).all fun j => !(iter (j + 1) (1, 0) == (1, 0)))
 
 theorem action_generator_exact_order : orderCheck = true := by
-  native_decide
+  decide +kernel
 
 def nonzeroLevelsUniform : Bool :=
   (List.range (p - 1)).all fun i => (level (i + 1)).length == p - 1
@@ -62,7 +62,7 @@ theorem nonzero_level_cardinality : nonzeroLevelsUniform = true := by
   native_decide
 
 theorem zero_cone_cardinality : (level 0).length = 2 * p - 2 := by
-  native_decide
+  decide +kernel
 
 def nonzeroOrbitCountUniform : Bool :=
   (List.range (p - 1)).all fun i => orbitsInLevel (i + 1) == (p - 1) / K

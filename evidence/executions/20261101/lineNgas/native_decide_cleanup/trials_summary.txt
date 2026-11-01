@@ -1,0 +1,83 @@
+HistoricalMobiusDegenerateFiber rc=0 sec=1 peakKB=
+FourCutKernel rc=143 sec=45 peakKB=5804496
+FourCutKernel lines=[100, 103] rc=-9 MEMKILL sec=14 peakMB=2773
+FourCutKernel lines=[100] rc=-9 MEMKILL sec=13 peakMB=2779
+FourCutKernel lines=[103] rc=-9 MEMKILL sec=61 peakMB=2846
+FINAL FourCutKernel converted=[] of [100, 103]
+PairKeyFourthMoment lines=[69, 73, 76] rc=-9 MEMKILL sec=14 peakMB=2787
+PairKeyFourthMoment lines=[69] rc=0  sec=8 peakMB=584
+PairKeyFourthMoment lines=[73] rc=1  sec=8 peakMB=607
+PairKeyFourthMoment lines=[76] rc=-9 MEMKILL sec=14 peakMB=2818
+PairKeyFourthMoment lines=[69] rc=0  sec=9 peakMB=605
+FINAL PairKeyFourthMoment converted=[69] of [69, 73, 76]
+PairKeySecondMoment lines=[64, 68, 71, 76] rc=0  sec=9 peakMB=1280
+CayleyCurveEnergy lines=[97, 101, 105, 109, 113] rc=0  sec=26 peakMB=2120
+FibonacciRatioSmall lines=[85, 92, 96, 99, 102] rc=-9 MEMKILL sec=16 peakMB=2786
+FibonacciRatioSmall lines=[85] rc=-9 MEMKILL sec=14 peakMB=2805
+FibonacciRatioSmall lines=[92] rc=-9 MEMKILL sec=15 peakMB=2791
+FibonacciRatioSmall lines=[96] rc=0  sec=3 peakMB=527
+FibonacciRatioSmall lines=[99] rc=0  sec=3 peakMB=523
+FibonacciRatioSmall lines=[102] rc=0  sec=3 peakMB=534
+FibonacciRatioSmall lines=[96, 99, 102] rc=0  sec=3 peakMB=578
+FINAL FibonacciRatioSmall converted=[96, 99, 102] of [85, 92, 96, 99, 102]
+MagneticTraceSmall lines=[60, 61, 62, 63, 64] rc=-9 MEMKILL sec=16 peakMB=2816
+MagneticTraceSmall lines=[60] rc=0  sec=2 peakMB=750
+MagneticTraceSmall lines=[61] rc=0  sec=2 peakMB=669
+MagneticTraceSmall lines=[62] rc=0  sec=2 peakMB=671
+MagneticTraceSmall lines=[63] rc=0  sec=5 peakMB=1214
+MagneticTraceSmall lines=[64] rc=-9 MEMKILL sec=13 peakMB=2798
+MagneticTraceSmall lines=[60, 61, 62, 63] rc=0  sec=5 peakMB=1320
+FINAL MagneticTraceSmall converted=[60, 61, 62, 63] of [60, 61, 62, 63, 64]
+PellCohomology lines=[45, 46, 47, 48, 49] rc=0  sec=7 peakMB=1834
+TorusLevelSets lines=[56, 62, 65, 71, 83] rc=-9 MEMKILL sec=14 peakMB=2823
+TorusLevelSets lines=[56] rc=0  sec=13 peakMB=496
+TorusLevelSets lines=[62] rc=-9 MEMKILL sec=13 peakMB=2750
+TorusLevelSets lines=[65] rc=0  sec=27 peakMB=2563
+TorusLevelSets lines=[71] rc=-9 MEMKILL sec=16 peakMB=2773
+TorusLevelSets lines=[83] rc=-9 MEMKILL sec=20 peakMB=2782
+TorusLevelSets lines=[56, 65] rc=0  sec=27 peakMB=2567
+FINAL TorusLevelSets converted=[56, 65] of [56, 62, 65, 71, 83]
+PellCoboundary lines=[42, 43, 44, 45, 46, 48, 51] rc=-9 MEMKILL sec=12 peakMB=2761
+PellCoboundary lines=[42] rc=0  sec=2 peakMB=703
+PellCoboundary lines=[43] rc=0  sec=2 peakMB=754
+PellCoboundary lines=[44] rc=0  sec=2 peakMB=732
+PellCoboundary lines=[45] rc=-9 MEMKILL sec=12 peakMB=2774
+PellCoboundary lines=[46] rc=0  sec=3 peakMB=720
+PellCoboundary lines=[48] rc=-9 MEMKILL sec=12 peakMB=2884
+PellCoboundary lines=[51] rc=-9 MEMKILL sec=12 peakMB=2809
+PellCoboundary lines=[42, 43, 44, 46] rc=0  sec=3 peakMB=910
+FINAL PellCoboundary converted=[42, 43, 44, 46] of [42, 43, 44, 45, 46, 48, 51]
+CayleyEnergy lines=[52, 56, 60, 64, 68, 72, 76, 80, 86, 90, 94, 98, 102, 106, 110, 114, 120, 124, 128, 132, 136] rc=-9 MEMKILL sec=26 peakMB=2769
+CayleyEnergy lines=[52] rc=0  sec=3 peakMB=508
+CayleyEnergy lines=[56] rc=0  sec=3 peakMB=516
+CayleyEnergy lines=[60] rc=0  sec=4 peakMB=747
+CayleyEnergy lines=[64] rc=0  sec=4 peakMB=755
+CayleyEnergy lines=[68] rc=0  sec=3 peakMB=508
+CayleyEnergy lines=[72] rc=0  sec=3 peakMB=512
+CayleyEnergy lines=[76] rc=0  sec=3 peakMB=593
+CayleyEnergy lines=[80] rc=0  sec=3 peakMB=593
+CayleyEnergy lines=[86] rc=0  sec=3 peakMB=508
+CayleyEnergy lines=[90] rc=0  sec=3 peakMB=514
+CayleyEnergy lines=[94] rc=0  sec=8 peakMB=1439
+CayleyEnergy lines=[98] rc=0  sec=8 peakMB=1442
+CayleyEnergy lines=[102] rc=0  sec=3 peakMB=508
+CayleyEnergy lines=[106] rc=0  sec=3 peakMB=516
+CayleyEnergy lines=[110] rc=0  sec=3 peakMB=609
+CayleyEnergy lines=[114] rc=0  sec=3 peakMB=609
+CayleyEnergy lines=[120] rc=0  sec=3 peakMB=510
+CayleyEnergy lines=[124] rc=0  sec=3 peakMB=526
+CayleyEnergy lines=[128] rc=0  sec=3 peakMB=508
+CayleyEnergy lines=[132] rc=-9 MEMKILL sec=13 peakMB=2861
+CayleyEnergy lines=[136] rc=-9 MEMKILL sec=13 peakMB=2801
+CayleyEnergy lines=[52, 56, 60, 64, 68, 72, 76, 80, 86, 90, 94, 98, 102, 106, 110, 114, 120, 124, 128] rc=0  sec=17 peakMB=1698
+FINAL CayleyEnergy converted=[52, 56, 60, 64, 68, 72, 76, 80, 86, 90, 94, 98, 102, 106, 110, 114, 120, 124, 128] of [52, 56, 60, 64, 68, 72, 76, 80, 86, 90, 94, 98, 102, 106, 110, 114, 120, 124, 128, 132, 136]
+SevenPrimary lines=[105, 107, 109, 125, 127, 129, 142, 144, 146, 162, 164, 166, 179, 181, 183, 207, 209, 211, 228, 230, 232, 242] rc=-9 MEMKILL sec=10 peakMB=2884
+SevenPrimary lines=[105] rc=-9 TIMEOUT sec=101 peakMB=945
+SevenPrimary lines=[107] rc=-9 MEMKILL sec=10 peakMB=2737
+SevenPrimary lines=[109] rc=-9 TIMEOUT sec=101 peakMB=807
+SevenPrimary lines=[125] rc=-9 TIMEOUT sec=101 peakMB=1187
+SevenPrimary lines=[127] rc=-9 MEMKILL sec=11 peakMB=2893
+SevenPrimary lines=[129] rc=-9 TIMEOUT sec=101 peakMB=814
+FINAL SevenPrimary converted=[] (stopped after 6 of 22 single-proof trials: 4 TIMEOUT >100s, 2 MEMKILL >2.8GB)
+PairKeyFourthMoment lines=[73] rc=1  sec=9 peakMB=609
+PairKeyFourthMoment lines=[69] rc=0  sec=9 peakMB=592
