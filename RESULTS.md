@@ -4,20 +4,20 @@
 
 ## In one paragraph
 
-This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified quantized, kicked cat map on the torus. **The BGS limit for this map is not proved.** Fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. Around that target, the programme registers 408 precisely scoped claims. 328 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). Among them are uniform trace bounds for the fixed kick, exact random-phase form factors, and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179). The current frontier is the corrected mean law R′ (BGS-TRACE-206), which remains **open and is not refuted**. The main recent result, **Theorem R♯-mod v4 (BGS-TRACE-299), is conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0–H8.
+This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified quantized, kicked cat map on the torus. **The BGS limit for this map is not proved.** Fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. Around that target, the programme registers 419 precisely scoped claims. 338 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). Among them are uniform trace bounds for the fixed kick, exact random-phase form factors, and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179). The current frontier is the corrected mean law R′ (BGS-TRACE-206), which remains **open and is not refuted**. The main recent result, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.
 
 ## Status at a glance
 
 | Registered state | Claims | Meaning |
 |---|---:|---|
-| proved | 328 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
-| verification-pending | 19 | Argument or computation exists; an independent check is outstanding |
-| conditional | 18 | Proved implication from stated hypotheses that are themselves open |
+| proved | 338 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
+| verification-pending | 17 | Argument or computation exists; an independent check is outstanding |
+| conditional | 21 | Proved implication from stated hypotheses that are themselves open |
 | open | 42 | Conjecture, hypothesis or programme obligation without a proof |
 | refuted | 1 | Shown false as stated |
-| **total** | **408** | |
+| **total** | **419** | |
 
-133 non-open claims link Lean 4 files, out of 152 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
+144 non-open claims link Lean 4 files, out of 155 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
 ## Headline results
 
@@ -81,23 +81,25 @@ R′ (BGS-TRACE-206) is a corrected mean law for the k1 kick at η = 2. Everythi
 | `BGS-TRACE-283` | **proved** | Theorem N3: scarred conductors carry the slow orbit beta = 1 | yes | [lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
 | `BGS-TRACE-296` | **proved** | Theorem C′: unit-beta part at h_p, for p with h_p squarefree (not proved for any p) | yes | [lineN2N4_inherited_level.md](mathematics/fixed-map/lineN2N4_inherited_level.md) |
 
-### Main current result: Theorem R♯-mod v4 (Lines N5–N19b, polymer-gas route)
+### Main current result: Theorem R♯-mod v5 (Lines N5–N21, polymer-gas route)
 
-This theorem is conditional. It says that if the open inputs H0–H8 hold and B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr, then W′_{3p}/m → ∞, so frozen R′ fails along m = 3p. The inputs are open, so this is a reduction, not a refutation of R′. A v5 revision is expected after the H1 and H4 research lines report.
+This theorem is conditional. It says that if the open inputs H0, H1 and H5–H8 hold and B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr, then W′_{3p}/m → ∞, so frozen R′ fails along m = 3p. H2 and H4 are met and H3 follows from H1. The inputs are open, so this is a reduction, not a refutation of R′. v5 (referee lineN22) supersedes v4 (BGS-TRACE-299): B_p now also charges the bad-cluster rate A_bad^KP, so the threshold depends on H1’s constant.
 
 | Claim | State | Result (short label) | Lean | Source |
 |---|---|---|---|---|
-| `BGS-TRACE-299` | **conditional** | Theorem R♯-mod v4: conditional reduction of 'frozen R′ fails along m = 3p' to H0–H8 | yes | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
-| `BGS-TRACE-300` | **open** | H1: collision lemma | — | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
-| `BGS-TRACE-301` | **open** | H3: Kotecký–Preiss polymer weight (finite part certified, tail open) | statement only | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
-| `BGS-TRACE-302` | **open** | H4: core-to-true conversion of the interaction constant (no working route yet) | — | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-325` | **conditional** | Theorem R♯-mod v5: conditional reduction of 'frozen R′ fails along m = 3p' to H0, H1, H5–H8 | yes | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-336` | **open** | H1 (re-scoped by N20): bad-cluster joint (A,B) second moment + near-collision constants | — | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-303` | **open** | H5: composite h_p | — | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-304` | **open** | H6: inputs of Theorem C′ (explicit p0, squarefree h_p) | — | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-305` | **open** | H7*: levels other than h_p | — | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-306` | **open** | H8: wrap-around points at composite h_p | — | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-307` | **proved** | Interaction bound delta_int^core <= 5.14476e-7 (H2 met; computer-assisted) | yes | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
-| `BGS-TRACE-318` | **proved** | Gas vs Robin crossover p1 >= 1390 under a stated idealisation (arithmetic implication) | yes | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
-| `BGS-TRACE-322` | **verification-pending** | delta_true(G <= 15) <= 2.470e-6 | — | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-302` | **proved** | H4 met: core-to-true conversion of the interaction constant | yes | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-326` | **proved** | delta_true <= 5.0313e-6 for all G (computer-assisted, [CA-fp]) | yes | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-332` | **conditional** | Prop. K: H1 implies H3 (Kotecký–Preiss weight a = a(C)) | yes | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-333` | **conditional** | Gas vs Robin crossover with all rate budgets: first prime 3307 (C <= 0.082) / 1409 (C <= 8.8e-4) | yes | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-329` | **proved** | Prop. F: no unrestricted carry/torus bound gives H1 (lower bound proved; ratio numerical) | — | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-299` | **conditional** | Theorem R♯-mod v4 (superseded by v5) | yes | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-324` | **verification-pending** | Prop X′ | yes | [lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 
 ## How to read this repository
@@ -112,6 +114,6 @@ This theorem is conditional. It says that if the open inputs H0–H8 hold and B_
 * **Continuous integration was not running as of 1 November 2026.** GitHub Actions refused to start jobs on this repository (account billing). All check results quoted in recent PRs are local runs.
 * **Legacy `native_decide`.** 88 uses in 12 older Lean modules (`CayleyCurveEnergy` (5), `CayleyEnergy` (21), `FibonacciRatioSmall` (5), `FourCutKernel` (2), `HistoricalMobiusDegenerateFiber` (4), `MagneticTraceSmall` (5), `PairKeyFourthMoment` (3), `PairKeySecondMoment` (4), `PellCoboundary` (7), `PellCohomology` (5), `SevenPrimary` (22), `TorusLevelSets` (5)) rely on native evaluation and therefore trust the compiler, beyond the kernel axioms. The claim boundaries disclose this. The LineB–N modules use none.
 * **Hash-pinned broken links.** 24 relative links in 11 files point to paths that later moved: `literature/arithmetic_dependency_closure_20261022.md`, `mathematics/fixed-map/fractional_hamming_cancellation.md`, `mathematics/fixed-map/onestep_charge_gap.md`, `mathematics/spectral-obstructions/flat_spectrum_obstruction.md`, `mathematics/trace-bridge/balanced_pair_schur_reduction.md`, `record/audits/20261006/README.md`, `record/charge_strengthening_promotion.md`, `record/circular_kernel_route_20261004.md`, `record/frozen_algebraic_review_20260924.md` and `supplement/fixed_map/resolvent-flow/loop_test_reductions.md` are byte-pinned by seals, manifests or receipts, and `literature/bibliography.md` is generated. They are left unedited on purpose: editing them would break the pins.
-* **Frozen evidence packets.** 366 verbatim, sha256-pinned packet files under `computations/verification/line*/` are outside the assertion-entry policy and the SyntaxWarning compile step ([registry](computations/maintenance/frozen_evidence_packets.json), [rationale](computations/maintenance/ASSERTION_POLICY.md)). They are evidence of what was run, not maintained entry points.
+* **Frozen evidence packets.** 368 verbatim, sha256-pinned packet files under `computations/verification/line*/` are outside the assertion-entry policy and the SyntaxWarning compile step ([registry](computations/maintenance/frozen_evidence_packets.json), [rationale](computations/maintenance/ASSERTION_POLICY.md)). They are evidence of what was run, not maintained entry points.
 * **Thin evidence on a few registered claims.** BGS-TRACE-095 and BGS-TRACE-097 (conditional) list no verifier; their only evidence is an integrity audit recording `all_valid: false`. BGS-RES-015 (proved) cites its own source note as evidence and depends on the conditional BGS-RES-014 for a symbol identity that it recomputes directly (see its `dependency_scope`).
-* **Manuscript lags the registry.** The unified manuscript covers the programme through BGS-TRACE-210 (Line H). Lines I–N (BGS-TRACE-211..324), including Theorem R♯-mod, are not yet written up; a claim skeleton is at `manuscript/unified_sections/lines_I_N_skeleton.tex` (not in the build).
+* **Manuscript lags the registry.** The unified manuscript covers the programme through BGS-TRACE-210 (Line H). Lines I–N (BGS-TRACE-211..336), including Theorem R♯-mod, are not yet written up; a claim skeleton is at `manuscript/unified_sections/lines_I_N_skeleton.tex` (not in the build).

@@ -1,0 +1,63 @@
+--- ../THEOREM_DRAFT_v4.md	2026-11-01 03:46:23.950480733 +0500
++++ scratch/THEOREM_DRAFT_v5_proposed.md	2026-11-01 10:04:09.830370472 +0500
+@@ -1,4 +1,6 @@
+-# THEOREM_DRAFT v4 — conditional refutation of frozen R′ (TRACE-206) along m = 3p (Theorem R♯ path, modulus form)
++# THEOREM_DRAFT v5 (proposed, not applied) — conditional refutation of frozen R′ (TRACE-206) along m = 3p (Theorem R♯ path, modulus form)
++
++*v5 (proposed): Line N20 — H1 re-scoped (Lemma J, Prop. F), H1 finite part to j ≤ 14, H3 conditional on H1 only (Prop. K); see §11.*
+ 
+ *v4: Line N19b, 2026-11-01 (Asia/Yekaterinburg, UTC+5). v4 = v3 + referee lineN16 §4 edits E1–E7 (verbatim) + N16 referee minor notes (N16-1…N16-4) in the H1/H4 rows; see §10. v1, v2, v3 kept unchanged.*
+ 
+@@ -79,9 +81,9 @@
+ | # | Hypothesis | Status / best partial result | Where |
+ |---|---|---|---|
+ | H0 | Standing package of N6 Theorem R♯ (Line F/J/J3/L16 trace representation; TRACE-197/199/207/212/213/228; Prop X architecture; n_cert) | taken as given; Prop X [P-sketch]; n_cert [CA] | N6 §5, N7 §0, N8 |
+-| H1 **(T)** collision lemma: lattice→collision reduction for shell sums with C ≤ 0.082 at J₀ = 12; plus the A_bad tail j > 12 | **OPEN, [H].** Proved: exact carry reduction (\|e\| ≤ 15 [P]; sharp \|e\| ≤ 14, 29 values, **633** reachable pair states, referee N15-F3) and the torus-mean identity [P]. [N]: carry sums with \|e\| ≤ 3 (n ≤ 6) and \|e\| ≤ 1 (n ≤ 12) equal the i.i.d. value to relative ≤ 1.7e-9 (≈1.35e-11 for n ≥ 5; reproduced without cancellation, lineN16); \|e\| ≥ 4 not computed ([H] negligible: isolated-carry entry weights 7e-3, 3e-8, 2e-15 for c = 1, 2, 3); N15's apparent prefactor non-convergence was an artefact of the share proxy (N16 §1). Labels (N16-1): the carry reduction and torus identity are [P]; the shell sums entering them are [CA-fp]. Missing: certified multi-step carry operators (phase-keeping certificate on 633 states) and box/aliasing constants of the Poisson step. Margin: collision constant C_emp 4.4e-4 vs 0.082 = **186×** [N] (the "≈150×" of v1/v2 was the N14 *budget* margin). Tail j > 12: 1.56e-8 is a **[H] placeholder** (N15-F1), not Lemma D | N14 §2, §6; N15 §3; N16 §1, §3 rows 13–17 |
++| H1 **(T)** collision lemma, re-scoped (N20): H1 = **(H1-bad)** polymer-restricted joint second moment on the ε-chain (A even / B odd sites, ε-zero-runs < g₀): Σ_{bad, shell j}\|r_Ar_B\|² ≤ C·2^{j(1−β(0.28))}, C ≤ 0.082 at J₀ = 12; **+ (H1-ali)** lattice→main-term (near-collision / box) constants | **OPEN, [H].** Proved: finite part **j ≤ 14** with C_cert ≤ 4.36e-4, decreasing for j ≥ 8 [CA-fp] (N20 Thm A); Lemma P0 (X 1-periodic) and **Lemma J**: the joint collision relation is ε-adic, carries \|e\| ≤ 51 (sharp), **6145** pair states [P] — the 633-state λ-system (\|e\| ≤ 14 [P, Lean]) is only the single-window subsystem; renewal Lemma R [P, Lean]; **Prop. F** [P mod N13 CA]: the *unrestricted* joint torus mean is ≥ 5.1e-7·λ^{−n} ≫ i.i.d. 3.45²·0.28^{2n} (ratio ≥ 4.3e-8·2.188ⁿ), so no unrestricted carry/Bohr-mean bound can give H1; the bad restriction must enter the certificate. [N]: joint torus/iid = 1.86 ± 0.07 at n = 2 (single windows ≈ 1, as N15/N16); all-class lattice S2 flat in j. The single-window "torus = iid to 1e-11" (N16) is **not** evidence for H1. Margin: C_cert ≤ 4.4e-4 vs 0.082 (186×) [CA-fp on j ≤ 14 only] | N14 §2; N15 §3; N16 §1; **N20 §2–4** |
+ | H2 **(I-core)** interaction, core functional | **met:** δ_int^core ≤ **5.14476e-7** [CA-fp; c3_mid, closed F14.1, confirmed lineN15 arb 5.1447502e-7] + Lemma D core tail G > 15 ≤ 1.56e-8 [P+N] | N15 c3_mid.py; N13/N14 Lemma D; audit lineN15 §1b |
+-| H3 **(KP)** polymer weight e^{a\|γ\|}, log→modulus | Explicit (N15 §4): a = 5.93e-6 at g₀ = 4, S₀ = 2.063e-6; S₀ + S₁/(1+g₀) ≤ a for g₀ = 2..6 (Lean kp_g2..g6); A_bad^KP + δ_int = 2.5774e-6 (kp_budget). KP criterion [P] (Kotecký–Preiss 1986, with the anchored-cluster corollary for the per-site log-correction: Ueltschi 2004, Fernández–Procacci 2007; N15-F2). Finite part [CA-fp]. Tail j > 12 = H1 ([H] placeholder). Background interplay and tail ℓ-weighting [P-sketch]. Polymer normalisation [P-sketch] | N15 §4, kp.py; N16 rows 8, 23 |
++| H3 **(KP)** polymer weight e^{a\|γ\|}, log→modulus | **[P + CA mod H1-shell]** (N20 Prop. K): for every C ≤ 0.082 at J₀ = 12, KP holds with a ≤ 2.70e-3 and Re Λ_lo′ − A_bad^KP − δ_true ≥ 2.76e-4; with C = 8.8e-4 (2× measured): a = 8.25e-6, A_bad^KP = 2.38e-6. The 1.56e-8 placeholder is withdrawn. Finite part [CA-fp] j ≤ 14; tail arithmetic [CA] (arb) + Lean; KP criterion [P] (Kotecký–Preiss 1986; anchored corollary Ueltschi 2004, Fernández–Procacci 2007). [P-sketch]: span ≤ 2j + g₀ (j ≥ 5), background interplay, polymer normalisation. Note: C_needed(12) = 0.08168 under the "tail ≤ ½ budget" convention | N15 §4; **N20 §3.4** |
+ | H4 **(CT)** core→true conversion | **OPEN; now = "difference-form (pair-minus-product) conversion cancelling the per-step perturbation (dominant) and end-projector terms + G > 15 true-functional tail"** (lineN16 §5; N16-2: N16 §2's end-projector diagnosis is superseded). H-product route vacuous (N15 §5). Vector-chain conversion per window: E/\|r\| ≈ 2e-3 for singles, ≈ 8% (median) for pair windows, max 5.27 [P-sketch lemma (the written lemma must include the second-order dPi²·‖Q‖ term), CA-fp numerics], giving δ_true(G ≤ 15) ≤ 2.470e-6. Under box widening the G > 15 bound is flat (≈1.5e-7 per G), so it is not controlled. The pair-window error is dominated (≈93%) by the accumulated per-step core→true perturbation, so a difference-form conversion must cancel that term, not only the end-projector term (N16 §2; lineN16 §1). Single-core: ≤ 2.094e-8 relative [CA]+[P-sketch] | N13 (B), N15 §5, N16 §2, rows 18–20 |
+ | H5 **(composite h_p)** (a) mixed classes: (R-mix) E_{mixed,d} F_p ≤ e^{o(p)} d^c r₂^p, c < 0.387 uniformly in d \| h_p; (b) **cross lines**: the 2^{ω} − 2 further fully isotropic lines at composite h_p (in X, not coded by the gas) bounded within budget; (c) partially isotropic points. **Or** p ∈ 𝒫 = {h_p prime} (then (a)–(c) vanish) | OPEN. c_B = 0.7375 established at [P-sketch] (asymptotic, constants ignored), covering iso parts d ≤ 1.588^p. **p = 31** (h₃₁ = 424577·865087, balanced semiprime, θ_max = 0.250 < 0.262) is covered by this, **not** by 𝒫. Evidence c ≤ 0 [N]. No known theorem applies (N15b). (b) was omitted in v1/v2 (N7-F6; lineN10/11 item 4) | N13b, N14b, N15b, N16b, N7-F6 |
+ | H6 **(C′ inputs)** explicit p₀; h_p squarefree or conductor-q^a weights | C′ [P + CA* mod H6]. p₀ not computed. Squarefreeness open (Wieferich-type, N3-F8). The old "level 7h_p unit points" clause (N3-F9) is **subsumed** by the inherited-level floor I_p (7 \| K_p, so 7h_p = e·h_p), on or off 𝒫 | N2, N3, audit lineN3 |
+@@ -119,6 +121,11 @@
+ | Short types Σ\|w\| = 9.970e-7 (173 rows incl. α = 4) | [CA-fp] | N14 |
+ | δ_true(G ≤ 15) ≤ 2.470e-6 | [CA-fp] numerics, [P-sketch] conversion lemma | N16 |
+ | Exact carry reduction \|e\| ≤ 15 (sharp 14, 633 states); torus identity | [P] (633/14: referee) | N15 §3, audit lineN15 §1e |
++| λ-carry graph: 633 states, \|e\| ≤ 14, ρ(adj) ≥ 20; renewal lemma | [P, Lean kernel decide] | N20 §3.2–3.3, lean/ |
++| Lemma J: joint (A,B) collisions are ε-adic, \|e\| ≤ 51, 6145 states | [P] (+ exact integer BFS) | N20 §2 |
++| Prop. F: unrestricted joint torus mean ≥ 5.1e-7·λ^{−n} (≫ i.i.d.) | [P mod N13 CA] | N20 §2 |
++| Shell law finite part j ≤ 14, C_cert ≤ 4.36e-4 | [CA-fp] | N20 §3.1 |
++| H1-shell ⇒ KP (H3), any C ≤ 0.082 | [P + CA] | N20 §3.4 |
+ | Theorem C′ (unit points, rates 1.27440 / 1.20428) | [P + CA* mod H6] (Λ is [CA*], lineN3) | N2, N3 |
+ | Lemma 1 (sublattice separation; squarefree d, split primes) | [P] (refereed lineN16 §2b; C = 16λ²δ²h²λ^{−p}) | N14b §2, REPORT_N17b_v2 §6 |
+ | Lemma 2 (subgroup C′, c_B = 0.7375) | [P-sketch] | N14b §2 |
+@@ -156,6 +163,8 @@
+   - v2's "≈150× margin" for the collision constant (it is 186×; 150× is the budget margin);
+   - the "+2.95 at m = 57" description.
+ 
++- **v5 (N20):** N16 §1.3 "torus ≈ i.i.d., so essentially the whole margin is available to the box/aliasing constant" — withdrawn **for H1** (single windows only; joint torus/iid ≥ 4.3e-8·2.188ⁿ, Prop. F). The H3 tail placeholder 1.56e-8 — withdrawn (replaced by Prop. K, conditional on H1).
++
+ - N18b a_crossover_v2.py Robin term 0.6483/ln K_p (should be /ln ln K_p): crossovers 1382/1386 and "12.77 at p = 1289" superseded by 1386/1390 and 12.85 (lineN16).
+ 
+ ## 7. Referee findings reflected
+@@ -164,7 +173,7 @@
+   - "δ_int printed as 5.14416e-7" and "ρ̄ needs a-priori constants or arb" are **closed by N15** (lineN15 §1a–1c).
+ - **lineN15:** §3 items 1–20 applied (map in §9). N15-F1 (H1/H3 rows), N15-F2 (H3 citation), N15-F3 (\|e\| ≤ 14, 633 states).
+ - **"What remains"** (lineN15 §4, merged):
+-  1. **H1:** phase-keeping carry certificate on 633 pair states, or an analytic Gram tail; box/aliasing constants; constant ≤ 0.082 at J₀ = 12; j > 12 tail.
++  1. **H1 (re-scoped, N20 §4):** (H1-bad) polymer-restricted joint second moment on the ε-chain (ε-carries \|e\| ≤ 51, 6145 states, 495⁴ blocks; an unrestricted torus/carry bound provably cannot work, Prop. F); (H1-ali) near-collision/box constants; tail j > 14. The 633-state λ-certificate is no longer sufficient (single-window only).
+   2. **H4:** difference-form conversion + G > 15 true tail.
+   3. **H5:** R-mix + cross lines + partially isotropic points, or 𝒫 (open, ⇔ ¬R_NSW).
+   4. **H7*:** hp-div, mixed and all K_p levels (incl. prime powers) below L_fl at rate < T′ = 1.42785. Needed even on 𝒫; Theorem W covers nothing at realistic p.
+@@ -233,3 +242,10 @@
+ - **E6:** referee-status cells in §3, §8 and §7 item 6 updated; optional N15b/N16b author-notes row added.
+ - **E7:** §6 erratum for the N18b Robin term.
+ - Lemma 1 is now [P] (lineN16 §2b), with cosmetic fixes L1-a/L1-b in N19b/REPORT_N17b_v3.md.
++
++## 11. Changes v4 → v5 (Line N20, proposed)
++- H1 row: re-scoped to (H1-bad) + (H1-ali); Lemma J, Prop. F, Thm A (j ≤ 14) added; single-window [N] evidence marked as not evidence for H1.
++- H3 row: [P + CA mod H1-shell] (Prop. K); placeholder withdrawn.
++- §3: five rows added (λ-carry graph + renewal; Lemma J; Prop. F; Thm A; Prop. K).
++- §6: two withdrawals. §7 item 1 replaced.
++- Plain summary unchanged in substance: H1 remains the first open input.

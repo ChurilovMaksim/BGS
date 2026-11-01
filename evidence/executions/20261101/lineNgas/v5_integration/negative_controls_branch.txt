@@ -1,0 +1,27 @@
+registry_audit base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+repository_audit base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+bibliographic_audit base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+text_control_audit base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+render_claim_registry_check base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+render_errata_check base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+render_status_check base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+render_results_check base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+render_appendix_a_check base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+frozen_packets_check base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+render_bibliography_check base= 0 tampered= 0 INSENSITIVE-TO-THIS-TAMPER
+render_research_views_check base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+manuscript_references_check base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+wave2_check_sources base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+wave3_check_sources base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+wave2_integration_audit base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+wave3_integration_audit base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+fixed_map_supplement_audit base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+spectral_corpus_check base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+spectral_corpus_replay base= 0 tampered= 0 INSENSITIVE-TO-THIS-TAMPER
+spectral_edition_missing_input 1 NEGATIVE-CONTROL-DEMONSTRATED (missing input)
+unittest_discover base= 0 tampered= 1 NEGATIVE-CONTROL-DEMONSTRATED
+sync_finite_orbit_section_write_refusal 1 NEGATIVE-CONTROL-DEMONSTRATED (refusal)
+sync_fixed_map_section_write_refusal 1 NEGATIVE-CONTROL-DEMONSTRATED (refusal)
+sync_return_sections_write_refusal 1 NEGATIVE-CONTROL-DEMONSTRATED (refusal)
+23/25 negative controls demonstrated; non-demonstrated: ['render_bibliography_check', 'spectral_corpus_replay']
+EXIT 1

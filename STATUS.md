@@ -14,16 +14,16 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-11-01**. **408 registered claims.**
+**2026-11-01**. **419 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 328 |
-| verification-pending | 19 |
-| conditional | 18 |
+| proved | 338 |
+| verification-pending | 17 |
+| conditional | 21 |
 | open | 42 |
 | refuted | 1 |
-| **Total** | **408** |
+| **Total** | **419** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -44,8 +44,8 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 0 | 23 |
 | RET | 3 | 0 | 1 | 0 | 0 | 4 |
-| TRACE | 230 | 17 | 13 | 38 | 1 | 299 |
-| **Total** | 328 | 19 | 18 | 42 | 1 | **408** |
+| TRACE | 240 | 15 | 16 | 38 | 1 | 310 |
+| **Total** | 338 | 17 | 21 | 42 | 1 | **419** |
 
 ## Open programme obligations
 
@@ -92,16 +92,16 @@ rendered in full in the [claim registry](record/claim_registry.md).
 | `BGS-TRACE-298` | Line N3/N4 open item: the isotropic part at q \| h_p (and at the mixed levels 7q), i.e. a bound \|D_q + D_qbar\| <= ((1 - delta) T)^m for the isotropic lines at every prime q \| h_p, together with composite d \| h_p having an isotropic prime component | [mathematics/fixed-map/lineN2N4_inherited_level.md](mathematics/fixed-map/lineN2N4_inherited_level.md) |
 | `BGS-TRACE-300` | Line N hypothesis H1 (open [H]): collision lemma - lattice-to-collision reduction for shell sums with constant C <= 0.082 at J0 = 12, plus the A_bad tail j > 12 | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-301` | Line N hypothesis H3 (open): Kotecky-Preiss polymer weight e^{a\|gamma\|} with a = 5.93e-6 at g0 = 4 (log -> modulus), finite part certified, tail j > 12 = H1 | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
-| `BGS-TRACE-302` | Line N hypothesis H4 (open, no working route): core -> true conversion of the interaction constant, now = difference-form (pair-minus-product) conversion + the G > 15 true-functional tail | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-303` | Line N hypothesis H5 (open): composite h_p - (a) mixed classes (R-mix) E_{mixed,d} F_p <= e^{o(p)} d^c r_2^p with c < 0.387 uniformly in d \| h_p; (b) the 2^omega - 2 cross lines; (c) partially isotropic points; or p in P = {h_p prime} | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-304` | Line N hypothesis H6 (open): inputs of Theorem C' - an explicit p0 and squarefreeness of h_p (or conductor-q^a weights) | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-305` | Line N hypothesis H7* (open): for included levels d not in {h_p} u {e h_p}, d < L_fl = h_p^{1+o(1)}: \|Lin_d\| <= eps_d \|Z_rho\|^2/h_p with sum eps_d <= kappa0, i.e. cross-correlation growth < T' = 1.42785; needed even for prime h_p | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 | `BGS-TRACE-306` | Line N hypothesis H8 (open): deep wrap-around points of gap (a) at composite h_p - free if per-point weights are not d-amplified, otherwise need c < 1.1718 l0 / ln d (= 0.6647 l0 / log_lambda d) | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
+| `BGS-TRACE-336` | Line N hypothesis H1, re-scoped by N20 (open [H]): (H1-bad) bad-cluster (polymer-restricted) joint (A,B) second moment on the eps-chain, sum_{bad, shell j} \|r_A r_B\|^2 <= C 2^{j(1 - beta(0.28))} for j > J0 = 12 with C <= 0.082, plus (H1-ali) the near-collision/box constants | [mathematics/fixed-map/lineN5N18_gas_conditional.md](mathematics/fixed-map/lineN5N18_gas_conditional.md) |
 
 ## Corrections
 
 Errata registry schema `bgs-errata-v1`; updated
-**2026-10-30**; **64 registered entries**.
+**2026-11-01**; **65 registered entries**.
 The status authority for corrections is
 `record/retractions.md`; the generated reader-facing index
 is [`ERRATA.md`](ERRATA.md).
@@ -110,7 +110,7 @@ is [`ERRATA.md`](ERRATA.md).
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
 `2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 305 follow-on claims adopted after
+It records 316 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
 external-dependency extension of 29 external IDs.

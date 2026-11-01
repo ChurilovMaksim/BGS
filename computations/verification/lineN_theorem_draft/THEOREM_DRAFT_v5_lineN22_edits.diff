@@ -1,0 +1,102 @@
+--- THEOREM_DRAFT_v5.md.author
++++ THEOREM_DRAFT_v5.md
+@@ -2,6 +2,8 @@
+ 
+ *v5: final assembly, Grok Bot, 2026-11-01 (Asia/Yekaterinburg, UTC+5). v5 = v4 + N20 v2 diff (`N20/THEOREM_DRAFT_v4_to_v5_v2.diff`, refereed lineN20) + N21 v2 (refereed lineN21) + referee lineN21b (N_H table; budgets; crossover) + the crossover decision of §2 (A_bad^KP is charged). See §11. v1–v4 are kept unchanged. Nothing pushed; claims.json untouched (proposals in `V5/CLAIMS_PROPOSED_v5.md`).*
+ 
++*Repo copy (integration, 2026-11-01): referee lineN22 edits E1–E8 applied verbatim (GO after E1–E12; E9–E12 concern the claims proposal and are applied in `record/claims.json`/`record/errata.json`, not here). The author original has sha256 69bdea02…998ae4 (/workspace/bgs-lineN/THEOREM_DRAFT_v5.md; listed in `V5/SHA256_V5.txt`); the exact change is `THEOREM_DRAFT_v5_lineN22_edits.diff`. Paths `V5/…` resolve relative to this directory; N20/N21 packets and referee reports lineN20/lineN21/lineN21b/lineN22 are under `evidence/executions/20261101/lineNgas/`. Nothing else differs from the author original.*
++
+ *v4: Line N19b, 2026-11-01 (Asia/Yekaterinburg, UTC+5). v4 = v3 + referee lineN16 §4 edits E1–E7 (verbatim) + N16 referee minor notes (N16-1…N16-4) in the H1/H4 rows; see §10. v1, v2, v3 kept unchanged.*
+ 
+ *v3: Line N18b, 2026-11-01 (Asia/Yekaterinburg, UTC+5).*
+@@ -13,19 +15,19 @@
+ - **What is proved unconditionally.** Frozen R′ is **not** refuted, unconditionally or at any single p. What is proved:
+   - the structural lemmas and bookkeeping of §3 (positivity, TRACE-213 level identity, Lemmas P/P′, coding lemma, Lemma 1, K_p arithmetic, carry reductions) [P];
+   - certified constants [CA]/[CA-fp]: Re Λ_lo′, adapted norm, step-norm table (now independently recomputed), δ_int^core;
+-  - **the true-functional interaction constant**: δ_true ≤ 5.0313e-6 for all G (N21 Lemmas C, Q, D^T) [P] + [CA-fp], refereed lineN21/lineN21b. **H4 is no longer an input.**
++  - **the true-functional interaction constant**: δ_true ≤ 5.0313e-6 for all G (N21 Lemmas C, Q, D^T) [P] + [CA-fp], refereed lineN21/lineN21b, given the standing-package constants taken as certified (N8 n_cert constants, N13 V1–V3b, Line F F2, N6 symmetry), as for H2. **H4 is no longer an input.**
+   - negative results that close routes: the H-product conversion is vacuous; the D1 + G*_gas route is dead; and (N20) **Lemma J / Prop. F**: no unrestricted carry/Bohr-mean bound can give H1.
+ - **What is conditional, and on what.** Theorem R♯-mod v5 (§2) turns "B_p ≥ κ > 0 for infinitely many primes p" into "W′_{3p}/m → ∞", i.e. frozen R′ fails along m = 3p. It is [P mod inputs] and needs these open inputs:
+   - **H1** (re-scoped by N20): the bad-cluster (polymer-restricted) **joint second moment** on the ε-chain, Σ_{bad, shell j}|r_A r_B|² ≤ C·2^{j(1−β(0.28))} for j > J₀ = 12 with C ≤ 0.082, plus the lattice→main-term (near-collision/box) constants. [H]. Only the finite shells j ≤ 14 are certified (core functional), with a 186× margin.
+-  - **H3** (KP polymer bound): **follows from H1** (Prop. K) [P + CA mod H1-shell; span bound P-sketch], so it is not an independent input any more.
++  - **H3** (KP polymer bound): **follows from H1** (Prop. K) [P + CA mod H1-shell; span bound and background interplay P-sketch], so it is not an independent input any more.
+   - **H5**: composite h_p (mixed classes, cross lines, partially isotropic points), or restriction to 𝒫 = {h_p prime}, whose infinitude is open (⇔ ¬R_NSW).
+   - **H6**: explicit p₀ for C′, and squarefreeness of h_p (Wieferich-type).
+   - **H7\***: signed control of included levels d ∉ {h_p, e·h_p} below the floor L_fl (hp-div, mixed, all K_p levels incl. prime powers), at growth < T′ = 1.42785. Needed even on 𝒫.
+   - **H8**: deep wrap-around points at composite h_p (reduces to H1 on 𝒫, [P-sketch]).
+   - **H0**: the standing N6 package (taken as given).
+ - **The threshold p₁ moved (v5 correction, §2).** The bad-cluster rate A_bad^KP enters the gas exponent together with δ, and v4 left it out. With all rate budgets charged, p₁ depends on H1's constant:
+-  - first prime **3307** under H1 as stated (C ≤ 0.082);
+-  - first prime **1409** if H1 holds with C ≤ 8.8e-4 (2× the measured finite-shell constant).
++  - first prime **3307** under H1 as stated (C ≤ 0.082), rate budgets only (additive budgets idealised, item (iv)), and sensitive to the [P-sketch] background normalisation of A_bad^KP (+1% → 3359; referee lineN22);
++  - first prime **1409** under a strengthened H1 with C ≤ 8.8e-4 (2× the measured finite-shell constant; by Prop. F the finite shells are not evidence for the tail). This value is robust (1409 up to 2× A_bad^KP).
+   - v4's "first prime 1399" holds only with A_bad^KP = 0.
+ - **New problems formulated** (N20/N21):
+   - (i) H1-bad as a polymer-restricted joint (A,B) second-moment problem on an ε-adic carry system (|e| ≤ 51, 6145 pair states), where Prop. F rules out every unrestricted method;
+@@ -57,10 +59,10 @@
+ - **Level-h_p sum.** φ⁻¹Dev_{h_p} ≥ S_ρ·(n/h_p)·(|1+X+Y|² − 1), S_ρ := φ⁻¹|Z_ρ|²/h_p (N6 §0.8, N11b §1):
+   - X: isotropic sum. At composite h_p, X also contains the 2^{ω(h_p)} − 2 **cross lines** (N7-F6), which the gas does not code.
+   - Y = Y_U + Y_mix + partially isotropic points.
+-- **Gas.** X_coded = 2[(1+Λ)^p e^{pΔ} − 1] − (dense part) (N11 §4). The lower bound used is |1 + X_coded| ≥ 2(1 + Re Λ_lo′)^p e^{−pδ} − 1, **not** with (1 + Re Λ − δ)^p (N11-F4).
++- **Gas.** X_coded = 2[(1+Λ)^p e^{pΔ} − 1] − (dense part) (N11 §4). The lower bound used is |1 + X_coded| ≥ 2(1 + Re Λ_lo′)^p e^{−pδ} − 1, **not** with (1 + Re Λ − δ)^p (N11-F4). This is the model-gas bound; with the bad clusters (H3) the factor is e^{−p(δ + A_bad^KP)} (§2).
+ 
+ ## 2. Conditional main theorem (draft)
+-**Theorem R♯-mod v5 (draft) [P mod inputs H0, H1, H5–H8 (H2, H4 met; H3 ⇐ H1), assembly; v2 bookkeeping checked by referee lineN15 item 20; the v5 A_bad^KP correction of the exponent is not yet refereed].**
++**Theorem R♯-mod v5 (draft) [P mod inputs H0, H1, H5–H8 (H2, H4 met; H3 ⇐ H1), assembly; v2 bookkeeping checked by referee lineN15 item 20; the v5 A_bad^KP correction of the exponent is [P-sketch], refereed lineN22 (correct, necessary)].**
+ Let p be prime, m = 3p, p ≥ p_thr := max of the thresholds listed below. Assume H0–H8 at p. Put
+ 
+   B_p := (n/h_p)·[(2(1+Re Λ_lo′)^p e^{−p(δ + A_bad^KP)} − 1 − |X_tail| − |X_cross| − |Y| − e^{−0.28p})² − 1] − I_p − ε_16 − ε_fl − ε_other,
+@@ -79,7 +81,7 @@
+ - **Why A_bad^KP is in the exponent (v5 correction; lineN21b Task 3).**
+   - The per-site normalisation of the gas is Re Λ = 2Σ_model Re w, and every non-model cluster is a polymer with activity A_bad (N14 §1 item 4: "the target is A_bad < Re Λ_lo′ − δ_int").
+   - KP (H3) controls the log of the polymer partition function only up to p·A_bad^KP. So the lower bound on |1 + X_coded| carries the factor e^{−p(δ + A_bad^KP)}, not e^{−pδ}.
+-  - v4's B_p and the N18b/N19b/N21 crossover charged δ alone. That cannot be justified: no argument shows that the bad clusters only *add* modulus. The v5 formula charges both. [P-sketch: the same log→modulus step as H3 (background interplay [P-sketch])]. **Flagged for the referee.**
++  - v4's B_p and the N18b/N19b/N21 crossover charged δ alone. That cannot be justified: no argument shows that the bad clusters only *add* modulus. The v5 formula charges both. Precisely: |ln Ξ_bad| ≤ Σ_γ |w̃(γ)| e^{a|γ|} ≤ p·S₀(a) (anchored KP corollary, Ueltschi 2004 Thm 1), so |Ξ_bad| ≥ e^{−pS₀(a)}; the charge is the weighted S₀(a), not a. Here w̃ are the bad activities renormalised by the model background, and S₀ must be evaluated with w̃ [P-sketch, as H3 background interplay]. Refereed lineN22: correct and necessary (no sign information on bad clusters); 3307 moves by ≈ +50 per +1% in S₀, 1409 is stable.
+ - Re Λ_lo′ = 6.234e-4.
+ - I_p := σ(K_p)/K_p − 1 ≤ e^γ ln ln K_p + 0.6483/ln ln K_p − 1 (Robin 1984, Thm 2).
+ - ε_16: the (±2,16) contribution (N7). ε_fl: floors of levels d ≥ L_fl. ε_other: H7* levels.
+@@ -95,7 +97,7 @@
+ | ε₁₆ (N7 two-term B16 form) | p ≥ 339 (crude form: 498, N7-F1) | [CA]+[P] |
+ | TRACE-227 | m ≥ 243 (p ≥ 81) | registered |
+ | TRACE-271 | m ≥ 495 (p ≥ 165) | registered |
+-| p₁: gas vs Robin, **all rate budgets charged**: δ_eff = δ_true + A_bad^KP (additive terms still idealised: tails = Y = X_cross = ε = 0, n/h_p := 1) | **H1 as stated (C ≤ 0.082):** δ_eff ≤ 3.4962e-4 → all p ≥ **3305**, first prime **3307**. **C ≤ 0.04:** 1.1691e-4 → 1726 / 1733. **C ≤ 8.8e-4** (2× measured finite-shell C): 7.4115e-6 → 1402 / **1409**. **C ≤ 4.4e-4:** 7.1864e-6 → 1402 / 1409. **v4-style A_bad^KP = 2.0629e-6** (with the withdrawn placeholder): 7.0944e-6 → 1401 / 1409 (= lineN21b). In every case there are no violations among primes ≤ 5000 and monotonicity holds | [P-arith: float/mpmath + monotonicity, N19b logic verbatim (`V5/code/crossover_v5.py`)], conditional on H1 through A_bad^KP |
++| p₁: gas vs Robin, **all rate budgets charged**: δ_eff = δ_true + A_bad^KP (additive terms still idealised: tails = Y = X_cross = ε = 0, n/h_p := 1) | **H1 as stated (C ≤ 0.082):** δ_eff ≤ 3.4962e-4 → all p ≥ **3305**, first prime **3307**. **C ≤ 0.04:** 1.1691e-4 → 1726 / 1733. **C ≤ 8.8e-4** (2× measured finite-shell C): 7.4115e-6 → 1402 / **1409**. **C ≤ 4.4e-4:** 7.1864e-6 → 1402 / 1409. **v4-style A_bad^KP = 2.0629e-6** (with the withdrawn placeholder): 7.0944e-6 → 1401 / 1409 (= lineN21b). In every case there are no violations among primes ≤ 5000 and monotonicity holds | [P-arith: float + exact big-int K_p + monotonicity, N19b logic verbatim (`V5/code/crossover_v5.py`); independently reproduced in mpmath (referee lineN22; C = 0.04 with unrounded input: 1725/1733)], conditional on H1 through A_bad^KP |
+ | p₁, δ only (A_bad^KP = 0; **superseded**, kept for comparison) | δ_true = 5.0313e-6: all p ≥ 1397, first prime 1399 (N21 v2; referee lineN21 §4). Core δ: 1386. v4: 1390 | [P-arith], but **not** the theorem's threshold |
+ | p₁ with additive budgets (tails, Y, X_cross, ε, n/h_p) | not computed | open |
+ | Theorem W (only if Weil coverage is invoked) | p ≳ 8.3e25 (m₁ uncomputed) | TRACE-252 |
+@@ -138,7 +140,7 @@
+ | Prop X′ explicit error, p ≥ 1289 | [P mod Line F certs + class CA], certified classes only; k-parity mechanism and E-family absorption [P-sketch] (N8-F3/F4) | N8 §2 |
+ | 15 small-depth classes (near-0 + 14) | [CA] | N8 §0 |
+ | Coding lemma | [P] | N11 §3 |
+-| \|1+X_gas\| ≥ 2(1+Re Λ)^p e^{−pδ} − 1 | [P given the model form] | N11 §0 |
++| \|1+X_gas\| ≥ 2(1+Re Λ)^p e^{−pδ} − 1 (model gas; with bad clusters e^{−p(δ + A_bad^KP)}, §2) | [P given the model form]; bad-cluster factor [P-sketch] | N11 §0 |
+ | Re Λ_lo ≥ 6.238e-4 (Re Λ_lo′ = 6.234e-4 after charges) | [CA] | N11 §0, N14 |
+ | Adapted norm: cond_H 21.103, Lip_H 167.213, Q̃ 0.45 | [CA] | N13 b_arb.py |
+ | Quadratic step bound N_H ≤ 1 + 1.01e-12 + 4260t², **only for \|t\| ≤ 1/256** | [CA]+[P] (lineN13 partition) | N13 b2_quad.py |
+@@ -227,7 +229,7 @@
+ | Inclusion m₀ = 15 | [P] | N17b g_threshold.py; TRACE-273 | lineN15 §2(c) ✓ |
+ | → ∞ step, B_p ≥ κ suffices | [P mod inputs] | N17b_v2 §2 | lineN15 §2(f), item 20 ✓ |
+ | Gas vs Robin, δ only: first prime 1399 (superseded as threshold) | [P-arith] | N18b a_crossover_v2.py; N19b a_crossover_v3.py; N21 crossover_N21.py | lineN16 §2a ✓; lineN21 §4 ✓ (1397/1399 at δ_true) |
+-| Gas vs Robin, all rate budgets: 3307 (C ≤ 0.082) / 1409 (C ≤ 8.8e-4) | [P-arith], conditional on H1 | V5/code/crossover_v5.py | lineN21b Task 3 ✓ (1401/1409 at δ_eff = 7.0944e-6); A_bad-in-exponent step not yet refereed |
++| Gas vs Robin, all rate budgets: 3307 (C ≤ 0.082) / 1409 (C ≤ 8.8e-4) | [P-arith], conditional on H1 | V5/code/crossover_v5.py | lineN21b Task 3 ✓ (1401/1409 at δ_eff = 7.0944e-6); lineN22 ✓ (all rows reproduced; A_bad-in-exponent step correct, [P-sketch]) |
+ | K_p identity, 7 \| K_p, h₁₅ = 7·31²·41 | [P] (Lean p = 5..13; numeric p ≤ 400) | N17b a_levels.py | lineN15 §2(d), §5 ✓ |
+ | Dev_7 at m = 15, 21, 33, 39 | [N] | N17b d_g3dev.py | lineN15 §2(a) ✓ reproduced |
+ | S = CRT, n = 7371 at h = 8119 | [P] | N17b_v2 §5(b) | lineN14 §1; lineN15 B1 (explanation fixed) |
+@@ -238,7 +240,7 @@
+ | δ_int^core ≤ 5.14476e-7 | [CA-fp] | N15 c3_mid.py | lineN15 §1a–b ✓ |
+ | ρ̄ ≤ 0.28 | [CA-fp] | N15 b_cp3.py | lineN15 §1c ✓ |
+ | A_bad j ≤ 12 = 2.031569e-6 | [CA-fp] | N15 a_cert3.py | lineN14 ✓; lineN16 §1(e) ✓ (10 classes bit-identical; aggregate) |
+-| KP a = 5.93e-6 | [P]/[CA-fp]/[H] tail | N15 kp.py | lineN15 §1d (F1, F2) |
++| KP a = 5.93e-6 (**superseded**: used the withdrawn tail placeholder; now a = a(C), Prop. K) | [P]/[CA-fp]/[H] tail | N15 kp.py | lineN15 §1d (F1, F2) |
+ | \|e\| ≤ 14, 633 states; torus identity | [P] | N15 §3 | lineN15 §1e |
+ | Carry correction ≤ 2e-9 | [N] | N16 g_scalar.py, g_triple.py | lineN16 §1(a) ✓ reproduced |
+ | δ_true(G ≤ 15) ≤ 2.470e-6 (superseded) | [CA-fp]+[P-sketch] | N16 conv_vec.py | lineN16 §1(c–d); defects F21-1/3 (lineN21) |
+@@ -319,7 +321,7 @@
+ - **§8:** rows for N21 Lemmas C, Q, D^T, δ_true, N20 results and both crossover variants; step-norm referee cell.
+ - **Not done in v5:**
+   - pure-arb windows for H4;
+-  - a referee pass on the A_bad^KP-in-exponent step and on this assembly;
++  - (done: referee lineN22, GO after E1–E12);
+   - p₁ with additive budgets;
+   - registry changes (proposed only: `V5/CLAIMS_PROPOSED_v5.md`).
+ 

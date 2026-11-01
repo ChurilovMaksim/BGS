@@ -1,0 +1,51 @@
+# Manifest checks in the repository tree (2026-11-01 11:15 +05)
+## evidence/executions/20261101/lineNgas/N20/SHA256_N20_v2.txt
+exit 0
+pin: SHA256_N20_v2.txt: OK
+## evidence/executions/20261101/lineNgas/N21/SHA256_N21_v2.txt
+exit 0
+pin: SHA256_N21_v2.txt: OK
+## evidence/executions/20261101/lineNgas/referee/lineN20/SHA256.txt
+exit 0
+## evidence/executions/20261101/lineNgas/referee/lineN21/SHA256.txt
+exit 0
+## evidence/executions/20261101/lineNgas/referee/lineN21b/SHA256.txt
+exit 0
+## evidence/executions/20261101/lineNgas/referee/lineN22/SHA256.txt
+exit 0
+## evidence/executions/20261101/lineNgas/N20/SHA256_N20.txt (v1 manifest, superseded; mismatches expected where v2 replaced files)
+./NOTES_N20.md: FAILED
+./code/shell_law.py: FAILED
+./code/tail_kp.py: FAILED
+./lean/LineN20Tail.lean: FAILED
+sha256sum: WARNING: 4 computed checksums did NOT match
+exit 1
+## evidence/executions/20261101/lineNgas/N21/SHA256_N21.txt (v1 manifest, superseded; mismatches expected where v2 replaced files)
+./NOTES_N21.md: FAILED
+./code/f_postC.py: FAILED
+./code/final_delta.py: FAILED
+./code/tail_DT.py: FAILED
+sha256sum: WARNING: 4 computed checksums did NOT match
+exit 1
+## computations/verification/lineN_theorem_draft/V5/SHA256_V5.txt (paths relative to the author root /workspace/bgs-lineN; checked with the V5 packet in place and the author root files substituted)
+THEOREM_DRAFT_v5.md: FAILED
+THEOREM_DRAFT_v4_to_v5.diff: OK
+THEOREM_DRAFT_v4.md: FAILED
+V5/CLAIMS_PROPOSED_v5.md: OK
+V5/NOTES_V5.md: OK
+V5/code/assemble_v5.py: OK
+V5/code/crossover_v5.py: OK
+V5/logs/crossover_v5_d1.169100e-04.json: OK
+V5/logs/crossover_v5_d3.496200e-04.json: OK
+V5/logs/crossover_v5_d5.031300e-06.json: OK
+V5/logs/crossover_v5_d7.094400e-06.json: OK
+V5/logs/crossover_v5_d7.186400e-06.json: OK
+V5/logs/crossover_v5_d7.411500e-06.json: OK
+sha256sum: WARNING: 2 computed checksums did NOT match
+exit 1
+pin: V5/SHA256_V5.txt: OK
+Expected: THEOREM_DRAFT_v5.md differs (repo copy carries lineN22 E1-E8, see THEOREM_DRAFT_v5_lineN22_edits.diff; author original sha256 69bdea02...998ae4) and THEOREM_DRAFT_v4.md differs (repo copy carries the PR #67 owner fixes; author original 6d6c88ed...616207). All other entries OK.
+## author v5 reproduced: patch(author v4, THEOREM_DRAFT_v4_to_v5.diff) == author v5 (sha256 below)
+69bdea020f487c4502a24d1165786b6ee684d6c91ff614b05fa00133b8998ae4  THEOREM_DRAFT_v4.md
+## repo v5 == patch(author v5, THEOREM_DRAFT_v5_lineN22_edits.diff)
+identical

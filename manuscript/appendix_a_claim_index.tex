@@ -1,36 +1,36 @@
 \section*{Appendix A: Claim index}
 This index is generated from \path{record/claims.json} by
 \path{computations/maintenance/render_appendix_a.py}.
-The registry contains 408 claims: 328 proved, 19 verification-pending,
-18 conditional, 42 open and 1 refuted. ``Proved'' denotes the registered project scope,
+The registry contains 419 claims: 338 proved, 17 verification-pending,
+21 conditional, 42 open and 1 refuted. ``Proved'' denotes the registered project scope,
 not independent external refereeing. The table maps each ID to its current
 mentions in the manuscript's reachable TeX inputs, excluding this index itself;
 the short form TRACE-$nnn$ used in section prose counts as a mention.
 A registry-only entry has no body mention; its proof and evidence remain in
 its authoritative source. In particular, the Lines I--N results
-(BGS-TRACE-211 onwards, including the conditional Theorem R$\sharp$-mod v4,
-BGS-TRACE-299) are not yet written up as a chapter of this manuscript;
+(BGS-TRACE-211 onwards, including the conditional Theorem R$\sharp$-mod v5,
+BGS-TRACE-325) are not yet written up as a chapter of this manuscript;
 see \path{RESULTS.md}. File line numbers are navigation, not proof certification.
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[x=1cm,y=0.62cm]
 \node[anchor=east,font=\small] at (-0.15,0) {proved};
 \fill[black!60] (0,-0.30) rectangle (9.000,0.30);
-\node[anchor=west,font=\small] at (9.100,0) {328};
+\node[anchor=west,font=\small] at (9.100,0) {338};
 \node[anchor=east,font=\small] at (-0.15,-1) {verification-pending};
-\fill[black!50] (0,-1.30) rectangle (0.521,-0.70);
-\node[anchor=west,font=\small] at (0.621,-1) {19};
+\fill[black!50] (0,-1.30) rectangle (0.453,-0.70);
+\node[anchor=west,font=\small] at (0.553,-1) {17};
 \node[anchor=east,font=\small] at (-0.15,-2) {conditional};
-\fill[black!40] (0,-2.30) rectangle (0.494,-1.70);
-\node[anchor=west,font=\small] at (0.594,-2) {18};
+\fill[black!40] (0,-2.30) rectangle (0.559,-1.70);
+\node[anchor=west,font=\small] at (0.659,-2) {21};
 \node[anchor=east,font=\small] at (-0.15,-3) {open};
-\fill[black!30] (0,-3.30) rectangle (1.152,-2.70);
-\node[anchor=west,font=\small] at (1.252,-3) {42};
+\fill[black!30] (0,-3.30) rectangle (1.118,-2.70);
+\node[anchor=west,font=\small] at (1.218,-3) {42};
 \node[anchor=east,font=\small] at (-0.15,-4) {refuted};
 \fill[black!20] (0,-4.30) rectangle (0.027,-3.70);
 \node[anchor=west,font=\small] at (0.127,-4) {1};
 \end{tikzpicture}
-\caption{Registered claim states (408 claims), drawn from \texttt{record/claims.json}. ``Proved'' is the registered project scope, not external refereeing.}
+\caption{Registered claim states (419 claims), drawn from \texttt{record/claims.json}. ``Proved'' is the registered project scope, not external refereeing.}
 \label{fig:registry-status}
 \end{figure}
 \begin{center}
@@ -427,7 +427,7 @@ Claim ID & State & Manuscript mentions (file:line) \\
 \texttt{BGS-TRACE-299} & conditional & --- (registry only) \\
 \texttt{BGS-TRACE-300} & open & --- (registry only) \\
 \texttt{BGS-TRACE-301} & open & --- (registry only) \\
-\texttt{BGS-TRACE-302} & open & --- (registry only) \\
+\texttt{BGS-TRACE-302} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-303} & open & --- (registry only) \\
 \texttt{BGS-TRACE-304} & open & --- (registry only) \\
 \texttt{BGS-TRACE-305} & open & --- (registry only) \\
@@ -447,8 +447,19 @@ Claim ID & State & Manuscript mentions (file:line) \\
 \texttt{BGS-TRACE-319} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-320} & verification-pending & --- (registry only) \\
 \texttt{BGS-TRACE-321} & proved & --- (registry only) \\
-\texttt{BGS-TRACE-322} & verification-pending & --- (registry only) \\
-\texttt{BGS-TRACE-323} & verification-pending & --- (registry only) \\
+\texttt{BGS-TRACE-322} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-323} & proved & --- (registry only) \\
 \texttt{BGS-TRACE-324} & verification-pending & --- (registry only) \\
+\texttt{BGS-TRACE-325} & conditional & --- (registry only) \\
+\texttt{BGS-TRACE-326} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-327} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-328} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-329} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-330} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-331} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-332} & conditional & --- (registry only) \\
+\texttt{BGS-TRACE-333} & conditional & --- (registry only) \\
+\texttt{BGS-TRACE-335} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-336} & open & --- (registry only) \\
 \end{longtable}
 \end{center}

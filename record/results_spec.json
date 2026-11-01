@@ -146,24 +146,16 @@
    ]
   },
   {
-   "title": "Main current result: Theorem R♯-mod v4 (Lines N5–N19b, polymer-gas route)",
-   "note": "This theorem is conditional. It says that if the open inputs H0–H8 hold and B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr, then W′_{3p}/m → ∞, so frozen R′ fails along m = 3p. The inputs are open, so this is a reduction, not a refutation of R′. A v5 revision is expected after the H1 and H4 research lines report.",
+   "title": "Main current result: Theorem R♯-mod v5 (Lines N5–N21, polymer-gas route)",
+   "note": "This theorem is conditional. It says that if the open inputs H0, H1 and H5–H8 hold and B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr, then W′_{3p}/m → ∞, so frozen R′ fails along m = 3p. H2 and H4 are met and H3 follows from H1. The inputs are open, so this is a reduction, not a refutation of R′. v5 (referee lineN22) supersedes v4 (BGS-TRACE-299): B_p now also charges the bad-cluster rate A_bad^KP, so the threshold depends on H1’s constant.",
    "claims": [
     [
-     "BGS-TRACE-299",
-     "Theorem R♯-mod v4: conditional reduction of 'frozen R′ fails along m = 3p' to H0–H8"
+     "BGS-TRACE-325",
+     "Theorem R♯-mod v5: conditional reduction of 'frozen R′ fails along m = 3p' to H0, H1, H5–H8"
     ],
     [
-     "BGS-TRACE-300",
-     "H1: collision lemma"
-    ],
-    [
-     "BGS-TRACE-301",
-     "H3: Kotecký–Preiss polymer weight (finite part certified, tail open)"
-    ],
-    [
-     "BGS-TRACE-302",
-     "H4: core-to-true conversion of the interaction constant (no working route yet)"
+     "BGS-TRACE-336",
+     "H1 (re-scoped by N20): bad-cluster joint (A,B) second moment + near-collision constants"
     ],
     [
      "BGS-TRACE-303",
@@ -186,12 +178,28 @@
      "Interaction bound delta_int^core <= 5.14476e-7 (H2 met; computer-assisted)"
     ],
     [
-     "BGS-TRACE-318",
-     "Gas vs Robin crossover p1 >= 1390 under a stated idealisation (arithmetic implication)"
+     "BGS-TRACE-302",
+     "H4 met: core-to-true conversion of the interaction constant"
     ],
     [
-     "BGS-TRACE-322",
-     "delta_true(G <= 15) <= 2.470e-6"
+     "BGS-TRACE-326",
+     "delta_true <= 5.0313e-6 for all G (computer-assisted, [CA-fp])"
+    ],
+    [
+     "BGS-TRACE-332",
+     "Prop. K: H1 implies H3 (Kotecký–Preiss weight a = a(C))"
+    ],
+    [
+     "BGS-TRACE-333",
+     "Gas vs Robin crossover with all rate budgets: first prime 3307 (C <= 0.082) / 1409 (C <= 8.8e-4)"
+    ],
+    [
+     "BGS-TRACE-329",
+     "Prop. F: no unrestricted carry/torus bound gives H1 (lower bound proved; ratio numerical)"
+    ],
+    [
+     "BGS-TRACE-299",
+     "Theorem R♯-mod v4 (superseded by v5)"
     ],
     [
      "BGS-TRACE-324",
@@ -206,6 +214,6 @@
   "**Hash-pinned broken links.** 24 relative links in 11 files point to paths that later moved: `literature/arithmetic_dependency_closure_20261022.md`, `mathematics/fixed-map/fractional_hamming_cancellation.md`, `mathematics/fixed-map/onestep_charge_gap.md`, `mathematics/spectral-obstructions/flat_spectrum_obstruction.md`, `mathematics/trace-bridge/balanced_pair_schur_reduction.md`, `record/audits/20261006/README.md`, `record/charge_strengthening_promotion.md`, `record/circular_kernel_route_20261004.md`, `record/frozen_algebraic_review_20260924.md` and `supplement/fixed_map/resolvent-flow/loop_test_reductions.md` are byte-pinned by seals, manifests or receipts, and `literature/bibliography.md` is generated. They are left unedited on purpose: editing them would break the pins.",
   "**Frozen evidence packets.** {frozen_files} verbatim, sha256-pinned packet files under `computations/verification/line*/` are outside the assertion-entry policy and the SyntaxWarning compile step ([registry](computations/maintenance/frozen_evidence_packets.json), [rationale](computations/maintenance/ASSERTION_POLICY.md)). They are evidence of what was run, not maintained entry points.",
   "**Thin evidence on a few registered claims.** BGS-TRACE-095 and BGS-TRACE-097 (conditional) list no verifier; their only evidence is an integrity audit recording `all_valid: false`. BGS-RES-015 (proved) cites its own source note as evidence and depends on the conditional BGS-RES-014 for a symbol identity that it recomputes directly (see its `dependency_scope`).",
-  "**Manuscript lags the registry.** The unified manuscript covers the programme through BGS-TRACE-210 (Line H). Lines I–N (BGS-TRACE-211..324), including Theorem R♯-mod, are not yet written up; a claim skeleton is at `manuscript/unified_sections/lines_I_N_skeleton.tex` (not in the build)."
+  "**Manuscript lags the registry.** The unified manuscript covers the programme through BGS-TRACE-210 (Line H). Lines I–N (BGS-TRACE-211..336), including Theorem R♯-mod, are not yet written up; a claim skeleton is at `manuscript/unified_sections/lines_I_N_skeleton.tex` (not in the build)."
  ]
 }

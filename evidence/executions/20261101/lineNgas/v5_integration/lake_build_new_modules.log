@@ -1,0 +1,72 @@
+## Sun Nov  1 11:07:44 +05 2026
+$ lake build Bgs.LineN21Arith
+ℹ [8706/8706] Built Bgs.LineN21Arith (11s)
+info: Bgs/LineN21Arith.lean:81:0: 'Bgs.LineN21.tau_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:82:0: 'Bgs.LineN21.den_tau_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:83:0: 'Bgs.LineN21.abs_s_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:84:0: 'Bgs.LineN21.abs_s_lo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:85:0: 'Bgs.LineN21.kap_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:86:0: 'Bgs.LineN21.s_kap_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:87:0: 'Bgs.LineN21.RA_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:88:0: 'Bgs.LineN21.ST_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:89:0: 'Bgs.LineN21.PertST' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:90:0: 'Bgs.LineN21.Rem_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:91:0: 'Bgs.LineN21.sr_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:92:0: 'Bgs.LineN21.rem_mu1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:93:0: 'Bgs.LineN21.rem_mu2' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:94:0: 'Bgs.LineN21.m1_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:95:0: 'Bgs.LineN21.m2_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:96:0: 'Bgs.LineN21.K0_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:97:0: 'Bgs.LineN21.rho_mu' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:98:0: 'Bgs.LineN21.rho_kap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:99:0: 'Bgs.LineN21.lam_rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:100:0: 'Bgs.LineN21.delta_true_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:101:0: 'Bgs.LineN21.budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:102:0: 'Bgs.LineN21.kp_budget_200_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:103:0: 'Bgs.LineN21.env_slope_1397' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN21Arith.lean:104:0: 'Bgs.LineN21.lam_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8706 jobs).
+EXIT 0
+
+## Sun Nov  1 11:08:13 +05 2026
+$ lake build Bgs.LineN20TailArith
+ℹ [8706/8706] Built Bgs.LineN20TailArith (5.8s)
+info: Bgs/LineN20TailArith.lean:89:0: 'Bgs.LineN20Tail.renewal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:90:0: 'Bgs.LineN20Tail.eps_green_l1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:91:0: 'Bgs.LineN20Tail.eps_carry_lt52' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:92:0: 'Bgs.LineN20Tail.eps_carry_ge51' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:93:0: 'Bgs.LineN20Tail.eps_carry_int' depends on axioms: [propext, Quot.sound]
+info: Bgs/LineN20TailArith.lean:94:0: 'Bgs.LineN20Tail.joint_bigger' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:95:0: 'Bgs.LineN20Tail.c32_082' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:96:0: 'Bgs.LineN20Tail.c32_0813' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:97:0: 'Bgs.LineN20Tail.c32_088e4' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:98:0: 'Bgs.LineN20Tail.kp_J12_C082' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:99:0: 'Bgs.LineN20Tail.kp_J12_C88e5' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:100:0: 'Bgs.LineN20Tail.kp_J14_C082' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20TailArith.lean:101:0: 'Bgs.LineN20Tail.shell_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8706 jobs).
+EXIT 0
+
+## Sun Nov  1 11:08:23 +05 2026
+$ lake build Bgs.LineN20Arith
+ℹ [8706/8706] Built Bgs.LineN20Arith (20s)
+info: Bgs/LineN20Arith.lean:188:0: 'Bgs.LineN20.fw_closed' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:189:0: 'Bgs.LineN20.bw_closed' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:190:0: 'Bgs.LineN20.fw_table' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:191:0: 'Bgs.LineN20.bw_table' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:192:0: 'Bgs.LineN20.fw_depth' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:193:0: 'Bgs.LineN20.bw_depth' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:194:0: 'Bgs.LineN20.fw_card' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:195:0: 'Bgs.LineN20.reach_card' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:196:0: 'Bgs.LineN20.reach_le14' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:197:0: 'Bgs.LineN20.reach_has14' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:198:0: 'Bgs.LineN20.cw_support' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:199:0: 'Bgs.LineN20.carry_cw' depends on axioms: [propext]
+info: Bgs/LineN20Arith.lean:200:0: 'Bgs.LineN20.lam_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20Arith.lean:201:0: 'Bgs.LineN20.lam_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20Arith.lean:202:0: 'Bgs.LineN20.green_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20Arith.lean:203:0: 'Bgs.LineN20.green_off' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LineN20Arith.lean:204:0: 'Bgs.LineN20.carry_strict' depends on axioms: [propext, Quot.sound]
+Build completed successfully (8706 jobs).
+EXIT 0
+

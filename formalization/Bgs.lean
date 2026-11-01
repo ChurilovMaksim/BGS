@@ -111,5 +111,8 @@ import Bgs.LineN13Arith
 import Bgs.LineN14Arith
 import Bgs.LineN15Arith
 import Bgs.LineN16Arith
+import Bgs.LineN20Arith
+import Bgs.LineN20TailArith
+import Bgs.LineN21Arith
 
 import Bgs.Mathlib
