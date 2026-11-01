@@ -1,0 +1,1511 @@
+{
+ "schema": "bgs-frozen-evidence-packets-v1",
+ "decided": "2026-11-01, owner decision 2 (final-polish-2)",
+ "rationale": "The packet directories below hold author, referee and integration code copied verbatim into computations/verification/line*/ and pinned by sha256 in the packets' SHA manifests or in dated evidence receipts. They are frozen evidence of what was run, not maintained entry points. Adding the assertion guard, or rewriting an invalid escape sequence, would change their bytes and break those manifests. They are therefore outside the assertion-entry policy (computations/maintenance/assertion_policy.py) and outside the compileall SyntaxWarning-as-error step. The exemption is per file and fail-closed: a file is exempt only while it lies under a listed directory, is listed below, and its current sha256 equals the listed value, which must also appear verbatim in the listed pin file. An edited file loses its exemption and falls back under the policy. Unpinned files in the same directories are not exempt and carry the guard. All non-packet code stays covered.",
+ "directories": [
+  "computations/verification/lineC",
+  "computations/verification/lineE",
+  "computations/verification/lineF",
+  "computations/verification/lineFG",
+  "computations/verification/lineG",
+  "computations/verification/lineH",
+  "computations/verification/lineI",
+  "computations/verification/lineJ",
+  "computations/verification/lineK",
+  "computations/verification/lineL",
+  "computations/verification/lineM",
+  "computations/verification/lineN",
+  "computations/verification/lineN10",
+  "computations/verification/lineN10b",
+  "computations/verification/lineN11",
+  "computations/verification/lineN11b",
+  "computations/verification/lineN12",
+  "computations/verification/lineN12b",
+  "computations/verification/lineN13",
+  "computations/verification/lineN13b",
+  "computations/verification/lineN14",
+  "computations/verification/lineN15",
+  "computations/verification/lineN16",
+  "computations/verification/lineN16b",
+  "computations/verification/lineN17b",
+  "computations/verification/lineN18b",
+  "computations/verification/lineN19b",
+  "computations/verification/lineN2",
+  "computations/verification/lineN3",
+  "computations/verification/lineN4",
+  "computations/verification/lineN5",
+  "computations/verification/lineN6",
+  "computations/verification/lineN7",
+  "computations/verification/lineN7b",
+  "computations/verification/lineN8",
+  "computations/verification/lineN8b",
+  "computations/verification/lineN9",
+  "computations/verification/lineN9b"
+ ],
+ "files": {
+  "computations/verification/lineC/fixes_check.py": {
+   "sha256": "935e0a64fef03fbf386e05e480f286a9ffcab280b73bc6cea37246de25731626",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/independent_replay/brute_exact.py": {
+   "sha256": "d6e79420544aa9e205754cd59b51f8554e0b2e2dd6b92086caea1f891cf3df14",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/independent_replay/compare_theirs.py": {
+   "sha256": "4093cbf8cad7e60ae0c0d624945dea0131a079e93eb1ea61ac10847a6391ffc8",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/independent_replay/fit.py": {
+   "sha256": "65affcd73213a14b73a0d3d5b8df7b149538d56d622e5ae0521b765faa6f285c",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/independent_replay/prop2_composite.py": {
+   "sha256": "33bed2ab657873028fe92da3ff121bedc06aa6e22be41b33c1de6428fc4f7ac6",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/independent_replay/replay_inrepo.py": {
+   "sha256": "5ce72ef3c5d0afddbe18880622af383cb42a67918c22fed873ee2989803fc53f",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/independent_replay/run_sym.py": {
+   "sha256": "ef45179ac027a2e1eb16bd094948924e47fbe940ceb2ee40d7f67bb81d4a8e24",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/independent_replay/sym.py": {
+   "sha256": "a9559ed2da97bef02382124ad149e37236eb1e0ce6deb7bed324d775ea7672bb",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/independent_replay/validity.py": {
+   "sha256": "9d498a043b7e7ce0cce2fc92a523abb35ee539d68b3a34cda2329ee8abf7375f",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/run_engine.py": {
+   "sha256": "05916f6a4e96641ae4e315855f0869838866a117bd0d1b9c8dccdbdd5e10a44c",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/verify_exact.py": {
+   "sha256": "4330bffbc33b4aa5c4a4f5161799ef7cce40fd0e13e3cf202e2f4bbffb5f1948",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineC/verify_thm1.py": {
+   "sha256": "4ad4c2e426da28996cdd859c22c370b0183e9b8d2feb98bed548c93469642aeb",
+   "pinned_in": "evidence/executions/20261029/lineC-random-phase/receipt.json"
+  },
+  "computations/verification/lineE/code/bounds.py": {
+   "sha256": "b7841a6d695783602fbd3ed94a58eecdfb7c977ffb2c7caa4450aef277c605d3",
+   "pinned_in": "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+  },
+  "computations/verification/lineE/code/cert.py": {
+   "sha256": "c0a28b3ed1e782954ee7f1c1b1adc4d946c35535cc257b323e5cfabb1fcaba46",
+   "pinned_in": "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+  },
+  "computations/verification/lineE/referee/certrun/bounds_orig.py": {
+   "sha256": "9f35d3948b57ccc1c43f0f8597fe250e4d6f9ff854e23f5c6bc9f09d59e44eeb",
+   "pinned_in": "computations/verification/lineE/referee/certrun/sha256.txt"
+  },
+  "computations/verification/lineE/referee/certrun/cert_orig.py": {
+   "sha256": "7e906d4a719da83b515d12b51fb7928ce2f41114c7c828892db64b1c253a59fb",
+   "pinned_in": "computations/verification/lineE/referee/certrun/sha256.txt"
+  },
+  "computations/verification/lineE/referee2/code/ivcert.py": {
+   "sha256": "55956adc1544cac33d9f12d4ed7d96928c79e2e7d90fc39e1ed3a396bfd50272",
+   "pinned_in": "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+  },
+  "computations/verification/lineE/step2/cert_class.py": {
+   "sha256": "c837c8bb44bfe299fa7f4d6731f399671ebbfd7e50447094181273b80d045932",
+   "pinned_in": "evidence/executions/20261030/lineE-resonant-transfer/receipt.json"
+  },
+  "computations/verification/lineE/step2/lawlib.py": {
+   "sha256": "73b49942dd94d625f54e5d0a0739c05da375579c5a397bf6638af6857be0bc9e",
+   "pinned_in": "evidence/executions/20261031/m17/lineE/PROVENANCE.txt"
+  },
+  "computations/verification/lineE/step2/predict.py": {
+   "sha256": "a3fab34c3818a898a546c21a98656b6586ed8431a0d135202e75fa724ffd1d0f",
+   "pinned_in": "evidence/executions/20261031/m17/lineE/PROVENANCE.txt"
+  },
+  "computations/verification/lineF/code/bounds_lift.py": {
+   "sha256": "0a621237045c3eb2e8282104501b61d40a27dd1bead9035fd04032b1c6a75e3b",
+   "pinned_in": "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+  },
+  "computations/verification/lineF/code/cert_lift.py": {
+   "sha256": "9391cc4d2d651fe4ff418e096365fe01c0900b98f6199db6eef7d86bfb022b4a",
+   "pinned_in": "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+  },
+  "computations/verification/lineFG/referee/code/g_law.py": {
+   "sha256": "8f109dd392c045ab7228dbdf2bdc268ed9925e7a9b6df6ecbf88045db750f754",
+   "pinned_in": "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+  },
+  "computations/verification/lineFG/referee/code/own_cert.py": {
+   "sha256": "c47ca955436ef7b2d8419aafb632888098c8d2cccf28a6099ee7504447ee21c2",
+   "pinned_in": "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+  },
+  "computations/verification/lineG/code/eval17.py": {
+   "sha256": "a56aa6e136c325e2c670c2a53d4aa39241f9e08995d164911095c2fc843d3be2",
+   "pinned_in": "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+  },
+  "computations/verification/lineG/code/formula_table.py": {
+   "sha256": "6f5bcbc20a8508d803fd5104545bcd813cbbc458d0fc19a105b149eb3994c054",
+   "pinned_in": "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+  },
+  "computations/verification/lineG/code/law.py": {
+   "sha256": "877a95a5de303026c5fc2892cc802041cfd1669ccf0f1ee9392b74034d714d4a",
+   "pinned_in": "evidence/executions/20261030/lineFG-lifted-transfer/receipt.json"
+  },
+  "computations/verification/lineG/code/step1c.py": {
+   "sha256": "59e5b12117ff9424aa9866effab4425cf408470a6f2a7677b3778b698113ba39",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineG/code/step1e.py": {
+   "sha256": "bea960591c37dafcaf477514ef0e6822981b62a4573748a5edd439830591a23f",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineH/code/bounds49.py": {
+   "sha256": "fcb6d92ba42a174c4fc2dc90733fedc0e90aa78ba445a2425992f3cc5890e08f",
+   "pinned_in": "computations/verification/lineH/logs/bounds49_v4.json"
+  },
+  "computations/verification/lineH/code/bounds49_v2_pre_referee.py": {
+   "sha256": "371c4b1bef4a67af820b8ca5a5afc1d3a8ccd969af44772dd85f4e784079864c",
+   "pinned_in": "computations/verification/lineH/logs/SHA256_code_v4_runs.txt"
+  },
+  "computations/verification/lineH/code/cert49_build.py": {
+   "sha256": "2b5d693fe60da8f56e5e5e78dcf9a08bbbd84dd649212055831971b7bb363610",
+   "pinned_in": "computations/verification/lineH/logs/SHA256_code_v4_runs.txt"
+  },
+  "computations/verification/lineH/code/f49.py": {
+   "sha256": "be958e581684b973664fbf03e61fef3865bceb813f3609d19c960f676370e91d",
+   "pinned_in": "evidence/executions/20261030/lineH/receipt.json"
+  },
+  "computations/verification/lineH/code/ghat_arb.py": {
+   "sha256": "09b4e8ac1bbd58f23b95adde761302bd75c5211822dd003321acb1d99a1649c5",
+   "pinned_in": "computations/verification/lineH/logs/SHA256_code_v4_runs.txt"
+  },
+  "computations/verification/lineH/code/h1_lift.py": {
+   "sha256": "f4fdbe1367feebf572ff55ffdadeb4c6738b99115e2ae5a69a5898ab604a5510",
+   "pinned_in": "evidence/executions/20261030/lineH/receipt.json"
+  },
+  "computations/verification/lineH/code/h1_scan.py": {
+   "sha256": "63d4b2208bc9eea2266b6d607da0c53c07b433b8b14137ebb1b0cc13a10a1579",
+   "pinned_in": "evidence/executions/20261030/lineH/receipt.json"
+  },
+  "computations/verification/lineH/code/kappa_check.py": {
+   "sha256": "b0b9f44549a47c1bcdabb684dd3b7639cba95bdd41a0445c9d7b8b3a9a6c0f87",
+   "pinned_in": "evidence/executions/20261030/lineH/receipt.json"
+  },
+  "computations/verification/lineH/code/rig_spec.py": {
+   "sha256": "f346e22c81433254eb495cd86effbe9fc9daeaff479ffec4f8623d597c033ed3",
+   "pinned_in": "computations/verification/lineH/logs/SHA256_code_v4_runs.txt"
+  },
+  "computations/verification/lineH/code/rig_spec_v3.py": {
+   "sha256": "a1528502af64bf2c78a93f21d3c49daadf0d5a6d201a0134217504c6b2c9f3ab",
+   "pinned_in": "evidence/executions/20261030/lineH/receipt.json"
+  },
+  "computations/verification/lineH/code/tracechk.py": {
+   "sha256": "d8fea2c4d34023cd1841714f7adce8b4e5dec9b73821daabbd6ede4c23c7f3e4",
+   "pinned_in": "evidence/executions/20261030/lineH/receipt.json"
+  },
+  "computations/verification/lineH/referee/code/ref_bounds.py": {
+   "sha256": "155d1cd876b42c023e4953816b07748b4a6c580fdeb47042cc3bf3dee9d13965",
+   "pinned_in": "computations/verification/lineH/referee/logs/SHA256_audit.txt"
+  },
+  "computations/verification/lineH/referee/code/ref_bounds_on_v4.py": {
+   "sha256": "8660e48a2085d69ba7dfd9a638b2ef10e330e49f2a9994bc8276551fcb21e620",
+   "pinned_in": "evidence/executions/20261030/lineH/receipt.json"
+  },
+  "computations/verification/lineH/referee/code/ref_entries.py": {
+   "sha256": "86997633accd722b3956bc740866ecc8c6d84bed6a899e0665d66ecda94d1ba3",
+   "pinned_in": "computations/verification/lineH/referee/logs/SHA256_audit.txt"
+  },
+  "computations/verification/lineH/referee/code/ref_rig.py": {
+   "sha256": "42a5bfb24099e81d379b4055534393ed26db473254cd4a775b0c3b027498d79c",
+   "pinned_in": "computations/verification/lineH/referee/logs/SHA256_audit.txt"
+  },
+  "computations/verification/lineI/cert/bounds_sq.py": {
+   "sha256": "d86ddf8f36db61c17dc3fe38bad0aee24a6c7d9d3e9ec0f928b6f7e34a20de2b",
+   "pinned_in": "computations/verification/lineI/cert/logs/SHA256_run_sq.txt"
+  },
+  "computations/verification/lineI/cert/cert49_build_orig.py": {
+   "sha256": "2b5d693fe60da8f56e5e5e78dcf9a08bbbd84dd649212055831971b7bb363610",
+   "pinned_in": "computations/verification/lineI/referee/logs/SHA256_author_copies.txt"
+  },
+  "computations/verification/lineI/cert/certG_build.py": {
+   "sha256": "aa86c186336c9149fb1c7ad9c333f3ffbae5671c7d2087c41713edd18f6ee2c2",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/cert/gstates.py": {
+   "sha256": "05f555005c3e8d27eb9df5ef8dad4a5958ded192ba659c4d20c5e8f454a0d2ec",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/cert/law.py": {
+   "sha256": "877a95a5de303026c5fc2892cc802041cfd1669ccf0f1ee9392b74034d714d4a",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/cert/rig_spec.py": {
+   "sha256": "f346e22c81433254eb495cd86effbe9fc9daeaff479ffec4f8623d597c033ed3",
+   "pinned_in": "computations/verification/lineI/cert/logs/E_0_1_rest.json"
+  },
+  "computations/verification/lineI/cert2/certG_build.py": {
+   "sha256": "aa86c186336c9149fb1c7ad9c333f3ffbae5671c7d2087c41713edd18f6ee2c2",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/cert2/gstates.py": {
+   "sha256": "05f555005c3e8d27eb9df5ef8dad4a5958ded192ba659c4d20c5e8f454a0d2ec",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/cert2/law.py": {
+   "sha256": "877a95a5de303026c5fc2892cc802041cfd1669ccf0f1ee9392b74034d714d4a",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/cert2/rig_spec.py": {
+   "sha256": "f346e22c81433254eb495cd86effbe9fc9daeaff479ffec4f8623d597c033ed3",
+   "pinned_in": "computations/verification/lineI/cert/logs/E_0_1_rest.json"
+  },
+  "computations/verification/lineI/cert_v2/bounds_sq_v2.py": {
+   "sha256": "956994dcff866c537b113d49acc90293032857b2069b106a1f60711ee560c98c",
+   "pinned_in": "computations/verification/lineI/cert_v2/logs/SHA256_v2.txt"
+  },
+  "computations/verification/lineI/cert_v2/gstates.py": {
+   "sha256": "65b799c44a4f59e4e786ed09dcf704f1b7b52ff2d6d81bbb9bfa6495695b425d",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/cert_v2/law.py": {
+   "sha256": "877a95a5de303026c5fc2892cc802041cfd1669ccf0f1ee9392b74034d714d4a",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/cert_v3/bounds_sq_v3.py": {
+   "sha256": "cb935b891ea884ef2c7728a82d10ee8c32696358a10d8d9332ce10beeab91ebc",
+   "pinned_in": "computations/verification/lineI/cert_v3/logs/bounds_sq_v3.json"
+  },
+  "computations/verification/lineI/code/angle.py": {
+   "sha256": "9fa1abead66f0db0acde65a795c4edcec008fe83905b7f9612b7c4a2e8bc2857",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/base.py": {
+   "sha256": "4bc113ea045bdcbc07421ab143d9450c1b851b723f76351f253da1ae5733f75c",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/commut.py": {
+   "sha256": "032842a265ccac56600a00fd0619dfe26697c90bfe1f52745db1fce3e453da2a",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/dbg.py": {
+   "sha256": "1fa938a1a6a246d2a17f7e663f3961db24f275c0607f70aec60c7e90628f2bb3",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/dil.py": {
+   "sha256": "dd02438d0c783935b6c848f678a0ba050d10083971cf21fff5aee9a8b62b2cb0",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/dilpred.py": {
+   "sha256": "ba6c8313b320f5313cd6a0bcf4484e9973bf27f175c6d72411eb5c483eb739b5",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/gstates.py": {
+   "sha256": "05f555005c3e8d27eb9df5ef8dad4a5958ded192ba659c4d20c5e8f454a0d2ec",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/code/halo.py": {
+   "sha256": "219f70d4c2fc12e70f08920d8c5c83e2ba2fff9d6da9084bf7a516249e40e396",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/halo2.py": {
+   "sha256": "b9df69e034a259078a86bb17d17f0a10be8b0799919eaca4ae9e6c9411dbcd16",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/halo3.py": {
+   "sha256": "bc539260e1768b2e91313e2408bdac18f28135c774b9be7cc4fa05f16407d4c9",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/halo4.py": {
+   "sha256": "29a4c1c4ce8afe980a56564976b44b3ae85209ac68338accdda30fbf5972179d",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/law.py": {
+   "sha256": "877a95a5de303026c5fc2892cc802041cfd1669ccf0f1ee9392b74034d714d4a",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/code/liftchk.py": {
+   "sha256": "ec4f01b46168e9d042257dae7f1a25140b08c6ddefd4af99d960227fd45981c4",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/params.py": {
+   "sha256": "442bc134aa08959d8c85158504db218e6b893f6f3dca26536e47872736c1ce86",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/perb.py": {
+   "sha256": "5588806ec50f034e944e1a480c78d4f5fab3e1cc88c46917c9eeb6be9c461e91",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/reach.py": {
+   "sha256": "e46bd8e72fa64632bd5b5d47688c9da8cc749664eeb38092c685839eecd10b79",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/shape.py": {
+   "sha256": "5005a6a22a3ee253d34fcd39fca6c08ae37d4b8405feb5730c4f92e4b2d3d519",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/step1b.py": {
+   "sha256": "f2d29240e3e555c6cc252cce6c1e389ff05fdd952a87895c08b274073506c084",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/step1c.py": {
+   "sha256": "59e5b12117ff9424aa9866effab4425cf408470a6f2a7677b3778b698113ba39",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/step1e.py": {
+   "sha256": "bea960591c37dafcaf477514ef0e6822981b62a4573748a5edd439830591a23f",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/strat.py": {
+   "sha256": "e16d9d2f0c234c7877d7e703e29068bba1ab9a334172b017c9c8ca490b511926",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/theta.py": {
+   "sha256": "97e3528009f757fab8820ceb223a34eb74ba975e1d6cdb9b02ce625d618832e7",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/tq.py": {
+   "sha256": "ee9e3cd402458cdbc754eed77d331ea7cd9d3fb9a053c4cdb79d26dbe6d9b9ad",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/twist.py": {
+   "sha256": "7b6c168172d9a4ecf6ad04f3e6dd14ebdf394b66c2fdfd4fed4120ad720c324b",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/twrad.py": {
+   "sha256": "efd6b7d11334a37ead47ae8b80a955e99d974652d4ecccf7ce4c0b1553402f12",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/twrad2.py": {
+   "sha256": "5865114e62d3428e987b77102987a12ed635f7a1b10169ca29aae76d827cf0c4",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/twradq.py": {
+   "sha256": "9942c05119605fcc8a6cc703fbcf0039b8acb0880eb80af220841a880ee895fe",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/verify_coset.py": {
+   "sha256": "f1bca409934f199f97450f568ef8b82faee0cecc3b3d959530877e46fc979586",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/code/zpred.py": {
+   "sha256": "4700f8af8a331f9eb3d8d2e28588f21061fc91734870c35da58937b0604d14e7",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/dom/certG_build.py": {
+   "sha256": "aa86c186336c9149fb1c7ad9c333f3ffbae5671c7d2087c41713edd18f6ee2c2",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/dom/gstates.py": {
+   "sha256": "05f555005c3e8d27eb9df5ef8dad4a5958ded192ba659c4d20c5e8f454a0d2ec",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/dom/law.py": {
+   "sha256": "877a95a5de303026c5fc2892cc802041cfd1669ccf0f1ee9392b74034d714d4a",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/dom/rig_dom3.py": {
+   "sha256": "5fde34f3e68c9dc5e9be9ac4c26e72e49aefcb105fa3728192a43014731e94e2",
+   "pinned_in": "computations/verification/lineI/dom/logs/pil_dom3.json"
+  },
+  "computations/verification/lineI/dom/rig_dom3b.py": {
+   "sha256": "dc6aec1f585cb4d0f9e1df66e4040e56dda4d0e75fcc12650151b9e87d22dd98",
+   "pinned_in": "computations/verification/lineI/dom/logs/SHA256_dom.txt"
+  },
+  "computations/verification/lineI/dom_v3/certG_build.py": {
+   "sha256": "aa86c186336c9149fb1c7ad9c333f3ffbae5671c7d2087c41713edd18f6ee2c2",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/dom_v3/gstates.py": {
+   "sha256": "05f555005c3e8d27eb9df5ef8dad4a5958ded192ba659c4d20c5e8f454a0d2ec",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/dom_v3/law.py": {
+   "sha256": "877a95a5de303026c5fc2892cc802041cfd1669ccf0f1ee9392b74034d714d4a",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/dom_v3/rig_dom3b.py": {
+   "sha256": "e4ff0f7fbd971c197d62d5745f34b965838072beca703dbca67826342b654e4b",
+   "pinned_in": "computations/verification/lineI/dom_v3/logs/SHA256_dom_v3.txt"
+  },
+  "computations/verification/lineI/integration_checks/lineI_G3_form_check.py": {
+   "sha256": "5986fbf02f6e237099afa9f6943582df75251ec0da24576c9887077bd271a0e9",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/integration_checks/lineI_composite_d_check.py": {
+   "sha256": "78ab696534fda0d7e9e67109efb09fcc1a06b52baa7e74466707f4e776d76894",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/integration_checks/lineI_identity_checks.py": {
+   "sha256": "bcc80773ec33be3aa76c6029dcfc96a3458fcc54c487162aa69c084c3b0a9f21",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/referee/bsq/bounds_sq.py": {
+   "sha256": "d86ddf8f36db61c17dc3fe38bad0aee24a6c7d9d3e9ec0f928b6f7e34a20de2b",
+   "pinned_in": "computations/verification/lineI/cert/logs/SHA256_run_sq.txt"
+  },
+  "computations/verification/lineI/referee/cert/bounds_sq.py": {
+   "sha256": "d86ddf8f36db61c17dc3fe38bad0aee24a6c7d9d3e9ec0f928b6f7e34a20de2b",
+   "pinned_in": "computations/verification/lineI/cert/logs/SHA256_run_sq.txt"
+  },
+  "computations/verification/lineI/referee/cert/cert49_build_orig.py": {
+   "sha256": "2b5d693fe60da8f56e5e5e78dcf9a08bbbd84dd649212055831971b7bb363610",
+   "pinned_in": "computations/verification/lineI/referee/logs/SHA256_author_copies.txt"
+  },
+  "computations/verification/lineI/referee/cert/certG_build.py": {
+   "sha256": "aa86c186336c9149fb1c7ad9c333f3ffbae5671c7d2087c41713edd18f6ee2c2",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/referee/cert/certG_small_TESTONLY.py": {
+   "sha256": "6e17a81a527288f516943d42f74a67c64597ba9901aad6148d9f75b3b2f925f9",
+   "pinned_in": "computations/verification/lineI/referee/logs/SHA256_audit.txt"
+  },
+  "computations/verification/lineI/referee/cert/gstates.py": {
+   "sha256": "05f555005c3e8d27eb9df5ef8dad4a5958ded192ba659c4d20c5e8f454a0d2ec",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/referee/cert/law.py": {
+   "sha256": "877a95a5de303026c5fc2892cc802041cfd1669ccf0f1ee9392b74034d714d4a",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/referee/cert/rig_spec.py": {
+   "sha256": "f346e22c81433254eb495cd86effbe9fc9daeaff479ffec4f8623d597c033ed3",
+   "pinned_in": "computations/verification/lineI/cert/logs/E_0_1_rest.json"
+  },
+  "computations/verification/lineI/referee/code/brute.py": {
+   "sha256": "d2179586f30c51dfecadec0b003653167bb9eaaaa19e7b1aa3bc50dac402433a",
+   "pinned_in": "computations/verification/lineI/referee/logs/SHA256_audit.txt"
+  },
+  "computations/verification/lineI/referee/code/cases.py": {
+   "sha256": "97851ee941a8b987994b1b0f7b8fc2820c1565440942ef35bfe40df4e2d62f14",
+   "pinned_in": "computations/verification/lineI/referee/logs/SHA256_audit.txt"
+  },
+  "computations/verification/lineI/referee/code/own_rig.py": {
+   "sha256": "5ecb1d66fd4752139e32c3a4242c996f87a98c94c8e23d9df8b13f6a46d80f39",
+   "pinned_in": "computations/verification/lineI/referee/logs/SHA256_audit.txt"
+  },
+  "computations/verification/lineI/referee/code/ptrace.py": {
+   "sha256": "28d6f3d22bfab243d93b867e649410557db12b3c6c7853570032efbe50b28fea",
+   "pinned_in": "computations/verification/lineI/referee/logs/SHA256_audit.txt"
+  },
+  "computations/verification/lineI/referee/code/trfull.py": {
+   "sha256": "9381f6913576e388eaf684d31023197041c4a24cd3900a382fb3996523d9e62e",
+   "pinned_in": "computations/verification/lineI/referee/logs/SHA256_audit.txt"
+  },
+  "computations/verification/lineI/referee/delta/code/bounds_sq_v2_copy.py": {
+   "sha256": "73f5be7fc35a708244ba3722293c088fb431372a5c86841d5dd9718ed379118b",
+   "pinned_in": "computations/verification/lineI/referee/delta/logs/bounds_sq_v2_rerun.json"
+  },
+  "computations/verification/lineI/referee/delta/code/certG_build.py": {
+   "sha256": "aa86c186336c9149fb1c7ad9c333f3ffbae5671c7d2087c41713edd18f6ee2c2",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/referee/delta/code/galcheck.py": {
+   "sha256": "40442359493278362e7bd2eff6eb189287d658d573b281aa204de55b8255752e",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/referee/delta/code/gstates.py": {
+   "sha256": "05f555005c3e8d27eb9df5ef8dad4a5958ded192ba659c4d20c5e8f454a0d2ec",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/referee/delta/code/law.py": {
+   "sha256": "877a95a5de303026c5fc2892cc802041cfd1669ccf0f1ee9392b74034d714d4a",
+   "pinned_in": "computations/verification/lineI/cert/data/E_0_1.json"
+  },
+  "computations/verification/lineI/referee/delta/code/monomial_intertw.py": {
+   "sha256": "c50ff00b280c08f861b342553777b210fc75fef55e2ac5bfde81d3cf239880f9",
+   "pinned_in": "computations/verification/lineI/referee/delta/code/monomial_intertw.json"
+  },
+  "computations/verification/lineI/referee/delta/code/rig_dom3b.py": {
+   "sha256": "dc6aec1f585cb4d0f9e1df66e4040e56dda4d0e75fcc12650151b9e87d22dd98",
+   "pinned_in": "computations/verification/lineI/dom/logs/SHA256_dom.txt"
+  },
+  "computations/verification/lineI/sym/intertw.py": {
+   "sha256": "626e20b8c693887f169402e24b310b61c786d584ced82a9c8f5ea6f411d54603",
+   "pinned_in": "evidence/executions/20261031/lineI/receipt.json"
+  },
+  "computations/verification/lineI/sym/monomial_intertw.py": {
+   "sha256": "c50ff00b280c08f861b342553777b210fc75fef55e2ac5bfde81d3cf239880f9",
+   "pinned_in": "computations/verification/lineI/referee/delta/code/monomial_intertw.json"
+  },
+  "computations/verification/lineI/sym_v3/monomial_intertw.py": {
+   "sha256": "c809dabf83be887eb6ae7028ea09a9ce3013b32183f7a6b237c7377fcdb1e17d",
+   "pinned_in": "computations/verification/lineI/sym_v3/monomial_intertw.json"
+  },
+  "computations/verification/lineJ/J3/code/assemble16.py": {
+   "sha256": "6e7bd63a90afac9bc5af73d9ade2512f8629d11b9e3df07b90412af247cd3917",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/blocks16_exact.py": {
+   "sha256": "5c730d880f51f6a59ddc2359acc1a13cd5428fd2b97fa2aba600f00d1fe683a1",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/certG_build16.py": {
+   "sha256": "6d9dd616557f1bfed360d95d6c0482684da3eae60a66ec1f2cd7c6a9c839dddc",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/gstates16_block.py": {
+   "sha256": "f7ac7f446150283468e189265194e617f04d85f24d9de1a4dc8ea6452c8ce201",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/inherit7q.py": {
+   "sha256": "5c2650c8fb23de4eb67e002e980e0a528e23a765348f5d89041a916710cddc06",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/inherit_proof_check.py": {
+   "sha256": "5ec706f027beddf3a5f4f5e33a9118449208d8d7ac5bfad875f71dd17303b747",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/levels_survey.py": {
+   "sha256": "50de96f8e70895295310df6fce0d02c5fb18be0ed0953ac3db42f79e2dcd4e64",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/levels_survey2.py": {
+   "sha256": "2b19e3e1d3b5765adb706f09f652028169f1cfb496c9079e15d4f962a053b662",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/lyap.py": {
+   "sha256": "45afa755bb75c87c1e87e7162a80017f8927df23a97ce2509835ec6b28996eac",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/ranks.py": {
+   "sha256": "5e35a4669b44da8fce0192455c2999d981c64594ce9a40c23c76a2c33f0486b5",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/rat_excl.py": {
+   "sha256": "6d5b639983fb3549c8ae6b06befad12a4f450e29241db53861533abc321fd700",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3_v2.txt"
+  },
+  "computations/verification/lineJ/J3/code/rig_spec.py": {
+   "sha256": "f346e22c81433254eb495cd86effbe9fc9daeaff479ffec4f8623d597c033ed3",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/sector16.py": {
+   "sha256": "72f5340c72692a1459b378ef608ff1b473a755fccd675eea702941728acce689",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/slowtwist.py": {
+   "sha256": "217a7a038a172208929f99c8727c9429327499729ac781880096280b5d8d7c3c",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/validate16.py": {
+   "sha256": "246c65bb6602d3018cff373d336657a1eccbd90866c29d52721623e0a3b02c16",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/J3/code/wordtest16.py": {
+   "sha256": "bc42bafd63d47a139bd0cf7612ad15bca33f37c113cb6711f5e4a49402325814",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/code/assemble.py": {
+   "sha256": "351de01694e44d3341f86fcf49d2cefdfffd5786a513547b13e1d8df348f422d",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/assemble_v2.py": {
+   "sha256": "32bb75be953a878f958113397df625ac0454772c3cb2807afc85dd38a1018856",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_v2.txt"
+  },
+  "computations/verification/lineJ/code/certG_build_sector.py": {
+   "sha256": "14a5b3699c0853eaacd2bd9e233061821c93e4f8eba9945119e536db3c98535f",
+   "pinned_in": "computations/verification/lineJ/data/cert/E_-2_s0.json"
+  },
+  "computations/verification/lineJ/code/check_z0.py": {
+   "sha256": "3e87fbe18e37c1d7b12da703ae06f26b72490146758dfd1852111c68a07f448b",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/commutant.py": {
+   "sha256": "79d8b3d14d6ac64b8976dcbcf364e6b46c783eae88fb691a616f848f19383d14",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/exact_B.py": {
+   "sha256": "20abf5e683b18c0b7fe5325135243476df8448aab0f4a29e48e3a61e236ce72f",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/explore.py": {
+   "sha256": "526c097554e311a0ac692cfcf07bff25ef6f0b0447fef00978e0cc083ac28401",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/fixes_checks.py": {
+   "sha256": "c7fe82629e843111032502cfc0a13d918269d469240508bdc898b09877b2eda3",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_v2.txt"
+  },
+  "computations/verification/lineJ/code/gstates_sector.py": {
+   "sha256": "e7c424703e745fe2f5af1e960741ac9e5a6202a4ec1961596cc389b95894f5b3",
+   "pinned_in": "computations/verification/lineJ/data/cert/E_-2_s0.json"
+  },
+  "computations/verification/lineJ/code/model_cross.py": {
+   "sha256": "473b4e00b3ade70a1b6e0b6cb02e2254b43625d039f61560a5fb4a1f8c1f3ba8",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/model_lead.py": {
+   "sha256": "a44de62359f4d9ae0f14da7a5b332f24fcfbff672732969da196f7bd4be1d1ac",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/monocomm.py": {
+   "sha256": "81148e9f07395781914397cfaba9bf999c659b475d5bc13ecad8daccda6c486c",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/numerics_large_m.py": {
+   "sha256": "4af104e99efc638f6bcab6d70a807ae5da70c6456e45b9a765e453ba3f06ddd9",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/rig_disc.py": {
+   "sha256": "8b1a48006ca9d4d1d44d8abe7bf7e44134fd30210ee1fe7afa2f663c3fb4d901",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/rig_dom3b.py": {
+   "sha256": "e4ff0f7fbd971c197d62d5745f34b965838072beca703dbca67826342b654e4b",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/rig_spec.py": {
+   "sha256": "f346e22c81433254eb495cd86effbe9fc9daeaff479ffec4f8623d597c033ed3",
+   "pinned_in": "computations/verification/lineJ/J3/SHA256_J3.txt"
+  },
+  "computations/verification/lineJ/code/sector.py": {
+   "sha256": "7045e4f14d62e6d90164c8a71e1c289af2b78346afb280e2cbb965d543f10c9b",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/sectors_exact.py": {
+   "sha256": "d25d8124dcf0c0e730bdd94a124b5847369705fd7d84ad38a585232f653c16b1",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/code/twrad16.py": {
+   "sha256": "650d53544f9386524ccaac27433b39ce808f4faf34ac485373f50a1d9183b09b",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/integration_checks/lineJ_arith_checks.py": {
+   "sha256": "c0990e9c63f5705408b1e716fbe4a3a96d7139d48768f4db2059820c87471f89",
+   "pinned_in": "evidence/executions/20261031/lineJ/receipt.json"
+  },
+  "computations/verification/lineJ/referee/delta2/code/assemble_v2_redirect.py": {
+   "sha256": "4b10a802b6807219655f025093f5173171dd49ce85130daea2555b6f3fa83bda",
+   "pinned_in": "computations/verification/lineJ/referee/delta2/logs/assemble_v2_rerun.json"
+  },
+  "computations/verification/lineJ/referee/delta3/ref_L16_blocks.py": {
+   "sha256": "26c987401535913c6cbfd9cf87a3ce687f2452da11918a2106c847bcedc79981",
+   "pinned_in": "evidence/executions/20261031/lineJ/receipt.json"
+  },
+  "computations/verification/lineJ/referee/j3/ref/ref_assemble16.py": {
+   "sha256": "fe3beeb4896a6566fddfba26b962c778ba2b66461e449f6d204f71d0b1c1bf3e",
+   "pinned_in": "evidence/executions/20261031/lineJ/receipt.json"
+  },
+  "computations/verification/lineJ/referee/rerun/code/assemble_redirect.py": {
+   "sha256": "d908f5a1cfd456d60bba4e70d36c4db90b11f9fe4abbac3902ac02a024024b43",
+   "pinned_in": "computations/verification/lineJ/referee/rerun/SHA256_referee.txt"
+  },
+  "computations/verification/lineJ/referee/rerun/code/exact_B.py": {
+   "sha256": "20abf5e683b18c0b7fe5325135243476df8448aab0f4a29e48e3a61e236ce72f",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineJ/referee/rerun/code/ref_D.py": {
+   "sha256": "d090e3002a7905b9c58b11c4186e97acfe43a09462baf2c762ba453c69bf9e15",
+   "pinned_in": "computations/verification/lineJ/referee/rerun/SHA256_referee.txt"
+  },
+  "computations/verification/lineJ/referee/rerun/code/ref_assemble.py": {
+   "sha256": "cd1b7470888336b8d3a2bee533b89e2110e6f6a61ed8a576cb8601744e8dbc3e",
+   "pinned_in": "computations/verification/lineJ/referee/rerun/SHA256_referee.txt"
+  },
+  "computations/verification/lineJ/referee/rerun/code/ref_exact.py": {
+   "sha256": "3a68296dc3f38000eeb2e56a3af07cead827ac12b72543e277b11115a4ccee4b",
+   "pinned_in": "computations/verification/lineJ/referee/rerun/SHA256_referee.txt"
+  },
+  "computations/verification/lineJ/referee/rerun/code/ref_kappa.py": {
+   "sha256": "efacca726bf09a112597a0cb6880fdf08c0315bb722f08a988a3e6c217518c62",
+   "pinned_in": "computations/verification/lineJ/referee/rerun/SHA256_referee.txt"
+  },
+  "computations/verification/lineJ/referee/rerun/code/ref_numerics.py": {
+   "sha256": "3a9d91b9650de1e3b7ca39fc41a2e4260010052a4736bb1419408e4a0c214c62",
+   "pinned_in": "computations/verification/lineJ/referee/rerun/SHA256_referee.txt"
+  },
+  "computations/verification/lineJ/referee/rerun/code/sectors_exact.py": {
+   "sha256": "d25d8124dcf0c0e730bdd94a124b5847369705fd7d84ad38a585232f653c16b1",
+   "pinned_in": "computations/verification/lineJ/logs/SHA256_code.txt"
+  },
+  "computations/verification/lineK/K2/code/n1_collision.py": {
+   "sha256": "79a7bfd60fb5bdcff374dc5394e9336f2e5fa99b9aa1556c33ce8d46da1b1585",
+   "pinned_in": "computations/verification/lineK/K2/SHA256_K2.txt"
+  },
+  "computations/verification/lineK/K2/code/n3_levels_toy.py": {
+   "sha256": "3fd6f36b3ad397666e70ad116c859eb4148e5425bda6f588b9702a9777366418",
+   "pinned_in": "computations/verification/lineK/K2/SHA256_K2.txt"
+  },
+  "computations/verification/lineK/code/k2_SZ.py": {
+   "sha256": "d7a2b92bb337735e16a9a4ba6ac4a3d96c82a7a3fcb089ecf69ec1b9d16a0871",
+   "pinned_in": "computations/verification/lineK/SHA256_v2.txt"
+  },
+  "computations/verification/lineK/code/k2_large_v2.py": {
+   "sha256": "cbc4fec09739661415a4c9a8dbf2f9b9060f1ede4be0a703ae059a05230a31e2",
+   "pinned_in": "computations/verification/lineK/SHA256_v2.txt"
+  },
+  "computations/verification/lineK/code/k3_harg.py": {
+   "sha256": "1165163d0a804d603a7e9779252cb019d4d695d4eacb1c716bdbb4998954657a",
+   "pinned_in": "computations/verification/lineK/SHA256.txt"
+  },
+  "computations/verification/lineK/code/k4_catrate.py": {
+   "sha256": "c76aef5f18e56db805ad1f1923f197a30f036a1e7d1099e764df00382ea301b4",
+   "pinned_in": "computations/verification/lineK/SHA256.txt"
+  },
+  "computations/verification/lineK/code/k4_normrate.py": {
+   "sha256": "94355677dd27b578b6a7cb512a78b14c74f6042e55a03c87ad439a321bf12b66",
+   "pinned_in": "computations/verification/lineK/SHA256.txt"
+  },
+  "computations/verification/lineK/referee/delta/rerun/k2_SZ.py": {
+   "sha256": "d7a2b92bb337735e16a9a4ba6ac4a3d96c82a7a3fcb089ecf69ec1b9d16a0871",
+   "pinned_in": "computations/verification/lineK/SHA256_v2.txt"
+  },
+  "computations/verification/lineK/referee/delta/rerun/k2_large_v2.py": {
+   "sha256": "cbc4fec09739661415a4c9a8dbf2f9b9060f1ede4be0a703ae059a05230a31e2",
+   "pinned_in": "computations/verification/lineK/SHA256_v2.txt"
+  },
+  "computations/verification/lineK/referee/ref/ref_k2.py": {
+   "sha256": "dc9b56e8d957c89992d30d87bb1368e2bac732cb6907397b9ce15f3243c58d98",
+   "pinned_in": "computations/verification/lineK/referee/SHA256.txt"
+  },
+  "computations/verification/lineK/referee/ref/ref_k3.py": {
+   "sha256": "c55cb08d236fc96ddd425129463aee791efb3cedaa0523b8d86263de4583ad6b",
+   "pinned_in": "computations/verification/lineK/referee/SHA256.txt"
+  },
+  "computations/verification/lineK/referee/ref/ref_rat_excl.py": {
+   "sha256": "2b29c08818f6db127114f95a7e5ab0fdb3eea0dfa1736d97937df7d3eb14ccb5",
+   "pinned_in": "computations/verification/lineK/referee/SHA256.txt"
+  },
+  "computations/verification/lineK/referee/rerun/k3_harg.py": {
+   "sha256": "1165163d0a804d603a7e9779252cb019d4d695d4eacb1c716bdbb4998954657a",
+   "pinned_in": "computations/verification/lineK/SHA256.txt"
+  },
+  "computations/verification/lineK/referee/rerun/k4_catrate.py": {
+   "sha256": "c76aef5f18e56db805ad1f1923f197a30f036a1e7d1099e764df00382ea301b4",
+   "pinned_in": "computations/verification/lineK/SHA256.txt"
+  },
+  "computations/verification/lineK/referee/rerun/k4_normrate.py": {
+   "sha256": "94355677dd27b578b6a7cb512a78b14c74f6042e55a03c87ad439a321bf12b66",
+   "pinned_in": "computations/verification/lineK/SHA256.txt"
+  },
+  "computations/verification/lineL/L2/code/full_level.py": {
+   "sha256": "3aa4530fb0e57590cabac7e97af3382933f81aedf31ecafe169687bcb6339a46",
+   "pinned_in": "computations/verification/lineL/L2/SHA256_L2.txt"
+  },
+  "computations/verification/lineL/L2/code/iso_survey.py": {
+   "sha256": "1fbc829b861e6b0c27f4a597c37527fef9e763d153664e604c1beda4ad36e9b0",
+   "pinned_in": "computations/verification/lineL/L2/SHA256_L2.txt"
+  },
+  "computations/verification/lineL/L2/code/orbit_chk.py": {
+   "sha256": "f211fef61cd4c31ed76a332197b50d748f1a1cfa454bf30aed9e6aa50b294603",
+   "pinned_in": "computations/verification/lineL/L2/SHA256_L2.txt"
+  },
+  "computations/verification/lineL/L2/code/prec_chk.py": {
+   "sha256": "7feba789fe3046aaff2545c48164f46bcd82c1d181b27c4ed17a3e6e3ab9f9d9",
+   "pinned_in": "computations/verification/lineL/L2/SHA256_L2.txt"
+  },
+  "computations/verification/lineL/L2/code/timing.py": {
+   "sha256": "da62d87e88990628deece3a4d316c66cdc1d5d7b07018e8af2a39f28494a265c",
+   "pinned_in": "computations/verification/lineL/L2/SHA256_L2.txt"
+  },
+  "computations/verification/lineL/L2/code/twlaw.py": {
+   "sha256": "4e3b7cf25e70e86f48f2599ccf2cd131f192ee98733db4d2759a9ed62f5658b1",
+   "pinned_in": "computations/verification/lineL/L2/SHA256_L2.txt"
+  },
+  "computations/verification/lineL/L3/code/excursion_check.py": {
+   "sha256": "18bafc47fb0def20b399b91592e60ba0323a6cd9ebc562c3d9507863402a69a9",
+   "pinned_in": "computations/verification/lineL/L3/SHA256_L3.txt"
+  },
+  "computations/verification/lineL/L3/code/inherit_test.py": {
+   "sha256": "47dcf9430b06810422203b90fa5b629f73b61e4011043fb219f93081d225186e",
+   "pinned_in": "computations/verification/lineL/L3/SHA256_L3.txt"
+  },
+  "computations/verification/lineL/code/l1_unitarity_check.py": {
+   "sha256": "c6a543a8479268f077cae55f4b5e9837f0365ab07b2affc15d9059fc08410a65",
+   "pinned_in": "computations/verification/lineL/SHA256_L.txt"
+  },
+  "computations/verification/lineL/code/l3_op_cert.py": {
+   "sha256": "909d8897c132954a06417753ec667bd719727b1d59bcdcee7fd1424ad738c64e",
+   "pinned_in": "computations/verification/lineL/SHA256_L.txt"
+  },
+  "computations/verification/lineL/code/l4_const.py": {
+   "sha256": "f4d4a2d7264935ebde2e755d7e470792a632ef5d9a6fa08c4293437cffca562b",
+   "pinned_in": "computations/verification/lineL/SHA256_L.txt"
+  },
+  "computations/verification/lineL/referee/L2rerun/chk7.py": {
+   "sha256": "4a9206274bf07f057971a3262eaca314adb85f21f1461a25f27765af31920f76",
+   "pinned_in": "computations/verification/lineL/referee/SHA256.txt"
+  },
+  "computations/verification/lineL/referee/L2rerun/code/full_level.py": {
+   "sha256": "72a8c7d0fd0a3ed25af5dabf73556aab3ae5ff06846dc7d9f38b2247d9a7ab64",
+   "pinned_in": "computations/verification/lineL/referee/SHA256.txt"
+  },
+  "computations/verification/lineL/referee/L2rerun/code/iso_survey.py": {
+   "sha256": "7d485fdc96dc940e86e974958827de36ead54f3699e0c2e653edcb5eb862f56b",
+   "pinned_in": "computations/verification/lineL/referee/SHA256.txt"
+  },
+  "computations/verification/lineL/referee/L2rerun/code/orbit_chk.py": {
+   "sha256": "f211fef61cd4c31ed76a332197b50d748f1a1cfa454bf30aed9e6aa50b294603",
+   "pinned_in": "computations/verification/lineL/L2/SHA256_L2.txt"
+  },
+  "computations/verification/lineL/referee/L2rerun/code/prec_chk.py": {
+   "sha256": "8622254bfb9d93acc5f376ec264d6b5ca5fd724c91d86d30b39003c9338289e6",
+   "pinned_in": "computations/verification/lineL/referee/SHA256.txt"
+  },
+  "computations/verification/lineL/referee/L2rerun/code/timing.py": {
+   "sha256": "da62d87e88990628deece3a4d316c66cdc1d5d7b07018e8af2a39f28494a265c",
+   "pinned_in": "computations/verification/lineL/L2/SHA256_L2.txt"
+  },
+  "computations/verification/lineL/referee/L2rerun/code/twlaw.py": {
+   "sha256": "4e3b7cf25e70e86f48f2599ccf2cd131f192ee98733db4d2759a9ed62f5658b1",
+   "pinned_in": "computations/verification/lineL/L2/SHA256_L2.txt"
+  },
+  "computations/verification/lineL/referee/L3/s2s3.py": {
+   "sha256": "39556f26d2d60f3e8033802d926f322a16b9965a9646844f716132de8074c41e",
+   "pinned_in": "computations/verification/lineL/referee/SHA256.txt"
+  },
+  "computations/verification/lineL/referee/ref/ref_checks.py": {
+   "sha256": "8a123c42a4c518ba63d89b1eb246fbee0c7cfa2d7932ec1b76ab35934b266fb9",
+   "pinned_in": "computations/verification/lineL/referee/SHA256.txt"
+  },
+  "computations/verification/lineL/referee/rerun/l1_unitarity_check.py": {
+   "sha256": "c6a543a8479268f077cae55f4b5e9837f0365ab07b2affc15d9059fc08410a65",
+   "pinned_in": "computations/verification/lineL/SHA256_L.txt"
+  },
+  "computations/verification/lineL/referee/rerun/l3_op_cert.py": {
+   "sha256": "cd371edf3efe453a351bf122695eccb371650adcde07dd0a6c0822b77cfd9fb2",
+   "pinned_in": "computations/verification/lineL/referee/SHA256.txt"
+  },
+  "computations/verification/lineL/referee/rerun/l4_const.py": {
+   "sha256": "f4d4a2d7264935ebde2e755d7e470792a632ef5d9a6fa08c4293437cffca562b",
+   "pinned_in": "computations/verification/lineL/SHA256_L.txt"
+  },
+  "computations/verification/lineM/code/m_checks.py": {
+   "sha256": "f4b851bb570131910e79d2b07eb0f42a610c0dde3de00c32307a8a567c20b009",
+   "pinned_in": "computations/verification/lineM/SHA256_M.txt"
+  },
+  "computations/verification/lineM/referee/code/ref_m.py": {
+   "sha256": "65d819cfa2c20b6e97638ae846ed77c1925a02fc1c7a10d43833d1ee57abff1b",
+   "pinned_in": "computations/verification/lineM/referee/SHA256.txt"
+  },
+  "computations/verification/lineN/code/n1_factor.py": {
+   "sha256": "fe9e0f356580510f76be6a44ce0e228c49381c7198e23b89699630f67f7335b3",
+   "pinned_in": "computations/verification/lineN/SHA256_N.txt"
+  },
+  "computations/verification/lineN/code/n5_slow_toy.py": {
+   "sha256": "ae8843e08d188f63a7d8d21b2e04a7cfde869be4b04a19fd216b72a579937a40",
+   "pinned_in": "computations/verification/lineN/SHA256_N.txt"
+  },
+  "computations/verification/lineN10/code/a_gas.py": {
+   "sha256": "0334fee16630330b757d8a93d6f7f792869bc76e29fabc5efbd74c7b5535367f",
+   "pinned_in": "computations/verification/lineN10/SHA256_N10.txt"
+  },
+  "computations/verification/lineN10/code/f3_r2direct.py": {
+   "sha256": "273a4e471e2454d93421287b8aa2614a2c0fd0b3127889697fb85524df53a3c3",
+   "pinned_in": "computations/verification/lineN10/SHA256_N10.txt"
+  },
+  "computations/verification/lineN10/referee/code/ref_gas.py": {
+   "sha256": "7b0e929962f598efa5889f88982114bd04d4db9ca8d90069df479c975b629355",
+   "pinned_in": "computations/verification/lineN10/referee/SHA256.txt"
+  },
+  "computations/verification/lineN10b/code/c_constZ.py": {
+   "sha256": "f37b3d616b1317b7e09c7f282031251c9a45ff4e48dbd5d0b079f9a2da4b2934",
+   "pinned_in": "computations/verification/lineN10b/SHA256_N10b.txt"
+  },
+  "computations/verification/lineN10b/code/d_h13.py": {
+   "sha256": "fae86dd50f60f85830094b536829a5aa30eedcdab117885e2a0efeb017957d9d",
+   "pinned_in": "computations/verification/lineN10b/SHA256_N10b.txt"
+  },
+  "computations/verification/lineN11/code/c_coding.py": {
+   "sha256": "bbbe2a712013b5dd83ddfe3183937f8368de7e6759758a4dd1655ff1d9293688",
+   "pinned_in": "computations/verification/lineN11/SHA256_N11.txt"
+  },
+  "computations/verification/lineN11/code/t_classes.py": {
+   "sha256": "d7361620dce33f8e73ebbdb4e8f64b78623bbd83a3b3ae8f1a3ac82cc2e5d6ea",
+   "pinned_in": "computations/verification/lineN11/SHA256_N11.txt"
+  },
+  "computations/verification/lineN11/referee/code/ref_US.py": {
+   "sha256": "1762cbced02c5ff87cb6421ab77ae40d037c1ec81479b26318ad860bb5372801",
+   "pinned_in": "computations/verification/lineN11/referee/SHA256.txt"
+  },
+  "computations/verification/lineN11/referee/code/ref_gas2.py": {
+   "sha256": "3b72e5cf7220721e8108687fe3a88d7b598883c3a782d9b5b406cfb688c4413d",
+   "pinned_in": "computations/verification/lineN11/referee/SHA256.txt"
+  },
+  "computations/verification/lineN11/referee/code/rerun_a_per.py": {
+   "sha256": "48a9b12b0c08083c8f4e2cfa40e7361d8700b87731563c04859e0ae9a6b668de",
+   "pinned_in": "computations/verification/lineN11/referee/SHA256.txt"
+  },
+  "computations/verification/lineN11/referee/code/rerun_f_Rs.py": {
+   "sha256": "0f06911153ef3743c231fa545251e3bdafcd657499ce49e393bf25c13a7cc0f9",
+   "pinned_in": "computations/verification/lineN11/referee/SHA256.txt"
+  },
+  "computations/verification/lineN11b/code/a_unit_types.py": {
+   "sha256": "77750051b3514b109706ff30e82c991c1236bd6371fac1f53946fcb0541464f8",
+   "pinned_in": "computations/verification/lineN11b/SHA256_N11b.txt"
+  },
+  "computations/verification/lineN11b/code/b_exactXY.py": {
+   "sha256": "5231dfadd11301901bc18b988fae5c46951ff31e2dd47d3ab06c86b73c2ada95",
+   "pinned_in": "computations/verification/lineN11b/SHA256_N11b.txt"
+  },
+  "computations/verification/lineN11b/code/d_mixed.py": {
+   "sha256": "e32e195629797e8ccc45d101ebdce10cf0682033948402c2d6a985bf04c65446",
+   "pinned_in": "computations/verification/lineN11b/SHA256_N11b.txt"
+  },
+  "computations/verification/lineN11b/code/f_D1preflight_H.py": {
+   "sha256": "7adefd00b4614403a0a4ee489d579844f89aaca0d79426ac9b7f866fcc55dcbb",
+   "pinned_in": "computations/verification/lineN11b/SHA256_N11b.txt"
+  },
+  "computations/verification/lineN11b/code/g_D1perorb_H.py": {
+   "sha256": "0c444d11e8fb4c3e590f0c22bb2d3c21d0b7f76fce8a13371b4b3f2f1b5616ce",
+   "pinned_in": "computations/verification/lineN11b/SHA256_N11b.txt"
+  },
+  "computations/verification/lineN11b/code/u_cert.py": {
+   "sha256": "e3245c0b1574f519bd2b2882f613c9bbc5420f205e239b764df183964f4c7f40",
+   "pinned_in": "computations/verification/lineN11b/SHA256_N11b.txt"
+  },
+  "computations/verification/lineN11b/referee/code/ref_exactXY.py": {
+   "sha256": "925fb8ed2e8027d4b6a6a9a2fafcaa528e9c07e74c203b6fe01649de943334b7",
+   "pinned_in": "computations/verification/lineN11b/referee/SHA256.txt"
+  },
+  "computations/verification/lineN12/adapted/quad_stepbound.py": {
+   "sha256": "d5c798dace0723641982c47ff7687c8e7e4d9e2351ef05f98376de871da72f3e",
+   "pinned_in": "computations/verification/lineN12/SHA256_N12.txt"
+  },
+  "computations/verification/lineN12/adapted/stepnorm_table.py": {
+   "sha256": "06a77ae0c41c3035ef2cf68f3a963950a0a99576fe9365a1e20d40ed4edb410a",
+   "pinned_in": "computations/verification/lineN12/SHA256_N12.txt"
+  },
+  "computations/verification/lineN12/adapted/verify_adapted.py": {
+   "sha256": "885a279b7ae0f8b5ad5c4af6abc4c70c76c762448f94eca821246221eb31c8dd",
+   "pinned_in": "computations/verification/lineN12/SHA256_N12.txt"
+  },
+  "computations/verification/lineN12/code/a_ops.py": {
+   "sha256": "f5d5284e52bf784e014b0334d447559723f7b7678ec46e9db61bc3253827df79",
+   "pinned_in": "computations/verification/lineN12/SHA256_N12.txt"
+  },
+  "computations/verification/lineN12/code/b_powerbound.py": {
+   "sha256": "69b0256c8342c2ff9f457c52122ecefe551ccd52500531684b808e66306872ce",
+   "pinned_in": "computations/verification/lineN12/SHA256_N12.txt"
+  },
+  "computations/verification/lineN12/code/c_pairs.py": {
+   "sha256": "84bdd361d2c7bdc84b50c5e3e01a23a97dd0bdf6d1f00f990ed2916694d5378b",
+   "pinned_in": "computations/verification/lineN12/SHA256_N12.txt"
+  },
+  "computations/verification/lineN12/code/f_adapted.py": {
+   "sha256": "8aeb0862719aa1ef970fead436835dcbb645da945efcf3c5bcd73b918c93f23a",
+   "pinned_in": "computations/verification/lineN12/SHA256_N12.txt"
+  },
+  "computations/verification/lineN12/referee/code/ref_cache_check.py": {
+   "sha256": "43296a863cda112f808bf4ec188d1dfac46ee5f93e061dc2b79c9ffe536dd3ff",
+   "pinned_in": "computations/verification/lineN12/referee/SHA256.txt"
+  },
+  "computations/verification/lineN12/referee/code/rerun_verify_adapted.py": {
+   "sha256": "885a279b7ae0f8b5ad5c4af6abc4c70c76c762448f94eca821246221eb31c8dd",
+   "pinned_in": "computations/verification/lineN12/SHA256_N12.txt"
+  },
+  "computations/verification/lineN12b/code/a_blocks.py": {
+   "sha256": "eaa820148a0cef05b226224ddcc8b1b45cb17c1289ba564ce3ffd1e253109640",
+   "pinned_in": "computations/verification/lineN12b/SHA256_N12b.txt"
+  },
+  "computations/verification/lineN12b/code/b_cone.py": {
+   "sha256": "af977f734596545075de6a82094cac6adf50155ccc66738f8650ba425849f50d",
+   "pinned_in": "computations/verification/lineN12b/SHA256_N12b.txt"
+  },
+  "computations/verification/lineN12b/code/b_cone2.py": {
+   "sha256": "16d076f4a504a81fc9c173543d358a7a8ff7a9721fb1ab1e0d1a3914213235ab",
+   "pinned_in": "computations/verification/lineN12b/SHA256_N12b.txt"
+  },
+  "computations/verification/lineN12b/code/c_graph1.py": {
+   "sha256": "a3e9c4e5df020bee440a7265e064708964781119b9e577e054aa77302e6b17cc",
+   "pinned_in": "computations/verification/lineN12b/SHA256_N12b.txt"
+  },
+  "computations/verification/lineN12b/code/common.py": {
+   "sha256": "8d04f85ddb421aeb7c47d0ebc080261cb3b51fa331ab4b02874a8226d7ea39f7",
+   "pinned_in": "computations/verification/lineN12b/SHA256_N12b.txt"
+  },
+  "computations/verification/lineN12b/code/d_trivial.py": {
+   "sha256": "0b151104eb4fdc6558b4664984f55e52a04c47a666f2530cab78953dfc334d5b",
+   "pinned_in": "computations/verification/lineN12b/SHA256_N12b.txt"
+  },
+  "computations/verification/lineN12b/code/e_align.py": {
+   "sha256": "495d8c191ef6f373c357c976bd854689dc00158b93322ad227d55beb08dc4f9e",
+   "pinned_in": "computations/verification/lineN12b/SHA256_N12b.txt"
+  },
+  "computations/verification/lineN12b/code/f_perL.py": {
+   "sha256": "5c619a097d2d68eabad9a42b3a35ef850c6d7ec00bb497d0ca7ea6082f58c774",
+   "pinned_in": "computations/verification/lineN12b/SHA256_N12b.txt"
+  },
+  "computations/verification/lineN13/code/b2_quad.py": {
+   "sha256": "b988d848bc50aa8b3cf6be3efbc9bfc94ac05113871f9395fc07c62f90b374fb",
+   "pinned_in": "computations/verification/lineN13/SHA256_N13.txt"
+  },
+  "computations/verification/lineN13/code/b_arb.py": {
+   "sha256": "79a1aca8f68c0b8d2a2b2f5f79f3ddc8731ae88ef7f06eade57674c23892edf1",
+   "pinned_in": "computations/verification/lineN13/SHA256_N13.txt"
+  },
+  "computations/verification/lineN13/code/c_replay.py": {
+   "sha256": "f9f5389ea19c905c78c53e322e8f34f58aecd4023ea5cb5351c9ae05e02d8cf2",
+   "pinned_in": "computations/verification/lineN13/SHA256_N13.txt"
+  },
+  "computations/verification/lineN13/code/d_decay.py": {
+   "sha256": "36f0dab60bb6fdefa70a9517dc95077d3945fc3205b940ca39bff3294ac71049",
+   "pinned_in": "computations/verification/lineN13/SHA256_N13.txt"
+  },
+  "computations/verification/lineN13/code/e_shell.py": {
+   "sha256": "d1da3fbe002bcfd7cba0d400c064dd6e2d7bea01d368ed87334a17d4ee59865e",
+   "pinned_in": "computations/verification/lineN13/SHA256_N13.txt"
+  },
+  "computations/verification/lineN13/code/g_K.py": {
+   "sha256": "792dde037afef9358032fed366ca4c5e4a2446151c4b9809f19591e58a6a1d8c",
+   "pinned_in": "computations/verification/lineN13/SHA256_N13.txt"
+  },
+  "computations/verification/lineN13/referee/code/ref_lip_float.py": {
+   "sha256": "9b88bf52dfe762e473c9b56b4fb5d5d50856867ebe2169af3759ce2b55433e67",
+   "pinned_in": "computations/verification/lineN13/referee/SHA256.txt"
+  },
+  "computations/verification/lineN13/referee/code/ref_perL.py": {
+   "sha256": "91e1043fbaa784d505dc162786f8ca18da568d7f743664b96a23c41bf6a266b3",
+   "pinned_in": "computations/verification/lineN13/referee/SHA256.txt"
+  },
+  "computations/verification/lineN13/referee/code/ref_perL_all.py": {
+   "sha256": "7c9a69192cad4065b10ac2542d8f044214a100e14400b4c0b96279248ba3d290",
+   "pinned_in": "computations/verification/lineN13/referee/SHA256.txt"
+  },
+  "computations/verification/lineN13/referee/code/ref_replay_spot.py": {
+   "sha256": "45ef90b87ea900736b3ea6164d6f548c3f3ce0326a4a0f713bbd9fce68123160",
+   "pinned_in": "computations/verification/lineN13/referee/SHA256.txt"
+  },
+  "computations/verification/lineN13b/code/a_press.py": {
+   "sha256": "d8cc068b1976c0152c9072de0a9e11deb12bb6fc174abaf7555bb2f31f0d7530",
+   "pinned_in": "computations/verification/lineN13b/SHA256_N13b.txt"
+  },
+  "computations/verification/lineN13b/code/b_subgroup.py": {
+   "sha256": "be837bdc803c65ad4658288f5c6f592d30fe5c63b72d2c7774a0e319a7e0d56d",
+   "pinned_in": "computations/verification/lineN13b/SHA256_N13b.txt"
+  },
+  "computations/verification/lineN13b/code/c_levelq.py": {
+   "sha256": "67f6ba1ccd32322a438f5f8ad4653ee4bb3e5b1b0b3b8ab8e89bb42418d5b6e4",
+   "pinned_in": "computations/verification/lineN13b/SHA256_N13b.txt"
+  },
+  "computations/verification/lineN14/code/a_cert.py": {
+   "sha256": "08e8f5f2330725529cc47ad8656823ff6fdbf8676db84d22480b294f7997b63a",
+   "pinned_in": "computations/verification/lineN14/SHA256_N14.txt"
+  },
+  "computations/verification/lineN14/code/a_enum.py": {
+   "sha256": "73f6bed78d7ae202ce696465f096b4052b7641ae13224b51fa3b6b9279914de7",
+   "pinned_in": "computations/verification/lineN14/SHA256_N14.txt"
+  },
+  "computations/verification/lineN14/code/b_cp.py": {
+   "sha256": "02e15ba599c8baadea87c0a0fbd3b70f5c016bb212f96406a9fc1665be8b5762",
+   "pinned_in": "computations/verification/lineN14/SHA256_N14.txt"
+  },
+  "computations/verification/lineN14/code/b_cp2.py": {
+   "sha256": "2129927288d8969c4dbc93dd4979a8e4bed45671b510ba67d815d1ffa5f12ea5",
+   "pinned_in": "computations/verification/lineN14/SHA256_N14.txt"
+  },
+  "computations/verification/lineN14/code/c2_mid.py": {
+   "sha256": "bf2fa213edc332a18a877f3179610b3cfdbd90f50dd0878bbf41f3c5e06f2876",
+   "pinned_in": "computations/verification/lineN14/SHA256_N14.txt"
+  },
+  "computations/verification/lineN14/code/d_decay2.py": {
+   "sha256": "009c9c8f1de4045943e444d53431cca35c6196ae2aace03e00a7a9c710a18889",
+   "pinned_in": "computations/verification/lineN14/SHA256_N14.txt"
+  },
+  "computations/verification/lineN14/code/fastops.py": {
+   "sha256": "1c242d1e1dcf06b21db72e860964e6036bc75b13fed42f5b9b0835ea4f6a9878",
+   "pinned_in": "computations/verification/lineN14/SHA256_N14.txt"
+  },
+  "computations/verification/lineN14/code/g_carry.py": {
+   "sha256": "2563ede11ae2008f3a23b3f6051167e9fc7c057512da8b7a5324215db70847be",
+   "pinned_in": "computations/verification/lineN14/SHA256_N14.txt"
+  },
+  "computations/verification/lineN14/referee/code/ref_cp_cert.py": {
+   "sha256": "3fd8d2d6be0da50b39872adac4a171340857e0bed4a334c04d984e2fb1260d9d",
+   "pinned_in": "computations/verification/lineN14/referee/SHA256.txt"
+  },
+  "computations/verification/lineN14/referee/code/ref_levelq.py": {
+   "sha256": "fb7a548e38a8a1468b7d9ea755ef8d9f1e3b27a673b1d3926d3c2e565406d5b3",
+   "pinned_in": "computations/verification/lineN14/referee/SHA256.txt"
+  },
+  "computations/verification/lineN15/code/a_cert3.py": {
+   "sha256": "9a84411cbc2e492952d7bb224ed9f4de95d19fcb5f738d5ae5bea475be89b2ed",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/code/b_cp3.py": {
+   "sha256": "c6badee9e7c05bf40c5ccd9286e5a9d826816f653f7f08c897f10217b74989b0",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/code/c3_mid.py": {
+   "sha256": "aeb0b52bda02d7d6b21844a24ccab9cfde4682924da2528e0cad0cce368d9f4d",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/code/c3_vs_arb.py": {
+   "sha256": "79b0d87f8835dcfce6bf690c8bd1837e2a9148c7b41151cdf16583953779879d",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/code/conv.py": {
+   "sha256": "c050c1ee2a22577a8c96616a51e74d06ccf90582ca7e4d9502dae991c77da865",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/code/conv_est.py": {
+   "sha256": "b7e052103c93c995e2296e2c04a6793f45e8110682b09356ddaeeda610b7ff1f",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/code/f_partial.py": {
+   "sha256": "e1cc85ccd023ce0892a12ff6b7784c2cbf391faf1d0e65349f6a6e0cc213dfcb",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/code/g_carry.py": {
+   "sha256": "681cc6d924d087fadb38705aa40d3f2aac501be8a6c4bb0621a11923af56954a",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/code/g_torus.py": {
+   "sha256": "94f0c48da8303480854d297121d0e9d8375e532eeb54f39554192ab532976bd8",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/code/nh_table.py": {
+   "sha256": "f5d51bd2bae89ef6e619ff5bacc51da19b48920a9367a32ab47534b0a68eda44",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/code/nh_table_rig.py": {
+   "sha256": "d98362cc61517aa04ebd9014b01587dec80ceb3c4cef5375b15b7096fa63d452",
+   "pinned_in": "computations/verification/lineN15/SHA256_N15.txt"
+  },
+  "computations/verification/lineN15/referee/code/ref_arith15.py": {
+   "sha256": "50d627a4b794686c0edbbc13f56356884c08ddc946f245cd09939db609f84690",
+   "pinned_in": "computations/verification/lineN15/referee/SHA256.txt"
+  },
+  "computations/verification/lineN15/referee/code/ref_d7.py": {
+   "sha256": "8501ba5d70f317a39580e5c3ecdd056e53975ce9d4430e8eab2dced0ae5b69d7",
+   "pinned_in": "computations/verification/lineN15/referee/SHA256.txt"
+  },
+  "computations/verification/lineN16/code/conv_vec.py": {
+   "sha256": "5c5b0d5df15f862d62108470590deb0fe351f0746bbe69b9b50e4218ab6216aa",
+   "pinned_in": "computations/verification/lineN16/SHA256_N16.txt"
+  },
+  "computations/verification/lineN16/code/g_scalar.py": {
+   "sha256": "1c5a3cd9beb2347dcfee726fdd8f3173ab72310a883a00b4ccd179865236f647",
+   "pinned_in": "computations/verification/lineN16/SHA256_N16.txt"
+  },
+  "computations/verification/lineN16/code/g_triple.py": {
+   "sha256": "75cac2f7d49233247b90714859baa510a04952f39b395859a2c0cda2bb66ef8b",
+   "pinned_in": "computations/verification/lineN16/SHA256_N16.txt"
+  },
+  "computations/verification/lineN16/referee/code/ref_gscalar.py": {
+   "sha256": "15cf641cdb632cf50c38db26cfe97e8c55b25eb3e66685d32a5b5913d48a9dcc",
+   "pinned_in": "computations/verification/lineN16/referee/SHA256.txt"
+  },
+  "computations/verification/lineN16/referee/code/rerun_acert3_spot.py": {
+   "sha256": "ee2bf8da5b078dcb1d85492f264bff3db0a844bceacfebe677fbacfe61ff5ec0",
+   "pinned_in": "computations/verification/lineN16/referee/SHA256.txt"
+  },
+  "computations/verification/lineN16b/code/a_mixed_majorant.py": {
+   "sha256": "ef12bca086178f13e539909d525904e9d47aaf4e483e8274ca32323b797deb05",
+   "pinned_in": "computations/verification/lineN16b/SHA256_N16b.txt"
+  },
+  "computations/verification/lineN17b/code/a_levels.py": {
+   "sha256": "8fda0f7e3bb44a227854bff68d88b4d6630259740c65d619b3a647f324781a8d",
+   "pinned_in": "computations/verification/lineN17b/SHA256_N17b.txt"
+  },
+  "computations/verification/lineN17b/code/a_mixed_majorant.py": {
+   "sha256": "ef12bca086178f13e539909d525904e9d47aaf4e483e8274ca32323b797deb05",
+   "pinned_in": "computations/verification/lineN17b/SHA256_N17b.txt"
+  },
+  "computations/verification/lineN17b/code/b_exact_dev.py": {
+   "sha256": "6048cadaf4b144a9b7540fa37d599ac38652f3799e86c5337dd6cad788f42f50",
+   "pinned_in": "computations/verification/lineN17b/SHA256_N17b.txt"
+  },
+  "computations/verification/lineN17b/code/c_member_dev.py": {
+   "sha256": "d8454c880a209c118bf4b44e716a533d6c4a2b55de68006db70142b6c7a3ae30",
+   "pinned_in": "computations/verification/lineN17b/SHA256_N17b.txt"
+  },
+  "computations/verification/lineN17b/code/d_g3dev.py": {
+   "sha256": "1846ec942b7a7711dcd14f6cfc27f4c7fcb3cd091e866f4019bd0bc1a1a730db",
+   "pinned_in": "computations/verification/lineN17b/SHA256_N17b.txt"
+  },
+  "computations/verification/lineN18b/code/a_crossover_v2.py": {
+   "sha256": "fce910f924288e7d1f9035a2f597141422bc4fc4c0da030ef39802b0d572e5d8",
+   "pinned_in": "computations/verification/lineN18b/SHA256_N18b.txt"
+  },
+  "computations/verification/lineN18b/code/b_make_v2.py": {
+   "sha256": "cea2373da2fe0ea1981a0487ba2920c9ff321b021928a757c0c2c8e98930ae66",
+   "pinned_in": "computations/verification/lineN18b/SHA256_N18b.txt"
+  },
+  "computations/verification/lineN19b/code/a_crossover_v3.py": {
+   "sha256": "606d3a9784c679f029156fff6b399290c6a4cf72a52027097667a36a9d469102",
+   "pinned_in": "computations/verification/lineN19b/SHA256_N19b.txt"
+  },
+  "computations/verification/lineN19b/code/b_make_v4.py": {
+   "sha256": "2c9afa7f9c90a6d1d16a7b35059a68ecd7ea370b8987ac1184344c5248c81c1e",
+   "pinned_in": "computations/verification/lineN19b/SHA256_N19b.txt"
+  },
+  "computations/verification/lineN2/code/a_index_identity.py": {
+   "sha256": "cb6576ef8e2f94ff13ee2b45ef396db2007bd85a0256aeebeefd878548aceca2",
+   "pinned_in": "computations/verification/lineN2/SHA256_N2.txt"
+  },
+  "computations/verification/lineN2/code/d_level_split.py": {
+   "sha256": "355f5196c4f3453f756680e74e96b01938994746fffba6e54dec8c6969a31d2e",
+   "pinned_in": "computations/verification/lineN2/SHA256_N2.txt"
+  },
+  "computations/verification/lineN3/code/d_level_split.py": {
+   "sha256": "7aad4a470d084857233550dbc1e0036b5b0daa82a2e3cf025f25d755c8f5f0fa",
+   "pinned_in": "computations/verification/lineN3/SHA256_N3.txt"
+  },
+  "computations/verification/lineN3/code/i_verify.py": {
+   "sha256": "6b45315e4358fb543488602af328a4a8e62fe47643effd3bd06c9bed2f1bbd92",
+   "pinned_in": "computations/verification/lineN3/SHA256_N3.txt"
+  },
+  "computations/verification/lineN3/referee/code/ref_lambda_arb.py": {
+   "sha256": "0d017f039f2830ca244dcc6f373da3a6b9e4dbe5f414b26847c3c3f4ab08ec24",
+   "pinned_in": "computations/verification/lineN3/referee/SHA256.txt"
+  },
+  "computations/verification/lineN4/code/b16_schur.py": {
+   "sha256": "0b1f0a296dd03f6253620a4ebd63c1c5813f01aeb59119626b96e32c9974453b",
+   "pinned_in": "computations/verification/lineN4/SHA256_N4.txt"
+  },
+  "computations/verification/lineN4/code/b_arb_cert.py": {
+   "sha256": "90920c19c7b82fd772ba2b81f1916f9cb679b83e1be66f522cfdbe4bbbe2565c",
+   "pinned_in": "computations/verification/lineN4/SHA256_N4.txt"
+  },
+  "computations/verification/lineN4/code/cert_lift16.py": {
+   "sha256": "c0f6f170c6d42e78e4c4dff1915cb863a690e109a276835a46c76c5d3c223751",
+   "pinned_in": "computations/verification/lineN4/SHA256_N4.txt"
+  },
+  "computations/verification/lineN4/integration_checks/b16_schur_xy.py": {
+   "sha256": "79c1d196c3093ca5f458743fe289fd1e430128ed89b3c4387c0e7c6f4f112c6f",
+   "pinned_in": "evidence/executions/20261031/lineN2N4/receipt.json"
+  },
+  "computations/verification/lineN4/referee/code/ref_blocks16.py": {
+   "sha256": "b11f3c63a1b904dd2b6c6ec1d5cec308fe2f7fe719305cbe81d5a2973ec1f0eb",
+   "pinned_in": "computations/verification/lineN4/referee/SHA256.txt"
+  },
+  "computations/verification/lineN4/referee/code/ref_cover.py": {
+   "sha256": "8345124d96b23bd6124a57022bae1c53c0605d0d97186976b17a4a6dceb61f00",
+   "pinned_in": "computations/verification/lineN4/referee/SHA256.txt"
+  },
+  "computations/verification/lineN4/referee/code/ref_lambda_arb.py": {
+   "sha256": "0d017f039f2830ca244dcc6f373da3a6b9e4dbe5f414b26847c3c3f4ab08ec24",
+   "pinned_in": "computations/verification/lineN4/referee/SHA256.txt"
+  },
+  "computations/verification/lineN4/referee/code/ref_schur.py": {
+   "sha256": "852c23209e87bec92d11c325eacae25063d01c65a5ad60fce88a2c88dc265e61",
+   "pinned_in": "computations/verification/lineN4/referee/SHA256.txt"
+  },
+  "computations/verification/lineN5/code/c_true.py": {
+   "sha256": "bff719e571bc625051e474a28dd387f13863be4216786232cf2b732b17eae6e1",
+   "pinned_in": "computations/verification/lineN5/SHA256_N5.txt"
+  },
+  "computations/verification/lineN5/code/d_excursion.py": {
+   "sha256": "3bc58910fff85c4cd8cad30e26244b8dd28fc880eaf91190c800ba3555761f11",
+   "pinned_in": "computations/verification/lineN5/SHA256_N5.txt"
+  },
+  "computations/verification/lineN5/code/e_composite.py": {
+   "sha256": "f118a03ed6d36dca882dd9c50b8aa98442c99e7e02f429104786ef16a766829e",
+   "pinned_in": "computations/verification/lineN5/SHA256_N5.txt"
+  },
+  "computations/verification/lineN5/referee/code/ref_depth_sum.py": {
+   "sha256": "5df88f589f4bf1bb6665bf5a15b01aca3a6bd40d16b077f04b2de5b4f4a8f8b4",
+   "pinned_in": "computations/verification/lineN5/referee/SHA256.txt"
+  },
+  "computations/verification/lineN5/referee/code/ref_i2_conv.py": {
+   "sha256": "fc7b473c5e8fae5fca9a19ad5b23279fd8a0683734ef1ce2b6a9710b4e1fc3c5",
+   "pinned_in": "computations/verification/lineN5/referee/SHA256.txt"
+  },
+  "computations/verification/lineN5/referee/code/ref_level_dev.py": {
+   "sha256": "8e58789733012bb27061fce2e3766c2a5820016cd72f3eb77b7b8901ccd20ae5",
+   "pinned_in": "computations/verification/lineN5/referee/SHA256.txt"
+  },
+  "computations/verification/lineN5/referee/code/ref_levels.py": {
+   "sha256": "177ecfeee81b3af657cd1616cc6cf3b2cc6fd30a86ca24659aa211db7ad9cdff",
+   "pinned_in": "computations/verification/lineN5/referee/SHA256.txt"
+  },
+  "computations/verification/lineN5/referee/code/ref_line_sample.py": {
+   "sha256": "99b94d0e17b5327db5a3f35a2541e186df1cb4ceb4dff5c732236ba9c482bcfd",
+   "pinned_in": "computations/verification/lineN5/referee/SHA256.txt"
+  },
+  "computations/verification/lineN5/referee/code/ref_mixed.py": {
+   "sha256": "46d4e93e26af1b0ebfaeccc1f18b79ac6e32c76802aace86ecd471884a422dcc",
+   "pinned_in": "computations/verification/lineN5/referee/SHA256.txt"
+  },
+  "computations/verification/lineN5/referee/code/ref_other_levels.py": {
+   "sha256": "fb97d0aaa9f7bd181ab43ad988ab3b5cc72951e13055a346cb391ed254f39929",
+   "pinned_in": "computations/verification/lineN5/referee/SHA256.txt"
+  },
+  "computations/verification/lineN5/referee/code/ref_trunc.py": {
+   "sha256": "1820c7b4f3b0ecf6cff3c8f28deaa2efadd1a4e857013fdcefdd9d84e1fb6656",
+   "pinned_in": "computations/verification/lineN5/referee/SHA256.txt"
+  },
+  "computations/verification/lineN5/referee/code/ref_wprime_size.py": {
+   "sha256": "1170ce8ff378570f628f821106e683613c9275cb882f2f3e919dfe3b1209b828",
+   "pinned_in": "computations/verification/lineN5/referee/SHA256.txt"
+  },
+  "computations/verification/lineN6/code/cert_core.py": {
+   "sha256": "1b2195981c87dab7be5b40e0bef194e2487bab0a0ac2db0cf2caccd22064b7e2",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/f_iso.py": {
+   "sha256": "63be4932bffc6fd2e8778e98d994c9954874ed6372ed587647ecc2957595dfa1",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/g_sign.py": {
+   "sha256": "f666b29525f84f0bd0aa9581dc0d2b6e3eaef437a51648fb48646b5193ff3443",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/h_rho16.py": {
+   "sha256": "f2d01a84137429ea913bebbaf644221b34d36d9454aa555911a96a2af723069e",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/i_screen.py": {
+   "sha256": "37cf34c1e5ef0f837a6837657f76bc4e3c49c2081894103bd30bb0851c5b8c0e",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/j_exactdev.py": {
+   "sha256": "79cf6ab469d9b96c7fbbf4c6e40b3376596a6487ff0f67e0d88a3cd029af4e68",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/k_scale.py": {
+   "sha256": "19c5dd1ceac94b9e7580083a42c7f61e156ed5287acd9f3b0f2918dc26bb6edf",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/n_cert.py": {
+   "sha256": "ff8c0be11d813bb1c3734654a2cf9f58899e1371718cd0c956ed7d44a317e6dd",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/o_levels.py": {
+   "sha256": "083c7f173373ea85c524209a4e230a58c95020bbd6d22378c3a33ae268d0ed0c",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/t_sym.py": {
+   "sha256": "9555bcb57905b903940486ccf1cfaf8467c603d0a224da5042b13efa57002b97",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/t_time.py": {
+   "sha256": "f5cee5442d83622149a864c2fb460a3e4177f315a8cda5c1c5badb46dc86146b",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/code/twb.py": {
+   "sha256": "d8738df450a25a29327e863c87f3c2caab4bb5a2adca917c7d85a5264771470d",
+   "pinned_in": "computations/verification/lineN6/SHA256_N6.txt"
+  },
+  "computations/verification/lineN6/referee/code/ref_near0.py": {
+   "sha256": "d5b15c8bca107f5f0c9275158c115544d34e2995543c9f618e45e64bebc0ecf1",
+   "pinned_in": "computations/verification/lineN6/referee/SHA256.txt"
+  },
+  "computations/verification/lineN6/referee/code/ref_pattern.py": {
+   "sha256": "263649d2ed4f43ca11d7f0f136efda472a57ff67a446676e88f02326e774f12d",
+   "pinned_in": "computations/verification/lineN6/referee/SHA256.txt"
+  },
+  "computations/verification/lineN7/code/b_pattern.py": {
+   "sha256": "f9331974860eb1a9d8261cb819cb47177b5835f172885b9ef55e6b664fcdb093",
+   "pinned_in": "computations/verification/lineN7/SHA256_N7.txt"
+  },
+  "computations/verification/lineN7/code/c_patZ.py": {
+   "sha256": "5aa6d8e9e655b9e48b2d895b23728fa5b733e56039149ae5ecce5d617e756598",
+   "pinned_in": "computations/verification/lineN7/SHA256_N7.txt"
+  },
+  "computations/verification/lineN7/code/d_Z16.py": {
+   "sha256": "abcb1bc6140e51defc0e27b93a27a877b919d1e4cf3ef368e7f8f1dca2b1027e",
+   "pinned_in": "computations/verification/lineN7/SHA256_N7.txt"
+  },
+  "computations/verification/lineN7/code/e_isodepth.py": {
+   "sha256": "a92ef41d04bb15a4152b3749eab1ca3f7bf7d2da409b7fb7ef0445d9226b6e83",
+   "pinned_in": "computations/verification/lineN7/SHA256_N7.txt"
+  },
+  "computations/verification/lineN7/code/e_isodepth2.py": {
+   "sha256": "793c4ec38dc098c1722f9d2cb417e5e1476f20a72df09037bbefc8069188345c",
+   "pinned_in": "computations/verification/lineN7/SHA256_N7.txt"
+  },
+  "computations/verification/lineN7/code/e_isodepth3.py": {
+   "sha256": "1e0a44640c2212efb7ed06a12706c7266dda20bb860095bc3f27956235536ac9",
+   "pinned_in": "computations/verification/lineN7/SHA256_N7.txt"
+  },
+  "computations/verification/lineN7/code/f_mixed.py": {
+   "sha256": "14c5b4264e1cccf69d44752d3e7e0e750a562951bf4412036959af03ec9bffd6",
+   "pinned_in": "computations/verification/lineN7/SHA256_N7.txt"
+  },
+  "computations/verification/lineN7/code/h_rho16.py": {
+   "sha256": "4e8bd342c5365ba46d56ee2d9f73ca0765eb5526c7d494855b5ae38019d3a957",
+   "pinned_in": "computations/verification/lineN7/SHA256_N7.txt"
+  },
+  "computations/verification/lineN7/code/i_shells.py": {
+   "sha256": "8039b60dff1be11570aee573e32e286483ffab9424c780491dee75de40b03282",
+   "pinned_in": "computations/verification/lineN7/SHA256_N7.txt"
+  },
+  "computations/verification/lineN7/code/o_levels.py": {
+   "sha256": "172166b16fc88c6cf2f1441ac2841694d64b1610ea52cca3a7bb23385f3d3b73",
+   "pinned_in": "computations/verification/lineN7/SHA256_N7.txt"
+  },
+  "computations/verification/lineN7/referee/code/ref_crossline.py": {
+   "sha256": "43d68be23a6d89d8e03e302361cfe17668e7c16e2479f7a1c8d304a157c94e19",
+   "pinned_in": "computations/verification/lineN7/referee/SHA256.txt"
+  },
+  "computations/verification/lineN7/referee/code/ref_mixed2.py": {
+   "sha256": "a40a0e10f2c6b3b885d990732f5b2edd1b492f9a08131eca1934f78790b86027",
+   "pinned_in": "computations/verification/lineN7/referee/SHA256.txt"
+  },
+  "computations/verification/lineN7/referee/code/rerun_d_Z16.py": {
+   "sha256": "5c241c7bdba30af49411b8fd4ce6a5e76a6d0b3d5c9d9d2606e142ef2c426d3a",
+   "pinned_in": "computations/verification/lineN7/referee/SHA256.txt"
+  },
+  "computations/verification/lineN7b/code/b1_const.py": {
+   "sha256": "79aeab08da7a849de25810a9cc5ea734f1b1b58a12de07d1e9d0eb92efbbd130",
+   "pinned_in": "computations/verification/lineN7b/SHA256_N7b.txt"
+  },
+  "computations/verification/lineN7b/code/b_levels.py": {
+   "sha256": "203d37e96b6d1f2811ad51da0bf11ba2582bf5fabf44d037892c1b28044ce286",
+   "pinned_in": "computations/verification/lineN7b/SHA256_N7b.txt"
+  },
+  "computations/verification/lineN7b/code/c_prp_census.py": {
+   "sha256": "e685058d9f6ad33579ba225b8c99d344c6096b0f0c980c6d4bb6ca9e7673f3db",
+   "pinned_in": "computations/verification/lineN7b/SHA256_N7b.txt"
+  },
+  "computations/verification/lineN7b/code/e_iso.py": {
+   "sha256": "847b6a1027c0e4fe2a89709878d04c54415f113cd85baa732a2e70b1a5beb36d",
+   "pinned_in": "computations/verification/lineN7b/SHA256_N7b.txt"
+  },
+  "computations/verification/lineN7b/code/t_time.py": {
+   "sha256": "913547d09e9e35f1f793b84f0bc48d492e92b18cecfec1317bb8c3ba3bd12467",
+   "pinned_in": "computations/verification/lineN7b/SHA256_N7b.txt"
+  },
+  "computations/verification/lineN7b/code/w_relaxed.py": {
+   "sha256": "74eed1a9e7356d4f7c81d148ede43bb12e49cf0c2292fdfa473103407e60bee0",
+   "pinned_in": "computations/verification/lineN7b/SHA256_N7b.txt"
+  },
+  "computations/verification/lineN8/code/n8_cert.py": {
+   "sha256": "51ade0bc9f302817d0b965c31f78b3c6d90ae721bd7fc36de629c7486c00095b",
+   "pinned_in": "computations/verification/lineN8/SHA256_N8.txt"
+  },
+  "computations/verification/lineN8/code/r_other.py": {
+   "sha256": "a03719f409a7ec48de87f0648a72526962da6032f878ae3f7a5346da7a890072",
+   "pinned_in": "computations/verification/lineN8/SHA256_N8.txt"
+  },
+  "computations/verification/lineN8/referee/code/ref_bases.py": {
+   "sha256": "5b6169f7d24103977b40ff5361611d5a62779ff445ab7abca912debd6a3352ad",
+   "pinned_in": "computations/verification/lineN8/referee/SHA256.txt"
+  },
+  "computations/verification/lineN8b/code/a_fact.py": {
+   "sha256": "35d525e27a57e7b71708ade7fdda7fa6a2414256d098bcfb326619582d022b75",
+   "pinned_in": "computations/verification/lineN8b/SHA256_N8b.txt"
+  },
+  "computations/verification/lineN8b/code/b_cline.py": {
+   "sha256": "5963caccfbcca02d2949391997c155810f221d9bac4574bce495fb083b425aab",
+   "pinned_in": "computations/verification/lineN8b/SHA256_N8b.txt"
+  },
+  "computations/verification/lineN8b/code/d_puni.py": {
+   "sha256": "6291fbb4d6202f02d4e4197862003f50ad759c6f3c9bd90cc3d6eb38a0c730c3",
+   "pinned_in": "computations/verification/lineN8b/SHA256_N8b.txt"
+  },
+  "computations/verification/lineN9/code/a_bases.py": {
+   "sha256": "cc9745d63280fdee69fcb2f6d2e2e384cdb1f14e81252667fa1ba5b8e7238a04",
+   "pinned_in": "computations/verification/lineN9/SHA256_N9.txt"
+  },
+  "computations/verification/lineN9/code/n9_cert.py": {
+   "sha256": "a3802ae775e63d19a85b6fd9beed142db26783e808f978f5b4a6e5e54b4a50a9",
+   "pinned_in": "computations/verification/lineN9/SHA256_N9.txt"
+  },
+  "computations/verification/lineN9b/code/a_per.py": {
+   "sha256": "48a9b12b0c08083c8f4e2cfa40e7361d8700b87731563c04859e0ae9a6b668de",
+   "pinned_in": "computations/verification/lineN9b/SHA256_N9b.txt"
+  },
+  "computations/verification/lineN9b/code/f_Rs.py": {
+   "sha256": "0f06911153ef3743c231fa545251e3bdafcd657499ce49e393bf25c13a7cc0f9",
+   "pinned_in": "computations/verification/lineN9b/SHA256_N9b.txt"
+  },
+  "computations/verification/lineN9b/code/g_unitmix.py": {
+   "sha256": "3327f7beb5e50ad256c6be56fa2199deafa6a371e45dd6e715fe06743718bc8b",
+   "pinned_in": "computations/verification/lineN9b/SHA256_N9b.txt"
+  }
+ }
+}

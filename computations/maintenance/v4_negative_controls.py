@@ -18,7 +18,8 @@ Gate list (tamper type in brackets):
   repository_audit         [corrupted tree: forbidden .jl file added]
   bibliographic_audit      [tampered hash: byte appended to digest-pinned cache]
   text_control_audit       [forbidden byte: NUL appended to README.md]
-  render_*_check (x5)      [tampered generated view: marker appended]
+  render_*_check (x6)      [tampered generated view: marker appended]
+  frozen_packets_check     [tampered pin: byte appended to a frozen packet file]
   sync_* write refusal (x3)[guard: write mode on hand-edited target refuses]
   manuscript_references    [corrupted binding: dangling citation key]
   wave2_check_sources      [tampered pin: wave2 contract bytes altered]
@@ -179,6 +180,10 @@ def main() -> int:
          append_text(case, "ERRATA.md", "\n<!-- V4-NC -->\n"), "tampered generated view"),
         ("render_status_check", [py, maint + "render_status.py", "--check"],
          append_text(case, "STATUS.md", "\n<!-- V4-NC -->\n"), "tampered generated view"),
+        ("render_results_check", [py, maint + "render_results.py", "--check"],
+         append_text(case, "RESULTS.md", "\n<!-- V4-NC -->\n"), "tampered generated view"),
+        ("frozen_packets_check", [py, maint + "frozen_packets.py", "--check"],
+         append_bytes(case, "computations/verification/lineJ/J3/code/levels_survey.py", b"\n"), "tampered frozen packet file"),
         ("render_bibliography_check", [py, maint + "render_bibliography.py", "--check"],
          append_text(case, "manuscript/unified_bibliography.tex", "\n% V4-NC\n"), "tampered generated view"),
         ("render_research_views_check", [py, maint + "render_research_views.py", "--check"],

@@ -1,5 +1,7 @@
 """Auditor's direct physical trace Tr (K M_N)^m (dense matrices, Line B / TRACE-163 conventions) at N = h_m - 4,
 compared with the E1/E2 finite-N prediction (c -> c(1+4/N)) from the auditor's transfer operator."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys,json,numpy as np; sys.path.insert(0,'.')
 from aud import *; from tmop import *
 eta=2.0; G=ghat(K1,eta)

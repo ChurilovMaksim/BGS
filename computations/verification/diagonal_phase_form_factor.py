@@ -19,6 +19,8 @@ Non-claims. A pass does not prove BGS-TRACE-005 or BGS-BGS-001, a CUE or
 COE limit, or a limit for the sixteen-phase ensemble.
 """
 from __future__ import annotations
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 
 import math
 

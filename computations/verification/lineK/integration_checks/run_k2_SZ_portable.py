@@ -6,6 +6,8 @@ its unchanged source with that one path replaced by the repository copy computat
 directory, and compares the output with the committed logs/k2_SZ.json and logs/k2_SZ.log (byte for byte).
 Needs python-flint (0.9.0 was used). Run from anywhere: python3 computations/verification/lineK/integration_checks/run_k2_SZ_portable.py
 Exit status 0 iff both outputs are byte-identical to the committed ones."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import contextlib, io, os, sys, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))

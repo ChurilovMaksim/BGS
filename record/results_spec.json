@@ -1,0 +1,211 @@
+{
+ "schema": "bgs-results-spec-v1",
+ "date": "2026-11-01",
+ "groups": [
+  {
+   "title": "The target: still open",
+   "note": "These are the questions the programme set out to answer. None of them is settled.",
+   "claims": [
+    [
+     "BGS-BGS-001",
+     "Fixed-strength microscopic BGS universality for the maintained frozen map"
+    ],
+    [
+     "BGS-TRACE-005",
+     "Signed Heisenberg-scale desymmetrized joint-trace estimate (the model-specific gap to BGS)"
+    ],
+    [
+     "BGS-TRACE-148",
+     "Scaling limit of the Haar diagonal-phase cat-map form factor"
+    ]
+   ]
+  },
+  {
+   "title": "Fixed kick: uniform trace bounds and arithmetic spikes (Sept–Oct 2026)",
+   "claims": [
+    [
+     "BGS-TRACE-113",
+     "Uniform power-trace bound for the original fixed-kick family (strict pressure gap)"
+    ],
+    [
+     "BGS-TRACE-116",
+     "Compact pair test transfers through an O(N^-2) matrix error"
+    ],
+    [
+     "BGS-TRACE-117",
+     "Kick-blind arithmetic spikes: Abel pair statistic stays more than 1/2 from CUE at odd Pell returns"
+    ],
+    [
+     "BGS-TRACE-124",
+     "Every odd modulus lies above 3/4 or below 5/7 (pure cat map)"
+    ],
+    [
+     "BGS-TRACE-125",
+     "Quadratic trace coefficient at every odd Pell return"
+    ]
+   ]
+  },
+  {
+   "title": "Random-phase and random-kick ensembles",
+   "claims": [
+    [
+     "BGS-TRACE-127",
+     "Diagonal random-phase form factor at times one, two and three"
+    ],
+    [
+     "BGS-TRACE-143",
+     "Haar diagonal-phase cat map = random-phase DFT star graph; exact encounter-pair identity"
+    ],
+    [
+     "BGS-TRACE-147",
+     "Exact expansions to m = 12 and the fixed-m deviation from the COE tau^3 value"
+    ],
+    [
+     "BGS-TRACE-149",
+     "Band-limited random kick: exact trace bridge E|Tr U^m|^2 = Psi_m(t_N)"
+    ],
+    [
+     "BGS-TRACE-154",
+     "B_m^sym < 2m for every odd m"
+    ]
+   ]
+  },
+  {
+   "title": "Fixed diagonal kick and Conjecture R (Lines B, E–H)",
+   "claims": [
+    [
+     "BGS-TRACE-163",
+     "Exact Pell-norm trace formula, orbit form and kernel structure"
+    ],
+    [
+     "BGS-TRACE-173",
+     "Certified exponential decay of chi_m for eta in [1, 81.574] (computer-assisted)"
+    ],
+    [
+     "BGS-TRACE-175",
+     "N-average reproduces the nu-average (Theorem U)"
+    ],
+    [
+     "BGS-TRACE-199",
+     "k1-kick analogue of Conjecture R fails at eta = 2 for every odd m >= 15 (computer-assisted)"
+    ],
+    [
+     "BGS-TRACE-209",
+     "Conjecture R fails for the Line B kick at eta = 2: W~rest_m/m >= 1.4e4 for odd m >= 47, 3 not dividing m"
+    ],
+    [
+     "BGS-TRACE-179",
+     "Conjecture R as stated (o(m) uniformly on compact eta-ranges)"
+    ],
+    [
+     "BGS-TRACE-210",
+     "Conjecture R_NSW (along m with h_m prime)"
+    ]
+   ]
+  },
+  {
+   "title": "Frozen R′ along m = 3p (Lines G, I–N4)",
+   "note": "R′ (BGS-TRACE-206) is a corrected mean law for the k1 kick at η = 2. Everything below either bounds a part of it or derives its failure from a stated hypothesis. R′ is neither proved nor refuted.",
+   "claims": [
+    [
+     "BGS-TRACE-206",
+     "Conjecture R′ (corrected mean law, k1 kick, eta = 2)"
+    ],
+    [
+     "BGS-TRACE-225",
+     "Theorem J: the d = 7 contribution oscillates with growth >= 1.0184224^m (computer-assisted)"
+    ],
+    [
+     "BGS-TRACE-235",
+     "Theorem K3: S+ contains infinitely many m = 3p in every unit class mod 56"
+    ],
+    [
+     "BGS-TRACE-244",
+     "Operator input OP for the four families (arb certificate)"
+    ],
+    [
+     "BGS-TRACE-257",
+     "H_mean implies frozen R′ is false along m = 3p (implication only)"
+    ],
+    [
+     "BGS-TRACE-256",
+     "Hypothesis H_mean"
+    ],
+    [
+     "BGS-TRACE-280",
+     "Theorem W+: explicit range beyond Weil (only for p >= 10^264.5)"
+    ],
+    [
+     "BGS-TRACE-283",
+     "Theorem N3: scarred conductors carry the slow orbit beta = 1"
+    ],
+    [
+     "BGS-TRACE-296",
+     "Theorem C′: unit-beta part at h_p, for p with h_p squarefree (not proved for any p)"
+    ]
+   ]
+  },
+  {
+   "title": "Main current result: Theorem R♯-mod v4 (Lines N5–N19b, polymer-gas route)",
+   "note": "This theorem is conditional. It says that if the open inputs H0–H8 hold and B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr, then W′_{3p}/m → ∞, so frozen R′ fails along m = 3p. The inputs are open, so this is a reduction, not a refutation of R′. A v5 revision is expected after the H1 and H4 research lines report.",
+   "claims": [
+    [
+     "BGS-TRACE-299",
+     "Theorem R♯-mod v4: conditional reduction of 'frozen R′ fails along m = 3p' to H0–H8"
+    ],
+    [
+     "BGS-TRACE-300",
+     "H1: collision lemma"
+    ],
+    [
+     "BGS-TRACE-301",
+     "H3: Kotecký–Preiss polymer weight (finite part certified, tail open)"
+    ],
+    [
+     "BGS-TRACE-302",
+     "H4: core-to-true conversion of the interaction constant (no working route yet)"
+    ],
+    [
+     "BGS-TRACE-303",
+     "H5: composite h_p"
+    ],
+    [
+     "BGS-TRACE-304",
+     "H6: inputs of Theorem C′ (explicit p0, squarefree h_p)"
+    ],
+    [
+     "BGS-TRACE-305",
+     "H7*: levels other than h_p"
+    ],
+    [
+     "BGS-TRACE-306",
+     "H8: wrap-around points at composite h_p"
+    ],
+    [
+     "BGS-TRACE-307",
+     "Interaction bound delta_int^core <= 5.14476e-7 (H2 met; computer-assisted)"
+    ],
+    [
+     "BGS-TRACE-318",
+     "Gas vs Robin crossover p1 >= 1390 under a stated idealisation (arithmetic implication)"
+    ],
+    [
+     "BGS-TRACE-322",
+     "delta_true(G <= 15) <= 2.470e-6"
+    ],
+    [
+     "BGS-TRACE-324",
+     "Prop X′"
+    ]
+   ]
+  }
+ ],
+ "known_issues": [
+  "**Continuous integration was not running as of 1 November 2026.** GitHub Actions refused to start jobs on this repository (account billing). All check results quoted in recent PRs are local runs.",
+  "**Legacy `native_decide`.** {native_decide_uses} uses in {native_decide_modules} older Lean modules ({native_decide_list}) rely on native evaluation and therefore trust the compiler, beyond the kernel axioms. The claim boundaries disclose this. The LineB–N modules use none.",
+  "**Hash-pinned broken links.** 24 relative links in 11 files point to paths that later moved: `literature/arithmetic_dependency_closure_20261022.md`, `mathematics/fixed-map/fractional_hamming_cancellation.md`, `mathematics/fixed-map/onestep_charge_gap.md`, `mathematics/spectral-obstructions/flat_spectrum_obstruction.md`, `mathematics/trace-bridge/balanced_pair_schur_reduction.md`, `record/audits/20261006/README.md`, `record/charge_strengthening_promotion.md`, `record/circular_kernel_route_20261004.md`, `record/frozen_algebraic_review_20260924.md` and `supplement/fixed_map/resolvent-flow/loop_test_reductions.md` are byte-pinned by seals, manifests or receipts, and `literature/bibliography.md` is generated. They are left unedited on purpose: editing them would break the pins.",
+  "**Frozen evidence packets.** {frozen_files} verbatim, sha256-pinned packet files under `computations/verification/line*/` are outside the assertion-entry policy and the SyntaxWarning compile step ([registry](computations/maintenance/frozen_evidence_packets.json), [rationale](computations/maintenance/ASSERTION_POLICY.md)). They are evidence of what was run, not maintained entry points.",
+  "**Thin evidence on a few registered claims.** BGS-TRACE-095 and BGS-TRACE-097 (conditional) list no verifier; their only evidence is an integrity audit recording `all_valid: false`. BGS-RES-015 (proved) cites its own source note as evidence and depends on the conditional BGS-RES-014 for a symbol identity that it recomputes directly (see its `dependency_scope`).",
+  "**Manuscript lags the registry.** The unified manuscript covers the programme through BGS-TRACE-210 (Line H). Lines I–N (BGS-TRACE-211..324), including Theorem R♯-mod, are not yet written up; a claim skeleton is at `manuscript/unified_sections/lines_I_N_skeleton.tex` (not in the build)."
+ ]
+}

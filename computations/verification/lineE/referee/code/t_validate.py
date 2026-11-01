@@ -1,3 +1,5 @@
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys,time,numpy as np; sys.path.insert(0,'.'); from aud import *
 for kick,C in (('k1',K1),('full',fullkick())):
   for m,L in ((5,7),(7,3)):

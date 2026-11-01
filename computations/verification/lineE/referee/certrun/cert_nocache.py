@@ -5,6 +5,8 @@
  sector 4: Householder deflation of the top Galerkin eigenvector, Neumann/resolvent bounds on two circles (no sampling):
    exactly one eigenvalue in D(b11, r1), all others in |z| <= r2;  other sectors: spectrum in |z| <= r2.
  Usage: cert.py eta L rho K prec p r1 r2 outjson"""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys, json, time, numpy as np
 from flint import arb, acb, acb_mat, ctx
 eta=sys.argv[1]; L=int(sys.argv[2]); rho_f=sys.argv[3]; K=int(sys.argv[4]); ctx.prec=int(sys.argv[5])

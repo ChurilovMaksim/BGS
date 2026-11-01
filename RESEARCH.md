@@ -1,5 +1,21 @@
 # BGS research brief
 
+## Summary (1 November 2026)
+
+[RESULTS.md](RESULTS.md) is the one-page overview, with a results table and known issues. The dated sections below follow newest first.
+
+* **Target: open.** Microscopic BGS universality for the fixed map (BGS-BGS-001) and the signed Heisenberg-scale trace estimate
+  ([TRACE-005](mathematics/open_questions.md)) are not proved.
+* **Proved, at stated scope.** These include uniform trace bounds for the fixed kick, exact random-phase and band-limited
+  form factors, the fixed-kick trace formula and certified decay on η ∈ [1, 81.574], and Theorems J, K3, W, W⁺, N3 and C′ on the
+  frozen R′ side. "Proved" means a project proof, often computer-assisted and internally refereed, not external refereeing.
+* **Refuted.** Conjecture R at η = 2 ([TRACE-179](mathematics/fixed-map/derandomized_fixed_kick.md), via
+  [TRACE-209](mathematics/fixed-map/lineH_49state_certificate.md), computer-assisted).
+* **Open frontier.** Frozen R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) is open and is **not refuted**.
+* **Main current result: conditional.** Theorem R♯-mod v4 ([TRACE-299](mathematics/fixed-map/lineN5N18_gas_conditional.md)) reduces the failure of frozen R′ along m = 3p to
+  the open inputs H1 and H3–H8 ([TRACE-300](mathematics/fixed-map/lineN5N18_gas_conditional.md)–306), with H2 met (TRACE-307). Some ingredients are verification-pending
+  (TRACE-320, 322, 323, 324). A v5 revision is expected after the H1 and H4 lines report.
+
 ## The inherited level h_p, certified Λ and Theorem C′ (Lines N2–N4), 31 October 2026
 
 * **Periodic orbits at h_p.** Theorem B ([TRACE-288](mathematics/fixed-map/lineN2N4_inherited_level.md)) writes the class sums at c = h_p as sums over the index-4 subgroup G_p of

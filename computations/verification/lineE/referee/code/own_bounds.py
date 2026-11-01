@@ -1,5 +1,7 @@
 """Auditor's independent recomputation of the E4/E5 arithmetic (arb), from the certified constants in the author's cert JSON
 (mu_lo, T1, r2), plus true-value comparison (auditor's transfer operator numerics) and exact phi(h_m)."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys,json,math; sys.path.insert(0,'.')
 from flint import arb, ctx
 import sympy as sp, numpy as np

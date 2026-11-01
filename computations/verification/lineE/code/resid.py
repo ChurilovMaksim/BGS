@@ -1,5 +1,7 @@
 """Line E: resonant residue nu* = odd lift of -4^{-1} mod h (mod g'=2h). Exact structure:
  phase(n) = -nu* y' Nm(alpha_n)/g' == (1/2) n^T H^{-1} n + kap8 (sum n)^2 / 8  (mod 1),  kap8 = k y' mod 8, k=(-4nu*-1)/h."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys; import os; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 from pell import data, xy, hm
 from fractions import Fraction as Fr

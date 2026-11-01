@@ -1,3 +1,5 @@
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 # Test: is the bulk (non-resonant) F/2m kick-universal at fixed m? Scan k1 kick strength eta.
 import sys,os,subprocess,json,numpy as np,time
 sys.path.insert(0,'computations/verification/lineE/referee/code')

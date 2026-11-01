@@ -1,4 +1,6 @@
 """Law values |Z(nu_rho)|^2 for primaries at m=9..29 (beyond class-sum reach), growth-rate estimates."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import math, json, time
 from law import *
 cfg={(2,8):(10,2.6,50),(-2,8):(10,2.6,50),(2,16):(10,2.6,50),(-2,16):(10,2.6,50),(2,4):(6,1.5,40),(-2,4):(6,1.5,40)}

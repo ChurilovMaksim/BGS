@@ -68,6 +68,8 @@ REQUIRED = [
     MAINTENANCE / "verify_workspace.py",
     MAINTENANCE / "render_claim_registry.py",
     MAINTENANCE / "render_errata.py",
+    MAINTENANCE / "render_results.py",
+    ROOT / "RESULTS.md",
     MAINTENANCE / "build_unified_manuscript.py",
     ROOT / "computations" / "verification" / "repository_audit.py",
     ROOT / "computations" / "verification" / "scientific_registry_audit.py",
@@ -85,6 +87,7 @@ ACTIVE_MARKDOWN = [
     ROOT / "mathematics" / "returns" / "return_trace_obstruction.md",
     ROOT / "record" / "return_obstruction_review_20260912.md",
     ROOT / "RESEARCH.md",
+    ROOT / "RESULTS.md",
     ROOT / "record" / "publication_review_20260912.md",
     ROOT / "record" / "final_research_handoff_20260921.md",
     ROOT / "mathematics" / "fixed-map" / "fixed_model_symmetry_theorem.md",
@@ -235,9 +238,16 @@ def check_manuscript_surface() -> None:
         MANUSCRIPT / "unified_sections/ch15_conclusion_seed.tex",
         MANUSCRIPT / "weighted_and_edgeworth.tex",
     }
-    if orphaned != historical:
+    # Planned, deliberately unwired drafts (owner decision, 1 November 2026):
+    # the Lines I-N chapter skeleton lists registry claims only and must not
+    # enter the build until the Line N theorem settles (v4 -> v5).
+    drafts = {
+        MANUSCRIPT / "unified_sections/lines_I_N_skeleton.tex",
+    }
+    expected = historical | drafts
+    if orphaned != expected:
         fail("unexpected unused manuscript TeX sources: " +
-             ", ".join(str(p.relative_to(ROOT)) for p in sorted(orphaned ^ historical)))
+             ", ".join(str(p.relative_to(ROOT)) for p in sorted(orphaned ^ expected)))
 
     # Wave 4(b), same scope decision: manuscript/BGS_unified.pdf is the
     # deliberately TRACKED built compendium PDF (refreshed via the
