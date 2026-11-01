@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "c88982244f739792c95d7268c61262d23f1a1385",
+ "source_blob_sha": "bc678c4df51f3e4cc195bc4edc1e71101378112e",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -60,7 +60,8 @@
   "BGS-TRACE-163 through BGS-TRACE-182 were appended on 2026-10-29. On main 502af245 the highest TRACE id was BGS-TRACE-162, so 163 was the next free id and no renumbering was done. Twelve claims are proved (163, 165, 166, 167, 168, 169, 170, 171, 172, 173, 175, 178), three are conditional (164, 174, 176), and five are open (177 numerical-only, 179, 180, 181, 182). TRACE-173 is proved only with the directed-rounding constants. Lean certifies finite arithmetic facts only. This is not progress on BGS-BGS-001 or BGS-TRACE-148.",
   "1 November 2026 (THEOREM_DRAFT_v5 integration, referee lineN22): rows BGS-TRACE-325..333, 335, 336 appended; rows 302 (open -> proved), 322 and 323 (verification-pending -> proved) rebuilt with new method tags; 299, 300, 301, 318 re-mirrored (ledger/boundary text only). New and rebuilt rows are provisional (PENDING_INDEPENDENT_PROOF_REVIEW); Lean links certify finite arithmetic only.",
   "1 November 2026 (Lean batch 1, evidence/executions/20261101/lean_batch1/README.md): Lean links and lean_formalization tags added to BGS-FM-001, FM-009, FM-036, RET-004, TRACE-248, TRACE-271, TRACE-291, TRACE-297; every link is partial (see formalization_scope in claims.json) and certifies only the finite/algebraic statement named there. No state changed.",
-  "1 November 2026 (Lean batch 2, evidence/executions/20261101/lean_batch2/README.md): Lean links and lean_formalization tags added to BGS-TRACE-211, TRACE-218, TRACE-229, RES-023, and the twist corollary file appended to BGS-TRACE-297; every link is partial (see formalization_scope in claims.json) and certifies only the statement named there. No state changed."
+  "1 November 2026 (Lean batch 2, evidence/executions/20261101/lean_batch2/README.md): Lean links and lean_formalization tags added to BGS-TRACE-211, TRACE-218, TRACE-229, RES-023, and the twist corollary file appended to BGS-TRACE-297; every link is partial (see formalization_scope in claims.json) and certifies only the statement named there. No state changed.",
+  "1 November 2026 (Lean batch 3, evidence/executions/20261101/lean_batch3/README.md): Lean links and lean_formalization tags added to BGS-TRACE-259, TRACE-267, TRACE-216, TRACE-143, FM-026, TRACE-178, and further Lean files appended to BGS-TRACE-211, TRACE-218, TRACE-229; links are partial except where formalization_scope says otherwise (BGS-FM-026: scope in the receipt). Dated Lean notes appended to the boundaries of BGS-TRACE-143 and TRACE-216. No state changed."
  ],
  "claims": [
   {
@@ -3383,7 +3384,8 @@
    "methods": [
     "analytic_proof",
     "exact_identity",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -3393,9 +3395,9 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 20,
+    "evidence": 21,
     "verifiers": 4,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "record/cat_jet_rank_review.md",
@@ -3417,7 +3419,8 @@
     "archive/record/residual125_uniform_review.md",
     "record/residual125_promotion_map.json",
     "archive/record/odd_newest_sector_review.md",
-    "archive/record/odd_sector_count_combination_review.md"
+    "archive/record/odd_sector_count_combination_review.md",
+    "evidence/executions/20261101/lean_batch3/README.md"
    ],
    "verifiers": [
     "computations/verification/cat_jet_certificates.py",
@@ -3425,7 +3428,9 @@
     "computations/verification/residual125_certificates.py",
     "computations/verification/odd_newest_certificates.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/Fm026Counts.lean"
+   ],
    "ledger_status": "EXACT PROJECT PROOFS + SEPARATE INDEPENDENT COMPONENT/RANK AUDITS + BOUNDED EXACT REPLAYS + INHERITED REGISTERED LW",
    "boundary": "N=7*5^e,e>=1; every nonzero real algebraic t, including 10^-80N: multiplicity<=7. At least 612N/625+7 simple eigenvalues for even e>=4 and 612N/625+175 for even e>=6. Exact special lower bounds 4333 at N=4375 and 107443 at N=109375. Odd e>=3 gives at least 24N/25 simple eigenvalues; odd e>=5 gives 24N/25+35; odd e>=7 gives 24N/25+875 (875=840+35, counted once) and bounded simple U at 35,175. No full uniform U simplicity, gap, invariant oldform U subspace, complex scalar commutant, trace-statistical or BGS conclusion.",
    "spof": "thin_layer_stack",
@@ -8519,7 +8524,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -8528,20 +8534,23 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 2,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261029/lineC-random-phase/receipt.json"
+    "evidence/executions/20261029/lineC-random-phase/receipt.json",
+    "evidence/executions/20261101/lean_batch3/README.md"
    ],
    "verifiers": [
     "computations/verification/lineC/verify_thm1.py",
     "computations/verification/lineC/fixes_check.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineCDFTStar.lean"
+   ],
    "ledger_status": "ANALYTIC PROOF + NUMERICAL CHECK + INDEPENDENT REFEREE AUDIT",
-   "boundary": "For every odd N and S=[[3,4],[2,3]], M_N = Delta F_{1/4} Delta with Delta=diag e_N(-3*8^{-1}x^2), and P F_{1/4} P^{-1} = F (DFT) for (Pf)(x)=f(2x). For every theta, D_theta M_N is unitarily conjugate to D_theta' F with theta'_x = theta_{2x} - 2pi*6*8^{-1}(2x)^2/N, a measure-preserving bijection of the N-torus, so the eigenvalue law under Haar theta is that of Tanner's DFT star graph, which is also the class-AI star graph of Gnutzmann-Seif 2004. For a general unit cross coefficient beta the law depends only on the square class of beta. At prime N=p a non-square class flips the sign of every half-integer (sqrt p) term of E|Tr U^m|^2 and leaves every integer-order term unchanged; this matters only for p=1 mod 4 (p=13, m=4: 14033/2197 +/- 8 sqrt13/2197). Odd N only. The identification is elementary. Floating-point checks at N=5..103, including composite N, give errors <=5.4e-16, and eigenphases agree to <=4.1e-15. Not formalized in Lean. Not the fixed kick and not the 16-mode ensemble. BGS-TRACE-005 and BGS-BGS-001 remain open.",
+   "boundary": "For every odd N and S=[[3,4],[2,3]], M_N = Delta F_{1/4} Delta with Delta=diag e_N(-3*8^{-1}x^2), and P F_{1/4} P^{-1} = F (DFT) for (Pf)(x)=f(2x). For every theta, D_theta M_N is unitarily conjugate to D_theta' F with theta'_x = theta_{2x} - 2pi*6*8^{-1}(2x)^2/N, a measure-preserving bijection of the N-torus, so the eigenvalue law under Haar theta is that of Tanner's DFT star graph, which is also the class-AI star graph of Gnutzmann-Seif 2004. For a general unit cross coefficient beta the law depends only on the square class of beta. At prime N=p a non-square class flips the sign of every half-integer (sqrt p) term of E|Tr U^m|^2 and leaves every integer-order term unchanged; this matters only for p=1 mod 4 (p=13, m=4: 14033/2197 +/- 8 sqrt13/2197). Odd N only. The identification is elementary. Floating-point checks at N=5..103, including composite N, give errors <=5.4e-16, and eigenphases agree to <=4.1e-15. Not formalized in Lean. Not the fixed kick and not the 16-mode ensemble. BGS-TRACE-005 and BGS-BGS-001 remain open. Lean note (Lean batch 3, 1 November 2026): superseding \"Not formalized in Lean\" for these identities, the matrix identities of Theorem 1 (M_N = Delta F_{1/4} Delta, P F_{1/4} P^-1 = F and the unitary conjugacy of D_theta M_N to D_theta' F) are formalized in formalization/Bgs/LineCDFTStar.lean; the measure statement, the square-class remark and the numerics are not.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Floating-point checks of the matrix identity and eigenphases. Not formalized in Lean. An independent referee audit is recorded.",
    "other_weaknesses": [],
@@ -9875,6 +9884,7 @@
    "state": "proved",
    "methods": [
     "exact_identity",
+    "lean_formalization",
     "float_numerics"
    ],
    "ledger_claimed_methods": [
@@ -9884,18 +9894,21 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 2,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261029/lineB-derandomized/receipt.json"
+    "evidence/executions/20261029/lineB-derandomized/receipt.json",
+    "evidence/executions/20261101/lean_batch3/README.md"
    ],
    "verifiers": [
     "computations/verification/lineB/phase4/torsion2.py",
     "computations/verification/lineB/independent_replay/code/t12_torsion.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineBTorsionSplit.lean"
+   ],
    "ledger_status": "TRIVIAL EXACT IDENTITY (PROVED); ITS INTERPRETATION IS NUMERICAL ONLY",
    "boundary": "For a prime p | h_m, splitting the norm classes r by r = 0 mod p gives F = F_gen + F_tor exactly (Prop C regrouped). The identity is trivial; the computed values (m = 9: p = 7, 199; m = 11: p = 23, 353) and their reading are numerical only (BGS-TRACE-177). In particular the (11, 2) excess is not carried by the 23-torsion classes.",
    "spof": "unformalized_analytic_chain",
@@ -11083,19 +11096,21 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 2,
+    "evidence": 3,
     "verifiers": 1,
-    "formalization": 1
+    "formalization": 2
    },
    "evidence": [
     "evidence/executions/20261031/lineI/receipt.json",
-    "evidence/executions/20261101/lean_batch2/README.md"
+    "evidence/executions/20261101/lean_batch2/README.md",
+    "evidence/executions/20261101/lean_batch3/README.md"
    ],
    "verifiers": [
     "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
    ],
    "formalization": [
-    "formalization/Bgs/LineIPhaseSplit.lean"
+    "formalization/Bgs/LineIPhaseSplit.lean",
+    "formalization/Bgs/LineISummable.lean"
    ],
    "ledger_status": "ELEMENTARY PROOF (DEFINITIONAL IDENTITY) + FLOAT CHECK (integration re-implementation, random weights, m = 5, 7, 9, rel <= 4e-13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
    "boundary": "Odd m, h = h_m, any kick with sum |Phihat| < infinity (here k1, eta = 2), any unit nu0 with Z_m(nu0) != 0: with sigma(p) = Z_m(nu0)^-1 sum_{P(n) == p mod 2h} Phihat(n) e(-nu0 P(n)/2h) (a complex measure of total mass 1 on Z/2h) and sigmahat(delta) = sum_p sigma(p) e(-delta p/2h), Z_m(nu0+delta) = Z_m(nu0) sigmahat(delta) for every integer delta. A definitional rewriting (low novelty; the relative form of Line G's phase split G1, BGS-TRACE-203). With nu0 = nu_rho the dilation members of level d are sigmahat at delta in (2h/d)Z. The description of the 'resonance halo' (residues near small-denominator rationals) as small rational delta is a heuristic and not claimed; the halo is not a generalised 1/d^2 dilation law. Not a statement about Conjecture R' (BGS-TRACE-206).",
@@ -11267,6 +11282,7 @@
     "analytic_proof",
     "exact_identity",
     "independent_review",
+    "lean_formalization",
     "float_numerics"
    ],
    "ledger_claimed_methods": [
@@ -11278,12 +11294,13 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 5,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261031/lineI/receipt.json"
+    "evidence/executions/20261031/lineI/receipt.json",
+    "evidence/executions/20261101/lean_batch3/README.md"
    ],
    "verifiers": [
     "computations/verification/lineI/sym/monomial_intertw.py",
@@ -11292,9 +11309,11 @@
     "computations/verification/lineI/referee/delta/code/galcheck_R.py",
     "computations/verification/lineI/cert2/run_xcheck.sh"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineIMonomial.lean"
+   ],
    "ledger_status": "ANALYTIC PROOF + EXACT CHECK (integer arithmetic mod 8, sym/monomial_intertw.py; DF2 path-fixed rerun identical) + LEAN: AUXILIARY LEMMA seven_dvd_nsw_iff ONLY (NOT THE INTERTWINERS) + FLOAT CHECK (referee Galerkin check <= 1.2e-16, negative controls 1.16 / 1.13) + DIRECT CROSS-CHECK CERTIFICATE (m = 15, a = -2, class 1:3) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
-   "boundary": "The finite automaton factor of the (+-2,8) G2 operators depends on m only through (1+sqrt2)^m mod 8 (and the twist on beta and m mod 3); for m == 3 (mod 6) this gives 8 cases (m mod 24 in {9,15,21,3}) x (a = +-2). For each case there is a monomial unitary X on the 16 reachable states (permutation x 8th roots of unity) with X A_n^(9,2) X^-1 = A_n^(m,2) for all n mod 8 (a = 2), X (-1)^n conj(A_n^(9,2)) X^-1 = A_n^(m,-2) (a = -2), and a monomial Y with Y A_{-n} Y^-1 = A_n. Consequently, for the true (infinite-dimensional) lifted twisted operators V, E: L^(m,2)_beta = U L^(9,2)_beta U^-1 (U = I x X x I_3), L^(m,-2)_beta = J L^(9,2)_{-beta} J^-1 (J = K x X x I_3 antiunitary; uses conj ghat(n) = (-1)^n ghat(n) for k1 and K M_C K = M_{-C}), L_{-beta} = (R x Y x I_3) L_beta (R x Y x I_3)^-1; spectra (moduli and multiplicities), resolvent norms on |z| = R, trace norms and ||B|| are invariant. Witnesses found and checked in exact integer arithmetic mod 8; referee Galerkin check <= 1.2e-16 with negative controls; direct certificate of the transferred case m = 15, a = -2, class 1:3 reproduces the m = 9 values. Not formalised: the intertwiners are checked by exact code, not in Lean; the auxiliary fact 7 | h_m <=> m == 3 mod 6 is the Lean lemma Bgs.LineIArith.seven_dvd_nsw_iff (registered under BGS-TRACE-212). Verifier sym/monomial_intertw.py (v1, scratch import path) is superseded by sym_v3/monomial_intertw.py and kept as provenance.",
+   "boundary": "The finite automaton factor of the (+-2,8) G2 operators depends on m only through (1+sqrt2)^m mod 8 (and the twist on beta and m mod 3); for m == 3 (mod 6) this gives 8 cases (m mod 24 in {9,15,21,3}) x (a = +-2). For each case there is a monomial unitary X on the 16 reachable states (permutation x 8th roots of unity) with X A_n^(9,2) X^-1 = A_n^(m,2) for all n mod 8 (a = 2), X (-1)^n conj(A_n^(9,2)) X^-1 = A_n^(m,-2) (a = -2), and a monomial Y with Y A_{-n} Y^-1 = A_n. Consequently, for the true (infinite-dimensional) lifted twisted operators V, E: L^(m,2)_beta = U L^(9,2)_beta U^-1 (U = I x X x I_3), L^(m,-2)_beta = J L^(9,2)_{-beta} J^-1 (J = K x X x I_3 antiunitary; uses conj ghat(n) = (-1)^n ghat(n) for k1 and K M_C K = M_{-C}), L_{-beta} = (R x Y x I_3) L_beta (R x Y x I_3)^-1; spectra (moduli and multiplicities), resolvent norms on |z| = R, trace norms and ||B|| are invariant. Witnesses found and checked in exact integer arithmetic mod 8; referee Galerkin check <= 1.2e-16 with negative controls; direct certificate of the transferred case m = 15, a = -2, class 1:3 reproduces the m = 9 values. Not formalised: the intertwiners are checked by exact code, not in Lean; the auxiliary fact 7 | h_m <=> m == 3 mod 6 is the Lean lemma Bgs.LineIArith.seven_dvd_nsw_iff (registered under BGS-TRACE-212). Verifier sym/monomial_intertw.py (v1, scratch import path) is superseded by sym_v3/monomial_intertw.py and kept as provenance. Lean note (Lean batch 3, 1 November 2026): the finite intertwining relations of all eight witnesses and of Y, and their matrix form with X unitary, are now checked in Lean (formalization/Bgs/LineIMonomial.lean) against the automaton tables exported from the verifier; the derivation of the tables and the infinite-dimensional consequences remain not formalised.",
    "spof": "unformalized_analytic_chain",
    "spof_detail": "Witnesses checked in exact integer arithmetic mod 8 (not Lean); the transfer to the infinite-dimensional operators is a paper argument; referee Galerkin check and one direct cross-check certificate.",
    "other_weaknesses": [],
@@ -11355,19 +11374,22 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 2,
+    "evidence": 3,
     "verifiers": 1,
-    "formalization": 1
+    "formalization": 3
    },
    "evidence": [
     "evidence/executions/20261031/lineI/receipt.json",
-    "evidence/executions/20261101/lean_batch2/README.md"
+    "evidence/executions/20261101/lean_batch2/README.md",
+    "evidence/executions/20261101/lean_batch3/README.md"
    ],
    "verifiers": [
     "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
    ],
    "formalization": [
-    "formalization/Bgs/LineIAliasing.lean"
+    "formalization/Bgs/LineIAliasing.lean",
+    "formalization/Bgs/LineIMoebius.lean",
+    "formalization/Bgs/LineISummable.lean"
    ],
    "ledger_status": "ELEMENTARY PROOF (ORTHOGONALITY AND MOEBIUS INVERSION; OVERSTATEMENT REMOVED IN DELTA FIX DF6) + FLOAT CHECK (integration re-implementation, every q | 2h with q <= 4000 and the Moebius form, m = 5, 7, 9, <= 2.4e-12) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
    "boundary": "Odd m, h = h_m, Z_m(theta) = sum_n Phihat(n) e(-theta P(n)), C_Z(k) = sum_{n,n'} Phihat(n) conj(Phihat(n')) 1[P(n) - P(n') = k] (in Z): for every q | 2h, (1/q) sum_{nu' mod q} |Z_m(nu'/q)|^2 = sum_{j in Z} C_Z(jq), and F_m = phi(2h)^-1 sum_{e | 2h} mu(e) (2h/e) sum_j C_Z(j 2h/e). Not claimed (heuristic/assessment): the e > 2 Moebius terms are sums at exact rationals of denominator dividing 2h/e (non-unit residues), while the BGS-TRACE-206 resonant residues are units near, not at, small-denominator rationals (related through the G2 law, not identical); reading the bulk as the e in {1,2}, j != 0 aliasing sum; Hecke-equivariance and L^2-in-m averaging give no cancellation.",
@@ -11785,19 +11807,21 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 2,
+    "evidence": 3,
     "verifiers": 1,
-    "formalization": 1
+    "formalization": 2
    },
    "evidence": [
     "evidence/executions/20261031/lineJ/receipt.json",
-    "evidence/executions/20261101/lean_batch2/README.md"
+    "evidence/executions/20261101/lean_batch2/README.md",
+    "evidence/executions/20261101/lean_batch3/README.md"
    ],
    "verifiers": [
     "computations/verification/lineJ/J3/code/primelevel_W.py"
    ],
    "formalization": [
-    "formalization/Bgs/LineJ3PrimeLevel.lean"
+    "formalization/Bgs/LineJ3PrimeLevel.lean",
+    "formalization/Bgs/LineJ3GaussSquare.lean"
    ],
    "ledger_status": "ELEMENTARY PROOF + FLOAT CHECK (primelevel_W.py; referee rerun) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied)",
    "boundary": "Odd m, h = h_m, prime q || h_m, frozen members of level q. Completing the square, conj G_t(0) G_t(beta) = q^2 e(N(beta) tbar/q); the labels t = j y' cover F_q^* except exactly one value t_b. Hence W_{q,beta} = q^-2 (-1 - e(N(beta) tbar_b/q)), |W_{q,beta}| <= 2/q^2, for non-isotropic beta (N(beta) != 0 mod q), and W_{q,beta} = (q-2)/q^2 for the 2(q-1) isotropic beta != 0 (2 is a square mod q as 2y'^2 == 1). If q^2 | h there is no missing label and the values are 1/q^2 and (q-1)/q^2. A bound on the complete Gauss-sum weights only; it does not bound the twisted sums Zhat(beta). That this suppresses the slow-twist danger on m = 3p is a heuristic, not part of the claim. Float check: q = 41 max q^2|W| = 1.994 (non-isotropic), 39 (isotropic); q = 31: 1.000, 30.",
@@ -12877,7 +12901,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -12886,15 +12911,18 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 0,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261031/lineL/receipt.json"
+    "evidence/executions/20261031/lineL/receipt.json",
+    "evidence/executions/20261101/lean_batch3/README.md"
    ],
    "verifiers": [],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineLLineOrth.lean"
+   ],
    "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md; Line L first round ACCEPT AFTER FIXES F1-F5, DELTA READY; Line L2 READY AFTER TEXT FIXES L2-F1..F4, applied at integration as REPORT_L2.md section 7)",
    "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231 and BGS-TRACE-243 (S+, O-natural_m, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q); targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). Notation of BGS-TRACE-254, 255, q || h_m split. [P] sum_{beta in l(q)} |Zhat_beta|^2 = q sum_{u in O/q} |A(u + q)|^2 (Parseval on O/q); by Cauchy-Schwarz over the q - 1 nonzero beta, |D_q|^2 <= ((q-1)/q^2) sum_{beta in l(q) minus 0} |Zhat_beta|^2 = (1 - 1/q) C_q with C_q := sum_u |A(u + q)|^2 - |Z|^2/q >= 0. In collision form sum_u |A(u + q)|^2 = sum_{v: alpha_v in q} R(v); exact collisions alpha_v = 0, v != 0 contribute 0 (Theorem U), v = 0 contributes sum |w|^2 = 1, so C_q = 1 + sum_{alpha_v in q minus 0} R(v) - |Z|^2/q exactly: only sporadic collisions remain.",
    "spof": "unformalized_analytic_chain",
@@ -13165,7 +13193,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -13174,15 +13203,18 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 0,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261031/lineL/receipt.json"
+    "evidence/executions/20261031/lineL/receipt.json",
+    "evidence/executions/20261101/lean_batch3/README.md"
    ],
    "verifiers": [],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineLLineOrth.lean"
+   ],
    "ledger_status": "PAPER PROOF [P] (REMARK RELABELLED [H] BY L3-F3, NOT REGISTERED) + INDEPENDENT REFEREE AUDIT (computations/verification/lineL/referee/REPORT.md, section Line L3 referee: READY AFTER FIXES L3-F1..F4, applied at integration as REPORT_L3.md section 6)",
    "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, frozen definition of BGS-TRACE-206; m = 3p, notation of BGS-TRACE-254, 255 (w(n) = Phihat(n) e(-nu0 P(n)/2h), A, Zhat_beta, D_q, l(q)); T = 1.28359 for (+-2,8). [P] For any absolutely convergent F(y) = sum_gamma c_gamma e(Tr gamma y) and a prime q | q of degree 1: (1/q) sum_{beta in l(q)} F(beta/q) = sum_{gamma in q} c_gamma (orthogonality on l(q), whose annihilator is q mod q, q odd); the average is exactly c_0 when F has no frequency gamma != 0 with |Nm gamma| >= q (gamma in q minus 0 implies |Nm gamma| >= q). Use: for F = f_k (BGS-TRACE-243 notation) the isotropic-line mean block energy lies in [I_k - T_k(q), I_k + T_k(q)], with no Weil input and no upper limit on q. NOT registered: the Remark on Hoelder decoupling (reproducing the positivity threshold mu*^m/q, i.e. the base of L_m) is [H] (L3-F3, applied at integration).",
    "spof": "unformalized_analytic_chain",

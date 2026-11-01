@@ -17,7 +17,7 @@ This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one
 | refuted | 1 | Shown false as stated |
 | **total** | **419** | |
 
-156 non-open claims link Lean 4 files, out of 167 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
+162 non-open claims link Lean 4 files, out of 175 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
 ## Headline results
 
@@ -91,7 +91,7 @@ The earliest corpus: arithmetic and dynamical side programmes that fix the vocab
 | Claim | State | Result (short label) | Lean | Source |
 |---|---|---|---|---|
 | `BGS-TRACE-127` | **proved** | Diagonal random-phase form factor at times one, two and three | yes | [diagonal_phase_form_factor.md](mathematics/fixed-map/diagonal_phase_form_factor.md) |
-| `BGS-TRACE-143` | **proved** | Haar diagonal-phase cat map = random-phase DFT star graph; exact encounter-pair identity | — | [random_phase_encounter_pairs.md](mathematics/fixed-map/random_phase_encounter_pairs.md) |
+| `BGS-TRACE-143` | **proved** | Haar diagonal-phase cat map = random-phase DFT star graph; exact encounter-pair identity | yes | [random_phase_encounter_pairs.md](mathematics/fixed-map/random_phase_encounter_pairs.md) |
 | `BGS-TRACE-147` | **verification-pending** | Exact expansions to m = 12 and the fixed-m deviation from the COE tau^3 value | — | [random_phase_encounter_pairs.md](mathematics/fixed-map/random_phase_encounter_pairs.md) |
 | `BGS-TRACE-149` | **proved** | Band-limited random kick: exact trace bridge E\|Tr U^m\|^2 = Psi_m(t_N) | yes | [band_limited_kick_bridge.md](mathematics/fixed-map/band_limited_kick_bridge.md) |
 | `BGS-TRACE-154` | **proved** | B_m^sym < 2m for every odd m | yes | [band_limited_kick_bridge.md](mathematics/fixed-map/band_limited_kick_bridge.md) |

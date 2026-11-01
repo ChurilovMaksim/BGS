@@ -15,7 +15,7 @@ With modulus `M = 2h` (any `M ≥ 1`), a kick `Φ̂`, phases `P(n) ∈ ℤ`,
 
 **Partial coverage:** the kick is indexed by an arbitrary *finite* set of words `n` (the source allows
 `∑ |Φ̂| < ∞`, e.g. the infinitely supported k1 kick with Bessel coefficients; the absolutely convergent case is
-the same rearrangement but is not formalized here).  `ν₀` may be any complex number (the "unit" hypothesis of
+the same rearrangement and is formalized in `Bgs.LineISummable`, Lean batch 3).  `ν₀` may be any complex number (the "unit" hypothesis of
 the source is not needed for the identity).  All proofs are kernel-checked.
 -/
 
