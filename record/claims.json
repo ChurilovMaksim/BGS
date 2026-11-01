@@ -7726,13 +7726,17 @@
       "ledger_status": "ELEMENTARY PROOF (EXACT DECOMPOSITION; QUANTIFIERS FIXED IN REFEREE ROUND B5, DF1) + FLOAT CHECK (bookkeeping identity, frozen definition, random weights, m = 5, 7, 9, <= 4.4e-16) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261031/lineI/receipt.json"
+        "evidence/executions/20261031/lineI/receipt.json",
+        "evidence/executions/20261101/lean_batch5/README.md"
       ],
       "verifiers": [
         "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
       ],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineIReduction.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: the exact identity W'_m = phi^-1 sum_{nu unit, not resonant} (|Z_nu|^2 - RMT_m) + phi^-1 sum_{rho, d incl.} Dev_d(rho), Dev_d(rho) = sum_{nu in M_d(rho)} (|Z_nu|^2 - |Z_rho|^2/d^2), from the frozen definitions of F_m, Res_m and W'_m, assuming that the sets {nu_rho} and M_d(rho) are pairwise disjoint units. Not formalized: that disjointness from the congruence definition, and the sufficiency (E''), (T''), (D) => R'."
     },
     {
       "id": "BGS-TRACE-214",
@@ -7744,13 +7748,17 @@
       "ledger_status": "ELEMENTARY PROOF (SIGN AND UNIT RESTRICTION CORRECTED IN REFEREE ROUND B6) + FLOAT CHECK (integration re-implementation, random c_k with |k| <= 40, m = 5, 7, 9, <= 1.7e-13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261031/lineI/receipt.json"
+        "evidence/executions/20261031/lineI/receipt.json",
+        "evidence/executions/20261101/lean_batch5/README.md"
       ],
       "verifiers": [
         "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
       ],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineIHorocycle.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: for finitely supported kicks and weights f(z_nu) = sum_k c_k e(k nu/M) with sum |c_k| < infinity: (a) sum_{nu mod M} |Z_nu|^2 f(z_nu) = M sum_k c_k C(k), C(k) = sum_{n,n'} Phihat(n) conj Phihat(n') 1[P(n) - P(n') == k mod M], and (b) sum_{nu unit} |Z_nu|^2 f(z_nu) = sum_k c_k sum_{n,n'} Phihat(n) conj Phihat(n') c_M(k - P(n) + P(n')), c_M the Ramanujan sum. Not formalized: summable (infinite-support) kicks; the remarks on the diagonal class and the R' use."
     },
     {
       "id": "BGS-TRACE-215",
@@ -7854,7 +7862,8 @@
         "evidence/executions/20261031/lineI/receipt.json",
         "evidence/executions/20261101/lean_batch2/README.md",
         "evidence/executions/20261101/lean_batch3/README.md",
-        "evidence/executions/20261101/lean_batch4/README.md"
+        "evidence/executions/20261101/lean_batch4/README.md",
+        "evidence/executions/20261101/lean_batch5/README.md"
       ],
       "verifiers": [
         "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
@@ -7863,10 +7872,11 @@
         "formalization/Bgs/LineIAliasing.lean",
         "formalization/Bgs/LineIMoebius.lean",
         "formalization/Bgs/LineISummable.lean",
-        "formalization/Bgs/LineIRegroup.lean"
+        "formalization/Bgs/LineIRegroup.lean",
+        "formalization/Bgs/LineIMoebiusSummable.lean"
       ],
       "manuscript": [],
-      "formalization_scope": "Partial: the first identity (1/q) sum_{nu mod q} |Z_m(nu/q)|^2 = sum_{n,n'} Phihat(n) conj Phihat(n') 1[q | P(n) - P(n')] for every q >= 1, for finite support and for sum |Phihat| < infinity (pair series); for finite support also the regrouping into sum_{j in Z} C_Z(j q) and the Moebius formula F_m = phi(2h)^-1 sum_{e | 2h} mu(e) (2h/e) sum_j C_Z(j 2h/e) (LineIRegroup), i.e. both displayed identities for finitely supported kicks. The summable Moebius case and the regrouping of absolutely convergent pair series are not formalized; the heuristic assessment is not part of the claim."
+      "formalization_scope": "Partial: the first identity (1/q) sum_{nu mod q} |Z_m(nu/q)|^2 = sum_{n,n'} Phihat(n) conj Phihat(n') 1[q | P(n) - P(n')] for every q >= 1, for finite support and for sum |Phihat| < infinity (pair series); the Moebius formula F_m = phi(2h)^-1 sum_{e | 2h} mu(e) (2h/e) sum_{pairs} 1[(2h/e) | P(n) - P(n')] for finite support and for sum |Phihat| < infinity (pair series, LineIMoebiusSummable); for finite support also the regrouping into sum_{j in Z} C_Z(j q) and the Moebius formula in C_Z form (LineIRegroup). Not formalized: the regrouping of absolutely convergent pair series into sum_j C_Z; the heuristic assessment is not part of the claim."
     },
     {
       "id": "BGS-TRACE-219",
@@ -7960,13 +7970,17 @@
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261031/lineJ/receipt.json",
-        "evidence/executions/20261031/lineN2N4/receipt.json"
+        "evidence/executions/20261031/lineN2N4/receipt.json",
+        "evidence/executions/20261101/lean_batch5/README.md"
       ],
       "verifiers": [
         "computations/verification/lineJ/referee/rerun/code/ref_conj.py"
       ],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineJSectorConj.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: the letter-weight transformations for w_{C,a,tau}(n) = ghat(n) e(Cn^2/2) e(an/8) e(n tau) with conj ghat(n) = (-1)^n ghat(n) and ghat(-n) = ghat(n) as hypotheses: K sends (C, a, tau) to (-C, 4 - a, -tau), R sends (C, a, tau) to (C, -a, -tau), RK sends (C, a, tau) to (-C, a - 4, tau) for every real twist tau; and, for matrices, if V'_i = U conj(V_i) U^-1 for every factor then Tr prod V'_i = conj Tr prod V_i for every finite word. Not formalized: the sector operators on the disc lattices, the reflection with symmetric rounding, RK as an isometry of the Line F spaces, the trace-class setting on l^2, and the Galerkin check."
     },
     {
       "id": "BGS-TRACE-223",
@@ -9818,14 +9832,16 @@
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261031/lineN2N4/receipt.json",
-        "evidence/executions/20261101/lean_batch4/README.md"
+        "evidence/executions/20261101/lean_batch4/README.md",
+        "evidence/executions/20261101/lean_batch5/README.md"
       ],
       "verifiers": [],
       "formalization": [
-        "formalization/Bgs/LineN3SignConj.lean"
+        "formalization/Bgs/LineN3SignConj.lean",
+        "formalization/Bgs/LineN3SignConjComposite.lean"
       ],
       "manuscript": [],
-      "formalization_scope": "Partial: at prime levels q, W_{q,beta}(-rho) = conj W_{q,beta}(rho): nu0(-rho) = -nu0(rho) from 8 nu0 = 2 s g, the missing label t_b = j_b y' (nu0 + c j_b = 0) changes sign, W(N, -t_b) = conj W(N, t_b) for every N, and the isotropic weights (q-2)/q^2 agree. Not formalized: the composite levels via inheritance (BGS-TRACE-228), the comparison with BGS-TRACE-221(ii), and the label covering (taken from the frozen definition)."
+      "formalization_scope": "Partial: at prime levels q, W_{q,beta}(-rho) = conj W_{q,beta}(rho): nu0(-rho) = -nu0(rho) from 8 nu0 = 2 s g, the missing label t_b = j_b y' (nu0 + c j_b = 0) changes sign, W(N, -t_b) = conj W(N, t_b) for every N, and the isotropic weights (q-2)/q^2 agree; at composite levels ce, the symmetry follows from the inheritance W_{ce, e beta'} = (n_e/e^2) W_{c, beta'} with the same real n_e for both signs (LineN3SignConjComposite), with BGS-TRACE-228 as a hypothesis. Not formalized: the inheritance theorem itself, the comparison with BGS-TRACE-221(ii), and the label covering."
     },
     {
       "id": "BGS-TRACE-294",
@@ -10443,13 +10459,17 @@
       "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b; REFEREED IN lineN16: READY AFTER R1, APPLIED IN N19b))",
       "external_dependencies": [],
       "evidence": [
-        "evidence/executions/20261101/lineNgas/receipt.json"
+        "evidence/executions/20261101/lineNgas/receipt.json",
+        "evidence/executions/20261101/lean_batch5/README.md"
       ],
       "verifiers": [
         "computations/verification/lineN17b/code/g_threshold.py"
       ],
-      "formalization": [],
-      "manuscript": []
+      "formalization": [
+        "formalization/Bgs/LineIReduction.lean"
+      ],
+      "manuscript": [],
+      "formalization_scope": "Partial: the bookkeeping W'_m = NR part + phi^-1 sum Dev_d(rho) (as in BGS-TRACE-213, disjointness assumed), NR >= -RMT_m when RMT_m >= 0, RMT_m = 4m - m^2/h <= 4m, and the level floor in the form Dev_d(rho) >= -n_d |Z_rho|^2/d^2. Not formalized: the floor in the form -(h_p/d) S_rho with its constants, and the inclusion threshold m0 = 15 (see LineMInclusion for the inclusion step of BGS-TRACE-273)."
     },
     {
       "id": "BGS-TRACE-318",

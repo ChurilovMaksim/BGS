@@ -1,5 +1,14 @@
 # Scientific changelog
 
+## 2026-11-01 — Lean batch 5: TRACE-222, 214, 213/317, 218 summable Möbius, 293 composite (no state changes)
+
+Five new modules (`LineJSectorConj`, `LineIHorocycle`, `LineIReduction`, `LineIMoebiusSummable`,
+`LineN3SignConjComposite`; 23 theorems, no `sorry`, no `native_decide`, axioms within {propext, Classical.choice,
+Quot.sound}). New Lean links: BGS-TRACE-222, TRACE-214, TRACE-213 and TRACE-317. Extended: BGS-TRACE-218 (Möbius formula
+for summable kicks) and TRACE-293 (composite levels from the TRACE-228 inheritance, as hypothesis). Every link is **partial**
+(see `formalization_scope`); no boundary was changed. `lake build` completed (8894 jobs); 171 non-open claims link Lean, out
+of 187 modules. Receipt: [lean_batch5](evidence/executions/20261101/lean_batch5/README.md).
+
 ## 2026-11-01 — Lean batch 4: Line L collision form and decomposition, TRACE-204, 293, 267 closure, 218 regrouping, 273 (no state changes)
 
 Seven new modules (`LineGDilution`, `LineN3SignConj`, `LineL3Quadrature`, `LineLCollisionForm`, `LineL2Decomp`,

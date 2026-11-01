@@ -141,5 +141,10 @@ import Bgs.LineLCollisionForm
 import Bgs.LineL2Decomp
 import Bgs.LineIRegroup
 import Bgs.LineMInclusion
+import Bgs.LineJSectorConj
+import Bgs.LineIHorocycle
+import Bgs.LineIReduction
+import Bgs.LineIMoebiusSummable
+import Bgs.LineN3SignConjComposite
 
 import Bgs.Mathlib
