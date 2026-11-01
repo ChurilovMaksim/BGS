@@ -27,3 +27,10 @@ no `sorry`/`sorryAx` (`lake_build_Bgs.log`; peak lean RssAnon 0.39 GB).
 The boundary of BGS-CAYLEY-002 still says "by native_decide" for all five designs; it is a protected old-claim contract (the
 wave2/wave3 integration audits reject an unreviewed amendment), so it was not edited. It is conservative: 19 of its 21 theorems
 now need less trust than it states.
+
+## Checks (branch final-p17-nd after merging origin/main 9a5bd186)
+* `checks_branch.log`: 23 checkers incl. the 8 render `--check` scripts: 22 exit 0. `sync_return_sections.py --check` exits 1
+  with "pandoc not found on PATH"; origin/main gives the same on this box (environment).
+* `unittest.log`: 266 tests, 1 error, 1 skipped. The error is the 30 s subprocess timeout in
+  `test_fractional_routing`; run alone it passes (`unittest_fractional_alone.log`, OK in 42 s), the environment-dependent
+  behaviour already recorded in PR #66 (the test copies the built `formalization/.lake`).

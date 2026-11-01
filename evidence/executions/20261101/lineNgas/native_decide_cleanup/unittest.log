@@ -1,0 +1,30 @@
+..........s...............................................................E...............................................................................................................................................................................................
+======================================================================
+ERROR: test_current_routing_and_corruption_contract (test_fractional_routing.FractionalRouting.test_current_routing_and_corruption_contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/lineNgas/repo/computations/maintenance/tests/test_fractional_routing.py", line 18, in test_current_routing_and_corruption_contract
+    result = subprocess.run([sys.executable, '-B', *flags,
+        str(ROOT / 'computations/verification/fractional_hamming/check_routing.py'),
+        '--output', str(output)], capture_output=True, text=True, timeout=30,
+        env=dict(os.environ, PYTHONDONTWRITEBYTECODE='1'))
+  File "/usr/lib/python3.13/subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 1222, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 2129, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 1269, in _check_timeout
+    raise TimeoutExpired(
+    ...<2 lines>...
+            stderr=b''.join(stderr_seq) if stderr_seq else None)
+subprocess.TimeoutExpired: Command '['/workspace/lineNgas/venv/bin/python3', '-B', '/workspace/lineNgas/repo/computations/verification/fractional_hamming/check_routing.py', '--output', '/tmp/tmpcx5aqxl8/routing.json']' timed out after 30 seconds
+
+----------------------------------------------------------------------
+Ran 266 tests in 282.220s
+
+FAILED (errors=1, skipped=1)
+EXIT 1
