@@ -17,7 +17,7 @@ This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one
 | refuted | 1 | Shown false as stated |
 | **total** | **419** | |
 
-144 non-open claims link Lean 4 files, out of 155 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
+152 non-open claims link Lean 4 files, out of 162 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
 ## Headline results
 
@@ -57,7 +57,7 @@ The earliest corpus: arithmetic and dynamical side programmes that fix the vocab
 | `BGS-TRACE-003` | **proved** | Weighted Heisenberg-scale joint-trace comparison suffices for band-limited RMT correlations | — | [trace_to_local_statistics_bridge.md](mathematics/trace-bridge/trace_to_local_statistics_bridge.md) |
 | `BGS-TRACE-004` | **proved** | Every-compact-bandwidth comparison extends to Schwartz tests | — | [bandlimited_correlation_extension.md](mathematics/trace-bridge/bandlimited_correlation_extension.md) |
 | `BGS-LOOP-001` | **conditional** | Full mixed loop hierarchy implies the target compact correlations | yes | [fixed_map_resolvent_frontier.md](mathematics/fixed-map/fixed_map_resolvent_frontier.md) |
-| `BGS-FM-001` | **proved** | Classical symmetry exclusions for the frozen model | — | [fixed_model_symmetry_theorem.md](mathematics/fixed-map/fixed_model_symmetry_theorem.md) |
+| `BGS-FM-001` | **proved** | Classical symmetry exclusions for the frozen model | yes | [fixed_model_symmetry_theorem.md](mathematics/fixed-map/fixed_model_symmetry_theorem.md) |
 | `BGS-FM-010` | **proved** | Every power trace is nonzero; scalar returns classified | — | [frozen_arithmetic_trace_rigidity.md](mathematics/fixed-map/frozen_arithmetic_trace_rigidity.md) |
 | `BGS-FM-021` | **proved** | Position-chain mixing and cyclic ramp for the actual map | — | [position_chain_mixing.md](mathematics/fixed-map/position_chain_mixing.md) |
 | `BGS-TRACE-017` | **proved** | Fixed-order WKB reduction of the factorial trace hierarchy | — | [factorial_wkb_reduction.md](mathematics/fixed-map/factorial_wkb_reduction.md) |

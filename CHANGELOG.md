@@ -1,5 +1,16 @@
 # Scientific changelog
 
+## 2026-11-01 — Lean batch 1: partial formalization of eight proved claims (no state changes)
+
+Seven new modules (`Fm001Exact`, `Fm009CubeArith`, `PellModuliArith`, `LineLCollision`, `LineM3Const`, `LineN3Order`,
+`LineN4Gauge`; 55 theorems, no `sorry`, no `native_decide`, axioms within {propext, Classical.choice, Quot.sound}) and two
+previously unlinked modules now link BGS-FM-001, FM-009, FM-036, RET-004, TRACE-248, TRACE-271, TRACE-291 and TRACE-297.
+Every link is **partial** and certifies only the finite or algebraic statement named in the receipt. For example, FM-001
+gets the §1 Weyl dictionary and the §3 Fourier data, but not the §2 dynamics. `lake build` completed (8869 jobs); 152
+non-open claims link Lean, out of 162 modules. Inventory:
+[lean_inventory](evidence/executions/20261101/lean_inventory/INVENTORY.md). Receipt:
+[lean_batch1](evidence/executions/20261101/lean_batch1/README.md).
+
 ## 2026-11-01 — Legacy `native_decide` cleanup and the p = 17, q = 103 exact (R-mix) run (no claim changes)
 
 51 of the 88 legacy `native_decide` proofs were replaced by kernel-checked `decide +kernel`; **37 uses in 8 older modules** remain
