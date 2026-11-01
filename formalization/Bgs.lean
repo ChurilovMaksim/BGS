@@ -134,5 +134,12 @@ import Bgs.LineIMonomial
 import Bgs.LineCDFTStar
 import Bgs.Fm026Counts
 import Bgs.LineBTorsionSplit
+import Bgs.LineGDilution
+import Bgs.LineN3SignConj
+import Bgs.LineL3Quadrature
+import Bgs.LineLCollisionForm
+import Bgs.LineL2Decomp
+import Bgs.LineIRegroup
+import Bgs.LineMInclusion
 
 import Bgs.Mathlib
