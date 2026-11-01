@@ -3,6 +3,14 @@
 
 The build checks typesetting and immutable inputs, not mathematical truth.
 It never edits old manuscript sources. --publish copies only the verified PDF.
+
+Engines: pdflatex (three passes; authoritative, used by CI) is preferred.
+When pdflatex is not installed, ``--engine auto`` (the default) falls back to
+Tectonic (``$TECTONIC`` or ``tectonic`` on PATH), which reruns internally until
+the auxiliary files are stable.  Every gate below (no overfull boxes, no
+unresolved references/citations, no duplicate labels/destinations, immutable
+inputs, parsed page count) applies unchanged to both engines, and the manifest
+records which engine produced the PDF.
 """
 from __future__ import annotations
 import argparse
@@ -82,27 +90,48 @@ def inputs() -> dict[str,str]:
 
     return {str(p.relative_to(ROOT)):digest(p) for p in sorted(found)}
 
+def select_engine(choice: str) -> tuple[str,str]:
+    """Return (kind, executable); fail closed if the requested engine is absent."""
+    pdflatex=shutil.which('pdflatex')
+    tectonic=os.environ.get('TECTONIC') or shutil.which('tectonic')
+    if tectonic and not (Path(tectonic).is_file() and os.access(tectonic,os.X_OK)):
+        tectonic=None
+    if choice in ('auto','pdflatex') and pdflatex:
+        return 'pdflatex',pdflatex
+    if choice in ('auto','tectonic') and tectonic:
+        return 'tectonic',tectonic
+    raise SystemExit(f'No usable TeX engine for --engine {choice} '
+                     '(need pdflatex, or Tectonic via $TECTONIC/PATH); no build was performed.')
+
 def main()->None:
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output-dir',type=Path,default=ROOT/'build/unified-paper')
     parser.add_argument('--publish',action='store_true')
+    parser.add_argument('--engine',choices=('auto','pdflatex','tectonic'),default='auto',
+                        help='auto: pdflatex when installed, otherwise Tectonic')
     args=parser.parse_args()
-    engine=shutil.which('pdflatex')
-    if not engine:raise SystemExit('pdflatex is required; no build was performed.')
+    kind,engine=select_engine(args.engine)
     out=args.output_dir.resolve();out.mkdir(parents=True,exist_ok=True)
     if out==MANUSCRIPT.resolve():
         raise SystemExit('Use an out-of-tree build directory, not manuscript/.')
     before=inputs();start=time.monotonic()
     version=subprocess.check_output([engine,'--version'],text=True).splitlines()[0]
+    scope=('Three LaTeX passes' if kind=='pdflatex' else
+           'One Tectonic compile (internal reruns until auxiliary files are stable)')
     record={'status':'RUNNING','started_utc':dt.datetime.now(dt.timezone.utc).isoformat(),
-            'scope':'Three LaTeX passes, no horizontal overflow or unresolved references/citations, immutable TeX inputs. Mathematical truth and page-image inspection are separate.',
-            'engine':version,'source_sha256':before,'passes':[]}
+            'scope':scope+', no horizontal overflow or unresolved references/citations, immutable TeX inputs. Mathematical truth and page-image inspection are separate.',
+            'engine_kind':kind,'engine':version,'source_sha256':before,'passes':[]}
     env=dict(os.environ,SOURCE_DATE_EPOCH='1788652800',FORCE_SOURCE_DATE='1',TZ='UTC')
-    for number in range(1,4):
-        command=[engine,'-interaction=nonstopmode','-halt-on-error',f'-output-directory={out}','BGS_unified.tex']
+    if kind=='pdflatex':
+        runs=[([engine,'-interaction=nonstopmode','-halt-on-error',f'-output-directory={out}','BGS_unified.tex'],90)
+              for _ in range(3)]
+    else:
+        runs=[([engine,'-X','compile','--keep-logs','--keep-intermediates',
+                '--outdir',str(out),'BGS_unified.tex'],1800)]
+    for number,(command,timeout) in enumerate(runs,1):
         log=out/f'pass-{number}.log'
         with log.open('w') as stream:
-            result=subprocess.run(command,cwd=MANUSCRIPT,env=env,stdout=stream,stderr=subprocess.STDOUT,timeout=90)
+            result=subprocess.run(command,cwd=MANUSCRIPT,env=env,stdout=stream,stderr=subprocess.STDOUT,timeout=timeout)
         record['passes'].append({'command':command,'returncode':result.returncode,'log':log.name,'sha256':digest(log)})
         if result.returncode:
             record['status']='FAIL';(out/'build_manifest.json').write_text(json.dumps(record,indent=2)+'\n')

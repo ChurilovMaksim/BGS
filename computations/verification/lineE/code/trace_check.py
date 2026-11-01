@@ -1,4 +1,6 @@
 """Check: brute-force n-sum Z_L(m) at nu* (Line B phase, exact integers mod g')  ==  sum_a c_a (1-lam^-m) sum_k mu_{a,k}^m (Galerkin eigenvalues)."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import numpy as np, itertools, sys
 import os; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 from scipy.special import jv

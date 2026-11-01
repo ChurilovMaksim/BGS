@@ -5,10 +5,16 @@ Guards must precede imports and side effects, after docstrings/future imports.
 Historical record/ and evidence/ are outside this maintained-code inventory.
 The hash-preserved spectral source corpus is also a historical input, checked
 by rebuild_spectral_corpus.py, not a maintained verification entry point.
+Verbatim, sha256-pinned evidence packet files under
+computations/verification/line*/ that are registered in
+frozen_evidence_packets.json are frozen evidence (owner decision 2026-11-01);
+they are exempt only while byte-identical to their registered pin
+(frozen_packets.exempt). Unregistered or edited files stay in scope.
 Explicit-check-only modules remain usable under optimized Python.
 """
 from __future__ import annotations
 import ast
+import importlib.util
 from pathlib import Path
 
 MESSAGE = 'Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.'
@@ -31,13 +37,26 @@ def guarded(tree: ast.Module) -> bool:
     return bool(body and ast.dump(body[0], include_attributes=False) == EXPECTED)
 
 
+def frozen_exempt(root: Path) -> set[str]:
+    registry = root / 'computations' / 'maintenance' / 'frozen_evidence_packets.json'
+    if not registry.is_file():
+        return set()
+    spec = importlib.util.spec_from_file_location(
+        'bgs_frozen_packets', root / 'computations' / 'maintenance' / 'frozen_packets.py')
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.exempt(root)
+
+
 def inventory(root: Path) -> list[tuple[Path, ast.Module]]:
+    skip = frozen_exempt(root)
     return [(p.relative_to(root), ast.parse(p.read_text(encoding='utf-8')))
             for directory in ('computations', 'supplement')
             for p in sorted((root / directory).rglob('*.py'))
             if not {'__pycache__', 'tests'}.intersection(p.relative_to(root).parts)
             and p.relative_to(root).parts[:3] !=
-                ('computations', 'reference', 'spectral_research')]
+                ('computations', 'reference', 'spectral_research')
+            and p.relative_to(root).as_posix() not in skip]
 
 
 def protected_entries(root: Path) -> list[tuple[Path, ast.Module]]:

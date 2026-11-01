@@ -3,6 +3,8 @@
    M_N(x,y) = N^{-1/2} e_N(-8bar (3x^2 - 2xy + 3y^2)),  K = diag exp(i eta f(x/N)),  f(q) = 0.9 cos(2 pi q)  (kick 'k1').
  M_N is applied matrix-free: chirp * permuted DFT * chirp.  Trace = sum over basis vectors, batched.
  Usage: indep_trace.py m eta batch"""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import numpy as np, sys, time, json
 m=int(sys.argv[1]); eta=float(sys.argv[2]); B=int(sys.argv[3])
 def nsw(m):

@@ -1,3 +1,5 @@
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import math
 from law import mdata, ratrec
 for m,nus in [(11,[9975,11001,11019,773,955,12009,11333,11831]),(13,[36505,22675,25691,75911,2029,92613,5567,3847]),(15,[339013,212601,149733,11831,539783,401881,178125,297581])]:

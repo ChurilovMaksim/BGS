@@ -1,4 +1,6 @@
 """Numerical check of Theorem E1 in Line B conventions: Z_m(nu*) = sum_a c_a Tr T_a^m (range-R, alphabet L truncation)."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import os; os.environ.setdefault('OPENBLAS_NUM_THREADS','1')
 import numpy as np, itertools, sys
 from scipy.special import jv

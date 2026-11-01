@@ -2,6 +2,8 @@
 Referee fixes F7/F8: vendored (no external imports), and run with Galerkin parameters satisfying the
 H^2(D_rho) invariance hypothesis rho > L/(lam-1) of E2 (default L=10, rho=2.6 > 10/4.83 = 2.07).
 Usage: predict_finiteN.py m [eta=2.0] [L=10] [rho=2.6] [K=90]"""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import os, sys, numpy as np, cmath
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'code'))
 import ifs_explore as I

@@ -1,5 +1,7 @@
 # Mathematical background and reader guide
 
+> **Start with [RESULTS.md](../RESULTS.md)** (1 November 2026). It is a generated one-page summary of what is proved, conditional and open, with a results table linked to the registry, a short reader's guide and the known issues. This guide supplies the background and notation behind it.
+
 This guide preserves the programme’s mathematical background and notation. The [current research brief](../RESEARCH.md), [claim ledger](../record/claim_ledger.md), and exact proof sources control current theorem status. This is exposition, not an independent proof certificate. The pre-revision entry pages are preserved with hashes in [the revision archive](../archive/history/2026/corpus_revision_20261006/manifest.json).
 
 <a id="2-background-classical-chaos-quantization-and-bgs"></a>

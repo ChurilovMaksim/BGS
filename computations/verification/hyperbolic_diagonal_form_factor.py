@@ -19,6 +19,8 @@ Coverage. Traces 3 through 8 and -16, indices through 12. Matrices of traces
 kernel at 49. The revival jet uses one eta.
 """
 from __future__ import annotations
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 
 import math
 from math import gcd

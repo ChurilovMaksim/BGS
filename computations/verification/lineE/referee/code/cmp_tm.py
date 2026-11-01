@@ -1,4 +1,6 @@
 """Compare exact class-sum |Z(nu*)|^2 (full alphabet) with transfer-operator prediction (auditor's tmop), k1 kick eta=2."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys,json,numpy as np; sys.path.insert(0,'.')
 from aud import *; from tmop import *
 eta=2.0; G=ghat(K1,eta)

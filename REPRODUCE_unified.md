@@ -303,6 +303,12 @@ python computations/maintenance/build_unified_manuscript.py \
   --output-dir build/unified-paper
 ```
 
+If `pdflatex` is not installed, the builder falls back to Tectonic (`$TECTONIC` or
+`tectonic` on `PATH`; force either with `--engine pdflatex|tectonic`). The same
+gates apply to both engines (no overfull boxes, no unresolved references or
+citations, no duplicate labels, unchanged inputs, parsed page count), and
+`build_manifest.json` records `engine_kind`. pdfLaTeX remains the CI engine.
+
 Generated PDFs stay in `build/`; the repository structural gate rejects PDFs
 in `manuscript/`. Distribute the built PDF separately. The maintained
 `--publish` switch is a legacy local export and does not publish to GitHub.

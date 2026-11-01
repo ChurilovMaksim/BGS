@@ -1,4 +1,6 @@
 """Run class sums for kick in {k1,full}, eta, list of m; save |Z(nu*)|^2, |Z(-nu*)|^2, F, and top residues."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys,time,json,numpy as np; sys.path.insert(0,'.')
 from aud import *
 kick=sys.argv[1]; eta=float(sys.argv[2]); ms=[int(x) for x in sys.argv[3].split(',')]

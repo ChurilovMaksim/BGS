@@ -1,6 +1,8 @@
 """Exact check of the dilution identity (Theorem G3) by brute force, random weights, m=9 (h=1393=7*199, d=7), m=5 (h=41,d=41).
 Z(nu0 + (2h/d) j) = G_d(t)/d^2 * sum_{beta in O/d} e(tbar Nm(beta)/d) * Z_{nu0}^{(beta)},  t = j y' mod d (unit),
 Z^{(beta)} = sum_n w(n) e(sum_i n_i Tr(beta lam^i)/d),  w(n)=Phihat(n) e(-nu0 P(n)/2h),  G_d(t)=sum_{alpha in O/d} e(-t Nm(alpha)/d)."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import numpy as np, itertools, math, random
 from law import mdata, pell
 def run(m,L,d,seed=0):

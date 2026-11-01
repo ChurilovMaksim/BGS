@@ -1,3 +1,5 @@
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys,json,numpy as np; sys.path.insert(0,'.')
 from aud import *
 for kick,m in (('full',7),('full',11),('full',13),('k1',11),('k1',13)):

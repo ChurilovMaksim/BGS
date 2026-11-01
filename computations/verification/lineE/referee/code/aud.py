@@ -1,4 +1,6 @@
 """Auditor's independent library (no author code imported)."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import numpy as np, subprocess, os, math, itertools
 from fractions import Fraction
 from scipy.special import jv

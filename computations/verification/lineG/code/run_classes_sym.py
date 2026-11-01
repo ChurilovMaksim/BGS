@@ -1,3 +1,5 @@
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys,os,subprocess,numpy as np,time
 sys.path.insert(0,'computations/verification/lineE/referee/code')
 from aud import data,K1,fvals

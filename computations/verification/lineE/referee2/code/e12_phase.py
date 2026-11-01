@@ -2,6 +2,8 @@
 (kappa = -k u y' mod 8, gamma = -k v 2B(1-l^-m) mod a^2, B = iota((2y'+h sqrt2)/4)), against the true phase
 -nu y' Nm(alpha_n)/g' computed from Nm(alpha_n)=sum n_i n_j x_|i-j| (integers), and real part s q(n)/(2a^2)
 with q = n^T H^-1 n from exact rational inversion of H (sympy).  Random n.  Controls: wrong gamma / wrong kappa."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import random, sys
 from fractions import Fraction as Fr
 import sympy

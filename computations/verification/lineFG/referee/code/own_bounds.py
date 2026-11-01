@@ -1,3 +1,5 @@
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json
 from flint import arb, ctx
 ctx.prec=200

@@ -1,5 +1,7 @@
 """Auditor: Prop. G (orbit/Gauss-completed form) vs brute-force n-sum Z_m(nu) = sum_n Phihat(n) e(-nu y' Nm(alpha_n)/g')
 for a generic NON-even complex-coefficient real kick (so sign/conjugation errors in Prop G would show), all units nu."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import numpy as np, itertools, math, sys
 def pell(d):
     x, y = 1, 0

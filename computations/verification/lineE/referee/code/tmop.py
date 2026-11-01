@@ -1,6 +1,8 @@
 """Auditor's independent transfer-operator code (collocation/FFT construction, NOT the author's binomial Galerkin).
 (L_a phi)(s) = sum_{|n|<=L} ghat(n) e(c n^2/2 + a n/8) e(c n s) phi((s+n)/lam) on H^2(D_rho).
 Matrix in basis (s/rho)^k, k<K, built by evaluating L_a e_k on M points of |s|=rho and FFT -> Taylor coefficients."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import numpy as np, math, cmath, sys
 sys.path.insert(0,'.')
 from aud import data, nustar, ghat, K1

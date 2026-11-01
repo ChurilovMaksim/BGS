@@ -2,6 +2,8 @@
 For odd m: nu* = odd lift of -4^{-1} mod h; check for random integer n that
    -nu* y' Nm(alpha_n)/g'  ==  (1/2) n^T H^{-1} n + kappa (sum n)^2/8   (mod 1)
 with Nm computed in Z[lambda] (a+b*lam, lam^2=6lam-1) and H^{-1} by exact rational Gauss-Jordan (sympy)."""
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys, random, math; sys.path.insert(0,'.')
 from fractions import Fraction as Fr
 import sympy as sp

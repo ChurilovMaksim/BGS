@@ -1,3 +1,5 @@
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import sys, math, json, numpy as np
 sys.path.insert(0,'computations/verification/lineE/referee/code')
 from aud import data

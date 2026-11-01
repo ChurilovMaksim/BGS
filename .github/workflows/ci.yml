@@ -24,6 +24,9 @@ jobs:
           python computations/maintenance/render_errata.py --check
           python computations/maintenance/render_research_views.py --check
           python computations/maintenance/render_status.py --check
+          python computations/maintenance/render_results.py --check
+          python computations/maintenance/render_appendix_a.py --check
+          python computations/maintenance/frozen_packets.py --check
 
   repository-structure:
     runs-on: ubuntu-latest
@@ -57,7 +60,11 @@ jobs:
           cmake --build "$RUNNER_TEMP/bgs-build" -j2
       - name: Compile and execute every maintained Python and C++ verifier
         run: |
-          python -W error::SyntaxWarning -m compileall -q computations
+          # SyntaxWarning is an error for all code except the registered, byte-identical frozen
+          # evidence packet files (computations/maintenance/frozen_evidence_packets.json), which must still compile.
+          python computations/maintenance/frozen_packets.py --check
+          python computations/maintenance/frozen_packets.py --compile-check
+          python -m compileall -q computations
           python -m unittest discover -s computations/maintenance/tests -v
           python computations/maintenance/verify_workspace.py --build "$RUNNER_TEMP/bgs-build" --logs "$RUNNER_TEMP/checks" --output "$RUNNER_TEMP/workspace.json"
           python computations/maintenance/verify_fixed_map_supplement.py --output-dir "$RUNNER_TEMP/fixed-map-replay"
