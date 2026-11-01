@@ -17,7 +17,7 @@ This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one
 | refuted | 1 | Shown false as stated |
 | **total** | **419** | |
 
-167 non-open claims link Lean 4 files, out of 182 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
+171 non-open claims link Lean 4 files, out of 187 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
 ## Headline results
 
@@ -115,7 +115,7 @@ R′ (BGS-TRACE-206) is a corrected mean law for the k1 kick at η = 2. Everythi
 | Claim | State | Result (short label) | Lean | Source |
 |---|---|---|---|---|
 | `BGS-TRACE-206` | **open** | Conjecture R′ (corrected mean law, k1 kick, eta = 2) | — | [resonance_classification_lineG.md](mathematics/fixed-map/resonance_classification_lineG.md) |
-| `BGS-TRACE-213` | **proved** | Exact reduction of R′ to (E″), (T″) and (D), none of them proved (Line I) | — | [lineI_rprime_reduction.md](mathematics/fixed-map/lineI_rprime_reduction.md) |
+| `BGS-TRACE-213` | **proved** | Exact reduction of R′ to (E″), (T″) and (D), none of them proved (Line I) | yes | [lineI_rprime_reduction.md](mathematics/fixed-map/lineI_rprime_reduction.md) |
 | `BGS-TRACE-225` | **proved** | Theorem J: the d = 7 contribution oscillates with growth >= 1.0184224^m (computer-assisted) | — | [lineJ_d7_twisted_coefficient.md](mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) |
 | `BGS-TRACE-235` | **proved** | Theorem K3: S+ contains infinitely many m = 3p in every unit class mod 56 | yes | [lineK_harg_removal.md](mathematics/fixed-map/lineK_harg_removal.md) |
 | `BGS-TRACE-244` | **proved** | Operator input OP for the four families (arb certificate) | yes | [lineK_harg_removal.md](mathematics/fixed-map/lineK_harg_removal.md) |

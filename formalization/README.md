@@ -138,6 +138,11 @@ imports Mathlib, which this project does not vendor as in-repo sources (`lake-ma
 | `LineL2Decomp.lean` | `Bgs.LineL2Decomp` (BGS-TRACE-255, partial; batch 4): `A_ideal_line`, `A_qO`, `Dq_eq` (D_𝔮 = q⁻¹Σ_{ℓ(𝔮)∖0}Ẑ), `A_qO_sub`, `inter_eq` (𝔮 ∩ 𝔮̄ = qO), `Diso_eq` (D_iso = D_𝔮 + D_𝔮̄ − (A(qO) − A_tot/q²)), `Diso_fourier`. The Theorem K1 use is **not** formalised. |
 | `LineIRegroup.lean` | `Bgs.LineIRegroup` (BGS-TRACE-218, regrouping; batch 4): `regroup_pairs`, `pairs_eq_tsum_CZ`, `aliasing_CZ` ((1/q)Σ_ν\|Z_m(ν/q)\|² = Σ_j C_Z(jq)), `Fm_CZ` (F_m = φ(2h)⁻¹Σ_{e∣2h}μ(e)(2h/e)Σ_j C_Z(j·2h/e)), finite support. The summable Möbius case is **not** formalised. |
 | `LineMInclusion.lean` | `Bgs.LineMInclusion` (BGS-TRACE-273, inclusion step only; batch 4): `included_of_bound`, `included_all` (\|Z_ρ\|² ≥ 4mh ⇒ every d ∣ h with 1 < d ≤ √h is included). The certified Line F bound and the interval check are **not** formalised. |
+| `LineJSectorConj.lean` | `Bgs.LineJSectorConj` (BGS-TRACE-222, partial; batch 5): `e_half_int`, `K_weight` ((C, a, τ) ↦ (−C, 4 − a, −τ)), `R_weight` ((C, a, τ) ↦ (C, −a, −τ)), `RK_weight` ((C, a, τ) ↦ (−C, a − 4, τ), every real τ), `trace_conj`, `prod_conj`, `trace_prod_conj` (Tr∏U conj(V_i)U⁻¹ = conj Tr∏V_i, matrices). The lattice operators and the ℓ² trace-class setting are **not** formalised. |
+| `LineIHorocycle.lean` | `Bgs.LineIHorocycle` (BGS-TRACE-214, partial; batch 5): `pair_char`, `char_sum` (Σ_ν\|Z_ν\|²e(kν/M) = M·C(k)), `interchange`, `horocycle_all` ((a)), `horocycle_units` ((b), Ramanujan sums), finite support, Σ\|c_k\| < ∞. |
+| `LineIReduction.lean` | `Bgs.LineIReduction` (BGS-TRACE-213, 317, partial; batch 5): `reduction` (W′_m = φ⁻¹Σ_{non-res}(\|Z_ν\|² − RMT) + φ⁻¹ΣDev_d(ρ), disjointness assumed), `rmt_le`, `NR_ge`, `Dev_ge`. The disjointness proof and (E″), (T″), (D) ⇒ R′ are **not** formalised. |
+| `LineIMoebiusSummable.lean` | `Bgs.LineIMoebiusSummable` (BGS-TRACE-218, summable Möbius; batch 5): `FmS_moebius` (Möbius formula for Σ\|Φ̂\| < ∞, pair series). |
+| `LineN3SignConjComposite.lean` | `Bgs.LineN3SignConjComposite` (BGS-TRACE-293, composite levels; batch 5): `inherit_conj`, `prime_inherit_conj`, with the BGS-TRACE-228 inheritance as hypothesis. |
 
 The former isolated `CayleyExceptionalK23.lean` was folded into
 `CayleyEnergy.lean`; generic and exceptional controls share one implementation.

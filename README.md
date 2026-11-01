@@ -6,7 +6,7 @@
 [![open](https://img.shields.io/badge/open-42-orange)](mathematics/open_questions.md)
 [![pending](https://img.shields.io/badge/verification--pending-17-lightgrey)](record/claim_registry.md)
 [![refuted](https://img.shields.io/badge/refuted-1-critical)](record/claim_registry.md)
-[![Lean 4](https://img.shields.io/badge/Lean_4-182_modules,_local_build_OK-blueviolet)](formalization/README.md)
+[![Lean 4](https://img.shields.io/badge/Lean_4-187_modules,_local_build_OK-blueviolet)](formalization/README.md)
 [![PDF](https://img.shields.io/badge/manuscript-PDF%2C%20381%20pages-blue)](manuscript/BGS_unified.pdf)
 [![licence](https://img.shields.io/badge/licence-MIT_+_CC_BY_4.0-lightgrey)](LICENSE_POLICY.md)
 
@@ -40,7 +40,7 @@ The badge counts are static and are copied from [`record/claims.json`](record/cl
 | refuted | 1 | Shown false as stated (Conjecture R, BGS-TRACE-179) |
 | **total** | **419** | |
 
-The claims are spread across the whole programme. Phases I–V (September to 29 October 2026) hold 226 claims, 197 of them proved. Lines B–N (29 October to 1 November) hold 193 claims, 141 of them proved. The [phase table](#the-research-story-phase-by-phase) gives the split. 167 non-open claims link Lean 4 files, out of 182 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
+The claims are spread across the whole programme. Phases I–V (September to 29 October 2026) hold 226 claims, 197 of them proved. Lines B–N (29 October to 1 November) hold 193 claims, 141 of them proved. The [phase table](#the-research-story-phase-by-phase) gives the split. 171 non-open claims link Lean 4 files, out of 187 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
 ## The problem and the model
 
@@ -280,7 +280,7 @@ The [obligation board](mathematics/open_questions.md) states each with its closu
 
 A conditional theorem is exactly as strong as its weakest open input. Superseded values stay in the drafts' errata sections and in [ERRATA.md](ERRATA.md) (65 entries), and are not cited.
 
-**Lean 4.** [`formalization/`](formalization/README.md) holds 182 modules under `formalization/Bgs` (2386 `theorem`/`lemma` declarations, counted by grep), pinned to `leanprover/lean4:v4.33.1` and Mathlib through `lake-manifest.json`. Lean checks the finite and arithmetic kernels named in each claim boundary, not the analytic arguments. The last full local build ended "Build completed successfully (8889 jobs)" ([log](evidence/executions/20261101/lean_batch4/lake_build_Bgs.log)). No `sorry` is allowed in the active graph. **Legacy `native_decide`:** 37 uses in 8 older modules trust the compiler beyond the kernel axioms; the claim boundaries disclose this, and the Line B–N modules use none.
+**Lean 4.** [`formalization/`](formalization/README.md) holds 187 modules under `formalization/Bgs` (2409 `theorem`/`lemma` declarations, counted by grep), pinned to `leanprover/lean4:v4.33.1` and Mathlib through `lake-manifest.json`. Lean checks the finite and arithmetic kernels named in each claim boundary, not the analytic arguments. The last full local build ended "Build completed successfully (8894 jobs)" ([log](evidence/executions/20261101/lean_batch5/lake_build_Bgs.log)). No `sorry` is allowed in the active graph. **Legacy `native_decide`:** 37 uses in 8 older modules trust the compiler beyond the kernel axioms; the claim boundaries disclose this, and the Line B–N modules use none.
 
 **Referees.** Phase II–III results carry dated internal reviews (Wave2 and Wave3 replays, the 7 October checkpoint, independent reconstructions). Every line from E onwards has an independent internal referee pass: 24 `referee/` folders under [`computations/verification/`](computations/verification/lineN16/referee/REPORT.md), plus the final Line N referees lineN20, lineN21, lineN21b and lineN22 in [`evidence/executions/20261101/lineNgas/`](evidence/executions/20261101/lineNgas/v5_integration/README.md). None of this is external peer review.
 

@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "54dadb39b13cfc82dfb4d5b8684f40f255372c41",
+ "source_blob_sha": "a358da20adec132863d6a53a799889068b1a9818",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -62,7 +62,8 @@
   "1 November 2026 (Lean batch 1, evidence/executions/20261101/lean_batch1/README.md): Lean links and lean_formalization tags added to BGS-FM-001, FM-009, FM-036, RET-004, TRACE-248, TRACE-271, TRACE-291, TRACE-297; every link is partial (see formalization_scope in claims.json) and certifies only the finite/algebraic statement named there. No state changed.",
   "1 November 2026 (Lean batch 2, evidence/executions/20261101/lean_batch2/README.md): Lean links and lean_formalization tags added to BGS-TRACE-211, TRACE-218, TRACE-229, RES-023, and the twist corollary file appended to BGS-TRACE-297; every link is partial (see formalization_scope in claims.json) and certifies only the statement named there. No state changed.",
   "1 November 2026 (Lean batch 3, evidence/executions/20261101/lean_batch3/README.md): Lean links and lean_formalization tags added to BGS-TRACE-259, TRACE-267, TRACE-216, TRACE-143, FM-026, TRACE-178, and further Lean files appended to BGS-TRACE-211, TRACE-218, TRACE-229; links are partial except where formalization_scope says otherwise (BGS-FM-026: scope in the receipt). Dated Lean notes appended to the boundaries of BGS-TRACE-143 and TRACE-216. No state changed.",
-  "1 November 2026 (Lean batch 4, evidence/executions/20261101/lean_batch4/README.md): Lean links and lean_formalization tags added to BGS-TRACE-204, TRACE-293, TRACE-254, TRACE-255, TRACE-273, and further Lean files appended to BGS-TRACE-267, TRACE-259, TRACE-218; all links are partial as stated in formalization_scope. No state changed."
+  "1 November 2026 (Lean batch 4, evidence/executions/20261101/lean_batch4/README.md): Lean links and lean_formalization tags added to BGS-TRACE-204, TRACE-293, TRACE-254, TRACE-255, TRACE-273, and further Lean files appended to BGS-TRACE-267, TRACE-259, TRACE-218; all links are partial as stated in formalization_scope. No state changed.",
+  "1 November 2026 (Lean batch 5, evidence/executions/20261101/lean_batch5/README.md): Lean links and lean_formalization tags added to BGS-TRACE-222, TRACE-214, TRACE-213, TRACE-317, and further Lean files appended to BGS-TRACE-218 and TRACE-293; all links are partial as stated in formalization_scope. No state changed."
  ],
  "claims": [
   {
@@ -11174,6 +11175,7 @@
    "methods": [
     "analytic_proof",
     "independent_review",
+    "lean_formalization",
     "float_numerics"
    ],
    "ledger_claimed_methods": [
@@ -11184,17 +11186,20 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261031/lineI/receipt.json"
+    "evidence/executions/20261031/lineI/receipt.json",
+    "evidence/executions/20261101/lean_batch5/README.md"
    ],
    "verifiers": [
     "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineIReduction.lean"
+   ],
    "ledger_status": "ELEMENTARY PROOF (EXACT DECOMPOSITION; QUANTIFIERS FIXED IN REFEREE ROUND B5, DF1) + FLOAT CHECK (bookkeeping identity, frozen definition, random weights, m = 5, 7, 9, <= 4.4e-16) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
    "boundary": "Frozen definition of BGS-TRACE-206 (k1, eta = 2, odd m >= 5, any set of included levels): the sets {nu_rho} and M_d(rho) are pairwise disjoint and W'_m = phi^-1 sum_{nu unit, nu not resonant} (|Z_nu|^2 - RMT_m) + phi^-1 sum_{rho, d included} Dev_d(rho), Dev_d(rho) = sum_{nu in M_d(rho)} (|Z_nu|^2 - |Z_rho|^2/d^2) (exact identity). Splitting the non-resonant units by the height y of the reduced representative of z_nu = (nu+i)/2h at ONE function Y(m) -> infinity: if (E'') the part with y <= Y(m) (uniformly on the growing compacta K_m, not merely each fixed compact), (T'') the part with y > Y(m) and (D) the dilation remainder phi^-1 sum Dev are each o(m), then R' (W'_m = o(m)) holds. Alternative sufficient (not equivalent) hypothesis: (T'') for every Y(m) -> infinity and (E'') for each fixed Y, with a diagonal choice of Y(m). Sums over units, normalised by 1/phi(2h). None of (E''), (T''), (D) is proved; for d = 7 only the square part of (D) is controlled, for rho = (+-2,8) only; the (+-2,16) level-7 members are not controlled (BGS-TRACE-215), and the operator-radius route to the cross part fails (BGS-TRACE-217). A reduction, not progress on the truth of R'.",
    "spof": "unformalized_analytic_chain",
@@ -11209,6 +11214,7 @@
    "methods": [
     "analytic_proof",
     "independent_review",
+    "lean_formalization",
     "float_numerics"
    ],
    "ledger_claimed_methods": [
@@ -11219,17 +11225,20 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261031/lineI/receipt.json"
+    "evidence/executions/20261031/lineI/receipt.json",
+    "evidence/executions/20261101/lean_batch5/README.md"
    ],
    "verifiers": [
     "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineIHorocycle.lean"
+   ],
    "ledger_status": "ELEMENTARY PROOF (SIGN AND UNIT RESTRICTION CORRECTED IN REFEREE ROUND B6) + FLOAT CHECK (integration re-implementation, random c_k with |k| <= 40, m = 5, 7, 9, <= 1.7e-13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
    "boundary": "Odd m, h = h_m, z_nu = (nu+i)/2h, f(x+iy) = sum_k c_k(y) e(kx) with sum_k |c_k(1/2h)| < infinity (only 1-periodicity in x is used), C(k) = sum_{n,n'} Phihat(n) conj(Phihat(n')) 1[P(n) - P(n') == k mod 2h], c_q the Ramanujan sum: (a) sum_{nu mod 2h} |Z_nu|^2 f(z_nu) = 2h sum_k c_k(1/2h) C(k); (b) sum_{nu unit} |Z_nu|^2 f(z_nu) = sum_k c_k(1/2h) sum_{n,n'} Phihat(n) conj(Phihat(n')) c_{2h}(k - P(n) + P(n')). The diagonal class P(n) == P(n') contributes C(0) times the UNWEIGHTED sum of f over the 2h (resp. phi(2h) primitive) horocycle points and meets every c_{2hj}; it is not invisible for cusp forms (the earlier 'diagonal invisible' statement is withdrawn and not registered). Using (b) for R' would need a horocycle equidistribution input with an explicit rate and C(0) = O(m); neither is part of this claim.",
    "spof": "unformalized_analytic_chain",
@@ -11379,15 +11388,16 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 4,
+    "evidence": 5,
     "verifiers": 1,
-    "formalization": 4
+    "formalization": 5
    },
    "evidence": [
     "evidence/executions/20261031/lineI/receipt.json",
     "evidence/executions/20261101/lean_batch2/README.md",
     "evidence/executions/20261101/lean_batch3/README.md",
-    "evidence/executions/20261101/lean_batch4/README.md"
+    "evidence/executions/20261101/lean_batch4/README.md",
+    "evidence/executions/20261101/lean_batch5/README.md"
    ],
    "verifiers": [
     "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
@@ -11396,7 +11406,8 @@
     "formalization/Bgs/LineIAliasing.lean",
     "formalization/Bgs/LineIMoebius.lean",
     "formalization/Bgs/LineISummable.lean",
-    "formalization/Bgs/LineIRegroup.lean"
+    "formalization/Bgs/LineIRegroup.lean",
+    "formalization/Bgs/LineIMoebiusSummable.lean"
    ],
    "ledger_status": "ELEMENTARY PROOF (ORTHOGONALITY AND MOEBIUS INVERSION; OVERSTATEMENT REMOVED IN DELTA FIX DF6) + FLOAT CHECK (integration re-implementation, every q | 2h with q <= 4000 and the Moebius form, m = 5, 7, 9, <= 2.4e-12) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
    "boundary": "Odd m, h = h_m, Z_m(theta) = sum_n Phihat(n) e(-theta P(n)), C_Z(k) = sum_{n,n'} Phihat(n) conj(Phihat(n')) 1[P(n) - P(n') = k] (in Z): for every q | 2h, (1/q) sum_{nu' mod q} |Z_m(nu'/q)|^2 = sum_{j in Z} C_Z(jq), and F_m = phi(2h)^-1 sum_{e | 2h} mu(e) (2h/e) sum_j C_Z(j 2h/e). Not claimed (heuristic/assessment): the e > 2 Moebius terms are sums at exact rationals of denominator dividing 2h/e (non-unit residues), while the BGS-TRACE-206 resonant residues are units near, not at, small-denominator rationals (related through the G2 law, not identical); reading the bulk as the e in {1,2}, j != 0 aliasing sum; Hecke-equivariance and L^2-in-m averaging give no cancellation.",
@@ -11529,6 +11540,7 @@
    "methods": [
     "analytic_proof",
     "independent_review",
+    "lean_formalization",
     "float_numerics"
    ],
    "ledger_claimed_methods": [
@@ -11539,18 +11551,21 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 2,
+    "evidence": 3,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
     "evidence/executions/20261031/lineJ/receipt.json",
-    "evidence/executions/20261031/lineN2N4/receipt.json"
+    "evidence/executions/20261031/lineN2N4/receipt.json",
+    "evidence/executions/20261101/lean_batch5/README.md"
    ],
    "verifiers": [
     "computations/verification/lineJ/referee/rerun/code/ref_conj.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineJSectorConj.lean"
+   ],
    "ledger_status": "PAPER PROOF (WRITTEN IN REFEREE ROUND F5) + FLOAT CHECK (REFEREE GALERKIN-LEVEL ALL 64 PAIRS, ref_conj.py) + INDEPENDENT REFEREE AUDIT (computations/verification/lineJ/referee/REPORT.md; first round ACCEPT AFTER FIXES F1-F11, DELTA2 DF8-DF10, J3 review J3-F1-F8, DELTA3 READY TO INTEGRATE; fixes applied); SCOPE WIDENED TO ARBITRARY TWISTS AND NON-AUTONOMOUS PRODUCTS AT THE LINES N2-N4 INTEGRATION (SAME PROOF; computations/verification/lineN3/referee/REPORT.md section 1.3: 'C1 is proved by the proof of TRACE-222')",
    "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2, m == 3 (mod 6) (so 7 | h_m), frozen definition of BGS-TRACE-206. Sector operators V^(C)_{beta,a}, E^(C)_{beta,a} (letter weight ghat(n) e(Cn^2/2) e(an/8) e(n tau_i(beta)/7), C = -4 a c0/8, acting by M_{Cn} C_n on the real-centred disc lattices). K-conjugation gives K V^(C)_{beta,a} K = V^(-C)_{-beta,4-a} (real centres, conj ghat(n) = (-1)^n ghat(n) = e(4n/8) ghat(n), K M_C K = M_{-C}); the reflection R (n -> -n, s -> -s, c -> -c; rounding to cores symmetric since lambda is irrational) gives R V^(-C)_{-beta,4-a} R = V^(-C)_{beta,a-4}; hence V^(-2)_{beta,a+4} = (RK) V^(+2)_{beta,a} (RK)^-1 with RK antiunitary, so the spectra are complex conjugate with multiplicities, and the same for E. The sector operators do not depend on the case m mod 24; only the constants c_a(case,rho) do. Scope widening (Lines N2-N4 integration, N3-F1; condition C1 of BGS-TRACE-276): the proof never uses the value of the twist: on the letter weight ghat(n) e(Cn^2/2) e(an/8) e(n tau), K sends (C, a, tau) to (-C, 4 - a, -tau) and R sends (C, a, tau) to (C, -a, -tau), so RK sends (C, a, tau) to (-C, a - 4, tau) for every tau in R/Z (not only tau in (1/7)Z) and every conductor; hence (RK) V^(+2)_{tau,a} (RK)^-1 = V^(-2)_{tau,a+4} factor by factor, and since antiunitary conjugation is multiplicative, Tr prod_i V^(-2)_{tau_i,a+4} = conj Tr prod_i V^(+2)_{tau_i,a} for every twist sequence (tau_i), likewise for E. RK is an isometry of the Line F spaces H(rho, beta) (weights symmetric in |c|, real centres), used in BGS-TRACE-295. BGS-TRACE-216 restricted to sectors. Galerkin-level referee check of all 64 pairs (sorted |entries| to 2e-41, top-6 eigenvalues conjugate to 7.7e-15) is a numerical corroboration, not part of the proof.",
    "spof": "unformalized_analytic_chain",
@@ -14192,17 +14207,19 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 2,
+    "evidence": 3,
     "verifiers": 0,
-    "formalization": 1
+    "formalization": 2
    },
    "evidence": [
     "evidence/executions/20261031/lineN2N4/receipt.json",
-    "evidence/executions/20261101/lean_batch4/README.md"
+    "evidence/executions/20261101/lean_batch4/README.md",
+    "evidence/executions/20261101/lean_batch5/README.md"
    ],
    "verifiers": [],
    "formalization": [
-    "formalization/Bgs/LineN3SignConj.lean"
+    "formalization/Bgs/LineN3SignConj.lean",
+    "formalization/Bgs/LineN3SignConjComposite.lean"
    ],
    "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineN3/referee/REPORT.md; READY AFTER FIXES N3-F1..N3-F11, APPLIED BY THE AUTHOR IN REPORT_N3_v2.md)",
    "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). rho = (+-2,8). [P] From 8 nu0 == 2 sg (mod 2h) (h odd), nu0(-rho) == -nu0(rho) (mod q); the members are nu = nu0 + (2h/q) j with labels t = j y' and y' independent of rho, so the missing label t_b (nu == 0 mod q) satisfies t_b(-rho) = -t_b(rho) and W_{q,beta}(-rho) = q^-2(-1 - e(-N(beta) tbar_b/q)) = conj W_{q,beta}(rho) (BGS-TRACE-229); in particular the isotropic weights (q - 2)/q^2 are equal. This agrees with the d = 7 statement of BGS-TRACE-221(ii). Composite levels follow from BGS-TRACE-228 since n_e does not depend on the sign. This proves condition C3 of BGS-TRACE-276 (C1 is the widened BGS-TRACE-222; C2 stays open, see BGS-TRACE-276).",
@@ -15047,7 +15064,8 @@
    "state": "proved",
    "methods": [
     "analytic_proof",
-    "independent_review"
+    "independent_review",
+    "lean_formalization"
    ],
    "ledger_claimed_methods": [
     "analytic_proof",
@@ -15056,17 +15074,20 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 1,
+    "evidence": 2,
     "verifiers": 1,
-    "formalization": 0
+    "formalization": 1
    },
    "evidence": [
-    "evidence/executions/20261101/lineNgas/receipt.json"
+    "evidence/executions/20261101/lineNgas/receipt.json",
+    "evidence/executions/20261101/lean_batch5/README.md"
    ],
    "verifiers": [
     "computations/verification/lineN17b/code/g_threshold.py"
    ],
-   "formalization": [],
+   "formalization": [
+    "formalization/Bgs/LineIReduction.lean"
+   ],
    "ledger_status": "PAPER PROOF [P] + INDEPENDENT REFEREE AUDIT (computations/verification/lineN15/referee/REPORT.md; N15 READY AFTER MINOR FIXES, F14.1 CLOSED; N17b READY AFTER FIXES B1-B3, APPLIED IN REPORT_N17b_v2 (N18b; REFEREED IN lineN16: READY AFTER R1, APPLIED IN N19b))",
    "boundary": "Scope: k1 kick 0.9 cos 2 pi q at eta = 2 (ghat(n) = i^n J_n(1.8)), S = [[3,4],[2,3]], lambda = 3+2 sqrt2 = eps^2 (eps = 1+sqrt2), frozen definition of BGS-TRACE-206 (P* = {(2,8),(-2,8),(2,16),(-2,16)}); m = 3p, p prime, notation of BGS-TRACE-231, 243 and 246 (h_m, S+, O-natural_m, D7_m, K_j, xi_lo = 2.4586893, mu* = 1.9154712, f_k^F, I_k^F, A_k, T_k(q), open conductors, slow beta; targets 1.28359 for (+-2,8), 1.4742 for (+-2,16)). [P] (N17b section 1, g_threshold.py; lineN15 section 2(c),(f)). Dev_7 values at m = 15, 21, 33, 39 (d_g3dev.py) are [N] and not registered.",
    "spof": "unformalized_analytic_chain",
