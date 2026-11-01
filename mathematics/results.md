@@ -567,7 +567,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**408 registered claims: 328 proved, 19 verification-pending, 18 conditional, 42 open, 1 refuted.**
+**419 registered claims: 338 proved, 17 verification-pending, 21 conditional, 42 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -733,7 +733,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (299 claims)
+### TRACE family (310 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -1013,7 +1013,7 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-299` | **CONDITIONAL** | Line N Theorem R#-mod v4 (= v3 after lineN16 edits E1-E7) (conditional): if H0-H8 (BGS-TRACE-300..306 and the standing package) hold at p and B_p >= kappa > 0 for infinitely many primes p >= p_thr, then W'_{3p}/m -> infinity and frozen R' is false along m = 3p (conditional; not a refutation) |
 | `BGS-TRACE-300` | **OPEN** | Line N hypothesis H1 (open [H]): collision lemma - lattice-to-collision reduction for shell sums with constant C <= 0.082 at J0 = 12, plus the A_bad tail j > 12 |
 | `BGS-TRACE-301` | **OPEN** | Line N hypothesis H3 (open): Kotecky-Preiss polymer weight e^{a\|gamma\|} with a = 5.93e-6 at g0 = 4 (log -> modulus), finite part certified, tail j > 12 = H1 |
-| `BGS-TRACE-302` | **OPEN** | Line N hypothesis H4 (open, no working route): core -> true conversion of the interaction constant, now = difference-form (pair-minus-product) conversion + the G > 15 true-functional tail |
+| `BGS-TRACE-302` | **PROVED** | Line N hypothesis H4 (met: BGS-TRACE-326): core -> true conversion of the interaction constant, now = difference-form (pair-minus-product) conversion + the G > 15 true-functional tail |
 | `BGS-TRACE-303` | **OPEN** | Line N hypothesis H5 (open): composite h_p - (a) mixed classes (R-mix) E_{mixed,d} F_p <= e^{o(p)} d^c r_2^p with c < 0.387 uniformly in d \| h_p; (b) the 2^omega - 2 cross lines; (c) partially isotropic points; or p in P = {h_p prime} |
 | `BGS-TRACE-304` | **OPEN** | Line N hypothesis H6 (open): inputs of Theorem C' - an explicit p0 and squarefreeness of h_p (or conductor-q^a weights) |
 | `BGS-TRACE-305` | **OPEN** | Line N hypothesis H7* (open): for included levels d not in {h_p} u {e h_p}, d < L_fl = h_p^{1+o(1)}: \|Lin_d\| <= eps_d \|Z_rho\|^2/h_p with sum eps_d <= kappa0, i.e. cross-correlation growth < T' = 1.42785; needed even for prime h_p |
@@ -1033,8 +1033,19 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-319` | **PROVED** | Line N14b/N18b Lemma 1 (sublattice separation) [P]: for squarefree d with split prime factors, delta-close pairs of the conductor-d components H_d separate after n_* steps, with delta0 = 1/(4 sqrt2 (lambda+1)) = 0.025888 and constant C = 16 lambda^2 delta^2 h^2 lambda^{-p} |
 | `BGS-TRACE-320` | **VERIFICATION-PENDING** | Line N14b Lemma 2 (subgroup C', c_B = 0.7375) [P-sketch, asymptotic, constants ignored], covering iso parts d <= 1.588^p; p = 31 covered (H5, not P) |
 | `BGS-TRACE-321` | **PROVED** | Line N15 [CA-fp]: A_bad finite part j <= 12 = 2.031569e-6 at g0 = 4 (c3 radii) and short types sum \|w\| = 9.970e-7 (173 rows incl. alpha = 4) |
-| `BGS-TRACE-322` | **VERIFICATION-PENDING** | Line N16 [CA-fp]+[P-sketch]: delta_true(G <= 15) <= 2.470e-6 (vector-chain conversion per window, E/\|r\| ~ 1.7e-3) |
-| `BGS-TRACE-323` | **VERIFICATION-PENDING** | Line N15 [CA-fp]: SVD-free step-norm table for \|t\| > 1/256, max 2.91656 |
+| `BGS-TRACE-322` | **PROVED** | Line N16 [CA-fp]+[P-sketch]: delta_true(G <= 15) <= 2.470e-6 (vector-chain conversion per window, E/\|r\| ~ 1.7e-3) |
+| `BGS-TRACE-323` | **PROVED** | Line N15 [CA-fp]: SVD-free step-norm table for \|t\| > 1/256, max 2.91656 |
 | `BGS-TRACE-324` | **VERIFICATION-PENDING** | Line N8 Prop X' (explicit error, p >= 1289) with the 15 small-depth classes [CA]: [P mod Line F certificates + class CA] for the certified classes; k-parity mechanism and E-family absorption [P-sketch] |
+| `BGS-TRACE-325` | **CONDITIONAL** | Line N Theorem R#-mod v5 (conditional; THEOREM_DRAFT_v5 after lineN22 edits E1-E8): if H0, H1 (BGS-TRACE-336), H5-H8 (BGS-TRACE-303..306) hold at p (H2, H4 met; H3 follows from H1) and B_p >= kappa > 0 for infinitely many primes p >= p_thr, with B_p carrying e^{-p(delta + A_bad^KP)}, then W'_{3p}/m -> infinity and frozen R' is false along m = 3p (conditional; not a refutation) |
+| `BGS-TRACE-326` | **PROVED** | Line N21 H4 met [P] + [CA-fp] (not [CA]): true-functional interaction constant delta_true (all G) <= 5.0313e-6 = 2.2102e-6 (G <= 15) + 2.712658e-6 (16 <= G <= 36, box) + 1.0843e-7 (G >= 37, Lemma D^T) + 3.1e-13 (G > 60) |
+| `BGS-TRACE-327` | **PROVED** | Line N21 Lemma D^T [P] + [CA-fp]: true-operator difference form; G >= 37 tail of delta_true <= 1.0843e-7 (G = 37..60 <= 1.0842557e-7), remainder G > 60 <= 3.1e-13 |
+| `BGS-TRACE-328` | **PROVED** | Line N21 Lemma Q [P] + [CA] constants: \|\|(L_0/mu)^k Q\|\| <= m(k) with K_0 < 56.78 and Rem < 1.591e-3 |
+| `BGS-TRACE-329` | **PROVED** | Line N20 Prop. F [P mod N13 CA]: the unrestricted joint torus mean is >= 5.1e-7 * lambda^{-n} for 1 <= n <= 10^10 (fixed-point shadowing) |
+| `BGS-TRACE-330` | **PROVED** | Line N20 Lemma J [P]: joint (A,B) collisions are eps-adic (mu_B = -eps^{-1} mu_A); eps-carries \|e\| <= 51 (sharp), 6145 pair states; the lambda-carry graph (633 states, rho >= 20) and the renewal Lemma R |
+| `BGS-TRACE-331` | **PROVED** | Line N20 Thm A [CA-fp]: the H1 shell law holds for every shell j <= 14 for the core functional, C_cert(j) <= 4.36e-4 (<= 5.9e-5 for j >= 8) |
+| `BGS-TRACE-332` | **CONDITIONAL** | Line N20 Prop. K (conditional on H1): H1-shell(C <= 0.082, J0 = 12) implies H3 with KP weight a = a(C) <= 2.70e-3 and budget left >= 2.738e-4 (with delta_true <= 5.0313e-6) |
+| `BGS-TRACE-333` | **CONDITIONAL** | Line N v5 gas vs Robin crossover with all rate budgets (delta_true + A_bad^KP), additive terms idealised [P-arith], conditional on H1 via A_bad^KP: C <= 0.082 -> all p >= 3305, first prime 3307; C <= 0.04 -> 1726/1733; C <= 8.8e-4 -> 1402/1409; C <= 4.4e-4 -> 1402/1409 |
+| `BGS-TRACE-335` | **PROVED** | Line N21 Lemma C [P] + [CA-fp]: two-sided core -> true vector conversion including the second-order dPi^2 term; delta_true(G <= 15) <= 2.2102e-6 |
+| `BGS-TRACE-336` | **OPEN** | Line N hypothesis H1, re-scoped by N20 (open [H]): (H1-bad) bad-cluster (polymer-restricted) joint (A,B) second moment on the eps-chain, sum_{bad, shell j} \|r_A r_B\|^2 <= C 2^{j(1 - beta(0.28))} for j > J0 = 12 with C <= 0.082, plus (H1-ali) the near-collision/box constants |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

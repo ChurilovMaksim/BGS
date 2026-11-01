@@ -1,5 +1,20 @@
 # Claim ledger
 
+## Theorem R♯-mod v5, H4 met, H1 re-scoped (Lines N20, N21; THEOREM_DRAFT_v5; referee lineN22), 1 November 2026
+
+State changes (referee lineN22 GO after E1–E12; E9–E12 applied to the registry): BGS-TRACE-302 (H4) open → proved [P] + [CA-fp], with
+dependencies rewired to 307, 322, 326, 327, 328 and its title parenthetical "(open, no working route)" replaced by
+"(met: BGS-TRACE-326)" (ID and mathematical statement unchanged); BGS-TRACE-322 verification-pending → proved a fortiori via the new
+BGS-TRACE-335 (N21 Lemma C; the N16 method in its title had defects F21-1/F21-3); BGS-TRACE-323 verification-pending → proved [CA-fp]
+(values recomputed by lineN21b).
+
+New: BGS-TRACE-325 (Theorem R♯-mod v5, conditional on H0, H1, H5–H8; supersedes 299), 332 (Prop. K) and 333 (crossover with all
+rate budgets: 3307 fragile / 1409 robust) conditional on H1; 326 (δ_true ≤ 5.0313e-6, all G), 327 (Lemma D^T), 328 (Lemma Q),
+329 (Prop. F, lower bound only), 330 (Lemma J), 331 (Thm A), 335 (Lemma C) proved; 336 (H1 re-scoped) open. Annotated, states
+unchanged: 299 (superseded by 325), 300 (re-scoped as 336), 301 (H3, stays open; superseded in substance by 332), 318 (stays proved;
+not the theorem's p₁). The proposed claim 334 is recorded as erratum ERR-065, not as a claim. BGS-TRACE-206 (frozen R′) stays
+**open** and is not refuted. Note: [lineN5N18_gas_conditional.md](../mathematics/fixed-map/lineN5N18_gas_conditional.md), v5 update.
+
 ## Conductor structure, Theorem W⁺ and scarred conductors (Lines M and N), 31 October 2026
 
 Project proofs: BGS-TRACE-269, 270, 272, 275, 277 (paper; Lean `Bgs.LineM` for 269, 272, 277); 271, 273 (paper on the Line F certificate

@@ -27,15 +27,15 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**375 maintained proof notes; 10 topic views; 408 core claim IDs.**
+**375 maintained proof notes; 10 topic views; 419 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
-| conditional | 18 |
+| conditional | 21 |
 | open | 42 |
-| proved | 328 |
+| proved | 338 |
 | refuted | 1 |
-| verification-pending | 19 |
+| verification-pending | 17 |
 
 “Proved” reports the project registry at its stated scope, not external refereeing.
 No state is inferred for an unregistered note. Read its proof and the full ledger.
@@ -139,7 +139,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Line L + L2 + L3: the operator input OP certified without cancellation, Theorem W and K2′ without OP, and the open range c_W p² < q < L_m](../mathematics/fixed-map/lineL_op_open_range.md) | `BGS-TRACE-248` (proved); `BGS-TRACE-249` (proved); `BGS-TRACE-250` (proved); `BGS-TRACE-251` (proved); `BGS-TRACE-252` (proved); `BGS-TRACE-253` (proved); `BGS-TRACE-254` (proved); `BGS-TRACE-255` (proved); `BGS-TRACE-256` (open); `BGS-TRACE-257` (proved); `BGS-TRACE-258` (proved); `BGS-TRACE-259` (proved); `BGS-TRACE-260` (proved); `BGS-TRACE-261` (proved); `BGS-TRACE-262` (proved); `BGS-TRACE-263` (proved); `BGS-TRACE-264` (proved); `BGS-TRACE-265` (proved); `BGS-TRACE-266` (proved); `BGS-TRACE-267` (proved); `BGS-TRACE-268` (proved) |
 | [Lines M and N: conductor structure along m = 3p, the explicit range beyond Weil, and scarred conductors](../mathematics/fixed-map/lineMN_conductor_structure.md) | `BGS-TRACE-269` (proved); `BGS-TRACE-270` (proved); `BGS-TRACE-271` (proved); `BGS-TRACE-272` (proved); `BGS-TRACE-273` (proved); `BGS-TRACE-274` (open); `BGS-TRACE-275` (proved); `BGS-TRACE-276` (open); `BGS-TRACE-277` (proved); `BGS-TRACE-278` (proved); `BGS-TRACE-279` (proved); `BGS-TRACE-280` (proved); `BGS-TRACE-281` (proved); `BGS-TRACE-282` (open); `BGS-TRACE-283` (proved); `BGS-TRACE-284` (proved); `BGS-TRACE-285` (proved) |
 | [Lines N2–N4: the inherited level c = h_p as a periodic-orbit / pressure problem, certified Λ, and the isotropic obstruction](../mathematics/fixed-map/lineN2N4_inherited_level.md) | `BGS-TRACE-286` (proved); `BGS-TRACE-287` (open); `BGS-TRACE-288` (proved); `BGS-TRACE-289` (proved); `BGS-TRACE-290` (proved); `BGS-TRACE-291` (proved); `BGS-TRACE-292` (proved); `BGS-TRACE-293` (proved); `BGS-TRACE-294` (proved); `BGS-TRACE-295` (proved); `BGS-TRACE-296` (proved); `BGS-TRACE-297` (proved); `BGS-TRACE-298` (open) |
-| [Lines N5–N19b: the polymer-gas route to frozen R′ along m = 3p — a conditional reduction (Theorem R♯-mod v4 = v3 after lineN16 edits E1–E7)](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | `BGS-TRACE-299` (conditional); `BGS-TRACE-300` (open); `BGS-TRACE-301` (open); `BGS-TRACE-302` (open); `BGS-TRACE-303` (open); `BGS-TRACE-304` (open); `BGS-TRACE-305` (open); `BGS-TRACE-306` (open); `BGS-TRACE-307` (proved); `BGS-TRACE-308` (proved); `BGS-TRACE-309` (proved); `BGS-TRACE-310` (proved); `BGS-TRACE-311` (proved); `BGS-TRACE-312` (proved); `BGS-TRACE-313` (proved); `BGS-TRACE-314` (proved); `BGS-TRACE-315` (proved); `BGS-TRACE-316` (proved); `BGS-TRACE-317` (proved); `BGS-TRACE-318` (proved); `BGS-TRACE-319` (proved); `BGS-TRACE-320` (verification-pending); `BGS-TRACE-321` (proved); `BGS-TRACE-322` (verification-pending); `BGS-TRACE-323` (verification-pending); `BGS-TRACE-324` (verification-pending) |
+| [Lines N5–N19b: the polymer-gas route to frozen R′ along m = 3p — a conditional reduction (Theorem R♯-mod v4 = v3 after lineN16 edits E1–E7)](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | `BGS-TRACE-299` (conditional); `BGS-TRACE-300` (open); `BGS-TRACE-301` (open); `BGS-TRACE-302` (proved); `BGS-TRACE-303` (open); `BGS-TRACE-304` (open); `BGS-TRACE-305` (open); `BGS-TRACE-306` (open); `BGS-TRACE-307` (proved); `BGS-TRACE-308` (proved); `BGS-TRACE-309` (proved); `BGS-TRACE-310` (proved); `BGS-TRACE-311` (proved); `BGS-TRACE-312` (proved); `BGS-TRACE-313` (proved); `BGS-TRACE-314` (proved); `BGS-TRACE-315` (proved); `BGS-TRACE-316` (proved); `BGS-TRACE-317` (proved); `BGS-TRACE-318` (proved); `BGS-TRACE-319` (proved); `BGS-TRACE-320` (verification-pending); `BGS-TRACE-321` (proved); `BGS-TRACE-322` (proved); `BGS-TRACE-323` (proved); `BGS-TRACE-324` (verification-pending); `BGS-TRACE-325` (conditional); `BGS-TRACE-326` (proved); `BGS-TRACE-327` (proved); `BGS-TRACE-328` (proved); `BGS-TRACE-329` (proved); `BGS-TRACE-330` (proved); `BGS-TRACE-331` (proved); `BGS-TRACE-332` (conditional); `BGS-TRACE-333` (conditional); `BGS-TRACE-335` (proved); `BGS-TRACE-336` (open) |
 | [Fixed-word freeness of the literal kick and cat factors](../mathematics/fixed-map/literal_fixed_word_freeness.md) | Consult proof and full ledger |
 | [An explicit triple-logarithmic window for the literal mixed-word traces](../mathematics/fixed-map/literal_growing_word_window.md) | Consult proof and full ledger |
 | [Literal kick-phase law and post-wrapping cat-comparison obstruction](../mathematics/fixed-map/literal_kick_phase_law.md) | Consult proof and full ledger |

@@ -64,8 +64,8 @@ def render(root: Path = ROOT) -> str:
     for c in ('BGS-BGS-001', 'BGS-TRACE-005', 'BGS-TRACE-206'):
         if claims[c]['state'] != 'open':
             raise SystemExit(c + ' is no longer open: rewrite the RESULTS.md summary by hand before rendering')
-    if claims['BGS-TRACE-299']['state'] != 'conditional':
-        raise SystemExit('BGS-TRACE-299 is no longer conditional: rewrite the RESULTS.md summary by hand before rendering')
+    if claims['BGS-TRACE-325']['state'] != 'conditional':
+        raise SystemExit('BGS-TRACE-325 is no longer conditional: rewrite the RESULTS.md summary by hand before rendering')
     total = len(reg['claims'])
     L = []
     w = L.append
@@ -85,8 +85,8 @@ def render(root: Path = ROOT) -> str:
       'scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). '
       'Among them are uniform trace bounds for the fixed kick, exact random-phase form factors, and a computer-assisted '
       'refutation of Conjecture R at η = 2 (BGS-TRACE-179). The current frontier is the corrected mean law R′ (BGS-TRACE-206), '
-      'which remains **open and is not refuted**. The main recent result, **Theorem R♯-mod v4 (BGS-TRACE-299), is '
-      'conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0–H8.')
+      'which remains **open and is not refuted**. The main recent result, **Theorem R♯-mod v5 (BGS-TRACE-325), is '
+      'conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.')
     w('')
     w('## Status at a glance')
     w('')

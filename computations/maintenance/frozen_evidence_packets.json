@@ -40,7 +40,8 @@
   "computations/verification/lineN8",
   "computations/verification/lineN8b",
   "computations/verification/lineN9",
-  "computations/verification/lineN9b"
+  "computations/verification/lineN9b",
+  "computations/verification/lineN_theorem_draft"
  ],
  "files": {
   "computations/verification/lineC/fixes_check.py": {
@@ -1506,6 +1507,14 @@
   "computations/verification/lineN9b/code/g_unitmix.py": {
    "sha256": "3327f7beb5e50ad256c6be56fa2199deafa6a371e45dd6e715fe06743718bc8b",
    "pinned_in": "computations/verification/lineN9b/SHA256_N9b.txt"
+  },
+  "computations/verification/lineN_theorem_draft/V5/code/assemble_v5.py": {
+   "sha256": "4956b662c03fb3795e172225a45a49ca641fdf440601c39b499bc19deb322433",
+   "pinned_in": "computations/verification/lineN_theorem_draft/V5/SHA256_V5.txt"
+  },
+  "computations/verification/lineN_theorem_draft/V5/code/crossover_v5.py": {
+   "sha256": "afcc4a57f8664f3cebb60778defcbb7354994058c2e0110d33091c37e67b696d",
+   "pinned_in": "computations/verification/lineN_theorem_draft/V5/SHA256_V5.txt"
   }
  }
 }

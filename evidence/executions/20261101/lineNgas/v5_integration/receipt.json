@@ -1,0 +1,246 @@
+{
+  "schema": "bgs.lineN.v5_integration.receipt/1",
+  "date": "2026-11-01",
+  "base": "origin/main 7a0e9c5d (layout precedent: PR #67, merge 3531d83e)",
+  "theorem_draft": {
+    "repo_copy": "computations/verification/lineN_theorem_draft/THEOREM_DRAFT_v5.md",
+    "sha256": "8a9ab69cbcf2aae5d4309ae1b8e7a8da813e598d751b2367664cabee88a648aa",
+    "author_original_sha256": "69bdea020f487c4502a24d1165786b6ee684d6c91ff614b05fa00133b8998ae4",
+    "edits": "referee lineN22 E1-E8 verbatim (THEOREM_DRAFT_v5_lineN22_edits.diff)"
+  },
+  "referee": {
+    "final": "evidence/executions/20261101/lineNgas/referee/lineN22/REPORT.md",
+    "verdict": "GO after E1-E12",
+    "prior": [
+      "lineN20",
+      "lineN21",
+      "lineN21b"
+    ]
+  },
+  "claims": {
+    "BGS-TRACE-299": {
+      "state": "conditional",
+      "dependencies": [
+        "BGS-TRACE-206",
+        "BGS-TRACE-210",
+        "BGS-TRACE-213",
+        "BGS-TRACE-227",
+        "BGS-TRACE-271",
+        "BGS-TRACE-273",
+        "BGS-TRACE-296",
+        "BGS-TRACE-300",
+        "BGS-TRACE-301",
+        "BGS-TRACE-302",
+        "BGS-TRACE-303",
+        "BGS-TRACE-304",
+        "BGS-TRACE-305",
+        "BGS-TRACE-306",
+        "BGS-TRACE-307",
+        "BGS-TRACE-308",
+        "BGS-TRACE-309",
+        "BGS-TRACE-310",
+        "BGS-TRACE-311",
+        "BGS-TRACE-312",
+        "BGS-TRACE-313",
+        "BGS-TRACE-314",
+        "BGS-TRACE-315",
+        "BGS-TRACE-317",
+        "BGS-TRACE-318",
+        "BGS-TRACE-319",
+        "BGS-TRACE-320",
+        "BGS-TRACE-321",
+        "BGS-TRACE-322",
+        "BGS-TRACE-323",
+        "BGS-TRACE-324"
+      ]
+    },
+    "BGS-TRACE-300": {
+      "state": "open",
+      "dependencies": [
+        "BGS-TRACE-309",
+        "BGS-TRACE-312"
+      ]
+    },
+    "BGS-TRACE-301": {
+      "state": "open",
+      "dependencies": [
+        "BGS-TRACE-300",
+        "BGS-TRACE-307",
+        "BGS-TRACE-321"
+      ]
+    },
+    "BGS-TRACE-302": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-307",
+        "BGS-TRACE-322",
+        "BGS-TRACE-326",
+        "BGS-TRACE-327",
+        "BGS-TRACE-328"
+      ]
+    },
+    "BGS-TRACE-318": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-307",
+        "BGS-TRACE-310"
+      ]
+    },
+    "BGS-TRACE-322": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-307",
+        "BGS-TRACE-335"
+      ]
+    },
+    "BGS-TRACE-323": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-311"
+      ]
+    },
+    "BGS-TRACE-325": {
+      "state": "conditional",
+      "dependencies": [
+        "BGS-TRACE-206",
+        "BGS-TRACE-213",
+        "BGS-TRACE-271",
+        "BGS-TRACE-273",
+        "BGS-TRACE-303",
+        "BGS-TRACE-304",
+        "BGS-TRACE-305",
+        "BGS-TRACE-306",
+        "BGS-TRACE-307",
+        "BGS-TRACE-326",
+        "BGS-TRACE-332",
+        "BGS-TRACE-333",
+        "BGS-TRACE-336"
+      ]
+    },
+    "BGS-TRACE-326": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-198",
+        "BGS-TRACE-307",
+        "BGS-TRACE-311",
+        "BGS-TRACE-322",
+        "BGS-TRACE-323",
+        "BGS-TRACE-327",
+        "BGS-TRACE-328",
+        "BGS-TRACE-335"
+      ]
+    },
+    "BGS-TRACE-327": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-323",
+        "BGS-TRACE-328",
+        "BGS-TRACE-335"
+      ]
+    },
+    "BGS-TRACE-328": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-310",
+        "BGS-TRACE-311"
+      ]
+    },
+    "BGS-TRACE-329": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-311",
+        "BGS-TRACE-312"
+      ]
+    },
+    "BGS-TRACE-330": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-312"
+      ]
+    },
+    "BGS-TRACE-331": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-307",
+        "BGS-TRACE-311",
+        "BGS-TRACE-321"
+      ]
+    },
+    "BGS-TRACE-332": {
+      "state": "conditional",
+      "dependencies": [
+        "BGS-TRACE-321",
+        "BGS-TRACE-326",
+        "BGS-TRACE-331",
+        "BGS-TRACE-336"
+      ]
+    },
+    "BGS-TRACE-333": {
+      "state": "conditional",
+      "dependencies": [
+        "BGS-TRACE-318",
+        "BGS-TRACE-326",
+        "BGS-TRACE-332",
+        "BGS-TRACE-336"
+      ]
+    },
+    "BGS-TRACE-335": {
+      "state": "proved",
+      "dependencies": [
+        "BGS-TRACE-198",
+        "BGS-TRACE-307",
+        "BGS-TRACE-311",
+        "BGS-TRACE-323"
+      ]
+    },
+    "BGS-TRACE-336": {
+      "state": "open",
+      "dependencies": [
+        "BGS-TRACE-309",
+        "BGS-TRACE-312",
+        "BGS-TRACE-330",
+        "BGS-TRACE-331"
+      ]
+    }
+  },
+  "errata": [
+    "ERR-065 (proposed BGS-TRACE-334 not registered; authority N21/REPORT_N21_v2.md)"
+  ],
+  "lean": {
+    "files": [
+      "formalization/Bgs/LineN20Arith.lean",
+      "formalization/Bgs/LineN20TailArith.lean",
+      "formalization/Bgs/LineN21Arith.lean"
+    ],
+    "theorems": 54,
+    "axioms_subset_of": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorry": 0,
+    "native_decide": 0,
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "build_log": "evidence/executions/20261101/lineNgas/v5_integration/lake_build_Bgs.log",
+    "build_result": "Build completed successfully (8862 jobs), exit 0"
+  },
+  "proved_deps_gate": {
+    "log": "evidence/executions/20261101/lineNgas/v5_integration/proved_deps_gate_v5.log",
+    "result": "GATE_OK",
+    "new_violations": 0,
+    "pre_existing_violations": 7
+  },
+  "manifest": {
+    "path": "evidence/executions/20261101/lineNgas/v5_integration/SHA256_v5_integration.txt",
+    "sha256": "b9a326fc52845c0f3588f1528151a3a1e7c358711415d21b92fa58abaa4c44d0",
+    "files": 263
+  },
+  "sha256": {
+    "lake_build_Bgs.log": "60739e5fff8942cf0dd6a7a2db6e6bcd9c3f2565c7357118d23b0e456fd18d77",
+    "lake_build_new_modules.log": "99b13a1c965149148fbdb32681e741d6ea00c20a8d0f824c2c86ba532f539b21",
+    "lake_cache_get.log": "d87669c3cbe5d0b36e1e7bcaba2a835290f0d5a8f0d8588b3b0ab1912fca086d",
+    "proved_deps_gate_v5.log": "638700e78f779b20b149f0e929666359421640798db41aa4fa342ec435677fd3",
+    "manifests.log": "dbad7e09e39775efb79f3f48771637bc22764e617200701ab1e11ad2c60f7839",
+    "EXCLUDED.md": "0fa585c0056e2de73f9e226c1c5eafd3fea93b05944af565ee39adccaba675cb"
+  }
+}

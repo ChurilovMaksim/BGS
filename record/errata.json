@@ -1,6 +1,6 @@
 {
   "schema": "bgs-errata-v1",
-  "updated": "2026-10-30",
+  "updated": "2026-11-01",
   "status_authority": "record/retractions.md",
   "entries": [
     {
@@ -469,6 +469,13 @@
       "disposition": "superseded figures — corrected by the accompanying Phase 1 drafts, old entries not edited",
       "downstream": "On the 2026-10-29 audit snapshot the active Lean graph is 87 leaf modules (29 pre-existing + 39 Bgs.Mathlib.* + 19 further Bgs.lean imports) + 2 aggregators; on main at PR #55 it is 88 leaf modules with Bgs.LineDCerts added; on main at PR #56 (HEAD 347f1730, 2026-10-30) it is 92 leaf modules (33 listed in the README table + 39 Bgs.Mathlib.* + 20 further Bgs.lean imports) + 2 aggregators, 1026 theorems, 167 lemmas, 116 #print axioms commands. The formalization README line 3 (68 leaf modules) and the SOURCE_OF_TRUTH figure (18 of 159) were corrected by the accompanying Phase 1 commit. The 24-module / 27-job figures remain a partial 20 October build snapshot only. The ledger_status audit figure was re-measured on the 266-claim registry (221 proved / 15 verification-pending / 13 conditional / 17 open): 31 of 266 on 30 October 2026 (29 of 232 on 29 October 2026), and must not be fixed by synchronisation.",
       "authority": "record/retractions.md"
+    },
+    {
+      "id": "ERR-065",
+      "title": "Line N14 digits.py twists at mp.dps = 34 (N21 F21-2)",
+      "disposition": "corrected: N14 digits.py with mp.dps = 34 corrupts the twists for G >= 21 at the ulp level, material from G >~ 25 (4.4e-15 at G = 25, 1.2e-3 at G = 40) (N21 F21-2, refereed lineN21). Proposed as claim BGS-TRACE-334 in V5/CLAIMS_PROPOSED_v5.md and recorded here instead (referee lineN22 E12); no claim ID 334 is registered.",
+      "downstream": "G <= 20 is exact, so the v4 numbers (G <= 15) are unaffected. All N21 G >= 16 data behind BGS-TRACE-326/327 use dps = 160; the dps-34 runs are kept only under N21/logs/discarded_dps34.",
+      "authority": "evidence/executions/20261101/lineNgas/N21/REPORT_N21_v2.md"
     }
   ]
 }

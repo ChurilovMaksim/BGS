@@ -49,6 +49,40 @@ No proved claim depends on a non-proved claim, except on BGS-TRACE-206 through i
 * **Large files.** Files over 5 MiB and the regenerable `.lake` directory are not committed. They are listed with sha256 in
   `evidence/executions/20261101/lineNgas/EXCLUDED.md`.
 
+## v5 update: THEOREM_DRAFT_v5, N20 v2, N21 v2 and referee lineN22 (1 November 2026)
+**Canonical statement now:** `computations/verification/lineN_theorem_draft/THEOREM_DRAFT_v5.md` (repo copy with referee lineN22 edits
+E1–E8 applied verbatim; author original, the author v4 → v5 diff and the edit diff are next to it). v1–v4 are kept as history.
+**Theorem R♯-mod v5 is BGS-TRACE-325 (conditional)**; it supersedes BGS-TRACE-299 (v4, still conditional, ledger "superseded").
+Frozen R′ (BGS-TRACE-206) is **not** refuted.
+
+* **Sources.** The N20 v2 and N21 v2 author packets and the referee reports lineN20, lineN21, lineN21b and lineN22 are in
+  `evidence/executions/20261101/lineNgas/` (`N20/`, `N21/`, `referee/lineN2*/`), byte-identical to the box originals, with their SHA256
+  manifests. Final referee: lineN22, GO after E1–E12 (E1–E8 in the draft, E9–E12 in the registry).
+* **Exponent correction (v5 §2).** B_p carries e^{−p(δ + A_bad^KP)}: the KP log → modulus step charges the weighted S₀(a), not a
+  [P-sketch, background interplay as for H3]; lineN22 found it correct and necessary.
+* **State changes.**
+  * BGS-TRACE-302 (H4) open → **proved** [P] + [CA-fp]; dependencies 307, 322, 326, 327, 328; the title parenthetical
+    "(open, no working route)" now reads "(met: BGS-TRACE-326)" (ID and statement unchanged).
+  * BGS-TRACE-322 verification-pending → **proved a fortiori** via BGS-TRACE-335 (N21 Lemma C, δ_true(G ≤ 15) ≤ 2.2102e-6); the N16
+    method named in its title had defects F21-1/F21-3 and is not the proof.
+  * BGS-TRACE-323 verification-pending → **proved** [CA-fp] (values recomputed independently by lineN21b).
+* **Unchanged states, new ledger/boundary text.** BGS-TRACE-301 (H3) stays **open** (superseded in substance by 332; its a = 5.93e-6
+  used the withdrawn tail placeholder). BGS-TRACE-300 (H1) stays open, re-scoped as BGS-TRACE-336. BGS-TRACE-318 stays proved as an
+  arithmetic implication in the input δ; its 1386/1390/1399 charge δ only and are not the theorem's p₁.
+* **New claims.**
+  * Conditional: BGS-TRACE-325 (Theorem R♯-mod v5; inputs H0, H1 = 336, H5–H8 = 303..306; uses 326, 332, 333), BGS-TRACE-332
+    (Prop. K: H1-shell ⇒ H3 with a = a(C)), BGS-TRACE-333 (crossover with all rate budgets: first prime 3307 at C ≤ 0.082, fragile;
+    1409 at C ≤ 8.8e-4, robust; additive budgets open).
+  * Proved: BGS-TRACE-326 (δ_true ≤ 5.0313e-6, all G), 327 (Lemma D^T), 328 (Lemma Q), 329 (Prop. F, lower bound only; the ratio
+    statement is [N]), 330 (Lemma J, ε-carries, λ-carry graph, Lemma R), 331 (Thm A, shells j ≤ 14, core functional), 335 (Lemma C).
+  * Open: BGS-TRACE-336 (H1 re-scoped: H1-bad joint (A,B) second moment + H1-ali).
+  * The proposed claim 334 (N14 digits.py mp.dps = 34 erratum, N21 F21-2) is recorded as erratum ERR-065, not as a claim; no ID 334 is
+    registered.
+* **Lean.** `formalization/Bgs/LineN20Arith.lean`, `LineN20TailArith.lean` and `LineN21Arith.lean` (namespaces `Bgs.LineN20`,
+  `Bgs.LineN20Tail`, `Bgs.LineN21`): the author/referee files verbatim, 54 theorems with `#print axioms`, `norm_num`/`decide +kernel`
+  only, no `sorry`, no `native_decide`. Finite arithmetic and finite graph facts only.
+* **Gate.** `computations/verification/lineN_theorem_draft/integration_checks/proved_deps_gate_v5.py`, strict for 244..336.
+
 ## Registered claims
 * **Conditional theorem.** BGS-TRACE-299 (Theorem R♯-mod, v4 statement) is conditional on H0–H8:
   * H0 is the standing package: BGS-TRACE-197/199/207/212/213/228, Prop X′ (BGS-TRACE-324) and n_cert;
@@ -75,8 +109,10 @@ No proved claim depends on a non-proved claim, except on BGS-TRACE-206 through i
   * 321: A_bad j ≤ 12 [CA-fp], checked in lineN14, lineN15 §1a and lineN16 §1e.
 * **Verification-pending.**
   * 320: Lemma 2, c_B = 0.7375, and p = 31 [P-sketch].
-  * 322: δ_true(G ≤ 15) ≤ 2.470e-6. The numerics are reproduced (lineN16); the conversion lemma is [P-sketch].
-  * 323: the step-norm table for |t| > 1/256. The method is refereed, but the values were not recomputed.
+  * 322: δ_true(G ≤ 15) ≤ 2.470e-6. The numerics are reproduced (lineN16); the conversion lemma is [P-sketch]. *(Since v5: proved
+    a fortiori via BGS-TRACE-335; see the v5 update.)*
+  * 323: the step-norm table for |t| > 1/256. The method is refereed, but the values were not recomputed. *(Since v5: proved,
+    values recomputed by lineN21b.)*
   * 324: Prop X′ (it has [P-sketch] parts).
 
 ## Lean
@@ -119,7 +155,7 @@ No proved claim depends on a non-proved claim, except on BGS-TRACE-206 through i
 | BGS-TRACE-299 | conditional | Line N Theorem R#-mod v4 (= v3 after lineN16 edits E1-E7) (conditional): if H0-H8 (BGS-TRACE-300..306 and the standing package) hold at p and B_p >= kappa > 0 for infinitely many primes p >= p_thr, then W'_{3p}/m -> infinity and frozen R' is false along m = 3p (conditional; not a refutation) |
 | BGS-TRACE-300 | open | Line N hypothesis H1 (open [H]): collision lemma - lattice-to-collision reduction for shell sums with constant C <= 0.082 at J0 = 12, plus the A_bad tail j > 12 |
 | BGS-TRACE-301 | open | Line N hypothesis H3 (open): Kotecky-Preiss polymer weight e^{a\|gamma\|} with a = 5.93e-6 at g0 = 4 (log -> modulus), finite part certified, tail j > 12 = H1 |
-| BGS-TRACE-302 | open | Line N hypothesis H4 (open, no working route): core -> true conversion of the interaction constant, now = difference-form (pair-minus-product) conversion + the G > 15 true-functional tail |
+| BGS-TRACE-302 | proved | Line N hypothesis H4 (met: BGS-TRACE-326): core -> true conversion of the interaction constant, now = difference-form (pair-minus-product) conversion + the G > 15 true-functional tail |
 | BGS-TRACE-303 | open | Line N hypothesis H5 (open): composite h_p - (a) mixed classes (R-mix) E_{mixed,d} F_p <= e^{o(p)} d^c r_2^p with c < 0.387 uniformly in d \| h_p; (b) the 2^omega - 2 cross lines; (c) partially isotropic points; or p in P = {h_p prime} |
 | BGS-TRACE-304 | open | Line N hypothesis H6 (open): inputs of Theorem C' - an explicit p0 and squarefreeness of h_p (or conductor-q^a weights) |
 | BGS-TRACE-305 | open | Line N hypothesis H7* (open): for included levels d not in {h_p} u {e h_p}, d < L_fl = h_p^{1+o(1)}: \|Lin_d\| <= eps_d \|Z_rho\|^2/h_p with sum eps_d <= kappa0, i.e. cross-correlation growth < T' = 1.42785; needed even for prime h_p |
@@ -139,6 +175,17 @@ No proved claim depends on a non-proved claim, except on BGS-TRACE-206 through i
 | BGS-TRACE-319 | proved | Line N14b/N18b Lemma 1 (sublattice separation) [P]: for squarefree d with split prime factors, delta-close pairs of the conductor-d components H_d separate after n_* steps, with delta0 = 1/(4 sqrt2 (lambda+1)) = 0.025888 and constant C = 16 lambda^2 delta^2 h^2 lambda^{-p} |
 | BGS-TRACE-320 | verification-pending | Line N14b Lemma 2 (subgroup C', c_B = 0.7375) [P-sketch, asymptotic, constants ignored], covering iso parts d <= 1.588^p; p = 31 covered (H5, not P) |
 | BGS-TRACE-321 | proved | Line N15 [CA-fp]: A_bad finite part j <= 12 = 2.031569e-6 at g0 = 4 (c3 radii) and short types sum \|w\| = 9.970e-7 (173 rows incl. alpha = 4) |
-| BGS-TRACE-322 | verification-pending | Line N16 [CA-fp]+[P-sketch]: delta_true(G <= 15) <= 2.470e-6 (vector-chain conversion per window, E/\|r\| ~ 1.7e-3) |
-| BGS-TRACE-323 | verification-pending | Line N15 [CA-fp]: SVD-free step-norm table for \|t\| > 1/256, max 2.91656 |
+| BGS-TRACE-322 | proved | Line N16 [CA-fp]+[P-sketch]: delta_true(G <= 15) <= 2.470e-6 (vector-chain conversion per window, E/\|r\| ~ 1.7e-3) |
+| BGS-TRACE-323 | proved | Line N15 [CA-fp]: SVD-free step-norm table for \|t\| > 1/256, max 2.91656 |
 | BGS-TRACE-324 | verification-pending | Line N8 Prop X' (explicit error, p >= 1289) with the 15 small-depth classes [CA]: [P mod Line F certificates + class CA] for the certified classes; k-parity mechanism and E-family absorption [P-sketch] |
+| BGS-TRACE-325 | conditional | Line N Theorem R#-mod v5 (conditional; THEOREM_DRAFT_v5 after lineN22 edits E1-E8): if H0, H1 (BGS-TRACE-336), H5-H8 (BGS-TRACE-303..306) hold at p (H2, H4 met; H3 follows from H1) and B_p >= kappa > 0 for infinitely many primes p >= p_thr, with B_p carrying e^{-p(delta + A_bad^KP)}, then W'_{3p}/m -> infinity and frozen R' is false along m = 3p (conditional; not a refutation) |
+| BGS-TRACE-326 | proved | Line N21 H4 met [P] + [CA-fp] (not [CA]): true-functional interaction constant delta_true (all G) <= 5.0313e-6 = 2.2102e-6 (G <= 15) + 2.712658e-6 (16 <= G <= 36, box) + 1.0843e-7 (G >= 37, Lemma D^T) + 3.1e-13 (G > 60) |
+| BGS-TRACE-327 | proved | Line N21 Lemma D^T [P] + [CA-fp]: true-operator difference form; G >= 37 tail of delta_true <= 1.0843e-7 (G = 37..60 <= 1.0842557e-7), remainder G > 60 <= 3.1e-13 |
+| BGS-TRACE-328 | proved | Line N21 Lemma Q [P] + [CA] constants: \|\|(L_0/mu)^k Q\|\| <= m(k) with K_0 < 56.78 and Rem < 1.591e-3 |
+| BGS-TRACE-329 | proved | Line N20 Prop. F [P mod N13 CA]: the unrestricted joint torus mean is >= 5.1e-7 * lambda^{-n} for 1 <= n <= 10^10 (fixed-point shadowing) |
+| BGS-TRACE-330 | proved | Line N20 Lemma J [P]: joint (A,B) collisions are eps-adic (mu_B = -eps^{-1} mu_A); eps-carries \|e\| <= 51 (sharp), 6145 pair states; the lambda-carry graph (633 states, rho >= 20) and the renewal Lemma R |
+| BGS-TRACE-331 | proved | Line N20 Thm A [CA-fp]: the H1 shell law holds for every shell j <= 14 for the core functional, C_cert(j) <= 4.36e-4 (<= 5.9e-5 for j >= 8) |
+| BGS-TRACE-332 | conditional | Line N20 Prop. K (conditional on H1): H1-shell(C <= 0.082, J0 = 12) implies H3 with KP weight a = a(C) <= 2.70e-3 and budget left >= 2.738e-4 (with delta_true <= 5.0313e-6) |
+| BGS-TRACE-333 | conditional | Line N v5 gas vs Robin crossover with all rate budgets (delta_true + A_bad^KP), additive terms idealised [P-arith], conditional on H1 via A_bad^KP: C <= 0.082 -> all p >= 3305, first prime 3307; C <= 0.04 -> 1726/1733; C <= 8.8e-4 -> 1402/1409; C <= 4.4e-4 -> 1402/1409 |
+| BGS-TRACE-335 | proved | Line N21 Lemma C [P] + [CA-fp]: two-sided core -> true vector conversion including the second-order dPi^2 term; delta_true(G <= 15) <= 2.2102e-6 |
+| BGS-TRACE-336 | open | Line N hypothesis H1, re-scoped by N20 (open [H]): (H1-bad) bad-cluster (polymer-restricted) joint (A,B) second moment on the eps-chain, sum_{bad, shell j} \|r_A r_B\|^2 <= C 2^{j(1 - beta(0.28))} for j > J0 = 12 with C <= 0.082, plus (H1-ali) the near-collision/box constants |
