@@ -80,7 +80,7 @@ def figure(counts: Counter) -> list[str]:
         lines.append(rf'\node[anchor=west,font=\small] at ({width + 0.1:.3f},{y}) {{{counts[state]}}};')
     lines += [r'\end{tikzpicture}',
               rf'\caption{{Registered claim states ({total} claims), drawn from \texttt{{record/claims.json}}. '
-              r'``Proved'' is the registered project scope, not external refereeing.}',
+              r"``Proved'' is the registered project scope, not external refereeing.}",
               r'\label{fig:registry-status}', r'\end{figure}']
     return lines
 
@@ -108,8 +108,8 @@ def render() -> str:
         r'A registry-only entry has no body mention; its proof and evidence remain in',
         r'its authoritative source. In particular, the Lines I--N results',
         r'(BGS-TRACE-211 onwards, including the conditional Theorem R$\sharp$-mod v4,',
-        r'BGS-TRACE-299) are not yet written up in this manuscript and appear here as',
-        r'registry-only; see \path{RESULTS.md}. File line numbers are navigation, not proof certification.',
+        r'BGS-TRACE-299) are not yet written up as a chapter of this manuscript;',
+        r'see \path{RESULTS.md}. File line numbers are navigation, not proof certification.',
     ]
     out += figure(counts)
     out += [
