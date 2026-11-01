@@ -5998,7 +5998,8 @@
         "computations/verification/lineD/referee_replay/psi_check.py"
       ],
       "formalization": [
-        "formalization/Bgs/LineDCerts.lean"
+        "formalization/Bgs/LineDCerts.lean",
+        "formalization/Bgs/LineD149Props.lean"
       ],
       "manuscript": [
         "manuscript/unified_sections/band_limited_kick_bridge.tex"
@@ -6023,7 +6024,9 @@
         "computations/verification/lineD/referee_replay/psi_check.py",
         "computations/verification/lineD/referee_replay/extra.py"
       ],
-      "formalization": [],
+      "formalization": [
+        "formalization/Bgs/LineDPhaseLemma.lean"
+      ],
       "manuscript": [
         "manuscript/unified_sections/band_limited_kick_bridge.tex"
       ]
@@ -6696,7 +6699,9 @@
       ],
       "formalization": [
         "formalization/Bgs/LineBNAverage.lean",
-        "formalization/Bgs/LineBNAverageBridge.lean"
+        "formalization/Bgs/LineBNAverageBridge.lean",
+        "formalization/Bgs/LineBNAverageM1.lean",
+        "formalization/Bgs/LineBNAverageUnits.lean"
       ],
       "manuscript": [
         "manuscript/unified_sections/derandomized_fixed_kick.tex"

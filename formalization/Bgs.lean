@@ -70,6 +70,8 @@ import Bgs.LineIArith
 import Bgs.LineDDefs
 import Bgs.LineDOrbitPair
 import Bgs.LineDBridge
+import Bgs.LineDPhaseLemma
+import Bgs.LineD149Props
 import Bgs.LineDParity
 import Bgs.LineDOrbitPairFull
 import Bgs.LineJArith
@@ -87,6 +89,8 @@ import Bgs.LineDCoeffBridge
 import Bgs.LineDCoeffReality
 import Bgs.LineBNAverage
 import Bgs.LineBNAverageBridge
+import Bgs.LineBNAverageM1
+import Bgs.LineBNAverageUnits
 import Bgs.LineKFinite
 import Bgs.LineBTraceM1
 import Bgs.LineBHfib
