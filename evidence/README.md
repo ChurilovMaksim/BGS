@@ -54,3 +54,13 @@ not endorsed. The [correction record](../record/audits/spectral_diagnostics_corr
 specifies order-preserving smoothing and sensitivity controls. Corrected
 finite spacing plots still do not establish BGS. No packet here removes the
 open balanced, signed undamped or deterministic all-order obligations.
+
+## Breakthrough program (Nov 2026)
+
+[breakthrough/README.md](breakthrough/README.md) — autonomous method-search
+record for the frozen toric map: wave notes and check scripts
+(`breakthrough/methods/`), working material (`breakthrough/working/`),
+Lean drafts (`../formalization/drafts/`), program plan and day-1 report.
+Promotion here follows the rule above: useful to the research record, not
+a theorem; the claim registry is unchanged. Large census data (1.3 GB)
+stays local and is summarized in the wave notes.
