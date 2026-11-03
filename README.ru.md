@@ -392,7 +392,7 @@ python computations/maintenance/build_unified_manuscript.py --engine auto --outp
 
 [Воспроизведение](REPRODUCE_unified.md) · [Вычисления](computations/README.md) · [Границы Lean-формализации](formalization/README.md) · [Литература и приоритет](literature/README.md) · [Порядок участия](CONTRIBUTING.md) · [Рецензирование](REVIEWING.md) · [Опечатки](ERRATA.md) · [Журнал изменений](CHANGELOG.md)
 
-**Цитирование.** Цитируйте конкретный результат, где это возможно, и этот репозиторий — для корпуса и инфраструктуры проверки. Метаданные — в [CITATION.cff](CITATION.cff): Maksim Churilov, *BGS: arithmetic quantum chaos and spectral universality*, версия research-2026.10.1, https://github.com/ChurilovMaksim/BGS. Эта версия обозначает релиз research-2026.10.1, а не текущую ветку main.
+**Цитирование.** Цитируйте конкретный результат, где это возможно, и этот репозиторий — для корпуса и инфраструктуры проверки. Метаданные — в [CITATION.cff](CITATION.cff): Maksim Churilov, *BGS: arithmetic quantum chaos and spectral universality*, версия research-2026.11.1, https://github.com/ChurilovMaksim/BGS. Эта версия обозначает релиз research-2026.11.1, а не текущую ветку main.
 
 **Лицензия.** Исходный код (`computations/`, `formalization/`) распространяется по лицензии MIT ([LICENSE](LICENSE)). Научные тексты, рукопись, математическое изложение, реестры и исследовательские данные распространяются по лицензии CC BY 4.0 ([LICENSE-CC-BY-4.0.txt](LICENSE-CC-BY-4.0.txt)). Карта соответствия путей лицензиям и её история — в [LICENSE_POLICY.md](LICENSE_POLICY.md).
 
