@@ -1,5 +1,6 @@
 # BGS: a kicked quantized cat map, its arithmetic, and the open BGS frontier
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23919484.svg)](https://doi.org/10.5281/zenodo.23919484)
 [![claims](https://img.shields.io/badge/registered_claims-419-informational)](record/claim_registry.md)
 [![proved](https://img.shields.io/badge/proved-338-success)](record/claim_registry.md)
 [![conditional](https://img.shields.io/badge/conditional-21-yellow)](record/claim_registry.md)
@@ -393,7 +394,7 @@ The [consolidated research manuscript](manuscript/README.md) ([PDF](manuscript/B
 
 [Reproduction guide](REPRODUCE_unified.md) · [Computation and verification](computations/README.md) · [Formalization scope](formalization/README.md) · [Literature and priority](literature/README.md) · [Contributing](CONTRIBUTING.md) · [Reviewing](REVIEWING.md) · [Errata](ERRATA.md) · [Changelog](CHANGELOG.md)
 
-**Citation.** Cite the specific result where available, and this repository for the corpus and the verification infrastructure. The metadata are in [CITATION.cff](CITATION.cff): Maksim Churilov, *BGS: arithmetic quantum chaos and spectral universality*, version research-2026.11.1, https://github.com/ChurilovMaksim/BGS. That version names the research-2026.11.1 release, not the current main branch.
+**Citation.** Cite the specific result where available, and this repository for the corpus and the verification infrastructure. The metadata are in [CITATION.cff](CITATION.cff): Maksim Churilov, *BGS: arithmetic quantum chaos and spectral universality*, version research-2026.11.1, https://github.com/ChurilovMaksim/BGS, DOI [10.5281/zenodo.23919484](https://doi.org/10.5281/zenodo.23919484) (Zenodo archive of this release; all versions: [10.5281/zenodo.23919483](https://doi.org/10.5281/zenodo.23919483)). That version names the research-2026.11.1 release, not the current main branch.
 
 **Licence.** Source code (`computations/`, `formalization/`) is released under the MIT License ([LICENSE](LICENSE)). Scholarly texts, the manuscript, mathematical exposition, registries and research data are released under CC BY 4.0 ([LICENSE-CC-BY-4.0.txt](LICENSE-CC-BY-4.0.txt)). The per-path map and its history are in [LICENSE_POLICY.md](LICENSE_POLICY.md).
 
