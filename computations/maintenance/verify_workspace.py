@@ -60,6 +60,8 @@ def replay_artifact_args(name: str, certificate_directory: Path) -> list[str]:
     return [option, str(certificate_directory / name)] if option else []
 
 
+MOMENTUM_STDOUT='evidence/executions/20261029/momentum-phase-cue/python_stdout.json'
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -424,6 +426,11 @@ def main() -> None:
         rows.append(dependent_replay(('extremal_independent_replay',
                            [str(args.build/'extremal_resonance_replay'),str(extremal_replay)],source),
                            'extremal_resonance',extremal_replay,rows,check,args.logs))
+    if not archive_mode and not initial_status:
+        # momentum_phase_cue.py (hash-pinned in its receipt) rewrites its committed
+        # python_stdout.json; the seeded Gaussian mean varies in the last float digit
+        # across BLAS builds. Restore that one file so the worktree check stays strict.
+        subprocess.run(['git','checkout','--',MOMENTUM_STDOUT],cwd=ROOT,check=True)
     source_error=None
     try:
         source_manifest_after=validate(ROOT,expected) if archive_mode else source_manifest()
