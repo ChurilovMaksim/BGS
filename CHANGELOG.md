@@ -1,5 +1,22 @@
 # Scientific changelog
 
+## research-2026.11.1 — release preparation (no state changes)
+
+Release tag research-2026.11.1, prepared on 2026-11-03 from main at b6e0d26; it covers merged PRs #51–#80 since
+research-2026.10.1 (2026-10-26). Version metadata updated in `CITATION.cff` (with `date-released`), `.zenodo.json`
+and the citation paragraphs of `README.md` / `README.ru.md`. Summary of the period (details in the dated entries below):
+
+- Lines A–N registered (TRACE-117 through TRACE-336), including Lines E–N on the fixed-kick cat map, the reduction
+  of Conjecture R′, the polymer-gas route and Theorem R♯-mod v5 (BGS-TRACE-325, **conditional** on H0, H1, H5–H8).
+- Final editorial pass: whole-programme README (EN/RU), generated RESULTS.md, Appendix A, rebuilt
+  `manuscript/BGS_unified.pdf`.
+- Lean batches 1–5: 171 non-open claims link Lean (all new links partial), 187 modules, 2409 `theorem`/`lemma`
+  declarations; legacy `native_decide` uses reduced from 88 to 37.
+- CI: restore `python_stdout.json` of momentum-phase-cue after verification (dirty-tree fix, #80).
+
+Registry at this release: 419 claims = 338 proved / 21 conditional / 17 verification-pending / 42 open / 1 refuted.
+BGS-BGS-001 (microscopic fixed-strength BGS) **remains open**; no proof of BGS is claimed.
+
 ## 2026-11-01 — Lean batch 5: TRACE-222, 214, 213/317, 218 summable Möbius, 293 composite (no state changes)
 
 Five new modules (`LineJSectorConj`, `LineIHorocycle`, `LineIReduction`, `LineIMoebiusSummable`,
