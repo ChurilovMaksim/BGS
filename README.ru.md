@@ -1,5 +1,6 @@
 # BGS: квантованное отображение кота с толчком, его арифметика и открытый фронт гипотезы BGS
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23919484.svg)](https://doi.org/10.5281/zenodo.23919484)
 [![claims](https://img.shields.io/badge/registered_claims-419-informational)](record/claim_registry.md)
 [![proved](https://img.shields.io/badge/proved-338-success)](record/claim_registry.md)
 [![conditional](https://img.shields.io/badge/conditional-21-yellow)](record/claim_registry.md)
@@ -392,7 +393,7 @@ python computations/maintenance/build_unified_manuscript.py --engine auto --outp
 
 [Воспроизведение](REPRODUCE_unified.md) · [Вычисления](computations/README.md) · [Границы Lean-формализации](formalization/README.md) · [Литература и приоритет](literature/README.md) · [Порядок участия](CONTRIBUTING.md) · [Рецензирование](REVIEWING.md) · [Опечатки](ERRATA.md) · [Журнал изменений](CHANGELOG.md)
 
-**Цитирование.** Цитируйте конкретный результат, где это возможно, и этот репозиторий — для корпуса и инфраструктуры проверки. Метаданные — в [CITATION.cff](CITATION.cff): Maksim Churilov, *BGS: arithmetic quantum chaos and spectral universality*, версия research-2026.11.1, https://github.com/ChurilovMaksim/BGS. Эта версия обозначает релиз research-2026.11.1, а не текущую ветку main.
+**Цитирование.** Цитируйте конкретный результат, где это возможно, и этот репозиторий — для корпуса и инфраструктуры проверки. Метаданные — в [CITATION.cff](CITATION.cff): Maksim Churilov, *BGS: arithmetic quantum chaos and spectral universality*, версия research-2026.11.1, https://github.com/ChurilovMaksim/BGS, DOI [10.5281/zenodo.23919484](https://doi.org/10.5281/zenodo.23919484) (архив этого релиза в Zenodo; все версии: [10.5281/zenodo.23919483](https://doi.org/10.5281/zenodo.23919483)). Эта версия обозначает релиз research-2026.11.1, а не текущую ветку main.
 
 **Лицензия.** Исходный код (`computations/`, `formalization/`) распространяется по лицензии MIT ([LICENSE](LICENSE)). Научные тексты, рукопись, математическое изложение, реестры и исследовательские данные распространяются по лицензии CC BY 4.0 ([LICENSE-CC-BY-4.0.txt](LICENSE-CC-BY-4.0.txt)). Карта соответствия путей лицензиям и её история — в [LICENSE_POLICY.md](LICENSE_POLICY.md).
 
