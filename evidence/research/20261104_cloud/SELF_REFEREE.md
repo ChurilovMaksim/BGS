@@ -31,6 +31,14 @@ The first draft of the Prop. F disjointness said that the whole neighbourhood U_
 
 7. **H1-ali, H5, H6, H7*, H8.** Untouched. A span bound does not compare near-collisions, does not control composite h_p, and does not bound included levels below L_fl.
 
+## Continuation
+
+8. **|E| ≤ 1.** The proof uses strict inequalities at the endpoints of red. If a twist representative ever landed on both endpoints in a way the range forbids, the letter ±2 could appear. The census of 81 709 classes found none. The Fourier-carry count was recomputed by an independent BFS: 6145 closed states, unchanged.
+
+9. **The factor ≤ 1.** This is proved only inside the point-insertion model. The cycle identity behind it is N11’s closed form, marked [N] by its referee. Extending it to every interval is the extra hypothesis. A 0.1% enlargement of S_0 keeps the prime at 3067; 0.2% moves it to 3079. The note does not call 3067 unconditional.
+
+10. **The prefactor gap.** The numbers 1.53 and 2.22 are N14’s generic CP conversion, two digits, not recomputed. The conclusion that they miss C = 8.8×10^{-4} survives halving both. Using that gap as evidence that H1 is false would invert an upper bound: the certified shells sit far below the generic prefactor.
+
 ## What this note does not say
 
-H1 is open. H3 is open. Frozen R′ is open. BGS-BGS-001 is open. The conditional theorem R♯-mod v5 is still conditional. The idealised prime 3067 is a consequence of H1 at C ≤ 0.082 together with the proved length, inside the same idealisation as 3307, and it is fragile.
+H1 is open, including at C ≤ 8.8×10^{-4}. H3 is open. Frozen R′ is open. BGS-BGS-001 is open. The conditional theorem R♯-mod v5 is still conditional. The idealised prime 3067 is a sufficient threshold for the renormalised activity only inside the point-insertion model, at H1’s constant C ≤ 0.082, with the sharp span and the idealised additive budgets. It is stable at the 0.1% level and fragile at the 1% level.

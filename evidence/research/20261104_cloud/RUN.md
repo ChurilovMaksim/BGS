@@ -37,6 +37,12 @@ db740a604a9f75c6a316ec3debba5ef3f1c9b813eb2b31a7c1db2c9d7bec6fb6  numerics/span_
 2f98046d7d8cd13e2a9b22c02ab1ba7d8f5ab1df1fd1ccaca386154a3749ba53  numerics/logs/crossover_sensitivity_sharp.json
 ```
 
+## Continuation (same day)
+
+A second exact pass walked shells j ≤ 16 and recorded letters: 81 709 classes, every letter in {−1, 0, 1}. An independent BFS on |a − 2b − c| ≤ 60 inside |e| ≤ 51 returned 8377 forward, 8377 backward, and 6145 closed states.
+
+The constant c = log(1+6.234×10^{-4}) − 5.0313×10^{-6} and exp(−4c) were computed in flint at precision 200. The crossover script was rerun with the sharp S_0 scaled by 1.001 (prime 3067), 1.002 (3079), 1.005 (3083) and 1.01 (3109).
+
 ## Non-claims
 
-The run does not prove H1, H3, frozen R′, or BGS-BGS-001. It does not certify B_p > 0 at any prime. The primes 3067 and 1409 are conditional on H1 and on the idealised additive budgets. Shell 16 is not an asymptotic check.
+The run does not prove H1, H3, frozen R′, or BGS-BGS-001. It does not certify B_p > 0 at any prime. The primes 3067 and 1409 are conditional on H1 and on the idealised additive budgets. Shell 16 is the end of the span and alphabet census. The background factor is proved inside the point-insertion model only. The phase-keeping operator on 24 580 vertices was not built.

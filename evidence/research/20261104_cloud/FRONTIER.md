@@ -71,13 +71,25 @@ A phase-keeping bound on the bad-restricted joint system: A on even ε-sites, B 
 
 H1-ali, the near-collision comparison between the lattice and the main term, is a separate open half of H1. The span theorem does not touch it.
 
-Background renormalisation remains the other [P-sketch] in Prop. K. The activities that enter S_0 have to be the activities relative to the model gas. A one-percent error there moves every fragile threshold. Until that factor is proved, 3067 and 3307 are conditional arithmetic under an idealised normalisation.
+Background renormalisation is the other half of the H1-to-threshold step. Inside the point-insertion model it is the explicit factor below, and it is at most 1. Outside that model a one-percent error in S_0 still moves every fragile threshold.
+
+## Continuation: the factor, and the phase-keeping gap
+
+**[P] Digit alphabet.** The code letters satisfy E_k ∈ {−1, 0, 1}. The bound |E| ≤ 2 in N14 was one larger than the range of red allows. Both nonzero letters occur at α = 2. The census through shell 16 (81 709 classes) found no other letter. This does not shrink the 6145 Fourier-carry states. Proof: `proofs/05_digit_alphabet.md`.
+
+**[P, inside the point-insertion model] Background factor.** If the model weight on every interval is (1+Λ)^{length} exp(Δ · length) with Re Λ ≥ 6.234×10^{-4} and |Δ| ≤ δ_true, then
+
+|w̃(γ)/w(γ)| ≤ exp(−c ℓ(γ)), c = log(1+Re Λ_lo′) − δ_true > 6.181×10^{-4}.
+
+For ℓ ≥ 4 the factor is < 0.997531. Bare moduli dominate the renormalised activities, so the idealised prime **3067** computed from the bare sharp tail remains a sufficient threshold. A further 0.1% enlargement of S_0, a margin for one cut bump, keeps the prime at 3067; a 0.2% enlargement moves it to 3079. The cycle form of this model is the N11 identity, confirmed in structure and not proved. Proof: `proofs/06_background_factor.md`.
+
+**[P] The order-unit norm misses C ≤ 8.8×10^{-4}.** The generic CP prefactor 1.53×2.22 per window squares to 11.54 for the joint pair. That is 1.31×10^4 times 8.8×10^{-4}, and 141 times 0.082. Halving both input figures leaves a gap above 800 against 8.8×10^{-4}. A phase-keeping bound on the joint system has to improve this prefactor by four orders of magnitude before the strengthened constant closes. The restricted graph has 6145 × 4 = 24 580 vertices once trailing zeros are remembered. Its blocks are the joint sesquilinear operators, which are not a computation that was run, and no estimate here replaces them. H1-bad at C ≤ 8.8×10^{-4} stays open. Proof: `proofs/07_phasekeeping_gap.md`.
 
 ## Order of work that matches the dependencies
 
-1. Keep the span theorem as a finished input of Prop. K. The length ℓ(γ) ≤ ⌊j log_ε 2⌋ + 3 + g_0 is available for every bad cluster in shell j.
-2. The constant that actually moves the robust threshold is C, not the slope 2 versus log_ε 2. A proof of H1-bad at C ≤ 8.8×10^{-4} would put the idealised prime at 1409 with or without the sharp span. A proof only at C = 0.082 leaves a fragile threshold near 3100.
-3. Write the background factor as an explicit multiplier, or prove it is 1 + O(δ_true).
-4. H5–H8 are independent of this length computation. H7* is required even if 𝒫 is infinite. None of them is discharged here.
+1. The span bound and the digit alphabet are available as inputs. The length is ℓ(γ) ≤ ⌊j log_ε 2⌋ + 3 + g_0, and the letters lie in {−1, 0, 1}.
+2. Under the point-insertion model the bare sharp tail already charges an upper bound for the renormalised activity, and 3067 is a sufficient idealised threshold at C ≤ 0.082. It is stable under a 0.1% boundary enlargement and fragile under 1%.
+3. The constant C ≤ 8.8×10^{-4} is not reached by the order-unit norm. Closing it requires the phase-keeping contraction on the 24 580-vertex restricted graph, with a prefactor ≤ 8.8×10^{-4}. The finite shells show that a prefactor of that size is compatible with the core functional through j = 14.
+4. H5–H8 are independent of this computation. H7* is required even if 𝒫 is infinite. None of them is discharged here.
 
 BGS-BGS-001 remains open on every reading of this note.
