@@ -143,7 +143,7 @@ Production check (`code/production_match.py`, `logs/production_match.json`):
 - `lineN14/logs/a_enum.jsonl` (5109 classes, j ≤ 12): span and zr equal the exact census on all
   5109 classes.
 - N20 `a_cert_ext*.jsonl` (j = 13, 14; 5100 + 10225 classes): span and zr equal the exact census
-  on all 14987 rows that store them; the 338 `coded` rows all have exact zr ≥ 6.
+  on all 14987 rows that store them (15325 rows in all, j = 13, 14); the 338 `coded` rows all have exact zr ≥ 6.
 - The stored integer `word` of `a_enum.jsonl` differs from the exact word on 2182 classes, in
   each case letter-wise exact − sign(exact) (int()-truncated floats). span and zr are exact, so
   the finite bad set of Thm A (BGS-TRACE-331) is unaffected.
