@@ -1,8 +1,8 @@
 \section*{Appendix A: Claim index}
 This index is generated from \path{record/claims.json} by
 \path{computations/maintenance/render_appendix_a.py}.
-The registry contains 419 claims: 338 proved, 17 verification-pending,
-21 conditional, 42 open and 1 refuted. ``Proved'' denotes the registered project scope,
+The registry contains 421 claims: 339 proved, 17 verification-pending,
+22 conditional, 42 open and 1 refuted. ``Proved'' denotes the registered project scope,
 not independent external refereeing. The table maps each ID to its current
 mentions in the manuscript's reachable TeX inputs, excluding this index itself;
 the short form TRACE-$nnn$ used in section prose counts as a mention.
@@ -16,21 +16,21 @@ registry-only. File line numbers are navigation, not proof certification.
 \begin{tikzpicture}[x=1cm,y=0.62cm]
 \node[anchor=east,font=\small] at (-0.15,0) {proved};
 \fill[black!60] (0,-0.30) rectangle (9.000,0.30);
-\node[anchor=west,font=\small] at (9.100,0) {338};
+\node[anchor=west,font=\small] at (9.100,0) {339};
 \node[anchor=east,font=\small] at (-0.15,-1) {verification-pending};
-\fill[black!50] (0,-1.30) rectangle (0.453,-0.70);
-\node[anchor=west,font=\small] at (0.553,-1) {17};
+\fill[black!50] (0,-1.30) rectangle (0.451,-0.70);
+\node[anchor=west,font=\small] at (0.551,-1) {17};
 \node[anchor=east,font=\small] at (-0.15,-2) {conditional};
-\fill[black!40] (0,-2.30) rectangle (0.559,-1.70);
-\node[anchor=west,font=\small] at (0.659,-2) {21};
+\fill[black!40] (0,-2.30) rectangle (0.584,-1.70);
+\node[anchor=west,font=\small] at (0.684,-2) {22};
 \node[anchor=east,font=\small] at (-0.15,-3) {open};
-\fill[black!30] (0,-3.30) rectangle (1.118,-2.70);
-\node[anchor=west,font=\small] at (1.218,-3) {42};
+\fill[black!30] (0,-3.30) rectangle (1.115,-2.70);
+\node[anchor=west,font=\small] at (1.215,-3) {42};
 \node[anchor=east,font=\small] at (-0.15,-4) {refuted};
 \fill[black!20] (0,-4.30) rectangle (0.027,-3.70);
 \node[anchor=west,font=\small] at (0.127,-4) {1};
 \end{tikzpicture}
-\caption{Registered claim states (419 claims), drawn from \texttt{record/claims.json}. ``Proved'' is the registered project scope, not external refereeing.}
+\caption{Registered claim states (421 claims), drawn from \texttt{record/claims.json}. ``Proved'' is the registered project scope, not external refereeing.}
 \label{fig:registry-status}
 \end{figure}
 \begin{center}
@@ -461,5 +461,7 @@ Claim ID & State & Manuscript mentions (file:line) \\
 \texttt{BGS-TRACE-333} & conditional & \path{unified_sections/lines_I_N_gas_theorem.tex}:126 \\
 \texttt{BGS-TRACE-335} & proved & \path{unified_sections/lines_I_N_gas_theorem.tex}:70 \\
 \texttt{BGS-TRACE-336} & open & \path{unified_sections/lines_I_N_gas_theorem.tex}:8; \path{unified_sections/lines_I_N_gas_theorem.tex}:113; \path{unified_sections/ch15_conclusion.tex}:134 \\
+\texttt{BGS-TRACE-337} & proved & --- (registry only) \\
+\texttt{BGS-TRACE-338} & conditional & --- (registry only) \\
 \end{longtable}
 \end{center}

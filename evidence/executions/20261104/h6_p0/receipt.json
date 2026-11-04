@@ -1,0 +1,100 @@
+{
+ "schema": "bgs-h6-p0-integration-receipt-v1",
+ "base": "ChurilovMaksim/BGS origin/main 6440a447",
+ "branch": "h6-p0-lemmaW",
+ "prepared_on": "2026-11-04",
+ "ids": {
+  "BGS-TRACE-337": "proved",
+  "BGS-TRACE-338": "conditional"
+ },
+ "author_report": "computations/verification/h6_p0/REPORT_P4_v2.md (v1 kept as computations/verification/h6_p0/REPORT_P4_v1.md)",
+ "referee": "evidence/executions/20261104/h6_p0/referee/AUDIT.md (hostile referee audit/p4, 2026-11-04)",
+ "referee_fixes_applied": [
+  "1: e^{beta Rc} in log K (beta Rc = 10 for 8V, 8.75 for 8E)",
+  "2: A_J <= 4/3 (both signs)",
+  "3: Lemma I one-step structure [P] (TRACE-197/249/294, cert_lift.py)",
+  "4: robust-variant wording; u-normalisation of (C1) stated as assumption",
+  "5: eps_0/eps renamed eps_u",
+  "6: H1-bad [P] -> [assessment]; J0 = 12 registered"
+ ],
+ "arb_rerun": {
+  "command": "cd computations/verification/h6_p0 && python code/h6_p0.py && python code/h6_variants.py",
+  "python": "3.13.5, python-flint 0.9.0 (arb, 128-bit)",
+  "wall_seconds": 11,
+  "result": {
+   "8V_k4000_p0": 28424695,
+   "8E_k1000_p0": 3934,
+   "cover_intervals_8V": 389,
+   "cover_intervals_8E": 61,
+   "tail_ok": true,
+   "restart_on_failure": true
+  },
+  "matches_referee": true,
+  "logs": [
+   "computations/verification/h6_p0/logs/h6_p0.json",
+   "computations/verification/h6_p0/logs/h6_p0.out",
+   "computations/verification/h6_p0/logs/h6_variants.json",
+   "computations/verification/h6_p0/logs/h6_variants.out"
+  ]
+ },
+ "not_rerun": "lemmaW_trial.py (1087 s), lemmaW_full.py and r2_cert_x0.py: logs are the original P4 runs (code bytes differ only by the assertion guard and log paths)",
+ "lean": {
+  "files": [
+   "formalization/Bgs/H6LemmaW.lean"
+  ],
+  "theorems": 7,
+  "sorry": false,
+  "native_decide": false,
+  "axioms": "none",
+  "build": "evidence/executions/20261104/h6_p0/lake_build_H6LemmaW.log",
+  "scope": "lake build Bgs.H6LemmaW only (2 jobs); no full Bgs build"
+ },
+ "sha256": {
+  "computations/verification/h6_p0/REPORT_P4_v1.md": "e47e3e4199e305eca349bd1f243008a8868a8585263ca7f2dbc464305bc665f9",
+  "computations/verification/h6_p0/REPORT_P4_v2.md": "3dd6656261575c95bbab78d09e2595b57b44d36b0526cd5b00969f26ac8fbb33",
+  "computations/verification/h6_p0/code/h6_p0.py": "1f542166e5c5d65c7f3ac40ab4d76edde73615600c31be4a9cd1ef84cb356fbd",
+  "computations/verification/h6_p0/code/h6_variants.py": "7cdc757467390a7d5b68e4c4517abb5f94f6c39e1b6ba4c3e76599c4f248b609",
+  "computations/verification/h6_p0/code/lemmaW_full.py": "c0a839795cba7e62abb81a75bd8c8d5e5cef8a6b00b3ef801ad7138143ebe113",
+  "computations/verification/h6_p0/code/lemmaW_trial.py": "4fd58a9687d583c88bc1ea5c0e378a1e983439169193d9cd8082983b8d572b97",
+  "computations/verification/h6_p0/code/r2_cert_x0.py": "306b36ca11cfcd6de8080f65df9752e99ba2447bb052a85ecf4533f6f19541cf",
+  "computations/verification/h6_p0/logs/h6_p0.json": "bfab3280758845b25b2951e03f39b11c7b47e0246d15675364c620b5a39ef2bb",
+  "computations/verification/h6_p0/logs/h6_p0.out": "c9feeaf6a00e7fe74dd277e65e348eb4c6774722996b6fece5d01bca59787a0d",
+  "computations/verification/h6_p0/logs/h6_variants.json": "42917213d351860934388dc338b33f721dd672bf49401de44cb093ff2200010e",
+  "computations/verification/h6_p0/logs/h6_variants.out": "178b02c6c5d147d4333d13b6b959e97f3a2ea4ec947d59ed0b0c5365bcdff928",
+  "computations/verification/h6_p0/logs/lemmaW_full.out": "3c3f51247e4d48fb8a17d26a9e1c688a7a8d52502b9a18de2a6c6d1c7bd53892",
+  "computations/verification/h6_p0/logs/lemmaW_full_partial.out": "3c3f51247e4d48fb8a17d26a9e1c688a7a8d52502b9a18de2a6c6d1c7bd53892",
+  "computations/verification/h6_p0/logs/lemmaW_trial.json": "8be0c26f4415c38a76acc3a62dffd429bdb02b65bc3c485f1232f822cf21f9c9",
+  "computations/verification/h6_p0/logs/lemmaW_trial.out": "564912d008159c55659b847e33a1086ce0f48f59e8f0ffafaefa74b7854b1be0",
+  "computations/verification/h6_p0/logs/r2_cert_x0.jsonl": "62e9d4071f987ba1bfe290905e7f4ac2cffa2827f2c3e5c3b86c0ea7a45ea4b7",
+  "computations/verification/h6_p0/logs/r2_jobs.txt": "45995f04bea6f4fde5713630553e3a9de79f0749e615e423647063e3de21dfe7",
+  "computations/verification/h6_p0/logs/r2_run.out": "62e9d4071f987ba1bfe290905e7f4ac2cffa2827f2c3e5c3b86c0ea7a45ea4b7",
+  "computations/verification/h6_p0/logs/v1_h6_p0.json": "c48bae3a643eec7eecfeb57ec4ad628787a34edc511726ab05958b0a11ac6261",
+  "computations/verification/h6_p0/logs/v1_h6_p0.out": "d1ab8f6a7483a96adf198eae93b4b4cca8113314e3c1634581cf0b32b6eb9fc4",
+  "computations/verification/h6_p0/logs/v1_h6_variants.json": "9aaeeaf330900da852fa1e4d82116cec39fbd44fffedf9aa90cefdffd8a0ee19",
+  "formalization/Bgs/H6LemmaW.lean": "d6de960045fef1706364d59b597c309ae1661cc0e71fbf359c0486721aad3c51",
+  "evidence/executions/20261104/h6_p0/add_claims.py": "c14cffe95833d1b7709947bc4968e2dd7bdae378f1594d7cf8a08c01d039e647",
+  "evidence/executions/20261104/h6_p0/checks/frozen_packets.log": "b5e8d21fd1033df4c1d4e64178984da980ef3ad5d8c54699ba1545610ac00631",
+  "evidence/executions/20261104/h6_p0/checks/render_appendix_a.log": "67c49db1b3f2254b3cb97da37f5e299052b1f5f076ecb3b12c72ec591ea63775",
+  "evidence/executions/20261104/h6_p0/checks/render_bibliography.log": "9b30c3d10be50db0db0ebb6d4cce0dea3a5a15fb43f581110eae61bc2694ff9c",
+  "evidence/executions/20261104/h6_p0/checks/render_claim_registry.log": "89bf62496f95e640596668e6b208abe14eb7d7d84c42a2c81ec530e4853af182",
+  "evidence/executions/20261104/h6_p0/checks/render_errata.log": "bf0f65f17f6b4dad2c674a8edfea476bf69176d90b33a73b2ae08150786bbc29",
+  "evidence/executions/20261104/h6_p0/checks/render_research_views.log": "7f3ae3e2134901a90244ee51a50c4de505a06ac97f4b7aa3067fb836c9fc4ea8",
+  "evidence/executions/20261104/h6_p0/checks/render_results.log": "0dc6fd162129b3a71f27bfc9d5aeb1de6643c1044d9e005909d2c561c6d783e2",
+  "evidence/executions/20261104/h6_p0/checks/render_spectral_research.log": "d13e7dae3964287be58d41f659de99e9af26c94c2b7dc88a9a78b25e9cd3bd5b",
+  "evidence/executions/20261104/h6_p0/checks/render_status.log": "a6aee81b1ec0bdb684c3a74dca95581254698cfa3c52a696e1c231523cea78c6",
+  "evidence/executions/20261104/h6_p0/checks/repository_audit.log": "b390f8a24c64813e2b3c492c38f0e0645fe998a573446495943f10791ae2c8b1",
+  "evidence/executions/20261104/h6_p0/checks/scientific_registry_audit.log": "fbf300ee7033aac482fa0f2cc529aaf771e7536a62cf53c39478b6b4493b0963",
+  "evidence/executions/20261104/h6_p0/checks/unittests.log": "2666dc6a7258a304fcedd5056f4b70f77ba53660ffe2eb5cb629b7649559c0bc",
+  "evidence/executions/20261104/h6_p0/edit_epochs.py": "63c26f40cfdee588eb052c801eac9dcba7cb0e03749795824917c09bbdda9648",
+  "evidence/executions/20261104/h6_p0/edit_inventory.py": "351b76d97e245a9fae0d9331a9684408602fcdbf022809ef42b596a11b34750c",
+  "evidence/executions/20261104/h6_p0/lake_build_H6LemmaW.log": "0ae44fe7d69dc530f4feb5a321e49073eb8a6b779e5a0c8d6a7717af11c2b8e7",
+  "evidence/executions/20261104/h6_p0/mk_receipt.py": "6792342dac271e0d48a0518b6790b9f99f4e24626e623bbd7d924a1c1a972b89",
+  "evidence/executions/20261104/h6_p0/referee/AUDIT.md": "bdab160c497426441335fa2d165adaeffedd8f1f74e8e477d108a6997faa41b7",
+  "evidence/executions/20261104/h6_p0/referee/code/indep.out": "9813effab73ad460484a328f8ed1002193da1337557142fa2f84a39a9ec5bb6c",
+  "evidence/executions/20261104/h6_p0/referee/code/indep.py": "50b6b9bb36074248f5117f262c063174751ffbe64332f9b5082133181b1a29c1",
+  "evidence/executions/20261104/h6_p0/referee/code/indep_shift.py": "78b1e768b732ff778a3b439775752dc3c82d5ca007bfce083934ca1229529cb6",
+  "evidence/executions/20261104/h6_p0/referee/code/lw.py": "0b02e50bfbb1b9cb1024d2c85b13002cdb6032c3f03e5ff6128e8ff383d2cdd6",
+  "evidence/executions/20261104/h6_p0/referee/code/pt.py": "ea1ae6e3bb7cb80ef46f005e7e949d18178322be1cc4918628dcecd1558d9f40",
+  "evidence/executions/20261104/h6_p0/referee/code/shift.py": "7817a1de9b2b02cfe794284483b71edff35cf191ba3f7c14889c5df2f070081c"
+ }
+}
