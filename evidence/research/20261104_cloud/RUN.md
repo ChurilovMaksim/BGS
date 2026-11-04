@@ -63,6 +63,29 @@ The norm-majorant blocks were not the sesquilinear factors. Those were built sep
 
 `numerics/phase_carry.py` rebuilds the sector-4 blocks in binary64 and runs the N14/N15 carry map. Boxes E = 0, 1, 2, 4, 6, 8 (eight steps) and E = 10 (six steps). E = 1 and E = 4 match `g_carry_E1.json` and `g_carry_E4.json` to the printed digits. Peak resident memory at E = 10 was 4.4 GB. Logs: `numerics/logs/phase_carry_E*.json` and `phase_carry_summary.json`. Tag [N].
 
+## Green tail and disk orbit
+
+```text
+python3 green_tail.py
+python3 phase_carry_ball.py 0 8
+python3 phase_carry_ball.py 1 8
+python3 phase_carry_ball.py range 2 14
+```
+
+`green_tail.py` uses flint precision 200. `phase_carry_ball.py` builds the blocks at flint precision 80, stores complex128 midpoints and float64 radii, and propagates entrywise disks. The product bound uses γ = 9.77×10^{-14} and a radius-product margin θ = 10^{-8}. Logs: `green_tail.json`, `phase_carry_ball_E0.json` through `phase_carry_ball_E3.json`. The range process continues past E = 3; those later logs are not part of the hash list until they have been written and checked. Tag of the finished disk prefixes: [CA]. Tag of the cutoff: [P].
+
+```text
+1708ed983202a6ad27bf05e858be9dfbe07cbf1141871974eed1d2a08f3936db  numerics/green_tail.py
+59b80c44bbd43a59c7bc37c5eccbab3e966db675d2498520b9aeb6f38689e49d  numerics/phase_carry_ball.py
+a25d4bcf46aa460ac174dc0967b5db5dcc280e569620f996a617f16323047de0  numerics/logs/green_tail.json
+be1ab3f166daf1d3bb6412e560a8f91b07aed2d576c7cf3ce7cbff5a068a3d71  numerics/logs/phase_carry_ball_E0.json
+bea307c1314fc78c196411c38cac4a5403f12ce3205f2f66a4829fa96ca649fd  numerics/logs/phase_carry_ball_E1.json
+2396a67845858edc31947dc1ec92305a0e3159e0a32673efe8ce6ac09e9c13b4  numerics/logs/phase_carry_ball_E2.json
+a4a044006ad84e2befc9e9ad3e2f483bb491c6a9e0cd52f06ad6b37f245198f4  numerics/logs/phase_carry_ball_E3.json
+3b9e0c8c854400c521d70f843a41f1d14dbf10fa9d3364eb79adba7922efc3ff  proofs/10_green_tail.md
+b54fbe45e156438d8ec8b717ae733d1d19c83acc6189c456697270f09ff25178  proofs/11_ball_orbit.md
+```
+
 ```text
 e079cb4fc94b3a1d44ce6093b68ab4a4b3765d26b48560b55c30666b1b8d608f  numerics/transfer_24580.py
 ca7967187136fc3ba8890127c9fe98e083ff0fc5b9f25ef722f92a55732e2292  numerics/logs/transfer_24580.json
