@@ -1,23 +1,23 @@
 # BGS programme: what was achieved
 
-*Generated from [`record/claims.json`](record/claims.json) (registry updated 2026-11-01) and [`record/results_spec.json`](record/results_spec.json) by `computations/maintenance/render_results.py`. Do not edit by hand. This page is a summary for navigation. The registry decides every status; see [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md).*
+*Generated from [`record/claims.json`](record/claims.json) (registry updated 2026-11-04) and [`record/results_spec.json`](record/results_spec.json) by `computations/maintenance/render_results.py`. Do not edit by hand. This page is a summary for navigation. The registry decides every status; see [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md).*
 
 ## In one paragraph
 
-This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified quantized, kicked cat map on the torus. **The BGS limit for this map is not proved.** Fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. Around that target, the programme registers 419 precisely scoped claims. 338 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). The work ran in seven phases from September to November 2026: Cayley arithmetic, Pell return laws, resonance cohomology and locality (Phase I); the structure of the fixed map, the exact trace-to-statistics bridge and noisy Dyson comparisons (Phase II); phase channels, clock laws, collision laws and obstructions (Phase III); uniform power-trace bounds for the original kick family (Phase IV); arithmetic Abel spikes and exact random-phase form factors (Phase V); the fixed diagonal kick and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179, Phase VI, Lines B–H); and the corrected mean law R′ (BGS-TRACE-206, Phase VII, Lines I–N), which remains **open and is not refuted**. The end point of Phase VII, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.
+This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified quantized, kicked cat map on the torus. **The BGS limit for this map is not proved.** Fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. Around that target, the programme registers 424 precisely scoped claims. 341 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). The work ran in seven phases from September to November 2026: Cayley arithmetic, Pell return laws, resonance cohomology and locality (Phase I); the structure of the fixed map, the exact trace-to-statistics bridge and noisy Dyson comparisons (Phase II); phase channels, clock laws, collision laws and obstructions (Phase III); uniform power-trace bounds for the original kick family (Phase IV); arithmetic Abel spikes and exact random-phase form factors (Phase V); the fixed diagonal kick and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179, Phase VI, Lines B–H); and the corrected mean law R′ (BGS-TRACE-206, Phase VII, Lines I–N), which remains **open and is not refuted**. The end point of Phase VII, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.
 
 ## Status at a glance
 
 | Registered state | Claims | Meaning |
 |---|---:|---|
-| proved | 338 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
+| proved | 341 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
 | verification-pending | 17 | Argument or computation exists; an independent check is outstanding |
-| conditional | 21 | Proved implication from stated hypotheses that are themselves open |
+| conditional | 23 | Proved implication from stated hypotheses that are themselves open |
 | open | 42 | Conjecture, hypothesis or programme obligation without a proof |
 | refuted | 1 | Shown false as stated |
-| **total** | **419** | |
+| **total** | **424** | |
 
-171 non-open claims link Lean 4 files, out of 190 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
+173 non-open claims link Lean 4 files, out of 191 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
 ## Headline results
 

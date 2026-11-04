@@ -7,7 +7,7 @@
 [![open](https://img.shields.io/badge/open-42-orange)](mathematics/open_questions.md)
 [![pending](https://img.shields.io/badge/verification--pending-17-lightgrey)](record/claim_registry.md)
 [![refuted](https://img.shields.io/badge/refuted-1-critical)](record/claim_registry.md)
-[![Lean 4](https://img.shields.io/badge/Lean_4-190_modules,_local_build_OK-blueviolet)](formalization/README.md)
+[![Lean 4](https://img.shields.io/badge/Lean_4-191_modules,_local_build_OK-blueviolet)](formalization/README.md)
 [![PDF](https://img.shields.io/badge/manuscript-PDF%2C%20381%20pages-blue)](manuscript/BGS_unified.pdf)
 [![licence](https://img.shields.io/badge/licence-MIT_+_CC_BY_4.0-lightgrey)](LICENSE_POLICY.md)
 
@@ -41,7 +41,7 @@
 | refuted | 1 | Опровергнуто в исходной формулировке (гипотеза R, BGS-TRACE-179) |
 | **всего** | **419** | |
 
-Утверждения распределены по всей программе. Фазы I–V (сентябрь — 29 октября 2026 года) содержат 226 утверждений, из них 197 доказаны. Линии B–N (29 октября — 1 ноября) содержат 193 утверждения, из них 141 доказано. Разбивка — в [таблице фаз](#история-исследования-по-фазам). 171 неоткрытое утверждение ссылается на файлы Lean 4 из 190 модулей в `formalization/Bgs`. Lean сертифицирует конечные или арифметические утверждения, названные в границе каждого утверждения, но не полные аналитические рассуждения.
+Утверждения распределены по всей программе. Фазы I–V (сентябрь — 29 октября 2026 года) содержат 226 утверждений, из них 197 доказаны. Линии B–N (29 октября — 1 ноября) содержат 193 утверждения, из них 141 доказано. Разбивка — в [таблице фаз](#история-исследования-по-фазам). 173 неоткрытых утверждения ссылаются на файлы Lean 4 из 191 модуля в `formalization/Bgs`. Lean сертифицирует конечные или арифметические утверждения, названные в границе каждого утверждения, но не полные аналитические рассуждения.
 
 ## Задача и модель
 
@@ -280,7 +280,7 @@ $$\int\|F''T^{-1/2}\|_F^2\,d\mu\le\frac43\int\mathrm{Tr}T^3\,d\mu-2\int\mathrm{T
 
 Условная теорема ровно настолько сильна, насколько силён её самый слабый открытый вход. Заменённые значения остаются в разделах опечаток черновиков и в [ERRATA.md](ERRATA.md) (65 записей) и не цитируются.
 
-**Lean 4.** [`formalization/`](formalization/README.md) содержит 190 модулей в `formalization/Bgs` (2426 объявлений `theorem`/`lemma`, подсчёт grep), закреплённых за `leanprover/lean4:v4.33.1` и Mathlib через `lake-manifest.json`. Lean проверяет конечные и арифметические ядра, названные в границе каждого утверждения, но не аналитические рассуждения. Последняя полная локальная сборка завершилась «Build completed successfully (8897 jobs)» ([журнал](evidence/executions/20261104/lean_batch6b/lake_build_Bgs.log)). `sorry` в активном графе не допускается. **Унаследованный `native_decide`:** 37 использований в 8 старых модулях доверяют компилятору сверх аксиом ядра; границы утверждений это раскрывают, модули линий B–N его не используют.
+**Lean 4.** [`formalization/`](formalization/README.md) содержит 191 модуль в `formalization/Bgs` (2444 объявления `theorem`/`lemma`, подсчёт grep), закреплённых за `leanprover/lean4:v4.33.1` и Mathlib через `lake-manifest.json`. Lean проверяет конечные и арифметические ядра, названные в границе каждого утверждения, но не аналитические рассуждения. Последняя полная локальная сборка завершилась «Build completed successfully (8898 jobs)» ([журнал](evidence/executions/20261104/span_theorem/lake_build_Bgs_after_merge.log)). `sorry` в активном графе не допускается. **Унаследованный `native_decide`:** 37 использований в 8 старых модулях доверяют компилятору сверх аксиом ядра; границы утверждений это раскрывают, модули линий B–N его не используют.
 
 **Рецензенты.** Результаты фаз II–III имеют датированные внутренние проверки (воспроизведения Wave2 и Wave3, контрольная точка 7 октября, независимые реконструкции). Каждая линия начиная с E прошла независимую внутреннюю рецензию: 24 папки `referee/` в [`computations/verification/`](computations/verification/lineN16/referee/REPORT.md) и итоговые рецензенты линии N lineN20, lineN21, lineN21b и lineN22 в [`evidence/executions/20261101/lineNgas/`](evidence/executions/20261101/lineNgas/v5_integration/README.md). Всё это не внешнее рецензирование.
 
