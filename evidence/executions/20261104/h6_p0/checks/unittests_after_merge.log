@@ -1,51 +1,6 @@
-..E.......s...............................................................................................................................................................................................................................................................
-======================================================================
-ERROR: test_all_optimized_entries_and_imports_fail_before_side_effects (test_assertion_entry_policy.AssertionEntryPolicyTests.test_all_optimized_entries_and_imports_fail_before_side_effects)
+..........s...............................................................................................................................................................................................................................................................
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/workspace/audit/BGS/computations/maintenance/tests/test_assertion_entry_policy.py", line 125, in test_all_optimized_entries_and_imports_fail_before_side_effects
-    for job, result, files in pool.map(check, jobs):
-                              ~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 619, in result_iterator
-    yield _result_or_cancel(fs.pop())
-          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
-  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 317, in _result_or_cancel
-    return fut.result(timeout)
-           ~~~~~~~~~~^^^^^^^^^
-  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 456, in result
-    return self.__get_result()
-           ~~~~~~~~~~~~~~~~~^^
-  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
-    result = self.fn(*self.args, **self.kwargs)
-  File "/workspace/audit/BGS/computations/maintenance/tests/test_assertion_entry_policy.py", line 121, in check
-    result = run(ROOT/path, mode, directory, imported=imported,
-                 args=('--output', output))
-  File "/workspace/audit/BGS/computations/maintenance/tests/test_assertion_entry_policy.py", line 33, in run
-    return subprocess.run(cmd, cwd=directory, env=env, text=True,
-           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                          capture_output=True, timeout=30)
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.13/subprocess.py", line 556, in run
-    stdout, stderr = process.communicate(input, timeout=timeout)
-                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.13/subprocess.py", line 1222, in communicate
-    stdout, stderr = self._communicate(input, endtime, timeout)
-                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.13/subprocess.py", line 2129, in _communicate
-    self._check_timeout(endtime, orig_timeout, stdout, stderr)
-    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.13/subprocess.py", line 1269, in _check_timeout
-    raise TimeoutExpired(
-    ...<2 lines>...
-            stderr=b''.join(stderr_seq) if stderr_seq else None)
-subprocess.TimeoutExpired: Command '['/workspace/lineNgas/venv/bin/python', '-B', '-c', 'import runpy,sys; runpy.run_path(sys.argv[1], run_name="verification_import")', '/workspace/audit/BGS/computations/verification/heisenberg_note_audit.py']' timed out after 30 seconds
+Ran 266 tests in 180.244s
 
-----------------------------------------------------------------------
-Ran 266 tests in 237.285s
-
-FAILED (errors=1, skipped=1)
-EXIT 1
-
-Rerun of test_assertion_entry_policy alone (the error above is a 30 s subprocess timeout at box load average ~16): Ran 8 tests, OK
+OK (skipped=1)
+EXIT 0

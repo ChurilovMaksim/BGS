@@ -48,7 +48,7 @@
   "axioms": "none",
   "build": "evidence/executions/20261104/h6_p0/lake_build_H6LemmaW.log",
   "scope": "lake build Bgs.H6LemmaW only (2 jobs); no full Bgs build",
-  "full_build_after_merge": "lake build (full Bgs) after merging origin/main d4c9a360: Build completed successfully (8896 jobs), evidence/executions/20261104/h6_p0/lake_build_Bgs_after_merge.log"
+  "full_build_after_merge": "lake build (full Bgs) after merging origin/main 3dd167e1: Build completed successfully (8898 jobs), evidence/executions/20261104/h6_p0/lake_build_Bgs_after_merge.log"
  },
  "sha256": {
   "computations/verification/h6_p0/REPORT_P4_v1.md": "e47e3e4199e305eca349bd1f243008a8868a8585263ca7f2dbc464305bc665f9",
@@ -97,9 +97,9 @@
   "evidence/executions/20261104/h6_p0/referee/code/lw.py": "0b02e50bfbb1b9cb1024d2c85b13002cdb6032c3f03e5ff6128e8ff383d2cdd6",
   "evidence/executions/20261104/h6_p0/referee/code/pt.py": "ea1ae6e3bb7cb80ef46f005e7e949d18178322be1cc4918628dcecd1558d9f40",
   "evidence/executions/20261104/h6_p0/referee/code/shift.py": "7817a1de9b2b02cfe794284483b71edff35cf191ba3f7c14889c5df2f070081c",
-  "evidence/executions/20261104/h6_p0/lake_build_Bgs_after_merge.log": "beeed323a5f02e30d3ab6ade2c1f63d81a20c0f14b37daaa4df90a88e5905121",
+  "evidence/executions/20261104/h6_p0/lake_build_Bgs_after_merge.log": "c03b579938993aa84a6d649d94cb66830b2ebba59bfc298f49405b92b94b2145",
   "evidence/executions/20261104/h6_p0/checks/checks_after_merge.log": "096fec4b70866ef0be9bd56f7d9e446a70b67f72443cd55d278285b10c30c4d1",
-  "evidence/executions/20261104/h6_p0/checks/unittests_after_merge.log": "e02bcb451839baa20c8c0cc8b76baaecb3c5c0ceeb7a819a698ce92cb4088592",
+  "evidence/executions/20261104/h6_p0/checks/unittests_after_merge.log": "d5f5f98a8561c6f966b5236c3c9b0a94987b37e6de0870772bf11fd0c5b9747d",
   "evidence/executions/20261104/h6_p0/mk_cache_h6p0.py": "373767eef0feb89585eef48dd52e0f41f37a50050918dead80a9993d93ef3b65"
  },
  "renumbered": "BGS-TRACE-337 -> BGS-TRACE-342, BGS-TRACE-338 -> BGS-TRACE-343 (4 Nov 2026), ID collision with PR #88 (span theorem, BGS-TRACE-337..341)",

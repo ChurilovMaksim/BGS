@@ -17,7 +17,7 @@ This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one
 | refuted | 1 | Shown false as stated |
 | **total** | **421** | |
 
-172 non-open claims link Lean 4 files, out of 189 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
+172 non-open claims link Lean 4 files, out of 191 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
 ## Headline results
 

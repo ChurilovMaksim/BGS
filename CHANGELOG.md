@@ -8,6 +8,15 @@ check `formalization/Bgs/H6LemmaW.lean`. BGS-TRACE-343: explicit H6 / Theorem C�
 8E p0 = 3,934), conditional. These ids were first registered as BGS-TRACE-337/338 on this branch and renumbered before
 merge, because PR #88 registers BGS-TRACE-337..341 for the span theorem. No existing claim state changed.
 
+## 2026-11-04 — Lean batch 6b: TRACE-214 and TRACE-218 for summable kicks (no state changes)
+
+Two new modules (`LineIRegroupSummable`, `LineIHorocycleSummable`; 10 theorems, no `sorry`, no `native_decide`, axioms
+within {propext, Classical.choice, Quot.sound}). BGS-TRACE-218: regrouping of absolutely convergent pair series into
+Σ_j C_Z(jq), so both identities (aliasing and Möbius in C_Z form) hold for every kick with Σ|Φ̂| < ∞. BGS-TRACE-214:
+identities (a) and (b) of Lemma I5′ for every kick with Σ|Φ̂| < ∞. Both rows now state full coverage of the identities in
+`formalization_scope` (remarks and heuristic assessment excluded); BGS-TRACE-222 unchanged. No boundary or state changed.
+Combined with batch 6 (merged from `main`): 190 modules, 2426 `theorem`/`lemma` declarations; `lake build Bgs` 8897 jobs. Receipt: [lean_batch6b](evidence/executions/20261104/lean_batch6b/README.md).
+
 ## 2026-11-04 — Lean batch 6: TRACE-213 disjointness (no state changes)
 
 New module `formalization/Bgs/LineI213Disjoint.lean` (7 `theorem`/`lemma` declarations, no `sorry`, no `native_decide`,
