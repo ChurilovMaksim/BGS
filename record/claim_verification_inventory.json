@@ -63,7 +63,8 @@
   "1 November 2026 (Lean batch 2, evidence/executions/20261101/lean_batch2/README.md): Lean links and lean_formalization tags added to BGS-TRACE-211, TRACE-218, TRACE-229, RES-023, and the twist corollary file appended to BGS-TRACE-297; every link is partial (see formalization_scope in claims.json) and certifies only the statement named there. No state changed.",
   "1 November 2026 (Lean batch 3, evidence/executions/20261101/lean_batch3/README.md): Lean links and lean_formalization tags added to BGS-TRACE-259, TRACE-267, TRACE-216, TRACE-143, FM-026, TRACE-178, and further Lean files appended to BGS-TRACE-211, TRACE-218, TRACE-229; links are partial except where formalization_scope says otherwise (BGS-FM-026: scope in the receipt). Dated Lean notes appended to the boundaries of BGS-TRACE-143 and TRACE-216. No state changed.",
   "1 November 2026 (Lean batch 4, evidence/executions/20261101/lean_batch4/README.md): Lean links and lean_formalization tags added to BGS-TRACE-204, TRACE-293, TRACE-254, TRACE-255, TRACE-273, and further Lean files appended to BGS-TRACE-267, TRACE-259, TRACE-218; all links are partial as stated in formalization_scope. No state changed.",
-  "1 November 2026 (Lean batch 5, evidence/executions/20261101/lean_batch5/README.md): Lean links and lean_formalization tags added to BGS-TRACE-222, TRACE-214, TRACE-213, TRACE-317, and further Lean files appended to BGS-TRACE-218 and TRACE-293; all links are partial as stated in formalization_scope. No state changed."
+  "1 November 2026 (Lean batch 5, evidence/executions/20261101/lean_batch5/README.md): Lean links and lean_formalization tags added to BGS-TRACE-222, TRACE-214, TRACE-213, TRACE-317, and further Lean files appended to BGS-TRACE-218 and TRACE-293; all links are partial as stated in formalization_scope. No state changed.",
+  "4 November 2026 (Lean batch 6, evidence/executions/20261104/lean_batch6/README.md): Lean file LineI213Disjoint appended to BGS-TRACE-213 (disjointness of nu_rho and M_d(rho) from the congruence definition); the link stays partial as stated in formalization_scope. No state changed."
  ],
  "claims": [
   {
@@ -11186,19 +11187,21 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 2,
+    "evidence": 3,
     "verifiers": 1,
-    "formalization": 1
+    "formalization": 2
    },
    "evidence": [
     "evidence/executions/20261031/lineI/receipt.json",
-    "evidence/executions/20261101/lean_batch5/README.md"
+    "evidence/executions/20261101/lean_batch5/README.md",
+    "evidence/executions/20261104/lean_batch6/README.md"
    ],
    "verifiers": [
     "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
    ],
    "formalization": [
-    "formalization/Bgs/LineIReduction.lean"
+    "formalization/Bgs/LineIReduction.lean",
+    "formalization/Bgs/LineI213Disjoint.lean"
    ],
    "ledger_status": "ELEMENTARY PROOF (EXACT DECOMPOSITION; QUANTIFIERS FIXED IN REFEREE ROUND B5, DF1) + FLOAT CHECK (bookkeeping identity, frozen definition, random weights, m = 5, 7, 9, <= 4.4e-16) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
    "boundary": "Frozen definition of BGS-TRACE-206 (k1, eta = 2, odd m >= 5, any set of included levels): the sets {nu_rho} and M_d(rho) are pairwise disjoint and W'_m = phi^-1 sum_{nu unit, nu not resonant} (|Z_nu|^2 - RMT_m) + phi^-1 sum_{rho, d included} Dev_d(rho), Dev_d(rho) = sum_{nu in M_d(rho)} (|Z_nu|^2 - |Z_rho|^2/d^2) (exact identity). Splitting the non-resonant units by the height y of the reduced representative of z_nu = (nu+i)/2h at ONE function Y(m) -> infinity: if (E'') the part with y <= Y(m) (uniformly on the growing compacta K_m, not merely each fixed compact), (T'') the part with y > Y(m) and (D) the dilation remainder phi^-1 sum Dev are each o(m), then R' (W'_m = o(m)) holds. Alternative sufficient (not equivalent) hypothesis: (T'') for every Y(m) -> infinity and (E'') for each fixed Y, with a diagonal choice of Y(m). Sums over units, normalised by 1/phi(2h). None of (E''), (T''), (D) is proved; for d = 7 only the square part of (D) is controlled, for rho = (+-2,8) only; the (+-2,16) level-7 members are not controlled (BGS-TRACE-215), and the operator-radius route to the cross part fails (BGS-TRACE-217). A reduction, not progress on the truth of R'.",
