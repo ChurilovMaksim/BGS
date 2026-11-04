@@ -57,7 +57,11 @@ python3 transfer_24580.py
 
 Python 3.12.3, numpy 1.26.4, scipy 1.18.1, python-flint 0.9.0, flint precision 128. Runtime about 110 s. The script rebuilds the 6145 closed carry states, forms the 24 580-vertex graph, and certifies Collatz–Wielandt bounds. A separate Kahn pass on the letters u ∈ {−1, 0, +1} eliminated all 24 580 vertices (`logs/dag_u01.json`). A strictly positive perturbation certifies ρ ≤ 0.25911138182 at uniform off-diagonal weight 0.003 (`logs/transfer_upper_0.003.json`).
 
-The sesquilinear blocks were not formed. The letter weights are the N14 float table. The certified radii belong to that norm majorant.
+The norm-majorant blocks were not the sesquilinear factors. Those were built separately, below.
+
+## Phase-keeping carry boxes
+
+`numerics/phase_carry.py` rebuilds the sector-4 blocks in binary64 and runs the N14/N15 carry map. Boxes E = 0, 1, 2, 4, 6, 8 (eight steps) and E = 10 (six steps). E = 1 and E = 4 match `g_carry_E1.json` and `g_carry_E4.json` to the printed digits. Peak resident memory at E = 10 was 4.4 GB. Logs: `numerics/logs/phase_carry_E*.json` and `phase_carry_summary.json`. Tag [N].
 
 ```text
 e079cb4fc94b3a1d44ce6093b68ab4a4b3765d26b48560b55c30666b1b8d608f  numerics/transfer_24580.py

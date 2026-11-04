@@ -41,6 +41,8 @@ The first draft of the Prop. F disjointness said that the whole neighbourhood U_
 
 11. **The 24 580-vertex radius.** The certified numbers are radii of the norm majorant, whose edge weights are the N14 float table. Dividing that table by 10 still leaves ρ ≥ 57.29. Letters |u| > 24 were given weight 0, which can only lower ρ. The upper endpoint of a Rayleigh quotient on a vector that vanishes somewhere is not an upper bound on ρ; only the Collatz lower bounds, and one strictly positive upper bound at uniform weight 0.003, are used as [CA]. The sesquilinear operator was not built. N15’s phased runs at carry box E ≤ 4 had rate 0.27255, so phase cancellation can remove a large norm-majorant radius. This computation does not say that cancellation fails at 24 580 vertices.
 
+12. **Phased boxes.** The blocks are a binary64 transcription of the Galerkin formula. Faithfulness is the digit-for-digit match with the published E = 1 and E = 4 rates, not an interval enclosure. E = 10 was stopped at six steps; its rate had not finished locking, though it was within 6×10^{-6} of 0.272551. The (0,0) share is still only a proxy for the shell prefactor. A low-rank truncation was not used: the image of ΦΦ* is already high rank. The acyclic letters do not remove the heavy-letter blocks, and those blocks are what was iterated.
+
 ## What this note does not say
 
 H1 is open, including at C ≤ 8.8×10^{-4}. H3 is open. Frozen R′ is open. BGS-BGS-001 is open. The conditional theorem R♯-mod v5 is still conditional. The idealised prime 3067 is a sufficient threshold for the renormalised activity only inside the point-insertion model, at H1’s constant C ≤ 0.082, with the sharp span and the idealised additive budgets. It is stable at the 0.1% level and fragile at the 1% level.

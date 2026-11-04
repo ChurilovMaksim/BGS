@@ -85,7 +85,9 @@ For ℓ ≥ 4 the factor is < 0.997531. Bare moduli dominate the renormalised ac
 
 **[P] The order-unit norm misses C ≤ 8.8×10^{-4}.** The generic CP prefactor 1.53×2.22 per window squares to 11.54 for the joint pair. That is 1.31×10^4 times 8.8×10^{-4}. Proof: `proofs/07_phasekeeping_gap.md`.
 
-**[CA], weights [N]. The 24 580-vertex norm majorant.** The graph was built exactly: 6145 carry pairs times a trailing-zero count in {0,1,2,3}, 496 265 edges after the zero-run ban. Edge u is weighted by the N14 letterwise CP table. Collatz–Wielandt in flint balls gives ρ ≥ 571.90, and ρ ≥ 57.29 after every off-diagonal weight is divided by 10. The best prefactor at rate 0.28 is infinite. A uniform off-diagonal weight of 0.003 still has ρ ≤ 0.25912; weight 0.0034 already has ρ ≥ 0.280005. The subgraph of letters u ∈ {−1,0,+1} is a directed acyclic graph, so those letters alone do not produce the excess. This obstructs the norm majorant. It does not obstruct a sesquilinear iteration: the 495×495 blocks were not stored (about 92 GB). H1-bad at C ≤ 8.8×10^{-4} stays open. Proof: `proofs/08_transfer_24580.md`.
+**[CA], weights [N]. The 24 580-vertex norm majorant.** Collatz–Wielandt gives ρ ≥ 571.90 under the N14 letter weights, so the prefactor at rate 0.28 is infinite. Proof: `proofs/08_transfer_24580.md`.
+
+**[N] Phase-keeping boxes through E = 10.** The sesquilinear step was rebuilt and iterated with the blocks kept, up to 441 carry states (4.4 GB). It reproduces the published E = 1 and E = 4 rates. The growth locks at 0.272551, below 0.28, through E = 8; at E = 10 after six steps it is 0.272546 and still approaching that lock. The running prefactor at rate 0.28 is finite on each box and still rising: 17.51 at E = 4, 31.45 at E = 8, 36.73 at E = 10. The slope of 1/share has fallen from about 2.3 to 1.61 and has not hit zero. This is not an interval certificate and not a bound for |e| ≤ 51. H1-bad at C ≤ 8.8×10^{-4} stays open. Proof: `proofs/09_phase_carry.md`.
 
 ## Order of work that matches the dependencies
 
