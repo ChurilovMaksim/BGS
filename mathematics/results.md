@@ -588,7 +588,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**421 registered claims: 339 proved, 17 verification-pending, 22 conditional, 42 open, 1 refuted.**
+**426 registered claims: 342 proved, 17 verification-pending, 24 conditional, 42 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -754,7 +754,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (312 claims)
+### TRACE family (317 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -1068,6 +1068,11 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-333` | **CONDITIONAL** | Line N v5 gas vs Robin crossover with all rate budgets (delta_true + A_bad^KP), additive terms idealised [P-arith], conditional on H1 via A_bad^KP: C <= 0.082 -> all p >= 3305, first prime 3307; C <= 0.04 -> 1726/1733; C <= 8.8e-4 -> 1402/1409; C <= 4.4e-4 -> 1402/1409 |
 | `BGS-TRACE-335` | **PROVED** | Line N21 Lemma C [P] + [CA-fp]: two-sided core -> true vector conversion including the second-order dPi^2 term; delta_true(G <= 15) <= 2.2102e-6 |
 | `BGS-TRACE-336` | **OPEN** | Line N hypothesis H1, re-scoped by N20 (open [H]): (H1-bad) bad-cluster (polymer-restricted) joint (A,B) second moment on the eps-chain, sum_{bad, shell j} \|r_A r_B\|^2 <= C 2^{j(1 - beta(0.28))} for j > J0 = 12 with C <= 0.082, plus (H1-ali) the near-collision/box constants |
+| `BGS-TRACE-337` | **PROVED** | Span theorem (Theorem A): for every nonzero alpha in Z[sqrt2], log_eps(\|N(alpha)\|/2) + 1 < span(alpha) < log_eps(\|N(alpha)\|/2) + 3; all balanced eps-digits lie in {-1, 0, 1}; span = K_R - K_L + 3 except on the class of sqrt2 (span 2) |
+| `BGS-TRACE-338` | **PROVED** | Span theorem Lemma 8: on fundamental-domain representatives the project word of digits.eps_digits (lineN14) equals the balanced digit word of BGS-TRACE-337, so its span is the span of Theorem A |
+| `BGS-TRACE-339` | **PROVED** | Span theorem examples: alpha = 116 (N = 13456, span 13, internal zero run 9, span - L = 2.99966264991176), 82 sqrt2 (N = -13448, span 11, run 7, span - L = 1.00033740024809), 118 (N = 13924, span 13, run 3, span - L = 2.96087221277804); alpha = 2 attains floor(L) + 3 = 3 |
+| `BGS-TRACE-340` | **CONDITIONAL** | Lemma BI (background interplay, P2): under hypothesis (M) the coded gas factorises exactly as Z = Z_M * Ztilde over decorated bad polymers, and KP gives \|ln Ztilde\| <= p Stilde_0, i.e. \|Z\| >= \|Z_M\| e^{-p Stilde_0}; conditional on (M) and on the unproved per-site normalisation of A_M |
+| `BGS-TRACE-341` | **CONDITIONAL** | Sharp-span Prop. K crossover rows [P-arith], conditional on H1-bad: bare-activity majorant 3299 -> 3067 at C = 0.082, J0 = 12 (interplay not charged); with Lemma BI (conditional on (M)) 3389 at the minimal KP weight / 3407 at the x1.02 iterate; 1409 at C = 8.8e-4 unchanged; registered 3307 / 1409 unchanged |
 | `BGS-TRACE-342` | **PROVED** | Lemma W [P]: for odd primes p and q with q \| h_p = (eps^p + epsbar^p)/2, eps = 1 + sqrt2: q = +-1 (mod 2p); hence p does not divide h_p, the j-th smallest prime factor of h_p is >= pj - 1, and omega(h_p) <= w_max(p) := max{w : (p-1)^w w! <= eps^p} |
 | `BGS-TRACE-343` | **CONDITIONAL** | H6 / Theorem C' explicit threshold [P + CA, mod inherited N4 Lambda, kappa_F and N2 r_2; given h_p squarefree and the torus normalisation u = 1]: for 8V (k = 4000) the unit-point cross part at c = h_p is < T^{3p} = 1.28359^{3p} for every prime p >= 28,424,695 with h_p squarefree; for 8E (k = 1000) for p >= 3,934 |
 

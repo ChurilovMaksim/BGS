@@ -1,19 +1,19 @@
 # BGS: a kicked quantized cat map, its arithmetic, and the open BGS frontier
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23919484.svg)](https://doi.org/10.5281/zenodo.23919484)
-[![claims](https://img.shields.io/badge/registered_claims-419-informational)](record/claim_registry.md)
-[![proved](https://img.shields.io/badge/proved-338-success)](record/claim_registry.md)
-[![conditional](https://img.shields.io/badge/conditional-21-yellow)](record/claim_registry.md)
+[![claims](https://img.shields.io/badge/registered_claims-426-informational)](record/claim_registry.md)
+[![proved](https://img.shields.io/badge/proved-342-success)](record/claim_registry.md)
+[![conditional](https://img.shields.io/badge/conditional-24-yellow)](record/claim_registry.md)
 [![open](https://img.shields.io/badge/open-42-orange)](mathematics/open_questions.md)
 [![pending](https://img.shields.io/badge/verification--pending-17-lightgrey)](record/claim_registry.md)
 [![refuted](https://img.shields.io/badge/refuted-1-critical)](record/claim_registry.md)
-[![Lean 4](https://img.shields.io/badge/Lean_4-191_modules,_local_build_OK-blueviolet)](formalization/README.md)
+[![Lean 4](https://img.shields.io/badge/Lean_4-192_modules,_local_build_OK-blueviolet)](formalization/README.md)
 [![PDF](https://img.shields.io/badge/manuscript-PDF%2C%20381%20pages-blue)](manuscript/BGS_unified.pdf)
 [![licence](https://img.shields.io/badge/licence-MIT_+_CC_BY_4.0-lightgrey)](LICENSE_POLICY.md)
 
 [**Results**](RESULTS.md) · [Русский](README.ru.md) · [Status](STATUS.md) · [Research brief](RESEARCH.md) · [Claim registry](record/claim_registry.md) · [Mathematical introduction](docs/reader_guide.en.md) · [Theorem index](mathematics/results.md) · [Open problems](mathematics/open_questions.md) · [Manuscript (PDF)](manuscript/BGS_unified.pdf) · [Corpus atlas](docs/corpus_atlas.md)
 
-> **Abstract.** This repository is a research programme on the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified kicked, quantized cat map on the torus, $U_N=\exp(i\tau N A_N)M_N$ with $\tau=10^{-80}$ fixed. **The BGS limit for this map is not proved:** fixed-strength microscopic universality (BGS-BGS-001) and the signed Heisenberg-scale joint-trace estimate that would close the gap (BGS-TRACE-005) are both open. Between September and November 2026 the programme registered 419 precisely scoped claims; 338 are proved at their stated scope (project proofs, many computer-assisted, many checked by an internal independent referee, **none externally refereed**). The work falls into seven phases. (I) Finite-field and Cayley arithmetic, Pell/Floquet return laws, resonance cohomology and locality. (II) The fixed-map frontier: the exact model, its symmetries and algebraic spectrum, an exact trace-to-local-statistics bridge, intensity mixing and path cancellations, fixed-order trace sectors and noisy Dyson comparisons. (III) Phase channels, feedback clocks, collision laws and spectral obstructions. (IV) A uniform power-trace bound for the original family and operator-stability transfer. (V) Arithmetic Abel spikes of the pure cat map and exact random-phase form factors. (VI) Lines B–H on a fixed diagonal kick, ending in a computer-assisted refutation of Conjecture R at η = 2. (VII) Lines I–N on the corrected mean law R′ (BGS-TRACE-206), which is **open and not refuted**; their end point is the **conditional** Theorem R♯-mod v5 (BGS-TRACE-325). Every status on this page is copied from the registry.
+> **Abstract.** This repository is a research programme on the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified kicked, quantized cat map on the torus, $U_N=\exp(i\tau N A_N)M_N$ with $\tau=10^{-80}$ fixed. **The BGS limit for this map is not proved:** fixed-strength microscopic universality (BGS-BGS-001) and the signed Heisenberg-scale joint-trace estimate that would close the gap (BGS-TRACE-005) are both open. Between September and November 2026 the programme registered 426 precisely scoped claims; 342 are proved at their stated scope (project proofs, many computer-assisted, many checked by an internal independent referee, **none externally refereed**). The work falls into eight phases. (I) Finite-field and Cayley arithmetic, Pell/Floquet return laws, resonance cohomology and locality. (II) The fixed-map frontier: the exact model, its symmetries and algebraic spectrum, an exact trace-to-local-statistics bridge, intensity mixing and path cancellations, fixed-order trace sectors and noisy Dyson comparisons. (III) Phase channels, feedback clocks, collision laws and spectral obstructions. (IV) A uniform power-trace bound for the original family and operator-stability transfer. (V) Arithmetic Abel spikes of the pure cat map and exact random-phase form factors. (VI) Lines B–H on a fixed diagonal kick, ending in a computer-assisted refutation of Conjecture R at η = 2. (VII) Lines I–N on the corrected mean law R′ (BGS-TRACE-206), which is **open and not refuted**; their end point is the **conditional** Theorem R♯-mod v5 (BGS-TRACE-325). (VIII) Two 4 November integrations: the span theorem for the balanced digit word (BGS-TRACE-337..341) and the explicit H6 threshold with Lemma W (BGS-TRACE-342, 343). Every status on this page is copied from the registry.
 
 The badge counts are static and are copied from [`record/claims.json`](record/claims.json) (registry updated 2026-11-01). The registry, not this page, decides every status ([SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md)). **GitHub Actions is not running on this repository** (account billing, as of 1 November 2026), so there is no CI badge. Every check quoted here was run locally, and the logs are committed under [`evidence/executions/`](evidence/README.md).
 
@@ -34,14 +34,14 @@ The badge counts are static and are copied from [`record/claims.json`](record/cl
 
 | Registered state | Claims | Meaning |
 |---|---:|---|
-| proved | 338 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
+| proved | 342 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
 | verification-pending | 17 | Argument or computation exists; an independent check is outstanding |
-| conditional | 21 | Proved implication from stated hypotheses that are themselves open |
+| conditional | 24 | Proved implication from stated hypotheses that are themselves open |
 | open | 42 | Conjecture, hypothesis or programme obligation without a proof |
 | refuted | 1 | Shown false as stated (Conjecture R, BGS-TRACE-179) |
-| **total** | **419** | |
+| **total** | **426** | |
 
-The claims are spread across the whole programme. Phases I–V (September to 29 October 2026) hold 226 claims, 197 of them proved. Lines B–N (29 October to 1 November) hold 193 claims, 141 of them proved. The [phase table](#the-research-story-phase-by-phase) gives the split. 172 non-open claims link Lean 4 files, out of 191 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
+The claims are spread across the whole programme. Phases I–V (September to 29 October 2026) hold 226 claims, 197 of them proved. Lines B–N (29 October to 1 November) hold 193 claims, 141 of them proved. The [phase table](#the-research-story-phase-by-phase) gives the split. 174 non-open claims link Lean 4 files, out of 192 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
 ## The problem and the model
 
@@ -113,9 +113,10 @@ The phases are chronological. Each has its own models, scales and hypotheses; th
 | V. Abel spikes, random-phase form factors, Lean | Oct 28–29 | Exact arithmetic of the pure cat map; exact short-time form factors of phase ensembles | 25 | 22 / 1 / 0 / 2 / 0 |
 | VI. Lines B–H: fixed diagonal kick | Oct 29–30 | Does a derandomised kick reproduce the random-phase $2m$ law (Conjecture R)? | 68 | 42 / 2 / 6 / 17 / 1 |
 | VII. Lines I–N: frozen R′ along $m=3p$ | Oct 31 – Nov 1 | Is the corrected mean law R′ true? | 125 | 99 / 2 / 6 / 18 / 0 |
-| **total** | | | **419** | **338 / 17 / 21 / 42 / 1** |
+| VIII. Span theorem and explicit H6 | Nov 4 | Exact span of the balanced digit word (Theorem A, Lemma BI); explicit p0 for H6 and Lemma W | 7 | 4 / 0 / 3 / 0 / 0 |
+| **total** | | | **426** | **342 / 17 / 24 / 42 / 1** |
 
-Phase I: CAYLEY, RET, INFO, RES (except RES-006/007), FLOW-022..025, FM-034..037. Phase II: BGS-001, LOOP-001, RES-006/007, CUE-001, FUP-001, FORMAL-002/003, FM-001..031, FLOW-001..021, TRACE-001..029. Phase III: TRACE-053..105, FM-032/033, CUE-002. Phase IV: TRACE-106..116. Phase V: TRACE-117..142 and FORMAL-001. Phase VI: TRACE-143..210. Phase VII: TRACE-211..336. (IDs 030–052, 138, 139 and 334 are not registered.)
+Phase I: CAYLEY, RET, INFO, RES (except RES-006/007), FLOW-022..025, FM-034..037. Phase II: BGS-001, LOOP-001, RES-006/007, CUE-001, FUP-001, FORMAL-002/003, FM-001..031, FLOW-001..021, TRACE-001..029. Phase III: TRACE-053..105, FM-032/033, CUE-002. Phase IV: TRACE-106..116. Phase V: TRACE-117..142 and FORMAL-001. Phase VI: TRACE-143..210. Phase VII: TRACE-211..336. Phase VIII: TRACE-337..343. (IDs 030–052, 138, 139 and 334 are not registered.)
 
 **Phase I — arithmetic and side programmes (September 2026).** The programme began with exact arithmetic around cat maps over finite fields. It proved a pair-key and fourth-moment reduction (BGS-CAYLEY-001), the Cayley additive-energy reduction (BGS-CAYLEY-002), a uniform subgroup-curve energy bound (BGS-CAYLEY-004), Gaussian limits of the Cayley–Jacobi trace (BGS-CAYLEY-006) and a magnetic-quotient semicircle law (BGS-CAYLEY-009). The sharp centered Cayley energy target (BGS-CAYLEY-005) stays open. The Pell/Floquet chapter proved harmonic return laws and a harmonic-scale transition for the kicked Pell propagator (BGS-RET-001, BGS-RET-002), a critical resonance law (BGS-FLOW-022) and a necessary kick scale (BGS-FLOW-025). Resonance cohomology gave sharp Fourier-line coercivity (BGS-RES-001), a full-lag Riesz gap for the frozen symbol under linear transport (BGS-RES-005) and a constructive radius-eight margin (BGS-RES-023); all-members analytic nondegeneracy (BGS-RES-003) stays open. Fixed-strength locality (BGS-FM-034, BGS-FM-036) shows what can be proved when the map is smoothly conjugate to an arithmetic one. These are global or compressed-observable laws, not microscopic statistics of $U_N$.
 
@@ -281,7 +282,7 @@ The [obligation board](mathematics/open_questions.md) states each with its closu
 
 A conditional theorem is exactly as strong as its weakest open input. Superseded values stay in the drafts' errata sections and in [ERRATA.md](ERRATA.md) (65 entries), and are not cited.
 
-**Lean 4.** [`formalization/`](formalization/README.md) holds 191 modules under `formalization/Bgs` (2433 `theorem`/`lemma` declarations, counted by grep), pinned to `leanprover/lean4:v4.33.1` and Mathlib through `lake-manifest.json`. Lean checks the finite and arithmetic kernels named in each claim boundary, not the analytic arguments. The last full local build ended "Build completed successfully (8898 jobs)" ([log](evidence/executions/20261104/h6_p0/lake_build_Bgs_after_merge.log)). No `sorry` is allowed in the active graph. **Legacy `native_decide`:** 37 uses in 8 older modules trust the compiler beyond the kernel axioms; the claim boundaries disclose this, and the Line B–N modules use none.
+**Lean 4.** [`formalization/`](formalization/README.md) holds 192 modules under `formalization/Bgs` (2451 `theorem`/`lemma` declarations, counted by grep), pinned to `leanprover/lean4:v4.33.1` and Mathlib through `lake-manifest.json`. Lean checks the finite and arithmetic kernels named in each claim boundary, not the analytic arguments. The last full local build ended "Build completed successfully (8899 jobs)" ([log](evidence/executions/20261104/h6_p0/lake_build_Bgs_after_merge.log)). No `sorry` is allowed in the active graph. **Legacy `native_decide`:** 37 uses in 8 older modules trust the compiler beyond the kernel axioms; the claim boundaries disclose this, and the Line B–N modules use none.
 
 **Referees.** Phase II–III results carry dated internal reviews (Wave2 and Wave3 replays, the 7 October checkpoint, independent reconstructions). Every line from E onwards has an independent internal referee pass: 24 `referee/` folders under [`computations/verification/`](computations/verification/lineN16/referee/REPORT.md), plus the final Line N referees lineN20, lineN21, lineN21b and lineN22 in [`evidence/executions/20261101/lineNgas/`](evidence/executions/20261101/lineNgas/v5_integration/README.md). None of this is external peer review.
 

@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**421 registered nodes; 888 direct prerequisite edges.**
+**426 registered nodes; 896 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -429,9 +429,14 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-329](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-311`, `BGS-TRACE-312` | None registered | 0 |
 | [BGS-TRACE-330](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-312` | None registered | 1 |
 | [BGS-TRACE-331](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-307`, `BGS-TRACE-311`, `BGS-TRACE-321` | None registered | 2 |
-| [BGS-TRACE-332](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | conditional | `BGS-TRACE-321`, `BGS-TRACE-326`, `BGS-TRACE-331`, `BGS-TRACE-336` | None registered | 2 |
-| [BGS-TRACE-333](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | conditional | `BGS-TRACE-318`, `BGS-TRACE-326`, `BGS-TRACE-332`, `BGS-TRACE-336` | None registered | 1 |
+| [BGS-TRACE-332](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | conditional | `BGS-TRACE-321`, `BGS-TRACE-326`, `BGS-TRACE-331`, `BGS-TRACE-336` | None registered | 3 |
+| [BGS-TRACE-333](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | conditional | `BGS-TRACE-318`, `BGS-TRACE-326`, `BGS-TRACE-332`, `BGS-TRACE-336` | None registered | 2 |
 | [BGS-TRACE-335](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-307`, `BGS-TRACE-311`, `BGS-TRACE-323` | None registered | 3 |
-| [BGS-TRACE-336](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | open | `BGS-TRACE-309`, `BGS-TRACE-312`, `BGS-TRACE-330`, `BGS-TRACE-331` | None registered | 3 |
+| [BGS-TRACE-336](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | open | `BGS-TRACE-309`, `BGS-TRACE-312`, `BGS-TRACE-330`, `BGS-TRACE-331` | None registered | 4 |
+| [BGS-TRACE-337](../mathematics/fixed-map/lineN_span_theorem.md) | proved | None registered | None registered | 4 |
+| [BGS-TRACE-338](../mathematics/fixed-map/lineN_span_theorem.md) | proved | `BGS-TRACE-337` | None registered | 0 |
+| [BGS-TRACE-339](../mathematics/fixed-map/lineN_span_theorem.md) | proved | `BGS-TRACE-337` | None registered | 0 |
+| [BGS-TRACE-340](../mathematics/fixed-map/lineN_span_theorem.md) | conditional | `BGS-TRACE-332`, `BGS-TRACE-337` | None registered | 1 |
+| [BGS-TRACE-341](../mathematics/fixed-map/lineN_span_theorem.md) | conditional | `BGS-TRACE-333`, `BGS-TRACE-336`, `BGS-TRACE-337`, `BGS-TRACE-340` | None registered | 0 |
 | [BGS-TRACE-342](../computations/verification/h6_p0/REPORT_P4_v2.md) | proved | None registered | None registered | 1 |
 | [BGS-TRACE-343](../computations/verification/h6_p0/REPORT_P4_v2.md) | conditional | `BGS-TRACE-289`, `BGS-TRACE-294`, `BGS-TRACE-296`, `BGS-TRACE-342` | None registered | 0 |

@@ -1,0 +1,21 @@
+-- w116: alpha = 116 + 0 sqrt2, K_L = -5, K_R = 5, span = 13, zr = 9
+def w116_k0 : Int := -9
+def w116_ns : List Int := [0, 0, 0, 0, 1, 1, 3, 7, 17, 41, 99, 239, 577, 1393, 3363, 8120, 19604, 47328, 114260]
+def w116_word : List Int := [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+-- w82s2: alpha = 0 + 82 sqrt2, K_L = -4, K_R = 4, span = 11, zr = 7
+def w82s2_k0 : Int := -8
+def w82s2_ns : List Int := [0, 0, 0, 0, 1, 3, 7, 17, 41, 99, 239, 577, 1393, 3362, 8118, 19598, 47314]
+def w82s2_word : List Int := [1, 1, 0, 0, 0, 0, 0, 0, 0, -1, 1]
+-- w118: alpha = 118 + 0 sqrt2, K_L = -5, K_R = 5, span = 13, zr = 3
+def w118_k0 : Int := -9
+def w118_ns : List Int := [0, 0, 0, 0, 1, 1, 3, 7, 17, 42, 101, 243, 587, 1417, 3421, 8260, 19942, 48144, 116230]
+def w118_word : List Int := [1, -1, 0, 0, 0, 1, 0, -1, 0, 0, 0, 1, 1]
+-- w2: alpha = 2 + 0 sqrt2, K_L = 0, K_R = 0, span = 3, zr = 1
+def w2_k0 : Int := -4
+def w2_ns : List Int := [0, 0, 0, 0, 1, 2, 4, 10, 24]
+def w2_word : List Int := [1, 0, -1]
+-- w3s2: alpha = 3 + 1 sqrt2, K_L = -1, K_R = 0, span = 4, zr = 1
+def w3s2_k0 : Int := -5
+def w3s2_ns : List Int := [0, 0, 0, 0, 1, 2, 4, 9, 22, 53]
+def w3s2_word : List Int := [1, 0, -1, -1]
+wrote formalization/Bgs/LineNSpanArith.lean

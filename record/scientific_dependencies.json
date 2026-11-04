@@ -421,6 +421,11 @@
     "BGS-TRACE-333",
     "BGS-TRACE-335",
     "BGS-TRACE-336",
+    "BGS-TRACE-337",
+    "BGS-TRACE-338",
+    "BGS-TRACE-339",
+    "BGS-TRACE-340",
+    "BGS-TRACE-341",
     "BGS-TRACE-342",
     "BGS-TRACE-343"
   ],
@@ -4826,8 +4831,18 @@
       "type": "scientific-prerequisite"
     },
     {
+      "from": "BGS-TRACE-332",
+      "to": "BGS-TRACE-340",
+      "type": "scientific-prerequisite"
+    },
+    {
       "from": "BGS-TRACE-333",
       "to": "BGS-TRACE-325",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-333",
+      "to": "BGS-TRACE-341",
       "type": "scientific-prerequisite"
     },
     {
@@ -4858,6 +4873,36 @@
     {
       "from": "BGS-TRACE-336",
       "to": "BGS-TRACE-333",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-336",
+      "to": "BGS-TRACE-341",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-337",
+      "to": "BGS-TRACE-338",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-337",
+      "to": "BGS-TRACE-339",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-337",
+      "to": "BGS-TRACE-340",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-337",
+      "to": "BGS-TRACE-341",
+      "type": "scientific-prerequisite"
+    },
+    {
+      "from": "BGS-TRACE-340",
+      "to": "BGS-TRACE-341",
       "type": "scientific-prerequisite"
     },
     {
