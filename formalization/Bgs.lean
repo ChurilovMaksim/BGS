@@ -146,5 +146,7 @@ import Bgs.LineIHorocycle
 import Bgs.LineIReduction
 import Bgs.LineIMoebiusSummable
 import Bgs.LineN3SignConjComposite
+import Bgs.LineIRegroupSummable
+import Bgs.LineIHorocycleSummable
 
 import Bgs.Mathlib
