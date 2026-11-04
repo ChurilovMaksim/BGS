@@ -170,7 +170,7 @@ def main() -> int:
          create_file(case, "computations/verification/zz_v4_nc.jl", b"// V4 negative control\n"),
          "corrupted tree: forbidden .jl file"),
         ("bibliographic_audit", [py, ver + "bibliographic_metadata_audit.py", "--self-test"],
-         append_bytes(case, "evidence/source_metadata/registry_metadata_20261101_lineNv5.json", b" "),
+         append_bytes(case, "evidence/source_metadata/registry_metadata_20261104_h6p0.json", b" "),
          "tampered hash: byte appended to digest-pinned metadata cache"),
         ("text_control_audit", [py, ver + "text_control_audit.py"],
          append_bytes(case, "README.md", b"\x00"), "forbidden byte: NUL in README.md"),
