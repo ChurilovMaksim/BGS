@@ -17,6 +17,37 @@ and the citation paragraphs of `README.md` / `README.ru.md`. Summary of the peri
 Registry at this release: 419 claims = 338 proved / 21 conditional / 17 verification-pending / 42 open / 1 refuted.
 BGS-BGS-001 (microscopic fixed-strength BGS) **remains open**; no proof of BGS is claimed.
 
+## 2026-11-04 — Span theorem integration: BGS-TRACE-337 to 341 (no existing state or threshold changed)
+
+New source `mathematics/fixed-map/lineN_span_theorem.md`, from PR #85 (`research-grok46-1104`), PR #83
+(`research-cloud-1104`) and research note P2, after an independent referee audit (copied to
+`evidence/executions/20261104/span_theorem/referee/AUDIT.md`).
+
+- **BGS-TRACE-337 (proved):** Theorem A. For every nonzero α ∈ ℤ[√2], log_ε(|N|/2) + 1 < span < log_ε(|N|/2) + 3.
+  The digits lie in {−1, 0, 1}, and span = K_R − K_L + 3 except on the class of √2. The upper bound uses the P2
+  two-lift argument; PR #83's floor-form proof is kept as a secondary derivation, with the referee's slips fixed.
+  Corollary B says only that neither constant can be improved by more than 3.4·10⁻⁴. It is not claimed that 1 and 3
+  are the best constants. c_ε = 0.786440.
+- **BGS-TRACE-338 (proved):** Lemma 8. The project word equals the digit word. Checked against the production files
+  `lineN14/logs/a_enum.jsonl` and the N20 `a_cert_ext` files.
+- **BGS-TRACE-339 (proved):** examples 116, 82√2 and 118.
+- **BGS-TRACE-340 (conditional):** Lemma BI, conditional on hypothesis (M) and the per-site normalisation of A_M,
+  neither of which is proved. With BGS-TRACE-337, H1 ⇒ H3 needs only H1-bad and is proved modulo (M) and that
+  normalisation. H1 stays open.
+- **BGS-TRACE-341 (conditional on H1-bad):** sharp-span crossover rows.
+  - 3299 → 3067 is a bare-activity majorant only.
+  - With Lemma BI, the thresholds are 3389 at the minimal KP weight and 3407 at the ×1.02 iterate.
+  - C = 8.8e-4 gives 1409 (unchanged).
+  - **The registered 3307 / 1409 (BGS-TRACE-333), Theorem v5 (BGS-TRACE-325) and the states of BGS-TRACE-301, 332, 336
+    and 206 are unchanged.**
+- Reproduction: `computations/verification/lineN_span/`. It covers the exact census through shell 16 (81709 classes,
+  span − ⌊L⌋ histogram {2: 43304, 3: 38405}), the production comparison and the crossover/BI numbers (mpmath), with
+  committed logs.
+- Lean: new module `formalization/Bgs/LineNSpanArith.lean` (core Lean, `decide +kernel`, no `sorry` or
+  `native_decide`, axioms none or `propext`). It covers norms, shells, ε⁴ = 17 + 12√2 and integer floor certificates
+  for the example words. Only this module was built (`lake build Bgs.LineNSpanArith`); `lake build Bgs` was not run.
+- Receipt: [span_theorem](evidence/executions/20261104/span_theorem/receipt.json).
+
 ## 2026-11-01 — Lean batch 5: TRACE-222, 214, 213/317, 218 summable Möbius, 293 composite (no state changes)
 
 Five new modules (`LineJSectorConj`, `LineIHorocycle`, `LineIReduction`, `LineIMoebiusSummable`,

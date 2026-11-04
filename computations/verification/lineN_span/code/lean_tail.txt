@@ -1,0 +1,14 @@
+
+theorem cert_116 : cert 116 0 w116_k0 w116_ns w116_word = true := by decide +kernel
+theorem cert_82s2 : cert 0 82 w82s2_k0 w82s2_ns w82s2_word = true := by decide +kernel
+theorem cert_118 : cert 118 0 w118_k0 w118_ns w118_word = true := by decide +kernel
+theorem cert_2 : cert 2 0 w2_k0 w2_ns w2_word = true := by decide +kernel
+theorem cert_3s2 : cert 3 1 w3s2_k0 w3s2_ns w3s2_word = true := by decide +kernel
+
+theorem span_116 : w116_word.length = 13 := rfl
+theorem span_82s2 : w82s2_word.length = 11 := rfl
+theorem span_118 : w118_word.length = 13 := rfl
+theorem span_2 : w2_word.length = 3 := rfl
+theorem span_3s2 : w3s2_word.length = 4 := rfl
+
+end Bgs.LineNSpan

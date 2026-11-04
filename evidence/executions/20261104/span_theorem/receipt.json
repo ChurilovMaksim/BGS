@@ -1,0 +1,202 @@
+{
+ "schema": "bgs.span_theorem.integration.receipt/1",
+ "date": "2026-11-04",
+ "base": "origin/main 6440a447",
+ "branch": "span-theorem-integration",
+ "sources": {
+  "PR #85": "research-grok46-1104 @ 9be1dd46, evidence/research/20261104_grok47/",
+  "PR #83": "research-cloud-1104 (audited head 717bfddc; branch head at integration 5a7ef0e0), evidence/research/20261104_cloud/",
+  "P2": "research note SPAN_LEMMA.md and BACKGROUND_INTERPLAY.md (not in the repository; content integrated in the source note)",
+  "referee": "evidence/executions/20261104/span_theorem/referee/AUDIT.md (+ referee/code, independent auditor implementation)"
+ },
+ "claims_added": {
+  "BGS-TRACE-337": "proved",
+  "BGS-TRACE-338": "proved",
+  "BGS-TRACE-339": "proved",
+  "BGS-TRACE-340": "conditional",
+  "BGS-TRACE-341": "conditional"
+ },
+ "claims_modified": [],
+ "unchanged": [
+  "BGS-TRACE-325 (Theorem v5)",
+  "BGS-TRACE-333 (3307 / 1409)",
+  "BGS-TRACE-301",
+  "BGS-TRACE-332",
+  "BGS-TRACE-336",
+  "BGS-TRACE-206"
+ ],
+ "record_edits": {
+  "record/claims.json": "five appended rows; updated -> 2026-11-04 (scripts/add_claims.py)",
+  "record/claim_integration_epochs.json": "five appended after_wave3 rows, no sealed row touched (scripts/add_epochs.py)",
+  "record/claim_verification_inventory.json": "five appended curated rows + source_blob_sha (scripts/add_inventory.py, refresh_inventory_sha.py)",
+  "record/mathematics_topics.json": "new note registered under fixed-map (required by render_research_views)"
+ },
+ "regenerated": [
+  "record/claim_registry.md",
+  "docs/corpus_atlas.md",
+  "record/scientific_dependencies.json",
+  "record/scientific_dependency_graph.md",
+  "STATUS.md",
+  "mathematics/results.md",
+  "RESULTS.md",
+  "manuscript/appendix_a_claim_index.tex"
+ ],
+ "commands": [
+  "python3 computations/verification/lineN_span/code/span_census.py 16",
+  "python3 computations/verification/lineN_span/code/production_match.py",
+  "python3 computations/verification/lineN_span/code/crossover_sharp_bi.py > computations/verification/lineN_span/logs/crossover_sharp_bi.log",
+  "python3 computations/verification/lineN_span/code/gen_lean_span.py --write",
+  "cd formalization && lake exe cache get && lake build Bgs.LineNSpanArith && lake env lean ../evidence/executions/20261104/span_theorem/Axioms.lean"
+ ],
+ "results": {
+  "census_J16": {
+   "n_classes": 81709,
+   "excess_hist_span_minus_floorL": {
+    "2": 43304,
+    "3": 38405
+   },
+   "n_letter_outside_pm1": 0,
+   "n_span_formula_failures": 0,
+   "n_strict_two_sided_failures": 0,
+   "defect_min": {
+    "alpha": [
+     280,
+     0
+    ],
+    "N": 78400,
+    "value": "1.00005788517"
+   },
+   "defect_max": {
+    "alpha": [
+     0,
+     198
+    ],
+    "N": 78408,
+    "value": "2.99994211631"
+   },
+   "c_eps": "0.7864397013573949",
+   "witnesses": [
+    {
+     "alpha": "116+0sqrt2",
+     "N": 13456,
+     "j": 13,
+     "span": 13,
+     "zr": 9,
+     "word": [
+      1,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     "defect": "2.99966264991176"
+    },
+    {
+     "alpha": "0+82sqrt2",
+     "N": 13448,
+     "j": 13,
+     "span": 11,
+     "zr": 7,
+     "word": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      1
+     ],
+     "defect": "1.00033740024809"
+    },
+    {
+     "alpha": "118+0sqrt2",
+     "N": 13924,
+     "j": 13,
+     "span": 13,
+     "zr": 3,
+     "word": [
+      1,
+      -1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     "defect": "2.96087221277804"
+    }
+   ]
+  },
+  "production_match": {
+   "a_enum": {
+    "classes": 5109,
+    "census_classes_j_le_12": 5109,
+    "span_zr_mismatches": 0
+   },
+   "a_enum_stored_word": {
+    "classes_with_word_mismatch": 2182,
+    "mismatch_letters_equal_exact_minus_sign_exact": 2182
+   },
+   "a_cert_ext": {
+    "rows_with_span": 14987,
+    "span_zr_mismatches": 0,
+    "coded_rows": 338,
+    "coded_rows_with_exact_zr_lt_6": 0
+   }
+  },
+  "crossover_bare": {
+   "slope2_min": 3299,
+   "slope2_N20iter": 3307,
+   "theta_min": 3067,
+   "theta_min_C8.8e-4": 1409
+  },
+  "crossover_BI": {
+   "BI_J12_C082": 3389,
+   "BI_J12_C082_iter102": 3407,
+   "BI_J12_C88e-4": 1409,
+   "BI_J14_C082": 1831
+  }
+ },
+ "lean": {
+  "module": "formalization/Bgs/LineNSpanArith.lean",
+  "build": "lake build Bgs.LineNSpanArith only (lake build Bgs not run)",
+  "axioms": "evidence/executions/20261104/span_theorem/axioms.log",
+  "sorry": 0,
+  "native_decide": 0
+ },
+ "checks": "evidence/executions/20261104/span_theorem/checks.log",
+ "sha256": {
+  "mathematics/fixed-map/lineN_span_theorem.md": "a850966b331da91d8b6e6918f8aeede2e42e9e4de8a04ec694b816e7200d9443",
+  "formalization/Bgs/LineNSpanArith.lean": "a1d5a6a2db9e7a2bccf0d5b1aff960797b93c64b122f3594c0935dc698fc357d",
+  "record/claims.json": "02420e285a90541ac464dfb5b5b81dcd99c80011ae73cb106f4bdc59fbe1a6b1",
+  "computations/verification/lineN_span/code/span_census.py": "693a1ceb6aaa4ebd0efd0854fffd64d344647361d38c21cf8cf0c7b38fa3e108",
+  "computations/verification/lineN_span/code/production_match.py": "6da530679a77de76ff81dffa11040fde9d828dba30abe218402a2d6f8640c82b",
+  "computations/verification/lineN_span/code/crossover_sharp_bi.py": "63b18ba3229de25014c1d83d38fe2cd77c0979582c0a48437f8e701edd6b6ce6",
+  "computations/verification/lineN_span/code/gen_lean_span.py": "83a4e4547ab84be575efef7e30c0104805fb62850552b9532685c23a3200b217",
+  "computations/verification/lineN_span/logs/span_census_J16.json": "1813bfdb921fc1e20b7f2e7f8a809c1e750b384f751dbb8659662b3a51813141",
+  "computations/verification/lineN_span/logs/span_census_J16.jsonl": "4322179827d04943e05f57e773f50c0466515c2a28e263b3748fab32438d00d3",
+  "computations/verification/lineN_span/logs/production_match.json": "e7634cee302a3f40e52da96e98fec15fc970c37ea1e7cb7fdb58d52d4b66fddf",
+  "computations/verification/lineN_span/logs/crossover_sharp_bi.json": "7f41df1603b54c50ad3c6a49108b7b902988eb84a3c3a53dff7dc9912b15723f",
+  "computations/verification/lineN_span/logs/crossover_sharp_bi.log": "bbc3902af0b6f03c45712f18725d8106c7614245a80d1a5d6c93e6e6e3eed2f4",
+  "evidence/executions/20261104/span_theorem/referee/AUDIT.md": "192b4bc8d07dd6539168d24c388362a3edc97b0ee4752dc54471e74288ee7b87"
+ },
+ "non_claims": "No proof of H1, H3, R-prime or BGS; Corollary B is near-sharpness only; crossover numbers conditional and not registered as replacements."
+}
