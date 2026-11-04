@@ -1,0 +1,13 @@
+{
+ "prec": 128,
+ "newton": {
+  "lo": 1.9154732036882485,
+  "hi": 1.9154732036883702,
+  "h": 7.193249686937222e-13,
+  "beta": 11.82372896868862,
+  "delta": 1.8838561584842963e-32,
+  "scale_exp": 0
+ },
+ "cap_hi_power16": 2.0115351145095186,
+ "note": "Final Newton routine. Cap at 4 squarings is above the radius because one step of a non-normal matrix has Frobenius norm above its spectral radius."
+}

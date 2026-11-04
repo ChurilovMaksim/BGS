@@ -1,5 +1,18 @@
 # Frontier, 4 November 2026
 
+## Third target: H7* rates on the included levels
+
+The span law and the H7*/H8 obstruction below are kept as records. The third target is the per-step sector rate on the included \(K_p\)-divisors other than \(7\), against \(T' = 1.42785\). The proof note is `proofs/h7_rates.md`. The self-referee is `REFEREE_H7_RATES.md`.
+
+What that note establishes, inside this directory only, and only for the single-disc Galerkin model that reproduces the three TRACE-223 discs at level \(7\):
+
+- **[CA]** At \(d = 31\), every nonzero class and every sector has rate at most \(1.0923934786042258\).
+- **[CA]** At \(d = 49\) and \(d = 217\), every nonzero class in the surviving sectors \(a\in\{0,4\}\) has rate at most \(1.2876123688383678\) and \(1.2892227802420704\) respectively. Both maxima sit on the level-\(7\) survivor, copied by the phase identity.
+- **[CA]** Three included conductors have a surviving-sector orbit above \(T'\): \(1.4587724665845072\) at \(d = 3437426497\), \(\beta = (-208,0)\); \(1.5119805994002586\) at \(d = 24061985479\), \(\beta = (227,227)\); \(1.4686852970394264\) at \(d = 2735635252619983\), \(\beta = (-89,0)\). Sector \(0\) is a surviving sector, so the cancellation on sectors \(2\) and \(6\) does not remove them.
+- **[P]** No uniform majorant under \(T'\) falls out of \(d\equiv 1\pmod 3\). The untwisted step exceeds \(T'\), inheritance covers only a sublattice, the period is \(3p\), and the length bound \(\log_\lambda d < 3p/4 - 1/6\) does not control the spectral radius. The third crossing lies above \(\sqrt{\mu^*_{\mathrm{model}}}\).
+
+H7* stays open. The seventeen conductors that were only searched along rays are not certified under \(T'\). The model is not the multi-disc operator of TRACE-223. `record/claims.json` was not edited.
+
 Independent note on the open inputs of Theorem R♯-mod v5 (BGS-TRACE-325). The claim registry, `README`, and the hash-pinned sources are unchanged. Status tags in this directory are local to the note: **[P]** proved here, **[P-sketch]** a written argument with a named gap, **[N]** a numerical observation, **[C]** a conjecture. A finite computation is not an asymptotic theorem.
 
 `evidence/breakthrough/` is about the Δ → 0, JBL, Lemma U, and Gap G package. It does not speak to H1 or H3. The governing statement of v5 is `computations/verification/lineN_theorem_draft/THEOREM_DRAFT_v5.md`, with the N20 re-scoping in `evidence/executions/20261101/lineNgas/N20/REPORT_N20_v2.md`.
@@ -80,7 +93,7 @@ These primes are conditional on H1-shell, on H0, H5–H8, on B_p ≥ κ for infi
 - H1-ali, the near-collision and box constants. Open. A Lipschitz bound on |r|² through the N_H table (Lip_H ≈ 167) is too crude to start a Beurling–Selberg estimate; that route was not pursued.
 - Background interplay and polymer normalisation inside Prop. K. Still [P-sketch], exactly as N20 left them. Accepting Theorem A does not make TRACE-332 unconditional.
 - H5, in particular c < 0.387 against the sketch c_B = 0.7375; or else infinitude of the NSW-prime set 𝒫.
-- H6 (p₀ and squarefree h_p). H7* and H8 stay open after the second note: the included \(K_p\)-divisors other than \(7\) have no rate below \(T'\), and the amplified wrap at \(\ell_0 = p/4\) is outside the range the substituted \(c_B\) covers. H8 on prime \(h_p\) still reduces to H1 only as a sketch.
+- H6 (p₀ and squarefree h_p). H7* and H8 stay open after the second note: that note gave the included \(K_p\)-divisors other than \(7\) no rate below \(T'\), and the amplified wrap at \(\ell_0 = p/4\) is outside the range the substituted \(c_B\) covers. The third note, at the top of this file, gives Galerkin rates for those divisors. It does not close H7*. H8 on prime \(h_p\) still reduces to H1 only as a sketch.
 - The passage of A_bad^{KP} into the gas exponent is used here as v5 uses it. The draft header still marks that correction [P-sketch], with lineN22 recording it as correct and necessary.
 
 ## Where a proof of H1 would have to go

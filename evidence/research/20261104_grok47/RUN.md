@@ -29,3 +29,29 @@ python3 evidence/research/20261104_grok47/code/h7h8.py
 ```
 
 Outcome: `logs/h7h8.json`. Delivered exponent \(c_{\mathrm{del}}\) has centre \(0.73753151868331175037\), and \(\tfrac32 c_{\mathrm{del}} > 1\). The θ-gap at \(\ell_0 = p/4\) is nonempty (\(0.26224 > 0.16662\)). Trial-proved factorisations of \(K_p\) for primes \(5 \le p \le 31\), including the 17-digit factor at \(p = 23\). Elementary asserts for the Lemma E excess pass, and the arb excess check passes for every prime \(p\) with \(5 \le p \le 79\). Runtime about 6 s, of which the trial division of \(57887325592525441\) is the long step. No registry file was read for writing.
+
+Third target, H7* rates on the included conductors. Interpreter packages: the same flint and mpmath, plus `scipy` 1.18.1 for the power-of-two balancing scales. No registry file was written.
+
+```text
+python3 evidence/research/20261104_grok47/code/h7_rates.py self-test
+python3 evidence/research/20261104_grok47/code/h7_rates.py survey
+python3 evidence/research/20261104_grok47/code/h7_rates.py certify --d 31 --sectors 0,2,4,6 --squares 2 --out evidence/research/20261104_grok47/logs/parts/d31.json
+python3 evidence/research/20261104_grok47/code/h7_rates.py certify --d 49 --sectors 0,4 --squares 2 --out evidence/research/20261104_grok47/logs/parts/d49.json
+python3 evidence/research/20261104_grok47/code/h7_rates.py certify --d 217 --bx0 0 --bx1 109 --sectors 0,4 --squares 2 --out evidence/research/20261104_grok47/logs/parts/d217_0_109.json
+python3 evidence/research/20261104_grok47/code/h7_rates.py certify --d 217 --bx0 109 --bx1 217 --sectors 0,4 --squares 2 --out evidence/research/20261104_grok47/logs/parts/d217_109_217.json
+python3 evidence/research/20261104_grok47/code/h7_rates.py wide
+python3 evidence/research/20261104_grok47/code/h7_rates.py rays
+python3 evidence/research/20261104_grok47/code/h7_rates.py rays-ext
+python3 evidence/research/20261104_grok47/code/h7_rates.py rays-deep
+```
+
+Outcomes used in `proofs/h7_rates.md`:
+
+- `self-test`: level-7 model rates sit in the TRACE-223 discs, the phase identity holds on the three checked pairs, and the orders of \(31\), \(49\) and \(217\) are \(15\), \(21\) and \(15\).
+- `d31.json`: \(960\) classes, all four sectors, cap \(1.0923934786042258 < 1.42785\), precision \(128\), \(221\) s.
+- `d49.json`: \(2400\) classes, sectors \(0\) and \(4\), cap \(1.2876123688383678 < 1.42785\), precision \(160\), \(790\) s.
+- the two `d217` slices: \(23652+23436 = 47088\) classes, sectors \(0\) and \(4\), cap \(1.2892227802420704 < 1.42785\), precision \(128\), about \(3000\) s each.
+- Three surviving orbits lie above \(T'\), enclosed by `enclose`: \(d = 3437426497\), \(\beta = (-208,0)\), rate \(1.4587724665845072\); \(d = 24061985479\), \(\beta = (227,227)\), rate \(1.5119805994002586\); \(d = 2735635252619983\), \(\beta = (-89,0)\), rate \(1.4686852970394264\).
+- The closest searched orbit that stays under is \(d = 390805036088569\), \(\beta = (0,-321)\), Newton value \(1.4060636053128053\), cap \(1.4061888484607947\).
+
+The `certify-probes` log is a width-\(8\) enclosure of short vectors. Several of those orbits are not the maximizers later found on longer rays. The crossings are the `enclose` files named in `logs/parts/`.
