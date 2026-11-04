@@ -55,3 +55,13 @@ Outcomes used in `proofs/h7_rates.md`:
 - The closest searched orbit that stays under is \(d = 390805036088569\), \(\beta = (0,-321)\), Newton value \(1.4060636053128053\), cap \(1.4061888484607947\).
 
 The `certify-probes` log is a width-\(8\) enclosure of short vectors. Several of those orbits are not the maximizers later found on longer rays. The crossings are the `enclose` files named in `logs/parts/`.
+
+Fourth target, the multi-disc finite section. Same interpreter. `scipy` is used only by the Newton balancer inside `h7_rates.py`.
+
+```text
+python3 evidence/research/20261104_grok47/code/h7_multidisc_cert.py enclose
+```
+
+Outcome: `logs/h7_multidisc_enclose.json`, precision \(320\). The section is centres \(|c|\le 3\), \(40\) modes, letters \(|n|\le 16\), dimension \(280\). Newton lower endpoints: level \(7\), class \((2,1)\), \(1.2835951329030868\); class \((1,3)\), \(1.2837142953109737\); \(d = 3437426497\), \(1.458772466390154\); \(d = 24061985479\), \(1.5119805975188876\); \(d = 2735635252619983\), \(1.4686852948918232\). Every Kantorovich \(h\) is below \(2\cdot 10^{-14}\). The one-step tail in the same log is \(< 9.646772214969684\cdot 10^{-5}\), with no core exit. The edge float, not a certificate, is `logs/h7_multidisc_edge.json`.
+
+`h7_multidisc.py calibrate` and `orbits` are the float scans that preceded the enclosure. Their logs are `logs/h7_multidisc_calibrate.json` and `logs/h7_multidisc_orbits.json`. They are not the certificate.

@@ -1,5 +1,17 @@
 # Frontier, 4 November 2026
 
+## Fourth target: the three crossings on the multi-disc operator
+
+The span law, the H7*/H8 obstruction, and the single-disc Galerkin rates below are kept as records. The fourth target is whether those three Galerkin crossings are eigenvalues of the multi-disc vertex operator of TRACE-223. The proof note is `proofs/h7_multidisc.md`. The self-referee is `REFEREE_H7_MULTIDISC.md`.
+
+What that note establishes, inside this directory only:
+
+- **[P, arithmetic]** The three conductors divide \(K_p\), sit at or under \(\sqrt{h_m}\), and are not \(h_p\) or \(e\cdot h_p\). The primes are \(p = 19\), \(p = 19\) and \(p = 29\). TRACE-273, cited, includes them for \(\rho = (\pm 2, 8)\) at odd \(m\ge 15\). The TRACE-199 shape with constant \(3012.4\) was checked in arb at these three pairs and gives \(|Z|^2 > 4mh_m\).
+- **[CA]** The finite section with centres \(|c|\le 3\), modes of degree \(< 40\) and letters \(|n|\le 16\), dimension \(280\), has certified per-step rates \(1.458772466390154\), \(1.5119805975188876\) and \(1.4686852948918232\), all above \(T' = 1.42785\). Level \(7\), class \((2,1)\), sector \(4\), falls inside the TRACE-223 disc. Class \((1,3)\), sector \(6\), falls under the cap \(1.2837144\).
+- **[P]** One step of the difference between this section and the core operator on the same centres is \(< 9.65\cdot 10^{-5}\) in operator norm, and the core is forward-invariant for the kept letters. The product of \(57\) or \(87\) such steps is not bounded by a useful multiple of that constant. The untruncated monodromy is not claimed to lie above \(T'\).
+
+H7* as the aggregate Lin bound is not shown false. The sufficient reading “every orbit grows slower than \(T'\)” is false for this finite section, at three included levels, both below \(p_{\mathrm{thr}}\). The re-scoping that survives is the aggregate with the sum over \(\beta\) kept. `record/claims.json` was not edited.
+
 ## Third target: H7* rates on the included levels
 
 The span law and the H7*/H8 obstruction below are kept as records. The third target is the per-step sector rate on the included \(K_p\)-divisors other than \(7\), against \(T' = 1.42785\). The proof note is `proofs/h7_rates.md`. The self-referee is `REFEREE_H7_RATES.md`.
@@ -93,7 +105,7 @@ These primes are conditional on H1-shell, on H0, H5–H8, on B_p ≥ κ for infi
 - H1-ali, the near-collision and box constants. Open. A Lipschitz bound on |r|² through the N_H table (Lip_H ≈ 167) is too crude to start a Beurling–Selberg estimate; that route was not pursued.
 - Background interplay and polymer normalisation inside Prop. K. Still [P-sketch], exactly as N20 left them. Accepting Theorem A does not make TRACE-332 unconditional.
 - H5, in particular c < 0.387 against the sketch c_B = 0.7375; or else infinitude of the NSW-prime set 𝒫.
-- H6 (p₀ and squarefree h_p). H7* and H8 stay open after the second note: that note gave the included \(K_p\)-divisors other than \(7\) no rate below \(T'\), and the amplified wrap at \(\ell_0 = p/4\) is outside the range the substituted \(c_B\) covers. The third note, at the top of this file, gives Galerkin rates for those divisors. It does not close H7*. H8 on prime \(h_p\) still reduces to H1 only as a sketch.
+- H6 (p₀ and squarefree h_p). H7* and H8 stay open. The second note gave the included \(K_p\)-divisors other than \(7\) no rate below \(T'\), and the amplified wrap at \(\ell_0 = p/4\) is outside the range the substituted \(c_B\) covers. The third note gives single-disc Galerkin rates. The fourth note encloses the same three crossings for the multi-disc finite section and does not transfer the one-step tail to the untruncated monodromy. H8 on prime \(h_p\) still reduces to H1 only as a sketch.
 - The passage of A_bad^{KP} into the gas exponent is used here as v5 uses it. The draft header still marks that correction [P-sketch], with lineN22 recording it as correct and necessary.
 
 ## Where a proof of H1 would have to go
