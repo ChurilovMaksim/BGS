@@ -1985,6 +1985,18 @@
       "state": "conditional",
       "source": "mathematics/fixed-map/lineN_span_theorem.md",
       "disposition": "4 November 2026 (span theorem integration; PR #85, PR #83, P2; independent referee audit CONFIRMED after fixes): conditional on H1-bad (and on (M) for the BI rows); sharp-span crossover rows 3067 (bare majorant), 3389 / 3407 (BI), 1409. Does not close TRACE-206, TRACE-148 or BGS-001; frozen R' is not refuted; registered 3307 / 1409 unchanged."
+    },
+    {
+      "id": "BGS-TRACE-342",
+      "state": "proved",
+      "source": "computations/verification/h6_p0/REPORT_P4_v2.md",
+      "disposition": "4 November 2026 (P4 v2, H6 explicit p0 and Lemma W): proved [P] (Lemma W; referee audit/p4 CONFIRMED). Does not close TRACE-206, TRACE-148, TRACE-304 or BGS-001; frozen R' is not refuted."
+    },
+    {
+      "id": "BGS-TRACE-343",
+      "state": "conditional",
+      "source": "computations/verification/h6_p0/REPORT_P4_v2.md",
+      "disposition": "4 November 2026 (P4 v2, H6 explicit p0 and Lemma W): conditional [P + CA] (explicit H6/Theorem C' threshold 8V p0 = 28,424,695, 8E p0 = 3,934; mod u = 1, h_p squarefree, inherited N4/N2 constants; referee audit/p4 fixes 1-6 applied). Does not close TRACE-206, TRACE-148, TRACE-304 or BGS-001; frozen R' is not refuted."
     }
   ],
   "invariants": [

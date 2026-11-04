@@ -27,13 +27,13 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**376 maintained proof notes; 10 topic views; 424 core claim IDs.**
+**376 maintained proof notes; 10 topic views; 426 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
-| conditional | 23 |
+| conditional | 24 |
 | open | 42 |
-| proved | 341 |
+| proved | 342 |
 | refuted | 1 |
 | verification-pending | 17 |
 

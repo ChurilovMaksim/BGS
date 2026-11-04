@@ -588,7 +588,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**424 registered claims: 341 proved, 17 verification-pending, 23 conditional, 42 open, 1 refuted.**
+**426 registered claims: 342 proved, 17 verification-pending, 24 conditional, 42 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -754,7 +754,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (315 claims)
+### TRACE family (317 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -1073,5 +1073,7 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-339` | **PROVED** | Span theorem examples: alpha = 116 (N = 13456, span 13, internal zero run 9, span - L = 2.99966264991176), 82 sqrt2 (N = -13448, span 11, run 7, span - L = 1.00033740024809), 118 (N = 13924, span 13, run 3, span - L = 2.96087221277804); alpha = 2 attains floor(L) + 3 = 3 |
 | `BGS-TRACE-340` | **CONDITIONAL** | Lemma BI (background interplay, P2): under hypothesis (M) the coded gas factorises exactly as Z = Z_M * Ztilde over decorated bad polymers, and KP gives \|ln Ztilde\| <= p Stilde_0, i.e. \|Z\| >= \|Z_M\| e^{-p Stilde_0}; conditional on (M) and on the unproved per-site normalisation of A_M |
 | `BGS-TRACE-341` | **CONDITIONAL** | Sharp-span Prop. K crossover rows [P-arith], conditional on H1-bad: bare-activity majorant 3299 -> 3067 at C = 0.082, J0 = 12 (interplay not charged); with Lemma BI (conditional on (M)) 3389 at the minimal KP weight / 3407 at the x1.02 iterate; 1409 at C = 8.8e-4 unchanged; registered 3307 / 1409 unchanged |
+| `BGS-TRACE-342` | **PROVED** | Lemma W [P]: for odd primes p and q with q \| h_p = (eps^p + epsbar^p)/2, eps = 1 + sqrt2: q = +-1 (mod 2p); hence p does not divide h_p, the j-th smallest prime factor of h_p is >= pj - 1, and omega(h_p) <= w_max(p) := max{w : (p-1)^w w! <= eps^p} |
+| `BGS-TRACE-343` | **CONDITIONAL** | H6 / Theorem C' explicit threshold [P + CA, mod inherited N4 Lambda, kappa_F and N2 r_2; given h_p squarefree and the torus normalisation u = 1]: for 8V (k = 4000) the unit-point cross part at c = h_p is < T^{3p} = 1.28359^{3p} for every prime p >= 28,424,695 with h_p squarefree; for 8E (k = 1000) for p >= 3,934 |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

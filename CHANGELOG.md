@@ -1,5 +1,13 @@
 # Scientific changelog
 
+## 2026-11-04 — H6 explicit p0 and Lemma W (BGS-TRACE-342 proved, BGS-TRACE-343 conditional)
+
+P4 v2 after the referee audit ([REPORT_P4_v2](computations/verification/h6_p0/REPORT_P4_v2.md),
+[receipt](evidence/executions/20261104/h6_p0/receipt.json)). BGS-TRACE-342: Lemma W, proved, with the finite Lean kernel
+check `formalization/Bgs/H6LemmaW.lean`. BGS-TRACE-343: explicit H6 / Theorem C′ threshold (8V p0 = 28,424,695;
+8E p0 = 3,934), conditional. These ids were first registered as BGS-TRACE-337/338 on this branch and renumbered before
+merge, because PR #88 registers BGS-TRACE-337..341 for the span theorem. No existing claim state changed.
+
 ## 2026-11-04 — Lean batch 6b: TRACE-214 and TRACE-218 for summable kicks (no state changes)
 
 Two new modules (`LineIRegroupSummable`, `LineIHorocycleSummable`; 10 theorems, no `sorry`, no `native_decide`, axioms
