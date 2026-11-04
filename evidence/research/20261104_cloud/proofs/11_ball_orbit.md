@@ -1,6 +1,6 @@
 # Ball bounds on the phased lambda-carry orbit
 
-Status: **[CA]** for every box whose log is cited below, on the computed prefix of the orbit. **[N]** is not used for those prefixes. Boxes that this process has not finished are not given a tag here. The identification of the sharp box with the full bounded carry is **[P]**, proved in `10_green_tail.md`. H1 is not closed.
+Status: **[CA]** for every box in the table below, on the computed prefix of the orbit. **[N]** is not used for those prefixes. Boxes this process has not finished are not in the table. The identification of the sharp box with the full bounded carry is **[P]**, proved in `10_green_tail.md`. H1 is not closed.
 
 ## The map that is enclosed
 
@@ -50,12 +50,21 @@ P_* is the maximum of the upper envelope. “Last rate” is the last computed s
 | 1 | 8 | [0.272542088, 0.272559982] | [0.234898, 0.234930] | 6.92654067 | 5.04×10^{-5} |
 | 2 | 8 | [0.272539508, 0.272562561] | [0.150246, 0.150272] | 10.8328510 | 6.55×10^{-5} |
 | 3 | 8 | [0.272538158, 0.272563909] | [0.115400, 0.115422] | 14.1082483 | 7.35×10^{-5} |
+| 4 | 8 | [0.272537442, 0.272564622] | [0.093046, 0.093065] | 17.5072948 | 7.77×10^{-5} |
+| 5 | 6 | [0.272549139, 0.272549383] | [0.076570175, 0.076570317] | 21.2895613 | 6.97×10^{-7} |
+| 6 | 6 | [0.272548446, 0.272548690] | [0.064878635, 0.064878755] | 25.1398208 | 6.99×10^{-7} |
 
 E = 1 opens 0.9162133165, 0.5742382743, 0.2890025980, then steps below 0.28. That is the published prefix. The upper envelope of P_n is 3.272, 6.711, 6.927, 6.766, 6.587, 6.411, 6.241, 6.075. The maximum is the third term.
 
 E = 2 opens 1.3640659991, the published first digit string, and its upper envelope peaks at 10.8328510, again at the third step. The binary64 prefactor in `09_phase_carry.md` was 10.833. The disk run reproduces it from above.
 
 E = 3 opens 1.7315921782 and 0.6184123690. There is no published E = 3 log to match. The upper envelope peaks at 14.1082483, still at the third step, and the last rate interval lies strictly below 0.28. The relative disk width at the end is 7.35×10^{-5}. The same factor, about 10 per step, appears on every box so far.
+
+E = 4 opens 2.1335094588, 0.6235919423, 0.2888670933. Those are the published `g_carry_E4` digits. The upper envelope peaks at 17.5072948, the binary64 value 17.507 read from above. The (0,0) share at step 5 is 0.093055, the same digits as the binary64 run. The last disk is the widest of the eight, and it still lies below 0.28.
+
+E = 5 was stopped at six steps, before the wrapping had widened the disk. The last rate interval has width 2.4×10^{-7}. The prefix prefactor is 21.2895613. The first step is 2.5730702482. Six steps are enough for the peak, which is still the third step on every box.
+
+E = 6 opens at 2.9887379853. The prefix prefactor is 25.1398208, against the binary64 value 25.140. The (0,0) share is 0.0648786, against the binary64 0.064879. The last rate interval has width 2.4×10^{-7} and lies under 0.27255.
 
 E = 0 and E = 1 were run with the same disk rules. The generation-popping change used for the later boxes does not alter the arithmetic.
 

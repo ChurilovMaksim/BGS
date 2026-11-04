@@ -72,7 +72,7 @@ python3 phase_carry_ball.py 1 8
 python3 phase_carry_ball.py range 2 14
 ```
 
-`green_tail.py` uses flint precision 200. `phase_carry_ball.py` builds the blocks at flint precision 80, stores complex128 midpoints and float64 radii, and propagates entrywise disks. The product bound uses γ = 9.77×10^{-14} and a radius-product margin θ = 10^{-8}. Logs: `green_tail.json`, `phase_carry_ball_E0.json` through `phase_carry_ball_E3.json`. The range process continues past E = 3; those later logs are not part of the hash list until they have been written and checked. Tag of the finished disk prefixes: [CA]. Tag of the cutoff: [P].
+`green_tail.py` uses flint precision 200. `phase_carry_ball.py` builds the blocks at flint precision 80, stores complex128 midpoints and float64 radii, and propagates entrywise disks. The product bound uses γ = 9.77×10^{-14} and a radius-product margin θ = 10^{-8}. Logs through `phase_carry_ball_E6.json` are the certified prefixes. The range process continues past E = 6; later logs are not hashed until they have been written and checked. Tag of the finished disk prefixes: [CA]. Tag of the cutoff: [P].
 
 ```text
 1708ed983202a6ad27bf05e858be9dfbe07cbf1141871974eed1d2a08f3936db  numerics/green_tail.py
@@ -82,8 +82,11 @@ be1ab3f166daf1d3bb6412e560a8f91b07aed2d576c7cf3ce7cbff5a068a3d71  numerics/logs/
 bea307c1314fc78c196411c38cac4a5403f12ce3205f2f66a4829fa96ca649fd  numerics/logs/phase_carry_ball_E1.json
 2396a67845858edc31947dc1ec92305a0e3159e0a32673efe8ce6ac09e9c13b4  numerics/logs/phase_carry_ball_E2.json
 a4a044006ad84e2befc9e9ad3e2f483bb491c6a9e0cd52f06ad6b37f245198f4  numerics/logs/phase_carry_ball_E3.json
+8636e9ff94e35d090523b51244989447b3553f44401dae1945e271ad8c1d9edd  numerics/logs/phase_carry_ball_E4.json
+3bb063561d7fbf708bd42359446d814357d2ea3df5da07016dc6e45b4a69e3a8  numerics/logs/phase_carry_ball_E5.json
+2f5b63f657ca924299d0f4b6782b5782c29717a688ea597c4e2815b2bfd32ce2  numerics/logs/phase_carry_ball_E6.json
 3b9e0c8c854400c521d70f843a41f1d14dbf10fa9d3364eb79adba7922efc3ff  proofs/10_green_tail.md
-b54fbe45e156438d8ec8b717ae733d1d19c83acc6189c456697270f09ff25178  proofs/11_ball_orbit.md
+6255d0a45bc932f59e831e03531b1ebeefccd4f6cb86e238f347e3949989a377  proofs/11_ball_orbit.md
 ```
 
 ```text
