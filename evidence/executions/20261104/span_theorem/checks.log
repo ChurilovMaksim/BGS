@@ -1,3 +1,4 @@
+EXIT 0 | computations/verification/bibliographic_metadata_audit.py --self-test | NON-CLAIM: metadata agreement and locator hits do not establish theorem applicability.
 EXIT 0 | computations/verification/repository_audit.py  | PASS repository_audit
 EXIT 0 | computations/verification/scientific_registry_audit.py  | scientific-registry-audit: OK (424 claims, 68 external dependencies)
 EXIT 0 | computations/maintenance/render_bibliography.py --check | bibliography-render: OK

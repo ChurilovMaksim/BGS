@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "8ecb9a1e3db31d79c0879432d5380917b945df2f",
+ "source_blob_sha": "c241798d901c98ba40d20c3112360f3c22fdf300",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -64,7 +64,8 @@
   "1 November 2026 (Lean batch 3, evidence/executions/20261101/lean_batch3/README.md): Lean links and lean_formalization tags added to BGS-TRACE-259, TRACE-267, TRACE-216, TRACE-143, FM-026, TRACE-178, and further Lean files appended to BGS-TRACE-211, TRACE-218, TRACE-229; links are partial except where formalization_scope says otherwise (BGS-FM-026: scope in the receipt). Dated Lean notes appended to the boundaries of BGS-TRACE-143 and TRACE-216. No state changed.",
   "1 November 2026 (Lean batch 4, evidence/executions/20261101/lean_batch4/README.md): Lean links and lean_formalization tags added to BGS-TRACE-204, TRACE-293, TRACE-254, TRACE-255, TRACE-273, and further Lean files appended to BGS-TRACE-267, TRACE-259, TRACE-218; all links are partial as stated in formalization_scope. No state changed.",
   "1 November 2026 (Lean batch 5, evidence/executions/20261101/lean_batch5/README.md): Lean links and lean_formalization tags added to BGS-TRACE-222, TRACE-214, TRACE-213, TRACE-317, and further Lean files appended to BGS-TRACE-218 and TRACE-293; all links are partial as stated in formalization_scope. No state changed.",
-  "4 November 2026 (Lean batch 6, evidence/executions/20261104/lean_batch6/README.md): Lean file LineI213Disjoint appended to BGS-TRACE-213 (disjointness of nu_rho and M_d(rho) from the congruence definition); the link stays partial as stated in formalization_scope. No state changed."
+  "4 November 2026 (Lean batch 6, evidence/executions/20261104/lean_batch6/README.md): Lean file LineI213Disjoint appended to BGS-TRACE-213 (disjointness of nu_rho and M_d(rho) from the congruence definition); the link stays partial as stated in formalization_scope. No state changed.",
+  "4 November 2026 (Lean batch 6b, evidence/executions/20261104/lean_batch6b/README.md): Lean files LineIHorocycleSummable and LineIRegroupSummable appended to BGS-TRACE-214 and BGS-TRACE-218 (summable, infinite-support kicks); coverage as stated in formalization_scope. No state changed."
  ],
  "claims": [
   {
@@ -11228,19 +11229,21 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 2,
+    "evidence": 3,
     "verifiers": 1,
-    "formalization": 1
+    "formalization": 2
    },
    "evidence": [
     "evidence/executions/20261031/lineI/receipt.json",
-    "evidence/executions/20261101/lean_batch5/README.md"
+    "evidence/executions/20261101/lean_batch5/README.md",
+    "evidence/executions/20261104/lean_batch6b/README.md"
    ],
    "verifiers": [
     "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
    ],
    "formalization": [
-    "formalization/Bgs/LineIHorocycle.lean"
+    "formalization/Bgs/LineIHorocycle.lean",
+    "formalization/Bgs/LineIHorocycleSummable.lean"
    ],
    "ledger_status": "ELEMENTARY PROOF (SIGN AND UNIT RESTRICTION CORRECTED IN REFEREE ROUND B6) + FLOAT CHECK (integration re-implementation, random c_k with |k| <= 40, m = 5, 7, 9, <= 1.7e-13) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
    "boundary": "Odd m, h = h_m, z_nu = (nu+i)/2h, f(x+iy) = sum_k c_k(y) e(kx) with sum_k |c_k(1/2h)| < infinity (only 1-periodicity in x is used), C(k) = sum_{n,n'} Phihat(n) conj(Phihat(n')) 1[P(n) - P(n') == k mod 2h], c_q the Ramanujan sum: (a) sum_{nu mod 2h} |Z_nu|^2 f(z_nu) = 2h sum_k c_k(1/2h) C(k); (b) sum_{nu unit} |Z_nu|^2 f(z_nu) = sum_k c_k(1/2h) sum_{n,n'} Phihat(n) conj(Phihat(n')) c_{2h}(k - P(n) + P(n')). The diagonal class P(n) == P(n') contributes C(0) times the UNWEIGHTED sum of f over the 2h (resp. phi(2h) primitive) horocycle points and meets every c_{2hj}; it is not invisible for cusp forms (the earlier 'diagonal invisible' statement is withdrawn and not registered). Using (b) for R' would need a horocycle equidistribution input with an explicit rate and C(0) = O(m); neither is part of this claim.",
@@ -11391,16 +11394,17 @@
    "unevidenced": false,
    "adverse_receipt": false,
    "receipt_counts": {
-    "evidence": 5,
+    "evidence": 6,
     "verifiers": 1,
-    "formalization": 5
+    "formalization": 6
    },
    "evidence": [
     "evidence/executions/20261031/lineI/receipt.json",
     "evidence/executions/20261101/lean_batch2/README.md",
     "evidence/executions/20261101/lean_batch3/README.md",
     "evidence/executions/20261101/lean_batch4/README.md",
-    "evidence/executions/20261101/lean_batch5/README.md"
+    "evidence/executions/20261101/lean_batch5/README.md",
+    "evidence/executions/20261104/lean_batch6b/README.md"
    ],
    "verifiers": [
     "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
@@ -11410,7 +11414,8 @@
     "formalization/Bgs/LineIMoebius.lean",
     "formalization/Bgs/LineISummable.lean",
     "formalization/Bgs/LineIRegroup.lean",
-    "formalization/Bgs/LineIMoebiusSummable.lean"
+    "formalization/Bgs/LineIMoebiusSummable.lean",
+    "formalization/Bgs/LineIRegroupSummable.lean"
    ],
    "ledger_status": "ELEMENTARY PROOF (ORTHOGONALITY AND MOEBIUS INVERSION; OVERSTATEMENT REMOVED IN DELTA FIX DF6) + FLOAT CHECK (integration re-implementation, every q | 2h with q <= 4000 and the Moebius form, m = 5, 7, 9, <= 2.4e-12) + INDEPENDENT REFEREE AUDIT (computations/verification/lineI/referee/REPORT.md; ACCEPT AFTER FIXES; B1-B9, R1-R7 and delta fixes DF1-DF7 applied)",
    "boundary": "Odd m, h = h_m, Z_m(theta) = sum_n Phihat(n) e(-theta P(n)), C_Z(k) = sum_{n,n'} Phihat(n) conj(Phihat(n')) 1[P(n) - P(n') = k] (in Z): for every q | 2h, (1/q) sum_{nu' mod q} |Z_m(nu'/q)|^2 = sum_{j in Z} C_Z(jq), and F_m = phi(2h)^-1 sum_{e | 2h} mu(e) (2h/e) sum_j C_Z(j 2h/e). Not claimed (heuristic/assessment): the e > 2 Moebius terms are sums at exact rationals of denominator dividing 2h/e (non-unit residues), while the BGS-TRACE-206 resonant residues are units near, not at, small-denominator rationals (related through the G2 law, not identical); reading the bulk as the e in {1,2}, j != 0 aliasing sum; Hecke-equivariance and L^2-in-m averaging give no cancellation.",
