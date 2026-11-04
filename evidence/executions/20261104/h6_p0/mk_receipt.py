@@ -6,7 +6,7 @@ files+=['formalization/Bgs/H6LemmaW.lean']+[str(p) for p in sorted(R.glob(E+'/**
 C={c['id']:c for c in json.load(open('record/claims.json'))['claims']}
 base=subprocess.check_output(['git','rev-parse','origin/main']).decode().strip()
 rec={'schema':'bgs-h6-p0-integration-receipt-v1','base':f'ChurilovMaksim/BGS origin/main {base[:8]}','branch':'h6-p0-lemmaW','prepared_on':'2026-11-04',
- 'ids':{i:C[i]['state'] for i in ('BGS-TRACE-337','BGS-TRACE-338')},
+ 'ids':{i:C[i]['state'] for i in ('BGS-TRACE-342','BGS-TRACE-343')},
  'author_report':f'{V}/REPORT_P4_v2.md (v1 kept as {V}/REPORT_P4_v1.md)','referee':f'{E}/referee/AUDIT.md (hostile referee audit/p4, 2026-11-04)',
  'referee_fixes_applied':['1: e^{beta Rc} in log K (beta Rc = 10 for 8V, 8.75 for 8E)','2: A_J <= 4/3 (both signs)','3: Lemma I one-step structure [P] (TRACE-197/249/294, cert_lift.py)','4: robust-variant wording; u-normalisation of (C1) stated as assumption','5: eps_0/eps renamed eps_u','6: H1-bad [P] -> [assessment]; J0 = 12 registered'],
  'arb_rerun':{'command':f'cd {V} && python code/h6_p0.py && python code/h6_variants.py','python':'3.13.5, python-flint 0.9.0 (arb, 128-bit)','wall_seconds':11,

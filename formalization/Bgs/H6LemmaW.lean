@@ -1,4 +1,4 @@
-/-! Lemma W (BGS-TRACE-337), finite kernel check at small p. No sorry, no native_decide.
+/-! Lemma W (BGS-TRACE-342), finite kernel check at small p. No sorry, no native_decide.
 h_n = (ε^n + ε̄^n)/2 for ε = 1 + √2, via h_0 = h_1 = 1, h_{n+2} = 2 h_{n+1} + h_n.
 Lemma W says every prime q ∣ h_p (p odd prime) satisfies q ≡ ±1 (mod 2p); since the classes ±1 are closed
 under multiplication, every divisor d > 1 of h_p is then ≡ ±1 (mod 2p). The theorems below check this

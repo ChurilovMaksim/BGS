@@ -22,7 +22,7 @@ v2 changes vs v1: (1) e^{βRc} added to log K (βRc = 10 for 8V, 8.75 for 8E); (
   - P4 uses 4036. The effect on p0 is about +130, since log(4036/2966) = 0.31 (§1.6).
 
 ## 1. H6 — explicit p0 for Theorem C' (unit points at h_p)
-Registry: **BGS-TRACE-338** (conditional; record/claims.json).
+Registry: **BGS-TRACE-343** (conditional; record/claims.json).
 
 ### 1.1 The certified chain
 Notation follows N2 Thm B/C, N3 Lemma I, Line L Lemma O1/OP_abs, and N2 Prop E. Fix F, k and the clamp a = 1:
@@ -165,7 +165,7 @@ The robust ball removes the question of which embedding carries λ^j in the freq
 6. **Inherited [CA], not re-run:** Λ^{8V} ≤ 1.9656353, κ_F = 4036, Λ^{8E} ≤ 0.4915932, κ = 4.3e4 (N4). r_2 *was* re-run.
 
 ## 2. Lemma W
-Registry: **BGS-TRACE-337** (proved; record/claims.json). Lean finite check: `formalization/Bgs/H6LemmaW.lean`.
+Registry: **BGS-TRACE-342** (proved; record/claims.json). Lean finite check: `formalization/Bgs/H6LemmaW.lean`.
 
 ### 2.1 Statement and proof [P]
 **Lemma W.** Let ε = 1+√2, ε̄ = 1−√2, O = ℤ[√2], p an odd prime, and h_p = (ε^p + ε̄^p)/2.

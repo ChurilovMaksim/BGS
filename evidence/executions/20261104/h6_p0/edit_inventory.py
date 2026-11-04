@@ -4,9 +4,9 @@ dump=lambda o: json.dumps(o,indent=1,ensure_ascii=False,separators=(',',': ')); 
 C={c['id']:c for c in json.load(open('record/claims.json',encoding='utf-8'))['claims']}
 F=('title','state','ledger_status','boundary','evidence','verifiers','formalization')
 ids={r['id'] for r in v['claims']}
-new={'BGS-TRACE-337':dict(methods=['analytic_proof','computer_certificate','independent_review','lean_formalization'],ledger=['analytic_proof','computer_certificate','independent_review'],
+new={'BGS-TRACE-342':dict(methods=['analytic_proof','computer_certificate','independent_review','lean_formalization'],ledger=['analytic_proof','computer_certificate','independent_review'],
         spof='single_verifier_implementation_only',detail='[P] paper proof (verified line by line, referee audit/p4); [N] exact trial division q < 1e8 (lemmaW_trial.py) and referee big-int replay (lw.py); Lean checks the divisor classes at p <= 13 and p, 2 not dividing h_p for p < 100 only.'),
-     'BGS-TRACE-338':dict(methods=['computer_certificate','independent_review','conditional_input'],ledger=['computer_certificate','independent_review','conditional_input'],
+     'BGS-TRACE-343':dict(methods=['computer_certificate','independent_review','conditional_input'],ledger=['computer_certificate','independent_review','conditional_input'],
         spof='conditional_on_unproved_input',detail='[P + CA] arb interval cover + analytic tail (h6_p0.py, restart-on-failure), referee mpmath replay (indep.py); conditional on u = 1 in (C1), h_p squarefree and inherited N4/N2 [CA] constants; 8V/8E only.')}
 for i,m in new.items():
     assert i not in ids; c=C[i]
