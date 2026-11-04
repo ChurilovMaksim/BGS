@@ -19,3 +19,10 @@ rows, `CHANGELOG.md`.
 
 Files: `lake_build_Bgs.log` (full `lake build` via `build_lean_verified.sh`), `build_wrapper.out`, `Axioms.lean`, `axioms.log`,
 `checks.log`, `unittests.log`, `scripts/`.
+
+Tests: `repository_audit.py` PASS; `scientific_registry_audit.py` OK (419 claims); `render_*.py --check` and
+`frozen_packets.py --check` OK (`checks.log`). Maintenance unittests (`unittests.log`): 266 run, 261 pass, 1 skipped,
+4 errors, all environmental on a box shared with three concurrent Lean builds: `test_fractional_routing` (child
+`check_routing.py` exceeded its 30 s timeout) and three `test_schur_portability` cases (repository copy failed on
+`.lake` Mathlib build files changing during the copy). None touches files changed in this batch; a rerun of those two
+modules under the same load gave the same 4 errors.
