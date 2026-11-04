@@ -7727,16 +7727,18 @@
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261031/lineI/receipt.json",
-        "evidence/executions/20261101/lean_batch5/README.md"
+        "evidence/executions/20261101/lean_batch5/README.md",
+        "evidence/executions/20261104/lean_batch6/README.md"
       ],
       "verifiers": [
         "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
       ],
       "formalization": [
-        "formalization/Bgs/LineIReduction.lean"
+        "formalization/Bgs/LineIReduction.lean",
+        "formalization/Bgs/LineI213Disjoint.lean"
       ],
       "manuscript": [],
-      "formalization_scope": "Partial: the exact identity W'_m = phi^-1 sum_{nu unit, not resonant} (|Z_nu|^2 - RMT_m) + phi^-1 sum_{rho, d incl.} Dev_d(rho), Dev_d(rho) = sum_{nu in M_d(rho)} (|Z_nu|^2 - |Z_rho|^2/d^2), from the frozen definitions of F_m, Res_m and W'_m, assuming that the sets {nu_rho} and M_d(rho) are pairwise disjoint units. Not formalized: that disjointness from the congruence definition, and the sufficiency (E''), (T''), (D) => R'."
+      "formalization_scope": "Partial: the exact identity W'_m = phi^-1 sum_{nu unit, not resonant} (|Z_nu|^2 - RMT_m) + phi^-1 sum_{rho, d incl.} Dev_d(rho), Dev_d(rho) = sum_{nu in M_d(rho)} (|Z_nu|^2 - |Z_rho|^2/d^2), from the frozen definitions of F_m, Res_m and W'_m (LineIReduction), and the pairwise disjointness of the classes {nu_rho} and the member sets M_d(rho) (rho in P*, levels d | h with d^2 <= h, nu_rho the d = 1 case) derived from the congruence definition for h > 1 with h^2 + 1 = 2y^2 (LineI213Disjoint: same rho via gcd(d, d'), different rho via h odd and 3 not dividing h; reduction_congr gives the identity with the member sets defined by the congruences). Not formalized: the sufficiency (E''), (T''), (D) => R' (the o(m) and diagonal arguments)."
     },
     {
       "id": "BGS-TRACE-214",

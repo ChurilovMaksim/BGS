@@ -1,0 +1,7 @@
+EXIT 0 | computations/verification/scientific_registry_audit.py | scientific-registry-audit: OK (419 claims, 68 external dependencies)
+EXIT 0 | computations/verification/repository_audit.py | PASS repository_audit
+EXIT 0 | computations/maintenance/render_results.py --check | results-render: OK
+EXIT 0 | computations/maintenance/render_claim_registry.py --check | claim-registry-render: OK
+EXIT 0 | computations/maintenance/render_status.py --check | status-render: OK
+EXIT 0 | computations/maintenance/render_research_views.py --check | Research navigation views synchronized
+EXIT 0 | computations/maintenance/frozen_packets.py --check | frozen-packets: OK (39 packet directories, 368 registered files, all byte-identical and exempt)

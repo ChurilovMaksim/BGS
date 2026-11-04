@@ -1,5 +1,15 @@
 # Scientific changelog
 
+## 2026-11-04 — Lean batch 6: TRACE-213 disjointness (no state changes)
+
+New module `formalization/Bgs/LineI213Disjoint.lean` (7 `theorem`/`lemma` declarations, no `sorry`, no `native_decide`,
+axioms within {propext, Classical.choice, Quot.sound}): the pairwise disjointness of the classes ν_ρ and the member sets
+M_d(ρ) of the frozen definition (BGS-TRACE-206), derived from the congruence definition for h_m > 1 (h² + 1 = 2y′²), and
+the exact identity of BGS-TRACE-213 with the disjointness hypothesis discharged (`reduction_congr`). BGS-TRACE-213 stays
+**partial** ((E″), (T″), (D) ⇒ R′ not formalized); its `formalization_scope` is updated. `lake build` completed (8895 jobs);
+171 non-open claims link Lean, out of 188 modules, 2416 declarations. Receipt:
+[lean_batch6](evidence/executions/20261104/lean_batch6/README.md).
+
 ## research-2026.11.1 — release preparation (no state changes)
 
 Release tag research-2026.11.1, prepared on 2026-11-03 from main at b6e0d26; it covers merged PRs #51–#80 since
