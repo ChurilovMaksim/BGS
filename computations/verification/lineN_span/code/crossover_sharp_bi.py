@@ -10,6 +10,8 @@ Inputs: lineN15/logs/a_cert3.jsonl (j <= 12), N20 a_cert_ext*.jsonl (j = 13, 14)
 logs/span_census_J16.jsonl (run span_census.py 16 first).
 Output: computations/verification/lineN_span/logs/crossover_sharp_bi.json
 """
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[4]
 LOG = ROOT / 'computations/verification/lineN_span/logs'

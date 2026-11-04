@@ -11,6 +11,8 @@ PR #83 / PR #85 code.
 Usage: python3 span_census.py [J=16]     (from the repository root)
 Outputs: computations/verification/lineN_span/logs/span_census_J{J}.json and .jsonl
 """
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
 import json, math, sys, time, pathlib
 from math import isqrt
 from collections import Counter
