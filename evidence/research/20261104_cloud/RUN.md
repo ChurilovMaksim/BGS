@@ -45,4 +45,23 @@ The constant c = log(1+6.234×10^{-4}) − 5.0313×10^{-6} and exp(−4c) were c
 
 ## Non-claims
 
-The run does not prove H1, H3, frozen R′, or BGS-BGS-001. It does not certify B_p > 0 at any prime. The primes 3067 and 1409 are conditional on H1 and on the idealised additive budgets. Shell 16 is the end of the span and alphabet census. The background factor is proved inside the point-insertion model only. The phase-keeping operator on 24 580 vertices was not built.
+The run does not prove H1, H3, frozen R′, or BGS-BGS-001. It does not certify B_p > 0 at any prime. The primes 3067 and 1409 are conditional on H1 and on the idealised additive budgets. Shell 16 is the end of the span and alphabet census. The background factor is proved inside the point-insertion model only.
+
+## Transfer operator (same day, later)
+
+From `evidence/research/20261104_cloud/numerics/`:
+
+```text
+python3 transfer_24580.py
+```
+
+Python 3.12.3, numpy 1.26.4, scipy 1.18.1, python-flint 0.9.0, flint precision 128. Runtime about 110 s. The script rebuilds the 6145 closed carry states, forms the 24 580-vertex graph, and certifies Collatz–Wielandt bounds. A separate Kahn pass on the letters u ∈ {−1, 0, +1} eliminated all 24 580 vertices (`logs/dag_u01.json`). A strictly positive perturbation certifies ρ ≤ 0.25911138182 at uniform off-diagonal weight 0.003 (`logs/transfer_upper_0.003.json`).
+
+The sesquilinear blocks were not formed. The letter weights are the N14 float table. The certified radii belong to that norm majorant.
+
+```text
+e079cb4fc94b3a1d44ce6093b68ab4a4b3765d26b48560b55c30666b1b8d608f  numerics/transfer_24580.py
+ca7967187136fc3ba8890127c9fe98e083ff0fc5b9f25ef722f92a55732e2292  numerics/logs/transfer_24580.json
+31325ab6c1c6ab1d6cbe8b637bf27c3b5327a734efdbc367e25e78d9cd8cff25  numerics/logs/dag_u01.json
+c05d29a7aac8b2f41b59dce347dc8d21ec028b548d31b1a48c2b02e1ec99c37d  numerics/logs/transfer_upper_0.003.json
+```

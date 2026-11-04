@@ -12,6 +12,8 @@ Independent pass on the open gate of Theorem R♯-mod v5 (BGS-TRACE-325): hypoth
 | `proofs/05_digit_alphabet.md` | [P] Code letters lie in {−1, 0, 1} |
 | `proofs/06_background_factor.md` | [P in the point-insertion model] \|w̃/w\| ≤ exp(−c ℓ) < 1, so 3067 stays sufficient |
 | `proofs/07_phasekeeping_gap.md` | [P] The order-unit prefactor misses C ≤ 8.8×10^{-4} by 1.3×10^4 |
+| `proofs/08_transfer_24580.md` | [CA], weights [N]: norm majorant on 24 580 vertices has ρ ≥ 571.90, so the prefactor at rate 0.28 is infinite |
+| `numerics/transfer_24580.py` | Exact graph, power iteration, flint Collatz bounds |
 | `SELF_REFEREE.md` | Corrections and the bounds of the tags |
 | `numerics/span_exact.py` | Exact integer digits, census through shell 16 |
 | `numerics/kp_sharp.py` | Ball arithmetic for the tail and the crossover |
