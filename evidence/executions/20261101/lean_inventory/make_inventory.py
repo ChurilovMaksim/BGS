@@ -69,8 +69,8 @@ cur={x['id']:x for x in json.load(open('record/claims.json',encoding='utf-8'))['
 def status(i):
   x=cur[i]
   if not x['formalization']: return 'no Lean link'
-  bs=sorted({m.group(1) for e in x['evidence'] for m in [re.search(r'lean_batch(\d)',e)] if m})
-  part='full' if x.get('formalization_scope','').startswith('Prop I1') else 'partial'
+  bs=sorted({m.group(1) for e in x['evidence'] for m in [re.search(r'lean_batch(\d[a-z]?)',e)] if m})
+  part='full' if x.get('formalization_scope','').startswith(('Prop I1','Full')) else 'partial'
   return part+' (batch '+'/'.join(bs)+'): '+', '.join('`'+f.split('/')[-1]+'`' for f in x['formalization'])
 rows=[];cnt=collections.Counter()
 lean_have=[x for x in pc if x['formalization']]
@@ -93,7 +93,7 @@ linked=collections.Counter(r[3] for r in rows if cur[r[0]]['formalization'])
 left=collections.Counter(r[3] for r in rows if not cur[r[0]]['formalization'])
 nonopen_cur=sum(1 for x in cur.values() if x['state']!='open' and x['formalization'])
 mods=len(glob.glob('formalization/Bgs/**/*.lean',recursive=True))
-L.append(f'**Current status (after Lean batches 1-5, receipts `evidence/executions/20261101/lean_batch{{1,2,3,4,5}}/`):** of the {len(rows)} baseline claims, {sum(linked.values())} now link Lean (class (a) {linked["a"]}, class (b) {linked["b"]}, class (c) {linked["c"]}); {sum(left.values())} still have no Lean link (class (a) {left["a"]}, class (b) {left["b"]}, class (c) {left["c"]}). Registry-wide, {nonopen_cur} non-open claims link Lean; {mods} modules in `formalization/Bgs`. Every batch link is partial unless the status column says full; the scope of each link is its `formalization_scope` field in `record/claims.json` (BGS-FM-001, FM-009, FM-026: in the batch receipt, sealed rows).\n')
+L.append(f'**Current status (after Lean batches 1-5 and 6b, receipts `evidence/executions/20261101/lean_batch{{1,2,3,4,5}}/` and `evidence/executions/20261104/lean_batch6b/`):** of the {len(rows)} baseline claims, {sum(linked.values())} now link Lean (class (a) {linked["a"]}, class (b) {linked["b"]}, class (c) {linked["c"]}); {sum(left.values())} still have no Lean link (class (a) {left["a"]}, class (b) {left["b"]}, class (c) {left["c"]}). Registry-wide, {nonopen_cur} non-open claims link Lean; {mods} modules in `formalization/Bgs`. Every batch link is partial unless the status column says full; the scope of each link is its `formalization_scope` field in `record/claims.json` (BGS-FM-001, FM-009, FM-026: in the batch receipt, sealed rows).\n')
 L.append('## Proved/conditional claims already linking Lean\n')
 L.append(', '.join(f'`{x["id"]}`' for x in lean_have)+'\n')
 L.append('## Proved/conditional claims without Lean (before batch 1)\n')

@@ -1,5 +1,14 @@
 # Scientific changelog
 
+## 2026-11-04 — Lean batch 6b: TRACE-214 and TRACE-218 for summable kicks (no state changes)
+
+Two new modules (`LineIRegroupSummable`, `LineIHorocycleSummable`; 10 theorems, no `sorry`, no `native_decide`, axioms
+within {propext, Classical.choice, Quot.sound}). BGS-TRACE-218: regrouping of absolutely convergent pair series into
+Σ_j C_Z(jq), so both identities (aliasing and Möbius in C_Z form) hold for every kick with Σ|Φ̂| < ∞. BGS-TRACE-214:
+identities (a) and (b) of Lemma I5′ for every kick with Σ|Φ̂| < ∞. Both rows now state full coverage of the identities in
+`formalization_scope` (remarks and heuristic assessment excluded); BGS-TRACE-222 unchanged. No boundary or state changed.
+189 modules, 2419 `theorem`/`lemma` declarations. Receipt: [lean_batch6b](evidence/executions/20261104/lean_batch6b/README.md).
+
 ## research-2026.11.1 — release preparation (no state changes)
 
 Release tag research-2026.11.1, prepared on 2026-11-03 from main at b6e0d26; it covers merged PRs #51–#80 since

@@ -7749,16 +7749,18 @@
       "external_dependencies": [],
       "evidence": [
         "evidence/executions/20261031/lineI/receipt.json",
-        "evidence/executions/20261101/lean_batch5/README.md"
+        "evidence/executions/20261101/lean_batch5/README.md",
+        "evidence/executions/20261104/lean_batch6b/README.md"
       ],
       "verifiers": [
         "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
       ],
       "formalization": [
-        "formalization/Bgs/LineIHorocycle.lean"
+        "formalization/Bgs/LineIHorocycle.lean",
+        "formalization/Bgs/LineIHorocycleSummable.lean"
       ],
       "manuscript": [],
-      "formalization_scope": "Partial: for finitely supported kicks and weights f(z_nu) = sum_k c_k e(k nu/M) with sum |c_k| < infinity: (a) sum_{nu mod M} |Z_nu|^2 f(z_nu) = M sum_k c_k C(k), C(k) = sum_{n,n'} Phihat(n) conj Phihat(n') 1[P(n) - P(n') == k mod M], and (b) sum_{nu unit} |Z_nu|^2 f(z_nu) = sum_k c_k sum_{n,n'} Phihat(n) conj Phihat(n') c_M(k - P(n) + P(n')), c_M the Ramanujan sum. Not formalized: summable (infinite-support) kicks; the remarks on the diagonal class and the R' use."
+      "formalization_scope": "Full for the two identities: for every kick with sum |Phihat| < infinity (finite support in LineIHorocycle, infinite support with absolutely convergent pair series in LineIHorocycleSummable) and weights f(z_nu) = sum_k c_k e(k nu/M) with sum |c_k| < infinity: (a) sum_{nu mod M} |Z_nu|^2 f(z_nu) = M sum_k c_k C(k), C(k) = sum_{n,n'} Phihat(n) conj Phihat(n') 1[P(n) - P(n') == k mod M], and (b) sum_{nu unit} |Z_nu|^2 f(z_nu) = sum_k c_k sum_{n,n'} Phihat(n) conj Phihat(n') c_M(k - P(n) + P(n')), c_M the Ramanujan sum. Not formalized (not identities of the claim): the remarks on the diagonal class and on the R' use."
     },
     {
       "id": "BGS-TRACE-215",
@@ -7863,7 +7865,8 @@
         "evidence/executions/20261101/lean_batch2/README.md",
         "evidence/executions/20261101/lean_batch3/README.md",
         "evidence/executions/20261101/lean_batch4/README.md",
-        "evidence/executions/20261101/lean_batch5/README.md"
+        "evidence/executions/20261101/lean_batch5/README.md",
+        "evidence/executions/20261104/lean_batch6b/README.md"
       ],
       "verifiers": [
         "computations/verification/lineI/integration_checks/lineI_identity_checks.py"
@@ -7873,10 +7876,11 @@
         "formalization/Bgs/LineIMoebius.lean",
         "formalization/Bgs/LineISummable.lean",
         "formalization/Bgs/LineIRegroup.lean",
-        "formalization/Bgs/LineIMoebiusSummable.lean"
+        "formalization/Bgs/LineIMoebiusSummable.lean",
+        "formalization/Bgs/LineIRegroupSummable.lean"
       ],
       "manuscript": [],
-      "formalization_scope": "Partial: the first identity (1/q) sum_{nu mod q} |Z_m(nu/q)|^2 = sum_{n,n'} Phihat(n) conj Phihat(n') 1[q | P(n) - P(n')] for every q >= 1, for finite support and for sum |Phihat| < infinity (pair series); the Moebius formula F_m = phi(2h)^-1 sum_{e | 2h} mu(e) (2h/e) sum_{pairs} 1[(2h/e) | P(n) - P(n')] for finite support and for sum |Phihat| < infinity (pair series, LineIMoebiusSummable); for finite support also the regrouping into sum_{j in Z} C_Z(j q) and the Moebius formula in C_Z form (LineIRegroup). Not formalized: the regrouping of absolutely convergent pair series into sum_j C_Z; the heuristic assessment is not part of the claim."
+      "formalization_scope": "Full for the two identities: for every q >= 1, (1/q) sum_{nu mod q} |Z_m(nu/q)|^2 = sum_{j in Z} C_Z(j q), and F_m = phi(2h)^-1 sum_{e | 2h} mu(e) (2h/e) sum_{j in Z} C_Z(j 2h/e), for finite support (LineIAliasing, LineIMoebius, LineIRegroup) and for every kick with sum |Phihat| < infinity, C_Z(k) then an absolutely convergent pair series (LineISummable, LineIMoebiusSummable, and the regrouping of the pair series into sum_j C_Z in LineIRegroupSummable). Not formalized: the heuristic assessment, which is not part of the claim."
     },
     {
       "id": "BGS-TRACE-219",

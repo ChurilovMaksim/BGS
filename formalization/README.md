@@ -143,6 +143,8 @@ imports Mathlib, which this project does not vendor as in-repo sources (`lake-ma
 | `LineIReduction.lean` | `Bgs.LineIReduction` (BGS-TRACE-213, 317, partial; batch 5): `reduction` (W′_m = φ⁻¹Σ_{non-res}(\|Z_ν\|² − RMT) + φ⁻¹ΣDev_d(ρ), disjointness assumed), `rmt_le`, `NR_ge`, `Dev_ge`. The disjointness proof and (E″), (T″), (D) ⇒ R′ are **not** formalised. |
 | `LineIMoebiusSummable.lean` | `Bgs.LineIMoebiusSummable` (BGS-TRACE-218, summable Möbius; batch 5): `FmS_moebius` (Möbius formula for Σ\|Φ̂\| < ∞, pair series). |
 | `LineN3SignConjComposite.lean` | `Bgs.LineN3SignConjComposite` (BGS-TRACE-293, composite levels; batch 5): `inherit_conj`, `prime_inherit_conj`, with the BGS-TRACE-228 inheritance as hypothesis. |
+| `LineIRegroupSummable.lean` | `Bgs.LineIRegroupSummable` (BGS-TRACE-218, summable regrouping; batch 6b): `regroup_tsum`, `pairs_eq_tsum_CZS`, `aliasing_CZS` ((1/q)Σ_ν\|Z(ν/q)\|² = Σ_j C_Z(jq)), `FmS_CZS` (Möbius formula in C_Z form), for Σ\|Φ̂\| < ∞. |
+| `LineIHorocycleSummable.lean` | `Bgs.LineIHorocycleSummable` (BGS-TRACE-214, summable kicks; batch 6b): `interchangeG`, `pair_charS`, `char_sumS`, `horocycle_allS` ((a)), `horocycle_unitsS` ((b), Ramanujan sums), for Σ\|Φ̂\| < ∞ and Σ\|c_k\| < ∞. |
 
 The former isolated `CayleyExceptionalK23.lean` was folded into
 `CayleyEnergy.lean`; generic and exceptional controls share one implementation.
