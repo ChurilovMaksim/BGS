@@ -230,6 +230,12 @@ protocol. A successful LaTeX build is typesetting evidence, not proof evidence.
 
 ## Current integration and verification
 
+On 4 November 2026 the PDF was rebuilt after cosmetic source edits ("eta two" → η = 2 in two titles; the conclusion's
+"Draft note" relabelled "Scope note"): Tectonic 0.17.0, PASS, 381 pages, PDF sha256
+5b122d0278412e10e26d21187d833060c4f369891fe784a0b0a86ab72c83a708, receipt in
+[`evidence/executions/20261104/breakthrough_audit/`](../evidence/executions/20261104/breakthrough_audit/README.md).
+The paragraph below describes the 1 November build.
+
 The 28 October Aristotle integration updates the canonical TeX sources (the
 claim index, provenance appendix, tomography chapter and conclusion) and carries
 the ERR-060 pure-loss correction without replacing earlier manuscript sections.

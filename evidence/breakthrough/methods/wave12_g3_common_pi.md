@@ -227,11 +227,11 @@ is claimed as a Lean theorem; §3b is a proof sketch with a named gap,
 
 ## Files
 
-- This note: [wave12_g3_common_pi.md](sandbox://workspace/bgs-breakthrough/methods/wave12_g3_common_pi.md)
-- Abstract obstructions: [wave12_g3_abstract.py](sandbox://workspace/bgs-breakthrough/methods/wave12_g3_abstract.py) (t=2),
-  [wave12_g3_abstract_t4.py](sandbox://workspace/bgs-breakthrough/methods/wave12_g3_abstract_t4.py) (t=4)
-- Pair-contingency test: [wave12_g3_pair_contingency.py](sandbox://workspace/bgs-breakthrough/methods/wave12_g3_pair_contingency.py)
-- Full m=12 random check: [wave12_g3_random_m12.py](sandbox://workspace/bgs-breakthrough/methods/wave12_g3_random_m12.py)
-- Prior notes used: [wave11_perclass_proof.md](sandbox://workspace/bgs-breakthrough/methods/wave11_perclass_proof.md),
-  [wave11_perclass_pattern_proof.md](sandbox://workspace/bgs-breakthrough/methods/wave11_perclass_pattern_proof.md),
-  [wave11_task3_pi2pi3_compatibility.md](sandbox://workspace/bgs-breakthrough/methods/wave11_task3_pi2pi3_compatibility.md)
+- This note: [wave12_g3_common_pi.md](wave12_g3_common_pi.md)
+- Abstract obstructions: [wave12_g3_abstract.py](wave12_g3_abstract.py) (t=2),
+  [wave12_g3_abstract_t4.py](wave12_g3_abstract_t4.py) (t=4)
+- Pair-contingency test: [wave12_g3_pair_contingency.py](wave12_g3_pair_contingency.py)
+- Full m=12 random check: [wave12_g3_random_m12.py](wave12_g3_random_m12.py)
+- Prior notes used: [wave11_perclass_proof.md](wave11_perclass_proof.md),
+  [wave11_perclass_pattern_proof.md](wave11_perclass_pattern_proof.md),
+  [wave11_task3_pi2pi3_compatibility.md](wave11_task3_pi2pi3_compatibility.md)

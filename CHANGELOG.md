@@ -1,5 +1,16 @@
 # Scientific changelog
 
+## 2026-11-04 — Breakthrough-package audit, SevenPrimary kernel checks, boundary wording, manuscript cosmetics (no state changes)
+
+Audit of the breakthrough research record: no overclaim about BGS, TRACE-005, R′ or TRACE-325; the index now separates the
+two meanings of "G3" (wave-6 S-bound modulo G4 vs. wave-12 common π, not proved); 65 dead `sandbox://` links in 17 wave notes
+repaired (51 relative links, 14 marked as excluded data files); 5 sample checks re-run and matching. In `SevenPrimary`, the
+7 degree exclusions and `order49` now use `decide +kernel` (legacy `native_decide` 37 → 29). Boundaries of BGS-CAYLEY-002
+(19 of 21 theorems `decide +kernel`; K = 23 energy/excess `native_decide`) and BGS-FORMAL-003 now state the actual proof mix,
+with matching epoch amendments. Manuscript: "eta two" → η = 2 in two titles, the conclusion's "Draft note" relabelled
+"Scope note"; PDF rebuilt (381 pages). Receipt:
+[breakthrough_audit](evidence/executions/20261104/breakthrough_audit/README.md).
+
 ## research-2026.11.1 — release preparation (no state changes)
 
 Release tag research-2026.11.1, prepared on 2026-11-03 from main at b6e0d26; it covers merged PRs #51–#80 since

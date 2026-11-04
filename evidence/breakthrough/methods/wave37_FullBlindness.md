@@ -112,4 +112,4 @@ p = 2, e = 1 at i = 2, and LTE needs p odd; the 2-part tower
 is separate in the program. No Lean formalisation; the
 repository is untouched.
 
-Script: [wave37_FullBlindness_check.py](sandbox://workspace/bgs-breakthrough/methods/wave37_FullBlindness_check.py) (ALL CHECKS PASS).
+Script: [wave37_FullBlindness_check.py](wave37_FullBlindness_check.py) (ALL CHECKS PASS).

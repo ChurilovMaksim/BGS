@@ -94,7 +94,7 @@
       "manuscript": [
         "manuscript/unified_sections/ch02_arithmetic_core.tex"
       ],
-      "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target. Formalization coverage is finite design instances only: formalization/Bgs/CayleyEnergy.lean proves the collision energies at the five explicit designs (199,11,139), (67,11,64), (521,13,101), (53,13,10) and (461,23,23) by native_decide; it states no general (for all K) reduction of the mixed layer to additive energy and no uniform cutoff theorem in K."
+      "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target. Formalization coverage is finite design instances only: formalization/Bgs/CayleyEnergy.lean proves the collision energies at the five explicit designs (199,11,139), (67,11,64), (521,13,101), (53,13,10) and (461,23,23); 19 of its 21 theorems (all checks at the four designs with K = 11 and K = 13, and the K = 23 generator, pair-count and forced-baseline checks) are kernel-checked by decide +kernel, while the K = 23 collision energy and its excess comparison still use native_decide; it states no general (for all K) reduction of the mixed layer to additive energy and no uniform cutoff theorem in K."
     },
     {
       "id": "BGS-CAYLEY-003",
@@ -2136,7 +2136,7 @@
       "manuscript": [
         "manuscript/unified_sections/actual_seven_primary_commutant.tex"
       ],
-      "boundary": "Exactly 22 executable array predicates: 7 products, Rabin computational conditions on 46 factor occurrences, degree exclusions and ord49(5) finite predicate. native_decide trust. Generic array/polynomial correctness, Rabin/finite-field bridges and actual commutant theorem are not formalized. Isolated source compilation and subsequent aggregate build at the current 24-module graph completed (27 Lake jobs; toolchain follow-up receipt of 20 October 2026)."
+      "boundary": "Exactly 22 executable array predicates: 7 products, Rabin computational conditions on 46 factor occurrences, degree exclusions and ord49(5) finite predicate. The 7 degree exclusions and the ord49(5) predicate are kernel-checked by decide +kernel (axioms: propext, respectively none); the 7 product and 7 Rabin predicates keep native_decide trust. Generic array/polynomial correctness, Rabin/finite-field bridges and actual commutant theorem are not formalized. Isolated source compilation and subsequent aggregate build at the current 24-module graph completed (27 Lake jobs; toolchain follow-up receipt of 20 October 2026)."
     },
     {
       "id": "BGS-TRACE-018",

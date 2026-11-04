@@ -84,5 +84,5 @@ stands; the failure is specific to m=12 gluing splits.)
 
 ## Files
 
-- Script: [wave18_Pw_m12_census.py](sandbox://workspace/bgs-breakthrough/methods/wave18_Pw_m12_census.py)
-- Full data (all 762 split fibers, orbits, sorted(w)): [wave18_Pw_m12_census.json](sandbox://workspace/bgs-breakthrough/methods/wave18_Pw_m12_census.json)
+- Script: [wave18_Pw_m12_census.py](wave18_Pw_m12_census.py)
+- Full data (all 762 split fibers, orbits, sorted(w)): `wave18_Pw_m12_census.json` (not in repository)

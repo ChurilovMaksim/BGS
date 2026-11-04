@@ -85,7 +85,7 @@ be transplanted to other primes, only to other m.
 
 ## 4. Numerical confirmation at new members of the class
 
-Exact C++ check ([wave17_PC_class_check.cpp](sandbox://workspace/bgs-breakthrough/methods/wave17_PC_class_check.cpp)):
+Exact C++ check ([wave17_PC_class_check.cpp](wave17_PC_class_check.cpp)):
 all recurrence sequences mod 3 (9) and mod 17 (289), all
 (d₁, d₂) ∈ D_m × D_m, pair-multiset preservation tested exactly,
 Π₁ ∩ Π₂ computed exactly for every preserved case.

@@ -106,7 +106,7 @@ theorem product_0 : productCheck entry0 = true := by native_decide
 
 theorem rabin_0 : factorCheck entry0 = true := by native_decide
 
-theorem degrees_0 : degreeCheck entry0 = true := by native_decide
+theorem degrees_0 : degreeCheck entry0 = true := by decide +kernel
 
 #print axioms product_0
 
@@ -126,7 +126,7 @@ theorem product_1 : productCheck entry1 = true := by native_decide
 
 theorem rabin_1 : factorCheck entry1 = true := by native_decide
 
-theorem degrees_1 : degreeCheck entry1 = true := by native_decide
+theorem degrees_1 : degreeCheck entry1 = true := by decide +kernel
 
 #print axioms product_1
 
@@ -143,7 +143,7 @@ theorem product_2 : productCheck entry2 = true := by native_decide
 
 theorem rabin_2 : factorCheck entry2 = true := by native_decide
 
-theorem degrees_2 : degreeCheck entry2 = true := by native_decide
+theorem degrees_2 : degreeCheck entry2 = true := by decide +kernel
 
 #print axioms product_2
 
@@ -163,7 +163,7 @@ theorem product_3 : productCheck entry3 = true := by native_decide
 
 theorem rabin_3 : factorCheck entry3 = true := by native_decide
 
-theorem degrees_3 : degreeCheck entry3 = true := by native_decide
+theorem degrees_3 : degreeCheck entry3 = true := by decide +kernel
 
 #print axioms product_3
 
@@ -180,7 +180,7 @@ theorem product_4 : productCheck entry4 = true := by native_decide
 
 theorem rabin_4 : factorCheck entry4 = true := by native_decide
 
-theorem degrees_4 : degreeCheck entry4 = true := by native_decide
+theorem degrees_4 : degreeCheck entry4 = true := by decide +kernel
 
 #print axioms product_4
 
@@ -208,7 +208,7 @@ theorem product_5 : productCheck entry5 = true := by native_decide
 
 theorem rabin_5 : factorCheck entry5 = true := by native_decide
 
-theorem degrees_5 : degreeCheck entry5 = true := by native_decide
+theorem degrees_5 : degreeCheck entry5 = true := by decide +kernel
 
 #print axioms product_5
 
@@ -229,7 +229,7 @@ theorem product_6 : productCheck entry6 = true := by native_decide
 
 theorem rabin_6 : factorCheck entry6 = true := by native_decide
 
-theorem degrees_6 : degreeCheck entry6 = true := by native_decide
+theorem degrees_6 : degreeCheck entry6 = true := by decide +kernel
 
 #print axioms product_6
 
@@ -239,7 +239,7 @@ theorem degrees_6 : degreeCheck entry6 = true := by native_decide
 
 def order49Check : Bool := (5^42)%49 == 1 && (List.range 42).all (fun k => k == 0 || (5^k)%49 != 1)
 
-theorem order49 : order49Check = true := by native_decide
+theorem order49 : order49Check = true := by decide +kernel
 
 #print axioms order49
 

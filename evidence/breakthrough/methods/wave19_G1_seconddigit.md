@@ -86,10 +86,10 @@ Why (mechanism sketch, not a proof):
 
 ## Files
 
-- This note: [wave19_G1_seconddigit.md](sandbox://workspace/bgs-breakthrough/methods/wave19_G1_seconddigit.md)
-- Checker (fixed ρ): [wave19_G1_seconddigit.cpp](sandbox://workspace/bgs-breakthrough/methods/wave19_G1_seconddigit.cpp),
-  log: [wave19_G1_seconddigit.log](sandbox://workspace/bgs-breakthrough/methods/wave19_G1_seconddigit.log)
-- p=13 reproduction: [wave19_G1_seconddigit_p13.cpp](sandbox://workspace/bgs-breakthrough/methods/wave19_G1_seconddigit_p13.cpp)
-- Direct Python check of the p=31 example: [wave19_G1_p31_example_check.py](sandbox://workspace/bgs-breakthrough/methods/wave19_G1_p31_example_check.py)
-- Prior notes: [wave18_G1_hole_invariant.md](sandbox://workspace/bgs-breakthrough/methods/wave18_G1_hole_invariant.md),
-  [wave16_G1_f2s0.md](sandbox://workspace/bgs-breakthrough/methods/wave16_G1_f2s0.md)
+- This note: [wave19_G1_seconddigit.md](wave19_G1_seconddigit.md)
+- Checker (fixed ρ): [wave19_G1_seconddigit.cpp](wave19_G1_seconddigit.cpp),
+  log: `wave19_G1_seconddigit.log` (not in repository)
+- p=13 reproduction: [wave19_G1_seconddigit_p13.cpp](wave19_G1_seconddigit_p13.cpp)
+- Direct Python check of the p=31 example: [wave19_G1_p31_example_check.py](wave19_G1_p31_example_check.py)
+- Prior notes: [wave18_G1_hole_invariant.md](wave18_G1_hole_invariant.md),
+  [wave16_G1_f2s0.md](wave16_G1_f2s0.md)

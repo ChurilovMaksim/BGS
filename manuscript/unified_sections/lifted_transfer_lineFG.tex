@@ -15,7 +15,7 @@ kernel-checked in \path{formalization/Bgs/LineF.lean} and \path{formalization/Bg
 Let \(\rho_V>\lambda/(2(\lambda-1))\approx0.6036\), \(\rho_E>1/(2(\lambda-1))\approx0.1036\), \(\beta>0\), and \(\sum_n\lvert w(n)\rvert e^{\alpha\lvert n\rvert}<\infty\) with \(\alpha>2\pi c\max(\rho_V,\rho_E)+\beta/\lambda\). The vertex and edge operators \(L_V,L_E\) on weighted \(\ell^2\)-sums of Hardy spaces over the disc lattices are trace class, and for every \(m\ge1\), \(\sum_{n\in\mathbb Z^m}\prod_jw(n_j)e(cn_js_j)=(1-\lambda^{-m})(\operatorname{Tr}L_V^m-\operatorname{Tr}L_E^m)\), where \(s_j\) is the periodic orbit of the word \(n\). Hence \(Z_m(\nu^*)=(1-\lambda^{-m})\sum_{a\in\{0,2,4,6\}}c_a(\operatorname{Tr}L_{V,a}^m-\operatorname{Tr}L_{E,a}^m)\) for the full alphabet. The counting step (number of closed vertex chains minus closed edge chains equals one) is formalised in Lean.
 \end{theorem}
 
-\begin{theorem}[Certified spectrum at eta two, BGS-TRACE-198, proved (computer-assisted)]
+\begin{theorem}[Certified spectrum at \(\eta=2\), BGS-TRACE-198, proved (computer-assisted)]
 For the full-alphabet \(k1\) operators at \(\eta=2\), \(L_{V,4}\) has exactly one eigenvalue \(\mu^*\) (simple) with \(\lvert\mu^*\rvert\ge1\), and \(\lvert\mu^*\rvert\in[1.9154712,1.9154753]\); all other spectrum of all sectors of both lattices lies in \(\lvert z\rvert<1\); \(\lVert L_V\rVert_1\le730.15\), \(\lVert L_E\rVert_1\le22.94\). The reflection \((U\Phi)_k(s)=\Phi_{-k}(-s)\) is unitary and conjugates sector 2 to sector 6.
 \end{theorem}
 

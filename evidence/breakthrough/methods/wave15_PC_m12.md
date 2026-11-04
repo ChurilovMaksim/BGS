@@ -2,7 +2,7 @@
 
 ## Statement
 
-As in [wave12_g3_common_pi.md](sandbox://workspace/bgs-breakthrough/methods/wave12_g3_common_pi.md)
+As in [wave12_g3_common_pi.md](wave12_g3_common_pi.md)
 §3, let a (mod 5), b (mod 7) be recurrence sequences of length 12
 (y_{j+1} = 6y_j − y_{j−1}), d₁, d₂ ∈ D₁₂, d(j) = εj + k (mod 12).
 Classes O_r = {r, r+4, r+8}, r ∈ ℤ/4, t = gcd(12, 4) = 4, D₄ acting
@@ -47,7 +47,7 @@ The same bijection argument gives π_{d₁} ∈ Π₁ always. Since
 ## 5. Numerical confirmation and scope
 
 Fresh implementation (no wave-12 code reused):
-[wave15_PC_m12.py](sandbox://workspace/bgs-breakthrough/methods/wave15_PC_m12.py)
+[wave15_PC_m12.py](wave15_PC_m12.py)
 enumerates all 25 × 49 pairs (a, b) and all 24 × 24 pairs (d₁, d₂):
 **318,528 preserved cases (reproducing wave 12 exactly), 0 bad**;
 the structural checks (3-periodicity mod 7, constant class
