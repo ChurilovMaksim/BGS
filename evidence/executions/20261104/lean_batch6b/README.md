@@ -14,7 +14,7 @@ or sealed row is involved. Parallel batches 6 and 6c own their claims; only the 
 Integration: `scripts/link_batch6b.py` (run once): `record/claims.json` links, scopes and receipt for TRACE-214/218 only; the
 curated inventory mirror (`source_blob_sha`). Regenerated: `RESULTS.md` (`render_results.py`) and
 `evidence/executions/20261101/lean_inventory/INVENTORY.md` (`make_inventory.py`; batch regex accepts `6b`, scopes starting
-"Full" shown as full). Hand edits: README/README.ru Lean counts (189 modules, 2419 declarations), `formalization/README.md`
+"Full" shown as full). Hand edits: README/README.ru Lean counts (after merging `main` with batch 6: 190 modules, 2426 declarations, 8897 build jobs), `formalization/README.md`
 rows, `CHANGELOG.md`.
 
 Files: `lake_build_Bgs.log` (full `lake build` via `build_lean_verified.sh`), `build_wrapper.out`, `Axioms.lean`, `axioms.log`,
@@ -26,3 +26,11 @@ Tests: `repository_audit.py` PASS; `scientific_registry_audit.py` OK (419 claims
 `check_routing.py` exceeded its 30 s timeout) and three `test_schur_portability` cases (repository copy failed on
 `.lake` Mathlib build files changing during the copy). None touches files changed in this batch; a rerun of those two
 modules under the same load gave the same 4 errors.
+
+**Merge of `main` (4 November 2026, after PR #86).** `origin/main` (d4c9a360, batch 6 `LineI213Disjoint`) merged into this branch;
+`link_batch6b.py` re-run on main's inventory (one 6b caveat, `source_blob_sha` refreshed), `RESULTS.md` and `INVENTORY.md`
+regenerated (TRACE-214 kernel column: "summable kicks" instead of "finite"). `lake build` re-run in a checkout without a
+prior `.lake/build` (packages shared): "Build completed successfully (8897 jobs)". The first attempt was OOM-killed (exit 137)
+on `LineCEncounterExact13` under parallel lake jobs; the second invocation built it and completed. `lake_build_Bgs.log` is
+that second pass; `checks.log` and `unittests.log` are re-runs after the merge.
+After the merge: all 17 checks EXIT 0 (`checks.log`, pandoc 3.12.1 on PATH); maintenance unittests 266 run, OK (1 skipped).

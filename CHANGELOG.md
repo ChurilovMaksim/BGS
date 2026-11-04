@@ -7,7 +7,17 @@ within {propext, Classical.choice, Quot.sound}). BGS-TRACE-218: regrouping of ab
 Σ_j C_Z(jq), so both identities (aliasing and Möbius in C_Z form) hold for every kick with Σ|Φ̂| < ∞. BGS-TRACE-214:
 identities (a) and (b) of Lemma I5′ for every kick with Σ|Φ̂| < ∞. Both rows now state full coverage of the identities in
 `formalization_scope` (remarks and heuristic assessment excluded); BGS-TRACE-222 unchanged. No boundary or state changed.
-189 modules, 2419 `theorem`/`lemma` declarations. Receipt: [lean_batch6b](evidence/executions/20261104/lean_batch6b/README.md).
+Combined with batch 6 (merged from `main`): 190 modules, 2426 `theorem`/`lemma` declarations; `lake build Bgs` 8897 jobs. Receipt: [lean_batch6b](evidence/executions/20261104/lean_batch6b/README.md).
+
+## 2026-11-04 — Lean batch 6: TRACE-213 disjointness (no state changes)
+
+New module `formalization/Bgs/LineI213Disjoint.lean` (7 `theorem`/`lemma` declarations, no `sorry`, no `native_decide`,
+axioms within {propext, Classical.choice, Quot.sound}): the pairwise disjointness of the classes ν_ρ and the member sets
+M_d(ρ) of the frozen definition (BGS-TRACE-206), derived from the congruence definition for h_m > 1 (h² + 1 = 2y′²), and
+the exact identity of BGS-TRACE-213 with the disjointness hypothesis discharged (`reduction_congr`). BGS-TRACE-213 stays
+**partial** ((E″), (T″), (D) ⇒ R′ not formalized); its `formalization_scope` is updated. `lake build` completed (8895 jobs);
+171 non-open claims link Lean, out of 188 modules, 2416 declarations. Receipt:
+[lean_batch6](evidence/executions/20261104/lean_batch6/README.md).
 
 ## research-2026.11.1 — release preparation (no state changes)
 

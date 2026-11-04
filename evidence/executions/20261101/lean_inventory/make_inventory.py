@@ -46,7 +46,7 @@ B={
 'BGS-TRACE-204':'dilution identity (Gauss sums over O/d)',
 'BGS-TRACE-211':'relative phase split Z(ν0+δ) = Z(ν0) σ̂(δ) (finite Fourier identity)',
 'BGS-TRACE-213':'exact reduction identity of Conjecture R′ (bookkeeping identity)',
-'BGS-TRACE-214':'Fourier expansion via Ramanujan sums (finite)',
+'BGS-TRACE-214':'Fourier expansion via Ramanujan sums (summable kicks)',
 'BGS-TRACE-218':'Möbius aliasing identity (finite Fourier orthogonality + Möbius inversion)',
 'BGS-TRACE-222':'sector-level antiunitary map (finite conjugation identity)',
 'BGS-TRACE-226':'lifted trace formula on a 2-dim monomial block',
