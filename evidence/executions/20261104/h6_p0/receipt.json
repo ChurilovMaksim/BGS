@@ -47,11 +47,12 @@
   "native_decide": false,
   "axioms": "none",
   "build": "evidence/executions/20261104/h6_p0/lake_build_H6LemmaW.log",
-  "scope": "lake build Bgs.H6LemmaW only (2 jobs); no full Bgs build"
+  "scope": "lake build Bgs.H6LemmaW only (2 jobs); no full Bgs build",
+  "full_build_after_merge": "lake build (full Bgs) after merging origin/main d4c9a360: Build completed successfully (8896 jobs), evidence/executions/20261104/h6_p0/lake_build_Bgs_after_merge.log"
  },
  "sha256": {
   "computations/verification/h6_p0/REPORT_P4_v1.md": "e47e3e4199e305eca349bd1f243008a8868a8585263ca7f2dbc464305bc665f9",
-  "computations/verification/h6_p0/REPORT_P4_v2.md": "3dd6656261575c95bbab78d09e2595b57b44d36b0526cd5b00969f26ac8fbb33",
+  "computations/verification/h6_p0/REPORT_P4_v2.md": "1530146720fd8ae2e2fdae492ae5c10d1e3d274352fec7616f0fde89ca9746ea",
   "computations/verification/h6_p0/code/h6_p0.py": "1f542166e5c5d65c7f3ac40ab4d76edde73615600c31be4a9cd1ef84cb356fbd",
   "computations/verification/h6_p0/code/h6_variants.py": "7cdc757467390a7d5b68e4c4517abb5f94f6c39e1b6ba4c3e76599c4f248b609",
   "computations/verification/h6_p0/code/lemmaW_full.py": "c0a839795cba7e62abb81a75bd8c8d5e5cef8a6b00b3ef801ad7138143ebe113",
@@ -71,8 +72,8 @@
   "computations/verification/h6_p0/logs/v1_h6_p0.json": "c48bae3a643eec7eecfeb57ec4ad628787a34edc511726ab05958b0a11ac6261",
   "computations/verification/h6_p0/logs/v1_h6_p0.out": "d1ab8f6a7483a96adf198eae93b4b4cca8113314e3c1634581cf0b32b6eb9fc4",
   "computations/verification/h6_p0/logs/v1_h6_variants.json": "9aaeeaf330900da852fa1e4d82116cec39fbd44fffedf9aa90cefdffd8a0ee19",
-  "formalization/Bgs/H6LemmaW.lean": "d6de960045fef1706364d59b597c309ae1661cc0e71fbf359c0486721aad3c51",
-  "evidence/executions/20261104/h6_p0/add_claims.py": "c14cffe95833d1b7709947bc4968e2dd7bdae378f1594d7cf8a08c01d039e647",
+  "formalization/Bgs/H6LemmaW.lean": "ed2e2da9ecef6d176e02ee7af36591b4d5a6c116c6630fb817d1301a43f7508b",
+  "evidence/executions/20261104/h6_p0/add_claims.py": "ed8566d6309362b78937a745c259f19dc13b7dee4c432c6d75d7b2af168f6e64",
   "evidence/executions/20261104/h6_p0/checks/frozen_packets.log": "b5e8d21fd1033df4c1d4e64178984da980ef3ad5d8c54699ba1545610ac00631",
   "evidence/executions/20261104/h6_p0/checks/render_appendix_a.log": "67c49db1b3f2254b3cb97da37f5e299052b1f5f076ecb3b12c72ec591ea63775",
   "evidence/executions/20261104/h6_p0/checks/render_bibliography.log": "9b30c3d10be50db0db0ebb6d4cce0dea3a5a15fb43f581110eae61bc2694ff9c",
@@ -85,16 +86,20 @@
   "evidence/executions/20261104/h6_p0/checks/repository_audit.log": "b390f8a24c64813e2b3c492c38f0e0645fe998a573446495943f10791ae2c8b1",
   "evidence/executions/20261104/h6_p0/checks/scientific_registry_audit.log": "fbf300ee7033aac482fa0f2cc529aaf771e7536a62cf53c39478b6b4493b0963",
   "evidence/executions/20261104/h6_p0/checks/unittests.log": "2666dc6a7258a304fcedd5056f4b70f77ba53660ffe2eb5cb629b7649559c0bc",
-  "evidence/executions/20261104/h6_p0/edit_epochs.py": "63c26f40cfdee588eb052c801eac9dcba7cb0e03749795824917c09bbdda9648",
-  "evidence/executions/20261104/h6_p0/edit_inventory.py": "351b76d97e245a9fae0d9331a9684408602fcdbf022809ef42b596a11b34750c",
+  "evidence/executions/20261104/h6_p0/edit_epochs.py": "20f53f6bb0a99266f64e1b82e0a13bdf2fed3db673ba98724e4a5bbcbc297762",
+  "evidence/executions/20261104/h6_p0/edit_inventory.py": "ec9e7f628f98ae37aeff63c5377167c827ba58058399f1b895ce5f5c3d6aba77",
   "evidence/executions/20261104/h6_p0/lake_build_H6LemmaW.log": "0ae44fe7d69dc530f4feb5a321e49073eb8a6b779e5a0c8d6a7717af11c2b8e7",
-  "evidence/executions/20261104/h6_p0/mk_receipt.py": "6792342dac271e0d48a0518b6790b9f99f4e24626e623bbd7d924a1c1a972b89",
+  "evidence/executions/20261104/h6_p0/mk_receipt.py": "ac1b0fedd5a56c12c6622b82c3365ea53b610782738fa9bb527348de1bb2ed91",
   "evidence/executions/20261104/h6_p0/referee/AUDIT.md": "bdab160c497426441335fa2d165adaeffedd8f1f74e8e477d108a6997faa41b7",
   "evidence/executions/20261104/h6_p0/referee/code/indep.out": "9813effab73ad460484a328f8ed1002193da1337557142fa2f84a39a9ec5bb6c",
   "evidence/executions/20261104/h6_p0/referee/code/indep.py": "50b6b9bb36074248f5117f262c063174751ffbe64332f9b5082133181b1a29c1",
   "evidence/executions/20261104/h6_p0/referee/code/indep_shift.py": "78b1e768b732ff778a3b439775752dc3c82d5ca007bfce083934ca1229529cb6",
   "evidence/executions/20261104/h6_p0/referee/code/lw.py": "0b02e50bfbb1b9cb1024d2c85b13002cdb6032c3f03e5ff6128e8ff383d2cdd6",
   "evidence/executions/20261104/h6_p0/referee/code/pt.py": "ea1ae6e3bb7cb80ef46f005e7e949d18178322be1cc4918628dcecd1558d9f40",
-  "evidence/executions/20261104/h6_p0/referee/code/shift.py": "7817a1de9b2b02cfe794284483b71edff35cf191ba3f7c14889c5df2f070081c"
- }
+  "evidence/executions/20261104/h6_p0/referee/code/shift.py": "7817a1de9b2b02cfe794284483b71edff35cf191ba3f7c14889c5df2f070081c",
+  "evidence/executions/20261104/h6_p0/lake_build_Bgs_after_merge.log": "beeed323a5f02e30d3ab6ade2c1f63d81a20c0f14b37daaa4df90a88e5905121",
+  "evidence/executions/20261104/h6_p0/checks/checks_after_merge.log": "c525bf36ab095d2cb6d8986d6a4169949954c83824b7b8ada40df56bc20d8169",
+  "evidence/executions/20261104/h6_p0/checks/unittests_after_merge.log": "ba0535ce99e59dce75571a39fa6aa7adf656a3c0667a4b418421fd55bdc9eab6"
+ },
+ "renumbered": "BGS-TRACE-337 -> BGS-TRACE-342, BGS-TRACE-338 -> BGS-TRACE-343 (4 Nov 2026), ID collision with PR #88 (span theorem, BGS-TRACE-337..341)"
 }
