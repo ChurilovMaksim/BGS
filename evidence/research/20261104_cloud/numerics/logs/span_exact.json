@@ -1,0 +1,75 @@
+{
+ "enum_compared": 5109,
+ "enum_span_mismatches": 0,
+ "enum_letter_mismatches_float_int": 2182,
+ "enum_max_span_minus_floorlog_plus3": 0,
+ "enum_max_at": {
+  "a": 2,
+  "b": 0,
+  "N": 4,
+  "j": 2,
+  "span": 3,
+  "floor_log": 0,
+  "cap": 3
+ },
+ "enum_sharp_hits_excess0": 2371,
+ "enum_max_span_minus_floorlog_by_shell": {
+  "0": 2,
+  "1": 2,
+  "2": 3,
+  "3": 2,
+  "4": 3,
+  "5": 3,
+  "6": 3,
+  "7": 3,
+  "8": 3,
+  "9": 3,
+  "10": 3,
+  "11": 3,
+  "12": 3
+ },
+ "extended_Jmax": 16,
+ "extended_max_span_minus_floorlog_plus3": 0,
+ "extended_max_at": {
+  "a": 2,
+  "b": 0,
+  "N": 4,
+  "j": 2,
+  "span": 3,
+  "floor_log": 0,
+  "cap": 3
+ },
+ "shell_counts": {
+  "0": 1,
+  "1": 1,
+  "2": 3,
+  "3": 4,
+  "4": 11,
+  "5": 20,
+  "6": 42,
+  "7": 78,
+  "8": 161,
+  "9": 316,
+  "10": 643,
+  "11": 1274,
+  "12": 2555,
+  "13": 5100,
+  "14": 10225,
+  "15": 20430,
+  "16": 40845
+ },
+ "additive_histogram_span_minus_floorlog": {
+  "2": 43304,
+  "3": 38405
+ },
+ "unit_invariance_failures": [],
+ "theta_enclosure": [
+  0.7864397013573949,
+  0.7864397013573949
+ ],
+ "theta_lt_4_over_5": true,
+ "theta_gt_0_786": true,
+ "rational_225_lt_288": true,
+ "floor_4j_over_5_plus3_le_2j_for_j_ge_3": true,
+ "seconds": 13.13526701927185
+}

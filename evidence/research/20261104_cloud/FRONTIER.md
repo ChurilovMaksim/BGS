@@ -1,0 +1,83 @@
+# Frontier note, 4 November 2026
+
+Scope of this note: the conditional Theorem R♯-mod v5 (BGS-TRACE-325) for the frozen k1 kick at η = 2, and the open inputs that still separate it from a refutation of frozen R′ (BGS-TRACE-206). Microscopic fixed-strength BGS (BGS-BGS-001) stays open. Nothing here is a registration. `record/claims.json` is unchanged.
+
+Labels: [P] proof written in this directory; [P-sketch] outline with a named gap; [CA] interval arithmetic; [P-arith] the same float-plus-exact-integer standard as the v5 crossover; [N] unchecked numerics; [H] hypothesis. A finite computation is not an asymptotic theorem.
+
+## What is unconditional
+
+Frozen R′ is open. It is not refuted at any single prime, and W′_{3p}/m → ∞ is not proved.
+
+The following are proved at the scope already registered, and this note does not reopen them.
+
+- The structural bookkeeping of the gas: positivity, the TRACE-213 level identity, the coding lemma, Lemmas P/P′, the carry reductions, Lemma J (ε-carries, |e| ≤ 51, 6145 pair states), the renewal Lemma R, and Prop. F’s lower bound on the unrestricted joint torus mean.
+- H2 and H4. The true-functional interaction constant satisfies δ_true ≤ 5.0313×10^{-6} for every window length (BGS-TRACE-326).
+- The finite bad shells j ≤ 14 for the core functional: C_cert ≤ 4.36×10^{-4} (BGS-TRACE-331). By Prop. F those shells are not evidence for the tail.
+- Prop. K’s arithmetic implication from an H1 shell bound to a Kotecký–Preiss weight, except the two sketches named below.
+
+The November 2026 breakthrough package (`evidence/breakthrough/`) is a separate method search (Δ→0, JBL, Lemma U, Gap G). Its standing open fronts do not feed H1, H3, or the gas exponent. It does not change the status of R′ or of BGS-BGS-001.
+
+## What Theorem R♯-mod v5 actually says
+
+Let m = 3p with p prime. Write
+
+B_p = (n/h_p) [(2(1+Re Λ_lo′)^p exp(−p(δ + A_bad^KP)) − 1 − |X_tail| − |X_cross| − |Y| − e^{−0.28 p})^2 − 1] − I_p − ε_16 − ε_fl − ε_other,
+
+with Re Λ_lo′ = 6.234×10^{-4} and δ = δ_true. If B_p ≥ κ > 0 for infinitely many primes past the thresholds in `THEOREM_DRAFT_v5.md`, then W′_{3p}/m → ∞ and frozen R′ fails along m = 3p.
+
+That implication is [P mod inputs], with one [P-sketch] step: the passage from the Kotecký–Preiss logarithm to a modulus, which charges the background-renormalised activity S_0(a) and has no sign information on bad clusters (referee lineN22).
+
+## Inputs, as of this note
+
+| Input | Registered state | After this note |
+|---|---|---|
+| H0 | Standing package, taken as given | unchanged |
+| H1 = BGS-TRACE-336 | open [H]: bad joint second moment on the ε-chain, C ≤ 0.082 at J_0 = 12, plus H1-ali | **still open.** Prop. F and the uniform step-norm majorant are both unavailable as proofs (below) |
+| H2 | met | unchanged |
+| H3 = BGS-TRACE-301 | open; superseded in substance by Prop. K | **still open.** The span sketch inside the implication H1 ⇒ H3 is now [P]. Background renormalisation remains [P-sketch] |
+| H4 | met, δ_true ≤ 5.0313×10^{-6} | unchanged |
+| H5 | open (composite h_p, or infinitude of 𝒫) | unchanged |
+| H6 | open (p_0 and squarefreeness of h_p) | unchanged |
+| H7* | open (included levels other than h_p, rate < 1.42785) | unchanged; needed even on 𝒫 |
+| H8 | open; on prime h_p it reduces to H1 | unchanged |
+
+On the subsequence 𝒫 = {p : h_p prime}, H5 drops out and the squarefree half of H6 drops out. Infinitude of 𝒫 is the negation of R_NSW (BGS-TRACE-210) and is open. H1, the p_0 half of H6, and H7* remain even on 𝒫.
+
+The idealised rate-budget threshold (tails = Y = X_cross = ε = 0, n/h_p := 1) is the first prime 3307 if H1 holds at C ≤ 0.082, and 1409 if it holds at C ≤ 8.8×10^{-4}. The first is fragile under the background normalisation (+1% in S_0 moves it to 3359). The second is stable up to a factor two in A_bad^KP. Additive budgets are uncomputed. Both numbers are conditional on H1.
+
+## The route that is still alive
+
+H3 is not an independent analytic problem. Prop. K (BGS-TRACE-332) turns an H1 shell bound into a Kotecký–Preiss weight a = a(C), and the v5 exponent then charges A_bad^KP = S_0(a). Two sketches sat inside that implication: the digit span ℓ ≤ 2j + g_0, and the replacement of the bare activity w by the background-renormalised activity w̃.
+
+The span sketch is the one that can be removed by a direct argument. It is removed here.
+
+**Theorem (span).** For every nonzero α ∈ ℤ[√2], the ε-digit span of the code word used by the gas is at most ⌊log_ε(|N(α)|/2)⌋ + 3. In shell j this is at most ⌊j log_ε 2⌋ + 3, hence at most 2j for every j ≥ 3, and at most ⌊4j/5⌋ + 3. The additive 3 is achieved at α = 2. Proof: `proofs/01_span_bound.md` [P]. Exact check through shell j = 16: `numerics/logs/span_exact.json`.
+
+With that length in the tail, the same H1 hypothesis C ≤ 0.082 produces a smaller activity than the slope-2 majorant. At the fixed point of the Kotecký–Preiss map, S_0 ≤ 3.2405×10^{-4} and the idealised crossover moves from the slope-2 value 3299 to **3067**. The published 3307 is the slope-2 majorant at a 2% inflated weight; the same published script returns 3307 on the input 3.4962×10^{-4} and 1409 on 7.4115×10^{-6}. Details: `proofs/04_propK_sharp.md` [P for the length, CA for the sums, P-arith for the crossover, conditional on H1].
+
+3067 is as fragile as 3307: +1% in S_0 moves it to 3109. At the strengthened constant C ≤ 8.8×10^{-4} the idealised prime stays **1409**. The length sharpening does not relax the constant H1 has to meet.
+
+## What cannot prove H1
+
+Three routes are closed as methods.
+
+1. **Unrestricted torus or carry bounds.** Prop. F (BGS-TRACE-329): orbits that shadow the fixed point make the joint mean ≫ the i.i.d. product out to time 10^{10}. A positive-proportion subset of that neighbourhood has an internal ε-zero run longer than g_0 = 4, so the mass that beats the i.i.d. product can be placed on the complement of the bad set (`proofs/02_propF_disjoint.md` [P]). The obstruction stands.
+2. **Phase-free carry majorants.** Lemma G / O1: the 633-state λ-graph has adjacency spectral radius at least 20, and a scalar weight κ_1 ≤ 0.012 is forced. Letter weights are larger. Lemma J says this graph is only the single-window subsystem of the 6145-state ε-system.
+3. **The uniform step-norm N_H ≤ 2.91656.** Charging that bound on every factor of a word of the proved span already exceeds the whole H1 shell budget at every j ≥ 1, by a factor above 10^4 at j = 1 (`proofs/03_uniform_norm_obstruction.md`). This says the majorant is too crude to be a proof. The certified shell sums through j = 14 are much smaller, so the same estimate does not bear on the truth of H1.
+
+## What a proof of H1 still has to be
+
+A phase-keeping bound on the bad-restricted joint system: A on even ε-sites, B on odd sites, internal zero-runs shorter than g_0 = 4, carries |e| ≤ 51. Lemma R is the bookkeeping that turns first-return norms into a geometric rate. The missing input is those return norms. A direct cone on 495^4 blocks with digit memory about 8 is the natural shape of the certificate and is not a computation that can be run by enumerating the cone.
+
+H1-ali, the near-collision comparison between the lattice and the main term, is a separate open half of H1. The span theorem does not touch it.
+
+Background renormalisation remains the other [P-sketch] in Prop. K. The activities that enter S_0 have to be the activities relative to the model gas. A one-percent error there moves every fragile threshold. Until that factor is proved, 3067 and 3307 are conditional arithmetic under an idealised normalisation.
+
+## Order of work that matches the dependencies
+
+1. Keep the span theorem as a finished input of Prop. K. The length ℓ(γ) ≤ ⌊j log_ε 2⌋ + 3 + g_0 is available for every bad cluster in shell j.
+2. The constant that actually moves the robust threshold is C, not the slope 2 versus log_ε 2. A proof of H1-bad at C ≤ 8.8×10^{-4} would put the idealised prime at 1409 with or without the sharp span. A proof only at C = 0.082 leaves a fragile threshold near 3100.
+3. Write the background factor as an explicit multiplier, or prove it is 1 + O(δ_true).
+4. H5–H8 are independent of this length computation. H7* is required even if 𝒫 is infinite. None of them is discharged here.
+
+BGS-BGS-001 remains open on every reading of this note.
