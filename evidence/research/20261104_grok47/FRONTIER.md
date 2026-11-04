@@ -1,5 +1,18 @@
 # Frontier, 4 November 2026
 
+## Fifth target: the aggregate Lin sum at the three crossings
+
+The four targets below are kept as records. The fifth target is the sum \(\sum_{\beta\not\equiv 0}\kappa_d(N\beta)\hat Z(\beta)\) at the three included conductors, compared with \(\varepsilon_d|Z|^2/h_p\). The proof note is `proofs/h7_lin.md`. The scoping sentence is `proofs/h7_scope.md`. The self-referee is `REFEREE_H7_LIN.md`.
+
+What that note establishes, inside this directory only:
+
+- **[P]** For a squarefree product of primes \(q\parallel h_m\), \(\kappa_d\) is the product of the local missing-label sums, with the missing label shifted by the cofactor. The J3-F5 splitting (TRACE-228) applies to the finite-section traces. The exact-conductor term has coefficient \(1\). The conductor-\(457\) term inside \(d=457\cdot 7521721\) has coefficient \(<1.33\cdot 10^{-7}\).
+- **[CA]** \(|\kappa|\) on the three crossing frequencies is \(0.20028229612862064\), \(0.352776706753451\) and \(0.8773654889389776\). The sector-\(0\) section trace of each crossing orbit, multiplied by \(\kappa\) and by the orbit length, is \(2.54\cdot 10^{10}\), \(3.45\cdot 10^{11}\) and \(2.54\cdot 10^{16}\). Against the section's own untwisted trace, the three one-orbit shares of \(\eta\) are \(<3.28\cdot 10^{-18}\), \(<9.08\cdot 10^{-19}\) and \(<1.19\cdot 10^{-28}\). Sector \(4\) does not move these digits.
+- **[CA]** At the prime \(457\), the complete isotropic part of the section sum has modulus \(7.8450076177326356\) in sector \(0\) and \(39.619988072063016\) in sector \(4\). Against the period-\(57\) untwisted trace, those shares are \(<5.73\cdot 10^{-14}\) and \(<2.90\cdot 10^{-13}\). Carried into the composite by the factor above, they contribute \(<4.61\cdot 10^{-20}\) to \(\eta\).
+- **Not enclosed.** The sum over all \(\beta\) at any of the three conductors. A Frobenius bound \(M\le 50.490459330663754\) on one step gives \(M^{57}>10^{90}\), which does not decide \(\varepsilon_d\). The off-isotropic frequencies at \(457\), and the exact-conductor term at each composite, are open.
+
+Aggregate H7* is not shown to hold at these levels, and it is not shown to fail. The sufficient per-orbit reading fails on the finite section at the three included levels, both with \(p<1409\), so Theorem v5 does not fire and H7* stays a hypothesis at \(p\ge p_{\mathrm{thr}}\). `record/claims.json` was not edited.
+
 ## Fourth target: the three crossings on the multi-disc operator
 
 The span law, the H7*/H8 obstruction, and the single-disc Galerkin rates below are kept as records. The fourth target is whether those three Galerkin crossings are eigenvalues of the multi-disc vertex operator of TRACE-223. The proof note is `proofs/h7_multidisc.md`. The self-referee is `REFEREE_H7_MULTIDISC.md`.
@@ -105,7 +118,7 @@ These primes are conditional on H1-shell, on H0, H5–H8, on B_p ≥ κ for infi
 - H1-ali, the near-collision and box constants. Open. A Lipschitz bound on |r|² through the N_H table (Lip_H ≈ 167) is too crude to start a Beurling–Selberg estimate; that route was not pursued.
 - Background interplay and polymer normalisation inside Prop. K. Still [P-sketch], exactly as N20 left them. Accepting Theorem A does not make TRACE-332 unconditional.
 - H5, in particular c < 0.387 against the sketch c_B = 0.7375; or else infinitude of the NSW-prime set 𝒫.
-- H6 (p₀ and squarefree h_p). H7* and H8 stay open. The second note gave the included \(K_p\)-divisors other than \(7\) no rate below \(T'\), and the amplified wrap at \(\ell_0 = p/4\) is outside the range the substituted \(c_B\) covers. The third note gives single-disc Galerkin rates. The fourth note encloses the same three crossings for the multi-disc finite section and does not transfer the one-step tail to the untruncated monodromy. H8 on prime \(h_p\) still reduces to H1 only as a sketch.
+- H6 (p₀ and squarefree h_p). H7* and H8 stay open. The second note gave the included \(K_p\)-divisors other than \(7\) no rate below \(T'\), and the amplified wrap at \(\ell_0 = p/4\) is outside the range the substituted \(c_B\) covers. The third note gives single-disc Galerkin rates. The fourth note encloses the same three crossings for the multi-disc finite section and does not transfer the one-step tail to the untruncated monodromy. The fifth note encloses one orbit at each of those conductors, and the isotropic orbits at the prime \(457\), and does not enclose the sum over \(\beta\). H8 on prime \(h_p\) still reduces to H1 only as a sketch.
 - The passage of A_bad^{KP} into the gas exponent is used here as v5 uses it. The draft header still marks that correction [P-sketch], with lineN22 recording it as correct and necessary.
 
 ## Where a proof of H1 would have to go

@@ -65,3 +65,24 @@ python3 evidence/research/20261104_grok47/code/h7_multidisc_cert.py enclose
 Outcome: `logs/h7_multidisc_enclose.json`, precision \(320\). The section is centres \(|c|\le 3\), \(40\) modes, letters \(|n|\le 16\), dimension \(280\). Newton lower endpoints: level \(7\), class \((2,1)\), \(1.2835951329030868\); class \((1,3)\), \(1.2837142953109737\); \(d = 3437426497\), \(1.458772466390154\); \(d = 24061985479\), \(1.5119805975188876\); \(d = 2735635252619983\), \(1.4686852948918232\). Every Kantorovich \(h\) is below \(2\cdot 10^{-14}\). The one-step tail in the same log is \(< 9.646772214969684\cdot 10^{-5}\), with no core exit. The edge float, not a certificate, is `logs/h7_multidisc_edge.json`.
 
 `h7_multidisc.py calibrate` and `orbits` are the float scans that preceded the enclosure. Their logs are `logs/h7_multidisc_calibrate.json` and `logs/h7_multidisc_orbits.json`. They are not the certificate.
+
+Fifth target, the aggregate section sum. Same interpreter, precision \(320\) for every ball. No registry file was written.
+
+```text
+python3 evidence/research/20261104_grok47/code/h7_lin_sum.py validate
+python3 evidence/research/20261104_grok47/code/h7_lin_cert.py check
+python3 evidence/research/20261104_grok47/code/h7_lin_cert.py kappa
+python3 evidence/research/20261104_grok47/code/h7_lin_cert.py cross
+python3 evidence/research/20261104_grok47/code/h7_lin_cert.py iso 0
+python3 evidence/research/20261104_grok47/code/h7_lin_cert.py iso 4
+python3 evidence/research/20261104_grok47/code/h7_lin_cert.py sum-iso
+```
+
+Outcomes:
+
+- `validate`: at \(q=41\), \(m=15\), truncation \(K=20\), the float \(\beta\)-sum and the Gauss-kernel grid differ by \(1.329\cdot 10^{-10}\). Log `logs/h7_lin_validate.json`. This is not a certificate.
+- `check`: at \(m=15\), \(d=287\), \(195\) members, \(42\) arguments, the product formula and the member sum differ by \(8.556\cdot 10^{-14}\). Log `logs/h7_lin_kappa_check.json`.
+- `kappa` and `cross`: `logs/h7_lin_traces.json`. Ten traces. Untwisted sector \(0\): \(1.2295228772115986\cdot 10^{16}\) at period \(57\), \(3.614257095031031\cdot 10^{24}\) at period \(87\). Crossing sector \(0\): \(2224799020.4343753\), \(17144879331.749458\), \(333273628480233.94\). Every sector-\(4\) trace in that file is below \(10^{-12}\). One-step Frobenius majorant \(50.490459330663754\).
+- `iso 0` and `iso 4`: sixteen orbits each, `logs/h7_lin_iso_s0.json` and `logs/h7_lin_iso_s4.json`. `sum-iso` gives \(|S_{\mathrm{iso}}|=7.8450076177326356\) and \(39.619988072063016\), log `logs/h7_lin_iso_sum.json`.
+
+The composite sums over all \(\beta\) were not run. A column-sequential trace at \(q=457\) was timed and not started.
