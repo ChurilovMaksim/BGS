@@ -1,0 +1,12 @@
+{
+  "scope": "fundamental-domain classes with 2^12 <= |N| < 2^15 (shells j=12,13,14)",
+  "compared": 17880,
+  "mismatches": 0,
+  "seconds": 20.61,
+  "mpmath_dps": 60,
+  "eps_digits_KK": 12,
+  "eps_digits_tol": 1e-7,
+  "exact_side": "span_audit.digits_of (integer isqrt)",
+  "float_side": "computations/verification/lineN14/code/digits.py eps_digits(2a,2b)",
+  "note": "Together with logs/span_audit.json (j<=11, 2554/2554, dps=80, KK=8, tol=1e-8) this is every class with |N|<2^15: 20434/20434 words agree."
+}

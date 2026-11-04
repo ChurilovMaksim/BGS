@@ -1,0 +1,261 @@
+{
+ "J": 14,
+ "n_classes": 20434,
+ "seconds": 17.784,
+ "models": {
+  "odd": {
+   "rep": [
+    1,
+    0
+   ],
+   "N": 1,
+   "K_left": 1,
+   "K_right": -1,
+   "span": 1,
+   "word": [
+    1
+   ],
+   "mp_word": [
+    1
+   ],
+   "mp_span": 1,
+   "mp_zr": 0,
+   "match": true
+  },
+  "sq2": {
+   "rep": [
+    0,
+    1
+   ],
+   "N": 2,
+   "K_left": 0,
+   "K_right": 0,
+   "span": 2,
+   "word": [
+    1,
+    -1
+   ],
+   "mp_word": [
+    1,
+    -1
+   ],
+   "mp_span": 2,
+   "mp_zr": 0,
+   "match": true
+  },
+  "two": {
+   "rep": [
+    2,
+    0
+   ],
+   "N": 4,
+   "K_left": 0,
+   "K_right": 0,
+   "span": 3,
+   "word": [
+    1,
+    0,
+    -1
+   ],
+   "mp_word": [
+    1,
+    0,
+    -1
+   ],
+   "mp_span": 3,
+   "mp_zr": 1,
+   "match": true
+  },
+  "2sq2": {
+   "rep": [
+    0,
+    2
+   ],
+   "N": 8,
+   "K_left": 0,
+   "K_right": 0,
+   "span": 3,
+   "word": [
+    1,
+    0,
+    1
+   ],
+   "mp_word": [
+    1,
+    0,
+    1
+   ],
+   "mp_span": 3,
+   "mp_zr": 1,
+   "match": true
+  },
+  "four": {
+   "rep": [
+    4,
+    0
+   ],
+   "N": 16,
+   "K_left": -1,
+   "K_right": 1,
+   "span": 5,
+   "word": [
+    1,
+    -1,
+    0,
+    1,
+    1
+   ],
+   "mp_word": [
+    1,
+    -1,
+    0,
+    1,
+    1
+   ],
+   "mp_span": 5,
+   "mp_zr": 1,
+   "match": true
+  }
+ },
+ "mp_compared": 2554,
+ "mp_match": 2554,
+ "mp_mismatch_n": 0,
+ "mp_mismatch_sample": [],
+ "support_violations": [],
+ "n_support_violations": 0,
+ "n_endpoint_fail": 0,
+ "endpoint_fail_sample": [],
+ "float_max_defect": 2.999662649911759,
+ "float_min_defect": 1.0003374002480925,
+ "worst": {
+  "a": 116,
+  "b": 0,
+  "N": 13456,
+  "j": 13,
+  "span": 13,
+  "defect": 2.999662649911759,
+  "word": [
+   1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  "Kl": -5,
+  "Kr": 5,
+  "first": -5,
+  "last": 7
+ },
+ "best": {
+  "a": 0,
+  "b": 82,
+  "N": 13448,
+  "j": 13,
+  "span": 11,
+  "defect": 1.0003374002480925,
+  "Kl": -4,
+  "Kr": 4
+ },
+ "cert_defect_upper": "[2.9996626499117596798928574248932416888067314931639885667784 +/- 1.51e-59]",
+ "cert_defect_lower": "[1.0003374002480941511769404409937154787396211202239527419498 +/- 9.80e-60]",
+ "by_shell": {
+  "0": {
+   "n": 1,
+   "max_defect": 1.786439701357395,
+   "min_defect": 1.786439701357395,
+   "max_span": 1
+  },
+  "1": {
+   "n": 1,
+   "max_defect": 2.0,
+   "min_defect": 2.0,
+   "max_span": 2
+  },
+  "2": {
+   "n": 3,
+   "max_defect": 2.5786243348501996,
+   "min_defect": 2.213560298642605,
+   "max_span": 4
+  },
+  "3": {
+   "n": 4,
+   "max_defect": 1.792184633492805,
+   "min_defect": 1.293484829897763,
+   "max_span": 4
+  },
+  "4": {
+   "n": 11,
+   "max_defect": 2.640680895927815,
+   "min_defect": 1.5718966451750291,
+   "max_span": 5
+  },
+  "5": {
+   "n": 20,
+   "max_defect": 2.5730481028388366,
+   "min_defect": 1.3478871249668756,
+   "max_span": 6
+  },
+  "6": {
+   "n": 42,
+   "max_defect": 2.9341657258255784,
+   "min_defect": 1.0678014932130253,
+   "max_span": 7
+  },
+  "7": {
+   "n": 78,
+   "max_defect": 2.8154300563994337,
+   "min_defect": 1.2042654698087105,
+   "max_span": 8
+  },
+  "8": {
+   "n": 161,
+   "max_defect": 2.988568020894691,
+   "min_defect": 1.0114898642708203,
+   "max_span": 9
+  },
+  "9": {
+   "n": 316,
+   "max_defect": 2.7084823891408405,
+   "min_defect": 1.0824452369040989,
+   "max_span": 9
+  },
+  "10": {
+   "n": 643,
+   "max_defect": 2.9209352278057112,
+   "min_defect": 1.1361571220449322,
+   "max_span": 10
+  },
+  "11": {
+   "n": 1274,
+   "max_defect": 2.9980344849204776,
+   "min_defect": 1.0019672190386029,
+   "max_span": 11
+  },
+  "12": {
+   "n": 2555,
+   "max_defect": 2.9668900437954786,
+   "min_defect": 1.0336860013751998,
+   "max_span": 12
+  },
+  "13": {
+   "n": 5100,
+   "max_defect": 2.999662649911759,
+   "min_defect": 1.0003374002480925,
+   "max_span": 13
+  },
+  "14": {
+   "n": 10225,
+   "max_defect": 2.776283882353866,
+   "min_defect": 1.0138844689592545,
+   "max_span": 13
+  }
+ }
+}
