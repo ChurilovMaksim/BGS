@@ -4,6 +4,20 @@ Independent note on the open inputs of Theorem R♯-mod v5 (BGS-TRACE-325). The 
 
 `evidence/breakthrough/` is about the Δ → 0, JBL, Lemma U, and Gap G package. It does not speak to H1 or H3. The governing statement of v5 is `computations/verification/lineN_theorem_draft/THEOREM_DRAFT_v5.md`, with the N20 re-scoping in `evidence/executions/20261101/lineNgas/N20/REPORT_N20_v2.md`.
 
+## Second target: H7* and H8
+
+The span law below is kept as a record of the first target. The second target is H7* (BGS-TRACE-305) and H8 (BGS-TRACE-306). The proof note is `proofs/h7_h8.md`. The self-referee is `REFEREE_H7H8.md`.
+
+What that note proves, inside this directory only:
+
+- **[P]** \(7 \mid K_p\) and \(7 \nmid h_p\) for every prime \(p \ge 5\), by the recurrence modulo \(7\). TRACE-265 had checked the finite range \(p = 5,\ldots,23\). Level \(7\) stays the covered level (TRACE-223). The identity \(h_{3p} = h_p K_p\) is re-proved from the closed form; the rank-\(3p\) statement is cited.
+- **[P]** Every prime factor of \(K_p\) is congruent to \(1\) modulo \(3\). This is weaker than N8b’s congruence modulo \(6p\), which is cited and not re-proved.
+- **[P, finite]** Complete trial-proved factorisations of \(K_p\) for \(5 \le p \le 31\). On the NSW primes \(p = 5, 7, 19, 29\), H7* inside the inclusion range \(d \le \sqrt{h_m}\) still contains \(K_p\)-divisors other than \(7\). At \(p = 7\) that list contains the prime power \(49\). At \(p = 5\), \(31^2\) divides \(K_5\) and sits above \(\sqrt{h_{15}}\).
+- **[P]** A close return at the weakest \(\varepsilon\) allowed by Lemma E (TRACE-268) is shorter than the \(3p\)-factor trace by more than \(p + 7/4\), on every level \(d \le \sqrt{h_m}\). This blocks using one close return as a smallness certificate for the whole product. It does not determine the sign of \(\mathrm{Dev}_d\).
+- **[P, arithmetic]** Substituting the caps \(\Lambda \le 1.9656353\) and \(r_2 \le 1.0529012\) produces \(c_{\mathrm{del}} \approx 0.73753152\), and \(\tfrac32 c_{\mathrm{del}} > 1.106\). At \(\ell_0 = p/4\) and \(\bar\rho \le 0.28\), the amplified wrap covers \(\theta < 0.16662\), while the substituted first-moment range still reaches \(\theta > 0.26224\). Covering every divisor forces \(\ell_0/p > 0.75025\). Inserting \(c_{\mathrm{del}}\) as the wrap exponent leaves a length \(\approx 0.55333\, p\).
+
+H7* and H8 stay open. The floor comparison is conditional on an upper shape \(e^{0.05 p}\) for the positive term. The wrap obstruction is the amplified-weight case (N16b (c2)). Unit weights reduce H8 to H1, which this note does not attack. Lemma 2 of N14b stays a sketch.
+
 ## What the register already separates
 
 Frozen R′ (BGS-TRACE-206) is open. It is the conjecture W′_m = o(m) for the k₁ kick 0.9 cos(2πq) at η = 2, odd m. Nothing below refutes it or proves it.
@@ -66,7 +80,7 @@ These primes are conditional on H1-shell, on H0, H5–H8, on B_p ≥ κ for infi
 - H1-ali, the near-collision and box constants. Open. A Lipschitz bound on |r|² through the N_H table (Lip_H ≈ 167) is too crude to start a Beurling–Selberg estimate; that route was not pursued.
 - Background interplay and polymer normalisation inside Prop. K. Still [P-sketch], exactly as N20 left them. Accepting Theorem A does not make TRACE-332 unconditional.
 - H5, in particular c < 0.387 against the sketch c_B = 0.7375; or else infinitude of the NSW-prime set 𝒫.
-- H6 (p₀ and squarefree h_p) and H7* (levels below the floor, including prime powers). H8 on prime h_p still reduces to H1 only as a sketch.
+- H6 (p₀ and squarefree h_p). H7* and H8 stay open after the second note: the included \(K_p\)-divisors other than \(7\) have no rate below \(T'\), and the amplified wrap at \(\ell_0 = p/4\) is outside the range the substituted \(c_B\) covers. H8 on prime \(h_p\) still reduces to H1 only as a sketch.
 - The passage of A_bad^{KP} into the gas exponent is used here as v5 uses it. The draft header still marks that correction [P-sketch], with lineN22 recording it as correct and necessary.
 
 ## Where a proof of H1 would have to go
