@@ -317,8 +317,8 @@ final numbers above are from the corrected, complete enumeration.
 
 ## 9. Files
 
-- This note: [wave9_lemmaY_P3prime.md](sandbox://workspace/bgs-breakthrough/methods/wave9_lemmaY_P3prime.md)
-- Check script: [wave9_P3prime_check.py](sandbox://workspace/bgs-breakthrough/methods/wave9_P3prime_check.py)
-- Check log: [wave9_P3prime_check.log](sandbox://workspace/bgs-breakthrough/methods/wave9_P3prime_check.log)
-- Prior notes: [wave8_lemmaY_proof_attempt.md](sandbox://workspace/bgs-breakthrough/methods/wave8_lemmaY_proof_attempt.md),
-  [pair_sorted_identity_note.md](sandbox://workspace/bgs-breakthrough/methods/pair_sorted_identity_note.md)
+- This note: [wave9_lemmaY_P3prime.md](wave9_lemmaY_P3prime.md)
+- Check script: [wave9_P3prime_check.py](wave9_P3prime_check.py)
+- Check log: `wave9_P3prime_check.log` (not in repository)
+- Prior notes: [wave8_lemmaY_proof_attempt.md](wave8_lemmaY_proof_attempt.md),
+  [pair_sorted_identity_note.md](pair_sorted_identity_note.md)

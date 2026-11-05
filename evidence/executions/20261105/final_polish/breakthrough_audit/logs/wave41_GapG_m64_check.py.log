@@ -1,0 +1,13 @@
+M^8 ok: [[28617, 26728], [6040, 25145]]
+M^16 ok: [[16785, 8400], [24368, 1649]]
+M^32 ok: [[19233, 16800], [15968, 21729]]
+M^64 ok: [[13889, 832], [31936, 18881]]
+64-param: 32768 kernel points, nu-formula ok
+32-param: 8192 kernel points, nu-formula ok
+p=8: nu points 128, symmetric O: 0
+p=16: nu points 512, symmetric O: 0
+p=32: nu points 2048, symmetric O: 0
+p=64: nu points 8192, symmetric O: 0
+parity lemma, phi-recurrence, unique phi=0: ok on 8192 points
+ALL CHECKS PASS
+EXIT 0 1s

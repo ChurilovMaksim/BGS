@@ -229,13 +229,13 @@ row.
 
 ## Files
 
-- [This note](sandbox://workspace/bgs-breakthrough/methods/gamma_orbits_per_fiber_note.md)
-- [m=9 global Γ check](sandbox://workspace/bgs-breakthrough/methods/gamma_m9.cpp)
-- [m=10 remainder Γ check (dihedral criterion)](sandbox://workspace/bgs-breakthrough/methods/ostar_m10_remaining_gamma.cpp)
-- [Divisor scanner](sandbox://workspace/bgs-breakthrough/methods/scan_divisor.cpp)
-- [Divisor scan results (complete: all 2,431 pairs)](sandbox://workspace/bgs-breakthrough/methods/scan_divisors_results.jsonl)
-- [m=21/m=24 global candidates](sandbox://workspace/bgs-breakthrough/methods/gamma_m21_m24_candidates.json)
-- [m=9 component vectors](sandbox://workspace/bgs-breakthrough/methods/m9_q49.txt) (m9_q39601.txt likewise)
-- [m=16 global candidate](sandbox://workspace/bgs-breakthrough/methods/gamma_m16_candidate.json)
-- [m=32 global candidate](sandbox://workspace/bgs-breakthrough/methods/gamma_m32_candidate.json)
-- [m=64 candidate summary](sandbox://workspace/bgs-breakthrough/methods/gamma_m64_candidate.json)
+- [This note](gamma_orbits_per_fiber_note.md)
+- [m=9 global Γ check](gamma_m9.cpp)
+- [m=10 remainder Γ check (dihedral criterion)](ostar_m10_remaining_gamma.cpp)
+- [Divisor scanner](scan_divisor.cpp)
+- `Divisor scan results (complete: all 2,431 pairs)` (not in repository)
+- `m=21/m=24 global candidates` (not in repository)
+- `m=9 component vectors` (not in repository) (m9_q39601.txt likewise)
+- `m=16 global candidate` (not in repository)
+- `m=32 global candidate` (not in repository)
+- `m=64 candidate summary` (not in repository)

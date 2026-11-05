@@ -1,0 +1,23 @@
+{
+  "label": "precise unifying estimate",
+  "referee": {
+    "c_need": 0.058,
+    "C": 1,
+    "binding_p": 1409,
+    "w_max_1409": 112,
+    "w_max_3307": 231,
+    "polymer_gap": "K > log_\u03b5 min(d+,d-) - 2 log_\u03b5 A - 1.214",
+    "gap_const": 1.2135602986426053,
+    "sub_line": "G\u2265\u221amin only on axis sub-line; min down to 2p+1"
+  },
+  "statement_short": "C0,r with |z_\u03b3|\u2264C0 r^{n_nr} for N11 polymers covering non-resonant \u03bb-sites. H1/(I)/(T): r<1, C0 usable (A_bad budget). H5(b) vacuum primitive: c=(ln 1/r_\u03bb)/4 - Re\u039b \u2265 0.058. H5(b) bridged+sub-line: r_\u03b5<\u03b5^{-0.99}\u22480.4179 (\u03b3>0.99) covering min\u22652p+1.",
+  "numbers": {
+    "thr_r_eps": 0.4178804671330531,
+    "thr_r_lam": 0.17462408481133868,
+    "Cprime_r_lam": 0.29450254050081925,
+    "Cprime_r_eps": 0.542680882748618,
+    "rhoK": 0.07428406754479285,
+    "rhoK_r_eps": 0.2725510365872653,
+    "r_lam_vac_c058": 0.7929461233066837
+  }
+}

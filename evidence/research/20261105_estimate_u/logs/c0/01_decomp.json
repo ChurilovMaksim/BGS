@@ -1,0 +1,13 @@
+{
+  "label": "[P-sketch]",
+  "formula": "C0 <= C_end^2 * C_bump * C_gap_to_1 * C_core_true",
+  "pieces": {
+    "C_gap": "1 [CA] by N13 V3b (replaces Cpow=3246.8)",
+    "C_end": "||Qt L Phi||_H and ||psi R Qt||_* after bump; O(1) measured",
+    "C_bump": "||prod_{bump} A(tau_i)/s||_H for geometric offsets; N12 D2 ~2.3/end",
+    "C_equiv_cond": "cond_H<=21.103 only if converting H->Euclidean; scalar psi\u00b7Phi path avoids it",
+    "C_core_true": "1+O(2e-8)"
+  },
+  "N11_old_Gb": "Cpow^2*(1+eps0)^2*G_c ~ 4e8 \u2014 the quantity adapted norm eliminates for gaps",
+  "Estimate_U_scope": "Polymers in N11 expansion have geometrically localised bumps (twists ~ theta * lam^{-dist}), NOT long constant-|t|=eta words. Worst-case fixed-twist rho~0.96 at eta=1/20 is irrelevant for C_bump; it WOULD make C0 explode if used as the rate with r=rho_cut."
+}

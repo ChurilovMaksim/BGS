@@ -1,0 +1,74 @@
+{
+  "label": "[P-arith] soft room from BRIDGED",
+  "semiprime_C0_1": [
+    {
+      "p": 1409,
+      "type": "semiprime_2p1",
+      "C0": 1,
+      "slack": 0.02011,
+      "gamma_req": 0.5790037321109415,
+      "r_eps_req": 0.6003042936347018,
+      "covers_if_r_le": 0.6003042936347018
+    },
+    {
+      "p": 3307,
+      "type": "semiprime_2p1",
+      "C0": 1,
+      "slack": 0.003347,
+      "gamma_req": 0.7266987547235524,
+      "r_eps_req": 0.5270324864972832,
+      "covers_if_r_le": 0.5270324864972832
+    }
+  ],
+  "table_C0_1": [
+    {
+      "p": 1409,
+      "type": "semiprime_2p1",
+      "C0": 1,
+      "gamma": 0.578985,
+      "r_eps_req": 0.600314,
+      "ok_0472": true,
+      "ok_054": true,
+      "ok_06": true
+    },
+    {
+      "p": 1409,
+      "type": "omega3",
+      "C0": 1,
+      "gamma": 0.645318,
+      "r_eps_req": 0.566224,
+      "ok_0472": true,
+      "ok_054": true
+    },
+    {
+      "p": 1409,
+      "type": "omega8_exact",
+      "C0": 1,
+      "gamma": 0.694698,
+      "r_eps_req": 0.542109,
+      "ok_0472": true,
+      "ok_054": true
+    },
+    {
+      "p": 1409,
+      "type": "omega16_exact",
+      "C0": 1,
+      "gamma": 0.720742,
+      "r_eps_req": 0.529807,
+      "ok_0472": true,
+      "ok_054": false
+    },
+    {
+      "p": 3307,
+      "type": "semiprime_2p1",
+      "C0": 1,
+      "gamma": 0.7266924801895602,
+      "r_eps_req": 0.5270354011048956,
+      "ok_0472": true,
+      "ok_054": false,
+      "q": 6615,
+      "slack": 0.003347184751707372
+    }
+  ],
+  "note": "At C0=1: p=1409 semiprime needs r_\u03b5<~0.600; p=3307 needs r_\u03b5<~0.527. Greedy M at p=3307 needs ~0.418 (not soft)."
+}

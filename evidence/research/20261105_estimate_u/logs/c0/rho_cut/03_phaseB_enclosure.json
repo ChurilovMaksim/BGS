@@ -1,0 +1,14 @@
+{
+  "label": "[CA-fp enclosure F-norm]",
+  "Pert_H": 2.1e-08,
+  "float_rel": 1e-11,
+  "max_rad": 4.6725215150800205e-07,
+  "err_K_F": 1.2379977784328483e-06,
+  "ray_rad": 2.5233528628573538e-06,
+  "rho_mid": 0.2230369713785113,
+  "rho_ub": 0.22303949473137416,
+  "r_eps_ub": 0.4722705736454201,
+  "below_050": true,
+  "below_048": true,
+  "note": "Uses ||M||_2<=||M||_F so looser than op-norm version; still [CA-fp] not full arb."
+}

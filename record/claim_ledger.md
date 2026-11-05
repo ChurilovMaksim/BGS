@@ -1,5 +1,54 @@
 # Claim ledger
 
+## Lemma S, polymer gap, Binet generator and the H5(b) cross-line constant, 5 November 2026
+
+*Sections for BGS-TRACE-337..355 added in the final polish pass (5 November 2026) from the registry and
+[CHANGELOG.md](../CHANGELOG.md); each integration was merged before this pass.*
+
+New, no existing state changed: BGS-TRACE-352 (Lemma S on cross lines [P]; on the axis sub-line only √min(d₊, d₋), and
+max(d₊, d₋) ≥ √h_p is conditional on H6), 353 (polymer gap lemma, explicit constant [P]) and 354 (Binet lattice generator η_s,
+N(η_s) = h_p [P]) proved; 355 (H5(b) cross-line sufficiency at p = 1409 and 3307: C ≤ 1, c ≥ 0.058, constant [CA]) conditional;
+the source's c > 0.048 is recorded as wrong. Source: [REPORT_LEMMA_S](../computations/verification/lemma_s/REPORT_LEMMA_S.md).
+The "estimate U" of this research pass is not registered. H5 (BGS-TRACE-303) stays **open**; Theorem R♯-mod v5 (325) stays
+conditional.
+
+## Arithmetic of h_p behind the H5 structural ceiling, 5 November 2026
+
+New, no existing state changed: BGS-TRACE-348 (sharpened Lemma W: q ≡ 1 mod 2p and q ≡ ±1 mod 8), 349 (gcd(h_p, h_p′) = 1),
+350 (Sophie Germain family: 2p + 1 | h_p for p ≡ 3 mod 4 with 2p + 1 prime) and 351 (product formula) proved [P]. Source:
+[REPORT_H5_CEILING](../computations/verification/h5_ceiling/REPORT_H5_CEILING.md). The structural-ceiling reading itself
+([NOTE](../evidence/research/20261105_h5_ceiling/NOTE.md), with c_B = 0.7375 [P-sketch]) and Lemma U with the open step (C-U)
+are research only and not registered. H5 (BGS-TRACE-303) stays **open**.
+
+## H7* scope, 5 November 2026
+
+New, no existing state changed: BGS-TRACE-344 (7 | K_p = 4h_p² + 3 [P]), 345 (factorizations of K_p for 5 ≤ p ≤ 31 and the
+inclusion facts [P, finite]), 346 (sector-0 radii above T′ = 1.42785 at three included levels d | K_19, K_29, [CA] on a finite
+vertex section only) and 347 (scope note: the per-orbit sufficient reading cannot be certified on that section) proved. Source:
+[REPORT_H7_SCOPE](../computations/verification/h7_scope/REPORT_H7_SCOPE.md). BGS-TRACE-305 (aggregate H7*) stays **open** and
+BGS-TRACE-325 is unaffected; neither row was edited.
+
+## H6 explicit p₀ and Lemma W, 4 November 2026
+
+New, no existing state changed: BGS-TRACE-342 (Lemma W: q ≡ ±1 mod 2p for every prime q | h_p [P], with a finite Lean check)
+proved; 343 (explicit Theorem C′ threshold: p ≥ 28,424,695 for 8V, p ≥ 3,934 for 8E, given h_p squarefree and the torus normalization u = 1) **conditional**.
+Source: [REPORT_P4_v2](../computations/verification/h6_p0/REPORT_P4_v2.md). Squarefreeness of h_p is not known for any p;
+H6 (BGS-TRACE-304) stays **open**.
+
+## Span theorem, 4 November 2026
+
+New, no existing state or threshold changed: BGS-TRACE-337 (Theorem A, span bounds), 338 (Lemma 8) and 339 (examples) proved;
+340 (Lemma BI, conditional on (M) and the per-site normalization of A_M) and 341 (sharp-span Prop. K crossover rows, conditional
+on H1-bad) conditional. The registered crossovers 3307 / 1409 (BGS-TRACE-333), Theorem R♯-mod v5 and the states of 301, 332, 336
+and 206 are unchanged. Source: [lineN_span_theorem.md](../mathematics/fixed-map/lineN_span_theorem.md).
+
+## Wording sync for BGS-CAYLEY-002, 5 November 2026
+
+No state change. The boundary of BGS-CAYLEY-002 said that `CayleyEnergy.lean` checks the (461,23,23) design "by native_decide".
+Since the Lean batches, 19 of its 21 theorems are kernel-checked by `decide +kernel`; only the K = 23 collision energy and its
+excess comparison still use `native_decide`. The boundary now says so, through an amendment row in
+`record/claim_integration_epochs.json` (receipt: [final_polish](../evidence/executions/20261105/final_polish/README.md)).
+
 ## Theorem R♯-mod v5, H4 met, H1 re-scoped (Lines N20, N21; THEOREM_DRAFT_v5; referee lineN22), 1 November 2026
 
 State changes (referee lineN22 GO after E1–E12; E9–E12 applied to the registry): BGS-TRACE-302 (H4) open → proved [P] + [CA-fp], with

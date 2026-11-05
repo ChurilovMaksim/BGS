@@ -1,0 +1,11 @@
+{
+  "label": "[CA]",
+  "Lip_H": 167.2134,
+  "delta": 0.010416666666666657,
+  "dt": 0.020833333333333315,
+  "Nmax_CA": 8.3288,
+  "err_Ad_mesh": 32.04820080253903,
+  "err_Ad_mesh_plus_rad": 32.04820080253903,
+  "useful_for_rho_lt_025": false,
+  "note": "||K_cont - K_grid||_HS <= err_Ad_mesh (+ radii). With Nq=48 this is LARGE (~10). Continuum rho NOT certified near 0.223. Discrete grid operator IS the certified object."
+}

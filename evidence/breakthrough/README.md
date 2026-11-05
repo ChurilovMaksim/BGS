@@ -20,7 +20,7 @@ proofs. BGS in full generality remains open.
 | `PROGRAM.md`, `DAY1_REPORT.md` | Program plan and day-1 report. |
 | `../executions/20261102/breakthrough-integration.md` | Receipt for this integration: base commit, file counts, re-verification results, exclusions. |
 
-## What is NOT here
+## What is NOT here (as of the 2026-11-02 integration)
 
 - 8 large data files (1.3 GB total: `.json`/`.npz`/`.npy`/`.bin` census outputs)
   cannot be pushed through the GitHub connector (16 MiB UTF-8 snapshot limit)
@@ -38,8 +38,11 @@ proofs. BGS in full generality remains open.
 - Day 1 (`M01`–`M10`): method swarm. M01/M05 killed; target ensemble for the
   fixed map is CUE not COE; frozen even kick commutes with parity (pooled
   spectrum looks Poisson-like, desymmetrized sectors RMT-like).
-- Waves 2–13: G3 closed analytically (sketch, S ≤ g′·max N_r); 2-adic and
-  3-adic LTE proved; G4b closed; Lemma Y as proof sketch; O\* killed at
+- Waves 2–13: G3 in the wave-6 sense (the S-bound) argued analytically
+  modulo G4 at m = 3–6 (sketch, S ≤ g′·max N_r; not in Lean); wave 12 uses
+  the label G3 for a different statement (one common π across components),
+  which is NOT proved; 2-adic and 3-adic LTE proved; G4b closed as an
+  analytic argument (not in Lean); Lemma Y as proof sketch; O\* killed at
   m=12; universal Deff branch of hEquidistUnits killed.
 - Waves 14–26: exact per-fiber deficit Δ_F (R = Bsym_fiber − Δ); Bsym values
   at m=8/12; JBL restated per-class; 175 as a diagonal-model theorem only

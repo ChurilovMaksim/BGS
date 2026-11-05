@@ -1,0 +1,350 @@
+{
+  "label": "[P-arith]",
+  "n_relabel_exact_seed_match": 21,
+  "n_nonmatch": 179,
+  "note": "Exact equality of composite (ea,eb) to \u00b1 single / \u00b1 single*eps seed. N12 claimed 31 relabelings among 200 \u2014 may use \u03b5-power equivalence beyond \u00b1.",
+  "sample_relabel": [
+    {
+      "ti": "odd",
+      "tj": "odd",
+      "h": 0,
+      "s": 1,
+      "G": 1,
+      "n": 2,
+      "e": [
+        8,
+        4
+      ],
+      "hits": [
+        {
+          "match": "single_eps:2sq2",
+          "sgn": 1,
+          "se": [
+            8,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "odd",
+      "h": 0,
+      "s": -1,
+      "G": 1,
+      "n": 2,
+      "e": [
+        -4,
+        -4
+      ],
+      "hits": [
+        {
+          "match": "single_eps:two",
+          "sgn": -1,
+          "se": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "odd",
+      "h": 1,
+      "s": 1,
+      "G": 0,
+      "n": 1,
+      "e": [
+        4,
+        2
+      ],
+      "hits": [
+        {
+          "match": "single_eps:sq2",
+          "sgn": 1,
+          "se": [
+            4,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "odd",
+      "h": 1,
+      "s": -1,
+      "G": 0,
+      "n": 1,
+      "e": [
+        0,
+        -2
+      ],
+      "hits": [
+        {
+          "match": "single:sq2",
+          "sgn": -1,
+          "se": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "sq2",
+      "h": 1,
+      "s": -1,
+      "G": 0,
+      "n": 1,
+      "e": [
+        -2,
+        -2
+      ],
+      "hits": [
+        {
+          "match": "single_eps:odd",
+          "sgn": -1,
+          "se": [
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "ti": "sq2",
+      "tj": "odd",
+      "h": 1,
+      "s": -1,
+      "G": 0,
+      "n": 1,
+      "e": [
+        -2,
+        0
+      ],
+      "hits": [
+        {
+          "match": "single:odd",
+          "sgn": -1,
+          "se": [
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "ti": "sq2",
+      "tj": "sq2",
+      "h": 0,
+      "s": 1,
+      "G": 1,
+      "n": 2,
+      "e": [
+        8,
+        8
+      ],
+      "hits": [
+        {
+          "match": "single_eps:four",
+          "sgn": 1,
+          "se": [
+            8,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "ti": "sq2",
+      "tj": "sq2",
+      "h": 0,
+      "s": -1,
+      "G": 1,
+      "n": 2,
+      "e": [
+        -8,
+        -4
+      ],
+      "hits": [
+        {
+          "match": "single_eps:2sq2",
+          "sgn": -1,
+          "se": [
+            8,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "ti": "sq2",
+      "tj": "sq2",
+      "h": 1,
+      "s": 1,
+      "G": 0,
+      "n": 1,
+      "e": [
+        4,
+        4
+      ],
+      "hits": [
+        {
+          "match": "single_eps:two",
+          "sgn": 1,
+          "se": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "ti": "sq2",
+      "tj": "sq2",
+      "h": 1,
+      "s": -1,
+      "G": 0,
+      "n": 1,
+      "e": [
+        -4,
+        0
+      ],
+      "hits": [
+        {
+          "match": "single:two",
+          "sgn": -1,
+          "se": [
+            4,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "sample_nonmatch": [
+    {
+      "ti": "odd",
+      "tj": "odd",
+      "h": 0,
+      "s": 1,
+      "G": 2,
+      "n": 4,
+      "e": [
+        36,
+        24
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "odd",
+      "h": 0,
+      "s": -1,
+      "G": 2,
+      "n": 4,
+      "e": [
+        -32,
+        -24
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "odd",
+      "h": 1,
+      "s": 1,
+      "G": 1,
+      "n": 3,
+      "e": [
+        16,
+        10
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "odd",
+      "h": 1,
+      "s": -1,
+      "G": 1,
+      "n": 3,
+      "e": [
+        -12,
+        -10
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "sq2",
+      "h": 0,
+      "s": 1,
+      "G": 1,
+      "n": 2,
+      "e": [
+        10,
+        6
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "sq2",
+      "h": 0,
+      "s": 1,
+      "G": 2,
+      "n": 4,
+      "e": [
+        50,
+        34
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "sq2",
+      "h": 0,
+      "s": -1,
+      "G": 1,
+      "n": 2,
+      "e": [
+        -6,
+        -6
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "sq2",
+      "h": 0,
+      "s": -1,
+      "G": 2,
+      "n": 4,
+      "e": [
+        -46,
+        -34
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "sq2",
+      "h": 1,
+      "s": 1,
+      "G": 0,
+      "n": 1,
+      "e": [
+        6,
+        2
+      ]
+    },
+    {
+      "ti": "odd",
+      "tj": "sq2",
+      "h": 1,
+      "s": 1,
+      "G": 1,
+      "n": 3,
+      "e": [
+        22,
+        14
+      ]
+    }
+  ]
+}

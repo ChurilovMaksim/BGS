@@ -1,5 +1,14 @@
 # Lean 4 formalization
 
+**Current graph (5 November 2026).** `formalization/Bgs` holds 195 `.lean` files (156 top-level modules and 39 adapted
+modules under `Bgs/Mathlib/`), with 2524 `theorem`/`lemma` declarations (grep count) and no `sorry`. 182 claims that are not
+open link Lean files; the registry records the scope of each link. Legacy
+`native_decide` remains in 8 modules with 37 uses: `SevenPrimary` 22 (hash-pinned by
+`computations/verification/seven_primary_certificate.py`, so it is not changed), `TorusLevelSets` 3, `PellCoboundary` 3,
+`CayleyEnergy` 2, `PairKeyFourthMoment` 2, `FibonacciRatioSmall` 2, `FourCutKernel` 2 and `MagneticTraceSmall` 1. The CI job
+`formalization` runs `lake build` (default target `Bgs`) and passed on main `4487e66a`. The paragraphs below are the
+historical description of the graph as it was assembled and are not updated count by count.
+
 The active source graph consists of **33 modules listed below**
 (29 pre-existing modules and 4 fixed-diagonal-kick modules added in PR #56),
 **39 adapted Aristotle/Mathlib modules** and **32 further finite-certificate

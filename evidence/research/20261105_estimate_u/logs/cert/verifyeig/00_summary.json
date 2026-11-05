@@ -1,0 +1,11 @@
+{
+  "CA_tag_allowed": false,
+  "CA_reason": "Bauer-Fike uses float-dense A0 (a_ops) with ulp pad \u2014 [CA-fp]. cert_core residual of float Phi is [CA] as a residual number but does not enclose the true eigenpair without a uniqueness/Rump theorem on the infinite-dim or full Galerkin operator with enclosed Phi. Numeric: BF_rad=5.17e+00, gap_num=1.62e+00, isolated=False, R_s=1.63e-15.",
+  "stored_s": "(1.357239924265973-1.3516424762972736j)",
+  "residual_arb": 8.953779573023479e-16,
+  "BF_rad": 5.165970257186358,
+  "R_s_gap": 1.6279612543362042e-15,
+  "isolated_BF": false,
+  "rump_2x2": true,
+  "seconds": 235.05859684944153
+}

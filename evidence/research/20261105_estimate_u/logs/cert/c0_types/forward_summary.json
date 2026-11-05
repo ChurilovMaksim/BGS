@@ -1,0 +1,35 @@
+{
+  "label": "[N] forward all; [N] op_H singles+top25; [CA] arb singles activity",
+  "n": 1560,
+  "complete": true,
+  "max_abs_sc": 0.5218262068272479,
+  "max_BPhi_H": 0.5218262068272677,
+  "max_op_H": 0.5218262068272641,
+  "per_kind": {
+    "single": {
+      "n": 5,
+      "max_sc": 0.3020870971386358,
+      "max_BPhi": 0.30208709713863613
+    },
+    "single_eps": {
+      "n": 5,
+      "max_sc": 0.3020870971386369,
+      "max_BPhi": 0.302087097138637
+    },
+    "pair": {
+      "n": 1350,
+      "max_sc": 0.1576375825327098,
+      "max_BPhi": 0.15763758253271057
+    },
+    "short": {
+      "n": 200,
+      "max_sc": 0.5218262068272479,
+      "max_BPhi": 0.5218262068272677
+    }
+  },
+  "arb_singles_C0": 0.30208929118330086,
+  "creplay_pairs_max_abs_up": 0.09375253206626977,
+  "C0_activity_CA_singles": 0.30208929118330086,
+  "C0_activity_N_all_forward": 0.5218262068272479,
+  "secs": 2.067615270614624
+}

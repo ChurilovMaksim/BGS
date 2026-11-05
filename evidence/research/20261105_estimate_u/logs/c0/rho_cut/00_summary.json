@@ -1,0 +1,24 @@
+{
+  "phaseA": {
+    "rho": 0.22303697137851128,
+    "eps_res": 5.65747707623771e-17,
+    "r_eps_ub": 0.47226790212601927,
+    "label": "[CA-fp]/[N]"
+  },
+  "phaseB": {
+    "label": "[CA-fp enclosure F-norm]",
+    "Pert_H": 2.1e-08,
+    "float_rel": 1e-11,
+    "max_rad": 4.6725215150800205e-07,
+    "err_K_F": 1.2379977784328483e-06,
+    "ray_rad": 2.5233528628573538e-06,
+    "rho_mid": 0.2230369713785113,
+    "rho_ub": 0.22303949473137416,
+    "r_eps_ub": 0.4722705736454201,
+    "below_050": true,
+    "below_048": true,
+    "note": "Uses ||M||_2<=||M||_F so looser than op-norm version; still [CA-fp] not full arb."
+  },
+  "verdict": "Float residual gives rho<=0.2230369714 (r_eps<=0.472268) with eps_res=5.66e-17. F-norm enclosure rho_ub=0.2230 (loose). Full flint arb of K not completed.",
+  "seconds": 210.17804384231567
+}

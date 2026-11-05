@@ -1,0 +1,37 @@
+{
+  "label": "[CA] from N13 c_replay.jsonl partial",
+  "n": 597,
+  "max_by_kind": {
+    "single": 0.3020870977604644,
+    "single_eps": 0.3020870977621713,
+    "pair": 0.09375253206626977
+  },
+  "worst": {
+    "single": {
+      "k": 0,
+      "name": "odd",
+      "G": 0,
+      "h": 0,
+      "abs_up": 0.3020870977604644,
+      "rad": 4.4487863479908407e-10
+    },
+    "single_eps": {
+      "k": 5,
+      "name": "odd",
+      "G": 0,
+      "h": 1,
+      "abs_up": 0.3020870977621713,
+      "rad": 4.460998567074048e-10
+    },
+    "pair": {
+      "k": 11,
+      "name": "odd+odd",
+      "G": 4,
+      "h": 0,
+      "abs_up": 0.09375253206626977,
+      "rad": 1.2864064063977665e-08
+    }
+  },
+  "overall_max_abs_up": 0.3020870977621713,
+  "note": "597/1560 jobs; abs_up is |r~| arb upper from cert_core chain"
+}

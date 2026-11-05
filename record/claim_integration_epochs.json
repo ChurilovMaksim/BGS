@@ -3321,7 +3321,7 @@
       "fields": {
         "source": "mathematics/cayley-arithmetic/cayley_additive_energy.md",
         "ledger_status": "EXACT + FINITE-DESIGN-INSTANCES",
-        "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target. Formalization coverage is finite design instances only: formalization/Bgs/CayleyEnergy.lean proves the collision energies at the five explicit designs (199,11,139), (67,11,64), (521,13,101), (53,13,10) and (461,23,23) by native_decide; it states no general (for all K) reduction of the mixed layer to additive energy and no uniform cutoff theorem in K.",
+        "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target. Formalization coverage is finite design instances only: formalization/Bgs/CayleyEnergy.lean proves the collision energies at the five explicit designs (199,11,139), (67,11,64), (521,13,101), (53,13,10) and (461,23,23); 19 of its 21 theorems (all checks at the four designs with K = 11 and K = 13, and the K = 23 generator, pair-count and forced-baseline checks) are kernel-checked by decide +kernel, while the K = 23 collision energy and its excess comparison still use native_decide; it states no general (for all K) reduction of the mixed layer to additive energy and no uniform cutoff theorem in K.",
         "evidence": [
           "evidence/certificates/cayley_fixed_k_audit.json",
           "evidence/certificates/cayley_exception_k23.json"
@@ -3334,8 +3334,8 @@
           "manuscript/unified_sections/ch02_arithmetic_core.tex"
         ]
       },
-      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of `source` to mathematics/cayley-arithmetic/cayley_additive_energy.md (P2-MATH wave 6, cayley-arithmetic); no status, title, boundary or content change. Ф.4 (2026-10-25): re-scope admitted — ledger_status, boundary, evidence and verifiers updated to finite design instances only; no state, title, source or dependency change.",
-      "review": "archive/MANIFEST-P2MATH6.md; Ф.4 P1 re-scope (formalization/Bgs/CayleyEnergy.lean header)"
+      "disposition": "Preserve the original sealed input row; admit only the phase-2 topical relocation of `source` to mathematics/cayley-arithmetic/cayley_additive_energy.md (P2-MATH wave 6, cayley-arithmetic); no status, title, boundary or content change. Ф.4 (2026-10-25): re-scope admitted — ledger_status, boundary, evidence and verifiers updated to finite design instances only; no state, title, source or dependency change. 2026-11-05 wording sync (final polish): boundary now states the actual proof mix of formalization/Bgs/CayleyEnergy.lean (19 of 21 theorems decide +kernel after the 2026-11-01 native_decide cleanup; K = 23 energy and excess still native_decide); no state, title, source, evidence, verifier or dependency change.",
+      "review": "archive/MANIFEST-P2MATH6.md; Ф.4 P1 re-scope (formalization/Bgs/CayleyEnergy.lean header); evidence/executions/20261105/final_polish/README.md (wording sync)"
     },
     {
       "id": "BGS-CAYLEY-004",

@@ -1,0 +1,25 @@
+{
+  "label": "[CA-fp] core |r~| prec96 all coded pairs",
+  "n_creplay": 587,
+  "n_new": 763,
+  "n_total_pairs": 1350,
+  "expected": 1350,
+  "complete": true,
+  "need": 0,
+  "creplay_max": 0.09375253206626977,
+  "max_new": 0.037520859856158495,
+  "all_max": 0.09375253206626977,
+  "n_loose_new": 91,
+  "worst_new": {
+    "k": 603,
+    "name": "two+odd",
+    "G": 15,
+    "abs_up": 0.037520859856158495,
+    "tight": false
+  },
+  "below_094": true,
+  "below_06": true,
+  "quantity": "core activity |psi B Phi/(psi Phi)|; Phi/psi/s float-exact (N13 convention)",
+  "truly_CA": false,
+  "CA_fp_note": "N13 float-eigenpair convention; referee GAP (a) remains. Forward 0.1576 discarded (prec-64)."
+}

@@ -1,0 +1,8 @@
+{
+  "label": "[P]+[CA]",
+  "n_relabel": 31,
+  "n_nonrelabel": 169,
+  "C0_relabel_inherited": 0.30208929118330086,
+  "proof_sketch": "If composite seed e = \u00b1 \u03b5^k * s for a single-type seed s, the coded window for e is a reindexing of the single-type window (same digit expansion up to unit shift). Hence |z_e| = |z_s| \u2264 C0_singles [CA]. The 4 float-worst shorts all match sq2 orbits.",
+  "worst4_all_relabel": true
+}

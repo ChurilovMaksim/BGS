@@ -242,12 +242,12 @@ steps. G4c and the application to claim 152 are untouched.
 
 ## Files
 
-- This note: [wave12_lemmaS_proof.md](sandbox://workspace/bgs-breakthrough/methods/wave12_lemmaS_proof.md)
-- Checks: [wave12_lemmaS_explore1.py](sandbox://workspace/bgs-breakthrough/methods/wave12_lemmaS_explore1.py),
-  [wave12_lemmaS_explore2.py](sandbox://workspace/bgs-breakthrough/methods/wave12_lemmaS_explore2.py),
-  [wave12_lemmaS_explore3.py](sandbox://workspace/bgs-breakthrough/methods/wave12_lemmaS_explore3.py),
-  [wave12_lemmaS_explore4.py](sandbox://workspace/bgs-breakthrough/methods/wave12_lemmaS_explore4.py),
-  [wave12_lemmaS_explore5.py](sandbox://workspace/bgs-breakthrough/methods/wave12_lemmaS_explore5.py),
-  [wave12_lemmaS_L6check.py](sandbox://workspace/bgs-breakthrough/methods/wave12_lemmaS_L6check.py)
-- Prior notes: [wave11_task3_pi2pi3_compatibility.md](sandbox://workspace/bgs-breakthrough/methods/wave11_task3_pi2pi3_compatibility.md),
-  [wave11_perclass_pattern_proof.md](sandbox://workspace/bgs-breakthrough/methods/wave11_perclass_pattern_proof.md)
+- This note: [wave12_lemmaS_proof.md](wave12_lemmaS_proof.md)
+- Checks: [wave12_lemmaS_explore1.py](wave12_lemmaS_explore1.py),
+  [wave12_lemmaS_explore2.py](wave12_lemmaS_explore2.py),
+  [wave12_lemmaS_explore3.py](wave12_lemmaS_explore3.py),
+  [wave12_lemmaS_explore4.py](wave12_lemmaS_explore4.py),
+  [wave12_lemmaS_explore5.py](wave12_lemmaS_explore5.py),
+  [wave12_lemmaS_L6check.py](wave12_lemmaS_L6check.py)
+- Prior notes: [wave11_task3_pi2pi3_compatibility.md](wave11_task3_pi2pi3_compatibility.md),
+  [wave11_perclass_pattern_proof.md](wave11_perclass_pattern_proof.md)

@@ -1,0 +1,18 @@
+{
+  "label": "[P]",
+  "n_jobs": 200,
+  "formula": "|T|^2 * |{+-1}| * |{h=0,1}| * |{G: 2G+h<5, (G,h)!=(0,0)}| = 25*2*2*2 = 200",
+  "G_per_h": {
+    "0": [
+      1,
+      2
+    ],
+    "1": [
+      0,
+      1
+    ]
+  },
+  "exhaustive_for": "ordered pairs of single types T with centre distance n=2G+h in {1,2,3,4}",
+  "not_exhaustive_for": "uncoded short clusters outside T\u00d7T (N12-F1 found additional e patterns); those are separate finite list ~169 genuine + 31 relabel",
+  "n_matches_formula": true
+}

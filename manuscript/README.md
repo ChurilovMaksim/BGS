@@ -1,11 +1,24 @@
 # BGS consolidated research manuscript
 
+## Final polish pass, 5 November 2026
+
+The abstract (`front_matter.tex`), the introduction (`ch01_introduction.tex`) and the conclusion
+(`unified_sections/ch15_conclusion.tex`) now describe eight phases and the registry as of 5 November 2026 (438 claims:
+353 proved, 17 verification-pending, 25 conditional, 42 open, 1 refuted). Phase VIII (BGS-TRACE-337..355) has no section
+of its own: it is summarized in those three places and listed in Appendix A, and its proofs stay in
+`mathematics/fixed-map/lineN_span_theorem.md` and the `computations/verification/{h6_p0,h7_scope,h5_ceiling,lemma_s}/`
+reports. The conclusion's "Draft note" label is now "Scope note", the reading map (`figures/fig_reading_map.tex`) shows the
+"Lines B--H" and "Lines I--N" parts and no longer marks Chapter 15 as a draft, and two headings that read "eta two" now
+typeset \(\eta=2\). No chapter was reordered and section and theorem numbers are unchanged. The rebuilt PDF has
+**380 pages**, 0 overfull boxes and no unresolved references (builder status PASS; receipt:
+[final_polish](../evidence/executions/20261105/final_polish/README.md)).
+
 ## Final editorial pass, 1 November 2026
 
 The abstract (`front_matter.tex`), the introduction and guide (`ch01_introduction.tex`) and the conclusion
 (`unified_sections/ch15_conclusion.tex`) now describe the whole programme in seven phases, from the September arithmetic
-chapters to Lines I–N, with current registry counts (419 claims). A `\part*` divider "Lines B--H" now precedes the Line C–H
-sections; section and theorem numbers are unchanged. The current build has **381 pages**, 0 overfull boxes and no unresolved
+chapters to Lines I–N, with the registry counts of that date (419 claims). A `\part*` divider "Lines B--H" now precedes the Line C–H
+sections; section and theorem numbers are unchanged. That build had **381 pages**, 0 overfull boxes and no unresolved
 references; see "Current integration and verification" below. Dated sections below describe earlier revisions.
 
 ## Phase-4 Pass 2: chapter assembly, 25 October 2026
@@ -233,15 +246,18 @@ protocol. A successful LaTeX build is typesetting evidence, not proof evidence.
 The 28 October Aristotle integration updates the canonical TeX sources (the
 claim index, provenance appendix, tomography chapter and conclusion) and carries
 the ERR-060 pure-loss correction without replacing earlier manuscript sections.
-The checked-in `BGS_unified.pdf` was regenerated on 1 November 2026 (final editorial
+The checked-in `BGS_unified.pdf` was regenerated on 5 November 2026 (final polish
 pass) from the current TeX sources, including the chapter "Lines I--N and the conditional
-gas theorem" (`unified_sections/lines_I_N_gas_theorem.tex`), the new part divider for
-Lines B--H, and the revised abstract, introduction and conclusion. It is a 381-page
-local build (`build_unified_manuscript.py --engine auto --publish`, Tectonic
-0.17.0, 0 overfull boxes, no unresolved references; PDF sha256
-b2a63e5039736b5ab0fa049faebcc0647e6006836917b9dcc2f479531c97d3e7, receipt in
-[`evidence/executions/20261101/final_editorial/`](../evidence/executions/20261101/final_editorial/README.md)).
-The previous 379-page build is recorded in
+gas theorem" (`unified_sections/lines_I_N_gas_theorem.tex`), the part divider for
+Lines B--H, and the abstract, introduction and conclusion revised for Phase VIII. It is a 380-page
+local build (`build_unified_manuscript.py --engine auto --publish`, pdfTeX, TeX Live 2026,
+0 overfull boxes, no unresolved references; PDF sha256
+181d84d53a9cc14c4c101d6d1f3075c8bb32be1a93b96e15da3f5b7902e0497a, receipt in
+[`evidence/executions/20261105/final_polish/`](../evidence/executions/20261105/final_polish/README.md)).
+The previous 381-page build of 1 November 2026 (Tectonic 0.17.0, PDF sha256
+b2a63e5039736b5ab0fa049faebcc0647e6006836917b9dcc2f479531c97d3e7) is recorded in
+[`evidence/executions/20261101/final_editorial/`](../evidence/executions/20261101/final_editorial/README.md).
+An earlier 379-page build is recorded in
 [`evidence/executions/20261101/final_presentation/`](../evidence/executions/20261101/final_presentation/README.md);
 the TeX source stays authoritative. The 343-page build recorded in the [historical integration
 receipt](../evidence/formalization/aristotle_20261027/receipt.json) is not a

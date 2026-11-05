@@ -1,0 +1,7 @@
+EXIT 0 | computations/verification/bibliographic_metadata_audit.py | NON-CLAIM: metadata agreement and locator hits do not establish theorem applicability.
+EXIT 0 | computations/verification/check_spectral_edition.py | }
+EXIT 0 | computations/verification/wave2_integration_audit.py | }
+EXIT 0 | computations/verification/wave3_integration_audit.py | }
+EXIT 0 | computations/verification/wave2_portable_replay.py --check-sources | Wave2 portable successor: original sealed source closure OK
+EXIT 0 | computations/verification/wave3_checked_replay.py --check-sources | Wave3 source closure: OK
+EXIT 0 | computations/verification/seven_primary_certificate.py | seven-primary certificate: 7 polynomial literals and 46 factor occurrences match pinned source; no abstract theorem certified

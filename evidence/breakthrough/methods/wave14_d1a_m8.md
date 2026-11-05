@@ -60,5 +60,5 @@ supplied by the 0 split fibers meeting support; D1c is untouched.
 
 ## Files
 
-- Script: [wave14_d1a_m8.py](sandbox://workspace/bgs-breakthrough/methods/wave14_d1a_m8.py)
-- Numbers: [wave14_d1a_m8_result.json](sandbox://workspace/bgs-breakthrough/methods/wave14_d1a_m8_result.json)
+- Script: [wave14_d1a_m8.py](wave14_d1a_m8.py)
+- Numbers: `wave14_d1a_m8_result.json` (not in repository)

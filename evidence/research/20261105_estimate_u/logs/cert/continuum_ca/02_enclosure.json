@@ -1,0 +1,56 @@
+{
+  "label": "FINAL continuum r_eps \u2014 honest",
+  "truly_CA": false,
+  "claim_registerable_as_CA": false,
+  "rho_mid_continuum_Fourier": 0.2250922706915716,
+  "r_eps_mid": 0.47443926956057514,
+  "mid_tag": "[N]",
+  "discrete_HS_majorant_rho": 0.32719021657470637,
+  "discrete_HS_r_eps": 0.5720054340429873,
+  "HS_tag": "[N] float MH \u2014 theorem-shaped but not arb",
+  "attempted_recipe": "float eig / Krylov-Ritz / ulp-ball residual / Rump on H / ||K^k||^{1/k}",
+  "why_not_CA": [
+    "Mh and T,s from float a_ops (not arb-from-definition densified cert_core + enclosed T)",
+    "Full Bauer-Fike / Rump on D^2-dim Ad operator infeasible; Krylov-Ritz enclosure did not finish as [CA] within timebox",
+    "Prior residual+Pert_H demoted by referee (not a spectral-radius theorem)",
+    "Lip\u00b7Nsum mesh err \u226b rho at feasible grids"
+  ],
+  "best_numeric_upper_shaped": {
+    "continuum_mid_r": 0.47443926956057514,
+    "discrete_HS_r": 0.5720054340429873,
+    "note": "Neither is [CA]. Mid suggests ~0.474; HS majorant ~0.572."
+  },
+  "soft_room_semiprime_C0_1": [
+    {
+      "p": 1409,
+      "slack": 0.02011,
+      "C0": 1,
+      "gamma_req": 0.5790037321109415,
+      "r_eps_req": 0.6003042936347018
+    },
+    {
+      "p": 3307,
+      "slack": 0.003347,
+      "C0": 1,
+      "gamma_req": 0.7266987547235524,
+      "r_eps_req": 0.5270324864972832
+    }
+  ],
+  "coverage_if_mid_were_CA": {
+    "r": 0.47443926956057514,
+    "covers_p1409_semiprime": true,
+    "covers_p3307_semiprime": true,
+    "covers_soft_048": true,
+    "covers_soft_050": true,
+    "covers_greedy_0418": false
+  },
+  "coverage_if_HS_were_CA": {
+    "r": 0.5720054340429873,
+    "covers_p1409_semiprime": true,
+    "covers_p3307_semiprime": false,
+    "covers_soft_050": false,
+    "covers_soft_048": false
+  },
+  "conclusion": "NO continuum (nor discrete) r_\u03b5 \u2264 0.5 [CA] achieved. Numeric continuum Fourier mid r_\u03b5\u22480.474 would cover soft semiprime C0=1 at p=1409 (need <0.600) and p=3307 (need <0.527), and soft 0.48\u20130.50, but NOT greedy 0.418. Discrete HS majorant r_\u03b5\u22640.572 [N] covers p=1409 semiprime C0=1 only, not p=3307 (0.527) nor soft 0.50.",
+  "seconds": 0.006050586700439453
+}

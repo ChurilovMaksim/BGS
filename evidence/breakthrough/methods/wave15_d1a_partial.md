@@ -65,6 +65,6 @@ M^m − I (avoids the q² seed problem for large prime-power factors).
 
 ## Files
 
-- Scan: [wave15_d1a_partial_scan.py](sandbox://workspace/bgs-breakthrough/methods/wave15_d1a_partial_scan.py) (m ≤ 9)
-- m = 10 scan: [wave15_d1a_partial_m10b.py](sandbox://workspace/bgs-breakthrough/methods/wave15_d1a_partial_m10b.py), [wave15_scan_10.json](sandbox://workspace/bgs-breakthrough/methods/wave15_scan_10.json)
-- First m = 10 attempt (OOM in grouping, superseded): [wave15_d1a_partial_m10.py](sandbox://workspace/bgs-breakthrough/methods/wave15_d1a_partial_m10.py)
+- Scan: [wave15_d1a_partial_scan.py](wave15_d1a_partial_scan.py) (m ≤ 9)
+- m = 10 scan: [wave15_d1a_partial_m10b.py](wave15_d1a_partial_m10b.py), `wave15_scan_10.json` (not in repository)
+- First m = 10 attempt (OOM in grouping, superseded): [wave15_d1a_partial_m10.py](wave15_d1a_partial_m10.py)
