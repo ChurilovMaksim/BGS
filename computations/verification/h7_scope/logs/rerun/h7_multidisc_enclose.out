@@ -1,0 +1,38 @@
+tail eps 9.646772214969685e-05 exits []
+inclusion [(19, 3437426497, 0, True, True), (19, 24061985479, 0, True, True), (29, 2735635252619983, 0, True, True)]
+{'block_err': np.float64(1.2412670766236366e-16), 'n_out': 0, 'j': 0, 'dim': 280}
+enclose level7_2_1 dim=280 period=3
+  step 3/3 exp 1 rad00 1.934e-102 bits 294 t 3.2
+  newton {'ok': True, 'lo': 1.2835951329030864, 'hi': 1.2835951329030906, 'h': 1.1778081444211548e-14, 'delta': 5.9602943773418804e-93, 'gap': None}
+enclose level7_1_3 dim=280 period=3
+  step 3/3 exp 2 rad00 8.874e-103 bits 296 t 3.3
+  newton {'ok': True, 'lo': 1.2837142953109733, 'hi': 1.2837142953109817, 'h': 3.108871742826001e-14, 'delta': 7.527560631976941e-93, 'gap': None}
+enclose d3437426497 dim=280 period=57
+  step 10/57 exp 8 rad00 1.143e-100 bits 288 t 12.5
+  step 20/57 exp 12 rad00 1.894e-97 bits 271 t 25.9
+  step 30/57 exp 16 rad00 1.181e-93 bits 262 t 41.2
+  step 40/57 exp 21 rad00 2.553e-90 bits 252 t 55.5
+  step 50/57 exp 26 rad00 8.624e-87 bits 238 t 69.6
+  step 57/57 exp 30 rad00 2.072e-84 bits 231 t 79.4
+  newton {'ok': True, 'lo': 1.4587724663901533, 'hi': 1.4587724663901547, 'h': 1.0113209160457644e-14, 'delta': 7.064718260258777e-75, 'gap': None}
+enclose d24061985479 dim=280 period=57
+  step 10/57 exp 9 rad00 1.942e-101 bits 288 t 13.2
+  step 20/57 exp 13 rad00 2.001e-97 bits 275 t 26.9
+  step 30/57 exp 18 rad00 2.404e-94 bits 264 t 40.7
+  step 40/57 exp 23 rad00 7.248e-91 bits 251 t 54.7
+  step 50/57 exp 27 rad00 3.805e-87 bits 241 t 68.3
+  step 57/57 exp 33 rad00 2.556e-85 bits 234 t 78.2
+  newton {'ok': True, 'lo': 1.511980597518887, 'hi': 1.5119805975188885, 'h': 1.7907620264039727e-14, 'delta': 1.5721459951631618e-75, 'gap': None}
+enclose d2735635252619983 dim=280 period=87
+  step 10/87 exp 9 rad00 2.073e-101 bits 286 t 13.4
+  step 20/87 exp 16 rad00 5.622e-98 bits 277 t 27.2
+  step 30/87 exp 19 rad00 2.081e-94 bits 263 t 40.7
+  step 40/87 exp 24 rad00 1.422e-90 bits 252 t 54.8
+  step 50/87 exp 27 rad00 7.925e-87 bits 240 t 68.7
+  step 60/87 exp 30 rad00 3.533e-83 bits 228 t 82.5
+  step 70/87 exp 35 rad00 8.615e-80 bits 215 t 96.1
+  step 80/87 exp 41 rad00 1.604e-76 bits 205 t 110.1
+  step 87/87 exp 48 rad00 6.916e-75 bits 199 t 119.8
+  newton {'ok': True, 'lo': 1.4686852948918225, 'hi': 1.468685294891824, 'h': 1.3679015035337921e-14, 'delta': 4.709891910076349e-65, 'gap': None}
+wrote enclose json
+EXIT 0

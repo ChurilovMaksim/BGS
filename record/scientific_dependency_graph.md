@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**426 registered nodes; 896 direct prerequisite edges.**
+**430 registered nodes; 908 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -318,9 +318,9 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-218](../mathematics/fixed-map/lineI_rprime_reduction.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-219](../mathematics/fixed-map/lineI_rprime_reduction.md) | proved | None registered | `EXT-BHV-2001`, `EXT-CARMICHAEL-1913` | 0 |
 | [BGS-TRACE-220](../mathematics/fixed-map/lineI_rprime_reduction.md) | open | `BGS-TRACE-206`, `BGS-TRACE-213` | None registered | 0 |
-| [BGS-TRACE-221](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-203`, `BGS-TRACE-212`, `BGS-TRACE-216`, `BGS-TRACE-222` | None registered | 6 |
+| [BGS-TRACE-221](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-203`, `BGS-TRACE-212`, `BGS-TRACE-216`, `BGS-TRACE-222` | None registered | 7 |
 | [BGS-TRACE-222](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-203`, `BGS-TRACE-216` | None registered | 5 |
-| [BGS-TRACE-223](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-198`, `BGS-TRACE-203`, `BGS-TRACE-216`, `BGS-TRACE-222` | None registered | 4 |
+| [BGS-TRACE-223](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-198`, `BGS-TRACE-203`, `BGS-TRACE-216`, `BGS-TRACE-222` | None registered | 5 |
 | [BGS-TRACE-224](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | None registered | None registered | 1 |
 | [BGS-TRACE-225](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-206`, `BGS-TRACE-212`, `BGS-TRACE-213`, `BGS-TRACE-216`, `BGS-TRACE-221`, `BGS-TRACE-222`, `BGS-TRACE-223`, `BGS-TRACE-224` | None registered | 12 |
 | [BGS-TRACE-226](../mathematics/fixed-map/lineJ_d7_twisted_coefficient.md) | proved | `BGS-TRACE-197`, `BGS-TRACE-203`, `BGS-TRACE-207` | None registered | 14 |
@@ -362,7 +362,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-262](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-238`, `BGS-TRACE-252`, `BGS-TRACE-253`, `BGS-TRACE-261` | None registered | 0 |
 | [BGS-TRACE-263](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-206`, `BGS-TRACE-212`, `BGS-TRACE-254` | None registered | 2 |
 | [BGS-TRACE-264](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-238`, `BGS-TRACE-255`, `BGS-TRACE-263` | None registered | 1 |
-| [BGS-TRACE-265](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-230`, `BGS-TRACE-263`, `BGS-TRACE-264` | None registered | 2 |
+| [BGS-TRACE-265](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-230`, `BGS-TRACE-263`, `BGS-TRACE-264` | None registered | 4 |
 | [BGS-TRACE-266](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-203`, `BGS-TRACE-206`, `BGS-TRACE-216`, `BGS-TRACE-230`, `BGS-TRACE-277` | None registered | 2 |
 | [BGS-TRACE-267](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-243`, `BGS-TRACE-255` | None registered | 0 |
 | [BGS-TRACE-268](../mathematics/fixed-map/lineL_op_open_range.md) | proved | `BGS-TRACE-255` | None registered | 0 |
@@ -370,7 +370,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-270](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-225`, `BGS-TRACE-227`, `BGS-TRACE-235` | None registered | 0 |
 | [BGS-TRACE-271](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-225`, `BGS-TRACE-228`, `BGS-TRACE-230`, `BGS-TRACE-238`, `BGS-TRACE-246`, `BGS-TRACE-269`, `BGS-TRACE-273` | None registered | 3 |
 | [BGS-TRACE-272](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-206` | None registered | 0 |
-| [BGS-TRACE-273](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-206` | None registered | 5 |
+| [BGS-TRACE-273](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-206` | None registered | 7 |
 | [BGS-TRACE-274](../mathematics/fixed-map/lineMN_conductor_structure.md) | open | `BGS-TRACE-206`, `BGS-TRACE-238` | None registered | 0 |
 | [BGS-TRACE-275](../mathematics/fixed-map/lineMN_conductor_structure.md) | proved | `BGS-TRACE-206`, `BGS-TRACE-237`, `BGS-TRACE-238` | None registered | 1 |
 | [BGS-TRACE-276](../mathematics/fixed-map/lineMN_conductor_structure.md) | open | `BGS-TRACE-206`, `BGS-TRACE-221`, `BGS-TRACE-222`, `BGS-TRACE-228`, `BGS-TRACE-229`, `BGS-TRACE-293` | None registered | 0 |
@@ -402,7 +402,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-302](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-307`, `BGS-TRACE-322`, `BGS-TRACE-326`, `BGS-TRACE-327`, `BGS-TRACE-328` | None registered | 1 |
 | [BGS-TRACE-303](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | open | `BGS-TRACE-313`, `BGS-TRACE-319`, `BGS-TRACE-320` | None registered | 2 |
 | [BGS-TRACE-304](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | open | `BGS-TRACE-296`, `BGS-TRACE-315` | None registered | 2 |
-| [BGS-TRACE-305](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | open | `BGS-TRACE-223`, `BGS-TRACE-227`, `BGS-TRACE-238`, `BGS-TRACE-244`, `BGS-TRACE-251`, `BGS-TRACE-252`, `BGS-TRACE-265`, `BGS-TRACE-273`, `BGS-TRACE-275`, `BGS-TRACE-280`, `BGS-TRACE-281`, `BGS-TRACE-282`, `BGS-TRACE-317` | None registered | 2 |
+| [BGS-TRACE-305](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | open | `BGS-TRACE-223`, `BGS-TRACE-227`, `BGS-TRACE-238`, `BGS-TRACE-244`, `BGS-TRACE-251`, `BGS-TRACE-252`, `BGS-TRACE-265`, `BGS-TRACE-273`, `BGS-TRACE-275`, `BGS-TRACE-280`, `BGS-TRACE-281`, `BGS-TRACE-282`, `BGS-TRACE-317` | None registered | 3 |
 | [BGS-TRACE-306](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | open | `BGS-TRACE-300`, `BGS-TRACE-308`, `BGS-TRACE-320` | None registered | 2 |
 | [BGS-TRACE-307](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-309`, `BGS-TRACE-311` | None registered | 10 |
 | [BGS-TRACE-308](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-309` | None registered | 2 |
@@ -422,7 +422,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-322](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-307`, `BGS-TRACE-335` | None registered | 3 |
 | [BGS-TRACE-323](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-311` | None registered | 4 |
 | [BGS-TRACE-324](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | verification-pending | `BGS-TRACE-198`, `BGS-TRACE-199`, `BGS-TRACE-313` | None registered | 1 |
-| [BGS-TRACE-325](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | conditional | `BGS-TRACE-206`, `BGS-TRACE-213`, `BGS-TRACE-271`, `BGS-TRACE-273`, `BGS-TRACE-303`, `BGS-TRACE-304`, `BGS-TRACE-305`, `BGS-TRACE-306`, `BGS-TRACE-307`, `BGS-TRACE-326`, `BGS-TRACE-332`, `BGS-TRACE-333`, `BGS-TRACE-336` | None registered | 0 |
+| [BGS-TRACE-325](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | conditional | `BGS-TRACE-206`, `BGS-TRACE-213`, `BGS-TRACE-271`, `BGS-TRACE-273`, `BGS-TRACE-303`, `BGS-TRACE-304`, `BGS-TRACE-305`, `BGS-TRACE-306`, `BGS-TRACE-307`, `BGS-TRACE-326`, `BGS-TRACE-332`, `BGS-TRACE-333`, `BGS-TRACE-336` | None registered | 1 |
 | [BGS-TRACE-326](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-198`, `BGS-TRACE-307`, `BGS-TRACE-311`, `BGS-TRACE-322`, `BGS-TRACE-323`, `BGS-TRACE-327`, `BGS-TRACE-328`, `BGS-TRACE-335` | None registered | 4 |
 | [BGS-TRACE-327](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-323`, `BGS-TRACE-328`, `BGS-TRACE-335` | None registered | 2 |
 | [BGS-TRACE-328](../mathematics/fixed-map/lineN5N18_gas_conditional.md) | proved | `BGS-TRACE-310`, `BGS-TRACE-311` | None registered | 3 |
@@ -440,3 +440,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-341](../mathematics/fixed-map/lineN_span_theorem.md) | conditional | `BGS-TRACE-333`, `BGS-TRACE-336`, `BGS-TRACE-337`, `BGS-TRACE-340` | None registered | 0 |
 | [BGS-TRACE-342](../computations/verification/h6_p0/REPORT_P4_v2.md) | proved | None registered | None registered | 1 |
 | [BGS-TRACE-343](../computations/verification/h6_p0/REPORT_P4_v2.md) | conditional | `BGS-TRACE-289`, `BGS-TRACE-294`, `BGS-TRACE-296`, `BGS-TRACE-342` | None registered | 0 |
+| [BGS-TRACE-344](../computations/verification/h7_scope/REPORT_H7_SCOPE.md) | proved | `BGS-TRACE-265` | None registered | 1 |
+| [BGS-TRACE-345](../computations/verification/h7_scope/REPORT_H7_SCOPE.md) | proved | `BGS-TRACE-265`, `BGS-TRACE-273`, `BGS-TRACE-344` | None registered | 2 |
+| [BGS-TRACE-346](../computations/verification/h7_scope/REPORT_H7_SCOPE.md) | proved | `BGS-TRACE-221`, `BGS-TRACE-223`, `BGS-TRACE-273`, `BGS-TRACE-345` | None registered | 1 |
+| [BGS-TRACE-347](../computations/verification/h7_scope/REPORT_H7_SCOPE.md) | proved | `BGS-TRACE-305`, `BGS-TRACE-325`, `BGS-TRACE-345`, `BGS-TRACE-346` | None registered | 0 |
