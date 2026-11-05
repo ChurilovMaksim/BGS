@@ -143,3 +143,19 @@ python3 evidence/research/20261104_grok47/code/h5_lines.py
 ```
 
 Outcome: `logs/h5_lines.json`. \(h_{1409} > 10^{539}\) and \(h_{3307} > 10^{1265}\). The greedy sets of primes \(\equiv \pm 1\pmod{2p}\) have lengths \(98\) and \(203\). Their \(\gamma = 1\) sums are \(0.00185727536\) and \(0.00076449640\). Both lie under the corresponding slack, and so do the products with \(M\). The progression floors at \(w_{\max}\) lie under both slacks absolutely and miss both after multiplication by \(M\). The loose sum at \(p = 3307\) is \(0.00356995629\), above the fragile cap. On \(3307\le p\le 4599\) it increases \(137\) times; the last exceedance is \(p = 3565\); the maximum from \(3566\) on falls at \(p = 3567\), where the 50-decimal gap to \(0.00334719\) is \(4.69455\cdot 10^{-7}\). Runtime about \(13\) s.
+
+Twelfth target, the threshold \(\gamma^*\) and the sum \(X_{\mathrm{line}}(d)\). Same interpreter. mpmath at 80 decimal places for the greedy search. The line sums use the N6 transfer law at \(L = 8\), \(K = 16\), kick \(J_n(1.8)\), \(\rho = (2,8)\), imported from `computations/verification/lineI/code` and `computations/verification/lineL/L2/code`. No registry file was written. The run stops at \(p = 17\): both cross lines there were summed, and the Binet lines at \(p = 17\) were not. No line with \(p\ge 23\) was summed.
+
+```text
+python3 evidence/research/20261104_grok47/code/h5_xline.py gamma
+python3 evidence/research/20261104_grok47/code/h5_xline.py sign --pmax 400
+python3 evidence/research/20261104_grok47/code/h5_xline.py ann --pmax 47
+python3 evidence/research/20261104_grok47/code/h5_xline.py factor --pmax 200 --timeout 25 --trial 2000000
+python3 evidence/research/20261104_grok47/code/h5_xline.py lines --p 11 --K 16 --which all
+python3 evidence/research/20261104_grok47/code/h5_xline.py lines --p 11 --K 8 --which all
+python3 evidence/research/20261104_grok47/code/h5_xline.py lines --p 11 --K 12 --which cross
+python3 evidence/research/20261104_grok47/code/h5_xline.py lines --p 13 --K 16 --which all
+python3 evidence/research/20261104_grok47/code/h5_xline.py lines --p 17 --K 16 --which cross
+```
+
+Outcome: `logs/h5_xline_gamma.json`, `logs/h5_xline_sign.json`, `logs/h5_xline_ann.json`, `logs/h5_xline_factor.json`, and `logs/h5_xline_p{11,13,17}_*.json`. The binding thresholds are \(0.873735223878\) absolutely and \(0.990856413416\) times \(M\), both at \(p = 3307\). The cross-line moduli at \(K = 16\) are \(7.958\cdot 10^{-6}\), \(4.760\cdot 10^{-5}\) and \(7.175\cdot 10^{-7}\). Each product with \(\min(d, h/d)\) is below \(1\). The totals at \(p = 11\) and \(p = 13\) differ from the stored `f_iso` values by less than \(10^{-16}\). There is no such comparison at \(p = 17\). Factorisations of \(h_p\) for odd primes \(p\le 199\) are squarefree, and every prime factor is \(1\pmod{2p}\). The two cross lines at \(p = 17\) took about \(1.06\cdot 10^4\) s together. The sign check includes \(p = 1409\) and \(p = 3307\).

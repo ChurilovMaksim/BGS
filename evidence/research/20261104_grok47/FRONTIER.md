@@ -1,5 +1,19 @@
 # Frontier, 4 November 2026
 
+## Twelfth target: \(\gamma^*\) and the sum on one cross line
+
+The eleven targets below are kept as records. The twelfth target is the missing per-line inequality \(|X_{\mathrm{line}}(d)|\le C\min(d, h_p/d)^{-\gamma}\). The proof note is `proofs/h5_xline.md`. The self-referee is `REFEREE_H5_XLINE.md`.
+
+What that note establishes, inside this directory only:
+
+- **[P-arith]** With \(C = 1\), the greedy divisor sum fits both idealised rooms for every \(\gamma\) at least \(0.873735223878\) in the absolute reading, and at least \(0.990856413416\) after multiplication by the gas surplus \(M\). Both thresholds bind at \(p = 3307\). The value \(\gamma = 1\) clears both readings. The value \(\gamma = 1/2\) clears neither tight room. This is not a bound on a line.
+- **[P]** For every odd positive integer \(p\) and every \(d\mid h_p\), \(\varepsilon^{2p}\equiv 1\pmod d\) in \(\mathbb Z[\sqrt 2]\), and not \(-1\). For every odd prime \(p\), \(h_p\equiv 1\pmod{2p}\).
+- **[P]** The sum of \(\hat Z\) over an ideal of squarefree norm \(h\) equals \(h\) times the sum of the kick weights of those words whose partial orbit lands in the conjugate ideal. The factor \(\min(d, h/d)^{-\gamma}\) does not appear. The group \(\langle\lambda,-1\rangle\) acts freely on the nonzero classes when \(h\mid h_p\) is squarefree.
+- **[N]** In the N6 model at \(K = 16\), the cross-line moduli are \(7.958\cdot 10^{-6}\) at \(p = 11\), \(4.760\cdot 10^{-5}\) at \(p = 13\) and \(7.175\cdot 10^{-7}\) at \(p = 17\). Each product with \(\min(d, h/d)\) is below \(1\). There is no counterexample to \(\gamma = 1\) on this set. The pairwise log-log slopes are \(+1.45\) and \(-15.8\). Binet lines were summed at \(p = 11\) and \(13\) only. No line with \(p\ge 23\) was summed.
+- **[P, finite]** `python-flint` 0.9.0 factors \(h_p\) for every odd prime \(p\le 199\). Each factorisation is squarefree, and every prime factor is \(1\pmod{2p}\). This is not H6.
+
+\(\gamma^*\) is not achieved. H5(b) stays open. The composite branch of H5 is not discharged. `record/claims.json` was not edited.
+
 ## Eleventh target: the cross-line coefficient in H5(b) and H5(c)
 
 The ten targets below are kept as records. The eleventh target is the per-line bound on the \(2^{\omega(h_p)}-2\) cross lines, and the same question for the partially isotropic points. The proof note is `proofs/h5_lines.md`. The self-referee is `REFEREE_H5_LINES.md`.

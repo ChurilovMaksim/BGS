@@ -1,0 +1,300 @@
+{
+ "p": 13,
+ "m": 39,
+ "h": 47321,
+ "fac": [
+  79,
+  599
+ ],
+ "squarefree": true,
+ "gamma_pattern": [
+  -1,
+  1
+ ],
+ "K": 16,
+ "L": 8,
+ "b": 8,
+ "S": 64,
+ "Zrho": [
+  4106873270.257183,
+  50852781715.53247
+ ],
+ "abs_Zrho": 51018347839.434654,
+ "which": "all",
+ "lines": [
+  {
+   "signs": [
+    -1,
+    -1
+   ],
+   "d_index": 599,
+   "cofactor": 79,
+   "min_d_h_over_d": 79,
+   "kind": "cross",
+   "n_points": 47320,
+   "n_orbits": 1820,
+   "n_primitive_points": 46644,
+   "n_axis_points": 676,
+   "X_ideal": [
+    -3.901642341514678e-05,
+    2.7274476754633486e-05
+   ],
+   "abs_ideal": 4.76043945277015e-05,
+   "X_primitive": [
+    -3.90170581290627e-05,
+    2.727706533383754e-05
+   ],
+   "abs_primitive": 4.760639787122209e-05,
+   "X_axis": [
+    6.347139159200953e-10,
+    -2.588579204052731e-09
+   ],
+   "abs_axis": 2.665258721159522e-09,
+   "l1_ideal": 7.670230260159353e-05,
+   "l1_primitive": 7.669803597441029e-05,
+   "max_abs_ratio": 1.9274037082805397e-06,
+   "invariance_max_abs_gap": 1.0579936123048482e-15,
+   "sec": 150.88788533210754,
+   "min_dist_to_Z": 2.113226685818148e-05,
+   "median_min_dist": 0.025105133027619853,
+   "max_slow_steps": 21,
+   "orbits_with_slow_ge_3": 1360,
+   "mean_slow_steps": 3.9,
+   "primitive": {
+    "min_dist_to_Z": 2.113226685818148e-05,
+    "max_slow_steps": 21,
+    "n": 1794
+   },
+   "axis": {
+    "min_dist_to_Z": 0.0016694490818029983,
+    "max_slow_steps": 9,
+    "n": 26
+   }
+  },
+  {
+   "signs": [
+    1,
+    -1
+   ],
+   "d_index": 47321,
+   "cofactor": 1,
+   "min_d_h_over_d": null,
+   "kind": "binet",
+   "n_points": 47320,
+   "n_orbits": 1820,
+   "n_primitive_points": 46644,
+   "n_axis_points": 676,
+   "X_ideal": [
+    0.009753622497133678,
+    0.004853876926719405
+   ],
+   "abs_ideal": 0.010894644236336092,
+   "X_primitive": [
+    0.009753621862419765,
+    0.004853879515298609
+   ],
+   "abs_primitive": 0.010894644821383956,
+   "X_axis": [
+    6.347139133722202e-10,
+    -2.58857920341915e-09
+   ],
+   "abs_axis": 2.6652587199374098e-09,
+   "l1_ideal": 0.011210585880642157,
+   "l1_primitive": 0.011210581614014972,
+   "max_abs_ratio": 0.00039545410857070863,
+   "invariance_max_abs_gap": 1.4744266842966204e-11,
+   "sec": 149.83963871002197,
+   "min_dist_to_Z": 2.113226685818148e-05,
+   "median_min_dist": 0.025115699161049,
+   "max_slow_steps": 24,
+   "orbits_with_slow_ge_3": 1395,
+   "mean_slow_steps": 3.9,
+   "primitive": {
+    "min_dist_to_Z": 2.113226685818148e-05,
+    "max_slow_steps": 24,
+    "n": 1794
+   },
+   "axis": {
+    "min_dist_to_Z": 0.0016694490818029983,
+    "max_slow_steps": 9,
+    "n": 26
+   }
+  },
+  {
+   "signs": [
+    -1,
+    1
+   ],
+   "d_index": 1,
+   "cofactor": 47321,
+   "min_d_h_over_d": null,
+   "kind": "binet",
+   "n_points": 47320,
+   "n_orbits": 1820,
+   "n_primitive_points": 46644,
+   "n_axis_points": 676,
+   "X_ideal": [
+    0.009753622497133668,
+    0.004853876926719415
+   ],
+   "abs_ideal": 0.010894644236336086,
+   "X_primitive": [
+    0.009753621862419752,
+    0.004853879515298618
+   ],
+   "abs_primitive": 0.010894644821383949,
+   "X_axis": [
+    6.347139151069436e-10,
+    -2.58857920341915e-09
+   ],
+   "abs_axis": 2.6652587203505228e-09,
+   "l1_ideal": 0.011210585880642152,
+   "l1_primitive": 0.011210581614014965,
+   "max_abs_ratio": 0.0003954541085707084,
+   "invariance_max_abs_gap": 1.8225386545374702e-11,
+   "sec": 154.11378860473633,
+   "min_dist_to_Z": 2.113226685818148e-05,
+   "median_min_dist": 0.025115699161049,
+   "max_slow_steps": 24,
+   "orbits_with_slow_ge_3": 1395,
+   "mean_slow_steps": 3.9,
+   "primitive": {
+    "min_dist_to_Z": 2.113226685818148e-05,
+    "max_slow_steps": 24,
+    "n": 1794
+   },
+   "axis": {
+    "min_dist_to_Z": 0.0016694490818029983,
+    "max_slow_steps": 9,
+    "n": 26
+   }
+  },
+  {
+   "signs": [
+    1,
+    1
+   ],
+   "d_index": 79,
+   "cofactor": 599,
+   "min_d_h_over_d": 79,
+   "kind": "cross",
+   "n_points": 47320,
+   "n_orbits": 1820,
+   "n_primitive_points": 46644,
+   "n_axis_points": 676,
+   "X_ideal": [
+    -3.901642341514677e-05,
+    2.7274476754633493e-05
+   ],
+   "abs_ideal": 4.760439452770149e-05,
+   "X_primitive": [
+    -3.901705812906268e-05,
+    2.7277065333837546e-05
+   ],
+   "abs_primitive": 4.7606397871222084e-05,
+   "X_axis": [
+    6.34713915913319e-10,
+    -2.588579204052731e-09
+   ],
+   "abs_axis": 2.6652587211579086e-09,
+   "l1_ideal": 7.670230260159352e-05,
+   "l1_primitive": 7.669803597441028e-05,
+   "max_abs_ratio": 1.9274037082805393e-06,
+   "invariance_max_abs_gap": 1.0362907589042387e-15,
+   "sec": 154.3666229248047,
+   "min_dist_to_Z": 2.113226685818148e-05,
+   "median_min_dist": 0.025105133027619853,
+   "max_slow_steps": 21,
+   "orbits_with_slow_ge_3": 1360,
+   "mean_slow_steps": 3.9,
+   "primitive": {
+    "min_dist_to_Z": 2.113226685818148e-05,
+    "max_slow_steps": 21,
+    "n": 1794
+   },
+   "axis": {
+    "min_dist_to_Z": 0.0016694490818029983,
+    "max_slow_steps": 9,
+    "n": 26
+   }
+  }
+ ],
+ "unique_X_if_all_lines": [
+  0.019429210878009223,
+  0.009762307984106494
+ ],
+ "f_iso_check": {
+  "f_iso_X": [
+   0.01942921087800924,
+   0.009762307984106483
+  ],
+  "unique_X": [
+   0.019429210878009223,
+   0.009762307984106494
+  ],
+  "abs_gap": 2.023017827855918e-17
+ },
+ "h_period_digits": 15,
+ "empirical": [
+  {
+   "p": 13,
+   "K": 16,
+   "d_index": 599,
+   "min": 79,
+   "support": "ideal",
+   "abs": 4.76043945277015e-05,
+   "abs_times_min": 0.0037607471676884183,
+   "counterexample_gamma1_C1": false,
+   "gamma_eq_C1": 2.2777673095145143,
+   "C_at_gamma_abs": 0.002166060971641985,
+   "C_at_gamma_M": 0.003613458069078426,
+   "exceeds_gamma_abs_C1": false,
+   "exceeds_gamma_M_C1": false
+  },
+  {
+   "p": 13,
+   "K": 16,
+   "d_index": 599,
+   "min": 79,
+   "support": "primitive",
+   "abs": 4.760639787122209e-05,
+   "abs_times_min": 0.003760905431826545,
+   "counterexample_gamma1_C1": false,
+   "gamma_eq_C1": 2.2777576784857207,
+   "C_at_gamma_abs": 0.002166152126340113,
+   "C_at_gamma_M": 0.003613610134825327,
+   "exceeds_gamma_abs_C1": false,
+   "exceeds_gamma_M_C1": false
+  },
+  {
+   "p": 13,
+   "K": 16,
+   "d_index": 79,
+   "min": 79,
+   "support": "ideal",
+   "abs": 4.760439452770149e-05,
+   "abs_times_min": 0.003760747167688418,
+   "counterexample_gamma1_C1": false,
+   "gamma_eq_C1": 2.2777673095145143,
+   "C_at_gamma_abs": 0.002166060971641985,
+   "C_at_gamma_M": 0.0036134580690784252,
+   "exceeds_gamma_abs_C1": false,
+   "exceeds_gamma_M_C1": false
+  },
+  {
+   "p": 13,
+   "K": 16,
+   "d_index": 79,
+   "min": 79,
+   "support": "primitive",
+   "abs": 4.7606397871222084e-05,
+   "abs_times_min": 0.0037609054318265447,
+   "counterexample_gamma1_C1": false,
+   "gamma_eq_C1": 2.2777576784857207,
+   "C_at_gamma_abs": 0.002166152126340113,
+   "C_at_gamma_M": 0.0036136101348253264,
+   "exceeds_gamma_abs_C1": false,
+   "exceeds_gamma_M_C1": false
+  }
+ ]
+}

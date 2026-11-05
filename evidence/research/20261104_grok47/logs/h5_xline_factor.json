@@ -1,0 +1,1151 @@
+{
+ "pmax": 200,
+ "trial_limit": 2000000,
+ "timeout_s": 25,
+ "rows": [
+  {
+   "p": 3,
+   "digits": 1,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     7,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 1,
+   "squarefree": true,
+   "composite": false,
+   "congruence_pm1": true,
+   "h": 7
+  },
+  {
+   "p": 5,
+   "digits": 2,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     41,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 1,
+   "squarefree": true,
+   "composite": false,
+   "congruence_pm1": true,
+   "h": 41
+  },
+  {
+   "p": 7,
+   "digits": 3,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     239,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 1,
+   "squarefree": true,
+   "composite": false,
+   "congruence_pm1": true,
+   "h": 239
+  },
+  {
+   "p": 11,
+   "digits": 4,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     23,
+     1
+    ],
+    [
+     353,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 8119
+  },
+  {
+   "p": 13,
+   "digits": 5,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     79,
+     1
+    ],
+    [
+     599,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 47321
+  },
+  {
+   "p": 17,
+   "digits": 7,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     103,
+     1
+    ],
+    [
+     15607,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 1607521
+  },
+  {
+   "p": 19,
+   "digits": 7,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     9369319,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 1,
+   "squarefree": true,
+   "composite": false,
+   "congruence_pm1": true,
+   "h": 9369319
+  },
+  {
+   "p": 23,
+   "digits": 9,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     47,
+     1
+    ],
+    [
+     6771937,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 318281039
+  },
+  {
+   "p": 29,
+   "digits": 11,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     63018038201,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 1,
+   "squarefree": true,
+   "composite": false,
+   "congruence_pm1": true,
+   "h": 63018038201
+  },
+  {
+   "p": 31,
+   "digits": 12,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     424577,
+     1
+    ],
+    [
+     865087,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 367296043199
+  },
+  {
+   "p": 37,
+   "digits": 14,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     223,
+     1
+    ],
+    [
+     37223,
+     1
+    ],
+    [
+     8761009,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 72722761475561
+  },
+  {
+   "p": 41,
+   "digits": 16,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     2297,
+     1
+    ],
+    [
+     302663,
+     1
+    ],
+    [
+     3553471,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 2470433131948081
+  },
+  {
+   "p": 43,
+   "digits": 17,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     19609,
+     1
+    ],
+    [
+     153511,
+     1
+    ],
+    [
+     4783321,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 14398739476117879
+  },
+  {
+   "p": 47,
+   "digits": 18,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     489133282872437279,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 1,
+   "squarefree": true,
+   "composite": false,
+   "congruence_pm1": true,
+   "h": 489133282872437279
+  },
+  {
+   "p": 53,
+   "digits": 20,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     9940681,
+     1
+    ],
+    [
+     9742382798081,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 96845919575610633161
+  },
+  {
+   "p": 59,
+   "digits": 23,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     19175002942688032928599,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 1,
+   "squarefree": true,
+   "composite": false,
+   "congruence_pm1": true,
+   "h": 19175002942688032928599
+  },
+  {
+   "p": 61,
+   "digits": 24,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     92111,
+     1
+    ],
+    [
+     1213319877845761591,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 111760107268250945908601
+  },
+  {
+   "p": 67,
+   "digits": 26,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     681400319,
+     1
+    ],
+    [
+     32474209598556281,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 22127936779729111812853639
+  },
+  {
+   "p": 71,
+   "digits": 27,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     1279,
+     1
+    ],
+    [
+     215983,
+     1
+    ],
+    [
+     2721156687009413567,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 751698464870122983994500719
+  },
+  {
+   "p": 73,
+   "digits": 28,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     2593399,
+     1
+    ],
+    [
+     3626711833,
+     1
+    ],
+    [
+     465814116463,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 4381219722279095887999111921
+  },
+  {
+   "p": 79,
+   "digits": 30,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     34129,
+     1
+    ],
+    [
+     2939707079,
+     1
+    ],
+    [
+     8646125287954009,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 867459377074481256712011306719
+  },
+  {
+   "p": 83,
+   "digits": 32,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     167,
+     1
+    ],
+    [
+     1600823657,
+     1
+    ],
+    [
+     5205877529,
+     1
+    ],
+    [
+     21173759489,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 4,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 29468083200663558275864384257639
+  },
+  {
+   "p": 89,
+   "digits": 34,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     2671,
+     1
+    ],
+    [
+     2184399715923584421940461280831,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 5834531641231893991002972081099601
+  },
+  {
+   "p": 97,
+   "digits": 37,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     4463,
+     1
+    ],
+    [
+     195418370547079,
+     1
+    ],
+    [
+     7720033903045593593,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 6733044458057842709277507685523012161
+  },
+  {
+   "p": 101,
+   "digits": 39,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     607,
+     1
+    ],
+    [
+     809,
+     1
+    ],
+    [
+     5657,
+     1
+    ],
+    [
+     82336202383304868700526695991,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 4,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 228725309250740208744750893347264645481
+  },
+  {
+   "p": 103,
+   "digits": 40,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     1031,
+     1
+    ],
+    [
+     117820693279,
+     1
+    ],
+    [
+     10974515468543649653772871,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true,
+   "h": 1333108796552974910559500626578123263279
+  },
+  {
+   "p": 107,
+   "digits": 41,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     108005571449,
+     1
+    ],
+    [
+     419297406756778731194526681071,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 109,
+   "digits": 42,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     2617,
+     1
+    ],
+    [
+     4059161,
+     1
+    ],
+    [
+     9707524087,
+     1
+    ],
+    [
+     2559594860484711449599,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 4,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 113,
+   "digits": 43,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     2713,
+     1
+    ],
+    [
+     20282220354553,
+     1
+    ],
+    [
+     162951047649951023098749649,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 127,
+   "digits": 49,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     206249,
+     1
+    ],
+    [
+     583867241485433,
+     1
+    ],
+    [
+     17012811156608247631227391967,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 131,
+   "digits": 50,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     263,
+     1
+    ],
+    [
+     264623881335991729549939634728969911119058637313,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 137,
+   "digits": 53,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     21010047311639,
+     1
+    ],
+    [
+     655861088172470374246867637461691699639,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 2,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 139,
+   "digits": 53,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     58937,
+     1
+    ],
+    [
+     72559,
+     1
+    ],
+    [
+     422461241933369,
+     1
+    ],
+    [
+     44455354775539596412413906697,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 4,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 149,
+   "digits": 57,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     33377,
+     1
+    ],
+    [
+     214561,
+     1
+    ],
+    [
+     13980671,
+     1
+    ],
+    [
+     5395367362970895011424838643126561090423,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 4,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 151,
+   "digits": 58,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     2719,
+     1
+    ],
+    [
+     37546906360511,
+     1
+    ],
+    [
+     30840053530712952590841135456274422582511,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 157,
+   "digits": 60,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     6478017079412161,
+     1
+    ],
+    [
+     2482948239493727654399,
+     1
+    ],
+    [
+     38756348057573791924999,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 163,
+   "digits": 63,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     123426017006182806728593424683999798008235734137469123231828679,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 1,
+   "squarefree": true,
+   "composite": false,
+   "congruence_pm1": true
+  },
+  {
+   "p": 167,
+   "digits": 64,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     2889769,
+     1
+    ],
+    [
+     108732031,
+     1
+    ],
+    [
+     108445317833405447513,
+     1
+    ],
+    [
+     123048981039914472698395518097,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 4,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 173,
+   "digits": 66,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     13841,
+     1
+    ],
+    [
+     395723309556457633,
+     1
+    ],
+    [
+     151566934379331563898389576535320219991615337,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 179,
+   "digits": 69,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     359,
+     1
+    ],
+    [
+     2798129,
+     1
+    ],
+    [
+     694896363708809,
+     1
+    ],
+    [
+     235469932650791056904122580438755186192025801,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 4,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 181,
+   "digits": 69,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     177743,
+     1
+    ],
+    [
+     13088111,
+     1
+    ],
+    [
+     17996831,
+     1
+    ],
+    [
+     24959686783,
+     1
+    ],
+    [
+     2038052104057,
+     1
+    ],
+    [
+     449830731804310471957748017,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 6,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 191,
+   "digits": 73,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     383,
+     1
+    ],
+    [
+     860647,
+     1
+    ],
+    [
+     84084714820227367,
+     1
+    ],
+    [
+     20367486947489795119,
+     1
+    ],
+    [
+     11414254940502580946032219903,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 5,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 193,
+   "digits": 74,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     167911,
+     1
+    ],
+    [
+     397360475317903,
+     1
+    ],
+    [
+     562876944100455258986800710458218540288797129268746937,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 197,
+   "digits": 76,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     348192387929766089,
+     1
+    ],
+    [
+     655951748201936872542319,
+     1
+    ],
+    [
+     5585844603078570110272295663667631,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 3,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  },
+  {
+   "p": 199,
+   "digits": 76,
+   "complete": true,
+   "timed_out": false,
+   "factors": [
+    [
+     216911,
+     1
+    ],
+    [
+     5930201,
+     1
+    ],
+    [
+     2882762159,
+     1
+    ],
+    [
+     36616188935377,
+     1
+    ],
+    [
+     49705453294868009,
+     1
+    ],
+    [
+     1101778782350872594215167,
+     1
+    ]
+   ],
+   "cofactor_digits": 1,
+   "cofactor_is_one": false,
+   "omega": 6,
+   "squarefree": true,
+   "composite": true,
+   "congruence_pm1": true
+  }
+ ]
+}
