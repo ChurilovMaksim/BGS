@@ -588,7 +588,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**434 registered claims: 350 proved, 17 verification-pending, 24 conditional, 42 open, 1 refuted.**
+**438 registered claims: 353 proved, 17 verification-pending, 25 conditional, 42 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -754,7 +754,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (325 claims)
+### TRACE family (329 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -1083,5 +1083,9 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-349` | **PROVED** | Coprimality [P]: gcd(h_p, h_p') = 1 for distinct odd primes p, p'; each prime q divides h_p for at most one odd prime p, namely the order of lambda modulo a prime of Z[sqrt2] above q |
 | `BGS-TRACE-350` | **PROVED** | Sophie Germain family [P]: if p = 3 (mod 4) and 2p + 1 is prime then (2p + 1) \| h_p, the least prime factor of h_p is exactly 2p + 1 and h_p is composite for p >= 5; conversely, for odd p with 2p + 1 prime, (2p + 1) \| h_p forces p = 3 (mod 4); 25 such p in [5, 1500], exactly the p there with least prime factor 2p + 1 |
 | `BGS-TRACE-351` | **PROVED** | Product formula [P]: h_n = prod_{k=1}^{(n-1)/2} (6 - 2 cos(2 pi k/n)) for every odd n >= 1 |
+| `BGS-TRACE-352` | **PROVED** | Lemma S on cross lines [P]: if abar = abar_+ abar_- (coprime, odd norms d_+, d_- > 1), eps^p = +1 mod abar_+ and -1 mod abar_-, and sigma is the side with d_sigma = max(d_+, d_-), then G(c eps^n) + G(c eps^{n+p}) >= sqrt(max(d_+, d_-)) for every n and every class c not in abar_{-sigma}; on the axis sub-line 0 != c in abar_{-sigma} only G >= sqrt(min(d_+, d_-)) holds; the consequence max(d_+, d_-) >= sqrt(h_p) uses squarefree h_p and is conditional on H6 (BGS-TRACE-304) |
+| `BGS-TRACE-353` | **PROVED** | Polymer gap lemma, explicit constant [P]: on a cross line (setting of BGS-TRACE-352), omega = zeta_p^{(p+1)/2}, if f = F(omega) lies in the line lattice with F = sum_{k<=K} a_k x^k in Z[x], \|a_k\| <= A, and f is not divisible by eta_+ eta_- = omega^4 - 6 omega^2 + 1 = zeta^2 - 6 zeta + 1, then K > log_eps min(d_+, d_-) - 2 log_eps A - 1.214 (exact constant log_eps(eps^2/2) = 1.21356...) |
+| `BGS-TRACE-354` | **PROVED** | Binet lattice generator [P]: for an odd prime p, s = +-1 and omega = zeta_p^{(p+1)/2}, eta_s = omega^2 - 2 s omega - 1 = zeta - 1 - 2 s zeta^{(p+1)/2} has N_{Q(zeta_p)/Q}(eta_s) = +h_p, N(zeta^2 - 6 zeta + 1) = h_p^2, and (eta_s) is the Binet-line lattice in Z[zeta_p] (kernel of zeta -> lambda into O/abar, abar = (Phi_p(s eps)), eps^p = s mod abar); in Z[x]/(x^p - 1) the line lattice is (eta_s) + (Phi_p(x)) and (eta_s) alone has index 2 h_p |
+| `BGS-TRACE-355` | **CONDITIONAL** | H5(b) cross-line sufficiency at p = 1409 and p = 3307 (conditional; constant [CA]): a uniform bound \|X_line\| <= C e^{-c p} on every cross line with C <= 1 and c >= 0.058 fits the idealised V5/TRACE-333 room at p = 1409 (robust delta) and p = 3307 (fragile delta); the source's c > 0.048 is wrong |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

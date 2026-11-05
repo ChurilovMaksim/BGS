@@ -1,0 +1,75 @@
+{
+ "p": 11,
+ "h": 8119,
+ "delta": "1/200",
+ "lines": [
+  {
+   "signs": [
+    -1,
+    1
+   ],
+   "kind": "cross",
+   "dplus": 353,
+   "dminus": 23,
+   "maxC": 2,
+   "argmaxC": 66,
+   "maxR": 2,
+   "seam_pred": 7.67197420972679,
+   "histC_tail": {},
+   "histR_tail": {
+    "2": 22
+   }
+  },
+  {
+   "signs": [
+    -1,
+    -1
+   ],
+   "kind": "binet",
+   "dplus": 1,
+   "dminus": 8119,
+   "maxC": 2,
+   "argmaxC": 204,
+   "maxR": 2,
+   "seam_pred": null,
+   "histC_tail": {},
+   "histR_tail": {
+    "2": 22
+   }
+  },
+  {
+   "signs": [
+    1,
+    1
+   ],
+   "kind": "binet",
+   "dplus": 8119,
+   "dminus": 1,
+   "maxC": 2,
+   "argmaxC": 204,
+   "maxR": 2,
+   "seam_pred": null,
+   "histC_tail": {},
+   "histR_tail": {
+    "2": 22
+   }
+  },
+  {
+   "signs": [
+    1,
+    -1
+   ],
+   "kind": "cross",
+   "dplus": 23,
+   "dminus": 353,
+   "maxC": 2,
+   "argmaxC": 66,
+   "maxR": 2,
+   "seam_pred": 7.67197420972679,
+   "histC_tail": {},
+   "histR_tail": {
+    "2": 22
+   }
+  }
+ ]
+}

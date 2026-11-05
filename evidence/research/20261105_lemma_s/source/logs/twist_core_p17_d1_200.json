@@ -1,0 +1,83 @@
+{
+ "p": 17,
+ "h": 1607521,
+ "delta": "1/200",
+ "lines": [
+  {
+   "signs": [
+    1,
+    1
+   ],
+   "kind": "binet",
+   "dplus": 1607521,
+   "dminus": 1,
+   "maxC": 8,
+   "argmaxC": 102,
+   "maxR": 5,
+   "seam_pred": null,
+   "histC_tail": {
+    "8": 68
+   },
+   "histR_tail": {
+    "4": 170,
+    "5": 34
+   }
+  },
+  {
+   "signs": [
+    1,
+    -1
+   ],
+   "kind": "cross",
+   "dplus": 103,
+   "dminus": 15607,
+   "maxC": 5,
+   "argmaxC": 93810,
+   "maxR": 5,
+   "seam_pred": 11.52248458954077,
+   "histC_tail": {},
+   "histR_tail": {
+    "4": 238,
+    "5": 34
+   }
+  },
+  {
+   "signs": [
+    -1,
+    1
+   ],
+   "kind": "cross",
+   "dplus": 15607,
+   "dminus": 103,
+   "maxC": 5,
+   "argmaxC": 93810,
+   "maxR": 5,
+   "seam_pred": 11.52248458954077,
+   "histC_tail": {},
+   "histR_tail": {
+    "4": 238,
+    "5": 34
+   }
+  },
+  {
+   "signs": [
+    -1,
+    -1
+   ],
+   "kind": "binet",
+   "dplus": 1,
+   "dminus": 1607521,
+   "maxC": 8,
+   "argmaxC": 102,
+   "maxR": 5,
+   "seam_pred": null,
+   "histC_tail": {
+    "8": 68
+   },
+   "histR_tail": {
+    "4": 170,
+    "5": 34
+   }
+  }
+ ]
+}
