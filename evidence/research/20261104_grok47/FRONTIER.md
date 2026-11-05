@@ -1,5 +1,20 @@
 # Frontier, 4 November 2026
 
+## Tenth target: H5 after Lemma W, with H8 parked
+
+The nine targets below are kept as records. H8 is parked in `proofs/h8_park.md`. The self-referee is `REFEREE_H8_PARK.md`. The four routes — the uniform factor of exponent \(1\), the additive energy \(2L^2-L\), the lifted window energies, and the BGK/HBK ranges — leave the amplified wrap at \(\theta < 0.16661157\). The interval up to \(0.26223963\) stays open. H8 is not discharged and not refuted.
+
+The tenth target is the factorisation clause of H5 (BGS-TRACE-303), given Lemma W (BGS-TRACE-342, proved on `main`). The proof note is `proofs/h5_factor.md`. The self-referee is `REFEREE_H5_FACTOR.md`.
+
+What that note establishes, inside this directory only:
+
+- **[P, cited TRACE-342]** For every odd prime \(p\), \(\omega(h_p) \le w_{\max}(p) < p/\ln(p-1)\). At the conditional primes, \(w_{\max}(1409) = 112\) and \(w_{\max}(3307) = 231\).
+- **[P]** \(2^{112} > 2e^{1409 R}\) and \(2^{231} > 2e^{3307 R}\), with \(R = 6.234\cdot 10^{-4}\). The same comparison, with coefficient \(1/6\), holds for every integer from \(2000\) to \(e^{170}\). The Lemma W count exceeds the gas main term on that range.
+- **[P-arith]** Under the idealisation \(n/h_p := 1\), the room for \(|X_{\mathrm{cross}}|\) is \(< 0.00334719\) at \(p = 3307\), \(\delta = 3.4962\cdot 10^{-4}\), and \(< 0.02011297\) at \(p = 1409\), \(\delta = 7.4115\cdot 10^{-6}\).
+- **[P]** \(h_p > (2p-1)(397/250)^p\) at \(p \in \{31, 1409, 3307\}\). The cofactor allowed by \(q_{\min} = 2p-1\) has \(\theta > 0.496\) at both conditional primes, above the sketch cutoff \(1.588^p\).
+
+H5 is not replaced. Infinitude of \(\{h_p \text{ prime}\}\) remains equivalent to the failure of \(R_{\mathrm{NSW}}\) (BGS-TRACE-210). No positive-density theorem is proved. Squarefreeness stays H6. `record/claims.json` was not edited.
+
 ## Ninth target: window energies by lifting to \(\mathbb Z[\sqrt 2]\)
 
 The eight targets below are kept as records. The ninth target is the open interval of amplified H8, attacked by higher energies of short windows. The proof note is `proofs/h8_moments.md`. The self-referee is `REFEREE_H8_MOMENTS.md`.

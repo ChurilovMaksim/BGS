@@ -127,3 +127,11 @@ python3 evidence/research/20261104_grok47/code/h8_moments.py
 ```
 
 Outcome: `logs/h8_moments.json`. The identity \(\lambda^4+6\lambda = 6\lambda^3+1\) holds in \(\mathbb Z[\sqrt 2]\). On windows of \(4\) to \(10\) consecutive exponents the excess over the permutation count is \(0\) for \(k \le 6\) and \(98(L-4)\) for \(k = 7\). Each \(\lambda^n\) with \(-12 \le n \le 12\) has a single balanced digit \(+1\) at index \(1-2n\). The lifting threshold for span \(p/4\) lies under \(0.12600049\) at \(p = 1409\), \(k = 6\). The character-sum threshold at \(k = 6\) lies under \(0.00576146\) for \(p = 1409\) and under \(0.00289289\) for \(p = 3307\). The formal energy-ratio shift lies under \(0.17973708\) at \(p = 1409\), \(k = 7\), and under \(0.17322030\) at \(p = 3307\), \(k = 7\). The exponent that would reach \(0.26223963\) lies under \(0.63534092\). Runtime under a second.
+
+Tenth target. H8 is parked in `proofs/h8_park.md`; that note copies constants from the earlier logs and does not recompute them. The factorisation room in H5 is `code/h5_factor.py`. Same interpreter. Integer comparisons for \(w_{\max}\), and mpmath at 80 decimal places for the idealised slack, with the same \(R\) and the same Robin expression as `crossover_sharp.py`. No registry file was written.
+
+```text
+python3 evidence/research/20261104_grok47/code/h5_factor.py
+```
+
+Outcome: `logs/h5_factor.json`. \(w_{\max}(1409) = 112\) and \(w_{\max}(3307) = 231\), both equal to the cap against \(h_p\). The rational bound gives \(2e^{pR} < 5\) at \(p = 1409\) and \(< 16\) at \(p = 3307\), both below the corresponding power of two. The idealised slack is \(< 0.00334719\) at \(p = 3307\), \(\delta = 3.4962\cdot 10^{-4}\), and \(< 0.02011297\) at \(p = 1409\), \(\delta = 7.4115\cdot 10^{-6}\). Exact division gives \(h_p > (2p-1)(397/250)^p\) at \(p \in \{31, 1409, 3307\}\). Trial division factorises \(h_p\) for every odd prime \(p \le 47\); each factorisation is squarefree and every prime factor is \(\pm 1 \pmod{2p}\). Runtime about \(19\) s.
