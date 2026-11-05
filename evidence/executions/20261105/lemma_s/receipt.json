@@ -1,0 +1,186 @@
+{
+ "schema": "bgs-lemma-s-integration-receipt-v1",
+ "base": "ChurilovMaksim/BGS origin/main 6f69baa1",
+ "branch": "lemma-s-binet",
+ "prepared_on": "2026-11-05",
+ "source": "research pass research1105b (REPORT.md section 4, code/, logs/) and its independent internal referee audit (REFEREE.md, referee/); copied unchanged to evidence/research/20261105_lemma_s (binary logs/lvl, logs/prop, logs/val not copied)",
+ "registered": "only the referee-CONFIRMED items 1, 2, 4 and the corrected item 3, in the referee's corrected statements; nothing tagged [N]/[H]/[C] in the source, no r < 0.418 threshold, no estimate U",
+ "ids": {
+  "BGS-TRACE-352": "proved",
+  "BGS-TRACE-353": "proved",
+  "BGS-TRACE-354": "proved",
+  "BGS-TRACE-355": "conditional"
+ },
+ "next_free_id_check": "origin/main 6f69baa1 ends at BGS-TRACE-351; open PR branches #83, #84, #85 register no id above BGS-TRACE-336",
+ "unchanged_claims": {
+  "BGS-TRACE-303": "open (H5)",
+  "BGS-TRACE-304": "open (H6)",
+  "BGS-TRACE-325": "conditional (Theorem R#-mod v5)",
+  "BGS-TRACE-206": "open (frozen R')",
+  "BGS-TRACE-342": "proved, not edited"
+ },
+ "dependency_note": "TRACE-352 max(d_+, d_-) >= sqrt(h_p) is conditional on H6 (TRACE-304), stated in title and boundary but not a graph edge (the lemma itself does not use H6); TRACE-355 depends on TRACE-342 (w_max) only, its target H5 (TRACE-303) is not a prerequisite",
+ "reruns": {
+  "python": "3.13.5, numpy 2.5.4, sympy 1.14.0, mpmath 1.3.0 (venv /workspace/venv7); OPENBLAS_NUM_THREADS=OMP_NUM_THREADS=1",
+  "lemmaS_exact": {
+   "command": "python computations/verification/lemma_s/code/lemmaS_exact.py",
+   "log": "computations/verification/lemma_s/logs/lemmaS_exact.json",
+   "primes": [
+    11,
+    13,
+    17
+   ],
+   "cross_lines": 6,
+   "all_cross_ok": true,
+   "Q_over_sqrtD": [
+    0.54431,
+    0.81128,
+    0.89068
+   ],
+   "axis_min_G": [
+    6.4142,
+    10.4142,
+    15.2426
+   ],
+   "seconds": 174.4
+  },
+  "polymer_const": {
+   "command": "python computations/verification/lemma_s/code/polymer_const.py",
+   "log": "computations/verification/lemma_s/logs/polymer_const.json",
+   "constant": "1.21356029864260511531567054865",
+   "all_below": true,
+   "max_ratio": 0.9757359243694014
+  },
+  "eta_check": {
+   "command": "python computations/verification/lemma_s/code/eta_check.py",
+   "log": "computations/verification/lemma_s/logs/eta_check.json",
+   "resultant_primes": 20,
+   "closed_form_bad": 0,
+   "lines_ok_p_le_43": true,
+   "word_index_2h_ok": true
+  },
+  "h5b_const": {
+   "command": "python computations/verification/lemma_s/code/h5b_const.py",
+   "log": "computations/verification/lemma_s/logs/h5b_const.json",
+   "rows": [
+    {
+     "p": 1409,
+     "wmax": 112,
+     "c_room_wmax": 0.05787003182414406,
+     "c0058_C1_fits": true
+    },
+    {
+     "p": 3307,
+     "wmax": 231,
+     "c_room_wmax": 0.05014110504034721,
+     "c0058_C1_fits": true
+    }
+   ],
+   "room_input": "grok47 h5_factor.md Prop. 4 (research-grok46-1104 @ f7986a9f, PR #85; unregistered), copied"
+  }
+ },
+ "lean": {
+  "files": [
+   "formalization/Bgs/LemmaSArith.lean"
+  ],
+  "theorems_printed": 17,
+  "sorry": false,
+  "native_decide": false,
+  "decide_kernel": "h103, h59 (2 h_103 + 1 < 2^131, 2^75 < 2 h_59)",
+  "axioms": "propext, Classical.choice, Quot.sound (mul_le_max_sq: propext only)",
+  "build": "evidence/executions/20261105/lemma_s/lake_build_LemmaSArith.log",
+  "scope": "one build: lake build Bgs.LemmaSArith (2748 jobs, only the new module compiled; imports Mathlib only), packages linked to /workspace/lineNgas/repo/formalization/.lake/packages; no new Mathlib cache; no full Bgs build",
+  "coverage": {
+   "BGS-TRACE-352": "partial (height/norm inequalities)",
+   "BGS-TRACE-353": "partial (norm bound, logarithmic form, constant)",
+   "BGS-TRACE-354": "partial (norm as product over all conjugates, every odd prime p; not Algebra.norm, not the lattice/index argument)",
+   "BGS-TRACE-355": "none"
+  }
+ },
+ "metadata_snapshot": "not refreshed: the new claims have no external dependencies; TRACE-342 has none transitively; no older claim depends on them (bibliographic_metadata_audit --self-test passes)",
+ "research_note": "evidence/research/20261105_lemma_s/NOTE.md",
+ "checks": "evidence/executions/20261105/lemma_s/checks/",
+ "sha256": {
+  "computations/verification/lemma_s/REPORT_LEMMA_S.md": "55a359050d55f90f89078f957b192a802e51c63df4177c8a313a945308e31d8c",
+  "computations/verification/lemma_s/code/eta_check.py": "6ba7071e172a6a383c0ed01d3bdd8fcfe2d476da983a15ecb2c6cbf25cf96a8e",
+  "computations/verification/lemma_s/code/h5b_const.py": "52cf554552cc2f22b61b71cc8e25d77f0a1665b0aade2849b4dffefe5b4c21f4",
+  "computations/verification/lemma_s/code/lemmaS_exact.py": "ab44f83c6f94c3d043cdd84bb4cc8b54e130675d66cf67d1e76562b8d266bde6",
+  "computations/verification/lemma_s/code/polymer_const.py": "c27f9ffa2c7c0676bb88533c9a429c862d1dd1ad6b333a92276275406edb69e7",
+  "computations/verification/lemma_s/logs/eta_check.json": "3e91dada98add288cc09a2368209a0eda370c8336de6a83c7d7dc03c66648ec8",
+  "computations/verification/lemma_s/logs/eta_check.out": "c30c99993c608a89659cfac0a778f5758833e5c2c0c3f1f721d9fac767ed92f9",
+  "computations/verification/lemma_s/logs/h5b_const.json": "9861d450b44858a42bb44635afdbbbad2fcd6e01e29ef415d9b750d83edc6f16",
+  "computations/verification/lemma_s/logs/h5b_const.out": "19434b7f05fa9e7a9eb33efcf278c9b421ecf7b154dd3b6bdc47cb6b1512f055",
+  "computations/verification/lemma_s/logs/lemmaS_exact.json": "072c8c124a6429756be52dd2d11119e7e3a9cad6d5ee0f681738db4142aacbf6",
+  "computations/verification/lemma_s/logs/lemmaS_exact.out": "b48434535f0e7de276810763312692251a29730e6ffcd4441079ac0618c39f50",
+  "computations/verification/lemma_s/logs/polymer_const.json": "41aaa260911dc1abce003a056dffa24d20db71a8b15d70915b2a893f07859c95",
+  "computations/verification/lemma_s/logs/polymer_const.out": "5bb30c5192dd00ef5636e3f944173224ae715923027d5d4dca3336b7050f2880",
+  "formalization/Bgs/LemmaSArith.lean": "9f49a7f1c655ddf46ccea2a07eff67b8a122fc41f6c8505c3b01241998dab898",
+  "evidence/research/20261105_lemma_s/NOTE.md": "5ed6956ec8f8075998499b733d1dc923cc1b778078603b9270f1d2a9c512fe42",
+  "evidence/research/20261105_lemma_s/REFEREE.md": "3d5e64dbb9a5eb7399078c9af23c16920379f1d23bd2f610ff021b630545667f",
+  "evidence/research/20261105_lemma_s/referee/eta_check.json": "c8414c886eb753dce3fd261cfe34b4b55d130c5c2cada91bfd6ccc1035f3a24a",
+  "evidence/research/20261105_lemma_s/referee/eta_check.py": "0cbfe6d5886e606e1cf53e3aaaf89d0a2061801edbf32b4d192dce86e9a9285a",
+  "evidence/research/20261105_lemma_s/referee/h5b_const.json": "cf1389f7bb325eb129c09ef0644077526fb7b016ea0e3437686e7a80bd76ec64",
+  "evidence/research/20261105_lemma_s/referee/h5b_const.py": "013a15357c7c919d6edf8917b956601fca0cd26283a7410803a7fcd69a304708",
+  "evidence/research/20261105_lemma_s/referee/lemmaS_exact.py": "a44d3434553bcafe32b021105eb848d4e04b895e1af49ab8ab632b33d8c053fa",
+  "evidence/research/20261105_lemma_s/referee/lemmaS_exact_11_13_17.json": "e2b81fa69654de6c23dbf3d66c53142193bdebffc4cb0f060086f05ba9fb7788",
+  "evidence/research/20261105_lemma_s/referee/spot5.json": "518df7c0a642030021502ef55ae10af5bb9b7c7eb34527396147d4f557120398",
+  "evidence/research/20261105_lemma_s/referee/spot5.py": "3f90058ea688b8978550aed12eea9b2cd883527341d6a816e4cdb349c2332242",
+  "evidence/research/20261105_lemma_s/referee/uu_est.py": "2f00c9f5df31fb471b38a5d8a90f65e2442de102f06379eb68953395d412e04c",
+  "evidence/research/20261105_lemma_s/referee/zcheck.py": "72b8efe170b771d054fd437b34d643e9e1183c6b7f89ac8484505415cd3e7581",
+  "evidence/research/20261105_lemma_s/source/REPORT.md": "93accc7fc5cbb98e804b34ed2511f1bf848799c1b79057f402a886d69e52c192",
+  "evidence/research/20261105_lemma_s/source/code/analyze.py": "5e4567a94c8e7406b28e6352b1eedf54c5919f434c34bf2ff8a5d9c15ebc17e3",
+  "evidence/research/20261105_lemma_s/source/code/eta_norm.py": "a5c53f73385c8dfc23910d7f4f67676eff846bda4928e3790765fb2b33e21bb1",
+  "evidence/research/20261105_lemma_s/source/code/final_analysis.py": "167467d7742bf16a36a5fcde0e9838fa1cf774a9e8fb715c10a3ce242909f54b",
+  "evidence/research/20261105_lemma_s/source/code/kconv.py": "b1d0749302a4090e49ac0562a5409b1e66c257473638b33a14a86d8a4ba13f3f",
+  "evidence/research/20261105_lemma_s/source/code/lemmaS_check.py": "6ffc3d25b476e6855b4c7203f241d9a58563c445294494a6e0d4bd7134b547c3",
+  "evidence/research/20261105_lemma_s/source/code/level.py": "c19ac32ed4d71467b2729bca1e8a501769ba951dfc77a778dd0d5106b2706bc4",
+  "evidence/research/20261105_lemma_s/source/code/linesplit.py": "15b55895185c7afa009bd897c582646cab0cdba13de80980e5a3969d19d6e2ce",
+  "evidence/research/20261105_lemma_s/source/code/lownorm.py": "fd075f4f29f226039a45d287dd76fa48bc64b18523b1b338d1eec76719ef3071",
+  "evidence/research/20261105_lemma_s/source/code/run_main.sh": "f26a97b1f4e6c395030b70cd793ee190bca2f076100748a956fa969ef49695b9",
+  "evidence/research/20261105_lemma_s/source/code/run_proper.sh": "77142306ad400624eb861453777d51018dd168e5e17e42ff94e2e48a2d9871d1",
+  "evidence/research/20261105_lemma_s/source/code/run_tail.sh": "5a37b0641a4b0a83319acb4d326721bd1c4c2fce98eab814340ce2e55a274b16",
+  "evidence/research/20261105_lemma_s/source/code/seam_profile.py": "91ae1849d91b9de87a81ffd390e08bd1d08182f1b0204fddda30fef0b6e41d90",
+  "evidence/research/20261105_lemma_s/source/code/svp_lines.py": "8b1580521c24ae0c97e37c29ed90a021d2b757e730432c87bae46436a04f7fed",
+  "evidence/research/20261105_lemma_s/source/code/timing.py": "8245de7f14a97b74b29c09ac6525c0bf3457bbdfcf9308eae947b9daa76f3b6a",
+  "evidence/research/20261105_lemma_s/source/code/twist_core.py": "f5e8eded5fcb70b6e786a9748260f6ef6a3339f1d20a3c0f797895c453c3b68e",
+  "evidence/research/20261105_lemma_s/source/code/vacuum.py": "f6a43431e344e0230a91f4edba466475a788d8f5970b2de2bbb3cf429a3921cb",
+  "evidence/research/20261105_lemma_s/source/code/validate_m15.py": "8d479201eea57e5ac1955725d551c136772b3798831817cba99bbd13eecd2e99",
+  "evidence/research/20261105_lemma_s/source/code/zfast.py": "c499d5d8ad04eac1ec09d9c8e26c55f706e626dfb009ab4e8ad577c457e7c492",
+  "evidence/research/20261105_lemma_s/source/logs/eta_norm.json": "2ee83cb6b2c845c10292290b5aac4a7c95bbbf47ca1dfa9f20cf9f5352fc7b67",
+  "evidence/research/20261105_lemma_s/source/logs/final_levels.json": "9cf78df7e196f8a057adaa1d3f51f8ede8ff1a259b729ab0180c5516d360c02c",
+  "evidence/research/20261105_lemma_s/source/logs/kconv_m33.log": "a7fed0922066b6a02a803307aa196c42ebbf2b802ae9e856c0ff4044ef44067c",
+  "evidence/research/20261105_lemma_s/source/logs/lemmaS_p11.json": "66420ee687485ba22183c6a60d40f5734afaea22f517480ab740606a837963d1",
+  "evidence/research/20261105_lemma_s/source/logs/lemmaS_p13.json": "8de1386b92b0750f5738471ec304e2d3d4418405e10285a2ccccc00ec9fd8fd6",
+  "evidence/research/20261105_lemma_s/source/logs/lemmaS_p17.json": "28137a1da6fc17b7a646bed2a99d3edbdc0a3150d9c10f25d571166bc4cfaeb6",
+  "evidence/research/20261105_lemma_s/source/logs/lemmaS_p17.out": "06102db52fbea84430f9054ea5033aadc16941e56ef87842b1fd9820bd7b5d8f",
+  "evidence/research/20261105_lemma_s/source/logs/linesplit_p11.json": "d18e1d24ea94d560bca53913f13e9064579ad192937f21aa26c96dcb238467db",
+  "evidence/research/20261105_lemma_s/source/logs/linesplit_p13.json": "dd2e2a3f29f8ff8a4cc2830017eb6a423990a4636066303ea79da4d2e53d6bf4",
+  "evidence/research/20261105_lemma_s/source/logs/lownorm_p11_T100.json": "a67132c50224b25ab46d8a690a21893c4eb5dbcdd3f5269dc2cbc670df6780f5",
+  "evidence/research/20261105_lemma_s/source/logs/lownorm_p11_T200.json": "cf27eb1668ce350f04ce1603dee83d4055cda4d653c500e6edac79f9fc5d73ce",
+  "evidence/research/20261105_lemma_s/source/logs/p11_full_decomp.log": "e288cabc25ce0100ee3e240d9c71e1470f9ed08afe63993ad9ac68300e6dae52",
+  "evidence/research/20261105_lemma_s/source/logs/seam_profile_p11.json": "2a3754306e89b00e9dee64a8c40ebaa8e1a1e73ca83d3b269c5a0f16e1ba1903",
+  "evidence/research/20261105_lemma_s/source/logs/seam_profile_p13.json": "4e1d46fcde2444ad8aa04b9dc0612e571bec63c67e2c4ea9b6da86210bdc0932",
+  "evidence/research/20261105_lemma_s/source/logs/svp_lines.json": "5d3b36255ba7208d8cb1ac936fb751c11678cd1dfa065b317c54715cdc395c24",
+  "evidence/research/20261105_lemma_s/source/logs/svp_lines.out": "5eaf33898ef7f64f82402fd4da9123eaff7628e59e43a79e744c74e449011a96",
+  "evidence/research/20261105_lemma_s/source/logs/twist_core_p11_d1_200.json": "9c32f92d33dcb2165f24f421b8cc2d64e9c0a1810f6503ea9abfcbe4fc9c1fc1",
+  "evidence/research/20261105_lemma_s/source/logs/twist_core_p11_d1_50.json": "9d377455d37464431a76c6b3ea52e0727526c1a4c47de4e67bcc55a8a8712f57",
+  "evidence/research/20261105_lemma_s/source/logs/twist_core_p11_d1_8.json": "dfdadccef79530f6be0708b468410d2cb62304ad8e4be4899b05702cf68fe945",
+  "evidence/research/20261105_lemma_s/source/logs/twist_core_p13_d1_200.json": "08f5240bd5a36ae91c46b37091c7b2c3c21021602a8d82c9f00a6de450d2c652",
+  "evidence/research/20261105_lemma_s/source/logs/twist_core_p13_d1_50.json": "eaad3c38c864d1fcb6632595b03e34ab688231ddda5ca349ffa0292c5abc6c58",
+  "evidence/research/20261105_lemma_s/source/logs/twist_core_p13_d1_8.json": "677732192df4da441082491faf9da590cc43efd181f704c88507d17ec714461a",
+  "evidence/research/20261105_lemma_s/source/logs/twist_core_p17_d1_200.json": "1f1fffd7ff24a8e18f5531613fbcabef1296347d9aad25482ee29d72cb0d9dbd",
+  "evidence/research/20261105_lemma_s/source/logs/twist_core_p17_d1_50.json": "f2022440d447bb53a43c07a6ed68084c3c919130385d77c7847d27dc875a92fd",
+  "evidence/research/20261105_lemma_s/source/logs/twist_core_p17_d1_8.json": "cd0e572176f94aae9d014676ca0b1aa5c0747dd4451dfe25907b6bf4fed737b5",
+  "evidence/research/20261105_lemma_s/source/logs/vacuum_p11_NC40.json": "da52862aeefceb0d85b384c027bc664506d239d9ce19610d73c59bee7e3d6560",
+  "evidence/research/20261105_lemma_s/source/logs/validate_m15.json": "fb08dc55e54f0ee70faa47bd137074b41a953102a51765c252e078525ab55499",
+  "evidence/research/20261105_lemma_s/source/logs/validate_m15.out": "4c0625e3103bc9e38ebd05da5dad210cfda12b5dfc70b5f0fe0aef7392902638",
+  "evidence/executions/20261105/lemma_s/add_claims.py": "d57a318678752e1b96eaefcf9ae4b9aeba2b250b42f40c75a841af1ae999333b",
+  "evidence/executions/20261105/lemma_s/checks/checks.log": "cd1e655936a1e5f7043f648006554bb05690ba195de8ea55179d4e2e7121836d",
+  "evidence/executions/20261105/lemma_s/checks/unittests.log": "040b873f0c3e6a3f9d0ac1e7c8baaf5fd8cc8f845fc0d02b4fbdccc5bcca3043",
+  "evidence/executions/20261105/lemma_s/edit_epochs.py": "1a5c57162429e05d4cd2b1e0d0f4d0a47b65ed4811c800af3a6f8ae743eab54d",
+  "evidence/executions/20261105/lemma_s/edit_inventory.py": "49ba3844b5d8643557eba0de75f3e2196652695c50d963306c7ad36ec2681902",
+  "evidence/executions/20261105/lemma_s/edit_readmes.py": "ea9b87a948524aa6397377e5b0ae4e4e9ee1913c984dc325b652272176065e6a",
+  "evidence/executions/20261105/lemma_s/lake_build_LemmaSArith.log": "663686edd662d8163273883e2abc7ccb79ade7721df5af80db501837e352ee30",
+  "evidence/executions/20261105/lemma_s/mk_receipt.py": "cbbb9f952e89e7af98233963fc7a62448e0a1034fc1708e10ab363133f9b9d99"
+ }
+}

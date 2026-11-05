@@ -1,0 +1,19 @@
+# python <script> run from the repository root; PATH=/workspace/venv7/bin:/workspace/lineNgas/pandoc-3.12.1/bin:$PATH; OPENBLAS_NUM_THREADS=OMP_NUM_THREADS=1
+EXIT 0 | computations/verification/bibliographic_metadata_audit.py --self-test | NON-CLAIM: metadata agreement and locator hits do not establish theorem applicability.
+EXIT 0 | computations/verification/repository_audit.py | PASS repository_audit
+EXIT 0 | computations/verification/scientific_registry_audit.py | scientific-registry-audit: OK (438 claims, 68 external dependencies)
+EXIT 0 | computations/maintenance/render_bibliography.py --check | bibliography-render: OK
+EXIT 0 | computations/maintenance/render_claim_registry.py --check | claim-registry-render: OK
+EXIT 0 | computations/maintenance/render_errata.py --check | errata-render: OK
+EXIT 0 | computations/maintenance/render_research_views.py --check | Research navigation views synchronized
+EXIT 0 | computations/maintenance/render_status.py --check | status-render: OK
+EXIT 0 | computations/maintenance/render_results.py --check | results-render: OK
+EXIT 0 | computations/maintenance/render_appendix_a.py --check | appendix-a: OK
+EXIT 0 | computations/maintenance/frozen_packets.py --check | frozen-packets: OK (39 packet directories, 368 registered files, all byte-identical and exempt)
+EXIT 0 | computations/maintenance/sync_return_sections.py --check | SKIP hand-edited chapters (TeX is source of truth): manuscript/unified_sections/return_gas.tex, manuscript/unified_sections/return_position.tex, manuscript/unified_sections/return_periodic.tex, manuscript/unified_sections/return_phase.tex, manuscript/unified_sections/return_general.tex, manuscript/unified_sections/return_obstruction.tex
+EXIT 0 | computations/maintenance/sync_finite_orbit_section.py --check | SKIP finite-orbit source synchronization: TARGET hand-edited since Pass 1; TeX is source of truth
+EXIT 0 | computations/maintenance/sync_fixed_map_section.py --check | SKIP fixed-map source synchronization: TARGET hand-edited since Pass 1/2; TeX is source of truth
+EXIT 0 | computations/maintenance/audit_manuscript_references.py --check | }
+EXIT 0 | computations/maintenance/render_spectral_research.py --check | PASS: spectral thematic views and review matrix
+EXIT 0 | computations/maintenance/rebuild_spectral_corpus.py --check | {"source_sha256": "b035e30034b20c60a8ced1d28a072767c1ea7afc5deaeea545aa20730e1948cb", "bytes": 8849820, "source_units": 535, "mode": "check", "historical_declared_hash_differences": 6, "result": "PASS"}
+EXIT 0 | computations/maintenance/frozen_packets.py --compile-check | compile-check: OK (SyntaxWarning is an error outside 368 exempt frozen packet files)

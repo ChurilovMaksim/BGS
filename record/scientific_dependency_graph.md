@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**434 registered nodes; 910 direct prerequisite edges.**
+**438 registered nodes; 912 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -438,7 +438,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-339](../mathematics/fixed-map/lineN_span_theorem.md) | proved | `BGS-TRACE-337` | None registered | 0 |
 | [BGS-TRACE-340](../mathematics/fixed-map/lineN_span_theorem.md) | conditional | `BGS-TRACE-332`, `BGS-TRACE-337` | None registered | 1 |
 | [BGS-TRACE-341](../mathematics/fixed-map/lineN_span_theorem.md) | conditional | `BGS-TRACE-333`, `BGS-TRACE-336`, `BGS-TRACE-337`, `BGS-TRACE-340` | None registered | 0 |
-| [BGS-TRACE-342](../computations/verification/h6_p0/REPORT_P4_v2.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-342](../computations/verification/h6_p0/REPORT_P4_v2.md) | proved | None registered | None registered | 2 |
 | [BGS-TRACE-343](../computations/verification/h6_p0/REPORT_P4_v2.md) | conditional | `BGS-TRACE-289`, `BGS-TRACE-294`, `BGS-TRACE-296`, `BGS-TRACE-342` | None registered | 0 |
 | [BGS-TRACE-344](../computations/verification/h7_scope/REPORT_H7_SCOPE.md) | proved | `BGS-TRACE-265` | None registered | 1 |
 | [BGS-TRACE-345](../computations/verification/h7_scope/REPORT_H7_SCOPE.md) | proved | `BGS-TRACE-265`, `BGS-TRACE-273`, `BGS-TRACE-344` | None registered | 2 |
@@ -448,3 +448,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-349](../computations/verification/h5_ceiling/REPORT_H5_CEILING.md) | proved | `BGS-TRACE-348` | None registered | 0 |
 | [BGS-TRACE-350](../computations/verification/h5_ceiling/REPORT_H5_CEILING.md) | proved | `BGS-TRACE-348` | None registered | 0 |
 | [BGS-TRACE-351](../computations/verification/h5_ceiling/REPORT_H5_CEILING.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-352](../computations/verification/lemma_s/REPORT_LEMMA_S.md) | proved | None registered | None registered | 1 |
+| [BGS-TRACE-353](../computations/verification/lemma_s/REPORT_LEMMA_S.md) | proved | `BGS-TRACE-352` | None registered | 0 |
+| [BGS-TRACE-354](../computations/verification/lemma_s/REPORT_LEMMA_S.md) | proved | None registered | None registered | 0 |
+| [BGS-TRACE-355](../computations/verification/lemma_s/REPORT_LEMMA_S.md) | conditional | `BGS-TRACE-342` | None registered | 0 |

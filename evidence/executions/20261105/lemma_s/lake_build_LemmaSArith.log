@@ -1,0 +1,25 @@
+$ (cd formalization && lake build Bgs.LemmaSArith)   # .lake/packages -> /workspace/lineNgas/repo/formalization/.lake/packages (no new cache); single build of the new module (rebuilt after a docstring-only edit)
+ℹ [2748/2748] Built Bgs.LemmaSArith (11s)
+info: Bgs/LemmaSArith.lean:363:0: 'Bgs.LemmaSArith.h_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:364:0: 'Bgs.LemmaSArith.phi_eps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:365:0: 'Bgs.LemmaSArith.phi_neg_eps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:366:0: 'Bgs.LemmaSArith.phi_lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:367:0: 'Bgs.LemmaSArith.prod_eta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:368:0: 'Bgs.LemmaSArith.prod_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:369:0: 'Bgs.LemmaSArith.ht_eq_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:370:0: 'Bgs.LemmaSArith.norm_le_ht' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:371:0: 'Bgs.LemmaSArith.axis_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:372:0: 'Bgs.LemmaSArith.lemmaS_core_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:373:0: 'Bgs.LemmaSArith.lemmaS_core_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:374:0: 'Bgs.LemmaSArith.mul_le_max_sq' depends on axioms: [propext]
+info: Bgs/LemmaSArith.lean:375:0: 'Bgs.LemmaSArith.polymer_norm_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:376:0: 'Bgs.LemmaSArith.polymer_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:377:0: 'Bgs.LemmaSArith.polymer_gap_of_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:378:0: 'Bgs.LemmaSArith.logb_const_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/LemmaSArith.lean:379:0: 'Bgs.LemmaSArith.logb_const_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2748 jobs).
+
+real	0m15.935s
+user	0m8.021s
+sys	0m3.156s
+EXIT 0
