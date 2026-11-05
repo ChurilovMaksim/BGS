@@ -77,13 +77,13 @@ dd = dict(id='BGS-TRACE-355',
  boundary=CONV + "[P + CA] (REPORT_LEMMA_S section 4; referee item 3, corrected statement): a uniform bound |X_line| <= C e^{-c p} on all cross lines discharges the cross-line part (b) of H5 (BGS-TRACE-303) at p if (2^{omega(h_p)} - 2) C e^{-c p} < slack(p) - |Y| - |X_tail| "
  "(the idealised slack already subtracts e^{-0.28 p}); unconditionally in omega (Lemma W, BGS-TRACE-342, omega <= w_max(p)) it suffices that c > [ln(2^{w_max(p)} - 2) + ln C + ln(1/room)]/p. "
  "Inputs: the idealised room of grok47 h5_factor.md Prop. 4 (n/h_p = 1, eps_16 = eps_fl = eps_other = 0, |Y| = |X_tail| = 0): slack(1409, robust delta) = 0.0201129656, slack(3307, fragile delta) = 0.0033471848, "
- "an UNREGISTERED research note (branch research-grok46-1104 @ f7986a9f, PR #85, draft), copied, not recomputed. "
+ "recomputed from THEOREM_DRAFT_v5 / BGS-TRACE-333 on main. "
  "[CA] (h5b_const.py): w_max(1409) = 112 and w_max(3307) = 231 by exact integer comparison of (p - 1)^w w! with eps^p (the source's 228 is wrong); with C = 1 the thresholds are c > 0.05787 (p = 1409, binding) and c > 0.05014 (p = 3307); "
  "c = 0.058, C = 1 gives (2^112 - 2) e^{-0.058 * 1409} = 0.01675 < 0.02011 and (2^231 - 2) e^{-0.058 * 3307} = 1.7e-14 < 0.00335, so c >= 0.058 suffices for every C <= 1; larger C costs ln C/p; "
  "under the crude line count 2^{p/ln(p-1)} the thresholds are 0.0984 and 0.0873. The source's c > 0.048 is wrong (w_max 228 instead of 231, room ignored, binding prime 1409 skipped). "
  "The hypothesis is OPEN and is not supplied by BGS-TRACE-352/353: lines with small min(d_+, d_-) (min = 2p + 1 occurs, BGS-TRACE-350) and the axis sub-line are controlled only through min(d_+, d_-). "
  "With nonzero additive budgets |Y|, |X_tail| the threshold rises by ln(slack/(slack - |Y| - |X_tail|))/p. Not formalized in Lean." + NONCL,
- state='conditional', ledger_status='CONDITIONAL [P + CA] + ' + REF + ' (source constant 0.048 corrected to 0.058) + EXACT w_max AND mpmath THRESHOLDS (h5b_const.py); ROOM INPUT FROM UNREGISTERED RESEARCH NOTE (grok47 h5_factor Prop. 4, PR #85)',
+ state='conditional', ledger_status='CONDITIONAL [P + CA] + ' + REF + ' (source constant 0.048 corrected to 0.058) + EXACT w_max AND mpmath THRESHOLDS (h5b_const.py); ROOM RECOMPUTED FROM V5/TRACE-333 ON MAIN',
  external_dependencies=[], evidence=EV, verifiers=[f'{V}/code/h5b_const.py', f'{V}/logs/h5b_const.json', f'{V}/logs/h5b_const.out'], formalization=[], manuscript=[],
  closure_condition="Prove the uniform cross-line bound |X_line| <= C e^{-c p} with C <= 1 and c >= 0.058 on every cross line at p = 1409 and p = 3307 (in particular on lines with small min(d_+, d_-) and on the axis sub-line, which BGS-TRACE-352/353 do not control), register the idealised room of grok47 h5_factor Prop. 4, and bound the additive budgets |Y|, |X_tail| of BGS-TRACE-325; or show that no such bound holds.")
 i = max(k for k, x in enumerate(cl) if x['id'] == 'BGS-TRACE-351') + 1

@@ -57,8 +57,11 @@ inequality with margin ≥ 3%; `logs/lemmaS_exact.json`):
 | 17 | 103·15607 | 4 (2 cross) | 15607 | 68 | 0.54431 | 1.03454 | 1.03454 | 15.2426 | 10.1489 |
 
 The general form (with gcd) holds on every class; on the axis sub-line G(x) = G(xε^p) and G² ≥ min(d₊, d₋); on Binet
-lines Q = 1 (x = 1). All three h_p are semiprimes (ω = 2); the first ω = 3 case, p = 37, is out of exhaustive reach. These
-numbers agree with the referee's `lemmaS_exact_11_13_17.json` to every printed digit.
+lines Q = 1 (x = 1). All three h_p are semiprimes (ω = 2). The first ω = 3 case, p = 37 (h = 223·37223·8761009 ≈ 7.27e13,
+8 lines), is out of exhaustive reach; `code/lemmaS_exact_p37.py` samples 1000 outside-axis and 500 axis classes on every
+cross line with exact integer (A+B√2)² ≥ D tests (Lagrange CVP height, 25% margin when not fully b-certified; six fully
+b-certified samples on the tightest line with min ratio 7.65), all pass (`logs/lemmaS_exact_p37.json`). These numbers for
+p = 11, 13, 17 agree with the referee's `lemmaS_exact_11_13_17.json` to every printed digit.
 
 **Lean (partial)** (`formalization/Bgs/LemmaSArith.lean`): `ht_eq_max`, `norm_le_ht` (|N(a + b√2)| ≤ (|a| + √2|b|)²),
 `ht_sub_le`, `ht_add_le`, `lemmaS_core_sub`, `lemmaS_core_add` (d | N(ρ₂ ∓ ρ₁) ≠ 0 ⟹ d ≤ (G(ρ₁) + G(ρ₂))²), `axis_bound`
@@ -137,8 +140,9 @@ prime 1409). Corrected statement (referee):
   the prime p if (2^{ω(h_p)} − 2)·C·e^{−cp} < slack(p) − |Y| − |X_tail| (the idealised slack already subtracts e^{−0.28p}).
 - Unconditionally in ω (Lemma W, BGS-TRACE-342: ω ≤ w_max(p)), it suffices that c > [ln(2^{w_max(p)} − 2) + ln C +
   ln(1/room)]/p.
-- With the idealised room of grok47 `h5_factor.md` Prop. 4 (n/h_p = 1, ε₁₆ = ε_fl = ε_other = 0, |Y| = |X_tail| = 0;
-  slack(1409, robust δ) = 0.0201129656, slack(3307, fragile δ) = 0.0033471848) and C = 1: c > 0.05787 at p = 1409 and
+- With the idealised V5/TRACE-333 room recomputed in `h5b_const.py` from main (R = 6.234e-4, n/h_p := 1,
+  Y = X_tail = ε_* = 0; slack = M − √(1+robin) − e^{−0.28p}; delta(1409) = 7.4115e-6, delta(3307) = 3.4962e-4;
+  slack(1409) = 0.0201129656, slack(3307) = 0.0033471848) and C = 1: c > 0.05787 at p = 1409 and
   c > 0.05014 at p = 3307. A safe single value is **c ≥ 0.058 for C ≤ 1**. Larger C costs ln C/p.
 
 **Checks [CA]** (`code/h5b_const.py`, `logs/h5b_const.json`): w_max(1409) = 112 and w_max(3307) = 231 by exact integer
@@ -146,12 +150,13 @@ comparison of (p − 1)^w w! with ε^p = a_p + b_p√2; thresholds as above; wit
 (2^{112} − 2)e^{−0.058·1409} = 0.01675 < 0.02011 and (2^{231} − 2)e^{−0.058·3307} = 1.7·10⁻¹⁴ < 0.00335 (so at p = 1409
 any C ≤ 1.20 also fits). Under the crude line count 2^{p/ln(p−1)} the thresholds are 0.0984 (1409) and 0.0873 (3307).
 
-**Inputs and status.** The room values come from an **unregistered** research note (grok47 `h5_factor.md` Prop. 4,
-branch `research-grok46-1104` @ `f7986a9f`, PR #85, draft); they are copied, not recomputed here. The hypothesis
-(a uniform e^{−cp} bound on every cross line) is **open** and is **not** supplied by §§1–2: lines with small
-min(d₊, d₋) (min(d₊, d₋) = 2p + 1 occurs, e.g. p = 11, 23; BGS-TRACE-350) and the axis sub-line are controlled only through
-min(d₊, d₋). With nonzero additive budgets |Y|, |X_tail| the threshold rises by ln(slack/(slack − |Y| − |X_tail|))/p.
-Not formalized in Lean. H5 (BGS-TRACE-303) stays open; Theorem R♯-mod v5 (BGS-TRACE-325) stays conditional.
+**Inputs and status.** The room values are **recomputed** from THEOREM_DRAFT_v5 / BGS-TRACE-333 on main (same
+formula and deltas as above); they match the previously cited grok47 Prop. 4 digits, which are no longer used as a
+source. The hypothesis (a uniform e^{−cp} bound on every cross line) is **open** and is **not** supplied by §§1–2: lines
+with small min(d₊, d₋) (min(d₊, d₋) = 2p + 1 occurs, e.g. p = 11, 23; BGS-TRACE-350) and the axis sub-line are controlled
+only through min(d₊, d₋). With nonzero additive budgets |Y|, |X_tail| the threshold rises by
+ln(slack/(slack − |Y| − |X_tail|))/p. Not formalized in Lean. H5 (BGS-TRACE-303) stays open; Theorem R♯-mod v5
+(BGS-TRACE-325) stays conditional.
 
 ## 5. Scope and non-claims
 

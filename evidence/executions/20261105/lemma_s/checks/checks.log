@@ -1,4 +1,3 @@
-# python <script> run from the repository root; PATH=/workspace/venv7/bin:/workspace/lineNgas/pandoc-3.12.1/bin:$PATH; OPENBLAS_NUM_THREADS=OMP_NUM_THREADS=1
 EXIT 0 | computations/verification/bibliographic_metadata_audit.py --self-test | NON-CLAIM: metadata agreement and locator hits do not establish theorem applicability.
 EXIT 0 | computations/verification/repository_audit.py | PASS repository_audit
 EXIT 0 | computations/verification/scientific_registry_audit.py | scientific-registry-audit: OK (438 claims, 68 external dependencies)

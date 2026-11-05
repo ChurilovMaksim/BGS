@@ -1,0 +1,168 @@
+{
+ "p": 37,
+ "h": 72722761475561,
+ "omega": 3,
+ "factors": {
+  "223": 1,
+  "37223": 1,
+  "8761009": 1
+ },
+ "method": "Lagrange CVP + local polish \u00b1256; full b-exhaust certify when G/\u221a2<=8000; exact integer test (A+B\u221a2)^2>=D; 25% margin when not fully certified; exhaustive over all h classes infeasible (h\u22487.27e13)",
+ "N_OUT": 1000,
+ "N_AXIS": 500,
+ "rows": [
+  {
+   "signs": [
+    1,
+    -1,
+    -1
+   ],
+   "dplus": 223,
+   "dminus": 326111038007,
+   "kind": "cross",
+   "d_sigma": 326111038007,
+   "d_other": 223,
+   "out_ok": 1000,
+   "out_fail": 0,
+   "min_ratio": 2.9969668872153266,
+   "fully_certified_pairs": 0,
+   "axis_ok": 500,
+   "axis_fail": 0,
+   "axis_minG": 223.0,
+   "sqrt_min": 14.933184523068078,
+   "secs": 11.238760948181152
+  },
+  {
+   "signs": [
+    1,
+    -1,
+    1
+   ],
+   "dplus": 1953705007,
+   "dminus": 37223,
+   "kind": "cross",
+   "d_sigma": 1953705007,
+   "d_other": 37223,
+   "out_ok": 1000,
+   "out_fail": 0,
+   "min_ratio": 63.185176841807355,
+   "fully_certified_pairs": 0,
+   "axis_ok": 500,
+   "axis_fail": 0,
+   "axis_minG": 37223.0,
+   "sqrt_min": 192.93263072896715,
+   "secs": 7.783315420150757
+  },
+  {
+   "signs": [
+    1,
+    1,
+    -1
+   ],
+   "dplus": 8300729,
+   "dminus": 8761009,
+   "kind": "cross",
+   "d_sigma": 8761009,
+   "d_other": 8300729,
+   "out_ok": 1000,
+   "out_fail": 0,
+   "min_ratio": 380.9234180843897,
+   "fully_certified_pairs": 0,
+   "axis_ok": 500,
+   "axis_fail": 0,
+   "axis_minG": 364481.0450625053,
+   "sqrt_min": 2881.098575196621,
+   "secs": 7.830007791519165
+  },
+  {
+   "signs": [
+    1,
+    1,
+    1
+   ],
+   "dplus": 72722761475561,
+   "dminus": 1,
+   "kind": "binet",
+   "Q_at_1": 1.0,
+   "certified": true,
+   "secs": 0.00018095970153808594
+  },
+  {
+   "signs": [
+    -1,
+    -1,
+    -1
+   ],
+   "dplus": 1,
+   "dminus": 72722761475561,
+   "kind": "binet",
+   "Q_at_1": 1.0,
+   "certified": true,
+   "secs": 0.0001773834228515625
+  },
+  {
+   "signs": [
+    -1,
+    -1,
+    1
+   ],
+   "dplus": 8761009,
+   "dminus": 8300729,
+   "kind": "cross",
+   "d_sigma": 8761009,
+   "d_other": 8300729,
+   "out_ok": 1000,
+   "out_fail": 0,
+   "min_ratio": 1006.3207166184612,
+   "fully_certified_pairs": 0,
+   "axis_ok": 500,
+   "axis_fail": 0,
+   "axis_minG": 364481.0450625053,
+   "sqrt_min": 2881.098575196621,
+   "secs": 7.660047769546509
+  },
+  {
+   "signs": [
+    -1,
+    1,
+    -1
+   ],
+   "dplus": 37223,
+   "dminus": 1953705007,
+   "kind": "cross",
+   "d_sigma": 1953705007,
+   "d_other": 37223,
+   "out_ok": 1000,
+   "out_fail": 0,
+   "min_ratio": 45.839901841113836,
+   "fully_certified_pairs": 0,
+   "axis_ok": 500,
+   "axis_fail": 0,
+   "axis_minG": 37223.0,
+   "sqrt_min": 192.93263072896715,
+   "secs": 7.516789674758911
+  },
+  {
+   "signs": [
+    -1,
+    1,
+    1
+   ],
+   "dplus": 326111038007,
+   "dminus": 223,
+   "kind": "cross",
+   "d_sigma": 326111038007,
+   "d_other": 223,
+   "out_ok": 1000,
+   "out_fail": 0,
+   "min_ratio": 2.7826711728792968,
+   "fully_certified_pairs": 0,
+   "axis_ok": 500,
+   "axis_fail": 0,
+   "axis_minG": 223.0,
+   "sqrt_min": 14.933184523068078,
+   "secs": 11.0447416305542
+  }
+ ],
+ "total_secs": 53.173299074172974
+}

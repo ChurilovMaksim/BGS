@@ -11,13 +11,13 @@ ids = {r['id'] for r in v['claims']}
 R = 'independent internal referee research1105b (REFEREE.md, evidence/research/20261105_lemma_s/; not external)'
 new = {
  'BGS-TRACE-352': dict(methods=['analytic_proof', 'independent_review', 'finite_control', 'lean_formalization'], ledger=['analytic_proof', 'independent_review', 'lean_formalization'],
-   spof='unformalized_analytic_chain', detail='[P] paper proof confirmed by the ' + R + '; Lean covers only the height/norm inequalities (Bgs.LemmaSArith), not the ideal-theoretic steps; exhaustive check p = 11, 13, 17 (lemmaS_exact.py, float64 heights); max(d_+, d_-) >= sqrt(h_p) conditional on H6.'),
+   spof='unformalized_analytic_chain', detail='[P] paper proof confirmed by the ' + R + '; Lean covers only the height/norm inequalities (Bgs.LemmaSArith), not the ideal-theoretic steps; exhaustive check p = 11, 13, 17 (lemmaS_exact.py) and sampled exact omega=3 at p = 37 (lemmaS_exact_p37.py); max(d_+, d_-) >= sqrt(h_p) conditional on H6.'),
  'BGS-TRACE-353': dict(methods=['analytic_proof', 'independent_review', 'exact_identity', 'finite_control', 'lean_formalization'], ledger=['analytic_proof', 'independent_review', 'exact_identity', 'lean_formalization'],
    spof='unformalized_analytic_chain', detail='[P] paper proof confirmed by the ' + R + ' (constant made explicit there); Lean proves the norm bound, the logarithmic form and 1.213 < log_eps(eps^2/2) < 1.214, not the Gauss divisibility step; exhaustive small-(A, K) check (polymer_const.py).'),
  'BGS-TRACE-354': dict(methods=['analytic_proof', 'independent_review', 'exact_identity', 'finite_control', 'lean_formalization'], ledger=['analytic_proof', 'independent_review', 'exact_identity', 'lean_formalization'],
    spof='unformalized_analytic_chain', detail='[P] paper proof by the ' + R + '; Lean proves the norm as a product over all conjugates (every odd prime p), not its identification with Algebra.norm or the lattice/index argument; exact resultants p <= 73, all lines p <= 43 (eta_check.py).'),
  'BGS-TRACE-355': dict(methods=['analytic_proof', 'independent_review', 'exact_identity', 'float_numerics', 'conditional_input'], ledger=['independent_review', 'exact_identity', 'float_numerics', 'conditional_input'],
-   spof='conditional_on_unproved_input', detail='Conditional on an open uniform cross-line bound |X_line| <= C e^{-cp}; room values copied from an unregistered research note (grok47 h5_factor Prop. 4, PR #85); exact w_max and mpmath thresholds (h5b_const.py), constant corrected by the ' + R + '.'),
+   spof='conditional_on_unproved_input', detail='Conditional on an open uniform cross-line bound |X_line| <= C e^{-cp}; room recomputed from V5/TRACE-333 on main (h5b_const.py); exact w_max and mpmath thresholds, constant corrected by the ' + R + '.'),
 }
 for i, m in new.items():
     assert i not in ids; c = C[i]

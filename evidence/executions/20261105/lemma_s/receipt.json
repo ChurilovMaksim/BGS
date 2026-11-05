@@ -19,7 +19,7 @@
   "BGS-TRACE-206": "open (frozen R')",
   "BGS-TRACE-342": "proved, not edited"
  },
- "dependency_note": "TRACE-352 max(d_+, d_-) >= sqrt(h_p) is conditional on H6 (TRACE-304), stated in title and boundary but not a graph edge (the lemma itself does not use H6); TRACE-355 depends on TRACE-342 (w_max) only, its target H5 (TRACE-303) is not a prerequisite",
+ "dependency_note": "TRACE-352 max(d_+, d_-) >= sqrt(h_p) is conditional on H6 (TRACE-304), stated in title and boundary but not a graph edge (the lemma itself does not use H6); TRACE-355 depends on TRACE-342 (w_max) and uses the V5/TRACE-333 idealised room recomputed on main; its target H5 (TRACE-303) is not a prerequisite",
  "reruns": {
   "python": "3.13.5, numpy 2.5.4, sympy 1.14.0, mpmath 1.3.0 (venv /workspace/venv7); OPENBLAS_NUM_THREADS=OMP_NUM_THREADS=1",
   "lemmaS_exact": {
@@ -59,6 +59,11 @@
    "lines_ok_p_le_43": true,
    "word_index_2h_ok": true
   },
+  "lemmaS_exact_p37": {
+   "command": "python computations/verification/lemma_s/code/lemmaS_exact_p37.py",
+   "log": "computations/verification/lemma_s/logs/lemmaS_exact_p37.json",
+   "note": "omega=3 sample check; exhaustive infeasible; exact integer tests + 25% margin"
+  },
   "h5b_const": {
    "command": "python computations/verification/lemma_s/code/h5b_const.py",
    "log": "computations/verification/lemma_s/logs/h5b_const.json",
@@ -76,7 +81,7 @@
      "c0058_C1_fits": true
     }
    ],
-   "room_input": "grok47 h5_factor.md Prop. 4 (research-grok46-1104 @ f7986a9f, PR #85; unregistered), copied"
+   "room_input": "recomputed from THEOREM_DRAFT_v5 / BGS-TRACE-333 on main (R=6.234e-4, delta 7.4115e-6 at 1409, 3.4962e-4 at 3307)"
   }
  },
  "lean": {
@@ -101,21 +106,24 @@
  "research_note": "evidence/research/20261105_lemma_s/NOTE.md",
  "checks": "evidence/executions/20261105/lemma_s/checks/",
  "sha256": {
-  "computations/verification/lemma_s/REPORT_LEMMA_S.md": "55a359050d55f90f89078f957b192a802e51c63df4177c8a313a945308e31d8c",
+  "computations/verification/lemma_s/REPORT_LEMMA_S.md": "165901c56b4ed56dc39fab330f8aea5c69cacdd54e94015bbbeeebf431784c8f",
   "computations/verification/lemma_s/code/eta_check.py": "6ba7071e172a6a383c0ed01d3bdd8fcfe2d476da983a15ecb2c6cbf25cf96a8e",
-  "computations/verification/lemma_s/code/h5b_const.py": "52cf554552cc2f22b61b71cc8e25d77f0a1665b0aade2849b4dffefe5b4c21f4",
+  "computations/verification/lemma_s/code/h5b_const.py": "0621c97a8c71789b3052db64a14a1b5fff4f7e5b0bb6e6bb08900badc04dbe96",
   "computations/verification/lemma_s/code/lemmaS_exact.py": "ab44f83c6f94c3d043cdd84bb4cc8b54e130675d66cf67d1e76562b8d266bde6",
+  "computations/verification/lemma_s/code/lemmaS_exact_p37.py": "9705e946296fc774a9d541b9e046b1da32a585adfc8b35cc27fe6cb114639186",
   "computations/verification/lemma_s/code/polymer_const.py": "c27f9ffa2c7c0676bb88533c9a429c862d1dd1ad6b333a92276275406edb69e7",
   "computations/verification/lemma_s/logs/eta_check.json": "3e91dada98add288cc09a2368209a0eda370c8336de6a83c7d7dc03c66648ec8",
   "computations/verification/lemma_s/logs/eta_check.out": "c30c99993c608a89659cfac0a778f5758833e5c2c0c3f1f721d9fac767ed92f9",
-  "computations/verification/lemma_s/logs/h5b_const.json": "9861d450b44858a42bb44635afdbbbad2fcd6e01e29ef415d9b750d83edc6f16",
+  "computations/verification/lemma_s/logs/h5b_const.json": "8b4b477bdc8b6a6931cfd0f07e013f385b6c407c7b2cd351cf6fa5c0149b8987",
   "computations/verification/lemma_s/logs/h5b_const.out": "19434b7f05fa9e7a9eb33efcf278c9b421ecf7b154dd3b6bdc47cb6b1512f055",
   "computations/verification/lemma_s/logs/lemmaS_exact.json": "072c8c124a6429756be52dd2d11119e7e3a9cad6d5ee0f681738db4142aacbf6",
   "computations/verification/lemma_s/logs/lemmaS_exact.out": "b48434535f0e7de276810763312692251a29730e6ffcd4441079ac0618c39f50",
+  "computations/verification/lemma_s/logs/lemmaS_exact_p37.json": "9b69337b250136413a5a8bcb0a4f0d76589e02a5957baa65a7e5d2658c72773a",
+  "computations/verification/lemma_s/logs/lemmaS_exact_p37_fullcert.json": "bda96b71d2ca0b242523f6baeeb3b65e432f219b0802a3c452179387cf894528",
   "computations/verification/lemma_s/logs/polymer_const.json": "41aaa260911dc1abce003a056dffa24d20db71a8b15d70915b2a893f07859c95",
   "computations/verification/lemma_s/logs/polymer_const.out": "5bb30c5192dd00ef5636e3f944173224ae715923027d5d4dca3336b7050f2880",
   "formalization/Bgs/LemmaSArith.lean": "9f49a7f1c655ddf46ccea2a07eff67b8a122fc41f6c8505c3b01241998dab898",
-  "evidence/research/20261105_lemma_s/NOTE.md": "5ed6956ec8f8075998499b733d1dc923cc1b778078603b9270f1d2a9c512fe42",
+  "evidence/research/20261105_lemma_s/NOTE.md": "c9c88d91cbd15b1854612ac63a539b969789c3de03f154cf5bdb1fae0992ea4c",
   "evidence/research/20261105_lemma_s/REFEREE.md": "3d5e64dbb9a5eb7399078c9af23c16920379f1d23bd2f610ff021b630545667f",
   "evidence/research/20261105_lemma_s/referee/eta_check.json": "c8414c886eb753dce3fd261cfe34b4b55d130c5c2cada91bfd6ccc1035f3a24a",
   "evidence/research/20261105_lemma_s/referee/eta_check.py": "0cbfe6d5886e606e1cf53e3aaaf89d0a2061801edbf32b4d192dce86e9a9285a",
@@ -174,13 +182,16 @@
   "evidence/research/20261105_lemma_s/source/logs/vacuum_p11_NC40.json": "da52862aeefceb0d85b384c027bc664506d239d9ce19610d73c59bee7e3d6560",
   "evidence/research/20261105_lemma_s/source/logs/validate_m15.json": "fb08dc55e54f0ee70faa47bd137074b41a953102a51765c252e078525ab55499",
   "evidence/research/20261105_lemma_s/source/logs/validate_m15.out": "4c0625e3103bc9e38ebd05da5dad210cfda12b5dfc70b5f0fe0aef7392902638",
-  "evidence/executions/20261105/lemma_s/add_claims.py": "d57a318678752e1b96eaefcf9ae4b9aeba2b250b42f40c75a841af1ae999333b",
-  "evidence/executions/20261105/lemma_s/checks/checks.log": "cd1e655936a1e5f7043f648006554bb05690ba195de8ea55179d4e2e7121836d",
-  "evidence/executions/20261105/lemma_s/checks/unittests.log": "040b873f0c3e6a3f9d0ac1e7c8baaf5fd8cc8f845fc0d02b4fbdccc5bcca3043",
-  "evidence/executions/20261105/lemma_s/edit_epochs.py": "1a5c57162429e05d4cd2b1e0d0f4d0a47b65ed4811c800af3a6f8ae743eab54d",
-  "evidence/executions/20261105/lemma_s/edit_inventory.py": "49ba3844b5d8643557eba0de75f3e2196652695c50d963306c7ad36ec2681902",
-  "evidence/executions/20261105/lemma_s/edit_readmes.py": "ea9b87a948524aa6397377e5b0ae4e4e9ee1913c984dc325b652272176065e6a",
+  "evidence/executions/20261105/lemma_s/add_claims.py": "0a83bcccbbdb411f2290b10b584375529158936bd148b88846f4c54fd61e10e8",
+  "evidence/executions/20261105/lemma_s/checks/checks.log": "709f7eb2d43d9a567b4fda9d7cf366e0dc98936072525d8535379d918b7f33ce",
+  "evidence/executions/20261105/lemma_s/checks/checks_audit.log": "709f7eb2d43d9a567b4fda9d7cf366e0dc98936072525d8535379d918b7f33ce",
+  "evidence/executions/20261105/lemma_s/checks/unittests.log": "3adbf49a2616bd20338863c4b2867bb22dcf437e9a73785c6dd2aece6c2306ec",
+  "evidence/executions/20261105/lemma_s/checks/unittests_audit.log": "600126af65f88ba0437dce6105bbc09034fa4a79489a4cf55f726fe3d8bd0b57",
+  "evidence/executions/20261105/lemma_s/edit_epochs.py": "eb1b1ae3bfb78a03b8f0123ea8aa11d18d817688c68c70003802f5de538d4c22",
+  "evidence/executions/20261105/lemma_s/edit_inventory.py": "4153cf05336c2dbddea5094311e7139869c9c45dd74fcb1e6c9450f9185a7a05",
+  "evidence/executions/20261105/lemma_s/edit_readmes.py": "c89aae51b4163da0fe63a8a535ccba11dda6c28efcc0f1f05b8d89cec367c1d0",
   "evidence/executions/20261105/lemma_s/lake_build_LemmaSArith.log": "663686edd662d8163273883e2abc7ccb79ade7721df5af80db501837e352ee30",
-  "evidence/executions/20261105/lemma_s/mk_receipt.py": "cbbb9f952e89e7af98233963fc7a62448e0a1034fc1708e10ab363133f9b9d99"
+  "evidence/executions/20261105/lemma_s/lake_build_LemmaSArith_audit.log": "5b083e3aa24fdb6cc3aedb87998020e794638ec45ba8a71a05fd068330c2c6b6",
+  "evidence/executions/20261105/lemma_s/mk_receipt.py": "4fed762f08fda60f99b134bdfb22ef49dcbca3167b29314e6e5aa2efdaf52142"
  }
 }

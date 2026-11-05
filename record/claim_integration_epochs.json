@@ -2050,7 +2050,7 @@
       "id": "BGS-TRACE-352",
       "state": "proved",
       "source": "computations/verification/lemma_s/REPORT_LEMMA_S.md",
-      "disposition": "5 November 2026 (Lemma S integration from research1105b; only the results confirmed by its independent internal referee, in the referee's corrected statements): proved [P] (Lemma S on cross lines, referee-corrected scope: bound for every class off the axis sub-line abar_{-sigma}, only sqrt(min(d_+, d_-)) on it; max(d_+, d_-) >= sqrt(h_p) conditional on H6; exhaustive check p = 11, 13, 17; Lean partial). No existing claim is edited; H5 (TRACE-303) stays open, H6 (TRACE-304) stays open, TRACE-325 stays conditional, nothing is claimed about R' (TRACE-206); the seam-decay threshold r < 0.418 and every [N]/[H]/[C] item of the source are not registered."
+      "disposition": "5 November 2026 (Lemma S integration from research1105b; only the results confirmed by its independent internal referee, in the referee's corrected statements): proved [P] (Lemma S on cross lines, referee-corrected scope: bound for every class off the axis sub-line abar_{-sigma}, only sqrt(min(d_+, d_-)) on it; max(d_+, d_-) >= sqrt(h_p) conditional on H6; exhaustive check p = 11, 13, 17 + sampled exact omega=3 at p = 37; Lean partial). No existing claim is edited; H5 (TRACE-303) stays open, H6 (TRACE-304) stays open, TRACE-325 stays conditional, nothing is claimed about R' (TRACE-206); the seam-decay threshold r < 0.418 and every [N]/[H]/[C] item of the source are not registered."
     },
     {
       "id": "BGS-TRACE-353",
@@ -2068,7 +2068,7 @@
       "id": "BGS-TRACE-355",
       "state": "conditional",
       "source": "computations/verification/lemma_s/REPORT_LEMMA_S.md",
-      "disposition": "5 November 2026 (Lemma S integration from research1105b; only the results confirmed by its independent internal referee, in the referee's corrected statements): conditional (H5(b) cross lines: a uniform |X_line| <= C e^{-cp}, C <= 1, c >= 0.058 fits the idealised room at p = 1409 and 3307; the source's 0.048 is wrong; constant [CA]; room from an unregistered research note). No existing claim is edited; H5 (TRACE-303) stays open, H6 (TRACE-304) stays open, TRACE-325 stays conditional, nothing is claimed about R' (TRACE-206); the seam-decay threshold r < 0.418 and every [N]/[H]/[C] item of the source are not registered."
+      "disposition": "5 November 2026 (Lemma S integration from research1105b; only the results confirmed by its independent internal referee, in the referee's corrected statements): conditional (H5(b) cross lines: a uniform |X_line| <= C e^{-cp}, C <= 1, c >= 0.058 fits the idealised V5/TRACE-333 room at p = 1409 and 3307 recomputed on main; the source's 0.048 is wrong; constant [CA]). No existing claim is edited; H5 (TRACE-303) stays open, H6 (TRACE-304) stays open, TRACE-325 stays conditional, nothing is claimed about R' (TRACE-206); the seam-decay threshold r < 0.418 and every [N]/[H]/[C] item of the source are not registered."
     }
   ],
   "invariants": [
