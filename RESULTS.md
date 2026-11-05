@@ -4,20 +4,20 @@
 
 ## In one paragraph
 
-This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified quantized, kicked cat map on the torus. **The BGS limit for this map is not proved.** Fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. Around that target, the programme registers 430 precisely scoped claims. 346 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). The work ran in seven phases from September to November 2026: Cayley arithmetic, Pell return laws, resonance cohomology and locality (Phase I); the structure of the fixed map, the exact trace-to-statistics bridge and noisy Dyson comparisons (Phase II); phase channels, clock laws, collision laws and obstructions (Phase III); uniform power-trace bounds for the original kick family (Phase IV); arithmetic Abel spikes and exact random-phase form factors (Phase V); the fixed diagonal kick and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179, Phase VI, Lines B–H); and the corrected mean law R′ (BGS-TRACE-206, Phase VII, Lines I–N), which remains **open and is not refuted**. The end point of Phase VII, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.
+This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified quantized, kicked cat map on the torus. **The BGS limit for this map is not proved.** Fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. Around that target, the programme registers 434 precisely scoped claims. 350 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). The work ran in eight phases from September to November 2026: Cayley arithmetic, Pell return laws, resonance cohomology and locality (Phase I); the structure of the fixed map, the exact trace-to-statistics bridge and noisy Dyson comparisons (Phase II); phase channels, clock laws, collision laws and obstructions (Phase III); uniform power-trace bounds for the original kick family (Phase IV); arithmetic Abel spikes and exact random-phase form factors (Phase V); the fixed diagonal kick and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179, Phase VI, Lines B–H); the corrected mean law R′ (BGS-TRACE-206, Phase VII, Lines I–N), which remains **open and is not refuted**; and four integrations on 4–5 November 2026 (Phase VIII, BGS-TRACE-337..351: the span theorem, the explicit H6 threshold with Lemma W, the H7* scope and the arithmetic of h_p). The end point of Phase VII, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.
 
 ## Status at a glance
 
 | Registered state | Claims | Meaning |
 |---|---:|---|
-| proved | 346 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
+| proved | 350 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
 | verification-pending | 17 | Argument or computation exists; an independent check is outstanding |
 | conditional | 24 | Proved implication from stated hypotheses that are themselves open |
 | open | 42 | Conjecture, hypothesis or programme obligation without a proof |
 | refuted | 1 | Shown false as stated |
-| **total** | **430** | |
+| **total** | **434** | |
 
-176 non-open claims link Lean 4 files, out of 193 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
+179 non-open claims link Lean 4 files, out of 194 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
 ## Headline results
 

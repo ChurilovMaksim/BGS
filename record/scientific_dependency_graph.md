@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**430 registered nodes; 908 direct prerequisite edges.**
+**434 registered nodes; 910 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -444,3 +444,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-345](../computations/verification/h7_scope/REPORT_H7_SCOPE.md) | proved | `BGS-TRACE-265`, `BGS-TRACE-273`, `BGS-TRACE-344` | None registered | 2 |
 | [BGS-TRACE-346](../computations/verification/h7_scope/REPORT_H7_SCOPE.md) | proved | `BGS-TRACE-221`, `BGS-TRACE-223`, `BGS-TRACE-273`, `BGS-TRACE-345` | None registered | 1 |
 | [BGS-TRACE-347](../computations/verification/h7_scope/REPORT_H7_SCOPE.md) | proved | `BGS-TRACE-305`, `BGS-TRACE-325`, `BGS-TRACE-345`, `BGS-TRACE-346` | None registered | 0 |
+| [BGS-TRACE-348](../computations/verification/h5_ceiling/REPORT_H5_CEILING.md) | proved | None registered | None registered | 2 |
+| [BGS-TRACE-349](../computations/verification/h5_ceiling/REPORT_H5_CEILING.md) | proved | `BGS-TRACE-348` | None registered | 0 |
+| [BGS-TRACE-350](../computations/verification/h5_ceiling/REPORT_H5_CEILING.md) | proved | `BGS-TRACE-348` | None registered | 0 |
+| [BGS-TRACE-351](../computations/verification/h5_ceiling/REPORT_H5_CEILING.md) | proved | None registered | None registered | 0 |
