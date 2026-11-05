@@ -99,3 +99,24 @@ exit 0, after the referee edits. The unittest suite ran 266 tests, OK (1 skipped
 
 Nothing else in the diff is false or overstated: the CHANGELOG, the counts, the TRACE-342 relation and the non-claims
 about H5, R♯-mod v5 and R′ all check out.
+
+## Addendum: owner-approved follow-up (5 November 2026)
+
+The owner approved edits to the two files this PR created, `REPORT_H5_CEILING.md` and `receipt.json`; neither is a
+frozen packet on main. Status of each open item:
+
+- (f) item 3: **resolved.** REPORT §3 now reads "So for each fixed α > 0 these p fail P⁻(h_p) > h_p^α as soon as
+  h_p^α ≥ 2p + 1, i.e. for all but finitely many members of the family."
+- (f) item 4: **resolved.** `mk_receipt.py` was rerun, so every sha256 in `receipt.json` matches the tree. Its `review`
+  field now cites this audit.
+- (f) item 6: **resolved through the source.** The `ledger_status` of BGS-TRACE-348..351 in `record/claims.json` now
+  cites this audit as an independent internal referee audit (not external). The inventory mirror and its source blob
+  sha were then refreshed with `sync_inventory.py`. That script follows the procedure of `../edit_inventory.py`. It
+  leaves the spof classes unchanged and updates only the stale "(no independent referee)" wording. The CHANGELOG entry
+  now records this audit.
+- (f) item 7: **resolved in the renderer source.** `render_results.py` now says "eight phases" and names Phase VIII
+  (BGS-TRACE-337..351, the four integrations on 4–5 November), matching the README phase table. RESULTS.md was then
+  regenerated, not hand-edited. Other pages that still say "seven phases" (`docs/reader_guide.en.md`,
+  `mathematics/README.md`, `manuscript/ch01_introduction.tex`) are older than this PR and were left alone.
+
+With these edits the verdict is **MERGE**. `checks_final.log` and `unittests_final.log` record the final checker runs.

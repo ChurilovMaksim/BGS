@@ -74,8 +74,9 @@ e^{2n} − 1 = A² + 2B² + 2ABs − 1 = 2A² + 2ABs = 2A·eⁿ (the F_q image o
 (iii) By (i), 2p + 1 | h_p; by §1 every prime factor of h_p is ≡ 1 (mod 2p), hence ≥ 2p + 1. So the least prime
 factor is 2p + 1. For p ≥ 5, h_p ≥ 2^{p−1} > 2p + 1, so h_p is composite. ∎
 
-So these p are never "good" (h_p prime or with all prime factors large) for any positive exponent. Whether the family
-is infinite is the Sophie Germain problem, which is open; **no density statement follows from this claim.**
+So for each fixed α > 0 these p fail P⁻(h_p) > h_p^α as soon as h_p^α ≥ 2p + 1, i.e. for all but finitely many
+members of the family. Whether the family is infinite is the Sophie Germain problem, which is open; **no density
+statement follows from this claim.**
 
 **Checks.** [CA] (C): for every odd prime p ≤ 1500, (2p+1) | h_p ⟺ (p ≡ 3 mod 4 and 2p+1 prime), with no mismatch;
 trial division of h_p by **all** primes ≤ 2p + 1 shows that the only one that can divide is 2p + 1; the p with

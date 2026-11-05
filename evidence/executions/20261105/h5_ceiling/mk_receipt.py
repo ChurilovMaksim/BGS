@@ -16,7 +16,7 @@ rec = {'schema': 'bgs-h5-ceiling-integration-receipt-v1', 'base': f'ChurilovMaks
  'next_free_id_check': 'origin/main 3995d691 ends at BGS-TRACE-347; open PR branches #83, #84, #85 register no id above BGS-TRACE-336',
  'convention_check': 'h_n = (eps^n + epsbar^n)/2 = a_n, as BGS-TRACE-342 / Bgs.H6LemmaW (Lean a_eq_h6, all n) and = u_{(p-1)/2} of BGS-TRACE-344 (h5_arith.py, odd primes p <= 1500)',
  'unchanged_claims': {'BGS-TRACE-342': 'proved, not edited (strictly weaker than TRACE-348)', 'BGS-TRACE-303': 'open', 'BGS-TRACE-325': 'conditional', 'BGS-TRACE-206': 'open'},
- 'review': 'no independent referee; the integrator re-derived every proof (REPORT_H5_CEILING.md) and the Lean module proves TRACE-348..350 in general',
+ 'review': 'the integrator re-derived every proof (REPORT_H5_CEILING.md) and the Lean module proves TRACE-348..350 in general; independent internal referee audit afterwards (2026-11-05, not external): ' + E + '/referee/AUDIT.md',
  'reruns': {
    'python': f"{A['versions']['python']}, numpy {A['versions']['numpy']}, sympy {A['versions']['sympy']}, mpmath {A['versions']['mpmath']} (venv /workspace/venv_audit); OPENBLAS_NUM_THREADS=OMP_NUM_THREADS=1",
    'h5_arith': {'command': f'python {V}/code/h5_arith.py', 'log': f'{V}/logs/h5_arith.json', 'primes_q_lt_1e7': A['A_congruences']['primes_q_tested'], 'hits': A['A_congruences']['total_hits'],
