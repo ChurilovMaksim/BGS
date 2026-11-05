@@ -1,0 +1,25 @@
+$ (cd formalization && lake build Bgs.H5CeilingArith)   # .lake/packages -> /workspace/lineNgas/repo/formalization/.lake/packages (no new cache); module artifacts removed first
+ℹ [2840/2841] Replayed Bgs.H6LemmaW
+info: Bgs/H6LemmaW.lean:35:0: 'Bgs.H6LemmaW.h_small' does not depend on any axioms
+info: Bgs/H6LemmaW.lean:36:0: 'Bgs.H6LemmaW.lemmaW_p3' does not depend on any axioms
+info: Bgs/H6LemmaW.lean:37:0: 'Bgs.H6LemmaW.lemmaW_p5' does not depend on any axioms
+info: Bgs/H6LemmaW.lean:38:0: 'Bgs.H6LemmaW.lemmaW_p7' does not depend on any axioms
+info: Bgs/H6LemmaW.lean:39:0: 'Bgs.H6LemmaW.lemmaW_p11' does not depend on any axioms
+info: Bgs/H6LemmaW.lean:40:0: 'Bgs.H6LemmaW.lemmaW_p13' does not depend on any axioms
+info: Bgs/H6LemmaW.lean:41:0: 'Bgs.H6LemmaW.p_not_dvd_h' does not depend on any axioms
+ℹ [2841/2841] Built Bgs.H5CeilingArith (2.6s)
+info: Bgs/H5CeilingArith.lean:256:0: 'Bgs.H5CeilingArith.a_eq_h6' depends on axioms: [propext]
+info: Bgs/H5CeilingArith.lean:257:0: 'Bgs.H5CeilingArith.norm_ab' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/H5CeilingArith.lean:258:0: 'Bgs.H5CeilingArith.prime_dvd_mod8' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/H5CeilingArith.lean:259:0: 'Bgs.H5CeilingArith.orderOf_lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/H5CeilingArith.lean:260:0: 'Bgs.H5CeilingArith.prime_dvd_mod2p' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/H5CeilingArith.lean:261:0: 'Bgs.H5CeilingArith.coprime_h' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/H5CeilingArith.lean:262:0: 'Bgs.H5CeilingArith.sg_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/H5CeilingArith.lean:263:0: 'Bgs.H5CeilingArith.sg_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Bgs/H5CeilingArith.lean:264:0: 'Bgs.H5CeilingArith.sg_minFac' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2841 jobs).
+
+real	0m3.733s
+user	0m4.197s
+sys	0m1.368s
+EXIT 0

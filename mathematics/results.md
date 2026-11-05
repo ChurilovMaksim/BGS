@@ -588,7 +588,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**430 registered claims: 346 proved, 17 verification-pending, 24 conditional, 42 open, 1 refuted.**
+**434 registered claims: 350 proved, 17 verification-pending, 24 conditional, 42 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -754,7 +754,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (321 claims)
+### TRACE family (325 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -1079,5 +1079,9 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-345` | **PROVED** | H7* included K_p-levels [P, finite, exact integers]: complete factorisations of K_p for primes 5 <= p <= 31; the conductors 3437426497, 24061985479 \| K_19 and 2735635252619983 \| K_29 are coprime to h_p with floor(h_{3p}/d^2) = 278, 5, 133 (included by TRACE-273), ord_d(lambda) = 3p; d = 4663 \| K_7 is included (4663^2 <= h_21, order 21) |
 | `BGS-TRACE-346` | **PROVED** | H7* crossings on the finite vertex section [CA, finite section only]: on the TRACE-223 multi-disc vertex operator compressed to \|c\| <= 3, 40 modes, \|n\| <= 16, the sector-0 per-step spectral radius of one lambda-orbit exceeds T' = 1.42785 at d = 3437426497 (>= 1.4587724663), 24061985479 (>= 1.5119805975) and 2735635252619983 (>= 1.4686852948); edge comparison and trace-vs-radius are numerical only; the untruncated operator is not claimed |
 | `BGS-TRACE-347` | **PROVED** | H7* scope note [P on TRACE-346; no state change]: the per-orbit sufficient reading of H7* (growth < T') cannot be certified on the finite vertex section at the three included levels d \| K_19, K_29; the aggregate H7* (TRACE-305) stays open; Theorem R#-mod v5 (TRACE-325) is unaffected (hypotheses needed at infinitely many primes; p_thr >= 1409 > 29); 18 included conductors remain unsearched |
+| `BGS-TRACE-348` | **PROVED** | Lemma W sharpened [P]: for an odd prime p and a prime q \| h_p = (eps^p + epsbar^p)/2, eps = 1 + sqrt2: q = 1 (mod 2p) and q = +-1 (mod 8); the mod-8 part holds for every odd index n |
+| `BGS-TRACE-349` | **PROVED** | Coprimality [P]: gcd(h_p, h_p') = 1 for distinct odd primes p, p'; each prime q divides h_p for at most one odd prime p, namely the order of lambda modulo a prime of Z[sqrt2] above q |
+| `BGS-TRACE-350` | **PROVED** | Sophie Germain family [P]: if p = 3 (mod 4) and 2p + 1 is prime then (2p + 1) \| h_p, the least prime factor of h_p is exactly 2p + 1 and h_p is composite for p >= 5; conversely, for odd p with 2p + 1 prime, (2p + 1) \| h_p forces p = 3 (mod 4); 25 such p in [5, 1500], exactly the p there with least prime factor 2p + 1 |
+| `BGS-TRACE-351` | **PROVED** | Product formula [P]: h_n = prod_{k=1}^{(n-1)/2} (6 - 2 cos(2 pi k/n)) for every odd n >= 1 |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

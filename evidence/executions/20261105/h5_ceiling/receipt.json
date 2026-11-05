@@ -1,0 +1,136 @@
+{
+ "schema": "bgs-h5-ceiling-integration-receipt-v1",
+ "base": "ChurilovMaksim/BGS origin/main 3995d691",
+ "branch": "h5-ceiling-arith",
+ "prepared_on": "2026-11-05",
+ "source": "research pass research1105 (AUDIT_H5A.md section 1.3, BYPASS.md sections 1.1-1.4; code/audit_h5a s1-s7, logs/audit_h5a; not committed); every registered statement re-derived and re-checked at integration",
+ "ids": {
+  "BGS-TRACE-348": "proved",
+  "BGS-TRACE-349": "proved",
+  "BGS-TRACE-350": "proved",
+  "BGS-TRACE-351": "proved"
+ },
+ "next_free_id_check": "origin/main 3995d691 ends at BGS-TRACE-347; open PR branches #83, #84, #85 register no id above BGS-TRACE-336",
+ "convention_check": "h_n = (eps^n + epsbar^n)/2 = a_n, as BGS-TRACE-342 / Bgs.H6LemmaW (Lean a_eq_h6, all n) and = u_{(p-1)/2} of BGS-TRACE-344 (h5_arith.py, odd primes p <= 1500)",
+ "unchanged_claims": {
+  "BGS-TRACE-342": "proved, not edited (strictly weaker than TRACE-348)",
+  "BGS-TRACE-303": "open",
+  "BGS-TRACE-325": "conditional",
+  "BGS-TRACE-206": "open"
+ },
+ "review": "no independent referee; the integrator re-derived every proof (REPORT_H5_CEILING.md) and the Lean module proves TRACE-348..350 in general",
+ "reruns": {
+  "python": "3.13.5, numpy 2.5.4, sympy 1.14.0, mpmath 1.3.0 (venv /workspace/venv_audit); OPENBLAS_NUM_THREADS=OMP_NUM_THREADS=1",
+  "h5_arith": {
+   "command": "python computations/verification/h5_ceiling/code/h5_arith.py",
+   "log": "computations/verification/h5_ceiling/logs/h5_arith.json",
+   "primes_q_lt_1e7": 664579,
+   "hits": 207,
+   "violations": 0,
+   "gcd_pairs": 28203,
+   "sophie_germain_count_5_1500": 25,
+   "product_formula_max_rel_err": "3.2831e-80",
+   "seconds": 47.1
+  },
+  "h5_density": {
+   "command": "python computations/verification/h5_ceiling/code/h5_density.py",
+   "log": "computations/verification/h5_ceiling/logs/h5_density.json",
+   "all": {
+    "n": 237,
+    "good": 90,
+    "frac_good": 0.3797,
+    "heur_mean": 0.3689
+   },
+   "ranges": {
+    "5-200": {
+     "n": 44,
+     "good": 12,
+     "frac_good": 0.2727,
+     "heur_mean": 0.2665
+    },
+    "200-500": {
+     "n": 49,
+     "good": 17,
+     "frac_good": 0.3469,
+     "heur_mean": 0.3391
+    },
+    "500-1000": {
+     "n": 73,
+     "good": 38,
+     "frac_good": 0.5205,
+     "heur_mean": 0.4066
+    },
+    "1000-1501": {
+     "n": 71,
+     "good": 23,
+     "frac_good": 0.3239,
+     "heur_mean": 0.4142
+    }
+   },
+   "agrees_with_research1105_s7_row_by_row": true,
+   "note": "research note only, [CA + N] against a heuristic [H]; not registered"
+  },
+  "thmL_sanity": {
+   "command": "python computations/verification/h5_ceiling/code/thmL_sanity.py",
+   "log": "computations/verification/h5_ceiling/logs/thmL_sanity.json",
+   "rows": 25,
+   "M_ge_8_over_pi2_theta_every_row": true,
+   "rows_below_bare_4theta_minus_1": [
+    [
+     3,
+     7
+    ],
+    [
+     5,
+     41
+    ],
+    [
+     7,
+     239
+    ],
+    [
+     19,
+     9369319
+    ]
+   ],
+   "note": "research note only, [N]; Theorem L is not registered"
+  }
+ },
+ "lean": {
+  "files": [
+   "formalization/Bgs/H5CeilingArith.lean"
+  ],
+  "theorems_printed": 9,
+  "sorry": false,
+  "native_decide": false,
+  "axioms": "propext, Classical.choice, Quot.sound (a_eq_h6: propext only)",
+  "build": "evidence/executions/20261105/h5_ceiling/lake_build_H5CeilingArith.log",
+  "scope": "one build: lake build Bgs.H5CeilingArith (2841 jobs, all but the new module replayed), packages linked to /workspace/lineNgas/repo/formalization/.lake/packages; no new Mathlib cache; no full Bgs build",
+  "not_formalized": "BGS-TRACE-351 (product formula); the finite counts (25 p, 28,203 pairs) are Python checks only"
+ },
+ "metadata_snapshot": "not refreshed: the new claims have no external dependencies and no older claim depends on them, so no external-reference impact set changes",
+ "research_note": "evidence/research/20261105_h5_ceiling/NOTE.md",
+ "checks": "evidence/executions/20261105/h5_ceiling/checks/",
+ "sha256": {
+  "computations/verification/h5_ceiling/REPORT_H5_CEILING.md": "d1d41348944265c685020ca2a87a3b582b23559352001c34a956811de0fa382f",
+  "computations/verification/h5_ceiling/code/h5_arith.py": "67907ee58a2a0b6340849fb2e52afaf94305e61624c91de2b03b819b510ebb15",
+  "computations/verification/h5_ceiling/code/h5_density.py": "12b4b6cde369eea000471a9121b398d8cefb4e8c48bac1f483a2a106127a6d67",
+  "computations/verification/h5_ceiling/code/thmL_sanity.py": "9b7a259b4071c15aa3f597f1ac0f0f74abd8db2c1d89901f8b13640e4a96c4ae",
+  "computations/verification/h5_ceiling/logs/h5_arith.json": "ea1430509b9ed468bdf36b5d098e5df4b00616799b25fb3532eaffd6739029a0",
+  "computations/verification/h5_ceiling/logs/h5_arith.out": "d86ea4fc7154437ce48987ebed322007c816da1f6b0d6e1d31e8799ce883c57e",
+  "computations/verification/h5_ceiling/logs/h5_density.json": "c634993a347caefe2bbaf024d5631a14b17121f7822cee4697d88f81a29178c1",
+  "computations/verification/h5_ceiling/logs/h5_density.out": "cfd12bdd83d2ab31b193d096d9bb2649c8aac6fa8139b2aa1ee5e7ea80bf728b",
+  "computations/verification/h5_ceiling/logs/thmL_sanity.json": "49b457aa6f774289bbdfdf16fcbd459369541503ead34c7100b8c65f37c77cf9",
+  "computations/verification/h5_ceiling/logs/thmL_sanity.out": "5eac8ac759059614b5f1d287daf9697ca2ea8cf84c9931c32f68c137a79d3aef",
+  "formalization/Bgs/H5CeilingArith.lean": "67bbd85e414070d9d3e5cbb2fbfdd17e790ba0c154e79fef1d7a9ecd55b506db",
+  "evidence/research/20261105_h5_ceiling/NOTE.md": "b9c13722925bb5370e8b27f1dcafdc2394fe64bff3d6b1053ca9a69abdbc3d09",
+  "evidence/executions/20261105/h5_ceiling/add_claims.py": "7d193edf902466c71cb7022ebdadbe40e599afff4379148185323f9ac95f23ec",
+  "evidence/executions/20261105/h5_ceiling/checks/checks.log": "fd4f289906d92d2b66ba6d7f86d7825d8fe678d497cc4db1bed40f4ea8fbf9d8",
+  "evidence/executions/20261105/h5_ceiling/checks/unittests.log": "cb1f94dfbaa15c4b1a0611be175f3837a29bd59a920ee2a942e65c06739a6b35",
+  "evidence/executions/20261105/h5_ceiling/edit_epochs.py": "0b782d99bf83c929f1ce5f5af4eb3b227af37e6136bedbaca64af31bf33f84a7",
+  "evidence/executions/20261105/h5_ceiling/edit_inventory.py": "ab1a7bbe5878b03372d9fdbf5ab47782710fa05f8c81c24aa61659e617d89771",
+  "evidence/executions/20261105/h5_ceiling/edit_readmes.py": "a08682c87c063e7f10a5a0e269450f3a2e85abc23a69a1cbabf23731cffce094",
+  "evidence/executions/20261105/h5_ceiling/lake_build_H5CeilingArith.log": "e63c57fa83dc88250be5be3199b6e193cc7f50cb71dd42868151889c67649ec8",
+  "evidence/executions/20261105/h5_ceiling/mk_receipt.py": "c135e314320d5e640d6e78b63ab94442486e182a927f15851b6e2dc9f8165eaa"
+ }
+}
