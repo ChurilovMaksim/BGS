@@ -333,7 +333,7 @@
   },
   {
    "title": "Phase VIII (4–5 November 2026): partial results on the open inputs of Theorem R♯-mod v5",
-   "note": "Five integrations, each after an independent internal referee audit. They narrow but do not discharge the open inputs: H5–H8 (BGS-TRACE-303..306) stay open and Theorem R♯-mod v5 stays conditional. The explicit H6 threshold needs squarefree h_p, which is not known for any p. Research notes on a structural ceiling for H5(a), Lemma U with the open decoupling step (C-U) and the 'estimate U' are unregistered research, not claims.",
+   "note": "Five integrations, each after an independent internal referee audit. They narrow but do not discharge the open inputs: H5–H8 (BGS-TRACE-303..306) stay open and Theorem R♯-mod v5 stays conditional. The explicit H6 threshold needs squarefree h_p, which is not known for any p, and assumes the normalization u = 1. Research notes on a structural ceiling for H5(a), Lemma U with the open decoupling step (C-U) and the 'estimate U' are unregistered research, not claims.",
    "claims": [
     [
      "BGS-TRACE-337",
@@ -353,7 +353,7 @@
     ],
     [
      "BGS-TRACE-343",
-     "Explicit H6 / Theorem C′ threshold (p ≥ 28,424,695 for 8V; p ≥ 3,934 for 8E), given squarefree h_p"
+     "Explicit H6 / Theorem C′ threshold (p ≥ 28,424,695 for 8V; p ≥ 3,934 for 8E), given squarefree h_p and u = 1"
     ],
     [
      "BGS-TRACE-344",
@@ -403,7 +403,7 @@
   }
  ],
  "known_issues": [
-  "**Continuous integration before 3 November 2026.** Until then GitHub Actions runs on main did not pass reliably, and on 1 November the repository recorded that Actions was not starting jobs (account billing). Check results quoted in PRs from that period are local runs with committed logs. Since commit 0ecdb56e (3 November 2026) no workflow run on main has failed; on main 4487e66a (5 November) the Scientific verification workflow, including a full `lake build`, and the Independent manuscript build both passed.",
+  "**Continuous integration before 3 November 2026.** Until then GitHub Actions runs on main did not pass reliably, and on 1 November the repository recorded that Actions was not starting jobs (account billing). Check results quoted in PRs from that period are local runs with committed logs. Since commit 0ecdb56e (3 November 2026) no workflow run on main has failed (one run, on 213602ae, was cancelled); on main 4487e66a (5 November) the Scientific verification workflow, including a full `lake build`, and the Independent manuscript build both passed.",
   "**Legacy `native_decide`.** {native_decide_uses} uses in {native_decide_modules} older Lean modules ({native_decide_list}) rely on native evaluation and therefore trust the compiler, beyond the kernel axioms. The claim boundaries disclose this. The Line B–N and Phase VIII modules use none. `Bgs/SevenPrimary.lean` is hash-pinned by `computations/verification/seven_primary_certificate.py` and is deliberately not changed.",
   "**Hash-pinned broken links.** 23 relative links in 10 files point to paths that later moved: `literature/arithmetic_dependency_closure_20261022.md`, `mathematics/fixed-map/fractional_hamming_cancellation.md`, `mathematics/fixed-map/onestep_charge_gap.md`, `mathematics/spectral-obstructions/flat_spectrum_obstruction.md`, `mathematics/trace-bridge/balanced_pair_schur_reduction.md`, `record/audits/20261006/README.md`, `record/charge_strengthening_promotion.md`, `record/circular_kernel_route_20261004.md`, `record/frozen_algebraic_review_20260924.md` and `supplement/fixed_map/resolvent-flow/loop_test_reductions.md` are byte-pinned by seals, manifests or receipts. They are left unedited on purpose: editing them would break the pins.",
   "**Frozen evidence packets.** {frozen_files} verbatim, sha256-pinned packet files under `computations/verification/line*/` are outside the assertion-entry policy and the SyntaxWarning compile step ([registry](computations/maintenance/frozen_evidence_packets.json), [rationale](computations/maintenance/ASSERTION_POLICY.md)). They are evidence of what was run, not maintained entry points.",

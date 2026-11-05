@@ -13,10 +13,10 @@ Theorem R♯-mod v5 ([BGS-TRACE-325](fixed-map/lineN5N18_gas_conditional.md), co
   (explicit p₀ and squarefree h_p), levels other than h_p, and wrap-around points at composite h_p. All four stay **open**.
   Phase VIII (4–5 November) narrowed them without closing any:
   * H5: the arithmetic of h_p (BGS-TRACE-348..351), Lemma S, the polymer gap lemma and the Binet generator (BGS-TRACE-352..354)
-    are proved; a uniform cross-line bound |X_line| ≤ C e^{−cp} with C ≤ 1, c ≥ 0.058 would cover H5(b) at p = 1409 and 3307
+    are proved; a uniform cross-line bound |X_line| ≤ C e^{−cp} with C ≤ 1, c ≥ 0.058 would fit the idealized room of BGS-TRACE-333 for H5(b) at p = 1409 and 3307
     (BGS-TRACE-355, conditional). Closing condition unchanged: the mixed classes and cross lines at composite h_p.
   * H6: Lemma W (BGS-TRACE-342) is proved; the explicit p₀ (p ≥ 28,424,695 for 8V, p ≥ 3,934 for 8E) holds given squarefree
-    h_p (BGS-TRACE-343, conditional). Squarefreeness is not known for any p.
+    h_p and the assumed normalization u = 1 (BGS-TRACE-343, conditional). Squarefreeness is not known for any p.
   * H7*: at three included levels d | K_19, K_29 the sector-0 radius exceeds T′ on a finite vertex section (BGS-TRACE-346), so
     the per-orbit sufficient reading cannot be certified there (BGS-TRACE-347); the aggregate H7* is open.
   * Unregistered research (not claims): the structural ceiling for H5(a) in

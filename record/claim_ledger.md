@@ -31,7 +31,7 @@ BGS-TRACE-325 is unaffected; neither row was edited.
 ## H6 explicit p₀ and Lemma W, 4 November 2026
 
 New, no existing state changed: BGS-TRACE-342 (Lemma W: q ≡ ±1 mod 2p for every prime q | h_p [P], with a finite Lean check)
-proved; 343 (explicit Theorem C′ threshold: p ≥ 28,424,695 for 8V, p ≥ 3,934 for 8E, given h_p squarefree) **conditional**.
+proved; 343 (explicit Theorem C′ threshold: p ≥ 28,424,695 for 8V, p ≥ 3,934 for 8E, given h_p squarefree and the torus normalization u = 1) **conditional**.
 Source: [REPORT_P4_v2](../computations/verification/h6_p0/REPORT_P4_v2.md). Squarefreeness of h_p is not known for any p;
 H6 (BGS-TRACE-304) stays **open**.
 

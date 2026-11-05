@@ -39,6 +39,9 @@ Editorial integration of Phase VIII and release preparation; receipt:
   its REPORT, BRIDGED, C0, CERT and REFEREE_CERT notes plus small logs, and a NOTE.md). No new full [CA] result, so no
   claim is registered; U_cross, H5(b) and H1 remain open.
 - Not changed: `formalization/Bgs/SevenPrimary.lean` and its pin, frozen packets, any claim state.
+- Audit fixes (wording only): BGS-TRACE-343 described as conditional on squarefree h_p and the normalization u = 1;
+  BGS-TRACE-355 as fitting the idealized TRACE-333 room; exact CI wording (since `0ecdb56e`; one cancelled run);
+  Estimate U note tags; `manuscript/README.md` current-build paragraph; PDF rebuilt (380 pages).
 
 ## 2026-11-05 — Lemma S, polymer gap, Binet generator (BGS-TRACE-352..354 proved, BGS-TRACE-355 conditional; no existing state changed)
 

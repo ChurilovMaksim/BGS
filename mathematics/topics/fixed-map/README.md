@@ -77,7 +77,7 @@ Phase VI (Lines B–H, TRACE-143–210) and Phase VII (Lines I–N, TRACE-211–
     Prop. K crossover rows (TRACE-341, conditional on H1-bad) leave the registered crossovers 3307 / 1409 unchanged.
   - Lean: `Bgs.LineNSpanArith` (finite arithmetic only).
 - **Phase VIII results on the inputs H5–H7* (proofs in verification reports, no `fixed-map/` note)** — TRACE-342–355, 4–5 November 2026.
-  - Lemma W and the explicit H6 threshold, conditional on squarefree h_p (TRACE-342, 343):
+  - Lemma W and the explicit H6 threshold, conditional on squarefree h_p and an assumed normalization u = 1 (TRACE-342, 343):
     [REPORT_P4_v2](../../../computations/verification/h6_p0/REPORT_P4_v2.md).
   - H7* scope on a finite vertex section (TRACE-344–347): [REPORT_H7_SCOPE](../../../computations/verification/h7_scope/REPORT_H7_SCOPE.md).
   - Arithmetic of h_p (TRACE-348–351): [REPORT_H5_CEILING](../../../computations/verification/h5_ceiling/REPORT_H5_CEILING.md).

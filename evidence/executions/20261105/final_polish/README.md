@@ -58,8 +58,8 @@ unchanged.
 `front_matter.tex`, `ch01_introduction.tex`, `unified_sections/ch15_conclusion.tex`: eight phases and the 5 November
 counts (438 = 353 / 17 / 25 / 42 / 1). The conclusion's "Draft note" label is now "Scope note" and the figure caption
 no longer says "DRAFT". `figures/fig_reading_map.tex` adds the "Lines B–H" and "Lines I–N" parts and drops "(DRAFT)"
-(this file is listed with an older sha in the historical receipt
-`evidence/formalization/aristotle_20261027/receipt.json`; no checker reads that entry, and the receipt is not edited).
+(this file is listed with an older sha in the historical receipts
+`evidence/formalization/aristotle_20261027/receipt.json` and `evidence/executions/20261027/continuation-integration.json`; no checker reads those entries, and the receipts are not edited).
 `unified_sections/lifted_transfer_lineFG.tex` and `lineH_49state_certificate.tex`: "eta two" → η = 2 in two headings.
 `BGS_unified.tex`: date. No chapter reordered; section and theorem numbers are unchanged.
 
@@ -89,3 +89,26 @@ differs from the one used on 1 November.
   are not copied. It produced no new full [CA] result, so nothing is registered, and the README frontier wording uses the
   tags of NOTE.md.
 * No tag, release or Zenodo record is created here.
+
+## Independent audit fixes (5 November 2026, after head `a2256674`)
+
+A hostile final audit of PR #93 found no state, count, pin or deletion problem; it made these wording fixes:
+
+* BGS-TRACE-343 is conditional on squarefree h_p **and** the assumed normalization u = 1 (its registry title and
+  boundary). Pages that said only "conditional on squarefree h_p" now name both: README / README.ru (abstract, Phase VIII
+  paragraph, results row, H6 input row), RESEARCH.md, `record/results_spec.json` and `render_results.py` (then
+  RESULTS.md re-rendered), the reader guides, `mathematics/open_questions.md`, `mathematics/topics/fixed-map/README.md`,
+  `record/claim_ledger.md` and `manuscript/ch01_introduction.tex` (one line; Appendix A line numbers unchanged).
+* BGS-TRACE-355 wording "would cover H5(b)" replaced by "would fit the idealized room of BGS-TRACE-333 for H5(b)", as
+  in its registry title (README / README.ru input table, `mathematics/open_questions.md`). README Lemma S sentence: the
+  bound is on the height sum G(cεⁿ) + G(cε^{n+p}).
+* CI wording: "no failed run since 3 November" made exact ("since commit `0ecdb56e`"; a run on 3 November before it,
+  `b6e0d26f`, failed) and the one cancelled run on main since then (`213602ae`, 4 November) is named; the manuscript-build
+  run 42012168905 is linked next to run 42012169135. A stray ",." in the EN Lean paragraph removed.
+* `evidence/research/20261105_estimate_u/NOTE.md`: the discrete ρ_cut value r_ε ≈ 0.47227 added with its referee tag,
+  and a note that the verbatim REPORT.md "CERT follow-up" line over-tags two numbers as [CA] (referee: GAP).
+* `manuscript/README.md`: the "Current integration and verification" paragraph still described the 1 November 381-page
+  PDF as the checked-in one; it now describes this build, and the 1 November section no longer says "current".
+* PDF rebuilt after the one-line introduction change: PASS, 380 pages, PDF sha256
+  `181d84d53a9cc14c4c101d6d1f3075c8bb32be1a93b96e15da3f5b7902e0497a` ([manifest](logs/manuscript_build_manifest.json));
+  `pdftotext` differs from the previous build only in that sentence.

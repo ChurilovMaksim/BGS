@@ -89,8 +89,8 @@ def render(root: Path = ROOT) -> str:
       'power-trace bounds for the original kick family (Phase IV); arithmetic Abel spikes and exact random-phase form factors '
       '(Phase V); the fixed diagonal kick and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179, '
       'Phase VI, Lines B–H); the corrected mean law R′ (BGS-TRACE-206, Phase VII, Lines I–N), which remains **open and '
-      'is not refuted**; and five integrations on 4–5 November 2026 (Phase VIII, BGS-TRACE-337..355: the span theorem, the '
-      'Lemma W with an explicit H6 threshold that is conditional on squarefree h_p, the H7* scope, the arithmetic of h_p, and Lemma S with the polymer gap lemma, the Binet '
+      'is not refuted**; and five integrations on 4–5 November 2026 (Phase VIII, BGS-TRACE-337..355: the span theorem, '
+      'Lemma W with an explicit H6 threshold that is conditional on squarefree h_p and an assumed normalization u = 1, the H7* scope, the arithmetic of h_p, and Lemma S with the polymer gap lemma, the Binet '
       'lattice generator and a conditional H5(b) cross-line constant). The end point of Phase VII, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the '
       'failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.')
     w('')

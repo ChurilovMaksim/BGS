@@ -1,13 +1,13 @@
 {
   "status": "PASS",
-  "started_utc": "2026-11-05T12:35:55.304278+00:00",
+  "started_utc": "2026-11-05T13:37:57.376711+00:00",
   "scope": "Three LaTeX passes, no horizontal overflow or unresolved references/citations, immutable TeX inputs. Mathematical truth and page-image inspection are separate.",
   "engine_kind": "pdflatex",
   "engine": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
   "source_sha256": {
     "manuscript/BGS_unified.tex": "3c61e9c7e6cd563002eec5e8e76252f21dc38152bf73cab834493df6fa9a40b4",
     "manuscript/appendix_a_claim_index.tex": "9d99a70f33e0d94cc6de51bb7d9952ee5c636d1119605294a16bffbbb8e07db5",
-    "manuscript/ch01_introduction.tex": "d35fb37d9bca4debb6949df09e6fd0f3ef921e42fe2cda0e6bb2033dae94e696",
+    "manuscript/ch01_introduction.tex": "05fe2c883883384ddaa04d99ebdf1413e087b745b7581f552eb2ec4346ec4b6e",
     "manuscript/compensated_times.tex": "3983f3f79d3f433e6e06c8b06cbe06846f5aeb7b4db775690a328bc4f14d6f70",
     "manuscript/consolidation_addendum.tex": "f1facca13ff7ff4cf7c1e775dca5cfac76f62df61b321b6deaf2ba469108c29f",
     "manuscript/figures/fig_flagship_chain.tex": "264aaac5bbc286b5b8797bbdd3289a8c076d0c03c7b29af17a364077024f6e67",
@@ -131,44 +131,44 @@
         "/home/box/.local/bin/pdflatex",
         "-interaction=nonstopmode",
         "-halt-on-error",
-        "-output-directory=/workspace/polish_final/out",
+        "-output-directory=/tmp/msbuild",
         "BGS_unified.tex"
       ],
       "returncode": 0,
       "log": "pass-1.log",
-      "sha256": "988c955241a01b17d9b767e2faffe54e6028c920cb4a077f6a456fc4624e73e0"
+      "sha256": "d81711b986bdf50857beb7bcebde60367933a9ffb679341a2dd82a9c17df401c"
     },
     {
       "command": [
         "/home/box/.local/bin/pdflatex",
         "-interaction=nonstopmode",
         "-halt-on-error",
-        "-output-directory=/workspace/polish_final/out",
+        "-output-directory=/tmp/msbuild",
         "BGS_unified.tex"
       ],
       "returncode": 0,
       "log": "pass-2.log",
-      "sha256": "ce6a21484193852870f23ce45673ddbc1d3507386cca058b0901445b17208388"
+      "sha256": "3879f1c861c7362938cf384b03bb19ec37979bf3e433269bf24b6afcc0fff28b"
     },
     {
       "command": [
         "/home/box/.local/bin/pdflatex",
         "-interaction=nonstopmode",
         "-halt-on-error",
-        "-output-directory=/workspace/polish_final/out",
+        "-output-directory=/tmp/msbuild",
         "BGS_unified.tex"
       ],
       "returncode": 0,
       "log": "pass-3.log",
-      "sha256": "279b942dd8f225433817ac5fc89c27e281a534faf5a2764527125496efc2e2fc"
+      "sha256": "772ef77babc13ef5546083ea5867c0112b9c683d7c33ba0c938eaddeb1e14354"
     }
   ],
   "sources_unchanged": true,
   "forbidden_warnings": [],
-  "runtime_seconds": 10.671184984967113,
+  "runtime_seconds": 12.94764202500005,
   "page_count": 380,
-  "pdf_sha256": "cc3617d8a95e37f4a15fcebacc6eb77c3f859aea568261481214fce418ebacfc",
-  "pdf_bytes": 2713148,
-  "latex_log_sha256": "284f299352a50e58e082a0d924f1191a07e63a482ba828dc1ef30f78a045dc12",
+  "pdf_sha256": "181d84d53a9cc14c4c101d6d1f3075c8bb32be1a93b96e15da3f5b7902e0497a",
+  "pdf_bytes": 2713112,
+  "latex_log_sha256": "08d9e6938ddba0008b6709dca4f60129a4cbe9a897bfa9bb132991ff75d7b0d5",
   "published_pdf": "manuscript/BGS_unified.pdf"
 }

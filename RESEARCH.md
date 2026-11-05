@@ -31,7 +31,7 @@ results table. The dated sections below follow newest first; the oldest phases a
   of frozen R′ along m = 3p to the open inputs H0, H1 (TRACE-336) and H5–H8 (TRACE-303..306). It supersedes v4 (TRACE-299).
 * **Phase VIII (4–5 November): partial results on the open inputs of Theorem R♯-mod v5** (TRACE-337..355; 15 proved,
   4 conditional). The span theorem for the balanced digit word (TRACE-337..341), Lemma W and an explicit H6 threshold that is
-  conditional on squarefree h_p (TRACE-342, 343), the H7* scope on a finite vertex section (TRACE-344..347), the arithmetic of h_p
+  conditional on squarefree h_p and an assumed normalization u = 1 (TRACE-342, 343), the H7* scope on a finite vertex section (TRACE-344..347), the arithmetic of h_p
   (TRACE-348..351), and Lemma S with the polymer gap lemma, the Binet generator and a conditional H5(b) constant (TRACE-352..355).
   H5–H8 stay open and Theorem R♯-mod v5 stays conditional.
 
@@ -45,7 +45,7 @@ Five integrations, each after an independent internal referee audit (not externa
   crossover rows (TRACE-341, conditional on H1-bad) leave the registered crossovers 3307 / 1409 unchanged.
 * **Lemma W and H6** ([REPORT_P4_v2](computations/verification/h6_p0/REPORT_P4_v2.md)): every prime q | h_p has q ≡ ±1 (mod 2p)
   (TRACE-342, proved). The explicit Theorem C′ threshold, p ≥ 28,424,695 for 8V and p ≥ 3,934 for 8E, holds only for p with
-  h_p squarefree (TRACE-343, **conditional**); squarefreeness is not known for any p, so H6 (TRACE-304) stays open.
+  h_p squarefree and assumes the normalization u = 1 of the word frequency (TRACE-343, **conditional**); squarefreeness is not known for any p, so H6 (TRACE-304) stays open.
 * **H7* scope** ([REPORT_H7_SCOPE](computations/verification/h7_scope/REPORT_H7_SCOPE.md)): 7 | K_p = 4h_p² + 3 (TRACE-344) and the
   factorizations of K_p for 5 ≤ p ≤ 31 (TRACE-345) are proved. At three included levels d | K_19, K_29 the sector-0 radius exceeds
   T′ = 1.42785 on a finite vertex section only ([CA], TRACE-346), so the per-orbit sufficient reading cannot be certified there
