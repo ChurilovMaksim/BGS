@@ -4,12 +4,12 @@ Repo `ChurilovMaksim/BGS`, branch `h5-ceiling-arith`, audited head `e7e819bb` (b
 One reader. Internal project review, not external refereeing. The referee fix commit sits on top of `e7e819bb`.
 `/workspace/audit/pr91/AUDIT.md` records the final head sha.
 
-## Verdict: FIX-FIRST (one remaining wording item in a hash-pinned file, see §6)
+## Verdict: FIX-FIRST (one remaining wording item in a hash-pinned file, see (f) item 3)
 
 The mathematics of TRACE-348..351 is correct, the Lean statements match `record/claims.json` with no hidden extra
 hypotheses, the Lean module rebuilds, every numeric script reproduces its committed log, and all renderers and checkers
 pass. One overstatement remains in `REPORT_H5_CEILING.md` §3. That file is sha256-pinned in `receipt.json`, so under the
-audit rules I did not edit it. Its fix and the receipt refresh are left to the owner (§6). Once those two edits are in,
+audit rules I did not edit it. Its fix and the receipt refresh are left to the owner ((f) items 3 and 4). Once those two edits are in,
 the verdict is MERGE.
 
 ## (a) Proofs, re-derived
