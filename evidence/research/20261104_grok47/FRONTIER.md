@@ -1,5 +1,17 @@
 # Frontier, 4 November 2026
 
+## Ninth target: window energies by lifting to \(\mathbb Z[\sqrt 2]\)
+
+The eight targets below are kept as records. The ninth target is the open interval of amplified H8, attacked by higher energies of short windows. The proof note is `proofs/h8_moments.md`. The self-referee is `REFEREE_H8_MOMENTS.md`.
+
+What that note establishes, inside this directory only:
+
+- **[P]** A congruence of two \(k\)-sums of powers of \(\lambda\), with exponents in an interval of span \(l\), is an equality in \(\mathbb Z[\sqrt 2]\) whenever \(4k^2\lambda^l < d^2\). The span is \(l < 2\log_\lambda d - \log_\lambda(4k^2)\). The length \(\ln d/(2\ln\lambda)\) contains \(\ell_0 = p/4\) only for \(\theta \ge 1/2\). The proved length contains \(\ell_0 = p/4\) throughout \(\theta \ge 0.16661157\), for \(k \le 7\) at \(p \in \{1409, 3307\}\).
+- **[P]** An equality of two \(k\)-sums in \(\mathbb Z[\sqrt 2]\) with \(k \le 6\) is a permutation of the summands. The ordered energy of a liftable window is then at most \(k!\,|W|^k\). The first non-permutation has mass \(7\), and it is \(\lambda^4+6\lambda = 6\lambda^3+1\) up to translation and swapping sides. The single-digit word of \(\lambda^n\) is Lemmas 3 and 4 of `proofs/span_law.md`.
+- **[CA]** The \(2k\)-moment beats \(|S| \le |W|\) only for \(\theta < 0.00576146\) at \(p = 1409\), \(k = 6\), and for \(\theta < 0.00289289\) at \(p = 3307\). The amplified exponent stays \(1\), so the wrap remains \(\theta < 0.16661157\). The formal product of the weight \(d\) with the energy ratio, which is not a theorem, reaches at most \(\theta < 0.17973708\) at \(p = 1409\) and \(\theta < 0.17322030\) at \(p = 3307\). Covering \(0.26223963\) would require an exponent under \(0.63534092\). The formal exponent stays above \(0.92122088\).
+
+H8 is not discharged. The full orbit of length \(p\) or \(3p\) does not fit in the liftable span. `record/claims.json` was not edited.
+
 ## Eighth target: the additive energy of \(\langle\lambda\rangle\)
 
 The seven targets below are kept as records. The eighth target is the amplified normalisation of H8 at large \(p\). The aggregate comparisons at \(p = 19\) and \(p = 29\) are parked: both primes lie under the conditional thresholds \(1409\) and \(3307\), so they are not an input the large-\(p\) inequality reads. H7* stays a hypothesis of v5. The proof note is `proofs/h8_energy.md`. The self-referee is `REFEREE_H8_ENERGY.md`.

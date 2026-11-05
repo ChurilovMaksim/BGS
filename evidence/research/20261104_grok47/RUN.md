@@ -119,3 +119,11 @@ python3 evidence/research/20261104_grok47/code/h8_energy.py
 ```
 
 Outcome: `logs/h8_energy.json`. Exact energy \(2L^2-L\) at the split primes \(7, 31, 41, 457\), and \(3L^2-3L\) at \(73, 89\). The composite \(217\) has energy \(435\), equal to the cap from its factor \(31\). The prime powers \(49\) and \(343\) have energies \(1617\) and \(122451\), above \(2L^2-L\); \(31^2\) keeps order \(15\) and energy \(435\). On the stored factors of \(K_p\) for \(5 \le p \le 31\), every prime is \(1\) or \(7 \pmod 8\), and the order is \(3\) at \(7\) and \(3p\) otherwise. The \(c = 1\) threshold stays under \(0.16661156569722353507\). At \(L = 3p\) the \((2,2)\) meeting point is under \(0.00644413\) for \(p = 1409\) and under \(0.00303834\) for \(p = 3307\). Runtime under a second.
+
+Ninth target, window energies of powers of \(\lambda\) by lifting to \(\mathbb Z[\sqrt 2]\). Same interpreter, ball arithmetic at precision \(200\). No registry file was written.
+
+```text
+python3 evidence/research/20261104_grok47/code/h8_moments.py
+```
+
+Outcome: `logs/h8_moments.json`. The identity \(\lambda^4+6\lambda = 6\lambda^3+1\) holds in \(\mathbb Z[\sqrt 2]\). On windows of \(4\) to \(10\) consecutive exponents the excess over the permutation count is \(0\) for \(k \le 6\) and \(98(L-4)\) for \(k = 7\). Each \(\lambda^n\) with \(-12 \le n \le 12\) has a single balanced digit \(+1\) at index \(1-2n\). The lifting threshold for span \(p/4\) lies under \(0.12600049\) at \(p = 1409\), \(k = 6\). The character-sum threshold at \(k = 6\) lies under \(0.00576146\) for \(p = 1409\) and under \(0.00289289\) for \(p = 3307\). The formal energy-ratio shift lies under \(0.17973708\) at \(p = 1409\), \(k = 7\), and under \(0.17322030\) at \(p = 3307\), \(k = 7\). The exponent that would reach \(0.26223963\) lies under \(0.63534092\). Runtime under a second.
