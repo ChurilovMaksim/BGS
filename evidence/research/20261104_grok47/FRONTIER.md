@@ -1,5 +1,18 @@
 # Frontier, 4 November 2026
 
+## Eleventh target: the cross-line coefficient in H5(b) and H5(c)
+
+The ten targets below are kept as records. The eleventh target is the per-line bound on the \(2^{\omega(h_p)}-2\) cross lines, and the same question for the partially isotropic points. The proof note is `proofs/h5_lines.md`. The self-referee is `REFEREE_H5_LINES.md`.
+
+What that note establishes, inside this directory only:
+
+- **[P]** In the normalisation of N6 §1, N10 and N11b §1, every fully isotropic point enters \(X\) with coefficient \(1\). A cross line is \(h_p-1\) such terms. TRACE-228 multiplies frequencies \(\beta = e\beta'\) with \(e>1\), and a cross-line point is not of that form.
+- **[P]** For odd squarefree \(h\), a fully isotropic run of traces within \(1/16\) of \(\mathbb Z\) has length at most the bound \(\lambda^{k-1}\le (6432/25)\varepsilon^2 h\). At \(h = h_p\) this is \(k\le (p+1)/2\). The cap does not see a proper divisor. It is not TRACE-268.
+- **[P]** One mixed class has \(\ell^1\) mass of \(Y\)-coefficients \(> (64/161)h_p > h_p/3\) when the non-isotropic prime is at least \(23\). The triangle majorant of one cross line, or of that class, fits either idealised room only if \(\max|\hat Z/Z| < 10^{-540}\) at \(p = 1409\) or \(< 10^{-1267}\) at \(p = 3307\).
+- **[C] + [P-arith]** If \(|X_{\mathrm{line}}(d)|\le \min(d, h_p/d)^{-1}\), the greedy sum of primes \(\equiv \pm 1\pmod{2p}\) is \(< 0.00185728\) at \(p = 1409\) and \(< 0.00076450\) at \(p = 3307\). Both lie under the rooms \(0.02011297\) and \(0.00334719\), and so do the products with the gas surplus \(M\). The elementary floors fit absolutely and miss both rooms after multiplication by \(M\). The hypothesis is not proved.
+
+H5(b) and H5(c) are not discharged. The composite branch of H5 is not discharged. The structural ceiling of v5 does not fall. `record/claims.json` was not edited.
+
 ## Tenth target: H5 after Lemma W, with H8 parked
 
 The nine targets below are kept as records. H8 is parked in `proofs/h8_park.md`. The self-referee is `REFEREE_H8_PARK.md`. The four routes — the uniform factor of exponent \(1\), the additive energy \(2L^2-L\), the lifted window energies, and the BGK/HBK ranges — leave the amplified wrap at \(\theta < 0.16661157\). The interval up to \(0.26223963\) stays open. H8 is not discharged and not refuted.

@@ -135,3 +135,11 @@ python3 evidence/research/20261104_grok47/code/h5_factor.py
 ```
 
 Outcome: `logs/h5_factor.json`. \(w_{\max}(1409) = 112\) and \(w_{\max}(3307) = 231\), both equal to the cap against \(h_p\). The rational bound gives \(2e^{pR} < 5\) at \(p = 1409\) and \(< 16\) at \(p = 3307\), both below the corresponding power of two. The idealised slack is \(< 0.00334719\) at \(p = 3307\), \(\delta = 3.4962\cdot 10^{-4}\), and \(< 0.02011297\) at \(p = 1409\), \(\delta = 7.4115\cdot 10^{-6}\). Exact division gives \(h_p > (2p-1)(397/250)^p\) at \(p \in \{31, 1409, 3307\}\). Trial division factorises \(h_p\) for every odd prime \(p \le 47\); each factorisation is squarefree and every prime factor is \(\pm 1 \pmod{2p}\). Runtime about \(19\) s.
+
+Eleventh target, the cross-line coefficient in H5(b) and the partially isotropic mass in H5(c). Same interpreter. Integer comparisons for \(w_{\max}\), \(h_p\) and the divisor products; mpmath at 80 decimal places for the slack and the greedy sums; a scan at 20 decimal places of the loose progression sum on \(3307\le p\le 4599\), with the four boundary integers recomputed at 50 decimal places. No registry file was written.
+
+```text
+python3 evidence/research/20261104_grok47/code/h5_lines.py
+```
+
+Outcome: `logs/h5_lines.json`. \(h_{1409} > 10^{539}\) and \(h_{3307} > 10^{1265}\). The greedy sets of primes \(\equiv \pm 1\pmod{2p}\) have lengths \(98\) and \(203\). Their \(\gamma = 1\) sums are \(0.00185727536\) and \(0.00076449640\). Both lie under the corresponding slack, and so do the products with \(M\). The progression floors at \(w_{\max}\) lie under both slacks absolutely and miss both after multiplication by \(M\). The loose sum at \(p = 3307\) is \(0.00356995629\), above the fragile cap. On \(3307\le p\le 4599\) it increases \(137\) times; the last exceedance is \(p = 3565\); the maximum from \(3566\) on falls at \(p = 3567\), where the 50-decimal gap to \(0.00334719\) is \(4.69455\cdot 10^{-7}\). Runtime about \(13\) s.
