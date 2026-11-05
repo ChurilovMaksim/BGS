@@ -158,7 +158,7 @@ At the prime \(q=457\), against the same period-\(57\) sector-\(0\) untwisted tr
 \]
 Their sum is \(<3.47\cdot 10^{-13}\). Carried into \(d=457\cdot 7521721\) by the factor of Section 2, the same pieces contribute less than \(4.61\cdot 10^{-20}\) to \(\eta\). Replacing the section trace by \(z_{\mathrm{lo}}\) multiplies these by less than \(2.1\). This is the isotropic part only. The off-isotropic sum at \(q=457\), and the exact-conductor sum at each composite, stay unenclosed.
 
-**Decision.** At each of the three conductors, the aggregate closure condition of H7* is not shown to hold and not shown to fail. The sufficient per-orbit reading is already false for the finite section, by `proofs/h7_scope.md`. Theorem v5 does not apply H7* at \(p=19\) or \(p=29\), both of which are \(<1409\).
+**Decision.** At each of the three conductors, the aggregate closure condition of H7* is not shown to hold and not shown to fail. The sufficient per-orbit reading is already false for the finite section, by `proofs/h7_scope.md`. Theorem v5 does not apply H7* at \(p=19\) or \(p=29\), both of which are \(<1409\). A uniform bound on the section trace, and the comparison of that bound with the threshold at \(d=3437426497\), is `proofs/h7_uniform.md`.
 
 ## 6. Tags
 

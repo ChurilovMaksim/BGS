@@ -1,5 +1,17 @@
 # Frontier, 4 November 2026
 
+## Sixth target: a uniform bound on the section trace
+
+The five targets below are kept as records. The sixth target is a bound \(|\operatorname{Tr} Q|\le C R^P\) for every twist of the finite multi-disc section, with \(R\) below the Frobenius majorant \(M\approx 50.49\), and the comparison of that bound with the \(\eta=1\) threshold at \(d=3437426497\). The proof note is `proofs/h7_uniform.md`. The self-referee is `REFEREE_H7_UNIFORM.md`.
+
+What that note establishes, inside this directory only:
+
+- **[P]** In the weighted norm named by the diagonal in `logs/h7_uniform_weights.json`, a submultiplicative bound on one step is a bound on every twist sequence, sectors included. The residue weight \(\sum_{\beta\not\equiv 0}|\kappa_d(N\beta)|\) factors as a product of local representation sums. For odd \(q\), \(\sum_{k=1}^{q-1}|\cos(\pi k/q)|=\csc(\pi/(2q))-1\).
+- **[CA]** Every twisted step has weighted \(2\)-norm at most \(246/100\). The trace of a length-\(P\) product is at most \(280\cdot(246/100)^P\). One eigenvalue of the untwisted step has modulus in \([1.9154732041332492,\ 1.915473204133273]\). The residue weight at \(d=457\cdot 7521721\) is \(1.2589733434762453\cdot 10^{20}\). The section majorant is \(6.768238765003160\cdot 10^{44}\). Against the threshold \(3.8762299862656054\cdot 10^{27}\) the quotient is \(1.7460880259903623\cdot 10^{17}\).
+- **[CA]** The rate that would put this triangle bound at the threshold is \(R_*=1.225865206681737\). The certified rate is larger by the factor \(2.006745918386011\). The untwisted section trace alone, times the residue weight, already exceeds the threshold by \(3.9934073393176425\cdot 10^{8}\). No uniform cap can do better than that trace, and \(R_*\) lies below the spectral radius.
+
+Aggregate H7* is not shown to hold and not shown to fail. The bound is a bound on the finite section, not on \(\hat Z\). `record/claims.json` was not edited.
+
 ## Fifth target: the aggregate Lin sum at the three crossings
 
 The four targets below are kept as records. The fifth target is the sum \(\sum_{\beta\not\equiv 0}\kappa_d(N\beta)\hat Z(\beta)\) at the three included conductors, compared with \(\varepsilon_d|Z|^2/h_p\). The proof note is `proofs/h7_lin.md`. The scoping sentence is `proofs/h7_scope.md`. The self-referee is `REFEREE_H7_LIN.md`.

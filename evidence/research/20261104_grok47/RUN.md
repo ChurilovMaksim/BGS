@@ -86,3 +86,11 @@ Outcomes:
 - `iso 0` and `iso 4`: sixteen orbits each, `logs/h7_lin_iso_s0.json` and `logs/h7_lin_iso_s4.json`. `sum-iso` gives \(|S_{\mathrm{iso}}|=7.8450076177326356\) and \(39.619988072063016\), log `logs/h7_lin_iso_sum.json`.
 
 The composite sums over all \(\beta\) were not run. A column-sequential trace at \(q=457\) was timed and not started.
+
+Sixth target, a uniform bound on the section trace. Same interpreter, precision \(160\) for the norm certificate and the residue weight. No registry file was written.
+
+```text
+python3 evidence/research/20261104_grok47/code/h7_uniform.py all
+```
+
+Outcome: `logs/h7_uniform.json` and `logs/h7_uniform_weights.json`, \(805\) s for the norm certificate. The self-test passes a \(2\times 2\) Cholesky certificate, rejects a cap below the true norm, and matches the cosine sum at \(q=5,17,41\). The mass check at \(d=287\) has relative discrepancy \(<6.71\cdot 10^{-14}\). The frozen diagonal has floating-point max \(2\)-norm \(2.439371\) on a \(361\)-point grid; a geometric weight \((1/2)^k(0.45)^{|c|}\) has floating-point max about \(2.6485\). The certificate covers the circle by \(233\) intervals, Taylor remainder upper endpoint \(0.005953146641677557\), and accepts \(R=246/100\) on all \(466\) endpoints. The smallest Cholesky slack has lower endpoint \(0.016316926498566642\). Newton on the untwisted step encloses one eigenvalue in \([1.9154732041332492,\ 1.915473204133273]\). The residue weight, the majorant, and \(R_*\) are the balls in `proofs/h7_uniform.md` §4.
