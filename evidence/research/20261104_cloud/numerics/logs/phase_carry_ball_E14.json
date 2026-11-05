@@ -1,0 +1,57 @@
+{
+ "E": 14,
+ "ball": true,
+ "tag": "CA",
+ "iters": 3,
+ "rates": [
+  {
+   "lo": 3.9265956038042837,
+   "hi": 3.926595603821325
+  },
+  {
+   "lo": 0.9447813107282779,
+   "hi": 0.9447813107936168
+  },
+  {
+   "lo": 0.2864721872033909,
+   "hi": 0.28647218743461356
+  }
+ ],
+ "shares": [
+  {
+   "lo": 0.08353948722204359,
+   "hi": 0.0835394872231518,
+   "rel_width": 4.3392221744988746e-12
+  },
+  {
+   "lo": 0.03286455622526537,
+   "hi": 0.03286455623023224,
+   "rel_width": 5.61395236455375e-11
+  },
+  {
+   "lo": 0.03358955179976974,
+   "hi": 0.03358955185572142,
+   "rel_width": 6.387198348337236e-10
+  }
+ ],
+ "rate_hi_last": 0.28647218743461356,
+ "rate_lo_last": 0.2864721872033909,
+ "rate_hi_below_0.28": true,
+ "prefactor_0.28_hi": 48.41231383080492,
+ "prefactor_path": [
+  14.023555727933303,
+  47.31854772365771,
+  48.41231383080492
+ ],
+ "s_mid_re": 1.3572399242659723,
+ "s_mid_im": -1.3516424762972734,
+ "s_rad": 7.630375482778221e-13,
+ "s_float_abs": 1.9154732041332583,
+ "s_mid_abs": 1.9154732041332574,
+ "block_mid_minus_float_max": 8.777083671441753e-17,
+ "gamma": 9.769962616702332e-14,
+ "theta": 1e-08,
+ "seconds": 4455.460031509399,
+ "n_states_final": 697,
+ "note": "Entrywise complex disks around the Rayleigh-normalised Galerkin carry map. s is the Rayleigh quotient of the computed vectors, not a certified eigenpair. rate_hi < 0.28 on the tail of the orbit encloses that orbit only."
+}

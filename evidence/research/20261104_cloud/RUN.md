@@ -72,11 +72,11 @@ python3 phase_carry_ball.py 1 8
 python3 phase_carry_ball.py range 2 14
 ```
 
-`green_tail.py` uses flint precision 200. `phase_carry_ball.py` builds the blocks at flint precision 80, stores complex128 midpoints and float64 radii, and propagates entrywise disks. The product bound uses γ = 9.77×10^{-14} and a radius-product margin θ = 10^{-8}. Logs through `phase_carry_ball_E8.json` are the certified prefixes. E = 9 through 13 were not run. The sharp box is `python3 phase_carry_ball.py 14 5`, which rewrites its json after every step. Tag of the finished disk prefixes: [CA]. Tag of the cutoff: [P].
+`green_tail.py` uses flint precision 200. `phase_carry_ball.py` builds the blocks at flint precision 80, stores complex128 midpoints and float64 radii, and propagates entrywise disks. The product bound uses γ = 9.77×10^{-14} and a radius-product margin θ = 10^{-8}. Logs through `phase_carry_ball_E8.json` are finished prefixes, six or eight steps, with every upper rate from step 3 below 0.28. E = 9 through 13 were not run. `phase_carry_ball_E14.json` is three steps of the sharp box and was stopped while the fourth step was in progress. Its third rate is above 0.28. The json field `rate_hi_below_0.28` is vacuous on that file; the script’s predicate was corrected afterwards and the json was not regenerated. Tag of the finished disk prefixes: [CA]. Tag of the cutoff: [P].
 
 ```text
 1708ed983202a6ad27bf05e858be9dfbe07cbf1141871974eed1d2a08f3936db  numerics/green_tail.py
-429f5b0917fc08522311e2b6b23d5c069e6941ee5b13f83968f054631c718014  numerics/phase_carry_ball.py
+898de9392dbed01e5f5c6a98d5f84f3a9b705caafe8095ac2afdb4960f2c9695  numerics/phase_carry_ball.py
 a25d4bcf46aa460ac174dc0967b5db5dcc280e569620f996a617f16323047de0  numerics/logs/green_tail.json
 be1ab3f166daf1d3bb6412e560a8f91b07aed2d576c7cf3ce7cbff5a068a3d71  numerics/logs/phase_carry_ball_E0.json
 bea307c1314fc78c196411c38cac4a5403f12ce3205f2f66a4829fa96ca649fd  numerics/logs/phase_carry_ball_E1.json
@@ -87,8 +87,9 @@ a4a044006ad84e2befc9e9ad3e2f483bb491c6a9e0cd52f06ad6b37f245198f4  numerics/logs/
 2f5b63f657ca924299d0f4b6782b5782c29717a688ea597c4e2815b2bfd32ce2  numerics/logs/phase_carry_ball_E6.json
 ee302b0cce5e2104c00dd12e618f0f7bd2fbabd9fb5c3c22b19efcff7a6094bf  numerics/logs/phase_carry_ball_E7.json
 57bd91493948894495b84fdbc4d27b535e5638e48f55c2667ebba3a4c6d1261a  numerics/logs/phase_carry_ball_E8.json
+29b4c73449f0a6b0fb9bc526067ca1d16f9e97715ebf3933341c7a39d66c0079  numerics/logs/phase_carry_ball_E14.json
 3b9e0c8c854400c521d70f843a41f1d14dbf10fa9d3364eb79adba7922efc3ff  proofs/10_green_tail.md
-b2d07870d0c4398debe4155cc2697a94ce2035355b57094253d0f537deac5aae  proofs/11_ball_orbit.md
+5d9bdf0bd957356c4af38e65827527f4a0204da1e58eb239c74407dbe4201c6a  proofs/11_ball_orbit.md
 ```
 
 ```text

@@ -42,7 +42,7 @@ This bounds the computed prefix. It does not by itself bound step N+1. On these 
 
 ## Certified prefixes
 
-P_* is the maximum of the upper envelope. “Last rate” is the last computed step. Every last upper endpoint below is strictly less than 0.28, and so is every upper endpoint from step 3 onward.
+P_* is the maximum of the upper envelope on the steps that were computed. “Last rate” is the last computed step. In the table, every last upper endpoint is strictly less than 0.28, and so is every upper endpoint from step 3 onward. The sharp box is not in that table.
 
 | E | steps | last rate interval | (0,0) share interval | P_* | rel. width at the end |
 |---|---|---|---|---|---|
@@ -70,7 +70,23 @@ E = 6 opens at 2.9887379853. The prefix prefactor is 25.1398208, against the bin
 
 E = 7 opens at 3.3389468083. The prefix prefactor is 28.5948449. The last rate interval has width 2.5×10^{-7}. The prefactor is still rising, by about 3.5 per unit of E over the last several boxes. That rise is the mass leaving (0,0). It is not a rise in the rate.
 
-E = 8 opens at 3.6006570008. The prefix prefactor is 31.4548230, against the binary64 value 31.455. The (0,0) share is 0.0518906, against the binary64 0.051891. The last rate interval has width 2.5×10^{-7}. E = 9 was not run: the same process was stopped after this box so the sharp box E = 14 could be started. E = 9, 10, 11, 12 and 13 have no disk prefix.
+E = 8 opens at 3.6006570008. The prefix prefactor is 31.4548230, against the binary64 value 31.455. The (0,0) share is 0.0518906, against the binary64 0.051891. The last rate interval has width 2.5×10^{-7}.
+
+## Partial sharp box
+
+E = 9, 10, 11, 12 and 13 were not run in disks. The binary64 box E = 10 in `09_phase_carry.md` stays **[N]**.
+
+E = 14, the sharp box, was stopped after three steps. The log is `numerics/logs/phase_carry_ball_E14.json`. This is a **[CA]** enclosure of those three steps of the full single-window orbit, and nothing past them. After three steps, 697 states carry mass. The forward graph inside |e| ≤ 14 has 721 states; the missing ones are not reached in three steps, so they do not affect this prefix.
+
+| step | rate interval | (0,0) share | running P_n |
+|---|---|---|---|
+| 0 | [3.92659560380, 3.92659560382] | [0.083539487222, 0.083539487223] | 14.02355573 |
+| 1 | [0.94478131073, 0.94478131079] | [0.032864556225, 0.032864556230] | 47.31854772 |
+| 2 | [0.28647218720, 0.28647218743] | [0.033589551800, 0.033589551856] | 48.41231383 |
+
+The third upper endpoint is 0.28647218743, which is above 0.28. The running product is still rising. On every finished box the product peaked at the third step and the next rate fell below 0.28. That next rate was not computed here. The file’s field `rate_hi_below_0.28` is true only because the check looked at steps from index 3 onward and there were none. That flag is vacuous on this log. It is not a certificate.
+
+So the full-carry statement “rate ≤ 0.28 with an explicit prefactor” is not obtained. The three-step product is at most 48.41231383. The prefactor of the infinite orbit is not enclosed. H1-bad stays open.
 
 E = 0 and E = 1 were run with the same disk rules. The generation-popping change used for the later boxes does not alter the arithmetic.
 
