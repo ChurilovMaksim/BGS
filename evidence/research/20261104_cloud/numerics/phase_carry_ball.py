@@ -316,6 +316,56 @@ def mass_bounds(states, use_rad):
     return lo, hi
 
 
+def dump_ball(E, use_rad, rates, shares, s_mid, s_rad, s_float, diff, n_states, seconds):
+    prod = 1.0
+    pmax = 1.0
+    p_at = []
+    finite = True
+    for r in rates:
+        if not math.isfinite(r["hi"]):
+            finite = False
+            break
+        prod *= r["hi"] / 0.28
+        pmax = max(pmax, prod)
+        p_at.append(prod)
+    out = {
+        "E": E,
+        "ball": use_rad,
+        "tag": "CA" if use_rad else "N",
+        "iters": len(rates),
+        "rates": rates,
+        "shares": shares,
+        "rate_hi_last": rates[-1]["hi"] if rates else None,
+        "rate_lo_last": rates[-1]["lo"] if rates else None,
+        "rate_hi_below_0.28": bool(rates) and all(math.isfinite(r["hi"]) and r["hi"] < 0.28 for r in rates[3:]),
+        "prefactor_0.28_hi": pmax if finite else None,
+        "prefactor_path": p_at,
+        "s_mid_re": s_mid.real,
+        "s_mid_im": s_mid.imag,
+        "s_rad": s_rad,
+        "s_float_abs": abs(s_float),
+        "s_mid_abs": abs(s_mid),
+        "block_mid_minus_float_max": diff,
+        "gamma": GAMMA,
+        "theta": THETA,
+        "seconds": seconds,
+        "n_states_final": n_states,
+        "note": (
+            "Entrywise complex disks around the Rayleigh-normalised Galerkin carry map. "
+            "s is the Rayleigh quotient of the computed vectors, not a certified eigenpair. "
+            "rate_hi < 0.28 on the tail of the orbit encloses that orbit only."
+            if use_rad
+            else "binary64 midpoints of the same blocks; not an enclosure."
+        ),
+    }
+    tag = "ball" if use_rad else "stream"
+    path = os.path.join(LOGS, f"phase_carry_{tag}_E{E}.json")
+    with open(path, "w") as f:
+        json.dump(out, f, indent=1)
+    print("wrote", path, "iters", len(rates), flush=True)
+    return out
+
+
 def run(E, iters, use_rad, model_float, disks):
     D, NS, raw = disks
     _D, _NS, _Nn, pair, s_float, Phi, psi = model_float
@@ -391,6 +441,8 @@ def run(E, iters, use_rad, model_float, disks):
             rate_lo = rate_hi = n_hi / m_hi
         rates.append({"lo": rate_lo, "hi": rate_hi})
         shares.append({"lo": share_lo, "hi": share_hi, "rel_width": rel})
+        # Rewrite the log after every step so a long box keeps its prefix.
+        dump_ball(E, use_rad, rates, shares, s_mid, s_rad, s_float, diff, len(states), time.time() - t0)
         print(
             "E",
             E,
@@ -413,54 +465,9 @@ def run(E, iters, use_rad, model_float, disks):
         )
         if use_rad and not math.isfinite(rate_hi):
             break
-    # prefactor at 0.28 from upper rates
-    prod = 1.0
-    pmax = 1.0
-    p_at = []
-    finite = True
-    for i, r in enumerate(rates):
-        if not math.isfinite(r["hi"]):
-            finite = False
-            break
-        prod *= r["hi"] / 0.28
-        pmax = max(pmax, prod)
-        p_at.append(prod)
-    out = {
-        "E": E,
-        "ball": use_rad,
-        "tag": "CA" if use_rad else "N",
-        "iters": len(rates),
-        "rates": rates,
-        "shares": shares,
-        "rate_hi_last": rates[-1]["hi"] if rates else None,
-        "rate_lo_last": rates[-1]["lo"] if rates else None,
-        "rate_hi_below_0.28": bool(rates) and all(math.isfinite(r["hi"]) and r["hi"] < 0.28 for r in rates[3:]),
-        "prefactor_0.28_hi": pmax if finite else None,
-        "prefactor_path": p_at,
-        "s_mid_re": s_mid.real,
-        "s_mid_im": s_mid.imag,
-        "s_rad": s_rad,
-        "s_float_abs": abs(s_float),
-        "s_mid_abs": abs(s_mid),
-        "block_mid_minus_float_max": diff,
-        "gamma": GAMMA,
-        "theta": THETA,
-        "seconds": time.time() - t0,
-        "n_states_final": len(states),
-        "note": (
-            "Entrywise complex disks around the Rayleigh-normalised Galerkin carry map. "
-            "s is the Rayleigh quotient of the computed vectors, not a certified eigenpair. "
-            "rate_hi < 0.28 on the tail of the orbit encloses that orbit only."
-            if use_rad
-            else "binary64 midpoints of the same blocks; not an enclosure."
-        ),
-    }
-    tag = "ball" if use_rad else "stream"
-    path = os.path.join(LOGS, f"phase_carry_{tag}_E{E}.json")
-    with open(path, "w") as f:
-        json.dump(out, f, indent=1)
-    print("wrote", path, flush=True)
-    return out
+    return dump_ball(
+        E, use_rad, rates, shares, s_mid, s_rad, s_float, diff, len(states), time.time() - t0
+    )
 
 
 def main():

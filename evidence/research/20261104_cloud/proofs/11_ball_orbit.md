@@ -54,6 +54,7 @@ P_* is the maximum of the upper envelope. “Last rate” is the last computed s
 | 5 | 6 | [0.272549139, 0.272549383] | [0.076570175, 0.076570317] | 21.2895613 | 6.97×10^{-7} |
 | 6 | 6 | [0.272548446, 0.272548690] | [0.064878635, 0.064878755] | 25.1398208 | 6.99×10^{-7} |
 | 7 | 6 | [0.272547777, 0.272548024] | [0.057064060, 0.057064167] | 28.5948449 | 7.08×10^{-7} |
+| 8 | 6 | [0.272547173, 0.272547426] | [0.051890552, 0.051890651] | 31.4548230 | 7.27×10^{-7} |
 
 E = 1 opens 0.9162133165, 0.5742382743, 0.2890025980, then steps below 0.28. That is the published prefix. The upper envelope of P_n is 3.272, 6.711, 6.927, 6.766, 6.587, 6.411, 6.241, 6.075. The maximum is the third term.
 
@@ -68,6 +69,8 @@ E = 5 was stopped at six steps, before the wrapping had widened the disk. The la
 E = 6 opens at 2.9887379853. The prefix prefactor is 25.1398208, against the binary64 value 25.140. The (0,0) share is 0.0648786, against the binary64 0.064879. The last rate interval has width 2.4×10^{-7} and lies under 0.27255.
 
 E = 7 opens at 3.3389468083. The prefix prefactor is 28.5948449. The last rate interval has width 2.5×10^{-7}. The prefactor is still rising, by about 3.5 per unit of E over the last several boxes. That rise is the mass leaving (0,0). It is not a rise in the rate.
+
+E = 8 opens at 3.6006570008. The prefix prefactor is 31.4548230, against the binary64 value 31.455. The (0,0) share is 0.0518906, against the binary64 0.051891. The last rate interval has width 2.5×10^{-7}. E = 9 was not run: the same process was stopped after this box so the sharp box E = 14 could be started. E = 9, 10, 11, 12 and 13 have no disk prefix.
 
 E = 0 and E = 1 were run with the same disk rules. The generation-popping change used for the later boxes does not alter the arithmetic.
 
