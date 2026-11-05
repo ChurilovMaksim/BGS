@@ -1,5 +1,18 @@
 # BGS consolidated research manuscript
 
+## Final polish pass, 5 November 2026
+
+The abstract (`front_matter.tex`), the introduction (`ch01_introduction.tex`) and the conclusion
+(`unified_sections/ch15_conclusion.tex`) now describe eight phases and the registry as of 5 November 2026 (438 claims:
+353 proved, 17 verification-pending, 25 conditional, 42 open, 1 refuted). Phase VIII (BGS-TRACE-337..355) has no section
+of its own: it is summarized in those three places and listed in Appendix A, and its proofs stay in
+`mathematics/fixed-map/lineN_span_theorem.md` and the `computations/verification/{h6_p0,h7_scope,h5_ceiling,lemma_s}/`
+reports. The conclusion's "Draft note" label is now "Scope note", the reading map (`figures/fig_reading_map.tex`) shows the
+"Lines B--H" and "Lines I--N" parts and no longer marks Chapter 15 as a draft, and two headings that read "eta two" now
+typeset \(\eta=2\). No chapter was reordered and section and theorem numbers are unchanged. The rebuilt PDF has
+**380 pages**, 0 overfull boxes and no unresolved references (builder status PASS; receipt:
+[final_polish](../evidence/executions/20261105/final_polish/README.md)).
+
 ## Final editorial pass, 1 November 2026
 
 The abstract (`front_matter.tex`), the introduction and guide (`ch01_introduction.tex`) and the conclusion

@@ -95,5 +95,5 @@ components. So gluing adds no meeting-support fiber at m = 12.
 
 ## Files
 
-- Search: [wave16_d1a_targeted.py](sandbox://workspace/bgs-breakthrough/methods/wave16_d1a_targeted.py), log [wave16_targeted_13_20.log](sandbox://workspace/bgs-breakthrough/methods/wave16_targeted_13_20.log)
-- m = 12 φ̂: [wave16_d1a_m12_phi.py](sandbox://workspace/bgs-breakthrough/methods/wave16_d1a_m12_phi.py), numbers [wave16_m12_phi.json](sandbox://workspace/bgs-breakthrough/methods/wave16_m12_phi.json)
+- Search: [wave16_d1a_targeted.py](wave16_d1a_targeted.py), log `wave16_targeted_13_20.log` (not in repository)
+- m = 12 φ̂: [wave16_d1a_m12_phi.py](wave16_d1a_m12_phi.py), numbers `wave16_m12_phi.json` (not in repository)

@@ -1,13 +1,16 @@
 # Mathematical proofs
 
-## Where to start (1 November 2026)
+## Where to start (5 November 2026)
 
-This directory holds the proofs of all seven phases of the programme. [results.md](results.md) lists the theorem families
+This directory holds the proofs of the eight phases of the programme. [results.md](results.md) lists the theorem families
 newest first; [open_questions.md](open_questions.md) lists what is missing; [topics/README.md](topics/README.md) gives reading
 orders by area. The dated sections below record the October reorganisations of Phases I–IV. Phases V–VII live mainly in
 `fixed-map/`: the Abel-spike and form-factor notes (TRACE-117–142, 28–29 October), Lines B–H (TRACE-143–210, 29–30 October,
 including the refutation of Conjecture R, BGS-TRACE-179) and Lines I–N (TRACE-211–336, 31 October – 1 November, frozen R′
-open, Theorem R♯-mod v5 conditional). [topics/fixed-map/README.md](topics/fixed-map/README.md) lists the line notes in
+open, Theorem R♯-mod v5 conditional). Phase VIII (TRACE-337–355, 4–5 November) has the span theorem in
+`fixed-map/lineN_span_theorem.md` (TRACE-337–341); the proofs of TRACE-342–355 (Lemma W and H6, H7* scope, arithmetic of h_p,
+Lemma S) are in the reports `computations/verification/{h6_p0,h7_scope,h5_ceiling,lemma_s}/REPORT_*.md`. H5–H8 stay open.
+[topics/fixed-map/README.md](topics/fixed-map/README.md) lists the line notes in
 order. BGS (BGS-BGS-001) and the signed trace estimate (BGS-TRACE-005) are open.
 
 ## Trace results and dependency closure, 22 October 2026

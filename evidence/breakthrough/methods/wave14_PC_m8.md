@@ -99,7 +99,7 @@ v_{π(r)} = v_{σ_c(π₂(r))} = v_{δ(π₂(r))} = v_{π₁(r)} (using
 ## 8. Numerical confirmation and scope
 
 Fresh implementation (no wave-12 code reused):
-[wave14_PC_m8.py](sandbox://workspace/bgs-breakthrough/methods/wave14_PC_m8.py)
+[wave14_PC_m8.py](wave14_PC_m8.py)
 enumerates all 9 × 289 pairs (a, b) and all 16 × 16 pairs (d₁, d₂):
 **272,640 preserved cases (reproducing wave 12 exactly), 0 bad**;
 δ ∈ Stab(v)·Stab(C) in every preserved case. Breakdown by A₁-type:

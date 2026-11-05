@@ -1,14 +1,14 @@
 # BGS research brief
 
-## Summary (1 November 2026)
+## Summary (5 November 2026)
 
 [README.md](README.md) gives the balanced overview of the whole programme and [RESULTS.md](RESULTS.md) the generated one-page
 results table. The dated sections below follow newest first; the oldest phases are at the end of this page and in
 [mathematics/results.md](mathematics/results.md).
 
 * **Target: open.** Microscopic BGS universality for the fixed map (BGS-BGS-001) and the signed Heisenberg-scale trace estimate
-  ([TRACE-005](mathematics/open_questions.md)) are not proved. 419 claims are registered: 338 proved, 17 verification-pending,
-  21 conditional, 42 open, 1 refuted. "Proved" means a project proof at the stated scope, often computer-assisted and internally
+  ([TRACE-005](mathematics/open_questions.md)) are not proved. 438 claims are registered: 353 proved, 17 verification-pending,
+  25 conditional, 42 open, 1 refuted. "Proved" means a project proof at the stated scope, often computer-assisted and internally
   refereed, not external refereeing.
 * **Phase I (September): arithmetic and side programmes.** Cayley pair-key and energy reductions and Gaussian trace limits
   (CAYLEY-001..011), Pell/Floquet return laws (RET-001/002, FLOW-022..025), resonance cohomology (RES family) and fixed-strength
@@ -29,6 +29,43 @@ results table. The dated sections below follow newest first; the oldest phases a
   is open and **not refuted**. Theorems J, K3, W, W⁺, N3 and C′ are proved at their stated scope. The end point,
   Theorem R♯-mod v5 ([TRACE-325](mathematics/fixed-map/lineN5N18_gas_conditional.md)), is **conditional**: it reduces the failure
   of frozen R′ along m = 3p to the open inputs H0, H1 (TRACE-336) and H5–H8 (TRACE-303..306). It supersedes v4 (TRACE-299).
+* **Phase VIII (4–5 November): partial results on the open inputs of Theorem R♯-mod v5** (TRACE-337..355; 15 proved,
+  4 conditional). The span theorem for the balanced digit word (TRACE-337..341), Lemma W and an explicit H6 threshold that is
+  conditional on squarefree h_p (TRACE-342, 343), the H7* scope on a finite vertex section (TRACE-344..347), the arithmetic of h_p
+  (TRACE-348..351), and Lemma S with the polymer gap lemma, the Binet generator and a conditional H5(b) constant (TRACE-352..355).
+  H5–H8 stay open and Theorem R♯-mod v5 stays conditional.
+
+## Phase VIII: span theorem, Lemma W and H6, H7* scope, arithmetic of h_p, Lemma S, 4–5 November 2026
+
+Five integrations, each after an independent internal referee audit (not external review). Status sources:
+[claim ledger](record/claim_ledger.md) and [`record/claims.json`](record/claims.json).
+
+* **Span theorem** ([TRACE-337..339](mathematics/fixed-map/lineN_span_theorem.md), proved): for every nonzero α in Z[√2],
+  log_ε(|N(α)|/2) + 1 < span(α) < log_ε(|N(α)|/2) + 3. Lemma BI (TRACE-340, conditional on (M)) and the sharp-span Prop. K
+  crossover rows (TRACE-341, conditional on H1-bad) leave the registered crossovers 3307 / 1409 unchanged.
+* **Lemma W and H6** ([REPORT_P4_v2](computations/verification/h6_p0/REPORT_P4_v2.md)): every prime q | h_p has q ≡ ±1 (mod 2p)
+  (TRACE-342, proved). The explicit Theorem C′ threshold, p ≥ 28,424,695 for 8V and p ≥ 3,934 for 8E, holds only for p with
+  h_p squarefree (TRACE-343, **conditional**); squarefreeness is not known for any p, so H6 (TRACE-304) stays open.
+* **H7* scope** ([REPORT_H7_SCOPE](computations/verification/h7_scope/REPORT_H7_SCOPE.md)): 7 | K_p = 4h_p² + 3 (TRACE-344) and the
+  factorizations of K_p for 5 ≤ p ≤ 31 (TRACE-345) are proved. At three included levels d | K_19, K_29 the sector-0 radius exceeds
+  T′ = 1.42785 on a finite vertex section only ([CA], TRACE-346), so the per-orbit sufficient reading cannot be certified there
+  (TRACE-347). The aggregate H7* (TRACE-305) stays open; Theorem R♯-mod v5 is unaffected.
+* **Arithmetic of h_p** ([REPORT_H5_CEILING](computations/verification/h5_ceiling/REPORT_H5_CEILING.md), TRACE-348..351, proved):
+  q ≡ 1 (mod 2p) and q ≡ ±1 (mod 8); gcd(h_p, h_p′) = 1 for distinct odd primes; 2p + 1 | h_p when p ≡ 3 (mod 4) and 2p + 1 is
+  prime; a product formula for h_n. This does not move H5(a).
+* **Lemma S** ([REPORT_LEMMA_S](computations/verification/lemma_s/REPORT_LEMMA_S.md)): on a cross line of composite h_p the height
+  sum is at least √max(d₊, d₋) for every class off the axis sub-line and only √min(d₊, d₋) on it (TRACE-352); the polymer gap
+  lemma (TRACE-353) and the Binet lattice generator η_s with N(η_s) = h_p (TRACE-354) are proved. TRACE-355 (**conditional**):
+  a uniform cross-line bound |X_line| ≤ C e^{−cp} with C ≤ 1 and c ≥ 0.058 would fit the idealized room of TRACE-333 for H5(b)
+  at p = 1409 and 3307; the source's c > 0.048 was wrong.
+* **Unregistered research (not claims).** The [H5 ceiling note](evidence/research/20261105_h5_ceiling/NOTE.md) (§2–3): with the
+  best available exponent c_B = 0.7375 ([P-sketch]) H5(a) is reachable only for mixed classes with d ≤ λ^{0.2624p}, so removing
+  H5(a) as a hypothesis along a sequence of p would need infinitely many p with h_p prime or P⁻(h_p) > h_p^{0.4753}, a
+  Mersenne/Wagstaff-type question [C]; the heuristic [H] predicts infinitely many such p, at density zero. Lemma U with the open
+  decoupling step (C-U) [C] (exponent about 0.340) and the "estimate U" of the Lemma S pass (REPORT_LEMMA_S §5) are research
+  only and are not registered.
+
+H5–H8 (TRACE-303..306) stay open; Theorem R♯-mod v5 (TRACE-325) stays conditional; R′ (TRACE-206) stays open.
 
 ## Theorem R♯-mod v5, H4 met, H1 re-scoped (Lines N20, N21; referee lineN22), 1 November 2026
 
@@ -38,7 +75,7 @@ results table. The dated sections below follow newest first; the oldest phases a
 * **H4 met.** δ_true ≤ 5.0313·10⁻⁶ for all G (TRACE-326, [P] + [CA-fp]); TRACE-302 is proved, and TRACE-322 and 323 became proved.
 * **H1 re-scoped and H3 derived.** H1 is now the bad-cluster joint second moment (TRACE-336, open); Prop. K (TRACE-332, conditional)
   shows H1 implies H3. Prop. F (TRACE-329) shows that no unrestricted carry/torus bound gives H1.
-* **Crossover.** With all rate budgets and idealised additive terms, the first prime is 3307 for C ≤ 0.082 (fragile) and 1409 for
+* **Crossover.** With all rate budgets and idealized additive terms, the first prime is 3307 for C ≤ 0.082 (fragile) and 1409 for
   C ≤ 8.8·10⁻⁴ (TRACE-333, conditional on H1).
 
 R′ ([TRACE-206](mathematics/fixed-map/resonance_classification_lineG.md)) stays open.

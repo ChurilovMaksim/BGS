@@ -3,7 +3,7 @@
 **Verdict: YES.** At p=13, every genuine twist changes the second-digit
 distribution of orbit values — marginal, conditional-on-v0, and joint
 (full multiset) alike. No genuine twist is invisible to it.
-Context in one line: see [wave16_G1_f2s0.md](sandbox://workspace/bgs-breakthrough/methods/wave16_G1_f2s0.md)
+Context in one line: see [wave16_G1_f2s0.md](wave16_G1_f2s0.md)
 §5 (power sums S_r = 0 for r < L₀, S_{L₀} = L₀·f·(B−B̄), so power sums
 cannot see the twist when B is real mod p).
 
@@ -59,5 +59,5 @@ extend from power sums to the full multiset.
 
 ## Files
 
-- This note: [wave18_G1_hole_invariant.md](sandbox://workspace/bgs-breakthrough/methods/wave18_G1_hole_invariant.md)
-- Check script: [wave18_G1_hole_check.py](sandbox://workspace/bgs-breakthrough/methods/wave18_G1_hole_check.py)
+- This note: [wave18_G1_hole_invariant.md](wave18_G1_hole_invariant.md)
+- Check script: [wave18_G1_hole_check.py](wave18_G1_hole_check.py)

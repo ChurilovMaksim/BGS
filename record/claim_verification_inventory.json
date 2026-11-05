@@ -2,7 +2,7 @@
  "schema": "bgs-claim-verification-inventory-v1",
  "base_commit": "d58eeaae0c48bf37330c6858be1735cb9360dadb",
  "source": "record/claims.json",
- "source_blob_sha": "a37c917532239133fb0d47e3bbd45f78583050a8",
+ "source_blob_sha": "de07c0f1de79e83974abea6be5165966b7ff03f1",
  "generated": "2026-10-29",
  "method_enumeration": [
   "analytic_proof",
@@ -166,7 +166,7 @@
     "formalization/Bgs/CayleyEnergy.lean"
    ],
    "ledger_status": "EXACT + FINITE-DESIGN-INSTANCES",
-   "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target. Formalization coverage is finite design instances only: formalization/Bgs/CayleyEnergy.lean proves the collision energies at the five explicit designs (199,11,139), (67,11,64), (521,13,101), (53,13,10) and (461,23,23) by native_decide; it states no general (for all K) reduction of the mixed layer to additive energy and no uniform cutoff theorem in K.",
+   "boundary": "Reduces the mixed layer to additive energy; does not close the centered pointwise target. Formalization coverage is finite design instances only: formalization/Bgs/CayleyEnergy.lean proves the collision energies at the five explicit designs (199,11,139), (67,11,64), (521,13,101), (53,13,10) and (461,23,23); 19 of its 21 theorems (all checks at the four designs with K = 11 and K = 13, and the K = 23 generator, pair-count and forced-baseline checks) are kernel-checked by decide +kernel, while the K = 23 collision energy and its excess comparison still use native_decide; it states no general (for all K) reduction of the mixed layer to additive energy and no uniform cutoff theorem in K.",
    "spof": "NONE",
    "spof_detail": "no single point of failure among the inventoried layers (>=3 distinct non-analytic layers with a receipt path, and no specific ledger-admitted weakness above); this is NOT a claim of full verification, and absence of negative controls is not evidenced either way by claims.json",
    "other_weaknesses": []

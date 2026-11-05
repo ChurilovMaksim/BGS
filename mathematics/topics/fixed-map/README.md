@@ -72,6 +72,18 @@ Phase VI (Lines B–H, TRACE-143–210) and Phase VII (Lines I–N, TRACE-211–
   - Gas vs Robin crossover with all rate budgets (TRACE-333, conditional on H1); Prop. F (TRACE-329): no unrestricted carry/torus
     bound gives H1. The note title still names v4: the note is hash-pinned and its v5 update is appended inside it.
   - Frozen R′ (TRACE-206) is not refuted; it stays open.
+- **[Span theorem for the balanced digit word (Phase VIII)](../../fixed-map/lineN_span_theorem.md)** — TRACE-337–341, 4 November 2026.
+  - Theorem A, Lemma 8 and the examples (TRACE-337–339) are proved; Lemma BI (TRACE-340, conditional on (M)) and the sharp-span
+    Prop. K crossover rows (TRACE-341, conditional on H1-bad) leave the registered crossovers 3307 / 1409 unchanged.
+  - Lean: `Bgs.LineNSpanArith` (finite arithmetic only).
+- **Phase VIII results on the inputs H5–H7* (proofs in verification reports, no `fixed-map/` note)** — TRACE-342–355, 4–5 November 2026.
+  - Lemma W and the explicit H6 threshold, conditional on squarefree h_p (TRACE-342, 343):
+    [REPORT_P4_v2](../../../computations/verification/h6_p0/REPORT_P4_v2.md).
+  - H7* scope on a finite vertex section (TRACE-344–347): [REPORT_H7_SCOPE](../../../computations/verification/h7_scope/REPORT_H7_SCOPE.md).
+  - Arithmetic of h_p (TRACE-348–351): [REPORT_H5_CEILING](../../../computations/verification/h5_ceiling/REPORT_H5_CEILING.md).
+  - Lemma S, polymer gap, Binet generator and the conditional H5(b) constant (TRACE-352–355):
+    [REPORT_LEMMA_S](../../../computations/verification/lemma_s/REPORT_LEMMA_S.md).
+  - H5–H8 (TRACE-303–306) stay open; Theorem R♯-mod v5 stays conditional.
 
 ## Earlier theorem capsules (Phase V and before)
 

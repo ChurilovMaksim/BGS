@@ -4,13 +4,25 @@ The two questions behind the whole programme are open: microscopic BGS universal
 signed Heisenberg-scale trace estimate (BGS-TRACE-005, below). The sections that follow list the open inputs line by line,
 newest first; [README.md](../README.md) places them in the full programme.
 
-## Inputs of Theorem R♯-mod v5 (Lines N5–N21), 1 November 2026
+## Inputs of Theorem R♯-mod v5 (Lines N5–N21; Phase VIII progress), 5 November 2026
 
 Theorem R♯-mod v5 ([BGS-TRACE-325](fixed-map/lineN5N18_gas_conditional.md), conditional) would make frozen R′ (BGS-TRACE-206) fail along m = 3p. Its inputs that are not proved are:
 * **H1, re-scoped** ([BGS-TRACE-336](fixed-map/lineN5N18_gas_conditional.md)): the bad-cluster joint second moment on the ε-chain and the near-collision constants.
   Prop. F ([BGS-TRACE-329](fixed-map/lineN5N18_gas_conditional.md)) shows that no unrestricted carry/torus bound can give it. H3 follows from H1 (BGS-TRACE-332).
 * **H5–H8** ([BGS-TRACE-303](fixed-map/lineN5N18_gas_conditional.md)–[BGS-TRACE-306](fixed-map/lineN5N18_gas_conditional.md)): composite h_p, the inputs of Theorem C′
-  (explicit p₀ and squarefree h_p), levels other than h_p, and wrap-around points at composite h_p.
+  (explicit p₀ and squarefree h_p), levels other than h_p, and wrap-around points at composite h_p. All four stay **open**.
+  Phase VIII (4–5 November) narrowed them without closing any:
+  * H5: the arithmetic of h_p (BGS-TRACE-348..351), Lemma S, the polymer gap lemma and the Binet generator (BGS-TRACE-352..354)
+    are proved; a uniform cross-line bound |X_line| ≤ C e^{−cp} with C ≤ 1, c ≥ 0.058 would cover H5(b) at p = 1409 and 3307
+    (BGS-TRACE-355, conditional). Closing condition unchanged: the mixed classes and cross lines at composite h_p.
+  * H6: Lemma W (BGS-TRACE-342) is proved; the explicit p₀ (p ≥ 28,424,695 for 8V, p ≥ 3,934 for 8E) holds given squarefree
+    h_p (BGS-TRACE-343, conditional). Squarefreeness is not known for any p.
+  * H7*: at three included levels d | K_19, K_29 the sector-0 radius exceeds T′ on a finite vertex section (BGS-TRACE-346), so
+    the per-orbit sufficient reading cannot be certified there (BGS-TRACE-347); the aggregate H7* is open.
+  * Unregistered research (not claims): the structural ceiling for H5(a) in
+    [NOTE](../evidence/research/20261105_h5_ceiling/NOTE.md) §2–3 (c_B = 0.7375 [P-sketch]; h_p prime or
+    P⁻(h_p) > h_p^{0.4753} needed for infinitely many p, a Mersenne/Wagstaff-type question [C]), Lemma U with the open
+    decoupling step (C-U) [C], and the "estimate U" of the Lemma S pass.
 * **H0**, the standing package taken as given: proved Line F/H/I/J claims (BGS-TRACE-197, 199, 207, 212, 213, 228),
   Prop X′ (BGS-TRACE-324, verification-pending) and n_cert.
 * B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr; p_thr depends on the constant of H1 (BGS-TRACE-333, conditional).

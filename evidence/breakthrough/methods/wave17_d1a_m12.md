@@ -74,7 +74,7 @@ claimed limit value Bsym_w is wrong at m=12 in D1a/D1b form.
 
 ## Files
 
-- Script: [wave17_d1a_m12.py](sandbox://workspace/bgs-breakthrough/methods/wave17_d1a_m12.py)
-- Numbers: [wave17_d1a_m12_result.json](sandbox://workspace/bgs-breakthrough/methods/wave17_d1a_m12_result.json)
+- Script: [wave17_d1a_m12.py](wave17_d1a_m12.py)
+- Numbers: `wave17_d1a_m12_result.json` (not in repository)
 - Inputs: wave16_d1a_targeted.py, wave16_d1a_m12_phi.py (CRT machinery).
 - Repository untouched; no Lean build.

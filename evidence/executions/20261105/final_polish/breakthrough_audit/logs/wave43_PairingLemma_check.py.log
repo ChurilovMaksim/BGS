@@ -1,0 +1,11 @@
+beta mod 17 = (16, 0) (alpha^4 = -1 mod 17R: the odd sequence alternates)
+(1) genuineness: B2, Bq, Bq' all genuine: PASS
+(2) per-class marginals of A and A' exactly equal: PASS
+(3) marginal pi-set: [(0, 1, 2, 3)]
+(4) joint pi-set:    []
+(5) marg_pis ∩ joint_pis = EMPTY: Pairing Lemma refuted: PASS
+    joint class 0, A : ((0, 2), (0, 2), (0, 2), (0, 2), (4096, 15), (4096, 15), (4096, 15), (4096, 15))
+    joint class 0, A': ((0, 15), (0, 15), (0, 15), (0, 15), (4096, 2), (4096, 2), (4096, 2), (4096, 2))
+(6) global multisets equal: False -> this pair is NOT a JBL counterexample (JBL hypothesis is stronger)
+ALL CHECKS PASS
+EXIT 0 0s

@@ -2,7 +2,7 @@
 
 ## Statement
 
-As in [wave12_g3_common_pi.md](sandbox://workspace/bgs-breakthrough/methods/wave12_g3_common_pi.md)
+As in [wave12_g3_common_pi.md](wave12_g3_common_pi.md)
 §3b, restricted to m = 6, p₁ = 5, p₂ = 7 (both divide
 D₆ = 39200 = 2⁵·5²·7²). Let a (mod 5), b (mod 7) be recurrence
 sequences of length 6 (y_{j+1} = 6y_j − y_{j−1}), d₁, d₂ ∈ D₆,
@@ -43,7 +43,7 @@ Hence Π₂ = {id, swap} for every b and every d₂.
 ## Independent numerical confirmation (not part of the proof)
 
 Fresh implementation (no wave-12 code reused):
-[wave13_PC_m6.py](sandbox://workspace/bgs-breakthrough/methods/wave13_PC_m6.py)
+[wave13_PC_m6.py](wave13_PC_m6.py)
 enumerates all 25 × 49 = 1225 pairs (a, b) and all 12 × 12 pairs
 (d₁, d₂): **79 632 preserved cases, 0 bad** — reproducing wave 12's
 count exactly. The π-shapes match the proof: Π₂ is full in all

@@ -378,7 +378,7 @@ The figures below are scientific outputs of the project, not decorative README a
 
 ## How the programme developed
 
-The work ran in seven phases between September and November 2026. Each phase asked a different question about the same
+The work ran in eight phases between September and November 2026. Each phase asked a different question about the same
 target, and most of the registry comes from the first five. [README.md](../README.md) gives the full story with a results table.
 
 | Phase | Dates (2026) | Question | Typical outcome |
@@ -390,6 +390,7 @@ target, and most of the registry comes from the first five. [README.md](../READM
 | V | 28–29 Oct | What do exact arithmetic and random-phase computations show? | Abel spikes away from CUE, exact form factors at short times |
 | VI | 29–30 Oct | Lines B–H: is the fixed kick's short-time law o(m)? | Conjecture R refuted at η = 2 (BGS-TRACE-179, computer-assisted) |
 | VII | 31 Oct – 1 Nov | Lines I–N: does the corrected mean law R′ hold along m = 3p? | R′ open; conditional Theorem R♯-mod v5 (BGS-TRACE-325) |
+| VIII | 4–5 Nov | Can the open inputs H5–H7* of Theorem R♯-mod v5 be narrowed? | Span theorem; Lemma W and an explicit H6 threshold (conditional on squarefree h_p); H7* scope on a finite section; arithmetic of h_p; Lemma S; H5–H8 stay open |
 
 Conjecture R and its correction R′ (BGS-TRACE-206) concern a short-time trace statistic of a fixed diagonal kick. They test
 one ingredient that a proof of BGS-TRACE-005 would need; settling either of them would not settle BGS. The topic index for

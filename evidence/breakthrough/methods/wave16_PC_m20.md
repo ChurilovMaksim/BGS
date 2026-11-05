@@ -2,7 +2,7 @@
 
 ## Statement
 
-As in [wave12_g3_common_pi.md](sandbox://workspace/bgs-breakthrough/methods/wave12_g3_common_pi.md)
+As in [wave12_g3_common_pi.md](wave12_g3_common_pi.md)
 §3, let a (mod 41), b (mod 19) be recurrence sequences of length 20
 (y_{j+1} = 6y_j − y_{j−1}), d₁, d₂ ∈ D₂₀, d(j) = εj + k (mod 20).
 Classes O_r = {r, r+4, r+8, r+12, r+16}, r ∈ ℤ/4, t = gcd(20, 4) = 4,
@@ -50,7 +50,7 @@ order 5 mod 19, class multisets are γ-orbits (γ = α⁴), and Π₂ is
 forced full only for the zero sequence (see §4). But the theorem
 does not need the 19 side at all.
 
-## 4. Numerical confirmation (exact, [wave16_PC_m20.py](sandbox://workspace/bgs-breakthrough/methods/wave16_PC_m20.py))
+## 4. Numerical confirmation (exact, [wave16_PC_m20.py](wave16_PC_m20.py))
 
 - α⁴ ≡ β (mod 41), α⁵ = 1 (mod 41): verified.
 - All 1681 mod-41 sequences: all four class multisets equal, 0 bad.
