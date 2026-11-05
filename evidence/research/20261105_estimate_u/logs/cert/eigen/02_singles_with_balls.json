@@ -1,0 +1,222 @@
+{
+  "label": "[CA-attempt] singles activity with residual+gap Phi/psi/s balls",
+  "R_entry": 7.640035554637712e-17,
+  "R_s": 1.6279612543304008e-15,
+  "max_abs_sc_up": 2960.7778511047363,
+  "below_030209": false,
+  "below_06": false,
+  "results": [
+    {
+      "kind": "single",
+      "name": "odd",
+      "e": [
+        2,
+        0
+      ],
+      "sides": [
+        {
+          "abs_sc_up": 2477.188232421875,
+          "rad": 1751.4254722595215,
+          "tight": false
+        },
+        {
+          "abs_sc_up": 2365.0762519836426,
+          "rad": 1672.1896705627441,
+          "tight": false
+        }
+      ],
+      "abs_sc_up": 2477.188232421875
+    },
+    {
+      "kind": "single",
+      "name": "sq2",
+      "e": [
+        0,
+        2
+      ],
+      "sides": [
+        {
+          "abs_sc_up": 2517.7810707092285,
+          "rad": 1780.2170715332031,
+          "tight": false
+        },
+        {
+          "abs_sc_up": 2440.7308082580566,
+          "rad": 1725.7304191589355,
+          "tight": false
+        }
+      ],
+      "abs_sc_up": 2517.7810707092285
+    },
+    {
+      "kind": "single",
+      "name": "two",
+      "e": [
+        4,
+        0
+      ],
+      "sides": [
+        {
+          "abs_sc_up": 2300.938056945801,
+          "rad": 1626.9185180664062,
+          "tight": false
+        },
+        {
+          "abs_sc_up": 2533.4613647460938,
+          "rad": 1791.3701858520508,
+          "tight": false
+        }
+      ],
+      "abs_sc_up": 2533.4613647460938
+    },
+    {
+      "kind": "single",
+      "name": "2sq2",
+      "e": [
+        0,
+        4
+      ],
+      "sides": [
+        {
+          "abs_sc_up": 2616.7709922790527,
+          "rad": 1850.3135986328125,
+          "tight": false
+        },
+        {
+          "abs_sc_up": 2960.7778511047363,
+          "rad": 2093.5408248901367,
+          "tight": false
+        }
+      ],
+      "abs_sc_up": 2960.7778511047363
+    },
+    {
+      "kind": "single",
+      "name": "four",
+      "e": [
+        8,
+        0
+      ],
+      "sides": [
+        {
+          "abs_sc_up": 2466.9392585754395,
+          "rad": 1744.3757247924805,
+          "tight": false
+        },
+        {
+          "abs_sc_up": 2890.836582183838,
+          "rad": 2044.0981483459473,
+          "tight": false
+        }
+      ],
+      "abs_sc_up": 2890.836582183838
+    },
+    {
+      "kind": "single_eps",
+      "name": "odd",
+      "e": [
+        2,
+        2
+      ],
+      "sides": [
+        {
+          "abs_sc_up": 2365.0762329101562,
+          "rad": 1672.189655303955,
+          "tight": false
+        },
+        {
+          "abs_sc_up": 2477.1882095336914,
+          "rad": 1751.4254531860352,
+          "tight": false
+        }
+      ],
+      "abs_sc_up": 2477.1882095336914
+    },
+    {
+      "kind": "single_eps",
+      "name": "sq2",
+      "e": [
+        4,
+        2
+      ],
+      "sides": [
+        {
+          "abs_sc_up": 2440.7308235168457,
+          "rad": 1725.7304306030273,
+          "tight": false
+        },
+        {
+          "abs_sc_up": 2517.781078338623,
+          "rad": 1780.2170791625977,
+          "tight": false
+        }
+      ],
+      "abs_sc_up": 2517.781078338623
+    },
+    {
+      "kind": "single_eps",
+      "name": "two",
+      "e": [
+        4,
+        4
+      ],
+      "sides": [
+        {
+          "abs_sc_up": 2533.4612770080566,
+          "rad": 1791.3701248168945,
+          "tight": false
+        },
+        {
+          "abs_sc_up": 2300.9380493164062,
+          "rad": 1626.918514251709,
+          "tight": false
+        }
+      ],
+      "abs_sc_up": 2533.4612770080566
+    },
+    {
+      "kind": "single_eps",
+      "name": "2sq2",
+      "e": [
+        8,
+        4
+      ],
+      "sides": [
+        {
+          "abs_sc_up": 2960.7776794433594,
+          "rad": 2093.540702819824,
+          "tight": false
+        },
+        {
+          "abs_sc_up": 2616.770984649658,
+          "rad": 1850.3135948181152,
+          "tight": false
+        }
+      ],
+      "abs_sc_up": 2960.7776794433594
+    },
+    {
+      "kind": "single_eps",
+      "name": "four",
+      "e": [
+        8,
+        8
+      ],
+      "sides": [
+        {
+          "abs_sc_up": 2890.836395263672,
+          "rad": 2044.098014831543,
+          "tight": false
+        },
+        {
+          "abs_sc_up": 2466.9392585754395,
+          "rad": 1744.3757247924805,
+          "tight": false
+        }
+      ],
+      "abs_sc_up": 2890.836395263672
+    }
+  ],
+  "ref_float_exact": 0.302087097762,
+  "ball_method": "residual/gap; NOT Rump uniqueness"
+}

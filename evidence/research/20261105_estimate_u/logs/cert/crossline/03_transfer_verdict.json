@@ -1,0 +1,14 @@
+{
+  "label": "[N]+[H]",
+  "r_eff_within_048": [
+    true,
+    false
+  ],
+  "all_tested_ok": false,
+  "p11_ok": true,
+  "p13_r_eff": 0.48012,
+  "p13_barely_over_048": true,
+  "p17": "lemmaS geometric only (no |u|)",
+  "p37": "missing",
+  "interpretation": "p=11: r_eff_eps\u22480.325 \u2264 0.48 [N]. p=13: r_eff_eps\u22480.480 > 0.48 (barely) [N]. p=17: Lemma S cross separation min_pairmax/\u221aD\u22480.544 holds [N]; no polymer |z| ratio without ii data. p=37: no local logs. Transfer of certified (C0,r)=(0.302,0.472) to U_cross is NOT [CA]; numeric consistency only at p=11, marginal at p=13."
+}

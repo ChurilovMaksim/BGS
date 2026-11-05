@@ -1,0 +1,17 @@
+{
+  "label": "[CA] Nsum partition; [N] table partition",
+  "CA": {
+    "n_cells": 100001,
+    "max_local_err": 1675.4876319504,
+    "mean_weighted_err": 844.7747068010951,
+    "ok_max": false,
+    "ok_mean": false
+  },
+  "table": {
+    "n_cells": 88580,
+    "max_local_err": 0.004999233903298692,
+    "mean_weighted_err": 0.0033397274973606074,
+    "ok_max": true,
+    "ok_mean": true
+  }
+}

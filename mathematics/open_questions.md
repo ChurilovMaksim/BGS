@@ -22,7 +22,9 @@ Theorem R♯-mod v5 ([BGS-TRACE-325](fixed-map/lineN5N18_gas_conditional.md), co
   * Unregistered research (not claims): the structural ceiling for H5(a) in
     [NOTE](../evidence/research/20261105_h5_ceiling/NOTE.md) §2–3 (c_B = 0.7375 [P-sketch]; h_p prime or
     P⁻(h_p) > h_p^{0.4753} needed for infinitely many p, a Mersenne/Wagstaff-type question [C]), Lemma U with the open
-    decoupling step (C-U) [C], and the "estimate U" of the Lemma S pass.
+    decoupling step (C-U) [C], and the "estimate U" of the Lemma S pass. Its certification pass
+    ([note](../evidence/research/20261105_estimate_u/NOTE.md), evidence only) gave no new full [CA] result; the r ≤ 0.5 [CA]
+    certificate failed and 3 shorts are uncertified, so U_cross, H5(b) and H1 remain open.
 * **H0**, the standing package taken as given: proved Line F/H/I/J claims (BGS-TRACE-197, 199, 207, 212, 213, 228),
   Prop X′ (BGS-TRACE-324, verification-pending) and n_cert.
 * B_p ≥ κ > 0 for infinitely many primes p ≥ p_thr; p_thr depends on the constant of H1 (BGS-TRACE-333, conditional).

@@ -1,0 +1,15 @@
+{
+  "label": "[CA] requirements with Nsum; [N] with table Nmax",
+  "TARGET_ERR": 0.005,
+  "Lip": 167.2134,
+  "mu_S": 0.8,
+  "Nmax_CA": 8.3288,
+  "delta_need_CA": 1.795091116077557e-06,
+  "Nq_need_CA": 222830,
+  "Nmax_table": 2.8960349189924752,
+  "delta_need_table": 5.162560295643178e-06,
+  "Nq_need_table": 77481,
+  "feasible_CA": false,
+  "feasible_table_N": false,
+  "note": "Uniform mesh. Adaptive can reduce by putting larger cells where N_H small."
+}

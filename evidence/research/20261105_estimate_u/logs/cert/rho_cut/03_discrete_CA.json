@@ -1,0 +1,27 @@
+{
+  "label": "[CA] discrete grid + Pert_H enclosure (cert_core entry rads ~0 at prec64; use N13 Pert_H)",
+  "ETA": 0.05,
+  "Nq": 48,
+  "n_keep": 38,
+  "w": 0.02631578947368421,
+  "rho_mid": 0.22303697137851128,
+  "eps_res": 6.79207492297328e-17,
+  "MH_rad_op": 2.083655317954783e-34,
+  "err_K_F": 5.5207548564755455e-34,
+  "ray_rad": 3.498106005089207e-07,
+  "rho_ub": 0.2230373211891118,
+  "r_eps_ub": 0.4722682724777431,
+  "below_04723": true,
+  "below_048": true,
+  "rates_tail": [
+    0.22303697137851128,
+    0.22303697137851128,
+    0.22303697137851125,
+    0.2230369713785113,
+    0.22303697137851128
+  ],
+  "continuum_err": 32.04820080253903,
+  "continuum_certified": false,
+  "note": "Certifies rho of equal-weight average over the 38 grid twists, with MH radii from cert_core. Does NOT certify the continuum integral average (Lip mesh error too large at Nq=48).",
+  "MH_rad_op_Pert": 2.1e-08
+}

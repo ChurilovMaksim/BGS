@@ -1,0 +1,16 @@
+{
+  "statement": {
+    "estimate_U_needs": "Estimate U: |z_\u03b3| \u2264 C0 * r^{n_nr(\u03b3)} for polymers \u03b3 in the N11 class. Equivalently a block-norm form ||B||_H \u2264 r on non-resonant sites (C_gap=1). For a FIXED finite geometric seed, the polymer weight is the activity z = (\u03c8\u0303 B \u03a6)/(\u03c8\u0303 \u03a6). Bounding max|z| on that list gives the C0 piece for THAT CLASS only; it does NOT give ||B||_H for arbitrary words.",
+    "what_we_compute": "|\u03c8\u0303 B \u03a6/(\u03c8\u0303 \u03a6)| with B = product of A(d_t)/s along the coded window",
+    "suffices_for_EU": "Sufficient as C0 on the typed singles list IF (Phi,psi,s) are true eigen data and core window = true window (singles: yes). NOT sufficient as ||B||_H, NOT for shorts/uncoded, NOT for arbitrary non-res words."
+  },
+  "residual_2": 8.95377957299156e-16,
+  "R_phi_2": 1.6998006036498382e-15,
+  "R_s": 1.6279612543304008e-15,
+  "R_entry_used": 7.640035554637712e-17,
+  "singles_max_up_with_balls": 2960.7778511047363,
+  "floats_exact_ref": 0.302087097762,
+  "CA_tag_allowed": false,
+  "CA_tag_reason": "Residual+gap balls are [P]/[CA-attempt], not a validated uniqueness enclosure. Even with balls, quantity is activity not ||B||_H. Demote prior CERT [CA] on C0 to [CA-fp]/[N13-convention] activity with float-exact eigenpair.",
+  "seconds": 71.79177165031433
+}

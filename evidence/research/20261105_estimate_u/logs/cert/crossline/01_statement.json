@@ -1,0 +1,15 @@
+{
+  "label": "[P-sketch] Estimate U for cross/sub-line",
+  "statement": "Estimate U_cross: There exist C0<\u221e and r_\u03b5<1 such that every polymer \u03b3 appearing in the N11 expansion of a cross-line (or axis sub-line) point at level h_p \u2014 i.e. a defect configuration whose bump set meets the seam of the (\u03b7\u208a):(\u03b7\u208b) splitting with min(d\u208a,d\u208b) divisor data \u2014 satisfies |z_\u03b3| \u2264 C0 * r_\u03b5^{n_nr(\u03b3)}, where n_nr counts non-resonant \u03bb-sites (twist |\u03c4-b|\u2265\u03b7, \u03b7=1/20).",
+  "certified_constants_candidate": {
+    "C0": 0.3020893,
+    "r_eps": 0.47226827,
+    "source": "CERT.md coded singles + discrete rho_cut"
+  },
+  "transfer_question": "Do the same (C0,r) certified on background-0/\u00bd typed bumps also dominate cross-line seam polymers? Numerically: compare empirical |X_cross|/|X_binet| decay vs C0 * r^{seam}.",
+  "geometries": [
+    "cross line: 0\u2260c | h_p, both \u00b1 embeddings large",
+    "axis sub-line: 0\u2260c in a\u0304_{-\u03c3} (Lemma S); G\u2265\u221amin only",
+    "TRACE-350 / 2p+1: min(d\u208a,d\u208b)=2p+1"
+  ]
+}

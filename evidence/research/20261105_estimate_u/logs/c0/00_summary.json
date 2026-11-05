@@ -1,0 +1,26 @@
+{
+  "label": "mixed",
+  "plausibility": {
+    "label": "[N]+[H]",
+    "soft_room_need_C0_lt": 10,
+    "target_C0": 3,
+    "measured": {
+      "C_gap": 1.0,
+      "C_end_geo_1_16_max": 0.877828634371234,
+      "C_bump_geo_1_20_max": 1.668400175495304,
+      "C0_proxy_two_ends": 0.7705831113220657,
+      "cond_H": 21.103
+    },
+    "verdict_interaction": "N12 already claims C=1 for gaps + merged list at G0=16; delta_int=5e-7. C0~O(1) for (I) is PLAUSIBLE and essentially done at [CA-float]/pending arb replay.",
+    "verdict_Estimate_U_bumps": "Geometric bump/stay-end ops are O(1)..O(10) [N this run]. Two ends => C0_proxy ~ (C_end)^2. If C_end~2.3 then C0~5; if C_end~3 then C0~9. Target C0<=3 needs C_end<=sqrt(3)~1.73 (tighter pads / larger eta). C0<=10 is PLAUSIBLE for geometric bumps.",
+    "warning": "If Estimate U is interpreted as bounding ARBITRARY non-resonant words at rate rho_cut, then C0 is HUGE (fixed twist at t=eta has rho~0.96). The polymer scope must be geometric bumps / N11-coded types."
+  },
+  "best_kap": {
+    "kap": 0.55,
+    "cond": 16.41067437062292,
+    "norm_B": 2.5026049145428764,
+    "stay_end_1_16_L8": 5.029381152121486,
+    "ok_contraction": false
+  },
+  "seconds": 1877.529794216156
+}

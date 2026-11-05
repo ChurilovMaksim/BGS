@@ -1,0 +1,18 @@
+    5.4 building 38 MH matrices Nq=48 eta=0.05
+   15.6 MH done
+   24.9 power it=0 r=4.130477116349
+   71.0 power it=5 r=0.223031240190
+  137.1 power it=10 r=0.223036970882
+  185.2 power it=15 r=0.223036971378
+  232.6 power it=20 r=0.223036971379
+  278.5 power it=25 r=0.223036971379
+  306.4 power it=29 r=0.223036971379
+  313.0 [ckpt] /workspace/research1105c/logs/c0/rho_cut/01_phaseA_residual.json
+  313.0 Phase A: rho~0.2230369714 eps_res=5.657e-17 ub=0.2230369714 r_eps_ub=0.472268
+/workspace/research1105c/code/rho_cut_cert.py:100: ComplexWarning: Casting complex values to real discards the imaginary part
+  Yld = Y.astype(np.longdouble)
+/workspace/research1105c/code/rho_cut_cert.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  MHs_ld = [M.astype(np.longdouble) for M in MHs]
+  363.9 [ckpt] /workspace/research1105c/logs/c0/rho_cut/02_longdouble.json
+  363.9 longdouble ray=0.233258241843 eps=8.881e-02
+  363.9 Phase B: interval residual with explicit float-MH radii

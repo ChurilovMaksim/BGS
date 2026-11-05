@@ -63,7 +63,11 @@ Five integrations, each after an independent internal referee audit (not externa
   H5(a) as a hypothesis along a sequence of p would need infinitely many p with h_p prime or P⁻(h_p) > h_p^{0.4753}, a
   Mersenne/Wagstaff-type question [C]; the heuristic [H] predicts infinitely many such p, at density zero. Lemma U with the open
   decoupling step (C-U) [C] (exponent about 0.340) and the "estimate U" of the Lemma S pass (REPORT_LEMMA_S §5) are research
-  only and are not registered.
+  only and are not registered. The [Estimate U certification pass](evidence/research/20261105_estimate_u/NOTE.md) (evidence
+  only) produced no new full [CA] result: singles activity ≤ 0.30209 and all 1350 coded pairs ≤ 0.09375 [CA-fp]/N13-conv
+  (inputs in float, not fully enclosed); r_ε ≈ 0.474 [N] (Fourier) and ≤ 0.572 [N] (HS majorant), against a soft room of
+  r < 0.600 at p = 1409 and r < 0.527 at p = 3307; the r ≤ 0.5 [CA] certificate failed and 3 shorts are uncertified.
+  U_cross, H5(b) and H1 remain open.
 
 H5–H8 (TRACE-303..306) stay open; Theorem R♯-mod v5 (TRACE-325) stays conditional; R′ (TRACE-206) stays open.
 

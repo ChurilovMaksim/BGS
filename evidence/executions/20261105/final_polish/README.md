@@ -84,5 +84,8 @@ differs from the one used on 1 November.
 * The 23 remaining broken links in hash-pinned files.
 * Chapter order of the manuscript; no new manuscript section for Phase VIII (its `manuscript` registry fields stay empty).
 * The content of draft PRs #83 and #85 beyond what main already integrated; PR #84's SevenPrimary/FORMAL-003 change.
-* Estimate U: only the "unregistered research" wording; nothing registered.
+* Estimate U: added as an evidence-only research note, `evidence/research/20261105_estimate_u/` (verbatim copies of
+  REPORT, BRIDGED, C0, CERT and REFEREE_CERT, small text/JSON logs under ~0.3 MB, and NOTE.md); large binaries and code
+  are not copied. It produced no new full [CA] result, so nothing is registered, and the README frontier wording uses the
+  tags of NOTE.md.
 * No tag, release or Zenodo record is created here.

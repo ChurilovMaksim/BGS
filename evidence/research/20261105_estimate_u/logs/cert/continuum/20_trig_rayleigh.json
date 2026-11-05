@@ -1,0 +1,32 @@
+{
+  "label": "[N] trig-poly exact integral (float); pad not full arb [CA]",
+  "rho_trig": 4.108426486450199,
+  "imag_leak": 1.9184584149778382e-18,
+  "pad": 1.7594391417582601e-06,
+  "rho_ub": 4.108428245889341,
+  "r_eps": 2.0269258116392272,
+  "below_048": false,
+  "below_0473": false,
+  "ray_sample_N": 4.1091463678709,
+  "n_sample": 3200,
+  "hat0": 3.6077236096907535,
+  "Kmax": 60,
+  "mu_S": 0.8,
+  "disc_Nq128": {
+    "Nq": 128,
+    "n_keep": 102,
+    "delta": 0.00390625,
+    "rho_mid": 0.22435252778215248,
+    "rho_disc_ub": 0.22435287759175296,
+    "r_eps_disc": 0.47365903094077383,
+    "err_mesh_CA": 11.307007563638305,
+    "err_mesh_table": 4.209889433977809,
+    "rho_cont_ub_CA": 11.531360441230058,
+    "rho_cont_ub_table": 4.4342423115695615,
+    "r_eps_cont_CA": 3.3957856883540307,
+    "r_eps_cont_table": 2.105764068353708,
+    "below_048_CA": false,
+    "below_048_table": false
+  },
+  "note": "Trig integral is exact for the Galerkin MH; float rounding + Pert pad. Full [CA] needs arb Gram / coeff enclosure. Soft target r_eps<=0.48."
+}

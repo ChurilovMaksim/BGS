@@ -1,0 +1,46 @@
+{
+  "label": "[N]/[CA-attempt] continuum ||MH||_ub via Lip ball on midpoints",
+  "n_intervals": 64,
+  "max_r_ub": 1.9897405522015466,
+  "below_048": false,
+  "below_1": false,
+  "note": "Lipschitz ball around float MH(mid). ||MH||_ub >> 0.48 typically (N_H~1..3). This is an honest majorant of per-step op-norm, NOT the second-moment \u03c1(K). Full [CA] needs arb MH(mid) + certified Lip.",
+  "sample": [
+    {
+      "lo": -0.45,
+      "hi": -0.4375,
+      "mid": -0.44375,
+      "delta": 0.0062500000000000056,
+      "op2_mid": 0.28113797166795385,
+      "op2_ub": 1.3262217426679548,
+      "r_ub": 1.3262217426679548
+    },
+    {
+      "lo": -0.4375,
+      "hi": -0.425,
+      "mid": -0.43125,
+      "delta": 0.0062500000000000056,
+      "op2_mid": 0.28933034944431457,
+      "op2_ub": 1.3344141204443156,
+      "r_ub": 1.3344141204443156
+    },
+    {
+      "lo": -0.425,
+      "hi": -0.4125,
+      "mid": -0.41874999999999996,
+      "delta": 0.0062500000000000056,
+      "op2_mid": 0.3180885681236228,
+      "op2_ub": 1.3631723391236237,
+      "r_ub": 1.3631723391236237
+    },
+    {
+      "lo": 0.05,
+      "hi": 0.0625,
+      "mid": 0.05625,
+      "delta": 0.006249999999999999,
+      "op2_mid": 0.944656781201546,
+      "op2_ub": 1.9897405522015457,
+      "r_ub": 1.9897405522015457
+    }
+  ]
+}

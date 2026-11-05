@@ -1,0 +1,168 @@
+{
+  "statement": "Estimate U_cross: There exist C0<\u221e and r_\u03b5<1 such that every polymer \u03b3 appearing in the N11 expansion of a cross-line (or axis sub-line) point at level h_p \u2014 i.e. a defect configuration whose bump set meets the seam of the (\u03b7\u208a):(\u03b7\u208b) splitting with min(d\u208a,d\u208b) divisor data \u2014 satisfies |z_\u03b3| \u2264 C0 * r_\u03b5^{n_nr(\u03b3)}, where n_nr counts non-resonant \u03bb-sites (twist |\u03c4-b|\u2265\u03b7, \u03b7=1/20).",
+  "numeric": [
+    {
+      "p": 11,
+      "source": "seam_profile",
+      "max_c": 2.2444127069722172e-07,
+      "max_b": 0.0003955805607348501,
+      "D": 353,
+      "seam_loglam_D": 3.3280257902732098,
+      "ratio": 0.0005673718402145153,
+      "pred_ratio_CA": 0.0020488915734723947,
+      "pred_ratio_shortC0": 0.003539234571429064,
+      "ratio_below_pred_CA": true,
+      "r_eff_eps": 0.3253146531961645,
+      "r_eff_below_0473": true,
+      "r_eff_below_048": true,
+      "lemmaS_keys": "list:4",
+      "lemmaS_sample": {
+        "p": 11,
+        "signs": [
+          -1,
+          1
+        ],
+        "kind": "cross",
+        "D": 353,
+        "min_pairmax": 15.242640687119092,
+        "ratio_to_sqrtD": 0.8112839038020686,
+        "argc": 81,
+        "min_pairmax_nonprim": 6.414213562372993,
+        "frac_pairmax_lt_10": 0.0
+      }
+    },
+    {
+      "p": 13,
+      "source": "seam_profile",
+      "max_c": 1.9274037082805393e-06,
+      "max_b": 0.00039545410857070863,
+      "D": 599,
+      "seam_loglam_D": 3.62800842474852,
+      "ratio": 0.004873899819240119,
+      "pred_ratio_CA": 0.001306301882811388,
+      "pred_ratio_shortC0": 0.0022564926539931584,
+      "ratio_below_pred_CA": true,
+      "r_eff_eps": 0.48012119406480724,
+      "r_eff_below_0473": false,
+      "r_eff_below_048": false,
+      "lemmaS_keys": "list:4",
+      "lemmaS_sample": {
+        "p": 13,
+        "signs": [
+          -1,
+          1
+        ],
+        "kind": "cross",
+        "D": 599,
+        "min_pairmax": 21.798989873219398,
+        "ratio_to_sqrtD": 0.8906825799641658,
+        "argc": 1394,
+        "min_pairmax_nonprim": 10.414213562373334,
+        "frac_pairmax_lt_10": 0.0
+      }
+    },
+    {
+      "p": 17,
+      "source": "lemmaS_only_no_absu",
+      "cross": [
+        {
+          "p": 17,
+          "signs": [
+            1,
+            -1
+          ],
+          "kind": "cross",
+          "D": 15607,
+          "min_pairmax": 68.0,
+          "ratio_to_sqrtD": 0.5443136149893782,
+          "argc": 68,
+          "min_pairmax_nonprim": 15.242640687152743,
+          "frac_pairmax_lt_10": 0.0,
+          "source": "lemmaS",
+          "seam_loglam_D": 5.4775154104592305,
+          "lemmaS_ok": true
+        },
+        {
+          "p": 17,
+          "signs": [
+            -1,
+            1
+          ],
+          "kind": "cross",
+          "D": 15607,
+          "min_pairmax": 68.0,
+          "ratio_to_sqrtD": 0.5443136149893782,
+          "argc": 68,
+          "min_pairmax_nonprim": 15.242640687152743,
+          "frac_pairmax_lt_10": 0.0,
+          "source": "lemmaS",
+          "seam_loglam_D": 5.4775154104592305,
+          "lemmaS_ok": true
+        }
+      ],
+      "binet": [
+        {
+          "p": 17,
+          "signs": [
+            1,
+            1
+          ],
+          "kind": "binet",
+          "D": 1607521,
+          "min_pairmax": 1.0,
+          "ratio_to_sqrtD": 0.0007887178549301192,
+          "argc": 1,
+          "min_pairmax_nonprim": 15.242640687152743,
+          "frac_pairmax_lt_10": 0.0008970908624887864,
+          "source": "lemmaS",
+          "seam_loglam_D": 8.106780149321247,
+          "lemmaS_ok": null
+        },
+        {
+          "p": 17,
+          "signs": [
+            -1,
+            -1
+          ],
+          "kind": "binet",
+          "D": 1607521,
+          "min_pairmax": 1.0,
+          "ratio_to_sqrtD": 0.0007887178549301192,
+          "argc": 1,
+          "min_pairmax_nonprim": 15.242640687094536,
+          "frac_pairmax_lt_10": 0.0008970908624887864,
+          "source": "lemmaS",
+          "seam_loglam_D": 8.106780149321247,
+          "lemmaS_ok": null
+        }
+      ],
+      "note": "No seam_profile_p17 (missing *_ii.npz); cannot compute empirical |u| ratio / r_eff. Lemma S geometric: cross min_pairmax/\u221aD \u2248 0.54 \u2265 0.4 [N].",
+      "lemmaS_cross_ratio_to_sqrtD": 0.5443136149893782,
+      "status": "partial_lemmaS"
+    },
+    {
+      "p": 37,
+      "status": "no_seam_profile"
+    },
+    {
+      "p": 37,
+      "status": "no_data",
+      "note": "No lemmaS_p37 / seam_profile_p37 / ii.npz in research1105b logs."
+    }
+  ],
+  "transfer": {
+    "label": "[N]+[H]",
+    "r_eff_within_048": [
+      true,
+      false
+    ],
+    "all_tested_ok": false,
+    "p11_ok": true,
+    "p13_r_eff": 0.48012,
+    "p13_barely_over_048": true,
+    "p17": "lemmaS geometric only (no |u|)",
+    "p37": "missing",
+    "interpretation": "p=11: r_eff_eps\u22480.325 \u2264 0.48 [N]. p=13: r_eff_eps\u22480.480 > 0.48 (barely) [N]. p=17: Lemma S cross separation min_pairmax/\u221aD\u22480.544 holds [N]; no polymer |z| ratio without ii data. p=37: no local logs. Transfer of certified (C0,r)=(0.302,0.472) to U_cross is NOT [CA]; numeric consistency only at p=11, marginal at p=13."
+  },
+  "seconds": 0.0007092952728271484
+}

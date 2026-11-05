@@ -1,0 +1,66 @@
+{
+  "label": "[N]",
+  "per_eta": {
+    "0.05": {
+      "eta": 0.05,
+      "n_ckpt": 10,
+      "max_NH_ckpt": 2.871669,
+      "max_rho_ckpt": 0.955768,
+      "max_trans1": 5.314539491960185,
+      "max_NH_table": 2.8959598989685196,
+      "min_NH_table": 1.4436223010307074,
+      "note": "max rho at eta=1/20 is ~0.96 (near resonant edge); not the Estimate U rate"
+    },
+    "0.0625": {
+      "eta": 0.0625,
+      "n_ckpt": 8,
+      "max_NH_ckpt": 2.871669,
+      "max_rho_ckpt": 0.843939,
+      "max_trans1": 4.922997272170573,
+      "max_NH_table": 2.8959598989685196,
+      "min_NH_table": 1.4436223010307074,
+      "note": "max rho at eta=1/20 is ~0.96 (near resonant edge); not the Estimate U rate"
+    },
+    "0.08333333333333333": {
+      "eta": 0.08333333333333333,
+      "n_ckpt": 8,
+      "max_NH_ckpt": 2.871669,
+      "max_rho_ckpt": 0.843939,
+      "max_trans1": 4.922997272170573,
+      "max_NH_table": 2.8959598989685196,
+      "min_NH_table": 1.4436223010307074,
+      "note": "max rho at eta=1/20 is ~0.96 (near resonant edge); not the Estimate U rate"
+    },
+    "0.1": {
+      "eta": 0.1,
+      "n_ckpt": 8,
+      "max_NH_ckpt": 2.871669,
+      "max_rho_ckpt": 0.843939,
+      "max_trans1": 4.922997272170573,
+      "max_NH_table": 2.8959598989685196,
+      "min_NH_table": 1.4436223010307074,
+      "note": "max rho at eta=1/20 is ~0.96 (near resonant edge); not the Estimate U rate"
+    },
+    "0.125": {
+      "eta": 0.125,
+      "n_ckpt": 6,
+      "max_NH_ckpt": 2.871669,
+      "max_rho_ckpt": 0.776367,
+      "max_trans1": 4.922997272170573,
+      "max_NH_table": 2.8959598989685196,
+      "min_NH_table": 1.4637997120554411,
+      "note": "max rho at eta=1/20 is ~0.96 (near resonant edge); not the Estimate U rate"
+    },
+    "0.16666666666666666": {
+      "eta": 0.16666666666666666,
+      "n_ckpt": 3,
+      "max_NH_ckpt": 2.622958,
+      "max_rho_ckpt": 0.575232,
+      "max_trans1": 4.922997272170573,
+      "max_NH_table": 2.8418644203206522,
+      "min_NH_table": 1.609651120936732,
+      "note": "max rho at eta=1/20 is ~0.96 (near resonant edge); not the Estimate U rate"
+    }
+  },
+  "ckpt01_note": "from logs/ckpt/01_power_rates.json"
+}
