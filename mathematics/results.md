@@ -588,7 +588,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**426 registered claims: 342 proved, 17 verification-pending, 24 conditional, 42 open, 1 refuted.**
+**430 registered claims: 346 proved, 17 verification-pending, 24 conditional, 42 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -754,7 +754,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (317 claims)
+### TRACE family (321 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -1075,5 +1075,9 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-341` | **CONDITIONAL** | Sharp-span Prop. K crossover rows [P-arith], conditional on H1-bad: bare-activity majorant 3299 -> 3067 at C = 0.082, J0 = 12 (interplay not charged); with Lemma BI (conditional on (M)) 3389 at the minimal KP weight / 3407 at the x1.02 iterate; 1409 at C = 8.8e-4 unchanged; registered 3307 / 1409 unchanged |
 | `BGS-TRACE-342` | **PROVED** | Lemma W [P]: for odd primes p and q with q \| h_p = (eps^p + epsbar^p)/2, eps = 1 + sqrt2: q = +-1 (mod 2p); hence p does not divide h_p, the j-th smallest prime factor of h_p is >= pj - 1, and omega(h_p) <= w_max(p) := max{w : (p-1)^w w! <= eps^p} |
 | `BGS-TRACE-343` | **CONDITIONAL** | H6 / Theorem C' explicit threshold [P + CA, mod inherited N4 Lambda, kappa_F and N2 r_2; given h_p squarefree and the torus normalisation u = 1]: for 8V (k = 4000) the unit-point cross part at c = h_p is < T^{3p} = 1.28359^{3p} for every prime p >= 28,424,695 with h_p squarefree; for 8E (k = 1000) for p >= 3,934 |
+| `BGS-TRACE-344` | **PROVED** | H7* arithmetic [P]: for every prime p >= 5, 7 \| K_p = 4 h_p^2 + 3 and 7 does not divide h_p; gcd(h_p, K_p) = 1; every prime factor of K_p is = 1 (mod 3) |
+| `BGS-TRACE-345` | **PROVED** | H7* included K_p-levels [P, finite, exact integers]: complete factorisations of K_p for primes 5 <= p <= 31; the conductors 3437426497, 24061985479 \| K_19 and 2735635252619983 \| K_29 are coprime to h_p with floor(h_{3p}/d^2) = 278, 5, 133 (included by TRACE-273), ord_d(lambda) = 3p; d = 4663 \| K_7 is included (4663^2 <= h_21, order 21) |
+| `BGS-TRACE-346` | **PROVED** | H7* crossings on the finite vertex section [CA, finite section only]: on the TRACE-223 multi-disc vertex operator compressed to \|c\| <= 3, 40 modes, \|n\| <= 16, the sector-0 per-step spectral radius of one lambda-orbit exceeds T' = 1.42785 at d = 3437426497 (>= 1.4587724663), 24061985479 (>= 1.5119805975) and 2735635252619983 (>= 1.4686852948); edge comparison and trace-vs-radius are numerical only; the untruncated operator is not claimed |
+| `BGS-TRACE-347` | **PROVED** | H7* scope note [P on TRACE-346; no state change]: the per-orbit sufficient reading of H7* (growth < T') cannot be certified on the finite vertex section at the three included levels d \| K_19, K_29; the aggregate H7* (TRACE-305) stays open; Theorem R#-mod v5 (TRACE-325) is unaffected (hypotheses needed at infinitely many primes; p_thr >= 1409 > 29); 18 included conductors remain unsearched |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

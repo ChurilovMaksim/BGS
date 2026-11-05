@@ -1,5 +1,21 @@
 # Scientific changelog
 
+## 2026-11-05 — H7* scope integration (BGS-TRACE-344..347 proved; no existing state changed)
+
+Integration of the referee-confirmed H7* results of draft PR #85 (`research-grok46-1104`, `b8e91215`) after a hostile referee audit
+([REPORT_H7_SCOPE](computations/verification/h7_scope/REPORT_H7_SCOPE.md), [audit](evidence/executions/20261105/h7_scope/referee/AUDIT.md),
+[receipt](evidence/executions/20261105/h7_scope/receipt.json)). BGS-TRACE-344 [P]: 7 | K_p and 7 ∤ h_p for every prime p ≥ 5,
+gcd(h_p, K_p) = 1, every prime factor of K_p ≡ 1 (mod 3) (exact check p < 2000). BGS-TRACE-345 [P, finite]: K_p factorisations for
+5 ≤ p ≤ 31 and the inclusion facts of the three crossing conductors (and of d = 4663 at p = 7). BGS-TRACE-346 [CA, finite vertex
+section only]: sector-0 spectral radii above T′ = 1.42785 at d = 3437426497, 24061985479, 2735635252619983, with the referee's
+independent Krawczyk re-enclosure and the level-7 calibration against TRACE-223; edge comparison and trace-vs-radius are [N], the
+untruncated operator is not claimed. BGS-TRACE-347: scope note — the per-orbit sufficient reading of H7* fails on that section,
+the aggregate H7* (TRACE-305) stays open, Theorem R♯-mod v5 (TRACE-325) is unaffected, 18 included conductors remain unsearched.
+TRACE-305 and TRACE-325 are not edited. All referee fixes applied (q = 2 clause, 4663, eighteen, vertex-only wording, TRACE-325
+attribution, arb error sums in `newton_enclose`, relative paths, assertion guards); the certificates were rerun. New Lean module
+`Bgs.H7KpArith` (7 theorems, `decide +kernel`, no `sorry`, no `native_decide`; built alone). Metadata snapshot
+`registry_metadata_20261105_h7scope.json` (transitive impact sets only).
+
 ## 2026-11-04 — H6 explicit p0 and Lemma W (BGS-TRACE-342 proved, BGS-TRACE-343 conditional)
 
 P4 v2 after the referee audit ([REPORT_P4_v2](computations/verification/h6_p0/REPORT_P4_v2.md),

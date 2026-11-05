@@ -1,0 +1,212 @@
+{
+ "schema": "bgs-h7-scope-integration-receipt-v1",
+ "base": "ChurilovMaksim/BGS origin/main 5d67f21c",
+ "branch": "h7-scope-integration",
+ "prepared_on": "2026-11-05",
+ "source": "draft PR #85, branch research-grok46-1104, commit b8e91215, evidence/research/20261104_grok47/ (proofs h7_h8.md, h7_rates.md, h7_multidisc.md, h7_scope.md; code; logs); original HASHES.txt kept as computations/verification/h7_scope/logs/pr85_HASHES.txt",
+ "ids": {
+  "BGS-TRACE-344": "proved",
+  "BGS-TRACE-345": "proved",
+  "BGS-TRACE-346": "proved",
+  "BGS-TRACE-347": "proved"
+ },
+ "next_free_id_check": "origin/main 5d67f21c ends at BGS-TRACE-343; open PR branches #83, #84, #85 register no id >= 344",
+ "unchanged_claims": {
+  "BGS-TRACE-305": "open (not edited; no amendment entry needed)",
+  "BGS-TRACE-325": "conditional (not edited)",
+  "BGS-TRACE-206": "open"
+ },
+ "referee": "evidence/executions/20261105/h7_scope/referee/AUDIT.md (hostile referee, 2026-11-05; nothing WRONG)",
+ "referee_fixes_applied": [
+  "1b: Lemma 3 excludes q = 2 (K_p odd)",
+  "2d: d = 4663 at p = 7 (included, order 21, not searched); eighteen open conductors",
+  "3c: newton_enclose error sums in arb; directed one-ulp float conversion",
+  "4a: vertex-only wording; edge and trace-vs-radius [N]",
+  "4c: TRACE-325 attribution; hypotheses needed at infinitely many primes; p_thr >= 1409 > 29",
+  "4d: (i)-(iii)",
+  "reproducibility: hard-coded /workspace sys.path replaced by file-relative paths (author code and referee krawczyk.py); __debug__ guard in every script"
+ ],
+ "reruns": {
+  "python": "3.13.5, python-flint 0.9.0 (arb), sympy 1.14.0, mpmath 1.3.0, numpy 2.3.5, scipy 1.17.0; OPENBLAS_NUM_THREADS=OMP_NUM_THREADS=1; 1 CPU",
+  "kp_arith": {
+   "command": "python computations/verification/h7_scope/code/kp_arith.py",
+   "primes_checked_5_to_1999": 301,
+   "orders_3p": 24
+  },
+  "h7h8": {
+   "command": "python computations/verification/h7_scope/code/h7h8.py",
+   "log_identical_to_pr85": true
+  },
+  "h7_rates_self_test": {
+   "command": "python computations/verification/h7_scope/code/h7_rates.py self-test",
+   "log": "computations/verification/h7_scope/logs/rerun/h7_rates_self_test.out",
+   "passed": true
+  },
+  "h7_rates_enclose": {
+   "command": "python computations/verification/h7_scope/code/h7_rates.py enclose --d D --bx BX --by BY --sectors 0 --squares 4 --out computations/verification/h7_scope/logs/rerun/orbit_D.json",
+   "logs": "computations/verification/h7_scope/logs/rerun/orbit_*.json"
+  },
+  "h7_multidisc_enclose": {
+   "command": "python computations/verification/h7_scope/code/h7_multidisc_cert.py enclose",
+   "log": "computations/verification/h7_scope/logs/h7_multidisc_enclose.json",
+   "pr85_log": "computations/verification/h7_scope/logs/pr85_original/h7_multidisc_enclose.json",
+   "orbits": {
+    "level7_2_1": {
+     "lo": 1.2835951329030864,
+     "hi": 1.2835951329030906,
+     "h": 1.1778081444211548e-14,
+     "error_sums": "arb"
+    },
+    "level7_1_3": {
+     "lo": 1.2837142953109733,
+     "hi": 1.2837142953109817,
+     "h": 3.108871742826001e-14,
+     "error_sums": "arb"
+    },
+    "d3437426497": {
+     "lo": 1.4587724663901533,
+     "hi": 1.4587724663901547,
+     "h": 1.0113209160457644e-14,
+     "error_sums": "arb"
+    },
+    "d24061985479": {
+     "lo": 1.511980597518887,
+     "hi": 1.5119805975188885,
+     "h": 1.7907620264039727e-14,
+     "error_sums": "arb"
+    },
+    "d2735635252619983": {
+     "lo": 1.4686852948918225,
+     "hi": 1.468685294891824,
+     "h": 1.3679015035337921e-14,
+     "error_sums": "arb"
+    }
+   },
+   "tail_eps_hi": 9.646772214969685e-05,
+   "all_crossings_above_Tprime": true
+  },
+  "referee_krawczyk": {
+   "command": "python evidence/executions/20261105/h7_scope/referee/mine/krawczyk.py l7_21 l7_13 l7_01; ... d34",
+   "audit_run_logs": "evidence/executions/20261105/h7_scope/referee/mine/audit_run/",
+   "d3437426497": [
+    1.458772466390154,
+    1.4587724663901542
+   ],
+   "level7": {
+    "level7_2_1": [
+     1.2835951321514953,
+     1.2835951336546816
+    ],
+    "level7_1_3": [
+     1.2837142951987817,
+     1.2837142954231733
+    ],
+    "level7_0_1": [
+     1.2624306303209034,
+     1.2624306304893154
+    ]
+   }
+  },
+  "referee_ints": {
+   "commands": [
+    "python evidence/executions/20261105/h7_scope/referee/ints.py",
+    "python evidence/executions/20261105/h7_scope/referee/ints2.py"
+   ],
+   "logs": [
+    "evidence/executions/20261105/h7_scope/referee/ints.out",
+    "evidence/executions/20261105/h7_scope/referee/ints2.out"
+   ]
+  }
+ },
+ "not_rerun": "h7_rates.py survey/certify/wide/rays/rays-ext/rays-deep/climb and h7_multidisc.py float scans: logs are the PR #85 runs (code bytes differ only by the assertion guard, relative paths, the 4663 comment/constant/self-test and the arb error sums in newton_enclose)",
+ "lean": {
+  "files": [
+   "formalization/Bgs/H7KpArith.lean"
+  ],
+  "theorems": 7,
+  "sorry": false,
+  "native_decide": false,
+  "axioms": "none, except propext for seven_dvd_K_5 and seven_dvd_K_31 (Nat dvd decidability)",
+  "build": "evidence/executions/20261105/h7_scope/lake_build_H7KpArith.log",
+  "scope": "one build: lake build Bgs.H7KpArith (2 jobs), packages linked to /workspace/lineNgas/repo/formalization/.lake/packages; no new Mathlib cache; no full Bgs build"
+ },
+ "metadata_snapshot": "evidence/source_metadata/registry_metadata_20261105_h7scope.json (transitive impact sets of 9 records gain BGS-TRACE-347 only)",
+ "checks": "evidence/executions/20261105/h7_scope/checks/",
+ "sha256": {
+  "computations/verification/h7_scope/REPORT_H7_SCOPE.md": "ef8725c5d77a4bf35a87def1410cd3cdf377976d14277f0011a3da1a7c574662",
+  "computations/verification/h7_scope/code/h7_multidisc.py": "8ad050fe7cd1cabfe6e0797766944e276f278b711e9d730f64df9e3415d3bef3",
+  "computations/verification/h7_scope/code/h7_multidisc_cert.py": "1f0f0fae8518cecc1c275f2811f3d2421ac51492c1f91de5fc4fd1d86b87fd59",
+  "computations/verification/h7_scope/code/h7_rates.py": "3e18eca954388f06408189da914cfc9b50308d267d3662489a2d312b8d37ac81",
+  "computations/verification/h7_scope/code/h7h8.py": "05a4ed3d34f8a33c13538d7137ec65e4e9469a64ecd890749839266e719ccedf",
+  "computations/verification/h7_scope/code/kp_arith.py": "fc64b0bdf66f2d473d22d5cff05b051a3ec10eab680011fc886d71d00724a8ef",
+  "computations/verification/h7_scope/logs/h7_multidisc_calibrate.json": "2cdd3983ba0d52b6bc9896eebc19df156aaafda7c3d10950fb95075b850dfd73",
+  "computations/verification/h7_scope/logs/h7_multidisc_edge.json": "fb560dee584f2d0fcf2fb97f85cf8568d9e01044a78e9ae210789f058913a881",
+  "computations/verification/h7_scope/logs/h7_multidisc_enclose.json": "36c5f29769883ad5aa0bf17cbac3b414e03879f0e8365813530c89bd0e5eb489",
+  "computations/verification/h7_scope/logs/h7_multidisc_orbits.json": "b8abea2f38e968e41186702c30f2ee91dd8df83e79393347e398ba221731c816",
+  "computations/verification/h7_scope/logs/h7_rates_climb.json": "05a0398af28f4dae06810240ee35feb06d499edd865ebb8dde10a1c244330d57",
+  "computations/verification/h7_scope/logs/h7_rates_mu.json": "699f98cadf0733dfeb0a5e315fb14d1595e7850038a47170940b7f8591bd2f20",
+  "computations/verification/h7_scope/logs/h7_rates_probes.json": "cedc3467bd32d3a488bc11e2184e0e074762cc6dcd43b6c750c460315c12c680",
+  "computations/verification/h7_scope/logs/h7_rates_rays.json": "85fc48481608c02e1edaf58b1d7810cb0a2a98fe1f03e58dbdc44158df7f48a7",
+  "computations/verification/h7_scope/logs/h7_rates_rays_deep.json": "2a97e1117babeacf244e7682f4db38c0b6829e42a08c5547bc981cda009f9744",
+  "computations/verification/h7_scope/logs/h7_rates_rays_ext.json": "be6f77ecdb203d78e56ce968914fee9d92a221e57734828c8efce713d6a6d8fb",
+  "computations/verification/h7_scope/logs/h7_rates_survey.json": "f500676910839d2d106fd5cee3b5a823403987b2732af686e4d578031c9a9085",
+  "computations/verification/h7_scope/logs/h7_rates_wide.json": "c071555003db845a90a7797ff101f528501c0bf3dbbd78976f68a42702ede440",
+  "computations/verification/h7_scope/logs/h7h8.json": "0403092ca1f8bf362b8593ebc6cc5d13439b12b9eae09c35565a8607906fc532",
+  "computations/verification/h7_scope/logs/kp_arith.json": "bbb22176030e778e33549308ac076e02d0c0c2755482090cd6d963d684c3ded6",
+  "computations/verification/h7_scope/logs/kp_arith.out": "51b9441444e700c5e84933b04d40f674cae71bac73a3a86eb45c3a922b449628",
+  "computations/verification/h7_scope/logs/parts/d217_0_109.json": "790ea8aad0e3a10082358ea24452b5ff9b02b8af155bf849aae8b0101418fbe2",
+  "computations/verification/h7_scope/logs/parts/d217_109_217.json": "750cac4eafafc5526838d5cff1b87203e83ef089a1563537e3acfddc554a87d6",
+  "computations/verification/h7_scope/logs/parts/d31.json": "3e9e9091e06683d6d1dfde46e2945a17aa610d6a747b589a9627d444e53678ed",
+  "computations/verification/h7_scope/logs/parts/d49.json": "90f69d4cc7560b2afc1cbcdb6a959fa4121991b1fefead0548d0c36b1d07ba47",
+  "computations/verification/h7_scope/logs/parts/orbit_217_62_31.json": "26ea8e7a74d5e7085de894582d3be2ed63bbf308b6eaaf67d63bc0033a77cc93",
+  "computations/verification/h7_scope/logs/parts/orbit_24061985479_227.json": "22dae2194e9baaa22468a83c4814690af2f42f33f3dd13b401e76264f32e41b9",
+  "computations/verification/h7_scope/logs/parts/orbit_2735635252619983_m89_0.json": "7deb53a845ff3d8084514d502d7de4701754d22c6c1fc094ac392d38cc90aacf",
+  "computations/verification/h7_scope/logs/parts/orbit_31_0_10.json": "429216ca645a0533833042d095616a260038385544a84de5aaaaa2bb2fc3c229",
+  "computations/verification/h7_scope/logs/parts/orbit_31_1_9.json": "324725fbeb881f69fc328f5d8298d19f44a6e0ed3f6bca33986e0a4b78e04fb7",
+  "computations/verification/h7_scope/logs/parts/orbit_31_1_9_final.json": "527d36b9f1f9126ff34fa77c7ca6f5508ac298ca2c6997edfa22d37bab1b2065",
+  "computations/verification/h7_scope/logs/parts/orbit_3437426497_m208_0.json": "12239091d4f43f7b20b15546dbdde11bbaafaa42c1e66812351be4597b7cb7e0",
+  "computations/verification/h7_scope/logs/parts/orbit_3437426497_m27_0.json": "cda0fa06b4b2afc806c41354c93e1d276b2d19dfcc53669205fc674993e9463c",
+  "computations/verification/h7_scope/logs/parts/orbit_390805036088569_0_m321.json": "a0c99fb1e18c23bdc0c80c831c02fbdbf470f40c52da26448deca4c316cf32e9",
+  "computations/verification/h7_scope/logs/parts/orbit_457_0_3.json": "a9fef5c604b7f5ac7e21da0ea5d0ae1093e1478c9c9d4361ea08b34f4d831e7c",
+  "computations/verification/h7_scope/logs/parts/orbit_49_14_42.json": "ca545dd8465f3bc8346adc9e168f85c0ceadc26c9bc7be643145fde4bfbec419",
+  "computations/verification/h7_scope/logs/pr85_HASHES.txt": "c26bc3e6e358a3b87917ed8415f186eddea1e723cc1a3a020671e6d2a5f90af4",
+  "computations/verification/h7_scope/logs/pr85_original/h7_multidisc_enclose.json": "bd8232838c10e2e44ac05d1e6219d202aebd722bb07d2a91b37a10040c47eedc",
+  "computations/verification/h7_scope/logs/pr85_original/h7h8.json": "0403092ca1f8bf362b8593ebc6cc5d13439b12b9eae09c35565a8607906fc532",
+  "computations/verification/h7_scope/logs/rerun/h7_multidisc_enclose.out": "2d36852eeb638bb3e746ddfb2d7b384d18bffc3b7b4073ed3c04e1e903bd1cac",
+  "computations/verification/h7_scope/logs/rerun/h7_rates_self_test.out": "86ddbe08920d897bd8aaf7d82f092521ee38afb33e0bf9abefabcbda29c8ad7e",
+  "computations/verification/h7_scope/logs/rerun/h7h8.out": "f0ba166b149e2382c489793ced21afd0083def31a50b3c32f19d3c104413a2d8",
+  "computations/verification/h7_scope/logs/rerun/orbit_24061985479.json": "59e3a1be50b6e9015073ddff53fa0b73bb45afcf2b9e05157699e1524159b47e",
+  "computations/verification/h7_scope/logs/rerun/orbit_24061985479.out": "ed94d091ce60fefcfe36cce5a884e0960ae0390f31b7e6162923523d95dbd404",
+  "computations/verification/h7_scope/logs/rerun/orbit_2735635252619983.json": "e4f63f977be612ebd8444e94464a958aa40003fad3364bdf09b8d5b2f412ce2d",
+  "computations/verification/h7_scope/logs/rerun/orbit_2735635252619983.out": "09c0d71a180a844a792b33aeba5e96aa49cbbd85427ae71914050882013d1263",
+  "computations/verification/h7_scope/logs/rerun/orbit_3437426497.json": "4b349fbbfaae589ee4fac67b8cd056ddb82129879e077114dceb5ee6baef4fda",
+  "computations/verification/h7_scope/logs/rerun/orbit_3437426497.out": "23e90312124d687223d00800b128c57ff72746da2772b44fa94683d20d690db3",
+  "computations/verification/h7_scope/notes/h7_h8.md": "66e4c74147b5d59d594122a9fe0e0a34843d98f2a7683cf8fe4a13a3fe1750e6",
+  "computations/verification/h7_scope/notes/h7_multidisc.md": "1da0d02f42c4f3f877103c86fe162746804c74197e7725586a3a2f1c3672419f",
+  "computations/verification/h7_scope/notes/h7_rates.md": "bbebce74b5e369efae5d2d10af5e6a60a30a2a20e24c5aaf59e06d64f2d24fef",
+  "computations/verification/h7_scope/notes/h7_scope.md": "9c91b2724ada099c06b2ae63cdacbe0ae8aa4142e5fda6e2695ea36b0f9352b7",
+  "formalization/Bgs/H7KpArith.lean": "1699957796bd1cf123e2703e742be5fbec9cc122dcbc11488ae337f9b54a9d5f",
+  "evidence/executions/20261105/h7_scope/add_claims.py": "21e18cb2d4699a06f6aa899b14798251a3f88bfbe707434a542cb8bb83163bde",
+  "evidence/executions/20261105/h7_scope/checks/checks.log": "fc17e4a2ed43eca67caca1684b9e83d626b02c3df163d52c6f4354101c9dfbc8",
+  "evidence/executions/20261105/h7_scope/checks/unittests.log": "8663019771b104cac2c849d4504f21b8db02420b0a55b40c1c2dca60c5a222c2",
+  "evidence/executions/20261105/h7_scope/edit_epochs.py": "1f880d5b74c158d12fad251a2039fdeda2d3b48a42f39414cb07f626c90cae95",
+  "evidence/executions/20261105/h7_scope/edit_inventory.py": "1884c4e24a7f6ee2f4447cd86ae20c58a0a7149e77172e4d9fabb4107d15f270",
+  "evidence/executions/20261105/h7_scope/lake_build_H7KpArith.log": "1bfab2372477774853a790f9c45b362175327d4c3265b86c9b6a57cdc1774678",
+  "evidence/executions/20261105/h7_scope/mk_cache_h7scope.py": "07ce90a52b22c55d4ca6f24175a9277860d35d4677bbfa1b5cc83662ccc8a93c",
+  "evidence/executions/20261105/h7_scope/mk_receipt.py": "a235df92172e173aeec98bcd01569c7fd5293250b41d2efc488ab18b95ce37f7",
+  "evidence/executions/20261105/h7_scope/referee/AUDIT.md": "bc8dee5b5019f80ac4650d97d9f4ae0f7a7a949f424e4ba11880a8b0a8c0ee5a",
+  "evidence/executions/20261105/h7_scope/referee/ints.out": "558c3da28d1755ba823a34fe8fb6e68d4d6b5954cdb6faa0a91f2625be785333",
+  "evidence/executions/20261105/h7_scope/referee/ints.py": "dcfb8daf7f76e1818bfe28defaf04c953b01e04a02b359bd92880a642613514c",
+  "evidence/executions/20261105/h7_scope/referee/ints2.out": "3cddaee5091df494ffaf536c053b26a92167cd5937b4fd65e97aa6242e4c0812",
+  "evidence/executions/20261105/h7_scope/referee/ints2.py": "a45f61d457b3d8ab95d63b94095aeeb015f463186b76c84527b47130552406f0",
+  "evidence/executions/20261105/h7_scope/referee/mine/audit_run/d34.log": "9fdfc64bfb51446d5d046271f4b23382c1d917008552def7e1f7c9289b084758",
+  "evidence/executions/20261105/h7_scope/referee/mine/audit_run/krawczyk_d34.json": "b368721fa3b5093694dd20b38570947dbb02a3d78a7fadbc309c6c99c7c91b5a",
+  "evidence/executions/20261105/h7_scope/referee/mine/audit_run/krawczyk_l7_21_l7_13_l7_01.json": "c5a4c48e8e5106bc877c377e036799b7169aa94672490b127b294383cd7d5f5a",
+  "evidence/executions/20261105/h7_scope/referee/mine/d34.log": "9fdfc64bfb51446d5d046271f4b23382c1d917008552def7e1f7c9289b084758",
+  "evidence/executions/20261105/h7_scope/referee/mine/krawczyk.py": "585f6e9504f8eaaa965bd30c40c0035f50ff23a27293e3b71fea0a16d8ecd4ef",
+  "evidence/executions/20261105/h7_scope/referee/mine/krawczyk_d34.json": "b254e0d41c6502c3b3081f2f4216fd007e0fcb97998f44d4af7e9530c3aeea22",
+  "evidence/executions/20261105/h7_scope/referee/mine/krawczyk_l7_21_l7_13_l7_01.json": "985a50203703424767e548c27bcb47906409bae420782d2254abe0cc0a156ab3",
+  "evidence/executions/20261105/h7_scope/referee/mine/rerun_d34.out": "52d91ddf2f4d431770210214e44eac17b25fc8bc0ac73b283ff2710d75fb635a",
+  "evidence/executions/20261105/h7_scope/referee/mine/rerun_l7.out": "117d2e8554c9a2d6f756c81066c8c29bca6eba9e533eea77dade52ce7f400eaf"
+ }
+}
