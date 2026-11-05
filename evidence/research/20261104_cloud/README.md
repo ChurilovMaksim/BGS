@@ -16,7 +16,7 @@ Independent pass on the open gate of Theorem R♯-mod v5 (BGS-TRACE-325): hypoth
 | `numerics/transfer_24580.py` | Exact graph, power iteration, flint Collatz bounds |
 | `proofs/09_phase_carry.md` | [N] Phased carry boxes E ≤ 10: rate 0.272551, prefactor still rising |
 | `proofs/10_green_tail.md` | [P] Bounded lambda carries through 0 satisfy \|e\| ≤ 14; the kernel tail is geometric |
-| `proofs/11_ball_orbit.md` | [CA] Entrywise disks for the phased orbit, boxes E = 0 through 6 |
+| `proofs/11_ball_orbit.md` | [CA] Entrywise disks for the phased orbit, boxes E = 0 through 7 |
 | `numerics/phase_carry.py` | Float rebuild of the sesquilinear carry step |
 | `numerics/phase_carry_ball.py` | Flint-block disks and the carry iteration |
 | `numerics/green_tail.py` | Ball arithmetic for the Green kernel |
@@ -25,4 +25,4 @@ Independent pass on the open gate of Theorem R♯-mod v5 (BGS-TRACE-325): hypoth
 | `numerics/kp_sharp.py` | Ball arithmetic for the tail and the crossover |
 | `RUN.md` | Commands, coverage, hashes, non-claims |
 
-The length that Prop. K had left as a sketch is a theorem, and inside the point-insertion model the renormalised activity is smaller than the bare one, so 3067 stays a sufficient idealised threshold. H1 at C ≤ 8.8×10^{-4} is not proved. The order-unit norm is too crude by four orders of magnitude. The phased lambda-carry orbit is now enclosed by entrywise disks on the boxes E = 0 through 6. From step 3 the rate is below 0.28. The prefix prefactors at that rate are 1.626, 6.927, 10.833, 14.108, 17.507, 21.290, 25.140. The bounded carry has no states past |e| = 14, so the sharp-box prefactor, once it is enclosed, is the full single-window prefactor. That box is not in the table yet. The (0,0) share is not the shell constant.
+The length that Prop. K had left as a sketch is a theorem, and inside the point-insertion model the renormalised activity is smaller than the bare one, so 3067 stays a sufficient idealised threshold. H1 at C ≤ 8.8×10^{-4} is not proved. The order-unit norm is too crude by four orders of magnitude. The phased lambda-carry orbit is now enclosed by entrywise disks on the boxes E = 0 through 7. From step 3 the rate is below 0.28. The prefix prefactors at that rate are 1.626, 6.927, 10.833, 14.108, 17.507, 21.290, 25.140, 28.595. The bounded carry has no states past |e| = 14, so the sharp-box prefactor, once it is enclosed, is the full single-window prefactor. That box is not in the table yet. The (0,0) share is not the shell constant.
