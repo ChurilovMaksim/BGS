@@ -111,3 +111,11 @@ Outcomes, all in `logs/h7_average.json` unless noted:
 - `all`: the same checks, then the scalar factorisation at \(17\cdot 41\). The ratio \(S(697)/(S(17)S(41))\) has modulus \(6.05155913001261\). The majorant pass encloses \(\|\Gamma_{457}\|_2\), \(\|\Gamma_{7521721}\|_2\), the Cauchy–Schwarz majorant \(7.420040412990621\cdot 10^{48}\), and the constant piece \(d\lvert\operatorname{Tr} Q_0\rvert\). The threshold exceeds that piece by \(91.71481675130566\).
 - `h7_avg_orbit.py 457 57 0`: \(722.51\) s, \(3665\) orbits, \(457^2\) classes. Logs `logs/h7_avg_orbit_q457_a0.json` and `logs/h7_avg_orbit_q457_a0_full.json`. Binary64. The stored Frobenius column reaches \(6.087378898382624\cdot 10^{47}\) and is not an enclosure.
 - `orbit`: the twisted remainder has modulus \(64.36874328884288\). The nonzero isotropic sub-sum differs from the certified value \(7.8450076177326356\) by \(2.842170943040401\cdot 10^{-14}\). The trace room \(T/\sum\lvert\kappa\rvert\) is \(30788816.98609009\).
+
+Eighth target, the additive energy of \(\langle\lambda\rangle\). Same interpreter, ball arithmetic at precision \(200\). The factorisations are read from `logs/h7h8.json` and are not recomputed. No registry file was written.
+
+```text
+python3 evidence/research/20261104_grok47/code/h8_energy.py
+```
+
+Outcome: `logs/h8_energy.json`. Exact energy \(2L^2-L\) at the split primes \(7, 31, 41, 457\), and \(3L^2-3L\) at \(73, 89\). The composite \(217\) has energy \(435\), equal to the cap from its factor \(31\). The prime powers \(49\) and \(343\) have energies \(1617\) and \(122451\), above \(2L^2-L\); \(31^2\) keeps order \(15\) and energy \(435\). On the stored factors of \(K_p\) for \(5 \le p \le 31\), every prime is \(1\) or \(7 \pmod 8\), and the order is \(3\) at \(7\) and \(3p\) otherwise. The \(c = 1\) threshold stays under \(0.16661156569722353507\). At \(L = 3p\) the \((2,2)\) meeting point is under \(0.00644413\) for \(p = 1409\) and under \(0.00303834\) for \(p = 3307\). Runtime under a second.

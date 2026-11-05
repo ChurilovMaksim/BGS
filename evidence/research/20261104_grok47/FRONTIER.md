@@ -1,5 +1,17 @@
 # Frontier, 4 November 2026
 
+## Eighth target: the additive energy of \(\langle\lambda\rangle\)
+
+The seven targets below are kept as records. The eighth target is the amplified normalisation of H8 at large \(p\). The aggregate comparisons at \(p = 19\) and \(p = 29\) are parked: both primes lie under the conditional thresholds \(1409\) and \(3307\), so they are not an input the large-\(p\) inequality reads. H7* stays a hypothesis of v5. The proof note is `proofs/h8_energy.md`. The self-referee is `REFEREE_H8_ENERGY.md`.
+
+What that note establishes, inside this directory only:
+
+- **[P]** For a split prime the additive energy of the graph of \(\langle\lambda\rangle\) equals \(2L^2-L\) when the order \(L\) is odd, and \(3L^2-3L\) when \(L\) is even. The odd uniqueness is BGS-TRACE-279; the count is written here. For an odd modulus that has a split prime factor of the same order, the energy is at most \(2L^2-L\). The bound does not depend on the modulus and has no cap at \(\sqrt{h_{3p}}\). The ratio to the trivial energy \(L^3\) is \(< 2/L\).
+- **[P]** Bourgain–Glibichuk–Konyagin needs a fixed \(\delta > 0\) with \(|\langle\lambda\rangle| \ge q^\delta\). At the bottom of the gap, \(\delta_{\max}(1409) < 0.02017629\) and \(\delta_{\max}(3307) < 0.00947485\). Heath-Brown–Konyagin applies to the projection throughout the gap at these primes and gives the weaker shape \(L^{5/2}\). Its character-sum form stays above the trivial bound on \(\theta \ge 0.16661157\).
+- **[CA]** The \((2,2)\) bound of TRACE-279 beats \(|S| \le L\) only for \(\theta < \ln(L^2/2)/(p\ln\lambda)\). At \(L = 3p\) this is \(< 0.00644413\) for \(p = 1409\) and \(< 0.00303834\) for \(p = 3307\), inside the exponent-\(1\) range. The amplified wrap remains \(\theta < 0.16661157\). The interval up to \(0.26223963\) stays open.
+
+H8 is not discharged. The integers \(49\) and \(343\) have energies \(1617\) and \(122451\), above \(2L^2-L\), because the order grows. `record/claims.json` was not edited.
+
 ## Seventh target: the averaged operator for the section aggregate
 
 The six targets below are kept as records. The seventh target is to move \(\sum_\beta\kappa_d(N\beta)\operatorname{Tr} Q_\beta\) inside one operator, using the product formula for \(\kappa_d\) and the character dependence on \(\beta\), and to bound the trace or the spectral radius of that operator at \(d=3437426497\). The proof note is `proofs/h7_average.md`. The self-referee is `REFEREE_H7_AVERAGE.md`.
