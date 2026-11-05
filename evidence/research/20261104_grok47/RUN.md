@@ -94,3 +94,20 @@ python3 evidence/research/20261104_grok47/code/h7_uniform.py all
 ```
 
 Outcome: `logs/h7_uniform.json` and `logs/h7_uniform_weights.json`, \(805\) s for the norm certificate. The self-test passes a \(2\times 2\) Cholesky certificate, rejects a cap below the true norm, and matches the cosine sum at \(q=5,17,41\). The mass check at \(d=287\) has relative discrepancy \(<6.71\cdot 10^{-14}\). The frozen diagonal has floating-point max \(2\)-norm \(2.439371\) on a \(361\)-point grid; a geometric weight \((1/2)^k(0.45)^{|c|}\) has floating-point max about \(2.6485\). The certificate covers the circle by \(233\) intervals, Taylor remainder upper endpoint \(0.005953146641677557\), and accepts \(R=246/100\) on all \(466\) endpoints. The smallest Cholesky slack has lower endpoint \(0.016316926498566642\). Newton on the untwisted step encloses one eigenvalue in \([1.9154732041332492,\ 1.915473204133273]\). The residue weight, the majorant, and \(R_*\) are the balls in `proofs/h7_uniform.md` §4.
+
+Seventh target, the averaged operator. Same interpreter. Ball arithmetic at precision \(200\) for the readout norm and the constant piece. The prime-\(457\) orbit pass is binary64. No registry file was written.
+
+```text
+python3 evidence/research/20261104_grok47/code/h7_average.py check
+python3 evidence/research/20261104_grok47/code/h7_average.py majorant
+python3 evidence/research/20261104_grok47/code/h7_average.py all
+python3 evidence/research/20261104_grok47/code/h7_avg_orbit.py 457 57 0
+python3 evidence/research/20261104_grok47/code/h7_average.py orbit
+```
+
+Outcomes, all in `logs/h7_average.json` unless noted:
+
+- `check`: at \(q=17\), \(t_b=3\), the closed form of \(\Gamma_q\) matches the direct sum to \(1.7955268718282194\cdot 10^{-13}\) on every norm class. The scalar word pairing at period \(8\) matches the direct sum to \(2.153132083222681\cdot 10^{-13}\).
+- `all`: the same checks, then the scalar factorisation at \(17\cdot 41\). The ratio \(S(697)/(S(17)S(41))\) has modulus \(6.05155913001261\). The majorant pass encloses \(\|\Gamma_{457}\|_2\), \(\|\Gamma_{7521721}\|_2\), the Cauchy–Schwarz majorant \(7.420040412990621\cdot 10^{48}\), and the constant piece \(d\lvert\operatorname{Tr} Q_0\rvert\). The threshold exceeds that piece by \(91.71481675130566\).
+- `h7_avg_orbit.py 457 57 0`: \(722.51\) s, \(3665\) orbits, \(457^2\) classes. Logs `logs/h7_avg_orbit_q457_a0.json` and `logs/h7_avg_orbit_q457_a0_full.json`. Binary64. The stored Frobenius column reaches \(6.087378898382624\cdot 10^{47}\) and is not an enclosure.
+- `orbit`: the twisted remainder has modulus \(64.36874328884288\). The nonzero isotropic sub-sum differs from the certified value \(7.8450076177326356\) by \(2.842170943040401\cdot 10^{-14}\). The trace room \(T/\sum\lvert\kappa\rvert\) is \(30788816.98609009\).

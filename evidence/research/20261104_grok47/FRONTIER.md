@@ -1,5 +1,17 @@
 # Frontier, 4 November 2026
 
+## Seventh target: the averaged operator for the section aggregate
+
+The six targets below are kept as records. The seventh target is to move \(\sum_\beta\kappa_d(N\beta)\operatorname{Tr} Q_\beta\) inside one operator, using the product formula for \(\kappa_d\) and the character dependence on \(\beta\), and to bound the trace or the spectral radius of that operator at \(d=3437426497\). The proof note is `proofs/h7_average.md`. The self-referee is `REFEREE_H7_AVERAGE.md`.
+
+What that note establishes, inside this directory only:
+
+- **[P]** The sum over all residue classes, including zero, is \(\operatorname{Tr}(MT^P)\) on the section tensored with \(\mathcal O/d\mathcal O\). The Lin sum removes the identity class. The weighted norm of \(T\) is the maximum of \(\|L(k/d)\|_s\), hence at most \(246/100\). The spectral radius of \(T\) lies between the untwisted spectral radius and that norm. The Gauss transform of \(\kappa_q\) is \(q(q-2)\) on \(N=0\) and \(-q(1+e(-t_b N/q))\) off it, for \(q\equiv 1\pmod 8\). It factors across the two primes, and the trace does not.
+- **[CA]** The Cauchy–Schwarz majorant is \(7.420040412990621\cdot 10^{48}\), a factor \(1.9142415283101287\cdot 10^{21}\) above the threshold. The Koopman majorant is a factor \(5.608476978097026\cdot 10^{25}\) above the threshold. Both are coarser than the triangle bound of the sixth target. The constant Gauss piece \(d\lvert\operatorname{Tr} Q_0\rvert\) lies under the threshold by \(91.71481675130566\), and the identity-class term by \(92.11798329681781\). A uniform trace cap of \(30788816.98609009\) would put the residue triangle on the threshold.
+- **[N]** A scalar model at \(17\cdot 41\) has \(S(d)/(S(17)S(41))\) of modulus \(6.05155913001261\), not \(1\). At the prime \(457\), sector \(0\), a binary64 pass over all \(3665\) orbits puts the twisted remainder at modulus \(64.36874328884288\), against an identity term of modulus \(5.594329091312814\cdot 10^{18}\). The scan's Frobenius column reaches \(10^{47}\) and does not enclose the traces. The remainder does not transfer to the composite.
+
+Aggregate H7* is not shown to hold and not shown to fail. The operator is an operator on the finite section, not on \(\hat Z\). `record/claims.json` was not edited.
+
 ## Sixth target: a uniform bound on the section trace
 
 The five targets below are kept as records. The sixth target is a bound \(|\operatorname{Tr} Q|\le C R^P\) for every twist of the finite multi-disc section, with \(R\) below the Frobenius majorant \(M\approx 50.49\), and the comparison of that bound with the \(\eta=1\) threshold at \(d=3437426497\). The proof note is `proofs/h7_uniform.md`. The self-referee is `REFEREE_H7_UNIFORM.md`.
