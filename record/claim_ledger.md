@@ -1,6 +1,10 @@
 # Claim ledger
 
 
+## 18 November 2026 — oldspace singular spectrum and finite microscopic estimates
+
+The [supplementary oldspace proof](../mathematics/fixed-map/seven_oldspace_singular_spectrum.md) concerns all odd $m$ at $N=49m$. The [Pell proof](../mathematics/fixed-map/pell_microscopic_window.md) concerns the actual eigenphases at three finite dimensions. The [verification record](../evidence/research/20261118_oldspace_spectrum/README.md) lists the analytic and computational ingredients. The large-time signed hierarchy and the weak Sine₂ limit remain open.
+
 ## Scoped six-round packet intake, 18 November 2026 — no claim-state changes
 
 The external six-round BGS packet, based on main at `3d21de1f3cca6470e352f4272cf354ee2eb39d4e`, was checked for archive integrity and finite certificates. Two narrow exact arguments were reconstructed in [the supplementary mathematics note](../mathematics/fixed-map/torsion_interference_vertical_outliers_20261118.md): nonvanishing of *complete* torsion-history trace interference at algebraic kick times along \(N=7^j\), with no quantitative lower bound, and a growing but zero-density family of nearly retained channels for the **vertical kick compression**, not the full oldspace. Their accepted proof uses the existing Lindemann--Weierstrass dependency EXT-POPESCU-2023; no new external source is registered.

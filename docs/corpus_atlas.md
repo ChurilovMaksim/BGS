@@ -27,7 +27,7 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**377 maintained proof notes; 10 topic views; 438 core claim IDs.**
+**379 maintained proof notes; 10 topic views; 438 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
@@ -42,7 +42,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 178 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 180 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -168,6 +168,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Ordinary compact-stratum centering and fixed-N cutoff](../mathematics/fixed-map/ordinary_compact_stratum_centering.md) | `BGS-FM-031` (proved) |
 | [Original ordered two-pair channel: logarithmic-loss gap](../mathematics/fixed-map/original_channel_gap.md) | `BGS-FM-020` (proved) |
 | [Actual paired-box coordinates and the exact autocorrelation character](../mathematics/fixed-map/paired_character_identity.md) | Consult proof and full ledger |
+| [Explicit microscopic witnesses for the fixed kick at Pell dimensions](../mathematics/fixed-map/pell_microscopic_window.md) | Consult proof and full ledger |
 | [Full weighted gradient, Pell curvature and the forced early inflection](../mathematics/fixed-map/pell_weighted_curvature.md) | `BGS-TRACE-111` (proved) |
 | [Actual phase-map monotonicity, Frostman bound and averaged Fourier squares](../mathematics/fixed-map/phase_map_frostman.md) | Consult proof and full ledger |
 | [Transfer of the Laplace functional and fixed Δ_k to the phase model](../mathematics/fixed-map/phase_model_transfer.md) | Consult proof and full ledger |
@@ -207,6 +208,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Bessel form of the scalar-return orbit sum](../mathematics/fixed-map/scalar_return_bessel.md) | `BGS-TRACE-129` (proved) |
 | [Scale-normalized positive-quantization bound for the unchanged BGS kick](../mathematics/fixed-map/scaled_weyl_overlap.md) | `BGS-FM-033` (conditional) |
 | [One fully weighted homoclinic coefficient and its cyclic TRACE-005 subsum](../mathematics/fixed-map/selected_weighted_coefficient.md) | `BGS-TRACE-019` (proved) |
+| [The singular spectrum of the sevenfold arithmetic oldspace](../mathematics/fixed-map/seven_oldspace_singular_spectrum.md) | Consult proof and full ledger |
 | [Local antiunitary for a position-diagonal kick](../mathematics/fixed-map/sixteen_phase_symmetry.md) | `BGS-TRACE-130` (proved) |
 | [Distance to the unperturbed spectral orbit: proved global bounds](../mathematics/fixed-map/spectral_orbit_distance.md) | `BGS-TRACE-110` (proved) |
 | [Square-free products of at least three primes](../mathematics/fixed-map/squarefree_product_abel.md) | `BGS-TRACE-123` (proved) |

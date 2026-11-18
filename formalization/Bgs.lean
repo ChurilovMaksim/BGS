@@ -1,3 +1,5 @@
+import Bgs.OldspaceOutliers
+import Bgs.PellWindowWitness
 import Bgs.AnalyticOrbitKernels
 import Bgs.CayleyCurveEnergy
 import Bgs.CayleyEnergy

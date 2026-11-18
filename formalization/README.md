@@ -1,7 +1,7 @@
 # Lean 4 formalization
 
-**Current graph (5 November 2026).** `formalization/Bgs` holds 195 `.lean` files (156 top-level modules and 39 adapted
-modules under `Bgs/Mathlib/`), with 2524 `theorem`/`lemma` declarations (grep count) and no `sorry`. 182 claims that are not
+**Source graph (18 November 2026).** `formalization/Bgs` holds 197 `.lean` files (158 top-level modules and 39 adapted
+modules under `Bgs/Mathlib/`), with 2533 `theorem`/`lemma` declarations (grep count) and no `sorry`. 182 claims that are not
 open link Lean files; the registry records the scope of each link. Legacy
 `native_decide` remains in 8 modules with 37 uses: `SevenPrimary` 22 (hash-pinned by
 `computations/verification/seven_primary_certificate.py`, so it is not changed), `TorusLevelSets` 3, `PellCoboundary` 3,
@@ -21,6 +21,8 @@ The [Mathlib coverage map](MATHLIB_LAYER_RU.md) links individual declarations to
 **Claim ID:** BGS-FORMAL-001. This is the finite-certificate, algebraic-kernel
 and falsifier layer, extended by scoped Mathlib theorems including selected scalar/reference limits. A Lean theorem certifies the proposition in its source;
 the informal analytic corpus is substantially larger.
+
+The November 18 arithmetic modules `Bgs.OldspaceOutliers` and `Bgs.PellWindowWitness` were compiled individually. See the [verification record](../evidence/research/20261118_oldspace_spectrum/README.md) for the exact scope.
 
 ## Build and execution provenance
 

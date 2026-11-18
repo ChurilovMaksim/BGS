@@ -1,6 +1,10 @@
 # BGS research brief
 
 
+## Oldspace singular spectrum and three finite Pell witnesses (18 November 2026)
+
+The [oldspace theorem](mathematics/fixed-map/seven_oldspace_singular_spectrum.md) gives a full singular spectrum in the limit through odd $N/49$. The [Pell estimates](mathematics/fixed-map/pell_microscopic_window.md) apply to the prescribed fixed-coupling band-two test at $h_{197},h_{203},h_{207}$. The [verification record](evidence/research/20261118_oldspace_spectrum/README.md) gives the proof dependencies and execution scope.
+
 ## Supplementary reviewed intake (18 November 2026; registry unchanged)
 
 A [scoped audit of the externally supplied six-round packet](evidence/research/20261118_six_round_review/README.md) reproduces its finite round-6 certificates and retains only two independently reconstructed exact subsidiary observations in [the torsion-interference and vertical-channel note](mathematics/fixed-map/torsion_interference_vertical_outliers_20261118.md). In particular, \(\mathcal I_{N,k}(\tau N)\ne0\) for torsion-history traces along \(N=7^j\), \(3N/7\mid k\), has **no proved normalized lower bound**; exceptional vertical singular channels are **not** full oldspace channels. Other substantive packet claims remain research candidates requiring further independent review. No new fixed-map local-statistics theorem or claim-state change is asserted; the 5 November census remains authoritative.
