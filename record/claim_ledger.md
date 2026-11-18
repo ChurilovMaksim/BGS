@@ -1,5 +1,13 @@
 # Claim ledger
 
+
+## Scoped six-round packet intake, 18 November 2026 — no claim-state changes
+
+The external six-round BGS packet, based on main at `3d21de1f3cca6470e352f4272cf354ee2eb39d4e`, was checked for archive integrity and finite certificates. Two narrow exact arguments were reconstructed in [the supplementary mathematics note](../mathematics/fixed-map/torsion_interference_vertical_outliers_20261118.md): nonvanishing of *complete* torsion-history trace interference at algebraic kick times along \(N=7^j\), with no quantitative lower bound, and a growing but zero-density family of nearly retained channels for the **vertical kick compression**, not the full oldspace. Their accepted proof uses the existing Lindemann--Weierstrass dependency EXT-POPESCU-2023; no new external source is registered.
+
+The complete [research intake and verification scope](../evidence/research/20261118_six_round_review/README.md) explicitly separates reproduced finite checks from unverified long-time and semiclassical deductions in the packet. No existing claims were edited or relabelled: BGS-BGS-001, BGS-TRACE-005 and BGS-TRACE-206 stay **open**, BGS-TRACE-325 stays **conditional**, and the entire registered status census is unchanged. The packet's uncentered-generator convention differs by \(I/10\); it is translated explicitly, not substituted into BGS silently.
+
+
 ## Lemma S, polymer gap, Binet generator and the H5(b) cross-line constant, 5 November 2026
 
 *Sections for BGS-TRACE-337..355 added in the final polish pass (5 November 2026) from the registry and
