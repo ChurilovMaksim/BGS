@@ -2,9 +2,9 @@
 
 Run from any directory:
 
-\`\`\`sh
+```sh
 python3 computations/verification/torsion_history_20261118/verify_finite_inputs.py
-\`\`\`
+```
 
 The script has **no dependencies beyond Python's standard library**. It checks:
 
@@ -14,6 +14,6 @@ The script has **no dependencies beyond Python's standard library**. It checks:
 - the **exact** degree-three Taylor jet at \(q=0\) of the canonical *centered* midpoint symbol, with the mandatory \(r(q+1/2)\) term;
 - the rational zero-kick cross-history proportion \(48/49\).
 
-The script's arithmetic is modular integers and exact \`fractions.Fraction\`. It intentionally does **not** attempt a floating-point detection of the Lindemann--Weierstrass nonvanishing at \(\tau=10^{-80}\); that portion of the argument is proved mathematically in [the note](../../../mathematics/fixed-map/torsion_interference_vertical_outliers_20261118.md). Finite modular tests do not certify the all-\(j\) binomial theorem, the long-time trace limit, Sine2 universality, or the analytic claims in the six-round packet.
+The script's arithmetic is modular integers and exact `fractions.Fraction`. It intentionally does **not** attempt a floating-point detection of the Lindemann--Weierstrass nonvanishing at \(\tau=10^{-80}\); that portion of the argument is proved mathematically in [the note](../../../mathematics/fixed-map/torsion_interference_vertical_outliers_20261118.md). Finite modular tests do not certify the all-\(j\) binomial theorem, the long-time trace limit, Sine2 universality, or the analytic claims in the six-round packet.
 
 [Research intake and provenance](../../../evidence/research/20261118_six_round_review/README.md).
