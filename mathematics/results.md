@@ -18,7 +18,7 @@ signed trace estimate BGS-TRACE-005 are open throughout. [README.md](../README.m
 ## The inherited level h_p, certified Λ and Theorem C′ (Lines N2–N4), 31 October 2026
 
 * [TRACE-288](fixed-map/lineN2N4_inherited_level.md)–[TRACE-290](fixed-map/lineN2N4_inherited_level.md) (proved): periodic-orbit form of the class sums at c = h_p, reduction of the G_p-average to Λ·r₂.
-* [TRACE-294](fixed-map/lineN2N4_inherited_level.md)–[TRACE-296](fixed-map/lineN2N4_inherited_level.md) (proved): Lemma I / I₁₆, arb bounds on Λ, and Theorem C′ for p with h_p squarefree (not known for any p).
+* [TRACE-294](fixed-map/lineN2N4_inherited_level.md)–[TRACE-296](fixed-map/lineN2N4_inherited_level.md) (proved): Lemma I / I₁₆, arb bounds on Λ, and Theorem C′ for p above the theorem threshold with squarefree h_p.
 * [TRACE-286](fixed-map/lineN2N4_inherited_level.md) (proved): Theorem A, an implication from the open Ω-hypothesis [TRACE-287](fixed-map/lineN2N4_inherited_level.md). [TRACE-298](fixed-map/lineN2N4_inherited_level.md) (open): the isotropic part at q ∣ h_p.
 
 ## Conductor structure, Theorem W⁺ and scarred conductors (Lines M and N), 31 October 2026

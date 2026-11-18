@@ -55,7 +55,7 @@ Five integrations, each after an independent internal referee audit (not externa
   crossover rows (TRACE-341, conditional on H1-bad) leave the registered crossovers 3307 / 1409 unchanged.
 * **Lemma W and H6** ([REPORT_P4_v2](computations/verification/h6_p0/REPORT_P4_v2.md)): every prime q | h_p has q ≡ ±1 (mod 2p)
   (TRACE-342, proved). The explicit Theorem C′ threshold, p ≥ 28,424,695 for 8V and p ≥ 3,934 for 8E, holds only for p with
-  h_p squarefree and assumes the normalization u = 1 of the word frequency (TRACE-343, **conditional**); squarefreeness is not known for any p, so H6 (TRACE-304) stays open.
+  h_p squarefree and assumes the normalization u = 1 of the word frequency (TRACE-343, **conditional**); individual values can be squarefree ($h_5=41$), while the required large-prime sequence remains open.
 * **H7* scope** ([REPORT_H7_SCOPE](computations/verification/h7_scope/REPORT_H7_SCOPE.md)): 7 | K_p = 4h_p² + 3 (TRACE-344) and the
   factorizations of K_p for 5 ≤ p ≤ 31 (TRACE-345) are proved. At three included levels d | K_19, K_29 the sector-0 radius exceeds
   T′ = 1.42785 on a finite vertex section only ([CA], TRACE-346), so the per-orbit sufficient reading cannot be certified there

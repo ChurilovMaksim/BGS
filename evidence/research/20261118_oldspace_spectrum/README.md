@@ -25,12 +25,19 @@ Run these commands from the repository root.
 | `python computations/verification/oldspace_outliers/verify_gradient.py` | Passed with rational cyclotomic algebra. Checks the rank-five gradient array, collective curvature and hopping jets. |
 | `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python computations/verification/oldspace_outliers/verify_compression.py` | Passed in binary64. Reconstructs the Weyl matrix from the raw symbol and checks the intertwining and Duhamel bound at $N=147,245,343$ with test couplings $0.025,0.1,0.075$. Also checks the cutoff plane-mode residual at zero and nonzero field. |
 | Compile [phase_moments.cpp](../../../computations/verification/oldspace_outliers/phase_moments.cpp) with `g++ -std=c++20 -O2` and run | Passed. Counts ordered word pairs through length six with exact integer multinomial weights. |
-| `lean formalization/Bgs/OldspaceOutliers.lean` | Passed in Lean 4.33.1. Kernel checked the integer relation, Laurent polynomial derivatives and first possible uniform word excess. |
-| `lean formalization/Bgs/PellWindowWitness.lean` | Passed in Lean 4.33.1. Kernel checked the cleared width, trace and gap comparisons and squarefreeness of $h_5=41$. Python checks the bucket enumeration and integral comparison. |
+| `lean formalization/Bgs/OldspaceOutliers.lean` | Passed in Lean 4.33.1. Kernel checked the integer relation, Laurent polynomial derivatives, first possible uniform word excess and the Haar net factor. |
+| `lean formalization/Bgs/PellWindowWitness.lean` | Passed in Lean 4.33.1. Kernel checked the cleared width, trace, band-two and Abel gap comparisons and squarefreeness of $h_5=41$. Python checks the bucket enumeration and integral comparison. |
 
 The Lean modules cover these arithmetic ingredients. The analytic
 arguments and limits have written proofs. The binary64 cases verify
 conventions and local estimates at their stated test parameters.
+
+## Manuscript
+
+The consolidated manuscript built successfully with pdfLaTeX in three passes.
+The builder reported 380 pages. PDF SHA-256
+`a3117d0b68ed81e76be538a90a934e1512b358d58a6dfcf1e65fab31011fc49b`.
+The build covers typesetting and cross-references.
 
 ## Scope
 

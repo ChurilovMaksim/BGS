@@ -257,3 +257,26 @@ blocks have eigenvalues $2x-1\pm2i\sqrt{x(1-x)}$.
 These are one-step assertions. The near-isometric input directions of
 the full map are the inverse cat images of the constructed packets.
 The signed trace sum at $k\asymp N$ and the local Sine₂ law remain open.
+
+## 7. Comparison with a Haar-distributed unitary
+
+For the same deterministic rank-$m$ projection, let $U$ be Haar
+on $\mathrm U(49m)$. Then
+$$
+ \mathbb P\{\|PU|_{\operatorname{ran}P}\|>\sqrt{6}/5\}
+ \le \left[1352(40/47)^{48}\right]^m,\qquad
+ 1352(40/47)^{48}<1.
+$$
+For a fixed unit vector in $\operatorname{ran}P$, the squared projected
+norm is $X/(X+Y)$, with independent sums $X,Y$ of $m,48m$ unit
+exponentials, respectively. This follows by normalizing an isotropic
+complex Gaussian. The probability of a squared norm exceeding $1/6$
+is bounded by the expectation of $\exp((7/8)(X-Y/5))$, which is
+$8^m(40/47)^{48m}$. A $1/6$-net in the complex unit sphere can be
+taken of cardinality at most $13^{2m}$ by the real volume bound. If
+all its evaluations have norm at most $1/\sqrt6$, the operator norm
+is at most $(1/\sqrt6)/(1-1/6)=\sqrt6/5$.
+Thus the fixed kick and Haar differ in the norm of the compressed
+operator with probability tending to one. The distinction concerns
+joint matrix elements relative to $P$. The eigenphases of $U_N$
+alone do not determine this norm.

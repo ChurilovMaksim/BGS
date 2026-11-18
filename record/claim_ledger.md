@@ -44,7 +44,7 @@ BGS-TRACE-325 is unaffected; neither row was edited.
 
 New, no existing state changed: BGS-TRACE-342 (Lemma W: q ≡ ±1 mod 2p for every prime q | h_p [P], with a finite Lean check)
 proved; 343 (explicit Theorem C′ threshold: p ≥ 28,424,695 for 8V, p ≥ 3,934 for 8E, given h_p squarefree and the torus normalization u = 1) **conditional**.
-Source: [REPORT_P4_v2](../computations/verification/h6_p0/REPORT_P4_v2.md). Squarefreeness of h_p is not known for any p;
+Source: [REPORT_P4_v2](../computations/verification/h6_p0/REPORT_P4_v2.md). Individual values can be squarefree (h_5 = 41). The required unbounded sequence is open;
 H6 (BGS-TRACE-304) stays **open**.
 
 ## Span theorem, 4 November 2026

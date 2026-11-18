@@ -86,6 +86,9 @@ theorem first_uniform_excess (k a b c d e f g h i j l m : Nat)
     (h₅ : (e : Int)-l = δ) (h₆ : (f : Int)-m = δ) :
     6 ≤ k ∧ (k = 6 → δ = 1 ∨ δ = -1) := by omega
 
+theorem haar_net_factor : 1352 * 40^48 < (47 : Nat)^48 := by decide
+
+#print axioms haar_net_factor
 #print axioms gradient_rational_kernel
 #print axioms gradient_evaluation
 #print axioms curvature

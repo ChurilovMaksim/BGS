@@ -1,6 +1,6 @@
 {
   "schema": "bgs-errata-v1",
-  "updated": "2026-11-01",
+  "updated": "2026-11-18",
   "status_authority": "record/retractions.md",
   "entries": [
     {
@@ -476,6 +476,20 @@
       "disposition": "corrected: N14 digits.py with mp.dps = 34 corrupts the twists for G >= 21 at the ulp level, material from G >~ 25 (4.4e-15 at G = 25, 1.2e-3 at G = 40) (N21 F21-2, refereed lineN21). Proposed as claim BGS-TRACE-334 in V5/CLAIMS_PROPOSED_v5.md and recorded here instead (referee lineN22 E12); no claim ID 334 is registered.",
       "downstream": "G <= 20 is exact, so the v4 numbers (G <= 15) are unaffected. All N21 G >= 16 data behind BGS-TRACE-326/327 use dps = 160; the dps-34 runs are kept only under N21/logs/discarded_dps34.",
       "authority": "evidence/executions/20261101/lineNgas/N21/REPORT_N21_v2.md"
+    },
+    {
+      "id": "ERR-066",
+      "title": "Quantifier on the squarefree Pell hypothesis",
+      "disposition": "The individual value h_5 = 41 is squarefree. H6 concerns sufficiently large prime indices in the required sequence.",
+      "downstream": "The proved implication TRACE-296 uses squarefreeness at eligible p. H6 remains open.",
+      "authority": "mathematics/fixed-map/lineN2N4_inherited_level.md"
+    },
+    {
+      "id": "ERR-067",
+      "title": "Weak local convergence versus factorial moment comparison",
+      "disposition": "A nonvanishing moment defect disproves the corresponding comparison. Failure of the weak local law requires a bounded observable or additional moment-tail control.",
+      "downstream": "The all-order comparison still suffices for weak Sine2 convergence.",
+      "authority": "record/remaining_breakthrough_task_20261021.md"
     }
   ]
 }

@@ -1,5 +1,15 @@
 # BGS consolidated research manuscript
 
+## Fixed-map update, 18 November 2026
+
+The conclusion adds the sevenfold oldspace singular spectrum, its Haar
+comparison, and the finite Pell witnesses for the prescribed band-two test.
+The Lines I–N chapter now states the squarefree hypothesis at the eligible
+prime indices. The consolidated PDF has 380 pages. The repository builder
+passed its reference, destination and box checks. See the
+[verification record](../evidence/research/20261118_oldspace_spectrum/README.md)
+for the proof and certificate boundaries.
+
 ## Final polish pass, 5 November 2026
 
 The abstract (`front_matter.tex`), the introduction (`ch01_introduction.tex`) and the conclusion

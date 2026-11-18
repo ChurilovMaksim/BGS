@@ -157,6 +157,10 @@ $$
  \ >\frac{31}{50}.
 $$
 
+The same single term gives $L_N(U_N;1) > 3/8$ at $N=h_{207}$:
+multiply the squared bound by $e^{-2k/N}\ge 1-2k/N$.
+The gap from the CUE limit $(1-e^{-2})/4$ exceeds $1/8$.
+
 ## 4. The full CUE subtraction at $h_{207}$
 
 The autocorrelation formula gives

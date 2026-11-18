@@ -1,7 +1,7 @@
 # Lean 4 formalization
 
 **Source graph (18 November 2026).** `formalization/Bgs` holds 197 `.lean` files (158 top-level modules and 39 adapted
-modules under `Bgs/Mathlib/`), with 2533 `theorem`/`lemma` declarations (grep count) and no `sorry`. 182 claims that are not
+modules under `Bgs/Mathlib/`), with 2535 `theorem`/`lemma` declarations (grep count) and no `sorry`. 182 claims that are not
 open link Lean files; the registry records the scope of each link. Legacy
 `native_decide` remains in 8 modules with 37 uses: `SevenPrimary` 22 (hash-pinned by
 `computations/verification/seven_primary_certificate.py`, so it is not changed), `TorusLevelSets` 3, `PellCoboundary` 3,

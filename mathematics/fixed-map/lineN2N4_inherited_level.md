@@ -82,8 +82,7 @@ Line N5 caveat (not registered; owner audit of PR #66, R1): Line N5 (`REPORT_N5_
 Lemma I / I₁₆ transfers free-family bounds from the Line F spaces to the O1 spaces with p-independent constants. N4 certifies all four
 free-family radii in arb (8V: τ-cell scheme with the N3 extremal norm R, committed as `lineN3/logs/g_R_V_final.npy`; 8E, 16V, 16E:
 Schur tests). **I-1:** the 16V value is registered as 2.9413897, because f + π = 2.94138961 exceeds the author's 2.9413896. Theorem C′
-is an implication **for p with h_p squarefree** (prime-power conductor weights are not registered); squarefreeness is [N] evidence only
-(no q < 3·10⁶ with q² ∣ h_p for p ≤ 10⁵) and is not proved for any p.
+is an implication **for p with h_p squarefree** (prime-power conductor weights are not registered); The numerical sieve excludes q < 3·10⁶ with q² ∣ h_p for p ≤ 10⁵. This does not give a sufficient unbounded sequence. The individual value h_5 = 41 is squarefree.
 
 ## 5. Not registered (notes only)
 * N4 §3.3–§3.4 (superseded by Line N5): G ≤ 1.547, leading rate 1.4468, remainder rates 1.2426 / 1.0672 / 0.9165; the referee's Lean

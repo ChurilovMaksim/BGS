@@ -17,7 +17,7 @@ This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one
 | refuted | 1 | Shown false as stated |
 | **total** | **438** | |
 
-182 non-open claims link Lean 4 files, out of 195 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
+182 non-open claims link Lean 4 files, out of 197 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
 ## Headline results
 
@@ -123,7 +123,7 @@ R′ (BGS-TRACE-206) is a corrected mean law for the k1 kick at η = 2. Everythi
 | `BGS-TRACE-256` | **open** | Hypothesis H_mean | — | [lineL_op_open_range.md](mathematics/fixed-map/lineL_op_open_range.md) |
 | `BGS-TRACE-280` | **proved** | Theorem W+: explicit range beyond Weil (only for p >= 10^264.5) | yes | [lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
 | `BGS-TRACE-283` | **proved** | Theorem N3: scarred conductors carry the slow orbit beta = 1 | yes | [lineMN_conductor_structure.md](mathematics/fixed-map/lineMN_conductor_structure.md) |
-| `BGS-TRACE-296` | **proved** | Theorem C′: unit-beta part at h_p, for p with h_p squarefree (not proved for any p) | yes | [lineN2N4_inherited_level.md](mathematics/fixed-map/lineN2N4_inherited_level.md) |
+| `BGS-TRACE-296` | **proved** | Theorem C′: unit-beta part at h_p, for p above the theorem threshold with squarefree h_p | yes | [lineN2N4_inherited_level.md](mathematics/fixed-map/lineN2N4_inherited_level.md) |
 
 ### End point of Phase VII: Theorem R♯-mod v5 (Lines N5–N21, polymer-gas route)
 
@@ -148,7 +148,7 @@ This theorem is conditional. It says that if the open inputs H0, H1 and H5–H8 
 
 ### Phase VIII (4–5 November 2026): partial results on the open inputs of Theorem R♯-mod v5
 
-Five integrations, each after an independent internal referee audit. They narrow but do not discharge the open inputs: H5–H8 (BGS-TRACE-303..306) stay open and Theorem R♯-mod v5 stays conditional. The explicit H6 threshold needs squarefree h_p, which is not known for any p, and assumes the normalization u = 1. Research notes on a structural ceiling for H5(a), Lemma U with the open decoupling step (C-U) and the 'estimate U' are unregistered research, not claims.
+Five integrations, each after an independent internal referee audit. They narrow but do not discharge the open inputs: H5–H8 (BGS-TRACE-303..306) stay open and Theorem R♯-mod v5 stays conditional. The explicit H6 threshold needs squarefree h_p in the relevant large-prime sequence and assumes the normalization u = 1. Research notes on a structural ceiling for H5(a), Lemma U with the open decoupling step (C-U) and the 'estimate U' are unregistered research, not claims.
 
 | Claim | State | Result (short label) | Lean | Source |
 |---|---|---|---|---|

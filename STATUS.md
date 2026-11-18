@@ -101,7 +101,7 @@ rendered in full in the [claim registry](record/claim_registry.md).
 ## Corrections
 
 Errata registry schema `bgs-errata-v1`; updated
-**2026-11-01**; **65 registered entries**.
+**2026-11-18**; **67 registered entries**.
 The status authority for corrections is
 `record/retractions.md`; the generated reader-facing index
 is [`ERRATA.md`](ERRATA.md).

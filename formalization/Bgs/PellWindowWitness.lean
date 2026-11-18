@@ -25,6 +25,8 @@ theorem final_gap_207 :
     1000*(99*31^2*h 207 - 9*10000*h 207 - 500000) >
       4000000*h 207 := by decide
 
+theorem abel_207 : 8*31^2*(h 207 - 2*207) > 3*50^2*h 207 := by decide
+
 theorem pell_five : h 5 = 41 := by decide
 
 theorem pell_five_squarefree (d : Nat) (hd : 2 ≤ d) : ¬d*d ∣ h 5 := by
@@ -43,5 +45,6 @@ theorem pell_five_squarefree (d : Nat) (hd : 2 ≤ d) : ¬d*d ∣ h 5 := by
 #print axioms trace_207
 #print axioms normalization_207
 #print axioms final_gap_207
+#print axioms abel_207
 #print axioms pell_five_squarefree
 end Bgs.PellWindowWitness

@@ -47,6 +47,8 @@ def main():
     nonconstant = sp.Matrix(11, 6, lambda i,j: gradients[j+1].coeff(x,i+1))
     require(nonconstant.rank() == 5, "rank of nonconstant coefficients")
     require(sp.expand(sum(gradients)) == 0, "one relation with zero constant")
+    require(1352*40**48 < 47**48, "Haar net factor")
+    print("PASS Haar net factor < 1")
     print("PASS cyclotomic gradient rank 5, sum curvature -357/10, 7 quadratic hopping zeros")
     if __import__("sys").argv[1:] == ["--rows"]:
         for exponent in range(1, 12):

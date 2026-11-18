@@ -109,6 +109,7 @@ def norm_buckets(k, n):
     u = eps**2*k*variance/2
     omega = eps**2*(Q(7, 5)+Q(13, 5)+Q(17, 4)*Q(14, 5))/2
     require(Q(k,12) < Q(17,4)**2 and u+omega < Q(38,100), "trace lower bound")
+    require((1-2*Q(k,n))*Q(31,50)**2 > Q(3,8), "Abel lower bound")
     print(f"PASS normalized real return > 31/50 at K={k}")
 
 
