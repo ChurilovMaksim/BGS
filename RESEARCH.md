@@ -1,5 +1,11 @@
 # BGS research brief
 
+
+## Supplementary reviewed intake (18 November 2026; registry unchanged)
+
+A [scoped audit of the externally supplied six-round packet](evidence/research/20261118_six_round_review/README.md) reproduces its finite round-6 certificates and retains only two independently reconstructed exact subsidiary observations in [the torsion-interference and vertical-channel note](mathematics/fixed-map/torsion_interference_vertical_outliers_20261118.md). In particular, \(\mathcal I_{N,k}(\tau N)\ne0\) for torsion-history traces along \(N=7^j\), \(3N/7\mid k\), has **no proved normalized lower bound**; exceptional vertical singular channels are **not** full oldspace channels. Other substantive packet claims remain research candidates requiring further independent review. No new fixed-map local-statistics theorem or claim-state change is asserted; the 5 November census remains authoritative.
+
+
 ## Summary (5 November 2026)
 
 [README.md](README.md) gives the balanced overview of the whole programme and [RESULTS.md](RESULTS.md) the generated one-page
