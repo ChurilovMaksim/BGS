@@ -1,8 +1,8 @@
 # Review of the six-round fixed-map research packet (18 November 2026)
 
 **Classification:** supplementary research intake / restricted proof audit, **no changes to claim status**.  
-**Base repository:** \`ChurilovMaksim/BGS\`, \`main\` at \`3d21de1f3cca6470e352f4272cf354ee2eb39d4e\` (5 November 2026).  
-**Source:** user-supplied \`BGS_all_runs_2026-11-18_bundle.zip\`; SHA-256 \`557a771f672dde40bce265f80782fe6d73ffa48a9ce2b332d80932a85ee92360\`. The ZIP contains 164 files (including its nested historical editions) and 9,430,504 uncompressed bytes. The 185-page cumulative PDF has SHA-256 \`de56133d9cf1b6116e20cdaf905887a3b8a4c5b4796577c4bf4048c286773160\`; the newest standalone round-6 PDF has 29 pages.
+**Base repository:** `ChurilovMaksim/BGS`, `main` at `3d21de1f3cca6470e352f4272cf354ee2eb39d4e` (5 November 2026).  
+**Source:** user-supplied `BGS_all_runs_2026-11-18_bundle.zip`; SHA-256 `557a771f672dde40bce265f80782fe6d73ffa48a9ce2b332d80932a85ee92360`. The ZIP contains 164 files (including its nested historical editions) and 9,430,504 uncompressed bytes. The 185-page cumulative PDF has SHA-256 `de56133d9cf1b6116e20cdaf905887a3b8a4c5b4796577c4bf4048c286773160`; the newest standalone round-6 PDF has 29 pages.
 
 This intake is **not** a claim that all 185 pages have undergone an independent referee-level analysis. It documents the subset whose proof can be reconstructed from maintained BGS definitions without importing new, unverified analytic dependencies. The historical ZIP/PDF is not copied wholesale into the maintained tree. The original artifact is identified by its immutable digest; the math retained below is self-contained and reproducible.
 
@@ -10,14 +10,16 @@ This intake is **not** a claim that all 185 pages have undergone an independent 
 
 On the **original unpacked ZIP bytes**, not on regenerated/reassembled PDFs:
 
-- \`python verification/verify_certificates.py\`: **passed**; the three round-6 programs confirmed their delivered exact finite outputs (the quadratic midpoint jet, 1,128 translated-field principal-angle pair checks, and 211,008 balanced eight-letter cases). This verifies the finite certificates at their own scope, not the semiclassical deductions subsequently made from them.
-- \`python verification/verify_artifacts.py\`: **passed**; 163 recorded file hashes, 185 PDF pages, 924 named destinations, 619 internal PDF links, zero blank pages, zero replacement-character pages, zero unresolved internal links, and unchanged text of all 156 historical pages.
-- Independent integer modular calculation verified \`S^(3*7^(j-1)) == I mod 7^j\` for j=2,3,4; the accompanying elementary binomial proof works for every j.
-- Separate floating-point checks of the explicit metaplectic M_N at N=49 and 343 observed \`M_N^(3N/7)\` scalar to numerical tolerance. **Illustrative only:** the general assertion follows from exact Egorov and the modular proof, not from these floating-point examples.
+- `python verification/verify_certificates.py`: **passed**; the three round-6 programs confirmed their delivered exact finite outputs (the quadratic midpoint jet, 1,128 translated-field principal-angle pair checks, and 211,008 balanced eight-letter cases). This verifies the finite certificates at their own scope, not the semiclassical deductions subsequently made from them.
+- `python verification/verify_artifacts.py`: **passed**; 163 recorded file hashes, 185 PDF pages, 924 named destinations, 619 internal PDF links, zero blank pages, zero replacement-character pages, zero unresolved internal links, and unchanged text of all 156 historical pages.
+- Independent integer modular calculation verified `S^(3*7^(j-1)) == I mod 7^j` for j=2,3,4; the accompanying elementary binomial proof works for every j.
+- Separate floating-point checks of the explicit metaplectic M_N at N=49 and 343 observed `M_N^(3N/7)` scalar to numerical tolerance. **Illustrative only:** the general assertion follows from exact Egorov and the modular proof, not from these floating-point examples.
 
-No \`git clone\`, full repository checkout, full BGS CI suite, Lean build, or main manuscript build was executed for this intake. The repository was inspected and written through the connected GitHub interface. The attached ZIP's provenance is external to Git; its original programs are not assumed to be authoritative.
+No `git clone`, full repository checkout, full BGS CI suite, Lean build, or main manuscript build was executed for this intake. The repository was inspected and written through the connected GitHub interface. The attached ZIP's provenance is external to Git; its original programs are not assumed to be authoritative.
 
 **Reproducible repository-local arithmetic check:** [finite verifier](../../../computations/verification/torsion_history_20261118/verify_finite_inputs.py); its scope is deliberately narrower than the full proof.
+
+The transcendence input for the accepted exact argument reuses the repository's existing registered `EXT-POPESCU-2023` (Theorem 3.2); no new literature registry entry is needed.
 
 ## 2. Incorporated result: torsion-history interference
 
@@ -64,7 +66,7 @@ The packet uses \(A_N^\mathrm{packet}=A_N^\mathrm{BGS}+\tfrac1{10}I\) in some se
 
 ## 5. Scientific and repository consequences
 
-This review adds **two narrowly scoped mathematical observations** and a reproducible finite-input checker. It does **not** change \`record/claims.json\`, \`record/errata.json\`, any generated status surface, any external-dependency entry, the frozen manuscript, or any pre-existing theorem/proof file.
+This review adds **two narrowly scoped mathematical observations** and a reproducible finite-input checker. It does **not** change `record/claims.json`, `record/errata.json`, any generated status surface, any external-dependency entry, the frozen manuscript, or any pre-existing theorem/proof file.
 
 All 438 registered claims preserve their 5 November states. In particular BGS-BGS-001, BGS-TRACE-005 and BGS-TRACE-206 remain open; BGS-TRACE-325 remains conditional. The main missing mechanism is coherent, model-specific cancellation between **distinct primitive** contributions on the Heisenberg time scale. No result here supplies that estimate.
 
