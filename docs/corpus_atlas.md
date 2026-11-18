@@ -27,7 +27,7 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**376 maintained proof notes; 10 topic views; 438 core claim IDs.**
+**377 maintained proof notes; 10 topic views; 438 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
@@ -42,7 +42,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 177 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 178 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -214,6 +214,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Half-radius obstruction even with reverse-kernel decay](../mathematics/fixed-map/symplectic_half_radius_obstruction.md) | Consult proof and full ledger |
 | [Once-counted distinct-port three-block cancellation](../mathematics/fixed-map/three_block_unmarking.md) | `BGS-TRACE-015` (proved) |
 | [Three-orientation mixed-loop barrier for the pair transform](../mathematics/fixed-map/three_orientation_resolvent_barrier.md) | `BGS-FM-004` (conditional) |
+| [Torsion-history interference and exceptional vertical channels (18 November 2026)](../mathematics/fixed-map/torsion_interference_vertical_outliers_20261118.md) | Consult proof and full ledger |
 | [Uniform bounded cat eigenspaces on N=7*5^e](../mathematics/fixed-map/uniform_cat_multiplicity.md) | Consult proof and full ledger |
 | [Uniform massive covariance and formal connected coefficients](../mathematics/fixed-map/uniform_cluster_lemma.md) | Consult proof and full ledger |
 | [Actual kick simplicity for N=7*5^e](../mathematics/fixed-map/uniform_five_cluster_simplicity.md) | `BGS-FM-025` (proved) |

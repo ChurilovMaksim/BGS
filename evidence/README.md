@@ -1,5 +1,11 @@
 # Evidence and execution scope
 
+
+## Scoped external research intake (18 November 2026)
+
+[Six-round packet review](research/20261118_six_round_review/README.md): the supplied ZIP is identified by SHA-256 and its original files/185-page cumulative PDF passed integrity checks; three finite round-6 certificates were reproduced. Only two self-contained exact subsidiary observations were promoted to a [supplementary mathematics note](../mathematics/fixed-map/torsion_interference_vertical_outliers_20261118.md), with a narrow [repository verifier](../computations/verification/torsion_history_20261118/README.md). The unreviewed long-time deductions, main BGS claim, and registry states are unchanged. The ZIP/PDF is not copied wholesale into maintained evidence.
+
+
 [The 22 October recheck](../record/audits/repository_recheck_20261022/report.md) separates full baseline integrity, executed checks and unavailable suites. Historical negative evidence remains unchanged.
 
 This directory retains promoted finite certificates, diagnostics, preserved

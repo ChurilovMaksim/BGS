@@ -1,5 +1,9 @@
 # Open mathematical obligations
 
+
+The [18 November six-round packet review](../evidence/research/20261118_six_round_review/README.md) adds two exact supplementary restrictions: [torsion-history trace interference and vertical-channel outliers](fixed-map/torsion_interference_vertical_outliers_20261118.md). Neither closes the model-specific signed Heisenberg estimate, the pair limit, or BGS universality; packet-wide analytic claims are not promoted without independent proof audit. Registered states are unchanged.
+
+
 The two questions behind the whole programme are open: microscopic BGS universality for the fixed map (BGS-BGS-001) and the
 signed Heisenberg-scale trace estimate (BGS-TRACE-005, below). The sections that follow list the open inputs line by line,
 newest first; [README.md](../README.md) places them in the full programme.
