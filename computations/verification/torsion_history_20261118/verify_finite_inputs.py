@@ -4,6 +4,9 @@
 These checks verify modular identities and the literal midpoint cubic jet.
 They are not certificates of an asymptotic spectral theorem.
 """
+if not __debug__:
+    raise RuntimeError('Verification requires assertions; run Python without -O/-OO or PYTHONOPTIMIZE.')
+
 from fractions import Fraction as F
 import json
 
