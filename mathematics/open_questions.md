@@ -1,5 +1,16 @@
 # Open mathematical obligations
 
+## 24 November: the remaining signed low-overlap sum
+
+See the [November integration](fixed-map/archive_continuation/README.md). For each
+fixed alignment threshold \(d>1/2\), the high-overlap estimate, pending a full
+audit of its fixed-power analytic inputs, reduces the first pair test to a signed
+sum over paths attaining the threshold at no alignment. The required weighted
+limit is \(-\int_1^2(t-1)w(t)\,dt\), not zero. The full half-overlap boundary
+and the low-overlap limit are not computed. A negative pair defect bounded away
+from zero along infinitely many odd dimensions would refute weak Sine₂, but
+finite positive excesses do not. Both BGS-BGS-001 and BGS-TRACE-005 stay open.
+
 
 The [18 November six-round packet review](../evidence/research/20261118_six_round_review/README.md) adds two exact supplementary restrictions: [torsion-history trace interference and vertical-channel outliers](fixed-map/torsion_interference_vertical_outliers_20261118.md). Neither closes the model-specific signed Heisenberg estimate, the pair limit, or BGS universality; packet-wide analytic claims are not promoted without independent proof audit. Registered states are unchanged.
 

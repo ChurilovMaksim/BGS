@@ -14,16 +14,16 @@ and scope is [`record/claim_ledger.md`](record/claim_ledger.md).
 ## Registered claims
 
 Registry schema `bgs-claims-v1`; registry updated
-**2026-11-05**. **438 registered claims.**
+**2026-11-24**. **448 registered claims.**
 
 | Registered state | Claims |
 |---|---:|
-| proved | 353 |
-| verification-pending | 17 |
+| proved | 356 |
+| verification-pending | 24 |
 | conditional | 25 |
 | open | 42 |
 | refuted | 1 |
-| **Total** | **438** |
+| **Total** | **448** |
 
 “Proved” reports the project registry at its stated scope, not
 external refereeing. The complete per-claim surface is the generated
@@ -44,8 +44,8 @@ external refereeing. The complete per-claim surface is the generated
 | LOOP | 0 | 0 | 1 | 0 | 0 | 1 |
 | RES | 20 | 1 | 1 | 1 | 0 | 23 |
 | RET | 3 | 0 | 1 | 0 | 0 | 4 |
-| TRACE | 255 | 15 | 20 | 38 | 1 | 329 |
-| **Total** | 353 | 17 | 25 | 42 | 1 | **438** |
+| TRACE | 258 | 22 | 20 | 38 | 1 | 339 |
+| **Total** | 356 | 24 | 25 | 42 | 1 | **448** |
 
 ## Open programme obligations
 
@@ -109,11 +109,11 @@ is [`ERRATA.md`](ERRATA.md).
 ## Registry integration record
 
 Epoch record schema `bgs-follow-on-claim-epoch-v1`, base epoch
-`2026-10-07-wave3`, reviewed **2026-10-29**.
-It records 335 follow-on claims adopted after
+`2026-10-07-wave3`, reviewed **2026-11-24**.
+It records 345 follow-on claims adopted after
 wave 3 and 93 historical claim
 amendments admitted through the epoch amendment channel, and an
-external-dependency extension of 29 external IDs.
+external-dependency extension of 30 external IDs.
 
 ## Reading the status surfaces
 

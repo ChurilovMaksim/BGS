@@ -92,7 +92,7 @@ def check_external_epoch(root, epoch):
              'EXT-RS-1962','EXT-BHV-2001','EXT-CARMICHAEL-1913',
              'EXT-VINOGRADOV-1937','EXT-WEYL-1916','EXT-DAVENPORT-1980',
              'EXT-WEIL-1948',
-             'EXT-OSV-2023','EXT-OSV-2024','EXT-CP-2011','EXT-BOURGAIN-2005'}
+             'EXT-OSV-2023','EXT-OSV-2024','EXT-CP-2011','EXT-BOURGAIN-2005','EXT-HUANG-SERT-2022'}
     declared=extension.get('added_ids',[])
     require(len(declared)==len(allowed) and set(declared)==allowed,
             'external extension requires explicit epoch review')

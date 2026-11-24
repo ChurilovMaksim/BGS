@@ -1,21 +1,21 @@
 # BGS programme: what was achieved
 
-*Generated from [`record/claims.json`](record/claims.json) (registry updated 2026-11-05) and [`record/results_spec.json`](record/results_spec.json) by `computations/maintenance/render_results.py`. Do not edit by hand. This page is a summary for navigation. The registry decides every status; see [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md).*
+*Generated from [`record/claims.json`](record/claims.json) (registry updated 2026-11-24) and [`record/results_spec.json`](record/results_spec.json) by `computations/maintenance/render_results.py`. Do not edit by hand. This page is a summary for navigation. The registry decides every status; see [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md).*
 
 ## In one paragraph
 
-This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified quantized, kicked cat map on the torus. **The BGS limit for this map is not proved.** Fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. Around that target, the programme registers 438 precisely scoped claims. 353 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). The work ran in eight phases from September to November 2026: Cayley arithmetic, Pell return laws, resonance cohomology and locality (Phase I); the structure of the fixed map, the exact trace-to-statistics bridge and noisy Dyson comparisons (Phase II); phase channels, clock laws, collision laws and obstructions (Phase III); uniform power-trace bounds for the original kick family (Phase IV); arithmetic Abel spikes and exact random-phase form factors (Phase V); the fixed diagonal kick and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179, Phase VI, Lines B–H); the corrected mean law R′ (BGS-TRACE-206, Phase VII, Lines I–N), which remains **open and is not refuted**; and five integrations on 4–5 November 2026 (Phase VIII, BGS-TRACE-337..355: the span theorem, Lemma W with an explicit H6 threshold that is conditional on squarefree h_p and an assumed normalization u = 1, the H7* scope, the arithmetic of h_p, and Lemma S with the polymer gap lemma, the Binet lattice generator and a conditional H5(b) cross-line constant). The end point of Phase VII, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.
+This repository studies the Bohigas–Giannoni–Schmit (BGS) conjecture for one explicitly specified quantized, kicked cat map on the torus. **The BGS limit for this map is not proved.** Fixed-strength microscopic universality (BGS-BGS-001) and the model-specific signed trace estimate that would close the gap (BGS-TRACE-005) are both **open**. Around that target, the programme registers 448 precisely scoped claims. 356 are proved at their stated scope (project proofs, many computer-assisted, many with an internal independent referee, none externally refereed). The work ran in eight phases from September to November 2026: Cayley arithmetic, Pell return laws, resonance cohomology and locality (Phase I); the structure of the fixed map, the exact trace-to-statistics bridge and noisy Dyson comparisons (Phase II); phase channels, clock laws, collision laws and obstructions (Phase III); uniform power-trace bounds for the original kick family (Phase IV); arithmetic Abel spikes and exact random-phase form factors (Phase V); the fixed diagonal kick and a computer-assisted refutation of Conjecture R at η = 2 (BGS-TRACE-179, Phase VI, Lines B–H); the corrected mean law R′ (BGS-TRACE-206, Phase VII, Lines I–N), which remains **open and is not refuted**; and five integrations on 4–5 November 2026 (Phase VIII, BGS-TRACE-337..355: the span theorem, Lemma W with an explicit H6 threshold that is conditional on squarefree h_p and an assumed normalization u = 1, the H7* scope, the arithmetic of h_p, and Lemma S with the polymer gap lemma, the Binet lattice generator and a conditional H5(b) cross-line constant). The end point of Phase VII, **Theorem R♯-mod v5 (BGS-TRACE-325), is conditional**: it reduces the failure of frozen R′ along m = 3p to explicitly listed open inputs H0, H1 and H5–H8.
 
 ## Status at a glance
 
 | Registered state | Claims | Meaning |
 |---|---:|---|
-| proved | 353 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
-| verification-pending | 17 | Argument or computation exists; an independent check is outstanding |
+| proved | 356 | Project proof at the stated scope, including computer-assisted proofs; not external refereeing |
+| verification-pending | 24 | Argument or computation exists; an independent check is outstanding |
 | conditional | 25 | Proved implication from stated hypotheses that are themselves open |
 | open | 42 | Conjecture, hypothesis or programme obligation without a proof |
 | refuted | 1 | Shown false as stated |
-| **total** | **438** | |
+| **total** | **448** | |
 
 182 non-open claims link Lean 4 files, out of 197 modules in `formalization/Bgs`. Lean certifies the finite or arithmetic statements named in each claim boundary, not the full analytic arguments.
 
@@ -32,6 +32,23 @@ These are the questions the programme set out to answer. None of them is settled
 | `BGS-BGS-001` | **open** | Fixed-strength microscopic BGS universality for the maintained frozen map | — | [fixed_map_resolvent_frontier.md](mathematics/fixed-map/fixed_map_resolvent_frontier.md) |
 | `BGS-TRACE-005` | **open** | Signed Heisenberg-scale desymmetrized joint-trace estimate (the model-specific gap to BGS) | statement only | [open_questions.md](mathematics/open_questions.md) |
 | `BGS-TRACE-148` | **open** | Scaling limit of the Haar diagonal-phase cat-map form factor | — | [random_phase_encounter_pairs.md](mathematics/fixed-map/random_phase_encounter_pairs.md) |
+
+### Post-Phase VIII (24 November): fixed-map BGS-F continuation
+
+Finite witnesses and scoped advances on the fixed-map route. Entries pending verification do not close a programme obligation.
+
+| Claim | State | Result (short label) | Lean | Source |
+|---|---|---|---|---|
+| `BGS-TRACE-356` | **verification-pending** | Fixed-map once-counted signed alignment above half overlap | — | [README.md](mathematics/fixed-map/archive_continuation/alignment/README.md) |
+| `BGS-TRACE-357` | **verification-pending** | Sparse coherent histories and their scalar-trace limitation | — | [README.md](mathematics/fixed-map/archive_continuation/histories/README.md) |
+| `BGS-TRACE-358` | **verification-pending** | Relative single-step torsion transport and exact cross-sector leakage | — | [README.md](mathematics/fixed-map/archive_continuation/torsion_transport/README.md) |
+| `BGS-TRACE-359` | **verification-pending** | Positive-density exact phase rank on seven-power dimensions | — | [README.md](mathematics/fixed-map/archive_continuation/relation_rank/README.md) |
+| `BGS-TRACE-360` | **verification-pending** | Second-order primitive splitting and simple-phase fraction on seven powers | — | [README.md](mathematics/fixed-map/archive_continuation/exact_splitting/README.md) |
+| `BGS-TRACE-361` | **verification-pending** | Explicit nonzero-gap floor for the exact kicked family | — | [README.md](mathematics/fixed-map/archive_continuation/effective_gaps/README.md) |
+| `BGS-TRACE-362` | **proved** | Strengthened finite band-two witness at the Pell dimension h207 | — | [README.md](mathematics/fixed-map/archive_continuation/pell/README.md) |
+| `BGS-TRACE-363` | **verification-pending** | Finite Pell h209 transfer and bounded-local and Abel witnesses | — | [README.md](mathematics/fixed-map/archive_continuation/pell/README.md) |
+| `BGS-TRACE-364` | **proved** | Microscopic norm transfer for the designated weight and sharp abstract examples | — | [README.md](mathematics/fixed-map/archive_continuation/resolution_precision/README.md) |
+| `BGS-TRACE-365` | **proved** | One-sided weak-law constraints and recovery of all second-order tests | — | [README.md](mathematics/fixed-map/archive_continuation/pair_implications/README.md) |
 
 ### Phase I (September 2026): Cayley arithmetic, Pell returns, resonance, locality
 

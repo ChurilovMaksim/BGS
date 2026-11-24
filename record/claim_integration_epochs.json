@@ -1,7 +1,7 @@
 {
   "schema": "bgs-follow-on-claim-epoch-v1",
   "base_epoch": "2026-10-07-wave3",
-  "reviewed_on": "2026-10-29",
+  "reviewed_on": "2026-11-24",
   "purpose": "Explicit state/source lineage through the already adopted 19 October research; earlier reviews do not certify later claims.",
   "after_wave3": [
     {
@@ -2069,6 +2069,66 @@
       "state": "conditional",
       "source": "computations/verification/lemma_s/REPORT_LEMMA_S.md",
       "disposition": "5 November 2026 (Lemma S integration from research1105b; only the results confirmed by its independent internal referee, in the referee's corrected statements): conditional (H5(b) cross lines: a uniform |X_line| <= C e^{-cp}, C <= 1, c >= 0.058 fits the idealised V5/TRACE-333 room at p = 1409 and 3307 recomputed on main; the source's 0.048 is wrong; constant [CA]). No existing claim is edited; H5 (TRACE-303) stays open, H6 (TRACE-304) stays open, TRACE-325 stays conditional, nothing is claimed about R' (TRACE-206); the seam-decay threshold r < 0.418 and every [N]/[H]/[C] item of the source are not registered."
+    },
+    {
+      "id": "BGS-TRACE-356",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/archive_continuation/alignment/README.md",
+      "disposition": "24 November BGS-F archive integration. For each fixed d>1/2 and m>=ceil(log N), with direct and reverse alignments. Relies on the fixed-power semiclassical and compression inputs of Contacts (4),(7), still requiring a separate complete audit. At d=1/2 only a specified half-turn intersection is treated. The residual and the Heisenberg pair limit remain open."
+    },
+    {
+      "id": "BGS-TRACE-357",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/archive_continuation/histories/README.md",
+      "disposition": "24 November BGS-F archive integration. Exact model; sector histories require L^2|N, the Weyl-label variant covers odd N. Sparse short times and all tested powers do not control the scalar trace or the O(N/s) accumulated error. The finite check does not verify the analytic word bound."
+    },
+    {
+      "id": "BGS-TRACE-358",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/archive_continuation/torsion_transport/README.md",
+      "disposition": "24 November BGS-F archive integration. Equal-rank Weyl sectors, L^2|N; relative O_tau(N^(-1/6000)) for L<=N^(1/20000). Exact nonintersection concerns algebraic nonzero kick time and all character pairs. Neither a quantitative uniform escape angle nor a long-time estimate."
+    },
+    {
+      "id": "BGS-TRACE-359",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/archive_continuation/relation_rank/README.md",
+      "disposition": "24 November BGS-F archive integration. N=7^k, k>=4, selected 180*7^(k-4) simple phases. Multiplicative independence modulo nonzero algebraic numbers is not quantitative separation, nor a Heisenberg-window statement. Finite rank checks cover k=4,5,6."
+    },
+    {
+      "id": "BGS-TRACE-360",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/archive_continuation/exact_splitting/README.md",
+      "disposition": "24 November BGS-F archive integration. N=7^k only. Exact algebraic specialization of a first- or second-order splitting gives a liminf at least 18867/19208 for the simple-phase fraction after including deeper clusters. Not a statement about close distinct gaps or all odd N."
+    },
+    {
+      "id": "BGS-TRACE-361",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/archive_continuation/effective_gaps/README.md",
+      "disposition": "24 November BGS-F archive integration. Arbitrary odd N, only nonzero gaps. Uses an effective transcendence bound and yields averaging control only far beyond the Heisenberg scale. N=49 interval checks do not validate this all-N arithmetic height argument."
+    },
+    {
+      "id": "BGS-TRACE-362",
+      "state": "proved",
+      "source": "mathematics/fixed-map/archive_continuation/pell/README.md",
+      "disposition": "24 November BGS-F archive integration. Finite exact arithmetic and analytic return estimates at the fixed kick. Full CUE subtraction included: Delta_2(h207;b_*)>6121/250000. Not a positive lower bound on an infinite subsequence."
+    },
+    {
+      "id": "BGS-TRACE-363",
+      "state": "verification-pending",
+      "source": "mathematics/fixed-map/archive_continuation/pell/README.md",
+      "disposition": "24 November BGS-F archive integration. Exact fixed kick at h209 only. Normalized m=209 trace above 1.8e-5, and finite Abel and bounded local witnesses. Not the band-two pair statistic at h209. Rational replay uses recorded diagonals; the exact powering replay is separately scoped."
+    },
+    {
+      "id": "BGS-TRACE-364",
+      "state": "proved",
+      "source": "mathematics/fixed-map/archive_continuation/resolution_precision/README.md",
+      "disposition": "24 November BGS-F archive integration. General unitary pair comparison for the specified positive autocorrelation and o(1/N) operator error; weak law transfer for o(1) trace norm. At the O(1/N) threshold the obstruction uses altered matrices and does not refute universality of the actual kick."
+    },
+    {
+      "id": "BGS-TRACE-365",
+      "state": "proved",
+      "source": "mathematics/fixed-map/archive_continuation/pair_implications/README.md",
+      "disposition": "24 November BGS-F archive integration. General phases with uniform common shift; implications only. Weak Sine2 forces a nonnegative liminf defect on every continuous nonnegative pair test and vanishing normalized traces uniformly to C N. One designated pair equality plus the weak law yields all second-order statistics. Neither hypothesis is established for the exact map."
     }
   ],
   "invariants": [
@@ -2077,7 +2137,7 @@
     "New entries are not automatically classified as theorems and do not imply a BGS local law."
   ],
   "external_dependency_extension": {
-    "reviewed_on": "2026-10-31",
+    "reviewed_on": "2026-11-24",
     "historical_registry": "archive/evidence/executions/20261011/chat-research/baselines/external_dependencies_20261007.json",
     "added_ids": [
       "EXT-OO-1997",
@@ -2108,9 +2168,10 @@
       "EXT-OSV-2023",
       "EXT-OSV-2024",
       "EXT-CP-2011",
-      "EXT-BOURGAIN-2005"
+      "EXT-BOURGAIN-2005",
+      "EXT-HUANG-SERT-2022"
     ],
-    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Twenty-nine explicitly reviewed later inputs are admitted (EXT-RS-1962, EXT-BHV-2001 and EXT-CARMICHAEL-1913 on 2026-10-31 in the owner audit of PR #60, Line I; EXT-VINOGRADOV-1937, EXT-WEYL-1916 and EXT-DAVENPORT-1980 on 2026-10-31 in the Line J integration; EXT-WEIL-1948 on 2026-10-31 in the Line K integration; the last four, EXT-OSV-2023, EXT-OSV-2024, EXT-CP-2011 and EXT-BOURGAIN-2005, on 2026-10-31 in the Lines M/N integration); source review dates and limits remain in the selected snapshot.",
+    "scope": "All 39 historical theorem contracts remain field-identical, apart from provenance-only metadata_audit pointers checked separately by the metadata guard. Twenty-nine explicitly reviewed later inputs are admitted (EXT-RS-1962, EXT-BHV-2001 and EXT-CARMICHAEL-1913 on 2026-10-31 in the owner audit of PR #60, Line I; EXT-VINOGRADOV-1937, EXT-WEYL-1916 and EXT-DAVENPORT-1980 on 2026-10-31 in the Line J integration; EXT-WEIL-1948 on 2026-10-31 in the Line K integration; the last four, EXT-OSV-2023, EXT-OSV-2024, EXT-CP-2011 and EXT-BOURGAIN-2005, on 2026-10-31 in the Lines M/N integration); source review dates and limits remain in the selected snapshot. Huang–Sert theorem locator reviewed on 24 November; its exact model application remains verification-pending.",
     "source_reviews": [
       "literature/abel_gaussian_sources_20261016.md",
       "literature/chat_integration_sources_20261016.md",
@@ -2121,7 +2182,8 @@
       "literature/lineI_sources_20261031.md",
       "literature/lineJ_sources_20261031.md",
       "literature/lineK_sources_20261031.md",
-      "literature/lineMN_sources_20261031.md"
+      "literature/lineMN_sources_20261031.md",
+      "record/audits/metadata_cache_refresh_20261124/report.md"
     ]
   },
   "historical_claim_amendments": [

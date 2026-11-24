@@ -1,6 +1,6 @@
 {
   "schema": "bgs-claims-v1",
-  "updated": "2026-11-05",
+  "updated": "2026-11-24",
   "status_authority": "record/claims.json",
   "id_policy": {
     "format": "BGS-<AREA>-<NNN>",
@@ -11429,6 +11429,239 @@
       "formalization": [],
       "manuscript": [],
       "closure_condition": "Prove the uniform cross-line bound |X_line| <= C e^{-c p} with C <= 1 and c >= 0.058 on every cross line at p = 1409 and p = 3307 (in particular on lines with small min(d_+, d_-) and on the axis sub-line, which BGS-TRACE-352/353 do not control), and bound the additive budgets |Y|, |X_tail| of BGS-TRACE-325; or show that no such bound holds."
+    },
+    {
+      "id": "BGS-TRACE-356",
+      "title": "Fixed-map once-counted signed alignment above half overlap",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION PENDING; SOURCE-LEVEL REVIEW AND FINITE CONTROLS DO NOT DISCHARGE ALL INPUTS",
+      "source": "mathematics/fixed-map/archive_continuation/alignment/README.md",
+      "dependencies": [
+        "BGS-TRACE-113",
+        "BGS-FM-021",
+        "BGS-FM-022"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261124/bgs_f_november/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/bgs_f_november/alignment/check.py",
+        "computations/verification/bgs_f_november/contacts/recheck.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/november_fixed_map_continuation.tex"
+      ],
+      "boundary": "For each fixed d>1/2 and m>=ceil(log N), with direct and reverse alignments. Relies on the fixed-power semiclassical and compression inputs of Contacts (4),(7), still requiring a separate complete audit. At d=1/2 only a specified half-turn intersection is treated. The residual and the Heisenberg pair limit remain open."
+    },
+    {
+      "id": "BGS-TRACE-357",
+      "title": "Sparse coherent histories and their scalar-trace limitation",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION PENDING; SOURCE-LEVEL REVIEW AND FINITE CONTROLS DO NOT DISCHARGE ALL INPUTS",
+      "source": "mathematics/fixed-map/archive_continuation/histories/README.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261124/bgs_f_november/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/bgs_f_november/histories/check.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/november_fixed_map_continuation.tex"
+      ],
+      "boundary": "Exact model; sector histories require L^2|N, the Weyl-label variant covers odd N. Sparse short times and all tested powers do not control the scalar trace or the O(N/s) accumulated error. The finite check does not verify the analytic word bound."
+    },
+    {
+      "id": "BGS-TRACE-358",
+      "title": "Relative single-step torsion transport and exact cross-sector leakage",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION PENDING; SOURCE-LEVEL REVIEW AND FINITE CONTROLS DO NOT DISCHARGE ALL INPUTS",
+      "source": "mathematics/fixed-map/archive_continuation/torsion_transport/README.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261124/bgs_f_november/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/bgs_f_november/torsion_transport/check.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/november_fixed_map_continuation.tex"
+      ],
+      "boundary": "Equal-rank Weyl sectors, L^2|N; relative O_tau(N^(-1/6000)) for L<=N^(1/20000). Exact nonintersection concerns algebraic nonzero kick time and all character pairs. Neither a quantitative uniform escape angle nor a long-time estimate."
+    },
+    {
+      "id": "BGS-TRACE-359",
+      "title": "Positive-density exact phase rank on seven-power dimensions",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION PENDING; SOURCE-LEVEL REVIEW AND FINITE CONTROLS DO NOT DISCHARGE ALL INPUTS",
+      "source": "mathematics/fixed-map/archive_continuation/relation_rank/README.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261124/bgs_f_november/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/bgs_f_november/relation_rank/check.py",
+        "computations/verification/bgs_f_november/relation_rank/check_rank.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/november_fixed_map_continuation.tex"
+      ],
+      "boundary": "N=7^k, k>=4, selected 180*7^(k-4) simple phases. Multiplicative independence modulo nonzero algebraic numbers is not quantitative separation, nor a Heisenberg-window statement. Finite rank checks cover k=4,5,6."
+    },
+    {
+      "id": "BGS-TRACE-360",
+      "title": "Second-order primitive splitting and simple-phase fraction on seven powers",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION PENDING; SOURCE-LEVEL REVIEW AND FINITE CONTROLS DO NOT DISCHARGE ALL INPUTS",
+      "source": "mathematics/fixed-map/archive_continuation/exact_splitting/README.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261124/bgs_f_november/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/bgs_f_november/exact_splitting/check.py",
+        "computations/verification/bgs_f_november/exact_splitting/check_matrix.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/november_fixed_map_continuation.tex"
+      ],
+      "boundary": "N=7^k only. Exact algebraic specialization of a first- or second-order splitting gives a liminf at least 18867/19208 for the simple-phase fraction after including deeper clusters. Not a statement about close distinct gaps or all odd N."
+    },
+    {
+      "id": "BGS-TRACE-361",
+      "title": "Explicit nonzero-gap floor for the exact kicked family",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION PENDING; SOURCE-LEVEL REVIEW AND FINITE CONTROLS DO NOT DISCHARGE ALL INPUTS",
+      "source": "mathematics/fixed-map/archive_continuation/effective_gaps/README.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [
+        "EXT-HUANG-SERT-2022"
+      ],
+      "evidence": [
+        "evidence/executions/20261124/bgs_f_november/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/bgs_f_november/effective_gaps/check_intervals.py",
+        "computations/verification/bgs_f_november/effective_gaps/check_matrix.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/november_fixed_map_continuation.tex"
+      ],
+      "boundary": "Arbitrary odd N, only nonzero gaps. Uses an effective transcendence bound and yields averaging control only far beyond the Heisenberg scale. N=49 interval checks do not validate this all-N arithmetic height argument."
+    },
+    {
+      "id": "BGS-TRACE-362",
+      "title": "Strengthened finite band-two witness at the Pell dimension h207",
+      "state": "proved",
+      "ledger_status": "PROVED AT THE SCOPED PROJECT LEVEL; NOT EXTERNALLY REFEREED",
+      "source": "mathematics/fixed-map/archive_continuation/pell/README.md",
+      "dependencies": [
+        "BGS-FM-001"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261124/bgs_f_november/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/bgs_f_november/spacings/certify.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/november_fixed_map_continuation.tex"
+      ],
+      "boundary": "Finite exact arithmetic and analytic return estimates at the fixed kick. Full CUE subtraction included: Delta_2(h207;b_*)>6121/250000. Not a positive lower bound on an infinite subsequence."
+    },
+    {
+      "id": "BGS-TRACE-363",
+      "title": "Finite Pell h209 transfer and bounded-local and Abel witnesses",
+      "state": "verification-pending",
+      "ledger_status": "VERIFICATION PENDING; SOURCE-LEVEL REVIEW AND FINITE CONTROLS DO NOT DISCHARGE ALL INPUTS",
+      "source": "mathematics/fixed-map/archive_continuation/pell/README.md",
+      "dependencies": [
+        "BGS-FM-001",
+        "BGS-TRACE-113"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261124/bgs_f_november/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/bgs_f_november/research/verify.py",
+        "computations/verification/bgs_f_november/research/reproduce.py",
+        "computations/verification/bgs_f_november/research/comparison_float.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/november_fixed_map_continuation.tex"
+      ],
+      "boundary": "Exact fixed kick at h209 only. Normalized m=209 trace above 1.8e-5, and finite Abel and bounded local witnesses. Not the band-two pair statistic at h209. Rational replay uses recorded diagonals; the exact powering replay is separately scoped."
+    },
+    {
+      "id": "BGS-TRACE-364",
+      "title": "Microscopic norm transfer for the designated weight and sharp abstract examples",
+      "state": "proved",
+      "ledger_status": "PROVED AT THE SCOPED PROJECT LEVEL; NOT EXTERNALLY REFEREED",
+      "source": "mathematics/fixed-map/archive_continuation/resolution_precision/README.md",
+      "dependencies": [
+        "BGS-TRACE-115"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261124/bgs_f_november/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/bgs_f_november/resolution_precision/check.py",
+        "computations/verification/bgs_f_november/resolution_precision/check_matrix.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/november_fixed_map_continuation.tex"
+      ],
+      "boundary": "General unitary pair comparison for the specified positive autocorrelation and o(1/N) operator error; weak law transfer for o(1) trace norm. At the O(1/N) threshold the obstruction uses altered matrices and does not refute universality of the actual kick."
+    },
+    {
+      "id": "BGS-TRACE-365",
+      "title": "One-sided weak-law constraints and recovery of all second-order tests",
+      "state": "proved",
+      "ledger_status": "PROVED AT THE SCOPED PROJECT LEVEL; NOT EXTERNALLY REFEREED",
+      "source": "mathematics/fixed-map/archive_continuation/pair_implications/README.md",
+      "dependencies": [
+        "BGS-RES-006",
+        "BGS-TRACE-003"
+      ],
+      "external_dependencies": [],
+      "evidence": [
+        "evidence/executions/20261124/bgs_f_november/README.md"
+      ],
+      "verifiers": [
+        "computations/verification/bgs_f_november/research/verify.py"
+      ],
+      "formalization": [],
+      "manuscript": [
+        "manuscript/unified_sections/november_fixed_map_continuation.tex"
+      ],
+      "boundary": "General phases with uniform common shift; implications only. Weak Sine2 forces a nonnegative liminf defect on every continuous nonnegative pair test and vanishing normalized traces uniformly to C N. One designated pair equality plus the weak law yields all second-order statistics. Neither hypothesis is established for the exact map."
     }
   ],
   "registry_scope": "Core load-bearing claims, theorem bridges and open programme obligations. This registry controls registered statuses; record/claim_ledger.md explains dated changes and may describe additional scoped results without a stable core ID. See SOURCE_OF_TRUTH.md."

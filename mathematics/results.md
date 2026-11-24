@@ -588,7 +588,7 @@ controlled by claims.json; the complete per-claim surface, with
 boundaries and closure conditions, is the generated
 [claim registry](../record/claim_registry.md).
 
-**438 registered claims: 353 proved, 17 verification-pending, 25 conditional, 42 open, 1 refuted.**
+**448 registered claims: 356 proved, 24 verification-pending, 25 conditional, 42 open, 1 refuted.**
 
 ### BGS family (1 claim)
 
@@ -754,7 +754,7 @@ boundaries and closure conditions, is the generated
 | `BGS-RET-003` | **CONDITIONAL** | Noncommuting return words: all-orders quantum conjugacy under the exact return identity |
 | `BGS-RET-004` | **PROVED** | Explicit return-word example: certified disjoint tower and nonzero bracket with Gamma_T(g)=0 |
 
-### TRACE family (329 claims)
+### TRACE family (339 claims)
 
 | Claim | State | Title |
 |---|---|---|
@@ -1087,5 +1087,15 @@ boundaries and closure conditions, is the generated
 | `BGS-TRACE-353` | **PROVED** | Polymer gap lemma, explicit constant [P]: on a cross line (setting of BGS-TRACE-352), omega = zeta_p^{(p+1)/2}, if f = F(omega) lies in the line lattice with F = sum_{k<=K} a_k x^k in Z[x], \|a_k\| <= A, and f is not divisible by eta_+ eta_- = omega^4 - 6 omega^2 + 1 = zeta^2 - 6 zeta + 1, then K > log_eps min(d_+, d_-) - 2 log_eps A - 1.214 (exact constant log_eps(eps^2/2) = 1.21356...) |
 | `BGS-TRACE-354` | **PROVED** | Binet lattice generator [P]: for an odd prime p, s = +-1 and omega = zeta_p^{(p+1)/2}, eta_s = omega^2 - 2 s omega - 1 = zeta - 1 - 2 s zeta^{(p+1)/2} has N_{Q(zeta_p)/Q}(eta_s) = +h_p, N(zeta^2 - 6 zeta + 1) = h_p^2, and (eta_s) is the Binet-line lattice in Z[zeta_p] (kernel of zeta -> lambda into O/abar, abar = (Phi_p(s eps)), eps^p = s mod abar); in Z[x]/(x^p - 1) the line lattice is (eta_s) + (Phi_p(x)) and (eta_s) alone has index 2 h_p |
 | `BGS-TRACE-355` | **CONDITIONAL** | H5(b) cross-line sufficiency at p = 1409 and p = 3307 (conditional; constant [CA]): a uniform bound \|X_line\| <= C e^{-c p} on every cross line with C <= 1 and c >= 0.058 fits the idealised V5/TRACE-333 room at p = 1409 (robust delta) and p = 3307 (fragile delta); the source's c > 0.048 is wrong |
+| `BGS-TRACE-356` | **VERIFICATION-PENDING** | Fixed-map once-counted signed alignment above half overlap |
+| `BGS-TRACE-357` | **VERIFICATION-PENDING** | Sparse coherent histories and their scalar-trace limitation |
+| `BGS-TRACE-358` | **VERIFICATION-PENDING** | Relative single-step torsion transport and exact cross-sector leakage |
+| `BGS-TRACE-359` | **VERIFICATION-PENDING** | Positive-density exact phase rank on seven-power dimensions |
+| `BGS-TRACE-360` | **VERIFICATION-PENDING** | Second-order primitive splitting and simple-phase fraction on seven powers |
+| `BGS-TRACE-361` | **VERIFICATION-PENDING** | Explicit nonzero-gap floor for the exact kicked family |
+| `BGS-TRACE-362` | **PROVED** | Strengthened finite band-two witness at the Pell dimension h207 |
+| `BGS-TRACE-363` | **VERIFICATION-PENDING** | Finite Pell h209 transfer and bounded-local and Abel witnesses |
+| `BGS-TRACE-364` | **PROVED** | Microscopic norm transfer for the designated weight and sharp abstract examples |
+| `BGS-TRACE-365` | **PROVED** | One-sided weak-law constraints and recovery of all second-order tests |
 
 <!-- END GENERATED: registered family tables (render_status.py) -->

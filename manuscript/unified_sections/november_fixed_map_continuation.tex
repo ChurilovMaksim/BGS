@@ -1,0 +1,67 @@
+\section{November continuation at the fixed map}
+\label{sec:november-fixed-map-continuation}
+
+The continuation uses the original \(U_N=\exp(i\tau N A_N)M_N\) with
+\(\tau=10^{-80}\) unless otherwise stated. All comparisons below use the
+same mean-spacing unfolding. Exact finite witnesses, conditional
+implications, and shrinking-coupling results are kept separate.
+
+\paragraph{The pair problem after the alignment reduction.}
+For a fixed \(d>1/2\), consider the signed sum over pairs of closed paths
+having at least \(dm\) coordinate matches in some direct or reversed
+cyclic alignment, counting each pair once. The proposed control
+(BGS-TRACE-356, verification pending) removes intersections by folding
+short relative orders into a bounded number of threads and by bounding
+long relative orders by a count of independent labels. Above half
+overlap, a multiple intersection enforces a positive density of triple
+contacts. The estimates depend on the contact chapter's fixed-power
+semiclassical comparison and summable compression bound. Taking them
+as inputs, the signed sum equals \(m+O_d(e^{-c_d m})\) for
+\(m\ge\lceil\log N\rceil\), and the noncyclic part of that class has
+exponentially small signed mass. This is not a statement about the
+complete boundary \(d=1/2\).
+
+Write \(R_{m,N}(d)\) for the sum over the excluded class, which reaches
+the threshold at no alignment. For the fixed band-two pair weight,
+the remaining task on this route is
+\[
+  N^{-2}\sum_{\lceil\log N\rceil\le m<2N}w(m/N)R_{m,N}(d)
+  \longrightarrow -\int_1^2(t-1)w(t)\,dt .
+\]
+The right-hand side is strictly negative. Neither pointwise unsigned
+estimates nor exact short-history orthogonality evaluate this sum.
+
+\paragraph{Finite and arithmetic controls.}
+The finite band-two comparison at \(h_{207}\) has a strengthened lower
+bound \(0.024484\) (BGS-TRACE-362). A different finite certificate at
+\(h_{209}\) gives a normalized return trace larger than
+\(1.8\cdot10^{-5}\) at \(m=209\) and a discrepancy from Sine\(_2\) for a
+bounded local test (BGS-TRACE-363, verification pending). It is not
+a band-two witness at that dimension and cannot supply an infinite
+positive lower bound on the same Pell return: BGS-TRACE-113 bounds
+those normalized traces by a quantity tending to zero.
+
+The scoped arithmetic notes treat single-step transfer between
+torsion sectors, simple phases and independent phase monomials on
+\(7^k\), and an effective but extremely small lower bound on nonzero
+gaps (BGS-TRACE-358--361, verification pending). An exact nonresonance
+or a fixed-dimension long-time average does not control close
+resonances for \(m\asymp N\).
+
+\paragraph{Transfer and weak versus moment limits.}
+For the specified positive autocorrelation weight, \(o(1/N)\) in
+operator norm transfers the pair test in both directions; \(o(1)\) in
+trace norm transfers a weak local law. At \(O(1/N)\), auxiliary
+determinant-preserving rounded spectra can retain prescribed short
+traces and have a different weak law (BGS-TRACE-364). This is a
+limitation of the approximation, not a counterexample for \(U_N\).
+Weak Sine\(_2\) convergence forces a lower bound for every nonnegative
+pair test by truncation; a persistent negative defect would therefore
+refute weak convergence without assuming convergence of second
+moments. Weak convergence plus the specified pair test implies the
+other pair tests, while weak convergence alone does not (BGS-TRACE-365).
+
+\noindent
+\href{https://github.com/ChurilovMaksim/BGS/tree/main/mathematics/fixed-map/archive_continuation}
+{Maintained scope notes and replay links.}
+BGS-BGS-001 and BGS-TRACE-005 remain open.

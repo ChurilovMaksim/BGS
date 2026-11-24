@@ -1,0 +1,63 @@
+{
+  "lag_fraction_denominator": 32768,
+  "uniform_weight_lower": "1/2048",
+  "CUE_baseline_upper": "27/32",
+  "BGS_pair_defect_lower": "101/32",
+  "occupancy_upper": "1/16384",
+  "paired_grid_difference_coefficients": [
+    "3/4",
+    "-3/4",
+    "0",
+    "-3/4"
+  ],
+  "short_trace_fixtures": [
+    {
+      "N": 11,
+      "equal_trace_indices": 4
+    },
+    {
+      "N": 15,
+      "equal_trace_indices": 6
+    },
+    {
+      "N": 23,
+      "equal_trace_indices": 10
+    },
+    {
+      "N": 39,
+      "equal_trace_indices": 18
+    }
+  ],
+  "rounding_error_budgets": [
+    {
+      "K": 1,
+      "fractional_coordinates_bound": 3,
+      "sum_square": 1,
+      "sum_fourth": 1
+    },
+    {
+      "K": 2,
+      "fractional_coordinates_bound": 5,
+      "sum_square": 5,
+      "sum_fourth": 17
+    },
+    {
+      "K": 5,
+      "fractional_coordinates_bound": 11,
+      "sum_square": 55,
+      "sum_fourth": 979
+    },
+    {
+      "K": 20,
+      "fractional_coordinates_bound": 41,
+      "sum_square": 2870,
+      "sum_fourth": 722666
+    },
+    {
+      "K": 49,
+      "fractional_coordinates_bound": 99,
+      "sum_square": 40425,
+      "sum_fourth": 59416665
+    }
+  ]
+}

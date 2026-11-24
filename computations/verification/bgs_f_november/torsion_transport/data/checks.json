@@ -1,0 +1,46 @@
+{
+  "relative_gain": "303/1600000",
+  "nonzero_fourier_modes": 32,
+  "examples": [
+    {
+      "N": 9,
+      "L": 3,
+      "rank": 1,
+      "exact_zero_edges": 1,
+      "largest_return_probability_at_tau_0_008": 0.9980820037673027,
+      "smallest_return_probability_at_tau_0_008": 0.997661995184453
+    },
+    {
+      "N": 45,
+      "L": 3,
+      "rank": 5,
+      "exact_zero_edges": 1,
+      "largest_return_probability_at_tau_0_008": 0.9533727328408229,
+      "smallest_return_probability_at_tau_0_008": 0.9444761598876156
+    },
+    {
+      "N": 49,
+      "L": 7,
+      "rank": 1,
+      "exact_zero_edges": 7,
+      "largest_return_probability_at_tau_0_008": 0.9999584244844044,
+      "smallest_return_probability_at_tau_0_008": 0.9971909828261337
+    },
+    {
+      "N": 147,
+      "L": 7,
+      "rank": 3,
+      "exact_zero_edges": 7,
+      "largest_return_probability_at_tau_0_008": 0.9894403673825631,
+      "smallest_return_probability_at_tau_0_008": 0.9894047941461132
+    },
+    {
+      "N": 343,
+      "L": 7,
+      "rank": 7,
+      "exact_zero_edges": 7,
+      "largest_return_probability_at_tau_0_008": 0.9443203338813555,
+      "smallest_return_probability_at_tau_0_008": 0.9443203301953602
+    }
+  ]
+}
