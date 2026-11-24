@@ -58,7 +58,7 @@ def check_external_epoch(root, epoch):
     duplicate (id, field) pair, an attempt to amend 'id' or
     'metadata_audit', or any malformed row fails loudly, never silently.
 
-    The 29 admitted-later ids are NOT byte-compared here, by design of the
+    The 30 admitted-later ids are NOT byte-compared here, by design of the
     pre-existing seal: only their declared set is checked (declared ==
     allowed, total id set == sealed + allowed). Their field values are
     covered instead by scientific_registry_audit.py (require_path on every
