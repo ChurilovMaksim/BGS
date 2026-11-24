@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "N": 2,
+      "m": 9,
+      "denominator": 3814697265625,
+      "pairs_compared": 262144,
+      "windows": [
+        {
+          "L": 1,
+          "aligned_total": 3814656912018,
+          "aligned_equal_edges": 3814656912018
+        },
+        {
+          "L": 2,
+          "aligned_total": 3818926158930,
+          "aligned_equal_edges": 3814656912018
+        },
+        {
+          "L": 3,
+          "aligned_total": 3823195405842,
+          "aligned_equal_edges": 13944536051346
+        },
+        {
+          "L": 4,
+          "aligned_total": 3777279219666,
+          "aligned_equal_edges": 21221989693074
+        }
+      ]
+    },
+    {
+      "N": 3,
+      "m": 7,
+      "denominator": 4782969,
+      "pairs_compared": 4782969,
+      "windows": [
+        {
+          "L": 1,
+          "aligned_total": 4778595,
+          "aligned_equal_edges": 4778595
+        },
+        {
+          "L": 2,
+          "aligned_total": 4533651,
+          "aligned_equal_edges": 4778595
+        },
+        {
+          "L": 3,
+          "aligned_total": 4778595,
+          "aligned_equal_edges": 7790499
+        }
+      ]
+    }
+  ],
+  "interval_rank_cases": 21228
+}

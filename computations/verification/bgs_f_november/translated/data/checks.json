@@ -1,0 +1,65 @@
+{
+  "exact_products": 72927,
+  "exact_7_adic_orders": 330,
+  "diagnostics": [
+    {
+      "N": 9,
+      "d": 3,
+      "filter_length": 4,
+      "identity_error": 3.8641818406002195e-16,
+      "filter_violation": 0.0,
+      "projector_norms_squared": [
+        0.8185007401320312,
+        0.8187066963688512,
+        0.46828143804420036,
+        0.2519563490871438
+      ]
+    },
+    {
+      "N": 25,
+      "d": 5,
+      "filter_length": 5,
+      "identity_error": 1.9360981300956223e-16,
+      "filter_violation": 0.0,
+      "projector_norms_squared": [
+        0.8268258107695129,
+        0.8125985947581714,
+        0.4114181201580787,
+        0.6942546542533489
+      ]
+    },
+    {
+      "N": 49,
+      "d": 7,
+      "filter_length": 6,
+      "identity_error": 1.0113680457347538e-15,
+      "filter_violation": 0.0,
+      "projector_norms_squared": [
+        0.9994261965081547,
+        0.4400462584424125,
+        0.00015321947235088452,
+        0.9994623514272841
+      ]
+    }
+  ],
+  "linear_diagnostics": [
+    {
+      "N": 49,
+      "s": 3,
+      "support": 49,
+      "amplitude_error": 8.326672684688674e-17
+    },
+    {
+      "N": 343,
+      "s": 3,
+      "support": 2401,
+      "amplitude_error": 2.42861286636753e-17
+    },
+    {
+      "N": 343,
+      "s": 21,
+      "support": 49,
+      "amplitude_error": 5.273559366969494e-16
+    }
+  ]
+}

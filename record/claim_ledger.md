@@ -1,5 +1,17 @@
 # Claim ledger
 
+## 24 November 2026: scoped BGS-F continuation
+
+The [integration index](../mathematics/fixed-map/archive_continuation/README.md)
+maps the BGS-F Cumulative sources to the original fixed model and related comparison regimes.
+BGS-TRACE-356, BGS-TRACE-357, BGS-TRACE-358, BGS-TRACE-359, BGS-TRACE-360,
+BGS-TRACE-361 and BGS-TRACE-363 are verification-pending within their stated scopes.
+BGS-TRACE-362, BGS-TRACE-364 and BGS-TRACE-365 are proved at the project level,
+respectively a finite certificate, abstract transfer and sharpness, and general implications.
+The [execution record](../evidence/executions/20261124/bgs_f_november/README.md)
+separates finite reproduction from asymptotic argument. BGS-TRACE-005 and BGS-BGS-001
+remain open; no earlier scope is changed.
+
 
 ## 18 November 2026 — oldspace singular spectrum and finite microscopic estimates
 

@@ -3,7 +3,7 @@
 Generated from [claims.json](claims.json) by `computations/maintenance/render_research_views.py`.
 The [registry](claims.json) controls registered status; the [ledger](claim_ledger.md) explains changes. The JSON view has the same complete adjacency.
 
-**438 registered nodes; 913 direct prerequisite edges.**
+**448 registered nodes; 927 direct prerequisite edges.**
 
 An edge records a scoped programme prerequisite; it does not discharge a hypothesis.
 “None registered” does not mean unconditional or self-contained.
@@ -53,7 +53,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-FLOW-023](../mathematics/pell/pell_coboundary_resonance.md) | proved | None registered | None registered | 0 |
 | [BGS-FLOW-024](../mathematics/pell/pell_coboundary_resonance.md) | proved | None registered | None registered | 0 |
 | [BGS-FLOW-025](../mathematics/pell/pell_floquet_normal_form.md) | proved | None registered | None registered | 0 |
-| [BGS-FM-001](../mathematics/fixed-map/fixed_model_symmetry_theorem.md) | proved | None registered | None registered | 24 |
+| [BGS-FM-001](../mathematics/fixed-map/fixed_model_symmetry_theorem.md) | proved | None registered | None registered | 31 |
 | [BGS-FM-002](../mathematics/fixed-map/fixed_model_pell_crossover.md) | proved | None registered | None registered | 1 |
 | [BGS-FM-003](../mathematics/fixed-map/fixed_map_moment_control_and_transfer.md) | proved | None registered | None registered | 2 |
 | [BGS-FM-004](../mathematics/fixed-map/three_orientation_resolvent_barrier.md) | conditional | `BGS-FM-003` | None registered | 1 |
@@ -73,8 +73,8 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-FM-018](../mathematics/fixed-map/frozen_operator_transfer_coercivity.md) | proved | `BGS-FM-001`, `BGS-FM-006` | `EXT-PP-1990` | 5 |
 | [BGS-FM-019](../mathematics/fixed-map/collective_diffusion_gap.md) | proved | `BGS-FM-018` | None registered | 1 |
 | [BGS-FM-020](../mathematics/fixed-map/original_channel_gap.md) | proved | `BGS-FM-019` | None registered | 0 |
-| [BGS-FM-021](../mathematics/fixed-map/position_chain_mixing.md) | proved | `BGS-FM-001` | None registered | 17 |
-| [BGS-FM-022](../mathematics/fixed-map/reversed_path_decay.md) | proved | `BGS-FM-001` | None registered | 4 |
+| [BGS-FM-021](../mathematics/fixed-map/position_chain_mixing.md) | proved | `BGS-FM-001` | None registered | 18 |
+| [BGS-FM-022](../mathematics/fixed-map/reversed_path_decay.md) | proved | `BGS-FM-001` | None registered | 5 |
 | [BGS-FM-023](../mathematics/spectral-obstructions/arithmetic_translation_exclusion.md) | proved | `BGS-FM-001`, `BGS-FM-016`, `BGS-FM-018` | None registered | 1 |
 | [BGS-FM-024](../mathematics/fixed-map/actual_seven_primary_commutant.md) | proved | `BGS-FM-001`, `BGS-FM-008` | `EXT-POPESCU-2023` | 0 |
 | [BGS-FM-025](../mathematics/fixed-map/uniform_five_cluster_simplicity.md) | proved | `BGS-FM-001`, `BGS-FM-008` | `EXT-POPESCU-2023` | 0 |
@@ -101,7 +101,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-RES-003](../mathematics/open_questions.md) | open | `BGS-RES-001`, `BGS-RES-002` | None registered | 0 |
 | [BGS-RES-004](../mathematics/resonance-cohomology/finite_orbit_resonance_rigidity.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-005](../mathematics/resonance-cohomology/frozen_full_lag_resonance.md) | proved | None registered | None registered | 0 |
-| [BGS-RES-006](../mathematics/fixed-map/fixed_map_resolvent_frontier.md) | proved | None registered | None registered | 2 |
+| [BGS-RES-006](../mathematics/fixed-map/fixed_map_resolvent_frontier.md) | proved | None registered | None registered | 3 |
 | [BGS-RES-007](../mathematics/fixed-map/fixed_map_resolvent_frontier.md) | proved | `BGS-FM-007`, `BGS-RES-006` | None registered | 0 |
 | [BGS-RES-008](../mathematics/pell/pell_sharp_orbit_coercivity.md) | proved | None registered | None registered | 0 |
 | [BGS-RES-009](../manuscript/unified_sections/spectral_modules.tex) | proved | None registered | None registered | 0 |
@@ -125,7 +125,7 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-RET-004](../mathematics/returns/noncommuting_return_words.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-001](../mathematics/trace-bridge/trace_to_local_statistics_bridge.md) | proved | None registered | None registered | 11 |
 | [BGS-TRACE-002](../mathematics/trace-bridge/trace_to_local_statistics_bridge.md) | proved | `BGS-TRACE-001` | None registered | 8 |
-| [BGS-TRACE-003](../mathematics/trace-bridge/trace_to_local_statistics_bridge.md) | proved | `BGS-TRACE-002` | None registered | 4 |
+| [BGS-TRACE-003](../mathematics/trace-bridge/trace_to_local_statistics_bridge.md) | proved | `BGS-TRACE-002` | None registered | 5 |
 | [BGS-TRACE-004](../mathematics/trace-bridge/bandlimited_correlation_extension.md) | proved | `BGS-TRACE-003` | None registered | 2 |
 | [BGS-TRACE-005](../mathematics/open_questions.md) | open | `BGS-FM-001`, `BGS-TRACE-003` | None registered | 1 |
 | [BGS-TRACE-006](../mathematics/trace-bridge/clustered_abel_window_boundary.md) | proved | None registered | None registered | 0 |
@@ -212,9 +212,9 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-110](../mathematics/fixed-map/spectral_orbit_distance.md) | proved | `BGS-TRACE-112`, `BGS-TRACE-113` | None registered | 0 |
 | [BGS-TRACE-111](../mathematics/fixed-map/pell_weighted_curvature.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-112](../mathematics/fixed-map/displacement_density_trace_bound.md) | proved | `BGS-TRACE-106` | None registered | 1 |
-| [BGS-TRACE-113](../mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) | proved | None registered | `EXT-BR-1975` | 2 |
+| [BGS-TRACE-113](../mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) | proved | None registered | `EXT-BR-1975` | 4 |
 | [BGS-TRACE-114](../mathematics/fixed-map/balanced_rounding_research_20261027.md) | proved | None registered | None registered | 0 |
-| [BGS-TRACE-115](../mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) | proved | `BGS-RES-006` | None registered | 1 |
+| [BGS-TRACE-115](../mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) | proved | `BGS-RES-006` | None registered | 2 |
 | [BGS-TRACE-116](../mathematics/trace-bridge/microscopic_unitary_stability_20261027.md) | proved | `BGS-TRACE-113`, `BGS-TRACE-115` | None registered | 0 |
 | [BGS-TRACE-117](../mathematics/fixed-map/kick_blind_arithmetic_spike.md) | proved | None registered | None registered | 4 |
 | [BGS-TRACE-118](../mathematics/fixed-map/orbit_orthogonal_kick_spike.md) | proved | `BGS-TRACE-117` | None registered | 2 |
@@ -452,3 +452,13 @@ abstract-family obstructions retain their original models and proof boundaries.
 | [BGS-TRACE-353](../computations/verification/lemma_s/REPORT_LEMMA_S.md) | proved | `BGS-TRACE-352` | None registered | 0 |
 | [BGS-TRACE-354](../computations/verification/lemma_s/REPORT_LEMMA_S.md) | proved | None registered | None registered | 0 |
 | [BGS-TRACE-355](../computations/verification/lemma_s/REPORT_LEMMA_S.md) | conditional | `BGS-TRACE-333`, `BGS-TRACE-342` | None registered | 0 |
+| [BGS-TRACE-356](../mathematics/fixed-map/archive_continuation/alignment/README.md) | verification-pending | `BGS-FM-021`, `BGS-FM-022`, `BGS-TRACE-113` | None registered | 0 |
+| [BGS-TRACE-357](../mathematics/fixed-map/archive_continuation/histories/README.md) | verification-pending | `BGS-FM-001` | None registered | 0 |
+| [BGS-TRACE-358](../mathematics/fixed-map/archive_continuation/torsion_transport/README.md) | verification-pending | `BGS-FM-001` | None registered | 0 |
+| [BGS-TRACE-359](../mathematics/fixed-map/archive_continuation/relation_rank/README.md) | verification-pending | `BGS-FM-001` | None registered | 0 |
+| [BGS-TRACE-360](../mathematics/fixed-map/archive_continuation/exact_splitting/README.md) | verification-pending | `BGS-FM-001` | None registered | 0 |
+| [BGS-TRACE-361](../mathematics/fixed-map/archive_continuation/effective_gaps/README.md) | verification-pending | `BGS-FM-001` | `EXT-HUANG-SERT-2022` | 0 |
+| [BGS-TRACE-362](../mathematics/fixed-map/archive_continuation/pell/README.md) | proved | `BGS-FM-001` | None registered | 0 |
+| [BGS-TRACE-363](../mathematics/fixed-map/archive_continuation/pell/README.md) | verification-pending | `BGS-FM-001`, `BGS-TRACE-113` | None registered | 0 |
+| [BGS-TRACE-364](../mathematics/fixed-map/archive_continuation/resolution_precision/README.md) | proved | `BGS-TRACE-115` | None registered | 0 |
+| [BGS-TRACE-365](../mathematics/fixed-map/archive_continuation/pair_implications/README.md) | proved | `BGS-RES-006`, `BGS-TRACE-003` | None registered | 0 |

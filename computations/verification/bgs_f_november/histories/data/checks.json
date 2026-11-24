@@ -1,0 +1,58 @@
+{
+  "certified_upper_bound_for_symbol_l1": "575513/500000",
+  "word_enumeration": {
+    "folded_words": 6561,
+    "folded_identities": 81,
+    "disjoint_identities": 1
+  },
+  "finite_actual_formula_examples": [
+    {
+      "N": 9,
+      "L": 3,
+      "q": 3,
+      "finite_test_strength": 0.008,
+      "max_probability_identity_error": 1.3271600820646732e-12,
+      "max_observed_trace_variance": 47.22807260715239
+    },
+    {
+      "N": 45,
+      "L": 3,
+      "q": 2,
+      "finite_test_strength": 0.008,
+      "max_probability_identity_error": 2.8026042507826827e-12,
+      "max_observed_trace_variance": 0.6126432556739061
+    },
+    {
+      "N": 49,
+      "L": 7,
+      "q": 2,
+      "finite_test_strength": 0.008,
+      "max_probability_identity_error": 5.025085745234594e-12,
+      "max_observed_trace_variance": 45.76820248405281
+    }
+  ],
+  "cyclic_tensor_model": {
+    "N": 6561,
+    "cycle": 4,
+    "sample_exact_traces": [
+      9,
+      81,
+      9,
+      6561,
+      9,
+      81,
+      9,
+      6561
+    ],
+    "exact_scalar_returns_in_Heisenberg_window": 1640
+  },
+  "phased_tensor_model": {
+    "N": 729,
+    "factor_cycle_count": {
+      "1": 9,
+      "3": 240
+    },
+    "clock_points": 81,
+    "multiplicity": 9
+  }
+}

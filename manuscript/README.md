@@ -1,5 +1,17 @@
 # BGS consolidated research manuscript
 
+## November fixed-map continuation
+
+The unified sources now include
+[the November section](unified_sections/november_fixed_map_continuation.tex).
+It distinguishes the new pending high-overlap route, finite Pell witnesses,
+arithmetic exact-spectrum controls, and proved abstract transfer implications.
+The [maintained notes](../mathematics/fixed-map/archive_continuation/README.md)
+contain the detailed statements and reproduction links.
+The current checked-in PDF is the validated 382-page pdfLaTeX build
+(SHA-256 af416f17b8d437a4450df27b035a137aec6ee4b1c89367e6cb19b72bf6568ce8). The new section was also reviewed on pages 270–271.
+
+
 ## Fixed-map update, 18 November 2026
 
 The conclusion adds the sevenfold oldspace singular spectrum, its Haar
@@ -256,7 +268,7 @@ protocol. A successful LaTeX build is typesetting evidence, not proof evidence.
 The 28 October Aristotle integration updates the canonical TeX sources (the
 claim index, provenance appendix, tomography chapter and conclusion) and carries
 the ERR-060 pure-loss correction without replacing earlier manuscript sections.
-The checked-in `BGS_unified.pdf` was regenerated on 5 November 2026 (final polish
+The previous `BGS_unified.pdf` snapshot was regenerated on 5 November 2026 (final polish
 pass) from the current TeX sources, including the chapter "Lines I--N and the conditional
 gas theorem" (`unified_sections/lines_I_N_gas_theorem.tex`), the part divider for
 Lines B--H, and the abstract, introduction and conclusion revised for Phase VIII. It is a 380-page

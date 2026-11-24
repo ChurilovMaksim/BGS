@@ -1335,6 +1335,22 @@
         "computations/verification/lineN/REPORT_N_v2.md",
         "computations/verification/lineK/K2/REPORT_K2_v2.md"
       ]
+    },
+    {
+      "id": "EXT-HUANG-SERT-2022",
+      "authors": [
+        "Cheng-Chao Huang"
+      ],
+      "title": "Explicit Bounds for Linear Forms in the Exponentials of Algebraic Numbers",
+      "identifier": "arXiv:2112.05004; ISSAC 2022",
+      "pinned_version": "arXiv:2112.05004 PDF observed 24 November 2026 (ISSAC 2022)",
+      "locator": "Theorem 5.1, quoting Sert Theorem 3",
+      "checked_on": "2026-11-24",
+      "mapping": "The gap note bounds the nonzero moment determinant by expressing it as a polynomial in exponentials of Q-linearly independent algebraic elements. Sert supplies a lower bound only after the field, degree and height estimates are established. Project application remains verification-pending.",
+      "project_sources": [
+        "mathematics/fixed-map/archive_continuation/effective_gaps/README.md"
+      ],
+      "metadata_audit": "evidence/source_metadata/registry_metadata_20261124_bgs_f.json#EXT-HUANG-SERT-2022"
     }
   ]
 }

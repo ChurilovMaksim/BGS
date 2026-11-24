@@ -1,5 +1,11 @@
 # Fixed deterministic map
 
+## November fixed-map continuation
+
+The [maintained integration](../../fixed-map/archive_continuation/README.md)
+links the scoped trajectory reduction, finite Pell controls, arithmetic spectrum notes,
+approximation limitations and precise weak-versus-pair implications.
+
 ## Operator resolution and short traces
 
 [TRACE-114 short-trace barrier](../../fixed-map/balanced_rounding_research_20261027.md) and [TRACE-115/116 operator stability and pair transfer](../../trace-bridge/microscopic_unitary_stability_20261027.md) continue the uniform-trace theorem. Exact matrix approximations and general changed-quantizer examples have different scopes; the original pair law remains open.

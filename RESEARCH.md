@@ -1,5 +1,14 @@
 # BGS research brief
 
+## 24 November: fixed-map continuation
+
+The [November BGS-F continuation](mathematics/fixed-map/archive_continuation/README.md)
+integrates model-specific signed alignment, sparse histories, torsion, exact phase arithmetic, finite
+Pell witnesses and transfer/obstruction results. The exact map and parameter are unchanged.
+The first signed pair estimate remains open; the alignment route identifies its low-overlap
+residual but does not evaluate it. Results for shrinking coupling and altered matrices remain
+separately scoped. The maintained claims and verification limits are listed in the index.
+
 
 ## Oldspace singular spectrum and three finite Pell witnesses (18 November 2026)
 

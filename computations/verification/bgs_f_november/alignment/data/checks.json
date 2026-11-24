@@ -1,0 +1,86 @@
+{
+  "exact_folded_polynomials": [
+    {
+      "m": 4,
+      "r": 2,
+      "alphabet": 3,
+      "comparisons": 2,
+      "regular_slices": 2,
+      "missing_rows": 0,
+      "exact_coefficient_slots": 67
+    },
+    {
+      "m": 4,
+      "r": 2,
+      "alphabet": 3,
+      "comparisons": 2,
+      "regular_slices": 2,
+      "missing_rows": 0,
+      "exact_coefficient_slots": 67
+    },
+    {
+      "m": 6,
+      "r": 2,
+      "alphabet": 2,
+      "comparisons": 4,
+      "regular_slices": 1,
+      "missing_rows": 2,
+      "exact_coefficient_slots": 138
+    },
+    {
+      "m": 8,
+      "r": 2,
+      "alphabet": 2,
+      "comparisons": 4,
+      "regular_slices": 2,
+      "missing_rows": 0,
+      "exact_coefficient_slots": 538
+    },
+    {
+      "m": 5,
+      "r": 1,
+      "alphabet": 3,
+      "comparisons": 2,
+      "regular_slices": 2,
+      "missing_rows": 1,
+      "exact_coefficient_slots": 109
+    },
+    {
+      "m": 6,
+      "r": 1,
+      "alphabet": 2,
+      "comparisons": 2,
+      "regular_slices": 2,
+      "missing_rows": 2,
+      "exact_coefficient_slots": 49
+    },
+    {
+      "m": 6,
+      "r": 1,
+      "alphabet": 2,
+      "comparisons": 2,
+      "regular_slices": 3,
+      "missing_rows": 0,
+      "exact_coefficient_slots": 59
+    }
+  ],
+  "layout_cases": 1010,
+  "mobius_cases": 48,
+  "cycle_rank_cases": 26450,
+  "triple_operator": [
+    {
+      "N": 3,
+      "largest_compression": 0.5773502691896262
+    },
+    {
+      "N": 5,
+      "largest_compression": 0.4472135954999581
+    }
+  ],
+  "two_scheme_boundary": {
+    "N": 3,
+    "m": 4,
+    "real_part": 0.888888888888887,
+    "imaginary_part": 0.0
+  }
+}
