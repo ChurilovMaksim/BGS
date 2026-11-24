@@ -1,5 +1,17 @@
 # Scientific changelog
 
+## research-2026.11.3 — November research snapshot
+
+Research snapshot covering the reviewed November work merged in [#94](https://github.com/ChurilovMaksim/BGS/pull/94) and [#95](https://github.com/ChurilovMaksim/BGS/pull/95) since `research-2026.11.2`.
+
+- Integrates scoped results on oldspace spectral filling and certified Pell band-two deviations, with an oldspace-versus-Haar comparison.
+- Includes the reviewed fixed-map continuation, with an exact replay of the archived finite `h_209` arithmetic and a formulation of the remaining signed low-overlap estimate. Finite checks do not establish the asymptotic estimate.
+- Synchronizes the claim registry and the [382-page manuscript](manuscript/BGS_unified.pdf). Registry: 448 claims (356 proved at their registered scope, 25 conditional, 24 verification-pending, 42 open, 1 refuted).
+
+**BGS-BGS-001 (fixed-strength microscopic Sine₂ universality) and BGS-TRACE-005 (signed trace estimate at Heisenberg scale) remain open.** This release does not claim a proof of the BGS conjecture.
+
+Zenodo concept DOI (all versions): [10.5281/zenodo.23919483](https://doi.org/10.5281/zenodo.23919483). The version-specific DOI will be available after Zenodo processes the release.
+
 ## research-2026.11.2 — release preparation (no state changes)
 
 Release tag research-2026.11.2, prepared on 2026-11-05 from the final polish pass below; it covers the work merged since

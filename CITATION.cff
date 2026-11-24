@@ -1,6 +1,5 @@
 cff-version: 1.2.0
-version: research-2026.11.2
-date-released: "2026-11-05"
+version: research-2026.11.3
 message: "If you use results, software, or data from this research repository, cite the specific paper/result where available and cite this repository for the research corpus and verification infrastructure."
 title: "BGS: arithmetic quantum chaos and spectral universality"
 type: software
@@ -9,6 +8,9 @@ authors:
     given-names: Maksim
 doi: "10.5281/zenodo.23919483"
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23981928"
+    description: "Zenodo archive of release research-2026.11.2"
   - type: doi
     value: "10.5281/zenodo.23919484"
     description: "Zenodo archive of release research-2026.11.1"
