@@ -27,7 +27,7 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**400 maintained proof notes; 10 topic views; 448 core claim IDs.**
+**403 maintained proof notes; 10 topic views; 448 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
@@ -42,7 +42,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 201 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 204 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -74,6 +74,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Line D — band-limited random kicks on the quantized cat map (v2, after independent referee audit)](../mathematics/fixed-map/band_limited_kick_bridge.md) | `BGS-TRACE-149` (proved); `BGS-TRACE-150` (proved); `BGS-TRACE-151` (proved); `BGS-TRACE-152` (proved); `BGS-TRACE-153` (verification-pending); `BGS-TRACE-154` (proved); `BGS-TRACE-155` (open); `BGS-TRACE-156` (proved); `BGS-TRACE-157` (proved); `BGS-TRACE-158` (conditional); `BGS-TRACE-159` (open); `BGS-TRACE-160` (proved); `BGS-TRACE-161` (open); `BGS-TRACE-162` (open) |
 | [Conditional boundary-prefix estimates at fixed nonzero coupling](../mathematics/fixed-map/boundary_prefix_audit_20261127.md) | Consult proof and full ledger |
 | [Circular Dyson relaxation from the actual frozen initial spectrum](../mathematics/fixed-map/circular_dyson_actual_start.md) | `BGS-FLOW-014` (proved) |
+| [Classical axial Fourier bounds for a signed interval of small kicks](../mathematics/fixed-map/classical_axial_translation_bound.md) | Consult proof and full ledger |
 | [Exact clock structure factor and the scale of spectral noise removal](../mathematics/fixed-map/clock_structure_and_noise_scale.md) | `BGS-FLOW-018` (proved) |
 | [All fixed correlation orders for the original coboundary chain](../mathematics/fixed-map/coboundary_all_order_limit.md) | `BGS-FLOW-017` (proved) |
 | [The fourth-order drift of a Gaussian coboundary step](../mathematics/fixed-map/coboundary_fourth_order_drift.md) | `BGS-FLOW-008` (proved) |
@@ -89,6 +90,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Quartic coordinate return for the original fixed kick](../mathematics/fixed-map/coordinate_return_quartic.md) | `BGS-TRACE-108` (proved) |
 | [Coupling scope: how to read the fixed-map results](../mathematics/fixed-map/coupling_scope_audit.md) | Consult proof and full ledger |
 | [Chinese product for the cat-map trace square](../mathematics/fixed-map/crt_composite_abel.md) | `BGS-TRACE-122` (proved) |
+| [Distinct eigenvalues for the literal kick at \(N=3\cdot7^k\)](../mathematics/fixed-map/crt_three_seven_distinct_phases.md) | Consult proof and full ledger |
 | [A common jump cutoff for dense signed boundary sums](../mathematics/fixed-map/dense_boundary_jump_folding_20261127.md) | Consult proof and full ledger |
 | [Line B: derandomizing the BGS short-time form factor for the fixed-kick perturbed cat map (phases 1–4)](../mathematics/fixed-map/derandomized_fixed_kick.md) | `BGS-TRACE-163` (proved); `BGS-TRACE-164` (conditional); `BGS-TRACE-165` (proved); `BGS-TRACE-166` (proved); `BGS-TRACE-167` (proved); `BGS-TRACE-168` (proved); `BGS-TRACE-169` (proved); `BGS-TRACE-170` (proved); `BGS-TRACE-171` (proved); `BGS-TRACE-172` (proved); `BGS-TRACE-173` (proved); `BGS-TRACE-174` (conditional); `BGS-TRACE-175` (proved); `BGS-TRACE-176` (conditional); `BGS-TRACE-177` (open); `BGS-TRACE-178` (proved); `BGS-TRACE-179` (refuted); `BGS-TRACE-180` (open); `BGS-TRACE-181` (open); `BGS-TRACE-182` (open); `BGS-TRACE-210` (open) |
 | [BGS derandomization for the fixed-kick perturbed cat map](../mathematics/fixed-map/derandomized_fixed_kick/phase1_trace_formula.md) | Consult proof and full ledger |
@@ -237,6 +239,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Once-counted distinct-port three-block cancellation](../mathematics/fixed-map/three_block_unmarking.md) | `BGS-TRACE-015` (proved) |
 | [Three-orientation mixed-loop barrier for the pair transform](../mathematics/fixed-map/three_orientation_resolvent_barrier.md) | `BGS-FM-004` (conditional) |
 | [Torsion-history interference and exceptional vertical channels (18 November 2026)](../mathematics/fixed-map/torsion_interference_vertical_outliers_20261118.md) | Consult proof and full ledger |
+| [Fixed-step partition, transport and lift locality for the scalar torus kick](../mathematics/fixed-map/torus_fixed_step_localization.md) | Consult proof and full ledger |
 | [Uniform bounded cat eigenspaces on N=7*5^e](../mathematics/fixed-map/uniform_cat_multiplicity.md) | Consult proof and full ledger |
 | [Uniform massive covariance and formal connected coefficients](../mathematics/fixed-map/uniform_cluster_lemma.md) | Consult proof and full ledger |
 | [Actual kick simplicity for N=7*5^e](../mathematics/fixed-map/uniform_five_cluster_simplicity.md) | `BGS-FM-025` (proved) |
