@@ -27,7 +27,7 @@ at their recorded paths; identical bytes can have different provenance.
 
 ## Registered state and complete proof navigation
 
-**393 maintained proof notes; 10 topic views; 448 core claim IDs.**
+**403 maintained proof notes; 10 topic views; 448 core claim IDs.**
 
 | Core registry state | IDs |
 |---|---:|
@@ -42,7 +42,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 
 ### Fixed deterministic map
 
-[Reading sequence](../mathematics/topics/fixed-map/README.md) · 194 notes
+[Reading sequence](../mathematics/topics/fixed-map/README.md) · 204 notes
 
 | Canonical proof source | Core IDs and registered states |
 |---|---|
@@ -72,7 +72,9 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Balanced-phase regularization: a classical and quantum theorem](../mathematics/fixed-map/balanced_phase_controllability.md) | `BGS-RES-017` (proved) |
 | [Balanced spectral rounding and short-trace information](../mathematics/fixed-map/balanced_rounding_research_20261027.md) | `BGS-TRACE-114` (proved) |
 | [Line D — band-limited random kicks on the quantized cat map (v2, after independent referee audit)](../mathematics/fixed-map/band_limited_kick_bridge.md) | `BGS-TRACE-149` (proved); `BGS-TRACE-150` (proved); `BGS-TRACE-151` (proved); `BGS-TRACE-152` (proved); `BGS-TRACE-153` (verification-pending); `BGS-TRACE-154` (proved); `BGS-TRACE-155` (open); `BGS-TRACE-156` (proved); `BGS-TRACE-157` (proved); `BGS-TRACE-158` (conditional); `BGS-TRACE-159` (open); `BGS-TRACE-160` (proved); `BGS-TRACE-161` (open); `BGS-TRACE-162` (open) |
+| [Conditional boundary-prefix estimates at fixed nonzero coupling](../mathematics/fixed-map/boundary_prefix_audit_20261127.md) | Consult proof and full ledger |
 | [Circular Dyson relaxation from the actual frozen initial spectrum](../mathematics/fixed-map/circular_dyson_actual_start.md) | `BGS-FLOW-014` (proved) |
+| [Classical axial Fourier bounds for a signed interval of small kicks](../mathematics/fixed-map/classical_axial_translation_bound.md) | Consult proof and full ledger |
 | [Exact clock structure factor and the scale of spectral noise removal](../mathematics/fixed-map/clock_structure_and_noise_scale.md) | `BGS-FLOW-018` (proved) |
 | [All fixed correlation orders for the original coboundary chain](../mathematics/fixed-map/coboundary_all_order_limit.md) | `BGS-FLOW-017` (proved) |
 | [The fourth-order drift of a Gaussian coboundary step](../mathematics/fixed-map/coboundary_fourth_order_drift.md) | `BGS-FLOW-008` (proved) |
@@ -86,7 +88,10 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Exact projector residual after the collective hierarchy](../mathematics/fixed-map/collective_projector_residual.md) | Consult proof and full ledger |
 | [BGS-TRACE-029: convex weak-noise stability and unsigned deconvolution barrier](../mathematics/fixed-map/convex_pinch_weak_noise_and_deconvolution.md) | `BGS-TRACE-029` (proved) |
 | [Quartic coordinate return for the original fixed kick](../mathematics/fixed-map/coordinate_return_quartic.md) | `BGS-TRACE-108` (proved) |
+| [Coupling scope: how to read the fixed-map results](../mathematics/fixed-map/coupling_scope_audit.md) | Consult proof and full ledger |
 | [Chinese product for the cat-map trace square](../mathematics/fixed-map/crt_composite_abel.md) | `BGS-TRACE-122` (proved) |
+| [Distinct eigenvalues for the literal kick at \(N=3\cdot7^k\)](../mathematics/fixed-map/crt_three_seven_distinct_phases.md) | Consult proof and full ledger |
+| [A common jump cutoff for dense signed boundary sums](../mathematics/fixed-map/dense_boundary_jump_folding_20261127.md) | Consult proof and full ledger |
 | [Line B: derandomizing the BGS short-time form factor for the fixed-kick perturbed cat map (phases 1–4)](../mathematics/fixed-map/derandomized_fixed_kick.md) | `BGS-TRACE-163` (proved); `BGS-TRACE-164` (conditional); `BGS-TRACE-165` (proved); `BGS-TRACE-166` (proved); `BGS-TRACE-167` (proved); `BGS-TRACE-168` (proved); `BGS-TRACE-169` (proved); `BGS-TRACE-170` (proved); `BGS-TRACE-171` (proved); `BGS-TRACE-172` (proved); `BGS-TRACE-173` (proved); `BGS-TRACE-174` (conditional); `BGS-TRACE-175` (proved); `BGS-TRACE-176` (conditional); `BGS-TRACE-177` (open); `BGS-TRACE-178` (proved); `BGS-TRACE-179` (refuted); `BGS-TRACE-180` (open); `BGS-TRACE-181` (open); `BGS-TRACE-182` (open); `BGS-TRACE-210` (open) |
 | [BGS derandomization for the fixed-kick perturbed cat map](../mathematics/fixed-map/derandomized_fixed_kick/phase1_trace_formula.md) | Consult proof and full ledger |
 | [Phase 2: arithmetic kernel, exact ramp, coincidence theory, moments (final; referee fixes applied 2026-10-29)](../mathematics/fixed-map/derandomized_fixed_kick/phase2_kernel_ramp_nd.md) | Consult proof and full ledger |
@@ -108,6 +113,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [A finite-grid proof of the original one-step and inserted traces](../mathematics/fixed-map/finite_grid_one_step_trace.md) | Consult proof and full ledger |
 | [BGS finite spectral-pivot certificates](../mathematics/fixed-map/finite_seven_spectral_pivots.md) | Consult proof and full ledger |
 | [Exact classification of even first-old-layer two-mode blocks](../mathematics/fixed-map/first_old_layer_classification.md) | Consult proof and full ledger |
+| [A fixed signed annular test of the Heisenberg cusp](../mathematics/fixed-map/fixed_cusp_annulus_20261127.md) | Consult proof and full ledger |
 | [Every fixed neutral trace degree contributes a vanishing heat defect](../mathematics/fixed-map/fixed_degree_heat_projection.md) | `BGS-FLOW-019` (proved) |
 | [Uniform original-family traces from continuity of the Gaussian scalar](../mathematics/fixed-map/fixed_kick_uniform_trace_bound.md) | `BGS-TRACE-113` (proved) |
 | [Fixed-map continuation: moment controls, a loop-test falsifier, and growing spectral transfer](../mathematics/fixed-map/fixed_map_moment_control_and_transfer.md) | `BGS-FM-003` (proved) |
@@ -115,6 +121,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Fixed-map spectral statistics: exact reductions and the remaining estimate](../mathematics/fixed-map/fixed_map_resolvent_frontier.md) | `BGS-BGS-001` (open); `BGS-LOOP-001` (conditional); `BGS-RES-006` (proved); `BGS-RES-007` (proved); `BGS-TRACE-007` (proved) |
 | [Full-symbol Gaussian crossover on odd Pell periods](../mathematics/fixed-map/fixed_model_pell_crossover.md) | `BGS-FM-002` (proved) |
 | [Fixed frozen model: exact Weyl dictionary, trivial C1 centralizer, and no C1 reversor](../mathematics/fixed-map/fixed_model_symmetry_theorem.md) | `BGS-FM-001` (proved) |
+| [A fixed-spectrum crowding criterion](../mathematics/fixed-map/fixed_spectrum_crowding_20261127.md) | Consult proof and full ledger |
 | [Fixed-time bounded traces for the unchanged odd-dimensional map](../mathematics/fixed-map/fixed_time_wavepacket_trace_bound.md) | `BGS-FM-013` (proved) |
 | [Resonant cubic control by the folded square of the density](../mathematics/fixed-map/folded_quadratic_resonance_control.md) | `BGS-TRACE-012` (proved) |
 | [Once-counted reduced distinct-port four-block cancellation](../mathematics/fixed-map/four_block_unmarking.md) | `BGS-TRACE-016` (proved) |
@@ -182,6 +189,7 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Ordinary compact-stratum centering and fixed-N cutoff](../mathematics/fixed-map/ordinary_compact_stratum_centering.md) | `BGS-FM-031` (proved) |
 | [Original ordered two-pair channel: logarithmic-loss gap](../mathematics/fixed-map/original_channel_gap.md) | `BGS-FM-020` (proved) |
 | [Actual paired-box coordinates and the exact autocorrelation character](../mathematics/fixed-map/paired_character_identity.md) | Consult proof and full ledger |
+| [A finite signed cubic response at the five-step Pell return](../mathematics/fixed-map/pell_five_signed_cubic_20261127.md) | Consult proof and full ledger |
 | [Explicit microscopic witnesses for the fixed kick at Pell dimensions](../mathematics/fixed-map/pell_microscopic_window.md) | Consult proof and full ledger |
 | [Full weighted gradient, Pell curvature and the forced early inflection](../mathematics/fixed-map/pell_weighted_curvature.md) | `BGS-TRACE-111` (proved) |
 | [Actual phase-map monotonicity, Frostman bound and averaged Fourier squares](../mathematics/fixed-map/phase_map_frostman.md) | Consult proof and full ledger |
@@ -231,11 +239,13 @@ No state is inferred for an unregistered note. Read its proof and the full ledge
 | [Once-counted distinct-port three-block cancellation](../mathematics/fixed-map/three_block_unmarking.md) | `BGS-TRACE-015` (proved) |
 | [Three-orientation mixed-loop barrier for the pair transform](../mathematics/fixed-map/three_orientation_resolvent_barrier.md) | `BGS-FM-004` (conditional) |
 | [Torsion-history interference and exceptional vertical channels (18 November 2026)](../mathematics/fixed-map/torsion_interference_vertical_outliers_20261118.md) | Consult proof and full ledger |
+| [Fixed-step partition, transport and lift locality for the scalar torus kick](../mathematics/fixed-map/torus_fixed_step_localization.md) | Consult proof and full ledger |
 | [Uniform bounded cat eigenspaces on N=7*5^e](../mathematics/fixed-map/uniform_cat_multiplicity.md) | Consult proof and full ledger |
 | [Uniform massive covariance and formal connected coefficients](../mathematics/fixed-map/uniform_cluster_lemma.md) | Consult proof and full ledger |
 | [Actual kick simplicity for N=7*5^e](../mathematics/fixed-map/uniform_five_cluster_simplicity.md) | `BGS-FM-025` (proved) |
 | [Uniform Pell-orbit overlap of the fixed symbol](../mathematics/fixed-map/uniform_orbit_overlap.md) | `BGS-TRACE-125` (proved) |
 | [One-step squared-trace transcendence in every odd dimension except seven](../mathematics/fixed-map/uniform_trace_square_transcendence.md) | Consult proof and full ledger |
+| [Weak Sine₂ and the second moment: acceptance map](../mathematics/fixed-map/weak_law_pair_acceptance.md) | Consult proof and full ledger |
 | [Stability-weighted periodic equidistribution for the actual frozen map](../mathematics/fixed-map/weighted_periodic_equidistribution.md) | Consult proof and full ledger |
 | [BGS-TRACE-027: weighted phase coherence and slow-window Ward covariance](../mathematics/fixed-map/weighted_phase_coherence_covariance.md) | `BGS-TRACE-027` (proved) |
 | [Exact nonlinear winding-defect locality and a finite-group Fourier reduction](../mathematics/fixed-map/winding_defect_locality.md) | `BGS-TRACE-018` (proved) |

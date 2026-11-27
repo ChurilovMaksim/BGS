@@ -79,7 +79,7 @@ O_w(N K^5 q²)=O_w(K^5/N).
 
 This is an upper bound on the ambiguous marked mass, using a union bound over alternatives; overcounting is harmless here because this bound is absolute.
 
-For every remaining K-unique unambiguous pair, primitivity of both words and uniqueness of the cut set give exactly three marked representations, from cyclic block labeling. Hence the actual unmarked sum is one third of the marked sum away from the bounded exceptional sets. Unmarked exceptional mass is at most its marked absolute mass because every member has a representation. Combining these estimates proves the claimed scoped family cancellation. The independent audit of these combinatorial steps is recorded in `../record/three_block_independent_review_20261006.md`. Quantitatively the normalized error is bounded by
+For every remaining K-unique unambiguous pair, primitivity of both words and uniqueness of the cut set give exactly three marked representations, from cyclic block labeling. Hence the actual unmarked sum is one third of the marked sum away from the bounded exceptional sets. Unmarked exceptional mass is at most its marked absolute mass because every member has a representation. Combining these estimates proves the claimed scoped family cancellation. The independent audit of these combinatorial steps is recorded in [`archive/record/three_block_independent_review_20261006.md`](../../archive/record/three_block_independent_review_20261006.md). Quantitatively the normalized error is bounded by
 
 O_w(K^5/N)+O_w(N^8(C/N)^(K/2))+O_w(N^5 2^(-(aN-3)/3)),
 
@@ -87,7 +87,7 @@ where [a,b] contains the support of w, 0<a<b, and K=ceil(log N). Constants can d
 
 ## 6. Evidence and boundary
 
-The portable verifier `../computations/verification/three_block_unmarking.py` checks rational contraction identities, variable marked multiplicities, all 451 single-repeat words with m=4,...,14, 180 two-long K-unique samples with every alternate cut triple exhausted, and a length 54/alphabet 52 local rank-two ambiguity. Arithmetic is exact rational or exact discrete word comparison. The random samples use a recorded deterministic seed and are finite diagnostics only. Execution receipt: `../evidence/executions/20261006/three-block/receipt.json`.
+The portable verifier [`computations/verification/three_block_unmarking.py`](../../computations/verification/three_block_unmarking.py) checks rational contraction identities, variable marked multiplicities, all 451 single-repeat words with m=4,...,14, 180 two-long K-unique samples with every alternate cut triple exhausted, and a length 54/alphabet 52 local rank-two ambiguity. Arithmetic is exact rational or exact discrete word comparison. The random samples use a recorded deterministic seed and are finite diagnostics only. Execution receipt: [`evidence/executions/20261006/three-block/receipt.json`](../../evidence/executions/20261006/three-block/receipt.json).
 
 The new proof was independently reviewed against immutable candidate hash ecaa44655e5c8c2257d7b0f300119b7a6a24f3ec70d976f9be3ca4a7ec65ee27; the source manifest retains earlier marked/all-long dependencies and review hashes. The canonical exposition consolidates these accepted implications without strengthening them.
 
