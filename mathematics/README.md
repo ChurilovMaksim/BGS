@@ -105,3 +105,9 @@ certify their stated propositions only.
 coverage. Historical branch arguments remain traceable through the
 [record index](../archive/history/2026/INDEX.md); an inventory is not a complete
 proof certification.
+
+## November 27 independent review notes
+
+- [Boundary-prefix audit](fixed-map/boundary_prefix_audit_20261127.md) records the conditional quantum input for uniform boundary averages and individual Fourier coefficients.
+- [Fixed cusp annulus](fixed-map/fixed_cusp_annulus_20261127.md) and [fixed-spectrum crowding](fixed-map/fixed_spectrum_crowding_20261127.md) give scoped spectral diagnostics and a conditional acceptance criterion.
+- [Five-step Pell cubic](fixed-map/pell_five_signed_cubic_20261127.md) certifies finite sign asymmetry at the literal coupling.

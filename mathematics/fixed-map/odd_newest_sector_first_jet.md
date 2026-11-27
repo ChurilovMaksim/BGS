@@ -1,6 +1,6 @@
 # Odd-depth newest-sector first-order splitting
 
-Status: independently accepted within the stated newest-sector scope. The independent review is `record/odd_newest_sector_review.md`. This maintained copy changes the historical candidate-status paragraph and the final conditional scope paragraph only; the exact submitted source and its original metadata remain in lossless provenance envelopes under `evidence/odd_newest_20261007/`.
+Status: independently accepted within the stated newest-sector scope. The independent review is [`archive/record/odd_newest_sector_review.md`](../../archive/record/odd_newest_sector_review.md). This maintained copy changes the historical candidate-status paragraph and the final conditional scope paragraph only; the exact submitted source and its original metadata remain in lossless provenance envelopes under [`archive/evidence/odd_newest_20261007`](../../archive/evidence/odd_newest_20261007).
 
 Acceptance is relative to the expressly inherited raw-model, oldform, cat-simplicity, seven-factor and algebraic-time rank-transfer inputs. The original source SHA-256 is a75bd91a452d5285ec447d9ca1be623e8eda3218835ce2ed9af71f741e8872c0; the independent review SHA-256 is 43d7e05efefb0905742b28f82b93c29e3de3eccc40e1189b1894e32912889dd9.
 

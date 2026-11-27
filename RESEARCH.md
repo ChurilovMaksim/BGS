@@ -1,5 +1,7 @@
 # BGS research brief
 
+The [coupling-scope guide](mathematics/fixed-map/coupling_scope_audit.md) separates the original fixed parameter, already-parameterized theorems, and open extensions. It does not change the claim registry.
+
 ## 24 November: fixed-map continuation
 
 The [November BGS-F continuation](mathematics/fixed-map/archive_continuation/README.md)

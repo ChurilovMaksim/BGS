@@ -3,7 +3,7 @@
 Status: independently checked combination of accepted component theorems. This
 short corollary adds no local splitting theorem, external input, or new matrix
 certificate. Its source and review bindings are in
-`record/odd_sector_count_combination_review.md`.
+[`archive/record/odd_sector_count_combination_review.md`](../../archive/record/odd_sector_count_combination_review.md).
 
 Let e be odd, n=5^e, N=7n, and U_N(t)=exp(itA_N)M_N in the unchanged raw model.
 At every nonzero real algebraic t, including t=10^(-80)N, U_N(t) has at least

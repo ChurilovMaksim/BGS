@@ -302,7 +302,7 @@ reconstructs the symbol through the prior audited Laurent expansion,
 uses exact Gaussian rationals and integer modular orbits, and separately
 checks matrix orientation and Fejer energies in complex128 at declared
 control couplings. The promoted output and source hashes are in
-`evidence/20260930/prime_resonant_checks.json` and
-`evidence/20260930/prime_resonant_manifest.json`.
+[`archive/evidence/20260930/prime_resonant_checks.json`](../../archive/evidence/20260930/prime_resonant_checks.json) and
+[`archive/evidence/20260930/prime_resonant_manifest.json`](../../archive/evidence/20260930/prime_resonant_manifest.json).
 No Lean compilation, external referee report, new priority claim,
 frozen-map sector cancellation or BGS solution is certified by these tests.

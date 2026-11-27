@@ -20,7 +20,7 @@ O_w(K^10/N)+O_w(N^10(C/N)^(K/2))+O_w(N^5 2^(-(aN-4)/4)).
 
 Constants may depend on the fixed matrix-family bounds and w. The startup threshold inherited from FM-021 is not effective. This controls one once-counted family; it neither exhausts the trace expansion nor justifies truncating growing reconnection complexity.
 
-The classification input is `four_cut_rank_two_classification.md`. Its universal statement is a computer-assisted theorem consisting of an independently audited mathematical compression/cyclic-word reduction and an exact bounded kernel. `../formalization/Bgs/FourCutKernel.lean` certifies only the bounded kernel proposition described in that source; the universal compression and the analytic proof here remain unformalized.
+The classification input is `four_cut_rank_two_classification.md`. Its universal statement is a computer-assisted theorem consisting of an independently audited mathematical compression/cyclic-word reduction and an exact bounded kernel. [`formalization/Bgs/FourCutKernel.lean`](../../formalization/Bgs/FourCutKernel.lean) certifies only the bounded kernel proposition described in that source; the universal compression and the analytic proof here remain unformalized.
 
 ## 2. Marked and local-overlap contractions
 
@@ -198,11 +198,11 @@ Summing these errors costs O(R_K)B=O_w(K^10/N). No universal division by four is
 
 On non-K-unique pairs, compare the actual once-counted sum directly with M_m/4-O_m. Each of its three absolute masses is bounded by the complete exceptional marked mass, the last because O_m is a literal marked subcollection. This remains valid for periodic words and varying root multiplicities. The extra error stays O_w(N^10q^(K/2)).
 
-Combining with the exponential marked and local-overlap estimates proves the stated scoped theorem. The corrected symbolic chain and this multiplicity argument are independently accepted in `../record/four_block_independent_review_20261006.md`. The earlier three-block theorem is unchanged.
+Combining with the exponential marked and local-overlap estimates proves the stated scoped theorem. The corrected symbolic chain and this multiplicity argument are independently accepted in [`archive/record/four_block_independent_review_20261006.md`](../../archive/record/four_block_independent_review_20261006.md). The earlier three-block theorem is unchanged.
 
 ## 9. Verification, provenance and precise boundary
 
-The portable entry checker is `../computations/verification/four_block_unmarking.py`. It checks corrected U/V block placement with empty pieces, exact local uniform-link contractions, the local-transposition graph algebra, finite graph correction inequalities and a concrete rank-two overlap. It has a proper main entry point and explicit RuntimeError checks that survive optimized Python. Its finite results do not prove analytic limits. Evidence: `../evidence/executions/20261006/four-block/receipt.json`.
+The portable entry checker is [`computations/verification/four_block_unmarking.py`](../../computations/verification/four_block_unmarking.py). It checks corrected U/V block placement with empty pieces, exact local uniform-link contractions, the local-transposition graph algebra, finite graph correction inequalities and a concrete rank-two overlap. It has a proper main entry point and explicit RuntimeError checks that survive optimized Python. Its finite results do not prove analytic limits. Evidence: [`evidence/executions/20261006/four-block/receipt.json`](../../evidence/executions/20261006/four-block/receipt.json).
 
 The accepted corrected symbolic source has SHA256 cb7b2591204aaaf04a84388e55eb8dcb37963f8777e94ce26f248008b241e9a6; the accepted once-counting candidate has b40c0122dc1ed60c31c8eaccf270a643dcd6776e0799cf2686651b258a7c5473. Final repaired-source acceptance has a5515224f61335b27d570cd1b31e9108a51caff9d76fe5fcd78e1c674f0500f1. The original U/V placement error, original review and exact correction are retained only as dated provenance. No incorrect U/V equations are active proof inputs.
 

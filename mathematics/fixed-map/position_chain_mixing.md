@@ -31,7 +31,7 @@ once-counted trace-pair identification is asserted for that expression.
 The common self-contained dependency is `four_branch_parametrix.md`.
 Sections2–3 below retain the accepted proof of the hash-stable source
 156808b1febd7b61a8aff4e4756314934e5cb6b471c7e5a2f15a6f5f64f216af,
-with its independent audit at `../record/marked_path_independent_review_20261006.md`. The stronger
+with its [independent audit](../../archive/record/marked_path_independent_review_20261006.md). The stronger
 constant-gap statement subsumes the earlier seven-cut cyclic-ramp argument,
 which is now provenance only, not a second canonical theorem source.
 The proof requires neither FM-007 nor FM-018, classical mixing, a noisy

@@ -307,14 +307,33 @@ algebra and finite inequalities, not asymptotics, classical dynamics or
 TRACE-005 itself. The analytic proof has independent internal review; no external-referee
 or analytic formalization certificate is asserted.
 
-Pinned source SHA-256 values:
+The [2026-10-06 execution receipt](../../evidence/executions/20261006/heisenberg-wkb/receipt.json)
+pins these four historical source bytes by SHA-256. The immutable links
+use the exact historical repository paths, before file moves:
 
-- `mathematics/trace_to_local_statistics_bridge.md`:
-  `8de10ab48a068363110753165a09a7a569111a04d743e575eed9f669bc8a64fd`
-- `mathematics/signed_heisenberg_comparison.md`:
-  `450e9c98720f4a6793b361611f2dee9d34531442efc521dacdcd902e1cc14313`
-- `mathematics/fixed-map/four_branch_parametrix.md`:
-  `c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7`
+- [Historical `trace_to_local_statistics_bridge.md`](https://github.com/ChurilovMaksim/BGS/blob/25cde6388a41d31c9d64bfbc889086e27103f42c/mathematics/trace_to_local_statistics_bridge.md)
+  → [maintained copy](../trace-bridge/trace_to_local_statistics_bridge.md):
+  `8de10ab48a068363110753165a09a7a569111a04d743e575eed9f669bc8a64fd`.
+- [Historical `signed_heisenberg_comparison.md`](https://github.com/ChurilovMaksim/BGS/blob/6c2d695960930666963fa3a4eb14646d2caa0684/mathematics/signed_heisenberg_comparison.md)
+  → [maintained copy](../trace-bridge/signed_heisenberg_comparison.md):
+  `450e9c98720f4a6793b361611f2dee9d34531442efc521dacdcd902e1cc14313`.
+- [Historical `four_branch_parametrix.md`](https://github.com/ChurilovMaksim/BGS/blob/f285ba510732edd9ee3679b12316df9b12e0dfcb/mathematics/four_branch_parametrix.md)
+  → [maintained copy](../fixed-map/four_branch_parametrix.md):
+  `c696ebd39a52ca83205800a41fc30a9d570ebd3ed5dc96069f212948275600d7`.
+- [Historical `fixed_map_path_model.md`](https://github.com/ChurilovMaksim/BGS/blob/f285ba510732edd9ee3679b12316df9b12e0dfcb/mathematics/fixed_map_path_model.md)
+  → [maintained copy](../fixed-map/fixed_map_path_model.md):
+  `d5365063f0967dabcac741a93c6f411d6402c913074944e1f9e383b2b5149b08`.
+
+The trace bridge, four-branch parametrix, and path model match those pins
+byte for byte at baseline `9f8a1d99d913e7fac560be3366b7522a484bbcfb`.
+The maintained signed comparison has SHA-256
+`1536f37b7cea040999f51d66dee543665bd731a577499711f360b412894ab169`.
+At that baseline it differs on exactly five lines: one wording change from
+“author self-review” to “author check” and four link destinations (research
+review, cubic-variance note, literature locator, verifier). All mathematical
+text is unchanged. This comparison establishes source provenance only: the
+historical receipt remains a finite publication-overlay check, not a fresh
+execution or a verification of the analytic limit.
 
 ## 8. Verification and companion scopes
 

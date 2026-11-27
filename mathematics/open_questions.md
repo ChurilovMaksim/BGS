@@ -1,5 +1,7 @@
 # Open mathematical obligations
 
+See the [coupling-scope guide](fixed-map/coupling_scope_audit.md) for parameter conventions and separate proposed extensions. The [weak-law and pair-criterion map](fixed-map/weak_law_pair_acceptance.md) separates the hypotheses used to transfer second moments. The original fixed-map problem is unchanged.
+
 ## 24 November: the remaining signed low-overlap sum
 
 See the [November integration](fixed-map/archive_continuation/README.md). For each
